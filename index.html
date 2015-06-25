@@ -31,9 +31,59 @@
           <p><img src="http://www.mect.it/dati/immagini/Sviluppo%20Mect%20Suite%20con%20link_960_563_mect_apps.png" alt="Sviluppo_software"></p>
 
 <h3>
-<a id="mect-apps" class="anchor" href="#mect-apps" aria-hidden="true"><span class="octicon octicon-link"></span></a>Mect Apps</h3>
+<a id="mect_apps-part-of-mect-suite-sdk" class="anchor" href="#mect_apps-part-of-mect-suite-sdk" aria-hidden="true"><span class="octicon octicon-link"></span></a>mect_apps (part of <a href="http://www.mect.it/en/github/">Mect Suite SDK</a>)</h3>
 
-<p>The Mect Apps are the Mect Suite example applications (CFG, HMI, PLC)</p>
+<p>Mect Apps: the Mect Suite example applications (CFG, HMI, PLC)</p>
+
+<p>Some application examples (both HMI and PLC) are bound to the Mect Suite software: those examples are useful for describing the system features.
+For using the example you need to:
+1. create a "MectApps" folder in C:\
+2. copy the example tree in C:\MectApps\</p>
+
+<p>For each project there are several folders to be opened by different software:
+project_HMI contains the HMI graphic application, use QtCreator 
+project_PLC contains the PLC application, use ATCMcontrol Engineering
+project_CFG contains the general configuration, use MECT Configurator
+project_CAN contains the optional CANopen configuration, use ATCM CanBuilder</p>
+
+<p>The application examples are sorted in folders according to the target panels: TP1043, TPAC1007, TPAC1008 … and in AnyTPAC the generic ones.</p>
+
+<ul>
+<li>AnyTPAC:
+
+<ul>
+<li>Empty_PLC: base PLC application, to upload by default (is the one used with StarterKit)</li>
+<li>Simulation_PLC: demo PLC application that simulates some analog and digital inputs</li>
+</ul>
+</li>
+<li>TP1043_RTU:
+
+<ul>
+<li>ModbusRTUclient_CFG, _HMI, _PLC: example of client access to a Modbus RTU device(see the manual ME7041_06_QuickStart.pdf)</li>
+</ul>
+</li>
+<li>TPAC1006:
+
+<ul>
+<li>Collaudo_CFG, _HMI, _PLC: activation and check of all TPAC1006 I/O</li>
+<li>QuickStart_HMI: QuickStart_StarterKit example, already configured for TPAC1006 </li>
+</ul>
+</li>
+<li>TPAC1007:
+
+<ul>
+<li>Collaudo_CFG, _HMI, _PLC:  activation and check of all TPAC1007 I/O</li>
+<li>QuickStart_HMI: QuickStart_StarterKit example, already configured for TPAC1007</li>
+</ul>
+</li>
+<li>TPAC1008:
+
+<ul>
+<li>Collaudo_CFG, _HMI, _PLC:  activation and check of all TPAC1008 I/O</li>
+<li>QuickStart_HMI: QuickStart_StarterKit example, already configured for TPAC1008</li>
+</ul>
+</li>
+</ul>
         </section>
 
         <aside id="sidebar">
