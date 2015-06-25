@@ -1,0 +1,99 @@
+
+NOME variabile = CAN1_IN_DIG_8_1
+Indirizzo nodo = 1
+Data type = Byte 
+TIPO DI VARIABILE = PDO
+TIPO DI PDO = TX
+NUMERO DI PDO = 1
+NUMERO DI OGGETTO = 1
+NUMERO DI SHIFT = 0
+
+NOME variabile = CAN1_IN_DIG_8_2
+Indirizzo nodo = 1
+Data type = Byte 
+TIPO DI VARIABILE = PDO
+TIPO DI PDO = TX
+NUMERO DI PDO = 1
+NUMERO DI OGGETTO = 2
+NUMERO DI SHIFT = 0
+
+NOME variabile = CAN1_OUT_DIG_8_1
+Indirizzo nodo = 1
+Data type = Byte 
+TIPO DI VARIABILE = PDO
+TIPO DI PDO = RX
+NUMERO DI PDO = 1
+NUMERO DI OGGETTO = 1
+NUMERO DI SHIFT = 0
+
+NOME variabile = CAN1_OUT_DIG_8_2
+Indirizzo nodo = 1
+Data type = Byte 
+TIPO DI VARIABILE = PDO
+TIPO DI PDO = RX
+NUMERO DI PDO = 1
+NUMERO DI OGGETTO = 2
+NUMERO DI SHIFT = 0
+
+NOME variabile = CAN1_IN_AN_1
+Indirizzo nodo = 1
+Data type = WORD 
+TIPO DI VARIABILE = PDO
+TIPO DI PDO = TX
+NUMERO DI PDO = 2
+NUMERO DI OGGETTO = 1
+NUMERO DI SHIFT = 0
+
+NOME variabile = CAN1_IN_AN_2
+Indirizzo nodo = 1
+Data type = WORD 
+TIPO DI VARIABILE = PDO
+TIPO DI PDO = TX
+NUMERO DI PDO = 2
+NUMERO DI OGGETTO = 2
+NUMERO DI SHIFT = 0
+
+NOME variabile = 3
+Indirizzo nodo = 1
+Data type = WORD 
+TIPO DI VARIABILE = PDO
+TIPO DI PDO = TX
+NUMERO DI PDO = 0
+NUMERO DI OGGETTO = 1
+NUMERO DI SHIFT = 0
+
+NOME variabile = 4
+Indirizzo nodo = 1
+Data type = WORD 
+TIPO DI VARIABILE = PDO
+TIPO DI PDO = TX
+NUMERO DI PDO = 0
+NUMERO DI OGGETTO = 2
+NUMERO DI SHIFT = 0
+
+NOME variabile = 5
+Indirizzo nodo = 1
+Data type = WORD 
+TIPO DI VARIABILE = PDO
+TIPO DI PDO = TX
+NUMERO DI PDO = 0
+NUMERO DI OGGETTO = 3
+NUMERO DI SHIFT = 0
+
+NOME variabile = 6
+Indirizzo nodo = 1
+Data type = WORD 
+TIPO DI VARIABILE = PDO
+TIPO DI PDO = TX
+NUMERO DI PDO = 0
+NUMERO DI OGGETTO = 4
+NUMERO DI SHIFT = 0
+
+NOME variabile = CAN1_OUT_AN_1
+Indirizzo nodo = 1
+Data type = WORD 
+TIPO DI VARIABILE = PDO
+TIPO DI PDO = RX
+NUMERO DI PDO = 2
+NUMERO DI OGGETTO = 1
+NUMERO DI SHIFT = 0

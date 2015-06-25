@@ -1,0 +1,740 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>alarms_history</class>
+ <widget class="QWidget" name="alarms_history">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>480</width>
+    <height>272</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>0</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>16777215</width>
+    <height>16777215</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>alarms_history</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="spacing">
+    <number>2</number>
+   </property>
+   <property name="margin">
+    <number>4</number>
+   </property>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <property name="sizeConstraint">
+      <enum>QLayout::SetMinimumSize</enum>
+     </property>
+     <item>
+      <widget class="QLabel" name="labelIcon">
+       <property name="minimumSize">
+        <size>
+         <width>25</width>
+         <height>25</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>25</width>
+         <height>25</height>
+        </size>
+       </property>
+       <property name="focusPolicy">
+        <enum>Qt::NoFocus</enum>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-image: url(:/systemicons/img/Error.png);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="labelTitle">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="focusPolicy">
+        <enum>Qt::NoFocus</enum>
+       </property>
+       <property name="text">
+        <string>Alarm History</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="labelUserName">
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="labelDataOra">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="focusPolicy">
+        <enum>Qt::NoFocus</enum>
+       </property>
+       <property name="text">
+        <string>dd.mm.yy hh:MM:ss</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="Line" name="line">
+     <property name="focusPolicy">
+      <enum>Qt::NoFocus</enum>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_4">
+     <item>
+      <widget class="QLabel" name="labelDate">
+       <property name="text">
+        <string>Date:</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="comboBoxDate">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>150</width>
+         <height>34</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>150</width>
+         <height>35</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">/* Combobox item */
+QAbstractItemView {
+	/* padding of each item (top,right,bottom,left) */
+	padding: 2 0 2 0;
+	font-size: 18px;
+}
+
+/* Sets up scrollbar size, border, color */
+QScrollBar:vertical {
+	width: 40px;
+	/* margin sets up how far the handle can travel (top,right,bottom,left) */
+	margin: 40px 0px 40px 0px;
+}
+
+/* Sets up the color and height of handle (cursor) */
+QScrollBar::handle:vertical {
+	min-height:40px;
+}
+
+/* bottom button (set height at 0px to remove)*/
+QScrollBar::add-line:vertical {
+	height: 40px;
+	subcontrol-position: bottom;
+	subcontrol-origin: margin;
+}
+
+/* top button (set height at 0px to remove)*/
+QScrollBar::sub-line:vertical {
+	height: 40px;
+	subcontrol-position: top;
+	subcontrol-origin: margin;
+	background-color: rgb(0, 255, 0);
+}
+
+/* need this to get rid of crosshatching on scrollbar background */
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
+	background: none;
+}
+
+/* Combobox main item */
+QComboBox {
+	padding-left: 2px;
+	font-size: 18px;
+	min-height: 30px;
+}
+
+/* drop down button */
+QComboBox::drop-down {
+	min-width: 40px;
+}
+</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="labelLevel">
+       <property name="text">
+        <string>Liv</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="comboBoxLevel">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>70</width>
+         <height>34</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>70</width>
+         <height>35</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">/* Combobox item */
+QAbstractItemView {
+	/* padding of each item (top,right,bottom,left) */
+	padding: 2 0 2 0;
+	font-size: 18px;
+}
+
+/* Sets up scrollbar size, border, color */
+QScrollBar:vertical {
+	width: 40px;
+	/* margin sets up how far the handle can travel (top,right,bottom,left) */
+	margin: 40px 0px 40px 0px;
+}
+
+/* Sets up the color and height of handle (cursor) */
+QScrollBar::handle:vertical {
+	min-height:40px;
+}
+
+/* bottom button (set height at 0px to remove)*/
+QScrollBar::add-line:vertical {
+	height: 40px;
+	subcontrol-position: bottom;
+	subcontrol-origin: margin;
+}
+
+/* top button (set height at 0px to remove)*/
+QScrollBar::sub-line:vertical {
+	height: 40px;
+	subcontrol-position: top;
+	subcontrol-origin: margin;
+	background-color: rgb(0, 255, 0);
+}
+
+/* need this to get rid of crosshatching on scrollbar background */
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
+	background: none;
+}
+
+/* Combobox main item */
+QComboBox {
+	padding-left: 2px;
+	font-size: 18px;
+	min-height: 30px;
+}
+
+/* drop down button */
+QComboBox::drop-down {
+	min-width: 40px;
+}
+</string>
+       </property>
+       <item>
+        <property name="text">
+         <string>32</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="labelType">
+       <property name="text">
+        <string>Tipo:</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="comboBoxType">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>100</width>
+         <height>34</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>100</width>
+         <height>35</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">    QAbstractItemView {
+     padding: 5 5 16 5;
+     font-size: 18px;
+    }
+     
+    /* Sets up scrollbar size, border, color */
+      QScrollBar:vertical {
+          width: 40px;
+      /* margin sets up how far the handle can travel*/
+       margin: 0px 0px 0px 0px;
+      }
+     
+    /* Sets up the color and height of handle */
+      QScrollBar::handle:vertical {
+          min-height:40px;
+	background-color: rgb(0, 0, 0);
+      }
+     
+    /* This remvoes the bottom button by setting the height to 0px */
+      QScrollBar::add-line:vertical {
+       height: 0px;
+          subcontrol-position: bottom;
+          subcontrol-origin: margin;
+      }
+     
+    /* This remvoes the top button by setting the height to 0px */
+      QScrollBar::sub-line:vertical {
+         height: 0px;
+          subcontrol-position: top;
+          subcontrol-origin: margin;
+      }
+     
+    /* need this to get rid of crosshatching on scrollbar background */
+      QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
+          background: none;
+      }
+     
+    QComboBox {
+     padding-left: 5px;
+     font-size: 18px;
+     min-height: 30px;
+ }
+     
+    QComboBox::drop-down {
+    min-width: 40px;
+    }
+</string>
+       </property>
+       <item>
+        <property name="text">
+         <string>All</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Alarm</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Event</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_3">
+     <property name="spacing">
+      <number>2</number>
+     </property>
+     <item>
+      <widget class="QListWidget" name="listWidget">
+       <property name="font">
+        <font>
+         <family>Ubuntu</family>
+         <pointsize>16</pointsize>
+         <weight>50</weight>
+         <italic>false</italic>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="focusPolicy">
+        <enum>Qt::NoFocus</enum>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QListWidget
+{
+	font: 16pt &quot;Ubuntu&quot;;
+}
+QScrollBar:vertical
+{
+        border-top: 30px solid #999999;
+        border-bottom: 30px solid #999999;
+        background:white;
+        width:30px;    
+        margin: 0px 0px 0px 0px;
+}
+QScrollBar::handle:vertical 
+{
+        border: 1px solid black;
+	    background: rgb(255, 255, 255);
+        min-height: 10px;
+}
+QScrollBar::add-line:vertical
+{
+        height: 30px;
+	    background: rgb(255, 255, 255);
+        subcontrol-position: bottom;
+        subcontrol-origin: margin;
+	image: url(:/systemicons/img/Down.png);
+}
+QScrollBar::sub-line:vertical 
+{
+       height: 30px;
+	    background: rgb(255, 255, 255);
+        subcontrol-position: top;
+	    subcontrol-origin: margin;
+	image: url(:/systemicons/img/Up.png);
+}
+
+QScrollBar:horizontal
+{
+        border-left: 30px solid #999999;
+        border-right: 30px solid #999999;
+        background:white;
+        height:30px;    
+        margin: 0px 0px 0px 0px;
+}
+QScrollBar::handle:horizontal 
+{
+        border: 1px solid black;
+	    background: rgb(255, 255, 255);
+        min-width: 10px;
+}
+QScrollBar::add-line:horizontal
+{
+        width: 30px;
+	    background: rgb(255, 255, 255);
+        subcontrol-position: left;
+        subcontrol-origin: margin;
+	image: url(:/icons/img/left.png);
+}
+QScrollBar::sub-line:horizontal 
+{
+       width: 30px;
+	    background: rgb(255, 255, 255);
+        subcontrol-position: right;
+	    subcontrol-origin: margin;
+	image: url(:/icons/img/right.png);
+}</string>
+       </property>
+       <property name="verticalScrollBarPolicy">
+        <enum>Qt::ScrollBarAlwaysOn</enum>
+       </property>
+       <property name="alternatingRowColors">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <property name="spacing">
+      <number>4</number>
+     </property>
+     <item>
+      <widget class="QPushButton" name="pushButtonHome">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+         <horstretch>60</horstretch>
+         <verstretch>60</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>40</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>40</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="focusPolicy">
+        <enum>Qt::NoFocus</enum>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton
+{
+border: 2px solid  rgb(94, 94, 94);
+border-radius: 8px;
+qproperty-icon: url(:/systemicons/img/Home.png);
+qproperty-iconSize: 24px 24px;
+qproperty-focusPolicy: NoFocus;
+}
+QPushButton:pressed
+{
+border: 2px solid  rgb(194, 194, 194);
+background-color:  rgb(255, 255, 127);
+}
+QPushButton:disabled
+{
+border: 2px solid  rgb(194, 194, 194);
+}
+</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButtonBack">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+         <horstretch>60</horstretch>
+         <verstretch>60</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>40</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>40</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="focusPolicy">
+        <enum>Qt::NoFocus</enum>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton
+{
+border: 2px solid  rgb(94, 94, 94);
+border-radius: 8px;
+qproperty-icon: url(:/systemicons/img/Go_back.png);
+qproperty-iconSize: 24px 24px;
+qproperty-focusPolicy: NoFocus;
+}
+QPushButton:pressed
+{
+border: 2px solid  rgb(194, 194, 194);
+background-color:  rgb(255, 255, 127);
+}
+QPushButton:disabled
+{
+border: 2px solid  rgb(194, 194, 194);
+}
+</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>50</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButtonPrevious">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+         <horstretch>60</horstretch>
+         <verstretch>60</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>40</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>40</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="focusPolicy">
+        <enum>Qt::NoFocus</enum>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton
+{
+border: 2px solid  rgb(94, 94, 94);
+border-radius: 8px;
+qproperty-icon: url(:/systemicons/img/Back.png);
+qproperty-iconSize: 24px 24px;
+qproperty-focusPolicy: NoFocus;
+}
+QPushButton:pressed
+{
+border: 2px solid  rgb(194, 194, 194);
+background-color:  rgb(255, 255, 127);
+}
+QPushButton:disabled
+{
+border: 2px solid  rgb(194, 194, 194);
+}
+</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButtonNext">
+       <property name="minimumSize">
+        <size>
+         <width>40</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>40</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton
+{
+border: 2px solid  rgb(94, 94, 94);
+border-radius: 8px;
+qproperty-icon: url(:/systemicons/img/Forward.png);
+qproperty-iconSize: 24px 24px;
+qproperty-focusPolicy: NoFocus;
+}
+QPushButton:pressed
+{
+border: 2px solid  rgb(194, 194, 194);
+background-color:  rgb(255, 255, 127);
+}
+QPushButton:disabled
+{
+border: 2px solid  rgb(194, 194, 194);
+}
+</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButtonSave">
+       <property name="minimumSize">
+        <size>
+         <width>40</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>40</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton
+{
+border: 2px solid  rgb(94, 94, 94);
+border-radius: 8px;
+qproperty-icon: url(:/systemicons/img/Flash_drive.png);
+qproperty-iconSize: 24px 24px;
+qproperty-focusPolicy: NoFocus;
+}
+QPushButton:pressed
+{
+border: 2px solid  rgb(194, 194, 194);
+background-color:  rgb(255, 255, 127);
+}
+QPushButton:disabled
+{
+border: 2px solid  rgb(194, 194, 194);
+}
+</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
+

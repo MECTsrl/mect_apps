@@ -1,0 +1,2 @@
+1;Alarm1;TPLC_IN_AN_1;;1.00;1280;0;Alarm1;1;0;0
+Alarms_test

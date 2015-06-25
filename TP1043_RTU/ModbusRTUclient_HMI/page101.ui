@@ -1,0 +1,498 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>page101</class>
+ <widget class="QWidget" name="page101">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>534</width>
+    <height>272</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>page101</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget#page101
+{
+}</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout">
+   <item>
+    <widget class="ATCMgraph" name="atcmGraph">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="toolTip">
+      <string>ATCM QGraph</string>
+     </property>
+     <property name="whatsThis">
+      <string>ATCMgraph widget</string>
+     </property>
+     <property name="x1Variable">
+      <string>PLC_time</string>
+     </property>
+     <property name="x1Min">
+      <string>PLC_timeMin</string>
+     </property>
+     <property name="x1Max">
+      <string>PLC_timeMax</string>
+     </property>
+     <property name="x1Step">
+      <double>10.000000000000000</double>
+     </property>
+     <property name="x1TickLabelVisible">
+      <bool>true</bool>
+     </property>
+     <property name="x1Label">
+      <string>TimeValue</string>
+     </property>
+     <property name="y1Variable">
+      <string>TPLC_IN_3</string>
+     </property>
+     <property name="y1Min">
+      <string>-1</string>
+     </property>
+     <property name="y1Max">
+      <string>+1</string>
+     </property>
+     <property name="y1Label">
+      <string>TPLC_IN_3</string>
+     </property>
+     <property name="pen1Color">
+      <color>
+       <red>255</red>
+       <green>255</green>
+       <blue>0</blue>
+      </color>
+     </property>
+     <property name="Display1">
+      <string/>
+     </property>
+     <property name="x2Variable">
+      <string>PLC_time</string>
+     </property>
+     <property name="x2Min">
+      <string>PLC_timeMin</string>
+     </property>
+     <property name="x2Max">
+      <string>PLC_timeMax</string>
+     </property>
+     <property name="y2Variable">
+      <string>TPLC_IN_AN_1</string>
+     </property>
+     <property name="y2Min">
+      <string>-1</string>
+     </property>
+     <property name="y2Max">
+      <string>21</string>
+     </property>
+     <property name="y2Label">
+      <string>TPLC_IN_AN_1</string>
+     </property>
+     <property name="pen2Color">
+      <color>
+       <red>0</red>
+       <green>255</green>
+       <blue>255</blue>
+      </color>
+     </property>
+     <property name="Display2">
+      <string/>
+     </property>
+     <property name="legendVisible">
+      <bool>true</bool>
+     </property>
+     <property name="refresh">
+      <number>200</number>
+     </property>
+     <property name="bgColor">
+      <color>
+       <red>0</red>
+       <green>0</green>
+       <blue>0</blue>
+      </color>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="ATCMbutton" name="atcmButton">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>100</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>100</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>DejaVu Sans</family>
+        </font>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>24</width>
+         <height>24</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="whatsThis">
+        <string>ATCMbutton widget</string>
+       </property>
+       <property name="pageName">
+        <string>menu</string>
+       </property>
+       <property name="statusvar">
+        <string/>
+       </property>
+       <property name="viewStatus">
+        <bool>false</bool>
+       </property>
+       <property name="visibilityVar">
+        <string/>
+       </property>
+       <property name="text">
+        <string>menu</string>
+       </property>
+       <property name="pressText">
+        <string>menu</string>
+       </property>
+       <property name="icon">
+        <iconset resource="systemicons.qrc">
+         <normaloff>:/systemicons/img/Script.png</normaloff>:/systemicons/img/Script.png</iconset>
+       </property>
+       <property name="borderWidth">
+        <number>1</number>
+       </property>
+       <property name="borderRadius">
+        <number>20</number>
+       </property>
+       <property name="apparence">
+        <enum>QFrame::Raised</enum>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="ATCMbutton" name="atcmButton_2">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>100</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>100</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>DejaVu Sans</family>
+        </font>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>24</width>
+         <height>24</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="whatsThis">
+        <string>ATCMbutton widget</string>
+       </property>
+       <property name="pageName">
+        <string>BACK</string>
+       </property>
+       <property name="statusvar">
+        <string/>
+       </property>
+       <property name="viewStatus">
+        <bool>false</bool>
+       </property>
+       <property name="visibilityVar">
+        <string/>
+       </property>
+       <property name="text">
+        <string>back</string>
+       </property>
+       <property name="pressText">
+        <string>back</string>
+       </property>
+       <property name="icon">
+        <iconset resource="systemicons.qrc">
+         <normaloff>:/systemicons/img/Back.png</normaloff>:/systemicons/img/Back.png</iconset>
+       </property>
+       <property name="borderWidth">
+        <number>1</number>
+       </property>
+       <property name="borderRadius">
+        <number>20</number>
+       </property>
+       <property name="apparence">
+        <enum>QFrame::Raised</enum>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="ATCMbutton" name="atcmButton_3">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>100</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>100</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>DejaVu Sans</family>
+        </font>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>24</width>
+         <height>24</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="whatsThis">
+        <string>ATCMbutton widget</string>
+       </property>
+       <property name="pageName">
+        <string>trend</string>
+       </property>
+       <property name="statusvar">
+        <string/>
+       </property>
+       <property name="viewStatus">
+        <bool>false</bool>
+       </property>
+       <property name="visibilityVar">
+        <string/>
+       </property>
+       <property name="text">
+        <string>trend</string>
+       </property>
+       <property name="pressText">
+        <string>trend</string>
+       </property>
+       <property name="icon">
+        <iconset resource="systemicons.qrc">
+         <normaloff>:/systemicons/img/Display.png</normaloff>:/systemicons/img/Display.png</iconset>
+       </property>
+       <property name="borderWidth">
+        <number>1</number>
+       </property>
+       <property name="borderRadius">
+        <number>20</number>
+       </property>
+       <property name="apparence">
+        <enum>QFrame::Raised</enum>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="ATCMbutton" name="atcmButton_4">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>100</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>100</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>DejaVu Sans</family>
+        </font>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>24</width>
+         <height>24</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="whatsThis">
+        <string>ATCMbutton widget</string>
+       </property>
+       <property name="pageName">
+        <string>store</string>
+       </property>
+       <property name="statusvar">
+        <string/>
+       </property>
+       <property name="viewStatus">
+        <bool>false</bool>
+       </property>
+       <property name="visibilityVar">
+        <string/>
+       </property>
+       <property name="text">
+        <string>store</string>
+       </property>
+       <property name="pressText">
+        <string>store</string>
+       </property>
+       <property name="icon">
+        <iconset resource="systemicons.qrc">
+         <normaloff>:/systemicons/img/Table.png</normaloff>:/systemicons/img/Table.png</iconset>
+       </property>
+       <property name="borderWidth">
+        <number>1</number>
+       </property>
+       <property name="borderRadius">
+        <number>20</number>
+       </property>
+       <property name="apparence">
+        <enum>QFrame::Raised</enum>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>ATCMbutton</class>
+   <extends>QPushButton</extends>
+   <header>atcmplugin.h</header>
+  </customwidget>
+  <customwidget>
+   <class>ATCMgraph</class>
+   <extends>QFrame</extends>
+   <header>atcmplugin.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="systemicons.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>atcmButton</sender>
+   <signal>newPage(const char*,bool)</signal>
+   <receiver>page101</receiver>
+   <slot>goto_page(const char*,bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>416</x>
+     <y>38</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>377</x>
+     <y>49</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>atcmButton_2</sender>
+   <signal>newPage(const char*,bool)</signal>
+   <receiver>page101</receiver>
+   <slot>goto_page(const char*,bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>385</x>
+     <y>99</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>374</x>
+     <y>104</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>atcmButton_3</sender>
+   <signal>newPage(const char*,bool)</signal>
+   <receiver>page101</receiver>
+   <slot>goto_page(const char*,bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>384</x>
+     <y>175</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>377</x>
+     <y>178</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>atcmButton_4</sender>
+   <signal>newPage(const char*,bool)</signal>
+   <receiver>page101</receiver>
+   <slot>goto_page(const char*,bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>387</x>
+     <y>234</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>374</x>
+     <y>232</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>goto_page(const char*,bool)</slot>
+ </slots>
+</ui>

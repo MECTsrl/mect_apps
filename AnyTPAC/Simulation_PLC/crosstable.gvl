@@ -1,0 +1,164 @@
+(* UNTYPED CROSSTABLE *)
+VAR_GLOBAL
+
+	ARRAY_CROSSTABLE_INPUT AT %MD0.0:  ARRAY [1..DimCrossTable] OF DWORD;	(*	Array degli INPUT	*)
+	ARRAY_CROSSTABLE_OUTPUT AT %ID0.0:  ARRAY [1..DimCrossTable] OF DWORD;	(*	Array degli OUTPUT	*)
+
+	ARRAY_STATES AT %MB0.22000:  ARRAY [1..DimCrossTable] OF BYTE;			(*	Array degli STATI	*)
+
+
+(*	ARRAY_ERR:		ARRAY [1..DimCrossTable] OF BYTE;	*)	(*	Array degli ERRORI contatore degli errori associato alla variabile
+																BIT 7:	0= CONTATORE, 1 = TIMEOUT
+															*)
+
+	ARRAY_QUEUE			AT %IW1.0:	ARRAY[1..DimCrossTable] OF WORD;		(* Array delle CODE in lettura	*)
+	ARRAY_QUEUE_OUTPUT	AT %MW1.0:	ARRAY[1..DimCrossTable] OF WORD;		(* Array delle CODE in scrittura	*)
+																	(* 	BIT 15 WR EN, 
+																		BIT 14 RD EN
+																		BIT	13..0	ADDRESS CROSSTABLE	*)
+	RichiestaScrittura		AT %IW1.11000:	 WORD;					(* interrupt di scrittura	*)
+
+	TRIGGER01 AT %QW0.0:  WORD;										(*  variabile di sincronizzazione degli INPUT	*)
+	TRIGGER02 AT %QW1.0:  WORD;
+
+	PLCRevision01			AT %MW1.11002:	 WORD:=rev01;
+	PLCRevision02			AT %MW1.11004:	 WORD:=rev02;
+	Reset_RTU				AT %IW1.11006:	 WORD;
+	Reset_TCP				AT %IW1.11008:	 WORD;
+	Reset_TCPRTU			AT %IW1.11010:	 WORD;
+
+	CounterRTU		AT %MW1.11012	:  ARRAY [1..64] OF WORD;
+	CounterTCP		AT %MW1.11142	:  ARRAY [1..64] OF WORD;
+	CounterTCPRTU	AT %MW1.11272	:  ARRAY [1..64] OF WORD;
+
+
+	RTUBlackList_ERROR_WORD			AT %MW1.11402	:	 WORD;
+	RTUComm_ERROR_WORD				AT %MW1.11404	:	 WORD;
+	TCPBlackList_ERROR_WORD			AT %MW1.11406	:	 WORD;
+	TCPComm_ERROR_WORD				AT %MW1.11408	:	 WORD;
+	TCPRTUBlackList_ERROR_WORD		AT %MW1.11410	:	 WORD;
+	TCPRTUComm_ERROR_WORD			AT %MW1.11412	:	 WORD;
+
+	ERROR_FLAG		AT %MW1.11414	:	 WORD;		(* 	sgnala se almeno un errore è stato evidenziato dall'ultimo reset: 
+														bit0: errore RTU, 
+														bit1: errore TCP, 	
+														bit2: errore TCPRTU, 
+														bit3: errore commpar, 
+														bit4: errore CTallarmi, 
+														bit5: errore CTvariabili o  errore tipo non riconosciuto su CTvariabili
+														bit6: segnalazione che PLC ha terminalo l'eloaborazine delle CT
+														bit7: RTU_ON
+														bit8: TCP_ON
+														bit9: TCPRTU_ON
+														*)
+	BlackListRTUL	AT %MD1.11416	:	 DWORD;
+	BlackListRTUH	AT %MD1.11420	:	 DWORD;
+	CommErrRTUL		AT %MD1.11424	:	 DWORD;
+	CommErrRTUH		AT %MD1.11428	:	 DWORD;
+
+	BlackListTCPL	AT %MD1.11432	:	 DWORD;
+	BlackListTCPH	AT %MD1.11436	:	 DWORD;
+	CommErrTCPL		AT %MD1.11440	:	 DWORD;
+	CommErrTCPH		AT %MD1.11444	:	 DWORD;
+
+	BlackListTCPRTUL	AT %MD1.11448	:DWORD;
+	BlackListTCPRTUH	AT %MD1.11452	:DWORD;
+	CommErrTCPRTUL	AT %MD1.11456	:	 DWORD;
+	CommErrTCPRTUH	AT %MD1.11460	:	 DWORD;
+	
+																		
+	
+	(* 	bit 0: BL rtu,
+														bit 1: communication error rtu
+														bit 2: BL tcp,
+														bit 3: communication error tcp
+														bit 4: BL tcprtu,
+														bit 5: communication error tcprtu
+													  *)
+
+	HardwareType	AT %ID1.11464	: DWORD; (*	Inizializzazione dal IO layer sync
+																	Byte 0 can0: 
+																			0 no can, 
+																			1 tpac1006 Base
+																			2 tpac1006 u315
+																			3 ..
+																	 Byte 1	can 1:
+																	 Byte 2 modbus 0
+																	 		0: NO modbus
+																			1: tpac1007
+																	 byte 3 modbus 1
+														*)
+	ErrorsState :DWORD;
+
+	(*
+		ErrorsState: Variabile di errore
+		bit 0:	fallita lettura crosstable 
+		bit 1:	fallita lettura record crosstable
+		bit 2:	fallita lettura field crosstable
+		bit 3:	fallita chiusura crosstable
+		bit 4:	Apertura Modbus RTU fallita
+		bit 5:	Apertura Modbus TCP fallita
+		bit 6:	Apertura Modbus TCPRTU fallita		
+		bit 7:	Timeout RTU
+		bit 8:	Timeout TCP
+		bit 9:	Timeout TCPRTU
+	*)
+	
+	RTUListDevices: ARRAY [1..254] OF DevicesStruct;
+	TCPListDevices: ARRAY [1..254] OF DevicesStruct;
+	TCPRTUListDevices: ARRAY [1..254] OF DevicesStruct;
+	CrossTable:	ARRAY [0..DimCrossTable] OF CrossTableRecord;	(* campi sono riempiti a partire dall'indice 1*)
+	ALCrossTable:	ARRAY[0..DimAlarmsCT]	OF Alarms;			(* campi sono riempiti a partire dall'indice 1*)
+	CrossTableState:	BOOL;
+	ALCrossTableState:	BOOL;
+	(* variabili di passaggio tra TASK*)
+
+	RTUCurrID:	INT;
+	RTUCurrVal:	ARRAY [0..MaxLocalQueue] OF	DWORD;	
+	RTURequestPLCWrite:INT;
+	RTUCurrNumber:INT;
+
+	LocalRTUQueue: ARRAY [0..MaxLocalQueue] OF WORD;
+	IndexRTUQueuePut:INT;
+	IndexRTUQueueGet:INT;
+
+	TCPCurrID:	INT;
+	TCPCurrVal:ARRAY [0..MaxLocalQueue] OF		DWORD;	
+	TCPRequestPLCWrite:INT;
+	TCPCurrNumber:INT;
+	LocalTCPQueue: ARRAY [0..MaxLocalQueue] OF WORD;
+	IndexTCPQueuePut:INT;
+	IndexTCPQueueGet:INT;
+
+	TCPRTUCurrID:	INT;
+	TCPRTUCurrVal:	ARRAY [0..MaxLocalQueue] OF	DWORD;	
+	TCPRTURequestPLCWrite:INT;
+	TCPRTUCurrNumber:INT;
+	LocalTCPRTUQueue: ARRAY [0..MaxLocalQueue] OF WORD;
+	IndexTCPRTUQueuePut:INT;
+	IndexTCPRTUQueueGet:INT;
+
+	RTUProtocol_ON:BOOL;
+	TCPProtocol_ON:BOOL;
+	TCPRTUProtocol_ON:BOOL;
+	RTU_RUN:BOOL;
+	TCP_RUN:BOOL;
+	TCPRTU_RUN:BOOL;
+	CommEnabled:BOOL;
+
+
+	(*  Parametri di comunicazione 	*)
+	CommParameters:ARRAY [1..4] OF CommParameters;
+	NumberOfFails:	INT;
+	FailDivisor	:	BYTE;
+	Talta:DINT;
+	Tmedia:DINT;
+	Tbassa:DINT;
+	RTUTaskCycle:DINT:=30;
+	TCPTaskCycle:DINT:=30;
+	TCPRTUTaskCycle:DINT:=30;
+	(*	Variabili di debug	*)
+	maxQueue:UINT:=30;(* massima lunhezza di coda raggiunta*)
+	HW119_ERR:	ARRAY[0..10]	OF UINT;
+	MODBUS_ERR:	ARRAY[0..50]	OF UINT;
+END_VAR

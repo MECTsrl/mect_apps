@@ -1,0 +1,18 @@
+(*[[
+]]*)
+TYPE
+    CommParameters : STRUCT
+		Device : STRING;
+		IPaddr:STRING;
+		Port:UINT;
+		BaudRate : UINT;
+		Parity : STRING;
+		DataBit : UINT;
+		StopBit : UINT;
+		Tmin:INT;
+		TimeOut: UINT;
+		State:BOOL;
+		Retry:UINT;
+
+    END_STRUCT;
+END_TYPE

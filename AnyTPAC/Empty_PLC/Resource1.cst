@@ -1,0 +1,69 @@
+(* Constant file *)
+CONST
+(*
+    DimCrossTable :DINT := 5472; 
+	DimCrossTable_2 :DINT := 4*DimCrossTable+4+4; 
+	DimCrossTable_3 :DINT := DimCrossTable_2+2+DimCrossTable*4; 
+*)
+
+	rev01:WORD:=6;
+	rev02:WORD:=13;
+
+    DimCrossTable :DINT := 5472; 
+	DimCrossTable_2 :DINT := 22004; 
+	DimCrossTable_3 :DINT := 44004; 
+	
+	DimCrossTable_4:DINT := DimCrossTable_3+2*DimCrossTable+2+2;
+
+	DimAlarmsCT:DINT := 1152;
+    QueueRWMask : WORD := 16#E000;
+    QueueAddressMask : WORD := 16#1FFF;
+    READ : WORD := 16#4000;
+    WRITE : WORD := 16#8000;
+	WRITE_SINGLE : WORD := 16#8000;
+	WRITE_MULTIPLE : WORD := 16#A000;
+	WRITE_RIC_MULTIPLE : WORD := 16#E000;
+	WRITE_RIC_SINGLE : WORD := 16#C000;
+	WRITE_PREPARE : WORD:=16#2000;
+	RTU:	UINT:=0;
+	TCP:	UINT:=1;
+	TCPRTU:	UINT:=2;
+	STATO_OK: BYTE:=0;
+	STATO_ERR: BYTE:=1;
+	STATO_RUN: BYTE:=2;
+	STATO_BUSY_WRITE: WORD:=1;
+	STATO_BUSY_READ: WORD:=2;
+	UINT16:UINT:=0;
+	INT16:UINT:=1;
+	UDINT32:UINT:=2;
+	DINT32:UINT:=3;
+	FLOATDCBA:UINT:=4;
+	FLOATCDAB:UINT:=5;
+	FLOATABCD:UINT:=6;
+	FLOATBADC:UINT:=7;
+	BIT:UINT:=8;
+	UDINTDCBA:UINT:=9;
+	UDINTCDAB:UINT:=10;
+	UDINTABCD:UINT:=11;
+	UDINTBADC:UINT:=12;
+	DINTDCBA:UINT:=13;
+	DINTCDAB:UINT:=14;
+	DINTABCD:UINT:=15;
+	DINTBADC:UINT:=16;
+	CommError:UINT:=1;
+	TimeoutError:UINT:=16;
+	WaitingCycles:INT:=10;
+
+	FRONTE_SALITA:DWORD:=1;
+	FRONTE_DISCESA:DWORD:=0;
+	ALcrossTableFile:STRING:='Alarms.csv';
+	VARcrossTableFile:STRING:='Crosstable.csv';
+	CommParFile:STRING:='Commpar.csv';
+
+(*	ALcrossTableFile:STRING:='/local/etc/sysconfig/Alarms.csv';
+	VARcrossTableFile:STRING:='/local/etc/sysconfig/Crosstable.csv';
+	CommParFile:STRING:='/local/etc/sysconfig/Commpar.csv';
+*)
+	MaxLocalQueue:INT:=15;
+
+END_CONST
