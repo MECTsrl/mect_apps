@@ -13,17 +13,17 @@ project\_CFG contains the general configuration, use MECT Configurator
 project\_CAN contains the optional CANopen configuration, use ATCM CanBuilder
 
 The application examples are sorted in folders according to the target panels: TP1043, TPAC1007, TPAC1008 … and in AnyTPAC the generic ones.
-AnyTPAC:
-Empty\_PLC: base PLC application, to upload by default (is the one used with StarterKit)
-Simulation\_PLC: demo PLC application that simulates some analog and digital inputs
-TP1043\_RTU:
-ModbusRTUclient\_CFG, \_HMI, \_PLC: example of client access to a Modbus RTU device(see the manual ME7041\_06\_QuickStart.pdf)
-TPAC1006:
-Collaudo\_CFG, \_HMI, \_PLC: activation and check of all TPAC1006 I/O
-QuickStart\_HMI: QuickStart\_StarterKit example, already configured for TPAC1006 
-TPAC1007:
-Collaudo\_CFG, \_HMI, \_PLC:  activation and check of all TPAC1007 I/O
-QuickStart\_HMI: QuickStart\_StarterKit example, already configured for TPAC1007
-TPAC1008:
-Collaudo\_CFG, \_HMI, \_PLC:  activation and check of all TPAC1008 I/O
-QuickStart\_HMI: QuickStart\_StarterKit example, already configured for r TPAC1008
+- AnyTPAC:
+  - Empty\_PLC: base PLC application, to upload by default (is the one used with StarterKit)
+  - Simulation\_PLC: demo PLC application that simulates some analog and digital inputs
+- TP1043\_RTU:
+  - ModbusRTUclient\_CFG, \_HMI, \_PLC: example of client access to a Modbus RTU device(see the manual ME7041\_06\_QuickStart.pdf)
+- TPAC1006:
+  - Collaudo\_CFG, \_HMI, \_PLC: activation and check of all TPAC1006 I/O
+  - QuickStart\_HMI: QuickStart\_StarterKit example, already configured for TPAC1006 
+- TPAC1007:
+  - Collaudo\_CFG, \_HMI, \_PLC:  activation and check of all TPAC1007 I/O
+  - QuickStart\_HMI: QuickStart\_StarterKit example, already configured for TPAC1007
+- TPAC1008:
+  - Collaudo\_CFG, \_HMI, \_PLC:  activation and check of all TPAC1008 I/O
+  - QuickStart\_HMI: QuickStart\_StarterKit example, already configured for r TPAC1008
