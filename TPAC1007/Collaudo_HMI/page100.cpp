@@ -222,7 +222,7 @@ void page100::on_atcmComboBox_AnOut_1_currentIndexChanged(int index)
     char * min;
     char * max;
 
-    if (0 < index and index <= 7) {
+    if (0 < index and index <= 2) {
         value = xAnOutConf[index].value;
         // point = xAnOutConf[index].point;
         min = xAnOutConf[index].min;

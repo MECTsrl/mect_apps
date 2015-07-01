@@ -1298,10 +1298,10 @@
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
-  <widget class="ATCMlabel" name="atcmLabel">
+  <widget class="ATCMlabel" name="atcmLabel_AnIn_1">
    <property name="geometry">
     <rect>
-     <x>30</x>
+     <x>50</x>
      <y>240</y>
      <width>91</width>
      <height>40</height>
@@ -1360,10 +1360,10 @@
     <number>0</number>
    </property>
   </widget>
-  <widget class="ATCMlabel" name="atcmLabel_2">
+  <widget class="ATCMlabel" name="atcmLabel_AnIn_2">
    <property name="geometry">
     <rect>
-     <x>210</x>
+     <x>260</x>
      <y>240</y>
      <width>91</width>
      <height>40</height>
@@ -1422,10 +1422,10 @@
     <number>0</number>
    </property>
   </widget>
-  <widget class="ATCMlabel" name="atcmLabel_3">
+  <widget class="ATCMlabel" name="atcmLabel_AnIn_3">
    <property name="geometry">
     <rect>
-     <x>391</x>
+     <x>460</x>
      <y>240</y>
      <width>91</width>
      <height>40</height>
@@ -1484,10 +1484,10 @@
     <number>0</number>
    </property>
   </widget>
-  <widget class="ATCMlabel" name="atcmLabel_4">
+  <widget class="ATCMlabel" name="atcmLabel_AnIn_4">
    <property name="geometry">
     <rect>
-     <x>570</x>
+     <x>650</x>
      <y>240</y>
      <width>91</width>
      <height>40</height>
@@ -1577,7 +1577,7 @@
   <widget class="QLabel" name="label_23">
    <property name="geometry">
     <rect>
-     <x>421</x>
+     <x>490</x>
      <y>210</y>
      <width>30</width>
      <height>30</height>
@@ -1601,7 +1601,7 @@
   <widget class="QLabel" name="label_24">
    <property name="geometry">
     <rect>
-     <x>600</x>
+     <x>680</x>
      <y>210</y>
      <width>30</width>
      <height>30</height>
@@ -1625,7 +1625,7 @@
   <widget class="QLabel" name="label_26">
    <property name="geometry">
     <rect>
-     <x>60</x>
+     <x>80</x>
      <y>210</y>
      <width>30</width>
      <height>30</height>
@@ -1649,7 +1649,7 @@
   <widget class="QLabel" name="label_27">
    <property name="geometry">
     <rect>
-     <x>240</x>
+     <x>290</x>
      <y>210</y>
      <width>30</width>
      <height>30</height>
@@ -1670,7 +1670,7 @@
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
-  <widget class="ATCMlabel" name="atcmLabel_5">
+  <widget class="ATCMlabel" name="atcmLabel_AnOut_1">
    <property name="geometry">
     <rect>
      <x>31</x>
@@ -1809,7 +1809,7 @@
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
-  <widget class="ATCMlabel" name="atcmLabel_6">
+  <widget class="ATCMlabel" name="atcmLabel_AnOut_2">
    <property name="geometry">
     <rect>
      <x>220</x>
@@ -1871,19 +1871,19 @@
     <number>0</number>
    </property>
   </widget>
-  <widget class="ATCMcombobox" name="atcmComboBox">
+  <widget class="ATCMcombobox" name="atcmComboBox_AnIn_1">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>290</y>
-     <width>151</width>
+     <width>181</width>
      <height>32</height>
     </rect>
    </property>
    <property name="font">
     <font>
      <family>Arial</family>
-     <pointsize>12</pointsize>
+     <pointsize>16</pointsize>
      <weight>75</weight>
      <bold>true</bold>
     </font>
@@ -1926,19 +1926,19 @@
     <string>0;non configurato;1;corrente;2;tensione;3;TCJ;4;TCK;5;TCT;6;PT100E;7;PT100R</string>
    </property>
   </widget>
-  <widget class="ATCMcombobox" name="atcmComboBox_2">
+  <widget class="ATCMcombobox" name="atcmComboBox_AnIn_2">
    <property name="geometry">
     <rect>
-     <x>180</x>
+     <x>210</x>
      <y>290</y>
-     <width>151</width>
+     <width>181</width>
      <height>32</height>
     </rect>
    </property>
    <property name="font">
     <font>
      <family>Arial</family>
-     <pointsize>12</pointsize>
+     <pointsize>16</pointsize>
      <weight>75</weight>
      <bold>true</bold>
     </font>
@@ -1981,19 +1981,19 @@
     <string>0;non configurato;1;corrente;2;tensione;3;TCJ;4;TCK;5;TCT;6;PT100E;7;PT100R</string>
    </property>
   </widget>
-  <widget class="ATCMcombobox" name="atcmComboBox_3">
+  <widget class="ATCMcombobox" name="atcmComboBox_AnIn_3">
    <property name="geometry">
     <rect>
-     <x>360</x>
+     <x>410</x>
      <y>290</y>
-     <width>151</width>
+     <width>181</width>
      <height>32</height>
     </rect>
    </property>
    <property name="font">
     <font>
      <family>Arial</family>
-     <pointsize>12</pointsize>
+     <pointsize>16</pointsize>
      <weight>75</weight>
      <bold>true</bold>
     </font>
@@ -2036,19 +2036,19 @@
     <string>0;non configurato;1;corrente;2;tensione;3;TCJ;4;TCK;5;TCT;6;PT100E;7;PT100R</string>
    </property>
   </widget>
-  <widget class="ATCMcombobox" name="atcmComboBox_4">
+  <widget class="ATCMcombobox" name="atcmComboBox_AnIn_4">
    <property name="geometry">
     <rect>
-     <x>540</x>
+     <x>600</x>
      <y>290</y>
-     <width>161</width>
+     <width>191</width>
      <height>32</height>
     </rect>
    </property>
    <property name="font">
     <font>
      <family>Arial</family>
-     <pointsize>12</pointsize>
+     <pointsize>16</pointsize>
      <weight>75</weight>
      <bold>true</bold>
     </font>
@@ -2091,7 +2091,7 @@
     <string>0;non configurato;1;corrente;2;tensione;3;TCJ;4;TCK;5;TCT;6;PT100E;7;PT100R</string>
    </property>
   </widget>
-  <widget class="ATCMcombobox" name="atcmComboBox_5">
+  <widget class="ATCMcombobox" name="atcmComboBox_AnOut_1">
    <property name="geometry">
     <rect>
      <x>0</x>
@@ -2146,7 +2146,7 @@
     <string>0;non conf.;1;corrente;2;tensione</string>
    </property>
   </widget>
-  <widget class="ATCMcombobox" name="atcmComboBox_6">
+  <widget class="ATCMcombobox" name="atcmComboBox_AnOut_2">
    <property name="geometry">
     <rect>
      <x>190</x>
@@ -2410,74 +2410,6 @@ QLabel:disabled
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
-  <widget class="ATCMbutton" name="atcmButton_3">
-   <property name="geometry">
-    <rect>
-     <x>450</x>
-     <y>130</y>
-     <width>111</width>
-     <height>51</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>Arial</family>
-     <pointsize>12</pointsize>
-     <weight>75</weight>
-     <bold>true</bold>
-    </font>
-   </property>
-   <property name="checkable">
-    <bool>true</bool>
-   </property>
-   <property name="toolTip">
-    <string>Parti</string>
-   </property>
-   <property name="whatsThis">
-    <string>ATCMbutton widget</string>
-   </property>
-   <property name="pageName">
-    <string/>
-   </property>
-   <property name="passwordVar">
-    <string/>
-   </property>
-   <property name="statusvar">
-    <string>Parti</string>
-   </property>
-   <property name="viewStatus">
-    <bool>false</bool>
-   </property>
-   <property name="visibilityVar">
-    <string/>
-   </property>
-   <property name="bgColor">
-    <color>
-     <red>0</red>
-     <green>255</green>
-     <blue>0</blue>
-    </color>
-   </property>
-   <property name="bgPressColor">
-    <color>
-     <red>255</red>
-     <green>0</green>
-     <blue>0</blue>
-    </color>
-   </property>
-   <property name="text">
-    <string>Start</string>
-   </property>
-   <property name="pressText">
-    <string>Stop</string>
-   </property>
-   <property name="borderWidth">
-    <number>0</number>
-   </property>
-   <property name="borderRadius">
-    <number>0</number>
-   </property>
-  </widget>
   <widget class="ATCMlabel" name="atcmLabel_7">
    <property name="geometry">
     <rect>
@@ -2705,6 +2637,86 @@ QLabel:disabled
    </property>
    <property name="borderRadius">
     <number>0</number>
+   </property>
+  </widget>
+  <widget class="ATCMbutton" name="atcmButton_5">
+   <property name="geometry">
+    <rect>
+     <x>510</x>
+     <y>100</y>
+     <width>51</width>
+     <height>98</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="MinimumExpanding">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>51</width>
+     <height>0</height>
+    </size>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+   <property name="toolTip">
+    <string/>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMbutton widget</string>
+   </property>
+   <property name="pageName">
+    <string/>
+   </property>
+   <property name="passwordVar">
+    <string/>
+   </property>
+   <property name="statusvar">
+    <string/>
+   </property>
+   <property name="viewStatus">
+    <bool>false</bool>
+   </property>
+   <property name="visibilityVar">
+    <string/>
+   </property>
+   <property name="bgColor">
+    <color>
+     <red>255</red>
+     <green>0</green>
+     <blue>0</blue>
+    </color>
+   </property>
+   <property name="bgPressColor">
+    <color>
+     <red>0</red>
+     <green>255</green>
+     <blue>0</blue>
+    </color>
+   </property>
+   <property name="text">
+    <string>START
+OUT
+TEST</string>
+   </property>
+   <property name="pressText">
+    <string>TEST</string>
+   </property>
+   <property name="borderWidth">
+    <number>0</number>
+   </property>
+   <property name="borderRadius">
+    <number>30</number>
+   </property>
+   <property name="apparence">
+    <enum>QFrame::Raised</enum>
    </property>
   </widget>
  </widget>
