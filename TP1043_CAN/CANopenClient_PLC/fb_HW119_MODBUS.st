@@ -123,7 +123,7 @@ END_VAR
 								INT16:
 									ARRAY_CROSSTABLE_INPUT[addr]:=UINT_TO_DWORD(INT_Data[I]);
 								BIT:
-									ARRAY_CROSSTABLE_INPUT[addr]:=UINT_TO_DWORD(INT_Data[I]);
+									ARRAY_CROSSTABLE_INPUT[addr]:=BYTE_TO_DWORD(BOOL_Data[I]);
 							ELSE
 								ARRAY_CROSSTABLE_INPUT[addr]:=UINT_TO_DWORD(INT_Data[I]);							
 							END_CASE;
