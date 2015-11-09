@@ -20,7 +20,7 @@
     <header>
       <div class="inner">
         <h1>Mect Apps</h1>
-        <h2>the Mect Suite example applications (CFG, HMI, PLC)</h2>
+        <h2>the Mect Suite example applications (HMI, PLC)</h2>
         <a href="https://github.com/MECTsrl/mect_apps" class="button"><small>View project on</small> GitHub</a>
       </div>
     </header>
@@ -33,7 +33,7 @@
 <h3>
 <a id="mect_apps-part-of-mect-suite-sdk" class="anchor" href="#mect_apps-part-of-mect-suite-sdk" aria-hidden="true"><span class="octicon octicon-link"></span></a>mect_apps (part of <a href="http://www.mect.it/en/github/">Mect Suite SDK</a>)</h3>
 
-<p>Mect Apps: the Mect Suite example applications (CFG, HMI, PLC)</p>
+<p>Mect Apps: the Mect Suite example applications (HMI, PLC)</p>
 
 <p>Some application examples (both HMI and PLC) are bound to the Mect Suite software: those examples are useful for describing the system features.
 For using the example you need to:</p>
@@ -46,7 +46,6 @@ For using the example you need to:</p>
 <p>For each project there are several folders to be opened by different software:
 project_HMI contains the HMI graphic application, use QtCreator 
 project_PLC contains the PLC application, use ATCMcontrol Engineering
-project_CFG contains the general configuration, use MECT Configurator
 project_CAN contains the optional CANopen configuration, use ATCM CanBuilder</p>
 
 <p>The application examples are sorted in folders according to the target panels: TP1043, TPAC1007, TPAC1008 … and in AnyTPAC the generic ones.</p>
@@ -64,28 +63,28 @@ project_CAN contains the optional CANopen configuration, use ATCM CanBuilder</p>
 <a href="http://www.mect.it/en/products/control-and-automation/operator-panels-with-plc/tp1043/">TP1043_CAN</a>:
 
 <ul>
-<li>ModbusTCPclient_CFG, _CAN, _HMI, _PLC: example of client access to a Modbus TCP device (see the manual </li>
+<li>ModbusTCPclient_CAN, _HMI, _PLC: example of client access to a Modbus TCP device (see the manual </li>
 </ul>
 </li>
 <li>
 <a href="http://www.mect.it/en/products/control-and-automation/operator-panels-with-plc/tp1043/">TP1043_RTU</a>:
 
 <ul>
-<li>ModbusRTUclient_CFG, _HMI, _PLC: example of client access to a Modbus RTU device (see the manual ME7041_06_QuickStart.pdf)</li>
+<li>ModbusRTUclient_HMI, _PLC: example of client access to a Modbus RTU device (see the manual ME7041_06_QuickStart.pdf)</li>
 </ul>
 </li>
 <li>
 <a href="http://www.mect.it/en/products/control-and-automation/operator-panels-with-plc/tp1043/">TP1043_TCP</a>:
 
 <ul>
-<li>ModbusTCPclient_CFG, _HMI, _PLC: example of client access to a Modbus TCP server device (see the manual ME7041_06_QuickStart.pdf), it can be used with a panel runnig ModbusTCPserver_PLC.</li>
+<li>ModbusTCPclient_HMI, _PLC: example of client access to a Modbus TCP server device (see the manual ME7041_06_QuickStart.pdf), it can be used with a panel runnig ModbusTCPserver_PLC.</li>
 </ul>
 </li>
 <li>
 <a href="http://www.mect.it/en/products/control-and-automation/operator-panels-with-embedded-input-and-output-and-plc/tpac1006/">TPAC1006</a>:
 
 <ul>
-<li>Collaudo_CFG, _CAN, _HMI, _PLC: activation and testing of all TPAC1006 I/O</li>
+<li>Collaudo_CAN, _HMI, _PLC: activation and testing of all TPAC1006 I/O</li>
 <li>QuickStart_HMI: QuickStart_StarterKit example, already configured for TPAC1006 </li>
 </ul>
 </li>
@@ -93,7 +92,7 @@ project_CAN contains the optional CANopen configuration, use ATCM CanBuilder</p>
 <a href="http://www.mect.it/en/products/control-and-automation/operator-panels-with-embedded-input-and-output-and-plc/tpac1007/">TPAC1007</a>:
 
 <ul>
-<li>Collaudo_CFG, _HMI, _PLC:  activation and testing of all TPAC1007 I/O</li>
+<li>Collaudo_HMI, _PLC:  activation and testing of all TPAC1007 I/O</li>
 <li>QuickStart_HMI: QuickStart_StarterKit example, already configured for TPAC1007</li>
 </ul>
 </li>
@@ -101,9 +100,9 @@ project_CAN contains the optional CANopen configuration, use ATCM CanBuilder</p>
 <a href="http://www.mect.it/en/products/control-and-automation/operator-panels-with-embedded-input-and-output-and-plc/tpac1008/">TPAC1008</a>:
 
 <ul>
-<li>Collaudo_CFG, _CAN, _HMI, _PLC:  activation and testing of all TPAC1008 I/O</li>
+<li>Collaudo_CAN, _HMI, _PLC:  activation and testing of all TPAC1008 I/O</li>
 <li>QuickStart_HMI: QuickStart_StarterKit example, already configured for TPAC1008</li>
-<li>RemoteControl_CFG, _HMI: example used to drive the <a href="https://github.com/MECTsrl/mect_apps/blob/master/TPAC1008/RemoteControl_HMI/img/escav1.png">excavator</a> and <a href="https://github.com/MECTsrl/mect_apps/blob/master/TPAC1008/RemoteControl_HMI/img/gru1.png">crane</a> at <a href="http://www.spsitalia.it/94/id_20/mect-srl.html">SPS 2015</a>
+<li>RemoteControl_HMI: example used to drive the <a href="https://github.com/MECTsrl/mect_apps/blob/master/TPAC1008/RemoteControl_HMI/img/escav1.png">excavator</a> and <a href="https://github.com/MECTsrl/mect_apps/blob/master/TPAC1008/RemoteControl_HMI/img/gru1.png">crane</a> at <a href="http://www.spsitalia.it/94/id_20/mect-srl.html">SPS 2015</a>
 </li>
 </ul>
 </li>
