@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 2.7.84, 2015-05-27T09:12:35. -->
+<!-- Written by QtCreator 2.7.84, 2015-11-04T10:25:40. -->
 <qtcreator>
  <data>
   <variable>ProjectExplorer.Project.ActiveTarget</variable>
@@ -416,7 +416,7 @@
     <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Collaudo_PLC (on Remote Device)</value>
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">RemoteLinuxRunConfiguration:C:/MectApps/TPAC1008/Collaudo_HMI/Collaudo_PLC.pro</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">RemoteLinuxRunConfiguration:Z:/uff_tec/Standard/mect_suite_mpx28/Documenti Input_Output/Output di progetto/Sw/MectSuite_1.3.2_alfa/MectApps_1.4/TPAC1008/Collaudo_HMI/Collaudo_PLC.pro</value>
     <value type="QString" key="Qt4ProjectManager.MaemoRunConfiguration.Arguments">-qws</value>
     <value type="QString" key="Qt4ProjectManager.MaemoRunConfiguration.ProFile">Collaudo_PLC.pro</value>
     <value type="QString" key="RemoteLinux.RunConfig.AlternateRemoteExecutable"></value>

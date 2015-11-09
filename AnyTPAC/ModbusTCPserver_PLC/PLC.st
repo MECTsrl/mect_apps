@@ -3,7 +3,6 @@
 PROGRAM PLC
 #import "Resource1.gvl"
 #import "TPACLocaIO.gvl"
-#import "crosstable.gvl"
 #import "ServerTCP.gvl"
 VAR
 	info : TSK_INFO ;

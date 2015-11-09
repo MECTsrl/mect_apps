@@ -2,7 +2,7 @@
 ]]*)
 PROGRAM PLC
 #import "Resource1.gvl"
-#import "crosstable.gvl"
+#import "TPACLocaIO.gvl"
 VAR
 	info : TSK_INFO ;
 	counter : INT := 0;

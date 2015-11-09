@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 2.7.84, 2015-05-12T17:24:26. -->
+<!-- Written by QtCreator 2.7.84, 2015-11-05T08:36:37. -->
 <qtcreator>
  <data>
   <variable>ProjectExplorer.Project.ActiveTarget</variable>
@@ -268,8 +268,8 @@
        <value type="QString">C:/MectApps/TPAC1006/QuickStart_HMI/config/trend1.csv</value>
        <value type="QString">C:/MectApps/TPAC1006/QuickStart_HMI/config/network0.cmg</value>
        <value type="QString">C:/MectApps/TPAC1006/QuickStart_HMI/config/atn01.conf</value>
-       <value type="QString">C:/MectApps/TPAC1006/QuickStart_HMI/config/Crosstable.csv</value>
        <value type="QString">C:/MectApps/TPAC1006/QuickStart_HMI/config/trend1.csv</value>
+       <value type="QString">C:/MectApps/TPAC1006/QuickStart_HMI/config/Crosstable.csv</value>
        <value type="QString">C:/MectApps/QuickStart_HMI/build-QuickStart_HMI-IMX28-Debug/hmi</value>
        <value type="QString">C:/MectApps/TPAC1007/QuickStart_HMI/config/systool.png</value>
        <value type="QString">C:/MectApps/TPAC1007/QuickStart_HMI/config/Alarms.csv</value>
@@ -354,8 +354,8 @@
        <value type="QString">192.168.5.211</value>
        <value type="QString">192.168.5.112</value>
        <value type="QString">192.168.5.112</value>
-       <value type="QString">192.168.5.211</value>
        <value type="QString">192.168.5.112</value>
+       <value type="QString">192.168.5.211</value>
        <value type="QString">192.168.5.208</value>
        <value type="QString">192.168.5.117</value>
        <value type="QString">192.168.5.117</value>
@@ -440,8 +440,8 @@
        <value type="QString">/local/data/customtrend</value>
        <value type="QString">/local/etc/sysconfig</value>
        <value type="QString">/local/etc/sysconfig</value>
-       <value type="QString">/local/etc/sysconfig</value>
        <value type="QString">/local/data/customtrend</value>
+       <value type="QString">/local/etc/sysconfig</value>
        <value type="QString">/local/root</value>
        <value type="QString">/local/etc/sysconfig/img</value>
        <value type="QString">/local/etc/sysconfig</value>
@@ -612,8 +612,8 @@
        <value type="QDateTime">2015-05-08T18:04:02</value>
        <value type="QDateTime">2015-05-12T17:23:31</value>
        <value type="QDateTime">2015-05-12T17:23:30</value>
-       <value type="QDateTime">2015-05-08T18:04:02</value>
        <value type="QDateTime">2015-05-12T17:23:31</value>
+       <value type="QDateTime">2015-05-08T18:04:02</value>
        <value type="QDateTime">2015-05-07T18:45:56</value>
        <value type="QDateTime">2015-05-08T14:38:00</value>
        <value type="QDateTime">2015-05-08T14:38:00</value>
@@ -736,8 +736,8 @@
     <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">QuickStart_HMI (on Remote Device)</value>
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">RemoteLinuxRunConfiguration:C:/MectApps/TPAC1006/QuickStart_HMI/QuickStart_HMI.pro</value>
-    <value type="QString" key="Qt4ProjectManager.MaemoRunConfiguration.Arguments">-qws</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">RemoteLinuxRunConfiguration:X:/uff_tec/Standard/mect_suite_mpx28/Documenti Input_Output/Output di progetto/Sw/MectSuite_1.4_alfa/MectApps_1.4/TPAC1006/QuickStart_HMI/QuickStart_HMI.pro</value>
+    <value type="QString" key="Qt4ProjectManager.MaemoRunConfiguration.Arguments"></value>
     <value type="QString" key="Qt4ProjectManager.MaemoRunConfiguration.ProFile">QuickStart_HMI.pro</value>
     <value type="QString" key="RemoteLinux.RunConfig.AlternateRemoteExecutable"></value>
     <value type="bool" key="RemoteLinux.RunConfig.UseAlternateRemoteExecutable">false</value>

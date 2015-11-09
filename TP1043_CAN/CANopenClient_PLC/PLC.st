@@ -2,7 +2,7 @@
 ]]*)
 PROGRAM PLC
 #import "Resource1.gvl"
-#import "crosstable.gvl"
+#import "TPACLocaIO.gvl"
 #import "CANopenClient_CAN.gvl"
 VAR
 	info : TSK_INFO ;

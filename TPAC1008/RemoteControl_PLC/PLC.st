@@ -1,9 +1,7 @@
 (*[[
 ]]*)
 PROGRAM PLC 
-#import "crosstable.gvl"
 #import "Resource1.gvl"
-#import "LIO_TPAC1006.gvl"
 #import "TPACLocaIO.gvl"
 VAR
 	FIRST_CYCLE:BOOL;
