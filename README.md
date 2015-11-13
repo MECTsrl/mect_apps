@@ -1,5 +1,5 @@
 # mect\_apps
-Mect Apps: the Mect Suite example applications (HMI, PLC)
+Mect Apps: the Mect Suite example applications (HMI, PLC) (mect\_suite\_2.0 branch)
 
 Some application examples (both HMI and PLC) are bound to the Mect Suite software: those examples are useful for describing the system features.
 For using the example you need to:
