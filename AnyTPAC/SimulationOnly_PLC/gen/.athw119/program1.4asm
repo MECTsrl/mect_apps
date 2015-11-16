@@ -1,0 +1,203 @@
+
+
+.prg program1
+    clssid 0
+    var    ton timer
+    var    bool flipflop:=true
+    bp              0   ;"(9,8)"
+    stmtbeg         2   ;"(9,8)"
+    stmtbeg         3   ;"(12,6)"
+    PSHD_GI_32      aaa
+    POPD_GX_32      bbb
+
+    stmtbeg         4   ;"(13,6)"
+    PSHD_GI_32      ccc
+    POPD_GX_32      ddd
+
+    stmtbeg         5   ;"(16,14)"
+    PSHC_VV_16      int#500
+    PSHC_VV_32      real#500.0
+    ;space for ret val
+    PSHC_00_32
+    PSHD_GI_32      plc_time
+    PSHC_VV_32      real#1.0
+    div_real        
+    CALF_SL         26 4
+    mul_real        
+    real_to_int     
+    add_int         
+    POPD_GX_16      plc_anout_1
+
+    stmtbeg         6   ;"(17,2)"
+    PSHC_01_1
+    POPO_IN_1       timer offsetof(ton,in)
+    PSHC_VV_32      t#5000ms
+    POPO_IN_32      timer offsetof(ton,pt)
+    CALB_SN         fbid(ton) timer
+
+    stmtbeg         7   ;"(18,2)"
+    PSHO_IN_1       timer offsetof(ton,q)
+    jmpcn           @L0  ;to else
+        stmtbeg         8   ;"(19,3)"
+        PSHC_00_1
+        POPO_IN_1       timer offsetof(ton,in)
+        CALB_SN         fbid(ton) timer
+
+        stmtbeg         9   ;"(20,12)"
+        PSHD_IN_1       flipflop
+        not_bool        
+        POPD_IN_1       flipflop
+
+        stmtbeg         10   ;"(21,3)"
+        PSHD_IN_1       flipflop
+        jmpcn           @L2  ;to else
+            stmtbeg         11   ;"(22,16)"
+            PSHC_VV_16      int#1000
+            POPD_GX_16      plc_anout_2
+
+        jmp             @L3  ;to end_if
+        :@L2  ;else
+            stmtbeg         12   ;"(24,16)"
+            PSHC_00_16
+            POPD_GX_16      plc_anout_2
+
+        :@L3  ;end_if
+
+        stmtbeg         13   ;"(26,16)"
+        PSHD_IN_1       flipflop
+        POPD_GX_1       plc_digout_1
+
+    jmp             @L1  ;to end_if
+    :@L0  ;else
+        stmtbeg         14   ;"(28,16)"
+        PSHD_GO_1       plc_digin_1
+        POPD_GX_1       plc_digout_1
+
+    :@L1  ;end_if
+
+    stmtbeg         15   ;"(32,15)"
+    PSHD_GO_1       plc_digin_2
+    POPD_GX_1       plc_digout_2
+
+    stmtbeg         16   ;"(33,15)"
+    PSHD_GO_1       plc_digin_3
+    POPD_GX_1       plc_digout_3
+
+    stmtbeg         17   ;"(34,15)"
+    PSHD_GO_1       plc_digin_4
+    POPD_GX_1       plc_digout_4
+
+    stmtbeg         18   ;"(35,15)"
+    PSHD_GO_1       plc_digin_5
+    POPD_GX_1       plc_digout_5
+
+    stmtbeg         19   ;"(36,15)"
+    PSHD_GO_1       plc_digin_6
+    POPD_GX_1       plc_digout_6
+
+    stmtbeg         20   ;"(37,15)"
+    PSHD_GO_1       plc_digin_7
+    POPD_GX_1       plc_digout_7
+
+    stmtbeg         21   ;"(38,15)"
+    PSHD_GO_1       plc_digin_8
+    POPD_GX_1       plc_digout_8
+
+    stmtbeg         22   ;"(39,15)"
+    PSHD_GO_1       plc_digin_9
+    POPD_GX_1       plc_digout_9
+
+    stmtbeg         23   ;"(40,16)"
+    PSHD_GO_1       plc_digin_10
+    POPD_GX_1       plc_digout_10
+
+    stmtbeg         24   ;"(41,16)"
+    PSHD_GO_1       plc_digin_11
+    POPD_GX_1       plc_digout_11
+
+    stmtbeg         25   ;"(42,16)"
+    PSHD_GO_1       plc_digin_12
+    POPD_GX_1       plc_digout_12
+
+    stmtbeg         26   ;"(43,16)"
+    PSHD_GO_1       plc_digin_13
+    POPD_GX_1       plc_digout_13
+
+    stmtbeg         27   ;"(44,16)"
+    PSHD_GO_1       plc_digin_14
+    POPD_GX_1       plc_digout_14
+
+    stmtbeg         28   ;"(45,16)"
+    PSHD_GO_1       plc_digin_15
+    POPD_GX_1       plc_digout_15
+
+    stmtbeg         29   ;"(46,16)"
+    PSHD_GO_1       plc_digin_16
+    POPD_GX_1       plc_digout_16
+
+    stmtbeg         30   ;"(50,14)"
+    PSHD_GO_1       plc_digout_1
+    POPD_GX_1       plc_digin_2
+
+    stmtbeg         31   ;"(51,14)"
+    PSHD_GO_1       plc_digout_2
+    POPD_GX_1       plc_digin_3
+
+    stmtbeg         32   ;"(52,14)"
+    PSHD_GO_1       plc_digout_3
+    POPD_GX_1       plc_digin_4
+
+    stmtbeg         33   ;"(53,14)"
+    PSHD_GO_1       plc_digout_4
+    POPD_GX_1       plc_digin_5
+
+    stmtbeg         34   ;"(54,14)"
+    PSHD_GO_1       plc_digout_5
+    POPD_GX_1       plc_digin_6
+
+    stmtbeg         35   ;"(55,14)"
+    PSHD_GO_1       plc_digout_6
+    POPD_GX_1       plc_digin_7
+
+    stmtbeg         36   ;"(56,14)"
+    PSHD_GO_1       plc_digout_7
+    POPD_GX_1       plc_digin_8
+
+    stmtbeg         37   ;"(57,14)"
+    PSHD_GO_1       plc_digout_8
+    POPD_GX_1       plc_digin_9
+
+    stmtbeg         38   ;"(58,15)"
+    PSHD_GO_1       plc_digout_9
+    POPD_GX_1       plc_digin_10
+
+    stmtbeg         39   ;"(59,15)"
+    PSHD_GO_1       plc_digout_10
+    POPD_GX_1       plc_digin_11
+
+    stmtbeg         40   ;"(60,15)"
+    PSHD_GO_1       plc_digout_11
+    POPD_GX_1       plc_digin_12
+
+    stmtbeg         41   ;"(61,15)"
+    PSHD_GO_1       plc_digout_12
+    POPD_GX_1       plc_digin_13
+
+    stmtbeg         42   ;"(62,15)"
+    PSHD_GO_1       plc_digout_13
+    POPD_GX_1       plc_digin_14
+
+    stmtbeg         43   ;"(63,15)"
+    PSHD_GO_1       plc_digout_14
+    POPD_GX_1       plc_digin_15
+
+    stmtbeg         44   ;"(64,15)"
+    PSHD_GO_1       plc_digout_15
+    POPD_GX_1       plc_digin_16
+
+    :@__end
+    bp              1   ;"(66,1)"
+    RETN
+.end
+
+
