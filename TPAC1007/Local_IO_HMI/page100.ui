@@ -1475,6 +1475,9 @@
    <property name="statusvar">
     <string>PLC_EncEnable</string>
    </property>
+   <property name="statusPressedValue">
+    <string>2</string>
+   </property>
    <property name="viewStatus">
     <bool>false</bool>
    </property>
@@ -2077,13 +2080,13 @@
      <x>390</x>
      <y>250</y>
      <width>91</width>
-     <height>31</height>
+     <height>19</height>
     </rect>
    </property>
    <property name="font">
     <font>
      <family>DejaVu Sans Mono</family>
-     <pointsize>12</pointsize>
+     <pointsize>10</pointsize>
      <weight>75</weight>
      <bold>true</bold>
     </font>
@@ -2147,20 +2150,20 @@
     <rect>
      <x>290</x>
      <y>250</y>
-     <width>31</width>
-     <height>31</height>
+     <width>21</width>
+     <height>19</height>
     </rect>
    </property>
    <property name="font">
     <font>
      <family>DejaVu Sans Mono</family>
-     <pointsize>11</pointsize>
+     <pointsize>10</pointsize>
      <weight>75</weight>
      <bold>true</bold>
     </font>
    </property>
    <property name="text">
-    <string>FWR</string>
+    <string>FW</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>
@@ -2172,16 +2175,16 @@
   <widget class="ATCMlabel" name="atcmLabel_8">
    <property name="geometry">
     <rect>
-     <x>330</x>
+     <x>310</x>
      <y>250</y>
-     <width>61</width>
-     <height>31</height>
+     <width>41</width>
+     <height>20</height>
     </rect>
    </property>
    <property name="font">
     <font>
      <family>DejaVu Sans Mono</family>
-     <pointsize>12</pointsize>
+     <pointsize>10</pointsize>
      <weight>75</weight>
      <bold>true</bold>
     </font>
@@ -2190,13 +2193,84 @@
     <string>0</string>
    </property>
    <property name="toolTip">
-    <string>PLC_Firmware</string>
+    <string>PLC_FWrevision</string>
    </property>
    <property name="whatsThis">
     <string>ATCMlabel widget</string>
    </property>
    <property name="variable">
-    <string>PLC_Firmware</string>
+    <string>PLC_FWrevision</string>
+   </property>
+   <property name="prefix">
+    <string/>
+   </property>
+   <property name="refresh">
+    <number>200</number>
+   </property>
+   <property name="max">
+    <string>0</string>
+   </property>
+   <property name="min">
+    <string>0</string>
+   </property>
+   <property name="viewStatus">
+    <bool>false</bool>
+   </property>
+   <property name="visibilityVar">
+    <string/>
+   </property>
+   <property name="bgColor">
+    <color alpha="0">
+     <red>255</red>
+     <green>255</green>
+     <blue>255</blue>
+    </color>
+   </property>
+   <property name="fontColor">
+    <color>
+     <red>0</red>
+     <green>0</green>
+     <blue>0</blue>
+    </color>
+   </property>
+   <property name="borderWidth">
+    <number>0</number>
+   </property>
+   <property name="borderRadius">
+    <number>0</number>
+   </property>
+   <property name="apparence">
+    <enum>QFrame::Plain</enum>
+   </property>
+  </widget>
+  <widget class="ATCMlabel" name="atcmLabel_9">
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>250</y>
+     <width>41</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans Mono</family>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>0</string>
+   </property>
+   <property name="toolTip">
+    <string>PLC_HWconfig</string>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMlabel widget</string>
+   </property>
+   <property name="variable">
+    <string>PLC_HWconfig</string>
    </property>
    <property name="prefix">
     <string/>
@@ -2294,6 +2368,7 @@
   <zorder>atcmLabel_7</zorder>
   <zorder>label_14</zorder>
   <zorder>atcmLabel_8</zorder>
+  <zorder>atcmLabel_9</zorder>
  </widget>
  <customwidgets>
   <customwidget>

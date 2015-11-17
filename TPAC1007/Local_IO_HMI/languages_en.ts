@@ -1305,12 +1305,15 @@ The value must ranging between %2 and %3</source>
         <location filename="page100.ui" line="1332"/>
         <location filename="page100.ui" line="1350"/>
         <location filename="page100.ui" line="1353"/>
-        <location filename="page100.ui" line="2092"/>
-        <location filename="page100.ui" line="2110"/>
+        <location filename="page100.ui" line="2095"/>
         <location filename="page100.ui" line="2113"/>
-        <location filename="page100.ui" line="2190"/>
-        <location filename="page100.ui" line="2208"/>
+        <location filename="page100.ui" line="2116"/>
+        <location filename="page100.ui" line="2193"/>
         <location filename="page100.ui" line="2211"/>
+        <location filename="page100.ui" line="2214"/>
+        <location filename="page100.ui" line="2264"/>
+        <location filename="page100.ui" line="2282"/>
+        <location filename="page100.ui" line="2285"/>
         <source>0</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1381,8 +1384,8 @@ The value must ranging between %2 and %3</source>
         <location filename="page100.ui" line="859"/>
         <location filename="page100.ui" line="1126"/>
         <location filename="page100.ui" line="1467"/>
-        <location filename="page100.ui" line="1540"/>
-        <location filename="page100.ui" line="2024"/>
+        <location filename="page100.ui" line="1543"/>
+        <location filename="page100.ui" line="2027"/>
         <source>ATCMbutton widget</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1418,6 +1421,7 @@ The value must ranging between %2 and %3</source>
     <message>
         <location filename="page100.ui" line="716"/>
         <location filename="page100.ui" line="719"/>
+        <location filename="page100.ui" line="1479"/>
         <source>2</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1439,8 +1443,9 @@ The value must ranging between %2 and %3</source>
         <location filename="page100.ui" line="1193"/>
         <location filename="page100.ui" line="1264"/>
         <location filename="page100.ui" line="1338"/>
-        <location filename="page100.ui" line="2098"/>
-        <location filename="page100.ui" line="2196"/>
+        <location filename="page100.ui" line="2101"/>
+        <location filename="page100.ui" line="2199"/>
+        <location filename="page100.ui" line="2270"/>
         <source>ATCMlabel widget</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1455,52 +1460,60 @@ The value must ranging between %2 and %3</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="1781"/>
+        <location filename="page100.ui" line="1784"/>
         <source>AI1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="1811"/>
+        <location filename="page100.ui" line="1814"/>
         <source>AI2</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="1841"/>
+        <location filename="page100.ui" line="1844"/>
         <source>AO1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="1871"/>
+        <location filename="page100.ui" line="1874"/>
         <source>Ta.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="1898"/>
+        <location filename="page100.ui" line="1901"/>
         <source>Enc</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="2027"/>
-        <location filename="page100.ui" line="2046"/>
+        <location filename="page100.ui" line="2030"/>
         <location filename="page100.ui" line="2049"/>
+        <location filename="page100.ui" line="2052"/>
         <source>menu</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="2095"/>
-        <location filename="page100.ui" line="2101"/>
+        <location filename="page100.ui" line="2098"/>
+        <location filename="page100.ui" line="2104"/>
         <source>PLC_Heartbeat</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="2163"/>
-        <source>FWR</source>
+        <location filename="page100.ui" line="2166"/>
+        <source>FW</source>
+        <oldsource>FWR</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="2193"/>
-        <location filename="page100.ui" line="2199"/>
-        <source>PLC_Firmware</source>
+        <location filename="page100.ui" line="2196"/>
+        <location filename="page100.ui" line="2202"/>
+        <source>PLC_FWrevision</source>
+        <oldsource>PLC_Firmware</oldsource>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page100.ui" line="2267"/>
+        <location filename="page100.ui" line="2273"/>
+        <source>PLC_HWconfig</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1563,7 +1576,7 @@ The value must ranging between %2 and %3</source>
         <translation type="unfinished"></translation>
     </message>
     <message utf8="true">
-        <location filename="page100.ui" line="1757"/>
+        <location filename="page100.ui" line="1760"/>
         <source>0;[°C]</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1582,15 +1595,15 @@ The value must ranging between %2 and %3</source>
     </message>
     <message>
         <location filename="page100.ui" line="1404"/>
-        <location filename="page100.ui" line="1599"/>
-        <location filename="page100.ui" line="1659"/>
-        <location filename="page100.ui" line="1719"/>
+        <location filename="page100.ui" line="1602"/>
+        <location filename="page100.ui" line="1662"/>
+        <location filename="page100.ui" line="1722"/>
         <source>ATCMcombobox widget</source>
         <translation type="unfinished"></translation>
     </message>
     <message utf8="true">
         <location filename="page100.ui" line="1442"/>
-        <location filename="page100.ui" line="1637"/>
+        <location filename="page100.ui" line="1640"/>
         <source>0;---;1;[mA] 4..20;2;[V] 0..10;3;[°C] 0..600;4;[°C] 0..1200;5;[°C] 0..400;6;[°C]-40..800;7;[°C]-40..200</source>
         <oldsource>0;---;1;[mA] 4..20;2;[V] 0..10;3;[°C] 0..600;4;[°C] 0..1200;5;[°C] 0..400;6;[°C] -40..800;7;[°C] -40..200</oldsource>
         <translation type="unfinished"></translation>
@@ -1602,43 +1615,43 @@ The value must ranging between %2 and %3</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="1506"/>
+        <location filename="page100.ui" line="1509"/>
         <source>Enc. Enable</source>
         <oldsource>Enable</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="1509"/>
+        <location filename="page100.ui" line="1512"/>
         <source>Enc.Enabled</source>
         <oldsource>Enabled</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="1537"/>
-        <location filename="page100.ui" line="1549"/>
+        <location filename="page100.ui" line="1540"/>
+        <location filename="page100.ui" line="1552"/>
         <source>PLC_EncoderReset</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="1565"/>
         <location filename="page100.ui" line="1568"/>
+        <location filename="page100.ui" line="1571"/>
         <source>Reset</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="1596"/>
-        <location filename="page100.ui" line="1602"/>
+        <location filename="page100.ui" line="1599"/>
+        <location filename="page100.ui" line="1605"/>
         <source>PLC_AnInConf_2</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="1656"/>
-        <location filename="page100.ui" line="1662"/>
+        <location filename="page100.ui" line="1659"/>
+        <location filename="page100.ui" line="1665"/>
         <source>PLC_AnOutConf_1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="1697"/>
+        <location filename="page100.ui" line="1700"/>
         <source>0;---;1;[mA] 4..20;2;[V] 0..10</source>
         <translation type="unfinished"></translation>
     </message>
