@@ -70,9 +70,9 @@ info::info(QWidget *parent) :
     }
     
     /* set up the page style */
-    SET_PAGE_STYLE();
+    //SET_PAGE_STYLE();
     /* set the style described into the macro SET_INFO_STYLE */
-    SET_INFO_STYLE();
+    //SET_INFO_STYLE();
     
     /* connect the label that show the date and the time to the timer of the parent updateData */
     labelDataOra = ui->labelDataOra;
@@ -225,6 +225,19 @@ void info::updateData()
     /* call the parent updateData member */
     page::updateData();
 }
+
+#ifdef TRANSLATION
+/**
+ * @brief This is the event slot to detect new language translation.
+ */
+void info::changeEvent(QEvent * event)
+{
+    if (event->type() == QEvent::LanguageChange)
+    {
+        ui->retranslateUi(this);
+    }
+}
+#endif
 
 /**
  * @brief This is the distructor member. The operation written here, are executed only one time when the page will be deleted.

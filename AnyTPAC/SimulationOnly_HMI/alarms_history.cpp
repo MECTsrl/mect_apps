@@ -140,6 +140,19 @@ void alarms_history::updateData()
     ui->pushButtonSave->setEnabled(USBCheck());
 }
 
+#ifdef TRANSLATION
+/**
+ * @brief This is the event slot to detect new language translation.
+ */
+void alarms_history::changeEvent(QEvent * event)
+{
+    if (event->type() == QEvent::LanguageChange)
+    {
+        ui->retranslateUi(this);
+    }
+}
+#endif
+
 /**
  * @brief This is the distructor member. The operation written here, are executed only one time when the page will be deleted.
  */
@@ -179,6 +192,7 @@ bool alarms_history::loadLogFile(const char * filename, bool alarm, bool event, 
     }
     LOG_PRINT(info_e, "opened '%s'\n", line);
     
+#if 0        
     QList<event_descr_e *> alarms_events;
     event_descr_e * actual_alarm = NULL;
     bool todump;
@@ -227,7 +241,6 @@ bool alarms_history::loadLogFile(const char * filename, bool alarm, bool event, 
             LOG_PRINT(error_e, "Malformed log file [%s]\n", line);
             return false;
         }
-        
         actual_alarm = NULL;
         /* looking for an existing event */
         for (int i = 0; i < alarms_events.count(); i++)
@@ -425,10 +438,103 @@ bool alarms_history::loadLogFile(const char * filename, bool alarm, bool event, 
                 (alarms_events.at(i)->ack == NULL) ? "-" : alarms_events.at(i)->ack->toString("yy/MM/dd-HH:mm:ss").toAscii().data(),
                 (alarms_events.at(i)->end == NULL) ? "-" : alarms_events.at(i)->end->toString("yy/MM/dd-HH:mm:ss").toAscii().data()
                                                      );
+        ui->listWidget->addItem(tmp);
+        LOG_PRINT(info_e, "add '%s'\n", tmp);
+    }
+#else
+    ui->listWidget->clear();
+    while (fgets(line, LINE_SIZE, fp) != NULL)
+    {
+        /* type;level;tag;event;YYYY/MM/DD,HH:mm:ss;description */
+        /* type */
+        p = strtok(line, ";");
+        if (p == NULL)
+        {
+            LOG_PRINT(info_e, "Skip empty line'%s'\n", line);
+            continue;
+        }
+        /* skip the alarms */
+        if (atoi(p) == ALARM && alarm == false)
+        {
+            LOG_PRINT(info_e, "Skip alarm '%s'\n", line);
+            continue;
+        }
+        /* skip the events */
+        if (atoi(p) == EVENT && event == false)
+        {
+            LOG_PRINT(info_e, "Skip event '%s'\n", line);
+            continue;
+        }
+        
+        /* level */
+        p = strtok(NULL, ";");
+        if (p == NULL)
+        {
+            LOG_PRINT(error_e, "Malformed log file [%s]\n", line);
+            return false;
+        }
+        /* skip the level */
+        if (atoi(p) < level)
+        {
+            LOG_PRINT(info_e, "Skip level '%d %d'\n", atoi(p), level);
+            continue;
+        }
+        
+        /* tag */
+        p = strtok(NULL, ";");
+        if (p == NULL)
+        {
+            LOG_PRINT(error_e, "Malformed log file [%s]\n", line);
+            return false;
+        }
+        char tag[32];
+        strcpy(tag, p);
+        
+        /* event */
+        p = strtok(NULL, ";");
+        if (p == NULL)
+        {
+            LOG_PRINT(error_e, "Malformed log file [%s]\n", line);
+            return false;
+        }
+        char event[32];
+        strcpy(event, p);
+        
+        /* date */
+        p = strtok(NULL, ";");
+        if (p == NULL)
+        {
+            LOG_PRINT(error_e, "Malformed log file [%s]\n", line);
+            return false;
+        }
+        char date[32];
+        strcpy(date, p);
+        
+        /* description */
+        p = strtok(NULL, ";");
+        if (p == NULL)
+        {
+            LOG_PRINT(error_e, "Malformed log file [%s]\n", line);
+            return false;
+        }
+        char description[256];
+        strcpy(description, p);
+        if (strchr(description, '\n'))
+        {
+            *strchr(description, '\n') = '\0';
+        }
+        
+        /* change this code in order to change the output into the alarm history widget */
+        sprintf(tmp, "%s - %s - [%s]",
+                date,
+                description,
+                event);
         
         ui->listWidget->addItem(tmp);
         LOG_PRINT(info_e, "add '%s'\n", tmp);
     }
+    LOG_PRINT(info_e, "COUNT '%d'\n", ui->listWidget->count());
+#endif        
     
     return true;
 }

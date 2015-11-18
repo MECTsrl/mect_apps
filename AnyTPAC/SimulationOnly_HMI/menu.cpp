@@ -101,6 +101,19 @@ void menu::updateData()
     }
 }
 
+#ifdef TRANSLATION
+/**
+ * @brief This is the event slot to detect new language translation.
+ */
+void menu::changeEvent(QEvent * event)
+{
+    if (event->type() == QEvent::LanguageChange)
+    {
+        ui->retranslateUi(this);
+    }
+}
+#endif
+
 /**
  * @brief This is the distructor member. The operation written here, are executed only one time when the page will be deleted.
  */
@@ -173,7 +186,7 @@ void menu::on_pushButtonData_clicked()
 
 void menu::on_pushButtonConfigurations_clicked()
 {
-    goto_page("option");
+    goto_page("options");
 }
 
 void menu::on_pushButtonInfo_clicked()
@@ -208,4 +221,5 @@ void menu::on_pushButton_clicked()
     exit(0);
 }
 #endif
+
 

@@ -92,6 +92,19 @@ void sgdd::updateData()
     page::updateData();
 }
 
+#ifdef TRANSLATION
+/**
+ * @brief This is the event slot to detect new language translation.
+ */
+void sgdd::changeEvent(QEvent * event)
+{
+    if (event->type() == QEvent::LanguageChange)
+    {
+        ui->retranslateUi(this);
+    }
+}
+#endif
+
 sgdd::~sgdd()
 {
     delete ui;

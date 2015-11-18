@@ -18,7 +18,9 @@ TEMPLATE = app
 target.path = /local/root
 INSTALLS += target
 
-config.files = config/atn01.conf config/application.conf config/Crosstable.csv config/Commpar.csv config/Alarms.csv
+config.files = config/atn01.conf config/application.conf config/Crosstable.csv config/Commpar.csv
+config.files += config/Alarms.csv
+%TRANSLATION%config.files += config/lang_table.csv
 config.path = /local/etc/sysconfig
 
 splash.files = config/splash.png config/systool.png
@@ -30,8 +32,23 @@ customstore.path = /local/data/customstore
 customtrend.files = config/trend1.csv
 customtrend.path = /local/data/customtrend
 
-INSTALLS += config splash customstore customtrend
-CONFIG += alarms store trend
+CONFIG(debug, debug|release) {
+    debug_deploy.files = config/dont_run_safe_hmi
+    debug_deploy.path = /var/tmp
+    INSTALLS += debug_deploy
+}
+
+INSTALLS += config splash
+
+INSTALLS += customstore
+INSTALLS += customtrend
+
+CONFIG += alarms
+CONFIG += store
+CONFIG += trend
+CONFIG += recipe
+
+DEFINES += TRANSLATION
 
 include(./qt_environment.pri)
 
@@ -50,10 +67,12 @@ QMAKE_LIBDIR += ../../lib \
 LIBS += \
 -lts \
 -lqwt \
+-lATCMcommon \
 -lATCMutility \
 -lATCMcommunication \
 -lATCMplugin \
--lATCMinputdialog
+-lATCMinputdialog \
+-lATCMlogger
 
 # Input
 HEADERS += \
@@ -64,18 +83,16 @@ HEADERS += \
 		   info.h \
 		   main.h \
 		   menu.h \
-		   option.h \
 		   page0.h \
-		   pagebrowser.h \
 		   pages.h \
-		   screensaver.h \
 		   sgdd.h \
 		   item_selector.h \
 		   style.h \
 		   time_set.h \
 		   data_manager.h \
 		   buzzer_settings.h \
-		   comm_status.h
+		   comm_status.h \
+    options.h
 
 FORMS += \
 		 commpar_rtu.ui \
@@ -84,14 +101,14 @@ FORMS += \
 		 display_settings.ui \
 		 info.ui \
 		 menu.ui \
-		 option.ui \
 		 page0.ui \
 		 sgdd.ui \
 		 item_selector.ui \
 		 time_set.ui \
 		 data_manager.ui \
 		 buzzer_settings.ui \
-		 comm_status.ui
+		 comm_status.ui \
+    options.ui
 
 SOURCES += \
 		   commpar_rtu.cpp \
@@ -101,27 +118,23 @@ SOURCES += \
 		   info.cpp \
 		   main.cpp \
 		   menu.cpp \
-		   option.cpp \
 		   page0.cpp \
-		   pagebrowser.cpp \
 		   pages.cpp \
-		   screensaver.cpp \
 		   sgdd.cpp \
 		   item_selector.cpp \
 		   time_set.cpp \
 		   data_manager.cpp \
 		   buzzer_settings.cpp \
-		   comm_status.cpp
+		   comm_status.cpp \
+    options.cpp
 
 store {
 	DEFINES+=ENABLE_STORE
 
 	HEADERS -= \
-               hmi_logger.h \
 			   datalog_set.h
 
 	HEADERS += \
-			   hmi_logger.h \
 			   datalog_set.h \
 			   store.h \
 			   store_filter.h
@@ -135,11 +148,9 @@ store {
 			   store_filter.ui
 
 	SOURCES -= \
-	           hmi_logger.cpp \
                datalog_set.cpp
 
   	SOURCES += \
-			   hmi_logger.cpp \
 			   datalog_set.cpp \
 			   store.cpp \
 			   store_filter.cpp
@@ -149,11 +160,9 @@ alarms {
 	DEFINES+=ENABLE_ALARMS
 
 	HEADERS -= \
-               hmi_logger.h \
 			   datalog_set.h
 
 	HEADERS += \
-			   hmi_logger.h \
 			   datalog_set.h \
 			   alarms.h \
 			   alarms_history.h
@@ -167,11 +176,9 @@ alarms {
 			   alarms_history.ui
 
 	SOURCES -= \
-	           hmi_logger.cpp \
                datalog_set.cpp
 
   	SOURCES += \
-			   hmi_logger.cpp \
 			   datalog_set.cpp \
 			   alarms.cpp \
 			   alarms_history.cpp
@@ -181,11 +188,9 @@ trend {
 	DEFINES+=ENABLE_TREND
 
 	HEADERS -= \
-               hmi_logger.h \
 			   datalog_set.h
 
 	HEADERS += \
-			   hmi_logger.h \
 			   datalog_set.h \
 			   trend.h \
 			   trend_other.h \
@@ -203,11 +208,9 @@ trend {
 			   trend_range.ui
 
 	SOURCES -= \
-	           hmi_logger.cpp \
                datalog_set.cpp
 
   	SOURCES += \
-			   hmi_logger.cpp \
 			   datalog_set.cpp \
 			   trend.cpp \
 			   trend_other.cpp \
@@ -216,7 +219,8 @@ trend {
 }
 
 recipe {
-	DEFINES+=ENABLE_RECIPE
+	
+        DEFINES+=ENABLE_RECIPE
 
 	HEADERS += \
 			   recipe.h \
@@ -234,11 +238,15 @@ recipe {
 RESOURCES += \
 	systemicons.qrc
 
-check.commands = @perl $${PWD}/cleanmissingpage.pl $$_PRO_FILE_
+check_missing_file.commands = @perl $${ATCM_TEMPLATE_BASE_DIR}/ATCM-template-project/cleanmissingpage.pl $$_PRO_FILE_ $$_PRO_FILE_PWD_
+check_undeclared_variable.commands = @perl $${ATCM_TEMPLATE_BASE_DIR}/ATCM-template-project/check_cross_var.pl $$_PRO_FILE_PWD_
 
-QMAKE_EXTRA_TARGETS += check
-PRE_TARGETDEPS += check
+QMAKE_EXTRA_TARGETS += check_missing_file check_undeclared_variable
+PRE_TARGETDEPS += check_missing_file check_undeclared_variable
 
+TRANSLATION = 1
+!isEmpty(TRANSLATION)
+{
 QT_LUPDATE_PATH=$$(QT_LUPDATE_PATH)
 
 isEmpty(QT_LUPDATE_PATH) {
@@ -267,3 +275,6 @@ isEmpty(QT_LUPDATE_PATH) {
     }
 }
 
+}
+
+MODEL = "<width>480</width><height>272</height>"

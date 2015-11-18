@@ -125,6 +125,19 @@ void alarms::updateData()
     page::updateData();
 }
 
+#ifdef TRANSLATION
+/**
+ * @brief This is the event slot to detect new language translation.
+ */
+void alarms::changeEvent(QEvent * event)
+{
+    if (event->type() == QEvent::LanguageChange)
+    {
+        ui->retranslateUi(this);
+    }
+}
+#endif
+
 /**
  * @brief This is the distructor member. The operation written here, are executed only one time when the page will be deleted.
  */
@@ -399,6 +412,7 @@ void alarms::refreshEvent()
     /* update the active alarm if it is necessary */
     for (int i = 0; i < _active_alarms_events_.count(); i++)
     {
+        visibility = true;
         LOG_PRINT(info_e,"%s\n", _active_alarms_events_.at(i)->tag);
         event = EventHash.find(_active_alarms_events_.at(i)->tag).value();
         

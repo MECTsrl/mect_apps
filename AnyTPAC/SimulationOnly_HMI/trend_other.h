@@ -30,7 +30,11 @@ public:
     virtual void reload(void);
     
 private slots:
+#ifdef TRANSLATION
+    void changeEvent(QEvent * event);
+#endif
     void on_pushButtonBack_clicked();
+    
     void on_pushButtonHome_clicked();
     
     void on_pushButtonTime_clicked();

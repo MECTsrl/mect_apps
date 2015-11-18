@@ -117,6 +117,19 @@ void display_settings::updateData()
     page::updateData();
 }
 
+#ifdef TRANSLATION
+/**
+ * @brief This is the event slot to detect new language translation.
+ */
+void display_settings::changeEvent(QEvent * event)
+{
+    if (event->type() == QEvent::LanguageChange)
+    {
+        ui->retranslateUi(this);
+    }
+}
+#endif
+
 /**
  * @brief This is the distructor member. The operation written here, are executed only one time when the page will be deleted.
  */
