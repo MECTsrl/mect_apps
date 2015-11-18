@@ -2122,10 +2122,10 @@
     <string/>
    </property>
    <property name="bgColor">
-    <color alpha="0">
+    <color>
      <red>255</red>
      <green>255</green>
-     <blue>255</blue>
+     <blue>127</blue>
     </color>
    </property>
    <property name="fontColor">
@@ -2161,6 +2161,9 @@
      <weight>75</weight>
      <bold>true</bold>
     </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(0, 170, 255);</string>
    </property>
    <property name="text">
     <string>FW</string>
@@ -2220,8 +2223,8 @@
     <string/>
    </property>
    <property name="bgColor">
-    <color alpha="0">
-     <red>255</red>
+    <color>
+     <red>170</red>
      <green>255</green>
      <blue>255</blue>
     </color>
@@ -2291,10 +2294,10 @@
     <string/>
    </property>
    <property name="bgColor">
-    <color alpha="0">
-     <red>255</red>
+    <color>
+     <red>170</red>
      <green>255</green>
-     <blue>255</blue>
+     <blue>127</blue>
     </color>
    </property>
    <property name="fontColor">

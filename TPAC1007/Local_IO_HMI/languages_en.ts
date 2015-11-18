@@ -1308,12 +1308,12 @@ The value must ranging between %2 and %3</source>
         <location filename="page100.ui" line="2095"/>
         <location filename="page100.ui" line="2113"/>
         <location filename="page100.ui" line="2116"/>
-        <location filename="page100.ui" line="2193"/>
-        <location filename="page100.ui" line="2211"/>
+        <location filename="page100.ui" line="2196"/>
         <location filename="page100.ui" line="2214"/>
-        <location filename="page100.ui" line="2264"/>
-        <location filename="page100.ui" line="2282"/>
+        <location filename="page100.ui" line="2217"/>
+        <location filename="page100.ui" line="2267"/>
         <location filename="page100.ui" line="2285"/>
+        <location filename="page100.ui" line="2288"/>
         <source>0</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1444,8 +1444,8 @@ The value must ranging between %2 and %3</source>
         <location filename="page100.ui" line="1264"/>
         <location filename="page100.ui" line="1338"/>
         <location filename="page100.ui" line="2101"/>
-        <location filename="page100.ui" line="2199"/>
-        <location filename="page100.ui" line="2270"/>
+        <location filename="page100.ui" line="2202"/>
+        <location filename="page100.ui" line="2273"/>
         <source>ATCMlabel widget</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1498,21 +1498,21 @@ The value must ranging between %2 and %3</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="2166"/>
+        <location filename="page100.ui" line="2169"/>
         <source>FW</source>
         <oldsource>FWR</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="2196"/>
-        <location filename="page100.ui" line="2202"/>
+        <location filename="page100.ui" line="2199"/>
+        <location filename="page100.ui" line="2205"/>
         <source>PLC_FWrevision</source>
         <oldsource>PLC_Firmware</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="2267"/>
-        <location filename="page100.ui" line="2273"/>
+        <location filename="page100.ui" line="2270"/>
+        <location filename="page100.ui" line="2276"/>
         <source>PLC_HWconfig</source>
         <translation type="unfinished"></translation>
     </message>
