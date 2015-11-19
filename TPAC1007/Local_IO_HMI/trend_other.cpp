@@ -123,6 +123,19 @@ void trend_other::reload()
     ui->pushButtonOnline->update();
 }
 
+#ifdef TRANSLATION
+/**
+ * @brief This is the event slot to detect new language translation.
+ */
+void trend_other::changeEvent(QEvent * event)
+{
+    if (event->type() == QEvent::LanguageChange)
+    {
+        ui->retranslateUi(this);
+    }
+}
+#endif
+
 /**
  * @brief This is the distructor member. The operation written here, are executed only one time when the page will be deleted.
  */

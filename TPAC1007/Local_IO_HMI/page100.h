@@ -26,6 +26,9 @@ public:
     virtual void reload(void);
     virtual void updateData();
     
+private slots:
+    void changeEvent(QEvent * event);
+    
 private:
     Ui::page100 *ui;
 };

@@ -96,6 +96,19 @@ void commpar_tcprtu::updateData()
     page::updateData();
 }
 
+#ifdef TRANSLATION
+/**
+ * @brief This is the event slot to detect new language translation.
+ */
+void commpar_tcprtu::changeEvent(QEvent * event)
+{
+    if (event->type() == QEvent::LanguageChange)
+    {
+        ui->retranslateUi(this);
+    }
+}
+#endif
+
 commpar_tcprtu::~commpar_tcprtu()
 {
     delete ui;

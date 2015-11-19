@@ -97,6 +97,19 @@ void commpar_tcp::updateData()
     page::updateData();
 }
 
+#ifdef TRANSLATION
+/**
+ * @brief This is the event slot to detect new language translation.
+ */
+void commpar_tcp::changeEvent(QEvent * event)
+{
+    if (event->type() == QEvent::LanguageChange)
+    {
+        ui->retranslateUi(this);
+    }
+}
+#endif
+
 commpar_tcp::~commpar_tcp()
 {
     delete ui;

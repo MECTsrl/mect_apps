@@ -28,6 +28,9 @@ public:
     virtual void updateData();
     
 private slots:
+#ifdef TRANSLATION
+    void changeEvent(QEvent * event);
+#endif
     void change_brightness();
     
     void on_pushButtonMinus_pressed();

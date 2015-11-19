@@ -100,6 +100,9 @@ trend::trend(QWidget *parent) :
     d_qwtplot = ui->qwtPlot;
     
     d_qwtplot->plotLayout()->setAlignCanvasToScales(true);
+    d_qwtplot->setAxesCount( QwtPlot::xBottom, 1 );
+    d_qwtplot->setAxesCount( QwtPlot::xTop, PEN_NB );
+    d_qwtplot->setAxesCount( QwtPlot::yLeft, PEN_NB );
     
     /* set the trend stylesheet */
     SET_TREND();
@@ -127,13 +130,8 @@ trend::trend(QWidget *parent) :
     grid->enableXMin(true);
     grid->enableY(true);
     grid->enableYMin(true);
-#if ( QWT_VERSION > 0x060001 )
     grid->setMajorPen(QPen(Qt::black, 0, Qt::DotLine));
     grid->setMinorPen(QPen(Qt::gray, 0 , Qt::DotLine));
-#else
-    grid->setMajPen(QPen(Qt::black, 0, Qt::DotLine));
-    grid->setMinPen(QPen(Qt::gray, 0 , Qt::DotLine));
-#endif
     grid->attach(d_qwtplot);
     //ui->horizontalLayoutPlot->insertWidget(2, d_qwtplot);
     d_qwtplot->setAutoReplot(true);
@@ -303,17 +301,21 @@ void trend::reload()
             pens[i].curve->setPen(QPen(QColor(QString("#%1").arg(pens[i].color)),2));
         }
         LOG_PRINT(verbose_e, "####### Resetting axis curve %d\n", i);
-        d_qwtplot->enableAxis(QwtPlot::xBottom + i, false);
+        for ( int axis = 0; axis < QwtAxis::PosCount; axis++ )
+        {
+            d_qwtplot->setAxisVisible( axis, false );
+        }
+        d_qwtplot->setAxisVisible( QwtAxisId( QwtPlot::xBottom, i ), false);
         d_qwtplot->setAxisScaleDraw(QwtPlot::xBottom + i, NULL);
         d_qwtplot->setAxisMaxMajor(QwtPlot::xBottom + i, 0);
         d_qwtplot->setAxisMaxMinor(QwtPlot::xBottom + i, 0);
         
-        d_qwtplot->enableAxis(QwtPlot::xTop + i, false);
+        d_qwtplot->setAxisVisible( QwtAxisId( QwtPlot::xTop, i ), false);
         d_qwtplot->setAxisScaleDraw(QwtPlot::xTop + i, NULL);
         d_qwtplot->setAxisMaxMajor(QwtPlot::xTop + i, 0);
         d_qwtplot->setAxisMaxMinor(QwtPlot::xTop + i, 0);
         
-        d_qwtplot->enableAxis(QwtPlot::yLeft + i, false);
+        d_qwtplot->setAxisVisible( QwtAxisId( QwtPlot::yLeft, i ), false);
         d_qwtplot->setAxisScaleDraw(QwtPlot::yLeft + i, NULL);
         d_qwtplot->setAxisMaxMajor(QwtPlot::yLeft + i, 0);
         d_qwtplot->setAxisMaxMinor(QwtPlot::yLeft + i, 0);
@@ -324,7 +326,7 @@ void trend::reload()
         d_qwtplot->axisWidget(QwtPlot::yLeft + i)->setSpacing(0);
 #endif
         
-        d_qwtplot->enableAxis(QwtPlot::yRight + i, false);
+        d_qwtplot->setAxisVisible( QwtAxisId( QwtPlot::yRight, i ), false);
         d_qwtplot->setAxisScaleDraw(QwtPlot::yRight + i, NULL);
         d_qwtplot->setAxisMaxMajor(QwtPlot::yRight + i, 0);
         d_qwtplot->setAxisMaxMinor(QwtPlot::yRight + i, 0);
@@ -342,7 +344,7 @@ void trend::reload()
     {
         timeScale->setBaseTime(TzeroLoaded.time());
     }
-    d_qwtplot->enableAxis(timeAxisId, false);
+    d_qwtplot->setAxisVisible( QwtAxisId( timeAxisId, 0 ), false);
     LOG_PRINT(verbose_e, "####### Setting time axis\n");
 #else
     d_qwtplot->setAxisScaleDraw(timeAxisId, new TimeScaleDraw(TzeroLoaded.time()));
@@ -490,6 +492,19 @@ void trend::updateData()
     }
     
 }
+
+#ifdef TRANSLATION
+/**
+ * @brief This is the event slot to detect new language translation.
+ */
+void trend::changeEvent(QEvent * event)
+{
+    if (event->type() == QEvent::LanguageChange)
+    {
+        ui->retranslateUi(this);
+    }
+}
+#endif
 
 /**
  * @brief This is the distructor member. The operation written here, are executed only one time when the page will be deleted.
@@ -744,7 +759,7 @@ void trend::on_pushButtonSelect_clicked()
     for (int i = 0; i < PEN_NB; i++)
     {
         LOG_PRINT(verbose_e, "####### axis curve %d set status %d\n", i, (i == actualPen));
-        d_qwtplot->enableAxis(valueAxisId + i, (i == actualPen));
+        d_qwtplot->setAxisVisible( QwtAxisId( valueAxisId, i ), (i == actualPen));
 #if 0
         //if (i == actualPen)
         {
@@ -1655,7 +1670,7 @@ bool trend::loadFromFile(QDateTime Ti)
     {
         timeScale->setBaseTime(TzeroLoaded.time());
     }
-    d_qwtplot->enableAxis(timeAxisId, true);
+    d_qwtplot->setAxisVisible( QwtAxisId( timeAxisId, 0 ), true);
     LOG_PRINT(verbose_e, "####### Setting time axis\n");
 #else
     d_qwtplot->setAxisScaleDraw(timeAxisId, new TimeScaleDraw(TzeroLoaded.time()));
@@ -1699,16 +1714,10 @@ bool trend::showWindow(QDateTime Tmin, QDateTime Tmax, double ymin, double ymax,
     }
     arrayTimeTicks << sfinal;
     
-#if ( QWT_VERSION > 0x060001 )
     QwtScaleDiv scale = QwtScaleDiv(sinint,sfinal);
-    //scale = d_qwtplot->axisScaleDiv(timeAxisId);
     scale.setTicks(QwtScaleDiv::MajorTick, (arrayTimeTicks));
-    d_qwtplot->setAxisScaleDiv(timeAxisId, scale);
-#else
-    d_qwtplot->setAxisScale(timeAxisId, sinint, sfinal);
-    d_qwtplot->axisScaleDiv(timeAxisId)->setTicks(QwtScaleDiv::MajorTick, (arrayTimeTicks));
-#endif
-    d_qwtplot->enableAxis(timeAxisId, true);
+    d_qwtplot->setAxisScaleDiv( QwtAxisId( timeAxisId, 0 ), scale);
+    d_qwtplot->setAxisVisible( QwtAxisId( timeAxisId, 0 ), true);
     /* prepare the values */
     for (int pen_index = 0; pen_index < PEN_NB; pen_index++)
     {
@@ -1720,14 +1729,13 @@ bool trend::showWindow(QDateTime Tmin, QDateTime Tmax, double ymin, double ymax,
             for (XindexIn = 0; pens[pen_index].x[XindexIn] < nsec && XindexIn < MAX_SAMPLE_NB; XindexIn++);
             XindexIn = ((pens[pen_index].x[XindexIn] > nsec) ? (XindexIn - 1): XindexIn);
             
-            int decimal =  getVarDecimalByCtIndex(pens[pen_index].CtIndex);
-            int mindecimal = ceil(ABS(log10(((double)(pens[pen_index].yMaxActual - pens[pen_index].yMinActual))/VERT_TICKS)));
-            LOG_PRINT(verbose_e, "mindecimal %d, decimal %d - %f\n", mindecimal,decimal, ((double)(pens[pen_index].yMaxActual - pens[pen_index].yMinActual))/VERT_TICKS);
-            if (decimal < mindecimal)
-            {
-                decimal = mindecimal;
-            }
+            int decimal = getVarDecimal(pens[pen_index].CtIndex);
             
+            if (pens[pen_index].yMaxActual - pens[pen_index].yMinActual < 1)
+            {
+                int mindecimal = ceil(-log10(((double)(pens[pen_index].yMaxActual - pens[pen_index].yMinActual))));
+                decimal = (decimal < mindecimal) ? mindecimal : decimal;
+            }
             if (valueScale[pen_index]->getDecimalNb() != decimal)
             {
                 valueScale[pen_index]->setDecimalNb(decimal);
@@ -1742,15 +1750,10 @@ bool trend::showWindow(QDateTime Tmin, QDateTime Tmax, double ymin, double ymax,
                 arrayTicks << pens[pen_index].yMinActual + (pens[pen_index].yMaxActual - pens[pen_index].yMinActual) * i / VERT_TICKS;
             }
             arrayTimeTicks << pens[pen_index].yMaxActual;
-#if ( QWT_VERSION > 0x060001 )
             QwtScaleDiv scale = QwtScaleDiv(pens[pen_index].yMinActual,pens[pen_index].yMaxActual);
             //scale = d_qwtplot->axisScaleDiv(valueAxisId + pen_index);
             scale.setTicks(QwtScaleDiv::MajorTick, (arrayTicks));
-            d_qwtplot->setAxisScaleDiv(valueAxisId + pen_index, scale);
-#else
-            d_qwtplot->setAxisScale(valueAxisId + pen_index, pens[pen_index].yMinActual, pens[pen_index].yMaxActual);
-            d_qwtplot->axisScaleDiv(valueAxisId + pen_index)->setTicks(QwtScaleDiv::MajorTick, (arrayTicks));
-#endif
+            d_qwtplot->setAxisScaleDiv( QwtAxisId( valueAxisId, pen_index ), scale);
             
             /* if online, the last sample is pens[pen_index].sample */
             if (_online_)
@@ -1970,7 +1973,7 @@ bool trend::loadWindow(QDateTime Tmin, QDateTime Tmax, double ymin, double ymax,
                           actualVisibleWindowSec
                           );
                 actualTzero = TzeroLoaded;
-                d_qwtplot->enableAxis(timeAxisId, true);
+                d_qwtplot->setAxisVisible( QwtAxisId( timeAxisId, 0 ), true);
             }
         }
         else
@@ -2200,11 +2203,7 @@ void InterruptedCurve::drawCurve( QPainter *painter, __attribute__((unused))int 
     // Scan all data to identify gaps
     for (int i = from; i <= to; i++)
     {
-#if ( QWT_VERSION > 0x060001 )
         const QPointF sample = data()->sample(i);
-#else
-        const QPointF sample = d_series->sample(i);
-#endif
         
         LOG_PRINT(verbose_e, "sample.y() %f -> %d, sample.x() %f -> %d is_gap %s\n", sample.y(), isnormal(sample.y()), sample.x(), isnormal(sample.x()), is_gap ? "true" : "false");
         
@@ -2273,5 +2272,6 @@ void trend::on_pushButtonOnline_clicked()
 {
     setOnline(!(getOnline()));
 }
+
 
 
