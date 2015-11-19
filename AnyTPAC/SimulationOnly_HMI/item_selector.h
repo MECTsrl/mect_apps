@@ -28,6 +28,9 @@ public:
     virtual void reload(void);
     
 private slots:
+#ifdef TRANSLATION
+    void changeEvent(QEvent * event);
+#endif
     void on_pushButtonView_clicked();
     
     void on_pushButtonBack_clicked();

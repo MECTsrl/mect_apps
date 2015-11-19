@@ -60,8 +60,6 @@ time_set::time_set(QWidget *parent) :
     /* connect the label that show the user name */
     //labelUserName = ui->labelUserName;
     
-    ui->retranslateUi(this);
-    
     reload();
 }
 
@@ -98,6 +96,19 @@ void time_set::updateData()
 {
     page::updateData();
 }
+
+#ifdef TRANSLATION
+/**
+ * @brief This is the event slot to detect new language translation.
+ */
+void time_set::changeEvent(QEvent * event)
+{
+    if (event->type() == QEvent::LanguageChange)
+    {
+        ui->retranslateUi(this);
+    }
+}
+#endif
 
 time_set::~time_set()
 {

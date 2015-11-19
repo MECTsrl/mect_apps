@@ -26,6 +26,9 @@ public:
     virtual void reload(void);
     
 private slots:
+#ifdef TRANSLATION
+    void changeEvent(QEvent * event);
+#endif
     void changePage();
     
 private:

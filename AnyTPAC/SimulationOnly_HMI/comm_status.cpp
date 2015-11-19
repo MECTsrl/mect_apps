@@ -93,9 +93,9 @@ void comm_status::updateData()
     if (IS_TCP_ENABLED)
     {
         /* Error counters */
-        ui->labelConuterTCPval->setText(QString("%1").arg(getErrorCounter(TAG_TCP, ui->pushButtonNodeTCP->text().toInt())));
+        ui->labelConuterTCPval->setText(QString("%1").arg(getErrorCounter(prot_tcp_e, ui->pushButtonNodeTCP->text().toInt())));
         /* Node status */
-        switch(getErrorBit(TAG_TCP, ui->comboBoxTypeTCP->currentText().toAscii().data(), ui->pushButtonNodeTCP->text().toInt()))
+        switch(getErrorBitByName(TAG_TCP, ui->comboBoxTypeTCP->currentText().toAscii().data(), ui->pushButtonNodeTCP->text().toInt()))
         {
         case 0:
             ui->labelErrorBitTCPval->setStyleSheet("border-radius: 10px; background-color: "LED_ON";");
@@ -108,7 +108,7 @@ void comm_status::updateData()
             break;
         }
         /* Prootocol status */
-        switch(getErrorStatus(TAG_TCP, ui->comboBoxTypeTCP->currentText().toAscii().data()))
+        switch(getErrorStatusByName(TAG_TCP, ui->comboBoxTypeTCP->currentText().toAscii().data()))
         {
         case 0:
             ui->labelErrorStatusTCPval->setStyleSheet("border-radius: 10px; background-color: "LED_ON";");
@@ -134,9 +134,9 @@ void comm_status::updateData()
     if (IS_RTU_ENABLED)
     {
         /* Error counters */
-        ui->labelConuterRTUval->setText(QString("%1").arg(getErrorCounter(TAG_RTU, ui->comboBoxNodeRTU->currentText().toInt())));
+        ui->labelConuterRTUval->setText(QString("%1").arg(getErrorCounter(prot_rtu_e, ui->comboBoxNodeRTU->currentText().toInt())));
         /* Node status */
-        switch(getErrorBit(TAG_RTU, ui->comboBoxTypeRTU->currentText().toAscii().data(),  ui->comboBoxNodeRTU->currentText().toInt()))
+        switch(getErrorBitByName(TAG_RTU, ui->comboBoxTypeRTU->currentText().toAscii().data(),  ui->comboBoxNodeRTU->currentText().toInt()))
         {
         case 0:
             ui->labelErrorBitRTUval->setStyleSheet("border-radius: 10px; background-color: "LED_ON";");
@@ -149,7 +149,7 @@ void comm_status::updateData()
             break;
         }
         /* Prootocol status */
-        switch(getErrorStatus(TAG_RTU, ui->comboBoxTypeRTU->currentText().toAscii().data()))
+        switch(getErrorStatusByName(TAG_RTU, ui->comboBoxTypeRTU->currentText().toAscii().data()))
         {
         case 0:
             ui->labelErrorStatusRTUval->setStyleSheet("border-radius: 10px; background-color: "LED_ON";");
@@ -174,9 +174,9 @@ void comm_status::updateData()
     if (IS_TCPRTU_ENABLED)
     {
         /* Error counters */
-        ui->labelConuterTCPRTUval->setText(QString("%1").arg(getErrorCounter(TAG_TCPRTU, ui->comboBoxNodeTCPRTU->currentText().toInt())));
+        ui->labelConuterTCPRTUval->setText(QString("%1").arg(getErrorCounter(prot_tcprtu_e, ui->comboBoxNodeTCPRTU->currentText().toInt())));
         /* Node status */
-        switch(getErrorBit(TAG_TCPRTU, ui->comboBoxTypeTCPRTU->currentText().toAscii().data(), ui->comboBoxNodeTCPRTU->currentText().toInt()))
+        switch(getErrorBitByName(TAG_TCPRTU, ui->comboBoxTypeTCPRTU->currentText().toAscii().data(), ui->comboBoxNodeTCPRTU->currentText().toInt()))
         {
         case 0:
             ui->labelErrorBitTCPRTUval->setStyleSheet("border-radius: 10px; background-color: "LED_ON";");
@@ -189,7 +189,7 @@ void comm_status::updateData()
             break;
         }
         /* Prootocol status */
-        switch(getErrorStatus(TAG_TCPRTU, ui->comboBoxTypeTCPRTU->currentText().toAscii().data()))
+        switch(getErrorStatusByName(TAG_TCPRTU, ui->comboBoxTypeTCPRTU->currentText().toAscii().data()))
         {
         case 0:
             ui->labelErrorStatusTCPRTUval->setStyleSheet("border-radius: 10px; background-color: "LED_ON";");
@@ -213,6 +213,19 @@ void comm_status::updateData()
     }
 }
 
+#ifdef TRANSLATION
+/**
+ * @brief This is the event slot to detect new language translation.
+ */
+void comm_status::changeEvent(QEvent * event)
+{
+    if (event->type() == QEvent::LanguageChange)
+    {
+        ui->retranslateUi(this);
+    }
+}
+#endif
+
 /**
  * @brief This is the distructor member. The operation written here, are executed only one time when the page will be deleted.
  */
@@ -225,17 +238,17 @@ comm_status::~comm_status()
 
 void comm_status::on_pushButtonResetTCP_clicked()
 {
-    resetError(TAG_TCP);
+    resetError(prot_tcp_e);
 }
 
 void comm_status::on_pushButtonResetRTU_clicked()
 {
-    resetError(TAG_RTU);
+    resetError(prot_rtu_e);
 }
 
 void comm_status::on_pushButtonResetTCPRTU_clicked()
 {
-    resetError(TAG_TCPRTU);
+    resetError(prot_tcprtu_e);
 }
 
 void comm_status::on_pushButtonNodeTCP_clicked()

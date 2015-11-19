@@ -27,6 +27,9 @@ public:
     virtual void updateData();
     
 private slots:
+#ifdef TRANSLATION
+    void changeEvent(QEvent * event);
+#endif
     void on_pushButtonTouchBuzzer_toggled(bool checked);
     
     void on_pushButtonAlarmBuzzer_toggled(bool checked);

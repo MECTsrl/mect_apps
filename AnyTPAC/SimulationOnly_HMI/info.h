@@ -28,6 +28,9 @@ public:
     bool getVersion(const char * command, char * version, int maxsize);
     
 private slots:
+#ifdef TRANSLATION
+    void changeEvent(QEvent * event);
+#endif
     void on_pushButtonHome_clicked();
     
 private:
