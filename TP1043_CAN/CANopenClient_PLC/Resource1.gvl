@@ -1,9 +1,0 @@
-(* Global variable file *)
-VAR_GLOBAL
-DigitalInput_3 AT %MW0.5380:UINT;
-DigitalInput_4 AT %MW0.5384:UINT;
-DigitalOutput_1 AT %MW0.5388:UINT;
-DigitalOutput_2 AT %MW0.5392:UINT;
-AnalogInput_1 AT %MW0.5396:INT;
-AnalogInput_2 AT %MW0.5400:INT;
-END_VAR
