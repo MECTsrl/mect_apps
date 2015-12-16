@@ -12,7 +12,7 @@
 #include "main.h"
 #include "page100.h"
 #include "ui_page100.h"
-#include "config/Crosstable.h"
+#include "Crosstable.h"
 
 /**
  * @brief this macro is used to set the PAGE100 style.
@@ -95,17 +95,17 @@ void page100::updateData()
      }
      */
     u_int32_t aaa, bbb;
-    float ccc, ddd;
+        float ccc, ddd;
 
-    // read input
-    readVar("BBB", &bbb); // readVar
-    readVar("DDD", &ddd); // readVar
-    // compute
-    aaa = bbb;
-    ccc = ddd;
-    // write outputs
-    writeVar("AAA", &aaa); // writeVar
-    writeVar("CCC", &ddd); // writeVar
+        // read input
+        bbb = BBB;
+        ddd = DDD;
+        // compute
+        aaa = bbb;
+        ccc = ddd;
+        // write outputs
+        doWrite_AAA(aaa); // writeVar
+        doWrite_CCC(ddd); // writeVar
 }
 
 /**

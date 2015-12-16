@@ -1,8 +1,6 @@
 <RCC>
     <qresource prefix="/config">
-        <file>config/atn01.conf</file>
-        <file>config/application.conf</file>
-        <file>config/Commpar.csv</file>
+        <file>config/system.ini</file>
         <file>config/Crosstable.csv</file>
         <file>config/trend1.csv</file>
         <file>config/store1.csv</file>
