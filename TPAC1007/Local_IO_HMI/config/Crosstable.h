@@ -1,58 +1,262 @@
-/*Created by Mect Config v2.0*/
+/*Created by MectConfigurator v2.x
+INT       <-> int16_t
+UINT      <-> u_int16_t
+DINT      <-> int32_t
+UDINT     <-> u_int32_t
+REAL      <-> float
+BIT       <-> int
+BYTE_BIT  <-> int
+WORD_BIT  <-> int
+DWORD_BIT <-> int
+*/
 #ifndef CROSSTABLE_H
 #define CROSSTABLE_H
-#define RISING_FRONT 192
-#define FALLING_FRONT 193
-#define AAA 1344
-#define BBB 1345
-#define CCC 1346
-#define DDD 1347
-#define PLC_FWrevision 5299
-#define PLC_HWconfig 5300
-#define PLC_DigDir_1 5301
-#define PLC_DigDir_2 5302
-#define PLC_DigDir_3 5303
-#define PLC_DigDir_4 5304
-#define PLC_DigDir_5 5305
-#define PLC_DigDir_6 5306
-#define PLC_DigDir_7 5307
-#define PLC_DigDir_8 5308
-#define PLC_AnInConf_1 5309
-#define PLC_AnInConf_2 5310
-#define PLC_AnOutConf_1 5311
-#define PLC_DigIn_1 5312
-#define PLC_DigIn_2 5313
-#define PLC_DigIn_3 5314
-#define PLC_DigIn_4 5315
-#define PLC_DigIn_5 5316
-#define PLC_DigIn_6 5317
-#define PLC_DigIn_7 5318
-#define PLC_DigIn_8 5319
-#define PLC_DigIn_9 5320
-#define PLC_DigIn_10 5321
-#define PLC_DigIn_11 5322
-#define PLC_DigIn_12 5323
-#define PLC_AnIn_1 5324
-#define PLC_AnIn_2 5325
-#define PLC_Tamb 5326
-#define PLC_Encoder 5327
-#define PLC_DigOut_1 5328
-#define PLC_DigOut_2 5329
-#define PLC_DigOut_3 5330
-#define PLC_DigOut_4 5331
-#define PLC_DigOut_5 5332
-#define PLC_DigOut_6 5333
-#define PLC_DigOut_7 5334
-#define PLC_DigOut_8 5335
-#define PLC_AnOut_1 5336
-#define PLC_EncEnable 5337
-#define PLC_EncoderReset 5338
-#define PLC_Reserved_16 5339
-#define PLC_Reserved_17 5340
-#define PLC_Reserved_18 5341
-#define PLC_Reserved_19 5342
-#define PLC_Heartbeat 5343
-#define PLC_time 5389
-#define PLC_timeMin 5390
-#define PLC_timeMax 5391
+#ifdef __cplusplus
+extern "C" {
+#endif
+#include <sys/types.h>
+ 
+#define ID_PLC_FWrevision 5300
+extern u_int16_t PLC_FWrevision;
+int doWrite_PLC_FWrevision(u_int16_t value);
+int prepareWrite_PLC_FWrevision(u_int16_t value);
+ 
+#define ID_PLC_HWconfig 5301
+extern u_int16_t PLC_HWconfig;
+int doWrite_PLC_HWconfig(u_int16_t value);
+int prepareWrite_PLC_HWconfig(u_int16_t value);
+ 
+#define ID_PLC_DigDir_1 5302
+extern int PLC_DigDir_1;
+int doWrite_PLC_DigDir_1(int value);
+int prepareWrite_PLC_DigDir_1(int value);
+ 
+#define ID_PLC_DigDir_2 5303
+extern int PLC_DigDir_2;
+int doWrite_PLC_DigDir_2(int value);
+int prepareWrite_PLC_DigDir_2(int value);
+ 
+#define ID_PLC_DigDir_3 5304
+extern int PLC_DigDir_3;
+int doWrite_PLC_DigDir_3(int value);
+int prepareWrite_PLC_DigDir_3(int value);
+ 
+#define ID_PLC_DigDir_4 5305
+extern int PLC_DigDir_4;
+int doWrite_PLC_DigDir_4(int value);
+int prepareWrite_PLC_DigDir_4(int value);
+ 
+#define ID_PLC_DigDir_5 5306
+extern int PLC_DigDir_5;
+int doWrite_PLC_DigDir_5(int value);
+int prepareWrite_PLC_DigDir_5(int value);
+ 
+#define ID_PLC_DigDir_6 5307
+extern int PLC_DigDir_6;
+int doWrite_PLC_DigDir_6(int value);
+int prepareWrite_PLC_DigDir_6(int value);
+ 
+#define ID_PLC_DigDir_7 5308
+extern int PLC_DigDir_7;
+int doWrite_PLC_DigDir_7(int value);
+int prepareWrite_PLC_DigDir_7(int value);
+ 
+#define ID_PLC_DigDir_8 5309
+extern int PLC_DigDir_8;
+int doWrite_PLC_DigDir_8(int value);
+int prepareWrite_PLC_DigDir_8(int value);
+ 
+#define ID_PLC_AnInConf_1 5310
+extern u_int16_t PLC_AnInConf_1;
+int doWrite_PLC_AnInConf_1(u_int16_t value);
+int prepareWrite_PLC_AnInConf_1(u_int16_t value);
+ 
+#define ID_PLC_AnInConf_2 5311
+extern u_int16_t PLC_AnInConf_2;
+int doWrite_PLC_AnInConf_2(u_int16_t value);
+int prepareWrite_PLC_AnInConf_2(u_int16_t value);
+ 
+#define ID_PLC_AnOutConf_1 5312
+extern u_int16_t PLC_AnOutConf_1;
+int doWrite_PLC_AnOutConf_1(u_int16_t value);
+int prepareWrite_PLC_AnOutConf_1(u_int16_t value);
+ 
+#define ID_PLC_DigIn_1 5313
+extern int PLC_DigIn_1;
+int doWrite_PLC_DigIn_1(int value);
+int prepareWrite_PLC_DigIn_1(int value);
+ 
+#define ID_PLC_DigIn_2 5314
+extern int PLC_DigIn_2;
+int doWrite_PLC_DigIn_2(int value);
+int prepareWrite_PLC_DigIn_2(int value);
+ 
+#define ID_PLC_DigIn_3 5315
+extern int PLC_DigIn_3;
+int doWrite_PLC_DigIn_3(int value);
+int prepareWrite_PLC_DigIn_3(int value);
+ 
+#define ID_PLC_DigIn_4 5316
+extern int PLC_DigIn_4;
+int doWrite_PLC_DigIn_4(int value);
+int prepareWrite_PLC_DigIn_4(int value);
+ 
+#define ID_PLC_DigIn_5 5317
+extern int PLC_DigIn_5;
+int doWrite_PLC_DigIn_5(int value);
+int prepareWrite_PLC_DigIn_5(int value);
+ 
+#define ID_PLC_DigIn_6 5318
+extern int PLC_DigIn_6;
+int doWrite_PLC_DigIn_6(int value);
+int prepareWrite_PLC_DigIn_6(int value);
+ 
+#define ID_PLC_DigIn_7 5319
+extern int PLC_DigIn_7;
+int doWrite_PLC_DigIn_7(int value);
+int prepareWrite_PLC_DigIn_7(int value);
+ 
+#define ID_PLC_DigIn_8 5320
+extern int PLC_DigIn_8;
+int doWrite_PLC_DigIn_8(int value);
+int prepareWrite_PLC_DigIn_8(int value);
+ 
+#define ID_PLC_DigIn_9 5321
+extern int PLC_DigIn_9;
+int doWrite_PLC_DigIn_9(int value);
+int prepareWrite_PLC_DigIn_9(int value);
+ 
+#define ID_PLC_DigIn_10 5322
+extern int PLC_DigIn_10;
+int doWrite_PLC_DigIn_10(int value);
+int prepareWrite_PLC_DigIn_10(int value);
+ 
+#define ID_PLC_DigIn_11 5323
+extern int PLC_DigIn_11;
+int doWrite_PLC_DigIn_11(int value);
+int prepareWrite_PLC_DigIn_11(int value);
+ 
+#define ID_PLC_DigIn_12 5324
+extern int PLC_DigIn_12;
+int doWrite_PLC_DigIn_12(int value);
+int prepareWrite_PLC_DigIn_12(int value);
+ 
+#define ID_PLC_AnIn_1 5325
+extern int16_t PLC_AnIn_1;
+int doWrite_PLC_AnIn_1(int16_t value);
+int prepareWrite_PLC_AnIn_1(int16_t value);
+ 
+#define ID_PLC_AnIn_2 5326
+extern int16_t PLC_AnIn_2;
+int doWrite_PLC_AnIn_2(int16_t value);
+int prepareWrite_PLC_AnIn_2(int16_t value);
+ 
+#define ID_PLC_Tamb 5327
+extern int16_t PLC_Tamb;
+int doWrite_PLC_Tamb(int16_t value);
+int prepareWrite_PLC_Tamb(int16_t value);
+ 
+#define ID_PLC_Encoder 5328
+extern u_int32_t PLC_Encoder;
+int doWrite_PLC_Encoder(u_int32_t value);
+int prepareWrite_PLC_Encoder(u_int32_t value);
+ 
+#define ID_PLC_DigOut_1 5329
+extern int PLC_DigOut_1;
+int doWrite_PLC_DigOut_1(int value);
+int prepareWrite_PLC_DigOut_1(int value);
+ 
+#define ID_PLC_DigOut_2 5330
+extern int PLC_DigOut_2;
+int doWrite_PLC_DigOut_2(int value);
+int prepareWrite_PLC_DigOut_2(int value);
+ 
+#define ID_PLC_DigOut_3 5331
+extern int PLC_DigOut_3;
+int doWrite_PLC_DigOut_3(int value);
+int prepareWrite_PLC_DigOut_3(int value);
+ 
+#define ID_PLC_DigOut_4 5332
+extern int PLC_DigOut_4;
+int doWrite_PLC_DigOut_4(int value);
+int prepareWrite_PLC_DigOut_4(int value);
+ 
+#define ID_PLC_DigOut_5 5333
+extern int PLC_DigOut_5;
+int doWrite_PLC_DigOut_5(int value);
+int prepareWrite_PLC_DigOut_5(int value);
+ 
+#define ID_PLC_DigOut_6 5334
+extern int PLC_DigOut_6;
+int doWrite_PLC_DigOut_6(int value);
+int prepareWrite_PLC_DigOut_6(int value);
+ 
+#define ID_PLC_DigOut_7 5335
+extern int PLC_DigOut_7;
+int doWrite_PLC_DigOut_7(int value);
+int prepareWrite_PLC_DigOut_7(int value);
+ 
+#define ID_PLC_DigOut_8 5336
+extern int PLC_DigOut_8;
+int doWrite_PLC_DigOut_8(int value);
+int prepareWrite_PLC_DigOut_8(int value);
+ 
+#define ID_PLC_AnOut_1 5337
+extern int16_t PLC_AnOut_1;
+int doWrite_PLC_AnOut_1(int16_t value);
+int prepareWrite_PLC_AnOut_1(int16_t value);
+ 
+#define ID_PLC_EncEnable 5338
+extern u_int16_t PLC_EncEnable;
+int doWrite_PLC_EncEnable(u_int16_t value);
+int prepareWrite_PLC_EncEnable(u_int16_t value);
+ 
+#define ID_PLC_EncoderReset 5339
+extern u_int16_t PLC_EncoderReset;
+int doWrite_PLC_EncoderReset(u_int16_t value);
+int prepareWrite_PLC_EncoderReset(u_int16_t value);
+ 
+#define ID_PLC_Reserved_16 5340
+extern u_int16_t PLC_Reserved_16;
+int doWrite_PLC_Reserved_16(u_int16_t value);
+int prepareWrite_PLC_Reserved_16(u_int16_t value);
+ 
+#define ID_PLC_Reserved_17 5341
+extern u_int16_t PLC_Reserved_17;
+int doWrite_PLC_Reserved_17(u_int16_t value);
+int prepareWrite_PLC_Reserved_17(u_int16_t value);
+ 
+#define ID_PLC_Reserved_18 5342
+extern u_int16_t PLC_Reserved_18;
+int doWrite_PLC_Reserved_18(u_int16_t value);
+int prepareWrite_PLC_Reserved_18(u_int16_t value);
+ 
+#define ID_PLC_Reserved_19 5343
+extern u_int16_t PLC_Reserved_19;
+int doWrite_PLC_Reserved_19(u_int16_t value);
+int prepareWrite_PLC_Reserved_19(u_int16_t value);
+ 
+#define ID_PLC_Heartbeat 5344
+extern u_int16_t PLC_Heartbeat;
+int doWrite_PLC_Heartbeat(u_int16_t value);
+int prepareWrite_PLC_Heartbeat(u_int16_t value);
+ 
+#define ID_PLC_time 5390
+extern float PLC_time;
+int doWrite_PLC_time(float value);
+int prepareWrite_PLC_time(float value);
+ 
+#define ID_PLC_timeMin 5391
+extern float PLC_timeMin;
+int doWrite_PLC_timeMin(float value);
+int prepareWrite_PLC_timeMin(float value);
+ 
+#define ID_PLC_timeMax 5392
+extern float PLC_timeMax;
+int doWrite_PLC_timeMax(float value);
+int prepareWrite_PLC_timeMax(float value);
+ 
+#ifdef __cplusplus
+}
+#endif
 #endif

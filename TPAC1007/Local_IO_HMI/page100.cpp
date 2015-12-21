@@ -12,6 +12,7 @@
 #include "main.h"
 #include "page100.h"
 #include "ui_page100.h"
+#include "crosstable.h"
 
 /**
  * @brief this macro is used to set the PAGE100 style.
