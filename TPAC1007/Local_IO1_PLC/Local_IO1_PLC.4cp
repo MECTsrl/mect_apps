@@ -15,15 +15,13 @@ file=Configuration1.con
 file=Resource1.cst
 
 [Classes.Programs]
-file=Events.st
-file=Normal.st
+file=Program1.st
 
 [Libs]
 file=$(LIBDIR)\ATCM_IEC1131_3.4cl
 
 [Targets]
-file=TPAC1007_5_211.ATHW119
-file=TPAC1007_5_111.ATHW119
+file=TPAC1007_5_120.ATHW119
 
 [Compiler.ATHW119]
 opt=bp2
