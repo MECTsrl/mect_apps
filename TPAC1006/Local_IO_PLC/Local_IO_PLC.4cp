@@ -18,9 +18,9 @@ file=Resource1.cst
 file=Program1.st
 
 [Libs]
-file=$(LIBDIR)\ATCM_CANopen.4cl
 file=$(LIBDIR)\ATCM_IEC1131_3.4cl
 
 [Targets]
-file=HW1191.ATHW119
+file=TPAC1006.ATHW119
+file=TPAC1008.ATHW119
 

@@ -11,15 +11,18 @@
 include(./template.pri)
 
 HEADERS += \
-    page100.h
+    page100.h \
+    page400.h
 
 
 FORMS += \
-    page100.ui
+    page100.ui \
+    page400.ui
 
 
 SOURCES += \
-    page100.cpp
+    page100.cpp \
+    page400.cpp
 
 
 RESOURCES += \

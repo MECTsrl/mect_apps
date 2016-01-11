@@ -49,10 +49,6 @@
         <location filename="page100.ui" line="121"/>
         <location filename="page100.ui" line="699"/>
         <location filename="page100.ui" line="711"/>
-        <location filename="page100.ui" line="958"/>
-        <location filename="page100.ui" line="970"/>
-        <location filename="page100.ui" line="1037"/>
-        <location filename="page100.ui" line="1049"/>
         <source>PLC_DigOut_1</source>
         <translation type="unfinished"></translation>
     </message>
@@ -114,6 +110,8 @@
     <message>
         <location filename="page100.ui" line="417"/>
         <location filename="page100.ui" line="423"/>
+        <location filename="page100.ui" line="1037"/>
+        <location filename="page100.ui" line="1049"/>
         <source>PLC_DigOut_3</source>
         <translation type="unfinished"></translation>
     </message>
@@ -151,6 +149,8 @@
     <message>
         <location filename="page100.ui" line="769"/>
         <location filename="page100.ui" line="775"/>
+        <location filename="page100.ui" line="958"/>
+        <location filename="page100.ui" line="970"/>
         <source>PLC_DigOut_2</source>
         <translation type="unfinished"></translation>
     </message>

@@ -955,7 +955,7 @@
     <bool>true</bool>
    </property>
    <property name="toolTip">
-    <string>PLC_DigOut_1</string>
+    <string>PLC_DigOut_2</string>
    </property>
    <property name="whatsThis">
     <string>ATCMbutton widget</string>
@@ -967,7 +967,7 @@
     <string/>
    </property>
    <property name="statusvar">
-    <string>PLC_DigOut_1</string>
+    <string>PLC_DigOut_2</string>
    </property>
    <property name="viewStatus">
     <bool>false</bool>
@@ -1034,7 +1034,7 @@
     <bool>true</bool>
    </property>
    <property name="toolTip">
-    <string>PLC_DigOut_1</string>
+    <string>PLC_DigOut_3</string>
    </property>
    <property name="whatsThis">
     <string>ATCMbutton widget</string>
@@ -1046,7 +1046,7 @@
     <string/>
    </property>
    <property name="statusvar">
-    <string>PLC_DigOut_1</string>
+    <string>PLC_DigOut_3</string>
    </property>
    <property name="viewStatus">
     <bool>false</bool>
@@ -2571,9 +2571,9 @@
   <widget class="ATCMbutton" name="atcmButton_6">
    <property name="geometry">
     <rect>
-     <x>200</x>
+     <x>459</x>
      <y>0</y>
-     <width>120</width>
+     <width>141</width>
      <height>34</height>
     </rect>
    </property>
@@ -3168,7 +3168,7 @@ background-color: rgb(255, 255, 127);</string>
     <string>ATCMtime widget</string>
    </property>
    <property name="borderWidth">
-    <number>1</number>
+    <number>0</number>
    </property>
    <property name="borderRadius">
     <number>0</number>
@@ -3190,7 +3190,7 @@ background-color: rgb(255, 255, 127);</string>
     <string>ATCMdate widget</string>
    </property>
    <property name="borderWidth">
-    <number>1</number>
+    <number>0</number>
    </property>
    <property name="borderRadius">
     <number>0</number>
@@ -3556,13 +3556,13 @@ background-color: rgb(255, 255, 127);</string>
     </rect>
    </property>
    <property name="toolTip">
-    <string>CH0_NETGOOD</string>
+    <string>CH0_NETRUN</string>
    </property>
    <property name="whatsThis">
     <string>ATCMled widget</string>
    </property>
    <property name="variable">
-    <string>CH0_NETGOOD</string>
+    <string>CH0_NETRUN</string>
    </property>
    <property name="refresh">
     <number>500</number>

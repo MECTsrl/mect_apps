@@ -1,0 +1,15 @@
+INPUT(
+./crosstable.obj
+./pages.obj
+./page100.obj
+./page200.obj
+./page300.obj
+./page400.obj
+./moc_page100.obj
+./moc_page200.obj
+./moc_page300.obj
+./moc_page400.obj
+./qrc_systemicons.obj
+./qrc_languages.obj
+./qrc_resources.obj
+);

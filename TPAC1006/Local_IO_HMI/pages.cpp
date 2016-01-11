@@ -30,6 +30,9 @@ int create_page_nb(page ** p, int pageNb)
     case 0x100:
         *p = (page *)(new page100);
         break;
+    case 0x400:
+        *p = (page *)(new page400);
+        break;
         /* add here the case labeled with the HEX id of the new pages */
     default:
         //printf ("Fatal error: cannot find page %d\n", pageNb);

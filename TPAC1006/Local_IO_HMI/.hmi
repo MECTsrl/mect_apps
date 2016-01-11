@@ -2,7 +2,9 @@ INPUT(
 ./crosstable.obj
 ./pages.obj
 ./page100.obj
+./page400.obj
 ./moc_page100.obj
+./moc_page400.obj
 ./qrc_systemicons.obj
 ./qrc_languages.obj
 ./qrc_resources.obj

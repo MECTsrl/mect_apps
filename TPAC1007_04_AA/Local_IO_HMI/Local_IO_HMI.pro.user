@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 2.7.84, 2015-12-22T14:41:51. -->
+<!-- Written by QtCreator 2.7.84, 2016-01-11T18:37:35. -->
 <qtcreator>
  <data>
   <variable>ProjectExplorer.Project.ActiveTarget</variable>
@@ -193,17 +193,29 @@
      </valuemap>
      <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.1">
       <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Run custom remote command</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">RemoteLinux.GenericRemoteLinuxCustomCommandDeploymentStep</value>
+      <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedFiles"/>
+      <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedHosts"/>
+      <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedRemotePaths"/>
+      <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedSysroots"/>
+      <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedTimes"/>
+      <value type="QString" key="RemoteLinuxCustomCommandDeploymentStep.CommandLine">stop</value>
+     </valuemap>
+     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.2">
+      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
       <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Upload files via SFTP</value>
       <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
       <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">RemoteLinux.DirectUploadStep</value>
       <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedFiles">
-       <value type="QString">C:/MectApps/TPAC1007_04_AA/Local_IO_HMI/config/Alarms.csv</value>
-       <value type="QString">C:/MectApps/TPAC1007_04_AA/Local_IO_HMI/config/lang_table.csv</value>
-       <value type="QString">C:/MectApps/TPAC1007_04_AA/Local_IO_HMI/hmi</value>
-       <value type="QString">C:/MectApps/TPAC1007_04_AA/Local_IO_HMI/config/system.ini</value>
-       <value type="QString">C:/MectApps/TPAC1007_04_AA/Local_IO_HMI/config/dont_run_safe_hmi</value>
-       <value type="QString">C:/MectApps/TPAC1007_04_AA/Local_IO_HMI/config/splash.png</value>
        <value type="QString">C:/MectApps/TPAC1007_04_AA/Local_IO_HMI/config/Crosstable.csv</value>
+       <value type="QString">C:/MectApps/TPAC1007_04_AA/Local_IO_HMI/config/lang_table.csv</value>
+       <value type="QString">C:/MectApps/TPAC1007_04_AA/Local_IO_HMI/config/dont_run_safe_hmi</value>
+       <value type="QString">C:/MectApps/TPAC1007_04_AA/Local_IO_HMI/config/system.ini</value>
+       <value type="QString">C:/MectApps/TPAC1007_04_AA/Local_IO_HMI/config/splash.png</value>
+       <value type="QString">C:/MectApps/TPAC1007_04_AA/Local_IO_HMI/hmi</value>
+       <value type="QString">C:/MectApps/TPAC1007_04_AA/Local_IO_HMI/config/Alarms.csv</value>
        <value type="QString">C:/MectApps/TPAC1007_04_AA/Local_IO_HMI/config/systool.png</value>
        <value type="QString">C:/MectApps/TPAC1007_04_AA/Local_IO_HMI/config/store1.csv</value>
        <value type="QString">C:/MectApps/TPAC1007_04_AA/Local_IO_HMI/config/trend1.csv</value>
@@ -221,13 +233,13 @@
        <value type="QString">192.168.5.211</value>
       </valuelist>
       <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedRemotePaths">
-       <value type="QString">/update</value>
-       <value type="QString">/update</value>
-       <value type="QString">/update</value>
-       <value type="QString">/update</value>
+       <value type="QString">/local/etc/sysconfig</value>
+       <value type="QString">/local/etc/sysconfig</value>
        <value type="QString">/var/tmp</value>
+       <value type="QString">/local/etc/sysconfig</value>
        <value type="QString">/local/etc/sysconfig/img</value>
-       <value type="QString">/update</value>
+       <value type="QString">/local/root</value>
+       <value type="QString">/local/etc/sysconfig</value>
        <value type="QString">/local/etc/sysconfig/img</value>
        <value type="QString">/local/data/customstore</value>
        <value type="QString">/local/data/customtrend</value>
@@ -245,20 +257,20 @@
        <value type="QString">C:/Qt485/imx28/rootfs</value>
       </valuelist>
       <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedTimes">
-       <value type="QDateTime">2015-12-22T14:28:33</value>
-       <value type="QDateTime">2015-12-22T14:28:34</value>
-       <value type="QDateTime">2015-12-22T14:28:35</value>
-       <value type="QDateTime">2015-12-22T14:28:33</value>
-       <value type="QDateTime">2015-12-22T14:28:33</value>
-       <value type="QDateTime">2015-12-22T14:28:34</value>
-       <value type="QDateTime">2015-12-22T14:28:33</value>
-       <value type="QDateTime">2015-12-22T14:28:34</value>
-       <value type="QDateTime">2015-12-22T14:28:34</value>
-       <value type="QDateTime">2015-12-22T14:28:34</value>
+       <value type="QDateTime">2015-12-30T00:32:27</value>
+       <value type="QDateTime">2015-12-30T00:32:28</value>
+       <value type="QDateTime">2015-12-30T00:32:27</value>
+       <value type="QDateTime">2015-12-30T00:32:27</value>
+       <value type="QDateTime">2015-12-30T00:32:28</value>
+       <value type="QDateTime">2015-12-30T00:32:28</value>
+       <value type="QDateTime">2015-12-30T00:32:28</value>
+       <value type="QDateTime">2015-12-30T00:32:28</value>
+       <value type="QDateTime">2015-12-30T00:32:28</value>
+       <value type="QDateTime">2015-12-30T00:32:28</value>
       </valuelist>
       <value type="bool" key="RemoteLinux.GenericDirectUploadStep.Incremental">false</value>
      </valuemap>
-     <value type="int" key="ProjectExplorer.BuildStepList.StepsCount">2</value>
+     <value type="int" key="ProjectExplorer.BuildStepList.StepsCount">3</value>
      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Deploy</value>
      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ProjectExplorer.BuildSteps.Deploy</value>
@@ -309,8 +321,8 @@
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">RemoteLinuxRunConfiguration:C:/MectApps/TPAC1007_04_AA/Local_IO_HMI/Local_IO_HMI.pro</value>
     <value type="QString" key="Qt4ProjectManager.MaemoRunConfiguration.Arguments"></value>
     <value type="QString" key="Qt4ProjectManager.MaemoRunConfiguration.ProFile">Local_IO_HMI.pro</value>
-    <value type="QString" key="RemoteLinux.RunConfig.AlternateRemoteExecutable">sleep 5 &amp;&amp; sync &amp;&amp; /root/hmi</value>
-    <value type="bool" key="RemoteLinux.RunConfig.UseAlternateRemoteExecutable">true</value>
+    <value type="QString" key="RemoteLinux.RunConfig.AlternateRemoteExecutable"></value>
+    <value type="bool" key="RemoteLinux.RunConfig.UseAlternateRemoteExecutable">false</value>
     <value type="QString" key="RemoteLinux.RunConfig.WorkingDirectory"></value>
     <value type="uint" key="RunConfiguration.QmlDebugServerPort">3768</value>
     <value type="bool" key="RunConfiguration.UseCppDebugger">true</value>
