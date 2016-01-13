@@ -42,6 +42,21 @@ int create_page_nb(page ** p, int pageNb)
     case 0x400:
         *p = (page *)(new page400);
         break;
+    case 0x401:
+        *p = (page *)(new page401);
+        break;
+    case 0x402:
+        *p = (page *)(new page402);
+        break;
+    case 0x403:
+        *p = (page *)(new page403);
+        break;
+    case 0x404:
+        *p = (page *)(new page404);
+        break;
+    case 0x405:
+        *p = (page *)(new page405);
+        break;
         /* add here the case labeled with the HEX id of the new pages */
     default:
         //printf ("Fatal error: cannot find page %d\n", pageNb);

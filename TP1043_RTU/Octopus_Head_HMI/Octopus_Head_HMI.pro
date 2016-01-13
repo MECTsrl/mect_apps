@@ -15,6 +15,11 @@ HEADERS += \
     page200.h \
     page300.h \
     page400.h \
+    page401.h \
+    page402.h \
+    page403.h \
+    page404.h \
+    page405.h
 
 
 
@@ -22,7 +27,12 @@ FORMS += \
     page100.ui \
     page200.ui \
     page300.ui \
-    page400.ui
+    page400.ui \
+    page401.ui \
+    page402.ui \
+    page403.ui \
+    page404.ui \
+    page405.ui
 
 
 SOURCES += \
@@ -30,6 +40,11 @@ SOURCES += \
     page200.cpp \
     page300.cpp \
     page400.cpp \
+    page401.cpp \
+    page402.cpp \
+    page403.cpp \
+    page404.cpp \
+    page405.cpp
 
 
 
