@@ -4,8 +4,9 @@
 1;P;TEST_DATE;UDINT;0;PLC;;;;;1;6;[RW]
 1;P;TEST_TIME;UDINT;0;PLC;;;;;1;6;[RW]
 1;P;TEST_DURATION;UDINT;0;PLC;;;;;1;6;[RW]
-;;;;;;;;;;;;
-;;;;;;;;;;;;
+1;P;START;BIT;0;TCP_SRV;0.0.0.0;503;1;0;1;1;[RW]
+1;P;STOP;BIT;0;TCP_SRV;0.0.0.0;503;1;1;2;1;[RW]
+1;P;RESET;BIT;0;TCP_SRV;0.0.0.0;503;1;2;3;1;[RW]
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;

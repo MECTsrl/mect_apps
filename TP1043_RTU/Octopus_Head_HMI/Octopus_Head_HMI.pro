@@ -14,7 +14,8 @@ HEADERS += \
     page100.h \
     page200.h \
     page300.h \
-    page400.h
+    page400.h \
+
 
 
 FORMS += \
@@ -28,7 +29,8 @@ SOURCES += \
     page100.cpp \
     page200.cpp \
     page300.cpp \
-    page400.cpp
+    page400.cpp \
+
 
 
 RESOURCES += \
