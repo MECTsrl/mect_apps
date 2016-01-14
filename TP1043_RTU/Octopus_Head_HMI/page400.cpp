@@ -113,24 +113,3 @@ page400::~page400()
 {
     delete ui;
 }
-
-
-void page400::on_pushButtonDigIn_clicked()
-{
-    ui->tabWidget->setCurrentIndex(1);
-}
-
-void page400::on_pushButtonDigOut_clicked()
-{
-    ui->tabWidget->setCurrentIndex(2);
-}
-
-void page400::on_pushButtonAnIn_clicked()
-{
-    ui->tabWidget->setCurrentIndex(3);
-}
-
-void page400::on_pushButtonAnOut_clicked()
-{
-    ui->tabWidget->setCurrentIndex(4);
-}

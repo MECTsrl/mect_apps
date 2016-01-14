@@ -29,14 +29,6 @@ public:
 private slots:
     void changeEvent(QEvent * event);
     
-    void on_pushButtonDigIn_clicked();
-
-    void on_pushButtonDigOut_clicked();
-
-    void on_pushButtonAnIn_clicked();
-
-    void on_pushButtonAnOut_clicked();
-
 private:
     Ui::page400 *ui;
 };
