@@ -61,7 +61,7 @@ void page400::reload()
        alarm banner initialization in QLineEdit:
          rotateShowError(ui->myLineEdit, ERROR_LABEL_PERIOD_MS);
      */
-}
+   }
 
 /**
  * @brief This is the updateData member. The operation written here, are executed every REFRESH_MS milliseconds.
@@ -114,3 +114,23 @@ page400::~page400()
     delete ui;
 }
 
+
+void page400::on_atcmButton_AnIn_clicked()
+{
+    ui->tabWidget->setCurrentIndex(0);
+}
+
+void page400::on_atcmButton_AnOut_clicked()
+{
+    ui->tabWidget->setCurrentIndex(1);
+}
+
+void page400::on_atcmButton_VCC_clicked()
+{
+    ui->tabWidget->setCurrentIndex(2);
+}
+
+void page400::on_atcmButton_RTU_SRV_clicked()
+{
+    ui->tabWidget->setCurrentIndex(3);
+}
