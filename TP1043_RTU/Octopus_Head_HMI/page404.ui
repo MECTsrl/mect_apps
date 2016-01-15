@@ -2149,43 +2149,6 @@ background-color: rgb(255, 255, 127);
      <normaloff>:/off.png</normaloff>:/off.png</iconset>
    </property>
   </widget>
-  <widget class="ATCMdate" name="atcmDate">
-   <property name="geometry">
-    <rect>
-     <x>240</x>
-     <y>0</y>
-     <width>121</width>
-     <height>25</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>DejaVu Sans Mono</family>
-    </font>
-   </property>
-   <property name="toolTip">
-    <string>ATCM QDate</string>
-   </property>
-   <property name="whatsThis">
-    <string>ATCMdate widget</string>
-   </property>
-   <property name="bgColor">
-    <color>
-     <red>170</red>
-     <green>255</green>
-     <blue>127</blue>
-    </color>
-   </property>
-   <property name="borderWidth">
-    <number>0</number>
-   </property>
-   <property name="borderRadius">
-    <number>0</number>
-   </property>
-   <property name="format">
-    <enum>ATCMdate::YYYY_MM_DD</enum>
-   </property>
-  </widget>
   <widget class="ATCMlabel" name="atcmLabelAnOutConf_6">
    <property name="geometry">
     <rect>
@@ -2383,40 +2346,6 @@ background-color: rgb(255, 255, 127);
    <property name="offIcon">
     <iconset>
      <normaloff>:/off.png</normaloff>:/off.png</iconset>
-   </property>
-  </widget>
-  <widget class="ATCMtime" name="atcmTime">
-   <property name="geometry">
-    <rect>
-     <x>240</x>
-     <y>25</y>
-     <width>121</width>
-     <height>25</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>DejaVu Sans Mono</family>
-    </font>
-   </property>
-   <property name="toolTip">
-    <string>ATCM QTime</string>
-   </property>
-   <property name="whatsThis">
-    <string>ATCMtime widget</string>
-   </property>
-   <property name="bgColor">
-    <color>
-     <red>170</red>
-     <green>255</green>
-     <blue>127</blue>
-    </color>
-   </property>
-   <property name="borderWidth">
-    <number>0</number>
-   </property>
-   <property name="borderRadius">
-    <number>0</number>
    </property>
   </widget>
   <widget class="ATCMled" name="atcmLed_PLC_DigOut_15">
@@ -2720,9 +2649,9 @@ background-color: rgb(255, 255, 127);
    <property name="geometry">
     <rect>
      <x>241</x>
-     <y>48</y>
+     <y>44</y>
      <width>120</width>
-     <height>20</height>
+     <height>22</height>
     </rect>
    </property>
    <property name="font">
@@ -2768,6 +2697,13 @@ background-color: rgb(255, 255, 127);
      <blue>127</blue>
     </color>
    </property>
+   <property name="fontColor">
+    <color>
+     <red>0</red>
+     <green>0</green>
+     <blue>0</blue>
+    </color>
+   </property>
    <property name="borderWidth">
     <number>0</number>
    </property>
@@ -2775,6 +2711,177 @@ background-color: rgb(255, 255, 127);
     <number>0</number>
    </property>
   </widget>
+  <widget class="ATCMtime" name="atcmTime">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>22</y>
+     <width>121</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans Mono</family>
+    </font>
+   </property>
+   <property name="toolTip">
+    <string>ATCM QTime</string>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMtime widget</string>
+   </property>
+   <property name="bgColor">
+    <color>
+     <red>170</red>
+     <green>255</green>
+     <blue>127</blue>
+    </color>
+   </property>
+   <property name="borderWidth">
+    <number>0</number>
+   </property>
+   <property name="borderRadius">
+    <number>0</number>
+   </property>
+  </widget>
+  <widget class="ATCMdate" name="atcmDate">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>0</y>
+     <width>121</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans Mono</family>
+    </font>
+   </property>
+   <property name="toolTip">
+    <string>ATCM QDate</string>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMdate widget</string>
+   </property>
+   <property name="bgColor">
+    <color>
+     <red>170</red>
+     <green>255</green>
+     <blue>127</blue>
+    </color>
+   </property>
+   <property name="borderWidth">
+    <number>0</number>
+   </property>
+   <property name="borderRadius">
+    <number>0</number>
+   </property>
+   <property name="format">
+    <enum>ATCMdate::YYYY_MM_DD</enum>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_Qt_Project_3">
+   <property name="geometry">
+    <rect>
+     <x>360</x>
+     <y>50</y>
+     <width>120</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(170, 255, 127);</string>
+   </property>
+   <property name="text">
+    <string>page404: An.Out.</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <zorder>atcmLed_PLC_AnOut_15</zorder>
+  <zorder>atcmLabelAnOut_2</zorder>
+  <zorder>atcmLed_PLC_AnOut_8</zorder>
+  <zorder>atcmLed_PLC_DigOut_13</zorder>
+  <zorder>atcmLed_PLC_DigOut_23</zorder>
+  <zorder>label_3</zorder>
+  <zorder>atcmLed_PLC_DigOut_17</zorder>
+  <zorder>label_PLC_AnOut_6</zorder>
+  <zorder>label_PLC_AnOut_17</zorder>
+  <zorder>atcmLabelAnOut_7</zorder>
+  <zorder>label_PLC_AnOut_8</zorder>
+  <zorder>atcmLed_3</zorder>
+  <zorder>atcmLabelAnOutConf_3</zorder>
+  <zorder>atcmComboBox_2</zorder>
+  <zorder>label_PLC_AnOut_4</zorder>
+  <zorder>atcmLabelAnOutConf_8</zorder>
+  <zorder>atcmLabelAnOut_6</zorder>
+  <zorder>atcmLed_PLC_AnOut_22</zorder>
+  <zorder>atcmLed</zorder>
+  <zorder>atcmButton_menu</zorder>
+  <zorder>atcmLed_PLC_AnOut_7</zorder>
+  <zorder>label_PLC_AnOut_2</zorder>
+  <zorder>label_PLC_AnOut_3</zorder>
+  <zorder>atcmLabelAnOutConf_2</zorder>
+  <zorder>atcmLed_PLC_AnOut_16</zorder>
+  <zorder>atcmLed_PLC_AnOut_20</zorder>
+  <zorder>atcmLed_PLC_AnOut_6</zorder>
+  <zorder>atcmLabelAnOutConf_4</zorder>
+  <zorder>atcmLed_PLC_AnOut_19</zorder>
+  <zorder>atcmLed_PLC_AnOut_1</zorder>
+  <zorder>atcmLabelAnOut_1</zorder>
+  <zorder>atcmComboBox</zorder>
+  <zorder>atcmLed_PLC_AnOut_4</zorder>
+  <zorder>atcmLed_PLC_DigOut_19</zorder>
+  <zorder>atcmLed_PLC_AnOut_5</zorder>
+  <zorder>atcmLabelAnOut_3</zorder>
+  <zorder>atcmLed_PLC_DigOut_18</zorder>
+  <zorder>label_Qt_Project</zorder>
+  <zorder>atcmLabelAnOutConf_7</zorder>
+  <zorder>atcmLabelAnOutConf_1</zorder>
+  <zorder>label_PLC_AnOut_15</zorder>
+  <zorder>label_PLC_AnOut_14</zorder>
+  <zorder>label_PLC_AnOut_5</zorder>
+  <zorder>atcmLed_PLC_AnOut_23</zorder>
+  <zorder>atcmLed_2</zorder>
+  <zorder>label_PLC_AnOut_13</zorder>
+  <zorder>label_2</zorder>
+  <zorder>label_PLC_AnOut_1</zorder>
+  <zorder>atcmLed_PLC_AnOut_17</zorder>
+  <zorder>atcmLabelAnOut_8</zorder>
+  <zorder>label_PLC_AnOut_16</zorder>
+  <zorder>atcmLed_PLC_DigOut_21</zorder>
+  <zorder>atcmLabelAnOutConf_6</zorder>
+  <zorder>atcmLed_PLC_AnOut_2</zorder>
+  <zorder>atcmLabelAnOutConf_5</zorder>
+  <zorder>label</zorder>
+  <zorder>atcmLed_PLC_AnOut_24</zorder>
+  <zorder>atcmLed_PLC_DigOut_15</zorder>
+  <zorder>label_PLC_AnOut_7</zorder>
+  <zorder>atcmLabelAnOut_4</zorder>
+  <zorder>atcmLabelAnOut_5</zorder>
+  <zorder>atcmLed_PLC_AnOut_3</zorder>
+  <zorder>atcmButton_6</zorder>
+  <zorder>atcmLed_PLC_DigOut_20</zorder>
+  <zorder>atcmLabel</zorder>
+  <zorder>atcmTime</zorder>
+  <zorder>atcmDate</zorder>
+  <zorder>label_Qt_Project_3</zorder>
+  <zorder>line_vt_4</zorder>
+  <zorder>line_hr_1</zorder>
+  <zorder>line_vt_1</zorder>
+  <zorder>line_hr_4</zorder>
+  <zorder>line_hr_2</zorder>
+  <zorder>line_hr_3</zorder>
+  <zorder>line_vt_2</zorder>
  </widget>
  <customwidgets>
   <customwidget>

@@ -18,6 +18,7 @@ u_int32_t TEST_STEP = 0;
 u_int32_t TEST_DATE = 0;
 u_int32_t TEST_TIME = 0;
 u_int32_t TEST_DURATION = 0;
+int GO = 0;
 int RESET = 0;
 int START = 0;
 int STOP = 0;
@@ -309,6 +310,7 @@ int OK_RTU3_WR = 0;
 int OK_RTU3_RD = 0;
 int OK_CAN1_WR = 0;
 int OK_CAN1_RD = 0;
+u_int16_t PLC_HeartBeat = 0;
 int PLC_DigIn_1 = 0;
 int PLC_DigIn_2 = 0;
 int PLC_DigIn_3 = 0;
@@ -430,6 +432,18 @@ return writeVarByCtIndex(ID_TEST_DURATION,  &value);
 int addWrite_TEST_DURATION(u_int32_t value)
 {
 return (prepareWriteVarByCtIndex(ID_TEST_DURATION, &value, NULL, 0) == ERROR);
+}
+
+
+int doWrite_GO(int value)
+{
+return writeVarByCtIndex(ID_GO,  &value);
+}
+
+
+int addWrite_GO(int value)
+{
+return (prepareWriteVarByCtIndex(ID_GO, &value, NULL, 0) == ERROR);
 }
 
 
@@ -3925,6 +3939,18 @@ return (prepareWriteVarByCtIndex(ID_OK_CAN1_RD, &value, NULL, 0) == ERROR);
 }
 
 
+int doWrite_PLC_HeartBeat(u_int16_t value)
+{
+return writeVarByCtIndex(ID_PLC_HeartBeat,  &value);
+}
+
+
+int addWrite_PLC_HeartBeat(u_int16_t value)
+{
+return (prepareWriteVarByCtIndex(ID_PLC_HeartBeat, &value, NULL, 0) == ERROR);
+}
+
+
 int doWrite_PLC_DigIn_1(int value)
 {
 return writeVarByCtIndex(ID_PLC_DigIn_1,  &value);
@@ -4534,6 +4560,7 @@ retval += readFromDb(ID_TEST_STEP, &TEST_STEP);
 retval += readFromDb(ID_TEST_DATE, &TEST_DATE);
 retval += readFromDb(ID_TEST_TIME, &TEST_TIME);
 retval += readFromDb(ID_TEST_DURATION, &TEST_DURATION);
+retval += readFromDb(ID_GO, &GO);
 retval += readFromDb(ID_RESET, &RESET);
 retval += readFromDb(ID_START, &START);
 retval += readFromDb(ID_STOP, &STOP);
@@ -4825,6 +4852,7 @@ retval += readFromDb(ID_OK_RTU3_WR, &OK_RTU3_WR);
 retval += readFromDb(ID_OK_RTU3_RD, &OK_RTU3_RD);
 retval += readFromDb(ID_OK_CAN1_WR, &OK_CAN1_WR);
 retval += readFromDb(ID_OK_CAN1_RD, &OK_CAN1_RD);
+retval += readFromDb(ID_PLC_HeartBeat, &PLC_HeartBeat);
 retval += readFromDb(ID_PLC_DigIn_1, &PLC_DigIn_1);
 retval += readFromDb(ID_PLC_DigIn_2, &PLC_DigIn_2);
 retval += readFromDb(ID_PLC_DigIn_3, &PLC_DigIn_3);

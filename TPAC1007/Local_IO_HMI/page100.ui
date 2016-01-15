@@ -140,6 +140,9 @@
      <pointsize>9</pointsize>
     </font>
    </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
    <property name="toolTip">
     <string>PLC_DigOut_6</string>
    </property>
@@ -208,6 +211,9 @@
      <family>DejaVu Sans Mono</family>
      <pointsize>9</pointsize>
     </font>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
    </property>
    <property name="toolTip">
     <string>PLC_DigOut_2</string>
@@ -727,6 +733,9 @@
      <family>DejaVu Sans Mono</family>
      <pointsize>9</pointsize>
     </font>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
    </property>
    <property name="toolTip">
     <string>PLC_DigOut_8</string>
@@ -1391,6 +1400,9 @@
      <pointsize>9</pointsize>
     </font>
    </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
    <property name="toolTip">
     <string>PLC_DigOut_4</string>
    </property>
@@ -1949,7 +1961,7 @@
     <bool>true</bool>
    </property>
    <property name="checked">
-    <bool>true</bool>
+    <bool>false</bool>
    </property>
    <property name="toolTip">
     <string>PLC_DigDir_4</string>
@@ -2026,6 +2038,9 @@
      <family>DejaVu Sans Mono</family>
      <pointsize>9</pointsize>
     </font>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
    </property>
    <property name="toolTip">
     <string>PLC_DigOut_3</string>
@@ -2153,6 +2168,9 @@
      <family>DejaVu Sans Mono</family>
      <pointsize>9</pointsize>
     </font>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
    </property>
    <property name="toolTip">
     <string>PLC_DigOut_7</string>
@@ -2663,6 +2681,9 @@
      <pointsize>9</pointsize>
     </font>
    </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
    <property name="toolTip">
     <string>PLC_DigOut_1</string>
    </property>
@@ -2969,6 +2990,9 @@
      <family>DejaVu Sans Mono</family>
      <pointsize>9</pointsize>
     </font>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
    </property>
    <property name="toolTip">
     <string>PLC_DigOut_5</string>
