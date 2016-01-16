@@ -5297,7 +5297,6 @@
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
-1;P;PLC_HeartBeat;UINT;0;RTU;;;1;0;5300;47;[RO]
 1;P;PLC_DigIn_1;WORD_BIT;1;RTU;;;1;1;5300;47;[RO]
 1;P;PLC_DigIn_2;WORD_BIT;2;RTU;;;1;1;5300;47;[RO]
 1;P;PLC_DigIn_3;WORD_BIT;3;RTU;;;1;1;5300;47;[RO]
@@ -5344,6 +5343,7 @@
 1;P;PLC_AnOut_8;INT;2;RTU;;;1;14;5300;47;[RW]
 1;P;PLC_AnInConf_1;UINT;0;RTU;;;1;15;5300;47;[RW]
 1;P;PLC_AnInConf_2;UINT;0;RTU;;;1;16;5300;47;[RW]
+1;P;PLC_HeartBeat;UDINT;3;RTU;;;1;17;5300;47;[RO]
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;

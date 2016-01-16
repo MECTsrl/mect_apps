@@ -310,7 +310,6 @@ int OK_RTU3_WR = 0;
 int OK_RTU3_RD = 0;
 int OK_CAN1_WR = 0;
 int OK_CAN1_RD = 0;
-u_int16_t PLC_HeartBeat = 0;
 int PLC_DigIn_1 = 0;
 int PLC_DigIn_2 = 0;
 int PLC_DigIn_3 = 0;
@@ -357,6 +356,7 @@ int16_t PLC_AnOut_7 = 0;
 int16_t PLC_AnOut_8 = 0;
 u_int16_t PLC_AnInConf_1 = 0;
 u_int16_t PLC_AnInConf_2 = 0;
+u_int32_t PLC_HeartBeat = 0;
 float PLC_time = 0;
 float PLC_timeMin = 0;
 float PLC_timeMax = 0;
@@ -3939,18 +3939,6 @@ return (prepareWriteVarByCtIndex(ID_OK_CAN1_RD, &value, NULL, 0) == ERROR);
 }
 
 
-int doWrite_PLC_HeartBeat(u_int16_t value)
-{
-return writeVarByCtIndex(ID_PLC_HeartBeat,  &value);
-}
-
-
-int addWrite_PLC_HeartBeat(u_int16_t value)
-{
-return (prepareWriteVarByCtIndex(ID_PLC_HeartBeat, &value, NULL, 0) == ERROR);
-}
-
-
 int doWrite_PLC_DigIn_1(int value)
 {
 return writeVarByCtIndex(ID_PLC_DigIn_1,  &value);
@@ -4503,6 +4491,18 @@ return (prepareWriteVarByCtIndex(ID_PLC_AnInConf_2, &value, NULL, 0) == ERROR);
 }
 
 
+int doWrite_PLC_HeartBeat(u_int32_t value)
+{
+return writeVarByCtIndex(ID_PLC_HeartBeat,  &value);
+}
+
+
+int addWrite_PLC_HeartBeat(u_int32_t value)
+{
+return (prepareWriteVarByCtIndex(ID_PLC_HeartBeat, &value, NULL, 0) == ERROR);
+}
+
+
 int doWrite_PLC_time(float value)
 {
 return writeVarByCtIndex(ID_PLC_time,  &value);
@@ -4852,7 +4852,6 @@ retval += readFromDb(ID_OK_RTU3_WR, &OK_RTU3_WR);
 retval += readFromDb(ID_OK_RTU3_RD, &OK_RTU3_RD);
 retval += readFromDb(ID_OK_CAN1_WR, &OK_CAN1_WR);
 retval += readFromDb(ID_OK_CAN1_RD, &OK_CAN1_RD);
-retval += readFromDb(ID_PLC_HeartBeat, &PLC_HeartBeat);
 retval += readFromDb(ID_PLC_DigIn_1, &PLC_DigIn_1);
 retval += readFromDb(ID_PLC_DigIn_2, &PLC_DigIn_2);
 retval += readFromDb(ID_PLC_DigIn_3, &PLC_DigIn_3);
@@ -4899,6 +4898,7 @@ retval += readFromDb(ID_PLC_AnOut_7, &PLC_AnOut_7);
 retval += readFromDb(ID_PLC_AnOut_8, &PLC_AnOut_8);
 retval += readFromDb(ID_PLC_AnInConf_1, &PLC_AnInConf_1);
 retval += readFromDb(ID_PLC_AnInConf_2, &PLC_AnInConf_2);
+retval += readFromDb(ID_PLC_HeartBeat, &PLC_HeartBeat);
 retval += readFromDb(ID_PLC_time, &PLC_time);
 retval += readFromDb(ID_PLC_timeMin, &PLC_timeMin);
 retval += readFromDb(ID_PLC_timeMax, &PLC_timeMax);

@@ -3,7 +3,9 @@
 PROGRAM Program1
 #import "Crosstable.gvl"
 VAR
-	d: DINT;
+	first: BOOL;
 END_VAR
-	d := d + 1;
+	if first then
+		first := FALSE;
+		PLC
 END_PROGRAM

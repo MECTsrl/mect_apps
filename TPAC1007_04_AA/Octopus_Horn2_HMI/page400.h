@@ -29,6 +29,14 @@ public:
 private slots:
     void changeEvent(QEvent * event);
     
+    void on_atcmButton_AnIn_clicked();
+
+    void on_atcmButton_AnOut_clicked();
+
+    void on_atcmButton_VCC_clicked();
+
+    void on_atcmButton_RTU_SRV_clicked();
+
 private:
     Ui::page400 *ui;
 };

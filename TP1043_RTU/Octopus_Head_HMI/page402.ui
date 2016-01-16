@@ -31,7 +31,7 @@
 background-color: rgb(255, 255, 127);
 }</string>
   </property>
-  <widget class="ATCMled" name="atcmLed_PLC_DigOut_5">
+  <widget class="ATCMled" name="atcmLed_VAL_DigOut_5">
    <property name="geometry">
     <rect>
      <x>238</x>
@@ -117,7 +117,7 @@ background-color: rgb(255, 255, 127);
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
-  <widget class="ATCMled" name="atcmLed_PLC_DigOut_5">
+  <widget class="ATCMled" name="atcmLed_TST_DigOut_5">
    <property name="geometry">
     <rect>
      <x>238</x>
@@ -153,7 +153,7 @@ background-color: rgb(255, 255, 127);
      <normaloff>:/off.png</normaloff>:/off.png</iconset>
    </property>
   </widget>
-  <widget class="ATCMled" name="atcmLed_PLC_DigOut_16">
+  <widget class="ATCMled" name="atcmLed_RES_DigOut_1">
    <property name="geometry">
     <rect>
      <x>120</x>
@@ -189,7 +189,7 @@ background-color: rgb(255, 255, 127);
      <normaloff>:/off.png</normaloff>:/off.png</iconset>
    </property>
   </widget>
-  <widget class="ATCMled" name="atcmLed_PLC_DigOut_23">
+  <widget class="ATCMled" name="atcmLed_OK_DigOut_8">
    <property name="geometry">
     <rect>
      <x>330</x>
@@ -276,7 +276,7 @@ background-color: rgb(255, 255, 127);
     <enum>Qt::Vertical</enum>
    </property>
   </widget>
-  <widget class="ATCMled" name="atcmLed_PLC_DigOut_19">
+  <widget class="ATCMled" name="atcmLed_OK_DigOut_4">
    <property name="geometry">
     <rect>
      <x>210</x>
@@ -312,7 +312,7 @@ background-color: rgb(255, 255, 127);
      <normaloff>:/off.png</normaloff>:/off.png</iconset>
    </property>
   </widget>
-  <widget class="ATCMled" name="atcmLed_PLC_DigOut_1">
+  <widget class="ATCMled" name="atcmLed_VAL_DigOut_1">
    <property name="geometry">
     <rect>
      <x>118</x>
@@ -348,7 +348,7 @@ background-color: rgb(255, 255, 127);
      <normaloff>:/off.png</normaloff>:/off.png</iconset>
    </property>
   </widget>
-  <widget class="ATCMled" name="atcmLed_PLC_DigOut_1">
+  <widget class="ATCMled" name="atcmLed_TST_DigOut_1">
    <property name="geometry">
     <rect>
      <x>118</x>
@@ -384,7 +384,7 @@ background-color: rgb(255, 255, 127);
      <normaloff>:/off.png</normaloff>:/off.png</iconset>
    </property>
   </widget>
-  <widget class="ATCMled" name="atcmLed_PLC_DigOut_4">
+  <widget class="ATCMled" name="atcmLed_VAL_DigOut_4">
    <property name="geometry">
     <rect>
      <x>208</x>
@@ -420,7 +420,7 @@ background-color: rgb(255, 255, 127);
      <normaloff>:/off.png</normaloff>:/off.png</iconset>
    </property>
   </widget>
-  <widget class="ATCMled" name="atcmLed_PLC_DigOut_9">
+  <widget class="ATCMled" name="atcmLed_VAL_DigOut_9">
    <property name="geometry">
     <rect>
      <x>358</x>
@@ -456,7 +456,7 @@ background-color: rgb(255, 255, 127);
      <normaloff>:/off.png</normaloff>:/off.png</iconset>
    </property>
   </widget>
-  <widget class="ATCMled" name="atcmLed_PLC_DigOut_8">
+  <widget class="ATCMled" name="atcmLed_TST_DigOut_8">
    <property name="geometry">
     <rect>
      <x>328</x>
@@ -517,7 +517,7 @@ background-color: rgb(255, 255, 127);
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
-  <widget class="ATCMled" name="atcmLed_PLC_DigOut_22">
+  <widget class="ATCMled" name="atcmLed_RES_DigOut_6">
    <property name="geometry">
     <rect>
      <x>270</x>
@@ -578,7 +578,7 @@ background-color: rgb(255, 255, 127);
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
-  <widget class="ATCMled" name="atcmLed_PLC_DigOut_20">
+  <widget class="ATCMled" name="atcmLed_OK_DigOut_5">
    <property name="geometry">
     <rect>
      <x>240</x>
@@ -614,7 +614,7 @@ background-color: rgb(255, 255, 127);
      <normaloff>:/off.png</normaloff>:/off.png</iconset>
    </property>
   </widget>
-  <widget class="ATCMled" name="atcmLed_PLC_DigOut_3">
+  <widget class="ATCMled" name="atcmLed_TST_DigOut_3">
    <property name="geometry">
     <rect>
      <x>178</x>
@@ -650,7 +650,7 @@ background-color: rgb(255, 255, 127);
      <normaloff>:/off.png</normaloff>:/off.png</iconset>
    </property>
   </widget>
-  <widget class="ATCMled" name="atcmLed_PLC_DigOut_2">
+  <widget class="ATCMled" name="atcmLed_VAL_DigOut_2">
    <property name="geometry">
     <rect>
      <x>148</x>
@@ -686,7 +686,7 @@ background-color: rgb(255, 255, 127);
      <normaloff>:/off.png</normaloff>:/off.png</iconset>
    </property>
   </widget>
-  <widget class="ATCMled" name="atcmLed_PLC_DigOut_10">
+  <widget class="ATCMled" name="atcmLed_TST_DigOut_10">
    <property name="geometry">
     <rect>
      <x>388</x>
@@ -722,7 +722,7 @@ background-color: rgb(255, 255, 127);
      <normaloff>:/off.png</normaloff>:/off.png</iconset>
    </property>
   </widget>
-  <widget class="ATCMled" name="atcmLed_PLC_DigOut_7">
+  <widget class="ATCMled" name="atcmLed_VAL_DigOut_7">
    <property name="geometry">
     <rect>
      <x>298</x>
@@ -758,7 +758,7 @@ background-color: rgb(255, 255, 127);
      <normaloff>:/off.png</normaloff>:/off.png</iconset>
    </property>
   </widget>
-  <widget class="ATCMled" name="atcmLed_PLC_DigOut_23">
+  <widget class="ATCMled" name="atcmLed_RES_DigOut_7">
    <property name="geometry">
     <rect>
      <x>300</x>
@@ -794,7 +794,7 @@ background-color: rgb(255, 255, 127);
      <normaloff>:/off.png</normaloff>:/off.png</iconset>
    </property>
   </widget>
-  <widget class="ATCMled" name="atcmLed_PLC_DigOut_21">
+  <widget class="ATCMled" name="atcmLed_OK_DigOut_7">
    <property name="geometry">
     <rect>
      <x>300</x>
@@ -830,7 +830,7 @@ background-color: rgb(255, 255, 127);
      <normaloff>:/off.png</normaloff>:/off.png</iconset>
    </property>
   </widget>
-  <widget class="ATCMled" name="atcmLed_PLC_DigOut_12">
+  <widget class="ATCMled" name="atcmLed_TST_DigOut_12">
    <property name="geometry">
     <rect>
      <x>448</x>
@@ -941,7 +941,7 @@ background-color: rgb(255, 255, 127);
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
-  <widget class="ATCMled" name="atcmLed_PLC_DigOut_19">
+  <widget class="ATCMled" name="atcmLed_RES_DigOut_2">
    <property name="geometry">
     <rect>
      <x>150</x>
@@ -977,7 +977,7 @@ background-color: rgb(255, 255, 127);
      <normaloff>:/off.png</normaloff>:/off.png</iconset>
    </property>
   </widget>
-  <widget class="ATCMled" name="atcmLed_PLC_DigOut_3">
+  <widget class="ATCMled" name="atcmLed_VAL_DigOut_3">
    <property name="geometry">
     <rect>
      <x>178</x>
@@ -1013,7 +1013,7 @@ background-color: rgb(255, 255, 127);
      <normaloff>:/off.png</normaloff>:/off.png</iconset>
    </property>
   </widget>
-  <widget class="ATCMled" name="atcmLed_PLC_DigOut_24">
+  <widget class="ATCMled" name="atcmLed_OK_DigOut_9">
    <property name="geometry">
     <rect>
      <x>360</x>
@@ -1074,7 +1074,7 @@ background-color: rgb(255, 255, 127);
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
-  <widget class="ATCMled" name="atcmLed_PLC_DigOut_12">
+  <widget class="ATCMled" name="atcmLed_VAL_DigOut_12">
    <property name="geometry">
     <rect>
      <x>448</x>
@@ -1148,7 +1148,7 @@ background-color: rgb(255, 255, 127);
     <enum>Qt::Horizontal</enum>
    </property>
   </widget>
-  <widget class="ATCMled" name="atcmLed_PLC_DigOut_20">
+  <widget class="ATCMled" name="atcmLed_RES_DigOut_3">
    <property name="geometry">
     <rect>
      <x>180</x>
@@ -1240,7 +1240,7 @@ background-color: rgb(255, 255, 127);
     <string>1;TPAC1007_4AA;2;2</string>
    </property>
   </widget>
-  <widget class="ATCMled" name="atcmLed_PLC_DigOut_17">
+  <widget class="ATCMled" name="atcmLed_OK_DigOut_6">
    <property name="geometry">
     <rect>
      <x>270</x>
@@ -1398,7 +1398,7 @@ background-color: rgb(255, 255, 127);
      <normaloff>:/off.png</normaloff>:/off.png</iconset>
    </property>
   </widget>
-  <widget class="ATCMled" name="atcmLed_PLC_DigOut_13">
+  <widget class="ATCMled" name="atcmLed_OK_DigOut_1">
    <property name="geometry">
     <rect>
      <x>120</x>
@@ -1434,7 +1434,7 @@ background-color: rgb(255, 255, 127);
      <normaloff>:/off.png</normaloff>:/off.png</iconset>
    </property>
   </widget>
-  <widget class="ATCMled" name="atcmLed_PLC_DigOut_2">
+  <widget class="ATCMled" name="atcmLed_TST_DigOut_2">
    <property name="geometry">
     <rect>
      <x>148</x>
@@ -1470,7 +1470,7 @@ background-color: rgb(255, 255, 127);
      <normaloff>:/off.png</normaloff>:/off.png</iconset>
    </property>
   </widget>
-  <widget class="ATCMled" name="atcmLed_PLC_DigOut_21">
+  <widget class="ATCMled" name="atcmLed_RES_DigOut_9">
    <property name="geometry">
     <rect>
      <x>360</x>
@@ -1531,7 +1531,7 @@ background-color: rgb(255, 255, 127);
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
-  <widget class="ATCMled" name="atcmLed_PLC_DigOut_18">
+  <widget class="ATCMled" name="atcmLed_OK_DigOut_3">
    <property name="geometry">
     <rect>
      <x>180</x>
@@ -1567,7 +1567,7 @@ background-color: rgb(255, 255, 127);
      <normaloff>:/off.png</normaloff>:/off.png</iconset>
    </property>
   </widget>
-  <widget class="ATCMled" name="atcmLed_PLC_DigOut_8">
+  <widget class="ATCMled" name="atcmLed_VAL_DigOut_8">
    <property name="geometry">
     <rect>
      <x>328</x>
@@ -1603,7 +1603,7 @@ background-color: rgb(255, 255, 127);
      <normaloff>:/off.png</normaloff>:/off.png</iconset>
    </property>
   </widget>
-  <widget class="ATCMled" name="atcmLed_PLC_DigOut_10">
+  <widget class="ATCMled" name="atcmLed_VAL_DigOut_10">
    <property name="geometry">
     <rect>
      <x>388</x>
@@ -1652,7 +1652,7 @@ background-color: rgb(255, 255, 127);
     <string>Reset</string>
    </property>
   </widget>
-  <widget class="ATCMled" name="atcmLed_PLC_DigOut_14">
+  <widget class="ATCMled" name="atcmLed_OK_DigOut_12">
    <property name="geometry">
     <rect>
      <x>450</x>
@@ -1757,7 +1757,7 @@ background-color: rgb(255, 255, 127);
     <enum>Qt::Vertical</enum>
    </property>
   </widget>
-  <widget class="ATCMled" name="atcmLed_PLC_DigOut_11">
+  <widget class="ATCMled" name="atcmLed_VAL_DigOut_11">
    <property name="geometry">
     <rect>
      <x>418</x>
@@ -1818,7 +1818,7 @@ background-color: rgb(255, 255, 127);
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
-  <widget class="ATCMled" name="atcmLed_PLC_DigOut_24">
+  <widget class="ATCMled" name="atcmLed_RES_DigOut_5">
    <property name="geometry">
     <rect>
      <x>240</x>
@@ -1867,7 +1867,7 @@ background-color: rgb(255, 255, 127);
     <enum>Qt::Horizontal</enum>
    </property>
   </widget>
-  <widget class="ATCMled" name="atcmLed_PLC_DigOut_9">
+  <widget class="ATCMled" name="atcmLed_TST_DigOut_9">
    <property name="geometry">
     <rect>
      <x>358</x>
@@ -1903,7 +1903,7 @@ background-color: rgb(255, 255, 127);
      <normaloff>:/off.png</normaloff>:/off.png</iconset>
    </property>
   </widget>
-  <widget class="ATCMled" name="atcmLed_PLC_DigOut_17">
+  <widget class="ATCMled" name="atcmLed_RES_DigOut_4">
    <property name="geometry">
     <rect>
      <x>210</x>
@@ -1939,7 +1939,7 @@ background-color: rgb(255, 255, 127);
      <normaloff>:/off.png</normaloff>:/off.png</iconset>
    </property>
   </widget>
-  <widget class="ATCMled" name="atcmLed_PLC_DigOut_15">
+  <widget class="ATCMled" name="atcmLed_OK_DigOut_2">
    <property name="geometry">
     <rect>
      <x>150</x>
@@ -1975,7 +1975,7 @@ background-color: rgb(255, 255, 127);
      <normaloff>:/off.png</normaloff>:/off.png</iconset>
    </property>
   </widget>
-  <widget class="ATCMled" name="atcmLed_PLC_DigOut_11">
+  <widget class="ATCMled" name="atcmLed_TST_DigOut_11">
    <property name="geometry">
     <rect>
      <x>418</x>
@@ -2011,7 +2011,7 @@ background-color: rgb(255, 255, 127);
      <normaloff>:/off.png</normaloff>:/off.png</iconset>
    </property>
   </widget>
-  <widget class="ATCMled" name="atcmLed_PLC_DigOut_6">
+  <widget class="ATCMled" name="atcmLed_VAL_DigOut_6">
    <property name="geometry">
     <rect>
      <x>268</x>
@@ -2100,10 +2100,10 @@ background-color: rgb(255, 255, 127);
     </color>
    </property>
    <property name="text">
-    <string>TPAC1007_4AA</string>
+    <string>TP1043_485</string>
    </property>
    <property name="pressText">
-    <string>TPAC1007_4AA</string>
+    <string>TP1043_485</string>
    </property>
    <property name="borderWidth">
     <number>1</number>
@@ -2115,7 +2115,7 @@ background-color: rgb(255, 255, 127);
     <enum>QFrame::Raised</enum>
    </property>
   </widget>
-  <widget class="ATCMled" name="atcmLed_PLC_DigOut_13">
+  <widget class="ATCMled" name="atcmLed_RES_DigOut_12">
    <property name="geometry">
     <rect>
      <x>450</x>
@@ -2151,7 +2151,7 @@ background-color: rgb(255, 255, 127);
      <normaloff>:/off.png</normaloff>:/off.png</iconset>
    </property>
   </widget>
-  <widget class="ATCMled" name="atcmLed_PLC_DigOut_6">
+  <widget class="ATCMled" name="atcmLed_TST_DigOut_6">
    <property name="geometry">
     <rect>
      <x>268</x>
@@ -2325,7 +2325,7 @@ background-color: rgb(255, 255, 127);
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
-  <widget class="ATCMled" name="atcmLed_PLC_DigOut_18">
+  <widget class="ATCMled" name="atcmLed_RES_DigOut_10">
    <property name="geometry">
     <rect>
      <x>390</x>
@@ -2361,7 +2361,7 @@ background-color: rgb(255, 255, 127);
      <normaloff>:/off.png</normaloff>:/off.png</iconset>
    </property>
   </widget>
-  <widget class="ATCMled" name="atcmLed_PLC_DigOut_4">
+  <widget class="ATCMled" name="atcmLed_TST_DigOut_4">
    <property name="geometry">
     <rect>
      <x>208</x>
@@ -2397,7 +2397,7 @@ background-color: rgb(255, 255, 127);
      <normaloff>:/off.png</normaloff>:/off.png</iconset>
    </property>
   </widget>
-  <widget class="ATCMled" name="atcmLed_PLC_DigOut_16">
+  <widget class="ATCMled" name="atcmLed_OK_DigOut_10">
    <property name="geometry">
     <rect>
      <x>390</x>
@@ -2475,7 +2475,7 @@ background-color: rgb(255, 255, 127);
      <normaloff>:/off.png</normaloff>:/off.png</iconset>
    </property>
   </widget>
-  <widget class="ATCMled" name="atcmLed_PLC_DigOut_14">
+  <widget class="ATCMled" name="atcmLed_RES_DigOut_11">
    <property name="geometry">
     <rect>
      <x>420</x>
@@ -2537,7 +2537,7 @@ background-color: rgb(255, 255, 127);
     <enum>Qt::Horizontal</enum>
    </property>
   </widget>
-  <widget class="ATCMled" name="atcmLed_PLC_DigOut_7">
+  <widget class="ATCMled" name="atcmLed_TST_DigOut_7">
    <property name="geometry">
     <rect>
      <x>298</x>
@@ -2600,7 +2600,7 @@ background-color: rgb(255, 255, 127);
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
-  <widget class="ATCMled" name="atcmLed_PLC_DigOut_15">
+  <widget class="ATCMled" name="atcmLed_RES_DigOut_8">
    <property name="geometry">
     <rect>
      <x>330</x>
@@ -2636,7 +2636,7 @@ background-color: rgb(255, 255, 127);
      <normaloff>:/off.png</normaloff>:/off.png</iconset>
    </property>
   </widget>
-  <widget class="ATCMled" name="atcmLed_PLC_DigOut_22">
+  <widget class="ATCMled" name="atcmLed_OK_DigOut_11">
    <property name="geometry">
     <rect>
      <x>420</x>
@@ -2834,81 +2834,81 @@ background-color: rgb(255, 255, 127);
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
-  <zorder>atcmLed_PLC_DigOut_5</zorder>
+  <zorder>atcmLed_VAL_DigOut_5</zorder>
   <zorder>label_PLC_DigOut_1</zorder>
   <zorder>label_PLC_DigOut_11</zorder>
-  <zorder>atcmLed_PLC_DigOut_5</zorder>
-  <zorder>atcmLed_PLC_DigOut_16</zorder>
-  <zorder>atcmLed_PLC_DigOut_23</zorder>
+  <zorder>atcmLed_TST_DigOut_5</zorder>
+  <zorder>atcmLed_RES_DigOut_1</zorder>
+  <zorder>atcmLed_OK_DigOut_8</zorder>
   <zorder>label_PLC_DigOut_15</zorder>
   <zorder>label_2</zorder>
-  <zorder>atcmLed_PLC_DigOut_19</zorder>
-  <zorder>atcmLed_PLC_DigOut_1</zorder>
-  <zorder>atcmLed_PLC_DigOut_1</zorder>
-  <zorder>atcmLed_PLC_DigOut_4</zorder>
-  <zorder>atcmLed_PLC_DigOut_9</zorder>
-  <zorder>atcmLed_PLC_DigOut_8</zorder>
+  <zorder>atcmLed_OK_DigOut_4</zorder>
+  <zorder>atcmLed_VAL_DigOut_1</zorder>
+  <zorder>atcmLed_TST_DigOut_1</zorder>
+  <zorder>atcmLed_VAL_DigOut_4</zorder>
+  <zorder>atcmLed_VAL_DigOut_9</zorder>
+  <zorder>atcmLed_TST_DigOut_8</zorder>
   <zorder>label_PLC_DigOut_13</zorder>
-  <zorder>atcmLed_PLC_DigOut_22</zorder>
+  <zorder>atcmLed_RES_DigOut_6</zorder>
   <zorder>label_PLC_DigOut_9</zorder>
-  <zorder>atcmLed_PLC_DigOut_20</zorder>
-  <zorder>atcmLed_PLC_DigOut_3</zorder>
-  <zorder>atcmLed_PLC_DigOut_2</zorder>
-  <zorder>atcmLed_PLC_DigOut_10</zorder>
-  <zorder>atcmLed_PLC_DigOut_7</zorder>
-  <zorder>atcmLed_PLC_DigOut_23</zorder>
-  <zorder>atcmLed_PLC_DigOut_21</zorder>
-  <zorder>atcmLed_PLC_DigOut_12</zorder>
+  <zorder>atcmLed_OK_DigOut_5</zorder>
+  <zorder>atcmLed_TST_DigOut_3</zorder>
+  <zorder>atcmLed_VAL_DigOut_2</zorder>
+  <zorder>atcmLed_TST_DigOut_10</zorder>
+  <zorder>atcmLed_VAL_DigOut_7</zorder>
+  <zorder>atcmLed_RES_DigOut_7</zorder>
+  <zorder>atcmLed_OK_DigOut_7</zorder>
+  <zorder>atcmLed_TST_DigOut_12</zorder>
   <zorder>label_PLC_DigOut_8</zorder>
   <zorder>label_PLC_DigOut_6</zorder>
   <zorder>label_PLC_DigOut_12</zorder>
-  <zorder>atcmLed_PLC_DigOut_19</zorder>
-  <zorder>atcmLed_PLC_DigOut_3</zorder>
-  <zorder>atcmLed_PLC_DigOut_24</zorder>
+  <zorder>atcmLed_RES_DigOut_2</zorder>
+  <zorder>atcmLed_VAL_DigOut_3</zorder>
+  <zorder>atcmLed_OK_DigOut_9</zorder>
   <zorder>label_PLC_DigOut_10</zorder>
-  <zorder>atcmLed_PLC_DigOut_12</zorder>
+  <zorder>atcmLed_VAL_DigOut_12</zorder>
   <zorder>label_PLC_DigOut_14</zorder>
-  <zorder>atcmLed_PLC_DigOut_20</zorder>
+  <zorder>atcmLed_RES_DigOut_3</zorder>
   <zorder>atcmComboBox</zorder>
-  <zorder>atcmLed_PLC_DigOut_17</zorder>
+  <zorder>atcmLed_OK_DigOut_6</zorder>
   <zorder>atcmLed_2</zorder>
   <zorder>label_PLC_DigOut_3</zorder>
   <zorder>atcmLed</zorder>
-  <zorder>atcmLed_PLC_DigOut_13</zorder>
-  <zorder>atcmLed_PLC_DigOut_2</zorder>
-  <zorder>atcmLed_PLC_DigOut_21</zorder>
+  <zorder>atcmLed_OK_DigOut_1</zorder>
+  <zorder>atcmLed_TST_DigOut_2</zorder>
+  <zorder>atcmLed_RES_DigOut_9</zorder>
   <zorder>label_PLC_DigOut_7</zorder>
-  <zorder>atcmLed_PLC_DigOut_18</zorder>
-  <zorder>atcmLed_PLC_DigOut_8</zorder>
-  <zorder>atcmLed_PLC_DigOut_10</zorder>
+  <zorder>atcmLed_OK_DigOut_3</zorder>
+  <zorder>atcmLed_VAL_DigOut_8</zorder>
+  <zorder>atcmLed_VAL_DigOut_10</zorder>
   <zorder>label_3</zorder>
-  <zorder>atcmLed_PLC_DigOut_14</zorder>
+  <zorder>atcmLed_OK_DigOut_12</zorder>
   <zorder>atcmComboBox_2</zorder>
-  <zorder>atcmLed_PLC_DigOut_11</zorder>
+  <zorder>atcmLed_VAL_DigOut_11</zorder>
   <zorder>label_PLC_DigOut_2</zorder>
-  <zorder>atcmLed_PLC_DigOut_24</zorder>
-  <zorder>atcmLed_PLC_DigOut_9</zorder>
-  <zorder>atcmLed_PLC_DigOut_17</zorder>
-  <zorder>atcmLed_PLC_DigOut_15</zorder>
-  <zorder>atcmLed_PLC_DigOut_11</zorder>
-  <zorder>atcmLed_PLC_DigOut_6</zorder>
+  <zorder>atcmLed_RES_DigOut_5</zorder>
+  <zorder>atcmLed_TST_DigOut_9</zorder>
+  <zorder>atcmLed_RES_DigOut_4</zorder>
+  <zorder>atcmLed_OK_DigOut_2</zorder>
+  <zorder>atcmLed_TST_DigOut_11</zorder>
+  <zorder>atcmLed_VAL_DigOut_6</zorder>
   <zorder>atcmButton_menu</zorder>
-  <zorder>atcmLed_PLC_DigOut_13</zorder>
-  <zorder>atcmLed_PLC_DigOut_6</zorder>
+  <zorder>atcmLed_RES_DigOut_12</zorder>
+  <zorder>atcmLed_TST_DigOut_6</zorder>
   <zorder>label_Qt_Project</zorder>
   <zorder>atcmButton_6</zorder>
   <zorder>label</zorder>
   <zorder>label_PLC_DigOut_4</zorder>
   <zorder>label_PLC_DigOut_5</zorder>
-  <zorder>atcmLed_PLC_DigOut_18</zorder>
-  <zorder>atcmLed_PLC_DigOut_4</zorder>
-  <zorder>atcmLed_PLC_DigOut_16</zorder>
+  <zorder>atcmLed_RES_DigOut_10</zorder>
+  <zorder>atcmLed_TST_DigOut_4</zorder>
+  <zorder>atcmLed_OK_DigOut_10</zorder>
   <zorder>atcmLed_3</zorder>
-  <zorder>atcmLed_PLC_DigOut_14</zorder>
-  <zorder>atcmLed_PLC_DigOut_7</zorder>
+  <zorder>atcmLed_RES_DigOut_11</zorder>
+  <zorder>atcmLed_TST_DigOut_7</zorder>
   <zorder>label_PLC_DigOut_16</zorder>
-  <zorder>atcmLed_PLC_DigOut_15</zorder>
-  <zorder>atcmLed_PLC_DigOut_22</zorder>
+  <zorder>atcmLed_RES_DigOut_8</zorder>
+  <zorder>atcmLed_OK_DigOut_11</zorder>
   <zorder>atcmLabel</zorder>
   <zorder>atcmTime</zorder>
   <zorder>atcmDate</zorder>

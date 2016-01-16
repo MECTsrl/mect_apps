@@ -890,10 +890,10 @@ background-color: rgb(255, 255, 127);
     </color>
    </property>
    <property name="text">
-    <string>TPAC1007_4AA</string>
+    <string>TP1043_485</string>
    </property>
    <property name="pressText">
-    <string>TPAC1007_4AA</string>
+    <string>TP1043_485</string>
    </property>
    <property name="borderWidth">
     <number>1</number>

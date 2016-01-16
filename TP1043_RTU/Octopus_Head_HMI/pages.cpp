@@ -19,6 +19,14 @@ void printVncDisplayString(char * vncString)
     sprintf(vncString, "Multi: VNC:0:size=%dx%d Transformed:rot%d", WIDTH, HEIGHT, ROTATION);
 //    userPageList
 //            << "page100"
+//            << "page200"
+//            << "page300"
+//            << "page400"
+//            << "page401"
+//            << "page402"
+//            << "page403"
+//            << "page404"
+//            << "page405"
 //               ;
 }
 

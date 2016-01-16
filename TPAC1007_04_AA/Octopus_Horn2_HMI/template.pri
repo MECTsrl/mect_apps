@@ -32,10 +32,6 @@ customstore.path = /local/data/customstore
 customtrend.files = config/trend1.csv
 customtrend.path = /local/data/customtrend
 
-debug_deploy.files = config/dont_run_safe_hmi
-debug_deploy.path = /var/tmp
-INSTALLS += debug_deploy
-
 INSTALLS += config splash
 
 INSTALLS += customstore
@@ -48,21 +44,8 @@ DEFINES+=ENABLE_RECIPE
 
 DEFINES += TRANSLATION
 
-include(./qt_environment.pri)
-
 INCLUDEPATH += .\
-	./config \
-	$${ATCM_ARM_ROOTFS}/usr/src/linux/include \
-	$${ATCM_ARM_ROOTFS}/usr/include \
-	$${ATCM_ARM_PLUGINS_INCPATH} \
-	$${ATCM_ARM_LIBRARY_INCPATH}
-
-QMAKE_LIBDIR += . \
-    ./config \
-	$${QWT_LIBPATH} \
-	$${ATCM_ARM_ROOTFS}/usr/lib \
-	$${ATCM_ARM_PLUGINS_LIBPATH} \
-	$${ATCM_ARM_LIBRARY_LIBPATH}
+	./config
 
 LIBS += \
 -lts \
@@ -85,9 +68,6 @@ HEADERS += \
         style.h \
         pages.h
 
-FORMS += \
-
-
 SOURCES += \
         config/crosstable.cpp \
         pages.cpp
@@ -95,6 +75,7 @@ SOURCES += \
 RESOURCES += \
 	systemicons.qrc
 
+# pre-elabortation
 check_missing_file.commands = @perl $${ATCM_TEMPLATE_BASE_DIR}/ATCM-template-project/cleanmissingpage.pl $$_PRO_FILE_ $$_PRO_FILE_PWD_
 check_undeclared_variable.commands = @perl $${ATCM_TEMPLATE_BASE_DIR}/ATCM-template-project/check_cross_var.pl $$_PRO_FILE_PWD_
 check_gotopage_bind.commands = @perl $${ATCM_TEMPLATE_BASE_DIR}/ATCM-template-project/connectbutton.pl $$_PRO_FILE_PWD_
@@ -102,34 +83,25 @@ check_gotopage_bind.commands = @perl $${ATCM_TEMPLATE_BASE_DIR}/ATCM-template-pr
 QMAKE_EXTRA_TARGETS += check_missing_file check_undeclared_variable check_gotopage_bind
 PRE_TARGETDEPS += check_missing_file check_undeclared_variable check_gotopage_bind
 
-QT_LUPDATE_PATH=$$(QT_LUPDATE_PATH)
+# language
+update.commands = $${QT_LUPDATE_PATH}/lupdate $$_PRO_FILE_
+updates.depends = $$SOURCES $$HEADERS $$FORMS $$TRANSLATIONS
+release.commands = $${QT_LRELEASE_PATH}/lrelease $$_PRO_FILE_
+release.depends = update
 
-isEmpty(QT_LUPDATE_PATH) {
-  warning(QT_LUPDATE_PATH is empty)
-} else {
-    QT_LRELEASE_PATH=$$(QT_LRELEASE_PATH)
-    isEmpty(QT_LRELEASE_PATH) {
-        warning(QT_LRELEASE_PATH is empty)
-    } else {
-        update.commands = $${QT_LUPDATE_PATH}/lupdate $$_PRO_FILE_
-        updates.depends = $$SOURCES $$HEADERS $$FORMS $$TRANSLATIONS
-        release.commands = $${QT_LRELEASE_PATH}/lrelease $$_PRO_FILE_
-        release.depends = update
+QMAKE_EXTRA_TARGETS += update release
+PRE_TARGETDEPS += update release
 
-        QMAKE_EXTRA_TARGETS += update release
-        PRE_TARGETDEPS += update release
+RESOURCES += \
+    languages.qrc
 
-        RESOURCES += \
-            languages.qrc
+OTHER_FILES += \
+    languages_it.ts \
+    languages_en.ts
 
-        OTHER_FILES += \
-            languages_it.ts \
-            languages_en.ts
+include(./languages.pri)
 
-        include(./languages.pri)
-    }
-}
-
+# display size
 MODEL = "<width>480</width><height>272</height>"
 
 equals(MODEL, "<width>320</width><height>240</height>") {
