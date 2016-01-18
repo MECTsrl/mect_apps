@@ -994,6 +994,306 @@
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
+2;P;TESTING         ;BYTE_BIT; 8;PLC;             ;   ; ;  ;1000; 4;[RW]
+2;P;RESET           ;BYTE_BIT; 1;PLC;             ;   ; ;  ;1000; 4;[RW]
+2;P;START           ;BYTE_BIT; 2;PLC;             ;   ; ;  ;1000; 4;[RW]
+2;P;STOP            ;BYTE_BIT; 3;PLC;             ;   ; ;  ;1000; 4;[RW]
+3;P;TST_DigIn_1     ;WORD_BIT; 1;PLC;             ;   ; ;  ;1001;32;[RW]
+3;P;TST_DigIn_2     ;WORD_BIT; 2;PLC;             ;   ; ;  ;1001;32;[RW]
+3;P;TST_DigIn_3     ;WORD_BIT; 3;PLC;             ;   ; ;  ;1001;32;[RW]
+3;P;TST_DigIn_4     ;WORD_BIT; 4;PLC;             ;   ; ;  ;1001;32;[RW]
+3;P;TST_DigIn_5     ;WORD_BIT; 5;PLC;             ;   ; ;  ;1001;32;[RW]
+3;P;TST_DigIn_6     ;WORD_BIT; 6;PLC;             ;   ; ;  ;1001;32;[RW]
+3;P;TST_DigIn_7     ;WORD_BIT; 7;PLC;             ;   ; ;  ;1001;32;[RW]
+3;P;TST_DigIn_8     ;WORD_BIT; 8;PLC;             ;   ; ;  ;1001;32;[RW]
+3;P;TST_DigIn_9     ;WORD_BIT; 9;PLC;             ;   ; ;  ;1001;32;[RW]
+3;P;TST_DigIn_10    ;WORD_BIT;10;PLC;             ;   ; ;  ;1001;32;[RW]
+3;P;TST_DigIn_11    ;WORD_BIT;11;PLC;             ;   ; ;  ;1001;32;[RW]
+3;P;TST_DigIn_12    ;WORD_BIT;12;PLC;             ;   ; ;  ;1001;32;[RW]
+3;P;TST_DigIn_13    ;WORD_BIT;13;PLC;             ;   ; ;  ;1001;32;[RW]
+3;P;TST_DigIn_14    ;WORD_BIT;14;PLC;             ;   ; ;  ;1001;32;[RW]
+3;P;TST_DigIn_15    ;WORD_BIT;15;PLC;             ;   ; ;  ;1001;32;[RW]
+3;P;TST_DigIn_16    ;WORD_BIT;16;PLC;             ;   ; ;  ;1001;32;[RW]
+3;P;VAL_DigIn_1     ;WORD_BIT; 1;PLC;             ;   ; ;  ;1001;32;[RW]
+3;P;VAL_DigIn_2     ;WORD_BIT; 2;PLC;             ;   ; ;  ;1001;32;[RW]
+3;P;VAL_DigIn_3     ;WORD_BIT; 3;PLC;             ;   ; ;  ;1001;32;[RW]
+3;P;VAL_DigIn_4     ;WORD_BIT; 4;PLC;             ;   ; ;  ;1001;32;[RW]
+3;P;VAL_DigIn_5     ;WORD_BIT; 5;PLC;             ;   ; ;  ;1001;32;[RW]
+3;P;VAL_DigIn_6     ;WORD_BIT; 6;PLC;             ;   ; ;  ;1001;32;[RW]
+3;P;VAL_DigIn_7     ;WORD_BIT; 7;PLC;             ;   ; ;  ;1001;32;[RW]
+3;P;VAL_DigIn_8     ;WORD_BIT; 8;PLC;             ;   ; ;  ;1001;32;[RW]
+3;P;VAL_DigIn_9     ;WORD_BIT; 9;PLC;             ;   ; ;  ;1001;32;[RW]
+3;P;VAL_DigIn_10    ;WORD_BIT;10;PLC;             ;   ; ;  ;1001;32;[RW]
+3;P;VAL_DigIn_11    ;WORD_BIT;11;PLC;             ;   ; ;  ;1001;32;[RW]
+3;P;VAL_DigIn_12    ;WORD_BIT;12;PLC;             ;   ; ;  ;1001;32;[RW]
+3;P;VAL_DigIn_13    ;WORD_BIT;13;PLC;             ;   ; ;  ;1001;32;[RW]
+3;P;VAL_DigIn_14    ;WORD_BIT;14;PLC;             ;   ; ;  ;1001;32;[RW]
+3;P;VAL_DigIn_15    ;WORD_BIT;15;PLC;             ;   ; ;  ;1001;32;[RW]
+3;P;VAL_DigIn_16    ;WORD_BIT;16;PLC;             ;   ; ;  ;1001;32;[RW]
+2;P;RES_DigIn_1     ;WORD_BIT; 1;PLC;             ;   ; ;  ;1033;16;[RW]
+2;P;RES_DigIn_2     ;WORD_BIT; 2;PLC;             ;   ; ;  ;1033;16;[RW]
+2;P;RES_DigIn_3     ;WORD_BIT; 3;PLC;             ;   ; ;  ;1033;16;[RW]
+2;P;RES_DigIn_4     ;WORD_BIT; 4;PLC;             ;   ; ;  ;1033;16;[RW]
+2;P;RES_DigIn_5     ;WORD_BIT; 5;PLC;             ;   ; ;  ;1033;16;[RW]
+2;P;RES_DigIn_6     ;WORD_BIT; 6;PLC;             ;   ; ;  ;1033;16;[RW]
+2;P;RES_DigIn_7     ;WORD_BIT; 7;PLC;             ;   ; ;  ;1033;16;[RW]
+2;P;RES_DigIn_8     ;WORD_BIT; 8;PLC;             ;   ; ;  ;1033;16;[RW]
+2;P;RES_DigIn_9     ;WORD_BIT; 9;PLC;             ;   ; ;  ;1033;16;[RW]
+2;P;RES_DigIn_10    ;WORD_BIT;10;PLC;             ;   ; ;  ;1033;16;[RW]
+2;P;RES_DigIn_11    ;WORD_BIT;11;PLC;             ;   ; ;  ;1033;16;[RW]
+2;P;RES_DigIn_12    ;WORD_BIT;12;PLC;             ;   ; ;  ;1033;16;[RW]
+2;P;RES_DigIn_13    ;WORD_BIT;13;PLC;             ;   ; ;  ;1033;16;[RW]
+2;P;RES_DigIn_14    ;WORD_BIT;14;PLC;             ;   ; ;  ;1033;16;[RW]
+2;P;RES_DigIn_15    ;WORD_BIT;15;PLC;             ;   ; ;  ;1033;16;[RW]
+2;P;RES_DigIn_16    ;WORD_BIT;16;PLC;             ;   ; ;  ;1033;16;[RW]
+1;P;OK_DigIn_1      ;WORD_BIT; 1;PLC;             ;   ; ;  ;1049;16;[RW]
+1;P;OK_DigIn_2      ;WORD_BIT; 2;PLC;             ;   ; ;  ;1049;16;[RW]
+1;P;OK_DigIn_3      ;WORD_BIT; 3;PLC;             ;   ; ;  ;1049;16;[RW]
+1;P;OK_DigIn_4      ;WORD_BIT; 4;PLC;             ;   ; ;  ;1049;16;[RW]
+1;P;OK_DigIn_5      ;WORD_BIT; 5;PLC;             ;   ; ;  ;1049;16;[RW]
+1;P;OK_DigIn_6      ;WORD_BIT; 6;PLC;             ;   ; ;  ;1049;16;[RW]
+1;P;OK_DigIn_7      ;WORD_BIT; 7;PLC;             ;   ; ;  ;1049;16;[RW]
+1;P;OK_DigIn_8      ;WORD_BIT; 8;PLC;             ;   ; ;  ;1049;16;[RW]
+1;P;OK_DigIn_9      ;WORD_BIT; 9;PLC;             ;   ; ;  ;1049;16;[RW]
+1;P;OK_DigIn_10     ;WORD_BIT;10;PLC;             ;   ; ;  ;1049;16;[RW]
+1;P;OK_DigIn_11     ;WORD_BIT;11;PLC;             ;   ; ;  ;1049;16;[RW]
+1;P;OK_DigIn_12     ;WORD_BIT;12;PLC;             ;   ; ;  ;1049;16;[RW]
+1;P;OK_DigIn_13     ;WORD_BIT;13;PLC;             ;   ; ;  ;1049;16;[RW]
+1;P;OK_DigIn_14     ;WORD_BIT;14;PLC;             ;   ; ;  ;1049;16;[RW]
+1;P;OK_DigIn_15     ;WORD_BIT;15;PLC;             ;   ; ;  ;1049;16;[RW]
+1;P;OK_DigIn_16     ;WORD_BIT;16;PLC;             ;   ; ;  ;1049;16;[RW]
+3;P;TST_DigOut_1    ;WORD_BIT; 1;PLC;             ;   ; ;  ;1065;32;[RW]
+3;P;TST_DigOut_2    ;WORD_BIT; 2;PLC;             ;   ; ;  ;1065;32;[RW]
+3;P;TST_DigOut_3    ;WORD_BIT; 3;PLC;             ;   ; ;  ;1065;32;[RW]
+3;P;TST_DigOut_4    ;WORD_BIT; 4;PLC;             ;   ; ;  ;1065;32;[RW]
+3;P;TST_DigOut_5    ;WORD_BIT; 5;PLC;             ;   ; ;  ;1065;32;[RW]
+3;P;TST_DigOut_6    ;WORD_BIT; 6;PLC;             ;   ; ;  ;1065;32;[RW]
+3;P;TST_DigOut_7    ;WORD_BIT; 7;PLC;             ;   ; ;  ;1065;32;[RW]
+3;P;TST_DigOut_8    ;WORD_BIT; 8;PLC;             ;   ; ;  ;1065;32;[RW]
+3;P;TST_DigOut_9    ;WORD_BIT; 9;PLC;             ;   ; ;  ;1065;32;[RW]
+3;P;TST_DigOut_10   ;WORD_BIT;10;PLC;             ;   ; ;  ;1065;32;[RW]
+3;P;TST_DigOut_11   ;WORD_BIT;11;PLC;             ;   ; ;  ;1065;32;[RW]
+3;P;TST_DigOut_12   ;WORD_BIT;12;PLC;             ;   ; ;  ;1065;32;[RW]
+3;P;TST_DigOut_13   ;WORD_BIT;13;PLC;             ;   ; ;  ;1065;32;[RW]
+3;P;TST_DigOut_14   ;WORD_BIT;14;PLC;             ;   ; ;  ;1065;32;[RW]
+3;P;TST_DigOut_15   ;WORD_BIT;15;PLC;             ;   ; ;  ;1065;32;[RW]
+3;P;TST_DigOut_16   ;WORD_BIT;16;PLC;             ;   ; ;  ;1065;32;[RW]
+3;P;VAL_DigOut_1    ;WORD_BIT; 1;PLC;             ;   ; ;  ;1065;32;[RW]
+3;P;VAL_DigOut_2    ;WORD_BIT; 2;PLC;             ;   ; ;  ;1065;32;[RW]
+3;P;VAL_DigOut_3    ;WORD_BIT; 3;PLC;             ;   ; ;  ;1065;32;[RW]
+3;P;VAL_DigOut_4    ;WORD_BIT; 4;PLC;             ;   ; ;  ;1065;32;[RW]
+3;P;VAL_DigOut_5    ;WORD_BIT; 5;PLC;             ;   ; ;  ;1065;32;[RW]
+3;P;VAL_DigOut_6    ;WORD_BIT; 6;PLC;             ;   ; ;  ;1065;32;[RW]
+3;P;VAL_DigOut_7    ;WORD_BIT; 7;PLC;             ;   ; ;  ;1065;32;[RW]
+3;P;VAL_DigOut_8    ;WORD_BIT; 8;PLC;             ;   ; ;  ;1065;32;[RW]
+3;P;VAL_DigOut_9    ;WORD_BIT; 9;PLC;             ;   ; ;  ;1065;32;[RW]
+3;P;VAL_DigOut_10   ;WORD_BIT;10;PLC;             ;   ; ;  ;1065;32;[RW]
+3;P;VAL_DigOut_11   ;WORD_BIT;11;PLC;             ;   ; ;  ;1065;32;[RW]
+3;P;VAL_DigOut_12   ;WORD_BIT;12;PLC;             ;   ; ;  ;1065;32;[RW]
+3;P;VAL_DigOut_13   ;WORD_BIT;13;PLC;             ;   ; ;  ;1065;32;[RW]
+3;P;VAL_DigOut_14   ;WORD_BIT;14;PLC;             ;   ; ;  ;1065;32;[RW]
+3;P;VAL_DigOut_15   ;WORD_BIT;15;PLC;             ;   ; ;  ;1065;32;[RW]
+3;P;VAL_DigOut_16   ;WORD_BIT;16;PLC;             ;   ; ;  ;1065;32;[RW]
+2;P;RES_DigOut_1    ;WORD_BIT; 1;PLC;             ;   ; ;  ;1097;16;[RW]
+2;P;RES_DigOut_2    ;WORD_BIT; 2;PLC;             ;   ; ;  ;1097;16;[RW]
+2;P;RES_DigOut_3    ;WORD_BIT; 3;PLC;             ;   ; ;  ;1097;16;[RW]
+2;P;RES_DigOut_4    ;WORD_BIT; 4;PLC;             ;   ; ;  ;1097;16;[RW]
+2;P;RES_DigOut_5    ;WORD_BIT; 5;PLC;             ;   ; ;  ;1097;16;[RW]
+2;P;RES_DigOut_6    ;WORD_BIT; 6;PLC;             ;   ; ;  ;1097;16;[RW]
+2;P;RES_DigOut_7    ;WORD_BIT; 7;PLC;             ;   ; ;  ;1097;16;[RW]
+2;P;RES_DigOut_8    ;WORD_BIT; 8;PLC;             ;   ; ;  ;1097;16;[RW]
+2;P;RES_DigOut_9    ;WORD_BIT; 9;PLC;             ;   ; ;  ;1097;16;[RW]
+2;P;RES_DigOut_10   ;WORD_BIT;10;PLC;             ;   ; ;  ;1097;16;[RW]
+2;P;RES_DigOut_11   ;WORD_BIT;11;PLC;             ;   ; ;  ;1097;16;[RW]
+2;P;RES_DigOut_12   ;WORD_BIT;12;PLC;             ;   ; ;  ;1097;16;[RW]
+2;P;RES_DigOut_13   ;WORD_BIT;13;PLC;             ;   ; ;  ;1097;16;[RW]
+2;P;RES_DigOut_14   ;WORD_BIT;14;PLC;             ;   ; ;  ;1097;16;[RW]
+2;P;RES_DigOut_15   ;WORD_BIT;15;PLC;             ;   ; ;  ;1097;16;[RW]
+2;P;RES_DigOut_16   ;WORD_BIT;16;PLC;             ;   ; ;  ;1097;16;[RW]
+1;P;OK_DigOut_1     ;WORD_BIT; 1;PLC;             ;   ; ;  ;1113;16;[RW]
+1;P;OK_DigOut_2     ;WORD_BIT; 2;PLC;             ;   ; ;  ;1113;16;[RW]
+1;P;OK_DigOut_3     ;WORD_BIT; 3;PLC;             ;   ; ;  ;1113;16;[RW]
+1;P;OK_DigOut_4     ;WORD_BIT; 4;PLC;             ;   ; ;  ;1113;16;[RW]
+1;P;OK_DigOut_5     ;WORD_BIT; 5;PLC;             ;   ; ;  ;1113;16;[RW]
+1;P;OK_DigOut_6     ;WORD_BIT; 6;PLC;             ;   ; ;  ;1113;16;[RW]
+1;P;OK_DigOut_7     ;WORD_BIT; 7;PLC;             ;   ; ;  ;1113;16;[RW]
+1;P;OK_DigOut_8     ;WORD_BIT; 8;PLC;             ;   ; ;  ;1113;16;[RW]
+1;P;OK_DigOut_9     ;WORD_BIT; 9;PLC;             ;   ; ;  ;1113;16;[RW]
+1;P;OK_DigOut_10    ;WORD_BIT;10;PLC;             ;   ; ;  ;1113;16;[RW]
+1;P;OK_DigOut_11    ;WORD_BIT;11;PLC;             ;   ; ;  ;1113;16;[RW]
+1;P;OK_DigOut_12    ;WORD_BIT;12;PLC;             ;   ; ;  ;1113;16;[RW]
+1;P;OK_DigOut_13    ;WORD_BIT;13;PLC;             ;   ; ;  ;1113;16;[RW]
+1;P;OK_DigOut_14    ;WORD_BIT;14;PLC;             ;   ; ;  ;1113;16;[RW]
+1;P;OK_DigOut_15    ;WORD_BIT;15;PLC;             ;   ; ;  ;1113;16;[RW]
+1;P;OK_DigOut_16    ;WORD_BIT;16;PLC;             ;   ; ;  ;1113;16;[RW]
+3;P;TST_AnIn_1      ;WORD_BIT; 1;PLC;             ;   ; ;  ;1129;48;[RW]
+3;P;TST_AnIn_2      ;WORD_BIT; 2;PLC;             ;   ; ;  ;1129;48;[RW]
+3;P;TST_AnIn_3      ;WORD_BIT; 3;PLC;             ;   ; ;  ;1129;48;[RW]
+3;P;TST_AnIn_4      ;WORD_BIT; 4;PLC;             ;   ; ;  ;1129;48;[RW]
+3;P;TST_AnIn_5      ;WORD_BIT; 5;PLC;             ;   ; ;  ;1129;48;[RW]
+3;P;TST_AnIn_6      ;WORD_BIT; 6;PLC;             ;   ; ;  ;1129;48;[RW]
+3;P;TST_AnIn_7      ;WORD_BIT; 7;PLC;             ;   ; ;  ;1129;48;[RW]
+3;P;TST_AnIn_8      ;WORD_BIT; 8;PLC;             ;   ; ;  ;1129;48;[RW]
+3;P;TST_AnIn_9      ;WORD_BIT; 9;PLC;             ;   ; ;  ;1129;48;[RW]
+3;P;TST_AnIn_10     ;WORD_BIT;10;PLC;             ;   ; ;  ;1129;48;[RW]
+3;P;TST_AnIn_11     ;WORD_BIT;11;PLC;             ;   ; ;  ;1129;48;[RW]
+3;P;TST_AnIn_12     ;WORD_BIT;12;PLC;             ;   ; ;  ;1129;48;[RW]
+3;P;VAL_AnIn_1      ;INT     ; 3;PLC;             ;   ; ;  ;1129;48;[RW]
+3;P;VAL_AnIn_2      ;INT     ; 3;PLC;             ;   ; ;  ;1129;48;[RW]
+3;P;VAL_AnIn_3      ;INT     ; 3;PLC;             ;   ; ;  ;1129;48;[RW]
+3;P;VAL_AnIn_4      ;INT     ; 3;PLC;             ;   ; ;  ;1129;48;[RW]
+3;P;VAL_AnIn_5      ;INT     ; 3;PLC;             ;   ; ;  ;1129;48;[RW]
+3;P;VAL_AnIn_6      ;INT     ; 3;PLC;             ;   ; ;  ;1129;48;[RW]
+3;P;VAL_AnIn_7      ;INT     ; 3;PLC;             ;   ; ;  ;1129;48;[RW]
+3;P;VAL_AnIn_8      ;INT     ; 3;PLC;             ;   ; ;  ;1129;48;[RW]
+3;P;VAL_AnIn_9      ;INT     ; 3;PLC;             ;   ; ;  ;1129;48;[RW]
+3;P;VAL_AnIn_10     ;INT     ; 3;PLC;             ;   ; ;  ;1129;48;[RW]
+3;P;VAL_AnIn_11     ;INT     ; 3;PLC;             ;   ; ;  ;1129;48;[RW]
+3;P;VAL_AnIn_12     ;INT     ; 3;PLC;             ;   ; ;  ;1129;48;[RW]
+3;P;VAL_AnInConf_1  ;UINT    ; 0;PLC;             ;   ; ;  ;1129;48;[RW]
+3;P;VAL_AnInConf_2  ;UINT    ; 0;PLC;             ;   ; ;  ;1129;48;[RW]
+3;P;VAL_AnInConf_3  ;UINT    ; 0;PLC;             ;   ; ;  ;1129;48;[RW]
+3;P;VAL_AnInConf_4  ;UINT    ; 0;PLC;             ;   ; ;  ;1129;48;[RW]
+3;P;VAL_AnInConf_5  ;UINT    ; 0;PLC;             ;   ; ;  ;1129;48;[RW]
+3;P;VAL_AnInConf_6  ;UINT    ; 0;PLC;             ;   ; ;  ;1129;48;[RW]
+3;P;VAL_AnInConf_7  ;UINT    ; 0;PLC;             ;   ; ;  ;1129;48;[RW]
+3;P;VAL_AnInConf_8  ;UINT    ; 0;PLC;             ;   ; ;  ;1129;48;[RW]
+3;P;VAL_AnInConf_9  ;UINT    ; 0;PLC;             ;   ; ;  ;1129;48;[RW]
+3;P;VAL_AnInConf_10 ;UINT    ; 0;PLC;             ;   ; ;  ;1129;48;[RW]
+3;P;VAL_AnInConf_11 ;UINT    ; 0;PLC;             ;   ; ;  ;1129;48;[RW]
+3;P;VAL_AnInConf_12 ;UINT    ; 0;PLC;             ;   ; ;  ;1129;48;[RW]
+3;P;VAL_AnInFltr_1  ;UINT    ; 0;PLC;             ;   ; ;  ;1129;48;[RW]
+3;P;VAL_AnInFltr_2  ;UINT    ; 0;PLC;             ;   ; ;  ;1129;48;[RW]
+3;P;VAL_AnInFltr_3  ;UINT    ; 0;PLC;             ;   ; ;  ;1129;48;[RW]
+3;P;VAL_AnInFltr_4  ;UINT    ; 0;PLC;             ;   ; ;  ;1129;48;[RW]
+3;P;VAL_AnInFltr_5  ;UINT    ; 0;PLC;             ;   ; ;  ;1129;48;[RW]
+3;P;VAL_AnInFltr_6  ;UINT    ; 0;PLC;             ;   ; ;  ;1129;48;[RW]
+3;P;VAL_AnInFltr_7  ;UINT    ; 0;PLC;             ;   ; ;  ;1129;48;[RW]
+3;P;VAL_AnInFltr_8  ;UINT    ; 0;PLC;             ;   ; ;  ;1129;48;[RW]
+3;P;VAL_AnInFltr_9  ;UINT    ; 0;PLC;             ;   ; ;  ;1129;48;[RW]
+3;P;VAL_AnInFltr_10 ;UINT    ; 0;PLC;             ;   ; ;  ;1129;48;[RW]
+3;P;VAL_AnInFltr_11 ;UINT    ; 0;PLC;             ;   ; ;  ;1129;48;[RW]
+3;P;VAL_AnInFltr_12 ;UINT    ; 0;PLC;             ;   ; ;  ;1129;48;[RW]
+2;P;RES_AnIn_1      ;INT     ; 3;PLC;             ;   ; ;  ;1177;24;[RW]
+2;P;RES_AnIn_2      ;INT     ; 3;PLC;             ;   ; ;  ;1177;24;[RW]
+2;P;RES_AnIn_3      ;INT     ; 3;PLC;             ;   ; ;  ;1177;24;[RW]
+2;P;RES_AnIn_4      ;INT     ; 3;PLC;             ;   ; ;  ;1177;24;[RW]
+2;P;RES_AnIn_5      ;INT     ; 3;PLC;             ;   ; ;  ;1177;24;[RW]
+2;P;RES_AnIn_6      ;INT     ; 3;PLC;             ;   ; ;  ;1177;24;[RW]
+2;P;RES_AnIn_7      ;INT     ; 3;PLC;             ;   ; ;  ;1177;24;[RW]
+2;P;RES_AnIn_8      ;INT     ; 3;PLC;             ;   ; ;  ;1177;24;[RW]
+2;P;RES_AnIn_9      ;INT     ; 3;PLC;             ;   ; ;  ;1177;24;[RW]
+2;P;RES_AnIn_10     ;INT     ; 3;PLC;             ;   ; ;  ;1177;24;[RW]
+2;P;RES_AnIn_11     ;INT     ; 3;PLC;             ;   ; ;  ;1177;24;[RW]
+2;P;RES_AnIn_12     ;INT     ; 3;PLC;             ;   ; ;  ;1177;24;[RW]
+2;P;RES_AnInStts_1  ;INT     ; 3;PLC;             ;   ; ;  ;1177;24;[RW]
+2;P;RES_AnInStts_2  ;INT     ; 3;PLC;             ;   ; ;  ;1177;24;[RW]
+2;P;RES_AnInStts_3  ;INT     ; 3;PLC;             ;   ; ;  ;1177;24;[RW]
+2;P;RES_AnInStts_4  ;INT     ; 3;PLC;             ;   ; ;  ;1177;24;[RW]
+2;P;RES_AnInStts_5  ;INT     ; 3;PLC;             ;   ; ;  ;1177;24;[RW]
+2;P;RES_AnInStts_6  ;INT     ; 3;PLC;             ;   ; ;  ;1177;24;[RW]
+2;P;RES_AnInStts_7  ;INT     ; 3;PLC;             ;   ; ;  ;1177;24;[RW]
+2;P;RES_AnInStts_8  ;INT     ; 3;PLC;             ;   ; ;  ;1177;24;[RW]
+2;P;RES_AnInStts_9  ;INT     ; 3;PLC;             ;   ; ;  ;1177;24;[RW]
+2;P;RES_AnInStts_10 ;INT     ; 3;PLC;             ;   ; ;  ;1177;24;[RW]
+2;P;RES_AnInStts_11 ;INT     ; 3;PLC;             ;   ; ;  ;1177;24;[RW]
+2;P;RES_AnInStts_12 ;INT     ; 3;PLC;             ;   ; ;  ;1177;24;[RW]
+1;P;OK_AnIn_1       ;INT     ; 3;PLC;             ;   ; ;  ;1201;12;[RW]
+1;P;OK_AnIn_2       ;INT     ; 3;PLC;             ;   ; ;  ;1201;12;[RW]
+1;P;OK_AnIn_3       ;INT     ; 3;PLC;             ;   ; ;  ;1201;12;[RW]
+1;P;OK_AnIn_4       ;INT     ; 3;PLC;             ;   ; ;  ;1201;12;[RW]
+1;P;OK_AnIn_5       ;INT     ; 3;PLC;             ;   ; ;  ;1201;12;[RW]
+1;P;OK_AnIn_6       ;INT     ; 3;PLC;             ;   ; ;  ;1201;12;[RW]
+1;P;OK_AnIn_7       ;INT     ; 3;PLC;             ;   ; ;  ;1201;12;[RW]
+1;P;OK_AnIn_8       ;INT     ; 3;PLC;             ;   ; ;  ;1201;12;[RW]
+1;P;OK_AnIn_9       ;INT     ; 3;PLC;             ;   ; ;  ;1201;12;[RW]
+1;P;OK_AnIn_10      ;INT     ; 3;PLC;             ;   ; ;  ;1201;12;[RW]
+1;P;OK_AnIn_11      ;INT     ; 3;PLC;             ;   ; ;  ;1201;12;[RW]
+1;P;OK_AnIn_12      ;INT     ; 3;PLC;             ;   ; ;  ;1201;12;[RW]
+3;P;TST_AnOut_1     ;WORD_BIT; 1;PLC;             ;   ; ;  ;1213;12;[RW]
+3;P;TST_AnOut_2     ;WORD_BIT; 2;PLC;             ;   ; ;  ;1213;12;[RW]
+3;P;TST_AnOut_3     ;WORD_BIT; 3;PLC;             ;   ; ;  ;1213;12;[RW]
+3;P;TST_AnOut_4     ;WORD_BIT; 4;PLC;             ;   ; ;  ;1213;12;[RW]
+3;P;VAL_AnOut_1     ;INT     ; 2;PLC;             ;   ; ;  ;1213;12;[RW]
+3;P;VAL_AnOut_2     ;INT     ; 2;PLC;             ;   ; ;  ;1213;12;[RW]
+3;P;VAL_AnOut_3     ;INT     ; 2;PLC;             ;   ; ;  ;1213;12;[RW]
+3;P;VAL_AnOut_4     ;INT     ; 2;PLC;             ;   ; ;  ;1213;12;[RW]
+3;P;VAL_AnOutConf_1 ;UINT    ; 0;PLC;             ;   ; ;  ;1213;12;[RW]
+3;P;VAL_AnOutConf_2 ;UINT    ; 0;PLC;             ;   ; ;  ;1213;12;[RW]
+3;P;VAL_AnOutConf_3 ;UINT    ; 0;PLC;             ;   ; ;  ;1213;12;[RW]
+3;P;VAL_AnOutConf_4 ;UINT    ; 0;PLC;             ;   ; ;  ;1213;12;[RW]
+2;P;RES_AnOut_1     ;INT     ; 2;PLC;             ;   ; ;  ;1125; 8;[RW]
+2;P;RES_AnOut_2     ;INT     ; 2;PLC;             ;   ; ;  ;1125; 8;[RW]
+2;P;RES_AnOut_3     ;INT     ; 2;PLC;             ;   ; ;  ;1125; 8;[RW]
+2;P;RES_AnOut_4     ;INT     ; 2;PLC;             ;   ; ;  ;1125; 8;[RW]
+2;P;RES_AnOutStts_1 ;INT     ; 2;PLC;             ;   ; ;  ;1125; 8;[RW]
+2;P;RES_AnOutStts_2 ;INT     ; 2;PLC;             ;   ; ;  ;1125; 8;[RW]
+2;P;RES_AnOutStts_3 ;INT     ; 2;PLC;             ;   ; ;  ;1125; 8;[RW]
+2;P;RES_AnOutStts_4 ;INT     ; 2;PLC;             ;   ; ;  ;1125; 8;[RW]
+1;P;OK_AnOut_1      ;WORD_BIT; 1;PLC;             ;   ; ;  ;1233; 4;[RW]
+1;P;OK_AnOut_2      ;WORD_BIT; 2;PLC;             ;   ; ;  ;1233; 4;[RW]
+1;P;OK_AnOut_3      ;WORD_BIT; 3;PLC;             ;   ; ;  ;1233; 4;[RW]
+1;P;OK_AnOut_4      ;WORD_BIT; 4;PLC;             ;   ; ;  ;1233; 4;[RW]
+3;P;TST_Tamb        ;WORD_BIT; 1;PLC;             ;   ; ;  ;1237;14;[RW]
+3;P;TST_RPM         ;WORD_BIT; 2;PLC;             ;   ; ;  ;1237;14;[RW]
+3;P;TST_VCC_set     ;WORD_BIT; 3;PLC;             ;   ; ;  ;1237;14;[RW]
+3;P;TST_VCC_fbk     ;WORD_BIT; 4;PLC;             ;   ; ;  ;1237;14;[RW]
+3;P;TST_mA_fbk      ;WORD_BIT; 5;PLC;             ;   ; ;  ;1237;14;[RW]
+3;P;TST_FWrevision  ;WORD_BIT; 6;PLC;             ;   ; ;  ;1237;14;[RW]
+3;P;TST_HWconfig    ;WORD_BIT; 7;PLC;             ;   ; ;  ;1237;14;[RW]
+3;P;VAL_Tamb        ;INT     ; 1;PLC;             ;   ; ;  ;1237;14;[RW]
+3;P;VAL_RPM         ;UINT    ; 0;PLC;             ;   ; ;  ;1237;14;[RW]
+3;P;VAL_VCC_set     ;INT     ; 2;PLC;             ;   ; ;  ;1237;14;[RW]
+3;P;VAL_VCC_fbk     ;INT     ; 3;PLC;             ;   ; ;  ;1237;14;[RW]
+3;P;VAL_mA_fbk      ;INT     ; 3;PLC;             ;   ; ;  ;1237;14;[RW]
+3;P;VAL_FWrevision  ;UINT    ; 0;PLC;             ;   ; ;  ;1237;14;[RW]
+3;P;VAL_HWconfig    ;UINT    ; 0;PLC;             ;   ; ;  ;1237;14;[RW]
+2;P;RES_Tamb        ;INT     ; 1;PLC;             ;   ; ;  ;1251; 7;[RW]
+2;P;RES_RPM         ;UINT    ; 0;PLC;             ;   ; ;  ;1251; 7;[RW]
+2;P;RES_VCC_set     ;INT     ; 2;PLC;             ;   ; ;  ;1251; 7;[RW]
+2;P;RES_VCC_fbk     ;INT     ; 3;PLC;             ;   ; ;  ;1251; 7;[RW]
+2;P;RES_mA_fbk      ;INT     ; 3;PLC;             ;   ; ;  ;1251; 7;[RW]
+2;P;RES_FWrevision  ;UINT    ; 0;PLC;             ;   ; ;  ;1251; 7;[RW]
+2;P;RES_HWconfig    ;UINT    ; 0;PLC;             ;   ; ;  ;1251; 7;[RW]
+2;P;OK_Tamb         ;INT     ; 1;PLC;             ;   ; ;  ;1258; 7;[RW]
+2;P;OK_RPM          ;UINT    ; 0;PLC;             ;   ; ;  ;1258; 7;[RW]
+2;P;OK_VCC_set      ;INT     ; 2;PLC;             ;   ; ;  ;1258; 7;[RW]
+2;P;OK_VCC_fbk      ;INT     ; 3;PLC;             ;   ; ;  ;1258; 7;[RW]
+2;P;OK_mA_fbk       ;INT     ; 3;PLC;             ;   ; ;  ;1258; 7;[RW]
+2;P;OK_FWrevision   ;UINT    ; 0;PLC;             ;   ; ;  ;1258; 7;[RW]
+2;P;OK_HWconfig     ;UINT    ; 0;PLC;             ;   ; ;  ;1258; 7;[RW]
+3;P;TST_RTUS_WR     ;WORD_BIT; 1;PLC;             ;   ; ;  ;1265;16;[RW]
+3;P;TST_RTUS_RD     ;WORD_BIT; 2;PLC;             ;   ; ;  ;1265;16;[RW]
+3;P;TST_RTU1_WR     ;WORD_BIT; 3;PLC;             ;   ; ;  ;1265;16;[RW]
+3;P;TST_RTU1_RD     ;WORD_BIT; 4;PLC;             ;   ; ;  ;1265;16;[RW]
+3;P;TST_RTU3_WR     ;WORD_BIT; 5;PLC;             ;   ; ;  ;1265;16;[RW]
+3;P;TST_RTU3_RD     ;WORD_BIT; 6;PLC;             ;   ; ;  ;1265;16;[RW]
+3;P;TST_CAN1_WR     ;WORD_BIT; 7;PLC;             ;   ; ;  ;1265;16;[RW]
+3;P;TST_CAN1_RD     ;WORD_BIT; 8;PLC;             ;   ; ;  ;1265;16;[RW]
+3;P;VAL_RTUS_WR     ;WORD_BIT; 1;PLC;             ;   ; ;  ;1265;16;[RW]
+3;P;VAL_RTUS_RD     ;WORD_BIT; 2;PLC;             ;   ; ;  ;1265;16;[RW]
+3;P;VAL_RTU1_WR     ;WORD_BIT; 3;PLC;             ;   ; ;  ;1265;16;[RW]
+3;P;VAL_RTU1_RD     ;WORD_BIT; 4;PLC;             ;   ; ;  ;1265;16;[RW]
+3;P;VAL_RTU3_WR     ;WORD_BIT; 5;PLC;             ;   ; ;  ;1265;16;[RW]
+3;P;VAL_RTU3_RD     ;WORD_BIT; 6;PLC;             ;   ; ;  ;1265;16;[RW]
+3;P;VAL_CAN1_WR     ;WORD_BIT; 7;PLC;             ;   ; ;  ;1265;16;[RW]
+3;P;VAL_CAN1_RD     ;WORD_BIT; 8;PLC;             ;   ; ;  ;1265;16;[RW]
+2;P;RES_RTUS_WR     ;WORD_BIT; 1;PLC;             ;   ; ;  ;1281; 8;[RW]
+2;P;RES_RTUS_RD     ;WORD_BIT; 2;PLC;             ;   ; ;  ;1281; 8;[RW]
+2;P;RES_RTU1_WR     ;WORD_BIT; 3;PLC;             ;   ; ;  ;1281; 8;[RW]
+2;P;RES_RTU1_RD     ;WORD_BIT; 4;PLC;             ;   ; ;  ;1281; 8;[RW]
+2;P;RES_RTU3_WR     ;WORD_BIT; 5;PLC;             ;   ; ;  ;1281; 8;[RW]
+2;P;RES_RTU3_RD     ;WORD_BIT; 6;PLC;             ;   ; ;  ;1281; 8;[RW]
+2;P;RES_CAN1_WR     ;WORD_BIT; 7;PLC;             ;   ; ;  ;1281; 8;[RW]
+2;P;RES_CAN1_RD     ;WORD_BIT; 8;PLC;             ;   ; ;  ;1281; 8;[RW]
+1;P;OK_RTUS_WR      ;WORD_BIT; 1;PLC;             ;   ; ;  ;1289; 8;[RW]
+1;P;OK_RTUS_RD      ;WORD_BIT; 2;PLC;             ;   ; ;  ;1289; 8;[RW]
+1;P;OK_RTU1_WR      ;WORD_BIT; 3;PLC;             ;   ; ;  ;1289; 8;[RW]
+1;P;OK_RTU1_RD      ;WORD_BIT; 4;PLC;             ;   ; ;  ;1289; 8;[RW]
+1;P;OK_RTU3_WR      ;WORD_BIT; 5;PLC;             ;   ; ;  ;1289; 8;[RW]
+1;P;OK_RTU3_RD      ;WORD_BIT; 6;PLC;             ;   ; ;  ;1289; 8;[RW]
+1;P;OK_CAN1_WR      ;WORD_BIT; 7;PLC;             ;   ; ;  ;1289; 8;[RW]
+1;P;OK_CAN1_RD      ;WORD_BIT; 8;PLC;             ;   ; ;  ;1289; 8;[RW]
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
@@ -1694,6 +1994,230 @@
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
+2;P;TESTING1        ;BYTE_BIT; 8;TCP;192.168.5.115;502;1; 0;2000; 4;[RW]
+2;P;RESET1          ;BYTE_BIT; 1;TCP;192.168.5.115;502;1; 0;2000; 4;[RW]
+2;P;START1          ;BYTE_BIT; 2;TCP;192.168.5.115;502;1; 0;2000; 4;[RW]
+2;P;STOP1           ;BYTE_BIT; 3;TCP;192.168.5.115;502;1; 0;2000; 4;[RW]
+3;P;TST1_DigIn_1    ;WORD_BIT; 1;TCP;192.168.5.115;502;1; 1;2001;32;[RW]
+3;P;TST1_DigIn_2    ;WORD_BIT; 2;TCP;192.168.5.115;502;1; 1;2001;32;[RW]
+3;P;TST1_DigIn_3    ;WORD_BIT; 3;TCP;192.168.5.115;502;1; 1;2001;32;[RW]
+3;P;TST1_DigIn_4    ;WORD_BIT; 4;TCP;192.168.5.115;502;1; 1;2001;32;[RW]
+3;P;TST1_DigIn_5    ;WORD_BIT; 5;TCP;192.168.5.115;502;1; 1;2001;32;[RW]
+3;P;TST1_DigIn_6    ;WORD_BIT; 6;TCP;192.168.5.115;502;1; 1;2001;32;[RW]
+3;P;TST1_DigIn_7    ;WORD_BIT; 7;TCP;192.168.5.115;502;1; 1;2001;32;[RW]
+3;P;TST1_DigIn_8    ;WORD_BIT; 8;TCP;192.168.5.115;502;1; 1;2001;32;[RW]
+3;P;TST1_DigIn_9    ;WORD_BIT; 9;TCP;192.168.5.115;502;1; 1;2001;32;[RW]
+3;P;TST1_DigIn_10   ;WORD_BIT;10;TCP;192.168.5.115;502;1; 1;2001;32;[RW]
+3;P;TST1_DigIn_11   ;WORD_BIT;11;TCP;192.168.5.115;502;1; 1;2001;32;[RW]
+3;P;TST1_DigIn_12   ;WORD_BIT;12;TCP;192.168.5.115;502;1; 1;2001;32;[RW]
+3;P;TST1_DigIn_13   ;WORD_BIT;13;TCP;192.168.5.115;502;1; 1;2001;32;[RW]
+3;P;TST1_DigIn_14   ;WORD_BIT;14;TCP;192.168.5.115;502;1; 1;2001;32;[RW]
+3;P;TST1_DigIn_15   ;WORD_BIT;15;TCP;192.168.5.115;502;1; 1;2001;32;[RW]
+3;P;TST1_DigIn_16   ;WORD_BIT;16;TCP;192.168.5.115;502;1; 1;2001;32;[RW]
+3;P;VAL1_DigIn_1    ;WORD_BIT; 1;TCP;192.168.5.115;502;1; 2;2001;32;[RW]
+3;P;VAL1_DigIn_2    ;WORD_BIT; 2;TCP;192.168.5.115;502;1; 2;2001;32;[RW]
+3;P;VAL1_DigIn_3    ;WORD_BIT; 3;TCP;192.168.5.115;502;1; 2;2001;32;[RW]
+3;P;VAL1_DigIn_4    ;WORD_BIT; 4;TCP;192.168.5.115;502;1; 2;2001;32;[RW]
+3;P;VAL1_DigIn_5    ;WORD_BIT; 5;TCP;192.168.5.115;502;1; 2;2001;32;[RW]
+3;P;VAL1_DigIn_6    ;WORD_BIT; 6;TCP;192.168.5.115;502;1; 2;2001;32;[RW]
+3;P;VAL1_DigIn_7    ;WORD_BIT; 7;TCP;192.168.5.115;502;1; 2;2001;32;[RW]
+3;P;VAL1_DigIn_8    ;WORD_BIT; 8;TCP;192.168.5.115;502;1; 2;2001;32;[RW]
+3;P;VAL1_DigIn_9    ;WORD_BIT; 9;TCP;192.168.5.115;502;1; 2;2001;32;[RW]
+3;P;VAL1_DigIn_10   ;WORD_BIT;10;TCP;192.168.5.115;502;1; 2;2001;32;[RW]
+3;P;VAL1_DigIn_11   ;WORD_BIT;11;TCP;192.168.5.115;502;1; 2;2001;32;[RW]
+3;P;VAL1_DigIn_12   ;WORD_BIT;12;TCP;192.168.5.115;502;1; 2;2001;32;[RW]
+3;P;VAL1_DigIn_13   ;WORD_BIT;13;TCP;192.168.5.115;502;1; 2;2001;32;[RW]
+3;P;VAL1_DigIn_14   ;WORD_BIT;14;TCP;192.168.5.115;502;1; 2;2001;32;[RW]
+3;P;VAL1_DigIn_15   ;WORD_BIT;15;TCP;192.168.5.115;502;1; 2;2001;32;[RW]
+3;P;VAL1_DigIn_16   ;WORD_BIT;16;TCP;192.168.5.115;502;1; 2;2001;32;[RW]
+2;P;RES1_DigIn_1    ;WORD_BIT; 1;TCP;192.168.5.115;502;1; 3;2033;16;[RO]
+2;P;RES1_DigIn_2    ;WORD_BIT; 2;TCP;192.168.5.115;502;1; 3;2033;16;[RO]
+2;P;RES1_DigIn_3    ;WORD_BIT; 3;TCP;192.168.5.115;502;1; 3;2033;16;[RO]
+2;P;RES1_DigIn_4    ;WORD_BIT; 4;TCP;192.168.5.115;502;1; 3;2033;16;[RO]
+2;P;RES1_DigIn_5    ;WORD_BIT; 5;TCP;192.168.5.115;502;1; 3;2033;16;[RO]
+2;P;RES1_DigIn_6    ;WORD_BIT; 6;TCP;192.168.5.115;502;1; 3;2033;16;[RO]
+2;P;RES1_DigIn_7    ;WORD_BIT; 7;TCP;192.168.5.115;502;1; 3;2033;16;[RO]
+2;P;RES1_DigIn_8    ;WORD_BIT; 8;TCP;192.168.5.115;502;1; 3;2033;16;[RO]
+2;P;RES1_DigIn_9    ;WORD_BIT; 9;TCP;192.168.5.115;502;1; 3;2033;16;[RO]
+2;P;RES1_DigIn_10   ;WORD_BIT;10;TCP;192.168.5.115;502;1; 3;2033;16;[RO]
+2;P;RES1_DigIn_11   ;WORD_BIT;11;TCP;192.168.5.115;502;1; 3;2033;16;[RO]
+2;P;RES1_DigIn_12   ;WORD_BIT;12;TCP;192.168.5.115;502;1; 3;2033;16;[RO]
+2;P;RES1_DigIn_13   ;WORD_BIT;13;TCP;192.168.5.115;502;1; 3;2033;16;[RO]
+2;P;RES1_DigIn_14   ;WORD_BIT;14;TCP;192.168.5.115;502;1; 3;2033;16;[RO]
+2;P;RES1_DigIn_15   ;WORD_BIT;15;TCP;192.168.5.115;502;1; 3;2033;16;[RO]
+2;P;RES1_DigIn_16   ;WORD_BIT;16;TCP;192.168.5.115;502;1; 3;2033;16;[RO]
+3;P;TST1_DigOut_1   ;WORD_BIT; 1;TCP;192.168.5.115;502;1; 4;2049;32;[RW]
+3;P;TST1_DigOut_2   ;WORD_BIT; 2;TCP;192.168.5.115;502;1; 4;2049;32;[RW]
+3;P;TST1_DigOut_3   ;WORD_BIT; 3;TCP;192.168.5.115;502;1; 4;2049;32;[RW]
+3;P;TST1_DigOut_4   ;WORD_BIT; 4;TCP;192.168.5.115;502;1; 4;2049;32;[RW]
+3;P;TST1_DigOut_5   ;WORD_BIT; 5;TCP;192.168.5.115;502;1; 4;2049;32;[RW]
+3;P;TST1_DigOut_6   ;WORD_BIT; 6;TCP;192.168.5.115;502;1; 4;2049;32;[RW]
+3;P;TST1_DigOut_7   ;WORD_BIT; 7;TCP;192.168.5.115;502;1; 4;2049;32;[RW]
+3;P;TST1_DigOut_8   ;WORD_BIT; 8;TCP;192.168.5.115;502;1; 4;2049;32;[RW]
+3;P;TST1_DigOut_9   ;WORD_BIT; 9;TCP;192.168.5.115;502;1; 4;2049;32;[RW]
+3;P;TST1_DigOut_10  ;WORD_BIT;10;TCP;192.168.5.115;502;1; 4;2049;32;[RW]
+3;P;TST1_DigOut_11  ;WORD_BIT;11;TCP;192.168.5.115;502;1; 4;2049;32;[RW]
+3;P;TST1_DigOut_12  ;WORD_BIT;12;TCP;192.168.5.115;502;1; 4;2049;32;[RW]
+3;P;TST1_DigOut_13  ;WORD_BIT;13;TCP;192.168.5.115;502;1; 4;2049;32;[RW]
+3;P;TST1_DigOut_14  ;WORD_BIT;14;TCP;192.168.5.115;502;1; 4;2049;32;[RW]
+3;P;TST1_DigOut_15  ;WORD_BIT;15;TCP;192.168.5.115;502;1; 4;2049;32;[RW]
+3;P;TST1_DigOut_16  ;WORD_BIT;16;TCP;192.168.5.115;502;1; 4;2049;32;[RW]
+3;P;VAL1_DigOut_1   ;WORD_BIT; 1;TCP;192.168.5.115;502;1; 5;2049;32;[RW]
+3;P;VAL1_DigOut_2   ;WORD_BIT; 2;TCP;192.168.5.115;502;1; 5;2049;32;[RW]
+3;P;VAL1_DigOut_3   ;WORD_BIT; 3;TCP;192.168.5.115;502;1; 5;2049;32;[RW]
+3;P;VAL1_DigOut_4   ;WORD_BIT; 4;TCP;192.168.5.115;502;1; 5;2049;32;[RW]
+3;P;VAL1_DigOut_5   ;WORD_BIT; 5;TCP;192.168.5.115;502;1; 5;2049;32;[RW]
+3;P;VAL1_DigOut_6   ;WORD_BIT; 6;TCP;192.168.5.115;502;1; 5;2049;32;[RW]
+3;P;VAL1_DigOut_7   ;WORD_BIT; 7;TCP;192.168.5.115;502;1; 5;2049;32;[RW]
+3;P;VAL1_DigOut_8   ;WORD_BIT; 8;TCP;192.168.5.115;502;1; 5;2049;32;[RW]
+3;P;VAL1_DigOut_9   ;WORD_BIT; 9;TCP;192.168.5.115;502;1; 5;2049;32;[RW]
+3;P;VAL1_DigOut_10  ;WORD_BIT;10;TCP;192.168.5.115;502;1; 5;2049;32;[RW]
+3;P;VAL1_DigOut_11  ;WORD_BIT;11;TCP;192.168.5.115;502;1; 5;2049;32;[RW]
+3;P;VAL1_DigOut_12  ;WORD_BIT;12;TCP;192.168.5.115;502;1; 5;2049;32;[RW]
+3;P;VAL1_DigOut_13  ;WORD_BIT;13;TCP;192.168.5.115;502;1; 5;2049;32;[RW]
+3;P;VAL1_DigOut_14  ;WORD_BIT;14;TCP;192.168.5.115;502;1; 5;2049;32;[RW]
+3;P;VAL1_DigOut_15  ;WORD_BIT;15;TCP;192.168.5.115;502;1; 5;2049;32;[RW]
+3;P;VAL1_DigOut_16  ;WORD_BIT;16;TCP;192.168.5.115;502;1; 5;2049;32;[RW]
+2;P;RES1_DigOut_1   ;WORD_BIT; 1;TCP;192.168.5.115;502;1; 6;2081;16;[RO]
+2;P;RES1_DigOut_2   ;WORD_BIT; 2;TCP;192.168.5.115;502;1; 6;2081;16;[RO]
+2;P;RES1_DigOut_3   ;WORD_BIT; 3;TCP;192.168.5.115;502;1; 6;2081;16;[RO]
+2;P;RES1_DigOut_4   ;WORD_BIT; 4;TCP;192.168.5.115;502;1; 6;2081;16;[RO]
+2;P;RES1_DigOut_5   ;WORD_BIT; 5;TCP;192.168.5.115;502;1; 6;2081;16;[RO]
+2;P;RES1_DigOut_6   ;WORD_BIT; 6;TCP;192.168.5.115;502;1; 6;2081;16;[RO]
+2;P;RES1_DigOut_7   ;WORD_BIT; 7;TCP;192.168.5.115;502;1; 6;2081;16;[RO]
+2;P;RES1_DigOut_8   ;WORD_BIT; 8;TCP;192.168.5.115;502;1; 6;2081;16;[RO]
+2;P;RES1_DigOut_9   ;WORD_BIT; 9;TCP;192.168.5.115;502;1; 6;2081;16;[RO]
+2;P;RES1_DigOut_10  ;WORD_BIT;10;TCP;192.168.5.115;502;1; 6;2081;16;[RO]
+2;P;RES1_DigOut_11  ;WORD_BIT;11;TCP;192.168.5.115;502;1; 6;2081;16;[RO]
+2;P;RES1_DigOut_12  ;WORD_BIT;12;TCP;192.168.5.115;502;1; 6;2081;16;[RO]
+2;P;RES1_DigOut_13  ;WORD_BIT;13;TCP;192.168.5.115;502;1; 6;2081;16;[RO]
+2;P;RES1_DigOut_14  ;WORD_BIT;14;TCP;192.168.5.115;502;1; 6;2081;16;[RO]
+2;P;RES1_DigOut_15  ;WORD_BIT;15;TCP;192.168.5.115;502;1; 6;2081;16;[RO]
+2;P;RES1_DigOut_16  ;WORD_BIT;16;TCP;192.168.5.115;502;1; 6;2081;16;[RO]
+3;P;TST1_AnIn_1     ;WORD_BIT; 1;TCP;192.168.5.115;502;1; 7;2097;48;[RW]
+3;P;TST1_AnIn_2     ;WORD_BIT; 2;TCP;192.168.5.115;502;1; 7;2097;48;[RW]
+3;P;TST1_AnIn_3     ;WORD_BIT; 3;TCP;192.168.5.115;502;1; 7;2097;48;[RW]
+3;P;TST1_AnIn_4     ;WORD_BIT; 4;TCP;192.168.5.115;502;1; 7;2097;48;[RW]
+3;P;TST1_AnIn_5     ;WORD_BIT; 5;TCP;192.168.5.115;502;1; 7;2097;48;[RW]
+3;P;TST1_AnIn_6     ;WORD_BIT; 6;TCP;192.168.5.115;502;1; 7;2097;48;[RW]
+3;P;TST1_AnIn_7     ;WORD_BIT; 7;TCP;192.168.5.115;502;1; 7;2097;48;[RW]
+3;P;TST1_AnIn_8     ;WORD_BIT; 8;TCP;192.168.5.115;502;1; 7;2097;48;[RW]
+3;P;TST1_AnIn_9     ;WORD_BIT; 9;TCP;192.168.5.115;502;1; 7;2097;48;[RW]
+3;P;TST1_AnIn_10    ;WORD_BIT;10;TCP;192.168.5.115;502;1; 7;2097;48;[RW]
+3;P;TST1_AnIn_11    ;WORD_BIT;11;TCP;192.168.5.115;502;1; 7;2097;48;[RW]
+3;P;TST1_AnIn_12    ;WORD_BIT;12;TCP;192.168.5.115;502;1; 7;2097;48;[RW]
+3;P;VAL1_AnIn_1     ;INT     ; 3;TCP;192.168.5.115;502;1; 8;2097;48;[RW]
+3;P;VAL1_AnIn_2     ;INT     ; 3;TCP;192.168.5.115;502;1; 9;2097;48;[RW]
+3;P;VAL1_AnIn_3     ;INT     ; 3;TCP;192.168.5.115;502;1;10;2097;48;[RW]
+3;P;VAL1_AnIn_4     ;INT     ; 3;TCP;192.168.5.115;502;1;11;2097;48;[RW]
+3;P;VAL1_AnIn_5     ;INT     ; 3;TCP;192.168.5.115;502;1;12;2097;48;[RW]
+3;P;VAL1_AnIn_6     ;INT     ; 3;TCP;192.168.5.115;502;1;13;2097;48;[RW]
+3;P;VAL1_AnIn_7     ;INT     ; 3;TCP;192.168.5.115;502;1;14;2097;48;[RW]
+3;P;VAL1_AnIn_8     ;INT     ; 3;TCP;192.168.5.115;502;1;15;2097;48;[RW]
+3;P;VAL1_AnIn_9     ;INT     ; 3;TCP;192.168.5.115;502;1;16;2097;48;[RW]
+3;P;VAL1_AnIn_10    ;INT     ; 3;TCP;192.168.5.115;502;1;17;2097;48;[RW]
+3;P;VAL1_AnIn_11    ;INT     ; 3;TCP;192.168.5.115;502;1;18;2097;48;[RW]
+3;P;VAL1_AnIn_12    ;INT     ; 3;TCP;192.168.5.115;502;1;19;2097;48;[RW]
+3;P;VAL1_AnInConf_1 ;UINT    ; 0;TCP;192.168.5.115;502;1;20;2097;48;[RW]
+3;P;VAL1_AnInConf_2 ;UINT    ; 0;TCP;192.168.5.115;502;1;21;2097;48;[RW]
+3;P;VAL1_AnInConf_3 ;UINT    ; 0;TCP;192.168.5.115;502;1;22;2097;48;[RW]
+3;P;VAL1_AnInConf_4 ;UINT    ; 0;TCP;192.168.5.115;502;1;23;2097;48;[RW]
+3;P;VAL1_AnInConf_5 ;UINT    ; 0;TCP;192.168.5.115;502;1;24;2097;48;[RW]
+3;P;VAL1_AnInConf_6 ;UINT    ; 0;TCP;192.168.5.115;502;1;25;2097;48;[RW]
+3;P;VAL1_AnInConf_7 ;UINT    ; 0;TCP;192.168.5.115;502;1;26;2097;48;[RW]
+3;P;VAL1_AnInConf_8 ;UINT    ; 0;TCP;192.168.5.115;502;1;27;2097;48;[RW]
+3;P;VAL1_AnInConf_9 ;UINT    ; 0;TCP;192.168.5.115;502;1;28;2097;48;[RW]
+3;P;VAL1_AnInConf_10;UINT    ; 0;TCP;192.168.5.115;502;1;29;2097;48;[RW]
+3;P;VAL1_AnInConf_11;UINT    ; 0;TCP;192.168.5.115;502;1;30;2097;48;[RW]
+3;P;VAL1_AnInConf_12;UINT    ; 0;TCP;192.168.5.115;502;1;31;2097;48;[RW]
+3;P;VAL1_AnInFltr_1 ;UINT    ; 0;TCP;192.168.5.115;502;1;32;2097;48;[RW]
+3;P;VAL1_AnInFltr_2 ;UINT    ; 0;TCP;192.168.5.115;502;1;33;2097;48;[RW]
+3;P;VAL1_AnInFltr_3 ;UINT    ; 0;TCP;192.168.5.115;502;1;34;2097;48;[RW]
+3;P;VAL1_AnInFltr_4 ;UINT    ; 0;TCP;192.168.5.115;502;1;35;2097;48;[RW]
+3;P;VAL1_AnInFltr_5 ;UINT    ; 0;TCP;192.168.5.115;502;1;36;2097;48;[RW]
+3;P;VAL1_AnInFltr_6 ;UINT    ; 0;TCP;192.168.5.115;502;1;37;2097;48;[RW]
+3;P;VAL1_AnInFltr_7 ;UINT    ; 0;TCP;192.168.5.115;502;1;38;2097;48;[RW]
+3;P;VAL1_AnInFltr_8 ;UINT    ; 0;TCP;192.168.5.115;502;1;39;2097;48;[RW]
+3;P;VAL1_AnInFltr_9 ;UINT    ; 0;TCP;192.168.5.115;502;1;40;2097;48;[RW]
+3;P;VAL1_AnInFltr_10;UINT    ; 0;TCP;192.168.5.115;502;1;41;2097;48;[RW]
+3;P;VAL1_AnInFltr_11;UINT    ; 0;TCP;192.168.5.115;502;1;42;2097;48;[RW]
+3;P;VAL1_AnInFltr_12;UINT    ; 0;TCP;192.168.5.115;502;1;43;2097;48;[RW]
+2;P;RES1_AnIn_1     ;INT     ; 3;TCP;192.168.5.115;502;1;44;2145;24;[RO]
+2;P;RES1_AnIn_2     ;INT     ; 3;TCP;192.168.5.115;502;1;45;2145;24;[RO]
+2;P;RES1_AnIn_3     ;INT     ; 3;TCP;192.168.5.115;502;1;46;2145;24;[RO]
+2;P;RES1_AnIn_4     ;INT     ; 3;TCP;192.168.5.115;502;1;47;2145;24;[RO]
+2;P;RES1_AnIn_5     ;INT     ; 3;TCP;192.168.5.115;502;1;48;2145;24;[RO]
+2;P;RES1_AnIn_6     ;INT     ; 3;TCP;192.168.5.115;502;1;49;2145;24;[RO]
+2;P;RES1_AnIn_7     ;INT     ; 3;TCP;192.168.5.115;502;1;50;2145;24;[RO]
+2;P;RES1_AnIn_8     ;INT     ; 3;TCP;192.168.5.115;502;1;51;2145;24;[RO]
+2;P;RES1_AnIn_9     ;INT     ; 3;TCP;192.168.5.115;502;1;52;2145;24;[RO]
+2;P;RES1_AnIn_10    ;INT     ; 3;TCP;192.168.5.115;502;1;53;2145;24;[RO]
+2;P;RES1_AnIn_11    ;INT     ; 3;TCP;192.168.5.115;502;1;54;2145;24;[RO]
+2;P;RES1_AnIn_12    ;INT     ; 3;TCP;192.168.5.115;502;1;55;2145;24;[RO]
+2;P;RES1_AnInStts_1 ;INT     ; 3;TCP;192.168.5.115;502;1;56;2145;24;[RO]
+2;P;RES1_AnInStts_2 ;INT     ; 3;TCP;192.168.5.115;502;1;57;2145;24;[RO]
+2;P;RES1_AnInStts_3 ;INT     ; 3;TCP;192.168.5.115;502;1;58;2145;24;[RO]
+2;P;RES1_AnInStts_4 ;INT     ; 3;TCP;192.168.5.115;502;1;59;2145;24;[RO]
+2;P;RES1_AnInStts_5 ;INT     ; 3;TCP;192.168.5.115;502;1;60;2145;24;[RO]
+2;P;RES1_AnInStts_6 ;INT     ; 3;TCP;192.168.5.115;502;1;61;2145;24;[RO]
+2;P;RES1_AnInStts_7 ;INT     ; 3;TCP;192.168.5.115;502;1;62;2145;24;[RO]
+2;P;RES1_AnInStts_8 ;INT     ; 3;TCP;192.168.5.115;502;1;63;2145;24;[RO]
+2;P;RES1_AnInStts_9 ;INT     ; 3;TCP;192.168.5.115;502;1;64;2145;24;[RO]
+2;P;RES1_AnInStts_10;INT     ; 3;TCP;192.168.5.115;502;1;65;2145;24;[RO]
+2;P;RES1_AnInStts_11;INT     ; 3;TCP;192.168.5.115;502;1;66;2145;24;[RO]
+2;P;RES1_AnInStts_12;INT     ; 3;TCP;192.168.5.115;502;1;67;2145;24;[RO]
+3;P;TST1_AnOut_1    ;WORD_BIT; 1;TCP;192.168.5.115;502;1;68;2169;12;[RW]
+3;P;TST1_AnOut_2    ;WORD_BIT; 2;TCP;192.168.5.115;502;1;68;2169;12;[RW]
+3;P;TST1_AnOut_3    ;WORD_BIT; 3;TCP;192.168.5.115;502;1;68;2169;12;[RW]
+3;P;TST1_AnOut_4    ;WORD_BIT; 4;TCP;192.168.5.115;502;1;68;2169;12;[RW]
+3;P;VAL1_AnOut_1    ;INT     ; 2;TCP;192.168.5.115;502;1;69;2169;12;[RW]
+3;P;VAL1_AnOut_2    ;INT     ; 2;TCP;192.168.5.115;502;1;70;2169;12;[RW]
+3;P;VAL1_AnOut_3    ;INT     ; 2;TCP;192.168.5.115;502;1;71;2169;12;[RW]
+3;P;VAL1_AnOut_4    ;INT     ; 2;TCP;192.168.5.115;502;1;72;2169;12;[RW]
+3;P;VAL1_AnOutConf_1;UINT    ; 0;TCP;192.168.5.115;502;1;73;2169;12;[RW]
+3;P;VAL1_AnOutConf_2;UINT    ; 0;TCP;192.168.5.115;502;1;74;2169;12;[RW]
+3;P;VAL1_AnOutConf_3;UINT    ; 0;TCP;192.168.5.115;502;1;75;2169;12;[RW]
+3;P;VAL1_AnOutConf_4;UINT    ; 0;TCP;192.168.5.115;502;1;76;2169;12;[RW]
+2;P;RES1_AnOutStts_1;INT     ; 2;TCP;192.168.5.115;502;1;77;2181; 4;[RO]
+2;P;RES1_AnOutStts_2;INT     ; 2;TCP;192.168.5.115;502;1;78;2181; 4;[RO]
+2;P;RES1_AnOutStts_3;INT     ; 2;TCP;192.168.5.115;502;1;79;2181; 4;[RO]
+2;P;RES1_AnOutStts_4;INT     ; 2;TCP;192.168.5.115;502;1;80;2181; 4;[RO]
+3;P;TST1_Tamb       ;WORD_BIT; 1;TCP;192.168.5.115;502;1;81;2189; 8;[RW]
+3;P;TST1_RPM        ;WORD_BIT; 2;TCP;192.168.5.115;502;1;81;2189; 8;[RW]
+3;P;TST1_FWrevision ;WORD_BIT; 3;TCP;192.168.5.115;502;1;81;2189; 8;[RW]
+3;P;TST1_HWconfig   ;WORD_BIT; 4;TCP;192.168.5.115;502;1;81;2189; 8;[RW]
+3;P;VAL1_Tamb       ;INT     ; 1;TCP;192.168.5.115;502;1;82;2189; 8;[RW]
+3;P;VAL1_RPM        ;UINT    ; 0;TCP;192.168.5.115;502;1;83;2189; 8;[RW]
+3;P;VAL1_FWrevision ;UINT    ; 0;TCP;192.168.5.115;502;1;84;2189; 8;[RW]
+3;P;VAL1_HWconfig   ;UINT    ; 0;TCP;192.168.5.115;502;1;85;2189; 8;[RW]
+2;P;RES1_Tamb       ;INT     ; 1;TCP;192.168.5.115;502;1;86;2197; 4;[RO]
+2;P;RES1_RPM        ;UINT    ; 0;TCP;192.168.5.115;502;1;87;2197; 4;[RO]
+2;P;RES1_FWrevision ;UINT    ; 0;TCP;192.168.5.115;502;1;88;2197; 4;[RO]
+2;P;RES1_HWconfig   ;UINT    ; 0;TCP;192.168.5.115;502;1;89;2197; 4;[RO]
+3;P;TST1_RTUS_WR    ;WORD_BIT; 1;TCP;192.168.5.115;502;1;90;2201;16;[RW]
+3;P;TST1_RTUS_RD    ;WORD_BIT; 2;TCP;192.168.5.115;502;1;90;2201;16;[RW]
+3;P;TST1_RTU1_WR    ;WORD_BIT; 3;TCP;192.168.5.115;502;1;90;2201;16;[RW]
+3;P;TST1_RTU1_RD    ;WORD_BIT; 4;TCP;192.168.5.115;502;1;90;2201;16;[RW]
+3;P;TST1_RTU3_WR    ;WORD_BIT; 5;TCP;192.168.5.115;502;1;90;2201;16;[RW]
+3;P;TST1_RTU3_RD    ;WORD_BIT; 6;TCP;192.168.5.115;502;1;90;2201;16;[RW]
+3;P;TST1_CAN1_WR    ;WORD_BIT; 7;TCP;192.168.5.115;502;1;90;2201;16;[RW]
+3;P;TST1_CAN1_RD    ;WORD_BIT; 8;TCP;192.168.5.115;502;1;90;2201;16;[RW]
+3;P;VAL1_RTUS_WR    ;WORD_BIT; 1;TCP;192.168.5.115;502;1;91;2201;16;[RW]
+3;P;VAL1_RTUS_RD    ;WORD_BIT; 2;TCP;192.168.5.115;502;1;91;2201;16;[RW]
+3;P;VAL1_RTU1_WR    ;WORD_BIT; 3;TCP;192.168.5.115;502;1;91;2201;16;[RW]
+3;P;VAL1_RTU1_RD    ;WORD_BIT; 4;TCP;192.168.5.115;502;1;91;2201;16;[RW]
+3;P;VAL1_RTU3_WR    ;WORD_BIT; 5;TCP;192.168.5.115;502;1;91;2201;16;[RW]
+3;P;VAL1_RTU3_RD    ;WORD_BIT; 6;TCP;192.168.5.115;502;1;91;2201;16;[RW]
+3;P;VAL1_CAN1_WR    ;WORD_BIT; 7;TCP;192.168.5.115;502;1;91;2201;16;[RW]
+3;P;VAL1_CAN1_RD    ;WORD_BIT; 8;TCP;192.168.5.115;502;1;91;2201;16;[RW]
+2;P;RES1_RTUS_WR    ;WORD_BIT; 1;TCP;192.168.5.115;502;1;92;2217; 8;[RW]
+2;P;RES1_RTUS_RD    ;WORD_BIT; 2;TCP;192.168.5.115;502;1;92;2217; 8;[RW]
+2;P;RES1_RTU1_WR    ;WORD_BIT; 3;TCP;192.168.5.115;502;1;92;2217; 8;[RW]
+2;P;RES1_RTU1_RD    ;WORD_BIT; 4;TCP;192.168.5.115;502;1;92;2217; 8;[RW]
+2;P;RES1_RTU3_WR    ;WORD_BIT; 5;TCP;192.168.5.115;502;1;92;2217; 8;[RW]
+2;P;RES1_RTU3_RD    ;WORD_BIT; 6;TCP;192.168.5.115;502;1;92;2217; 8;[RW]
+2;P;RES1_CAN1_WR    ;WORD_BIT; 7;TCP;192.168.5.115;502;1;92;2217; 8;[RW]
+2;P;RES1_CAN1_RD    ;WORD_BIT; 8;TCP;192.168.5.115;502;1;92;2217; 8;[RW]
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
@@ -2470,6 +2994,230 @@
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
+2;P;TESTING2        ;BYTE_BIT; 8;TCP;192.168.5.117;502;1; 0;3000; 4;[RW]
+2;P;RESET2          ;BYTE_BIT; 1;TCP;192.168.5.117;502;1; 0;3000; 4;[RW]
+2;P;START2          ;BYTE_BIT; 2;TCP;192.168.5.117;502;1; 0;3000; 4;[RW]
+2;P;STOP2           ;BYTE_BIT; 3;TCP;192.168.5.117;502;1; 0;3000; 4;[RW]
+3;P;TST2_DigIn_1    ;WORD_BIT; 1;TCP;192.168.5.117;502;1; 1;3001;32;[RW]
+3;P;TST2_DigIn_2    ;WORD_BIT; 2;TCP;192.168.5.117;502;1; 1;3001;32;[RW]
+3;P;TST2_DigIn_3    ;WORD_BIT; 3;TCP;192.168.5.117;502;1; 1;3001;32;[RW]
+3;P;TST2_DigIn_4    ;WORD_BIT; 4;TCP;192.168.5.117;502;1; 1;3001;32;[RW]
+3;P;TST2_DigIn_5    ;WORD_BIT; 5;TCP;192.168.5.117;502;1; 1;3001;32;[RW]
+3;P;TST2_DigIn_6    ;WORD_BIT; 6;TCP;192.168.5.117;502;1; 1;3001;32;[RW]
+3;P;TST2_DigIn_7    ;WORD_BIT; 7;TCP;192.168.5.117;502;1; 1;3001;32;[RW]
+3;P;TST2_DigIn_8    ;WORD_BIT; 8;TCP;192.168.5.117;502;1; 1;3001;32;[RW]
+3;P;TST2_DigIn_9    ;WORD_BIT; 9;TCP;192.168.5.117;502;1; 1;3001;32;[RW]
+3;P;TST2_DigIn_10   ;WORD_BIT;10;TCP;192.168.5.117;502;1; 1;3001;32;[RW]
+3;P;TST2_DigIn_11   ;WORD_BIT;11;TCP;192.168.5.117;502;1; 1;3001;32;[RW]
+3;P;TST2_DigIn_12   ;WORD_BIT;12;TCP;192.168.5.117;502;1; 1;3001;32;[RW]
+3;P;TST2_DigIn_13   ;WORD_BIT;13;TCP;192.168.5.117;502;1; 1;3001;32;[RW]
+3;P;TST2_DigIn_14   ;WORD_BIT;14;TCP;192.168.5.117;502;1; 1;3001;32;[RW]
+3;P;TST2_DigIn_15   ;WORD_BIT;15;TCP;192.168.5.117;502;1; 1;3001;32;[RW]
+3;P;TST2_DigIn_16   ;WORD_BIT;16;TCP;192.168.5.117;502;1; 1;3001;32;[RW]
+3;P;VAL2_DigIn_1    ;WORD_BIT; 1;TCP;192.168.5.117;502;1; 2;3001;32;[RW]
+3;P;VAL2_DigIn_2    ;WORD_BIT; 2;TCP;192.168.5.117;502;1; 2;3001;32;[RW]
+3;P;VAL2_DigIn_3    ;WORD_BIT; 3;TCP;192.168.5.117;502;1; 2;3001;32;[RW]
+3;P;VAL2_DigIn_4    ;WORD_BIT; 4;TCP;192.168.5.117;502;1; 2;3001;32;[RW]
+3;P;VAL2_DigIn_5    ;WORD_BIT; 5;TCP;192.168.5.117;502;1; 2;3001;32;[RW]
+3;P;VAL2_DigIn_6    ;WORD_BIT; 6;TCP;192.168.5.117;502;1; 2;3001;32;[RW]
+3;P;VAL2_DigIn_7    ;WORD_BIT; 7;TCP;192.168.5.117;502;1; 2;3001;32;[RW]
+3;P;VAL2_DigIn_8    ;WORD_BIT; 8;TCP;192.168.5.117;502;1; 2;3001;32;[RW]
+3;P;VAL2_DigIn_9    ;WORD_BIT; 9;TCP;192.168.5.117;502;1; 2;3001;32;[RW]
+3;P;VAL2_DigIn_10   ;WORD_BIT;10;TCP;192.168.5.117;502;1; 2;3001;32;[RW]
+3;P;VAL2_DigIn_11   ;WORD_BIT;11;TCP;192.168.5.117;502;1; 2;3001;32;[RW]
+3;P;VAL2_DigIn_12   ;WORD_BIT;12;TCP;192.168.5.117;502;1; 2;3001;32;[RW]
+3;P;VAL2_DigIn_13   ;WORD_BIT;13;TCP;192.168.5.117;502;1; 2;3001;32;[RW]
+3;P;VAL2_DigIn_14   ;WORD_BIT;14;TCP;192.168.5.117;502;1; 2;3001;32;[RW]
+3;P;VAL2_DigIn_15   ;WORD_BIT;15;TCP;192.168.5.117;502;1; 2;3001;32;[RW]
+3;P;VAL2_DigIn_16   ;WORD_BIT;16;TCP;192.168.5.117;502;1; 2;3001;32;[RW]
+2;P;RES2_DigIn_1    ;WORD_BIT; 1;TCP;192.168.5.117;502;1; 3;3033;16;[RO]
+2;P;RES2_DigIn_2    ;WORD_BIT; 2;TCP;192.168.5.117;502;1; 3;3033;16;[RO]
+2;P;RES2_DigIn_3    ;WORD_BIT; 3;TCP;192.168.5.117;502;1; 3;3033;16;[RO]
+2;P;RES2_DigIn_4    ;WORD_BIT; 4;TCP;192.168.5.117;502;1; 3;3033;16;[RO]
+2;P;RES2_DigIn_5    ;WORD_BIT; 5;TCP;192.168.5.117;502;1; 3;3033;16;[RO]
+2;P;RES2_DigIn_6    ;WORD_BIT; 6;TCP;192.168.5.117;502;1; 3;3033;16;[RO]
+2;P;RES2_DigIn_7    ;WORD_BIT; 7;TCP;192.168.5.117;502;1; 3;3033;16;[RO]
+2;P;RES2_DigIn_8    ;WORD_BIT; 8;TCP;192.168.5.117;502;1; 3;3033;16;[RO]
+2;P;RES2_DigIn_9    ;WORD_BIT; 9;TCP;192.168.5.117;502;1; 3;3033;16;[RO]
+2;P;RES2_DigIn_10   ;WORD_BIT;10;TCP;192.168.5.117;502;1; 3;3033;16;[RO]
+2;P;RES2_DigIn_11   ;WORD_BIT;11;TCP;192.168.5.117;502;1; 3;3033;16;[RO]
+2;P;RES2_DigIn_12   ;WORD_BIT;12;TCP;192.168.5.117;502;1; 3;3033;16;[RO]
+2;P;RES2_DigIn_13   ;WORD_BIT;13;TCP;192.168.5.117;502;1; 3;3033;16;[RO]
+2;P;RES2_DigIn_14   ;WORD_BIT;14;TCP;192.168.5.117;502;1; 3;3033;16;[RO]
+2;P;RES2_DigIn_15   ;WORD_BIT;15;TCP;192.168.5.117;502;1; 3;3033;16;[RO]
+2;P;RES2_DigIn_16   ;WORD_BIT;16;TCP;192.168.5.117;502;1; 3;3033;16;[RO]
+3;P;TST2_DigOut_1   ;WORD_BIT; 1;TCP;192.168.5.117;502;1; 4;3049;32;[RW]
+3;P;TST2_DigOut_2   ;WORD_BIT; 2;TCP;192.168.5.117;502;1; 4;3049;32;[RW]
+3;P;TST2_DigOut_3   ;WORD_BIT; 3;TCP;192.168.5.117;502;1; 4;3049;32;[RW]
+3;P;TST2_DigOut_4   ;WORD_BIT; 4;TCP;192.168.5.117;502;1; 4;3049;32;[RW]
+3;P;TST2_DigOut_5   ;WORD_BIT; 5;TCP;192.168.5.117;502;1; 4;3049;32;[RW]
+3;P;TST2_DigOut_6   ;WORD_BIT; 6;TCP;192.168.5.117;502;1; 4;3049;32;[RW]
+3;P;TST2_DigOut_7   ;WORD_BIT; 7;TCP;192.168.5.117;502;1; 4;3049;32;[RW]
+3;P;TST2_DigOut_8   ;WORD_BIT; 8;TCP;192.168.5.117;502;1; 4;3049;32;[RW]
+3;P;TST2_DigOut_9   ;WORD_BIT; 9;TCP;192.168.5.117;502;1; 4;3049;32;[RW]
+3;P;TST2_DigOut_10  ;WORD_BIT;10;TCP;192.168.5.117;502;1; 4;3049;32;[RW]
+3;P;TST2_DigOut_11  ;WORD_BIT;11;TCP;192.168.5.117;502;1; 4;3049;32;[RW]
+3;P;TST2_DigOut_12  ;WORD_BIT;12;TCP;192.168.5.117;502;1; 4;3049;32;[RW]
+3;P;TST2_DigOut_13  ;WORD_BIT;13;TCP;192.168.5.117;502;1; 4;3049;32;[RW]
+3;P;TST2_DigOut_14  ;WORD_BIT;14;TCP;192.168.5.117;502;1; 4;3049;32;[RW]
+3;P;TST2_DigOut_15  ;WORD_BIT;15;TCP;192.168.5.117;502;1; 4;3049;32;[RW]
+3;P;TST2_DigOut_16  ;WORD_BIT;16;TCP;192.168.5.117;502;1; 4;3049;32;[RW]
+3;P;VAL2_DigOut_1   ;WORD_BIT; 1;TCP;192.168.5.117;502;1; 5;3049;32;[RW]
+3;P;VAL2_DigOut_2   ;WORD_BIT; 2;TCP;192.168.5.117;502;1; 5;3049;32;[RW]
+3;P;VAL2_DigOut_3   ;WORD_BIT; 3;TCP;192.168.5.117;502;1; 5;3049;32;[RW]
+3;P;VAL2_DigOut_4   ;WORD_BIT; 4;TCP;192.168.5.117;502;1; 5;3049;32;[RW]
+3;P;VAL2_DigOut_5   ;WORD_BIT; 5;TCP;192.168.5.117;502;1; 5;3049;32;[RW]
+3;P;VAL2_DigOut_6   ;WORD_BIT; 6;TCP;192.168.5.117;502;1; 5;3049;32;[RW]
+3;P;VAL2_DigOut_7   ;WORD_BIT; 7;TCP;192.168.5.117;502;1; 5;3049;32;[RW]
+3;P;VAL2_DigOut_8   ;WORD_BIT; 8;TCP;192.168.5.117;502;1; 5;3049;32;[RW]
+3;P;VAL2_DigOut_9   ;WORD_BIT; 9;TCP;192.168.5.117;502;1; 5;3049;32;[RW]
+3;P;VAL2_DigOut_10  ;WORD_BIT;10;TCP;192.168.5.117;502;1; 5;3049;32;[RW]
+3;P;VAL2_DigOut_11  ;WORD_BIT;11;TCP;192.168.5.117;502;1; 5;3049;32;[RW]
+3;P;VAL2_DigOut_12  ;WORD_BIT;12;TCP;192.168.5.117;502;1; 5;3049;32;[RW]
+3;P;VAL2_DigOut_13  ;WORD_BIT;13;TCP;192.168.5.117;502;1; 5;3049;32;[RW]
+3;P;VAL2_DigOut_14  ;WORD_BIT;14;TCP;192.168.5.117;502;1; 5;3049;32;[RW]
+3;P;VAL2_DigOut_15  ;WORD_BIT;15;TCP;192.168.5.117;502;1; 5;3049;32;[RW]
+3;P;VAL2_DigOut_16  ;WORD_BIT;16;TCP;192.168.5.117;502;1; 5;3049;32;[RW]
+2;P;RES2_DigOut_1   ;WORD_BIT; 1;TCP;192.168.5.117;502;1; 6;3081;16;[RO]
+2;P;RES2_DigOut_2   ;WORD_BIT; 2;TCP;192.168.5.117;502;1; 6;3081;16;[RO]
+2;P;RES2_DigOut_3   ;WORD_BIT; 3;TCP;192.168.5.117;502;1; 6;3081;16;[RO]
+2;P;RES2_DigOut_4   ;WORD_BIT; 4;TCP;192.168.5.117;502;1; 6;3081;16;[RO]
+2;P;RES2_DigOut_5   ;WORD_BIT; 5;TCP;192.168.5.117;502;1; 6;3081;16;[RO]
+2;P;RES2_DigOut_6   ;WORD_BIT; 6;TCP;192.168.5.117;502;1; 6;3081;16;[RO]
+2;P;RES2_DigOut_7   ;WORD_BIT; 7;TCP;192.168.5.117;502;1; 6;3081;16;[RO]
+2;P;RES2_DigOut_8   ;WORD_BIT; 8;TCP;192.168.5.117;502;1; 6;3081;16;[RO]
+2;P;RES2_DigOut_9   ;WORD_BIT; 9;TCP;192.168.5.117;502;1; 6;3081;16;[RO]
+2;P;RES2_DigOut_10  ;WORD_BIT;10;TCP;192.168.5.117;502;1; 6;3081;16;[RO]
+2;P;RES2_DigOut_11  ;WORD_BIT;11;TCP;192.168.5.117;502;1; 6;3081;16;[RO]
+2;P;RES2_DigOut_12  ;WORD_BIT;12;TCP;192.168.5.117;502;1; 6;3081;16;[RO]
+2;P;RES2_DigOut_13  ;WORD_BIT;13;TCP;192.168.5.117;502;1; 6;3081;16;[RO]
+2;P;RES2_DigOut_14  ;WORD_BIT;14;TCP;192.168.5.117;502;1; 6;3081;16;[RO]
+2;P;RES2_DigOut_15  ;WORD_BIT;15;TCP;192.168.5.117;502;1; 6;3081;16;[RO]
+2;P;RES2_DigOut_16  ;WORD_BIT;16;TCP;192.168.5.117;502;1; 6;3081;16;[RO]
+3;P;TST2_AnIn_1     ;WORD_BIT; 1;TCP;192.168.5.117;502;1; 7;3097;48;[RW]
+3;P;TST2_AnIn_2     ;WORD_BIT; 2;TCP;192.168.5.117;502;1; 7;3097;48;[RW]
+3;P;TST2_AnIn_3     ;WORD_BIT; 3;TCP;192.168.5.117;502;1; 7;3097;48;[RW]
+3;P;TST2_AnIn_4     ;WORD_BIT; 4;TCP;192.168.5.117;502;1; 7;3097;48;[RW]
+3;P;TST2_AnIn_5     ;WORD_BIT; 5;TCP;192.168.5.117;502;1; 7;3097;48;[RW]
+3;P;TST2_AnIn_6     ;WORD_BIT; 6;TCP;192.168.5.117;502;1; 7;3097;48;[RW]
+3;P;TST2_AnIn_7     ;WORD_BIT; 7;TCP;192.168.5.117;502;1; 7;3097;48;[RW]
+3;P;TST2_AnIn_8     ;WORD_BIT; 8;TCP;192.168.5.117;502;1; 7;3097;48;[RW]
+3;P;TST2_AnIn_9     ;WORD_BIT; 9;TCP;192.168.5.117;502;1; 7;3097;48;[RW]
+3;P;TST2_AnIn_10    ;WORD_BIT;10;TCP;192.168.5.117;502;1; 7;3097;48;[RW]
+3;P;TST2_AnIn_11    ;WORD_BIT;11;TCP;192.168.5.117;502;1; 7;3097;48;[RW]
+3;P;TST2_AnIn_12    ;WORD_BIT;12;TCP;192.168.5.117;502;1; 7;3097;48;[RW]
+3;P;VAL2_AnIn_1     ;INT     ; 3;TCP;192.168.5.117;502;1; 8;3097;48;[RW]
+3;P;VAL2_AnIn_2     ;INT     ; 3;TCP;192.168.5.117;502;1; 9;3097;48;[RW]
+3;P;VAL2_AnIn_3     ;INT     ; 3;TCP;192.168.5.117;502;1;10;3097;48;[RW]
+3;P;VAL2_AnIn_4     ;INT     ; 3;TCP;192.168.5.117;502;1;11;3097;48;[RW]
+3;P;VAL2_AnIn_5     ;INT     ; 3;TCP;192.168.5.117;502;1;12;3097;48;[RW]
+3;P;VAL2_AnIn_6     ;INT     ; 3;TCP;192.168.5.117;502;1;13;3097;48;[RW]
+3;P;VAL2_AnIn_7     ;INT     ; 3;TCP;192.168.5.117;502;1;14;3097;48;[RW]
+3;P;VAL2_AnIn_8     ;INT     ; 3;TCP;192.168.5.117;502;1;15;3097;48;[RW]
+3;P;VAL2_AnIn_9     ;INT     ; 3;TCP;192.168.5.117;502;1;16;3097;48;[RW]
+3;P;VAL2_AnIn_10    ;INT     ; 3;TCP;192.168.5.117;502;1;17;3097;48;[RW]
+3;P;VAL2_AnIn_11    ;INT     ; 3;TCP;192.168.5.117;502;1;18;3097;48;[RW]
+3;P;VAL2_AnIn_12    ;INT     ; 3;TCP;192.168.5.117;502;1;19;3097;48;[RW]
+3;P;VAL2_AnInConf_1 ;UINT    ; 0;TCP;192.168.5.117;502;1;20;3097;48;[RW]
+3;P;VAL2_AnInConf_2 ;UINT    ; 0;TCP;192.168.5.117;502;1;21;3097;48;[RW]
+3;P;VAL2_AnInConf_3 ;UINT    ; 0;TCP;192.168.5.117;502;1;22;3097;48;[RW]
+3;P;VAL2_AnInConf_4 ;UINT    ; 0;TCP;192.168.5.117;502;1;23;3097;48;[RW]
+3;P;VAL2_AnInConf_5 ;UINT    ; 0;TCP;192.168.5.117;502;1;24;3097;48;[RW]
+3;P;VAL2_AnInConf_6 ;UINT    ; 0;TCP;192.168.5.117;502;1;25;3097;48;[RW]
+3;P;VAL2_AnInConf_7 ;UINT    ; 0;TCP;192.168.5.117;502;1;26;3097;48;[RW]
+3;P;VAL2_AnInConf_8 ;UINT    ; 0;TCP;192.168.5.117;502;1;27;3097;48;[RW]
+3;P;VAL2_AnInConf_9 ;UINT    ; 0;TCP;192.168.5.117;502;1;28;3097;48;[RW]
+3;P;VAL2_AnInConf_10;UINT    ; 0;TCP;192.168.5.117;502;1;29;3097;48;[RW]
+3;P;VAL2_AnInConf_11;UINT    ; 0;TCP;192.168.5.117;502;1;30;3097;48;[RW]
+3;P;VAL2_AnInConf_12;UINT    ; 0;TCP;192.168.5.117;502;1;31;3097;48;[RW]
+3;P;VAL2_AnInFltr_1 ;UINT    ; 0;TCP;192.168.5.117;502;1;32;3097;48;[RW]
+3;P;VAL2_AnInFltr_2 ;UINT    ; 0;TCP;192.168.5.117;502;1;33;3097;48;[RW]
+3;P;VAL2_AnInFltr_3 ;UINT    ; 0;TCP;192.168.5.117;502;1;34;3097;48;[RW]
+3;P;VAL2_AnInFltr_4 ;UINT    ; 0;TCP;192.168.5.117;502;1;35;3097;48;[RW]
+3;P;VAL2_AnInFltr_5 ;UINT    ; 0;TCP;192.168.5.117;502;1;36;3097;48;[RW]
+3;P;VAL2_AnInFltr_6 ;UINT    ; 0;TCP;192.168.5.117;502;1;37;3097;48;[RW]
+3;P;VAL2_AnInFltr_7 ;UINT    ; 0;TCP;192.168.5.117;502;1;38;3097;48;[RW]
+3;P;VAL2_AnInFltr_8 ;UINT    ; 0;TCP;192.168.5.117;502;1;39;3097;48;[RW]
+3;P;VAL2_AnInFltr_9 ;UINT    ; 0;TCP;192.168.5.117;502;1;40;3097;48;[RW]
+3;P;VAL2_AnInFltr_10;UINT    ; 0;TCP;192.168.5.117;502;1;41;3097;48;[RW]
+3;P;VAL2_AnInFltr_11;UINT    ; 0;TCP;192.168.5.117;502;1;42;3097;48;[RW]
+3;P;VAL2_AnInFltr_12;UINT    ; 0;TCP;192.168.5.117;502;1;43;3097;48;[RW]
+2;P;RES2_AnIn_1     ;INT     ; 3;TCP;192.168.5.117;502;1;44;3145;24;[RO]
+2;P;RES2_AnIn_2     ;INT     ; 3;TCP;192.168.5.117;502;1;45;3145;24;[RO]
+2;P;RES2_AnIn_3     ;INT     ; 3;TCP;192.168.5.117;502;1;46;3145;24;[RO]
+2;P;RES2_AnIn_4     ;INT     ; 3;TCP;192.168.5.117;502;1;47;3145;24;[RO]
+2;P;RES2_AnIn_5     ;INT     ; 3;TCP;192.168.5.117;502;1;48;3145;24;[RO]
+2;P;RES2_AnIn_6     ;INT     ; 3;TCP;192.168.5.117;502;1;49;3145;24;[RO]
+2;P;RES2_AnIn_7     ;INT     ; 3;TCP;192.168.5.117;502;1;50;3145;24;[RO]
+2;P;RES2_AnIn_8     ;INT     ; 3;TCP;192.168.5.117;502;1;51;3145;24;[RO]
+2;P;RES2_AnIn_9     ;INT     ; 3;TCP;192.168.5.117;502;1;52;3145;24;[RO]
+2;P;RES2_AnIn_10    ;INT     ; 3;TCP;192.168.5.117;502;1;53;3145;24;[RO]
+2;P;RES2_AnIn_11    ;INT     ; 3;TCP;192.168.5.117;502;1;54;3145;24;[RO]
+2;P;RES2_AnIn_12    ;INT     ; 3;TCP;192.168.5.117;502;1;55;3145;24;[RO]
+2;P;RES2_AnInStts_1 ;INT     ; 3;TCP;192.168.5.117;502;1;56;3145;24;[RO]
+2;P;RES2_AnInStts_2 ;INT     ; 3;TCP;192.168.5.117;502;1;57;3145;24;[RO]
+2;P;RES2_AnInStts_3 ;INT     ; 3;TCP;192.168.5.117;502;1;58;3145;24;[RO]
+2;P;RES2_AnInStts_4 ;INT     ; 3;TCP;192.168.5.117;502;1;59;3145;24;[RO]
+2;P;RES2_AnInStts_5 ;INT     ; 3;TCP;192.168.5.117;502;1;60;3145;24;[RO]
+2;P;RES2_AnInStts_6 ;INT     ; 3;TCP;192.168.5.117;502;1;61;3145;24;[RO]
+2;P;RES2_AnInStts_7 ;INT     ; 3;TCP;192.168.5.117;502;1;62;3145;24;[RO]
+2;P;RES2_AnInStts_8 ;INT     ; 3;TCP;192.168.5.117;502;1;63;3145;24;[RO]
+2;P;RES2_AnInStts_9 ;INT     ; 3;TCP;192.168.5.117;502;1;64;3145;24;[RO]
+2;P;RES2_AnInStts_10;INT     ; 3;TCP;192.168.5.117;502;1;65;3145;24;[RO]
+2;P;RES2_AnInStts_11;INT     ; 3;TCP;192.168.5.117;502;1;66;3145;24;[RO]
+2;P;RES2_AnInStts_12;INT     ; 3;TCP;192.168.5.117;502;1;67;3145;24;[RO]
+3;P;TST2_AnOut_1    ;WORD_BIT; 1;TCP;192.168.5.117;502;1;68;3169;12;[RW]
+3;P;TST2_AnOut_2    ;WORD_BIT; 2;TCP;192.168.5.117;502;1;68;3169;12;[RW]
+3;P;TST2_AnOut_3    ;WORD_BIT; 3;TCP;192.168.5.117;502;1;68;3169;12;[RW]
+3;P;TST2_AnOut_4    ;WORD_BIT; 4;TCP;192.168.5.117;502;1;68;3169;12;[RW]
+3;P;VAL2_AnOut_1    ;INT     ; 2;TCP;192.168.5.117;502;1;69;3169;12;[RW]
+3;P;VAL2_AnOut_2    ;INT     ; 2;TCP;192.168.5.117;502;1;70;3169;12;[RW]
+3;P;VAL2_AnOut_3    ;INT     ; 2;TCP;192.168.5.117;502;1;71;3169;12;[RW]
+3;P;VAL2_AnOut_4    ;INT     ; 2;TCP;192.168.5.117;502;1;72;3169;12;[RW]
+3;P;VAL2_AnOutConf_1;UINT    ; 0;TCP;192.168.5.117;502;1;73;3169;12;[RW]
+3;P;VAL2_AnOutConf_2;UINT    ; 0;TCP;192.168.5.117;502;1;74;3169;12;[RW]
+3;P;VAL2_AnOutConf_3;UINT    ; 0;TCP;192.168.5.117;502;1;75;3169;12;[RW]
+3;P;VAL2_AnOutConf_4;UINT    ; 0;TCP;192.168.5.117;502;1;76;3169;12;[RW]
+2;P;RES2_AnOutStts_1;INT     ; 2;TCP;192.168.5.117;502;1;77;3181; 4;[RO]
+2;P;RES2_AnOutStts_2;INT     ; 2;TCP;192.168.5.117;502;1;78;3181; 4;[RO]
+2;P;RES2_AnOutStts_3;INT     ; 2;TCP;192.168.5.117;502;1;79;3181; 4;[RO]
+2;P;RES2_AnOutStts_4;INT     ; 2;TCP;192.168.5.117;502;1;80;3181; 4;[RO]
+3;P;TST2_Tamb       ;WORD_BIT; 1;TCP;192.168.5.117;502;1;81;3189; 8;[RW]
+3;P;TST2_RPM        ;WORD_BIT; 2;TCP;192.168.5.117;502;1;81;3189; 8;[RW]
+3;P;TST2_FWrevision ;WORD_BIT; 3;TCP;192.168.5.117;502;1;81;3189; 8;[RW]
+3;P;TST2_HWconfig   ;WORD_BIT; 4;TCP;192.168.5.117;502;1;81;3189; 8;[RW]
+3;P;VAL2_Tamb       ;INT     ; 1;TCP;192.168.5.117;502;1;82;3189; 8;[RW]
+3;P;VAL2_RPM        ;UINT    ; 0;TCP;192.168.5.117;502;1;83;3189; 8;[RW]
+3;P;VAL2_FWrevision ;UINT    ; 0;TCP;192.168.5.117;502;1;84;3189; 8;[RW]
+3;P;VAL2_HWconfig   ;UINT    ; 0;TCP;192.168.5.117;502;1;85;3189; 8;[RW]
+2;P;RES2_Tamb       ;INT     ; 1;TCP;192.168.5.117;502;1;86;3197; 4;[RO]
+2;P;RES2_RPM        ;UINT    ; 0;TCP;192.168.5.117;502;1;87;3197; 4;[RO]
+2;P;RES2_FWrevision ;UINT    ; 0;TCP;192.168.5.117;502;1;88;3197; 4;[RO]
+2;P;RES2_HWconfig   ;UINT    ; 0;TCP;192.168.5.117;502;1;89;3197; 4;[RO]
+3;P;TST2_RTUS_WR    ;WORD_BIT; 1;TCP;192.168.5.117;502;1;90;3201;16;[RW]
+3;P;TST2_RTUS_RD    ;WORD_BIT; 2;TCP;192.168.5.117;502;1;90;3201;16;[RW]
+3;P;TST2_RTU1_WR    ;WORD_BIT; 3;TCP;192.168.5.117;502;1;90;3201;16;[RW]
+3;P;TST2_RTU1_RD    ;WORD_BIT; 4;TCP;192.168.5.117;502;1;90;3201;16;[RW]
+3;P;TST2_RTU3_WR    ;WORD_BIT; 5;TCP;192.168.5.117;502;1;90;3201;16;[RW]
+3;P;TST2_RTU3_RD    ;WORD_BIT; 6;TCP;192.168.5.117;502;1;90;3201;16;[RW]
+3;P;TST2_CAN1_WR    ;WORD_BIT; 7;TCP;192.168.5.117;502;1;90;3201;16;[RW]
+3;P;TST2_CAN1_RD    ;WORD_BIT; 8;TCP;192.168.5.117;502;1;90;3201;16;[RW]
+3;P;VAL2_RTUS_WR    ;WORD_BIT; 1;TCP;192.168.5.117;502;1;91;3201;16;[RW]
+3;P;VAL2_RTUS_RD    ;WORD_BIT; 2;TCP;192.168.5.117;502;1;91;3201;16;[RW]
+3;P;VAL2_RTU1_WR    ;WORD_BIT; 3;TCP;192.168.5.117;502;1;91;3201;16;[RW]
+3;P;VAL2_RTU1_RD    ;WORD_BIT; 4;TCP;192.168.5.117;502;1;91;3201;16;[RW]
+3;P;VAL2_RTU3_WR    ;WORD_BIT; 5;TCP;192.168.5.117;502;1;91;3201;16;[RW]
+3;P;VAL2_RTU3_RD    ;WORD_BIT; 6;TCP;192.168.5.117;502;1;91;3201;16;[RW]
+3;P;VAL2_CAN1_WR    ;WORD_BIT; 7;TCP;192.168.5.117;502;1;91;3201;16;[RW]
+3;P;VAL2_CAN1_RD    ;WORD_BIT; 8;TCP;192.168.5.117;502;1;91;3201;16;[RW]
+2;P;RES2_RTUS_WR    ;WORD_BIT; 1;TCP;192.168.5.117;502;1;92;3217; 8;[RW]
+2;P;RES2_RTUS_RD    ;WORD_BIT; 2;TCP;192.168.5.117;502;1;92;3217; 8;[RW]
+2;P;RES2_RTU1_WR    ;WORD_BIT; 3;TCP;192.168.5.117;502;1;92;3217; 8;[RW]
+2;P;RES2_RTU1_RD    ;WORD_BIT; 4;TCP;192.168.5.117;502;1;92;3217; 8;[RW]
+2;P;RES2_RTU3_WR    ;WORD_BIT; 5;TCP;192.168.5.117;502;1;92;3217; 8;[RW]
+2;P;RES2_RTU3_RD    ;WORD_BIT; 6;TCP;192.168.5.117;502;1;92;3217; 8;[RW]
+2;P;RES2_CAN1_WR    ;WORD_BIT; 7;TCP;192.168.5.117;502;1;92;3217; 8;[RW]
+2;P;RES2_CAN1_RD    ;WORD_BIT; 8;TCP;192.168.5.117;502;1;92;3217; 8;[RW]
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
@@ -3246,6 +3994,230 @@
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
+2;P;TESTINGx        ;BYTE_BIT; 8;TCP;192.168.5.211;502;1; 0;4000; 4;[RW]
+2;P;RESETx          ;BYTE_BIT; 1;TCP;192.168.5.211;502;1; 0;4000; 4;[RW]
+2;P;STARTx          ;BYTE_BIT; 2;TCP;192.168.5.211;502;1; 0;4000; 4;[RW]
+2;P;STOPx           ;BYTE_BIT; 3;TCP;192.168.5.211;502;1; 0;4000; 4;[RW]
+3;P;TSTx_DigIn_1    ;WORD_BIT; 1;TCP;192.168.5.211;502;1; 1;4001;32;[RW]
+3;P;TSTx_DigIn_2    ;WORD_BIT; 2;TCP;192.168.5.211;502;1; 1;4001;32;[RW]
+3;P;TSTx_DigIn_3    ;WORD_BIT; 3;TCP;192.168.5.211;502;1; 1;4001;32;[RW]
+3;P;TSTx_DigIn_4    ;WORD_BIT; 4;TCP;192.168.5.211;502;1; 1;4001;32;[RW]
+3;P;TSTx_DigIn_5    ;WORD_BIT; 5;TCP;192.168.5.211;502;1; 1;4001;32;[RW]
+3;P;TSTx_DigIn_6    ;WORD_BIT; 6;TCP;192.168.5.211;502;1; 1;4001;32;[RW]
+3;P;TSTx_DigIn_7    ;WORD_BIT; 7;TCP;192.168.5.211;502;1; 1;4001;32;[RW]
+3;P;TSTx_DigIn_8    ;WORD_BIT; 8;TCP;192.168.5.211;502;1; 1;4001;32;[RW]
+3;P;TSTx_DigIn_9    ;WORD_BIT; 9;TCP;192.168.5.211;502;1; 1;4001;32;[RW]
+3;P;TSTx_DigIn_10   ;WORD_BIT;10;TCP;192.168.5.211;502;1; 1;4001;32;[RW]
+3;P;TSTx_DigIn_11   ;WORD_BIT;11;TCP;192.168.5.211;502;1; 1;4001;32;[RW]
+3;P;TSTx_DigIn_12   ;WORD_BIT;12;TCP;192.168.5.211;502;1; 1;4001;32;[RW]
+3;P;TSTx_DigIn_13   ;WORD_BIT;13;TCP;192.168.5.211;502;1; 1;4001;32;[RW]
+3;P;TSTx_DigIn_14   ;WORD_BIT;14;TCP;192.168.5.211;502;1; 1;4001;32;[RW]
+3;P;TSTx_DigIn_15   ;WORD_BIT;15;TCP;192.168.5.211;502;1; 1;4001;32;[RW]
+3;P;TSTx_DigIn_16   ;WORD_BIT;16;TCP;192.168.5.211;502;1; 1;4001;32;[RW]
+3;P;VALx_DigIn_1    ;WORD_BIT; 1;TCP;192.168.5.211;502;1; 2;4001;32;[RW]
+3;P;VALx_DigIn_2    ;WORD_BIT; 2;TCP;192.168.5.211;502;1; 2;4001;32;[RW]
+3;P;VALx_DigIn_3    ;WORD_BIT; 3;TCP;192.168.5.211;502;1; 2;4001;32;[RW]
+3;P;VALx_DigIn_4    ;WORD_BIT; 4;TCP;192.168.5.211;502;1; 2;4001;32;[RW]
+3;P;VALx_DigIn_5    ;WORD_BIT; 5;TCP;192.168.5.211;502;1; 2;4001;32;[RW]
+3;P;VALx_DigIn_6    ;WORD_BIT; 6;TCP;192.168.5.211;502;1; 2;4001;32;[RW]
+3;P;VALx_DigIn_7    ;WORD_BIT; 7;TCP;192.168.5.211;502;1; 2;4001;32;[RW]
+3;P;VALx_DigIn_8    ;WORD_BIT; 8;TCP;192.168.5.211;502;1; 2;4001;32;[RW]
+3;P;VALx_DigIn_9    ;WORD_BIT; 9;TCP;192.168.5.211;502;1; 2;4001;32;[RW]
+3;P;VALx_DigIn_10   ;WORD_BIT;10;TCP;192.168.5.211;502;1; 2;4001;32;[RW]
+3;P;VALx_DigIn_11   ;WORD_BIT;11;TCP;192.168.5.211;502;1; 2;4001;32;[RW]
+3;P;VALx_DigIn_12   ;WORD_BIT;12;TCP;192.168.5.211;502;1; 2;4001;32;[RW]
+3;P;VALx_DigIn_13   ;WORD_BIT;13;TCP;192.168.5.211;502;1; 2;4001;32;[RW]
+3;P;VALx_DigIn_14   ;WORD_BIT;14;TCP;192.168.5.211;502;1; 2;4001;32;[RW]
+3;P;VALx_DigIn_15   ;WORD_BIT;15;TCP;192.168.5.211;502;1; 2;4001;32;[RW]
+3;P;VALx_DigIn_16   ;WORD_BIT;16;TCP;192.168.5.211;502;1; 2;4001;32;[RW]
+2;P;RESx_DigIn_1    ;WORD_BIT; 1;TCP;192.168.5.211;502;1; 3;4033;16;[RO]
+2;P;RESx_DigIn_2    ;WORD_BIT; 2;TCP;192.168.5.211;502;1; 3;4033;16;[RO]
+2;P;RESx_DigIn_3    ;WORD_BIT; 3;TCP;192.168.5.211;502;1; 3;4033;16;[RO]
+2;P;RESx_DigIn_4    ;WORD_BIT; 4;TCP;192.168.5.211;502;1; 3;4033;16;[RO]
+2;P;RESx_DigIn_5    ;WORD_BIT; 5;TCP;192.168.5.211;502;1; 3;4033;16;[RO]
+2;P;RESx_DigIn_6    ;WORD_BIT; 6;TCP;192.168.5.211;502;1; 3;4033;16;[RO]
+2;P;RESx_DigIn_7    ;WORD_BIT; 7;TCP;192.168.5.211;502;1; 3;4033;16;[RO]
+2;P;RESx_DigIn_8    ;WORD_BIT; 8;TCP;192.168.5.211;502;1; 3;4033;16;[RO]
+2;P;RESx_DigIn_9    ;WORD_BIT; 9;TCP;192.168.5.211;502;1; 3;4033;16;[RO]
+2;P;RESx_DigIn_10   ;WORD_BIT;10;TCP;192.168.5.211;502;1; 3;4033;16;[RO]
+2;P;RESx_DigIn_11   ;WORD_BIT;11;TCP;192.168.5.211;502;1; 3;4033;16;[RO]
+2;P;RESx_DigIn_12   ;WORD_BIT;12;TCP;192.168.5.211;502;1; 3;4033;16;[RO]
+2;P;RESx_DigIn_13   ;WORD_BIT;13;TCP;192.168.5.211;502;1; 3;4033;16;[RO]
+2;P;RESx_DigIn_14   ;WORD_BIT;14;TCP;192.168.5.211;502;1; 3;4033;16;[RO]
+2;P;RESx_DigIn_15   ;WORD_BIT;15;TCP;192.168.5.211;502;1; 3;4033;16;[RO]
+2;P;RESx_DigIn_16   ;WORD_BIT;16;TCP;192.168.5.211;502;1; 3;4033;16;[RO]
+3;P;TSTx_DigOut_1   ;WORD_BIT; 1;TCP;192.168.5.211;502;1; 4;4049;32;[RW]
+3;P;TSTx_DigOut_2   ;WORD_BIT; 2;TCP;192.168.5.211;502;1; 4;4049;32;[RW]
+3;P;TSTx_DigOut_3   ;WORD_BIT; 3;TCP;192.168.5.211;502;1; 4;4049;32;[RW]
+3;P;TSTx_DigOut_4   ;WORD_BIT; 4;TCP;192.168.5.211;502;1; 4;4049;32;[RW]
+3;P;TSTx_DigOut_5   ;WORD_BIT; 5;TCP;192.168.5.211;502;1; 4;4049;32;[RW]
+3;P;TSTx_DigOut_6   ;WORD_BIT; 6;TCP;192.168.5.211;502;1; 4;4049;32;[RW]
+3;P;TSTx_DigOut_7   ;WORD_BIT; 7;TCP;192.168.5.211;502;1; 4;4049;32;[RW]
+3;P;TSTx_DigOut_8   ;WORD_BIT; 8;TCP;192.168.5.211;502;1; 4;4049;32;[RW]
+3;P;TSTx_DigOut_9   ;WORD_BIT; 9;TCP;192.168.5.211;502;1; 4;4049;32;[RW]
+3;P;TSTx_DigOut_10  ;WORD_BIT;10;TCP;192.168.5.211;502;1; 4;4049;32;[RW]
+3;P;TSTx_DigOut_11  ;WORD_BIT;11;TCP;192.168.5.211;502;1; 4;4049;32;[RW]
+3;P;TSTx_DigOut_12  ;WORD_BIT;12;TCP;192.168.5.211;502;1; 4;4049;32;[RW]
+3;P;TSTx_DigOut_13  ;WORD_BIT;13;TCP;192.168.5.211;502;1; 4;4049;32;[RW]
+3;P;TSTx_DigOut_14  ;WORD_BIT;14;TCP;192.168.5.211;502;1; 4;4049;32;[RW]
+3;P;TSTx_DigOut_15  ;WORD_BIT;15;TCP;192.168.5.211;502;1; 4;4049;32;[RW]
+3;P;TSTx_DigOut_16  ;WORD_BIT;16;TCP;192.168.5.211;502;1; 4;4049;32;[RW]
+3;P;VALx_DigOut_1   ;WORD_BIT; 1;TCP;192.168.5.211;502;1; 5;4049;32;[RW]
+3;P;VALx_DigOut_2   ;WORD_BIT; 2;TCP;192.168.5.211;502;1; 5;4049;32;[RW]
+3;P;VALx_DigOut_3   ;WORD_BIT; 3;TCP;192.168.5.211;502;1; 5;4049;32;[RW]
+3;P;VALx_DigOut_4   ;WORD_BIT; 4;TCP;192.168.5.211;502;1; 5;4049;32;[RW]
+3;P;VALx_DigOut_5   ;WORD_BIT; 5;TCP;192.168.5.211;502;1; 5;4049;32;[RW]
+3;P;VALx_DigOut_6   ;WORD_BIT; 6;TCP;192.168.5.211;502;1; 5;4049;32;[RW]
+3;P;VALx_DigOut_7   ;WORD_BIT; 7;TCP;192.168.5.211;502;1; 5;4049;32;[RW]
+3;P;VALx_DigOut_8   ;WORD_BIT; 8;TCP;192.168.5.211;502;1; 5;4049;32;[RW]
+3;P;VALx_DigOut_9   ;WORD_BIT; 9;TCP;192.168.5.211;502;1; 5;4049;32;[RW]
+3;P;VALx_DigOut_10  ;WORD_BIT;10;TCP;192.168.5.211;502;1; 5;4049;32;[RW]
+3;P;VALx_DigOut_11  ;WORD_BIT;11;TCP;192.168.5.211;502;1; 5;4049;32;[RW]
+3;P;VALx_DigOut_12  ;WORD_BIT;12;TCP;192.168.5.211;502;1; 5;4049;32;[RW]
+3;P;VALx_DigOut_13  ;WORD_BIT;13;TCP;192.168.5.211;502;1; 5;4049;32;[RW]
+3;P;VALx_DigOut_14  ;WORD_BIT;14;TCP;192.168.5.211;502;1; 5;4049;32;[RW]
+3;P;VALx_DigOut_15  ;WORD_BIT;15;TCP;192.168.5.211;502;1; 5;4049;32;[RW]
+3;P;VALx_DigOut_16  ;WORD_BIT;16;TCP;192.168.5.211;502;1; 5;4049;32;[RW]
+2;P;RESx_DigOut_1   ;WORD_BIT; 1;TCP;192.168.5.211;502;1; 6;4081;16;[RO]
+2;P;RESx_DigOut_2   ;WORD_BIT; 2;TCP;192.168.5.211;502;1; 6;4081;16;[RO]
+2;P;RESx_DigOut_3   ;WORD_BIT; 3;TCP;192.168.5.211;502;1; 6;4081;16;[RO]
+2;P;RESx_DigOut_4   ;WORD_BIT; 4;TCP;192.168.5.211;502;1; 6;4081;16;[RO]
+2;P;RESx_DigOut_5   ;WORD_BIT; 5;TCP;192.168.5.211;502;1; 6;4081;16;[RO]
+2;P;RESx_DigOut_6   ;WORD_BIT; 6;TCP;192.168.5.211;502;1; 6;4081;16;[RO]
+2;P;RESx_DigOut_7   ;WORD_BIT; 7;TCP;192.168.5.211;502;1; 6;4081;16;[RO]
+2;P;RESx_DigOut_8   ;WORD_BIT; 8;TCP;192.168.5.211;502;1; 6;4081;16;[RO]
+2;P;RESx_DigOut_9   ;WORD_BIT; 9;TCP;192.168.5.211;502;1; 6;4081;16;[RO]
+2;P;RESx_DigOut_10  ;WORD_BIT;10;TCP;192.168.5.211;502;1; 6;4081;16;[RO]
+2;P;RESx_DigOut_11  ;WORD_BIT;11;TCP;192.168.5.211;502;1; 6;4081;16;[RO]
+2;P;RESx_DigOut_12  ;WORD_BIT;12;TCP;192.168.5.211;502;1; 6;4081;16;[RO]
+2;P;RESx_DigOut_13  ;WORD_BIT;13;TCP;192.168.5.211;502;1; 6;4081;16;[RO]
+2;P;RESx_DigOut_14  ;WORD_BIT;14;TCP;192.168.5.211;502;1; 6;4081;16;[RO]
+2;P;RESx_DigOut_15  ;WORD_BIT;15;TCP;192.168.5.211;502;1; 6;4081;16;[RO]
+2;P;RESx_DigOut_16  ;WORD_BIT;16;TCP;192.168.5.211;502;1; 6;4081;16;[RO]
+3;P;TSTx_AnIn_1     ;WORD_BIT; 1;TCP;192.168.5.211;502;1; 7;4097;48;[RW]
+3;P;TSTx_AnIn_2     ;WORD_BIT; 2;TCP;192.168.5.211;502;1; 7;4097;48;[RW]
+3;P;TSTx_AnIn_3     ;WORD_BIT; 3;TCP;192.168.5.211;502;1; 7;4097;48;[RW]
+3;P;TSTx_AnIn_4     ;WORD_BIT; 4;TCP;192.168.5.211;502;1; 7;4097;48;[RW]
+3;P;TSTx_AnIn_5     ;WORD_BIT; 5;TCP;192.168.5.211;502;1; 7;4097;48;[RW]
+3;P;TSTx_AnIn_6     ;WORD_BIT; 6;TCP;192.168.5.211;502;1; 7;4097;48;[RW]
+3;P;TSTx_AnIn_7     ;WORD_BIT; 7;TCP;192.168.5.211;502;1; 7;4097;48;[RW]
+3;P;TSTx_AnIn_8     ;WORD_BIT; 8;TCP;192.168.5.211;502;1; 7;4097;48;[RW]
+3;P;TSTx_AnIn_9     ;WORD_BIT; 9;TCP;192.168.5.211;502;1; 7;4097;48;[RW]
+3;P;TSTx_AnIn_10    ;WORD_BIT;10;TCP;192.168.5.211;502;1; 7;4097;48;[RW]
+3;P;TSTx_AnIn_11    ;WORD_BIT;11;TCP;192.168.5.211;502;1; 7;4097;48;[RW]
+3;P;TSTx_AnIn_12    ;WORD_BIT;12;TCP;192.168.5.211;502;1; 7;4097;48;[RW]
+3;P;VALx_AnIn_1     ;INT     ; 3;TCP;192.168.5.211;502;1; 8;4097;48;[RW]
+3;P;VALx_AnIn_2     ;INT     ; 3;TCP;192.168.5.211;502;1; 9;4097;48;[RW]
+3;P;VALx_AnIn_3     ;INT     ; 3;TCP;192.168.5.211;502;1;10;4097;48;[RW]
+3;P;VALx_AnIn_4     ;INT     ; 3;TCP;192.168.5.211;502;1;11;4097;48;[RW]
+3;P;VALx_AnIn_5     ;INT     ; 3;TCP;192.168.5.211;502;1;12;4097;48;[RW]
+3;P;VALx_AnIn_6     ;INT     ; 3;TCP;192.168.5.211;502;1;13;4097;48;[RW]
+3;P;VALx_AnIn_7     ;INT     ; 3;TCP;192.168.5.211;502;1;14;4097;48;[RW]
+3;P;VALx_AnIn_8     ;INT     ; 3;TCP;192.168.5.211;502;1;15;4097;48;[RW]
+3;P;VALx_AnIn_9     ;INT     ; 3;TCP;192.168.5.211;502;1;16;4097;48;[RW]
+3;P;VALx_AnIn_10    ;INT     ; 3;TCP;192.168.5.211;502;1;17;4097;48;[RW]
+3;P;VALx_AnIn_11    ;INT     ; 3;TCP;192.168.5.211;502;1;18;4097;48;[RW]
+3;P;VALx_AnIn_12    ;INT     ; 3;TCP;192.168.5.211;502;1;19;4097;48;[RW]
+3;P;VALx_AnInConf_1 ;UINT    ; 0;TCP;192.168.5.211;502;1;20;4097;48;[RW]
+3;P;VALx_AnInConf_2 ;UINT    ; 0;TCP;192.168.5.211;502;1;21;4097;48;[RW]
+3;P;VALx_AnInConf_3 ;UINT    ; 0;TCP;192.168.5.211;502;1;22;4097;48;[RW]
+3;P;VALx_AnInConf_4 ;UINT    ; 0;TCP;192.168.5.211;502;1;23;4097;48;[RW]
+3;P;VALx_AnInConf_5 ;UINT    ; 0;TCP;192.168.5.211;502;1;24;4097;48;[RW]
+3;P;VALx_AnInConf_6 ;UINT    ; 0;TCP;192.168.5.211;502;1;25;4097;48;[RW]
+3;P;VALx_AnInConf_7 ;UINT    ; 0;TCP;192.168.5.211;502;1;26;4097;48;[RW]
+3;P;VALx_AnInConf_8 ;UINT    ; 0;TCP;192.168.5.211;502;1;27;4097;48;[RW]
+3;P;VALx_AnInConf_9 ;UINT    ; 0;TCP;192.168.5.211;502;1;28;4097;48;[RW]
+3;P;VALx_AnInConf_10;UINT    ; 0;TCP;192.168.5.211;502;1;29;4097;48;[RW]
+3;P;VALx_AnInConf_11;UINT    ; 0;TCP;192.168.5.211;502;1;30;4097;48;[RW]
+3;P;VALx_AnInConf_12;UINT    ; 0;TCP;192.168.5.211;502;1;31;4097;48;[RW]
+3;P;VALx_AnInFltr_1 ;UINT    ; 0;TCP;192.168.5.211;502;1;32;4097;48;[RW]
+3;P;VALx_AnInFltr_2 ;UINT    ; 0;TCP;192.168.5.211;502;1;33;4097;48;[RW]
+3;P;VALx_AnInFltr_3 ;UINT    ; 0;TCP;192.168.5.211;502;1;34;4097;48;[RW]
+3;P;VALx_AnInFltr_4 ;UINT    ; 0;TCP;192.168.5.211;502;1;35;4097;48;[RW]
+3;P;VALx_AnInFltr_5 ;UINT    ; 0;TCP;192.168.5.211;502;1;36;4097;48;[RW]
+3;P;VALx_AnInFltr_6 ;UINT    ; 0;TCP;192.168.5.211;502;1;37;4097;48;[RW]
+3;P;VALx_AnInFltr_7 ;UINT    ; 0;TCP;192.168.5.211;502;1;38;4097;48;[RW]
+3;P;VALx_AnInFltr_8 ;UINT    ; 0;TCP;192.168.5.211;502;1;39;4097;48;[RW]
+3;P;VALx_AnInFltr_9 ;UINT    ; 0;TCP;192.168.5.211;502;1;40;4097;48;[RW]
+3;P;VALx_AnInFltr_10;UINT    ; 0;TCP;192.168.5.211;502;1;41;4097;48;[RW]
+3;P;VALx_AnInFltr_11;UINT    ; 0;TCP;192.168.5.211;502;1;42;4097;48;[RW]
+3;P;VALx_AnInFltr_12;UINT    ; 0;TCP;192.168.5.211;502;1;43;4097;48;[RW]
+2;P;RESx_AnIn_1     ;INT     ; 3;TCP;192.168.5.211;502;1;44;4145;24;[RO]
+2;P;RESx_AnIn_2     ;INT     ; 3;TCP;192.168.5.211;502;1;45;4145;24;[RO]
+2;P;RESx_AnIn_3     ;INT     ; 3;TCP;192.168.5.211;502;1;46;4145;24;[RO]
+2;P;RESx_AnIn_4     ;INT     ; 3;TCP;192.168.5.211;502;1;47;4145;24;[RO]
+2;P;RESx_AnIn_5     ;INT     ; 3;TCP;192.168.5.211;502;1;48;4145;24;[RO]
+2;P;RESx_AnIn_6     ;INT     ; 3;TCP;192.168.5.211;502;1;49;4145;24;[RO]
+2;P;RESx_AnIn_7     ;INT     ; 3;TCP;192.168.5.211;502;1;50;4145;24;[RO]
+2;P;RESx_AnIn_8     ;INT     ; 3;TCP;192.168.5.211;502;1;51;4145;24;[RO]
+2;P;RESx_AnIn_9     ;INT     ; 3;TCP;192.168.5.211;502;1;52;4145;24;[RO]
+2;P;RESx_AnIn_10    ;INT     ; 3;TCP;192.168.5.211;502;1;53;4145;24;[RO]
+2;P;RESx_AnIn_11    ;INT     ; 3;TCP;192.168.5.211;502;1;54;4145;24;[RO]
+2;P;RESx_AnIn_12    ;INT     ; 3;TCP;192.168.5.211;502;1;55;4145;24;[RO]
+2;P;RESx_AnInStts_1 ;INT     ; 3;TCP;192.168.5.211;502;1;56;4145;24;[RO]
+2;P;RESx_AnInStts_2 ;INT     ; 3;TCP;192.168.5.211;502;1;57;4145;24;[RO]
+2;P;RESx_AnInStts_3 ;INT     ; 3;TCP;192.168.5.211;502;1;58;4145;24;[RO]
+2;P;RESx_AnInStts_4 ;INT     ; 3;TCP;192.168.5.211;502;1;59;4145;24;[RO]
+2;P;RESx_AnInStts_5 ;INT     ; 3;TCP;192.168.5.211;502;1;60;4145;24;[RO]
+2;P;RESx_AnInStts_6 ;INT     ; 3;TCP;192.168.5.211;502;1;61;4145;24;[RO]
+2;P;RESx_AnInStts_7 ;INT     ; 3;TCP;192.168.5.211;502;1;62;4145;24;[RO]
+2;P;RESx_AnInStts_8 ;INT     ; 3;TCP;192.168.5.211;502;1;63;4145;24;[RO]
+2;P;RESx_AnInStts_9 ;INT     ; 3;TCP;192.168.5.211;502;1;64;4145;24;[RO]
+2;P;RESx_AnInStts_10;INT     ; 3;TCP;192.168.5.211;502;1;65;4145;24;[RO]
+2;P;RESx_AnInStts_11;INT     ; 3;TCP;192.168.5.211;502;1;66;4145;24;[RO]
+2;P;RESx_AnInStts_12;INT     ; 3;TCP;192.168.5.211;502;1;67;4145;24;[RO]
+3;P;TSTx_AnOut_1    ;WORD_BIT; 1;TCP;192.168.5.211;502;1;68;4169;12;[RW]
+3;P;TSTx_AnOut_2    ;WORD_BIT; 2;TCP;192.168.5.211;502;1;68;4169;12;[RW]
+3;P;TSTx_AnOut_3    ;WORD_BIT; 3;TCP;192.168.5.211;502;1;68;4169;12;[RW]
+3;P;TSTx_AnOut_4    ;WORD_BIT; 4;TCP;192.168.5.211;502;1;68;4169;12;[RW]
+3;P;VALx_AnOut_1    ;INT     ; 2;TCP;192.168.5.211;502;1;69;4169;12;[RW]
+3;P;VALx_AnOut_2    ;INT     ; 2;TCP;192.168.5.211;502;1;70;4169;12;[RW]
+3;P;VALx_AnOut_3    ;INT     ; 2;TCP;192.168.5.211;502;1;71;4169;12;[RW]
+3;P;VALx_AnOut_4    ;INT     ; 2;TCP;192.168.5.211;502;1;72;4169;12;[RW]
+3;P;VALx_AnOutConf_1;UINT    ; 0;TCP;192.168.5.211;502;1;73;4169;12;[RW]
+3;P;VALx_AnOutConf_2;UINT    ; 0;TCP;192.168.5.211;502;1;74;4169;12;[RW]
+3;P;VALx_AnOutConf_3;UINT    ; 0;TCP;192.168.5.211;502;1;75;4169;12;[RW]
+3;P;VALx_AnOutConf_4;UINT    ; 0;TCP;192.168.5.211;502;1;76;4169;12;[RW]
+2;P;RESx_AnOutStts_1;INT     ; 2;TCP;192.168.5.211;502;1;77;4181; 4;[RO]
+2;P;RESx_AnOutStts_2;INT     ; 2;TCP;192.168.5.211;502;1;78;4181; 4;[RO]
+2;P;RESx_AnOutStts_3;INT     ; 2;TCP;192.168.5.211;502;1;79;4181; 4;[RO]
+2;P;RESx_AnOutStts_4;INT     ; 2;TCP;192.168.5.211;502;1;80;4181; 4;[RO]
+3;P;TSTx_Tamb       ;WORD_BIT; 1;TCP;192.168.5.211;502;1;81;4189; 8;[RW]
+3;P;TSTx_RPM        ;WORD_BIT; 2;TCP;192.168.5.211;502;1;81;4189; 8;[RW]
+3;P;TSTx_FWrevision ;WORD_BIT; 3;TCP;192.168.5.211;502;1;81;4189; 8;[RW]
+3;P;TSTx_HWconfig   ;WORD_BIT; 4;TCP;192.168.5.211;502;1;81;4189; 8;[RW]
+3;P;VALx_Tamb       ;INT     ; 1;TCP;192.168.5.211;502;1;82;4189; 8;[RW]
+3;P;VALx_RPM        ;UINT    ; 0;TCP;192.168.5.211;502;1;83;4189; 8;[RW]
+3;P;VALx_FWrevision ;UINT    ; 0;TCP;192.168.5.211;502;1;84;4189; 8;[RW]
+3;P;VALx_HWconfig   ;UINT    ; 0;TCP;192.168.5.211;502;1;85;4189; 8;[RW]
+2;P;RESx_Tamb       ;INT     ; 1;TCP;192.168.5.211;502;1;86;4197; 4;[RO]
+2;P;RESx_RPM        ;UINT    ; 0;TCP;192.168.5.211;502;1;87;4197; 4;[RO]
+2;P;RESx_FWrevision ;UINT    ; 0;TCP;192.168.5.211;502;1;88;4197; 4;[RO]
+2;P;RESx_HWconfig   ;UINT    ; 0;TCP;192.168.5.211;502;1;89;4197; 4;[RO]
+3;P;TSTx_RTUS_WR    ;WORD_BIT; 1;TCP;192.168.5.211;502;1;90;4201;16;[RW]
+3;P;TSTx_RTUS_RD    ;WORD_BIT; 2;TCP;192.168.5.211;502;1;90;4201;16;[RW]
+3;P;TSTx_RTU1_WR    ;WORD_BIT; 3;TCP;192.168.5.211;502;1;90;4201;16;[RW]
+3;P;TSTx_RTU1_RD    ;WORD_BIT; 4;TCP;192.168.5.211;502;1;90;4201;16;[RW]
+3;P;TSTx_RTU3_WR    ;WORD_BIT; 5;TCP;192.168.5.211;502;1;90;4201;16;[RW]
+3;P;TSTx_RTU3_RD    ;WORD_BIT; 6;TCP;192.168.5.211;502;1;90;4201;16;[RW]
+3;P;TSTx_CAN1_WR    ;WORD_BIT; 7;TCP;192.168.5.211;502;1;90;4201;16;[RW]
+3;P;TSTx_CAN1_RD    ;WORD_BIT; 8;TCP;192.168.5.211;502;1;90;4201;16;[RW]
+3;P;VALx_RTUS_WR    ;WORD_BIT; 1;TCP;192.168.5.211;502;1;91;4201;16;[RW]
+3;P;VALx_RTUS_RD    ;WORD_BIT; 2;TCP;192.168.5.211;502;1;91;4201;16;[RW]
+3;P;VALx_RTU1_WR    ;WORD_BIT; 3;TCP;192.168.5.211;502;1;91;4201;16;[RW]
+3;P;VALx_RTU1_RD    ;WORD_BIT; 4;TCP;192.168.5.211;502;1;91;4201;16;[RW]
+3;P;VALx_RTU3_WR    ;WORD_BIT; 5;TCP;192.168.5.211;502;1;91;4201;16;[RW]
+3;P;VALx_RTU3_RD    ;WORD_BIT; 6;TCP;192.168.5.211;502;1;91;4201;16;[RW]
+3;P;VALx_CAN1_WR    ;WORD_BIT; 7;TCP;192.168.5.211;502;1;91;4201;16;[RW]
+3;P;VALx_CAN1_RD    ;WORD_BIT; 8;TCP;192.168.5.211;502;1;91;4201;16;[RW]
+2;P;RESx_RTUS_WR    ;WORD_BIT; 1;TCP;192.168.5.211;502;1;92;4217; 8;[RW]
+2;P;RESx_RTUS_RD    ;WORD_BIT; 2;TCP;192.168.5.211;502;1;92;4217; 8;[RW]
+2;P;RESx_RTU1_WR    ;WORD_BIT; 3;TCP;192.168.5.211;502;1;92;4217; 8;[RW]
+2;P;RESx_RTU1_RD    ;WORD_BIT; 4;TCP;192.168.5.211;502;1;92;4217; 8;[RW]
+2;P;RESx_RTU3_WR    ;WORD_BIT; 5;TCP;192.168.5.211;502;1;92;4217; 8;[RW]
+2;P;RESx_RTU3_RD    ;WORD_BIT; 6;TCP;192.168.5.211;502;1;92;4217; 8;[RW]
+2;P;RESx_CAN1_WR    ;WORD_BIT; 7;TCP;192.168.5.211;502;1;92;4217; 8;[RW]
+2;P;RESx_CAN1_RD    ;WORD_BIT; 8;TCP;192.168.5.211;502;1;92;4217; 8;[RW]
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
@@ -3314,978 +4286,6 @@
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-2;P;RESET;BYTE_BIT;1;TCP_SRV;0.0.0.0;502;1;0;4000;3;[RW]
-2;P;START;BYTE_BIT;2;TCP_SRV;0.0.0.0;502;1;0;4000;3;[RW]
-2;P;STOP;BYTE_BIT;3;TCP_SRV;0.0.0.0;502;1;0;4000;3;[RW]
-3;P;TST_DigIn_1;WORD_BIT;1;TCP_SRV;0.0.0.0;502;1;1;4001;32;[RW]
-3;P;TST_DigIn_2;WORD_BIT;2;TCP_SRV;0.0.0.0;502;1;1;4001;32;[RW]
-3;P;TST_DigIn_3;WORD_BIT;3;TCP_SRV;0.0.0.0;502;1;1;4001;32;[RW]
-3;P;TST_DigIn_4;WORD_BIT;4;TCP_SRV;0.0.0.0;502;1;1;4001;32;[RW]
-3;P;TST_DigIn_5;WORD_BIT;5;TCP_SRV;0.0.0.0;502;1;1;4001;32;[RW]
-3;P;TST_DigIn_6;WORD_BIT;6;TCP_SRV;0.0.0.0;502;1;1;4001;32;[RW]
-3;P;TST_DigIn_7;WORD_BIT;7;TCP_SRV;0.0.0.0;502;1;1;4001;32;[RW]
-3;P;TST_DigIn_8;WORD_BIT;8;TCP_SRV;0.0.0.0;502;1;1;4001;32;[RW]
-3;P;TST_DigIn_9;WORD_BIT;9;TCP_SRV;0.0.0.0;502;1;1;4001;32;[RW]
-3;P;TST_DigIn_10;WORD_BIT;10;TCP_SRV;0.0.0.0;502;1;1;4001;32;[RW]
-3;P;TST_DigIn_11;WORD_BIT;11;TCP_SRV;0.0.0.0;502;1;1;4001;32;[RW]
-3;P;TST_DigIn_12;WORD_BIT;12;TCP_SRV;0.0.0.0;502;1;1;4001;32;[RW]
-3;P;TST_DigIn_13;WORD_BIT;13;TCP_SRV;0.0.0.0;502;1;1;4001;32;[RW]
-3;P;TST_DigIn_14;WORD_BIT;14;TCP_SRV;0.0.0.0;502;1;1;4001;32;[RW]
-3;P;TST_DigIn_15;WORD_BIT;15;TCP_SRV;0.0.0.0;502;1;1;4001;32;[RW]
-3;P;TST_DigIn_16;WORD_BIT;16;TCP_SRV;0.0.0.0;502;1;1;4001;32;[RW]
-3;P;VAL_DigIn_1;WORD_BIT;1;TCP_SRV;0.0.0.0;502;1;2;4001;32;[RW]
-3;P;VAL_DigIn_2;WORD_BIT;2;TCP_SRV;0.0.0.0;502;1;2;4001;32;[RW]
-3;P;VAL_DigIn_3;WORD_BIT;3;TCP_SRV;0.0.0.0;502;1;2;4001;32;[RW]
-3;P;VAL_DigIn_4;WORD_BIT;4;TCP_SRV;0.0.0.0;502;1;2;4001;32;[RW]
-3;P;VAL_DigIn_5;WORD_BIT;5;TCP_SRV;0.0.0.0;502;1;2;4001;32;[RW]
-3;P;VAL_DigIn_6;WORD_BIT;6;TCP_SRV;0.0.0.0;502;1;2;4001;32;[RW]
-3;P;VAL_DigIn_7;WORD_BIT;7;TCP_SRV;0.0.0.0;502;1;2;4001;32;[RW]
-3;P;VAL_DigIn_8;WORD_BIT;8;TCP_SRV;0.0.0.0;502;1;2;4001;32;[RW]
-3;P;VAL_DigIn_9;WORD_BIT;9;TCP_SRV;0.0.0.0;502;1;2;4001;32;[RW]
-3;P;VAL_DigIn_10;WORD_BIT;10;TCP_SRV;0.0.0.0;502;1;2;4001;32;[RW]
-3;P;VAL_DigIn_11;WORD_BIT;11;TCP_SRV;0.0.0.0;502;1;2;4001;32;[RW]
-3;P;VAL_DigIn_12;WORD_BIT;12;TCP_SRV;0.0.0.0;502;1;2;4001;32;[RW]
-3;P;VAL_DigIn_13;WORD_BIT;13;TCP_SRV;0.0.0.0;502;1;2;4001;32;[RW]
-3;P;VAL_DigIn_14;WORD_BIT;14;TCP_SRV;0.0.0.0;502;1;2;4001;32;[RW]
-3;P;VAL_DigIn_15;WORD_BIT;15;TCP_SRV;0.0.0.0;502;1;2;4001;32;[RW]
-3;P;VAL_DigIn_16;WORD_BIT;16;TCP_SRV;0.0.0.0;502;1;2;4001;32;[RW]
-2;P;RES_DigIn_1;WORD_BIT;1;TCP_SRV;0.0.0.0;502;1;3;4033;16;[RO]
-2;P;RES_DigIn_2;WORD_BIT;2;TCP_SRV;0.0.0.0;502;1;3;4033;16;[RO]
-2;P;RES_DigIn_3;WORD_BIT;3;TCP_SRV;0.0.0.0;502;1;3;4033;16;[RO]
-2;P;RES_DigIn_4;WORD_BIT;4;TCP_SRV;0.0.0.0;502;1;3;4033;16;[RO]
-2;P;RES_DigIn_5;WORD_BIT;5;TCP_SRV;0.0.0.0;502;1;3;4033;16;[RO]
-2;P;RES_DigIn_6;WORD_BIT;6;TCP_SRV;0.0.0.0;502;1;3;4033;16;[RO]
-2;P;RES_DigIn_7;WORD_BIT;7;TCP_SRV;0.0.0.0;502;1;3;4033;16;[RO]
-2;P;RES_DigIn_8;WORD_BIT;8;TCP_SRV;0.0.0.0;502;1;3;4033;16;[RO]
-2;P;RES_DigIn_9;WORD_BIT;9;TCP_SRV;0.0.0.0;502;1;3;4033;16;[RO]
-2;P;RES_DigIn_10;WORD_BIT;10;TCP_SRV;0.0.0.0;502;1;3;4033;16;[RO]
-2;P;RES_DigIn_11;WORD_BIT;11;TCP_SRV;0.0.0.0;502;1;3;4033;16;[RO]
-2;P;RES_DigIn_12;WORD_BIT;12;TCP_SRV;0.0.0.0;502;1;3;4033;16;[RO]
-2;P;RES_DigIn_13;WORD_BIT;13;TCP_SRV;0.0.0.0;502;1;3;4033;16;[RO]
-2;P;RES_DigIn_14;WORD_BIT;14;TCP_SRV;0.0.0.0;502;1;3;4033;16;[RO]
-2;P;RES_DigIn_15;WORD_BIT;15;TCP_SRV;0.0.0.0;502;1;3;4033;16;[RO]
-2;P;RES_DigIn_16;WORD_BIT;16;TCP_SRV;0.0.0.0;502;1;3;4033;16;[RO]
-1;P;OK_DigIn_1;WORD_BIT;1;PLC;;;;;4049;16;[RW]
-1;P;OK_DigIn_2;WORD_BIT;2;PLC;;;;;4049;16;[RW]
-1;P;OK_DigIn_3;WORD_BIT;3;PLC;;;;;4049;16;[RW]
-1;P;OK_DigIn_4;WORD_BIT;4;PLC;;;;;4049;16;[RW]
-1;P;OK_DigIn_5;WORD_BIT;5;PLC;;;;;4049;16;[RW]
-1;P;OK_DigIn_6;WORD_BIT;6;PLC;;;;;4049;16;[RW]
-1;P;OK_DigIn_7;WORD_BIT;7;PLC;;;;;4049;16;[RW]
-1;P;OK_DigIn_8;WORD_BIT;8;PLC;;;;;4049;16;[RW]
-1;P;OK_DigIn_9;WORD_BIT;9;PLC;;;;;4049;16;[RW]
-1;P;OK_DigIn_10;WORD_BIT;10;PLC;;;;;4049;16;[RW]
-1;P;OK_DigIn_11;WORD_BIT;11;PLC;;;;;4049;16;[RW]
-1;P;OK_DigIn_12;WORD_BIT;12;PLC;;;;;4049;16;[RW]
-1;P;OK_DigIn_13;WORD_BIT;13;PLC;;;;;4049;16;[RW]
-1;P;OK_DigIn_14;WORD_BIT;14;PLC;;;;;4049;16;[RW]
-1;P;OK_DigIn_15;WORD_BIT;15;PLC;;;;;4049;16;[RW]
-1;P;OK_DigIn_16;WORD_BIT;16;PLC;;;;;4049;16;[RW]
-3;P;TST_DigOut_1;WORD_BIT;1;TCP_SRV;0.0.0.0;502;1;4;4065;32;[RW]
-3;P;TST_DigOut_2;WORD_BIT;2;TCP_SRV;0.0.0.0;502;1;4;4065;32;[RW]
-3;P;TST_DigOut_3;WORD_BIT;3;TCP_SRV;0.0.0.0;502;1;4;4065;32;[RW]
-3;P;TST_DigOut_4;WORD_BIT;4;TCP_SRV;0.0.0.0;502;1;4;4065;32;[RW]
-3;P;TST_DigOut_5;WORD_BIT;5;TCP_SRV;0.0.0.0;502;1;4;4065;32;[RW]
-3;P;TST_DigOut_6;WORD_BIT;6;TCP_SRV;0.0.0.0;502;1;4;4065;32;[RW]
-3;P;TST_DigOut_7;WORD_BIT;7;TCP_SRV;0.0.0.0;502;1;4;4065;32;[RW]
-3;P;TST_DigOut_8;WORD_BIT;8;TCP_SRV;0.0.0.0;502;1;4;4065;32;[RW]
-3;P;TST_DigOut_9;WORD_BIT;9;TCP_SRV;0.0.0.0;502;1;4;4065;32;[RW]
-3;P;TST_DigOut_10;WORD_BIT;10;TCP_SRV;0.0.0.0;502;1;4;4065;32;[RW]
-3;P;TST_DigOut_11;WORD_BIT;11;TCP_SRV;0.0.0.0;502;1;4;4065;32;[RW]
-3;P;TST_DigOut_12;WORD_BIT;12;TCP_SRV;0.0.0.0;502;1;4;4065;32;[RW]
-3;P;TST_DigOut_13;WORD_BIT;13;TCP_SRV;0.0.0.0;502;1;4;4065;32;[RW]
-3;P;TST_DigOut_14;WORD_BIT;14;TCP_SRV;0.0.0.0;502;1;4;4065;32;[RW]
-3;P;TST_DigOut_15;WORD_BIT;15;TCP_SRV;0.0.0.0;502;1;4;4065;32;[RW]
-3;P;TST_DigOut_16;WORD_BIT;16;TCP_SRV;0.0.0.0;502;1;4;4065;32;[RW]
-3;P;VAL_DigOut_1;WORD_BIT;1;TCP_SRV;0.0.0.0;502;1;5;4065;32;[RW]
-3;P;VAL_DigOut_2;WORD_BIT;2;TCP_SRV;0.0.0.0;502;1;5;4065;32;[RW]
-3;P;VAL_DigOut_3;WORD_BIT;3;TCP_SRV;0.0.0.0;502;1;5;4065;32;[RW]
-3;P;VAL_DigOut_4;WORD_BIT;4;TCP_SRV;0.0.0.0;502;1;5;4065;32;[RW]
-3;P;VAL_DigOut_5;WORD_BIT;5;TCP_SRV;0.0.0.0;502;1;5;4065;32;[RW]
-3;P;VAL_DigOut_6;WORD_BIT;6;TCP_SRV;0.0.0.0;502;1;5;4065;32;[RW]
-3;P;VAL_DigOut_7;WORD_BIT;7;TCP_SRV;0.0.0.0;502;1;5;4065;32;[RW]
-3;P;VAL_DigOut_8;WORD_BIT;8;TCP_SRV;0.0.0.0;502;1;5;4065;32;[RW]
-3;P;VAL_DigOut_9;WORD_BIT;9;TCP_SRV;0.0.0.0;502;1;5;4065;32;[RW]
-3;P;VAL_DigOut_10;WORD_BIT;10;TCP_SRV;0.0.0.0;502;1;5;4065;32;[RW]
-3;P;VAL_DigOut_11;WORD_BIT;11;TCP_SRV;0.0.0.0;502;1;5;4065;32;[RW]
-3;P;VAL_DigOut_12;WORD_BIT;12;TCP_SRV;0.0.0.0;502;1;5;4065;32;[RW]
-3;P;VAL_DigOut_13;WORD_BIT;13;TCP_SRV;0.0.0.0;502;1;5;4065;32;[RW]
-3;P;VAL_DigOut_14;WORD_BIT;14;TCP_SRV;0.0.0.0;502;1;5;4065;32;[RW]
-3;P;VAL_DigOut_15;WORD_BIT;15;TCP_SRV;0.0.0.0;502;1;5;4065;32;[RW]
-3;P;VAL_DigOut_16;WORD_BIT;16;TCP_SRV;0.0.0.0;502;1;5;4065;32;[RW]
-2;P;RES_DigOut_1;WORD_BIT;1;TCP_SRV;0.0.0.0;502;1;6;4097;16;[RO]
-2;P;RES_DigOut_2;WORD_BIT;2;TCP_SRV;0.0.0.0;502;1;6;4097;16;[RO]
-2;P;RES_DigOut_3;WORD_BIT;3;TCP_SRV;0.0.0.0;502;1;6;4097;16;[RO]
-2;P;RES_DigOut_4;WORD_BIT;4;TCP_SRV;0.0.0.0;502;1;6;4097;16;[RO]
-2;P;RES_DigOut_5;WORD_BIT;5;TCP_SRV;0.0.0.0;502;1;6;4097;16;[RO]
-2;P;RES_DigOut_6;WORD_BIT;6;TCP_SRV;0.0.0.0;502;1;6;4097;16;[RO]
-2;P;RES_DigOut_7;WORD_BIT;7;TCP_SRV;0.0.0.0;502;1;6;4097;16;[RO]
-2;P;RES_DigOut_8;WORD_BIT;8;TCP_SRV;0.0.0.0;502;1;6;4097;16;[RO]
-2;P;RES_DigOut_9;WORD_BIT;9;TCP_SRV;0.0.0.0;502;1;6;4097;16;[RO]
-2;P;RES_DigOut_10;WORD_BIT;10;TCP_SRV;0.0.0.0;502;1;6;4097;16;[RO]
-2;P;RES_DigOut_11;WORD_BIT;11;TCP_SRV;0.0.0.0;502;1;6;4097;16;[RO]
-2;P;RES_DigOut_12;WORD_BIT;12;TCP_SRV;0.0.0.0;502;1;6;4097;16;[RO]
-2;P;RES_DigOut_13;WORD_BIT;13;TCP_SRV;0.0.0.0;502;1;6;4097;16;[RO]
-2;P;RES_DigOut_14;WORD_BIT;14;TCP_SRV;0.0.0.0;502;1;6;4097;16;[RO]
-2;P;RES_DigOut_15;WORD_BIT;15;TCP_SRV;0.0.0.0;502;1;6;4097;16;[RO]
-2;P;RES_DigOut_16;WORD_BIT;16;TCP_SRV;0.0.0.0;502;1;6;4097;16;[RO]
-1;P;OK_DigOut_1;WORD_BIT;1;PLC;;;;;4113;16;[RW]
-1;P;OK_DigOut_2;WORD_BIT;2;PLC;;;;;4113;16;[RW]
-1;P;OK_DigOut_3;WORD_BIT;3;PLC;;;;;4113;16;[RW]
-1;P;OK_DigOut_4;WORD_BIT;4;PLC;;;;;4113;16;[RW]
-1;P;OK_DigOut_5;WORD_BIT;5;PLC;;;;;4113;16;[RW]
-1;P;OK_DigOut_6;WORD_BIT;6;PLC;;;;;4113;16;[RW]
-1;P;OK_DigOut_7;WORD_BIT;7;PLC;;;;;4113;16;[RW]
-1;P;OK_DigOut_8;WORD_BIT;8;PLC;;;;;4113;16;[RW]
-1;P;OK_DigOut_9;WORD_BIT;9;PLC;;;;;4113;16;[RW]
-1;P;OK_DigOut_10;WORD_BIT;10;PLC;;;;;4113;16;[RW]
-1;P;OK_DigOut_11;WORD_BIT;11;PLC;;;;;4113;16;[RW]
-1;P;OK_DigOut_12;WORD_BIT;12;PLC;;;;;4113;16;[RW]
-1;P;OK_DigOut_13;WORD_BIT;13;PLC;;;;;4113;16;[RW]
-1;P;OK_DigOut_14;WORD_BIT;14;PLC;;;;;4113;16;[RW]
-1;P;OK_DigOut_15;WORD_BIT;15;PLC;;;;;4113;16;[RW]
-1;P;OK_DigOut_16;WORD_BIT;16;PLC;;;;;4113;16;[RW]
-3;P;TST_AnIn_1;WORD_BIT;1;TCP_SRV;0.0.0.0;502;1;7;4129;36;[RW]
-3;P;TST_AnIn_2;WORD_BIT;2;TCP_SRV;0.0.0.0;502;1;7;4129;36;[RW]
-3;P;TST_AnIn_3;WORD_BIT;3;TCP_SRV;0.0.0.0;502;1;7;4129;36;[RW]
-3;P;TST_AnIn_4;WORD_BIT;4;TCP_SRV;0.0.0.0;502;1;7;4129;36;[RW]
-3;P;TST_AnIn_5;WORD_BIT;5;TCP_SRV;0.0.0.0;502;1;7;4129;36;[RW]
-3;P;TST_AnIn_6;WORD_BIT;6;TCP_SRV;0.0.0.0;502;1;7;4129;36;[RW]
-3;P;TST_AnIn_7;WORD_BIT;7;TCP_SRV;0.0.0.0;502;1;7;4129;36;[RW]
-3;P;TST_AnIn_8;WORD_BIT;8;TCP_SRV;0.0.0.0;502;1;7;4129;36;[RW]
-3;P;TST_AnIn_9;WORD_BIT;9;TCP_SRV;0.0.0.0;502;1;7;4129;36;[RW]
-3;P;TST_AnIn_10;WORD_BIT;10;TCP_SRV;0.0.0.0;502;1;7;4129;36;[RW]
-3;P;TST_AnIn_11;WORD_BIT;11;TCP_SRV;0.0.0.0;502;1;7;4129;36;[RW]
-3;P;TST_AnIn_12;WORD_BIT;12;TCP_SRV;0.0.0.0;502;1;7;4129;36;[RW]
-3;P;VAL_AnIn_1;INT;3;TCP_SRV;0.0.0.0;502;1;8;4129;36;[RW]
-3;P;VAL_AnIn_2;INT;3;TCP_SRV;0.0.0.0;502;1;9;4129;36;[RW]
-3;P;VAL_AnIn_3;INT;3;TCP_SRV;0.0.0.0;502;1;10;4129;36;[RW]
-3;P;VAL_AnIn_4;INT;3;TCP_SRV;0.0.0.0;502;1;11;4129;36;[RW]
-3;P;VAL_AnIn_5;INT;3;TCP_SRV;0.0.0.0;502;1;12;4129;36;[RW]
-3;P;VAL_AnIn_6;INT;3;TCP_SRV;0.0.0.0;502;1;13;4129;36;[RW]
-3;P;VAL_AnIn_7;INT;3;TCP_SRV;0.0.0.0;502;1;14;4129;36;[RW]
-3;P;VAL_AnIn_8;INT;3;TCP_SRV;0.0.0.0;502;1;15;4129;36;[RW]
-3;P;VAL_AnIn_9;INT;3;TCP_SRV;0.0.0.0;502;1;16;4129;36;[RW]
-3;P;VAL_AnIn_10;INT;3;TCP_SRV;0.0.0.0;502;1;17;4129;36;[RW]
-3;P;VAL_AnIn_11;INT;3;TCP_SRV;0.0.0.0;502;1;18;4129;36;[RW]
-3;P;VAL_AnIn_12;INT;3;TCP_SRV;0.0.0.0;502;1;19;4129;36;[RW]
-3;P;VAL_AnInConf_1;UINT;0;TCP_SRV;0.0.0.0;502;1;20;4129;36;[RW]
-3;P;VAL_AnInConf_2;UINT;0;TCP_SRV;0.0.0.0;502;1;21;4129;36;[RW]
-3;P;VAL_AnInConf_3;UINT;0;TCP_SRV;0.0.0.0;502;1;22;4129;36;[RW]
-3;P;VAL_AnInConf_4;UINT;0;TCP_SRV;0.0.0.0;502;1;23;4129;36;[RW]
-3;P;VAL_AnInConf_5;UINT;0;TCP_SRV;0.0.0.0;502;1;24;4129;36;[RW]
-3;P;VAL_AnInConf_6;UINT;0;TCP_SRV;0.0.0.0;502;1;25;4129;36;[RW]
-3;P;VAL_AnInConf_7;UINT;0;TCP_SRV;0.0.0.0;502;1;26;4129;36;[RW]
-3;P;VAL_AnInConf_8;UINT;0;TCP_SRV;0.0.0.0;502;1;27;4129;36;[RW]
-3;P;VAL_AnInConf_9;UINT;0;TCP_SRV;0.0.0.0;502;1;28;4129;36;[RW]
-3;P;VAL_AnInConf_10;UINT;0;TCP_SRV;0.0.0.0;502;1;29;4129;36;[RW]
-3;P;VAL_AnInConf_11;UINT;0;TCP_SRV;0.0.0.0;502;1;30;4129;36;[RW]
-3;P;VAL_AnInConf_12;UINT;0;TCP_SRV;0.0.0.0;502;1;31;4129;36;[RW]
-2;P;RES_AnIn_1;INT;3;TCP_SRV;0.0.0.0;502;1;32;4165;12;[RO]
-2;P;RES_AnIn_2;INT;3;TCP_SRV;0.0.0.0;502;1;33;4165;12;[RO]
-2;P;RES_AnIn_3;INT;3;TCP_SRV;0.0.0.0;502;1;34;4165;12;[RO]
-2;P;RES_AnIn_4;INT;3;TCP_SRV;0.0.0.0;502;1;35;4165;12;[RO]
-2;P;RES_AnIn_5;INT;3;TCP_SRV;0.0.0.0;502;1;36;4165;12;[RO]
-2;P;RES_AnIn_6;INT;3;TCP_SRV;0.0.0.0;502;1;37;4165;12;[RO]
-2;P;RES_AnIn_7;INT;3;TCP_SRV;0.0.0.0;502;1;38;4165;12;[RO]
-2;P;RES_AnIn_8;INT;3;TCP_SRV;0.0.0.0;502;1;39;4165;12;[RO]
-2;P;RES_AnIn_9;INT;3;TCP_SRV;0.0.0.0;502;1;40;4165;12;[RO]
-2;P;RES_AnIn_10;INT;3;TCP_SRV;0.0.0.0;502;1;41;4165;12;[RO]
-2;P;RES_AnIn_11;INT;3;TCP_SRV;0.0.0.0;502;1;42;4165;12;[RO]
-2;P;RES_AnIn_12;INT;3;TCP_SRV;0.0.0.0;502;1;43;4165;12;[RO]
-1;P;OK_AnIn_1;INT;3;PLC;;;;;4177;12;[RW]
-1;P;OK_AnIn_2;INT;3;PLC;;;;;4177;12;[RW]
-1;P;OK_AnIn_3;INT;3;PLC;;;;;4177;12;[RW]
-1;P;OK_AnIn_4;INT;3;PLC;;;;;4177;12;[RW]
-1;P;OK_AnIn_5;INT;3;PLC;;;;;4177;12;[RW]
-1;P;OK_AnIn_6;INT;3;PLC;;;;;4177;12;[RW]
-1;P;OK_AnIn_7;INT;3;PLC;;;;;4177;12;[RW]
-1;P;OK_AnIn_8;INT;3;PLC;;;;;4177;12;[RW]
-1;P;OK_AnIn_9;INT;3;PLC;;;;;4177;12;[RW]
-1;P;OK_AnIn_10;INT;3;PLC;;;;;4177;12;[RW]
-1;P;OK_AnIn_11;INT;3;PLC;;;;;4177;12;[RW]
-1;P;OK_AnIn_12;INT;3;PLC;;;;;4177;12;[RW]
-3;P;TST_AnOut_1;WORD_BIT;1;TCP_SRV;0.0.0.0;502;1;44;4189;24;[RW]
-3;P;TST_AnOut_2;WORD_BIT;2;TCP_SRV;0.0.0.0;502;1;44;4189;24;[RW]
-3;P;TST_AnOut_3;WORD_BIT;3;TCP_SRV;0.0.0.0;502;1;44;4189;24;[RW]
-3;P;TST_AnOut_4;WORD_BIT;4;TCP_SRV;0.0.0.0;502;1;44;4189;24;[RW]
-3;P;TST_AnOut_5;WORD_BIT;5;TCP_SRV;0.0.0.0;502;1;44;4189;24;[RW]
-3;P;TST_AnOut_6;WORD_BIT;6;TCP_SRV;0.0.0.0;502;1;44;4189;24;[RW]
-3;P;TST_AnOut_7;WORD_BIT;7;TCP_SRV;0.0.0.0;502;1;44;4189;24;[RW]
-3;P;TST_AnOut_8;WORD_BIT;8;TCP_SRV;0.0.0.0;502;1;44;4189;24;[RW]
-3;P;VAL_AnOut_1;INT;2;TCP_SRV;0.0.0.0;502;1;45;4189;24;[RW]
-3;P;VAL_AnOut_2;INT;2;TCP_SRV;0.0.0.0;502;1;46;4189;24;[RW]
-3;P;VAL_AnOut_3;INT;2;TCP_SRV;0.0.0.0;502;1;47;4189;24;[RW]
-3;P;VAL_AnOut_4;INT;2;TCP_SRV;0.0.0.0;502;1;48;4189;24;[RW]
-3;P;VAL_AnOut_5;INT;2;TCP_SRV;0.0.0.0;502;1;49;4189;24;[RW]
-3;P;VAL_AnOut_6;INT;2;TCP_SRV;0.0.0.0;502;1;50;4189;24;[RW]
-3;P;VAL_AnOut_7;INT;2;TCP_SRV;0.0.0.0;502;1;51;4189;24;[RW]
-3;P;VAL_AnOut_8;INT;2;TCP_SRV;0.0.0.0;502;1;52;4189;24;[RW]
-3;P;VAL_AnOutConf_1;UINT;0;TCP_SRV;0.0.0.0;502;1;53;4189;24;[RW]
-3;P;VAL_AnOutConf_2;UINT;0;TCP_SRV;0.0.0.0;502;1;54;4189;24;[RW]
-3;P;VAL_AnOutConf_3;UINT;0;TCP_SRV;0.0.0.0;502;1;55;4189;24;[RW]
-3;P;VAL_AnOutConf_4;UINT;0;TCP_SRV;0.0.0.0;502;1;56;4189;24;[RW]
-3;P;VAL_AnOutConf_5;UINT;0;TCP_SRV;0.0.0.0;502;1;57;4189;24;[RW]
-3;P;VAL_AnOutConf_6;UINT;0;TCP_SRV;0.0.0.0;502;1;58;4189;24;[RW]
-3;P;VAL_AnOutConf_7;UINT;0;TCP_SRV;0.0.0.0;502;1;59;4189;24;[RW]
-3;P;VAL_AnOutConf_8;UINT;0;TCP_SRV;0.0.0.0;502;1;60;4189;24;[RW]
-2;P;RES_AnOut_1;INT;2;TCP_SRV;0.0.0.0;502;1;61;4213;8;[RO]
-2;P;RES_AnOut_2;INT;2;TCP_SRV;0.0.0.0;502;1;62;4213;8;[RO]
-2;P;RES_AnOut_3;INT;2;TCP_SRV;0.0.0.0;502;1;63;4213;8;[RO]
-2;P;RES_AnOut_4;INT;2;TCP_SRV;0.0.0.0;502;1;64;4213;8;[RO]
-2;P;RES_AnOut_5;INT;2;TCP_SRV;0.0.0.0;502;1;65;4213;8;[RO]
-2;P;RES_AnOut_6;INT;2;TCP_SRV;0.0.0.0;502;1;66;4213;8;[RO]
-2;P;RES_AnOut_7;INT;2;TCP_SRV;0.0.0.0;502;1;67;4213;8;[RO]
-2;P;RES_AnOut_8;INT;2;TCP_SRV;0.0.0.0;502;1;68;4213;8;[RW]
-1;P;OK_AnOut_1;INT;2;PLC;;;;;4221;8;[RW]
-1;P;OK_AnOut_2;INT;2;PLC;;;;;4221;8;[RW]
-1;P;OK_AnOut_3;INT;2;PLC;;;;;4221;8;[RW]
-1;P;OK_AnOut_4;INT;2;PLC;;;;;4221;8;[RW]
-1;P;OK_AnOut_5;INT;2;PLC;;;;;4221;8;[RW]
-1;P;OK_AnOut_6;INT;2;PLC;;;;;4221;8;[RW]
-1;P;OK_AnOut_7;INT;2;PLC;;;;;4221;8;[RW]
-1;P;OK_AnOut_8;INT;2;PLC;;;;;4221;8;[RW]
-3;P;TST_Tamb;WORD_BIT;1;TCP_SRV;0.0.0.0;502;1;69;4229;14;[RW]
-3;P;TST_RPM;WORD_BIT;10;TCP_SRV;0.0.0.0;502;1;69;4229;14;[RW]
-3;P;TST_VCC_set;WORD_BIT;12;TCP_SRV;0.0.0.0;502;1;69;4229;14;[RW]
-3;P;TST_VCC_fbk;WORD_BIT;13;TCP_SRV;0.0.0.0;502;1;69;4229;14;[RW]
-3;P;TST_mA_fbk;WORD_BIT;14;TCP_SRV;0.0.0.0;502;1;69;4229;14;[RW]
-3;P;TST_FWrevision;WORD_BIT;15;TCP_SRV;0.0.0.0;502;1;69;4229;14;[RW]
-3;P;TST_HWconfig;WORD_BIT;16;TCP_SRV;0.0.0.0;502;1;69;4229;14;[RW]
-3;P;VAL_Tamb;INT;1;TCP_SRV;0.0.0.0;502;1;70;4229;14;[RW]
-3;P;VAL_RPM;UINT;0;TCP_SRV;0.0.0.0;502;1;71;4229;14;[RW]
-3;P;VAL_VCC_set;INT;2;TCP_SRV;0.0.0.0;502;1;72;4229;14;[RW]
-3;P;VAL_VCC_fbk;INT;3;TCP_SRV;0.0.0.0;502;1;73;4229;14;[RW]
-3;P;VAL_mA_fbk;INT;3;TCP_SRV;0.0.0.0;502;1;74;4229;14;[RW]
-3;P;VAL_FWrevision;UINT;0;TCP_SRV;0.0.0.0;502;1;75;4229;14;[RW]
-3;P;VAL_HWconfig;UINT;0;TCP_SRV;0.0.0.0;502;1;76;4229;14;[RW]
-2;P;RES_Tamb;INT;1;TCP_SRV;0.0.0.0;502;1;77;4243;7;[RO]
-2;P;RES_RPM;UINT;0;TCP_SRV;0.0.0.0;502;1;78;4243;7;[RO]
-2;P;RES_VCC_set;INT;2;TCP_SRV;0.0.0.0;502;1;79;4243;7;[RO]
-2;P;RES_VCC_fbk;INT;3;TCP_SRV;0.0.0.0;502;1;80;4243;7;[RO]
-2;P;RES_mA_fbk;INT;3;TCP_SRV;0.0.0.0;502;1;81;4243;7;[RO]
-2;P;RES_FWrevision;UINT;0;TCP_SRV;0.0.0.0;502;1;82;4243;7;[RO]
-2;P;RES_HWconfig;UINT;0;TCP_SRV;0.0.0.0;502;1;83;4243;7;[RO]
-2;P;OK_Tamb;INT;1;PLC;;;;;4250;7;[RO]
-2;P;OK_RPM;UINT;0;PLC;;;;;4250;7;[RO]
-2;P;OK_VCC_set;INT;2;PLC;;;;;4250;7;[RO]
-2;P;OK_VCC_fbk;INT;3;PLC;;;;;4250;7;[RO]
-2;P;OK_mA_fbk;INT;3;PLC;;;;;4250;7;[RO]
-2;P;OK_FWrevision;UINT;0;PLC;;;;;4250;7;[RO]
-2;P;OK_HWconfig;UINT;0;PLC;;;;;4250;7;[RO]
-3;P;TST_RTUS_WR;WORD_BIT;1;TCP_SRV;0.0.0.0;502;1;84;4257;16;[RW]
-3;P;TST_RTUS_RD;WORD_BIT;2;TCP_SRV;0.0.0.0;502;1;84;4257;16;[RW]
-3;P;TST_RTU1_WR;WORD_BIT;3;TCP_SRV;0.0.0.0;502;1;84;4257;16;[RW]
-3;P;TST_RTU1_RD;WORD_BIT;4;TCP_SRV;0.0.0.0;502;1;84;4257;16;[RW]
-3;P;TST_RTU3_WR;WORD_BIT;5;TCP_SRV;0.0.0.0;502;1;84;4257;16;[RW]
-3;P;TST_RTU3_RD;WORD_BIT;6;TCP_SRV;0.0.0.0;502;1;84;4257;16;[RW]
-3;P;TST_CAN1_WR;WORD_BIT;7;TCP_SRV;0.0.0.0;502;1;84;4257;16;[RW]
-3;P;TST_CAN1_RD;WORD_BIT;8;TCP_SRV;0.0.0.0;502;1;84;4257;16;[RW]
-3;P;VAL_RTUS_WR;WORD_BIT;1;TCP_SRV;0.0.0.0;502;1;85;4257;16;[RW]
-3;P;VAL_RTUS_RD;WORD_BIT;2;TCP_SRV;0.0.0.0;502;1;85;4257;16;[RW]
-3;P;VAL_RTU1_WR;WORD_BIT;3;TCP_SRV;0.0.0.0;502;1;85;4257;16;[RW]
-3;P;VAL_RTU1_RD;WORD_BIT;4;TCP_SRV;0.0.0.0;502;1;85;4257;16;[RW]
-3;P;VAL_RTU3_WR;WORD_BIT;5;TCP_SRV;0.0.0.0;502;1;85;4257;16;[RW]
-3;P;VAL_RTU3_RD;WORD_BIT;6;TCP_SRV;0.0.0.0;502;1;85;4257;16;[RW]
-3;P;VAL_CAN1_WR;WORD_BIT;7;TCP_SRV;0.0.0.0;502;1;85;4257;16;[RW]
-3;P;VAL_CAN1_RD;WORD_BIT;8;TCP_SRV;0.0.0.0;502;1;85;4257;16;[RW]
-2;P;RES_RTUS_WR;WORD_BIT;1;TCP_SRV;0.0.0.0;502;1;86;4273;8;[RW]
-2;P;RES_RTUS_RD;WORD_BIT;2;TCP_SRV;0.0.0.0;502;1;86;4273;8;[RW]
-2;P;RES_RTU1_WR;WORD_BIT;3;TCP_SRV;0.0.0.0;502;1;87;4273;8;[RW]
-2;P;RES_RTU1_RD;WORD_BIT;4;TCP_SRV;0.0.0.0;502;1;87;4273;8;[RW]
-2;P;RES_RTU3_WR;WORD_BIT;5;TCP_SRV;0.0.0.0;502;1;88;4273;8;[RW]
-2;P;RES_RTU3_RD;WORD_BIT;6;TCP_SRV;0.0.0.0;502;1;88;4273;8;[RW]
-2;P;RES_CAN1_WR;WORD_BIT;7;TCP_SRV;0.0.0.0;502;1;89;4273;8;[RW]
-2;P;RES_CAN1_RD;WORD_BIT;8;TCP_SRV;0.0.0.0;502;1;89;4273;8;[RW]
-1;P;OK_RTUS_WR;WORD_BIT;1;PLC;;;;;4281;8;[RW]
-1;P;OK_RTUS_RD;WORD_BIT;2;PLC;;;;;4281;8;[RW]
-1;P;OK_RTU1_WR;WORD_BIT;3;PLC;;;;;4281;8;[RW]
-1;P;OK_RTU1_RD;WORD_BIT;4;PLC;;;;;4281;8;[RW]
-1;P;OK_RTU3_WR;WORD_BIT;5;PLC;;;;;4281;8;[RW]
-1;P;OK_RTU3_RD;WORD_BIT;6;PLC;;;;;4281;8;[RW]
-1;P;OK_CAN1_WR;WORD_BIT;7;PLC;;;;;4281;8;[RW]
-1;P;OK_CAN1_RD;WORD_BIT;8;PLC;;;;;4281;8;[RW]
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;

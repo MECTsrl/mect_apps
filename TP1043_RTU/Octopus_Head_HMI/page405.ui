@@ -31,31 +31,6 @@
 background-color: rgb(255, 255, 127);
 }</string>
   </property>
-  <widget class="QLabel" name="label_PLC_AnOut_8">
-   <property name="geometry">
-    <rect>
-     <x>327</x>
-     <y>70</y>
-     <width>31</width>
-     <height>34</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>DejaVu Sans</family>
-     <pointsize>8</pointsize>
-    </font>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background-color: rgb(170, 255, 255);</string>
-   </property>
-   <property name="text">
-    <string>8</string>
-   </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
-   </property>
-  </widget>
   <widget class="Line" name="line_vt_2">
    <property name="geometry">
     <rect>
@@ -271,42 +246,6 @@ background-color: rgb(255, 255, 127);
      <normaloff>:/off.png</normaloff>:/off.png</iconset>
    </property>
   </widget>
-  <widget class="ATCMled" name="atcmLed_PLC_DigOut_23">
-   <property name="geometry">
-    <rect>
-     <x>330</x>
-     <y>240</y>
-     <width>31</width>
-     <height>34</height>
-    </rect>
-   </property>
-   <property name="toolTip">
-    <string>OK_AnOut_8</string>
-   </property>
-   <property name="whatsThis">
-    <string>ATCMled widget</string>
-   </property>
-   <property name="variable">
-    <string>OK_AnOut_8</string>
-   </property>
-   <property name="refresh">
-    <number>500</number>
-   </property>
-   <property name="viewStatus">
-    <bool>false</bool>
-   </property>
-   <property name="visibilityVar">
-    <string>TST_AnOut_8</string>
-   </property>
-   <property name="onIcon">
-    <iconset>
-     <normaloff>:/on.png</normaloff>:/on.png</iconset>
-   </property>
-   <property name="offIcon">
-    <iconset>
-     <normaloff>:/off.png</normaloff>:/off.png</iconset>
-   </property>
-  </widget>
   <widget class="ATCMled" name="atcmLed_2">
    <property name="geometry">
     <rect>
@@ -476,42 +415,6 @@ background-color: rgb(255, 255, 127);
    </property>
    <property name="borderRadius">
     <number>0</number>
-   </property>
-  </widget>
-  <widget class="ATCMled" name="atcmLed_PLC_AnOut_8">
-   <property name="geometry">
-    <rect>
-     <x>328</x>
-     <y>102</y>
-     <width>31</width>
-     <height>34</height>
-    </rect>
-   </property>
-   <property name="toolTip">
-    <string>TST_AnOut_8</string>
-   </property>
-   <property name="whatsThis">
-    <string>ATCMled widget</string>
-   </property>
-   <property name="variable">
-    <string>TST_AnOut_8</string>
-   </property>
-   <property name="refresh">
-    <number>500</number>
-   </property>
-   <property name="viewStatus">
-    <bool>false</bool>
-   </property>
-   <property name="visibilityVar">
-    <string/>
-   </property>
-   <property name="onIcon">
-    <iconset>
-     <normaloff>:/on.png</normaloff>:/on.png</iconset>
-   </property>
-   <property name="offIcon">
-    <iconset>
-     <normaloff>:/off.png</normaloff>:/off.png</iconset>
    </property>
   </widget>
   <widget class="QLabel" name="label_3">
@@ -1648,63 +1551,6 @@ revision</string>
     <enum>Qt::Horizontal</enum>
    </property>
   </widget>
-  <widget class="ATCMlabel" name="atcmLabelAnOut_8">
-   <property name="geometry">
-    <rect>
-     <x>330</x>
-     <y>133</y>
-     <width>31</width>
-     <height>35</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>1.11</string>
-   </property>
-   <property name="toolTip">
-    <string>VAL_AnOut_8</string>
-   </property>
-   <property name="whatsThis">
-    <string>ATCMlabel widget</string>
-   </property>
-   <property name="variable">
-    <string>VAL_AnOut_8</string>
-   </property>
-   <property name="refresh">
-    <number>500</number>
-   </property>
-   <property name="max">
-    <string>0</string>
-   </property>
-   <property name="min">
-    <string>0</string>
-   </property>
-   <property name="viewStatus">
-    <bool>false</bool>
-   </property>
-   <property name="visibilityVar">
-    <string>TST_AnOut_8</string>
-   </property>
-   <property name="bgColor">
-    <color>
-     <red>170</red>
-     <green>255</green>
-     <blue>255</blue>
-    </color>
-   </property>
-   <property name="fontColor">
-    <color>
-     <red>0</red>
-     <green>0</green>
-     <blue>0</blue>
-    </color>
-   </property>
-   <property name="borderWidth">
-    <number>1</number>
-   </property>
-   <property name="borderRadius">
-    <number>0</number>
-   </property>
-  </widget>
   <widget class="QLabel" name="label_PLC_AnOut_4">
    <property name="geometry">
     <rect>
@@ -2100,63 +1946,6 @@ fbk</string>
     <number>0</number>
    </property>
   </widget>
-  <widget class="ATCMlabel" name="atcmLabelAnOut_10">
-   <property name="geometry">
-    <rect>
-     <x>332</x>
-     <y>205</y>
-     <width>31</width>
-     <height>35</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>1.11</string>
-   </property>
-   <property name="toolTip">
-    <string>RES_AnOut_8</string>
-   </property>
-   <property name="whatsThis">
-    <string>ATCMlabel widget</string>
-   </property>
-   <property name="variable">
-    <string>RES_AnOut_8</string>
-   </property>
-   <property name="refresh">
-    <number>500</number>
-   </property>
-   <property name="max">
-    <string>0</string>
-   </property>
-   <property name="min">
-    <string>0</string>
-   </property>
-   <property name="viewStatus">
-    <bool>false</bool>
-   </property>
-   <property name="visibilityVar">
-    <string>TST_AnOut_8</string>
-   </property>
-   <property name="bgColor">
-    <color>
-     <red>255</red>
-     <green>255</green>
-     <blue>127</blue>
-    </color>
-   </property>
-   <property name="fontColor">
-    <color>
-     <red>0</red>
-     <green>0</green>
-     <blue>0</blue>
-    </color>
-   </property>
-   <property name="borderWidth">
-    <number>1</number>
-   </property>
-   <property name="borderRadius">
-    <number>0</number>
-   </property>
-  </widget>
   <widget class="ATCMlabel" name="atcmLabelAnOut_11">
    <property name="geometry">
     <rect>
@@ -2499,19 +2288,16 @@ fbk</string>
     <number>0</number>
    </property>
   </widget>
-  <zorder>label_PLC_AnOut_8</zorder>
   <zorder>atcmLed_PLC_AnOut_6</zorder>
   <zorder>label_Qt_Project</zorder>
   <zorder>atcmComboBox</zorder>
   <zorder>atcmLed_PLC_DigOut_15</zorder>
   <zorder>label_2</zorder>
   <zorder>atcmLed_PLC_DigOut_17</zorder>
-  <zorder>atcmLed_PLC_DigOut_23</zorder>
   <zorder>atcmLed_2</zorder>
   <zorder>atcmLed_PLC_AnOut_4</zorder>
   <zorder>atcmLed_PLC_DigOut_13</zorder>
   <zorder>atcmLabelAnOut_5</zorder>
-  <zorder>atcmLed_PLC_AnOut_8</zorder>
   <zorder>label_3</zorder>
   <zorder>atcmLabelAnOut_4</zorder>
   <zorder>atcmLed_PLC_AnOut_7</zorder>
@@ -2541,7 +2327,6 @@ fbk</string>
   <zorder>label_PLC_AnOut_14</zorder>
   <zorder>label_PLC_AnOut_6</zorder>
   <zorder>atcmLed_3</zorder>
-  <zorder>atcmLabelAnOut_8</zorder>
   <zorder>label_PLC_AnOut_4</zorder>
   <zorder>atcmLabelAnOut_6</zorder>
   <zorder>atcmLed_TAmb</zorder>
@@ -2551,7 +2336,6 @@ fbk</string>
   <zorder>atcmDate</zorder>
   <zorder>label_Qt_Project_3</zorder>
   <zorder>atcmLabelAnOut_9</zorder>
-  <zorder>atcmLabelAnOut_10</zorder>
   <zorder>atcmLabelAnOut_11</zorder>
   <zorder>atcmLabelAnOut_12</zorder>
   <zorder>atcmLabelAnOut_13</zorder>

@@ -2862,42 +2862,6 @@ background-color: rgb(255, 255, 127);
      <normaloff>:/off.png</normaloff>:/off.png</iconset>
    </property>
   </widget>
-  <widget class="ATCMled" name="atcmLed_PLC_DigOut_23">
-   <property name="geometry">
-    <rect>
-     <x>330</x>
-     <y>238</y>
-     <width>31</width>
-     <height>34</height>
-    </rect>
-   </property>
-   <property name="toolTip">
-    <string>OK_AnOut_8</string>
-   </property>
-   <property name="whatsThis">
-    <string>ATCMled widget</string>
-   </property>
-   <property name="variable">
-    <string>OK_AnOut_8</string>
-   </property>
-   <property name="refresh">
-    <number>500</number>
-   </property>
-   <property name="viewStatus">
-    <bool>false</bool>
-   </property>
-   <property name="visibilityVar">
-    <string>TST_AnOut_8</string>
-   </property>
-   <property name="onIcon">
-    <iconset>
-     <normaloff>:/on.png</normaloff>:/on.png</iconset>
-   </property>
-   <property name="offIcon">
-    <iconset>
-     <normaloff>:/off.png</normaloff>:/off.png</iconset>
-   </property>
-  </widget>
   <widget class="ATCMled" name="atcmLed_PLC_DigOut_20">
    <property name="geometry">
     <rect>
@@ -3161,7 +3125,6 @@ background-color: rgb(255, 255, 127);
   <zorder>line_hr_1</zorder>
   <zorder>atcmLed_PLC_DigOut_15</zorder>
   <zorder>atcmLed_PLC_DigOut_17</zorder>
-  <zorder>atcmLed_PLC_DigOut_23</zorder>
   <zorder>atcmLed_PLC_DigOut_20</zorder>
   <zorder>atcmLed_PLC_DigOut_21</zorder>
   <zorder>atcmLed_PLC_DigOut_18</zorder>
