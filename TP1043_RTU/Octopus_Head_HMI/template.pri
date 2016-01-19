@@ -32,10 +32,14 @@ customstore.path = /local/data/customstore
 customtrend.files = config/trend1.csv
 customtrend.path = /local/data/customtrend
 
+recipefiles.files = config/2.csv config/1.csv
+recipefiles.path = /local/data/recipe/TPAC1007_4AA
+
 INSTALLS += config splash
 
 INSTALLS += customstore
 INSTALLS += customtrend
+INSTALLS += recipefiles
 
 DEFINES+=ENABLE_STORE
 DEFINES+=ENABLE_ALARMS
@@ -43,6 +47,8 @@ DEFINES+=ENABLE_TREND
 DEFINES+=ENABLE_RECIPE
 
 DEFINES += TRANSLATION
+
+DEFINES += LOG_LEVEL=error_e
 
 INCLUDEPATH += .\
 	./config

@@ -13,6 +13,7 @@
 #include "page100.h"
 #include "ui_page100.h"
 #include "crosstable.h"
+#include <QDir>
 
 /**
  * @brief this macro is used to set the PAGE100 style.
@@ -43,6 +44,7 @@ page100::page100(QWidget *parent) :
     /* set the style described into the macro SET_PAGE100_STYLE */
     SET_PAGE100_STYLE();
     translateFontSize(this);
+    recipeList.clear();
 }
 
 /**
@@ -62,6 +64,8 @@ void page100::reload()
        alarm banner initialization in QLineEdit:
          rotateShowError(ui->myLineEdit, ERROR_LABEL_PERIOD_MS);
      */
+    PRODUCT_ID = 1;
+    TEST_STEP = 1;
 }
 
 /**
@@ -94,6 +98,20 @@ void page100::updateData()
          LOG_PRINT(info_e,"################### NRE_REG_1 %d\n", value);
      }
      */
+    if (RUNNING == 0 && GO == 1)
+    {
+        ui->pushButtonNext->setEnabled(true);
+        doWrite_GO(0);
+        /* TODO: report */
+        if ( ui->checkBoxAuto->isChecked() )
+        {
+            on_pushButtonNext_clicked();
+        }
+    }
+    else if(RUNNING == 1)
+    {
+        fprintf(stderr, "Running!\n");
+    }
 }
 
 /**
@@ -114,5 +132,94 @@ page100::~page100()
 {
     delete ui;
 }
+#define RESET_SLEEP 5
+#define START_SLEEP 5
+#define STOP_SLEEP  5
 
+void page100::on_atcmComboBoxModel_currentIndexChanged(const QString &arg1)
+{
+    dirname = QString(RECIPE_DIR) + QString("/") + arg1;
+    QDir recipeDir(dirname, "*.csv");
+    recipeList = recipeDir.entryList(QDir::Files);
+    doWrite_TESTING(1);
+}
 
+int page100::LoadRecipe(const QString filename)
+{
+    FILE * fp = fopen(filename.toAscii().data(), "r");
+    if (fp == NULL)
+    {
+        LOG_PRINT(info_e, "Cannot open '%s'\n", filename.toAscii().data());
+        return -1;
+    }
+    char varname[TAG_LEN] = "";
+    char value[TAG_LEN] = "";
+    char line[MAX_LINE] = "";
+    char * p;
+    int number_of_variables = 0;
+    while (fgets(line, LINE_SIZE, fp) != NULL)
+    {
+        p = line;
+        /* tag */
+        p = mystrtok(p, varname, SEPARATOR);
+        if (p == NULL || varname[0] == '\0')
+        {
+            LOG_PRINT(error_e, "Invalid tag '%s'\n", line);
+            continue;
+        }
+        int decimal = getVarDecimalByName(varname);
+        /* value */
+        p = mystrtok(p, value, SEPARATOR);
+        if (value[0] != '\0')
+        {
+            float val_f = 0;
+            val_f = atof(value);
+            sprintf(value, "%.*f", decimal, val_f );
+            if (prepareFormattedVar(varname, value) == BUSY)
+            {
+                LOG_PRINT(warning_e, "busy, waiting to write the variable '%s' with the value '%s'\n", varname, value);
+            }
+            LOG_PRINT(info_e, "value '%s'\n", value);
+            number_of_variables++;
+        }
+    }
+    fclose(fp);
+    if (number_of_variables > 0)
+    {
+        writePendingInorder();
+    }
+    return number_of_variables;
+}
+
+void page100::on_pushButtonNext_clicked()
+{
+    static int step = 0;
+    if (step >= recipeList.count())
+    {
+        if (recipeList.count() == 0)
+        {
+            fprintf(stderr, "Nothing to load\n");
+            return;
+        }
+        if (!ui->checkBoxRepeat->isChecked())
+        {
+            fprintf(stderr, "Step finished!\n");
+            return;
+        }
+        else
+        {
+            step = 0;
+        }
+    }
+    ui->pushButtonNext->setEnabled(false);
+    if (LoadRecipe(dirname + QString("/") + recipeList.at(step)) < 0)
+    {
+        fprintf(stderr, "FAIL dirname '%s'\n",QString(dirname + QString("/") + recipeList.at(step)).toAscii().data() );
+    }
+    else
+    {
+        fprintf(stderr, "GO dirname '%s'\n",QString(dirname + QString("/") + recipeList.at(step)).toAscii().data() );
+        step++;
+        doWrite_GO(1);
+    }
+}
