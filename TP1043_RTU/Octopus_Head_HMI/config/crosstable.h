@@ -51,6 +51,11 @@ extern int GO;
 int doWrite_GO(int value);
 int prepareWrite_GO(int value);
  
+#define ID_RUNNING 194
+extern int RUNNING;
+int doWrite_RUNNING(int value);
+int prepareWrite_RUNNING(int value);
+ 
 #define ID_TESTING          997
 extern int TESTING         ;
 int doWrite_TESTING         (int value);

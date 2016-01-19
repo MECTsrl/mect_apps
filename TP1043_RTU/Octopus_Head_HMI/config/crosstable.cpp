@@ -19,6 +19,7 @@ u_int32_t TEST_DATE = 0;
 u_int32_t TEST_TIME = 0;
 u_int32_t TEST_DURATION = 0;
 int GO = 0;
+int RUNNING = 0;
 int TESTING          = 0;
 int RESET            = 0;
 int START            = 0;
@@ -1125,6 +1126,18 @@ return writeVarByCtIndex(ID_GO,  &value);
 int addWrite_GO(int value)
 {
 return (prepareWriteVarByCtIndex(ID_GO, &value, NULL, 0) == ERROR);
+}
+
+
+int doWrite_RUNNING(int value)
+{
+return writeVarByCtIndex(ID_RUNNING,  &value);
+}
+
+
+int addWrite_RUNNING(int value)
+{
+return (prepareWriteVarByCtIndex(ID_RUNNING, &value, NULL, 0) == ERROR);
 }
 
 
@@ -13414,6 +13427,7 @@ retval += readFromDb(ID_TEST_DATE, &TEST_DATE);
 retval += readFromDb(ID_TEST_TIME, &TEST_TIME);
 retval += readFromDb(ID_TEST_DURATION, &TEST_DURATION);
 retval += readFromDb(ID_GO, &GO);
+retval += readFromDb(ID_RUNNING, &RUNNING);
 retval += readFromDb(ID_TESTING         , &TESTING         );
 retval += readFromDb(ID_RESET           , &RESET           );
 retval += readFromDb(ID_START           , &START           );
