@@ -29,14 +29,7 @@ public:
 private slots:
     void changeEvent(QEvent * event);
     
-    void on_atcmComboBoxModel_currentIndexChanged(const QString &arg1);
-
-    void on_pushButtonNext_clicked();
-
 private:
-    int LoadRecipe(const QString filename);
-    QStringList recipeList;
-    QString dirname;
     Ui::page100 *ui;
 };
 

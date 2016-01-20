@@ -12,17 +12,38 @@ include(./template.pri)
 
 HEADERS += \
     page100.h \
-    page200.h
+    page200.h \
+    page400.h \
+    page401.h \
+    page402.h \
+    page403.h \
+    page404.h \
+    page405.h \
+    page300.h
 
 
 FORMS += \
     page100.ui \
-    page200.ui
+    page200.ui \
+    page400.ui \
+    page401.ui \
+    page402.ui \
+    page403.ui \
+    page404.ui \
+    page405.ui \
+    page300.ui
 
 
 SOURCES += \
     page100.cpp \
-    page200.cpp
+    page200.cpp \
+    page400.cpp \
+    page401.cpp \
+    page402.cpp \
+    page403.cpp \
+    page404.cpp \
+    page405.cpp \
+    page300.cpp
 
 
 RESOURCES += \

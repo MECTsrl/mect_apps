@@ -28,6 +28,7 @@
   <property name="styleSheet">
    <string notr="true">QWidget#page300
 {
+	background-color: rgb(255, 255, 127);
 }</string>
   </property>
   <widget class="QLabel" name="label_Qt_Project">
@@ -149,31 +150,13 @@
     <enum>QFrame::Raised</enum>
    </property>
   </widget>
-  <widget class="Line" name="line_hr_2">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>204</y>
-     <width>481</width>
-     <height>3</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>DejaVu Sans</family>
-    </font>
-   </property>
-   <property name="orientation">
-    <enum>Qt::Horizontal</enum>
-   </property>
-  </widget>
   <widget class="Line" name="line_vt_2">
    <property name="geometry">
     <rect>
      <x>240</x>
      <y>1</y>
      <width>3</width>
-     <height>272</height>
+     <height>68</height>
     </rect>
    </property>
    <property name="orientation">
@@ -187,19 +170,6 @@
      <y>69</y>
      <width>481</width>
      <height>3</height>
-    </rect>
-   </property>
-   <property name="orientation">
-    <enum>Qt::Horizontal</enum>
-   </property>
-  </widget>
-  <widget class="Line" name="line_hr_3">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>231</y>
-     <width>481</width>
-     <height>21</height>
     </rect>
    </property>
    <property name="orientation">
@@ -368,6 +338,238 @@
     <enum>ATCMdate::YYYY_MM_DD</enum>
    </property>
   </widget>
+  <widget class="ATCMgraph" name="atcmGraph">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>70</y>
+     <width>241</width>
+     <height>101</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>ATCM QGraph</string>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMgraph widget</string>
+   </property>
+   <property name="x1Variable">
+    <string>PLC_time</string>
+   </property>
+   <property name="x1Min">
+    <string>PLC_timeMin</string>
+   </property>
+   <property name="x1Max">
+    <string>PLC_timeMax</string>
+   </property>
+   <property name="y1Variable">
+    <string>DO_REMOTE</string>
+   </property>
+   <property name="y1Min">
+    <string>-1</string>
+   </property>
+   <property name="y1Max">
+    <string>2</string>
+   </property>
+   <property name="Display1">
+    <string/>
+   </property>
+   <property name="x2Variable">
+    <string>PLC_time</string>
+   </property>
+   <property name="x2Min">
+    <string>PLC_timeMin</string>
+   </property>
+   <property name="x2Max">
+    <string>PLC_timeMax</string>
+   </property>
+   <property name="y2Variable">
+    <string>DO_TEST</string>
+   </property>
+   <property name="y2Min">
+    <string>-1</string>
+   </property>
+   <property name="y2Max">
+    <string>2</string>
+   </property>
+   <property name="Display2">
+    <string/>
+   </property>
+  </widget>
+  <widget class="ATCMgraph" name="atcmGraph_2">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>70</y>
+     <width>241</width>
+     <height>101</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>ATCM QGraph</string>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMgraph widget</string>
+   </property>
+   <property name="x1Variable">
+    <string>PLC_time</string>
+   </property>
+   <property name="x1Min">
+    <string>PLC_timeMin</string>
+   </property>
+   <property name="x1Max">
+    <string>PLC_timeMax</string>
+   </property>
+   <property name="y1Variable">
+    <string>STATUSx_REMOTE</string>
+   </property>
+   <property name="y1Min">
+    <string>-1</string>
+   </property>
+   <property name="y1Max">
+    <string>2</string>
+   </property>
+   <property name="Display1">
+    <string/>
+   </property>
+   <property name="x2Variable">
+    <string>PLC_time</string>
+   </property>
+   <property name="x2Min">
+    <string>PLC_timeMin</string>
+   </property>
+   <property name="x2Max">
+    <string>PLC_timeMax</string>
+   </property>
+   <property name="y2Variable">
+    <string>STATUSx_DONE</string>
+   </property>
+   <property name="y2Min">
+    <string>-1</string>
+   </property>
+   <property name="y2Max">
+    <string>2</string>
+   </property>
+   <property name="Display2">
+    <string/>
+   </property>
+  </widget>
+  <widget class="ATCMgraph" name="atcmGraph_3">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>170</y>
+     <width>241</width>
+     <height>101</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>ATCM QGraph</string>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMgraph widget</string>
+   </property>
+   <property name="x1Variable">
+    <string>PLC_time</string>
+   </property>
+   <property name="x1Min">
+    <string>PLC_timeMin</string>
+   </property>
+   <property name="x1Max">
+    <string>PLC_timeMax</string>
+   </property>
+   <property name="y1Variable">
+    <string>STATUS1_REMOTE</string>
+   </property>
+   <property name="y1Min">
+    <string>-1</string>
+   </property>
+   <property name="y1Max">
+    <string>2</string>
+   </property>
+   <property name="Display1">
+    <string/>
+   </property>
+   <property name="x2Variable">
+    <string>PLC_time</string>
+   </property>
+   <property name="x2Min">
+    <string>PLC_timeMin</string>
+   </property>
+   <property name="x2Max">
+    <string>PLC_timeMax</string>
+   </property>
+   <property name="y2Variable">
+    <string>STATUS1_DONE</string>
+   </property>
+   <property name="y2Min">
+    <string>-1</string>
+   </property>
+   <property name="y2Max">
+    <string>2</string>
+   </property>
+   <property name="Display2">
+    <string/>
+   </property>
+  </widget>
+  <widget class="ATCMgraph" name="atcmGraph_4">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>170</y>
+     <width>241</width>
+     <height>101</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>ATCM QGraph</string>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMgraph widget</string>
+   </property>
+   <property name="x1Variable">
+    <string>PLC_time</string>
+   </property>
+   <property name="x1Min">
+    <string>PLC_timeMin</string>
+   </property>
+   <property name="x1Max">
+    <string>PLC_timeMax</string>
+   </property>
+   <property name="y1Variable">
+    <string>STATUS2_REMOTE</string>
+   </property>
+   <property name="y1Min">
+    <string>-1</string>
+   </property>
+   <property name="y1Max">
+    <string>2</string>
+   </property>
+   <property name="Display1">
+    <string/>
+   </property>
+   <property name="x2Variable">
+    <string>PLC_time</string>
+   </property>
+   <property name="x2Min">
+    <string>PLC_timeMin</string>
+   </property>
+   <property name="x2Max">
+    <string>PLC_timeMax</string>
+   </property>
+   <property name="y2Variable">
+    <string>STATUS2_DONE</string>
+   </property>
+   <property name="y2Min">
+    <string>-1</string>
+   </property>
+   <property name="y2Max">
+    <string>2</string>
+   </property>
+   <property name="Display2">
+    <string/>
+   </property>
+  </widget>
   <zorder>label_Qt_Project</zorder>
   <zorder>atcmButton_menu</zorder>
   <zorder>label_Qt_Project_2</zorder>
@@ -375,11 +577,13 @@
   <zorder>atcmTime</zorder>
   <zorder>atcmDate</zorder>
   <zorder>line_vt_2</zorder>
-  <zorder>line_hr_2</zorder>
-  <zorder>line_hr_3</zorder>
   <zorder>line_vt_4</zorder>
   <zorder>line_hr_1</zorder>
   <zorder>line_vt_1</zorder>
+  <zorder>atcmGraph</zorder>
+  <zorder>atcmGraph_2</zorder>
+  <zorder>atcmGraph_3</zorder>
+  <zorder>atcmGraph_4</zorder>
  </widget>
  <customwidgets>
   <customwidget>
@@ -390,6 +594,11 @@
   <customwidget>
    <class>ATCMdate</class>
    <extends>QPushButton</extends>
+   <header>atcmplugin.h</header>
+  </customwidget>
+  <customwidget>
+   <class>ATCMgraph</class>
+   <extends>QFrame</extends>
    <header>atcmplugin.h</header>
   </customwidget>
   <customwidget>

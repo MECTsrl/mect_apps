@@ -12,6 +12,8 @@
 #include "main.h"
 #include "page400.h"
 #include "ui_page400.h"
+#include "crosstable.h"
+#include <QDir>
 
 /**
  * @brief this macro is used to set the PAGE400 style.
@@ -42,6 +44,7 @@ page400::page400(QWidget *parent) :
     /* set the style described into the macro SET_PAGE400_STYLE */
     SET_PAGE400_STYLE();
     translateFontSize(this);
+    recipeList.clear();
 }
 
 /**
@@ -93,6 +96,16 @@ void page400::updateData()
          LOG_PRINT(info_e,"################### NRE_REG_1 %d\n", value);
      }
      */
+    if (STATUS == 4) // DONE
+    {
+        ui->pushButtonNext->setEnabled(true);
+        doWrite_DO_TEST(0);
+        /* TODO: report */
+        if ( ui->checkBoxAuto->isChecked() )
+        {
+            on_pushButtonNext_clicked();
+        }
+    }
 }
 
 /**
@@ -112,4 +125,90 @@ void page400::changeEvent(QEvent * event)
 page400::~page400()
 {
     delete ui;
+}
+void page400::on_atcmComboBoxModel_currentIndexChanged(const QString &arg1)
+{
+    dirname = QString(RECIPE_DIR) + QString("/") + arg1;
+    QDir recipeDir(dirname, "*.csv");
+    recipeList = recipeDir.entryList(QDir::Files);
+}
+
+int page400::LoadRecipe(const QString filename)
+{
+    FILE * fp = fopen(filename.toAscii().data(), "r");
+    if (fp == NULL)
+    {
+        LOG_PRINT(info_e, "Cannot open '%s'\n", filename.toAscii().data());
+        return -1;
+    }
+    char varname[TAG_LEN] = "";
+    char value[TAG_LEN] = "";
+    char line[MAX_LINE] = "";
+    char * p;
+    int number_of_variables = 0;
+    while (fgets(line, LINE_SIZE, fp) != NULL)
+    {
+        p = line;
+        /* tag */
+        p = mystrtok(p, varname, SEPARATOR);
+        if (p == NULL || varname[0] == '\0')
+        {
+            LOG_PRINT(error_e, "Invalid tag '%s'\n", line);
+            continue;
+        }
+        int decimal = getVarDecimalByName(varname);
+        /* value */
+        p = mystrtok(p, value, SEPARATOR);
+        if (value[0] != '\0')
+        {
+            float val_f = 0;
+            val_f = atof(value);
+            sprintf(value, "%.*f", decimal, val_f );
+            if (prepareFormattedVar(varname, value) == BUSY)
+            {
+                LOG_PRINT(warning_e, "busy, waiting to write the variable '%s' with the value '%s'\n", varname, value);
+            }
+            LOG_PRINT(info_e, "value '%s'\n", value);
+            number_of_variables++;
+        }
+    }
+    fclose(fp);
+    if (number_of_variables > 0)
+    {
+        writePendingInorder();
+    }
+    return number_of_variables;
+}
+
+void page400::on_pushButtonNext_clicked()
+{
+    static int step = 0;
+    if (step >= recipeList.count())
+    {
+        if (recipeList.count() == 0)
+        {
+            fprintf(stderr, "Nothing to load\n");
+            return;
+        }
+        if (!ui->checkBoxRepeat->isChecked())
+        {
+            fprintf(stderr, "Step finished!\n");
+            return;
+        }
+        else
+        {
+            step = 0;
+        }
+    }
+    ui->pushButtonNext->setEnabled(false);
+    if (LoadRecipe(dirname + QString("/") + recipeList.at(step)) < 0)
+    {
+        fprintf(stderr, "FAIL dirname '%s'\n",QString(dirname + QString("/") + recipeList.at(step)).toAscii().data() );
+    }
+    else
+    {
+        fprintf(stderr, "DO_TEST dirname '%s'\n",QString(dirname + QString("/") + recipeList.at(step)).toAscii().data() );
+        step++;
+        doWrite_DO_TEST(1);
+    }
 }

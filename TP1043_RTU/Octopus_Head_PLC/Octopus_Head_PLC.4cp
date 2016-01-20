@@ -23,3 +23,9 @@ file=$(LIBDIR)\ATCM_IEC1131_3.4cl
 [Targets]
 file=TP1043_RTU.ATHW119
 
+[Classes.Functions]
+file=Translate_DigIn.st
+file=Translate_DigOut.st
+file=Translate_AnIn.st
+file=Translate_AnOut.st
+file=Translate_Others.st

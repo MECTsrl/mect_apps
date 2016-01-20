@@ -160,48 +160,6 @@ background-color: rgb(255, 255, 127);
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
-  <widget class="ATCMled" name="atcmLed_2">
-   <property name="geometry">
-    <rect>
-     <x>185</x>
-     <y>25</y>
-     <width>20</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="minimumSize">
-    <size>
-     <width>20</width>
-     <height>20</height>
-    </size>
-   </property>
-   <property name="toolTip">
-    <string>STOP</string>
-   </property>
-   <property name="whatsThis">
-    <string>ATCMled widget</string>
-   </property>
-   <property name="variable">
-    <string>STOP</string>
-   </property>
-   <property name="refresh">
-    <number>500</number>
-   </property>
-   <property name="viewStatus">
-    <bool>false</bool>
-   </property>
-   <property name="visibilityVar">
-    <string/>
-   </property>
-   <property name="onIcon">
-    <iconset>
-     <normaloff>:/on.png</normaloff>:/on.png</iconset>
-   </property>
-   <property name="offIcon">
-    <iconset>
-     <normaloff>:/off.png</normaloff>:/off.png</iconset>
-   </property>
-  </widget>
   <widget class="QLabel" name="label_Qt_Project">
    <property name="geometry">
     <rect>
@@ -422,62 +380,6 @@ background-color: rgb(255, 255, 127);
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
-  <widget class="ATCMcombobox" name="atcmComboBox">
-   <property name="geometry">
-    <rect>
-     <x>1</x>
-     <y>0</y>
-     <width>120</width>
-     <height>34</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>DejaVu Sans Mono</family>
-     <pointsize>10</pointsize>
-    </font>
-   </property>
-   <property name="toolTip">
-    <string>PRODUCT_ID</string>
-   </property>
-   <property name="whatsThis">
-    <string>ATCMcombobox widget</string>
-   </property>
-   <property name="variable">
-    <string>PRODUCT_ID</string>
-   </property>
-   <property name="refresh">
-    <number>500</number>
-   </property>
-   <property name="viewStatus">
-    <bool>false</bool>
-   </property>
-   <property name="writeAcknowledge">
-    <bool>false</bool>
-   </property>
-   <property name="visibilityVar">
-    <string/>
-   </property>
-   <property name="bgColor">
-    <color>
-     <red>170</red>
-     <green>255</green>
-     <blue>127</blue>
-    </color>
-   </property>
-   <property name="borderWidth">
-    <number>0</number>
-   </property>
-   <property name="borderRadius">
-    <number>0</number>
-   </property>
-   <property name="apparence">
-    <enum>QFrame::Raised</enum>
-   </property>
-   <property name="mapping">
-    <string>1;TPAC1007_4AA;2;2</string>
-   </property>
-  </widget>
   <widget class="QLabel" name="label_PLC_DigIn_11">
    <property name="geometry">
     <rect>
@@ -598,19 +500,6 @@ background-color: rgb(255, 255, 127);
    <property name="offIcon">
     <iconset>
      <normaloff>:/off.png</normaloff>:/off.png</iconset>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_2">
-   <property name="geometry">
-    <rect>
-     <x>210</x>
-     <y>27</y>
-     <width>46</width>
-     <height>13</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Stop</string>
    </property>
   </widget>
   <widget class="ATCMled" name="atcmLed_PLC_DigOut_11">
@@ -808,48 +697,6 @@ background-color: rgb(255, 255, 127);
      <normaloff>:/off.png</normaloff>:/off.png</iconset>
    </property>
   </widget>
-  <widget class="ATCMled" name="atcmLed_3">
-   <property name="geometry">
-    <rect>
-     <x>185</x>
-     <y>45</y>
-     <width>20</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="minimumSize">
-    <size>
-     <width>20</width>
-     <height>20</height>
-    </size>
-   </property>
-   <property name="toolTip">
-    <string>RESET</string>
-   </property>
-   <property name="whatsThis">
-    <string>ATCMled widget</string>
-   </property>
-   <property name="variable">
-    <string>RESET</string>
-   </property>
-   <property name="refresh">
-    <number>500</number>
-   </property>
-   <property name="viewStatus">
-    <bool>false</bool>
-   </property>
-   <property name="visibilityVar">
-    <string/>
-   </property>
-   <property name="onIcon">
-    <iconset>
-     <normaloff>:/on.png</normaloff>:/on.png</iconset>
-   </property>
-   <property name="offIcon">
-    <iconset>
-     <normaloff>:/off.png</normaloff>:/off.png</iconset>
-   </property>
-  </widget>
   <widget class="QLabel" name="label_PLC_DigIn_9">
    <property name="geometry">
     <rect>
@@ -873,19 +720,6 @@ background-color: rgb(255, 255, 127);
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label">
-   <property name="geometry">
-    <rect>
-     <x>210</x>
-     <y>7</y>
-     <width>46</width>
-     <height>13</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Start</string>
    </property>
   </widget>
   <widget class="Line" name="line_vt_2">
@@ -1230,48 +1064,6 @@ background-color: rgb(255, 255, 127);
      <normaloff>:/off.png</normaloff>:/off.png</iconset>
    </property>
   </widget>
-  <widget class="ATCMled" name="atcmLed">
-   <property name="geometry">
-    <rect>
-     <x>185</x>
-     <y>5</y>
-     <width>20</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="minimumSize">
-    <size>
-     <width>20</width>
-     <height>20</height>
-    </size>
-   </property>
-   <property name="toolTip">
-    <string>START</string>
-   </property>
-   <property name="whatsThis">
-    <string>ATCMled widget</string>
-   </property>
-   <property name="variable">
-    <string>START</string>
-   </property>
-   <property name="refresh">
-    <number>500</number>
-   </property>
-   <property name="viewStatus">
-    <bool>false</bool>
-   </property>
-   <property name="visibilityVar">
-    <string/>
-   </property>
-   <property name="onIcon">
-    <iconset>
-     <normaloff>:/on.png</normaloff>:/on.png</iconset>
-   </property>
-   <property name="offIcon">
-    <iconset>
-     <normaloff>:/off.png</normaloff>:/off.png</iconset>
-   </property>
-  </widget>
   <widget class="QLabel" name="label_PLC_DigIn_4">
    <property name="geometry">
     <rect>
@@ -1418,19 +1210,6 @@ background-color: rgb(255, 255, 127);
      <normaloff>:/off.png</normaloff>:/off.png</iconset>
    </property>
   </widget>
-  <widget class="QLabel" name="label_3">
-   <property name="geometry">
-    <rect>
-     <x>210</x>
-     <y>47</y>
-     <width>46</width>
-     <height>13</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Reset</string>
-   </property>
-  </widget>
   <widget class="ATCMled" name="atcmLed_PLC_DigOut_3">
    <property name="geometry">
     <rect>
@@ -1526,62 +1305,6 @@ background-color: rgb(255, 255, 127);
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>
-   </property>
-  </widget>
-  <widget class="ATCMcombobox" name="atcmComboBox_2">
-   <property name="geometry">
-    <rect>
-     <x>1</x>
-     <y>34</y>
-     <width>120</width>
-     <height>34</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>DejaVu Sans Mono</family>
-     <pointsize>10</pointsize>
-    </font>
-   </property>
-   <property name="toolTip">
-    <string>TEST_STEP</string>
-   </property>
-   <property name="whatsThis">
-    <string>ATCMcombobox widget</string>
-   </property>
-   <property name="variable">
-    <string>TEST_STEP</string>
-   </property>
-   <property name="refresh">
-    <number>500</number>
-   </property>
-   <property name="viewStatus">
-    <bool>false</bool>
-   </property>
-   <property name="writeAcknowledge">
-    <bool>false</bool>
-   </property>
-   <property name="visibilityVar">
-    <string/>
-   </property>
-   <property name="bgColor">
-    <color>
-     <red>255</red>
-     <green>170</green>
-     <blue>127</blue>
-    </color>
-   </property>
-   <property name="borderWidth">
-    <number>0</number>
-   </property>
-   <property name="borderRadius">
-    <number>0</number>
-   </property>
-   <property name="apparence">
-    <enum>QFrame::Raised</enum>
-   </property>
-   <property name="mapping">
-    <string>1;1;2;2;3;3;4;4;5;5;6;6;7;7;8;8;9;9;10;10</string>
    </property>
   </widget>
   <widget class="ATCMled" name="atcmLed_PLC_DigOut_10">
@@ -2837,27 +2560,22 @@ background-color: rgb(255, 255, 127);
   <zorder>atcmButton_menu</zorder>
   <zorder>atcmLed_PLC_DigIn_9</zorder>
   <zorder>label_PLC_DigIn_2</zorder>
-  <zorder>atcmLed_2</zorder>
   <zorder>label_Qt_Project</zorder>
   <zorder>atcmLed_PLC_DigIn_5</zorder>
   <zorder>atcmLed_PLC_DigOut_7</zorder>
   <zorder>atcmLed_PLC_DigIn_8</zorder>
   <zorder>atcmLed_PLC_DigOut_6</zorder>
   <zorder>label_PLC_DigIn_6</zorder>
-  <zorder>atcmComboBox</zorder>
   <zorder>label_PLC_DigIn_11</zorder>
   <zorder>atcmLed_PLC_DigOut_12</zorder>
   <zorder>label_PLC_DigIn_12</zorder>
   <zorder>atcmLed_PLC_DigIn_2</zorder>
-  <zorder>label_2</zorder>
   <zorder>atcmLed_PLC_DigOut_11</zorder>
   <zorder>label_PLC_DigIn_5</zorder>
   <zorder>atcmLed_PLC_DigOut_9</zorder>
   <zorder>atcmLed_PLC_DigIn_11</zorder>
   <zorder>atcmLed_PLC_DigIn_10</zorder>
-  <zorder>atcmLed_3</zorder>
   <zorder>label_PLC_DigIn_9</zorder>
-  <zorder>label</zorder>
   <zorder>label_PLC_DigIn_7</zorder>
   <zorder>atcmLed_PLC_DigOut_8</zorder>
   <zorder>atcmLed_PLC_DigOut_1</zorder>
@@ -2868,16 +2586,13 @@ background-color: rgb(255, 255, 127);
   <zorder>atcmLed_PLC_DigIn_6</zorder>
   <zorder>atcmLed_PLC_DigIn_12</zorder>
   <zorder>atcmLed_PLC_DigOut_5</zorder>
-  <zorder>atcmLed</zorder>
   <zorder>label_PLC_DigIn_4</zorder>
   <zorder>atcmLed_PLC_DigOut_4</zorder>
   <zorder>atcmLed_PLC_DigOut_2</zorder>
   <zorder>atcmLed_PLC_DigIn_4</zorder>
-  <zorder>label_3</zorder>
   <zorder>atcmLed_PLC_DigOut_3</zorder>
   <zorder>atcmLed_PLC_DigIn_7</zorder>
   <zorder>label_PLC_DigIn_1</zorder>
-  <zorder>atcmComboBox_2</zorder>
   <zorder>atcmLed_PLC_DigOut_10</zorder>
   <zorder>atcmLed_PLC_DigIn_1</zorder>
   <zorder>atcmButton_6</zorder>
@@ -2925,11 +2640,6 @@ background-color: rgb(255, 255, 127);
   <customwidget>
    <class>ATCMbutton</class>
    <extends>QPushButton</extends>
-   <header>atcmplugin.h</header>
-  </customwidget>
-  <customwidget>
-   <class>ATCMcombobox</class>
-   <extends>QComboBox</extends>
    <header>atcmplugin.h</header>
   </customwidget>
   <customwidget>
