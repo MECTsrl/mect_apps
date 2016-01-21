@@ -28,7 +28,7 @@ public:
     
 private slots:
     void changeEvent(QEvent * event);
-    void on_atcmComboBoxModel_currentIndexChanged(const QString &arg1);
+    void on_atcmComboBox_PRODUCT_ID_currentIndexChanged(const QString &arg1);
     void on_pushButtonNext_clicked();
 
     void on_pushButton_PWR_toggled(bool checked);

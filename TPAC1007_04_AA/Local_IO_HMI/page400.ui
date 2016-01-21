@@ -60,13 +60,13 @@ background-color: rgb(255, 255, 127);
     </rect>
    </property>
    <property name="toolTip">
-    <string>STATUSx_DONE</string>
+    <string>STATUS_DONE</string>
    </property>
    <property name="whatsThis">
     <string>ATCMled widget</string>
    </property>
    <property name="variable">
-    <string>STATUSx_DONE</string>
+    <string>STATUS_DONE</string>
    </property>
    <property name="refresh">
     <number>200</number>
@@ -115,13 +115,13 @@ background-color: rgb(255, 255, 127);
     </rect>
    </property>
    <property name="toolTip">
-    <string>STATUSx_REMOTE</string>
+    <string>STATUS_REMOTE</string>
    </property>
    <property name="whatsThis">
     <string>ATCMled widget</string>
    </property>
    <property name="variable">
-    <string>STATUSx_REMOTE</string>
+    <string>STATUS_REMOTE</string>
    </property>
    <property name="refresh">
     <number>200</number>
@@ -263,13 +263,13 @@ background-color: rgb(255, 255, 127);
     </rect>
    </property>
    <property name="toolTip">
-    <string>STATUSx_LOCAL</string>
+    <string>STATUS_LOCAL</string>
    </property>
    <property name="whatsThis">
     <string>ATCMled widget</string>
    </property>
    <property name="variable">
-    <string>STATUSx_LOCAL</string>
+    <string>STATUS_LOCAL</string>
    </property>
    <property name="refresh">
     <number>200</number>
@@ -2292,13 +2292,13 @@ Server</string>
     </rect>
    </property>
    <property name="toolTip">
-    <string>STARTx_TEST</string>
+    <string>START_TEST</string>
    </property>
    <property name="whatsThis">
     <string>ATCMled widget</string>
    </property>
    <property name="variable">
-    <string>STARTx_TEST</string>
+    <string>START_TEST</string>
    </property>
    <property name="refresh">
     <number>200</number>
@@ -2328,13 +2328,13 @@ Server</string>
     </rect>
    </property>
    <property name="toolTip">
-    <string>STARTx_REMOTE</string>
+    <string>START_REMOTE</string>
    </property>
    <property name="whatsThis">
     <string>ATCMled widget</string>
    </property>
    <property name="variable">
-    <string>STARTx_REMOTE</string>
+    <string>START_REMOTE</string>
    </property>
    <property name="refresh">
     <number>200</number>

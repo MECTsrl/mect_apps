@@ -127,7 +127,7 @@ page400::~page400()
 {
     delete ui;
 }
-void page400::on_atcmComboBoxModel_currentIndexChanged(const QString &arg1)
+void page400::on_atcmComboBox_PRODUCT_ID_currentIndexChanged(const QString &arg1)
 {
     dirname = QString(RECIPE_DIR) + QString("/") + arg1;
     QDir recipeDir(dirname, "*.csv");

@@ -50,8 +50,6 @@
         <location filename="page100.ui" line="465"/>
         <location filename="page100.ui" line="896"/>
         <location filename="page100.ui" line="2183"/>
-        <location filename="page100.ui" line="3198"/>
-        <location filename="page100.ui" line="3201"/>
         <source>1</source>
         <translation type="unfinished"></translation>
     </message>
@@ -69,8 +67,6 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="128"/>
-        <location filename="page100.ui" line="131"/>
         <location filename="page100.ui" line="1049"/>
         <location filename="page100.ui" line="2300"/>
         <location filename="page100.ui" line="2303"/>
@@ -105,8 +101,6 @@
         <location filename="page100.ui" line="626"/>
         <location filename="page100.ui" line="1362"/>
         <location filename="page100.ui" line="1365"/>
-        <location filename="page100.ui" line="3083"/>
-        <location filename="page100.ui" line="3086"/>
         <source>3</source>
         <translation type="unfinished"></translation>
     </message>
@@ -126,8 +120,6 @@
     <message>
         <location filename="page100.ui" line="699"/>
         <location filename="page100.ui" line="702"/>
-        <location filename="page100.ui" line="2636"/>
-        <location filename="page100.ui" line="2639"/>
         <location filename="page100.ui" line="3652"/>
         <source>4</source>
         <translation type="unfinished"></translation>
@@ -607,8 +599,6 @@
         <location filename="page100.ui" line="1396"/>
         <location filename="page100.ui" line="2147"/>
         <location filename="page100.ui" line="2150"/>
-        <location filename="page100.ui" line="2964"/>
-        <location filename="page100.ui" line="2967"/>
         <source>8</source>
         <translation type="unfinished"></translation>
     </message>
@@ -621,8 +611,6 @@
     </message>
     <message>
         <location filename="page100.ui" line="733"/>
-        <location filename="page100.ui" line="3551"/>
-        <location filename="page100.ui" line="3554"/>
         <location filename="page100.ui" line="4109"/>
         <location filename="page100.ui" line="4112"/>
         <source>7</source>
@@ -644,8 +632,6 @@
     <message>
         <location filename="page100.ui" line="1821"/>
         <location filename="page100.ui" line="1824"/>
-        <location filename="page100.ui" line="2379"/>
-        <location filename="page100.ui" line="2382"/>
         <location filename="page100.ui" line="3456"/>
         <source>5</source>
         <translation type="unfinished"></translation>
@@ -667,8 +653,6 @@
         <location filename="page100.ui" line="1247"/>
         <location filename="page100.ui" line="1250"/>
         <location filename="page100.ui" line="3481"/>
-        <location filename="page100.ui" line="3871"/>
-        <location filename="page100.ui" line="3874"/>
         <source>6</source>
         <translation type="unfinished"></translation>
     </message>
@@ -927,7 +911,8 @@
     <message>
         <location filename="page400.ui" line="63"/>
         <location filename="page400.ui" line="69"/>
-        <source>STATUSx_DONE</source>
+        <source>STATUS_DONE</source>
+        <oldsource>STATUSx_DONE</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -938,7 +923,8 @@
     <message>
         <location filename="page400.ui" line="118"/>
         <location filename="page400.ui" line="124"/>
-        <source>STATUSx_REMOTE</source>
+        <source>STATUS_REMOTE</source>
+        <oldsource>STATUSx_REMOTE</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -949,7 +935,8 @@
     <message>
         <location filename="page400.ui" line="266"/>
         <location filename="page400.ui" line="272"/>
-        <source>STATUSx_LOCAL</source>
+        <source>STATUS_LOCAL</source>
+        <oldsource>STATUSx_LOCAL</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1313,13 +1300,15 @@
     <message>
         <location filename="page400.ui" line="2295"/>
         <location filename="page400.ui" line="2301"/>
-        <source>STARTx_TEST</source>
+        <source>START_TEST</source>
+        <oldsource>STARTx_TEST</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="page400.ui" line="2331"/>
         <location filename="page400.ui" line="2337"/>
-        <source>STARTx_REMOTE</source>
+        <source>START_REMOTE</source>
+        <oldsource>STARTx_REMOTE</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
