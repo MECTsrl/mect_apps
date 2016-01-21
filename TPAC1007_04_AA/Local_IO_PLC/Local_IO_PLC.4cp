@@ -22,4 +22,5 @@ file=$(LIBDIR)\ATCM_IEC1131_3.4cl
 
 [Targets]
 file=TPAC1007_4_AA.ATHW119
+file=Octopus_Horn.ATHW119
 
