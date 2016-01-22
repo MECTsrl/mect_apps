@@ -11,8 +11,8 @@ void setup(void)
     /* OUTPUT ON <-- DO2 */
     doWrite_PLC_DigDir_3(1);
     doWrite_PLC_DigDir_2(1);
-    doWrite_PLC_DigOut_3(0);
-    doWrite_PLC_DigOut_2(0);
+//    doWrite_PLC_DigOut_3(0);
+//    doWrite_PLC_DigOut_2(0);
     /* ANALOG OUTPUT THRESHOLD */
     doWrite_RTU_AnOutConf_X(5);
     doWrite_STATUS(0);
@@ -624,6 +624,7 @@ void loop(void)
         if (DO_REMOTE)
         {
             doWrite_START2_REMOTE(true);  doWrite_STARTx_REMOTE(true);
+            doWrite_START2_TEST(false);  doWrite_STARTx_TEST(false);
             doWrite_STATUS(1);
         }
         break;

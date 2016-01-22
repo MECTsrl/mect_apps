@@ -37,7 +37,7 @@ void loop(void)
             doWrite_STATUS_REMOTE(0);
             /* TODO: do test */
             /* TCP_SRV -> PLC_ */
-            doWrite_STATUS_DONE(0);
+            doWrite_STATUS_DONE(1);
         }
     }
     if (STATUS_DONE)
