@@ -24,3 +24,8 @@ file=$(LIBDIR)\ATCM_IEC1131_3.4cl
 file=TPAC1007_4_AA.ATHW119
 file=Octopus_Horn.ATHW119
 
+[Compiler.ATHW119]
+opt=bp2
+opt=ncc:0
+[Target.HW119]
+ConnectionTimeout=100
