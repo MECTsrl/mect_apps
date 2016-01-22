@@ -11,6 +11,7 @@ DWORD_BIT <-> int
 */ 
 #include "crosstable.h"
 #include "cross_table_utility.h"
+#include "automation.h"
  
 u_int32_t PRODUCT_ID = 0;
 u_int32_t SERIAL_NUMBER = 0;
@@ -11248,6 +11249,7 @@ return (prepareWriteVarByCtIndex(ID_PLC_timeWin, &value, NULL, 0) == ERROR);
 
 int update_all(void)
 {
+    static bool first = true;
 int retval = 0;
 retval += readFromDb(ID_PRODUCT_ID, &PRODUCT_ID);
 retval += readFromDb(ID_SERIAL_NUMBER, &SERIAL_NUMBER);
@@ -12113,5 +12115,13 @@ retval += readFromDb(ID_PLC_time, &PLC_time);
 retval += readFromDb(ID_PLC_timeMin, &PLC_timeMin);
 retval += readFromDb(ID_PLC_timeMax, &PLC_timeMax);
 retval += readFromDb(ID_PLC_timeWin, &PLC_timeWin);
+
+if (first)
+{
+    first = false;
+    setup();
+}
+loop();
+
 return retval;
 }

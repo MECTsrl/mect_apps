@@ -1,4 +1,4 @@
 <RCC>
-    <qresource prefix="/config"/>
+    <qresource prefix="/icons"/>
 </RCC>
 

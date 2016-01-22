@@ -68,8 +68,8 @@ LIBS += \
 
 # Input
 HEADERS += \
-        config/crosstable.h \
         style.h \
+        config/crosstable.h \
         pages.h
 
 SOURCES += \
