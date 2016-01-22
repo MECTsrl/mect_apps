@@ -66,6 +66,7 @@ u_int16_t PLC_Heartbeat = 0;
 float PLC_time = 0;
 float PLC_timeMin = 0;
 float PLC_timeMax = 0;
+float PLC_timeWin = 0;
 
 
 int doWrite_RISING_FRONT(int value)
@@ -716,6 +717,18 @@ return (prepareWriteVarByCtIndex(ID_PLC_timeMax, &value, NULL, 0) == ERROR);
 }
 
 
+int doWrite_PLC_timeWin(float value)
+{
+return writeVarByCtIndex(ID_PLC_timeWin,  &value);
+}
+
+
+int addWrite_PLC_timeWin(float value)
+{
+return (prepareWriteVarByCtIndex(ID_PLC_timeWin, &value, NULL, 0) == ERROR);
+}
+
+
 int update_all(void)
 {
 int retval = 0;
@@ -773,5 +786,6 @@ retval += readFromDb(ID_PLC_Heartbeat, &PLC_Heartbeat);
 retval += readFromDb(ID_PLC_time, &PLC_time);
 retval += readFromDb(ID_PLC_timeMin, &PLC_timeMin);
 retval += readFromDb(ID_PLC_timeMax, &PLC_timeMax);
+retval += readFromDb(ID_PLC_timeWin, &PLC_timeWin);
 return retval;
 }
