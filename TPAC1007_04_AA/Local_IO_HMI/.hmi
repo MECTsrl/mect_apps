@@ -1,6 +1,7 @@
 INPUT(
 ./crosstable.obj
 ./pages.obj
+./automation.obj
 ./page100.obj
 ./page200.obj
 ./page400.obj
