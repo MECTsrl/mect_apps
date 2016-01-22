@@ -687,10 +687,10 @@ background-color: rgb(255, 255, 127);
     </color>
    </property>
    <property name="text">
-    <string>7</string>
+    <string/>
    </property>
    <property name="pressText">
-    <string>7</string>
+    <string/>
    </property>
    <property name="borderWidth">
     <number>1</number>
@@ -779,10 +779,10 @@ background-color: rgb(255, 255, 127);
     </color>
    </property>
    <property name="text">
-    <string>5</string>
+    <string/>
    </property>
    <property name="pressText">
-    <string>5</string>
+    <string/>
    </property>
    <property name="borderWidth">
     <number>1</number>
@@ -902,10 +902,10 @@ color: rgb(0, 0, 0);</string>
     </color>
    </property>
    <property name="text">
-    <string>4</string>
+    <string/>
    </property>
    <property name="pressText">
-    <string>4</string>
+    <string/>
    </property>
    <property name="borderWidth">
     <number>1</number>
@@ -1356,10 +1356,10 @@ color: rgb(0, 0, 0);</string>
     </color>
    </property>
    <property name="text">
-    <string>2</string>
+    <string/>
    </property>
    <property name="pressText">
-    <string>2</string>
+    <string/>
    </property>
    <property name="borderWidth">
     <number>1</number>
@@ -1884,10 +1884,10 @@ color: rgb(0, 0, 0);</string>
     </color>
    </property>
    <property name="text">
-    <string>1</string>
+    <string/>
    </property>
    <property name="pressText">
-    <string>1</string>
+    <string/>
    </property>
    <property name="borderWidth">
     <number>1</number>
@@ -2161,10 +2161,10 @@ color: rgb(0, 0, 0);</string>
     </color>
    </property>
    <property name="text">
-    <string>3</string>
+    <string/>
    </property>
    <property name="pressText">
-    <string>3</string>
+    <string/>
    </property>
    <property name="borderWidth">
     <number>1</number>
@@ -2531,10 +2531,10 @@ color: rgb(0, 0, 0);</string>
     </color>
    </property>
    <property name="text">
-    <string>8</string>
+    <string/>
    </property>
    <property name="pressText">
-    <string>8</string>
+    <string/>
    </property>
    <property name="borderWidth">
     <number>1</number>
@@ -3067,10 +3067,10 @@ color: rgb(0, 0, 0);</string>
     </color>
    </property>
    <property name="text">
-    <string>6</string>
+    <string/>
    </property>
    <property name="pressText">
-    <string>6</string>
+    <string/>
    </property>
    <property name="borderWidth">
     <number>1</number>

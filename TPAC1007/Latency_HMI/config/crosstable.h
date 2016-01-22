@@ -286,6 +286,11 @@ extern float PLC_timeMax;
 int doWrite_PLC_timeMax(float value);
 int prepareWrite_PLC_timeMax(float value);
  
+#define ID_PLC_timeWin 5393
+extern float PLC_timeWin;
+int doWrite_PLC_timeWin(float value);
+int prepareWrite_PLC_timeWin(float value);
+ 
 #ifdef __cplusplus
 }
 #endif
