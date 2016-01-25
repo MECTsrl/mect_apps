@@ -89,8 +89,8 @@ check_gotopage_bind.commands = @perl $${ATCM_TEMPLATE_BASE_DIR}/ATCM-template-pr
         release.commands = $${QT_LRELEASE_PATH}/lrelease $$_PRO_FILE_
         release.depends = update
 
-        QMAKE_EXTRA_TARGETS += update release
-        PRE_TARGETDEPS += update release
+        #QMAKE_EXTRA_TARGETS += update release
+        #PRE_TARGETDEPS += update release
 
         RESOURCES += \
             languages.qrc
