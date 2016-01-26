@@ -688,9 +688,10 @@
     </message>
     <message>
         <location filename="page400.ui" line="905"/>
-        <location filename="page400.ui" line="909"/>
-        <source>TPAC1006
-320x240</source>
+        <location filename="page400.ui" line="908"/>
+        <source>TPAC1006</source>
+        <oldsource>TPAC1006
+320x240</oldsource>
         <translation type="unfinished"></translation>
     </message>
 </context>

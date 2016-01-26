@@ -15,13 +15,13 @@ QMAKE_CXXFLAGS_DEBUG   += -Wno-psabi
 TARGET = hmi
 TEMPLATE = app
 
-target.path = /update
+target.path = /local/root
 INSTALLS += target
 
 config.files = config/Crosstable.csv config/system.ini
 config.files += config/Alarms.csv
 config.files += config/lang_table.csv
-config.path = /update
+config.path = /local/etc/sysconfig
 
 splash.files = config/splash.png config/systool.png
 splash.path = /local/etc/sysconfig/img
@@ -31,10 +31,6 @@ customstore.path = /local/data/customstore
 
 customtrend.files = config/trend1.csv
 customtrend.path = /local/data/customtrend
-
-debug_deploy.files = config/dont_run_safe_hmi
-debug_deploy.path = /var/tmp
-INSTALLS += debug_deploy
 
 INSTALLS += config splash
 
@@ -81,7 +77,7 @@ LIBS += \
 
 # Input
 HEADERS += \
-        crosstable.h \
+        config/crosstable.h \
         style.h \
         pages.h
 
