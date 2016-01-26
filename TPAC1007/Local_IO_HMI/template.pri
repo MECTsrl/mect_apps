@@ -80,8 +80,8 @@ check_missing_file.commands = @perl $${ATCM_TEMPLATE_BASE_DIR}/ATCM-template-pro
 check_undeclared_variable.commands = @perl $${ATCM_TEMPLATE_BASE_DIR}/ATCM-template-project/check_cross_var.pl $$_PRO_FILE_PWD_
 check_gotopage_bind.commands = @perl $${ATCM_TEMPLATE_BASE_DIR}/ATCM-template-project/connectbutton.pl $$_PRO_FILE_PWD_
 
-#QMAKE_EXTRA_TARGETS += check_missing_file check_undeclared_variable check_gotopage_bind
-#PRE_TARGETDEPS += check_missing_file check_undeclared_variable check_gotopage_bind
+QMAKE_EXTRA_TARGETS += check_missing_file check_undeclared_variable check_gotopage_bind
+PRE_TARGETDEPS += check_missing_file check_undeclared_variable check_gotopage_bind
 
 # language
         update.commands = $${QT_LUPDATE_PATH}/lupdate $$_PRO_FILE_
@@ -89,8 +89,8 @@ check_gotopage_bind.commands = @perl $${ATCM_TEMPLATE_BASE_DIR}/ATCM-template-pr
         release.commands = $${QT_LRELEASE_PATH}/lrelease $$_PRO_FILE_
         release.depends = update
 
-        #QMAKE_EXTRA_TARGETS += update release
-        #PRE_TARGETDEPS += update release
+        QMAKE_EXTRA_TARGETS += update release
+        PRE_TARGETDEPS += update release
 
         RESOURCES += \
             languages.qrc
