@@ -17,11 +17,15 @@
 void printVncDisplayString(char * vncString)
 {
     sprintf(vncString, "Multi: VNC:0:size=%dx%d Transformed:rot%d", WIDTH, HEIGHT, ROTATION);
+    userPageList 
+            << "page100"
+               /* add here the label of the new page */
+               ;
+    userPageList.removeDuplicates();
 }
 
 int create_page_nb(page ** p, int pageNb)
 {
-    update_all();
     switch (pageNb)
     {
     case 0x0:
