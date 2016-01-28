@@ -201,72 +201,6 @@
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
-  <widget class="ATCMlabel" name="atcmLabel">
-   <property name="geometry">
-    <rect>
-     <x>241</x>
-     <y>44</y>
-     <width>120</width>
-     <height>24</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>DejaVu Sans Mono</family>
-     <pointsize>8</pointsize>
-    </font>
-   </property>
-   <property name="text">
-    <string>86400</string>
-   </property>
-   <property name="toolTip">
-    <string>PLC_time</string>
-   </property>
-   <property name="whatsThis">
-    <string>ATCMlabel widget</string>
-   </property>
-   <property name="variable">
-    <string>PLC_time</string>
-   </property>
-   <property name="prefix">
-    <string>PLC_time = </string>
-   </property>
-   <property name="refresh">
-    <number>500</number>
-   </property>
-   <property name="max">
-    <string>0</string>
-   </property>
-   <property name="min">
-    <string>0</string>
-   </property>
-   <property name="viewStatus">
-    <bool>false</bool>
-   </property>
-   <property name="visibilityVar">
-    <string/>
-   </property>
-   <property name="bgColor">
-    <color>
-     <red>170</red>
-     <green>255</green>
-     <blue>127</blue>
-    </color>
-   </property>
-   <property name="fontColor">
-    <color>
-     <red>0</red>
-     <green>0</green>
-     <blue>0</blue>
-    </color>
-   </property>
-   <property name="borderWidth">
-    <number>0</number>
-   </property>
-   <property name="borderRadius">
-    <number>0</number>
-   </property>
-  </widget>
   <widget class="ATCMtime" name="atcmTime">
    <property name="geometry">
     <rect>
@@ -512,10 +446,72 @@
     <string/>
    </property>
   </widget>
+  <widget class="ATCMlabel" name="atcmLabel">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>44</y>
+     <width>120</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans Mono</family>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>86400.00</string>
+   </property>
+   <property name="toolTip">
+    <string>PLC_time</string>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMlabel widget</string>
+   </property>
+   <property name="variable">
+    <string>PLC_time</string>
+   </property>
+   <property name="refresh">
+    <number>500</number>
+   </property>
+   <property name="max">
+    <string>0</string>
+   </property>
+   <property name="min">
+    <string>0</string>
+   </property>
+   <property name="viewStatus">
+    <bool>false</bool>
+   </property>
+   <property name="visibilityVar">
+    <string/>
+   </property>
+   <property name="bgColor">
+    <color>
+     <red>170</red>
+     <green>255</green>
+     <blue>127</blue>
+    </color>
+   </property>
+   <property name="fontColor">
+    <color>
+     <red>0</red>
+     <green>0</green>
+     <blue>0</blue>
+    </color>
+   </property>
+   <property name="borderWidth">
+    <number>0</number>
+   </property>
+   <property name="borderRadius">
+    <number>0</number>
+   </property>
+  </widget>
   <zorder>label_Qt_Project</zorder>
   <zorder>atcmButton_menu</zorder>
   <zorder>label_Qt_Project_2</zorder>
-  <zorder>atcmLabel</zorder>
   <zorder>atcmTime</zorder>
   <zorder>atcmDate</zorder>
   <zorder>line_vt_2</zorder>
@@ -525,6 +521,7 @@
   <zorder>atcmGraph</zorder>
   <zorder>atcmGraph_2</zorder>
   <zorder>atcmGraph_4</zorder>
+  <zorder>atcmLabel</zorder>
  </widget>
  <customwidgets>
   <customwidget>

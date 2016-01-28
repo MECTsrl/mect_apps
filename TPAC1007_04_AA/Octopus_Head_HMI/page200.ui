@@ -248,7 +248,7 @@ background-color: rgb(255, 255, 127);
     </font>
    </property>
    <property name="text">
-    <string>86400</string>
+    <string>86400.00</string>
    </property>
    <property name="toolTip">
     <string>PLC_time</string>
@@ -258,9 +258,6 @@ background-color: rgb(255, 255, 127);
    </property>
    <property name="variable">
     <string>PLC_time</string>
-   </property>
-   <property name="prefix">
-    <string>PLC_time = </string>
    </property>
    <property name="refresh">
     <number>500</number>
@@ -519,10 +516,10 @@ background-color: rgb(255, 255, 127);
     </color>
    </property>
    <property name="text">
-    <string>TP1043_RTU</string>
+    <string>TPAC1007_4AA</string>
    </property>
    <property name="pressText">
-    <string>TP1043_RTU</string>
+    <string>TPAC1007_4AA</string>
    </property>
    <property name="borderWidth">
     <number>1</number>

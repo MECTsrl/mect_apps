@@ -1,5 +1,0 @@
-(*[[
-]]*)
-CONFIGURATION Configuration1
-    #IMPORT "Resource1.res"
-END_CONFIGURATION

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 2.7.84, 2016-01-27T16:09:04. -->
+<!-- Written by QtCreator 2.7.84, 2016-01-28T13:06:24. -->
 <qtcreator>
  <data>
   <variable>ProjectExplorer.Project.ActiveTarget</variable>
@@ -213,10 +213,13 @@
        <value type="QString">C:/MectApps/TPAC1006/Local_IO_HMI/config/Alarms.csv</value>
        <value type="QString">C:/MectApps/TPAC1006/Local_IO_HMI/config/splash.png</value>
        <value type="QString">C:/MectApps/TPAC1006/Local_IO_HMI/config/iomap0.cmg</value>
+       <value type="QString">C:/MectApps/TPAC1006/Local_IO_HMI/config/Alarms.csv</value>
        <value type="QString">C:/MectApps/TPAC1006/Local_IO_HMI/config/store1.csv</value>
        <value type="QString">C:/MectApps/TPAC1006/Local_IO_HMI/config/lang_table.csv</value>
        <value type="QString">C:/MectApps/TPAC1006/Local_IO_HMI/config/store1.csv</value>
        <value type="QString">C:/MectApps/TPAC1006/Local_IO_HMI/config/lang_table.csv</value>
+       <value type="QString">C:/MectApps/TPAC1006/Local_IO_HMI/config/Crosstable.csv</value>
+       <value type="QString">C:/MectApps/TPAC1006/Local_IO_HMI/config/trend1.csv</value>
        <value type="QString">C:/MectApps/TPAC1006/Local_IO_HMI/config/dont_run_safe_hmi</value>
        <value type="QString">C:/MectApps/TPAC1006/Local_IO_HMI/config/Crosstable.csv</value>
        <value type="QString">C:/MectApps/TPAC1006/Local_IO_HMI/config/trend1.csv</value>
@@ -231,12 +234,16 @@
        <value type="QString">C:/MectApps/TPAC1006/Local_IO_HMI/config/splash.png</value>
        <value type="QString">C:/MectApps/TPAC1006/Local_IO_HMI/config/store1.csv</value>
        <value type="QString">C:/MectApps/TPAC1006/Local_IO_HMI/config/Crosstable.csv</value>
+       <value type="QString">C:/MectApps/TPAC1006/Local_IO_HMI/config/system.ini</value>
        <value type="QString">C:/MectApps/TPAC1006/Local_IO_HMI/config/Crosstable.csv</value>
        <value type="QString">C:/MectApps/TPAC1006/Local_IO_HMI/config/systool.png</value>
        <value type="QString">C:/MectApps/TPAC1006/Local_IO_HMI/config/Crosstable.csv</value>
        <value type="QString">C:/MectApps/TPAC1006/Local_IO_HMI/config/trend1.csv</value>
+       <value type="QString">C:/MectApps/TPAC1006/Local_IO_HMI/config/iomap0.cmg</value>
        <value type="QString">C:/MectApps/TPAC1006/Local_IO_HMI/config/Alarms.csv</value>
+       <value type="QString">C:/MectApps/TPAC1006/Local_IO_HMI/config/store1.csv</value>
        <value type="QString">C:/MectApps/TPAC1006/Local_IO_HMI/config/Crosstable.csv</value>
+       <value type="QString">C:/MectApps/TPAC1006/Local_IO_HMI/config/lang_table.csv</value>
        <value type="QString">C:/MectApps/TPAC1006/Local_IO_HMI/config/splash.png</value>
        <value type="QString">C:/MectApps/TPAC1006/Local_IO_HMI/config/store1.csv</value>
        <value type="QString">C:/MectApps/TPAC1006/Local_IO_HMI/hmi</value>
@@ -247,13 +254,17 @@
        <value type="QString">C:/MectApps/TPAC1006/Local_IO_HMI/config/splash.png</value>
        <value type="QString">C:/MectApps/TPAC1006/Local_IO_HMI/config/Alarms.csv</value>
        <value type="QString">C:/MectApps/TPAC1006/Local_IO_HMI/config/lang_table.csv</value>
+       <value type="QString">C:/MectApps/TPAC1006/Local_IO_HMI/config/network0.cmg</value>
        <value type="QString">C:/MectApps/TPAC1006/Local_IO_HMI/config/dont_run_safe_hmi</value>
        <value type="QString">C:/MectApps/TPAC1006/Local_IO_HMI/config/dont_run_safe_hmi</value>
        <value type="QString">C:/MectApps/TPAC1006/Local_IO_HMI/config/lang_table.csv</value>
        <value type="QString">C:/MectApps/TPAC1006/Local_IO_HMI/config/lang_table.csv</value>
+       <value type="QString">C:/MectApps/TPAC1006/Local_IO_HMI/hmi</value>
+       <value type="QString">C:/MectApps/TPAC1006/Local_IO_HMI/config/systool.png</value>
        <value type="QString">C:/MectApps/TPAC1006/Local_IO_HMI/hmi</value>
        <value type="QString">C:/MectApps/TPAC1006/Local_IO_HMI/config/Alarms.csv</value>
        <value type="QString">C:/MectApps/TPAC1006/Local_IO_HMI/hmi</value>
+       <value type="QString">C:/MectApps/TPAC1006/Local_IO_HMI/config/splash.png</value>
        <value type="QString">C:/MectApps/TPAC1006/Local_IO_HMI/config/Alarms.csv</value>
        <value type="QString">C:/MectApps/TPAC1006/Local_IO_HMI/hmi</value>
       </valuelist>
@@ -262,10 +273,13 @@
        <value type="QString">192.168.5.211</value>
        <value type="QString">192.168.5.211</value>
        <value type="QString">192.168.5.211</value>
+       <value type="QString">192.168.5.113</value>
        <value type="QString">192.168.5.211</value>
        <value type="QString">192.168.5.208</value>
        <value type="QString">192.168.5.208</value>
        <value type="QString">192.168.5.211</value>
+       <value type="QString">192.168.5.113</value>
+       <value type="QString">192.168.5.113</value>
        <value type="QString">192.168.5.112</value>
        <value type="QString">192.168.5.208</value>
        <value type="QString">192.168.5.211</value>
@@ -280,12 +294,16 @@
        <value type="QString">192.168.5.119</value>
        <value type="QString">192.168.5.112</value>
        <value type="QString">192.168.5.112</value>
+       <value type="QString">192.168.5.113</value>
        <value type="QString">192.168.5.119</value>
        <value type="QString">192.168.5.208</value>
        <value type="QString">192.168.5.211</value>
        <value type="QString">192.168.5.208</value>
+       <value type="QString">192.168.5.113</value>
        <value type="QString">192.168.5.211</value>
+       <value type="QString">192.168.5.113</value>
        <value type="QString">192.168.5.211</value>
+       <value type="QString">192.168.5.113</value>
        <value type="QString">192.168.5.208</value>
        <value type="QString">192.168.5.119</value>
        <value type="QString">192.168.5.208</value>
@@ -296,13 +314,17 @@
        <value type="QString">192.168.5.112</value>
        <value type="QString">192.168.5.208</value>
        <value type="QString">192.168.5.112</value>
+       <value type="QString">192.168.5.113</value>
        <value type="QString">192.168.5.211</value>
        <value type="QString">192.168.5.119</value>
        <value type="QString">192.168.5.119</value>
        <value type="QString">192.168.5.211</value>
+       <value type="QString">192.168.5.113</value>
+       <value type="QString">192.168.5.113</value>
        <value type="QString">192.168.5.211</value>
        <value type="QString">192.168.5.112</value>
        <value type="QString">192.168.5.119</value>
+       <value type="QString">192.168.5.113</value>
        <value type="QString">192.168.5.119</value>
        <value type="QString">192.168.5.112</value>
       </valuelist>
@@ -311,10 +333,13 @@
        <value type="QString">/local/etc/sysconfig</value>
        <value type="QString">/local/etc/sysconfig/img</value>
        <value type="QString">/local/etc/sysconfig</value>
+       <value type="QString">/local/etc/sysconfig</value>
        <value type="QString">/local/data/customstore</value>
        <value type="QString">/update</value>
        <value type="QString">/local/data/customstore</value>
        <value type="QString">/local/etc/sysconfig</value>
+       <value type="QString">/local/etc/sysconfig</value>
+       <value type="QString">/local/data/customtrend</value>
        <value type="QString">/var/tmp</value>
        <value type="QString">/update</value>
        <value type="QString">/local/data/customtrend</value>
@@ -329,11 +354,15 @@
        <value type="QString">/local/etc/sysconfig/img</value>
        <value type="QString">/local/data/customstore</value>
        <value type="QString">/update</value>
+       <value type="QString">/local/etc/sysconfig</value>
        <value type="QString">/update</value>
        <value type="QString">/local/etc/sysconfig/img</value>
        <value type="QString">/update</value>
        <value type="QString">/local/data/customtrend</value>
+       <value type="QString">/local/etc/sysconfig</value>
        <value type="QString">/update</value>
+       <value type="QString">/local/data/customstore</value>
+       <value type="QString">/local/etc/sysconfig</value>
        <value type="QString">/local/etc/sysconfig</value>
        <value type="QString">/local/etc/sysconfig/img</value>
        <value type="QString">/local/data/customstore</value>
@@ -345,13 +374,17 @@
        <value type="QString">/local/etc/sysconfig/img</value>
        <value type="QString">/update</value>
        <value type="QString">/update</value>
+       <value type="QString">/local/etc/sysconfig</value>
        <value type="QString">/var/tmp</value>
        <value type="QString">/var/tmp</value>
        <value type="QString">/update</value>
        <value type="QString">/update</value>
+       <value type="QString">/local/root</value>
+       <value type="QString">/local/etc/sysconfig/img</value>
        <value type="QString">/update</value>
        <value type="QString">/update</value>
        <value type="QString">/update</value>
+       <value type="QString">/local/etc/sysconfig/img</value>
        <value type="QString">/update</value>
        <value type="QString">/update</value>
       </valuelist>
@@ -403,36 +436,54 @@
        <value type="QString">C:/Qt485/imx28/rootfs</value>
        <value type="QString">C:/Qt485/imx28/rootfs</value>
        <value type="QString">C:/Qt485/imx28/rootfs</value>
+       <value type="QString">C:/Qt485/imx28/rootfs</value>
+       <value type="QString">C:/Qt485/imx28/rootfs</value>
+       <value type="QString">C:/Qt485/imx28/rootfs</value>
+       <value type="QString">C:/Qt485/imx28/rootfs</value>
+       <value type="QString">C:/Qt485/imx28/rootfs</value>
+       <value type="QString">C:/Qt485/imx28/rootfs</value>
+       <value type="QString">C:/Qt485/imx28/rootfs</value>
+       <value type="QString">C:/Qt485/imx28/rootfs</value>
+       <value type="QString">C:/Qt485/imx28/rootfs</value>
+       <value type="QString">C:/Qt485/imx28/rootfs</value>
+       <value type="QString">C:/Qt485/imx28/rootfs</value>
       </valuelist>
       <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedTimes">
-       <value type="QDateTime">2016-01-27T15:30:26</value>
-       <value type="QDateTime">2016-01-27T15:30:26</value>
-       <value type="QDateTime">2016-01-27T15:30:26</value>
-       <value type="QDateTime">2016-01-27T15:30:26</value>
-       <value type="QDateTime">2016-01-27T15:30:26</value>
+       <value type="QDateTime">2016-01-28T12:15:57</value>
+       <value type="QDateTime">2016-01-28T12:15:57</value>
+       <value type="QDateTime">2016-01-28T12:15:58</value>
+       <value type="QDateTime">2016-01-28T12:15:58</value>
+       <value type="QDateTime">2016-01-27T18:01:47</value>
+       <value type="QDateTime">2016-01-28T12:15:58</value>
        <value type="QDateTime">2015-12-23T11:50:53</value>
        <value type="QDateTime">2015-12-23T11:50:53</value>
-       <value type="QDateTime">2016-01-27T15:30:26</value>
+       <value type="QDateTime">2016-01-28T12:15:58</value>
+       <value type="QDateTime">2016-01-27T18:01:47</value>
+       <value type="QDateTime">2016-01-27T18:01:48</value>
        <value type="QDateTime">2015-12-23T10:29:39</value>
        <value type="QDateTime">2015-12-23T11:50:52</value>
-       <value type="QDateTime">2016-01-27T15:30:26</value>
+       <value type="QDateTime">2016-01-28T12:15:58</value>
        <value type="QDateTime">2015-12-18T17:36:47</value>
-       <value type="QDateTime">2016-01-27T15:30:26</value>
+       <value type="QDateTime">2016-01-28T12:15:58</value>
        <value type="QDateTime">2015-12-23T11:50:52</value>
        <value type="QDateTime">2015-12-23T10:29:40</value>
        <value type="QDateTime">2015-12-23T11:50:52</value>
-       <value type="QDateTime">2016-01-27T15:30:27</value>
+       <value type="QDateTime">2016-01-28T12:15:59</value>
        <value type="QDateTime">2015-12-18T17:36:47</value>
-       <value type="QDateTime">2016-01-27T15:30:26</value>
+       <value type="QDateTime">2016-01-28T12:15:58</value>
        <value type="QDateTime">2015-12-18T17:36:47</value>
        <value type="QDateTime">2015-12-23T10:29:40</value>
        <value type="QDateTime">2015-12-23T10:29:39</value>
+       <value type="QDateTime">2016-01-27T18:01:47</value>
        <value type="QDateTime">2015-12-18T17:36:46</value>
        <value type="QDateTime">2015-12-23T11:50:53</value>
        <value type="QDateTime">2016-01-26T15:53:39</value>
        <value type="QDateTime">2015-12-23T11:50:53</value>
+       <value type="QDateTime">2016-01-27T18:01:48</value>
        <value type="QDateTime">2016-01-26T15:53:39</value>
-       <value type="QDateTime">2016-01-27T15:30:26</value>
+       <value type="QDateTime">2016-01-27T18:01:48</value>
+       <value type="QDateTime">2016-01-28T12:15:57</value>
+       <value type="QDateTime">2016-01-27T18:01:47</value>
        <value type="QDateTime">2015-12-23T11:50:53</value>
        <value type="QDateTime">2015-12-18T17:36:47</value>
        <value type="QDateTime">2015-12-23T11:50:53</value>
@@ -443,13 +494,17 @@
        <value type="QDateTime">2015-12-23T10:29:40</value>
        <value type="QDateTime">2015-12-23T11:50:52</value>
        <value type="QDateTime">2015-12-23T10:29:40</value>
+       <value type="QDateTime">2016-01-27T18:01:48</value>
        <value type="QDateTime">2016-01-26T15:53:39</value>
        <value type="QDateTime">2015-12-18T17:36:46</value>
        <value type="QDateTime">2015-12-18T17:36:47</value>
        <value type="QDateTime">2016-01-26T15:53:40</value>
+       <value type="QDateTime">2016-01-27T18:01:48</value>
+       <value type="QDateTime">2016-01-27T18:01:48</value>
        <value type="QDateTime">2016-01-26T15:53:40</value>
        <value type="QDateTime">2015-12-23T10:29:40</value>
        <value type="QDateTime">2015-12-18T17:36:47</value>
+       <value type="QDateTime">2016-01-27T18:01:48</value>
        <value type="QDateTime">2015-12-18T17:36:46</value>
        <value type="QDateTime">2015-12-23T10:29:40</value>
       </valuelist>
