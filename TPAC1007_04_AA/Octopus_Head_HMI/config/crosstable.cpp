@@ -18,8 +18,8 @@ u_int32_t TEST_STEP = 0;
 u_int32_t TEST_DATE = 0;
 u_int32_t TEST_TIME = 0;
 u_int32_t TEST_DURATION = 0;
-int DO_REMOTE = 0;
-int DO_TEST = 0;
+int AUTOMATIC = 0;
+int REPEAT = 0;
 u_int16_t STATUS = 0;
 int TST_DigIn_1 = 0;
 int TST_DigIn_2 = 0;
@@ -986,39 +986,39 @@ return getStatus(ID_TEST_DURATION);
 }
 
 
-int doWrite_DO_REMOTE(int value)
+int doWrite_AUTOMATIC(int value)
 {
-return doWrite(ID_DO_REMOTE,  &value);
+return doWrite(ID_AUTOMATIC,  &value);
 }
 
 
-int addWrite_DO_REMOTE(int value)
+int addWrite_AUTOMATIC(int value)
 {
-return addWrite(ID_DO_REMOTE, &value);
+return addWrite(ID_AUTOMATIC, &value);
 }
 
 
-int getStatus_DO_REMOTE()
+int getStatus_AUTOMATIC()
 {
-return getStatus(ID_DO_REMOTE);
+return getStatus(ID_AUTOMATIC);
 }
 
 
-int doWrite_DO_TEST(int value)
+int doWrite_REPEAT(int value)
 {
-return doWrite(ID_DO_TEST,  &value);
+return doWrite(ID_REPEAT,  &value);
 }
 
 
-int addWrite_DO_TEST(int value)
+int addWrite_REPEAT(int value)
 {
-return addWrite(ID_DO_TEST, &value);
+return addWrite(ID_REPEAT, &value);
 }
 
 
-int getStatus_DO_TEST()
+int getStatus_REPEAT()
 {
-return getStatus(ID_DO_TEST);
+return getStatus(ID_REPEAT);
 }
 
 
@@ -16439,8 +16439,8 @@ retval += readFromDb(ID_TEST_STEP, &TEST_STEP);
 retval += readFromDb(ID_TEST_DATE, &TEST_DATE);
 retval += readFromDb(ID_TEST_TIME, &TEST_TIME);
 retval += readFromDb(ID_TEST_DURATION, &TEST_DURATION);
-retval += readFromDb(ID_DO_REMOTE, &DO_REMOTE);
-retval += readFromDb(ID_DO_TEST, &DO_TEST);
+retval += readFromDb(ID_AUTOMATIC, &AUTOMATIC);
+retval += readFromDb(ID_REPEAT, &REPEAT);
 retval += readFromDb(ID_STATUS, &STATUS);
 retval += readFromDb(ID_TST_DigIn_1, &TST_DigIn_1);
 retval += readFromDb(ID_TST_DigIn_2, &TST_DigIn_2);

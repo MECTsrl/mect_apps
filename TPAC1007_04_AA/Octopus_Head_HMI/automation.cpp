@@ -1,24 +1,233 @@
+#include "app_logprint.h"
+#include "atcmplugin.h"
+#include "main.h"
+#include "pagebrowser.h"
 #include "crosstable.h"
+#include "automation.h"
+#include <QDir>
 
 #define abs(v) (((v) > 0)? (v):-(v))
+static void ClearResults(void);
+static void Translate_DigIn(void);
+static void Translate_DigOut(void);
+static void Translate_AnIn(void);
+static void Translate_AnOut(void);
+static void Translate_Others(void);
+static void Check_DigIn(void);
+static void Check_DigOut(void);
+static void Check_AnIn(void);
+static void Check_AnOut(void);
+static void Check_Others(void);
+
+static int LoadRecipe(const QString filename);
+static QStringList recipeList;
+static QString dirname;
 
 void setup(void)
 {
+    /* PLC_DigIn_1 = POWER ON/OFF */
+    /* PLC_DigOut_2 = Vpot ON/OFF */
+    /* PLC_DigOut_3 = Vcc ON/OFF */
+    /* PLC_DigIn_4 = GO */
+    doWrite_PLC_DigDir_1(0);
+    doWrite_PLC_DigDir_2(1);
+    doWrite_PLC_DigDir_3(1);
+    doWrite_PLC_DigDir_4(0);
+    /* ANALOG OUTPUT THRESHOLD */
+    doWrite_RTU_AnOutConf_X(5);
     /* reset all */
     doWrite_START2_REMOTE(false); doWrite_STARTx_REMOTE(false);
     doWrite_START2_TEST(false); doWrite_STARTx_TEST(false);
-    /* POWER ON <-- DO3 */
-    /* OUTPUT ON <-- DO2 */
-    doWrite_PLC_DigDir_3(1);
-    doWrite_PLC_DigDir_2(1);
-//    doWrite_PLC_DigOut_3(0);
-//    doWrite_PLC_DigOut_2(0);
-    /* ANALOG OUTPUT THRESHOLD */
-    doWrite_RTU_AnOutConf_X(5);
+    recipeList.clear();
+    /* automation entry oint */
     doWrite_STATUS(0);
 }
 
-void ClearResults(void)
+void loop(void)
+{
+    /* OCTOPUS STATE MACHINE */
+    switch (STATUS) {
+
+    case 0: /* IDLE */
+        if (PLC_DigIn_1) { // POWER ON
+            doWrite_PLC_DigOut_2(1);
+            doWrite_PLC_DigOut_3(1);
+            doWrite_START2_REMOTE(true);
+            doWrite_STARTx_REMOTE(true);
+            doWrite_START2_TEST(false);
+            doWrite_STARTx_TEST(false);
+            doWrite_STATUS(1);
+        }
+        break;
+
+    case 1: /* STARTING */
+        if (!PLC_DigIn_1) { // POWER OFF
+            doWrite_START2_REMOTE(false);
+            doWrite_STARTx_REMOTE(false);
+            doWrite_STATUS(6);
+        }
+        else if (STATUS2_REMOTE && STATUSx_REMOTE) {
+            doWrite_STATUS(2);
+        }
+        break;
+
+    case 2: /* READY */
+        if (!PLC_DigIn_1) { // POWER OFF
+            doWrite_START2_REMOTE(false);
+            doWrite_STARTx_REMOTE(false);
+            doWrite_STATUS(6);
+        }
+        else if (AUTOMATIC || PLC_DigIn_4) { // GO
+            static int step = 0;
+            if (step >= recipeList.count())
+            {
+                if (recipeList.count() == 0)
+                {
+                    fprintf(stderr, "Nothing to load\n");
+                    return;
+                }
+                if (REPEAT) {
+                    step = 0;
+                } else {
+                    fprintf(stderr, "Recipe finished!\n");
+                    return;
+                }
+            }
+            if (LoadRecipe(dirname + QString("/") + recipeList.at(step)) < 0)
+            {
+                fprintf(stderr, "FAIL dirname '%s'\n",QString(dirname + QString("/") + recipeList.at(step)).toAscii().data() );
+            }
+            else
+            {
+                fprintf(stderr, "DO_TEST dirname '%s'\n",QString(dirname + QString("/") + recipeList.at(step)).toAscii().data() );
+                step++;
+            }
+            if (! REPEAT) {
+                // change step
+            }
+            ClearResults();
+            Translate_DigIn();
+            Translate_DigOut();
+            Translate_AnIn();
+            Translate_AnOut();
+            Translate_Others();
+            /* FIXME: delay? */
+            doWrite_START2_TEST(true);
+            doWrite_STARTx_TEST(true);
+            doWrite_STATUS(3);
+        }
+        break;
+
+    case 3: /* TESTING */
+        if (!PLC_DigIn_1) { // POWER OFF
+            doWrite_START2_REMOTE(false);
+            doWrite_STARTx_REMOTE(false);
+            doWrite_STATUS(6);
+        }
+        else if (STATUS2_DONE && STATUSx_DONE)
+        {
+            Check_DigIn();
+            Check_DigOut();
+            Check_AnIn();
+            Check_AnOut();
+            Check_Others();
+            doWrite_STATUS(4);
+        }
+        break;
+
+    case 4: /* DONE */
+        if (!PLC_DigIn_1) { // POWER OFF
+            doWrite_START2_REMOTE(false);
+            doWrite_STARTx_REMOTE(false);
+            doWrite_STATUS(6);
+        }
+        else if (AUTOMATIC || PLC_DigIn_4) // GO
+        {
+            doWrite_START2_TEST(false);
+            doWrite_STARTx_TEST(false);
+            doWrite_STATUS(5);
+        }
+        break;
+
+    case 5: /* RESETTING */
+        if (!PLC_DigIn_1) { // POWER OFF
+            doWrite_START2_REMOTE(false);
+            doWrite_STARTx_REMOTE(false);
+            doWrite_STATUS(6);
+        }
+        else if (STATUS2_REMOTE && STATUSx_REMOTE)
+        {
+            doWrite_STATUS(2);
+        }
+        break;
+
+    case 6: /* STOPPING */
+        if (!STATUS2_REMOTE /*&& !STATUSx_REMOTE */)
+        {
+            doWrite_STATUS(0);
+        }
+        break;
+
+    default:
+        ; /* FIXME: assert */
+    }
+}
+
+void setProduct(char *name)
+{
+    dirname = QString("/local/data/recipe/") + QString(name);
+    QDir recipeDir(dirname, "*.csv");
+    recipeList = recipeDir.entryList(QDir::Files);
+}
+
+static int LoadRecipe(const QString filename)
+{
+    FILE * fp = fopen(filename.toAscii().data(), "r");
+    if (fp == NULL)
+    {
+        LOG_PRINT(info_e, "Cannot open '%s'\n", filename.toAscii().data());
+        return -1;
+    }
+    char varname[TAG_LEN] = "";
+    char value[TAG_LEN] = "";
+    char line[MAX_LINE] = "";
+    char * p;
+    int number_of_variables = 0;
+    while (fgets(line, LINE_SIZE, fp) != NULL)
+    {
+        p = line;
+        /* tag */
+        p = mystrtok(p, varname, SEPARATOR);
+        if (p == NULL || varname[0] == '\0')
+        {
+            LOG_PRINT(error_e, "Invalid tag '%s'\n", line);
+            continue;
+        }
+        int decimal = getVarDecimalByName(varname);
+        /* value */
+        p = mystrtok(p, value, SEPARATOR);
+        if (value[0] != '\0')
+        {
+            float val_f = 0;
+            val_f = atof(value);
+            sprintf(value, "%.*f", decimal, val_f );
+            if (prepareFormattedVar(varname, value) == BUSY)
+            {
+                LOG_PRINT(warning_e, "busy, waiting to write the variable '%s' with the value '%s'\n", varname, value);
+            }
+            LOG_PRINT(info_e, "value '%s'\n", value);
+            number_of_variables++;
+        }
+    }
+    fclose(fp);
+    if (number_of_variables > 0)
+    {
+        writePendingInorder();
+    }
+    return number_of_variables;
+}
+
+static void ClearResults(void)
 {
     doWrite_OK_DigIn_1(false);
     doWrite_OK_DigIn_2(false);
@@ -86,7 +295,7 @@ void ClearResults(void)
     doWrite_OK_CAN1_RD(false);
 }
 
-void Translate_DigIn(void)
+static void Translate_DigIn(void)
 {
     /* DigIn 1..16 are on the local TPLC005 */
     doWrite_TSTx_DigIn_1 (TST_DigIn_1);
@@ -124,7 +333,7 @@ void Translate_DigIn(void)
     if (TST_DigIn_16) { doWrite_RTU_DigOut_16(VAL_DigIn_16); }
 }
 
-void Translate_DigOut(void)
+static void Translate_DigOut(void)
 {
     /* DigOut 1..16 are on the local TPLC005 */
     doWrite_TSTx_DigOut_1 (TST_DigOut_1);
@@ -162,7 +371,7 @@ void Translate_DigOut(void)
     if (TST_DigOut_16) { doWrite_VALx_DigOut_16(VAL_DigOut_16); }
 }
 
-void Translate_AnIn(void)
+static void Translate_AnIn(void)
 {
 
     if (TST_AnIn_1)  {
@@ -333,7 +542,7 @@ void Translate_AnIn(void)
     }
 }
 
-void Translate_AnOut(void)
+static void Translate_AnOut(void)
 {
 
     if (TST_AnOut_1)  {
@@ -394,7 +603,7 @@ void Translate_AnOut(void)
 
 }
 
-void Translate_Others(void)
+static void Translate_Others(void)
 {
 
     if (TST_Tamb)  {
@@ -442,7 +651,7 @@ void Translate_Others(void)
 
 }
 
-void Check_DigIn(void)
+static void Check_DigIn(void)
 {
     /* Get results */
     if (TST_DigIn_1 ) { doWrite_RES_DigIn_1(RESx_DigIn_1);  }
@@ -482,7 +691,7 @@ void Check_DigIn(void)
 
 }
 
-void Check_DigOut(void)
+static void Check_DigOut(void)
 {
 
     /* Get results */
@@ -523,7 +732,7 @@ void Check_DigOut(void)
 
 }
 
-void Check_AnIn(void)
+static void Check_AnIn(void)
 {
 
     int Tolleranza = 1; /* 0.001 */
@@ -560,7 +769,7 @@ void Check_AnIn(void)
 
 }
 
-void Check_AnOut(void)
+static void Check_AnOut(void)
 {
 int Tolleranza = 1; /* 0.01 */
 
@@ -578,7 +787,7 @@ int Tolleranza = 1; /* 0.01 */
 
 }
 
-void Check_Others(void)
+static void Check_Others(void)
 {
     int Tolleranza_Tamb_min = 10;
     int Tolleranza_RPM = 100;
@@ -615,83 +824,3 @@ void Check_Others(void)
 
 }
 
-void loop(void)
-{
-    switch (STATUS)
-    {
-
-    case 0: /* IDLE */
-        if (DO_REMOTE)
-        {
-            doWrite_START2_REMOTE(true);  doWrite_STARTx_REMOTE(true);
-            doWrite_START2_TEST(false);  doWrite_STARTx_TEST(false);
-            doWrite_STATUS(1);
-        }
-        break;
-
-    case 1: /* STARTING */
-        if (STATUS2_REMOTE && STATUSx_REMOTE)
-        {
-            doWrite_STATUS(2);
-        }
-        break;
-
-    case 2: /* READY */
-        if (DO_TEST)
-        {
-            ClearResults();
-            Translate_DigIn();
-            Translate_DigOut();
-            Translate_AnIn();
-            Translate_AnOut();
-            Translate_Others();
-            /* FIXME: delay? */
-            doWrite_START2_TEST(true);  doWrite_STARTx_TEST(true);
-            doWrite_STATUS(3);
-        }
-        if (!DO_REMOTE)
-        {
-            doWrite_START2_REMOTE(false);  doWrite_STARTx_REMOTE(false);
-            doWrite_STATUS(6);
-        }
-        break;
-
-    case 3: /* TESTING */
-        if (STATUS2_DONE && STATUSx_DONE)
-        {
-            Check_DigIn();
-            Check_DigOut();
-            Check_AnIn();
-            Check_AnOut();
-            Check_Others();
-            doWrite_STATUS(4);
-        }
-        break;
-
-    case 4: /* DONE */
-        if (!DO_TEST)
-        {
-            doWrite_START2_TEST(false);  doWrite_STARTx_TEST(false);
-            doWrite_STATUS(5);
-        }
-        break;
-
-    case 5: /* RESETTING */
-        if (STATUS2_REMOTE && STATUSx_REMOTE)
-        {
-            doWrite_STATUS(2);
-        }
-        break;
-
-    case 6: /* STOPPING */
-        if (!STATUS2_REMOTE && !STATUSx_REMOTE)
-        {
-            doWrite_STATUS(0);
-        }
-        break;
-
-    default:
-        /* FIXME: assert */
-        break;
-    }
-}

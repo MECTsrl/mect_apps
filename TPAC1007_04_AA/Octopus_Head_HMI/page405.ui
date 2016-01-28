@@ -2223,61 +2223,23 @@ max</string>
     <number>0</number>
    </property>
   </widget>
-  <widget class="QLabel" name="label_Write">
+  <widget class="ATCMled" name="atcmLed_Idle_2">
    <property name="geometry">
     <rect>
-     <x>180</x>
-     <y>49</y>
-     <width>61</width>
-     <height>16</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>DejaVu Sans</family>
-     <pointsize>10</pointsize>
-    </font>
-   </property>
-   <property name="text">
-    <string>Done</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_Idle">
-   <property name="geometry">
-    <rect>
-     <x>180</x>
-     <y>3</y>
-     <width>61</width>
-     <height>16</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>DejaVu Sans</family>
-     <pointsize>10</pointsize>
-    </font>
-   </property>
-   <property name="text">
-    <string>Local</string>
-   </property>
-  </widget>
-  <widget class="ATCMled" name="atcmLed_Exec">
-   <property name="geometry">
-    <rect>
-     <x>127</x>
-     <y>23</y>
+     <x>0</x>
+     <y>0</y>
      <width>20</width>
      <height>20</height>
     </rect>
    </property>
    <property name="toolTip">
-    <string>STATUS2_REMOTE</string>
+    <string>PLC_DigIn_1</string>
    </property>
    <property name="whatsThis">
     <string>ATCMled widget</string>
    </property>
    <property name="variable">
-    <string>STATUS2_REMOTE</string>
+    <string>PLC_DigIn_1</string>
    </property>
    <property name="refresh">
     <number>200</number>
@@ -2297,23 +2259,23 @@ max</string>
      <normaloff>:/off.png</normaloff>:/off.png</iconset>
    </property>
   </widget>
-  <widget class="ATCMled" name="atcmLed_Write">
+  <widget class="ATCMled" name="atcmLed_Exec_4">
    <property name="geometry">
     <rect>
-     <x>127</x>
-     <y>47</y>
+     <x>126</x>
+     <y>46</y>
      <width>20</width>
      <height>20</height>
     </rect>
    </property>
    <property name="toolTip">
-    <string>STATUS2_DONE</string>
+    <string>START2_TEST</string>
    </property>
    <property name="whatsThis">
     <string>ATCMled widget</string>
    </property>
    <property name="variable">
-    <string>STATUS2_DONE</string>
+    <string>START2_TEST</string>
    </property>
    <property name="refresh">
     <number>200</number>
@@ -2333,13 +2295,49 @@ max</string>
      <normaloff>:/off.png</normaloff>:/off.png</iconset>
    </property>
   </widget>
-  <widget class="QLabel" name="label_Exec">
+  <widget class="ATCMled" name="atcmLed_Exec_5">
    <property name="geometry">
     <rect>
-     <x>180</x>
-     <y>25</y>
-     <width>61</width>
-     <height>16</height>
+     <x>186</x>
+     <y>46</y>
+     <width>20</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>START2_TEST</string>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMled widget</string>
+   </property>
+   <property name="variable">
+    <string>START2_TEST</string>
+   </property>
+   <property name="refresh">
+    <number>200</number>
+   </property>
+   <property name="viewStatus">
+    <bool>false</bool>
+   </property>
+   <property name="visibilityVar">
+    <string/>
+   </property>
+   <property name="onIcon">
+    <iconset>
+     <normaloff>:/on.png</normaloff>:/on.png</iconset>
+   </property>
+   <property name="offIcon">
+    <iconset>
+     <normaloff>:/off.png</normaloff>:/off.png</iconset>
+   </property>
+  </widget>
+  <widget class="ATCMbutton" name="atcmButton_2">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>44</y>
+     <width>120</width>
+     <height>24</height>
     </rect>
    </property>
    <property name="font">
@@ -2348,15 +2346,176 @@ max</string>
      <pointsize>10</pointsize>
     </font>
    </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+   <property name="toolTip">
+    <string>REPEAT</string>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMbutton widget</string>
+   </property>
+   <property name="pageName">
+    <string/>
+   </property>
+   <property name="passwordVar">
+    <string/>
+   </property>
+   <property name="statusvar">
+    <string>REPEAT</string>
+   </property>
+   <property name="viewStatus">
+    <bool>false</bool>
+   </property>
+   <property name="visibilityVar">
+    <string/>
+   </property>
+   <property name="bgColor">
+    <color>
+     <red>85</red>
+     <green>170</green>
+     <blue>127</blue>
+    </color>
+   </property>
+   <property name="bgPressColor">
+    <color>
+     <red>85</red>
+     <green>255</green>
+     <blue>127</blue>
+    </color>
+   </property>
    <property name="text">
-    <string>Remote</string>
+    <string>REPEAT</string>
+   </property>
+   <property name="pressText">
+    <string>REPEAT</string>
+   </property>
+   <property name="borderWidth">
+    <number>0</number>
+   </property>
+   <property name="borderRadius">
+    <number>0</number>
+   </property>
+   <property name="apparence">
+    <enum>QFrame::Raised</enum>
+   </property>
+  </widget>
+  <widget class="ATCMbutton" name="atcmButton">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>20</y>
+     <width>120</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+   <property name="toolTip">
+    <string>AUTOMATIC</string>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMbutton widget</string>
+   </property>
+   <property name="pageName">
+    <string/>
+   </property>
+   <property name="passwordVar">
+    <string/>
+   </property>
+   <property name="statusvar">
+    <string>AUTOMATIC</string>
+   </property>
+   <property name="viewStatus">
+    <bool>false</bool>
+   </property>
+   <property name="visibilityVar">
+    <string/>
+   </property>
+   <property name="bgColor">
+    <color>
+     <red>85</red>
+     <green>170</green>
+     <blue>127</blue>
+    </color>
+   </property>
+   <property name="bgPressColor">
+    <color>
+     <red>85</red>
+     <green>255</green>
+     <blue>127</blue>
+    </color>
+   </property>
+   <property name="text">
+    <string>AUTOMATIC</string>
+   </property>
+   <property name="pressText">
+    <string>AUTOMATIC</string>
+   </property>
+   <property name="borderWidth">
+    <number>0</number>
+   </property>
+   <property name="borderRadius">
+    <number>0</number>
+   </property>
+   <property name="apparence">
+    <enum>QFrame::Raised</enum>
+   </property>
+  </widget>
+  <widget class="ATCMled" name="atcmLed_Exec_2">
+   <property name="geometry">
+    <rect>
+     <x>126</x>
+     <y>24</y>
+     <width>20</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>START2_REMOTE</string>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMled widget</string>
+   </property>
+   <property name="variable">
+    <string>START2_REMOTE</string>
+   </property>
+   <property name="refresh">
+    <number>200</number>
+   </property>
+   <property name="viewStatus">
+    <bool>false</bool>
+   </property>
+   <property name="visibilityVar">
+    <string/>
+   </property>
+   <property name="onIcon">
+    <iconset>
+     <normaloff>:/on.png</normaloff>:/on.png</iconset>
+   </property>
+   <property name="offIcon">
+    <iconset>
+     <normaloff>:/off.png</normaloff>:/off.png</iconset>
    </property>
   </widget>
   <widget class="ATCMled" name="atcmLed_Write_2">
    <property name="geometry">
     <rect>
-     <x>152</x>
-     <y>47</y>
+     <x>210</x>
+     <y>46</y>
      <width>20</width>
      <height>20</height>
     </rect>
@@ -2391,7 +2550,7 @@ max</string>
   <widget class="ATCMled" name="atcmLed_Idle">
    <property name="geometry">
     <rect>
-     <x>127</x>
+     <x>150</x>
      <y>0</y>
      <width>20</width>
      <height>20</height>
@@ -2405,6 +2564,42 @@ max</string>
    </property>
    <property name="variable">
     <string>STATUS2_LOCAL</string>
+   </property>
+   <property name="refresh">
+    <number>200</number>
+   </property>
+   <property name="viewStatus">
+    <bool>false</bool>
+   </property>
+   <property name="visibilityVar">
+    <string/>
+   </property>
+   <property name="onIcon">
+    <iconset>
+     <normaloff>:/on.png</normaloff>:/on.png</iconset>
+   </property>
+   <property name="offIcon">
+    <iconset>
+     <normaloff>:/off.png</normaloff>:/off.png</iconset>
+   </property>
+  </widget>
+  <widget class="ATCMled" name="atcmLed_Idle_5">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>0</y>
+     <width>20</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>PLC_DigOut_3</string>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMled widget</string>
+   </property>
+   <property name="variable">
+    <string>PLC_DigOut_3</string>
    </property>
    <property name="refresh">
     <number>200</number>
@@ -2427,8 +2622,8 @@ max</string>
   <widget class="ATCMled" name="atcmLed_Exec_3">
    <property name="geometry">
     <rect>
-     <x>152</x>
-     <y>23</y>
+     <x>210</x>
+     <y>24</y>
      <width>20</width>
      <height>20</height>
     </rect>
@@ -2441,6 +2636,216 @@ max</string>
    </property>
    <property name="variable">
     <string>STATUSx_REMOTE</string>
+   </property>
+   <property name="refresh">
+    <number>200</number>
+   </property>
+   <property name="viewStatus">
+    <bool>false</bool>
+   </property>
+   <property name="visibilityVar">
+    <string/>
+   </property>
+   <property name="onIcon">
+    <iconset>
+     <normaloff>:/on.png</normaloff>:/on.png</iconset>
+   </property>
+   <property name="offIcon">
+    <iconset>
+     <normaloff>:/off.png</normaloff>:/off.png</iconset>
+   </property>
+  </widget>
+  <widget class="ATCMled" name="atcmLed_Write">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>46</y>
+     <width>20</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>STATUS2_DONE</string>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMled widget</string>
+   </property>
+   <property name="variable">
+    <string>STATUS2_DONE</string>
+   </property>
+   <property name="refresh">
+    <number>200</number>
+   </property>
+   <property name="viewStatus">
+    <bool>false</bool>
+   </property>
+   <property name="visibilityVar">
+    <string/>
+   </property>
+   <property name="onIcon">
+    <iconset>
+     <normaloff>:/on.png</normaloff>:/on.png</iconset>
+   </property>
+   <property name="offIcon">
+    <iconset>
+     <normaloff>:/off.png</normaloff>:/off.png</iconset>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_Start_4">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>0</y>
+     <width>31</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>2</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="ATCMled" name="atcmLed_Idle_4">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>0</y>
+     <width>20</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>PLC_DigOut_2</string>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMled widget</string>
+   </property>
+   <property name="variable">
+    <string>PLC_DigOut_2</string>
+   </property>
+   <property name="refresh">
+    <number>200</number>
+   </property>
+   <property name="viewStatus">
+    <bool>false</bool>
+   </property>
+   <property name="visibilityVar">
+    <string/>
+   </property>
+   <property name="onIcon">
+    <iconset>
+     <normaloff>:/on.png</normaloff>:/on.png</iconset>
+   </property>
+   <property name="offIcon">
+    <iconset>
+     <normaloff>:/off.png</normaloff>:/off.png</iconset>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_Start_5">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>0</y>
+     <width>31</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>X</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="ATCMled" name="atcmLed_Exec">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>24</y>
+     <width>20</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>STATUS2_REMOTE</string>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMled widget</string>
+   </property>
+   <property name="variable">
+    <string>STATUS2_REMOTE</string>
+   </property>
+   <property name="refresh">
+    <number>200</number>
+   </property>
+   <property name="viewStatus">
+    <bool>false</bool>
+   </property>
+   <property name="visibilityVar">
+    <string/>
+   </property>
+   <property name="onIcon">
+    <iconset>
+     <normaloff>:/on.png</normaloff>:/on.png</iconset>
+   </property>
+   <property name="offIcon">
+    <iconset>
+     <normaloff>:/off.png</normaloff>:/off.png</iconset>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_Start_6">
+   <property name="geometry">
+    <rect>
+     <x>67</x>
+     <y>0</y>
+     <width>51</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>PWR/GO</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="ATCMled" name="atcmLed_Idle_7">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>22</y>
+     <width>20</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>PLC_DigIn_4</string>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMled widget</string>
+   </property>
+   <property name="variable">
+    <string>PLC_DigIn_4</string>
    </property>
    <property name="refresh">
     <number>200</number>
@@ -2463,7 +2868,7 @@ max</string>
   <widget class="ATCMled" name="atcmLed_Idle_3">
    <property name="geometry">
     <rect>
-     <x>152</x>
+     <x>210</x>
      <y>0</y>
      <width>20</width>
      <height>20</height>
@@ -2496,83 +2901,23 @@ max</string>
      <normaloff>:/off.png</normaloff>:/off.png</iconset>
    </property>
   </widget>
-  <widget class="ATCMled" name="atcmLed_Exec_2">
+  <widget class="ATCMled" name="atcmLed_Exec_6">
    <property name="geometry">
     <rect>
-     <x>90</x>
-     <y>44</y>
+     <x>186</x>
+     <y>24</y>
      <width>20</width>
      <height>20</height>
     </rect>
    </property>
    <property name="toolTip">
-    <string>DO_TEST</string>
+    <string>START2_REMOTE</string>
    </property>
    <property name="whatsThis">
     <string>ATCMled widget</string>
    </property>
    <property name="variable">
-    <string>DO_TEST</string>
-   </property>
-   <property name="refresh">
-    <number>200</number>
-   </property>
-   <property name="viewStatus">
-    <bool>false</bool>
-   </property>
-   <property name="visibilityVar">
-    <string/>
-   </property>
-   <property name="onIcon">
-    <iconset>
-     <normaloff>:/on.png</normaloff>:/on.png</iconset>
-   </property>
-   <property name="offIcon">
-    <iconset>
-     <normaloff>:/off.png</normaloff>:/off.png</iconset>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_Start_3">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>121</width>
-     <height>41</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>DejaVu Sans</family>
-     <pointsize>10</pointsize>
-    </font>
-   </property>
-   <property name="text">
-    <string>Modbus/TCP
-Do:
- Remote / Test</string>
-   </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
-   </property>
-  </widget>
-  <widget class="ATCMled" name="atcmLed_Idle_2">
-   <property name="geometry">
-    <rect>
-     <x>10</x>
-     <y>44</y>
-     <width>20</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="toolTip">
-    <string>DO_REMOTE</string>
-   </property>
-   <property name="whatsThis">
-    <string>ATCMled widget</string>
-   </property>
-   <property name="variable">
-    <string>DO_REMOTE</string>
+    <string>START2_REMOTE</string>
    </property>
    <property name="refresh">
     <number>200</number>
@@ -2650,18 +2995,25 @@ Do:
   <zorder>atcmLed_PLC_DigOut_22</zorder>
   <zorder>atcmLabel_RES_mA_max</zorder>
   <zorder>atcmLed_PLC_AnOut_8</zorder>
-  <zorder>label_Write</zorder>
-  <zorder>label_Idle</zorder>
-  <zorder>atcmLed_Exec</zorder>
-  <zorder>atcmLed_Write</zorder>
-  <zorder>label_Exec</zorder>
+  <zorder>atcmLed_Idle_2</zorder>
+  <zorder>atcmLed_Exec_4</zorder>
+  <zorder>atcmLed_Exec_5</zorder>
+  <zorder>atcmButton_2</zorder>
+  <zorder>atcmButton</zorder>
+  <zorder>atcmLed_Exec_2</zorder>
   <zorder>atcmLed_Write_2</zorder>
   <zorder>atcmLed_Idle</zorder>
+  <zorder>atcmLed_Idle_5</zorder>
   <zorder>atcmLed_Exec_3</zorder>
+  <zorder>atcmLed_Write</zorder>
+  <zorder>label_Start_4</zorder>
+  <zorder>atcmLed_Idle_4</zorder>
+  <zorder>label_Start_5</zorder>
+  <zorder>atcmLed_Exec</zorder>
+  <zorder>label_Start_6</zorder>
+  <zorder>atcmLed_Idle_7</zorder>
   <zorder>atcmLed_Idle_3</zorder>
-  <zorder>atcmLed_Exec_2</zorder>
-  <zorder>label_Start_3</zorder>
-  <zorder>atcmLed_Idle_2</zorder>
+  <zorder>atcmLed_Exec_6</zorder>
  </widget>
  <customwidgets>
   <customwidget>

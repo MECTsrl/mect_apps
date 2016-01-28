@@ -52,17 +52,17 @@ int doWrite_TEST_DURATION(u_int32_t value);
 int addWrite_TEST_DURATION(u_int32_t value);
 int getStatus_TEST_DURATION();
  
-#define ID_DO_REMOTE 193
-extern int DO_REMOTE;
-int doWrite_DO_REMOTE(int value);
-int addWrite_DO_REMOTE(int value);
-int getStatus_DO_REMOTE();
+#define ID_AUTOMATIC 193
+extern int AUTOMATIC;
+int doWrite_AUTOMATIC(int value);
+int addWrite_AUTOMATIC(int value);
+int getStatus_AUTOMATIC();
  
-#define ID_DO_TEST 194
-extern int DO_TEST;
-int doWrite_DO_TEST(int value);
-int addWrite_DO_TEST(int value);
-int getStatus_DO_TEST();
+#define ID_REPEAT 194
+extern int REPEAT;
+int doWrite_REPEAT(int value);
+int addWrite_REPEAT(int value);
+int getStatus_REPEAT();
  
 #define ID_STATUS 195
 extern u_int16_t STATUS;

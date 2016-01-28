@@ -190,8 +190,8 @@
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
-1;P;DO_REMOTE       ;BIT      ;0   ;PLC       ;               ;    ;    ;    ;193 ;2   ;[RO]
-1;P;DO_TEST         ;BIT      ;0   ;PLC       ;               ;    ;    ;    ;193 ;2   ;[RO]
+1;P;AUTOMATIC       ;BIT      ;0   ;PLC       ;               ;    ;    ;    ;193 ;2   ;[RO]
+1;P;REPEAT          ;BIT      ;0   ;PLC       ;               ;    ;    ;    ;193 ;2   ;[RO]
 1;P;STATUS          ;UINT     ;0   ;PLC       ;               ;    ;    ;    ;195 ;1   ;[RW]
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
