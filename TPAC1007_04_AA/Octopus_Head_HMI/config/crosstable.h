@@ -29,24 +29,30 @@ int addWrite_SERIAL_NUMBER(u_int32_t value);
 int getStatus_SERIAL_NUMBER();
  
 #define ID_TEST_STEP 3
-extern u_int32_t TEST_STEP;
-int doWrite_TEST_STEP(u_int32_t value);
-int addWrite_TEST_STEP(u_int32_t value);
+extern u_int16_t TEST_STEP;
+int doWrite_TEST_STEP(u_int16_t value);
+int addWrite_TEST_STEP(u_int16_t value);
 int getStatus_TEST_STEP();
  
-#define ID_TEST_DATE 4
+#define ID_TEST_STEP_MAX 4
+extern u_int16_t TEST_STEP_MAX;
+int doWrite_TEST_STEP_MAX(u_int16_t value);
+int addWrite_TEST_STEP_MAX(u_int16_t value);
+int getStatus_TEST_STEP_MAX();
+ 
+#define ID_TEST_DATE 5
 extern u_int32_t TEST_DATE;
 int doWrite_TEST_DATE(u_int32_t value);
 int addWrite_TEST_DATE(u_int32_t value);
 int getStatus_TEST_DATE();
  
-#define ID_TEST_TIME 5
+#define ID_TEST_TIME 6
 extern u_int32_t TEST_TIME;
 int doWrite_TEST_TIME(u_int32_t value);
 int addWrite_TEST_TIME(u_int32_t value);
 int getStatus_TEST_TIME();
  
-#define ID_TEST_DURATION 6
+#define ID_TEST_DURATION 7
 extern u_int32_t TEST_DURATION;
 int doWrite_TEST_DURATION(u_int32_t value);
 int addWrite_TEST_DURATION(u_int32_t value);
@@ -69,6 +75,12 @@ extern u_int16_t STATUS;
 int doWrite_STATUS(u_int16_t value);
 int addWrite_STATUS(u_int16_t value);
 int getStatus_STATUS();
+ 
+#define ID_RESULT 196
+extern int16_t RESULT;
+int doWrite_RESULT(int16_t value);
+int addWrite_RESULT(int16_t value);
+int getStatus_RESULT();
  
 #define ID_TST_DigIn_1 1001
 extern int TST_DigIn_1;

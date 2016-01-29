@@ -29,6 +29,8 @@ public:
 private slots:
     void changeEvent(QEvent * event);
     
+    void on_atcmComboBox_PRODUCT_ID_currentIndexChanged(const QString &arg1);
+
 private:
     Ui::page300 *ui;
 };

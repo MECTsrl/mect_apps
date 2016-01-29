@@ -61,37 +61,8 @@ void page400::updateData()
     if (this->isVisible() == false) {
         return;
     }
-
     /* call the parent updateData member */
     page::updateData();
-
-    /* OCTOPUS STATE MACHINE (see also automation.cpp) */
-    switch (STATUS) {
-
-    case 0: /* IDLE */
-    case 1: /* STARTING */
-        break;
-
-    case 2: /* READY */
-        if (PLC_DigIn_4) // GO
-        {
-        }
-        break;
-
-    case 3: /* TESTING */
-        break;
-
-    case 4: /* DONE */
-        /* TODO: report */
-        break;
-
-    case 5: /* RESETTING */
-    case 6: /* STOPPING */
-        break;
-
-    default:
-        ; /* FIXME: assert */
-    }
 }
 
 /**

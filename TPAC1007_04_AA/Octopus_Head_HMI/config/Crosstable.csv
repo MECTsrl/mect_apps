@@ -1,10 +1,10 @@
-1;P;PRODUCT_ID      ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;1   ;6   ;[RW]
-1;P;SERIAL_NUMBER   ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;1   ;6   ;[RW]
-1;P;TEST_STEP       ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;1   ;6   ;[RW]
-1;P;TEST_DATE       ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;1   ;6   ;[RW]
-1;P;TEST_TIME       ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;1   ;6   ;[RW]
-1;P;TEST_DURATION   ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;1   ;6   ;[RW]
-;;;;;;;;;;;;
+1;P;PRODUCT_ID      ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;1   ;7   ;[RW]
+1;P;SERIAL_NUMBER   ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;1   ;7   ;[RW]
+1;P;TEST_STEP       ;UINT     ;0   ;PLC       ;               ;    ;    ;    ;1   ;7   ;[RW]
+1;P;TEST_STEP_MAX   ;UINT     ;0   ;PLC       ;               ;    ;    ;    ;1   ;7   ;[RW]
+1;P;TEST_DATE       ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;1   ;7   ;[RW]
+1;P;TEST_TIME       ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;1   ;7   ;[RW]
+1;P;TEST_DURATION   ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;1   ;7   ;[RW]
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
@@ -192,8 +192,8 @@
 ;;;;;;;;;;;;
 1;P;AUTOMATIC       ;BIT      ;0   ;PLC       ;               ;    ;    ;    ;193 ;2   ;[RO]
 1;P;REPEAT          ;BIT      ;0   ;PLC       ;               ;    ;    ;    ;193 ;2   ;[RO]
-1;P;STATUS          ;UINT     ;0   ;PLC       ;               ;    ;    ;    ;195 ;1   ;[RW]
-;;;;;;;;;;;;
+1;P;STATUS          ;UINT     ;0   ;PLC       ;               ;    ;    ;    ;195 ;2   ;[RW]
+1;P;RESULT          ;INT      ;0   ;PLC       ;               ;    ;    ;    ;195 ;2   ;[RW]
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;

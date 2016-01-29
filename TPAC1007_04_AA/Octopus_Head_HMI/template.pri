@@ -32,7 +32,7 @@ customstore.path = /local/data/customstore
 customtrend.files = config/trend1.csv
 customtrend.path = /local/data/customtrend
 
-recipefiles.files = config/2.csv config/1.csv
+recipefiles.files = config/1.csv config/2.csv
 recipefiles.path = /local/data/recipe/TPAC1007_4AA
 
 INSTALLS += config splash

@@ -14,13 +14,15 @@ DWORD_BIT <-> int
  
 u_int32_t PRODUCT_ID = 0;
 u_int32_t SERIAL_NUMBER = 0;
-u_int32_t TEST_STEP = 0;
+u_int16_t TEST_STEP = 0;
+u_int16_t TEST_STEP_MAX = 0;
 u_int32_t TEST_DATE = 0;
 u_int32_t TEST_TIME = 0;
 u_int32_t TEST_DURATION = 0;
 int AUTOMATIC = 0;
 int REPEAT = 0;
 u_int16_t STATUS = 0;
+int16_t RESULT = 0;
 int TST_DigIn_1 = 0;
 int TST_DigIn_2 = 0;
 int TST_DigIn_3 = 0;
@@ -914,13 +916,13 @@ return getStatus(ID_SERIAL_NUMBER);
 }
 
 
-int doWrite_TEST_STEP(u_int32_t value)
+int doWrite_TEST_STEP(u_int16_t value)
 {
 return doWrite(ID_TEST_STEP,  &value);
 }
 
 
-int addWrite_TEST_STEP(u_int32_t value)
+int addWrite_TEST_STEP(u_int16_t value)
 {
 return addWrite(ID_TEST_STEP, &value);
 }
@@ -929,6 +931,24 @@ return addWrite(ID_TEST_STEP, &value);
 int getStatus_TEST_STEP()
 {
 return getStatus(ID_TEST_STEP);
+}
+
+
+int doWrite_TEST_STEP_MAX(u_int16_t value)
+{
+return doWrite(ID_TEST_STEP_MAX,  &value);
+}
+
+
+int addWrite_TEST_STEP_MAX(u_int16_t value)
+{
+return addWrite(ID_TEST_STEP_MAX, &value);
+}
+
+
+int getStatus_TEST_STEP_MAX()
+{
+return getStatus(ID_TEST_STEP_MAX);
 }
 
 
@@ -1037,6 +1057,24 @@ return addWrite(ID_STATUS, &value);
 int getStatus_STATUS()
 {
 return getStatus(ID_STATUS);
+}
+
+
+int doWrite_RESULT(int16_t value)
+{
+return doWrite(ID_RESULT,  &value);
+}
+
+
+int addWrite_RESULT(int16_t value)
+{
+return addWrite(ID_RESULT, &value);
+}
+
+
+int getStatus_RESULT()
+{
+return getStatus(ID_RESULT);
 }
 
 
@@ -16436,12 +16474,14 @@ int retval = 0;
 retval += readFromDb(ID_PRODUCT_ID, &PRODUCT_ID);
 retval += readFromDb(ID_SERIAL_NUMBER, &SERIAL_NUMBER);
 retval += readFromDb(ID_TEST_STEP, &TEST_STEP);
+retval += readFromDb(ID_TEST_STEP_MAX, &TEST_STEP_MAX);
 retval += readFromDb(ID_TEST_DATE, &TEST_DATE);
 retval += readFromDb(ID_TEST_TIME, &TEST_TIME);
 retval += readFromDb(ID_TEST_DURATION, &TEST_DURATION);
 retval += readFromDb(ID_AUTOMATIC, &AUTOMATIC);
 retval += readFromDb(ID_REPEAT, &REPEAT);
 retval += readFromDb(ID_STATUS, &STATUS);
+retval += readFromDb(ID_RESULT, &RESULT);
 retval += readFromDb(ID_TST_DigIn_1, &TST_DigIn_1);
 retval += readFromDb(ID_TST_DigIn_2, &TST_DigIn_2);
 retval += readFromDb(ID_TST_DigIn_3, &TST_DigIn_3);

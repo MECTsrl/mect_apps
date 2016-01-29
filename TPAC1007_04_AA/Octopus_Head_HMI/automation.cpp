@@ -6,6 +6,23 @@
 #include "automation.h"
 #include <QDir>
 
+#define STATUS_UNKNOWN  999
+#define STATUS_IDLE       0
+#define STATUS_STARTING   1
+#define STATUS_READY      2
+#define STATUS_TESTING    3
+#define STATUS_DONE       4
+#define STATUS_RESETTING  5
+#define STATUS_STOPPING   6
+#define STATUS_ERROR      7
+
+#define RESULT_UNKNOWN  -1
+#define RESULT_NG       0
+#define RESULT_OK       1
+
+#define PLC_PWR_SWITCH PLC_DigIn_1
+#define PLC_GO_BUTTON PLC_DigIn_4
+
 #define abs(v) (((v) > 0)? (v):-(v))
 static void ClearResults(void);
 static void Translate_DigIn(void);
@@ -18,6 +35,7 @@ static void Check_DigOut(void);
 static void Check_AnIn(void);
 static void Check_AnOut(void);
 static void Check_Others(void);
+static int allTestedOK(void);
 
 static int LoadRecipe(const QString filename);
 static QStringList recipeList;
@@ -25,146 +43,187 @@ static QString dirname;
 
 void setup(void)
 {
-    /* PLC_DigIn_1 = POWER ON/OFF */
-    /* PLC_DigOut_2 = Vpot ON/OFF */
-    /* PLC_DigOut_3 = Vcc ON/OFF */
-    /* PLC_DigIn_4 = GO */
-    doWrite_PLC_DigDir_1(0);
-    doWrite_PLC_DigDir_2(1);
-    doWrite_PLC_DigDir_3(1);
-    doWrite_PLC_DigDir_4(0);
-    /* ANALOG OUTPUT THRESHOLD */
-    doWrite_RTU_AnOutConf_X(5);
-    /* reset all */
-    doWrite_START2_REMOTE(false); doWrite_STARTx_REMOTE(false);
-    doWrite_START2_TEST(false); doWrite_STARTx_TEST(false);
+    doWrite_PLC_DigDir_1(0); // PLC_PWR_SWITCH
+    doWrite_PLC_DigDir_2(1); // PLC_VPOT_ON
+    doWrite_PLC_DigDir_3(1); // PLC_VCC_ON
+    doWrite_PLC_DigDir_4(0); // PLC_GO_BUTTON
+    doWrite_RTU_AnOutConf_X(5); // ANALOG OUTPUT THRESHOLD
+    // reset 2
+    doWrite_START2_REMOTE(false);
+    doWrite_START2_TEST(false);
     recipeList.clear();
-    /* automation entry oint */
-    doWrite_STATUS(0);
+    // automation entry point
+    doWrite_STATUS(STATUS_UNKNOWN);
+    doWrite_RESULT(RESULT_UNKNOWN);
 }
 
 void loop(void)
 {
+    /*************************/
     /* OCTOPUS STATE MACHINE */
+    /*************************/
+
     switch (STATUS) {
 
-    case 0: /* IDLE */
-        if (PLC_DigIn_1) { // POWER ON
-            doWrite_PLC_DigOut_2(1);
-            doWrite_PLC_DigOut_3(1);
+    case STATUS_UNKNOWN:
+        if (!PLC_PWR_SWITCH) {
+            doWrite_START2_REMOTE(false);
+            doWrite_STARTx_REMOTE(false);
+            doWrite_STATUS(STATUS_STOPPING);
+            break;
+        }
+        doWrite_STATUS(STATUS_IDLE);
+        break;
+
+    case STATUS_IDLE:
+        if (PLC_PWR_SWITCH) {
+            doWrite_PLC_DigOut_2(1); // PLC_VPOT_ON
+            doWrite_PLC_DigOut_3(1); // PLC_VCC_ON
             doWrite_START2_REMOTE(true);
             doWrite_STARTx_REMOTE(true);
             doWrite_START2_TEST(false);
             doWrite_STARTx_TEST(false);
-            doWrite_STATUS(1);
+            doWrite_TEST_STEP(0);
+            doWrite_STATUS(STATUS_STARTING);
         }
         break;
 
-    case 1: /* STARTING */
-        if (!PLC_DigIn_1) { // POWER OFF
+    case STATUS_STARTING:
+        if (!PLC_PWR_SWITCH) {
             doWrite_START2_REMOTE(false);
             doWrite_STARTx_REMOTE(false);
-            doWrite_STATUS(6);
+            doWrite_STATUS(STATUS_STOPPING);
+            break;
         }
-        else if (STATUS2_REMOTE && STATUSx_REMOTE) {
-            doWrite_STATUS(2);
+        if (STATUS2_REMOTE && STATUSx_REMOTE) {
+            doWrite_STATUS(STATUS_READY);
+            break;
         }
+        // do repeat write: TPAC still booting
+        doWrite_STARTx_REMOTE(true);
+        doWrite_STARTx_TEST(false);
         break;
 
-    case 2: /* READY */
-        if (!PLC_DigIn_1) { // POWER OFF
+    case STATUS_READY:
+        if (!PLC_PWR_SWITCH) {
             doWrite_START2_REMOTE(false);
             doWrite_STARTx_REMOTE(false);
-            doWrite_STATUS(6);
+            doWrite_STATUS(STATUS_STOPPING);
+            break;
         }
-        else if (AUTOMATIC || PLC_DigIn_4) { // GO
-            static int step = 0;
-            if (step >= recipeList.count())
-            {
-                if (recipeList.count() == 0)
-                {
-                    fprintf(stderr, "Nothing to load\n");
-                    return;
+        if (AUTOMATIC || PLC_GO_BUTTON) {
+            // trivial case
+            if (TEST_STEP_MAX == 0) {
+                // Nothing to do
+                break;
+            }
+            // next step
+            int next_step = TEST_STEP + 1;
+            if (next_step > TEST_STEP_MAX) {
+                if (!REPEAT) {
+                    break;
                 }
-                if (REPEAT) {
-                    step = 0;
-                } else {
-                    fprintf(stderr, "Recipe finished!\n");
-                    return;
-                }
+                next_step = 1;
             }
-            if (LoadRecipe(dirname + QString("/") + recipeList.at(step)) < 0)
-            {
-                fprintf(stderr, "FAIL dirname '%s'\n",QString(dirname + QString("/") + recipeList.at(step)).toAscii().data() );
+            doWrite_TEST_STEP(next_step);
+            // load recipe
+            if (LoadRecipe(dirname + QString("/") + recipeList.at(next_step - 1)) < 0) {
+                doWrite_STATUS(STATUS_ERROR);
+                break;
             }
-            else
-            {
-                fprintf(stderr, "DO_TEST dirname '%s'\n",QString(dirname + QString("/") + recipeList.at(step)).toAscii().data() );
-                step++;
-            }
-            if (! REPEAT) {
-                // change step
-            }
+            // prepare data
             ClearResults();
             Translate_DigIn();
             Translate_DigOut();
             Translate_AnIn();
             Translate_AnOut();
             Translate_Others();
-            /* FIXME: delay? */
+            // change state
             doWrite_START2_TEST(true);
             doWrite_STARTx_TEST(true);
-            doWrite_STATUS(3);
+            doWrite_STATUS(STATUS_TESTING);
         }
         break;
 
-    case 3: /* TESTING */
-        if (!PLC_DigIn_1) { // POWER OFF
+    case STATUS_TESTING:
+        if (!PLC_PWR_SWITCH) {
             doWrite_START2_REMOTE(false);
             doWrite_STARTx_REMOTE(false);
-            doWrite_STATUS(6);
+            doWrite_STATUS(STATUS_STOPPING);
+            break;
         }
-        else if (STATUS2_DONE && STATUSx_DONE)
-        {
+        if (!START2_TEST) {
+            doWrite_START2_TEST(true);
+        }
+        if (!STARTx_TEST) {
+            doWrite_STARTx_TEST(true);
+        }
+        if (STATUS2_DONE && STATUSx_DONE) {
             Check_DigIn();
             Check_DigOut();
             Check_AnIn();
             Check_AnOut();
             Check_Others();
-            doWrite_STATUS(4);
+            if (allTestedOK()) {
+                doWrite_RESULT(RESULT_OK);
+            } else {
+                doWrite_RESULT(RESULT_NG);
+            }
+            doWrite_STATUS(STATUS_DONE);
         }
         break;
 
-    case 4: /* DONE */
-        if (!PLC_DigIn_1) { // POWER OFF
+    case STATUS_ERROR:
+        if (!PLC_PWR_SWITCH) {
             doWrite_START2_REMOTE(false);
             doWrite_STARTx_REMOTE(false);
-            doWrite_STATUS(6);
+            doWrite_RESULT(RESULT_UNKNOWN);
+            doWrite_STATUS(STATUS_STOPPING);
+            break;
         }
-        else if (AUTOMATIC || PLC_DigIn_4) // GO
-        {
+        if (PLC_GO_BUTTON) {
             doWrite_START2_TEST(false);
             doWrite_STARTx_TEST(false);
-            doWrite_STATUS(5);
+            doWrite_RESULT(RESULT_UNKNOWN);
+            doWrite_STATUS(STATUS_RESETTING);
         }
         break;
 
-    case 5: /* RESETTING */
-        if (!PLC_DigIn_1) { // POWER OFF
+    case STATUS_DONE:
+        if (!PLC_PWR_SWITCH) {
             doWrite_START2_REMOTE(false);
             doWrite_STARTx_REMOTE(false);
-            doWrite_STATUS(6);
+            doWrite_RESULT(RESULT_UNKNOWN);
+            doWrite_STATUS(STATUS_STOPPING);
+            break;
         }
-        else if (STATUS2_REMOTE && STATUSx_REMOTE)
-        {
-            doWrite_STATUS(2);
+        if (AUTOMATIC || PLC_GO_BUTTON) {
+            doWrite_START2_TEST(false);
+            doWrite_STARTx_TEST(false);
+            doWrite_RESULT(RESULT_UNKNOWN);
+            doWrite_STATUS(STATUS_RESETTING);
         }
         break;
 
-    case 6: /* STOPPING */
-        if (!STATUS2_REMOTE /*&& !STATUSx_REMOTE */)
-        {
-            doWrite_STATUS(0);
+    case STATUS_RESETTING:
+        if (!PLC_PWR_SWITCH) {
+            doWrite_START2_REMOTE(false);
+            doWrite_STARTx_REMOTE(false);
+            doWrite_STATUS(STATUS_STOPPING);
+            break;
+        }
+        if (STATUS2_REMOTE && STATUSx_REMOTE) {
+            doWrite_STATUS(STATUS_READY);
+        }
+        break;
+
+    case STATUS_STOPPING:
+        if (!STATUSx_REMOTE) {
+            doWrite_PLC_DigOut_2(0); // PLC_VPOT_ON
+            doWrite_PLC_DigOut_3(0); // PLC_VCC_ON
+        }
+        if (!STATUS2_REMOTE && !STATUSx_REMOTE) {
+            doWrite_STATUS(STATUS_IDLE);
         }
         break;
 
@@ -175,9 +234,11 @@ void loop(void)
 
 void setProduct(char *name)
 {
-    dirname = QString("/local/data/recipe/") + QString(name);
+    dirname = QString(RECIPE_DIR) + QString("/") + QString(name);
     QDir recipeDir(dirname, "*.csv");
     recipeList = recipeDir.entryList(QDir::Files);
+    doWrite_TEST_STEP(0);
+    doWrite_TEST_STEP_MAX(recipeList.count());
 }
 
 static int LoadRecipe(const QString filename)
@@ -373,9 +434,20 @@ static void Translate_DigOut(void)
 
 static void Translate_AnIn(void)
 {
+    doWrite_TSTx_AnIn_1(TST_AnIn_1);
+    doWrite_TSTx_AnIn_2(TST_AnIn_2);
+    doWrite_TSTx_AnIn_3(TST_AnIn_3);
+    doWrite_TSTx_AnIn_4(TST_AnIn_4);
+    doWrite_TSTx_AnIn_5(TST_AnIn_5);
+    doWrite_TSTx_AnIn_6(TST_AnIn_6);
+    doWrite_TSTx_AnIn_7(TST_AnIn_7);
+    doWrite_TSTx_AnIn_8(TST_AnIn_8);
+    doWrite_TSTx_AnIn_9(TST_AnIn_9);
+    doWrite_TSTx_AnIn_10(TST_AnIn_10);
+    doWrite_TSTx_AnIn_11(TST_AnIn_11);
+    doWrite_TSTx_AnIn_12(TST_AnIn_12);
 
     if (TST_AnIn_1)  {
-        doWrite_TSTx_AnIn_1(true);
         doWrite_VALx_AnInConf_1(VAL_AnInConf_1);
         doWrite_VALx_AnInFltr_1(VAL_AnInFltr_1);
         /* <-- Head AO1 + DO6 + DO8 */
@@ -401,7 +473,6 @@ static void Translate_AnIn(void)
     }
 
     if (TST_AnIn_2)  {
-        doWrite_TSTx_AnIn_2(true);
         doWrite_VALx_AnInConf_2(VAL_AnInConf_2);
         doWrite_VALx_AnInFltr_2(VAL_AnInFltr_2);
         /* <-- Head AO2 + DO5 + DO7 */
@@ -427,7 +498,6 @@ static void Translate_AnIn(void)
     }
 
     if (TST_AnIn_3)  {
-        doWrite_TSTx_AnIn_3(true);
         doWrite_VALx_AnInConf_3(VAL_AnInConf_3);
         doWrite_VALx_AnInFltr_3(VAL_AnInFltr_3);
         /* <-- Horn2 AO1 + DO6 + DO8 */
@@ -454,7 +524,6 @@ static void Translate_AnIn(void)
     }
 
     if (TST_AnIn_4)  {
-        doWrite_TSTx_AnIn_4(true);
         doWrite_VALx_AnInConf_4(VAL_AnInConf_4);
         doWrite_VALx_AnInFltr_6(VAL_AnInFltr_4);
         /* <-- Horn2 AO2 + DO5 + DO7 */
@@ -481,7 +550,6 @@ static void Translate_AnIn(void)
     }
 
     if (TST_AnIn_5)  {
-        doWrite_TSTx_AnIn_5(true);
         doWrite_VALx_AnInConf_5(VAL_AnInConf_5);
         doWrite_VALx_AnInFltr_5(VAL_AnInFltr_5);
         /* <-- Head/TPLC005 AO1 */
@@ -492,53 +560,46 @@ static void Translate_AnIn(void)
         doWrite_VAL2_AnOut_4(VAL_AnIn_5);
     }
     if (TST_AnIn_6)  {
-        doWrite_TSTx_AnIn_6(true);
         doWrite_VALx_AnInConf_6(VAL_AnInConf_6);
         doWrite_VALx_AnInFltr_6(VAL_AnInFltr_6);
         /* <-- Head/TPLC005 AO2 */
         doWrite_RTU_AnOut_2(VAL_AnIn_6);
     }
     if (TST_AnIn_7)  {
-        doWrite_TSTx_AnIn_7(true);
         doWrite_VALx_AnInConf_7(VAL_AnInConf_7);
         doWrite_VALx_AnInFltr_7(VAL_AnInFltr_7);
         /* <-- Head/TPLC005 AO3 */
         doWrite_PLC_AnOut_3(VAL_AnIn_7);
     }
     if (TST_AnIn_8)  {
-        doWrite_TSTx_AnIn_8(true);
         doWrite_VALx_AnInConf_8(VAL_AnInConf_8);
         doWrite_VALx_AnInFltr_8(VAL_AnInFltr_8);
         /* <-- Head/TPLC005 AO4 */
         doWrite_RTU_AnOut_4(VAL_AnIn_8);
     }
     if (TST_AnIn_9)  {
-        doWrite_TSTx_AnIn_9(true);
         doWrite_VALx_AnInConf_9(VAL_AnInConf_9);
         doWrite_VALx_AnInFltr_9(VAL_AnInFltr_9);
         /* <-- Head/TPLC005 AO5*/
         doWrite_RTU_AnOut_5(VAL_AnIn_9);
     }
     if (TST_AnIn_10) {
-        doWrite_TSTx_AnIn_10(true);
-                doWrite_VALx_AnInConf_10(VAL_AnInConf_10);
+        doWrite_VALx_AnInConf_10(VAL_AnInConf_10);
         doWrite_VALx_AnInFltr_10(VAL_AnInFltr_10);
         /* <-- Head/TPLC005 AO6*/
         doWrite_RTU_AnOut_6(VAL_AnIn_10);
     }
     if (TST_AnIn_11) {
-        doWrite_TSTx_AnIn_11(true);
-                doWrite_VALx_AnInConf_11(VAL_AnInConf_11);
-                doWrite_VALx_AnInFltr_11(VAL_AnInFltr_11);
-                /* <-- Head/TPLC005 AO7*/
-                doWrite_RTU_AnOut_7(VAL_AnIn_11);
+        doWrite_VALx_AnInConf_11(VAL_AnInConf_11);
+        doWrite_VALx_AnInFltr_11(VAL_AnInFltr_11);
+        /* <-- Head/TPLC005 AO7*/
+        doWrite_RTU_AnOut_7(VAL_AnIn_11);
     }
     if (TST_AnIn_12) {
-        doWrite_TSTx_AnIn_12(true);
-                doWrite_VALx_AnInConf_12(VAL_AnInConf_12);
-                doWrite_VALx_AnInFltr_12(VAL_AnInFltr_12);
-                /* <-- Head/TPLC005 AO8*/
-                doWrite_RTU_AnOut_8(VAL_AnIn_12);
+        doWrite_VALx_AnInConf_12(VAL_AnInConf_12);
+        doWrite_VALx_AnInFltr_12(VAL_AnInFltr_12);
+        /* <-- Head/TPLC005 AO8*/
+        doWrite_RTU_AnOut_8(VAL_AnIn_12);
     }
 }
 
@@ -824,3 +885,68 @@ static void Check_Others(void)
 
 }
 
+static int allTestedOK(void)
+{
+    int result = true;
+
+    if (TST_DigIn_1 ) { result &=  OK_DigIn_1; }
+    if (TST_DigIn_2 ) { result &=  OK_DigIn_2; }
+    if (TST_DigIn_3 ) { result &=  OK_DigIn_3; }
+    if (TST_DigIn_4 ) { result &=  OK_DigIn_4; }
+    if (TST_DigIn_5 ) { result &=  OK_DigIn_5; }
+    if (TST_DigIn_6 ) { result &=  OK_DigIn_6; }
+    if (TST_DigIn_7 ) { result &=  OK_DigIn_7; }
+    if (TST_DigIn_8 ) { result &=  OK_DigIn_8; }
+    if (TST_DigIn_9 ) { result &=  OK_DigIn_9; }
+    if (TST_DigIn_10) { result &=  OK_DigIn_10; }
+    if (TST_DigIn_11) { result &=  OK_DigIn_11; }
+    if (TST_DigIn_12) { result &=  OK_DigIn_12; }
+    if (TST_DigIn_13) { result &=  OK_DigIn_13; }
+    if (TST_DigIn_14) { result &=  OK_DigIn_14; }
+    if (TST_DigIn_15) { result &=  OK_DigIn_15; }
+    if (TST_DigIn_16) { result &=  OK_DigIn_16; }
+
+    if (TST_DigOut_1 ) { result &=  OK_DigOut_1; }
+    if (TST_DigOut_2 ) { result &=  OK_DigOut_2; }
+    if (TST_DigOut_3 ) { result &=  OK_DigOut_3; }
+    if (TST_DigOut_4 ) { result &=  OK_DigOut_4; }
+    if (TST_DigOut_5 ) { result &=  OK_DigOut_5; }
+    if (TST_DigOut_6 ) { result &=  OK_DigOut_6; }
+    if (TST_DigOut_7 ) { result &=  OK_DigOut_7; }
+    if (TST_DigOut_8 ) { result &=  OK_DigOut_8; }
+    if (TST_DigOut_9 ) { result &=  OK_DigOut_9; }
+    if (TST_DigOut_10) { result &=  OK_DigOut_10; }
+    if (TST_DigOut_11) { result &=  OK_DigOut_11; }
+    if (TST_DigOut_12) { result &=  OK_DigOut_12; }
+    if (TST_DigOut_13) { result &=  OK_DigOut_13; }
+    if (TST_DigOut_14) { result &=  OK_DigOut_14; }
+    if (TST_DigOut_15) { result &=  OK_DigOut_15; }
+    if (TST_DigOut_16) { result &=  OK_DigOut_16; }
+
+    if (TST_AnIn_1 ) { result &=  OK_AnIn_1; }
+    if (TST_AnIn_2 ) { result &=  OK_AnIn_2; }
+    if (TST_AnIn_3 ) { result &=  OK_AnIn_3; }
+    if (TST_AnIn_4 ) { result &=  OK_AnIn_4; }
+    if (TST_AnIn_5 ) { result &=  OK_AnIn_5; }
+    if (TST_AnIn_6 ) { result &=  OK_AnIn_6; }
+    if (TST_AnIn_7 ) { result &=  OK_AnIn_7; }
+    if (TST_AnIn_8 ) { result &=  OK_AnIn_8; }
+    if (TST_AnIn_9 ) { result &=  OK_AnIn_9; }
+    if (TST_AnIn_10) { result &=  OK_AnIn_10; }
+    if (TST_AnIn_11) { result &=  OK_AnIn_11; }
+    if (TST_AnIn_12) { result &=  OK_AnIn_12; }
+
+    if (TST_AnOut_1 ) { result &=  OK_AnOut_1; }
+    if (TST_AnOut_2 ) { result &=  OK_AnOut_2; }
+    if (TST_AnOut_3 ) { result &=  OK_AnOut_3; }
+    if (TST_AnOut_4 ) { result &=  OK_AnOut_4; }
+
+    if (TST_Tamb ) { result &=  OK_Tamb; }
+    if (TST_RPM ) { result &=  OK_RPM; }
+    if (TST_VCC_set ) { result &=  OK_VCC_set; }
+    if (TST_mA_fbk ) { result &=  OK_mA_fbk; }
+    if (TST_FWrevision ) { result &=  OK_FWrevision; }
+    if (TST_HWconfig ) { result &=  OK_HWconfig; }
+
+    return result;
+}

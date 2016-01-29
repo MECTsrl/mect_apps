@@ -244,7 +244,7 @@ background-color: rgb(255, 255, 127);
    <property name="font">
     <font>
      <family>DejaVu Sans Mono</family>
-     <pointsize>8</pointsize>
+     <pointsize>12</pointsize>
     </font>
    </property>
    <property name="text">

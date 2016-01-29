@@ -12,6 +12,7 @@
 #include "main.h"
 #include "page300.h"
 #include "ui_page300.h"
+#include "automation.h"
 
 /**
  * @brief this macro is used to set the PAGE300 style.
@@ -114,3 +115,8 @@ page300::~page300()
     delete ui;
 }
 
+
+void page300::on_atcmComboBox_PRODUCT_ID_currentIndexChanged(const QString &arg1)
+{
+    setProduct(arg1.toAscii().data());
+}
