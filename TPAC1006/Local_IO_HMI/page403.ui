@@ -1185,6 +1185,78 @@ Remote / Test</string>
      <normaloff>:/off.png</normaloff>:/off.png</iconset>
    </property>
   </widget>
+  <widget class="ATCMled" name="atcmLed_TST_AnIn_3">
+   <property name="geometry">
+    <rect>
+     <x>142</x>
+     <y>81</y>
+     <width>18</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>TST_AnIn_3</string>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMled widget</string>
+   </property>
+   <property name="variable">
+    <string>TST_AnIn_3</string>
+   </property>
+   <property name="refresh">
+    <number>500</number>
+   </property>
+   <property name="viewStatus">
+    <bool>false</bool>
+   </property>
+   <property name="visibilityVar">
+    <string/>
+   </property>
+   <property name="onIcon">
+    <iconset>
+     <normaloff>:/on.png</normaloff>:/on.png</iconset>
+   </property>
+   <property name="offIcon">
+    <iconset>
+     <normaloff>:/off.png</normaloff>:/off.png</iconset>
+   </property>
+  </widget>
+  <widget class="ATCMled" name="atcmLed_TST_AnIn_4">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>81</y>
+     <width>18</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>TST_AnIn_4</string>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMled widget</string>
+   </property>
+   <property name="variable">
+    <string>TST_AnIn_4</string>
+   </property>
+   <property name="refresh">
+    <number>500</number>
+   </property>
+   <property name="viewStatus">
+    <bool>false</bool>
+   </property>
+   <property name="visibilityVar">
+    <string/>
+   </property>
+   <property name="onIcon">
+    <iconset>
+     <normaloff>:/on.png</normaloff>:/on.png</iconset>
+   </property>
+   <property name="offIcon">
+    <iconset>
+     <normaloff>:/off.png</normaloff>:/off.png</iconset>
+   </property>
+  </widget>
   <zorder>atcmButton_MENU</zorder>
   <zorder>label_Qt_Project</zorder>
   <zorder>label_PLC_DigIn_8</zorder>
@@ -1225,6 +1297,8 @@ Remote / Test</string>
   <zorder>line_vt_1</zorder>
   <zorder>atcmLed_TST_AnIn_2</zorder>
   <zorder>atcmLed_TST_AnIn_1</zorder>
+  <zorder>atcmLed_TST_AnIn_3</zorder>
+  <zorder>atcmLed_TST_AnIn_4</zorder>
  </widget>
  <customwidgets>
   <customwidget>

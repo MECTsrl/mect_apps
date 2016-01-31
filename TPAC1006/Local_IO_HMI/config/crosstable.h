@@ -1414,23 +1414,23 @@ int doWrite_PLC_DigIn_8(int value);
 int addWrite_PLC_DigIn_8(int value);
 int getStatus_PLC_DigIn_8();
  
-#define ID_PLC_DigIn_9_16 5308
-extern u_int16_t PLC_DigIn_9_16;
-int doWrite_PLC_DigIn_9_16(u_int16_t value);
-int addWrite_PLC_DigIn_9_16(u_int16_t value);
-int getStatus_PLC_DigIn_9_16();
+#define ID_PLC_DigIn_9 5308
+extern int PLC_DigIn_9;
+int doWrite_PLC_DigIn_9(int value);
+int addWrite_PLC_DigIn_9(int value);
+int getStatus_PLC_DigIn_9();
  
-#define ID_PLC_DigIn_17_24 5309
-extern u_int16_t PLC_DigIn_17_24;
-int doWrite_PLC_DigIn_17_24(u_int16_t value);
-int addWrite_PLC_DigIn_17_24(u_int16_t value);
-int getStatus_PLC_DigIn_17_24();
+#define ID_PLC_DigIn_17 5309
+extern int PLC_DigIn_17;
+int doWrite_PLC_DigIn_17(int value);
+int addWrite_PLC_DigIn_17(int value);
+int getStatus_PLC_DigIn_17();
  
-#define ID_PLC_DigIn_25_32 5310
-extern u_int16_t PLC_DigIn_25_32;
-int doWrite_PLC_DigIn_25_32(u_int16_t value);
-int addWrite_PLC_DigIn_25_32(u_int16_t value);
-int getStatus_PLC_DigIn_25_32();
+#define ID_PLC_DigIn_25 5310
+extern int PLC_DigIn_25;
+int doWrite_PLC_DigIn_25(int value);
+int addWrite_PLC_DigIn_25(int value);
+int getStatus_PLC_DigIn_25();
  
 #define ID_PLC_DigOut_1 5311
 extern int PLC_DigOut_1;

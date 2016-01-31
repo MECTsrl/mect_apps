@@ -24,20 +24,15 @@
 #define PLC_GO_BUTTON PLC_DigIn_4
 
 #define abs(v) (((v) > 0)? (v):-(v))
-static void ClearResults(void);
-static void Translate_DigIn(void);
-static void Translate_DigOut(void);
-static void Translate_AnIn(void);
-static void Translate_AnOut(void);
-static void Translate_Others(void);
-static void Check_DigIn(void);
-static void Check_DigOut(void);
-static void Check_AnIn(void);
-static void Check_AnOut(void);
-static void Check_Others(void);
+static void clearOK(void);
+static void clearRES(void);
+static void writeTST(void);
+static void writeVAL(void);
+static void readRES(void);
+static void checkOK(void);
 static int allTestedOK(void);
 
-static int LoadRecipe(const QString filename);
+static int loadRecipe(const QString filename);
 static QStringList recipeList;
 static QString dirname;
 
@@ -59,6 +54,8 @@ void setup(void)
 
 void loop(void)
 {
+    static unsigned substatus = 0;
+
     /*************************/
     /* OCTOPUS STATE MACHINE */
     /*************************/
@@ -127,21 +124,20 @@ void loop(void)
             }
             doWrite_TEST_STEP(next_step);
             // load recipe
-            if (LoadRecipe(dirname + QString("/") + recipeList.at(next_step - 1)) < 0) {
+            if (loadRecipe(dirname + QString("/") + recipeList.at(next_step - 1)) < 0) {
                 doWrite_STATUS(STATUS_ERROR);
                 break;
             }
             // prepare data
-            ClearResults();
-            Translate_DigIn();
-            Translate_DigOut();
-            Translate_AnIn();
-            Translate_AnOut();
-            Translate_Others();
+            clearOK();
+            clearRES();
+            writeTST();
+            writeVAL();
             // change state
             doWrite_START2_TEST(true);
             doWrite_STARTx_TEST(true);
             doWrite_STATUS(STATUS_TESTING);
+        substatus = 0;
         }
         break;
 
@@ -159,17 +155,26 @@ void loop(void)
             doWrite_STARTx_TEST(true);
         }
         if (STATUS2_DONE && STATUSx_DONE) {
-            Check_DigIn();
-            Check_DigOut();
-            Check_AnIn();
-            Check_AnOut();
-            Check_Others();
-            if (allTestedOK()) {
-                doWrite_RESULT(RESULT_OK);
-            } else {
-                doWrite_RESULT(RESULT_NG);
+            switch(substatus) {
+            case 0:
+                readRES();
+                substatus = 1;
+                break;
+            case 1:
+                ++substatus;
+                break;
+            case 2:
+                checkOK();
+                if (allTestedOK()) {
+                    doWrite_RESULT(RESULT_OK);
+                } else {
+                    doWrite_RESULT(RESULT_NG);
+                }
+                doWrite_STATUS(STATUS_DONE);
+                break;
+            default:
+                ; // FIXME: assert
             }
-            doWrite_STATUS(STATUS_DONE);
         }
         break;
 
@@ -241,7 +246,7 @@ void setProduct(char *name)
     doWrite_TEST_STEP_MAX(recipeList.count());
 }
 
-static int LoadRecipe(const QString filename)
+static int loadRecipe(const QString filename)
 {
     FILE * fp = fopen(filename.toAscii().data(), "r");
     if (fp == NULL)
@@ -288,7 +293,7 @@ static int LoadRecipe(const QString filename)
     return number_of_variables;
 }
 
-static void ClearResults(void)
+static void clearOK(void)
 {
     doWrite_OK_DigIn_1(false);
     doWrite_OK_DigIn_2(false);
@@ -306,6 +311,7 @@ static void ClearResults(void)
     doWrite_OK_DigIn_14(false);
     doWrite_OK_DigIn_15(false);
     doWrite_OK_DigIn_16(false);
+
     doWrite_OK_DigOut_1(false);
     doWrite_OK_DigOut_2(false);
     doWrite_OK_DigOut_3(false);
@@ -322,6 +328,7 @@ static void ClearResults(void)
     doWrite_OK_DigOut_14(false);
     doWrite_OK_DigOut_15(false);
     doWrite_OK_DigOut_16(false);
+
     doWrite_OK_AnIn_1(false);
     doWrite_OK_AnIn_2(false);
     doWrite_OK_AnIn_3(false);
@@ -334,10 +341,12 @@ static void ClearResults(void)
     doWrite_OK_AnIn_10(false);
     doWrite_OK_AnIn_11(false);
     doWrite_OK_AnIn_12(false);
+
     doWrite_OK_AnOut_1(false);
     doWrite_OK_AnOut_2(false);
     doWrite_OK_AnOut_3(false);
     doWrite_OK_AnOut_4(false);
+
     doWrite_OK_Tamb(false);
     doWrite_OK_RPM(false);
     doWrite_OK_VCC_set(false);
@@ -346,6 +355,7 @@ static void ClearResults(void)
     doWrite_OK_mA_fbk(false);
     doWrite_OK_FWrevision(false);
     doWrite_OK_HWconfig(false);
+
     doWrite_OK_RTUS_WR(false);
     doWrite_OK_RTUS_RD(false);
     doWrite_OK_RTU1_WR(false);
@@ -356,18 +366,91 @@ static void ClearResults(void)
     doWrite_OK_CAN1_RD(false);
 }
 
-static void Translate_DigIn(void)
+static void clearRES(void)
 {
-    /* DigIn 1..16 are on the local TPLC005 */
-    doWrite_TSTx_DigIn_1 (TST_DigIn_1);
-    doWrite_TSTx_DigIn_2 (TST_DigIn_2);
-    doWrite_TSTx_DigIn_3 (TST_DigIn_3);
-    doWrite_TSTx_DigIn_4 (TST_DigIn_4);
-    doWrite_TSTx_DigIn_5 (TST_DigIn_5);
-    doWrite_TSTx_DigIn_6 (TST_DigIn_6);
-    doWrite_TSTx_DigIn_7 (TST_DigIn_7);
-    doWrite_TSTx_DigIn_8 (TST_DigIn_8);
-    doWrite_TSTx_DigIn_9 (TST_DigIn_9);
+    doWrite_RES_DigIn_1(-1);
+    doWrite_RES_DigIn_2(-1);
+    doWrite_RES_DigIn_3(-1);
+    doWrite_RES_DigIn_4(-1);
+    doWrite_RES_DigIn_5(-1);
+    doWrite_RES_DigIn_6(-1);
+    doWrite_RES_DigIn_7(-1);
+    doWrite_RES_DigIn_8(-1);
+    doWrite_RES_DigIn_9(-1);
+    doWrite_RES_DigIn_10(-1);
+    doWrite_RES_DigIn_11(-1);
+    doWrite_RES_DigIn_12(-1);
+    doWrite_RES_DigIn_13(-1);
+    doWrite_RES_DigIn_14(-1);
+    doWrite_RES_DigIn_15(-1);
+    doWrite_RES_DigIn_16(-1);
+
+    doWrite_RES_DigOut_1(-1);
+    doWrite_RES_DigOut_2(-1);
+    doWrite_RES_DigOut_3(-1);
+    doWrite_RES_DigOut_4(-1);
+    doWrite_RES_DigOut_5(-1);
+    doWrite_RES_DigOut_6(-1);
+    doWrite_RES_DigOut_7(-1);
+    doWrite_RES_DigOut_8(-1);
+    doWrite_RES_DigOut_9(-1);
+    doWrite_RES_DigOut_10(-1);
+    doWrite_RES_DigOut_11(-1);
+    doWrite_RES_DigOut_12(-1);
+    doWrite_RES_DigOut_13(-1);
+    doWrite_RES_DigOut_14(-1);
+    doWrite_RES_DigOut_15(-1);
+    doWrite_RES_DigOut_16(-1);
+
+    doWrite_RES_AnIn_1(-32768);
+    doWrite_RES_AnIn_2(-32768);
+    doWrite_RES_AnIn_3(-32768);
+    doWrite_RES_AnIn_4(-32768);
+    doWrite_RES_AnIn_5(-32768);
+    doWrite_RES_AnIn_6(-32768);
+    doWrite_RES_AnIn_7(-32768);
+    doWrite_RES_AnIn_8(-32768);
+    doWrite_RES_AnIn_9(-32768);
+    doWrite_RES_AnIn_10(-32768);
+    doWrite_RES_AnIn_11(-32768);
+    doWrite_RES_AnIn_12(-32768);
+
+    doWrite_RES_AnOut_1(-32768);
+    doWrite_RES_AnOut_2(-32768);
+    doWrite_RES_AnOut_3(-32768);
+    doWrite_RES_AnOut_4(-32768);
+
+    doWrite_RES_Tamb(-32768);
+    doWrite_RES_RPM(-32768);
+    doWrite_RES_VCC_set(-32768);
+    doWrite_RES_mA_max(32767);
+    doWrite_RES_VCC_fbk(-32768);
+    doWrite_RES_mA_fbk(32767);
+    doWrite_RES_FWrevision(32767);
+    doWrite_RES_HWconfig(32767);
+
+    doWrite_RES_RTUS_WR(-1);
+    doWrite_RES_RTUS_RD(-1);
+    doWrite_RES_RTU1_WR(-1);
+    doWrite_RES_RTU1_RD(-1);
+    doWrite_RES_RTU3_WR(-1);
+    doWrite_RES_RTU3_RD(-1);
+    doWrite_RES_CAN1_WR(-1);
+    doWrite_RES_CAN1_RD(-1);
+}
+
+static void writeTST(void)
+{
+    // we test the DigIn 1..16 by the TPLC005 16DO module
+    doWrite_TSTx_DigIn_1 (TST_DigIn_1 );
+    doWrite_TSTx_DigIn_2 (TST_DigIn_2 );
+    doWrite_TSTx_DigIn_3 (TST_DigIn_3 );
+    doWrite_TSTx_DigIn_4 (TST_DigIn_4 );
+    doWrite_TSTx_DigIn_5 (TST_DigIn_5 );
+    doWrite_TSTx_DigIn_6 (TST_DigIn_6 );
+    doWrite_TSTx_DigIn_7 (TST_DigIn_7 );
+    doWrite_TSTx_DigIn_8 (TST_DigIn_8 );
+    doWrite_TSTx_DigIn_9 (TST_DigIn_9 );
     doWrite_TSTx_DigIn_10(TST_DigIn_10);
     doWrite_TSTx_DigIn_11(TST_DigIn_11);
     doWrite_TSTx_DigIn_12(TST_DigIn_12);
@@ -375,7 +458,61 @@ static void Translate_DigIn(void)
     doWrite_TSTx_DigIn_14(TST_DigIn_14);
     doWrite_TSTx_DigIn_15(TST_DigIn_15);
     doWrite_TSTx_DigIn_16(TST_DigIn_16);
+    // no doWrite_TST2_DigIn_*
 
+    // we test the DigOut 1..16 by the TPLC005 16DI module
+    doWrite_TSTx_DigOut_1 (TST_DigOut_1 );
+    doWrite_TSTx_DigOut_2 (TST_DigOut_2 );
+    doWrite_TSTx_DigOut_3 (TST_DigOut_3 );
+    doWrite_TSTx_DigOut_4 (TST_DigOut_4 );
+    doWrite_TSTx_DigOut_5 (TST_DigOut_5 );
+    doWrite_TSTx_DigOut_6 (TST_DigOut_6 );
+    doWrite_TSTx_DigOut_7 (TST_DigOut_7 );
+    doWrite_TSTx_DigOut_8 (TST_DigOut_8 );
+    doWrite_TSTx_DigOut_9 (TST_DigOut_9 );
+    doWrite_TSTx_DigOut_10(TST_DigOut_10);
+    doWrite_TSTx_DigOut_11(TST_DigOut_11);
+    doWrite_TSTx_DigOut_12(TST_DigOut_12);
+    doWrite_TSTx_DigOut_13(TST_DigOut_13);
+    doWrite_TSTx_DigOut_14(TST_DigOut_14);
+    doWrite_TSTx_DigOut_15(TST_DigOut_15);
+    doWrite_TSTx_DigOut_16(TST_DigOut_16);
+    // no doWrite_TST2_DigOut_*
+
+    // we test the AnIn 1..4 by both local AnOut and the Horn TPAC1007_4AA AnOut
+    doWrite_TSTx_AnIn_1(TST_AnIn_1);
+    doWrite_TSTx_AnIn_2(TST_AnIn_2);
+    doWrite_TSTx_AnIn_3(TST_AnIn_3);
+    doWrite_TSTx_AnIn_4(TST_AnIn_4);
+
+    // we test the AnIn 5..12 (PT100 only) by the TPLC005 8AO module (actually internal 8DO)
+    doWrite_TSTx_AnIn_5(TST_AnIn_5);
+    doWrite_TSTx_AnIn_6(TST_AnIn_6);
+    doWrite_TSTx_AnIn_7(TST_AnIn_7);
+    doWrite_TSTx_AnIn_8(TST_AnIn_8);
+    doWrite_TSTx_AnIn_9(TST_AnIn_9);
+    doWrite_TSTx_AnIn_10(TST_AnIn_10);
+    doWrite_TSTx_AnIn_11(TST_AnIn_11);
+    doWrite_TSTx_AnIn_12(TST_AnIn_12);
+
+    // we test the AnOut 1..2 by both the local AnIn and the Horn TPAC1007_4AA AnIn
+    doWrite_TSTx_AnOut_1(TST_AnOut_1);
+    doWrite_TSTx_AnOut_2(TST_AnOut_2);
+
+    // we test the AnOut 3..4 by the by the TPLC005 internal 2AI
+    doWrite_TSTx_AnOut_3(TST_AnOut_3);
+    doWrite_TSTx_AnOut_4(TST_AnOut_4);
+
+    // we test the Others I/O ...
+    doWrite_TSTx_Tamb(TSTx_Tamb);
+    doWrite_TSTx_RPM(TSTx_RPM);
+    doWrite_TSTx_FWrevision(TSTx_FWrevision);
+    doWrite_TSTx_HWconfig(TSTx_HWconfig);
+}
+
+static void writeVAL(void)
+{
+    // DigIn 1..16 are on the TPLC005 in local RTU
     if (TST_DigIn_1 ) { doWrite_RTU_DigOut_1 (VAL_DigIn_1);  }
     if (TST_DigIn_2 ) { doWrite_RTU_DigOut_2 (VAL_DigIn_2);  }
     if (TST_DigIn_3 ) { doWrite_RTU_DigOut_3 (VAL_DigIn_3);  }
@@ -392,28 +529,8 @@ static void Translate_DigIn(void)
     if (TST_DigIn_14) { doWrite_RTU_DigOut_14(VAL_DigIn_14); }
     if (TST_DigIn_15) { doWrite_RTU_DigOut_15(VAL_DigIn_15); }
     if (TST_DigIn_16) { doWrite_RTU_DigOut_16(VAL_DigIn_16); }
-}
 
-static void Translate_DigOut(void)
-{
-    /* DigOut 1..16 are on the local TPLC005 */
-    doWrite_TSTx_DigOut_1 (TST_DigOut_1);
-    doWrite_TSTx_DigOut_2 (TST_DigOut_2);
-    doWrite_TSTx_DigOut_3 (TST_DigOut_3);
-    doWrite_TSTx_DigOut_4 (TST_DigOut_4);
-    doWrite_TSTx_DigOut_5 (TST_DigOut_5);
-    doWrite_TSTx_DigOut_6 (TST_DigOut_6);
-    doWrite_TSTx_DigOut_7 (TST_DigOut_7);
-    doWrite_TSTx_DigOut_8 (TST_DigOut_8);
-    doWrite_TSTx_DigOut_9 (TST_DigOut_9);
-    doWrite_TSTx_DigOut_10(TST_DigOut_10);
-    doWrite_TSTx_DigOut_11(TST_DigOut_11);
-    doWrite_TSTx_DigOut_12(TST_DigOut_12);
-    doWrite_TSTx_DigOut_13(TST_DigOut_13);
-    doWrite_TSTx_DigOut_14(TST_DigOut_14);
-    doWrite_TSTx_DigOut_15(TST_DigOut_15);
-    doWrite_TSTx_DigOut_16(TST_DigOut_16);
-
+    // DigOut 1..16 are on the local TPLC005
     if (TST_DigOut_1 ) { doWrite_VALx_DigOut_1 (VAL_DigOut_1);  }
     if (TST_DigOut_2 ) { doWrite_VALx_DigOut_2 (VAL_DigOut_2);  }
     if (TST_DigOut_3 ) { doWrite_VALx_DigOut_3 (VAL_DigOut_3);  }
@@ -430,23 +547,6 @@ static void Translate_DigOut(void)
     if (TST_DigOut_14) { doWrite_VALx_DigOut_14(VAL_DigOut_14); }
     if (TST_DigOut_15) { doWrite_VALx_DigOut_15(VAL_DigOut_15); }
     if (TST_DigOut_16) { doWrite_VALx_DigOut_16(VAL_DigOut_16); }
-}
-
-static void Translate_AnIn(void)
-{
-    doWrite_TSTx_AnIn_1(TST_AnIn_1);
-    doWrite_TSTx_AnIn_2(TST_AnIn_2);
-    doWrite_TSTx_AnIn_3(TST_AnIn_3);
-    doWrite_TSTx_AnIn_4(TST_AnIn_4);
-    doWrite_TSTx_AnIn_5(TST_AnIn_5);
-    doWrite_TSTx_AnIn_6(TST_AnIn_6);
-    doWrite_TSTx_AnIn_7(TST_AnIn_7);
-    doWrite_TSTx_AnIn_8(TST_AnIn_8);
-    doWrite_TSTx_AnIn_9(TST_AnIn_9);
-    doWrite_TSTx_AnIn_10(TST_AnIn_10);
-    doWrite_TSTx_AnIn_11(TST_AnIn_11);
-    doWrite_TSTx_AnIn_12(TST_AnIn_12);
-
     if (TST_AnIn_1)  {
         doWrite_VALx_AnInConf_1(VAL_AnInConf_1);
         doWrite_VALx_AnInFltr_1(VAL_AnInFltr_1);
@@ -468,10 +568,8 @@ static void Translate_AnIn(void)
         case 7: doWrite_PLC_DigOut_8(0); doWrite_PLC_DigOut_6(1);
             break;
         default: doWrite_PLC_DigOut_8(0); doWrite_PLC_DigOut_6(0);
-            break;
         }
     }
-
     if (TST_AnIn_2)  {
         doWrite_VALx_AnInConf_2(VAL_AnInConf_2);
         doWrite_VALx_AnInFltr_2(VAL_AnInFltr_2);
@@ -493,10 +591,8 @@ static void Translate_AnIn(void)
         case 7: doWrite_PLC_DigOut_7(0); doWrite_PLC_DigOut_5(1);
             break;
         default: doWrite_PLC_DigOut_7(0); doWrite_PLC_DigOut_5(0);
-            break;
         }
     }
-
     if (TST_AnIn_3)  {
         doWrite_VALx_AnInConf_3(VAL_AnInConf_3);
         doWrite_VALx_AnInFltr_3(VAL_AnInFltr_3);
@@ -519,10 +615,8 @@ static void Translate_AnIn(void)
         case 7: doWrite_VAL2_DigOut_8(0); doWrite_VAL2_DigOut_6(1);
             break;
         default: doWrite_VAL2_DigOut_8(0); doWrite_VAL2_DigOut_6(0);
-            break;
         }
     }
-
     if (TST_AnIn_4)  {
         doWrite_VALx_AnInConf_4(VAL_AnInConf_4);
         doWrite_VALx_AnInFltr_6(VAL_AnInFltr_4);
@@ -601,13 +695,8 @@ static void Translate_AnIn(void)
         /* <-- Head/TPLC005 AO8*/
         doWrite_RTU_AnOut_8(VAL_AnIn_12);
     }
-}
-
-static void Translate_AnOut(void)
-{
 
     if (TST_AnOut_1)  {
-        doWrite_TSTx_AnOut_1(true);
         doWrite_VALx_AnOut_1(VAL_AnOut_1);
                 doWrite_VALx_AnOutConf_1(VAL_AnOutConf_1);
                 /* --> Horn2 AI1 + DO4 */
@@ -625,9 +714,7 @@ static void Translate_AnOut(void)
             break;
         }
     }
-
     if (TST_AnOut_2)  {
-        doWrite_TSTx_AnOut_2(true);
         doWrite_VALx_AnOut_2(VAL_AnOut_2);
                 doWrite_VALx_AnOutConf_2(VAL_AnOutConf_2);
                 /* --> Horn2 AI2 + DO3 */
@@ -647,44 +734,29 @@ static void Translate_AnOut(void)
     }
 
     if (TST_AnOut_3)  {
-        doWrite_TSTx_AnOut_3(true);
         doWrite_VALx_AnOut_3(VAL_AnOut_3);
                 doWrite_VALx_AnOutConf_3(VAL_AnOutConf_3);
                 /* --> Head/TPLC005 AI1 */
                 doWrite_PLC_AnInConf_1(VAL_AnOutConf_3);
     }
-
     if (TST_AnOut_4)  {
-        doWrite_TSTx_AnOut_4(true);
         doWrite_VALx_AnOut_4(VAL_AnOut_4);
                 doWrite_VALx_AnOutConf_4(VAL_AnOutConf_4);
                 /* --> Head/TPLC005 AI2 */
                 doWrite_PLC_AnInConf_2(VAL_AnOutConf_4);
     }
 
-}
-
-static void Translate_Others(void)
-{
-
     if (TST_Tamb)  {
-        doWrite_TSTx_Tamb(true);
     }
-
     if (TST_RPM)  {
-        doWrite_TSTx_RPM(true);
         /* <-- Horn2 AO3 PWM */
         doWrite_TST2_AnOut_3(1);
         doWrite_VAL2_AnOutConf_3(3); /* PWM */
         doWrite_VAL2_AnOut_3((int)(VAL_RPM)); /* FIXME: conversion ? */
     }
-
     if (TST_FWrevision)  {
-        doWrite_TSTx_FWrevision(true);
     }
-
     if (TST_HWconfig) {
-        doWrite_TSTx_HWconfig(true);
     }
 
     /* only from the testing equipment */
@@ -693,28 +765,23 @@ static void Translate_Others(void)
         doWrite_PLC_AnOutConf_3(2); /* 0..10 V */
         doWrite_PLC_AnOut_3(VAL_VCC_set); /* FIXME: conversion ? */
     }
-
     if (TST_mA_max) {
         /* --> Head AO4 V */
         doWrite_PLC_AnOutConf_4(2); /* 0..10 V */
         doWrite_PLC_AnOut_4(VAL_mA_max); /* FIXME: conversion ? */
     }
-
     if (TST_VCC_fbk) {
         /* --> Head AI1 V */
         doWrite_PLC_AnInConf_1(2); /* 0..10 V */
     }
-
     if (TST_mA_fbk) {
         /* --> Head AI2 V */
         doWrite_PLC_AnInConf_2(2); /* 0..10 V */
     }
-
 }
 
-static void Check_DigIn(void)
+static void readRES(void)
 {
-    /* Get results */
     if (TST_DigIn_1 ) { doWrite_RES_DigIn_1(RESx_DigIn_1);  }
     if (TST_DigIn_2 ) { doWrite_RES_DigIn_2(RESx_DigIn_2);  }
     if (TST_DigIn_3 ) { doWrite_RES_DigIn_3(RESx_DigIn_3);  }
@@ -732,30 +799,6 @@ static void Check_DigIn(void)
     if (TST_DigIn_15) { doWrite_RES_DigIn_15(RESx_DigIn_15); }
     if (TST_DigIn_16) { doWrite_RES_DigIn_16(RESx_DigIn_16); }
 
-    /* Check values */
-    if (TST_DigIn_1 ) { doWrite_OK_DigIn_1((RES_DigIn_1 == VAL_DigIn_1));  }
-    if (TST_DigIn_2 ) { doWrite_OK_DigIn_2((RES_DigIn_2 == VAL_DigIn_2));  }
-    if (TST_DigIn_3 ) { doWrite_OK_DigIn_3((RES_DigIn_3 == VAL_DigIn_3));  }
-    if (TST_DigIn_4 ) { doWrite_OK_DigIn_4((RES_DigIn_4 == VAL_DigIn_4));  }
-    if (TST_DigIn_5 ) { doWrite_OK_DigIn_5((RES_DigIn_5 == VAL_DigIn_5));  }
-    if (TST_DigIn_6 ) { doWrite_OK_DigIn_6((RES_DigIn_6 == VAL_DigIn_6));  }
-    if (TST_DigIn_7 ) { doWrite_OK_DigIn_7((RES_DigIn_7 == VAL_DigIn_7));  }
-    if (TST_DigIn_8 ) { doWrite_OK_DigIn_8((RES_DigIn_8 == VAL_DigIn_8));  }
-    if (TST_DigIn_9 ) { doWrite_OK_DigIn_9((RES_DigIn_9 == VAL_DigIn_9));  }
-    if (TST_DigIn_10) { doWrite_OK_DigIn_10((RES_DigIn_10 == VAL_DigIn_10)); }
-    if (TST_DigIn_11) { doWrite_OK_DigIn_11((RES_DigIn_11 == VAL_DigIn_11)); }
-    if (TST_DigIn_12) { doWrite_OK_DigIn_12((RES_DigIn_12 == VAL_DigIn_12)); }
-    if (TST_DigIn_13) { doWrite_OK_DigIn_13((RES_DigIn_13 == VAL_DigIn_13)); }
-    if (TST_DigIn_14) { doWrite_OK_DigIn_14((RES_DigIn_14 == VAL_DigIn_14)); }
-    if (TST_DigIn_15) { doWrite_OK_DigIn_15((RES_DigIn_15 == VAL_DigIn_15)); }
-    if (TST_DigIn_16) { doWrite_OK_DigIn_16((RES_DigIn_16 == VAL_DigIn_16)); }
-
-}
-
-static void Check_DigOut(void)
-{
-
-    /* Get results */
     if (TST_DigOut_1 ) { doWrite_RES_DigOut_1(RTU_DigIn_1);  }
     if (TST_DigOut_2 ) { doWrite_RES_DigOut_2(RTU_DigIn_2);  }
     if (TST_DigOut_3 ) { doWrite_RES_DigOut_3(RTU_DigIn_3);  }
@@ -773,7 +816,57 @@ static void Check_DigOut(void)
     if (TST_DigOut_15) { doWrite_RES_DigOut_15(RTU_DigIn_15); }
     if (TST_DigOut_16) { doWrite_RES_DigOut_16(RTU_DigIn_16); }
 
-    /* Check values */
+    if (TST_AnIn_1)  { doWrite_RES_AnIn_1 (RESx_AnIn_1);  }
+    if (TST_AnIn_2)  { doWrite_RES_AnIn_2 (RESx_AnIn_2);  }
+    if (TST_AnIn_3)  { doWrite_RES_AnIn_3 (RESx_AnIn_3);  }
+    if (TST_AnIn_4)  { doWrite_RES_AnIn_4 (RESx_AnIn_4);  }
+
+    if (TST_AnIn_5 ) { doWrite_RES_AnIn_5 (RESx_AnIn_5);  }
+    if (TST_AnIn_6 ) { doWrite_RES_AnIn_6 (RESx_AnIn_6);  }
+    if (TST_AnIn_7 ) { doWrite_RES_AnIn_7 (RESx_AnIn_7);  }
+    if (TST_AnIn_8 ) { doWrite_RES_AnIn_8 (RESx_AnIn_8);  }
+    if (TST_AnIn_9 ) { doWrite_RES_AnIn_9 (RESx_AnIn_9);  }
+    if (TST_AnIn_10) { doWrite_RES_AnIn_10(RESx_AnIn_10);  }
+    if (TST_AnIn_11) { doWrite_RES_AnIn_11(RESx_AnIn_11);  }
+    if (TST_AnIn_12) { doWrite_RES_AnIn_12(RESx_AnIn_12);  }
+
+    if (TST_AnOut_1)  { doWrite_RES_AnOut_1(RES2_AnIn_1);  }
+    if (TST_AnOut_2)  { doWrite_RES_AnOut_2(RES2_AnIn_2);  }
+
+    if (TST_AnOut_3)  { doWrite_RES_AnOut_3(RTU_AnIn_1);  }
+    if (TST_AnOut_4)  { doWrite_RES_AnOut_4(RTU_AnIn_2);  }
+
+    if (TST_Tamb)  { doWrite_RES_Tamb (RESx_Tamb);  }
+    if (TST_RPM)   { doWrite_RES_RPM (RESx_RPM);  }
+
+    if (TST_VCC_set)  { doWrite_RES_VCC_set (PLC_AnOut_3);  }
+    if (TST_mA_max)  { doWrite_RES_mA_max (PLC_AnOut_4);  }
+
+    if (TST_VCC_fbk)  { doWrite_RES_VCC_fbk (PLC_AnIn_1);  }
+    if (TST_mA_fbk)  { doWrite_RES_mA_fbk (PLC_AnIn_2);  }
+
+    if (TST_FWrevision)  { doWrite_RES_FWrevision (RESx_FWrevision);  }
+    if (TST_HWconfig)  { doWrite_RES_HWconfig (RESx_HWconfig);  }}
+
+static void checkOK(void)
+{
+    if (TST_DigIn_1 ) { doWrite_OK_DigIn_1((RES_DigIn_1 == VAL_DigIn_1));  }
+    if (TST_DigIn_2 ) { doWrite_OK_DigIn_2((RES_DigIn_2 == VAL_DigIn_2));  }
+    if (TST_DigIn_3 ) { doWrite_OK_DigIn_3((RES_DigIn_3 == VAL_DigIn_3));  }
+    if (TST_DigIn_4 ) { doWrite_OK_DigIn_4((RES_DigIn_4 == VAL_DigIn_4));  }
+    if (TST_DigIn_5 ) { doWrite_OK_DigIn_5((RES_DigIn_5 == VAL_DigIn_5));  }
+    if (TST_DigIn_6 ) { doWrite_OK_DigIn_6((RES_DigIn_6 == VAL_DigIn_6));  }
+    if (TST_DigIn_7 ) { doWrite_OK_DigIn_7((RES_DigIn_7 == VAL_DigIn_7));  }
+    if (TST_DigIn_8 ) { doWrite_OK_DigIn_8((RES_DigIn_8 == VAL_DigIn_8));  }
+    if (TST_DigIn_9 ) { doWrite_OK_DigIn_9((RES_DigIn_9 == VAL_DigIn_9));  }
+    if (TST_DigIn_10) { doWrite_OK_DigIn_10((RES_DigIn_10 == VAL_DigIn_10)); }
+    if (TST_DigIn_11) { doWrite_OK_DigIn_11((RES_DigIn_11 == VAL_DigIn_11)); }
+    if (TST_DigIn_12) { doWrite_OK_DigIn_12((RES_DigIn_12 == VAL_DigIn_12)); }
+    if (TST_DigIn_13) { doWrite_OK_DigIn_13((RES_DigIn_13 == VAL_DigIn_13)); }
+    if (TST_DigIn_14) { doWrite_OK_DigIn_14((RES_DigIn_14 == VAL_DigIn_14)); }
+    if (TST_DigIn_15) { doWrite_OK_DigIn_15((RES_DigIn_15 == VAL_DigIn_15)); }
+    if (TST_DigIn_16) { doWrite_OK_DigIn_16((RES_DigIn_16 == VAL_DigIn_16)); }
+
     if (TST_DigOut_1 ) { doWrite_OK_DigOut_1((RES_DigOut_1 == VAL_DigOut_1));  }
     if (TST_DigOut_2 ) { doWrite_OK_DigOut_2((RES_DigOut_2 == VAL_DigOut_2));  }
     if (TST_DigOut_3 ) { doWrite_OK_DigOut_3((RES_DigOut_3 == VAL_DigOut_3));  }
@@ -791,65 +884,30 @@ static void Check_DigOut(void)
     if (TST_DigOut_15) { doWrite_OK_DigOut_15((RES_DigOut_15 == VAL_DigOut_15)); }
     if (TST_DigOut_16) { doWrite_OK_DigOut_16((RES_DigOut_16 == VAL_DigOut_16)); }
 
-}
+    int Tolleranza_AnIn = 1; /* 0.001 */
 
-static void Check_AnIn(void)
-{
+    if (TST_AnIn_1 ) { doWrite_OK_AnIn_1 (abs(RES_AnIn_1  - VAL_AnIn_1 ) < Tolleranza_AnIn); }
+    if (TST_AnIn_2 ) { doWrite_OK_AnIn_2 (abs(RES_AnIn_2  - VAL_AnIn_2 ) < Tolleranza_AnIn); }
+    if (TST_AnIn_3 ) { doWrite_OK_AnIn_3 (abs(RES_AnIn_3  - VAL_AnIn_3 ) < Tolleranza_AnIn); }
+    if (TST_AnIn_4 ) { doWrite_OK_AnIn_4 (abs(RES_AnIn_4  - VAL_AnIn_4 ) < Tolleranza_AnIn); }
 
-    int Tolleranza = 1; /* 0.001 */
+    if (TST_AnIn_5 ) { doWrite_OK_AnIn_5 (abs(RES_AnIn_5  - VAL_AnIn_5 ) < Tolleranza_AnIn); }
+    if (TST_AnIn_6 ) { doWrite_OK_AnIn_6 (abs(RES_AnIn_6  - VAL_AnIn_6 ) < Tolleranza_AnIn); }
+    if (TST_AnIn_7 ) { doWrite_OK_AnIn_7 (abs(RES_AnIn_7  - VAL_AnIn_7 ) < Tolleranza_AnIn); }
+    if (TST_AnIn_8 ) { doWrite_OK_AnIn_8 (abs(RES_AnIn_8  - VAL_AnIn_8 ) < Tolleranza_AnIn); }
+    if (TST_AnIn_9 ) { doWrite_OK_AnIn_9 (abs(RES_AnIn_9  - VAL_AnIn_9 ) < Tolleranza_AnIn); }
+    if (TST_AnIn_10) { doWrite_OK_AnIn_10(abs(RES_AnIn_10 - VAL_AnIn_10) < Tolleranza_AnIn); }
+    if (TST_AnIn_11) { doWrite_OK_AnIn_11(abs(RES_AnIn_11 - VAL_AnIn_11) < Tolleranza_AnIn); }
+    if (TST_AnIn_12) { doWrite_OK_AnIn_12(abs(RES_AnIn_12 - VAL_AnIn_12) < Tolleranza_AnIn); }
 
-    /* Get results */
-    if (TST_AnIn_1)  { doWrite_RES_AnIn_1 (RESx_AnIn_1);  }
-    if (TST_AnIn_2)  { doWrite_RES_AnIn_2 (RESx_AnIn_2);  }
-    if (TST_AnIn_3)  { doWrite_RES_AnIn_3 (RESx_AnIn_3);  }
-    if (TST_AnIn_4)  { doWrite_RES_AnIn_4 (RESx_AnIn_4);  }
+    int Tolleranza_AnOut = 1; /* 0.01 */
 
-    if (TST_AnIn_5 ) { doWrite_RES_AnIn_5 (RESx_AnIn_5);  }
-    if (TST_AnIn_6 ) { doWrite_RES_AnIn_6 (RESx_AnIn_6);  }
-    if (TST_AnIn_7 ) { doWrite_RES_AnIn_7 (RESx_AnIn_7);  }
-    if (TST_AnIn_8 ) { doWrite_RES_AnIn_8 (RESx_AnIn_8);  }
-    if (TST_AnIn_9 ) { doWrite_RES_AnIn_9 (RESx_AnIn_9);  }
-    if (TST_AnIn_10) { doWrite_RES_AnIn_10(RESx_AnIn_10);  }
-    if (TST_AnIn_11) { doWrite_RES_AnIn_11(RESx_AnIn_11);  }
-    if (TST_AnIn_12) { doWrite_RES_AnIn_12(RESx_AnIn_12);  }
+    if (TST_AnOut_1)  { doWrite_OK_AnOut_1(abs(RES_AnOut_1 - VAL_AnOut_1) < Tolleranza_AnOut); }
+    if (TST_AnOut_2)  { doWrite_OK_AnOut_2(abs(RES_AnOut_2 - VAL_AnOut_2) < Tolleranza_AnOut); }
 
-    /* Check values */
-    if (TST_AnIn_1 ) { doWrite_OK_AnIn_1 (abs(RES_AnIn_1  - VAL_AnIn_1 ) < Tolleranza); }
-    if (TST_AnIn_2 ) { doWrite_OK_AnIn_2 (abs(RES_AnIn_2  - VAL_AnIn_2 ) < Tolleranza); }
-    if (TST_AnIn_3 ) { doWrite_OK_AnIn_3 (abs(RES_AnIn_3  - VAL_AnIn_3 ) < Tolleranza); }
-    if (TST_AnIn_4 ) { doWrite_OK_AnIn_4 (abs(RES_AnIn_4  - VAL_AnIn_4 ) < Tolleranza); }
+    if (TST_AnOut_3)  { doWrite_OK_AnOut_3(abs(RES_AnOut_3 - VAL_AnOut_3) < Tolleranza_AnOut); }
+    if (TST_AnOut_4)  { doWrite_OK_AnOut_4(abs(RES_AnOut_4 - VAL_AnOut_4) < Tolleranza_AnOut); }
 
-    if (TST_AnIn_5 ) { doWrite_OK_AnIn_5 (abs(RES_AnIn_5  - VAL_AnIn_5 ) < Tolleranza); }
-    if (TST_AnIn_6 ) { doWrite_OK_AnIn_6 (abs(RES_AnIn_6  - VAL_AnIn_6 ) < Tolleranza); }
-    if (TST_AnIn_7 ) { doWrite_OK_AnIn_7 (abs(RES_AnIn_7  - VAL_AnIn_7 ) < Tolleranza); }
-    if (TST_AnIn_8 ) { doWrite_OK_AnIn_8 (abs(RES_AnIn_8  - VAL_AnIn_8 ) < Tolleranza); }
-    if (TST_AnIn_9 ) { doWrite_OK_AnIn_9 (abs(RES_AnIn_9  - VAL_AnIn_9 ) < Tolleranza); }
-    if (TST_AnIn_10) { doWrite_OK_AnIn_10(abs(RES_AnIn_10 - VAL_AnIn_10) < Tolleranza); }
-    if (TST_AnIn_11) { doWrite_OK_AnIn_11(abs(RES_AnIn_11 - VAL_AnIn_11) < Tolleranza); }
-    if (TST_AnIn_12) { doWrite_OK_AnIn_12(abs(RES_AnIn_12 - VAL_AnIn_12) < Tolleranza); }
-
-}
-
-static void Check_AnOut(void)
-{
-int Tolleranza = 1; /* 0.01 */
-
-    /* Get results */
-    if (TST_AnOut_1)  { doWrite_RES_AnOut_1(RES2_AnIn_1);  }
-    if (TST_AnOut_2)  { doWrite_RES_AnOut_2(RES2_AnIn_2);  }
-    if (TST_AnOut_3)  { doWrite_RES_AnOut_3(RTU_AnIn_1);  }
-    if (TST_AnOut_4)  { doWrite_RES_AnOut_4(RTU_AnIn_2);  }
-
-    /* Check values */
-    if (TST_AnOut_1)  { doWrite_OK_AnOut_1(abs(RES_AnOut_1 - VAL_AnOut_1) < Tolleranza); }
-    if (TST_AnOut_2)  { doWrite_OK_AnOut_2(abs(RES_AnOut_2 - VAL_AnOut_2) < Tolleranza); }
-    if (TST_AnOut_3)  { doWrite_OK_AnOut_3(abs(RES_AnOut_3 - VAL_AnOut_3) < Tolleranza); }
-    if (TST_AnOut_4)  { doWrite_OK_AnOut_4(abs(RES_AnOut_4 - VAL_AnOut_4) < Tolleranza); }
-
-}
-
-static void Check_Others(void)
-{
     int Tolleranza_Tamb_min = 10;
     int Tolleranza_RPM = 100;
     int Tolleranza_VCC_set = 10; /* 0.01 V */
@@ -857,20 +915,6 @@ static void Check_Others(void)
     int Tolleranza_VCC_fbk = 100; /* 0.1 V */
     int Tolleranza_mA_fbk = 100; /* 0.1 mA */
 
-    /* Get results */
-    if (TST_Tamb)  { doWrite_RES_Tamb (RESx_Tamb);  }
-    if (TST_RPM)   { doWrite_RES_RPM (RESx_RPM);  }
-
-    if (TST_VCC_set)  { doWrite_RES_VCC_set (PLC_AnOut_3);  }
-    if (TST_mA_max)  { doWrite_RES_mA_max (PLC_AnOut_4);  }
-
-    if (TST_VCC_fbk)  { doWrite_RES_VCC_fbk (PLC_AnIn_1);  }
-    if (TST_mA_fbk)  { doWrite_RES_mA_fbk (PLC_AnIn_2);  }
-
-    if (TST_FWrevision)  { doWrite_RES_FWrevision (RESx_FWrevision);  }
-    if (TST_HWconfig)  { doWrite_RES_HWconfig (RESx_HWconfig);  }
-
-    /* Check values */
     if (TST_Tamb)  { doWrite_OK_Tamb ((Tolleranza_Tamb_min <= RES_Tamb) and (RES_Tamb < VAL_Tamb )); }
     if (TST_RPM)  { doWrite_OK_RPM (abs((int)(RES_RPM) - (int)(VAL_RPM) ) < Tolleranza_RPM); }
 

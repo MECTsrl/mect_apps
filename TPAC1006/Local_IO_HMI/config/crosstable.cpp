@@ -245,9 +245,9 @@ int PLC_DigIn_5 = 0;
 int PLC_DigIn_6 = 0;
 int PLC_DigIn_7 = 0;
 int PLC_DigIn_8 = 0;
-u_int16_t PLC_DigIn_9_16 = 0;
-u_int16_t PLC_DigIn_17_24 = 0;
-u_int16_t PLC_DigIn_25_32 = 0;
+int PLC_DigIn_9 = 0;
+int PLC_DigIn_17 = 0;
+int PLC_DigIn_25 = 0;
 int PLC_DigOut_1 = 0;
 int PLC_DigOut_2 = 0;
 int PLC_DigOut_3 = 0;
@@ -4486,57 +4486,57 @@ return getStatus(ID_PLC_DigIn_8);
 }
 
 
-int doWrite_PLC_DigIn_9_16(u_int16_t value)
+int doWrite_PLC_DigIn_9(int value)
 {
-return doWrite(ID_PLC_DigIn_9_16,  &value);
+return doWrite(ID_PLC_DigIn_9,  &value);
 }
 
 
-int addWrite_PLC_DigIn_9_16(u_int16_t value)
+int addWrite_PLC_DigIn_9(int value)
 {
-return addWrite(ID_PLC_DigIn_9_16, &value);
+return addWrite(ID_PLC_DigIn_9, &value);
 }
 
 
-int getStatus_PLC_DigIn_9_16()
+int getStatus_PLC_DigIn_9()
 {
-return getStatus(ID_PLC_DigIn_9_16);
+return getStatus(ID_PLC_DigIn_9);
 }
 
 
-int doWrite_PLC_DigIn_17_24(u_int16_t value)
+int doWrite_PLC_DigIn_17(int value)
 {
-return doWrite(ID_PLC_DigIn_17_24,  &value);
+return doWrite(ID_PLC_DigIn_17,  &value);
 }
 
 
-int addWrite_PLC_DigIn_17_24(u_int16_t value)
+int addWrite_PLC_DigIn_17(int value)
 {
-return addWrite(ID_PLC_DigIn_17_24, &value);
+return addWrite(ID_PLC_DigIn_17, &value);
 }
 
 
-int getStatus_PLC_DigIn_17_24()
+int getStatus_PLC_DigIn_17()
 {
-return getStatus(ID_PLC_DigIn_17_24);
+return getStatus(ID_PLC_DigIn_17);
 }
 
 
-int doWrite_PLC_DigIn_25_32(u_int16_t value)
+int doWrite_PLC_DigIn_25(int value)
 {
-return doWrite(ID_PLC_DigIn_25_32,  &value);
+return doWrite(ID_PLC_DigIn_25,  &value);
 }
 
 
-int addWrite_PLC_DigIn_25_32(u_int16_t value)
+int addWrite_PLC_DigIn_25(int value)
 {
-return addWrite(ID_PLC_DigIn_25_32, &value);
+return addWrite(ID_PLC_DigIn_25, &value);
 }
 
 
-int getStatus_PLC_DigIn_25_32()
+int getStatus_PLC_DigIn_25()
 {
-return getStatus(ID_PLC_DigIn_25_32);
+return getStatus(ID_PLC_DigIn_25);
 }
 
 
@@ -5532,9 +5532,9 @@ retval += readFromDb(ID_PLC_DigIn_5, &PLC_DigIn_5);
 retval += readFromDb(ID_PLC_DigIn_6, &PLC_DigIn_6);
 retval += readFromDb(ID_PLC_DigIn_7, &PLC_DigIn_7);
 retval += readFromDb(ID_PLC_DigIn_8, &PLC_DigIn_8);
-retval += readFromDb(ID_PLC_DigIn_9_16, &PLC_DigIn_9_16);
-retval += readFromDb(ID_PLC_DigIn_17_24, &PLC_DigIn_17_24);
-retval += readFromDb(ID_PLC_DigIn_25_32, &PLC_DigIn_25_32);
+retval += readFromDb(ID_PLC_DigIn_9, &PLC_DigIn_9);
+retval += readFromDb(ID_PLC_DigIn_17, &PLC_DigIn_17);
+retval += readFromDb(ID_PLC_DigIn_25, &PLC_DigIn_25);
 retval += readFromDb(ID_PLC_DigOut_1, &PLC_DigOut_1);
 retval += readFromDb(ID_PLC_DigOut_2, &PLC_DigOut_2);
 retval += readFromDb(ID_PLC_DigOut_3, &PLC_DigOut_3);

@@ -202,9 +202,9 @@
    </property>
    <property name="geometry">
     <rect>
-     <x>259</x>
+     <x>267</x>
      <y>135</y>
-     <width>61</width>
+     <width>53</width>
      <height>27</height>
     </rect>
    </property>
@@ -217,7 +217,7 @@
     </font>
    </property>
    <property name="text">
-    <string>20.1</string>
+    <string>456</string>
    </property>
    <property name="toolTip">
     <string>PLC_ControlWord</string>
@@ -263,6 +263,9 @@
    <property name="borderRadius">
     <number>0</number>
    </property>
+   <property name="apparence">
+    <enum>QFrame::Raised</enum>
+   </property>
   </widget>
   <widget class="ATCMlabel" name="atcmLabel_PLC_Tamc">
    <property name="enabled">
@@ -270,9 +273,9 @@
    </property>
    <property name="geometry">
     <rect>
-     <x>259</x>
+     <x>267</x>
      <y>81</y>
-     <width>61</width>
+     <width>53</width>
      <height>27</height>
     </rect>
    </property>
@@ -338,9 +341,9 @@
    </property>
    <property name="geometry">
     <rect>
-     <x>259</x>
+     <x>267</x>
      <y>108</y>
-     <width>61</width>
+     <width>53</width>
      <height>27</height>
     </rect>
    </property>
@@ -353,7 +356,7 @@
     </font>
    </property>
    <property name="text">
-    <string>20.1</string>
+    <string>123</string>
    </property>
    <property name="toolTip">
     <string>PLC_StatusReg</string>
@@ -419,7 +422,7 @@
     <string notr="true">background-color: rgb(255, 255, 127);</string>
    </property>
    <property name="text">
-    <string>A.O.</string>
+    <string>AO</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>
@@ -475,37 +478,12 @@
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
-  <widget class="QLabel" name="label_PLC_ControlWord">
-   <property name="geometry">
-    <rect>
-     <x>216</x>
-     <y>135</y>
-     <width>42</width>
-     <height>27</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>DejaVu Sans</family>
-     <pointsize>13</pointsize>
-    </font>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background-color: rgb(255, 255, 127);</string>
-   </property>
-   <property name="text">
-    <string>C.W.</string>
-   </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
-   </property>
-  </widget>
   <widget class="QLabel" name="label_PLC_Tamb">
    <property name="geometry">
     <rect>
      <x>216</x>
      <y>81</y>
-     <width>42</width>
+     <width>52</width>
      <height>27</height>
     </rect>
    </property>
@@ -530,7 +508,7 @@
     <rect>
      <x>216</x>
      <y>108</y>
-     <width>42</width>
+     <width>52</width>
      <height>27</height>
     </rect>
    </property>
@@ -1145,7 +1123,7 @@
     <string notr="true">background-color: rgb(255, 255, 127);</string>
    </property>
    <property name="text">
-    <string>A.I.</string>
+    <string>AI</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>
@@ -3230,6 +3208,31 @@
     <enum>Qt::Horizontal</enum>
    </property>
   </widget>
+  <widget class="QLabel" name="label_PLC_Tamb_2">
+   <property name="geometry">
+    <rect>
+     <x>216</x>
+     <y>135</y>
+     <width>52</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>13</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 127);</string>
+   </property>
+   <property name="text">
+    <string>Control</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
   <zorder>label_PLC_Encoder</zorder>
   <zorder>label_PLC_EncPreset</zorder>
   <zorder>atcmLabel_PLC_EncoderHi</zorder>
@@ -3239,7 +3242,6 @@
   <zorder>label_PLC_AnOut</zorder>
   <zorder>label_PLC_AnOut_1</zorder>
   <zorder>label_PLC_AnOut_2</zorder>
-  <zorder>label_PLC_ControlWord</zorder>
   <zorder>label_PLC_Tamb</zorder>
   <zorder>label_PLC_StatusReg</zorder>
   <zorder>atcmLabel_PLC_AnOut_2</zorder>
@@ -3300,6 +3302,7 @@
   <zorder>line_vt_1</zorder>
   <zorder>line_vt_2</zorder>
   <zorder>line</zorder>
+  <zorder>label_PLC_Tamb_2</zorder>
  </widget>
  <customwidgets>
   <customwidget>

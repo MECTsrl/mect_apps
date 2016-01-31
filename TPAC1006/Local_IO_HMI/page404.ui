@@ -1149,42 +1149,6 @@ Remote / Test</string>
      <normaloff>:/off.png</normaloff>:/off.png</iconset>
    </property>
   </widget>
-  <widget class="ATCMled" name="atcmLed_TST_AnOut_4">
-   <property name="geometry">
-    <rect>
-     <x>158</x>
-     <y>81</y>
-     <width>18</width>
-     <height>27</height>
-    </rect>
-   </property>
-   <property name="toolTip">
-    <string>TST_AnOut_4</string>
-   </property>
-   <property name="whatsThis">
-    <string>ATCMled widget</string>
-   </property>
-   <property name="variable">
-    <string>TST_AnOut_4</string>
-   </property>
-   <property name="refresh">
-    <number>500</number>
-   </property>
-   <property name="viewStatus">
-    <bool>false</bool>
-   </property>
-   <property name="visibilityVar">
-    <string/>
-   </property>
-   <property name="onIcon">
-    <iconset>
-     <normaloff>:/on.png</normaloff>:/on.png</iconset>
-   </property>
-   <property name="offIcon">
-    <iconset>
-     <normaloff>:/off.png</normaloff>:/off.png</iconset>
-   </property>
-  </widget>
   <widget class="ATCMled" name="atcmLed_TST_AnOut_2">
    <property name="geometry">
     <rect>
@@ -1202,42 +1166,6 @@ Remote / Test</string>
    </property>
    <property name="variable">
     <string>TST_AnOut_2</string>
-   </property>
-   <property name="refresh">
-    <number>500</number>
-   </property>
-   <property name="viewStatus">
-    <bool>false</bool>
-   </property>
-   <property name="visibilityVar">
-    <string/>
-   </property>
-   <property name="onIcon">
-    <iconset>
-     <normaloff>:/on.png</normaloff>:/on.png</iconset>
-   </property>
-   <property name="offIcon">
-    <iconset>
-     <normaloff>:/off.png</normaloff>:/off.png</iconset>
-   </property>
-  </widget>
-  <widget class="ATCMled" name="atcmLed_TST_AnOut_3">
-   <property name="geometry">
-    <rect>
-     <x>141</x>
-     <y>81</y>
-     <width>18</width>
-     <height>27</height>
-    </rect>
-   </property>
-   <property name="toolTip">
-    <string>TST_AnOut_3</string>
-   </property>
-   <property name="whatsThis">
-    <string>ATCMled widget</string>
-   </property>
-   <property name="variable">
-    <string>TST_AnOut_3</string>
    </property>
    <property name="refresh">
     <number>500</number>
@@ -1296,9 +1224,7 @@ Remote / Test</string>
   <zorder>line_vt_2</zorder>
   <zorder>line_hr_4</zorder>
   <zorder>atcmLed_TST_AnOut_1</zorder>
-  <zorder>atcmLed_TST_AnOut_4</zorder>
   <zorder>atcmLed_TST_AnOut_2</zorder>
-  <zorder>atcmLed_TST_AnOut_3</zorder>
  </widget>
  <customwidgets>
   <customwidget>

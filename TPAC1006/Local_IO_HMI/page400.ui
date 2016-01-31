@@ -853,19 +853,19 @@ background-color: rgb(255, 255, 127);
    <property name="geometry">
     <rect>
      <x>141</x>
-     <y>162</y>
+     <y>135</y>
      <width>18</width>
      <height>27</height>
     </rect>
    </property>
    <property name="toolTip">
-    <string>TST_AnOut_3</string>
+    <string>TST_AnIn_3</string>
    </property>
    <property name="whatsThis">
     <string>ATCMled widget</string>
    </property>
    <property name="variable">
-    <string>TST_AnOut_3</string>
+    <string>TST_AnIn_3</string>
    </property>
    <property name="refresh">
     <number>500</number>
@@ -1022,19 +1022,19 @@ background-color: rgb(255, 255, 127);
    <property name="geometry">
     <rect>
      <x>158</x>
-     <y>162</y>
+     <y>135</y>
      <width>18</width>
      <height>27</height>
     </rect>
    </property>
    <property name="toolTip">
-    <string>TST_AnOut_4</string>
+    <string>TST_AnIn_4</string>
    </property>
    <property name="whatsThis">
     <string>ATCMled widget</string>
    </property>
    <property name="variable">
-    <string>TST_AnOut_4</string>
+    <string>TST_AnIn_4</string>
    </property>
    <property name="refresh">
     <number>500</number>

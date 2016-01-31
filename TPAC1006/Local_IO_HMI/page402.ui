@@ -1495,6 +1495,870 @@ Remote / Test</string>
      <normaloff>:/off.png</normaloff>:/off.png</iconset>
    </property>
   </widget>
+  <widget class="ATCMled" name="atcmLed_VAL_DigOut_11">
+   <property name="geometry">
+    <rect>
+     <x>283</x>
+     <y>108</y>
+     <width>18</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>VAL_DigOut_11</string>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMled widget</string>
+   </property>
+   <property name="variable">
+    <string>VAL_DigOut_11</string>
+   </property>
+   <property name="refresh">
+    <number>500</number>
+   </property>
+   <property name="viewStatus">
+    <bool>false</bool>
+   </property>
+   <property name="visibilityVar">
+    <string>TST_DigOut_11</string>
+   </property>
+   <property name="onIcon">
+    <iconset>
+     <normaloff>:/on.png</normaloff>:/on.png</iconset>
+   </property>
+   <property name="offIcon">
+    <iconset>
+     <normaloff>:/off.png</normaloff>:/off.png</iconset>
+   </property>
+  </widget>
+  <widget class="ATCMled" name="atcmLed_VAL_DigOut_4">
+   <property name="geometry">
+    <rect>
+     <x>158</x>
+     <y>108</y>
+     <width>18</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>VAL_DigOut_4</string>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMled widget</string>
+   </property>
+   <property name="variable">
+    <string>VAL_DigOut_4</string>
+   </property>
+   <property name="refresh">
+    <number>500</number>
+   </property>
+   <property name="viewStatus">
+    <bool>false</bool>
+   </property>
+   <property name="visibilityVar">
+    <string>TST_DigOut_4</string>
+   </property>
+   <property name="onIcon">
+    <iconset>
+     <normaloff>:/on.png</normaloff>:/on.png</iconset>
+   </property>
+   <property name="offIcon">
+    <iconset>
+     <normaloff>:/off.png</normaloff>:/off.png</iconset>
+   </property>
+  </widget>
+  <widget class="ATCMled" name="atcmLed_VAL_DigOut_5">
+   <property name="geometry">
+    <rect>
+     <x>176</x>
+     <y>108</y>
+     <width>18</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>VAL_DigOut_5</string>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMled widget</string>
+   </property>
+   <property name="variable">
+    <string>VAL_DigOut_5</string>
+   </property>
+   <property name="refresh">
+    <number>500</number>
+   </property>
+   <property name="viewStatus">
+    <bool>false</bool>
+   </property>
+   <property name="visibilityVar">
+    <string>TST_DigOut_5</string>
+   </property>
+   <property name="onIcon">
+    <iconset>
+     <normaloff>:/on.png</normaloff>:/on.png</iconset>
+   </property>
+   <property name="offIcon">
+    <iconset>
+     <normaloff>:/off.png</normaloff>:/off.png</iconset>
+   </property>
+  </widget>
+  <widget class="ATCMled" name="atcmLed_VAL_DigOut_6">
+   <property name="geometry">
+    <rect>
+     <x>193</x>
+     <y>108</y>
+     <width>18</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>VAL_DigOut_6</string>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMled widget</string>
+   </property>
+   <property name="variable">
+    <string>VAL_DigOut_6</string>
+   </property>
+   <property name="refresh">
+    <number>500</number>
+   </property>
+   <property name="viewStatus">
+    <bool>false</bool>
+   </property>
+   <property name="visibilityVar">
+    <string>TST_DigOut_6</string>
+   </property>
+   <property name="onIcon">
+    <iconset>
+     <normaloff>:/on.png</normaloff>:/on.png</iconset>
+   </property>
+   <property name="offIcon">
+    <iconset>
+     <normaloff>:/off.png</normaloff>:/off.png</iconset>
+   </property>
+  </widget>
+  <widget class="ATCMled" name="atcmLed_VAL_DigOut_7">
+   <property name="geometry">
+    <rect>
+     <x>213</x>
+     <y>108</y>
+     <width>18</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>VAL_DigOut_7</string>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMled widget</string>
+   </property>
+   <property name="variable">
+    <string>VAL_DigOut_7</string>
+   </property>
+   <property name="refresh">
+    <number>500</number>
+   </property>
+   <property name="viewStatus">
+    <bool>false</bool>
+   </property>
+   <property name="visibilityVar">
+    <string>TST_DigOut_7</string>
+   </property>
+   <property name="onIcon">
+    <iconset>
+     <normaloff>:/on.png</normaloff>:/on.png</iconset>
+   </property>
+   <property name="offIcon">
+    <iconset>
+     <normaloff>:/off.png</normaloff>:/off.png</iconset>
+   </property>
+  </widget>
+  <widget class="ATCMled" name="atcmLed_VAL_DigOut_12">
+   <property name="geometry">
+    <rect>
+     <x>302</x>
+     <y>108</y>
+     <width>18</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>VAL_DigOut_12</string>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMled widget</string>
+   </property>
+   <property name="variable">
+    <string>VAL_DigOut_12</string>
+   </property>
+   <property name="refresh">
+    <number>500</number>
+   </property>
+   <property name="viewStatus">
+    <bool>false</bool>
+   </property>
+   <property name="visibilityVar">
+    <string>TST_DigOut_12</string>
+   </property>
+   <property name="onIcon">
+    <iconset>
+     <normaloff>:/on.png</normaloff>:/on.png</iconset>
+   </property>
+   <property name="offIcon">
+    <iconset>
+     <normaloff>:/off.png</normaloff>:/off.png</iconset>
+   </property>
+  </widget>
+  <widget class="ATCMled" name="atcmLed_VAL_DigOut_3">
+   <property name="geometry">
+    <rect>
+     <x>141</x>
+     <y>108</y>
+     <width>18</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>VAL_DigOut_3</string>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMled widget</string>
+   </property>
+   <property name="variable">
+    <string>VAL_DigOut_3</string>
+   </property>
+   <property name="refresh">
+    <number>500</number>
+   </property>
+   <property name="viewStatus">
+    <bool>false</bool>
+   </property>
+   <property name="visibilityVar">
+    <string>TST_DigOut_3</string>
+   </property>
+   <property name="onIcon">
+    <iconset>
+     <normaloff>:/on.png</normaloff>:/on.png</iconset>
+   </property>
+   <property name="offIcon">
+    <iconset>
+     <normaloff>:/off.png</normaloff>:/off.png</iconset>
+   </property>
+  </widget>
+  <widget class="ATCMled" name="atcmLed_VAL_DigOut_9">
+   <property name="geometry">
+    <rect>
+     <x>248</x>
+     <y>108</y>
+     <width>18</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>VAL_DigOut_9</string>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMled widget</string>
+   </property>
+   <property name="variable">
+    <string>VAL_DigOut_9</string>
+   </property>
+   <property name="refresh">
+    <number>500</number>
+   </property>
+   <property name="viewStatus">
+    <bool>false</bool>
+   </property>
+   <property name="visibilityVar">
+    <string>TST_DigOut_9</string>
+   </property>
+   <property name="onIcon">
+    <iconset>
+     <normaloff>:/on.png</normaloff>:/on.png</iconset>
+   </property>
+   <property name="offIcon">
+    <iconset>
+     <normaloff>:/off.png</normaloff>:/off.png</iconset>
+   </property>
+  </widget>
+  <widget class="ATCMled" name="atcmLed_VAL_DigOut_2">
+   <property name="geometry">
+    <rect>
+     <x>123</x>
+     <y>108</y>
+     <width>18</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>VAL_DigOut_2</string>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMled widget</string>
+   </property>
+   <property name="variable">
+    <string>VAL_DigOut_2</string>
+   </property>
+   <property name="refresh">
+    <number>500</number>
+   </property>
+   <property name="viewStatus">
+    <bool>false</bool>
+   </property>
+   <property name="visibilityVar">
+    <string>TST_DigOut_2</string>
+   </property>
+   <property name="onIcon">
+    <iconset>
+     <normaloff>:/on.png</normaloff>:/on.png</iconset>
+   </property>
+   <property name="offIcon">
+    <iconset>
+     <normaloff>:/off.png</normaloff>:/off.png</iconset>
+   </property>
+  </widget>
+  <widget class="ATCMled" name="atcmLed_VAL_DigOut_8">
+   <property name="geometry">
+    <rect>
+     <x>231</x>
+     <y>108</y>
+     <width>18</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>VAL_DigOut_8</string>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMled widget</string>
+   </property>
+   <property name="variable">
+    <string>VAL_DigOut_8</string>
+   </property>
+   <property name="refresh">
+    <number>500</number>
+   </property>
+   <property name="viewStatus">
+    <bool>false</bool>
+   </property>
+   <property name="visibilityVar">
+    <string>TST_DigOut_8</string>
+   </property>
+   <property name="onIcon">
+    <iconset>
+     <normaloff>:/on.png</normaloff>:/on.png</iconset>
+   </property>
+   <property name="offIcon">
+    <iconset>
+     <normaloff>:/off.png</normaloff>:/off.png</iconset>
+   </property>
+  </widget>
+  <widget class="ATCMled" name="atcmLed_VAL_DigOut_10">
+   <property name="geometry">
+    <rect>
+     <x>265</x>
+     <y>108</y>
+     <width>18</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>VAL_DigOut_10</string>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMled widget</string>
+   </property>
+   <property name="variable">
+    <string>VAL_DigOut_10</string>
+   </property>
+   <property name="refresh">
+    <number>500</number>
+   </property>
+   <property name="viewStatus">
+    <bool>false</bool>
+   </property>
+   <property name="visibilityVar">
+    <string>TST_DigOut_10</string>
+   </property>
+   <property name="onIcon">
+    <iconset>
+     <normaloff>:/on.png</normaloff>:/on.png</iconset>
+   </property>
+   <property name="offIcon">
+    <iconset>
+     <normaloff>:/off.png</normaloff>:/off.png</iconset>
+   </property>
+  </widget>
+  <widget class="ATCMled" name="atcmLed_VAL_DigOut_1">
+   <property name="geometry">
+    <rect>
+     <x>105</x>
+     <y>108</y>
+     <width>18</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>VAL_DigOut_1</string>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMled widget</string>
+   </property>
+   <property name="variable">
+    <string>VAL_DigOut_1</string>
+   </property>
+   <property name="refresh">
+    <number>500</number>
+   </property>
+   <property name="viewStatus">
+    <bool>false</bool>
+   </property>
+   <property name="visibilityVar">
+    <string>TST_DigOut_1</string>
+   </property>
+   <property name="onIcon">
+    <iconset>
+     <normaloff>:/on.png</normaloff>:/on.png</iconset>
+   </property>
+   <property name="offIcon">
+    <iconset>
+     <normaloff>:/off.png</normaloff>:/off.png</iconset>
+   </property>
+  </widget>
+  <widget class="ATCMled" name="atcmLed_PLC_DigOut_12">
+   <property name="geometry">
+    <rect>
+     <x>302</x>
+     <y>162</y>
+     <width>18</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>PLC_DigOut_12</string>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMled widget</string>
+   </property>
+   <property name="variable">
+    <string>PLC_DigOut_12</string>
+   </property>
+   <property name="refresh">
+    <number>500</number>
+   </property>
+   <property name="viewStatus">
+    <bool>false</bool>
+   </property>
+   <property name="visibilityVar">
+    <string>TST_DigOut_12</string>
+   </property>
+   <property name="onIcon">
+    <iconset>
+     <normaloff>:/on.png</normaloff>:/on.png</iconset>
+   </property>
+   <property name="offIcon">
+    <iconset>
+     <normaloff>:/off.png</normaloff>:/off.png</iconset>
+   </property>
+  </widget>
+  <widget class="ATCMled" name="atcmLed_PLC_DigOut_9">
+   <property name="geometry">
+    <rect>
+     <x>248</x>
+     <y>162</y>
+     <width>18</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>PLC_DigOut_9</string>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMled widget</string>
+   </property>
+   <property name="variable">
+    <string>PLC_DigOut_9</string>
+   </property>
+   <property name="refresh">
+    <number>500</number>
+   </property>
+   <property name="viewStatus">
+    <bool>false</bool>
+   </property>
+   <property name="visibilityVar">
+    <string>TST_DigOut_9</string>
+   </property>
+   <property name="onIcon">
+    <iconset>
+     <normaloff>:/on.png</normaloff>:/on.png</iconset>
+   </property>
+   <property name="offIcon">
+    <iconset>
+     <normaloff>:/off.png</normaloff>:/off.png</iconset>
+   </property>
+  </widget>
+  <widget class="ATCMled" name="atcmLed_PLC_DigOut_4">
+   <property name="geometry">
+    <rect>
+     <x>158</x>
+     <y>162</y>
+     <width>18</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>PLC_DigOut_4</string>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMled widget</string>
+   </property>
+   <property name="variable">
+    <string>PLC_DigOut_4</string>
+   </property>
+   <property name="refresh">
+    <number>500</number>
+   </property>
+   <property name="viewStatus">
+    <bool>false</bool>
+   </property>
+   <property name="visibilityVar">
+    <string>TST_DigOut_4</string>
+   </property>
+   <property name="onIcon">
+    <iconset>
+     <normaloff>:/on.png</normaloff>:/on.png</iconset>
+   </property>
+   <property name="offIcon">
+    <iconset>
+     <normaloff>:/off.png</normaloff>:/off.png</iconset>
+   </property>
+  </widget>
+  <widget class="ATCMled" name="atcmLed_PLC_DigOut_11">
+   <property name="geometry">
+    <rect>
+     <x>283</x>
+     <y>162</y>
+     <width>18</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>PLC_DigOut_11</string>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMled widget</string>
+   </property>
+   <property name="variable">
+    <string>PLC_DigOut_11</string>
+   </property>
+   <property name="refresh">
+    <number>500</number>
+   </property>
+   <property name="viewStatus">
+    <bool>false</bool>
+   </property>
+   <property name="visibilityVar">
+    <string>TST_DigOut_11</string>
+   </property>
+   <property name="onIcon">
+    <iconset>
+     <normaloff>:/on.png</normaloff>:/on.png</iconset>
+   </property>
+   <property name="offIcon">
+    <iconset>
+     <normaloff>:/off.png</normaloff>:/off.png</iconset>
+   </property>
+  </widget>
+  <widget class="ATCMled" name="atcmLed_PLC_DigOut_10">
+   <property name="geometry">
+    <rect>
+     <x>265</x>
+     <y>162</y>
+     <width>18</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>PLC_DigOut_10</string>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMled widget</string>
+   </property>
+   <property name="variable">
+    <string>PLC_DigOut_10</string>
+   </property>
+   <property name="refresh">
+    <number>500</number>
+   </property>
+   <property name="viewStatus">
+    <bool>false</bool>
+   </property>
+   <property name="visibilityVar">
+    <string>TST_DigOut_10</string>
+   </property>
+   <property name="onIcon">
+    <iconset>
+     <normaloff>:/on.png</normaloff>:/on.png</iconset>
+   </property>
+   <property name="offIcon">
+    <iconset>
+     <normaloff>:/off.png</normaloff>:/off.png</iconset>
+   </property>
+  </widget>
+  <widget class="ATCMled" name="atcmLed_PLC_DigOut_7">
+   <property name="geometry">
+    <rect>
+     <x>213</x>
+     <y>162</y>
+     <width>18</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>PLC_DigOut_7</string>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMled widget</string>
+   </property>
+   <property name="variable">
+    <string>PLC_DigOut_7</string>
+   </property>
+   <property name="refresh">
+    <number>500</number>
+   </property>
+   <property name="viewStatus">
+    <bool>false</bool>
+   </property>
+   <property name="visibilityVar">
+    <string>TST_DigOut_7</string>
+   </property>
+   <property name="onIcon">
+    <iconset>
+     <normaloff>:/on.png</normaloff>:/on.png</iconset>
+   </property>
+   <property name="offIcon">
+    <iconset>
+     <normaloff>:/off.png</normaloff>:/off.png</iconset>
+   </property>
+  </widget>
+  <widget class="ATCMled" name="atcmLed_PLC_DigOut_2">
+   <property name="geometry">
+    <rect>
+     <x>123</x>
+     <y>162</y>
+     <width>18</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>PLC_DigOut_2</string>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMled widget</string>
+   </property>
+   <property name="variable">
+    <string>PLC_DigOut_2</string>
+   </property>
+   <property name="refresh">
+    <number>500</number>
+   </property>
+   <property name="viewStatus">
+    <bool>false</bool>
+   </property>
+   <property name="visibilityVar">
+    <string>TST_DigOut_2</string>
+   </property>
+   <property name="onIcon">
+    <iconset>
+     <normaloff>:/on.png</normaloff>:/on.png</iconset>
+   </property>
+   <property name="offIcon">
+    <iconset>
+     <normaloff>:/off.png</normaloff>:/off.png</iconset>
+   </property>
+  </widget>
+  <widget class="ATCMled" name="atcmLed_PLC_DigOut_3">
+   <property name="geometry">
+    <rect>
+     <x>141</x>
+     <y>162</y>
+     <width>18</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>PLC_DigOut_3</string>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMled widget</string>
+   </property>
+   <property name="variable">
+    <string>PLC_DigOut_3</string>
+   </property>
+   <property name="refresh">
+    <number>500</number>
+   </property>
+   <property name="viewStatus">
+    <bool>false</bool>
+   </property>
+   <property name="visibilityVar">
+    <string>TST_DigOut_3</string>
+   </property>
+   <property name="onIcon">
+    <iconset>
+     <normaloff>:/on.png</normaloff>:/on.png</iconset>
+   </property>
+   <property name="offIcon">
+    <iconset>
+     <normaloff>:/off.png</normaloff>:/off.png</iconset>
+   </property>
+  </widget>
+  <widget class="ATCMled" name="atcmLed_PLC_DigOut_6">
+   <property name="geometry">
+    <rect>
+     <x>193</x>
+     <y>162</y>
+     <width>18</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>PLC_DigOut_6</string>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMled widget</string>
+   </property>
+   <property name="variable">
+    <string>PLC_DigOut_6</string>
+   </property>
+   <property name="refresh">
+    <number>500</number>
+   </property>
+   <property name="viewStatus">
+    <bool>false</bool>
+   </property>
+   <property name="visibilityVar">
+    <string>TST_DigOut_6</string>
+   </property>
+   <property name="onIcon">
+    <iconset>
+     <normaloff>:/on.png</normaloff>:/on.png</iconset>
+   </property>
+   <property name="offIcon">
+    <iconset>
+     <normaloff>:/off.png</normaloff>:/off.png</iconset>
+   </property>
+  </widget>
+  <widget class="ATCMled" name="atcmLed_PLC_DigOut_1">
+   <property name="geometry">
+    <rect>
+     <x>105</x>
+     <y>162</y>
+     <width>18</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>PLC_DigOut_1</string>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMled widget</string>
+   </property>
+   <property name="variable">
+    <string>PLC_DigOut_1</string>
+   </property>
+   <property name="refresh">
+    <number>500</number>
+   </property>
+   <property name="viewStatus">
+    <bool>false</bool>
+   </property>
+   <property name="visibilityVar">
+    <string>TST_DigOut_1</string>
+   </property>
+   <property name="onIcon">
+    <iconset>
+     <normaloff>:/on.png</normaloff>:/on.png</iconset>
+   </property>
+   <property name="offIcon">
+    <iconset>
+     <normaloff>:/off.png</normaloff>:/off.png</iconset>
+   </property>
+  </widget>
+  <widget class="ATCMled" name="atcmLed_PLC_DigOut_5">
+   <property name="geometry">
+    <rect>
+     <x>176</x>
+     <y>162</y>
+     <width>18</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>PLC_DigOut_5</string>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMled widget</string>
+   </property>
+   <property name="variable">
+    <string>PLC_DigOut_5</string>
+   </property>
+   <property name="refresh">
+    <number>500</number>
+   </property>
+   <property name="viewStatus">
+    <bool>false</bool>
+   </property>
+   <property name="visibilityVar">
+    <string>TST_DigOut_5</string>
+   </property>
+   <property name="onIcon">
+    <iconset>
+     <normaloff>:/on.png</normaloff>:/on.png</iconset>
+   </property>
+   <property name="offIcon">
+    <iconset>
+     <normaloff>:/off.png</normaloff>:/off.png</iconset>
+   </property>
+  </widget>
+  <widget class="ATCMled" name="atcmLed_PLC_DigOut_8">
+   <property name="geometry">
+    <rect>
+     <x>231</x>
+     <y>162</y>
+     <width>18</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>PLC_DigOut_8</string>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMled widget</string>
+   </property>
+   <property name="variable">
+    <string>PLC_DigOut_8</string>
+   </property>
+   <property name="refresh">
+    <number>500</number>
+   </property>
+   <property name="viewStatus">
+    <bool>false</bool>
+   </property>
+   <property name="visibilityVar">
+    <string>TST_DigOut_8</string>
+   </property>
+   <property name="onIcon">
+    <iconset>
+     <normaloff>:/on.png</normaloff>:/on.png</iconset>
+   </property>
+   <property name="offIcon">
+    <iconset>
+     <normaloff>:/off.png</normaloff>:/off.png</iconset>
+   </property>
+  </widget>
   <zorder>atcmButton_MENU</zorder>
   <zorder>label_Qt_Project</zorder>
   <zorder>label_PLC_DigIn_8</zorder>
@@ -1543,6 +2407,30 @@ Remote / Test</string>
   <zorder>atcmLed_TST_DigOut_2</zorder>
   <zorder>atcmLed_TST_DigOut_11</zorder>
   <zorder>atcmLed_TST_DigOut_6</zorder>
+  <zorder>atcmLed_VAL_DigOut_11</zorder>
+  <zorder>atcmLed_VAL_DigOut_4</zorder>
+  <zorder>atcmLed_VAL_DigOut_5</zorder>
+  <zorder>atcmLed_VAL_DigOut_6</zorder>
+  <zorder>atcmLed_VAL_DigOut_7</zorder>
+  <zorder>atcmLed_VAL_DigOut_12</zorder>
+  <zorder>atcmLed_VAL_DigOut_3</zorder>
+  <zorder>atcmLed_VAL_DigOut_9</zorder>
+  <zorder>atcmLed_VAL_DigOut_2</zorder>
+  <zorder>atcmLed_VAL_DigOut_8</zorder>
+  <zorder>atcmLed_VAL_DigOut_10</zorder>
+  <zorder>atcmLed_VAL_DigOut_1</zorder>
+  <zorder>atcmLed_PLC_DigOut_12</zorder>
+  <zorder>atcmLed_PLC_DigOut_9</zorder>
+  <zorder>atcmLed_PLC_DigOut_4</zorder>
+  <zorder>atcmLed_PLC_DigOut_11</zorder>
+  <zorder>atcmLed_PLC_DigOut_10</zorder>
+  <zorder>atcmLed_PLC_DigOut_7</zorder>
+  <zorder>atcmLed_PLC_DigOut_2</zorder>
+  <zorder>atcmLed_PLC_DigOut_3</zorder>
+  <zorder>atcmLed_PLC_DigOut_6</zorder>
+  <zorder>atcmLed_PLC_DigOut_1</zorder>
+  <zorder>atcmLed_PLC_DigOut_5</zorder>
+  <zorder>atcmLed_PLC_DigOut_8</zorder>
  </widget>
  <customwidgets>
   <customwidget>
