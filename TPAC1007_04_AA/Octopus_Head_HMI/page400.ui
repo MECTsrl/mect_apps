@@ -3599,7 +3599,7 @@ MATIC</string>
     <enum>QFrame::Raised</enum>
    </property>
    <property name="mapping">
-    <string>0;TPAC1007_4AA;1;TPAC1007_3;2;TPLC100;3;TPAC1006;4;TPAC1008;5;TP1043_485;6;TP1043_232;7;TP1043_CAN</string>
+    <string>0;-;1;TPAC1007_4AA;2;TPAC1007_3;3;TPLC100;4;TPAC1006;5;TPAC1008;6;TP1043_485;7;TP1043_232;8;TP1043_CAN</string>
    </property>
   </widget>
   <widget class="ATCMcombobox" name="atcmComboBox">
