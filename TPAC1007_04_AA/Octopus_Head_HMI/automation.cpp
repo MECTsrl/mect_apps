@@ -489,9 +489,14 @@ static void writeTST(void)
     doWrite_TST2_AnOut_1(TST_AnIn_3);
     doWrite_TST2_DigOut_6(TST_AnIn_3);
     doWrite_TST2_DigOut_8(TST_AnIn_3);
+
     doWrite_TSTx_AnIn_4(TST_AnIn_4);
+    doWrite_TST2_AnOut_2(TST_AnIn_4);
+    doWrite_TST2_DigOut_5(TST_AnIn_4);
+    doWrite_TST2_DigOut_7(TST_AnIn_4);
 
     // we test the AnIn 5..12 (PT100 only) by the TPLC005 8AO module (actually internal 8DO)
+    doWrite_TST2_AnOut_4(TST_AnIn_5); // only TPAC1007_AB
     doWrite_TSTx_AnIn_5(TST_AnIn_5);
     doWrite_TSTx_AnIn_6(TST_AnIn_6);
     doWrite_TSTx_AnIn_7(TST_AnIn_7);
@@ -501,9 +506,14 @@ static void writeTST(void)
     doWrite_TSTx_AnIn_11(TST_AnIn_11);
     doWrite_TSTx_AnIn_12(TST_AnIn_12);
 
-    // we test the AnOut 1..2 by both the local AnIn and the Horn TPAC1007_4AA AnIn
+    // we test the AnOut 1..2 by both the local AnIn 1..2 and the Horn TPAC1007_4AA AnIn 1..2 and local DigOut 3..4
     doWrite_TSTx_AnOut_1(TST_AnOut_1);
+    doWrite_TST2_AnIn_1(TST_AnOut_1);
+    doWrite_TST2_DigOut_4(TST_AnOut_1);
+
     doWrite_TSTx_AnOut_2(TST_AnOut_2);
+    doWrite_TST2_AnIn_2(TST_AnOut_2);
+    doWrite_TST2_DigOut_3(TST_AnOut_2);
 
     // we test the AnOut 3..4 by the by the TPLC005 internal 2AI
     doWrite_TSTx_AnOut_3(TST_AnOut_3);
@@ -514,6 +524,7 @@ static void writeTST(void)
     doWrite_TSTx_RPM(TSTx_RPM);
     doWrite_TSTx_FWrevision(TSTx_FWrevision);
     doWrite_TSTx_HWconfig(TSTx_HWconfig);
+    doWrite_TST2_AnOut_3(TST_RPM);
 }
 
 static void writeVAL(void)
@@ -624,11 +635,8 @@ static void writeVAL(void)
         doWrite_VALx_AnInConf_4(VAL_AnInConf_4);
         doWrite_VALx_AnInFltr_6(VAL_AnInFltr_4);
         /* <-- Horn2 AO2 + DO5 + DO7 */
-        doWrite_TST2_AnOut_2(1);
         doWrite_VAL2_AnOutConf_2(VAL_AnInConf_4);
         doWrite_VAL2_AnOut_3(VAL_AnIn_4);
-        doWrite_TST2_DigOut_5(1);
-        doWrite_TST2_DigOut_7(1);
         switch (VAL_AnInConf_4)
         {
         case 1: doWrite_VAL2_DigOut_7(1); doWrite_VAL2_DigOut_5(0);
@@ -652,7 +660,6 @@ static void writeVAL(void)
         /* <-- Head/TPLC005 AO1 */
         doWrite_RTU_AnOut_1(VAL_AnIn_5);
         /* <-- Horn2 AO4 V : double for TPAC1007_4AB */
-        doWrite_TST2_AnOut_4(1);
         doWrite_VAL2_AnOutConf_4(VAL_AnInConf_5);
         doWrite_VAL2_AnOut_4(VAL_AnIn_5);
     }
@@ -701,12 +708,10 @@ static void writeVAL(void)
 
     if (TST_AnOut_1)  {
         doWrite_VALx_AnOut_1(VAL_AnOut_1);
-                doWrite_VALx_AnOutConf_1(VAL_AnOutConf_1);
-                /* --> Horn2 AI1 + DO4 */
-                doWrite_TST2_AnIn_1(1);
+        doWrite_VALx_AnOutConf_1(VAL_AnOutConf_1);
+        /* --> Horn2 AI1 + DO4 */
         doWrite_VAL2_AnInConf_1(VAL_AnOutConf_1);
-                doWrite_VAL2_AnInFltr_1(16);
-                doWrite_TST2_DigOut_4(1);
+        doWrite_VAL2_AnInFltr_1(16);
         switch (VAL_AnOutConf_1)
         {
         case 1: doWrite_VAL2_DigOut_4(1);
@@ -719,12 +724,10 @@ static void writeVAL(void)
     }
     if (TST_AnOut_2)  {
         doWrite_VALx_AnOut_2(VAL_AnOut_2);
-                doWrite_VALx_AnOutConf_2(VAL_AnOutConf_2);
-                /* --> Horn2 AI2 + DO3 */
-                doWrite_TST2_AnIn_2(1);
+        doWrite_VALx_AnOutConf_2(VAL_AnOutConf_2);
+        /* --> Horn2 AI2 + DO3 */
         doWrite_VAL2_AnInConf_2(VAL_AnOutConf_2);
-                doWrite_VAL2_AnInFltr_2(16);
-                doWrite_TST2_DigOut_3(1);
+        doWrite_VAL2_AnInFltr_2(16);
         switch (VAL_AnOutConf_2)
         {
         case 1: doWrite_VAL2_DigOut_3(1);
@@ -738,22 +741,21 @@ static void writeVAL(void)
 
     if (TST_AnOut_3)  {
         doWrite_VALx_AnOut_3(VAL_AnOut_3);
-                doWrite_VALx_AnOutConf_3(VAL_AnOutConf_3);
-                /* --> Head/TPLC005 AI1 */
-                doWrite_PLC_AnInConf_1(VAL_AnOutConf_3);
+        doWrite_VALx_AnOutConf_3(VAL_AnOutConf_3);
+        /* --> Head/TPLC005 AI1 */
+        doWrite_PLC_AnInConf_1(VAL_AnOutConf_3);
     }
     if (TST_AnOut_4)  {
         doWrite_VALx_AnOut_4(VAL_AnOut_4);
-                doWrite_VALx_AnOutConf_4(VAL_AnOutConf_4);
-                /* --> Head/TPLC005 AI2 */
-                doWrite_PLC_AnInConf_2(VAL_AnOutConf_4);
+        doWrite_VALx_AnOutConf_4(VAL_AnOutConf_4);
+        /* --> Head/TPLC005 AI2 */
+        doWrite_PLC_AnInConf_2(VAL_AnOutConf_4);
     }
 
     if (TST_Tamb)  {
     }
     if (TST_RPM)  {
         /* <-- Horn2 AO3 PWM */
-        doWrite_TST2_AnOut_3(1);
         doWrite_VAL2_AnOutConf_3(3); /* PWM */
         doWrite_VAL2_AnOut_3((int)(VAL_RPM)); /* FIXME: conversion ? */
     }
