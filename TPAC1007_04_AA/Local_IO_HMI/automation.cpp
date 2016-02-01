@@ -96,12 +96,14 @@ static void ifTST_readVAL_writePLC(void)
     if (TST_DigOut_8 ) { doWrite_PLC_DigDir_8(1); doWrite_PLC_DigOut_8(VAL_DigOut_8); }
 
     // AnIn 1..2
-    if (TST_AnIn_1)  { doWrite_PLC_AnInConf_1(VAL_AnInConf_1); doWrite_PLC_AnInFilter_1(VAL_AnInFltr_1); }
-    if (TST_AnIn_2)  { doWrite_PLC_AnInConf_2(VAL_AnInConf_2); doWrite_PLC_AnInFilter_2(VAL_AnInFltr_2); }
+    if (TST_AnIn_1)  { doWrite_PLC_AnInConf_1(VAL_AnInConf_1); doWrite_PLC_AnIn1Filter(VAL_AnInFltr_1); }
+    if (TST_AnIn_2)  { doWrite_PLC_AnInConf_2(VAL_AnInConf_2); doWrite_PLC_AnIn2Filter(VAL_AnInFltr_2); }
 
     // AnOut 1..4
     if (TST_AnOut_1)  { doWrite_PLC_AnOutConf_1(VAL_AnOutConf_1); doWrite_PLC_AnOut_1(VAL_AnOut_1); }
     if (TST_AnOut_2)  { doWrite_PLC_AnOutConf_2(VAL_AnOutConf_2); doWrite_PLC_AnOut_2(VAL_AnOut_2); }
+    if (TST_AnOut_3)  { doWrite_PLC_AnOutConf_3(VAL_AnOutConf_3); doWrite_PLC_AnOut_3(VAL_AnOut_3); }
+    if (TST_AnOut_4)  { doWrite_PLC_AnOutConf_4(VAL_AnOutConf_4); doWrite_PLC_AnOut_4(VAL_AnOut_4); }
 
     // Others
     if (TST_Tamb)  { }
@@ -138,8 +140,8 @@ static void ifTST_readPLC_writeRES(void)
     if (TST_DigOut_8 ) {  }
 
     // AnIn 1..2
-    if (TST_AnIn_1)  { doWrite_RES_DigIn_1(PLC_DigIn_1); }
-    if (TST_AnIn_2)  { doWrite_RES_DigIn_1(PLC_DigIn_1); }
+    if (TST_AnIn_1)  { doWrite_RES_AnIn_1(PLC_AnIn_1); }
+    if (TST_AnIn_2)  { doWrite_RES_AnIn_2(PLC_AnIn_2); }
 
     // AnOut 1..4
     if (TST_AnOut_1)  { }
@@ -150,6 +152,6 @@ static void ifTST_readPLC_writeRES(void)
     // Others
     if (TST_Tamb)  { doWrite_RES_Tamb(PLC_Tamb); }
     if (TST_RPM)   { }
-    if (TST_FWrevision) { doWrite_RES_FWrevision(PLC_FWrevision(); }
-    if (TST_HWconfig)   { doWrite_RES_HWconfig(PLC_HWconfig(); }
+    if (TST_FWrevision) { doWrite_RES_FWrevision(PLC_FWrevision); }
+    if (TST_HWconfig)   { doWrite_RES_HWconfig(PLC_HWconfig); }
 }

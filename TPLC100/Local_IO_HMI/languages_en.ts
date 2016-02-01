@@ -569,6 +569,10 @@
     <message>
         <location filename="page100.ui" line="3559"/>
         <location filename="page100.ui" line="3565"/>
+        <source>CH0_NETRUN</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="page100.ui" line="3595"/>
         <location filename="page100.ui" line="3601"/>
         <source>CH0_NETGOOD</source>

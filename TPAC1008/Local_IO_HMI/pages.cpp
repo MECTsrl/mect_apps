@@ -19,7 +19,7 @@ void printVncDisplayString(char * vncString)
     sprintf(vncString, "Multi: VNC:0:size=%dx%d Transformed:rot%d", WIDTH, HEIGHT, ROTATION);
     userPageList 
             << "page100"
-            << "page400"
+
                /* add here the label of the new page */
                ;
     userPageList.removeDuplicates();

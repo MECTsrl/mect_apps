@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 2.7.84, 2016-01-29T18:58:21. -->
+<!-- Written by QtCreator 2.7.84, 2016-02-01T16:37:56. -->
 <qtcreator>
  <data>
   <variable>ProjectExplorer.Project.ActiveTarget</variable>
@@ -261,17 +261,17 @@
        <value type="QString">C:/Qt485/imx28/rootfs</value>
       </valuelist>
       <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedTimes">
-       <value type="QDateTime">2016-01-29T17:29:49</value>
-       <value type="QDateTime">2016-01-29T17:29:49</value>
-       <value type="QDateTime">2016-01-29T17:29:49</value>
-       <value type="QDateTime">2016-01-29T17:29:50</value>
-       <value type="QDateTime">2016-01-29T17:29:49</value>
-       <value type="QDateTime">2016-01-29T17:29:51</value>
-       <value type="QDateTime">2016-01-29T17:29:49</value>
-       <value type="QDateTime">2016-01-29T17:29:49</value>
-       <value type="QDateTime">2016-01-29T17:29:50</value>
-       <value type="QDateTime">2016-01-29T17:29:49</value>
-       <value type="QDateTime">2016-01-29T17:29:49</value>
+       <value type="QDateTime">2016-02-01T10:41:59</value>
+       <value type="QDateTime">2016-02-01T10:41:59</value>
+       <value type="QDateTime">2016-02-01T10:41:59</value>
+       <value type="QDateTime">2016-02-01T10:41:59</value>
+       <value type="QDateTime">2016-02-01T10:41:59</value>
+       <value type="QDateTime">2016-02-01T10:42:01</value>
+       <value type="QDateTime">2016-02-01T10:41:59</value>
+       <value type="QDateTime">2016-02-01T10:41:59</value>
+       <value type="QDateTime">2016-02-01T10:41:59</value>
+       <value type="QDateTime">2016-02-01T10:41:59</value>
+       <value type="QDateTime">2016-02-01T10:41:59</value>
       </valuelist>
       <value type="bool" key="RemoteLinux.GenericDirectUploadStep.Incremental">false</value>
      </valuemap>

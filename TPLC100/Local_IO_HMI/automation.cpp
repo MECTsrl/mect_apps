@@ -2,13 +2,6 @@
 
 void setup(void)
 {
-    doWrite_PLC_AnInConf_1(2);  /* 0..10V */
-    doWrite_PLC_AnInConf_2(2);  /* 0..10V */
-    doWrite_PLC_AnInConf_3(2); /* 0..10V */
-    doWrite_PLC_AnInConf_4(2); /* 0..10V */
-    doWrite_PLC_AnOutConf_1(2); /* 0..10V */
-    doWrite_PLC_AnOutConf_2(2); /* 0..10V */
-
     doWrite_STATUS_LOCAL(1);
     doWrite_STATUS_REMOTE(0);
     doWrite_STATUS_DONE(0);

@@ -137,7 +137,7 @@ void loop(void)
             doWrite_START2_TEST(true);
             doWrite_STARTx_TEST(true);
             doWrite_STATUS(STATUS_TESTING);
-        substatus = 0;
+            substatus = 0;
         }
         break;
 
@@ -161,9 +161,10 @@ void loop(void)
                 substatus = 1;
                 break;
             case 1:
+            case 2:
                 ++substatus;
                 break;
-            case 2:
+            case 3:
                 checkOK();
                 if (allTestedOK()) {
                     doWrite_RESULT(RESULT_OK);
@@ -479,10 +480,15 @@ static void writeTST(void)
     doWrite_TSTx_DigOut_16(TST_DigOut_16);
     // no doWrite_TST2_DigOut_*
 
-    // we test the AnIn 1..4 by both local AnOut and the Horn TPAC1007_4AA AnOut
+    // we test the AnIn 1..2 by the local AnOut 1..2 and local DigOut 5..8
     doWrite_TSTx_AnIn_1(TST_AnIn_1);
     doWrite_TSTx_AnIn_2(TST_AnIn_2);
+
+    // we test the AnIn 3..4 by the Horn TPAC1007_4AA AnOut 1..2 and local DigOut 5..8
     doWrite_TSTx_AnIn_3(TST_AnIn_3);
+    doWrite_TST2_AnOut_1(TST_AnIn_3);
+    doWrite_TST2_DigOut_6(TST_AnIn_3);
+    doWrite_TST2_DigOut_8(TST_AnIn_3);
     doWrite_TSTx_AnIn_4(TST_AnIn_4);
 
     // we test the AnIn 5..12 (PT100 only) by the TPLC005 8AO module (actually internal 8DO)
@@ -597,11 +603,8 @@ static void writeVAL(void)
         doWrite_VALx_AnInConf_3(VAL_AnInConf_3);
         doWrite_VALx_AnInFltr_3(VAL_AnInFltr_3);
         /* <-- Horn2 AO1 + DO6 + DO8 */
-        doWrite_TST2_AnOut_1(1);
         doWrite_VAL2_AnOutConf_1(VAL_AnInConf_3);
         doWrite_VAL2_AnOut_1(VAL_AnIn_3);
-        doWrite_TST2_DigOut_6(1);
-        doWrite_TST2_DigOut_8(1);
         switch (VAL_AnInConf_3)
         {
         case 1: doWrite_VAL2_DigOut_8(1); doWrite_VAL2_DigOut_6(0);

@@ -13,9 +13,9 @@ include(./template.pri)
 HEADERS += \
     automation.h \
     page100.h \
-    page400.h \
     page200.h \
     page300.h \
+    page400.h \
     page401.h \
     page402.h \
     page403.h \
@@ -25,9 +25,9 @@ HEADERS += \
 
 FORMS += \
     page100.ui \
-    page400.ui \
     page200.ui \
     page300.ui \
+    page400.ui \
     page401.ui \
     page402.ui \
     page403.ui \
@@ -38,9 +38,9 @@ FORMS += \
 SOURCES += \
     automation.cpp \
     page100.cpp \
-    page400.cpp \
     page200.cpp \
     page300.cpp \
+    page400.cpp \
     page401.cpp \
     page402.cpp \
     page403.cpp \
