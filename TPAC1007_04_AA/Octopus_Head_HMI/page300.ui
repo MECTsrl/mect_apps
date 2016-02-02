@@ -1054,8 +1054,8 @@ MATIC</string>
   <widget class="ATCMcombobox" name="atcmComboBox_PRODUCT_ID">
    <property name="geometry">
     <rect>
-     <x>360</x>
-     <y>70</y>
+     <x>240</x>
+     <y>69</y>
      <width>120</width>
      <height>34</height>
     </rect>
@@ -1339,10 +1339,10 @@ MATIC</string>
     <string/>
    </property>
   </widget>
-  <widget class="ATCMcombobox" name="atcmComboBox">
+  <widget class="ATCMcombobox" name="atcmComboBox_TEST_ID">
    <property name="geometry">
     <rect>
-     <x>240</x>
+     <x>360</x>
      <y>70</y>
      <width>120</width>
      <height>34</height>
@@ -1350,23 +1350,24 @@ MATIC</string>
    </property>
    <property name="font">
     <font>
-     <family>DejaVu Sans</family>
-     <pointsize>10</pointsize>
-     <weight>75</weight>
-     <bold>true</bold>
+     <family>DejaVu Sans Mono</family>
+     <pointsize>14</pointsize>
     </font>
    </property>
    <property name="currentIndex">
     <number>0</number>
    </property>
+   <property name="maxCount">
+    <number>10</number>
+   </property>
    <property name="toolTip">
-    <string>STATUS</string>
+    <string>TEST_ID</string>
    </property>
    <property name="whatsThis">
     <string>ATCMcombobox widget</string>
    </property>
    <property name="variable">
-    <string>STATUS</string>
+    <string>TEST_ID</string>
    </property>
    <property name="refresh">
     <number>500</number>
@@ -1384,17 +1385,20 @@ MATIC</string>
     <color>
      <red>170</red>
      <green>255</green>
-     <blue>255</blue>
+     <blue>127</blue>
     </color>
    </property>
    <property name="borderWidth">
-    <number>0</number>
+    <number>2</number>
    </property>
    <property name="borderRadius">
     <number>0</number>
    </property>
+   <property name="apparence">
+    <enum>QFrame::Raised</enum>
+   </property>
    <property name="mapping">
-    <string>0;IDLE;1;STARTING;2;READY;3;TESTING;4;DONE;5;RESETTING;6;STOPPING;7;ERROR</string>
+    <string>1;1;2;2;3;3;4;4</string>
    </property>
   </widget>
   <zorder>label_Qt_Project</zorder>
@@ -1432,7 +1436,7 @@ MATIC</string>
   <zorder>line_vt_4</zorder>
   <zorder>line_vt_1</zorder>
   <zorder>atcmAnimation</zorder>
-  <zorder>atcmComboBox</zorder>
+  <zorder>atcmComboBox_TEST_ID</zorder>
  </widget>
  <customwidgets>
   <customwidget>

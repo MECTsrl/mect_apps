@@ -1,79 +1,156 @@
-TST_DigIn_1     ;0
-TST_DigIn_2     ;0
-TST_DigIn_3     ;0
-TST_DigIn_4     ;0
-TST_DigIn_5     ;0
-TST_DigIn_6     ;0
-TST_DigIn_7     ;0
-TST_DigIn_8     ;0
-TST_DigIn_9     ;0
-TST_DigIn_10    ;0
-TST_DigIn_11    ;0
-TST_DigIn_12    ;0
-TST_DigIn_13    ;0
-TST_DigIn_14    ;0
-TST_DigIn_15    ;0
-TST_DigIn_16    ;0
-TST_DigOut_1    ;1
-TST_DigOut_2    ;1
-TST_DigOut_3    ;1
-TST_DigOut_4    ;1
-TST_DigOut_5    ;1
-TST_DigOut_6    ;1
-TST_DigOut_7    ;1
-TST_DigOut_8    ;1
-TST_DigOut_9    ;1
-TST_DigOut_10   ;1
-TST_DigOut_11   ;1
-TST_DigOut_12   ;1
-TST_DigOut_13   ;1
-TST_DigOut_14   ;1
-TST_DigOut_15   ;1
-TST_DigOut_16   ;1
-VAL_DigOut_1    ;0
-VAL_DigOut_2    ;1
-VAL_DigOut_3    ;0
-VAL_DigOut_4    ;1
-VAL_DigOut_5    ;0
-VAL_DigOut_6    ;1
-VAL_DigOut_7    ;0
-VAL_DigOut_8    ;1
-VAL_DigOut_9    ;0
-VAL_DigOut_10   ;1
-VAL_DigOut_11   ;0
-VAL_DigOut_12   ;1
-VAL_DigOut_13   ;0
-VAL_DigOut_14   ;1
-VAL_DigOut_15   ;0
-VAL_DigOut_16   ;1
-TST_AnIn_1      ;0
-TST_AnIn_2      ;0
-TST_AnIn_3      ;0
-TST_AnIn_4      ;0
-TST_AnIn_5      ;0
-TST_AnIn_6      ;0
-TST_AnIn_7      ;0
-TST_AnIn_8      ;0
-TST_AnIn_9      ;0
-TST_AnIn_10     ;0
-TST_AnIn_11     ;0
-TST_AnIn_12     ;0
-TST_AnOut_1     ;0
-TST_AnOut_2     ;0
-TST_AnOut_3     ;0
-TST_AnOut_4     ;0
-TST_Tamb        ;0
-TST_RPM         ;0
-TST_VCC_set     ;0
-TST_VCC_fbk     ;0
-TST_mA_fbk      ;0
-TST_FWrevision  ;0
-TST_HWconfig    ;0
-TST_RTUS_WR     ;0
-TST_RTUS_RD     ;0
-TST_RTU1_WR     ;0
-TST_RTU1_RD     ;0
-TST_RTU3_WR     ;0
-TST_RTU3_RD     ;0
-TST_CAN1_WR     ;0
-TST_CAN1_RD     ;0
+TST_DigIn_1	; 1	; 1	; 1	; 1
+VAL_DigIn_1	; 0	; 1	; 1	; 0
+TST_DigIn_2	; 1	; 1	; 1	; 1
+VAL_DigIn_2	; 1	; 0	; 1	; 0
+TST_DigIn_3	; 1	; 1	; 1	; 1
+VAL_DigIn_3	; 0	; 1	; 1	; 0
+TST_DigIn_4	; 1	; 1	; 1	; 1
+VAL_DigIn_4	; 1	; 0	; 1	; 0
+TST_DigIn_5	; 1	; 1	; 1	; 1
+VAL_DigIn_5	; 0	; 1	; 1	; 0
+TST_DigIn_6	; 1	; 1	; 1	; 1
+VAL_DigIn_6	; 1	; 0	; 1	; 0
+TST_DigIn_7	; 1	; 1	; 1	; 1
+VAL_DigIn_7	; 0	; 1	; 1	; 0
+TST_DigIn_8	; 1	; 1	; 1	; 1
+VAL_DigIn_8	; 1	; 0	; 1	; 0
+TST_DigIn_9	; 1	; 1	; 1	; 1
+VAL_DigIn_9	; 0	; 1	; 1	; 0
+TST_DigIn_10	; 1	; 1	; 1	; 1
+VAL_DigIn_10	; 1	; 0	; 1	; 0
+TST_DigIn_11	; 1	; 1	; 1	; 1
+VAL_DigIn_11	; 0	; 1	; 1	; 0
+TST_DigIn_12	; 1	; 1	; 1	; 1
+VAL_DigIn_12	; 1	; 0	; 1	; 0
+TST_DigIn_13	; 1	; 1	; 1	; 1
+VAL_DigIn_13	; 0	; 1	; 1	; 0
+TST_DigIn_14	; 1	; 1	; 1	; 1
+VAL_DigIn_14	; 1	; 0	; 1	; 0
+TST_DigIn_15	; 1	; 1	; 1	; 1
+VAL_DigIn_15	; 0	; 1	; 1	; 0
+TST_DigIn_16	; 1	; 1	; 1	; 1
+VAL_DigIn_16	; 1	; 0	; 1	; 0
+TST_DigOut_1	; 0	; 0	; 0	; 0
+VAL_DigOut_1	; 0	; 0	; 0	; 0
+TST_DigOut_2	; 0	; 0	; 0	; 0
+VAL_DigOut_2	; 0	; 0	; 0	; 0
+TST_DigOut_3	; 0	; 0	; 0	; 0
+VAL_DigOut_3	; 0	; 0	; 0	; 0
+TST_DigOut_4	; 0	; 0	; 0	; 0
+VAL_DigOut_4	; 0	; 0	; 0	; 0
+TST_DigOut_5	; 0	; 0	; 0	; 0
+VAL_DigOut_5	; 0	; 0	; 0	; 0
+TST_DigOut_6	; 0	; 0	; 0	; 0
+VAL_DigOut_6	; 0	; 0	; 0	; 0
+TST_DigOut_7	; 0	; 0	; 0	; 0
+VAL_DigOut_7	; 0	; 0	; 0	; 0
+TST_DigOut_8	; 0	; 0	; 0	; 0
+VAL_DigOut_8	; 0	; 0	; 0	; 0
+TST_DigOut_9	; 0	; 0	; 0	; 0
+VAL_DigOut_9	; 0	; 0	; 0	; 0
+TST_DigOut_1	; 0	; 0	; 0	; 0
+VAL_DigOut_1	; 0	; 0	; 0	; 0
+TST_DigOut_1	; 0	; 0	; 0	; 0
+VAL_DigOut_1	; 0	; 0	; 0	; 0
+TST_DigOut_1	; 0	; 0	; 0	; 0
+VAL_DigOut_1	; 0	; 0	; 0	; 0
+TST_DigOut_1	; 0	; 0	; 0	; 0
+VAL_DigOut_1	; 0	; 0	; 0	; 0
+TST_DigOut_1	; 0	; 0	; 0	; 0
+VAL_DigOut_1	; 0	; 0	; 0	; 0
+TST_DigOut_1	; 0	; 0	; 0	; 0
+VAL_DigOut_1	; 0	; 0	; 0	; 0
+TST_DigOut_1	; 0	; 0	; 0	; 0
+VAL_DigOut_1	; 0	; 0	; 0	; 0
+TST_AnIn_1	; 0	; 0	; 0	; 0
+VAL_AnIn_1	; 0	; 0	; 0	; 0
+VAL_AnInConf1	; 0	; 0	; 0	; 0
+VAL_AnInFltr1	; 0	; 0	; 0	; 0
+TST_AnIn_2	; 0	; 0	; 0	; 0
+VAL_AnIn_2	; 0	; 0	; 0	; 0
+VAL_AnInConf2	; 0	; 0	; 0	; 0
+VAL_AnInFltr2	; 0	; 0	; 0	; 0
+TST_AnIn_3	; 0	; 0	; 0	; 0
+VAL_AnIn_3	; 0	; 0	; 0	; 0
+VAL_AnInConf3	; 0	; 0	; 0	; 0
+VAL_AnInFltr3	; 0	; 0	; 0	; 0
+TST_AnIn_4	; 0	; 0	; 0	; 0
+VAL_AnIn_4	; 0	; 0	; 0	; 0
+VAL_AnInConf4	; 0	; 0	; 0	; 0
+VAL_AnInFltr4	; 0	; 0	; 0	; 0
+TST_AnIn_5	; 0	; 0	; 0	; 0
+VAL_AnIn_5	; 0	; 0	; 0	; 0
+VAL_AnInConf5	; 0	; 0	; 0	; 0
+VAL_AnInFltr5	; 0	; 0	; 0	; 0
+TST_AnIn_6	; 0	; 0	; 0	; 0
+VAL_AnIn_6	; 0	; 0	; 0	; 0
+VAL_AnInConf6	; 0	; 0	; 0	; 0
+VAL_AnInFltr6	; 0	; 0	; 0	; 0
+TST_AnIn_7	; 0	; 0	; 0	; 0
+VAL_AnIn_7	; 0	; 0	; 0	; 0
+VAL_AnInConf7	; 0	; 0	; 0	; 0
+VAL_AnInFltr7	; 0	; 0	; 0	; 0
+TST_AnIn_8	; 0	; 0	; 0	; 0
+VAL_AnIn_8	; 0	; 0	; 0	; 0
+VAL_AnInConf8	; 0	; 0	; 0	; 0
+VAL_AnInFltr8	; 0	; 0	; 0	; 0
+TST_AnIn_9	; 0	; 0	; 0	; 0
+VAL_AnIn_9	; 0	; 0	; 0	; 0
+VAL_AnInConf9	; 0	; 0	; 0	; 0
+VAL_AnInFltr9	; 0	; 0	; 0	; 0
+TST_AnIn_10	; 0	; 0	; 0	; 0
+VAL_AnIn_10	; 0	; 0	; 0	; 0
+VAL_AnInConf10	; 0	; 0	; 0	; 0
+VAL_AnInFltr10	; 0	; 0	; 0	; 0
+TST_AnIn_11	; 0	; 0	; 0	; 0
+VAL_AnIn_11	; 0	; 0	; 0	; 0
+VAL_AnInConf11	; 0	; 0	; 0	; 0
+VAL_AnInFltr11	; 0	; 0	; 0	; 0
+TST_AnIn_12	; 0	; 0	; 0	; 0
+VAL_AnIn_12	; 0	; 0	; 0	; 0
+VAL_AnInConf12	; 0	; 0	; 0	; 0
+VAL_AnInFltr12	; 0	; 0	; 0	; 0
+TST_AnOut_1	; 0	; 0	; 0	; 0
+VAL_AnOut_1	; 0	; 0	; 0	; 0
+VAL_AnOutCon_1	; 0	; 0	; 0	; 0
+TST_AnOut_2	; 0	; 0	; 0	; 0
+VAL_AnOut_2	; 0	; 0	; 0	; 0
+VAL_AnOutCon_2	; 0	; 0	; 0	; 0
+TST_AnOut_3	; 0	; 0	; 0	; 0
+VAL_AnOut_3	; 0	; 0	; 0	; 0
+VAL_AnOutCon_3	; 0	; 0	; 0	; 0
+TST_AnOut_4	; 0	; 0	; 0	; 0
+VAL_AnOut_4	; 0	; 0	; 0	; 0
+VAL_AnOutCon_4	; 0	; 0	; 0	; 0
+TST_Tamb	; 0	; 0	; 0	; 0
+VAL_Tamb	; 0	; 0	; 0	; 0
+TST_RPM		; 0	; 0	; 0	; 0
+VAL_RPM		; 0	; 0	; 0	; 0
+TST_VCC_set	; 0	; 0	; 0	; 0
+VAL_VCC_set	; 0	; 0	; 0	; 0
+TST_mA_max	; 0	; 0	; 0	; 0
+VAL_mA_max	; 0	; 0	; 0	; 0
+TST_VCC_fbk	; 0	; 0	; 0	; 0
+VAL_VCC_fbk	; 0	; 0	; 0	; 0
+TST_mA_fbk	; 0	; 0	; 0	; 0
+VAL_mA_fbk	; 0	; 0	; 0	; 0
+TST_FWrevisin	; 0	; 0	; 0	; 0
+VAL_FWrevisin	; 0	; 0	; 0	; 0
+TST_HWconfig	; 0	; 0	; 0	; 0
+VAL_HWconfig	; 0	; 0	; 0	; 0
+TST_RTUS_WR	; 0	; 0	; 0	; 0
+VAL_RTUS_WR	; 0	; 0	; 0	; 0
+TST_RTUS_RD	; 0	; 0	; 0	; 0
+VAL_RTUS_RD	; 0	; 0	; 0	; 0
+TST_RTU1_WR	; 0	; 0	; 0	; 0
+VAL_RTU1_WR	; 0	; 0	; 0	; 0
+TST_RTU1_RD	; 0	; 0	; 0	; 0
+VAL_RTU1_RD	; 0	; 0	; 0	; 0
+TST_RTU3_WR	; 0	; 0	; 0	; 0
+VAL_RTU3_WR	; 0	; 0	; 0	; 0
+TST_RTU3_RD	; 0	; 0	; 0	; 0
+VAL_RTU3_RD	; 0	; 0	; 0	; 0
+TST_CAN1_WR	; 0	; 0	; 0	; 0
+VAL_CAN1_WR	; 0	; 0	; 0	; 0
+TST_CAN1_RD	; 0	; 0	; 0	; 0
+VAL_CAN1_RD	; 0	; 0	; 0	; 0

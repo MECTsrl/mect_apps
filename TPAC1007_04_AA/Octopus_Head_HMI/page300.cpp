@@ -120,3 +120,11 @@ void page300::on_atcmComboBox_PRODUCT_ID_currentIndexChanged(const QString &arg1
 {
     setProduct(arg1.toAscii().data());
 }
+
+void page300::on_atcmComboBox_TEST_ID_currentIndexChanged(const QString &arg1)
+{
+    QString dirname = QString(RECIPE_DIR) + QString("/") + ui->atcmComboBox_PRODUCT_ID->currentText();
+    if (loadRecipe(dirname + QString("/") + arg1) < 0) {
+        ;
+    }
+}

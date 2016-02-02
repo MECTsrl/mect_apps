@@ -2161,7 +2161,7 @@ background-color: rgb(255, 255, 127);
    <property name="geometry">
     <rect>
      <x>360</x>
-     <y>204</y>
+     <y>240</y>
      <width>120</width>
      <height>34</height>
     </rect>
@@ -2489,9 +2489,9 @@ background-color: rgb(255, 255, 127);
   <widget class="ATCMlabel" name="atcmLabel_TEST_STEP">
    <property name="geometry">
     <rect>
-     <x>360</x>
-     <y>238</y>
-     <width>60</width>
+     <x>419</x>
+     <y>204</y>
+     <width>31</width>
      <height>34</height>
     </rect>
    </property>
@@ -3487,9 +3487,9 @@ MATIC</string>
    </property>
    <property name="geometry">
     <rect>
-     <x>420</x>
-     <y>238</y>
-     <width>60</width>
+     <x>449</x>
+     <y>204</y>
+     <width>31</width>
      <height>34</height>
     </rect>
    </property>
@@ -3660,6 +3660,68 @@ MATIC</string>
     <string>0;IDLE;1;STARTING;2;READY;3;TESTING;4;DONE;5;RESETTING;6;STOPPING;7;ERROR</string>
    </property>
   </widget>
+  <widget class="ATCMcombobox" name="atcmComboBox_TEST_ID">
+   <property name="geometry">
+    <rect>
+     <x>359</x>
+     <y>204</y>
+     <width>61</width>
+     <height>34</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans Mono</family>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <property name="maxCount">
+    <number>10</number>
+   </property>
+   <property name="toolTip">
+    <string>TEST_ID</string>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMcombobox widget</string>
+   </property>
+   <property name="variable">
+    <string>TEST_ID</string>
+   </property>
+   <property name="refresh">
+    <number>500</number>
+   </property>
+   <property name="viewStatus">
+    <bool>false</bool>
+   </property>
+   <property name="writeAcknowledge">
+    <bool>false</bool>
+   </property>
+   <property name="visibilityVar">
+    <string/>
+   </property>
+   <property name="bgColor">
+    <color>
+     <red>170</red>
+     <green>255</green>
+     <blue>127</blue>
+    </color>
+   </property>
+   <property name="borderWidth">
+    <number>2</number>
+   </property>
+   <property name="borderRadius">
+    <number>0</number>
+   </property>
+   <property name="apparence">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <property name="mapping">
+    <string>1;1;2;2;3;3;4;4</string>
+   </property>
+  </widget>
   <zorder>label_Qt_Project</zorder>
   <zorder>atcmButton_menu</zorder>
   <zorder>label_PLC_DigIn_5</zorder>
@@ -3762,6 +3824,7 @@ MATIC</string>
   <zorder>line_vt_2</zorder>
   <zorder>atcmComboBox_PRODUCT_ID</zorder>
   <zorder>atcmComboBox</zorder>
+  <zorder>atcmComboBox_TEST_ID</zorder>
  </widget>
  <customwidgets>
   <customwidget>

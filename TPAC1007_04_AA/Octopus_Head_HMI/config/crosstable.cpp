@@ -14,6 +14,7 @@ DWORD_BIT <-> int
  
 u_int32_t PRODUCT_ID = 0;
 u_int32_t SERIAL_NUMBER = 0;
+u_int16_t TEST_ID = 0;
 u_int16_t TEST_STEP = 0;
 u_int16_t TEST_STEP_MAX = 0;
 u_int32_t TEST_DATE = 0;
@@ -892,12 +893,6 @@ return addWrite(ID_PRODUCT_ID, &value);
 }
 
 
-int getStatus_PRODUCT_ID()
-{
-return getStatus(ID_PRODUCT_ID);
-}
-
-
 int doWrite_SERIAL_NUMBER(u_int32_t value)
 {
 return doWrite(ID_SERIAL_NUMBER,  &value);
@@ -910,9 +905,15 @@ return addWrite(ID_SERIAL_NUMBER, &value);
 }
 
 
-int getStatus_SERIAL_NUMBER()
+int doWrite_TEST_ID(u_int16_t value)
 {
-return getStatus(ID_SERIAL_NUMBER);
+return doWrite(ID_TEST_ID,  &value);
+}
+
+
+int addWrite_TEST_ID(u_int16_t value)
+{
+return addWrite(ID_TEST_ID, &value);
 }
 
 
@@ -928,12 +929,6 @@ return addWrite(ID_TEST_STEP, &value);
 }
 
 
-int getStatus_TEST_STEP()
-{
-return getStatus(ID_TEST_STEP);
-}
-
-
 int doWrite_TEST_STEP_MAX(u_int16_t value)
 {
 return doWrite(ID_TEST_STEP_MAX,  &value);
@@ -943,12 +938,6 @@ return doWrite(ID_TEST_STEP_MAX,  &value);
 int addWrite_TEST_STEP_MAX(u_int16_t value)
 {
 return addWrite(ID_TEST_STEP_MAX, &value);
-}
-
-
-int getStatus_TEST_STEP_MAX()
-{
-return getStatus(ID_TEST_STEP_MAX);
 }
 
 
@@ -964,12 +953,6 @@ return addWrite(ID_TEST_DATE, &value);
 }
 
 
-int getStatus_TEST_DATE()
-{
-return getStatus(ID_TEST_DATE);
-}
-
-
 int doWrite_TEST_TIME(u_int32_t value)
 {
 return doWrite(ID_TEST_TIME,  &value);
@@ -979,12 +962,6 @@ return doWrite(ID_TEST_TIME,  &value);
 int addWrite_TEST_TIME(u_int32_t value)
 {
 return addWrite(ID_TEST_TIME, &value);
-}
-
-
-int getStatus_TEST_TIME()
-{
-return getStatus(ID_TEST_TIME);
 }
 
 
@@ -1000,12 +977,6 @@ return addWrite(ID_TEST_DURATION, &value);
 }
 
 
-int getStatus_TEST_DURATION()
-{
-return getStatus(ID_TEST_DURATION);
-}
-
-
 int doWrite_AUTOMATIC(int value)
 {
 return doWrite(ID_AUTOMATIC,  &value);
@@ -1015,12 +986,6 @@ return doWrite(ID_AUTOMATIC,  &value);
 int addWrite_AUTOMATIC(int value)
 {
 return addWrite(ID_AUTOMATIC, &value);
-}
-
-
-int getStatus_AUTOMATIC()
-{
-return getStatus(ID_AUTOMATIC);
 }
 
 
@@ -1036,12 +1001,6 @@ return addWrite(ID_REPEAT, &value);
 }
 
 
-int getStatus_REPEAT()
-{
-return getStatus(ID_REPEAT);
-}
-
-
 int doWrite_STATUS(u_int16_t value)
 {
 return doWrite(ID_STATUS,  &value);
@@ -1051,12 +1010,6 @@ return doWrite(ID_STATUS,  &value);
 int addWrite_STATUS(u_int16_t value)
 {
 return addWrite(ID_STATUS, &value);
-}
-
-
-int getStatus_STATUS()
-{
-return getStatus(ID_STATUS);
 }
 
 
@@ -1072,12 +1025,6 @@ return addWrite(ID_RESULT, &value);
 }
 
 
-int getStatus_RESULT()
-{
-return getStatus(ID_RESULT);
-}
-
-
 int doWrite_TST_DigIn_1(int value)
 {
 return doWrite(ID_TST_DigIn_1,  &value);
@@ -1087,12 +1034,6 @@ return doWrite(ID_TST_DigIn_1,  &value);
 int addWrite_TST_DigIn_1(int value)
 {
 return addWrite(ID_TST_DigIn_1, &value);
-}
-
-
-int getStatus_TST_DigIn_1()
-{
-return getStatus(ID_TST_DigIn_1);
 }
 
 
@@ -1108,12 +1049,6 @@ return addWrite(ID_TST_DigIn_2, &value);
 }
 
 
-int getStatus_TST_DigIn_2()
-{
-return getStatus(ID_TST_DigIn_2);
-}
-
-
 int doWrite_TST_DigIn_3(int value)
 {
 return doWrite(ID_TST_DigIn_3,  &value);
@@ -1123,12 +1058,6 @@ return doWrite(ID_TST_DigIn_3,  &value);
 int addWrite_TST_DigIn_3(int value)
 {
 return addWrite(ID_TST_DigIn_3, &value);
-}
-
-
-int getStatus_TST_DigIn_3()
-{
-return getStatus(ID_TST_DigIn_3);
 }
 
 
@@ -1144,12 +1073,6 @@ return addWrite(ID_TST_DigIn_4, &value);
 }
 
 
-int getStatus_TST_DigIn_4()
-{
-return getStatus(ID_TST_DigIn_4);
-}
-
-
 int doWrite_TST_DigIn_5(int value)
 {
 return doWrite(ID_TST_DigIn_5,  &value);
@@ -1159,12 +1082,6 @@ return doWrite(ID_TST_DigIn_5,  &value);
 int addWrite_TST_DigIn_5(int value)
 {
 return addWrite(ID_TST_DigIn_5, &value);
-}
-
-
-int getStatus_TST_DigIn_5()
-{
-return getStatus(ID_TST_DigIn_5);
 }
 
 
@@ -1180,12 +1097,6 @@ return addWrite(ID_TST_DigIn_6, &value);
 }
 
 
-int getStatus_TST_DigIn_6()
-{
-return getStatus(ID_TST_DigIn_6);
-}
-
-
 int doWrite_TST_DigIn_7(int value)
 {
 return doWrite(ID_TST_DigIn_7,  &value);
@@ -1195,12 +1106,6 @@ return doWrite(ID_TST_DigIn_7,  &value);
 int addWrite_TST_DigIn_7(int value)
 {
 return addWrite(ID_TST_DigIn_7, &value);
-}
-
-
-int getStatus_TST_DigIn_7()
-{
-return getStatus(ID_TST_DigIn_7);
 }
 
 
@@ -1216,12 +1121,6 @@ return addWrite(ID_TST_DigIn_8, &value);
 }
 
 
-int getStatus_TST_DigIn_8()
-{
-return getStatus(ID_TST_DigIn_8);
-}
-
-
 int doWrite_TST_DigIn_9(int value)
 {
 return doWrite(ID_TST_DigIn_9,  &value);
@@ -1231,12 +1130,6 @@ return doWrite(ID_TST_DigIn_9,  &value);
 int addWrite_TST_DigIn_9(int value)
 {
 return addWrite(ID_TST_DigIn_9, &value);
-}
-
-
-int getStatus_TST_DigIn_9()
-{
-return getStatus(ID_TST_DigIn_9);
 }
 
 
@@ -1252,12 +1145,6 @@ return addWrite(ID_TST_DigIn_10, &value);
 }
 
 
-int getStatus_TST_DigIn_10()
-{
-return getStatus(ID_TST_DigIn_10);
-}
-
-
 int doWrite_TST_DigIn_11(int value)
 {
 return doWrite(ID_TST_DigIn_11,  &value);
@@ -1267,12 +1154,6 @@ return doWrite(ID_TST_DigIn_11,  &value);
 int addWrite_TST_DigIn_11(int value)
 {
 return addWrite(ID_TST_DigIn_11, &value);
-}
-
-
-int getStatus_TST_DigIn_11()
-{
-return getStatus(ID_TST_DigIn_11);
 }
 
 
@@ -1288,12 +1169,6 @@ return addWrite(ID_TST_DigIn_12, &value);
 }
 
 
-int getStatus_TST_DigIn_12()
-{
-return getStatus(ID_TST_DigIn_12);
-}
-
-
 int doWrite_TST_DigIn_13(int value)
 {
 return doWrite(ID_TST_DigIn_13,  &value);
@@ -1303,12 +1178,6 @@ return doWrite(ID_TST_DigIn_13,  &value);
 int addWrite_TST_DigIn_13(int value)
 {
 return addWrite(ID_TST_DigIn_13, &value);
-}
-
-
-int getStatus_TST_DigIn_13()
-{
-return getStatus(ID_TST_DigIn_13);
 }
 
 
@@ -1324,12 +1193,6 @@ return addWrite(ID_TST_DigIn_14, &value);
 }
 
 
-int getStatus_TST_DigIn_14()
-{
-return getStatus(ID_TST_DigIn_14);
-}
-
-
 int doWrite_TST_DigIn_15(int value)
 {
 return doWrite(ID_TST_DigIn_15,  &value);
@@ -1339,12 +1202,6 @@ return doWrite(ID_TST_DigIn_15,  &value);
 int addWrite_TST_DigIn_15(int value)
 {
 return addWrite(ID_TST_DigIn_15, &value);
-}
-
-
-int getStatus_TST_DigIn_15()
-{
-return getStatus(ID_TST_DigIn_15);
 }
 
 
@@ -1360,12 +1217,6 @@ return addWrite(ID_TST_DigIn_16, &value);
 }
 
 
-int getStatus_TST_DigIn_16()
-{
-return getStatus(ID_TST_DigIn_16);
-}
-
-
 int doWrite_VAL_DigIn_1(int value)
 {
 return doWrite(ID_VAL_DigIn_1,  &value);
@@ -1375,12 +1226,6 @@ return doWrite(ID_VAL_DigIn_1,  &value);
 int addWrite_VAL_DigIn_1(int value)
 {
 return addWrite(ID_VAL_DigIn_1, &value);
-}
-
-
-int getStatus_VAL_DigIn_1()
-{
-return getStatus(ID_VAL_DigIn_1);
 }
 
 
@@ -1396,12 +1241,6 @@ return addWrite(ID_VAL_DigIn_2, &value);
 }
 
 
-int getStatus_VAL_DigIn_2()
-{
-return getStatus(ID_VAL_DigIn_2);
-}
-
-
 int doWrite_VAL_DigIn_3(int value)
 {
 return doWrite(ID_VAL_DigIn_3,  &value);
@@ -1411,12 +1250,6 @@ return doWrite(ID_VAL_DigIn_3,  &value);
 int addWrite_VAL_DigIn_3(int value)
 {
 return addWrite(ID_VAL_DigIn_3, &value);
-}
-
-
-int getStatus_VAL_DigIn_3()
-{
-return getStatus(ID_VAL_DigIn_3);
 }
 
 
@@ -1432,12 +1265,6 @@ return addWrite(ID_VAL_DigIn_4, &value);
 }
 
 
-int getStatus_VAL_DigIn_4()
-{
-return getStatus(ID_VAL_DigIn_4);
-}
-
-
 int doWrite_VAL_DigIn_5(int value)
 {
 return doWrite(ID_VAL_DigIn_5,  &value);
@@ -1447,12 +1274,6 @@ return doWrite(ID_VAL_DigIn_5,  &value);
 int addWrite_VAL_DigIn_5(int value)
 {
 return addWrite(ID_VAL_DigIn_5, &value);
-}
-
-
-int getStatus_VAL_DigIn_5()
-{
-return getStatus(ID_VAL_DigIn_5);
 }
 
 
@@ -1468,12 +1289,6 @@ return addWrite(ID_VAL_DigIn_6, &value);
 }
 
 
-int getStatus_VAL_DigIn_6()
-{
-return getStatus(ID_VAL_DigIn_6);
-}
-
-
 int doWrite_VAL_DigIn_7(int value)
 {
 return doWrite(ID_VAL_DigIn_7,  &value);
@@ -1483,12 +1298,6 @@ return doWrite(ID_VAL_DigIn_7,  &value);
 int addWrite_VAL_DigIn_7(int value)
 {
 return addWrite(ID_VAL_DigIn_7, &value);
-}
-
-
-int getStatus_VAL_DigIn_7()
-{
-return getStatus(ID_VAL_DigIn_7);
 }
 
 
@@ -1504,12 +1313,6 @@ return addWrite(ID_VAL_DigIn_8, &value);
 }
 
 
-int getStatus_VAL_DigIn_8()
-{
-return getStatus(ID_VAL_DigIn_8);
-}
-
-
 int doWrite_VAL_DigIn_9(int value)
 {
 return doWrite(ID_VAL_DigIn_9,  &value);
@@ -1519,12 +1322,6 @@ return doWrite(ID_VAL_DigIn_9,  &value);
 int addWrite_VAL_DigIn_9(int value)
 {
 return addWrite(ID_VAL_DigIn_9, &value);
-}
-
-
-int getStatus_VAL_DigIn_9()
-{
-return getStatus(ID_VAL_DigIn_9);
 }
 
 
@@ -1540,12 +1337,6 @@ return addWrite(ID_VAL_DigIn_10, &value);
 }
 
 
-int getStatus_VAL_DigIn_10()
-{
-return getStatus(ID_VAL_DigIn_10);
-}
-
-
 int doWrite_VAL_DigIn_11(int value)
 {
 return doWrite(ID_VAL_DigIn_11,  &value);
@@ -1555,12 +1346,6 @@ return doWrite(ID_VAL_DigIn_11,  &value);
 int addWrite_VAL_DigIn_11(int value)
 {
 return addWrite(ID_VAL_DigIn_11, &value);
-}
-
-
-int getStatus_VAL_DigIn_11()
-{
-return getStatus(ID_VAL_DigIn_11);
 }
 
 
@@ -1576,12 +1361,6 @@ return addWrite(ID_VAL_DigIn_12, &value);
 }
 
 
-int getStatus_VAL_DigIn_12()
-{
-return getStatus(ID_VAL_DigIn_12);
-}
-
-
 int doWrite_VAL_DigIn_13(int value)
 {
 return doWrite(ID_VAL_DigIn_13,  &value);
@@ -1591,12 +1370,6 @@ return doWrite(ID_VAL_DigIn_13,  &value);
 int addWrite_VAL_DigIn_13(int value)
 {
 return addWrite(ID_VAL_DigIn_13, &value);
-}
-
-
-int getStatus_VAL_DigIn_13()
-{
-return getStatus(ID_VAL_DigIn_13);
 }
 
 
@@ -1612,12 +1385,6 @@ return addWrite(ID_VAL_DigIn_14, &value);
 }
 
 
-int getStatus_VAL_DigIn_14()
-{
-return getStatus(ID_VAL_DigIn_14);
-}
-
-
 int doWrite_VAL_DigIn_15(int value)
 {
 return doWrite(ID_VAL_DigIn_15,  &value);
@@ -1627,12 +1394,6 @@ return doWrite(ID_VAL_DigIn_15,  &value);
 int addWrite_VAL_DigIn_15(int value)
 {
 return addWrite(ID_VAL_DigIn_15, &value);
-}
-
-
-int getStatus_VAL_DigIn_15()
-{
-return getStatus(ID_VAL_DigIn_15);
 }
 
 
@@ -1648,12 +1409,6 @@ return addWrite(ID_VAL_DigIn_16, &value);
 }
 
 
-int getStatus_VAL_DigIn_16()
-{
-return getStatus(ID_VAL_DigIn_16);
-}
-
-
 int doWrite_RES_DigIn_1(int value)
 {
 return doWrite(ID_RES_DigIn_1,  &value);
@@ -1663,12 +1418,6 @@ return doWrite(ID_RES_DigIn_1,  &value);
 int addWrite_RES_DigIn_1(int value)
 {
 return addWrite(ID_RES_DigIn_1, &value);
-}
-
-
-int getStatus_RES_DigIn_1()
-{
-return getStatus(ID_RES_DigIn_1);
 }
 
 
@@ -1684,12 +1433,6 @@ return addWrite(ID_RES_DigIn_2, &value);
 }
 
 
-int getStatus_RES_DigIn_2()
-{
-return getStatus(ID_RES_DigIn_2);
-}
-
-
 int doWrite_RES_DigIn_3(int value)
 {
 return doWrite(ID_RES_DigIn_3,  &value);
@@ -1699,12 +1442,6 @@ return doWrite(ID_RES_DigIn_3,  &value);
 int addWrite_RES_DigIn_3(int value)
 {
 return addWrite(ID_RES_DigIn_3, &value);
-}
-
-
-int getStatus_RES_DigIn_3()
-{
-return getStatus(ID_RES_DigIn_3);
 }
 
 
@@ -1720,12 +1457,6 @@ return addWrite(ID_RES_DigIn_4, &value);
 }
 
 
-int getStatus_RES_DigIn_4()
-{
-return getStatus(ID_RES_DigIn_4);
-}
-
-
 int doWrite_RES_DigIn_5(int value)
 {
 return doWrite(ID_RES_DigIn_5,  &value);
@@ -1735,12 +1466,6 @@ return doWrite(ID_RES_DigIn_5,  &value);
 int addWrite_RES_DigIn_5(int value)
 {
 return addWrite(ID_RES_DigIn_5, &value);
-}
-
-
-int getStatus_RES_DigIn_5()
-{
-return getStatus(ID_RES_DigIn_5);
 }
 
 
@@ -1756,12 +1481,6 @@ return addWrite(ID_RES_DigIn_6, &value);
 }
 
 
-int getStatus_RES_DigIn_6()
-{
-return getStatus(ID_RES_DigIn_6);
-}
-
-
 int doWrite_RES_DigIn_7(int value)
 {
 return doWrite(ID_RES_DigIn_7,  &value);
@@ -1771,12 +1490,6 @@ return doWrite(ID_RES_DigIn_7,  &value);
 int addWrite_RES_DigIn_7(int value)
 {
 return addWrite(ID_RES_DigIn_7, &value);
-}
-
-
-int getStatus_RES_DigIn_7()
-{
-return getStatus(ID_RES_DigIn_7);
 }
 
 
@@ -1792,12 +1505,6 @@ return addWrite(ID_RES_DigIn_8, &value);
 }
 
 
-int getStatus_RES_DigIn_8()
-{
-return getStatus(ID_RES_DigIn_8);
-}
-
-
 int doWrite_RES_DigIn_9(int value)
 {
 return doWrite(ID_RES_DigIn_9,  &value);
@@ -1807,12 +1514,6 @@ return doWrite(ID_RES_DigIn_9,  &value);
 int addWrite_RES_DigIn_9(int value)
 {
 return addWrite(ID_RES_DigIn_9, &value);
-}
-
-
-int getStatus_RES_DigIn_9()
-{
-return getStatus(ID_RES_DigIn_9);
 }
 
 
@@ -1828,12 +1529,6 @@ return addWrite(ID_RES_DigIn_10, &value);
 }
 
 
-int getStatus_RES_DigIn_10()
-{
-return getStatus(ID_RES_DigIn_10);
-}
-
-
 int doWrite_RES_DigIn_11(int value)
 {
 return doWrite(ID_RES_DigIn_11,  &value);
@@ -1843,12 +1538,6 @@ return doWrite(ID_RES_DigIn_11,  &value);
 int addWrite_RES_DigIn_11(int value)
 {
 return addWrite(ID_RES_DigIn_11, &value);
-}
-
-
-int getStatus_RES_DigIn_11()
-{
-return getStatus(ID_RES_DigIn_11);
 }
 
 
@@ -1864,12 +1553,6 @@ return addWrite(ID_RES_DigIn_12, &value);
 }
 
 
-int getStatus_RES_DigIn_12()
-{
-return getStatus(ID_RES_DigIn_12);
-}
-
-
 int doWrite_RES_DigIn_13(int value)
 {
 return doWrite(ID_RES_DigIn_13,  &value);
@@ -1879,12 +1562,6 @@ return doWrite(ID_RES_DigIn_13,  &value);
 int addWrite_RES_DigIn_13(int value)
 {
 return addWrite(ID_RES_DigIn_13, &value);
-}
-
-
-int getStatus_RES_DigIn_13()
-{
-return getStatus(ID_RES_DigIn_13);
 }
 
 
@@ -1900,12 +1577,6 @@ return addWrite(ID_RES_DigIn_14, &value);
 }
 
 
-int getStatus_RES_DigIn_14()
-{
-return getStatus(ID_RES_DigIn_14);
-}
-
-
 int doWrite_RES_DigIn_15(int value)
 {
 return doWrite(ID_RES_DigIn_15,  &value);
@@ -1915,12 +1586,6 @@ return doWrite(ID_RES_DigIn_15,  &value);
 int addWrite_RES_DigIn_15(int value)
 {
 return addWrite(ID_RES_DigIn_15, &value);
-}
-
-
-int getStatus_RES_DigIn_15()
-{
-return getStatus(ID_RES_DigIn_15);
 }
 
 
@@ -1936,12 +1601,6 @@ return addWrite(ID_RES_DigIn_16, &value);
 }
 
 
-int getStatus_RES_DigIn_16()
-{
-return getStatus(ID_RES_DigIn_16);
-}
-
-
 int doWrite_OK_DigIn_1(int value)
 {
 return doWrite(ID_OK_DigIn_1,  &value);
@@ -1951,12 +1610,6 @@ return doWrite(ID_OK_DigIn_1,  &value);
 int addWrite_OK_DigIn_1(int value)
 {
 return addWrite(ID_OK_DigIn_1, &value);
-}
-
-
-int getStatus_OK_DigIn_1()
-{
-return getStatus(ID_OK_DigIn_1);
 }
 
 
@@ -1972,12 +1625,6 @@ return addWrite(ID_OK_DigIn_2, &value);
 }
 
 
-int getStatus_OK_DigIn_2()
-{
-return getStatus(ID_OK_DigIn_2);
-}
-
-
 int doWrite_OK_DigIn_3(int value)
 {
 return doWrite(ID_OK_DigIn_3,  &value);
@@ -1987,12 +1634,6 @@ return doWrite(ID_OK_DigIn_3,  &value);
 int addWrite_OK_DigIn_3(int value)
 {
 return addWrite(ID_OK_DigIn_3, &value);
-}
-
-
-int getStatus_OK_DigIn_3()
-{
-return getStatus(ID_OK_DigIn_3);
 }
 
 
@@ -2008,12 +1649,6 @@ return addWrite(ID_OK_DigIn_4, &value);
 }
 
 
-int getStatus_OK_DigIn_4()
-{
-return getStatus(ID_OK_DigIn_4);
-}
-
-
 int doWrite_OK_DigIn_5(int value)
 {
 return doWrite(ID_OK_DigIn_5,  &value);
@@ -2023,12 +1658,6 @@ return doWrite(ID_OK_DigIn_5,  &value);
 int addWrite_OK_DigIn_5(int value)
 {
 return addWrite(ID_OK_DigIn_5, &value);
-}
-
-
-int getStatus_OK_DigIn_5()
-{
-return getStatus(ID_OK_DigIn_5);
 }
 
 
@@ -2044,12 +1673,6 @@ return addWrite(ID_OK_DigIn_6, &value);
 }
 
 
-int getStatus_OK_DigIn_6()
-{
-return getStatus(ID_OK_DigIn_6);
-}
-
-
 int doWrite_OK_DigIn_7(int value)
 {
 return doWrite(ID_OK_DigIn_7,  &value);
@@ -2059,12 +1682,6 @@ return doWrite(ID_OK_DigIn_7,  &value);
 int addWrite_OK_DigIn_7(int value)
 {
 return addWrite(ID_OK_DigIn_7, &value);
-}
-
-
-int getStatus_OK_DigIn_7()
-{
-return getStatus(ID_OK_DigIn_7);
 }
 
 
@@ -2080,12 +1697,6 @@ return addWrite(ID_OK_DigIn_8, &value);
 }
 
 
-int getStatus_OK_DigIn_8()
-{
-return getStatus(ID_OK_DigIn_8);
-}
-
-
 int doWrite_OK_DigIn_9(int value)
 {
 return doWrite(ID_OK_DigIn_9,  &value);
@@ -2095,12 +1706,6 @@ return doWrite(ID_OK_DigIn_9,  &value);
 int addWrite_OK_DigIn_9(int value)
 {
 return addWrite(ID_OK_DigIn_9, &value);
-}
-
-
-int getStatus_OK_DigIn_9()
-{
-return getStatus(ID_OK_DigIn_9);
 }
 
 
@@ -2116,12 +1721,6 @@ return addWrite(ID_OK_DigIn_10, &value);
 }
 
 
-int getStatus_OK_DigIn_10()
-{
-return getStatus(ID_OK_DigIn_10);
-}
-
-
 int doWrite_OK_DigIn_11(int value)
 {
 return doWrite(ID_OK_DigIn_11,  &value);
@@ -2131,12 +1730,6 @@ return doWrite(ID_OK_DigIn_11,  &value);
 int addWrite_OK_DigIn_11(int value)
 {
 return addWrite(ID_OK_DigIn_11, &value);
-}
-
-
-int getStatus_OK_DigIn_11()
-{
-return getStatus(ID_OK_DigIn_11);
 }
 
 
@@ -2152,12 +1745,6 @@ return addWrite(ID_OK_DigIn_12, &value);
 }
 
 
-int getStatus_OK_DigIn_12()
-{
-return getStatus(ID_OK_DigIn_12);
-}
-
-
 int doWrite_OK_DigIn_13(int value)
 {
 return doWrite(ID_OK_DigIn_13,  &value);
@@ -2167,12 +1754,6 @@ return doWrite(ID_OK_DigIn_13,  &value);
 int addWrite_OK_DigIn_13(int value)
 {
 return addWrite(ID_OK_DigIn_13, &value);
-}
-
-
-int getStatus_OK_DigIn_13()
-{
-return getStatus(ID_OK_DigIn_13);
 }
 
 
@@ -2188,12 +1769,6 @@ return addWrite(ID_OK_DigIn_14, &value);
 }
 
 
-int getStatus_OK_DigIn_14()
-{
-return getStatus(ID_OK_DigIn_14);
-}
-
-
 int doWrite_OK_DigIn_15(int value)
 {
 return doWrite(ID_OK_DigIn_15,  &value);
@@ -2203,12 +1778,6 @@ return doWrite(ID_OK_DigIn_15,  &value);
 int addWrite_OK_DigIn_15(int value)
 {
 return addWrite(ID_OK_DigIn_15, &value);
-}
-
-
-int getStatus_OK_DigIn_15()
-{
-return getStatus(ID_OK_DigIn_15);
 }
 
 
@@ -2224,12 +1793,6 @@ return addWrite(ID_OK_DigIn_16, &value);
 }
 
 
-int getStatus_OK_DigIn_16()
-{
-return getStatus(ID_OK_DigIn_16);
-}
-
-
 int doWrite_TST_DigOut_1(int value)
 {
 return doWrite(ID_TST_DigOut_1,  &value);
@@ -2239,12 +1802,6 @@ return doWrite(ID_TST_DigOut_1,  &value);
 int addWrite_TST_DigOut_1(int value)
 {
 return addWrite(ID_TST_DigOut_1, &value);
-}
-
-
-int getStatus_TST_DigOut_1()
-{
-return getStatus(ID_TST_DigOut_1);
 }
 
 
@@ -2260,12 +1817,6 @@ return addWrite(ID_TST_DigOut_2, &value);
 }
 
 
-int getStatus_TST_DigOut_2()
-{
-return getStatus(ID_TST_DigOut_2);
-}
-
-
 int doWrite_TST_DigOut_3(int value)
 {
 return doWrite(ID_TST_DigOut_3,  &value);
@@ -2275,12 +1826,6 @@ return doWrite(ID_TST_DigOut_3,  &value);
 int addWrite_TST_DigOut_3(int value)
 {
 return addWrite(ID_TST_DigOut_3, &value);
-}
-
-
-int getStatus_TST_DigOut_3()
-{
-return getStatus(ID_TST_DigOut_3);
 }
 
 
@@ -2296,12 +1841,6 @@ return addWrite(ID_TST_DigOut_4, &value);
 }
 
 
-int getStatus_TST_DigOut_4()
-{
-return getStatus(ID_TST_DigOut_4);
-}
-
-
 int doWrite_TST_DigOut_5(int value)
 {
 return doWrite(ID_TST_DigOut_5,  &value);
@@ -2311,12 +1850,6 @@ return doWrite(ID_TST_DigOut_5,  &value);
 int addWrite_TST_DigOut_5(int value)
 {
 return addWrite(ID_TST_DigOut_5, &value);
-}
-
-
-int getStatus_TST_DigOut_5()
-{
-return getStatus(ID_TST_DigOut_5);
 }
 
 
@@ -2332,12 +1865,6 @@ return addWrite(ID_TST_DigOut_6, &value);
 }
 
 
-int getStatus_TST_DigOut_6()
-{
-return getStatus(ID_TST_DigOut_6);
-}
-
-
 int doWrite_TST_DigOut_7(int value)
 {
 return doWrite(ID_TST_DigOut_7,  &value);
@@ -2347,12 +1874,6 @@ return doWrite(ID_TST_DigOut_7,  &value);
 int addWrite_TST_DigOut_7(int value)
 {
 return addWrite(ID_TST_DigOut_7, &value);
-}
-
-
-int getStatus_TST_DigOut_7()
-{
-return getStatus(ID_TST_DigOut_7);
 }
 
 
@@ -2368,12 +1889,6 @@ return addWrite(ID_TST_DigOut_8, &value);
 }
 
 
-int getStatus_TST_DigOut_8()
-{
-return getStatus(ID_TST_DigOut_8);
-}
-
-
 int doWrite_TST_DigOut_9(int value)
 {
 return doWrite(ID_TST_DigOut_9,  &value);
@@ -2383,12 +1898,6 @@ return doWrite(ID_TST_DigOut_9,  &value);
 int addWrite_TST_DigOut_9(int value)
 {
 return addWrite(ID_TST_DigOut_9, &value);
-}
-
-
-int getStatus_TST_DigOut_9()
-{
-return getStatus(ID_TST_DigOut_9);
 }
 
 
@@ -2404,12 +1913,6 @@ return addWrite(ID_TST_DigOut_10, &value);
 }
 
 
-int getStatus_TST_DigOut_10()
-{
-return getStatus(ID_TST_DigOut_10);
-}
-
-
 int doWrite_TST_DigOut_11(int value)
 {
 return doWrite(ID_TST_DigOut_11,  &value);
@@ -2419,12 +1922,6 @@ return doWrite(ID_TST_DigOut_11,  &value);
 int addWrite_TST_DigOut_11(int value)
 {
 return addWrite(ID_TST_DigOut_11, &value);
-}
-
-
-int getStatus_TST_DigOut_11()
-{
-return getStatus(ID_TST_DigOut_11);
 }
 
 
@@ -2440,12 +1937,6 @@ return addWrite(ID_TST_DigOut_12, &value);
 }
 
 
-int getStatus_TST_DigOut_12()
-{
-return getStatus(ID_TST_DigOut_12);
-}
-
-
 int doWrite_TST_DigOut_13(int value)
 {
 return doWrite(ID_TST_DigOut_13,  &value);
@@ -2455,12 +1946,6 @@ return doWrite(ID_TST_DigOut_13,  &value);
 int addWrite_TST_DigOut_13(int value)
 {
 return addWrite(ID_TST_DigOut_13, &value);
-}
-
-
-int getStatus_TST_DigOut_13()
-{
-return getStatus(ID_TST_DigOut_13);
 }
 
 
@@ -2476,12 +1961,6 @@ return addWrite(ID_TST_DigOut_14, &value);
 }
 
 
-int getStatus_TST_DigOut_14()
-{
-return getStatus(ID_TST_DigOut_14);
-}
-
-
 int doWrite_TST_DigOut_15(int value)
 {
 return doWrite(ID_TST_DigOut_15,  &value);
@@ -2491,12 +1970,6 @@ return doWrite(ID_TST_DigOut_15,  &value);
 int addWrite_TST_DigOut_15(int value)
 {
 return addWrite(ID_TST_DigOut_15, &value);
-}
-
-
-int getStatus_TST_DigOut_15()
-{
-return getStatus(ID_TST_DigOut_15);
 }
 
 
@@ -2512,12 +1985,6 @@ return addWrite(ID_TST_DigOut_16, &value);
 }
 
 
-int getStatus_TST_DigOut_16()
-{
-return getStatus(ID_TST_DigOut_16);
-}
-
-
 int doWrite_VAL_DigOut_1(int value)
 {
 return doWrite(ID_VAL_DigOut_1,  &value);
@@ -2527,12 +1994,6 @@ return doWrite(ID_VAL_DigOut_1,  &value);
 int addWrite_VAL_DigOut_1(int value)
 {
 return addWrite(ID_VAL_DigOut_1, &value);
-}
-
-
-int getStatus_VAL_DigOut_1()
-{
-return getStatus(ID_VAL_DigOut_1);
 }
 
 
@@ -2548,12 +2009,6 @@ return addWrite(ID_VAL_DigOut_2, &value);
 }
 
 
-int getStatus_VAL_DigOut_2()
-{
-return getStatus(ID_VAL_DigOut_2);
-}
-
-
 int doWrite_VAL_DigOut_3(int value)
 {
 return doWrite(ID_VAL_DigOut_3,  &value);
@@ -2563,12 +2018,6 @@ return doWrite(ID_VAL_DigOut_3,  &value);
 int addWrite_VAL_DigOut_3(int value)
 {
 return addWrite(ID_VAL_DigOut_3, &value);
-}
-
-
-int getStatus_VAL_DigOut_3()
-{
-return getStatus(ID_VAL_DigOut_3);
 }
 
 
@@ -2584,12 +2033,6 @@ return addWrite(ID_VAL_DigOut_4, &value);
 }
 
 
-int getStatus_VAL_DigOut_4()
-{
-return getStatus(ID_VAL_DigOut_4);
-}
-
-
 int doWrite_VAL_DigOut_5(int value)
 {
 return doWrite(ID_VAL_DigOut_5,  &value);
@@ -2599,12 +2042,6 @@ return doWrite(ID_VAL_DigOut_5,  &value);
 int addWrite_VAL_DigOut_5(int value)
 {
 return addWrite(ID_VAL_DigOut_5, &value);
-}
-
-
-int getStatus_VAL_DigOut_5()
-{
-return getStatus(ID_VAL_DigOut_5);
 }
 
 
@@ -2620,12 +2057,6 @@ return addWrite(ID_VAL_DigOut_6, &value);
 }
 
 
-int getStatus_VAL_DigOut_6()
-{
-return getStatus(ID_VAL_DigOut_6);
-}
-
-
 int doWrite_VAL_DigOut_7(int value)
 {
 return doWrite(ID_VAL_DigOut_7,  &value);
@@ -2635,12 +2066,6 @@ return doWrite(ID_VAL_DigOut_7,  &value);
 int addWrite_VAL_DigOut_7(int value)
 {
 return addWrite(ID_VAL_DigOut_7, &value);
-}
-
-
-int getStatus_VAL_DigOut_7()
-{
-return getStatus(ID_VAL_DigOut_7);
 }
 
 
@@ -2656,12 +2081,6 @@ return addWrite(ID_VAL_DigOut_8, &value);
 }
 
 
-int getStatus_VAL_DigOut_8()
-{
-return getStatus(ID_VAL_DigOut_8);
-}
-
-
 int doWrite_VAL_DigOut_9(int value)
 {
 return doWrite(ID_VAL_DigOut_9,  &value);
@@ -2671,12 +2090,6 @@ return doWrite(ID_VAL_DigOut_9,  &value);
 int addWrite_VAL_DigOut_9(int value)
 {
 return addWrite(ID_VAL_DigOut_9, &value);
-}
-
-
-int getStatus_VAL_DigOut_9()
-{
-return getStatus(ID_VAL_DigOut_9);
 }
 
 
@@ -2692,12 +2105,6 @@ return addWrite(ID_VAL_DigOut_10, &value);
 }
 
 
-int getStatus_VAL_DigOut_10()
-{
-return getStatus(ID_VAL_DigOut_10);
-}
-
-
 int doWrite_VAL_DigOut_11(int value)
 {
 return doWrite(ID_VAL_DigOut_11,  &value);
@@ -2707,12 +2114,6 @@ return doWrite(ID_VAL_DigOut_11,  &value);
 int addWrite_VAL_DigOut_11(int value)
 {
 return addWrite(ID_VAL_DigOut_11, &value);
-}
-
-
-int getStatus_VAL_DigOut_11()
-{
-return getStatus(ID_VAL_DigOut_11);
 }
 
 
@@ -2728,12 +2129,6 @@ return addWrite(ID_VAL_DigOut_12, &value);
 }
 
 
-int getStatus_VAL_DigOut_12()
-{
-return getStatus(ID_VAL_DigOut_12);
-}
-
-
 int doWrite_VAL_DigOut_13(int value)
 {
 return doWrite(ID_VAL_DigOut_13,  &value);
@@ -2743,12 +2138,6 @@ return doWrite(ID_VAL_DigOut_13,  &value);
 int addWrite_VAL_DigOut_13(int value)
 {
 return addWrite(ID_VAL_DigOut_13, &value);
-}
-
-
-int getStatus_VAL_DigOut_13()
-{
-return getStatus(ID_VAL_DigOut_13);
 }
 
 
@@ -2764,12 +2153,6 @@ return addWrite(ID_VAL_DigOut_14, &value);
 }
 
 
-int getStatus_VAL_DigOut_14()
-{
-return getStatus(ID_VAL_DigOut_14);
-}
-
-
 int doWrite_VAL_DigOut_15(int value)
 {
 return doWrite(ID_VAL_DigOut_15,  &value);
@@ -2779,12 +2162,6 @@ return doWrite(ID_VAL_DigOut_15,  &value);
 int addWrite_VAL_DigOut_15(int value)
 {
 return addWrite(ID_VAL_DigOut_15, &value);
-}
-
-
-int getStatus_VAL_DigOut_15()
-{
-return getStatus(ID_VAL_DigOut_15);
 }
 
 
@@ -2800,12 +2177,6 @@ return addWrite(ID_VAL_DigOut_16, &value);
 }
 
 
-int getStatus_VAL_DigOut_16()
-{
-return getStatus(ID_VAL_DigOut_16);
-}
-
-
 int doWrite_RES_DigOut_1(int value)
 {
 return doWrite(ID_RES_DigOut_1,  &value);
@@ -2815,12 +2186,6 @@ return doWrite(ID_RES_DigOut_1,  &value);
 int addWrite_RES_DigOut_1(int value)
 {
 return addWrite(ID_RES_DigOut_1, &value);
-}
-
-
-int getStatus_RES_DigOut_1()
-{
-return getStatus(ID_RES_DigOut_1);
 }
 
 
@@ -2836,12 +2201,6 @@ return addWrite(ID_RES_DigOut_2, &value);
 }
 
 
-int getStatus_RES_DigOut_2()
-{
-return getStatus(ID_RES_DigOut_2);
-}
-
-
 int doWrite_RES_DigOut_3(int value)
 {
 return doWrite(ID_RES_DigOut_3,  &value);
@@ -2851,12 +2210,6 @@ return doWrite(ID_RES_DigOut_3,  &value);
 int addWrite_RES_DigOut_3(int value)
 {
 return addWrite(ID_RES_DigOut_3, &value);
-}
-
-
-int getStatus_RES_DigOut_3()
-{
-return getStatus(ID_RES_DigOut_3);
 }
 
 
@@ -2872,12 +2225,6 @@ return addWrite(ID_RES_DigOut_4, &value);
 }
 
 
-int getStatus_RES_DigOut_4()
-{
-return getStatus(ID_RES_DigOut_4);
-}
-
-
 int doWrite_RES_DigOut_5(int value)
 {
 return doWrite(ID_RES_DigOut_5,  &value);
@@ -2887,12 +2234,6 @@ return doWrite(ID_RES_DigOut_5,  &value);
 int addWrite_RES_DigOut_5(int value)
 {
 return addWrite(ID_RES_DigOut_5, &value);
-}
-
-
-int getStatus_RES_DigOut_5()
-{
-return getStatus(ID_RES_DigOut_5);
 }
 
 
@@ -2908,12 +2249,6 @@ return addWrite(ID_RES_DigOut_6, &value);
 }
 
 
-int getStatus_RES_DigOut_6()
-{
-return getStatus(ID_RES_DigOut_6);
-}
-
-
 int doWrite_RES_DigOut_7(int value)
 {
 return doWrite(ID_RES_DigOut_7,  &value);
@@ -2923,12 +2258,6 @@ return doWrite(ID_RES_DigOut_7,  &value);
 int addWrite_RES_DigOut_7(int value)
 {
 return addWrite(ID_RES_DigOut_7, &value);
-}
-
-
-int getStatus_RES_DigOut_7()
-{
-return getStatus(ID_RES_DigOut_7);
 }
 
 
@@ -2944,12 +2273,6 @@ return addWrite(ID_RES_DigOut_8, &value);
 }
 
 
-int getStatus_RES_DigOut_8()
-{
-return getStatus(ID_RES_DigOut_8);
-}
-
-
 int doWrite_RES_DigOut_9(int value)
 {
 return doWrite(ID_RES_DigOut_9,  &value);
@@ -2959,12 +2282,6 @@ return doWrite(ID_RES_DigOut_9,  &value);
 int addWrite_RES_DigOut_9(int value)
 {
 return addWrite(ID_RES_DigOut_9, &value);
-}
-
-
-int getStatus_RES_DigOut_9()
-{
-return getStatus(ID_RES_DigOut_9);
 }
 
 
@@ -2980,12 +2297,6 @@ return addWrite(ID_RES_DigOut_10, &value);
 }
 
 
-int getStatus_RES_DigOut_10()
-{
-return getStatus(ID_RES_DigOut_10);
-}
-
-
 int doWrite_RES_DigOut_11(int value)
 {
 return doWrite(ID_RES_DigOut_11,  &value);
@@ -2995,12 +2306,6 @@ return doWrite(ID_RES_DigOut_11,  &value);
 int addWrite_RES_DigOut_11(int value)
 {
 return addWrite(ID_RES_DigOut_11, &value);
-}
-
-
-int getStatus_RES_DigOut_11()
-{
-return getStatus(ID_RES_DigOut_11);
 }
 
 
@@ -3016,12 +2321,6 @@ return addWrite(ID_RES_DigOut_12, &value);
 }
 
 
-int getStatus_RES_DigOut_12()
-{
-return getStatus(ID_RES_DigOut_12);
-}
-
-
 int doWrite_RES_DigOut_13(int value)
 {
 return doWrite(ID_RES_DigOut_13,  &value);
@@ -3031,12 +2330,6 @@ return doWrite(ID_RES_DigOut_13,  &value);
 int addWrite_RES_DigOut_13(int value)
 {
 return addWrite(ID_RES_DigOut_13, &value);
-}
-
-
-int getStatus_RES_DigOut_13()
-{
-return getStatus(ID_RES_DigOut_13);
 }
 
 
@@ -3052,12 +2345,6 @@ return addWrite(ID_RES_DigOut_14, &value);
 }
 
 
-int getStatus_RES_DigOut_14()
-{
-return getStatus(ID_RES_DigOut_14);
-}
-
-
 int doWrite_RES_DigOut_15(int value)
 {
 return doWrite(ID_RES_DigOut_15,  &value);
@@ -3067,12 +2354,6 @@ return doWrite(ID_RES_DigOut_15,  &value);
 int addWrite_RES_DigOut_15(int value)
 {
 return addWrite(ID_RES_DigOut_15, &value);
-}
-
-
-int getStatus_RES_DigOut_15()
-{
-return getStatus(ID_RES_DigOut_15);
 }
 
 
@@ -3088,12 +2369,6 @@ return addWrite(ID_RES_DigOut_16, &value);
 }
 
 
-int getStatus_RES_DigOut_16()
-{
-return getStatus(ID_RES_DigOut_16);
-}
-
-
 int doWrite_OK_DigOut_1(int value)
 {
 return doWrite(ID_OK_DigOut_1,  &value);
@@ -3103,12 +2378,6 @@ return doWrite(ID_OK_DigOut_1,  &value);
 int addWrite_OK_DigOut_1(int value)
 {
 return addWrite(ID_OK_DigOut_1, &value);
-}
-
-
-int getStatus_OK_DigOut_1()
-{
-return getStatus(ID_OK_DigOut_1);
 }
 
 
@@ -3124,12 +2393,6 @@ return addWrite(ID_OK_DigOut_2, &value);
 }
 
 
-int getStatus_OK_DigOut_2()
-{
-return getStatus(ID_OK_DigOut_2);
-}
-
-
 int doWrite_OK_DigOut_3(int value)
 {
 return doWrite(ID_OK_DigOut_3,  &value);
@@ -3139,12 +2402,6 @@ return doWrite(ID_OK_DigOut_3,  &value);
 int addWrite_OK_DigOut_3(int value)
 {
 return addWrite(ID_OK_DigOut_3, &value);
-}
-
-
-int getStatus_OK_DigOut_3()
-{
-return getStatus(ID_OK_DigOut_3);
 }
 
 
@@ -3160,12 +2417,6 @@ return addWrite(ID_OK_DigOut_4, &value);
 }
 
 
-int getStatus_OK_DigOut_4()
-{
-return getStatus(ID_OK_DigOut_4);
-}
-
-
 int doWrite_OK_DigOut_5(int value)
 {
 return doWrite(ID_OK_DigOut_5,  &value);
@@ -3175,12 +2426,6 @@ return doWrite(ID_OK_DigOut_5,  &value);
 int addWrite_OK_DigOut_5(int value)
 {
 return addWrite(ID_OK_DigOut_5, &value);
-}
-
-
-int getStatus_OK_DigOut_5()
-{
-return getStatus(ID_OK_DigOut_5);
 }
 
 
@@ -3196,12 +2441,6 @@ return addWrite(ID_OK_DigOut_6, &value);
 }
 
 
-int getStatus_OK_DigOut_6()
-{
-return getStatus(ID_OK_DigOut_6);
-}
-
-
 int doWrite_OK_DigOut_7(int value)
 {
 return doWrite(ID_OK_DigOut_7,  &value);
@@ -3211,12 +2450,6 @@ return doWrite(ID_OK_DigOut_7,  &value);
 int addWrite_OK_DigOut_7(int value)
 {
 return addWrite(ID_OK_DigOut_7, &value);
-}
-
-
-int getStatus_OK_DigOut_7()
-{
-return getStatus(ID_OK_DigOut_7);
 }
 
 
@@ -3232,12 +2465,6 @@ return addWrite(ID_OK_DigOut_8, &value);
 }
 
 
-int getStatus_OK_DigOut_8()
-{
-return getStatus(ID_OK_DigOut_8);
-}
-
-
 int doWrite_OK_DigOut_9(int value)
 {
 return doWrite(ID_OK_DigOut_9,  &value);
@@ -3247,12 +2474,6 @@ return doWrite(ID_OK_DigOut_9,  &value);
 int addWrite_OK_DigOut_9(int value)
 {
 return addWrite(ID_OK_DigOut_9, &value);
-}
-
-
-int getStatus_OK_DigOut_9()
-{
-return getStatus(ID_OK_DigOut_9);
 }
 
 
@@ -3268,12 +2489,6 @@ return addWrite(ID_OK_DigOut_10, &value);
 }
 
 
-int getStatus_OK_DigOut_10()
-{
-return getStatus(ID_OK_DigOut_10);
-}
-
-
 int doWrite_OK_DigOut_11(int value)
 {
 return doWrite(ID_OK_DigOut_11,  &value);
@@ -3283,12 +2498,6 @@ return doWrite(ID_OK_DigOut_11,  &value);
 int addWrite_OK_DigOut_11(int value)
 {
 return addWrite(ID_OK_DigOut_11, &value);
-}
-
-
-int getStatus_OK_DigOut_11()
-{
-return getStatus(ID_OK_DigOut_11);
 }
 
 
@@ -3304,12 +2513,6 @@ return addWrite(ID_OK_DigOut_12, &value);
 }
 
 
-int getStatus_OK_DigOut_12()
-{
-return getStatus(ID_OK_DigOut_12);
-}
-
-
 int doWrite_OK_DigOut_13(int value)
 {
 return doWrite(ID_OK_DigOut_13,  &value);
@@ -3319,12 +2522,6 @@ return doWrite(ID_OK_DigOut_13,  &value);
 int addWrite_OK_DigOut_13(int value)
 {
 return addWrite(ID_OK_DigOut_13, &value);
-}
-
-
-int getStatus_OK_DigOut_13()
-{
-return getStatus(ID_OK_DigOut_13);
 }
 
 
@@ -3340,12 +2537,6 @@ return addWrite(ID_OK_DigOut_14, &value);
 }
 
 
-int getStatus_OK_DigOut_14()
-{
-return getStatus(ID_OK_DigOut_14);
-}
-
-
 int doWrite_OK_DigOut_15(int value)
 {
 return doWrite(ID_OK_DigOut_15,  &value);
@@ -3355,12 +2546,6 @@ return doWrite(ID_OK_DigOut_15,  &value);
 int addWrite_OK_DigOut_15(int value)
 {
 return addWrite(ID_OK_DigOut_15, &value);
-}
-
-
-int getStatus_OK_DigOut_15()
-{
-return getStatus(ID_OK_DigOut_15);
 }
 
 
@@ -3376,12 +2561,6 @@ return addWrite(ID_OK_DigOut_16, &value);
 }
 
 
-int getStatus_OK_DigOut_16()
-{
-return getStatus(ID_OK_DigOut_16);
-}
-
-
 int doWrite_TST_AnIn_1(int value)
 {
 return doWrite(ID_TST_AnIn_1,  &value);
@@ -3391,12 +2570,6 @@ return doWrite(ID_TST_AnIn_1,  &value);
 int addWrite_TST_AnIn_1(int value)
 {
 return addWrite(ID_TST_AnIn_1, &value);
-}
-
-
-int getStatus_TST_AnIn_1()
-{
-return getStatus(ID_TST_AnIn_1);
 }
 
 
@@ -3412,12 +2585,6 @@ return addWrite(ID_TST_AnIn_2, &value);
 }
 
 
-int getStatus_TST_AnIn_2()
-{
-return getStatus(ID_TST_AnIn_2);
-}
-
-
 int doWrite_TST_AnIn_3(int value)
 {
 return doWrite(ID_TST_AnIn_3,  &value);
@@ -3427,12 +2594,6 @@ return doWrite(ID_TST_AnIn_3,  &value);
 int addWrite_TST_AnIn_3(int value)
 {
 return addWrite(ID_TST_AnIn_3, &value);
-}
-
-
-int getStatus_TST_AnIn_3()
-{
-return getStatus(ID_TST_AnIn_3);
 }
 
 
@@ -3448,12 +2609,6 @@ return addWrite(ID_TST_AnIn_4, &value);
 }
 
 
-int getStatus_TST_AnIn_4()
-{
-return getStatus(ID_TST_AnIn_4);
-}
-
-
 int doWrite_TST_AnIn_5(int value)
 {
 return doWrite(ID_TST_AnIn_5,  &value);
@@ -3463,12 +2618,6 @@ return doWrite(ID_TST_AnIn_5,  &value);
 int addWrite_TST_AnIn_5(int value)
 {
 return addWrite(ID_TST_AnIn_5, &value);
-}
-
-
-int getStatus_TST_AnIn_5()
-{
-return getStatus(ID_TST_AnIn_5);
 }
 
 
@@ -3484,12 +2633,6 @@ return addWrite(ID_TST_AnIn_6, &value);
 }
 
 
-int getStatus_TST_AnIn_6()
-{
-return getStatus(ID_TST_AnIn_6);
-}
-
-
 int doWrite_TST_AnIn_7(int value)
 {
 return doWrite(ID_TST_AnIn_7,  &value);
@@ -3499,12 +2642,6 @@ return doWrite(ID_TST_AnIn_7,  &value);
 int addWrite_TST_AnIn_7(int value)
 {
 return addWrite(ID_TST_AnIn_7, &value);
-}
-
-
-int getStatus_TST_AnIn_7()
-{
-return getStatus(ID_TST_AnIn_7);
 }
 
 
@@ -3520,12 +2657,6 @@ return addWrite(ID_TST_AnIn_8, &value);
 }
 
 
-int getStatus_TST_AnIn_8()
-{
-return getStatus(ID_TST_AnIn_8);
-}
-
-
 int doWrite_TST_AnIn_9(int value)
 {
 return doWrite(ID_TST_AnIn_9,  &value);
@@ -3535,12 +2666,6 @@ return doWrite(ID_TST_AnIn_9,  &value);
 int addWrite_TST_AnIn_9(int value)
 {
 return addWrite(ID_TST_AnIn_9, &value);
-}
-
-
-int getStatus_TST_AnIn_9()
-{
-return getStatus(ID_TST_AnIn_9);
 }
 
 
@@ -3556,12 +2681,6 @@ return addWrite(ID_TST_AnIn_10, &value);
 }
 
 
-int getStatus_TST_AnIn_10()
-{
-return getStatus(ID_TST_AnIn_10);
-}
-
-
 int doWrite_TST_AnIn_11(int value)
 {
 return doWrite(ID_TST_AnIn_11,  &value);
@@ -3571,12 +2690,6 @@ return doWrite(ID_TST_AnIn_11,  &value);
 int addWrite_TST_AnIn_11(int value)
 {
 return addWrite(ID_TST_AnIn_11, &value);
-}
-
-
-int getStatus_TST_AnIn_11()
-{
-return getStatus(ID_TST_AnIn_11);
 }
 
 
@@ -3592,12 +2705,6 @@ return addWrite(ID_TST_AnIn_12, &value);
 }
 
 
-int getStatus_TST_AnIn_12()
-{
-return getStatus(ID_TST_AnIn_12);
-}
-
-
 int doWrite_VAL_AnIn_1(int16_t value)
 {
 return doWrite(ID_VAL_AnIn_1,  &value);
@@ -3607,12 +2714,6 @@ return doWrite(ID_VAL_AnIn_1,  &value);
 int addWrite_VAL_AnIn_1(int16_t value)
 {
 return addWrite(ID_VAL_AnIn_1, &value);
-}
-
-
-int getStatus_VAL_AnIn_1()
-{
-return getStatus(ID_VAL_AnIn_1);
 }
 
 
@@ -3628,12 +2729,6 @@ return addWrite(ID_VAL_AnIn_2, &value);
 }
 
 
-int getStatus_VAL_AnIn_2()
-{
-return getStatus(ID_VAL_AnIn_2);
-}
-
-
 int doWrite_VAL_AnIn_3(int16_t value)
 {
 return doWrite(ID_VAL_AnIn_3,  &value);
@@ -3643,12 +2738,6 @@ return doWrite(ID_VAL_AnIn_3,  &value);
 int addWrite_VAL_AnIn_3(int16_t value)
 {
 return addWrite(ID_VAL_AnIn_3, &value);
-}
-
-
-int getStatus_VAL_AnIn_3()
-{
-return getStatus(ID_VAL_AnIn_3);
 }
 
 
@@ -3664,12 +2753,6 @@ return addWrite(ID_VAL_AnIn_4, &value);
 }
 
 
-int getStatus_VAL_AnIn_4()
-{
-return getStatus(ID_VAL_AnIn_4);
-}
-
-
 int doWrite_VAL_AnIn_5(int16_t value)
 {
 return doWrite(ID_VAL_AnIn_5,  &value);
@@ -3679,12 +2762,6 @@ return doWrite(ID_VAL_AnIn_5,  &value);
 int addWrite_VAL_AnIn_5(int16_t value)
 {
 return addWrite(ID_VAL_AnIn_5, &value);
-}
-
-
-int getStatus_VAL_AnIn_5()
-{
-return getStatus(ID_VAL_AnIn_5);
 }
 
 
@@ -3700,12 +2777,6 @@ return addWrite(ID_VAL_AnIn_6, &value);
 }
 
 
-int getStatus_VAL_AnIn_6()
-{
-return getStatus(ID_VAL_AnIn_6);
-}
-
-
 int doWrite_VAL_AnIn_7(int16_t value)
 {
 return doWrite(ID_VAL_AnIn_7,  &value);
@@ -3715,12 +2786,6 @@ return doWrite(ID_VAL_AnIn_7,  &value);
 int addWrite_VAL_AnIn_7(int16_t value)
 {
 return addWrite(ID_VAL_AnIn_7, &value);
-}
-
-
-int getStatus_VAL_AnIn_7()
-{
-return getStatus(ID_VAL_AnIn_7);
 }
 
 
@@ -3736,12 +2801,6 @@ return addWrite(ID_VAL_AnIn_8, &value);
 }
 
 
-int getStatus_VAL_AnIn_8()
-{
-return getStatus(ID_VAL_AnIn_8);
-}
-
-
 int doWrite_VAL_AnIn_9(int16_t value)
 {
 return doWrite(ID_VAL_AnIn_9,  &value);
@@ -3751,12 +2810,6 @@ return doWrite(ID_VAL_AnIn_9,  &value);
 int addWrite_VAL_AnIn_9(int16_t value)
 {
 return addWrite(ID_VAL_AnIn_9, &value);
-}
-
-
-int getStatus_VAL_AnIn_9()
-{
-return getStatus(ID_VAL_AnIn_9);
 }
 
 
@@ -3772,12 +2825,6 @@ return addWrite(ID_VAL_AnIn_10, &value);
 }
 
 
-int getStatus_VAL_AnIn_10()
-{
-return getStatus(ID_VAL_AnIn_10);
-}
-
-
 int doWrite_VAL_AnIn_11(int16_t value)
 {
 return doWrite(ID_VAL_AnIn_11,  &value);
@@ -3787,12 +2834,6 @@ return doWrite(ID_VAL_AnIn_11,  &value);
 int addWrite_VAL_AnIn_11(int16_t value)
 {
 return addWrite(ID_VAL_AnIn_11, &value);
-}
-
-
-int getStatus_VAL_AnIn_11()
-{
-return getStatus(ID_VAL_AnIn_11);
 }
 
 
@@ -3808,12 +2849,6 @@ return addWrite(ID_VAL_AnIn_12, &value);
 }
 
 
-int getStatus_VAL_AnIn_12()
-{
-return getStatus(ID_VAL_AnIn_12);
-}
-
-
 int doWrite_VAL_AnInConf_1(u_int16_t value)
 {
 return doWrite(ID_VAL_AnInConf_1,  &value);
@@ -3823,12 +2858,6 @@ return doWrite(ID_VAL_AnInConf_1,  &value);
 int addWrite_VAL_AnInConf_1(u_int16_t value)
 {
 return addWrite(ID_VAL_AnInConf_1, &value);
-}
-
-
-int getStatus_VAL_AnInConf_1()
-{
-return getStatus(ID_VAL_AnInConf_1);
 }
 
 
@@ -3844,12 +2873,6 @@ return addWrite(ID_VAL_AnInConf_2, &value);
 }
 
 
-int getStatus_VAL_AnInConf_2()
-{
-return getStatus(ID_VAL_AnInConf_2);
-}
-
-
 int doWrite_VAL_AnInConf_3(u_int16_t value)
 {
 return doWrite(ID_VAL_AnInConf_3,  &value);
@@ -3859,12 +2882,6 @@ return doWrite(ID_VAL_AnInConf_3,  &value);
 int addWrite_VAL_AnInConf_3(u_int16_t value)
 {
 return addWrite(ID_VAL_AnInConf_3, &value);
-}
-
-
-int getStatus_VAL_AnInConf_3()
-{
-return getStatus(ID_VAL_AnInConf_3);
 }
 
 
@@ -3880,12 +2897,6 @@ return addWrite(ID_VAL_AnInConf_4, &value);
 }
 
 
-int getStatus_VAL_AnInConf_4()
-{
-return getStatus(ID_VAL_AnInConf_4);
-}
-
-
 int doWrite_VAL_AnInConf_5(u_int16_t value)
 {
 return doWrite(ID_VAL_AnInConf_5,  &value);
@@ -3895,12 +2906,6 @@ return doWrite(ID_VAL_AnInConf_5,  &value);
 int addWrite_VAL_AnInConf_5(u_int16_t value)
 {
 return addWrite(ID_VAL_AnInConf_5, &value);
-}
-
-
-int getStatus_VAL_AnInConf_5()
-{
-return getStatus(ID_VAL_AnInConf_5);
 }
 
 
@@ -3916,12 +2921,6 @@ return addWrite(ID_VAL_AnInConf_6, &value);
 }
 
 
-int getStatus_VAL_AnInConf_6()
-{
-return getStatus(ID_VAL_AnInConf_6);
-}
-
-
 int doWrite_VAL_AnInConf_7(u_int16_t value)
 {
 return doWrite(ID_VAL_AnInConf_7,  &value);
@@ -3931,12 +2930,6 @@ return doWrite(ID_VAL_AnInConf_7,  &value);
 int addWrite_VAL_AnInConf_7(u_int16_t value)
 {
 return addWrite(ID_VAL_AnInConf_7, &value);
-}
-
-
-int getStatus_VAL_AnInConf_7()
-{
-return getStatus(ID_VAL_AnInConf_7);
 }
 
 
@@ -3952,12 +2945,6 @@ return addWrite(ID_VAL_AnInConf_8, &value);
 }
 
 
-int getStatus_VAL_AnInConf_8()
-{
-return getStatus(ID_VAL_AnInConf_8);
-}
-
-
 int doWrite_VAL_AnInConf_9(u_int16_t value)
 {
 return doWrite(ID_VAL_AnInConf_9,  &value);
@@ -3967,12 +2954,6 @@ return doWrite(ID_VAL_AnInConf_9,  &value);
 int addWrite_VAL_AnInConf_9(u_int16_t value)
 {
 return addWrite(ID_VAL_AnInConf_9, &value);
-}
-
-
-int getStatus_VAL_AnInConf_9()
-{
-return getStatus(ID_VAL_AnInConf_9);
 }
 
 
@@ -3988,12 +2969,6 @@ return addWrite(ID_VAL_AnInConf_10, &value);
 }
 
 
-int getStatus_VAL_AnInConf_10()
-{
-return getStatus(ID_VAL_AnInConf_10);
-}
-
-
 int doWrite_VAL_AnInConf_11(u_int16_t value)
 {
 return doWrite(ID_VAL_AnInConf_11,  &value);
@@ -4003,12 +2978,6 @@ return doWrite(ID_VAL_AnInConf_11,  &value);
 int addWrite_VAL_AnInConf_11(u_int16_t value)
 {
 return addWrite(ID_VAL_AnInConf_11, &value);
-}
-
-
-int getStatus_VAL_AnInConf_11()
-{
-return getStatus(ID_VAL_AnInConf_11);
 }
 
 
@@ -4024,12 +2993,6 @@ return addWrite(ID_VAL_AnInConf_12, &value);
 }
 
 
-int getStatus_VAL_AnInConf_12()
-{
-return getStatus(ID_VAL_AnInConf_12);
-}
-
-
 int doWrite_VAL_AnInFltr_1(u_int16_t value)
 {
 return doWrite(ID_VAL_AnInFltr_1,  &value);
@@ -4039,12 +3002,6 @@ return doWrite(ID_VAL_AnInFltr_1,  &value);
 int addWrite_VAL_AnInFltr_1(u_int16_t value)
 {
 return addWrite(ID_VAL_AnInFltr_1, &value);
-}
-
-
-int getStatus_VAL_AnInFltr_1()
-{
-return getStatus(ID_VAL_AnInFltr_1);
 }
 
 
@@ -4060,12 +3017,6 @@ return addWrite(ID_VAL_AnInFltr_2, &value);
 }
 
 
-int getStatus_VAL_AnInFltr_2()
-{
-return getStatus(ID_VAL_AnInFltr_2);
-}
-
-
 int doWrite_VAL_AnInFltr_3(u_int16_t value)
 {
 return doWrite(ID_VAL_AnInFltr_3,  &value);
@@ -4075,12 +3026,6 @@ return doWrite(ID_VAL_AnInFltr_3,  &value);
 int addWrite_VAL_AnInFltr_3(u_int16_t value)
 {
 return addWrite(ID_VAL_AnInFltr_3, &value);
-}
-
-
-int getStatus_VAL_AnInFltr_3()
-{
-return getStatus(ID_VAL_AnInFltr_3);
 }
 
 
@@ -4096,12 +3041,6 @@ return addWrite(ID_VAL_AnInFltr_4, &value);
 }
 
 
-int getStatus_VAL_AnInFltr_4()
-{
-return getStatus(ID_VAL_AnInFltr_4);
-}
-
-
 int doWrite_VAL_AnInFltr_5(u_int16_t value)
 {
 return doWrite(ID_VAL_AnInFltr_5,  &value);
@@ -4111,12 +3050,6 @@ return doWrite(ID_VAL_AnInFltr_5,  &value);
 int addWrite_VAL_AnInFltr_5(u_int16_t value)
 {
 return addWrite(ID_VAL_AnInFltr_5, &value);
-}
-
-
-int getStatus_VAL_AnInFltr_5()
-{
-return getStatus(ID_VAL_AnInFltr_5);
 }
 
 
@@ -4132,12 +3065,6 @@ return addWrite(ID_VAL_AnInFltr_6, &value);
 }
 
 
-int getStatus_VAL_AnInFltr_6()
-{
-return getStatus(ID_VAL_AnInFltr_6);
-}
-
-
 int doWrite_VAL_AnInFltr_7(u_int16_t value)
 {
 return doWrite(ID_VAL_AnInFltr_7,  &value);
@@ -4147,12 +3074,6 @@ return doWrite(ID_VAL_AnInFltr_7,  &value);
 int addWrite_VAL_AnInFltr_7(u_int16_t value)
 {
 return addWrite(ID_VAL_AnInFltr_7, &value);
-}
-
-
-int getStatus_VAL_AnInFltr_7()
-{
-return getStatus(ID_VAL_AnInFltr_7);
 }
 
 
@@ -4168,12 +3089,6 @@ return addWrite(ID_VAL_AnInFltr_8, &value);
 }
 
 
-int getStatus_VAL_AnInFltr_8()
-{
-return getStatus(ID_VAL_AnInFltr_8);
-}
-
-
 int doWrite_VAL_AnInFltr_9(u_int16_t value)
 {
 return doWrite(ID_VAL_AnInFltr_9,  &value);
@@ -4183,12 +3098,6 @@ return doWrite(ID_VAL_AnInFltr_9,  &value);
 int addWrite_VAL_AnInFltr_9(u_int16_t value)
 {
 return addWrite(ID_VAL_AnInFltr_9, &value);
-}
-
-
-int getStatus_VAL_AnInFltr_9()
-{
-return getStatus(ID_VAL_AnInFltr_9);
 }
 
 
@@ -4204,12 +3113,6 @@ return addWrite(ID_VAL_AnInFltr_10, &value);
 }
 
 
-int getStatus_VAL_AnInFltr_10()
-{
-return getStatus(ID_VAL_AnInFltr_10);
-}
-
-
 int doWrite_VAL_AnInFltr_11(u_int16_t value)
 {
 return doWrite(ID_VAL_AnInFltr_11,  &value);
@@ -4219,12 +3122,6 @@ return doWrite(ID_VAL_AnInFltr_11,  &value);
 int addWrite_VAL_AnInFltr_11(u_int16_t value)
 {
 return addWrite(ID_VAL_AnInFltr_11, &value);
-}
-
-
-int getStatus_VAL_AnInFltr_11()
-{
-return getStatus(ID_VAL_AnInFltr_11);
 }
 
 
@@ -4240,12 +3137,6 @@ return addWrite(ID_VAL_AnInFltr_12, &value);
 }
 
 
-int getStatus_VAL_AnInFltr_12()
-{
-return getStatus(ID_VAL_AnInFltr_12);
-}
-
-
 int doWrite_RES_AnIn_1(int16_t value)
 {
 return doWrite(ID_RES_AnIn_1,  &value);
@@ -4255,12 +3146,6 @@ return doWrite(ID_RES_AnIn_1,  &value);
 int addWrite_RES_AnIn_1(int16_t value)
 {
 return addWrite(ID_RES_AnIn_1, &value);
-}
-
-
-int getStatus_RES_AnIn_1()
-{
-return getStatus(ID_RES_AnIn_1);
 }
 
 
@@ -4276,12 +3161,6 @@ return addWrite(ID_RES_AnIn_2, &value);
 }
 
 
-int getStatus_RES_AnIn_2()
-{
-return getStatus(ID_RES_AnIn_2);
-}
-
-
 int doWrite_RES_AnIn_3(int16_t value)
 {
 return doWrite(ID_RES_AnIn_3,  &value);
@@ -4291,12 +3170,6 @@ return doWrite(ID_RES_AnIn_3,  &value);
 int addWrite_RES_AnIn_3(int16_t value)
 {
 return addWrite(ID_RES_AnIn_3, &value);
-}
-
-
-int getStatus_RES_AnIn_3()
-{
-return getStatus(ID_RES_AnIn_3);
 }
 
 
@@ -4312,12 +3185,6 @@ return addWrite(ID_RES_AnIn_4, &value);
 }
 
 
-int getStatus_RES_AnIn_4()
-{
-return getStatus(ID_RES_AnIn_4);
-}
-
-
 int doWrite_RES_AnIn_5(int16_t value)
 {
 return doWrite(ID_RES_AnIn_5,  &value);
@@ -4327,12 +3194,6 @@ return doWrite(ID_RES_AnIn_5,  &value);
 int addWrite_RES_AnIn_5(int16_t value)
 {
 return addWrite(ID_RES_AnIn_5, &value);
-}
-
-
-int getStatus_RES_AnIn_5()
-{
-return getStatus(ID_RES_AnIn_5);
 }
 
 
@@ -4348,12 +3209,6 @@ return addWrite(ID_RES_AnIn_6, &value);
 }
 
 
-int getStatus_RES_AnIn_6()
-{
-return getStatus(ID_RES_AnIn_6);
-}
-
-
 int doWrite_RES_AnIn_7(int16_t value)
 {
 return doWrite(ID_RES_AnIn_7,  &value);
@@ -4363,12 +3218,6 @@ return doWrite(ID_RES_AnIn_7,  &value);
 int addWrite_RES_AnIn_7(int16_t value)
 {
 return addWrite(ID_RES_AnIn_7, &value);
-}
-
-
-int getStatus_RES_AnIn_7()
-{
-return getStatus(ID_RES_AnIn_7);
 }
 
 
@@ -4384,12 +3233,6 @@ return addWrite(ID_RES_AnIn_8, &value);
 }
 
 
-int getStatus_RES_AnIn_8()
-{
-return getStatus(ID_RES_AnIn_8);
-}
-
-
 int doWrite_RES_AnIn_9(int16_t value)
 {
 return doWrite(ID_RES_AnIn_9,  &value);
@@ -4399,12 +3242,6 @@ return doWrite(ID_RES_AnIn_9,  &value);
 int addWrite_RES_AnIn_9(int16_t value)
 {
 return addWrite(ID_RES_AnIn_9, &value);
-}
-
-
-int getStatus_RES_AnIn_9()
-{
-return getStatus(ID_RES_AnIn_9);
 }
 
 
@@ -4420,12 +3257,6 @@ return addWrite(ID_RES_AnIn_10, &value);
 }
 
 
-int getStatus_RES_AnIn_10()
-{
-return getStatus(ID_RES_AnIn_10);
-}
-
-
 int doWrite_RES_AnIn_11(int16_t value)
 {
 return doWrite(ID_RES_AnIn_11,  &value);
@@ -4435,12 +3266,6 @@ return doWrite(ID_RES_AnIn_11,  &value);
 int addWrite_RES_AnIn_11(int16_t value)
 {
 return addWrite(ID_RES_AnIn_11, &value);
-}
-
-
-int getStatus_RES_AnIn_11()
-{
-return getStatus(ID_RES_AnIn_11);
 }
 
 
@@ -4456,12 +3281,6 @@ return addWrite(ID_RES_AnIn_12, &value);
 }
 
 
-int getStatus_RES_AnIn_12()
-{
-return getStatus(ID_RES_AnIn_12);
-}
-
-
 int doWrite_RES_AnInStts_1(int16_t value)
 {
 return doWrite(ID_RES_AnInStts_1,  &value);
@@ -4471,12 +3290,6 @@ return doWrite(ID_RES_AnInStts_1,  &value);
 int addWrite_RES_AnInStts_1(int16_t value)
 {
 return addWrite(ID_RES_AnInStts_1, &value);
-}
-
-
-int getStatus_RES_AnInStts_1()
-{
-return getStatus(ID_RES_AnInStts_1);
 }
 
 
@@ -4492,12 +3305,6 @@ return addWrite(ID_RES_AnInStts_2, &value);
 }
 
 
-int getStatus_RES_AnInStts_2()
-{
-return getStatus(ID_RES_AnInStts_2);
-}
-
-
 int doWrite_RES_AnInStts_3(int16_t value)
 {
 return doWrite(ID_RES_AnInStts_3,  &value);
@@ -4507,12 +3314,6 @@ return doWrite(ID_RES_AnInStts_3,  &value);
 int addWrite_RES_AnInStts_3(int16_t value)
 {
 return addWrite(ID_RES_AnInStts_3, &value);
-}
-
-
-int getStatus_RES_AnInStts_3()
-{
-return getStatus(ID_RES_AnInStts_3);
 }
 
 
@@ -4528,12 +3329,6 @@ return addWrite(ID_RES_AnInStts_4, &value);
 }
 
 
-int getStatus_RES_AnInStts_4()
-{
-return getStatus(ID_RES_AnInStts_4);
-}
-
-
 int doWrite_RES_AnInStts_5(int16_t value)
 {
 return doWrite(ID_RES_AnInStts_5,  &value);
@@ -4543,12 +3338,6 @@ return doWrite(ID_RES_AnInStts_5,  &value);
 int addWrite_RES_AnInStts_5(int16_t value)
 {
 return addWrite(ID_RES_AnInStts_5, &value);
-}
-
-
-int getStatus_RES_AnInStts_5()
-{
-return getStatus(ID_RES_AnInStts_5);
 }
 
 
@@ -4564,12 +3353,6 @@ return addWrite(ID_RES_AnInStts_6, &value);
 }
 
 
-int getStatus_RES_AnInStts_6()
-{
-return getStatus(ID_RES_AnInStts_6);
-}
-
-
 int doWrite_RES_AnInStts_7(int16_t value)
 {
 return doWrite(ID_RES_AnInStts_7,  &value);
@@ -4579,12 +3362,6 @@ return doWrite(ID_RES_AnInStts_7,  &value);
 int addWrite_RES_AnInStts_7(int16_t value)
 {
 return addWrite(ID_RES_AnInStts_7, &value);
-}
-
-
-int getStatus_RES_AnInStts_7()
-{
-return getStatus(ID_RES_AnInStts_7);
 }
 
 
@@ -4600,12 +3377,6 @@ return addWrite(ID_RES_AnInStts_8, &value);
 }
 
 
-int getStatus_RES_AnInStts_8()
-{
-return getStatus(ID_RES_AnInStts_8);
-}
-
-
 int doWrite_RES_AnInStts_9(int16_t value)
 {
 return doWrite(ID_RES_AnInStts_9,  &value);
@@ -4615,12 +3386,6 @@ return doWrite(ID_RES_AnInStts_9,  &value);
 int addWrite_RES_AnInStts_9(int16_t value)
 {
 return addWrite(ID_RES_AnInStts_9, &value);
-}
-
-
-int getStatus_RES_AnInStts_9()
-{
-return getStatus(ID_RES_AnInStts_9);
 }
 
 
@@ -4636,12 +3401,6 @@ return addWrite(ID_RES_AnInStts_10, &value);
 }
 
 
-int getStatus_RES_AnInStts_10()
-{
-return getStatus(ID_RES_AnInStts_10);
-}
-
-
 int doWrite_RES_AnInStts_11(int16_t value)
 {
 return doWrite(ID_RES_AnInStts_11,  &value);
@@ -4651,12 +3410,6 @@ return doWrite(ID_RES_AnInStts_11,  &value);
 int addWrite_RES_AnInStts_11(int16_t value)
 {
 return addWrite(ID_RES_AnInStts_11, &value);
-}
-
-
-int getStatus_RES_AnInStts_11()
-{
-return getStatus(ID_RES_AnInStts_11);
 }
 
 
@@ -4672,12 +3425,6 @@ return addWrite(ID_RES_AnInStts_12, &value);
 }
 
 
-int getStatus_RES_AnInStts_12()
-{
-return getStatus(ID_RES_AnInStts_12);
-}
-
-
 int doWrite_OK_AnIn_1(int value)
 {
 return doWrite(ID_OK_AnIn_1,  &value);
@@ -4687,12 +3434,6 @@ return doWrite(ID_OK_AnIn_1,  &value);
 int addWrite_OK_AnIn_1(int value)
 {
 return addWrite(ID_OK_AnIn_1, &value);
-}
-
-
-int getStatus_OK_AnIn_1()
-{
-return getStatus(ID_OK_AnIn_1);
 }
 
 
@@ -4708,12 +3449,6 @@ return addWrite(ID_OK_AnIn_2, &value);
 }
 
 
-int getStatus_OK_AnIn_2()
-{
-return getStatus(ID_OK_AnIn_2);
-}
-
-
 int doWrite_OK_AnIn_3(int value)
 {
 return doWrite(ID_OK_AnIn_3,  &value);
@@ -4723,12 +3458,6 @@ return doWrite(ID_OK_AnIn_3,  &value);
 int addWrite_OK_AnIn_3(int value)
 {
 return addWrite(ID_OK_AnIn_3, &value);
-}
-
-
-int getStatus_OK_AnIn_3()
-{
-return getStatus(ID_OK_AnIn_3);
 }
 
 
@@ -4744,12 +3473,6 @@ return addWrite(ID_OK_AnIn_4, &value);
 }
 
 
-int getStatus_OK_AnIn_4()
-{
-return getStatus(ID_OK_AnIn_4);
-}
-
-
 int doWrite_OK_AnIn_5(int value)
 {
 return doWrite(ID_OK_AnIn_5,  &value);
@@ -4759,12 +3482,6 @@ return doWrite(ID_OK_AnIn_5,  &value);
 int addWrite_OK_AnIn_5(int value)
 {
 return addWrite(ID_OK_AnIn_5, &value);
-}
-
-
-int getStatus_OK_AnIn_5()
-{
-return getStatus(ID_OK_AnIn_5);
 }
 
 
@@ -4780,12 +3497,6 @@ return addWrite(ID_OK_AnIn_6, &value);
 }
 
 
-int getStatus_OK_AnIn_6()
-{
-return getStatus(ID_OK_AnIn_6);
-}
-
-
 int doWrite_OK_AnIn_7(int value)
 {
 return doWrite(ID_OK_AnIn_7,  &value);
@@ -4795,12 +3506,6 @@ return doWrite(ID_OK_AnIn_7,  &value);
 int addWrite_OK_AnIn_7(int value)
 {
 return addWrite(ID_OK_AnIn_7, &value);
-}
-
-
-int getStatus_OK_AnIn_7()
-{
-return getStatus(ID_OK_AnIn_7);
 }
 
 
@@ -4816,12 +3521,6 @@ return addWrite(ID_OK_AnIn_8, &value);
 }
 
 
-int getStatus_OK_AnIn_8()
-{
-return getStatus(ID_OK_AnIn_8);
-}
-
-
 int doWrite_OK_AnIn_9(int value)
 {
 return doWrite(ID_OK_AnIn_9,  &value);
@@ -4831,12 +3530,6 @@ return doWrite(ID_OK_AnIn_9,  &value);
 int addWrite_OK_AnIn_9(int value)
 {
 return addWrite(ID_OK_AnIn_9, &value);
-}
-
-
-int getStatus_OK_AnIn_9()
-{
-return getStatus(ID_OK_AnIn_9);
 }
 
 
@@ -4852,12 +3545,6 @@ return addWrite(ID_OK_AnIn_10, &value);
 }
 
 
-int getStatus_OK_AnIn_10()
-{
-return getStatus(ID_OK_AnIn_10);
-}
-
-
 int doWrite_OK_AnIn_11(int value)
 {
 return doWrite(ID_OK_AnIn_11,  &value);
@@ -4867,12 +3554,6 @@ return doWrite(ID_OK_AnIn_11,  &value);
 int addWrite_OK_AnIn_11(int value)
 {
 return addWrite(ID_OK_AnIn_11, &value);
-}
-
-
-int getStatus_OK_AnIn_11()
-{
-return getStatus(ID_OK_AnIn_11);
 }
 
 
@@ -4888,12 +3569,6 @@ return addWrite(ID_OK_AnIn_12, &value);
 }
 
 
-int getStatus_OK_AnIn_12()
-{
-return getStatus(ID_OK_AnIn_12);
-}
-
-
 int doWrite_TST_AnOut_1(int value)
 {
 return doWrite(ID_TST_AnOut_1,  &value);
@@ -4903,12 +3578,6 @@ return doWrite(ID_TST_AnOut_1,  &value);
 int addWrite_TST_AnOut_1(int value)
 {
 return addWrite(ID_TST_AnOut_1, &value);
-}
-
-
-int getStatus_TST_AnOut_1()
-{
-return getStatus(ID_TST_AnOut_1);
 }
 
 
@@ -4924,12 +3593,6 @@ return addWrite(ID_TST_AnOut_2, &value);
 }
 
 
-int getStatus_TST_AnOut_2()
-{
-return getStatus(ID_TST_AnOut_2);
-}
-
-
 int doWrite_TST_AnOut_3(int value)
 {
 return doWrite(ID_TST_AnOut_3,  &value);
@@ -4939,12 +3602,6 @@ return doWrite(ID_TST_AnOut_3,  &value);
 int addWrite_TST_AnOut_3(int value)
 {
 return addWrite(ID_TST_AnOut_3, &value);
-}
-
-
-int getStatus_TST_AnOut_3()
-{
-return getStatus(ID_TST_AnOut_3);
 }
 
 
@@ -4960,12 +3617,6 @@ return addWrite(ID_TST_AnOut_4, &value);
 }
 
 
-int getStatus_TST_AnOut_4()
-{
-return getStatus(ID_TST_AnOut_4);
-}
-
-
 int doWrite_VAL_AnOut_1(int16_t value)
 {
 return doWrite(ID_VAL_AnOut_1,  &value);
@@ -4975,12 +3626,6 @@ return doWrite(ID_VAL_AnOut_1,  &value);
 int addWrite_VAL_AnOut_1(int16_t value)
 {
 return addWrite(ID_VAL_AnOut_1, &value);
-}
-
-
-int getStatus_VAL_AnOut_1()
-{
-return getStatus(ID_VAL_AnOut_1);
 }
 
 
@@ -4996,12 +3641,6 @@ return addWrite(ID_VAL_AnOut_2, &value);
 }
 
 
-int getStatus_VAL_AnOut_2()
-{
-return getStatus(ID_VAL_AnOut_2);
-}
-
-
 int doWrite_VAL_AnOut_3(int16_t value)
 {
 return doWrite(ID_VAL_AnOut_3,  &value);
@@ -5011,12 +3650,6 @@ return doWrite(ID_VAL_AnOut_3,  &value);
 int addWrite_VAL_AnOut_3(int16_t value)
 {
 return addWrite(ID_VAL_AnOut_3, &value);
-}
-
-
-int getStatus_VAL_AnOut_3()
-{
-return getStatus(ID_VAL_AnOut_3);
 }
 
 
@@ -5032,12 +3665,6 @@ return addWrite(ID_VAL_AnOut_4, &value);
 }
 
 
-int getStatus_VAL_AnOut_4()
-{
-return getStatus(ID_VAL_AnOut_4);
-}
-
-
 int doWrite_VAL_AnOutConf_1(u_int16_t value)
 {
 return doWrite(ID_VAL_AnOutConf_1,  &value);
@@ -5047,12 +3674,6 @@ return doWrite(ID_VAL_AnOutConf_1,  &value);
 int addWrite_VAL_AnOutConf_1(u_int16_t value)
 {
 return addWrite(ID_VAL_AnOutConf_1, &value);
-}
-
-
-int getStatus_VAL_AnOutConf_1()
-{
-return getStatus(ID_VAL_AnOutConf_1);
 }
 
 
@@ -5068,12 +3689,6 @@ return addWrite(ID_VAL_AnOutConf_2, &value);
 }
 
 
-int getStatus_VAL_AnOutConf_2()
-{
-return getStatus(ID_VAL_AnOutConf_2);
-}
-
-
 int doWrite_VAL_AnOutConf_3(u_int16_t value)
 {
 return doWrite(ID_VAL_AnOutConf_3,  &value);
@@ -5083,12 +3698,6 @@ return doWrite(ID_VAL_AnOutConf_3,  &value);
 int addWrite_VAL_AnOutConf_3(u_int16_t value)
 {
 return addWrite(ID_VAL_AnOutConf_3, &value);
-}
-
-
-int getStatus_VAL_AnOutConf_3()
-{
-return getStatus(ID_VAL_AnOutConf_3);
 }
 
 
@@ -5104,12 +3713,6 @@ return addWrite(ID_VAL_AnOutConf_4, &value);
 }
 
 
-int getStatus_VAL_AnOutConf_4()
-{
-return getStatus(ID_VAL_AnOutConf_4);
-}
-
-
 int doWrite_RES_AnOut_1(int16_t value)
 {
 return doWrite(ID_RES_AnOut_1,  &value);
@@ -5119,12 +3722,6 @@ return doWrite(ID_RES_AnOut_1,  &value);
 int addWrite_RES_AnOut_1(int16_t value)
 {
 return addWrite(ID_RES_AnOut_1, &value);
-}
-
-
-int getStatus_RES_AnOut_1()
-{
-return getStatus(ID_RES_AnOut_1);
 }
 
 
@@ -5140,12 +3737,6 @@ return addWrite(ID_RES_AnOut_2, &value);
 }
 
 
-int getStatus_RES_AnOut_2()
-{
-return getStatus(ID_RES_AnOut_2);
-}
-
-
 int doWrite_RES_AnOut_3(int16_t value)
 {
 return doWrite(ID_RES_AnOut_3,  &value);
@@ -5155,12 +3746,6 @@ return doWrite(ID_RES_AnOut_3,  &value);
 int addWrite_RES_AnOut_3(int16_t value)
 {
 return addWrite(ID_RES_AnOut_3, &value);
-}
-
-
-int getStatus_RES_AnOut_3()
-{
-return getStatus(ID_RES_AnOut_3);
 }
 
 
@@ -5176,12 +3761,6 @@ return addWrite(ID_RES_AnOut_4, &value);
 }
 
 
-int getStatus_RES_AnOut_4()
-{
-return getStatus(ID_RES_AnOut_4);
-}
-
-
 int doWrite_RES_AnOutStts_1(int16_t value)
 {
 return doWrite(ID_RES_AnOutStts_1,  &value);
@@ -5191,12 +3770,6 @@ return doWrite(ID_RES_AnOutStts_1,  &value);
 int addWrite_RES_AnOutStts_1(int16_t value)
 {
 return addWrite(ID_RES_AnOutStts_1, &value);
-}
-
-
-int getStatus_RES_AnOutStts_1()
-{
-return getStatus(ID_RES_AnOutStts_1);
 }
 
 
@@ -5212,12 +3785,6 @@ return addWrite(ID_RES_AnOutStts_2, &value);
 }
 
 
-int getStatus_RES_AnOutStts_2()
-{
-return getStatus(ID_RES_AnOutStts_2);
-}
-
-
 int doWrite_RES_AnOutStts_3(int16_t value)
 {
 return doWrite(ID_RES_AnOutStts_3,  &value);
@@ -5227,12 +3794,6 @@ return doWrite(ID_RES_AnOutStts_3,  &value);
 int addWrite_RES_AnOutStts_3(int16_t value)
 {
 return addWrite(ID_RES_AnOutStts_3, &value);
-}
-
-
-int getStatus_RES_AnOutStts_3()
-{
-return getStatus(ID_RES_AnOutStts_3);
 }
 
 
@@ -5248,12 +3809,6 @@ return addWrite(ID_RES_AnOutStts_4, &value);
 }
 
 
-int getStatus_RES_AnOutStts_4()
-{
-return getStatus(ID_RES_AnOutStts_4);
-}
-
-
 int doWrite_OK_AnOut_1(int value)
 {
 return doWrite(ID_OK_AnOut_1,  &value);
@@ -5263,12 +3818,6 @@ return doWrite(ID_OK_AnOut_1,  &value);
 int addWrite_OK_AnOut_1(int value)
 {
 return addWrite(ID_OK_AnOut_1, &value);
-}
-
-
-int getStatus_OK_AnOut_1()
-{
-return getStatus(ID_OK_AnOut_1);
 }
 
 
@@ -5284,12 +3833,6 @@ return addWrite(ID_OK_AnOut_2, &value);
 }
 
 
-int getStatus_OK_AnOut_2()
-{
-return getStatus(ID_OK_AnOut_2);
-}
-
-
 int doWrite_OK_AnOut_3(int value)
 {
 return doWrite(ID_OK_AnOut_3,  &value);
@@ -5299,12 +3842,6 @@ return doWrite(ID_OK_AnOut_3,  &value);
 int addWrite_OK_AnOut_3(int value)
 {
 return addWrite(ID_OK_AnOut_3, &value);
-}
-
-
-int getStatus_OK_AnOut_3()
-{
-return getStatus(ID_OK_AnOut_3);
 }
 
 
@@ -5320,12 +3857,6 @@ return addWrite(ID_OK_AnOut_4, &value);
 }
 
 
-int getStatus_OK_AnOut_4()
-{
-return getStatus(ID_OK_AnOut_4);
-}
-
-
 int doWrite_TST_Tamb(int value)
 {
 return doWrite(ID_TST_Tamb,  &value);
@@ -5335,12 +3866,6 @@ return doWrite(ID_TST_Tamb,  &value);
 int addWrite_TST_Tamb(int value)
 {
 return addWrite(ID_TST_Tamb, &value);
-}
-
-
-int getStatus_TST_Tamb()
-{
-return getStatus(ID_TST_Tamb);
 }
 
 
@@ -5356,12 +3881,6 @@ return addWrite(ID_TST_RPM, &value);
 }
 
 
-int getStatus_TST_RPM()
-{
-return getStatus(ID_TST_RPM);
-}
-
-
 int doWrite_TST_VCC_set(int value)
 {
 return doWrite(ID_TST_VCC_set,  &value);
@@ -5371,12 +3890,6 @@ return doWrite(ID_TST_VCC_set,  &value);
 int addWrite_TST_VCC_set(int value)
 {
 return addWrite(ID_TST_VCC_set, &value);
-}
-
-
-int getStatus_TST_VCC_set()
-{
-return getStatus(ID_TST_VCC_set);
 }
 
 
@@ -5392,12 +3905,6 @@ return addWrite(ID_TST_mA_max, &value);
 }
 
 
-int getStatus_TST_mA_max()
-{
-return getStatus(ID_TST_mA_max);
-}
-
-
 int doWrite_TST_VCC_fbk(int value)
 {
 return doWrite(ID_TST_VCC_fbk,  &value);
@@ -5407,12 +3914,6 @@ return doWrite(ID_TST_VCC_fbk,  &value);
 int addWrite_TST_VCC_fbk(int value)
 {
 return addWrite(ID_TST_VCC_fbk, &value);
-}
-
-
-int getStatus_TST_VCC_fbk()
-{
-return getStatus(ID_TST_VCC_fbk);
 }
 
 
@@ -5428,12 +3929,6 @@ return addWrite(ID_TST_mA_fbk, &value);
 }
 
 
-int getStatus_TST_mA_fbk()
-{
-return getStatus(ID_TST_mA_fbk);
-}
-
-
 int doWrite_TST_FWrevision(int value)
 {
 return doWrite(ID_TST_FWrevision,  &value);
@@ -5443,12 +3938,6 @@ return doWrite(ID_TST_FWrevision,  &value);
 int addWrite_TST_FWrevision(int value)
 {
 return addWrite(ID_TST_FWrevision, &value);
-}
-
-
-int getStatus_TST_FWrevision()
-{
-return getStatus(ID_TST_FWrevision);
 }
 
 
@@ -5464,12 +3953,6 @@ return addWrite(ID_TST_HWconfig, &value);
 }
 
 
-int getStatus_TST_HWconfig()
-{
-return getStatus(ID_TST_HWconfig);
-}
-
-
 int doWrite_VAL_Tamb(int16_t value)
 {
 return doWrite(ID_VAL_Tamb,  &value);
@@ -5479,12 +3962,6 @@ return doWrite(ID_VAL_Tamb,  &value);
 int addWrite_VAL_Tamb(int16_t value)
 {
 return addWrite(ID_VAL_Tamb, &value);
-}
-
-
-int getStatus_VAL_Tamb()
-{
-return getStatus(ID_VAL_Tamb);
 }
 
 
@@ -5500,12 +3977,6 @@ return addWrite(ID_VAL_RPM, &value);
 }
 
 
-int getStatus_VAL_RPM()
-{
-return getStatus(ID_VAL_RPM);
-}
-
-
 int doWrite_VAL_VCC_set(int16_t value)
 {
 return doWrite(ID_VAL_VCC_set,  &value);
@@ -5515,12 +3986,6 @@ return doWrite(ID_VAL_VCC_set,  &value);
 int addWrite_VAL_VCC_set(int16_t value)
 {
 return addWrite(ID_VAL_VCC_set, &value);
-}
-
-
-int getStatus_VAL_VCC_set()
-{
-return getStatus(ID_VAL_VCC_set);
 }
 
 
@@ -5536,12 +4001,6 @@ return addWrite(ID_VAL_mA_max, &value);
 }
 
 
-int getStatus_VAL_mA_max()
-{
-return getStatus(ID_VAL_mA_max);
-}
-
-
 int doWrite_VAL_VCC_fbk(int16_t value)
 {
 return doWrite(ID_VAL_VCC_fbk,  &value);
@@ -5551,12 +4010,6 @@ return doWrite(ID_VAL_VCC_fbk,  &value);
 int addWrite_VAL_VCC_fbk(int16_t value)
 {
 return addWrite(ID_VAL_VCC_fbk, &value);
-}
-
-
-int getStatus_VAL_VCC_fbk()
-{
-return getStatus(ID_VAL_VCC_fbk);
 }
 
 
@@ -5572,12 +4025,6 @@ return addWrite(ID_VAL_mA_fbk, &value);
 }
 
 
-int getStatus_VAL_mA_fbk()
-{
-return getStatus(ID_VAL_mA_fbk);
-}
-
-
 int doWrite_VAL_FWrevision(u_int16_t value)
 {
 return doWrite(ID_VAL_FWrevision,  &value);
@@ -5587,12 +4034,6 @@ return doWrite(ID_VAL_FWrevision,  &value);
 int addWrite_VAL_FWrevision(u_int16_t value)
 {
 return addWrite(ID_VAL_FWrevision, &value);
-}
-
-
-int getStatus_VAL_FWrevision()
-{
-return getStatus(ID_VAL_FWrevision);
 }
 
 
@@ -5608,12 +4049,6 @@ return addWrite(ID_VAL_HWconfig, &value);
 }
 
 
-int getStatus_VAL_HWconfig()
-{
-return getStatus(ID_VAL_HWconfig);
-}
-
-
 int doWrite_RES_Tamb(int16_t value)
 {
 return doWrite(ID_RES_Tamb,  &value);
@@ -5623,12 +4058,6 @@ return doWrite(ID_RES_Tamb,  &value);
 int addWrite_RES_Tamb(int16_t value)
 {
 return addWrite(ID_RES_Tamb, &value);
-}
-
-
-int getStatus_RES_Tamb()
-{
-return getStatus(ID_RES_Tamb);
 }
 
 
@@ -5644,12 +4073,6 @@ return addWrite(ID_RES_RPM, &value);
 }
 
 
-int getStatus_RES_RPM()
-{
-return getStatus(ID_RES_RPM);
-}
-
-
 int doWrite_RES_VCC_set(int16_t value)
 {
 return doWrite(ID_RES_VCC_set,  &value);
@@ -5659,12 +4082,6 @@ return doWrite(ID_RES_VCC_set,  &value);
 int addWrite_RES_VCC_set(int16_t value)
 {
 return addWrite(ID_RES_VCC_set, &value);
-}
-
-
-int getStatus_RES_VCC_set()
-{
-return getStatus(ID_RES_VCC_set);
 }
 
 
@@ -5680,12 +4097,6 @@ return addWrite(ID_RES_mA_max, &value);
 }
 
 
-int getStatus_RES_mA_max()
-{
-return getStatus(ID_RES_mA_max);
-}
-
-
 int doWrite_RES_VCC_fbk(int16_t value)
 {
 return doWrite(ID_RES_VCC_fbk,  &value);
@@ -5695,12 +4106,6 @@ return doWrite(ID_RES_VCC_fbk,  &value);
 int addWrite_RES_VCC_fbk(int16_t value)
 {
 return addWrite(ID_RES_VCC_fbk, &value);
-}
-
-
-int getStatus_RES_VCC_fbk()
-{
-return getStatus(ID_RES_VCC_fbk);
 }
 
 
@@ -5716,12 +4121,6 @@ return addWrite(ID_RES_mA_fbk, &value);
 }
 
 
-int getStatus_RES_mA_fbk()
-{
-return getStatus(ID_RES_mA_fbk);
-}
-
-
 int doWrite_RES_FWrevision(u_int16_t value)
 {
 return doWrite(ID_RES_FWrevision,  &value);
@@ -5731,12 +4130,6 @@ return doWrite(ID_RES_FWrevision,  &value);
 int addWrite_RES_FWrevision(u_int16_t value)
 {
 return addWrite(ID_RES_FWrevision, &value);
-}
-
-
-int getStatus_RES_FWrevision()
-{
-return getStatus(ID_RES_FWrevision);
 }
 
 
@@ -5752,12 +4145,6 @@ return addWrite(ID_RES_HWconfig, &value);
 }
 
 
-int getStatus_RES_HWconfig()
-{
-return getStatus(ID_RES_HWconfig);
-}
-
-
 int doWrite_OK_Tamb(int value)
 {
 return doWrite(ID_OK_Tamb,  &value);
@@ -5767,12 +4154,6 @@ return doWrite(ID_OK_Tamb,  &value);
 int addWrite_OK_Tamb(int value)
 {
 return addWrite(ID_OK_Tamb, &value);
-}
-
-
-int getStatus_OK_Tamb()
-{
-return getStatus(ID_OK_Tamb);
 }
 
 
@@ -5788,12 +4169,6 @@ return addWrite(ID_OK_RPM, &value);
 }
 
 
-int getStatus_OK_RPM()
-{
-return getStatus(ID_OK_RPM);
-}
-
-
 int doWrite_OK_VCC_set(int value)
 {
 return doWrite(ID_OK_VCC_set,  &value);
@@ -5803,12 +4178,6 @@ return doWrite(ID_OK_VCC_set,  &value);
 int addWrite_OK_VCC_set(int value)
 {
 return addWrite(ID_OK_VCC_set, &value);
-}
-
-
-int getStatus_OK_VCC_set()
-{
-return getStatus(ID_OK_VCC_set);
 }
 
 
@@ -5824,12 +4193,6 @@ return addWrite(ID_OK_mA_max, &value);
 }
 
 
-int getStatus_OK_mA_max()
-{
-return getStatus(ID_OK_mA_max);
-}
-
-
 int doWrite_OK_VCC_fbk(int value)
 {
 return doWrite(ID_OK_VCC_fbk,  &value);
@@ -5839,12 +4202,6 @@ return doWrite(ID_OK_VCC_fbk,  &value);
 int addWrite_OK_VCC_fbk(int value)
 {
 return addWrite(ID_OK_VCC_fbk, &value);
-}
-
-
-int getStatus_OK_VCC_fbk()
-{
-return getStatus(ID_OK_VCC_fbk);
 }
 
 
@@ -5860,12 +4217,6 @@ return addWrite(ID_OK_mA_fbk, &value);
 }
 
 
-int getStatus_OK_mA_fbk()
-{
-return getStatus(ID_OK_mA_fbk);
-}
-
-
 int doWrite_OK_FWrevision(int value)
 {
 return doWrite(ID_OK_FWrevision,  &value);
@@ -5875,12 +4226,6 @@ return doWrite(ID_OK_FWrevision,  &value);
 int addWrite_OK_FWrevision(int value)
 {
 return addWrite(ID_OK_FWrevision, &value);
-}
-
-
-int getStatus_OK_FWrevision()
-{
-return getStatus(ID_OK_FWrevision);
 }
 
 
@@ -5896,12 +4241,6 @@ return addWrite(ID_OK_HWconfig, &value);
 }
 
 
-int getStatus_OK_HWconfig()
-{
-return getStatus(ID_OK_HWconfig);
-}
-
-
 int doWrite_TST_RTUS_WR(int value)
 {
 return doWrite(ID_TST_RTUS_WR,  &value);
@@ -5911,12 +4250,6 @@ return doWrite(ID_TST_RTUS_WR,  &value);
 int addWrite_TST_RTUS_WR(int value)
 {
 return addWrite(ID_TST_RTUS_WR, &value);
-}
-
-
-int getStatus_TST_RTUS_WR()
-{
-return getStatus(ID_TST_RTUS_WR);
 }
 
 
@@ -5932,12 +4265,6 @@ return addWrite(ID_TST_RTUS_RD, &value);
 }
 
 
-int getStatus_TST_RTUS_RD()
-{
-return getStatus(ID_TST_RTUS_RD);
-}
-
-
 int doWrite_TST_RTU1_WR(int value)
 {
 return doWrite(ID_TST_RTU1_WR,  &value);
@@ -5947,12 +4274,6 @@ return doWrite(ID_TST_RTU1_WR,  &value);
 int addWrite_TST_RTU1_WR(int value)
 {
 return addWrite(ID_TST_RTU1_WR, &value);
-}
-
-
-int getStatus_TST_RTU1_WR()
-{
-return getStatus(ID_TST_RTU1_WR);
 }
 
 
@@ -5968,12 +4289,6 @@ return addWrite(ID_TST_RTU1_RD, &value);
 }
 
 
-int getStatus_TST_RTU1_RD()
-{
-return getStatus(ID_TST_RTU1_RD);
-}
-
-
 int doWrite_TST_RTU3_WR(int value)
 {
 return doWrite(ID_TST_RTU3_WR,  &value);
@@ -5983,12 +4298,6 @@ return doWrite(ID_TST_RTU3_WR,  &value);
 int addWrite_TST_RTU3_WR(int value)
 {
 return addWrite(ID_TST_RTU3_WR, &value);
-}
-
-
-int getStatus_TST_RTU3_WR()
-{
-return getStatus(ID_TST_RTU3_WR);
 }
 
 
@@ -6004,12 +4313,6 @@ return addWrite(ID_TST_RTU3_RD, &value);
 }
 
 
-int getStatus_TST_RTU3_RD()
-{
-return getStatus(ID_TST_RTU3_RD);
-}
-
-
 int doWrite_TST_CAN1_WR(int value)
 {
 return doWrite(ID_TST_CAN1_WR,  &value);
@@ -6019,12 +4322,6 @@ return doWrite(ID_TST_CAN1_WR,  &value);
 int addWrite_TST_CAN1_WR(int value)
 {
 return addWrite(ID_TST_CAN1_WR, &value);
-}
-
-
-int getStatus_TST_CAN1_WR()
-{
-return getStatus(ID_TST_CAN1_WR);
 }
 
 
@@ -6040,12 +4337,6 @@ return addWrite(ID_TST_CAN1_RD, &value);
 }
 
 
-int getStatus_TST_CAN1_RD()
-{
-return getStatus(ID_TST_CAN1_RD);
-}
-
-
 int doWrite_VAL_RTUS_WR(int value)
 {
 return doWrite(ID_VAL_RTUS_WR,  &value);
@@ -6055,12 +4346,6 @@ return doWrite(ID_VAL_RTUS_WR,  &value);
 int addWrite_VAL_RTUS_WR(int value)
 {
 return addWrite(ID_VAL_RTUS_WR, &value);
-}
-
-
-int getStatus_VAL_RTUS_WR()
-{
-return getStatus(ID_VAL_RTUS_WR);
 }
 
 
@@ -6076,12 +4361,6 @@ return addWrite(ID_VAL_RTUS_RD, &value);
 }
 
 
-int getStatus_VAL_RTUS_RD()
-{
-return getStatus(ID_VAL_RTUS_RD);
-}
-
-
 int doWrite_VAL_RTU1_WR(int value)
 {
 return doWrite(ID_VAL_RTU1_WR,  &value);
@@ -6091,12 +4370,6 @@ return doWrite(ID_VAL_RTU1_WR,  &value);
 int addWrite_VAL_RTU1_WR(int value)
 {
 return addWrite(ID_VAL_RTU1_WR, &value);
-}
-
-
-int getStatus_VAL_RTU1_WR()
-{
-return getStatus(ID_VAL_RTU1_WR);
 }
 
 
@@ -6112,12 +4385,6 @@ return addWrite(ID_VAL_RTU1_RD, &value);
 }
 
 
-int getStatus_VAL_RTU1_RD()
-{
-return getStatus(ID_VAL_RTU1_RD);
-}
-
-
 int doWrite_VAL_RTU3_WR(int value)
 {
 return doWrite(ID_VAL_RTU3_WR,  &value);
@@ -6127,12 +4394,6 @@ return doWrite(ID_VAL_RTU3_WR,  &value);
 int addWrite_VAL_RTU3_WR(int value)
 {
 return addWrite(ID_VAL_RTU3_WR, &value);
-}
-
-
-int getStatus_VAL_RTU3_WR()
-{
-return getStatus(ID_VAL_RTU3_WR);
 }
 
 
@@ -6148,12 +4409,6 @@ return addWrite(ID_VAL_RTU3_RD, &value);
 }
 
 
-int getStatus_VAL_RTU3_RD()
-{
-return getStatus(ID_VAL_RTU3_RD);
-}
-
-
 int doWrite_VAL_CAN1_WR(int value)
 {
 return doWrite(ID_VAL_CAN1_WR,  &value);
@@ -6163,12 +4418,6 @@ return doWrite(ID_VAL_CAN1_WR,  &value);
 int addWrite_VAL_CAN1_WR(int value)
 {
 return addWrite(ID_VAL_CAN1_WR, &value);
-}
-
-
-int getStatus_VAL_CAN1_WR()
-{
-return getStatus(ID_VAL_CAN1_WR);
 }
 
 
@@ -6184,12 +4433,6 @@ return addWrite(ID_VAL_CAN1_RD, &value);
 }
 
 
-int getStatus_VAL_CAN1_RD()
-{
-return getStatus(ID_VAL_CAN1_RD);
-}
-
-
 int doWrite_RES_RTUS_WR(int value)
 {
 return doWrite(ID_RES_RTUS_WR,  &value);
@@ -6199,12 +4442,6 @@ return doWrite(ID_RES_RTUS_WR,  &value);
 int addWrite_RES_RTUS_WR(int value)
 {
 return addWrite(ID_RES_RTUS_WR, &value);
-}
-
-
-int getStatus_RES_RTUS_WR()
-{
-return getStatus(ID_RES_RTUS_WR);
 }
 
 
@@ -6220,12 +4457,6 @@ return addWrite(ID_RES_RTUS_RD, &value);
 }
 
 
-int getStatus_RES_RTUS_RD()
-{
-return getStatus(ID_RES_RTUS_RD);
-}
-
-
 int doWrite_RES_RTU1_WR(int value)
 {
 return doWrite(ID_RES_RTU1_WR,  &value);
@@ -6235,12 +4466,6 @@ return doWrite(ID_RES_RTU1_WR,  &value);
 int addWrite_RES_RTU1_WR(int value)
 {
 return addWrite(ID_RES_RTU1_WR, &value);
-}
-
-
-int getStatus_RES_RTU1_WR()
-{
-return getStatus(ID_RES_RTU1_WR);
 }
 
 
@@ -6256,12 +4481,6 @@ return addWrite(ID_RES_RTU1_RD, &value);
 }
 
 
-int getStatus_RES_RTU1_RD()
-{
-return getStatus(ID_RES_RTU1_RD);
-}
-
-
 int doWrite_RES_RTU3_WR(int value)
 {
 return doWrite(ID_RES_RTU3_WR,  &value);
@@ -6271,12 +4490,6 @@ return doWrite(ID_RES_RTU3_WR,  &value);
 int addWrite_RES_RTU3_WR(int value)
 {
 return addWrite(ID_RES_RTU3_WR, &value);
-}
-
-
-int getStatus_RES_RTU3_WR()
-{
-return getStatus(ID_RES_RTU3_WR);
 }
 
 
@@ -6292,12 +4505,6 @@ return addWrite(ID_RES_RTU3_RD, &value);
 }
 
 
-int getStatus_RES_RTU3_RD()
-{
-return getStatus(ID_RES_RTU3_RD);
-}
-
-
 int doWrite_RES_CAN1_WR(int value)
 {
 return doWrite(ID_RES_CAN1_WR,  &value);
@@ -6307,12 +4514,6 @@ return doWrite(ID_RES_CAN1_WR,  &value);
 int addWrite_RES_CAN1_WR(int value)
 {
 return addWrite(ID_RES_CAN1_WR, &value);
-}
-
-
-int getStatus_RES_CAN1_WR()
-{
-return getStatus(ID_RES_CAN1_WR);
 }
 
 
@@ -6328,12 +4529,6 @@ return addWrite(ID_RES_CAN1_RD, &value);
 }
 
 
-int getStatus_RES_CAN1_RD()
-{
-return getStatus(ID_RES_CAN1_RD);
-}
-
-
 int doWrite_OK_RTUS_WR(int value)
 {
 return doWrite(ID_OK_RTUS_WR,  &value);
@@ -6343,12 +4538,6 @@ return doWrite(ID_OK_RTUS_WR,  &value);
 int addWrite_OK_RTUS_WR(int value)
 {
 return addWrite(ID_OK_RTUS_WR, &value);
-}
-
-
-int getStatus_OK_RTUS_WR()
-{
-return getStatus(ID_OK_RTUS_WR);
 }
 
 
@@ -6364,12 +4553,6 @@ return addWrite(ID_OK_RTUS_RD, &value);
 }
 
 
-int getStatus_OK_RTUS_RD()
-{
-return getStatus(ID_OK_RTUS_RD);
-}
-
-
 int doWrite_OK_RTU1_WR(int value)
 {
 return doWrite(ID_OK_RTU1_WR,  &value);
@@ -6379,12 +4562,6 @@ return doWrite(ID_OK_RTU1_WR,  &value);
 int addWrite_OK_RTU1_WR(int value)
 {
 return addWrite(ID_OK_RTU1_WR, &value);
-}
-
-
-int getStatus_OK_RTU1_WR()
-{
-return getStatus(ID_OK_RTU1_WR);
 }
 
 
@@ -6400,12 +4577,6 @@ return addWrite(ID_OK_RTU1_RD, &value);
 }
 
 
-int getStatus_OK_RTU1_RD()
-{
-return getStatus(ID_OK_RTU1_RD);
-}
-
-
 int doWrite_OK_RTU3_WR(int value)
 {
 return doWrite(ID_OK_RTU3_WR,  &value);
@@ -6415,12 +4586,6 @@ return doWrite(ID_OK_RTU3_WR,  &value);
 int addWrite_OK_RTU3_WR(int value)
 {
 return addWrite(ID_OK_RTU3_WR, &value);
-}
-
-
-int getStatus_OK_RTU3_WR()
-{
-return getStatus(ID_OK_RTU3_WR);
 }
 
 
@@ -6436,12 +4601,6 @@ return addWrite(ID_OK_RTU3_RD, &value);
 }
 
 
-int getStatus_OK_RTU3_RD()
-{
-return getStatus(ID_OK_RTU3_RD);
-}
-
-
 int doWrite_OK_CAN1_WR(int value)
 {
 return doWrite(ID_OK_CAN1_WR,  &value);
@@ -6451,12 +4610,6 @@ return doWrite(ID_OK_CAN1_WR,  &value);
 int addWrite_OK_CAN1_WR(int value)
 {
 return addWrite(ID_OK_CAN1_WR, &value);
-}
-
-
-int getStatus_OK_CAN1_WR()
-{
-return getStatus(ID_OK_CAN1_WR);
 }
 
 
@@ -6472,12 +4625,6 @@ return addWrite(ID_OK_CAN1_RD, &value);
 }
 
 
-int getStatus_OK_CAN1_RD()
-{
-return getStatus(ID_OK_CAN1_RD);
-}
-
-
 int doWrite_START2_REMOTE(int value)
 {
 return doWrite(ID_START2_REMOTE,  &value);
@@ -6487,12 +4634,6 @@ return doWrite(ID_START2_REMOTE,  &value);
 int addWrite_START2_REMOTE(int value)
 {
 return addWrite(ID_START2_REMOTE, &value);
-}
-
-
-int getStatus_START2_REMOTE()
-{
-return getStatus(ID_START2_REMOTE);
 }
 
 
@@ -6508,12 +4649,6 @@ return addWrite(ID_START2_TEST, &value);
 }
 
 
-int getStatus_START2_TEST()
-{
-return getStatus(ID_START2_TEST);
-}
-
-
 int doWrite_TST2_DigIn_1(int value)
 {
 return doWrite(ID_TST2_DigIn_1,  &value);
@@ -6523,12 +4658,6 @@ return doWrite(ID_TST2_DigIn_1,  &value);
 int addWrite_TST2_DigIn_1(int value)
 {
 return addWrite(ID_TST2_DigIn_1, &value);
-}
-
-
-int getStatus_TST2_DigIn_1()
-{
-return getStatus(ID_TST2_DigIn_1);
 }
 
 
@@ -6544,12 +4673,6 @@ return addWrite(ID_TST2_DigIn_2, &value);
 }
 
 
-int getStatus_TST2_DigIn_2()
-{
-return getStatus(ID_TST2_DigIn_2);
-}
-
-
 int doWrite_TST2_DigIn_3(int value)
 {
 return doWrite(ID_TST2_DigIn_3,  &value);
@@ -6559,12 +4682,6 @@ return doWrite(ID_TST2_DigIn_3,  &value);
 int addWrite_TST2_DigIn_3(int value)
 {
 return addWrite(ID_TST2_DigIn_3, &value);
-}
-
-
-int getStatus_TST2_DigIn_3()
-{
-return getStatus(ID_TST2_DigIn_3);
 }
 
 
@@ -6580,12 +4697,6 @@ return addWrite(ID_TST2_DigIn_4, &value);
 }
 
 
-int getStatus_TST2_DigIn_4()
-{
-return getStatus(ID_TST2_DigIn_4);
-}
-
-
 int doWrite_TST2_DigIn_5(int value)
 {
 return doWrite(ID_TST2_DigIn_5,  &value);
@@ -6595,12 +4706,6 @@ return doWrite(ID_TST2_DigIn_5,  &value);
 int addWrite_TST2_DigIn_5(int value)
 {
 return addWrite(ID_TST2_DigIn_5, &value);
-}
-
-
-int getStatus_TST2_DigIn_5()
-{
-return getStatus(ID_TST2_DigIn_5);
 }
 
 
@@ -6616,12 +4721,6 @@ return addWrite(ID_TST2_DigIn_6, &value);
 }
 
 
-int getStatus_TST2_DigIn_6()
-{
-return getStatus(ID_TST2_DigIn_6);
-}
-
-
 int doWrite_TST2_DigIn_7(int value)
 {
 return doWrite(ID_TST2_DigIn_7,  &value);
@@ -6631,12 +4730,6 @@ return doWrite(ID_TST2_DigIn_7,  &value);
 int addWrite_TST2_DigIn_7(int value)
 {
 return addWrite(ID_TST2_DigIn_7, &value);
-}
-
-
-int getStatus_TST2_DigIn_7()
-{
-return getStatus(ID_TST2_DigIn_7);
 }
 
 
@@ -6652,12 +4745,6 @@ return addWrite(ID_TST2_DigIn_8, &value);
 }
 
 
-int getStatus_TST2_DigIn_8()
-{
-return getStatus(ID_TST2_DigIn_8);
-}
-
-
 int doWrite_TST2_DigIn_9(int value)
 {
 return doWrite(ID_TST2_DigIn_9,  &value);
@@ -6667,12 +4754,6 @@ return doWrite(ID_TST2_DigIn_9,  &value);
 int addWrite_TST2_DigIn_9(int value)
 {
 return addWrite(ID_TST2_DigIn_9, &value);
-}
-
-
-int getStatus_TST2_DigIn_9()
-{
-return getStatus(ID_TST2_DigIn_9);
 }
 
 
@@ -6688,12 +4769,6 @@ return addWrite(ID_TST2_DigIn_10, &value);
 }
 
 
-int getStatus_TST2_DigIn_10()
-{
-return getStatus(ID_TST2_DigIn_10);
-}
-
-
 int doWrite_TST2_DigIn_11(int value)
 {
 return doWrite(ID_TST2_DigIn_11,  &value);
@@ -6703,12 +4778,6 @@ return doWrite(ID_TST2_DigIn_11,  &value);
 int addWrite_TST2_DigIn_11(int value)
 {
 return addWrite(ID_TST2_DigIn_11, &value);
-}
-
-
-int getStatus_TST2_DigIn_11()
-{
-return getStatus(ID_TST2_DigIn_11);
 }
 
 
@@ -6724,12 +4793,6 @@ return addWrite(ID_TST2_DigIn_12, &value);
 }
 
 
-int getStatus_TST2_DigIn_12()
-{
-return getStatus(ID_TST2_DigIn_12);
-}
-
-
 int doWrite_TST2_DigIn_13(int value)
 {
 return doWrite(ID_TST2_DigIn_13,  &value);
@@ -6739,12 +4802,6 @@ return doWrite(ID_TST2_DigIn_13,  &value);
 int addWrite_TST2_DigIn_13(int value)
 {
 return addWrite(ID_TST2_DigIn_13, &value);
-}
-
-
-int getStatus_TST2_DigIn_13()
-{
-return getStatus(ID_TST2_DigIn_13);
 }
 
 
@@ -6760,12 +4817,6 @@ return addWrite(ID_TST2_DigIn_14, &value);
 }
 
 
-int getStatus_TST2_DigIn_14()
-{
-return getStatus(ID_TST2_DigIn_14);
-}
-
-
 int doWrite_TST2_DigIn_15(int value)
 {
 return doWrite(ID_TST2_DigIn_15,  &value);
@@ -6775,12 +4826,6 @@ return doWrite(ID_TST2_DigIn_15,  &value);
 int addWrite_TST2_DigIn_15(int value)
 {
 return addWrite(ID_TST2_DigIn_15, &value);
-}
-
-
-int getStatus_TST2_DigIn_15()
-{
-return getStatus(ID_TST2_DigIn_15);
 }
 
 
@@ -6796,12 +4841,6 @@ return addWrite(ID_TST2_DigIn_16, &value);
 }
 
 
-int getStatus_TST2_DigIn_16()
-{
-return getStatus(ID_TST2_DigIn_16);
-}
-
-
 int doWrite_VAL2_DigIn_1(int value)
 {
 return doWrite(ID_VAL2_DigIn_1,  &value);
@@ -6811,12 +4850,6 @@ return doWrite(ID_VAL2_DigIn_1,  &value);
 int addWrite_VAL2_DigIn_1(int value)
 {
 return addWrite(ID_VAL2_DigIn_1, &value);
-}
-
-
-int getStatus_VAL2_DigIn_1()
-{
-return getStatus(ID_VAL2_DigIn_1);
 }
 
 
@@ -6832,12 +4865,6 @@ return addWrite(ID_VAL2_DigIn_2, &value);
 }
 
 
-int getStatus_VAL2_DigIn_2()
-{
-return getStatus(ID_VAL2_DigIn_2);
-}
-
-
 int doWrite_VAL2_DigIn_3(int value)
 {
 return doWrite(ID_VAL2_DigIn_3,  &value);
@@ -6847,12 +4874,6 @@ return doWrite(ID_VAL2_DigIn_3,  &value);
 int addWrite_VAL2_DigIn_3(int value)
 {
 return addWrite(ID_VAL2_DigIn_3, &value);
-}
-
-
-int getStatus_VAL2_DigIn_3()
-{
-return getStatus(ID_VAL2_DigIn_3);
 }
 
 
@@ -6868,12 +4889,6 @@ return addWrite(ID_VAL2_DigIn_4, &value);
 }
 
 
-int getStatus_VAL2_DigIn_4()
-{
-return getStatus(ID_VAL2_DigIn_4);
-}
-
-
 int doWrite_VAL2_DigIn_5(int value)
 {
 return doWrite(ID_VAL2_DigIn_5,  &value);
@@ -6883,12 +4898,6 @@ return doWrite(ID_VAL2_DigIn_5,  &value);
 int addWrite_VAL2_DigIn_5(int value)
 {
 return addWrite(ID_VAL2_DigIn_5, &value);
-}
-
-
-int getStatus_VAL2_DigIn_5()
-{
-return getStatus(ID_VAL2_DigIn_5);
 }
 
 
@@ -6904,12 +4913,6 @@ return addWrite(ID_VAL2_DigIn_6, &value);
 }
 
 
-int getStatus_VAL2_DigIn_6()
-{
-return getStatus(ID_VAL2_DigIn_6);
-}
-
-
 int doWrite_VAL2_DigIn_7(int value)
 {
 return doWrite(ID_VAL2_DigIn_7,  &value);
@@ -6919,12 +4922,6 @@ return doWrite(ID_VAL2_DigIn_7,  &value);
 int addWrite_VAL2_DigIn_7(int value)
 {
 return addWrite(ID_VAL2_DigIn_7, &value);
-}
-
-
-int getStatus_VAL2_DigIn_7()
-{
-return getStatus(ID_VAL2_DigIn_7);
 }
 
 
@@ -6940,12 +4937,6 @@ return addWrite(ID_VAL2_DigIn_8, &value);
 }
 
 
-int getStatus_VAL2_DigIn_8()
-{
-return getStatus(ID_VAL2_DigIn_8);
-}
-
-
 int doWrite_VAL2_DigIn_9(int value)
 {
 return doWrite(ID_VAL2_DigIn_9,  &value);
@@ -6955,12 +4946,6 @@ return doWrite(ID_VAL2_DigIn_9,  &value);
 int addWrite_VAL2_DigIn_9(int value)
 {
 return addWrite(ID_VAL2_DigIn_9, &value);
-}
-
-
-int getStatus_VAL2_DigIn_9()
-{
-return getStatus(ID_VAL2_DigIn_9);
 }
 
 
@@ -6976,12 +4961,6 @@ return addWrite(ID_VAL2_DigIn_10, &value);
 }
 
 
-int getStatus_VAL2_DigIn_10()
-{
-return getStatus(ID_VAL2_DigIn_10);
-}
-
-
 int doWrite_VAL2_DigIn_11(int value)
 {
 return doWrite(ID_VAL2_DigIn_11,  &value);
@@ -6991,12 +4970,6 @@ return doWrite(ID_VAL2_DigIn_11,  &value);
 int addWrite_VAL2_DigIn_11(int value)
 {
 return addWrite(ID_VAL2_DigIn_11, &value);
-}
-
-
-int getStatus_VAL2_DigIn_11()
-{
-return getStatus(ID_VAL2_DigIn_11);
 }
 
 
@@ -7012,12 +4985,6 @@ return addWrite(ID_VAL2_DigIn_12, &value);
 }
 
 
-int getStatus_VAL2_DigIn_12()
-{
-return getStatus(ID_VAL2_DigIn_12);
-}
-
-
 int doWrite_VAL2_DigIn_13(int value)
 {
 return doWrite(ID_VAL2_DigIn_13,  &value);
@@ -7027,12 +4994,6 @@ return doWrite(ID_VAL2_DigIn_13,  &value);
 int addWrite_VAL2_DigIn_13(int value)
 {
 return addWrite(ID_VAL2_DigIn_13, &value);
-}
-
-
-int getStatus_VAL2_DigIn_13()
-{
-return getStatus(ID_VAL2_DigIn_13);
 }
 
 
@@ -7048,12 +5009,6 @@ return addWrite(ID_VAL2_DigIn_14, &value);
 }
 
 
-int getStatus_VAL2_DigIn_14()
-{
-return getStatus(ID_VAL2_DigIn_14);
-}
-
-
 int doWrite_VAL2_DigIn_15(int value)
 {
 return doWrite(ID_VAL2_DigIn_15,  &value);
@@ -7063,12 +5018,6 @@ return doWrite(ID_VAL2_DigIn_15,  &value);
 int addWrite_VAL2_DigIn_15(int value)
 {
 return addWrite(ID_VAL2_DigIn_15, &value);
-}
-
-
-int getStatus_VAL2_DigIn_15()
-{
-return getStatus(ID_VAL2_DigIn_15);
 }
 
 
@@ -7084,12 +5033,6 @@ return addWrite(ID_VAL2_DigIn_16, &value);
 }
 
 
-int getStatus_VAL2_DigIn_16()
-{
-return getStatus(ID_VAL2_DigIn_16);
-}
-
-
 int doWrite_RES2_DigIn_1(int value)
 {
 return doWrite(ID_RES2_DigIn_1,  &value);
@@ -7099,12 +5042,6 @@ return doWrite(ID_RES2_DigIn_1,  &value);
 int addWrite_RES2_DigIn_1(int value)
 {
 return addWrite(ID_RES2_DigIn_1, &value);
-}
-
-
-int getStatus_RES2_DigIn_1()
-{
-return getStatus(ID_RES2_DigIn_1);
 }
 
 
@@ -7120,12 +5057,6 @@ return addWrite(ID_RES2_DigIn_2, &value);
 }
 
 
-int getStatus_RES2_DigIn_2()
-{
-return getStatus(ID_RES2_DigIn_2);
-}
-
-
 int doWrite_RES2_DigIn_3(int value)
 {
 return doWrite(ID_RES2_DigIn_3,  &value);
@@ -7135,12 +5066,6 @@ return doWrite(ID_RES2_DigIn_3,  &value);
 int addWrite_RES2_DigIn_3(int value)
 {
 return addWrite(ID_RES2_DigIn_3, &value);
-}
-
-
-int getStatus_RES2_DigIn_3()
-{
-return getStatus(ID_RES2_DigIn_3);
 }
 
 
@@ -7156,12 +5081,6 @@ return addWrite(ID_RES2_DigIn_4, &value);
 }
 
 
-int getStatus_RES2_DigIn_4()
-{
-return getStatus(ID_RES2_DigIn_4);
-}
-
-
 int doWrite_RES2_DigIn_5(int value)
 {
 return doWrite(ID_RES2_DigIn_5,  &value);
@@ -7171,12 +5090,6 @@ return doWrite(ID_RES2_DigIn_5,  &value);
 int addWrite_RES2_DigIn_5(int value)
 {
 return addWrite(ID_RES2_DigIn_5, &value);
-}
-
-
-int getStatus_RES2_DigIn_5()
-{
-return getStatus(ID_RES2_DigIn_5);
 }
 
 
@@ -7192,12 +5105,6 @@ return addWrite(ID_RES2_DigIn_6, &value);
 }
 
 
-int getStatus_RES2_DigIn_6()
-{
-return getStatus(ID_RES2_DigIn_6);
-}
-
-
 int doWrite_RES2_DigIn_7(int value)
 {
 return doWrite(ID_RES2_DigIn_7,  &value);
@@ -7207,12 +5114,6 @@ return doWrite(ID_RES2_DigIn_7,  &value);
 int addWrite_RES2_DigIn_7(int value)
 {
 return addWrite(ID_RES2_DigIn_7, &value);
-}
-
-
-int getStatus_RES2_DigIn_7()
-{
-return getStatus(ID_RES2_DigIn_7);
 }
 
 
@@ -7228,12 +5129,6 @@ return addWrite(ID_RES2_DigIn_8, &value);
 }
 
 
-int getStatus_RES2_DigIn_8()
-{
-return getStatus(ID_RES2_DigIn_8);
-}
-
-
 int doWrite_RES2_DigIn_9(int value)
 {
 return doWrite(ID_RES2_DigIn_9,  &value);
@@ -7243,12 +5138,6 @@ return doWrite(ID_RES2_DigIn_9,  &value);
 int addWrite_RES2_DigIn_9(int value)
 {
 return addWrite(ID_RES2_DigIn_9, &value);
-}
-
-
-int getStatus_RES2_DigIn_9()
-{
-return getStatus(ID_RES2_DigIn_9);
 }
 
 
@@ -7264,12 +5153,6 @@ return addWrite(ID_RES2_DigIn_10, &value);
 }
 
 
-int getStatus_RES2_DigIn_10()
-{
-return getStatus(ID_RES2_DigIn_10);
-}
-
-
 int doWrite_RES2_DigIn_11(int value)
 {
 return doWrite(ID_RES2_DigIn_11,  &value);
@@ -7279,12 +5162,6 @@ return doWrite(ID_RES2_DigIn_11,  &value);
 int addWrite_RES2_DigIn_11(int value)
 {
 return addWrite(ID_RES2_DigIn_11, &value);
-}
-
-
-int getStatus_RES2_DigIn_11()
-{
-return getStatus(ID_RES2_DigIn_11);
 }
 
 
@@ -7300,12 +5177,6 @@ return addWrite(ID_RES2_DigIn_12, &value);
 }
 
 
-int getStatus_RES2_DigIn_12()
-{
-return getStatus(ID_RES2_DigIn_12);
-}
-
-
 int doWrite_RES2_DigIn_13(int value)
 {
 return doWrite(ID_RES2_DigIn_13,  &value);
@@ -7315,12 +5186,6 @@ return doWrite(ID_RES2_DigIn_13,  &value);
 int addWrite_RES2_DigIn_13(int value)
 {
 return addWrite(ID_RES2_DigIn_13, &value);
-}
-
-
-int getStatus_RES2_DigIn_13()
-{
-return getStatus(ID_RES2_DigIn_13);
 }
 
 
@@ -7336,12 +5201,6 @@ return addWrite(ID_RES2_DigIn_14, &value);
 }
 
 
-int getStatus_RES2_DigIn_14()
-{
-return getStatus(ID_RES2_DigIn_14);
-}
-
-
 int doWrite_RES2_DigIn_15(int value)
 {
 return doWrite(ID_RES2_DigIn_15,  &value);
@@ -7351,12 +5210,6 @@ return doWrite(ID_RES2_DigIn_15,  &value);
 int addWrite_RES2_DigIn_15(int value)
 {
 return addWrite(ID_RES2_DigIn_15, &value);
-}
-
-
-int getStatus_RES2_DigIn_15()
-{
-return getStatus(ID_RES2_DigIn_15);
 }
 
 
@@ -7372,12 +5225,6 @@ return addWrite(ID_RES2_DigIn_16, &value);
 }
 
 
-int getStatus_RES2_DigIn_16()
-{
-return getStatus(ID_RES2_DigIn_16);
-}
-
-
 int doWrite_TST2_DigOut_1(int value)
 {
 return doWrite(ID_TST2_DigOut_1,  &value);
@@ -7387,12 +5234,6 @@ return doWrite(ID_TST2_DigOut_1,  &value);
 int addWrite_TST2_DigOut_1(int value)
 {
 return addWrite(ID_TST2_DigOut_1, &value);
-}
-
-
-int getStatus_TST2_DigOut_1()
-{
-return getStatus(ID_TST2_DigOut_1);
 }
 
 
@@ -7408,12 +5249,6 @@ return addWrite(ID_TST2_DigOut_2, &value);
 }
 
 
-int getStatus_TST2_DigOut_2()
-{
-return getStatus(ID_TST2_DigOut_2);
-}
-
-
 int doWrite_TST2_DigOut_3(int value)
 {
 return doWrite(ID_TST2_DigOut_3,  &value);
@@ -7423,12 +5258,6 @@ return doWrite(ID_TST2_DigOut_3,  &value);
 int addWrite_TST2_DigOut_3(int value)
 {
 return addWrite(ID_TST2_DigOut_3, &value);
-}
-
-
-int getStatus_TST2_DigOut_3()
-{
-return getStatus(ID_TST2_DigOut_3);
 }
 
 
@@ -7444,12 +5273,6 @@ return addWrite(ID_TST2_DigOut_4, &value);
 }
 
 
-int getStatus_TST2_DigOut_4()
-{
-return getStatus(ID_TST2_DigOut_4);
-}
-
-
 int doWrite_TST2_DigOut_5(int value)
 {
 return doWrite(ID_TST2_DigOut_5,  &value);
@@ -7459,12 +5282,6 @@ return doWrite(ID_TST2_DigOut_5,  &value);
 int addWrite_TST2_DigOut_5(int value)
 {
 return addWrite(ID_TST2_DigOut_5, &value);
-}
-
-
-int getStatus_TST2_DigOut_5()
-{
-return getStatus(ID_TST2_DigOut_5);
 }
 
 
@@ -7480,12 +5297,6 @@ return addWrite(ID_TST2_DigOut_6, &value);
 }
 
 
-int getStatus_TST2_DigOut_6()
-{
-return getStatus(ID_TST2_DigOut_6);
-}
-
-
 int doWrite_TST2_DigOut_7(int value)
 {
 return doWrite(ID_TST2_DigOut_7,  &value);
@@ -7495,12 +5306,6 @@ return doWrite(ID_TST2_DigOut_7,  &value);
 int addWrite_TST2_DigOut_7(int value)
 {
 return addWrite(ID_TST2_DigOut_7, &value);
-}
-
-
-int getStatus_TST2_DigOut_7()
-{
-return getStatus(ID_TST2_DigOut_7);
 }
 
 
@@ -7516,12 +5321,6 @@ return addWrite(ID_TST2_DigOut_8, &value);
 }
 
 
-int getStatus_TST2_DigOut_8()
-{
-return getStatus(ID_TST2_DigOut_8);
-}
-
-
 int doWrite_TST2_DigOut_9(int value)
 {
 return doWrite(ID_TST2_DigOut_9,  &value);
@@ -7531,12 +5330,6 @@ return doWrite(ID_TST2_DigOut_9,  &value);
 int addWrite_TST2_DigOut_9(int value)
 {
 return addWrite(ID_TST2_DigOut_9, &value);
-}
-
-
-int getStatus_TST2_DigOut_9()
-{
-return getStatus(ID_TST2_DigOut_9);
 }
 
 
@@ -7552,12 +5345,6 @@ return addWrite(ID_TST2_DigOut_10, &value);
 }
 
 
-int getStatus_TST2_DigOut_10()
-{
-return getStatus(ID_TST2_DigOut_10);
-}
-
-
 int doWrite_TST2_DigOut_11(int value)
 {
 return doWrite(ID_TST2_DigOut_11,  &value);
@@ -7567,12 +5354,6 @@ return doWrite(ID_TST2_DigOut_11,  &value);
 int addWrite_TST2_DigOut_11(int value)
 {
 return addWrite(ID_TST2_DigOut_11, &value);
-}
-
-
-int getStatus_TST2_DigOut_11()
-{
-return getStatus(ID_TST2_DigOut_11);
 }
 
 
@@ -7588,12 +5369,6 @@ return addWrite(ID_TST2_DigOut_12, &value);
 }
 
 
-int getStatus_TST2_DigOut_12()
-{
-return getStatus(ID_TST2_DigOut_12);
-}
-
-
 int doWrite_TST2_DigOut_13(int value)
 {
 return doWrite(ID_TST2_DigOut_13,  &value);
@@ -7603,12 +5378,6 @@ return doWrite(ID_TST2_DigOut_13,  &value);
 int addWrite_TST2_DigOut_13(int value)
 {
 return addWrite(ID_TST2_DigOut_13, &value);
-}
-
-
-int getStatus_TST2_DigOut_13()
-{
-return getStatus(ID_TST2_DigOut_13);
 }
 
 
@@ -7624,12 +5393,6 @@ return addWrite(ID_TST2_DigOut_14, &value);
 }
 
 
-int getStatus_TST2_DigOut_14()
-{
-return getStatus(ID_TST2_DigOut_14);
-}
-
-
 int doWrite_TST2_DigOut_15(int value)
 {
 return doWrite(ID_TST2_DigOut_15,  &value);
@@ -7639,12 +5402,6 @@ return doWrite(ID_TST2_DigOut_15,  &value);
 int addWrite_TST2_DigOut_15(int value)
 {
 return addWrite(ID_TST2_DigOut_15, &value);
-}
-
-
-int getStatus_TST2_DigOut_15()
-{
-return getStatus(ID_TST2_DigOut_15);
 }
 
 
@@ -7660,12 +5417,6 @@ return addWrite(ID_TST2_DigOut_16, &value);
 }
 
 
-int getStatus_TST2_DigOut_16()
-{
-return getStatus(ID_TST2_DigOut_16);
-}
-
-
 int doWrite_VAL2_DigOut_1(int value)
 {
 return doWrite(ID_VAL2_DigOut_1,  &value);
@@ -7675,12 +5426,6 @@ return doWrite(ID_VAL2_DigOut_1,  &value);
 int addWrite_VAL2_DigOut_1(int value)
 {
 return addWrite(ID_VAL2_DigOut_1, &value);
-}
-
-
-int getStatus_VAL2_DigOut_1()
-{
-return getStatus(ID_VAL2_DigOut_1);
 }
 
 
@@ -7696,12 +5441,6 @@ return addWrite(ID_VAL2_DigOut_2, &value);
 }
 
 
-int getStatus_VAL2_DigOut_2()
-{
-return getStatus(ID_VAL2_DigOut_2);
-}
-
-
 int doWrite_VAL2_DigOut_3(int value)
 {
 return doWrite(ID_VAL2_DigOut_3,  &value);
@@ -7711,12 +5450,6 @@ return doWrite(ID_VAL2_DigOut_3,  &value);
 int addWrite_VAL2_DigOut_3(int value)
 {
 return addWrite(ID_VAL2_DigOut_3, &value);
-}
-
-
-int getStatus_VAL2_DigOut_3()
-{
-return getStatus(ID_VAL2_DigOut_3);
 }
 
 
@@ -7732,12 +5465,6 @@ return addWrite(ID_VAL2_DigOut_4, &value);
 }
 
 
-int getStatus_VAL2_DigOut_4()
-{
-return getStatus(ID_VAL2_DigOut_4);
-}
-
-
 int doWrite_VAL2_DigOut_5(int value)
 {
 return doWrite(ID_VAL2_DigOut_5,  &value);
@@ -7747,12 +5474,6 @@ return doWrite(ID_VAL2_DigOut_5,  &value);
 int addWrite_VAL2_DigOut_5(int value)
 {
 return addWrite(ID_VAL2_DigOut_5, &value);
-}
-
-
-int getStatus_VAL2_DigOut_5()
-{
-return getStatus(ID_VAL2_DigOut_5);
 }
 
 
@@ -7768,12 +5489,6 @@ return addWrite(ID_VAL2_DigOut_6, &value);
 }
 
 
-int getStatus_VAL2_DigOut_6()
-{
-return getStatus(ID_VAL2_DigOut_6);
-}
-
-
 int doWrite_VAL2_DigOut_7(int value)
 {
 return doWrite(ID_VAL2_DigOut_7,  &value);
@@ -7783,12 +5498,6 @@ return doWrite(ID_VAL2_DigOut_7,  &value);
 int addWrite_VAL2_DigOut_7(int value)
 {
 return addWrite(ID_VAL2_DigOut_7, &value);
-}
-
-
-int getStatus_VAL2_DigOut_7()
-{
-return getStatus(ID_VAL2_DigOut_7);
 }
 
 
@@ -7804,12 +5513,6 @@ return addWrite(ID_VAL2_DigOut_8, &value);
 }
 
 
-int getStatus_VAL2_DigOut_8()
-{
-return getStatus(ID_VAL2_DigOut_8);
-}
-
-
 int doWrite_VAL2_DigOut_9(int value)
 {
 return doWrite(ID_VAL2_DigOut_9,  &value);
@@ -7819,12 +5522,6 @@ return doWrite(ID_VAL2_DigOut_9,  &value);
 int addWrite_VAL2_DigOut_9(int value)
 {
 return addWrite(ID_VAL2_DigOut_9, &value);
-}
-
-
-int getStatus_VAL2_DigOut_9()
-{
-return getStatus(ID_VAL2_DigOut_9);
 }
 
 
@@ -7840,12 +5537,6 @@ return addWrite(ID_VAL2_DigOut_10, &value);
 }
 
 
-int getStatus_VAL2_DigOut_10()
-{
-return getStatus(ID_VAL2_DigOut_10);
-}
-
-
 int doWrite_VAL2_DigOut_11(int value)
 {
 return doWrite(ID_VAL2_DigOut_11,  &value);
@@ -7855,12 +5546,6 @@ return doWrite(ID_VAL2_DigOut_11,  &value);
 int addWrite_VAL2_DigOut_11(int value)
 {
 return addWrite(ID_VAL2_DigOut_11, &value);
-}
-
-
-int getStatus_VAL2_DigOut_11()
-{
-return getStatus(ID_VAL2_DigOut_11);
 }
 
 
@@ -7876,12 +5561,6 @@ return addWrite(ID_VAL2_DigOut_12, &value);
 }
 
 
-int getStatus_VAL2_DigOut_12()
-{
-return getStatus(ID_VAL2_DigOut_12);
-}
-
-
 int doWrite_VAL2_DigOut_13(int value)
 {
 return doWrite(ID_VAL2_DigOut_13,  &value);
@@ -7891,12 +5570,6 @@ return doWrite(ID_VAL2_DigOut_13,  &value);
 int addWrite_VAL2_DigOut_13(int value)
 {
 return addWrite(ID_VAL2_DigOut_13, &value);
-}
-
-
-int getStatus_VAL2_DigOut_13()
-{
-return getStatus(ID_VAL2_DigOut_13);
 }
 
 
@@ -7912,12 +5585,6 @@ return addWrite(ID_VAL2_DigOut_14, &value);
 }
 
 
-int getStatus_VAL2_DigOut_14()
-{
-return getStatus(ID_VAL2_DigOut_14);
-}
-
-
 int doWrite_VAL2_DigOut_15(int value)
 {
 return doWrite(ID_VAL2_DigOut_15,  &value);
@@ -7927,12 +5594,6 @@ return doWrite(ID_VAL2_DigOut_15,  &value);
 int addWrite_VAL2_DigOut_15(int value)
 {
 return addWrite(ID_VAL2_DigOut_15, &value);
-}
-
-
-int getStatus_VAL2_DigOut_15()
-{
-return getStatus(ID_VAL2_DigOut_15);
 }
 
 
@@ -7948,12 +5609,6 @@ return addWrite(ID_VAL2_DigOut_16, &value);
 }
 
 
-int getStatus_VAL2_DigOut_16()
-{
-return getStatus(ID_VAL2_DigOut_16);
-}
-
-
 int doWrite_RES2_DigOut_1(int value)
 {
 return doWrite(ID_RES2_DigOut_1,  &value);
@@ -7963,12 +5618,6 @@ return doWrite(ID_RES2_DigOut_1,  &value);
 int addWrite_RES2_DigOut_1(int value)
 {
 return addWrite(ID_RES2_DigOut_1, &value);
-}
-
-
-int getStatus_RES2_DigOut_1()
-{
-return getStatus(ID_RES2_DigOut_1);
 }
 
 
@@ -7984,12 +5633,6 @@ return addWrite(ID_RES2_DigOut_2, &value);
 }
 
 
-int getStatus_RES2_DigOut_2()
-{
-return getStatus(ID_RES2_DigOut_2);
-}
-
-
 int doWrite_RES2_DigOut_3(int value)
 {
 return doWrite(ID_RES2_DigOut_3,  &value);
@@ -7999,12 +5642,6 @@ return doWrite(ID_RES2_DigOut_3,  &value);
 int addWrite_RES2_DigOut_3(int value)
 {
 return addWrite(ID_RES2_DigOut_3, &value);
-}
-
-
-int getStatus_RES2_DigOut_3()
-{
-return getStatus(ID_RES2_DigOut_3);
 }
 
 
@@ -8020,12 +5657,6 @@ return addWrite(ID_RES2_DigOut_4, &value);
 }
 
 
-int getStatus_RES2_DigOut_4()
-{
-return getStatus(ID_RES2_DigOut_4);
-}
-
-
 int doWrite_RES2_DigOut_5(int value)
 {
 return doWrite(ID_RES2_DigOut_5,  &value);
@@ -8035,12 +5666,6 @@ return doWrite(ID_RES2_DigOut_5,  &value);
 int addWrite_RES2_DigOut_5(int value)
 {
 return addWrite(ID_RES2_DigOut_5, &value);
-}
-
-
-int getStatus_RES2_DigOut_5()
-{
-return getStatus(ID_RES2_DigOut_5);
 }
 
 
@@ -8056,12 +5681,6 @@ return addWrite(ID_RES2_DigOut_6, &value);
 }
 
 
-int getStatus_RES2_DigOut_6()
-{
-return getStatus(ID_RES2_DigOut_6);
-}
-
-
 int doWrite_RES2_DigOut_7(int value)
 {
 return doWrite(ID_RES2_DigOut_7,  &value);
@@ -8071,12 +5690,6 @@ return doWrite(ID_RES2_DigOut_7,  &value);
 int addWrite_RES2_DigOut_7(int value)
 {
 return addWrite(ID_RES2_DigOut_7, &value);
-}
-
-
-int getStatus_RES2_DigOut_7()
-{
-return getStatus(ID_RES2_DigOut_7);
 }
 
 
@@ -8092,12 +5705,6 @@ return addWrite(ID_RES2_DigOut_8, &value);
 }
 
 
-int getStatus_RES2_DigOut_8()
-{
-return getStatus(ID_RES2_DigOut_8);
-}
-
-
 int doWrite_RES2_DigOut_9(int value)
 {
 return doWrite(ID_RES2_DigOut_9,  &value);
@@ -8107,12 +5714,6 @@ return doWrite(ID_RES2_DigOut_9,  &value);
 int addWrite_RES2_DigOut_9(int value)
 {
 return addWrite(ID_RES2_DigOut_9, &value);
-}
-
-
-int getStatus_RES2_DigOut_9()
-{
-return getStatus(ID_RES2_DigOut_9);
 }
 
 
@@ -8128,12 +5729,6 @@ return addWrite(ID_RES2_DigOut_10, &value);
 }
 
 
-int getStatus_RES2_DigOut_10()
-{
-return getStatus(ID_RES2_DigOut_10);
-}
-
-
 int doWrite_RES2_DigOut_11(int value)
 {
 return doWrite(ID_RES2_DigOut_11,  &value);
@@ -8143,12 +5738,6 @@ return doWrite(ID_RES2_DigOut_11,  &value);
 int addWrite_RES2_DigOut_11(int value)
 {
 return addWrite(ID_RES2_DigOut_11, &value);
-}
-
-
-int getStatus_RES2_DigOut_11()
-{
-return getStatus(ID_RES2_DigOut_11);
 }
 
 
@@ -8164,12 +5753,6 @@ return addWrite(ID_RES2_DigOut_12, &value);
 }
 
 
-int getStatus_RES2_DigOut_12()
-{
-return getStatus(ID_RES2_DigOut_12);
-}
-
-
 int doWrite_RES2_DigOut_13(int value)
 {
 return doWrite(ID_RES2_DigOut_13,  &value);
@@ -8179,12 +5762,6 @@ return doWrite(ID_RES2_DigOut_13,  &value);
 int addWrite_RES2_DigOut_13(int value)
 {
 return addWrite(ID_RES2_DigOut_13, &value);
-}
-
-
-int getStatus_RES2_DigOut_13()
-{
-return getStatus(ID_RES2_DigOut_13);
 }
 
 
@@ -8200,12 +5777,6 @@ return addWrite(ID_RES2_DigOut_14, &value);
 }
 
 
-int getStatus_RES2_DigOut_14()
-{
-return getStatus(ID_RES2_DigOut_14);
-}
-
-
 int doWrite_RES2_DigOut_15(int value)
 {
 return doWrite(ID_RES2_DigOut_15,  &value);
@@ -8215,12 +5786,6 @@ return doWrite(ID_RES2_DigOut_15,  &value);
 int addWrite_RES2_DigOut_15(int value)
 {
 return addWrite(ID_RES2_DigOut_15, &value);
-}
-
-
-int getStatus_RES2_DigOut_15()
-{
-return getStatus(ID_RES2_DigOut_15);
 }
 
 
@@ -8236,12 +5801,6 @@ return addWrite(ID_RES2_DigOut_16, &value);
 }
 
 
-int getStatus_RES2_DigOut_16()
-{
-return getStatus(ID_RES2_DigOut_16);
-}
-
-
 int doWrite_TST2_AnIn_1(int value)
 {
 return doWrite(ID_TST2_AnIn_1,  &value);
@@ -8251,12 +5810,6 @@ return doWrite(ID_TST2_AnIn_1,  &value);
 int addWrite_TST2_AnIn_1(int value)
 {
 return addWrite(ID_TST2_AnIn_1, &value);
-}
-
-
-int getStatus_TST2_AnIn_1()
-{
-return getStatus(ID_TST2_AnIn_1);
 }
 
 
@@ -8272,12 +5825,6 @@ return addWrite(ID_TST2_AnIn_2, &value);
 }
 
 
-int getStatus_TST2_AnIn_2()
-{
-return getStatus(ID_TST2_AnIn_2);
-}
-
-
 int doWrite_TST2_AnIn_3(int value)
 {
 return doWrite(ID_TST2_AnIn_3,  &value);
@@ -8287,12 +5834,6 @@ return doWrite(ID_TST2_AnIn_3,  &value);
 int addWrite_TST2_AnIn_3(int value)
 {
 return addWrite(ID_TST2_AnIn_3, &value);
-}
-
-
-int getStatus_TST2_AnIn_3()
-{
-return getStatus(ID_TST2_AnIn_3);
 }
 
 
@@ -8308,12 +5849,6 @@ return addWrite(ID_TST2_AnIn_4, &value);
 }
 
 
-int getStatus_TST2_AnIn_4()
-{
-return getStatus(ID_TST2_AnIn_4);
-}
-
-
 int doWrite_TST2_AnIn_5(int value)
 {
 return doWrite(ID_TST2_AnIn_5,  &value);
@@ -8323,12 +5858,6 @@ return doWrite(ID_TST2_AnIn_5,  &value);
 int addWrite_TST2_AnIn_5(int value)
 {
 return addWrite(ID_TST2_AnIn_5, &value);
-}
-
-
-int getStatus_TST2_AnIn_5()
-{
-return getStatus(ID_TST2_AnIn_5);
 }
 
 
@@ -8344,12 +5873,6 @@ return addWrite(ID_TST2_AnIn_6, &value);
 }
 
 
-int getStatus_TST2_AnIn_6()
-{
-return getStatus(ID_TST2_AnIn_6);
-}
-
-
 int doWrite_TST2_AnIn_7(int value)
 {
 return doWrite(ID_TST2_AnIn_7,  &value);
@@ -8359,12 +5882,6 @@ return doWrite(ID_TST2_AnIn_7,  &value);
 int addWrite_TST2_AnIn_7(int value)
 {
 return addWrite(ID_TST2_AnIn_7, &value);
-}
-
-
-int getStatus_TST2_AnIn_7()
-{
-return getStatus(ID_TST2_AnIn_7);
 }
 
 
@@ -8380,12 +5897,6 @@ return addWrite(ID_TST2_AnIn_8, &value);
 }
 
 
-int getStatus_TST2_AnIn_8()
-{
-return getStatus(ID_TST2_AnIn_8);
-}
-
-
 int doWrite_TST2_AnIn_9(int value)
 {
 return doWrite(ID_TST2_AnIn_9,  &value);
@@ -8395,12 +5906,6 @@ return doWrite(ID_TST2_AnIn_9,  &value);
 int addWrite_TST2_AnIn_9(int value)
 {
 return addWrite(ID_TST2_AnIn_9, &value);
-}
-
-
-int getStatus_TST2_AnIn_9()
-{
-return getStatus(ID_TST2_AnIn_9);
 }
 
 
@@ -8416,12 +5921,6 @@ return addWrite(ID_TST2_AnIn_10, &value);
 }
 
 
-int getStatus_TST2_AnIn_10()
-{
-return getStatus(ID_TST2_AnIn_10);
-}
-
-
 int doWrite_TST2_AnIn_11(int value)
 {
 return doWrite(ID_TST2_AnIn_11,  &value);
@@ -8431,12 +5930,6 @@ return doWrite(ID_TST2_AnIn_11,  &value);
 int addWrite_TST2_AnIn_11(int value)
 {
 return addWrite(ID_TST2_AnIn_11, &value);
-}
-
-
-int getStatus_TST2_AnIn_11()
-{
-return getStatus(ID_TST2_AnIn_11);
 }
 
 
@@ -8452,12 +5945,6 @@ return addWrite(ID_TST2_AnIn_12, &value);
 }
 
 
-int getStatus_TST2_AnIn_12()
-{
-return getStatus(ID_TST2_AnIn_12);
-}
-
-
 int doWrite_VAL2_AnIn_1(int16_t value)
 {
 return doWrite(ID_VAL2_AnIn_1,  &value);
@@ -8467,12 +5954,6 @@ return doWrite(ID_VAL2_AnIn_1,  &value);
 int addWrite_VAL2_AnIn_1(int16_t value)
 {
 return addWrite(ID_VAL2_AnIn_1, &value);
-}
-
-
-int getStatus_VAL2_AnIn_1()
-{
-return getStatus(ID_VAL2_AnIn_1);
 }
 
 
@@ -8488,12 +5969,6 @@ return addWrite(ID_VAL2_AnIn_2, &value);
 }
 
 
-int getStatus_VAL2_AnIn_2()
-{
-return getStatus(ID_VAL2_AnIn_2);
-}
-
-
 int doWrite_VAL2_AnIn_3(int16_t value)
 {
 return doWrite(ID_VAL2_AnIn_3,  &value);
@@ -8503,12 +5978,6 @@ return doWrite(ID_VAL2_AnIn_3,  &value);
 int addWrite_VAL2_AnIn_3(int16_t value)
 {
 return addWrite(ID_VAL2_AnIn_3, &value);
-}
-
-
-int getStatus_VAL2_AnIn_3()
-{
-return getStatus(ID_VAL2_AnIn_3);
 }
 
 
@@ -8524,12 +5993,6 @@ return addWrite(ID_VAL2_AnIn_4, &value);
 }
 
 
-int getStatus_VAL2_AnIn_4()
-{
-return getStatus(ID_VAL2_AnIn_4);
-}
-
-
 int doWrite_VAL2_AnIn_5(int16_t value)
 {
 return doWrite(ID_VAL2_AnIn_5,  &value);
@@ -8539,12 +6002,6 @@ return doWrite(ID_VAL2_AnIn_5,  &value);
 int addWrite_VAL2_AnIn_5(int16_t value)
 {
 return addWrite(ID_VAL2_AnIn_5, &value);
-}
-
-
-int getStatus_VAL2_AnIn_5()
-{
-return getStatus(ID_VAL2_AnIn_5);
 }
 
 
@@ -8560,12 +6017,6 @@ return addWrite(ID_VAL2_AnIn_6, &value);
 }
 
 
-int getStatus_VAL2_AnIn_6()
-{
-return getStatus(ID_VAL2_AnIn_6);
-}
-
-
 int doWrite_VAL2_AnIn_7(int16_t value)
 {
 return doWrite(ID_VAL2_AnIn_7,  &value);
@@ -8575,12 +6026,6 @@ return doWrite(ID_VAL2_AnIn_7,  &value);
 int addWrite_VAL2_AnIn_7(int16_t value)
 {
 return addWrite(ID_VAL2_AnIn_7, &value);
-}
-
-
-int getStatus_VAL2_AnIn_7()
-{
-return getStatus(ID_VAL2_AnIn_7);
 }
 
 
@@ -8596,12 +6041,6 @@ return addWrite(ID_VAL2_AnIn_8, &value);
 }
 
 
-int getStatus_VAL2_AnIn_8()
-{
-return getStatus(ID_VAL2_AnIn_8);
-}
-
-
 int doWrite_VAL2_AnIn_9(int16_t value)
 {
 return doWrite(ID_VAL2_AnIn_9,  &value);
@@ -8611,12 +6050,6 @@ return doWrite(ID_VAL2_AnIn_9,  &value);
 int addWrite_VAL2_AnIn_9(int16_t value)
 {
 return addWrite(ID_VAL2_AnIn_9, &value);
-}
-
-
-int getStatus_VAL2_AnIn_9()
-{
-return getStatus(ID_VAL2_AnIn_9);
 }
 
 
@@ -8632,12 +6065,6 @@ return addWrite(ID_VAL2_AnIn_10, &value);
 }
 
 
-int getStatus_VAL2_AnIn_10()
-{
-return getStatus(ID_VAL2_AnIn_10);
-}
-
-
 int doWrite_VAL2_AnIn_11(int16_t value)
 {
 return doWrite(ID_VAL2_AnIn_11,  &value);
@@ -8647,12 +6074,6 @@ return doWrite(ID_VAL2_AnIn_11,  &value);
 int addWrite_VAL2_AnIn_11(int16_t value)
 {
 return addWrite(ID_VAL2_AnIn_11, &value);
-}
-
-
-int getStatus_VAL2_AnIn_11()
-{
-return getStatus(ID_VAL2_AnIn_11);
 }
 
 
@@ -8668,12 +6089,6 @@ return addWrite(ID_VAL2_AnIn_12, &value);
 }
 
 
-int getStatus_VAL2_AnIn_12()
-{
-return getStatus(ID_VAL2_AnIn_12);
-}
-
-
 int doWrite_VAL2_AnInConf_1(u_int16_t value)
 {
 return doWrite(ID_VAL2_AnInConf_1,  &value);
@@ -8683,12 +6098,6 @@ return doWrite(ID_VAL2_AnInConf_1,  &value);
 int addWrite_VAL2_AnInConf_1(u_int16_t value)
 {
 return addWrite(ID_VAL2_AnInConf_1, &value);
-}
-
-
-int getStatus_VAL2_AnInConf_1()
-{
-return getStatus(ID_VAL2_AnInConf_1);
 }
 
 
@@ -8704,12 +6113,6 @@ return addWrite(ID_VAL2_AnInConf_2, &value);
 }
 
 
-int getStatus_VAL2_AnInConf_2()
-{
-return getStatus(ID_VAL2_AnInConf_2);
-}
-
-
 int doWrite_VAL2_AnInConf_3(u_int16_t value)
 {
 return doWrite(ID_VAL2_AnInConf_3,  &value);
@@ -8719,12 +6122,6 @@ return doWrite(ID_VAL2_AnInConf_3,  &value);
 int addWrite_VAL2_AnInConf_3(u_int16_t value)
 {
 return addWrite(ID_VAL2_AnInConf_3, &value);
-}
-
-
-int getStatus_VAL2_AnInConf_3()
-{
-return getStatus(ID_VAL2_AnInConf_3);
 }
 
 
@@ -8740,12 +6137,6 @@ return addWrite(ID_VAL2_AnInConf_4, &value);
 }
 
 
-int getStatus_VAL2_AnInConf_4()
-{
-return getStatus(ID_VAL2_AnInConf_4);
-}
-
-
 int doWrite_VAL2_AnInConf_5(u_int16_t value)
 {
 return doWrite(ID_VAL2_AnInConf_5,  &value);
@@ -8755,12 +6146,6 @@ return doWrite(ID_VAL2_AnInConf_5,  &value);
 int addWrite_VAL2_AnInConf_5(u_int16_t value)
 {
 return addWrite(ID_VAL2_AnInConf_5, &value);
-}
-
-
-int getStatus_VAL2_AnInConf_5()
-{
-return getStatus(ID_VAL2_AnInConf_5);
 }
 
 
@@ -8776,12 +6161,6 @@ return addWrite(ID_VAL2_AnInConf_6, &value);
 }
 
 
-int getStatus_VAL2_AnInConf_6()
-{
-return getStatus(ID_VAL2_AnInConf_6);
-}
-
-
 int doWrite_VAL2_AnInConf_7(u_int16_t value)
 {
 return doWrite(ID_VAL2_AnInConf_7,  &value);
@@ -8791,12 +6170,6 @@ return doWrite(ID_VAL2_AnInConf_7,  &value);
 int addWrite_VAL2_AnInConf_7(u_int16_t value)
 {
 return addWrite(ID_VAL2_AnInConf_7, &value);
-}
-
-
-int getStatus_VAL2_AnInConf_7()
-{
-return getStatus(ID_VAL2_AnInConf_7);
 }
 
 
@@ -8812,12 +6185,6 @@ return addWrite(ID_VAL2_AnInConf_8, &value);
 }
 
 
-int getStatus_VAL2_AnInConf_8()
-{
-return getStatus(ID_VAL2_AnInConf_8);
-}
-
-
 int doWrite_VAL2_AnInConf_9(u_int16_t value)
 {
 return doWrite(ID_VAL2_AnInConf_9,  &value);
@@ -8827,12 +6194,6 @@ return doWrite(ID_VAL2_AnInConf_9,  &value);
 int addWrite_VAL2_AnInConf_9(u_int16_t value)
 {
 return addWrite(ID_VAL2_AnInConf_9, &value);
-}
-
-
-int getStatus_VAL2_AnInConf_9()
-{
-return getStatus(ID_VAL2_AnInConf_9);
 }
 
 
@@ -8848,12 +6209,6 @@ return addWrite(ID_VAL2_AnInConf_10, &value);
 }
 
 
-int getStatus_VAL2_AnInConf_10()
-{
-return getStatus(ID_VAL2_AnInConf_10);
-}
-
-
 int doWrite_VAL2_AnInConf_11(u_int16_t value)
 {
 return doWrite(ID_VAL2_AnInConf_11,  &value);
@@ -8863,12 +6218,6 @@ return doWrite(ID_VAL2_AnInConf_11,  &value);
 int addWrite_VAL2_AnInConf_11(u_int16_t value)
 {
 return addWrite(ID_VAL2_AnInConf_11, &value);
-}
-
-
-int getStatus_VAL2_AnInConf_11()
-{
-return getStatus(ID_VAL2_AnInConf_11);
 }
 
 
@@ -8884,12 +6233,6 @@ return addWrite(ID_VAL2_AnInConf_12, &value);
 }
 
 
-int getStatus_VAL2_AnInConf_12()
-{
-return getStatus(ID_VAL2_AnInConf_12);
-}
-
-
 int doWrite_VAL2_AnInFltr_1(u_int16_t value)
 {
 return doWrite(ID_VAL2_AnInFltr_1,  &value);
@@ -8899,12 +6242,6 @@ return doWrite(ID_VAL2_AnInFltr_1,  &value);
 int addWrite_VAL2_AnInFltr_1(u_int16_t value)
 {
 return addWrite(ID_VAL2_AnInFltr_1, &value);
-}
-
-
-int getStatus_VAL2_AnInFltr_1()
-{
-return getStatus(ID_VAL2_AnInFltr_1);
 }
 
 
@@ -8920,12 +6257,6 @@ return addWrite(ID_VAL2_AnInFltr_2, &value);
 }
 
 
-int getStatus_VAL2_AnInFltr_2()
-{
-return getStatus(ID_VAL2_AnInFltr_2);
-}
-
-
 int doWrite_VAL2_AnInFltr_3(u_int16_t value)
 {
 return doWrite(ID_VAL2_AnInFltr_3,  &value);
@@ -8935,12 +6266,6 @@ return doWrite(ID_VAL2_AnInFltr_3,  &value);
 int addWrite_VAL2_AnInFltr_3(u_int16_t value)
 {
 return addWrite(ID_VAL2_AnInFltr_3, &value);
-}
-
-
-int getStatus_VAL2_AnInFltr_3()
-{
-return getStatus(ID_VAL2_AnInFltr_3);
 }
 
 
@@ -8956,12 +6281,6 @@ return addWrite(ID_VAL2_AnInFltr_4, &value);
 }
 
 
-int getStatus_VAL2_AnInFltr_4()
-{
-return getStatus(ID_VAL2_AnInFltr_4);
-}
-
-
 int doWrite_VAL2_AnInFltr_5(u_int16_t value)
 {
 return doWrite(ID_VAL2_AnInFltr_5,  &value);
@@ -8971,12 +6290,6 @@ return doWrite(ID_VAL2_AnInFltr_5,  &value);
 int addWrite_VAL2_AnInFltr_5(u_int16_t value)
 {
 return addWrite(ID_VAL2_AnInFltr_5, &value);
-}
-
-
-int getStatus_VAL2_AnInFltr_5()
-{
-return getStatus(ID_VAL2_AnInFltr_5);
 }
 
 
@@ -8992,12 +6305,6 @@ return addWrite(ID_VAL2_AnInFltr_6, &value);
 }
 
 
-int getStatus_VAL2_AnInFltr_6()
-{
-return getStatus(ID_VAL2_AnInFltr_6);
-}
-
-
 int doWrite_VAL2_AnInFltr_7(u_int16_t value)
 {
 return doWrite(ID_VAL2_AnInFltr_7,  &value);
@@ -9007,12 +6314,6 @@ return doWrite(ID_VAL2_AnInFltr_7,  &value);
 int addWrite_VAL2_AnInFltr_7(u_int16_t value)
 {
 return addWrite(ID_VAL2_AnInFltr_7, &value);
-}
-
-
-int getStatus_VAL2_AnInFltr_7()
-{
-return getStatus(ID_VAL2_AnInFltr_7);
 }
 
 
@@ -9028,12 +6329,6 @@ return addWrite(ID_VAL2_AnInFltr_8, &value);
 }
 
 
-int getStatus_VAL2_AnInFltr_8()
-{
-return getStatus(ID_VAL2_AnInFltr_8);
-}
-
-
 int doWrite_VAL2_AnInFltr_9(u_int16_t value)
 {
 return doWrite(ID_VAL2_AnInFltr_9,  &value);
@@ -9043,12 +6338,6 @@ return doWrite(ID_VAL2_AnInFltr_9,  &value);
 int addWrite_VAL2_AnInFltr_9(u_int16_t value)
 {
 return addWrite(ID_VAL2_AnInFltr_9, &value);
-}
-
-
-int getStatus_VAL2_AnInFltr_9()
-{
-return getStatus(ID_VAL2_AnInFltr_9);
 }
 
 
@@ -9064,12 +6353,6 @@ return addWrite(ID_VAL2_AnInFltr_10, &value);
 }
 
 
-int getStatus_VAL2_AnInFltr_10()
-{
-return getStatus(ID_VAL2_AnInFltr_10);
-}
-
-
 int doWrite_VAL2_AnInFltr_11(u_int16_t value)
 {
 return doWrite(ID_VAL2_AnInFltr_11,  &value);
@@ -9079,12 +6362,6 @@ return doWrite(ID_VAL2_AnInFltr_11,  &value);
 int addWrite_VAL2_AnInFltr_11(u_int16_t value)
 {
 return addWrite(ID_VAL2_AnInFltr_11, &value);
-}
-
-
-int getStatus_VAL2_AnInFltr_11()
-{
-return getStatus(ID_VAL2_AnInFltr_11);
 }
 
 
@@ -9100,12 +6377,6 @@ return addWrite(ID_VAL2_AnInFltr_12, &value);
 }
 
 
-int getStatus_VAL2_AnInFltr_12()
-{
-return getStatus(ID_VAL2_AnInFltr_12);
-}
-
-
 int doWrite_RES2_AnIn_1(int16_t value)
 {
 return doWrite(ID_RES2_AnIn_1,  &value);
@@ -9115,12 +6386,6 @@ return doWrite(ID_RES2_AnIn_1,  &value);
 int addWrite_RES2_AnIn_1(int16_t value)
 {
 return addWrite(ID_RES2_AnIn_1, &value);
-}
-
-
-int getStatus_RES2_AnIn_1()
-{
-return getStatus(ID_RES2_AnIn_1);
 }
 
 
@@ -9136,12 +6401,6 @@ return addWrite(ID_RES2_AnIn_2, &value);
 }
 
 
-int getStatus_RES2_AnIn_2()
-{
-return getStatus(ID_RES2_AnIn_2);
-}
-
-
 int doWrite_RES2_AnIn_3(int16_t value)
 {
 return doWrite(ID_RES2_AnIn_3,  &value);
@@ -9151,12 +6410,6 @@ return doWrite(ID_RES2_AnIn_3,  &value);
 int addWrite_RES2_AnIn_3(int16_t value)
 {
 return addWrite(ID_RES2_AnIn_3, &value);
-}
-
-
-int getStatus_RES2_AnIn_3()
-{
-return getStatus(ID_RES2_AnIn_3);
 }
 
 
@@ -9172,12 +6425,6 @@ return addWrite(ID_RES2_AnIn_4, &value);
 }
 
 
-int getStatus_RES2_AnIn_4()
-{
-return getStatus(ID_RES2_AnIn_4);
-}
-
-
 int doWrite_RES2_AnIn_5(int16_t value)
 {
 return doWrite(ID_RES2_AnIn_5,  &value);
@@ -9187,12 +6434,6 @@ return doWrite(ID_RES2_AnIn_5,  &value);
 int addWrite_RES2_AnIn_5(int16_t value)
 {
 return addWrite(ID_RES2_AnIn_5, &value);
-}
-
-
-int getStatus_RES2_AnIn_5()
-{
-return getStatus(ID_RES2_AnIn_5);
 }
 
 
@@ -9208,12 +6449,6 @@ return addWrite(ID_RES2_AnIn_6, &value);
 }
 
 
-int getStatus_RES2_AnIn_6()
-{
-return getStatus(ID_RES2_AnIn_6);
-}
-
-
 int doWrite_RES2_AnIn_7(int16_t value)
 {
 return doWrite(ID_RES2_AnIn_7,  &value);
@@ -9223,12 +6458,6 @@ return doWrite(ID_RES2_AnIn_7,  &value);
 int addWrite_RES2_AnIn_7(int16_t value)
 {
 return addWrite(ID_RES2_AnIn_7, &value);
-}
-
-
-int getStatus_RES2_AnIn_7()
-{
-return getStatus(ID_RES2_AnIn_7);
 }
 
 
@@ -9244,12 +6473,6 @@ return addWrite(ID_RES2_AnIn_8, &value);
 }
 
 
-int getStatus_RES2_AnIn_8()
-{
-return getStatus(ID_RES2_AnIn_8);
-}
-
-
 int doWrite_RES2_AnIn_9(int16_t value)
 {
 return doWrite(ID_RES2_AnIn_9,  &value);
@@ -9259,12 +6482,6 @@ return doWrite(ID_RES2_AnIn_9,  &value);
 int addWrite_RES2_AnIn_9(int16_t value)
 {
 return addWrite(ID_RES2_AnIn_9, &value);
-}
-
-
-int getStatus_RES2_AnIn_9()
-{
-return getStatus(ID_RES2_AnIn_9);
 }
 
 
@@ -9280,12 +6497,6 @@ return addWrite(ID_RES2_AnIn_10, &value);
 }
 
 
-int getStatus_RES2_AnIn_10()
-{
-return getStatus(ID_RES2_AnIn_10);
-}
-
-
 int doWrite_RES2_AnIn_11(int16_t value)
 {
 return doWrite(ID_RES2_AnIn_11,  &value);
@@ -9295,12 +6506,6 @@ return doWrite(ID_RES2_AnIn_11,  &value);
 int addWrite_RES2_AnIn_11(int16_t value)
 {
 return addWrite(ID_RES2_AnIn_11, &value);
-}
-
-
-int getStatus_RES2_AnIn_11()
-{
-return getStatus(ID_RES2_AnIn_11);
 }
 
 
@@ -9316,12 +6521,6 @@ return addWrite(ID_RES2_AnIn_12, &value);
 }
 
 
-int getStatus_RES2_AnIn_12()
-{
-return getStatus(ID_RES2_AnIn_12);
-}
-
-
 int doWrite_RES2_AnInStts_1(int16_t value)
 {
 return doWrite(ID_RES2_AnInStts_1,  &value);
@@ -9331,12 +6530,6 @@ return doWrite(ID_RES2_AnInStts_1,  &value);
 int addWrite_RES2_AnInStts_1(int16_t value)
 {
 return addWrite(ID_RES2_AnInStts_1, &value);
-}
-
-
-int getStatus_RES2_AnInStts_1()
-{
-return getStatus(ID_RES2_AnInStts_1);
 }
 
 
@@ -9352,12 +6545,6 @@ return addWrite(ID_RES2_AnInStts_2, &value);
 }
 
 
-int getStatus_RES2_AnInStts_2()
-{
-return getStatus(ID_RES2_AnInStts_2);
-}
-
-
 int doWrite_RES2_AnInStts_3(int16_t value)
 {
 return doWrite(ID_RES2_AnInStts_3,  &value);
@@ -9367,12 +6554,6 @@ return doWrite(ID_RES2_AnInStts_3,  &value);
 int addWrite_RES2_AnInStts_3(int16_t value)
 {
 return addWrite(ID_RES2_AnInStts_3, &value);
-}
-
-
-int getStatus_RES2_AnInStts_3()
-{
-return getStatus(ID_RES2_AnInStts_3);
 }
 
 
@@ -9388,12 +6569,6 @@ return addWrite(ID_RES2_AnInStts_4, &value);
 }
 
 
-int getStatus_RES2_AnInStts_4()
-{
-return getStatus(ID_RES2_AnInStts_4);
-}
-
-
 int doWrite_RES2_AnInStts_5(int16_t value)
 {
 return doWrite(ID_RES2_AnInStts_5,  &value);
@@ -9403,12 +6578,6 @@ return doWrite(ID_RES2_AnInStts_5,  &value);
 int addWrite_RES2_AnInStts_5(int16_t value)
 {
 return addWrite(ID_RES2_AnInStts_5, &value);
-}
-
-
-int getStatus_RES2_AnInStts_5()
-{
-return getStatus(ID_RES2_AnInStts_5);
 }
 
 
@@ -9424,12 +6593,6 @@ return addWrite(ID_RES2_AnInStts_6, &value);
 }
 
 
-int getStatus_RES2_AnInStts_6()
-{
-return getStatus(ID_RES2_AnInStts_6);
-}
-
-
 int doWrite_RES2_AnInStts_7(int16_t value)
 {
 return doWrite(ID_RES2_AnInStts_7,  &value);
@@ -9439,12 +6602,6 @@ return doWrite(ID_RES2_AnInStts_7,  &value);
 int addWrite_RES2_AnInStts_7(int16_t value)
 {
 return addWrite(ID_RES2_AnInStts_7, &value);
-}
-
-
-int getStatus_RES2_AnInStts_7()
-{
-return getStatus(ID_RES2_AnInStts_7);
 }
 
 
@@ -9460,12 +6617,6 @@ return addWrite(ID_RES2_AnInStts_8, &value);
 }
 
 
-int getStatus_RES2_AnInStts_8()
-{
-return getStatus(ID_RES2_AnInStts_8);
-}
-
-
 int doWrite_RES2_AnInStts_9(int16_t value)
 {
 return doWrite(ID_RES2_AnInStts_9,  &value);
@@ -9475,12 +6626,6 @@ return doWrite(ID_RES2_AnInStts_9,  &value);
 int addWrite_RES2_AnInStts_9(int16_t value)
 {
 return addWrite(ID_RES2_AnInStts_9, &value);
-}
-
-
-int getStatus_RES2_AnInStts_9()
-{
-return getStatus(ID_RES2_AnInStts_9);
 }
 
 
@@ -9496,12 +6641,6 @@ return addWrite(ID_RES2_AnInStts_10, &value);
 }
 
 
-int getStatus_RES2_AnInStts_10()
-{
-return getStatus(ID_RES2_AnInStts_10);
-}
-
-
 int doWrite_RES2_AnInStts_11(int16_t value)
 {
 return doWrite(ID_RES2_AnInStts_11,  &value);
@@ -9511,12 +6650,6 @@ return doWrite(ID_RES2_AnInStts_11,  &value);
 int addWrite_RES2_AnInStts_11(int16_t value)
 {
 return addWrite(ID_RES2_AnInStts_11, &value);
-}
-
-
-int getStatus_RES2_AnInStts_11()
-{
-return getStatus(ID_RES2_AnInStts_11);
 }
 
 
@@ -9532,12 +6665,6 @@ return addWrite(ID_RES2_AnInStts_12, &value);
 }
 
 
-int getStatus_RES2_AnInStts_12()
-{
-return getStatus(ID_RES2_AnInStts_12);
-}
-
-
 int doWrite_TST2_AnOut_1(int value)
 {
 return doWrite(ID_TST2_AnOut_1,  &value);
@@ -9547,12 +6674,6 @@ return doWrite(ID_TST2_AnOut_1,  &value);
 int addWrite_TST2_AnOut_1(int value)
 {
 return addWrite(ID_TST2_AnOut_1, &value);
-}
-
-
-int getStatus_TST2_AnOut_1()
-{
-return getStatus(ID_TST2_AnOut_1);
 }
 
 
@@ -9568,12 +6689,6 @@ return addWrite(ID_TST2_AnOut_2, &value);
 }
 
 
-int getStatus_TST2_AnOut_2()
-{
-return getStatus(ID_TST2_AnOut_2);
-}
-
-
 int doWrite_TST2_AnOut_3(int value)
 {
 return doWrite(ID_TST2_AnOut_3,  &value);
@@ -9583,12 +6698,6 @@ return doWrite(ID_TST2_AnOut_3,  &value);
 int addWrite_TST2_AnOut_3(int value)
 {
 return addWrite(ID_TST2_AnOut_3, &value);
-}
-
-
-int getStatus_TST2_AnOut_3()
-{
-return getStatus(ID_TST2_AnOut_3);
 }
 
 
@@ -9604,12 +6713,6 @@ return addWrite(ID_TST2_AnOut_4, &value);
 }
 
 
-int getStatus_TST2_AnOut_4()
-{
-return getStatus(ID_TST2_AnOut_4);
-}
-
-
 int doWrite_VAL2_AnOut_1(int16_t value)
 {
 return doWrite(ID_VAL2_AnOut_1,  &value);
@@ -9619,12 +6722,6 @@ return doWrite(ID_VAL2_AnOut_1,  &value);
 int addWrite_VAL2_AnOut_1(int16_t value)
 {
 return addWrite(ID_VAL2_AnOut_1, &value);
-}
-
-
-int getStatus_VAL2_AnOut_1()
-{
-return getStatus(ID_VAL2_AnOut_1);
 }
 
 
@@ -9640,12 +6737,6 @@ return addWrite(ID_VAL2_AnOut_2, &value);
 }
 
 
-int getStatus_VAL2_AnOut_2()
-{
-return getStatus(ID_VAL2_AnOut_2);
-}
-
-
 int doWrite_VAL2_AnOut_3(int16_t value)
 {
 return doWrite(ID_VAL2_AnOut_3,  &value);
@@ -9655,12 +6746,6 @@ return doWrite(ID_VAL2_AnOut_3,  &value);
 int addWrite_VAL2_AnOut_3(int16_t value)
 {
 return addWrite(ID_VAL2_AnOut_3, &value);
-}
-
-
-int getStatus_VAL2_AnOut_3()
-{
-return getStatus(ID_VAL2_AnOut_3);
 }
 
 
@@ -9676,12 +6761,6 @@ return addWrite(ID_VAL2_AnOut_4, &value);
 }
 
 
-int getStatus_VAL2_AnOut_4()
-{
-return getStatus(ID_VAL2_AnOut_4);
-}
-
-
 int doWrite_VAL2_AnOutConf_1(u_int16_t value)
 {
 return doWrite(ID_VAL2_AnOutConf_1,  &value);
@@ -9691,12 +6770,6 @@ return doWrite(ID_VAL2_AnOutConf_1,  &value);
 int addWrite_VAL2_AnOutConf_1(u_int16_t value)
 {
 return addWrite(ID_VAL2_AnOutConf_1, &value);
-}
-
-
-int getStatus_VAL2_AnOutConf_1()
-{
-return getStatus(ID_VAL2_AnOutConf_1);
 }
 
 
@@ -9712,12 +6785,6 @@ return addWrite(ID_VAL2_AnOutConf_2, &value);
 }
 
 
-int getStatus_VAL2_AnOutConf_2()
-{
-return getStatus(ID_VAL2_AnOutConf_2);
-}
-
-
 int doWrite_VAL2_AnOutConf_3(u_int16_t value)
 {
 return doWrite(ID_VAL2_AnOutConf_3,  &value);
@@ -9727,12 +6794,6 @@ return doWrite(ID_VAL2_AnOutConf_3,  &value);
 int addWrite_VAL2_AnOutConf_3(u_int16_t value)
 {
 return addWrite(ID_VAL2_AnOutConf_3, &value);
-}
-
-
-int getStatus_VAL2_AnOutConf_3()
-{
-return getStatus(ID_VAL2_AnOutConf_3);
 }
 
 
@@ -9748,12 +6809,6 @@ return addWrite(ID_VAL2_AnOutConf_4, &value);
 }
 
 
-int getStatus_VAL2_AnOutConf_4()
-{
-return getStatus(ID_VAL2_AnOutConf_4);
-}
-
-
 int doWrite_RES2_AnOutStts_1(int16_t value)
 {
 return doWrite(ID_RES2_AnOutStts_1,  &value);
@@ -9763,12 +6818,6 @@ return doWrite(ID_RES2_AnOutStts_1,  &value);
 int addWrite_RES2_AnOutStts_1(int16_t value)
 {
 return addWrite(ID_RES2_AnOutStts_1, &value);
-}
-
-
-int getStatus_RES2_AnOutStts_1()
-{
-return getStatus(ID_RES2_AnOutStts_1);
 }
 
 
@@ -9784,12 +6833,6 @@ return addWrite(ID_RES2_AnOutStts_2, &value);
 }
 
 
-int getStatus_RES2_AnOutStts_2()
-{
-return getStatus(ID_RES2_AnOutStts_2);
-}
-
-
 int doWrite_RES2_AnOutStts_3(int16_t value)
 {
 return doWrite(ID_RES2_AnOutStts_3,  &value);
@@ -9799,12 +6842,6 @@ return doWrite(ID_RES2_AnOutStts_3,  &value);
 int addWrite_RES2_AnOutStts_3(int16_t value)
 {
 return addWrite(ID_RES2_AnOutStts_3, &value);
-}
-
-
-int getStatus_RES2_AnOutStts_3()
-{
-return getStatus(ID_RES2_AnOutStts_3);
 }
 
 
@@ -9820,12 +6857,6 @@ return addWrite(ID_RES2_AnOutStts_4, &value);
 }
 
 
-int getStatus_RES2_AnOutStts_4()
-{
-return getStatus(ID_RES2_AnOutStts_4);
-}
-
-
 int doWrite_TST2_Tamb(int value)
 {
 return doWrite(ID_TST2_Tamb,  &value);
@@ -9835,12 +6866,6 @@ return doWrite(ID_TST2_Tamb,  &value);
 int addWrite_TST2_Tamb(int value)
 {
 return addWrite(ID_TST2_Tamb, &value);
-}
-
-
-int getStatus_TST2_Tamb()
-{
-return getStatus(ID_TST2_Tamb);
 }
 
 
@@ -9856,12 +6881,6 @@ return addWrite(ID_TST2_RPM, &value);
 }
 
 
-int getStatus_TST2_RPM()
-{
-return getStatus(ID_TST2_RPM);
-}
-
-
 int doWrite_TST2_FWrevision(int value)
 {
 return doWrite(ID_TST2_FWrevision,  &value);
@@ -9871,12 +6890,6 @@ return doWrite(ID_TST2_FWrevision,  &value);
 int addWrite_TST2_FWrevision(int value)
 {
 return addWrite(ID_TST2_FWrevision, &value);
-}
-
-
-int getStatus_TST2_FWrevision()
-{
-return getStatus(ID_TST2_FWrevision);
 }
 
 
@@ -9892,12 +6905,6 @@ return addWrite(ID_TST2_HWconfig, &value);
 }
 
 
-int getStatus_TST2_HWconfig()
-{
-return getStatus(ID_TST2_HWconfig);
-}
-
-
 int doWrite_VAL2_Tamb(int16_t value)
 {
 return doWrite(ID_VAL2_Tamb,  &value);
@@ -9907,12 +6914,6 @@ return doWrite(ID_VAL2_Tamb,  &value);
 int addWrite_VAL2_Tamb(int16_t value)
 {
 return addWrite(ID_VAL2_Tamb, &value);
-}
-
-
-int getStatus_VAL2_Tamb()
-{
-return getStatus(ID_VAL2_Tamb);
 }
 
 
@@ -9928,12 +6929,6 @@ return addWrite(ID_VAL2_RPM, &value);
 }
 
 
-int getStatus_VAL2_RPM()
-{
-return getStatus(ID_VAL2_RPM);
-}
-
-
 int doWrite_VAL2_FWrevision(u_int16_t value)
 {
 return doWrite(ID_VAL2_FWrevision,  &value);
@@ -9943,12 +6938,6 @@ return doWrite(ID_VAL2_FWrevision,  &value);
 int addWrite_VAL2_FWrevision(u_int16_t value)
 {
 return addWrite(ID_VAL2_FWrevision, &value);
-}
-
-
-int getStatus_VAL2_FWrevision()
-{
-return getStatus(ID_VAL2_FWrevision);
 }
 
 
@@ -9964,12 +6953,6 @@ return addWrite(ID_VAL2_HWconfig, &value);
 }
 
 
-int getStatus_VAL2_HWconfig()
-{
-return getStatus(ID_VAL2_HWconfig);
-}
-
-
 int doWrite_RES2_Tamb(int16_t value)
 {
 return doWrite(ID_RES2_Tamb,  &value);
@@ -9979,12 +6962,6 @@ return doWrite(ID_RES2_Tamb,  &value);
 int addWrite_RES2_Tamb(int16_t value)
 {
 return addWrite(ID_RES2_Tamb, &value);
-}
-
-
-int getStatus_RES2_Tamb()
-{
-return getStatus(ID_RES2_Tamb);
 }
 
 
@@ -10000,12 +6977,6 @@ return addWrite(ID_RES2_RPM, &value);
 }
 
 
-int getStatus_RES2_RPM()
-{
-return getStatus(ID_RES2_RPM);
-}
-
-
 int doWrite_RES2_FWrevision(u_int16_t value)
 {
 return doWrite(ID_RES2_FWrevision,  &value);
@@ -10015,12 +6986,6 @@ return doWrite(ID_RES2_FWrevision,  &value);
 int addWrite_RES2_FWrevision(u_int16_t value)
 {
 return addWrite(ID_RES2_FWrevision, &value);
-}
-
-
-int getStatus_RES2_FWrevision()
-{
-return getStatus(ID_RES2_FWrevision);
 }
 
 
@@ -10036,12 +7001,6 @@ return addWrite(ID_RES2_HWconfig, &value);
 }
 
 
-int getStatus_RES2_HWconfig()
-{
-return getStatus(ID_RES2_HWconfig);
-}
-
-
 int doWrite_TST2_RTUS_WR(int value)
 {
 return doWrite(ID_TST2_RTUS_WR,  &value);
@@ -10051,12 +7010,6 @@ return doWrite(ID_TST2_RTUS_WR,  &value);
 int addWrite_TST2_RTUS_WR(int value)
 {
 return addWrite(ID_TST2_RTUS_WR, &value);
-}
-
-
-int getStatus_TST2_RTUS_WR()
-{
-return getStatus(ID_TST2_RTUS_WR);
 }
 
 
@@ -10072,12 +7025,6 @@ return addWrite(ID_TST2_RTUS_RD, &value);
 }
 
 
-int getStatus_TST2_RTUS_RD()
-{
-return getStatus(ID_TST2_RTUS_RD);
-}
-
-
 int doWrite_TST2_RTU1_WR(int value)
 {
 return doWrite(ID_TST2_RTU1_WR,  &value);
@@ -10087,12 +7034,6 @@ return doWrite(ID_TST2_RTU1_WR,  &value);
 int addWrite_TST2_RTU1_WR(int value)
 {
 return addWrite(ID_TST2_RTU1_WR, &value);
-}
-
-
-int getStatus_TST2_RTU1_WR()
-{
-return getStatus(ID_TST2_RTU1_WR);
 }
 
 
@@ -10108,12 +7049,6 @@ return addWrite(ID_TST2_RTU1_RD, &value);
 }
 
 
-int getStatus_TST2_RTU1_RD()
-{
-return getStatus(ID_TST2_RTU1_RD);
-}
-
-
 int doWrite_TST2_RTU3_WR(int value)
 {
 return doWrite(ID_TST2_RTU3_WR,  &value);
@@ -10123,12 +7058,6 @@ return doWrite(ID_TST2_RTU3_WR,  &value);
 int addWrite_TST2_RTU3_WR(int value)
 {
 return addWrite(ID_TST2_RTU3_WR, &value);
-}
-
-
-int getStatus_TST2_RTU3_WR()
-{
-return getStatus(ID_TST2_RTU3_WR);
 }
 
 
@@ -10144,12 +7073,6 @@ return addWrite(ID_TST2_RTU3_RD, &value);
 }
 
 
-int getStatus_TST2_RTU3_RD()
-{
-return getStatus(ID_TST2_RTU3_RD);
-}
-
-
 int doWrite_TST2_CAN1_WR(int value)
 {
 return doWrite(ID_TST2_CAN1_WR,  &value);
@@ -10159,12 +7082,6 @@ return doWrite(ID_TST2_CAN1_WR,  &value);
 int addWrite_TST2_CAN1_WR(int value)
 {
 return addWrite(ID_TST2_CAN1_WR, &value);
-}
-
-
-int getStatus_TST2_CAN1_WR()
-{
-return getStatus(ID_TST2_CAN1_WR);
 }
 
 
@@ -10180,12 +7097,6 @@ return addWrite(ID_TST2_CAN1_RD, &value);
 }
 
 
-int getStatus_TST2_CAN1_RD()
-{
-return getStatus(ID_TST2_CAN1_RD);
-}
-
-
 int doWrite_VAL2_RTUS_WR(int value)
 {
 return doWrite(ID_VAL2_RTUS_WR,  &value);
@@ -10195,12 +7106,6 @@ return doWrite(ID_VAL2_RTUS_WR,  &value);
 int addWrite_VAL2_RTUS_WR(int value)
 {
 return addWrite(ID_VAL2_RTUS_WR, &value);
-}
-
-
-int getStatus_VAL2_RTUS_WR()
-{
-return getStatus(ID_VAL2_RTUS_WR);
 }
 
 
@@ -10216,12 +7121,6 @@ return addWrite(ID_VAL2_RTUS_RD, &value);
 }
 
 
-int getStatus_VAL2_RTUS_RD()
-{
-return getStatus(ID_VAL2_RTUS_RD);
-}
-
-
 int doWrite_VAL2_RTU1_WR(int value)
 {
 return doWrite(ID_VAL2_RTU1_WR,  &value);
@@ -10231,12 +7130,6 @@ return doWrite(ID_VAL2_RTU1_WR,  &value);
 int addWrite_VAL2_RTU1_WR(int value)
 {
 return addWrite(ID_VAL2_RTU1_WR, &value);
-}
-
-
-int getStatus_VAL2_RTU1_WR()
-{
-return getStatus(ID_VAL2_RTU1_WR);
 }
 
 
@@ -10252,12 +7145,6 @@ return addWrite(ID_VAL2_RTU1_RD, &value);
 }
 
 
-int getStatus_VAL2_RTU1_RD()
-{
-return getStatus(ID_VAL2_RTU1_RD);
-}
-
-
 int doWrite_VAL2_RTU3_WR(int value)
 {
 return doWrite(ID_VAL2_RTU3_WR,  &value);
@@ -10267,12 +7154,6 @@ return doWrite(ID_VAL2_RTU3_WR,  &value);
 int addWrite_VAL2_RTU3_WR(int value)
 {
 return addWrite(ID_VAL2_RTU3_WR, &value);
-}
-
-
-int getStatus_VAL2_RTU3_WR()
-{
-return getStatus(ID_VAL2_RTU3_WR);
 }
 
 
@@ -10288,12 +7169,6 @@ return addWrite(ID_VAL2_RTU3_RD, &value);
 }
 
 
-int getStatus_VAL2_RTU3_RD()
-{
-return getStatus(ID_VAL2_RTU3_RD);
-}
-
-
 int doWrite_VAL2_CAN1_WR(int value)
 {
 return doWrite(ID_VAL2_CAN1_WR,  &value);
@@ -10303,12 +7178,6 @@ return doWrite(ID_VAL2_CAN1_WR,  &value);
 int addWrite_VAL2_CAN1_WR(int value)
 {
 return addWrite(ID_VAL2_CAN1_WR, &value);
-}
-
-
-int getStatus_VAL2_CAN1_WR()
-{
-return getStatus(ID_VAL2_CAN1_WR);
 }
 
 
@@ -10324,12 +7193,6 @@ return addWrite(ID_VAL2_CAN1_RD, &value);
 }
 
 
-int getStatus_VAL2_CAN1_RD()
-{
-return getStatus(ID_VAL2_CAN1_RD);
-}
-
-
 int doWrite_RES2_RTUS_WR(int value)
 {
 return doWrite(ID_RES2_RTUS_WR,  &value);
@@ -10339,12 +7202,6 @@ return doWrite(ID_RES2_RTUS_WR,  &value);
 int addWrite_RES2_RTUS_WR(int value)
 {
 return addWrite(ID_RES2_RTUS_WR, &value);
-}
-
-
-int getStatus_RES2_RTUS_WR()
-{
-return getStatus(ID_RES2_RTUS_WR);
 }
 
 
@@ -10360,12 +7217,6 @@ return addWrite(ID_RES2_RTUS_RD, &value);
 }
 
 
-int getStatus_RES2_RTUS_RD()
-{
-return getStatus(ID_RES2_RTUS_RD);
-}
-
-
 int doWrite_RES2_RTU1_WR(int value)
 {
 return doWrite(ID_RES2_RTU1_WR,  &value);
@@ -10375,12 +7226,6 @@ return doWrite(ID_RES2_RTU1_WR,  &value);
 int addWrite_RES2_RTU1_WR(int value)
 {
 return addWrite(ID_RES2_RTU1_WR, &value);
-}
-
-
-int getStatus_RES2_RTU1_WR()
-{
-return getStatus(ID_RES2_RTU1_WR);
 }
 
 
@@ -10396,12 +7241,6 @@ return addWrite(ID_RES2_RTU1_RD, &value);
 }
 
 
-int getStatus_RES2_RTU1_RD()
-{
-return getStatus(ID_RES2_RTU1_RD);
-}
-
-
 int doWrite_RES2_RTU3_WR(int value)
 {
 return doWrite(ID_RES2_RTU3_WR,  &value);
@@ -10411,12 +7250,6 @@ return doWrite(ID_RES2_RTU3_WR,  &value);
 int addWrite_RES2_RTU3_WR(int value)
 {
 return addWrite(ID_RES2_RTU3_WR, &value);
-}
-
-
-int getStatus_RES2_RTU3_WR()
-{
-return getStatus(ID_RES2_RTU3_WR);
 }
 
 
@@ -10432,12 +7265,6 @@ return addWrite(ID_RES2_RTU3_RD, &value);
 }
 
 
-int getStatus_RES2_RTU3_RD()
-{
-return getStatus(ID_RES2_RTU3_RD);
-}
-
-
 int doWrite_RES2_CAN1_WR(int value)
 {
 return doWrite(ID_RES2_CAN1_WR,  &value);
@@ -10447,12 +7274,6 @@ return doWrite(ID_RES2_CAN1_WR,  &value);
 int addWrite_RES2_CAN1_WR(int value)
 {
 return addWrite(ID_RES2_CAN1_WR, &value);
-}
-
-
-int getStatus_RES2_CAN1_WR()
-{
-return getStatus(ID_RES2_CAN1_WR);
 }
 
 
@@ -10468,12 +7289,6 @@ return addWrite(ID_RES2_CAN1_RD, &value);
 }
 
 
-int getStatus_RES2_CAN1_RD()
-{
-return getStatus(ID_RES2_CAN1_RD);
-}
-
-
 int doWrite_STATUS2_LOCAL(int value)
 {
 return doWrite(ID_STATUS2_LOCAL,  &value);
@@ -10483,12 +7298,6 @@ return doWrite(ID_STATUS2_LOCAL,  &value);
 int addWrite_STATUS2_LOCAL(int value)
 {
 return addWrite(ID_STATUS2_LOCAL, &value);
-}
-
-
-int getStatus_STATUS2_LOCAL()
-{
-return getStatus(ID_STATUS2_LOCAL);
 }
 
 
@@ -10504,12 +7313,6 @@ return addWrite(ID_STATUS2_REMOTE, &value);
 }
 
 
-int getStatus_STATUS2_REMOTE()
-{
-return getStatus(ID_STATUS2_REMOTE);
-}
-
-
 int doWrite_STATUS2_DONE(int value)
 {
 return doWrite(ID_STATUS2_DONE,  &value);
@@ -10519,12 +7322,6 @@ return doWrite(ID_STATUS2_DONE,  &value);
 int addWrite_STATUS2_DONE(int value)
 {
 return addWrite(ID_STATUS2_DONE, &value);
-}
-
-
-int getStatus_STATUS2_DONE()
-{
-return getStatus(ID_STATUS2_DONE);
 }
 
 
@@ -10540,12 +7337,6 @@ return addWrite(ID_STARTx_REMOTE, &value);
 }
 
 
-int getStatus_STARTx_REMOTE()
-{
-return getStatus(ID_STARTx_REMOTE);
-}
-
-
 int doWrite_STARTx_TEST(int value)
 {
 return doWrite(ID_STARTx_TEST,  &value);
@@ -10555,12 +7346,6 @@ return doWrite(ID_STARTx_TEST,  &value);
 int addWrite_STARTx_TEST(int value)
 {
 return addWrite(ID_STARTx_TEST, &value);
-}
-
-
-int getStatus_STARTx_TEST()
-{
-return getStatus(ID_STARTx_TEST);
 }
 
 
@@ -10576,12 +7361,6 @@ return addWrite(ID_TSTx_DigIn_1, &value);
 }
 
 
-int getStatus_TSTx_DigIn_1()
-{
-return getStatus(ID_TSTx_DigIn_1);
-}
-
-
 int doWrite_TSTx_DigIn_2(int value)
 {
 return doWrite(ID_TSTx_DigIn_2,  &value);
@@ -10591,12 +7370,6 @@ return doWrite(ID_TSTx_DigIn_2,  &value);
 int addWrite_TSTx_DigIn_2(int value)
 {
 return addWrite(ID_TSTx_DigIn_2, &value);
-}
-
-
-int getStatus_TSTx_DigIn_2()
-{
-return getStatus(ID_TSTx_DigIn_2);
 }
 
 
@@ -10612,12 +7385,6 @@ return addWrite(ID_TSTx_DigIn_3, &value);
 }
 
 
-int getStatus_TSTx_DigIn_3()
-{
-return getStatus(ID_TSTx_DigIn_3);
-}
-
-
 int doWrite_TSTx_DigIn_4(int value)
 {
 return doWrite(ID_TSTx_DigIn_4,  &value);
@@ -10627,12 +7394,6 @@ return doWrite(ID_TSTx_DigIn_4,  &value);
 int addWrite_TSTx_DigIn_4(int value)
 {
 return addWrite(ID_TSTx_DigIn_4, &value);
-}
-
-
-int getStatus_TSTx_DigIn_4()
-{
-return getStatus(ID_TSTx_DigIn_4);
 }
 
 
@@ -10648,12 +7409,6 @@ return addWrite(ID_TSTx_DigIn_5, &value);
 }
 
 
-int getStatus_TSTx_DigIn_5()
-{
-return getStatus(ID_TSTx_DigIn_5);
-}
-
-
 int doWrite_TSTx_DigIn_6(int value)
 {
 return doWrite(ID_TSTx_DigIn_6,  &value);
@@ -10663,12 +7418,6 @@ return doWrite(ID_TSTx_DigIn_6,  &value);
 int addWrite_TSTx_DigIn_6(int value)
 {
 return addWrite(ID_TSTx_DigIn_6, &value);
-}
-
-
-int getStatus_TSTx_DigIn_6()
-{
-return getStatus(ID_TSTx_DigIn_6);
 }
 
 
@@ -10684,12 +7433,6 @@ return addWrite(ID_TSTx_DigIn_7, &value);
 }
 
 
-int getStatus_TSTx_DigIn_7()
-{
-return getStatus(ID_TSTx_DigIn_7);
-}
-
-
 int doWrite_TSTx_DigIn_8(int value)
 {
 return doWrite(ID_TSTx_DigIn_8,  &value);
@@ -10699,12 +7442,6 @@ return doWrite(ID_TSTx_DigIn_8,  &value);
 int addWrite_TSTx_DigIn_8(int value)
 {
 return addWrite(ID_TSTx_DigIn_8, &value);
-}
-
-
-int getStatus_TSTx_DigIn_8()
-{
-return getStatus(ID_TSTx_DigIn_8);
 }
 
 
@@ -10720,12 +7457,6 @@ return addWrite(ID_TSTx_DigIn_9, &value);
 }
 
 
-int getStatus_TSTx_DigIn_9()
-{
-return getStatus(ID_TSTx_DigIn_9);
-}
-
-
 int doWrite_TSTx_DigIn_10(int value)
 {
 return doWrite(ID_TSTx_DigIn_10,  &value);
@@ -10735,12 +7466,6 @@ return doWrite(ID_TSTx_DigIn_10,  &value);
 int addWrite_TSTx_DigIn_10(int value)
 {
 return addWrite(ID_TSTx_DigIn_10, &value);
-}
-
-
-int getStatus_TSTx_DigIn_10()
-{
-return getStatus(ID_TSTx_DigIn_10);
 }
 
 
@@ -10756,12 +7481,6 @@ return addWrite(ID_TSTx_DigIn_11, &value);
 }
 
 
-int getStatus_TSTx_DigIn_11()
-{
-return getStatus(ID_TSTx_DigIn_11);
-}
-
-
 int doWrite_TSTx_DigIn_12(int value)
 {
 return doWrite(ID_TSTx_DigIn_12,  &value);
@@ -10771,12 +7490,6 @@ return doWrite(ID_TSTx_DigIn_12,  &value);
 int addWrite_TSTx_DigIn_12(int value)
 {
 return addWrite(ID_TSTx_DigIn_12, &value);
-}
-
-
-int getStatus_TSTx_DigIn_12()
-{
-return getStatus(ID_TSTx_DigIn_12);
 }
 
 
@@ -10792,12 +7505,6 @@ return addWrite(ID_TSTx_DigIn_13, &value);
 }
 
 
-int getStatus_TSTx_DigIn_13()
-{
-return getStatus(ID_TSTx_DigIn_13);
-}
-
-
 int doWrite_TSTx_DigIn_14(int value)
 {
 return doWrite(ID_TSTx_DigIn_14,  &value);
@@ -10807,12 +7514,6 @@ return doWrite(ID_TSTx_DigIn_14,  &value);
 int addWrite_TSTx_DigIn_14(int value)
 {
 return addWrite(ID_TSTx_DigIn_14, &value);
-}
-
-
-int getStatus_TSTx_DigIn_14()
-{
-return getStatus(ID_TSTx_DigIn_14);
 }
 
 
@@ -10828,12 +7529,6 @@ return addWrite(ID_TSTx_DigIn_15, &value);
 }
 
 
-int getStatus_TSTx_DigIn_15()
-{
-return getStatus(ID_TSTx_DigIn_15);
-}
-
-
 int doWrite_TSTx_DigIn_16(int value)
 {
 return doWrite(ID_TSTx_DigIn_16,  &value);
@@ -10843,12 +7538,6 @@ return doWrite(ID_TSTx_DigIn_16,  &value);
 int addWrite_TSTx_DigIn_16(int value)
 {
 return addWrite(ID_TSTx_DigIn_16, &value);
-}
-
-
-int getStatus_TSTx_DigIn_16()
-{
-return getStatus(ID_TSTx_DigIn_16);
 }
 
 
@@ -10864,12 +7553,6 @@ return addWrite(ID_VALx_DigIn_1, &value);
 }
 
 
-int getStatus_VALx_DigIn_1()
-{
-return getStatus(ID_VALx_DigIn_1);
-}
-
-
 int doWrite_VALx_DigIn_2(int value)
 {
 return doWrite(ID_VALx_DigIn_2,  &value);
@@ -10879,12 +7562,6 @@ return doWrite(ID_VALx_DigIn_2,  &value);
 int addWrite_VALx_DigIn_2(int value)
 {
 return addWrite(ID_VALx_DigIn_2, &value);
-}
-
-
-int getStatus_VALx_DigIn_2()
-{
-return getStatus(ID_VALx_DigIn_2);
 }
 
 
@@ -10900,12 +7577,6 @@ return addWrite(ID_VALx_DigIn_3, &value);
 }
 
 
-int getStatus_VALx_DigIn_3()
-{
-return getStatus(ID_VALx_DigIn_3);
-}
-
-
 int doWrite_VALx_DigIn_4(int value)
 {
 return doWrite(ID_VALx_DigIn_4,  &value);
@@ -10915,12 +7586,6 @@ return doWrite(ID_VALx_DigIn_4,  &value);
 int addWrite_VALx_DigIn_4(int value)
 {
 return addWrite(ID_VALx_DigIn_4, &value);
-}
-
-
-int getStatus_VALx_DigIn_4()
-{
-return getStatus(ID_VALx_DigIn_4);
 }
 
 
@@ -10936,12 +7601,6 @@ return addWrite(ID_VALx_DigIn_5, &value);
 }
 
 
-int getStatus_VALx_DigIn_5()
-{
-return getStatus(ID_VALx_DigIn_5);
-}
-
-
 int doWrite_VALx_DigIn_6(int value)
 {
 return doWrite(ID_VALx_DigIn_6,  &value);
@@ -10951,12 +7610,6 @@ return doWrite(ID_VALx_DigIn_6,  &value);
 int addWrite_VALx_DigIn_6(int value)
 {
 return addWrite(ID_VALx_DigIn_6, &value);
-}
-
-
-int getStatus_VALx_DigIn_6()
-{
-return getStatus(ID_VALx_DigIn_6);
 }
 
 
@@ -10972,12 +7625,6 @@ return addWrite(ID_VALx_DigIn_7, &value);
 }
 
 
-int getStatus_VALx_DigIn_7()
-{
-return getStatus(ID_VALx_DigIn_7);
-}
-
-
 int doWrite_VALx_DigIn_8(int value)
 {
 return doWrite(ID_VALx_DigIn_8,  &value);
@@ -10987,12 +7634,6 @@ return doWrite(ID_VALx_DigIn_8,  &value);
 int addWrite_VALx_DigIn_8(int value)
 {
 return addWrite(ID_VALx_DigIn_8, &value);
-}
-
-
-int getStatus_VALx_DigIn_8()
-{
-return getStatus(ID_VALx_DigIn_8);
 }
 
 
@@ -11008,12 +7649,6 @@ return addWrite(ID_VALx_DigIn_9, &value);
 }
 
 
-int getStatus_VALx_DigIn_9()
-{
-return getStatus(ID_VALx_DigIn_9);
-}
-
-
 int doWrite_VALx_DigIn_10(int value)
 {
 return doWrite(ID_VALx_DigIn_10,  &value);
@@ -11023,12 +7658,6 @@ return doWrite(ID_VALx_DigIn_10,  &value);
 int addWrite_VALx_DigIn_10(int value)
 {
 return addWrite(ID_VALx_DigIn_10, &value);
-}
-
-
-int getStatus_VALx_DigIn_10()
-{
-return getStatus(ID_VALx_DigIn_10);
 }
 
 
@@ -11044,12 +7673,6 @@ return addWrite(ID_VALx_DigIn_11, &value);
 }
 
 
-int getStatus_VALx_DigIn_11()
-{
-return getStatus(ID_VALx_DigIn_11);
-}
-
-
 int doWrite_VALx_DigIn_12(int value)
 {
 return doWrite(ID_VALx_DigIn_12,  &value);
@@ -11059,12 +7682,6 @@ return doWrite(ID_VALx_DigIn_12,  &value);
 int addWrite_VALx_DigIn_12(int value)
 {
 return addWrite(ID_VALx_DigIn_12, &value);
-}
-
-
-int getStatus_VALx_DigIn_12()
-{
-return getStatus(ID_VALx_DigIn_12);
 }
 
 
@@ -11080,12 +7697,6 @@ return addWrite(ID_VALx_DigIn_13, &value);
 }
 
 
-int getStatus_VALx_DigIn_13()
-{
-return getStatus(ID_VALx_DigIn_13);
-}
-
-
 int doWrite_VALx_DigIn_14(int value)
 {
 return doWrite(ID_VALx_DigIn_14,  &value);
@@ -11095,12 +7706,6 @@ return doWrite(ID_VALx_DigIn_14,  &value);
 int addWrite_VALx_DigIn_14(int value)
 {
 return addWrite(ID_VALx_DigIn_14, &value);
-}
-
-
-int getStatus_VALx_DigIn_14()
-{
-return getStatus(ID_VALx_DigIn_14);
 }
 
 
@@ -11116,12 +7721,6 @@ return addWrite(ID_VALx_DigIn_15, &value);
 }
 
 
-int getStatus_VALx_DigIn_15()
-{
-return getStatus(ID_VALx_DigIn_15);
-}
-
-
 int doWrite_VALx_DigIn_16(int value)
 {
 return doWrite(ID_VALx_DigIn_16,  &value);
@@ -11131,12 +7730,6 @@ return doWrite(ID_VALx_DigIn_16,  &value);
 int addWrite_VALx_DigIn_16(int value)
 {
 return addWrite(ID_VALx_DigIn_16, &value);
-}
-
-
-int getStatus_VALx_DigIn_16()
-{
-return getStatus(ID_VALx_DigIn_16);
 }
 
 
@@ -11152,12 +7745,6 @@ return addWrite(ID_RESx_DigIn_1, &value);
 }
 
 
-int getStatus_RESx_DigIn_1()
-{
-return getStatus(ID_RESx_DigIn_1);
-}
-
-
 int doWrite_RESx_DigIn_2(int value)
 {
 return doWrite(ID_RESx_DigIn_2,  &value);
@@ -11167,12 +7754,6 @@ return doWrite(ID_RESx_DigIn_2,  &value);
 int addWrite_RESx_DigIn_2(int value)
 {
 return addWrite(ID_RESx_DigIn_2, &value);
-}
-
-
-int getStatus_RESx_DigIn_2()
-{
-return getStatus(ID_RESx_DigIn_2);
 }
 
 
@@ -11188,12 +7769,6 @@ return addWrite(ID_RESx_DigIn_3, &value);
 }
 
 
-int getStatus_RESx_DigIn_3()
-{
-return getStatus(ID_RESx_DigIn_3);
-}
-
-
 int doWrite_RESx_DigIn_4(int value)
 {
 return doWrite(ID_RESx_DigIn_4,  &value);
@@ -11203,12 +7778,6 @@ return doWrite(ID_RESx_DigIn_4,  &value);
 int addWrite_RESx_DigIn_4(int value)
 {
 return addWrite(ID_RESx_DigIn_4, &value);
-}
-
-
-int getStatus_RESx_DigIn_4()
-{
-return getStatus(ID_RESx_DigIn_4);
 }
 
 
@@ -11224,12 +7793,6 @@ return addWrite(ID_RESx_DigIn_5, &value);
 }
 
 
-int getStatus_RESx_DigIn_5()
-{
-return getStatus(ID_RESx_DigIn_5);
-}
-
-
 int doWrite_RESx_DigIn_6(int value)
 {
 return doWrite(ID_RESx_DigIn_6,  &value);
@@ -11239,12 +7802,6 @@ return doWrite(ID_RESx_DigIn_6,  &value);
 int addWrite_RESx_DigIn_6(int value)
 {
 return addWrite(ID_RESx_DigIn_6, &value);
-}
-
-
-int getStatus_RESx_DigIn_6()
-{
-return getStatus(ID_RESx_DigIn_6);
 }
 
 
@@ -11260,12 +7817,6 @@ return addWrite(ID_RESx_DigIn_7, &value);
 }
 
 
-int getStatus_RESx_DigIn_7()
-{
-return getStatus(ID_RESx_DigIn_7);
-}
-
-
 int doWrite_RESx_DigIn_8(int value)
 {
 return doWrite(ID_RESx_DigIn_8,  &value);
@@ -11275,12 +7826,6 @@ return doWrite(ID_RESx_DigIn_8,  &value);
 int addWrite_RESx_DigIn_8(int value)
 {
 return addWrite(ID_RESx_DigIn_8, &value);
-}
-
-
-int getStatus_RESx_DigIn_8()
-{
-return getStatus(ID_RESx_DigIn_8);
 }
 
 
@@ -11296,12 +7841,6 @@ return addWrite(ID_RESx_DigIn_9, &value);
 }
 
 
-int getStatus_RESx_DigIn_9()
-{
-return getStatus(ID_RESx_DigIn_9);
-}
-
-
 int doWrite_RESx_DigIn_10(int value)
 {
 return doWrite(ID_RESx_DigIn_10,  &value);
@@ -11311,12 +7850,6 @@ return doWrite(ID_RESx_DigIn_10,  &value);
 int addWrite_RESx_DigIn_10(int value)
 {
 return addWrite(ID_RESx_DigIn_10, &value);
-}
-
-
-int getStatus_RESx_DigIn_10()
-{
-return getStatus(ID_RESx_DigIn_10);
 }
 
 
@@ -11332,12 +7865,6 @@ return addWrite(ID_RESx_DigIn_11, &value);
 }
 
 
-int getStatus_RESx_DigIn_11()
-{
-return getStatus(ID_RESx_DigIn_11);
-}
-
-
 int doWrite_RESx_DigIn_12(int value)
 {
 return doWrite(ID_RESx_DigIn_12,  &value);
@@ -11347,12 +7874,6 @@ return doWrite(ID_RESx_DigIn_12,  &value);
 int addWrite_RESx_DigIn_12(int value)
 {
 return addWrite(ID_RESx_DigIn_12, &value);
-}
-
-
-int getStatus_RESx_DigIn_12()
-{
-return getStatus(ID_RESx_DigIn_12);
 }
 
 
@@ -11368,12 +7889,6 @@ return addWrite(ID_RESx_DigIn_13, &value);
 }
 
 
-int getStatus_RESx_DigIn_13()
-{
-return getStatus(ID_RESx_DigIn_13);
-}
-
-
 int doWrite_RESx_DigIn_14(int value)
 {
 return doWrite(ID_RESx_DigIn_14,  &value);
@@ -11383,12 +7898,6 @@ return doWrite(ID_RESx_DigIn_14,  &value);
 int addWrite_RESx_DigIn_14(int value)
 {
 return addWrite(ID_RESx_DigIn_14, &value);
-}
-
-
-int getStatus_RESx_DigIn_14()
-{
-return getStatus(ID_RESx_DigIn_14);
 }
 
 
@@ -11404,12 +7913,6 @@ return addWrite(ID_RESx_DigIn_15, &value);
 }
 
 
-int getStatus_RESx_DigIn_15()
-{
-return getStatus(ID_RESx_DigIn_15);
-}
-
-
 int doWrite_RESx_DigIn_16(int value)
 {
 return doWrite(ID_RESx_DigIn_16,  &value);
@@ -11419,12 +7922,6 @@ return doWrite(ID_RESx_DigIn_16,  &value);
 int addWrite_RESx_DigIn_16(int value)
 {
 return addWrite(ID_RESx_DigIn_16, &value);
-}
-
-
-int getStatus_RESx_DigIn_16()
-{
-return getStatus(ID_RESx_DigIn_16);
 }
 
 
@@ -11440,12 +7937,6 @@ return addWrite(ID_TSTx_DigOut_1, &value);
 }
 
 
-int getStatus_TSTx_DigOut_1()
-{
-return getStatus(ID_TSTx_DigOut_1);
-}
-
-
 int doWrite_TSTx_DigOut_2(int value)
 {
 return doWrite(ID_TSTx_DigOut_2,  &value);
@@ -11455,12 +7946,6 @@ return doWrite(ID_TSTx_DigOut_2,  &value);
 int addWrite_TSTx_DigOut_2(int value)
 {
 return addWrite(ID_TSTx_DigOut_2, &value);
-}
-
-
-int getStatus_TSTx_DigOut_2()
-{
-return getStatus(ID_TSTx_DigOut_2);
 }
 
 
@@ -11476,12 +7961,6 @@ return addWrite(ID_TSTx_DigOut_3, &value);
 }
 
 
-int getStatus_TSTx_DigOut_3()
-{
-return getStatus(ID_TSTx_DigOut_3);
-}
-
-
 int doWrite_TSTx_DigOut_4(int value)
 {
 return doWrite(ID_TSTx_DigOut_4,  &value);
@@ -11491,12 +7970,6 @@ return doWrite(ID_TSTx_DigOut_4,  &value);
 int addWrite_TSTx_DigOut_4(int value)
 {
 return addWrite(ID_TSTx_DigOut_4, &value);
-}
-
-
-int getStatus_TSTx_DigOut_4()
-{
-return getStatus(ID_TSTx_DigOut_4);
 }
 
 
@@ -11512,12 +7985,6 @@ return addWrite(ID_TSTx_DigOut_5, &value);
 }
 
 
-int getStatus_TSTx_DigOut_5()
-{
-return getStatus(ID_TSTx_DigOut_5);
-}
-
-
 int doWrite_TSTx_DigOut_6(int value)
 {
 return doWrite(ID_TSTx_DigOut_6,  &value);
@@ -11527,12 +7994,6 @@ return doWrite(ID_TSTx_DigOut_6,  &value);
 int addWrite_TSTx_DigOut_6(int value)
 {
 return addWrite(ID_TSTx_DigOut_6, &value);
-}
-
-
-int getStatus_TSTx_DigOut_6()
-{
-return getStatus(ID_TSTx_DigOut_6);
 }
 
 
@@ -11548,12 +8009,6 @@ return addWrite(ID_TSTx_DigOut_7, &value);
 }
 
 
-int getStatus_TSTx_DigOut_7()
-{
-return getStatus(ID_TSTx_DigOut_7);
-}
-
-
 int doWrite_TSTx_DigOut_8(int value)
 {
 return doWrite(ID_TSTx_DigOut_8,  &value);
@@ -11563,12 +8018,6 @@ return doWrite(ID_TSTx_DigOut_8,  &value);
 int addWrite_TSTx_DigOut_8(int value)
 {
 return addWrite(ID_TSTx_DigOut_8, &value);
-}
-
-
-int getStatus_TSTx_DigOut_8()
-{
-return getStatus(ID_TSTx_DigOut_8);
 }
 
 
@@ -11584,12 +8033,6 @@ return addWrite(ID_TSTx_DigOut_9, &value);
 }
 
 
-int getStatus_TSTx_DigOut_9()
-{
-return getStatus(ID_TSTx_DigOut_9);
-}
-
-
 int doWrite_TSTx_DigOut_10(int value)
 {
 return doWrite(ID_TSTx_DigOut_10,  &value);
@@ -11599,12 +8042,6 @@ return doWrite(ID_TSTx_DigOut_10,  &value);
 int addWrite_TSTx_DigOut_10(int value)
 {
 return addWrite(ID_TSTx_DigOut_10, &value);
-}
-
-
-int getStatus_TSTx_DigOut_10()
-{
-return getStatus(ID_TSTx_DigOut_10);
 }
 
 
@@ -11620,12 +8057,6 @@ return addWrite(ID_TSTx_DigOut_11, &value);
 }
 
 
-int getStatus_TSTx_DigOut_11()
-{
-return getStatus(ID_TSTx_DigOut_11);
-}
-
-
 int doWrite_TSTx_DigOut_12(int value)
 {
 return doWrite(ID_TSTx_DigOut_12,  &value);
@@ -11635,12 +8066,6 @@ return doWrite(ID_TSTx_DigOut_12,  &value);
 int addWrite_TSTx_DigOut_12(int value)
 {
 return addWrite(ID_TSTx_DigOut_12, &value);
-}
-
-
-int getStatus_TSTx_DigOut_12()
-{
-return getStatus(ID_TSTx_DigOut_12);
 }
 
 
@@ -11656,12 +8081,6 @@ return addWrite(ID_TSTx_DigOut_13, &value);
 }
 
 
-int getStatus_TSTx_DigOut_13()
-{
-return getStatus(ID_TSTx_DigOut_13);
-}
-
-
 int doWrite_TSTx_DigOut_14(int value)
 {
 return doWrite(ID_TSTx_DigOut_14,  &value);
@@ -11671,12 +8090,6 @@ return doWrite(ID_TSTx_DigOut_14,  &value);
 int addWrite_TSTx_DigOut_14(int value)
 {
 return addWrite(ID_TSTx_DigOut_14, &value);
-}
-
-
-int getStatus_TSTx_DigOut_14()
-{
-return getStatus(ID_TSTx_DigOut_14);
 }
 
 
@@ -11692,12 +8105,6 @@ return addWrite(ID_TSTx_DigOut_15, &value);
 }
 
 
-int getStatus_TSTx_DigOut_15()
-{
-return getStatus(ID_TSTx_DigOut_15);
-}
-
-
 int doWrite_TSTx_DigOut_16(int value)
 {
 return doWrite(ID_TSTx_DigOut_16,  &value);
@@ -11707,12 +8114,6 @@ return doWrite(ID_TSTx_DigOut_16,  &value);
 int addWrite_TSTx_DigOut_16(int value)
 {
 return addWrite(ID_TSTx_DigOut_16, &value);
-}
-
-
-int getStatus_TSTx_DigOut_16()
-{
-return getStatus(ID_TSTx_DigOut_16);
 }
 
 
@@ -11728,12 +8129,6 @@ return addWrite(ID_VALx_DigOut_1, &value);
 }
 
 
-int getStatus_VALx_DigOut_1()
-{
-return getStatus(ID_VALx_DigOut_1);
-}
-
-
 int doWrite_VALx_DigOut_2(int value)
 {
 return doWrite(ID_VALx_DigOut_2,  &value);
@@ -11743,12 +8138,6 @@ return doWrite(ID_VALx_DigOut_2,  &value);
 int addWrite_VALx_DigOut_2(int value)
 {
 return addWrite(ID_VALx_DigOut_2, &value);
-}
-
-
-int getStatus_VALx_DigOut_2()
-{
-return getStatus(ID_VALx_DigOut_2);
 }
 
 
@@ -11764,12 +8153,6 @@ return addWrite(ID_VALx_DigOut_3, &value);
 }
 
 
-int getStatus_VALx_DigOut_3()
-{
-return getStatus(ID_VALx_DigOut_3);
-}
-
-
 int doWrite_VALx_DigOut_4(int value)
 {
 return doWrite(ID_VALx_DigOut_4,  &value);
@@ -11779,12 +8162,6 @@ return doWrite(ID_VALx_DigOut_4,  &value);
 int addWrite_VALx_DigOut_4(int value)
 {
 return addWrite(ID_VALx_DigOut_4, &value);
-}
-
-
-int getStatus_VALx_DigOut_4()
-{
-return getStatus(ID_VALx_DigOut_4);
 }
 
 
@@ -11800,12 +8177,6 @@ return addWrite(ID_VALx_DigOut_5, &value);
 }
 
 
-int getStatus_VALx_DigOut_5()
-{
-return getStatus(ID_VALx_DigOut_5);
-}
-
-
 int doWrite_VALx_DigOut_6(int value)
 {
 return doWrite(ID_VALx_DigOut_6,  &value);
@@ -11815,12 +8186,6 @@ return doWrite(ID_VALx_DigOut_6,  &value);
 int addWrite_VALx_DigOut_6(int value)
 {
 return addWrite(ID_VALx_DigOut_6, &value);
-}
-
-
-int getStatus_VALx_DigOut_6()
-{
-return getStatus(ID_VALx_DigOut_6);
 }
 
 
@@ -11836,12 +8201,6 @@ return addWrite(ID_VALx_DigOut_7, &value);
 }
 
 
-int getStatus_VALx_DigOut_7()
-{
-return getStatus(ID_VALx_DigOut_7);
-}
-
-
 int doWrite_VALx_DigOut_8(int value)
 {
 return doWrite(ID_VALx_DigOut_8,  &value);
@@ -11851,12 +8210,6 @@ return doWrite(ID_VALx_DigOut_8,  &value);
 int addWrite_VALx_DigOut_8(int value)
 {
 return addWrite(ID_VALx_DigOut_8, &value);
-}
-
-
-int getStatus_VALx_DigOut_8()
-{
-return getStatus(ID_VALx_DigOut_8);
 }
 
 
@@ -11872,12 +8225,6 @@ return addWrite(ID_VALx_DigOut_9, &value);
 }
 
 
-int getStatus_VALx_DigOut_9()
-{
-return getStatus(ID_VALx_DigOut_9);
-}
-
-
 int doWrite_VALx_DigOut_10(int value)
 {
 return doWrite(ID_VALx_DigOut_10,  &value);
@@ -11887,12 +8234,6 @@ return doWrite(ID_VALx_DigOut_10,  &value);
 int addWrite_VALx_DigOut_10(int value)
 {
 return addWrite(ID_VALx_DigOut_10, &value);
-}
-
-
-int getStatus_VALx_DigOut_10()
-{
-return getStatus(ID_VALx_DigOut_10);
 }
 
 
@@ -11908,12 +8249,6 @@ return addWrite(ID_VALx_DigOut_11, &value);
 }
 
 
-int getStatus_VALx_DigOut_11()
-{
-return getStatus(ID_VALx_DigOut_11);
-}
-
-
 int doWrite_VALx_DigOut_12(int value)
 {
 return doWrite(ID_VALx_DigOut_12,  &value);
@@ -11923,12 +8258,6 @@ return doWrite(ID_VALx_DigOut_12,  &value);
 int addWrite_VALx_DigOut_12(int value)
 {
 return addWrite(ID_VALx_DigOut_12, &value);
-}
-
-
-int getStatus_VALx_DigOut_12()
-{
-return getStatus(ID_VALx_DigOut_12);
 }
 
 
@@ -11944,12 +8273,6 @@ return addWrite(ID_VALx_DigOut_13, &value);
 }
 
 
-int getStatus_VALx_DigOut_13()
-{
-return getStatus(ID_VALx_DigOut_13);
-}
-
-
 int doWrite_VALx_DigOut_14(int value)
 {
 return doWrite(ID_VALx_DigOut_14,  &value);
@@ -11959,12 +8282,6 @@ return doWrite(ID_VALx_DigOut_14,  &value);
 int addWrite_VALx_DigOut_14(int value)
 {
 return addWrite(ID_VALx_DigOut_14, &value);
-}
-
-
-int getStatus_VALx_DigOut_14()
-{
-return getStatus(ID_VALx_DigOut_14);
 }
 
 
@@ -11980,12 +8297,6 @@ return addWrite(ID_VALx_DigOut_15, &value);
 }
 
 
-int getStatus_VALx_DigOut_15()
-{
-return getStatus(ID_VALx_DigOut_15);
-}
-
-
 int doWrite_VALx_DigOut_16(int value)
 {
 return doWrite(ID_VALx_DigOut_16,  &value);
@@ -11995,12 +8306,6 @@ return doWrite(ID_VALx_DigOut_16,  &value);
 int addWrite_VALx_DigOut_16(int value)
 {
 return addWrite(ID_VALx_DigOut_16, &value);
-}
-
-
-int getStatus_VALx_DigOut_16()
-{
-return getStatus(ID_VALx_DigOut_16);
 }
 
 
@@ -12016,12 +8321,6 @@ return addWrite(ID_RESx_DigOut_1, &value);
 }
 
 
-int getStatus_RESx_DigOut_1()
-{
-return getStatus(ID_RESx_DigOut_1);
-}
-
-
 int doWrite_RESx_DigOut_2(int value)
 {
 return doWrite(ID_RESx_DigOut_2,  &value);
@@ -12031,12 +8330,6 @@ return doWrite(ID_RESx_DigOut_2,  &value);
 int addWrite_RESx_DigOut_2(int value)
 {
 return addWrite(ID_RESx_DigOut_2, &value);
-}
-
-
-int getStatus_RESx_DigOut_2()
-{
-return getStatus(ID_RESx_DigOut_2);
 }
 
 
@@ -12052,12 +8345,6 @@ return addWrite(ID_RESx_DigOut_3, &value);
 }
 
 
-int getStatus_RESx_DigOut_3()
-{
-return getStatus(ID_RESx_DigOut_3);
-}
-
-
 int doWrite_RESx_DigOut_4(int value)
 {
 return doWrite(ID_RESx_DigOut_4,  &value);
@@ -12067,12 +8354,6 @@ return doWrite(ID_RESx_DigOut_4,  &value);
 int addWrite_RESx_DigOut_4(int value)
 {
 return addWrite(ID_RESx_DigOut_4, &value);
-}
-
-
-int getStatus_RESx_DigOut_4()
-{
-return getStatus(ID_RESx_DigOut_4);
 }
 
 
@@ -12088,12 +8369,6 @@ return addWrite(ID_RESx_DigOut_5, &value);
 }
 
 
-int getStatus_RESx_DigOut_5()
-{
-return getStatus(ID_RESx_DigOut_5);
-}
-
-
 int doWrite_RESx_DigOut_6(int value)
 {
 return doWrite(ID_RESx_DigOut_6,  &value);
@@ -12103,12 +8378,6 @@ return doWrite(ID_RESx_DigOut_6,  &value);
 int addWrite_RESx_DigOut_6(int value)
 {
 return addWrite(ID_RESx_DigOut_6, &value);
-}
-
-
-int getStatus_RESx_DigOut_6()
-{
-return getStatus(ID_RESx_DigOut_6);
 }
 
 
@@ -12124,12 +8393,6 @@ return addWrite(ID_RESx_DigOut_7, &value);
 }
 
 
-int getStatus_RESx_DigOut_7()
-{
-return getStatus(ID_RESx_DigOut_7);
-}
-
-
 int doWrite_RESx_DigOut_8(int value)
 {
 return doWrite(ID_RESx_DigOut_8,  &value);
@@ -12139,12 +8402,6 @@ return doWrite(ID_RESx_DigOut_8,  &value);
 int addWrite_RESx_DigOut_8(int value)
 {
 return addWrite(ID_RESx_DigOut_8, &value);
-}
-
-
-int getStatus_RESx_DigOut_8()
-{
-return getStatus(ID_RESx_DigOut_8);
 }
 
 
@@ -12160,12 +8417,6 @@ return addWrite(ID_RESx_DigOut_9, &value);
 }
 
 
-int getStatus_RESx_DigOut_9()
-{
-return getStatus(ID_RESx_DigOut_9);
-}
-
-
 int doWrite_RESx_DigOut_10(int value)
 {
 return doWrite(ID_RESx_DigOut_10,  &value);
@@ -12175,12 +8426,6 @@ return doWrite(ID_RESx_DigOut_10,  &value);
 int addWrite_RESx_DigOut_10(int value)
 {
 return addWrite(ID_RESx_DigOut_10, &value);
-}
-
-
-int getStatus_RESx_DigOut_10()
-{
-return getStatus(ID_RESx_DigOut_10);
 }
 
 
@@ -12196,12 +8441,6 @@ return addWrite(ID_RESx_DigOut_11, &value);
 }
 
 
-int getStatus_RESx_DigOut_11()
-{
-return getStatus(ID_RESx_DigOut_11);
-}
-
-
 int doWrite_RESx_DigOut_12(int value)
 {
 return doWrite(ID_RESx_DigOut_12,  &value);
@@ -12211,12 +8450,6 @@ return doWrite(ID_RESx_DigOut_12,  &value);
 int addWrite_RESx_DigOut_12(int value)
 {
 return addWrite(ID_RESx_DigOut_12, &value);
-}
-
-
-int getStatus_RESx_DigOut_12()
-{
-return getStatus(ID_RESx_DigOut_12);
 }
 
 
@@ -12232,12 +8465,6 @@ return addWrite(ID_RESx_DigOut_13, &value);
 }
 
 
-int getStatus_RESx_DigOut_13()
-{
-return getStatus(ID_RESx_DigOut_13);
-}
-
-
 int doWrite_RESx_DigOut_14(int value)
 {
 return doWrite(ID_RESx_DigOut_14,  &value);
@@ -12247,12 +8474,6 @@ return doWrite(ID_RESx_DigOut_14,  &value);
 int addWrite_RESx_DigOut_14(int value)
 {
 return addWrite(ID_RESx_DigOut_14, &value);
-}
-
-
-int getStatus_RESx_DigOut_14()
-{
-return getStatus(ID_RESx_DigOut_14);
 }
 
 
@@ -12268,12 +8489,6 @@ return addWrite(ID_RESx_DigOut_15, &value);
 }
 
 
-int getStatus_RESx_DigOut_15()
-{
-return getStatus(ID_RESx_DigOut_15);
-}
-
-
 int doWrite_RESx_DigOut_16(int value)
 {
 return doWrite(ID_RESx_DigOut_16,  &value);
@@ -12283,12 +8498,6 @@ return doWrite(ID_RESx_DigOut_16,  &value);
 int addWrite_RESx_DigOut_16(int value)
 {
 return addWrite(ID_RESx_DigOut_16, &value);
-}
-
-
-int getStatus_RESx_DigOut_16()
-{
-return getStatus(ID_RESx_DigOut_16);
 }
 
 
@@ -12304,12 +8513,6 @@ return addWrite(ID_TSTx_AnIn_1, &value);
 }
 
 
-int getStatus_TSTx_AnIn_1()
-{
-return getStatus(ID_TSTx_AnIn_1);
-}
-
-
 int doWrite_TSTx_AnIn_2(int value)
 {
 return doWrite(ID_TSTx_AnIn_2,  &value);
@@ -12319,12 +8522,6 @@ return doWrite(ID_TSTx_AnIn_2,  &value);
 int addWrite_TSTx_AnIn_2(int value)
 {
 return addWrite(ID_TSTx_AnIn_2, &value);
-}
-
-
-int getStatus_TSTx_AnIn_2()
-{
-return getStatus(ID_TSTx_AnIn_2);
 }
 
 
@@ -12340,12 +8537,6 @@ return addWrite(ID_TSTx_AnIn_3, &value);
 }
 
 
-int getStatus_TSTx_AnIn_3()
-{
-return getStatus(ID_TSTx_AnIn_3);
-}
-
-
 int doWrite_TSTx_AnIn_4(int value)
 {
 return doWrite(ID_TSTx_AnIn_4,  &value);
@@ -12355,12 +8546,6 @@ return doWrite(ID_TSTx_AnIn_4,  &value);
 int addWrite_TSTx_AnIn_4(int value)
 {
 return addWrite(ID_TSTx_AnIn_4, &value);
-}
-
-
-int getStatus_TSTx_AnIn_4()
-{
-return getStatus(ID_TSTx_AnIn_4);
 }
 
 
@@ -12376,12 +8561,6 @@ return addWrite(ID_TSTx_AnIn_5, &value);
 }
 
 
-int getStatus_TSTx_AnIn_5()
-{
-return getStatus(ID_TSTx_AnIn_5);
-}
-
-
 int doWrite_TSTx_AnIn_6(int value)
 {
 return doWrite(ID_TSTx_AnIn_6,  &value);
@@ -12391,12 +8570,6 @@ return doWrite(ID_TSTx_AnIn_6,  &value);
 int addWrite_TSTx_AnIn_6(int value)
 {
 return addWrite(ID_TSTx_AnIn_6, &value);
-}
-
-
-int getStatus_TSTx_AnIn_6()
-{
-return getStatus(ID_TSTx_AnIn_6);
 }
 
 
@@ -12412,12 +8585,6 @@ return addWrite(ID_TSTx_AnIn_7, &value);
 }
 
 
-int getStatus_TSTx_AnIn_7()
-{
-return getStatus(ID_TSTx_AnIn_7);
-}
-
-
 int doWrite_TSTx_AnIn_8(int value)
 {
 return doWrite(ID_TSTx_AnIn_8,  &value);
@@ -12427,12 +8594,6 @@ return doWrite(ID_TSTx_AnIn_8,  &value);
 int addWrite_TSTx_AnIn_8(int value)
 {
 return addWrite(ID_TSTx_AnIn_8, &value);
-}
-
-
-int getStatus_TSTx_AnIn_8()
-{
-return getStatus(ID_TSTx_AnIn_8);
 }
 
 
@@ -12448,12 +8609,6 @@ return addWrite(ID_TSTx_AnIn_9, &value);
 }
 
 
-int getStatus_TSTx_AnIn_9()
-{
-return getStatus(ID_TSTx_AnIn_9);
-}
-
-
 int doWrite_TSTx_AnIn_10(int value)
 {
 return doWrite(ID_TSTx_AnIn_10,  &value);
@@ -12463,12 +8618,6 @@ return doWrite(ID_TSTx_AnIn_10,  &value);
 int addWrite_TSTx_AnIn_10(int value)
 {
 return addWrite(ID_TSTx_AnIn_10, &value);
-}
-
-
-int getStatus_TSTx_AnIn_10()
-{
-return getStatus(ID_TSTx_AnIn_10);
 }
 
 
@@ -12484,12 +8633,6 @@ return addWrite(ID_TSTx_AnIn_11, &value);
 }
 
 
-int getStatus_TSTx_AnIn_11()
-{
-return getStatus(ID_TSTx_AnIn_11);
-}
-
-
 int doWrite_TSTx_AnIn_12(int value)
 {
 return doWrite(ID_TSTx_AnIn_12,  &value);
@@ -12499,12 +8642,6 @@ return doWrite(ID_TSTx_AnIn_12,  &value);
 int addWrite_TSTx_AnIn_12(int value)
 {
 return addWrite(ID_TSTx_AnIn_12, &value);
-}
-
-
-int getStatus_TSTx_AnIn_12()
-{
-return getStatus(ID_TSTx_AnIn_12);
 }
 
 
@@ -12520,12 +8657,6 @@ return addWrite(ID_VALx_AnIn_1, &value);
 }
 
 
-int getStatus_VALx_AnIn_1()
-{
-return getStatus(ID_VALx_AnIn_1);
-}
-
-
 int doWrite_VALx_AnIn_2(int16_t value)
 {
 return doWrite(ID_VALx_AnIn_2,  &value);
@@ -12535,12 +8666,6 @@ return doWrite(ID_VALx_AnIn_2,  &value);
 int addWrite_VALx_AnIn_2(int16_t value)
 {
 return addWrite(ID_VALx_AnIn_2, &value);
-}
-
-
-int getStatus_VALx_AnIn_2()
-{
-return getStatus(ID_VALx_AnIn_2);
 }
 
 
@@ -12556,12 +8681,6 @@ return addWrite(ID_VALx_AnIn_3, &value);
 }
 
 
-int getStatus_VALx_AnIn_3()
-{
-return getStatus(ID_VALx_AnIn_3);
-}
-
-
 int doWrite_VALx_AnIn_4(int16_t value)
 {
 return doWrite(ID_VALx_AnIn_4,  &value);
@@ -12571,12 +8690,6 @@ return doWrite(ID_VALx_AnIn_4,  &value);
 int addWrite_VALx_AnIn_4(int16_t value)
 {
 return addWrite(ID_VALx_AnIn_4, &value);
-}
-
-
-int getStatus_VALx_AnIn_4()
-{
-return getStatus(ID_VALx_AnIn_4);
 }
 
 
@@ -12592,12 +8705,6 @@ return addWrite(ID_VALx_AnIn_5, &value);
 }
 
 
-int getStatus_VALx_AnIn_5()
-{
-return getStatus(ID_VALx_AnIn_5);
-}
-
-
 int doWrite_VALx_AnIn_6(int16_t value)
 {
 return doWrite(ID_VALx_AnIn_6,  &value);
@@ -12607,12 +8714,6 @@ return doWrite(ID_VALx_AnIn_6,  &value);
 int addWrite_VALx_AnIn_6(int16_t value)
 {
 return addWrite(ID_VALx_AnIn_6, &value);
-}
-
-
-int getStatus_VALx_AnIn_6()
-{
-return getStatus(ID_VALx_AnIn_6);
 }
 
 
@@ -12628,12 +8729,6 @@ return addWrite(ID_VALx_AnIn_7, &value);
 }
 
 
-int getStatus_VALx_AnIn_7()
-{
-return getStatus(ID_VALx_AnIn_7);
-}
-
-
 int doWrite_VALx_AnIn_8(int16_t value)
 {
 return doWrite(ID_VALx_AnIn_8,  &value);
@@ -12643,12 +8738,6 @@ return doWrite(ID_VALx_AnIn_8,  &value);
 int addWrite_VALx_AnIn_8(int16_t value)
 {
 return addWrite(ID_VALx_AnIn_8, &value);
-}
-
-
-int getStatus_VALx_AnIn_8()
-{
-return getStatus(ID_VALx_AnIn_8);
 }
 
 
@@ -12664,12 +8753,6 @@ return addWrite(ID_VALx_AnIn_9, &value);
 }
 
 
-int getStatus_VALx_AnIn_9()
-{
-return getStatus(ID_VALx_AnIn_9);
-}
-
-
 int doWrite_VALx_AnIn_10(int16_t value)
 {
 return doWrite(ID_VALx_AnIn_10,  &value);
@@ -12679,12 +8762,6 @@ return doWrite(ID_VALx_AnIn_10,  &value);
 int addWrite_VALx_AnIn_10(int16_t value)
 {
 return addWrite(ID_VALx_AnIn_10, &value);
-}
-
-
-int getStatus_VALx_AnIn_10()
-{
-return getStatus(ID_VALx_AnIn_10);
 }
 
 
@@ -12700,12 +8777,6 @@ return addWrite(ID_VALx_AnIn_11, &value);
 }
 
 
-int getStatus_VALx_AnIn_11()
-{
-return getStatus(ID_VALx_AnIn_11);
-}
-
-
 int doWrite_VALx_AnIn_12(int16_t value)
 {
 return doWrite(ID_VALx_AnIn_12,  &value);
@@ -12715,12 +8786,6 @@ return doWrite(ID_VALx_AnIn_12,  &value);
 int addWrite_VALx_AnIn_12(int16_t value)
 {
 return addWrite(ID_VALx_AnIn_12, &value);
-}
-
-
-int getStatus_VALx_AnIn_12()
-{
-return getStatus(ID_VALx_AnIn_12);
 }
 
 
@@ -12736,12 +8801,6 @@ return addWrite(ID_VALx_AnInConf_1, &value);
 }
 
 
-int getStatus_VALx_AnInConf_1()
-{
-return getStatus(ID_VALx_AnInConf_1);
-}
-
-
 int doWrite_VALx_AnInConf_2(u_int16_t value)
 {
 return doWrite(ID_VALx_AnInConf_2,  &value);
@@ -12751,12 +8810,6 @@ return doWrite(ID_VALx_AnInConf_2,  &value);
 int addWrite_VALx_AnInConf_2(u_int16_t value)
 {
 return addWrite(ID_VALx_AnInConf_2, &value);
-}
-
-
-int getStatus_VALx_AnInConf_2()
-{
-return getStatus(ID_VALx_AnInConf_2);
 }
 
 
@@ -12772,12 +8825,6 @@ return addWrite(ID_VALx_AnInConf_3, &value);
 }
 
 
-int getStatus_VALx_AnInConf_3()
-{
-return getStatus(ID_VALx_AnInConf_3);
-}
-
-
 int doWrite_VALx_AnInConf_4(u_int16_t value)
 {
 return doWrite(ID_VALx_AnInConf_4,  &value);
@@ -12787,12 +8834,6 @@ return doWrite(ID_VALx_AnInConf_4,  &value);
 int addWrite_VALx_AnInConf_4(u_int16_t value)
 {
 return addWrite(ID_VALx_AnInConf_4, &value);
-}
-
-
-int getStatus_VALx_AnInConf_4()
-{
-return getStatus(ID_VALx_AnInConf_4);
 }
 
 
@@ -12808,12 +8849,6 @@ return addWrite(ID_VALx_AnInConf_5, &value);
 }
 
 
-int getStatus_VALx_AnInConf_5()
-{
-return getStatus(ID_VALx_AnInConf_5);
-}
-
-
 int doWrite_VALx_AnInConf_6(u_int16_t value)
 {
 return doWrite(ID_VALx_AnInConf_6,  &value);
@@ -12823,12 +8858,6 @@ return doWrite(ID_VALx_AnInConf_6,  &value);
 int addWrite_VALx_AnInConf_6(u_int16_t value)
 {
 return addWrite(ID_VALx_AnInConf_6, &value);
-}
-
-
-int getStatus_VALx_AnInConf_6()
-{
-return getStatus(ID_VALx_AnInConf_6);
 }
 
 
@@ -12844,12 +8873,6 @@ return addWrite(ID_VALx_AnInConf_7, &value);
 }
 
 
-int getStatus_VALx_AnInConf_7()
-{
-return getStatus(ID_VALx_AnInConf_7);
-}
-
-
 int doWrite_VALx_AnInConf_8(u_int16_t value)
 {
 return doWrite(ID_VALx_AnInConf_8,  &value);
@@ -12859,12 +8882,6 @@ return doWrite(ID_VALx_AnInConf_8,  &value);
 int addWrite_VALx_AnInConf_8(u_int16_t value)
 {
 return addWrite(ID_VALx_AnInConf_8, &value);
-}
-
-
-int getStatus_VALx_AnInConf_8()
-{
-return getStatus(ID_VALx_AnInConf_8);
 }
 
 
@@ -12880,12 +8897,6 @@ return addWrite(ID_VALx_AnInConf_9, &value);
 }
 
 
-int getStatus_VALx_AnInConf_9()
-{
-return getStatus(ID_VALx_AnInConf_9);
-}
-
-
 int doWrite_VALx_AnInConf_10(u_int16_t value)
 {
 return doWrite(ID_VALx_AnInConf_10,  &value);
@@ -12895,12 +8906,6 @@ return doWrite(ID_VALx_AnInConf_10,  &value);
 int addWrite_VALx_AnInConf_10(u_int16_t value)
 {
 return addWrite(ID_VALx_AnInConf_10, &value);
-}
-
-
-int getStatus_VALx_AnInConf_10()
-{
-return getStatus(ID_VALx_AnInConf_10);
 }
 
 
@@ -12916,12 +8921,6 @@ return addWrite(ID_VALx_AnInConf_11, &value);
 }
 
 
-int getStatus_VALx_AnInConf_11()
-{
-return getStatus(ID_VALx_AnInConf_11);
-}
-
-
 int doWrite_VALx_AnInConf_12(u_int16_t value)
 {
 return doWrite(ID_VALx_AnInConf_12,  &value);
@@ -12931,12 +8930,6 @@ return doWrite(ID_VALx_AnInConf_12,  &value);
 int addWrite_VALx_AnInConf_12(u_int16_t value)
 {
 return addWrite(ID_VALx_AnInConf_12, &value);
-}
-
-
-int getStatus_VALx_AnInConf_12()
-{
-return getStatus(ID_VALx_AnInConf_12);
 }
 
 
@@ -12952,12 +8945,6 @@ return addWrite(ID_VALx_AnInFltr_1, &value);
 }
 
 
-int getStatus_VALx_AnInFltr_1()
-{
-return getStatus(ID_VALx_AnInFltr_1);
-}
-
-
 int doWrite_VALx_AnInFltr_2(u_int16_t value)
 {
 return doWrite(ID_VALx_AnInFltr_2,  &value);
@@ -12967,12 +8954,6 @@ return doWrite(ID_VALx_AnInFltr_2,  &value);
 int addWrite_VALx_AnInFltr_2(u_int16_t value)
 {
 return addWrite(ID_VALx_AnInFltr_2, &value);
-}
-
-
-int getStatus_VALx_AnInFltr_2()
-{
-return getStatus(ID_VALx_AnInFltr_2);
 }
 
 
@@ -12988,12 +8969,6 @@ return addWrite(ID_VALx_AnInFltr_3, &value);
 }
 
 
-int getStatus_VALx_AnInFltr_3()
-{
-return getStatus(ID_VALx_AnInFltr_3);
-}
-
-
 int doWrite_VALx_AnInFltr_4(u_int16_t value)
 {
 return doWrite(ID_VALx_AnInFltr_4,  &value);
@@ -13003,12 +8978,6 @@ return doWrite(ID_VALx_AnInFltr_4,  &value);
 int addWrite_VALx_AnInFltr_4(u_int16_t value)
 {
 return addWrite(ID_VALx_AnInFltr_4, &value);
-}
-
-
-int getStatus_VALx_AnInFltr_4()
-{
-return getStatus(ID_VALx_AnInFltr_4);
 }
 
 
@@ -13024,12 +8993,6 @@ return addWrite(ID_VALx_AnInFltr_5, &value);
 }
 
 
-int getStatus_VALx_AnInFltr_5()
-{
-return getStatus(ID_VALx_AnInFltr_5);
-}
-
-
 int doWrite_VALx_AnInFltr_6(u_int16_t value)
 {
 return doWrite(ID_VALx_AnInFltr_6,  &value);
@@ -13039,12 +9002,6 @@ return doWrite(ID_VALx_AnInFltr_6,  &value);
 int addWrite_VALx_AnInFltr_6(u_int16_t value)
 {
 return addWrite(ID_VALx_AnInFltr_6, &value);
-}
-
-
-int getStatus_VALx_AnInFltr_6()
-{
-return getStatus(ID_VALx_AnInFltr_6);
 }
 
 
@@ -13060,12 +9017,6 @@ return addWrite(ID_VALx_AnInFltr_7, &value);
 }
 
 
-int getStatus_VALx_AnInFltr_7()
-{
-return getStatus(ID_VALx_AnInFltr_7);
-}
-
-
 int doWrite_VALx_AnInFltr_8(u_int16_t value)
 {
 return doWrite(ID_VALx_AnInFltr_8,  &value);
@@ -13075,12 +9026,6 @@ return doWrite(ID_VALx_AnInFltr_8,  &value);
 int addWrite_VALx_AnInFltr_8(u_int16_t value)
 {
 return addWrite(ID_VALx_AnInFltr_8, &value);
-}
-
-
-int getStatus_VALx_AnInFltr_8()
-{
-return getStatus(ID_VALx_AnInFltr_8);
 }
 
 
@@ -13096,12 +9041,6 @@ return addWrite(ID_VALx_AnInFltr_9, &value);
 }
 
 
-int getStatus_VALx_AnInFltr_9()
-{
-return getStatus(ID_VALx_AnInFltr_9);
-}
-
-
 int doWrite_VALx_AnInFltr_10(u_int16_t value)
 {
 return doWrite(ID_VALx_AnInFltr_10,  &value);
@@ -13111,12 +9050,6 @@ return doWrite(ID_VALx_AnInFltr_10,  &value);
 int addWrite_VALx_AnInFltr_10(u_int16_t value)
 {
 return addWrite(ID_VALx_AnInFltr_10, &value);
-}
-
-
-int getStatus_VALx_AnInFltr_10()
-{
-return getStatus(ID_VALx_AnInFltr_10);
 }
 
 
@@ -13132,12 +9065,6 @@ return addWrite(ID_VALx_AnInFltr_11, &value);
 }
 
 
-int getStatus_VALx_AnInFltr_11()
-{
-return getStatus(ID_VALx_AnInFltr_11);
-}
-
-
 int doWrite_VALx_AnInFltr_12(u_int16_t value)
 {
 return doWrite(ID_VALx_AnInFltr_12,  &value);
@@ -13147,12 +9074,6 @@ return doWrite(ID_VALx_AnInFltr_12,  &value);
 int addWrite_VALx_AnInFltr_12(u_int16_t value)
 {
 return addWrite(ID_VALx_AnInFltr_12, &value);
-}
-
-
-int getStatus_VALx_AnInFltr_12()
-{
-return getStatus(ID_VALx_AnInFltr_12);
 }
 
 
@@ -13168,12 +9089,6 @@ return addWrite(ID_RESx_AnIn_1, &value);
 }
 
 
-int getStatus_RESx_AnIn_1()
-{
-return getStatus(ID_RESx_AnIn_1);
-}
-
-
 int doWrite_RESx_AnIn_2(int16_t value)
 {
 return doWrite(ID_RESx_AnIn_2,  &value);
@@ -13183,12 +9098,6 @@ return doWrite(ID_RESx_AnIn_2,  &value);
 int addWrite_RESx_AnIn_2(int16_t value)
 {
 return addWrite(ID_RESx_AnIn_2, &value);
-}
-
-
-int getStatus_RESx_AnIn_2()
-{
-return getStatus(ID_RESx_AnIn_2);
 }
 
 
@@ -13204,12 +9113,6 @@ return addWrite(ID_RESx_AnIn_3, &value);
 }
 
 
-int getStatus_RESx_AnIn_3()
-{
-return getStatus(ID_RESx_AnIn_3);
-}
-
-
 int doWrite_RESx_AnIn_4(int16_t value)
 {
 return doWrite(ID_RESx_AnIn_4,  &value);
@@ -13219,12 +9122,6 @@ return doWrite(ID_RESx_AnIn_4,  &value);
 int addWrite_RESx_AnIn_4(int16_t value)
 {
 return addWrite(ID_RESx_AnIn_4, &value);
-}
-
-
-int getStatus_RESx_AnIn_4()
-{
-return getStatus(ID_RESx_AnIn_4);
 }
 
 
@@ -13240,12 +9137,6 @@ return addWrite(ID_RESx_AnIn_5, &value);
 }
 
 
-int getStatus_RESx_AnIn_5()
-{
-return getStatus(ID_RESx_AnIn_5);
-}
-
-
 int doWrite_RESx_AnIn_6(int16_t value)
 {
 return doWrite(ID_RESx_AnIn_6,  &value);
@@ -13255,12 +9146,6 @@ return doWrite(ID_RESx_AnIn_6,  &value);
 int addWrite_RESx_AnIn_6(int16_t value)
 {
 return addWrite(ID_RESx_AnIn_6, &value);
-}
-
-
-int getStatus_RESx_AnIn_6()
-{
-return getStatus(ID_RESx_AnIn_6);
 }
 
 
@@ -13276,12 +9161,6 @@ return addWrite(ID_RESx_AnIn_7, &value);
 }
 
 
-int getStatus_RESx_AnIn_7()
-{
-return getStatus(ID_RESx_AnIn_7);
-}
-
-
 int doWrite_RESx_AnIn_8(int16_t value)
 {
 return doWrite(ID_RESx_AnIn_8,  &value);
@@ -13291,12 +9170,6 @@ return doWrite(ID_RESx_AnIn_8,  &value);
 int addWrite_RESx_AnIn_8(int16_t value)
 {
 return addWrite(ID_RESx_AnIn_8, &value);
-}
-
-
-int getStatus_RESx_AnIn_8()
-{
-return getStatus(ID_RESx_AnIn_8);
 }
 
 
@@ -13312,12 +9185,6 @@ return addWrite(ID_RESx_AnIn_9, &value);
 }
 
 
-int getStatus_RESx_AnIn_9()
-{
-return getStatus(ID_RESx_AnIn_9);
-}
-
-
 int doWrite_RESx_AnIn_10(int16_t value)
 {
 return doWrite(ID_RESx_AnIn_10,  &value);
@@ -13327,12 +9194,6 @@ return doWrite(ID_RESx_AnIn_10,  &value);
 int addWrite_RESx_AnIn_10(int16_t value)
 {
 return addWrite(ID_RESx_AnIn_10, &value);
-}
-
-
-int getStatus_RESx_AnIn_10()
-{
-return getStatus(ID_RESx_AnIn_10);
 }
 
 
@@ -13348,12 +9209,6 @@ return addWrite(ID_RESx_AnIn_11, &value);
 }
 
 
-int getStatus_RESx_AnIn_11()
-{
-return getStatus(ID_RESx_AnIn_11);
-}
-
-
 int doWrite_RESx_AnIn_12(int16_t value)
 {
 return doWrite(ID_RESx_AnIn_12,  &value);
@@ -13363,12 +9218,6 @@ return doWrite(ID_RESx_AnIn_12,  &value);
 int addWrite_RESx_AnIn_12(int16_t value)
 {
 return addWrite(ID_RESx_AnIn_12, &value);
-}
-
-
-int getStatus_RESx_AnIn_12()
-{
-return getStatus(ID_RESx_AnIn_12);
 }
 
 
@@ -13384,12 +9233,6 @@ return addWrite(ID_RESx_AnInStts_1, &value);
 }
 
 
-int getStatus_RESx_AnInStts_1()
-{
-return getStatus(ID_RESx_AnInStts_1);
-}
-
-
 int doWrite_RESx_AnInStts_2(int16_t value)
 {
 return doWrite(ID_RESx_AnInStts_2,  &value);
@@ -13399,12 +9242,6 @@ return doWrite(ID_RESx_AnInStts_2,  &value);
 int addWrite_RESx_AnInStts_2(int16_t value)
 {
 return addWrite(ID_RESx_AnInStts_2, &value);
-}
-
-
-int getStatus_RESx_AnInStts_2()
-{
-return getStatus(ID_RESx_AnInStts_2);
 }
 
 
@@ -13420,12 +9257,6 @@ return addWrite(ID_RESx_AnInStts_3, &value);
 }
 
 
-int getStatus_RESx_AnInStts_3()
-{
-return getStatus(ID_RESx_AnInStts_3);
-}
-
-
 int doWrite_RESx_AnInStts_4(int16_t value)
 {
 return doWrite(ID_RESx_AnInStts_4,  &value);
@@ -13435,12 +9266,6 @@ return doWrite(ID_RESx_AnInStts_4,  &value);
 int addWrite_RESx_AnInStts_4(int16_t value)
 {
 return addWrite(ID_RESx_AnInStts_4, &value);
-}
-
-
-int getStatus_RESx_AnInStts_4()
-{
-return getStatus(ID_RESx_AnInStts_4);
 }
 
 
@@ -13456,12 +9281,6 @@ return addWrite(ID_RESx_AnInStts_5, &value);
 }
 
 
-int getStatus_RESx_AnInStts_5()
-{
-return getStatus(ID_RESx_AnInStts_5);
-}
-
-
 int doWrite_RESx_AnInStts_6(int16_t value)
 {
 return doWrite(ID_RESx_AnInStts_6,  &value);
@@ -13471,12 +9290,6 @@ return doWrite(ID_RESx_AnInStts_6,  &value);
 int addWrite_RESx_AnInStts_6(int16_t value)
 {
 return addWrite(ID_RESx_AnInStts_6, &value);
-}
-
-
-int getStatus_RESx_AnInStts_6()
-{
-return getStatus(ID_RESx_AnInStts_6);
 }
 
 
@@ -13492,12 +9305,6 @@ return addWrite(ID_RESx_AnInStts_7, &value);
 }
 
 
-int getStatus_RESx_AnInStts_7()
-{
-return getStatus(ID_RESx_AnInStts_7);
-}
-
-
 int doWrite_RESx_AnInStts_8(int16_t value)
 {
 return doWrite(ID_RESx_AnInStts_8,  &value);
@@ -13507,12 +9314,6 @@ return doWrite(ID_RESx_AnInStts_8,  &value);
 int addWrite_RESx_AnInStts_8(int16_t value)
 {
 return addWrite(ID_RESx_AnInStts_8, &value);
-}
-
-
-int getStatus_RESx_AnInStts_8()
-{
-return getStatus(ID_RESx_AnInStts_8);
 }
 
 
@@ -13528,12 +9329,6 @@ return addWrite(ID_RESx_AnInStts_9, &value);
 }
 
 
-int getStatus_RESx_AnInStts_9()
-{
-return getStatus(ID_RESx_AnInStts_9);
-}
-
-
 int doWrite_RESx_AnInStts_10(int16_t value)
 {
 return doWrite(ID_RESx_AnInStts_10,  &value);
@@ -13543,12 +9338,6 @@ return doWrite(ID_RESx_AnInStts_10,  &value);
 int addWrite_RESx_AnInStts_10(int16_t value)
 {
 return addWrite(ID_RESx_AnInStts_10, &value);
-}
-
-
-int getStatus_RESx_AnInStts_10()
-{
-return getStatus(ID_RESx_AnInStts_10);
 }
 
 
@@ -13564,12 +9353,6 @@ return addWrite(ID_RESx_AnInStts_11, &value);
 }
 
 
-int getStatus_RESx_AnInStts_11()
-{
-return getStatus(ID_RESx_AnInStts_11);
-}
-
-
 int doWrite_RESx_AnInStts_12(int16_t value)
 {
 return doWrite(ID_RESx_AnInStts_12,  &value);
@@ -13579,12 +9362,6 @@ return doWrite(ID_RESx_AnInStts_12,  &value);
 int addWrite_RESx_AnInStts_12(int16_t value)
 {
 return addWrite(ID_RESx_AnInStts_12, &value);
-}
-
-
-int getStatus_RESx_AnInStts_12()
-{
-return getStatus(ID_RESx_AnInStts_12);
 }
 
 
@@ -13600,12 +9377,6 @@ return addWrite(ID_TSTx_AnOut_1, &value);
 }
 
 
-int getStatus_TSTx_AnOut_1()
-{
-return getStatus(ID_TSTx_AnOut_1);
-}
-
-
 int doWrite_TSTx_AnOut_2(int value)
 {
 return doWrite(ID_TSTx_AnOut_2,  &value);
@@ -13615,12 +9386,6 @@ return doWrite(ID_TSTx_AnOut_2,  &value);
 int addWrite_TSTx_AnOut_2(int value)
 {
 return addWrite(ID_TSTx_AnOut_2, &value);
-}
-
-
-int getStatus_TSTx_AnOut_2()
-{
-return getStatus(ID_TSTx_AnOut_2);
 }
 
 
@@ -13636,12 +9401,6 @@ return addWrite(ID_TSTx_AnOut_3, &value);
 }
 
 
-int getStatus_TSTx_AnOut_3()
-{
-return getStatus(ID_TSTx_AnOut_3);
-}
-
-
 int doWrite_TSTx_AnOut_4(int value)
 {
 return doWrite(ID_TSTx_AnOut_4,  &value);
@@ -13651,12 +9410,6 @@ return doWrite(ID_TSTx_AnOut_4,  &value);
 int addWrite_TSTx_AnOut_4(int value)
 {
 return addWrite(ID_TSTx_AnOut_4, &value);
-}
-
-
-int getStatus_TSTx_AnOut_4()
-{
-return getStatus(ID_TSTx_AnOut_4);
 }
 
 
@@ -13672,12 +9425,6 @@ return addWrite(ID_VALx_AnOut_1, &value);
 }
 
 
-int getStatus_VALx_AnOut_1()
-{
-return getStatus(ID_VALx_AnOut_1);
-}
-
-
 int doWrite_VALx_AnOut_2(int16_t value)
 {
 return doWrite(ID_VALx_AnOut_2,  &value);
@@ -13687,12 +9434,6 @@ return doWrite(ID_VALx_AnOut_2,  &value);
 int addWrite_VALx_AnOut_2(int16_t value)
 {
 return addWrite(ID_VALx_AnOut_2, &value);
-}
-
-
-int getStatus_VALx_AnOut_2()
-{
-return getStatus(ID_VALx_AnOut_2);
 }
 
 
@@ -13708,12 +9449,6 @@ return addWrite(ID_VALx_AnOut_3, &value);
 }
 
 
-int getStatus_VALx_AnOut_3()
-{
-return getStatus(ID_VALx_AnOut_3);
-}
-
-
 int doWrite_VALx_AnOut_4(int16_t value)
 {
 return doWrite(ID_VALx_AnOut_4,  &value);
@@ -13723,12 +9458,6 @@ return doWrite(ID_VALx_AnOut_4,  &value);
 int addWrite_VALx_AnOut_4(int16_t value)
 {
 return addWrite(ID_VALx_AnOut_4, &value);
-}
-
-
-int getStatus_VALx_AnOut_4()
-{
-return getStatus(ID_VALx_AnOut_4);
 }
 
 
@@ -13744,12 +9473,6 @@ return addWrite(ID_VALx_AnOutConf_1, &value);
 }
 
 
-int getStatus_VALx_AnOutConf_1()
-{
-return getStatus(ID_VALx_AnOutConf_1);
-}
-
-
 int doWrite_VALx_AnOutConf_2(u_int16_t value)
 {
 return doWrite(ID_VALx_AnOutConf_2,  &value);
@@ -13759,12 +9482,6 @@ return doWrite(ID_VALx_AnOutConf_2,  &value);
 int addWrite_VALx_AnOutConf_2(u_int16_t value)
 {
 return addWrite(ID_VALx_AnOutConf_2, &value);
-}
-
-
-int getStatus_VALx_AnOutConf_2()
-{
-return getStatus(ID_VALx_AnOutConf_2);
 }
 
 
@@ -13780,12 +9497,6 @@ return addWrite(ID_VALx_AnOutConf_3, &value);
 }
 
 
-int getStatus_VALx_AnOutConf_3()
-{
-return getStatus(ID_VALx_AnOutConf_3);
-}
-
-
 int doWrite_VALx_AnOutConf_4(u_int16_t value)
 {
 return doWrite(ID_VALx_AnOutConf_4,  &value);
@@ -13795,12 +9506,6 @@ return doWrite(ID_VALx_AnOutConf_4,  &value);
 int addWrite_VALx_AnOutConf_4(u_int16_t value)
 {
 return addWrite(ID_VALx_AnOutConf_4, &value);
-}
-
-
-int getStatus_VALx_AnOutConf_4()
-{
-return getStatus(ID_VALx_AnOutConf_4);
 }
 
 
@@ -13816,12 +9521,6 @@ return addWrite(ID_RESx_AnOutStts_1, &value);
 }
 
 
-int getStatus_RESx_AnOutStts_1()
-{
-return getStatus(ID_RESx_AnOutStts_1);
-}
-
-
 int doWrite_RESx_AnOutStts_2(int16_t value)
 {
 return doWrite(ID_RESx_AnOutStts_2,  &value);
@@ -13831,12 +9530,6 @@ return doWrite(ID_RESx_AnOutStts_2,  &value);
 int addWrite_RESx_AnOutStts_2(int16_t value)
 {
 return addWrite(ID_RESx_AnOutStts_2, &value);
-}
-
-
-int getStatus_RESx_AnOutStts_2()
-{
-return getStatus(ID_RESx_AnOutStts_2);
 }
 
 
@@ -13852,12 +9545,6 @@ return addWrite(ID_RESx_AnOutStts_3, &value);
 }
 
 
-int getStatus_RESx_AnOutStts_3()
-{
-return getStatus(ID_RESx_AnOutStts_3);
-}
-
-
 int doWrite_RESx_AnOutStts_4(int16_t value)
 {
 return doWrite(ID_RESx_AnOutStts_4,  &value);
@@ -13867,12 +9554,6 @@ return doWrite(ID_RESx_AnOutStts_4,  &value);
 int addWrite_RESx_AnOutStts_4(int16_t value)
 {
 return addWrite(ID_RESx_AnOutStts_4, &value);
-}
-
-
-int getStatus_RESx_AnOutStts_4()
-{
-return getStatus(ID_RESx_AnOutStts_4);
 }
 
 
@@ -13888,12 +9569,6 @@ return addWrite(ID_TSTx_Tamb, &value);
 }
 
 
-int getStatus_TSTx_Tamb()
-{
-return getStatus(ID_TSTx_Tamb);
-}
-
-
 int doWrite_TSTx_RPM(int value)
 {
 return doWrite(ID_TSTx_RPM,  &value);
@@ -13903,12 +9578,6 @@ return doWrite(ID_TSTx_RPM,  &value);
 int addWrite_TSTx_RPM(int value)
 {
 return addWrite(ID_TSTx_RPM, &value);
-}
-
-
-int getStatus_TSTx_RPM()
-{
-return getStatus(ID_TSTx_RPM);
 }
 
 
@@ -13924,12 +9593,6 @@ return addWrite(ID_TSTx_FWrevision, &value);
 }
 
 
-int getStatus_TSTx_FWrevision()
-{
-return getStatus(ID_TSTx_FWrevision);
-}
-
-
 int doWrite_TSTx_HWconfig(int value)
 {
 return doWrite(ID_TSTx_HWconfig,  &value);
@@ -13939,12 +9602,6 @@ return doWrite(ID_TSTx_HWconfig,  &value);
 int addWrite_TSTx_HWconfig(int value)
 {
 return addWrite(ID_TSTx_HWconfig, &value);
-}
-
-
-int getStatus_TSTx_HWconfig()
-{
-return getStatus(ID_TSTx_HWconfig);
 }
 
 
@@ -13960,12 +9617,6 @@ return addWrite(ID_VALx_Tamb, &value);
 }
 
 
-int getStatus_VALx_Tamb()
-{
-return getStatus(ID_VALx_Tamb);
-}
-
-
 int doWrite_VALx_RPM(u_int16_t value)
 {
 return doWrite(ID_VALx_RPM,  &value);
@@ -13975,12 +9626,6 @@ return doWrite(ID_VALx_RPM,  &value);
 int addWrite_VALx_RPM(u_int16_t value)
 {
 return addWrite(ID_VALx_RPM, &value);
-}
-
-
-int getStatus_VALx_RPM()
-{
-return getStatus(ID_VALx_RPM);
 }
 
 
@@ -13996,12 +9641,6 @@ return addWrite(ID_VALx_FWrevision, &value);
 }
 
 
-int getStatus_VALx_FWrevision()
-{
-return getStatus(ID_VALx_FWrevision);
-}
-
-
 int doWrite_VALx_HWconfig(u_int16_t value)
 {
 return doWrite(ID_VALx_HWconfig,  &value);
@@ -14011,12 +9650,6 @@ return doWrite(ID_VALx_HWconfig,  &value);
 int addWrite_VALx_HWconfig(u_int16_t value)
 {
 return addWrite(ID_VALx_HWconfig, &value);
-}
-
-
-int getStatus_VALx_HWconfig()
-{
-return getStatus(ID_VALx_HWconfig);
 }
 
 
@@ -14032,12 +9665,6 @@ return addWrite(ID_RESx_Tamb, &value);
 }
 
 
-int getStatus_RESx_Tamb()
-{
-return getStatus(ID_RESx_Tamb);
-}
-
-
 int doWrite_RESx_RPM(u_int16_t value)
 {
 return doWrite(ID_RESx_RPM,  &value);
@@ -14047,12 +9674,6 @@ return doWrite(ID_RESx_RPM,  &value);
 int addWrite_RESx_RPM(u_int16_t value)
 {
 return addWrite(ID_RESx_RPM, &value);
-}
-
-
-int getStatus_RESx_RPM()
-{
-return getStatus(ID_RESx_RPM);
 }
 
 
@@ -14068,12 +9689,6 @@ return addWrite(ID_RESx_FWrevision, &value);
 }
 
 
-int getStatus_RESx_FWrevision()
-{
-return getStatus(ID_RESx_FWrevision);
-}
-
-
 int doWrite_RESx_HWconfig(u_int16_t value)
 {
 return doWrite(ID_RESx_HWconfig,  &value);
@@ -14083,12 +9698,6 @@ return doWrite(ID_RESx_HWconfig,  &value);
 int addWrite_RESx_HWconfig(u_int16_t value)
 {
 return addWrite(ID_RESx_HWconfig, &value);
-}
-
-
-int getStatus_RESx_HWconfig()
-{
-return getStatus(ID_RESx_HWconfig);
 }
 
 
@@ -14104,12 +9713,6 @@ return addWrite(ID_TSTx_RTUS_WR, &value);
 }
 
 
-int getStatus_TSTx_RTUS_WR()
-{
-return getStatus(ID_TSTx_RTUS_WR);
-}
-
-
 int doWrite_TSTx_RTUS_RD(int value)
 {
 return doWrite(ID_TSTx_RTUS_RD,  &value);
@@ -14119,12 +9722,6 @@ return doWrite(ID_TSTx_RTUS_RD,  &value);
 int addWrite_TSTx_RTUS_RD(int value)
 {
 return addWrite(ID_TSTx_RTUS_RD, &value);
-}
-
-
-int getStatus_TSTx_RTUS_RD()
-{
-return getStatus(ID_TSTx_RTUS_RD);
 }
 
 
@@ -14140,12 +9737,6 @@ return addWrite(ID_TSTx_RTU1_WR, &value);
 }
 
 
-int getStatus_TSTx_RTU1_WR()
-{
-return getStatus(ID_TSTx_RTU1_WR);
-}
-
-
 int doWrite_TSTx_RTU1_RD(int value)
 {
 return doWrite(ID_TSTx_RTU1_RD,  &value);
@@ -14155,12 +9746,6 @@ return doWrite(ID_TSTx_RTU1_RD,  &value);
 int addWrite_TSTx_RTU1_RD(int value)
 {
 return addWrite(ID_TSTx_RTU1_RD, &value);
-}
-
-
-int getStatus_TSTx_RTU1_RD()
-{
-return getStatus(ID_TSTx_RTU1_RD);
 }
 
 
@@ -14176,12 +9761,6 @@ return addWrite(ID_TSTx_RTU3_WR, &value);
 }
 
 
-int getStatus_TSTx_RTU3_WR()
-{
-return getStatus(ID_TSTx_RTU3_WR);
-}
-
-
 int doWrite_TSTx_RTU3_RD(int value)
 {
 return doWrite(ID_TSTx_RTU3_RD,  &value);
@@ -14191,12 +9770,6 @@ return doWrite(ID_TSTx_RTU3_RD,  &value);
 int addWrite_TSTx_RTU3_RD(int value)
 {
 return addWrite(ID_TSTx_RTU3_RD, &value);
-}
-
-
-int getStatus_TSTx_RTU3_RD()
-{
-return getStatus(ID_TSTx_RTU3_RD);
 }
 
 
@@ -14212,12 +9785,6 @@ return addWrite(ID_TSTx_CAN1_WR, &value);
 }
 
 
-int getStatus_TSTx_CAN1_WR()
-{
-return getStatus(ID_TSTx_CAN1_WR);
-}
-
-
 int doWrite_TSTx_CAN1_RD(int value)
 {
 return doWrite(ID_TSTx_CAN1_RD,  &value);
@@ -14227,12 +9794,6 @@ return doWrite(ID_TSTx_CAN1_RD,  &value);
 int addWrite_TSTx_CAN1_RD(int value)
 {
 return addWrite(ID_TSTx_CAN1_RD, &value);
-}
-
-
-int getStatus_TSTx_CAN1_RD()
-{
-return getStatus(ID_TSTx_CAN1_RD);
 }
 
 
@@ -14248,12 +9809,6 @@ return addWrite(ID_VALx_RTUS_WR, &value);
 }
 
 
-int getStatus_VALx_RTUS_WR()
-{
-return getStatus(ID_VALx_RTUS_WR);
-}
-
-
 int doWrite_VALx_RTUS_RD(int value)
 {
 return doWrite(ID_VALx_RTUS_RD,  &value);
@@ -14263,12 +9818,6 @@ return doWrite(ID_VALx_RTUS_RD,  &value);
 int addWrite_VALx_RTUS_RD(int value)
 {
 return addWrite(ID_VALx_RTUS_RD, &value);
-}
-
-
-int getStatus_VALx_RTUS_RD()
-{
-return getStatus(ID_VALx_RTUS_RD);
 }
 
 
@@ -14284,12 +9833,6 @@ return addWrite(ID_VALx_RTU1_WR, &value);
 }
 
 
-int getStatus_VALx_RTU1_WR()
-{
-return getStatus(ID_VALx_RTU1_WR);
-}
-
-
 int doWrite_VALx_RTU1_RD(int value)
 {
 return doWrite(ID_VALx_RTU1_RD,  &value);
@@ -14299,12 +9842,6 @@ return doWrite(ID_VALx_RTU1_RD,  &value);
 int addWrite_VALx_RTU1_RD(int value)
 {
 return addWrite(ID_VALx_RTU1_RD, &value);
-}
-
-
-int getStatus_VALx_RTU1_RD()
-{
-return getStatus(ID_VALx_RTU1_RD);
 }
 
 
@@ -14320,12 +9857,6 @@ return addWrite(ID_VALx_RTU3_WR, &value);
 }
 
 
-int getStatus_VALx_RTU3_WR()
-{
-return getStatus(ID_VALx_RTU3_WR);
-}
-
-
 int doWrite_VALx_RTU3_RD(int value)
 {
 return doWrite(ID_VALx_RTU3_RD,  &value);
@@ -14335,12 +9866,6 @@ return doWrite(ID_VALx_RTU3_RD,  &value);
 int addWrite_VALx_RTU3_RD(int value)
 {
 return addWrite(ID_VALx_RTU3_RD, &value);
-}
-
-
-int getStatus_VALx_RTU3_RD()
-{
-return getStatus(ID_VALx_RTU3_RD);
 }
 
 
@@ -14356,12 +9881,6 @@ return addWrite(ID_VALx_CAN1_WR, &value);
 }
 
 
-int getStatus_VALx_CAN1_WR()
-{
-return getStatus(ID_VALx_CAN1_WR);
-}
-
-
 int doWrite_VALx_CAN1_RD(int value)
 {
 return doWrite(ID_VALx_CAN1_RD,  &value);
@@ -14371,12 +9890,6 @@ return doWrite(ID_VALx_CAN1_RD,  &value);
 int addWrite_VALx_CAN1_RD(int value)
 {
 return addWrite(ID_VALx_CAN1_RD, &value);
-}
-
-
-int getStatus_VALx_CAN1_RD()
-{
-return getStatus(ID_VALx_CAN1_RD);
 }
 
 
@@ -14392,12 +9905,6 @@ return addWrite(ID_RESx_RTUS_WR, &value);
 }
 
 
-int getStatus_RESx_RTUS_WR()
-{
-return getStatus(ID_RESx_RTUS_WR);
-}
-
-
 int doWrite_RESx_RTUS_RD(int value)
 {
 return doWrite(ID_RESx_RTUS_RD,  &value);
@@ -14407,12 +9914,6 @@ return doWrite(ID_RESx_RTUS_RD,  &value);
 int addWrite_RESx_RTUS_RD(int value)
 {
 return addWrite(ID_RESx_RTUS_RD, &value);
-}
-
-
-int getStatus_RESx_RTUS_RD()
-{
-return getStatus(ID_RESx_RTUS_RD);
 }
 
 
@@ -14428,12 +9929,6 @@ return addWrite(ID_RESx_RTU1_WR, &value);
 }
 
 
-int getStatus_RESx_RTU1_WR()
-{
-return getStatus(ID_RESx_RTU1_WR);
-}
-
-
 int doWrite_RESx_RTU1_RD(int value)
 {
 return doWrite(ID_RESx_RTU1_RD,  &value);
@@ -14443,12 +9938,6 @@ return doWrite(ID_RESx_RTU1_RD,  &value);
 int addWrite_RESx_RTU1_RD(int value)
 {
 return addWrite(ID_RESx_RTU1_RD, &value);
-}
-
-
-int getStatus_RESx_RTU1_RD()
-{
-return getStatus(ID_RESx_RTU1_RD);
 }
 
 
@@ -14464,12 +9953,6 @@ return addWrite(ID_RESx_RTU3_WR, &value);
 }
 
 
-int getStatus_RESx_RTU3_WR()
-{
-return getStatus(ID_RESx_RTU3_WR);
-}
-
-
 int doWrite_RESx_RTU3_RD(int value)
 {
 return doWrite(ID_RESx_RTU3_RD,  &value);
@@ -14479,12 +9962,6 @@ return doWrite(ID_RESx_RTU3_RD,  &value);
 int addWrite_RESx_RTU3_RD(int value)
 {
 return addWrite(ID_RESx_RTU3_RD, &value);
-}
-
-
-int getStatus_RESx_RTU3_RD()
-{
-return getStatus(ID_RESx_RTU3_RD);
 }
 
 
@@ -14500,12 +9977,6 @@ return addWrite(ID_RESx_CAN1_WR, &value);
 }
 
 
-int getStatus_RESx_CAN1_WR()
-{
-return getStatus(ID_RESx_CAN1_WR);
-}
-
-
 int doWrite_RESx_CAN1_RD(int value)
 {
 return doWrite(ID_RESx_CAN1_RD,  &value);
@@ -14515,12 +9986,6 @@ return doWrite(ID_RESx_CAN1_RD,  &value);
 int addWrite_RESx_CAN1_RD(int value)
 {
 return addWrite(ID_RESx_CAN1_RD, &value);
-}
-
-
-int getStatus_RESx_CAN1_RD()
-{
-return getStatus(ID_RESx_CAN1_RD);
 }
 
 
@@ -14536,12 +10001,6 @@ return addWrite(ID_STATUSx_LOCAL, &value);
 }
 
 
-int getStatus_STATUSx_LOCAL()
-{
-return getStatus(ID_STATUSx_LOCAL);
-}
-
-
 int doWrite_STATUSx_REMOTE(int value)
 {
 return doWrite(ID_STATUSx_REMOTE,  &value);
@@ -14551,12 +10010,6 @@ return doWrite(ID_STATUSx_REMOTE,  &value);
 int addWrite_STATUSx_REMOTE(int value)
 {
 return addWrite(ID_STATUSx_REMOTE, &value);
-}
-
-
-int getStatus_STATUSx_REMOTE()
-{
-return getStatus(ID_STATUSx_REMOTE);
 }
 
 
@@ -14572,12 +10025,6 @@ return addWrite(ID_STATUSx_DONE, &value);
 }
 
 
-int getStatus_STATUSx_DONE()
-{
-return getStatus(ID_STATUSx_DONE);
-}
-
-
 int doWrite_RTU_DigIn_1(int value)
 {
 return doWrite(ID_RTU_DigIn_1,  &value);
@@ -14587,12 +10034,6 @@ return doWrite(ID_RTU_DigIn_1,  &value);
 int addWrite_RTU_DigIn_1(int value)
 {
 return addWrite(ID_RTU_DigIn_1, &value);
-}
-
-
-int getStatus_RTU_DigIn_1()
-{
-return getStatus(ID_RTU_DigIn_1);
 }
 
 
@@ -14608,12 +10049,6 @@ return addWrite(ID_RTU_DigIn_2, &value);
 }
 
 
-int getStatus_RTU_DigIn_2()
-{
-return getStatus(ID_RTU_DigIn_2);
-}
-
-
 int doWrite_RTU_DigIn_3(int value)
 {
 return doWrite(ID_RTU_DigIn_3,  &value);
@@ -14623,12 +10058,6 @@ return doWrite(ID_RTU_DigIn_3,  &value);
 int addWrite_RTU_DigIn_3(int value)
 {
 return addWrite(ID_RTU_DigIn_3, &value);
-}
-
-
-int getStatus_RTU_DigIn_3()
-{
-return getStatus(ID_RTU_DigIn_3);
 }
 
 
@@ -14644,12 +10073,6 @@ return addWrite(ID_RTU_DigIn_4, &value);
 }
 
 
-int getStatus_RTU_DigIn_4()
-{
-return getStatus(ID_RTU_DigIn_4);
-}
-
-
 int doWrite_RTU_DigIn_5(int value)
 {
 return doWrite(ID_RTU_DigIn_5,  &value);
@@ -14659,12 +10082,6 @@ return doWrite(ID_RTU_DigIn_5,  &value);
 int addWrite_RTU_DigIn_5(int value)
 {
 return addWrite(ID_RTU_DigIn_5, &value);
-}
-
-
-int getStatus_RTU_DigIn_5()
-{
-return getStatus(ID_RTU_DigIn_5);
 }
 
 
@@ -14680,12 +10097,6 @@ return addWrite(ID_RTU_DigIn_6, &value);
 }
 
 
-int getStatus_RTU_DigIn_6()
-{
-return getStatus(ID_RTU_DigIn_6);
-}
-
-
 int doWrite_RTU_DigIn_7(int value)
 {
 return doWrite(ID_RTU_DigIn_7,  &value);
@@ -14695,12 +10106,6 @@ return doWrite(ID_RTU_DigIn_7,  &value);
 int addWrite_RTU_DigIn_7(int value)
 {
 return addWrite(ID_RTU_DigIn_7, &value);
-}
-
-
-int getStatus_RTU_DigIn_7()
-{
-return getStatus(ID_RTU_DigIn_7);
 }
 
 
@@ -14716,12 +10121,6 @@ return addWrite(ID_RTU_DigIn_8, &value);
 }
 
 
-int getStatus_RTU_DigIn_8()
-{
-return getStatus(ID_RTU_DigIn_8);
-}
-
-
 int doWrite_RTU_DigIn_9(int value)
 {
 return doWrite(ID_RTU_DigIn_9,  &value);
@@ -14731,12 +10130,6 @@ return doWrite(ID_RTU_DigIn_9,  &value);
 int addWrite_RTU_DigIn_9(int value)
 {
 return addWrite(ID_RTU_DigIn_9, &value);
-}
-
-
-int getStatus_RTU_DigIn_9()
-{
-return getStatus(ID_RTU_DigIn_9);
 }
 
 
@@ -14752,12 +10145,6 @@ return addWrite(ID_RTU_DigIn_10, &value);
 }
 
 
-int getStatus_RTU_DigIn_10()
-{
-return getStatus(ID_RTU_DigIn_10);
-}
-
-
 int doWrite_RTU_DigIn_11(int value)
 {
 return doWrite(ID_RTU_DigIn_11,  &value);
@@ -14767,12 +10154,6 @@ return doWrite(ID_RTU_DigIn_11,  &value);
 int addWrite_RTU_DigIn_11(int value)
 {
 return addWrite(ID_RTU_DigIn_11, &value);
-}
-
-
-int getStatus_RTU_DigIn_11()
-{
-return getStatus(ID_RTU_DigIn_11);
 }
 
 
@@ -14788,12 +10169,6 @@ return addWrite(ID_RTU_DigIn_12, &value);
 }
 
 
-int getStatus_RTU_DigIn_12()
-{
-return getStatus(ID_RTU_DigIn_12);
-}
-
-
 int doWrite_RTU_DigIn_13(int value)
 {
 return doWrite(ID_RTU_DigIn_13,  &value);
@@ -14803,12 +10178,6 @@ return doWrite(ID_RTU_DigIn_13,  &value);
 int addWrite_RTU_DigIn_13(int value)
 {
 return addWrite(ID_RTU_DigIn_13, &value);
-}
-
-
-int getStatus_RTU_DigIn_13()
-{
-return getStatus(ID_RTU_DigIn_13);
 }
 
 
@@ -14824,12 +10193,6 @@ return addWrite(ID_RTU_DigIn_14, &value);
 }
 
 
-int getStatus_RTU_DigIn_14()
-{
-return getStatus(ID_RTU_DigIn_14);
-}
-
-
 int doWrite_RTU_DigIn_15(int value)
 {
 return doWrite(ID_RTU_DigIn_15,  &value);
@@ -14839,12 +10202,6 @@ return doWrite(ID_RTU_DigIn_15,  &value);
 int addWrite_RTU_DigIn_15(int value)
 {
 return addWrite(ID_RTU_DigIn_15, &value);
-}
-
-
-int getStatus_RTU_DigIn_15()
-{
-return getStatus(ID_RTU_DigIn_15);
 }
 
 
@@ -14860,12 +10217,6 @@ return addWrite(ID_RTU_DigIn_16, &value);
 }
 
 
-int getStatus_RTU_DigIn_16()
-{
-return getStatus(ID_RTU_DigIn_16);
-}
-
-
 int doWrite_RTU_AnIn_1(int16_t value)
 {
 return doWrite(ID_RTU_AnIn_1,  &value);
@@ -14875,12 +10226,6 @@ return doWrite(ID_RTU_AnIn_1,  &value);
 int addWrite_RTU_AnIn_1(int16_t value)
 {
 return addWrite(ID_RTU_AnIn_1, &value);
-}
-
-
-int getStatus_RTU_AnIn_1()
-{
-return getStatus(ID_RTU_AnIn_1);
 }
 
 
@@ -14896,12 +10241,6 @@ return addWrite(ID_RTU_AnIn_2, &value);
 }
 
 
-int getStatus_RTU_AnIn_2()
-{
-return getStatus(ID_RTU_AnIn_2);
-}
-
-
 int doWrite_RTU_Tamb(int16_t value)
 {
 return doWrite(ID_RTU_Tamb,  &value);
@@ -14911,12 +10250,6 @@ return doWrite(ID_RTU_Tamb,  &value);
 int addWrite_RTU_Tamb(int16_t value)
 {
 return addWrite(ID_RTU_Tamb, &value);
-}
-
-
-int getStatus_RTU_Tamb()
-{
-return getStatus(ID_RTU_Tamb);
 }
 
 
@@ -14932,12 +10265,6 @@ return addWrite(ID_RTU_DigOut_1, &value);
 }
 
 
-int getStatus_RTU_DigOut_1()
-{
-return getStatus(ID_RTU_DigOut_1);
-}
-
-
 int doWrite_RTU_DigOut_2(int value)
 {
 return doWrite(ID_RTU_DigOut_2,  &value);
@@ -14947,12 +10274,6 @@ return doWrite(ID_RTU_DigOut_2,  &value);
 int addWrite_RTU_DigOut_2(int value)
 {
 return addWrite(ID_RTU_DigOut_2, &value);
-}
-
-
-int getStatus_RTU_DigOut_2()
-{
-return getStatus(ID_RTU_DigOut_2);
 }
 
 
@@ -14968,12 +10289,6 @@ return addWrite(ID_RTU_DigOut_3, &value);
 }
 
 
-int getStatus_RTU_DigOut_3()
-{
-return getStatus(ID_RTU_DigOut_3);
-}
-
-
 int doWrite_RTU_DigOut_4(int value)
 {
 return doWrite(ID_RTU_DigOut_4,  &value);
@@ -14983,12 +10298,6 @@ return doWrite(ID_RTU_DigOut_4,  &value);
 int addWrite_RTU_DigOut_4(int value)
 {
 return addWrite(ID_RTU_DigOut_4, &value);
-}
-
-
-int getStatus_RTU_DigOut_4()
-{
-return getStatus(ID_RTU_DigOut_4);
 }
 
 
@@ -15004,12 +10313,6 @@ return addWrite(ID_RTU_DigOut_5, &value);
 }
 
 
-int getStatus_RTU_DigOut_5()
-{
-return getStatus(ID_RTU_DigOut_5);
-}
-
-
 int doWrite_RTU_DigOut_6(int value)
 {
 return doWrite(ID_RTU_DigOut_6,  &value);
@@ -15019,12 +10322,6 @@ return doWrite(ID_RTU_DigOut_6,  &value);
 int addWrite_RTU_DigOut_6(int value)
 {
 return addWrite(ID_RTU_DigOut_6, &value);
-}
-
-
-int getStatus_RTU_DigOut_6()
-{
-return getStatus(ID_RTU_DigOut_6);
 }
 
 
@@ -15040,12 +10337,6 @@ return addWrite(ID_RTU_DigOut_7, &value);
 }
 
 
-int getStatus_RTU_DigOut_7()
-{
-return getStatus(ID_RTU_DigOut_7);
-}
-
-
 int doWrite_RTU_DigOut_8(int value)
 {
 return doWrite(ID_RTU_DigOut_8,  &value);
@@ -15055,12 +10346,6 @@ return doWrite(ID_RTU_DigOut_8,  &value);
 int addWrite_RTU_DigOut_8(int value)
 {
 return addWrite(ID_RTU_DigOut_8, &value);
-}
-
-
-int getStatus_RTU_DigOut_8()
-{
-return getStatus(ID_RTU_DigOut_8);
 }
 
 
@@ -15076,12 +10361,6 @@ return addWrite(ID_RTU_DigOut_9, &value);
 }
 
 
-int getStatus_RTU_DigOut_9()
-{
-return getStatus(ID_RTU_DigOut_9);
-}
-
-
 int doWrite_RTU_DigOut_10(int value)
 {
 return doWrite(ID_RTU_DigOut_10,  &value);
@@ -15091,12 +10370,6 @@ return doWrite(ID_RTU_DigOut_10,  &value);
 int addWrite_RTU_DigOut_10(int value)
 {
 return addWrite(ID_RTU_DigOut_10, &value);
-}
-
-
-int getStatus_RTU_DigOut_10()
-{
-return getStatus(ID_RTU_DigOut_10);
 }
 
 
@@ -15112,12 +10385,6 @@ return addWrite(ID_RTU_DigOut_11, &value);
 }
 
 
-int getStatus_RTU_DigOut_11()
-{
-return getStatus(ID_RTU_DigOut_11);
-}
-
-
 int doWrite_RTU_DigOut_12(int value)
 {
 return doWrite(ID_RTU_DigOut_12,  &value);
@@ -15127,12 +10394,6 @@ return doWrite(ID_RTU_DigOut_12,  &value);
 int addWrite_RTU_DigOut_12(int value)
 {
 return addWrite(ID_RTU_DigOut_12, &value);
-}
-
-
-int getStatus_RTU_DigOut_12()
-{
-return getStatus(ID_RTU_DigOut_12);
 }
 
 
@@ -15148,12 +10409,6 @@ return addWrite(ID_RTU_DigOut_13, &value);
 }
 
 
-int getStatus_RTU_DigOut_13()
-{
-return getStatus(ID_RTU_DigOut_13);
-}
-
-
 int doWrite_RTU_DigOut_14(int value)
 {
 return doWrite(ID_RTU_DigOut_14,  &value);
@@ -15163,12 +10418,6 @@ return doWrite(ID_RTU_DigOut_14,  &value);
 int addWrite_RTU_DigOut_14(int value)
 {
 return addWrite(ID_RTU_DigOut_14, &value);
-}
-
-
-int getStatus_RTU_DigOut_14()
-{
-return getStatus(ID_RTU_DigOut_14);
 }
 
 
@@ -15184,12 +10433,6 @@ return addWrite(ID_RTU_DigOut_15, &value);
 }
 
 
-int getStatus_RTU_DigOut_15()
-{
-return getStatus(ID_RTU_DigOut_15);
-}
-
-
 int doWrite_RTU_DigOut_16(int value)
 {
 return doWrite(ID_RTU_DigOut_16,  &value);
@@ -15199,12 +10442,6 @@ return doWrite(ID_RTU_DigOut_16,  &value);
 int addWrite_RTU_DigOut_16(int value)
 {
 return addWrite(ID_RTU_DigOut_16, &value);
-}
-
-
-int getStatus_RTU_DigOut_16()
-{
-return getStatus(ID_RTU_DigOut_16);
 }
 
 
@@ -15220,12 +10457,6 @@ return addWrite(ID_RTU_AnOutConf_X, &value);
 }
 
 
-int getStatus_RTU_AnOutConf_X()
-{
-return getStatus(ID_RTU_AnOutConf_X);
-}
-
-
 int doWrite_RTU_AnOut_1(int16_t value)
 {
 return doWrite(ID_RTU_AnOut_1,  &value);
@@ -15235,12 +10466,6 @@ return doWrite(ID_RTU_AnOut_1,  &value);
 int addWrite_RTU_AnOut_1(int16_t value)
 {
 return addWrite(ID_RTU_AnOut_1, &value);
-}
-
-
-int getStatus_RTU_AnOut_1()
-{
-return getStatus(ID_RTU_AnOut_1);
 }
 
 
@@ -15256,12 +10481,6 @@ return addWrite(ID_RTU_AnOut_2, &value);
 }
 
 
-int getStatus_RTU_AnOut_2()
-{
-return getStatus(ID_RTU_AnOut_2);
-}
-
-
 int doWrite_RTU_AnOut_3(int16_t value)
 {
 return doWrite(ID_RTU_AnOut_3,  &value);
@@ -15271,12 +10490,6 @@ return doWrite(ID_RTU_AnOut_3,  &value);
 int addWrite_RTU_AnOut_3(int16_t value)
 {
 return addWrite(ID_RTU_AnOut_3, &value);
-}
-
-
-int getStatus_RTU_AnOut_3()
-{
-return getStatus(ID_RTU_AnOut_3);
 }
 
 
@@ -15292,12 +10505,6 @@ return addWrite(ID_RTU_AnOut_4, &value);
 }
 
 
-int getStatus_RTU_AnOut_4()
-{
-return getStatus(ID_RTU_AnOut_4);
-}
-
-
 int doWrite_RTU_AnOut_5(int16_t value)
 {
 return doWrite(ID_RTU_AnOut_5,  &value);
@@ -15307,12 +10514,6 @@ return doWrite(ID_RTU_AnOut_5,  &value);
 int addWrite_RTU_AnOut_5(int16_t value)
 {
 return addWrite(ID_RTU_AnOut_5, &value);
-}
-
-
-int getStatus_RTU_AnOut_5()
-{
-return getStatus(ID_RTU_AnOut_5);
 }
 
 
@@ -15328,12 +10529,6 @@ return addWrite(ID_RTU_AnOut_6, &value);
 }
 
 
-int getStatus_RTU_AnOut_6()
-{
-return getStatus(ID_RTU_AnOut_6);
-}
-
-
 int doWrite_RTU_AnOut_7(int16_t value)
 {
 return doWrite(ID_RTU_AnOut_7,  &value);
@@ -15343,12 +10538,6 @@ return doWrite(ID_RTU_AnOut_7,  &value);
 int addWrite_RTU_AnOut_7(int16_t value)
 {
 return addWrite(ID_RTU_AnOut_7, &value);
-}
-
-
-int getStatus_RTU_AnOut_7()
-{
-return getStatus(ID_RTU_AnOut_7);
 }
 
 
@@ -15364,12 +10553,6 @@ return addWrite(ID_RTU_AnOut_8, &value);
 }
 
 
-int getStatus_RTU_AnOut_8()
-{
-return getStatus(ID_RTU_AnOut_8);
-}
-
-
 int doWrite_RTU_AnInConf_1(u_int16_t value)
 {
 return doWrite(ID_RTU_AnInConf_1,  &value);
@@ -15379,12 +10562,6 @@ return doWrite(ID_RTU_AnInConf_1,  &value);
 int addWrite_RTU_AnInConf_1(u_int16_t value)
 {
 return addWrite(ID_RTU_AnInConf_1, &value);
-}
-
-
-int getStatus_RTU_AnInConf_1()
-{
-return getStatus(ID_RTU_AnInConf_1);
 }
 
 
@@ -15400,12 +10577,6 @@ return addWrite(ID_RTU_AnInConf_2, &value);
 }
 
 
-int getStatus_RTU_AnInConf_2()
-{
-return getStatus(ID_RTU_AnInConf_2);
-}
-
-
 int doWrite_RTU_HeartBeat(u_int32_t value)
 {
 return doWrite(ID_RTU_HeartBeat,  &value);
@@ -15415,12 +10586,6 @@ return doWrite(ID_RTU_HeartBeat,  &value);
 int addWrite_RTU_HeartBeat(u_int32_t value)
 {
 return addWrite(ID_RTU_HeartBeat, &value);
-}
-
-
-int getStatus_RTU_HeartBeat()
-{
-return getStatus(ID_RTU_HeartBeat);
 }
 
 
@@ -15436,12 +10601,6 @@ return addWrite(ID_PLC_FWrevision, &value);
 }
 
 
-int getStatus_PLC_FWrevision()
-{
-return getStatus(ID_PLC_FWrevision);
-}
-
-
 int doWrite_PLC_HWconfig(u_int16_t value)
 {
 return doWrite(ID_PLC_HWconfig,  &value);
@@ -15451,12 +10610,6 @@ return doWrite(ID_PLC_HWconfig,  &value);
 int addWrite_PLC_HWconfig(u_int16_t value)
 {
 return addWrite(ID_PLC_HWconfig, &value);
-}
-
-
-int getStatus_PLC_HWconfig()
-{
-return getStatus(ID_PLC_HWconfig);
 }
 
 
@@ -15472,12 +10625,6 @@ return addWrite(ID_PLC_DigDir_1, &value);
 }
 
 
-int getStatus_PLC_DigDir_1()
-{
-return getStatus(ID_PLC_DigDir_1);
-}
-
-
 int doWrite_PLC_DigDir_2(int value)
 {
 return doWrite(ID_PLC_DigDir_2,  &value);
@@ -15487,12 +10634,6 @@ return doWrite(ID_PLC_DigDir_2,  &value);
 int addWrite_PLC_DigDir_2(int value)
 {
 return addWrite(ID_PLC_DigDir_2, &value);
-}
-
-
-int getStatus_PLC_DigDir_2()
-{
-return getStatus(ID_PLC_DigDir_2);
 }
 
 
@@ -15508,12 +10649,6 @@ return addWrite(ID_PLC_DigDir_3, &value);
 }
 
 
-int getStatus_PLC_DigDir_3()
-{
-return getStatus(ID_PLC_DigDir_3);
-}
-
-
 int doWrite_PLC_DigDir_4(int value)
 {
 return doWrite(ID_PLC_DigDir_4,  &value);
@@ -15523,12 +10658,6 @@ return doWrite(ID_PLC_DigDir_4,  &value);
 int addWrite_PLC_DigDir_4(int value)
 {
 return addWrite(ID_PLC_DigDir_4, &value);
-}
-
-
-int getStatus_PLC_DigDir_4()
-{
-return getStatus(ID_PLC_DigDir_4);
 }
 
 
@@ -15544,12 +10673,6 @@ return addWrite(ID_PLC_DigDir_5, &value);
 }
 
 
-int getStatus_PLC_DigDir_5()
-{
-return getStatus(ID_PLC_DigDir_5);
-}
-
-
 int doWrite_PLC_DigDir_6(int value)
 {
 return doWrite(ID_PLC_DigDir_6,  &value);
@@ -15559,12 +10682,6 @@ return doWrite(ID_PLC_DigDir_6,  &value);
 int addWrite_PLC_DigDir_6(int value)
 {
 return addWrite(ID_PLC_DigDir_6, &value);
-}
-
-
-int getStatus_PLC_DigDir_6()
-{
-return getStatus(ID_PLC_DigDir_6);
 }
 
 
@@ -15580,12 +10697,6 @@ return addWrite(ID_PLC_DigDir_7, &value);
 }
 
 
-int getStatus_PLC_DigDir_7()
-{
-return getStatus(ID_PLC_DigDir_7);
-}
-
-
 int doWrite_PLC_DigDir_8(int value)
 {
 return doWrite(ID_PLC_DigDir_8,  &value);
@@ -15595,12 +10706,6 @@ return doWrite(ID_PLC_DigDir_8,  &value);
 int addWrite_PLC_DigDir_8(int value)
 {
 return addWrite(ID_PLC_DigDir_8, &value);
-}
-
-
-int getStatus_PLC_DigDir_8()
-{
-return getStatus(ID_PLC_DigDir_8);
 }
 
 
@@ -15616,12 +10721,6 @@ return addWrite(ID_PLC_AnInConf_1, &value);
 }
 
 
-int getStatus_PLC_AnInConf_1()
-{
-return getStatus(ID_PLC_AnInConf_1);
-}
-
-
 int doWrite_PLC_AnInConf_2(u_int16_t value)
 {
 return doWrite(ID_PLC_AnInConf_2,  &value);
@@ -15631,12 +10730,6 @@ return doWrite(ID_PLC_AnInConf_2,  &value);
 int addWrite_PLC_AnInConf_2(u_int16_t value)
 {
 return addWrite(ID_PLC_AnInConf_2, &value);
-}
-
-
-int getStatus_PLC_AnInConf_2()
-{
-return getStatus(ID_PLC_AnInConf_2);
 }
 
 
@@ -15652,12 +10745,6 @@ return addWrite(ID_PLC_AnOutConf_1, &value);
 }
 
 
-int getStatus_PLC_AnOutConf_1()
-{
-return getStatus(ID_PLC_AnOutConf_1);
-}
-
-
 int doWrite_PLC_AnOutConf_2(u_int16_t value)
 {
 return doWrite(ID_PLC_AnOutConf_2,  &value);
@@ -15667,12 +10754,6 @@ return doWrite(ID_PLC_AnOutConf_2,  &value);
 int addWrite_PLC_AnOutConf_2(u_int16_t value)
 {
 return addWrite(ID_PLC_AnOutConf_2, &value);
-}
-
-
-int getStatus_PLC_AnOutConf_2()
-{
-return getStatus(ID_PLC_AnOutConf_2);
 }
 
 
@@ -15688,12 +10769,6 @@ return addWrite(ID_PLC_AnOutConf_3, &value);
 }
 
 
-int getStatus_PLC_AnOutConf_3()
-{
-return getStatus(ID_PLC_AnOutConf_3);
-}
-
-
 int doWrite_PLC_AnOutConf_4(u_int16_t value)
 {
 return doWrite(ID_PLC_AnOutConf_4,  &value);
@@ -15703,12 +10778,6 @@ return doWrite(ID_PLC_AnOutConf_4,  &value);
 int addWrite_PLC_AnOutConf_4(u_int16_t value)
 {
 return addWrite(ID_PLC_AnOutConf_4, &value);
-}
-
-
-int getStatus_PLC_AnOutConf_4()
-{
-return getStatus(ID_PLC_AnOutConf_4);
 }
 
 
@@ -15724,12 +10793,6 @@ return addWrite(ID_PLC_DigIn_1, &value);
 }
 
 
-int getStatus_PLC_DigIn_1()
-{
-return getStatus(ID_PLC_DigIn_1);
-}
-
-
 int doWrite_PLC_DigIn_2(int value)
 {
 return doWrite(ID_PLC_DigIn_2,  &value);
@@ -15739,12 +10802,6 @@ return doWrite(ID_PLC_DigIn_2,  &value);
 int addWrite_PLC_DigIn_2(int value)
 {
 return addWrite(ID_PLC_DigIn_2, &value);
-}
-
-
-int getStatus_PLC_DigIn_2()
-{
-return getStatus(ID_PLC_DigIn_2);
 }
 
 
@@ -15760,12 +10817,6 @@ return addWrite(ID_PLC_DigIn_3, &value);
 }
 
 
-int getStatus_PLC_DigIn_3()
-{
-return getStatus(ID_PLC_DigIn_3);
-}
-
-
 int doWrite_PLC_DigIn_4(int value)
 {
 return doWrite(ID_PLC_DigIn_4,  &value);
@@ -15775,12 +10826,6 @@ return doWrite(ID_PLC_DigIn_4,  &value);
 int addWrite_PLC_DigIn_4(int value)
 {
 return addWrite(ID_PLC_DigIn_4, &value);
-}
-
-
-int getStatus_PLC_DigIn_4()
-{
-return getStatus(ID_PLC_DigIn_4);
 }
 
 
@@ -15796,12 +10841,6 @@ return addWrite(ID_PLC_DigIn_5, &value);
 }
 
 
-int getStatus_PLC_DigIn_5()
-{
-return getStatus(ID_PLC_DigIn_5);
-}
-
-
 int doWrite_PLC_DigIn_6(int value)
 {
 return doWrite(ID_PLC_DigIn_6,  &value);
@@ -15811,12 +10850,6 @@ return doWrite(ID_PLC_DigIn_6,  &value);
 int addWrite_PLC_DigIn_6(int value)
 {
 return addWrite(ID_PLC_DigIn_6, &value);
-}
-
-
-int getStatus_PLC_DigIn_6()
-{
-return getStatus(ID_PLC_DigIn_6);
 }
 
 
@@ -15832,12 +10865,6 @@ return addWrite(ID_PLC_DigIn_7, &value);
 }
 
 
-int getStatus_PLC_DigIn_7()
-{
-return getStatus(ID_PLC_DigIn_7);
-}
-
-
 int doWrite_PLC_DigIn_8(int value)
 {
 return doWrite(ID_PLC_DigIn_8,  &value);
@@ -15847,12 +10874,6 @@ return doWrite(ID_PLC_DigIn_8,  &value);
 int addWrite_PLC_DigIn_8(int value)
 {
 return addWrite(ID_PLC_DigIn_8, &value);
-}
-
-
-int getStatus_PLC_DigIn_8()
-{
-return getStatus(ID_PLC_DigIn_8);
 }
 
 
@@ -15868,12 +10889,6 @@ return addWrite(ID_PLC_DigIn_9, &value);
 }
 
 
-int getStatus_PLC_DigIn_9()
-{
-return getStatus(ID_PLC_DigIn_9);
-}
-
-
 int doWrite_PLC_DigIn_10(int value)
 {
 return doWrite(ID_PLC_DigIn_10,  &value);
@@ -15883,12 +10898,6 @@ return doWrite(ID_PLC_DigIn_10,  &value);
 int addWrite_PLC_DigIn_10(int value)
 {
 return addWrite(ID_PLC_DigIn_10, &value);
-}
-
-
-int getStatus_PLC_DigIn_10()
-{
-return getStatus(ID_PLC_DigIn_10);
 }
 
 
@@ -15904,12 +10913,6 @@ return addWrite(ID_PLC_DigIn_11, &value);
 }
 
 
-int getStatus_PLC_DigIn_11()
-{
-return getStatus(ID_PLC_DigIn_11);
-}
-
-
 int doWrite_PLC_DigIn_12(int value)
 {
 return doWrite(ID_PLC_DigIn_12,  &value);
@@ -15919,12 +10922,6 @@ return doWrite(ID_PLC_DigIn_12,  &value);
 int addWrite_PLC_DigIn_12(int value)
 {
 return addWrite(ID_PLC_DigIn_12, &value);
-}
-
-
-int getStatus_PLC_DigIn_12()
-{
-return getStatus(ID_PLC_DigIn_12);
 }
 
 
@@ -15940,12 +10937,6 @@ return addWrite(ID_PLC_AnIn_1, &value);
 }
 
 
-int getStatus_PLC_AnIn_1()
-{
-return getStatus(ID_PLC_AnIn_1);
-}
-
-
 int doWrite_PLC_AnIn_2(int16_t value)
 {
 return doWrite(ID_PLC_AnIn_2,  &value);
@@ -15955,12 +10946,6 @@ return doWrite(ID_PLC_AnIn_2,  &value);
 int addWrite_PLC_AnIn_2(int16_t value)
 {
 return addWrite(ID_PLC_AnIn_2, &value);
-}
-
-
-int getStatus_PLC_AnIn_2()
-{
-return getStatus(ID_PLC_AnIn_2);
 }
 
 
@@ -15976,12 +10961,6 @@ return addWrite(ID_PLC_AnIn_3, &value);
 }
 
 
-int getStatus_PLC_AnIn_3()
-{
-return getStatus(ID_PLC_AnIn_3);
-}
-
-
 int doWrite_PLC_AnIn_4(int16_t value)
 {
 return doWrite(ID_PLC_AnIn_4,  &value);
@@ -15991,12 +10970,6 @@ return doWrite(ID_PLC_AnIn_4,  &value);
 int addWrite_PLC_AnIn_4(int16_t value)
 {
 return addWrite(ID_PLC_AnIn_4, &value);
-}
-
-
-int getStatus_PLC_AnIn_4()
-{
-return getStatus(ID_PLC_AnIn_4);
 }
 
 
@@ -16012,12 +10985,6 @@ return addWrite(ID_PLC_AnIn_5, &value);
 }
 
 
-int getStatus_PLC_AnIn_5()
-{
-return getStatus(ID_PLC_AnIn_5);
-}
-
-
 int doWrite_PLC_Tamb(int16_t value)
 {
 return doWrite(ID_PLC_Tamb,  &value);
@@ -16027,12 +10994,6 @@ return doWrite(ID_PLC_Tamb,  &value);
 int addWrite_PLC_Tamb(int16_t value)
 {
 return addWrite(ID_PLC_Tamb, &value);
-}
-
-
-int getStatus_PLC_Tamb()
-{
-return getStatus(ID_PLC_Tamb);
 }
 
 
@@ -16048,12 +11009,6 @@ return addWrite(ID_PLC_Encoder, &value);
 }
 
 
-int getStatus_PLC_Encoder()
-{
-return getStatus(ID_PLC_Encoder);
-}
-
-
 int doWrite_PLC_Capture(u_int32_t value)
 {
 return doWrite(ID_PLC_Capture,  &value);
@@ -16063,12 +11018,6 @@ return doWrite(ID_PLC_Capture,  &value);
 int addWrite_PLC_Capture(u_int32_t value)
 {
 return addWrite(ID_PLC_Capture, &value);
-}
-
-
-int getStatus_PLC_Capture()
-{
-return getStatus(ID_PLC_Capture);
 }
 
 
@@ -16084,12 +11033,6 @@ return addWrite(ID_PLC_DigOut_1, &value);
 }
 
 
-int getStatus_PLC_DigOut_1()
-{
-return getStatus(ID_PLC_DigOut_1);
-}
-
-
 int doWrite_PLC_DigOut_2(int value)
 {
 return doWrite(ID_PLC_DigOut_2,  &value);
@@ -16099,12 +11042,6 @@ return doWrite(ID_PLC_DigOut_2,  &value);
 int addWrite_PLC_DigOut_2(int value)
 {
 return addWrite(ID_PLC_DigOut_2, &value);
-}
-
-
-int getStatus_PLC_DigOut_2()
-{
-return getStatus(ID_PLC_DigOut_2);
 }
 
 
@@ -16120,12 +11057,6 @@ return addWrite(ID_PLC_DigOut_3, &value);
 }
 
 
-int getStatus_PLC_DigOut_3()
-{
-return getStatus(ID_PLC_DigOut_3);
-}
-
-
 int doWrite_PLC_DigOut_4(int value)
 {
 return doWrite(ID_PLC_DigOut_4,  &value);
@@ -16135,12 +11066,6 @@ return doWrite(ID_PLC_DigOut_4,  &value);
 int addWrite_PLC_DigOut_4(int value)
 {
 return addWrite(ID_PLC_DigOut_4, &value);
-}
-
-
-int getStatus_PLC_DigOut_4()
-{
-return getStatus(ID_PLC_DigOut_4);
 }
 
 
@@ -16156,12 +11081,6 @@ return addWrite(ID_PLC_DigOut_5, &value);
 }
 
 
-int getStatus_PLC_DigOut_5()
-{
-return getStatus(ID_PLC_DigOut_5);
-}
-
-
 int doWrite_PLC_DigOut_6(int value)
 {
 return doWrite(ID_PLC_DigOut_6,  &value);
@@ -16171,12 +11090,6 @@ return doWrite(ID_PLC_DigOut_6,  &value);
 int addWrite_PLC_DigOut_6(int value)
 {
 return addWrite(ID_PLC_DigOut_6, &value);
-}
-
-
-int getStatus_PLC_DigOut_6()
-{
-return getStatus(ID_PLC_DigOut_6);
 }
 
 
@@ -16192,12 +11105,6 @@ return addWrite(ID_PLC_DigOut_7, &value);
 }
 
 
-int getStatus_PLC_DigOut_7()
-{
-return getStatus(ID_PLC_DigOut_7);
-}
-
-
 int doWrite_PLC_DigOut_8(int value)
 {
 return doWrite(ID_PLC_DigOut_8,  &value);
@@ -16207,12 +11114,6 @@ return doWrite(ID_PLC_DigOut_8,  &value);
 int addWrite_PLC_DigOut_8(int value)
 {
 return addWrite(ID_PLC_DigOut_8, &value);
-}
-
-
-int getStatus_PLC_DigOut_8()
-{
-return getStatus(ID_PLC_DigOut_8);
 }
 
 
@@ -16228,12 +11129,6 @@ return addWrite(ID_PLC_AnOut_1, &value);
 }
 
 
-int getStatus_PLC_AnOut_1()
-{
-return getStatus(ID_PLC_AnOut_1);
-}
-
-
 int doWrite_PLC_AnOut_2(int16_t value)
 {
 return doWrite(ID_PLC_AnOut_2,  &value);
@@ -16243,12 +11138,6 @@ return doWrite(ID_PLC_AnOut_2,  &value);
 int addWrite_PLC_AnOut_2(int16_t value)
 {
 return addWrite(ID_PLC_AnOut_2, &value);
-}
-
-
-int getStatus_PLC_AnOut_2()
-{
-return getStatus(ID_PLC_AnOut_2);
 }
 
 
@@ -16264,12 +11153,6 @@ return addWrite(ID_PLC_AnOut_3, &value);
 }
 
 
-int getStatus_PLC_AnOut_3()
-{
-return getStatus(ID_PLC_AnOut_3);
-}
-
-
 int doWrite_PLC_AnOut_4(int16_t value)
 {
 return doWrite(ID_PLC_AnOut_4,  &value);
@@ -16279,12 +11162,6 @@ return doWrite(ID_PLC_AnOut_4,  &value);
 int addWrite_PLC_AnOut_4(int16_t value)
 {
 return addWrite(ID_PLC_AnOut_4, &value);
-}
-
-
-int getStatus_PLC_AnOut_4()
-{
-return getStatus(ID_PLC_AnOut_4);
 }
 
 
@@ -16300,12 +11177,6 @@ return addWrite(ID_PLC_EncoderStart, &value);
 }
 
 
-int getStatus_PLC_EncoderStart()
-{
-return getStatus(ID_PLC_EncoderStart);
-}
-
-
 int doWrite_PLC_EncoderReset(u_int16_t value)
 {
 return doWrite(ID_PLC_EncoderReset,  &value);
@@ -16315,12 +11186,6 @@ return doWrite(ID_PLC_EncoderReset,  &value);
 int addWrite_PLC_EncoderReset(u_int16_t value)
 {
 return addWrite(ID_PLC_EncoderReset, &value);
-}
-
-
-int getStatus_PLC_EncoderReset()
-{
-return getStatus(ID_PLC_EncoderReset);
 }
 
 
@@ -16336,12 +11201,6 @@ return addWrite(ID_PLC_Heartbeat, &value);
 }
 
 
-int getStatus_PLC_Heartbeat()
-{
-return getStatus(ID_PLC_Heartbeat);
-}
-
-
 int doWrite_PLC_StatusReg(u_int16_t value)
 {
 return doWrite(ID_PLC_StatusReg,  &value);
@@ -16351,12 +11210,6 @@ return doWrite(ID_PLC_StatusReg,  &value);
 int addWrite_PLC_StatusReg(u_int16_t value)
 {
 return addWrite(ID_PLC_StatusReg, &value);
-}
-
-
-int getStatus_PLC_StatusReg()
-{
-return getStatus(ID_PLC_StatusReg);
 }
 
 
@@ -16372,12 +11225,6 @@ return addWrite(ID_PLC_AnIn1Filter, &value);
 }
 
 
-int getStatus_PLC_AnIn1Filter()
-{
-return getStatus(ID_PLC_AnIn1Filter);
-}
-
-
 int doWrite_PLC_AnIn2Filter(u_int16_t value)
 {
 return doWrite(ID_PLC_AnIn2Filter,  &value);
@@ -16387,12 +11234,6 @@ return doWrite(ID_PLC_AnIn2Filter,  &value);
 int addWrite_PLC_AnIn2Filter(u_int16_t value)
 {
 return addWrite(ID_PLC_AnIn2Filter, &value);
-}
-
-
-int getStatus_PLC_AnIn2Filter()
-{
-return getStatus(ID_PLC_AnIn2Filter);
 }
 
 
@@ -16408,12 +11249,6 @@ return addWrite(ID_PLC_time, &value);
 }
 
 
-int getStatus_PLC_time()
-{
-return getStatus(ID_PLC_time);
-}
-
-
 int doWrite_PLC_timeMin(float value)
 {
 return doWrite(ID_PLC_timeMin,  &value);
@@ -16423,12 +11258,6 @@ return doWrite(ID_PLC_timeMin,  &value);
 int addWrite_PLC_timeMin(float value)
 {
 return addWrite(ID_PLC_timeMin, &value);
-}
-
-
-int getStatus_PLC_timeMin()
-{
-return getStatus(ID_PLC_timeMin);
 }
 
 
@@ -16444,12 +11273,6 @@ return addWrite(ID_PLC_timeMax, &value);
 }
 
 
-int getStatus_PLC_timeMax()
-{
-return getStatus(ID_PLC_timeMax);
-}
-
-
 int doWrite_PLC_timeWin(float value)
 {
 return doWrite(ID_PLC_timeWin,  &value);
@@ -16462,17 +11285,12 @@ return addWrite(ID_PLC_timeWin, &value);
 }
 
 
-int getStatus_PLC_timeWin()
-{
-return getStatus(ID_PLC_timeWin);
-}
-
-
 int update_all(void)
 {
 int retval = 0;
 retval += readFromDb(ID_PRODUCT_ID, &PRODUCT_ID);
 retval += readFromDb(ID_SERIAL_NUMBER, &SERIAL_NUMBER);
+retval += readFromDb(ID_TEST_ID, &TEST_ID);
 retval += readFromDb(ID_TEST_STEP, &TEST_STEP);
 retval += readFromDb(ID_TEST_STEP_MAX, &TEST_STEP_MAX);
 retval += readFromDb(ID_TEST_DATE, &TEST_DATE);

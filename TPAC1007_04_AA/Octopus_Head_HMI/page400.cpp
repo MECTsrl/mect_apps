@@ -12,7 +12,6 @@
 #include "main.h"
 #include "page400.h"
 #include "ui_page400.h"
-#include "crosstable.h"
 #include "automation.h"
 
 /**
@@ -87,4 +86,12 @@ page400::~page400()
 void page400::on_atcmComboBox_PRODUCT_ID_currentIndexChanged(const QString &arg1)
 {
     setProduct(arg1.toAscii().data());
+}
+
+void page400::on_atcmComboBox_TEST_ID_currentIndexChanged(const QString &arg1)
+{
+    QString dirname = QString(RECIPE_DIR) + QString("/") + ui->atcmComboBox_PRODUCT_ID->currentText();
+    if (loadRecipe(dirname + QString("/") + arg1) < 0) {
+        ;
+    }
 }

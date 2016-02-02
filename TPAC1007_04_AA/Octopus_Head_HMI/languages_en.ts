@@ -1336,8 +1336,6 @@
     <message>
         <location filename="page300.ui" line="1321"/>
         <location filename="page300.ui" line="1330"/>
-        <location filename="page300.ui" line="1363"/>
-        <location filename="page300.ui" line="1369"/>
         <source>STATUS</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1475,13 +1473,19 @@ MATIC</source>
     </message>
     <message>
         <location filename="page300.ui" line="1079"/>
-        <location filename="page300.ui" line="1366"/>
+        <location filename="page300.ui" line="1367"/>
         <source>ATCMcombobox widget</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page300.ui" line="1397"/>
-        <source>0;IDLE;1;STARTING;2;READY;3;TESTING;4;DONE;5;RESETTING;6;STOPPING;7;ERROR</source>
+        <location filename="page300.ui" line="1364"/>
+        <location filename="page300.ui" line="1370"/>
+        <source>TEST_ID</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page300.ui" line="1401"/>
+        <source>1;1;2;2;3;3;4;4</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1539,7 +1543,8 @@ MATIC</source>
     </message>
     <message>
         <location filename="page300.ui" line="1113"/>
-        <source>0;TPAC1007_4AA;1;TPAC1007_3;2;TPLC100;3;TPAC1006;4;TPAC1008;5;TP1043_485;6;TP1043_232;7;TP1043_CAN</source>
+        <source>0;-;1;TPAC1007_4AA;2;TPAC1007_3;3;TPLC100;4;TPAC1006;5;TPAC1008;6;TP1043_485;7;TP1043_232;8;TP1043_CAN</source>
+        <oldsource>0;TPAC1007_4AA;1;TPAC1007_3;2;TPLC100;3;TPAC1006;4;TPAC1008;5;TP1043_485;6;TP1043_232;7;TP1043_CAN</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1977,6 +1982,7 @@ MATIC</source>
     <message>
         <location filename="page400.ui" line="3568"/>
         <location filename="page400.ui" line="3629"/>
+        <location filename="page400.ui" line="3688"/>
         <source>ATCMcombobox widget</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2260,8 +2266,20 @@ MATIC</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="page400.ui" line="3685"/>
+        <location filename="page400.ui" line="3691"/>
+        <source>TEST_ID</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page400.ui" line="3722"/>
+        <source>1;1;2;2;3;3;4;4</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="page400.ui" line="3602"/>
-        <source>0;TPAC1007_4AA;1;TPAC1007_3;2;TPLC100;3;TPAC1006;4;TPAC1008;5;TP1043_485;6;TP1043_232;7;TP1043_CAN</source>
+        <source>0;-;1;TPAC1007_4AA;2;TPAC1007_3;3;TPLC100;4;TPAC1006;5;TPAC1008;6;TP1043_485;7;TP1043_232;8;TP1043_CAN</source>
+        <oldsource>0;TPAC1007_4AA;1;TPAC1007_3;2;TPLC100;3;TPAC1006;4;TPAC1008;5;TP1043_485;6;TP1043_232;7;TP1043_CAN</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>

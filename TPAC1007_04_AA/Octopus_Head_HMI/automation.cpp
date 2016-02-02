@@ -32,7 +32,7 @@ static void readRES(void);
 static void checkOK(void);
 static int allTestedOK(void);
 
-static int loadRecipe(const QString filename);
+static int writeRecipe(int step);
 static QStringList recipeList;
 static QString dirname;
 
@@ -123,11 +123,12 @@ void loop(void)
                 next_step = 1;
             }
             doWrite_TEST_STEP(next_step);
-            // load recipe
-            if (loadRecipe(dirname + QString("/") + recipeList.at(next_step - 1)) < 0) {
+            if (writeRecipe(next_step - 1) != 0)
+            {
                 doWrite_STATUS(STATUS_ERROR);
                 break;
             }
+
             // prepare data
             clearOK();
             clearRES();
@@ -245,9 +246,26 @@ void setProduct(char *name)
     recipeList = recipeDir.entryList(QDir::Files);
     doWrite_TEST_STEP(0);
     doWrite_TEST_STEP_MAX(recipeList.count());
+    if (recipeList.count() <= 0)
+    {
+        doWrite_STATUS(STATUS_ERROR);
+    }
+    // load recipe
+    else if (loadRecipe(dirname + QString("/") + recipeList.at(TEST_ID - 1)) < 0) {
+        doWrite_STATUS(STATUS_ERROR);
+    }
 }
 
-static int loadRecipe(const QString filename)
+#define MAX_STEP 64
+QList<u_int16_t> ctIndexList;
+QList<u_int32_t> valuesTable[MAX_STEP];
+
+/*
+ * tag1; val1; val2 ... valn
+ * ...
+ * tagm; val1; val2 ... valn
+ */
+int loadRecipe(const QString filename)
 {
     FILE * fp = fopen(filename.toAscii().data(), "r");
     if (fp == NULL)
@@ -256,42 +274,100 @@ static int loadRecipe(const QString filename)
         return -1;
     }
     char varname[TAG_LEN] = "";
-    char value[TAG_LEN] = "";
+    char token[LINE_SIZE] = "";
     char line[MAX_LINE] = "";
     char * p;
-    int number_of_variables = 0;
-    while (fgets(line, LINE_SIZE, fp) != NULL)
+    for (int line_nb = 0; fgets(line, LINE_SIZE, fp) != NULL; line_nb++)
     {
         p = line;
         /* tag */
         p = mystrtok(p, varname, SEPARATOR);
         if (p == NULL || varname[0] == '\0')
         {
-            LOG_PRINT(error_e, "Invalid tag '%s'\n", line);
+            LOG_PRINT(error_e, "Invalid tag '%s' at line %d\n", line, line_nb);
             continue;
         }
-        int decimal = getVarDecimalByName(varname);
-        /* value */
-        p = mystrtok(p, value, SEPARATOR);
-        if (value[0] != '\0')
+        int ctIndex;
+        if (Tag2CtIndex(varname, &ctIndex))
         {
-            float val_f = 0;
-            val_f = atof(value);
-            sprintf(value, "%.*f", decimal, val_f );
-            if (prepareFormattedVar(varname, value) == BUSY)
-            {
-                LOG_PRINT(warning_e, "busy, waiting to write the variable '%s' with the value '%s'\n", varname, value);
-            }
-            LOG_PRINT(info_e, "value '%s'\n", value);
-            number_of_variables++;
+            LOG_PRINT(error_e, "Invalid variable '%s' at line %d\n", varname, line_nb);
+            continue;
         }
+        ctIndexList << (u_int16_t)ctIndex;
+
+        /* values */
+        int step = 0;
+        do
+        {
+            u_int32_t value;
+            p = mystrtok(p, token, SEPARATOR);
+            if (token[0] != '\0')
+            {
+                switch (varNameArray[ctIndex].type)
+                {
+                case uintab_e:
+                case uintba_e:
+                case intab_e:
+                case intba_e:
+                {
+                    u_int16_t val_int16 = atoi(token);
+                    value = (u_int32_t)val_int16;
+                    break;
+                }
+                case udint_abcd_e:
+                case udint_badc_e:
+                case udint_cdab_e:
+                case udint_dcba_e:
+                case dint_abcd_e:
+                case dint_badc_e:
+                case dint_cdab_e:
+                case dint_dcba_e:
+                {
+                    u_int32_t val_int32 = atoi(token);
+                    value = (u_int32_t)val_int32;
+                    break;
+                }
+                case fabcd_e:
+                case fbadc_e:
+                case fcdab_e:
+                case fdcba_e:
+                {
+                    float val_float = atof(token);
+                    value = (u_int32_t)val_float;
+                    break;
+                }
+                case bytebit_e:
+                case wordbit_e:
+                case dwordbit_e:
+                case bit_e:
+                {
+                    u_int8_t val_bit = atoi(token);
+                    value = (u_int32_t)val_bit;
+                    break;
+                }
+                default:
+                    /* unknown type */
+                    break;
+                }
+            }
+            (valuesTable[step]) << value;
+            step++;
+        }
+        while(p != NULL);
     }
     fclose(fp);
-    if (number_of_variables > 0)
+    return 0;
+}
+
+static int writeRecipe(int step)
+{
+    int errors = 0;
+    for (int i = 0; i < valuesTable[step].count(); i++)
     {
-        writePendingInorder();
+        int ctIndex = ctIndexList.at(i);
+        errors += doWrite(ctIndex, &(valuesTable[step][ctIndex]));
     }
-    return number_of_variables;
+    return errors;
 }
 
 static void clearOK(void)
