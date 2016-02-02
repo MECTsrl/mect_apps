@@ -4,7 +4,6 @@
 void setup(void);
 void loop(void);
 
-void setProduct(char *name);
-int loadRecipe(const QString filename);
+void loadRecipe(const QString product, QString recipe);
 
 #endif // AUTOMATION_H

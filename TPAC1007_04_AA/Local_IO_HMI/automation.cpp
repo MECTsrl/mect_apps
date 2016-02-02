@@ -1,6 +1,7 @@
 #include "crosstable.h"
 #include <stdio.h>
 
+static void clearPLCandRES(void);
 static void ifTST_readVAL_writePLC(void);
 static void ifTST_readPLC_writeRES(void);
 
@@ -24,6 +25,7 @@ void loop(void)
 
     if (STATUS_LOCAL) {
         if (START_REMOTE) {
+            clearPLCandRES();
             doWrite_STATUS_LOCAL(0);
             doWrite_STATUS_REMOTE(1);
             substatus = 0;
@@ -52,20 +54,74 @@ void loop(void)
                 ifTST_readPLC_writeRES();
                 doWrite_STATUS_REMOTE(0);
                 doWrite_STATUS_DONE(1);
-                substatus = 0;
+                substatus = 5;
+                break;
+            case 5:
+                // waiting STATUS_DONE
                 break;
             default:
-                ; // FIXME: assert
+                ;
             }
         }
     }
     if (STATUS_DONE) {
         if (!START_TEST) {
+            clearPLCandRES();
             doWrite_STATUS_DONE(0);
             doWrite_STATUS_LOCAL(1);
             substatus = 0;
         }
     }
+}
+
+static void clearPLCandRES(void)
+{
+    doWrite_PLC_DigDir_1(0);
+    doWrite_PLC_DigDir_2(0);
+    doWrite_PLC_DigDir_3(0);
+    doWrite_PLC_DigDir_4(0);
+    doWrite_PLC_DigDir_5(0);
+    doWrite_PLC_DigDir_6(0);
+    doWrite_PLC_DigDir_7(0);
+    doWrite_PLC_DigDir_8(0);
+
+    doWrite_RES_DigIn_1(0);
+    doWrite_RES_DigIn_2(0);
+    doWrite_RES_DigIn_3(0);
+    doWrite_RES_DigIn_4(0);
+    doWrite_RES_DigIn_5(0);
+    doWrite_RES_DigIn_6(0);
+    doWrite_RES_DigIn_7(0);
+    doWrite_RES_DigIn_8(0);
+    doWrite_RES_DigIn_9(0);
+    doWrite_RES_DigIn_10(0);
+    doWrite_RES_DigIn_11(0);
+    doWrite_RES_DigIn_12(0);
+    doWrite_RES_DigIn_13(0);
+    doWrite_RES_DigIn_14(0);
+    doWrite_RES_DigIn_15(0);
+    doWrite_RES_DigIn_16(0);
+
+    doWrite_RES_AnIn_1(0);
+    doWrite_RES_AnIn_2(0);
+    doWrite_RES_AnIn_3(0);
+    doWrite_RES_AnIn_4(0);
+    doWrite_RES_AnIn_5(0);
+    doWrite_RES_AnIn_6(0);
+    doWrite_RES_AnIn_7(0);
+    doWrite_RES_AnIn_8(0);
+    doWrite_RES_AnIn_9(0);
+    doWrite_RES_AnIn_10(0);
+    doWrite_RES_AnIn_11(0);
+    doWrite_RES_AnIn_12(0);
+
+    doWrite_RES_Tamb(0);
+    doWrite_RES_RPM(0);
+    doWrite_RES_FWrevision(0);
+    doWrite_RES_HWconfig(0);
+
+    doWrite_RES_RTUS_WR(0);
+    doWrite_RES_RTUS_RD(0);
 }
 
 static void ifTST_readVAL_writePLC(void)

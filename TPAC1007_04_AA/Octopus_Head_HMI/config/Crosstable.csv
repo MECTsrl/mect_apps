@@ -194,10 +194,10 @@
 1;P;REPEAT          ;BIT      ;0   ;PLC       ;               ;    ;    ;    ;193 ;2   ;[RO]
 1;P;STATUS          ;UINT     ;0   ;PLC       ;               ;    ;    ;    ;195 ;2   ;[RW]
 1;P;RESULT          ;INT      ;0   ;PLC       ;               ;    ;    ;    ;195 ;2   ;[RW]
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
+1;P;COMMUNICATION_2 ;BIT      ;0   ;PLC       ;               ;    ;    ;    ;197 ;2   ;[RW]
+1;P;COMMUNICATION_X ;BIT      ;0   ;PLC       ;               ;    ;    ;    ;197 ;2   ;[RW]
+1;P;RESULTS_OK      ;UINT     ;0   ;PLC       ;               ;    ;    ;    ;199 ;2   ;[RW]
+1;P;RESULTS_NG      ;UINT     ;0   ;PLC       ;               ;    ;    ;    ;199 ;2   ;[RW]
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;

@@ -24,17 +24,16 @@
 #define PLC_GO_BUTTON PLC_DigIn_4
 
 #define abs(v) (((v) > 0)? (v):-(v))
+static void checkConnections(void);
 static void clearOK(void);
 static void clearRES(void);
+static void clearPLC(void);
 static void writeTST(void);
 static void writeVAL(void);
 static void readRES(void);
 static void checkOK(void);
 static int allTestedOK(void);
-
 static int writeRecipe(int step);
-static QStringList recipeList;
-static QString dirname;
 
 void setup(void)
 {
@@ -46,7 +45,6 @@ void setup(void)
     // reset 2
     doWrite_START2_REMOTE(false);
     doWrite_START2_TEST(false);
-    recipeList.clear();
     // automation entry point
     doWrite_STATUS(STATUS_UNKNOWN);
     doWrite_RESULT(RESULT_UNKNOWN);
@@ -56,11 +54,8 @@ void loop(void)
 {
     static unsigned substatus = 0;
 
-    /*************************/
-    /* OCTOPUS STATE MACHINE */
-    /*************************/
-
-    switch (STATUS) {
+    checkConnections();
+    switch (STATUS) {   // OCTOPUS STATE MACHINE
 
     case STATUS_UNKNOWN:
         if (!PLC_PWR_SWITCH) {
@@ -76,11 +71,14 @@ void loop(void)
         if (PLC_PWR_SWITCH) {
             doWrite_PLC_DigOut_2(1); // PLC_VPOT_ON
             doWrite_PLC_DigOut_3(1); // PLC_VCC_ON
+            clearPLC();
             doWrite_START2_REMOTE(true);
             doWrite_STARTx_REMOTE(true);
             doWrite_START2_TEST(false);
             doWrite_STARTx_TEST(false);
             doWrite_TEST_STEP(0);
+            doWrite_RESULTS_OK(0);
+            doWrite_RESULTS_NG(0);
             doWrite_STATUS(STATUS_STARTING);
         }
         break;
@@ -135,8 +133,6 @@ void loop(void)
             writeTST();
             writeVAL();
             // change state
-            doWrite_START2_TEST(true);
-            doWrite_STARTx_TEST(true);
             doWrite_STATUS(STATUS_TESTING);
             substatus = 0;
         }
@@ -156,26 +152,34 @@ void loop(void)
             doWrite_STARTx_TEST(true);
         }
         if (STATUS2_DONE && STATUSx_DONE) {
-            switch(substatus) {
+            switch(substatus++) {
             case 0:
                 readRES();
-                substatus = 1;
                 break;
             case 1:
             case 2:
-                ++substatus;
                 break;
             case 3:
                 checkOK();
+                break;
+            case 4:
+            case 5:
+                break;
+            case 6:
                 if (allTestedOK()) {
                     doWrite_RESULT(RESULT_OK);
+                    doWrite_RESULTS_OK(RESULTS_OK + 1);
                 } else {
                     doWrite_RESULT(RESULT_NG);
+                    doWrite_RESULTS_NG(RESULTS_NG + 1);
                 }
                 doWrite_STATUS(STATUS_DONE);
                 break;
+            case 7:
+            case 8:
+                break;
             default:
-                ; // FIXME: assert
+                ;
             }
         }
         break;
@@ -205,6 +209,10 @@ void loop(void)
             break;
         }
         if (AUTOMATIC || PLC_GO_BUTTON) {
+            if (AUTOMATIC) {
+                sleep(1); // for your eyes only
+            }
+            clearPLC();
             doWrite_START2_TEST(false);
             doWrite_STARTx_TEST(false);
             doWrite_RESULT(RESULT_UNKNOWN);
@@ -239,20 +247,35 @@ void loop(void)
     }
 }
 
-void setProduct(char *name)
+static void checkConnections(void)
 {
-    dirname = QString(RECIPE_DIR) + QString("/") + QString(name);
-    QDir recipeDir(dirname, "*.csv");
-    recipeList = recipeDir.entryList(QDir::Files);
-    doWrite_TEST_STEP(0);
-    doWrite_TEST_STEP_MAX(recipeList.count());
-    if (recipeList.count() <= 0)
-    {
-        doWrite_STATUS(STATUS_ERROR);
+    switch (getStatus_START2_REMOTE()) {
+    case DONE:
+    case BUSY:
+        if (COMMUNICATION_2 != 1) {
+            doWrite_COMMUNICATION_2(1);
+        }
+        break;
+    case ERROR:
+    case UNK:
+    default:
+        if (COMMUNICATION_2 != 0) {
+            doWrite_COMMUNICATION_2(0);
+        }
     }
-    // load recipe
-    else if (loadRecipe(dirname + QString("/") + recipeList.at(TEST_ID - 1)) < 0) {
-        doWrite_STATUS(STATUS_ERROR);
+    switch (getStatus_STARTx_REMOTE()) {
+    case DONE:
+    case BUSY:
+        if (COMMUNICATION_X != 1) {
+            doWrite_COMMUNICATION_X(1);
+        }
+        break;
+    case ERROR:
+    case UNK:
+    default:
+        if (COMMUNICATION_X != 0) {
+            doWrite_COMMUNICATION_X(0);
+        }
     }
 }
 
@@ -265,18 +288,23 @@ QList<u_int32_t> valuesTable[MAX_STEP];
  * ...
  * tagm; val1; val2 ... valn
  */
-int loadRecipe(const QString filename)
+void loadRecipe(const QString product, const QString recipe)
 {
+    // read the selected file in the product directory
+    QString filename = QString(RECIPE_DIR) + QString("/") + product
+    + QString("/") + recipe + QString(".csv");
+
     FILE * fp = fopen(filename.toAscii().data(), "r");
     if (fp == NULL)
     {
         LOG_PRINT(info_e, "Cannot open '%s'\n", filename.toAscii().data());
-        return -1;
+        return;
     }
     char varname[TAG_LEN] = "";
     char token[LINE_SIZE] = "";
     char line[MAX_LINE] = "";
     char * p;
+    int step = 0;
     for (int line_nb = 0; fgets(line, LINE_SIZE, fp) != NULL; line_nb++)
     {
         p = line;
@@ -296,7 +324,7 @@ int loadRecipe(const QString filename)
         ctIndexList << (u_int16_t)ctIndex;
 
         /* values */
-        int step = 0;
+        step = 0;
         do
         {
             u_int32_t value;
@@ -356,18 +384,21 @@ int loadRecipe(const QString filename)
         while(p != NULL);
     }
     fclose(fp);
-    return 0;
+    doWrite_TEST_STEP_MAX(step);
 }
 
 static int writeRecipe(int step)
 {
-    int errors = 0;
-    for (int i = 0; i < valuesTable[step].count(); i++)
+    if (step < MAX_STEP)
     {
-        int ctIndex = ctIndexList.at(i);
-        errors += doWrite(ctIndex, &(valuesTable[step][ctIndex]));
+        int errors = 0;
+        for (int i = 0; i < valuesTable[step].count(); i++)
+        {
+            errors += doWrite(ctIndexList.at(i), &(valuesTable[step][i]));
+        }
+        return errors;
     }
-    return errors;
+    return -1;
 }
 
 static void clearOK(void)
@@ -514,6 +545,40 @@ static void clearRES(void)
     doWrite_RES_RTU3_RD(-1);
     doWrite_RES_CAN1_WR(-1);
     doWrite_RES_CAN1_RD(-1);
+}
+
+static void clearPLC(void)
+{
+    doWrite_RTU_DigOut_1(0);
+    doWrite_RTU_DigOut_2(0);
+    doWrite_RTU_DigOut_3(0);
+    doWrite_RTU_DigOut_4(0);
+    doWrite_RTU_DigOut_5(0);
+    doWrite_RTU_DigOut_6(0);
+    doWrite_RTU_DigOut_7(0);
+    doWrite_RTU_DigOut_8(0);
+    doWrite_RTU_DigOut_9(0);
+    doWrite_RTU_DigOut_10(0);
+    doWrite_RTU_DigOut_11(0);
+    doWrite_RTU_DigOut_12(0);
+    doWrite_RTU_DigOut_13(0);
+    doWrite_RTU_DigOut_14(0);
+    doWrite_RTU_DigOut_15(0);
+    doWrite_RTU_DigOut_16(0);
+
+    doWrite_PLC_AnOutConf_1(0);
+    doWrite_PLC_AnOutConf_2(0);
+    doWrite_PLC_AnOut_1(0);
+    doWrite_PLC_AnOut_2(0);
+
+    doWrite_RTU_AnOut_1(0);
+    doWrite_RTU_AnOut_2(0);
+    doWrite_RTU_AnOut_3(0);
+    doWrite_RTU_AnOut_4(0);
+    doWrite_RTU_AnOut_5(0);
+    doWrite_RTU_AnOut_6(0);
+    doWrite_RTU_AnOut_7(0);
+    doWrite_RTU_AnOut_8(0);
 }
 
 static void writeTST(void)
@@ -1012,7 +1077,7 @@ static void checkOK(void)
 
 static int allTestedOK(void)
 {
-    int result = true;
+    int result = 1;
 
     if (TST_DigIn_1 ) { result &=  OK_DigIn_1; }
     if (TST_DigIn_2 ) { result &=  OK_DigIn_2; }
