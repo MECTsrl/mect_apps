@@ -1,39 +1,45 @@
 #include "crosstable.h"
 #include <stdio.h>
 
+// TEST_STATUS
+#define STATUS_LOCAL  0x0000
+#define STATUS_REMOTE 0x00D8
+#define STATUS_DONE   0x002A
+
+static void clearPLCandRES(void);
 static void ifTST_readVAL_writePLC(void);
 static void ifTST_readPLC_writeRES(void);
 
 void setup(void)
 {
-    doWrite_PLC_AnInConf(0x2222);  /* 0..10V */
+    doWrite_PLC_AnInConf(0x3322);  /* 0..10V */
     doWrite_PLC_AnOutConf(0x22);  /* 0..10V */
 
-    doWrite_STATUS_LOCAL(1);
-    doWrite_STATUS_REMOTE(0);
-    doWrite_STATUS_DONE(0);
+    doWrite_TEST_STATUS(STATUS_LOCAL);
 }
 
 void loop(void)
 {
     static unsigned substatus = 0;
 
-    if (STATUS_LOCAL) {
-        if (START_REMOTE) {
-            doWrite_STATUS_LOCAL(0);
-            doWrite_STATUS_REMOTE(1);
-            substatus = 0;
-        }
-    }
-    if (STATUS_REMOTE) {
+    switch (TEST_STATUS) {
 
-        if (!START_REMOTE) {
-            doWrite_STATUS_LOCAL(1);
-            doWrite_STATUS_REMOTE(0);
-            doWrite_STATUS_DONE(0);
+    case STATUS_LOCAL:
+        if (TEST_COMMAND == STATUS_REMOTE) {
+            clearPLCandRES();
+            doWrite_TEST_STATUS(STATUS_REMOTE);
             substatus = 0;
+            return;
         }
-        if (START_TEST) {
+        break;
+
+    case STATUS_REMOTE:
+        if (TEST_COMMAND == STATUS_LOCAL) {
+            doWrite_TEST_STATUS(STATUS_LOCAL);
+            substatus = 0;
+            return;
+        }
+        if (TEST_COMMAND == STATUS_DONE) {
             switch(substatus) {
             case 0:
                 ifTST_readVAL_writePLC();
@@ -46,22 +52,74 @@ void loop(void)
                 break;
             case 4:
                 ifTST_readPLC_writeRES();
-                doWrite_STATUS_REMOTE(0);
-                doWrite_STATUS_DONE(1);
-                substatus = 0;
+                doWrite_TEST_STATUS(STATUS_DONE);
+                substatus = 5;
+                return;
+            case 5:
+                // waiting STATUS_DONE
                 break;
             default:
-                ; // FIXME: assert
+                ;
             }
         }
-    }
-    if (STATUS_DONE) {
-        if (!START_TEST) {
-            doWrite_STATUS_DONE(0);
-            doWrite_STATUS_LOCAL(1);
+        break;
+
+    case STATUS_DONE:
+        if (TEST_COMMAND == STATUS_LOCAL) {
+            clearPLCandRES();
+            doWrite_TEST_STATUS(STATUS_LOCAL);
             substatus = 0;
+            return;
+    }
+        if (TEST_COMMAND == STATUS_REMOTE) {
+            clearPLCandRES();
+            doWrite_TEST_STATUS(STATUS_REMOTE);
+            substatus = 0;
+            return;
+        }
+        break;
+
+    default:
+        ;
         }
     }
+
+static void clearPLCandRES(void)
+{
+    doWrite_PLC_DigOut_1(0);
+    doWrite_PLC_DigOut_2(0);
+    doWrite_PLC_DigOut_3(0);
+    doWrite_PLC_DigOut_4(0);
+    doWrite_PLC_DigOut_5(0);
+    doWrite_PLC_DigOut_6(0);
+    doWrite_PLC_DigOut_7(0);
+    doWrite_PLC_DigOut_8(0);
+    doWrite_PLC_DigOut_9(0);
+    doWrite_PLC_DigOut_10(0);
+    doWrite_PLC_DigOut_11(0);
+    doWrite_PLC_DigOut_12(0);
+
+    doWrite_RES_DigIn_1(0);
+    doWrite_RES_DigIn_2(0);
+    doWrite_RES_DigIn_3(0);
+    doWrite_RES_DigIn_4(0);
+    doWrite_RES_DigIn_5(0);
+    doWrite_RES_DigIn_6(0);
+    doWrite_RES_DigIn_7(0);
+    doWrite_RES_DigIn_8(0);
+
+    doWrite_RES_AnIn_1(0);
+    doWrite_RES_AnIn_2(0);
+    doWrite_RES_AnIn_3(0);
+    doWrite_RES_AnIn_4(0);
+
+    doWrite_RES_Tamb(0);
+    doWrite_RES_RPM(0);
+    doWrite_RES_FWrevision(0);
+    doWrite_RES_HWconfig(0);
+
+    doWrite_RES_RTUS_WR(0);
+    doWrite_RES_RTUS_RD(0);
 }
 
 static void ifTST_readVAL_writePLC(void)

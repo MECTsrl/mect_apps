@@ -6,6 +6,7 @@
 #include "automation.h"
 #include <QDir>
 
+// OCTOPUS STATUS
 #define STATUS_UNKNOWN  999
 #define STATUS_IDLE       0
 #define STATUS_STARTING   1
@@ -20,11 +21,19 @@
 #define RESULT_NG       0
 #define RESULT_OK       1
 
+// TEST_STATUS
+#define TEST_STATUS_LOCAL  0x0000
+#define TEST_STATUS_REMOTE 0x00D8
+#define TEST_STATUS_DONE   0x002A
+
 #define PLC_PWR_SWITCH PLC_DigIn_1
 #define PLC_GO_BUTTON PLC_DigIn_4
 
 #define abs(v) (((v) > 0)? (v):-(v))
-static void checkConnections(void);
+#define MAX_STEP 64
+QList<u_int16_t> ctIndexList;
+QList<u_int32_t> valuesTable[MAX_STEP];
+
 static void clearOK(void);
 static void clearRES(void);
 static void clearPLC(void);
@@ -43,26 +52,25 @@ void setup(void)
     doWrite_PLC_DigDir_4(0); // PLC_GO_BUTTON
     doWrite_RTU_AnOutConf_X(5); // ANALOG OUTPUT THRESHOLD
     // reset 2
-    doWrite_START2_REMOTE(false);
-    doWrite_START2_TEST(false);
+    doWrite_TEST2_COMMAND(TEST_STATUS_LOCAL);
     // automation entry point
     doWrite_STATUS(STATUS_UNKNOWN);
     doWrite_RESULT(RESULT_UNKNOWN);
+    //
+    doWrite_PRODUCT_ID(10070401);
+    loadRecipe("TPAC1007_4AA", "1");
 }
 
 void loop(void)
 {
     static unsigned substatus = 0;
 
-    checkConnections();
     switch (STATUS) {   // OCTOPUS STATE MACHINE
 
     case STATUS_UNKNOWN:
         if (!PLC_PWR_SWITCH) {
-            doWrite_START2_REMOTE(false);
-            doWrite_STARTx_REMOTE(false);
-            doWrite_STATUS(STATUS_STOPPING);
-            break;
+            doWrite_PLC_DigOut_2(0); // PLC_VPOT_ON
+            doWrite_PLC_DigOut_3(0); // PLC_VCC_ON
         }
         doWrite_STATUS(STATUS_IDLE);
         break;
@@ -72,10 +80,8 @@ void loop(void)
             doWrite_PLC_DigOut_2(1); // PLC_VPOT_ON
             doWrite_PLC_DigOut_3(1); // PLC_VCC_ON
             clearPLC();
-            doWrite_START2_REMOTE(true);
-            doWrite_STARTx_REMOTE(true);
-            doWrite_START2_TEST(false);
-            doWrite_STARTx_TEST(false);
+            doWrite_TEST2_COMMAND(TEST_STATUS_REMOTE);
+            doWrite_TESTx_COMMAND(TEST_STATUS_REMOTE);
             doWrite_TEST_STEP(0);
             doWrite_RESULTS_OK(0);
             doWrite_RESULTS_NG(0);
@@ -85,24 +91,23 @@ void loop(void)
 
     case STATUS_STARTING:
         if (!PLC_PWR_SWITCH) {
-            doWrite_START2_REMOTE(false);
-            doWrite_STARTx_REMOTE(false);
             doWrite_STATUS(STATUS_STOPPING);
             break;
         }
-        if (STATUS2_REMOTE && STATUSx_REMOTE) {
+        if (TEST2_STATUS != TEST_STATUS_REMOTE) {
+            doWrite_TEST2_COMMAND(TEST_STATUS_REMOTE);
+        }
+        if (TESTx_STATUS != TEST_STATUS_REMOTE) {
+            doWrite_TESTx_COMMAND(TEST_STATUS_REMOTE);
+        }
+        if (TEST2_STATUS == TEST_STATUS_REMOTE && TESTx_STATUS == TEST_STATUS_REMOTE) {
             doWrite_STATUS(STATUS_READY);
             break;
         }
-        // do repeat write: TPAC still booting
-        doWrite_STARTx_REMOTE(true);
-        doWrite_STARTx_TEST(false);
         break;
 
     case STATUS_READY:
         if (!PLC_PWR_SWITCH) {
-            doWrite_START2_REMOTE(false);
-            doWrite_STARTx_REMOTE(false);
             doWrite_STATUS(STATUS_STOPPING);
             break;
         }
@@ -133,6 +138,8 @@ void loop(void)
             writeTST();
             writeVAL();
             // change state
+            doWrite_TEST2_COMMAND(TEST_STATUS_DONE);
+            doWrite_TESTx_COMMAND(TEST_STATUS_DONE);
             doWrite_STATUS(STATUS_TESTING);
             substatus = 0;
         }
@@ -140,18 +147,10 @@ void loop(void)
 
     case STATUS_TESTING:
         if (!PLC_PWR_SWITCH) {
-            doWrite_START2_REMOTE(false);
-            doWrite_STARTx_REMOTE(false);
             doWrite_STATUS(STATUS_STOPPING);
             break;
         }
-        if (!START2_TEST) {
-            doWrite_START2_TEST(true);
-        }
-        if (!STARTx_TEST) {
-            doWrite_STARTx_TEST(true);
-        }
-        if (STATUS2_DONE && STATUSx_DONE) {
+        if (TEST2_STATUS == TEST_STATUS_DONE && TESTx_STATUS == TEST_STATUS_DONE) {
             switch(substatus++) {
             case 0:
                 readRES();
@@ -186,15 +185,12 @@ void loop(void)
 
     case STATUS_ERROR:
         if (!PLC_PWR_SWITCH) {
-            doWrite_START2_REMOTE(false);
-            doWrite_STARTx_REMOTE(false);
-            doWrite_RESULT(RESULT_UNKNOWN);
             doWrite_STATUS(STATUS_STOPPING);
             break;
         }
         if (PLC_GO_BUTTON) {
-            doWrite_START2_TEST(false);
-            doWrite_STARTx_TEST(false);
+            doWrite_TEST2_COMMAND(TEST_STATUS_LOCAL);
+            doWrite_TESTx_COMMAND(TEST_STATUS_LOCAL);
             doWrite_RESULT(RESULT_UNKNOWN);
             doWrite_STATUS(STATUS_RESETTING);
         }
@@ -202,9 +198,6 @@ void loop(void)
 
     case STATUS_DONE:
         if (!PLC_PWR_SWITCH) {
-            doWrite_START2_REMOTE(false);
-            doWrite_STARTx_REMOTE(false);
-            doWrite_RESULT(RESULT_UNKNOWN);
             doWrite_STATUS(STATUS_STOPPING);
             break;
         }
@@ -213,75 +206,37 @@ void loop(void)
                 sleep(1); // for your eyes only
             }
             clearPLC();
-            doWrite_START2_TEST(false);
-            doWrite_STARTx_TEST(false);
             doWrite_RESULT(RESULT_UNKNOWN);
+            doWrite_TEST2_COMMAND(TEST_STATUS_REMOTE);
+            doWrite_TESTx_COMMAND(TEST_STATUS_REMOTE);
             doWrite_STATUS(STATUS_RESETTING);
         }
         break;
 
     case STATUS_RESETTING:
         if (!PLC_PWR_SWITCH) {
-            doWrite_START2_REMOTE(false);
-            doWrite_STARTx_REMOTE(false);
             doWrite_STATUS(STATUS_STOPPING);
             break;
         }
-        if (STATUS2_REMOTE && STATUSx_REMOTE) {
+        if (TEST2_STATUS == TEST_STATUS_REMOTE && TESTx_STATUS == TEST_STATUS_REMOTE) {
             doWrite_STATUS(STATUS_READY);
         }
         break;
 
     case STATUS_STOPPING:
-        if (!STATUSx_REMOTE) {
-            doWrite_PLC_DigOut_2(0); // PLC_VPOT_ON
-            doWrite_PLC_DigOut_3(0); // PLC_VCC_ON
-        }
-        if (!STATUS2_REMOTE && !STATUSx_REMOTE) {
-            doWrite_STATUS(STATUS_IDLE);
-        }
+        doWrite_RESULT(RESULT_UNKNOWN);
+        doWrite_TEST2_COMMAND(TEST_STATUS_LOCAL);
+        doWrite_TESTx_COMMAND(TEST_STATUS_LOCAL);
+        sleep(1);
+        doWrite_PLC_DigOut_2(0); // PLC_VPOT_ON
+        doWrite_PLC_DigOut_3(0); // PLC_VCC_ON
+        doWrite_STATUS(STATUS_IDLE);
         break;
 
     default:
-        ; /* FIXME: assert */
+        ;
     }
 }
-
-static void checkConnections(void)
-{
-    switch (getStatus_START2_REMOTE()) {
-    case DONE:
-    case BUSY:
-        if (COMMUNICATION_2 != 1) {
-            doWrite_COMMUNICATION_2(1);
-        }
-        break;
-    case ERROR:
-    case UNK:
-    default:
-        if (COMMUNICATION_2 != 0) {
-            doWrite_COMMUNICATION_2(0);
-        }
-    }
-    switch (getStatus_STARTx_REMOTE()) {
-    case DONE:
-    case BUSY:
-        if (COMMUNICATION_X != 1) {
-            doWrite_COMMUNICATION_X(1);
-        }
-        break;
-    case ERROR:
-    case UNK:
-    default:
-        if (COMMUNICATION_X != 0) {
-            doWrite_COMMUNICATION_X(0);
-        }
-    }
-}
-
-#define MAX_STEP 64
-QList<u_int16_t> ctIndexList;
-QList<u_int32_t> valuesTable[MAX_STEP];
 
 /*
  * tag1; val1; val2 ... valn

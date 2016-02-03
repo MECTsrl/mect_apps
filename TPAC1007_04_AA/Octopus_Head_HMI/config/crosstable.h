@@ -88,25 +88,13 @@ int doWrite_RESULT(int16_t value);
 int addWrite_RESULT(int16_t value);
 int getStatus_RESULT();
  
-#define ID_COMMUNICATION_2 197
-extern int COMMUNICATION_2;
-int doWrite_COMMUNICATION_2(int value);
-int addWrite_COMMUNICATION_2(int value);
-int getStatus_COMMUNICATION_2();
- 
-#define ID_COMMUNICATION_X 198
-extern int COMMUNICATION_X;
-int doWrite_COMMUNICATION_X(int value);
-int addWrite_COMMUNICATION_X(int value);
-int getStatus_COMMUNICATION_X();
- 
-#define ID_RESULTS_OK 199
+#define ID_RESULTS_OK 197
 extern u_int16_t RESULTS_OK;
 int doWrite_RESULTS_OK(u_int16_t value);
 int addWrite_RESULTS_OK(u_int16_t value);
 int getStatus_RESULTS_OK();
  
-#define ID_RESULTS_NG 200
+#define ID_RESULTS_NG 198
 extern u_int16_t RESULTS_NG;
 int doWrite_RESULTS_NG(u_int16_t value);
 int addWrite_RESULTS_NG(u_int16_t value);
@@ -1912,17 +1900,11 @@ int doWrite_OK_CAN1_RD(int value);
 int addWrite_OK_CAN1_RD(int value);
 int getStatus_OK_CAN1_RD();
  
-#define ID_START2_REMOTE 2999
-extern int START2_REMOTE;
-int doWrite_START2_REMOTE(int value);
-int addWrite_START2_REMOTE(int value);
-int getStatus_START2_REMOTE();
- 
-#define ID_START2_TEST 3000
-extern int START2_TEST;
-int doWrite_START2_TEST(int value);
-int addWrite_START2_TEST(int value);
-int getStatus_START2_TEST();
+#define ID_TEST2_COMMAND 3000
+extern u_int16_t TEST2_COMMAND;
+int doWrite_TEST2_COMMAND(u_int16_t value);
+int addWrite_TEST2_COMMAND(u_int16_t value);
+int getStatus_TEST2_COMMAND();
  
 #define ID_TST2_DigIn_1 3001
 extern int TST2_DigIn_1;
@@ -2404,875 +2386,761 @@ int doWrite_VAL2_DigOut_16(int value);
 int addWrite_VAL2_DigOut_16(int value);
 int getStatus_VAL2_DigOut_16();
  
-#define ID_RES2_DigOut_1 3081
-extern int RES2_DigOut_1;
-int doWrite_RES2_DigOut_1(int value);
-int addWrite_RES2_DigOut_1(int value);
-int getStatus_RES2_DigOut_1();
- 
-#define ID_RES2_DigOut_2 3082
-extern int RES2_DigOut_2;
-int doWrite_RES2_DigOut_2(int value);
-int addWrite_RES2_DigOut_2(int value);
-int getStatus_RES2_DigOut_2();
- 
-#define ID_RES2_DigOut_3 3083
-extern int RES2_DigOut_3;
-int doWrite_RES2_DigOut_3(int value);
-int addWrite_RES2_DigOut_3(int value);
-int getStatus_RES2_DigOut_3();
- 
-#define ID_RES2_DigOut_4 3084
-extern int RES2_DigOut_4;
-int doWrite_RES2_DigOut_4(int value);
-int addWrite_RES2_DigOut_4(int value);
-int getStatus_RES2_DigOut_4();
- 
-#define ID_RES2_DigOut_5 3085
-extern int RES2_DigOut_5;
-int doWrite_RES2_DigOut_5(int value);
-int addWrite_RES2_DigOut_5(int value);
-int getStatus_RES2_DigOut_5();
- 
-#define ID_RES2_DigOut_6 3086
-extern int RES2_DigOut_6;
-int doWrite_RES2_DigOut_6(int value);
-int addWrite_RES2_DigOut_6(int value);
-int getStatus_RES2_DigOut_6();
- 
-#define ID_RES2_DigOut_7 3087
-extern int RES2_DigOut_7;
-int doWrite_RES2_DigOut_7(int value);
-int addWrite_RES2_DigOut_7(int value);
-int getStatus_RES2_DigOut_7();
- 
-#define ID_RES2_DigOut_8 3088
-extern int RES2_DigOut_8;
-int doWrite_RES2_DigOut_8(int value);
-int addWrite_RES2_DigOut_8(int value);
-int getStatus_RES2_DigOut_8();
- 
-#define ID_RES2_DigOut_9 3089
-extern int RES2_DigOut_9;
-int doWrite_RES2_DigOut_9(int value);
-int addWrite_RES2_DigOut_9(int value);
-int getStatus_RES2_DigOut_9();
- 
-#define ID_RES2_DigOut_10 3090
-extern int RES2_DigOut_10;
-int doWrite_RES2_DigOut_10(int value);
-int addWrite_RES2_DigOut_10(int value);
-int getStatus_RES2_DigOut_10();
- 
-#define ID_RES2_DigOut_11 3091
-extern int RES2_DigOut_11;
-int doWrite_RES2_DigOut_11(int value);
-int addWrite_RES2_DigOut_11(int value);
-int getStatus_RES2_DigOut_11();
- 
-#define ID_RES2_DigOut_12 3092
-extern int RES2_DigOut_12;
-int doWrite_RES2_DigOut_12(int value);
-int addWrite_RES2_DigOut_12(int value);
-int getStatus_RES2_DigOut_12();
- 
-#define ID_RES2_DigOut_13 3093
-extern int RES2_DigOut_13;
-int doWrite_RES2_DigOut_13(int value);
-int addWrite_RES2_DigOut_13(int value);
-int getStatus_RES2_DigOut_13();
- 
-#define ID_RES2_DigOut_14 3094
-extern int RES2_DigOut_14;
-int doWrite_RES2_DigOut_14(int value);
-int addWrite_RES2_DigOut_14(int value);
-int getStatus_RES2_DigOut_14();
- 
-#define ID_RES2_DigOut_15 3095
-extern int RES2_DigOut_15;
-int doWrite_RES2_DigOut_15(int value);
-int addWrite_RES2_DigOut_15(int value);
-int getStatus_RES2_DigOut_15();
- 
-#define ID_RES2_DigOut_16 3096
-extern int RES2_DigOut_16;
-int doWrite_RES2_DigOut_16(int value);
-int addWrite_RES2_DigOut_16(int value);
-int getStatus_RES2_DigOut_16();
- 
-#define ID_TST2_AnIn_1 3097
+#define ID_TST2_AnIn_1 3081
 extern int TST2_AnIn_1;
 int doWrite_TST2_AnIn_1(int value);
 int addWrite_TST2_AnIn_1(int value);
 int getStatus_TST2_AnIn_1();
  
-#define ID_TST2_AnIn_2 3098
+#define ID_TST2_AnIn_2 3082
 extern int TST2_AnIn_2;
 int doWrite_TST2_AnIn_2(int value);
 int addWrite_TST2_AnIn_2(int value);
 int getStatus_TST2_AnIn_2();
  
-#define ID_TST2_AnIn_3 3099
+#define ID_TST2_AnIn_3 3083
 extern int TST2_AnIn_3;
 int doWrite_TST2_AnIn_3(int value);
 int addWrite_TST2_AnIn_3(int value);
 int getStatus_TST2_AnIn_3();
  
-#define ID_TST2_AnIn_4 3100
+#define ID_TST2_AnIn_4 3084
 extern int TST2_AnIn_4;
 int doWrite_TST2_AnIn_4(int value);
 int addWrite_TST2_AnIn_4(int value);
 int getStatus_TST2_AnIn_4();
  
-#define ID_TST2_AnIn_5 3101
+#define ID_TST2_AnIn_5 3085
 extern int TST2_AnIn_5;
 int doWrite_TST2_AnIn_5(int value);
 int addWrite_TST2_AnIn_5(int value);
 int getStatus_TST2_AnIn_5();
  
-#define ID_TST2_AnIn_6 3102
+#define ID_TST2_AnIn_6 3086
 extern int TST2_AnIn_6;
 int doWrite_TST2_AnIn_6(int value);
 int addWrite_TST2_AnIn_6(int value);
 int getStatus_TST2_AnIn_6();
  
-#define ID_TST2_AnIn_7 3103
+#define ID_TST2_AnIn_7 3087
 extern int TST2_AnIn_7;
 int doWrite_TST2_AnIn_7(int value);
 int addWrite_TST2_AnIn_7(int value);
 int getStatus_TST2_AnIn_7();
  
-#define ID_TST2_AnIn_8 3104
+#define ID_TST2_AnIn_8 3088
 extern int TST2_AnIn_8;
 int doWrite_TST2_AnIn_8(int value);
 int addWrite_TST2_AnIn_8(int value);
 int getStatus_TST2_AnIn_8();
  
-#define ID_TST2_AnIn_9 3105
+#define ID_TST2_AnIn_9 3089
 extern int TST2_AnIn_9;
 int doWrite_TST2_AnIn_9(int value);
 int addWrite_TST2_AnIn_9(int value);
 int getStatus_TST2_AnIn_9();
  
-#define ID_TST2_AnIn_10 3106
+#define ID_TST2_AnIn_10 3090
 extern int TST2_AnIn_10;
 int doWrite_TST2_AnIn_10(int value);
 int addWrite_TST2_AnIn_10(int value);
 int getStatus_TST2_AnIn_10();
  
-#define ID_TST2_AnIn_11 3107
+#define ID_TST2_AnIn_11 3091
 extern int TST2_AnIn_11;
 int doWrite_TST2_AnIn_11(int value);
 int addWrite_TST2_AnIn_11(int value);
 int getStatus_TST2_AnIn_11();
  
-#define ID_TST2_AnIn_12 3108
+#define ID_TST2_AnIn_12 3092
 extern int TST2_AnIn_12;
 int doWrite_TST2_AnIn_12(int value);
 int addWrite_TST2_AnIn_12(int value);
 int getStatus_TST2_AnIn_12();
  
-#define ID_VAL2_AnIn_1 3109
+#define ID_VAL2_AnIn_1 3093
 extern int16_t VAL2_AnIn_1;
 int doWrite_VAL2_AnIn_1(int16_t value);
 int addWrite_VAL2_AnIn_1(int16_t value);
 int getStatus_VAL2_AnIn_1();
  
-#define ID_VAL2_AnIn_2 3110
+#define ID_VAL2_AnIn_2 3094
 extern int16_t VAL2_AnIn_2;
 int doWrite_VAL2_AnIn_2(int16_t value);
 int addWrite_VAL2_AnIn_2(int16_t value);
 int getStatus_VAL2_AnIn_2();
  
-#define ID_VAL2_AnIn_3 3111
+#define ID_VAL2_AnIn_3 3095
 extern int16_t VAL2_AnIn_3;
 int doWrite_VAL2_AnIn_3(int16_t value);
 int addWrite_VAL2_AnIn_3(int16_t value);
 int getStatus_VAL2_AnIn_3();
  
-#define ID_VAL2_AnIn_4 3112
+#define ID_VAL2_AnIn_4 3096
 extern int16_t VAL2_AnIn_4;
 int doWrite_VAL2_AnIn_4(int16_t value);
 int addWrite_VAL2_AnIn_4(int16_t value);
 int getStatus_VAL2_AnIn_4();
  
-#define ID_VAL2_AnIn_5 3113
+#define ID_VAL2_AnIn_5 3097
 extern int16_t VAL2_AnIn_5;
 int doWrite_VAL2_AnIn_5(int16_t value);
 int addWrite_VAL2_AnIn_5(int16_t value);
 int getStatus_VAL2_AnIn_5();
  
-#define ID_VAL2_AnIn_6 3114
+#define ID_VAL2_AnIn_6 3098
 extern int16_t VAL2_AnIn_6;
 int doWrite_VAL2_AnIn_6(int16_t value);
 int addWrite_VAL2_AnIn_6(int16_t value);
 int getStatus_VAL2_AnIn_6();
  
-#define ID_VAL2_AnIn_7 3115
+#define ID_VAL2_AnIn_7 3099
 extern int16_t VAL2_AnIn_7;
 int doWrite_VAL2_AnIn_7(int16_t value);
 int addWrite_VAL2_AnIn_7(int16_t value);
 int getStatus_VAL2_AnIn_7();
  
-#define ID_VAL2_AnIn_8 3116
+#define ID_VAL2_AnIn_8 3100
 extern int16_t VAL2_AnIn_8;
 int doWrite_VAL2_AnIn_8(int16_t value);
 int addWrite_VAL2_AnIn_8(int16_t value);
 int getStatus_VAL2_AnIn_8();
  
-#define ID_VAL2_AnIn_9 3117
+#define ID_VAL2_AnIn_9 3101
 extern int16_t VAL2_AnIn_9;
 int doWrite_VAL2_AnIn_9(int16_t value);
 int addWrite_VAL2_AnIn_9(int16_t value);
 int getStatus_VAL2_AnIn_9();
  
-#define ID_VAL2_AnIn_10 3118
+#define ID_VAL2_AnIn_10 3102
 extern int16_t VAL2_AnIn_10;
 int doWrite_VAL2_AnIn_10(int16_t value);
 int addWrite_VAL2_AnIn_10(int16_t value);
 int getStatus_VAL2_AnIn_10();
  
-#define ID_VAL2_AnIn_11 3119
+#define ID_VAL2_AnIn_11 3103
 extern int16_t VAL2_AnIn_11;
 int doWrite_VAL2_AnIn_11(int16_t value);
 int addWrite_VAL2_AnIn_11(int16_t value);
 int getStatus_VAL2_AnIn_11();
  
-#define ID_VAL2_AnIn_12 3120
+#define ID_VAL2_AnIn_12 3104
 extern int16_t VAL2_AnIn_12;
 int doWrite_VAL2_AnIn_12(int16_t value);
 int addWrite_VAL2_AnIn_12(int16_t value);
 int getStatus_VAL2_AnIn_12();
  
-#define ID_VAL2_AnInConf_1 3121
+#define ID_VAL2_AnInConf_1 3105
 extern u_int16_t VAL2_AnInConf_1;
 int doWrite_VAL2_AnInConf_1(u_int16_t value);
 int addWrite_VAL2_AnInConf_1(u_int16_t value);
 int getStatus_VAL2_AnInConf_1();
  
-#define ID_VAL2_AnInConf_2 3122
+#define ID_VAL2_AnInConf_2 3106
 extern u_int16_t VAL2_AnInConf_2;
 int doWrite_VAL2_AnInConf_2(u_int16_t value);
 int addWrite_VAL2_AnInConf_2(u_int16_t value);
 int getStatus_VAL2_AnInConf_2();
  
-#define ID_VAL2_AnInConf_3 3123
+#define ID_VAL2_AnInConf_3 3107
 extern u_int16_t VAL2_AnInConf_3;
 int doWrite_VAL2_AnInConf_3(u_int16_t value);
 int addWrite_VAL2_AnInConf_3(u_int16_t value);
 int getStatus_VAL2_AnInConf_3();
  
-#define ID_VAL2_AnInConf_4 3124
+#define ID_VAL2_AnInConf_4 3108
 extern u_int16_t VAL2_AnInConf_4;
 int doWrite_VAL2_AnInConf_4(u_int16_t value);
 int addWrite_VAL2_AnInConf_4(u_int16_t value);
 int getStatus_VAL2_AnInConf_4();
  
-#define ID_VAL2_AnInConf_5 3125
+#define ID_VAL2_AnInConf_5 3109
 extern u_int16_t VAL2_AnInConf_5;
 int doWrite_VAL2_AnInConf_5(u_int16_t value);
 int addWrite_VAL2_AnInConf_5(u_int16_t value);
 int getStatus_VAL2_AnInConf_5();
  
-#define ID_VAL2_AnInConf_6 3126
+#define ID_VAL2_AnInConf_6 3110
 extern u_int16_t VAL2_AnInConf_6;
 int doWrite_VAL2_AnInConf_6(u_int16_t value);
 int addWrite_VAL2_AnInConf_6(u_int16_t value);
 int getStatus_VAL2_AnInConf_6();
  
-#define ID_VAL2_AnInConf_7 3127
+#define ID_VAL2_AnInConf_7 3111
 extern u_int16_t VAL2_AnInConf_7;
 int doWrite_VAL2_AnInConf_7(u_int16_t value);
 int addWrite_VAL2_AnInConf_7(u_int16_t value);
 int getStatus_VAL2_AnInConf_7();
  
-#define ID_VAL2_AnInConf_8 3128
+#define ID_VAL2_AnInConf_8 3112
 extern u_int16_t VAL2_AnInConf_8;
 int doWrite_VAL2_AnInConf_8(u_int16_t value);
 int addWrite_VAL2_AnInConf_8(u_int16_t value);
 int getStatus_VAL2_AnInConf_8();
  
-#define ID_VAL2_AnInConf_9 3129
+#define ID_VAL2_AnInConf_9 3113
 extern u_int16_t VAL2_AnInConf_9;
 int doWrite_VAL2_AnInConf_9(u_int16_t value);
 int addWrite_VAL2_AnInConf_9(u_int16_t value);
 int getStatus_VAL2_AnInConf_9();
  
-#define ID_VAL2_AnInConf_10 3130
+#define ID_VAL2_AnInConf_10 3114
 extern u_int16_t VAL2_AnInConf_10;
 int doWrite_VAL2_AnInConf_10(u_int16_t value);
 int addWrite_VAL2_AnInConf_10(u_int16_t value);
 int getStatus_VAL2_AnInConf_10();
  
-#define ID_VAL2_AnInConf_11 3131
+#define ID_VAL2_AnInConf_11 3115
 extern u_int16_t VAL2_AnInConf_11;
 int doWrite_VAL2_AnInConf_11(u_int16_t value);
 int addWrite_VAL2_AnInConf_11(u_int16_t value);
 int getStatus_VAL2_AnInConf_11();
  
-#define ID_VAL2_AnInConf_12 3132
+#define ID_VAL2_AnInConf_12 3116
 extern u_int16_t VAL2_AnInConf_12;
 int doWrite_VAL2_AnInConf_12(u_int16_t value);
 int addWrite_VAL2_AnInConf_12(u_int16_t value);
 int getStatus_VAL2_AnInConf_12();
  
-#define ID_VAL2_AnInFltr_1 3133
+#define ID_VAL2_AnInFltr_1 3117
 extern u_int16_t VAL2_AnInFltr_1;
 int doWrite_VAL2_AnInFltr_1(u_int16_t value);
 int addWrite_VAL2_AnInFltr_1(u_int16_t value);
 int getStatus_VAL2_AnInFltr_1();
  
-#define ID_VAL2_AnInFltr_2 3134
+#define ID_VAL2_AnInFltr_2 3118
 extern u_int16_t VAL2_AnInFltr_2;
 int doWrite_VAL2_AnInFltr_2(u_int16_t value);
 int addWrite_VAL2_AnInFltr_2(u_int16_t value);
 int getStatus_VAL2_AnInFltr_2();
  
-#define ID_VAL2_AnInFltr_3 3135
+#define ID_VAL2_AnInFltr_3 3119
 extern u_int16_t VAL2_AnInFltr_3;
 int doWrite_VAL2_AnInFltr_3(u_int16_t value);
 int addWrite_VAL2_AnInFltr_3(u_int16_t value);
 int getStatus_VAL2_AnInFltr_3();
  
-#define ID_VAL2_AnInFltr_4 3136
+#define ID_VAL2_AnInFltr_4 3120
 extern u_int16_t VAL2_AnInFltr_4;
 int doWrite_VAL2_AnInFltr_4(u_int16_t value);
 int addWrite_VAL2_AnInFltr_4(u_int16_t value);
 int getStatus_VAL2_AnInFltr_4();
  
-#define ID_VAL2_AnInFltr_5 3137
+#define ID_VAL2_AnInFltr_5 3121
 extern u_int16_t VAL2_AnInFltr_5;
 int doWrite_VAL2_AnInFltr_5(u_int16_t value);
 int addWrite_VAL2_AnInFltr_5(u_int16_t value);
 int getStatus_VAL2_AnInFltr_5();
  
-#define ID_VAL2_AnInFltr_6 3138
+#define ID_VAL2_AnInFltr_6 3122
 extern u_int16_t VAL2_AnInFltr_6;
 int doWrite_VAL2_AnInFltr_6(u_int16_t value);
 int addWrite_VAL2_AnInFltr_6(u_int16_t value);
 int getStatus_VAL2_AnInFltr_6();
  
-#define ID_VAL2_AnInFltr_7 3139
+#define ID_VAL2_AnInFltr_7 3123
 extern u_int16_t VAL2_AnInFltr_7;
 int doWrite_VAL2_AnInFltr_7(u_int16_t value);
 int addWrite_VAL2_AnInFltr_7(u_int16_t value);
 int getStatus_VAL2_AnInFltr_7();
  
-#define ID_VAL2_AnInFltr_8 3140
+#define ID_VAL2_AnInFltr_8 3124
 extern u_int16_t VAL2_AnInFltr_8;
 int doWrite_VAL2_AnInFltr_8(u_int16_t value);
 int addWrite_VAL2_AnInFltr_8(u_int16_t value);
 int getStatus_VAL2_AnInFltr_8();
  
-#define ID_VAL2_AnInFltr_9 3141
+#define ID_VAL2_AnInFltr_9 3125
 extern u_int16_t VAL2_AnInFltr_9;
 int doWrite_VAL2_AnInFltr_9(u_int16_t value);
 int addWrite_VAL2_AnInFltr_9(u_int16_t value);
 int getStatus_VAL2_AnInFltr_9();
  
-#define ID_VAL2_AnInFltr_10 3142
+#define ID_VAL2_AnInFltr_10 3126
 extern u_int16_t VAL2_AnInFltr_10;
 int doWrite_VAL2_AnInFltr_10(u_int16_t value);
 int addWrite_VAL2_AnInFltr_10(u_int16_t value);
 int getStatus_VAL2_AnInFltr_10();
  
-#define ID_VAL2_AnInFltr_11 3143
+#define ID_VAL2_AnInFltr_11 3127
 extern u_int16_t VAL2_AnInFltr_11;
 int doWrite_VAL2_AnInFltr_11(u_int16_t value);
 int addWrite_VAL2_AnInFltr_11(u_int16_t value);
 int getStatus_VAL2_AnInFltr_11();
  
-#define ID_VAL2_AnInFltr_12 3144
+#define ID_VAL2_AnInFltr_12 3128
 extern u_int16_t VAL2_AnInFltr_12;
 int doWrite_VAL2_AnInFltr_12(u_int16_t value);
 int addWrite_VAL2_AnInFltr_12(u_int16_t value);
 int getStatus_VAL2_AnInFltr_12();
  
-#define ID_RES2_AnIn_1 3145
+#define ID_RES2_AnIn_1 3129
 extern int16_t RES2_AnIn_1;
 int doWrite_RES2_AnIn_1(int16_t value);
 int addWrite_RES2_AnIn_1(int16_t value);
 int getStatus_RES2_AnIn_1();
  
-#define ID_RES2_AnIn_2 3146
+#define ID_RES2_AnIn_2 3130
 extern int16_t RES2_AnIn_2;
 int doWrite_RES2_AnIn_2(int16_t value);
 int addWrite_RES2_AnIn_2(int16_t value);
 int getStatus_RES2_AnIn_2();
  
-#define ID_RES2_AnIn_3 3147
+#define ID_RES2_AnIn_3 3131
 extern int16_t RES2_AnIn_3;
 int doWrite_RES2_AnIn_3(int16_t value);
 int addWrite_RES2_AnIn_3(int16_t value);
 int getStatus_RES2_AnIn_3();
  
-#define ID_RES2_AnIn_4 3148
+#define ID_RES2_AnIn_4 3132
 extern int16_t RES2_AnIn_4;
 int doWrite_RES2_AnIn_4(int16_t value);
 int addWrite_RES2_AnIn_4(int16_t value);
 int getStatus_RES2_AnIn_4();
  
-#define ID_RES2_AnIn_5 3149
+#define ID_RES2_AnIn_5 3133
 extern int16_t RES2_AnIn_5;
 int doWrite_RES2_AnIn_5(int16_t value);
 int addWrite_RES2_AnIn_5(int16_t value);
 int getStatus_RES2_AnIn_5();
  
-#define ID_RES2_AnIn_6 3150
+#define ID_RES2_AnIn_6 3134
 extern int16_t RES2_AnIn_6;
 int doWrite_RES2_AnIn_6(int16_t value);
 int addWrite_RES2_AnIn_6(int16_t value);
 int getStatus_RES2_AnIn_6();
  
-#define ID_RES2_AnIn_7 3151
+#define ID_RES2_AnIn_7 3135
 extern int16_t RES2_AnIn_7;
 int doWrite_RES2_AnIn_7(int16_t value);
 int addWrite_RES2_AnIn_7(int16_t value);
 int getStatus_RES2_AnIn_7();
  
-#define ID_RES2_AnIn_8 3152
+#define ID_RES2_AnIn_8 3136
 extern int16_t RES2_AnIn_8;
 int doWrite_RES2_AnIn_8(int16_t value);
 int addWrite_RES2_AnIn_8(int16_t value);
 int getStatus_RES2_AnIn_8();
  
-#define ID_RES2_AnIn_9 3153
+#define ID_RES2_AnIn_9 3137
 extern int16_t RES2_AnIn_9;
 int doWrite_RES2_AnIn_9(int16_t value);
 int addWrite_RES2_AnIn_9(int16_t value);
 int getStatus_RES2_AnIn_9();
  
-#define ID_RES2_AnIn_10 3154
+#define ID_RES2_AnIn_10 3138
 extern int16_t RES2_AnIn_10;
 int doWrite_RES2_AnIn_10(int16_t value);
 int addWrite_RES2_AnIn_10(int16_t value);
 int getStatus_RES2_AnIn_10();
  
-#define ID_RES2_AnIn_11 3155
+#define ID_RES2_AnIn_11 3139
 extern int16_t RES2_AnIn_11;
 int doWrite_RES2_AnIn_11(int16_t value);
 int addWrite_RES2_AnIn_11(int16_t value);
 int getStatus_RES2_AnIn_11();
  
-#define ID_RES2_AnIn_12 3156
+#define ID_RES2_AnIn_12 3140
 extern int16_t RES2_AnIn_12;
 int doWrite_RES2_AnIn_12(int16_t value);
 int addWrite_RES2_AnIn_12(int16_t value);
 int getStatus_RES2_AnIn_12();
  
-#define ID_RES2_AnInStts_1 3157
+#define ID_RES2_AnInStts_1 3141
 extern int16_t RES2_AnInStts_1;
 int doWrite_RES2_AnInStts_1(int16_t value);
 int addWrite_RES2_AnInStts_1(int16_t value);
 int getStatus_RES2_AnInStts_1();
  
-#define ID_RES2_AnInStts_2 3158
+#define ID_RES2_AnInStts_2 3142
 extern int16_t RES2_AnInStts_2;
 int doWrite_RES2_AnInStts_2(int16_t value);
 int addWrite_RES2_AnInStts_2(int16_t value);
 int getStatus_RES2_AnInStts_2();
  
-#define ID_RES2_AnInStts_3 3159
+#define ID_RES2_AnInStts_3 3143
 extern int16_t RES2_AnInStts_3;
 int doWrite_RES2_AnInStts_3(int16_t value);
 int addWrite_RES2_AnInStts_3(int16_t value);
 int getStatus_RES2_AnInStts_3();
  
-#define ID_RES2_AnInStts_4 3160
+#define ID_RES2_AnInStts_4 3144
 extern int16_t RES2_AnInStts_4;
 int doWrite_RES2_AnInStts_4(int16_t value);
 int addWrite_RES2_AnInStts_4(int16_t value);
 int getStatus_RES2_AnInStts_4();
  
-#define ID_RES2_AnInStts_5 3161
+#define ID_RES2_AnInStts_5 3145
 extern int16_t RES2_AnInStts_5;
 int doWrite_RES2_AnInStts_5(int16_t value);
 int addWrite_RES2_AnInStts_5(int16_t value);
 int getStatus_RES2_AnInStts_5();
  
-#define ID_RES2_AnInStts_6 3162
+#define ID_RES2_AnInStts_6 3146
 extern int16_t RES2_AnInStts_6;
 int doWrite_RES2_AnInStts_6(int16_t value);
 int addWrite_RES2_AnInStts_6(int16_t value);
 int getStatus_RES2_AnInStts_6();
  
-#define ID_RES2_AnInStts_7 3163
+#define ID_RES2_AnInStts_7 3147
 extern int16_t RES2_AnInStts_7;
 int doWrite_RES2_AnInStts_7(int16_t value);
 int addWrite_RES2_AnInStts_7(int16_t value);
 int getStatus_RES2_AnInStts_7();
  
-#define ID_RES2_AnInStts_8 3164
+#define ID_RES2_AnInStts_8 3148
 extern int16_t RES2_AnInStts_8;
 int doWrite_RES2_AnInStts_8(int16_t value);
 int addWrite_RES2_AnInStts_8(int16_t value);
 int getStatus_RES2_AnInStts_8();
  
-#define ID_RES2_AnInStts_9 3165
+#define ID_RES2_AnInStts_9 3149
 extern int16_t RES2_AnInStts_9;
 int doWrite_RES2_AnInStts_9(int16_t value);
 int addWrite_RES2_AnInStts_9(int16_t value);
 int getStatus_RES2_AnInStts_9();
  
-#define ID_RES2_AnInStts_10 3166
+#define ID_RES2_AnInStts_10 3150
 extern int16_t RES2_AnInStts_10;
 int doWrite_RES2_AnInStts_10(int16_t value);
 int addWrite_RES2_AnInStts_10(int16_t value);
 int getStatus_RES2_AnInStts_10();
  
-#define ID_RES2_AnInStts_11 3167
+#define ID_RES2_AnInStts_11 3151
 extern int16_t RES2_AnInStts_11;
 int doWrite_RES2_AnInStts_11(int16_t value);
 int addWrite_RES2_AnInStts_11(int16_t value);
 int getStatus_RES2_AnInStts_11();
  
-#define ID_RES2_AnInStts_12 3168
+#define ID_RES2_AnInStts_12 3152
 extern int16_t RES2_AnInStts_12;
 int doWrite_RES2_AnInStts_12(int16_t value);
 int addWrite_RES2_AnInStts_12(int16_t value);
 int getStatus_RES2_AnInStts_12();
  
-#define ID_TST2_AnOut_1 3169
+#define ID_TST2_AnOut_1 3153
 extern int TST2_AnOut_1;
 int doWrite_TST2_AnOut_1(int value);
 int addWrite_TST2_AnOut_1(int value);
 int getStatus_TST2_AnOut_1();
  
-#define ID_TST2_AnOut_2 3170
+#define ID_TST2_AnOut_2 3154
 extern int TST2_AnOut_2;
 int doWrite_TST2_AnOut_2(int value);
 int addWrite_TST2_AnOut_2(int value);
 int getStatus_TST2_AnOut_2();
  
-#define ID_TST2_AnOut_3 3171
+#define ID_TST2_AnOut_3 3155
 extern int TST2_AnOut_3;
 int doWrite_TST2_AnOut_3(int value);
 int addWrite_TST2_AnOut_3(int value);
 int getStatus_TST2_AnOut_3();
  
-#define ID_TST2_AnOut_4 3172
+#define ID_TST2_AnOut_4 3156
 extern int TST2_AnOut_4;
 int doWrite_TST2_AnOut_4(int value);
 int addWrite_TST2_AnOut_4(int value);
 int getStatus_TST2_AnOut_4();
  
-#define ID_VAL2_AnOut_1 3173
+#define ID_VAL2_AnOut_1 3157
 extern int16_t VAL2_AnOut_1;
 int doWrite_VAL2_AnOut_1(int16_t value);
 int addWrite_VAL2_AnOut_1(int16_t value);
 int getStatus_VAL2_AnOut_1();
  
-#define ID_VAL2_AnOut_2 3174
+#define ID_VAL2_AnOut_2 3158
 extern int16_t VAL2_AnOut_2;
 int doWrite_VAL2_AnOut_2(int16_t value);
 int addWrite_VAL2_AnOut_2(int16_t value);
 int getStatus_VAL2_AnOut_2();
  
-#define ID_VAL2_AnOut_3 3175
+#define ID_VAL2_AnOut_3 3159
 extern int16_t VAL2_AnOut_3;
 int doWrite_VAL2_AnOut_3(int16_t value);
 int addWrite_VAL2_AnOut_3(int16_t value);
 int getStatus_VAL2_AnOut_3();
  
-#define ID_VAL2_AnOut_4 3176
+#define ID_VAL2_AnOut_4 3160
 extern int16_t VAL2_AnOut_4;
 int doWrite_VAL2_AnOut_4(int16_t value);
 int addWrite_VAL2_AnOut_4(int16_t value);
 int getStatus_VAL2_AnOut_4();
  
-#define ID_VAL2_AnOutConf_1 3177
+#define ID_VAL2_AnOutConf_1 3161
 extern u_int16_t VAL2_AnOutConf_1;
 int doWrite_VAL2_AnOutConf_1(u_int16_t value);
 int addWrite_VAL2_AnOutConf_1(u_int16_t value);
 int getStatus_VAL2_AnOutConf_1();
  
-#define ID_VAL2_AnOutConf_2 3178
+#define ID_VAL2_AnOutConf_2 3162
 extern u_int16_t VAL2_AnOutConf_2;
 int doWrite_VAL2_AnOutConf_2(u_int16_t value);
 int addWrite_VAL2_AnOutConf_2(u_int16_t value);
 int getStatus_VAL2_AnOutConf_2();
  
-#define ID_VAL2_AnOutConf_3 3179
+#define ID_VAL2_AnOutConf_3 3163
 extern u_int16_t VAL2_AnOutConf_3;
 int doWrite_VAL2_AnOutConf_3(u_int16_t value);
 int addWrite_VAL2_AnOutConf_3(u_int16_t value);
 int getStatus_VAL2_AnOutConf_3();
  
-#define ID_VAL2_AnOutConf_4 3180
+#define ID_VAL2_AnOutConf_4 3164
 extern u_int16_t VAL2_AnOutConf_4;
 int doWrite_VAL2_AnOutConf_4(u_int16_t value);
 int addWrite_VAL2_AnOutConf_4(u_int16_t value);
 int getStatus_VAL2_AnOutConf_4();
  
-#define ID_RES2_AnOutStts_1 3181
+#define ID_RES2_AnOutStts_1 3165
 extern int16_t RES2_AnOutStts_1;
 int doWrite_RES2_AnOutStts_1(int16_t value);
 int addWrite_RES2_AnOutStts_1(int16_t value);
 int getStatus_RES2_AnOutStts_1();
  
-#define ID_RES2_AnOutStts_2 3182
+#define ID_RES2_AnOutStts_2 3166
 extern int16_t RES2_AnOutStts_2;
 int doWrite_RES2_AnOutStts_2(int16_t value);
 int addWrite_RES2_AnOutStts_2(int16_t value);
 int getStatus_RES2_AnOutStts_2();
  
-#define ID_RES2_AnOutStts_3 3183
+#define ID_RES2_AnOutStts_3 3167
 extern int16_t RES2_AnOutStts_3;
 int doWrite_RES2_AnOutStts_3(int16_t value);
 int addWrite_RES2_AnOutStts_3(int16_t value);
 int getStatus_RES2_AnOutStts_3();
  
-#define ID_RES2_AnOutStts_4 3184
+#define ID_RES2_AnOutStts_4 3168
 extern int16_t RES2_AnOutStts_4;
 int doWrite_RES2_AnOutStts_4(int16_t value);
 int addWrite_RES2_AnOutStts_4(int16_t value);
 int getStatus_RES2_AnOutStts_4();
  
-#define ID_TST2_Tamb 3185
+#define ID_TST2_Tamb 3169
 extern int TST2_Tamb;
 int doWrite_TST2_Tamb(int value);
 int addWrite_TST2_Tamb(int value);
 int getStatus_TST2_Tamb();
  
-#define ID_TST2_RPM 3186
+#define ID_TST2_RPM 3170
 extern int TST2_RPM;
 int doWrite_TST2_RPM(int value);
 int addWrite_TST2_RPM(int value);
 int getStatus_TST2_RPM();
  
-#define ID_TST2_FWrevision 3187
+#define ID_TST2_FWrevision 3171
 extern int TST2_FWrevision;
 int doWrite_TST2_FWrevision(int value);
 int addWrite_TST2_FWrevision(int value);
 int getStatus_TST2_FWrevision();
  
-#define ID_TST2_HWconfig 3188
+#define ID_TST2_HWconfig 3172
 extern int TST2_HWconfig;
 int doWrite_TST2_HWconfig(int value);
 int addWrite_TST2_HWconfig(int value);
 int getStatus_TST2_HWconfig();
  
-#define ID_VAL2_Tamb 3189
+#define ID_VAL2_Tamb 3173
 extern int16_t VAL2_Tamb;
 int doWrite_VAL2_Tamb(int16_t value);
 int addWrite_VAL2_Tamb(int16_t value);
 int getStatus_VAL2_Tamb();
  
-#define ID_VAL2_RPM 3190
+#define ID_VAL2_RPM 3174
 extern u_int16_t VAL2_RPM;
 int doWrite_VAL2_RPM(u_int16_t value);
 int addWrite_VAL2_RPM(u_int16_t value);
 int getStatus_VAL2_RPM();
  
-#define ID_VAL2_FWrevision 3191
+#define ID_VAL2_FWrevision 3175
 extern u_int16_t VAL2_FWrevision;
 int doWrite_VAL2_FWrevision(u_int16_t value);
 int addWrite_VAL2_FWrevision(u_int16_t value);
 int getStatus_VAL2_FWrevision();
  
-#define ID_VAL2_HWconfig 3192
+#define ID_VAL2_HWconfig 3176
 extern u_int16_t VAL2_HWconfig;
 int doWrite_VAL2_HWconfig(u_int16_t value);
 int addWrite_VAL2_HWconfig(u_int16_t value);
 int getStatus_VAL2_HWconfig();
  
-#define ID_RES2_Tamb 3193
+#define ID_RES2_Tamb 3177
 extern int16_t RES2_Tamb;
 int doWrite_RES2_Tamb(int16_t value);
 int addWrite_RES2_Tamb(int16_t value);
 int getStatus_RES2_Tamb();
  
-#define ID_RES2_RPM 3194
+#define ID_RES2_RPM 3178
 extern u_int16_t RES2_RPM;
 int doWrite_RES2_RPM(u_int16_t value);
 int addWrite_RES2_RPM(u_int16_t value);
 int getStatus_RES2_RPM();
  
-#define ID_RES2_FWrevision 3195
+#define ID_RES2_FWrevision 3179
 extern u_int16_t RES2_FWrevision;
 int doWrite_RES2_FWrevision(u_int16_t value);
 int addWrite_RES2_FWrevision(u_int16_t value);
 int getStatus_RES2_FWrevision();
  
-#define ID_RES2_HWconfig 3196
+#define ID_RES2_HWconfig 3180
 extern u_int16_t RES2_HWconfig;
 int doWrite_RES2_HWconfig(u_int16_t value);
 int addWrite_RES2_HWconfig(u_int16_t value);
 int getStatus_RES2_HWconfig();
  
-#define ID_TST2_RTUS_WR 3197
+#define ID_TST2_RTUS_WR 3181
 extern int TST2_RTUS_WR;
 int doWrite_TST2_RTUS_WR(int value);
 int addWrite_TST2_RTUS_WR(int value);
 int getStatus_TST2_RTUS_WR();
  
-#define ID_TST2_RTUS_RD 3198
+#define ID_TST2_RTUS_RD 3182
 extern int TST2_RTUS_RD;
 int doWrite_TST2_RTUS_RD(int value);
 int addWrite_TST2_RTUS_RD(int value);
 int getStatus_TST2_RTUS_RD();
  
-#define ID_TST2_RTU1_WR 3199
+#define ID_TST2_RTU1_WR 3183
 extern int TST2_RTU1_WR;
 int doWrite_TST2_RTU1_WR(int value);
 int addWrite_TST2_RTU1_WR(int value);
 int getStatus_TST2_RTU1_WR();
  
-#define ID_TST2_RTU1_RD 3200
+#define ID_TST2_RTU1_RD 3184
 extern int TST2_RTU1_RD;
 int doWrite_TST2_RTU1_RD(int value);
 int addWrite_TST2_RTU1_RD(int value);
 int getStatus_TST2_RTU1_RD();
  
-#define ID_TST2_RTU3_WR 3201
+#define ID_TST2_RTU3_WR 3185
 extern int TST2_RTU3_WR;
 int doWrite_TST2_RTU3_WR(int value);
 int addWrite_TST2_RTU3_WR(int value);
 int getStatus_TST2_RTU3_WR();
  
-#define ID_TST2_RTU3_RD 3202
+#define ID_TST2_RTU3_RD 3186
 extern int TST2_RTU3_RD;
 int doWrite_TST2_RTU3_RD(int value);
 int addWrite_TST2_RTU3_RD(int value);
 int getStatus_TST2_RTU3_RD();
  
-#define ID_TST2_CAN1_WR 3203
+#define ID_TST2_CAN1_WR 3187
 extern int TST2_CAN1_WR;
 int doWrite_TST2_CAN1_WR(int value);
 int addWrite_TST2_CAN1_WR(int value);
 int getStatus_TST2_CAN1_WR();
  
-#define ID_TST2_CAN1_RD 3204
+#define ID_TST2_CAN1_RD 3188
 extern int TST2_CAN1_RD;
 int doWrite_TST2_CAN1_RD(int value);
 int addWrite_TST2_CAN1_RD(int value);
 int getStatus_TST2_CAN1_RD();
  
-#define ID_VAL2_RTUS_WR 3205
+#define ID_VAL2_RTUS_WR 3189
 extern int VAL2_RTUS_WR;
 int doWrite_VAL2_RTUS_WR(int value);
 int addWrite_VAL2_RTUS_WR(int value);
 int getStatus_VAL2_RTUS_WR();
  
-#define ID_VAL2_RTUS_RD 3206
+#define ID_VAL2_RTUS_RD 3190
 extern int VAL2_RTUS_RD;
 int doWrite_VAL2_RTUS_RD(int value);
 int addWrite_VAL2_RTUS_RD(int value);
 int getStatus_VAL2_RTUS_RD();
  
-#define ID_VAL2_RTU1_WR 3207
+#define ID_VAL2_RTU1_WR 3191
 extern int VAL2_RTU1_WR;
 int doWrite_VAL2_RTU1_WR(int value);
 int addWrite_VAL2_RTU1_WR(int value);
 int getStatus_VAL2_RTU1_WR();
  
-#define ID_VAL2_RTU1_RD 3208
+#define ID_VAL2_RTU1_RD 3192
 extern int VAL2_RTU1_RD;
 int doWrite_VAL2_RTU1_RD(int value);
 int addWrite_VAL2_RTU1_RD(int value);
 int getStatus_VAL2_RTU1_RD();
  
-#define ID_VAL2_RTU3_WR 3209
+#define ID_VAL2_RTU3_WR 3193
 extern int VAL2_RTU3_WR;
 int doWrite_VAL2_RTU3_WR(int value);
 int addWrite_VAL2_RTU3_WR(int value);
 int getStatus_VAL2_RTU3_WR();
  
-#define ID_VAL2_RTU3_RD 3210
+#define ID_VAL2_RTU3_RD 3194
 extern int VAL2_RTU3_RD;
 int doWrite_VAL2_RTU3_RD(int value);
 int addWrite_VAL2_RTU3_RD(int value);
 int getStatus_VAL2_RTU3_RD();
  
-#define ID_VAL2_CAN1_WR 3211
+#define ID_VAL2_CAN1_WR 3195
 extern int VAL2_CAN1_WR;
 int doWrite_VAL2_CAN1_WR(int value);
 int addWrite_VAL2_CAN1_WR(int value);
 int getStatus_VAL2_CAN1_WR();
  
-#define ID_VAL2_CAN1_RD 3212
+#define ID_VAL2_CAN1_RD 3196
 extern int VAL2_CAN1_RD;
 int doWrite_VAL2_CAN1_RD(int value);
 int addWrite_VAL2_CAN1_RD(int value);
 int getStatus_VAL2_CAN1_RD();
  
-#define ID_RES2_RTUS_WR 3213
+#define ID_RES2_RTUS_WR 3197
 extern int RES2_RTUS_WR;
 int doWrite_RES2_RTUS_WR(int value);
 int addWrite_RES2_RTUS_WR(int value);
 int getStatus_RES2_RTUS_WR();
  
-#define ID_RES2_RTUS_RD 3214
+#define ID_RES2_RTUS_RD 3198
 extern int RES2_RTUS_RD;
 int doWrite_RES2_RTUS_RD(int value);
 int addWrite_RES2_RTUS_RD(int value);
 int getStatus_RES2_RTUS_RD();
  
-#define ID_RES2_RTU1_WR 3215
+#define ID_RES2_RTU1_WR 3199
 extern int RES2_RTU1_WR;
 int doWrite_RES2_RTU1_WR(int value);
 int addWrite_RES2_RTU1_WR(int value);
 int getStatus_RES2_RTU1_WR();
  
-#define ID_RES2_RTU1_RD 3216
+#define ID_RES2_RTU1_RD 3200
 extern int RES2_RTU1_RD;
 int doWrite_RES2_RTU1_RD(int value);
 int addWrite_RES2_RTU1_RD(int value);
 int getStatus_RES2_RTU1_RD();
  
-#define ID_RES2_RTU3_WR 3217
+#define ID_RES2_RTU3_WR 3201
 extern int RES2_RTU3_WR;
 int doWrite_RES2_RTU3_WR(int value);
 int addWrite_RES2_RTU3_WR(int value);
 int getStatus_RES2_RTU3_WR();
  
-#define ID_RES2_RTU3_RD 3218
+#define ID_RES2_RTU3_RD 3202
 extern int RES2_RTU3_RD;
 int doWrite_RES2_RTU3_RD(int value);
 int addWrite_RES2_RTU3_RD(int value);
 int getStatus_RES2_RTU3_RD();
  
-#define ID_RES2_CAN1_WR 3219
+#define ID_RES2_CAN1_WR 3203
 extern int RES2_CAN1_WR;
 int doWrite_RES2_CAN1_WR(int value);
 int addWrite_RES2_CAN1_WR(int value);
 int getStatus_RES2_CAN1_WR();
  
-#define ID_RES2_CAN1_RD 3220
+#define ID_RES2_CAN1_RD 3204
 extern int RES2_CAN1_RD;
 int doWrite_RES2_CAN1_RD(int value);
 int addWrite_RES2_CAN1_RD(int value);
 int getStatus_RES2_CAN1_RD();
  
-#define ID_STATUS2_LOCAL 3221
-extern int STATUS2_LOCAL;
-int doWrite_STATUS2_LOCAL(int value);
-int addWrite_STATUS2_LOCAL(int value);
-int getStatus_STATUS2_LOCAL();
+#define ID_TEST2_STATUS 3205
+extern u_int16_t TEST2_STATUS;
+int doWrite_TEST2_STATUS(u_int16_t value);
+int addWrite_TEST2_STATUS(u_int16_t value);
+int getStatus_TEST2_STATUS();
  
-#define ID_STATUS2_REMOTE 3222
-extern int STATUS2_REMOTE;
-int doWrite_STATUS2_REMOTE(int value);
-int addWrite_STATUS2_REMOTE(int value);
-int getStatus_STATUS2_REMOTE();
- 
-#define ID_STATUS2_DONE 3223
-extern int STATUS2_DONE;
-int doWrite_STATUS2_DONE(int value);
-int addWrite_STATUS2_DONE(int value);
-int getStatus_STATUS2_DONE();
- 
-#define ID_STARTx_REMOTE 3999
-extern int STARTx_REMOTE;
-int doWrite_STARTx_REMOTE(int value);
-int addWrite_STARTx_REMOTE(int value);
-int getStatus_STARTx_REMOTE();
- 
-#define ID_STARTx_TEST 4000
-extern int STARTx_TEST;
-int doWrite_STARTx_TEST(int value);
-int addWrite_STARTx_TEST(int value);
-int getStatus_STARTx_TEST();
+#define ID_TESTx_COMMAND 4000
+extern u_int16_t TESTx_COMMAND;
+int doWrite_TESTx_COMMAND(u_int16_t value);
+int addWrite_TESTx_COMMAND(u_int16_t value);
+int getStatus_TESTx_COMMAND();
  
 #define ID_TSTx_DigIn_1 4001
 extern int TSTx_DigIn_1;
@@ -3754,863 +3622,755 @@ int doWrite_VALx_DigOut_16(int value);
 int addWrite_VALx_DigOut_16(int value);
 int getStatus_VALx_DigOut_16();
  
-#define ID_RESx_DigOut_1 4081
-extern int RESx_DigOut_1;
-int doWrite_RESx_DigOut_1(int value);
-int addWrite_RESx_DigOut_1(int value);
-int getStatus_RESx_DigOut_1();
- 
-#define ID_RESx_DigOut_2 4082
-extern int RESx_DigOut_2;
-int doWrite_RESx_DigOut_2(int value);
-int addWrite_RESx_DigOut_2(int value);
-int getStatus_RESx_DigOut_2();
- 
-#define ID_RESx_DigOut_3 4083
-extern int RESx_DigOut_3;
-int doWrite_RESx_DigOut_3(int value);
-int addWrite_RESx_DigOut_3(int value);
-int getStatus_RESx_DigOut_3();
- 
-#define ID_RESx_DigOut_4 4084
-extern int RESx_DigOut_4;
-int doWrite_RESx_DigOut_4(int value);
-int addWrite_RESx_DigOut_4(int value);
-int getStatus_RESx_DigOut_4();
- 
-#define ID_RESx_DigOut_5 4085
-extern int RESx_DigOut_5;
-int doWrite_RESx_DigOut_5(int value);
-int addWrite_RESx_DigOut_5(int value);
-int getStatus_RESx_DigOut_5();
- 
-#define ID_RESx_DigOut_6 4086
-extern int RESx_DigOut_6;
-int doWrite_RESx_DigOut_6(int value);
-int addWrite_RESx_DigOut_6(int value);
-int getStatus_RESx_DigOut_6();
- 
-#define ID_RESx_DigOut_7 4087
-extern int RESx_DigOut_7;
-int doWrite_RESx_DigOut_7(int value);
-int addWrite_RESx_DigOut_7(int value);
-int getStatus_RESx_DigOut_7();
- 
-#define ID_RESx_DigOut_8 4088
-extern int RESx_DigOut_8;
-int doWrite_RESx_DigOut_8(int value);
-int addWrite_RESx_DigOut_8(int value);
-int getStatus_RESx_DigOut_8();
- 
-#define ID_RESx_DigOut_9 4089
-extern int RESx_DigOut_9;
-int doWrite_RESx_DigOut_9(int value);
-int addWrite_RESx_DigOut_9(int value);
-int getStatus_RESx_DigOut_9();
- 
-#define ID_RESx_DigOut_10 4090
-extern int RESx_DigOut_10;
-int doWrite_RESx_DigOut_10(int value);
-int addWrite_RESx_DigOut_10(int value);
-int getStatus_RESx_DigOut_10();
- 
-#define ID_RESx_DigOut_11 4091
-extern int RESx_DigOut_11;
-int doWrite_RESx_DigOut_11(int value);
-int addWrite_RESx_DigOut_11(int value);
-int getStatus_RESx_DigOut_11();
- 
-#define ID_RESx_DigOut_12 4092
-extern int RESx_DigOut_12;
-int doWrite_RESx_DigOut_12(int value);
-int addWrite_RESx_DigOut_12(int value);
-int getStatus_RESx_DigOut_12();
- 
-#define ID_RESx_DigOut_13 4093
-extern int RESx_DigOut_13;
-int doWrite_RESx_DigOut_13(int value);
-int addWrite_RESx_DigOut_13(int value);
-int getStatus_RESx_DigOut_13();
- 
-#define ID_RESx_DigOut_14 4094
-extern int RESx_DigOut_14;
-int doWrite_RESx_DigOut_14(int value);
-int addWrite_RESx_DigOut_14(int value);
-int getStatus_RESx_DigOut_14();
- 
-#define ID_RESx_DigOut_15 4095
-extern int RESx_DigOut_15;
-int doWrite_RESx_DigOut_15(int value);
-int addWrite_RESx_DigOut_15(int value);
-int getStatus_RESx_DigOut_15();
- 
-#define ID_RESx_DigOut_16 4096
-extern int RESx_DigOut_16;
-int doWrite_RESx_DigOut_16(int value);
-int addWrite_RESx_DigOut_16(int value);
-int getStatus_RESx_DigOut_16();
- 
-#define ID_TSTx_AnIn_1 4097
+#define ID_TSTx_AnIn_1 4081
 extern int TSTx_AnIn_1;
 int doWrite_TSTx_AnIn_1(int value);
 int addWrite_TSTx_AnIn_1(int value);
 int getStatus_TSTx_AnIn_1();
  
-#define ID_TSTx_AnIn_2 4098
+#define ID_TSTx_AnIn_2 4082
 extern int TSTx_AnIn_2;
 int doWrite_TSTx_AnIn_2(int value);
 int addWrite_TSTx_AnIn_2(int value);
 int getStatus_TSTx_AnIn_2();
  
-#define ID_TSTx_AnIn_3 4099
+#define ID_TSTx_AnIn_3 4083
 extern int TSTx_AnIn_3;
 int doWrite_TSTx_AnIn_3(int value);
 int addWrite_TSTx_AnIn_3(int value);
 int getStatus_TSTx_AnIn_3();
  
-#define ID_TSTx_AnIn_4 4100
+#define ID_TSTx_AnIn_4 4084
 extern int TSTx_AnIn_4;
 int doWrite_TSTx_AnIn_4(int value);
 int addWrite_TSTx_AnIn_4(int value);
 int getStatus_TSTx_AnIn_4();
  
-#define ID_TSTx_AnIn_5 4101
+#define ID_TSTx_AnIn_5 4085
 extern int TSTx_AnIn_5;
 int doWrite_TSTx_AnIn_5(int value);
 int addWrite_TSTx_AnIn_5(int value);
 int getStatus_TSTx_AnIn_5();
  
-#define ID_TSTx_AnIn_6 4102
+#define ID_TSTx_AnIn_6 4086
 extern int TSTx_AnIn_6;
 int doWrite_TSTx_AnIn_6(int value);
 int addWrite_TSTx_AnIn_6(int value);
 int getStatus_TSTx_AnIn_6();
  
-#define ID_TSTx_AnIn_7 4103
+#define ID_TSTx_AnIn_7 4087
 extern int TSTx_AnIn_7;
 int doWrite_TSTx_AnIn_7(int value);
 int addWrite_TSTx_AnIn_7(int value);
 int getStatus_TSTx_AnIn_7();
  
-#define ID_TSTx_AnIn_8 4104
+#define ID_TSTx_AnIn_8 4088
 extern int TSTx_AnIn_8;
 int doWrite_TSTx_AnIn_8(int value);
 int addWrite_TSTx_AnIn_8(int value);
 int getStatus_TSTx_AnIn_8();
  
-#define ID_TSTx_AnIn_9 4105
+#define ID_TSTx_AnIn_9 4089
 extern int TSTx_AnIn_9;
 int doWrite_TSTx_AnIn_9(int value);
 int addWrite_TSTx_AnIn_9(int value);
 int getStatus_TSTx_AnIn_9();
  
-#define ID_TSTx_AnIn_10 4106
+#define ID_TSTx_AnIn_10 4090
 extern int TSTx_AnIn_10;
 int doWrite_TSTx_AnIn_10(int value);
 int addWrite_TSTx_AnIn_10(int value);
 int getStatus_TSTx_AnIn_10();
  
-#define ID_TSTx_AnIn_11 4107
+#define ID_TSTx_AnIn_11 4091
 extern int TSTx_AnIn_11;
 int doWrite_TSTx_AnIn_11(int value);
 int addWrite_TSTx_AnIn_11(int value);
 int getStatus_TSTx_AnIn_11();
  
-#define ID_TSTx_AnIn_12 4108
+#define ID_TSTx_AnIn_12 4092
 extern int TSTx_AnIn_12;
 int doWrite_TSTx_AnIn_12(int value);
 int addWrite_TSTx_AnIn_12(int value);
 int getStatus_TSTx_AnIn_12();
  
-#define ID_VALx_AnIn_1 4109
+#define ID_VALx_AnIn_1 4093
 extern int16_t VALx_AnIn_1;
 int doWrite_VALx_AnIn_1(int16_t value);
 int addWrite_VALx_AnIn_1(int16_t value);
 int getStatus_VALx_AnIn_1();
  
-#define ID_VALx_AnIn_2 4110
+#define ID_VALx_AnIn_2 4094
 extern int16_t VALx_AnIn_2;
 int doWrite_VALx_AnIn_2(int16_t value);
 int addWrite_VALx_AnIn_2(int16_t value);
 int getStatus_VALx_AnIn_2();
  
-#define ID_VALx_AnIn_3 4111
+#define ID_VALx_AnIn_3 4095
 extern int16_t VALx_AnIn_3;
 int doWrite_VALx_AnIn_3(int16_t value);
 int addWrite_VALx_AnIn_3(int16_t value);
 int getStatus_VALx_AnIn_3();
  
-#define ID_VALx_AnIn_4 4112
+#define ID_VALx_AnIn_4 4096
 extern int16_t VALx_AnIn_4;
 int doWrite_VALx_AnIn_4(int16_t value);
 int addWrite_VALx_AnIn_4(int16_t value);
 int getStatus_VALx_AnIn_4();
  
-#define ID_VALx_AnIn_5 4113
+#define ID_VALx_AnIn_5 4097
 extern int16_t VALx_AnIn_5;
 int doWrite_VALx_AnIn_5(int16_t value);
 int addWrite_VALx_AnIn_5(int16_t value);
 int getStatus_VALx_AnIn_5();
  
-#define ID_VALx_AnIn_6 4114
+#define ID_VALx_AnIn_6 4098
 extern int16_t VALx_AnIn_6;
 int doWrite_VALx_AnIn_6(int16_t value);
 int addWrite_VALx_AnIn_6(int16_t value);
 int getStatus_VALx_AnIn_6();
  
-#define ID_VALx_AnIn_7 4115
+#define ID_VALx_AnIn_7 4099
 extern int16_t VALx_AnIn_7;
 int doWrite_VALx_AnIn_7(int16_t value);
 int addWrite_VALx_AnIn_7(int16_t value);
 int getStatus_VALx_AnIn_7();
  
-#define ID_VALx_AnIn_8 4116
+#define ID_VALx_AnIn_8 4100
 extern int16_t VALx_AnIn_8;
 int doWrite_VALx_AnIn_8(int16_t value);
 int addWrite_VALx_AnIn_8(int16_t value);
 int getStatus_VALx_AnIn_8();
  
-#define ID_VALx_AnIn_9 4117
+#define ID_VALx_AnIn_9 4101
 extern int16_t VALx_AnIn_9;
 int doWrite_VALx_AnIn_9(int16_t value);
 int addWrite_VALx_AnIn_9(int16_t value);
 int getStatus_VALx_AnIn_9();
  
-#define ID_VALx_AnIn_10 4118
+#define ID_VALx_AnIn_10 4102
 extern int16_t VALx_AnIn_10;
 int doWrite_VALx_AnIn_10(int16_t value);
 int addWrite_VALx_AnIn_10(int16_t value);
 int getStatus_VALx_AnIn_10();
  
-#define ID_VALx_AnIn_11 4119
+#define ID_VALx_AnIn_11 4103
 extern int16_t VALx_AnIn_11;
 int doWrite_VALx_AnIn_11(int16_t value);
 int addWrite_VALx_AnIn_11(int16_t value);
 int getStatus_VALx_AnIn_11();
  
-#define ID_VALx_AnIn_12 4120
+#define ID_VALx_AnIn_12 4104
 extern int16_t VALx_AnIn_12;
 int doWrite_VALx_AnIn_12(int16_t value);
 int addWrite_VALx_AnIn_12(int16_t value);
 int getStatus_VALx_AnIn_12();
  
-#define ID_VALx_AnInConf_1 4121
+#define ID_VALx_AnInConf_1 4105
 extern u_int16_t VALx_AnInConf_1;
 int doWrite_VALx_AnInConf_1(u_int16_t value);
 int addWrite_VALx_AnInConf_1(u_int16_t value);
 int getStatus_VALx_AnInConf_1();
  
-#define ID_VALx_AnInConf_2 4122
+#define ID_VALx_AnInConf_2 4106
 extern u_int16_t VALx_AnInConf_2;
 int doWrite_VALx_AnInConf_2(u_int16_t value);
 int addWrite_VALx_AnInConf_2(u_int16_t value);
 int getStatus_VALx_AnInConf_2();
  
-#define ID_VALx_AnInConf_3 4123
+#define ID_VALx_AnInConf_3 4107
 extern u_int16_t VALx_AnInConf_3;
 int doWrite_VALx_AnInConf_3(u_int16_t value);
 int addWrite_VALx_AnInConf_3(u_int16_t value);
 int getStatus_VALx_AnInConf_3();
  
-#define ID_VALx_AnInConf_4 4124
+#define ID_VALx_AnInConf_4 4108
 extern u_int16_t VALx_AnInConf_4;
 int doWrite_VALx_AnInConf_4(u_int16_t value);
 int addWrite_VALx_AnInConf_4(u_int16_t value);
 int getStatus_VALx_AnInConf_4();
  
-#define ID_VALx_AnInConf_5 4125
+#define ID_VALx_AnInConf_5 4109
 extern u_int16_t VALx_AnInConf_5;
 int doWrite_VALx_AnInConf_5(u_int16_t value);
 int addWrite_VALx_AnInConf_5(u_int16_t value);
 int getStatus_VALx_AnInConf_5();
  
-#define ID_VALx_AnInConf_6 4126
+#define ID_VALx_AnInConf_6 4110
 extern u_int16_t VALx_AnInConf_6;
 int doWrite_VALx_AnInConf_6(u_int16_t value);
 int addWrite_VALx_AnInConf_6(u_int16_t value);
 int getStatus_VALx_AnInConf_6();
  
-#define ID_VALx_AnInConf_7 4127
+#define ID_VALx_AnInConf_7 4111
 extern u_int16_t VALx_AnInConf_7;
 int doWrite_VALx_AnInConf_7(u_int16_t value);
 int addWrite_VALx_AnInConf_7(u_int16_t value);
 int getStatus_VALx_AnInConf_7();
  
-#define ID_VALx_AnInConf_8 4128
+#define ID_VALx_AnInConf_8 4112
 extern u_int16_t VALx_AnInConf_8;
 int doWrite_VALx_AnInConf_8(u_int16_t value);
 int addWrite_VALx_AnInConf_8(u_int16_t value);
 int getStatus_VALx_AnInConf_8();
  
-#define ID_VALx_AnInConf_9 4129
+#define ID_VALx_AnInConf_9 4113
 extern u_int16_t VALx_AnInConf_9;
 int doWrite_VALx_AnInConf_9(u_int16_t value);
 int addWrite_VALx_AnInConf_9(u_int16_t value);
 int getStatus_VALx_AnInConf_9();
  
-#define ID_VALx_AnInConf_10 4130
+#define ID_VALx_AnInConf_10 4114
 extern u_int16_t VALx_AnInConf_10;
 int doWrite_VALx_AnInConf_10(u_int16_t value);
 int addWrite_VALx_AnInConf_10(u_int16_t value);
 int getStatus_VALx_AnInConf_10();
  
-#define ID_VALx_AnInConf_11 4131
+#define ID_VALx_AnInConf_11 4115
 extern u_int16_t VALx_AnInConf_11;
 int doWrite_VALx_AnInConf_11(u_int16_t value);
 int addWrite_VALx_AnInConf_11(u_int16_t value);
 int getStatus_VALx_AnInConf_11();
  
-#define ID_VALx_AnInConf_12 4132
+#define ID_VALx_AnInConf_12 4116
 extern u_int16_t VALx_AnInConf_12;
 int doWrite_VALx_AnInConf_12(u_int16_t value);
 int addWrite_VALx_AnInConf_12(u_int16_t value);
 int getStatus_VALx_AnInConf_12();
  
-#define ID_VALx_AnInFltr_1 4133
+#define ID_VALx_AnInFltr_1 4117
 extern u_int16_t VALx_AnInFltr_1;
 int doWrite_VALx_AnInFltr_1(u_int16_t value);
 int addWrite_VALx_AnInFltr_1(u_int16_t value);
 int getStatus_VALx_AnInFltr_1();
  
-#define ID_VALx_AnInFltr_2 4134
+#define ID_VALx_AnInFltr_2 4118
 extern u_int16_t VALx_AnInFltr_2;
 int doWrite_VALx_AnInFltr_2(u_int16_t value);
 int addWrite_VALx_AnInFltr_2(u_int16_t value);
 int getStatus_VALx_AnInFltr_2();
  
-#define ID_VALx_AnInFltr_3 4135
+#define ID_VALx_AnInFltr_3 4119
 extern u_int16_t VALx_AnInFltr_3;
 int doWrite_VALx_AnInFltr_3(u_int16_t value);
 int addWrite_VALx_AnInFltr_3(u_int16_t value);
 int getStatus_VALx_AnInFltr_3();
  
-#define ID_VALx_AnInFltr_4 4136
+#define ID_VALx_AnInFltr_4 4120
 extern u_int16_t VALx_AnInFltr_4;
 int doWrite_VALx_AnInFltr_4(u_int16_t value);
 int addWrite_VALx_AnInFltr_4(u_int16_t value);
 int getStatus_VALx_AnInFltr_4();
  
-#define ID_VALx_AnInFltr_5 4137
+#define ID_VALx_AnInFltr_5 4121
 extern u_int16_t VALx_AnInFltr_5;
 int doWrite_VALx_AnInFltr_5(u_int16_t value);
 int addWrite_VALx_AnInFltr_5(u_int16_t value);
 int getStatus_VALx_AnInFltr_5();
  
-#define ID_VALx_AnInFltr_6 4138
+#define ID_VALx_AnInFltr_6 4122
 extern u_int16_t VALx_AnInFltr_6;
 int doWrite_VALx_AnInFltr_6(u_int16_t value);
 int addWrite_VALx_AnInFltr_6(u_int16_t value);
 int getStatus_VALx_AnInFltr_6();
  
-#define ID_VALx_AnInFltr_7 4139
+#define ID_VALx_AnInFltr_7 4123
 extern u_int16_t VALx_AnInFltr_7;
 int doWrite_VALx_AnInFltr_7(u_int16_t value);
 int addWrite_VALx_AnInFltr_7(u_int16_t value);
 int getStatus_VALx_AnInFltr_7();
  
-#define ID_VALx_AnInFltr_8 4140
+#define ID_VALx_AnInFltr_8 4124
 extern u_int16_t VALx_AnInFltr_8;
 int doWrite_VALx_AnInFltr_8(u_int16_t value);
 int addWrite_VALx_AnInFltr_8(u_int16_t value);
 int getStatus_VALx_AnInFltr_8();
  
-#define ID_VALx_AnInFltr_9 4141
+#define ID_VALx_AnInFltr_9 4125
 extern u_int16_t VALx_AnInFltr_9;
 int doWrite_VALx_AnInFltr_9(u_int16_t value);
 int addWrite_VALx_AnInFltr_9(u_int16_t value);
 int getStatus_VALx_AnInFltr_9();
  
-#define ID_VALx_AnInFltr_10 4142
+#define ID_VALx_AnInFltr_10 4126
 extern u_int16_t VALx_AnInFltr_10;
 int doWrite_VALx_AnInFltr_10(u_int16_t value);
 int addWrite_VALx_AnInFltr_10(u_int16_t value);
 int getStatus_VALx_AnInFltr_10();
  
-#define ID_VALx_AnInFltr_11 4143
+#define ID_VALx_AnInFltr_11 4127
 extern u_int16_t VALx_AnInFltr_11;
 int doWrite_VALx_AnInFltr_11(u_int16_t value);
 int addWrite_VALx_AnInFltr_11(u_int16_t value);
 int getStatus_VALx_AnInFltr_11();
  
-#define ID_VALx_AnInFltr_12 4144
+#define ID_VALx_AnInFltr_12 4128
 extern u_int16_t VALx_AnInFltr_12;
 int doWrite_VALx_AnInFltr_12(u_int16_t value);
 int addWrite_VALx_AnInFltr_12(u_int16_t value);
 int getStatus_VALx_AnInFltr_12();
  
-#define ID_RESx_AnIn_1 4145
+#define ID_RESx_AnIn_1 4129
 extern int16_t RESx_AnIn_1;
 int doWrite_RESx_AnIn_1(int16_t value);
 int addWrite_RESx_AnIn_1(int16_t value);
 int getStatus_RESx_AnIn_1();
  
-#define ID_RESx_AnIn_2 4146
+#define ID_RESx_AnIn_2 4130
 extern int16_t RESx_AnIn_2;
 int doWrite_RESx_AnIn_2(int16_t value);
 int addWrite_RESx_AnIn_2(int16_t value);
 int getStatus_RESx_AnIn_2();
  
-#define ID_RESx_AnIn_3 4147
+#define ID_RESx_AnIn_3 4131
 extern int16_t RESx_AnIn_3;
 int doWrite_RESx_AnIn_3(int16_t value);
 int addWrite_RESx_AnIn_3(int16_t value);
 int getStatus_RESx_AnIn_3();
  
-#define ID_RESx_AnIn_4 4148
+#define ID_RESx_AnIn_4 4132
 extern int16_t RESx_AnIn_4;
 int doWrite_RESx_AnIn_4(int16_t value);
 int addWrite_RESx_AnIn_4(int16_t value);
 int getStatus_RESx_AnIn_4();
  
-#define ID_RESx_AnIn_5 4149
+#define ID_RESx_AnIn_5 4133
 extern int16_t RESx_AnIn_5;
 int doWrite_RESx_AnIn_5(int16_t value);
 int addWrite_RESx_AnIn_5(int16_t value);
 int getStatus_RESx_AnIn_5();
  
-#define ID_RESx_AnIn_6 4150
+#define ID_RESx_AnIn_6 4134
 extern int16_t RESx_AnIn_6;
 int doWrite_RESx_AnIn_6(int16_t value);
 int addWrite_RESx_AnIn_6(int16_t value);
 int getStatus_RESx_AnIn_6();
  
-#define ID_RESx_AnIn_7 4151
+#define ID_RESx_AnIn_7 4135
 extern int16_t RESx_AnIn_7;
 int doWrite_RESx_AnIn_7(int16_t value);
 int addWrite_RESx_AnIn_7(int16_t value);
 int getStatus_RESx_AnIn_7();
  
-#define ID_RESx_AnIn_8 4152
+#define ID_RESx_AnIn_8 4136
 extern int16_t RESx_AnIn_8;
 int doWrite_RESx_AnIn_8(int16_t value);
 int addWrite_RESx_AnIn_8(int16_t value);
 int getStatus_RESx_AnIn_8();
  
-#define ID_RESx_AnIn_9 4153
+#define ID_RESx_AnIn_9 4137
 extern int16_t RESx_AnIn_9;
 int doWrite_RESx_AnIn_9(int16_t value);
 int addWrite_RESx_AnIn_9(int16_t value);
 int getStatus_RESx_AnIn_9();
  
-#define ID_RESx_AnIn_10 4154
+#define ID_RESx_AnIn_10 4138
 extern int16_t RESx_AnIn_10;
 int doWrite_RESx_AnIn_10(int16_t value);
 int addWrite_RESx_AnIn_10(int16_t value);
 int getStatus_RESx_AnIn_10();
  
-#define ID_RESx_AnIn_11 4155
+#define ID_RESx_AnIn_11 4139
 extern int16_t RESx_AnIn_11;
 int doWrite_RESx_AnIn_11(int16_t value);
 int addWrite_RESx_AnIn_11(int16_t value);
 int getStatus_RESx_AnIn_11();
  
-#define ID_RESx_AnIn_12 4156
+#define ID_RESx_AnIn_12 4140
 extern int16_t RESx_AnIn_12;
 int doWrite_RESx_AnIn_12(int16_t value);
 int addWrite_RESx_AnIn_12(int16_t value);
 int getStatus_RESx_AnIn_12();
  
-#define ID_RESx_AnInStts_1 4157
+#define ID_RESx_AnInStts_1 4141
 extern int16_t RESx_AnInStts_1;
 int doWrite_RESx_AnInStts_1(int16_t value);
 int addWrite_RESx_AnInStts_1(int16_t value);
 int getStatus_RESx_AnInStts_1();
  
-#define ID_RESx_AnInStts_2 4158
+#define ID_RESx_AnInStts_2 4142
 extern int16_t RESx_AnInStts_2;
 int doWrite_RESx_AnInStts_2(int16_t value);
 int addWrite_RESx_AnInStts_2(int16_t value);
 int getStatus_RESx_AnInStts_2();
  
-#define ID_RESx_AnInStts_3 4159
+#define ID_RESx_AnInStts_3 4143
 extern int16_t RESx_AnInStts_3;
 int doWrite_RESx_AnInStts_3(int16_t value);
 int addWrite_RESx_AnInStts_3(int16_t value);
 int getStatus_RESx_AnInStts_3();
  
-#define ID_RESx_AnInStts_4 4160
+#define ID_RESx_AnInStts_4 4144
 extern int16_t RESx_AnInStts_4;
 int doWrite_RESx_AnInStts_4(int16_t value);
 int addWrite_RESx_AnInStts_4(int16_t value);
 int getStatus_RESx_AnInStts_4();
  
-#define ID_RESx_AnInStts_5 4161
+#define ID_RESx_AnInStts_5 4145
 extern int16_t RESx_AnInStts_5;
 int doWrite_RESx_AnInStts_5(int16_t value);
 int addWrite_RESx_AnInStts_5(int16_t value);
 int getStatus_RESx_AnInStts_5();
  
-#define ID_RESx_AnInStts_6 4162
+#define ID_RESx_AnInStts_6 4146
 extern int16_t RESx_AnInStts_6;
 int doWrite_RESx_AnInStts_6(int16_t value);
 int addWrite_RESx_AnInStts_6(int16_t value);
 int getStatus_RESx_AnInStts_6();
  
-#define ID_RESx_AnInStts_7 4163
+#define ID_RESx_AnInStts_7 4147
 extern int16_t RESx_AnInStts_7;
 int doWrite_RESx_AnInStts_7(int16_t value);
 int addWrite_RESx_AnInStts_7(int16_t value);
 int getStatus_RESx_AnInStts_7();
  
-#define ID_RESx_AnInStts_8 4164
+#define ID_RESx_AnInStts_8 4148
 extern int16_t RESx_AnInStts_8;
 int doWrite_RESx_AnInStts_8(int16_t value);
 int addWrite_RESx_AnInStts_8(int16_t value);
 int getStatus_RESx_AnInStts_8();
  
-#define ID_RESx_AnInStts_9 4165
+#define ID_RESx_AnInStts_9 4149
 extern int16_t RESx_AnInStts_9;
 int doWrite_RESx_AnInStts_9(int16_t value);
 int addWrite_RESx_AnInStts_9(int16_t value);
 int getStatus_RESx_AnInStts_9();
  
-#define ID_RESx_AnInStts_10 4166
+#define ID_RESx_AnInStts_10 4150
 extern int16_t RESx_AnInStts_10;
 int doWrite_RESx_AnInStts_10(int16_t value);
 int addWrite_RESx_AnInStts_10(int16_t value);
 int getStatus_RESx_AnInStts_10();
  
-#define ID_RESx_AnInStts_11 4167
+#define ID_RESx_AnInStts_11 4151
 extern int16_t RESx_AnInStts_11;
 int doWrite_RESx_AnInStts_11(int16_t value);
 int addWrite_RESx_AnInStts_11(int16_t value);
 int getStatus_RESx_AnInStts_11();
  
-#define ID_RESx_AnInStts_12 4168
+#define ID_RESx_AnInStts_12 4152
 extern int16_t RESx_AnInStts_12;
 int doWrite_RESx_AnInStts_12(int16_t value);
 int addWrite_RESx_AnInStts_12(int16_t value);
 int getStatus_RESx_AnInStts_12();
  
-#define ID_TSTx_AnOut_1 4169
+#define ID_TSTx_AnOut_1 4153
 extern int TSTx_AnOut_1;
 int doWrite_TSTx_AnOut_1(int value);
 int addWrite_TSTx_AnOut_1(int value);
 int getStatus_TSTx_AnOut_1();
  
-#define ID_TSTx_AnOut_2 4170
+#define ID_TSTx_AnOut_2 4154
 extern int TSTx_AnOut_2;
 int doWrite_TSTx_AnOut_2(int value);
 int addWrite_TSTx_AnOut_2(int value);
 int getStatus_TSTx_AnOut_2();
  
-#define ID_TSTx_AnOut_3 4171
+#define ID_TSTx_AnOut_3 4155
 extern int TSTx_AnOut_3;
 int doWrite_TSTx_AnOut_3(int value);
 int addWrite_TSTx_AnOut_3(int value);
 int getStatus_TSTx_AnOut_3();
  
-#define ID_TSTx_AnOut_4 4172
+#define ID_TSTx_AnOut_4 4156
 extern int TSTx_AnOut_4;
 int doWrite_TSTx_AnOut_4(int value);
 int addWrite_TSTx_AnOut_4(int value);
 int getStatus_TSTx_AnOut_4();
  
-#define ID_VALx_AnOut_1 4173
+#define ID_VALx_AnOut_1 4157
 extern int16_t VALx_AnOut_1;
 int doWrite_VALx_AnOut_1(int16_t value);
 int addWrite_VALx_AnOut_1(int16_t value);
 int getStatus_VALx_AnOut_1();
  
-#define ID_VALx_AnOut_2 4174
+#define ID_VALx_AnOut_2 4158
 extern int16_t VALx_AnOut_2;
 int doWrite_VALx_AnOut_2(int16_t value);
 int addWrite_VALx_AnOut_2(int16_t value);
 int getStatus_VALx_AnOut_2();
  
-#define ID_VALx_AnOut_3 4175
+#define ID_VALx_AnOut_3 4159
 extern int16_t VALx_AnOut_3;
 int doWrite_VALx_AnOut_3(int16_t value);
 int addWrite_VALx_AnOut_3(int16_t value);
 int getStatus_VALx_AnOut_3();
  
-#define ID_VALx_AnOut_4 4176
+#define ID_VALx_AnOut_4 4160
 extern int16_t VALx_AnOut_4;
 int doWrite_VALx_AnOut_4(int16_t value);
 int addWrite_VALx_AnOut_4(int16_t value);
 int getStatus_VALx_AnOut_4();
  
-#define ID_VALx_AnOutConf_1 4177
+#define ID_VALx_AnOutConf_1 4161
 extern u_int16_t VALx_AnOutConf_1;
 int doWrite_VALx_AnOutConf_1(u_int16_t value);
 int addWrite_VALx_AnOutConf_1(u_int16_t value);
 int getStatus_VALx_AnOutConf_1();
  
-#define ID_VALx_AnOutConf_2 4178
+#define ID_VALx_AnOutConf_2 4162
 extern u_int16_t VALx_AnOutConf_2;
 int doWrite_VALx_AnOutConf_2(u_int16_t value);
 int addWrite_VALx_AnOutConf_2(u_int16_t value);
 int getStatus_VALx_AnOutConf_2();
  
-#define ID_VALx_AnOutConf_3 4179
+#define ID_VALx_AnOutConf_3 4163
 extern u_int16_t VALx_AnOutConf_3;
 int doWrite_VALx_AnOutConf_3(u_int16_t value);
 int addWrite_VALx_AnOutConf_3(u_int16_t value);
 int getStatus_VALx_AnOutConf_3();
  
-#define ID_VALx_AnOutConf_4 4180
+#define ID_VALx_AnOutConf_4 4164
 extern u_int16_t VALx_AnOutConf_4;
 int doWrite_VALx_AnOutConf_4(u_int16_t value);
 int addWrite_VALx_AnOutConf_4(u_int16_t value);
 int getStatus_VALx_AnOutConf_4();
  
-#define ID_RESx_AnOutStts_1 4181
+#define ID_RESx_AnOutStts_1 4165
 extern int16_t RESx_AnOutStts_1;
 int doWrite_RESx_AnOutStts_1(int16_t value);
 int addWrite_RESx_AnOutStts_1(int16_t value);
 int getStatus_RESx_AnOutStts_1();
  
-#define ID_RESx_AnOutStts_2 4182
+#define ID_RESx_AnOutStts_2 4166
 extern int16_t RESx_AnOutStts_2;
 int doWrite_RESx_AnOutStts_2(int16_t value);
 int addWrite_RESx_AnOutStts_2(int16_t value);
 int getStatus_RESx_AnOutStts_2();
  
-#define ID_RESx_AnOutStts_3 4183
+#define ID_RESx_AnOutStts_3 4167
 extern int16_t RESx_AnOutStts_3;
 int doWrite_RESx_AnOutStts_3(int16_t value);
 int addWrite_RESx_AnOutStts_3(int16_t value);
 int getStatus_RESx_AnOutStts_3();
  
-#define ID_RESx_AnOutStts_4 4184
+#define ID_RESx_AnOutStts_4 4168
 extern int16_t RESx_AnOutStts_4;
 int doWrite_RESx_AnOutStts_4(int16_t value);
 int addWrite_RESx_AnOutStts_4(int16_t value);
 int getStatus_RESx_AnOutStts_4();
  
-#define ID_TSTx_Tamb 4185
+#define ID_TSTx_Tamb 4169
 extern int TSTx_Tamb;
 int doWrite_TSTx_Tamb(int value);
 int addWrite_TSTx_Tamb(int value);
 int getStatus_TSTx_Tamb();
  
-#define ID_TSTx_RPM 4186
+#define ID_TSTx_RPM 4170
 extern int TSTx_RPM;
 int doWrite_TSTx_RPM(int value);
 int addWrite_TSTx_RPM(int value);
 int getStatus_TSTx_RPM();
  
-#define ID_TSTx_FWrevision 4187
+#define ID_TSTx_FWrevision 4171
 extern int TSTx_FWrevision;
 int doWrite_TSTx_FWrevision(int value);
 int addWrite_TSTx_FWrevision(int value);
 int getStatus_TSTx_FWrevision();
  
-#define ID_TSTx_HWconfig 4188
+#define ID_TSTx_HWconfig 4172
 extern int TSTx_HWconfig;
 int doWrite_TSTx_HWconfig(int value);
 int addWrite_TSTx_HWconfig(int value);
 int getStatus_TSTx_HWconfig();
  
-#define ID_VALx_Tamb 4189
+#define ID_VALx_Tamb 4173
 extern int16_t VALx_Tamb;
 int doWrite_VALx_Tamb(int16_t value);
 int addWrite_VALx_Tamb(int16_t value);
 int getStatus_VALx_Tamb();
  
-#define ID_VALx_RPM 4190
+#define ID_VALx_RPM 4174
 extern u_int16_t VALx_RPM;
 int doWrite_VALx_RPM(u_int16_t value);
 int addWrite_VALx_RPM(u_int16_t value);
 int getStatus_VALx_RPM();
  
-#define ID_VALx_FWrevision 4191
+#define ID_VALx_FWrevision 4175
 extern u_int16_t VALx_FWrevision;
 int doWrite_VALx_FWrevision(u_int16_t value);
 int addWrite_VALx_FWrevision(u_int16_t value);
 int getStatus_VALx_FWrevision();
  
-#define ID_VALx_HWconfig 4192
+#define ID_VALx_HWconfig 4176
 extern u_int16_t VALx_HWconfig;
 int doWrite_VALx_HWconfig(u_int16_t value);
 int addWrite_VALx_HWconfig(u_int16_t value);
 int getStatus_VALx_HWconfig();
  
-#define ID_RESx_Tamb 4193
+#define ID_RESx_Tamb 4177
 extern int16_t RESx_Tamb;
 int doWrite_RESx_Tamb(int16_t value);
 int addWrite_RESx_Tamb(int16_t value);
 int getStatus_RESx_Tamb();
  
-#define ID_RESx_RPM 4194
+#define ID_RESx_RPM 4178
 extern u_int16_t RESx_RPM;
 int doWrite_RESx_RPM(u_int16_t value);
 int addWrite_RESx_RPM(u_int16_t value);
 int getStatus_RESx_RPM();
  
-#define ID_RESx_FWrevision 4195
+#define ID_RESx_FWrevision 4179
 extern u_int16_t RESx_FWrevision;
 int doWrite_RESx_FWrevision(u_int16_t value);
 int addWrite_RESx_FWrevision(u_int16_t value);
 int getStatus_RESx_FWrevision();
  
-#define ID_RESx_HWconfig 4196
+#define ID_RESx_HWconfig 4180
 extern u_int16_t RESx_HWconfig;
 int doWrite_RESx_HWconfig(u_int16_t value);
 int addWrite_RESx_HWconfig(u_int16_t value);
 int getStatus_RESx_HWconfig();
  
-#define ID_TSTx_RTUS_WR 4197
+#define ID_TSTx_RTUS_WR 4181
 extern int TSTx_RTUS_WR;
 int doWrite_TSTx_RTUS_WR(int value);
 int addWrite_TSTx_RTUS_WR(int value);
 int getStatus_TSTx_RTUS_WR();
  
-#define ID_TSTx_RTUS_RD 4198
+#define ID_TSTx_RTUS_RD 4182
 extern int TSTx_RTUS_RD;
 int doWrite_TSTx_RTUS_RD(int value);
 int addWrite_TSTx_RTUS_RD(int value);
 int getStatus_TSTx_RTUS_RD();
  
-#define ID_TSTx_RTU1_WR 4199
+#define ID_TSTx_RTU1_WR 4183
 extern int TSTx_RTU1_WR;
 int doWrite_TSTx_RTU1_WR(int value);
 int addWrite_TSTx_RTU1_WR(int value);
 int getStatus_TSTx_RTU1_WR();
  
-#define ID_TSTx_RTU1_RD 4200
+#define ID_TSTx_RTU1_RD 4184
 extern int TSTx_RTU1_RD;
 int doWrite_TSTx_RTU1_RD(int value);
 int addWrite_TSTx_RTU1_RD(int value);
 int getStatus_TSTx_RTU1_RD();
  
-#define ID_TSTx_RTU3_WR 4201
+#define ID_TSTx_RTU3_WR 4185
 extern int TSTx_RTU3_WR;
 int doWrite_TSTx_RTU3_WR(int value);
 int addWrite_TSTx_RTU3_WR(int value);
 int getStatus_TSTx_RTU3_WR();
  
-#define ID_TSTx_RTU3_RD 4202
+#define ID_TSTx_RTU3_RD 4186
 extern int TSTx_RTU3_RD;
 int doWrite_TSTx_RTU3_RD(int value);
 int addWrite_TSTx_RTU3_RD(int value);
 int getStatus_TSTx_RTU3_RD();
  
-#define ID_TSTx_CAN1_WR 4203
+#define ID_TSTx_CAN1_WR 4187
 extern int TSTx_CAN1_WR;
 int doWrite_TSTx_CAN1_WR(int value);
 int addWrite_TSTx_CAN1_WR(int value);
 int getStatus_TSTx_CAN1_WR();
  
-#define ID_TSTx_CAN1_RD 4204
+#define ID_TSTx_CAN1_RD 4188
 extern int TSTx_CAN1_RD;
 int doWrite_TSTx_CAN1_RD(int value);
 int addWrite_TSTx_CAN1_RD(int value);
 int getStatus_TSTx_CAN1_RD();
  
-#define ID_VALx_RTUS_WR 4205
+#define ID_VALx_RTUS_WR 4189
 extern int VALx_RTUS_WR;
 int doWrite_VALx_RTUS_WR(int value);
 int addWrite_VALx_RTUS_WR(int value);
 int getStatus_VALx_RTUS_WR();
  
-#define ID_VALx_RTUS_RD 4206
+#define ID_VALx_RTUS_RD 4190
 extern int VALx_RTUS_RD;
 int doWrite_VALx_RTUS_RD(int value);
 int addWrite_VALx_RTUS_RD(int value);
 int getStatus_VALx_RTUS_RD();
  
-#define ID_VALx_RTU1_WR 4207
+#define ID_VALx_RTU1_WR 4191
 extern int VALx_RTU1_WR;
 int doWrite_VALx_RTU1_WR(int value);
 int addWrite_VALx_RTU1_WR(int value);
 int getStatus_VALx_RTU1_WR();
  
-#define ID_VALx_RTU1_RD 4208
+#define ID_VALx_RTU1_RD 4192
 extern int VALx_RTU1_RD;
 int doWrite_VALx_RTU1_RD(int value);
 int addWrite_VALx_RTU1_RD(int value);
 int getStatus_VALx_RTU1_RD();
  
-#define ID_VALx_RTU3_WR 4209
+#define ID_VALx_RTU3_WR 4193
 extern int VALx_RTU3_WR;
 int doWrite_VALx_RTU3_WR(int value);
 int addWrite_VALx_RTU3_WR(int value);
 int getStatus_VALx_RTU3_WR();
  
-#define ID_VALx_RTU3_RD 4210
+#define ID_VALx_RTU3_RD 4194
 extern int VALx_RTU3_RD;
 int doWrite_VALx_RTU3_RD(int value);
 int addWrite_VALx_RTU3_RD(int value);
 int getStatus_VALx_RTU3_RD();
  
-#define ID_VALx_CAN1_WR 4211
+#define ID_VALx_CAN1_WR 4195
 extern int VALx_CAN1_WR;
 int doWrite_VALx_CAN1_WR(int value);
 int addWrite_VALx_CAN1_WR(int value);
 int getStatus_VALx_CAN1_WR();
  
-#define ID_VALx_CAN1_RD 4212
+#define ID_VALx_CAN1_RD 4196
 extern int VALx_CAN1_RD;
 int doWrite_VALx_CAN1_RD(int value);
 int addWrite_VALx_CAN1_RD(int value);
 int getStatus_VALx_CAN1_RD();
  
-#define ID_RESx_RTUS_WR 4213
+#define ID_RESx_RTUS_WR 4197
 extern int RESx_RTUS_WR;
 int doWrite_RESx_RTUS_WR(int value);
 int addWrite_RESx_RTUS_WR(int value);
 int getStatus_RESx_RTUS_WR();
  
-#define ID_RESx_RTUS_RD 4214
+#define ID_RESx_RTUS_RD 4198
 extern int RESx_RTUS_RD;
 int doWrite_RESx_RTUS_RD(int value);
 int addWrite_RESx_RTUS_RD(int value);
 int getStatus_RESx_RTUS_RD();
  
-#define ID_RESx_RTU1_WR 4215
+#define ID_RESx_RTU1_WR 4199
 extern int RESx_RTU1_WR;
 int doWrite_RESx_RTU1_WR(int value);
 int addWrite_RESx_RTU1_WR(int value);
 int getStatus_RESx_RTU1_WR();
  
-#define ID_RESx_RTU1_RD 4216
+#define ID_RESx_RTU1_RD 4200
 extern int RESx_RTU1_RD;
 int doWrite_RESx_RTU1_RD(int value);
 int addWrite_RESx_RTU1_RD(int value);
 int getStatus_RESx_RTU1_RD();
  
-#define ID_RESx_RTU3_WR 4217
+#define ID_RESx_RTU3_WR 4201
 extern int RESx_RTU3_WR;
 int doWrite_RESx_RTU3_WR(int value);
 int addWrite_RESx_RTU3_WR(int value);
 int getStatus_RESx_RTU3_WR();
  
-#define ID_RESx_RTU3_RD 4218
+#define ID_RESx_RTU3_RD 4202
 extern int RESx_RTU3_RD;
 int doWrite_RESx_RTU3_RD(int value);
 int addWrite_RESx_RTU3_RD(int value);
 int getStatus_RESx_RTU3_RD();
  
-#define ID_RESx_CAN1_WR 4219
+#define ID_RESx_CAN1_WR 4203
 extern int RESx_CAN1_WR;
 int doWrite_RESx_CAN1_WR(int value);
 int addWrite_RESx_CAN1_WR(int value);
 int getStatus_RESx_CAN1_WR();
  
-#define ID_RESx_CAN1_RD 4220
+#define ID_RESx_CAN1_RD 4204
 extern int RESx_CAN1_RD;
 int doWrite_RESx_CAN1_RD(int value);
 int addWrite_RESx_CAN1_RD(int value);
 int getStatus_RESx_CAN1_RD();
  
-#define ID_STATUSx_LOCAL 4221
-extern int STATUSx_LOCAL;
-int doWrite_STATUSx_LOCAL(int value);
-int addWrite_STATUSx_LOCAL(int value);
-int getStatus_STATUSx_LOCAL();
- 
-#define ID_STATUSx_REMOTE 4222
-extern int STATUSx_REMOTE;
-int doWrite_STATUSx_REMOTE(int value);
-int addWrite_STATUSx_REMOTE(int value);
-int getStatus_STATUSx_REMOTE();
- 
-#define ID_STATUSx_DONE 4223
-extern int STATUSx_DONE;
-int doWrite_STATUSx_DONE(int value);
-int addWrite_STATUSx_DONE(int value);
-int getStatus_STATUSx_DONE();
+#define ID_TESTx_STATUS 4205
+extern u_int16_t TESTx_STATUS;
+int doWrite_TESTx_STATUS(u_int16_t value);
+int addWrite_TESTx_STATUS(u_int16_t value);
+int getStatus_TESTx_STATUS();
  
 #define ID_RTU_DigIn_1 5000
 extern int RTU_DigIn_1;

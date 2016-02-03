@@ -12,8 +12,7 @@ DWORD_BIT <-> int
 #include "crosstable.h"
 #include "cross_table_utility.h"
  
-int START_REMOTE = 0;
-int START_TEST = 0;
+u_int16_t TEST_COMMAND = 0;
 int TST_DigIn_1 = 0;
 int TST_DigIn_2 = 0;
 int TST_DigIn_3 = 0;
@@ -94,22 +93,6 @@ int VAL_DigOut_13 = 0;
 int VAL_DigOut_14 = 0;
 int VAL_DigOut_15 = 0;
 int VAL_DigOut_16 = 0;
-int RES_DigOut_1 = 0;
-int RES_DigOut_2 = 0;
-int RES_DigOut_3 = 0;
-int RES_DigOut_4 = 0;
-int RES_DigOut_5 = 0;
-int RES_DigOut_6 = 0;
-int RES_DigOut_7 = 0;
-int RES_DigOut_8 = 0;
-int RES_DigOut_9 = 0;
-int RES_DigOut_10 = 0;
-int RES_DigOut_11 = 0;
-int RES_DigOut_12 = 0;
-int RES_DigOut_13 = 0;
-int RES_DigOut_14 = 0;
-int RES_DigOut_15 = 0;
-int RES_DigOut_16 = 0;
 int TST_AnIn_1 = 0;
 int TST_AnIn_2 = 0;
 int TST_AnIn_3 = 0;
@@ -234,9 +217,7 @@ int RES_RTU3_WR = 0;
 int RES_RTU3_RD = 0;
 int RES_CAN_WR = 0;
 int RES_CAN_RD = 0;
-int STATUS_LOCAL = 0;
-int STATUS_REMOTE = 0;
-int STATUS_DONE = 0;
+u_int16_t TEST_STATUS = 0;
 int PLC_DigIn_1 = 0;
 int PLC_DigIn_2 = 0;
 int PLC_DigIn_3 = 0;
@@ -292,39 +273,21 @@ float PLC_timeMax = 0;
 float PLC_timeWin = 0;
 
 
-int doWrite_START_REMOTE(int value)
+int doWrite_TEST_COMMAND(u_int16_t value)
 {
-return doWrite(ID_START_REMOTE,  &value);
+return doWrite(ID_TEST_COMMAND,  &value);
 }
 
 
-int addWrite_START_REMOTE(int value)
+int addWrite_TEST_COMMAND(u_int16_t value)
 {
-return addWrite(ID_START_REMOTE, &value);
+return addWrite(ID_TEST_COMMAND, &value);
 }
 
 
-int getStatus_START_REMOTE()
+int getStatus_TEST_COMMAND()
 {
-return getStatus(ID_START_REMOTE);
-}
-
-
-int doWrite_START_TEST(int value)
-{
-return doWrite(ID_START_TEST,  &value);
-}
-
-
-int addWrite_START_TEST(int value)
-{
-return addWrite(ID_START_TEST, &value);
-}
-
-
-int getStatus_START_TEST()
-{
-return getStatus(ID_START_TEST);
+return getStatus(ID_TEST_COMMAND);
 }
 
 
@@ -1765,294 +1728,6 @@ return addWrite(ID_VAL_DigOut_16, &value);
 int getStatus_VAL_DigOut_16()
 {
 return getStatus(ID_VAL_DigOut_16);
-}
-
-
-int doWrite_RES_DigOut_1(int value)
-{
-return doWrite(ID_RES_DigOut_1,  &value);
-}
-
-
-int addWrite_RES_DigOut_1(int value)
-{
-return addWrite(ID_RES_DigOut_1, &value);
-}
-
-
-int getStatus_RES_DigOut_1()
-{
-return getStatus(ID_RES_DigOut_1);
-}
-
-
-int doWrite_RES_DigOut_2(int value)
-{
-return doWrite(ID_RES_DigOut_2,  &value);
-}
-
-
-int addWrite_RES_DigOut_2(int value)
-{
-return addWrite(ID_RES_DigOut_2, &value);
-}
-
-
-int getStatus_RES_DigOut_2()
-{
-return getStatus(ID_RES_DigOut_2);
-}
-
-
-int doWrite_RES_DigOut_3(int value)
-{
-return doWrite(ID_RES_DigOut_3,  &value);
-}
-
-
-int addWrite_RES_DigOut_3(int value)
-{
-return addWrite(ID_RES_DigOut_3, &value);
-}
-
-
-int getStatus_RES_DigOut_3()
-{
-return getStatus(ID_RES_DigOut_3);
-}
-
-
-int doWrite_RES_DigOut_4(int value)
-{
-return doWrite(ID_RES_DigOut_4,  &value);
-}
-
-
-int addWrite_RES_DigOut_4(int value)
-{
-return addWrite(ID_RES_DigOut_4, &value);
-}
-
-
-int getStatus_RES_DigOut_4()
-{
-return getStatus(ID_RES_DigOut_4);
-}
-
-
-int doWrite_RES_DigOut_5(int value)
-{
-return doWrite(ID_RES_DigOut_5,  &value);
-}
-
-
-int addWrite_RES_DigOut_5(int value)
-{
-return addWrite(ID_RES_DigOut_5, &value);
-}
-
-
-int getStatus_RES_DigOut_5()
-{
-return getStatus(ID_RES_DigOut_5);
-}
-
-
-int doWrite_RES_DigOut_6(int value)
-{
-return doWrite(ID_RES_DigOut_6,  &value);
-}
-
-
-int addWrite_RES_DigOut_6(int value)
-{
-return addWrite(ID_RES_DigOut_6, &value);
-}
-
-
-int getStatus_RES_DigOut_6()
-{
-return getStatus(ID_RES_DigOut_6);
-}
-
-
-int doWrite_RES_DigOut_7(int value)
-{
-return doWrite(ID_RES_DigOut_7,  &value);
-}
-
-
-int addWrite_RES_DigOut_7(int value)
-{
-return addWrite(ID_RES_DigOut_7, &value);
-}
-
-
-int getStatus_RES_DigOut_7()
-{
-return getStatus(ID_RES_DigOut_7);
-}
-
-
-int doWrite_RES_DigOut_8(int value)
-{
-return doWrite(ID_RES_DigOut_8,  &value);
-}
-
-
-int addWrite_RES_DigOut_8(int value)
-{
-return addWrite(ID_RES_DigOut_8, &value);
-}
-
-
-int getStatus_RES_DigOut_8()
-{
-return getStatus(ID_RES_DigOut_8);
-}
-
-
-int doWrite_RES_DigOut_9(int value)
-{
-return doWrite(ID_RES_DigOut_9,  &value);
-}
-
-
-int addWrite_RES_DigOut_9(int value)
-{
-return addWrite(ID_RES_DigOut_9, &value);
-}
-
-
-int getStatus_RES_DigOut_9()
-{
-return getStatus(ID_RES_DigOut_9);
-}
-
-
-int doWrite_RES_DigOut_10(int value)
-{
-return doWrite(ID_RES_DigOut_10,  &value);
-}
-
-
-int addWrite_RES_DigOut_10(int value)
-{
-return addWrite(ID_RES_DigOut_10, &value);
-}
-
-
-int getStatus_RES_DigOut_10()
-{
-return getStatus(ID_RES_DigOut_10);
-}
-
-
-int doWrite_RES_DigOut_11(int value)
-{
-return doWrite(ID_RES_DigOut_11,  &value);
-}
-
-
-int addWrite_RES_DigOut_11(int value)
-{
-return addWrite(ID_RES_DigOut_11, &value);
-}
-
-
-int getStatus_RES_DigOut_11()
-{
-return getStatus(ID_RES_DigOut_11);
-}
-
-
-int doWrite_RES_DigOut_12(int value)
-{
-return doWrite(ID_RES_DigOut_12,  &value);
-}
-
-
-int addWrite_RES_DigOut_12(int value)
-{
-return addWrite(ID_RES_DigOut_12, &value);
-}
-
-
-int getStatus_RES_DigOut_12()
-{
-return getStatus(ID_RES_DigOut_12);
-}
-
-
-int doWrite_RES_DigOut_13(int value)
-{
-return doWrite(ID_RES_DigOut_13,  &value);
-}
-
-
-int addWrite_RES_DigOut_13(int value)
-{
-return addWrite(ID_RES_DigOut_13, &value);
-}
-
-
-int getStatus_RES_DigOut_13()
-{
-return getStatus(ID_RES_DigOut_13);
-}
-
-
-int doWrite_RES_DigOut_14(int value)
-{
-return doWrite(ID_RES_DigOut_14,  &value);
-}
-
-
-int addWrite_RES_DigOut_14(int value)
-{
-return addWrite(ID_RES_DigOut_14, &value);
-}
-
-
-int getStatus_RES_DigOut_14()
-{
-return getStatus(ID_RES_DigOut_14);
-}
-
-
-int doWrite_RES_DigOut_15(int value)
-{
-return doWrite(ID_RES_DigOut_15,  &value);
-}
-
-
-int addWrite_RES_DigOut_15(int value)
-{
-return addWrite(ID_RES_DigOut_15, &value);
-}
-
-
-int getStatus_RES_DigOut_15()
-{
-return getStatus(ID_RES_DigOut_15);
-}
-
-
-int doWrite_RES_DigOut_16(int value)
-{
-return doWrite(ID_RES_DigOut_16,  &value);
-}
-
-
-int addWrite_RES_DigOut_16(int value)
-{
-return addWrite(ID_RES_DigOut_16, &value);
-}
-
-
-int getStatus_RES_DigOut_16()
-{
-return getStatus(ID_RES_DigOut_16);
 }
 
 
@@ -4288,57 +3963,21 @@ return getStatus(ID_RES_CAN_RD);
 }
 
 
-int doWrite_STATUS_LOCAL(int value)
+int doWrite_TEST_STATUS(u_int16_t value)
 {
-return doWrite(ID_STATUS_LOCAL,  &value);
+return doWrite(ID_TEST_STATUS,  &value);
 }
 
 
-int addWrite_STATUS_LOCAL(int value)
+int addWrite_TEST_STATUS(u_int16_t value)
 {
-return addWrite(ID_STATUS_LOCAL, &value);
+return addWrite(ID_TEST_STATUS, &value);
 }
 
 
-int getStatus_STATUS_LOCAL()
+int getStatus_TEST_STATUS()
 {
-return getStatus(ID_STATUS_LOCAL);
-}
-
-
-int doWrite_STATUS_REMOTE(int value)
-{
-return doWrite(ID_STATUS_REMOTE,  &value);
-}
-
-
-int addWrite_STATUS_REMOTE(int value)
-{
-return addWrite(ID_STATUS_REMOTE, &value);
-}
-
-
-int getStatus_STATUS_REMOTE()
-{
-return getStatus(ID_STATUS_REMOTE);
-}
-
-
-int doWrite_STATUS_DONE(int value)
-{
-return doWrite(ID_STATUS_DONE,  &value);
-}
-
-
-int addWrite_STATUS_DONE(int value)
-{
-return addWrite(ID_STATUS_DONE, &value);
-}
-
-
-int getStatus_STATUS_DONE()
-{
-return getStatus(ID_STATUS_DONE);
+return getStatus(ID_TEST_STATUS);
 }
 
 
@@ -5299,8 +4938,7 @@ return getStatus(ID_PLC_timeWin);
 int update_all(void)
 {
 int retval = 0;
-retval += readFromDb(ID_START_REMOTE, &START_REMOTE);
-retval += readFromDb(ID_START_TEST, &START_TEST);
+retval += readFromDb(ID_TEST_COMMAND, &TEST_COMMAND);
 retval += readFromDb(ID_TST_DigIn_1, &TST_DigIn_1);
 retval += readFromDb(ID_TST_DigIn_2, &TST_DigIn_2);
 retval += readFromDb(ID_TST_DigIn_3, &TST_DigIn_3);
@@ -5381,22 +5019,6 @@ retval += readFromDb(ID_VAL_DigOut_13, &VAL_DigOut_13);
 retval += readFromDb(ID_VAL_DigOut_14, &VAL_DigOut_14);
 retval += readFromDb(ID_VAL_DigOut_15, &VAL_DigOut_15);
 retval += readFromDb(ID_VAL_DigOut_16, &VAL_DigOut_16);
-retval += readFromDb(ID_RES_DigOut_1, &RES_DigOut_1);
-retval += readFromDb(ID_RES_DigOut_2, &RES_DigOut_2);
-retval += readFromDb(ID_RES_DigOut_3, &RES_DigOut_3);
-retval += readFromDb(ID_RES_DigOut_4, &RES_DigOut_4);
-retval += readFromDb(ID_RES_DigOut_5, &RES_DigOut_5);
-retval += readFromDb(ID_RES_DigOut_6, &RES_DigOut_6);
-retval += readFromDb(ID_RES_DigOut_7, &RES_DigOut_7);
-retval += readFromDb(ID_RES_DigOut_8, &RES_DigOut_8);
-retval += readFromDb(ID_RES_DigOut_9, &RES_DigOut_9);
-retval += readFromDb(ID_RES_DigOut_10, &RES_DigOut_10);
-retval += readFromDb(ID_RES_DigOut_11, &RES_DigOut_11);
-retval += readFromDb(ID_RES_DigOut_12, &RES_DigOut_12);
-retval += readFromDb(ID_RES_DigOut_13, &RES_DigOut_13);
-retval += readFromDb(ID_RES_DigOut_14, &RES_DigOut_14);
-retval += readFromDb(ID_RES_DigOut_15, &RES_DigOut_15);
-retval += readFromDb(ID_RES_DigOut_16, &RES_DigOut_16);
 retval += readFromDb(ID_TST_AnIn_1, &TST_AnIn_1);
 retval += readFromDb(ID_TST_AnIn_2, &TST_AnIn_2);
 retval += readFromDb(ID_TST_AnIn_3, &TST_AnIn_3);
@@ -5521,9 +5143,7 @@ retval += readFromDb(ID_RES_RTU3_WR, &RES_RTU3_WR);
 retval += readFromDb(ID_RES_RTU3_RD, &RES_RTU3_RD);
 retval += readFromDb(ID_RES_CAN_WR, &RES_CAN_WR);
 retval += readFromDb(ID_RES_CAN_RD, &RES_CAN_RD);
-retval += readFromDb(ID_STATUS_LOCAL, &STATUS_LOCAL);
-retval += readFromDb(ID_STATUS_REMOTE, &STATUS_REMOTE);
-retval += readFromDb(ID_STATUS_DONE, &STATUS_DONE);
+retval += readFromDb(ID_TEST_STATUS, &TEST_STATUS);
 retval += readFromDb(ID_PLC_DigIn_1, &PLC_DigIn_1);
 retval += readFromDb(ID_PLC_DigIn_2, &PLC_DigIn_2);
 retval += readFromDb(ID_PLC_DigIn_3, &PLC_DigIn_3);

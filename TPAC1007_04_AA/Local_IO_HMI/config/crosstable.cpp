@@ -12,8 +12,7 @@ DWORD_BIT <-> int
 #include "crosstable.h"
 #include "cross_table_utility.h"
  
-int START_REMOTE = 0;
-int START_TEST = 0;
+u_int16_t TEST_COMMAND = 0;
 int TST_DigIn_1 = 0;
 int TST_DigIn_2 = 0;
 int TST_DigIn_3 = 0;
@@ -218,9 +217,7 @@ int RES_RTU3_WR = 0;
 int RES_RTU3_RD = 0;
 int RES_CAN_WR = 0;
 int RES_CAN_RD = 0;
-int STATUS_LOCAL = 0;
-int STATUS_REMOTE = 0;
-int STATUS_DONE = 0;
+u_int16_t TEST_STATUS = 0;
 u_int16_t PLC_FWrevision = 0;
 u_int16_t PLC_HWconfig = 0;
 int PLC_DigDir_1 = 0;
@@ -281,39 +278,21 @@ float PLC_timeMax = 0;
 float PLC_timeWin = 0;
 
 
-int doWrite_START_REMOTE(int value)
+int doWrite_TEST_COMMAND(u_int16_t value)
 {
-return doWrite(ID_START_REMOTE,  &value);
+return doWrite(ID_TEST_COMMAND,  &value);
 }
 
 
-int addWrite_START_REMOTE(int value)
+int addWrite_TEST_COMMAND(u_int16_t value)
 {
-return addWrite(ID_START_REMOTE, &value);
+return addWrite(ID_TEST_COMMAND, &value);
 }
 
 
-int getStatus_START_REMOTE()
+int getStatus_TEST_COMMAND()
 {
-return getStatus(ID_START_REMOTE);
-}
-
-
-int doWrite_START_TEST(int value)
-{
-return doWrite(ID_START_TEST,  &value);
-}
-
-
-int addWrite_START_TEST(int value)
-{
-return addWrite(ID_START_TEST, &value);
-}
-
-
-int getStatus_START_TEST()
-{
-return getStatus(ID_START_TEST);
+return getStatus(ID_TEST_COMMAND);
 }
 
 
@@ -3989,57 +3968,21 @@ return getStatus(ID_RES_CAN_RD);
 }
 
 
-int doWrite_STATUS_LOCAL(int value)
+int doWrite_TEST_STATUS(u_int16_t value)
 {
-return doWrite(ID_STATUS_LOCAL,  &value);
+return doWrite(ID_TEST_STATUS,  &value);
 }
 
 
-int addWrite_STATUS_LOCAL(int value)
+int addWrite_TEST_STATUS(u_int16_t value)
 {
-return addWrite(ID_STATUS_LOCAL, &value);
+return addWrite(ID_TEST_STATUS, &value);
 }
 
 
-int getStatus_STATUS_LOCAL()
+int getStatus_TEST_STATUS()
 {
-return getStatus(ID_STATUS_LOCAL);
-}
-
-
-int doWrite_STATUS_REMOTE(int value)
-{
-return doWrite(ID_STATUS_REMOTE,  &value);
-}
-
-
-int addWrite_STATUS_REMOTE(int value)
-{
-return addWrite(ID_STATUS_REMOTE, &value);
-}
-
-
-int getStatus_STATUS_REMOTE()
-{
-return getStatus(ID_STATUS_REMOTE);
-}
-
-
-int doWrite_STATUS_DONE(int value)
-{
-return doWrite(ID_STATUS_DONE,  &value);
-}
-
-
-int addWrite_STATUS_DONE(int value)
-{
-return addWrite(ID_STATUS_DONE, &value);
-}
-
-
-int getStatus_STATUS_DONE()
-{
-return getStatus(ID_STATUS_DONE);
+return getStatus(ID_TEST_STATUS);
 }
 
 
@@ -5090,8 +5033,7 @@ return getStatus(ID_PLC_timeWin);
 int update_all(void)
 {
 int retval = 0;
-retval += readFromDb(ID_START_REMOTE, &START_REMOTE);
-retval += readFromDb(ID_START_TEST, &START_TEST);
+retval += readFromDb(ID_TEST_COMMAND, &TEST_COMMAND);
 retval += readFromDb(ID_TST_DigIn_1, &TST_DigIn_1);
 retval += readFromDb(ID_TST_DigIn_2, &TST_DigIn_2);
 retval += readFromDb(ID_TST_DigIn_3, &TST_DigIn_3);
@@ -5296,9 +5238,7 @@ retval += readFromDb(ID_RES_RTU3_WR, &RES_RTU3_WR);
 retval += readFromDb(ID_RES_RTU3_RD, &RES_RTU3_RD);
 retval += readFromDb(ID_RES_CAN_WR, &RES_CAN_WR);
 retval += readFromDb(ID_RES_CAN_RD, &RES_CAN_RD);
-retval += readFromDb(ID_STATUS_LOCAL, &STATUS_LOCAL);
-retval += readFromDb(ID_STATUS_REMOTE, &STATUS_REMOTE);
-retval += readFromDb(ID_STATUS_DONE, &STATUS_DONE);
+retval += readFromDb(ID_TEST_STATUS, &TEST_STATUS);
 retval += readFromDb(ID_PLC_FWrevision, &PLC_FWrevision);
 retval += readFromDb(ID_PLC_HWconfig, &PLC_HWconfig);
 retval += readFromDb(ID_PLC_DigDir_1, &PLC_DigDir_1);

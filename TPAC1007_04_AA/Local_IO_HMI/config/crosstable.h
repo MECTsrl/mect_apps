@@ -16,17 +16,11 @@ extern "C" {
 #endif
 #include <sys/types.h>
  
-#define ID_START_REMOTE 3999
-extern int START_REMOTE;
-int doWrite_START_REMOTE(int value);
-int addWrite_START_REMOTE(int value);
-int getStatus_START_REMOTE();
- 
-#define ID_START_TEST 4000
-extern int START_TEST;
-int doWrite_START_TEST(int value);
-int addWrite_START_TEST(int value);
-int getStatus_START_TEST();
+#define ID_TEST_COMMAND 4000
+extern u_int16_t TEST_COMMAND;
+int doWrite_TEST_COMMAND(u_int16_t value);
+int addWrite_TEST_COMMAND(u_int16_t value);
+int getStatus_TEST_COMMAND();
  
 #define ID_TST_DigIn_1 4001
 extern int TST_DigIn_1;
@@ -1252,23 +1246,11 @@ int doWrite_RES_CAN_RD(int value);
 int addWrite_RES_CAN_RD(int value);
 int getStatus_RES_CAN_RD();
  
-#define ID_STATUS_LOCAL 4205
-extern int STATUS_LOCAL;
-int doWrite_STATUS_LOCAL(int value);
-int addWrite_STATUS_LOCAL(int value);
-int getStatus_STATUS_LOCAL();
- 
-#define ID_STATUS_REMOTE 4206
-extern int STATUS_REMOTE;
-int doWrite_STATUS_REMOTE(int value);
-int addWrite_STATUS_REMOTE(int value);
-int getStatus_STATUS_REMOTE();
- 
-#define ID_STATUS_DONE 4207
-extern int STATUS_DONE;
-int doWrite_STATUS_DONE(int value);
-int addWrite_STATUS_DONE(int value);
-int getStatus_STATUS_DONE();
+#define ID_TEST_STATUS 4205
+extern u_int16_t TEST_STATUS;
+int doWrite_TEST_STATUS(u_int16_t value);
+int addWrite_TEST_STATUS(u_int16_t value);
+int getStatus_TEST_STATUS();
  
 #define ID_PLC_FWrevision 5300
 extern u_int16_t PLC_FWrevision;
