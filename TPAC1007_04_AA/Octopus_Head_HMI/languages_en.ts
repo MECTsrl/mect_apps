@@ -1410,6 +1410,7 @@
         <location filename="page300.ui" line="1134"/>
         <location filename="page300.ui" line="1170"/>
         <location filename="page300.ui" line="1206"/>
+        <location filename="page300.ui" line="1478"/>
         <source>ATCMled widget</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1428,6 +1429,8 @@
         <location filename="page300.ui" line="870"/>
         <location filename="page300.ui" line="1131"/>
         <location filename="page300.ui" line="1137"/>
+        <location filename="page300.ui" line="1475"/>
+        <location filename="page300.ui" line="1481"/>
         <source>PLC_DigIn_4</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1467,7 +1470,8 @@
     </message>
     <message>
         <location filename="page300.ui" line="851"/>
-        <source>1;1;2;2;3;3;4;4</source>
+        <source>1;1;2;2;3;3;0;-</source>
+        <oldsource>1;1;2;2;3;3;4;4</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>

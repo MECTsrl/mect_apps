@@ -4,7 +4,6 @@
 #include "pagebrowser.h"
 #include "crosstable.h"
 #include "automation.h"
-#include <QDir>
 
 // OCTOPUS STATUS
 #define STATUS_UNKNOWN  999
@@ -17,15 +16,17 @@
 #define STATUS_STOPPING   6
 #define STATUS_ERROR      7
 
-#define RESULT_UNKNOWN  -1
-#define RESULT_NG       0
-#define RESULT_OK       1
-
 // TEST_STATUS
 #define TEST_STATUS_LOCAL  0x0000
 #define TEST_STATUS_REMOTE 0x00D8
 #define TEST_STATUS_DONE   0x002A
 
+// RESULT VALUES
+#define RESULT_UNKNOWN  -1
+#define RESULT_NG       0
+#define RESULT_OK       1
+
+// LOCAL DIGITAL INPUTS
 #define PLC_PWR_SWITCH PLC_DigIn_1
 #define PLC_GO_BUTTON PLC_DigIn_4
 
@@ -46,19 +47,16 @@ static int writeRecipe(int step);
 
 void setup(void)
 {
-    doWrite_PLC_DigDir_1(0); // PLC_PWR_SWITCH
-    doWrite_PLC_DigDir_2(1); // PLC_VPOT_ON
-    doWrite_PLC_DigDir_3(1); // PLC_VCC_ON
-    doWrite_PLC_DigDir_4(0); // PLC_GO_BUTTON
-    doWrite_RTU_AnOutConf_X(5); // ANALOG OUTPUT THRESHOLD
+    doWrite_PLC_DigDir_1(0); // PLC_PWR_SWITCH input
+    doWrite_PLC_DigDir_2(1); // PLC_VPOT_ON output
+    doWrite_PLC_DigDir_3(1); // PLC_VCC_ON output
+    doWrite_PLC_DigDir_4(0); // PLC_GO_BUTTON input
+    doWrite_RTU_AnOutConf_X(500); // ANALOG OUTPUT THRESHOLD
     // reset 2
     doWrite_TEST2_COMMAND(TEST_STATUS_LOCAL);
     // automation entry point
     doWrite_STATUS(STATUS_UNKNOWN);
     doWrite_RESULT(RESULT_UNKNOWN);
-    //
-    doWrite_PRODUCT_ID(10070401);
-    loadRecipe("TPAC1007_4AA", "1");
 }
 
 void loop(void)
@@ -81,7 +79,6 @@ void loop(void)
             doWrite_PLC_DigOut_3(1); // PLC_VCC_ON
             clearPLC();
             doWrite_TEST2_COMMAND(TEST_STATUS_REMOTE);
-            doWrite_TESTx_COMMAND(TEST_STATUS_REMOTE);
             doWrite_TEST_STEP(0);
             doWrite_RESULTS_OK(0);
             doWrite_RESULTS_NG(0);
@@ -94,12 +91,18 @@ void loop(void)
             doWrite_STATUS(STATUS_STOPPING);
             break;
         }
+#if 0
         if (TEST2_STATUS != TEST_STATUS_REMOTE) {
             doWrite_TEST2_COMMAND(TEST_STATUS_REMOTE);
         }
         if (TESTx_STATUS != TEST_STATUS_REMOTE) {
             doWrite_TESTx_COMMAND(TEST_STATUS_REMOTE);
         }
+#else
+        if (PLC_GO_BUTTON) {
+            doWrite_TESTx_COMMAND(TEST_STATUS_REMOTE);
+        }
+#endif
         if (TEST2_STATUS == TEST_STATUS_REMOTE && TESTx_STATUS == TEST_STATUS_REMOTE) {
             doWrite_STATUS(STATUS_READY);
             break;
