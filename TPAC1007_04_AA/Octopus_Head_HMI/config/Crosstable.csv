@@ -190,13 +190,13 @@
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
-1;P;AUTOMATIC       ;BIT      ;0   ;PLC       ;               ;    ;    ;    ;193 ;2   ;[RO]
-1;P;REPEAT          ;BIT      ;0   ;PLC       ;               ;    ;    ;    ;193 ;2   ;[RO]
-1;P;STATUS          ;UINT     ;0   ;PLC       ;               ;    ;    ;    ;195 ;2   ;[RW]
-1;P;RESULT          ;INT      ;0   ;PLC       ;               ;    ;    ;    ;195 ;2   ;[RW]
-1;P;RESULTS_OK      ;UINT     ;0   ;PLC       ;               ;    ;    ;    ;197 ;2   ;[RW]
-1;P;RESULTS_NG      ;UINT     ;0   ;PLC       ;               ;    ;    ;    ;197 ;2   ;[RW]
-;;;;;;;;;;;;
+1;P;AUTOMATIC       ;BIT      ;0   ;PLC       ;               ;    ;    ;    ;193 ;3   ;[RO]
+1;P;DO_REPEAT       ;BIT      ;0   ;PLC       ;               ;    ;    ;    ;193 ;3   ;[RO]
+1;P;DO_RELOAD       ;BIT      ;0   ;PLC       ;               ;    ;    ;    ;193 ;3   ;[RO]
+1;P;STATUS          ;UINT     ;0   ;PLC       ;               ;    ;    ;    ;196 ;2   ;[RW]
+1;P;RESULT          ;INT      ;0   ;PLC       ;               ;    ;    ;    ;196 ;2   ;[RW]
+1;P;RESULTS_OK      ;UINT     ;0   ;PLC       ;               ;    ;    ;    ;198 ;2   ;[RW]
+1;P;RESULTS_NG      ;UINT     ;0   ;PLC       ;               ;    ;    ;    ;198 ;2   ;[RW]
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;

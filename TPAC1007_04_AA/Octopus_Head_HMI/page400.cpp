@@ -12,7 +12,7 @@
 #include "main.h"
 #include "page400.h"
 #include "ui_page400.h"
-#include "automation.h"
+#include "crosstable.h"
 
 /**
  * @brief this macro is used to set the PAGE400 style.
@@ -83,7 +83,3 @@ page400::~page400()
     delete ui;
 }
 
-void page400::on_atcmComboBox_TEST_ID_currentIndexChanged(const QString &arg1)
-{
-    loadRecipe(ui->atcmComboBox_PRODUCT_ID->currentText(), arg1);
-}

@@ -4,6 +4,4 @@
 void setup(void);
 void loop(void);
 
-void loadRecipe(const QString product, QString recipe);
-
 #endif // AUTOMATION_H

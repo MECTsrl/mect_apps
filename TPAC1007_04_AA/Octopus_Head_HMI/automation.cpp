@@ -30,6 +30,16 @@
 #define PLC_PWR_SWITCH PLC_DigIn_1
 #define PLC_GO_BUTTON PLC_DigIn_4
 
+// PRODUCT_NAMES <-- PRODUCT_ID
+#define PRODUCT_MAX 10
+static char product_name[][20] = {
+    "-",
+    "TPAC1007_4AA", "TPAC1007_3", "TPLC100", "TPAC1006", "TPAC1008",
+    "TP1043_485", "TP1043_232", "TP1043_CAN", "9"
+};
+#define RECIPE_MAX 2
+static char recipe_name[][3] = {"-", "1", "2"};
+
 #define abs(v) (((v) > 0)? (v):-(v))
 #define MAX_STEP 64
 QList<u_int16_t> ctIndexList;
@@ -43,6 +53,7 @@ static void writeVAL(void);
 static void readRES(void);
 static void checkOK(void);
 static int allTestedOK(void);
+static void loadRecipe(void);
 static int writeRecipe(int step);
 
 void setup(void)
@@ -83,29 +94,29 @@ void loop(void)
             doWrite_RESULTS_OK(0);
             doWrite_RESULTS_NG(0);
             doWrite_STATUS(STATUS_STARTING);
+            return;
+        }
+        if (DO_RELOAD) {
+            loadRecipe();
+            doWrite_DO_RELOAD(0);
+            sleep(1);
         }
         break;
 
     case STATUS_STARTING:
         if (!PLC_PWR_SWITCH) {
             doWrite_STATUS(STATUS_STOPPING);
-            break;
+            return;
         }
-#if 0
         if (TEST2_STATUS != TEST_STATUS_REMOTE) {
             doWrite_TEST2_COMMAND(TEST_STATUS_REMOTE);
         }
         if (TESTx_STATUS != TEST_STATUS_REMOTE) {
             doWrite_TESTx_COMMAND(TEST_STATUS_REMOTE);
         }
-#else
-        if (PLC_GO_BUTTON) {
-            doWrite_TESTx_COMMAND(TEST_STATUS_REMOTE);
-        }
-#endif
         if (TEST2_STATUS == TEST_STATUS_REMOTE && TESTx_STATUS == TEST_STATUS_REMOTE) {
             doWrite_STATUS(STATUS_READY);
-            break;
+            return;
         }
         break;
 
@@ -114,44 +125,65 @@ void loop(void)
             doWrite_STATUS(STATUS_STOPPING);
             break;
         }
+        if (DO_RELOAD) {
+            loadRecipe();
+            doWrite_DO_RELOAD(0);
+            sleep(1);
+        }
+        if (TEST2_STATUS != TEST_STATUS_REMOTE || TESTx_STATUS != TEST_STATUS_REMOTE) {
+            doWrite_STATUS(STATUS_STARTING);
+            return;
+        }
         if (AUTOMATIC || PLC_GO_BUTTON) {
-            // trivial case
+            int next_step;
             if (TEST_STEP_MAX == 0) {
-                // Nothing to do
-                break;
+                return;
             }
             // next step
-            int next_step = TEST_STEP + 1;
-            if (next_step > TEST_STEP_MAX) {
-                if (!REPEAT) {
-                    break;
+            next_step = TEST_STEP;
+            if (next_step >= TEST_STEP_MAX) {
+                if (DO_REPEAT) {
+                    next_step = 1;
+                } else {
+                    return;
                 }
-                next_step = 1;
+            } else {
+                ++next_step;
             }
             doWrite_TEST_STEP(next_step);
-            if (writeRecipe(next_step - 1) != 0)
-            {
+            if (writeRecipe(next_step - 1) != 0) {
                 doWrite_STATUS(STATUS_ERROR);
-                break;
+                return;
             }
 
             // prepare data
             clearOK();
+            sleep(1);
             clearRES();
+            sleep(1);
             writeTST();
+            sleep(1);
             writeVAL();
+            sleep(1);
             // change state
             doWrite_TEST2_COMMAND(TEST_STATUS_DONE);
             doWrite_TESTx_COMMAND(TEST_STATUS_DONE);
             doWrite_STATUS(STATUS_TESTING);
             substatus = 0;
+            return;
         }
         break;
 
     case STATUS_TESTING:
         if (!PLC_PWR_SWITCH) {
             doWrite_STATUS(STATUS_STOPPING);
-            break;
+            return;
+        }
+        if (TEST2_STATUS != TEST_STATUS_DONE) {
+            doWrite_TEST2_COMMAND(TEST_STATUS_DONE);
+        }
+        if (TESTx_STATUS != TEST_STATUS_DONE) {
+            doWrite_TESTx_COMMAND(TEST_STATUS_DONE);
         }
         if (TEST2_STATUS == TEST_STATUS_DONE && TESTx_STATUS == TEST_STATUS_DONE) {
             switch(substatus++) {
@@ -176,10 +208,8 @@ void loop(void)
                     doWrite_RESULTS_NG(RESULTS_NG + 1);
                 }
                 doWrite_STATUS(STATUS_DONE);
-                break;
-            case 7:
-            case 8:
-                break;
+                sleep(1); // viewing delay for humans
+                return;
             default:
                 ;
             }
@@ -189,13 +219,14 @@ void loop(void)
     case STATUS_ERROR:
         if (!PLC_PWR_SWITCH) {
             doWrite_STATUS(STATUS_STOPPING);
-            break;
+            return;
         }
         if (PLC_GO_BUTTON) {
             doWrite_TEST2_COMMAND(TEST_STATUS_LOCAL);
             doWrite_TESTx_COMMAND(TEST_STATUS_LOCAL);
             doWrite_RESULT(RESULT_UNKNOWN);
             doWrite_STATUS(STATUS_RESETTING);
+            return;
         }
         break;
 
@@ -204,10 +235,7 @@ void loop(void)
             doWrite_STATUS(STATUS_STOPPING);
             break;
         }
-        if (AUTOMATIC || PLC_GO_BUTTON) {
-            if (AUTOMATIC) {
-                sleep(1); // for your eyes only
-            }
+        if ((AUTOMATIC && RESULT == RESULT_OK) || PLC_GO_BUTTON) {
             clearPLC();
             doWrite_RESULT(RESULT_UNKNOWN);
             doWrite_TEST2_COMMAND(TEST_STATUS_REMOTE);
@@ -246,9 +274,16 @@ void loop(void)
  * ...
  * tagm; val1; val2 ... valn
  */
-void loadRecipe(const QString product, const QString recipe)
+static void loadRecipe(void)
 {
-    // read the selected file in the product directory
+    QString product;
+    QString recipe;
+    if (PRODUCT_ID == 0 || PRODUCT_ID >= PRODUCT_MAX
+      || TEST_ID == 0 || TEST_ID >= RECIPE_MAX) {
+        return;
+    }
+    product = QString(product_name[PRODUCT_ID]);
+    recipe = QString(recipe_name[TEST_ID]);
     QString filename = QString(RECIPE_DIR) + QString("/") + product
     + QString("/") + recipe + QString(".csv");
 

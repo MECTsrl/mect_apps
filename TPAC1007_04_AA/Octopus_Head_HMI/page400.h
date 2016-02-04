@@ -28,8 +28,6 @@ public:
     
 private slots:
     void changeEvent(QEvent * event);
-    void on_atcmComboBox_TEST_ID_currentIndexChanged(const QString &arg1);
-
 private:
     Ui::page400 *ui;
 };

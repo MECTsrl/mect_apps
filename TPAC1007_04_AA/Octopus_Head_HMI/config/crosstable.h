@@ -70,31 +70,37 @@ int doWrite_AUTOMATIC(int value);
 int addWrite_AUTOMATIC(int value);
 int getStatus_AUTOMATIC();
  
-#define ID_REPEAT 194
-extern int REPEAT;
-int doWrite_REPEAT(int value);
-int addWrite_REPEAT(int value);
-int getStatus_REPEAT();
+#define ID_DO_REPEAT 194
+extern int DO_REPEAT;
+int doWrite_DO_REPEAT(int value);
+int addWrite_DO_REPEAT(int value);
+int getStatus_DO_REPEAT();
  
-#define ID_STATUS 195
+#define ID_DO_RELOAD 195
+extern int DO_RELOAD;
+int doWrite_DO_RELOAD(int value);
+int addWrite_DO_RELOAD(int value);
+int getStatus_DO_RELOAD();
+ 
+#define ID_STATUS 196
 extern u_int16_t STATUS;
 int doWrite_STATUS(u_int16_t value);
 int addWrite_STATUS(u_int16_t value);
 int getStatus_STATUS();
  
-#define ID_RESULT 196
+#define ID_RESULT 197
 extern int16_t RESULT;
 int doWrite_RESULT(int16_t value);
 int addWrite_RESULT(int16_t value);
 int getStatus_RESULT();
  
-#define ID_RESULTS_OK 197
+#define ID_RESULTS_OK 198
 extern u_int16_t RESULTS_OK;
 int doWrite_RESULTS_OK(u_int16_t value);
 int addWrite_RESULTS_OK(u_int16_t value);
 int getStatus_RESULTS_OK();
  
-#define ID_RESULTS_NG 198
+#define ID_RESULTS_NG 199
 extern u_int16_t RESULTS_NG;
 int doWrite_RESULTS_NG(u_int16_t value);
 int addWrite_RESULTS_NG(u_int16_t value);

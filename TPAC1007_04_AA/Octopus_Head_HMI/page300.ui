@@ -360,16 +360,16 @@
   <widget class="ATCMbutton" name="atcmButton">
    <property name="geometry">
     <rect>
-     <x>0</x>
-     <y>45</y>
-     <width>121</width>
+     <x>49</x>
+     <y>22</y>
+     <width>71</width>
      <height>24</height>
     </rect>
    </property>
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>10</pointsize>
+     <pointsize>9</pointsize>
     </font>
    </property>
    <property name="checkable">
@@ -848,7 +848,7 @@
     <enum>QFrame::Raised</enum>
    </property>
    <property name="mapping">
-    <string>1;1;2;2;3;3;0;-</string>
+    <string>1;1 = Short;2;2 = Long;0;-;4;4</string>
    </property>
   </widget>
   <widget class="ATCMled" name="atcmLed_Idle_8">
@@ -1099,9 +1099,9 @@
   <widget class="QLabel" name="label_Start_7">
    <property name="geometry">
     <rect>
-     <x>23</x>
-     <y>22</y>
-     <width>41</width>
+     <x>20</x>
+     <y>20</y>
+     <width>31</width>
      <height>21</height>
     </rect>
    </property>
@@ -1465,20 +1465,20 @@
   <widget class="ATCMled" name="atcmLed_Idle_10">
    <property name="geometry">
     <rect>
-     <x>150</x>
-     <y>130</y>
+     <x>110</x>
+     <y>110</y>
      <width>20</width>
      <height>20</height>
     </rect>
    </property>
    <property name="toolTip">
-    <string>PLC_DigIn_4</string>
+    <string>DO_RELOAD</string>
    </property>
    <property name="whatsThis">
     <string>ATCMled widget</string>
    </property>
    <property name="variable">
-    <string>PLC_DigIn_4</string>
+    <string>DO_RELOAD</string>
    </property>
    <property name="refresh">
     <number>200</number>
@@ -1498,6 +1498,79 @@
      <normaloff>:/off.png</normaloff>:/off.png</iconset>
    </property>
   </widget>
+  <widget class="ATCMbutton" name="atcmButton_2">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>44</y>
+     <width>120</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>9</pointsize>
+    </font>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+   <property name="toolTip">
+    <string>DO_REPEAT</string>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMbutton widget</string>
+   </property>
+   <property name="pageName">
+    <string/>
+   </property>
+   <property name="passwordVar">
+    <string/>
+   </property>
+   <property name="statusvar">
+    <string>DO_REPEAT</string>
+   </property>
+   <property name="viewStatus">
+    <bool>false</bool>
+   </property>
+   <property name="visibilityVar">
+    <string/>
+   </property>
+   <property name="bgColor">
+    <color>
+     <red>85</red>
+     <green>170</green>
+     <blue>127</blue>
+    </color>
+   </property>
+   <property name="bgPressColor">
+    <color>
+     <red>85</red>
+     <green>255</green>
+     <blue>127</blue>
+    </color>
+   </property>
+   <property name="text">
+    <string>DO_REPEAT</string>
+   </property>
+   <property name="pressText">
+    <string>DO_REPEAT</string>
+   </property>
+   <property name="borderWidth">
+    <number>0</number>
+   </property>
+   <property name="borderRadius">
+    <number>0</number>
+   </property>
+   <property name="apparence">
+    <enum>QFrame::Raised</enum>
+   </property>
+  </widget>
+  <zorder>atcmButton</zorder>
   <zorder>atcmAnimation</zorder>
   <zorder>label_Qt_Project</zorder>
   <zorder>atcmButton_menu</zorder>
@@ -1506,7 +1579,6 @@
   <zorder>atcmDate</zorder>
   <zorder>atcmLabel</zorder>
   <zorder>label_Start_6</zorder>
-  <zorder>atcmButton</zorder>
   <zorder>atcmLed_Idle_2</zorder>
   <zorder>atcmLed_Idle_7</zorder>
   <zorder>atcmComboBox_PRODUCT_ID</zorder>
@@ -1534,6 +1606,7 @@
   <zorder>line_hr_1</zorder>
   <zorder>line_vt_2</zorder>
   <zorder>atcmLed_Idle_10</zorder>
+  <zorder>atcmButton_2</zorder>
  </widget>
  <customwidgets>
   <customwidget>

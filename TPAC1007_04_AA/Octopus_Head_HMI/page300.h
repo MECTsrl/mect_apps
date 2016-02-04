@@ -28,7 +28,8 @@ public:
     
 private slots:
     void changeEvent(QEvent * event);
-    void on_atcmComboBox_TEST_ID_currentIndexChanged(const QString &arg1);
+    void on_atcmComboBox_PRODUCT_ID_currentIndexChanged(int index);
+    void on_atcmComboBox_TEST_ID_currentIndexChanged(int index);
 
 private:
     Ui::page300 *ui;
