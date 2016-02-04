@@ -15,7 +15,13 @@ file=Configuration1.con
 file=Resource1.cst
 
 [Classes.Programs]
-file=Program1.st
+file=Testing.st
+file=Init.st
+file=Alarms.st
+file=Events.st
+file=Fast.st
+file=Slow.st
+file=Normal.st
 
 [Libs]
 file=$(LIBDIR)\ATCM_IEC1131_3.4cl
@@ -24,14 +30,10 @@ file=$(LIBDIR)\ATCM_IEC1131_3.4cl
 file=TPAC1007_4AA.ATHW119
 
 [Classes.Functions]
-file=Translate_DigIn.st
-file=Translate_DigOut.st
-file=Translate_AnIn.st
-file=Translate_AnOut.st
-file=Translate_Others.st
-file=ClearResults.st
-file=Check_DigIn.st
-file=Check_DigOut.st
-file=Check_AnIn.st
-file=Check_AnOut.st
-file=Check_Others.st
+file=WriteTST.st
+file=WriteVAL.st
+file=ClearOK.st
+file=ReadRES.st
+file=CheckOK.st
+file=ClearPLC.st
+file=AllTestedAreOK.st
