@@ -56,30 +56,32 @@ void loop(void)
     switch (STATUS) {   // OCTOPUS STATE MACHINE
 
     case STATUS_IDLE:
+        /* this state is managed in PLC */
         if (DO_RELOAD) {
             loadRecipe();
             doWrite_DO_RELOAD(0);
-            sleep(1);
+            sleep(1); // just for viewing the led change
         }
         break;
 
     case STATUS_STARTING:
+        /* this state is managed in PLC */
         break;
 
     case STATUS_READY:
         if (!PLC_PWR_SWITCH) {
             doWrite_STATUS(STATUS_STOPPING);
-            sleep(1);
-            break;
+            sleep(1); // FIXME: HMI/PLC protocol
+            return;
         }
         if (DO_RELOAD) {
             loadRecipe();
             doWrite_DO_RELOAD(0);
-            sleep(1);
+            sleep(1); // just for viewing the led change
         }
         if (TEST2_STATUS != TEST_STATUS_REMOTE || TESTx_STATUS != TEST_STATUS_REMOTE) {
             doWrite_STATUS(STATUS_STARTING);
-            sleep(1);
+            sleep(1); // FIXME: HMI/PLC protocol
             return;
         }
         if (AUTOMATIC || PLC_GO_BUTTON) {
@@ -99,13 +101,14 @@ void loop(void)
                 ++next_step;
             }
             doWrite_TEST_STEP(next_step);
+            // no sleep sinc we change state
             if (writeRecipe(next_step - 1) != 0) {
                 doWrite_STATUS(STATUS_ERROR);
-                sleep(1);
+                sleep(1); // FIXME: HMI/PLC protocol
                 return;
             }
             doWrite_STATUS(STATUS_TESTING);
-            sleep(1);
+            sleep(1); // FIXME: HMI/PLC protocol
             return;
         }
         break;
@@ -113,7 +116,7 @@ void loop(void)
     case STATUS_ERROR:
         if (!PLC_PWR_SWITCH) {
             doWrite_STATUS(STATUS_STOPPING);
-            sleep(1);
+            sleep(1); // FIXME: HMI/PLC protocol
             return;
         }
         if (PLC_GO_BUTTON) {
@@ -121,21 +124,25 @@ void loop(void)
             doWrite_TESTx_COMMAND(TEST_STATUS_LOCAL);
             doWrite_RESULT(RESULT_UNKNOWN);
             doWrite_STATUS(STATUS_RESETTING);
-            sleep(1);
+            sleep(1); // FIXME: HMI/PLC protocol
             return;
         }
         break;
 
     case STATUS_TESTING:
+        /* this state is managed in PLC */
         break;
 
     case STATUS_DONE:
+        /* this state is managed in PLC */
         break;
 
     case STATUS_RESETTING:
+        /* this state is managed in PLC */
         break;
 
     case STATUS_STOPPING:
+        /* this state is managed in PLC */
         break;
 
     default:
@@ -256,14 +263,21 @@ static void loadRecipe(void)
 
 static int writeRecipe(int step)
 {
-    if (step < MAX_STEP)
+    int errors = 0;
+
+    if (step >= MAX_STEP)
     {
-        int errors = 0;
+        errors = -1;
+    }
+    else
+    {
+        beginWrite();
         for (int i = 0; i < valuesTable[step].count(); i++)
         {
-            errors += doWrite(ctIndexList.at(i), &(valuesTable[step][i]));
+            errors += addWrite(ctIndexList.at(i), &(valuesTable[step][i]));
         }
-        return errors;
+        writePendingInorder(); // FIXME: endWrite();
+        sleep(1); // FIXME: HMI/PLC protocol
     }
-    return -1;
+    return errors;
 }
