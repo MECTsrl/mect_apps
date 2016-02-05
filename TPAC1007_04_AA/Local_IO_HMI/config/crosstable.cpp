@@ -12,6 +12,7 @@ DWORD_BIT <-> int
 #include "crosstable.h"
 #include "cross_table_utility.h"
  
+u_int16_t STATUS = 0;
 u_int16_t TEST_COMMAND = 0;
 int TST_DigIn_1 = 0;
 int TST_DigIn_2 = 0;
@@ -276,6 +277,24 @@ float PLC_time = 0;
 float PLC_timeMin = 0;
 float PLC_timeMax = 0;
 float PLC_timeWin = 0;
+
+
+int doWrite_STATUS(u_int16_t value)
+{
+return doWrite(ID_STATUS,  &value);
+}
+
+
+int addWrite_STATUS(u_int16_t value)
+{
+return addWrite(ID_STATUS, &value);
+}
+
+
+int getStatus_STATUS()
+{
+return getStatus(ID_STATUS);
+}
 
 
 int doWrite_TEST_COMMAND(u_int16_t value)
@@ -5033,6 +5052,7 @@ return getStatus(ID_PLC_timeWin);
 int update_all(void)
 {
 int retval = 0;
+retval += readFromDb(ID_STATUS, &STATUS);
 retval += readFromDb(ID_TEST_COMMAND, &TEST_COMMAND);
 retval += readFromDb(ID_TST_DigIn_1, &TST_DigIn_1);
 retval += readFromDb(ID_TST_DigIn_2, &TST_DigIn_2);

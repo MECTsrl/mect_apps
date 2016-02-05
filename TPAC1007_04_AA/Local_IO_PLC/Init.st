@@ -10,6 +10,6 @@ PROGRAM Init
 	PLC_AnOutConf_3 := 2; (* 0..10V *)
 	PLC_AnOutConf_4 := 2; (* 0..10V *)
 
-	TEST_STATUS := TEST_STATUS_LOCAL;
+	TEST_STATUS := STATUS_LOCAL;
 
 END_PROGRAM

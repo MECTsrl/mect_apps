@@ -12,15 +12,18 @@ void setup(void)
 
 void loop(void)
 {
-    switch (TEST_STATUS) {
+    switch (STATUS) {
 
     case STATUS_LOCAL:
+        /* this state is managed in PLC */
         break;
 
     case STATUS_REMOTE:
+        /* this state is managed in PLC */
         break;
 
     case STATUS_DONE:
+        /* this state is managed in PLC */
        break;
 
     default:

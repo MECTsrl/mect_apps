@@ -3,7 +3,7 @@
 RESOURCE Resource1
     #IMPORT "Resource1.gvl"
     #IMPORT "Crosstable.gvl"
-        TASK Task0_Init(EVENT:='23', PRIORITY:=5, AUTOSTART:=TRUE);
+        TASK Task0_Init(EVENT:='4', PRIORITY:=5, AUTOSTART:=TRUE);
         TASK Task1_Alarms(EVENT:='27', PRIORITY:=1, AUTOSTART:=TRUE);
         TASK Task2_Events(EVENT:='28', PRIORITY:=2, AUTOSTART:=TRUE);
         TASK Task3_Fast_10ms(INTERVAL:=T#10ms, PRIORITY:=3, AUTOSTART:=TRUE);

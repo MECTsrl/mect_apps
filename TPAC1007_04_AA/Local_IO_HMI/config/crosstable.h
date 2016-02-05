@@ -16,6 +16,12 @@ extern "C" {
 #endif
 #include <sys/types.h>
  
+#define ID_STATUS 193
+extern u_int16_t STATUS;
+int doWrite_STATUS(u_int16_t value);
+int addWrite_STATUS(u_int16_t value);
+int getStatus_STATUS();
+ 
 #define ID_TEST_COMMAND 4000
 extern u_int16_t TEST_COMMAND;
 int doWrite_TEST_COMMAND(u_int16_t value);

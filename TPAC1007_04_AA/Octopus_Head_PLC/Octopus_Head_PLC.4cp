@@ -27,7 +27,7 @@ file=Normal.st
 file=$(LIBDIR)\ATCM_IEC1131_3.4cl
 
 [Targets]
-file=TPAC1007_4AA.ATHW119
+file=Octopus_Head.ATHW119
 
 [Classes.Functions]
 file=WriteTST.st
@@ -37,3 +37,8 @@ file=ReadRES.st
 file=CheckOK.st
 file=ClearPLC.st
 file=AllTestedAreOK.st
+[Compiler.ATHW119]
+opt=bp2
+opt=ncc:0
+[Target.HW119]
+ConnectionTimeout=100
