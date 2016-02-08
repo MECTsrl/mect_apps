@@ -53,21 +53,22 @@ END_VAR
 			return;
 		end_if;
 		case substatus of
-		0: (* write test variables *)
+		0: (* clear the OK test variables and write the TST ones *)
 			ClearOK();
 			WriteTST();
-			WriteVAL();
 			substatus := 1;
-	    1: (* wait for propagation of TST and VAL @ priority 3 : 5000ms *)
+	    1: (* write the VAL test variables *)
+			WriteVAL();
+			substatus := 2;
+	    2: (* wait for propagation of TST and VAL @ priority 3 : 5000ms *)
 			timer(IN := TRUE, PT := T#5s);
 			if timer.Q then
 				timer(IN := FALSE);
-				substatus := 2;
+				(* write the test starting command *)
+		        TEST2_COMMAND := TEST_STATUS_DONE;
+		        TESTx_COMMAND := TEST_STATUS_DONE;
+				substatus := 3;
 			end_if;
-	    2: (* write test starting command *)
-	        TEST2_COMMAND := TEST_STATUS_DONE;
-	        TESTx_COMMAND := TEST_STATUS_DONE;
-			substatus := 3;
 	    3: (* wait for propagation of COMMAND @ priority 2 : 1000ms *)
 			timer(IN := TRUE, PT := T#1s);
 			if timer.Q then
@@ -80,6 +81,12 @@ END_VAR
 				substatus := 5; (* need a step for reading RES %Q *)
 				return;
 			end_if;
+		    if (TEST2_STATUS <> TEST_STATUS_DONE) then
+		        TEST2_COMMAND := TEST_STATUS_DONE;
+		    end_if;
+		    if (TESTx_STATUS <> TEST_STATUS_DONE) then
+		        TESTx_COMMAND := TEST_STATUS_DONE;
+		    end_if;
 		5: (* check RES and VAL *)
 			CheckOK();
 			substatus := 6;  (* need a step for reading OK %Q *)

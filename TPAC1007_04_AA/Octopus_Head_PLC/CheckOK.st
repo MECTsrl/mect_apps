@@ -5,7 +5,7 @@ FUNCTION CheckOK
 VAR_INPUT
 END_VAR
 VAR 
-	Tolleranza : INT := 1; (* 0.01 *)
+	Tolleranza : INT := 10; (* 0.010 *)
 	Tolleranza_Tamb_min : INT := 10;
 	Tolleranza_RPM : INT := 100;
 	Tolleranza_VCC_set : INT := 10; (* 0.01 V *)

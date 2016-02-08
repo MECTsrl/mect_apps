@@ -298,7 +298,7 @@ background-color: rgb(255, 255, 127);
     <number>0</number>
    </property>
   </widget>
-  <widget class="ATCMlabel" name="atcmLabelAnInConf_2">
+  <widget class="ATCMlabel" name="atcmLabel_VAL_AnInConf_2">
    <property name="geometry">
     <rect>
      <x>238</x>
@@ -355,7 +355,7 @@ background-color: rgb(255, 255, 127);
     <number>0</number>
    </property>
   </widget>
-  <widget class="QLabel" name="label_PLC_AnIn_14">
+  <widget class="QLabel" name="label_PLC_AnInConf_">
    <property name="geometry">
     <rect>
      <x>-1</x>
@@ -380,7 +380,7 @@ background-color: rgb(255, 255, 127);
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
-  <widget class="ATCMled" name="atcmLed_PLC_AnIn_1">
+  <widget class="ATCMled" name="atcmLed_TST_AnIn_1">
    <property name="geometry">
     <rect>
      <x>117</x>
@@ -416,7 +416,7 @@ background-color: rgb(255, 255, 127);
      <normaloff>:/off.png</normaloff>:/off.png</iconset>
    </property>
   </widget>
-  <widget class="ATCMlabel" name="atcmLabelAnInConf_1">
+  <widget class="ATCMlabel" name="atcmLabel_VAL_AnInConf_1">
    <property name="geometry">
     <rect>
      <x>119</x>
@@ -473,7 +473,7 @@ background-color: rgb(255, 255, 127);
     <number>0</number>
    </property>
   </widget>
-  <widget class="QLabel" name="label_PLC_AnIn_2">
+  <widget class="QLabel" name="label_AnIn_2">
    <property name="geometry">
     <rect>
      <x>239</x>
@@ -498,7 +498,7 @@ background-color: rgb(255, 255, 127);
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
-  <widget class="QLabel" name="label_PLC_AnIn_15">
+  <widget class="QLabel" name="label_RES_AnIn_">
    <property name="geometry">
     <rect>
      <x>1</x>
@@ -523,7 +523,7 @@ background-color: rgb(255, 255, 127);
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
-  <widget class="QLabel" name="label_PLC_AnIn_1">
+  <widget class="QLabel" name="label_AnIn_1">
    <property name="geometry">
     <rect>
      <x>121</x>
@@ -548,7 +548,7 @@ background-color: rgb(255, 255, 127);
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
-  <widget class="QLabel" name="label_PLC_AnIn_13">
+  <widget class="QLabel" name="label_TST_AnIn_">
    <property name="geometry">
     <rect>
      <x>-1</x>
@@ -573,7 +573,7 @@ background-color: rgb(255, 255, 127);
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
-  <widget class="ATCMled" name="atcmLed_PLC_AnIn_2">
+  <widget class="ATCMled" name="atcmLed_TST_AnIn_2">
    <property name="geometry">
     <rect>
      <x>238</x>
@@ -609,7 +609,7 @@ background-color: rgb(255, 255, 127);
      <normaloff>:/off.png</normaloff>:/off.png</iconset>
    </property>
   </widget>
-  <widget class="QLabel" name="label_PLC_AnIn_17">
+  <widget class="QLabel" name="label_VAL_AnInConf_">
    <property name="geometry">
     <rect>
      <x>-1</x>
@@ -634,7 +634,7 @@ background-color: rgb(255, 255, 127);
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
-  <widget class="ATCMlabel" name="atcmLabelAnIn_3">
+  <widget class="ATCMlabel" name="atcmLabel_RES_AnIn_2">
    <property name="geometry">
     <rect>
      <x>240</x>
@@ -647,13 +647,13 @@ background-color: rgb(255, 255, 127);
     <string>1.11</string>
    </property>
    <property name="toolTip">
-    <string>VAL_AnInFltr_2</string>
+    <string>RES_AnIn_2</string>
    </property>
    <property name="whatsThis">
     <string>ATCMlabel widget</string>
    </property>
    <property name="variable">
-    <string>VAL_AnInFltr_2</string>
+    <string>RES_AnIn_2</string>
    </property>
    <property name="refresh">
     <number>500</number>
@@ -672,9 +672,9 @@ background-color: rgb(255, 255, 127);
    </property>
    <property name="bgColor">
     <color>
-     <red>170</red>
+     <red>255</red>
      <green>255</green>
-     <blue>255</blue>
+     <blue>127</blue>
     </color>
    </property>
    <property name="fontColor">
@@ -691,7 +691,7 @@ background-color: rgb(255, 255, 127);
     <number>0</number>
    </property>
   </widget>
-  <widget class="ATCMlabel" name="atcmLabelAnIn_4">
+  <widget class="ATCMlabel" name="atcmLabel_RES_AnIn_1">
    <property name="geometry">
     <rect>
      <x>121</x>
@@ -704,13 +704,13 @@ background-color: rgb(255, 255, 127);
     <string>1.11</string>
    </property>
    <property name="toolTip">
-    <string>VAL_AnInFltr_1</string>
+    <string>RES_AnIn_1</string>
    </property>
    <property name="whatsThis">
     <string>ATCMlabel widget</string>
    </property>
    <property name="variable">
-    <string>VAL_AnInFltr_1</string>
+    <string>RES_AnIn_1</string>
    </property>
    <property name="refresh">
     <number>500</number>
@@ -729,9 +729,9 @@ background-color: rgb(255, 255, 127);
    </property>
    <property name="bgColor">
     <color>
-     <red>170</red>
+     <red>255</red>
      <green>255</green>
-     <blue>255</blue>
+     <blue>127</blue>
     </color>
    </property>
    <property name="fontColor">
@@ -748,7 +748,7 @@ background-color: rgb(255, 255, 127);
     <number>0</number>
    </property>
   </widget>
-  <widget class="ATCMlabel" name="atcmLabelAnInConf_3">
+  <widget class="ATCMlabel" name="atcmLabel_VAL_AnInFltr_1">
    <property name="geometry">
     <rect>
      <x>151</x>
@@ -805,7 +805,7 @@ background-color: rgb(255, 255, 127);
     <number>0</number>
    </property>
   </widget>
-  <widget class="ATCMlabel" name="atcmLabelAnInConf_4">
+  <widget class="ATCMlabel" name="atcmLabel_VAL_AnInFltr_2">
    <property name="geometry">
     <rect>
      <x>270</x>
@@ -862,7 +862,7 @@ background-color: rgb(255, 255, 127);
     <number>0</number>
    </property>
   </widget>
-  <widget class="ATCMlabel" name="atcmLabelAnIn_5">
+  <widget class="ATCMlabel" name="atcmLabel_PLC_AnIn_2">
    <property name="geometry">
     <rect>
      <x>239</x>
@@ -919,7 +919,7 @@ background-color: rgb(255, 255, 127);
     <number>0</number>
    </property>
   </widget>
-  <widget class="QLabel" name="label_PLC_AnIn_16">
+  <widget class="QLabel" name="label_PLC_AnIn_">
    <property name="geometry">
     <rect>
      <x>0</x>
@@ -944,7 +944,7 @@ background-color: rgb(255, 255, 127);
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
-  <widget class="ATCMlabel" name="atcmLabelAnIn_6">
+  <widget class="ATCMlabel" name="atcmLabel_PLC_AnIn_1">
    <property name="geometry">
     <rect>
      <x>120</x>
@@ -1001,7 +1001,7 @@ background-color: rgb(255, 255, 127);
     <number>0</number>
    </property>
   </widget>
-  <widget class="ATCMlabel" name="atcmLabelAnInConf_5">
+  <widget class="ATCMlabel" name="atcmLabel_PLC_AnInConf_1">
    <property name="geometry">
     <rect>
      <x>119</x>
@@ -1039,9 +1039,9 @@ background-color: rgb(255, 255, 127);
    </property>
    <property name="bgColor">
     <color>
-     <red>170</red>
+     <red>255</red>
      <green>255</green>
-     <blue>255</blue>
+     <blue>127</blue>
     </color>
    </property>
    <property name="fontColor">
@@ -1058,7 +1058,7 @@ background-color: rgb(255, 255, 127);
     <number>0</number>
    </property>
   </widget>
-  <widget class="ATCMlabel" name="atcmLabelAnInConf_6">
+  <widget class="ATCMlabel" name="atcmLabel_PLC_AnIn2Filter">
    <property name="geometry">
     <rect>
      <x>270</x>
@@ -1096,9 +1096,9 @@ background-color: rgb(255, 255, 127);
    </property>
    <property name="bgColor">
     <color>
-     <red>170</red>
+     <red>255</red>
      <green>255</green>
-     <blue>255</blue>
+     <blue>127</blue>
     </color>
    </property>
    <property name="fontColor">
@@ -1115,7 +1115,7 @@ background-color: rgb(255, 255, 127);
     <number>0</number>
    </property>
   </widget>
-  <widget class="ATCMlabel" name="atcmLabelAnInConf_7">
+  <widget class="ATCMlabel" name="atcmLabel_PLC_AnInConf_2">
    <property name="geometry">
     <rect>
      <x>238</x>
@@ -1153,9 +1153,9 @@ background-color: rgb(255, 255, 127);
    </property>
    <property name="bgColor">
     <color>
-     <red>170</red>
+     <red>255</red>
      <green>255</green>
-     <blue>255</blue>
+     <blue>127</blue>
     </color>
    </property>
    <property name="fontColor">
@@ -1172,7 +1172,7 @@ background-color: rgb(255, 255, 127);
     <number>0</number>
    </property>
   </widget>
-  <widget class="ATCMlabel" name="atcmLabelAnInConf_8">
+  <widget class="ATCMlabel" name="atcmLabel_PLC_AnIn1Filter">
    <property name="geometry">
     <rect>
      <x>151</x>
@@ -1210,9 +1210,9 @@ background-color: rgb(255, 255, 127);
    </property>
    <property name="bgColor">
     <color>
-     <red>170</red>
+     <red>255</red>
      <green>255</green>
-     <blue>255</blue>
+     <blue>127</blue>
     </color>
    </property>
    <property name="fontColor">
@@ -1487,27 +1487,27 @@ background-color: rgb(255, 255, 127);
   <zorder>atcmDate</zorder>
   <zorder>atcmButton_5</zorder>
   <zorder>atcmTime_2</zorder>
-  <zorder>atcmLabelAnInConf_2</zorder>
-  <zorder>label_PLC_AnIn_14</zorder>
-  <zorder>atcmLed_PLC_AnIn_1</zorder>
-  <zorder>atcmLabelAnInConf_1</zorder>
-  <zorder>label_PLC_AnIn_2</zorder>
-  <zorder>label_PLC_AnIn_15</zorder>
-  <zorder>label_PLC_AnIn_1</zorder>
-  <zorder>label_PLC_AnIn_13</zorder>
-  <zorder>atcmLed_PLC_AnIn_2</zorder>
-  <zorder>label_PLC_AnIn_17</zorder>
-  <zorder>atcmLabelAnIn_3</zorder>
-  <zorder>atcmLabelAnIn_4</zorder>
-  <zorder>atcmLabelAnInConf_3</zorder>
-  <zorder>atcmLabelAnInConf_4</zorder>
-  <zorder>atcmLabelAnIn_5</zorder>
-  <zorder>label_PLC_AnIn_16</zorder>
-  <zorder>atcmLabelAnIn_6</zorder>
-  <zorder>atcmLabelAnInConf_5</zorder>
-  <zorder>atcmLabelAnInConf_6</zorder>
-  <zorder>atcmLabelAnInConf_7</zorder>
-  <zorder>atcmLabelAnInConf_8</zorder>
+  <zorder>atcmLabel_VAL_AnInConf_2</zorder>
+  <zorder>label_PLC_AnInConf_</zorder>
+  <zorder>atcmLed_TST_AnIn_1</zorder>
+  <zorder>atcmLabel_VAL_AnInConf_1</zorder>
+  <zorder>label_AnIn_2</zorder>
+  <zorder>label_RES_AnIn_</zorder>
+  <zorder>label_AnIn_1</zorder>
+  <zorder>label_TST_AnIn_</zorder>
+  <zorder>atcmLed_TST_AnIn_2</zorder>
+  <zorder>label_VAL_AnInConf_</zorder>
+  <zorder>atcmLabel_RES_AnIn_2</zorder>
+  <zorder>atcmLabel_RES_AnIn_1</zorder>
+  <zorder>atcmLabel_VAL_AnInFltr_1</zorder>
+  <zorder>atcmLabel_VAL_AnInFltr_2</zorder>
+  <zorder>atcmLabel_PLC_AnIn_2</zorder>
+  <zorder>label_PLC_AnIn_</zorder>
+  <zorder>atcmLabel_PLC_AnIn_1</zorder>
+  <zorder>atcmLabel_PLC_AnInConf_1</zorder>
+  <zorder>atcmLabel_PLC_AnIn2Filter</zorder>
+  <zorder>atcmLabel_PLC_AnInConf_2</zorder>
+  <zorder>atcmLabel_PLC_AnIn1Filter</zorder>
   <zorder>atcmButton_page402_2</zorder>
   <zorder>atcmLabel_PLC_time</zorder>
   <zorder>line_hr_2</zorder>

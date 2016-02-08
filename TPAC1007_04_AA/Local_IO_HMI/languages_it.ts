@@ -2454,14 +2454,22 @@
     <message>
         <location filename="page403.ui" line="650"/>
         <location filename="page403.ui" line="656"/>
+        <source>RES_AnIn_2</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page403.ui" line="707"/>
+        <location filename="page403.ui" line="713"/>
+        <source>RES_AnIn_1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="page403.ui" line="821"/>
         <location filename="page403.ui" line="827"/>
         <source>VAL_AnInFltr_2</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page403.ui" line="707"/>
-        <location filename="page403.ui" line="713"/>
         <location filename="page403.ui" line="764"/>
         <location filename="page403.ui" line="770"/>
         <source>VAL_AnInFltr_1</source>

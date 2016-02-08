@@ -516,17 +516,17 @@
      <pointsize>14</pointsize>
     </font>
    </property>
-   <property name="currentIndex">
-    <number>0</number>
-   </property>
-   <property name="maxCount">
-    <number>10</number>
-   </property>
    <property name="toolTip">
     <string>PRODUCT_ID</string>
    </property>
    <property name="whatsThis">
     <string>ATCMcombobox widget</string>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <property name="maxCount">
+    <number>10</number>
    </property>
    <property name="variable">
     <string>PRODUCT_ID</string>
@@ -698,6 +698,9 @@
    <property name="borderRadius">
     <number>0</number>
    </property>
+   <property name="apparence">
+    <enum>QFrame::Raised</enum>
+   </property>
   </widget>
   <widget class="ATCMlabel" name="atcmLabel_TEST_STEP_MAX">
    <property name="enabled">
@@ -757,6 +760,9 @@
    <property name="borderRadius">
     <number>0</number>
    </property>
+   <property name="apparence">
+    <enum>QFrame::Plain</enum>
+   </property>
   </widget>
   <widget class="ATCManimation" name="atcmAnimation">
    <property name="geometry">
@@ -804,17 +810,17 @@
      <pointsize>14</pointsize>
     </font>
    </property>
-   <property name="currentIndex">
-    <number>0</number>
-   </property>
-   <property name="maxCount">
-    <number>10</number>
-   </property>
    <property name="toolTip">
     <string>TEST_ID</string>
    </property>
    <property name="whatsThis">
     <string>ATCMcombobox widget</string>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <property name="maxCount">
+    <number>10</number>
    </property>
    <property name="variable">
     <string>TEST_ID</string>

@@ -159,8 +159,14 @@ static void loadRecipe(void)
 {
     QString product;
     QString recipe;
+
+    // clear lists
+    ctIndexList.clear();
+    for (int n = 0; n < MAX_STEP; ++n) {
+        valuesTable[n].clear();
+    }
     if (PRODUCT_ID == 0 || PRODUCT_ID >= PRODUCT_MAX
-      || TEST_ID == 0 || TEST_ID >= RECIPE_MAX) {
+      || TEST_ID == 0 || TEST_ID > RECIPE_MAX) {
         return;
     }
     product = QString(product_name[PRODUCT_ID]);
@@ -212,7 +218,11 @@ static void loadRecipe(void)
                 case intab_e:
                 case intba_e:
                 {
-                    u_int16_t val_int16 = atoi(token);
+                    float val_float = atof(token);
+                    for (int n = 0; n < varNameArray[ctIndex].decimal; ++n) {
+                        val_float = val_float * 10;
+                    }
+                    int16_t val_int16 = (u_int16_t)val_float;
                     value = (u_int32_t)val_int16;
                     break;
                 }
@@ -225,8 +235,12 @@ static void loadRecipe(void)
                 case dint_cdab_e:
                 case dint_dcba_e:
                 {
-                    u_int32_t val_int32 = atoi(token);
-                    value = (u_int32_t)val_int32;
+                    float val_float = atof(token);
+                    for (int n = 0; n < varNameArray[ctIndex].decimal; ++n) {
+                        val_float = val_float * 10;
+                    }
+                    int32_t val_int32 = atoi(token);
+                    memcpy(&value, &val_int32, sizeof(u_int32_t));
                     break;
                 }
                 case fabcd_e:
@@ -235,7 +249,7 @@ static void loadRecipe(void)
                 case fdcba_e:
                 {
                     float val_float = atof(token);
-                    value = (u_int32_t)val_float;
+                    memcpy(&value, &val_float, sizeof(u_int32_t));
                     break;
                 }
                 case bytebit_e:
@@ -274,7 +288,10 @@ static int writeRecipe(int step)
         beginWrite();
         for (int i = 0; i < valuesTable[step].count(); i++)
         {
-            errors += addWrite(ctIndexList.at(i), &(valuesTable[step][i]));
+            u_int16_t addr = ctIndexList.at(i);
+            u_int32_t value = valuesTable[step].at(i);
+            // errors += addWrite(addr, &value);
+            errors += prepareWriteVarByCtIndex(addr, &value, NULL, 0, 0);
         }
         writePendingInorder(); // FIXME: endWrite();
         sleep(1); // FIXME: HMI/PLC protocol
