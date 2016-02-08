@@ -5032,7 +5032,7 @@
 1;P;RTU_DigOut_14   ;WORD_BIT ;14  ;RTU       ;               ;    ;1   ;5   ;5000;47  ;[RW]
 1;P;RTU_DigOut_15   ;WORD_BIT ;15  ;RTU       ;               ;    ;1   ;5   ;5000;47  ;[RW]
 1;P;RTU_DigOut_16   ;WORD_BIT ;16  ;RTU       ;               ;    ;1   ;5   ;5000;47  ;[RW]
-1;P;RTU_AnOutConf_X ;INT      ;0   ;RTU       ;               ;    ;1   ;6   ;5000;47  ;[RW]
+1;P;RTU_AnOutConf_X ;INT      ;2   ;RTU       ;               ;    ;1   ;6   ;5000;47  ;[RW]
 1;P;RTU_AnOut_1     ;INT      ;2   ;RTU       ;               ;    ;1   ;7   ;5000;47  ;[RW]
 1;P;RTU_AnOut_2     ;INT      ;2   ;RTU       ;               ;    ;1   ;8   ;5000;47  ;[RW]
 1;P;RTU_AnOut_3     ;INT      ;2   ;RTU       ;               ;    ;1   ;9   ;5000;47  ;[RW]
