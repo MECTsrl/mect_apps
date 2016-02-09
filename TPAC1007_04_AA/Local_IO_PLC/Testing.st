@@ -26,8 +26,8 @@ END_VAR
 			0: (* for each tested output write the specified value *)
 	        	ifTST_readVAL_writePLC();
 				substatus := 1;
-			1: (* wait for propagation of max 28 PLC writes on local RTU *)
-				timer(IN := TRUE, PT := T#100ms); (* FIXME: 28 * T#1ms *)
+			1: (* wait for propagation of max 28 PLC writes on local RTU and I/O settling *)
+				timer(IN := TRUE, PT := T#1000ms);
 				if timer.Q then
 					timer(IN := FALSE);
 					substatus := 2;
@@ -36,7 +36,7 @@ END_VAR
 		        ifTST_readPLC_writeRES();
 				substatus := 5;
 			5: (* wait for propagation *)
-				timer(IN := TRUE, PT := T#5000ms); (* FIXME: Modbus/TCP *)
+				timer(IN := TRUE, PT := T#1000ms); (* FIXME: Modbus/TCP *)
 				if timer.Q then
 					timer(IN := FALSE);
 					substatus := 6;

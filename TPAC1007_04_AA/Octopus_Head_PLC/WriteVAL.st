@@ -44,7 +44,7 @@ END_VAR
 		VALx_AnInFltr_1 := VAL_AnInFltr_1;
 		(* <-- Head AO1 + DO6 + DO8 *) 
 		PLC_AnOutConf_1 := VAL_AnInConf_1;
-		PLC_AnOut_1 := VAL_AnIn_1;
+		PLC_AnOut_1 := VAL_AnIn_1 / 10;
 		PLC_DigDir_6 := 1;
 		PLC_DigDir_8 := 1;
 		case VAL_AnInConf_1 of
@@ -60,7 +60,7 @@ END_VAR
 		VALx_AnInFltr_2 := VAL_AnInFltr_2;
 		(* <-- Head AO2 + DO5 + DO7 *) 
 		PLC_AnOutConf_2 := VAL_AnInConf_2;
-		PLC_AnOut_2 := VAL_AnIn_2;
+		PLC_AnOut_2 := VAL_AnIn_2 / 10;
 		PLC_DigDir_5 := 1;
 		PLC_DigDir_7 := 1;
 		case VAL_AnInConf_2 of
@@ -76,7 +76,7 @@ END_VAR
 		VALx_AnInFltr_3 := VAL_AnInFltr_3;
 		(* <-- Horn2 AO1 + DO6 + DO8 *) 
 		VAL2_AnOutConf_1 := VAL_AnInConf_3;
-		VAL2_AnOut_1 := VAL_AnIn_3;
+		VAL2_AnOut_1 := VAL_AnIn_3 / 10;
 		case VAL_AnInConf_3 of
 		1: VAL2_DigOut_8 := 1; VAL2_DigOut_6 := 0;
 		2: VAL2_DigOut_8 := 0; VAL2_DigOut_6 := 0;
@@ -90,7 +90,7 @@ END_VAR
 		VALx_AnInFltr_4 := VAL_AnInFltr_4;
 		(* <-- Horn2 AO2 + DO5 + DO7 *) 
 		VAL2_AnOutConf_2 := VAL_AnInConf_4;
-		VAL2_AnOut_3 := VAL_AnIn_4;
+		VAL2_AnOut_3 := VAL_AnIn_4 / 10;
 		case VAL_AnInConf_4 of
 		1: VAL2_DigOut_7 := 1; VAL2_DigOut_5 := 0;
 		2: VAL2_DigOut_7 := 0; VAL2_DigOut_5 := 0;
@@ -103,52 +103,52 @@ END_VAR
 		VALx_AnInConf_5 := VAL_AnInConf_5;
 		VALx_AnInFltr_5 := VAL_AnInFltr_5;
 		(* <-- Head/TPLC005 AO1 *) 
-		RTU_AnOut_1 := VAL_AnIn_5;
+		RTU_AnOut_1 := VAL_AnIn_5 / 10;
 		(* <-- Horn2 AO4 V : double for TPAC1007_4AB *)
 		VAL2_AnOutConf_4 := VAL_AnInConf_5;
-		VAL2_AnOut_4 := VAL_AnIn_5;
+		VAL2_AnOut_4 := VAL_AnIn_5 / 10;
 	end_if;
 	if TST_AnIn_6  then
 		VALx_AnInConf_6 := VAL_AnInConf_6;
 		VALx_AnInFltr_6 := VAL_AnInFltr_6;
 		(* <-- Head/TPLC005 AO2 *) 
-		RTU_AnOut_2 := VAL_AnIn_6;
+		RTU_AnOut_2 := VAL_AnIn_6 / 10;
 	end_if;
 	if TST_AnIn_7  then
 		VALx_AnInConf_7 := VAL_AnInConf_7;
 		VALx_AnInFltr_7 := VAL_AnInFltr_7;
 		(* <-- Head/TPLC005 AO3 *) 
-		PLC_AnOut_3 := VAL_AnIn_7;
+		PLC_AnOut_3 := VAL_AnIn_7 / 10;
 	end_if;
 	if TST_AnIn_8  then
 		VALx_AnInConf_8 := VAL_AnInConf_8;
 		VALx_AnInFltr_8 := VAL_AnInFltr_8;
 		(* <-- Head/TPLC005 AO4 *) 
-		RTU_AnOut_4 := VAL_AnIn_8;
+		RTU_AnOut_4 := VAL_AnIn_8 / 10;
 	end_if;
 	if TST_AnIn_9  then
 		VALx_AnInConf_9 := VAL_AnInConf_9;
 		VALx_AnInFltr_9 := VAL_AnInFltr_9;
 		(* <-- Head/TPLC005 AO5*) 
-		RTU_AnOut_5 := VAL_AnIn_9;
+		RTU_AnOut_5 := VAL_AnIn_9 / 10;
 	end_if;
 	if TST_AnIn_10 then
 		VALx_AnInConf_10:= VAL_AnInConf_10;
 		VALx_AnInFltr_10:= VAL_AnInFltr_10;
 		(* <-- Head/TPLC005 AO6*) 
-		RTU_AnOut_6 := VAL_AnIn_10;
+		RTU_AnOut_6 := VAL_AnIn_10 / 10;
 	end_if;
 	if TST_AnIn_11 then
 		VALx_AnInConf_11:= VAL_AnInConf_11;
 		VALx_AnInFltr_11:= VAL_AnInFltr_11;
 		(* <-- Head/TPLC005 AO7*) 
-		RTU_AnOut_7 := VAL_AnIn_11;
+		RTU_AnOut_7 := VAL_AnIn_11 / 10;
 	end_if;
 	if TST_AnIn_12 then
 		VALx_AnInConf_12:= VAL_AnInConf_12;
 		VALx_AnInFltr_12:= VAL_AnInFltr_12;
 		(* <-- Head/TPLC005 AO8*) 
-		RTU_AnOut_8 := VAL_AnIn_12;
+		RTU_AnOut_8 := VAL_AnIn_12 / 10;
 	end_if;
 
 	if TST_AnOut_1  then

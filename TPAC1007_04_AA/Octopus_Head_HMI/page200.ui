@@ -582,14 +582,14 @@ background-color: rgb(255, 255, 127);
      <pointsize>9</pointsize>
     </font>
    </property>
-   <property name="currentIndex">
-    <number>2</number>
-   </property>
    <property name="toolTip">
     <string>RTU_AnInConf_2</string>
    </property>
    <property name="whatsThis">
     <string>ATCMcombobox widget</string>
+   </property>
+   <property name="currentIndex">
+    <number>2</number>
    </property>
    <property name="variable">
     <string>RTU_AnInConf_2</string>
@@ -911,7 +911,7 @@ background-color: rgb(255, 255, 127);
     </rect>
    </property>
    <property name="text">
-    <string>2</string>
+    <string>3.33</string>
    </property>
    <property name="toolTip">
     <string>RTU_AnOut_5</string>
@@ -1009,14 +1009,14 @@ background-color: rgb(255, 255, 127);
      <pointsize>9</pointsize>
     </font>
    </property>
-   <property name="currentIndex">
-    <number>2</number>
-   </property>
    <property name="toolTip">
     <string>RTU_AnInConf_1</string>
    </property>
    <property name="whatsThis">
     <string>ATCMcombobox widget</string>
+   </property>
+   <property name="currentIndex">
+    <number>2</number>
    </property>
    <property name="variable">
     <string>RTU_AnInConf_1</string>
@@ -1155,7 +1155,7 @@ background-color: rgb(255, 255, 127);
     </rect>
    </property>
    <property name="text">
-    <string>2</string>
+    <string>5.00</string>
    </property>
    <property name="toolTip">
     <string>RTU_AnOutConf_X</string>
@@ -1395,10 +1395,11 @@ background-color: rgb(255, 255, 127);
    <property name="font">
     <font>
      <family>DejaVu Sans Mono</family>
+     <pointsize>7</pointsize>
     </font>
    </property>
    <property name="text">
-    <string>2</string>
+    <string>84600.00</string>
    </property>
    <property name="toolTip">
     <string>RTU_HeartBeat</string>
@@ -1455,7 +1456,7 @@ background-color: rgb(255, 255, 127);
     </rect>
    </property>
    <property name="text">
-    <string>2</string>
+    <string>3.33</string>
    </property>
    <property name="toolTip">
     <string>RTU_AnOut_3</string>
@@ -1654,7 +1655,7 @@ background-color: rgb(255, 255, 127);
     </rect>
    </property>
    <property name="text">
-    <string>2</string>
+    <string>3.33</string>
    </property>
    <property name="toolTip">
     <string>RTU_AnOut_2</string>
@@ -2203,7 +2204,7 @@ background-color: rgb(255, 255, 127);
     </rect>
    </property>
    <property name="text">
-    <string>2</string>
+    <string>3.33</string>
    </property>
    <property name="toolTip">
     <string>RTU_AnOut_4</string>
@@ -2321,7 +2322,7 @@ background-color: rgb(255, 255, 127);
     </rect>
    </property>
    <property name="text">
-    <string>2</string>
+    <string>3.33</string>
    </property>
    <property name="toolTip">
     <string>RTU_AnOut_1</string>
@@ -2598,7 +2599,7 @@ background-color: rgb(255, 255, 127);
     </rect>
    </property>
    <property name="text">
-    <string>2</string>
+    <string>3.33</string>
    </property>
    <property name="toolTip">
     <string>RTU_AnOut_6</string>
@@ -2924,7 +2925,7 @@ background-color: rgb(255, 255, 127);
     </rect>
    </property>
    <property name="text">
-    <string>2</string>
+    <string>3.33</string>
    </property>
    <property name="toolTip">
     <string>RTU_AnOut_7</string>
@@ -3042,7 +3043,7 @@ background-color: rgb(255, 255, 127);
     </rect>
    </property>
    <property name="text">
-    <string>2</string>
+    <string>3.33</string>
    </property>
    <property name="toolTip">
     <string>RTU_AnOut_8</string>

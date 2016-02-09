@@ -34,9 +34,9 @@ background-color: rgb(255, 255, 127);
   <widget class="ATCMlabel" name="atcmLabelAnOut_2">
    <property name="geometry">
     <rect>
-     <x>149</x>
+     <x>212</x>
      <y>133</y>
-     <width>31</width>
+     <width>90</width>
      <height>35</height>
     </rect>
    </property>
@@ -91,9 +91,9 @@ background-color: rgb(255, 255, 127);
   <widget class="ATCMled" name="atcmLed_OK_DigOut_1">
    <property name="geometry">
     <rect>
-     <x>120</x>
+     <x>121</x>
      <y>240</y>
-     <width>31</width>
+     <width>90</width>
      <height>34</height>
     </rect>
    </property>
@@ -178,9 +178,9 @@ background-color: rgb(255, 255, 127);
   <widget class="ATCMlabel" name="atcmLabelAnOutConf_3">
    <property name="geometry">
     <rect>
-     <x>179</x>
+     <x>302</x>
      <y>169</y>
-     <width>31</width>
+     <width>90</width>
      <height>35</height>
     </rect>
    </property>
@@ -261,9 +261,9 @@ background-color: rgb(255, 255, 127);
   <widget class="QLabel" name="label_PLC_AnOut_4">
    <property name="geometry">
     <rect>
-     <x>208</x>
+     <x>390</x>
      <y>70</y>
-     <width>31</width>
+     <width>90</width>
      <height>34</height>
     </rect>
    </property>
@@ -354,9 +354,9 @@ background-color: rgb(255, 255, 127);
   <widget class="QLabel" name="label_PLC_AnOut_2">
    <property name="geometry">
     <rect>
-     <x>149</x>
+     <x>212</x>
      <y>70</y>
-     <width>31</width>
+     <width>90</width>
      <height>34</height>
     </rect>
    </property>
@@ -379,9 +379,9 @@ background-color: rgb(255, 255, 127);
   <widget class="QLabel" name="label_PLC_AnOut_3">
    <property name="geometry">
     <rect>
-     <x>177</x>
+     <x>300</x>
      <y>70</y>
-     <width>31</width>
+     <width>90</width>
      <height>34</height>
     </rect>
    </property>
@@ -404,9 +404,9 @@ background-color: rgb(255, 255, 127);
   <widget class="ATCMlabel" name="atcmLabelAnOutConf_2">
    <property name="geometry">
     <rect>
-     <x>149</x>
+     <x>212</x>
      <y>169</y>
-     <width>31</width>
+     <width>90</width>
      <height>35</height>
     </rect>
    </property>
@@ -461,9 +461,9 @@ background-color: rgb(255, 255, 127);
   <widget class="ATCMlabel" name="atcmLabelAnOutConf_4">
    <property name="geometry">
     <rect>
-     <x>209</x>
+     <x>391</x>
      <y>169</y>
-     <width>31</width>
+     <width>90</width>
      <height>35</height>
     </rect>
    </property>
@@ -521,7 +521,7 @@ background-color: rgb(255, 255, 127);
      <x>241</x>
      <y>1</y>
      <width>3</width>
-     <height>272</height>
+     <height>68</height>
     </rect>
    </property>
    <property name="orientation">
@@ -531,9 +531,9 @@ background-color: rgb(255, 255, 127);
   <widget class="ATCMled" name="atcmLed_PLC_AnOut_1">
    <property name="geometry">
     <rect>
-     <x>118</x>
+     <x>119</x>
      <y>102</y>
-     <width>31</width>
+     <width>90</width>
      <height>34</height>
     </rect>
    </property>
@@ -567,9 +567,9 @@ background-color: rgb(255, 255, 127);
   <widget class="ATCMlabel" name="atcmLabelAnOut_1">
    <property name="geometry">
     <rect>
-     <x>121</x>
+     <x>122</x>
      <y>133</y>
-     <width>31</width>
+     <width>90</width>
      <height>35</height>
     </rect>
    </property>
@@ -624,9 +624,9 @@ background-color: rgb(255, 255, 127);
   <widget class="ATCMled" name="atcmLed_PLC_AnOut_4">
    <property name="geometry">
     <rect>
-     <x>208</x>
+     <x>390</x>
      <y>102</y>
-     <width>31</width>
+     <width>90</width>
      <height>34</height>
     </rect>
    </property>
@@ -673,9 +673,9 @@ background-color: rgb(255, 255, 127);
   <widget class="ATCMled" name="atcmLed_OK_DigOut_4">
    <property name="geometry">
     <rect>
-     <x>210</x>
+     <x>392</x>
      <y>240</y>
-     <width>31</width>
+     <width>90</width>
      <height>34</height>
     </rect>
    </property>
@@ -709,9 +709,9 @@ background-color: rgb(255, 255, 127);
   <widget class="ATCMlabel" name="atcmLabelAnOut_3">
    <property name="geometry">
     <rect>
-     <x>179</x>
+     <x>302</x>
      <y>133</y>
-     <width>31</width>
+     <width>90</width>
      <height>35</height>
     </rect>
    </property>
@@ -766,9 +766,9 @@ background-color: rgb(255, 255, 127);
   <widget class="ATCMled" name="atcmLed_OK_DigOut_3">
    <property name="geometry">
     <rect>
-     <x>180</x>
+     <x>303</x>
      <y>240</y>
-     <width>31</width>
+     <width>90</width>
      <height>34</height>
     </rect>
    </property>
@@ -827,9 +827,9 @@ background-color: rgb(255, 255, 127);
   <widget class="ATCMlabel" name="atcmLabelAnOutConf_1">
    <property name="geometry">
     <rect>
-     <x>121</x>
+     <x>122</x>
      <y>169</y>
-     <width>31</width>
+     <width>90</width>
      <height>35</height>
     </rect>
    </property>
@@ -959,9 +959,9 @@ background-color: rgb(255, 255, 127);
   <widget class="QLabel" name="label_PLC_AnOut_1">
    <property name="geometry">
     <rect>
-     <x>122</x>
+     <x>123</x>
      <y>70</y>
-     <width>31</width>
+     <width>90</width>
      <height>34</height>
     </rect>
    </property>
@@ -987,7 +987,7 @@ background-color: rgb(255, 255, 127);
      <x>361</x>
      <y>1</y>
      <width>3</width>
-     <height>272</height>
+     <height>68</height>
     </rect>
    </property>
    <property name="orientation">
@@ -1024,9 +1024,9 @@ background-color: rgb(255, 255, 127);
   <widget class="ATCMled" name="atcmLed_PLC_AnOut_2">
    <property name="geometry">
     <rect>
-     <x>148</x>
+     <x>211</x>
      <y>102</y>
-     <width>31</width>
+     <width>90</width>
      <height>34</height>
     </rect>
    </property>
@@ -1060,9 +1060,9 @@ background-color: rgb(255, 255, 127);
   <widget class="ATCMled" name="atcmLed_OK_DigOut_2">
    <property name="geometry">
     <rect>
-     <x>150</x>
+     <x>213</x>
      <y>240</y>
-     <width>31</width>
+     <width>90</width>
      <height>34</height>
     </rect>
    </property>
@@ -1096,9 +1096,9 @@ background-color: rgb(255, 255, 127);
   <widget class="ATCMlabel" name="atcmLabelAnOut_4">
    <property name="geometry">
     <rect>
-     <x>209</x>
+     <x>391</x>
      <y>133</y>
-     <width>31</width>
+     <width>90</width>
      <height>35</height>
     </rect>
    </property>
@@ -1153,9 +1153,9 @@ background-color: rgb(255, 255, 127);
   <widget class="ATCMled" name="atcmLed_PLC_AnOut_3">
    <property name="geometry">
     <rect>
-     <x>178</x>
+     <x>301</x>
      <y>102</y>
-     <width>31</width>
+     <width>90</width>
      <height>34</height>
     </rect>
    </property>
@@ -1401,9 +1401,9 @@ background-color: rgb(255, 255, 127);
   <widget class="ATCMlabel" name="atcmLabelAnOut_5">
    <property name="geometry">
     <rect>
-     <x>122</x>
+     <x>123</x>
      <y>204</y>
-     <width>31</width>
+     <width>90</width>
      <height>35</height>
     </rect>
    </property>
@@ -1411,13 +1411,13 @@ background-color: rgb(255, 255, 127);
     <string>1.11</string>
    </property>
    <property name="toolTip">
-    <string>VAL_AnOut_1</string>
+    <string>RES_AnOut_1</string>
    </property>
    <property name="whatsThis">
     <string>ATCMlabel widget</string>
    </property>
    <property name="variable">
-    <string>VAL_AnOut_1</string>
+    <string>RES_AnOut_1</string>
    </property>
    <property name="refresh">
     <number>500</number>
@@ -1458,9 +1458,9 @@ background-color: rgb(255, 255, 127);
   <widget class="ATCMlabel" name="atcmLabelAnOut_6">
    <property name="geometry">
     <rect>
-     <x>180</x>
+     <x>303</x>
      <y>204</y>
-     <width>31</width>
+     <width>90</width>
      <height>35</height>
     </rect>
    </property>
@@ -1468,13 +1468,13 @@ background-color: rgb(255, 255, 127);
     <string>1.11</string>
    </property>
    <property name="toolTip">
-    <string>VAL_AnOut_3</string>
+    <string>RES_AnOut_3</string>
    </property>
    <property name="whatsThis">
     <string>ATCMlabel widget</string>
    </property>
    <property name="variable">
-    <string>VAL_AnOut_3</string>
+    <string>RES_AnOut_3</string>
    </property>
    <property name="refresh">
     <number>500</number>
@@ -1515,9 +1515,9 @@ background-color: rgb(255, 255, 127);
   <widget class="ATCMlabel" name="atcmLabelAnOut_7">
    <property name="geometry">
     <rect>
-     <x>150</x>
+     <x>213</x>
      <y>204</y>
-     <width>31</width>
+     <width>90</width>
      <height>35</height>
     </rect>
    </property>
@@ -1525,13 +1525,13 @@ background-color: rgb(255, 255, 127);
     <string>1.11</string>
    </property>
    <property name="toolTip">
-    <string>VAL_AnOut_2</string>
+    <string>RES_AnOut_2</string>
    </property>
    <property name="whatsThis">
     <string>ATCMlabel widget</string>
    </property>
    <property name="variable">
-    <string>VAL_AnOut_2</string>
+    <string>RES_AnOut_2</string>
    </property>
    <property name="refresh">
     <number>500</number>
@@ -1572,9 +1572,9 @@ background-color: rgb(255, 255, 127);
   <widget class="ATCMlabel" name="atcmLabelAnOut_8">
    <property name="geometry">
     <rect>
-     <x>210</x>
+     <x>392</x>
      <y>204</y>
-     <width>31</width>
+     <width>90</width>
      <height>35</height>
     </rect>
    </property>
@@ -1582,13 +1582,13 @@ background-color: rgb(255, 255, 127);
     <string>1.11</string>
    </property>
    <property name="toolTip">
-    <string>VAL_AnOut_4</string>
+    <string>RES_AnOut_4</string>
    </property>
    <property name="whatsThis">
     <string>ATCMlabel widget</string>
    </property>
    <property name="variable">
-    <string>VAL_AnOut_4</string>
+    <string>RES_AnOut_4</string>
    </property>
    <property name="refresh">
     <number>500</number>

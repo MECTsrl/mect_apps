@@ -60,8 +60,8 @@ END_VAR
 	    1: (* write the VAL test variables *)
 			WriteVAL();
 			substatus := 2;
-	    2: (* wait for propagation of TST and VAL @ priority 3 : 5000ms *)
-			timer(IN := TRUE, PT := T#5s);
+	    2: (* wait for propagation of TST and VAL @ priority 3 : 1000ms *)
+			timer(IN := TRUE, PT := T#2000ms);
 			if timer.Q then
 				timer(IN := FALSE);
 				(* write the test starting command *)
@@ -69,8 +69,8 @@ END_VAR
 		        TESTx_COMMAND := TEST_STATUS_DONE;
 				substatus := 3;
 			end_if;
-	    3: (* wait for propagation of COMMAND @ priority 2 : 1000ms *)
-			timer(IN := TRUE, PT := T#1s);
+	    3: (* wait for propagation of COMMAND @ priority 2 : 500ms *)
+			timer(IN := TRUE, PT := T#1000ms);
 			if timer.Q then
 				timer(IN := FALSE);
 				substatus := 4;

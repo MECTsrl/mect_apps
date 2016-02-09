@@ -1783,6 +1783,9 @@ background-color: rgb(255, 255, 127);
    <property name="borderRadius">
     <number>0</number>
    </property>
+   <property name="apparence">
+    <enum>QFrame::Plain</enum>
+   </property>
   </widget>
   <widget class="ATCMlabel" name="atcmLabelAnIn_3">
    <property name="geometry">
@@ -1839,6 +1842,9 @@ background-color: rgb(255, 255, 127);
    </property>
    <property name="borderRadius">
     <number>0</number>
+   </property>
+   <property name="apparence">
+    <enum>QFrame::Plain</enum>
    </property>
   </widget>
   <widget class="ATCMlabel" name="atcmLabelAnIn_4">
@@ -1954,6 +1960,9 @@ background-color: rgb(255, 255, 127);
    <property name="borderRadius">
     <number>0</number>
    </property>
+   <property name="apparence">
+    <enum>QFrame::Plain</enum>
+   </property>
   </widget>
   <widget class="ATCMlabel" name="atcmLabelAnInConf_4">
    <property name="geometry">
@@ -2010,6 +2019,9 @@ background-color: rgb(255, 255, 127);
    </property>
    <property name="borderRadius">
     <number>0</number>
+   </property>
+   <property name="apparence">
+    <enum>QFrame::Plain</enum>
    </property>
   </widget>
   <widget class="ATCMlabel" name="atcmLabelAnInConf_5">
@@ -2181,6 +2193,9 @@ background-color: rgb(255, 255, 127);
    </property>
    <property name="borderRadius">
     <number>0</number>
+   </property>
+   <property name="apparence">
+    <enum>QFrame::Plain</enum>
    </property>
   </widget>
   <widget class="ATCMlabel" name="atcmLabelAnInConf_6">

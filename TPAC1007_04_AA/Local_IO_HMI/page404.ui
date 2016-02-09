@@ -87,7 +87,7 @@ background-color: rgb(255, 255, 127);
      <x>241</x>
      <y>1</y>
      <width>3</width>
-     <height>272</height>
+     <height>68</height>
     </rect>
    </property>
    <property name="orientation">
@@ -98,7 +98,7 @@ background-color: rgb(255, 255, 127);
    <property name="geometry">
     <rect>
      <x>1</x>
-     <y>104</y>
+     <y>101</y>
      <width>481</width>
      <height>3</height>
     </rect>
@@ -124,7 +124,7 @@ background-color: rgb(255, 255, 127);
    <property name="geometry">
     <rect>
      <x>1</x>
-     <y>69</y>
+     <y>67</y>
      <width>481</width>
      <height>3</height>
     </rect>
@@ -139,7 +139,7 @@ background-color: rgb(255, 255, 127);
      <x>361</x>
      <y>1</y>
      <width>3</width>
-     <height>272</height>
+     <height>68</height>
     </rect>
    </property>
    <property name="orientation">
@@ -302,8 +302,8 @@ background-color: rgb(255, 255, 127);
    <property name="geometry">
     <rect>
      <x>120</x>
-     <y>203</y>
-     <width>31</width>
+     <y>204</y>
+     <width>90</width>
      <height>35</height>
     </rect>
    </property>
@@ -359,8 +359,8 @@ background-color: rgb(255, 255, 127);
    <property name="geometry">
     <rect>
      <x>209</x>
-     <y>167</y>
-     <width>31</width>
+     <y>170</y>
+     <width>90</width>
      <height>35</height>
     </rect>
    </property>
@@ -416,8 +416,8 @@ background-color: rgb(255, 255, 127);
    <property name="geometry">
     <rect>
      <x>120</x>
-     <y>167</y>
-     <width>31</width>
+     <y>170</y>
+     <width>90</width>
      <height>35</height>
     </rect>
    </property>
@@ -523,8 +523,8 @@ background-color: rgb(255, 255, 127);
    <property name="geometry">
     <rect>
      <x>210</x>
-     <y>239</y>
-     <width>31</width>
+     <y>238</y>
+     <width>90</width>
      <height>35</height>
     </rect>
    </property>
@@ -580,8 +580,8 @@ background-color: rgb(255, 255, 127);
    <property name="geometry">
     <rect>
      <x>122</x>
-     <y>69</y>
-     <width>31</width>
+     <y>68</y>
+     <width>90</width>
      <height>34</height>
     </rect>
    </property>
@@ -605,8 +605,8 @@ background-color: rgb(255, 255, 127);
    <property name="geometry">
     <rect>
      <x>210</x>
-     <y>69</y>
-     <width>31</width>
+     <y>68</y>
+     <width>90</width>
      <height>34</height>
     </rect>
    </property>
@@ -655,8 +655,8 @@ background-color: rgb(255, 255, 127);
    <property name="geometry">
     <rect>
      <x>121</x>
-     <y>239</y>
-     <width>31</width>
+     <y>238</y>
+     <width>90</width>
      <height>35</height>
     </rect>
    </property>
@@ -712,8 +712,8 @@ background-color: rgb(255, 255, 127);
    <property name="geometry">
     <rect>
      <x>118</x>
-     <y>101</y>
-     <width>31</width>
+     <y>102</y>
+     <width>90</width>
      <height>34</height>
     </rect>
    </property>
@@ -773,8 +773,8 @@ background-color: rgb(255, 255, 127);
    <property name="geometry">
     <rect>
      <x>209</x>
-     <y>101</y>
-     <width>31</width>
+     <y>102</y>
+     <width>90</width>
      <height>34</height>
     </rect>
    </property>
@@ -809,8 +809,8 @@ background-color: rgb(255, 255, 127);
    <property name="geometry">
     <rect>
      <x>209</x>
-     <y>203</y>
-     <width>31</width>
+     <y>204</y>
+     <width>90</width>
      <height>35</height>
     </rect>
    </property>
@@ -865,9 +865,9 @@ background-color: rgb(255, 255, 127);
   <widget class="QLabel" name="label_PLC_AnIn_3">
    <property name="geometry">
     <rect>
-     <x>311</x>
+     <x>300</x>
      <y>68</y>
-     <width>31</width>
+     <width>90</width>
      <height>34</height>
     </rect>
    </property>
@@ -890,9 +890,9 @@ background-color: rgb(255, 255, 127);
   <widget class="ATCMled" name="atcmLed_PLC_AnIn_3">
    <property name="geometry">
     <rect>
-     <x>310</x>
-     <y>100</y>
-     <width>31</width>
+     <x>299</x>
+     <y>102</y>
+     <width>90</width>
      <height>34</height>
     </rect>
    </property>
@@ -926,9 +926,9 @@ background-color: rgb(255, 255, 127);
   <widget class="ATCMlabel" name="atcmLabelAnInConf_8">
    <property name="geometry">
     <rect>
-     <x>310</x>
-     <y>202</y>
-     <width>31</width>
+     <x>299</x>
+     <y>204</y>
+     <width>90</width>
      <height>35</height>
     </rect>
    </property>
@@ -983,9 +983,9 @@ background-color: rgb(255, 255, 127);
   <widget class="ATCMlabel" name="atcmLabelAnIn_7">
    <property name="geometry">
     <rect>
-     <x>311</x>
+     <x>300</x>
      <y>238</y>
-     <width>31</width>
+     <width>90</width>
      <height>35</height>
     </rect>
    </property>
@@ -1040,9 +1040,9 @@ background-color: rgb(255, 255, 127);
   <widget class="ATCMlabel" name="atcmLabelAnInConf_3">
    <property name="geometry">
     <rect>
-     <x>310</x>
-     <y>166</y>
-     <width>31</width>
+     <x>299</x>
+     <y>170</y>
+     <width>90</width>
      <height>35</height>
     </rect>
    </property>
@@ -1097,9 +1097,9 @@ background-color: rgb(255, 255, 127);
   <widget class="ATCMlabel" name="atcmLabelAnIn_8">
    <property name="geometry">
     <rect>
-     <x>401</x>
-     <y>241</y>
-     <width>31</width>
+     <x>390</x>
+     <y>238</y>
+     <width>90</width>
      <height>35</height>
     </rect>
    </property>
@@ -1154,9 +1154,9 @@ background-color: rgb(255, 255, 127);
   <widget class="ATCMlabel" name="atcmLabelAnInConf_4">
    <property name="geometry">
     <rect>
-     <x>400</x>
-     <y>169</y>
-     <width>31</width>
+     <x>389</x>
+     <y>170</y>
+     <width>90</width>
      <height>35</height>
     </rect>
    </property>
@@ -1211,9 +1211,9 @@ background-color: rgb(255, 255, 127);
   <widget class="QLabel" name="label_PLC_AnIn_4">
    <property name="geometry">
     <rect>
-     <x>401</x>
-     <y>71</y>
-     <width>31</width>
+     <x>390</x>
+     <y>68</y>
+     <width>90</width>
      <height>34</height>
     </rect>
    </property>
@@ -1236,9 +1236,9 @@ background-color: rgb(255, 255, 127);
   <widget class="ATCMled" name="atcmLed_PLC_AnIn_4">
    <property name="geometry">
     <rect>
-     <x>400</x>
-     <y>103</y>
-     <width>31</width>
+     <x>389</x>
+     <y>102</y>
+     <width>90</width>
      <height>34</height>
     </rect>
    </property>
@@ -1272,9 +1272,9 @@ background-color: rgb(255, 255, 127);
   <widget class="ATCMlabel" name="atcmLabelAnInConf_9">
    <property name="geometry">
     <rect>
-     <x>400</x>
-     <y>205</y>
-     <width>31</width>
+     <x>389</x>
+     <y>204</y>
+     <width>90</width>
      <height>35</height>
     </rect>
    </property>
@@ -1330,8 +1330,8 @@ background-color: rgb(255, 255, 127);
    <property name="geometry">
     <rect>
      <x>209</x>
-     <y>133</y>
-     <width>31</width>
+     <y>136</y>
+     <width>90</width>
      <height>35</height>
     </rect>
    </property>
@@ -1412,8 +1412,8 @@ background-color: rgb(255, 255, 127);
    <property name="geometry">
     <rect>
      <x>120</x>
-     <y>133</y>
-     <width>31</width>
+     <y>136</y>
+     <width>90</width>
      <height>35</height>
     </rect>
    </property>
@@ -1468,9 +1468,9 @@ background-color: rgb(255, 255, 127);
   <widget class="ATCMlabel" name="atcmLabelAnIn_11">
    <property name="geometry">
     <rect>
-     <x>310</x>
-     <y>132</y>
-     <width>31</width>
+     <x>299</x>
+     <y>136</y>
+     <width>90</width>
      <height>35</height>
     </rect>
    </property>
@@ -1525,9 +1525,9 @@ background-color: rgb(255, 255, 127);
   <widget class="ATCMlabel" name="atcmLabelAnIn_12">
    <property name="geometry">
     <rect>
-     <x>400</x>
-     <y>135</y>
-     <width>31</width>
+     <x>389</x>
+     <y>136</y>
+     <width>90</width>
      <height>35</height>
     </rect>
    </property>
@@ -1868,15 +1868,15 @@ background-color: rgb(255, 255, 127);
   <zorder>atcmLabelAnIn_12</zorder>
   <zorder>atcmButton_page402_2</zorder>
   <zorder>atcmLabel_PLC_time</zorder>
-  <zorder>line_hr_2</zorder>
-  <zorder>line_hr_1</zorder>
-  <zorder>line_vt_1</zorder>
-  <zorder>line_hr_3</zorder>
-  <zorder>line_vt_2</zorder>
-  <zorder>line_vt_4</zorder>
   <zorder>atcmLabel</zorder>
   <zorder>label_Start_3</zorder>
   <zorder>atcmLabel_2</zorder>
+  <zorder>line_hr_2</zorder>
+  <zorder>line_hr_3</zorder>
+  <zorder>line_vt_2</zorder>
+  <zorder>line_hr_1</zorder>
+  <zorder>line_vt_1</zorder>
+  <zorder>line_vt_4</zorder>
  </widget>
  <customwidgets>
   <customwidget>

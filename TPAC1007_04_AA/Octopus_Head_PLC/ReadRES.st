@@ -53,10 +53,10 @@ END_VAR
 	if TST_AnIn_11 then RES_AnIn_11 := RESx_AnIn_11;  end_if;
 	if TST_AnIn_12 then RES_AnIn_12 := RESx_AnIn_12;  end_if;
 
-	if TST_AnOut_1  then RES_AnOut_1 := RES2_AnIn_1;  end_if;
-	if TST_AnOut_2  then RES_AnOut_2 := RES2_AnIn_2;  end_if;
-	if TST_AnOut_3  then RES_AnOut_3 := RTU_AnIn_1;  end_if;
-	if TST_AnOut_4  then RES_AnOut_4 := RTU_AnIn_2;  end_if;
+	if TST_AnOut_1  then RES_AnOut_1 := RES2_AnIn_1 / 10;  end_if;
+	if TST_AnOut_2  then RES_AnOut_2 := RES2_AnIn_2 / 10;  end_if;
+	if TST_AnOut_3  then RES_AnOut_3 := RTU_AnIn_1 / 10;  end_if;
+	if TST_AnOut_4  then RES_AnOut_4 := RTU_AnIn_2 / 10;  end_if;
 
 	if TST_Tamb  then RES_Tamb  := RESx_Tamb;  end_if;
 	if TST_RPM   then RES_RPM  := RESx_RPM;  end_if;
