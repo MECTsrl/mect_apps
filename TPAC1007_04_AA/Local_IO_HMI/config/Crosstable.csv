@@ -4180,24 +4180,24 @@
 2;P;RES_HWconfig    ;UINT     ;0   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;88  ;4177;4   ;[RW]
 3;P;TST_RTUS_WR     ;WORD_BIT ;1   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;89  ;4181;16  ;[RO]
 3;P;TST_RTUS_RD     ;WORD_BIT ;2   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;89  ;4181;16  ;[RO]
-3;P;TST_RTU_WR      ;WORD_BIT ;3   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;89  ;4181;16  ;[RO]
-3;P;TST_RTU_RD      ;WORD_BIT ;4   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;89  ;4181;16  ;[RO]
+3;P;TST_RTU1_WR     ;WORD_BIT ;3   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;89  ;4181;16  ;[RO]
+3;P;TST_RTU1_RD     ;WORD_BIT ;4   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;89  ;4181;16  ;[RO]
 3;P;TST_RTU3_WR     ;WORD_BIT ;5   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;89  ;4181;16  ;[RO]
 3;P;TST_RTU3_RD     ;WORD_BIT ;6   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;89  ;4181;16  ;[RO]
 3;P;TST_CAN_WR      ;WORD_BIT ;7   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;89  ;4181;16  ;[RO]
 3;P;TST_CAN_RD      ;WORD_BIT ;8   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;89  ;4181;16  ;[RO]
 3;P;VAL_RTUS_WR     ;WORD_BIT ;1   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;90  ;4181;16  ;[RO]
 3;P;VAL_RTUS_RD     ;WORD_BIT ;2   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;90  ;4181;16  ;[RO]
-3;P;VAL_RTU_WR      ;WORD_BIT ;3   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;90  ;4181;16  ;[RO]
-3;P;VAL_RTU_RD      ;WORD_BIT ;4   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;90  ;4181;16  ;[RO]
+3;P;VAL_RTU1_WR     ;WORD_BIT ;3   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;90  ;4181;16  ;[RO]
+3;P;VAL_RTU1_RD     ;WORD_BIT ;4   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;90  ;4181;16  ;[RO]
 3;P;VAL_RTU3_WR     ;WORD_BIT ;5   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;90  ;4181;16  ;[RO]
 3;P;VAL_RTU3_RD     ;WORD_BIT ;6   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;90  ;4181;16  ;[RO]
 3;P;VAL_CAN_WR      ;WORD_BIT ;7   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;90  ;4181;16  ;[RO]
 3;P;VAL_CAN_RD      ;WORD_BIT ;8   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;90  ;4181;16  ;[RO]
 2;P;RES_RTUS_WR     ;WORD_BIT ;1   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;91  ;4197;8   ;[RW]
 2;P;RES_RTUS_RD     ;WORD_BIT ;2   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;91  ;4197;8   ;[RW]
-2;P;RES_RTU_WR      ;WORD_BIT ;3   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;91  ;4197;8   ;[RW]
-2;P;RES_RTU_RD      ;WORD_BIT ;4   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;91  ;4197;8   ;[RW]
+2;P;RES_RTU1_WR     ;WORD_BIT ;3   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;91  ;4197;8   ;[RW]
+2;P;RES_RTU1_RD     ;WORD_BIT ;4   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;91  ;4197;8   ;[RW]
 2;P;RES_RTU3_WR     ;WORD_BIT ;5   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;91  ;4197;8   ;[RW]
 2;P;RES_RTU3_RD     ;WORD_BIT ;6   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;91  ;4197;8   ;[RW]
 2;P;RES_CAN_WR      ;WORD_BIT ;7   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;91  ;4197;8   ;[RW]
@@ -4997,9 +4997,9 @@
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
+1;P;RTU_HEARTBEAT   ;UINT     ;0   ;RTU       ;               ;    ;2   ;0   ;5000;3   ;[RW]
+1;P;RTU_RTU1_WR     ;WORD_BIT ;3   ;RTU       ;               ;    ;2   ;1   ;5000;3   ;[RW]
+1;P;RTU_RTU1_RD     ;WORD_BIT ;4   ;RTU       ;               ;    ;2   ;2   ;5000;3   ;[RO]
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;

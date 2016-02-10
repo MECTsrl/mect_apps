@@ -5,9 +5,9 @@ FUNCTION CheckOK
 VAR_INPUT
 END_VAR
 VAR 
-	Tolleranza_Out : INT := 2; (* 2 x (10V / 4000 = 0.0025V := 0.003 V := 10 mV) *)
-	Tolleranza_OutX: INT := 3; (* 10 mV + (10V /  800 = 0.0125V := 0.020 V := 20 mV) *)
-	Tolleranza_In : INT := 20; (* 2 * 10mV *)
+	Tolleranza_In : INT := 20; (* 20mV = 2 * 10mV *)
+	Tolleranza_Out : INT := 2; (* 20mV = 2 x (10V / 4000 = 0.0025V := 0.003 V := 10 mV) *)
+	Tolleranza_OutX: INT := 3; (* 30mV = 10 mV + (10V /  800 = 0.0125V := 0.020 V := 20 mV) *)
 	Tolleranza_Tamb_min : INT := 10;
 	Tolleranza_RPM : INT := 100;
 	Tolleranza_VCC_set : INT := 10; (* 0.01 V *)

@@ -55,30 +55,32 @@ END_VAR
 		case substatus of
 		0: (* clear the OK test variables and write the TST ones *)
 			ClearOK();
-			WriteTST();
 			substatus := 1;
-	    1: (* write the VAL test variables *)
-			WriteVAL();
+	    1: (* write the TST test variables *)
+			WriteTST();
 			substatus := 2;
-	    2: (* wait for propagation of TST and VAL @ priority 3 : 1000ms *)
+	    2: (* write the VAL test variables *)
+			WriteVAL();
+			substatus := 3;
+	    3: (* wait for propagation of TST and VAL @ priority 3 : 1000ms *)
 			timer(IN := TRUE, PT := T#2000ms);
 			if timer.Q then
 				timer(IN := FALSE);
 				(* write the test starting command *)
 		        TEST2_COMMAND := TEST_STATUS_DONE;
 		        TESTx_COMMAND := TEST_STATUS_DONE;
-				substatus := 3;
+				substatus := 4;
 			end_if;
-	    3: (* wait for propagation of COMMAND @ priority 2 : 500ms *)
+	    4: (* wait for propagation of COMMAND @ priority 2 : 500ms *)
 			timer(IN := TRUE, PT := T#1000ms);
 			if timer.Q then
 				timer(IN := FALSE);
-				substatus := 4;
+				substatus := 5;
 			end_if;
-		4: (* waiting for test completion and then read the results *)
+		5: (* waiting for test completion and then read the results *)
 		    if (TEST2_STATUS = TEST_STATUS_DONE and TESTx_STATUS = TEST_STATUS_DONE) then
 				ReadRES();
-				substatus := 5; (* need a step for reading RES %Q *)
+				substatus := 6; (* need a step for reading RES %Q *)
 				return;
 			end_if;
 		    if (TEST2_STATUS <> TEST_STATUS_DONE) then
@@ -87,10 +89,10 @@ END_VAR
 		    if (TESTx_STATUS <> TEST_STATUS_DONE) then
 		        TESTx_COMMAND := TEST_STATUS_DONE;
 		    end_if;
-		5: (* check RES and VAL *)
+		6: (* check RES and VAL *)
 			CheckOK();
-			substatus := 6;  (* need a step for reading OK %Q *)
-		6: (* resume *)
+			substatus := 7;  (* need a step for reading OK %Q *)
+		7: (* resume *)
 			if AllTestedAreOK() then
 				RESULT := RESULT_OK;
 				RESULTS_OK := RESULTS_OK + 1;

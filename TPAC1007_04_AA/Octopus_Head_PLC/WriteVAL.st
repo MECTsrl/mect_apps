@@ -208,6 +208,22 @@ END_VAR
 		;
 	end_if;
 
+	if TST_RTU1_WR then
+		VALx_RTU1_WR := VAL_RTU1_WR;
+	end_if;
+
+	if TST_RTU1_RD then
+		VAL2_RTUS_WR := VAL_RTU1_RD;
+	end_if;
+
+	if TST_CAN1_WR then
+		VALx_CAN1_WR := VAL_CAN1_WR;
+	end_if;
+
+	if TST_RTU1_RD then
+		;
+	end_if;
+
 	(* only from the testing equipment *)
 	if TST_VCC_set then
 		(* --> Head AO3 V *) 

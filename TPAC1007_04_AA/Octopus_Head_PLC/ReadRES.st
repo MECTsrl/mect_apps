@@ -70,4 +70,10 @@ END_VAR
 	if TST_FWrevision  then RES_FWrevision  := RESx_FWrevision;  end_if;
 	if TST_HWconfig  then RES_HWconfig  := RESx_HWconfig;  end_if;
 
+	if TST_RTU1_WR then RES_RTU1_WR := RES2_RTUS_RD; end_if;
+	if TST_RTU1_RD then RES_RTU1_RD := RESx_RTU1_RD; end_if;
+
+	if TST_CAN1_WR then RES_CAN1_WR := RESx_CAN1_RD; end_if;
+	if TST_CAN1_RD then RES_CAN1_RD := RESx_CAN1_RD; end_if;
+
 END_FUNCTION

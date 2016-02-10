@@ -3,7 +3,6 @@
 PROGRAM Init 
 #import "Crosstable.gvl"
 
-	PLC_DigDir_8 := False; (* FIXME: empty ? *)
 	PLC_DigDir_1 := False; (* PLC_PWR_SWITCH input *)
 	PLC_DigDir_2 := True; (* PLC_VPOT_ON output *)
 	PLC_DigDir_3 := True; (* PLC_VCC_ON output *)
@@ -16,5 +15,11 @@ PROGRAM Init
 		PLC_DigOut_2 := False;
 		PLC_DigOut_3 := False;
 	end_if;
+
+(* ClearPLC(); 
+   [CMD]: ERROR V0308: Download Configuration {To many read/write memory regions.}
+*)
+	RTU_DigOut_1 := FALSE;
+	RTU_DigOut_2 := True;
 
 END_PROGRAM

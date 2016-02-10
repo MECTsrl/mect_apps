@@ -41,4 +41,7 @@ END_VAR
     if (TST_FWrevision) then RES_FWrevision := PLC_FWrevision; end_if;
     if (TST_HWconfig  ) then RES_HWconfig := PLC_HWconfig; end_if;
 
+	if (TST_RTU1_WR   ) then ; end_if;
+	if (TST_RTU1_RD   ) then RES_RTU1_RD := RTU_RTU1_RD; end_if;
+
 END_FUNCTION

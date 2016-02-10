@@ -695,19 +695,186 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="46"/>
+        <location filename="page200.ui" line="81"/>
+        <location filename="page200.ui" line="402"/>
         <source>ATCMbutton widget</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="49"/>
+        <location filename="page200.ui" line="84"/>
         <source>menu</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="78"/>
-        <location filename="page200.ui" line="81"/>
-        <source>MENU</source>
+        <location filename="page200.ui" line="113"/>
+        <location filename="page200.ui" line="116"/>
+        <source>TPAC1007_4AA</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="149"/>
+        <source>100</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="152"/>
+        <location filename="page200.ui" line="158"/>
+        <source>PLC_FWrevision</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="155"/>
+        <location filename="page200.ui" line="342"/>
+        <location filename="page200.ui" line="610"/>
+        <location filename="page200.ui" line="666"/>
+        <location filename="page200.ui" line="799"/>
+        <location filename="page200.ui" line="911"/>
+        <source>ATCMlabel widget</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="164"/>
+        <location filename="page200.ui" line="167"/>
+        <location filename="page200.ui" line="351"/>
+        <location filename="page200.ui" line="354"/>
+        <location filename="page200.ui" line="619"/>
+        <location filename="page200.ui" line="622"/>
+        <location filename="page200.ui" line="675"/>
+        <location filename="page200.ui" line="678"/>
+        <location filename="page200.ui" line="808"/>
+        <location filename="page200.ui" line="811"/>
+        <location filename="page200.ui" line="920"/>
+        <location filename="page200.ui" line="923"/>
+        <source>0</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="233"/>
+        <source>1:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="286"/>
+        <source>RTU1</source>
+        <oldsource>RTU</oldsource>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="311"/>
+        <source>RD</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="336"/>
+        <source>555</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="339"/>
+        <location filename="page200.ui" line="345"/>
+        <source>PLC_HWconfig</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="399"/>
+        <location filename="page200.ui" line="411"/>
+        <source>RTU_RTU1_WR</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="461"/>
+        <source>WR</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="477"/>
+        <location filename="page200.ui" line="483"/>
+        <source>RTU_RTU1_RD</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="480"/>
+        <source>ATCMled widget</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="535"/>
+        <source>Local_IO page200</source>
+        <oldsource>Local_IO</oldsource>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="560"/>
+        <source>0:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="585"/>
+        <source>Modbus/TCP</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="607"/>
+        <location filename="page200.ui" line="613"/>
+        <source>TEST_STATUS</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="663"/>
+        <location filename="page200.ui" line="669"/>
+        <source>TEST_COMMAND</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="718"/>
+        <source>ATCM QTime</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="721"/>
+        <source>ATCMtime widget</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="752"/>
+        <source>ATCM QDate</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="755"/>
+        <source>ATCMdate widget</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="793"/>
+        <source>86400.00</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="796"/>
+        <location filename="page200.ui" line="802"/>
+        <source>PLC_time</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="859"/>
+        <source>HeartBeat</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="884"/>
+        <source>2:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="905"/>
+        <source>65535</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="908"/>
+        <location filename="page200.ui" line="914"/>
+        <source>RTU_HEARTBEAT</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -1076,7 +1243,8 @@
     <message>
         <location filename="page400.ui" line="1090"/>
         <location filename="page400.ui" line="1096"/>
-        <source>TST_RTU_RD</source>
+        <source>TST_RTU1_RD</source>
+        <oldsource>TST_RTU_RD</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1265,7 +1433,8 @@
     <message>
         <location filename="page400.ui" line="1959"/>
         <location filename="page400.ui" line="1965"/>
-        <source>TST_RTU_WR</source>
+        <source>TST_RTU1_WR</source>
+        <oldsource>TST_RTU_WR</oldsource>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -2959,6 +3128,12 @@
         <location filename="page405.ui" line="639"/>
         <location filename="page405.ui" line="699"/>
         <location filename="page405.ui" line="780"/>
+        <location filename="page405.ui" line="1152"/>
+        <location filename="page405.ui" line="1209"/>
+        <location filename="page405.ui" line="1302"/>
+        <location filename="page405.ui" line="1421"/>
+        <location filename="page405.ui" line="1478"/>
+        <location filename="page405.ui" line="1535"/>
         <source>ATCMlabel widget</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2973,6 +3148,18 @@
         <location filename="page405.ui" line="711"/>
         <location filename="page405.ui" line="789"/>
         <location filename="page405.ui" line="792"/>
+        <location filename="page405.ui" line="1161"/>
+        <location filename="page405.ui" line="1164"/>
+        <location filename="page405.ui" line="1218"/>
+        <location filename="page405.ui" line="1221"/>
+        <location filename="page405.ui" line="1311"/>
+        <location filename="page405.ui" line="1314"/>
+        <location filename="page405.ui" line="1430"/>
+        <location filename="page405.ui" line="1433"/>
+        <location filename="page405.ui" line="1487"/>
+        <location filename="page405.ui" line="1490"/>
+        <location filename="page405.ui" line="1544"/>
+        <location filename="page405.ui" line="1547"/>
         <source>0</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3005,12 +3192,21 @@
     </message>
     <message>
         <location filename="page405.ui" line="402"/>
+        <location filename="page405.ui" line="830"/>
+        <location filename="page405.ui" line="866"/>
+        <location filename="page405.ui" line="902"/>
+        <location filename="page405.ui" line="964"/>
+        <location filename="page405.ui" line="1000"/>
+        <location filename="page405.ui" line="1036"/>
+        <location filename="page405.ui" line="1263"/>
+        <location filename="page405.ui" line="1356"/>
         <source>ATCMled widget</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="page405.ui" line="333"/>
-        <source>PLC_</source>
+        <source>PLC_  / RTU_</source>
+        <oldsource>PLC_</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3075,6 +3271,143 @@
         <location filename="page405.ui" line="783"/>
         <source>TEST_STATUS</source>
         <oldsource>START_REMOTE</oldsource>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page405.ui" line="827"/>
+        <location filename="page405.ui" line="833"/>
+        <location filename="page405.ui" line="976"/>
+        <location filename="page405.ui" line="1048"/>
+        <source>TST_RTU1_WR</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page405.ui" line="863"/>
+        <location filename="page405.ui" line="869"/>
+        <source>RES_RTU1_RD</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page405.ui" line="878"/>
+        <location filename="page405.ui" line="899"/>
+        <location filename="page405.ui" line="905"/>
+        <location filename="page405.ui" line="1012"/>
+        <source>TST_RTU1_RD</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page405.ui" line="944"/>
+        <source>RTU1
+RD</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page405.ui" line="961"/>
+        <location filename="page405.ui" line="967"/>
+        <source>VAL_RTU1_WR</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page405.ui" line="997"/>
+        <location filename="page405.ui" line="1003"/>
+        <source>RTU_RTU1_RD</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page405.ui" line="1033"/>
+        <location filename="page405.ui" line="1039"/>
+        <source>RTU_RTU1_WR</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page405.ui" line="1078"/>
+        <source>RTU1
+WR</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page405.ui" line="1104"/>
+        <source>VAL_</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page405.ui" line="1129"/>
+        <source>FW
+revision</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page405.ui" line="1146"/>
+        <location filename="page405.ui" line="1296"/>
+        <location filename="page405.ui" line="1529"/>
+        <source>123</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page405.ui" line="1149"/>
+        <location filename="page405.ui" line="1155"/>
+        <source>PLC_FWrevision</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page405.ui" line="1170"/>
+        <location filename="page405.ui" line="1260"/>
+        <location filename="page405.ui" line="1266"/>
+        <location filename="page405.ui" line="1320"/>
+        <location filename="page405.ui" line="1553"/>
+        <source>TST_FWrevision</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page405.ui" line="1203"/>
+        <location filename="page405.ui" line="1415"/>
+        <location filename="page405.ui" line="1472"/>
+        <source>321</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page405.ui" line="1206"/>
+        <location filename="page405.ui" line="1212"/>
+        <source>PLC_HWconfig</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page405.ui" line="1227"/>
+        <location filename="page405.ui" line="1353"/>
+        <location filename="page405.ui" line="1359"/>
+        <location filename="page405.ui" line="1439"/>
+        <location filename="page405.ui" line="1496"/>
+        <source>TST_HWconfig</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page405.ui" line="1299"/>
+        <location filename="page405.ui" line="1305"/>
+        <source>VAL_FWrevision</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page405.ui" line="1398"/>
+        <source>HW
+config</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page405.ui" line="1418"/>
+        <location filename="page405.ui" line="1424"/>
+        <source>VAL_HWconfig</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page405.ui" line="1475"/>
+        <location filename="page405.ui" line="1481"/>
+        <source>RES_HWconfig</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page405.ui" line="1532"/>
+        <location filename="page405.ui" line="1538"/>
+        <source>RES_FWrevision</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

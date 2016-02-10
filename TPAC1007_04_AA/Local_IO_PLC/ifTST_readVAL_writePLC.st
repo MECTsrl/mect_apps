@@ -40,4 +40,7 @@ END_VAR
     if (TST_FWrevision) then RES_FWrevision := 0; end_if;
     if (TST_HWconfig  ) then RES_HWconfig := 0; end_if;
 
+	if (TST_RTU1_WR   ) then RTU_RTU1_WR := VAL_RTU1_WR; end_if;
+	if (TST_RTU1_RD   ) then ; end_if;
+
 END_FUNCTION

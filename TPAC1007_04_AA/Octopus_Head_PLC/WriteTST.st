@@ -89,4 +89,14 @@ END_VAR
     TSTx_HWconfig := TST_HWconfig;
     TST2_AnOut_3 := TST_RPM;
 
+	(* we test the RTU1 master using Horn as rtu slave  *)
+    TSTx_RTU1_WR := TST_RTU1_WR;
+	TST2_RTUS_RD := TST_RTU1_WR;
+    TSTx_RTU1_RD := TST_RTU1_RD;
+	TST2_RTUS_WR := TST_RTU1_RD;
+
+	(* we test the CAN master using MPNC10 as CAN device  *)
+    TSTx_CAN1_WR := TST_CAN1_WR;
+    TSTx_CAN1_RD := TST_CAN1_RD;
+
 END_FUNCTION

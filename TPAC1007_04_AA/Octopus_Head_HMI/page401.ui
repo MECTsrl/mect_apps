@@ -1414,10 +1414,10 @@ background-color: rgb(255, 255, 127);
     </color>
    </property>
    <property name="text">
-    <string>page400 Octopus</string>
+    <string>page400 OK/NG</string>
    </property>
    <property name="pressText">
-    <string>page400 Octopus</string>
+    <string>page400 OK/NG</string>
    </property>
    <property name="borderWidth">
     <number>0</number>

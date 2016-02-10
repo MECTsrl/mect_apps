@@ -1120,17 +1120,17 @@ int doWrite_TST_RTUS_RD(int value);
 int addWrite_TST_RTUS_RD(int value);
 int getStatus_TST_RTUS_RD();
  
-#define ID_TST_RTU_WR 4183
-extern int TST_RTU_WR;
-int doWrite_TST_RTU_WR(int value);
-int addWrite_TST_RTU_WR(int value);
-int getStatus_TST_RTU_WR();
+#define ID_TST_RTU1_WR 4183
+extern int TST_RTU1_WR;
+int doWrite_TST_RTU1_WR(int value);
+int addWrite_TST_RTU1_WR(int value);
+int getStatus_TST_RTU1_WR();
  
-#define ID_TST_RTU_RD 4184
-extern int TST_RTU_RD;
-int doWrite_TST_RTU_RD(int value);
-int addWrite_TST_RTU_RD(int value);
-int getStatus_TST_RTU_RD();
+#define ID_TST_RTU1_RD 4184
+extern int TST_RTU1_RD;
+int doWrite_TST_RTU1_RD(int value);
+int addWrite_TST_RTU1_RD(int value);
+int getStatus_TST_RTU1_RD();
  
 #define ID_TST_RTU3_WR 4185
 extern int TST_RTU3_WR;
@@ -1168,17 +1168,17 @@ int doWrite_VAL_RTUS_RD(int value);
 int addWrite_VAL_RTUS_RD(int value);
 int getStatus_VAL_RTUS_RD();
  
-#define ID_VAL_RTU_WR 4191
-extern int VAL_RTU_WR;
-int doWrite_VAL_RTU_WR(int value);
-int addWrite_VAL_RTU_WR(int value);
-int getStatus_VAL_RTU_WR();
+#define ID_VAL_RTU1_WR 4191
+extern int VAL_RTU1_WR;
+int doWrite_VAL_RTU1_WR(int value);
+int addWrite_VAL_RTU1_WR(int value);
+int getStatus_VAL_RTU1_WR();
  
-#define ID_VAL_RTU_RD 4192
-extern int VAL_RTU_RD;
-int doWrite_VAL_RTU_RD(int value);
-int addWrite_VAL_RTU_RD(int value);
-int getStatus_VAL_RTU_RD();
+#define ID_VAL_RTU1_RD 4192
+extern int VAL_RTU1_RD;
+int doWrite_VAL_RTU1_RD(int value);
+int addWrite_VAL_RTU1_RD(int value);
+int getStatus_VAL_RTU1_RD();
  
 #define ID_VAL_RTU3_WR 4193
 extern int VAL_RTU3_WR;
@@ -1216,17 +1216,17 @@ int doWrite_RES_RTUS_RD(int value);
 int addWrite_RES_RTUS_RD(int value);
 int getStatus_RES_RTUS_RD();
  
-#define ID_RES_RTU_WR 4199
-extern int RES_RTU_WR;
-int doWrite_RES_RTU_WR(int value);
-int addWrite_RES_RTU_WR(int value);
-int getStatus_RES_RTU_WR();
+#define ID_RES_RTU1_WR 4199
+extern int RES_RTU1_WR;
+int doWrite_RES_RTU1_WR(int value);
+int addWrite_RES_RTU1_WR(int value);
+int getStatus_RES_RTU1_WR();
  
-#define ID_RES_RTU_RD 4200
-extern int RES_RTU_RD;
-int doWrite_RES_RTU_RD(int value);
-int addWrite_RES_RTU_RD(int value);
-int getStatus_RES_RTU_RD();
+#define ID_RES_RTU1_RD 4200
+extern int RES_RTU1_RD;
+int doWrite_RES_RTU1_RD(int value);
+int addWrite_RES_RTU1_RD(int value);
+int getStatus_RES_RTU1_RD();
  
 #define ID_RES_RTU3_WR 4201
 extern int RES_RTU3_WR;
@@ -1257,6 +1257,24 @@ extern u_int16_t TEST_STATUS;
 int doWrite_TEST_STATUS(u_int16_t value);
 int addWrite_TEST_STATUS(u_int16_t value);
 int getStatus_TEST_STATUS();
+ 
+#define ID_RTU_HEARTBEAT 5000
+extern u_int16_t RTU_HEARTBEAT;
+int doWrite_RTU_HEARTBEAT(u_int16_t value);
+int addWrite_RTU_HEARTBEAT(u_int16_t value);
+int getStatus_RTU_HEARTBEAT();
+ 
+#define ID_RTU_RTU1_WR 5001
+extern int RTU_RTU1_WR;
+int doWrite_RTU_RTU1_WR(int value);
+int addWrite_RTU_RTU1_WR(int value);
+int getStatus_RTU_RTU1_WR();
+ 
+#define ID_RTU_RTU1_RD 5002
+extern int RTU_RTU1_RD;
+int doWrite_RTU_RTU1_RD(int value);
+int addWrite_RTU_RTU1_RD(int value);
+int getStatus_RTU_RTU1_RD();
  
 #define ID_PLC_FWrevision 5300
 extern u_int16_t PLC_FWrevision;
