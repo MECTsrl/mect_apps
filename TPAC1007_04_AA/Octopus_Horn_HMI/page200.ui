@@ -369,7 +369,7 @@ background-color: rgb(255, 255, 127);
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
-  <widget class="ATCMlabel" name="atcmLabel_2">
+  <widget class="ATCMlabel" name="atcmLabel_TEST_STATUS">
    <property name="geometry">
     <rect>
      <x>0</x>
@@ -425,7 +425,7 @@ background-color: rgb(255, 255, 127);
     <enum>ATCMlabel::Hex</enum>
    </property>
   </widget>
-  <widget class="ATCMlabel" name="atcmLabel">
+  <widget class="ATCMlabel" name="atcmLabel_TEST_COMMAND">
    <property name="geometry">
     <rect>
      <x>0</x>
@@ -947,8 +947,8 @@ background-color: rgb(255, 255, 127);
   <zorder>atcmButton_menu</zorder>
   <zorder>atcmLabel_HWconfig</zorder>
   <zorder>label_Start_3</zorder>
-  <zorder>atcmLabel_2</zorder>
-  <zorder>atcmLabel</zorder>
+  <zorder>atcmLabel_TEST_STATUS</zorder>
+  <zorder>atcmLabel_TEST_COMMAND</zorder>
   <zorder>atcmTime</zorder>
   <zorder>atcmDate</zorder>
   <zorder>atcmLabel_PLC_time</zorder>

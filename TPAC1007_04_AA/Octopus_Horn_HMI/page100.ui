@@ -28,6 +28,7 @@
   <property name="styleSheet">
    <string notr="true">QWidget#page100
 {
+	background-color: rgb(255, 255, 127);
 }</string>
   </property>
   <widget class="Line" name="line_vt_1">

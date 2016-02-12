@@ -28,6 +28,7 @@
   <property name="styleSheet">
    <string notr="true">QWidget#page100
 {
+	background-color: rgb(255, 255, 127);
 }</string>
   </property>
   <widget class="Line" name="line_vt_1">
@@ -560,14 +561,14 @@
      <pointsize>10</pointsize>
     </font>
    </property>
-   <property name="currentIndex">
-    <number>2</number>
-   </property>
    <property name="toolTip">
     <string>PLC_AnOutConf_2</string>
    </property>
    <property name="whatsThis">
     <string>ATCMcombobox widget</string>
+   </property>
+   <property name="currentIndex">
+    <number>2</number>
    </property>
    <property name="variable">
     <string>PLC_AnOutConf_2</string>
@@ -1102,14 +1103,14 @@
      <pointsize>10</pointsize>
     </font>
    </property>
-   <property name="currentIndex">
-    <number>2</number>
-   </property>
    <property name="toolTip">
     <string>PLC_AnInConf_1</string>
    </property>
    <property name="whatsThis">
     <string>ATCMcombobox widget</string>
+   </property>
+   <property name="currentIndex">
+    <number>2</number>
    </property>
    <property name="variable">
     <string>PLC_AnInConf_1</string>
@@ -1617,14 +1618,14 @@
      <pointsize>10</pointsize>
     </font>
    </property>
-   <property name="currentIndex">
-    <number>2</number>
-   </property>
    <property name="toolTip">
     <string>PLC_AnInConf_2</string>
    </property>
    <property name="whatsThis">
     <string>ATCMcombobox widget</string>
+   </property>
+   <property name="currentIndex">
+    <number>2</number>
    </property>
    <property name="variable">
     <string>PLC_AnInConf_2</string>
@@ -1848,14 +1849,14 @@
      <pointsize>10</pointsize>
     </font>
    </property>
-   <property name="currentIndex">
-    <number>2</number>
-   </property>
    <property name="toolTip">
     <string>PLC_AnOutConf_3</string>
    </property>
    <property name="whatsThis">
     <string>ATCMcombobox widget</string>
+   </property>
+   <property name="currentIndex">
+    <number>2</number>
    </property>
    <property name="variable">
     <string>PLC_AnOutConf_3</string>
@@ -2011,14 +2012,14 @@
      <pointsize>10</pointsize>
     </font>
    </property>
-   <property name="currentIndex">
-    <number>2</number>
-   </property>
    <property name="toolTip">
     <string>PLC_AnOutConf_4</string>
    </property>
    <property name="whatsThis">
     <string>ATCMcombobox widget</string>
+   </property>
+   <property name="currentIndex">
+    <number>2</number>
    </property>
    <property name="variable">
     <string>PLC_AnOutConf_4</string>
@@ -3670,14 +3671,14 @@ color: rgb(0, 0, 0);</string>
      <pointsize>10</pointsize>
     </font>
    </property>
-   <property name="currentIndex">
-    <number>2</number>
-   </property>
    <property name="toolTip">
     <string>PLC_AnOutConf_1</string>
    </property>
    <property name="whatsThis">
     <string>ATCMcombobox widget</string>
+   </property>
+   <property name="currentIndex">
+    <number>2</number>
    </property>
    <property name="variable">
     <string>PLC_AnOutConf_1</string>

@@ -18,6 +18,7 @@ void printVncDisplayString(char * vncString)
 {
     sprintf(vncString, "Multi: VNC:0:size=%dx%d Transformed:rot%d", WIDTH, HEIGHT, ROTATION);
     userPageList 
+            << "system_ini"
             << "page100"
             << "page200"
             << "page300"
