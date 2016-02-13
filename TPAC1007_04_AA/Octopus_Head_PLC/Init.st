@@ -19,7 +19,5 @@ PROGRAM Init
 (* ClearPLC(); 
    [CMD]: ERROR V0308: Download Configuration {To many read/write memory regions.}
 *)
-	RTU_DigOut_1 := FALSE;
-	RTU_DigOut_2 := True;
 
 END_PROGRAM
