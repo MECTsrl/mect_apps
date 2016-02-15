@@ -20,6 +20,8 @@
 #include "page403.h"
 #include "page404.h"
 #include "page405.h"
+#include "page434.h"
+#include "page444.h"
 /* add here the header of the new page */
 
 #endif

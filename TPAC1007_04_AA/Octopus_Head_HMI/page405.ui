@@ -3608,6 +3608,11 @@ ON</string>
      <height>34</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+    </font>
+   </property>
    <property name="toolTip">
     <string>TESTx_STATUS</string>
    </property>
@@ -3934,6 +3939,11 @@ ON</string>
      <width>60</width>
      <height>34</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+    </font>
    </property>
    <property name="toolTip">
     <string>TEST2_STATUS</string>

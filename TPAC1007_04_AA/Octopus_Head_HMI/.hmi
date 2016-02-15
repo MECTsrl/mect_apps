@@ -11,6 +11,8 @@ INPUT(
 ./page403.obj
 ./page404.obj
 ./page405.obj
+./page434.obj
+./page444.obj
 ./moc_page100.obj
 ./moc_page200.obj
 ./moc_page300.obj
@@ -20,6 +22,8 @@ INPUT(
 ./moc_page403.obj
 ./moc_page404.obj
 ./moc_page405.obj
+./moc_page434.obj
+./moc_page444.obj
 ./qrc_systemicons.obj
 ./qrc_languages.obj
 ./qrc_resources.obj

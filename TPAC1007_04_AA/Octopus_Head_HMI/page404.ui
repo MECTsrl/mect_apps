@@ -1755,6 +1755,11 @@ ON</string>
      <height>34</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+    </font>
+   </property>
    <property name="toolTip">
     <string>TESTx_STATUS</string>
    </property>
@@ -2082,6 +2087,11 @@ ON</string>
      <height>34</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+    </font>
+   </property>
    <property name="toolTip">
     <string>TEST2_STATUS</string>
    </property>
@@ -2118,6 +2128,114 @@ ON</string>
    </property>
    <property name="mapping">
     <string>0;2: LOCAL;216;2: REMOTE;42;2: DONE</string>
+   </property>
+  </widget>
+  <widget class="ATCMbutton" name="atcmButton_3">
+   <property name="geometry">
+    <rect>
+     <x>302</x>
+     <y>70</y>
+     <width>90</width>
+     <height>201</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string/>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMbutton widget</string>
+   </property>
+   <property name="pageName">
+    <string>page434</string>
+   </property>
+   <property name="statusvar">
+    <string/>
+   </property>
+   <property name="viewStatus">
+    <bool>false</bool>
+   </property>
+   <property name="visibilityVar">
+    <string/>
+   </property>
+   <property name="bgColor">
+    <color alpha="0">
+     <red>230</red>
+     <green>230</green>
+     <blue>230</blue>
+    </color>
+   </property>
+   <property name="bgPressColor">
+    <color alpha="127">
+     <red>230</red>
+     <green>230</green>
+     <blue>230</blue>
+    </color>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pressText">
+    <string/>
+   </property>
+   <property name="borderWidth">
+    <number>1</number>
+   </property>
+   <property name="borderRadius">
+    <number>30</number>
+   </property>
+  </widget>
+  <widget class="ATCMbutton" name="atcmButton_4">
+   <property name="geometry">
+    <rect>
+     <x>390</x>
+     <y>70</y>
+     <width>90</width>
+     <height>201</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string/>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMbutton widget</string>
+   </property>
+   <property name="pageName">
+    <string>page444</string>
+   </property>
+   <property name="statusvar">
+    <string/>
+   </property>
+   <property name="viewStatus">
+    <bool>false</bool>
+   </property>
+   <property name="visibilityVar">
+    <string/>
+   </property>
+   <property name="bgColor">
+    <color alpha="0">
+     <red>230</red>
+     <green>230</green>
+     <blue>230</blue>
+    </color>
+   </property>
+   <property name="bgPressColor">
+    <color alpha="127">
+     <red>230</red>
+     <green>230</green>
+     <blue>230</blue>
+    </color>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pressText">
+    <string/>
+   </property>
+   <property name="borderWidth">
+    <number>1</number>
+   </property>
+   <property name="borderRadius">
+    <number>30</number>
    </property>
   </widget>
   <zorder>atcmLabelAnOut_2</zorder>
@@ -2173,6 +2291,8 @@ ON</string>
   <zorder>line_hr_3</zorder>
   <zorder>line_hr_4</zorder>
   <zorder>line_vt_1</zorder>
+  <zorder>atcmButton_3</zorder>
+  <zorder>atcmButton_4</zorder>
  </widget>
  <customwidgets>
   <customwidget>
@@ -2226,6 +2346,38 @@ ON</string>
   </connection>
   <connection>
    <sender>atcmButton_6</sender>
+   <signal>newPage(const char*,bool)</signal>
+   <receiver>page404</receiver>
+   <slot>goto_page(const char*,bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>atcmButton_3</sender>
+   <signal>newPage(const char*,bool)</signal>
+   <receiver>page404</receiver>
+   <slot>goto_page(const char*,bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>atcmButton_4</sender>
    <signal>newPage(const char*,bool)</signal>
    <receiver>page404</receiver>
    <slot>goto_page(const char*,bool)</slot>

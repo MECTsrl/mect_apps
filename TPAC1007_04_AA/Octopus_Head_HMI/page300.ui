@@ -1328,7 +1328,7 @@ ON</string>
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>9</pointsize>
+     <pointsize>8</pointsize>
     </font>
    </property>
    <property name="toolTip">
@@ -1381,7 +1381,7 @@ ON</string>
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>9</pointsize>
+     <pointsize>8</pointsize>
     </font>
    </property>
    <property name="toolTip">
