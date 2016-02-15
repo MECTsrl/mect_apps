@@ -26,10 +26,12 @@ config.path = /local/etc/sysconfig
 splash.files = config/splash.png config/systool.png
 splash.path = /local/etc/sysconfig/img
 
-customstore.files = config/store1.csv
+customstore.files = config/store_AnOut_1-4.csv
+customstore.files += config/store_AnOut_3.csv
+customstore.files += config/store_AnOut_4.csv
 customstore.path = /local/data/customstore
 
-customtrend.files = config/trend1.csv
+customtrend.files =  config/trend_AnOut_3.csv config/trend_AnOut_4.csv
 customtrend.path = /local/data/customtrend
 
 recipefiles.files = config/1.csv config/2.csv
@@ -101,7 +103,10 @@ PRE_TARGETDEPS += check_missing_file check_undeclared_variable check_gotopage_bi
 
         OTHER_FILES += \
             languages_it.ts \
-            languages_en.ts
+            languages_en.ts \
+    config/store_AnOut_4.csv \
+    config/store_AnOut_3.csv \
+    config/store_AnOut_1-4.csv
 
         include(./languages.pri)
 

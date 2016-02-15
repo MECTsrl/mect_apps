@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 2.7.84, 2016-02-04T22:31:02. -->
+<!-- Written by QtCreator 2.7.84, 2016-02-15T15:53:46. -->
 <qtcreator>
  <data>
   <variable>ProjectExplorer.Project.ActiveTarget</variable>
@@ -213,15 +213,25 @@
        <value type="QString">C:/MectApps/TPAC1007_04_AA/Octopus_Head_HMI/config/trend1.csv</value>
        <value type="QString">C:/MectApps/TPAC1007_04_AA/Octopus_Head_HMI/config/Crosstable.csv</value>
        <value type="QString">C:/MectApps/TPAC1007_04_AA/Octopus_Head_HMI/config/2.csv</value>
+       <value type="QString">C:/MectApps/TPAC1007_04_AA/Octopus_Head_HMI/config/store_AnOut_4.csv</value>
        <value type="QString">C:/MectApps/TPAC1007_04_AA/Octopus_Head_HMI/config/splash.png</value>
+       <value type="QString">C:/MectApps/TPAC1007_04_AA/Octopus_Head_HMI/config/trend_AnOut_4.csv</value>
+       <value type="QString">C:/MectApps/TPAC1007_04_AA/Octopus_Head_HMI/config/store_AnOut_1-4.csv</value>
        <value type="QString">C:/MectApps/TPAC1007_04_AA/Octopus_Head_HMI/hmi</value>
        <value type="QString">C:/MectApps/TPAC1007_04_AA/Octopus_Head_HMI/config/system.ini</value>
        <value type="QString">C:/MectApps/TPAC1007_04_AA/Octopus_Head_HMI/config/lang_table.csv</value>
        <value type="QString">C:/MectApps/TPAC1007_04_AA/Octopus_Head_HMI/config/1.csv</value>
+       <value type="QString">C:/MectApps/TPAC1007_04_AA/Octopus_Head_HMI/config/trend_AnOut_3.csv</value>
        <value type="QString">C:/MectApps/TPAC1007_04_AA/Octopus_Head_HMI/config/store1.csv</value>
        <value type="QString">C:/MectApps/TPAC1007_04_AA/Octopus_Head_HMI/config/Alarms.csv</value>
+       <value type="QString">C:/MectApps/TPAC1007_04_AA/Octopus_Head_HMI/config/store_AnOut_3.csv</value>
       </valuelist>
       <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedHosts">
+       <value type="QString">192.168.5.113</value>
+       <value type="QString">192.168.5.113</value>
+       <value type="QString">192.168.5.113</value>
+       <value type="QString">192.168.5.113</value>
+       <value type="QString">192.168.5.113</value>
        <value type="QString">192.168.5.113</value>
        <value type="QString">192.168.5.113</value>
        <value type="QString">192.168.5.113</value>
@@ -239,13 +249,18 @@
        <value type="QString">/local/data/customtrend</value>
        <value type="QString">/local/etc/sysconfig</value>
        <value type="QString">/local/data/recipe/TPAC1007_4AA</value>
+       <value type="QString">/local/data/customstore</value>
        <value type="QString">/local/etc/sysconfig/img</value>
+       <value type="QString">/local/data/customtrend</value>
+       <value type="QString">/local/data/customstore</value>
        <value type="QString">/local/root</value>
        <value type="QString">/local/etc/sysconfig</value>
        <value type="QString">/local/etc/sysconfig</value>
        <value type="QString">/local/data/recipe/TPAC1007_4AA</value>
+       <value type="QString">/local/data/customtrend</value>
        <value type="QString">/local/data/customstore</value>
        <value type="QString">/local/etc/sysconfig</value>
+       <value type="QString">/local/data/customstore</value>
       </valuelist>
       <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedSysroots">
        <value type="QString">C:/Qt485/imx28/rootfs</value>
@@ -259,19 +274,29 @@
        <value type="QString">C:/Qt485/imx28/rootfs</value>
        <value type="QString">C:/Qt485/imx28/rootfs</value>
        <value type="QString">C:/Qt485/imx28/rootfs</value>
+       <value type="QString">C:/Qt485/imx28/rootfs</value>
+       <value type="QString">C:/Qt485/imx28/rootfs</value>
+       <value type="QString">C:/Qt485/imx28/rootfs</value>
+       <value type="QString">C:/Qt485/imx28/rootfs</value>
+       <value type="QString">C:/Qt485/imx28/rootfs</value>
       </valuelist>
       <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedTimes">
-       <value type="QDateTime">2016-02-04T19:14:21</value>
-       <value type="QDateTime">2016-02-04T19:14:21</value>
-       <value type="QDateTime">2016-02-04T19:14:21</value>
-       <value type="QDateTime">2016-02-04T19:14:21</value>
-       <value type="QDateTime">2016-02-04T19:14:21</value>
-       <value type="QDateTime">2016-02-04T19:14:24</value>
-       <value type="QDateTime">2016-02-04T19:14:21</value>
-       <value type="QDateTime">2016-02-04T19:14:21</value>
-       <value type="QDateTime">2016-02-04T19:14:21</value>
-       <value type="QDateTime">2016-02-04T19:14:21</value>
-       <value type="QDateTime">2016-02-04T19:14:21</value>
+       <value type="QDateTime">2016-02-15T15:40:38</value>
+       <value type="QDateTime">2016-02-15T11:53:56</value>
+       <value type="QDateTime">2016-02-15T15:40:37</value>
+       <value type="QDateTime">2016-02-15T15:40:38</value>
+       <value type="QDateTime">2016-02-15T15:40:38</value>
+       <value type="QDateTime">2016-02-15T15:40:38</value>
+       <value type="QDateTime">2016-02-15T15:40:38</value>
+       <value type="QDateTime">2016-02-15T15:40:38</value>
+       <value type="QDateTime">2016-02-15T15:40:40</value>
+       <value type="QDateTime">2016-02-15T15:40:37</value>
+       <value type="QDateTime">2016-02-15T15:40:38</value>
+       <value type="QDateTime">2016-02-15T15:40:38</value>
+       <value type="QDateTime">2016-02-15T15:40:38</value>
+       <value type="QDateTime">2016-02-15T15:27:40</value>
+       <value type="QDateTime">2016-02-15T15:40:37</value>
+       <value type="QDateTime">2016-02-15T15:40:38</value>
       </valuelist>
       <value type="bool" key="RemoteLinux.GenericDirectUploadStep.Incremental">false</value>
      </valuemap>
