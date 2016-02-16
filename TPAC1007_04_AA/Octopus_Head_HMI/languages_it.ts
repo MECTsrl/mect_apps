@@ -6164,8 +6164,6 @@ fbk</source>
     <message>
         <location filename="page434.ui" line="47"/>
         <location filename="page434.ui" line="53"/>
-        <location filename="page434.ui" line="1399"/>
-        <location filename="page434.ui" line="1414"/>
         <source>RES_AnOut_3</source>
         <oldsource>RES_AnOut_1</oldsource>
         <translation type="unfinished"></translation>
@@ -6177,6 +6175,7 @@ fbk</source>
         <location filename="page434.ui" line="646"/>
         <location filename="page434.ui" line="819"/>
         <location filename="page434.ui" line="926"/>
+        <location filename="page434.ui" line="1462"/>
         <source>ATCMlabel widget</source>
         <translation type="unfinished"></translation>
     </message>
@@ -6193,6 +6192,8 @@ fbk</source>
         <location filename="page434.ui" line="834"/>
         <location filename="page434.ui" line="935"/>
         <location filename="page434.ui" line="938"/>
+        <location filename="page434.ui" line="1477"/>
+        <location filename="page434.ui" line="1480"/>
         <source>0</source>
         <translation type="unfinished"></translation>
     </message>
@@ -6251,7 +6252,8 @@ fbk</source>
         <location filename="page434.ui" line="247"/>
         <location filename="page434.ui" line="253"/>
         <location filename="page434.ui" line="1351"/>
-        <location filename="page434.ui" line="1390"/>
+        <location filename="page434.ui" line="1366"/>
+        <location filename="page434.ui" line="1397"/>
         <source>PLC_time</source>
         <translation type="unfinished"></translation>
     </message>
@@ -6369,8 +6371,23 @@ ON</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page434.ui" line="1015"/>
-        <source>page: page404  status: </source>
+        <location filename="page434.ui" line="1409"/>
+        <source>-1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page434.ui" line="1412"/>
+        <source>1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page434.ui" line="1456"/>
+        <source>30</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page434.ui" line="1471"/>
+        <source> s</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6433,6 +6450,8 @@ ON</source>
     <message>
         <location filename="page434.ui" line="1278"/>
         <location filename="page434.ui" line="1284"/>
+        <location filename="page434.ui" line="1406"/>
+        <location filename="page434.ui" line="1421"/>
         <source>OK_AnOut_3</source>
         <oldsource>OK_AnOut_1</oldsource>
         <translation type="unfinished"></translation>
@@ -6454,13 +6473,13 @@ ON</source>
     </message>
     <message>
         <location filename="page434.ui" line="1354"/>
-        <location filename="page434.ui" line="1393"/>
+        <location filename="page434.ui" line="1400"/>
         <source>PLC_timeMin</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="page434.ui" line="1357"/>
-        <location filename="page434.ui" line="1396"/>
+        <location filename="page434.ui" line="1403"/>
         <source>PLC_timeMax</source>
         <translation type="unfinished"></translation>
     </message>
@@ -6472,34 +6491,17 @@ ON</source>
     </message>
     <message>
         <location filename="page434.ui" line="1372"/>
-        <location filename="page434.ui" line="1402"/>
         <source>-1.25</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="page434.ui" line="1375"/>
-        <location filename="page434.ui" line="1405"/>
         <source>11.25</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page434.ui" line="1443"/>
-        <source>PLC_timeWin = </source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page434.ui" line="1446"/>
-        <source> [s]</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page434.ui" line="1464"/>
-        <source>ATCMspinbox widget</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page434.ui" line="1461"/>
-        <location filename="page434.ui" line="1467"/>
+        <location filename="page434.ui" line="1459"/>
+        <location filename="page434.ui" line="1465"/>
         <source>PLC_timeWin</source>
         <translation type="unfinished"></translation>
     </message>
