@@ -59,4 +59,10 @@ SOURCES += \
 RESOURCES += \
     resources.qrc
 
+OTHER_FILES += \
+    recipes/TPAC1007_4AA/2.csv \
+    recipes/TPAC1007_4AA/1.csv \
+    recipes/TPLC100/2.csv \
+    recipes/TPLC100/1.csv
+
 

@@ -1119,13 +1119,13 @@ background-color: rgb(255, 255, 127);
     </rect>
    </property>
    <property name="toolTip">
-    <string>OK_AnIn_1</string>
+    <string>OK_AnIn_8</string>
    </property>
    <property name="whatsThis">
     <string>ATCMled widget</string>
    </property>
    <property name="variable">
-    <string>OK_AnIn_1</string>
+    <string>OK_AnIn_8</string>
    </property>
    <property name="refresh">
     <number>500</number>
@@ -2659,7 +2659,7 @@ background-color: rgb(255, 255, 127);
     <enum>ATCMdate::YYYY_MM_DD</enum>
    </property>
   </widget>
-  <widget class="ATCMled" name="atcmLed_OK_HWconfig_2">
+  <widget class="ATCMled" name="atcmLed_OK_RTUS_WR">
    <property name="geometry">
     <rect>
      <x>360</x>
@@ -2695,7 +2695,7 @@ background-color: rgb(255, 255, 127);
      <normaloff>:/off.png</normaloff>:/off.png</iconset>
    </property>
   </widget>
-  <widget class="ATCMled" name="atcmLed_OK_HWconfig_3">
+  <widget class="ATCMled" name="atcmLed_OK_RTU1_WR">
    <property name="geometry">
     <rect>
      <x>390</x>
@@ -2731,7 +2731,7 @@ background-color: rgb(255, 255, 127);
      <normaloff>:/off.png</normaloff>:/off.png</iconset>
    </property>
   </widget>
-  <widget class="ATCMled" name="atcmLed_OK_HWconfig_4">
+  <widget class="ATCMled" name="atcmLed_OK_RTU3_WR">
    <property name="geometry">
     <rect>
      <x>420</x>
@@ -2767,7 +2767,7 @@ background-color: rgb(255, 255, 127);
      <normaloff>:/off.png</normaloff>:/off.png</iconset>
    </property>
   </widget>
-  <widget class="ATCMled" name="atcmLed_OK_HWconfig_5">
+  <widget class="ATCMled" name="atcmLed_OK_CAN1_WR">
    <property name="geometry">
     <rect>
      <x>450</x>
@@ -2803,7 +2803,7 @@ background-color: rgb(255, 255, 127);
      <normaloff>:/off.png</normaloff>:/off.png</iconset>
    </property>
   </widget>
-  <widget class="ATCMled" name="atcmLed_OK_HWconfig_6">
+  <widget class="ATCMled" name="atcmLed_OK_RTU1_RD">
    <property name="geometry">
     <rect>
      <x>400</x>
@@ -2839,7 +2839,7 @@ background-color: rgb(255, 255, 127);
      <normaloff>:/off.png</normaloff>:/off.png</iconset>
    </property>
   </widget>
-  <widget class="ATCMled" name="atcmLed_OK_HWconfig_7">
+  <widget class="ATCMled" name="atcmLed_OK_RTU3_RD">
    <property name="geometry">
     <rect>
      <x>430</x>
@@ -2875,7 +2875,7 @@ background-color: rgb(255, 255, 127);
      <normaloff>:/off.png</normaloff>:/off.png</iconset>
    </property>
   </widget>
-  <widget class="ATCMled" name="atcmLed_OK_HWconfig_8">
+  <widget class="ATCMled" name="atcmLed_OK_CAN1_RD">
    <property name="geometry">
     <rect>
      <x>460</x>
@@ -2911,7 +2911,7 @@ background-color: rgb(255, 255, 127);
      <normaloff>:/off.png</normaloff>:/off.png</iconset>
    </property>
   </widget>
-  <widget class="ATCMled" name="atcmLed_OK_HWconfig_9">
+  <widget class="ATCMled" name="atcmLed_OK_RTUS_RD">
    <property name="geometry">
     <rect>
      <x>370</x>
@@ -3499,10 +3499,10 @@ ON</string>
     <string>0;2: LOCAL;216;2: REMOTE;42;2: DONE</string>
    </property>
   </widget>
-  <zorder>atcmLed_OK_HWconfig_6</zorder>
-  <zorder>atcmLed_OK_HWconfig_8</zorder>
-  <zorder>atcmLed_OK_HWconfig_9</zorder>
-  <zorder>atcmLed_OK_HWconfig_7</zorder>
+  <zorder>atcmLed_OK_RTU1_RD</zorder>
+  <zorder>atcmLed_OK_CAN1_RD</zorder>
+  <zorder>atcmLed_OK_RTUS_RD</zorder>
+  <zorder>atcmLed_OK_RTU3_RD</zorder>
   <zorder>label_Qt_Project</zorder>
   <zorder>atcmButton_menu</zorder>
   <zorder>label_PLC_DigIn_5</zorder>
@@ -3574,10 +3574,10 @@ ON</string>
   <zorder>atcmTime</zorder>
   <zorder>atcmLabel</zorder>
   <zorder>atcmDate</zorder>
-  <zorder>atcmLed_OK_HWconfig_2</zorder>
-  <zorder>atcmLed_OK_HWconfig_3</zorder>
-  <zorder>atcmLed_OK_HWconfig_4</zorder>
-  <zorder>atcmLed_OK_HWconfig_5</zorder>
+  <zorder>atcmLed_OK_RTUS_WR</zorder>
+  <zorder>atcmLed_OK_RTU1_WR</zorder>
+  <zorder>atcmLed_OK_RTU3_WR</zorder>
+  <zorder>atcmLed_OK_CAN1_WR</zorder>
   <zorder>atcmButton_6</zorder>
   <zorder>atcmLabel_TEST_STEP</zorder>
   <zorder>label_Start_6</zorder>

@@ -45,10 +45,12 @@ QList<u_int16_t> ctIndexList;
 QList<u_int32_t> valuesTable[MAX_STEP];
 
 static void loadRecipe(void);
+static void clearTST(void);
 static int writeRecipe(int step);
 
 void setup(void)
 {
+    doWrite_RESULT(RESULT_UNKNOWN);
 }
 
 void loop(void)
@@ -71,17 +73,15 @@ void loop(void)
     case STATUS_READY:
         if (!PLC_PWR_SWITCH) {
             doWrite_STATUS(STATUS_STOPPING);
-            sleep(1); // FIXME: HMI/PLC protocol
             return;
         }
         if (DO_RELOAD) {
             loadRecipe();
-            doWrite_DO_RELOAD(0);
             sleep(1); // just for viewing the led change
+            doWrite_DO_RELOAD(0);
         }
         if (TEST2_STATUS != TEST_STATUS_REMOTE || TESTx_STATUS != TEST_STATUS_REMOTE) {
             doWrite_STATUS(STATUS_STARTING);
-            sleep(1); // FIXME: HMI/PLC protocol
             return;
         }
         if (AUTOMATIC || PLC_GO_BUTTON) {
@@ -101,7 +101,8 @@ void loop(void)
                 ++next_step;
             }
             doWrite_TEST_STEP(next_step);
-            // no sleep sinc we change state
+            // no sleep, we change state
+            clearTST();
             if (writeRecipe(next_step - 1) != 0) {
                 doWrite_STATUS(STATUS_ERROR);
                 sleep(1); // FIXME: HMI/PLC protocol
@@ -157,8 +158,8 @@ void loop(void)
  */
 static void loadRecipe(void)
 {
-    QString product;
-    QString recipe;
+    char filename[256];
+    FILE * fp;
 
     // clear lists
     ctIndexList.clear();
@@ -169,12 +170,8 @@ static void loadRecipe(void)
       || TEST_ID == 0 || TEST_ID > RECIPE_MAX) {
         return;
     }
-    product = QString(product_name[PRODUCT_ID]);
-    recipe = QString(recipe_name[TEST_ID]);
-    QString filename = QString(RECIPE_DIR) + QString("/") + product
-    + QString("/") + recipe + QString(".csv");
-
-    FILE * fp = fopen(filename.toAscii().data(), "r");
+    snprintf(filename, 256, "%s/%s/%s.csv", RECIPE_DIR, product_name[PRODUCT_ID], recipe_name[TEST_ID]);
+    fp = fopen(filename, "r");
     if (fp == NULL)
     {
         LOG_PRINT(info_e, "Cannot open '%s'\n", filename.toAscii().data());
@@ -182,12 +179,15 @@ static void loadRecipe(void)
     }
     char varname[TAG_LEN] = "";
     char token[LINE_SIZE] = "";
-    char line[MAX_LINE] = "";
+    char line[LINE_SIZE] = "";
     char * p;
     int step = 0;
     for (int line_nb = 0; fgets(line, LINE_SIZE, fp) != NULL; line_nb++)
     {
         p = line;
+        if (line[0] == '\n' || line[0] == '\r' || line[0] == 0) {
+            continue;
+        }
         /* tag */
         p = mystrtok(p, varname, SEPARATOR);
         if (p == NULL || varname[0] == '\0')
@@ -290,11 +290,88 @@ static int writeRecipe(int step)
         {
             u_int16_t addr = ctIndexList.at(i);
             u_int32_t value = valuesTable[step].at(i);
-            // errors += addWrite(addr, &value);
-            errors += prepareWriteVarByCtIndex(addr, &value, NULL, 0, 0);
+            errors += addWrite(addr, &value);
         }
-        writePendingInorder(); // FIXME: endWrite();
+        endWrite();
         sleep(1); // FIXME: HMI/PLC protocol
     }
     return errors;
+}
+
+static void clearTST(void)
+{
+    beginWrite();
+
+    addWrite_TST_DigIn_1(0);
+    addWrite_TST_DigIn_2(0);
+    addWrite_TST_DigIn_3(0);
+    addWrite_TST_DigIn_4(0);
+    addWrite_TST_DigIn_5(0);
+    addWrite_TST_DigIn_6(0);
+    addWrite_TST_DigIn_7(0);
+    addWrite_TST_DigIn_8(0);
+    addWrite_TST_DigIn_9(0);
+    addWrite_TST_DigIn_10(0);
+    addWrite_TST_DigIn_11(0);
+    addWrite_TST_DigIn_12(0);
+    addWrite_TST_DigIn_13(0);
+    addWrite_TST_DigIn_14(0);
+    addWrite_TST_DigIn_15(0);
+    addWrite_TST_DigIn_16(0);
+
+    addWrite_TST_DigOut_1(0);
+    addWrite_TST_DigOut_2(0);
+    addWrite_TST_DigOut_3(0);
+    addWrite_TST_DigOut_4(0);
+    addWrite_TST_DigOut_5(0);
+    addWrite_TST_DigOut_6(0);
+    addWrite_TST_DigOut_7(0);
+    addWrite_TST_DigOut_8(0);
+    addWrite_TST_DigOut_9(0);
+    addWrite_TST_DigOut_10(0);
+    addWrite_TST_DigOut_11(0);
+    addWrite_TST_DigOut_12(0);
+    addWrite_TST_DigOut_13(0);
+    addWrite_TST_DigOut_14(0);
+    addWrite_TST_DigOut_15(0);
+    addWrite_TST_DigOut_16(0);
+
+    addWrite_TST_AnIn_1(0);
+    addWrite_TST_AnIn_2(0);
+    addWrite_TST_AnIn_3(0);
+    addWrite_TST_AnIn_4(0);
+    addWrite_TST_AnIn_5(0);
+    addWrite_TST_AnIn_6(0);
+    addWrite_TST_AnIn_7(0);
+    addWrite_TST_AnIn_8(0);
+    addWrite_TST_AnIn_9(0);
+    addWrite_TST_AnIn_10(0);
+    addWrite_TST_AnIn_11(0);
+    addWrite_TST_AnIn_12(0);
+
+    addWrite_TST_AnOut_1(0);
+    addWrite_TST_AnOut_2(0);
+    addWrite_TST_AnOut_3(0);
+    addWrite_TST_AnOut_4(0);
+
+    addWrite_TST_Tamb(0);
+    addWrite_TST_RPM(0);
+    addWrite_TST_VCC_set(0);
+    addWrite_TST_mA_max(0);
+    addWrite_TST_VCC_fbk(0);
+    addWrite_TST_mA_fbk(0);
+    addWrite_TST_FWrevision(0);
+    addWrite_TST_HWconfig(0);
+
+    addWrite_TST_RTUS_WR(0);
+    addWrite_TST_RTUS_RD(0);
+    addWrite_TST_RTU1_WR(0);
+    addWrite_TST_RTU1_RD(0);
+    addWrite_TST_RTU3_WR(0);
+    addWrite_TST_RTU3_RD(0);
+    addWrite_TST_CAN1_WR(0);
+    addWrite_TST_CAN1_RD(0);
+
+    endWrite();
+    sleep(1); // FIXME: HMI/PLC protocol
 }

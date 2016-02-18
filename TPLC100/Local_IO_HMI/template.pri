@@ -103,7 +103,7 @@ PRE_TARGETDEPS += check_missing_file check_undeclared_variable check_gotopage_bi
         include(./languages.pri)
 
 # display size
-MODEL = "<width>800</width><height>480</height>"
+MODEL = "<width>480</width><height>272</height>"
 
 equals(MODEL, "<width>320</width><height>240</height>") {
     DEFINES+=WIDTH=320

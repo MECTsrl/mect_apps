@@ -2242,8 +2242,6 @@ ON</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page400.ui" line="1122"/>
-        <location filename="page400.ui" line="1128"/>
         <location filename="page400.ui" line="1701"/>
         <location filename="page400.ui" line="1707"/>
         <source>OK_AnIn_1</source>
@@ -2252,6 +2250,12 @@ ON</source>
     <message>
         <location filename="page400.ui" line="1167"/>
         <source>8</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page400.ui" line="1122"/>
+        <location filename="page400.ui" line="1128"/>
+        <source>OK_AnIn_8</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5691,8 +5695,10 @@ W/R</source>
     </message>
     <message>
         <location filename="page405.ui" line="2443"/>
-        <source>CAN
+        <source>CAN1
 W/R</source>
+        <oldsource>CAN
+W/R</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>

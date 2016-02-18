@@ -10,6 +10,8 @@
 QMAKE_CXXFLAGS_RELEASE -= -O2
 QMAKE_CXXFLAGS_RELEASE += -O3
 QMAKE_CXXFLAGS_RELEASE += -Wno-psabi
+QMAKE_CXXFLAGS_DEBUG   -= -O2
+QMAKE_CXXFLAGS_DEBUG   += -O0
 QMAKE_CXXFLAGS_DEBUG   += -Wno-psabi
 
 TARGET = hmi
@@ -34,14 +36,17 @@ customstore.path = /local/data/customstore
 customtrend.files =  config/trend_AnOut_3.csv config/trend_AnOut_4.csv
 customtrend.path = /local/data/customtrend
 
-recipefiles.files = config/1.csv config/2.csv
-recipefiles.path = /local/data/recipe/TPAC1007_4AA
+recipes_TPAC1007_4AA.files = recipes/TPAC1007_4AA/1.csv recipes/TPAC1007_4AA/2.csv
+recipes_TPAC1007_4AA.path = /local/data/recipe/TPAC1007_4AA
+
+recipes_TPLC100.files = recipes/TPLC100/1.csv recipes/TPLC100/2.csv
+recipes_TPLC100.path = /local/data/recipe/TPLC100
 
 INSTALLS += config splash
 
 INSTALLS += customstore
 INSTALLS += customtrend
-INSTALLS += recipefiles
+INSTALLS += recipes_TPAC1007_4AA recipes_TPLC100
 
 DEFINES+=ENABLE_STORE
 DEFINES+=ENABLE_ALARMS
