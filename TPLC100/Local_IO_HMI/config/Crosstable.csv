@@ -5297,7 +5297,7 @@
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
-1;P;PLC_DigIn_1     ;BYTE_BIT ;2   ;CANOPEN   ;               ;    ;1   ;1   ;5300;42  ;[RO]
+1;P;PLC_DigIn_1     ;BYTE_BIT ;1   ;CANOPEN   ;               ;    ;1   ;1   ;5300;42  ;[RO]
 1;P;PLC_DigIn_2     ;BYTE_BIT ;2   ;CANOPEN   ;               ;    ;1   ;1   ;5300;42  ;[RO]
 1;P;PLC_DigIn_3     ;BYTE_BIT ;3   ;CANOPEN   ;               ;    ;1   ;1   ;5300;42  ;[RO]
 1;P;PLC_DigIn_4     ;BYTE_BIT ;4   ;CANOPEN   ;               ;    ;1   ;1   ;5300;42  ;[RO]

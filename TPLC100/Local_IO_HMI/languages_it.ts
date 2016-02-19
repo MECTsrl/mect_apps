@@ -540,6 +540,24 @@ Hi Lo</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="page100.ui" line="3082"/>
+        <location filename="page100.ui" line="3088"/>
+        <source>PLC_AnInSt_0104</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page100.ui" line="3156"/>
+        <location filename="page100.ui" line="3162"/>
+        <source>PLC_AnInSt_0508</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page100.ui" line="3230"/>
+        <location filename="page100.ui" line="3236"/>
+        <source>PLC_AnInSt_0912</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="page100.ui" line="3595"/>
         <location filename="page100.ui" line="3654"/>
         <location filename="page100.ui" line="3713"/>
@@ -606,27 +624,10 @@ Hi Lo</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="3082"/>
-        <location filename="page100.ui" line="3088"/>
-        <source>RES_AnOutStts_1</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page100.ui" line="3156"/>
-        <location filename="page100.ui" line="3162"/>
-        <source>RES_AnOutStts_2</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page100.ui" line="3230"/>
-        <location filename="page100.ui" line="3236"/>
-        <source>RES_AnOutStts_3</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="page100.ui" line="3304"/>
         <location filename="page100.ui" line="3310"/>
-        <source>RES_AnOutStts_4</source>
+        <source>PLC_AnOutSt_0104</source>
+        <oldsource>RES_AnOutStts_4</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>

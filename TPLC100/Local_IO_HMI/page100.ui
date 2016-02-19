@@ -3079,13 +3079,13 @@ Hi Lo</string>
     <string notr="true">color: rgb(0, 0, 127);</string>
    </property>
    <property name="toolTip">
-    <string>RES_AnOutStts_1</string>
+    <string>PLC_AnInSt_0104</string>
    </property>
    <property name="whatsThis">
     <string>ATCMlabel widget</string>
    </property>
    <property name="variable">
-    <string>RES_AnOutStts_1</string>
+    <string>PLC_AnInSt_0104</string>
    </property>
    <property name="refresh">
     <number>200</number>
@@ -3153,13 +3153,13 @@ Hi Lo</string>
     <string notr="true">color: rgb(0, 0, 127);</string>
    </property>
    <property name="toolTip">
-    <string>RES_AnOutStts_2</string>
+    <string>PLC_AnInSt_0508</string>
    </property>
    <property name="whatsThis">
     <string>ATCMlabel widget</string>
    </property>
    <property name="variable">
-    <string>RES_AnOutStts_2</string>
+    <string>PLC_AnInSt_0508</string>
    </property>
    <property name="refresh">
     <number>200</number>
@@ -3227,13 +3227,13 @@ Hi Lo</string>
     <string notr="true">color: rgb(0, 0, 127);</string>
    </property>
    <property name="toolTip">
-    <string>RES_AnOutStts_3</string>
+    <string>PLC_AnInSt_0912</string>
    </property>
    <property name="whatsThis">
     <string>ATCMlabel widget</string>
    </property>
    <property name="variable">
-    <string>RES_AnOutStts_3</string>
+    <string>PLC_AnInSt_0912</string>
    </property>
    <property name="refresh">
     <number>200</number>
@@ -3301,13 +3301,13 @@ Hi Lo</string>
     <string notr="true">color: rgb(0, 0, 127);</string>
    </property>
    <property name="toolTip">
-    <string>RES_AnOutStts_4</string>
+    <string>PLC_AnOutSt_0104</string>
    </property>
    <property name="whatsThis">
     <string>ATCMlabel widget</string>
    </property>
    <property name="variable">
-    <string>RES_AnOutStts_4</string>
+    <string>PLC_AnOutSt_0104</string>
    </property>
    <property name="refresh">
     <number>200</number>
