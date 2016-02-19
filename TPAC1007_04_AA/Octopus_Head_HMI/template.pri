@@ -36,17 +36,10 @@ customstore.path = /local/data/customstore
 customtrend.files =  config/trend_AnOut_3.csv config/trend_AnOut_4.csv
 customtrend.path = /local/data/customtrend
 
-recipes_TPAC1007_4AA.files = recipes/TPAC1007_4AA/1.csv recipes/TPAC1007_4AA/2.csv
-recipes_TPAC1007_4AA.path = /local/data/recipe/TPAC1007_4AA
-
-recipes_TPLC100.files = recipes/TPLC100/1.csv recipes/TPLC100/2.csv
-recipes_TPLC100.path = /local/data/recipe/TPLC100
-
 INSTALLS += config splash
 
 INSTALLS += customstore
 INSTALLS += customtrend
-INSTALLS += recipes_TPAC1007_4AA recipes_TPLC100
 
 DEFINES+=ENABLE_STORE
 DEFINES+=ENABLE_ALARMS

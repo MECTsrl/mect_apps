@@ -21,6 +21,7 @@ INSTALLS += target
 config.files = config/Crosstable.csv config/system.ini
 config.files += config/Alarms.csv
 config.files += config/lang_table.csv
+config.files += config/iomap0.cmg config/network0.cmg
 config.path = /local/etc/sysconfig
 
 splash.files = config/splash.png config/systool.png

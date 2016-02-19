@@ -54,8 +54,6 @@ SOURCES += \
     page434.cpp \
     page444.cpp
 
-
-
 RESOURCES += \
     resources.qrc
 
@@ -65,4 +63,10 @@ OTHER_FILES += \
     recipes/TPLC100/2.csv \
     recipes/TPLC100/1.csv
 
+recipes_TPAC1007_4AA.files = recipes/TPAC1007_4AA/1.csv recipes/TPAC1007_4AA/2.csv
+recipes_TPAC1007_4AA.path = /local/data/recipe/TPAC1007_4AA
 
+recipes_TPLC100.files = recipes/TPLC100/1.csv recipes/TPLC100/2.csv
+recipes_TPLC100.path = /local/data/recipe/TPLC100
+
+INSTALLS += recipes_TPAC1007_4AA recipes_TPLC100

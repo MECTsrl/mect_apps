@@ -72,7 +72,7 @@ END_VAR
 				substatus := 4;
 			end_if;
 	    4: (* wait for propagation of COMMAND @ priority 2 : 500ms *)
-			timer(IN := TRUE, PT := T#1000ms);
+			timer(IN := TRUE, PT := T#2000ms);
 			if timer.Q then
 				timer(IN := FALSE);
 				substatus := 5;
@@ -112,7 +112,6 @@ END_VAR
 		end_if;
 		if (AUTOMATIC and RESULT = RESULT_OK) or PLC_DigIn_4 then (* GO *)
 			ClearPLC();
-			RESULT := RESULT_UNKNOWN;
 			STATUS := STATUS_RESETTING;
 			return;
 		end_if;
@@ -129,6 +128,7 @@ END_VAR
 	        TESTx_COMMAND := TEST_STATUS_REMOTE;
 	    end_if;
 	    if (TEST2_STATUS = TEST_STATUS_REMOTE and TESTx_STATUS = TEST_STATUS_REMOTE) then
+			RESULT := RESULT_UNKNOWN;
 			STATUS := STATUS_READY;
 			return;
 		end_if;
