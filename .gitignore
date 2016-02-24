@@ -1,0 +1,7 @@
+gen
+Makefile
+hmi
+*.qm
+moc_*
+ui_*
+*.obj
