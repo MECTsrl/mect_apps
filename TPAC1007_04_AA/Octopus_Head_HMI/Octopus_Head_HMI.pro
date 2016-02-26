@@ -58,10 +58,15 @@ RESOURCES += \
     resources.qrc
 
 OTHER_FILES += \
-    recipes/TPAC1007_4AA/2.csv \
+    recipes/TPAC1006/1.csv \
+    recipes/TPAC1006/2.csv \
     recipes/TPAC1007_4AA/1.csv \
-    recipes/TPLC100/2.csv \
-    recipes/TPLC100/1.csv
+    recipes/TPAC1007_4AA/2.csv \
+    recipes/TPLC100/1.csv \
+    recipes/TPLC100/2.csv
+
+recipes_TPAC1006.files = recipes/TPAC1006/1.csv recipes/TPAC1006/2.csv
+recipes_TPAC1006.path = /local/data/recipe/TPAC1006
 
 recipes_TPAC1007_4AA.files = recipes/TPAC1007_4AA/1.csv recipes/TPAC1007_4AA/2.csv
 recipes_TPAC1007_4AA.path = /local/data/recipe/TPAC1007_4AA
@@ -69,4 +74,4 @@ recipes_TPAC1007_4AA.path = /local/data/recipe/TPAC1007_4AA
 recipes_TPLC100.files = recipes/TPLC100/1.csv recipes/TPLC100/2.csv
 recipes_TPLC100.path = /local/data/recipe/TPLC100
 
-INSTALLS += recipes_TPAC1007_4AA recipes_TPLC100
+INSTALLS += recipes_TPAC1006 recipes_TPAC1007_4AA recipes_TPLC100

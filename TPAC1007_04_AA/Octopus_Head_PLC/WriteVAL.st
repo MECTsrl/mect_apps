@@ -90,7 +90,7 @@ END_VAR
 		VALx_AnInFltr_4 := VAL_AnInFltr_4;
 		(* <-- Horn2 AO2 + DO5 + DO7 *) 
 		VAL2_AnOutConf_2 := VAL_AnInConf_4;
-		VAL2_AnOut_3 := VAL_AnIn_4 / 10;
+		VAL2_AnOut_2 := VAL_AnIn_4 / 10;
 		case VAL_AnInConf_4 of
 		1: VAL2_DigOut_7 := 1; VAL2_DigOut_5 := 0;
 		2: VAL2_DigOut_7 := 0; VAL2_DigOut_5 := 0;
