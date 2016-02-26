@@ -12,6 +12,7 @@ DWORD_BIT <-> int
 #include "crosstable.h"
 #include "cross_table_utility.h"
  
+u_int16_t STATUS = 0;
 u_int16_t TEST_COMMAND = 0;
 int TST_DigIn_1 = 0;
 int TST_DigIn_2 = 0;
@@ -218,6 +219,9 @@ int RES_RTU3_RD = 0;
 int RES_CAN_WR = 0;
 int RES_CAN_RD = 0;
 u_int16_t TEST_STATUS = 0;
+u_int16_t RTU_HEARTBEAT = 0;
+int RTU_RTU_WR = 0;
+int RTU_RTU_RD = 0;
 int PLC_DigIn_1 = 0;
 int PLC_DigIn_2 = 0;
 int PLC_DigIn_3 = 0;
@@ -271,6 +275,24 @@ float PLC_time = 0;
 float PLC_timeMin = 0;
 float PLC_timeMax = 0;
 float PLC_timeWin = 0;
+
+
+int doWrite_STATUS(u_int16_t value)
+{
+return doWrite(ID_STATUS,  &value);
+}
+
+
+int addWrite_STATUS(u_int16_t value)
+{
+return addWrite(ID_STATUS, &value);
+}
+
+
+int getStatus_STATUS()
+{
+return getStatus(ID_STATUS);
+}
 
 
 int doWrite_TEST_COMMAND(u_int16_t value)
@@ -3981,6 +4003,60 @@ return getStatus(ID_TEST_STATUS);
 }
 
 
+int doWrite_RTU_HEARTBEAT(u_int16_t value)
+{
+return doWrite(ID_RTU_HEARTBEAT,  &value);
+}
+
+
+int addWrite_RTU_HEARTBEAT(u_int16_t value)
+{
+return addWrite(ID_RTU_HEARTBEAT, &value);
+}
+
+
+int getStatus_RTU_HEARTBEAT()
+{
+return getStatus(ID_RTU_HEARTBEAT);
+}
+
+
+int doWrite_RTU_RTU_WR(int value)
+{
+return doWrite(ID_RTU_RTU_WR,  &value);
+}
+
+
+int addWrite_RTU_RTU_WR(int value)
+{
+return addWrite(ID_RTU_RTU_WR, &value);
+}
+
+
+int getStatus_RTU_RTU_WR()
+{
+return getStatus(ID_RTU_RTU_WR);
+}
+
+
+int doWrite_RTU_RTU_RD(int value)
+{
+return doWrite(ID_RTU_RTU_RD,  &value);
+}
+
+
+int addWrite_RTU_RTU_RD(int value)
+{
+return addWrite(ID_RTU_RTU_RD, &value);
+}
+
+
+int getStatus_RTU_RTU_RD()
+{
+return getStatus(ID_RTU_RTU_RD);
+}
+
+
 int doWrite_PLC_DigIn_1(int value)
 {
 return doWrite(ID_PLC_DigIn_1,  &value);
@@ -4938,6 +5014,7 @@ return getStatus(ID_PLC_timeWin);
 int update_all(void)
 {
 int retval = 0;
+retval += readFromDb(ID_STATUS, &STATUS);
 retval += readFromDb(ID_TEST_COMMAND, &TEST_COMMAND);
 retval += readFromDb(ID_TST_DigIn_1, &TST_DigIn_1);
 retval += readFromDb(ID_TST_DigIn_2, &TST_DigIn_2);
@@ -5144,6 +5221,9 @@ retval += readFromDb(ID_RES_RTU3_RD, &RES_RTU3_RD);
 retval += readFromDb(ID_RES_CAN_WR, &RES_CAN_WR);
 retval += readFromDb(ID_RES_CAN_RD, &RES_CAN_RD);
 retval += readFromDb(ID_TEST_STATUS, &TEST_STATUS);
+retval += readFromDb(ID_RTU_HEARTBEAT, &RTU_HEARTBEAT);
+retval += readFromDb(ID_RTU_RTU_WR, &RTU_RTU_WR);
+retval += readFromDb(ID_RTU_RTU_RD, &RTU_RTU_RD);
 retval += readFromDb(ID_PLC_DigIn_1, &PLC_DigIn_1);
 retval += readFromDb(ID_PLC_DigIn_2, &PLC_DigIn_2);
 retval += readFromDb(ID_PLC_DigIn_3, &PLC_DigIn_3);

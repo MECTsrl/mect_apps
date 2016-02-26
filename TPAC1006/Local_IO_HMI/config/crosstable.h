@@ -16,6 +16,12 @@ extern "C" {
 #endif
 #include <sys/types.h>
  
+#define ID_STATUS 193
+extern u_int16_t STATUS;
+int doWrite_STATUS(u_int16_t value);
+int addWrite_STATUS(u_int16_t value);
+int getStatus_STATUS();
+ 
 #define ID_TEST_COMMAND 4000
 extern u_int16_t TEST_COMMAND;
 int doWrite_TEST_COMMAND(u_int16_t value);
@@ -1251,6 +1257,24 @@ extern u_int16_t TEST_STATUS;
 int doWrite_TEST_STATUS(u_int16_t value);
 int addWrite_TEST_STATUS(u_int16_t value);
 int getStatus_TEST_STATUS();
+ 
+#define ID_RTU_HEARTBEAT 5000
+extern u_int16_t RTU_HEARTBEAT;
+int doWrite_RTU_HEARTBEAT(u_int16_t value);
+int addWrite_RTU_HEARTBEAT(u_int16_t value);
+int getStatus_RTU_HEARTBEAT();
+ 
+#define ID_RTU_RTU_WR 5001
+extern int RTU_RTU_WR;
+int doWrite_RTU_RTU_WR(int value);
+int addWrite_RTU_RTU_WR(int value);
+int getStatus_RTU_RTU_WR();
+ 
+#define ID_RTU_RTU_RD 5002
+extern int RTU_RTU_RD;
+int doWrite_RTU_RTU_RD(int value);
+int addWrite_RTU_RTU_RD(int value);
+int getStatus_RTU_RTU_RD();
  
 #define ID_PLC_DigIn_1 5300
 extern int PLC_DigIn_1;
