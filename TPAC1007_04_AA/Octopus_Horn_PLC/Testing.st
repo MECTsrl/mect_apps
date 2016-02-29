@@ -27,7 +27,7 @@ END_VAR
 	        	ifTST_readVAL_writePLC();
 				substatus := 1;
 			1: (* wait for propagation of max 28 PLC writes on local RTU and I/O settling *)
-				timer(IN := TRUE, PT := T#1000ms);
+				timer(IN := TRUE, PT := T#2000ms); (* slow AnIn *)
 				if timer.Q then
 					timer(IN := FALSE);
 					substatus := 2;

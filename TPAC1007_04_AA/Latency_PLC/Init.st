@@ -3,8 +3,8 @@
 PROGRAM Init
 #import "Crosstable.gvl"
 
-	PLC_DigDir_1 := 0; (* Latency Input *)
-	PLC_DigDir_3 := 1; (* Latency Output *)
+	PLC_DigDir_5 := 0; (* Latency Input *)
+	PLC_DigDir_6 := 1; (* Latency Output *)
 
 	PLC_AnInConf_1 := 2; (* 0..10V *)
 	PLC_AnInConf_2 := 2; (* 0..10V *)
