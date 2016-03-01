@@ -51,4 +51,9 @@ SOURCES += \
 RESOURCES += \
     resources.qrc
 
+OTHER_FILES += \
+    my_img/remote.png \
+    my_img/local.png \
+    my_img/done.png
+
 
