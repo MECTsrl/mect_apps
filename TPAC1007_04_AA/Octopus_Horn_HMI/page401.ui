@@ -2413,38 +2413,29 @@ background-color: rgb(255, 255, 127);
     <number>0</number>
    </property>
   </widget>
-  <widget class="ATCMlabel" name="atcmLabel">
+  <widget class="ATCManimation" name="atcmAnimation_TEST_STATUS">
    <property name="geometry">
     <rect>
-     <x>0</x>
-     <y>22</y>
+     <x>120</x>
+     <y>0</y>
      <width>120</width>
-     <height>22</height>
+     <height>68</height>
     </rect>
    </property>
-   <property name="font">
-    <font>
-     <family>DejaVu Sans</family>
-     <pointsize>12</pointsize>
-    </font>
-   </property>
    <property name="toolTip">
-    <string>TEST_COMMAND</string>
+    <string>TEST_STATUS</string>
    </property>
    <property name="whatsThis">
-    <string>ATCMlabel widget</string>
+    <string>ATCManimation widget</string>
+   </property>
+   <property name="mapping">
+    <string>0;:/icons/my_img/local.png;216;:/icons/my_img/remote.png;42;:/icons/my_img/done.png</string>
    </property>
    <property name="variable">
-    <string>TEST_COMMAND</string>
+    <string>TEST_STATUS</string>
    </property>
    <property name="refresh">
     <number>500</number>
-   </property>
-   <property name="max">
-    <string>0</string>
-   </property>
-   <property name="min">
-    <string>0</string>
    </property>
    <property name="viewStatus">
     <bool>false</bool>
@@ -2452,30 +2443,14 @@ background-color: rgb(255, 255, 127);
    <property name="visibilityVar">
     <string/>
    </property>
-   <property name="bgColor">
-    <color>
-     <red>170</red>
-     <green>255</green>
-     <blue>127</blue>
-    </color>
-   </property>
-   <property name="borderWidth">
-    <number>1</number>
-   </property>
-   <property name="borderRadius">
-    <number>0</number>
-   </property>
-   <property name="format">
-    <enum>ATCMlabel::Hex</enum>
-   </property>
   </widget>
   <widget class="QLabel" name="label_Start_3">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>121</width>
-     <height>22</height>
+     <width>120</width>
+     <height>34</height>
     </rect>
    </property>
    <property name="font">
@@ -2494,40 +2469,37 @@ background-color: rgb(255, 255, 127);
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
-  <widget class="ATCMlabel" name="atcmLabel_2">
+  <widget class="ATCMcombobox" name="atcmComboBox">
    <property name="geometry">
     <rect>
      <x>0</x>
-     <y>44</y>
+     <y>34</y>
      <width>120</width>
-     <height>24</height>
+     <height>34</height>
     </rect>
    </property>
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>12</pointsize>
+     <pointsize>10</pointsize>
     </font>
    </property>
    <property name="toolTip">
-    <string>TEST_STATUS</string>
+    <string>TEST_COMMAND</string>
    </property>
    <property name="whatsThis">
-    <string>ATCMlabel widget</string>
+    <string>ATCMcombobox widget</string>
    </property>
    <property name="variable">
-    <string>TEST_STATUS</string>
+    <string>TEST_COMMAND</string>
    </property>
    <property name="refresh">
     <number>500</number>
    </property>
-   <property name="max">
-    <string>0</string>
-   </property>
-   <property name="min">
-    <string>0</string>
-   </property>
    <property name="viewStatus">
+    <bool>false</bool>
+   </property>
+   <property name="writeAcknowledge">
     <bool>false</bool>
    </property>
    <property name="visibilityVar">
@@ -2535,19 +2507,19 @@ background-color: rgb(255, 255, 127);
    </property>
    <property name="bgColor">
     <color>
-     <red>255</red>
+     <red>170</red>
      <green>255</green>
      <blue>127</blue>
     </color>
    </property>
    <property name="borderWidth">
-    <number>1</number>
+    <number>0</number>
    </property>
    <property name="borderRadius">
     <number>0</number>
    </property>
-   <property name="format">
-    <enum>ATCMlabel::Hex</enum>
+   <property name="mapping">
+    <string>0;LOCAL;216;REMOTE;42;DONE</string>
    </property>
   </widget>
   <zorder>atcmLed_PLC_DigOut_19</zorder>
@@ -2617,21 +2589,31 @@ background-color: rgb(255, 255, 127);
   <zorder>atcmLed_PLC_DigIn_36</zorder>
   <zorder>atcmButton_page402_2</zorder>
   <zorder>atcmLabel_PLC_time</zorder>
+  <zorder>atcmAnimation_TEST_STATUS</zorder>
+  <zorder>label_Start_3</zorder>
+  <zorder>atcmComboBox</zorder>
+  <zorder>line_hr_2</zorder>
   <zorder>line_hr_3</zorder>
+  <zorder>line_vt_1</zorder>
   <zorder>line_vt_2</zorder>
   <zorder>line_hr_1</zorder>
   <zorder>line_vt_4</zorder>
   <zorder>line_hr_4</zorder>
-  <zorder>line_hr_2</zorder>
-  <zorder>line_vt_1</zorder>
-  <zorder>atcmLabel</zorder>
-  <zorder>label_Start_3</zorder>
-  <zorder>atcmLabel_2</zorder>
  </widget>
  <customwidgets>
   <customwidget>
+   <class>ATCManimation</class>
+   <extends>QLabel</extends>
+   <header>atcmplugin.h</header>
+  </customwidget>
+  <customwidget>
    <class>ATCMbutton</class>
    <extends>QPushButton</extends>
+   <header>atcmplugin.h</header>
+  </customwidget>
+  <customwidget>
+   <class>ATCMcombobox</class>
+   <extends>QComboBox</extends>
    <header>atcmplugin.h</header>
   </customwidget>
   <customwidget>
