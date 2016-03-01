@@ -963,6 +963,9 @@ background-color: rgb(255, 255, 127);
    <property name="borderRadius">
     <number>0</number>
    </property>
+   <property name="format">
+    <enum>ATCMlabel::Hex</enum>
+   </property>
   </widget>
   <widget class="ATCMlabel" name="atcmLabelAnInConf_1">
    <property name="geometry">
@@ -1019,6 +1022,9 @@ background-color: rgb(255, 255, 127);
    </property>
    <property name="borderRadius">
     <number>0</number>
+   </property>
+   <property name="format">
+    <enum>ATCMlabel::Hex</enum>
    </property>
   </widget>
   <widget class="ATCMlabel" name="atcmLabelAnIn_5">
@@ -1134,6 +1140,9 @@ background-color: rgb(255, 255, 127);
    <property name="borderRadius">
     <number>0</number>
    </property>
+   <property name="format">
+    <enum>ATCMlabel::Hex</enum>
+   </property>
   </widget>
   <widget class="ATCMlabel" name="atcmLabelAnIn_6">
    <property name="geometry">
@@ -1247,6 +1256,9 @@ background-color: rgb(255, 255, 127);
    </property>
    <property name="borderRadius">
     <number>0</number>
+   </property>
+   <property name="format">
+    <enum>ATCMlabel::Hex</enum>
    </property>
   </widget>
   <zorder>atcmButton_MENU</zorder>

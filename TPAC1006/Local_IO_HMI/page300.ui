@@ -259,10 +259,10 @@ background-color: rgb(255, 255, 127);
     </color>
    </property>
    <property name="text">
-    <string>MENU</string>
+    <string>TPAC1006</string>
    </property>
    <property name="pressText">
-    <string>MENU</string>
+    <string>TPAC1006</string>
    </property>
    <property name="borderWidth">
     <number>1</number>

@@ -12,6 +12,11 @@
 
 #include "page0.h"
 #include "page100.h"
+#include "page200.h"
+#include "page400.h"
+#include "page401.h"
+#include "page402.h"
+#include "page403.h"
 /* add here the header of the new page */
 
 #endif

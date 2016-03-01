@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 2.7.84, 2016-02-01T12:48:37. -->
+<!-- Written by QtCreator 2.7.84, 2016-03-01T17:33:38. -->
 <qtcreator>
  <data>
   <variable>ProjectExplorer.Project.ActiveTarget</variable>
@@ -193,6 +193,18 @@
      </valuemap>
      <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.1">
       <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Run custom remote command</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">RemoteLinux.GenericRemoteLinuxCustomCommandDeploymentStep</value>
+      <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedFiles"/>
+      <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedHosts"/>
+      <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedRemotePaths"/>
+      <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedSysroots"/>
+      <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedTimes"/>
+      <value type="QString" key="RemoteLinuxCustomCommandDeploymentStep.CommandLine">stop</value>
+     </valuemap>
+     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.2">
+      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
       <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Upload files via SFTP</value>
       <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
       <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">RemoteLinux.DirectUploadStep</value>
@@ -313,37 +325,37 @@
        <value type="QString">C:/Qt485/imx28/rootfs</value>
       </valuelist>
       <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedTimes">
-       <value type="QDateTime">2016-02-01T12:37:45</value>
+       <value type="QDateTime">2016-03-01T17:32:51</value>
        <value type="QDateTime">2016-01-26T15:41:02</value>
        <value type="QDateTime">2016-01-26T15:41:02</value>
-       <value type="QDateTime">2016-02-01T12:37:46</value>
-       <value type="QDateTime">2016-02-01T12:37:45</value>
-       <value type="QDateTime">2016-02-01T12:37:45</value>
+       <value type="QDateTime">2016-03-01T17:32:55</value>
+       <value type="QDateTime">2016-03-01T17:32:52</value>
+       <value type="QDateTime">2016-03-01T17:32:51</value>
        <value type="QDateTime">2015-12-29T18:37:59</value>
        <value type="QDateTime">2015-12-29T18:37:59</value>
        <value type="QDateTime">2015-12-29T18:37:59</value>
-       <value type="QDateTime">2016-02-01T12:37:45</value>
+       <value type="QDateTime">2016-03-01T17:32:52</value>
        <value type="QDateTime">2015-12-29T18:37:59</value>
        <value type="QDateTime">2015-12-29T18:38:00</value>
        <value type="QDateTime">2015-12-29T18:37:59</value>
-       <value type="QDateTime">2016-02-01T12:37:45</value>
+       <value type="QDateTime">2016-03-01T17:32:53</value>
        <value type="QDateTime">2016-01-26T15:41:02</value>
        <value type="QDateTime">2015-12-29T18:38:00</value>
        <value type="QDateTime">2016-01-26T15:44:25</value>
-       <value type="QDateTime">2016-02-01T12:37:45</value>
+       <value type="QDateTime">2016-03-01T17:32:52</value>
        <value type="QDateTime">2015-12-29T18:38:00</value>
-       <value type="QDateTime">2016-02-01T12:37:45</value>
+       <value type="QDateTime">2016-03-01T17:32:51</value>
        <value type="QDateTime">2016-01-26T15:41:02</value>
        <value type="QDateTime">2015-12-29T18:37:59</value>
-       <value type="QDateTime">2016-02-01T12:37:44</value>
+       <value type="QDateTime">2016-03-01T17:32:50</value>
        <value type="QDateTime">2015-12-29T18:38:00</value>
-       <value type="QDateTime">2016-02-01T12:37:45</value>
-       <value type="QDateTime">2016-02-01T12:37:45</value>
+       <value type="QDateTime">2016-03-01T17:32:51</value>
+       <value type="QDateTime">2016-03-01T17:32:51</value>
        <value type="QDateTime">2016-01-26T15:41:02</value>
       </valuelist>
       <value type="bool" key="RemoteLinux.GenericDirectUploadStep.Incremental">false</value>
      </valuemap>
-     <value type="int" key="ProjectExplorer.BuildStepList.StepsCount">2</value>
+     <value type="int" key="ProjectExplorer.BuildStepList.StepsCount">3</value>
      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Deploy</value>
      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ProjectExplorer.BuildSteps.Deploy</value>
@@ -394,8 +406,8 @@
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">RemoteLinuxRunConfiguration:C:/MectApps/TPAC1008/Local_IO_HMI/Local_IO_HMI.pro</value>
     <value type="QString" key="Qt4ProjectManager.MaemoRunConfiguration.Arguments"></value>
     <value type="QString" key="Qt4ProjectManager.MaemoRunConfiguration.ProFile">Local_IO_HMI.pro</value>
-    <value type="QString" key="RemoteLinux.RunConfig.AlternateRemoteExecutable">sleep 5 &amp;&amp; /root/hmi</value>
-    <value type="bool" key="RemoteLinux.RunConfig.UseAlternateRemoteExecutable">true</value>
+    <value type="QString" key="RemoteLinux.RunConfig.AlternateRemoteExecutable"></value>
+    <value type="bool" key="RemoteLinux.RunConfig.UseAlternateRemoteExecutable">false</value>
     <value type="QString" key="RemoteLinux.RunConfig.WorkingDirectory"></value>
     <value type="uint" key="RunConfiguration.QmlDebugServerPort">3768</value>
     <value type="bool" key="RunConfiguration.UseCppDebugger">true</value>
