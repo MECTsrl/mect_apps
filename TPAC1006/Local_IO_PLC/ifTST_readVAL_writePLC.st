@@ -2,7 +2,13 @@
 ]]*)
 FUNCTION ifTST_readVAL_writePLC
 #import "Crosstable.gvl"
+VAR
+	Temp_PLC_AnOutConf : uint;
+	Temp_PLC_AnInConf : uint;
+END_VAR
+
 VAR_INPUT
+	
 END_VAR
 
 	if (TST_DigIn_1 ) then RES_DigIn_1 := 0; end_if;
@@ -26,12 +32,20 @@ END_VAR
     if (TST_DigOut_10) then PLC_DigOut_10 := VAL_DigOut_10; end_if;
     if (TST_DigOut_11) then PLC_DigOut_11 := VAL_DigOut_11; end_if;
     if (TST_DigOut_12) then PLC_DigOut_12 := VAL_DigOut_12; end_if;
+	
+	Temp_PLC_AnOutConf := 0;
+	Temp_PLC_AnInConf := 0;
 
-    if (TST_AnOut_1 or TST_AnOut_2)then PLC_AnOutConf := 16#22; PLC_AnOut_1 := VAL_AnOut_1; PLC_AnOut_2 := VAL_AnOut_2; end_if; 		
+	if (TST_AnOut_1)then Temp_PLC_AnOutConf := Temp_PLC_AnOutConf + word_to_uint(shl(uint_to_word(VAL_AnOutConf_1),0)); PLC_AnOut_1 := VAL_AnOut_1; end_if; 		
+	if (TST_AnOut_2)then Temp_PLC_AnOutConf := Temp_PLC_AnOutConf + word_to_uint(shl(uint_to_word(VAL_AnOutConf_2),4)); PLC_AnOut_2 := VAL_AnOut_2; end_if; 
+    PLC_AnOutConf := Temp_PLC_AnOutConf;
 
-   
-    if (TST_AnIn_1 or TST_AnIn_2 or TST_AnIn_3 or TST_AnIn_4) then PLC_AnInConf := 16#2222; RES_AnIn_1 := 0; RES_AnIn_2 := 0; RES_AnIn_3 := 0; RES_AnIn_4 := 0; end_if;
-   
+    if (TST_AnIn_1)then Temp_PLC_AnInConf := Temp_PLC_AnInConf + word_to_uint(shl(uint_to_word(VAL_AnInConf_1),0)); RES_AnIn_1 := 0; end_if;
+	if (TST_AnIn_2)then Temp_PLC_AnInConf := Temp_PLC_AnInConf + word_to_uint(shl(uint_to_word(VAL_AnInConf_2),4)); RES_AnIn_2 := 0; end_if;
+	if (TST_AnIn_3)then Temp_PLC_AnInConf := Temp_PLC_AnInConf + word_to_uint(shl(uint_to_word(VAL_AnInConf_3),8)); RES_AnIn_3 := 0; end_if;
+	if (TST_AnIn_4)then Temp_PLC_AnInConf := Temp_PLC_AnInConf + word_to_uint(shl(uint_to_word(VAL_AnInConf_4),12)); RES_AnIn_4 := 0; end_if;
+    PLC_AnInConf := Temp_PLC_AnInConf;
+
     if (TST_Tamb      ) then RES_Tamb := 0; end_if;
 	if (TST_RPM		  ) then RES_RPM := 0; end_if;
    

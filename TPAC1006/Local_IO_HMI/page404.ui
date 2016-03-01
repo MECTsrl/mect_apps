@@ -72,9 +72,9 @@ background-color: rgb(255, 255, 127);
   <widget class="ATCMbutton" name="atcmButton_MENU">
    <property name="geometry">
     <rect>
-     <x>213</x>
+     <x>212</x>
      <y>0</y>
-     <width>106</width>
+     <width>108</width>
      <height>27</height>
     </rect>
    </property>
@@ -141,9 +141,9 @@ background-color: rgb(255, 255, 127);
   <widget class="QLabel" name="label_Qt_Project">
    <property name="geometry">
     <rect>
-     <x>214</x>
+     <x>213</x>
      <y>27</y>
-     <width>106</width>
+     <width>108</width>
      <height>27</height>
     </rect>
    </property>
@@ -166,7 +166,7 @@ background-color: rgb(255, 255, 127);
   <widget class="QLabel" name="label_PLC_DigIn_1">
    <property name="geometry">
     <rect>
-     <x>104</x>
+     <x>105</x>
      <y>54</y>
      <width>107</width>
      <height>27</height>
@@ -273,6 +273,12 @@ background-color: rgb(255, 255, 127);
      <width>105</width>
      <height>27</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>9</pointsize>
+    </font>
    </property>
    <property name="toolTip">
     <string/>
@@ -438,7 +444,7 @@ background-color: rgb(255, 255, 127);
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>12</pointsize>
+     <pointsize>9</pointsize>
     </font>
    </property>
    <property name="styleSheet">
@@ -463,7 +469,7 @@ background-color: rgb(255, 255, 127);
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>12</pointsize>
+     <pointsize>9</pointsize>
     </font>
    </property>
    <property name="styleSheet">
@@ -514,7 +520,7 @@ background-color: rgb(255, 255, 127);
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>12</pointsize>
+     <pointsize>9</pointsize>
     </font>
    </property>
    <property name="styleSheet">
@@ -565,7 +571,7 @@ background-color: rgb(255, 255, 127);
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>12</pointsize>
+     <pointsize>9</pointsize>
     </font>
    </property>
    <property name="styleSheet">
@@ -590,7 +596,7 @@ background-color: rgb(255, 255, 127);
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>12</pointsize>
+     <pointsize>9</pointsize>
     </font>
    </property>
    <property name="styleSheet">

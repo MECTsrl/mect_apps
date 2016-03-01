@@ -27,7 +27,7 @@ END_VAR
 	        	ifTST_readVAL_writePLC();
 				substatus := 1;
 			1: (* wait for propagation of max 28 PLC writes on local CANopen and I/O settling *)
-				timer(IN := TRUE, PT := T#2500ms); (* Analog Input Filters are high on TPAC1006 *)
+				timer(IN := TRUE, PT := T#7000ms); (* Analog Input Filters are high on TPAC1006 *)
 				if timer.Q then
 					timer(IN := FALSE);
 					substatus := 2;
