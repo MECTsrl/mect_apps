@@ -8,12 +8,14 @@ INPUT(
 ./page401.obj
 ./page402.obj
 ./page403.obj
+./page300.obj
 ./moc_page100.obj
 ./moc_page200.obj
 ./moc_page400.obj
 ./moc_page401.obj
 ./moc_page402.obj
 ./moc_page403.obj
+./moc_page300.obj
 ./qrc_systemicons.obj
 ./qrc_languages.obj
 ./qrc_resources.obj

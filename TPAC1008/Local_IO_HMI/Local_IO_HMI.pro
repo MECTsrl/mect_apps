@@ -17,7 +17,8 @@ HEADERS += \
     page400.h \
     page401.h \
     page402.h \
-    page403.h
+    page403.h \
+    page300.h
 
 
 FORMS += \
@@ -26,7 +27,8 @@ FORMS += \
     page400.ui \
     page401.ui \
     page402.ui \
-    page403.ui
+    page403.ui \
+    page300.ui
 
 
 SOURCES += \
@@ -36,7 +38,8 @@ SOURCES += \
     page400.cpp \
     page401.cpp \
     page402.cpp \
-    page403.cpp
+    page403.cpp \
+    page300.cpp
 
 
 RESOURCES += \

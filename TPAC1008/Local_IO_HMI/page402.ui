@@ -413,62 +413,6 @@ background-color: rgb(170, 170, 255);
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
-  <widget class="ATCMlabel" name="atcmLabel">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>105</width>
-     <height>27</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>DejaVu Sans</family>
-     <pointsize>12</pointsize>
-    </font>
-   </property>
-   <property name="toolTip">
-    <string>TEST_COMMAND</string>
-   </property>
-   <property name="whatsThis">
-    <string>ATCMlabel widget</string>
-   </property>
-   <property name="variable">
-    <string>TEST_COMMAND</string>
-   </property>
-   <property name="refresh">
-    <number>500</number>
-   </property>
-   <property name="max">
-    <string>0</string>
-   </property>
-   <property name="min">
-    <string>0</string>
-   </property>
-   <property name="viewStatus">
-    <bool>false</bool>
-   </property>
-   <property name="visibilityVar">
-    <string/>
-   </property>
-   <property name="bgColor">
-    <color>
-     <red>170</red>
-     <green>255</green>
-     <blue>127</blue>
-    </color>
-   </property>
-   <property name="borderWidth">
-    <number>1</number>
-   </property>
-   <property name="borderRadius">
-    <number>0</number>
-   </property>
-   <property name="format">
-    <enum>ATCMlabel::Hex</enum>
-   </property>
-  </widget>
   <widget class="QLabel" name="label_PLC_DigIn_13">
    <property name="geometry">
     <rect>
@@ -575,62 +519,6 @@ background-color: rgb(170, 170, 255);
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>
-   </property>
-  </widget>
-  <widget class="ATCMlabel" name="atcmLabel_2">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>28</y>
-     <width>105</width>
-     <height>27</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>DejaVu Sans</family>
-     <pointsize>12</pointsize>
-    </font>
-   </property>
-   <property name="toolTip">
-    <string>TEST_STATUS</string>
-   </property>
-   <property name="whatsThis">
-    <string>ATCMlabel widget</string>
-   </property>
-   <property name="variable">
-    <string>TEST_STATUS</string>
-   </property>
-   <property name="refresh">
-    <number>500</number>
-   </property>
-   <property name="max">
-    <string>0</string>
-   </property>
-   <property name="min">
-    <string>0</string>
-   </property>
-   <property name="viewStatus">
-    <bool>false</bool>
-   </property>
-   <property name="visibilityVar">
-    <string/>
-   </property>
-   <property name="bgColor">
-    <color>
-     <red>255</red>
-     <green>255</green>
-     <blue>127</blue>
-    </color>
-   </property>
-   <property name="borderWidth">
-    <number>1</number>
-   </property>
-   <property name="borderRadius">
-    <number>0</number>
-   </property>
-   <property name="format">
-    <enum>ATCMlabel::Hex</enum>
    </property>
   </widget>
   <widget class="QLabel" name="label_PLC_DigIn_4">
@@ -2748,6 +2636,84 @@ background-color: rgb(170, 170, 255);
     <string/>
    </property>
   </widget>
+  <widget class="ATCMcombobox" name="atcmComboBox">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>28</y>
+     <width>105</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="toolTip">
+    <string>TEST_COMMAND</string>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMcombobox widget</string>
+   </property>
+   <property name="variable">
+    <string>TEST_COMMAND</string>
+   </property>
+   <property name="refresh">
+    <number>500</number>
+   </property>
+   <property name="viewStatus">
+    <bool>false</bool>
+   </property>
+   <property name="writeAcknowledge">
+    <bool>false</bool>
+   </property>
+   <property name="visibilityVar">
+    <string/>
+   </property>
+   <property name="bgColor">
+    <color>
+     <red>170</red>
+     <green>255</green>
+     <blue>127</blue>
+    </color>
+   </property>
+   <property name="borderWidth">
+    <number>0</number>
+   </property>
+   <property name="borderRadius">
+    <number>0</number>
+   </property>
+   <property name="mapping">
+    <string>0;LOCAL;216;REMOTE;42;DONE</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_Start_3">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>105</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(170, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string>Modbus/TCP</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
   <zorder>label_PLC_DigIn_1</zorder>
   <zorder>label_TST_DigIn_</zorder>
   <zorder>line_14</zorder>
@@ -2760,11 +2726,9 @@ background-color: rgb(170, 170, 255);
   <zorder>line_2</zorder>
   <zorder>label_TST_DigIn_1</zorder>
   <zorder>label_PLC_DigIn_</zorder>
-  <zorder>atcmLabel</zorder>
   <zorder>label_PLC_DigIn_13</zorder>
   <zorder>atcmLabel_PLC_time</zorder>
   <zorder>label_PLC_DigIn_2</zorder>
-  <zorder>atcmLabel_2</zorder>
   <zorder>label_PLC_DigIn_4</zorder>
   <zorder>label_PLC_DigIn_14</zorder>
   <zorder>line</zorder>
@@ -2811,6 +2775,8 @@ background-color: rgb(170, 170, 255);
   <zorder>label_TST_DigIn_3</zorder>
   <zorder>label_TST_DigIn_4</zorder>
   <zorder>atcmAnimation_TEST_STATUS</zorder>
+  <zorder>atcmComboBox</zorder>
+  <zorder>label_Start_3</zorder>
  </widget>
  <customwidgets>
   <customwidget>
@@ -2821,6 +2787,11 @@ background-color: rgb(170, 170, 255);
   <customwidget>
    <class>ATCMbutton</class>
    <extends>QPushButton</extends>
+   <header>atcmplugin.h</header>
+  </customwidget>
+  <customwidget>
+   <class>ATCMcombobox</class>
+   <extends>QComboBox</extends>
    <header>atcmplugin.h</header>
   </customwidget>
   <customwidget>
