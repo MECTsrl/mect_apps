@@ -95,6 +95,10 @@ END_VAR
     TSTx_RTU1_RD := TST_RTU1_RD;
 	TST2_RTUS_WR := TST_RTU1_RD;
 
+	(* we test the RTU3 master *)
+	TSTx_RTU3_WR := TST_RTU3_WR;
+	TSTx_RTU3_RD := TST_RTU3_RD;
+
 	(* we test the CAN master using MPNC10 as CAN device  *)
     TSTx_CAN1_WR := TST_CAN1_WR;
     TSTx_CAN1_RD := TST_CAN1_RD;

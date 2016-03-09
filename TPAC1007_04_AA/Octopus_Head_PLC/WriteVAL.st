@@ -216,11 +216,19 @@ END_VAR
 		VAL2_RTUS_WR := VAL_RTU1_RD;
 	end_if;
 
+	if TST_RTU3_WR then
+		VALx_RTU3_WR := VAL_RTU3_WR;
+	end_if;
+
 	if TST_CAN1_WR then
 		VALx_CAN1_WR := VAL_CAN1_WR;
 	end_if;
 
 	if TST_RTU1_RD then
+		;
+	end_if;
+
+	if TST_RTU3_RD then
 		;
 	end_if;
 

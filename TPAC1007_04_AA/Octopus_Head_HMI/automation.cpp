@@ -34,7 +34,7 @@
 static char product_name[][20] = {
     "-",
     "TPAC1007_4AA", "TPAC1007_3", "TPLC100", "TPAC1006", "TPAC1008",
-    "TP1043_485", "TP1043_232", "TP1043_CAN", "9"
+    "TP1043_485", "TP1043_232", "TP1043_CAN", "TPAC1007_LV"
 };
 #define RECIPE_MAX 2
 static char recipe_name[][3] = {"-", "1", "2"};
