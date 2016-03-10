@@ -739,6 +739,7 @@
         <location filename="page200.ui" line="1399"/>
         <location filename="page200.ui" line="1449"/>
         <location filename="page200.ui" line="1499"/>
+        <location filename="page200.ui" line="1936"/>
         <source>ATCMlabel widget</source>
         <translation type="unfinished"></translation>
     </message>
@@ -771,6 +772,8 @@
         <location filename="page200.ui" line="1461"/>
         <location filename="page200.ui" line="1508"/>
         <location filename="page200.ui" line="1511"/>
+        <location filename="page200.ui" line="1948"/>
+        <location filename="page200.ui" line="1951"/>
         <source>0</source>
         <translation type="unfinished"></translation>
     </message>
@@ -825,6 +828,7 @@
         <location filename="page200.ui" line="1605"/>
         <location filename="page200.ui" line="1683"/>
         <location filename="page200.ui" line="1736"/>
+        <location filename="page200.ui" line="1854"/>
         <source>ATCMcombobox widget</source>
         <translation type="unfinished"></translation>
     </message>
@@ -918,6 +922,33 @@
         <location filename="page200.ui" line="1823"/>
         <location filename="page200.ui" line="1826"/>
         <source>Reset Values</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="1851"/>
+        <location filename="page200.ui" line="1857"/>
+        <source>PLC_EngineStatus</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="1885"/>
+        <source>1;INITIALIZED;2;RUNNING;3;ERROR;4;EXITING;0;IDLE</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="1909"/>
+        <source>PLC Engine</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="1933"/>
+        <location filename="page200.ui" line="1939"/>
+        <source>PLC_Version</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="1942"/>
+        <source>Version: </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1040,6 +1071,7 @@ RTU0 / NODE 2</source>
     <message>
         <location filename="page200.ui" line="648"/>
         <location filename="page200.ui" line="939"/>
+        <location filename="page200.ui" line="1930"/>
         <source>65535</source>
         <translation type="unfinished"></translation>
     </message>
