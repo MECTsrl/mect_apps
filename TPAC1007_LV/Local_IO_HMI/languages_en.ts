@@ -33,7 +33,7 @@
         <location filename="page100.ui" line="2275"/>
         <location filename="page100.ui" line="2415"/>
         <location filename="page100.ui" line="2974"/>
-        <location filename="page100.ui" line="3030"/>
+        <location filename="page100.ui" line="3037"/>
         <source>ATCMbutton widget</source>
         <translation type="unfinished"></translation>
     </message>
@@ -360,7 +360,7 @@
     </message>
     <message>
         <location filename="page100.ui" line="2707"/>
-        <location filename="page100.ui" line="3114"/>
+        <location filename="page100.ui" line="3128"/>
         <source>HeartBeat</source>
         <translation type="unfinished"></translation>
     </message>
@@ -383,7 +383,7 @@
     </message>
     <message>
         <location filename="page100.ui" line="2875"/>
-        <location filename="page100.ui" line="3089"/>
+        <location filename="page100.ui" line="3103"/>
         <source>0:</source>
         <translation type="unfinished"></translation>
     </message>
@@ -399,8 +399,8 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="3027"/>
-        <location filename="page100.ui" line="3039"/>
+        <location filename="page100.ui" line="3034"/>
+        <location filename="page100.ui" line="3046"/>
         <source>RTU_RTU1_WR</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1994,6 +1994,8 @@
         <location filename="page405.ui" line="1546"/>
         <location filename="page405.ui" line="1582"/>
         <location filename="page405.ui" line="1618"/>
+        <location filename="page405.ui" line="1654"/>
+        <location filename="page405.ui" line="1690"/>
         <source>ATCMled widget</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2041,6 +2043,7 @@
         <location filename="page405.ui" line="521"/>
         <location filename="page405.ui" line="664"/>
         <location filename="page405.ui" line="736"/>
+        <location filename="page405.ui" line="1702"/>
         <source>TST_RTU1_WR</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2221,6 +2224,7 @@ RD</source>
         <location filename="page405.ui" line="1471"/>
         <location filename="page405.ui" line="1477"/>
         <location filename="page405.ui" line="1558"/>
+        <location filename="page405.ui" line="1666"/>
         <source>TST_RTU3_WR</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2248,6 +2252,18 @@ RD</source>
         <location filename="page405.ui" line="1615"/>
         <location filename="page405.ui" line="1621"/>
         <source>RES_RTU3_RD</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page405.ui" line="1651"/>
+        <location filename="page405.ui" line="1657"/>
+        <source>RES_RTU3_WR</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page405.ui" line="1687"/>
+        <location filename="page405.ui" line="1693"/>
+        <source>RES_RTU1_WR</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
