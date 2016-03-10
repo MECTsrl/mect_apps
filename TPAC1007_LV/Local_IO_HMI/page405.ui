@@ -541,7 +541,7 @@ background-color: rgb(255, 255, 127);
   <widget class="ATCMled" name="atcmLed_OK_RTU1_RD">
    <property name="geometry">
     <rect>
-     <x>388</x>
+     <x>390</x>
      <y>240</y>
      <width>31</width>
      <height>34</height>
@@ -1605,7 +1605,7 @@ RD</string>
   <widget class="ATCMled" name="atcmLed_OK_RTU1_RD_2">
    <property name="geometry">
     <rect>
-     <x>449</x>
+     <x>451</x>
      <y>240</y>
      <width>31</width>
      <height>34</height>
@@ -1628,6 +1628,78 @@ RD</string>
    </property>
    <property name="visibilityVar">
     <string>TST_RTU3_RD</string>
+   </property>
+   <property name="onIcon">
+    <iconset>
+     <normaloff>:/on.png</normaloff>:/on.png</iconset>
+   </property>
+   <property name="offIcon">
+    <iconset>
+     <normaloff>:/off.png</normaloff>:/off.png</iconset>
+   </property>
+  </widget>
+  <widget class="ATCMled" name="atcmLed_OK_RTU1_WR_2">
+   <property name="geometry">
+    <rect>
+     <x>422</x>
+     <y>240</y>
+     <width>31</width>
+     <height>34</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>RES_RTU3_WR</string>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMled widget</string>
+   </property>
+   <property name="variable">
+    <string>RES_RTU3_WR</string>
+   </property>
+   <property name="refresh">
+    <number>500</number>
+   </property>
+   <property name="viewStatus">
+    <bool>false</bool>
+   </property>
+   <property name="visibilityVar">
+    <string>TST_RTU3_WR</string>
+   </property>
+   <property name="onIcon">
+    <iconset>
+     <normaloff>:/on.png</normaloff>:/on.png</iconset>
+   </property>
+   <property name="offIcon">
+    <iconset>
+     <normaloff>:/off.png</normaloff>:/off.png</iconset>
+   </property>
+  </widget>
+  <widget class="ATCMled" name="atcmLed_OK_RTU1_WR">
+   <property name="geometry">
+    <rect>
+     <x>361</x>
+     <y>240</y>
+     <width>31</width>
+     <height>34</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>RES_RTU1_WR</string>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMled widget</string>
+   </property>
+   <property name="variable">
+    <string>RES_RTU1_WR</string>
+   </property>
+   <property name="refresh">
+    <number>500</number>
+   </property>
+   <property name="viewStatus">
+    <bool>false</bool>
+   </property>
+   <property name="visibilityVar">
+    <string>TST_RTU1_WR</string>
    </property>
    <property name="onIcon">
     <iconset>
@@ -1685,6 +1757,8 @@ RD</string>
   <zorder>atcmLed_RES_RTU1_WR_2</zorder>
   <zorder>atcmLed_RES_RTU1_RD_2</zorder>
   <zorder>atcmLed_OK_RTU1_RD_2</zorder>
+  <zorder>atcmLed_OK_RTU1_WR_2</zorder>
+  <zorder>atcmLed_OK_RTU1_WR</zorder>
  </widget>
  <customwidgets>
   <customwidget>

@@ -32,9 +32,9 @@ END_VAR
     if (TST_HWconfig  ) then RES_HWconfig := 0; end_if;
 
 	if (TST_RTU1_WR   ) then RTU_RTU1_WR := BOOL_TO_UINT(VAL_RTU1_WR); end_if;
-	if (TST_RTU1_RD   ) then ; end_if;
+	if (TST_RTU1_RD   ) then RTU_RTU1_WR := BOOL_TO_UINT(VAL_RTU1_RD); end_if;
 
 	if (TST_RTU3_WR   ) then RTU_RTU3_WR := BOOL_TO_UINT(VAL_RTU3_WR); end_if;
-	if (TST_RTU3_RD   ) then ; end_if;
+	if (TST_RTU3_RD   ) then RTU_RTU3_WR := BOOL_TO_UINT(VAL_RTU3_RD); end_if;
 
 END_FUNCTION

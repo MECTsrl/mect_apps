@@ -22,6 +22,7 @@ file=Events.st
 file=Fast.st
 file=Normal.st
 file=Slow.st
+file=Program1.4gr
 
 [Libs]
 file=$(LIBDIR)\ATCM_IEC1131_3.4cl
