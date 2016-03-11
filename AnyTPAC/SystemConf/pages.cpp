@@ -15,7 +15,6 @@
 #include "commpar_rtu.h"
 #include "commpar_tcp.h"
 #include "commpar_tcprtu.h"
-#include "comm_status.h"
 #include "buzzer_settings.h"
 #include "data_manager.h"
 #include "display_settings.h"
@@ -73,10 +72,6 @@ bool create_next_page(page ** p, const char * t)
         else if (strcmp(t, "commpar_tcprtu") == 0)
         {
             *p = (page *)(new commpar_tcprtu);
-        }
-        else if (strcmp(t, "comm_status") == 0)
-        {
-            *p = (page *)(new comm_status);
         }
         else if (strcmp(t, "info") == 0)
         {
