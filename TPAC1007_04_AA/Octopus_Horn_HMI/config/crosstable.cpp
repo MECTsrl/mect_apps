@@ -13,6 +13,9 @@ DWORD_BIT <-> int
 #include "cross_table_utility.h"
  
 u_int16_t STATUS = 0;
+u_int16_t RTU_HEARTBEAT = 0;
+int RTU_RTUS_RD = 0;
+int RTU_RTUS_WR = 0;
 u_int16_t TEST_COMMAND = 0;
 int TST_DigIn_1 = 0;
 int TST_DigIn_2 = 0;
@@ -219,9 +222,6 @@ int RES_RTU3_RD = 0;
 int RES_CAN_WR = 0;
 int RES_CAN_RD = 0;
 u_int16_t TEST_STATUS = 0;
-u_int16_t RTU_HEARTBEAT = 0;
-int RTU_RTUS_RD = 0;
-int RTU_RTUS_WR = 0;
 u_int16_t PLC_FWrevision = 0;
 u_int16_t PLC_HWconfig = 0;
 int PLC_DigDir_1 = 0;
@@ -297,6 +297,60 @@ return addWrite(ID_STATUS, &value);
 int getStatus_STATUS()
 {
 return getStatus(ID_STATUS);
+}
+
+
+int doWrite_RTU_HEARTBEAT(u_int16_t value)
+{
+return doWrite(ID_RTU_HEARTBEAT,  &value);
+}
+
+
+int addWrite_RTU_HEARTBEAT(u_int16_t value)
+{
+return addWrite(ID_RTU_HEARTBEAT, &value);
+}
+
+
+int getStatus_RTU_HEARTBEAT()
+{
+return getStatus(ID_RTU_HEARTBEAT);
+}
+
+
+int doWrite_RTU_RTUS_RD(int value)
+{
+return doWrite(ID_RTU_RTUS_RD,  &value);
+}
+
+
+int addWrite_RTU_RTUS_RD(int value)
+{
+return addWrite(ID_RTU_RTUS_RD, &value);
+}
+
+
+int getStatus_RTU_RTUS_RD()
+{
+return getStatus(ID_RTU_RTUS_RD);
+}
+
+
+int doWrite_RTU_RTUS_WR(int value)
+{
+return doWrite(ID_RTU_RTUS_WR,  &value);
+}
+
+
+int addWrite_RTU_RTUS_WR(int value)
+{
+return addWrite(ID_RTU_RTUS_WR, &value);
+}
+
+
+int getStatus_RTU_RTUS_WR()
+{
+return getStatus(ID_RTU_RTUS_WR);
 }
 
 
@@ -4008,60 +4062,6 @@ return getStatus(ID_TEST_STATUS);
 }
 
 
-int doWrite_RTU_HEARTBEAT(u_int16_t value)
-{
-return doWrite(ID_RTU_HEARTBEAT,  &value);
-}
-
-
-int addWrite_RTU_HEARTBEAT(u_int16_t value)
-{
-return addWrite(ID_RTU_HEARTBEAT, &value);
-}
-
-
-int getStatus_RTU_HEARTBEAT()
-{
-return getStatus(ID_RTU_HEARTBEAT);
-}
-
-
-int doWrite_RTU_RTUS_RD(int value)
-{
-return doWrite(ID_RTU_RTUS_RD,  &value);
-}
-
-
-int addWrite_RTU_RTUS_RD(int value)
-{
-return addWrite(ID_RTU_RTUS_RD, &value);
-}
-
-
-int getStatus_RTU_RTUS_RD()
-{
-return getStatus(ID_RTU_RTUS_RD);
-}
-
-
-int doWrite_RTU_RTUS_WR(int value)
-{
-return doWrite(ID_RTU_RTUS_WR,  &value);
-}
-
-
-int addWrite_RTU_RTUS_WR(int value)
-{
-return addWrite(ID_RTU_RTUS_WR, &value);
-}
-
-
-int getStatus_RTU_RTUS_WR()
-{
-return getStatus(ID_RTU_RTUS_WR);
-}
-
-
 int doWrite_PLC_FWrevision(u_int16_t value)
 {
 return doWrite(ID_PLC_FWrevision,  &value);
@@ -5110,6 +5110,9 @@ int update_all(void)
 {
 int retval = 0;
 retval += readFromDb(ID_STATUS, &STATUS);
+retval += readFromDb(ID_RTU_HEARTBEAT, &RTU_HEARTBEAT);
+retval += readFromDb(ID_RTU_RTUS_RD, &RTU_RTUS_RD);
+retval += readFromDb(ID_RTU_RTUS_WR, &RTU_RTUS_WR);
 retval += readFromDb(ID_TEST_COMMAND, &TEST_COMMAND);
 retval += readFromDb(ID_TST_DigIn_1, &TST_DigIn_1);
 retval += readFromDb(ID_TST_DigIn_2, &TST_DigIn_2);
@@ -5316,9 +5319,6 @@ retval += readFromDb(ID_RES_RTU3_RD, &RES_RTU3_RD);
 retval += readFromDb(ID_RES_CAN_WR, &RES_CAN_WR);
 retval += readFromDb(ID_RES_CAN_RD, &RES_CAN_RD);
 retval += readFromDb(ID_TEST_STATUS, &TEST_STATUS);
-retval += readFromDb(ID_RTU_HEARTBEAT, &RTU_HEARTBEAT);
-retval += readFromDb(ID_RTU_RTUS_RD, &RTU_RTUS_RD);
-retval += readFromDb(ID_RTU_RTUS_WR, &RTU_RTUS_WR);
 retval += readFromDb(ID_PLC_FWrevision, &PLC_FWrevision);
 retval += readFromDb(ID_PLC_HWconfig, &PLC_HWconfig);
 retval += readFromDb(ID_PLC_DigDir_1, &PLC_DigDir_1);

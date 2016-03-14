@@ -22,6 +22,24 @@ int doWrite_STATUS(u_int16_t value);
 int addWrite_STATUS(u_int16_t value);
 int getStatus_STATUS();
  
+#define ID_RTU_HEARTBEAT 200
+extern u_int16_t RTU_HEARTBEAT;
+int doWrite_RTU_HEARTBEAT(u_int16_t value);
+int addWrite_RTU_HEARTBEAT(u_int16_t value);
+int getStatus_RTU_HEARTBEAT();
+ 
+#define ID_RTU_RTUS_RD 201
+extern int RTU_RTUS_RD;
+int doWrite_RTU_RTUS_RD(int value);
+int addWrite_RTU_RTUS_RD(int value);
+int getStatus_RTU_RTUS_RD();
+ 
+#define ID_RTU_RTUS_WR 202
+extern int RTU_RTUS_WR;
+int doWrite_RTU_RTUS_WR(int value);
+int addWrite_RTU_RTUS_WR(int value);
+int getStatus_RTU_RTUS_WR();
+ 
 #define ID_TEST_COMMAND 4000
 extern u_int16_t TEST_COMMAND;
 int doWrite_TEST_COMMAND(u_int16_t value);
@@ -1257,24 +1275,6 @@ extern u_int16_t TEST_STATUS;
 int doWrite_TEST_STATUS(u_int16_t value);
 int addWrite_TEST_STATUS(u_int16_t value);
 int getStatus_TEST_STATUS();
- 
-#define ID_RTU_HEARTBEAT 5000
-extern u_int16_t RTU_HEARTBEAT;
-int doWrite_RTU_HEARTBEAT(u_int16_t value);
-int addWrite_RTU_HEARTBEAT(u_int16_t value);
-int getStatus_RTU_HEARTBEAT();
- 
-#define ID_RTU_RTUS_RD 5001
-extern int RTU_RTUS_RD;
-int doWrite_RTU_RTUS_RD(int value);
-int addWrite_RTU_RTUS_RD(int value);
-int getStatus_RTU_RTUS_RD();
- 
-#define ID_RTU_RTUS_WR 5002
-extern int RTU_RTUS_WR;
-int doWrite_RTU_RTUS_WR(int value);
-int addWrite_RTU_RTUS_WR(int value);
-int getStatus_RTU_RTUS_WR();
  
 #define ID_PLC_FWrevision 5300
 extern u_int16_t PLC_FWrevision;
