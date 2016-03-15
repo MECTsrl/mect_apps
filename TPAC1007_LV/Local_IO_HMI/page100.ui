@@ -2377,13 +2377,13 @@
     </rect>
    </property>
    <property name="toolTip">
-    <string>RTU_RTU1_RD</string>
+    <string>RTU_RTU3_RD</string>
    </property>
    <property name="whatsThis">
     <string>ATCMled widget</string>
    </property>
    <property name="variable">
-    <string>RTU_RTU1_RD</string>
+    <string>RTU_RTU3_RD</string>
    </property>
    <property name="refresh">
     <number>500</number>
@@ -2413,13 +2413,13 @@
     </rect>
    </property>
    <property name="toolTip">
-    <string>RTU_RTU3_RD</string>
+    <string>RTU_RTU1_RD</string>
    </property>
    <property name="whatsThis">
     <string>ATCMled widget</string>
    </property>
    <property name="variable">
-    <string>RTU_RTU3_RD</string>
+    <string>RTU_RTU1_RD</string>
    </property>
    <property name="refresh">
     <number>500</number>
@@ -2507,7 +2507,7 @@
     <bool>true</bool>
    </property>
    <property name="toolTip">
-    <string>RTU_RTU3_WR</string>
+    <string>RTU_RTU1_WR</string>
    </property>
    <property name="whatsThis">
     <string>ATCMbutton widget</string>
@@ -2519,7 +2519,7 @@
     <string/>
    </property>
    <property name="statusvar">
-    <string>RTU_RTU3_WR</string>
+    <string>RTU_RTU1_WR</string>
    </property>
    <property name="viewStatus">
     <bool>false</bool>
@@ -2570,7 +2570,7 @@
     <bool>true</bool>
    </property>
    <property name="toolTip">
-    <string>RTU_RTU1_WR</string>
+    <string>RTU_RTU3_WR</string>
    </property>
    <property name="whatsThis">
     <string>ATCMbutton widget</string>
@@ -2582,7 +2582,7 @@
     <string/>
    </property>
    <property name="statusvar">
-    <string>RTU_RTU1_WR</string>
+    <string>RTU_RTU3_WR</string>
    </property>
    <property name="viewStatus">
     <bool>false</bool>

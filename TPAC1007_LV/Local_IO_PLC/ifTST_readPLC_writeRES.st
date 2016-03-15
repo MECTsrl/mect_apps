@@ -32,10 +32,10 @@ END_VAR
     if (TST_FWrevision) then RES_FWrevision := PLC_FWrevision; end_if;
     if (TST_HWconfig  ) then RES_HWconfig := PLC_HWconfig; end_if;
 
-	if (TST_RTU1_WR   ) then RES_RTU1_WR := UINT_TO_BOOL(RTU_RTU1_RD); end_if;
-	if (TST_RTU1_RD   ) then RES_RTU1_RD := UINT_TO_BOOL(RTU_RTU1_RD); end_if;
+	if (TST_RTU1_WR   ) then if RTU_RTU1_RD = 0 then RES_RTU1_WR := false; else RES_RTU1_WR := true; end_if; end_if;
+	if (TST_RTU1_RD   ) then ; end_if;
 
-	if (TST_RTU3_WR   ) then RES_RTU3_WR := UINT_TO_BOOL(RTU_RTU3_RD); end_if;
-	if (TST_RTU3_RD   ) then RES_RTU3_RD := UINT_TO_BOOL(RTU_RTU3_RD); end_if;
+	if (TST_RTU3_WR   ) then if RTU_RTU3_RD = 0 then RES_RTU3_WR := false; else RES_RTU3_WR := true; end_if; end_if;
+	if (TST_RTU3_RD   ) then ; end_if;
 
 END_FUNCTION

@@ -529,14 +529,14 @@ RTU0 / NODE 2</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="2380"/>
-        <location filename="page100.ui" line="2386"/>
+        <location filename="page100.ui" line="2416"/>
+        <location filename="page100.ui" line="2422"/>
         <source>RTU_RTU1_RD</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="2416"/>
-        <location filename="page100.ui" line="2422"/>
+        <location filename="page100.ui" line="2380"/>
+        <location filename="page100.ui" line="2386"/>
         <source>RTU_RTU3_RD</source>
         <translation type="unfinished"></translation>
     </message>
@@ -547,14 +547,14 @@ RTU0 / NODE 2</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="2510"/>
-        <location filename="page100.ui" line="2522"/>
+        <location filename="page100.ui" line="2573"/>
+        <location filename="page100.ui" line="2585"/>
         <source>RTU_RTU3_WR</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="2573"/>
-        <location filename="page100.ui" line="2585"/>
+        <location filename="page100.ui" line="2510"/>
+        <location filename="page100.ui" line="2522"/>
         <source>RTU_RTU1_WR</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2078,30 +2078,30 @@ RTU0 / NODE 2</oldsource>
     </message>
     <message>
         <location filename="page405.ui" line="464"/>
-        <location filename="page405.ui" line="840"/>
-        <location filename="page405.ui" line="897"/>
-        <location filename="page405.ui" line="990"/>
-        <location filename="page405.ui" line="1109"/>
-        <location filename="page405.ui" line="1166"/>
-        <location filename="page405.ui" line="1223"/>
+        <location filename="page405.ui" line="742"/>
+        <location filename="page405.ui" line="799"/>
+        <location filename="page405.ui" line="892"/>
+        <location filename="page405.ui" line="1011"/>
+        <location filename="page405.ui" line="1068"/>
+        <location filename="page405.ui" line="1125"/>
         <source>ATCMlabel widget</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="page405.ui" line="473"/>
         <location filename="page405.ui" line="476"/>
-        <location filename="page405.ui" line="849"/>
-        <location filename="page405.ui" line="852"/>
-        <location filename="page405.ui" line="906"/>
-        <location filename="page405.ui" line="909"/>
-        <location filename="page405.ui" line="999"/>
-        <location filename="page405.ui" line="1002"/>
-        <location filename="page405.ui" line="1118"/>
-        <location filename="page405.ui" line="1121"/>
-        <location filename="page405.ui" line="1175"/>
-        <location filename="page405.ui" line="1178"/>
-        <location filename="page405.ui" line="1232"/>
-        <location filename="page405.ui" line="1235"/>
+        <location filename="page405.ui" line="751"/>
+        <location filename="page405.ui" line="754"/>
+        <location filename="page405.ui" line="808"/>
+        <location filename="page405.ui" line="811"/>
+        <location filename="page405.ui" line="901"/>
+        <location filename="page405.ui" line="904"/>
+        <location filename="page405.ui" line="1020"/>
+        <location filename="page405.ui" line="1023"/>
+        <location filename="page405.ui" line="1077"/>
+        <location filename="page405.ui" line="1080"/>
+        <location filename="page405.ui" line="1134"/>
+        <location filename="page405.ui" line="1137"/>
         <source>0</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2137,19 +2137,15 @@ RTU0 / NODE 2</oldsource>
         <location filename="page405.ui" line="518"/>
         <location filename="page405.ui" line="554"/>
         <location filename="page405.ui" line="590"/>
-        <location filename="page405.ui" line="652"/>
-        <location filename="page405.ui" line="688"/>
-        <location filename="page405.ui" line="724"/>
-        <location filename="page405.ui" line="951"/>
-        <location filename="page405.ui" line="1044"/>
-        <location filename="page405.ui" line="1438"/>
-        <location filename="page405.ui" line="1474"/>
-        <location filename="page405.ui" line="1510"/>
-        <location filename="page405.ui" line="1546"/>
-        <location filename="page405.ui" line="1582"/>
-        <location filename="page405.ui" line="1618"/>
-        <location filename="page405.ui" line="1654"/>
-        <location filename="page405.ui" line="1690"/>
+        <location filename="page405.ui" line="626"/>
+        <location filename="page405.ui" line="853"/>
+        <location filename="page405.ui" line="946"/>
+        <location filename="page405.ui" line="1314"/>
+        <location filename="page405.ui" line="1350"/>
+        <location filename="page405.ui" line="1386"/>
+        <location filename="page405.ui" line="1422"/>
+        <location filename="page405.ui" line="1458"/>
+        <location filename="page405.ui" line="1494"/>
         <source>ATCMled widget</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2186,8 +2182,8 @@ RTU0 / NODE 2</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page405.ui" line="1352"/>
-        <location filename="page405.ui" line="1361"/>
+        <location filename="page405.ui" line="1254"/>
+        <location filename="page405.ui" line="1263"/>
         <source>TEST_STATUS</source>
         <oldsource>START_REMOTE</oldsource>
         <translation type="unfinished"></translation>
@@ -2195,234 +2191,214 @@ RTU0 / NODE 2</oldsource>
     <message>
         <location filename="page405.ui" line="515"/>
         <location filename="page405.ui" line="521"/>
-        <location filename="page405.ui" line="664"/>
-        <location filename="page405.ui" line="736"/>
-        <location filename="page405.ui" line="1702"/>
+        <location filename="page405.ui" line="566"/>
+        <location filename="page405.ui" line="602"/>
+        <location filename="page405.ui" line="638"/>
+        <location filename="page405.ui" line="1506"/>
         <source>TST_RTU1_WR</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="page405.ui" line="551"/>
         <location filename="page405.ui" line="557"/>
-        <source>RES_RTU1_RD</source>
+        <source>VAL_RTU1_WR</source>
+        <oldsource>RES_RTU1_RD</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="page405.ui" line="515"/>
+        <location filename="page405.ui" line="521"/>
         <location filename="page405.ui" line="566"/>
-        <location filename="page405.ui" line="587"/>
-        <location filename="page405.ui" line="593"/>
-        <location filename="page405.ui" line="700"/>
-        <source>TST_RTU1_RD</source>
+        <location filename="page405.ui" line="602"/>
+        <location filename="page405.ui" line="638"/>
+        <location filename="page405.ui" line="1506"/>
+        <source>TST_RTU1_WR</source>
+        <oldsource>TST_RTU1_RD</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page405.ui" line="632"/>
-        <source>RTU1
-RD</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page405.ui" line="649"/>
-        <location filename="page405.ui" line="655"/>
+        <location filename="page405.ui" line="551"/>
+        <location filename="page405.ui" line="557"/>
         <source>VAL_RTU1_WR</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page405.ui" line="685"/>
-        <location filename="page405.ui" line="691"/>
+        <location filename="page405.ui" line="587"/>
+        <location filename="page405.ui" line="593"/>
         <source>RTU_RTU1_RD</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page405.ui" line="721"/>
-        <location filename="page405.ui" line="727"/>
+        <location filename="page405.ui" line="623"/>
+        <location filename="page405.ui" line="629"/>
         <source>RTU_RTU1_WR</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page405.ui" line="766"/>
+        <location filename="page405.ui" line="668"/>
         <source>RTU1
 WR</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page405.ui" line="792"/>
+        <location filename="page405.ui" line="694"/>
         <source>VAL_</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page405.ui" line="817"/>
+        <location filename="page405.ui" line="719"/>
         <source>FW
 revision</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page405.ui" line="834"/>
-        <location filename="page405.ui" line="984"/>
-        <location filename="page405.ui" line="1217"/>
+        <location filename="page405.ui" line="736"/>
+        <location filename="page405.ui" line="886"/>
+        <location filename="page405.ui" line="1119"/>
         <source>123</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page405.ui" line="837"/>
-        <location filename="page405.ui" line="843"/>
+        <location filename="page405.ui" line="739"/>
+        <location filename="page405.ui" line="745"/>
         <source>PLC_FWrevision</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page405.ui" line="858"/>
-        <location filename="page405.ui" line="948"/>
-        <location filename="page405.ui" line="954"/>
-        <location filename="page405.ui" line="1008"/>
-        <location filename="page405.ui" line="1241"/>
+        <location filename="page405.ui" line="760"/>
+        <location filename="page405.ui" line="850"/>
+        <location filename="page405.ui" line="856"/>
+        <location filename="page405.ui" line="910"/>
+        <location filename="page405.ui" line="1143"/>
         <source>TST_FWrevision</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page405.ui" line="891"/>
-        <location filename="page405.ui" line="1103"/>
-        <location filename="page405.ui" line="1160"/>
+        <location filename="page405.ui" line="793"/>
+        <location filename="page405.ui" line="1005"/>
+        <location filename="page405.ui" line="1062"/>
         <source>321</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page405.ui" line="894"/>
-        <location filename="page405.ui" line="900"/>
+        <location filename="page405.ui" line="796"/>
+        <location filename="page405.ui" line="802"/>
         <source>PLC_HWconfig</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page405.ui" line="915"/>
-        <location filename="page405.ui" line="1041"/>
-        <location filename="page405.ui" line="1047"/>
-        <location filename="page405.ui" line="1127"/>
-        <location filename="page405.ui" line="1184"/>
+        <location filename="page405.ui" line="817"/>
+        <location filename="page405.ui" line="943"/>
+        <location filename="page405.ui" line="949"/>
+        <location filename="page405.ui" line="1029"/>
+        <location filename="page405.ui" line="1086"/>
         <source>TST_HWconfig</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page405.ui" line="987"/>
-        <location filename="page405.ui" line="993"/>
+        <location filename="page405.ui" line="889"/>
+        <location filename="page405.ui" line="895"/>
         <source>VAL_FWrevision</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page405.ui" line="1086"/>
+        <location filename="page405.ui" line="988"/>
         <source>HW
 config</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page405.ui" line="1106"/>
-        <location filename="page405.ui" line="1112"/>
+        <location filename="page405.ui" line="1008"/>
+        <location filename="page405.ui" line="1014"/>
         <source>VAL_HWconfig</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page405.ui" line="1163"/>
-        <location filename="page405.ui" line="1169"/>
+        <location filename="page405.ui" line="1065"/>
+        <location filename="page405.ui" line="1071"/>
         <source>RES_HWconfig</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page405.ui" line="1220"/>
-        <location filename="page405.ui" line="1226"/>
+        <location filename="page405.ui" line="1122"/>
+        <location filename="page405.ui" line="1128"/>
         <source>RES_FWrevision</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page405.ui" line="1283"/>
+        <location filename="page405.ui" line="1185"/>
         <source>ATCMcombobox widget</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page405.ui" line="1314"/>
+        <location filename="page405.ui" line="1216"/>
         <source>0;LOCAL;216;REMOTE;42;DONE</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page405.ui" line="1336"/>
+        <location filename="page405.ui" line="1238"/>
         <source>Modbus/TCP</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page405.ui" line="1355"/>
+        <location filename="page405.ui" line="1257"/>
         <source>ATCManimation widget</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page405.ui" line="1358"/>
+        <location filename="page405.ui" line="1260"/>
         <source>0;:/icons/my_img/local.png;216;:/icons/my_img/remote.png;42;:/icons/my_img/done.png</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page405.ui" line="1392"/>
+        <location filename="page405.ui" line="1294"/>
         <source>RTU3
 WR</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page405.ui" line="1418"/>
-        <source>RTU3
-RD</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page405.ui" line="1435"/>
-        <location filename="page405.ui" line="1441"/>
+        <location filename="page405.ui" line="1311"/>
+        <location filename="page405.ui" line="1317"/>
         <source>VAL_RTU3_WR</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page405.ui" line="1450"/>
-        <location filename="page405.ui" line="1471"/>
-        <location filename="page405.ui" line="1477"/>
-        <location filename="page405.ui" line="1558"/>
-        <location filename="page405.ui" line="1666"/>
+        <location filename="page405.ui" line="1326"/>
+        <location filename="page405.ui" line="1347"/>
+        <location filename="page405.ui" line="1353"/>
+        <location filename="page405.ui" line="1398"/>
+        <location filename="page405.ui" line="1434"/>
+        <location filename="page405.ui" line="1470"/>
         <source>TST_RTU3_WR</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page405.ui" line="1507"/>
-        <location filename="page405.ui" line="1513"/>
-        <location filename="page405.ui" line="1594"/>
-        <location filename="page405.ui" line="1630"/>
-        <source>TST_RTU3_RD</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page405.ui" line="1543"/>
-        <location filename="page405.ui" line="1549"/>
+        <location filename="page405.ui" line="1383"/>
+        <location filename="page405.ui" line="1389"/>
         <source>RTU_RTU3_WR</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page405.ui" line="1579"/>
-        <location filename="page405.ui" line="1585"/>
+        <location filename="page405.ui" line="1419"/>
+        <location filename="page405.ui" line="1425"/>
         <source>RTU_RTU3_RD</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page405.ui" line="1615"/>
-        <location filename="page405.ui" line="1621"/>
-        <source>RES_RTU3_RD</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page405.ui" line="1651"/>
-        <location filename="page405.ui" line="1657"/>
+        <location filename="page405.ui" line="1455"/>
+        <location filename="page405.ui" line="1461"/>
         <source>RES_RTU3_WR</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page405.ui" line="1687"/>
-        <location filename="page405.ui" line="1693"/>
+        <location filename="page405.ui" line="1491"/>
+        <location filename="page405.ui" line="1497"/>
         <source>RES_RTU1_WR</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page405.ui" line="1280"/>
-        <location filename="page405.ui" line="1286"/>
+        <location filename="page405.ui" line="1182"/>
+        <location filename="page405.ui" line="1188"/>
         <source>TEST_COMMAND</source>
         <translation type="unfinished"></translation>
     </message>
