@@ -25,6 +25,7 @@ END_VAR
 			case substatus of
 			0: (* for each tested output write the specified value *)
 	        	ifTST_readVAL_writePLC();
+ 		        if (TST_AnOut_3 ) then PLC_DigDir_1 := 1; PLC_DigOut_1 := 1; end_if;
 				substatus := 1;
 			1: (* wait for propagation of max 28 PLC writes on local RTU and I/O settling *)
 				timer(IN := TRUE, PT := T#3000ms); (* slow AnIn *)
@@ -45,9 +46,11 @@ END_VAR
 				STATUS := STATUS_DONE;
 				TEST_STATUS := STATUS;
 			 end_case;
+ 	         if (TST_AnOut_3 ) then PLC_DigOut_1 := not PLC_DigOut_1; end_if;
 	    end_if;
 	
 	STATUS_DONE:
+        if (TST_AnOut_3 ) then PLC_DigOut_1 := not PLC_DigOut_1; end_if;
 		if (TEST_COMMAND = STATUS_REMOTE) then
 			substatus := 0;
 			STATUS := STATUS_REMOTE;

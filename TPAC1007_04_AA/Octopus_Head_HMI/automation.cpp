@@ -151,6 +151,44 @@ void loop(void)
     }
 }
 
+
+char *strtok_csv(char *string, const char *separators, char **savedptr)
+{
+    char *p, *s;
+
+    if (separators == NULL || savedptr == NULL) {
+        return NULL;
+    }
+    if (string == NULL) {
+        p = *savedptr;
+        if (p == NULL) {
+            return NULL;
+        }
+    } else {
+        p = string;
+    }
+
+    s = strstr(p, separators);
+    if (s == NULL) {
+        *savedptr = NULL;
+        return p;
+    }
+    *s = 0;
+    *savedptr = s + 1;
+
+    // remove spaces at head
+    while (p < s && isspace(*p)) {
+        ++p;
+    }
+    // remove spaces at tail
+    --s;
+    while (s > p && isspace(*s)) {
+        *s = 0;
+        --s;
+    }
+    return p;
+}
+
 /*
  * tag1; val1; val2 ... valn
  * ...
@@ -177,99 +215,100 @@ static void loadRecipe(void)
         LOG_PRINT(info_e, "Cannot open '%s'\n", filename.toAscii().data());
         return;
     }
-    char varname[TAG_LEN] = "";
-    char token[LINE_SIZE] = "";
+
     char line[LINE_SIZE] = "";
-    char * p;
+    char *p, *r;
     int step = 0;
     for (int line_nb = 0; fgets(line, LINE_SIZE, fp) != NULL; line_nb++)
     {
-        p = line;
         if (line[0] == '\n' || line[0] == '\r' || line[0] == 0) {
             continue;
         }
         /* tag */
-        p = mystrtok(p, varname, SEPARATOR);
-        if (p == NULL || varname[0] == '\0')
+        p = strtok_csv(line, SEPARATOR, &r);
+        if (p == NULL || p[0] == '\0')
         {
             LOG_PRINT(error_e, "Invalid tag '%s' at line %d\n", line, line_nb);
             continue;
         }
         int ctIndex;
-        if (Tag2CtIndex(varname, &ctIndex))
+        if (Tag2CtIndex(p, &ctIndex))
         {
-            LOG_PRINT(error_e, "Invalid variable '%s' at line %d\n", varname, line_nb);
+            LOG_PRINT(error_e, "Invalid variable '%s' at line %d\n", p, line_nb);
             continue;
         }
         ctIndexList << (u_int16_t)ctIndex;
 
         /* values */
+        u_int32_t value;
+        float val_float;
+        u_int8_t val_bit;
+        int32_t val_int32;
+        int16_t val_int16;
+
         step = 0;
-        do
+        while ((p = strtok_csv(NULL, SEPARATOR, &r)) != NULL)
         {
-            u_int32_t value;
-            p = mystrtok(p, token, SEPARATOR);
-            if (token[0] != '\0')
+            value = 0;
+            // compute value
+            switch (varNameArray[ctIndex].type)
             {
-                switch (varNameArray[ctIndex].type)
-                {
-                case uintab_e:
-                case uintba_e:
-                case intab_e:
-                case intba_e:
-                {
-                    float val_float = atof(token);
-                    for (int n = 0; n < varNameArray[ctIndex].decimal; ++n) {
-                        val_float = val_float * 10;
-                    }
-                    int16_t val_int16 = (u_int16_t)val_float;
-                    value = (u_int32_t)val_int16;
-                    break;
+            case uintab_e:
+            case uintba_e:
+            case intab_e:
+            case intba_e:
+            {
+                val_float = atof(p);
+                for (int n = 0; n < varNameArray[ctIndex].decimal; ++n) {
+                    val_float = val_float * 10;
                 }
-                case udint_abcd_e:
-                case udint_badc_e:
-                case udint_cdab_e:
-                case udint_dcba_e:
-                case dint_abcd_e:
-                case dint_badc_e:
-                case dint_cdab_e:
-                case dint_dcba_e:
-                {
-                    float val_float = atof(token);
-                    for (int n = 0; n < varNameArray[ctIndex].decimal; ++n) {
-                        val_float = val_float * 10;
-                    }
-                    int32_t val_int32 = atoi(token);
-                    memcpy(&value, &val_int32, sizeof(u_int32_t));
-                    break;
-                }
-                case fabcd_e:
-                case fbadc_e:
-                case fcdab_e:
-                case fdcba_e:
-                {
-                    float val_float = atof(token);
-                    memcpy(&value, &val_float, sizeof(u_int32_t));
-                    break;
-                }
-                case bytebit_e:
-                case wordbit_e:
-                case dwordbit_e:
-                case bit_e:
-                {
-                    u_int8_t val_bit = atoi(token);
-                    value = (u_int32_t)val_bit;
-                    break;
-                }
-                default:
-                    /* unknown type */
-                    break;
-                }
+                val_int16 = (int16_t)val_float;
+                value = (u_int32_t)val_int16;
+                break;
             }
+            case udint_abcd_e:
+            case udint_badc_e:
+            case udint_cdab_e:
+            case udint_dcba_e:
+            case dint_abcd_e:
+            case dint_badc_e:
+            case dint_cdab_e:
+            case dint_dcba_e:
+            {
+                val_float = atof(p);
+                for (int n = 0; n < varNameArray[ctIndex].decimal; ++n) {
+                    val_float = val_float * 10;
+                }
+                val_int32 = (int32_t)val_float;
+                memcpy(&value, &val_int32, sizeof(u_int32_t));
+                break;
+            }
+            case fabcd_e:
+            case fbadc_e:
+            case fcdab_e:
+            case fdcba_e:
+            {
+                val_float = atof(p);
+                memcpy(&value, &val_float, sizeof(u_int32_t));
+                break;
+            }
+            case bytebit_e:
+            case wordbit_e:
+            case dwordbit_e:
+            case bit_e:
+            {
+                val_bit = atoi(p);
+                value = (u_int32_t)val_bit;
+                break;
+            }
+            default:
+                /* unknown type */
+                value = 0;
+            }
+            // assign value
             (valuesTable[step]) << value;
             step++;
         }
-        while(p != NULL);
     }
     fclose(fp);
     doWrite_TEST_STEP_MAX(step);

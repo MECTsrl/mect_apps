@@ -5328,7 +5328,7 @@
 1;P;PLC_EncoderLo   ;UINT     ;0   ;CANOPEN   ;               ;    ;1   ;12  ;5300;39  ;[RO]
 1;P;PLC_EncoderHi   ;UINT     ;0   ;CANOPEN   ;               ;    ;1   ;13  ;5300;39  ;[RO]
 1;P;PLC_StatusReg   ;UINT     ;0   ;CANOPEN   ;               ;    ;1   ;14  ;5300;39  ;[RO]
-1;P;PLC_RPM         ;UINT     ;0   ;CANOPEN   ;               ;    ;1   ;15  ;5300;39  ;[RO]
+1;P;PLC_RPM         ;UINT     ;1   ;CANOPEN   ;               ;    ;1   ;15  ;5300;39  ;[RO]
 1;P;PLC_AnOut_1     ;INT      ;2   ;CANOPEN   ;               ;    ;1   ;16  ;5300;39  ;[RW]
 1;P;PLC_AnOut_2     ;INT      ;2   ;CANOPEN   ;               ;    ;1   ;17  ;5300;39  ;[RW]
 1;P;PLC_AnInConf    ;UINT     ;0   ;CANOPEN   ;               ;    ;1   ;18  ;5300;39  ;[RW]
