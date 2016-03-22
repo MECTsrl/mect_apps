@@ -716,6 +716,7 @@
         <location filename="page200.ui" line="3574"/>
         <location filename="page200.ui" line="3682"/>
         <location filename="page200.ui" line="3832"/>
+        <location filename="page200.ui" line="3882"/>
         <source>ATCMbutton widget</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1401,6 +1402,16 @@ ON</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="page200.ui" line="3879"/>
+        <source>page: page201  status: </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="3885"/>
+        <source>page201</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="page200.ui" line="315"/>
         <source>ATCM QTime</source>
         <translation type="unfinished"></translation>
@@ -1408,6 +1419,374 @@ ON</source>
     <message>
         <location filename="page200.ui" line="318"/>
         <source>ATCMtime widget</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>page201</name>
+    <message>
+        <location filename="page201.ui" line="26"/>
+        <location filename="page201.ui" line="271"/>
+        <source>page201</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page201.ui" line="49"/>
+        <location filename="page201.ui" line="55"/>
+        <source>TEST2_STATUS</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page201.ui" line="52"/>
+        <location filename="page201.ui" line="669"/>
+        <location filename="page201.ui" line="949"/>
+        <location filename="page201.ui" line="1177"/>
+        <location filename="page201.ui" line="1418"/>
+        <location filename="page201.ui" line="1611"/>
+        <location filename="page201.ui" line="1664"/>
+        <source>ATCMcombobox widget</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page201.ui" line="83"/>
+        <source>0;2: LOCAL;216;2: REMOTE;42;2: DONE</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page201.ui" line="102"/>
+        <location filename="page201.ui" line="108"/>
+        <source>TEST_STEP</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page201.ui" line="105"/>
+        <location filename="page201.ui" line="324"/>
+        <location filename="page201.ui" line="796"/>
+        <location filename="page201.ui" line="1024"/>
+        <location filename="page201.ui" line="1074"/>
+        <location filename="page201.ui" line="1124"/>
+        <location filename="page201.ui" line="1252"/>
+        <location filename="page201.ui" line="1302"/>
+        <location filename="page201.ui" line="1365"/>
+        <location filename="page201.ui" line="1558"/>
+        <location filename="page201.ui" line="1714"/>
+        <source>ATCMlabel widget</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page201.ui" line="117"/>
+        <location filename="page201.ui" line="120"/>
+        <location filename="page201.ui" line="336"/>
+        <location filename="page201.ui" line="339"/>
+        <location filename="page201.ui" line="805"/>
+        <location filename="page201.ui" line="808"/>
+        <location filename="page201.ui" line="1033"/>
+        <location filename="page201.ui" line="1036"/>
+        <location filename="page201.ui" line="1083"/>
+        <location filename="page201.ui" line="1086"/>
+        <location filename="page201.ui" line="1133"/>
+        <location filename="page201.ui" line="1136"/>
+        <location filename="page201.ui" line="1261"/>
+        <location filename="page201.ui" line="1264"/>
+        <location filename="page201.ui" line="1311"/>
+        <location filename="page201.ui" line="1314"/>
+        <location filename="page201.ui" line="1374"/>
+        <location filename="page201.ui" line="1377"/>
+        <location filename="page201.ui" line="1567"/>
+        <location filename="page201.ui" line="1570"/>
+        <location filename="page201.ui" line="1723"/>
+        <location filename="page201.ui" line="1726"/>
+        <source>0</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page201.ui" line="155"/>
+        <location filename="page201.ui" line="161"/>
+        <source>PLC_DigOut_2</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page201.ui" line="158"/>
+        <location filename="page201.ui" line="468"/>
+        <location filename="page201.ui" line="601"/>
+        <source>ATCMled widget</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page201.ui" line="203"/>
+        <location filename="page201.ui" line="215"/>
+        <source>AUTOMATIC</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page201.ui" line="206"/>
+        <location filename="page201.ui" line="268"/>
+        <location filename="page201.ui" line="408"/>
+        <location filename="page201.ui" line="541"/>
+        <location filename="page201.ui" line="858"/>
+        <location filename="page201.ui" line="1498"/>
+        <source>ATCMbutton widget</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page201.ui" line="238"/>
+        <location filename="page201.ui" line="242"/>
+        <source>AUTO
+(GO)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page201.ui" line="321"/>
+        <location filename="page201.ui" line="327"/>
+        <source>TEST_STEP_MAX</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page201.ui" line="380"/>
+        <source>PWR
+ON</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page201.ui" line="411"/>
+        <source>menu</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page201.ui" line="440"/>
+        <location filename="page201.ui" line="443"/>
+        <source>TPAC1007_4AA</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page201.ui" line="465"/>
+        <location filename="page201.ui" line="471"/>
+        <source>PLC_DigIn_1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page201.ui" line="510"/>
+        <source>Octopus Head</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page201.ui" line="538"/>
+        <location filename="page201.ui" line="550"/>
+        <source>DO_REPEAT</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page201.ui" line="573"/>
+        <location filename="page201.ui" line="576"/>
+        <source>REPEAT</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page201.ui" line="598"/>
+        <location filename="page201.ui" line="604"/>
+        <source>PLC_DigOut_3</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page201.ui" line="645"/>
+        <source>page201: Diagnost.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page201.ui" line="666"/>
+        <location filename="page201.ui" line="672"/>
+        <source>TESTx_STATUS</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page201.ui" line="700"/>
+        <source>0;x: LOCAL;216;x: REMOTE;42;x: DONE</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page201.ui" line="718"/>
+        <source>ATCM QDate</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page201.ui" line="721"/>
+        <source>ATCMdate widget</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page201.ui" line="755"/>
+        <source>ATCM QTime</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page201.ui" line="758"/>
+        <source>ATCMtime widget</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page201.ui" line="790"/>
+        <source>86400.00</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page201.ui" line="793"/>
+        <location filename="page201.ui" line="799"/>
+        <source>PLC_time</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page201.ui" line="855"/>
+        <source>page: page200  status: </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page201.ui" line="861"/>
+        <source>page200</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page201.ui" line="890"/>
+        <location filename="page201.ui" line="893"/>
+        <source>BACK</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page201.ui" line="924"/>
+        <source>STATUS</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page201.ui" line="946"/>
+        <location filename="page201.ui" line="952"/>
+        <source>RTU3_STATUS</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page201.ui" line="980"/>
+        <location filename="page201.ui" line="1695"/>
+        <source>1;NOT_CONNECTED;2;CONNECTED;3;CONNECTED_WITH_ERRORS;4;DEVICE_BLACKLIST;5;NO_HOPE;0;ZERO</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page201.ui" line="1002"/>
+        <source>TIMEOUTS / COMM_ERR</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page201.ui" line="1021"/>
+        <location filename="page201.ui" line="1027"/>
+        <source>RTU0_TIMEOUTS</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page201.ui" line="1071"/>
+        <location filename="page201.ui" line="1077"/>
+        <source>RTU3_READS</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page201.ui" line="1121"/>
+        <location filename="page201.ui" line="1127"/>
+        <source>RTU0_WRITES</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page201.ui" line="1174"/>
+        <location filename="page201.ui" line="1180"/>
+        <source>NODE_01_STATUS</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page201.ui" line="1208"/>
+        <location filename="page201.ui" line="1642"/>
+        <source>1;NODE_OK;2;TIMEOUT;3;BLACKLIST;0;NO_NODE</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page201.ui" line="1230"/>
+        <source>READS / WRITES</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page201.ui" line="1249"/>
+        <location filename="page201.ui" line="1255"/>
+        <source>RTU3_TIMEOUTS</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page201.ui" line="1299"/>
+        <location filename="page201.ui" line="1305"/>
+        <source>RTU3_COMM_ERRORS</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page201.ui" line="1362"/>
+        <location filename="page201.ui" line="1368"/>
+        <source>RTU0_COMM_ERRORS</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page201.ui" line="1415"/>
+        <location filename="page201.ui" line="1421"/>
+        <source>PLC_EngineStatus</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page201.ui" line="1449"/>
+        <source>1;INITIALIZED;2;RUNNING;3;ERROR;4;EXITING;0;IDLE</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page201.ui" line="1471"/>
+        <source>NODE STATUS</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page201.ui" line="1495"/>
+        <location filename="page201.ui" line="1507"/>
+        <source>PLC_ResetValues</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page201.ui" line="1530"/>
+        <location filename="page201.ui" line="1533"/>
+        <source>Reset Values</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page201.ui" line="1555"/>
+        <location filename="page201.ui" line="1561"/>
+        <source>RTU0_READS</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page201.ui" line="1608"/>
+        <location filename="page201.ui" line="1614"/>
+        <source>NODE_02_STATUS</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page201.ui" line="1661"/>
+        <location filename="page201.ui" line="1667"/>
+        <source>RTU0_STATUS</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page201.ui" line="1711"/>
+        <location filename="page201.ui" line="1717"/>
+        <source>RTU3_WRITES</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page201.ui" line="1847"/>
+        <source>RTU internal
+RTU3</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page201.ui" line="1875"/>
+        <source>RTU1
+RTU0 / NODE 2</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

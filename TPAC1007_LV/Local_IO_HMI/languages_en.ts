@@ -2206,23 +2206,6 @@ RTU0 / NODE 2</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page405.ui" line="515"/>
-        <location filename="page405.ui" line="521"/>
-        <location filename="page405.ui" line="566"/>
-        <location filename="page405.ui" line="602"/>
-        <location filename="page405.ui" line="638"/>
-        <location filename="page405.ui" line="1506"/>
-        <source>TST_RTU1_WR</source>
-        <oldsource>TST_RTU1_RD</oldsource>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page405.ui" line="551"/>
-        <location filename="page405.ui" line="557"/>
-        <source>VAL_RTU1_WR</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="page405.ui" line="587"/>
         <location filename="page405.ui" line="593"/>
         <source>RTU_RTU1_RD</source>

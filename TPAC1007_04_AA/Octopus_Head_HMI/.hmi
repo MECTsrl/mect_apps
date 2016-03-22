@@ -13,6 +13,7 @@ INPUT(
 ./page405.o
 ./page434.o
 ./page444.o
+./page201.o
 ./moc_page100.o
 ./moc_page200.o
 ./moc_page300.o
@@ -24,6 +25,7 @@ INPUT(
 ./moc_page405.o
 ./moc_page434.o
 ./moc_page444.o
+./moc_page201.o
 ./qrc_systemicons.o
 ./qrc_languages.o
 ./qrc_resources.o

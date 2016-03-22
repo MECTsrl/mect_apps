@@ -22,7 +22,8 @@ HEADERS += \
     page404.h \
     page405.h \
     page434.h \
-    page444.h
+    page444.h \
+    page201.h
 
 
 
@@ -37,7 +38,8 @@ FORMS += \
     page404.ui \
     page405.ui \
     page434.ui \
-    page444.ui
+    page444.ui \
+    page201.ui
 
 
 SOURCES += \
@@ -52,7 +54,8 @@ SOURCES += \
     page404.cpp \
     page405.cpp \
     page434.cpp \
-    page444.cpp
+    page444.cpp \
+    page201.cpp
 
 RESOURCES += \
     resources.qrc

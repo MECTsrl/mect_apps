@@ -20,7 +20,8 @@ HEADERS += \
     page402.h \
     page403.h \
     page404.h \
-    page405.h
+    page405.h \
+
 
 
 FORMS += \
@@ -45,7 +46,8 @@ SOURCES += \
     page402.cpp \
     page403.cpp \
     page404.cpp \
-    page405.cpp
+    page405.cpp \
+
 
 
 RESOURCES += \
