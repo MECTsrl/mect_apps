@@ -19,15 +19,11 @@ target.path = /update
 INSTALLS += target
 
 config.files = config/Crosstable.csv config/system.ini
-config.files += config/Alarms.csv
 config.files += config/lang_table.csv
 config.path = /update
 
-splash.files = config/splash.png config/systool.png
+splash.files = config/splash.png
 splash.path = /local/etc/sysconfig/img
-
-customstore.files = config/store1.csv
-customstore.path = /local/data/customstore
 
 customtrend.files = config/trend1.csv
 customtrend.path = /local/data/customtrend
@@ -38,7 +34,6 @@ INSTALLS += debug_deploy
 
 INSTALLS += config splash
 
-INSTALLS += customstore
 INSTALLS += customtrend
 
 DEFINES+=ENABLE_STORE
@@ -91,9 +86,6 @@ FORMS += \
 SOURCES += \
         config/crosstable.cpp \
         pages.cpp
-
-RESOURCES += \
-	systemicons.qrc
 
 check_missing_file.commands = @perl $${ATCM_TEMPLATE_BASE_DIR}/ATCM-template-project/cleanmissingpage.pl $$_PRO_FILE_ $$_PRO_FILE_PWD_
 check_undeclared_variable.commands = @perl $${ATCM_TEMPLATE_BASE_DIR}/ATCM-template-project/check_cross_var.pl $$_PRO_FILE_PWD_

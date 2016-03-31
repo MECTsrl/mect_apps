@@ -3,15 +3,7 @@ INPUT(
 ./pages.o
 ./automation.o
 ./page100.o
-./page400.o
-./page401.o
-./page402.o
-./page405.o
 ./moc_page100.o
-./moc_page400.o
-./moc_page401.o
-./moc_page402.o
-./moc_page405.o
 ./qrc_languages.o
 ./qrc_resources.o
 );

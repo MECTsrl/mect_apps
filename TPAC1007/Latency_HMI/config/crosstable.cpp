@@ -71,661 +71,991 @@ float PLC_timeWin = 0;
 
 int doWrite_RISING_FRONT(int value)
 {
-return writeVarByCtIndex(ID_RISING_FRONT,  &value);
+return doWrite(ID_RISING_FRONT,  &value);
 }
 
 
 int addWrite_RISING_FRONT(int value)
 {
-return (prepareWriteVarByCtIndex(ID_RISING_FRONT, &value, NULL, 0) == ERROR);
+return addWrite(ID_RISING_FRONT, &value);
+}
+
+
+int getStatus_RISING_FRONT()
+{
+return getStatus(ID_RISING_FRONT);
 }
 
 
 int doWrite_FALLING_FRONT(int value)
 {
-return writeVarByCtIndex(ID_FALLING_FRONT,  &value);
+return doWrite(ID_FALLING_FRONT,  &value);
 }
 
 
 int addWrite_FALLING_FRONT(int value)
 {
-return (prepareWriteVarByCtIndex(ID_FALLING_FRONT, &value, NULL, 0) == ERROR);
+return addWrite(ID_FALLING_FRONT, &value);
+}
+
+
+int getStatus_FALLING_FRONT()
+{
+return getStatus(ID_FALLING_FRONT);
 }
 
 
 int doWrite_AAA(int32_t value)
 {
-return writeVarByCtIndex(ID_AAA,  &value);
+return doWrite(ID_AAA,  &value);
 }
 
 
 int addWrite_AAA(int32_t value)
 {
-return (prepareWriteVarByCtIndex(ID_AAA, &value, NULL, 0) == ERROR);
+return addWrite(ID_AAA, &value);
+}
+
+
+int getStatus_AAA()
+{
+return getStatus(ID_AAA);
 }
 
 
 int doWrite_BBB(int32_t value)
 {
-return writeVarByCtIndex(ID_BBB,  &value);
+return doWrite(ID_BBB,  &value);
 }
 
 
 int addWrite_BBB(int32_t value)
 {
-return (prepareWriteVarByCtIndex(ID_BBB, &value, NULL, 0) == ERROR);
+return addWrite(ID_BBB, &value);
+}
+
+
+int getStatus_BBB()
+{
+return getStatus(ID_BBB);
 }
 
 
 int doWrite_CCC(float value)
 {
-return writeVarByCtIndex(ID_CCC,  &value);
+return doWrite(ID_CCC,  &value);
 }
 
 
 int addWrite_CCC(float value)
 {
-return (prepareWriteVarByCtIndex(ID_CCC, &value, NULL, 0) == ERROR);
+return addWrite(ID_CCC, &value);
+}
+
+
+int getStatus_CCC()
+{
+return getStatus(ID_CCC);
 }
 
 
 int doWrite_DDD(float value)
 {
-return writeVarByCtIndex(ID_DDD,  &value);
+return doWrite(ID_DDD,  &value);
 }
 
 
 int addWrite_DDD(float value)
 {
-return (prepareWriteVarByCtIndex(ID_DDD, &value, NULL, 0) == ERROR);
+return addWrite(ID_DDD, &value);
+}
+
+
+int getStatus_DDD()
+{
+return getStatus(ID_DDD);
 }
 
 
 int doWrite_PLC_FWrevision(u_int16_t value)
 {
-return writeVarByCtIndex(ID_PLC_FWrevision,  &value);
+return doWrite(ID_PLC_FWrevision,  &value);
 }
 
 
 int addWrite_PLC_FWrevision(u_int16_t value)
 {
-return (prepareWriteVarByCtIndex(ID_PLC_FWrevision, &value, NULL, 0) == ERROR);
+return addWrite(ID_PLC_FWrevision, &value);
+}
+
+
+int getStatus_PLC_FWrevision()
+{
+return getStatus(ID_PLC_FWrevision);
 }
 
 
 int doWrite_PLC_HWconfig(u_int16_t value)
 {
-return writeVarByCtIndex(ID_PLC_HWconfig,  &value);
+return doWrite(ID_PLC_HWconfig,  &value);
 }
 
 
 int addWrite_PLC_HWconfig(u_int16_t value)
 {
-return (prepareWriteVarByCtIndex(ID_PLC_HWconfig, &value, NULL, 0) == ERROR);
+return addWrite(ID_PLC_HWconfig, &value);
+}
+
+
+int getStatus_PLC_HWconfig()
+{
+return getStatus(ID_PLC_HWconfig);
 }
 
 
 int doWrite_PLC_DigDir_1(int value)
 {
-return writeVarByCtIndex(ID_PLC_DigDir_1,  &value);
+return doWrite(ID_PLC_DigDir_1,  &value);
 }
 
 
 int addWrite_PLC_DigDir_1(int value)
 {
-return (prepareWriteVarByCtIndex(ID_PLC_DigDir_1, &value, NULL, 0) == ERROR);
+return addWrite(ID_PLC_DigDir_1, &value);
+}
+
+
+int getStatus_PLC_DigDir_1()
+{
+return getStatus(ID_PLC_DigDir_1);
 }
 
 
 int doWrite_PLC_DigDir_2(int value)
 {
-return writeVarByCtIndex(ID_PLC_DigDir_2,  &value);
+return doWrite(ID_PLC_DigDir_2,  &value);
 }
 
 
 int addWrite_PLC_DigDir_2(int value)
 {
-return (prepareWriteVarByCtIndex(ID_PLC_DigDir_2, &value, NULL, 0) == ERROR);
+return addWrite(ID_PLC_DigDir_2, &value);
+}
+
+
+int getStatus_PLC_DigDir_2()
+{
+return getStatus(ID_PLC_DigDir_2);
 }
 
 
 int doWrite_PLC_DigDir_3(int value)
 {
-return writeVarByCtIndex(ID_PLC_DigDir_3,  &value);
+return doWrite(ID_PLC_DigDir_3,  &value);
 }
 
 
 int addWrite_PLC_DigDir_3(int value)
 {
-return (prepareWriteVarByCtIndex(ID_PLC_DigDir_3, &value, NULL, 0) == ERROR);
+return addWrite(ID_PLC_DigDir_3, &value);
+}
+
+
+int getStatus_PLC_DigDir_3()
+{
+return getStatus(ID_PLC_DigDir_3);
 }
 
 
 int doWrite_PLC_DigDir_4(int value)
 {
-return writeVarByCtIndex(ID_PLC_DigDir_4,  &value);
+return doWrite(ID_PLC_DigDir_4,  &value);
 }
 
 
 int addWrite_PLC_DigDir_4(int value)
 {
-return (prepareWriteVarByCtIndex(ID_PLC_DigDir_4, &value, NULL, 0) == ERROR);
+return addWrite(ID_PLC_DigDir_4, &value);
+}
+
+
+int getStatus_PLC_DigDir_4()
+{
+return getStatus(ID_PLC_DigDir_4);
 }
 
 
 int doWrite_PLC_DigDir_5(int value)
 {
-return writeVarByCtIndex(ID_PLC_DigDir_5,  &value);
+return doWrite(ID_PLC_DigDir_5,  &value);
 }
 
 
 int addWrite_PLC_DigDir_5(int value)
 {
-return (prepareWriteVarByCtIndex(ID_PLC_DigDir_5, &value, NULL, 0) == ERROR);
+return addWrite(ID_PLC_DigDir_5, &value);
+}
+
+
+int getStatus_PLC_DigDir_5()
+{
+return getStatus(ID_PLC_DigDir_5);
 }
 
 
 int doWrite_PLC_DigDir_6(int value)
 {
-return writeVarByCtIndex(ID_PLC_DigDir_6,  &value);
+return doWrite(ID_PLC_DigDir_6,  &value);
 }
 
 
 int addWrite_PLC_DigDir_6(int value)
 {
-return (prepareWriteVarByCtIndex(ID_PLC_DigDir_6, &value, NULL, 0) == ERROR);
+return addWrite(ID_PLC_DigDir_6, &value);
+}
+
+
+int getStatus_PLC_DigDir_6()
+{
+return getStatus(ID_PLC_DigDir_6);
 }
 
 
 int doWrite_PLC_DigDir_7(int value)
 {
-return writeVarByCtIndex(ID_PLC_DigDir_7,  &value);
+return doWrite(ID_PLC_DigDir_7,  &value);
 }
 
 
 int addWrite_PLC_DigDir_7(int value)
 {
-return (prepareWriteVarByCtIndex(ID_PLC_DigDir_7, &value, NULL, 0) == ERROR);
+return addWrite(ID_PLC_DigDir_7, &value);
+}
+
+
+int getStatus_PLC_DigDir_7()
+{
+return getStatus(ID_PLC_DigDir_7);
 }
 
 
 int doWrite_PLC_DigDir_8(int value)
 {
-return writeVarByCtIndex(ID_PLC_DigDir_8,  &value);
+return doWrite(ID_PLC_DigDir_8,  &value);
 }
 
 
 int addWrite_PLC_DigDir_8(int value)
 {
-return (prepareWriteVarByCtIndex(ID_PLC_DigDir_8, &value, NULL, 0) == ERROR);
+return addWrite(ID_PLC_DigDir_8, &value);
+}
+
+
+int getStatus_PLC_DigDir_8()
+{
+return getStatus(ID_PLC_DigDir_8);
 }
 
 
 int doWrite_PLC_AnInConf_1(u_int16_t value)
 {
-return writeVarByCtIndex(ID_PLC_AnInConf_1,  &value);
+return doWrite(ID_PLC_AnInConf_1,  &value);
 }
 
 
 int addWrite_PLC_AnInConf_1(u_int16_t value)
 {
-return (prepareWriteVarByCtIndex(ID_PLC_AnInConf_1, &value, NULL, 0) == ERROR);
+return addWrite(ID_PLC_AnInConf_1, &value);
+}
+
+
+int getStatus_PLC_AnInConf_1()
+{
+return getStatus(ID_PLC_AnInConf_1);
 }
 
 
 int doWrite_PLC_AnInConf_2(u_int16_t value)
 {
-return writeVarByCtIndex(ID_PLC_AnInConf_2,  &value);
+return doWrite(ID_PLC_AnInConf_2,  &value);
 }
 
 
 int addWrite_PLC_AnInConf_2(u_int16_t value)
 {
-return (prepareWriteVarByCtIndex(ID_PLC_AnInConf_2, &value, NULL, 0) == ERROR);
+return addWrite(ID_PLC_AnInConf_2, &value);
+}
+
+
+int getStatus_PLC_AnInConf_2()
+{
+return getStatus(ID_PLC_AnInConf_2);
 }
 
 
 int doWrite_PLC_AnOutConf_1(u_int16_t value)
 {
-return writeVarByCtIndex(ID_PLC_AnOutConf_1,  &value);
+return doWrite(ID_PLC_AnOutConf_1,  &value);
 }
 
 
 int addWrite_PLC_AnOutConf_1(u_int16_t value)
 {
-return (prepareWriteVarByCtIndex(ID_PLC_AnOutConf_1, &value, NULL, 0) == ERROR);
+return addWrite(ID_PLC_AnOutConf_1, &value);
+}
+
+
+int getStatus_PLC_AnOutConf_1()
+{
+return getStatus(ID_PLC_AnOutConf_1);
 }
 
 
 int doWrite_PLC_DigIn_1(int value)
 {
-return writeVarByCtIndex(ID_PLC_DigIn_1,  &value);
+return doWrite(ID_PLC_DigIn_1,  &value);
 }
 
 
 int addWrite_PLC_DigIn_1(int value)
 {
-return (prepareWriteVarByCtIndex(ID_PLC_DigIn_1, &value, NULL, 0) == ERROR);
+return addWrite(ID_PLC_DigIn_1, &value);
+}
+
+
+int getStatus_PLC_DigIn_1()
+{
+return getStatus(ID_PLC_DigIn_1);
 }
 
 
 int doWrite_PLC_DigIn_2(int value)
 {
-return writeVarByCtIndex(ID_PLC_DigIn_2,  &value);
+return doWrite(ID_PLC_DigIn_2,  &value);
 }
 
 
 int addWrite_PLC_DigIn_2(int value)
 {
-return (prepareWriteVarByCtIndex(ID_PLC_DigIn_2, &value, NULL, 0) == ERROR);
+return addWrite(ID_PLC_DigIn_2, &value);
+}
+
+
+int getStatus_PLC_DigIn_2()
+{
+return getStatus(ID_PLC_DigIn_2);
 }
 
 
 int doWrite_PLC_DigIn_3(int value)
 {
-return writeVarByCtIndex(ID_PLC_DigIn_3,  &value);
+return doWrite(ID_PLC_DigIn_3,  &value);
 }
 
 
 int addWrite_PLC_DigIn_3(int value)
 {
-return (prepareWriteVarByCtIndex(ID_PLC_DigIn_3, &value, NULL, 0) == ERROR);
+return addWrite(ID_PLC_DigIn_3, &value);
+}
+
+
+int getStatus_PLC_DigIn_3()
+{
+return getStatus(ID_PLC_DigIn_3);
 }
 
 
 int doWrite_PLC_DigIn_4(int value)
 {
-return writeVarByCtIndex(ID_PLC_DigIn_4,  &value);
+return doWrite(ID_PLC_DigIn_4,  &value);
 }
 
 
 int addWrite_PLC_DigIn_4(int value)
 {
-return (prepareWriteVarByCtIndex(ID_PLC_DigIn_4, &value, NULL, 0) == ERROR);
+return addWrite(ID_PLC_DigIn_4, &value);
+}
+
+
+int getStatus_PLC_DigIn_4()
+{
+return getStatus(ID_PLC_DigIn_4);
 }
 
 
 int doWrite_PLC_DigIn_5(int value)
 {
-return writeVarByCtIndex(ID_PLC_DigIn_5,  &value);
+return doWrite(ID_PLC_DigIn_5,  &value);
 }
 
 
 int addWrite_PLC_DigIn_5(int value)
 {
-return (prepareWriteVarByCtIndex(ID_PLC_DigIn_5, &value, NULL, 0) == ERROR);
+return addWrite(ID_PLC_DigIn_5, &value);
+}
+
+
+int getStatus_PLC_DigIn_5()
+{
+return getStatus(ID_PLC_DigIn_5);
 }
 
 
 int doWrite_PLC_DigIn_6(int value)
 {
-return writeVarByCtIndex(ID_PLC_DigIn_6,  &value);
+return doWrite(ID_PLC_DigIn_6,  &value);
 }
 
 
 int addWrite_PLC_DigIn_6(int value)
 {
-return (prepareWriteVarByCtIndex(ID_PLC_DigIn_6, &value, NULL, 0) == ERROR);
+return addWrite(ID_PLC_DigIn_6, &value);
+}
+
+
+int getStatus_PLC_DigIn_6()
+{
+return getStatus(ID_PLC_DigIn_6);
 }
 
 
 int doWrite_PLC_DigIn_7(int value)
 {
-return writeVarByCtIndex(ID_PLC_DigIn_7,  &value);
+return doWrite(ID_PLC_DigIn_7,  &value);
 }
 
 
 int addWrite_PLC_DigIn_7(int value)
 {
-return (prepareWriteVarByCtIndex(ID_PLC_DigIn_7, &value, NULL, 0) == ERROR);
+return addWrite(ID_PLC_DigIn_7, &value);
+}
+
+
+int getStatus_PLC_DigIn_7()
+{
+return getStatus(ID_PLC_DigIn_7);
 }
 
 
 int doWrite_PLC_DigIn_8(int value)
 {
-return writeVarByCtIndex(ID_PLC_DigIn_8,  &value);
+return doWrite(ID_PLC_DigIn_8,  &value);
 }
 
 
 int addWrite_PLC_DigIn_8(int value)
 {
-return (prepareWriteVarByCtIndex(ID_PLC_DigIn_8, &value, NULL, 0) == ERROR);
+return addWrite(ID_PLC_DigIn_8, &value);
+}
+
+
+int getStatus_PLC_DigIn_8()
+{
+return getStatus(ID_PLC_DigIn_8);
 }
 
 
 int doWrite_PLC_DigIn_9(int value)
 {
-return writeVarByCtIndex(ID_PLC_DigIn_9,  &value);
+return doWrite(ID_PLC_DigIn_9,  &value);
 }
 
 
 int addWrite_PLC_DigIn_9(int value)
 {
-return (prepareWriteVarByCtIndex(ID_PLC_DigIn_9, &value, NULL, 0) == ERROR);
+return addWrite(ID_PLC_DigIn_9, &value);
+}
+
+
+int getStatus_PLC_DigIn_9()
+{
+return getStatus(ID_PLC_DigIn_9);
 }
 
 
 int doWrite_PLC_DigIn_10(int value)
 {
-return writeVarByCtIndex(ID_PLC_DigIn_10,  &value);
+return doWrite(ID_PLC_DigIn_10,  &value);
 }
 
 
 int addWrite_PLC_DigIn_10(int value)
 {
-return (prepareWriteVarByCtIndex(ID_PLC_DigIn_10, &value, NULL, 0) == ERROR);
+return addWrite(ID_PLC_DigIn_10, &value);
+}
+
+
+int getStatus_PLC_DigIn_10()
+{
+return getStatus(ID_PLC_DigIn_10);
 }
 
 
 int doWrite_PLC_DigIn_11(int value)
 {
-return writeVarByCtIndex(ID_PLC_DigIn_11,  &value);
+return doWrite(ID_PLC_DigIn_11,  &value);
 }
 
 
 int addWrite_PLC_DigIn_11(int value)
 {
-return (prepareWriteVarByCtIndex(ID_PLC_DigIn_11, &value, NULL, 0) == ERROR);
+return addWrite(ID_PLC_DigIn_11, &value);
+}
+
+
+int getStatus_PLC_DigIn_11()
+{
+return getStatus(ID_PLC_DigIn_11);
 }
 
 
 int doWrite_PLC_DigIn_12(int value)
 {
-return writeVarByCtIndex(ID_PLC_DigIn_12,  &value);
+return doWrite(ID_PLC_DigIn_12,  &value);
 }
 
 
 int addWrite_PLC_DigIn_12(int value)
 {
-return (prepareWriteVarByCtIndex(ID_PLC_DigIn_12, &value, NULL, 0) == ERROR);
+return addWrite(ID_PLC_DigIn_12, &value);
+}
+
+
+int getStatus_PLC_DigIn_12()
+{
+return getStatus(ID_PLC_DigIn_12);
 }
 
 
 int doWrite_PLC_AnIn_1(int16_t value)
 {
-return writeVarByCtIndex(ID_PLC_AnIn_1,  &value);
+return doWrite(ID_PLC_AnIn_1,  &value);
 }
 
 
 int addWrite_PLC_AnIn_1(int16_t value)
 {
-return (prepareWriteVarByCtIndex(ID_PLC_AnIn_1, &value, NULL, 0) == ERROR);
+return addWrite(ID_PLC_AnIn_1, &value);
+}
+
+
+int getStatus_PLC_AnIn_1()
+{
+return getStatus(ID_PLC_AnIn_1);
 }
 
 
 int doWrite_PLC_AnIn_2(int16_t value)
 {
-return writeVarByCtIndex(ID_PLC_AnIn_2,  &value);
+return doWrite(ID_PLC_AnIn_2,  &value);
 }
 
 
 int addWrite_PLC_AnIn_2(int16_t value)
 {
-return (prepareWriteVarByCtIndex(ID_PLC_AnIn_2, &value, NULL, 0) == ERROR);
+return addWrite(ID_PLC_AnIn_2, &value);
+}
+
+
+int getStatus_PLC_AnIn_2()
+{
+return getStatus(ID_PLC_AnIn_2);
 }
 
 
 int doWrite_PLC_Tamb(int16_t value)
 {
-return writeVarByCtIndex(ID_PLC_Tamb,  &value);
+return doWrite(ID_PLC_Tamb,  &value);
 }
 
 
 int addWrite_PLC_Tamb(int16_t value)
 {
-return (prepareWriteVarByCtIndex(ID_PLC_Tamb, &value, NULL, 0) == ERROR);
+return addWrite(ID_PLC_Tamb, &value);
+}
+
+
+int getStatus_PLC_Tamb()
+{
+return getStatus(ID_PLC_Tamb);
 }
 
 
 int doWrite_PLC_Encoder(u_int32_t value)
 {
-return writeVarByCtIndex(ID_PLC_Encoder,  &value);
+return doWrite(ID_PLC_Encoder,  &value);
 }
 
 
 int addWrite_PLC_Encoder(u_int32_t value)
 {
-return (prepareWriteVarByCtIndex(ID_PLC_Encoder, &value, NULL, 0) == ERROR);
+return addWrite(ID_PLC_Encoder, &value);
+}
+
+
+int getStatus_PLC_Encoder()
+{
+return getStatus(ID_PLC_Encoder);
 }
 
 
 int doWrite_PLC_DigOut_1(int value)
 {
-return writeVarByCtIndex(ID_PLC_DigOut_1,  &value);
+return doWrite(ID_PLC_DigOut_1,  &value);
 }
 
 
 int addWrite_PLC_DigOut_1(int value)
 {
-return (prepareWriteVarByCtIndex(ID_PLC_DigOut_1, &value, NULL, 0) == ERROR);
+return addWrite(ID_PLC_DigOut_1, &value);
+}
+
+
+int getStatus_PLC_DigOut_1()
+{
+return getStatus(ID_PLC_DigOut_1);
 }
 
 
 int doWrite_PLC_DigOut_2(int value)
 {
-return writeVarByCtIndex(ID_PLC_DigOut_2,  &value);
+return doWrite(ID_PLC_DigOut_2,  &value);
 }
 
 
 int addWrite_PLC_DigOut_2(int value)
 {
-return (prepareWriteVarByCtIndex(ID_PLC_DigOut_2, &value, NULL, 0) == ERROR);
+return addWrite(ID_PLC_DigOut_2, &value);
+}
+
+
+int getStatus_PLC_DigOut_2()
+{
+return getStatus(ID_PLC_DigOut_2);
 }
 
 
 int doWrite_PLC_DigOut_3(int value)
 {
-return writeVarByCtIndex(ID_PLC_DigOut_3,  &value);
+return doWrite(ID_PLC_DigOut_3,  &value);
 }
 
 
 int addWrite_PLC_DigOut_3(int value)
 {
-return (prepareWriteVarByCtIndex(ID_PLC_DigOut_3, &value, NULL, 0) == ERROR);
+return addWrite(ID_PLC_DigOut_3, &value);
+}
+
+
+int getStatus_PLC_DigOut_3()
+{
+return getStatus(ID_PLC_DigOut_3);
 }
 
 
 int doWrite_PLC_DigOut_4(int value)
 {
-return writeVarByCtIndex(ID_PLC_DigOut_4,  &value);
+return doWrite(ID_PLC_DigOut_4,  &value);
 }
 
 
 int addWrite_PLC_DigOut_4(int value)
 {
-return (prepareWriteVarByCtIndex(ID_PLC_DigOut_4, &value, NULL, 0) == ERROR);
+return addWrite(ID_PLC_DigOut_4, &value);
+}
+
+
+int getStatus_PLC_DigOut_4()
+{
+return getStatus(ID_PLC_DigOut_4);
 }
 
 
 int doWrite_PLC_DigOut_5(int value)
 {
-return writeVarByCtIndex(ID_PLC_DigOut_5,  &value);
+return doWrite(ID_PLC_DigOut_5,  &value);
 }
 
 
 int addWrite_PLC_DigOut_5(int value)
 {
-return (prepareWriteVarByCtIndex(ID_PLC_DigOut_5, &value, NULL, 0) == ERROR);
+return addWrite(ID_PLC_DigOut_5, &value);
+}
+
+
+int getStatus_PLC_DigOut_5()
+{
+return getStatus(ID_PLC_DigOut_5);
 }
 
 
 int doWrite_PLC_DigOut_6(int value)
 {
-return writeVarByCtIndex(ID_PLC_DigOut_6,  &value);
+return doWrite(ID_PLC_DigOut_6,  &value);
 }
 
 
 int addWrite_PLC_DigOut_6(int value)
 {
-return (prepareWriteVarByCtIndex(ID_PLC_DigOut_6, &value, NULL, 0) == ERROR);
+return addWrite(ID_PLC_DigOut_6, &value);
+}
+
+
+int getStatus_PLC_DigOut_6()
+{
+return getStatus(ID_PLC_DigOut_6);
 }
 
 
 int doWrite_PLC_DigOut_7(int value)
 {
-return writeVarByCtIndex(ID_PLC_DigOut_7,  &value);
+return doWrite(ID_PLC_DigOut_7,  &value);
 }
 
 
 int addWrite_PLC_DigOut_7(int value)
 {
-return (prepareWriteVarByCtIndex(ID_PLC_DigOut_7, &value, NULL, 0) == ERROR);
+return addWrite(ID_PLC_DigOut_7, &value);
+}
+
+
+int getStatus_PLC_DigOut_7()
+{
+return getStatus(ID_PLC_DigOut_7);
 }
 
 
 int doWrite_PLC_DigOut_8(int value)
 {
-return writeVarByCtIndex(ID_PLC_DigOut_8,  &value);
+return doWrite(ID_PLC_DigOut_8,  &value);
 }
 
 
 int addWrite_PLC_DigOut_8(int value)
 {
-return (prepareWriteVarByCtIndex(ID_PLC_DigOut_8, &value, NULL, 0) == ERROR);
+return addWrite(ID_PLC_DigOut_8, &value);
+}
+
+
+int getStatus_PLC_DigOut_8()
+{
+return getStatus(ID_PLC_DigOut_8);
 }
 
 
 int doWrite_PLC_AnOut_1(int16_t value)
 {
-return writeVarByCtIndex(ID_PLC_AnOut_1,  &value);
+return doWrite(ID_PLC_AnOut_1,  &value);
 }
 
 
 int addWrite_PLC_AnOut_1(int16_t value)
 {
-return (prepareWriteVarByCtIndex(ID_PLC_AnOut_1, &value, NULL, 0) == ERROR);
+return addWrite(ID_PLC_AnOut_1, &value);
+}
+
+
+int getStatus_PLC_AnOut_1()
+{
+return getStatus(ID_PLC_AnOut_1);
 }
 
 
 int doWrite_PLC_EncEnable(u_int16_t value)
 {
-return writeVarByCtIndex(ID_PLC_EncEnable,  &value);
+return doWrite(ID_PLC_EncEnable,  &value);
 }
 
 
 int addWrite_PLC_EncEnable(u_int16_t value)
 {
-return (prepareWriteVarByCtIndex(ID_PLC_EncEnable, &value, NULL, 0) == ERROR);
+return addWrite(ID_PLC_EncEnable, &value);
+}
+
+
+int getStatus_PLC_EncEnable()
+{
+return getStatus(ID_PLC_EncEnable);
 }
 
 
 int doWrite_PLC_EncoderReset(u_int16_t value)
 {
-return writeVarByCtIndex(ID_PLC_EncoderReset,  &value);
+return doWrite(ID_PLC_EncoderReset,  &value);
 }
 
 
 int addWrite_PLC_EncoderReset(u_int16_t value)
 {
-return (prepareWriteVarByCtIndex(ID_PLC_EncoderReset, &value, NULL, 0) == ERROR);
+return addWrite(ID_PLC_EncoderReset, &value);
+}
+
+
+int getStatus_PLC_EncoderReset()
+{
+return getStatus(ID_PLC_EncoderReset);
 }
 
 
 int doWrite_PLC_Reserved_16(u_int16_t value)
 {
-return writeVarByCtIndex(ID_PLC_Reserved_16,  &value);
+return doWrite(ID_PLC_Reserved_16,  &value);
 }
 
 
 int addWrite_PLC_Reserved_16(u_int16_t value)
 {
-return (prepareWriteVarByCtIndex(ID_PLC_Reserved_16, &value, NULL, 0) == ERROR);
+return addWrite(ID_PLC_Reserved_16, &value);
+}
+
+
+int getStatus_PLC_Reserved_16()
+{
+return getStatus(ID_PLC_Reserved_16);
 }
 
 
 int doWrite_PLC_Reserved_17(u_int16_t value)
 {
-return writeVarByCtIndex(ID_PLC_Reserved_17,  &value);
+return doWrite(ID_PLC_Reserved_17,  &value);
 }
 
 
 int addWrite_PLC_Reserved_17(u_int16_t value)
 {
-return (prepareWriteVarByCtIndex(ID_PLC_Reserved_17, &value, NULL, 0) == ERROR);
+return addWrite(ID_PLC_Reserved_17, &value);
+}
+
+
+int getStatus_PLC_Reserved_17()
+{
+return getStatus(ID_PLC_Reserved_17);
 }
 
 
 int doWrite_PLC_Reserved_18(u_int16_t value)
 {
-return writeVarByCtIndex(ID_PLC_Reserved_18,  &value);
+return doWrite(ID_PLC_Reserved_18,  &value);
 }
 
 
 int addWrite_PLC_Reserved_18(u_int16_t value)
 {
-return (prepareWriteVarByCtIndex(ID_PLC_Reserved_18, &value, NULL, 0) == ERROR);
+return addWrite(ID_PLC_Reserved_18, &value);
+}
+
+
+int getStatus_PLC_Reserved_18()
+{
+return getStatus(ID_PLC_Reserved_18);
 }
 
 
 int doWrite_PLC_Reserved_19(u_int16_t value)
 {
-return writeVarByCtIndex(ID_PLC_Reserved_19,  &value);
+return doWrite(ID_PLC_Reserved_19,  &value);
 }
 
 
 int addWrite_PLC_Reserved_19(u_int16_t value)
 {
-return (prepareWriteVarByCtIndex(ID_PLC_Reserved_19, &value, NULL, 0) == ERROR);
+return addWrite(ID_PLC_Reserved_19, &value);
+}
+
+
+int getStatus_PLC_Reserved_19()
+{
+return getStatus(ID_PLC_Reserved_19);
 }
 
 
 int doWrite_PLC_Heartbeat(u_int16_t value)
 {
-return writeVarByCtIndex(ID_PLC_Heartbeat,  &value);
+return doWrite(ID_PLC_Heartbeat,  &value);
 }
 
 
 int addWrite_PLC_Heartbeat(u_int16_t value)
 {
-return (prepareWriteVarByCtIndex(ID_PLC_Heartbeat, &value, NULL, 0) == ERROR);
+return addWrite(ID_PLC_Heartbeat, &value);
+}
+
+
+int getStatus_PLC_Heartbeat()
+{
+return getStatus(ID_PLC_Heartbeat);
 }
 
 
 int doWrite_PLC_time(float value)
 {
-return writeVarByCtIndex(ID_PLC_time,  &value);
+return doWrite(ID_PLC_time,  &value);
 }
 
 
 int addWrite_PLC_time(float value)
 {
-return (prepareWriteVarByCtIndex(ID_PLC_time, &value, NULL, 0) == ERROR);
+return addWrite(ID_PLC_time, &value);
+}
+
+
+int getStatus_PLC_time()
+{
+return getStatus(ID_PLC_time);
 }
 
 
 int doWrite_PLC_timeMin(float value)
 {
-return writeVarByCtIndex(ID_PLC_timeMin,  &value);
+return doWrite(ID_PLC_timeMin,  &value);
 }
 
 
 int addWrite_PLC_timeMin(float value)
 {
-return (prepareWriteVarByCtIndex(ID_PLC_timeMin, &value, NULL, 0) == ERROR);
+return addWrite(ID_PLC_timeMin, &value);
+}
+
+
+int getStatus_PLC_timeMin()
+{
+return getStatus(ID_PLC_timeMin);
 }
 
 
 int doWrite_PLC_timeMax(float value)
 {
-return writeVarByCtIndex(ID_PLC_timeMax,  &value);
+return doWrite(ID_PLC_timeMax,  &value);
 }
 
 
 int addWrite_PLC_timeMax(float value)
 {
-return (prepareWriteVarByCtIndex(ID_PLC_timeMax, &value, NULL, 0) == ERROR);
+return addWrite(ID_PLC_timeMax, &value);
+}
+
+
+int getStatus_PLC_timeMax()
+{
+return getStatus(ID_PLC_timeMax);
 }
 
 
 int doWrite_PLC_timeWin(float value)
 {
-return writeVarByCtIndex(ID_PLC_timeWin,  &value);
+return doWrite(ID_PLC_timeWin,  &value);
 }
 
 
 int addWrite_PLC_timeWin(float value)
 {
-return (prepareWriteVarByCtIndex(ID_PLC_timeWin, &value, NULL, 0) == ERROR);
+return addWrite(ID_PLC_timeWin, &value);
+}
+
+
+int getStatus_PLC_timeWin()
+{
+return getStatus(ID_PLC_timeWin);
 }
 
 

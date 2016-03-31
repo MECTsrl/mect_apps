@@ -190,8 +190,8 @@
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
-1;P;RISING_FRONT    ;BIT      ;0   ;PLC       ;               ;    ;    ;    ;193 ;2   ;[RO]
-1;P;FALLING_FRONT   ;BIT      ;0   ;PLC       ;               ;    ;    ;    ;193 ;2   ;[RO]
+1;P;RISING_FRONT    ;BIT      ;0   ;PLC       ;               ;    ;    ;    ;193 ;2   ;[AL PLC_DigIn_5 RISING]
+1;P;FALLING_FRONT   ;BIT      ;0   ;PLC       ;               ;    ;    ;    ;193 ;2   ;[AL PLC_DigIn_5 FALLING]
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;

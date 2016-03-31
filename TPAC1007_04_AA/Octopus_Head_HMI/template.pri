@@ -21,11 +21,9 @@ target.path = /local/root
 INSTALLS += target
 
 config.files = config/Crosstable.csv config/system.ini
-config.files += config/Alarms.csv
-config.files += config/lang_table.csv
 config.path = /local/etc/sysconfig
 
-splash.files = config/splash.png config/systool.png
+splash.files = config/splash.png
 splash.path = /local/etc/sysconfig/img
 
 customstore.files = config/store_AnOut_1-4.csv
@@ -75,9 +73,6 @@ HEADERS += \
 SOURCES += \
         config/crosstable.cpp \
         pages.cpp
-
-RESOURCES += \
-	systemicons.qrc
 
 # pre-elabortation
 check_missing_file.commands = @perl $${ATCM_TEMPLATE_BASE_DIR}/ATCM-template-project/cleanmissingpage.pl $$_PRO_FILE_ $$_PRO_FILE_PWD_

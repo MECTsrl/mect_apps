@@ -6,7 +6,6 @@ INPUT(
 ./page101.o
 ./moc_page100.o
 ./moc_page101.o
-./qrc_systemicons.o
 ./qrc_languages.o
 ./qrc_resources.o
 );

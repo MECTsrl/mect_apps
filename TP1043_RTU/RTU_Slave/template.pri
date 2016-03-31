@@ -21,7 +21,7 @@ INSTALLS += target
 config.files = config/Crosstable.csv config/system.ini
 config.path = /local/etc/sysconfig
 
-splash.files = config/splash.png config/systool.png
+splash.files = config/splash.png
 splash.path = /local/etc/sysconfig/img
 
 customtrend.files = config/trend1.csv

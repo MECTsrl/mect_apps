@@ -19,15 +19,10 @@ target.path = /local/root
 INSTALLS += target
 
 config.files = config/atn01.conf config/application.conf config/Crosstable.csv config/Commpar.csv
-%ALARMS%config.files += config/Alarms.csv
-%TRANSLATION%config.files += config/lang_table.csv
 config.path = /local/etc/sysconfig
 
-splash.files = config/splash.png config/systool.png
+splash.files = config/splash.png
 splash.path = /local/etc/sysconfig/img
-
-%STORE%customstore.files = config/store1.csv
-%STORE%customstore.path = /local/data/customstore
 
 %TREND%customtrend.files = config/trend1.csv
 %TREND%customtrend.path = /local/data/customtrend
@@ -40,7 +35,6 @@ CONFIG(debug, debug|release) {
 
 INSTALLS += config splash
 
-%STORE%INSTALLS += customstore
 %TREND%INSTALLS += customtrend
 
 %ALARMS%CONFIG += alarms
@@ -105,9 +99,6 @@ trend {
 recipe {
         DEFINES+=ENABLE_RECIPE
 }
-
-RESOURCES += \
-	systemicons.qrc
 
 check_missing_file.commands = @perl $${ATCM_TEMPLATE_BASE_DIR}/ATCM-template-project/cleanmissingpage.pl $$_PRO_FILE_ $$_PRO_FILE_PWD_
 check_undeclared_variable.commands = @perl $${ATCM_TEMPLATE_BASE_DIR}/ATCM-template-project/check_cross_var.pl $$_PRO_FILE_PWD_
