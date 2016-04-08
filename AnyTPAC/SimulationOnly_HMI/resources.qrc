@@ -3,11 +3,7 @@
         <file>config/system.ini</file>
         <file>config/Crosstable.csv</file>
         <file>config/trend1.csv</file>
-        <file>config/store1.csv</file>
         <file>config/splash.png</file>
-        <file>config/systool.png</file>
     </qresource>
-    <qresource prefix="/icons">
-    </qresource>
+    <qresource prefix="/icons"/>
 </RCC>
-
