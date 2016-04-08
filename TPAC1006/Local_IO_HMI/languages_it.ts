@@ -528,8 +528,8 @@
     <message>
         <location filename="page100.ui" line="1425"/>
         <location filename="page100.ui" line="1431"/>
-        <source>PLC_AnInConf_1</source>
-        <oldsource>PLC_AnInConf</oldsource>
+        <source>PLC_AnInConf</source>
+        <oldsource>PLC_AnInConf_1</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -541,8 +541,8 @@
     <message>
         <location filename="page100.ui" line="688"/>
         <location filename="page100.ui" line="694"/>
-        <source>PLC_AnOutConf_1</source>
-        <oldsource>PLC_AnOutConf</oldsource>
+        <source>PLC_AnOutConf</source>
+        <oldsource>PLC_AnOutConf_1</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2934,8 +2934,14 @@
     <message>
         <location filename="page403.ui" line="1793"/>
         <location filename="page403.ui" line="1799"/>
-        <source>PLC_AnInConf_1</source>
-        <oldsource>PLC_AnInConf</oldsource>
+        <location filename="page403.ui" line="1853"/>
+        <location filename="page403.ui" line="1859"/>
+        <location filename="page403.ui" line="1913"/>
+        <location filename="page403.ui" line="1919"/>
+        <location filename="page403.ui" line="1973"/>
+        <location filename="page403.ui" line="1979"/>
+        <source>PLC_AnInConf</source>
+        <oldsource>PLC_AnInConf_1</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3173,8 +3179,10 @@
     <message>
         <location filename="page404.ui" line="811"/>
         <location filename="page404.ui" line="817"/>
-        <source>PLC_AnOutConf_2</source>
-        <oldsource>PLC_AnOutConf</oldsource>
+        <location filename="page404.ui" line="988"/>
+        <location filename="page404.ui" line="994"/>
+        <source>PLC_AnOutConf</source>
+        <oldsource>PLC_AnOutConf_2</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>

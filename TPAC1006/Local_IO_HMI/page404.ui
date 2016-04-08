@@ -808,13 +808,13 @@ background-color: rgb(255, 255, 127);
     <string>2</string>
    </property>
    <property name="toolTip">
-    <string>PLC_AnOutConf_2</string>
+    <string>PLC_AnOutConf</string>
    </property>
    <property name="whatsThis">
     <string>ATCMlabel widget</string>
    </property>
    <property name="variable">
-    <string>PLC_AnOutConf_2</string>
+    <string>PLC_AnOutConf</string>
    </property>
    <property name="refresh">
     <number>500</number>
@@ -985,13 +985,13 @@ background-color: rgb(255, 255, 127);
     <string>2</string>
    </property>
    <property name="toolTip">
-    <string>PLC_AnOutConf_1</string>
+    <string>PLC_AnOutConf</string>
    </property>
    <property name="whatsThis">
     <string>ATCMlabel widget</string>
    </property>
    <property name="variable">
-    <string>PLC_AnOutConf_1</string>
+    <string>PLC_AnOutConf</string>
    </property>
    <property name="refresh">
     <number>500</number>
