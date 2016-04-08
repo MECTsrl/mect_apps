@@ -7,6 +7,38 @@
 #
 # @brief Project file for qmake
 #
+
+contains(QMAKE_HOST.os,Windows){
+        QT_ROOTFS = C:/Qt485/imx28/rootfs
+        QT_LUPDATE_PATH = C:/Qt485/desktop/bin
+        QT_LRELEASE_PATH = C:/Qt485/imx28/qt-everywhere-opensource-src-4.8.5/bin
+        ATCM_TEMPLATE_BASE_DIR = C:/Qt485/desktop/share/qtcreator/templates/wizards
+}
+!contains(QMAKE_HOST.os,Windows){
+        QT_ROOTFS=$$(MECT_RFSDIR)
+        QT_LUPDATE_PATH = 
+        QT_LRELEASE_PATH = $$(MECT_QT_INSTALL_DIR)/bin
+        ATCM_TEMPLATE_BASE_DIR = 
+}
+
+isEmpty(QT_ROOTFS) {
+        error(QT_ROOTFS is empty)
+}
+isEmpty(QT_LUPDATE_PATH) {
+        warning(QT_LUPDATE_PATH is empty)
+}
+isEmpty(QT_LRELEASE_PATH) {
+        warning(QT_LRELEASE_PATH is empty)
+}
+isEmpty(ATCM_TEMPLATE_BASE_DIR) {
+        warning(ATCM_TEMPLATE_BASE_DIR is empty)
+}
+
+ATCM_ARM_LIBRARY_LIBPATH = $$QT_ROOTFS/usr/lib
+ATCM_ARM_PLUGINS_LIBPATH = $$QT_ROOTFS/usr/lib
+ATCM_ARM_LIBRARY_INCPATH = $$QT_ROOTFS/usr/include
+ATCM_ARM_PLUGINS_INCPATH = $$QT_ROOTFS/usr/include
+
 QMAKE_CXXFLAGS_RELEASE -= -O2
 QMAKE_CXXFLAGS_RELEASE += -O3
 QMAKE_CXXFLAGS_RELEASE += -Wno-psabi
@@ -15,22 +47,17 @@ QMAKE_CXXFLAGS_DEBUG   += -Wno-psabi
 TARGET = hmi
 TEMPLATE = app
 
-target.path = /update
+target.path = /local/root
 INSTALLS += target
 
 config.files = config/Crosstable.csv config/system.ini
-config.files += config/lang_table.csv
-config.path = /update
+config.path = /local/etc/sysconfig
 
 splash.files = config/splash.png
 splash.path = /local/etc/sysconfig/img
 
 customtrend.files = config/trend1.csv
 customtrend.path = /local/data/customtrend
-
-debug_deploy.files = config/dont_run_safe_hmi
-debug_deploy.path = /var/tmp
-INSTALLS += debug_deploy
 
 INSTALLS += config splash
 
@@ -43,21 +70,8 @@ DEFINES+=ENABLE_RECIPE
 
 DEFINES += TRANSLATION
 
-include(./qt_environment.pri)
-
 INCLUDEPATH += .\
-	./config \
-	$${ATCM_ARM_ROOTFS}/usr/src/linux/include \
-	$${ATCM_ARM_ROOTFS}/usr/include \
-	$${ATCM_ARM_PLUGINS_INCPATH} \
-	$${ATCM_ARM_LIBRARY_INCPATH}
-
-QMAKE_LIBDIR += . \
-    ./config \
-	$${QWT_LIBPATH} \
-	$${ATCM_ARM_ROOTFS}/usr/lib \
-	$${ATCM_ARM_PLUGINS_LIBPATH} \
-	$${ATCM_ARM_LIBRARY_LIBPATH}
+	./config
 
 LIBS += \
 -lts \
@@ -76,40 +90,37 @@ LIBS += \
 
 # Input
 HEADERS += \
-        crosstable.h \
+        config/crosstable.h \
         style.h \
         pages.h
-
-FORMS += \
-
 
 SOURCES += \
         config/crosstable.cpp \
         pages.cpp
 
+!isEmpty(ATCM_TEMPLATE_BASE_DIR) {
+# pre-elabortation
 check_missing_file.commands = @perl $${ATCM_TEMPLATE_BASE_DIR}/ATCM-template-project/cleanmissingpage.pl $$_PRO_FILE_ $$_PRO_FILE_PWD_
 check_undeclared_variable.commands = @perl $${ATCM_TEMPLATE_BASE_DIR}/ATCM-template-project/check_cross_var.pl $$_PRO_FILE_PWD_
 check_gotopage_bind.commands = @perl $${ATCM_TEMPLATE_BASE_DIR}/ATCM-template-project/connectbutton.pl $$_PRO_FILE_PWD_
 
 QMAKE_EXTRA_TARGETS += check_missing_file check_undeclared_variable check_gotopage_bind
 PRE_TARGETDEPS += check_missing_file check_undeclared_variable check_gotopage_bind
+}
 
-QT_LUPDATE_PATH=$$(QT_LUPDATE_PATH)
-
-isEmpty(QT_LUPDATE_PATH) {
-  warning(QT_LUPDATE_PATH is empty)
-} else {
-    QT_LRELEASE_PATH=$$(QT_LRELEASE_PATH)
-    isEmpty(QT_LRELEASE_PATH) {
-        warning(QT_LRELEASE_PATH is empty)
-    } else {
+# language
+!isEmpty(QT_LUPDATE_PATH) {
         update.commands = $${QT_LUPDATE_PATH}/lupdate $$_PRO_FILE_
         updates.depends = $$SOURCES $$HEADERS $$FORMS $$TRANSLATIONS
-        release.commands = $${QT_LRELEASE_PATH}/lrelease $$_PRO_FILE_
         release.depends = update
-
-        QMAKE_EXTRA_TARGETS += update release
-        PRE_TARGETDEPS += update release
+        QMAKE_EXTRA_TARGETS += update
+        PRE_TARGETDEPS += update
+}
+!isEmpty(QT_LRELEASE_PATH) {
+        release.commands = $${QT_LRELEASE_PATH}/lrelease $$_PRO_FILE_
+        QMAKE_EXTRA_TARGETS += release
+        PRE_TARGETDEPS += release
+}
 
         RESOURCES += \
             languages.qrc
@@ -119,9 +130,8 @@ isEmpty(QT_LUPDATE_PATH) {
             languages_en.ts
 
         include(./languages.pri)
-    }
-}
 
+# display size
 MODEL = "<width>320</width><height>240</height>"
 
 equals(MODEL, "<width>320</width><height>240</height>") {
