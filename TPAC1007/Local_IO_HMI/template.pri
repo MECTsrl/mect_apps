@@ -7,11 +7,41 @@
 #
 # @brief Project file for qmake
 #
+
+contains(QMAKE_HOST.os,Windows){
+        QT_ROOTFS = C:/Qt485/imx28/rootfs
+        QT_LUPDATE_PATH = C:/Qt485/desktop/bin
+        QT_LRELEASE_PATH = C:/Qt485/imx28/qt-everywhere-opensource-src-4.8.5/bin
+        ATCM_TEMPLATE_BASE_DIR = C:/Qt485/desktop/share/qtcreator/templates/wizards
+}
+!contains(QMAKE_HOST.os,Windows){
+        QT_ROOTFS=$$(MECT_RFSDIR)
+        QT_LUPDATE_PATH = 
+        QT_LRELEASE_PATH = $$(MECT_QT_INSTALL_DIR)/bin
+        ATCM_TEMPLATE_BASE_DIR = 
+}
+
+isEmpty(QT_ROOTFS) {
+        error(QT_ROOTFS is empty)
+}
+isEmpty(QT_LUPDATE_PATH) {
+        warning(QT_LUPDATE_PATH is empty)
+}
+isEmpty(QT_LRELEASE_PATH) {
+        warning(QT_LRELEASE_PATH is empty)
+}
+isEmpty(ATCM_TEMPLATE_BASE_DIR) {
+        warning(ATCM_TEMPLATE_BASE_DIR is empty)
+}
+
+ATCM_ARM_LIBRARY_LIBPATH = $$QT_ROOTFS/usr/lib
+ATCM_ARM_PLUGINS_LIBPATH = $$QT_ROOTFS/usr/lib
+ATCM_ARM_LIBRARY_INCPATH = $$QT_ROOTFS/usr/include
+ATCM_ARM_PLUGINS_INCPATH = $$QT_ROOTFS/usr/include
+
 QMAKE_CXXFLAGS_RELEASE -= -O2
 QMAKE_CXXFLAGS_RELEASE += -O3
 QMAKE_CXXFLAGS_RELEASE += -Wno-psabi
-QMAKE_CXXFLAGS_DEBUG   -= -O2
-QMAKE_CXXFLAGS_DEBUG   += -O0
 QMAKE_CXXFLAGS_DEBUG   += -Wno-psabi
 
 TARGET = hmi
@@ -64,14 +94,15 @@ LIBS += \
 
 # Input
 HEADERS += \
-        style.h \
         config/crosstable.h \
+        style.h \
         pages.h
 
 SOURCES += \
         config/crosstable.cpp \
         pages.cpp
 
+!isEmpty(ATCM_TEMPLATE_BASE_DIR) {
 # pre-elabortation
 check_missing_file.commands = @perl $${ATCM_TEMPLATE_BASE_DIR}/ATCM-template-project/cleanmissingpage.pl $$_PRO_FILE_ $$_PRO_FILE_PWD_
 check_undeclared_variable.commands = @perl $${ATCM_TEMPLATE_BASE_DIR}/ATCM-template-project/check_cross_var.pl $$_PRO_FILE_PWD_
@@ -79,15 +110,21 @@ check_gotopage_bind.commands = @perl $${ATCM_TEMPLATE_BASE_DIR}/ATCM-template-pr
 
 QMAKE_EXTRA_TARGETS += check_missing_file check_undeclared_variable check_gotopage_bind
 PRE_TARGETDEPS += check_missing_file check_undeclared_variable check_gotopage_bind
+}
 
 # language
+!isEmpty(QT_LUPDATE_PATH) {
         update.commands = $${QT_LUPDATE_PATH}/lupdate $$_PRO_FILE_
         updates.depends = $$SOURCES $$HEADERS $$FORMS $$TRANSLATIONS
-        release.commands = $${QT_LRELEASE_PATH}/lrelease $$_PRO_FILE_
         release.depends = update
-
-        QMAKE_EXTRA_TARGETS += update release
-        PRE_TARGETDEPS += update release
+        QMAKE_EXTRA_TARGETS += update
+        PRE_TARGETDEPS += update
+}
+!isEmpty(QT_LRELEASE_PATH) {
+        release.commands = $${QT_LRELEASE_PATH}/lrelease $$_PRO_FILE_
+        QMAKE_EXTRA_TARGETS += release
+        PRE_TARGETDEPS += release
+}
 
         RESOURCES += \
             languages.qrc
