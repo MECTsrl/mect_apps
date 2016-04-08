@@ -390,7 +390,8 @@
     <message>
         <location filename="page100.ui" line="1765"/>
         <location filename="page100.ui" line="1771"/>
-        <source>PLC_AnOutConf</source>
+        <source>PLC_AnOutConf_1</source>
+        <oldsource>PLC_AnOutConf</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -636,7 +637,8 @@
     <message>
         <location filename="page100.ui" line="4040"/>
         <location filename="page100.ui" line="4046"/>
-        <source>PLC_AnInConf</source>
+        <source>PLC_AnInConf_1</source>
+        <oldsource>PLC_AnInConf</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2740,13 +2742,8 @@
     <message>
         <location filename="page402.ui" line="718"/>
         <location filename="page402.ui" line="724"/>
-        <location filename="page402.ui" line="991"/>
-        <location filename="page402.ui" line="997"/>
-        <location filename="page402.ui" line="1462"/>
-        <location filename="page402.ui" line="1468"/>
-        <location filename="page402.ui" line="1768"/>
-        <location filename="page402.ui" line="1774"/>
-        <source>PLC_AnInConf</source>
+        <source>PLC_AnInConf_3</source>
+        <oldsource>PLC_AnInConf</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2933,9 +2930,8 @@
     <message>
         <location filename="page402.ui" line="2241"/>
         <location filename="page402.ui" line="2247"/>
-        <location filename="page402.ui" line="2394"/>
-        <location filename="page402.ui" line="2400"/>
-        <source>PLC_AnOutConf</source>
+        <source>PLC_AnOutConf_2</source>
+        <oldsource>PLC_AnOutConf</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>

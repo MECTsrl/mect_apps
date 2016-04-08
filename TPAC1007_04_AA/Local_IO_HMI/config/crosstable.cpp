@@ -444,9 +444,6 @@ int PLC_DigIn_11 = 0;
 int PLC_DigIn_12 = 0;
 int16_t PLC_AnIn_1 = 0;
 int16_t PLC_AnIn_2 = 0;
-int16_t PLC_AnIn_3 = 0;
-int16_t PLC_AnIn_4 = 0;
-int16_t PLC_AnIn_5 = 0;
 int16_t PLC_Tamb = 0;
 u_int32_t PLC_Encoder = 0;
 u_int32_t PLC_Capture = 0;
@@ -8253,60 +8250,6 @@ return getStatus(ID_PLC_AnIn_2);
 }
 
 
-int doWrite_PLC_AnIn_3(int16_t value)
-{
-return doWrite(ID_PLC_AnIn_3,  &value);
-}
-
-
-int addWrite_PLC_AnIn_3(int16_t value)
-{
-return addWrite(ID_PLC_AnIn_3, &value);
-}
-
-
-int getStatus_PLC_AnIn_3()
-{
-return getStatus(ID_PLC_AnIn_3);
-}
-
-
-int doWrite_PLC_AnIn_4(int16_t value)
-{
-return doWrite(ID_PLC_AnIn_4,  &value);
-}
-
-
-int addWrite_PLC_AnIn_4(int16_t value)
-{
-return addWrite(ID_PLC_AnIn_4, &value);
-}
-
-
-int getStatus_PLC_AnIn_4()
-{
-return getStatus(ID_PLC_AnIn_4);
-}
-
-
-int doWrite_PLC_AnIn_5(int16_t value)
-{
-return doWrite(ID_PLC_AnIn_5,  &value);
-}
-
-
-int addWrite_PLC_AnIn_5(int16_t value)
-{
-return addWrite(ID_PLC_AnIn_5, &value);
-}
-
-
-int getStatus_PLC_AnIn_5()
-{
-return getStatus(ID_PLC_AnIn_5);
-}
-
-
 int doWrite_PLC_Tamb(int16_t value)
 {
 return doWrite(ID_PLC_Tamb,  &value);
@@ -9246,9 +9189,6 @@ retval += readFromDb(ID_PLC_DigIn_11, &PLC_DigIn_11);
 retval += readFromDb(ID_PLC_DigIn_12, &PLC_DigIn_12);
 retval += readFromDb(ID_PLC_AnIn_1, &PLC_AnIn_1);
 retval += readFromDb(ID_PLC_AnIn_2, &PLC_AnIn_2);
-retval += readFromDb(ID_PLC_AnIn_3, &PLC_AnIn_3);
-retval += readFromDb(ID_PLC_AnIn_4, &PLC_AnIn_4);
-retval += readFromDb(ID_PLC_AnIn_5, &PLC_AnIn_5);
 retval += readFromDb(ID_PLC_Tamb, &PLC_Tamb);
 retval += readFromDb(ID_PLC_Encoder, &PLC_Encoder);
 retval += readFromDb(ID_PLC_Capture, &PLC_Capture);

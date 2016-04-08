@@ -715,13 +715,13 @@ background-color: rgb(170, 170, 255);
     <string>2</string>
    </property>
    <property name="toolTip">
-    <string>PLC_AnInConf</string>
+    <string>PLC_AnInConf_3</string>
    </property>
    <property name="whatsThis">
     <string>ATCMlabel widget</string>
    </property>
    <property name="variable">
-    <string>PLC_AnInConf</string>
+    <string>PLC_AnInConf_3</string>
    </property>
    <property name="refresh">
     <number>500</number>
@@ -988,13 +988,13 @@ background-color: rgb(170, 170, 255);
     <string>2</string>
    </property>
    <property name="toolTip">
-    <string>PLC_AnInConf</string>
+    <string>PLC_AnInConf_4</string>
    </property>
    <property name="whatsThis">
     <string>ATCMlabel widget</string>
    </property>
    <property name="variable">
-    <string>PLC_AnInConf</string>
+    <string>PLC_AnInConf_4</string>
    </property>
    <property name="refresh">
     <number>500</number>
@@ -1459,13 +1459,13 @@ background-color: rgb(170, 170, 255);
     <string>2</string>
    </property>
    <property name="toolTip">
-    <string>PLC_AnInConf</string>
+    <string>PLC_AnInConf_1</string>
    </property>
    <property name="whatsThis">
     <string>ATCMlabel widget</string>
    </property>
    <property name="variable">
-    <string>PLC_AnInConf</string>
+    <string>PLC_AnInConf_1</string>
    </property>
    <property name="refresh">
     <number>500</number>
@@ -1765,13 +1765,13 @@ background-color: rgb(170, 170, 255);
     <string>2</string>
    </property>
    <property name="toolTip">
-    <string>PLC_AnInConf</string>
+    <string>PLC_AnInConf_2</string>
    </property>
    <property name="whatsThis">
     <string>ATCMlabel widget</string>
    </property>
    <property name="variable">
-    <string>PLC_AnInConf</string>
+    <string>PLC_AnInConf_2</string>
    </property>
    <property name="refresh">
     <number>500</number>
@@ -2238,13 +2238,13 @@ background-color: rgb(170, 170, 255);
     <string>2</string>
    </property>
    <property name="toolTip">
-    <string>PLC_AnOutConf</string>
+    <string>PLC_AnOutConf_2</string>
    </property>
    <property name="whatsThis">
     <string>ATCMlabel widget</string>
    </property>
    <property name="variable">
-    <string>PLC_AnOutConf</string>
+    <string>PLC_AnOutConf_2</string>
    </property>
    <property name="refresh">
     <number>500</number>
@@ -2391,13 +2391,13 @@ background-color: rgb(170, 170, 255);
     <string>2</string>
    </property>
    <property name="toolTip">
-    <string>PLC_AnOutConf</string>
+    <string>PLC_AnOutConf_1</string>
    </property>
    <property name="whatsThis">
     <string>ATCMlabel widget</string>
    </property>
    <property name="variable">
-    <string>PLC_AnOutConf</string>
+    <string>PLC_AnOutConf_1</string>
    </property>
    <property name="refresh">
     <number>500</number>
