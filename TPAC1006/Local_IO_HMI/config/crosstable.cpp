@@ -16,6 +16,9 @@ u_int16_t STATUS = 0;
 u_int16_t RTU_HEARTBEAT = 0;
 int RTU_RTU_WR = 0;
 int RTU_RTU_RD = 0;
+u_int16_t CAN_HEARTBEAT = 0;
+int CAN_WR = 0;
+int CAN_RD = 0;
 u_int16_t TEST_COMMAND = 0;
 int TST_DigIn_1 = 0;
 int TST_DigIn_2 = 0;
@@ -422,6 +425,9 @@ int PLC_DigIn_5 = 0;
 int PLC_DigIn_6 = 0;
 int PLC_DigIn_7 = 0;
 int PLC_DigIn_8 = 0;
+int PLC_DigIn_9 = 0;
+int PLC_DigIn_17 = 0;
+int PLC_DigIn_25 = 0;
 int PLC_DigOut_1 = 0;
 int PLC_DigOut_2 = 0;
 int PLC_DigOut_3 = 0;
@@ -538,6 +544,60 @@ return addWrite(ID_RTU_RTU_RD, &value);
 int getStatus_RTU_RTU_RD()
 {
 return getStatus(ID_RTU_RTU_RD);
+}
+
+
+int doWrite_CAN_HEARTBEAT(u_int16_t value)
+{
+return doWrite(ID_CAN_HEARTBEAT,  &value);
+}
+
+
+int addWrite_CAN_HEARTBEAT(u_int16_t value)
+{
+return addWrite(ID_CAN_HEARTBEAT, &value);
+}
+
+
+int getStatus_CAN_HEARTBEAT()
+{
+return getStatus(ID_CAN_HEARTBEAT);
+}
+
+
+int doWrite_CAN_WR(int value)
+{
+return doWrite(ID_CAN_WR,  &value);
+}
+
+
+int addWrite_CAN_WR(int value)
+{
+return addWrite(ID_CAN_WR, &value);
+}
+
+
+int getStatus_CAN_WR()
+{
+return getStatus(ID_CAN_WR);
+}
+
+
+int doWrite_CAN_RD(int value)
+{
+return doWrite(ID_CAN_RD,  &value);
+}
+
+
+int addWrite_CAN_RD(int value)
+{
+return addWrite(ID_CAN_RD, &value);
+}
+
+
+int getStatus_CAN_RD()
+{
+return getStatus(ID_CAN_RD);
 }
 
 
@@ -7849,6 +7909,60 @@ return getStatus(ID_PLC_DigIn_8);
 }
 
 
+int doWrite_PLC_DigIn_9(int value)
+{
+return doWrite(ID_PLC_DigIn_9,  &value);
+}
+
+
+int addWrite_PLC_DigIn_9(int value)
+{
+return addWrite(ID_PLC_DigIn_9, &value);
+}
+
+
+int getStatus_PLC_DigIn_9()
+{
+return getStatus(ID_PLC_DigIn_9);
+}
+
+
+int doWrite_PLC_DigIn_17(int value)
+{
+return doWrite(ID_PLC_DigIn_17,  &value);
+}
+
+
+int addWrite_PLC_DigIn_17(int value)
+{
+return addWrite(ID_PLC_DigIn_17, &value);
+}
+
+
+int getStatus_PLC_DigIn_17()
+{
+return getStatus(ID_PLC_DigIn_17);
+}
+
+
+int doWrite_PLC_DigIn_25(int value)
+{
+return doWrite(ID_PLC_DigIn_25,  &value);
+}
+
+
+int addWrite_PLC_DigIn_25(int value)
+{
+return addWrite(ID_PLC_DigIn_25, &value);
+}
+
+
+int getStatus_PLC_DigIn_25()
+{
+return getStatus(ID_PLC_DigIn_25);
+}
+
+
 int doWrite_PLC_DigOut_1(int value)
 {
 return doWrite(ID_PLC_DigOut_1,  &value);
@@ -8666,6 +8780,9 @@ retval += readFromDb(ID_STATUS, &STATUS);
 retval += readFromDb(ID_RTU_HEARTBEAT, &RTU_HEARTBEAT);
 retval += readFromDb(ID_RTU_RTU_WR, &RTU_RTU_WR);
 retval += readFromDb(ID_RTU_RTU_RD, &RTU_RTU_RD);
+retval += readFromDb(ID_CAN_HEARTBEAT, &CAN_HEARTBEAT);
+retval += readFromDb(ID_CAN_WR, &CAN_WR);
+retval += readFromDb(ID_CAN_RD, &CAN_RD);
 retval += readFromDb(ID_TEST_COMMAND, &TEST_COMMAND);
 retval += readFromDb(ID_TST_DigIn_1, &TST_DigIn_1);
 retval += readFromDb(ID_TST_DigIn_2, &TST_DigIn_2);
@@ -9072,6 +9189,9 @@ retval += readFromDb(ID_PLC_DigIn_5, &PLC_DigIn_5);
 retval += readFromDb(ID_PLC_DigIn_6, &PLC_DigIn_6);
 retval += readFromDb(ID_PLC_DigIn_7, &PLC_DigIn_7);
 retval += readFromDb(ID_PLC_DigIn_8, &PLC_DigIn_8);
+retval += readFromDb(ID_PLC_DigIn_9, &PLC_DigIn_9);
+retval += readFromDb(ID_PLC_DigIn_17, &PLC_DigIn_17);
+retval += readFromDb(ID_PLC_DigIn_25, &PLC_DigIn_25);
 retval += readFromDb(ID_PLC_DigOut_1, &PLC_DigOut_1);
 retval += readFromDb(ID_PLC_DigOut_2, &PLC_DigOut_2);
 retval += readFromDb(ID_PLC_DigOut_3, &PLC_DigOut_3);

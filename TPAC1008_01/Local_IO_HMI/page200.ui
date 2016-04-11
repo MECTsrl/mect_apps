@@ -242,13 +242,13 @@ background-color: rgb(170, 170, 255);
     </rect>
    </property>
    <property name="toolTip">
-    <string/>
+    <string>CAN_RD</string>
    </property>
    <property name="whatsThis">
     <string>ATCMled widget</string>
    </property>
    <property name="variable">
-    <string/>
+    <string>CAN_RD</string>
    </property>
    <property name="refresh">
     <number>500</number>
@@ -519,7 +519,7 @@ background-color: rgb(170, 170, 255);
     <bool>true</bool>
    </property>
    <property name="toolTip">
-    <string/>
+    <string>CAN_WR</string>
    </property>
    <property name="whatsThis">
     <string>ATCMbutton widget</string>
@@ -531,7 +531,7 @@ background-color: rgb(170, 170, 255);
     <string/>
    </property>
    <property name="statusvar">
-    <string/>
+    <string>CAN_WR</string>
    </property>
    <property name="viewStatus">
     <bool>false</bool>
@@ -605,13 +605,13 @@ background-color: rgb(170, 170, 255);
     <string>65535</string>
    </property>
    <property name="toolTip">
-    <string/>
+    <string>CAN_HEARTBEAT</string>
    </property>
    <property name="whatsThis">
     <string>ATCMlabel widget</string>
    </property>
    <property name="variable">
-    <string/>
+    <string>CAN_HEARTBEAT</string>
    </property>
    <property name="refresh">
     <number>500</number>

@@ -97,10 +97,10 @@ background-color: rgb(170, 170, 255);
     </color>
    </property>
    <property name="text">
-    <string>TPAC1008</string>
+    <string>TPAC1008_02</string>
    </property>
    <property name="pressText">
-    <string>TPAC1008</string>
+    <string>TPAC1008_02</string>
    </property>
    <property name="borderWidth">
     <number>2</number>

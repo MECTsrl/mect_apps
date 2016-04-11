@@ -644,6 +644,24 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="page200.ui" line="388"/>
+        <location filename="page200.ui" line="394"/>
+        <source>CAN_RD</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="427"/>
+        <location filename="page200.ui" line="439"/>
+        <source>CAN_WR</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="488"/>
+        <location filename="page200.ui" line="494"/>
+        <source>CAN_HEARTBEAT</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="page200.ui" line="624"/>
         <location filename="page200.ui" line="630"/>
         <source>TEST_COMMAND</source>

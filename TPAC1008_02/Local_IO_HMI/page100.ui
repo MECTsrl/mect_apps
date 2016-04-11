@@ -226,10 +226,10 @@ background-color: rgb(170, 170, 255);
     </color>
    </property>
    <property name="text">
-    <string>TPAC1008</string>
+    <string>TPAC1008_02</string>
    </property>
    <property name="pressText">
-    <string>TPAC1008</string>
+    <string>TPAC1008_02</string>
    </property>
    <property name="borderWidth">
     <number>2</number>
@@ -787,13 +787,13 @@ background-color: rgb(170, 170, 255);
     <string notr="true">color: rgb(0, 85, 0);</string>
    </property>
    <property name="toolTip">
-    <string>PLC_EncoderHi</string>
+    <string>PLC_EncoderCount</string>
    </property>
    <property name="whatsThis">
     <string>ATCMlabel widget</string>
    </property>
    <property name="variable">
-    <string>PLC_EncoderHi</string>
+    <string>PLC_EncoderCount</string>
    </property>
    <property name="refresh">
     <number>200</number>
@@ -2136,80 +2136,6 @@ background-color: rgb(170, 255, 255);</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>
-   </property>
-  </widget>
-  <widget class="ATCMlabel" name="atcmLabel_21">
-   <property name="enabled">
-    <bool>false</bool>
-   </property>
-   <property name="geometry">
-    <rect>
-     <x>160</x>
-     <y>412</y>
-     <width>80</width>
-     <height>34</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>DejaVu Sans Mono</family>
-     <pointsize>10</pointsize>
-     <weight>50</weight>
-     <bold>false</bold>
-    </font>
-   </property>
-   <property name="text">
-    <string>0x1234</string>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">color: rgb(0, 85, 0);</string>
-   </property>
-   <property name="toolTip">
-    <string>PLC_EncoderLo</string>
-   </property>
-   <property name="whatsThis">
-    <string>ATCMlabel widget</string>
-   </property>
-   <property name="variable">
-    <string>PLC_EncoderLo</string>
-   </property>
-   <property name="refresh">
-    <number>200</number>
-   </property>
-   <property name="max">
-    <string>0</string>
-   </property>
-   <property name="min">
-    <string>0</string>
-   </property>
-   <property name="viewStatus">
-    <bool>false</bool>
-   </property>
-   <property name="visibilityVar">
-    <string/>
-   </property>
-   <property name="bgColor">
-    <color>
-     <red>255</red>
-     <green>255</green>
-     <blue>127</blue>
-    </color>
-   </property>
-   <property name="fontColor">
-    <color>
-     <red>0</red>
-     <green>0</green>
-     <blue>0</blue>
-    </color>
-   </property>
-   <property name="borderWidth">
-    <number>0</number>
-   </property>
-   <property name="borderRadius">
-    <number>0</number>
-   </property>
-   <property name="format">
-    <enum>ATCMlabel::Hex</enum>
    </property>
   </widget>
   <widget class="QLabel" name="label_36">
@@ -4108,13 +4034,13 @@ background-color: rgb(255, 255, 127);</string>
     <string notr="true">color: rgb(0, 85, 0);</string>
    </property>
    <property name="toolTip">
-    <string>PLC_EncPreset_Hi</string>
+    <string>PLC_ResetCount</string>
    </property>
    <property name="whatsThis">
     <string>ATCMlabel widget</string>
    </property>
    <property name="variable">
-    <string>PLC_EncPreset_Hi</string>
+    <string>PLC_ResetCount</string>
    </property>
    <property name="refresh">
     <number>200</number>
@@ -4180,77 +4106,6 @@ background-color: rgb(255, 255, 127);</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>
-   </property>
-  </widget>
-  <widget class="ATCMlabel" name="atcmLabel_27">
-   <property name="geometry">
-    <rect>
-     <x>160</x>
-     <y>446</y>
-     <width>80</width>
-     <height>34</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>DejaVu Sans Mono</family>
-     <pointsize>10</pointsize>
-     <weight>50</weight>
-     <bold>false</bold>
-    </font>
-   </property>
-   <property name="text">
-    <string>0x1234</string>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">color: rgb(0, 85, 0);</string>
-   </property>
-   <property name="toolTip">
-    <string>PLC_EncPreset_Lo</string>
-   </property>
-   <property name="whatsThis">
-    <string>ATCMlabel widget</string>
-   </property>
-   <property name="variable">
-    <string>PLC_EncPreset_Lo</string>
-   </property>
-   <property name="refresh">
-    <number>200</number>
-   </property>
-   <property name="max">
-    <string>0</string>
-   </property>
-   <property name="min">
-    <string>0</string>
-   </property>
-   <property name="viewStatus">
-    <bool>false</bool>
-   </property>
-   <property name="visibilityVar">
-    <string/>
-   </property>
-   <property name="bgColor">
-    <color>
-     <red>170</red>
-     <green>255</green>
-     <blue>255</blue>
-    </color>
-   </property>
-   <property name="fontColor">
-    <color>
-     <red>0</red>
-     <green>0</green>
-     <blue>0</blue>
-    </color>
-   </property>
-   <property name="borderWidth">
-    <number>0</number>
-   </property>
-   <property name="borderRadius">
-    <number>0</number>
-   </property>
-   <property name="format">
-    <enum>ATCMlabel::Hex</enum>
    </property>
   </widget>
   <widget class="ATCMlabel" name="atcmLabel_PLC_time">
@@ -4514,7 +4369,6 @@ background-color: rgb(255, 255, 127);</string>
   <zorder>label_11</zorder>
   <zorder>atcmDate</zorder>
   <zorder>label_38</zorder>
-  <zorder>atcmLabel_21</zorder>
   <zorder>label_36</zorder>
   <zorder>atcmLed_6</zorder>
   <zorder>atcmLabel_2</zorder>
@@ -4558,7 +4412,6 @@ background-color: rgb(255, 255, 127);</string>
   <zorder>atcmButton_27</zorder>
   <zorder>atcmLabel_22</zorder>
   <zorder>label_39</zorder>
-  <zorder>atcmLabel_27</zorder>
   <zorder>atcmButton_24</zorder>
   <zorder>atcmLabel_PLC_time</zorder>
   <zorder>label_Qt_Project</zorder>

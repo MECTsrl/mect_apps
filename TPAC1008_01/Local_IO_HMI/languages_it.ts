@@ -818,6 +818,24 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="page200.ui" line="245"/>
+        <location filename="page200.ui" line="251"/>
+        <source>CAN_RD</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="522"/>
+        <location filename="page200.ui" line="534"/>
+        <source>CAN_WR</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="608"/>
+        <location filename="page200.ui" line="614"/>
+        <source>CAN_HEARTBEAT</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="page200.ui" line="669"/>
         <source>menu</source>
         <translation type="unfinished"></translation>

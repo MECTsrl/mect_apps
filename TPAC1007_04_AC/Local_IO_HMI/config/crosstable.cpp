@@ -427,6 +427,9 @@ int PLC_DigDir_8 = 0;
 u_int16_t PLC_AnInConf_1 = 0;
 u_int16_t PLC_AnInConf_2 = 0;
 u_int16_t PLC_AnOutConf_1 = 0;
+u_int16_t PLC_AnOutConf_2 = 0;
+u_int16_t PLC_AnOutConf_3 = 0;
+u_int16_t PLC_AnOutConf_4 = 0;
 int PLC_DigIn_1 = 0;
 int PLC_DigIn_2 = 0;
 int PLC_DigIn_3 = 0;
@@ -441,6 +444,9 @@ int PLC_DigIn_11 = 0;
 int PLC_DigIn_12 = 0;
 int16_t PLC_AnIn_1 = 0;
 int16_t PLC_AnIn_2 = 0;
+int16_t PLC_AnIn_3 = 0;
+int16_t PLC_AnIn_4 = 0;
+int16_t PLC_AnIn_5 = 0;
 int16_t PLC_Tamb = 0;
 u_int32_t PLC_Encoder = 0;
 u_int32_t PLC_Capture = 0;
@@ -453,6 +459,9 @@ int PLC_DigOut_6 = 0;
 int PLC_DigOut_7 = 0;
 int PLC_DigOut_8 = 0;
 int16_t PLC_AnOut_1 = 0;
+int16_t PLC_AnOut_2 = 0;
+int16_t PLC_AnOut_3 = 0;
+int16_t PLC_AnOut_4 = 0;
 u_int16_t PLC_EncoderStart = 0;
 u_int16_t PLC_EncoderReset = 0;
 u_int16_t PLC_Heartbeat = 0;
@@ -7938,6 +7947,60 @@ return getStatus(ID_PLC_AnOutConf_1);
 }
 
 
+int doWrite_PLC_AnOutConf_2(u_int16_t value)
+{
+return doWrite(ID_PLC_AnOutConf_2,  &value);
+}
+
+
+int addWrite_PLC_AnOutConf_2(u_int16_t value)
+{
+return addWrite(ID_PLC_AnOutConf_2, &value);
+}
+
+
+int getStatus_PLC_AnOutConf_2()
+{
+return getStatus(ID_PLC_AnOutConf_2);
+}
+
+
+int doWrite_PLC_AnOutConf_3(u_int16_t value)
+{
+return doWrite(ID_PLC_AnOutConf_3,  &value);
+}
+
+
+int addWrite_PLC_AnOutConf_3(u_int16_t value)
+{
+return addWrite(ID_PLC_AnOutConf_3, &value);
+}
+
+
+int getStatus_PLC_AnOutConf_3()
+{
+return getStatus(ID_PLC_AnOutConf_3);
+}
+
+
+int doWrite_PLC_AnOutConf_4(u_int16_t value)
+{
+return doWrite(ID_PLC_AnOutConf_4,  &value);
+}
+
+
+int addWrite_PLC_AnOutConf_4(u_int16_t value)
+{
+return addWrite(ID_PLC_AnOutConf_4, &value);
+}
+
+
+int getStatus_PLC_AnOutConf_4()
+{
+return getStatus(ID_PLC_AnOutConf_4);
+}
+
+
 int doWrite_PLC_DigIn_1(int value)
 {
 return doWrite(ID_PLC_DigIn_1,  &value);
@@ -8190,6 +8253,60 @@ return getStatus(ID_PLC_AnIn_2);
 }
 
 
+int doWrite_PLC_AnIn_3(int16_t value)
+{
+return doWrite(ID_PLC_AnIn_3,  &value);
+}
+
+
+int addWrite_PLC_AnIn_3(int16_t value)
+{
+return addWrite(ID_PLC_AnIn_3, &value);
+}
+
+
+int getStatus_PLC_AnIn_3()
+{
+return getStatus(ID_PLC_AnIn_3);
+}
+
+
+int doWrite_PLC_AnIn_4(int16_t value)
+{
+return doWrite(ID_PLC_AnIn_4,  &value);
+}
+
+
+int addWrite_PLC_AnIn_4(int16_t value)
+{
+return addWrite(ID_PLC_AnIn_4, &value);
+}
+
+
+int getStatus_PLC_AnIn_4()
+{
+return getStatus(ID_PLC_AnIn_4);
+}
+
+
+int doWrite_PLC_AnIn_5(int16_t value)
+{
+return doWrite(ID_PLC_AnIn_5,  &value);
+}
+
+
+int addWrite_PLC_AnIn_5(int16_t value)
+{
+return addWrite(ID_PLC_AnIn_5, &value);
+}
+
+
+int getStatus_PLC_AnIn_5()
+{
+return getStatus(ID_PLC_AnIn_5);
+}
+
+
 int doWrite_PLC_Tamb(int16_t value)
 {
 return doWrite(ID_PLC_Tamb,  &value);
@@ -8403,6 +8520,60 @@ return addWrite(ID_PLC_AnOut_1, &value);
 int getStatus_PLC_AnOut_1()
 {
 return getStatus(ID_PLC_AnOut_1);
+}
+
+
+int doWrite_PLC_AnOut_2(int16_t value)
+{
+return doWrite(ID_PLC_AnOut_2,  &value);
+}
+
+
+int addWrite_PLC_AnOut_2(int16_t value)
+{
+return addWrite(ID_PLC_AnOut_2, &value);
+}
+
+
+int getStatus_PLC_AnOut_2()
+{
+return getStatus(ID_PLC_AnOut_2);
+}
+
+
+int doWrite_PLC_AnOut_3(int16_t value)
+{
+return doWrite(ID_PLC_AnOut_3,  &value);
+}
+
+
+int addWrite_PLC_AnOut_3(int16_t value)
+{
+return addWrite(ID_PLC_AnOut_3, &value);
+}
+
+
+int getStatus_PLC_AnOut_3()
+{
+return getStatus(ID_PLC_AnOut_3);
+}
+
+
+int doWrite_PLC_AnOut_4(int16_t value)
+{
+return doWrite(ID_PLC_AnOut_4,  &value);
+}
+
+
+int addWrite_PLC_AnOut_4(int16_t value)
+{
+return addWrite(ID_PLC_AnOut_4, &value);
+}
+
+
+int getStatus_PLC_AnOut_4()
+{
+return getStatus(ID_PLC_AnOut_4);
 }
 
 
@@ -9058,6 +9229,9 @@ retval += readFromDb(ID_PLC_DigDir_8, &PLC_DigDir_8);
 retval += readFromDb(ID_PLC_AnInConf_1, &PLC_AnInConf_1);
 retval += readFromDb(ID_PLC_AnInConf_2, &PLC_AnInConf_2);
 retval += readFromDb(ID_PLC_AnOutConf_1, &PLC_AnOutConf_1);
+retval += readFromDb(ID_PLC_AnOutConf_2, &PLC_AnOutConf_2);
+retval += readFromDb(ID_PLC_AnOutConf_3, &PLC_AnOutConf_3);
+retval += readFromDb(ID_PLC_AnOutConf_4, &PLC_AnOutConf_4);
 retval += readFromDb(ID_PLC_DigIn_1, &PLC_DigIn_1);
 retval += readFromDb(ID_PLC_DigIn_2, &PLC_DigIn_2);
 retval += readFromDb(ID_PLC_DigIn_3, &PLC_DigIn_3);
@@ -9072,6 +9246,9 @@ retval += readFromDb(ID_PLC_DigIn_11, &PLC_DigIn_11);
 retval += readFromDb(ID_PLC_DigIn_12, &PLC_DigIn_12);
 retval += readFromDb(ID_PLC_AnIn_1, &PLC_AnIn_1);
 retval += readFromDb(ID_PLC_AnIn_2, &PLC_AnIn_2);
+retval += readFromDb(ID_PLC_AnIn_3, &PLC_AnIn_3);
+retval += readFromDb(ID_PLC_AnIn_4, &PLC_AnIn_4);
+retval += readFromDb(ID_PLC_AnIn_5, &PLC_AnIn_5);
 retval += readFromDb(ID_PLC_Tamb, &PLC_Tamb);
 retval += readFromDb(ID_PLC_Encoder, &PLC_Encoder);
 retval += readFromDb(ID_PLC_Capture, &PLC_Capture);
@@ -9084,6 +9261,9 @@ retval += readFromDb(ID_PLC_DigOut_6, &PLC_DigOut_6);
 retval += readFromDb(ID_PLC_DigOut_7, &PLC_DigOut_7);
 retval += readFromDb(ID_PLC_DigOut_8, &PLC_DigOut_8);
 retval += readFromDb(ID_PLC_AnOut_1, &PLC_AnOut_1);
+retval += readFromDb(ID_PLC_AnOut_2, &PLC_AnOut_2);
+retval += readFromDb(ID_PLC_AnOut_3, &PLC_AnOut_3);
+retval += readFromDb(ID_PLC_AnOut_4, &PLC_AnOut_4);
 retval += readFromDb(ID_PLC_EncoderStart, &PLC_EncoderStart);
 retval += readFromDb(ID_PLC_EncoderReset, &PLC_EncoderReset);
 retval += readFromDb(ID_PLC_Heartbeat, &PLC_Heartbeat);

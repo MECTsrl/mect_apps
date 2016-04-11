@@ -40,6 +40,24 @@ int doWrite_RTU_RTU_RD(int value);
 int addWrite_RTU_RTU_RD(int value);
 int getStatus_RTU_RTU_RD();
  
+#define ID_CAN_HEARTBEAT 203
+extern u_int16_t CAN_HEARTBEAT;
+int doWrite_CAN_HEARTBEAT(u_int16_t value);
+int addWrite_CAN_HEARTBEAT(u_int16_t value);
+int getStatus_CAN_HEARTBEAT();
+ 
+#define ID_CAN_WR 204
+extern int CAN_WR;
+int doWrite_CAN_WR(int value);
+int addWrite_CAN_WR(int value);
+int getStatus_CAN_WR();
+ 
+#define ID_CAN_RD 205
+extern int CAN_RD;
+int doWrite_CAN_RD(int value);
+int addWrite_CAN_RD(int value);
+int getStatus_CAN_RD();
+ 
 #define ID_TEST_COMMAND 4000
 extern u_int16_t TEST_COMMAND;
 int doWrite_TEST_COMMAND(u_int16_t value);
@@ -2476,169 +2494,187 @@ int doWrite_PLC_DigIn_8(int value);
 int addWrite_PLC_DigIn_8(int value);
 int getStatus_PLC_DigIn_8();
  
-#define ID_PLC_DigOut_1 5308
+#define ID_PLC_DigIn_9 5308
+extern int PLC_DigIn_9;
+int doWrite_PLC_DigIn_9(int value);
+int addWrite_PLC_DigIn_9(int value);
+int getStatus_PLC_DigIn_9();
+ 
+#define ID_PLC_DigIn_17 5309
+extern int PLC_DigIn_17;
+int doWrite_PLC_DigIn_17(int value);
+int addWrite_PLC_DigIn_17(int value);
+int getStatus_PLC_DigIn_17();
+ 
+#define ID_PLC_DigIn_25 5310
+extern int PLC_DigIn_25;
+int doWrite_PLC_DigIn_25(int value);
+int addWrite_PLC_DigIn_25(int value);
+int getStatus_PLC_DigIn_25();
+ 
+#define ID_PLC_DigOut_1 5311
 extern int PLC_DigOut_1;
 int doWrite_PLC_DigOut_1(int value);
 int addWrite_PLC_DigOut_1(int value);
 int getStatus_PLC_DigOut_1();
  
-#define ID_PLC_DigOut_2 5309
+#define ID_PLC_DigOut_2 5312
 extern int PLC_DigOut_2;
 int doWrite_PLC_DigOut_2(int value);
 int addWrite_PLC_DigOut_2(int value);
 int getStatus_PLC_DigOut_2();
  
-#define ID_PLC_DigOut_3 5310
+#define ID_PLC_DigOut_3 5313
 extern int PLC_DigOut_3;
 int doWrite_PLC_DigOut_3(int value);
 int addWrite_PLC_DigOut_3(int value);
 int getStatus_PLC_DigOut_3();
  
-#define ID_PLC_DigOut_4 5311
+#define ID_PLC_DigOut_4 5314
 extern int PLC_DigOut_4;
 int doWrite_PLC_DigOut_4(int value);
 int addWrite_PLC_DigOut_4(int value);
 int getStatus_PLC_DigOut_4();
  
-#define ID_PLC_DigOut_5 5312
+#define ID_PLC_DigOut_5 5315
 extern int PLC_DigOut_5;
 int doWrite_PLC_DigOut_5(int value);
 int addWrite_PLC_DigOut_5(int value);
 int getStatus_PLC_DigOut_5();
  
-#define ID_PLC_DigOut_6 5313
+#define ID_PLC_DigOut_6 5316
 extern int PLC_DigOut_6;
 int doWrite_PLC_DigOut_6(int value);
 int addWrite_PLC_DigOut_6(int value);
 int getStatus_PLC_DigOut_6();
  
-#define ID_PLC_DigOut_7 5314
+#define ID_PLC_DigOut_7 5317
 extern int PLC_DigOut_7;
 int doWrite_PLC_DigOut_7(int value);
 int addWrite_PLC_DigOut_7(int value);
 int getStatus_PLC_DigOut_7();
  
-#define ID_PLC_DigOut_8 5315
+#define ID_PLC_DigOut_8 5318
 extern int PLC_DigOut_8;
 int doWrite_PLC_DigOut_8(int value);
 int addWrite_PLC_DigOut_8(int value);
 int getStatus_PLC_DigOut_8();
  
-#define ID_PLC_DigOut_9 5316
+#define ID_PLC_DigOut_9 5319
 extern int PLC_DigOut_9;
 int doWrite_PLC_DigOut_9(int value);
 int addWrite_PLC_DigOut_9(int value);
 int getStatus_PLC_DigOut_9();
  
-#define ID_PLC_DigOut_10 5317
+#define ID_PLC_DigOut_10 5320
 extern int PLC_DigOut_10;
 int doWrite_PLC_DigOut_10(int value);
 int addWrite_PLC_DigOut_10(int value);
 int getStatus_PLC_DigOut_10();
  
-#define ID_PLC_DigOut_11 5318
+#define ID_PLC_DigOut_11 5321
 extern int PLC_DigOut_11;
 int doWrite_PLC_DigOut_11(int value);
 int addWrite_PLC_DigOut_11(int value);
 int getStatus_PLC_DigOut_11();
  
-#define ID_PLC_DigOut_12 5319
+#define ID_PLC_DigOut_12 5322
 extern int PLC_DigOut_12;
 int doWrite_PLC_DigOut_12(int value);
 int addWrite_PLC_DigOut_12(int value);
 int getStatus_PLC_DigOut_12();
  
-#define ID_PLC_AnIn_1 5320
+#define ID_PLC_AnIn_1 5323
 extern int16_t PLC_AnIn_1;
 int doWrite_PLC_AnIn_1(int16_t value);
 int addWrite_PLC_AnIn_1(int16_t value);
 int getStatus_PLC_AnIn_1();
  
-#define ID_PLC_AnIn_2 5321
+#define ID_PLC_AnIn_2 5324
 extern int16_t PLC_AnIn_2;
 int doWrite_PLC_AnIn_2(int16_t value);
 int addWrite_PLC_AnIn_2(int16_t value);
 int getStatus_PLC_AnIn_2();
  
-#define ID_PLC_AnIn_3 5322
+#define ID_PLC_AnIn_3 5325
 extern int16_t PLC_AnIn_3;
 int doWrite_PLC_AnIn_3(int16_t value);
 int addWrite_PLC_AnIn_3(int16_t value);
 int getStatus_PLC_AnIn_3();
  
-#define ID_PLC_AnIn_4 5323
+#define ID_PLC_AnIn_4 5326
 extern int16_t PLC_AnIn_4;
 int doWrite_PLC_AnIn_4(int16_t value);
 int addWrite_PLC_AnIn_4(int16_t value);
 int getStatus_PLC_AnIn_4();
  
-#define ID_PLC_Tamb 5324
+#define ID_PLC_Tamb 5327
 extern int16_t PLC_Tamb;
 int doWrite_PLC_Tamb(int16_t value);
 int addWrite_PLC_Tamb(int16_t value);
 int getStatus_PLC_Tamb();
  
-#define ID_PLC_EncoderLo 5325
+#define ID_PLC_EncoderLo 5328
 extern u_int16_t PLC_EncoderLo;
 int doWrite_PLC_EncoderLo(u_int16_t value);
 int addWrite_PLC_EncoderLo(u_int16_t value);
 int getStatus_PLC_EncoderLo();
  
-#define ID_PLC_EncoderHi 5326
+#define ID_PLC_EncoderHi 5329
 extern u_int16_t PLC_EncoderHi;
 int doWrite_PLC_EncoderHi(u_int16_t value);
 int addWrite_PLC_EncoderHi(u_int16_t value);
 int getStatus_PLC_EncoderHi();
  
-#define ID_PLC_StatusReg 5327
+#define ID_PLC_StatusReg 5330
 extern u_int16_t PLC_StatusReg;
 int doWrite_PLC_StatusReg(u_int16_t value);
 int addWrite_PLC_StatusReg(u_int16_t value);
 int getStatus_PLC_StatusReg();
  
-#define ID_PLC_RPM 5328
+#define ID_PLC_RPM 5331
 extern u_int16_t PLC_RPM;
 int doWrite_PLC_RPM(u_int16_t value);
 int addWrite_PLC_RPM(u_int16_t value);
 int getStatus_PLC_RPM();
  
-#define ID_PLC_AnOut_1 5329
+#define ID_PLC_AnOut_1 5332
 extern int16_t PLC_AnOut_1;
 int doWrite_PLC_AnOut_1(int16_t value);
 int addWrite_PLC_AnOut_1(int16_t value);
 int getStatus_PLC_AnOut_1();
  
-#define ID_PLC_AnOut_2 5330
+#define ID_PLC_AnOut_2 5333
 extern int16_t PLC_AnOut_2;
 int doWrite_PLC_AnOut_2(int16_t value);
 int addWrite_PLC_AnOut_2(int16_t value);
 int getStatus_PLC_AnOut_2();
  
-#define ID_PLC_AnInConf 5331
+#define ID_PLC_AnInConf 5334
 extern u_int16_t PLC_AnInConf;
 int doWrite_PLC_AnInConf(u_int16_t value);
 int addWrite_PLC_AnInConf(u_int16_t value);
 int getStatus_PLC_AnInConf();
  
-#define ID_PLC_AnOutConf 5332
+#define ID_PLC_AnOutConf 5335
 extern u_int16_t PLC_AnOutConf;
 int doWrite_PLC_AnOutConf(u_int16_t value);
 int addWrite_PLC_AnOutConf(u_int16_t value);
 int getStatus_PLC_AnOutConf();
  
-#define ID_PLC_ControlWord 5333
+#define ID_PLC_ControlWord 5336
 extern u_int16_t PLC_ControlWord;
 int doWrite_PLC_ControlWord(u_int16_t value);
 int addWrite_PLC_ControlWord(u_int16_t value);
 int getStatus_PLC_ControlWord();
  
-#define ID_PLC_EncPreset_Lo 5334
+#define ID_PLC_EncPreset_Lo 5337
 extern u_int16_t PLC_EncPreset_Lo;
 int doWrite_PLC_EncPreset_Lo(u_int16_t value);
 int addWrite_PLC_EncPreset_Lo(u_int16_t value);
 int getStatus_PLC_EncPreset_Lo();
  
-#define ID_PLC_EncPreset_Hi 5335
+#define ID_PLC_EncPreset_Hi 5338
 extern u_int16_t PLC_EncPreset_Hi;
 int doWrite_PLC_EncPreset_Hi(u_int16_t value);
 int addWrite_PLC_EncPreset_Hi(u_int16_t value);
