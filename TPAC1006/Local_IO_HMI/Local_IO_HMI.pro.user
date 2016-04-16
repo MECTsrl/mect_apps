@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 2.7.84, 2016-03-17T17:07:23. -->
+<!-- Written by QtCreator 2.7.84, 2016-04-16T10:48:35. -->
 <qtcreator>
  <data>
   <variable>ProjectExplorer.Project.ActiveTarget</variable>
@@ -253,6 +253,7 @@
        <value type="QString">C:/MectApps/TPAC1006/Local_IO_HMI/hmi</value>
        <value type="QString">C:/mect_apps/TPAC1006/Local_IO_HMI/config/store1.csv</value>
        <value type="QString">C:/mect_apps/TPAC1006/Local_IO_HMI/hmi</value>
+       <value type="QString">C:/MectApps/TPAC1006/Local_IO_HMI/config/network1.cmg</value>
        <value type="QString">C:/MectApps/TPAC1006/Local_IO_HMI/config/lang_table.csv</value>
        <value type="QString">C:/MectApps/TPAC1006/Local_IO_HMI/config/systool.png</value>
        <value type="QString">C:/MectApps/TPAC1006/Local_IO_HMI/config/splash.png</value>
@@ -273,6 +274,7 @@
        <value type="QString">C:/MectApps/TPAC1006/Local_IO_HMI/config/iomap0.cmg</value>
        <value type="QString">C:/MectApps/TPAC1006/Local_IO_HMI/config/store1.csv</value>
        <value type="QString">C:/MectApps/TPAC1006/Local_IO_HMI/config/Alarms.csv</value>
+       <value type="QString">C:/MectApps/TPAC1006/Local_IO_HMI/config/iomap1.cmg</value>
        <value type="QString">C:/mect_apps/TPAC1006/Local_IO_HMI/config/store1.csv</value>
        <value type="QString">C:/mect_apps/TPAC1006/Local_IO_HMI/config/network0.cmg</value>
        <value type="QString">C:/MectApps/TPAC1006/Local_IO_HMI/config/dont_run_safe_hmi</value>
@@ -335,6 +337,7 @@
        <value type="QString">192.168.5.112</value>
        <value type="QString">192.168.0.24</value>
        <value type="QString">192.168.0.24</value>
+       <value type="QString">192.168.5.211</value>
        <value type="QString">192.168.5.208</value>
        <value type="QString">192.168.5.113</value>
        <value type="QString">192.168.5.113</value>
@@ -355,6 +358,7 @@
        <value type="QString">192.168.5.113</value>
        <value type="QString">192.168.5.119</value>
        <value type="QString">192.168.5.112</value>
+       <value type="QString">192.168.5.211</value>
        <value type="QString">192.168.0.253</value>
        <value type="QString">192.168.0.24</value>
        <value type="QString">192.168.5.119</value>
@@ -417,6 +421,7 @@
        <value type="QString">/update</value>
        <value type="QString">/local/data/customstore</value>
        <value type="QString">/local/root</value>
+       <value type="QString">/local/etc/sysconfig</value>
        <value type="QString">/update</value>
        <value type="QString">/local/etc/sysconfig/img</value>
        <value type="QString">/local/etc/sysconfig/img</value>
@@ -437,6 +442,7 @@
        <value type="QString">/local/etc/sysconfig</value>
        <value type="QString">/local/data/customstore</value>
        <value type="QString">/update</value>
+       <value type="QString">/local/etc/sysconfig</value>
        <value type="QString">/local/data/customstore</value>
        <value type="QString">/local/etc/sysconfig</value>
        <value type="QString">/var/tmp</value>
@@ -455,6 +461,8 @@
        <value type="QString">/update</value>
       </valuelist>
       <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedSysroots">
+       <value type="QString">C:/Qt485/imx28/rootfs</value>
+       <value type="QString">C:/Qt485/imx28/rootfs</value>
        <value type="QString">C:/Qt485/imx28/rootfs</value>
        <value type="QString">C:/Qt485/imx28/rootfs</value>
        <value type="QString">C:/Qt485/imx28/rootfs</value>
@@ -561,7 +569,7 @@
        <value type="QDateTime">2016-02-25T17:04:13</value>
        <value type="QDateTime">2016-03-17T15:20:09</value>
        <value type="QDateTime">2016-01-27T18:01:48</value>
-       <value type="QDateTime">2016-03-17T15:20:11</value>
+       <value type="QDateTime">2016-04-16T10:43:52</value>
        <value type="QDateTime">2016-02-24T16:52:41</value>
        <value type="QDateTime">2016-02-25T17:04:13</value>
        <value type="QDateTime">2016-01-27T18:01:48</value>
@@ -575,12 +583,13 @@
        <value type="QDateTime">2016-01-26T15:53:40</value>
        <value type="QDateTime">2016-03-17T15:20:09</value>
        <value type="QDateTime">2016-01-26T15:53:40</value>
-       <value type="QDateTime">2016-03-17T15:20:09</value>
-       <value type="QDateTime">2016-03-17T15:20:10</value>
+       <value type="QDateTime">2016-04-16T10:43:50</value>
+       <value type="QDateTime">2016-04-16T10:43:51</value>
        <value type="QDateTime">2016-01-27T18:01:48</value>
        <value type="QDateTime">2015-12-23T10:29:40</value>
        <value type="QDateTime">2016-02-24T16:52:42</value>
        <value type="QDateTime">2016-02-24T16:52:43</value>
+       <value type="QDateTime">2016-04-16T10:43:51</value>
        <value type="QDateTime">2015-12-23T11:50:53</value>
        <value type="QDateTime">2016-01-27T18:01:48</value>
        <value type="QDateTime">2016-01-27T18:01:48</value>
@@ -591,7 +600,7 @@
        <value type="QDateTime">2015-12-18T17:36:47</value>
        <value type="QDateTime">2016-01-27T18:01:47</value>
        <value type="QDateTime">2015-12-18T17:36:46</value>
-       <value type="QDateTime">2016-03-17T15:20:09</value>
+       <value type="QDateTime">2016-04-16T10:43:51</value>
        <value type="QDateTime">2016-02-25T17:04:13</value>
        <value type="QDateTime">2016-02-25T17:04:12</value>
        <value type="QDateTime">2016-02-25T17:04:12</value>
@@ -601,14 +610,15 @@
        <value type="QDateTime">2016-01-27T18:01:48</value>
        <value type="QDateTime">2015-12-18T17:36:47</value>
        <value type="QDateTime">2015-12-23T10:29:40</value>
+       <value type="QDateTime">2016-04-16T10:43:51</value>
        <value type="QDateTime">2016-02-25T17:04:13</value>
        <value type="QDateTime">2016-02-24T16:52:41</value>
        <value type="QDateTime">2015-12-18T17:36:46</value>
-       <value type="QDateTime">2016-03-17T15:20:09</value>
-       <value type="QDateTime">2016-03-17T15:20:09</value>
+       <value type="QDateTime">2016-04-16T10:43:51</value>
+       <value type="QDateTime">2016-04-16T10:43:50</value>
        <value type="QDateTime">2015-12-23T11:50:53</value>
        <value type="QDateTime">2016-02-24T16:52:41</value>
-       <value type="QDateTime">2016-03-17T15:20:09</value>
+       <value type="QDateTime">2016-04-16T10:43:50</value>
        <value type="QDateTime">2016-02-25T17:04:12</value>
        <value type="QDateTime">2015-12-23T11:50:52</value>
        <value type="QDateTime">2016-02-24T16:52:41</value>

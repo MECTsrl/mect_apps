@@ -93,7 +93,7 @@ background-color: rgb(255, 255, 127);
     <string notr="true">background-color: rgb(255, 255, 127);</string>
    </property>
    <property name="text">
-    <string>Heartbeat / WR / RD</string>
+    <string>Command / Reply</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>
@@ -102,9 +102,9 @@ background-color: rgb(255, 255, 127);
   <widget class="QLabel" name="label_RTU_AnIn_10">
    <property name="geometry">
     <rect>
-     <x>240</x>
+     <x>239</x>
      <y>70</y>
-     <width>120</width>
+     <width>121</width>
      <height>34</height>
     </rect>
    </property>
@@ -128,6 +128,9 @@ RTU 0 NODE 2</string>
    </property>
   </widget>
   <widget class="ATCMlabel" name="atcmLabel_7">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
    <property name="geometry">
     <rect>
      <x>360</x>
@@ -267,9 +270,9 @@ RTU 0 NODE 2</string>
    </property>
    <property name="geometry">
     <rect>
-     <x>240</x>
+     <x>120</x>
      <y>204</y>
-     <width>60</width>
+     <width>120</width>
      <height>34</height>
     </rect>
    </property>
@@ -385,11 +388,14 @@ Master / Client</string>
    </property>
   </widget>
   <widget class="ATCMcombobox" name="atcmComboBox_7">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
    <property name="geometry">
     <rect>
-     <x>240</x>
+     <x>120</x>
      <y>136</y>
-     <width>120</width>
+     <width>240</width>
      <height>32</height>
     </rect>
    </property>
@@ -422,9 +428,9 @@ Master / Client</string>
    </property>
    <property name="bgColor">
     <color>
-     <red>255</red>
+     <red>170</red>
      <green>255</green>
-     <blue>127</blue>
+     <blue>255</blue>
     </color>
    </property>
    <property name="borderWidth">
@@ -443,9 +449,9 @@ Master / Client</string>
    </property>
    <property name="geometry">
     <rect>
-     <x>300</x>
+     <x>240</x>
      <y>204</y>
-     <width>60</width>
+     <width>120</width>
      <height>34</height>
     </rect>
    </property>
@@ -525,9 +531,9 @@ Master / Client</string>
    </property>
    <property name="bgColor">
     <color>
-     <red>255</red>
+     <red>170</red>
      <green>255</green>
-     <blue>127</blue>
+     <blue>255</blue>
     </color>
    </property>
    <property name="borderWidth">
@@ -538,42 +544,6 @@ Master / Client</string>
    </property>
    <property name="mapping">
     <string>1;INITIALIZED;2;RUNNING;3;ERROR;4;EXITING;0;IDLE</string>
-   </property>
-  </widget>
-  <widget class="ATCMled" name="atcmLed_RTU_AnIn_1">
-   <property name="geometry">
-    <rect>
-     <x>330</x>
-     <y>102</y>
-     <width>31</width>
-     <height>34</height>
-    </rect>
-   </property>
-   <property name="toolTip">
-    <string>RTU_RTU1_RD</string>
-   </property>
-   <property name="whatsThis">
-    <string>ATCMled widget</string>
-   </property>
-   <property name="variable">
-    <string>RTU_RTU1_RD</string>
-   </property>
-   <property name="refresh">
-    <number>500</number>
-   </property>
-   <property name="viewStatus">
-    <bool>false</bool>
-   </property>
-   <property name="visibilityVar">
-    <string/>
-   </property>
-   <property name="onIcon">
-    <iconset>
-     <normaloff>:/on.png</normaloff>:/on.png</iconset>
-   </property>
-   <property name="offIcon">
-    <iconset>
-     <normaloff>:/off.png</normaloff>:/off.png</iconset>
    </property>
   </widget>
   <widget class="Line" name="line_hr_4">
@@ -672,7 +642,7 @@ Master / Client</string>
     </font>
    </property>
    <property name="checkable">
-    <bool>true</bool>
+    <bool>false</bool>
    </property>
    <property name="toolTip">
     <string>PLC_ResetValues</string>
@@ -723,11 +693,14 @@ Master / Client</string>
    </property>
   </widget>
   <widget class="ATCMcombobox" name="atcmComboBox_4">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
    <property name="geometry">
     <rect>
-     <x>240</x>
+     <x>120</x>
      <y>240</y>
-     <width>120</width>
+     <width>240</width>
      <height>32</height>
     </rect>
    </property>
@@ -776,11 +749,14 @@ Master / Client</string>
    </property>
   </widget>
   <widget class="ATCMlabel" name="atcmLabel_3">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
    <property name="geometry">
     <rect>
-     <x>240</x>
-     <y>102</y>
-     <width>61</width>
+     <x>120</x>
+     <y>70</y>
+     <width>121</width>
      <height>34</height>
     </rect>
    </property>
@@ -818,9 +794,9 @@ Master / Client</string>
    </property>
    <property name="bgColor">
     <color>
-     <red>255</red>
+     <red>170</red>
      <green>255</green>
-     <blue>127</blue>
+     <blue>255</blue>
     </color>
    </property>
    <property name="borderWidth">
@@ -888,9 +864,9 @@ Master / Client</string>
    </property>
    <property name="geometry">
     <rect>
-     <x>300</x>
+     <x>240</x>
      <y>170</y>
-     <width>60</width>
+     <width>120</width>
      <height>34</height>
     </rect>
    </property>
@@ -948,7 +924,7 @@ Master / Client</string>
     </font>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: rgb(255, 255, 127);</string>
+    <string notr="true">background-color: rgb(170, 255, 255);</string>
    </property>
    <property name="text">
     <string>STATUS</string>
@@ -1055,9 +1031,9 @@ Master / Client</string>
    </property>
    <property name="geometry">
     <rect>
-     <x>240</x>
+     <x>120</x>
      <y>170</y>
-     <width>60</width>
+     <width>120</width>
      <height>34</height>
     </rect>
    </property>
@@ -1097,69 +1073,6 @@ Master / Client</string>
    </property>
    <property name="borderRadius">
     <number>0</number>
-   </property>
-  </widget>
-  <widget class="ATCMbutton" name="atcmButton">
-   <property name="geometry">
-    <rect>
-     <x>299</x>
-     <y>102</y>
-     <width>31</width>
-     <height>34</height>
-    </rect>
-   </property>
-   <property name="checkable">
-    <bool>true</bool>
-   </property>
-   <property name="toolTip">
-    <string>RTU_RTU1_WR</string>
-   </property>
-   <property name="whatsThis">
-    <string>ATCMbutton widget</string>
-   </property>
-   <property name="pageName">
-    <string/>
-   </property>
-   <property name="passwordVar">
-    <string/>
-   </property>
-   <property name="statusvar">
-    <string>RTU_RTU1_WR</string>
-   </property>
-   <property name="viewStatus">
-    <bool>false</bool>
-   </property>
-   <property name="visibilityVar">
-    <string/>
-   </property>
-   <property name="bgColor">
-    <color>
-     <red>255</red>
-     <green>0</green>
-     <blue>0</blue>
-    </color>
-   </property>
-   <property name="bgPressColor">
-    <color>
-     <red>85</red>
-     <green>255</green>
-     <blue>0</blue>
-    </color>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-   <property name="pressText">
-    <string/>
-   </property>
-   <property name="borderWidth">
-    <number>1</number>
-   </property>
-   <property name="borderRadius">
-    <number>0</number>
-   </property>
-   <property name="apparence">
-    <enum>QFrame::Raised</enum>
    </property>
   </widget>
   <widget class="Line" name="line_vt_3">
@@ -1237,6 +1150,150 @@ Master / Client</string>
     <enum>ATCMdate::YYYY_MM_DD</enum>
    </property>
   </widget>
+  <widget class="ATCMlabel" name="atcmLabel_4">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>102</y>
+     <width>120</width>
+     <height>34</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+    </font>
+   </property>
+   <property name="text">
+    <string>65535</string>
+   </property>
+   <property name="toolTip">
+    <string>RTU_REPLY</string>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMlabel widget</string>
+   </property>
+   <property name="variable">
+    <string>RTU_REPLY</string>
+   </property>
+   <property name="refresh">
+    <number>500</number>
+   </property>
+   <property name="max">
+    <string>0</string>
+   </property>
+   <property name="min">
+    <string>0</string>
+   </property>
+   <property name="viewStatus">
+    <bool>true</bool>
+   </property>
+   <property name="visibilityVar">
+    <string/>
+   </property>
+   <property name="bgColor">
+    <color>
+     <red>255</red>
+     <green>255</green>
+     <blue>127</blue>
+    </color>
+   </property>
+   <property name="borderWidth">
+    <number>0</number>
+   </property>
+   <property name="borderRadius">
+    <number>0</number>
+   </property>
+  </widget>
+  <widget class="ATCMlabel" name="atcmLabel_5">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>102</y>
+     <width>121</width>
+     <height>34</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+    </font>
+   </property>
+   <property name="text">
+    <string>65535</string>
+   </property>
+   <property name="toolTip">
+    <string>RTU_COMMAND</string>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMlabel widget</string>
+   </property>
+   <property name="variable">
+    <string>RTU_COMMAND</string>
+   </property>
+   <property name="refresh">
+    <number>500</number>
+   </property>
+   <property name="max">
+    <string>0</string>
+   </property>
+   <property name="min">
+    <string>0</string>
+   </property>
+   <property name="viewStatus">
+    <bool>true</bool>
+   </property>
+   <property name="visibilityVar">
+    <string/>
+   </property>
+   <property name="bgColor">
+    <color>
+     <red>255</red>
+     <green>255</green>
+     <blue>127</blue>
+    </color>
+   </property>
+   <property name="borderWidth">
+    <number>2</number>
+   </property>
+   <property name="borderRadius">
+    <number>0</number>
+   </property>
+   <property name="apparence">
+    <enum>QFrame::Raised</enum>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_RTU_AnIn_14">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>70</y>
+     <width>120</width>
+     <height>33</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(170, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string>Heartbeat</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
   <zorder>label_RTU_AnIn_15</zorder>
   <zorder>label_RTU_AnIn_13</zorder>
   <zorder>label_RTU_AnIn_10</zorder>
@@ -1245,13 +1302,10 @@ Master / Client</string>
   <zorder>atcmLabel_6</zorder>
   <zorder>atcmTime</zorder>
   <zorder>label_Qt_Project</zorder>
-  <zorder>atcmComboBox_7</zorder>
   <zorder>atcmLabel_16</zorder>
   <zorder>atcmComboBox_5</zorder>
-  <zorder>atcmLed_RTU_AnIn_1</zorder>
   <zorder>atcmButton_menu</zorder>
   <zorder>atcmButton_2</zorder>
-  <zorder>atcmComboBox_4</zorder>
   <zorder>atcmLabel_3</zorder>
   <zorder>label_RTU_AnIn_17</zorder>
   <zorder>label_RTU_AnIn_19</zorder>
@@ -1259,17 +1313,21 @@ Master / Client</string>
   <zorder>label_RTU_AnIn_18</zorder>
   <zorder>atcmLabel_PLC_time</zorder>
   <zorder>atcmLabel_13</zorder>
-  <zorder>atcmButton</zorder>
   <zorder>label_RTU_AnIn_16</zorder>
   <zorder>atcmDate</zorder>
-  <zorder>line_vt_4</zorder>
+  <zorder>atcmLabel_4</zorder>
+  <zorder>atcmLabel_5</zorder>
+  <zorder>label_RTU_AnIn_14</zorder>
   <zorder>line_hr_4</zorder>
-  <zorder>line_hr_1</zorder>
-  <zorder>line_hr_3</zorder>
+  <zorder>line_vt_4</zorder>
   <zorder>line_hr_2</zorder>
-  <zorder>line_vt_1</zorder>
-  <zorder>line_vt_3</zorder>
   <zorder>line_vt_2</zorder>
+  <zorder>line_hr_1</zorder>
+  <zorder>line_vt_3</zorder>
+  <zorder>atcmComboBox_7</zorder>
+  <zorder>atcmComboBox_4</zorder>
+  <zorder>line_vt_1</zorder>
+  <zorder>line_hr_3</zorder>
  </widget>
  <customwidgets>
   <customwidget>
@@ -1290,11 +1348,6 @@ Master / Client</string>
   <customwidget>
    <class>ATCMlabel</class>
    <extends>QPushButton</extends>
-   <header>atcmplugin.h</header>
-  </customwidget>
-  <customwidget>
-   <class>ATCMled</class>
-   <extends>QLabel</extends>
    <header>atcmplugin.h</header>
   </customwidget>
   <customwidget>
