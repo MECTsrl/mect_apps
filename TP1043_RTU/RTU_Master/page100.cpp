@@ -14,6 +14,8 @@
 #include "ui_page100.h"
 #include "crosstable.h"
 
+#include "automation.h" // for get_command()
+
 /**
  * @brief this macro is used to set the PAGE100 style.
  * the syntax is html stylesheet-like
@@ -94,6 +96,7 @@ void page100::updateData()
          LOG_PRINT(info_e,"################### NRE_REG_1 %d\n", value);
      }
      */
+    ui->label_command->setText(QString("<---=  %1").arg(get_command()));
 }
 
 /**

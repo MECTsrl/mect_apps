@@ -17,3 +17,8 @@ void loop(void)
         doWrite_TCP_COMMAND(command);
     }
 }
+
+u_int16_t get_command(void)
+{
+    return command;
+}
