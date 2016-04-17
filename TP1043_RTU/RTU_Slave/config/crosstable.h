@@ -34,6 +34,24 @@ int doWrite_RTU_REPLY(int16_t value);
 int addWrite_RTU_REPLY(int16_t value);
 int getStatus_RTU_REPLY();
  
+#define ID_TCP_HEARTBEAT 204
+extern u_int16_t TCP_HEARTBEAT;
+int doWrite_TCP_HEARTBEAT(u_int16_t value);
+int addWrite_TCP_HEARTBEAT(u_int16_t value);
+int getStatus_TCP_HEARTBEAT();
+ 
+#define ID_TCP_COMMAND 205
+extern int16_t TCP_COMMAND;
+int doWrite_TCP_COMMAND(int16_t value);
+int addWrite_TCP_COMMAND(int16_t value);
+int getStatus_TCP_COMMAND();
+ 
+#define ID_TCP_REPLY 206
+extern int16_t TCP_REPLY;
+int doWrite_TCP_REPLY(int16_t value);
+int addWrite_TCP_REPLY(int16_t value);
+int getStatus_TCP_REPLY();
+ 
 #define ID_RTU0_TYPE_PORT 5000
 extern u_int32_t RTU0_TYPE_PORT;
 int doWrite_RTU0_TYPE_PORT(u_int32_t value);

@@ -12,9 +12,13 @@ DWORD_BIT <-> int
 #include "crosstable.h"
 #include "cross_table_utility.h"
  
+int Auto_COMMAND = 0;
 u_int16_t RTU_HEARTBEAT = 0;
 int16_t RTU_COMMAND = 0;
 int16_t RTU_REPLY = 0;
+u_int16_t TCP_HEARTBEAT = 0;
+int16_t TCP_COMMAND = 0;
+int16_t TCP_REPLY = 0;
 u_int32_t RTU0_TYPE_PORT = 0;
 u_int32_t RTU0_BAUDRATE = 0;
 u_int32_t RTU0_STATUS = 0;
@@ -216,6 +220,24 @@ u_int16_t PLC_EngineStatus = 0;
 int PLC_ResetValues = 0;
 
 
+int doWrite_Auto_COMMAND(int value)
+{
+return doWrite(ID_Auto_COMMAND,  &value);
+}
+
+
+int addWrite_Auto_COMMAND(int value)
+{
+return addWrite(ID_Auto_COMMAND, &value);
+}
+
+
+int getStatus_Auto_COMMAND()
+{
+return getStatus(ID_Auto_COMMAND);
+}
+
+
 int doWrite_RTU_HEARTBEAT(u_int16_t value)
 {
 return doWrite(ID_RTU_HEARTBEAT,  &value);
@@ -267,6 +289,60 @@ return addWrite(ID_RTU_REPLY, &value);
 int getStatus_RTU_REPLY()
 {
 return getStatus(ID_RTU_REPLY);
+}
+
+
+int doWrite_TCP_HEARTBEAT(u_int16_t value)
+{
+return doWrite(ID_TCP_HEARTBEAT,  &value);
+}
+
+
+int addWrite_TCP_HEARTBEAT(u_int16_t value)
+{
+return addWrite(ID_TCP_HEARTBEAT, &value);
+}
+
+
+int getStatus_TCP_HEARTBEAT()
+{
+return getStatus(ID_TCP_HEARTBEAT);
+}
+
+
+int doWrite_TCP_COMMAND(int16_t value)
+{
+return doWrite(ID_TCP_COMMAND,  &value);
+}
+
+
+int addWrite_TCP_COMMAND(int16_t value)
+{
+return addWrite(ID_TCP_COMMAND, &value);
+}
+
+
+int getStatus_TCP_COMMAND()
+{
+return getStatus(ID_TCP_COMMAND);
+}
+
+
+int doWrite_TCP_REPLY(int16_t value)
+{
+return doWrite(ID_TCP_REPLY,  &value);
+}
+
+
+int addWrite_TCP_REPLY(int16_t value)
+{
+return addWrite(ID_TCP_REPLY, &value);
+}
+
+
+int getStatus_TCP_REPLY()
+{
+return getStatus(ID_TCP_REPLY);
 }
 
 
@@ -3855,9 +3931,13 @@ return getStatus(ID_PLC_ResetValues);
 int update_all(void)
 {
 int retval = 0;
+retval += readFromDb(ID_Auto_COMMAND, &Auto_COMMAND);
 retval += readFromDb(ID_RTU_HEARTBEAT, &RTU_HEARTBEAT);
 retval += readFromDb(ID_RTU_COMMAND, &RTU_COMMAND);
 retval += readFromDb(ID_RTU_REPLY, &RTU_REPLY);
+retval += readFromDb(ID_TCP_HEARTBEAT, &TCP_HEARTBEAT);
+retval += readFromDb(ID_TCP_COMMAND, &TCP_COMMAND);
+retval += readFromDb(ID_TCP_REPLY, &TCP_REPLY);
 retval += readFromDb(ID_RTU0_TYPE_PORT, &RTU0_TYPE_PORT);
 retval += readFromDb(ID_RTU0_BAUDRATE, &RTU0_BAUDRATE);
 retval += readFromDb(ID_RTU0_STATUS, &RTU0_STATUS);

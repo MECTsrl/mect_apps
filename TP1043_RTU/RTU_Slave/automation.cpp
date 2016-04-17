@@ -1,18 +1,25 @@
 #include "crosstable.h"
 
 static u_int16_t heartbeat;
-/* put here the initalization */
+
 void setup(void)
 {
+    // initalization
     heartbeat = 0;
     doWrite_RTU_HEARTBEAT(heartbeat);
     doWrite_RTU_REPLY(0);
 }
 
-/* put here the operation made every 100ms */
 void loop(void)
 {
+    // action @ 100ms
     ++heartbeat;
+
+    // update the heartbeats (both RTU_SRV and TCP_SRV)
     doWrite_RTU_HEARTBEAT(heartbeat);
+    doWrite_TCP_HEARTBEAT(heartbeat);
+
+    // reply to commands
     doWrite_RTU_REPLY(-RTU_COMMAND);
+    doWrite_TCP_REPLY(-TCP_COMMAND);
 }

@@ -1,14 +1,19 @@
 #include "crosstable.h"
 
-/* put here the initalization */
+static u_int16_t command;
+
 void setup(void)
 {
-    
+    /* initalization */
+    command = 0;
 }
 
-/* put here the operation made every 100ms */
 void loop(void)
 {
-    
+    /* action @ 100ms */
+    if (Auto_COMMAND) {
+        ++command;
+        doWrite_RTU_COMMAND(command);
+        doWrite_TCP_COMMAND(command);
+    }
 }
-
