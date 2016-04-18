@@ -2119,9 +2119,9 @@ NODE 1 [1]</source>
     <message>
         <location filename="page300.ui" line="106"/>
         <location filename="page300.ui" line="388"/>
-        <location filename="page300.ui" line="1218"/>
-        <location filename="page300.ui" line="1278"/>
-        <location filename="page300.ui" line="1438"/>
+        <location filename="page300.ui" line="1210"/>
+        <location filename="page300.ui" line="1270"/>
+        <location filename="page300.ui" line="1430"/>
         <source>ATCMbutton widget</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2156,31 +2156,31 @@ NODE 1 [1]</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page300.ui" line="1335"/>
-        <location filename="page300.ui" line="1341"/>
+        <location filename="page300.ui" line="1327"/>
+        <location filename="page300.ui" line="1333"/>
         <source>TESTx_STATUS</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page300.ui" line="1167"/>
-        <location filename="page300.ui" line="1173"/>
+        <location filename="page300.ui" line="1159"/>
+        <location filename="page300.ui" line="1165"/>
         <source>DO_RELOAD</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page300.ui" line="1215"/>
-        <location filename="page300.ui" line="1227"/>
+        <location filename="page300.ui" line="1207"/>
+        <location filename="page300.ui" line="1219"/>
         <source>DO_REPEAT</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page300.ui" line="1281"/>
+        <location filename="page300.ui" line="1273"/>
         <source>page400</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page300.ui" line="1388"/>
-        <location filename="page300.ui" line="1394"/>
+        <location filename="page300.ui" line="1380"/>
+        <location filename="page300.ui" line="1386"/>
         <source>TEST2_STATUS</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2202,9 +2202,9 @@ NODE 1 [1]</source>
         <location filename="page300.ui" line="878"/>
         <location filename="page300.ui" line="914"/>
         <location filename="page300.ui" line="950"/>
-        <location filename="page300.ui" line="1098"/>
-        <location filename="page300.ui" line="1134"/>
-        <location filename="page300.ui" line="1170"/>
+        <location filename="page300.ui" line="1090"/>
+        <location filename="page300.ui" line="1126"/>
+        <location filename="page300.ui" line="1162"/>
         <source>ATCMled widget</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2223,14 +2223,14 @@ NODE 1 [1]</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page300.ui" line="1131"/>
-        <location filename="page300.ui" line="1137"/>
+        <location filename="page300.ui" line="1123"/>
+        <location filename="page300.ui" line="1129"/>
         <source>PLC_DigOut_3</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page300.ui" line="1095"/>
-        <location filename="page300.ui" line="1101"/>
+        <location filename="page300.ui" line="1087"/>
+        <location filename="page300.ui" line="1093"/>
         <source>PLC_DigOut_2</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2265,8 +2265,8 @@ ON</source>
     <message>
         <location filename="page300.ui" line="528"/>
         <location filename="page300.ui" line="822"/>
-        <location filename="page300.ui" line="1338"/>
-        <location filename="page300.ui" line="1391"/>
+        <location filename="page300.ui" line="1330"/>
+        <location filename="page300.ui" line="1383"/>
         <source>ATCMcombobox widget</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2277,47 +2277,47 @@ ON</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page300.ui" line="989"/>
-        <location filename="page300.ui" line="995"/>
+        <location filename="page300.ui" line="981"/>
+        <location filename="page300.ui" line="987"/>
         <source>RESULTS_OK</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page300.ui" line="998"/>
+        <location filename="page300.ui" line="990"/>
         <source>OK:</source>
         <oldsource>OK =</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page300.ui" line="1045"/>
-        <location filename="page300.ui" line="1051"/>
+        <location filename="page300.ui" line="1037"/>
+        <location filename="page300.ui" line="1043"/>
         <source>RESULTS_NG</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page300.ui" line="1054"/>
+        <location filename="page300.ui" line="1046"/>
         <source>NG:</source>
         <oldsource>NG = </oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page300.ui" line="1250"/>
-        <location filename="page300.ui" line="1253"/>
+        <location filename="page300.ui" line="1242"/>
+        <location filename="page300.ui" line="1245"/>
         <source>REPEAT</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page300.ui" line="1369"/>
+        <location filename="page300.ui" line="1361"/>
         <source>0;x: LOCAL;216;x: REMOTE;42;x: DONE</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page300.ui" line="1422"/>
+        <location filename="page300.ui" line="1414"/>
         <source>0;2: LOCAL;216;2: REMOTE;42;2: DONE</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page300.ui" line="1441"/>
+        <location filename="page300.ui" line="1433"/>
         <source>page201</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2377,8 +2377,8 @@ ON</source>
         <location filename="page300.ui" line="593"/>
         <location filename="page300.ui" line="670"/>
         <location filename="page300.ui" line="732"/>
-        <location filename="page300.ui" line="992"/>
-        <location filename="page300.ui" line="1048"/>
+        <location filename="page300.ui" line="984"/>
+        <location filename="page300.ui" line="1040"/>
         <source>ATCMlabel widget</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2391,10 +2391,10 @@ ON</source>
         <location filename="page300.ui" line="685"/>
         <location filename="page300.ui" line="744"/>
         <location filename="page300.ui" line="747"/>
-        <location filename="page300.ui" line="1004"/>
-        <location filename="page300.ui" line="1007"/>
-        <location filename="page300.ui" line="1060"/>
-        <location filename="page300.ui" line="1063"/>
+        <location filename="page300.ui" line="996"/>
+        <location filename="page300.ui" line="999"/>
+        <location filename="page300.ui" line="1052"/>
+        <location filename="page300.ui" line="1055"/>
         <source>0</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2441,6 +2441,7 @@ ON</source>
         <location filename="page400.ui" line="2963"/>
         <location filename="page400.ui" line="3257"/>
         <location filename="page400.ui" line="3365"/>
+        <location filename="page400.ui" line="3515"/>
         <source>ATCMbutton widget</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3129,6 +3130,11 @@ ON</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="page400.ui" line="3518"/>
+        <source>page201</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="page400.ui" line="2966"/>
         <source>page300</source>
         <translation type="unfinished"></translation>
@@ -3422,6 +3428,7 @@ ON</source>
         <location filename="page401.ui" line="1395"/>
         <location filename="page401.ui" line="2819"/>
         <location filename="page401.ui" line="2927"/>
+        <location filename="page401.ui" line="3077"/>
         <source>ATCMbutton widget</source>
         <translation type="unfinished"></translation>
     </message>
@@ -4014,6 +4021,11 @@ ON</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="page401.ui" line="3080"/>
+        <source>page201</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="page401.ui" line="2695"/>
         <location filename="page401.ui" line="2701"/>
         <source>TESTx_STATUS</source>
@@ -4507,6 +4519,11 @@ ON</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="page402.ui" line="3080"/>
+        <source>page201</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="page402.ui" line="2695"/>
         <location filename="page402.ui" line="2701"/>
         <source>TESTx_STATUS</source>
@@ -4620,6 +4637,7 @@ ON</source>
         <location filename="page402.ui" line="2006"/>
         <location filename="page402.ui" line="2819"/>
         <location filename="page402.ui" line="2927"/>
+        <location filename="page402.ui" line="3077"/>
         <source>ATCMbutton widget</source>
         <translation type="unfinished"></translation>
     </message>
@@ -5090,6 +5108,7 @@ ON</source>
         <location filename="page403.ui" line="1060"/>
         <location filename="page403.ui" line="4191"/>
         <location filename="page403.ui" line="4299"/>
+        <location filename="page403.ui" line="4449"/>
         <source>ATCMbutton widget</source>
         <translation type="unfinished"></translation>
     </message>
@@ -5540,6 +5559,11 @@ ON</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="page403.ui" line="4452"/>
+        <source>page201</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="page403.ui" line="4067"/>
         <location filename="page403.ui" line="4073"/>
         <source>TESTx_STATUS</source>
@@ -5725,6 +5749,7 @@ ON</source>
         <location filename="page404.ui" line="1996"/>
         <location filename="page404.ui" line="2146"/>
         <location filename="page404.ui" line="2200"/>
+        <location filename="page404.ui" line="2254"/>
         <source>ATCMbutton widget</source>
         <translation type="unfinished"></translation>
     </message>
@@ -5925,6 +5950,11 @@ ON</source>
     <message>
         <location filename="page404.ui" line="2203"/>
         <source>page444</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page404.ui" line="2257"/>
+        <source>page201</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6633,6 +6663,11 @@ ON</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="page405.ui" line="4002"/>
+        <source>page201</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="page405.ui" line="3949"/>
         <location filename="page405.ui" line="3955"/>
         <source>TEST2_STATUS</source>
@@ -6674,6 +6709,7 @@ ON</source>
         <location filename="page405.ui" line="1114"/>
         <location filename="page405.ui" line="3741"/>
         <location filename="page405.ui" line="3849"/>
+        <location filename="page405.ui" line="3999"/>
         <source>ATCMbutton widget</source>
         <translation type="unfinished"></translation>
     </message>
@@ -6939,6 +6975,7 @@ fbk</source>
         <location filename="page434.ui" line="496"/>
         <location filename="page434.ui" line="568"/>
         <location filename="page434.ui" line="1018"/>
+        <location filename="page434.ui" line="1518"/>
         <source>ATCMbutton widget</source>
         <translation type="unfinished"></translation>
     </message>
@@ -7093,6 +7130,11 @@ ON</source>
     <message>
         <location filename="page434.ui" line="1471"/>
         <source> s</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page434.ui" line="1521"/>
+        <source>page201</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7265,6 +7307,7 @@ ON</source>
         <location filename="page444.ui" line="919"/>
         <location filename="page444.ui" line="1054"/>
         <location filename="page444.ui" line="1193"/>
+        <location filename="page444.ui" line="1509"/>
         <source>ATCMbutton widget</source>
         <translation type="unfinished"></translation>
     </message>
@@ -7508,6 +7551,11 @@ ON</source>
     <message>
         <location filename="page444.ui" line="1461"/>
         <source>ATCMspinbox widget</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page444.ui" line="1512"/>
+        <source>page201</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
