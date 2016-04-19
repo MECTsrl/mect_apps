@@ -232,7 +232,7 @@
     <number>500</number>
    </property>
    <property name="max">
-    <string>0</string>
+    <string>30</string>
    </property>
    <property name="min">
     <string>0</string>
@@ -265,6 +265,9 @@
    </property>
    <property name="apparence">
     <enum>QFrame::Raised</enum>
+   </property>
+   <property name="format">
+    <enum>ATCMlabel::Hex</enum>
    </property>
   </widget>
   <widget class="ATCMlabel" name="atcmLabel_PLC_Tamc">

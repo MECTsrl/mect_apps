@@ -1,0 +1,7 @@
+INPUT(
+./crosstable.o
+./pages.o
+./automation.o
+./qrc_languages.o
+./qrc_resources.o
+);
