@@ -28,30 +28,6 @@ int doWrite_FALLING_FRONT(int value);
 int addWrite_FALLING_FRONT(int value);
 int getStatus_FALLING_FRONT();
  
-#define ID_AAA 1345
-extern int32_t AAA;
-int doWrite_AAA(int32_t value);
-int addWrite_AAA(int32_t value);
-int getStatus_AAA();
- 
-#define ID_BBB 1346
-extern int32_t BBB;
-int doWrite_BBB(int32_t value);
-int addWrite_BBB(int32_t value);
-int getStatus_BBB();
- 
-#define ID_CCC 1347
-extern float CCC;
-int doWrite_CCC(float value);
-int addWrite_CCC(float value);
-int getStatus_CCC();
- 
-#define ID_DDD 1348
-extern float DDD;
-int doWrite_DDD(float value);
-int addWrite_DDD(float value);
-int getStatus_DDD();
- 
 #define ID_PLC_FWrevision 5300
 extern u_int16_t PLC_FWrevision;
 int doWrite_PLC_FWrevision(u_int16_t value);
