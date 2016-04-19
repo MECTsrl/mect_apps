@@ -28,15 +28,20 @@ END_VAR
 			STATUS := STATUS_STOPPING;
 			return;
 		end_if;
-	    if (TEST2_STATUS <> TEST_STATUS_REMOTE) then
-	        TEST2_COMMAND := TEST_STATUS_REMOTE;
-	    end_if;
-	    if (TESTx_STATUS <> TEST_STATUS_REMOTE) then
-	        TESTx_COMMAND := TEST_STATUS_REMOTE;
-	    end_if;
 	    if (TEST2_STATUS = TEST_STATUS_REMOTE and TESTx_STATUS = TEST_STATUS_REMOTE) then
 			STATUS := STATUS_READY;
 			return;
+		end_if;
+		timer(IN := TRUE, PT := T#10s); (* boot time *)
+		if timer.Q then
+			timer(IN := FALSE);
+			(* try to rewrite the test starting command *)
+		    if (TEST2_STATUS <> TEST_STATUS_REMOTE) then
+		        TEST2_COMMAND := TEST_STATUS_REMOTE;
+		    end_if;
+		    if (TESTx_STATUS <> TEST_STATUS_REMOTE) then
+		        TESTx_COMMAND := TEST_STATUS_REMOTE;
+		    end_if;
 		end_if;
 	
 	STATUS_READY:
@@ -83,12 +88,6 @@ END_VAR
 				substatus := 6; (* need a step for reading RES %Q *)
 				return;
 			end_if;
-		    if (TEST2_STATUS <> TEST_STATUS_DONE) then
-		        TEST2_COMMAND := TEST_STATUS_DONE;
-		    end_if;
-		    if (TESTx_STATUS <> TEST_STATUS_DONE) then
-		        TESTx_COMMAND := TEST_STATUS_DONE;
-		    end_if;
 		6: (* check RES and VAL *)
 			CheckOK();
 			substatus := 7;  (* need a step for reading OK %Q *)
@@ -121,16 +120,21 @@ END_VAR
 			STATUS := STATUS_STOPPING;
 			return;
 		end_if;
-	    if (TEST2_STATUS <> TEST_STATUS_REMOTE) then
-	        TEST2_COMMAND := TEST_STATUS_REMOTE;
-	    end_if;
-	    if (TESTx_STATUS <> TEST_STATUS_REMOTE) then
-	        TESTx_COMMAND := TEST_STATUS_REMOTE;
-	    end_if;
 	    if (TEST2_STATUS = TEST_STATUS_REMOTE and TESTx_STATUS = TEST_STATUS_REMOTE) then
 			RESULT := RESULT_UNKNOWN;
 			STATUS := STATUS_READY;
 			return;
+		end_if;
+		timer(IN := TRUE, PT := T#1s);
+		if timer.Q then
+			timer(IN := FALSE);
+			(* try to rewrite the test resetting command *)
+		    if (TEST2_STATUS <> TEST_STATUS_REMOTE) then
+		        TEST2_COMMAND := TEST_STATUS_REMOTE;
+		    end_if;
+		    if (TESTx_STATUS <> TEST_STATUS_REMOTE) then
+		        TESTx_COMMAND := TEST_STATUS_REMOTE;
+		    end_if;
 		end_if;
 	
 	STATUS_STOPPING:
