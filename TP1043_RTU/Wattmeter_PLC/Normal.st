@@ -4,7 +4,7 @@ PROGRAM Normal
 #import "Crosstable.gvl"
 #import "Resource1.gvl"
 VAR
-	current_ratio : int;
+	current_ratio : UINT;
 END_VAR;
 
 	current_ratio := CT_RATIO;

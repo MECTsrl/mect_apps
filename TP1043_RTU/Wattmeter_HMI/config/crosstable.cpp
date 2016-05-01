@@ -12,13 +12,15 @@ DWORD_BIT <-> int
 #include "crosstable.h"
 #include "cross_table_utility.h"
  
-int16_t Potenza = 0;
-int16_t Tensione = 0;
-int16_t V_L1_N = 0;
-int16_t A_L1 = 0;
-int16_t W_L1 = 0;
-int16_t VT_RATIO = 0;
-int16_t CT_RATIO = 0;
+u_int16_t Potenza = 0;
+u_int16_t Tensione = 0;
+int Potenza_Critica = 0;
+int Potenza_Distacco = 0;
+u_int16_t V_L1_N = 0;
+u_int16_t A_L1 = 0;
+u_int16_t W_L1 = 0;
+u_int16_t VT_RATIO = 0;
+u_int16_t CT_RATIO = 0;
 u_int32_t RTU0_TYPE_PORT = 0;
 u_int32_t RTU0_BAUDRATE = 0;
 u_int32_t RTU0_STATUS = 0;
@@ -54,13 +56,13 @@ u_int16_t PLC_EngineStatus = 0;
 int PLC_ResetValues = 0;
 
 
-int doWrite_Potenza(int16_t value)
+int doWrite_Potenza(u_int16_t value)
 {
 return doWrite(ID_Potenza,  &value);
 }
 
 
-int addWrite_Potenza(int16_t value)
+int addWrite_Potenza(u_int16_t value)
 {
 return addWrite(ID_Potenza, &value);
 }
@@ -72,13 +74,13 @@ return getStatus(ID_Potenza);
 }
 
 
-int doWrite_Tensione(int16_t value)
+int doWrite_Tensione(u_int16_t value)
 {
 return doWrite(ID_Tensione,  &value);
 }
 
 
-int addWrite_Tensione(int16_t value)
+int addWrite_Tensione(u_int16_t value)
 {
 return addWrite(ID_Tensione, &value);
 }
@@ -90,13 +92,49 @@ return getStatus(ID_Tensione);
 }
 
 
-int doWrite_V_L1_N(int16_t value)
+int doWrite_Potenza_Critica(int value)
+{
+return doWrite(ID_Potenza_Critica,  &value);
+}
+
+
+int addWrite_Potenza_Critica(int value)
+{
+return addWrite(ID_Potenza_Critica, &value);
+}
+
+
+int getStatus_Potenza_Critica()
+{
+return getStatus(ID_Potenza_Critica);
+}
+
+
+int doWrite_Potenza_Distacco(int value)
+{
+return doWrite(ID_Potenza_Distacco,  &value);
+}
+
+
+int addWrite_Potenza_Distacco(int value)
+{
+return addWrite(ID_Potenza_Distacco, &value);
+}
+
+
+int getStatus_Potenza_Distacco()
+{
+return getStatus(ID_Potenza_Distacco);
+}
+
+
+int doWrite_V_L1_N(u_int16_t value)
 {
 return doWrite(ID_V_L1_N,  &value);
 }
 
 
-int addWrite_V_L1_N(int16_t value)
+int addWrite_V_L1_N(u_int16_t value)
 {
 return addWrite(ID_V_L1_N, &value);
 }
@@ -108,13 +146,13 @@ return getStatus(ID_V_L1_N);
 }
 
 
-int doWrite_A_L1(int16_t value)
+int doWrite_A_L1(u_int16_t value)
 {
 return doWrite(ID_A_L1,  &value);
 }
 
 
-int addWrite_A_L1(int16_t value)
+int addWrite_A_L1(u_int16_t value)
 {
 return addWrite(ID_A_L1, &value);
 }
@@ -126,13 +164,13 @@ return getStatus(ID_A_L1);
 }
 
 
-int doWrite_W_L1(int16_t value)
+int doWrite_W_L1(u_int16_t value)
 {
 return doWrite(ID_W_L1,  &value);
 }
 
 
-int addWrite_W_L1(int16_t value)
+int addWrite_W_L1(u_int16_t value)
 {
 return addWrite(ID_W_L1, &value);
 }
@@ -144,13 +182,13 @@ return getStatus(ID_W_L1);
 }
 
 
-int doWrite_VT_RATIO(int16_t value)
+int doWrite_VT_RATIO(u_int16_t value)
 {
 return doWrite(ID_VT_RATIO,  &value);
 }
 
 
-int addWrite_VT_RATIO(int16_t value)
+int addWrite_VT_RATIO(u_int16_t value)
 {
 return addWrite(ID_VT_RATIO, &value);
 }
@@ -162,13 +200,13 @@ return getStatus(ID_VT_RATIO);
 }
 
 
-int doWrite_CT_RATIO(int16_t value)
+int doWrite_CT_RATIO(u_int16_t value)
 {
 return doWrite(ID_CT_RATIO,  &value);
 }
 
 
-int addWrite_CT_RATIO(int16_t value)
+int addWrite_CT_RATIO(u_int16_t value)
 {
 return addWrite(ID_CT_RATIO, &value);
 }
@@ -779,6 +817,8 @@ int update_all(void)
 int retval = 0;
 retval += readFromDb(ID_Potenza, &Potenza);
 retval += readFromDb(ID_Tensione, &Tensione);
+retval += readFromDb(ID_Potenza_Critica, &Potenza_Critica);
+retval += readFromDb(ID_Potenza_Distacco, &Potenza_Distacco);
 retval += readFromDb(ID_V_L1_N, &V_L1_N);
 retval += readFromDb(ID_A_L1, &A_L1);
 retval += readFromDb(ID_W_L1, &W_L1);

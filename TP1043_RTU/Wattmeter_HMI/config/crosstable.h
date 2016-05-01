@@ -17,45 +17,57 @@ extern "C" {
 #include <sys/types.h>
  
 #define ID_Potenza 193
-extern int16_t Potenza;
-int doWrite_Potenza(int16_t value);
-int addWrite_Potenza(int16_t value);
+extern u_int16_t Potenza;
+int doWrite_Potenza(u_int16_t value);
+int addWrite_Potenza(u_int16_t value);
 int getStatus_Potenza();
  
 #define ID_Tensione 194
-extern int16_t Tensione;
-int doWrite_Tensione(int16_t value);
-int addWrite_Tensione(int16_t value);
+extern u_int16_t Tensione;
+int doWrite_Tensione(u_int16_t value);
+int addWrite_Tensione(u_int16_t value);
 int getStatus_Tensione();
  
+#define ID_Potenza_Critica 195
+extern int Potenza_Critica;
+int doWrite_Potenza_Critica(int value);
+int addWrite_Potenza_Critica(int value);
+int getStatus_Potenza_Critica();
+ 
+#define ID_Potenza_Distacco 196
+extern int Potenza_Distacco;
+int doWrite_Potenza_Distacco(int value);
+int addWrite_Potenza_Distacco(int value);
+int getStatus_Potenza_Distacco();
+ 
 #define ID_V_L1_N 201
-extern int16_t V_L1_N;
-int doWrite_V_L1_N(int16_t value);
-int addWrite_V_L1_N(int16_t value);
+extern u_int16_t V_L1_N;
+int doWrite_V_L1_N(u_int16_t value);
+int addWrite_V_L1_N(u_int16_t value);
 int getStatus_V_L1_N();
  
 #define ID_A_L1 202
-extern int16_t A_L1;
-int doWrite_A_L1(int16_t value);
-int addWrite_A_L1(int16_t value);
+extern u_int16_t A_L1;
+int doWrite_A_L1(u_int16_t value);
+int addWrite_A_L1(u_int16_t value);
 int getStatus_A_L1();
  
 #define ID_W_L1 203
-extern int16_t W_L1;
-int doWrite_W_L1(int16_t value);
-int addWrite_W_L1(int16_t value);
+extern u_int16_t W_L1;
+int doWrite_W_L1(u_int16_t value);
+int addWrite_W_L1(u_int16_t value);
 int getStatus_W_L1();
  
 #define ID_VT_RATIO 210
-extern int16_t VT_RATIO;
-int doWrite_VT_RATIO(int16_t value);
-int addWrite_VT_RATIO(int16_t value);
+extern u_int16_t VT_RATIO;
+int doWrite_VT_RATIO(u_int16_t value);
+int addWrite_VT_RATIO(u_int16_t value);
 int getStatus_VT_RATIO();
  
 #define ID_CT_RATIO 211
-extern int16_t CT_RATIO;
-int doWrite_CT_RATIO(int16_t value);
-int addWrite_CT_RATIO(int16_t value);
+extern u_int16_t CT_RATIO;
+int doWrite_CT_RATIO(u_int16_t value);
+int addWrite_CT_RATIO(u_int16_t value);
 int getStatus_CT_RATIO();
  
 #define ID_RTU0_TYPE_PORT 5000

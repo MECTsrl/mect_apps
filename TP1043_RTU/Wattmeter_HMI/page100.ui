@@ -235,7 +235,7 @@ background-color: rgb(170, 255, 127);
    <property name="font">
     <font>
      <family>DejaVu Sans Mono</family>
-     <pointsize>20</pointsize>
+     <pointsize>36</pointsize>
      <weight>75</weight>
      <bold>true</bold>
     </font>
@@ -253,7 +253,7 @@ background-color: rgb(170, 255, 127);
     <string>Potenza</string>
    </property>
    <property name="suffix">
-    <string> [W]</string>
+    <string> W</string>
    </property>
    <property name="refresh">
     <number>500</number>
@@ -451,6 +451,154 @@ background-color: rgb(170, 255, 127);
    </property>
    <property name="borderRadius">
     <number>20</number>
+   </property>
+  </widget>
+  <widget class="ATCMlabel" name="atcmLabel_2">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>160</y>
+     <width>431</width>
+     <height>68</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans Mono</family>
+     <pointsize>28</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="toolTip">
+    <string/>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMlabel widget</string>
+   </property>
+   <property name="variable">
+    <string/>
+   </property>
+   <property name="prefix">
+    <string>Potenza Critica</string>
+   </property>
+   <property name="suffix">
+    <string/>
+   </property>
+   <property name="refresh">
+    <number>500</number>
+   </property>
+   <property name="max">
+    <string>0</string>
+   </property>
+   <property name="min">
+    <string>0</string>
+   </property>
+   <property name="viewStatus">
+    <bool>false</bool>
+   </property>
+   <property name="visibilityVar">
+    <string>Potenza_Critica</string>
+   </property>
+   <property name="bgColor">
+    <color alpha="0">
+     <red>214</red>
+     <green>255</green>
+     <blue>191</blue>
+    </color>
+   </property>
+   <property name="fontColor">
+    <color>
+     <red>255</red>
+     <green>85</green>
+     <blue>0</blue>
+    </color>
+   </property>
+   <property name="borderWidth">
+    <number>0</number>
+   </property>
+   <property name="borderRadius">
+    <number>0</number>
+   </property>
+  </widget>
+  <widget class="ATCMlabel" name="atcmLabel_3">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>120</y>
+     <width>431</width>
+     <height>68</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans Mono</family>
+     <pointsize>28</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="toolTip">
+    <string/>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMlabel widget</string>
+   </property>
+   <property name="variable">
+    <string/>
+   </property>
+   <property name="prefix">
+    <string>Potenza Distacco</string>
+   </property>
+   <property name="suffix">
+    <string/>
+   </property>
+   <property name="refresh">
+    <number>500</number>
+   </property>
+   <property name="max">
+    <string>0</string>
+   </property>
+   <property name="min">
+    <string>0</string>
+   </property>
+   <property name="viewStatus">
+    <bool>false</bool>
+   </property>
+   <property name="visibilityVar">
+    <string>Potenza_Distacco</string>
+   </property>
+   <property name="bgColor">
+    <color alpha="0">
+     <red>214</red>
+     <green>255</green>
+     <blue>191</blue>
+    </color>
+   </property>
+   <property name="fontColor">
+    <color>
+     <red>255</red>
+     <green>0</green>
+     <blue>0</blue>
+    </color>
+   </property>
+   <property name="borderWidth">
+    <number>0</number>
+   </property>
+   <property name="borderRadius">
+    <number>0</number>
    </property>
   </widget>
  </widget>
