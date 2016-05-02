@@ -322,6 +322,24 @@ int doWrite_PLC_timeWin(float value);
 int addWrite_PLC_timeWin(float value);
 int getStatus_PLC_timeWin();
  
+#define ID_PLC_Version 5394
+extern u_int16_t PLC_Version;
+int doWrite_PLC_Version(u_int16_t value);
+int addWrite_PLC_Version(u_int16_t value);
+int getStatus_PLC_Version();
+ 
+#define ID_PLC_EngineStatus 5395
+extern u_int16_t PLC_EngineStatus;
+int doWrite_PLC_EngineStatus(u_int16_t value);
+int addWrite_PLC_EngineStatus(u_int16_t value);
+int getStatus_PLC_EngineStatus();
+ 
+#define ID_PLC_ResetValues 5396
+extern int PLC_ResetValues;
+int doWrite_PLC_ResetValues(int value);
+int addWrite_PLC_ResetValues(int value);
+int getStatus_PLC_ResetValues();
+ 
 #ifdef __cplusplus
 }
 #endif

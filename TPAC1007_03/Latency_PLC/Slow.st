@@ -1,6 +1,6 @@
 (*[[
 ]]*)
-PROGRAM Normal 
+PROGRAM Slow 
 #import "Crosstable.gvl"
 VAR
 END_VAR

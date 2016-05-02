@@ -63,6 +63,9 @@ float PLC_time = 0;
 float PLC_timeMin = 0;
 float PLC_timeMax = 0;
 float PLC_timeWin = 0;
+u_int16_t PLC_Version = 0;
+u_int16_t PLC_EngineStatus = 0;
+int PLC_ResetValues = 0;
 
 
 int doWrite_RISING_FRONT(int value)
@@ -983,6 +986,60 @@ return getStatus(ID_PLC_timeWin);
 }
 
 
+int doWrite_PLC_Version(u_int16_t value)
+{
+return doWrite(ID_PLC_Version,  &value);
+}
+
+
+int addWrite_PLC_Version(u_int16_t value)
+{
+return addWrite(ID_PLC_Version, &value);
+}
+
+
+int getStatus_PLC_Version()
+{
+return getStatus(ID_PLC_Version);
+}
+
+
+int doWrite_PLC_EngineStatus(u_int16_t value)
+{
+return doWrite(ID_PLC_EngineStatus,  &value);
+}
+
+
+int addWrite_PLC_EngineStatus(u_int16_t value)
+{
+return addWrite(ID_PLC_EngineStatus, &value);
+}
+
+
+int getStatus_PLC_EngineStatus()
+{
+return getStatus(ID_PLC_EngineStatus);
+}
+
+
+int doWrite_PLC_ResetValues(int value)
+{
+return doWrite(ID_PLC_ResetValues,  &value);
+}
+
+
+int addWrite_PLC_ResetValues(int value)
+{
+return addWrite(ID_PLC_ResetValues, &value);
+}
+
+
+int getStatus_PLC_ResetValues()
+{
+return getStatus(ID_PLC_ResetValues);
+}
+
+
 int update_all(void)
 {
 int retval = 0;
@@ -1037,5 +1094,8 @@ retval += readFromDb(ID_PLC_time, &PLC_time);
 retval += readFromDb(ID_PLC_timeMin, &PLC_timeMin);
 retval += readFromDb(ID_PLC_timeMax, &PLC_timeMax);
 retval += readFromDb(ID_PLC_timeWin, &PLC_timeWin);
+retval += readFromDb(ID_PLC_Version, &PLC_Version);
+retval += readFromDb(ID_PLC_EngineStatus, &PLC_EngineStatus);
+retval += readFromDb(ID_PLC_ResetValues, &PLC_ResetValues);
 return retval;
 }

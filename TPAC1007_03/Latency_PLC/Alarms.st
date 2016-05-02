@@ -1,6 +1,6 @@
 (*[[
 ]]*)
-PROGRAM Normal 
+PROGRAM Alarms 
 #import "Crosstable.gvl"
 VAR
 END_VAR
