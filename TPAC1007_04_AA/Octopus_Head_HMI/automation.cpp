@@ -101,15 +101,12 @@ void loop(void)
                 ++next_step;
             }
             doWrite_TEST_STEP(next_step);
-            // no sleep, we change state
             clearTST();
             if (writeRecipe(next_step - 1) != 0) {
                 doWrite_STATUS(STATUS_ERROR);
-                sleep(1); // FIXME: HMI/PLC protocol
                 return;
             }
             doWrite_STATUS(STATUS_TESTING);
-            sleep(1); // FIXME: HMI/PLC protocol
             return;
         }
         break;
@@ -117,7 +114,6 @@ void loop(void)
     case STATUS_ERROR:
         if (!PLC_PWR_SWITCH) {
             doWrite_STATUS(STATUS_STOPPING);
-            sleep(1); // FIXME: HMI/PLC protocol
             return;
         }
         if (PLC_GO_BUTTON) {
@@ -125,7 +121,6 @@ void loop(void)
             doWrite_TESTx_COMMAND(TEST_STATUS_LOCAL);
             doWrite_RESULT(RESULT_UNKNOWN);
             doWrite_STATUS(STATUS_RESETTING);
-            sleep(1); // FIXME: HMI/PLC protocol
             return;
         }
         break;
@@ -332,7 +327,6 @@ static int writeRecipe(int step)
             errors += addWrite(addr, &value);
         }
         endWrite();
-        sleep(1); // FIXME: HMI/PLC protocol
     }
     return errors;
 }
@@ -412,5 +406,4 @@ static void clearTST(void)
     addWrite_TST_CAN1_RD(0);
 
     endWrite();
-    sleep(1); // FIXME: HMI/PLC protocol
 }
