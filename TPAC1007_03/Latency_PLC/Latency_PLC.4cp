@@ -1,5 +1,5 @@
 [Attributes]
-GUID="{8DDF87C0-46E3-4C87-B8CE-F33A8F84D746}"
+GUID="{52A7407C-2154-4F43-B438-0539C03BE96C}"
 
 [Format]
 version=V2.0
@@ -15,17 +15,22 @@ file=Configuration1.con
 file=Resource1.cst
 
 [Classes.Programs]
+file=Init.st
+file=Alarms.st
 file=Events.st
+file=Fast.st
 file=Normal.st
+file=Slow.st
 
 [Libs]
 file=$(LIBDIR)\ATCM_IEC1131_3.4cl
 
 [Targets]
-file=TPAC1007_5_111.ATHW119
+file=TPAC1007_03_0C.ATHW119
 
 [Compiler.ATHW119]
 opt=bp2
 opt=ncc:0
 [Target.HW119]
 ConnectionTimeout=100
+[Classes.Functions]

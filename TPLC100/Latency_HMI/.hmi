@@ -1,10 +1,9 @@
 INPUT(
-./crosstable.obj
-./pages.obj
-./automation.obj
-./page100.obj
-./moc_page100.obj
-./qrc_systemicons.obj
-./qrc_languages.obj
-./qrc_resources.obj
+./crosstable.o
+./pages.o
+./automation.o
+./page100.o
+./moc_page100.o
+./qrc_languages.o
+./qrc_resources.o
 );

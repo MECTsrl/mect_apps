@@ -19,6 +19,8 @@ void printVncDisplayString(char * vncString)
     sprintf(vncString, "Multi: VNC:0:size=%dx%d Transformed:rot%d", WIDTH, HEIGHT, ROTATION);
     userPageList 
             << "page100"
+            << "page200"
+            << "page300"
                ;
 }
 
@@ -32,6 +34,12 @@ int create_page_nb(page ** p, int pageNb)
         break;
     case 0x100:
         *p = (page *)(new page100);
+        break;
+    case 0x200:
+        *p = (page *)(new page200);
+        break;
+    case 0x300:
+        *p = (page *)(new page300);
         break;
         /* add here the case labeled with the HEX id of the new pages */
     default:

@@ -16,25 +16,25 @@ extern "C" {
 #endif
 #include <sys/types.h>
  
-#define ID_STATUS 186
+#define ID_STATUS 193
 extern u_int16_t STATUS;
 int doWrite_STATUS(u_int16_t value);
 int addWrite_STATUS(u_int16_t value);
 int getStatus_STATUS();
  
-#define ID_RTU_HEARTBEAT 193
+#define ID_RTU_HEARTBEAT 200
 extern u_int16_t RTU_HEARTBEAT;
 int doWrite_RTU_HEARTBEAT(u_int16_t value);
 int addWrite_RTU_HEARTBEAT(u_int16_t value);
 int getStatus_RTU_HEARTBEAT();
  
-#define ID_RTU_RTU1_WR 194
+#define ID_RTU_RTU1_WR 201
 extern int RTU_RTU1_WR;
 int doWrite_RTU_RTU1_WR(int value);
 int addWrite_RTU_RTU1_WR(int value);
 int getStatus_RTU_RTU1_WR();
  
-#define ID_RTU_RTU1_RD 195
+#define ID_RTU_RTU1_RD 202
 extern int RTU_RTU1_RD;
 int doWrite_RTU_RTU1_RD(int value);
 int addWrite_RTU_RTU1_RD(int value);
@@ -2721,6 +2721,24 @@ extern float PLC_timeWin;
 int doWrite_PLC_timeWin(float value);
 int addWrite_PLC_timeWin(float value);
 int getStatus_PLC_timeWin();
+ 
+#define ID_PLC_Version 5394
+extern u_int16_t PLC_Version;
+int doWrite_PLC_Version(u_int16_t value);
+int addWrite_PLC_Version(u_int16_t value);
+int getStatus_PLC_Version();
+ 
+#define ID_PLC_EngineStatus 5395
+extern u_int16_t PLC_EngineStatus;
+int doWrite_PLC_EngineStatus(u_int16_t value);
+int addWrite_PLC_EngineStatus(u_int16_t value);
+int getStatus_PLC_EngineStatus();
+ 
+#define ID_PLC_ResetValues 5396
+extern int PLC_ResetValues;
+int doWrite_PLC_ResetValues(int value);
+int addWrite_PLC_ResetValues(int value);
+int getStatus_PLC_ResetValues();
  
 #ifdef __cplusplus
 }

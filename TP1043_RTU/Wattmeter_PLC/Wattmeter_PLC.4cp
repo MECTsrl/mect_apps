@@ -15,7 +15,12 @@ file=Configuration1.con
 file=Resource1.cst
 
 [Classes.Programs]
-file=Program1.st
+file=Normal.st
+file=Init.st
+file=Alarms.st
+file=Events.st
+file=Fast.st
+file=Slow.st
 
 [Libs]
 file=$(LIBDIR)\ATCM_IEC1131_3.4cl

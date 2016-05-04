@@ -14,10 +14,6 @@ DWORD_BIT <-> int
  
 int RISING_FRONT = 0;
 int FALLING_FRONT = 0;
-int32_t AAA = 0;
-int32_t BBB = 0;
-float CCC = 0;
-float DDD = 0;
 u_int16_t PLC_FWrevision = 0;
 u_int16_t PLC_HWconfig = 0;
 int PLC_DigDir_1 = 0;
@@ -67,6 +63,9 @@ float PLC_time = 0;
 float PLC_timeMin = 0;
 float PLC_timeMax = 0;
 float PLC_timeWin = 0;
+u_int16_t PLC_Version = 0;
+u_int16_t PLC_EngineStatus = 0;
+int PLC_ResetValues = 0;
 
 
 int doWrite_RISING_FRONT(int value)
@@ -102,78 +101,6 @@ return addWrite(ID_FALLING_FRONT, &value);
 int getStatus_FALLING_FRONT()
 {
 return getStatus(ID_FALLING_FRONT);
-}
-
-
-int doWrite_AAA(int32_t value)
-{
-return doWrite(ID_AAA,  &value);
-}
-
-
-int addWrite_AAA(int32_t value)
-{
-return addWrite(ID_AAA, &value);
-}
-
-
-int getStatus_AAA()
-{
-return getStatus(ID_AAA);
-}
-
-
-int doWrite_BBB(int32_t value)
-{
-return doWrite(ID_BBB,  &value);
-}
-
-
-int addWrite_BBB(int32_t value)
-{
-return addWrite(ID_BBB, &value);
-}
-
-
-int getStatus_BBB()
-{
-return getStatus(ID_BBB);
-}
-
-
-int doWrite_CCC(float value)
-{
-return doWrite(ID_CCC,  &value);
-}
-
-
-int addWrite_CCC(float value)
-{
-return addWrite(ID_CCC, &value);
-}
-
-
-int getStatus_CCC()
-{
-return getStatus(ID_CCC);
-}
-
-
-int doWrite_DDD(float value)
-{
-return doWrite(ID_DDD,  &value);
-}
-
-
-int addWrite_DDD(float value)
-{
-return addWrite(ID_DDD, &value);
-}
-
-
-int getStatus_DDD()
-{
-return getStatus(ID_DDD);
 }
 
 
@@ -1059,15 +986,65 @@ return getStatus(ID_PLC_timeWin);
 }
 
 
+int doWrite_PLC_Version(u_int16_t value)
+{
+return doWrite(ID_PLC_Version,  &value);
+}
+
+
+int addWrite_PLC_Version(u_int16_t value)
+{
+return addWrite(ID_PLC_Version, &value);
+}
+
+
+int getStatus_PLC_Version()
+{
+return getStatus(ID_PLC_Version);
+}
+
+
+int doWrite_PLC_EngineStatus(u_int16_t value)
+{
+return doWrite(ID_PLC_EngineStatus,  &value);
+}
+
+
+int addWrite_PLC_EngineStatus(u_int16_t value)
+{
+return addWrite(ID_PLC_EngineStatus, &value);
+}
+
+
+int getStatus_PLC_EngineStatus()
+{
+return getStatus(ID_PLC_EngineStatus);
+}
+
+
+int doWrite_PLC_ResetValues(int value)
+{
+return doWrite(ID_PLC_ResetValues,  &value);
+}
+
+
+int addWrite_PLC_ResetValues(int value)
+{
+return addWrite(ID_PLC_ResetValues, &value);
+}
+
+
+int getStatus_PLC_ResetValues()
+{
+return getStatus(ID_PLC_ResetValues);
+}
+
+
 int update_all(void)
 {
 int retval = 0;
 retval += readFromDb(ID_RISING_FRONT, &RISING_FRONT);
 retval += readFromDb(ID_FALLING_FRONT, &FALLING_FRONT);
-retval += readFromDb(ID_AAA, &AAA);
-retval += readFromDb(ID_BBB, &BBB);
-retval += readFromDb(ID_CCC, &CCC);
-retval += readFromDb(ID_DDD, &DDD);
 retval += readFromDb(ID_PLC_FWrevision, &PLC_FWrevision);
 retval += readFromDb(ID_PLC_HWconfig, &PLC_HWconfig);
 retval += readFromDb(ID_PLC_DigDir_1, &PLC_DigDir_1);
@@ -1117,5 +1094,8 @@ retval += readFromDb(ID_PLC_time, &PLC_time);
 retval += readFromDb(ID_PLC_timeMin, &PLC_timeMin);
 retval += readFromDb(ID_PLC_timeMax, &PLC_timeMax);
 retval += readFromDb(ID_PLC_timeWin, &PLC_timeWin);
+retval += readFromDb(ID_PLC_Version, &PLC_Version);
+retval += readFromDb(ID_PLC_EngineStatus, &PLC_EngineStatus);
+retval += readFromDb(ID_PLC_ResetValues, &PLC_ResetValues);
 return retval;
 }

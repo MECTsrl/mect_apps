@@ -190,8 +190,8 @@
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
-1;P;RISING_FRONT    ;BIT      ;0   ;PLC       ;               ;    ;    ;    ;193 ;2   ;[AL PLC_DigIn_5 RISING]
-1;P;FALLING_FRONT   ;BIT      ;0   ;PLC       ;               ;    ;    ;    ;193 ;2   ;[AL PLC_DigIn_5 FALLING]
+1;P;RISING_FRONT    ;BIT      ;0   ;PLC       ;               ;    ;    ;    ;193 ;2   ;[EV PLC_DigIn_5 RISING]
+1;P;FALLING_FRONT   ;BIT      ;0   ;PLC       ;               ;    ;    ;    ;193 ;2   ;[EV PLC_DigIn_5 FALLING]
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
@@ -1342,10 +1342,10 @@
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
-1;P;AAA             ;DINT     ;0   ;PLC       ;               ;    ;    ;    ;1345;4   ;[RO]
-1;P;BBB             ;DINT     ;0   ;PLC       ;               ;    ;    ;    ;1345;4   ;[RO]
-1;P;CCC             ;REAL     ;0   ;PLC       ;               ;    ;    ;    ;1345;4   ;[RO]
-1;P;DDD             ;REAL     ;0   ;PLC       ;               ;    ;    ;    ;1345;4   ;[RO]
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
@@ -5387,13 +5387,13 @@
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
-1;P;PLC_time        ;REAL     ;1   ;PLC       ;               ;    ;    ;    ;5390;4   ;[RO]
-1;P;PLC_timeMin     ;REAL     ;1   ;PLC       ;               ;    ;    ;    ;5390;4   ;[RO]
-1;P;PLC_timeMax     ;REAL     ;1   ;PLC       ;               ;    ;    ;    ;5390;4   ;[RO]
-1;P;PLC_timeWin     ;REAL     ;1   ;PLC       ;               ;    ;    ;    ;5390;4   ;[RW]
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
+1;P;PLC_time        ;REAL     ;2   ;PLC       ;               ;    ;    ;    ;5390;4   ;[RO]
+1;P;PLC_timeMin     ;REAL     ;2   ;PLC       ;               ;    ;    ;    ;5390;4   ;[RO]
+1;P;PLC_timeMax     ;REAL     ;2   ;PLC       ;               ;    ;    ;    ;5390;4   ;[RO]
+1;P;PLC_timeWin     ;REAL     ;2   ;PLC       ;               ;    ;    ;    ;5390;4   ;[RW]
+1;P;PLC_Version     ;UINT     ;3   ;PLC       ;               ;    ;    ;    ;5394;1   ;[RO]
+1;P;PLC_EngineStatus;UINT     ;0   ;PLC       ;               ;    ;    ;    ;5395;1   ;[RO]
+1;P;PLC_ResetValues ;BIT      ;0   ;PLC       ;               ;    ;    ;    ;5396;1   ;[RW]
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;

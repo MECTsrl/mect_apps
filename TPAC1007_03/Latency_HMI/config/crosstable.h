@@ -28,30 +28,6 @@ int doWrite_FALLING_FRONT(int value);
 int addWrite_FALLING_FRONT(int value);
 int getStatus_FALLING_FRONT();
  
-#define ID_AAA 1345
-extern int32_t AAA;
-int doWrite_AAA(int32_t value);
-int addWrite_AAA(int32_t value);
-int getStatus_AAA();
- 
-#define ID_BBB 1346
-extern int32_t BBB;
-int doWrite_BBB(int32_t value);
-int addWrite_BBB(int32_t value);
-int getStatus_BBB();
- 
-#define ID_CCC 1347
-extern float CCC;
-int doWrite_CCC(float value);
-int addWrite_CCC(float value);
-int getStatus_CCC();
- 
-#define ID_DDD 1348
-extern float DDD;
-int doWrite_DDD(float value);
-int addWrite_DDD(float value);
-int getStatus_DDD();
- 
 #define ID_PLC_FWrevision 5300
 extern u_int16_t PLC_FWrevision;
 int doWrite_PLC_FWrevision(u_int16_t value);
@@ -345,6 +321,24 @@ extern float PLC_timeWin;
 int doWrite_PLC_timeWin(float value);
 int addWrite_PLC_timeWin(float value);
 int getStatus_PLC_timeWin();
+ 
+#define ID_PLC_Version 5394
+extern u_int16_t PLC_Version;
+int doWrite_PLC_Version(u_int16_t value);
+int addWrite_PLC_Version(u_int16_t value);
+int getStatus_PLC_Version();
+ 
+#define ID_PLC_EngineStatus 5395
+extern u_int16_t PLC_EngineStatus;
+int doWrite_PLC_EngineStatus(u_int16_t value);
+int addWrite_PLC_EngineStatus(u_int16_t value);
+int getStatus_PLC_EngineStatus();
+ 
+#define ID_PLC_ResetValues 5396
+extern int PLC_ResetValues;
+int doWrite_PLC_ResetValues(int value);
+int addWrite_PLC_ResetValues(int value);
+int getStatus_PLC_ResetValues();
  
 #ifdef __cplusplus
 }
