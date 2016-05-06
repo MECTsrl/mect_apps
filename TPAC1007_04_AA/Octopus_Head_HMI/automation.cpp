@@ -59,6 +59,7 @@ void loop(void)
 
     case STATUS_IDLE:
         /* this state is managed in PLC */
+        logStop();
         if (DO_RELOAD) {
             loadRecipe();
             doWrite_DO_RELOAD(0);
@@ -68,6 +69,7 @@ void loop(void)
 
     case STATUS_STARTING:
         /* this state is managed in PLC */
+        logStop();
         break;
 
     case STATUS_READY:
@@ -95,11 +97,13 @@ void loop(void)
                 if (DO_REPEAT) {
                     next_step = 1;
                 } else {
+                    logStop();
                     return;
                 }
             } else {
                 ++next_step;
             }
+            logStart();
             doWrite_TEST_STEP(next_step);
             clearTST();
             if (writeRecipe(next_step - 1) != 0) {
@@ -139,6 +143,7 @@ void loop(void)
 
     case STATUS_STOPPING:
         /* this state is managed in PLC */
+        logStop();
         break;
 
     default:

@@ -34,14 +34,14 @@ END_VAR
 				end_if;
 			2: (* for each tested input write the actual value *)
 		        ifTST_readPLC_writeRES();
-				substatus := 5;
-			5: (* wait for propagation *)
-				timer(IN := TRUE, PT := T#1000ms); (* FIXME: Modbus/TCP *)
+				substatus := 3;
+			3: (* wait for propagation *)
+				timer(IN := TRUE, PT := T#500ms); (* Modbus/TCP *)
 				if timer.Q then
 					timer(IN := FALSE);
-					substatus := 6;
+					substatus := 4;
 				end_if;
-			 6: (* change status *)
+			 4: (* change status *)
 				STATUS := STATUS_DONE;
 				TEST_STATUS := STATUS;
 			 end_case;
@@ -52,12 +52,13 @@ END_VAR
 			substatus := 0;
 			STATUS := STATUS_REMOTE;
 			TEST_STATUS := STATUS;
+			ClearPLC();
 		end_if;
 	    if (TEST_COMMAND = STATUS_LOCAL) then
 			STATUS := STATUS_LOCAL;
 			TEST_STATUS := STATUS;
-	    end_if;
-	
+			ClearPLC();
+		end_if;	
 	else
 		;
 	end_case;

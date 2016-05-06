@@ -28,21 +28,21 @@ END_VAR
  		        if (TST_AnOut_3 ) then PLC_DigDir_1 := 1; PLC_DigOut_1 := 1; end_if;
 				substatus := 1;
 			1: (* wait for propagation of max 28 PLC writes on local RTU and I/O settling *)
-				timer(IN := TRUE, PT := T#3000ms); (* slow AnIn *)
+				timer(IN := TRUE, PT := T#4000ms); (* slow AnIn *)
 				if timer.Q then
 					timer(IN := FALSE);
 					substatus := 2;
 				end_if;
 			2: (* for each tested input write the actual value *)
 		        ifTST_readPLC_writeRES();
-				substatus := 5;
-			5: (* wait for propagation *)
-				timer(IN := TRUE, PT := T#1000ms); (* FIXME: Modbus/TCP *)
+				substatus := 3;
+			3: (* wait for propagation *)
+				timer(IN := TRUE, PT := T#500ms); (* Modbus/TCP *)
 				if timer.Q then
 					timer(IN := FALSE);
-					substatus := 6;
+					substatus := 4;
 				end_if;
-			 6: (* change status *)
+			 4: (* change status *)
 				STATUS := STATUS_DONE;
 				TEST_STATUS := STATUS;
 			 end_case;

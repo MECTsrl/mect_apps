@@ -1,8 +1,8 @@
-1;P;PRODUCT_ID      ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;1   ;8   ;[RW]
-1;P;SERIAL_NUMBER   ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;1   ;8   ;[RW]
-1;P;TEST_ID         ;UINT     ;0   ;PLC       ;               ;    ;    ;    ;1   ;8   ;[RW]
-1;P;TEST_STEP       ;UINT     ;0   ;PLC       ;               ;    ;    ;    ;1   ;8   ;[RW]
-1;P;TEST_STEP_MAX   ;UINT     ;0   ;PLC       ;               ;    ;    ;    ;1   ;8   ;[RW]
+1;V;PRODUCT_ID      ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;1   ;8   ;[RW]
+1;V;SERIAL_NUMBER   ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;1   ;8   ;[RW]
+1;V;TEST_ID         ;UINT     ;0   ;PLC       ;               ;    ;    ;    ;1   ;8   ;[RW]
+1;V;TEST_STEP       ;UINT     ;0   ;PLC       ;               ;    ;    ;    ;1   ;8   ;[RW]
+1;V;TEST_STEP_MAX   ;UINT     ;0   ;PLC       ;               ;    ;    ;    ;1   ;8   ;[RW]
 1;P;TEST_DATE       ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;1   ;8   ;[RW]
 1;P;TEST_TIME       ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;1   ;8   ;[RW]
 1;P;TEST_DURATION   ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;1   ;8   ;[RW]
@@ -190,13 +190,13 @@
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
-1;P;AUTOMATIC       ;BIT      ;0   ;PLC       ;               ;    ;    ;    ;193 ;3   ;[RO]
-1;P;DO_REPEAT       ;BIT      ;0   ;PLC       ;               ;    ;    ;    ;193 ;3   ;[RO]
-1;P;DO_RELOAD       ;BIT      ;0   ;PLC       ;               ;    ;    ;    ;193 ;3   ;[RO]
-1;P;STATUS          ;UINT     ;0   ;PLC       ;               ;    ;    ;    ;196 ;2   ;[RW]
-1;P;RESULT          ;INT      ;0   ;PLC       ;               ;    ;    ;    ;196 ;2   ;[RW]
-1;P;RESULTS_OK      ;UINT     ;0   ;PLC       ;               ;    ;    ;    ;198 ;2   ;[RW]
-1;P;RESULTS_NG      ;UINT     ;0   ;PLC       ;               ;    ;    ;    ;198 ;2   ;[RW]
+1;V;AUTOMATIC       ;BIT      ;0   ;PLC       ;               ;    ;    ;    ;193 ;3   ;[RO]
+1;V;DO_REPEAT       ;BIT      ;0   ;PLC       ;               ;    ;    ;    ;193 ;3   ;[RO]
+1;V;DO_RELOAD       ;BIT      ;0   ;PLC       ;               ;    ;    ;    ;193 ;3   ;[RO]
+1;V;STATUS          ;UINT     ;0   ;PLC       ;               ;    ;    ;    ;196 ;2   ;[RW]
+1;V;RESULT          ;INT      ;0   ;PLC       ;               ;    ;    ;    ;196 ;2   ;[RW]
+1;V;RESULTS_OK      ;UINT     ;0   ;PLC       ;               ;    ;    ;    ;198 ;2   ;[RW]
+1;V;RESULTS_NG      ;UINT     ;0   ;PLC       ;               ;    ;    ;    ;198 ;2   ;[RW]
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;

@@ -18,16 +18,15 @@ void printVncDisplayString(char * vncString)
 {
     sprintf(vncString, "Multi: VNC:0:size=%dx%d Transformed:rot%d", WIDTH, HEIGHT, ROTATION);
     userPageList 
-            << "system_ini"
             << "page100"
             << "page200"
             << "page300"
             << "page400"
-            << "page401"
-            << "page402"
-            << "page403"
-            << "page404"
-            << "page405"
+//            << "page401"
+//            << "page402"
+//            << "page403"
+//            << "page404"
+//            << "page405"
                /* add here the label of the new page */
                ;
     userPageList.removeDuplicates();

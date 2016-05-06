@@ -11,8 +11,12 @@ END_VAR
 	
 	STATUS_IDLE:
 		if (PLC_DigIn_1) then (* PLC_PWR_SWITCH *)
-			PLC_DigOut_2 := 1;
-			PLC_DigOut_3 := 1;
+			if (not PLC_DigOut_2) then
+				PLC_DigOut_2 := true;
+				(* slightly delay the VPOW *)
+				return;
+			end_if;
+			PLC_DigOut_3 := true;
 			clearPLC();
 			TEST2_COMMAND := TEST_STATUS_REMOTE;
 			TEST_STEP := 0;
@@ -67,8 +71,8 @@ END_VAR
 	    2: (* write the VAL test variables *)
 			WriteVAL();
 			substatus := 3;
-	    3: (* wait for propagation of TST and VAL @ priority 3 : 1000ms *)
-			timer(IN := TRUE, PT := T#2000ms);
+	    3: (* wait for propagation of TST and VAL @ priority 3 : 500ms *)
+			timer(IN := TRUE, PT := T#500ms);
 			if timer.Q then
 				timer(IN := FALSE);
 				(* write the test starting command *)
@@ -77,7 +81,7 @@ END_VAR
 				substatus := 4;
 			end_if;
 	    4: (* wait for propagation of COMMAND @ priority 2 : 500ms and for TPLC005 AnIn *)
-			timer(IN := TRUE, PT := T#5000ms); (* TPLC005 AnIn slow *)
+			timer(IN := TRUE, PT := T#4500ms); (* 500ms + TPLC005 AnIn slow *)
 			if timer.Q then
 				timer(IN := FALSE);
 				substatus := 5;
