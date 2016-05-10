@@ -707,7 +707,7 @@ background-color: rgb(170, 170, 255);
     <rect>
      <x>499</x>
      <y>169</y>
-     <width>153</width>
+     <width>77</width>
      <height>35</height>
     </rect>
    </property>
@@ -759,7 +759,7 @@ background-color: rgb(170, 170, 255);
     <number>0</number>
    </property>
    <property name="format">
-    <enum>ATCMlabel::Hex</enum>
+    <enum>ATCMlabel::Dec</enum>
    </property>
   </widget>
   <widget class="ATCMlabel" name="atcmLabel_VAL_AnInConf_3">
@@ -819,7 +819,7 @@ background-color: rgb(170, 170, 255);
     <number>0</number>
    </property>
    <property name="format">
-    <enum>ATCMlabel::Hex</enum>
+    <enum>ATCMlabel::Dec</enum>
    </property>
   </widget>
   <widget class="ATCMlabel" name="atcmLabel_VAL_AnInFltr_1">
@@ -879,7 +879,7 @@ background-color: rgb(170, 170, 255);
     <number>0</number>
    </property>
    <property name="format">
-    <enum>ATCMlabel::Hex</enum>
+    <enum>ATCMlabel::Dec</enum>
    </property>
   </widget>
   <widget class="ATCMled" name="atcmLed_TST_AnIn_2">
@@ -980,7 +980,7 @@ background-color: rgb(170, 170, 255);
     <rect>
      <x>654</x>
      <y>169</y>
-     <width>153</width>
+     <width>77</width>
      <height>35</height>
     </rect>
    </property>
@@ -1032,7 +1032,7 @@ background-color: rgb(170, 170, 255);
     <number>0</number>
    </property>
    <property name="format">
-    <enum>ATCMlabel::Hex</enum>
+    <enum>ATCMlabel::Dec</enum>
    </property>
   </widget>
   <widget class="ATCMlabel" name="atcmLabel_VAL_AnInFltr_4">
@@ -1092,7 +1092,7 @@ background-color: rgb(170, 170, 255);
     <number>0</number>
    </property>
    <property name="format">
-    <enum>ATCMlabel::Hex</enum>
+    <enum>ATCMlabel::Dec</enum>
    </property>
   </widget>
   <widget class="ATCMlabel" name="atcmLabel_VAL_AnInConf_1">
@@ -1152,7 +1152,7 @@ background-color: rgb(170, 170, 255);
     <number>0</number>
    </property>
    <property name="format">
-    <enum>ATCMlabel::Hex</enum>
+    <enum>ATCMlabel::Dec</enum>
    </property>
   </widget>
   <widget class="ATCMlabel" name="atcmLabel_RES_AnIn_1">
@@ -1269,7 +1269,7 @@ background-color: rgb(170, 170, 255);
     <number>0</number>
    </property>
    <property name="format">
-    <enum>ATCMlabel::Hex</enum>
+    <enum>ATCMlabel::Dec</enum>
    </property>
   </widget>
   <widget class="ATCMlabel" name="atcmLabel_VAL_AnInFltr_2">
@@ -1329,7 +1329,7 @@ background-color: rgb(170, 170, 255);
     <number>0</number>
    </property>
    <property name="format">
-    <enum>ATCMlabel::Hex</enum>
+    <enum>ATCMlabel::Dec</enum>
    </property>
   </widget>
   <widget class="ATCMlabel" name="atcmLabel_RES_AnIn_2">
@@ -1451,7 +1451,7 @@ background-color: rgb(170, 170, 255);
     <rect>
      <x>190</x>
      <y>169</y>
-     <width>153</width>
+     <width>77</width>
      <height>35</height>
     </rect>
    </property>
@@ -1503,7 +1503,7 @@ background-color: rgb(170, 170, 255);
     <number>0</number>
    </property>
    <property name="format">
-    <enum>ATCMlabel::Hex</enum>
+    <enum>ATCMlabel::Dec</enum>
    </property>
   </widget>
   <widget class="ATCMled" name="atcmLed_TST_AnIn_1">
@@ -1599,7 +1599,7 @@ background-color: rgb(170, 170, 255);
     <number>0</number>
    </property>
    <property name="format">
-    <enum>ATCMlabel::Hex</enum>
+    <enum>ATCMlabel::Dec</enum>
    </property>
   </widget>
   <widget class="ATCMled" name="atcmLed_TST_AnIn_4">
@@ -1757,7 +1757,7 @@ background-color: rgb(170, 170, 255);
     <rect>
      <x>345</x>
      <y>169</y>
-     <width>153</width>
+     <width>77</width>
      <height>35</height>
     </rect>
    </property>
@@ -1809,7 +1809,7 @@ background-color: rgb(170, 170, 255);
     <number>0</number>
    </property>
    <property name="format">
-    <enum>ATCMlabel::Hex</enum>
+    <enum>ATCMlabel::Dec</enum>
    </property>
   </widget>
   <widget class="ATCMled" name="atcmLed_TST_AnIn_3">
@@ -1905,7 +1905,7 @@ background-color: rgb(170, 170, 255);
     <number>0</number>
    </property>
    <property name="format">
-    <enum>ATCMlabel::Hex</enum>
+    <enum>ATCMlabel::Dec</enum>
    </property>
   </widget>
   <widget class="ATCMlabel" name="atcmLabel_RES_AnIn_4">
@@ -2222,7 +2222,7 @@ background-color: rgb(170, 170, 255);
     <number>0</number>
    </property>
    <property name="format">
-    <enum>ATCMlabel::Hex</enum>
+    <enum>ATCMlabel::Dec</enum>
    </property>
   </widget>
   <widget class="ATCMlabel" name="atcmLabelAnInConf_7">
@@ -2282,7 +2282,7 @@ background-color: rgb(170, 170, 255);
     <number>0</number>
    </property>
    <property name="format">
-    <enum>ATCMlabel::Hex</enum>
+    <enum>ATCMlabel::Dec</enum>
    </property>
   </widget>
   <widget class="ATCMled" name="atcmLed_TST_AnOut_1">
@@ -2435,7 +2435,7 @@ background-color: rgb(170, 170, 255);
     <number>0</number>
    </property>
    <property name="format">
-    <enum>ATCMlabel::Hex</enum>
+    <enum>ATCMlabel::Dec</enum>
    </property>
   </widget>
   <widget class="ATCMlabel" name="atcmLabelAnInConf_1">
@@ -2495,7 +2495,7 @@ background-color: rgb(170, 170, 255);
     <number>0</number>
    </property>
    <property name="format">
-    <enum>ATCMlabel::Hex</enum>
+    <enum>ATCMlabel::Dec</enum>
    </property>
   </widget>
   <widget class="ATCMlabel" name="atcmLabelAnIn_6">
@@ -2714,6 +2714,246 @@ background-color: rgb(170, 170, 255);
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
+  <widget class="ATCMlabel" name="atcmLabel_PLC_AnInConf_5">
+   <property name="geometry">
+    <rect>
+     <x>267</x>
+     <y>169</y>
+     <width>77</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>2</string>
+   </property>
+   <property name="toolTip">
+    <string>PLC_FiltAnIn_1</string>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMlabel widget</string>
+   </property>
+   <property name="variable">
+    <string>PLC_FiltAnIn_1</string>
+   </property>
+   <property name="refresh">
+    <number>500</number>
+   </property>
+   <property name="max">
+    <string>0</string>
+   </property>
+   <property name="min">
+    <string>0</string>
+   </property>
+   <property name="viewStatus">
+    <bool>false</bool>
+   </property>
+   <property name="visibilityVar">
+    <string>TST_AnIn_1</string>
+   </property>
+   <property name="bgColor">
+    <color>
+     <red>255</red>
+     <green>255</green>
+     <blue>127</blue>
+    </color>
+   </property>
+   <property name="fontColor">
+    <color>
+     <red>0</red>
+     <green>0</green>
+     <blue>0</blue>
+    </color>
+   </property>
+   <property name="borderWidth">
+    <number>1</number>
+   </property>
+   <property name="borderRadius">
+    <number>0</number>
+   </property>
+   <property name="format">
+    <enum>ATCMlabel::Dec</enum>
+   </property>
+  </widget>
+  <widget class="ATCMlabel" name="atcmLabel_PLC_AnInConf_6">
+   <property name="geometry">
+    <rect>
+     <x>421</x>
+     <y>169</y>
+     <width>77</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>2</string>
+   </property>
+   <property name="toolTip">
+    <string>PLC_FiltAnIn_2</string>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMlabel widget</string>
+   </property>
+   <property name="variable">
+    <string>PLC_FiltAnIn_2</string>
+   </property>
+   <property name="refresh">
+    <number>500</number>
+   </property>
+   <property name="max">
+    <string>0</string>
+   </property>
+   <property name="min">
+    <string>0</string>
+   </property>
+   <property name="viewStatus">
+    <bool>false</bool>
+   </property>
+   <property name="visibilityVar">
+    <string>TST_AnIn_2</string>
+   </property>
+   <property name="bgColor">
+    <color>
+     <red>255</red>
+     <green>255</green>
+     <blue>127</blue>
+    </color>
+   </property>
+   <property name="fontColor">
+    <color>
+     <red>0</red>
+     <green>0</green>
+     <blue>0</blue>
+    </color>
+   </property>
+   <property name="borderWidth">
+    <number>1</number>
+   </property>
+   <property name="borderRadius">
+    <number>0</number>
+   </property>
+   <property name="format">
+    <enum>ATCMlabel::Dec</enum>
+   </property>
+  </widget>
+  <widget class="ATCMlabel" name="atcmLabel_PLC_AnInConf_7">
+   <property name="geometry">
+    <rect>
+     <x>575</x>
+     <y>169</y>
+     <width>77</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>2</string>
+   </property>
+   <property name="toolTip">
+    <string>PLC_FiltAnIn_3</string>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMlabel widget</string>
+   </property>
+   <property name="variable">
+    <string>PLC_FiltAnIn_3</string>
+   </property>
+   <property name="refresh">
+    <number>500</number>
+   </property>
+   <property name="max">
+    <string>0</string>
+   </property>
+   <property name="min">
+    <string>0</string>
+   </property>
+   <property name="viewStatus">
+    <bool>false</bool>
+   </property>
+   <property name="visibilityVar">
+    <string>TST_AnIn_3</string>
+   </property>
+   <property name="bgColor">
+    <color>
+     <red>255</red>
+     <green>255</green>
+     <blue>127</blue>
+    </color>
+   </property>
+   <property name="fontColor">
+    <color>
+     <red>0</red>
+     <green>0</green>
+     <blue>0</blue>
+    </color>
+   </property>
+   <property name="borderWidth">
+    <number>1</number>
+   </property>
+   <property name="borderRadius">
+    <number>0</number>
+   </property>
+   <property name="format">
+    <enum>ATCMlabel::Dec</enum>
+   </property>
+  </widget>
+  <widget class="ATCMlabel" name="atcmLabel_PLC_AnInConf_8">
+   <property name="geometry">
+    <rect>
+     <x>730</x>
+     <y>169</y>
+     <width>77</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>2</string>
+   </property>
+   <property name="toolTip">
+    <string>PLC_FiltAnIn_4</string>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMlabel widget</string>
+   </property>
+   <property name="variable">
+    <string>PLC_FiltAnIn_4</string>
+   </property>
+   <property name="refresh">
+    <number>500</number>
+   </property>
+   <property name="max">
+    <string>0</string>
+   </property>
+   <property name="min">
+    <string>0</string>
+   </property>
+   <property name="viewStatus">
+    <bool>false</bool>
+   </property>
+   <property name="visibilityVar">
+    <string>TST_AnIn_4</string>
+   </property>
+   <property name="bgColor">
+    <color>
+     <red>255</red>
+     <green>255</green>
+     <blue>127</blue>
+    </color>
+   </property>
+   <property name="fontColor">
+    <color>
+     <red>0</red>
+     <green>0</green>
+     <blue>0</blue>
+    </color>
+   </property>
+   <property name="borderWidth">
+    <number>1</number>
+   </property>
+   <property name="borderRadius">
+    <number>0</number>
+   </property>
+   <property name="format">
+    <enum>ATCMlabel::Dec</enum>
+   </property>
+  </widget>
   <zorder>label_PLC_DigIn_1</zorder>
   <zorder>label_TST_DigIn_</zorder>
   <zorder>line_14</zorder>
@@ -2777,6 +3017,10 @@ background-color: rgb(170, 170, 255);
   <zorder>atcmAnimation_TEST_STATUS</zorder>
   <zorder>atcmComboBox</zorder>
   <zorder>label_Start_3</zorder>
+  <zorder>atcmLabel_PLC_AnInConf_5</zorder>
+  <zorder>atcmLabel_PLC_AnInConf_6</zorder>
+  <zorder>atcmLabel_PLC_AnInConf_7</zorder>
+  <zorder>atcmLabel_PLC_AnInConf_8</zorder>
  </widget>
  <customwidgets>
   <customwidget>
