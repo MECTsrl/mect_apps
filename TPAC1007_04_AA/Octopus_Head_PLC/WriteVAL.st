@@ -193,7 +193,7 @@ END_VAR
 	if TST_RPM  then
 		(* <-- Horn2 AO3 PWM *) 
 		VAL2_AnOutConf_3 := 3; (* PWM *)
-		VAL2_AnOut_3 := UINT_TO_INT(VAL_RPM); (* FIXME: conversion ? *)
+		VAL2_AnOut_3 := UINT_TO_INT(VAL_RPM / 10); (* different fixed points *)
 	end_if;
 
 	if TST_FWrevision  then

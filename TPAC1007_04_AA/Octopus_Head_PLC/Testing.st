@@ -103,7 +103,13 @@ END_VAR
 				RESULT := RESULT_NG;
 				RESULTS_NG := RESULTS_NG + 1;
 			end_if;
-			STATUS := STATUS_DONE;
+			substatus := 8;
+	    8: (* let the hmi visualize the result *)
+			timer(IN := TRUE, PT := T#1000ms);
+			if timer.Q then
+				timer(IN := FALSE);
+				STATUS := STATUS_DONE;
+			end_if;
 		else
 			;
 		end_case;

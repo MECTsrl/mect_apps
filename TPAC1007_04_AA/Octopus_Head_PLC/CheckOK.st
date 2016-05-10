@@ -83,11 +83,13 @@ END_VAR
 	if TST_FWrevision  then OK_FWrevision  := (RES_FWrevision = VAL_FWrevision); end_if;
 	if TST_HWconfig  then OK_HWconfig  := (RES_HWconfig = VAL_HWconfig); end_if;
 	
-	if PRODUCT_ID = TPAC1007_LV then
-		if TST_RTU1_WR  then OK_RTU1_WR  := (RES_RTU1_WR = VAL_RTU1_WR); end_if;
-		if TST_RTU1_RD  then OK_RTU1_RD  := (RES_RTU1_RD = VAL_RTU1_RD); end_if;
-		if TST_RTU3_WR  then OK_RTU3_WR  := (RES_RTU3_WR = VAL_RTU3_WR); end_if;
-		if TST_RTU3_RD  then OK_RTU3_RD  := (RES_RTU3_RD = VAL_RTU3_RD); end_if;
-	 end_if;
+	if TST_RTUS_WR  then OK_RTUS_WR  := (RES_RTUS_WR = VAL_RTUS_WR); end_if;
+	if TST_RTUS_RD  then OK_RTUS_RD  := (RES_RTUS_RD = VAL_RTUS_RD); end_if;
+	if TST_RTU1_WR  then OK_RTU1_WR  := (RES_RTU1_WR = VAL_RTU1_WR); end_if;
+	if TST_RTU1_RD  then OK_RTU1_RD  := (RES_RTU1_RD = VAL_RTU1_RD); end_if;
+	if TST_RTU3_WR  then OK_RTU3_WR  := (RES_RTU3_WR = VAL_RTU3_WR); end_if;
+	if TST_RTU3_RD  then OK_RTU3_RD  := (RES_RTU3_RD = VAL_RTU3_RD); end_if;
+	if TST_CAN1_WR  then OK_CAN1_WR  := (RES_CAN1_WR = VAL_CAN1_WR); end_if;
+	if TST_CAN1_RD  then OK_CAN1_RD  := (RES_CAN1_RD = VAL_CAN1_RD); end_if;
 
 END_FUNCTION

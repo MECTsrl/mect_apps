@@ -71,12 +71,10 @@ END_VAR
 	if TST_FWrevision  then retval := retval and OK_FWrevision; end_if;
 	if TST_HWconfig  then retval := retval and OK_HWconfig;  end_if;
 
-  	if PRODUCT_ID = TPAC1007_LV then
-		if TST_RTU1_WR  then retval := retval and OK_RTU1_WR; end_if;
-		if TST_RTU1_RD  then retval := retval and OK_RTU1_RD; end_if;
-		if TST_RTU3_WR  then retval := retval and OK_RTU3_WR; end_if;
-		if TST_RTU3_RD  then retval := retval and OK_RTU3_RD; end_if;
-	end_if;
+	if TST_RTU1_WR  then retval := retval and OK_RTU1_WR; end_if;
+	if TST_RTU1_RD  then retval := retval and OK_RTU1_RD; end_if;
+	if TST_RTU3_WR  then retval := retval and OK_RTU3_WR; end_if;
+	if TST_RTU3_RD  then retval := retval and OK_RTU3_RD; end_if;
 
 	AllTestedAreOK := retval;
 END_FUNCTION

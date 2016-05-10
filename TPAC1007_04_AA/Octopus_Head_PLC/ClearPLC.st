@@ -31,8 +31,8 @@ END_VAR
 	RTU_AnOut_7 := 0;
 	RTU_AnOut_8 := 0;
 	
-	PLC_AnOutConf_1 := 0;
-	PLC_AnOutConf_2 := 0;
+	PLC_AnOutConf_1 := 2;
+	PLC_AnOutConf_2 := 2;
 	PLC_AnOut_1 := 0;
 	PLC_AnOut_2 := 0;
 	

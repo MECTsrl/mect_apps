@@ -23,15 +23,15 @@ void printVncDisplayString(char * vncString)
             << "page201"
             << "page300"
             << "page400"
-//            << "page401"
-//            << "page402"
-//            << "page403"
-//            << "page404"
-//            << "page405"
-//            << "page434"
-//            << "page444"
-               /* add here the label of the new page */
-               ;
+            << "page401"
+            << "page402"
+            << "page403"
+            << "page404"
+            << "page405"
+            << "page434"
+            << "page444"
+            /* add here the label of the new page */
+            ;
     userPageList.removeDuplicates();
 }
 

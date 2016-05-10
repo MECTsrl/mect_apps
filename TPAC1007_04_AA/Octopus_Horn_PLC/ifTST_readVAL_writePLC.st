@@ -33,9 +33,10 @@ END_VAR
 
     if (TST_AnOut_1 ) then PLC_AnOutConf_1 := VAL_AnOutConf_1; PLC_AnOut_1 := VAL_AnOut_1; end_if;
     if (TST_AnOut_2 ) then PLC_AnOutConf_2 := VAL_AnOutConf_2; PLC_AnOut_2 := VAL_AnOut_2; end_if;
+	(* NB: se also RPM @ 50.0 Hz generation using DigOut_1 in Testing.st *)		
     if (TST_AnOut_3 ) then PLC_AnOutConf_3 := VAL_AnOutConf_3; PLC_AnOut_3 := VAL_AnOut_3; end_if;
     if (TST_AnOut_4 ) then PLC_AnOutConf_4 := VAL_AnOutConf_4; PLC_AnOut_4 := VAL_AnOut_4; end_if;
-
+	
     if (TST_Tamb      ) then RES_Tamb := 0; end_if;
     if (TST_FWrevision) then RES_FWrevision := 0; end_if;
     if (TST_HWconfig  ) then RES_HWconfig := 0; end_if;
