@@ -249,10 +249,9 @@
         <location filename="page100.ui" line="656"/>
         <location filename="page100.ui" line="791"/>
         <location filename="page100.ui" line="1374"/>
-        <location filename="page100.ui" line="2654"/>
         <location filename="page100.ui" line="2808"/>
-        <location filename="page100.ui" line="3461"/>
-        <source>0;---;1;[mA] 4..20;2;[V] 0..10;3;[°C] 0..600;4;[°C] 0..1200;5;[°C] 0..400;6;[°C]-40..800;7;[°C]-40..200</source>
+        <source>1;[mA] 4..20;2;[V] 0..10;3;[°C] TCJ;4;[°C] TCK;5;[°C] TCT;6;[°C] PT100E;7;[°C] PT100R;8;[°C] TCS;9;[°C] TCB;10;[°C] TCR;0;--</source>
+        <oldsource>0;---;1;[mA] 4..20;2;[V] 0..10;3;[°C] 0..600;4;[°C] 0..1200;5;[°C] 0..400;6;[°C]-40..800;7;[°C]-40..200</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -515,6 +514,12 @@
         <location filename="page100.ui" line="2614"/>
         <location filename="page100.ui" line="2623"/>
         <source>PLC_AnOutConf_1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page100.ui" line="2654"/>
+        <location filename="page100.ui" line="3461"/>
+        <source>1;[mA] 4..20;2;[V] 0..10;3;[%] PWM;0;--</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

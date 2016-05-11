@@ -1775,7 +1775,7 @@
    <property name="font">
     <font>
      <family>DejaVu Sans Mono</family>
-     <pointsize>10</pointsize>
+     <pointsize>13</pointsize>
     </font>
    </property>
    <property name="toolTip">
@@ -1819,7 +1819,7 @@
     <enum>QFrame::Raised</enum>
    </property>
    <property name="mapping">
-    <string>0;---;1;[mA] 4..20;2;[V] 0..10;3;[°C] 0..600;4;[°C] 0..1200;5;[°C] 0..400;6;[°C]-40..800;7;[°C]-40..200</string>
+    <string>1;[mA] 4..20;2;[V] 0..10;3;[°C] TCJ;4;[°C] TCK;5;[°C] TCT;6;[°C] PT100E;7;[°C] PT100R;8;[°C] TCS;9;[°C] TCB;10;[°C] TCR;0;--</string>
    </property>
   </widget>
   <widget class="ATCMcombobox" name="atcmComboBox_PLC_AnInConf_2">
@@ -1834,7 +1834,7 @@
    <property name="font">
     <font>
      <family>DejaVu Sans Mono</family>
-     <pointsize>10</pointsize>
+     <pointsize>13</pointsize>
     </font>
    </property>
    <property name="toolTip">
@@ -1878,7 +1878,7 @@
     <enum>QFrame::Raised</enum>
    </property>
    <property name="mapping">
-    <string>0;---;1;[mA] 4..20;2;[V] 0..10;3;[°C] 0..600;4;[°C] 0..1200;5;[°C] 0..400;6;[°C]-40..800;7;[°C]-40..200</string>
+    <string>1;[mA] 4..20;2;[V] 0..10;3;[%] PWM;0;--</string>
    </property>
   </widget>
   <widget class="QLabel" name="label_19">
@@ -2044,7 +2044,7 @@
    <property name="font">
     <font>
      <family>DejaVu Sans Mono</family>
-     <pointsize>10</pointsize>
+     <pointsize>13</pointsize>
     </font>
    </property>
    <property name="toolTip">
@@ -2088,7 +2088,7 @@
     <enum>QFrame::Raised</enum>
    </property>
    <property name="mapping">
-    <string>0;---;1;[mA] 4..20;2;[V] 0..10;3;[°C] 0..600;4;[°C] 0..1200;5;[°C] 0..400;6;[°C]-40..800;7;[°C]-40..200</string>
+    <string>1;[mA] 4..20;2;[V] 0..10;3;[%] PWM;0;--</string>
    </property>
   </widget>
   <widget class="QLabel" name="label_21">
@@ -2201,11 +2201,11 @@
    <property name="font">
     <font>
      <family>DejaVu Sans Mono</family>
-     <pointsize>10</pointsize>
+     <pointsize>13</pointsize>
     </font>
    </property>
    <property name="toolTip">
-    <string>PLC_AnInConf_1</string>
+    <string>PLC_AnInConf_2</string>
    </property>
    <property name="whatsThis">
     <string>ATCMcombobox widget</string>
@@ -2214,7 +2214,7 @@
     <number>2</number>
    </property>
    <property name="variable">
-    <string>PLC_AnInConf_1</string>
+    <string>PLC_AnInConf_2</string>
    </property>
    <property name="refresh">
     <number>1000</number>
@@ -2245,7 +2245,7 @@
     <enum>QFrame::Raised</enum>
    </property>
    <property name="mapping">
-    <string>0;---;1;[mA] 4..20;2;[V] 0..10;3;[°C] 0..600;4;[°C] 0..1200;5;[°C] 0..400;6;[°C]-40..800;7;[°C]-40..200</string>
+    <string>1;[mA] 4..20;2;[V] 0..10;3;[°C] TCJ;4;[°C] TCK;5;[°C] TCT;6;[°C] PT100E;7;[°C] PT100R;8;[°C] TCS;9;[°C] TCB;10;[°C] TCR;0;--</string>
    </property>
   </widget>
   <widget class="ATCMlabel" name="atcmLabel_23">
@@ -2450,7 +2450,7 @@
    <property name="font">
     <font>
      <family>DejaVu Sans Mono</family>
-     <pointsize>10</pointsize>
+     <pointsize>13</pointsize>
     </font>
    </property>
    <property name="toolTip">
@@ -2494,7 +2494,7 @@
     <enum>QFrame::Raised</enum>
    </property>
    <property name="mapping">
-    <string>0;---;1;[mA] 4..20;2;[V] 0..10;3;[°C] 0..600;4;[°C] 0..1200;5;[°C] 0..400;6;[°C]-40..800;7;[°C]-40..200</string>
+    <string>1;[mA] 4..20;2;[V] 0..10;3;[°C] TCJ;4;[°C] TCK;5;[°C] TCT;6;[°C] PT100E;7;[°C] PT100R;8;[°C] TCS;9;[°C] TCB;10;[°C] TCR;0;--</string>
    </property>
   </widget>
   <widget class="ATCMlabel" name="atcmLabel_25">
@@ -2577,7 +2577,7 @@
    <property name="font">
     <font>
      <family>DejaVu Sans Mono</family>
-     <pointsize>10</pointsize>
+     <pointsize>13</pointsize>
     </font>
    </property>
    <property name="toolTip">
@@ -2621,7 +2621,7 @@
     <enum>QFrame::Raised</enum>
    </property>
    <property name="mapping">
-    <string>0;---;1;[mA] 4..20;2;[V] 0..10;3;[°C] 0..600;4;[°C] 0..1200;5;[°C] 0..400;6;[°C]-40..800;7;[°C]-40..200</string>
+    <string>1;[mA] 4..20;2;[V] 0..10;3;[°C] TCJ;4;[°C] TCK;5;[°C] TCT;6;[°C] PT100E;7;[°C] PT100R;8;[°C] TCS;9;[°C] TCB;10;[°C] TCR;0;--</string>
    </property>
   </widget>
   <widget class="Line" name="line_3">

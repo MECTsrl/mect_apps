@@ -401,12 +401,17 @@
     </message>
     <message utf8="true">
         <location filename="page100.ui" line="1822"/>
-        <location filename="page100.ui" line="1881"/>
-        <location filename="page100.ui" line="2091"/>
         <location filename="page100.ui" line="2248"/>
         <location filename="page100.ui" line="2497"/>
         <location filename="page100.ui" line="2624"/>
-        <source>0;---;1;[mA] 4..20;2;[V] 0..10;3;[°C] 0..600;4;[°C] 0..1200;5;[°C] 0..400;6;[°C]-40..800;7;[°C]-40..200</source>
+        <source>1;[mA] 4..20;2;[V] 0..10;3;[°C] TCJ;4;[°C] TCK;5;[°C] TCT;6;[°C] PT100E;7;[°C] PT100R;8;[°C] TCS;9;[°C] TCB;10;[°C] TCR;0;--</source>
+        <oldsource>0;---;1;[mA] 4..20;2;[V] 0..10;3;[°C] 0..600;4;[°C] 0..1200;5;[°C] 0..400;6;[°C]-40..800;7;[°C]-40..200</oldsource>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page100.ui" line="1881"/>
+        <location filename="page100.ui" line="2091"/>
+        <source>1;[mA] 4..20;2;[V] 0..10;3;[%] PWM;0;--</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -422,6 +427,8 @@
     <message>
         <location filename="page100.ui" line="2051"/>
         <location filename="page100.ui" line="2060"/>
+        <location filename="page100.ui" line="2208"/>
+        <location filename="page100.ui" line="2217"/>
         <source>PLC_AnInConf_2</source>
         <translation type="unfinished"></translation>
     </message>
@@ -760,8 +767,6 @@ WR </source>
         <location filename="page100.ui" line="1791"/>
         <location filename="page100.ui" line="1841"/>
         <location filename="page100.ui" line="1850"/>
-        <location filename="page100.ui" line="2208"/>
-        <location filename="page100.ui" line="2217"/>
         <source>PLC_AnInConf_1</source>
         <oldsource>PLC_AnInConf</oldsource>
         <translation type="unfinished"></translation>

@@ -653,7 +653,7 @@ background-color: rgb(170, 255, 255);
     <enum>QFrame::Raised</enum>
    </property>
    <property name="mapping">
-    <string>0;---;1;[mA] 4..20;2;[V] 0..10;3;[°C] 0..600;4;[°C] 0..1200;5;[°C] 0..400;6;[°C]-40..800;7;[°C]-40..200</string>
+    <string>1;[mA] 4..20;2;[V] 0..10;3;[°C] TCJ;4;[°C] TCK;5;[°C] TCT;6;[°C] PT100E;7;[°C] PT100R;8;[°C] TCS;9;[°C] TCB;10;[°C] TCR;0;--</string>
    </property>
   </widget>
   <widget class="ATCMbutton" name="atcmButton_18">
@@ -788,7 +788,7 @@ background-color: rgb(170, 255, 255);
     <enum>QFrame::Raised</enum>
    </property>
    <property name="mapping">
-    <string>0;---;1;[mA] 4..20;2;[V] 0..10;3;[°C] 0..600;4;[°C] 0..1200;5;[°C] 0..400;6;[°C]-40..800;7;[°C]-40..200</string>
+    <string>1;[mA] 4..20;2;[V] 0..10;3;[°C] TCJ;4;[°C] TCK;5;[°C] TCT;6;[°C] PT100E;7;[°C] PT100R;8;[°C] TCS;9;[°C] TCB;10;[°C] TCR;0;--</string>
    </property>
   </widget>
   <widget class="ATCMlabel" name="atcmLabel_36">
@@ -1371,7 +1371,7 @@ background-color: rgb(170, 255, 255);
     <enum>QFrame::Raised</enum>
    </property>
    <property name="mapping">
-    <string>0;---;1;[mA] 4..20;2;[V] 0..10;3;[°C] 0..600;4;[°C] 0..1200;5;[°C] 0..400;6;[°C]-40..800;7;[°C]-40..200</string>
+    <string>1;[mA] 4..20;2;[V] 0..10;3;[°C] TCJ;4;[°C] TCK;5;[°C] TCT;6;[°C] PT100E;7;[°C] PT100R;8;[°C] TCS;9;[°C] TCB;10;[°C] TCR;0;--</string>
    </property>
   </widget>
   <widget class="ATCMlabel" name="atcmLabel_18">
@@ -2651,7 +2651,7 @@ background-color: rgb(170, 255, 255);
     <enum>QFrame::Raised</enum>
    </property>
    <property name="mapping">
-    <string>0;---;1;[mA] 4..20;2;[V] 0..10;3;[°C] 0..600;4;[°C] 0..1200;5;[°C] 0..400;6;[°C]-40..800;7;[°C]-40..200</string>
+    <string>1;[mA] 4..20;2;[V] 0..10;3;[%] PWM;0;--</string>
    </property>
   </widget>
   <widget class="ATCMled" name="atcmLed_11">
@@ -2805,7 +2805,7 @@ background-color: rgb(170, 255, 255);
     <enum>QFrame::Raised</enum>
    </property>
    <property name="mapping">
-    <string>0;---;1;[mA] 4..20;2;[V] 0..10;3;[°C] 0..600;4;[°C] 0..1200;5;[°C] 0..400;6;[°C]-40..800;7;[°C]-40..200</string>
+    <string>1;[mA] 4..20;2;[V] 0..10;3;[°C] TCJ;4;[°C] TCK;5;[°C] TCT;6;[°C] PT100E;7;[°C] PT100R;8;[°C] TCS;9;[°C] TCB;10;[°C] TCR;0;--</string>
    </property>
   </widget>
   <widget class="ATCMbutton" name="atcmButton_16">
@@ -3458,7 +3458,7 @@ background-color: rgb(170, 255, 255);
     <enum>QFrame::Raised</enum>
    </property>
    <property name="mapping">
-    <string>0;---;1;[mA] 4..20;2;[V] 0..10;3;[°C] 0..600;4;[°C] 0..1200;5;[°C] 0..400;6;[°C]-40..800;7;[°C]-40..200</string>
+    <string>1;[mA] 4..20;2;[V] 0..10;3;[%] PWM;0;--</string>
    </property>
   </widget>
   <widget class="ATCMlabel" name="atcmLabel_23">
