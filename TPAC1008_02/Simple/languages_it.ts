@@ -345,10 +345,6 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="1334"/>
-        <location filename="page100.ui" line="1343"/>
-        <location filename="page100.ui" line="2614"/>
-        <location filename="page100.ui" line="2623"/>
         <location filename="page100.ui" line="2768"/>
         <location filename="page100.ui" line="2777"/>
         <source>PLC_AnInConf_1</source>
@@ -516,6 +512,12 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="page100.ui" line="2614"/>
+        <location filename="page100.ui" line="2623"/>
+        <source>PLC_AnOutConf_1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="page100.ui" line="2667"/>
         <location filename="page100.ui" line="2673"/>
         <source>PLC_DigIn_2</source>
@@ -613,9 +615,15 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="page100.ui" line="1334"/>
+        <location filename="page100.ui" line="1343"/>
+        <source>PLC_AnInConf_2</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="page100.ui" line="3421"/>
         <location filename="page100.ui" line="3430"/>
-        <source>PLC_AnInConf_2</source>
+        <source>PLC_AnOutConf_2</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 2.7.84, 2016-05-10T17:18:01. -->
+<!-- Written by QtCreator 2.7.84, 2016-05-11T08:20:06. -->
 <qtcreator>
  <data>
   <variable>ProjectExplorer.Project.ActiveTarget</variable>
@@ -215,8 +215,8 @@
        <value type="QString">C:/MectApps/TPAC1007_04_AA/Octopus_Head_HMI/recipes/TPAC1007_LV/1.csv</value>
        <value type="QString">C:/MectApps/TPAC1007_04_AA/Octopus_Head_HMI/recipes/TPAC1008/2.csv</value>
        <value type="QString">C:/MectApps/TPAC1007_04_AA/Octopus_Head_HMI/recipes/TPAC1008/1.csv</value>
-       <value type="QString">C:/MectApps/TPAC1007_04_AA/Octopus_Head_HMI/config/Crosstable.csv</value>
        <value type="QString">C:/MectApps/TPAC1007_04_AA/Octopus_Head_HMI/recipes/TPAC1007_4AA/3.csv</value>
+       <value type="QString">C:/MectApps/TPAC1007_04_AA/Octopus_Head_HMI/config/Crosstable.csv</value>
        <value type="QString">C:/MectApps/TPAC1007_04_AA/Octopus_Head_HMI/config/Alarms.csv</value>
        <value type="QString">C:/MectApps/TPAC1007_04_AA/Octopus_Head_HMI/recipes/TPAC1007_4AA/1.csv</value>
        <value type="QString">C:/MectApps/TPAC1007_04_AA/Octopus_Head_HMI/config/system.ini</value>
@@ -224,8 +224,8 @@
        <value type="QString">C:/MectApps/TPAC1007_04_AA/Octopus_Head_HMI/recipes/TPAC1008/2.csv</value>
        <value type="QString">C:/MectApps/TPAC1007_04_AA/Octopus_Head_HMI/hmi</value>
        <value type="QString">C:/MectApps/TPAC1007_04_AA/Octopus_Head_HMI/recipes/TPAC1008/1.csv</value>
-       <value type="QString">C:/MectApps/TPAC1007_04_AA/Octopus_Head_HMI/config/store_AnOut_3.csv</value>
        <value type="QString">C:/MectApps/TPAC1007_04_AA/Octopus_Head_HMI/recipes/TPAC1007_4AA/2.csv</value>
+       <value type="QString">C:/MectApps/TPAC1007_04_AA/Octopus_Head_HMI/config/store_AnOut_3.csv</value>
        <value type="QString">C:/MectApps/TPAC1007_04_AA/Octopus_Head_HMI/config/system.ini</value>
        <value type="QString">C:/MectApps/TPAC1007_04_AA/Octopus_Head_HMI/hmi</value>
        <value type="QString">C:/MectApps/TPAC1007_04_AA/Octopus_Head_HMI/config/store_AnOut_4.csv</value>
@@ -262,17 +262,17 @@
        <value type="QString">192.168.5.211</value>
        <value type="QString">192.168.5.211</value>
        <value type="QString">192.168.5.211</value>
-       <value type="QString">192.168.5.113</value>
-       <value type="QString">192.168.5.211</value>
-       <value type="QString">192.168.5.113</value>
        <value type="QString">192.168.5.211</value>
        <value type="QString">192.168.5.113</value>
        <value type="QString">192.168.5.113</value>
+       <value type="QString">192.168.5.211</value>
+       <value type="QString">192.168.5.113</value>
        <value type="QString">192.168.5.113</value>
        <value type="QString">192.168.5.113</value>
        <value type="QString">192.168.5.113</value>
        <value type="QString">192.168.5.113</value>
        <value type="QString">192.168.5.211</value>
+       <value type="QString">192.168.5.113</value>
        <value type="QString">192.168.5.211</value>
        <value type="QString">192.168.5.211</value>
        <value type="QString">192.168.5.211</value>
@@ -309,8 +309,8 @@
        <value type="QString">/local/data/recipe/TPAC1007_LV</value>
        <value type="QString">/local/data/recipe/TPAC1008</value>
        <value type="QString">/local/data/recipe/TPAC1008</value>
-       <value type="QString">/local/etc/sysconfig</value>
        <value type="QString">/local/data/recipe/TPAC1007_4AA</value>
+       <value type="QString">/local/etc/sysconfig</value>
        <value type="QString">/local/etc/sysconfig</value>
        <value type="QString">/local/data/recipe/TPAC1007_4AA</value>
        <value type="QString">/local/etc/sysconfig</value>
@@ -318,8 +318,8 @@
        <value type="QString">/local/data/recipe/TPAC1008</value>
        <value type="QString">/local/root</value>
        <value type="QString">/local/data/recipe/TPAC1008</value>
-       <value type="QString">/local/data/customstore</value>
        <value type="QString">/local/data/recipe/TPAC1007_4AA</value>
+       <value type="QString">/local/data/customstore</value>
        <value type="QString">/local/etc/sysconfig</value>
        <value type="QString">/local/root</value>
        <value type="QString">/local/data/customstore</value>
@@ -403,8 +403,8 @@
        <value type="QDateTime">2016-05-09T16:16:48</value>
        <value type="QDateTime">2016-05-09T16:16:48</value>
        <value type="QDateTime">2016-05-09T16:16:48</value>
-       <value type="QDateTime">2016-05-10T14:17:43</value>
        <value type="QDateTime">2016-05-09T16:16:48</value>
+       <value type="QDateTime">2016-05-10T14:17:43</value>
        <value type="QDateTime">2016-03-17T17:05:23</value>
        <value type="QDateTime">2016-05-09T16:16:47</value>
        <value type="QDateTime">2016-05-10T14:17:43</value>
@@ -412,8 +412,8 @@
        <value type="QDateTime">2016-05-10T14:17:44</value>
        <value type="QDateTime">2016-05-10T14:17:47</value>
        <value type="QDateTime">2016-05-10T14:17:44</value>
-       <value type="QDateTime">2016-05-10T14:17:43</value>
        <value type="QDateTime">2016-05-09T16:16:48</value>
+       <value type="QDateTime">2016-05-10T14:17:43</value>
        <value type="QDateTime">2016-05-09T16:16:47</value>
        <value type="QDateTime">2016-05-09T16:16:51</value>
        <value type="QDateTime">2016-05-09T16:16:47</value>
