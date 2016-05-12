@@ -540,13 +540,13 @@ WR</string>
     </rect>
    </property>
    <property name="toolTip">
-    <string/>
+    <string>CAN_DigIn_1</string>
    </property>
    <property name="whatsThis">
     <string>ATCMled widget</string>
    </property>
    <property name="variable">
-    <string/>
+    <string>CAN_DigIn_1</string>
    </property>
    <property name="refresh">
     <number>500</number>
@@ -555,7 +555,7 @@ WR</string>
     <bool>false</bool>
    </property>
    <property name="visibilityVar">
-    <string>TST_CAN_RD</string>
+    <string>TST_CAN1_RD</string>
    </property>
    <property name="onIcon">
     <iconset>
@@ -591,7 +591,7 @@ WR</string>
     <bool>false</bool>
    </property>
    <property name="visibilityVar">
-    <string>TST_RTU_RD</string>
+    <string>TST_RTU1_RD</string>
    </property>
    <property name="onIcon">
     <iconset>
@@ -612,13 +612,13 @@ WR</string>
     </rect>
    </property>
    <property name="toolTip">
-    <string>TST_RTU_WR</string>
+    <string>TST_RTU1_WR</string>
    </property>
    <property name="whatsThis">
     <string>ATCMled widget</string>
    </property>
    <property name="variable">
-    <string>TST_RTU_WR</string>
+    <string>TST_RTU1_WR</string>
    </property>
    <property name="refresh">
     <number>500</number>
@@ -648,13 +648,13 @@ WR</string>
     </rect>
    </property>
    <property name="toolTip">
-    <string>RTU_RTU_RD</string>
+    <string>RES_RTU1_RD</string>
    </property>
    <property name="whatsThis">
     <string>ATCMled widget</string>
    </property>
    <property name="variable">
-    <string>RTU_RTU_RD</string>
+    <string>RES_RTU1_RD</string>
    </property>
    <property name="refresh">
     <number>500</number>
@@ -663,7 +663,7 @@ WR</string>
     <bool>false</bool>
    </property>
    <property name="visibilityVar">
-    <string>TST_RTU_RD</string>
+    <string>TST_RTU1_RD</string>
    </property>
    <property name="onIcon">
     <iconset>
@@ -756,7 +756,7 @@ WR</string>
     <bool>false</bool>
    </property>
    <property name="visibilityVar">
-    <string>TST_RTU_WR</string>
+    <string>TST_RTU1_WR</string>
    </property>
    <property name="onIcon">
     <iconset>
@@ -911,13 +911,13 @@ WR</string>
     </rect>
    </property>
    <property name="toolTip">
-    <string>VAL_CAN_WR</string>
+    <string>VAL_CAN1_WR</string>
    </property>
    <property name="whatsThis">
     <string>ATCMled widget</string>
    </property>
    <property name="variable">
-    <string>VAL_CAN_WR</string>
+    <string>VAL_CAN1_WR</string>
    </property>
    <property name="refresh">
     <number>500</number>
@@ -926,7 +926,7 @@ WR</string>
     <bool>false</bool>
    </property>
    <property name="visibilityVar">
-    <string>TST_CAN_WR</string>
+    <string>TST_CAN1_WR</string>
    </property>
    <property name="onIcon">
     <iconset>
@@ -947,13 +947,13 @@ WR</string>
     </rect>
    </property>
    <property name="toolTip">
-    <string>TST_RTU_RD</string>
+    <string>TST_RTU1_RD</string>
    </property>
    <property name="whatsThis">
     <string>ATCMled widget</string>
    </property>
    <property name="variable">
-    <string>TST_RTU_RD</string>
+    <string>TST_RTU1_RD</string>
    </property>
    <property name="refresh">
     <number>500</number>
@@ -983,13 +983,13 @@ WR</string>
     </rect>
    </property>
    <property name="toolTip">
-    <string/>
+    <string>RES_CAN1_RD</string>
    </property>
    <property name="whatsThis">
     <string>ATCMled widget</string>
    </property>
    <property name="variable">
-    <string/>
+    <string>RES_CAN1_RD</string>
    </property>
    <property name="refresh">
     <number>500</number>
@@ -998,7 +998,7 @@ WR</string>
     <bool>false</bool>
    </property>
    <property name="visibilityVar">
-    <string>TST_CAN_RD</string>
+    <string>TST_CAN1_RD</string>
    </property>
    <property name="onIcon">
     <iconset>
@@ -1101,13 +1101,13 @@ WR</string>
     </rect>
    </property>
    <property name="toolTip">
-    <string>TST_CAN_WR</string>
+    <string>TST_CAN1_WR</string>
    </property>
    <property name="whatsThis">
     <string>ATCMled widget</string>
    </property>
    <property name="variable">
-    <string>TST_CAN_WR</string>
+    <string>TST_CAN1_WR</string>
    </property>
    <property name="refresh">
     <number>500</number>
@@ -1230,13 +1230,13 @@ WR</string>
     </rect>
    </property>
    <property name="toolTip">
-    <string>VAL_RTU_WR</string>
+    <string>VAL_RTU1_WR</string>
    </property>
    <property name="whatsThis">
     <string>ATCMled widget</string>
    </property>
    <property name="variable">
-    <string>VAL_RTU_WR</string>
+    <string>VAL_RTU1_WR</string>
    </property>
    <property name="refresh">
     <number>500</number>
@@ -1245,7 +1245,7 @@ WR</string>
     <bool>false</bool>
    </property>
    <property name="visibilityVar">
-    <string>TST_RTU_WR</string>
+    <string>TST_RTU1_WR</string>
    </property>
    <property name="onIcon">
     <iconset>
@@ -1302,13 +1302,13 @@ WR</string>
     </rect>
    </property>
    <property name="toolTip">
-    <string>TST_CAN_RD</string>
+    <string>TST_CAN1_RD</string>
    </property>
    <property name="whatsThis">
     <string>ATCMled widget</string>
    </property>
    <property name="variable">
-    <string>TST_CAN_RD</string>
+    <string>TST_CAN1_RD</string>
    </property>
    <property name="refresh">
     <number>500</number>
@@ -1338,13 +1338,13 @@ WR</string>
     </rect>
    </property>
    <property name="toolTip">
-    <string/>
+    <string>CAN_DigOut_1</string>
    </property>
    <property name="whatsThis">
     <string>ATCMled widget</string>
    </property>
    <property name="variable">
-    <string/>
+    <string>CAN_DigOut_1</string>
    </property>
    <property name="refresh">
     <number>500</number>
@@ -1353,7 +1353,7 @@ WR</string>
     <bool>false</bool>
    </property>
    <property name="visibilityVar">
-    <string>TST_CAN_WR</string>
+    <string>TST_CAN1_WR</string>
    </property>
    <property name="onIcon">
     <iconset>
@@ -1564,6 +1564,78 @@ RD</string>
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
+  <widget class="ATCMled" name="atcmLed_RES_CAN_RD_2">
+   <property name="geometry">
+    <rect>
+     <x>670</x>
+     <y>320</y>
+     <width>30</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>RES_CAN1_WR</string>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMled widget</string>
+   </property>
+   <property name="variable">
+    <string>RES_CAN1_WR</string>
+   </property>
+   <property name="refresh">
+    <number>500</number>
+   </property>
+   <property name="viewStatus">
+    <bool>false</bool>
+   </property>
+   <property name="visibilityVar">
+    <string>TST_CAN1_WR</string>
+   </property>
+   <property name="onIcon">
+    <iconset>
+     <normaloff>:/on.png</normaloff>:/on.png</iconset>
+   </property>
+   <property name="offIcon">
+    <iconset>
+     <normaloff>:/off.png</normaloff>:/off.png</iconset>
+   </property>
+  </widget>
+  <widget class="ATCMled" name="atcmLed_VAL_CAN_WR_2">
+   <property name="geometry">
+    <rect>
+     <x>750</x>
+     <y>230</y>
+     <width>30</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>VAL_CAN1_RD</string>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMled widget</string>
+   </property>
+   <property name="variable">
+    <string>VAL_CAN1_RD</string>
+   </property>
+   <property name="refresh">
+    <number>500</number>
+   </property>
+   <property name="viewStatus">
+    <bool>false</bool>
+   </property>
+   <property name="visibilityVar">
+    <string>TST_CAN1_RD</string>
+   </property>
+   <property name="onIcon">
+    <iconset>
+     <normaloff>:/on.png</normaloff>:/on.png</iconset>
+   </property>
+   <property name="offIcon">
+    <iconset>
+     <normaloff>:/off.png</normaloff>:/off.png</iconset>
+   </property>
+  </widget>
   <zorder>label_TST_DigIn_</zorder>
   <zorder>label_RES_DigIn_</zorder>
   <zorder>label_Qt_Project_2</zorder>
@@ -1610,6 +1682,8 @@ RD</string>
   <zorder>atcmAnimation_TEST_STATUS</zorder>
   <zorder>atcmComboBox</zorder>
   <zorder>label_Start_3</zorder>
+  <zorder>atcmLed_RES_CAN_RD_2</zorder>
+  <zorder>atcmLed_VAL_CAN_WR_2</zorder>
  </widget>
  <customwidgets>
   <customwidget>

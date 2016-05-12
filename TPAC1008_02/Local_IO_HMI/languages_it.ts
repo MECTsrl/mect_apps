@@ -1742,7 +1742,8 @@ WR </source>
     <message>
         <location filename="page400.ui" line="947"/>
         <location filename="page400.ui" line="953"/>
-        <source>TST_CAN_RD</source>
+        <source>TST_CAN1_RD</source>
+        <oldsource>TST_CAN_RD</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1771,7 +1772,8 @@ WR </source>
     <message>
         <location filename="page400.ui" line="1111"/>
         <location filename="page400.ui" line="1117"/>
-        <source>TST_CAN_WR</source>
+        <source>TST_CAN1_WR</source>
+        <oldsource>TST_CAN_WR</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1783,7 +1785,8 @@ WR </source>
     <message>
         <location filename="page400.ui" line="1183"/>
         <location filename="page400.ui" line="1189"/>
-        <source>TST_RTU_WR</source>
+        <source>TST_RTU1_WR</source>
+        <oldsource>TST_RTU_WR</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1890,7 +1893,8 @@ WR </source>
     <message>
         <location filename="page400.ui" line="1790"/>
         <location filename="page400.ui" line="1796"/>
-        <source>TST_RTU_RD</source>
+        <source>TST_RTU1_RD</source>
+        <oldsource>TST_RTU_RD</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3386,6 +3390,12 @@ WR</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="page403.ui" line="543"/>
+        <location filename="page403.ui" line="549"/>
+        <source>CAN_DigIn_1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="page403.ui" line="546"/>
         <location filename="page403.ui" line="582"/>
         <location filename="page403.ui" line="618"/>
@@ -3400,6 +3410,8 @@ WR</source>
         <location filename="page403.ui" line="1272"/>
         <location filename="page403.ui" line="1308"/>
         <location filename="page403.ui" line="1344"/>
+        <location filename="page403.ui" line="1580"/>
+        <location filename="page403.ui" line="1616"/>
         <source>ATCMled widget</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3408,14 +3420,14 @@ WR</source>
         <location filename="page403.ui" line="1001"/>
         <location filename="page403.ui" line="1305"/>
         <location filename="page403.ui" line="1311"/>
-        <source>TST_CAN_RD</source>
+        <location filename="page403.ui" line="1628"/>
+        <source>TST_CAN1_RD</source>
+        <oldsource>TST_CAN_RD</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="page403.ui" line="579"/>
         <location filename="page403.ui" line="585"/>
-        <location filename="page403.ui" line="651"/>
-        <location filename="page403.ui" line="657"/>
         <source>RTU_RTU_RD</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3424,7 +3436,8 @@ WR</source>
         <location filename="page403.ui" line="666"/>
         <location filename="page403.ui" line="950"/>
         <location filename="page403.ui" line="956"/>
-        <source>TST_RTU_RD</source>
+        <source>TST_RTU1_RD</source>
+        <oldsource>TST_RTU_RD</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3432,7 +3445,14 @@ WR</source>
         <location filename="page403.ui" line="621"/>
         <location filename="page403.ui" line="759"/>
         <location filename="page403.ui" line="1248"/>
-        <source>TST_RTU_WR</source>
+        <source>TST_RTU1_WR</source>
+        <oldsource>TST_RTU_WR</oldsource>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page403.ui" line="651"/>
+        <location filename="page403.ui" line="657"/>
+        <source>RES_RTU1_RD</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3489,7 +3509,8 @@ WR</source>
     <message>
         <location filename="page403.ui" line="914"/>
         <location filename="page403.ui" line="920"/>
-        <source>VAL_CAN_WR</source>
+        <source>VAL_CAN1_WR</source>
+        <oldsource>VAL_CAN_WR</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3497,7 +3518,15 @@ WR</source>
         <location filename="page403.ui" line="1104"/>
         <location filename="page403.ui" line="1110"/>
         <location filename="page403.ui" line="1356"/>
-        <source>TST_CAN_WR</source>
+        <location filename="page403.ui" line="1592"/>
+        <source>TST_CAN1_WR</source>
+        <oldsource>TST_CAN_WR</oldsource>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page403.ui" line="986"/>
+        <location filename="page403.ui" line="992"/>
+        <source>RES_CAN1_RD</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3520,7 +3549,14 @@ WR</source>
     <message>
         <location filename="page403.ui" line="1233"/>
         <location filename="page403.ui" line="1239"/>
-        <source>VAL_RTU_WR</source>
+        <source>VAL_RTU1_WR</source>
+        <oldsource>VAL_RTU_WR</oldsource>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page403.ui" line="1341"/>
+        <location filename="page403.ui" line="1347"/>
+        <source>CAN_DigOut_1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3552,6 +3588,18 @@ RD</source>
     <message>
         <location filename="page403.ui" line="1561"/>
         <source>Modbus/TCP</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page403.ui" line="1577"/>
+        <location filename="page403.ui" line="1583"/>
+        <source>RES_CAN1_WR</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page403.ui" line="1613"/>
+        <location filename="page403.ui" line="1619"/>
+        <source>VAL_CAN1_RD</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

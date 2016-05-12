@@ -944,13 +944,13 @@ background-color: rgb(150, 140, 255);
     </rect>
    </property>
    <property name="toolTip">
-    <string>TST_CAN_RD</string>
+    <string>TST_CAN1_RD</string>
    </property>
    <property name="whatsThis">
     <string>ATCMled widget</string>
    </property>
    <property name="variable">
-    <string>TST_CAN_RD</string>
+    <string>TST_CAN1_RD</string>
    </property>
    <property name="refresh">
     <number>500</number>
@@ -1108,13 +1108,13 @@ background-color: rgb(150, 140, 255);
     </rect>
    </property>
    <property name="toolTip">
-    <string>TST_CAN_WR</string>
+    <string>TST_CAN1_WR</string>
    </property>
    <property name="whatsThis">
     <string>ATCMled widget</string>
    </property>
    <property name="variable">
-    <string>TST_CAN_WR</string>
+    <string>TST_CAN1_WR</string>
    </property>
    <property name="refresh">
     <number>500</number>
@@ -1180,13 +1180,13 @@ background-color: rgb(150, 140, 255);
     </rect>
    </property>
    <property name="toolTip">
-    <string>TST_RTU_WR</string>
+    <string>TST_RTU1_WR</string>
    </property>
    <property name="whatsThis">
     <string>ATCMled widget</string>
    </property>
    <property name="variable">
-    <string>TST_RTU_WR</string>
+    <string>TST_RTU1_WR</string>
    </property>
    <property name="refresh">
     <number>500</number>
@@ -1787,13 +1787,13 @@ background-color: rgb(150, 140, 255);
     </rect>
    </property>
    <property name="toolTip">
-    <string>TST_RTU_RD</string>
+    <string>TST_RTU1_RD</string>
    </property>
    <property name="whatsThis">
     <string>ATCMled widget</string>
    </property>
    <property name="variable">
-    <string>TST_RTU_RD</string>
+    <string>TST_RTU1_RD</string>
    </property>
    <property name="refresh">
     <number>500</number>

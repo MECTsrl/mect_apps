@@ -17,7 +17,21 @@ u_int16_t RTU_HEARTBEAT = 0;
 int RTU_RTU_WR = 0;
 int RTU_RTU_RD = 0;
 int CAN_DigIn_1 = 0;
+int CAN_DigIn_2 = 0;
+int CAN_DigIn_3 = 0;
+int CAN_DigIn_4 = 0;
+int CAN_DigIn_5 = 0;
+int CAN_DigIn_6 = 0;
+int CAN_DigIn_7 = 0;
+int CAN_DigIn_8 = 0;
 int CAN_DigOut_1 = 0;
+int CAN_DigOut_2 = 0;
+int CAN_DigOut_3 = 0;
+int CAN_DigOut_4 = 0;
+int CAN_DigOut_5 = 0;
+int CAN_DigOut_6 = 0;
+int CAN_DigOut_7 = 0;
+int CAN_DigOut_8 = 0;
 int CH1_NETRUN = 0;
 int CH1_NETGOOD = 0;
 u_int32_t CH1_NETERR = 0;
@@ -211,28 +225,28 @@ u_int16_t RES_FWrevision = 0;
 u_int16_t RES_HWconfig = 0;
 int TST_RTUS_WR = 0;
 int TST_RTUS_RD = 0;
-int TST_RTU_WR = 0;
-int TST_RTU_RD = 0;
+int TST_RTU1_WR = 0;
+int TST_RTU1_RD = 0;
 int TST_RTU3_WR = 0;
 int TST_RTU3_RD = 0;
-int TST_CAN_WR = 0;
-int TST_CAN_RD = 0;
+int TST_CAN1_WR = 0;
+int TST_CAN1_RD = 0;
 int VAL_RTUS_WR = 0;
 int VAL_RTUS_RD = 0;
-int VAL_RTU_WR = 0;
-int VAL_RTU_RD = 0;
+int VAL_RTU1_WR = 0;
+int VAL_RTU1_RD = 0;
 int VAL_RTU3_WR = 0;
 int VAL_RTU3_RD = 0;
-int VAL_CAN_WR = 0;
-int VAL_CAN_RD = 0;
+int VAL_CAN1_WR = 0;
+int VAL_CAN1_RD = 0;
 int RES_RTUS_WR = 0;
 int RES_RTUS_RD = 0;
-int RES_RTU_WR = 0;
-int RES_RTU_RD = 0;
+int RES_RTU1_WR = 0;
+int RES_RTU1_RD = 0;
 int RES_RTU3_WR = 0;
 int RES_RTU3_RD = 0;
-int RES_CAN_WR = 0;
-int RES_CAN_RD = 0;
+int RES_CAN1_WR = 0;
+int RES_CAN1_RD = 0;
 u_int16_t TEST_STATUS = 0;
 u_int32_t RTU0_TYPE_PORT = 0;
 u_int32_t RTU0_BAUDRATE = 0;
@@ -590,6 +604,132 @@ return getStatus(ID_CAN_DigIn_1);
 }
 
 
+int doWrite_CAN_DigIn_2(int value)
+{
+return doWrite(ID_CAN_DigIn_2,  &value);
+}
+
+
+int addWrite_CAN_DigIn_2(int value)
+{
+return addWrite(ID_CAN_DigIn_2, &value);
+}
+
+
+int getStatus_CAN_DigIn_2()
+{
+return getStatus(ID_CAN_DigIn_2);
+}
+
+
+int doWrite_CAN_DigIn_3(int value)
+{
+return doWrite(ID_CAN_DigIn_3,  &value);
+}
+
+
+int addWrite_CAN_DigIn_3(int value)
+{
+return addWrite(ID_CAN_DigIn_3, &value);
+}
+
+
+int getStatus_CAN_DigIn_3()
+{
+return getStatus(ID_CAN_DigIn_3);
+}
+
+
+int doWrite_CAN_DigIn_4(int value)
+{
+return doWrite(ID_CAN_DigIn_4,  &value);
+}
+
+
+int addWrite_CAN_DigIn_4(int value)
+{
+return addWrite(ID_CAN_DigIn_4, &value);
+}
+
+
+int getStatus_CAN_DigIn_4()
+{
+return getStatus(ID_CAN_DigIn_4);
+}
+
+
+int doWrite_CAN_DigIn_5(int value)
+{
+return doWrite(ID_CAN_DigIn_5,  &value);
+}
+
+
+int addWrite_CAN_DigIn_5(int value)
+{
+return addWrite(ID_CAN_DigIn_5, &value);
+}
+
+
+int getStatus_CAN_DigIn_5()
+{
+return getStatus(ID_CAN_DigIn_5);
+}
+
+
+int doWrite_CAN_DigIn_6(int value)
+{
+return doWrite(ID_CAN_DigIn_6,  &value);
+}
+
+
+int addWrite_CAN_DigIn_6(int value)
+{
+return addWrite(ID_CAN_DigIn_6, &value);
+}
+
+
+int getStatus_CAN_DigIn_6()
+{
+return getStatus(ID_CAN_DigIn_6);
+}
+
+
+int doWrite_CAN_DigIn_7(int value)
+{
+return doWrite(ID_CAN_DigIn_7,  &value);
+}
+
+
+int addWrite_CAN_DigIn_7(int value)
+{
+return addWrite(ID_CAN_DigIn_7, &value);
+}
+
+
+int getStatus_CAN_DigIn_7()
+{
+return getStatus(ID_CAN_DigIn_7);
+}
+
+
+int doWrite_CAN_DigIn_8(int value)
+{
+return doWrite(ID_CAN_DigIn_8,  &value);
+}
+
+
+int addWrite_CAN_DigIn_8(int value)
+{
+return addWrite(ID_CAN_DigIn_8, &value);
+}
+
+
+int getStatus_CAN_DigIn_8()
+{
+return getStatus(ID_CAN_DigIn_8);
+}
+
+
 int doWrite_CAN_DigOut_1(int value)
 {
 return doWrite(ID_CAN_DigOut_1,  &value);
@@ -605,6 +745,132 @@ return addWrite(ID_CAN_DigOut_1, &value);
 int getStatus_CAN_DigOut_1()
 {
 return getStatus(ID_CAN_DigOut_1);
+}
+
+
+int doWrite_CAN_DigOut_2(int value)
+{
+return doWrite(ID_CAN_DigOut_2,  &value);
+}
+
+
+int addWrite_CAN_DigOut_2(int value)
+{
+return addWrite(ID_CAN_DigOut_2, &value);
+}
+
+
+int getStatus_CAN_DigOut_2()
+{
+return getStatus(ID_CAN_DigOut_2);
+}
+
+
+int doWrite_CAN_DigOut_3(int value)
+{
+return doWrite(ID_CAN_DigOut_3,  &value);
+}
+
+
+int addWrite_CAN_DigOut_3(int value)
+{
+return addWrite(ID_CAN_DigOut_3, &value);
+}
+
+
+int getStatus_CAN_DigOut_3()
+{
+return getStatus(ID_CAN_DigOut_3);
+}
+
+
+int doWrite_CAN_DigOut_4(int value)
+{
+return doWrite(ID_CAN_DigOut_4,  &value);
+}
+
+
+int addWrite_CAN_DigOut_4(int value)
+{
+return addWrite(ID_CAN_DigOut_4, &value);
+}
+
+
+int getStatus_CAN_DigOut_4()
+{
+return getStatus(ID_CAN_DigOut_4);
+}
+
+
+int doWrite_CAN_DigOut_5(int value)
+{
+return doWrite(ID_CAN_DigOut_5,  &value);
+}
+
+
+int addWrite_CAN_DigOut_5(int value)
+{
+return addWrite(ID_CAN_DigOut_5, &value);
+}
+
+
+int getStatus_CAN_DigOut_5()
+{
+return getStatus(ID_CAN_DigOut_5);
+}
+
+
+int doWrite_CAN_DigOut_6(int value)
+{
+return doWrite(ID_CAN_DigOut_6,  &value);
+}
+
+
+int addWrite_CAN_DigOut_6(int value)
+{
+return addWrite(ID_CAN_DigOut_6, &value);
+}
+
+
+int getStatus_CAN_DigOut_6()
+{
+return getStatus(ID_CAN_DigOut_6);
+}
+
+
+int doWrite_CAN_DigOut_7(int value)
+{
+return doWrite(ID_CAN_DigOut_7,  &value);
+}
+
+
+int addWrite_CAN_DigOut_7(int value)
+{
+return addWrite(ID_CAN_DigOut_7, &value);
+}
+
+
+int getStatus_CAN_DigOut_7()
+{
+return getStatus(ID_CAN_DigOut_7);
+}
+
+
+int doWrite_CAN_DigOut_8(int value)
+{
+return doWrite(ID_CAN_DigOut_8,  &value);
+}
+
+
+int addWrite_CAN_DigOut_8(int value)
+{
+return addWrite(ID_CAN_DigOut_8, &value);
+}
+
+
+int getStatus_CAN_DigOut_8()
+{
+return getStatus(ID_CAN_DigOut_8);
 }
 
 
@@ -4082,39 +4348,39 @@ return getStatus(ID_TST_RTUS_RD);
 }
 
 
-int doWrite_TST_RTU_WR(int value)
+int doWrite_TST_RTU1_WR(int value)
 {
-return doWrite(ID_TST_RTU_WR,  &value);
+return doWrite(ID_TST_RTU1_WR,  &value);
 }
 
 
-int addWrite_TST_RTU_WR(int value)
+int addWrite_TST_RTU1_WR(int value)
 {
-return addWrite(ID_TST_RTU_WR, &value);
+return addWrite(ID_TST_RTU1_WR, &value);
 }
 
 
-int getStatus_TST_RTU_WR()
+int getStatus_TST_RTU1_WR()
 {
-return getStatus(ID_TST_RTU_WR);
+return getStatus(ID_TST_RTU1_WR);
 }
 
 
-int doWrite_TST_RTU_RD(int value)
+int doWrite_TST_RTU1_RD(int value)
 {
-return doWrite(ID_TST_RTU_RD,  &value);
+return doWrite(ID_TST_RTU1_RD,  &value);
 }
 
 
-int addWrite_TST_RTU_RD(int value)
+int addWrite_TST_RTU1_RD(int value)
 {
-return addWrite(ID_TST_RTU_RD, &value);
+return addWrite(ID_TST_RTU1_RD, &value);
 }
 
 
-int getStatus_TST_RTU_RD()
+int getStatus_TST_RTU1_RD()
 {
-return getStatus(ID_TST_RTU_RD);
+return getStatus(ID_TST_RTU1_RD);
 }
 
 
@@ -4154,39 +4420,39 @@ return getStatus(ID_TST_RTU3_RD);
 }
 
 
-int doWrite_TST_CAN_WR(int value)
+int doWrite_TST_CAN1_WR(int value)
 {
-return doWrite(ID_TST_CAN_WR,  &value);
+return doWrite(ID_TST_CAN1_WR,  &value);
 }
 
 
-int addWrite_TST_CAN_WR(int value)
+int addWrite_TST_CAN1_WR(int value)
 {
-return addWrite(ID_TST_CAN_WR, &value);
+return addWrite(ID_TST_CAN1_WR, &value);
 }
 
 
-int getStatus_TST_CAN_WR()
+int getStatus_TST_CAN1_WR()
 {
-return getStatus(ID_TST_CAN_WR);
+return getStatus(ID_TST_CAN1_WR);
 }
 
 
-int doWrite_TST_CAN_RD(int value)
+int doWrite_TST_CAN1_RD(int value)
 {
-return doWrite(ID_TST_CAN_RD,  &value);
+return doWrite(ID_TST_CAN1_RD,  &value);
 }
 
 
-int addWrite_TST_CAN_RD(int value)
+int addWrite_TST_CAN1_RD(int value)
 {
-return addWrite(ID_TST_CAN_RD, &value);
+return addWrite(ID_TST_CAN1_RD, &value);
 }
 
 
-int getStatus_TST_CAN_RD()
+int getStatus_TST_CAN1_RD()
 {
-return getStatus(ID_TST_CAN_RD);
+return getStatus(ID_TST_CAN1_RD);
 }
 
 
@@ -4226,39 +4492,39 @@ return getStatus(ID_VAL_RTUS_RD);
 }
 
 
-int doWrite_VAL_RTU_WR(int value)
+int doWrite_VAL_RTU1_WR(int value)
 {
-return doWrite(ID_VAL_RTU_WR,  &value);
+return doWrite(ID_VAL_RTU1_WR,  &value);
 }
 
 
-int addWrite_VAL_RTU_WR(int value)
+int addWrite_VAL_RTU1_WR(int value)
 {
-return addWrite(ID_VAL_RTU_WR, &value);
+return addWrite(ID_VAL_RTU1_WR, &value);
 }
 
 
-int getStatus_VAL_RTU_WR()
+int getStatus_VAL_RTU1_WR()
 {
-return getStatus(ID_VAL_RTU_WR);
+return getStatus(ID_VAL_RTU1_WR);
 }
 
 
-int doWrite_VAL_RTU_RD(int value)
+int doWrite_VAL_RTU1_RD(int value)
 {
-return doWrite(ID_VAL_RTU_RD,  &value);
+return doWrite(ID_VAL_RTU1_RD,  &value);
 }
 
 
-int addWrite_VAL_RTU_RD(int value)
+int addWrite_VAL_RTU1_RD(int value)
 {
-return addWrite(ID_VAL_RTU_RD, &value);
+return addWrite(ID_VAL_RTU1_RD, &value);
 }
 
 
-int getStatus_VAL_RTU_RD()
+int getStatus_VAL_RTU1_RD()
 {
-return getStatus(ID_VAL_RTU_RD);
+return getStatus(ID_VAL_RTU1_RD);
 }
 
 
@@ -4298,39 +4564,39 @@ return getStatus(ID_VAL_RTU3_RD);
 }
 
 
-int doWrite_VAL_CAN_WR(int value)
+int doWrite_VAL_CAN1_WR(int value)
 {
-return doWrite(ID_VAL_CAN_WR,  &value);
+return doWrite(ID_VAL_CAN1_WR,  &value);
 }
 
 
-int addWrite_VAL_CAN_WR(int value)
+int addWrite_VAL_CAN1_WR(int value)
 {
-return addWrite(ID_VAL_CAN_WR, &value);
+return addWrite(ID_VAL_CAN1_WR, &value);
 }
 
 
-int getStatus_VAL_CAN_WR()
+int getStatus_VAL_CAN1_WR()
 {
-return getStatus(ID_VAL_CAN_WR);
+return getStatus(ID_VAL_CAN1_WR);
 }
 
 
-int doWrite_VAL_CAN_RD(int value)
+int doWrite_VAL_CAN1_RD(int value)
 {
-return doWrite(ID_VAL_CAN_RD,  &value);
+return doWrite(ID_VAL_CAN1_RD,  &value);
 }
 
 
-int addWrite_VAL_CAN_RD(int value)
+int addWrite_VAL_CAN1_RD(int value)
 {
-return addWrite(ID_VAL_CAN_RD, &value);
+return addWrite(ID_VAL_CAN1_RD, &value);
 }
 
 
-int getStatus_VAL_CAN_RD()
+int getStatus_VAL_CAN1_RD()
 {
-return getStatus(ID_VAL_CAN_RD);
+return getStatus(ID_VAL_CAN1_RD);
 }
 
 
@@ -4370,39 +4636,39 @@ return getStatus(ID_RES_RTUS_RD);
 }
 
 
-int doWrite_RES_RTU_WR(int value)
+int doWrite_RES_RTU1_WR(int value)
 {
-return doWrite(ID_RES_RTU_WR,  &value);
+return doWrite(ID_RES_RTU1_WR,  &value);
 }
 
 
-int addWrite_RES_RTU_WR(int value)
+int addWrite_RES_RTU1_WR(int value)
 {
-return addWrite(ID_RES_RTU_WR, &value);
+return addWrite(ID_RES_RTU1_WR, &value);
 }
 
 
-int getStatus_RES_RTU_WR()
+int getStatus_RES_RTU1_WR()
 {
-return getStatus(ID_RES_RTU_WR);
+return getStatus(ID_RES_RTU1_WR);
 }
 
 
-int doWrite_RES_RTU_RD(int value)
+int doWrite_RES_RTU1_RD(int value)
 {
-return doWrite(ID_RES_RTU_RD,  &value);
+return doWrite(ID_RES_RTU1_RD,  &value);
 }
 
 
-int addWrite_RES_RTU_RD(int value)
+int addWrite_RES_RTU1_RD(int value)
 {
-return addWrite(ID_RES_RTU_RD, &value);
+return addWrite(ID_RES_RTU1_RD, &value);
 }
 
 
-int getStatus_RES_RTU_RD()
+int getStatus_RES_RTU1_RD()
 {
-return getStatus(ID_RES_RTU_RD);
+return getStatus(ID_RES_RTU1_RD);
 }
 
 
@@ -4442,39 +4708,39 @@ return getStatus(ID_RES_RTU3_RD);
 }
 
 
-int doWrite_RES_CAN_WR(int value)
+int doWrite_RES_CAN1_WR(int value)
 {
-return doWrite(ID_RES_CAN_WR,  &value);
+return doWrite(ID_RES_CAN1_WR,  &value);
 }
 
 
-int addWrite_RES_CAN_WR(int value)
+int addWrite_RES_CAN1_WR(int value)
 {
-return addWrite(ID_RES_CAN_WR, &value);
+return addWrite(ID_RES_CAN1_WR, &value);
 }
 
 
-int getStatus_RES_CAN_WR()
+int getStatus_RES_CAN1_WR()
 {
-return getStatus(ID_RES_CAN_WR);
+return getStatus(ID_RES_CAN1_WR);
 }
 
 
-int doWrite_RES_CAN_RD(int value)
+int doWrite_RES_CAN1_RD(int value)
 {
-return doWrite(ID_RES_CAN_RD,  &value);
+return doWrite(ID_RES_CAN1_RD,  &value);
 }
 
 
-int addWrite_RES_CAN_RD(int value)
+int addWrite_RES_CAN1_RD(int value)
 {
-return addWrite(ID_RES_CAN_RD, &value);
+return addWrite(ID_RES_CAN1_RD, &value);
 }
 
 
-int getStatus_RES_CAN_RD()
+int getStatus_RES_CAN1_RD()
 {
-return getStatus(ID_RES_CAN_RD);
+return getStatus(ID_RES_CAN1_RD);
 }
 
 
@@ -9256,7 +9522,21 @@ retval += readFromDb(ID_RTU_HEARTBEAT, &RTU_HEARTBEAT);
 retval += readFromDb(ID_RTU_RTU_WR, &RTU_RTU_WR);
 retval += readFromDb(ID_RTU_RTU_RD, &RTU_RTU_RD);
 retval += readFromDb(ID_CAN_DigIn_1, &CAN_DigIn_1);
+retval += readFromDb(ID_CAN_DigIn_2, &CAN_DigIn_2);
+retval += readFromDb(ID_CAN_DigIn_3, &CAN_DigIn_3);
+retval += readFromDb(ID_CAN_DigIn_4, &CAN_DigIn_4);
+retval += readFromDb(ID_CAN_DigIn_5, &CAN_DigIn_5);
+retval += readFromDb(ID_CAN_DigIn_6, &CAN_DigIn_6);
+retval += readFromDb(ID_CAN_DigIn_7, &CAN_DigIn_7);
+retval += readFromDb(ID_CAN_DigIn_8, &CAN_DigIn_8);
 retval += readFromDb(ID_CAN_DigOut_1, &CAN_DigOut_1);
+retval += readFromDb(ID_CAN_DigOut_2, &CAN_DigOut_2);
+retval += readFromDb(ID_CAN_DigOut_3, &CAN_DigOut_3);
+retval += readFromDb(ID_CAN_DigOut_4, &CAN_DigOut_4);
+retval += readFromDb(ID_CAN_DigOut_5, &CAN_DigOut_5);
+retval += readFromDb(ID_CAN_DigOut_6, &CAN_DigOut_6);
+retval += readFromDb(ID_CAN_DigOut_7, &CAN_DigOut_7);
+retval += readFromDb(ID_CAN_DigOut_8, &CAN_DigOut_8);
 retval += readFromDb(ID_CH1_NETRUN, &CH1_NETRUN);
 retval += readFromDb(ID_CH1_NETGOOD, &CH1_NETGOOD);
 retval += readFromDb(ID_CH1_NETERR, &CH1_NETERR);
@@ -9450,28 +9730,28 @@ retval += readFromDb(ID_RES_FWrevision, &RES_FWrevision);
 retval += readFromDb(ID_RES_HWconfig, &RES_HWconfig);
 retval += readFromDb(ID_TST_RTUS_WR, &TST_RTUS_WR);
 retval += readFromDb(ID_TST_RTUS_RD, &TST_RTUS_RD);
-retval += readFromDb(ID_TST_RTU_WR, &TST_RTU_WR);
-retval += readFromDb(ID_TST_RTU_RD, &TST_RTU_RD);
+retval += readFromDb(ID_TST_RTU1_WR, &TST_RTU1_WR);
+retval += readFromDb(ID_TST_RTU1_RD, &TST_RTU1_RD);
 retval += readFromDb(ID_TST_RTU3_WR, &TST_RTU3_WR);
 retval += readFromDb(ID_TST_RTU3_RD, &TST_RTU3_RD);
-retval += readFromDb(ID_TST_CAN_WR, &TST_CAN_WR);
-retval += readFromDb(ID_TST_CAN_RD, &TST_CAN_RD);
+retval += readFromDb(ID_TST_CAN1_WR, &TST_CAN1_WR);
+retval += readFromDb(ID_TST_CAN1_RD, &TST_CAN1_RD);
 retval += readFromDb(ID_VAL_RTUS_WR, &VAL_RTUS_WR);
 retval += readFromDb(ID_VAL_RTUS_RD, &VAL_RTUS_RD);
-retval += readFromDb(ID_VAL_RTU_WR, &VAL_RTU_WR);
-retval += readFromDb(ID_VAL_RTU_RD, &VAL_RTU_RD);
+retval += readFromDb(ID_VAL_RTU1_WR, &VAL_RTU1_WR);
+retval += readFromDb(ID_VAL_RTU1_RD, &VAL_RTU1_RD);
 retval += readFromDb(ID_VAL_RTU3_WR, &VAL_RTU3_WR);
 retval += readFromDb(ID_VAL_RTU3_RD, &VAL_RTU3_RD);
-retval += readFromDb(ID_VAL_CAN_WR, &VAL_CAN_WR);
-retval += readFromDb(ID_VAL_CAN_RD, &VAL_CAN_RD);
+retval += readFromDb(ID_VAL_CAN1_WR, &VAL_CAN1_WR);
+retval += readFromDb(ID_VAL_CAN1_RD, &VAL_CAN1_RD);
 retval += readFromDb(ID_RES_RTUS_WR, &RES_RTUS_WR);
 retval += readFromDb(ID_RES_RTUS_RD, &RES_RTUS_RD);
-retval += readFromDb(ID_RES_RTU_WR, &RES_RTU_WR);
-retval += readFromDb(ID_RES_RTU_RD, &RES_RTU_RD);
+retval += readFromDb(ID_RES_RTU1_WR, &RES_RTU1_WR);
+retval += readFromDb(ID_RES_RTU1_RD, &RES_RTU1_RD);
 retval += readFromDb(ID_RES_RTU3_WR, &RES_RTU3_WR);
 retval += readFromDb(ID_RES_RTU3_RD, &RES_RTU3_RD);
-retval += readFromDb(ID_RES_CAN_WR, &RES_CAN_WR);
-retval += readFromDb(ID_RES_CAN_RD, &RES_CAN_RD);
+retval += readFromDb(ID_RES_CAN1_WR, &RES_CAN1_WR);
+retval += readFromDb(ID_RES_CAN1_RD, &RES_CAN1_RD);
 retval += readFromDb(ID_TEST_STATUS, &TEST_STATUS);
 retval += readFromDb(ID_RTU0_TYPE_PORT, &RTU0_TYPE_PORT);
 retval += readFromDb(ID_RTU0_BAUDRATE, &RTU0_BAUDRATE);

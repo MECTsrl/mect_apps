@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 2.7.84, 2016-05-11T08:20:06. -->
+<!-- Written by QtCreator 2.7.84, 2016-05-12T19:38:09. -->
 <qtcreator>
  <data>
   <variable>ProjectExplorer.Project.ActiveTarget</variable>
@@ -397,50 +397,50 @@
        <value type="QString">C:/Qt485/imx28/rootfs</value>
       </valuelist>
       <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedTimes">
-       <value type="QDateTime">2016-05-10T14:17:43</value>
-       <value type="QDateTime">2016-05-10T14:17:44</value>
-       <value type="QDateTime">2016-05-09T16:16:47</value>
-       <value type="QDateTime">2016-05-09T16:16:48</value>
-       <value type="QDateTime">2016-05-09T16:16:48</value>
-       <value type="QDateTime">2016-05-09T16:16:48</value>
-       <value type="QDateTime">2016-05-09T16:16:48</value>
-       <value type="QDateTime">2016-05-10T14:17:43</value>
+       <value type="QDateTime">2016-05-12T19:37:24</value>
+       <value type="QDateTime">2016-05-12T19:37:25</value>
+       <value type="QDateTime">2016-05-12T19:06:12</value>
+       <value type="QDateTime">2016-05-12T19:06:13</value>
+       <value type="QDateTime">2016-05-12T19:06:13</value>
+       <value type="QDateTime">2016-05-12T19:06:13</value>
+       <value type="QDateTime">2016-05-12T19:06:13</value>
+       <value type="QDateTime">2016-05-12T19:37:24</value>
        <value type="QDateTime">2016-03-17T17:05:23</value>
-       <value type="QDateTime">2016-05-09T16:16:47</value>
-       <value type="QDateTime">2016-05-10T14:17:43</value>
+       <value type="QDateTime">2016-05-12T19:06:13</value>
+       <value type="QDateTime">2016-05-12T19:37:24</value>
        <value type="QDateTime">2016-03-17T17:05:23</value>
-       <value type="QDateTime">2016-05-10T14:17:44</value>
-       <value type="QDateTime">2016-05-10T14:17:47</value>
-       <value type="QDateTime">2016-05-10T14:17:44</value>
-       <value type="QDateTime">2016-05-09T16:16:48</value>
-       <value type="QDateTime">2016-05-10T14:17:43</value>
-       <value type="QDateTime">2016-05-09T16:16:47</value>
-       <value type="QDateTime">2016-05-09T16:16:51</value>
-       <value type="QDateTime">2016-05-09T16:16:47</value>
+       <value type="QDateTime">2016-05-12T19:37:25</value>
+       <value type="QDateTime">2016-05-12T19:37:26</value>
+       <value type="QDateTime">2016-05-12T19:37:25</value>
+       <value type="QDateTime">2016-05-12T19:06:13</value>
+       <value type="QDateTime">2016-05-12T19:37:24</value>
+       <value type="QDateTime">2016-05-12T19:06:12</value>
+       <value type="QDateTime">2016-05-12T19:06:15</value>
+       <value type="QDateTime">2016-05-12T19:06:12</value>
        <value type="QDateTime">2016-03-17T17:05:23</value>
-       <value type="QDateTime">2016-05-09T16:16:47</value>
-       <value type="QDateTime">2016-05-10T14:17:43</value>
+       <value type="QDateTime">2016-05-12T19:06:12</value>
+       <value type="QDateTime">2016-05-12T19:37:24</value>
        <value type="QDateTime">2016-02-15T15:27:40</value>
-       <value type="QDateTime">2016-05-10T14:17:43</value>
-       <value type="QDateTime">2016-05-10T14:17:44</value>
-       <value type="QDateTime">2016-05-09T16:16:46</value>
-       <value type="QDateTime">2016-05-10T14:17:44</value>
-       <value type="QDateTime">2016-05-09T16:16:47</value>
-       <value type="QDateTime">2016-05-10T14:17:43</value>
-       <value type="QDateTime">2016-05-09T16:16:47</value>
-       <value type="QDateTime">2016-05-09T16:16:47</value>
-       <value type="QDateTime">2016-05-10T14:17:44</value>
-       <value type="QDateTime">2016-05-09T16:16:47</value>
-       <value type="QDateTime">2016-05-09T16:16:48</value>
-       <value type="QDateTime">2016-05-10T14:17:43</value>
-       <value type="QDateTime">2016-05-10T14:17:43</value>
+       <value type="QDateTime">2016-05-12T19:37:24</value>
+       <value type="QDateTime">2016-05-12T19:37:25</value>
+       <value type="QDateTime">2016-05-12T19:06:12</value>
+       <value type="QDateTime">2016-05-12T19:37:25</value>
+       <value type="QDateTime">2016-05-12T19:06:12</value>
+       <value type="QDateTime">2016-05-12T19:37:24</value>
+       <value type="QDateTime">2016-05-12T19:06:12</value>
+       <value type="QDateTime">2016-05-12T19:06:12</value>
+       <value type="QDateTime">2016-05-12T19:37:25</value>
+       <value type="QDateTime">2016-05-12T19:06:12</value>
+       <value type="QDateTime">2016-05-12T19:06:13</value>
+       <value type="QDateTime">2016-05-12T19:37:24</value>
+       <value type="QDateTime">2016-05-12T19:37:24</value>
        <value type="QDateTime">2016-02-15T11:53:56</value>
        <value type="QDateTime">2016-02-16T15:15:17</value>
-       <value type="QDateTime">2016-05-09T16:16:47</value>
-       <value type="QDateTime">2016-05-09T16:16:48</value>
-       <value type="QDateTime">2016-05-10T14:17:44</value>
-       <value type="QDateTime">2016-05-10T14:17:43</value>
-       <value type="QDateTime">2016-05-10T14:17:44</value>
+       <value type="QDateTime">2016-05-12T19:06:12</value>
+       <value type="QDateTime">2016-05-12T19:06:13</value>
+       <value type="QDateTime">2016-05-12T19:37:25</value>
+       <value type="QDateTime">2016-05-12T19:37:24</value>
+       <value type="QDateTime">2016-05-12T19:37:25</value>
        <value type="QDateTime">2016-02-16T15:15:17</value>
       </valuelist>
       <value type="bool" key="RemoteLinux.GenericDirectUploadStep.Incremental">false</value>

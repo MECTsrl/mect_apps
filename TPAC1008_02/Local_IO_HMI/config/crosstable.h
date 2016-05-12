@@ -46,67 +46,151 @@ int doWrite_CAN_DigIn_1(int value);
 int addWrite_CAN_DigIn_1(int value);
 int getStatus_CAN_DigIn_1();
  
-#define ID_CAN_DigOut_1 206
+#define ID_CAN_DigIn_2 206
+extern int CAN_DigIn_2;
+int doWrite_CAN_DigIn_2(int value);
+int addWrite_CAN_DigIn_2(int value);
+int getStatus_CAN_DigIn_2();
+ 
+#define ID_CAN_DigIn_3 207
+extern int CAN_DigIn_3;
+int doWrite_CAN_DigIn_3(int value);
+int addWrite_CAN_DigIn_3(int value);
+int getStatus_CAN_DigIn_3();
+ 
+#define ID_CAN_DigIn_4 208
+extern int CAN_DigIn_4;
+int doWrite_CAN_DigIn_4(int value);
+int addWrite_CAN_DigIn_4(int value);
+int getStatus_CAN_DigIn_4();
+ 
+#define ID_CAN_DigIn_5 209
+extern int CAN_DigIn_5;
+int doWrite_CAN_DigIn_5(int value);
+int addWrite_CAN_DigIn_5(int value);
+int getStatus_CAN_DigIn_5();
+ 
+#define ID_CAN_DigIn_6 210
+extern int CAN_DigIn_6;
+int doWrite_CAN_DigIn_6(int value);
+int addWrite_CAN_DigIn_6(int value);
+int getStatus_CAN_DigIn_6();
+ 
+#define ID_CAN_DigIn_7 211
+extern int CAN_DigIn_7;
+int doWrite_CAN_DigIn_7(int value);
+int addWrite_CAN_DigIn_7(int value);
+int getStatus_CAN_DigIn_7();
+ 
+#define ID_CAN_DigIn_8 212
+extern int CAN_DigIn_8;
+int doWrite_CAN_DigIn_8(int value);
+int addWrite_CAN_DigIn_8(int value);
+int getStatus_CAN_DigIn_8();
+ 
+#define ID_CAN_DigOut_1 213
 extern int CAN_DigOut_1;
 int doWrite_CAN_DigOut_1(int value);
 int addWrite_CAN_DigOut_1(int value);
 int getStatus_CAN_DigOut_1();
  
-#define ID_CH1_NETRUN 208
+#define ID_CAN_DigOut_2 214
+extern int CAN_DigOut_2;
+int doWrite_CAN_DigOut_2(int value);
+int addWrite_CAN_DigOut_2(int value);
+int getStatus_CAN_DigOut_2();
+ 
+#define ID_CAN_DigOut_3 215
+extern int CAN_DigOut_3;
+int doWrite_CAN_DigOut_3(int value);
+int addWrite_CAN_DigOut_3(int value);
+int getStatus_CAN_DigOut_3();
+ 
+#define ID_CAN_DigOut_4 216
+extern int CAN_DigOut_4;
+int doWrite_CAN_DigOut_4(int value);
+int addWrite_CAN_DigOut_4(int value);
+int getStatus_CAN_DigOut_4();
+ 
+#define ID_CAN_DigOut_5 217
+extern int CAN_DigOut_5;
+int doWrite_CAN_DigOut_5(int value);
+int addWrite_CAN_DigOut_5(int value);
+int getStatus_CAN_DigOut_5();
+ 
+#define ID_CAN_DigOut_6 218
+extern int CAN_DigOut_6;
+int doWrite_CAN_DigOut_6(int value);
+int addWrite_CAN_DigOut_6(int value);
+int getStatus_CAN_DigOut_6();
+ 
+#define ID_CAN_DigOut_7 219
+extern int CAN_DigOut_7;
+int doWrite_CAN_DigOut_7(int value);
+int addWrite_CAN_DigOut_7(int value);
+int getStatus_CAN_DigOut_7();
+ 
+#define ID_CAN_DigOut_8 220
+extern int CAN_DigOut_8;
+int doWrite_CAN_DigOut_8(int value);
+int addWrite_CAN_DigOut_8(int value);
+int getStatus_CAN_DigOut_8();
+ 
+#define ID_CH1_NETRUN 222
 extern int CH1_NETRUN;
 int doWrite_CH1_NETRUN(int value);
 int addWrite_CH1_NETRUN(int value);
 int getStatus_CH1_NETRUN();
  
-#define ID_CH1_NETGOOD 209
+#define ID_CH1_NETGOOD 223
 extern int CH1_NETGOOD;
 int doWrite_CH1_NETGOOD(int value);
 int addWrite_CH1_NETGOOD(int value);
 int getStatus_CH1_NETGOOD();
  
-#define ID_CH1_NETERR 210
+#define ID_CH1_NETERR 224
 extern u_int32_t CH1_NETERR;
 int doWrite_CH1_NETERR(u_int32_t value);
 int addWrite_CH1_NETERR(u_int32_t value);
 int getStatus_CH1_NETERR();
  
-#define ID_CH1_NETRST 211
+#define ID_CH1_NETRST 225
 extern int CH1_NETRST;
 int doWrite_CH1_NETRST(int value);
 int addWrite_CH1_NETRST(int value);
 int getStatus_CH1_NETRST();
  
-#define ID_CH1_NETDIS 212
+#define ID_CH1_NETDIS 226
 extern int CH1_NETDIS;
 int doWrite_CH1_NETDIS(int value);
 int addWrite_CH1_NETDIS(int value);
 int getStatus_CH1_NETDIS();
  
-#define ID_CH1_01_NODERUN 213
+#define ID_CH1_01_NODERUN 227
 extern int CH1_01_NODERUN;
 int doWrite_CH1_01_NODERUN(int value);
 int addWrite_CH1_01_NODERUN(int value);
 int getStatus_CH1_01_NODERUN();
  
-#define ID_CH1_01_NODEGOOD 214
+#define ID_CH1_01_NODEGOOD 228
 extern int CH1_01_NODEGOOD;
 int doWrite_CH1_01_NODEGOOD(int value);
 int addWrite_CH1_01_NODEGOOD(int value);
 int getStatus_CH1_01_NODEGOOD();
  
-#define ID_CH1_01_NODEERR 215
+#define ID_CH1_01_NODEERR 229
 extern u_int32_t CH1_01_NODEERR;
 int doWrite_CH1_01_NODEERR(u_int32_t value);
 int addWrite_CH1_01_NODEERR(u_int32_t value);
 int getStatus_CH1_01_NODEERR();
  
-#define ID_CH1_01_NODERST 216
+#define ID_CH1_01_NODERST 230
 extern int CH1_01_NODERST;
 int doWrite_CH1_01_NODERST(int value);
 int addWrite_CH1_01_NODERST(int value);
 int getStatus_CH1_01_NODERST();
  
-#define ID_CH1_01_NODEDIS 217
+#define ID_CH1_01_NODEDIS 231
 extern int CH1_01_NODEDIS;
 int doWrite_CH1_01_NODEDIS(int value);
 int addWrite_CH1_01_NODEDIS(int value);
@@ -1210,17 +1294,17 @@ int doWrite_TST_RTUS_RD(int value);
 int addWrite_TST_RTUS_RD(int value);
 int getStatus_TST_RTUS_RD();
  
-#define ID_TST_RTU_WR 4183
-extern int TST_RTU_WR;
-int doWrite_TST_RTU_WR(int value);
-int addWrite_TST_RTU_WR(int value);
-int getStatus_TST_RTU_WR();
+#define ID_TST_RTU1_WR 4183
+extern int TST_RTU1_WR;
+int doWrite_TST_RTU1_WR(int value);
+int addWrite_TST_RTU1_WR(int value);
+int getStatus_TST_RTU1_WR();
  
-#define ID_TST_RTU_RD 4184
-extern int TST_RTU_RD;
-int doWrite_TST_RTU_RD(int value);
-int addWrite_TST_RTU_RD(int value);
-int getStatus_TST_RTU_RD();
+#define ID_TST_RTU1_RD 4184
+extern int TST_RTU1_RD;
+int doWrite_TST_RTU1_RD(int value);
+int addWrite_TST_RTU1_RD(int value);
+int getStatus_TST_RTU1_RD();
  
 #define ID_TST_RTU3_WR 4185
 extern int TST_RTU3_WR;
@@ -1234,17 +1318,17 @@ int doWrite_TST_RTU3_RD(int value);
 int addWrite_TST_RTU3_RD(int value);
 int getStatus_TST_RTU3_RD();
  
-#define ID_TST_CAN_WR 4187
-extern int TST_CAN_WR;
-int doWrite_TST_CAN_WR(int value);
-int addWrite_TST_CAN_WR(int value);
-int getStatus_TST_CAN_WR();
+#define ID_TST_CAN1_WR 4187
+extern int TST_CAN1_WR;
+int doWrite_TST_CAN1_WR(int value);
+int addWrite_TST_CAN1_WR(int value);
+int getStatus_TST_CAN1_WR();
  
-#define ID_TST_CAN_RD 4188
-extern int TST_CAN_RD;
-int doWrite_TST_CAN_RD(int value);
-int addWrite_TST_CAN_RD(int value);
-int getStatus_TST_CAN_RD();
+#define ID_TST_CAN1_RD 4188
+extern int TST_CAN1_RD;
+int doWrite_TST_CAN1_RD(int value);
+int addWrite_TST_CAN1_RD(int value);
+int getStatus_TST_CAN1_RD();
  
 #define ID_VAL_RTUS_WR 4189
 extern int VAL_RTUS_WR;
@@ -1258,17 +1342,17 @@ int doWrite_VAL_RTUS_RD(int value);
 int addWrite_VAL_RTUS_RD(int value);
 int getStatus_VAL_RTUS_RD();
  
-#define ID_VAL_RTU_WR 4191
-extern int VAL_RTU_WR;
-int doWrite_VAL_RTU_WR(int value);
-int addWrite_VAL_RTU_WR(int value);
-int getStatus_VAL_RTU_WR();
+#define ID_VAL_RTU1_WR 4191
+extern int VAL_RTU1_WR;
+int doWrite_VAL_RTU1_WR(int value);
+int addWrite_VAL_RTU1_WR(int value);
+int getStatus_VAL_RTU1_WR();
  
-#define ID_VAL_RTU_RD 4192
-extern int VAL_RTU_RD;
-int doWrite_VAL_RTU_RD(int value);
-int addWrite_VAL_RTU_RD(int value);
-int getStatus_VAL_RTU_RD();
+#define ID_VAL_RTU1_RD 4192
+extern int VAL_RTU1_RD;
+int doWrite_VAL_RTU1_RD(int value);
+int addWrite_VAL_RTU1_RD(int value);
+int getStatus_VAL_RTU1_RD();
  
 #define ID_VAL_RTU3_WR 4193
 extern int VAL_RTU3_WR;
@@ -1282,17 +1366,17 @@ int doWrite_VAL_RTU3_RD(int value);
 int addWrite_VAL_RTU3_RD(int value);
 int getStatus_VAL_RTU3_RD();
  
-#define ID_VAL_CAN_WR 4195
-extern int VAL_CAN_WR;
-int doWrite_VAL_CAN_WR(int value);
-int addWrite_VAL_CAN_WR(int value);
-int getStatus_VAL_CAN_WR();
+#define ID_VAL_CAN1_WR 4195
+extern int VAL_CAN1_WR;
+int doWrite_VAL_CAN1_WR(int value);
+int addWrite_VAL_CAN1_WR(int value);
+int getStatus_VAL_CAN1_WR();
  
-#define ID_VAL_CAN_RD 4196
-extern int VAL_CAN_RD;
-int doWrite_VAL_CAN_RD(int value);
-int addWrite_VAL_CAN_RD(int value);
-int getStatus_VAL_CAN_RD();
+#define ID_VAL_CAN1_RD 4196
+extern int VAL_CAN1_RD;
+int doWrite_VAL_CAN1_RD(int value);
+int addWrite_VAL_CAN1_RD(int value);
+int getStatus_VAL_CAN1_RD();
  
 #define ID_RES_RTUS_WR 4197
 extern int RES_RTUS_WR;
@@ -1306,17 +1390,17 @@ int doWrite_RES_RTUS_RD(int value);
 int addWrite_RES_RTUS_RD(int value);
 int getStatus_RES_RTUS_RD();
  
-#define ID_RES_RTU_WR 4199
-extern int RES_RTU_WR;
-int doWrite_RES_RTU_WR(int value);
-int addWrite_RES_RTU_WR(int value);
-int getStatus_RES_RTU_WR();
+#define ID_RES_RTU1_WR 4199
+extern int RES_RTU1_WR;
+int doWrite_RES_RTU1_WR(int value);
+int addWrite_RES_RTU1_WR(int value);
+int getStatus_RES_RTU1_WR();
  
-#define ID_RES_RTU_RD 4200
-extern int RES_RTU_RD;
-int doWrite_RES_RTU_RD(int value);
-int addWrite_RES_RTU_RD(int value);
-int getStatus_RES_RTU_RD();
+#define ID_RES_RTU1_RD 4200
+extern int RES_RTU1_RD;
+int doWrite_RES_RTU1_RD(int value);
+int addWrite_RES_RTU1_RD(int value);
+int getStatus_RES_RTU1_RD();
  
 #define ID_RES_RTU3_WR 4201
 extern int RES_RTU3_WR;
@@ -1330,17 +1414,17 @@ int doWrite_RES_RTU3_RD(int value);
 int addWrite_RES_RTU3_RD(int value);
 int getStatus_RES_RTU3_RD();
  
-#define ID_RES_CAN_WR 4203
-extern int RES_CAN_WR;
-int doWrite_RES_CAN_WR(int value);
-int addWrite_RES_CAN_WR(int value);
-int getStatus_RES_CAN_WR();
+#define ID_RES_CAN1_WR 4203
+extern int RES_CAN1_WR;
+int doWrite_RES_CAN1_WR(int value);
+int addWrite_RES_CAN1_WR(int value);
+int getStatus_RES_CAN1_WR();
  
-#define ID_RES_CAN_RD 4204
-extern int RES_CAN_RD;
-int doWrite_RES_CAN_RD(int value);
-int addWrite_RES_CAN_RD(int value);
-int getStatus_RES_CAN_RD();
+#define ID_RES_CAN1_RD 4204
+extern int RES_CAN1_RD;
+int doWrite_RES_CAN1_RD(int value);
+int addWrite_RES_CAN1_RD(int value);
+int getStatus_RES_CAN1_RD();
  
 #define ID_TEST_STATUS 4205
 extern u_int16_t TEST_STATUS;
