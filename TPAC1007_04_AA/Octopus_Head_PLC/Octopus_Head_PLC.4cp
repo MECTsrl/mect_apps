@@ -37,6 +37,8 @@ file=ReadRES.st
 file=CheckOK.st
 file=ClearPLC.st
 file=AllTestedAreOK.st
+file=CheckAnIn.st
+file=CheckAnOut.st
 [Compiler.ATHW119]
 opt=bp2
 opt=ncc:0

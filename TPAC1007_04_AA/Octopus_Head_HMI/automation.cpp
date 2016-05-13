@@ -41,12 +41,18 @@ static char recipe_name[][3] = {"-", "1", "2"};
 
 #define abs(v) (((v) > 0)? (v):-(v))
 #define MAX_STEP 64
-QList<u_int16_t> ctIndexList;
+// TST_...
+QList<u_int16_t> testsIndexes;
+QList<u_int32_t> testsTable[MAX_STEP];
+// VAL_...
+QList<u_int16_t> valuesIndexes;
 QList<u_int32_t> valuesTable[MAX_STEP];
 
-static void loadRecipe(void);
-static void clearTST(void);
-static int writeRecipe(int step);
+static void clearAllTST(void);
+
+static void doReload();
+static int loadRecipe(char *filename, QList<u_int16_t> *indexes, QList<u_int32_t> table[]);
+static int writeRecipe(int step, QList<u_int16_t> *indexes, QList<u_int32_t> table[]);
 
 void setup(void)
 {
@@ -61,7 +67,7 @@ void loop(void)
         /* this state is managed in PLC */
         logStop();
         if (DO_RELOAD) {
-            loadRecipe();
+            doReload();
             doWrite_DO_RELOAD(0);
             sleep(1); // just for viewing the led change
         }
@@ -78,8 +84,7 @@ void loop(void)
             return;
         }
         if (DO_RELOAD) {
-            loadRecipe();
-            sleep(1); // just for viewing the led change
+            doReload();
             doWrite_DO_RELOAD(0);
         }
         if (TEST2_STATUS != TEST_STATUS_REMOTE || TESTx_STATUS != TEST_STATUS_REMOTE) {
@@ -105,8 +110,12 @@ void loop(void)
             }
             logStart();
             doWrite_TEST_STEP(next_step);
-            clearTST();
-            if (writeRecipe(next_step - 1) != 0) {
+            clearAllTST();
+            if (writeRecipe(next_step - 1, &testsIndexes, testsTable) != 0) {
+                doWrite_STATUS(STATUS_ERROR);
+                return;
+            }
+            if (writeRecipe(next_step - 1, &valuesIndexes, valuesTable) != 0) {
                 doWrite_STATUS(STATUS_ERROR);
                 return;
             }
@@ -151,6 +160,25 @@ void loop(void)
     }
 }
 
+static void doReload()
+{
+    char filename[256];
+    int t, v;
+
+    // file: /local/data/recipe/TPAC1007_4AA/2.csv
+    snprintf(filename, 256, "%s/%s/%s.csv", RECIPE_DIR, product_name[PRODUCT_ID], recipe_name[TEST_ID]);
+    t = loadRecipe(filename, &testsIndexes, testsTable);
+
+    // file: /local/data/recipe/Values/2.csv
+    snprintf(filename, 256, "%s/Values/%s.csv", RECIPE_DIR, recipe_name[TEST_ID]);
+    v = loadRecipe(filename, &valuesIndexes, valuesTable);
+
+    if (t == v && t > 0 && v > 0) {
+        doWrite_TEST_STEP_MAX(t);
+    } else {
+        doWrite_TEST_STEP_MAX(0);
+    }
+}
 
 char *strtok_csv(char *string, const char *separators, char **savedptr)
 {
@@ -189,55 +217,50 @@ char *strtok_csv(char *string, const char *separators, char **savedptr)
     return p;
 }
 
-/*
- * tag1; val1; val2 ... valn
- * ...
- * tagm; val1; val2 ... valn
- */
-static void loadRecipe(void)
+static int loadRecipe(char *filename, QList<u_int16_t> *indexes, QList<u_int32_t> table[])
 {
-    char filename[256];
     FILE * fp;
 
     // clear lists
-    ctIndexList.clear();
+    indexes->clear();
     for (int n = 0; n < MAX_STEP; ++n) {
-        valuesTable[n].clear();
+        table[n].clear();
     }
-    if (PRODUCT_ID == 0 || PRODUCT_ID >= PRODUCT_MAX
-      || TEST_ID == 0 || TEST_ID > RECIPE_MAX) {
-        return;
+    if (PRODUCT_ID == 0 || PRODUCT_ID >= PRODUCT_MAX || TEST_ID == 0 || TEST_ID > RECIPE_MAX) {
+        return -1;
     }
-    snprintf(filename, 256, "%s/%s/%s.csv", RECIPE_DIR, product_name[PRODUCT_ID], recipe_name[TEST_ID]);
     fp = fopen(filename, "r");
     if (fp == NULL)
     {
-        LOG_PRINT(info_e, "Cannot open '%s'\n", filename.toAscii().data());
-        return;
+        fprintf(stderr, "Cannot open '%s'\n", filename);
+        return -1;
     }
+    fprintf(stderr, "Reading '%s'\n", filename);
 
     char line[LINE_SIZE] = "";
     char *p, *r;
-    int step = 0;
+    int step_max = 0, step;
     for (int line_nb = 0; fgets(line, LINE_SIZE, fp) != NULL; line_nb++)
     {
+        /* ignore blank lines */
         if (line[0] == '\n' || line[0] == '\r' || line[0] == 0) {
+            // fprintf(stderr, "Empty line %d\n", line_nb);
             continue;
         }
         /* tag */
         p = strtok_csv(line, SEPARATOR, &r);
         if (p == NULL || p[0] == '\0')
         {
-            LOG_PRINT(error_e, "Invalid tag '%s' at line %d\n", line, line_nb);
+            fprintf(stderr, "Invalid tag at line %d\n", line_nb);
             continue;
         }
         int ctIndex;
         if (Tag2CtIndex(p, &ctIndex))
         {
-            LOG_PRINT(error_e, "Invalid variable '%s' at line %d\n", p, line_nb);
+            fprintf(stderr, "Invalid variable '%s' at line %d\n", p, line_nb);
             continue;
         }
-        ctIndexList << (u_int16_t)ctIndex;
+        indexes->append((u_int16_t)ctIndex);
 
         /* values */
         u_int32_t value;
@@ -306,29 +329,28 @@ static void loadRecipe(void)
                 value = 0;
             }
             // assign value
-            (valuesTable[step]) << value;
+            (table[step]) << value;
             step++;
+        }
+        if (step > step_max) {
+            step_max = step;
         }
     }
     fclose(fp);
-    doWrite_TEST_STEP_MAX(step);
+    return step_max;
 }
 
-static int writeRecipe(int step)
+static int writeRecipe(int step, QList<u_int16_t> *indexes, QList<u_int32_t> table[MAX_STEP])
 {
     int errors = 0;
 
-    if (step >= MAX_STEP)
-    {
+    if (step >= MAX_STEP) {
         errors = -1;
-    }
-    else
-    {
+    } else {
         beginWrite();
-        for (int i = 0; i < valuesTable[step].count(); i++)
-        {
-            u_int16_t addr = ctIndexList.at(i);
-            u_int32_t value = valuesTable[step].at(i);
+        for (int i = 0; i < table[step].count(); i++) {
+            u_int16_t addr = indexes->at(i);
+            u_int32_t value = table[step].at(i);
             errors += addWrite(addr, &value);
         }
         endWrite();
@@ -336,7 +358,7 @@ static int writeRecipe(int step)
     return errors;
 }
 
-static void clearTST(void)
+static void clearAllTST(void)
 {
     beginWrite();
 

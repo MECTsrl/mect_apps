@@ -2151,8 +2151,8 @@ NODE 1 [1]</source>
     </message>
     <message>
         <location filename="page300.ui" line="862"/>
-        <source>1;1 = Short;2;2 = Long;0;-;4;4</source>
-        <oldsource>0;-;1;1 = Short;2;2 = Long</oldsource>
+        <source>1;1 = Short;2;2 = Long;0;-</source>
+        <oldsource>1;1 = Short;2;2 = Long;0;-;4;4</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2358,8 +2358,8 @@ ON</source>
     </message>
     <message>
         <location filename="page300.ui" line="568"/>
-        <source>0;-;1;TPAC1007_4AA;2;TPAC1007_3;3;TPLC100;4;TPAC1006;5;TPAC1008;6;TP1043_485;7;TP1043_232;8;TP1043_CAN;9;TPAC1007_LV</source>
-        <oldsource>0;-;1;TPAC1007_4AA;2;TPAC1007_3;3;TPLC100;4;TPAC1006;5;TPAC1008;6;TP1043_485;7;TP1043_232;8;TP1043_CAN</oldsource>
+        <source>1;TPAC1007_4AA;2;TPAC1007_3;3;TPLC100;4;TPAC1006;5;TPAC1008;6;TP1043_485;7;TP1043_232;8;TP1043_CAN;9;TPAC1007_LV;0;-</source>
+        <oldsource>0;-;1;TPAC1007_4AA;2;TPAC1007_3;3;TPLC100;4;TPAC1006;5;TPAC1008;6;TP1043_485;7;TP1043_232;8;TP1043_CAN;9;TPAC1007_LV</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2808,6 +2808,8 @@ ON</source>
     <message>
         <location filename="page400.ui" line="3136"/>
         <location filename="page400.ui" line="3468"/>
+        <location filename="page400.ui" line="3676"/>
+        <location filename="page400.ui" line="3728"/>
         <source>ATCMcombobox widget</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3135,6 +3137,50 @@ ON</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="page400.ui" line="3565"/>
+        <location filename="page400.ui" line="3571"/>
+        <source>RESULTS_OK</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page400.ui" line="3574"/>
+        <source>OK:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page400.ui" line="3618"/>
+        <location filename="page400.ui" line="3624"/>
+        <source>RESULTS_NG</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page400.ui" line="3627"/>
+        <source>NG:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page400.ui" line="3673"/>
+        <location filename="page400.ui" line="3679"/>
+        <source>RESULT</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page400.ui" line="3707"/>
+        <source>1;OK;-1;?;0;NG</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page400.ui" line="3725"/>
+        <location filename="page400.ui" line="3731"/>
+        <source>STATUS</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page400.ui" line="3759"/>
+        <source>1;STARTING;2;READY;3;TESTING;4;DONE;5;RESETTING;6;STOPPING;7;ERROR;0;IDLE</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="page400.ui" line="2966"/>
         <source>page300</source>
         <translation type="unfinished"></translation>
@@ -3273,6 +3319,8 @@ ON</source>
         <location filename="page400.ui" line="2584"/>
         <location filename="page400.ui" line="3019"/>
         <location filename="page400.ui" line="3192"/>
+        <location filename="page400.ui" line="3568"/>
+        <location filename="page400.ui" line="3621"/>
         <source>ATCMlabel widget</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3283,6 +3331,10 @@ ON</source>
         <location filename="page400.ui" line="3034"/>
         <location filename="page400.ui" line="3204"/>
         <location filename="page400.ui" line="3207"/>
+        <location filename="page400.ui" line="3580"/>
+        <location filename="page400.ui" line="3583"/>
+        <location filename="page400.ui" line="3633"/>
+        <location filename="page400.ui" line="3636"/>
         <source>0</source>
         <translation type="unfinished"></translation>
     </message>

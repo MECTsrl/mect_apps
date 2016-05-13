@@ -199,32 +199,39 @@ END_VAR
 	if TST_FWrevision  then
 		;
 	end_if;
-
 	if TST_HWconfig then
 		;
 	end_if;
 
+	(* RTUS Head --> Prey *)
+	if TST_RTUS_WR then
+		;(* RTU_RTUS_WR := VAL_RTUS_WR; *)
+	end_if;
+	if TST_RTUS_RD then
+		VALx_RTUS_WR := VAL_RTUS_RD;
+	end_if;
+
+	(* RTU1 Prey --> Horn *)
 	if TST_RTU1_WR then
 		VALx_RTU1_WR := VAL_RTU1_WR;
 	end_if;
-
 	if TST_RTU1_RD then
 		VAL2_RTUS_WR := VAL_RTU1_RD;
 	end_if;
 
+	(* RTU3 Prey --> TPLC005 *)
 	if TST_RTU3_WR then
 		VALx_RTU3_WR := VAL_RTU3_WR;
 	end_if;
-
-	if TST_CAN1_WR then
-		VALx_CAN1_WR := VAL_CAN1_WR;
-	end_if;
-
-	if TST_RTU1_RD then
+	if TST_RTU3_RD then
 		;
 	end_if;
 
-	if TST_RTU3_RD then
+	(* CAN1 Prey --> MPNC010 *)
+	if TST_CAN1_WR then
+		VALx_CAN1_WR := VAL_CAN1_WR;
+	end_if;
+	if TST_CAN1_RD then
 		;
 	end_if;
 

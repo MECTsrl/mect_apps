@@ -63,28 +63,45 @@ RESOURCES += \
 OTHER_FILES += \
     recipes/TPAC1006/1.csv \
     recipes/TPAC1006/2.csv \
+    recipes/TPAC1007_3/1.csv \
+    recipes/TPAC1007_3/2.csv \
+    recipes/TPAC1007_LV/1.csv \
     recipes/TPAC1007_4AA/1.csv \
     recipes/TPAC1007_4AA/2.csv \
-    recipes/TPAC1007_LV/1.csv \
+    recipes/TPAC1008/1.csv \
+    recipes/TPAC1008/2.csv \
     recipes/TPLC100/1.csv \
     recipes/TPLC100/2.csv \
-    recipes/TPAC1008/2.csv \
-    recipes/TPAC1008/1.csv \
-    recipes/TPAC1007_4AA/3.csv
+    recipes/Values/1.csv \
+    recipes/Values/2.csv
+
 
 recipes_TPAC1006.files = recipes/TPAC1006/1.csv recipes/TPAC1006/2.csv
 recipes_TPAC1006.path = /local/data/recipe/TPAC1006
 
-recipes_TPAC1007_4AA.files = recipes/TPAC1007_4AA/1.csv recipes/TPAC1007_4AA/2.csv recipes/TPAC1007_4AA/3.csv
-recipes_TPAC1007_4AA.path = /local/data/recipe/TPAC1007_4AA
+recipes_TPAC1007_3.files = recipes/TPAC1007_3/1.csv recipes/TPAC1007_3/2.csv
+recipes_TPAC1007_3.path = /local/data/recipe/TPAC1007_3
 
 recipes_TPAC1007_LV.files = recipes/TPAC1007_LV/1.csv
 recipes_TPAC1007_LV.path = /local/data/recipe/TPAC1007_LV
 
-recipes_TPLC100.files = recipes/TPLC100/1.csv recipes/TPLC100/2.csv
-recipes_TPLC100.path = /local/data/recipe/TPLC100
+recipes_TPAC1007_4AA.files = recipes/TPAC1007_4AA/1.csv recipes/TPAC1007_4AA/2.csv
+recipes_TPAC1007_4AA.path = /local/data/recipe/TPAC1007_4AA
 
 recipes_TPAC1008.files = recipes/TPAC1008/1.csv recipes/TPAC1008/2.csv
 recipes_TPAC1008.path = /local/data/recipe/TPAC1008
 
-INSTALLS += recipes_TPAC1006 recipes_TPAC1007_4AA recipes_TPAC1007_LV recipes_TPLC100 recipes_TPAC1008
+recipes_TPLC100.files = recipes/TPLC100/1.csv recipes/TPLC100/2.csv
+recipes_TPLC100.path = /local/data/recipe/TPLC100
+
+recipes_Values.files = recipes/Values/1.csv recipes/Values/2.csv
+recipes_Values.path = /local/data/recipe/Values
+
+INSTALLS += \
+    recipes_TPAC1006 \
+    recipes_TPAC1007_3 \
+    recipes_TPAC1007_LV \
+    recipes_TPAC1007_4AA \
+    recipes_TPAC1008 \
+    recipes_TPLC100 \
+    recipes_Values

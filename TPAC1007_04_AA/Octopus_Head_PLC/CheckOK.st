@@ -5,11 +5,9 @@ FUNCTION CheckOK
 VAR_INPUT
 END_VAR
 VAR 
-	Tolleranza_In : INT := 100; (* 20mV = 2 * 10mV *)
-	Tolleranza_Out : INT := 10; (* 20mV = 2 x (10V / 4000 = 0.0025V := 0.003 V := 10 mV) *)
-	Tolleranza_OutX: INT := 20; (* 30mV = 10 mV + (10V /  800 = 0.0125V := 0.020 V := 20 mV) *)
 	Tolleranza_Tamb_min : INT := 10;
-	Tolleranza_RPM : INT := 100;
+	Tolleranza_RPM : INT := 10; (* 1.0 rpm *) 
+
 	Tolleranza_VCC_set : INT := 10; (* 0.01 V *)
 	Tolleranza_mA_max : INT := 10; (* 0.01 mA *)
 	Tolleranza_VCC_fbk : INT := 100; (* 0.1 V *)
@@ -50,26 +48,24 @@ END_VAR
 	if TST_DigOut_15 then OK_DigOut_15:= (RES_DigOut_15 = VAL_DigOut_15); end_if;
 	if TST_DigOut_16 then OK_DigOut_16:= (RES_DigOut_16 = VAL_DigOut_16); end_if;
 
-	if TST_AnIn_1  then OK_AnIn_1  := abs(RES_AnIn_1  - VAL_AnIn_1 ) <= Tolleranza_In; end_if;
-	if TST_AnIn_2  then OK_AnIn_2  := abs(RES_AnIn_2  - VAL_AnIn_2 ) <= Tolleranza_In; end_if;
-	if TST_AnIn_3  then OK_AnIn_3  := abs(RES_AnIn_3  - VAL_AnIn_3 ) <= Tolleranza_In; end_if;
-	if TST_AnIn_4  then OK_AnIn_4  := abs(RES_AnIn_4  - VAL_AnIn_4 ) <= Tolleranza_In; end_if;
+	if TST_AnIn_1  then OK_AnIn_1  := CheckAnIn(RES_AnIn_1 , VAL_AnIn_1 , VAL_AnInConf_1 ); end_if;
+	if TST_AnIn_2  then OK_AnIn_2  := CheckAnIn(RES_AnIn_2 , VAL_AnIn_2 , VAL_AnInConf_2 ); end_if;
+	if TST_AnIn_3  then OK_AnIn_3  := CheckAnIn(RES_AnIn_3 , VAL_AnIn_3 , VAL_AnInConf_3 ); end_if;
+	if TST_AnIn_4  then OK_AnIn_4  := CheckAnIn(RES_AnIn_4 , VAL_AnIn_4 , VAL_AnInConf_4 ); end_if;
 
-	if TST_AnIn_5  then OK_AnIn_5  := abs(RES_AnIn_5  - VAL_AnIn_5 ) <= Tolleranza_In; end_if;
-	if TST_AnIn_6  then OK_AnIn_6  := abs(RES_AnIn_6  - VAL_AnIn_6 ) <= Tolleranza_In; end_if;
-	if TST_AnIn_7  then OK_AnIn_7  := abs(RES_AnIn_7  - VAL_AnIn_7 ) <= Tolleranza_In; end_if;
-	if TST_AnIn_8  then OK_AnIn_8  := abs(RES_AnIn_8  - VAL_AnIn_8 ) <= Tolleranza_In; end_if;
-	if TST_AnIn_9  then OK_AnIn_9  := abs(RES_AnIn_9  - VAL_AnIn_9 ) <= Tolleranza_In; end_if;
-	if TST_AnIn_10 then OK_AnIn_10 := abs(RES_AnIn_10 - VAL_AnIn_10) <= Tolleranza_In; end_if;
-	if TST_AnIn_11 then OK_AnIn_11 := abs(RES_AnIn_11 - VAL_AnIn_11) <= Tolleranza_In; end_if;
-	if TST_AnIn_12 then OK_AnIn_12 := abs(RES_AnIn_12 - VAL_AnIn_12) <= Tolleranza_In; end_if;
+	if TST_AnIn_5  then OK_AnIn_5  := CheckAnIn(RES_AnIn_5 , VAL_AnIn_5 , VAL_AnInConf_5 ); end_if;
+	if TST_AnIn_6  then OK_AnIn_6  := CheckAnIn(RES_AnIn_6 , VAL_AnIn_6 , VAL_AnInConf_6 ); end_if;
+	if TST_AnIn_7  then OK_AnIn_7  := CheckAnIn(RES_AnIn_7 , VAL_AnIn_7 , VAL_AnInConf_7 ); end_if;
+	if TST_AnIn_8  then OK_AnIn_8  := CheckAnIn(RES_AnIn_8 , VAL_AnIn_8 , VAL_AnInConf_8 ); end_if;
+	if TST_AnIn_9  then OK_AnIn_9  := CheckAnIn(RES_AnIn_9 , VAL_AnIn_9 , VAL_AnInConf_9 ); end_if;
+	if TST_AnIn_10 then OK_AnIn_10 := CheckAnIn(RES_AnIn_10, VAL_AnIn_10, VAL_AnInConf_10); end_if;
+	if TST_AnIn_11 then OK_AnIn_11 := CheckAnIn(RES_AnIn_11, VAL_AnIn_11, VAL_AnInConf_11); end_if;
+	if TST_AnIn_12 then OK_AnIn_12 := CheckAnIn(RES_AnIn_12, VAL_AnIn_12, VAL_AnInConf_12); end_if;
 
-	(* input on TPAC1007_4AA 12bit *)
-	if TST_AnOut_1  then OK_AnOut_1 := abs(RES_AnOut_1 - VAL_AnOut_1) <= Tolleranza_Out; end_if;
-	if TST_AnOut_2  then OK_AnOut_2 := abs(RES_AnOut_2 - VAL_AnOut_2) <= Tolleranza_Out; end_if;
-	(* input on TPLC005 10bit *)
-	if TST_AnOut_3  then OK_AnOut_3 := abs(RES_AnOut_3 - VAL_AnOut_3) <= Tolleranza_OutX; end_if;
-	if TST_AnOut_4  then OK_AnOut_4 := abs(RES_AnOut_4 - VAL_AnOut_4) <= Tolleranza_OutX; end_if;
+	if TST_AnOut_1  then OK_AnOut_1 := CheckAnOut(RES_AnOut_1, VAL_AnOut_1, VAL_AnOutConf_1); end_if;
+	if TST_AnOut_2  then OK_AnOut_2 := CheckAnOut(RES_AnOut_2, VAL_AnOut_2, VAL_AnOutConf_2); end_if;
+	if TST_AnOut_3  then OK_AnOut_3 := CheckAnOut(RES_AnOut_3, VAL_AnOut_3, VAL_AnOutConf_3); end_if;
+	if TST_AnOut_4  then OK_AnOut_4 := CheckAnOut(RES_AnOut_4, VAL_AnOut_4, VAL_AnOutConf_4); end_if;
 
 	if TST_Tamb  then OK_Tamb  := (Tolleranza_Tamb_min <= RES_Tamb) and (RES_Tamb <= VAL_Tamb ); end_if;
 	if TST_RPM  then OK_RPM  := abs(UINT_TO_INT(RES_RPM) - UINT_TO_INT(VAL_RPM) ) <= Tolleranza_RPM; end_if;
