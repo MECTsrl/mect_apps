@@ -67,6 +67,4 @@ END_VAR
 		;
 	end_case;
 
-	RTU_RTUS_WR := RTU_RTUS_RD;
-
 END_PROGRAM

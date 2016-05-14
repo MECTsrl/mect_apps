@@ -68,19 +68,19 @@ FUNCTION ReadRES
 	if TST_FWrevision  then RES_FWrevision  := RESx_FWrevision;  end_if;
 	if TST_HWconfig  then RES_HWconfig  := RESx_HWconfig;  end_if;
 
-	(* RTUS Head --> Prey *)
-	if TST_RTUS_WR then RES_RTUS_WR := RESx_RTUS_RD; end_if;
-	if TST_RTUS_RD then RES_RTUS_RD := RESx_RTUS_WR; end_if;
+	(* RTUS: Head.RTU1 --> Prey.RTUS *)
+	if TST_RTUS_WR then (* RES_RTUS_WR := RTU_RTU1_RD; *); end_if;
+	if TST_RTUS_RD then RES_RTUS_RD := RESx_RTUS_RD; end_if;
 
-	(* RTU1 Prey --> Horn *)
-	if TST_RTU1_WR then RES_RTU1_WR := RESx_RTU1_WR; end_if;
+	(* RTU1: Prey.RTU1 --> Horn.RTUS *)
+	if TST_RTU1_WR then RES_RTU1_WR := RES2_RTUS_RD; end_if;
 	if TST_RTU1_RD then RES_RTU1_RD := RESx_RTU1_RD; end_if;
 
-	(* RTU3 Prey --> TPLC005 *)
+	(* RTU3: Prey.RTU3 <--> TPLC005 *)
 	if TST_RTU3_WR then RES_RTU3_WR := RESx_RTU3_WR; end_if;
 	if TST_RTU3_RD then RES_RTU3_RD := RESx_RTU3_RD; end_if;
 	
-	(* CAN1 Prey --> MPNC010 *)
+	(* CAN1: Prey.CAN1 <--> MPNC010 *)
 	if TST_CAN1_WR then RES_CAN1_WR := RESx_CAN1_WR; end_if;
 	if TST_CAN1_RD then RES_CAN1_RD := RESx_CAN1_RD; end_if;
 

@@ -89,17 +89,22 @@ END_VAR
     TSTx_HWconfig := TST_HWconfig;
     TST2_AnOut_3 := TST_RPM;
 
-	(* we test the RTU1 master using Horn as rtu slave  *)
+	(* RTUS: Head.RTU1 --> Prey.RTUS *)
+    TSTx_RTUS_WR := TST_RTUS_WR;
+    TSTx_RTUS_RD := TST_RTUS_RD;
+
+	(* RTU1: Prey.RTU1 --> Horn.RTUS *)
     TSTx_RTU1_WR := TST_RTU1_WR;
 	TST2_RTUS_RD := TST_RTU1_WR;
+
     TSTx_RTU1_RD := TST_RTU1_RD;
 	TST2_RTUS_WR := TST_RTU1_RD;
 
-	(* we test the RTU3 master *)
+	(* RTU3: Prey.RTU3 <--> TPLC005 *)
 	TSTx_RTU3_WR := TST_RTU3_WR;
 	TSTx_RTU3_RD := TST_RTU3_RD;
 
-	(* we test the CAN master using MPNC10 as CAN device  *)
+	(* CAN1: Prey.CAN1 <--> MPNC010 *)
     TSTx_CAN1_WR := TST_CAN1_WR;
     TSTx_CAN1_RD := TST_CAN1_RD;
 

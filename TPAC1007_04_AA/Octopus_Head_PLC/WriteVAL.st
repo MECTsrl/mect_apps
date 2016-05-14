@@ -203,37 +203,21 @@ END_VAR
 		;
 	end_if;
 
-	(* RTUS Head --> Prey *)
-	if TST_RTUS_WR then
-		;(* RTU_RTUS_WR := VAL_RTUS_WR; *)
-	end_if;
-	if TST_RTUS_RD then
-		VALx_RTUS_WR := VAL_RTUS_RD;
-	end_if;
+	(* RTUS: Head.RTU1 --> Prey.RTUS *)
+	if TST_RTUS_WR then VALx_RTUS_WR := VAL_RTUS_WR; end_if;
+	if TST_RTUS_RD then (* RTU_RTU1_WR := VAL_RTUS_RD; *); end_if;
 
-	(* RTU1 Prey --> Horn *)
-	if TST_RTU1_WR then
-		VALx_RTU1_WR := VAL_RTU1_WR;
-	end_if;
-	if TST_RTU1_RD then
-		VAL2_RTUS_WR := VAL_RTU1_RD;
-	end_if;
+	(* RTU1: Prey.RTU1 --> Horn.RTUS *)
+	if TST_RTU1_WR then VALx_RTU1_WR := VAL_RTU1_WR; end_if;
+	if TST_RTU1_RD then VAL2_RTUS_WR := VAL_RTU1_RD; end_if;
 
-	(* RTU3 Prey --> TPLC005 *)
-	if TST_RTU3_WR then
-		VALx_RTU3_WR := VAL_RTU3_WR;
-	end_if;
-	if TST_RTU3_RD then
-		;
-	end_if;
+	(* RTU3: Prey.RTU3 <--> TPLC005 *)
+	if TST_RTU3_WR then VALx_RTU3_WR := VAL_RTU3_WR; end_if;
+	if TST_RTU3_RD then ; end_if;
 
-	(* CAN1 Prey --> MPNC010 *)
-	if TST_CAN1_WR then
-		VALx_CAN1_WR := VAL_CAN1_WR;
-	end_if;
-	if TST_CAN1_RD then
-		;
-	end_if;
+	(* CAN1: Prey.CAN1 <--> MPNC010 *)
+	if TST_CAN1_WR then VALx_CAN1_WR := VAL_CAN1_WR; end_if;
+	if TST_CAN1_RD then ; end_if;
 
 	(* only from the testing equipment *)
 	if TST_VCC_set then
