@@ -72,11 +72,11 @@ END_VAR
     (* we test the AnOut 1..2 by both the local AnIn 1..2 and the Horn TPAC1007_4AA AnIn 1..2 and local DigOut 3..4 *)
     TSTx_AnOut_1 := TST_AnOut_1;
     TST2_AnIn_1 := TST_AnOut_1;
-    TST2_DigOut_4 := TST_AnOut_1;
+    TST2_DigOut_3 := TST_AnOut_1;
 
     TSTx_AnOut_2 := TST_AnOut_2;
     TST2_AnIn_2 := TST_AnOut_2;
-    TST2_DigOut_3 := TST_AnOut_2;
+    TST2_DigOut_4 := TST_AnOut_2;
 
     (* we test the AnOut 3..4 by the by the TPLC005 internal 2AI *)
     TSTx_AnOut_3 := TST_AnOut_3;

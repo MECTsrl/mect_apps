@@ -154,8 +154,8 @@ END_VAR
 		VAL2_AnInConf_1 := VAL_AnOutConf_1;
 		VAL2_AnInFltr_1 := 16; 
 		case VAL_AnOutConf_1 of
-		1: VAL2_DigOut_4 := 1;
-		2: VAL2_DigOut_4 := 0;
+		1: VAL2_DigOut_3 := 1;
+		2: VAL2_DigOut_3 := 0;
 		end_case;
 	end_if;
 
@@ -166,8 +166,8 @@ END_VAR
 		VAL2_AnInConf_2 := VAL_AnOutConf_2;
 		VAL2_AnInFltr_2 := 16; 
 		case VAL_AnOutConf_2 of
-		1: VAL2_DigOut_3 := 1;
-		2: VAL2_DigOut_3 := 0;
+		1: VAL2_DigOut_4 := 1;
+		2: VAL2_DigOut_4 := 0;
 		end_case;
 	end_if;
 

@@ -2616,7 +2616,7 @@ background-color: rgb(170, 255, 255);
    <property name="geometry">
     <rect>
      <x>361</x>
-     <y>70</y>
+     <y>68</y>
      <width>60</width>
      <height>34</height>
     </rect>
@@ -2704,8 +2704,8 @@ background-color: rgb(170, 255, 255);
    </property>
    <property name="geometry">
     <rect>
-     <x>422</x>
-     <y>35</y>
+     <x>420</x>
+     <y>34</y>
      <width>60</width>
      <height>34</height>
     </rect>
@@ -2745,7 +2745,7 @@ background-color: rgb(170, 255, 255);
    </property>
    <property name="bgColor">
     <color>
-     <red>255</red>
+     <red>170</red>
      <green>255</green>
      <blue>127</blue>
     </color>
@@ -3311,7 +3311,7 @@ background-color: rgb(170, 255, 255);
     <color>
      <red>170</red>
      <green>255</green>
-     <blue>255</blue>
+     <blue>127</blue>
     </color>
    </property>
    <property name="fontColor">
@@ -3417,21 +3417,17 @@ background-color: rgb(170, 255, 255);
   <zorder>atcmLabel_PLC_Tamb</zorder>
   <zorder>atcmLed_PLC_DigIn_8</zorder>
   <zorder>atcmButton_PLC_DigOut_2</zorder>
-  <zorder>line_vt_2</zorder>
   <zorder>atcmLabel_PLC_AnIn_1</zorder>
   <zorder>label_PLC_DigIn_11</zorder>
   <zorder>atcmComboBox_PLC_AnInConf_1</zorder>
   <zorder>atcmButton_PLC_DigOut_4</zorder>
-  <zorder>line_vt_4</zorder>
   <zorder>label_PLC_DigIn_6</zorder>
   <zorder>label_PLC_DigIn_4</zorder>
   <zorder>atcmButton_menu</zorder>
-  <zorder>line_vt_1</zorder>
   <zorder>atcmLed_PLC_DigIn_4</zorder>
   <zorder>atcmLabel_PLC_Encoder</zorder>
   <zorder>atcmLed_PLC_DigIn_7</zorder>
   <zorder>label_PLC_AnIn_2</zorder>
-  <zorder>line_hr_1</zorder>
   <zorder>label_PLC_AnOut_1</zorder>
   <zorder>atcmComboBox_PLC_AnInConf_2</zorder>
   <zorder>atcmButton_PLC_DigOut_5</zorder>
@@ -3444,12 +3440,10 @@ background-color: rgb(170, 255, 255);
   <zorder>atcmButton_PLC_DigDir_2</zorder>
   <zorder>atcmButton_PLC_DigOut_3</zorder>
   <zorder>atcmLed_PLC_DigIn_10</zorder>
-  <zorder>line_hr_3</zorder>
   <zorder>atcmLed_PLC_DigIn_5</zorder>
   <zorder>atcmLabel_PLC_AnOut_1</zorder>
   <zorder>atcmButton_PLC_DigDir_3</zorder>
   <zorder>label_PLC_DigIn_9</zorder>
-  <zorder>line_hr_2</zorder>
   <zorder>atcmButton_PLC_DigDir_5</zorder>
   <zorder>atcmButton_PLC_DigOut_8</zorder>
   <zorder>label_PLC_Tamb</zorder>
@@ -3468,6 +3462,12 @@ background-color: rgb(170, 255, 255);
   <zorder>atcmLabel_36</zorder>
   <zorder>atcmDate</zorder>
   <zorder>atcmTime</zorder>
+  <zorder>line_hr_1</zorder>
+  <zorder>line_vt_1</zorder>
+  <zorder>line_vt_2</zorder>
+  <zorder>line_hr_2</zorder>
+  <zorder>line_vt_4</zorder>
+  <zorder>line_hr_3</zorder>
  </widget>
  <customwidgets>
   <customwidget>
