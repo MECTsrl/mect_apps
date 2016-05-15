@@ -370,9 +370,9 @@ background-color: rgb(255, 255, 127);
    </property>
    <property name="bgColor">
     <color>
-     <red>255</red>
+     <red>170</red>
      <green>255</green>
-     <blue>127</blue>
+     <blue>255</blue>
     </color>
    </property>
    <property name="borderWidth">
@@ -560,7 +560,7 @@ RTU 0 NODE 2</string>
    <property name="geometry">
     <rect>
      <x>360</x>
-     <y>70</y>
+     <y>68</y>
      <width>120</width>
      <height>34</height>
     </rect>
@@ -630,7 +630,7 @@ RTU 0 NODE 2</string>
     </font>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: rgb(255, 255, 127);</string>
+    <string notr="true">background-color: rgb(170, 255, 255);</string>
    </property>
    <property name="text">
     <string>type + port</string>
@@ -702,7 +702,7 @@ RTU 0 NODE 2</string>
    <property name="geometry">
     <rect>
      <x>280</x>
-     <y>70</y>
+     <y>68</y>
      <width>80</width>
      <height>34</height>
     </rect>
@@ -804,9 +804,9 @@ RTU 0 NODE 2</string>
    </property>
    <property name="bgColor">
     <color>
-     <red>255</red>
+     <red>170</red>
      <green>255</green>
-     <blue>127</blue>
+     <blue>255</blue>
     </color>
    </property>
    <property name="borderWidth">
@@ -907,7 +907,7 @@ RTU 0 NODE 2</string>
    <property name="geometry">
     <rect>
      <x>200</x>
-     <y>70</y>
+     <y>68</y>
      <width>80</width>
      <height>34</height>
     </rect>
@@ -1330,7 +1330,7 @@ RTU 0 NODE 2</string>
    <property name="geometry">
     <rect>
      <x>0</x>
-     <y>70</y>
+     <y>68</y>
      <width>120</width>
      <height>33</height>
     </rect>
@@ -1659,9 +1659,9 @@ RTU 0 NODE 2</string>
    </property>
    <property name="bgColor">
     <color>
-     <red>255</red>
+     <red>170</red>
      <green>255</green>
-     <blue>127</blue>
+     <blue>255</blue>
     </color>
    </property>
    <property name="borderWidth">
@@ -1759,7 +1759,7 @@ RTU 3 NODE 20</string>
    <property name="geometry">
     <rect>
      <x>120</x>
-     <y>70</y>
+     <y>68</y>
      <width>80</width>
      <height>34</height>
     </rect>
@@ -2409,6 +2409,8 @@ RTU 3 NODE 20</string>
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
+  <zorder>atcmLabel_HWconfig</zorder>
+  <zorder>atcmLabel_FWrevision</zorder>
   <zorder>atcmComboBox_2</zorder>
   <zorder>atcmComboBox</zorder>
   <zorder>atcmLabel_5</zorder>
@@ -2453,8 +2455,6 @@ RTU 3 NODE 20</string>
   <zorder>atcmLabel_24</zorder>
   <zorder>atcmLabel_25</zorder>
   <zorder>atcmLed</zorder>
-  <zorder>atcmLabel_HWconfig</zorder>
-  <zorder>atcmLabel_FWrevision</zorder>
   <zorder>label_Qt_Project</zorder>
   <zorder>label_RTU_AnIn_24</zorder>
   <zorder>line_vt_1</zorder>

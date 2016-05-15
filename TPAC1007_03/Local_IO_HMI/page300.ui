@@ -841,16 +841,16 @@ background-color: rgb(255, 255, 127);
     <string>PLC_AnOut_1</string>
    </property>
    <property name="y1Min">
-    <string>-12</string>
+    <string>-1</string>
    </property>
    <property name="y1Max">
     <string>11</string>
    </property>
    <property name="y1Step">
-    <double>6.000000000000000</double>
+    <double>2.000000000000000</double>
    </property>
    <property name="y1TickLabelVisible">
-    <bool>false</bool>
+    <bool>true</bool>
    </property>
    <property name="y1Label">
     <string>PLC_AnOut_1</string>
@@ -887,10 +887,10 @@ background-color: rgb(255, 255, 127);
     <string>-1</string>
    </property>
    <property name="y2Max">
-    <string>22</string>
+    <string>11</string>
    </property>
    <property name="y2Step">
-    <double>6.000000000000000</double>
+    <double>2.000000000000000</double>
    </property>
    <property name="y2TickLabelVisible">
     <bool>false</bool>
@@ -903,9 +903,9 @@ background-color: rgb(255, 255, 127);
    </property>
    <property name="pen2Color">
     <color>
-     <red>230</red>
-     <green>230</green>
-     <blue>230</blue>
+     <red>255</red>
+     <green>170</green>
+     <blue>0</blue>
     </color>
    </property>
    <property name="Display2">
@@ -1343,16 +1343,16 @@ background-color: rgb(255, 255, 127);
     <string>PLC_AnIn_1</string>
    </property>
    <property name="y1Min">
-    <string>-12</string>
+    <string>-1</string>
    </property>
    <property name="y1Max">
     <string>11</string>
    </property>
    <property name="y1Step">
-    <double>6.000000000000000</double>
+    <double>2.000000000000000</double>
    </property>
    <property name="y1TickLabelVisible">
-    <bool>false</bool>
+    <bool>true</bool>
    </property>
    <property name="Display1">
     <string/>
@@ -1376,10 +1376,10 @@ background-color: rgb(255, 255, 127);
     <string>-1</string>
    </property>
    <property name="y2Max">
-    <string>22</string>
+    <string>11</string>
    </property>
    <property name="y2Step">
-    <double>6.000000000000000</double>
+    <double>2.000000000000000</double>
    </property>
    <property name="y2TickLabelVisible">
     <bool>false</bool>
@@ -1432,6 +1432,56 @@ background-color: rgb(255, 255, 127);
     <string/>
    </property>
   </widget>
+  <widget class="ATCMbutton" name="atcmButton_3">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>70</y>
+     <width>361</width>
+     <height>201</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string/>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMbutton widget</string>
+   </property>
+   <property name="pageName">
+    <string>BACK</string>
+   </property>
+   <property name="statusvar">
+    <string/>
+   </property>
+   <property name="viewStatus">
+    <bool>false</bool>
+   </property>
+   <property name="refresh">
+    <number>100</number>
+   </property>
+   <property name="visibilityVar">
+    <string/>
+   </property>
+   <property name="bgColor">
+    <color alpha="0">
+     <red>230</red>
+     <green>230</green>
+     <blue>230</blue>
+    </color>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pressText">
+    <string/>
+   </property>
+   <property name="borderWidth">
+    <number>0</number>
+   </property>
+   <property name="borderRadius">
+    <number>0</number>
+   </property>
+  </widget>
   <zorder>label_PLC_DigIn_1</zorder>
   <zorder>label_PLC_DigIn_10</zorder>
   <zorder>atcmLed_PLC_DigIn_1</zorder>
@@ -1471,6 +1521,7 @@ background-color: rgb(255, 255, 127);
   <zorder>line_vt_2</zorder>
   <zorder>line_vt_4</zorder>
   <zorder>line_hr_1</zorder>
+  <zorder>atcmButton_3</zorder>
  </widget>
  <customwidgets>
   <customwidget>
@@ -1518,6 +1569,22 @@ background-color: rgb(255, 255, 127);
  <connections>
   <connection>
    <sender>atcmButton_menu</sender>
+   <signal>newPage(const char*,bool)</signal>
+   <receiver>page300</receiver>
+   <slot>goto_page(const char*,bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>atcmButton_3</sender>
    <signal>newPage(const char*,bool)</signal>
    <receiver>page300</receiver>
    <slot>goto_page(const char*,bool)</slot>

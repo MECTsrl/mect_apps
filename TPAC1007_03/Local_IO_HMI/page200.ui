@@ -339,7 +339,7 @@ background-color: rgb(255, 255, 127);
     <string notr="true">background-color: rgb(170, 255, 127);</string>
    </property>
    <property name="text">
-    <string>Local_IO 200</string>
+    <string>Local_IO p.200</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>
@@ -697,7 +697,7 @@ background-color: rgb(255, 255, 127);
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>13</pointsize>
+     <pointsize>12</pointsize>
     </font>
    </property>
    <property name="text">
@@ -823,7 +823,7 @@ background-color: rgb(255, 255, 127);
     </font>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: rgb(255, 255, 127);</string>
+    <string notr="true">background-color: rgb(170, 255, 255);</string>
    </property>
    <property name="text">
     <string>type + port</string>
@@ -1142,9 +1142,9 @@ RTU 3 NODE 20</string>
    </property>
    <property name="bgColor">
     <color>
-     <red>255</red>
+     <red>170</red>
      <green>255</green>
-     <blue>127</blue>
+     <blue>255</blue>
     </color>
    </property>
    <property name="borderWidth">
@@ -1464,62 +1464,6 @@ RTU 3 NODE 20</string>
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
-  <widget class="ATCMcombobox" name="atcmComboBox_7">
-   <property name="enabled">
-    <bool>false</bool>
-   </property>
-   <property name="geometry">
-    <rect>
-     <x>200</x>
-     <y>102</y>
-     <width>80</width>
-     <height>34</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>DejaVu Sans</family>
-     <pointsize>8</pointsize>
-    </font>
-   </property>
-   <property name="toolTip">
-    <string>RTU0_STATUS</string>
-   </property>
-   <property name="whatsThis">
-    <string>ATCMcombobox widget</string>
-   </property>
-   <property name="variable">
-    <string>RTU0_STATUS</string>
-   </property>
-   <property name="refresh">
-    <number>100</number>
-   </property>
-   <property name="viewStatus">
-    <bool>false</bool>
-   </property>
-   <property name="writeAcknowledge">
-    <bool>false</bool>
-   </property>
-   <property name="visibilityVar">
-    <string/>
-   </property>
-   <property name="bgColor">
-    <color>
-     <red>170</red>
-     <green>255</green>
-     <blue>255</blue>
-    </color>
-   </property>
-   <property name="borderWidth">
-    <number>0</number>
-   </property>
-   <property name="borderRadius">
-    <number>0</number>
-   </property>
-   <property name="mapping">
-    <string>1;SRV_RUNNING1;2;SRV_RUNNING2;3;SRV_RUNNING3;4;SRV_RUNNING4;0;SRV_RUNNING0</string>
-   </property>
-  </widget>
   <widget class="QLabel" name="label_RTU_AnIn_17">
    <property name="geometry">
     <rect>
@@ -1643,7 +1587,7 @@ RTU 3 NODE 20</string>
    <property name="geometry">
     <rect>
      <x>360</x>
-     <y>70</y>
+     <y>68</y>
      <width>120</width>
      <height>34</height>
     </rect>
@@ -1685,7 +1629,7 @@ RTU 3 NODE 20</string>
    </property>
    <property name="bgColor">
     <color>
-     <red>170</red>
+     <red>255</red>
      <green>255</green>
      <blue>127</blue>
     </color>
@@ -1778,7 +1722,7 @@ RTU 3 NODE 20</string>
    <property name="font">
     <font>
      <family>DejaVu Sans Mono</family>
-     <pointsize>13</pointsize>
+     <pointsize>10</pointsize>
      <weight>50</weight>
      <bold>false</bold>
     </font>
@@ -1794,6 +1738,9 @@ RTU 3 NODE 20</string>
    </property>
    <property name="variable">
     <string>PLC_FWrevision</string>
+   </property>
+   <property name="prefix">
+    <string>FW: </string>
    </property>
    <property name="refresh">
     <number>200</number>
@@ -2083,9 +2030,9 @@ RTU 0 NODE 2</string>
    </property>
    <property name="bgColor">
     <color>
-     <red>255</red>
+     <red>170</red>
      <green>255</green>
-     <blue>127</blue>
+     <blue>255</blue>
     </color>
    </property>
    <property name="borderWidth">
@@ -2159,9 +2106,9 @@ RTU 0 NODE 2</string>
    </property>
    <property name="bgColor">
     <color>
-     <red>255</red>
+     <red>170</red>
      <green>255</green>
-     <blue>127</blue>
+     <blue>255</blue>
     </color>
    </property>
    <property name="borderWidth">
@@ -2214,7 +2161,7 @@ RTU 0 NODE 2</string>
    <property name="font">
     <font>
      <family>DejaVu Sans Mono</family>
-     <pointsize>13</pointsize>
+     <pointsize>10</pointsize>
     </font>
    </property>
    <property name="text">
@@ -2444,7 +2391,7 @@ RTU 0 NODE 2</string>
     </color>
    </property>
    <property name="text">
-    <string>text</string>
+    <string/>
    </property>
    <property name="pressText">
     <string/>
@@ -2456,6 +2403,62 @@ RTU 0 NODE 2</string>
     <number>0</number>
    </property>
   </widget>
+  <widget class="ATCMcombobox" name="atcmComboBox_7">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>102</y>
+     <width>80</width>
+     <height>34</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+   <property name="toolTip">
+    <string>RTU0_STATUS</string>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMcombobox widget</string>
+   </property>
+   <property name="variable">
+    <string>RTU0_STATUS</string>
+   </property>
+   <property name="refresh">
+    <number>500</number>
+   </property>
+   <property name="viewStatus">
+    <bool>false</bool>
+   </property>
+   <property name="writeAcknowledge">
+    <bool>false</bool>
+   </property>
+   <property name="visibilityVar">
+    <string/>
+   </property>
+   <property name="bgColor">
+    <color>
+     <red>170</red>
+     <green>255</green>
+     <blue>255</blue>
+    </color>
+   </property>
+   <property name="borderWidth">
+    <number>0</number>
+   </property>
+   <property name="borderRadius">
+    <number>0</number>
+   </property>
+   <property name="mapping">
+    <string>1;NOT_CONNECTED;2;CONNECTED;3;CONNECTED_WITH_ERRORS;4;DEVICE_BLACKLIST;5;NO_HOPE;0;ZERO</string>
+   </property>
+  </widget>
+  <zorder>atcmLabel_HWconfig</zorder>
+  <zorder>atcmLabel_FWrevision</zorder>
+  <zorder>atcmComboBox_7</zorder>
   <zorder>label_RTU_AnIn_15</zorder>
   <zorder>atcmLabel_20</zorder>
   <zorder>atcmDate</zorder>
@@ -2486,13 +2489,11 @@ RTU 0 NODE 2</string>
   <zorder>atcmComboBox</zorder>
   <zorder>atcmLabel_14</zorder>
   <zorder>label_RTU_AnIn_14</zorder>
-  <zorder>atcmComboBox_7</zorder>
   <zorder>label_RTU_AnIn_17</zorder>
   <zorder>atcmLed</zorder>
   <zorder>atcmLabel_7</zorder>
   <zorder>atcmLabel_10</zorder>
   <zorder>atcmComboBox_6</zorder>
-  <zorder>atcmLabel_FWrevision</zorder>
   <zorder>atcmButton</zorder>
   <zorder>label_RTU_AnIn_21</zorder>
   <zorder>atcmButton_2</zorder>
@@ -2500,7 +2501,6 @@ RTU 0 NODE 2</string>
   <zorder>atcmLabel_9</zorder>
   <zorder>atcmLabel_17</zorder>
   <zorder>label_RTU_AnIn_20</zorder>
-  <zorder>atcmLabel_HWconfig</zorder>
   <zorder>atcmComboBox_5</zorder>
   <zorder>label_RTU_AnIn_12</zorder>
   <zorder>atcmLabel_6</zorder>
