@@ -1492,9 +1492,9 @@ RTU 3 NODE 20</string>
   <widget class="ATCMled" name="atcmLed">
    <property name="geometry">
     <rect>
-     <x>200</x>
-     <y>204</y>
-     <width>80</width>
+     <x>284</x>
+     <y>170</y>
+     <width>40</width>
      <height>34</height>
     </rect>
    </property>
@@ -1781,8 +1781,8 @@ RTU 3 NODE 20</string>
   <widget class="ATCMbutton" name="atcmButton">
    <property name="geometry">
     <rect>
-     <x>223</x>
-     <y>238</y>
+     <x>323</x>
+     <y>171</y>
      <width>34</width>
      <height>34</height>
     </rect>
@@ -2456,6 +2456,226 @@ RTU 0 NODE 2</string>
     <string>1;NOT_CONNECTED;2;CONNECTED;3;CONNECTED_WITH_ERRORS;4;DEVICE_BLACKLIST;5;NO_HOPE;0;ZERO</string>
    </property>
   </widget>
+  <widget class="ATCMlabel" name="atcmLabel_16">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>204</y>
+     <width>40</width>
+     <height>34</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+    </font>
+   </property>
+   <property name="text">
+    <string>65535</string>
+   </property>
+   <property name="toolTip">
+    <string>RTU0_TIMEOUTS</string>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMlabel widget</string>
+   </property>
+   <property name="variable">
+    <string>RTU0_TIMEOUTS</string>
+   </property>
+   <property name="refresh">
+    <number>100</number>
+   </property>
+   <property name="max">
+    <string>0</string>
+   </property>
+   <property name="min">
+    <string>0</string>
+   </property>
+   <property name="viewStatus">
+    <bool>true</bool>
+   </property>
+   <property name="visibilityVar">
+    <string/>
+   </property>
+   <property name="bgColor">
+    <color>
+     <red>255</red>
+     <green>255</green>
+     <blue>127</blue>
+    </color>
+   </property>
+   <property name="borderWidth">
+    <number>0</number>
+   </property>
+   <property name="borderRadius">
+    <number>0</number>
+   </property>
+  </widget>
+  <widget class="ATCMlabel" name="atcmLabel_26">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>204</y>
+     <width>40</width>
+     <height>34</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+    </font>
+   </property>
+   <property name="text">
+    <string>65535</string>
+   </property>
+   <property name="toolTip">
+    <string>RTU0_COMM_ERRORS</string>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMlabel widget</string>
+   </property>
+   <property name="variable">
+    <string>RTU0_COMM_ERRORS</string>
+   </property>
+   <property name="refresh">
+    <number>100</number>
+   </property>
+   <property name="max">
+    <string>0</string>
+   </property>
+   <property name="min">
+    <string>0</string>
+   </property>
+   <property name="viewStatus">
+    <bool>true</bool>
+   </property>
+   <property name="visibilityVar">
+    <string/>
+   </property>
+   <property name="bgColor">
+    <color>
+     <red>255</red>
+     <green>255</green>
+     <blue>127</blue>
+    </color>
+   </property>
+   <property name="borderWidth">
+    <number>0</number>
+   </property>
+   <property name="borderRadius">
+    <number>0</number>
+   </property>
+  </widget>
+  <widget class="ATCMlabel" name="atcmLabel_27">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>238</y>
+     <width>40</width>
+     <height>34</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+    </font>
+   </property>
+   <property name="text">
+    <string>65535</string>
+   </property>
+   <property name="toolTip">
+    <string>RTU0_READ_QUEUE</string>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMlabel widget</string>
+   </property>
+   <property name="variable">
+    <string>RTU0_READ_QUEUE</string>
+   </property>
+   <property name="refresh">
+    <number>100</number>
+   </property>
+   <property name="max">
+    <string>0</string>
+   </property>
+   <property name="min">
+    <string>0</string>
+   </property>
+   <property name="viewStatus">
+    <bool>true</bool>
+   </property>
+   <property name="visibilityVar">
+    <string/>
+   </property>
+   <property name="bgColor">
+    <color>
+     <red>170</red>
+     <green>255</green>
+     <blue>255</blue>
+    </color>
+   </property>
+   <property name="borderWidth">
+    <number>0</number>
+   </property>
+   <property name="borderRadius">
+    <number>0</number>
+   </property>
+  </widget>
+  <widget class="ATCMlabel" name="atcmLabel_28">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>238</y>
+     <width>40</width>
+     <height>34</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+    </font>
+   </property>
+   <property name="text">
+    <string>65535</string>
+   </property>
+   <property name="toolTip">
+    <string>RTU0_WRITE_QUEUE</string>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMlabel widget</string>
+   </property>
+   <property name="variable">
+    <string>RTU0_WRITE_QUEUE</string>
+   </property>
+   <property name="refresh">
+    <number>100</number>
+   </property>
+   <property name="max">
+    <string>0</string>
+   </property>
+   <property name="min">
+    <string>0</string>
+   </property>
+   <property name="viewStatus">
+    <bool>true</bool>
+   </property>
+   <property name="visibilityVar">
+    <string/>
+   </property>
+   <property name="bgColor">
+    <color>
+     <red>170</red>
+     <green>255</green>
+     <blue>255</blue>
+    </color>
+   </property>
+   <property name="borderWidth">
+    <number>0</number>
+   </property>
+   <property name="borderRadius">
+    <number>0</number>
+   </property>
+  </widget>
   <zorder>atcmLabel_HWconfig</zorder>
   <zorder>atcmLabel_FWrevision</zorder>
   <zorder>atcmComboBox_7</zorder>
@@ -2504,15 +2724,19 @@ RTU 0 NODE 2</string>
   <zorder>atcmComboBox_5</zorder>
   <zorder>label_RTU_AnIn_12</zorder>
   <zorder>atcmLabel_6</zorder>
-  <zorder>line_vt_2</zorder>
-  <zorder>line_vt_4</zorder>
-  <zorder>line_vt_1</zorder>
-  <zorder>line_vt_3</zorder>
+  <zorder>atcmButton_3</zorder>
+  <zorder>atcmLabel_16</zorder>
+  <zorder>atcmLabel_26</zorder>
+  <zorder>atcmLabel_27</zorder>
+  <zorder>atcmLabel_28</zorder>
+  <zorder>line_vt_5</zorder>
   <zorder>line_hr_3</zorder>
   <zorder>line_hr_1</zorder>
-  <zorder>line_vt_5</zorder>
   <zorder>line_hr_2</zorder>
-  <zorder>atcmButton_3</zorder>
+  <zorder>line_vt_4</zorder>
+  <zorder>line_vt_2</zorder>
+  <zorder>line_vt_3</zorder>
+  <zorder>line_vt_1</zorder>
  </widget>
  <customwidgets>
   <customwidget>

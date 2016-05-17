@@ -157,7 +157,8 @@
     <message utf8="true">
         <location filename="page100.ui" line="424"/>
         <location filename="page100.ui" line="645"/>
-        <source>0;---;1;[mA] 4..20;2;[V] 0..10;3;[°C] 0..600;4;[°C] 0..1200;5;[°C] 0..400;6;[°C]-40..800;7;[°C]-40..200</source>
+        <source>1;[mA] 4..20;2;[V] 0..10;3;[°C] TCJ;4;[°C] TCK;5;[°C] TCT;6;[°C] PT100E;7;[°C] PT100R;8;[°C] TCS;9;[°C] TCB;10;[°C] TCR;0;--</source>
+        <oldsource>0;---;1;[mA] 4..20;2;[V] 0..10;3;[°C] 0..600;4;[°C] 0..1200;5;[°C] 0..400;6;[°C]-40..800;7;[°C]-40..200</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -500,11 +501,6 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="3699"/>
-        <source>page: page300  status: </source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="page100.ui" line="3705"/>
         <source>page300</source>
         <translation type="unfinished"></translation>
@@ -731,6 +727,10 @@ RTU 0 NODE 2</source>
         <location filename="page200.ui" line="2005"/>
         <location filename="page200.ui" line="2081"/>
         <location filename="page200.ui" line="2319"/>
+        <location filename="page200.ui" line="2474"/>
+        <location filename="page200.ui" line="2529"/>
+        <location filename="page200.ui" line="2584"/>
+        <location filename="page200.ui" line="2639"/>
         <source>65535</source>
         <translation type="unfinished"></translation>
     </message>
@@ -768,6 +768,10 @@ RTU 0 NODE 2</source>
         <location filename="page200.ui" line="2087"/>
         <location filename="page200.ui" line="2174"/>
         <location filename="page200.ui" line="2325"/>
+        <location filename="page200.ui" line="2480"/>
+        <location filename="page200.ui" line="2535"/>
+        <location filename="page200.ui" line="2590"/>
+        <location filename="page200.ui" line="2645"/>
         <source>ATCMlabel widget</source>
         <translation type="unfinished"></translation>
     </message>
@@ -816,6 +820,14 @@ RTU 0 NODE 2</source>
         <location filename="page200.ui" line="2186"/>
         <location filename="page200.ui" line="2334"/>
         <location filename="page200.ui" line="2337"/>
+        <location filename="page200.ui" line="2489"/>
+        <location filename="page200.ui" line="2492"/>
+        <location filename="page200.ui" line="2544"/>
+        <location filename="page200.ui" line="2547"/>
+        <location filename="page200.ui" line="2599"/>
+        <location filename="page200.ui" line="2602"/>
+        <location filename="page200.ui" line="2654"/>
+        <location filename="page200.ui" line="2657"/>
         <source>0</source>
         <translation type="unfinished"></translation>
     </message>
@@ -930,6 +942,30 @@ RTU 3 NODE 20</source>
         <location filename="page200.ui" line="2422"/>
         <location filename="page200.ui" line="2428"/>
         <source>RTU0_STATUS</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="2477"/>
+        <location filename="page200.ui" line="2483"/>
+        <source>RTU0_TIMEOUTS</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="2532"/>
+        <location filename="page200.ui" line="2538"/>
+        <source>RTU0_COMM_ERRORS</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="2587"/>
+        <location filename="page200.ui" line="2593"/>
+        <source>RTU0_READ_QUEUE</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="2642"/>
+        <location filename="page200.ui" line="2648"/>
+        <source>RTU0_WRITE_QUEUE</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

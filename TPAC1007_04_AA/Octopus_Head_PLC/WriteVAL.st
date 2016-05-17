@@ -46,11 +46,11 @@ END_VAR
 		PLC_DigDir_6 := 1;
 		PLC_DigDir_8 := 1;
 		case VAL_AnInConf_1 of
-		1: PLC_DigOut_8 := 1; PLC_DigOut_6 := 0; PLC_AnOutConf_1 := VAL_AnInConf_1; PLC_AnOut_1 := VAL_AnIn_1 / 10;
-		2: PLC_DigOut_8 := 0; PLC_DigOut_6 := 0; PLC_AnOutConf_1 := VAL_AnInConf_1; PLC_AnOut_1 := VAL_AnIn_1 / 10;
-		3, 4, 5, 6: PLC_DigOut_8 := 0; PLC_DigOut_6 := 1; PLC_AnOutConf_1 := VAL_AnInConf_1; PLC_AnOut_1 := VAL_AnIn_1 / 10;
-		7: PLC_DigOut_8 := 0; PLC_DigOut_6 := 1;  VAL_AnOut_1 := 0; VAL_AnOutConf_1 := 2;
-		else PLC_DigOut_8 := 0; PLC_DigOut_6 := 0;
+		1:       PLC_DigOut_8 := 1; PLC_DigOut_6 := 0; PLC_AnOutConf_1 := VAL_AnInConf_1; PLC_AnOut_1 := VAL_AnIn_1 / 10;
+		2:       PLC_DigOut_8 := 0; PLC_DigOut_6 := 0; PLC_AnOutConf_1 := VAL_AnInConf_1; PLC_AnOut_1 := VAL_AnIn_1 / 10;
+		3, 4, 5: PLC_DigOut_8 := 0; PLC_DigOut_6 := 1; PLC_AnOutConf_1 := 2; PLC_AnOut_1 := 0;
+		6, 7:    PLC_DigOut_8 := 0; PLC_DigOut_6 := 1; PLC_AnOutConf_2 := 2; PLC_AnOut_2 := 0;
+		else     PLC_DigOut_8 := 0; PLC_DigOut_6 := 0; PLC_AnOutConf_2 := 2; PLC_AnOut_2 := 0;
 		end_case;
 	end_if;
 
@@ -61,11 +61,11 @@ END_VAR
 		PLC_DigDir_5 := 1;
 		PLC_DigDir_7 := 1;
 		case VAL_AnInConf_2 of
-		1: PLC_DigOut_7 := 1; PLC_DigOut_5 := 0; PLC_AnOutConf_2 := VAL_AnInConf_2; PLC_AnOut_2 := VAL_AnIn_2 / 10;
-		2: PLC_DigOut_7 := 0; PLC_DigOut_5 := 0; PLC_AnOutConf_2 := VAL_AnInConf_2; PLC_AnOut_2 := VAL_AnIn_2 / 10;
-		3, 4, 5, 6: PLC_DigOut_7 := 0; PLC_DigOut_5 := 1; PLC_AnOutConf_2 := VAL_AnInConf_2; PLC_AnOut_2 := VAL_AnIn_2 / 10;
-		7: PLC_DigOut_8 := 0; PLC_DigOut_6 := 1;  VAL_AnOut_2 := 0; VAL_AnOutConf_2 := 2;
-		else PLC_DigOut_7 := 0; PLC_DigOut_5 := 0;
+		1:       PLC_DigOut_7 := 1; PLC_DigOut_5 := 0; PLC_AnOutConf_2 := VAL_AnInConf_2; PLC_AnOut_2 := VAL_AnIn_2 / 10;
+		2:       PLC_DigOut_7 := 0; PLC_DigOut_5 := 0; PLC_AnOutConf_2 := VAL_AnInConf_2; PLC_AnOut_2 := VAL_AnIn_2 / 10;
+		3, 4, 5: PLC_DigOut_7 := 0; PLC_DigOut_5 := 1; PLC_AnOutConf_2 := 2; PLC_AnOut_2 := 0;
+		6, 7:    PLC_DigOut_7 := 0; PLC_DigOut_5 := 1; PLC_AnOutConf_2 := 2; PLC_AnOut_2 := 0;
+		else     PLC_DigOut_7 := 0; PLC_DigOut_5 := 0; PLC_AnOutConf_2 := 2; PLC_AnOut_2 := 0;
 		end_case;
 	end_if;
 
@@ -74,11 +74,11 @@ END_VAR
 		VALx_AnInFltr_3 := VAL_AnInFltr_3;
 		(* <-- Horn2 AO1 + DO6 + DO8 *) 
 		case VAL_AnInConf_3 of
-		1: VAL2_DigOut_8 := 1; VAL2_DigOut_6 := 0; VAL2_AnOutConf_1 := VAL_AnInConf_3; VAL2_AnOut_1 := VAL_AnIn_3 / 10;
-		2: VAL2_DigOut_8 := 0; VAL2_DigOut_6 := 0; VAL2_AnOutConf_1 := VAL_AnInConf_3; VAL2_AnOut_1 := VAL_AnIn_3 / 10;
-		3, 4, 5, 6: VAL2_DigOut_8 := 0; VAL2_DigOut_6 := 1; VAL2_AnOutConf_1 := VAL_AnInConf_3; VAL2_AnOut_1 := VAL_AnIn_3 / 10;
-		7: PLC_DigOut_8 := 0; PLC_DigOut_6 := 1;  VAL2_AnOut_3 := 0; VAL2_AnOutConf_3 := 2;
-		else VAL2_DigOut_8 := 0; VAL2_DigOut_6 := 0;
+		1:       VAL2_DigOut_8 := 1; VAL2_DigOut_6 := 0; VAL2_AnOutConf_1 := VAL_AnInConf_3; VAL2_AnOut_1 := VAL_AnIn_3 / 10;
+		2:       VAL2_DigOut_8 := 0; VAL2_DigOut_6 := 0; VAL2_AnOutConf_1 := VAL_AnInConf_3; VAL2_AnOut_1 := VAL_AnIn_3 / 10;
+		3, 4, 5: VAL2_DigOut_8 := 0; VAL2_DigOut_6 := 1; VAL2_AnOutConf_1 := 2; VAL2_AnOut_1 := 0;
+		6, 7:    VAL2_DigOut_8 := 0; VAL2_DigOut_6 := 1; VAL2_AnOutConf_1 := 2; VAL2_AnOut_1 := 0;
+		else     VAL2_DigOut_8 := 0; VAL2_DigOut_6 := 0; VAL2_AnOutConf_1 := 2; VAL2_AnOut_1 := 0;
 		end_case;
 	end_if;
 
@@ -87,11 +87,11 @@ END_VAR
 		VALx_AnInFltr_4 := VAL_AnInFltr_4;
 		(* <-- Horn2 AO2 + DO5 + DO7 *) 
 		case VAL_AnInConf_4 of
-		1: VAL2_DigOut_7 := 1; VAL2_DigOut_5 := 0; VAL2_AnOutConf_2 := VAL_AnInConf_4; VAL2_AnOut_2 := VAL_AnIn_4 / 10;
-		2: VAL2_DigOut_7 := 0; VAL2_DigOut_5 := 0; VAL2_AnOutConf_2 := VAL_AnInConf_4; VAL2_AnOut_2 := VAL_AnIn_4 / 10;
-		3, 4, 5, 6: VAL2_DigOut_7 := 0; VAL2_DigOut_5 := 1; VAL2_AnOutConf_2 := VAL_AnInConf_4; VAL2_AnOut_2 := VAL_AnIn_4 / 10;
-		7: PLC_DigOut_8 := 0; PLC_DigOut_6 := 1;  VAL2_AnOut_4 := 0; VAL2_AnOutConf_4 := 2;
-		else VAL2_DigOut_7 := 0; VAL2_DigOut_5 := 0;
+		1:       VAL2_DigOut_7 := 1; VAL2_DigOut_5 := 0; VAL2_AnOutConf_2 := VAL_AnInConf_4; VAL2_AnOut_2 := VAL_AnIn_4 / 10;
+		2:       VAL2_DigOut_7 := 0; VAL2_DigOut_5 := 0; VAL2_AnOutConf_2 := VAL_AnInConf_4; VAL2_AnOut_2 := VAL_AnIn_4 / 10;
+		3, 4, 5: VAL2_DigOut_7 := 0; VAL2_DigOut_5 := 1; VAL2_AnOutConf_2 := 2; VAL2_AnOut_2 := 0;
+		6, 7:    VAL2_DigOut_7 := 0; VAL2_DigOut_5 := 1; VAL2_AnOutConf_2 := 2; VAL2_AnOut_2 := 0;
+		else     VAL2_DigOut_7 := 0; VAL2_DigOut_5 := 0; VAL2_AnOutConf_2 := 2; VAL2_AnOut_2 := 0;
 		end_case;
 	end_if;
 

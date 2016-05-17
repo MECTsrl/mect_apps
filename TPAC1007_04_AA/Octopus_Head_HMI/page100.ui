@@ -46,14 +46,14 @@ background-color: rgb(255, 255, 127);
      <pointsize>10</pointsize>
     </font>
    </property>
-   <property name="currentIndex">
-    <number>2</number>
-   </property>
    <property name="toolTip">
     <string>PLC_AnOutConf_1</string>
    </property>
    <property name="whatsThis">
     <string>ATCMcombobox widget</string>
+   </property>
+   <property name="currentIndex">
+    <number>2</number>
    </property>
    <property name="variable">
     <string>PLC_AnOutConf_1</string>
@@ -1768,14 +1768,14 @@ background-color: rgb(255, 255, 127);
      <pointsize>10</pointsize>
     </font>
    </property>
-   <property name="currentIndex">
-    <number>2</number>
-   </property>
    <property name="toolTip">
     <string>PLC_AnOutConf_3</string>
    </property>
    <property name="whatsThis">
     <string>ATCMcombobox widget</string>
+   </property>
+   <property name="currentIndex">
+    <number>2</number>
    </property>
    <property name="variable">
     <string>PLC_AnOutConf_3</string>
@@ -2079,14 +2079,14 @@ color: rgb(0, 0, 0);</string>
      <pointsize>10</pointsize>
     </font>
    </property>
-   <property name="currentIndex">
-    <number>2</number>
-   </property>
    <property name="toolTip">
     <string>PLC_AnOutConf_4</string>
    </property>
    <property name="whatsThis">
     <string>ATCMcombobox widget</string>
+   </property>
+   <property name="currentIndex">
+    <number>2</number>
    </property>
    <property name="variable">
     <string>PLC_AnOutConf_4</string>
@@ -2739,14 +2739,14 @@ color: rgb(0, 0, 0);</string>
      <pointsize>10</pointsize>
     </font>
    </property>
-   <property name="currentIndex">
-    <number>2</number>
-   </property>
    <property name="toolTip">
     <string>PLC_AnInConf_2</string>
    </property>
    <property name="whatsThis">
     <string>ATCMcombobox widget</string>
+   </property>
+   <property name="currentIndex">
+    <number>2</number>
    </property>
    <property name="variable">
     <string>PLC_AnInConf_2</string>
@@ -2780,7 +2780,7 @@ color: rgb(0, 0, 0);</string>
     <enum>QFrame::Raised</enum>
    </property>
    <property name="mapping">
-    <string>0;---;1;[mA] 4..20;2;[V] 0..10;3;[°C] 0..600;4;[°C] 0..1200;5;[°C] 0..400;6;[°C]-40..800;7;[°C]-40..200</string>
+    <string>1;[mA] 4..20;2;[V] 0..10;3;[°C] TCJ;4;[°C] TCK;5;[°C] TCT;6;[°C] PT100E;7;[°C] PT100R;8;[°C] TCS;9;[°C] TCB;10;[°C] TCR;0;--</string>
    </property>
   </widget>
   <widget class="ATCMbutton" name="atcmButton_PLC_DigDir_3">
@@ -3386,14 +3386,14 @@ color: rgb(0, 0, 0);</string>
      <pointsize>10</pointsize>
     </font>
    </property>
-   <property name="currentIndex">
-    <number>2</number>
-   </property>
    <property name="toolTip">
     <string>PLC_AnOutConf_2</string>
    </property>
    <property name="whatsThis">
     <string>ATCMcombobox widget</string>
+   </property>
+   <property name="currentIndex">
+    <number>2</number>
    </property>
    <property name="variable">
     <string>PLC_AnOutConf_2</string>
@@ -3720,14 +3720,14 @@ color: rgb(0, 0, 0);</string>
      <pointsize>10</pointsize>
     </font>
    </property>
-   <property name="currentIndex">
-    <number>2</number>
-   </property>
    <property name="toolTip">
     <string>PLC_AnInConf_1</string>
    </property>
    <property name="whatsThis">
     <string>ATCMcombobox widget</string>
+   </property>
+   <property name="currentIndex">
+    <number>2</number>
    </property>
    <property name="variable">
     <string>PLC_AnInConf_1</string>
@@ -3761,7 +3761,7 @@ color: rgb(0, 0, 0);</string>
     <enum>QFrame::Raised</enum>
    </property>
    <property name="mapping">
-    <string>0;---;1;[mA] 4..20;2;[V] 0..10;3;[°C] 0..600;4;[°C] 0..1200;5;[°C] 0..400;6;[°C]-40..800;7;[°C]-40..200</string>
+    <string>1;[mA] 4..20;2;[V] 0..10;3;[°C] TCJ;4;[°C] TCK;5;[°C] TCT;6;[°C] PT100E;7;[°C] PT100R;8;[°C] TCS;9;[°C] TCB;10;[°C] TCR;0;--</string>
    </property>
   </widget>
   <widget class="ATCMled" name="atcmLed_PLC_DigIn_8">

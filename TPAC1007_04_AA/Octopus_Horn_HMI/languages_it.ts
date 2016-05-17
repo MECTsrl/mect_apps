@@ -586,7 +586,8 @@
     <message utf8="true">
         <location filename="page100.ui" line="1147"/>
         <location filename="page100.ui" line="1662"/>
-        <source>0;---;1;[mA] 4..20;2;[V] 0..10;3;[°C] 0..600;4;[°C] 0..1200;5;[°C] 0..400;6;[°C]-40..800;7;[°C]-40..200</source>
+        <source>1;[mA] 4..20;2;[V] 0..10;3;[°C] TCJ;4;[°C] TCK;5;[°C] TCT;6;[°C] PT100E;7;[°C] PT100R;8;[°C] TCS;9;[°C] TCB;10;[°C] TCR;0;--</source>
+        <oldsource>0;---;1;[mA] 4..20;2;[V] 0..10;3;[°C] 0..600;4;[°C] 0..1200;5;[°C] 0..400;6;[°C]-40..800;7;[°C]-40..200</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -724,6 +725,10 @@
         <location filename="page200.ui" line="2102"/>
         <location filename="page200.ui" line="2250"/>
         <location filename="page200.ui" line="2321"/>
+        <location filename="page200.ui" line="2433"/>
+        <location filename="page200.ui" line="2488"/>
+        <location filename="page200.ui" line="2543"/>
+        <location filename="page200.ui" line="2598"/>
         <source>ATCMlabel widget</source>
         <translation type="unfinished"></translation>
     </message>
@@ -772,6 +777,14 @@
         <location filename="page200.ui" line="2262"/>
         <location filename="page200.ui" line="2330"/>
         <location filename="page200.ui" line="2333"/>
+        <location filename="page200.ui" line="2442"/>
+        <location filename="page200.ui" line="2445"/>
+        <location filename="page200.ui" line="2497"/>
+        <location filename="page200.ui" line="2500"/>
+        <location filename="page200.ui" line="2552"/>
+        <location filename="page200.ui" line="2555"/>
+        <location filename="page200.ui" line="2607"/>
+        <location filename="page200.ui" line="2610"/>
         <source>0</source>
         <translation type="unfinished"></translation>
     </message>
@@ -988,6 +1001,30 @@ RTU 3 NODE 20</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="page200.ui" line="2430"/>
+        <location filename="page200.ui" line="2436"/>
+        <source>RTU0_READ_QUEUE</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="2485"/>
+        <location filename="page200.ui" line="2491"/>
+        <source>RTU0_TIMEOUTS</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="2540"/>
+        <location filename="page200.ui" line="2546"/>
+        <source>RTU0_WRITE_QUEUE</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="2595"/>
+        <location filename="page200.ui" line="2601"/>
+        <source>RTU0_COMM_ERRORS</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="page200.ui" line="1227"/>
         <location filename="page200.ui" line="1233"/>
         <source>RTU0_WRITES</source>
@@ -1020,6 +1057,10 @@ RTU 3 NODE 20</source>
         <location filename="page200.ui" line="1986"/>
         <location filename="page200.ui" line="2041"/>
         <location filename="page200.ui" line="2096"/>
+        <location filename="page200.ui" line="2427"/>
+        <location filename="page200.ui" line="2482"/>
+        <location filename="page200.ui" line="2537"/>
+        <location filename="page200.ui" line="2592"/>
         <source>65535</source>
         <translation type="unfinished"></translation>
     </message>
