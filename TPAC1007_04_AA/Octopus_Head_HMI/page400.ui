@@ -2522,40 +2522,6 @@ background-color: rgb(255, 255, 127);
     <enum>QFrame::Raised</enum>
    </property>
   </widget>
-  <widget class="ATCMtime" name="atcmTime">
-   <property name="geometry">
-    <rect>
-     <x>239</x>
-     <y>22</y>
-     <width>121</width>
-     <height>22</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>DejaVu Sans Mono</family>
-    </font>
-   </property>
-   <property name="toolTip">
-    <string>ATCM QTime</string>
-   </property>
-   <property name="whatsThis">
-    <string>ATCMtime widget</string>
-   </property>
-   <property name="bgColor">
-    <color>
-     <red>170</red>
-     <green>255</green>
-     <blue>127</blue>
-    </color>
-   </property>
-   <property name="borderWidth">
-    <number>0</number>
-   </property>
-   <property name="borderRadius">
-    <number>0</number>
-   </property>
-  </widget>
   <widget class="ATCMlabel" name="atcmLabel">
    <property name="enabled">
     <bool>false</bool>
@@ -2563,9 +2529,9 @@ background-color: rgb(255, 255, 127);
    <property name="geometry">
     <rect>
      <x>240</x>
-     <y>44</y>
+     <y>0</y>
      <width>120</width>
-     <height>25</height>
+     <height>22</height>
     </rect>
    </property>
    <property name="font">
@@ -2586,6 +2552,9 @@ background-color: rgb(255, 255, 127);
    <property name="variable">
     <string>PLC_time</string>
    </property>
+   <property name="suffix">
+    <string> s</string>
+   </property>
    <property name="refresh">
     <number>500</number>
    </property>
@@ -2605,7 +2574,7 @@ background-color: rgb(255, 255, 127);
     <color>
      <red>170</red>
      <green>255</green>
-     <blue>127</blue>
+     <blue>255</blue>
     </color>
    </property>
    <property name="fontColor">
@@ -2620,43 +2589,6 @@ background-color: rgb(255, 255, 127);
    </property>
    <property name="borderRadius">
     <number>0</number>
-   </property>
-  </widget>
-  <widget class="ATCMdate" name="atcmDate">
-   <property name="geometry">
-    <rect>
-     <x>239</x>
-     <y>0</y>
-     <width>121</width>
-     <height>22</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>DejaVu Sans Mono</family>
-    </font>
-   </property>
-   <property name="toolTip">
-    <string>ATCM QDate</string>
-   </property>
-   <property name="whatsThis">
-    <string>ATCMdate widget</string>
-   </property>
-   <property name="bgColor">
-    <color>
-     <red>170</red>
-     <green>255</green>
-     <blue>127</blue>
-    </color>
-   </property>
-   <property name="borderWidth">
-    <number>0</number>
-   </property>
-   <property name="borderRadius">
-    <number>0</number>
-   </property>
-   <property name="format">
-    <enum>ATCMdate::YYYY_MM_DD</enum>
    </property>
   </widget>
   <widget class="ATCMled" name="atcmLed_OK_RTUS_WR">
@@ -3502,7 +3434,7 @@ ON</string>
   <widget class="ATCMbutton" name="atcmButton_16">
    <property name="geometry">
     <rect>
-     <x>240</x>
+     <x>360</x>
      <y>0</y>
      <width>120</width>
      <height>70</height>
@@ -3759,6 +3691,154 @@ ON</string>
     <string>1;STARTING;2;READY;3;TESTING;4;DONE;5;RESETTING;6;STOPPING;7;ERROR;0;IDLE</string>
    </property>
   </widget>
+  <widget class="ATCMlabel" name="atcmLabel_PLC_Heartbeat">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>22</y>
+     <width>120</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans Mono</family>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>65535</string>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(0, 85, 0);</string>
+   </property>
+   <property name="toolTip">
+    <string>PLC_Heartbeat</string>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMlabel widget</string>
+   </property>
+   <property name="variable">
+    <string>PLC_Heartbeat</string>
+   </property>
+   <property name="prefix">
+    <string>RTU3 </string>
+   </property>
+   <property name="refresh">
+    <number>200</number>
+   </property>
+   <property name="max">
+    <string>0</string>
+   </property>
+   <property name="min">
+    <string>0</string>
+   </property>
+   <property name="viewStatus">
+    <bool>false</bool>
+   </property>
+   <property name="visibilityVar">
+    <string/>
+   </property>
+   <property name="bgColor">
+    <color>
+     <red>170</red>
+     <green>255</green>
+     <blue>127</blue>
+    </color>
+   </property>
+   <property name="fontColor">
+    <color>
+     <red>0</red>
+     <green>0</green>
+     <blue>0</blue>
+    </color>
+   </property>
+   <property name="borderWidth">
+    <number>0</number>
+   </property>
+   <property name="borderRadius">
+    <number>0</number>
+   </property>
+   <property name="format">
+    <enum>ATCMlabel::Hex</enum>
+   </property>
+  </widget>
+  <widget class="ATCMlabel" name="atcmLabel_PLC_Heartbeat_2">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>44</y>
+     <width>120</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans Mono</family>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>65535</string>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(0, 85, 0);</string>
+   </property>
+   <property name="toolTip">
+    <string>RTU_HeartBeat</string>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMlabel widget</string>
+   </property>
+   <property name="variable">
+    <string>RTU_HeartBeat</string>
+   </property>
+   <property name="prefix">
+    <string>RTU0 </string>
+   </property>
+   <property name="refresh">
+    <number>200</number>
+   </property>
+   <property name="max">
+    <string>0</string>
+   </property>
+   <property name="min">
+    <string>0</string>
+   </property>
+   <property name="viewStatus">
+    <bool>false</bool>
+   </property>
+   <property name="visibilityVar">
+    <string/>
+   </property>
+   <property name="bgColor">
+    <color>
+     <red>255</red>
+     <green>255</green>
+     <blue>127</blue>
+    </color>
+   </property>
+   <property name="fontColor">
+    <color>
+     <red>0</red>
+     <green>0</green>
+     <blue>0</blue>
+    </color>
+   </property>
+   <property name="borderWidth">
+    <number>0</number>
+   </property>
+   <property name="borderRadius">
+    <number>0</number>
+   </property>
+   <property name="format">
+    <enum>ATCMlabel::Hex</enum>
+   </property>
+  </widget>
   <zorder>atcmLed_OK_RTU1_RD</zorder>
   <zorder>atcmLed_OK_CAN1_RD</zorder>
   <zorder>atcmLed_OK_RTUS_RD</zorder>
@@ -3831,9 +3911,7 @@ ON</string>
   <zorder>atcmLed_OK_VCC_fbk</zorder>
   <zorder>atcmLed_OK_mA_max</zorder>
   <zorder>atcmButton_page405</zorder>
-  <zorder>atcmTime</zorder>
   <zorder>atcmLabel</zorder>
-  <zorder>atcmDate</zorder>
   <zorder>atcmLed_OK_RTUS_WR</zorder>
   <zorder>atcmLed_OK_RTU1_WR</zorder>
   <zorder>atcmLed_OK_RTU3_WR</zorder>
@@ -3861,6 +3939,8 @@ ON</string>
   <zorder>line_hr_4</zorder>
   <zorder>line_vt_1</zorder>
   <zorder>line_vt_2</zorder>
+  <zorder>atcmLabel_PLC_Heartbeat</zorder>
+  <zorder>atcmLabel_PLC_Heartbeat_2</zorder>
  </widget>
  <customwidgets>
   <customwidget>
@@ -3874,11 +3954,6 @@ ON</string>
    <header>atcmplugin.h</header>
   </customwidget>
   <customwidget>
-   <class>ATCMdate</class>
-   <extends>QPushButton</extends>
-   <header>atcmplugin.h</header>
-  </customwidget>
-  <customwidget>
    <class>ATCMlabel</class>
    <extends>QPushButton</extends>
    <header>atcmplugin.h</header>
@@ -3886,11 +3961,6 @@ ON</string>
   <customwidget>
    <class>ATCMled</class>
    <extends>QLabel</extends>
-   <header>atcmplugin.h</header>
-  </customwidget>
-  <customwidget>
-   <class>ATCMtime</class>
-   <extends>QPushButton</extends>
    <header>atcmplugin.h</header>
   </customwidget>
  </customwidgets>

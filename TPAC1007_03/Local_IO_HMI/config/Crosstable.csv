@@ -197,7 +197,7 @@
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
-1;P;RTU_HEARTBEAT   ;UINT     ;0   ;RTU       ;               ;    ;2   ;0   ;200 ;3   ;[RW]
+1;P;RTU_HEARTBEAT   ;UINT     ;0   ;RTU       ;               ;    ;2   ;0   ;200 ;3   ;[RO]
 1;P;RTU_RTU1_WR     ;WORD_BIT ;3   ;RTU       ;               ;    ;2   ;1   ;200 ;3   ;[RW]
 1;P;RTU_RTU1_RD     ;WORD_BIT ;4   ;RTU       ;               ;    ;2   ;2   ;200 ;3   ;[RO]
 ;;;;;;;;;;;;

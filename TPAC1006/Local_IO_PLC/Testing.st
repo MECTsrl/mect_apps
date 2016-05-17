@@ -24,17 +24,18 @@ END_VAR
 	    if (TEST_COMMAND = STATUS_DONE) then
 			case substatus of
 			0: (* for each tested output write the specified value *)
-	        	ifTST_readVAL_writePLC();
+	        	ifTST_readVAL_writePLC(TRUE);
 				substatus := 1;
-			1: (* wait for propagation of max 28 PLC writes on local CANopen and I/O settling *)
+			1: ifTST_readVAL_writePLC(FALSE);
+				substatus := 2;
+			2: (* wait for propagation of max 28 PLC writes on local CANopen and I/O settling *)
 				timer(IN := TRUE, PT := T#4000ms); (* Analog Input Filters are high on TPAC1006 *)
 				if timer.Q then
 					timer(IN := FALSE);
-					substatus := 2;
+					(* for each tested input write the actual value *)
+			        ifTST_readPLC_writeRES();
+					substatus := 3;
 				end_if;
-			2: (* for each tested input write the actual value *)
-		        ifTST_readPLC_writeRES();
-				substatus := 3;
 			3: (* wait for propagation *)
 				timer(IN := TRUE, PT := T#500ms); (* Modbus/TCP *)
 				if timer.Q then

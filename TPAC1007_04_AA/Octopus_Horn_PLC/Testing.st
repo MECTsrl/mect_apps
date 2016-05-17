@@ -46,12 +46,12 @@ END_VAR
 				TEST_STATUS := STATUS;
 			end_case;
 			(* RPM output @ 50.0 Hz (instead of PWM 50%) *)
- 	        if (TST_AnOut_3 AND VAL_AnOut_3 = 50) then PLC_DigDir_1 := 1; PLC_DigOut_1 := not PLC_DigOut_1; end_if;
+ 	        if (TST_AnOut_3 AND VAL_AnOut_3 > 0) then PLC_DigOut_1 := not PLC_DigOut_1; end_if;
 	    end_if;
 	
 	STATUS_DONE:
 		(* RPM output @ 50.0 Hz *)
-        if (TST_AnOut_3 AND VAL_AnOut_3 > 0) then PLC_DigDir_1 := 1; PLC_DigOut_1 := not PLC_DigOut_1; end_if;
+        if (TST_AnOut_3 AND VAL_AnOut_3 > 0) then PLC_DigOut_1 := not PLC_DigOut_1; end_if;
 		if (TEST_COMMAND = STATUS_REMOTE) then
 			substatus := 0;
 			ClearPLC();

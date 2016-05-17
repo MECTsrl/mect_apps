@@ -197,7 +197,7 @@
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
-1;P;RTU_HEARTBEAT   ;UINT     ;0   ;RTU       ;               ;3   ;2   ;0   ;200 ;3   ;[RW]
+1;P;RTU_HEARTBEAT   ;UINT     ;0   ;RTU       ;               ;3   ;2   ;0   ;200 ;3   ;[RO]
 1;P;RTU_RTU_WR      ;WORD_BIT ;3   ;RTU       ;               ;3   ;2   ;1   ;200 ;3   ;[RW]
 1;P;RTU_RTU_RD      ;WORD_BIT ;4   ;RTU       ;               ;3   ;2   ;2   ;200 ;3   ;[RO]
 ;;;;;;;;;;;;
@@ -219,16 +219,16 @@
 1;P;CAN_DigOut_7    ;BIT      ;0   ;CANOPEN   ;               ;1   ;1   ;15  ;205 ;16  ;[RW]
 1;P;CAN_DigOut_8    ;BIT      ;0   ;CANOPEN   ;               ;1   ;1   ;16  ;205 ;16  ;[RW]
 ;;;;;;;;;;;;
-1;P;CH1_NETRUN      ;BIT      ;0   ;CANOPEN   ;               ;1   ;0   ;0   ;208 ;1   ;[RO]
-1;P;CH1_NETGOOD     ;BIT      ;0   ;CANOPEN   ;               ;1   ;0   ;0   ;209 ;1   ;[RO]
-1;P;CH1_NETERR      ;UDINT    ;0   ;CANOPEN   ;               ;1   ;0   ;0   ;210 ;1   ;[RO]
-1;P;CH1_NETRST      ;BIT      ;0   ;CANOPEN   ;               ;1   ;0   ;0   ;211 ;1   ;[RW]
-1;P;CH1_NETDIS      ;BIT      ;0   ;CANOPEN   ;               ;1   ;0   ;0   ;212 ;1   ;[RW]
-1;P;CH1_01_NODERUN  ;BIT      ;0   ;CANOPEN   ;               ;1   ;0   ;0   ;213 ;1   ;[RO]
-1;P;CH1_01_NODEGOOD ;BIT      ;0   ;CANOPEN   ;               ;1   ;0   ;0   ;214 ;1   ;[RO]
-1;P;CH1_01_NODEERR  ;UDINT    ;0   ;CANOPEN   ;               ;1   ;0   ;0   ;215 ;1   ;[RO]
-1;P;CH1_01_NODERST  ;BIT      ;0   ;CANOPEN   ;               ;1   ;0   ;0   ;216 ;1   ;[RW]
-1;P;CH1_01_NODEDIS  ;BIT      ;0   ;CANOPEN   ;               ;1   ;0   ;0   ;217 ;1   ;[RW]
+1;P;CH1_NETRUN      ;BIT      ;0   ;CANOPEN   ;               ;1   ;0   ;0   ;222 ;1   ;[RO]
+1;P;CH1_NETGOOD     ;BIT      ;0   ;CANOPEN   ;               ;1   ;0   ;0   ;223 ;1   ;[RO]
+1;P;CH1_NETERR      ;UDINT    ;0   ;CANOPEN   ;               ;1   ;0   ;0   ;224 ;1   ;[RO]
+1;P;CH1_NETRST      ;BIT      ;0   ;CANOPEN   ;               ;1   ;0   ;0   ;225 ;1   ;[RW]
+1;P;CH1_NETDIS      ;BIT      ;0   ;CANOPEN   ;               ;1   ;0   ;0   ;226 ;1   ;[RW]
+1;P;CH1_01_NODERUN  ;BIT      ;0   ;CANOPEN   ;               ;1   ;0   ;0   ;227 ;1   ;[RO]
+1;P;CH1_01_NODEGOOD ;BIT      ;0   ;CANOPEN   ;               ;1   ;0   ;0   ;228 ;1   ;[RO]
+1;P;CH1_01_NODEERR  ;UDINT    ;0   ;CANOPEN   ;               ;1   ;0   ;0   ;229 ;1   ;[RO]
+1;P;CH1_01_NODERST  ;BIT      ;0   ;CANOPEN   ;               ;1   ;0   ;0   ;230 ;1   ;[RW]
+1;P;CH1_01_NODEDIS  ;BIT      ;0   ;CANOPEN   ;               ;1   ;0   ;0   ;231 ;1   ;[RW]
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;

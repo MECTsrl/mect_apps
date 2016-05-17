@@ -253,7 +253,7 @@
 2;P;RTU_AnOut_8     ;INT      ;2   ;RTU       ;               ;    ;1   ;14  ;210 ;47  ;[RW]
 2;P;RTU_AnInConf_1  ;UINT     ;0   ;RTU       ;               ;    ;1   ;15  ;210 ;47  ;[RW]
 2;P;RTU_AnInConf_2  ;UINT     ;0   ;RTU       ;               ;    ;1   ;16  ;210 ;47  ;[RW]
-2;P;RTU_HeartBeat   ;UDINT    ;3   ;RTU       ;               ;    ;1   ;17  ;210 ;47  ;[RO]
+2;P;RTU_HeartBeat   ;UDINT    ;0   ;RTU       ;               ;    ;1   ;17  ;210 ;47  ;[RO]
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;

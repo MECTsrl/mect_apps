@@ -37,7 +37,6 @@ END_VAR
     if (TST_AnOut_4   ) then ; end_if;
 
     if (TST_Tamb      ) then RES_Tamb := PLC_Tamb; end_if;
-    if (TST_RPM       ) then ; end_if;
     if (TST_FWrevision) then RES_FWrevision := PLC_FWrevision; end_if;
     if (TST_HWconfig  ) then RES_HWconfig := PLC_HWconfig; end_if;
 
