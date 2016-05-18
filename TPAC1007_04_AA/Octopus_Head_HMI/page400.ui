@@ -2941,8 +2941,11 @@ background-color: rgb(255, 255, 127);
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>10</pointsize>
+     <pointsize>13</pointsize>
     </font>
+   </property>
+   <property name="text">
+    <string>11</string>
    </property>
    <property name="toolTip">
     <string>TEST_STEP</string>
@@ -3115,7 +3118,12 @@ ON</string>
     <font>
      <family>DejaVu Sans</family>
      <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
     </font>
+   </property>
+   <property name="text">
+    <string>11</string>
    </property>
    <property name="toolTip">
     <string>TEST_STEP_MAX</string>
@@ -3434,7 +3442,7 @@ ON</string>
   <widget class="ATCMbutton" name="atcmButton_16">
    <property name="geometry">
     <rect>
-     <x>360</x>
+     <x>240</x>
      <y>0</y>
      <width>120</width>
      <height>70</height>

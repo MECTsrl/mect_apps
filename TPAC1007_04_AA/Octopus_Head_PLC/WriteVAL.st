@@ -43,8 +43,6 @@ END_VAR
 		VALx_AnInConf_1 := VAL_AnInConf_1;
 		VALx_AnInFltr_1 := VAL_AnInFltr_1;
 		(* <-- Head AO1 + DO6 + DO8 *) 
-		PLC_DigDir_6 := 1;
-		PLC_DigDir_8 := 1;
 		case VAL_AnInConf_1 of
 		1:       PLC_DigOut_8 := 1; PLC_DigOut_6 := 0; PLC_AnOutConf_1 := VAL_AnInConf_1; PLC_AnOut_1 := VAL_AnIn_1 / 10;
 		2:       PLC_DigOut_8 := 0; PLC_DigOut_6 := 0; PLC_AnOutConf_1 := VAL_AnInConf_1; PLC_AnOut_1 := VAL_AnIn_1 / 10;
@@ -58,8 +56,6 @@ END_VAR
 		VALx_AnInConf_2 := VAL_AnInConf_2;
 		VALx_AnInFltr_2 := VAL_AnInFltr_2;
 		(* <-- Head AO2 + DO5 + DO7 *) 
-		PLC_DigDir_5 := 1;
-		PLC_DigDir_7 := 1;
 		case VAL_AnInConf_2 of
 		1:       PLC_DigOut_7 := 1; PLC_DigOut_5 := 0; PLC_AnOutConf_2 := VAL_AnInConf_2; PLC_AnOut_2 := VAL_AnIn_2 / 10;
 		2:       PLC_DigOut_7 := 0; PLC_DigOut_5 := 0; PLC_AnOutConf_2 := VAL_AnInConf_2; PLC_AnOut_2 := VAL_AnIn_2 / 10;

@@ -5,7 +5,14 @@ FUNCTION ClearPLC
 VAR_INPUT
 END_VAR
 	
-	PLC_DigDir_1 := 0;
+	PLC_DigOut_1 := 0;
+
+	PLC_DigOut_3 := 0;
+	PLC_DigOut_4 := 0;
+	PLC_DigOut_5 := 0;
+	PLC_DigOut_6 := 0;
+	PLC_DigOut_7 := 0;
+	PLC_DigOut_8 := 0;
 
 	PLC_AnOutConf_1 := 2;
 	PLC_AnOutConf_2 := 2;

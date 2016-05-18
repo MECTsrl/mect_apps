@@ -5,15 +5,6 @@ FUNCTION ifTST_readPLC_writeRES
 VAR_INPUT
 END_VAR
 
-    if (TST_DigIn_1   ) then RES_DigIn_1 := PLC_DigIn_1; end_if;
-    if (TST_DigIn_2   ) then RES_DigIn_2 := PLC_DigIn_2; end_if;
-    if (TST_DigIn_3   ) then RES_DigIn_3 := PLC_DigIn_3; end_if;
-    if (TST_DigIn_4   ) then RES_DigIn_4 := PLC_DigIn_4; end_if;
-    if (TST_DigIn_5   ) then RES_DigIn_5 := PLC_DigIn_5; end_if;
-    if (TST_DigIn_6   ) then RES_DigIn_6 := PLC_DigIn_6; end_if;
-    if (TST_DigIn_7   ) then RES_DigIn_7 := PLC_DigIn_7; end_if;
-    if (TST_DigIn_8   ) then RES_DigIn_8 := PLC_DigIn_8; end_if;
-
     if (TST_DigIn_9   ) then RES_DigIn_9 := PLC_DigIn_9; end_if;
     if (TST_DigIn_10  ) then RES_DigIn_10 := PLC_DigIn_10; end_if;
     if (TST_DigIn_11  ) then RES_DigIn_11 := PLC_DigIn_11; end_if;
