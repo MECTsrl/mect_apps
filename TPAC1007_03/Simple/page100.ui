@@ -1477,7 +1477,7 @@
     <string>ATCMcombobox widget</string>
    </property>
    <property name="currentIndex">
-    <number>2</number>
+    <number>0</number>
    </property>
    <property name="variable">
     <string>PLC_AnInConf_2</string>
@@ -2491,7 +2491,7 @@
     <string>ATCMcombobox widget</string>
    </property>
    <property name="currentIndex">
-    <number>2</number>
+    <number>0</number>
    </property>
    <property name="variable">
     <string>PLC_AnOutConf_1</string>
@@ -2525,7 +2525,7 @@
     <enum>QFrame::Raised</enum>
    </property>
    <property name="mapping">
-    <string>0;---;1;[mA] 4..20;2;[V] 0..10;3;[%] PWM</string>
+    <string>1;[mA] 4..20;2;[V] 0..10;0;---</string>
    </property>
   </widget>
   <widget class="ATCMgraph" name="atcmGraph">

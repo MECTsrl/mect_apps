@@ -515,7 +515,8 @@
     </message>
     <message>
         <location filename="page100.ui" line="2528"/>
-        <source>0;---;1;[mA] 4..20;2;[V] 0..10;3;[%] PWM</source>
+        <source>1;[mA] 4..20;2;[V] 0..10;0;---</source>
+        <oldsource>0;---;1;[mA] 4..20;2;[V] 0..10;3;[%] PWM</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
