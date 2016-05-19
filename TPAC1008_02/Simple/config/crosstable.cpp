@@ -276,6 +276,7 @@ float PLC_timeWin = 0;
 u_int16_t PLC_Version = 0;
 u_int16_t PLC_EngineStatus = 0;
 int PLC_ResetValues = 0;
+int PLC_buzzerOn = 0;
 
 
 int doWrite_RTU0_TYPE_PORT(u_int32_t value)
@@ -5030,6 +5031,24 @@ return getStatus(ID_PLC_ResetValues);
 }
 
 
+int doWrite_PLC_buzzerOn(int value)
+{
+return doWrite(ID_PLC_buzzerOn,  &value);
+}
+
+
+int addWrite_PLC_buzzerOn(int value)
+{
+return addWrite(ID_PLC_buzzerOn, &value);
+}
+
+
+int getStatus_PLC_buzzerOn()
+{
+return getStatus(ID_PLC_buzzerOn);
+}
+
+
 int update_all(void)
 {
 int retval = 0;
@@ -5297,5 +5316,6 @@ retval += readFromDb(ID_PLC_timeWin, &PLC_timeWin);
 retval += readFromDb(ID_PLC_Version, &PLC_Version);
 retval += readFromDb(ID_PLC_EngineStatus, &PLC_EngineStatus);
 retval += readFromDb(ID_PLC_ResetValues, &PLC_ResetValues);
+retval += readFromDb(ID_PLC_buzzerOn, &PLC_buzzerOn);
 return retval;
 }

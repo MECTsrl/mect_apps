@@ -1600,6 +1600,12 @@ int doWrite_PLC_ResetValues(int value);
 int addWrite_PLC_ResetValues(int value);
 int getStatus_PLC_ResetValues();
  
+#define ID_PLC_buzzerOn 5397
+extern int PLC_buzzerOn;
+int doWrite_PLC_buzzerOn(int value);
+int addWrite_PLC_buzzerOn(int value);
+int getStatus_PLC_buzzerOn();
+ 
 #ifdef __cplusplus
 }
 #endif
