@@ -17,7 +17,7 @@ END_VAR
 				return;
 			end_if;
 			PLC_DigOut_3 := true;
-			clearPLC();
+			ClearPLC();
 			TEST2_COMMAND := TEST_STATUS_REMOTE;
 			TEST_STEP := 0;
 			RESULT := RESULT_UNKNOWN;
@@ -120,7 +120,7 @@ END_VAR
 			return;
 		end_if;
 		if (AUTOMATIC and RESULT = RESULT_OK) or PLC_DigIn_4 then (* GO *)
-			ClearPLC();
+			(* ClearPLC(); *)
 			STATUS := STATUS_RESETTING;
 			return;
 		end_if;

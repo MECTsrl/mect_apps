@@ -36,7 +36,7 @@ END_VAR
     if (TST_AnOut_2   ) then ; end_if;
    
     if (TST_Tamb      ) then RES_Tamb := PLC_Tamb; end_if;
-    if (TST_RPM       ) then RES_RPM := PLC_RPM; end_if;
+    if (TST_RPM       ) then RES_RPM := PLC_RPM / 10; end_if;
    
 	if (TST_RTUS_WR   ) then ; end_if;
 	if (TST_RTUS_RD   ) then ; end_if;	

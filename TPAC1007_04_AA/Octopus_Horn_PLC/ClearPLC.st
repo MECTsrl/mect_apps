@@ -14,6 +14,9 @@ END_VAR
 	PLC_DigOut_7 := 0;
 	PLC_DigOut_8 := 0;
 
+	PLC_AnInConf_1 := 0;
+	PLC_AnInConf_2 := 0;
+
 	PLC_AnOutConf_1 := 2;
 	PLC_AnOutConf_2 := 2;
 	PLC_AnOutConf_3 := 2;

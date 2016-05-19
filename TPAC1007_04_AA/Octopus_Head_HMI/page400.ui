@@ -3847,6 +3847,42 @@ ON</string>
     <enum>ATCMlabel::Hex</enum>
    </property>
   </widget>
+  <widget class="ATCMled" name="atcmLed_GO_1">
+   <property name="geometry">
+    <rect>
+     <x>42</x>
+     <y>50</y>
+     <width>18</width>
+     <height>18</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>PLC_DigIn_4</string>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMled widget</string>
+   </property>
+   <property name="variable">
+    <string>PLC_DigIn_4</string>
+   </property>
+   <property name="refresh">
+    <number>200</number>
+   </property>
+   <property name="viewStatus">
+    <bool>false</bool>
+   </property>
+   <property name="visibilityVar">
+    <string/>
+   </property>
+   <property name="onIcon">
+    <iconset>
+     <normaloff>:/on.png</normaloff>:/on.png</iconset>
+   </property>
+   <property name="offIcon">
+    <iconset>
+     <normaloff>:/off.png</normaloff>:/off.png</iconset>
+   </property>
+  </widget>
   <zorder>atcmLed_OK_RTU1_RD</zorder>
   <zorder>atcmLed_OK_CAN1_RD</zorder>
   <zorder>atcmLed_OK_RTUS_RD</zorder>
@@ -3949,6 +3985,7 @@ ON</string>
   <zorder>line_vt_2</zorder>
   <zorder>atcmLabel_PLC_Heartbeat</zorder>
   <zorder>atcmLabel_PLC_Heartbeat_2</zorder>
+  <zorder>atcmLed_GO_1</zorder>
  </widget>
  <customwidgets>
   <customwidget>

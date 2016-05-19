@@ -120,6 +120,7 @@ void loop(void)
                 return;
             }
             doWrite_STATUS(STATUS_TESTING);
+            sleep(1);
             return;
         }
         break;

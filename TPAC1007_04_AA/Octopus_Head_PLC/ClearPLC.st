@@ -5,11 +5,6 @@ FUNCTION ClearPLC
 VAR_INPUT
 END_VAR
 
-	PLC_DigOut_5 := 0;
-	PLC_DigOut_6 := 0;
-	PLC_DigOut_7 := 0;
-	PLC_DigOut_8 := 0;
-	
 	RTU_DigOut_1 := FALSE;
 	RTU_DigOut_2 := FALSE;
 	RTU_DigOut_3 := FALSE;
@@ -35,6 +30,11 @@ END_VAR
 	RTU_AnOut_6 := 0;
 	RTU_AnOut_7 := 0;
 	RTU_AnOut_8 := 0;
+	
+	PLC_DigOut_5 := 0;
+	PLC_DigOut_6 := 0;
+	PLC_DigOut_7 := 0;
+	PLC_DigOut_8 := 0;
 	
 	PLC_AnOutConf_1 := 2;
 	PLC_AnOutConf_2 := 2;

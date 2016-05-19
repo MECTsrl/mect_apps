@@ -5,22 +5,22 @@ FUNCTION WriteVAL
 VAR_INPUT
 END_VAR
 
-	if TST_DigIn_1  then RTU_DigOut_1 := VAL_DigIn_1;  end_if;
-	if TST_DigIn_2  then RTU_DigOut_2 := VAL_DigIn_2;  end_if;
-	if TST_DigIn_3  then RTU_DigOut_3 := VAL_DigIn_3;  end_if;
-	if TST_DigIn_4  then RTU_DigOut_4 := VAL_DigIn_4;  end_if;
-	if TST_DigIn_5  then RTU_DigOut_5 := VAL_DigIn_5;  end_if;
-	if TST_DigIn_6  then RTU_DigOut_6 := VAL_DigIn_6;  end_if;
-	if TST_DigIn_7  then RTU_DigOut_7 := VAL_DigIn_7;  end_if;
-	if TST_DigIn_8  then RTU_DigOut_8 := VAL_DigIn_8;  end_if;
-	if TST_DigIn_9  then RTU_DigOut_9 := VAL_DigIn_9;  end_if;
-	if TST_DigIn_10 then RTU_DigOut_10:= VAL_DigIn_10; end_if;
-	if TST_DigIn_11 then RTU_DigOut_11:= VAL_DigIn_11; end_if;
-	if TST_DigIn_12 then RTU_DigOut_12:= VAL_DigIn_12; end_if;
-	if TST_DigIn_13 then RTU_DigOut_13:= VAL_DigIn_13; end_if;
-	if TST_DigIn_14 then RTU_DigOut_14:= VAL_DigIn_14; end_if;
-	if TST_DigIn_15 then RTU_DigOut_15:= VAL_DigIn_15; end_if;
-	if TST_DigIn_16 then RTU_DigOut_16:= VAL_DigIn_16; end_if;
+	if TST_DigIn_1  then RTU_DigOut_1 := VAL_DigIn_1;  else RTU_DigOut_1 := 0; end_if;
+	if TST_DigIn_2  then RTU_DigOut_2 := VAL_DigIn_2;  else RTU_DigOut_2 := 0; end_if;
+	if TST_DigIn_3  then RTU_DigOut_3 := VAL_DigIn_3;  else RTU_DigOut_3 := 0; end_if;
+	if TST_DigIn_4  then RTU_DigOut_4 := VAL_DigIn_4;  else RTU_DigOut_4 := 0; end_if;
+	if TST_DigIn_5  then RTU_DigOut_5 := VAL_DigIn_5;  else RTU_DigOut_5 := 0; end_if;
+	if TST_DigIn_6  then RTU_DigOut_6 := VAL_DigIn_6;  else RTU_DigOut_6 := 0; end_if;
+	if TST_DigIn_7  then RTU_DigOut_7 := VAL_DigIn_7;  else RTU_DigOut_7 := 0; end_if;
+	if TST_DigIn_8  then RTU_DigOut_8 := VAL_DigIn_8;  else RTU_DigOut_8 := 0; end_if;
+	if TST_DigIn_9  then RTU_DigOut_9 := VAL_DigIn_9;  else RTU_DigOut_9 := 0; end_if;
+	if TST_DigIn_10 then RTU_DigOut_10:= VAL_DigIn_10; else RTU_DigOut_10:= 0; end_if;
+	if TST_DigIn_11 then RTU_DigOut_11:= VAL_DigIn_11; else RTU_DigOut_11:= 0; end_if;
+	if TST_DigIn_12 then RTU_DigOut_12:= VAL_DigIn_12; else RTU_DigOut_12:= 0; end_if;
+	if TST_DigIn_13 then RTU_DigOut_13:= VAL_DigIn_13; else RTU_DigOut_13:= 0; end_if;
+	if TST_DigIn_14 then RTU_DigOut_14:= VAL_DigIn_14; else RTU_DigOut_14:= 0; end_if;
+	if TST_DigIn_15 then RTU_DigOut_15:= VAL_DigIn_15; else RTU_DigOut_15:= 0; end_if;
+	if TST_DigIn_16 then RTU_DigOut_16:= VAL_DigIn_16; else RTU_DigOut_16:= 0; end_if;
 
 	if TST_DigOut_1  then VALx_DigOut_1 := VAL_DigOut_1;  end_if;
 	if TST_DigOut_2  then VALx_DigOut_2 := VAL_DigOut_2;  end_if;
