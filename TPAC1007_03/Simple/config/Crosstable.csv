@@ -5007,16 +5007,16 @@
 1;P;RTU0_LAST_ERROR ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5000;10  ;[RO]
 1;P;RTU0_WRITE_QUEUE;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5000;10  ;[RO]
 1;P;RTU0_READ_QUEUE ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5000;10  ;[RO]
-1;P;RTU1_TYPE_PORT  ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5010;10  ;[RO]
-1;P;RTU1_BAUDRATE   ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5010;10  ;[RO]
-1;P;RTU1_STATUS     ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5010;10  ;[RO]
-1;P;RTU1_READS      ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5010;10  ;[RO]
-1;P;RTU1_WRITES     ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5010;10  ;[RO]
-1;P;RTU1_TIMEOUTS   ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5010;10  ;[RO]
-1;P;RTU1_COMM_ERRORS;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5010;10  ;[RO]
-1;P;RTU1_LAST_ERROR ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5010;10  ;[RO]
-1;P;RTU1_WRITE_QUEUE;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5010;10  ;[RO]
-1;P;RTU1_READ_QUEUE ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5010;10  ;[RO]
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
 1;P;RTU3_TYPE_PORT  ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5020;10  ;[RO]
 1;P;RTU3_BAUDRATE   ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5020;10  ;[RO]
 1;P;RTU3_STATUS     ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5020;10  ;[RO]
@@ -5027,26 +5027,26 @@
 1;P;RTU3_LAST_ERROR ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5020;10  ;[RO]
 1;P;RTU3_WRITE_QUEUE;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5020;10  ;[RO]
 1;P;RTU3_READ_QUEUE ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5020;10  ;[RO]
-1;P;CAN0_TYPE_PORT  ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5030;10  ;[RO]
-1;P;CAN0_BAUDRATE   ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5030;10  ;[RO]
-1;P;CAN0_STATUS     ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5030;10  ;[RO]
-1;P;CAN0_READS      ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5030;10  ;[RO]
-1;P;CAN0_WRITES     ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5030;10  ;[RO]
-1;P;CAN0_TIMEOUTS   ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5030;10  ;[RO]
-1;P;CAN0_COMM_ERRORS;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5030;10  ;[RO]
-1;P;CAN0_LAST_ERROR ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5030;10  ;[RO]
-1;P;CAN0_WRITE_QUEUE;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5030;10  ;[RO]
-1;P;CAN0_READ_QUEUE ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5030;10  ;[RO]
-1;P;CAN1_TYPE_PORT  ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5040;10  ;[RO]
-1;P;CAN1_BAUDRATE   ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5040;10  ;[RO]
-1;P;CAN1_STATUS     ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5040;10  ;[RO]
-1;P;CAN1_READS      ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5040;10  ;[RO]
-1;P;CAN1_WRITES     ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5040;10  ;[RO]
-1;P;CAN1_TIMEOUTS   ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5040;10  ;[RO]
-1;P;CAN1_COMM_ERRORS;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5040;10  ;[RO]
-1;P;CAN1_LAST_ERROR ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5040;10  ;[RO]
-1;P;CAN1_WRITE_QUEUE;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5040;10  ;[RO]
-1;P;CAN1_READ_QUEUE ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5040;10  ;[RO]
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
 1;P;TCPS_TYPE_PORT  ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5050;10  ;[RO]
 1;P;TCPS_IP_ADDRESS ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5050;10  ;[RO]
 1;P;TCPS_STATUS     ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5050;10  ;[RO]
