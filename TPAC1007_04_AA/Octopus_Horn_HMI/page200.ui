@@ -885,10 +885,10 @@ RTU 0 NODE 2</string>
     </color>
    </property>
    <property name="text">
-    <string>TP1007_4AA</string>
+    <string>TPAC1007_4AA</string>
    </property>
    <property name="pressText">
-    <string>TP1007_4AA</string>
+    <string>TPAC1007_4AA</string>
    </property>
    <property name="borderWidth">
     <number>1</number>

@@ -31,6 +31,9 @@ END_VAR
 	RTU_AnOut_7 := 0;
 	RTU_AnOut_8 := 0;
 	
+	RTU_AnInConf_1 := 0;
+	RTU_AnInConf_2 := 0;
+
 	PLC_DigOut_5 := 0;
 	PLC_DigOut_6 := 0;
 	PLC_DigOut_7 := 0;

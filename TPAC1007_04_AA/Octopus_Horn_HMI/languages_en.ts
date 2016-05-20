@@ -1072,7 +1072,8 @@ RTU 3 NODE 20</source>
     <message>
         <location filename="page200.ui" line="888"/>
         <location filename="page200.ui" line="891"/>
-        <source>TP1007_4AA</source>
+        <source>TPAC1007_4AA</source>
+        <oldsource>TP1007_4AA</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>

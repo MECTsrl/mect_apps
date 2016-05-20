@@ -54,13 +54,36 @@ static void doReload();
 static int loadRecipe(char *filename, QList<u_int16_t> *indexes, QList<u_int32_t> table[]);
 static int writeRecipe(int step, QList<u_int16_t> *indexes, QList<u_int32_t> table[]);
 
+static u_int16_t previous_PLC_Heartbeat;
+static float previous_PLC_time;
+static float last_PLC_time;
+
 void setup(void)
 {
     doWrite_RESULT(RESULT_UNKNOWN);
+    previous_PLC_Heartbeat = PLC_Heartbeat;
+    previous_PLC_time = PLC_time;
+    last_PLC_time = PLC_time;
 }
 
 void loop(void)
 {
+    if (previous_PLC_Heartbeat == PLC_Heartbeat) {
+        if ((PLC_time - last_PLC_time) > 1.0) {
+            QMessageBox::critical(0, "WATCHDOG", "RTU3 hangup for 1s :(\nRestarting the system");
+            system("reboot");
+            // unreacheable code
+        }
+    } else {
+        previous_PLC_Heartbeat = PLC_Heartbeat;
+        last_PLC_time = PLC_time;
+    }
+    if (previous_PLC_time == PLC_time) {
+        QMessageBox::critical(0, "PLC_time hangup :(", "What happened?");
+    } else {
+        previous_PLC_time = PLC_time;
+    }
+
     switch (STATUS) {   // OCTOPUS STATE MACHINE
 
     case STATUS_IDLE:

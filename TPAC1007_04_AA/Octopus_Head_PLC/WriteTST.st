@@ -50,13 +50,13 @@ END_VAR
     (* we test the AnIn 3..4 by the Horn TPAC1007_4AA AnOut 1..2 and local DigOut 5..8 *)
 	TSTx_AnIn_3 := TST_AnIn_3;
     TST2_AnOut_1 := TST_AnIn_3;
-    TST2_DigOut_6 := TST_AnIn_3;
-    TST2_DigOut_8 := TST_AnIn_3;
+    TST2_DigOut_6 := TRUE;
+    TST2_DigOut_8 := TRUE;
 
 	TSTx_AnIn_4 := TST_AnIn_4;
     TST2_AnOut_2 := TST_AnIn_4;
-    TST2_DigOut_5 := TST_AnIn_4;
-    TST2_DigOut_7 := TST_AnIn_4;
+    TST2_DigOut_5 := TRUE;
+    TST2_DigOut_7 := TRUE;
 
     (* we test the AnIn 5..12 (PT100 only) by the TPLC005 8AO module (actually internal 8DO) *)
     TST2_AnOut_4:= TST_AnIn_5; (* only TPAC1007_AB *)
@@ -72,11 +72,11 @@ END_VAR
     (* we test the AnOut 1..2 by both the local AnIn 1..2 and the Horn TPAC1007_4AA AnIn 1..2 and local DigOut 3..4 *)
     TSTx_AnOut_1 := TST_AnOut_1;
     TST2_AnIn_1 := TST_AnOut_1;
-    TST2_DigOut_3 := TST_AnOut_1;
+    TST2_DigOut_3 := TRUE;
 
     TSTx_AnOut_2 := TST_AnOut_2;
     TST2_AnIn_2 := TST_AnOut_2;
-    TST2_DigOut_4 := TST_AnOut_2;
+    TST2_DigOut_4 := TRUE;
 
     (* we test the AnOut 3..4 by the by the TPLC005 internal 2AI *)
     TSTx_AnOut_3 := TST_AnOut_3;

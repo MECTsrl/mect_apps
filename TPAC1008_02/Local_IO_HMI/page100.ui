@@ -1785,13 +1785,13 @@
     <string>ATCMcombobox widget</string>
    </property>
    <property name="currentIndex">
-    <number>2</number>
+    <number>1</number>
    </property>
    <property name="variable">
     <string>PLC_AnInConf_1</string>
    </property>
    <property name="refresh">
-    <number>1000</number>
+    <number>200</number>
    </property>
    <property name="viewStatus">
     <bool>false</bool>
@@ -1844,13 +1844,13 @@
     <string>ATCMcombobox widget</string>
    </property>
    <property name="currentIndex">
-    <number>2</number>
+    <number>1</number>
    </property>
    <property name="variable">
     <string>PLC_AnOutConf_1</string>
    </property>
    <property name="refresh">
-    <number>1000</number>
+    <number>200</number>
    </property>
    <property name="viewStatus">
     <bool>false</bool>
@@ -2054,13 +2054,13 @@
     <string>ATCMcombobox widget</string>
    </property>
    <property name="currentIndex">
-    <number>2</number>
+    <number>1</number>
    </property>
    <property name="variable">
     <string>PLC_AnOutConf_2</string>
    </property>
    <property name="refresh">
-    <number>1000</number>
+    <number>200</number>
    </property>
    <property name="viewStatus">
     <bool>false</bool>
@@ -2211,13 +2211,13 @@
     <string>ATCMcombobox widget</string>
    </property>
    <property name="currentIndex">
-    <number>2</number>
+    <number>1</number>
    </property>
    <property name="variable">
     <string>PLC_AnInConf_2</string>
    </property>
    <property name="refresh">
-    <number>1000</number>
+    <number>200</number>
    </property>
    <property name="viewStatus">
     <bool>false</bool>
@@ -2460,13 +2460,13 @@
     <string>ATCMcombobox widget</string>
    </property>
    <property name="currentIndex">
-    <number>2</number>
+    <number>1</number>
    </property>
    <property name="variable">
     <string>PLC_AnInConf_3</string>
    </property>
    <property name="refresh">
-    <number>1000</number>
+    <number>200</number>
    </property>
    <property name="viewStatus">
     <bool>false</bool>
@@ -2587,13 +2587,13 @@
     <string>ATCMcombobox widget</string>
    </property>
    <property name="currentIndex">
-    <number>2</number>
+    <number>1</number>
    </property>
    <property name="variable">
     <string>PLC_AnInConf_4</string>
    </property>
    <property name="refresh">
-    <number>1000</number>
+    <number>200</number>
    </property>
    <property name="viewStatus">
     <bool>false</bool>

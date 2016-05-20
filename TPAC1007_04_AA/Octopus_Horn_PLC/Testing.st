@@ -42,7 +42,7 @@ END_VAR
 					substatus := 3;
 				end_if;
 			3: (* wait for propagation *)
-				timer(IN := TRUE, PT := T#500ms); (* Modbus/TCP *)
+				timer(IN := TRUE, PT := T#1000ms); (* Modbus/TCP *)
 				if timer.Q then
 					timer(IN := FALSE);
 					substatus := 4;

@@ -591,7 +591,7 @@ background-color: rgb(255, 255, 127);
     <string>ATCMcombobox widget</string>
    </property>
    <property name="currentIndex">
-    <number>2</number>
+    <number>1</number>
    </property>
    <property name="variable">
     <string>RTU_AnInConf_2</string>
@@ -625,7 +625,7 @@ background-color: rgb(255, 255, 127);
     <enum>QFrame::Raised</enum>
    </property>
    <property name="mapping">
-    <string>1;[mA] 4..20;2;[V] 0..10;3;[°C] TCJ;4;[°C] TCK;5;[°C] TCT;6;[°C] PT100E;7;[°C] PT100R;8;[°C] TCS;9;[°C] TCB;10;[°C] TCR;0;--</string>
+    <string>1;[mA] 4..20;2;[V] 0..10;3;[°C] TCJ;4;[°C] TCK;5;[°C] TCT;6;[°C] PT100E;7;[°C] PT100R;0;--</string>
    </property>
   </widget>
   <widget class="ATCMled" name="atcmLed_RTU_AnIn_12">
@@ -1018,7 +1018,7 @@ background-color: rgb(255, 255, 127);
     <string>ATCMcombobox widget</string>
    </property>
    <property name="currentIndex">
-    <number>2</number>
+    <number>1</number>
    </property>
    <property name="variable">
     <string>RTU_AnInConf_1</string>
@@ -1052,7 +1052,7 @@ background-color: rgb(255, 255, 127);
     <enum>QFrame::Raised</enum>
    </property>
    <property name="mapping">
-    <string>1;[mA] 4..20;2;[V] 0..10;3;[°C] TCJ;4;[°C] TCK;5;[°C] TCT;6;[°C] PT100E;7;[°C] PT100R;8;[°C] TCS;9;[°C] TCB;10;[°C] TCR;0;--</string>
+    <string>1;[mA] 4..20;2;[V] 0..10;3;[°C] TCJ;4;[°C] TCK;5;[°C] TCT;6;[°C] PT100E;7;[°C] PT100R;0;--</string>
    </property>
   </widget>
   <widget class="ATCMled" name="atcmLed_RTU_AnIn_7">
