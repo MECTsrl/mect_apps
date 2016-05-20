@@ -38,7 +38,6 @@ END_VAR
     if (TST_Tamb      ) then RES_Tamb := PLC_Tamb; end_if;
     if (TST_RPM       ) then RES_RPM := PLC_RPM; end_if;
    
-	if (TST_RTU1_WR   ) then ; end_if;
 	if (TST_RTU1_RD   ) then RES_RTU1_RD := RTU_RTU_RD; end_if;	
 	
 	if (TST_CAN1_WR   ) then ; end_if;

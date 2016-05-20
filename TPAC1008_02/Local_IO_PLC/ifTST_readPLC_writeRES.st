@@ -38,13 +38,9 @@ END_VAR
     if (TST_Tamb      ) then RES_Tamb := PLC_Tamb; end_if;
     if (TST_RPM       ) then RES_RPM := PLC_RPM / 10; end_if;
    
-	if (TST_RTUS_WR   ) then ; end_if;
-	if (TST_RTUS_RD   ) then ; end_if;	
-	if (TST_RTU1_WR   ) then RES_RTU1_WR := RTU_RTU_WR; end_if;
 	if (TST_RTU1_RD   ) then RES_RTU1_RD := RTU_RTU_RD; end_if;	
-	if (TST_RTU3_WR   ) then ; end_if;
-	if (TST_RTU3_RD   ) then ; end_if;	
-	if (TST_CAN1_WR   ) then RES_CAN1_WR := CAN_DigOut_1; end_if;
-	if (TST_CAN1_RD   ) then RES_CAN1_RD := CAN_DigIn_1; end_if;	
+	
+	if (TST_CAN1_WR   ) then ; end_if;
+	if (TST_CAN1_RD   ) then RES_CAN1_RD := CAN_DigIn_1; end_if;
 
 END_FUNCTION
