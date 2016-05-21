@@ -38,6 +38,8 @@ END_VAR
 		if (TST_AnOut_1)then Temp_PLC_AnOutConf := Temp_PLC_AnOutConf + word_to_uint(shl(uint_to_word(VAL_AnOutConf_1),0)); end_if; 		
 		if (TST_AnOut_2)then Temp_PLC_AnOutConf := Temp_PLC_AnOutConf + word_to_uint(shl(uint_to_word(VAL_AnOutConf_2),4)); end_if; 
 	    PLC_AnOutConf := Temp_PLC_AnOutConf;
+		if (TST_AnOut_1 and PLC_AnOut_1 = VAL_AnOut_1) then PLC_AnOut_1 := -1; end_if; 		
+		if (TST_AnOut_2 and PLC_AnOut_2 = VAL_AnOut_2) then PLC_AnOut_2 := -1; end_if; 
 	
 	    if (TST_AnIn_1)then RES_AnIn_1 := 0; end_if;
 		if (TST_AnIn_2)then RES_AnIn_2 := 0; end_if;
@@ -56,16 +58,16 @@ END_VAR
 
 	elsif substatus = 1 then
 
-		if (TST_AnOut_1)then PLC_AnOut_1 := VAL_AnOut_1; end_if; 		
-		if (TST_AnOut_2)then PLC_AnOut_2 := VAL_AnOut_2; end_if; 
+		if (TST_AnOut_1) then PLC_AnOut_1 := VAL_AnOut_1; end_if; 		
+		if (TST_AnOut_2) then PLC_AnOut_2 := VAL_AnOut_2; end_if; 
 
 	elsif substatus = 2 then
 
 		Temp_PLC_AnInConf := 0;
-	    if (TST_AnIn_1)then Temp_PLC_AnInConf := Temp_PLC_AnInConf + word_to_uint(shl(uint_to_word(VAL_AnInConf_1),0 )); end_if;
-		if (TST_AnIn_2)then Temp_PLC_AnInConf := Temp_PLC_AnInConf + word_to_uint(shl(uint_to_word(VAL_AnInConf_2),4 )); end_if;
-		if (TST_AnIn_3)then Temp_PLC_AnInConf := Temp_PLC_AnInConf + word_to_uint(shl(uint_to_word(VAL_AnInConf_3),8 )); end_if;
-		if (TST_AnIn_4)then Temp_PLC_AnInConf := Temp_PLC_AnInConf + word_to_uint(shl(uint_to_word(VAL_AnInConf_4),12)); end_if;
+	    if (TST_AnIn_1) then Temp_PLC_AnInConf := Temp_PLC_AnInConf + word_to_uint(shl(uint_to_word(VAL_AnInConf_1),0 )); end_if;
+		if (TST_AnIn_2) then Temp_PLC_AnInConf := Temp_PLC_AnInConf + word_to_uint(shl(uint_to_word(VAL_AnInConf_2),4 )); end_if;
+		if (TST_AnIn_3) then Temp_PLC_AnInConf := Temp_PLC_AnInConf + word_to_uint(shl(uint_to_word(VAL_AnInConf_3),8 )); end_if;
+		if (TST_AnIn_4) then Temp_PLC_AnInConf := Temp_PLC_AnInConf + word_to_uint(shl(uint_to_word(VAL_AnInConf_4),12)); end_if;
 	    PLC_AnInConf := Temp_PLC_AnInConf;
 	
 	end_if;

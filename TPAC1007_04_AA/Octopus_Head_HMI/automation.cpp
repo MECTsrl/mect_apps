@@ -70,19 +70,28 @@ void loop(void)
 {
     if (previous_PLC_Heartbeat == PLC_Heartbeat) {
         if ((PLC_time - last_PLC_time) > 1.0) {
-            QMessageBox::critical(0, "WATCHDOG", "RTU3 hangup for 1s :(\nRestarting the system");
-            system("reboot");
-            // unreacheable code
+            QMessageBox::critical(0, "WATCHDOG", "RTU3 hangup for 1s :(\nRestarting the engine.");
+            system("killall fcrts");
+            system("/root/fcrts &");
+            do {
+                sleep(1);
+                previous_PLC_time = PLC_time;
+            } while (previous_PLC_time == PLC_time);
+            previous_PLC_Heartbeat = PLC_Heartbeat;
+            previous_PLC_time = PLC_time;
+            last_PLC_time = PLC_time;
+            sleep(1);
         }
     } else {
         previous_PLC_Heartbeat = PLC_Heartbeat;
         last_PLC_time = PLC_time;
+        if (previous_PLC_time == PLC_time) {
+            QMessageBox::critical(0, "PLC_time hangup :(", "What happened?");
+        } else {
+            previous_PLC_time = PLC_time;
+        }
     }
-    if (previous_PLC_time == PLC_time) {
-        QMessageBox::critical(0, "PLC_time hangup :(", "What happened?");
-    } else {
-        previous_PLC_time = PLC_time;
-    }
+
 
     switch (STATUS) {   // OCTOPUS STATE MACHINE
 
@@ -126,6 +135,9 @@ void loop(void)
                     next_step = 1;
                 } else {
                     logStop();
+                    if (RESULTS_OK == TEST_STEP_MAX) {
+                        QMessageBox::information(0, "TEST RESULT", "RESULT = OK\n\nnow PWR_OFF then touch OK");
+                    }
                     return;
                 }
             } else {
