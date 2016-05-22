@@ -5,3 +5,4 @@ hmi
 moc_*
 ui_*
 *.obj
+*.o
