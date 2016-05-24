@@ -3720,6 +3720,13 @@ color: rgb(0, 0, 0);</string>
     <enum>Qt::Horizontal</enum>
    </property>
   </widget>
+  <zorder>atcmLed_PLC_DigIn_11</zorder>
+  <zorder>atcmLed_PLC_DigIn_10</zorder>
+  <zorder>atcmLed_PLC_DigIn_8</zorder>
+  <zorder>atcmLed_PLC_DigIn_6</zorder>
+  <zorder>atcmLed_PLC_DigIn_9</zorder>
+  <zorder>atcmLed_PLC_DigIn_12</zorder>
+  <zorder>atcmLed_PLC_DigIn_1</zorder>
   <zorder>atcmLabel_PLC_Capture</zorder>
   <zorder>label_PLC_DigIn_5</zorder>
   <zorder>atcmButton_PLC_DigOut_6</zorder>
@@ -3734,11 +3741,9 @@ color: rgb(0, 0, 0);</string>
   <zorder>label_PLC_DigIn_12</zorder>
   <zorder>atcmLabel_PLC_AnIn1Filter</zorder>
   <zorder>label_PLC_Capture</zorder>
-  <zorder>atcmLed_PLC_DigIn_6</zorder>
   <zorder>atcmLabel_PLC_AnOut_1</zorder>
   <zorder>atcmLabel_FWrevision</zorder>
   <zorder>label_PLC_DigIn_11</zorder>
-  <zorder>atcmLed_PLC_DigIn_11</zorder>
   <zorder>atcmDate</zorder>
   <zorder>atcmButton_PLC_DigOut_7</zorder>
   <zorder>label_PLC_DigIn_9</zorder>
@@ -3754,7 +3759,6 @@ color: rgb(0, 0, 0);</string>
   <zorder>atcmComboBox_PLC_AnInConf_1</zorder>
   <zorder>label_PLC_AnOut_1</zorder>
   <zorder>atcmButton_PLC_DigOut_4</zorder>
-  <zorder>atcmLed_PLC_DigIn_12</zorder>
   <zorder>label_PLC_AnIn_2_Filter</zorder>
   <zorder>atcmTime</zorder>
   <zorder>label_PLC_Tamb_C</zorder>
@@ -3765,7 +3769,6 @@ color: rgb(0, 0, 0);</string>
   <zorder>atcmComboBox_PLC_AnOutConf_1</zorder>
   <zorder>atcmLabel_PLC_Encoder</zorder>
   <zorder>label_PLC_DigIn_4</zorder>
-  <zorder>atcmLed_PLC_DigIn_9</zorder>
   <zorder>atcmLabel_PLC_StatusReg</zorder>
   <zorder>atcmButton_PLC_DigOut_5</zorder>
   <zorder>atcmButton_PLC_EncoderStart</zorder>
@@ -3775,14 +3778,11 @@ color: rgb(0, 0, 0);</string>
   <zorder>label_PLC_Tamb</zorder>
   <zorder>atcmLed_PLC_DigIn_3</zorder>
   <zorder>atcmButton_PLC_DigOut_3</zorder>
-  <zorder>atcmLed_PLC_DigIn_10</zorder>
   <zorder>atcmButton_menu</zorder>
   <zorder>atcmLabel_PLC_Tamb</zorder>
-  <zorder>atcmLed_PLC_DigIn_8</zorder>
   <zorder>label_PLC_DigIn_10</zorder>
   <zorder>atcmButton_PLC_DigOut_2</zorder>
   <zorder>label_PLC_DigIn_7</zorder>
-  <zorder>atcmLed_PLC_DigIn_1</zorder>
   <zorder>line_hr_3</zorder>
   <zorder>line_hr_2</zorder>
   <zorder>line_hr_1</zorder>
