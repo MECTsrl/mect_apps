@@ -1574,65 +1574,6 @@ background-color: rgb(255, 255, 127);
      <normaloff>:/off.png</normaloff>:/off.png</iconset>
    </property>
   </widget>
-  <widget class="ATCMcombobox" name="atcmComboBox_PLC_AnInConf_2">
-   <property name="geometry">
-    <rect>
-     <x>160</x>
-     <y>112</y>
-     <width>80</width>
-     <height>40</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>DejaVu Sans Mono</family>
-     <pointsize>10</pointsize>
-    </font>
-   </property>
-   <property name="toolTip">
-    <string>PLC_AnInConf_2</string>
-   </property>
-   <property name="whatsThis">
-    <string>ATCMcombobox widget</string>
-   </property>
-   <property name="currentIndex">
-    <number>2</number>
-   </property>
-   <property name="variable">
-    <string>PLC_AnInConf_2</string>
-   </property>
-   <property name="refresh">
-    <number>1000</number>
-   </property>
-   <property name="viewStatus">
-    <bool>false</bool>
-   </property>
-   <property name="writeAcknowledge">
-    <bool>false</bool>
-   </property>
-   <property name="visibilityVar">
-    <string/>
-   </property>
-   <property name="bgColor">
-    <color>
-     <red>255</red>
-     <green>255</green>
-     <blue>127</blue>
-    </color>
-   </property>
-   <property name="borderWidth">
-    <number>0</number>
-   </property>
-   <property name="borderRadius">
-    <number>0</number>
-   </property>
-   <property name="apparence">
-    <enum>QFrame::Raised</enum>
-   </property>
-   <property name="mapping">
-    <string>0;---;1;[mA] 4..20;2;[V] 0..10;3;[°C] 0..600;4;[°C] 0..1200;5;[°C] 0..400;6;[°C]-40..800;7;[°C]-40..200</string>
-   </property>
-  </widget>
   <widget class="Line" name="line_vt_2">
    <property name="geometry">
     <rect>
@@ -1788,65 +1729,6 @@ background-color: rgb(255, 255, 127);
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>
-   </property>
-  </widget>
-  <widget class="ATCMcombobox" name="atcmComboBox_PLC_AnInConf_1">
-   <property name="geometry">
-    <rect>
-     <x>160</x>
-     <y>72</y>
-     <width>80</width>
-     <height>40</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>DejaVu Sans Mono</family>
-     <pointsize>10</pointsize>
-    </font>
-   </property>
-   <property name="toolTip">
-    <string>PLC_AnInConf_1</string>
-   </property>
-   <property name="whatsThis">
-    <string>ATCMcombobox widget</string>
-   </property>
-   <property name="currentIndex">
-    <number>2</number>
-   </property>
-   <property name="variable">
-    <string>PLC_AnInConf_1</string>
-   </property>
-   <property name="refresh">
-    <number>1000</number>
-   </property>
-   <property name="viewStatus">
-    <bool>false</bool>
-   </property>
-   <property name="writeAcknowledge">
-    <bool>false</bool>
-   </property>
-   <property name="visibilityVar">
-    <string/>
-   </property>
-   <property name="bgColor">
-    <color>
-     <red>170</red>
-     <green>255</green>
-     <blue>255</blue>
-    </color>
-   </property>
-   <property name="borderWidth">
-    <number>0</number>
-   </property>
-   <property name="borderRadius">
-    <number>0</number>
-   </property>
-   <property name="apparence">
-    <enum>QFrame::Raised</enum>
-   </property>
-   <property name="mapping">
-    <string>0;---;1;[mA] 4..20;2;[V] 0..10;3;[°C] 0..600;4;[°C] 0..1200;5;[°C] 0..400;6;[°C]-40..800;7;[°C]-40..200</string>
    </property>
   </widget>
   <widget class="QLabel" name="label_PLC_AnOut_1">
@@ -3720,6 +3602,126 @@ color: rgb(0, 0, 0);</string>
     <enum>Qt::Horizontal</enum>
    </property>
   </widget>
+  <widget class="ATCMcombobox" name="atcmComboBox_PLC_AnInConf_2">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>112</y>
+     <width>80</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans Mono</family>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="toolTip">
+    <string>PLC_AnInConf_2</string>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMcombobox widget</string>
+   </property>
+   <property name="currentIndex">
+    <number>1</number>
+   </property>
+   <property name="variable">
+    <string>PLC_AnInConf_2</string>
+   </property>
+   <property name="refresh">
+    <number>200</number>
+   </property>
+   <property name="viewStatus">
+    <bool>false</bool>
+   </property>
+   <property name="writeAcknowledge">
+    <bool>false</bool>
+   </property>
+   <property name="visibilityVar">
+    <string/>
+   </property>
+   <property name="bgColor">
+    <color>
+     <red>255</red>
+     <green>255</green>
+     <blue>127</blue>
+    </color>
+   </property>
+   <property name="borderWidth">
+    <number>0</number>
+   </property>
+   <property name="borderRadius">
+    <number>0</number>
+   </property>
+   <property name="apparence">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <property name="mapping">
+    <string>1;[mA] 4..20;2;[V] 0..10;3;[°C] TCJ;4;[°C] TCK;5;[°C] TCT;6;[°C] PT100E;7;[°C] PT100R;8;[°C] TCS;9;[°C] TCB;10;[°C] TCR;0;--</string>
+   </property>
+  </widget>
+  <widget class="ATCMcombobox" name="atcmComboBox_PLC_AnInConf_1">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>71</y>
+     <width>80</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans Mono</family>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="toolTip">
+    <string>PLC_AnInConf_1</string>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMcombobox widget</string>
+   </property>
+   <property name="currentIndex">
+    <number>1</number>
+   </property>
+   <property name="variable">
+    <string>PLC_AnInConf_1</string>
+   </property>
+   <property name="refresh">
+    <number>200</number>
+   </property>
+   <property name="viewStatus">
+    <bool>false</bool>
+   </property>
+   <property name="writeAcknowledge">
+    <bool>false</bool>
+   </property>
+   <property name="visibilityVar">
+    <string/>
+   </property>
+   <property name="bgColor">
+    <color>
+     <red>170</red>
+     <green>255</green>
+     <blue>255</blue>
+    </color>
+   </property>
+   <property name="borderWidth">
+    <number>0</number>
+   </property>
+   <property name="borderRadius">
+    <number>0</number>
+   </property>
+   <property name="apparence">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <property name="mapping">
+    <string>1;[mA] 4..20;2;[V] 0..10;3;[°C] TCJ;4;[°C] TCK;5;[°C] TCT;6;[°C] PT100E;7;[°C] PT100R;8;[°C] TCS;9;[°C] TCB;10;[°C] TCR;0;--</string>
+   </property>
+  </widget>
+  <zorder>atcmComboBox_PLC_AnInConf_1</zorder>
+  <zorder>atcmComboBox_PLC_AnInConf_2</zorder>
   <zorder>atcmLed_PLC_DigIn_11</zorder>
   <zorder>atcmLed_PLC_DigIn_10</zorder>
   <zorder>atcmLed_PLC_DigIn_8</zorder>
@@ -3753,10 +3755,8 @@ color: rgb(0, 0, 0);</string>
   <zorder>label_PLC_DigIn_1</zorder>
   <zorder>label_PLC_AnIn_1_Filter</zorder>
   <zorder>atcmLed_PLC_DigIn_4</zorder>
-  <zorder>atcmComboBox_PLC_AnInConf_2</zorder>
   <zorder>label_PLC_DigIn_8</zorder>
   <zorder>label_PLC_AnIn_2</zorder>
-  <zorder>atcmComboBox_PLC_AnInConf_1</zorder>
   <zorder>label_PLC_AnOut_1</zorder>
   <zorder>atcmButton_PLC_DigOut_4</zorder>
   <zorder>label_PLC_AnIn_2_Filter</zorder>
