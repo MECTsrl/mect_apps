@@ -627,7 +627,7 @@ color: rgb(0, 0, 0);</string>
     <string>ATCMcombobox widget</string>
    </property>
    <property name="currentIndex">
-    <number>2</number>
+    <number>1</number>
    </property>
    <property name="variable">
     <string>PLC_AnOutConf_3</string>
@@ -661,7 +661,7 @@ color: rgb(0, 0, 0);</string>
     <enum>QFrame::Raised</enum>
    </property>
    <property name="mapping">
-    <string>0;---;1;[mA] 4..20;2;[V] 0..10;3;[%] PWM</string>
+    <string>1;NOT USED;2;[V] 0..10;3;[%] PWM;0;---</string>
    </property>
   </widget>
   <widget class="ATCMlabel" name="atcmLabel_HWconfig">
@@ -1622,7 +1622,7 @@ color: rgb(0, 0, 0);</string>
     <string>ATCMcombobox widget</string>
    </property>
    <property name="currentIndex">
-    <number>2</number>
+    <number>0</number>
    </property>
    <property name="variable">
     <string>PLC_AnOutConf_2</string>
@@ -1656,7 +1656,7 @@ color: rgb(0, 0, 0);</string>
     <enum>QFrame::Raised</enum>
    </property>
    <property name="mapping">
-    <string>0;---;1;[mA] 4..20;2;[V] 0..10;3;[%] PWM</string>
+    <string>1;[mA] 4..20;2;[V] 0..10;3;[%] PWM;0;---</string>
    </property>
   </widget>
   <widget class="QLabel" name="label_Qt_Project">
@@ -3777,7 +3777,7 @@ color: rgb(0, 0, 0);</string>
     <string>ATCMcombobox widget</string>
    </property>
    <property name="currentIndex">
-    <number>2</number>
+    <number>1</number>
    </property>
    <property name="variable">
     <string>PLC_AnOutConf_1</string>
@@ -3811,7 +3811,7 @@ color: rgb(0, 0, 0);</string>
     <enum>QFrame::Raised</enum>
    </property>
    <property name="mapping">
-    <string>0;---;1;[mA] 4..20;2;[V] 0..10;3;[%] PWM</string>
+    <string>1;[mA] 4..20;2;[V] 0..10;3;[%] PWM;0;---</string>
    </property>
   </widget>
   <widget class="ATCMbutton" name="atcmButton_menu">
@@ -4038,7 +4038,7 @@ color: rgb(0, 0, 0);</string>
     <string>ATCMcombobox widget</string>
    </property>
    <property name="currentIndex">
-    <number>2</number>
+    <number>1</number>
    </property>
    <property name="variable">
     <string>PLC_AnOutConf_4</string>
@@ -4072,7 +4072,7 @@ color: rgb(0, 0, 0);</string>
     <enum>QFrame::Raised</enum>
    </property>
    <property name="mapping">
-    <string>0;---;1;[mA] 4..20;2;[V] 0..10;3;[%] PWM</string>
+    <string>1;NOT USED;2;[V] 0..10;3;[%] PWM;0;---</string>
    </property>
   </widget>
   <widget class="ATCMcombobox" name="atcmComboBox_PLC_AnInConf_2">

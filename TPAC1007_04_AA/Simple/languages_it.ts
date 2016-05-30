@@ -481,6 +481,12 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="page100.ui" line="1659"/>
+        <location filename="page100.ui" line="3814"/>
+        <source>1;[mA] 4..20;2;[V] 0..10;3;[%] PWM;0;---</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="page100.ui" line="1861"/>
         <source>Capture</source>
         <translation type="unfinished"></translation>
@@ -613,10 +619,9 @@
     </message>
     <message>
         <location filename="page100.ui" line="664"/>
-        <location filename="page100.ui" line="1659"/>
-        <location filename="page100.ui" line="3814"/>
         <location filename="page100.ui" line="4075"/>
-        <source>0;---;1;[mA] 4..20;2;[V] 0..10;3;[%] PWM</source>
+        <source>1;NOT USED;2;[V] 0..10;3;[%] PWM;0;---</source>
+        <oldsource>2;[V] 0..10;3;[%] PWM;0;---</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
