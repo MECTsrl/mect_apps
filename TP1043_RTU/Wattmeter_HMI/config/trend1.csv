@@ -1,5 +1,5 @@
 L
-1;Potenza;FF0000;0.00;3300.00;POTENZA [W]
-1;Tensione;00FF00;0.00;230.00;TENSIONE [V]
-0;;;;;
-0;;;;;
+1;Potenza         ;FF0000;0.00;3300.00;POTENZA [W]
+1;Tensione        ;0000FF;0.00;230.00;TENSIONE [V]
+1;Potenza_Critica ;0000FF;0.00;3300.00;Potenza Critica
+1;Potenza_Distacco;000000;0.00;3300.00;Potenza Distacco
