@@ -201,9 +201,9 @@
 2;P;RTU_COMMAND     ;INT      ;0   ;RTU       ;               ;    ;2   ;1   ;200 ;3   ;[RW] Node#1
 2;P;RTU_REPLY       ;INT      ;0   ;RTU       ;               ;    ;2   ;2   ;200 ;3   ;[RO] Node#1
 ;;;;;;;;;;;;
-2;P;TCP_HEARTBEAT   ;UINT     ;0   ;TCP       ;192.168.5.211  ;502 ;2   ;0   ;204 ;3   ;[RO] Node#2
-2;P;TCP_COMMAND     ;INT      ;0   ;TCP       ;192.168.5.211  ;502 ;2   ;1   ;204 ;3   ;[RW] Node#2
-2;P;TCP_REPLY       ;INT      ;0   ;TCP       ;192.168.5.211  ;502 ;2   ;2   ;204 ;3   ;[RO] Node#2
+2;P;TCP_HEARTBEAT   ;UINT     ;0   ;TCP       ;192.168.5.42   ;502 ;2   ;0   ;204 ;3   ;[RO] Node#2
+2;P;TCP_COMMAND     ;INT      ;0   ;TCP       ;192.168.5.42   ;502 ;2   ;1   ;204 ;3   ;[RW] Node#2
+2;P;TCP_REPLY       ;INT      ;0   ;TCP       ;192.168.5.42   ;502 ;2   ;2   ;204 ;3   ;[RO] Node#2
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
