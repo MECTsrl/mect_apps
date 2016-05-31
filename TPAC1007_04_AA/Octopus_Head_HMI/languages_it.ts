@@ -5073,6 +5073,7 @@ ON</source>
         <location filename="page403.ui" line="4338"/>
         <location filename="page403.ui" line="4410"/>
         <location filename="page403.ui" line="4481"/>
+        <location filename="page403.ui" line="4633"/>
         <source>ATCMlabel widget</source>
         <translation type="unfinished"></translation>
     </message>
@@ -5159,6 +5160,8 @@ ON</source>
         <location filename="page403.ui" line="4425"/>
         <location filename="page403.ui" line="4493"/>
         <location filename="page403.ui" line="4496"/>
+        <location filename="page403.ui" line="4648"/>
+        <location filename="page403.ui" line="4651"/>
         <source>0</source>
         <translation type="unfinished"></translation>
     </message>
@@ -5551,6 +5554,7 @@ ON</source>
         <location filename="page403.ui" line="3636"/>
         <location filename="page403.ui" line="3699"/>
         <location filename="page403.ui" line="3762"/>
+        <location filename="page403.ui" line="4627"/>
         <source>1.11</source>
         <translation type="unfinished"></translation>
     </message>
@@ -5745,6 +5749,22 @@ ON</source>
         <location filename="page403.ui" line="4585"/>
         <location filename="page403.ui" line="4591"/>
         <source>PLC_DigIn_4</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page403.ui" line="4630"/>
+        <location filename="page403.ui" line="4636"/>
+        <source>RES_Tamb</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page403.ui" line="4639"/>
+        <source>RES_Tamb </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message utf8="true">
+        <location filename="page403.ui" line="4642"/>
+        <source> °C</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
