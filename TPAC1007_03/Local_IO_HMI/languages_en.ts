@@ -29,7 +29,8 @@
     </message>
     <message>
         <location filename="page100.ui" line="117"/>
-        <source>0;---;1;[mA] 4..20;2;[V] 0..10;3;[%] PWM</source>
+        <source>0;---;1;[mA] 4..20;2;[V] 0..10</source>
+        <oldsource>0;---;1;[mA] 4..20;2;[V] 0..10;3;[%] PWM</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -157,8 +158,8 @@
     <message utf8="true">
         <location filename="page100.ui" line="424"/>
         <location filename="page100.ui" line="645"/>
-        <source>1;[mA] 4..20;2;[V] 0..10;3;[°C] TCJ;4;[°C] TCK;5;[°C] TCT;6;[°C] PT100E;7;[°C] PT100R;8;[°C] TCS;9;[°C] TCB;10;[°C] TCR;0;--</source>
-        <oldsource>0;---;1;[mA] 4..20;2;[V] 0..10;3;[°C] 0..600;4;[°C] 0..1200;5;[°C] 0..400;6;[°C]-40..800;7;[°C]-40..200</oldsource>
+        <source>1;[mA] 4..20;2;[V] 0..10;3;[°C] TCJ;4;[°C] TCK;5;[°C] TCT;6;[°C] PT100E;7;[°C] PT100R;0;--</source>
+        <oldsource>1;[mA] 4..20;2;[V] 0..10;3;[°C] TCJ;4;[°C] TCK;5;[°C] TCT;6;[°C] PT100E;7;[°C] PT100R;8;[°C] TCS;9;[°C] TCB;10;[°C] TCR;0;--</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
