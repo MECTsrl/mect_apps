@@ -5,7 +5,7 @@
 # @section LICENSE
 # Copyright Mect s.r.l. 2013
 #
-# @brief Project file for qmake
+# @brief Qmake project file for TP1057_01_A
 #
 
 contains(QMAKE_HOST.os,Windows){
@@ -132,7 +132,7 @@ OTHER_FILES += \
 
 include(./languages.pri)
 
-TYPE = "TPAC1007_03"
+TYPE = "TP1057_01_A"
 
 # display size
 MODEL = "<width>480</width><height>272</height>"
@@ -167,3 +167,4 @@ equals(MODEL, "<width>480</width><height>800</height>") {
     DEFINES+=HEIGHT=240
     DEFINES+=ROTATION=90
 }
+

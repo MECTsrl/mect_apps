@@ -1834,65 +1834,6 @@ background-color: rgb(255, 255, 127);
     <enum>QFrame::Raised</enum>
    </property>
   </widget>
-  <widget class="ATCMcombobox" name="atcmComboBox_PLC_AnOutConf_3">
-   <property name="geometry">
-    <rect>
-     <x>401</x>
-     <y>137</y>
-     <width>80</width>
-     <height>34</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>DejaVu Sans Mono</family>
-     <pointsize>10</pointsize>
-    </font>
-   </property>
-   <property name="toolTip">
-    <string>PLC_AnOutConf_3</string>
-   </property>
-   <property name="whatsThis">
-    <string>ATCMcombobox widget</string>
-   </property>
-   <property name="currentIndex">
-    <number>2</number>
-   </property>
-   <property name="variable">
-    <string>PLC_AnOutConf_3</string>
-   </property>
-   <property name="refresh">
-    <number>200</number>
-   </property>
-   <property name="viewStatus">
-    <bool>false</bool>
-   </property>
-   <property name="writeAcknowledge">
-    <bool>false</bool>
-   </property>
-   <property name="visibilityVar">
-    <string/>
-   </property>
-   <property name="bgColor">
-    <color>
-     <red>170</red>
-     <green>255</green>
-     <blue>255</blue>
-    </color>
-   </property>
-   <property name="borderWidth">
-    <number>0</number>
-   </property>
-   <property name="borderRadius">
-    <number>0</number>
-   </property>
-   <property name="apparence">
-    <enum>QFrame::Raised</enum>
-   </property>
-   <property name="mapping">
-    <string>0;---;1;[mA] 4..20;2;[V] 0..10;3;[%] PWM</string>
-   </property>
-  </widget>
   <widget class="ATCMlabel" name="atcmLabel_PLC_Heartbeat">
    <property name="geometry">
     <rect>
@@ -1995,65 +1936,6 @@ background-color: rgb(255, 255, 127);
    <property name="offIcon">
     <iconset>
      <normaloff>:/off.png</normaloff>:/off.png</iconset>
-   </property>
-  </widget>
-  <widget class="ATCMcombobox" name="atcmComboBox_PLC_AnOutConf_4">
-   <property name="geometry">
-    <rect>
-     <x>401</x>
-     <y>171</y>
-     <width>80</width>
-     <height>34</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>DejaVu Sans Mono</family>
-     <pointsize>10</pointsize>
-    </font>
-   </property>
-   <property name="toolTip">
-    <string>PLC_AnOutConf_4</string>
-   </property>
-   <property name="whatsThis">
-    <string>ATCMcombobox widget</string>
-   </property>
-   <property name="currentIndex">
-    <number>2</number>
-   </property>
-   <property name="variable">
-    <string>PLC_AnOutConf_4</string>
-   </property>
-   <property name="refresh">
-    <number>200</number>
-   </property>
-   <property name="viewStatus">
-    <bool>false</bool>
-   </property>
-   <property name="writeAcknowledge">
-    <bool>false</bool>
-   </property>
-   <property name="visibilityVar">
-    <string/>
-   </property>
-   <property name="bgColor">
-    <color>
-     <red>255</red>
-     <green>255</green>
-     <blue>127</blue>
-    </color>
-   </property>
-   <property name="borderWidth">
-    <number>0</number>
-   </property>
-   <property name="borderRadius">
-    <number>0</number>
-   </property>
-   <property name="apparence">
-    <enum>QFrame::Raised</enum>
-   </property>
-   <property name="mapping">
-    <string>0;---;1;[mA] 4..20;2;[V] 0..10;3;[%] PWM</string>
    </property>
   </widget>
   <widget class="QLabel" name="label_PLC_DigIn_12">
@@ -2733,7 +2615,7 @@ color: rgb(0, 0, 0);</string>
    <property name="geometry">
     <rect>
      <x>321</x>
-     <y>137</y>
+     <y>136</y>
      <width>80</width>
      <height>34</height>
     </rect>
@@ -4240,6 +4122,124 @@ color: rgb(0, 0, 0);</string>
     <number>0</number>
    </property>
   </widget>
+  <widget class="ATCMcombobox" name="atcmComboBox_PLC_AnOutConf_5">
+   <property name="geometry">
+    <rect>
+     <x>400</x>
+     <y>136</y>
+     <width>80</width>
+     <height>34</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans Mono</family>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="toolTip">
+    <string>PLC_AnOutConf_3</string>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMcombobox widget</string>
+   </property>
+   <property name="currentIndex">
+    <number>1</number>
+   </property>
+   <property name="variable">
+    <string>PLC_AnOutConf_3</string>
+   </property>
+   <property name="refresh">
+    <number>1000</number>
+   </property>
+   <property name="viewStatus">
+    <bool>false</bool>
+   </property>
+   <property name="writeAcknowledge">
+    <bool>false</bool>
+   </property>
+   <property name="visibilityVar">
+    <string/>
+   </property>
+   <property name="bgColor">
+    <color>
+     <red>170</red>
+     <green>255</green>
+     <blue>255</blue>
+    </color>
+   </property>
+   <property name="borderWidth">
+    <number>0</number>
+   </property>
+   <property name="borderRadius">
+    <number>0</number>
+   </property>
+   <property name="apparence">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <property name="mapping">
+    <string>1;NOT USED;2;[V] 0..10;3;[%] PWM;0;---</string>
+   </property>
+  </widget>
+  <widget class="ATCMcombobox" name="atcmComboBox_PLC_AnOutConf_6">
+   <property name="geometry">
+    <rect>
+     <x>400</x>
+     <y>170</y>
+     <width>80</width>
+     <height>34</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans Mono</family>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="toolTip">
+    <string>PLC_AnOutConf_4</string>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMcombobox widget</string>
+   </property>
+   <property name="currentIndex">
+    <number>1</number>
+   </property>
+   <property name="variable">
+    <string>PLC_AnOutConf_4</string>
+   </property>
+   <property name="refresh">
+    <number>1000</number>
+   </property>
+   <property name="viewStatus">
+    <bool>false</bool>
+   </property>
+   <property name="writeAcknowledge">
+    <bool>false</bool>
+   </property>
+   <property name="visibilityVar">
+    <string/>
+   </property>
+   <property name="bgColor">
+    <color>
+     <red>255</red>
+     <green>255</green>
+     <blue>127</blue>
+    </color>
+   </property>
+   <property name="borderWidth">
+    <number>0</number>
+   </property>
+   <property name="borderRadius">
+    <number>0</number>
+   </property>
+   <property name="apparence">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <property name="mapping">
+    <string>1;NOT USED;2;[V] 0..10;3;[%] PWM;0;---</string>
+   </property>
+  </widget>
   <zorder>atcmLabel_PLC_AnIn1Filter</zorder>
   <zorder>atcmDate</zorder>
   <zorder>label_PLC_AnOut_2</zorder>
@@ -4268,10 +4268,8 @@ color: rgb(0, 0, 0);</string>
   <zorder>atcmComboBox_PLC_AnInConf_2</zorder>
   <zorder>atcmButton_menu</zorder>
   <zorder>label_Qt_Project</zorder>
-  <zorder>atcmComboBox_PLC_AnOutConf_3</zorder>
   <zorder>atcmLabel_PLC_Heartbeat</zorder>
   <zorder>atcmLed_PLC_DigIn_10</zorder>
-  <zorder>atcmComboBox_PLC_AnOutConf_4</zorder>
   <zorder>label_PLC_DigIn_12</zorder>
   <zorder>atcmLabel_PLC_AnIn2Filter</zorder>
   <zorder>atcmLabel_PLC_AnIn_2</zorder>
@@ -4327,6 +4325,8 @@ color: rgb(0, 0, 0);</string>
   <zorder>line_vt_4</zorder>
   <zorder>line_vt_1</zorder>
   <zorder>atcmButton_16</zorder>
+  <zorder>atcmComboBox_PLC_AnOutConf_5</zorder>
+  <zorder>atcmComboBox_PLC_AnOutConf_6</zorder>
  </widget>
  <customwidgets>
   <customwidget>

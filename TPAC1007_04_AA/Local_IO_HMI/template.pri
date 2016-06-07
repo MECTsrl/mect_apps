@@ -99,20 +99,21 @@ SOURCES += \
         pages.cpp
 
 !isEmpty(ATCM_TEMPLATE_BASE_DIR) {
-# pre-elabortation
-check_missing_file.commands = @perl $${ATCM_TEMPLATE_BASE_DIR}/ATCM-template-project/cleanmissingpage.pl $$_PRO_FILE_ $$_PRO_FILE_PWD_
-check_undeclared_variable.commands = @perl $${ATCM_TEMPLATE_BASE_DIR}/ATCM-template-project/check_cross_var.pl $$_PRO_FILE_PWD_
-check_gotopage_bind.commands = @perl $${ATCM_TEMPLATE_BASE_DIR}/ATCM-template-project/connectbutton.pl $$_PRO_FILE_PWD_
+	# pre-elabortation
+	check_missing_file.commands = @perl $${ATCM_TEMPLATE_BASE_DIR}/ATCM-template-project/cleanmissingpage.pl $$_PRO_FILE_ $$_PRO_FILE_PWD_
+	check_undeclared_variable.commands = @perl $${ATCM_TEMPLATE_BASE_DIR}/ATCM-template-project/check_cross_var.pl $$_PRO_FILE_PWD_
+	check_gotopage_bind.commands = @perl $${ATCM_TEMPLATE_BASE_DIR}/ATCM-template-project/connectbutton.pl $$_PRO_FILE_PWD_
+	check_systemini.commands = @perl $${ATCM_TEMPLATE_BASE_DIR}/ATCM-template-project/check_systemini.pl $$_PRO_FILE_ $$_PRO_FILE_PWD_
 
-QMAKE_EXTRA_TARGETS += check_missing_file check_undeclared_variable check_gotopage_bind
-PRE_TARGETDEPS += check_missing_file check_undeclared_variable check_gotopage_bind
+	QMAKE_EXTRA_TARGETS += check_missing_file check_undeclared_variable check_gotopage_bind check_systemini
+	PRE_TARGETDEPS += check_missing_file check_undeclared_variable check_gotopage_bind check_systemini
 }
 
 # language
 !isEmpty(QT_LUPDATE_PATH) {
-        update.commands = $${QT_LUPDATE_PATH}/lupdate $$_PRO_FILE_
-        updates.depends = $$SOURCES $$HEADERS $$FORMS $$TRANSLATIONS
-        release.depends = update
+update.commands = $${QT_LUPDATE_PATH}/lupdate $$_PRO_FILE_
+updates.depends = $$SOURCES $$HEADERS $$FORMS $$TRANSLATIONS
+release.depends = update
         QMAKE_EXTRA_TARGETS += update
         PRE_TARGETDEPS += update
 }
@@ -123,13 +124,15 @@ PRE_TARGETDEPS += check_missing_file check_undeclared_variable check_gotopage_bi
 }
 
 RESOURCES += \
-languages.qrc
+    languages.qrc
 
 OTHER_FILES += \
-languages_it.ts \
-languages_en.ts
+    languages_it.ts \
+    languages_en.ts
 
 include(./languages.pri)
+
+TYPE = "TPAC1007_04_AA"
 
 # display size
 MODEL = "<width>480</width><height>272</height>"

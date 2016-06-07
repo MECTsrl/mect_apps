@@ -83,7 +83,7 @@ END_VAR
     TSTx_AnOut_4 := TST_AnOut_4;
 
     (* we test the Others I/O ...  *)
-    TSTx_Tamb := TST_Tamb;
+    TSTx_Tamb := TST_Tamb; (* or (TST_AnIn_x and VAL_AnInConf_x = 3) =---> in the recipes !! *)
     TSTx_RPM := TST_RPM;
     TSTx_FWrevision := TST_FWrevision;
     TSTx_HWconfig := TST_HWconfig;
