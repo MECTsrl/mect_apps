@@ -30,11 +30,30 @@
 #define PLC_GO_BUTTON PLC_DigIn_4
 
 // PRODUCT_NAMES <-- PRODUCT_ID
-#define PRODUCT_MAX 11
-static char product_name[][20] = {
-    "-",
-    "TPAC1007_4AA", "TPAC1007_4AC", "TPAC1007_3", "TPLC100", "TPAC1006", "TPAC1008",
-    "TP1043_485", "TP1043_232", "TP1043_CAN", "TPAC1007_LV"
+#define PRODUCT_MAX 21
+static char product_name[][15] = {
+    /*00*/ "-",
+    /*01*/ "TP1043_01_A",
+    /*02*/ "TP1043_01_B",
+    /*03*/ "TP1043_01_C",
+    /*04*/ "TP1057_01_A",
+    /*05*/ "TP1057_01_B",
+    /*06*/ "TP1070_01_A",
+    /*07*/ "TP1070_01_B",
+    /*08*/ "TP1070_01_C",
+    /*09*/ "TP1070_01_D",
+    /*10*/ "TPAC1006",
+    /*11*/ "TPAC1007_03",
+    /*12*/ "TPAC1007_04_AA",
+    /*13*/ "TPAC1007_04_AB",
+    /*14*/ "TPAC1007_04_AC",
+    /*15*/ "TPAC1008_01",
+    /*16*/ "TPAC1008_02_AA",
+    /*17*/ "TPAC1008_02_AB",
+    /*18*/ "TPAC1008_02_AC",
+    /*19*/ "TPAC1008_02_AD",
+    /*20*/ "TPAC1008_02_AE",
+    /*21*/ "TPAC1008_02_AF"
 };
 #define RECIPE_MAX 2
 static char recipe_name[][3] = {"-", "1", "2"};

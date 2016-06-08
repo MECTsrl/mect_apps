@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 2.7.84, 2016-06-01T12:29:27. -->
+<!-- Written by QtCreator 2.7.84, 2016-06-08T15:17:07. -->
 <qtcreator>
  <data>
   <variable>ProjectExplorer.Project.ActiveTarget</variable>
@@ -209,9 +209,9 @@
       <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
       <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">RemoteLinux.DirectUploadStep</value>
       <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedFiles">
+       <value type="QString">C:/MectApps/TPAC1007_04_AA/Octopus_Head_HMI/recipes/Values/1.csv</value>
        <value type="QString">C:/MectApps/TPAC1007_04_AA/Octopus_Head_HMI/config/store_AnOut_1-4.csv</value>
        <value type="QString">C:/MectApps/TPAC1007_04_AA/Octopus_Head_HMI/recipes/TPAC1007_LV/1.csv</value>
-       <value type="QString">C:/MectApps/TPAC1007_04_AA/Octopus_Head_HMI/recipes/Values/1.csv</value>
        <value type="QString">C:/MectApps/TPAC1007_04_AA/Octopus_Head_HMI/config/splash.png</value>
        <value type="QString">C:/MectApps/TPAC1007_04_AA/Octopus_Head_HMI/recipes/Values/2.csv</value>
        <value type="QString">C:/MectApps/TPAC1007_04_AA/Octopus_Head_HMI/recipes/TPAC1007_LV/1.csv</value>
@@ -268,9 +268,9 @@
        <value type="QString">C:/MectApps/TPAC1007_04_AA/Octopus_Head_HMI/config/2.csv</value>
       </valuelist>
       <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedHosts">
-       <value type="QString">192.168.5.113</value>
-       <value type="QString">192.168.5.113</value>
        <value type="QString">192.168.5.211</value>
+       <value type="QString">192.168.5.113</value>
+       <value type="QString">192.168.5.113</value>
        <value type="QString">192.168.5.211</value>
        <value type="QString">192.168.5.211</value>
        <value type="QString">192.168.5.211</value>
@@ -327,9 +327,9 @@
        <value type="QString">192.168.5.113</value>
       </valuelist>
       <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedRemotePaths">
+       <value type="QString">/local/data/recipe/Values</value>
        <value type="QString">/local/data/customstore</value>
        <value type="QString">/local/data/recipe/TPAC1007_LV</value>
-       <value type="QString">/local/data/recipe/Values</value>
        <value type="QString">/local/etc/sysconfig/img</value>
        <value type="QString">/local/data/recipe/Values</value>
        <value type="QString">/local/data/recipe/TPAC1007_LV</value>
@@ -445,9 +445,9 @@
        <value type="QString">C:/Qt485/imx28/rootfs</value>
       </valuelist>
       <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedTimes">
+       <value type="QDateTime">2016-06-01T10:27:38</value>
        <value type="QDateTime">2016-06-01T10:28:19</value>
        <value type="QDateTime">2016-06-01T10:28:20</value>
-       <value type="QDateTime">2016-06-01T10:27:38</value>
        <value type="QDateTime">2016-06-01T10:27:37</value>
        <value type="QDateTime">2016-06-01T10:27:38</value>
        <value type="QDateTime">2016-06-01T10:27:38</value>

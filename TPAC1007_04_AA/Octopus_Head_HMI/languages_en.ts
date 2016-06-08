@@ -2277,6 +2277,11 @@ ON</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="page300.ui" line="436"/>
+        <source>1;TP1043_01_A;2;TP1043_01_B;3;TP1043_01_C;4;TP1057_01_A;5;TP1057_01_B;6;TP1070_01_A;7;TP1070_01_B;8;TP1070_01_C;9;TP1070_01_D;10;TPAC1006;11;TPAC1007_03;12;TPAC1007_04_AA;13;TPAC1007_04_AB;14;TPAC1007_04_AC;15;TPAC1008_01;16;TPAC1008_02_AA;17;TPAC1008_02_AB;18;TPAC1008_02_AC;19;TPAC1008_02_AD;20;TPAC1008_02_AE;21;TPAC1008_02_AF</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="page300.ui" line="689"/>
         <location filename="page300.ui" line="701"/>
         <source>TEST_ID</source>
@@ -2393,12 +2398,6 @@ ON</source>
         <location filename="page300.ui" line="498"/>
         <location filename="page300.ui" line="507"/>
         <source>RESULT</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page300.ui" line="436"/>
-        <source>1;TPAC1007_4AA;2;TPAC1007_4AC;3;TPAC1007_3;4;TPLC100;5;TPAC1006;6;TPAC1008;7;TP1043_485;8;TP1043_232;9;TP1043_CAN;10;TPAC1007_LV;0;-</source>
-        <oldsource>1;TPAC1007_4AA;2;TPAC1007_3;3;TPLC100;4;TPAC1006;5;TPAC1008;6;TP1043_485;7;TP1043_232;8;TP1043_CAN;9;TPAC1007_LV;0;-</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>

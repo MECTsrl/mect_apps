@@ -61,31 +61,35 @@ RESOURCES += \
     resources.qrc
 
 OTHER_FILES += \
-    recipes/TP1043_485/2.csv \
-    recipes/TP1043_485/1.csv \
+    recipes/TP1043_01_A/2.csv \
+    recipes/TP1043_01_A/1.csv \
     recipes/TPAC1006/1.csv \
     recipes/TPAC1006/2.csv \
-    recipes/TPAC1007_3/1.csv \
-    recipes/TPAC1007_3/2.csv \
+    recipes/TPAC1007_03/1.csv \
+    recipes/TPAC1007_03/2.csv \
     recipes/TPAC1007_LV/1.csv \
     recipes/TPAC1007_4AA/1.csv \
     recipes/TPAC1007_4AA/2.csv \
-    recipes/TPAC1008/1.csv \
-    recipes/TPAC1008/2.csv \
+    recipes/TPAC1007_4AC/1.csv \
+    recipes/TPAC1007_4AC/2.csv \
+    recipes/TPAC1008_01/1.csv \
+    recipes/TPAC1008_01/2.csv \
+    recipes/TPAC1008_02_AA/1.csv \
+    recipes/TPAC1008_02_AA/2.csv \
     recipes/TPLC100/1.csv \
     recipes/TPLC100/2.csv \
     recipes/Values/1.csv \
     recipes/Values/2.csv \
 
 
-recipes_TP1043_485.files = recipes/TP1043_485/1.csv recipes/TP1043_485/2.csv
-recipes_TP1043_485.path = /local/data/recipe/TP1043_485
+recipes_TP1043_01_A.files = recipes/TP1043_01_A/1.csv recipes/TP1043_01_A/2.csv
+recipes_TP1043_01_A.path = /local/data/recipe/TP1043_01_A
 
 recipes_TPAC1006.files = recipes/TPAC1006/1.csv recipes/TPAC1006/2.csv
 recipes_TPAC1006.path = /local/data/recipe/TPAC1006
 
-recipes_TPAC1007_3.files = recipes/TPAC1007_3/1.csv recipes/TPAC1007_3/2.csv
-recipes_TPAC1007_3.path = /local/data/recipe/TPAC1007_3
+recipes_TPAC1007_03.files = recipes/TPAC1007_03/1.csv recipes/TPAC1007_03/2.csv
+recipes_TPAC1007_03.path = /local/data/recipe/TPAC1007_03
 
 recipes_TPAC1007_LV.files = recipes/TPAC1007_LV/1.csv
 recipes_TPAC1007_LV.path = /local/data/recipe/TPAC1007_LV
@@ -93,8 +97,14 @@ recipes_TPAC1007_LV.path = /local/data/recipe/TPAC1007_LV
 recipes_TPAC1007_4AA.files = recipes/TPAC1007_4AA/1.csv recipes/TPAC1007_4AA/2.csv
 recipes_TPAC1007_4AA.path = /local/data/recipe/TPAC1007_4AA
 
-recipes_TPAC1008.files = recipes/TPAC1008/1.csv recipes/TPAC1008/2.csv
-recipes_TPAC1008.path = /local/data/recipe/TPAC1008
+recipes_TPAC1007_4AC.files = recipes/TPAC1007_4AC/1.csv recipes/TPAC1007_4AC/2.csv
+recipes_TPAC1007_4AC.path = /local/data/recipe/TPAC1007_4AC
+
+recipes_TPAC1008_01.files = recipes/TPAC1008_01/1.csv recipes/TPAC1008_01/2.csv
+recipes_TPAC1008_01.path = /local/data/recipe/TPAC1008_01
+
+recipes_TPAC1008_02_AA.files = recipes/TPAC1008_02_AA/1.csv recipes/TPAC1008_02_AA/2.csv
+recipes_TPAC1008_02_AA.path = /local/data/recipe/TPAC1008_02_AA
 
 recipes_TPLC100.files = recipes/TPLC100/1.csv recipes/TPLC100/2.csv
 recipes_TPLC100.path = /local/data/recipe/TPLC100
@@ -103,11 +113,13 @@ recipes_Values.files = recipes/Values/1.csv recipes/Values/2.csv
 recipes_Values.path = /local/data/recipe/Values
 
 INSTALLS += \
-    recipes_TP1043_485 \
+    recipes_TP1043_01_A \
     recipes_TPAC1006 \
-    recipes_TPAC1007_3 \
+    recipes_TPAC1007_03 \
     recipes_TPAC1007_LV \
     recipes_TPAC1007_4AA \
-    recipes_TPAC1008 \
+    recipes_TPAC1007_4AC \
+    recipes_TPAC1008_01 \
+    recipes_TPAC1008_02_AA \
     recipes_TPLC100 \
     recipes_Values
