@@ -399,7 +399,7 @@ ON</string>
     <number>0</number>
    </property>
    <property name="maxCount">
-    <number>10</number>
+    <number>21</number>
    </property>
    <property name="variable">
     <string>PRODUCT_ID</string>
