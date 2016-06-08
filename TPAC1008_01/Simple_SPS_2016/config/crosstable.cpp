@@ -12,6 +12,8 @@ DWORD_BIT <-> int
 #include "crosstable.h"
 #include "cross_table_utility.h"
  
+int16_t AnIn_1 = 0;
+int16_t AnIn_2 = 0;
 u_int32_t RTU0_TYPE_PORT = 0;
 u_int32_t RTU0_BAUDRATE = 0;
 u_int32_t RTU0_STATUS = 0;
@@ -259,6 +261,42 @@ u_int16_t PLC_Version = 0;
 u_int16_t PLC_EngineStatus = 0;
 int PLC_ResetValues = 0;
 int PLC_buzzerOn = 0;
+
+
+int doWrite_AnIn_1(int16_t value)
+{
+return doWrite(ID_AnIn_1,  &value);
+}
+
+
+int addWrite_AnIn_1(int16_t value)
+{
+return addWrite(ID_AnIn_1, &value);
+}
+
+
+int getStatus_AnIn_1()
+{
+return getStatus(ID_AnIn_1);
+}
+
+
+int doWrite_AnIn_2(int16_t value)
+{
+return doWrite(ID_AnIn_2,  &value);
+}
+
+
+int addWrite_AnIn_2(int16_t value)
+{
+return addWrite(ID_AnIn_2, &value);
+}
+
+
+int getStatus_AnIn_2()
+{
+return getStatus(ID_AnIn_2);
+}
 
 
 int doWrite_RTU0_TYPE_PORT(u_int32_t value)
@@ -4710,6 +4748,8 @@ return getStatus(ID_PLC_buzzerOn);
 int update_all(void)
 {
 int retval = 0;
+retval += readFromDb(ID_AnIn_1, &AnIn_1);
+retval += readFromDb(ID_AnIn_2, &AnIn_2);
 retval += readFromDb(ID_RTU0_TYPE_PORT, &RTU0_TYPE_PORT);
 retval += readFromDb(ID_RTU0_BAUDRATE, &RTU0_BAUDRATE);
 retval += readFromDb(ID_RTU0_STATUS, &RTU0_STATUS);

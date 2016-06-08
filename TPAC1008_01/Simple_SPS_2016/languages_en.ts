@@ -247,8 +247,10 @@
     <message>
         <location filename="page100.ui" line="837"/>
         <location filename="page100.ui" line="843"/>
+        <location filename="page100.ui" line="1043"/>
         <location filename="page100.ui" line="2844"/>
-        <source>PLC_AnIn_1</source>
+        <source>AnIn_1</source>
+        <oldsource>PLC_AnIn_1</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -270,7 +272,10 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="page100.ui" line="837"/>
+        <location filename="page100.ui" line="843"/>
         <location filename="page100.ui" line="1043"/>
+        <location filename="page100.ui" line="2844"/>
         <source>AnIn_1</source>
         <translation type="unfinished"></translation>
     </message>
@@ -381,6 +386,9 @@
     </message>
     <message>
         <location filename="page100.ui" line="1601"/>
+        <location filename="page100.ui" line="2519"/>
+        <location filename="page100.ui" line="2525"/>
+        <location filename="page100.ui" line="2874"/>
         <source>AnIn_2</source>
         <translation type="unfinished"></translation>
     </message>
@@ -510,10 +518,12 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="page100.ui" line="1601"/>
         <location filename="page100.ui" line="2519"/>
         <location filename="page100.ui" line="2525"/>
         <location filename="page100.ui" line="2874"/>
-        <source>PLC_AnIn_2</source>
+        <source>AnIn_2</source>
+        <oldsource>PLC_AnIn_2</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>

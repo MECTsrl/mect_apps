@@ -834,13 +834,13 @@ background-color: rgb(170, 255, 255);
     <string notr="true">color: rgb(0, 85, 0);</string>
    </property>
    <property name="toolTip">
-    <string>PLC_AnIn_1</string>
+    <string>AnIn_1</string>
    </property>
    <property name="whatsThis">
     <string>ATCMlabel widget</string>
    </property>
    <property name="variable">
-    <string>PLC_AnIn_1</string>
+    <string>AnIn_1</string>
    </property>
    <property name="suffix">
     <string> V</string>
@@ -2516,13 +2516,13 @@ background-color: rgb(170, 255, 255);
     <string notr="true">color: rgb(0, 85, 0);</string>
    </property>
    <property name="toolTip">
-    <string>PLC_AnIn_2</string>
+    <string>AnIn_2</string>
    </property>
    <property name="whatsThis">
     <string>ATCMlabel widget</string>
    </property>
    <property name="variable">
-    <string>PLC_AnIn_2</string>
+    <string>AnIn_2</string>
    </property>
    <property name="suffix">
     <string> V</string>
@@ -2841,7 +2841,7 @@ background-color: rgb(170, 255, 255);
     <double>5.000000000000000</double>
    </property>
    <property name="y1Variable">
-    <string>PLC_AnIn_1</string>
+    <string>AnIn_1</string>
    </property>
    <property name="y1Min">
     <string>-1</string>
@@ -2871,7 +2871,7 @@ background-color: rgb(170, 255, 255);
     <double>5.000000000000000</double>
    </property>
    <property name="y2Variable">
-    <string>PLC_AnIn_2</string>
+    <string>AnIn_2</string>
    </property>
    <property name="y2Min">
     <string>-1</string>

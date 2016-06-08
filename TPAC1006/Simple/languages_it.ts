@@ -375,7 +375,12 @@
     </message>
     <message>
         <location filename="page100.ui" line="1752"/>
-        <source>Local_IO</source>
+        <source>Simple</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page100.ui" line="3126"/>
+        <source>Engine</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

@@ -16,6 +16,18 @@ extern "C" {
 #endif
 #include <sys/types.h>
  
+#define ID_AnIn_1 193
+extern int16_t AnIn_1;
+int doWrite_AnIn_1(int16_t value);
+int addWrite_AnIn_1(int16_t value);
+int getStatus_AnIn_1();
+ 
+#define ID_AnIn_2 194
+extern int16_t AnIn_2;
+int doWrite_AnIn_2(int16_t value);
+int addWrite_AnIn_2(int16_t value);
+int getStatus_AnIn_2();
+ 
 #define ID_RTU0_TYPE_PORT 5000
 extern u_int32_t RTU0_TYPE_PORT;
 int doWrite_RTU0_TYPE_PORT(u_int32_t value);
