@@ -68,10 +68,10 @@ OTHER_FILES += \
     recipes/TPAC1007_03/1.csv \
     recipes/TPAC1007_03/2.csv \
     recipes/TPAC1007_LV/1.csv \
-    recipes/TPAC1007_4AA/1.csv \
-    recipes/TPAC1007_4AA/2.csv \
-    recipes/TPAC1007_4AC/1.csv \
-    recipes/TPAC1007_4AC/2.csv \
+    recipes/TPAC1007_04_AA/1.csv \
+    recipes/TPAC1007_04_AA/2.csv \
+    recipes/TPAC1007_04_AC/1.csv \
+    recipes/TPAC1007_04_AC/2.csv \
     recipes/TPAC1008_01/1.csv \
     recipes/TPAC1008_01/2.csv \
     recipes/TPAC1008_02_AA/1.csv \
@@ -94,11 +94,11 @@ recipes_TPAC1007_03.path = /local/data/recipe/TPAC1007_03
 recipes_TPAC1007_LV.files = recipes/TPAC1007_LV/1.csv
 recipes_TPAC1007_LV.path = /local/data/recipe/TPAC1007_LV
 
-recipes_TPAC1007_4AA.files = recipes/TPAC1007_4AA/1.csv recipes/TPAC1007_4AA/2.csv
-recipes_TPAC1007_4AA.path = /local/data/recipe/TPAC1007_4AA
+recipes_TPAC1007_04_AA.files = recipes/TPAC1007_04_AA/1.csv recipes/TPAC1007_04_AA/2.csv
+recipes_TPAC1007_04_AA.path = /local/data/recipe/TPAC1007_04_AA
 
-recipes_TPAC1007_4AC.files = recipes/TPAC1007_4AC/1.csv recipes/TPAC1007_4AC/2.csv
-recipes_TPAC1007_4AC.path = /local/data/recipe/TPAC1007_4AC
+recipes_TPAC1007_04_AC.files = recipes/TPAC1007_04_AC/1.csv recipes/TPAC1007_04_AC/2.csv
+recipes_TPAC1007_04_AC.path = /local/data/recipe/TPAC1007_04_AC
 
 recipes_TPAC1008_01.files = recipes/TPAC1008_01/1.csv recipes/TPAC1008_01/2.csv
 recipes_TPAC1008_01.path = /local/data/recipe/TPAC1008_01
@@ -117,8 +117,8 @@ INSTALLS += \
     recipes_TPAC1006 \
     recipes_TPAC1007_03 \
     recipes_TPAC1007_LV \
-    recipes_TPAC1007_4AA \
-    recipes_TPAC1007_4AC \
+    recipes_TPAC1007_04_AA \
+    recipes_TPAC1007_04_AC \
     recipes_TPAC1008_01 \
     recipes_TPAC1008_02_AA \
     recipes_TPLC100 \

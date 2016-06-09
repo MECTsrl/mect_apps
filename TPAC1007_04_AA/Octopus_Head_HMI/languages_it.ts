@@ -2157,8 +2157,8 @@ NODE 1 [1]</source>
     </message>
     <message>
         <location filename="page300.ui" line="732"/>
-        <source>1;1 = Short;2;2 = Long;0;-</source>
-        <oldsource>1;1 = Short;2;2 = Long;0;-;4;4</oldsource>
+        <source>1;1 Short;2;2 Long;0;-</source>
+        <oldsource>1;1 = Short;2;2 = Long;0;-</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
