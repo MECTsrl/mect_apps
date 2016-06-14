@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 2.7.84, 2016-04-19T14:21:26. -->
+<!-- Written by QtCreator 2.7.84, 2016-05-30T12:55:44. -->
 <qtcreator>
  <data>
   <variable>ProjectExplorer.Project.ActiveTarget</variable>
@@ -290,21 +290,21 @@
       </valuelist>
       <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedTimes">
        <value type="QDateTime">2016-03-03T12:26:22</value>
-       <value type="QDateTime">2016-04-19T09:20:08</value>
+       <value type="QDateTime">2016-05-30T12:34:24</value>
        <value type="QDateTime">2016-03-03T12:26:21</value>
-       <value type="QDateTime">2016-04-19T09:20:08</value>
+       <value type="QDateTime">2016-05-30T12:34:24</value>
        <value type="QDateTime">2016-03-03T12:26:21</value>
-       <value type="QDateTime">2016-04-19T09:20:09</value>
+       <value type="QDateTime">2016-05-30T12:34:24</value>
        <value type="QDateTime">2016-03-03T12:26:21</value>
-       <value type="QDateTime">2016-04-19T09:20:08</value>
-       <value type="QDateTime">2016-04-19T09:20:08</value>
-       <value type="QDateTime">2016-04-19T09:20:08</value>
-       <value type="QDateTime">2016-03-03T12:26:21</value>
-       <value type="QDateTime">2016-03-03T12:26:21</value>
+       <value type="QDateTime">2016-05-30T12:34:24</value>
+       <value type="QDateTime">2016-05-30T12:34:23</value>
+       <value type="QDateTime">2016-05-30T12:34:23</value>
        <value type="QDateTime">2016-03-03T12:26:21</value>
        <value type="QDateTime">2016-03-03T12:26:21</value>
        <value type="QDateTime">2016-03-03T12:26:21</value>
-       <value type="QDateTime">2016-04-19T09:20:08</value>
+       <value type="QDateTime">2016-03-03T12:26:21</value>
+       <value type="QDateTime">2016-03-03T12:26:21</value>
+       <value type="QDateTime">2016-05-30T12:34:24</value>
        <value type="QDateTime">2016-03-03T12:26:21</value>
        <value type="QDateTime">2016-03-03T12:26:22</value>
       </valuelist>

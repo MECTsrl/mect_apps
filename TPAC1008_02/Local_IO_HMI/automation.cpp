@@ -8,6 +8,7 @@
 
 void setup(void)
 {
+    set_backlight_level(50);
 }
 
 void loop(void)

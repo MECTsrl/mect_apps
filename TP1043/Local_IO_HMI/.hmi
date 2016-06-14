@@ -1,0 +1,11 @@
+INPUT(
+./crosstable.o
+./pages.o
+./automation.o
+./page100.o
+./page200.o
+./moc_page100.o
+./moc_page200.o
+./qrc_languages.o
+./qrc_resources.o
+);
