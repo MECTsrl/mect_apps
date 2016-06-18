@@ -2578,23 +2578,23 @@ int doWrite_PLC_DigIn_9(int value);
 int addWrite_PLC_DigIn_9(int value);
 int getStatus_PLC_DigIn_9();
  
-#define ID_PLC_DigIn_10 5325
-extern int PLC_DigIn_10;
-int doWrite_PLC_DigIn_10(int value);
-int addWrite_PLC_DigIn_10(int value);
-int getStatus_PLC_DigIn_10();
+#define ID_PLC_Reserved_1 5325
+extern int PLC_Reserved_1;
+int doWrite_PLC_Reserved_1(int value);
+int addWrite_PLC_Reserved_1(int value);
+int getStatus_PLC_Reserved_1();
  
-#define ID_PLC_DigIn_11 5326
-extern int PLC_DigIn_11;
-int doWrite_PLC_DigIn_11(int value);
-int addWrite_PLC_DigIn_11(int value);
-int getStatus_PLC_DigIn_11();
+#define ID_PLC_Reserved_2 5326
+extern int PLC_Reserved_2;
+int doWrite_PLC_Reserved_2(int value);
+int addWrite_PLC_Reserved_2(int value);
+int getStatus_PLC_Reserved_2();
  
-#define ID_PLC_DigIn_12 5327
-extern int PLC_DigIn_12;
-int doWrite_PLC_DigIn_12(int value);
-int addWrite_PLC_DigIn_12(int value);
-int getStatus_PLC_DigIn_12();
+#define ID_PLC_Reserved_3 5327
+extern int PLC_Reserved_3;
+int doWrite_PLC_Reserved_3(int value);
+int addWrite_PLC_Reserved_3(int value);
+int getStatus_PLC_Reserved_3();
  
 #define ID_PLC_AnIn_1 5328
 extern int16_t PLC_AnIn_1;
@@ -2752,6 +2752,24 @@ int doWrite_PLC_AnIn2Filter(u_int16_t value);
 int addWrite_PLC_AnIn2Filter(u_int16_t value);
 int getStatus_PLC_AnIn2Filter();
  
+#define ID_PLC_AnIn3Filter 5354
+extern u_int16_t PLC_AnIn3Filter;
+int doWrite_PLC_AnIn3Filter(u_int16_t value);
+int addWrite_PLC_AnIn3Filter(u_int16_t value);
+int getStatus_PLC_AnIn3Filter();
+ 
+#define ID_PLC_AnIn4Filter 5355
+extern u_int16_t PLC_AnIn4Filter;
+int doWrite_PLC_AnIn4Filter(u_int16_t value);
+int addWrite_PLC_AnIn4Filter(u_int16_t value);
+int getStatus_PLC_AnIn4Filter();
+ 
+#define ID_PLC_AnIn5Filter 5356
+extern u_int16_t PLC_AnIn5Filter;
+int doWrite_PLC_AnIn5Filter(u_int16_t value);
+int addWrite_PLC_AnIn5Filter(u_int16_t value);
+int getStatus_PLC_AnIn5Filter();
+ 
 #define ID_PLC_time 5390
 extern float PLC_time;
 int doWrite_PLC_time(float value);
@@ -2793,6 +2811,12 @@ extern int PLC_ResetValues;
 int doWrite_PLC_ResetValues(int value);
 int addWrite_PLC_ResetValues(int value);
 int getStatus_PLC_ResetValues();
+ 
+#define ID_PLC_buzzerOn 5397
+extern int PLC_buzzerOn;
+int doWrite_PLC_buzzerOn(int value);
+int addWrite_PLC_buzzerOn(int value);
+int getStatus_PLC_buzzerOn();
  
 #ifdef __cplusplus
 }

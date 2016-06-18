@@ -3,5 +3,7 @@
         <file>my_img/done.png</file>
         <file>my_img/local.png</file>
         <file>my_img/remote.png</file>
+        <file>my_img/TPAC1007_04_AB.png</file>
+        <file>my_img/TPAC1007_04_AB_.png</file>
     </qresource>
 </RCC>

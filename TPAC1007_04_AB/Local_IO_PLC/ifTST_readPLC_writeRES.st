@@ -32,10 +32,10 @@ END_VAR
 	if (TST_AnIn_5    ) then RES_AnIn_5 := PLC_AnIn_5; end_if;
 
     if (TST_AnOut_1   ) then ; end_if;
-	if (TST_AnOut_2   ) then ; end_if;
-	if (TST_AnOut_3   ) then ; end_if;
-	if (TST_AnOut_4   ) then ; end_if;
-    
+    if (TST_AnOut_2   ) then ; end_if;
+    if (TST_AnOut_3   ) then ; end_if;
+    if (TST_AnOut_4   ) then ; end_if;
+
     if (TST_Tamb      ) then RES_Tamb := PLC_Tamb; end_if;
     if (TST_RPM       ) then ; end_if;
     if (TST_FWrevision) then RES_FWrevision := PLC_FWrevision; end_if;

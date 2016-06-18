@@ -56,17 +56,11 @@ config.path = /local/etc/sysconfig
 splash.files = config/splash.png
 splash.path = /local/etc/sysconfig/img
 
-customstore.files = config/store_AnOut_1-4.csv
-customstore.files += config/store_AnOut_3.csv
-customstore.files += config/store_AnOut_4.csv
-customstore.path = /local/data/customstore
-
-customtrend.files = 
+customtrend.files = config/trend1.csv
 customtrend.path = /local/data/customtrend
 
 INSTALLS += config splash
 
-INSTALLS += customstore
 INSTALLS += customtrend
 
 DEFINES+=ENABLE_STORE
@@ -105,20 +99,21 @@ SOURCES += \
         pages.cpp
 
 !isEmpty(ATCM_TEMPLATE_BASE_DIR) {
-# pre-elaboration
-check_missing_file.commands = @perl $${ATCM_TEMPLATE_BASE_DIR}/ATCM-template-project/cleanmissingpage.pl $$_PRO_FILE_ $$_PRO_FILE_PWD_
-check_undeclared_variable.commands = @perl $${ATCM_TEMPLATE_BASE_DIR}/ATCM-template-project/check_cross_var.pl $$_PRO_FILE_PWD_
-check_gotopage_bind.commands = @perl $${ATCM_TEMPLATE_BASE_DIR}/ATCM-template-project/connectbutton.pl $$_PRO_FILE_PWD_
+	# pre-elaboration
+	check_missing_file.commands = @perl $${ATCM_TEMPLATE_BASE_DIR}/ATCM-template-project/cleanmissingpage.pl $$_PRO_FILE_ $$_PRO_FILE_PWD_
+	check_undeclared_variable.commands = @perl $${ATCM_TEMPLATE_BASE_DIR}/ATCM-template-project/check_cross_var.pl $$_PRO_FILE_PWD_
+	check_gotopage_bind.commands = @perl $${ATCM_TEMPLATE_BASE_DIR}/ATCM-template-project/connectbutton.pl $$_PRO_FILE_PWD_
+	check_systemini.commands = @perl $${ATCM_TEMPLATE_BASE_DIR}/ATCM-template-project/check_systemini.pl $$_PRO_FILE_ $$_PRO_FILE_PWD_
 
-QMAKE_EXTRA_TARGETS += check_missing_file check_undeclared_variable check_gotopage_bind
-PRE_TARGETDEPS += check_missing_file check_undeclared_variable check_gotopage_bind
+	QMAKE_EXTRA_TARGETS += check_missing_file check_undeclared_variable check_gotopage_bind check_systemini
+	PRE_TARGETDEPS += check_missing_file check_undeclared_variable check_gotopage_bind check_systemini
 }
 
 # language
 !isEmpty(QT_LUPDATE_PATH) {
-        update.commands = $${QT_LUPDATE_PATH}/lupdate $$_PRO_FILE_
-        updates.depends = $$SOURCES $$HEADERS $$FORMS $$TRANSLATIONS
-        release.depends = update
+update.commands = $${QT_LUPDATE_PATH}/lupdate $$_PRO_FILE_
+updates.depends = $$SOURCES $$HEADERS $$FORMS $$TRANSLATIONS
+release.depends = update
         QMAKE_EXTRA_TARGETS += update
         PRE_TARGETDEPS += update
 }
@@ -128,17 +123,16 @@ PRE_TARGETDEPS += check_missing_file check_undeclared_variable check_gotopage_bi
         PRE_TARGETDEPS += release
 }
 
-        RESOURCES += \
-            languages.qrc
+RESOURCES += \
+    languages.qrc
 
-        OTHER_FILES += \
-            languages_it.ts \
-            languages_en.ts \
-    config/store_AnOut_4.csv \
-    config/store_AnOut_3.csv \
-    config/store_AnOut_1-4.csv
+OTHER_FILES += \
+    languages_it.ts \
+    languages_en.ts
 
-        include(./languages.pri)
+include(./languages.pri)
+
+TYPE = "TPAC1007_04_AB"
 
 # display size
 MODEL = "<width>480</width><height>272</height>"
