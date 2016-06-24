@@ -99,7 +99,7 @@
    <property name="geometry">
     <rect>
      <x>3</x>
-     <y>81</y>
+     <y>80</y>
      <width>61</width>
      <height>41</height>
     </rect>
@@ -121,7 +121,7 @@
    <property name="geometry">
     <rect>
      <x>3</x>
-     <y>121</y>
+     <y>120</y>
      <width>61</width>
      <height>41</height>
     </rect>
@@ -143,7 +143,7 @@
    <property name="geometry">
     <rect>
      <x>3</x>
-     <y>161</y>
+     <y>160</y>
      <width>61</width>
      <height>41</height>
     </rect>
@@ -165,7 +165,7 @@
    <property name="geometry">
     <rect>
      <x>3</x>
-     <y>200</y>
+     <y>199</y>
      <width>61</width>
      <height>41</height>
     </rect>
@@ -184,10 +184,13 @@
    </property>
   </widget>
   <widget class="ATCMlabel" name="atcmLabel">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
    <property name="geometry">
     <rect>
      <x>64</x>
-     <y>81</y>
+     <y>80</y>
      <width>64</width>
      <height>41</height>
     </rect>
@@ -246,10 +249,13 @@
    </property>
   </widget>
   <widget class="ATCMlabel" name="atcmLabel_2">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
    <property name="geometry">
     <rect>
      <x>128</x>
-     <y>81</y>
+     <y>80</y>
      <width>64</width>
      <height>41</height>
     </rect>
@@ -305,7 +311,7 @@
    <property name="geometry">
     <rect>
      <x>214</x>
-     <y>91</y>
+     <y>90</y>
      <width>21</width>
      <height>21</height>
     </rect>
@@ -341,7 +347,7 @@
    <property name="geometry">
     <rect>
      <x>278</x>
-     <y>91</y>
+     <y>90</y>
      <width>21</width>
      <height>21</height>
     </rect>
@@ -433,6 +439,9 @@
    </property>
   </widget>
   <widget class="ATCMlabel" name="atcmLabel_3">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
    <property name="geometry">
     <rect>
      <x>100</x>
@@ -476,6 +485,9 @@
    </property>
   </widget>
   <widget class="ATCMlabel" name="atcmLabel_4">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
    <property name="geometry">
     <rect>
      <x>100</x>
@@ -522,7 +534,7 @@
    <property name="geometry">
     <rect>
      <x>278</x>
-     <y>130</y>
+     <y>129</y>
      <width>21</width>
      <height>21</height>
     </rect>
@@ -555,10 +567,13 @@
    </property>
   </widget>
   <widget class="ATCMlabel" name="atcmLabel_5">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
    <property name="geometry">
     <rect>
      <x>128</x>
-     <y>120</y>
+     <y>119</y>
      <width>64</width>
      <height>41</height>
     </rect>
@@ -611,10 +626,13 @@
    </property>
   </widget>
   <widget class="ATCMlabel" name="atcmLabel_6">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
    <property name="geometry">
     <rect>
      <x>64</x>
-     <y>120</y>
+     <y>119</y>
      <width>64</width>
      <height>41</height>
     </rect>
@@ -676,7 +694,7 @@
    <property name="geometry">
     <rect>
      <x>214</x>
-     <y>130</y>
+     <y>129</y>
      <width>21</width>
      <height>21</height>
     </rect>
@@ -712,7 +730,7 @@
    <property name="geometry">
     <rect>
      <x>278</x>
-     <y>170</y>
+     <y>169</y>
      <width>21</width>
      <height>21</height>
     </rect>
@@ -745,10 +763,13 @@
    </property>
   </widget>
   <widget class="ATCMlabel" name="atcmLabel_7">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
    <property name="geometry">
     <rect>
      <x>128</x>
-     <y>160</y>
+     <y>159</y>
      <width>64</width>
      <height>41</height>
     </rect>
@@ -801,10 +822,13 @@
    </property>
   </widget>
   <widget class="ATCMlabel" name="atcmLabel_8">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
    <property name="geometry">
     <rect>
      <x>64</x>
-     <y>160</y>
+     <y>159</y>
      <width>64</width>
      <height>41</height>
     </rect>
@@ -866,7 +890,7 @@
    <property name="geometry">
     <rect>
      <x>214</x>
-     <y>170</y>
+     <y>169</y>
      <width>21</width>
      <height>21</height>
     </rect>
@@ -902,7 +926,7 @@
    <property name="geometry">
     <rect>
      <x>278</x>
-     <y>210</y>
+     <y>209</y>
      <width>21</width>
      <height>21</height>
     </rect>
@@ -935,10 +959,13 @@
    </property>
   </widget>
   <widget class="ATCMlabel" name="atcmLabel_9">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
    <property name="geometry">
     <rect>
      <x>128</x>
-     <y>200</y>
+     <y>199</y>
      <width>64</width>
      <height>41</height>
     </rect>
@@ -991,10 +1018,13 @@
    </property>
   </widget>
   <widget class="ATCMlabel" name="atcmLabel_10">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
    <property name="geometry">
     <rect>
      <x>64</x>
-     <y>200</y>
+     <y>199</y>
      <width>64</width>
      <height>41</height>
     </rect>
@@ -1056,7 +1086,7 @@
    <property name="geometry">
     <rect>
      <x>214</x>
-     <y>210</y>
+     <y>209</y>
      <width>21</width>
      <height>21</height>
     </rect>
@@ -1092,7 +1122,7 @@
    <property name="geometry">
     <rect>
      <x>0</x>
-     <y>81</y>
+     <y>80</y>
      <width>320</width>
      <height>41</height>
     </rect>
@@ -1129,7 +1159,7 @@
    <property name="geometry">
     <rect>
      <x>0</x>
-     <y>122</y>
+     <y>121</y>
      <width>320</width>
      <height>41</height>
     </rect>
@@ -1166,7 +1196,7 @@
    <property name="geometry">
     <rect>
      <x>0</x>
-     <y>204</y>
+     <y>203</y>
      <width>320</width>
      <height>41</height>
     </rect>
@@ -1203,7 +1233,7 @@
    <property name="geometry">
     <rect>
      <x>0</x>
-     <y>163</y>
+     <y>162</y>
      <width>320</width>
      <height>41</height>
     </rect>
@@ -1240,9 +1270,9 @@
    <property name="geometry">
     <rect>
      <x>64</x>
-     <y>60</y>
+     <y>40</y>
      <width>64</width>
-     <height>21</height>
+     <height>40</height>
     </rect>
    </property>
    <property name="font">
@@ -1252,7 +1282,7 @@
     </font>
    </property>
    <property name="toolTip">
-    <string>page: page310  status: </string>
+    <string/>
    </property>
    <property name="whatsThis">
     <string>ATCMbutton widget</string>
@@ -1261,7 +1291,7 @@
     <string>page310</string>
    </property>
    <property name="remember">
-    <bool>false</bool>
+    <bool>true</bool>
    </property>
    <property name="statusvar">
     <string/>
@@ -1292,9 +1322,9 @@
    <property name="geometry">
     <rect>
      <x>128</x>
-     <y>60</y>
+     <y>40</y>
      <width>64</width>
-     <height>21</height>
+     <height>40</height>
     </rect>
    </property>
    <property name="font">
@@ -1304,7 +1334,7 @@
     </font>
    </property>
    <property name="toolTip">
-    <string>page: page320  status: </string>
+    <string/>
    </property>
    <property name="whatsThis">
     <string>ATCMbutton widget</string>
@@ -1313,7 +1343,7 @@
     <string>page320</string>
    </property>
    <property name="remember">
-    <bool>false</bool>
+    <bool>true</bool>
    </property>
    <property name="statusvar">
     <string/>
@@ -1344,9 +1374,9 @@
    <property name="geometry">
     <rect>
      <x>192</x>
-     <y>60</y>
+     <y>40</y>
      <width>64</width>
-     <height>21</height>
+     <height>40</height>
     </rect>
    </property>
    <property name="font">
@@ -1356,7 +1386,7 @@
     </font>
    </property>
    <property name="toolTip">
-    <string>page: page330  status: </string>
+    <string/>
    </property>
    <property name="whatsThis">
     <string>ATCMbutton widget</string>
@@ -1365,7 +1395,7 @@
     <string>page330</string>
    </property>
    <property name="remember">
-    <bool>false</bool>
+    <bool>true</bool>
    </property>
    <property name="statusvar">
     <string/>
@@ -1396,9 +1426,9 @@
    <property name="geometry">
     <rect>
      <x>256</x>
-     <y>60</y>
+     <y>40</y>
      <width>64</width>
-     <height>21</height>
+     <height>40</height>
     </rect>
    </property>
    <property name="font">
@@ -1408,7 +1438,7 @@
     </font>
    </property>
    <property name="toolTip">
-    <string>page: page340  status: </string>
+    <string/>
    </property>
    <property name="whatsThis">
     <string>ATCMbutton widget</string>
@@ -1417,7 +1447,7 @@
     <string>page340</string>
    </property>
    <property name="remember">
-    <bool>false</bool>
+    <bool>true</bool>
    </property>
    <property name="statusvar">
     <string/>
@@ -1433,6 +1463,71 @@
    </property>
    <property name="pressText">
     <string>Dig. Out 4</string>
+   </property>
+   <property name="borderWidth">
+    <number>0</number>
+   </property>
+   <property name="borderRadius">
+    <number>0</number>
+   </property>
+   <property name="apparence">
+    <enum>QFrame::Raised</enum>
+   </property>
+  </widget>
+  <widget class="ATCMbutton" name="atcmButton_2">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>40</y>
+     <width>64</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>9</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="toolTip">
+    <string/>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMbutton widget</string>
+   </property>
+   <property name="pageName">
+    <string>BACK</string>
+   </property>
+   <property name="statusvar">
+    <string/>
+   </property>
+   <property name="viewStatus">
+    <bool>false</bool>
+   </property>
+   <property name="visibilityVar">
+    <string/>
+   </property>
+   <property name="bgColor">
+    <color>
+     <red>170</red>
+     <green>170</green>
+     <blue>127</blue>
+    </color>
+   </property>
+   <property name="fontColor">
+    <color>
+     <red>240</red>
+     <green>240</green>
+     <blue>240</blue>
+    </color>
+   </property>
+   <property name="text">
+    <string>&lt;---=</string>
+   </property>
+   <property name="pressText">
+    <string>BACK</string>
    </property>
    <property name="borderWidth">
     <number>0</number>
@@ -1477,6 +1572,7 @@
   <zorder>atcmButton_AnIn1_2</zorder>
   <zorder>atcmButton_AnIn1_3</zorder>
   <zorder>atcmButton_AnIn1_4</zorder>
+  <zorder>atcmButton_2</zorder>
  </widget>
  <customwidgets>
   <customwidget>
@@ -1578,6 +1674,22 @@
   </connection>
   <connection>
    <sender>atcmButton_AnIn1_4</sender>
+   <signal>newPage(const char*,bool)</signal>
+   <receiver>page100</receiver>
+   <slot>goto_page(const char*,bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>atcmButton_2</sender>
    <signal>newPage(const char*,bool)</signal>
    <receiver>page100</receiver>
    <slot>goto_page(const char*,bool)</slot>
