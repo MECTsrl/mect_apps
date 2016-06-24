@@ -1,0 +1,40 @@
+(******************************)
+(*                            *)
+(*     EXPORTED VARIABLES     *)
+(*                            *)
+(******************************)
+VAR_GLOBAL
+{G: CANOpen}
+
+
+	ch1_CAN_DigIn_1 AT %IB202.8: BYTE;
+	ch1_CAN_DigIn_2 AT %IB202.9: BYTE;
+	ch1_CAN_DigIn_3 AT %IB202.10: BYTE;
+	ch1_CAN_DigIn_4 AT %IB202.11: BYTE;
+	ch1_CAN_DigIn_5 AT %IB202.12: BYTE;
+	ch1_CAN_DigIn_6 AT %IB202.13: BYTE;
+	ch1_CAN_DigIn_7 AT %IB202.14: BYTE;
+	ch1_CAN_DigIn_8 AT %IB202.15: BYTE;
+	ch1_CAN_DigOut_1 AT %QB203.8: BYTE;
+	ch1_CAN_DigOut_2 AT %QB203.9: BYTE;
+	ch1_CAN_DigOut_3 AT %QB203.10: BYTE;
+	ch1_CAN_DigOut_4 AT %QB203.11: BYTE;
+	ch1_CAN_DigOut_5 AT %QB203.12: BYTE;
+	ch1_CAN_DigOut_6 AT %QB203.13: BYTE;
+	ch1_CAN_DigOut_7 AT %QB203.14: BYTE;
+	ch1_CAN_DigOut_8 AT %QB203.15: BYTE;
+	ch1_CAN_AnIn_1 AT %IW204.8: INT;
+	ch1_CAN_AnIn_2 AT %IW204.9: INT;
+	ch1_CAN_AnIn_3 AT %IW204.10: INT;
+	ch1_CAN_AnIn_4 AT %IW204.11: INT;
+	ch1_$NETRUN AT %IX100.0 : BOOL;
+	ch1_$NETGOOD AT %IX100.1: BOOL;
+	ch1_$NETERR AT %ID106.0 : UDINT;
+	ch1_$NETRST AT %QX101.0 : BOOL;
+	ch1_$NETDIS AT %QX101.1 : BOOL;
+	ch1_$N1RUN AT %IX100.2 : BOOL;
+	ch1_$N1GOOD AT %IX100.3 : BOOL;
+	ch1_$N1ERR AT %ID106.1 : UDINT;
+	ch1_$N1RST AT %QX101.2 : BOOL;
+	ch1_$N1DIS AT %QX101.3 : BOOL;
+END_VAR
