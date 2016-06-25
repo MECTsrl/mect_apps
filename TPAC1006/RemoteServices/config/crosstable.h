@@ -124,6 +124,114 @@ int doWrite_CAN_DigOut_4(int value);
 int addWrite_CAN_DigOut_4(int value);
 int getStatus_CAN_DigOut_4();
  
+#define ID_CH1_NETRUN 211
+extern int CH1_NETRUN;
+int doWrite_CH1_NETRUN(int value);
+int addWrite_CH1_NETRUN(int value);
+int getStatus_CH1_NETRUN();
+ 
+#define ID_CH1_NETGOOD 212
+extern int CH1_NETGOOD;
+int doWrite_CH1_NETGOOD(int value);
+int addWrite_CH1_NETGOOD(int value);
+int getStatus_CH1_NETGOOD();
+ 
+#define ID_CH1_NETERR 213
+extern u_int32_t CH1_NETERR;
+int doWrite_CH1_NETERR(u_int32_t value);
+int addWrite_CH1_NETERR(u_int32_t value);
+int getStatus_CH1_NETERR();
+ 
+#define ID_CH1_NETRST 214
+extern int CH1_NETRST;
+int doWrite_CH1_NETRST(int value);
+int addWrite_CH1_NETRST(int value);
+int getStatus_CH1_NETRST();
+ 
+#define ID_CH1_NETDIS 215
+extern int CH1_NETDIS;
+int doWrite_CH1_NETDIS(int value);
+int addWrite_CH1_NETDIS(int value);
+int getStatus_CH1_NETDIS();
+ 
+#define ID_CH1_01_NODERUN 216
+extern int CH1_01_NODERUN;
+int doWrite_CH1_01_NODERUN(int value);
+int addWrite_CH1_01_NODERUN(int value);
+int getStatus_CH1_01_NODERUN();
+ 
+#define ID_CH1_01_NODEGOOD 217
+extern int CH1_01_NODEGOOD;
+int doWrite_CH1_01_NODEGOOD(int value);
+int addWrite_CH1_01_NODEGOOD(int value);
+int getStatus_CH1_01_NODEGOOD();
+ 
+#define ID_CH1_01_NODEERR 218
+extern u_int32_t CH1_01_NODEERR;
+int doWrite_CH1_01_NODEERR(u_int32_t value);
+int addWrite_CH1_01_NODEERR(u_int32_t value);
+int getStatus_CH1_01_NODEERR();
+ 
+#define ID_CH1_01_NODERST 219
+extern int CH1_01_NODERST;
+int doWrite_CH1_01_NODERST(int value);
+int addWrite_CH1_01_NODERST(int value);
+int getStatus_CH1_01_NODERST();
+ 
+#define ID_CH1_01_NODEDIS 220
+extern int CH1_01_NODEDIS;
+int doWrite_CH1_01_NODEDIS(int value);
+int addWrite_CH1_01_NODEDIS(int value);
+int getStatus_CH1_01_NODEDIS();
+ 
+#define ID_LOC_RISING 222
+extern int LOC_RISING;
+int doWrite_LOC_RISING(int value);
+int addWrite_LOC_RISING(int value);
+int getStatus_LOC_RISING();
+ 
+#define ID_LOC_FALLING 223
+extern int LOC_FALLING;
+int doWrite_LOC_FALLING(int value);
+int addWrite_LOC_FALLING(int value);
+int getStatus_LOC_FALLING();
+ 
+#define ID_RTU_RISING 224
+extern int RTU_RISING;
+int doWrite_RTU_RISING(int value);
+int addWrite_RTU_RISING(int value);
+int getStatus_RTU_RISING();
+ 
+#define ID_RTU_FALLING 225
+extern int RTU_FALLING;
+int doWrite_RTU_FALLING(int value);
+int addWrite_RTU_FALLING(int value);
+int getStatus_RTU_FALLING();
+ 
+#define ID_CAN_RISING 226
+extern int CAN_RISING;
+int doWrite_CAN_RISING(int value);
+int addWrite_CAN_RISING(int value);
+int getStatus_CAN_RISING();
+ 
+#define ID_CAN_FALLING 227
+extern int CAN_FALLING;
+int doWrite_CAN_FALLING(int value);
+int addWrite_CAN_FALLING(int value);
+int getStatus_CAN_FALLING();
+ 
+#define ID_TCP_RISING 228
+extern int TCP_RISING;
+int doWrite_TCP_RISING(int value);
+int addWrite_TCP_RISING(int value);
+int getStatus_TCP_RISING();
+ 
+#define ID_TCP_FALLING 229
+extern int TCP_FALLING;
+int doWrite_TCP_FALLING(int value);
+int addWrite_TCP_FALLING(int value);
+int getStatus_TCP_FALLING();
+ 
 #define ID_RTU0_TYPE_PORT 5000
 extern u_int32_t RTU0_TYPE_PORT;
 int doWrite_RTU0_TYPE_PORT(u_int32_t value);

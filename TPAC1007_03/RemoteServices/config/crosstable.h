@@ -40,6 +40,18 @@ int doWrite_TCP_DigOut_4(int value);
 int addWrite_TCP_DigOut_4(int value);
 int getStatus_TCP_DigOut_4();
  
+#define ID_LOC_RISING 222
+extern int LOC_RISING;
+int doWrite_LOC_RISING(int value);
+int addWrite_LOC_RISING(int value);
+int getStatus_LOC_RISING();
+ 
+#define ID_LOC_FALLING 223
+extern int LOC_FALLING;
+int doWrite_LOC_FALLING(int value);
+int addWrite_LOC_FALLING(int value);
+int getStatus_LOC_FALLING();
+ 
 #define ID_RTU0_TYPE_PORT 5000
 extern u_int32_t RTU0_TYPE_PORT;
 int doWrite_RTU0_TYPE_PORT(u_int32_t value);

@@ -87,6 +87,9 @@
    <property name="x2Max">
     <string>PLC_timeMax</string>
    </property>
+   <property name="x2Step">
+    <double>1.000000000000000</double>
+   </property>
    <property name="y2Variable">
     <string>TCP_DigOut_4</string>
    </property>
@@ -139,6 +142,9 @@
    <property name="x1Max">
     <string>PLC_timeMax</string>
    </property>
+   <property name="x1Step">
+    <double>1.000000000000000</double>
+   </property>
    <property name="y1Variable">
     <string>LOC_DigOut_4</string>
    </property>
@@ -165,6 +171,9 @@
    </property>
    <property name="x2Max">
     <string>PLC_timeMax</string>
+   </property>
+   <property name="x2Step">
+    <double>1.000000000000000</double>
    </property>
    <property name="y2Variable">
     <string>RTU_DigOut_4</string>
@@ -526,6 +535,150 @@
     <enum>QFrame::Raised</enum>
    </property>
   </widget>
+  <widget class="ATCMled" name="atcmLed_17">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>220</y>
+     <width>20</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>CH1_01_NODEGOOD</string>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMled widget</string>
+   </property>
+   <property name="variable">
+    <string>CH1_01_NODEGOOD</string>
+   </property>
+   <property name="refresh">
+    <number>200</number>
+   </property>
+   <property name="viewStatus">
+    <bool>false</bool>
+   </property>
+   <property name="visibilityVar">
+    <string/>
+   </property>
+   <property name="onIcon">
+    <iconset>
+     <normaloff>:/on.png</normaloff>:/on.png</iconset>
+   </property>
+   <property name="offIcon">
+    <iconset>
+     <normaloff>:/off.png</normaloff>:/off.png</iconset>
+   </property>
+  </widget>
+  <widget class="ATCMled" name="atcmLed_14">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>100</y>
+     <width>20</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>CH0_NETGOOD</string>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMled widget</string>
+   </property>
+   <property name="variable">
+    <string>CH0_NETGOOD</string>
+   </property>
+   <property name="refresh">
+    <number>200</number>
+   </property>
+   <property name="viewStatus">
+    <bool>false</bool>
+   </property>
+   <property name="visibilityVar">
+    <string/>
+   </property>
+   <property name="onIcon">
+    <iconset>
+     <normaloff>:/on.png</normaloff>:/on.png</iconset>
+   </property>
+   <property name="offIcon">
+    <iconset>
+     <normaloff>:/off.png</normaloff>:/off.png</iconset>
+   </property>
+  </widget>
+  <widget class="ATCMled" name="atcmLed_16">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>220</y>
+     <width>20</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>CH1_NETGOOD</string>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMled widget</string>
+   </property>
+   <property name="variable">
+    <string>CH1_NETGOOD</string>
+   </property>
+   <property name="refresh">
+    <number>200</number>
+   </property>
+   <property name="viewStatus">
+    <bool>false</bool>
+   </property>
+   <property name="visibilityVar">
+    <string/>
+   </property>
+   <property name="onIcon">
+    <iconset>
+     <normaloff>:/on.png</normaloff>:/on.png</iconset>
+   </property>
+   <property name="offIcon">
+    <iconset>
+     <normaloff>:/off.png</normaloff>:/off.png</iconset>
+   </property>
+  </widget>
+  <widget class="ATCMled" name="atcmLed_15">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>100</y>
+     <width>20</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>CH0_01_NODEGOOD</string>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMled widget</string>
+   </property>
+   <property name="variable">
+    <string>CH0_01_NODEGOOD</string>
+   </property>
+   <property name="refresh">
+    <number>200</number>
+   </property>
+   <property name="viewStatus">
+    <bool>false</bool>
+   </property>
+   <property name="visibilityVar">
+    <string/>
+   </property>
+   <property name="onIcon">
+    <iconset>
+     <normaloff>:/on.png</normaloff>:/on.png</iconset>
+   </property>
+   <property name="offIcon">
+    <iconset>
+     <normaloff>:/off.png</normaloff>:/off.png</iconset>
+   </property>
+  </widget>
  </widget>
  <customwidgets>
   <customwidget>
@@ -536,6 +689,11 @@
   <customwidget>
    <class>ATCMgraph</class>
    <extends>QFrame</extends>
+   <header>atcmplugin.h</header>
+  </customwidget>
+  <customwidget>
+   <class>ATCMled</class>
+   <extends>QLabel</extends>
    <header>atcmplugin.h</header>
   </customwidget>
  </customwidgets>

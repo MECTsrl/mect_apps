@@ -30,6 +30,24 @@ int16_t CAN_AnIn_3 = 0;
 int16_t CAN_AnIn_4 = 0;
 int CAN_DigIn_3 = 0;
 int CAN_DigOut_4 = 0;
+int CH1_NETRUN = 0;
+int CH1_NETGOOD = 0;
+u_int32_t CH1_NETERR = 0;
+int CH1_NETRST = 0;
+int CH1_NETDIS = 0;
+int CH1_01_NODERUN = 0;
+int CH1_01_NODEGOOD = 0;
+u_int32_t CH1_01_NODEERR = 0;
+int CH1_01_NODERST = 0;
+int CH1_01_NODEDIS = 0;
+int LOC_RISING = 0;
+int LOC_FALLING = 0;
+int RTU_RISING = 0;
+int RTU_FALLING = 0;
+int CAN_RISING = 0;
+int CAN_FALLING = 0;
+int TCP_RISING = 0;
+int TCP_FALLING = 0;
 u_int32_t RTU0_TYPE_PORT = 0;
 u_int32_t RTU0_BAUDRATE = 0;
 u_int32_t RTU0_STATUS = 0;
@@ -600,6 +618,330 @@ return addWrite(ID_CAN_DigOut_4, &value);
 int getStatus_CAN_DigOut_4()
 {
 return getStatus(ID_CAN_DigOut_4);
+}
+
+
+int doWrite_CH1_NETRUN(int value)
+{
+return doWrite(ID_CH1_NETRUN,  &value);
+}
+
+
+int addWrite_CH1_NETRUN(int value)
+{
+return addWrite(ID_CH1_NETRUN, &value);
+}
+
+
+int getStatus_CH1_NETRUN()
+{
+return getStatus(ID_CH1_NETRUN);
+}
+
+
+int doWrite_CH1_NETGOOD(int value)
+{
+return doWrite(ID_CH1_NETGOOD,  &value);
+}
+
+
+int addWrite_CH1_NETGOOD(int value)
+{
+return addWrite(ID_CH1_NETGOOD, &value);
+}
+
+
+int getStatus_CH1_NETGOOD()
+{
+return getStatus(ID_CH1_NETGOOD);
+}
+
+
+int doWrite_CH1_NETERR(u_int32_t value)
+{
+return doWrite(ID_CH1_NETERR,  &value);
+}
+
+
+int addWrite_CH1_NETERR(u_int32_t value)
+{
+return addWrite(ID_CH1_NETERR, &value);
+}
+
+
+int getStatus_CH1_NETERR()
+{
+return getStatus(ID_CH1_NETERR);
+}
+
+
+int doWrite_CH1_NETRST(int value)
+{
+return doWrite(ID_CH1_NETRST,  &value);
+}
+
+
+int addWrite_CH1_NETRST(int value)
+{
+return addWrite(ID_CH1_NETRST, &value);
+}
+
+
+int getStatus_CH1_NETRST()
+{
+return getStatus(ID_CH1_NETRST);
+}
+
+
+int doWrite_CH1_NETDIS(int value)
+{
+return doWrite(ID_CH1_NETDIS,  &value);
+}
+
+
+int addWrite_CH1_NETDIS(int value)
+{
+return addWrite(ID_CH1_NETDIS, &value);
+}
+
+
+int getStatus_CH1_NETDIS()
+{
+return getStatus(ID_CH1_NETDIS);
+}
+
+
+int doWrite_CH1_01_NODERUN(int value)
+{
+return doWrite(ID_CH1_01_NODERUN,  &value);
+}
+
+
+int addWrite_CH1_01_NODERUN(int value)
+{
+return addWrite(ID_CH1_01_NODERUN, &value);
+}
+
+
+int getStatus_CH1_01_NODERUN()
+{
+return getStatus(ID_CH1_01_NODERUN);
+}
+
+
+int doWrite_CH1_01_NODEGOOD(int value)
+{
+return doWrite(ID_CH1_01_NODEGOOD,  &value);
+}
+
+
+int addWrite_CH1_01_NODEGOOD(int value)
+{
+return addWrite(ID_CH1_01_NODEGOOD, &value);
+}
+
+
+int getStatus_CH1_01_NODEGOOD()
+{
+return getStatus(ID_CH1_01_NODEGOOD);
+}
+
+
+int doWrite_CH1_01_NODEERR(u_int32_t value)
+{
+return doWrite(ID_CH1_01_NODEERR,  &value);
+}
+
+
+int addWrite_CH1_01_NODEERR(u_int32_t value)
+{
+return addWrite(ID_CH1_01_NODEERR, &value);
+}
+
+
+int getStatus_CH1_01_NODEERR()
+{
+return getStatus(ID_CH1_01_NODEERR);
+}
+
+
+int doWrite_CH1_01_NODERST(int value)
+{
+return doWrite(ID_CH1_01_NODERST,  &value);
+}
+
+
+int addWrite_CH1_01_NODERST(int value)
+{
+return addWrite(ID_CH1_01_NODERST, &value);
+}
+
+
+int getStatus_CH1_01_NODERST()
+{
+return getStatus(ID_CH1_01_NODERST);
+}
+
+
+int doWrite_CH1_01_NODEDIS(int value)
+{
+return doWrite(ID_CH1_01_NODEDIS,  &value);
+}
+
+
+int addWrite_CH1_01_NODEDIS(int value)
+{
+return addWrite(ID_CH1_01_NODEDIS, &value);
+}
+
+
+int getStatus_CH1_01_NODEDIS()
+{
+return getStatus(ID_CH1_01_NODEDIS);
+}
+
+
+int doWrite_LOC_RISING(int value)
+{
+return doWrite(ID_LOC_RISING,  &value);
+}
+
+
+int addWrite_LOC_RISING(int value)
+{
+return addWrite(ID_LOC_RISING, &value);
+}
+
+
+int getStatus_LOC_RISING()
+{
+return getStatus(ID_LOC_RISING);
+}
+
+
+int doWrite_LOC_FALLING(int value)
+{
+return doWrite(ID_LOC_FALLING,  &value);
+}
+
+
+int addWrite_LOC_FALLING(int value)
+{
+return addWrite(ID_LOC_FALLING, &value);
+}
+
+
+int getStatus_LOC_FALLING()
+{
+return getStatus(ID_LOC_FALLING);
+}
+
+
+int doWrite_RTU_RISING(int value)
+{
+return doWrite(ID_RTU_RISING,  &value);
+}
+
+
+int addWrite_RTU_RISING(int value)
+{
+return addWrite(ID_RTU_RISING, &value);
+}
+
+
+int getStatus_RTU_RISING()
+{
+return getStatus(ID_RTU_RISING);
+}
+
+
+int doWrite_RTU_FALLING(int value)
+{
+return doWrite(ID_RTU_FALLING,  &value);
+}
+
+
+int addWrite_RTU_FALLING(int value)
+{
+return addWrite(ID_RTU_FALLING, &value);
+}
+
+
+int getStatus_RTU_FALLING()
+{
+return getStatus(ID_RTU_FALLING);
+}
+
+
+int doWrite_CAN_RISING(int value)
+{
+return doWrite(ID_CAN_RISING,  &value);
+}
+
+
+int addWrite_CAN_RISING(int value)
+{
+return addWrite(ID_CAN_RISING, &value);
+}
+
+
+int getStatus_CAN_RISING()
+{
+return getStatus(ID_CAN_RISING);
+}
+
+
+int doWrite_CAN_FALLING(int value)
+{
+return doWrite(ID_CAN_FALLING,  &value);
+}
+
+
+int addWrite_CAN_FALLING(int value)
+{
+return addWrite(ID_CAN_FALLING, &value);
+}
+
+
+int getStatus_CAN_FALLING()
+{
+return getStatus(ID_CAN_FALLING);
+}
+
+
+int doWrite_TCP_RISING(int value)
+{
+return doWrite(ID_TCP_RISING,  &value);
+}
+
+
+int addWrite_TCP_RISING(int value)
+{
+return addWrite(ID_TCP_RISING, &value);
+}
+
+
+int getStatus_TCP_RISING()
+{
+return getStatus(ID_TCP_RISING);
+}
+
+
+int doWrite_TCP_FALLING(int value)
+{
+return doWrite(ID_TCP_FALLING,  &value);
+}
+
+
+int addWrite_TCP_FALLING(int value)
+{
+return addWrite(ID_TCP_FALLING, &value);
+}
+
+
+int getStatus_TCP_FALLING()
+{
+return getStatus(ID_TCP_FALLING);
 }
 
 
@@ -5070,6 +5412,24 @@ retval += readFromDb(ID_CAN_AnIn_3, &CAN_AnIn_3);
 retval += readFromDb(ID_CAN_AnIn_4, &CAN_AnIn_4);
 retval += readFromDb(ID_CAN_DigIn_3, &CAN_DigIn_3);
 retval += readFromDb(ID_CAN_DigOut_4, &CAN_DigOut_4);
+retval += readFromDb(ID_CH1_NETRUN, &CH1_NETRUN);
+retval += readFromDb(ID_CH1_NETGOOD, &CH1_NETGOOD);
+retval += readFromDb(ID_CH1_NETERR, &CH1_NETERR);
+retval += readFromDb(ID_CH1_NETRST, &CH1_NETRST);
+retval += readFromDb(ID_CH1_NETDIS, &CH1_NETDIS);
+retval += readFromDb(ID_CH1_01_NODERUN, &CH1_01_NODERUN);
+retval += readFromDb(ID_CH1_01_NODEGOOD, &CH1_01_NODEGOOD);
+retval += readFromDb(ID_CH1_01_NODEERR, &CH1_01_NODEERR);
+retval += readFromDb(ID_CH1_01_NODERST, &CH1_01_NODERST);
+retval += readFromDb(ID_CH1_01_NODEDIS, &CH1_01_NODEDIS);
+retval += readFromDb(ID_LOC_RISING, &LOC_RISING);
+retval += readFromDb(ID_LOC_FALLING, &LOC_FALLING);
+retval += readFromDb(ID_RTU_RISING, &RTU_RISING);
+retval += readFromDb(ID_RTU_FALLING, &RTU_FALLING);
+retval += readFromDb(ID_CAN_RISING, &CAN_RISING);
+retval += readFromDb(ID_CAN_FALLING, &CAN_FALLING);
+retval += readFromDb(ID_TCP_RISING, &TCP_RISING);
+retval += readFromDb(ID_TCP_FALLING, &TCP_FALLING);
 retval += readFromDb(ID_RTU0_TYPE_PORT, &RTU0_TYPE_PORT);
 retval += readFromDb(ID_RTU0_BAUDRATE, &RTU0_BAUDRATE);
 retval += readFromDb(ID_RTU0_STATUS, &RTU0_STATUS);
