@@ -76,5 +76,8 @@ END_VAR
 	if TST_RTU3_WR  then retval := retval and OK_RTU3_WR; end_if;
 	if TST_RTU3_RD  then retval := retval and OK_RTU3_RD; end_if;
 
+	if TST_CAN1_WR  then retval := retval and OK_CAN1_WR; end_if;
+	if TST_CAN1_RD  then retval := retval and OK_CAN1_RD; end_if;
+
 	AllTestedAreOK := retval;
 END_FUNCTION
