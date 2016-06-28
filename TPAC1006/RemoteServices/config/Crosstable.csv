@@ -190,14 +190,14 @@
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
-2;P;RTU_ConfAnIn_1  ;UINT     ;0   ;RTU       ;               ;3   ;1   ;12  ;193 ;8   ;[RW]
-2;P;RTU_ConfAnIn_2  ;UINT     ;0   ;RTU       ;               ;3   ;1   ;13  ;193 ;8   ;[RW]
-2;F;RTU_AnIn_1      ;INT      ;2   ;RTU       ;               ;3   ;1   ;14  ;193 ;8   ;[RO]
-2;F;RTU_AnIn_2      ;INT      ;2   ;RTU       ;               ;3   ;1   ;15  ;193 ;8   ;[RO]
-2;P;RTU_ConfDigIn_3 ;WORD_BIT ;3   ;RTU       ;               ;3   ;1   ;16  ;193 ;8   ;[RW]
-2;P;RTU_ConfDigOut_4;WORD_BIT ;4   ;RTU       ;               ;3   ;1   ;16  ;193 ;8   ;[RW]
-2;F;RTU_DigIn_3     ;WORD_BIT ;3   ;RTU       ;               ;3   ;1   ;17  ;193 ;8   ;[RW]
-2;F;RTU_DigOut_4    ;WORD_BIT ;4   ;RTU       ;               ;3   ;1   ;18  ;193 ;8   ;[RW]
+2;P;RTU_ConfAnIn_1  ;UINT     ;0   ;RTU       ;               ;3   ;1   ;40  ;193 ;8   ;[RW]
+2;P;RTU_ConfAnIn_2  ;UINT     ;0   ;RTU       ;               ;3   ;1   ;41  ;193 ;8   ;[RW]
+2;F;RTU_AnIn_1      ;INT      ;2   ;RTU       ;               ;3   ;1   ;42  ;193 ;8   ;[RO]
+2;F;RTU_AnIn_2      ;INT      ;2   ;RTU       ;               ;3   ;1   ;43  ;193 ;8   ;[RO]
+2;P;RTU_ConfDigIn_3 ;WORD_BIT ;3   ;RTU       ;               ;3   ;1   ;44  ;193 ;8   ;[RW]
+2;P;RTU_ConfDigOut_4;WORD_BIT ;4   ;RTU       ;               ;3   ;1   ;44  ;193 ;8   ;[RW]
+2;F;RTU_DigIn_3     ;WORD_BIT ;3   ;RTU       ;               ;3   ;1   ;45  ;193 ;8   ;[RW]
+2;F;RTU_DigOut_4    ;WORD_BIT ;4   ;RTU       ;               ;3   ;1   ;46  ;193 ;8   ;[RW]
 2;F;TCP_AnIn_1      ;INT      ;3   ;TCP       ;192.168.5.43   ;502 ;1   ;1   ;201 ;4   ;[RO]
 2;F;TCP_AnIn_2      ;INT      ;3   ;TCP       ;192.168.5.43   ;502 ;1   ;2   ;201 ;4   ;[RO]
 2;F;TCP_DigIn_3     ;WORD_BIT ;3   ;TCP       ;192.168.5.43   ;502 ;1   ;3   ;201 ;4   ;[RO]

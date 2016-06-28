@@ -108,7 +108,12 @@
     <font>
      <family>DejaVu Sans</family>
      <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
     </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(170, 0, 0);</string>
    </property>
    <property name="text">
     <string>Local</string>
@@ -130,7 +135,12 @@
     <font>
      <family>DejaVu Sans</family>
      <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
     </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(0, 170, 0);</string>
    </property>
    <property name="text">
     <string>RTU</string>
@@ -152,7 +162,12 @@
     <font>
      <family>DejaVu Sans</family>
      <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
     </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(0, 0, 170);</string>
    </property>
    <property name="text">
     <string>CAN</string>
@@ -174,6 +189,8 @@
     <font>
      <family>DejaVu Sans</family>
      <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
     </font>
    </property>
    <property name="text">
@@ -307,7 +324,7 @@
     <number>0</number>
    </property>
   </widget>
-  <widget class="ATCMled" name="atcmLed_2">
+  <widget class="ATCMled" name="atcmLed_LOC_DigIn_3">
    <property name="geometry">
     <rect>
      <x>214</x>
@@ -343,7 +360,7 @@
      <normaloff>:/off.png</normaloff>:/off.png</iconset>
    </property>
   </widget>
-  <widget class="ATCMled" name="atcmLed_3">
+  <widget class="ATCMled" name="atcmLed_LOC_DigOut_4">
    <property name="geometry">
     <rect>
      <x>278</x>
@@ -400,6 +417,13 @@
    <property name="whatsThis">
     <string>ATCMtime widget</string>
    </property>
+   <property name="bgColor">
+    <color>
+     <red>170</red>
+     <green>255</green>
+     <blue>255</blue>
+    </color>
+   </property>
    <property name="borderWidth">
     <number>0</number>
    </property>
@@ -428,6 +452,13 @@
    <property name="whatsThis">
     <string>ATCMdate widget</string>
    </property>
+   <property name="bgColor">
+    <color>
+     <red>170</red>
+     <green>255</green>
+     <blue>255</blue>
+    </color>
+   </property>
    <property name="borderWidth">
     <number>0</number>
    </property>
@@ -438,7 +469,7 @@
     <enum>ATCMdate::YYYY_MM_DD</enum>
    </property>
   </widget>
-  <widget class="ATCMlabel" name="atcmLabel_3">
+  <widget class="ATCMlabel" name="atcmLabel_PLC_time">
    <property name="enabled">
     <bool>false</bool>
    </property>
@@ -477,6 +508,13 @@
    <property name="visibilityVar">
     <string/>
    </property>
+   <property name="bgColor">
+    <color>
+     <red>170</red>
+     <green>255</green>
+     <blue>127</blue>
+    </color>
+   </property>
    <property name="borderWidth">
     <number>0</number>
    </property>
@@ -484,7 +522,7 @@
     <number>0</number>
    </property>
   </widget>
-  <widget class="ATCMlabel" name="atcmLabel_4">
+  <widget class="ATCMlabel" name="atcmLabel_PLC_Version">
    <property name="enabled">
     <bool>false</bool>
    </property>
@@ -523,6 +561,13 @@
    <property name="visibilityVar">
     <string/>
    </property>
+   <property name="bgColor">
+    <color>
+     <red>170</red>
+     <green>255</green>
+     <blue>127</blue>
+    </color>
+   </property>
    <property name="borderWidth">
     <number>0</number>
    </property>
@@ -530,7 +575,7 @@
     <number>0</number>
    </property>
   </widget>
-  <widget class="ATCMled" name="atcmLed_4">
+  <widget class="ATCMled" name="atcmLed_RTU_DigOut_4">
    <property name="geometry">
     <rect>
      <x>278</x>
@@ -690,7 +735,7 @@
     <enum>QFrame::Plain</enum>
    </property>
   </widget>
-  <widget class="ATCMled" name="atcmLed_6">
+  <widget class="ATCMled" name="atcmLed_RTU_DigIn_3">
    <property name="geometry">
     <rect>
      <x>214</x>
@@ -726,7 +771,7 @@
      <normaloff>:/off.png</normaloff>:/off.png</iconset>
    </property>
   </widget>
-  <widget class="ATCMled" name="atcmLed_7">
+  <widget class="ATCMled" name="atcmLed_CAN_DigOut_4">
    <property name="geometry">
     <rect>
      <x>278</x>
@@ -886,7 +931,7 @@
     <enum>QFrame::Plain</enum>
    </property>
   </widget>
-  <widget class="ATCMled" name="atcmLed_9">
+  <widget class="ATCMled" name="atcmLed_CAN_DigIn_3">
    <property name="geometry">
     <rect>
      <x>214</x>
@@ -922,7 +967,7 @@
      <normaloff>:/off.png</normaloff>:/off.png</iconset>
    </property>
   </widget>
-  <widget class="ATCMled" name="atcmLed_10">
+  <widget class="ATCMled" name="atcmLed_TCP_DigOut_4">
    <property name="geometry">
     <rect>
      <x>278</x>
@@ -1082,7 +1127,7 @@
     <enum>QFrame::Plain</enum>
    </property>
   </widget>
-  <widget class="ATCMled" name="atcmLed_12">
+  <widget class="ATCMled" name="atcmLed_TCP_DigIn_3">
    <property name="geometry">
     <rect>
      <x>214</x>
@@ -1242,6 +1287,8 @@
     <font>
      <family>DejaVu Sans</family>
      <pointsize>10</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
     </font>
    </property>
    <property name="toolTip">
@@ -1265,11 +1312,18 @@
    <property name="visibilityVar">
     <string/>
    </property>
+   <property name="fontColor">
+    <color>
+     <red>0</red>
+     <green>0</green>
+     <blue>0</blue>
+    </color>
+   </property>
    <property name="text">
-    <string>An. In 1</string>
+    <string>AnIn_1</string>
    </property>
    <property name="pressText">
-    <string>An. In 1</string>
+    <string>AnIn_1</string>
    </property>
    <property name="borderWidth">
     <number>0</number>
@@ -1294,6 +1348,8 @@
     <font>
      <family>DejaVu Sans</family>
      <pointsize>10</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
     </font>
    </property>
    <property name="toolTip">
@@ -1317,11 +1373,18 @@
    <property name="visibilityVar">
     <string/>
    </property>
+   <property name="fontColor">
+    <color>
+     <red>0</red>
+     <green>0</green>
+     <blue>0</blue>
+    </color>
+   </property>
    <property name="text">
-    <string>An. In 2</string>
+    <string>AnIn_2</string>
    </property>
    <property name="pressText">
-    <string>An. In 2</string>
+    <string>AnIn_2</string>
    </property>
    <property name="borderWidth">
     <number>0</number>
@@ -1346,6 +1409,8 @@
     <font>
      <family>DejaVu Sans</family>
      <pointsize>10</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
     </font>
    </property>
    <property name="toolTip">
@@ -1369,11 +1434,18 @@
    <property name="visibilityVar">
     <string/>
    </property>
+   <property name="fontColor">
+    <color>
+     <red>0</red>
+     <green>0</green>
+     <blue>0</blue>
+    </color>
+   </property>
    <property name="text">
-    <string>Dig. In 3</string>
+    <string>DigIn_3</string>
    </property>
    <property name="pressText">
-    <string>Dig. In 3</string>
+    <string>DigIn_3</string>
    </property>
    <property name="borderWidth">
     <number>0</number>
@@ -1398,6 +1470,8 @@
     <font>
      <family>DejaVu Sans</family>
      <pointsize>10</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
     </font>
    </property>
    <property name="toolTip">
@@ -1421,11 +1495,18 @@
    <property name="visibilityVar">
     <string/>
    </property>
+   <property name="fontColor">
+    <color>
+     <red>0</red>
+     <green>0</green>
+     <blue>0</blue>
+    </color>
+   </property>
    <property name="text">
-    <string>Dig. Out 4</string>
+    <string>DigOut_4</string>
    </property>
    <property name="pressText">
-    <string>Dig. Out 4</string>
+    <string>DigOut_4</string>
    </property>
    <property name="borderWidth">
     <number>0</number>
@@ -1455,13 +1536,13 @@
     </font>
    </property>
    <property name="toolTip">
-    <string>page: page200  status: </string>
+    <string/>
    </property>
    <property name="whatsThis">
     <string>ATCMbutton widget</string>
    </property>
    <property name="pageName">
-    <string>page200</string>
+    <string>trend</string>
    </property>
    <property name="statusvar">
     <string/>
@@ -1487,10 +1568,10 @@
     </color>
    </property>
    <property name="text">
-    <string/>
+    <string>Trend</string>
    </property>
    <property name="pressText">
-    <string>page200</string>
+    <string>trend</string>
    </property>
    <property name="borderWidth">
     <number>0</number>
@@ -1517,7 +1598,7 @@
     </font>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: rgb(170, 255, 127);</string>
+    <string notr="true">background-color: rgb(255, 255, 127);</string>
    </property>
    <property name="text">
     <string>Remote
@@ -1527,12 +1608,12 @@ Services</string>
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
-  <widget class="ATCMled" name="atcmLed_11">
+  <widget class="ATCMled" name="atcmLed_CH1">
    <property name="geometry">
     <rect>
      <x>44</x>
      <y>160</y>
-     <width>20</width>
+     <width>15</width>
      <height>20</height>
     </rect>
    </property>
@@ -1563,12 +1644,12 @@ Services</string>
      <normaloff>:/off.png</normaloff>:/off.png</iconset>
    </property>
   </widget>
-  <widget class="ATCMled" name="atcmLed_13">
+  <widget class="ATCMled" name="atcmLed_CH11">
    <property name="geometry">
     <rect>
      <x>44</x>
      <y>180</y>
-     <width>20</width>
+     <width>15</width>
      <height>20</height>
     </rect>
    </property>
@@ -1599,12 +1680,12 @@ Services</string>
      <normaloff>:/off.png</normaloff>:/off.png</iconset>
    </property>
   </widget>
-  <widget class="ATCMled" name="atcmLed_14">
+  <widget class="ATCMled" name="atcmLed_CH0">
    <property name="geometry">
     <rect>
      <x>40</x>
      <y>80</y>
-     <width>20</width>
+     <width>15</width>
      <height>20</height>
     </rect>
    </property>
@@ -1635,12 +1716,12 @@ Services</string>
      <normaloff>:/off.png</normaloff>:/off.png</iconset>
    </property>
   </widget>
-  <widget class="ATCMled" name="atcmLed_15">
+  <widget class="ATCMled" name="atcmLed_CH01">
    <property name="geometry">
     <rect>
      <x>40</x>
      <y>100</y>
-     <width>20</width>
+     <width>15</width>
      <height>20</height>
     </rect>
    </property>
@@ -1773,6 +1854,56 @@ Services</string>
     <enum>Qt::Horizontal</enum>
    </property>
   </widget>
+  <widget class="ATCMbutton" name="atcmButton_3">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>80</y>
+     <width>64</width>
+     <height>161</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string/>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMbutton widget</string>
+   </property>
+   <property name="pageName">
+    <string>page200</string>
+   </property>
+   <property name="statusvar">
+    <string/>
+   </property>
+   <property name="viewStatus">
+    <bool>false</bool>
+   </property>
+   <property name="visibilityVar">
+    <string/>
+   </property>
+   <property name="bgColor">
+    <color alpha="0">
+     <red>230</red>
+     <green>230</green>
+     <blue>230</blue>
+    </color>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pressText">
+    <string>page200</string>
+   </property>
+   <property name="borderWidth">
+    <number>1</number>
+   </property>
+   <property name="borderRadius">
+    <number>20</number>
+   </property>
+   <property name="apparence">
+    <enum>QFrame::Plain</enum>
+   </property>
+  </widget>
   <zorder>atcmAnimation_5</zorder>
   <zorder>atcmAnimation_4</zorder>
   <zorder>atcmAnimation_3</zorder>
@@ -1784,39 +1915,40 @@ Services</string>
   <zorder>label_8</zorder>
   <zorder>atcmLabel</zorder>
   <zorder>atcmLabel_2</zorder>
-  <zorder>atcmLed_2</zorder>
-  <zorder>atcmLed_3</zorder>
+  <zorder>atcmLed_LOC_DigIn_3</zorder>
+  <zorder>atcmLed_LOC_DigOut_4</zorder>
   <zorder>atcmTime</zorder>
   <zorder>atcmDate</zorder>
-  <zorder>atcmLabel_3</zorder>
-  <zorder>atcmLabel_4</zorder>
-  <zorder>atcmLed_4</zorder>
+  <zorder>atcmLabel_PLC_time</zorder>
+  <zorder>atcmLabel_PLC_Version</zorder>
+  <zorder>atcmLed_RTU_DigOut_4</zorder>
   <zorder>atcmLabel_5</zorder>
   <zorder>atcmLabel_6</zorder>
-  <zorder>atcmLed_6</zorder>
-  <zorder>atcmLed_7</zorder>
+  <zorder>atcmLed_RTU_DigIn_3</zorder>
+  <zorder>atcmLed_CAN_DigOut_4</zorder>
   <zorder>atcmLabel_7</zorder>
   <zorder>atcmLabel_8</zorder>
-  <zorder>atcmLed_9</zorder>
-  <zorder>atcmLed_10</zorder>
+  <zorder>atcmLed_CAN_DigIn_3</zorder>
+  <zorder>atcmLed_TCP_DigOut_4</zorder>
   <zorder>atcmLabel_9</zorder>
   <zorder>atcmLabel_10</zorder>
-  <zorder>atcmLed_12</zorder>
+  <zorder>atcmLed_TCP_DigIn_3</zorder>
   <zorder>atcmButton_AnIn1</zorder>
   <zorder>atcmButton_AnIn1_2</zorder>
   <zorder>atcmButton_AnIn1_3</zorder>
   <zorder>atcmButton_AnIn1_4</zorder>
   <zorder>atcmButton_2</zorder>
   <zorder>label</zorder>
-  <zorder>atcmLed_11</zorder>
-  <zorder>atcmLed_13</zorder>
-  <zorder>atcmLed_14</zorder>
-  <zorder>atcmLed_15</zorder>
+  <zorder>atcmLed_CH1</zorder>
+  <zorder>atcmLed_CH11</zorder>
+  <zorder>atcmLed_CH0</zorder>
+  <zorder>atcmLed_CH01</zorder>
   <zorder>line</zorder>
   <zorder>line_2</zorder>
   <zorder>line_3</zorder>
   <zorder>line_4</zorder>
   <zorder>line_5</zorder>
+  <zorder>atcmButton_3</zorder>
  </widget>
  <customwidgets>
   <customwidget>
@@ -1934,6 +2066,22 @@ Services</string>
   </connection>
   <connection>
    <sender>atcmButton_2</sender>
+   <signal>newPage(const char*,bool)</signal>
+   <receiver>page100</receiver>
+   <slot>goto_page(const char*,bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>atcmButton_3</sender>
    <signal>newPage(const char*,bool)</signal>
    <receiver>page100</receiver>
    <slot>goto_page(const char*,bool)</slot>

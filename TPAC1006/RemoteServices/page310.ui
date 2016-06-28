@@ -173,6 +173,13 @@
    <property name="y2TickLabelVisible">
     <bool>true</bool>
    </property>
+   <property name="pen2Color">
+    <color>
+     <red>0</red>
+     <green>255</green>
+     <blue>0</blue>
+    </color>
+   </property>
    <property name="Display2">
     <string/>
    </property>
@@ -228,6 +235,13 @@
    <property name="y1TickLabelVisible">
     <bool>true</bool>
    </property>
+   <property name="pen1Color">
+    <color>
+     <red>0</red>
+     <green>0</green>
+     <blue>255</blue>
+    </color>
+   </property>
    <property name="Display1">
     <string/>
    </property>
@@ -257,6 +271,13 @@
    </property>
    <property name="y2TickLabelVisible">
     <bool>true</bool>
+   </property>
+   <property name="pen2Color">
+    <color>
+     <red>0</red>
+     <green>0</green>
+     <blue>0</blue>
+    </color>
    </property>
    <property name="Display2">
     <string/>
@@ -289,7 +310,7 @@
     <string>ATCMbutton widget</string>
    </property>
    <property name="pageName">
-    <string>BACK</string>
+    <string>trend1</string>
    </property>
    <property name="statusvar">
     <string/>
@@ -315,10 +336,10 @@
     </color>
    </property>
    <property name="text">
-    <string>&lt;---=</string>
+    <string>trend1</string>
    </property>
    <property name="pressText">
-    <string>BACK</string>
+    <string>trend1.csv</string>
    </property>
    <property name="borderWidth">
     <number>0</number>
@@ -367,10 +388,10 @@
     <string/>
    </property>
    <property name="text">
-    <string>An. In 2</string>
+    <string>AnIn_2</string>
    </property>
    <property name="pressText">
-    <string>An. In 2</string>
+    <string>AnIn_2</string>
    </property>
    <property name="borderWidth">
     <number>0</number>
@@ -419,10 +440,10 @@
     <string/>
    </property>
    <property name="text">
-    <string>Dig. In 3</string>
+    <string>DigIn_3</string>
    </property>
    <property name="pressText">
-    <string>Dig. In 3</string>
+    <string>DigIn_3</string>
    </property>
    <property name="borderWidth">
     <number>0</number>
@@ -471,10 +492,10 @@
     <string/>
    </property>
    <property name="text">
-    <string>Dig. Out 4</string>
+    <string>DigOut_4</string>
    </property>
    <property name="pressText">
-    <string>Dig. Out 4</string>
+    <string>DigOut_4</string>
    </property>
    <property name="borderWidth">
     <number>0</number>
@@ -508,7 +529,7 @@
     <string>ATCMbutton widget</string>
    </property>
    <property name="pageName">
-    <string>page100</string>
+    <string>HOME</string>
    </property>
    <property name="remember">
     <bool>true</bool>
@@ -522,11 +543,25 @@
    <property name="visibilityVar">
     <string/>
    </property>
+   <property name="bgColor">
+    <color>
+     <red>170</red>
+     <green>170</green>
+     <blue>0</blue>
+    </color>
+   </property>
+   <property name="fontColor">
+    <color>
+     <red>255</red>
+     <green>255</green>
+     <blue>255</blue>
+    </color>
+   </property>
    <property name="text">
-    <string>All</string>
+    <string>Home</string>
    </property>
    <property name="pressText">
-    <string>All</string>
+    <string>HOME</string>
    </property>
    <property name="borderWidth">
     <number>0</number>
@@ -541,10 +576,10 @@
   <widget class="ATCMled" name="atcmLed_15">
    <property name="geometry">
     <rect>
-     <x>20</x>
-     <y>100</y>
-     <width>20</width>
-     <height>20</height>
+     <x>16</x>
+     <y>102</y>
+     <width>16</width>
+     <height>16</height>
     </rect>
    </property>
    <property name="toolTip">
@@ -578,9 +613,9 @@
    <property name="geometry">
     <rect>
      <x>0</x>
-     <y>100</y>
-     <width>20</width>
-     <height>20</height>
+     <y>102</y>
+     <width>16</width>
+     <height>16</height>
     </rect>
    </property>
    <property name="toolTip">
@@ -614,9 +649,9 @@
    <property name="geometry">
     <rect>
      <x>0</x>
-     <y>220</y>
-     <width>20</width>
-     <height>20</height>
+     <y>222</y>
+     <width>16</width>
+     <height>16</height>
     </rect>
    </property>
    <property name="toolTip">
@@ -649,10 +684,10 @@
   <widget class="ATCMled" name="atcmLed_17">
    <property name="geometry">
     <rect>
-     <x>20</x>
-     <y>220</y>
-     <width>20</width>
-     <height>20</height>
+     <x>16</x>
+     <y>222</y>
+     <width>16</width>
+     <height>16</height>
     </rect>
    </property>
    <property name="toolTip">

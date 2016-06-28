@@ -58,7 +58,7 @@ config.path = /local/etc/sysconfig
 splash.files = config/splash.png
 splash.path = /local/etc/sysconfig/img
 
-customtrend.files = config/trend1.csv
+customtrend.files = config/trend1.csv config/trend2.csv config/trend3.csv config/trend4.csv
 customtrend.path = /local/data/customtrend
 
 INSTALLS += config splash

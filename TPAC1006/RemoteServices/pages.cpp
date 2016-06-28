@@ -20,11 +20,11 @@ void printVncDisplayString(char * vncString)
     userPageList 
             << "system_ini"
             << "page100"
-            << "page200"
-            << "page310"
-            << "page320"
-            << "page330"
-            << "page340"
+//            << "page200"
+//            << "page310"
+//            << "page320"
+//            << "page330"
+//            << "page340"
                /* add here the label of the new page */
                ;
     userPageList.removeDuplicates();
