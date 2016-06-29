@@ -87,11 +87,11 @@ END_VAR
 	if TST_RTU1_WR  then OK_RTU1_WR  := (RES_RTU1_WR = VAL_RTU1_WR); end_if;
 	if TST_RTU1_RD  then OK_RTU1_RD  := (RES_RTU1_RD = VAL_RTU1_RD); end_if;
 
-	(* RTU3: Prey.RTU3 <--> TPLC005 *)
+	(* RTU3: Prey.RTU3 <--> TPLC005 + short-circuit DigOut_1->DigIn_2 *)
 	if TST_RTU3_WR  then OK_RTU3_WR  := (RES_RTU3_WR = VAL_RTU3_WR); end_if;
 	if TST_RTU3_RD  then OK_RTU3_RD  := (RES_RTU3_RD = VAL_RTU3_RD); end_if;
 
-	(* CAN1: Prey.CAN1 <--> MPNC010 *)
+	(* CAN1: Prey.CAN1 <--> MPNC010 + short-circuit DigOut_1->DigIn_1 *)
 	if TST_CAN1_WR  then OK_CAN1_WR  := (RES_CAN1_WR = VAL_CAN1_WR); end_if;
 	if TST_CAN1_RD  then OK_CAN1_RD  := (RES_CAN1_RD = VAL_CAN1_RD); end_if;
 

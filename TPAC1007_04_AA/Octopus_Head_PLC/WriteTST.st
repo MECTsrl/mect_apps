@@ -100,11 +100,11 @@ END_VAR
     TSTx_RTU1_RD := TST_RTU1_RD;
 	TST2_RTUS_WR := TST_RTU1_RD;
 
-	(* RTU3: Prey.RTU3 <--> TPLC005 *)
+	(* RTU3: Prey.RTU3 <--> TPLC005 + short-circuit DigOut_1->DigIn_2 *)
 	TSTx_RTU3_WR := TST_RTU3_WR;
 	TSTx_RTU3_RD := TST_RTU3_RD;
 
-	(* CAN1: Prey.CAN1 <--> MPNC010 *)
+	(* CAN1: Prey.CAN1 <--> MPNC010 + short-circuit DigOut_1->DigIn_1 *)
     TSTx_CAN1_WR := TST_CAN1_WR;
     TSTx_CAN1_RD := TST_CAN1_RD;
 
