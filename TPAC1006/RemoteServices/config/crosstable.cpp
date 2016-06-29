@@ -48,6 +48,22 @@ int CAN_RISING = 0;
 int CAN_FALLING = 0;
 int TCP_RISING = 0;
 int TCP_FALLING = 0;
+int16_t S_RTU_AnIn_1 = 0;
+int16_t S_RTU_AnIn_2 = 0;
+u_int16_t S_RTU_DigIn_3 = 0;
+u_int16_t S_RTU_DigOut_4 = 0;
+int16_t S_TCP_AnIn_1 = 0;
+int16_t S_TCP_AnIn_2 = 0;
+u_int16_t S_TCP_DigIn_3 = 0;
+u_int16_t S_TCP_DigOut_4 = 0;
+int16_t S_CAN_AnIn_1 = 0;
+int16_t S_CAN_AnIn_2 = 0;
+u_int16_t S_CAN_DigIn_3 = 0;
+u_int16_t S_CAN_DigOut_4 = 0;
+int16_t S_LOC_AnIn_1 = 0;
+int16_t S_LOC_AnIn_2 = 0;
+u_int16_t S_LOC_DigIn_3 = 0;
+u_int16_t S_LOC_DigOut_4 = 0;
 u_int32_t RTU0_TYPE_PORT = 0;
 u_int32_t RTU0_BAUDRATE = 0;
 u_int32_t RTU0_STATUS = 0;
@@ -942,6 +958,294 @@ return addWrite(ID_TCP_FALLING, &value);
 int getStatus_TCP_FALLING()
 {
 return getStatus(ID_TCP_FALLING);
+}
+
+
+int doWrite_S_RTU_AnIn_1(int16_t value)
+{
+return doWrite(ID_S_RTU_AnIn_1,  &value);
+}
+
+
+int addWrite_S_RTU_AnIn_1(int16_t value)
+{
+return addWrite(ID_S_RTU_AnIn_1, &value);
+}
+
+
+int getStatus_S_RTU_AnIn_1()
+{
+return getStatus(ID_S_RTU_AnIn_1);
+}
+
+
+int doWrite_S_RTU_AnIn_2(int16_t value)
+{
+return doWrite(ID_S_RTU_AnIn_2,  &value);
+}
+
+
+int addWrite_S_RTU_AnIn_2(int16_t value)
+{
+return addWrite(ID_S_RTU_AnIn_2, &value);
+}
+
+
+int getStatus_S_RTU_AnIn_2()
+{
+return getStatus(ID_S_RTU_AnIn_2);
+}
+
+
+int doWrite_S_RTU_DigIn_3(u_int16_t value)
+{
+return doWrite(ID_S_RTU_DigIn_3,  &value);
+}
+
+
+int addWrite_S_RTU_DigIn_3(u_int16_t value)
+{
+return addWrite(ID_S_RTU_DigIn_3, &value);
+}
+
+
+int getStatus_S_RTU_DigIn_3()
+{
+return getStatus(ID_S_RTU_DigIn_3);
+}
+
+
+int doWrite_S_RTU_DigOut_4(u_int16_t value)
+{
+return doWrite(ID_S_RTU_DigOut_4,  &value);
+}
+
+
+int addWrite_S_RTU_DigOut_4(u_int16_t value)
+{
+return addWrite(ID_S_RTU_DigOut_4, &value);
+}
+
+
+int getStatus_S_RTU_DigOut_4()
+{
+return getStatus(ID_S_RTU_DigOut_4);
+}
+
+
+int doWrite_S_TCP_AnIn_1(int16_t value)
+{
+return doWrite(ID_S_TCP_AnIn_1,  &value);
+}
+
+
+int addWrite_S_TCP_AnIn_1(int16_t value)
+{
+return addWrite(ID_S_TCP_AnIn_1, &value);
+}
+
+
+int getStatus_S_TCP_AnIn_1()
+{
+return getStatus(ID_S_TCP_AnIn_1);
+}
+
+
+int doWrite_S_TCP_AnIn_2(int16_t value)
+{
+return doWrite(ID_S_TCP_AnIn_2,  &value);
+}
+
+
+int addWrite_S_TCP_AnIn_2(int16_t value)
+{
+return addWrite(ID_S_TCP_AnIn_2, &value);
+}
+
+
+int getStatus_S_TCP_AnIn_2()
+{
+return getStatus(ID_S_TCP_AnIn_2);
+}
+
+
+int doWrite_S_TCP_DigIn_3(u_int16_t value)
+{
+return doWrite(ID_S_TCP_DigIn_3,  &value);
+}
+
+
+int addWrite_S_TCP_DigIn_3(u_int16_t value)
+{
+return addWrite(ID_S_TCP_DigIn_3, &value);
+}
+
+
+int getStatus_S_TCP_DigIn_3()
+{
+return getStatus(ID_S_TCP_DigIn_3);
+}
+
+
+int doWrite_S_TCP_DigOut_4(u_int16_t value)
+{
+return doWrite(ID_S_TCP_DigOut_4,  &value);
+}
+
+
+int addWrite_S_TCP_DigOut_4(u_int16_t value)
+{
+return addWrite(ID_S_TCP_DigOut_4, &value);
+}
+
+
+int getStatus_S_TCP_DigOut_4()
+{
+return getStatus(ID_S_TCP_DigOut_4);
+}
+
+
+int doWrite_S_CAN_AnIn_1(int16_t value)
+{
+return doWrite(ID_S_CAN_AnIn_1,  &value);
+}
+
+
+int addWrite_S_CAN_AnIn_1(int16_t value)
+{
+return addWrite(ID_S_CAN_AnIn_1, &value);
+}
+
+
+int getStatus_S_CAN_AnIn_1()
+{
+return getStatus(ID_S_CAN_AnIn_1);
+}
+
+
+int doWrite_S_CAN_AnIn_2(int16_t value)
+{
+return doWrite(ID_S_CAN_AnIn_2,  &value);
+}
+
+
+int addWrite_S_CAN_AnIn_2(int16_t value)
+{
+return addWrite(ID_S_CAN_AnIn_2, &value);
+}
+
+
+int getStatus_S_CAN_AnIn_2()
+{
+return getStatus(ID_S_CAN_AnIn_2);
+}
+
+
+int doWrite_S_CAN_DigIn_3(u_int16_t value)
+{
+return doWrite(ID_S_CAN_DigIn_3,  &value);
+}
+
+
+int addWrite_S_CAN_DigIn_3(u_int16_t value)
+{
+return addWrite(ID_S_CAN_DigIn_3, &value);
+}
+
+
+int getStatus_S_CAN_DigIn_3()
+{
+return getStatus(ID_S_CAN_DigIn_3);
+}
+
+
+int doWrite_S_CAN_DigOut_4(u_int16_t value)
+{
+return doWrite(ID_S_CAN_DigOut_4,  &value);
+}
+
+
+int addWrite_S_CAN_DigOut_4(u_int16_t value)
+{
+return addWrite(ID_S_CAN_DigOut_4, &value);
+}
+
+
+int getStatus_S_CAN_DigOut_4()
+{
+return getStatus(ID_S_CAN_DigOut_4);
+}
+
+
+int doWrite_S_LOC_AnIn_1(int16_t value)
+{
+return doWrite(ID_S_LOC_AnIn_1,  &value);
+}
+
+
+int addWrite_S_LOC_AnIn_1(int16_t value)
+{
+return addWrite(ID_S_LOC_AnIn_1, &value);
+}
+
+
+int getStatus_S_LOC_AnIn_1()
+{
+return getStatus(ID_S_LOC_AnIn_1);
+}
+
+
+int doWrite_S_LOC_AnIn_2(int16_t value)
+{
+return doWrite(ID_S_LOC_AnIn_2,  &value);
+}
+
+
+int addWrite_S_LOC_AnIn_2(int16_t value)
+{
+return addWrite(ID_S_LOC_AnIn_2, &value);
+}
+
+
+int getStatus_S_LOC_AnIn_2()
+{
+return getStatus(ID_S_LOC_AnIn_2);
+}
+
+
+int doWrite_S_LOC_DigIn_3(u_int16_t value)
+{
+return doWrite(ID_S_LOC_DigIn_3,  &value);
+}
+
+
+int addWrite_S_LOC_DigIn_3(u_int16_t value)
+{
+return addWrite(ID_S_LOC_DigIn_3, &value);
+}
+
+
+int getStatus_S_LOC_DigIn_3()
+{
+return getStatus(ID_S_LOC_DigIn_3);
+}
+
+
+int doWrite_S_LOC_DigOut_4(u_int16_t value)
+{
+return doWrite(ID_S_LOC_DigOut_4,  &value);
+}
+
+
+int addWrite_S_LOC_DigOut_4(u_int16_t value)
+{
+return addWrite(ID_S_LOC_DigOut_4, &value);
+}
+
+
+int getStatus_S_LOC_DigOut_4()
+{
+return getStatus(ID_S_LOC_DigOut_4);
 }
 
 
@@ -5430,6 +5734,22 @@ retval += readFromDb(ID_CAN_RISING, &CAN_RISING);
 retval += readFromDb(ID_CAN_FALLING, &CAN_FALLING);
 retval += readFromDb(ID_TCP_RISING, &TCP_RISING);
 retval += readFromDb(ID_TCP_FALLING, &TCP_FALLING);
+retval += readFromDb(ID_S_RTU_AnIn_1, &S_RTU_AnIn_1);
+retval += readFromDb(ID_S_RTU_AnIn_2, &S_RTU_AnIn_2);
+retval += readFromDb(ID_S_RTU_DigIn_3, &S_RTU_DigIn_3);
+retval += readFromDb(ID_S_RTU_DigOut_4, &S_RTU_DigOut_4);
+retval += readFromDb(ID_S_TCP_AnIn_1, &S_TCP_AnIn_1);
+retval += readFromDb(ID_S_TCP_AnIn_2, &S_TCP_AnIn_2);
+retval += readFromDb(ID_S_TCP_DigIn_3, &S_TCP_DigIn_3);
+retval += readFromDb(ID_S_TCP_DigOut_4, &S_TCP_DigOut_4);
+retval += readFromDb(ID_S_CAN_AnIn_1, &S_CAN_AnIn_1);
+retval += readFromDb(ID_S_CAN_AnIn_2, &S_CAN_AnIn_2);
+retval += readFromDb(ID_S_CAN_DigIn_3, &S_CAN_DigIn_3);
+retval += readFromDb(ID_S_CAN_DigOut_4, &S_CAN_DigOut_4);
+retval += readFromDb(ID_S_LOC_AnIn_1, &S_LOC_AnIn_1);
+retval += readFromDb(ID_S_LOC_AnIn_2, &S_LOC_AnIn_2);
+retval += readFromDb(ID_S_LOC_DigIn_3, &S_LOC_DigIn_3);
+retval += readFromDb(ID_S_LOC_DigOut_4, &S_LOC_DigOut_4);
 retval += readFromDb(ID_RTU0_TYPE_PORT, &RTU0_TYPE_PORT);
 retval += readFromDb(ID_RTU0_BAUDRATE, &RTU0_BAUDRATE);
 retval += readFromDb(ID_RTU0_STATUS, &RTU0_STATUS);

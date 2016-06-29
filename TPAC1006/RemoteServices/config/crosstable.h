@@ -232,6 +232,102 @@ int doWrite_TCP_FALLING(int value);
 int addWrite_TCP_FALLING(int value);
 int getStatus_TCP_FALLING();
  
+#define ID_S_RTU_AnIn_1 500
+extern int16_t S_RTU_AnIn_1;
+int doWrite_S_RTU_AnIn_1(int16_t value);
+int addWrite_S_RTU_AnIn_1(int16_t value);
+int getStatus_S_RTU_AnIn_1();
+ 
+#define ID_S_RTU_AnIn_2 501
+extern int16_t S_RTU_AnIn_2;
+int doWrite_S_RTU_AnIn_2(int16_t value);
+int addWrite_S_RTU_AnIn_2(int16_t value);
+int getStatus_S_RTU_AnIn_2();
+ 
+#define ID_S_RTU_DigIn_3 502
+extern u_int16_t S_RTU_DigIn_3;
+int doWrite_S_RTU_DigIn_3(u_int16_t value);
+int addWrite_S_RTU_DigIn_3(u_int16_t value);
+int getStatus_S_RTU_DigIn_3();
+ 
+#define ID_S_RTU_DigOut_4 503
+extern u_int16_t S_RTU_DigOut_4;
+int doWrite_S_RTU_DigOut_4(u_int16_t value);
+int addWrite_S_RTU_DigOut_4(u_int16_t value);
+int getStatus_S_RTU_DigOut_4();
+ 
+#define ID_S_TCP_AnIn_1 504
+extern int16_t S_TCP_AnIn_1;
+int doWrite_S_TCP_AnIn_1(int16_t value);
+int addWrite_S_TCP_AnIn_1(int16_t value);
+int getStatus_S_TCP_AnIn_1();
+ 
+#define ID_S_TCP_AnIn_2 505
+extern int16_t S_TCP_AnIn_2;
+int doWrite_S_TCP_AnIn_2(int16_t value);
+int addWrite_S_TCP_AnIn_2(int16_t value);
+int getStatus_S_TCP_AnIn_2();
+ 
+#define ID_S_TCP_DigIn_3 506
+extern u_int16_t S_TCP_DigIn_3;
+int doWrite_S_TCP_DigIn_3(u_int16_t value);
+int addWrite_S_TCP_DigIn_3(u_int16_t value);
+int getStatus_S_TCP_DigIn_3();
+ 
+#define ID_S_TCP_DigOut_4 507
+extern u_int16_t S_TCP_DigOut_4;
+int doWrite_S_TCP_DigOut_4(u_int16_t value);
+int addWrite_S_TCP_DigOut_4(u_int16_t value);
+int getStatus_S_TCP_DigOut_4();
+ 
+#define ID_S_CAN_AnIn_1 508
+extern int16_t S_CAN_AnIn_1;
+int doWrite_S_CAN_AnIn_1(int16_t value);
+int addWrite_S_CAN_AnIn_1(int16_t value);
+int getStatus_S_CAN_AnIn_1();
+ 
+#define ID_S_CAN_AnIn_2 509
+extern int16_t S_CAN_AnIn_2;
+int doWrite_S_CAN_AnIn_2(int16_t value);
+int addWrite_S_CAN_AnIn_2(int16_t value);
+int getStatus_S_CAN_AnIn_2();
+ 
+#define ID_S_CAN_DigIn_3 510
+extern u_int16_t S_CAN_DigIn_3;
+int doWrite_S_CAN_DigIn_3(u_int16_t value);
+int addWrite_S_CAN_DigIn_3(u_int16_t value);
+int getStatus_S_CAN_DigIn_3();
+ 
+#define ID_S_CAN_DigOut_4 511
+extern u_int16_t S_CAN_DigOut_4;
+int doWrite_S_CAN_DigOut_4(u_int16_t value);
+int addWrite_S_CAN_DigOut_4(u_int16_t value);
+int getStatus_S_CAN_DigOut_4();
+ 
+#define ID_S_LOC_AnIn_1 512
+extern int16_t S_LOC_AnIn_1;
+int doWrite_S_LOC_AnIn_1(int16_t value);
+int addWrite_S_LOC_AnIn_1(int16_t value);
+int getStatus_S_LOC_AnIn_1();
+ 
+#define ID_S_LOC_AnIn_2 513
+extern int16_t S_LOC_AnIn_2;
+int doWrite_S_LOC_AnIn_2(int16_t value);
+int addWrite_S_LOC_AnIn_2(int16_t value);
+int getStatus_S_LOC_AnIn_2();
+ 
+#define ID_S_LOC_DigIn_3 514
+extern u_int16_t S_LOC_DigIn_3;
+int doWrite_S_LOC_DigIn_3(u_int16_t value);
+int addWrite_S_LOC_DigIn_3(u_int16_t value);
+int getStatus_S_LOC_DigIn_3();
+ 
+#define ID_S_LOC_DigOut_4 515
+extern u_int16_t S_LOC_DigOut_4;
+int doWrite_S_LOC_DigOut_4(u_int16_t value);
+int addWrite_S_LOC_DigOut_4(u_int16_t value);
+int getStatus_S_LOC_DigOut_4();
+ 
 #define ID_RTU0_TYPE_PORT 5000
 extern u_int32_t RTU0_TYPE_PORT;
 int doWrite_RTU0_TYPE_PORT(u_int32_t value);
