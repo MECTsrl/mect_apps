@@ -42,7 +42,7 @@
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>9</pointsize>
+     <pointsize>7</pointsize>
      <weight>75</weight>
      <bold>true</bold>
     </font>
@@ -80,7 +80,8 @@
     </color>
    </property>
    <property name="text">
-    <string>TPAC1006</string>
+    <string>TPAC
+1006</string>
    </property>
    <property name="pressText">
     <string>MENU</string>
@@ -95,7 +96,7 @@
     <enum>QFrame::Raised</enum>
    </property>
   </widget>
-  <widget class="QLabel" name="label_5">
+  <widget class="QLabel" name="label_LOC">
    <property name="geometry">
     <rect>
      <x>3</x>
@@ -107,7 +108,7 @@
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>10</pointsize>
+     <pointsize>8</pointsize>
      <weight>75</weight>
      <bold>true</bold>
     </font>
@@ -119,10 +120,10 @@
     <string>Local</string>
    </property>
    <property name="alignment">
-    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    <set>Qt::AlignCenter</set>
    </property>
   </widget>
-  <widget class="QLabel" name="label_6">
+  <widget class="QLabel" name="label_RTU">
    <property name="geometry">
     <rect>
      <x>3</x>
@@ -134,7 +135,7 @@
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>10</pointsize>
+     <pointsize>8</pointsize>
      <weight>75</weight>
      <bold>true</bold>
     </font>
@@ -146,10 +147,10 @@
     <string>RTU</string>
    </property>
    <property name="alignment">
-    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    <set>Qt::AlignCenter</set>
    </property>
   </widget>
-  <widget class="QLabel" name="label_7">
+  <widget class="QLabel" name="label_CAN">
    <property name="geometry">
     <rect>
      <x>3</x>
@@ -161,7 +162,7 @@
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>10</pointsize>
+     <pointsize>8</pointsize>
      <weight>75</weight>
      <bold>true</bold>
     </font>
@@ -173,10 +174,10 @@
     <string>CAN</string>
    </property>
    <property name="alignment">
-    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    <set>Qt::AlignCenter</set>
    </property>
   </widget>
-  <widget class="QLabel" name="label_8">
+  <widget class="QLabel" name="label_TCP">
    <property name="geometry">
     <rect>
      <x>3</x>
@@ -188,7 +189,7 @@
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>10</pointsize>
+     <pointsize>8</pointsize>
      <weight>75</weight>
      <bold>true</bold>
     </font>
@@ -197,7 +198,7 @@
     <string>TCP</string>
    </property>
    <property name="alignment">
-    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    <set>Qt::AlignCenter</set>
    </property>
   </widget>
   <widget class="ATCMlabel" name="atcmLabel">
@@ -215,7 +216,7 @@
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>10</pointsize>
+     <pointsize>7</pointsize>
     </font>
    </property>
    <property name="text">
@@ -280,7 +281,7 @@
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>10</pointsize>
+     <pointsize>7</pointsize>
     </font>
    </property>
    <property name="toolTip">
@@ -408,7 +409,7 @@
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>10</pointsize>
+     <pointsize>7</pointsize>
     </font>
    </property>
    <property name="toolTip">
@@ -443,7 +444,7 @@
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>10</pointsize>
+     <pointsize>7</pointsize>
     </font>
    </property>
    <property name="toolTip">
@@ -480,6 +481,11 @@
      <width>96</width>
      <height>21</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
    </property>
    <property name="toolTip">
     <string>PLC_time</string>
@@ -534,6 +540,14 @@
      <height>21</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>x.xxx</string>
+   </property>
    <property name="toolTip">
     <string>PLC_Version</string>
    </property>
@@ -544,7 +558,7 @@
     <string>PLC_Version</string>
    </property>
    <property name="prefix">
-    <string>Eng. v </string>
+    <string>Eng. v</string>
    </property>
    <property name="refresh">
     <number>200</number>
@@ -626,7 +640,7 @@
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>10</pointsize>
+     <pointsize>7</pointsize>
     </font>
    </property>
    <property name="toolTip">
@@ -685,7 +699,7 @@
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>10</pointsize>
+     <pointsize>7</pointsize>
     </font>
    </property>
    <property name="text">
@@ -822,7 +836,7 @@
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>10</pointsize>
+     <pointsize>7</pointsize>
     </font>
    </property>
    <property name="toolTip">
@@ -881,7 +895,7 @@
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>10</pointsize>
+     <pointsize>7</pointsize>
     </font>
    </property>
    <property name="text">
@@ -1018,7 +1032,7 @@
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>10</pointsize>
+     <pointsize>7</pointsize>
     </font>
    </property>
    <property name="toolTip">
@@ -1077,7 +1091,7 @@
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>10</pointsize>
+     <pointsize>7</pointsize>
     </font>
    </property>
    <property name="text">
@@ -1286,7 +1300,7 @@
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>10</pointsize>
+     <pointsize>8</pointsize>
      <weight>50</weight>
      <bold>false</bold>
     </font>
@@ -1335,7 +1349,7 @@
     <enum>QFrame::Raised</enum>
    </property>
   </widget>
-  <widget class="ATCMbutton" name="atcmButton_AnIn1_2">
+  <widget class="ATCMbutton" name="atcmButton_AnIn2">
    <property name="geometry">
     <rect>
      <x>128</x>
@@ -1347,7 +1361,7 @@
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>10</pointsize>
+     <pointsize>8</pointsize>
      <weight>50</weight>
      <bold>false</bold>
     </font>
@@ -1396,7 +1410,7 @@
     <enum>QFrame::Raised</enum>
    </property>
   </widget>
-  <widget class="ATCMbutton" name="atcmButton_AnIn1_3">
+  <widget class="ATCMbutton" name="atcmButton_DigIn_3">
    <property name="geometry">
     <rect>
      <x>192</x>
@@ -1408,7 +1422,7 @@
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>10</pointsize>
+     <pointsize>8</pointsize>
      <weight>50</weight>
      <bold>false</bold>
     </font>
@@ -1457,7 +1471,7 @@
     <enum>QFrame::Raised</enum>
    </property>
   </widget>
-  <widget class="ATCMbutton" name="atcmButton_AnIn1_4">
+  <widget class="ATCMbutton" name="atcmButton_DigOut_4">
    <property name="geometry">
     <rect>
      <x>256</x>
@@ -1469,7 +1483,7 @@
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>10</pointsize>
+     <pointsize>8</pointsize>
      <weight>50</weight>
      <bold>false</bold>
     </font>
@@ -1530,7 +1544,7 @@
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>9</pointsize>
+     <pointsize>8</pointsize>
      <weight>75</weight>
      <bold>true</bold>
     </font>
@@ -1595,6 +1609,7 @@
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
+     <pointsize>7</pointsize>
     </font>
    </property>
    <property name="styleSheet">
@@ -1611,7 +1626,7 @@ Services</string>
   <widget class="ATCMled" name="atcmLed_CH1">
    <property name="geometry">
     <rect>
-     <x>44</x>
+     <x>0</x>
      <y>160</y>
      <width>15</width>
      <height>20</height>
@@ -1647,7 +1662,7 @@ Services</string>
   <widget class="ATCMled" name="atcmLed_CH11">
    <property name="geometry">
     <rect>
-     <x>44</x>
+     <x>0</x>
      <y>180</y>
      <width>15</width>
      <height>20</height>
@@ -1683,7 +1698,7 @@ Services</string>
   <widget class="ATCMled" name="atcmLed_CH0">
    <property name="geometry">
     <rect>
-     <x>40</x>
+     <x>0</x>
      <y>80</y>
      <width>15</width>
      <height>20</height>
@@ -1719,7 +1734,7 @@ Services</string>
   <widget class="ATCMled" name="atcmLed_CH01">
    <property name="geometry">
     <rect>
-     <x>40</x>
+     <x>0</x>
      <y>100</y>
      <width>15</width>
      <height>20</height>
@@ -1863,6 +1878,11 @@ Services</string>
      <height>161</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
+   </property>
    <property name="toolTip">
     <string/>
    </property>
@@ -1892,7 +1912,7 @@ Services</string>
     <string/>
    </property>
    <property name="pressText">
-    <string>page200</string>
+    <string/>
    </property>
    <property name="borderWidth">
     <number>1</number>
@@ -1909,10 +1929,10 @@ Services</string>
   <zorder>atcmAnimation_3</zorder>
   <zorder>atcmAnimation_2</zorder>
   <zorder>atcmButton</zorder>
-  <zorder>label_5</zorder>
-  <zorder>label_6</zorder>
-  <zorder>label_7</zorder>
-  <zorder>label_8</zorder>
+  <zorder>label_LOC</zorder>
+  <zorder>label_RTU</zorder>
+  <zorder>label_CAN</zorder>
+  <zorder>label_TCP</zorder>
   <zorder>atcmLabel</zorder>
   <zorder>atcmLabel_2</zorder>
   <zorder>atcmLed_LOC_DigIn_3</zorder>
@@ -1934,9 +1954,9 @@ Services</string>
   <zorder>atcmLabel_10</zorder>
   <zorder>atcmLed_TCP_DigIn_3</zorder>
   <zorder>atcmButton_AnIn1</zorder>
-  <zorder>atcmButton_AnIn1_2</zorder>
-  <zorder>atcmButton_AnIn1_3</zorder>
-  <zorder>atcmButton_AnIn1_4</zorder>
+  <zorder>atcmButton_AnIn2</zorder>
+  <zorder>atcmButton_DigIn_3</zorder>
+  <zorder>atcmButton_DigOut_4</zorder>
   <zorder>atcmButton_2</zorder>
   <zorder>label</zorder>
   <zorder>atcmLed_CH1</zorder>
@@ -2017,7 +2037,7 @@ Services</string>
    </hints>
   </connection>
   <connection>
-   <sender>atcmButton_AnIn1_2</sender>
+   <sender>atcmButton_AnIn2</sender>
    <signal>newPage(const char*,bool)</signal>
    <receiver>page100</receiver>
    <slot>goto_page(const char*,bool)</slot>
@@ -2033,7 +2053,7 @@ Services</string>
    </hints>
   </connection>
   <connection>
-   <sender>atcmButton_AnIn1_3</sender>
+   <sender>atcmButton_DigIn_3</sender>
    <signal>newPage(const char*,bool)</signal>
    <receiver>page100</receiver>
    <slot>goto_page(const char*,bool)</slot>
@@ -2049,7 +2069,7 @@ Services</string>
    </hints>
   </connection>
   <connection>
-   <sender>atcmButton_AnIn1_4</sender>
+   <sender>atcmButton_DigOut_4</sender>
    <signal>newPage(const char*,bool)</signal>
    <receiver>page100</receiver>
    <slot>goto_page(const char*,bool)</slot>

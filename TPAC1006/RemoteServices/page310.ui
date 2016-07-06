@@ -42,7 +42,7 @@
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>9</pointsize>
+     <pointsize>6</pointsize>
      <weight>75</weight>
      <bold>true</bold>
     </font>
@@ -80,7 +80,8 @@
     </color>
    </property>
    <property name="text">
-    <string>TPAC1006</string>
+    <string>TPAC
+1006</string>
    </property>
    <property name="pressText">
     <string>MENU</string>
@@ -107,7 +108,7 @@
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>9</pointsize>
+     <pointsize>6</pointsize>
     </font>
    </property>
    <property name="toolTip">
@@ -199,7 +200,7 @@
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>9</pointsize>
+     <pointsize>6</pointsize>
     </font>
    </property>
    <property name="toolTip">
@@ -298,7 +299,7 @@
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>9</pointsize>
+     <pointsize>6</pointsize>
      <weight>75</weight>
      <bold>true</bold>
     </font>
@@ -363,7 +364,7 @@
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>10</pointsize>
+     <pointsize>6</pointsize>
     </font>
    </property>
    <property name="toolTip">
@@ -415,7 +416,7 @@
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>10</pointsize>
+     <pointsize>6</pointsize>
     </font>
    </property>
    <property name="toolTip">
@@ -467,7 +468,7 @@
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>10</pointsize>
+     <pointsize>6</pointsize>
     </font>
    </property>
    <property name="toolTip">
@@ -519,7 +520,7 @@
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>10</pointsize>
+     <pointsize>6</pointsize>
     </font>
    </property>
    <property name="toolTip">
