@@ -96,8 +96,8 @@ SOURCES += \
 }
 
 # default icons
-RESOURCES += \
-    defaulticons.qrc
+#RESOURCES += \
+#    defaulticons.qrc
 
 # language
 !isEmpty(QT_LUPDATE_PATH) {
