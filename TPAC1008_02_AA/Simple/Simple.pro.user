@@ -113,7 +113,7 @@
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4BuildConfiguration</value>
     <value type="int" key="Qt4ProjectManager.Qt4BuildConfiguration.BuildConfiguration">2</value>
-    <value type="QString" key="Qt4ProjectManager.Qt4BuildConfiguration.BuildDirectory">C:/MectApps/TPAC1008_02/Simple</value>
+    <value type="QString" key="Qt4ProjectManager.Qt4BuildConfiguration.BuildDirectory">C:/MectApps/TPAC1008_02_AA/Simple</value>
     <value type="bool" key="Qt4ProjectManager.Qt4BuildConfiguration.UseShadowBuild">false</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.BuildConfiguration.1">
@@ -172,7 +172,7 @@
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4BuildConfiguration</value>
     <value type="int" key="Qt4ProjectManager.Qt4BuildConfiguration.BuildConfiguration">0</value>
-    <value type="QString" key="Qt4ProjectManager.Qt4BuildConfiguration.BuildDirectory">C:/MectApps/TPAC1008_02/Simple</value>
+    <value type="QString" key="Qt4ProjectManager.Qt4BuildConfiguration.BuildDirectory">C:/MectApps/TPAC1008_02_AA/Simple</value>
     <value type="bool" key="Qt4ProjectManager.Qt4BuildConfiguration.UseShadowBuild">false</value>
    </valuemap>
    <value type="int" key="ProjectExplorer.Target.BuildConfigurationCount">2</value>
@@ -209,13 +209,13 @@
       <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
       <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">RemoteLinux.DirectUploadStep</value>
       <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedFiles">
-       <value type="QString">C:/MectApps/TPAC1008_02/Simple/config/Crosstable.csv</value>
-       <value type="QString">C:/MectApps/TPAC1008_02/Simple/config/system.ini</value>
-       <value type="QString">C:/MectApps/TPAC1008_02/Simple/config/network0.cmg</value>
-       <value type="QString">C:/MectApps/TPAC1008_02/Simple/config/trend1.csv</value>
-       <value type="QString">C:/MectApps/TPAC1008_02/Simple/hmi</value>
-       <value type="QString">C:/MectApps/TPAC1008_02/Simple/config/splash.png</value>
-       <value type="QString">C:/MectApps/TPAC1008_02/Simple/config/iomap0.cmg</value>
+       <value type="QString">C:/MectApps/TPAC1008_02_AA/Simple/config/Crosstable.csv</value>
+       <value type="QString">C:/MectApps/TPAC1008_02_AA/Simple/config/system.ini</value>
+       <value type="QString">C:/MectApps/TPAC1008_02_AA/Simple/config/network0.cmg</value>
+       <value type="QString">C:/MectApps/TPAC1008_02_AA/Simple/config/trend1.csv</value>
+       <value type="QString">C:/MectApps/TPAC1008_02_AA/Simple/hmi</value>
+       <value type="QString">C:/MectApps/TPAC1008_02_AA/Simple/config/splash.png</value>
+       <value type="QString">C:/MectApps/TPAC1008_02_AA/Simple/config/iomap0.cmg</value>
       </valuelist>
       <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedHosts">
        <value type="QString">192.168.5.211</value>

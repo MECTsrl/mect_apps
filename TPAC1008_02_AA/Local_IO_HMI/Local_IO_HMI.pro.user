@@ -113,7 +113,7 @@
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4BuildConfiguration</value>
     <value type="int" key="Qt4ProjectManager.Qt4BuildConfiguration.BuildConfiguration">2</value>
-    <value type="QString" key="Qt4ProjectManager.Qt4BuildConfiguration.BuildDirectory">C:/MectApps/TPAC1008_02/Local_IO_HMI</value>
+    <value type="QString" key="Qt4ProjectManager.Qt4BuildConfiguration.BuildDirectory">C:/MectApps/TPAC1008_02_AA/Local_IO_HMI</value>
     <value type="bool" key="Qt4ProjectManager.Qt4BuildConfiguration.UseShadowBuild">false</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.BuildConfiguration.1">
@@ -172,7 +172,7 @@
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4BuildConfiguration</value>
     <value type="int" key="Qt4ProjectManager.Qt4BuildConfiguration.BuildConfiguration">0</value>
-    <value type="QString" key="Qt4ProjectManager.Qt4BuildConfiguration.BuildDirectory">C:/MectApps/TPAC1008_02/Local_IO_HMI</value>
+    <value type="QString" key="Qt4ProjectManager.Qt4BuildConfiguration.BuildDirectory">C:/MectApps/TPAC1008_02_AA/Local_IO_HMI</value>
     <value type="bool" key="Qt4ProjectManager.Qt4BuildConfiguration.UseShadowBuild">false</value>
    </valuemap>
    <value type="int" key="ProjectExplorer.Target.BuildConfigurationCount">2</value>
@@ -209,15 +209,15 @@
       <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
       <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">RemoteLinux.DirectUploadStep</value>
       <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedFiles">
-       <value type="QString">C:/MectApps/TPAC1008_02/Local_IO_HMI/config/trend1.csv</value>
-       <value type="QString">C:/MectApps/TPAC1008_02/Local_IO_HMI/config/network0.cmg</value>
-       <value type="QString">C:/MectApps/TPAC1008_02/Local_IO_HMI/config/system.ini</value>
-       <value type="QString">C:/MectApps/TPAC1008_02/Local_IO_HMI/config/Crosstable.csv</value>
-       <value type="QString">C:/MectApps/TPAC1008_02/Local_IO_HMI/config/splash.png</value>
-       <value type="QString">C:/MectApps/TPAC1008_02/Local_IO_HMI/hmi</value>
-       <value type="QString">C:/MectApps/TPAC1008_02/Local_IO_HMI/config/iomap1.cmg</value>
-       <value type="QString">C:/MectApps/TPAC1008_02/Local_IO_HMI/config/iomap0.cmg</value>
-       <value type="QString">C:/MectApps/TPAC1008_02/Local_IO_HMI/config/network1.cmg</value>
+       <value type="QString">C:/MectApps/TPAC1008_02_AA/Local_IO_HMI/config/trend1.csv</value>
+       <value type="QString">C:/MectApps/TPAC1008_02_AA/Local_IO_HMI/config/network0.cmg</value>
+       <value type="QString">C:/MectApps/TPAC1008_02_AA/Local_IO_HMI/config/system.ini</value>
+       <value type="QString">C:/MectApps/TPAC1008_02_AA/Local_IO_HMI/config/Crosstable.csv</value>
+       <value type="QString">C:/MectApps/TPAC1008_02_AA/Local_IO_HMI/config/splash.png</value>
+       <value type="QString">C:/MectApps/TPAC1008_02_AA/Local_IO_HMI/hmi</value>
+       <value type="QString">C:/MectApps/TPAC1008_02_AA/Local_IO_HMI/config/iomap1.cmg</value>
+       <value type="QString">C:/MectApps/TPAC1008_02_AA/Local_IO_HMI/config/iomap0.cmg</value>
+       <value type="QString">C:/MectApps/TPAC1008_02_AA/Local_IO_HMI/config/network1.cmg</value>
       </valuelist>
       <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedHosts">
        <value type="QString">192.168.5.211</value>
@@ -313,7 +313,7 @@
     <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Local_IO_HMI (on Remote Device)</value>
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">RemoteLinuxRunConfiguration:C:/MectApps/TPAC1008_02/Local_IO_HMI/Local_IO_HMI.pro</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">RemoteLinuxRunConfiguration:C:/MectApps/TPAC1008_02_AA/Local_IO_HMI/Local_IO_HMI.pro</value>
     <value type="QString" key="Qt4ProjectManager.MaemoRunConfiguration.Arguments"></value>
     <value type="QString" key="Qt4ProjectManager.MaemoRunConfiguration.ProFile">Local_IO_HMI.pro</value>
     <value type="QString" key="RemoteLinux.RunConfig.AlternateRemoteExecutable"></value>
