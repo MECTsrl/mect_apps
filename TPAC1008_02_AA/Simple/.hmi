@@ -4,6 +4,7 @@ INPUT(
 ./automation.o
 ./page100.o
 ./moc_page100.o
+./qrc_defaulticons.o
 ./qrc_languages.o
 ./qrc_resources.o
 );

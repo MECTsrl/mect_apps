@@ -43,7 +43,7 @@ background-color: rgb(170, 255, 255);
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>13</pointsize>
+     <pointsize>11</pointsize>
      <weight>50</weight>
      <bold>false</bold>
     </font>
@@ -70,7 +70,7 @@ background-color: rgb(170, 255, 255);
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>13</pointsize>
+     <pointsize>11</pointsize>
      <weight>50</weight>
      <bold>false</bold>
     </font>
@@ -97,7 +97,7 @@ background-color: rgb(170, 255, 255);
    <property name="font">
     <font>
      <family>DejaVu Sans Mono</family>
-     <pointsize>13</pointsize>
+     <pointsize>11</pointsize>
      <weight>75</weight>
      <bold>true</bold>
     </font>
@@ -168,7 +168,7 @@ background-color: rgb(170, 255, 255);
    <property name="font">
     <font>
      <family>DejaVu Sans Mono</family>
-     <pointsize>13</pointsize>
+     <pointsize>11</pointsize>
     </font>
    </property>
    <property name="checkable">
@@ -244,7 +244,7 @@ background-color: rgb(170, 255, 255);
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>11</pointsize>
+     <pointsize>10</pointsize>
     </font>
    </property>
    <property name="toolTip">
@@ -276,6 +276,12 @@ background-color: rgb(170, 255, 255);
      <height>3</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
    <property name="orientation">
     <enum>Qt::Horizontal</enum>
    </property>
@@ -294,6 +300,12 @@ background-color: rgb(170, 255, 255);
    </property>
    <property name="whatsThis">
     <string>ATCMled widget</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>8</pointsize>
+    </font>
    </property>
    <property name="variable">
     <string>CH0_01_NODERUN</string>
@@ -328,7 +340,7 @@ background-color: rgb(170, 255, 255);
    <property name="font">
     <font>
      <family>DejaVu Sans Mono</family>
-     <pointsize>13</pointsize>
+     <pointsize>11</pointsize>
      <weight>75</weight>
      <bold>true</bold>
     </font>
@@ -402,6 +414,12 @@ background-color: rgb(170, 255, 255);
    <property name="whatsThis">
     <string>ATCMled widget</string>
    </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
    <property name="variable">
     <string>PLC_DigIn_5</string>
    </property>
@@ -470,7 +488,7 @@ background-color: rgb(170, 255, 255);
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>13</pointsize>
+     <pointsize>11</pointsize>
      <weight>50</weight>
      <bold>false</bold>
     </font>
@@ -497,7 +515,7 @@ background-color: rgb(170, 255, 255);
    <property name="font">
     <font>
      <family>DejaVu Sans Mono</family>
-     <pointsize>13</pointsize>
+     <pointsize>11</pointsize>
     </font>
    </property>
    <property name="checkable">
@@ -576,6 +594,12 @@ background-color: rgb(170, 255, 255);
    <property name="whatsThis">
     <string>ATCMled widget</string>
    </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
    <property name="variable">
     <string>CH0_NETRUN</string>
    </property>
@@ -609,7 +633,7 @@ background-color: rgb(170, 255, 255);
    <property name="font">
     <font>
      <family>DejaVu Sans Mono</family>
-     <pointsize>13</pointsize>
+     <pointsize>11</pointsize>
     </font>
    </property>
    <property name="toolTip">
@@ -668,7 +692,7 @@ background-color: rgb(170, 255, 255);
    <property name="font">
     <font>
      <family>DejaVu Sans Mono</family>
-     <pointsize>13</pointsize>
+     <pointsize>11</pointsize>
     </font>
    </property>
    <property name="checkable">
@@ -744,7 +768,7 @@ background-color: rgb(170, 255, 255);
    <property name="font">
     <font>
      <family>DejaVu Sans Mono</family>
-     <pointsize>13</pointsize>
+     <pointsize>11</pointsize>
     </font>
    </property>
    <property name="toolTip">
@@ -803,7 +827,7 @@ background-color: rgb(170, 255, 255);
    <property name="font">
     <font>
      <family>DejaVu Sans Mono</family>
-     <pointsize>13</pointsize>
+     <pointsize>11</pointsize>
      <weight>50</weight>
      <bold>false</bold>
     </font>
@@ -871,7 +895,7 @@ background-color: rgb(170, 255, 255);
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>13</pointsize>
+     <pointsize>11</pointsize>
      <weight>50</weight>
      <bold>false</bold>
     </font>
@@ -898,7 +922,7 @@ background-color: rgb(170, 255, 255);
    <property name="font">
     <font>
      <family>DejaVu Sans Mono</family>
-     <pointsize>13</pointsize>
+     <pointsize>11</pointsize>
      <weight>75</weight>
      <bold>true</bold>
     </font>
@@ -969,7 +993,7 @@ background-color: rgb(170, 255, 255);
    <property name="font">
     <font>
      <family>DejaVu Sans Mono</family>
-     <pointsize>13</pointsize>
+     <pointsize>11</pointsize>
      <weight>75</weight>
      <bold>true</bold>
     </font>
@@ -1081,10 +1105,10 @@ background-color: rgb(170, 255, 255);
     </color>
    </property>
    <property name="text">
-    <string>TPAC1008_02</string>
+    <string>TPAC1008_02_AA</string>
    </property>
    <property name="pressText">
-    <string>TPAC1008_02</string>
+    <string>TPAC1008_02_AA</string>
    </property>
    <property name="borderWidth">
     <number>1</number>
@@ -1110,6 +1134,12 @@ background-color: rgb(170, 255, 255);
    </property>
    <property name="whatsThis">
     <string>ATCMled widget</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>8</pointsize>
+    </font>
    </property>
    <property name="variable">
     <string>PLC_DigIn_4</string>
@@ -1147,6 +1177,12 @@ background-color: rgb(170, 255, 255);
    <property name="whatsThis">
     <string>ATCMled widget</string>
    </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
    <property name="variable">
     <string>PLC_DigIn_8</string>
    </property>
@@ -1180,7 +1216,7 @@ background-color: rgb(170, 255, 255);
    <property name="font">
     <font>
      <family>DejaVu Sans Mono</family>
-     <pointsize>13</pointsize>
+     <pointsize>11</pointsize>
      <weight>75</weight>
      <bold>true</bold>
     </font>
@@ -1251,7 +1287,7 @@ background-color: rgb(170, 255, 255);
    <property name="font">
     <font>
      <family>DejaVu Sans Mono</family>
-     <pointsize>13</pointsize>
+     <pointsize>11</pointsize>
     </font>
    </property>
    <property name="checkable">
@@ -1327,7 +1363,7 @@ background-color: rgb(170, 255, 255);
    <property name="font">
     <font>
      <family>DejaVu Sans Mono</family>
-     <pointsize>13</pointsize>
+     <pointsize>11</pointsize>
     </font>
    </property>
    <property name="toolTip">
@@ -1386,7 +1422,7 @@ background-color: rgb(170, 255, 255);
    <property name="font">
     <font>
      <family>DejaVu Sans Mono</family>
-     <pointsize>13</pointsize>
+     <pointsize>11</pointsize>
      <weight>75</weight>
      <bold>true</bold>
     </font>
@@ -1457,7 +1493,7 @@ background-color: rgb(170, 255, 255);
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>13</pointsize>
+     <pointsize>11</pointsize>
     </font>
    </property>
    <property name="toolTip">
@@ -1516,7 +1552,7 @@ background-color: rgb(170, 255, 255);
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>13</pointsize>
+     <pointsize>11</pointsize>
      <weight>75</weight>
      <bold>true</bold>
     </font>
@@ -1545,6 +1581,12 @@ background-color: rgb(170, 255, 255);
    </property>
    <property name="whatsThis">
     <string>ATCMled widget</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>8</pointsize>
+    </font>
    </property>
    <property name="variable">
     <string>PLC_DigIn_7</string>
@@ -1579,7 +1621,7 @@ background-color: rgb(170, 255, 255);
    <property name="font">
     <font>
      <family>DejaVu Sans Mono</family>
-     <pointsize>13</pointsize>
+     <pointsize>11</pointsize>
      <weight>75</weight>
      <bold>true</bold>
     </font>
@@ -1647,7 +1689,7 @@ background-color: rgb(170, 255, 255);
    <property name="font">
     <font>
      <family>DejaVu Sans Mono</family>
-     <pointsize>13</pointsize>
+     <pointsize>11</pointsize>
      <weight>75</weight>
      <bold>true</bold>
     </font>
@@ -1715,7 +1757,7 @@ background-color: rgb(170, 255, 255);
    <property name="font">
     <font>
      <family>DejaVu Sans Mono</family>
-     <pointsize>13</pointsize>
+     <pointsize>11</pointsize>
     </font>
    </property>
    <property name="checkable">
@@ -1791,7 +1833,7 @@ background-color: rgb(170, 255, 255);
    <property name="font">
     <font>
      <family>DejaVu Sans Mono</family>
-     <pointsize>13</pointsize>
+     <pointsize>11</pointsize>
     </font>
    </property>
    <property name="checkable">
@@ -1928,6 +1970,12 @@ background-color: rgb(170, 255, 255);
    <property name="whatsThis">
     <string>ATCMled widget</string>
    </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
    <property name="variable">
     <string>PLC_DigIn_3</string>
    </property>
@@ -1961,7 +2009,7 @@ background-color: rgb(170, 255, 255);
    <property name="font">
     <font>
      <family>DejaVu Sans Mono</family>
-     <pointsize>13</pointsize>
+     <pointsize>11</pointsize>
      <weight>75</weight>
      <bold>true</bold>
     </font>
@@ -2029,6 +2077,12 @@ background-color: rgb(170, 255, 255);
      <height>3</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
    <property name="orientation">
     <enum>Qt::Horizontal</enum>
    </property>
@@ -2045,7 +2099,7 @@ background-color: rgb(170, 255, 255);
    <property name="font">
     <font>
      <family>DejaVu Sans Mono</family>
-     <pointsize>13</pointsize>
+     <pointsize>11</pointsize>
      <weight>75</weight>
      <bold>true</bold>
     </font>
@@ -2116,7 +2170,7 @@ background-color: rgb(170, 255, 255);
    <property name="font">
     <font>
      <family>DejaVu Sans Mono</family>
-     <pointsize>13</pointsize>
+     <pointsize>11</pointsize>
      <weight>75</weight>
      <bold>true</bold>
     </font>
@@ -2184,6 +2238,12 @@ background-color: rgb(170, 255, 255);
      <height>3</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
    <property name="orientation">
     <enum>Qt::Horizontal</enum>
    </property>
@@ -2202,6 +2262,12 @@ background-color: rgb(170, 255, 255);
    </property>
    <property name="whatsThis">
     <string>ATCMled widget</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>8</pointsize>
+    </font>
    </property>
    <property name="variable">
     <string>PLC_DigIn_1</string>
@@ -2233,6 +2299,12 @@ background-color: rgb(170, 255, 255);
      <height>120</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
    <property name="orientation">
     <enum>Qt::Vertical</enum>
    </property>
@@ -2249,7 +2321,7 @@ background-color: rgb(170, 255, 255);
    <property name="font">
     <font>
      <family>DejaVu Sans Mono</family>
-     <pointsize>13</pointsize>
+     <pointsize>11</pointsize>
      <weight>75</weight>
      <bold>true</bold>
     </font>
@@ -2317,7 +2389,7 @@ background-color: rgb(170, 255, 255);
    <property name="font">
     <font>
      <family>DejaVu Sans Mono</family>
-     <pointsize>13</pointsize>
+     <pointsize>11</pointsize>
     </font>
    </property>
    <property name="checkable">
@@ -2393,7 +2465,7 @@ background-color: rgb(170, 255, 255);
    <property name="font">
     <font>
      <family>DejaVu Sans Mono</family>
-     <pointsize>13</pointsize>
+     <pointsize>11</pointsize>
     </font>
    </property>
    <property name="checkable">
@@ -2469,7 +2541,7 @@ background-color: rgb(170, 255, 255);
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>13</pointsize>
+     <pointsize>11</pointsize>
      <weight>50</weight>
      <bold>false</bold>
     </font>
@@ -2496,7 +2568,7 @@ background-color: rgb(170, 255, 255);
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>13</pointsize>
+     <pointsize>11</pointsize>
      <weight>50</weight>
      <bold>false</bold>
     </font>
@@ -2520,6 +2592,12 @@ background-color: rgb(170, 255, 255);
      <height>480</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
    <property name="orientation">
     <enum>Qt::Vertical</enum>
    </property>
@@ -2536,7 +2614,7 @@ background-color: rgb(170, 255, 255);
    <property name="font">
     <font>
      <family>DejaVu Sans Mono</family>
-     <pointsize>13</pointsize>
+     <pointsize>11</pointsize>
      <weight>75</weight>
      <bold>true</bold>
     </font>
@@ -2607,7 +2685,7 @@ background-color: rgb(170, 255, 255);
    <property name="font">
     <font>
      <family>DejaVu Sans Mono</family>
-     <pointsize>13</pointsize>
+     <pointsize>11</pointsize>
     </font>
    </property>
    <property name="toolTip">
@@ -2669,6 +2747,12 @@ background-color: rgb(170, 255, 255);
    <property name="whatsThis">
     <string>ATCMled widget</string>
    </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
    <property name="variable">
     <string>PLC_DigIn_2</string>
    </property>
@@ -2702,7 +2786,7 @@ background-color: rgb(170, 255, 255);
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>13</pointsize>
+     <pointsize>11</pointsize>
     </font>
    </property>
    <property name="toolTip">
@@ -2761,7 +2845,7 @@ background-color: rgb(170, 255, 255);
    <property name="font">
     <font>
      <family>DejaVu Sans Mono</family>
-     <pointsize>13</pointsize>
+     <pointsize>11</pointsize>
     </font>
    </property>
    <property name="toolTip">
@@ -2820,7 +2904,7 @@ background-color: rgb(170, 255, 255);
    <property name="font">
     <font>
      <family>DejaVu Sans Mono</family>
-     <pointsize>13</pointsize>
+     <pointsize>11</pointsize>
     </font>
    </property>
    <property name="checkable">
@@ -2896,7 +2980,7 @@ background-color: rgb(170, 255, 255);
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>13</pointsize>
+     <pointsize>11</pointsize>
      <weight>50</weight>
      <bold>false</bold>
     </font>
@@ -2923,7 +3007,7 @@ background-color: rgb(170, 255, 255);
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>13</pointsize>
+     <pointsize>11</pointsize>
      <weight>50</weight>
      <bold>false</bold>
     </font>
@@ -2950,7 +3034,7 @@ background-color: rgb(170, 255, 255);
    <property name="font">
     <font>
      <family>DejaVu Sans Mono</family>
-     <pointsize>13</pointsize>
+     <pointsize>11</pointsize>
      <weight>75</weight>
      <bold>true</bold>
     </font>
@@ -3024,6 +3108,12 @@ background-color: rgb(170, 255, 255);
    <property name="whatsThis">
     <string>ATCMled widget</string>
    </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
    <property name="variable">
     <string>PLC_DigIn_6</string>
    </property>
@@ -3054,6 +3144,12 @@ background-color: rgb(170, 255, 255);
      <height>120</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
    <property name="orientation">
     <enum>Qt::Vertical</enum>
    </property>
@@ -3070,7 +3166,7 @@ background-color: rgb(170, 255, 255);
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>13</pointsize>
+     <pointsize>11</pointsize>
      <weight>50</weight>
      <bold>false</bold>
     </font>
@@ -3097,7 +3193,7 @@ background-color: rgb(170, 255, 255);
    <property name="font">
     <font>
      <family>DejaVu Sans Mono</family>
-     <pointsize>13</pointsize>
+     <pointsize>11</pointsize>
      <weight>75</weight>
      <bold>true</bold>
     </font>
@@ -3168,7 +3264,7 @@ background-color: rgb(170, 255, 255);
    <property name="font">
     <font>
      <family>DejaVu Sans Mono</family>
-     <pointsize>13</pointsize>
+     <pointsize>11</pointsize>
      <weight>75</weight>
      <bold>true</bold>
     </font>
@@ -3239,6 +3335,12 @@ background-color: rgb(170, 255, 255);
    <property name="whatsThis">
     <string>ATCMled widget</string>
    </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
    <property name="variable">
     <string>CH0_01_NODEGOOD</string>
    </property>
@@ -3272,7 +3374,7 @@ background-color: rgb(170, 255, 255);
    <property name="font">
     <font>
      <family>DejaVu Sans Mono</family>
-     <pointsize>13</pointsize>
+     <pointsize>11</pointsize>
      <weight>75</weight>
      <bold>true</bold>
     </font>
@@ -3343,7 +3445,7 @@ background-color: rgb(170, 255, 255);
    <property name="font">
     <font>
      <family>DejaVu Sans Mono</family>
-     <pointsize>13</pointsize>
+     <pointsize>11</pointsize>
      <weight>75</weight>
      <bold>true</bold>
     </font>
@@ -3414,7 +3516,7 @@ background-color: rgb(170, 255, 255);
    <property name="font">
     <font>
      <family>DejaVu Sans Mono</family>
-     <pointsize>13</pointsize>
+     <pointsize>11</pointsize>
     </font>
    </property>
    <property name="toolTip">
@@ -3473,7 +3575,7 @@ background-color: rgb(170, 255, 255);
    <property name="font">
     <font>
      <family>DejaVu Sans Mono</family>
-     <pointsize>13</pointsize>
+     <pointsize>11</pointsize>
      <weight>75</weight>
      <bold>true</bold>
     </font>
@@ -3541,7 +3643,7 @@ background-color: rgb(170, 255, 255);
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>13</pointsize>
+     <pointsize>11</pointsize>
      <weight>50</weight>
      <bold>false</bold>
     </font>
@@ -3568,7 +3670,7 @@ background-color: rgb(170, 255, 255);
    <property name="font">
     <font>
      <family>DejaVu Sans Mono</family>
-     <pointsize>13</pointsize>
+     <pointsize>11</pointsize>
     </font>
    </property>
    <property name="checkable">
@@ -3644,7 +3746,7 @@ background-color: rgb(170, 255, 255);
    <property name="font">
     <font>
      <family>DejaVu Sans Mono</family>
-     <pointsize>13</pointsize>
+     <pointsize>11</pointsize>
      <weight>75</weight>
      <bold>true</bold>
     </font>
@@ -3715,7 +3817,7 @@ background-color: rgb(170, 255, 255);
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>13</pointsize>
+     <pointsize>11</pointsize>
      <weight>50</weight>
      <bold>false</bold>
     </font>
@@ -3742,7 +3844,7 @@ background-color: rgb(170, 255, 255);
    <property name="font">
     <font>
      <family>DejaVu Sans Mono</family>
-     <pointsize>13</pointsize>
+     <pointsize>11</pointsize>
     </font>
    </property>
    <property name="checkable">
@@ -3818,7 +3920,7 @@ background-color: rgb(170, 255, 255);
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>13</pointsize>
+     <pointsize>11</pointsize>
      <weight>50</weight>
      <bold>false</bold>
     </font>
@@ -3847,6 +3949,12 @@ background-color: rgb(170, 255, 255);
    </property>
    <property name="whatsThis">
     <string>ATCMled widget</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>8</pointsize>
+    </font>
    </property>
    <property name="variable">
     <string>CH0_NETGOOD</string>
@@ -3881,7 +3989,7 @@ background-color: rgb(170, 255, 255);
    <property name="font">
     <font>
      <family>DejaVu Sans Mono</family>
-     <pointsize>13</pointsize>
+     <pointsize>11</pointsize>
     </font>
    </property>
    <property name="checkable">
@@ -3954,6 +4062,12 @@ background-color: rgb(170, 255, 255);
      <height>3</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
    <property name="orientation">
     <enum>Qt::Horizontal</enum>
    </property>
@@ -3970,7 +4084,7 @@ background-color: rgb(170, 255, 255);
    <property name="font">
     <font>
      <family>DejaVu Sans Mono</family>
-     <pointsize>13</pointsize>
+     <pointsize>11</pointsize>
      <weight>50</weight>
      <bold>false</bold>
     </font>

@@ -5,7 +5,7 @@
 # @section LICENSE
 # Copyright Mect s.r.l. 2013
 #
-# @brief Project file for qmake
+# @brief Qmake project file
 #
 
 contains(QMAKE_HOST.os,Windows){
@@ -48,22 +48,6 @@ TARGET = hmi
 TEMPLATE = app
 
 target.path = /local/root
-INSTALLS += target
-
-config.files = config/Crosstable.csv config/system.ini
-config.files += config/iomap0.cmg config/network0.cmg
-config.path = /local/etc/sysconfig
-
-splash.files = config/splash.png
-splash.path = /local/etc/sysconfig/img
-
-customtrend.files = config/trend1.csv
-customtrend.path = /local/data/customtrend
-
-INSTALLS += config splash
-
-INSTALLS += customtrend
-
 DEFINES+=ENABLE_STORE
 DEFINES+=ENABLE_ALARMS
 DEFINES+=ENABLE_TREND
@@ -100,25 +84,31 @@ SOURCES += \
         pages.cpp
 
 !isEmpty(ATCM_TEMPLATE_BASE_DIR) {
-# pre-elaboration
-check_missing_file.commands = @perl $${ATCM_TEMPLATE_BASE_DIR}/ATCM-template-project/cleanmissingpage.pl $$_PRO_FILE_ $$_PRO_FILE_PWD_
-check_undeclared_variable.commands = @perl $${ATCM_TEMPLATE_BASE_DIR}/ATCM-template-project/check_cross_var.pl $$_PRO_FILE_PWD_
-check_gotopage_bind.commands = @perl $${ATCM_TEMPLATE_BASE_DIR}/ATCM-template-project/connectbutton.pl $$_PRO_FILE_PWD_
+	# pre-elaboration
+    check_missing_file.commands = @perl $${ATCM_TEMPLATE_BASE_DIR}/ATCM-template-project/cleanmissingpage.pl \"$$_PRO_FILE_\" \"$$_PRO_FILE_PWD_\"
+    check_undeclared_variable.commands = @perl $${ATCM_TEMPLATE_BASE_DIR}/ATCM-template-project/check_cross_var.pl \"$$_PRO_FILE_PWD_\"
+    check_gotopage_bind.commands = @perl $${ATCM_TEMPLATE_BASE_DIR}/ATCM-template-project/connectbutton.pl \"$$_PRO_FILE_PWD_\"
+    check_systemini.commands = @perl $${ATCM_TEMPLATE_BASE_DIR}/ATCM-template-project/check_systemini.pl \"$$_PRO_FILE_\" \"$$_PRO_FILE_PWD_\"
+    check_default_font.commands = @perl $${ATCM_TEMPLATE_BASE_DIR}/ATCM-template-project/defaultfont.pl \"$$_PRO_FILE_PWD_\"
 
-QMAKE_EXTRA_TARGETS += check_missing_file check_undeclared_variable check_gotopage_bind
-PRE_TARGETDEPS += check_missing_file check_undeclared_variable check_gotopage_bind
+	QMAKE_EXTRA_TARGETS += check_missing_file check_undeclared_variable check_gotopage_bind check_systemini check_default_font
+	PRE_TARGETDEPS += check_missing_file check_undeclared_variable check_gotopage_bind check_systemini check_default_font
 }
+
+# default icons
+RESOURCES += \
+    defaulticons.qrc
 
 # language
 !isEmpty(QT_LUPDATE_PATH) {
-update.commands = $${QT_LUPDATE_PATH}/lupdate $$_PRO_FILE_
+update.commands = $${QT_LUPDATE_PATH}/lupdate \"$$_PRO_FILE_\"
 updates.depends = $$SOURCES $$HEADERS $$FORMS $$TRANSLATIONS
 release.depends = update
         QMAKE_EXTRA_TARGETS += update
         PRE_TARGETDEPS += update
 }
 !isEmpty(QT_LRELEASE_PATH) {
-        release.commands = $${QT_LRELEASE_PATH}/lrelease $$_PRO_FILE_
+        release.commands = $${QT_LRELEASE_PATH}/lrelease \"$$_PRO_FILE_\"
         QMAKE_EXTRA_TARGETS += release
         PRE_TARGETDEPS += release
 }
@@ -126,43 +116,4 @@ release.depends = update
 RESOURCES += \
     languages.qrc
 
-OTHER_FILES += \
-    languages_it.ts \
-    languages_en.ts
-
 include(./languages.pri)
-
-# display size
-MODEL = "<width>800</width><height>480</height>"
-
-equals(MODEL, "<width>320</width><height>240</height>") {
-    DEFINES+=WIDTH=320
-    DEFINES+=HEIGHT=240
-    DEFINES+=ROTATION=0
-}
-equals(MODEL, "<width>240</width><height>320</height>") {
-    DEFINES+=WIDTH=240
-    DEFINES+=HEIGHT=320
-    DEFINES+=ROTATION=90
-}
-equals(MODEL, "<width>480</width><height>272</height>") {
-    DEFINES+=WIDTH=480
-    DEFINES+=HEIGHT=272
-    DEFINES+=ROTATION=0
-}
-equals(MODEL, "<width>272</width><height>480</height>") {
-    DEFINES+=WIDTH=272
-    DEFINES+=HEIGHT=480
-    DEFINES+=ROTATION=90
-}
-equals(MODEL, "<width>800</width><height>480</height>") {
-    DEFINES+=WIDTH=800
-    DEFINES+=HEIGHT=480
-    DEFINES+=ROTATION=0
-}
-equals(MODEL, "<width>480</width><height>800</height>") {
-    DEFINES+=WIDTH=240
-    DEFINES+=HEIGHT=240
-    DEFINES+=ROTATION=90
-}
-
