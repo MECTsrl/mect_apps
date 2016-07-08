@@ -10,13 +10,17 @@ WORD_BIT  <-> int
 DWORD_BIT <-> int
 */ 
 #include "crosstable.h"
-#include "cross_table_utility.h"
  
-u_int16_t Actual_Baudrate = 0;
-u_int16_t Actual_Address = 0;
-u_int16_t LifeTime = 0;
-u_int16_t FutureBaudrate = 0;
-u_int16_t FutureAddress = 0;
+u_int16_t ActualBaudrate_3 = 0;
+u_int16_t ActualAddress_3 = 0;
+u_int16_t LifeTime_3 = 0;
+u_int16_t FutureBaudrate_3 = 0;
+u_int16_t FutureAddress_3 = 0;
+u_int16_t ActualBaudrate_0 = 0;
+u_int16_t ActualAddress_0 = 0;
+u_int16_t LifeTime_0 = 0;
+u_int16_t FutureBaudrate_0 = 0;
+u_int16_t FutureAddress_0 = 0;
 u_int32_t RTU0_TYPE_PORT = 0;
 u_int32_t RTU0_BAUDRATE = 0;
 u_int32_t RTU0_STATUS = 0;
@@ -219,93 +223,183 @@ int PLC_ResetValues = 0;
 int PLC_buzzerOn = 0;
 
 
-int doWrite_Actual_Baudrate(u_int16_t value)
+int doWrite_ActualBaudrate_3(u_int16_t value)
 {
-return doWrite(ID_Actual_Baudrate,  &value);
+return doWrite(ID_ActualBaudrate_3,  &value);
 }
 
 
-int addWrite_Actual_Baudrate(u_int16_t value)
+int addWrite_ActualBaudrate_3(u_int16_t value)
 {
-return addWrite(ID_Actual_Baudrate, &value);
+return addWrite(ID_ActualBaudrate_3, &value);
 }
 
 
-int getStatus_Actual_Baudrate()
+int getStatus_ActualBaudrate_3()
 {
-return getStatus(ID_Actual_Baudrate);
+return getStatus(ID_ActualBaudrate_3);
 }
 
 
-int doWrite_Actual_Address(u_int16_t value)
+int doWrite_ActualAddress_3(u_int16_t value)
 {
-return doWrite(ID_Actual_Address,  &value);
+return doWrite(ID_ActualAddress_3,  &value);
 }
 
 
-int addWrite_Actual_Address(u_int16_t value)
+int addWrite_ActualAddress_3(u_int16_t value)
 {
-return addWrite(ID_Actual_Address, &value);
+return addWrite(ID_ActualAddress_3, &value);
 }
 
 
-int getStatus_Actual_Address()
+int getStatus_ActualAddress_3()
 {
-return getStatus(ID_Actual_Address);
+return getStatus(ID_ActualAddress_3);
 }
 
 
-int doWrite_LifeTime(u_int16_t value)
+int doWrite_LifeTime_3(u_int16_t value)
 {
-return doWrite(ID_LifeTime,  &value);
+return doWrite(ID_LifeTime_3,  &value);
 }
 
 
-int addWrite_LifeTime(u_int16_t value)
+int addWrite_LifeTime_3(u_int16_t value)
 {
-return addWrite(ID_LifeTime, &value);
+return addWrite(ID_LifeTime_3, &value);
 }
 
 
-int getStatus_LifeTime()
+int getStatus_LifeTime_3()
 {
-return getStatus(ID_LifeTime);
+return getStatus(ID_LifeTime_3);
 }
 
 
-int doWrite_FutureBaudrate(u_int16_t value)
+int doWrite_FutureBaudrate_3(u_int16_t value)
 {
-return doWrite(ID_FutureBaudrate,  &value);
+return doWrite(ID_FutureBaudrate_3,  &value);
 }
 
 
-int addWrite_FutureBaudrate(u_int16_t value)
+int addWrite_FutureBaudrate_3(u_int16_t value)
 {
-return addWrite(ID_FutureBaudrate, &value);
+return addWrite(ID_FutureBaudrate_3, &value);
 }
 
 
-int getStatus_FutureBaudrate()
+int getStatus_FutureBaudrate_3()
 {
-return getStatus(ID_FutureBaudrate);
+return getStatus(ID_FutureBaudrate_3);
 }
 
 
-int doWrite_FutureAddress(u_int16_t value)
+int doWrite_FutureAddress_3(u_int16_t value)
 {
-return doWrite(ID_FutureAddress,  &value);
+return doWrite(ID_FutureAddress_3,  &value);
 }
 
 
-int addWrite_FutureAddress(u_int16_t value)
+int addWrite_FutureAddress_3(u_int16_t value)
 {
-return addWrite(ID_FutureAddress, &value);
+return addWrite(ID_FutureAddress_3, &value);
 }
 
 
-int getStatus_FutureAddress()
+int getStatus_FutureAddress_3()
 {
-return getStatus(ID_FutureAddress);
+return getStatus(ID_FutureAddress_3);
+}
+
+
+int doWrite_ActualBaudrate_0(u_int16_t value)
+{
+return doWrite(ID_ActualBaudrate_0,  &value);
+}
+
+
+int addWrite_ActualBaudrate_0(u_int16_t value)
+{
+return addWrite(ID_ActualBaudrate_0, &value);
+}
+
+
+int getStatus_ActualBaudrate_0()
+{
+return getStatus(ID_ActualBaudrate_0);
+}
+
+
+int doWrite_ActualAddress_0(u_int16_t value)
+{
+return doWrite(ID_ActualAddress_0,  &value);
+}
+
+
+int addWrite_ActualAddress_0(u_int16_t value)
+{
+return addWrite(ID_ActualAddress_0, &value);
+}
+
+
+int getStatus_ActualAddress_0()
+{
+return getStatus(ID_ActualAddress_0);
+}
+
+
+int doWrite_LifeTime_0(u_int16_t value)
+{
+return doWrite(ID_LifeTime_0,  &value);
+}
+
+
+int addWrite_LifeTime_0(u_int16_t value)
+{
+return addWrite(ID_LifeTime_0, &value);
+}
+
+
+int getStatus_LifeTime_0()
+{
+return getStatus(ID_LifeTime_0);
+}
+
+
+int doWrite_FutureBaudrate_0(u_int16_t value)
+{
+return doWrite(ID_FutureBaudrate_0,  &value);
+}
+
+
+int addWrite_FutureBaudrate_0(u_int16_t value)
+{
+return addWrite(ID_FutureBaudrate_0, &value);
+}
+
+
+int getStatus_FutureBaudrate_0()
+{
+return getStatus(ID_FutureBaudrate_0);
+}
+
+
+int doWrite_FutureAddress_0(u_int16_t value)
+{
+return doWrite(ID_FutureAddress_0,  &value);
+}
+
+
+int addWrite_FutureAddress_0(u_int16_t value)
+{
+return addWrite(ID_FutureAddress_0, &value);
+}
+
+
+int getStatus_FutureAddress_0()
+{
+return getStatus(ID_FutureAddress_0);
 }
 
 
@@ -3912,11 +4006,16 @@ return getStatus(ID_PLC_buzzerOn);
 int update_all(void)
 {
 int retval = 0;
-retval += readFromDb(ID_Actual_Baudrate, &Actual_Baudrate);
-retval += readFromDb(ID_Actual_Address, &Actual_Address);
-retval += readFromDb(ID_LifeTime, &LifeTime);
-retval += readFromDb(ID_FutureBaudrate, &FutureBaudrate);
-retval += readFromDb(ID_FutureAddress, &FutureAddress);
+retval += readFromDb(ID_ActualBaudrate_3, &ActualBaudrate_3);
+retval += readFromDb(ID_ActualAddress_3, &ActualAddress_3);
+retval += readFromDb(ID_LifeTime_3, &LifeTime_3);
+retval += readFromDb(ID_FutureBaudrate_3, &FutureBaudrate_3);
+retval += readFromDb(ID_FutureAddress_3, &FutureAddress_3);
+retval += readFromDb(ID_ActualBaudrate_0, &ActualBaudrate_0);
+retval += readFromDb(ID_ActualAddress_0, &ActualAddress_0);
+retval += readFromDb(ID_LifeTime_0, &LifeTime_0);
+retval += readFromDb(ID_FutureBaudrate_0, &FutureBaudrate_0);
+retval += readFromDb(ID_FutureAddress_0, &FutureAddress_0);
 retval += readFromDb(ID_RTU0_TYPE_PORT, &RTU0_TYPE_PORT);
 retval += readFromDb(ID_RTU0_BAUDRATE, &RTU0_BAUDRATE);
 retval += readFromDb(ID_RTU0_STATUS, &RTU0_STATUS);

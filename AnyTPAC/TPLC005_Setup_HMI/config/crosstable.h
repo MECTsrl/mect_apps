@@ -15,36 +15,67 @@ DWORD_BIT <-> int
 extern "C" {
 #endif
 #include <sys/types.h>
+#include "cross_table_utility.h"
  
-#define ID_Actual_Baudrate 193
-extern u_int16_t Actual_Baudrate;
-int doWrite_Actual_Baudrate(u_int16_t value);
-int addWrite_Actual_Baudrate(u_int16_t value);
-int getStatus_Actual_Baudrate();
+#define ID_ActualBaudrate_3 193
+extern u_int16_t ActualBaudrate_3;
+int doWrite_ActualBaudrate_3(u_int16_t value);
+int addWrite_ActualBaudrate_3(u_int16_t value);
+int getStatus_ActualBaudrate_3();
  
-#define ID_Actual_Address 194
-extern u_int16_t Actual_Address;
-int doWrite_Actual_Address(u_int16_t value);
-int addWrite_Actual_Address(u_int16_t value);
-int getStatus_Actual_Address();
+#define ID_ActualAddress_3 194
+extern u_int16_t ActualAddress_3;
+int doWrite_ActualAddress_3(u_int16_t value);
+int addWrite_ActualAddress_3(u_int16_t value);
+int getStatus_ActualAddress_3();
  
-#define ID_LifeTime 195
-extern u_int16_t LifeTime;
-int doWrite_LifeTime(u_int16_t value);
-int addWrite_LifeTime(u_int16_t value);
-int getStatus_LifeTime();
+#define ID_LifeTime_3 195
+extern u_int16_t LifeTime_3;
+int doWrite_LifeTime_3(u_int16_t value);
+int addWrite_LifeTime_3(u_int16_t value);
+int getStatus_LifeTime_3();
  
-#define ID_FutureBaudrate 196
-extern u_int16_t FutureBaudrate;
-int doWrite_FutureBaudrate(u_int16_t value);
-int addWrite_FutureBaudrate(u_int16_t value);
-int getStatus_FutureBaudrate();
+#define ID_FutureBaudrate_3 196
+extern u_int16_t FutureBaudrate_3;
+int doWrite_FutureBaudrate_3(u_int16_t value);
+int addWrite_FutureBaudrate_3(u_int16_t value);
+int getStatus_FutureBaudrate_3();
  
-#define ID_FutureAddress 197
-extern u_int16_t FutureAddress;
-int doWrite_FutureAddress(u_int16_t value);
-int addWrite_FutureAddress(u_int16_t value);
-int getStatus_FutureAddress();
+#define ID_FutureAddress_3 197
+extern u_int16_t FutureAddress_3;
+int doWrite_FutureAddress_3(u_int16_t value);
+int addWrite_FutureAddress_3(u_int16_t value);
+int getStatus_FutureAddress_3();
+ 
+#define ID_ActualBaudrate_0 200
+extern u_int16_t ActualBaudrate_0;
+int doWrite_ActualBaudrate_0(u_int16_t value);
+int addWrite_ActualBaudrate_0(u_int16_t value);
+int getStatus_ActualBaudrate_0();
+ 
+#define ID_ActualAddress_0 201
+extern u_int16_t ActualAddress_0;
+int doWrite_ActualAddress_0(u_int16_t value);
+int addWrite_ActualAddress_0(u_int16_t value);
+int getStatus_ActualAddress_0();
+ 
+#define ID_LifeTime_0 202
+extern u_int16_t LifeTime_0;
+int doWrite_LifeTime_0(u_int16_t value);
+int addWrite_LifeTime_0(u_int16_t value);
+int getStatus_LifeTime_0();
+ 
+#define ID_FutureBaudrate_0 203
+extern u_int16_t FutureBaudrate_0;
+int doWrite_FutureBaudrate_0(u_int16_t value);
+int addWrite_FutureBaudrate_0(u_int16_t value);
+int getStatus_FutureBaudrate_0();
+ 
+#define ID_FutureAddress_0 204
+extern u_int16_t FutureAddress_0;
+int doWrite_FutureAddress_0(u_int16_t value);
+int addWrite_FutureAddress_0(u_int16_t value);
+int getStatus_FutureAddress_0();
  
 #define ID_RTU0_TYPE_PORT 5000
 extern u_int32_t RTU0_TYPE_PORT;

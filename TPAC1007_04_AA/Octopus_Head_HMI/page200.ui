@@ -43,7 +43,7 @@ background-color: rgb(255, 255, 127);
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>10</pointsize>
+     <pointsize>7</pointsize>
     </font>
    </property>
    <property name="styleSheet">
@@ -94,7 +94,7 @@ background-color: rgb(255, 255, 127);
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>10</pointsize>
+     <pointsize>7</pointsize>
      <weight>50</weight>
      <bold>false</bold>
     </font>
@@ -219,7 +219,7 @@ background-color: rgb(255, 255, 127);
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>10</pointsize>
+     <pointsize>7</pointsize>
      <weight>75</weight>
      <bold>true</bold>
     </font>
@@ -246,7 +246,7 @@ background-color: rgb(255, 255, 127);
    <property name="font">
     <font>
      <family>DejaVu Sans Mono</family>
-     <pointsize>12</pointsize>
+     <pointsize>7</pointsize>
     </font>
    </property>
    <property name="text">
@@ -309,6 +309,7 @@ background-color: rgb(255, 255, 127);
    <property name="font">
     <font>
      <family>DejaVu Sans Mono</family>
+     <pointsize>7</pointsize>
     </font>
    </property>
    <property name="toolTip">
@@ -343,6 +344,7 @@ background-color: rgb(255, 255, 127);
    <property name="font">
     <font>
      <family>DejaVu Sans Mono</family>
+     <pointsize>7</pointsize>
     </font>
    </property>
    <property name="toolTip">
@@ -416,7 +418,7 @@ background-color: rgb(255, 255, 127);
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>12</pointsize>
+     <pointsize>7</pointsize>
     </font>
    </property>
    <property name="styleSheet">
@@ -477,7 +479,7 @@ background-color: rgb(255, 255, 127);
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>10</pointsize>
+     <pointsize>7</pointsize>
      <weight>50</weight>
      <bold>false</bold>
     </font>
@@ -581,7 +583,7 @@ background-color: rgb(255, 255, 127);
    <property name="font">
     <font>
      <family>DejaVu Sans Mono</family>
-     <pointsize>9</pointsize>
+     <pointsize>7</pointsize>
     </font>
    </property>
    <property name="toolTip">
@@ -673,6 +675,11 @@ background-color: rgb(255, 255, 127);
      <height>34</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
+   </property>
    <property name="checkable">
     <bool>true</bool>
    </property>
@@ -732,7 +739,7 @@ background-color: rgb(255, 255, 127);
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>12</pointsize>
+     <pointsize>7</pointsize>
     </font>
    </property>
    <property name="styleSheet">
@@ -829,7 +836,7 @@ background-color: rgb(255, 255, 127);
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>13</pointsize>
+     <pointsize>7</pointsize>
     </font>
    </property>
    <property name="styleSheet">
@@ -854,7 +861,7 @@ background-color: rgb(255, 255, 127);
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>13</pointsize>
+     <pointsize>7</pointsize>
     </font>
    </property>
    <property name="styleSheet">
@@ -911,6 +918,11 @@ background-color: rgb(255, 255, 127);
      <width>31</width>
      <height>35</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
    </property>
    <property name="text">
     <string>3.33</string>
@@ -1008,7 +1020,7 @@ background-color: rgb(255, 255, 127);
    <property name="font">
     <font>
      <family>DejaVu Sans Mono</family>
-     <pointsize>9</pointsize>
+     <pointsize>7</pointsize>
     </font>
    </property>
    <property name="toolTip">
@@ -1100,6 +1112,11 @@ background-color: rgb(255, 255, 127);
      <height>34</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
+   </property>
    <property name="checkable">
     <bool>true</bool>
    </property>
@@ -1155,6 +1172,11 @@ background-color: rgb(255, 255, 127);
      <width>121</width>
      <height>35</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
    </property>
    <property name="text">
     <string>5.00</string>
@@ -1215,6 +1237,11 @@ background-color: rgb(255, 255, 127);
      <width>31</width>
      <height>34</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
    </property>
    <property name="checkable">
     <bool>true</bool>
@@ -1311,7 +1338,7 @@ background-color: rgb(255, 255, 127);
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>13</pointsize>
+     <pointsize>7</pointsize>
     </font>
    </property>
    <property name="styleSheet">
@@ -1336,7 +1363,7 @@ background-color: rgb(255, 255, 127);
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>12</pointsize>
+     <pointsize>7</pointsize>
     </font>
    </property>
    <property name="styleSheet">
@@ -1457,6 +1484,11 @@ background-color: rgb(255, 255, 127);
      <height>35</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
+   </property>
    <property name="text">
     <string>3.33</string>
    </property>
@@ -1517,7 +1549,7 @@ background-color: rgb(255, 255, 127);
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>12</pointsize>
+     <pointsize>7</pointsize>
     </font>
    </property>
    <property name="styleSheet">
@@ -1574,6 +1606,11 @@ background-color: rgb(255, 255, 127);
      <width>31</width>
      <height>34</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
    </property>
    <property name="checkable">
     <bool>true</bool>
@@ -1634,7 +1671,7 @@ background-color: rgb(255, 255, 127);
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>10</pointsize>
+     <pointsize>7</pointsize>
     </font>
    </property>
    <property name="styleSheet">
@@ -1655,6 +1692,11 @@ background-color: rgb(255, 255, 127);
      <width>31</width>
      <height>35</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
    </property>
    <property name="text">
     <string>3.33</string>
@@ -1755,7 +1797,7 @@ background-color: rgb(255, 255, 127);
    <property name="font">
     <font>
      <family>DejaVu Sans Mono</family>
-     <pointsize>10</pointsize>
+     <pointsize>7</pointsize>
      <weight>75</weight>
      <bold>true</bold>
     </font>
@@ -1859,7 +1901,7 @@ background-color: rgb(255, 255, 127);
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>13</pointsize>
+     <pointsize>7</pointsize>
     </font>
    </property>
    <property name="styleSheet">
@@ -1880,6 +1922,11 @@ background-color: rgb(255, 255, 127);
      <width>31</width>
      <height>34</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
    </property>
    <property name="checkable">
     <bool>true</bool>
@@ -1940,7 +1987,7 @@ background-color: rgb(255, 255, 127);
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>13</pointsize>
+     <pointsize>7</pointsize>
     </font>
    </property>
    <property name="styleSheet">
@@ -1961,6 +2008,11 @@ background-color: rgb(255, 255, 127);
      <width>31</width>
      <height>34</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
    </property>
    <property name="checkable">
     <bool>true</bool>
@@ -2093,6 +2145,7 @@ background-color: rgb(255, 255, 127);
    <property name="font">
     <font>
      <family>DejaVu Sans Mono</family>
+     <pointsize>7</pointsize>
     </font>
    </property>
    <property name="text">
@@ -2158,7 +2211,7 @@ background-color: rgb(255, 255, 127);
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>13</pointsize>
+     <pointsize>7</pointsize>
     </font>
    </property>
    <property name="styleSheet">
@@ -2183,7 +2236,7 @@ background-color: rgb(255, 255, 127);
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>13</pointsize>
+     <pointsize>7</pointsize>
     </font>
    </property>
    <property name="styleSheet">
@@ -2204,6 +2257,11 @@ background-color: rgb(255, 255, 127);
      <width>31</width>
      <height>35</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
    </property>
    <property name="text">
     <string>3.33</string>
@@ -2301,7 +2359,7 @@ background-color: rgb(255, 255, 127);
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>13</pointsize>
+     <pointsize>7</pointsize>
     </font>
    </property>
    <property name="styleSheet">
@@ -2322,6 +2380,11 @@ background-color: rgb(255, 255, 127);
      <width>31</width>
      <height>35</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
    </property>
    <property name="text">
     <string>3.33</string>
@@ -2379,6 +2442,11 @@ background-color: rgb(255, 255, 127);
      <width>31</width>
      <height>34</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
    </property>
    <property name="checkable">
     <bool>true</bool>
@@ -2544,6 +2612,11 @@ background-color: rgb(255, 255, 127);
      <height>34</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
+   </property>
    <property name="checkable">
     <bool>true</bool>
    </property>
@@ -2599,6 +2672,11 @@ background-color: rgb(255, 255, 127);
      <width>31</width>
      <height>35</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
    </property>
    <property name="text">
     <string>3.33</string>
@@ -2660,7 +2738,7 @@ background-color: rgb(255, 255, 127);
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>13</pointsize>
+     <pointsize>7</pointsize>
     </font>
    </property>
    <property name="styleSheet">
@@ -2685,7 +2763,7 @@ background-color: rgb(255, 255, 127);
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>13</pointsize>
+     <pointsize>7</pointsize>
     </font>
    </property>
    <property name="styleSheet">
@@ -2743,6 +2821,11 @@ background-color: rgb(255, 255, 127);
      <height>34</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
+   </property>
    <property name="checkable">
     <bool>true</bool>
    </property>
@@ -2798,6 +2881,11 @@ background-color: rgb(255, 255, 127);
      <width>31</width>
      <height>34</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
    </property>
    <property name="checkable">
     <bool>true</bool>
@@ -2861,7 +2949,7 @@ background-color: rgb(255, 255, 127);
    <property name="font">
     <font>
      <family>DejaVu Sans Mono</family>
-     <pointsize>10</pointsize>
+     <pointsize>7</pointsize>
      <weight>75</weight>
      <bold>true</bold>
     </font>
@@ -2926,6 +3014,11 @@ background-color: rgb(255, 255, 127);
      <height>35</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
+   </property>
    <property name="text">
     <string>3.33</string>
    </property>
@@ -2986,7 +3079,7 @@ background-color: rgb(255, 255, 127);
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>13</pointsize>
+     <pointsize>7</pointsize>
     </font>
    </property>
    <property name="styleSheet">
@@ -3044,6 +3137,11 @@ background-color: rgb(255, 255, 127);
      <height>35</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
+   </property>
    <property name="text">
     <string>3.33</string>
    </property>
@@ -3100,6 +3198,11 @@ background-color: rgb(255, 255, 127);
      <width>31</width>
      <height>34</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
    </property>
    <property name="checkable">
     <bool>true</bool>
@@ -3160,7 +3263,7 @@ background-color: rgb(255, 255, 127);
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>13</pointsize>
+     <pointsize>7</pointsize>
     </font>
    </property>
    <property name="styleSheet">
@@ -3254,6 +3357,11 @@ background-color: rgb(255, 255, 127);
      <height>34</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
+   </property>
    <property name="checkable">
     <bool>true</bool>
    </property>
@@ -3326,7 +3434,7 @@ background-color: rgb(255, 255, 127);
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>10</pointsize>
+     <pointsize>7</pointsize>
     </font>
    </property>
    <property name="toolTip">
@@ -3385,7 +3493,7 @@ background-color: rgb(255, 255, 127);
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>10</pointsize>
+     <pointsize>7</pointsize>
     </font>
    </property>
    <property name="text">
@@ -3444,6 +3552,7 @@ ON</string>
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
+     <pointsize>7</pointsize>
     </font>
    </property>
    <property name="toolTip">
@@ -3499,7 +3608,7 @@ ON</string>
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>10</pointsize>
+     <pointsize>7</pointsize>
     </font>
    </property>
    <property name="toolTip">
@@ -3558,7 +3667,7 @@ ON</string>
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>9</pointsize>
+     <pointsize>7</pointsize>
     </font>
    </property>
    <property name="checkable">
@@ -3666,7 +3775,7 @@ ON</string>
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>9</pointsize>
+     <pointsize>7</pointsize>
     </font>
    </property>
    <property name="checkable">
@@ -3776,6 +3885,7 @@ ON</string>
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
+     <pointsize>7</pointsize>
     </font>
    </property>
    <property name="toolTip">
@@ -3824,6 +3934,11 @@ ON</string>
      <width>120</width>
      <height>34</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
    </property>
    <property name="toolTip">
     <string/>
@@ -3874,6 +3989,11 @@ ON</string>
      <width>120</width>
      <height>70</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
    </property>
    <property name="toolTip">
     <string/>

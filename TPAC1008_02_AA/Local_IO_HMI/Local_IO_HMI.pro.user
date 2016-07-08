@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 2.7.84, 2016-06-14T11:52:23. -->
+<!-- Written by QtCreator 2.7.84, 2016-07-08T12:29:14. -->
 <qtcreator>
  <data>
   <variable>ProjectExplorer.Project.ActiveTarget</variable>
@@ -209,15 +209,15 @@
       <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
       <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">RemoteLinux.DirectUploadStep</value>
       <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedFiles">
-       <value type="QString">C:/MectApps/TPAC1008_02_AA/Local_IO_HMI/config/trend1.csv</value>
-       <value type="QString">C:/MectApps/TPAC1008_02_AA/Local_IO_HMI/config/network0.cmg</value>
-       <value type="QString">C:/MectApps/TPAC1008_02_AA/Local_IO_HMI/config/system.ini</value>
        <value type="QString">C:/MectApps/TPAC1008_02_AA/Local_IO_HMI/config/Crosstable.csv</value>
-       <value type="QString">C:/MectApps/TPAC1008_02_AA/Local_IO_HMI/config/splash.png</value>
-       <value type="QString">C:/MectApps/TPAC1008_02_AA/Local_IO_HMI/hmi</value>
-       <value type="QString">C:/MectApps/TPAC1008_02_AA/Local_IO_HMI/config/iomap1.cmg</value>
-       <value type="QString">C:/MectApps/TPAC1008_02_AA/Local_IO_HMI/config/iomap0.cmg</value>
        <value type="QString">C:/MectApps/TPAC1008_02_AA/Local_IO_HMI/config/network1.cmg</value>
+       <value type="QString">C:/MectApps/TPAC1008_02_AA/Local_IO_HMI/config/trend1.csv</value>
+       <value type="QString">C:/MectApps/TPAC1008_02_AA/Local_IO_HMI/config/iomap0.cmg</value>
+       <value type="QString">C:/MectApps/TPAC1008_02_AA/Local_IO_HMI/config/splash.png</value>
+       <value type="QString">C:/MectApps/TPAC1008_02_AA/Local_IO_HMI/config/network0.cmg</value>
+       <value type="QString">C:/MectApps/TPAC1008_02_AA/Local_IO_HMI/hmi</value>
+       <value type="QString">C:/MectApps/TPAC1008_02_AA/Local_IO_HMI/config/system.ini</value>
+       <value type="QString">C:/MectApps/TPAC1008_02_AA/Local_IO_HMI/config/iomap1.cmg</value>
       </valuelist>
       <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedHosts">
        <value type="QString">192.168.5.211</value>
@@ -231,13 +231,13 @@
        <value type="QString">192.168.5.211</value>
       </valuelist>
       <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedRemotePaths">
+       <value type="QString">/local/etc/sysconfig</value>
+       <value type="QString">/local/etc/sysconfig</value>
        <value type="QString">/local/data/customtrend</value>
        <value type="QString">/local/etc/sysconfig</value>
-       <value type="QString">/local/etc/sysconfig</value>
-       <value type="QString">/local/etc/sysconfig</value>
        <value type="QString">/local/etc/sysconfig/img</value>
-       <value type="QString">/local/root</value>
        <value type="QString">/local/etc/sysconfig</value>
+       <value type="QString">/local/root</value>
        <value type="QString">/local/etc/sysconfig</value>
        <value type="QString">/local/etc/sysconfig</value>
       </valuelist>
@@ -258,8 +258,8 @@
        <value type="QDateTime">2016-05-20T23:24:58</value>
        <value type="QDateTime">2016-05-20T23:24:58</value>
        <value type="QDateTime">2016-05-20T23:24:58</value>
-       <value type="QDateTime">2016-05-20T23:24:59</value>
        <value type="QDateTime">2016-05-20T23:24:58</value>
+       <value type="QDateTime">2016-05-20T23:24:59</value>
        <value type="QDateTime">2016-05-20T23:24:58</value>
        <value type="QDateTime">2016-05-20T23:24:58</value>
       </valuelist>

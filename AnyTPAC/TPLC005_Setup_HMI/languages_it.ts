@@ -4,201 +4,171 @@
 <context>
     <name>page100</name>
     <message>
-        <location filename="page100.ui" line="26"/>
+        <location filename="page100.ui" line="32"/>
         <source>page100</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="636"/>
-        <source>ATCMbutton widget</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page100.ui" line="639"/>
-        <location filename="page100.ui" line="654"/>
-        <source>menu</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page100.ui" line="651"/>
-        <source>AnyTPAC</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page100.ui" line="309"/>
-        <location filename="page100.ui" line="315"/>
-        <source>Actual_Baudrate</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page100.ui" line="46"/>
-        <location filename="page100.ui" line="95"/>
-        <location filename="page100.ui" line="150"/>
-        <location filename="page100.ui" line="205"/>
-        <location filename="page100.ui" line="257"/>
-        <location filename="page100.ui" line="312"/>
-        <location filename="page100.ui" line="349"/>
-        <location filename="page100.ui" line="383"/>
-        <location filename="page100.ui" line="417"/>
-        <location filename="page100.ui" line="451"/>
-        <location filename="page100.ui" line="485"/>
-        <location filename="page100.ui" line="519"/>
-        <location filename="page100.ui" line="553"/>
-        <location filename="page100.ui" line="587"/>
-        <source>ATCMlabel widget</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page100.ui" line="318"/>
-        <source>Actual_Baudrate </source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page100.ui" line="55"/>
-        <location filename="page100.ui" line="58"/>
-        <location filename="page100.ui" line="107"/>
-        <location filename="page100.ui" line="110"/>
-        <location filename="page100.ui" line="165"/>
-        <location filename="page100.ui" line="168"/>
-        <location filename="page100.ui" line="217"/>
-        <location filename="page100.ui" line="220"/>
-        <location filename="page100.ui" line="269"/>
-        <location filename="page100.ui" line="272"/>
-        <location filename="page100.ui" line="324"/>
-        <location filename="page100.ui" line="327"/>
-        <location filename="page100.ui" line="358"/>
-        <location filename="page100.ui" line="361"/>
-        <location filename="page100.ui" line="392"/>
-        <location filename="page100.ui" line="395"/>
-        <location filename="page100.ui" line="426"/>
-        <location filename="page100.ui" line="429"/>
-        <location filename="page100.ui" line="460"/>
-        <location filename="page100.ui" line="463"/>
-        <location filename="page100.ui" line="494"/>
-        <location filename="page100.ui" line="497"/>
-        <location filename="page100.ui" line="528"/>
-        <location filename="page100.ui" line="531"/>
-        <location filename="page100.ui" line="562"/>
-        <location filename="page100.ui" line="565"/>
-        <location filename="page100.ui" line="596"/>
-        <location filename="page100.ui" line="599"/>
-        <source>0</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page100.ui" line="202"/>
-        <location filename="page100.ui" line="208"/>
-        <source>Actual_Address</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page100.ui" line="211"/>
-        <source>Actual_Address </source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page100.ui" line="43"/>
         <location filename="page100.ui" line="49"/>
-        <source>RTU3_BAUDRATE</source>
+        <source>RTU3</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="147"/>
-        <location filename="page100.ui" line="153"/>
-        <source>LifeTime</source>
+        <location filename="page100.ui" line="83"/>
+        <location filename="page100.ui" line="316"/>
+        <location filename="page100.ui" line="368"/>
+        <location filename="page100.ui" line="478"/>
+        <source>Address </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="156"/>
-        <source>LifeTime </source>
+        <location filename="page100.ui" line="120"/>
+        <source>Actual</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="159"/>
-        <source>s</source>
+        <location filename="page100.ui" line="154"/>
+        <location filename="page100.ui" line="206"/>
+        <location filename="page100.ui" line="530"/>
+        <location filename="page100.ui" line="650"/>
+        <source>Baudrate </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="254"/>
-        <location filename="page100.ui" line="260"/>
-        <source>FutureBaudrate</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page100.ui" line="263"/>
-        <source>FutureBaudrate </source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page100.ui" line="346"/>
-        <location filename="page100.ui" line="352"/>
-        <source>RTU3_WRITE_QUEUE</source>
-        <oldsource>RTU0_WRITE_QUEUE</oldsource>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page100.ui" line="380"/>
-        <location filename="page100.ui" line="386"/>
-        <source>RTU3_READ_QUEUE</source>
-        <oldsource>RTU0_READ_QUEUE</oldsource>
+        <location filename="page100.ui" line="359"/>
+        <location filename="page100.ui" line="365"/>
+        <source>FutureAddress_3</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="page100.ui" line="414"/>
         <location filename="page100.ui" line="420"/>
-        <source>RTU3_READS</source>
-        <oldsource>RTU0_READS</oldsource>
+        <source>LifeTime_3</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="448"/>
-        <location filename="page100.ui" line="454"/>
-        <source>RTU3_WRITES</source>
-        <oldsource>RTU0_WRITES</oldsource>
+        <location filename="page100.ui" line="469"/>
+        <location filename="page100.ui" line="475"/>
+        <source>ActualAddress_3</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="482"/>
-        <location filename="page100.ui" line="488"/>
-        <source>RTU3_COMM_ERRORS</source>
-        <oldsource>RTU0_COMM_ERRORS</oldsource>
+        <location filename="page100.ui" line="521"/>
+        <location filename="page100.ui" line="527"/>
+        <source>FutureBaudrate_3</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="516"/>
-        <location filename="page100.ui" line="522"/>
-        <source>RTU3_TIMEOUTS</source>
-        <oldsource>RTU0_TIMEOUTS</oldsource>
+        <location filename="page100.ui" line="576"/>
+        <source>ATCMbutton widget</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="676"/>
-        <source>TPLC005 Setup</source>
+        <location filename="page100.ui" line="579"/>
+        <location filename="page100.ui" line="594"/>
+        <source>menu</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="550"/>
-        <location filename="page100.ui" line="556"/>
-        <source>RTU3_STATUS</source>
-        <oldsource>RTU0_STATUS</oldsource>
+        <location filename="page100.ui" line="684"/>
+        <source>Future</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="584"/>
-        <location filename="page100.ui" line="590"/>
-        <source>RTU3_TYPE_PORT</source>
-        <oldsource>RTU0_TYPE_PORT</oldsource>
+        <location filename="page100.ui" line="307"/>
+        <location filename="page100.ui" line="313"/>
+        <source>ActualAddress_0</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="page100.ui" line="74"/>
+        <location filename="page100.ui" line="80"/>
+        <source>FutureAddress_0</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page100.ui" line="197"/>
+        <location filename="page100.ui" line="203"/>
+        <source>FutureBaudrate_0</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page100.ui" line="641"/>
+        <location filename="page100.ui" line="647"/>
+        <source>ActualBaudrate_0</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page100.ui" line="77"/>
+        <location filename="page100.ui" line="148"/>
+        <location filename="page100.ui" line="200"/>
+        <location filename="page100.ui" line="255"/>
+        <location filename="page100.ui" line="310"/>
+        <location filename="page100.ui" line="362"/>
+        <location filename="page100.ui" line="417"/>
+        <location filename="page100.ui" line="472"/>
+        <location filename="page100.ui" line="524"/>
+        <location filename="page100.ui" line="644"/>
+        <source>ATCMlabel widget</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page100.ui" line="616"/>
+        <source>RTU0</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page100.ui" line="145"/>
+        <location filename="page100.ui" line="151"/>
+        <source>ActualBaudrate_3</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page100.ui" line="89"/>
         <location filename="page100.ui" line="92"/>
-        <location filename="page100.ui" line="98"/>
-        <source>FutureAddress</source>
+        <location filename="page100.ui" line="160"/>
+        <location filename="page100.ui" line="163"/>
+        <location filename="page100.ui" line="212"/>
+        <location filename="page100.ui" line="215"/>
+        <location filename="page100.ui" line="270"/>
+        <location filename="page100.ui" line="273"/>
+        <location filename="page100.ui" line="322"/>
+        <location filename="page100.ui" line="325"/>
+        <location filename="page100.ui" line="374"/>
+        <location filename="page100.ui" line="377"/>
+        <location filename="page100.ui" line="432"/>
+        <location filename="page100.ui" line="435"/>
+        <location filename="page100.ui" line="484"/>
+        <location filename="page100.ui" line="487"/>
+        <location filename="page100.ui" line="536"/>
+        <location filename="page100.ui" line="539"/>
+        <location filename="page100.ui" line="656"/>
+        <location filename="page100.ui" line="659"/>
+        <source>0</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="101"/>
-        <source>FutureAddress </source>
+        <location filename="page100.ui" line="261"/>
+        <location filename="page100.ui" line="423"/>
+        <source>LifeTime </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page100.ui" line="264"/>
+        <location filename="page100.ui" line="426"/>
+        <source>s</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page100.ui" line="252"/>
+        <location filename="page100.ui" line="258"/>
+        <source>LifeTime_0</source>
+        <oldsource>RTU3_TIMEOUTS</oldsource>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page100.ui" line="591"/>
+        <source>TPLC005 Setup</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

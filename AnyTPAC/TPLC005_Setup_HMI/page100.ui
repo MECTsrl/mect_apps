@@ -10,6 +10,12 @@
     <height>240</height>
    </rect>
   </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
   <property name="minimumSize">
    <size>
     <width>320</width>
@@ -18,8 +24,8 @@
   </property>
   <property name="maximumSize">
    <size>
-    <width>320</width>
-    <height>240</height>
+    <width>800</width>
+    <height>480</height>
    </size>
   </property>
   <property name="windowTitle">
@@ -31,48 +37,24 @@
 }</string>
   </property>
   <layout class="QGridLayout" name="gridLayout">
-   <item row="4" column="1" colspan="2">
-    <widget class="ATCMlabel" name="atcmLabel_6">
-     <property name="sizePolicy">
-      <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
-       <horstretch>0</horstretch>
-       <verstretch>0</verstretch>
-      </sizepolicy>
+   <item row="3" column="0">
+    <widget class="QLabel" name="label">
+     <property name="font">
+      <font>
+       <family>DejaVu Sans</family>
+       <pointsize>13</pointsize>
+      </font>
      </property>
-     <property name="toolTip">
-      <string>RTU3_BAUDRATE</string>
+     <property name="text">
+      <string>RTU3</string>
      </property>
-     <property name="whatsThis">
-      <string>ATCMlabel widget</string>
-     </property>
-     <property name="variable">
-      <string>RTU3_BAUDRATE</string>
-     </property>
-     <property name="refresh">
-      <number>200</number>
-     </property>
-     <property name="max">
-      <string>0</string>
-     </property>
-     <property name="min">
-      <string>0</string>
-     </property>
-     <property name="viewStatus">
-      <bool>false</bool>
-     </property>
-     <property name="visibilityVar">
-      <string/>
-     </property>
-     <property name="borderWidth">
-      <number>1</number>
-     </property>
-     <property name="borderRadius">
-      <number>0</number>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
      </property>
     </widget>
    </item>
-   <item row="9" column="0">
-    <widget class="ATCMlabel" name="atcmLabel_5">
+   <item row="11" column="1">
+    <widget class="ATCMlabel" name="atcmLabel_6">
      <property name="sizePolicy">
       <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
        <horstretch>0</horstretch>
@@ -82,23 +64,23 @@
      <property name="font">
       <font>
        <family>DejaVu Sans</family>
-       <pointsize>13</pointsize>
+       <pointsize>9</pointsize>
       </font>
      </property>
      <property name="text">
       <string/>
      </property>
      <property name="toolTip">
-      <string>FutureAddress</string>
+      <string>FutureAddress_0</string>
      </property>
      <property name="whatsThis">
       <string>ATCMlabel widget</string>
      </property>
      <property name="variable">
-      <string>FutureAddress</string>
+      <string>FutureAddress_0</string>
      </property>
      <property name="prefix">
-      <string>FutureAddress </string>
+      <string>Address </string>
      </property>
      <property name="refresh">
       <number>200</number>
@@ -126,8 +108,24 @@
      </property>
     </widget>
    </item>
-   <item row="6" column="0">
-    <widget class="ATCMlabel" name="atcmLabel_3">
+   <item row="4" column="0" colspan="2">
+    <widget class="QLabel" name="label_3">
+     <property name="font">
+      <font>
+       <family>DejaVu Sans</family>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Actual</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="0">
+    <widget class="ATCMlabel" name="atcmLabel_8">
      <property name="sizePolicy">
       <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
        <horstretch>0</horstretch>
@@ -137,20 +135,127 @@
      <property name="font">
       <font>
        <family>DejaVu Sans</family>
-       <pointsize>13</pointsize>
+       <pointsize>9</pointsize>
       </font>
      </property>
      <property name="text">
       <string/>
      </property>
      <property name="toolTip">
-      <string>LifeTime</string>
+      <string>ActualBaudrate_3</string>
      </property>
      <property name="whatsThis">
       <string>ATCMlabel widget</string>
      </property>
      <property name="variable">
-      <string>LifeTime</string>
+      <string>ActualBaudrate_3</string>
+     </property>
+     <property name="prefix">
+      <string>Baudrate </string>
+     </property>
+     <property name="refresh">
+      <number>200</number>
+     </property>
+     <property name="max">
+      <string>0</string>
+     </property>
+     <property name="min">
+      <string>0</string>
+     </property>
+     <property name="viewStatus">
+      <bool>false</bool>
+     </property>
+     <property name="visibilityVar">
+      <string/>
+     </property>
+     <property name="borderWidth">
+      <number>1</number>
+     </property>
+     <property name="borderRadius">
+      <number>0</number>
+     </property>
+    </widget>
+   </item>
+   <item row="10" column="1">
+    <widget class="ATCMlabel" name="atcmLabel_10">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="font">
+      <font>
+       <family>DejaVu Sans</family>
+       <pointsize>9</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="toolTip">
+      <string>FutureBaudrate_0</string>
+     </property>
+     <property name="whatsThis">
+      <string>ATCMlabel widget</string>
+     </property>
+     <property name="variable">
+      <string>FutureBaudrate_0</string>
+     </property>
+     <property name="prefix">
+      <string>Baudrate </string>
+     </property>
+     <property name="refresh">
+      <number>200</number>
+     </property>
+     <property name="max">
+      <string>0</string>
+     </property>
+     <property name="min">
+      <string>0</string>
+     </property>
+     <property name="viewStatus">
+      <bool>false</bool>
+     </property>
+     <property name="visibilityVar">
+      <string/>
+     </property>
+     <property name="borderWidth">
+      <number>1</number>
+     </property>
+     <property name="borderRadius">
+      <number>0</number>
+     </property>
+     <property name="apparence">
+      <enum>QFrame::Raised</enum>
+     </property>
+    </widget>
+   </item>
+   <item row="8" column="1">
+    <widget class="ATCMlabel" name="atcmLabel_7">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="font">
+      <font>
+       <family>DejaVu Sans</family>
+       <pointsize>9</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="toolTip">
+      <string>LifeTime_0</string>
+     </property>
+     <property name="whatsThis">
+      <string>ATCMlabel widget</string>
+     </property>
+     <property name="variable">
+      <string>LifeTime_0</string>
      </property>
      <property name="prefix">
       <string>LifeTime </string>
@@ -181,8 +286,8 @@
      </property>
     </widget>
    </item>
-   <item row="5" column="0">
-    <widget class="ATCMlabel" name="atcmLabel_2">
+   <item row="7" column="1">
+    <widget class="ATCMlabel" name="atcmLabel_9">
      <property name="sizePolicy">
       <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
        <horstretch>0</horstretch>
@@ -192,23 +297,23 @@
      <property name="font">
       <font>
        <family>DejaVu Sans</family>
-       <pointsize>13</pointsize>
+       <pointsize>9</pointsize>
       </font>
      </property>
      <property name="text">
       <string/>
      </property>
      <property name="toolTip">
-      <string>Actual_Address</string>
+      <string>ActualAddress_0</string>
      </property>
      <property name="whatsThis">
       <string>ATCMlabel widget</string>
      </property>
      <property name="variable">
-      <string>Actual_Address</string>
+      <string>ActualAddress_0</string>
      </property>
      <property name="prefix">
-      <string>Actual_Address </string>
+      <string>Address </string>
      </property>
      <property name="refresh">
       <number>200</number>
@@ -233,8 +338,8 @@
      </property>
     </widget>
    </item>
-   <item row="8" column="0">
-    <widget class="ATCMlabel" name="atcmLabel_4">
+   <item row="11" column="0">
+    <widget class="ATCMlabel" name="atcmLabel_5">
      <property name="sizePolicy">
       <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
        <horstretch>0</horstretch>
@@ -244,23 +349,23 @@
      <property name="font">
       <font>
        <family>DejaVu Sans</family>
-       <pointsize>13</pointsize>
+       <pointsize>9</pointsize>
       </font>
      </property>
      <property name="text">
       <string/>
      </property>
      <property name="toolTip">
-      <string>FutureBaudrate</string>
+      <string>FutureAddress_3</string>
      </property>
      <property name="whatsThis">
       <string>ATCMlabel widget</string>
      </property>
      <property name="variable">
-      <string>FutureBaudrate</string>
+      <string>FutureAddress_3</string>
      </property>
      <property name="prefix">
-      <string>FutureBaudrate </string>
+      <string>Address </string>
      </property>
      <property name="refresh">
       <number>200</number>
@@ -288,8 +393,8 @@
      </property>
     </widget>
    </item>
-   <item row="4" column="0">
-    <widget class="ATCMlabel" name="atcmLabel">
+   <item row="8" column="0">
+    <widget class="ATCMlabel" name="atcmLabel_3">
      <property name="sizePolicy">
       <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
        <horstretch>0</horstretch>
@@ -299,23 +404,26 @@
      <property name="font">
       <font>
        <family>DejaVu Sans</family>
-       <pointsize>13</pointsize>
+       <pointsize>9</pointsize>
       </font>
      </property>
      <property name="text">
       <string/>
      </property>
      <property name="toolTip">
-      <string>Actual_Baudrate</string>
+      <string>LifeTime_3</string>
      </property>
      <property name="whatsThis">
       <string>ATCMlabel widget</string>
      </property>
      <property name="variable">
-      <string>Actual_Baudrate</string>
+      <string>LifeTime_3</string>
      </property>
      <property name="prefix">
-      <string>Actual_Baudrate </string>
+      <string>LifeTime </string>
+     </property>
+     <property name="suffix">
+      <string>s</string>
      </property>
      <property name="refresh">
       <number>200</number>
@@ -340,16 +448,34 @@
      </property>
     </widget>
    </item>
-   <item row="6" column="2">
-    <widget class="ATCMlabel" name="atcmLabel_13">
+   <item row="7" column="0">
+    <widget class="ATCMlabel" name="atcmLabel_2">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="font">
+      <font>
+       <family>DejaVu Sans</family>
+       <pointsize>9</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
      <property name="toolTip">
-      <string>RTU3_WRITE_QUEUE</string>
+      <string>ActualAddress_3</string>
      </property>
      <property name="whatsThis">
       <string>ATCMlabel widget</string>
      </property>
      <property name="variable">
-      <string>RTU3_WRITE_QUEUE</string>
+      <string>ActualAddress_3</string>
+     </property>
+     <property name="prefix">
+      <string>Address </string>
      </property>
      <property name="refresh">
       <number>200</number>
@@ -374,16 +500,34 @@
      </property>
     </widget>
    </item>
-   <item row="6" column="1">
-    <widget class="ATCMlabel" name="atcmLabel_12">
+   <item row="10" column="0">
+    <widget class="ATCMlabel" name="atcmLabel_4">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="font">
+      <font>
+       <family>DejaVu Sans</family>
+       <pointsize>9</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
      <property name="toolTip">
-      <string>RTU3_READ_QUEUE</string>
+      <string>FutureBaudrate_3</string>
      </property>
      <property name="whatsThis">
       <string>ATCMlabel widget</string>
      </property>
      <property name="variable">
-      <string>RTU3_READ_QUEUE</string>
+      <string>FutureBaudrate_3</string>
+     </property>
+     <property name="prefix">
+      <string>Baudrate </string>
      </property>
      <property name="refresh">
       <number>200</number>
@@ -406,212 +550,8 @@
      <property name="borderRadius">
       <number>0</number>
      </property>
-    </widget>
-   </item>
-   <item row="8" column="1">
-    <widget class="ATCMlabel" name="atcmLabel_8">
-     <property name="toolTip">
-      <string>RTU3_READS</string>
-     </property>
-     <property name="whatsThis">
-      <string>ATCMlabel widget</string>
-     </property>
-     <property name="variable">
-      <string>RTU3_READS</string>
-     </property>
-     <property name="refresh">
-      <number>200</number>
-     </property>
-     <property name="max">
-      <string>0</string>
-     </property>
-     <property name="min">
-      <string>0</string>
-     </property>
-     <property name="viewStatus">
-      <bool>false</bool>
-     </property>
-     <property name="visibilityVar">
-      <string/>
-     </property>
-     <property name="borderWidth">
-      <number>1</number>
-     </property>
-     <property name="borderRadius">
-      <number>0</number>
-     </property>
-    </widget>
-   </item>
-   <item row="8" column="2">
-    <widget class="ATCMlabel" name="atcmLabel_9">
-     <property name="toolTip">
-      <string>RTU3_WRITES</string>
-     </property>
-     <property name="whatsThis">
-      <string>ATCMlabel widget</string>
-     </property>
-     <property name="variable">
-      <string>RTU3_WRITES</string>
-     </property>
-     <property name="refresh">
-      <number>200</number>
-     </property>
-     <property name="max">
-      <string>0</string>
-     </property>
-     <property name="min">
-      <string>0</string>
-     </property>
-     <property name="viewStatus">
-      <bool>false</bool>
-     </property>
-     <property name="visibilityVar">
-      <string/>
-     </property>
-     <property name="borderWidth">
-      <number>1</number>
-     </property>
-     <property name="borderRadius">
-      <number>0</number>
-     </property>
-    </widget>
-   </item>
-   <item row="9" column="2">
-    <widget class="ATCMlabel" name="atcmLabel_11">
-     <property name="toolTip">
-      <string>RTU3_COMM_ERRORS</string>
-     </property>
-     <property name="whatsThis">
-      <string>ATCMlabel widget</string>
-     </property>
-     <property name="variable">
-      <string>RTU3_COMM_ERRORS</string>
-     </property>
-     <property name="refresh">
-      <number>200</number>
-     </property>
-     <property name="max">
-      <string>0</string>
-     </property>
-     <property name="min">
-      <string>0</string>
-     </property>
-     <property name="viewStatus">
-      <bool>false</bool>
-     </property>
-     <property name="visibilityVar">
-      <string/>
-     </property>
-     <property name="borderWidth">
-      <number>1</number>
-     </property>
-     <property name="borderRadius">
-      <number>0</number>
-     </property>
-    </widget>
-   </item>
-   <item row="9" column="1">
-    <widget class="ATCMlabel" name="atcmLabel_10">
-     <property name="toolTip">
-      <string>RTU3_TIMEOUTS</string>
-     </property>
-     <property name="whatsThis">
-      <string>ATCMlabel widget</string>
-     </property>
-     <property name="variable">
-      <string>RTU3_TIMEOUTS</string>
-     </property>
-     <property name="refresh">
-      <number>200</number>
-     </property>
-     <property name="max">
-      <string>0</string>
-     </property>
-     <property name="min">
-      <string>0</string>
-     </property>
-     <property name="viewStatus">
-      <bool>false</bool>
-     </property>
-     <property name="visibilityVar">
-      <string/>
-     </property>
-     <property name="borderWidth">
-      <number>1</number>
-     </property>
-     <property name="borderRadius">
-      <number>0</number>
-     </property>
-    </widget>
-   </item>
-   <item row="5" column="2">
-    <widget class="ATCMlabel" name="atcmLabel_7">
-     <property name="toolTip">
-      <string>RTU3_STATUS</string>
-     </property>
-     <property name="whatsThis">
-      <string>ATCMlabel widget</string>
-     </property>
-     <property name="variable">
-      <string>RTU3_STATUS</string>
-     </property>
-     <property name="refresh">
-      <number>200</number>
-     </property>
-     <property name="max">
-      <string>0</string>
-     </property>
-     <property name="min">
-      <string>0</string>
-     </property>
-     <property name="viewStatus">
-      <bool>false</bool>
-     </property>
-     <property name="visibilityVar">
-      <string/>
-     </property>
-     <property name="borderWidth">
-      <number>1</number>
-     </property>
-     <property name="borderRadius">
-      <number>0</number>
-     </property>
-    </widget>
-   </item>
-   <item row="5" column="1">
-    <widget class="ATCMlabel" name="atcmLabel_14">
-     <property name="toolTip">
-      <string>RTU3_TYPE_PORT</string>
-     </property>
-     <property name="whatsThis">
-      <string>ATCMlabel widget</string>
-     </property>
-     <property name="variable">
-      <string>RTU3_TYPE_PORT</string>
-     </property>
-     <property name="refresh">
-      <number>200</number>
-     </property>
-     <property name="max">
-      <string>0</string>
-     </property>
-     <property name="min">
-      <string>0</string>
-     </property>
-     <property name="viewStatus">
-      <bool>false</bool>
-     </property>
-     <property name="visibilityVar">
-      <string/>
-     </property>
-     <property name="borderWidth">
-      <number>1</number>
-     </property>
-     <property name="borderRadius">
-      <number>0</number>
-     </property>
-     <property name="format">
-      <enum>ATCMlabel::Hex</enum>
+     <property name="apparence">
+      <enum>QFrame::Raised</enum>
      </property>
     </widget>
    </item>
@@ -648,7 +588,7 @@
       <string/>
      </property>
      <property name="text">
-      <string>AnyTPAC</string>
+      <string>TPLC005 Setup</string>
      </property>
      <property name="pressText">
       <string>menu</string>
@@ -664,8 +604,8 @@
      </property>
     </widget>
    </item>
-   <item row="3" column="0" colspan="3">
-    <widget class="QLabel" name="label">
+   <item row="3" column="1">
+    <widget class="QLabel" name="label_2">
      <property name="font">
       <font>
        <family>DejaVu Sans</family>
@@ -673,7 +613,75 @@
       </font>
      </property>
      <property name="text">
-      <string>TPLC005 Setup</string>
+      <string>RTU0</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="1">
+    <widget class="ATCMlabel" name="atcmLabel">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="font">
+      <font>
+       <family>DejaVu Sans</family>
+       <pointsize>9</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="toolTip">
+      <string>ActualBaudrate_0</string>
+     </property>
+     <property name="whatsThis">
+      <string>ATCMlabel widget</string>
+     </property>
+     <property name="variable">
+      <string>ActualBaudrate_0</string>
+     </property>
+     <property name="prefix">
+      <string>Baudrate </string>
+     </property>
+     <property name="refresh">
+      <number>200</number>
+     </property>
+     <property name="max">
+      <string>0</string>
+     </property>
+     <property name="min">
+      <string>0</string>
+     </property>
+     <property name="viewStatus">
+      <bool>false</bool>
+     </property>
+     <property name="visibilityVar">
+      <string/>
+     </property>
+     <property name="borderWidth">
+      <number>1</number>
+     </property>
+     <property name="borderRadius">
+      <number>0</number>
+     </property>
+    </widget>
+   </item>
+   <item row="9" column="0" colspan="2">
+    <widget class="QLabel" name="label_4">
+     <property name="font">
+      <font>
+       <family>DejaVu Sans</family>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Future</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>
