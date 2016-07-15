@@ -138,8 +138,8 @@ TYPE = "AnyTPAC"
 MODEL = "<width>320</width><height>240</height>"
 
 equals(MODEL, "<width>320</width><height>240</height>") {
-    DEFINES+=WIDTH=800
-    DEFINES+=HEIGHT=480
+    DEFINES+=WIDTH=320
+    DEFINES+=HEIGHT=240
     DEFINES+=ROTATION=0
 }
 equals(MODEL, "<width>240</width><height>320</height>") {
