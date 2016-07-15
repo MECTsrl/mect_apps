@@ -197,9 +197,9 @@
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
-1;P;RTU_HEARTBEAT   ;UINT     ;0   ;RTU       ;               ;3   ;2   ;0   ;200 ;3   ;[RO]
-1;P;RTU_RTU_WR      ;WORD_BIT ;3   ;RTU       ;               ;3   ;2   ;1   ;200 ;3   ;[RW]
-1;P;RTU_RTU_RD      ;WORD_BIT ;4   ;RTU       ;               ;3   ;2   ;2   ;200 ;3   ;[RO]
+2;P;RTU_HEARTBEAT   ;UINT     ;0   ;RTU       ;               ;3   ;2   ;0   ;200 ;3   ;[RO]
+2;P;RTU_RTU_WR      ;WORD_BIT ;3   ;RTU       ;               ;3   ;2   ;1   ;200 ;3   ;[RW]
+2;P;RTU_RTU_RD      ;WORD_BIT ;4   ;RTU       ;               ;3   ;2   ;2   ;200 ;3   ;[RO]
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
 1;P;CAN_DigIn_1     ;BIT      ;0   ;CANOPEN   ;               ;1   ;1   ;1   ;205 ;16  ;[RO]

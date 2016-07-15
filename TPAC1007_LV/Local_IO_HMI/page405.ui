@@ -43,7 +43,7 @@ background-color: rgb(255, 255, 127);
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>10</pointsize>
+     <pointsize>8</pointsize>
     </font>
    </property>
    <property name="styleSheet">
@@ -68,7 +68,7 @@ background-color: rgb(255, 255, 127);
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>10</pointsize>
+     <pointsize>8</pointsize>
     </font>
    </property>
    <property name="styleSheet">
@@ -90,6 +90,11 @@ background-color: rgb(255, 255, 127);
      <height>272</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
    <property name="orientation">
     <enum>Qt::Vertical</enum>
    </property>
@@ -98,10 +103,15 @@ background-color: rgb(255, 255, 127);
    <property name="geometry">
     <rect>
      <x>1</x>
-     <y>104</y>
+     <y>102</y>
      <width>481</width>
      <height>3</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>8</pointsize>
+    </font>
    </property>
    <property name="orientation">
     <enum>Qt::Horizontal</enum>
@@ -116,6 +126,11 @@ background-color: rgb(255, 255, 127);
      <height>3</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
    <property name="orientation">
     <enum>Qt::Horizontal</enum>
    </property>
@@ -129,6 +144,11 @@ background-color: rgb(255, 255, 127);
      <height>3</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
    <property name="orientation">
     <enum>Qt::Horizontal</enum>
    </property>
@@ -141,6 +161,11 @@ background-color: rgb(255, 255, 127);
      <width>3</width>
      <height>272</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>8</pointsize>
+    </font>
    </property>
    <property name="orientation">
     <enum>Qt::Vertical</enum>
@@ -158,6 +183,7 @@ background-color: rgb(255, 255, 127);
    <property name="font">
     <font>
      <family>DejaVu Sans Mono</family>
+     <pointsize>8</pointsize>
     </font>
    </property>
    <property name="toolTip">
@@ -195,7 +221,7 @@ background-color: rgb(255, 255, 127);
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>10</pointsize>
+     <pointsize>8</pointsize>
      <weight>50</weight>
      <bold>false</bold>
     </font>
@@ -260,6 +286,11 @@ background-color: rgb(255, 255, 127);
      <height>3</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
    <property name="orientation">
     <enum>Qt::Horizontal</enum>
    </property>
@@ -272,6 +303,11 @@ background-color: rgb(255, 255, 127);
      <width>3</width>
      <height>272</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>8</pointsize>
+    </font>
    </property>
    <property name="orientation">
     <enum>Qt::Vertical</enum>
@@ -289,6 +325,7 @@ background-color: rgb(255, 255, 127);
    <property name="font">
     <font>
      <family>DejaVu Sans Mono</family>
+     <pointsize>8</pointsize>
     </font>
    </property>
    <property name="toolTip">
@@ -323,7 +360,7 @@ background-color: rgb(255, 255, 127);
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>12</pointsize>
+     <pointsize>8</pointsize>
     </font>
    </property>
    <property name="styleSheet">
@@ -340,7 +377,7 @@ background-color: rgb(255, 255, 127);
    <property name="geometry">
     <rect>
      <x>2</x>
-     <y>239</y>
+     <y>238</y>
      <width>120</width>
      <height>33</height>
     </rect>
@@ -348,7 +385,7 @@ background-color: rgb(255, 255, 127);
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>12</pointsize>
+     <pointsize>8</pointsize>
     </font>
    </property>
    <property name="styleSheet">
@@ -365,7 +402,7 @@ background-color: rgb(255, 255, 127);
    <property name="geometry">
     <rect>
      <x>0</x>
-     <y>101</y>
+     <y>102</y>
      <width>120</width>
      <height>33</height>
     </rect>
@@ -373,7 +410,7 @@ background-color: rgb(255, 255, 127);
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>12</pointsize>
+     <pointsize>8</pointsize>
     </font>
    </property>
    <property name="styleSheet">
@@ -394,6 +431,11 @@ background-color: rgb(255, 255, 127);
      <width>120</width>
      <height>34</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>8</pointsize>
+    </font>
    </property>
    <property name="toolTip">
     <string/>
@@ -451,7 +493,7 @@ background-color: rgb(255, 255, 127);
    <property name="font">
     <font>
      <family>DejaVu Sans Mono</family>
-     <pointsize>12</pointsize>
+     <pointsize>8</pointsize>
     </font>
    </property>
    <property name="text">
@@ -505,7 +547,7 @@ background-color: rgb(255, 255, 127);
   <widget class="ATCMled" name="atcmLed_TST_RTU1_WR">
    <property name="geometry">
     <rect>
-     <x>358</x>
+     <x>360</x>
      <y>102</y>
      <width>31</width>
      <height>34</height>
@@ -541,7 +583,7 @@ background-color: rgb(255, 255, 127);
   <widget class="ATCMled" name="atcmLed_VAL_RTU1_WR">
    <property name="geometry">
     <rect>
-     <x>359</x>
+     <x>360</x>
      <y>136</y>
      <width>31</width>
      <height>34</height>
@@ -613,7 +655,7 @@ background-color: rgb(255, 255, 127);
   <widget class="ATCMled" name="atcmLed_RES_RTU1_WR">
    <property name="geometry">
     <rect>
-     <x>358</x>
+     <x>360</x>
      <y>204</y>
      <width>31</width>
      <height>34</height>
@@ -651,14 +693,14 @@ background-color: rgb(255, 255, 127);
     <rect>
      <x>360</x>
      <y>68</y>
-     <width>51</width>
+     <width>60</width>
      <height>34</height>
     </rect>
    </property>
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>6</pointsize>
+     <pointsize>8</pointsize>
     </font>
    </property>
    <property name="styleSheet">
@@ -666,7 +708,7 @@ background-color: rgb(255, 255, 127);
    </property>
    <property name="text">
     <string>RTU1
-WR</string>
+W/R</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>
@@ -676,7 +718,7 @@ WR</string>
    <property name="geometry">
     <rect>
      <x>0</x>
-     <y>138</y>
+     <y>136</y>
      <width>120</width>
      <height>33</height>
     </rect>
@@ -684,7 +726,7 @@ WR</string>
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>12</pointsize>
+     <pointsize>8</pointsize>
     </font>
    </property>
    <property name="styleSheet">
@@ -709,7 +751,7 @@ WR</string>
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>6</pointsize>
+     <pointsize>8</pointsize>
     </font>
    </property>
    <property name="styleSheet">
@@ -727,10 +769,15 @@ revision</string>
    <property name="geometry">
     <rect>
      <x>300</x>
-     <y>202</y>
+     <y>204</y>
      <width>31</width>
      <height>35</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>8</pointsize>
+    </font>
    </property>
    <property name="text">
     <string>123</string>
@@ -784,10 +831,15 @@ revision</string>
    <property name="geometry">
     <rect>
      <x>330</x>
-     <y>202</y>
+     <y>204</y>
      <width>30</width>
      <height>35</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>8</pointsize>
+    </font>
    </property>
    <property name="text">
     <string>321</string>
@@ -841,7 +893,7 @@ revision</string>
    <property name="geometry">
     <rect>
      <x>299</x>
-     <y>100</y>
+     <y>102</y>
      <width>31</width>
      <height>34</height>
     </rect>
@@ -877,10 +929,15 @@ revision</string>
    <property name="geometry">
     <rect>
      <x>301</x>
-     <y>134</y>
+     <y>136</y>
      <width>31</width>
      <height>35</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>8</pointsize>
+    </font>
    </property>
    <property name="text">
     <string>123</string>
@@ -934,7 +991,7 @@ revision</string>
    <property name="geometry">
     <rect>
      <x>329</x>
-     <y>100</y>
+     <y>102</y>
      <width>30</width>
      <height>34</height>
     </rect>
@@ -978,7 +1035,7 @@ revision</string>
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>6</pointsize>
+     <pointsize>8</pointsize>
     </font>
    </property>
    <property name="styleSheet">
@@ -996,10 +1053,15 @@ config</string>
    <property name="geometry">
     <rect>
      <x>331</x>
-     <y>134</y>
+     <y>136</y>
      <width>30</width>
      <height>35</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>8</pointsize>
+    </font>
    </property>
    <property name="text">
     <string>321</string>
@@ -1058,6 +1120,11 @@ config</string>
      <height>35</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
    <property name="text">
     <string>321</string>
    </property>
@@ -1114,6 +1181,11 @@ config</string>
      <width>31</width>
      <height>35</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>8</pointsize>
+    </font>
    </property>
    <property name="text">
     <string>123</string>
@@ -1175,7 +1247,7 @@ config</string>
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>10</pointsize>
+     <pointsize>8</pointsize>
     </font>
    </property>
    <property name="toolTip">
@@ -1228,7 +1300,7 @@ config</string>
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>10</pointsize>
+     <pointsize>8</pointsize>
     </font>
    </property>
    <property name="styleSheet">
@@ -1277,14 +1349,14 @@ config</string>
     <rect>
      <x>419</x>
      <y>70</y>
-     <width>61</width>
+     <width>60</width>
      <height>34</height>
     </rect>
    </property>
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>6</pointsize>
+     <pointsize>8</pointsize>
     </font>
    </property>
    <property name="styleSheet">
@@ -1292,7 +1364,7 @@ config</string>
    </property>
    <property name="text">
     <string>RTU3
-WR</string>
+W/R</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>
@@ -1380,13 +1452,13 @@ WR</string>
     </rect>
    </property>
    <property name="toolTip">
-    <string>RTU_RTU3_WR</string>
+    <string>TPLC005_DigOut_4</string>
    </property>
    <property name="whatsThis">
     <string>ATCMled widget</string>
    </property>
    <property name="variable">
-    <string>RTU_RTU3_WR</string>
+    <string>TPLC005_DigOut_4</string>
    </property>
    <property name="refresh">
     <number>500</number>
@@ -1416,13 +1488,13 @@ WR</string>
     </rect>
    </property>
    <property name="toolTip">
-    <string>RTU_RTU3_RD</string>
+    <string>TPLC005_DigIn_3</string>
    </property>
    <property name="whatsThis">
     <string>ATCMled widget</string>
    </property>
    <property name="variable">
-    <string>RTU_RTU3_RD</string>
+    <string>TPLC005_DigIn_3</string>
    </property>
    <property name="refresh">
     <number>500</number>
@@ -1445,8 +1517,8 @@ WR</string>
   <widget class="ATCMled" name="atcmLed_OK_RTU1_WR_2">
    <property name="geometry">
     <rect>
-     <x>422</x>
-     <y>240</y>
+     <x>450</x>
+     <y>238</y>
      <width>31</width>
      <height>34</height>
     </rect>
@@ -1478,23 +1550,23 @@ WR</string>
      <normaloff>:/off.png</normaloff>:/off.png</iconset>
    </property>
   </widget>
-  <widget class="ATCMled" name="atcmLed_OK_RTU1_WR">
+  <widget class="ATCMled" name="atcmLed_TST_RTU1_WR_3">
    <property name="geometry">
     <rect>
-     <x>361</x>
-     <y>240</y>
+     <x>385</x>
+     <y>102</y>
      <width>31</width>
      <height>34</height>
     </rect>
    </property>
    <property name="toolTip">
-    <string>RES_RTU1_WR</string>
+    <string>TST_RTU1_RD</string>
    </property>
    <property name="whatsThis">
     <string>ATCMled widget</string>
    </property>
    <property name="variable">
-    <string>RES_RTU1_WR</string>
+    <string>TST_RTU1_RD</string>
    </property>
    <property name="refresh">
     <number>500</number>
@@ -1503,7 +1575,7 @@ WR</string>
     <bool>false</bool>
    </property>
    <property name="visibilityVar">
-    <string>TST_RTU1_WR</string>
+    <string/>
    </property>
    <property name="onIcon">
     <iconset>
@@ -1512,6 +1584,96 @@ WR</string>
    <property name="offIcon">
     <iconset>
      <normaloff>:/off.png</normaloff>:/off.png</iconset>
+   </property>
+  </widget>
+  <widget class="ATCMled" name="atcmLed_OK_RTU1_WR_3">
+   <property name="geometry">
+    <rect>
+     <x>390</x>
+     <y>238</y>
+     <width>31</width>
+     <height>34</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>RES_RTU1_RD</string>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMled widget</string>
+   </property>
+   <property name="variable">
+    <string>RES_RTU1_RD</string>
+   </property>
+   <property name="refresh">
+    <number>500</number>
+   </property>
+   <property name="viewStatus">
+    <bool>false</bool>
+   </property>
+   <property name="visibilityVar">
+    <string>TST_RTU1_RD</string>
+   </property>
+   <property name="onIcon">
+    <iconset>
+     <normaloff>:/on.png</normaloff>:/on.png</iconset>
+   </property>
+   <property name="offIcon">
+    <iconset>
+     <normaloff>:/off.png</normaloff>:/off.png</iconset>
+   </property>
+  </widget>
+  <widget class="ATCMled" name="atcmLed_TST_RTU1_WR_4">
+   <property name="geometry">
+    <rect>
+     <x>450</x>
+     <y>102</y>
+     <width>31</width>
+     <height>34</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>TST_RTU3_RD</string>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMled widget</string>
+   </property>
+   <property name="variable">
+    <string>TST_RTU3_RD</string>
+   </property>
+   <property name="refresh">
+    <number>500</number>
+   </property>
+   <property name="viewStatus">
+    <bool>false</bool>
+   </property>
+   <property name="visibilityVar">
+    <string/>
+   </property>
+   <property name="onIcon">
+    <iconset>
+     <normaloff>:/on.png</normaloff>:/on.png</iconset>
+   </property>
+   <property name="offIcon">
+    <iconset>
+     <normaloff>:/off.png</normaloff>:/off.png</iconset>
+   </property>
+  </widget>
+  <widget class="Line" name="line_vt_5">
+   <property name="geometry">
+    <rect>
+     <x>420</x>
+     <y>68</y>
+     <width>3</width>
+     <height>204</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
    </property>
   </widget>
   <zorder>label_Page</zorder>
@@ -1556,7 +1718,10 @@ WR</string>
   <zorder>atcmLed_RES_RTU1_WR_2</zorder>
   <zorder>atcmLed_RES_RTU1_RD_2</zorder>
   <zorder>atcmLed_OK_RTU1_WR_2</zorder>
-  <zorder>atcmLed_OK_RTU1_WR</zorder>
+  <zorder>atcmLed_TST_RTU1_WR_3</zorder>
+  <zorder>atcmLed_OK_RTU1_WR_3</zorder>
+  <zorder>atcmLed_TST_RTU1_WR_4</zorder>
+  <zorder>line_vt_5</zorder>
  </widget>
  <customwidgets>
   <customwidget>

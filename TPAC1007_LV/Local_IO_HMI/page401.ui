@@ -79,7 +79,7 @@ background-color: rgb(255, 255, 127);
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>13</pointsize>
+     <pointsize>8</pointsize>
     </font>
    </property>
    <property name="styleSheet">
@@ -90,42 +90,6 @@ background-color: rgb(255, 255, 127);
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>
-   </property>
-  </widget>
-  <widget class="ATCMled" name="atcmLed_PLC_DigIn_18">
-   <property name="geometry">
-    <rect>
-     <x>390</x>
-     <y>207</y>
-     <width>31</width>
-     <height>34</height>
-    </rect>
-   </property>
-   <property name="toolTip">
-    <string>PLC_DigIn_10</string>
-   </property>
-   <property name="whatsThis">
-    <string>ATCMled widget</string>
-   </property>
-   <property name="variable">
-    <string>PLC_DigIn_10</string>
-   </property>
-   <property name="refresh">
-    <number>500</number>
-   </property>
-   <property name="viewStatus">
-    <bool>false</bool>
-   </property>
-   <property name="visibilityVar">
-    <string>TST_DigIn_10</string>
-   </property>
-   <property name="onIcon">
-    <iconset>
-     <normaloff>:/on.png</normaloff>:/on.png</iconset>
-   </property>
-   <property name="offIcon">
-    <iconset>
-     <normaloff>:/off.png</normaloff>:/off.png</iconset>
    </property>
   </widget>
   <widget class="ATCMled" name="atcmLed_PLC_DigIn_6">
@@ -200,42 +164,6 @@ background-color: rgb(255, 255, 127);
      <normaloff>:/off.png</normaloff>:/off.png</iconset>
    </property>
   </widget>
-  <widget class="ATCMled" name="atcmLed_PLC_DigIn_9">
-   <property name="geometry">
-    <rect>
-     <x>358</x>
-     <y>102</y>
-     <width>31</width>
-     <height>34</height>
-    </rect>
-   </property>
-   <property name="toolTip">
-    <string>TST_DigIn_9</string>
-   </property>
-   <property name="whatsThis">
-    <string>ATCMled widget</string>
-   </property>
-   <property name="variable">
-    <string>TST_DigIn_9</string>
-   </property>
-   <property name="refresh">
-    <number>500</number>
-   </property>
-   <property name="viewStatus">
-    <bool>false</bool>
-   </property>
-   <property name="visibilityVar">
-    <string/>
-   </property>
-   <property name="onIcon">
-    <iconset>
-     <normaloff>:/on.png</normaloff>:/on.png</iconset>
-   </property>
-   <property name="offIcon">
-    <iconset>
-     <normaloff>:/off.png</normaloff>:/off.png</iconset>
-   </property>
-  </widget>
   <widget class="ATCMled" name="atcmLed_PLC_DigIn_2">
    <property name="geometry">
     <rect>
@@ -284,7 +212,7 @@ background-color: rgb(255, 255, 127);
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>12</pointsize>
+     <pointsize>8</pointsize>
     </font>
    </property>
    <property name="styleSheet">
@@ -345,7 +273,7 @@ background-color: rgb(255, 255, 127);
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>13</pointsize>
+     <pointsize>8</pointsize>
     </font>
    </property>
    <property name="styleSheet">
@@ -442,7 +370,7 @@ background-color: rgb(255, 255, 127);
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>13</pointsize>
+     <pointsize>8</pointsize>
     </font>
    </property>
    <property name="styleSheet">
@@ -491,78 +419,6 @@ background-color: rgb(255, 255, 127);
      <normaloff>:/off.png</normaloff>:/off.png</iconset>
    </property>
   </widget>
-  <widget class="ATCMled" name="atcmLed_PLC_DigOut_14">
-   <property name="geometry">
-    <rect>
-     <x>450</x>
-     <y>240</y>
-     <width>31</width>
-     <height>34</height>
-    </rect>
-   </property>
-   <property name="toolTip">
-    <string>RES_DigIn_12</string>
-   </property>
-   <property name="whatsThis">
-    <string>ATCMled widget</string>
-   </property>
-   <property name="variable">
-    <string>RES_DigIn_12</string>
-   </property>
-   <property name="refresh">
-    <number>500</number>
-   </property>
-   <property name="viewStatus">
-    <bool>false</bool>
-   </property>
-   <property name="visibilityVar">
-    <string>TST_DigIn_12</string>
-   </property>
-   <property name="onIcon">
-    <iconset>
-     <normaloff>:/on.png</normaloff>:/on.png</iconset>
-   </property>
-   <property name="offIcon">
-    <iconset>
-     <normaloff>:/off.png</normaloff>:/off.png</iconset>
-   </property>
-  </widget>
-  <widget class="ATCMled" name="atcmLed_PLC_DigIn_13">
-   <property name="geometry">
-    <rect>
-     <x>450</x>
-     <y>207</y>
-     <width>31</width>
-     <height>34</height>
-    </rect>
-   </property>
-   <property name="toolTip">
-    <string>PLC_DigIn_12</string>
-   </property>
-   <property name="whatsThis">
-    <string>ATCMled widget</string>
-   </property>
-   <property name="variable">
-    <string>PLC_DigIn_12</string>
-   </property>
-   <property name="refresh">
-    <number>500</number>
-   </property>
-   <property name="viewStatus">
-    <bool>false</bool>
-   </property>
-   <property name="visibilityVar">
-    <string>TST_DigIn_12</string>
-   </property>
-   <property name="onIcon">
-    <iconset>
-     <normaloff>:/on.png</normaloff>:/on.png</iconset>
-   </property>
-   <property name="offIcon">
-    <iconset>
-     <normaloff>:/off.png</normaloff>:/off.png</iconset>
-   </property>
-  </widget>
   <widget class="QLabel" name="label_PLC_DigIn_8">
    <property name="geometry">
     <rect>
@@ -575,7 +431,7 @@ background-color: rgb(255, 255, 127);
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>13</pointsize>
+     <pointsize>8</pointsize>
     </font>
    </property>
    <property name="styleSheet">
@@ -600,7 +456,7 @@ background-color: rgb(255, 255, 127);
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>12</pointsize>
+     <pointsize>8</pointsize>
     </font>
    </property>
    <property name="styleSheet">
@@ -611,78 +467,6 @@ background-color: rgb(255, 255, 127);
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>
-   </property>
-  </widget>
-  <widget class="ATCMled" name="atcmLed_PLC_DigIn_10">
-   <property name="geometry">
-    <rect>
-     <x>388</x>
-     <y>102</y>
-     <width>31</width>
-     <height>34</height>
-    </rect>
-   </property>
-   <property name="toolTip">
-    <string>TST_DigIn_10</string>
-   </property>
-   <property name="whatsThis">
-    <string>ATCMled widget</string>
-   </property>
-   <property name="variable">
-    <string>TST_DigIn_10</string>
-   </property>
-   <property name="refresh">
-    <number>500</number>
-   </property>
-   <property name="viewStatus">
-    <bool>false</bool>
-   </property>
-   <property name="visibilityVar">
-    <string/>
-   </property>
-   <property name="onIcon">
-    <iconset>
-     <normaloff>:/on.png</normaloff>:/on.png</iconset>
-   </property>
-   <property name="offIcon">
-    <iconset>
-     <normaloff>:/off.png</normaloff>:/off.png</iconset>
-   </property>
-  </widget>
-  <widget class="ATCMled" name="atcmLed_PLC_DigOut_16">
-   <property name="geometry">
-    <rect>
-     <x>390</x>
-     <y>240</y>
-     <width>31</width>
-     <height>34</height>
-    </rect>
-   </property>
-   <property name="toolTip">
-    <string>RES_DigIn_10</string>
-   </property>
-   <property name="whatsThis">
-    <string>ATCMled widget</string>
-   </property>
-   <property name="variable">
-    <string>RES_DigIn_10</string>
-   </property>
-   <property name="refresh">
-    <number>500</number>
-   </property>
-   <property name="viewStatus">
-    <bool>false</bool>
-   </property>
-   <property name="visibilityVar">
-    <string>TST_DigIn_10</string>
-   </property>
-   <property name="onIcon">
-    <iconset>
-     <normaloff>:/on.png</normaloff>:/on.png</iconset>
-   </property>
-   <property name="offIcon">
-    <iconset>
-     <normaloff>:/off.png</normaloff>:/off.png</iconset>
    </property>
   </widget>
   <widget class="ATCMled" name="atcmLed_PLC_DigIn_4">
@@ -805,7 +589,7 @@ background-color: rgb(255, 255, 127);
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>13</pointsize>
+     <pointsize>8</pointsize>
     </font>
    </property>
    <property name="styleSheet">
@@ -866,7 +650,7 @@ background-color: rgb(255, 255, 127);
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>13</pointsize>
+     <pointsize>8</pointsize>
     </font>
    </property>
    <property name="styleSheet">
@@ -963,7 +747,7 @@ background-color: rgb(255, 255, 127);
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>12</pointsize>
+     <pointsize>8</pointsize>
      <weight>50</weight>
      <bold>false</bold>
     </font>
@@ -1086,78 +870,6 @@ background-color: rgb(255, 255, 127);
      <normaloff>:/off.png</normaloff>:/off.png</iconset>
    </property>
   </widget>
-  <widget class="ATCMled" name="atcmLed_PLC_DigIn_12">
-   <property name="geometry">
-    <rect>
-     <x>448</x>
-     <y>102</y>
-     <width>31</width>
-     <height>34</height>
-    </rect>
-   </property>
-   <property name="toolTip">
-    <string>TST_DigIn_12</string>
-   </property>
-   <property name="whatsThis">
-    <string>ATCMled widget</string>
-   </property>
-   <property name="variable">
-    <string>TST_DigIn_12</string>
-   </property>
-   <property name="refresh">
-    <number>500</number>
-   </property>
-   <property name="viewStatus">
-    <bool>false</bool>
-   </property>
-   <property name="visibilityVar">
-    <string/>
-   </property>
-   <property name="onIcon">
-    <iconset>
-     <normaloff>:/on.png</normaloff>:/on.png</iconset>
-   </property>
-   <property name="offIcon">
-    <iconset>
-     <normaloff>:/off.png</normaloff>:/off.png</iconset>
-   </property>
-  </widget>
-  <widget class="ATCMled" name="atcmLed_PLC_DigOut_22">
-   <property name="geometry">
-    <rect>
-     <x>420</x>
-     <y>240</y>
-     <width>31</width>
-     <height>34</height>
-    </rect>
-   </property>
-   <property name="toolTip">
-    <string>RES_DigIn_11</string>
-   </property>
-   <property name="whatsThis">
-    <string>ATCMled widget</string>
-   </property>
-   <property name="variable">
-    <string>RES_DigIn_11</string>
-   </property>
-   <property name="refresh">
-    <number>500</number>
-   </property>
-   <property name="viewStatus">
-    <bool>false</bool>
-   </property>
-   <property name="visibilityVar">
-    <string>TST_DigIn_11</string>
-   </property>
-   <property name="onIcon">
-    <iconset>
-     <normaloff>:/on.png</normaloff>:/on.png</iconset>
-   </property>
-   <property name="offIcon">
-    <iconset>
-     <normaloff>:/off.png</normaloff>:/off.png</iconset>
-   </property>
-  </widget>
   <widget class="ATCMled" name="atcmLed_PLC_DigIn_5">
    <property name="geometry">
     <rect>
@@ -1184,42 +896,6 @@ background-color: rgb(255, 255, 127);
    </property>
    <property name="visibilityVar">
     <string/>
-   </property>
-   <property name="onIcon">
-    <iconset>
-     <normaloff>:/on.png</normaloff>:/on.png</iconset>
-   </property>
-   <property name="offIcon">
-    <iconset>
-     <normaloff>:/off.png</normaloff>:/off.png</iconset>
-   </property>
-  </widget>
-  <widget class="ATCMled" name="atcmLed_PLC_DigIn_21">
-   <property name="geometry">
-    <rect>
-     <x>360</x>
-     <y>207</y>
-     <width>31</width>
-     <height>34</height>
-    </rect>
-   </property>
-   <property name="toolTip">
-    <string>PLC_DigIn_9</string>
-   </property>
-   <property name="whatsThis">
-    <string>ATCMled widget</string>
-   </property>
-   <property name="variable">
-    <string>PLC_DigIn_9</string>
-   </property>
-   <property name="refresh">
-    <number>500</number>
-   </property>
-   <property name="viewStatus">
-    <bool>false</bool>
-   </property>
-   <property name="visibilityVar">
-    <string>TST_DigIn_9</string>
    </property>
    <property name="onIcon">
     <iconset>
@@ -1278,7 +954,7 @@ background-color: rgb(255, 255, 127);
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>13</pointsize>
+     <pointsize>8</pointsize>
     </font>
    </property>
    <property name="styleSheet">
@@ -1303,7 +979,7 @@ background-color: rgb(255, 255, 127);
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>13</pointsize>
+     <pointsize>8</pointsize>
     </font>
    </property>
    <property name="styleSheet">
@@ -1314,42 +990,6 @@ background-color: rgb(255, 255, 127);
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>
-   </property>
-  </widget>
-  <widget class="ATCMled" name="atcmLed_PLC_DigOut_24">
-   <property name="geometry">
-    <rect>
-     <x>360</x>
-     <y>240</y>
-     <width>31</width>
-     <height>34</height>
-    </rect>
-   </property>
-   <property name="toolTip">
-    <string>RES_DigIn_9</string>
-   </property>
-   <property name="whatsThis">
-    <string>ATCMled widget</string>
-   </property>
-   <property name="variable">
-    <string>RES_DigIn_9</string>
-   </property>
-   <property name="refresh">
-    <number>500</number>
-   </property>
-   <property name="viewStatus">
-    <bool>false</bool>
-   </property>
-   <property name="visibilityVar">
-    <string>TST_DigIn_9</string>
-   </property>
-   <property name="onIcon">
-    <iconset>
-     <normaloff>:/on.png</normaloff>:/on.png</iconset>
-   </property>
-   <property name="offIcon">
-    <iconset>
-     <normaloff>:/off.png</normaloff>:/off.png</iconset>
    </property>
   </widget>
   <widget class="ATCMled" name="atcmLed_PLC_DigIn_1">
@@ -1369,42 +1009,6 @@ background-color: rgb(255, 255, 127);
    </property>
    <property name="variable">
     <string>TST_DigIn_1</string>
-   </property>
-   <property name="refresh">
-    <number>500</number>
-   </property>
-   <property name="viewStatus">
-    <bool>false</bool>
-   </property>
-   <property name="visibilityVar">
-    <string/>
-   </property>
-   <property name="onIcon">
-    <iconset>
-     <normaloff>:/on.png</normaloff>:/on.png</iconset>
-   </property>
-   <property name="offIcon">
-    <iconset>
-     <normaloff>:/off.png</normaloff>:/off.png</iconset>
-   </property>
-  </widget>
-  <widget class="ATCMled" name="atcmLed_PLC_DigIn_11">
-   <property name="geometry">
-    <rect>
-     <x>418</x>
-     <y>102</y>
-     <width>31</width>
-     <height>34</height>
-    </rect>
-   </property>
-   <property name="toolTip">
-    <string>TST_DigIn_11</string>
-   </property>
-   <property name="whatsThis">
-    <string>ATCMled widget</string>
-   </property>
-   <property name="variable">
-    <string>TST_DigIn_11</string>
    </property>
    <property name="refresh">
     <number>500</number>
@@ -1508,7 +1112,7 @@ background-color: rgb(255, 255, 127);
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>13</pointsize>
+     <pointsize>8</pointsize>
     </font>
    </property>
    <property name="styleSheet">
@@ -1519,42 +1123,6 @@ background-color: rgb(255, 255, 127);
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>
-   </property>
-  </widget>
-  <widget class="ATCMled" name="atcmLed_PLC_DigIn_14">
-   <property name="geometry">
-    <rect>
-     <x>420</x>
-     <y>207</y>
-     <width>31</width>
-     <height>34</height>
-    </rect>
-   </property>
-   <property name="toolTip">
-    <string>PLC_DigIn_11</string>
-   </property>
-   <property name="whatsThis">
-    <string>ATCMled widget</string>
-   </property>
-   <property name="variable">
-    <string>PLC_DigIn_11</string>
-   </property>
-   <property name="refresh">
-    <number>500</number>
-   </property>
-   <property name="viewStatus">
-    <bool>false</bool>
-   </property>
-   <property name="visibilityVar">
-    <string>TST_DigIn_11</string>
-   </property>
-   <property name="onIcon">
-    <iconset>
-     <normaloff>:/on.png</normaloff>:/on.png</iconset>
-   </property>
-   <property name="offIcon">
-    <iconset>
-     <normaloff>:/off.png</normaloff>:/off.png</iconset>
    </property>
   </widget>
   <widget class="QLabel" name="label_PLC_DigIn_11">
@@ -1569,7 +1137,7 @@ background-color: rgb(255, 255, 127);
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>13</pointsize>
+     <pointsize>8</pointsize>
     </font>
    </property>
    <property name="styleSheet">
@@ -1594,7 +1162,7 @@ background-color: rgb(255, 255, 127);
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>13</pointsize>
+     <pointsize>8</pointsize>
     </font>
    </property>
    <property name="styleSheet">
@@ -1655,7 +1223,7 @@ background-color: rgb(255, 255, 127);
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>13</pointsize>
+     <pointsize>8</pointsize>
     </font>
    </property>
    <property name="styleSheet">
@@ -1713,6 +1281,11 @@ background-color: rgb(255, 255, 127);
      <height>3</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
    <property name="orientation">
     <enum>Qt::Horizontal</enum>
    </property>
@@ -1729,7 +1302,7 @@ background-color: rgb(255, 255, 127);
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>10</pointsize>
+     <pointsize>8</pointsize>
      <weight>50</weight>
      <bold>false</bold>
     </font>
@@ -1794,6 +1367,11 @@ background-color: rgb(255, 255, 127);
      <height>3</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
    <property name="orientation">
     <enum>Qt::Horizontal</enum>
    </property>
@@ -1806,6 +1384,11 @@ background-color: rgb(255, 255, 127);
      <width>3</width>
      <height>272</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>8</pointsize>
+    </font>
    </property>
    <property name="orientation">
     <enum>Qt::Vertical</enum>
@@ -1823,6 +1406,7 @@ background-color: rgb(255, 255, 127);
    <property name="font">
     <font>
      <family>DejaVu Sans Mono</family>
+     <pointsize>8</pointsize>
     </font>
    </property>
    <property name="toolTip">
@@ -1854,6 +1438,11 @@ background-color: rgb(255, 255, 127);
      <height>3</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
    <property name="orientation">
     <enum>Qt::Horizontal</enum>
    </property>
@@ -1870,7 +1459,7 @@ background-color: rgb(255, 255, 127);
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>10</pointsize>
+     <pointsize>8</pointsize>
     </font>
    </property>
    <property name="styleSheet">
@@ -1895,7 +1484,7 @@ background-color: rgb(255, 255, 127);
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>10</pointsize>
+     <pointsize>8</pointsize>
     </font>
    </property>
    <property name="styleSheet">
@@ -1920,6 +1509,7 @@ background-color: rgb(255, 255, 127);
    <property name="font">
     <font>
      <family>DejaVu Sans Mono</family>
+     <pointsize>8</pointsize>
     </font>
    </property>
    <property name="toolTip">
@@ -1954,6 +1544,11 @@ background-color: rgb(255, 255, 127);
      <height>3</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
    <property name="orientation">
     <enum>Qt::Horizontal</enum>
    </property>
@@ -1967,6 +1562,11 @@ background-color: rgb(255, 255, 127);
      <height>272</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
    <property name="orientation">
     <enum>Qt::Vertical</enum>
    </property>
@@ -1979,6 +1579,11 @@ background-color: rgb(255, 255, 127);
      <width>3</width>
      <height>272</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>8</pointsize>
+    </font>
    </property>
    <property name="orientation">
     <enum>Qt::Vertical</enum>
@@ -1996,7 +1601,7 @@ background-color: rgb(255, 255, 127);
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>12</pointsize>
+     <pointsize>8</pointsize>
     </font>
    </property>
    <property name="styleSheet">
@@ -2306,6 +1911,11 @@ background-color: rgb(255, 255, 127);
      <height>34</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
    <property name="toolTip">
     <string/>
    </property>
@@ -2362,7 +1972,7 @@ background-color: rgb(255, 255, 127);
    <property name="font">
     <font>
      <family>DejaVu Sans Mono</family>
-     <pointsize>12</pointsize>
+     <pointsize>8</pointsize>
     </font>
    </property>
    <property name="text">
@@ -2425,7 +2035,7 @@ background-color: rgb(255, 255, 127);
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>10</pointsize>
+     <pointsize>8</pointsize>
     </font>
    </property>
    <property name="toolTip">
@@ -2478,7 +2088,7 @@ background-color: rgb(255, 255, 127);
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>10</pointsize>
+     <pointsize>8</pointsize>
     </font>
    </property>
    <property name="styleSheet">
@@ -2524,10 +2134,8 @@ background-color: rgb(255, 255, 127);
   </widget>
   <zorder>atcmLed_PLC_DigOut_19</zorder>
   <zorder>label_PLC_DigIn_1</zorder>
-  <zorder>atcmLed_PLC_DigIn_18</zorder>
   <zorder>atcmLed_PLC_DigIn_6</zorder>
   <zorder>atcmLed_PLC_DigOut_21</zorder>
-  <zorder>atcmLed_PLC_DigIn_9</zorder>
   <zorder>atcmLed_PLC_DigIn_2</zorder>
   <zorder>label_PLC_DigIn_13</zorder>
   <zorder>atcmLed_PLC_DigIn_20</zorder>
@@ -2536,12 +2144,8 @@ background-color: rgb(255, 255, 127);
   <zorder>atcmLed_PLC_DigOut_23</zorder>
   <zorder>label_PLC_DigIn_6</zorder>
   <zorder>atcmLed_PLC_DigIn_22</zorder>
-  <zorder>atcmLed_PLC_DigOut_14</zorder>
-  <zorder>atcmLed_PLC_DigIn_13</zorder>
   <zorder>label_PLC_DigIn_8</zorder>
   <zorder>label_PLC_DigIn_15</zorder>
-  <zorder>atcmLed_PLC_DigIn_10</zorder>
-  <zorder>atcmLed_PLC_DigOut_16</zorder>
   <zorder>atcmLed_PLC_DigIn_4</zorder>
   <zorder>atcmLed_PLC_DigIn_15</zorder>
   <zorder>atcmLed_PLC_DigOut_18</zorder>
@@ -2554,20 +2158,14 @@ background-color: rgb(255, 255, 127);
   <zorder>atcmLed_PLC_DigOut_20</zorder>
   <zorder>atcmLed_PLC_DigIn_8</zorder>
   <zorder>atcmLed_PLC_DigIn_19</zorder>
-  <zorder>atcmLed_PLC_DigIn_12</zorder>
-  <zorder>atcmLed_PLC_DigOut_22</zorder>
   <zorder>atcmLed_PLC_DigIn_5</zorder>
-  <zorder>atcmLed_PLC_DigIn_21</zorder>
   <zorder>atcmLed_PLC_DigOut_13</zorder>
   <zorder>label_PLC_DigIn_4</zorder>
   <zorder>label_PLC_DigIn_7</zorder>
-  <zorder>atcmLed_PLC_DigOut_24</zorder>
   <zorder>atcmLed_PLC_DigIn_1</zorder>
-  <zorder>atcmLed_PLC_DigIn_11</zorder>
   <zorder>atcmLed_PLC_DigIn_23</zorder>
   <zorder>atcmLed_PLC_DigOut_15</zorder>
   <zorder>label_PLC_DigIn_5</zorder>
-  <zorder>atcmLed_PLC_DigIn_14</zorder>
   <zorder>label_PLC_DigIn_11</zorder>
   <zorder>label_PLC_DigIn_12</zorder>
   <zorder>atcmLed_PLC_DigOut_17</zorder>

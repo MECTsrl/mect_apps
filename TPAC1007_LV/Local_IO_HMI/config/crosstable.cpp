@@ -10,15 +10,42 @@ WORD_BIT  <-> int
 DWORD_BIT <-> int
 */ 
 #include "crosstable.h"
-#include "cross_table_utility.h"
  
 u_int16_t STATUS = 0;
-u_int32_t RTU_HEARTBEAT = 0;
-u_int16_t RTU_RTU1_RD = 0;
-u_int16_t RTU_RTU1_WR = 0;
-u_int32_t RTU_HEARTBEAT_3 = 0;
-u_int16_t RTU_RTU3_RD = 0;
-u_int16_t RTU_RTU3_WR = 0;
+u_int16_t RTU_HEARTBEAT = 0;
+int RTU_RTU1_WR = 0;
+int RTU_RTU1_RD = 0;
+u_int16_t TPLC005_BAUDRATE = 0;
+u_int16_t TPLC005_ADDRESS = 0;
+u_int16_t TPLC005_LIFETIME = 0;
+u_int16_t TPLC005_AnInCf_1 = 0;
+u_int16_t TPLC005_AnInCf_2 = 0;
+int16_t TPLC005_AnIn_1 = 0;
+int16_t TPLC005_AnIn_2 = 0;
+int TPLC005_DigDir_1 = 0;
+int TPLC005_DigDir_2 = 0;
+int TPLC005_DigDir_3 = 0;
+int TPLC005_DigDir_4 = 0;
+int TPLC005_DigDir_5 = 0;
+int TPLC005_DigDir_6 = 0;
+int TPLC005_DigDir_7 = 0;
+int TPLC005_DigDir_8 = 0;
+int TPLC005_DigIn_1 = 0;
+int TPLC005_DigIn_2 = 0;
+int TPLC005_DigIn_3 = 0;
+int TPLC005_DigIn_4 = 0;
+int TPLC005_DigIn_5 = 0;
+int TPLC005_DigIn_6 = 0;
+int TPLC005_DigIn_7 = 0;
+int TPLC005_DigIn_8 = 0;
+int TPLC005_DigOut_1 = 0;
+int TPLC005_DigOut_2 = 0;
+int TPLC005_DigOut_3 = 0;
+int TPLC005_DigOut_4 = 0;
+int TPLC005_DigOut_5 = 0;
+int TPLC005_DigOut_6 = 0;
+int TPLC005_DigOut_7 = 0;
+int TPLC005_DigOut_8 = 0;
 u_int16_t TEST_COMMAND = 0;
 int TST_DigIn_1 = 0;
 int TST_DigIn_2 = 0;
@@ -443,10 +470,6 @@ int PLC_DigIn_5 = 0;
 int PLC_DigIn_6 = 0;
 int PLC_DigIn_7 = 0;
 int PLC_DigIn_8 = 0;
-int PLC_DigIn_9 = 0;
-int PLC_DigIn_10 = 0;
-int PLC_DigIn_11 = 0;
-int PLC_DigIn_12 = 0;
 u_int16_t PLC_Heartbeat = 0;
 float PLC_time = 0;
 float PLC_timeMin = 0;
@@ -475,13 +498,13 @@ return getStatus(ID_STATUS);
 }
 
 
-int doWrite_RTU_HEARTBEAT(u_int32_t value)
+int doWrite_RTU_HEARTBEAT(u_int16_t value)
 {
 return doWrite(ID_RTU_HEARTBEAT,  &value);
 }
 
 
-int addWrite_RTU_HEARTBEAT(u_int32_t value)
+int addWrite_RTU_HEARTBEAT(u_int16_t value)
 {
 return addWrite(ID_RTU_HEARTBEAT, &value);
 }
@@ -493,31 +516,13 @@ return getStatus(ID_RTU_HEARTBEAT);
 }
 
 
-int doWrite_RTU_RTU1_RD(u_int16_t value)
-{
-return doWrite(ID_RTU_RTU1_RD,  &value);
-}
-
-
-int addWrite_RTU_RTU1_RD(u_int16_t value)
-{
-return addWrite(ID_RTU_RTU1_RD, &value);
-}
-
-
-int getStatus_RTU_RTU1_RD()
-{
-return getStatus(ID_RTU_RTU1_RD);
-}
-
-
-int doWrite_RTU_RTU1_WR(u_int16_t value)
+int doWrite_RTU_RTU1_WR(int value)
 {
 return doWrite(ID_RTU_RTU1_WR,  &value);
 }
 
 
-int addWrite_RTU_RTU1_WR(u_int16_t value)
+int addWrite_RTU_RTU1_WR(int value)
 {
 return addWrite(ID_RTU_RTU1_WR, &value);
 }
@@ -529,57 +534,579 @@ return getStatus(ID_RTU_RTU1_WR);
 }
 
 
-int doWrite_RTU_HEARTBEAT_3(u_int32_t value)
+int doWrite_RTU_RTU1_RD(int value)
 {
-return doWrite(ID_RTU_HEARTBEAT_3,  &value);
+return doWrite(ID_RTU_RTU1_RD,  &value);
 }
 
 
-int addWrite_RTU_HEARTBEAT_3(u_int32_t value)
+int addWrite_RTU_RTU1_RD(int value)
 {
-return addWrite(ID_RTU_HEARTBEAT_3, &value);
+return addWrite(ID_RTU_RTU1_RD, &value);
 }
 
 
-int getStatus_RTU_HEARTBEAT_3()
+int getStatus_RTU_RTU1_RD()
 {
-return getStatus(ID_RTU_HEARTBEAT_3);
+return getStatus(ID_RTU_RTU1_RD);
 }
 
 
-int doWrite_RTU_RTU3_RD(u_int16_t value)
+int doWrite_TPLC005_BAUDRATE(u_int16_t value)
 {
-return doWrite(ID_RTU_RTU3_RD,  &value);
+return doWrite(ID_TPLC005_BAUDRATE,  &value);
 }
 
 
-int addWrite_RTU_RTU3_RD(u_int16_t value)
+int addWrite_TPLC005_BAUDRATE(u_int16_t value)
 {
-return addWrite(ID_RTU_RTU3_RD, &value);
+return addWrite(ID_TPLC005_BAUDRATE, &value);
 }
 
 
-int getStatus_RTU_RTU3_RD()
+int getStatus_TPLC005_BAUDRATE()
 {
-return getStatus(ID_RTU_RTU3_RD);
+return getStatus(ID_TPLC005_BAUDRATE);
 }
 
 
-int doWrite_RTU_RTU3_WR(u_int16_t value)
+int doWrite_TPLC005_ADDRESS(u_int16_t value)
 {
-return doWrite(ID_RTU_RTU3_WR,  &value);
+return doWrite(ID_TPLC005_ADDRESS,  &value);
 }
 
 
-int addWrite_RTU_RTU3_WR(u_int16_t value)
+int addWrite_TPLC005_ADDRESS(u_int16_t value)
 {
-return addWrite(ID_RTU_RTU3_WR, &value);
+return addWrite(ID_TPLC005_ADDRESS, &value);
 }
 
 
-int getStatus_RTU_RTU3_WR()
+int getStatus_TPLC005_ADDRESS()
 {
-return getStatus(ID_RTU_RTU3_WR);
+return getStatus(ID_TPLC005_ADDRESS);
+}
+
+
+int doWrite_TPLC005_LIFETIME(u_int16_t value)
+{
+return doWrite(ID_TPLC005_LIFETIME,  &value);
+}
+
+
+int addWrite_TPLC005_LIFETIME(u_int16_t value)
+{
+return addWrite(ID_TPLC005_LIFETIME, &value);
+}
+
+
+int getStatus_TPLC005_LIFETIME()
+{
+return getStatus(ID_TPLC005_LIFETIME);
+}
+
+
+int doWrite_TPLC005_AnInCf_1(u_int16_t value)
+{
+return doWrite(ID_TPLC005_AnInCf_1,  &value);
+}
+
+
+int addWrite_TPLC005_AnInCf_1(u_int16_t value)
+{
+return addWrite(ID_TPLC005_AnInCf_1, &value);
+}
+
+
+int getStatus_TPLC005_AnInCf_1()
+{
+return getStatus(ID_TPLC005_AnInCf_1);
+}
+
+
+int doWrite_TPLC005_AnInCf_2(u_int16_t value)
+{
+return doWrite(ID_TPLC005_AnInCf_2,  &value);
+}
+
+
+int addWrite_TPLC005_AnInCf_2(u_int16_t value)
+{
+return addWrite(ID_TPLC005_AnInCf_2, &value);
+}
+
+
+int getStatus_TPLC005_AnInCf_2()
+{
+return getStatus(ID_TPLC005_AnInCf_2);
+}
+
+
+int doWrite_TPLC005_AnIn_1(int16_t value)
+{
+return doWrite(ID_TPLC005_AnIn_1,  &value);
+}
+
+
+int addWrite_TPLC005_AnIn_1(int16_t value)
+{
+return addWrite(ID_TPLC005_AnIn_1, &value);
+}
+
+
+int getStatus_TPLC005_AnIn_1()
+{
+return getStatus(ID_TPLC005_AnIn_1);
+}
+
+
+int doWrite_TPLC005_AnIn_2(int16_t value)
+{
+return doWrite(ID_TPLC005_AnIn_2,  &value);
+}
+
+
+int addWrite_TPLC005_AnIn_2(int16_t value)
+{
+return addWrite(ID_TPLC005_AnIn_2, &value);
+}
+
+
+int getStatus_TPLC005_AnIn_2()
+{
+return getStatus(ID_TPLC005_AnIn_2);
+}
+
+
+int doWrite_TPLC005_DigDir_1(int value)
+{
+return doWrite(ID_TPLC005_DigDir_1,  &value);
+}
+
+
+int addWrite_TPLC005_DigDir_1(int value)
+{
+return addWrite(ID_TPLC005_DigDir_1, &value);
+}
+
+
+int getStatus_TPLC005_DigDir_1()
+{
+return getStatus(ID_TPLC005_DigDir_1);
+}
+
+
+int doWrite_TPLC005_DigDir_2(int value)
+{
+return doWrite(ID_TPLC005_DigDir_2,  &value);
+}
+
+
+int addWrite_TPLC005_DigDir_2(int value)
+{
+return addWrite(ID_TPLC005_DigDir_2, &value);
+}
+
+
+int getStatus_TPLC005_DigDir_2()
+{
+return getStatus(ID_TPLC005_DigDir_2);
+}
+
+
+int doWrite_TPLC005_DigDir_3(int value)
+{
+return doWrite(ID_TPLC005_DigDir_3,  &value);
+}
+
+
+int addWrite_TPLC005_DigDir_3(int value)
+{
+return addWrite(ID_TPLC005_DigDir_3, &value);
+}
+
+
+int getStatus_TPLC005_DigDir_3()
+{
+return getStatus(ID_TPLC005_DigDir_3);
+}
+
+
+int doWrite_TPLC005_DigDir_4(int value)
+{
+return doWrite(ID_TPLC005_DigDir_4,  &value);
+}
+
+
+int addWrite_TPLC005_DigDir_4(int value)
+{
+return addWrite(ID_TPLC005_DigDir_4, &value);
+}
+
+
+int getStatus_TPLC005_DigDir_4()
+{
+return getStatus(ID_TPLC005_DigDir_4);
+}
+
+
+int doWrite_TPLC005_DigDir_5(int value)
+{
+return doWrite(ID_TPLC005_DigDir_5,  &value);
+}
+
+
+int addWrite_TPLC005_DigDir_5(int value)
+{
+return addWrite(ID_TPLC005_DigDir_5, &value);
+}
+
+
+int getStatus_TPLC005_DigDir_5()
+{
+return getStatus(ID_TPLC005_DigDir_5);
+}
+
+
+int doWrite_TPLC005_DigDir_6(int value)
+{
+return doWrite(ID_TPLC005_DigDir_6,  &value);
+}
+
+
+int addWrite_TPLC005_DigDir_6(int value)
+{
+return addWrite(ID_TPLC005_DigDir_6, &value);
+}
+
+
+int getStatus_TPLC005_DigDir_6()
+{
+return getStatus(ID_TPLC005_DigDir_6);
+}
+
+
+int doWrite_TPLC005_DigDir_7(int value)
+{
+return doWrite(ID_TPLC005_DigDir_7,  &value);
+}
+
+
+int addWrite_TPLC005_DigDir_7(int value)
+{
+return addWrite(ID_TPLC005_DigDir_7, &value);
+}
+
+
+int getStatus_TPLC005_DigDir_7()
+{
+return getStatus(ID_TPLC005_DigDir_7);
+}
+
+
+int doWrite_TPLC005_DigDir_8(int value)
+{
+return doWrite(ID_TPLC005_DigDir_8,  &value);
+}
+
+
+int addWrite_TPLC005_DigDir_8(int value)
+{
+return addWrite(ID_TPLC005_DigDir_8, &value);
+}
+
+
+int getStatus_TPLC005_DigDir_8()
+{
+return getStatus(ID_TPLC005_DigDir_8);
+}
+
+
+int doWrite_TPLC005_DigIn_1(int value)
+{
+return doWrite(ID_TPLC005_DigIn_1,  &value);
+}
+
+
+int addWrite_TPLC005_DigIn_1(int value)
+{
+return addWrite(ID_TPLC005_DigIn_1, &value);
+}
+
+
+int getStatus_TPLC005_DigIn_1()
+{
+return getStatus(ID_TPLC005_DigIn_1);
+}
+
+
+int doWrite_TPLC005_DigIn_2(int value)
+{
+return doWrite(ID_TPLC005_DigIn_2,  &value);
+}
+
+
+int addWrite_TPLC005_DigIn_2(int value)
+{
+return addWrite(ID_TPLC005_DigIn_2, &value);
+}
+
+
+int getStatus_TPLC005_DigIn_2()
+{
+return getStatus(ID_TPLC005_DigIn_2);
+}
+
+
+int doWrite_TPLC005_DigIn_3(int value)
+{
+return doWrite(ID_TPLC005_DigIn_3,  &value);
+}
+
+
+int addWrite_TPLC005_DigIn_3(int value)
+{
+return addWrite(ID_TPLC005_DigIn_3, &value);
+}
+
+
+int getStatus_TPLC005_DigIn_3()
+{
+return getStatus(ID_TPLC005_DigIn_3);
+}
+
+
+int doWrite_TPLC005_DigIn_4(int value)
+{
+return doWrite(ID_TPLC005_DigIn_4,  &value);
+}
+
+
+int addWrite_TPLC005_DigIn_4(int value)
+{
+return addWrite(ID_TPLC005_DigIn_4, &value);
+}
+
+
+int getStatus_TPLC005_DigIn_4()
+{
+return getStatus(ID_TPLC005_DigIn_4);
+}
+
+
+int doWrite_TPLC005_DigIn_5(int value)
+{
+return doWrite(ID_TPLC005_DigIn_5,  &value);
+}
+
+
+int addWrite_TPLC005_DigIn_5(int value)
+{
+return addWrite(ID_TPLC005_DigIn_5, &value);
+}
+
+
+int getStatus_TPLC005_DigIn_5()
+{
+return getStatus(ID_TPLC005_DigIn_5);
+}
+
+
+int doWrite_TPLC005_DigIn_6(int value)
+{
+return doWrite(ID_TPLC005_DigIn_6,  &value);
+}
+
+
+int addWrite_TPLC005_DigIn_6(int value)
+{
+return addWrite(ID_TPLC005_DigIn_6, &value);
+}
+
+
+int getStatus_TPLC005_DigIn_6()
+{
+return getStatus(ID_TPLC005_DigIn_6);
+}
+
+
+int doWrite_TPLC005_DigIn_7(int value)
+{
+return doWrite(ID_TPLC005_DigIn_7,  &value);
+}
+
+
+int addWrite_TPLC005_DigIn_7(int value)
+{
+return addWrite(ID_TPLC005_DigIn_7, &value);
+}
+
+
+int getStatus_TPLC005_DigIn_7()
+{
+return getStatus(ID_TPLC005_DigIn_7);
+}
+
+
+int doWrite_TPLC005_DigIn_8(int value)
+{
+return doWrite(ID_TPLC005_DigIn_8,  &value);
+}
+
+
+int addWrite_TPLC005_DigIn_8(int value)
+{
+return addWrite(ID_TPLC005_DigIn_8, &value);
+}
+
+
+int getStatus_TPLC005_DigIn_8()
+{
+return getStatus(ID_TPLC005_DigIn_8);
+}
+
+
+int doWrite_TPLC005_DigOut_1(int value)
+{
+return doWrite(ID_TPLC005_DigOut_1,  &value);
+}
+
+
+int addWrite_TPLC005_DigOut_1(int value)
+{
+return addWrite(ID_TPLC005_DigOut_1, &value);
+}
+
+
+int getStatus_TPLC005_DigOut_1()
+{
+return getStatus(ID_TPLC005_DigOut_1);
+}
+
+
+int doWrite_TPLC005_DigOut_2(int value)
+{
+return doWrite(ID_TPLC005_DigOut_2,  &value);
+}
+
+
+int addWrite_TPLC005_DigOut_2(int value)
+{
+return addWrite(ID_TPLC005_DigOut_2, &value);
+}
+
+
+int getStatus_TPLC005_DigOut_2()
+{
+return getStatus(ID_TPLC005_DigOut_2);
+}
+
+
+int doWrite_TPLC005_DigOut_3(int value)
+{
+return doWrite(ID_TPLC005_DigOut_3,  &value);
+}
+
+
+int addWrite_TPLC005_DigOut_3(int value)
+{
+return addWrite(ID_TPLC005_DigOut_3, &value);
+}
+
+
+int getStatus_TPLC005_DigOut_3()
+{
+return getStatus(ID_TPLC005_DigOut_3);
+}
+
+
+int doWrite_TPLC005_DigOut_4(int value)
+{
+return doWrite(ID_TPLC005_DigOut_4,  &value);
+}
+
+
+int addWrite_TPLC005_DigOut_4(int value)
+{
+return addWrite(ID_TPLC005_DigOut_4, &value);
+}
+
+
+int getStatus_TPLC005_DigOut_4()
+{
+return getStatus(ID_TPLC005_DigOut_4);
+}
+
+
+int doWrite_TPLC005_DigOut_5(int value)
+{
+return doWrite(ID_TPLC005_DigOut_5,  &value);
+}
+
+
+int addWrite_TPLC005_DigOut_5(int value)
+{
+return addWrite(ID_TPLC005_DigOut_5, &value);
+}
+
+
+int getStatus_TPLC005_DigOut_5()
+{
+return getStatus(ID_TPLC005_DigOut_5);
+}
+
+
+int doWrite_TPLC005_DigOut_6(int value)
+{
+return doWrite(ID_TPLC005_DigOut_6,  &value);
+}
+
+
+int addWrite_TPLC005_DigOut_6(int value)
+{
+return addWrite(ID_TPLC005_DigOut_6, &value);
+}
+
+
+int getStatus_TPLC005_DigOut_6()
+{
+return getStatus(ID_TPLC005_DigOut_6);
+}
+
+
+int doWrite_TPLC005_DigOut_7(int value)
+{
+return doWrite(ID_TPLC005_DigOut_7,  &value);
+}
+
+
+int addWrite_TPLC005_DigOut_7(int value)
+{
+return addWrite(ID_TPLC005_DigOut_7, &value);
+}
+
+
+int getStatus_TPLC005_DigOut_7()
+{
+return getStatus(ID_TPLC005_DigOut_7);
+}
+
+
+int doWrite_TPLC005_DigOut_8(int value)
+{
+return doWrite(ID_TPLC005_DigOut_8,  &value);
+}
+
+
+int addWrite_TPLC005_DigOut_8(int value)
+{
+return addWrite(ID_TPLC005_DigOut_8, &value);
+}
+
+
+int getStatus_TPLC005_DigOut_8()
+{
+return getStatus(ID_TPLC005_DigOut_8);
 }
 
 
@@ -8215,78 +8742,6 @@ return getStatus(ID_PLC_DigIn_8);
 }
 
 
-int doWrite_PLC_DigIn_9(int value)
-{
-return doWrite(ID_PLC_DigIn_9,  &value);
-}
-
-
-int addWrite_PLC_DigIn_9(int value)
-{
-return addWrite(ID_PLC_DigIn_9, &value);
-}
-
-
-int getStatus_PLC_DigIn_9()
-{
-return getStatus(ID_PLC_DigIn_9);
-}
-
-
-int doWrite_PLC_DigIn_10(int value)
-{
-return doWrite(ID_PLC_DigIn_10,  &value);
-}
-
-
-int addWrite_PLC_DigIn_10(int value)
-{
-return addWrite(ID_PLC_DigIn_10, &value);
-}
-
-
-int getStatus_PLC_DigIn_10()
-{
-return getStatus(ID_PLC_DigIn_10);
-}
-
-
-int doWrite_PLC_DigIn_11(int value)
-{
-return doWrite(ID_PLC_DigIn_11,  &value);
-}
-
-
-int addWrite_PLC_DigIn_11(int value)
-{
-return addWrite(ID_PLC_DigIn_11, &value);
-}
-
-
-int getStatus_PLC_DigIn_11()
-{
-return getStatus(ID_PLC_DigIn_11);
-}
-
-
-int doWrite_PLC_DigIn_12(int value)
-{
-return doWrite(ID_PLC_DigIn_12,  &value);
-}
-
-
-int addWrite_PLC_DigIn_12(int value)
-{
-return addWrite(ID_PLC_DigIn_12, &value);
-}
-
-
-int getStatus_PLC_DigIn_12()
-{
-return getStatus(ID_PLC_DigIn_12);
-}
-
-
 int doWrite_PLC_Heartbeat(u_int16_t value)
 {
 return doWrite(ID_PLC_Heartbeat,  &value);
@@ -8436,11 +8891,39 @@ int update_all(void)
 int retval = 0;
 retval += readFromDb(ID_STATUS, &STATUS);
 retval += readFromDb(ID_RTU_HEARTBEAT, &RTU_HEARTBEAT);
-retval += readFromDb(ID_RTU_RTU1_RD, &RTU_RTU1_RD);
 retval += readFromDb(ID_RTU_RTU1_WR, &RTU_RTU1_WR);
-retval += readFromDb(ID_RTU_HEARTBEAT_3, &RTU_HEARTBEAT_3);
-retval += readFromDb(ID_RTU_RTU3_RD, &RTU_RTU3_RD);
-retval += readFromDb(ID_RTU_RTU3_WR, &RTU_RTU3_WR);
+retval += readFromDb(ID_RTU_RTU1_RD, &RTU_RTU1_RD);
+retval += readFromDb(ID_TPLC005_BAUDRATE, &TPLC005_BAUDRATE);
+retval += readFromDb(ID_TPLC005_ADDRESS, &TPLC005_ADDRESS);
+retval += readFromDb(ID_TPLC005_LIFETIME, &TPLC005_LIFETIME);
+retval += readFromDb(ID_TPLC005_AnInCf_1, &TPLC005_AnInCf_1);
+retval += readFromDb(ID_TPLC005_AnInCf_2, &TPLC005_AnInCf_2);
+retval += readFromDb(ID_TPLC005_AnIn_1, &TPLC005_AnIn_1);
+retval += readFromDb(ID_TPLC005_AnIn_2, &TPLC005_AnIn_2);
+retval += readFromDb(ID_TPLC005_DigDir_1, &TPLC005_DigDir_1);
+retval += readFromDb(ID_TPLC005_DigDir_2, &TPLC005_DigDir_2);
+retval += readFromDb(ID_TPLC005_DigDir_3, &TPLC005_DigDir_3);
+retval += readFromDb(ID_TPLC005_DigDir_4, &TPLC005_DigDir_4);
+retval += readFromDb(ID_TPLC005_DigDir_5, &TPLC005_DigDir_5);
+retval += readFromDb(ID_TPLC005_DigDir_6, &TPLC005_DigDir_6);
+retval += readFromDb(ID_TPLC005_DigDir_7, &TPLC005_DigDir_7);
+retval += readFromDb(ID_TPLC005_DigDir_8, &TPLC005_DigDir_8);
+retval += readFromDb(ID_TPLC005_DigIn_1, &TPLC005_DigIn_1);
+retval += readFromDb(ID_TPLC005_DigIn_2, &TPLC005_DigIn_2);
+retval += readFromDb(ID_TPLC005_DigIn_3, &TPLC005_DigIn_3);
+retval += readFromDb(ID_TPLC005_DigIn_4, &TPLC005_DigIn_4);
+retval += readFromDb(ID_TPLC005_DigIn_5, &TPLC005_DigIn_5);
+retval += readFromDb(ID_TPLC005_DigIn_6, &TPLC005_DigIn_6);
+retval += readFromDb(ID_TPLC005_DigIn_7, &TPLC005_DigIn_7);
+retval += readFromDb(ID_TPLC005_DigIn_8, &TPLC005_DigIn_8);
+retval += readFromDb(ID_TPLC005_DigOut_1, &TPLC005_DigOut_1);
+retval += readFromDb(ID_TPLC005_DigOut_2, &TPLC005_DigOut_2);
+retval += readFromDb(ID_TPLC005_DigOut_3, &TPLC005_DigOut_3);
+retval += readFromDb(ID_TPLC005_DigOut_4, &TPLC005_DigOut_4);
+retval += readFromDb(ID_TPLC005_DigOut_5, &TPLC005_DigOut_5);
+retval += readFromDb(ID_TPLC005_DigOut_6, &TPLC005_DigOut_6);
+retval += readFromDb(ID_TPLC005_DigOut_7, &TPLC005_DigOut_7);
+retval += readFromDb(ID_TPLC005_DigOut_8, &TPLC005_DigOut_8);
 retval += readFromDb(ID_TEST_COMMAND, &TEST_COMMAND);
 retval += readFromDb(ID_TST_DigIn_1, &TST_DigIn_1);
 retval += readFromDb(ID_TST_DigIn_2, &TST_DigIn_2);
@@ -8865,10 +9348,6 @@ retval += readFromDb(ID_PLC_DigIn_5, &PLC_DigIn_5);
 retval += readFromDb(ID_PLC_DigIn_6, &PLC_DigIn_6);
 retval += readFromDb(ID_PLC_DigIn_7, &PLC_DigIn_7);
 retval += readFromDb(ID_PLC_DigIn_8, &PLC_DigIn_8);
-retval += readFromDb(ID_PLC_DigIn_9, &PLC_DigIn_9);
-retval += readFromDb(ID_PLC_DigIn_10, &PLC_DigIn_10);
-retval += readFromDb(ID_PLC_DigIn_11, &PLC_DigIn_11);
-retval += readFromDb(ID_PLC_DigIn_12, &PLC_DigIn_12);
 retval += readFromDb(ID_PLC_Heartbeat, &PLC_Heartbeat);
 retval += readFromDb(ID_PLC_time, &PLC_time);
 retval += readFromDb(ID_PLC_timeMin, &PLC_timeMin);

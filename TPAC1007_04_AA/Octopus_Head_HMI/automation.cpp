@@ -47,13 +47,14 @@ static char product_name[][15] = {
     /*12*/ "TPAC1007_04_AA",
     /*13*/ "TPAC1007_04_AB",
     /*14*/ "TPAC1007_04_AC",
-    /*15*/ "TPAC1008_01",
-    /*16*/ "TPAC1008_02_AA",
-    /*17*/ "TPAC1008_02_AB",
-    /*18*/ "TPAC1008_02_AC",
-    /*19*/ "TPAC1008_02_AD",
-    /*20*/ "TPAC1008_02_AE",
-    /*21*/ "TPAC1008_02_AF"
+    /*15*/ "TPAC1007_LV",
+    /*16*/ "TPAC1008_01",
+    /*17*/ "TPAC1008_02_AA",
+    /*18*/ "TPAC1008_02_AB",
+    /*19*/ "TPAC1008_02_AC",
+    /*20*/ "TPAC1008_02_AD",
+    /*21*/ "TPAC1008_02_AE",
+    /*22*/ "TPAC1008_02_AF"
 };
 #define RECIPE_MAX 2
 static char recipe_name[][3] = {"-", "1", "2"};
