@@ -980,7 +980,7 @@
         <location filename="page200.ui" line="1231"/>
         <location filename="page200.ui" line="3802"/>
         <location filename="page200.ui" line="3913"/>
-        <location filename="page200.ui" line="4096"/>
+        <location filename="page200.ui" line="4102"/>
         <source>ATCMbutton widget</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1440,12 +1440,7 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="4093"/>
-        <source>page: BACK  status: </source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page200.ui" line="4099"/>
+        <location filename="page200.ui" line="4105"/>
         <source>BACK</source>
         <translation type="unfinished"></translation>
     </message>

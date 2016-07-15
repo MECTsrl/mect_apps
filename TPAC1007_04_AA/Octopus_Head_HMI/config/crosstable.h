@@ -15,6 +15,7 @@ DWORD_BIT <-> int
 extern "C" {
 #endif
 #include <sys/types.h>
+#include "cross_table_utility.h"
  
 #define ID_PRODUCT_ID 1
 extern u_int32_t PRODUCT_ID;
@@ -106,287 +107,377 @@ int doWrite_RESULTS_NG(u_int16_t value);
 int addWrite_RESULTS_NG(u_int16_t value);
 int getStatus_RESULTS_NG();
  
-#define ID_RTU_DigIn_1 210
-extern int RTU_DigIn_1;
-int doWrite_RTU_DigIn_1(int value);
-int addWrite_RTU_DigIn_1(int value);
-int getStatus_RTU_DigIn_1();
+#define ID_RTU_HeartBeat 208
+extern u_int32_t RTU_HeartBeat;
+int doWrite_RTU_HeartBeat(u_int32_t value);
+int addWrite_RTU_HeartBeat(u_int32_t value);
+int getStatus_RTU_HeartBeat();
  
-#define ID_RTU_DigIn_2 211
-extern int RTU_DigIn_2;
-int doWrite_RTU_DigIn_2(int value);
-int addWrite_RTU_DigIn_2(int value);
-int getStatus_RTU_DigIn_2();
- 
-#define ID_RTU_DigIn_3 212
-extern int RTU_DigIn_3;
-int doWrite_RTU_DigIn_3(int value);
-int addWrite_RTU_DigIn_3(int value);
-int getStatus_RTU_DigIn_3();
- 
-#define ID_RTU_DigIn_4 213
-extern int RTU_DigIn_4;
-int doWrite_RTU_DigIn_4(int value);
-int addWrite_RTU_DigIn_4(int value);
-int getStatus_RTU_DigIn_4();
- 
-#define ID_RTU_DigIn_5 214
-extern int RTU_DigIn_5;
-int doWrite_RTU_DigIn_5(int value);
-int addWrite_RTU_DigIn_5(int value);
-int getStatus_RTU_DigIn_5();
- 
-#define ID_RTU_DigIn_6 215
-extern int RTU_DigIn_6;
-int doWrite_RTU_DigIn_6(int value);
-int addWrite_RTU_DigIn_6(int value);
-int getStatus_RTU_DigIn_6();
- 
-#define ID_RTU_DigIn_7 216
-extern int RTU_DigIn_7;
-int doWrite_RTU_DigIn_7(int value);
-int addWrite_RTU_DigIn_7(int value);
-int getStatus_RTU_DigIn_7();
- 
-#define ID_RTU_DigIn_8 217
-extern int RTU_DigIn_8;
-int doWrite_RTU_DigIn_8(int value);
-int addWrite_RTU_DigIn_8(int value);
-int getStatus_RTU_DigIn_8();
- 
-#define ID_RTU_DigIn_9 218
-extern int RTU_DigIn_9;
-int doWrite_RTU_DigIn_9(int value);
-int addWrite_RTU_DigIn_9(int value);
-int getStatus_RTU_DigIn_9();
- 
-#define ID_RTU_DigIn_10 219
-extern int RTU_DigIn_10;
-int doWrite_RTU_DigIn_10(int value);
-int addWrite_RTU_DigIn_10(int value);
-int getStatus_RTU_DigIn_10();
- 
-#define ID_RTU_DigIn_11 220
-extern int RTU_DigIn_11;
-int doWrite_RTU_DigIn_11(int value);
-int addWrite_RTU_DigIn_11(int value);
-int getStatus_RTU_DigIn_11();
- 
-#define ID_RTU_DigIn_12 221
-extern int RTU_DigIn_12;
-int doWrite_RTU_DigIn_12(int value);
-int addWrite_RTU_DigIn_12(int value);
-int getStatus_RTU_DigIn_12();
- 
-#define ID_RTU_DigIn_13 222
-extern int RTU_DigIn_13;
-int doWrite_RTU_DigIn_13(int value);
-int addWrite_RTU_DigIn_13(int value);
-int getStatus_RTU_DigIn_13();
- 
-#define ID_RTU_DigIn_14 223
-extern int RTU_DigIn_14;
-int doWrite_RTU_DigIn_14(int value);
-int addWrite_RTU_DigIn_14(int value);
-int getStatus_RTU_DigIn_14();
- 
-#define ID_RTU_DigIn_15 224
-extern int RTU_DigIn_15;
-int doWrite_RTU_DigIn_15(int value);
-int addWrite_RTU_DigIn_15(int value);
-int getStatus_RTU_DigIn_15();
- 
-#define ID_RTU_DigIn_16 225
-extern int RTU_DigIn_16;
-int doWrite_RTU_DigIn_16(int value);
-int addWrite_RTU_DigIn_16(int value);
-int getStatus_RTU_DigIn_16();
- 
-#define ID_RTU_AnIn_1 226
-extern int16_t RTU_AnIn_1;
-int doWrite_RTU_AnIn_1(int16_t value);
-int addWrite_RTU_AnIn_1(int16_t value);
-int getStatus_RTU_AnIn_1();
- 
-#define ID_RTU_AnIn_2 227
-extern int16_t RTU_AnIn_2;
-int doWrite_RTU_AnIn_2(int16_t value);
-int addWrite_RTU_AnIn_2(int16_t value);
-int getStatus_RTU_AnIn_2();
- 
-#define ID_RTU_Tamb 228
-extern int16_t RTU_Tamb;
-int doWrite_RTU_Tamb(int16_t value);
-int addWrite_RTU_Tamb(int16_t value);
-int getStatus_RTU_Tamb();
- 
-#define ID_RTU_DigOut_1 229
+#define ID_RTU_DigOut_1 210
 extern int RTU_DigOut_1;
 int doWrite_RTU_DigOut_1(int value);
 int addWrite_RTU_DigOut_1(int value);
 int getStatus_RTU_DigOut_1();
  
-#define ID_RTU_DigOut_2 230
+#define ID_RTU_DigOut_2 211
 extern int RTU_DigOut_2;
 int doWrite_RTU_DigOut_2(int value);
 int addWrite_RTU_DigOut_2(int value);
 int getStatus_RTU_DigOut_2();
  
-#define ID_RTU_DigOut_3 231
+#define ID_RTU_DigOut_3 212
 extern int RTU_DigOut_3;
 int doWrite_RTU_DigOut_3(int value);
 int addWrite_RTU_DigOut_3(int value);
 int getStatus_RTU_DigOut_3();
  
-#define ID_RTU_DigOut_4 232
+#define ID_RTU_DigOut_4 213
 extern int RTU_DigOut_4;
 int doWrite_RTU_DigOut_4(int value);
 int addWrite_RTU_DigOut_4(int value);
 int getStatus_RTU_DigOut_4();
  
-#define ID_RTU_DigOut_5 233
+#define ID_RTU_DigOut_5 214
 extern int RTU_DigOut_5;
 int doWrite_RTU_DigOut_5(int value);
 int addWrite_RTU_DigOut_5(int value);
 int getStatus_RTU_DigOut_5();
  
-#define ID_RTU_DigOut_6 234
+#define ID_RTU_DigOut_6 215
 extern int RTU_DigOut_6;
 int doWrite_RTU_DigOut_6(int value);
 int addWrite_RTU_DigOut_6(int value);
 int getStatus_RTU_DigOut_6();
  
-#define ID_RTU_DigOut_7 235
+#define ID_RTU_DigOut_7 216
 extern int RTU_DigOut_7;
 int doWrite_RTU_DigOut_7(int value);
 int addWrite_RTU_DigOut_7(int value);
 int getStatus_RTU_DigOut_7();
  
-#define ID_RTU_DigOut_8 236
+#define ID_RTU_DigOut_8 217
 extern int RTU_DigOut_8;
 int doWrite_RTU_DigOut_8(int value);
 int addWrite_RTU_DigOut_8(int value);
 int getStatus_RTU_DigOut_8();
  
-#define ID_RTU_DigOut_9 237
+#define ID_RTU_DigOut_9 218
 extern int RTU_DigOut_9;
 int doWrite_RTU_DigOut_9(int value);
 int addWrite_RTU_DigOut_9(int value);
 int getStatus_RTU_DigOut_9();
  
-#define ID_RTU_DigOut_10 238
+#define ID_RTU_DigOut_10 219
 extern int RTU_DigOut_10;
 int doWrite_RTU_DigOut_10(int value);
 int addWrite_RTU_DigOut_10(int value);
 int getStatus_RTU_DigOut_10();
  
-#define ID_RTU_DigOut_11 239
+#define ID_RTU_DigOut_11 220
 extern int RTU_DigOut_11;
 int doWrite_RTU_DigOut_11(int value);
 int addWrite_RTU_DigOut_11(int value);
 int getStatus_RTU_DigOut_11();
  
-#define ID_RTU_DigOut_12 240
+#define ID_RTU_DigOut_12 221
 extern int RTU_DigOut_12;
 int doWrite_RTU_DigOut_12(int value);
 int addWrite_RTU_DigOut_12(int value);
 int getStatus_RTU_DigOut_12();
  
-#define ID_RTU_DigOut_13 241
+#define ID_RTU_DigOut_13 222
 extern int RTU_DigOut_13;
 int doWrite_RTU_DigOut_13(int value);
 int addWrite_RTU_DigOut_13(int value);
 int getStatus_RTU_DigOut_13();
  
-#define ID_RTU_DigOut_14 242
+#define ID_RTU_DigOut_14 223
 extern int RTU_DigOut_14;
 int doWrite_RTU_DigOut_14(int value);
 int addWrite_RTU_DigOut_14(int value);
 int getStatus_RTU_DigOut_14();
  
-#define ID_RTU_DigOut_15 243
+#define ID_RTU_DigOut_15 224
 extern int RTU_DigOut_15;
 int doWrite_RTU_DigOut_15(int value);
 int addWrite_RTU_DigOut_15(int value);
 int getStatus_RTU_DigOut_15();
  
-#define ID_RTU_DigOut_16 244
+#define ID_RTU_DigOut_16 225
 extern int RTU_DigOut_16;
 int doWrite_RTU_DigOut_16(int value);
 int addWrite_RTU_DigOut_16(int value);
 int getStatus_RTU_DigOut_16();
  
-#define ID_RTU_AnOutConf_X 245
-extern int16_t RTU_AnOutConf_X;
-int doWrite_RTU_AnOutConf_X(int16_t value);
-int addWrite_RTU_AnOutConf_X(int16_t value);
-int getStatus_RTU_AnOutConf_X();
+#define ID_RTU_DigIn_1 227
+extern int RTU_DigIn_1;
+int doWrite_RTU_DigIn_1(int value);
+int addWrite_RTU_DigIn_1(int value);
+int getStatus_RTU_DigIn_1();
  
-#define ID_RTU_AnOut_1 246
-extern int16_t RTU_AnOut_1;
-int doWrite_RTU_AnOut_1(int16_t value);
-int addWrite_RTU_AnOut_1(int16_t value);
-int getStatus_RTU_AnOut_1();
+#define ID_RTU_DigIn_2 228
+extern int RTU_DigIn_2;
+int doWrite_RTU_DigIn_2(int value);
+int addWrite_RTU_DigIn_2(int value);
+int getStatus_RTU_DigIn_2();
  
-#define ID_RTU_AnOut_2 247
-extern int16_t RTU_AnOut_2;
-int doWrite_RTU_AnOut_2(int16_t value);
-int addWrite_RTU_AnOut_2(int16_t value);
-int getStatus_RTU_AnOut_2();
+#define ID_RTU_DigIn_3 229
+extern int RTU_DigIn_3;
+int doWrite_RTU_DigIn_3(int value);
+int addWrite_RTU_DigIn_3(int value);
+int getStatus_RTU_DigIn_3();
  
-#define ID_RTU_AnOut_3 248
-extern int16_t RTU_AnOut_3;
-int doWrite_RTU_AnOut_3(int16_t value);
-int addWrite_RTU_AnOut_3(int16_t value);
-int getStatus_RTU_AnOut_3();
+#define ID_RTU_DigIn_4 230
+extern int RTU_DigIn_4;
+int doWrite_RTU_DigIn_4(int value);
+int addWrite_RTU_DigIn_4(int value);
+int getStatus_RTU_DigIn_4();
  
-#define ID_RTU_AnOut_4 249
-extern int16_t RTU_AnOut_4;
-int doWrite_RTU_AnOut_4(int16_t value);
-int addWrite_RTU_AnOut_4(int16_t value);
-int getStatus_RTU_AnOut_4();
+#define ID_RTU_DigIn_5 231
+extern int RTU_DigIn_5;
+int doWrite_RTU_DigIn_5(int value);
+int addWrite_RTU_DigIn_5(int value);
+int getStatus_RTU_DigIn_5();
  
-#define ID_RTU_AnOut_5 250
-extern int16_t RTU_AnOut_5;
-int doWrite_RTU_AnOut_5(int16_t value);
-int addWrite_RTU_AnOut_5(int16_t value);
-int getStatus_RTU_AnOut_5();
+#define ID_RTU_DigIn_6 232
+extern int RTU_DigIn_6;
+int doWrite_RTU_DigIn_6(int value);
+int addWrite_RTU_DigIn_6(int value);
+int getStatus_RTU_DigIn_6();
  
-#define ID_RTU_AnOut_6 251
-extern int16_t RTU_AnOut_6;
-int doWrite_RTU_AnOut_6(int16_t value);
-int addWrite_RTU_AnOut_6(int16_t value);
-int getStatus_RTU_AnOut_6();
+#define ID_RTU_DigIn_7 233
+extern int RTU_DigIn_7;
+int doWrite_RTU_DigIn_7(int value);
+int addWrite_RTU_DigIn_7(int value);
+int getStatus_RTU_DigIn_7();
  
-#define ID_RTU_AnOut_7 252
-extern int16_t RTU_AnOut_7;
-int doWrite_RTU_AnOut_7(int16_t value);
-int addWrite_RTU_AnOut_7(int16_t value);
-int getStatus_RTU_AnOut_7();
+#define ID_RTU_DigIn_8 234
+extern int RTU_DigIn_8;
+int doWrite_RTU_DigIn_8(int value);
+int addWrite_RTU_DigIn_8(int value);
+int getStatus_RTU_DigIn_8();
  
-#define ID_RTU_AnOut_8 253
-extern int16_t RTU_AnOut_8;
-int doWrite_RTU_AnOut_8(int16_t value);
-int addWrite_RTU_AnOut_8(int16_t value);
-int getStatus_RTU_AnOut_8();
+#define ID_RTU_DigIn_9 235
+extern int RTU_DigIn_9;
+int doWrite_RTU_DigIn_9(int value);
+int addWrite_RTU_DigIn_9(int value);
+int getStatus_RTU_DigIn_9();
  
-#define ID_RTU_AnInConf_1 254
+#define ID_RTU_DigIn_10 236
+extern int RTU_DigIn_10;
+int doWrite_RTU_DigIn_10(int value);
+int addWrite_RTU_DigIn_10(int value);
+int getStatus_RTU_DigIn_10();
+ 
+#define ID_RTU_DigIn_11 237
+extern int RTU_DigIn_11;
+int doWrite_RTU_DigIn_11(int value);
+int addWrite_RTU_DigIn_11(int value);
+int getStatus_RTU_DigIn_11();
+ 
+#define ID_RTU_DigIn_12 238
+extern int RTU_DigIn_12;
+int doWrite_RTU_DigIn_12(int value);
+int addWrite_RTU_DigIn_12(int value);
+int getStatus_RTU_DigIn_12();
+ 
+#define ID_RTU_DigIn_13 239
+extern int RTU_DigIn_13;
+int doWrite_RTU_DigIn_13(int value);
+int addWrite_RTU_DigIn_13(int value);
+int getStatus_RTU_DigIn_13();
+ 
+#define ID_RTU_DigIn_14 240
+extern int RTU_DigIn_14;
+int doWrite_RTU_DigIn_14(int value);
+int addWrite_RTU_DigIn_14(int value);
+int getStatus_RTU_DigIn_14();
+ 
+#define ID_RTU_DigIn_15 241
+extern int RTU_DigIn_15;
+int doWrite_RTU_DigIn_15(int value);
+int addWrite_RTU_DigIn_15(int value);
+int getStatus_RTU_DigIn_15();
+ 
+#define ID_RTU_DigIn_16 242
+extern int RTU_DigIn_16;
+int doWrite_RTU_DigIn_16(int value);
+int addWrite_RTU_DigIn_16(int value);
+int getStatus_RTU_DigIn_16();
+ 
+#define ID_RTU_Tamb 244
+extern int16_t RTU_Tamb;
+int doWrite_RTU_Tamb(int16_t value);
+int addWrite_RTU_Tamb(int16_t value);
+int getStatus_RTU_Tamb();
+ 
+#define ID_RTU_AnInConf_1 245
 extern u_int16_t RTU_AnInConf_1;
 int doWrite_RTU_AnInConf_1(u_int16_t value);
 int addWrite_RTU_AnInConf_1(u_int16_t value);
 int getStatus_RTU_AnInConf_1();
  
-#define ID_RTU_AnInConf_2 255
+#define ID_RTU_AnInConf_2 246
 extern u_int16_t RTU_AnInConf_2;
 int doWrite_RTU_AnInConf_2(u_int16_t value);
 int addWrite_RTU_AnInConf_2(u_int16_t value);
 int getStatus_RTU_AnInConf_2();
  
-#define ID_RTU_HeartBeat 256
-extern u_int32_t RTU_HeartBeat;
-int doWrite_RTU_HeartBeat(u_int32_t value);
-int addWrite_RTU_HeartBeat(u_int32_t value);
-int getStatus_RTU_HeartBeat();
+#define ID_RTU_AnIn_1 247
+extern int16_t RTU_AnIn_1;
+int doWrite_RTU_AnIn_1(int16_t value);
+int addWrite_RTU_AnIn_1(int16_t value);
+int getStatus_RTU_AnIn_1();
+ 
+#define ID_RTU_AnIn_2 248
+extern int16_t RTU_AnIn_2;
+int doWrite_RTU_AnIn_2(int16_t value);
+int addWrite_RTU_AnIn_2(int16_t value);
+int getStatus_RTU_AnIn_2();
+ 
+#define ID_RTU_LocDigDir_1 249
+extern int RTU_LocDigDir_1;
+int doWrite_RTU_LocDigDir_1(int value);
+int addWrite_RTU_LocDigDir_1(int value);
+int getStatus_RTU_LocDigDir_1();
+ 
+#define ID_RTU_LocDigDir_2 250
+extern int RTU_LocDigDir_2;
+int doWrite_RTU_LocDigDir_2(int value);
+int addWrite_RTU_LocDigDir_2(int value);
+int getStatus_RTU_LocDigDir_2();
+ 
+#define ID_RTU_LocDigDir_3 251
+extern int RTU_LocDigDir_3;
+int doWrite_RTU_LocDigDir_3(int value);
+int addWrite_RTU_LocDigDir_3(int value);
+int getStatus_RTU_LocDigDir_3();
+ 
+#define ID_RTU_LocDigDir_4 252
+extern int RTU_LocDigDir_4;
+int doWrite_RTU_LocDigDir_4(int value);
+int addWrite_RTU_LocDigDir_4(int value);
+int getStatus_RTU_LocDigDir_4();
+ 
+#define ID_RTU_LocDigDir_5 253
+extern int RTU_LocDigDir_5;
+int doWrite_RTU_LocDigDir_5(int value);
+int addWrite_RTU_LocDigDir_5(int value);
+int getStatus_RTU_LocDigDir_5();
+ 
+#define ID_RTU_LocDigDir_6 254
+extern int RTU_LocDigDir_6;
+int doWrite_RTU_LocDigDir_6(int value);
+int addWrite_RTU_LocDigDir_6(int value);
+int getStatus_RTU_LocDigDir_6();
+ 
+#define ID_RTU_LocDigDir_7 255
+extern int RTU_LocDigDir_7;
+int doWrite_RTU_LocDigDir_7(int value);
+int addWrite_RTU_LocDigDir_7(int value);
+int getStatus_RTU_LocDigDir_7();
+ 
+#define ID_RTU_LocDigDir_8 256
+extern int RTU_LocDigDir_8;
+int doWrite_RTU_LocDigDir_8(int value);
+int addWrite_RTU_LocDigDir_8(int value);
+int getStatus_RTU_LocDigDir_8();
+ 
+#define ID_RTU_LocDigIn_1 257
+extern int RTU_LocDigIn_1;
+int doWrite_RTU_LocDigIn_1(int value);
+int addWrite_RTU_LocDigIn_1(int value);
+int getStatus_RTU_LocDigIn_1();
+ 
+#define ID_RTU_LocDigIn_2 258
+extern int RTU_LocDigIn_2;
+int doWrite_RTU_LocDigIn_2(int value);
+int addWrite_RTU_LocDigIn_2(int value);
+int getStatus_RTU_LocDigIn_2();
+ 
+#define ID_RTU_LocDigIn_3 259
+extern int RTU_LocDigIn_3;
+int doWrite_RTU_LocDigIn_3(int value);
+int addWrite_RTU_LocDigIn_3(int value);
+int getStatus_RTU_LocDigIn_3();
+ 
+#define ID_RTU_LocDigIn_4 260
+extern int RTU_LocDigIn_4;
+int doWrite_RTU_LocDigIn_4(int value);
+int addWrite_RTU_LocDigIn_4(int value);
+int getStatus_RTU_LocDigIn_4();
+ 
+#define ID_RTU_LocDigIn_5 261
+extern int RTU_LocDigIn_5;
+int doWrite_RTU_LocDigIn_5(int value);
+int addWrite_RTU_LocDigIn_5(int value);
+int getStatus_RTU_LocDigIn_5();
+ 
+#define ID_RTU_LocDigIn_6 262
+extern int RTU_LocDigIn_6;
+int doWrite_RTU_LocDigIn_6(int value);
+int addWrite_RTU_LocDigIn_6(int value);
+int getStatus_RTU_LocDigIn_6();
+ 
+#define ID_RTU_LocDigIn_7 263
+extern int RTU_LocDigIn_7;
+int doWrite_RTU_LocDigIn_7(int value);
+int addWrite_RTU_LocDigIn_7(int value);
+int getStatus_RTU_LocDigIn_7();
+ 
+#define ID_RTU_LocDigIn_8 264
+extern int RTU_LocDigIn_8;
+int doWrite_RTU_LocDigIn_8(int value);
+int addWrite_RTU_LocDigIn_8(int value);
+int getStatus_RTU_LocDigIn_8();
+ 
+#define ID_RTU_LocDigOut_1 265
+extern int RTU_LocDigOut_1;
+int doWrite_RTU_LocDigOut_1(int value);
+int addWrite_RTU_LocDigOut_1(int value);
+int getStatus_RTU_LocDigOut_1();
+ 
+#define ID_RTU_LocDigOut_2 266
+extern int RTU_LocDigOut_2;
+int doWrite_RTU_LocDigOut_2(int value);
+int addWrite_RTU_LocDigOut_2(int value);
+int getStatus_RTU_LocDigOut_2();
+ 
+#define ID_RTU_LocDigOut_3 267
+extern int RTU_LocDigOut_3;
+int doWrite_RTU_LocDigOut_3(int value);
+int addWrite_RTU_LocDigOut_3(int value);
+int getStatus_RTU_LocDigOut_3();
+ 
+#define ID_RTU_LocDigOut_4 268
+extern int RTU_LocDigOut_4;
+int doWrite_RTU_LocDigOut_4(int value);
+int addWrite_RTU_LocDigOut_4(int value);
+int getStatus_RTU_LocDigOut_4();
+ 
+#define ID_RTU_LocDigOut_5 269
+extern int RTU_LocDigOut_5;
+int doWrite_RTU_LocDigOut_5(int value);
+int addWrite_RTU_LocDigOut_5(int value);
+int getStatus_RTU_LocDigOut_5();
+ 
+#define ID_RTU_LocDigOut_6 270
+extern int RTU_LocDigOut_6;
+int doWrite_RTU_LocDigOut_6(int value);
+int addWrite_RTU_LocDigOut_6(int value);
+int getStatus_RTU_LocDigOut_6();
+ 
+#define ID_RTU_LocDigOut_7 271
+extern int RTU_LocDigOut_7;
+int doWrite_RTU_LocDigOut_7(int value);
+int addWrite_RTU_LocDigOut_7(int value);
+int getStatus_RTU_LocDigOut_7();
+ 
+#define ID_RTU_LocDigOut_8 272
+extern int RTU_LocDigOut_8;
+int doWrite_RTU_LocDigOut_8(int value);
+int addWrite_RTU_LocDigOut_8(int value);
+int getStatus_RTU_LocDigOut_8();
  
 #define ID_TST_DigIn_1 1001
 extern int TST_DigIn_1;

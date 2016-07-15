@@ -699,7 +699,7 @@
     </message>
     <message>
         <location filename="page200.ui" line="53"/>
-        <location filename="page200.ui" line="1681"/>
+        <location filename="page200.ui" line="1492"/>
         <source>Octopus Head</source>
         <translation type="unfinished"></translation>
     </message>
@@ -707,21 +707,29 @@
         <location filename="page200.ui" line="106"/>
         <location filename="page200.ui" line="491"/>
         <location filename="page200.ui" line="690"/>
-        <location filename="page200.ui" line="1127"/>
-        <location filename="page200.ui" line="1253"/>
-        <location filename="page200.ui" line="1622"/>
-        <location filename="page200.ui" line="1938"/>
-        <location filename="page200.ui" line="2024"/>
-        <location filename="page200.ui" line="2458"/>
-        <location filename="page200.ui" line="2627"/>
-        <location filename="page200.ui" line="2836"/>
-        <location filename="page200.ui" line="2897"/>
-        <location filename="page200.ui" line="3214"/>
-        <location filename="page200.ui" line="3372"/>
-        <location filename="page200.ui" line="3683"/>
-        <location filename="page200.ui" line="3791"/>
-        <location filename="page200.ui" line="3947"/>
-        <location filename="page200.ui" line="4002"/>
+        <location filename="page200.ui" line="1065"/>
+        <location filename="page200.ui" line="1126"/>
+        <location filename="page200.ui" line="1433"/>
+        <location filename="page200.ui" line="1687"/>
+        <location filename="page200.ui" line="1773"/>
+        <location filename="page200.ui" line="2083"/>
+        <location filename="page200.ui" line="2252"/>
+        <location filename="page200.ui" line="2399"/>
+        <location filename="page200.ui" line="2460"/>
+        <location filename="page200.ui" line="2653"/>
+        <location filename="page200.ui" line="2811"/>
+        <location filename="page200.ui" line="3122"/>
+        <location filename="page200.ui" line="3230"/>
+        <location filename="page200.ui" line="3386"/>
+        <location filename="page200.ui" line="3441"/>
+        <location filename="page200.ui" line="3532"/>
+        <location filename="page200.ui" line="3593"/>
+        <location filename="page200.ui" line="3654"/>
+        <location filename="page200.ui" line="3715"/>
+        <location filename="page200.ui" line="3776"/>
+        <location filename="page200.ui" line="3837"/>
+        <location filename="page200.ui" line="3898"/>
+        <location filename="page200.ui" line="3959"/>
         <source>ATCMbutton widget</source>
         <translation type="unfinished"></translation>
     </message>
@@ -754,57 +762,30 @@
     </message>
     <message>
         <location filename="page200.ui" line="259"/>
-        <location filename="page200.ui" line="934"/>
-        <location filename="page200.ui" line="1188"/>
-        <location filename="page200.ui" line="1437"/>
-        <location filename="page200.ui" line="1499"/>
-        <location filename="page200.ui" line="1708"/>
-        <location filename="page200.ui" line="1815"/>
-        <location filename="page200.ui" line="2158"/>
-        <location filename="page200.ui" line="2273"/>
-        <location filename="page200.ui" line="2396"/>
-        <location filename="page200.ui" line="2688"/>
-        <location filename="page200.ui" line="2967"/>
-        <location filename="page200.ui" line="3029"/>
-        <location filename="page200.ui" line="3152"/>
-        <location filename="page200.ui" line="3444"/>
-        <location filename="page200.ui" line="3618"/>
+        <location filename="page200.ui" line="1310"/>
+        <location filename="page200.ui" line="1564"/>
+        <location filename="page200.ui" line="1907"/>
+        <location filename="page200.ui" line="2530"/>
+        <location filename="page200.ui" line="2883"/>
+        <location filename="page200.ui" line="3057"/>
         <source>ATCMlabel widget</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="page200.ui" line="268"/>
         <location filename="page200.ui" line="271"/>
-        <location filename="page200.ui" line="943"/>
-        <location filename="page200.ui" line="946"/>
-        <location filename="page200.ui" line="1200"/>
-        <location filename="page200.ui" line="1203"/>
-        <location filename="page200.ui" line="1446"/>
-        <location filename="page200.ui" line="1449"/>
-        <location filename="page200.ui" line="1508"/>
-        <location filename="page200.ui" line="1511"/>
-        <location filename="page200.ui" line="1717"/>
-        <location filename="page200.ui" line="1720"/>
-        <location filename="page200.ui" line="1824"/>
-        <location filename="page200.ui" line="1827"/>
-        <location filename="page200.ui" line="2170"/>
-        <location filename="page200.ui" line="2173"/>
-        <location filename="page200.ui" line="2282"/>
-        <location filename="page200.ui" line="2285"/>
-        <location filename="page200.ui" line="2405"/>
-        <location filename="page200.ui" line="2408"/>
-        <location filename="page200.ui" line="2697"/>
-        <location filename="page200.ui" line="2700"/>
-        <location filename="page200.ui" line="2976"/>
-        <location filename="page200.ui" line="2979"/>
-        <location filename="page200.ui" line="3038"/>
-        <location filename="page200.ui" line="3041"/>
-        <location filename="page200.ui" line="3161"/>
-        <location filename="page200.ui" line="3164"/>
-        <location filename="page200.ui" line="3456"/>
-        <location filename="page200.ui" line="3459"/>
-        <location filename="page200.ui" line="3630"/>
-        <location filename="page200.ui" line="3633"/>
+        <location filename="page200.ui" line="1319"/>
+        <location filename="page200.ui" line="1322"/>
+        <location filename="page200.ui" line="1573"/>
+        <location filename="page200.ui" line="1576"/>
+        <location filename="page200.ui" line="1919"/>
+        <location filename="page200.ui" line="1922"/>
+        <location filename="page200.ui" line="2539"/>
+        <location filename="page200.ui" line="2542"/>
+        <location filename="page200.ui" line="2895"/>
+        <location filename="page200.ui" line="2898"/>
+        <location filename="page200.ui" line="3069"/>
+        <location filename="page200.ui" line="3072"/>
         <source>0</source>
         <translation type="unfinished"></translation>
     </message>
@@ -833,27 +814,27 @@
         <location filename="page200.ui" line="768"/>
         <location filename="page200.ui" line="804"/>
         <location filename="page200.ui" line="890"/>
-        <location filename="page200.ui" line="988"/>
-        <location filename="page200.ui" line="1083"/>
-        <location filename="page200.ui" line="1306"/>
-        <location filename="page200.ui" line="1392"/>
-        <location filename="page200.ui" line="1578"/>
-        <location filename="page200.ui" line="1762"/>
-        <location filename="page200.ui" line="1869"/>
-        <location filename="page200.ui" line="2077"/>
-        <location filename="page200.ui" line="2113"/>
-        <location filename="page200.ui" line="2327"/>
-        <location filename="page200.ui" line="2511"/>
-        <location filename="page200.ui" line="2547"/>
-        <location filename="page200.ui" line="2583"/>
-        <location filename="page200.ui" line="2792"/>
-        <location filename="page200.ui" line="3108"/>
+        <location filename="page200.ui" line="926"/>
+        <location filename="page200.ui" line="1021"/>
+        <location filename="page200.ui" line="1179"/>
+        <location filename="page200.ui" line="1265"/>
+        <location filename="page200.ui" line="1389"/>
+        <location filename="page200.ui" line="1511"/>
+        <location filename="page200.ui" line="1618"/>
+        <location filename="page200.ui" line="1826"/>
+        <location filename="page200.ui" line="1862"/>
+        <location filename="page200.ui" line="2014"/>
+        <location filename="page200.ui" line="2136"/>
+        <location filename="page200.ui" line="2172"/>
+        <location filename="page200.ui" line="2208"/>
+        <location filename="page200.ui" line="2355"/>
+        <location filename="page200.ui" line="2609"/>
+        <location filename="page200.ui" line="2731"/>
+        <location filename="page200.ui" line="2767"/>
+        <location filename="page200.ui" line="2959"/>
+        <location filename="page200.ui" line="3182"/>
         <location filename="page200.ui" line="3292"/>
-        <location filename="page200.ui" line="3328"/>
-        <location filename="page200.ui" line="3520"/>
-        <location filename="page200.ui" line="3743"/>
-        <location filename="page200.ui" line="3853"/>
-        <location filename="page200.ui" line="4049"/>
+        <location filename="page200.ui" line="3488"/>
         <source>ATCMled widget</source>
         <translation type="unfinished"></translation>
     </message>
@@ -873,8 +854,8 @@
     <message>
         <location filename="page200.ui" line="548"/>
         <location filename="page200.ui" line="554"/>
-        <location filename="page200.ui" line="3211"/>
-        <location filename="page200.ui" line="3223"/>
+        <location filename="page200.ui" line="2650"/>
+        <location filename="page200.ui" line="2662"/>
         <source>RTU_DigOut_12</source>
         <oldsource>PLC_DigOut_12</oldsource>
         <translation type="unfinished"></translation>
@@ -888,15 +869,15 @@
     </message>
     <message>
         <location filename="page200.ui" line="593"/>
-        <location filename="page200.ui" line="1030"/>
-        <location filename="page200.ui" line="3562"/>
-        <location filename="page200.ui" line="3895"/>
+        <location filename="page200.ui" line="968"/>
+        <location filename="page200.ui" line="3001"/>
+        <location filename="page200.ui" line="3334"/>
         <source>ATCMcombobox widget</source>
         <translation type="unfinished"></translation>
     </message>
     <message utf8="true">
         <location filename="page200.ui" line="630"/>
-        <location filename="page200.ui" line="1067"/>
+        <location filename="page200.ui" line="1005"/>
         <source>1;[mA] 4..20;2;[V] 0..10;3;[°C] TCJ;4;[°C] TCK;5;[°C] TCT;6;[°C] PT100E;7;[°C] PT100R;0;--</source>
         <oldsource>1;[mA] 4..20;2;[V] 0..10;3;[°C] TCJ;4;[°C] TCK;5;[°C] TCT;6;[°C] PT100E;7;[°C] PT100R;8;[°C] TCS;9;[°C] TCB;10;[°C] TCR;0;--</oldsource>
         <translation type="unfinished"></translation>
@@ -911,8 +892,8 @@
     <message>
         <location filename="page200.ui" line="687"/>
         <location filename="page200.ui" line="699"/>
-        <location filename="page200.ui" line="3289"/>
-        <location filename="page200.ui" line="3295"/>
+        <location filename="page200.ui" line="2728"/>
+        <location filename="page200.ui" line="2734"/>
         <source>RTU_DigOut_8</source>
         <oldsource>PLC_DigOut_8</oldsource>
         <translation type="unfinished"></translation>
@@ -920,7 +901,9 @@
     <message>
         <location filename="page200.ui" line="715"/>
         <location filename="page200.ui" line="718"/>
-        <location filename="page200.ui" line="3273"/>
+        <location filename="page200.ui" line="2712"/>
+        <location filename="page200.ui" line="3740"/>
+        <location filename="page200.ui" line="3743"/>
         <source>8</source>
         <translation type="unfinished"></translation>
     </message>
@@ -946,84 +929,119 @@
     </message>
     <message>
         <location filename="page200.ui" line="846"/>
-        <location filename="page200.ui" line="2861"/>
-        <location filename="page200.ui" line="2864"/>
+        <location filename="page200.ui" line="2424"/>
+        <location filename="page200.ui" line="2427"/>
+        <location filename="page200.ui" line="3801"/>
+        <location filename="page200.ui" line="3804"/>
         <source>5</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="page200.ui" line="871"/>
-        <location filename="page200.ui" line="1278"/>
-        <location filename="page200.ui" line="1281"/>
+        <location filename="page200.ui" line="1151"/>
+        <location filename="page200.ui" line="1154"/>
+        <location filename="page200.ui" line="3557"/>
+        <location filename="page200.ui" line="3560"/>
         <source>3</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="page200.ui" line="887"/>
         <location filename="page200.ui" line="893"/>
-        <location filename="page200.ui" line="2021"/>
-        <location filename="page200.ui" line="2033"/>
+        <location filename="page200.ui" line="1770"/>
+        <location filename="page200.ui" line="1782"/>
         <source>RTU_DigOut_2</source>
         <oldsource>PLC_DigOut_2</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="2049"/>
-        <location filename="page200.ui" line="2052"/>
-        <location filename="page200.ui" line="2152"/>
-        <location filename="page200.ui" line="2246"/>
+        <location filename="page200.ui" line="1798"/>
+        <location filename="page200.ui" line="1801"/>
+        <location filename="page200.ui" line="1901"/>
+        <location filename="page200.ui" line="1995"/>
+        <location filename="page200.ui" line="3862"/>
+        <location filename="page200.ui" line="3865"/>
         <source>2</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="931"/>
-        <location filename="page200.ui" line="937"/>
-        <source>RTU_AnOut_5</source>
-        <oldsource>PLC_AnOut_5</oldsource>
+        <location filename="page200.ui" line="3529"/>
+        <location filename="page200.ui" line="3541"/>
+        <source>RTU_LocDigOut_3</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="985"/>
-        <location filename="page200.ui" line="991"/>
-        <location filename="page200.ui" line="2833"/>
-        <location filename="page200.ui" line="2845"/>
+        <location filename="page200.ui" line="3590"/>
+        <location filename="page200.ui" line="3602"/>
+        <source>RTU_LocDigOut_4</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="3651"/>
+        <location filename="page200.ui" line="3663"/>
+        <source>RTU_LocDigOut_1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="3712"/>
+        <location filename="page200.ui" line="3724"/>
+        <source>RTU_LocDigOut_8</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="3773"/>
+        <location filename="page200.ui" line="3785"/>
+        <source>RTU_LocDigOut_5</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="3834"/>
+        <location filename="page200.ui" line="3846"/>
+        <source>RTU_LocDigOut_2</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="3895"/>
+        <location filename="page200.ui" line="3907"/>
+        <source>RTU_LocDigOut_6</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="3956"/>
+        <location filename="page200.ui" line="3968"/>
+        <source>RTU_LocDigOut_7</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="923"/>
+        <location filename="page200.ui" line="929"/>
+        <location filename="page200.ui" line="2396"/>
+        <location filename="page200.ui" line="2408"/>
         <source>RTU_DigOut_5</source>
         <oldsource>PLC_DigOut_5</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="1027"/>
-        <location filename="page200.ui" line="1036"/>
+        <location filename="page200.ui" line="965"/>
+        <location filename="page200.ui" line="974"/>
         <source>RTU_AnInConf_1</source>
         <oldsource>PLC_AnInConf_1</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="1080"/>
-        <location filename="page200.ui" line="1086"/>
+        <location filename="page200.ui" line="1018"/>
+        <location filename="page200.ui" line="1024"/>
         <source>RTU_DigIn_7</source>
         <oldsource>PLC_DigIn_7</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="1124"/>
-        <location filename="page200.ui" line="1136"/>
-        <location filename="page200.ui" line="2074"/>
-        <location filename="page200.ui" line="2080"/>
+        <location filename="page200.ui" line="1062"/>
+        <location filename="page200.ui" line="1074"/>
+        <location filename="page200.ui" line="1823"/>
+        <location filename="page200.ui" line="1829"/>
         <source>RTU_DigOut_11</source>
         <oldsource>PLC_DigOut_11</oldsource>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page200.ui" line="928"/>
-        <location filename="page200.ui" line="1493"/>
-        <location filename="page200.ui" line="1702"/>
-        <location filename="page200.ui" line="2267"/>
-        <location filename="page200.ui" line="2390"/>
-        <location filename="page200.ui" line="2682"/>
-        <location filename="page200.ui" line="3023"/>
-        <location filename="page200.ui" line="3146"/>
-        <source>3.33</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1032,390 +1050,332 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="1152"/>
-        <location filename="page200.ui" line="1155"/>
-        <location filename="page200.ui" line="1911"/>
+        <location filename="page200.ui" line="1090"/>
+        <location filename="page200.ui" line="1093"/>
+        <location filename="page200.ui" line="1660"/>
         <source>11</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="1182"/>
-        <source>5.00</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page200.ui" line="1185"/>
-        <location filename="page200.ui" line="1191"/>
-        <source>RTU_AnOutConf_X</source>
-        <oldsource>PLC_AnOutConf_X</oldsource>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page200.ui" line="1194"/>
-        <source> V</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page200.ui" line="1250"/>
-        <location filename="page200.ui" line="1262"/>
-        <location filename="page200.ui" line="2110"/>
-        <location filename="page200.ui" line="2116"/>
+        <location filename="page200.ui" line="1123"/>
+        <location filename="page200.ui" line="1135"/>
+        <location filename="page200.ui" line="1859"/>
+        <location filename="page200.ui" line="1865"/>
         <source>RTU_DigOut_3</source>
         <oldsource>PLC_DigOut_3</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="1303"/>
-        <location filename="page200.ui" line="1309"/>
+        <location filename="page200.ui" line="1176"/>
+        <location filename="page200.ui" line="1182"/>
         <source>RTU_DigIn_2</source>
         <oldsource>PLC_DigIn_2</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="1348"/>
-        <location filename="page200.ui" line="3239"/>
-        <location filename="page200.ui" line="3242"/>
+        <location filename="page200.ui" line="1221"/>
+        <location filename="page200.ui" line="2678"/>
+        <location filename="page200.ui" line="2681"/>
         <source>12</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="1373"/>
+        <location filename="page200.ui" line="1246"/>
         <source>RTU_DigOut_</source>
         <oldsource>PLC_DigOut_</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="1389"/>
-        <location filename="page200.ui" line="1395"/>
+        <location filename="page200.ui" line="1262"/>
+        <location filename="page200.ui" line="1268"/>
         <source>RTU_DigIn_9</source>
         <oldsource>PLC_DigIn_9</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="1431"/>
+        <location filename="page200.ui" line="1304"/>
         <source>84600.00</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="1434"/>
-        <location filename="page200.ui" line="1440"/>
+        <location filename="page200.ui" line="1307"/>
+        <location filename="page200.ui" line="1313"/>
         <source>RTU_HeartBeat</source>
         <oldsource>PLC_HeartBeat</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="1496"/>
-        <location filename="page200.ui" line="1502"/>
-        <source>RTU_AnOut_3</source>
-        <oldsource>PLC_AnOut_3</oldsource>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page200.ui" line="1559"/>
+        <location filename="page200.ui" line="1370"/>
         <source>RTU_AnIn_</source>
         <oldsource>PLC_AnIn_</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="1575"/>
-        <location filename="page200.ui" line="1581"/>
+        <location filename="page200.ui" line="1386"/>
+        <location filename="page200.ui" line="1392"/>
         <source>RTU_DigIn_1</source>
         <oldsource>PLC_DigIn_1</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="1619"/>
-        <location filename="page200.ui" line="1631"/>
-        <location filename="page200.ui" line="3105"/>
-        <location filename="page200.ui" line="3111"/>
+        <location filename="page200.ui" line="1430"/>
+        <location filename="page200.ui" line="1442"/>
+        <location filename="page200.ui" line="2606"/>
+        <location filename="page200.ui" line="2612"/>
         <source>RTU_DigOut_7</source>
         <oldsource>PLC_DigOut_7</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="1647"/>
-        <location filename="page200.ui" line="1650"/>
-        <location filename="page200.ui" line="2369"/>
+        <location filename="page200.ui" line="1458"/>
+        <location filename="page200.ui" line="1461"/>
+        <location filename="page200.ui" line="2056"/>
+        <location filename="page200.ui" line="3984"/>
+        <location filename="page200.ui" line="3987"/>
         <source>7</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="1705"/>
-        <location filename="page200.ui" line="1711"/>
-        <source>RTU_AnOut_2</source>
-        <oldsource>PLC_AnOut_2</oldsource>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page200.ui" line="1759"/>
-        <location filename="page200.ui" line="1765"/>
+        <location filename="page200.ui" line="1508"/>
+        <location filename="page200.ui" line="1514"/>
         <source>RTU_DigIn_11</source>
         <oldsource>PLC_DigIn_11</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="1806"/>
-        <location filename="page200.ui" line="2958"/>
+        <location filename="page200.ui" line="1555"/>
+        <location filename="page200.ui" line="2521"/>
         <source>9.876</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="1812"/>
-        <location filename="page200.ui" line="1818"/>
+        <location filename="page200.ui" line="1561"/>
+        <location filename="page200.ui" line="1567"/>
         <source>RTU_AnIn_2</source>
         <oldsource>PLC_AnIn_2</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="1866"/>
-        <location filename="page200.ui" line="1872"/>
+        <location filename="page200.ui" line="1615"/>
+        <location filename="page200.ui" line="1621"/>
         <source>RTU_DigIn_6</source>
         <oldsource>PLC_DigIn_6</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="1935"/>
-        <location filename="page200.ui" line="1947"/>
-        <location filename="page200.ui" line="2789"/>
-        <location filename="page200.ui" line="2795"/>
+        <location filename="page200.ui" line="1684"/>
+        <location filename="page200.ui" line="1696"/>
+        <location filename="page200.ui" line="2352"/>
+        <location filename="page200.ui" line="2358"/>
         <source>RTU_DigOut_10</source>
         <oldsource>PLC_DigOut_10</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="1963"/>
-        <location filename="page200.ui" line="1966"/>
-        <location filename="page200.ui" line="2748"/>
+        <location filename="page200.ui" line="1712"/>
+        <location filename="page200.ui" line="1715"/>
+        <location filename="page200.ui" line="2311"/>
         <source>10</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="1997"/>
-        <location filename="page200.ui" line="2652"/>
-        <location filename="page200.ui" line="2655"/>
+        <location filename="page200.ui" line="1746"/>
+        <location filename="page200.ui" line="2277"/>
+        <location filename="page200.ui" line="2280"/>
+        <location filename="page200.ui" line="3923"/>
+        <location filename="page200.ui" line="3926"/>
         <source>6</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="2155"/>
-        <location filename="page200.ui" line="2161"/>
+        <location filename="page200.ui" line="1904"/>
+        <location filename="page200.ui" line="1910"/>
         <source>RTU_Tamb</source>
         <oldsource>PLC_Tamb</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message utf8="true">
-        <location filename="page200.ui" line="2164"/>
+        <location filename="page200.ui" line="1913"/>
         <source>° C</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="2221"/>
-        <location filename="page200.ui" line="3397"/>
-        <location filename="page200.ui" line="3400"/>
+        <location filename="page200.ui" line="1970"/>
+        <location filename="page200.ui" line="2836"/>
+        <location filename="page200.ui" line="2839"/>
+        <location filename="page200.ui" line="3618"/>
+        <location filename="page200.ui" line="3621"/>
         <source>4</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="2270"/>
-        <location filename="page200.ui" line="2276"/>
-        <source>RTU_AnOut_4</source>
-        <oldsource>PLC_AnOut_4</oldsource>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page200.ui" line="2324"/>
-        <location filename="page200.ui" line="2330"/>
-        <location filename="page200.ui" line="3369"/>
-        <location filename="page200.ui" line="3381"/>
+        <location filename="page200.ui" line="2011"/>
+        <location filename="page200.ui" line="2017"/>
+        <location filename="page200.ui" line="2808"/>
+        <location filename="page200.ui" line="2820"/>
         <source>RTU_DigOut_4</source>
         <oldsource>PLC_DigOut_4</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="2393"/>
-        <location filename="page200.ui" line="2399"/>
-        <source>RTU_AnOut_1</source>
-        <oldsource>PLC_AnOut_1</oldsource>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page200.ui" line="2455"/>
-        <location filename="page200.ui" line="2467"/>
-        <location filename="page200.ui" line="2508"/>
-        <location filename="page200.ui" line="2514"/>
+        <location filename="page200.ui" line="2080"/>
+        <location filename="page200.ui" line="2092"/>
+        <location filename="page200.ui" line="2133"/>
+        <location filename="page200.ui" line="2139"/>
         <source>RTU_DigOut_9</source>
         <oldsource>PLC_DigOut_9</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="2483"/>
-        <location filename="page200.ui" line="2486"/>
-        <location filename="page200.ui" line="2773"/>
+        <location filename="page200.ui" line="2108"/>
+        <location filename="page200.ui" line="2111"/>
+        <location filename="page200.ui" line="2336"/>
         <source>9</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="2544"/>
-        <location filename="page200.ui" line="2550"/>
-        <location filename="page200.ui" line="2894"/>
-        <location filename="page200.ui" line="2906"/>
+        <location filename="page200.ui" line="2169"/>
+        <location filename="page200.ui" line="2175"/>
+        <location filename="page200.ui" line="2457"/>
+        <location filename="page200.ui" line="2469"/>
         <source>RTU_DigOut_1</source>
         <oldsource>PLC_DigOut_1</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="2580"/>
-        <location filename="page200.ui" line="2586"/>
+        <location filename="page200.ui" line="2205"/>
+        <location filename="page200.ui" line="2211"/>
         <source>RTU_DigIn_4</source>
         <oldsource>PLC_DigIn_4</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="2624"/>
-        <location filename="page200.ui" line="2636"/>
-        <location filename="page200.ui" line="3325"/>
-        <location filename="page200.ui" line="3331"/>
+        <location filename="page200.ui" line="2249"/>
+        <location filename="page200.ui" line="2261"/>
+        <location filename="page200.ui" line="2764"/>
+        <location filename="page200.ui" line="2770"/>
         <source>RTU_DigOut_6</source>
         <oldsource>PLC_DigOut_6</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="2685"/>
-        <location filename="page200.ui" line="2691"/>
-        <source>RTU_AnOut_6</source>
-        <oldsource>PLC_AnOut_6</oldsource>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page200.ui" line="2922"/>
-        <location filename="page200.ui" line="2925"/>
-        <location filename="page200.ui" line="3089"/>
+        <location filename="page200.ui" line="2485"/>
+        <location filename="page200.ui" line="2488"/>
+        <location filename="page200.ui" line="2590"/>
+        <location filename="page200.ui" line="3679"/>
+        <location filename="page200.ui" line="3682"/>
         <source>1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="2964"/>
-        <location filename="page200.ui" line="2970"/>
+        <location filename="page200.ui" line="2527"/>
+        <location filename="page200.ui" line="2533"/>
         <source>RTU_AnIn_1</source>
         <oldsource>PLC_AnIn_1</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="3026"/>
-        <location filename="page200.ui" line="3032"/>
-        <source>RTU_AnOut_7</source>
-        <oldsource>PLC_AnOut_7</oldsource>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page200.ui" line="3149"/>
-        <location filename="page200.ui" line="3155"/>
-        <source>RTU_AnOut_8</source>
-        <oldsource>PLC_AnOut_8</oldsource>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page200.ui" line="3441"/>
-        <location filename="page200.ui" line="3447"/>
+        <location filename="page200.ui" line="2880"/>
+        <location filename="page200.ui" line="2886"/>
         <source>TEST_STEP</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="3500"/>
+        <location filename="page200.ui" line="2939"/>
         <source>PWR
 ON</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="3517"/>
-        <location filename="page200.ui" line="3523"/>
+        <location filename="page200.ui" line="2956"/>
+        <location filename="page200.ui" line="2962"/>
         <source>PLC_DigOut_2</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="3559"/>
-        <location filename="page200.ui" line="3565"/>
+        <location filename="page200.ui" line="2998"/>
+        <location filename="page200.ui" line="3004"/>
         <source>TESTx_STATUS</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="3593"/>
+        <location filename="page200.ui" line="3032"/>
         <source>0;x: LOCAL;216;x: REMOTE;42;x: DONE</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="3615"/>
-        <location filename="page200.ui" line="3621"/>
+        <location filename="page200.ui" line="3054"/>
+        <location filename="page200.ui" line="3060"/>
         <source>TEST_STEP_MAX</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="3680"/>
-        <location filename="page200.ui" line="3692"/>
+        <location filename="page200.ui" line="3119"/>
+        <location filename="page200.ui" line="3131"/>
         <source>DO_REPEAT</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="3715"/>
-        <location filename="page200.ui" line="3718"/>
+        <location filename="page200.ui" line="3154"/>
+        <location filename="page200.ui" line="3157"/>
         <source>REPEAT</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="3740"/>
-        <location filename="page200.ui" line="3746"/>
+        <location filename="page200.ui" line="3179"/>
+        <location filename="page200.ui" line="3185"/>
         <source>PLC_DigIn_1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="3788"/>
-        <location filename="page200.ui" line="3800"/>
+        <location filename="page200.ui" line="3227"/>
+        <location filename="page200.ui" line="3239"/>
         <source>AUTOMATIC</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="3823"/>
-        <location filename="page200.ui" line="3827"/>
+        <location filename="page200.ui" line="3262"/>
+        <location filename="page200.ui" line="3266"/>
         <source>AUTO
 (GO)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="3850"/>
-        <location filename="page200.ui" line="3856"/>
+        <location filename="page200.ui" line="3289"/>
+        <location filename="page200.ui" line="3295"/>
         <source>PLC_DigOut_3</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="3892"/>
-        <location filename="page200.ui" line="3898"/>
+        <location filename="page200.ui" line="3331"/>
+        <location filename="page200.ui" line="3337"/>
         <source>TEST2_STATUS</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="3926"/>
+        <location filename="page200.ui" line="3365"/>
         <source>0;2: LOCAL;216;2: REMOTE;42;2: DONE</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="3950"/>
+        <location filename="page200.ui" line="3389"/>
         <source>page300</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="3969"/>
-        <location filename="page200.ui" line="3972"/>
+        <location filename="page200.ui" line="3408"/>
+        <location filename="page200.ui" line="3411"/>
         <source>page300 Octopus</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="4046"/>
-        <location filename="page200.ui" line="4052"/>
+        <location filename="page200.ui" line="3485"/>
+        <location filename="page200.ui" line="3491"/>
         <source>PLC_DigIn_4</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="4005"/>
+        <location filename="page200.ui" line="3444"/>
         <source>page201</source>
         <translation type="unfinished"></translation>
     </message>

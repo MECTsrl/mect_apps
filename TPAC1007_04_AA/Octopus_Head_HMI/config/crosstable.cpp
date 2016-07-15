@@ -10,7 +10,6 @@ WORD_BIT  <-> int
 DWORD_BIT <-> int
 */ 
 #include "crosstable.h"
-#include "cross_table_utility.h"
  
 u_int32_t PRODUCT_ID = 0;
 u_int32_t SERIAL_NUMBER = 0;
@@ -27,25 +26,7 @@ u_int16_t STATUS = 0;
 int16_t RESULT = 0;
 u_int16_t RESULTS_OK = 0;
 u_int16_t RESULTS_NG = 0;
-int RTU_DigIn_1 = 0;
-int RTU_DigIn_2 = 0;
-int RTU_DigIn_3 = 0;
-int RTU_DigIn_4 = 0;
-int RTU_DigIn_5 = 0;
-int RTU_DigIn_6 = 0;
-int RTU_DigIn_7 = 0;
-int RTU_DigIn_8 = 0;
-int RTU_DigIn_9 = 0;
-int RTU_DigIn_10 = 0;
-int RTU_DigIn_11 = 0;
-int RTU_DigIn_12 = 0;
-int RTU_DigIn_13 = 0;
-int RTU_DigIn_14 = 0;
-int RTU_DigIn_15 = 0;
-int RTU_DigIn_16 = 0;
-int16_t RTU_AnIn_1 = 0;
-int16_t RTU_AnIn_2 = 0;
-int16_t RTU_Tamb = 0;
+u_int32_t RTU_HeartBeat = 0;
 int RTU_DigOut_1 = 0;
 int RTU_DigOut_2 = 0;
 int RTU_DigOut_3 = 0;
@@ -62,18 +43,51 @@ int RTU_DigOut_13 = 0;
 int RTU_DigOut_14 = 0;
 int RTU_DigOut_15 = 0;
 int RTU_DigOut_16 = 0;
-int16_t RTU_AnOutConf_X = 0;
-int16_t RTU_AnOut_1 = 0;
-int16_t RTU_AnOut_2 = 0;
-int16_t RTU_AnOut_3 = 0;
-int16_t RTU_AnOut_4 = 0;
-int16_t RTU_AnOut_5 = 0;
-int16_t RTU_AnOut_6 = 0;
-int16_t RTU_AnOut_7 = 0;
-int16_t RTU_AnOut_8 = 0;
+int RTU_DigIn_1 = 0;
+int RTU_DigIn_2 = 0;
+int RTU_DigIn_3 = 0;
+int RTU_DigIn_4 = 0;
+int RTU_DigIn_5 = 0;
+int RTU_DigIn_6 = 0;
+int RTU_DigIn_7 = 0;
+int RTU_DigIn_8 = 0;
+int RTU_DigIn_9 = 0;
+int RTU_DigIn_10 = 0;
+int RTU_DigIn_11 = 0;
+int RTU_DigIn_12 = 0;
+int RTU_DigIn_13 = 0;
+int RTU_DigIn_14 = 0;
+int RTU_DigIn_15 = 0;
+int RTU_DigIn_16 = 0;
+int16_t RTU_Tamb = 0;
 u_int16_t RTU_AnInConf_1 = 0;
 u_int16_t RTU_AnInConf_2 = 0;
-u_int32_t RTU_HeartBeat = 0;
+int16_t RTU_AnIn_1 = 0;
+int16_t RTU_AnIn_2 = 0;
+int RTU_LocDigDir_1 = 0;
+int RTU_LocDigDir_2 = 0;
+int RTU_LocDigDir_3 = 0;
+int RTU_LocDigDir_4 = 0;
+int RTU_LocDigDir_5 = 0;
+int RTU_LocDigDir_6 = 0;
+int RTU_LocDigDir_7 = 0;
+int RTU_LocDigDir_8 = 0;
+int RTU_LocDigIn_1 = 0;
+int RTU_LocDigIn_2 = 0;
+int RTU_LocDigIn_3 = 0;
+int RTU_LocDigIn_4 = 0;
+int RTU_LocDigIn_5 = 0;
+int RTU_LocDigIn_6 = 0;
+int RTU_LocDigIn_7 = 0;
+int RTU_LocDigIn_8 = 0;
+int RTU_LocDigOut_1 = 0;
+int RTU_LocDigOut_2 = 0;
+int RTU_LocDigOut_3 = 0;
+int RTU_LocDigOut_4 = 0;
+int RTU_LocDigOut_5 = 0;
+int RTU_LocDigOut_6 = 0;
+int RTU_LocDigOut_7 = 0;
+int RTU_LocDigOut_8 = 0;
 int TST_DigIn_1 = 0;
 int TST_DigIn_2 = 0;
 int TST_DigIn_3 = 0;
@@ -1311,345 +1325,21 @@ return getStatus(ID_RESULTS_NG);
 }
 
 
-int doWrite_RTU_DigIn_1(int value)
+int doWrite_RTU_HeartBeat(u_int32_t value)
 {
-return doWrite(ID_RTU_DigIn_1,  &value);
+return doWrite(ID_RTU_HeartBeat,  &value);
 }
 
 
-int addWrite_RTU_DigIn_1(int value)
+int addWrite_RTU_HeartBeat(u_int32_t value)
 {
-return addWrite(ID_RTU_DigIn_1, &value);
+return addWrite(ID_RTU_HeartBeat, &value);
 }
 
 
-int getStatus_RTU_DigIn_1()
+int getStatus_RTU_HeartBeat()
 {
-return getStatus(ID_RTU_DigIn_1);
-}
-
-
-int doWrite_RTU_DigIn_2(int value)
-{
-return doWrite(ID_RTU_DigIn_2,  &value);
-}
-
-
-int addWrite_RTU_DigIn_2(int value)
-{
-return addWrite(ID_RTU_DigIn_2, &value);
-}
-
-
-int getStatus_RTU_DigIn_2()
-{
-return getStatus(ID_RTU_DigIn_2);
-}
-
-
-int doWrite_RTU_DigIn_3(int value)
-{
-return doWrite(ID_RTU_DigIn_3,  &value);
-}
-
-
-int addWrite_RTU_DigIn_3(int value)
-{
-return addWrite(ID_RTU_DigIn_3, &value);
-}
-
-
-int getStatus_RTU_DigIn_3()
-{
-return getStatus(ID_RTU_DigIn_3);
-}
-
-
-int doWrite_RTU_DigIn_4(int value)
-{
-return doWrite(ID_RTU_DigIn_4,  &value);
-}
-
-
-int addWrite_RTU_DigIn_4(int value)
-{
-return addWrite(ID_RTU_DigIn_4, &value);
-}
-
-
-int getStatus_RTU_DigIn_4()
-{
-return getStatus(ID_RTU_DigIn_4);
-}
-
-
-int doWrite_RTU_DigIn_5(int value)
-{
-return doWrite(ID_RTU_DigIn_5,  &value);
-}
-
-
-int addWrite_RTU_DigIn_5(int value)
-{
-return addWrite(ID_RTU_DigIn_5, &value);
-}
-
-
-int getStatus_RTU_DigIn_5()
-{
-return getStatus(ID_RTU_DigIn_5);
-}
-
-
-int doWrite_RTU_DigIn_6(int value)
-{
-return doWrite(ID_RTU_DigIn_6,  &value);
-}
-
-
-int addWrite_RTU_DigIn_6(int value)
-{
-return addWrite(ID_RTU_DigIn_6, &value);
-}
-
-
-int getStatus_RTU_DigIn_6()
-{
-return getStatus(ID_RTU_DigIn_6);
-}
-
-
-int doWrite_RTU_DigIn_7(int value)
-{
-return doWrite(ID_RTU_DigIn_7,  &value);
-}
-
-
-int addWrite_RTU_DigIn_7(int value)
-{
-return addWrite(ID_RTU_DigIn_7, &value);
-}
-
-
-int getStatus_RTU_DigIn_7()
-{
-return getStatus(ID_RTU_DigIn_7);
-}
-
-
-int doWrite_RTU_DigIn_8(int value)
-{
-return doWrite(ID_RTU_DigIn_8,  &value);
-}
-
-
-int addWrite_RTU_DigIn_8(int value)
-{
-return addWrite(ID_RTU_DigIn_8, &value);
-}
-
-
-int getStatus_RTU_DigIn_8()
-{
-return getStatus(ID_RTU_DigIn_8);
-}
-
-
-int doWrite_RTU_DigIn_9(int value)
-{
-return doWrite(ID_RTU_DigIn_9,  &value);
-}
-
-
-int addWrite_RTU_DigIn_9(int value)
-{
-return addWrite(ID_RTU_DigIn_9, &value);
-}
-
-
-int getStatus_RTU_DigIn_9()
-{
-return getStatus(ID_RTU_DigIn_9);
-}
-
-
-int doWrite_RTU_DigIn_10(int value)
-{
-return doWrite(ID_RTU_DigIn_10,  &value);
-}
-
-
-int addWrite_RTU_DigIn_10(int value)
-{
-return addWrite(ID_RTU_DigIn_10, &value);
-}
-
-
-int getStatus_RTU_DigIn_10()
-{
-return getStatus(ID_RTU_DigIn_10);
-}
-
-
-int doWrite_RTU_DigIn_11(int value)
-{
-return doWrite(ID_RTU_DigIn_11,  &value);
-}
-
-
-int addWrite_RTU_DigIn_11(int value)
-{
-return addWrite(ID_RTU_DigIn_11, &value);
-}
-
-
-int getStatus_RTU_DigIn_11()
-{
-return getStatus(ID_RTU_DigIn_11);
-}
-
-
-int doWrite_RTU_DigIn_12(int value)
-{
-return doWrite(ID_RTU_DigIn_12,  &value);
-}
-
-
-int addWrite_RTU_DigIn_12(int value)
-{
-return addWrite(ID_RTU_DigIn_12, &value);
-}
-
-
-int getStatus_RTU_DigIn_12()
-{
-return getStatus(ID_RTU_DigIn_12);
-}
-
-
-int doWrite_RTU_DigIn_13(int value)
-{
-return doWrite(ID_RTU_DigIn_13,  &value);
-}
-
-
-int addWrite_RTU_DigIn_13(int value)
-{
-return addWrite(ID_RTU_DigIn_13, &value);
-}
-
-
-int getStatus_RTU_DigIn_13()
-{
-return getStatus(ID_RTU_DigIn_13);
-}
-
-
-int doWrite_RTU_DigIn_14(int value)
-{
-return doWrite(ID_RTU_DigIn_14,  &value);
-}
-
-
-int addWrite_RTU_DigIn_14(int value)
-{
-return addWrite(ID_RTU_DigIn_14, &value);
-}
-
-
-int getStatus_RTU_DigIn_14()
-{
-return getStatus(ID_RTU_DigIn_14);
-}
-
-
-int doWrite_RTU_DigIn_15(int value)
-{
-return doWrite(ID_RTU_DigIn_15,  &value);
-}
-
-
-int addWrite_RTU_DigIn_15(int value)
-{
-return addWrite(ID_RTU_DigIn_15, &value);
-}
-
-
-int getStatus_RTU_DigIn_15()
-{
-return getStatus(ID_RTU_DigIn_15);
-}
-
-
-int doWrite_RTU_DigIn_16(int value)
-{
-return doWrite(ID_RTU_DigIn_16,  &value);
-}
-
-
-int addWrite_RTU_DigIn_16(int value)
-{
-return addWrite(ID_RTU_DigIn_16, &value);
-}
-
-
-int getStatus_RTU_DigIn_16()
-{
-return getStatus(ID_RTU_DigIn_16);
-}
-
-
-int doWrite_RTU_AnIn_1(int16_t value)
-{
-return doWrite(ID_RTU_AnIn_1,  &value);
-}
-
-
-int addWrite_RTU_AnIn_1(int16_t value)
-{
-return addWrite(ID_RTU_AnIn_1, &value);
-}
-
-
-int getStatus_RTU_AnIn_1()
-{
-return getStatus(ID_RTU_AnIn_1);
-}
-
-
-int doWrite_RTU_AnIn_2(int16_t value)
-{
-return doWrite(ID_RTU_AnIn_2,  &value);
-}
-
-
-int addWrite_RTU_AnIn_2(int16_t value)
-{
-return addWrite(ID_RTU_AnIn_2, &value);
-}
-
-
-int getStatus_RTU_AnIn_2()
-{
-return getStatus(ID_RTU_AnIn_2);
-}
-
-
-int doWrite_RTU_Tamb(int16_t value)
-{
-return doWrite(ID_RTU_Tamb,  &value);
-}
-
-
-int addWrite_RTU_Tamb(int16_t value)
-{
-return addWrite(ID_RTU_Tamb, &value);
-}
-
-
-int getStatus_RTU_Tamb()
-{
-return getStatus(ID_RTU_Tamb);
+return getStatus(ID_RTU_HeartBeat);
 }
 
 
@@ -1941,165 +1631,309 @@ return getStatus(ID_RTU_DigOut_16);
 }
 
 
-int doWrite_RTU_AnOutConf_X(int16_t value)
+int doWrite_RTU_DigIn_1(int value)
 {
-return doWrite(ID_RTU_AnOutConf_X,  &value);
+return doWrite(ID_RTU_DigIn_1,  &value);
 }
 
 
-int addWrite_RTU_AnOutConf_X(int16_t value)
+int addWrite_RTU_DigIn_1(int value)
 {
-return addWrite(ID_RTU_AnOutConf_X, &value);
+return addWrite(ID_RTU_DigIn_1, &value);
 }
 
 
-int getStatus_RTU_AnOutConf_X()
+int getStatus_RTU_DigIn_1()
 {
-return getStatus(ID_RTU_AnOutConf_X);
+return getStatus(ID_RTU_DigIn_1);
 }
 
 
-int doWrite_RTU_AnOut_1(int16_t value)
+int doWrite_RTU_DigIn_2(int value)
 {
-return doWrite(ID_RTU_AnOut_1,  &value);
+return doWrite(ID_RTU_DigIn_2,  &value);
 }
 
 
-int addWrite_RTU_AnOut_1(int16_t value)
+int addWrite_RTU_DigIn_2(int value)
 {
-return addWrite(ID_RTU_AnOut_1, &value);
+return addWrite(ID_RTU_DigIn_2, &value);
 }
 
 
-int getStatus_RTU_AnOut_1()
+int getStatus_RTU_DigIn_2()
 {
-return getStatus(ID_RTU_AnOut_1);
+return getStatus(ID_RTU_DigIn_2);
 }
 
 
-int doWrite_RTU_AnOut_2(int16_t value)
+int doWrite_RTU_DigIn_3(int value)
 {
-return doWrite(ID_RTU_AnOut_2,  &value);
+return doWrite(ID_RTU_DigIn_3,  &value);
 }
 
 
-int addWrite_RTU_AnOut_2(int16_t value)
+int addWrite_RTU_DigIn_3(int value)
 {
-return addWrite(ID_RTU_AnOut_2, &value);
+return addWrite(ID_RTU_DigIn_3, &value);
 }
 
 
-int getStatus_RTU_AnOut_2()
+int getStatus_RTU_DigIn_3()
 {
-return getStatus(ID_RTU_AnOut_2);
+return getStatus(ID_RTU_DigIn_3);
 }
 
 
-int doWrite_RTU_AnOut_3(int16_t value)
+int doWrite_RTU_DigIn_4(int value)
 {
-return doWrite(ID_RTU_AnOut_3,  &value);
+return doWrite(ID_RTU_DigIn_4,  &value);
 }
 
 
-int addWrite_RTU_AnOut_3(int16_t value)
+int addWrite_RTU_DigIn_4(int value)
 {
-return addWrite(ID_RTU_AnOut_3, &value);
+return addWrite(ID_RTU_DigIn_4, &value);
 }
 
 
-int getStatus_RTU_AnOut_3()
+int getStatus_RTU_DigIn_4()
 {
-return getStatus(ID_RTU_AnOut_3);
+return getStatus(ID_RTU_DigIn_4);
 }
 
 
-int doWrite_RTU_AnOut_4(int16_t value)
+int doWrite_RTU_DigIn_5(int value)
 {
-return doWrite(ID_RTU_AnOut_4,  &value);
+return doWrite(ID_RTU_DigIn_5,  &value);
 }
 
 
-int addWrite_RTU_AnOut_4(int16_t value)
+int addWrite_RTU_DigIn_5(int value)
 {
-return addWrite(ID_RTU_AnOut_4, &value);
+return addWrite(ID_RTU_DigIn_5, &value);
 }
 
 
-int getStatus_RTU_AnOut_4()
+int getStatus_RTU_DigIn_5()
 {
-return getStatus(ID_RTU_AnOut_4);
+return getStatus(ID_RTU_DigIn_5);
 }
 
 
-int doWrite_RTU_AnOut_5(int16_t value)
+int doWrite_RTU_DigIn_6(int value)
 {
-return doWrite(ID_RTU_AnOut_5,  &value);
+return doWrite(ID_RTU_DigIn_6,  &value);
 }
 
 
-int addWrite_RTU_AnOut_5(int16_t value)
+int addWrite_RTU_DigIn_6(int value)
 {
-return addWrite(ID_RTU_AnOut_5, &value);
+return addWrite(ID_RTU_DigIn_6, &value);
 }
 
 
-int getStatus_RTU_AnOut_5()
+int getStatus_RTU_DigIn_6()
 {
-return getStatus(ID_RTU_AnOut_5);
+return getStatus(ID_RTU_DigIn_6);
 }
 
 
-int doWrite_RTU_AnOut_6(int16_t value)
+int doWrite_RTU_DigIn_7(int value)
 {
-return doWrite(ID_RTU_AnOut_6,  &value);
+return doWrite(ID_RTU_DigIn_7,  &value);
 }
 
 
-int addWrite_RTU_AnOut_6(int16_t value)
+int addWrite_RTU_DigIn_7(int value)
 {
-return addWrite(ID_RTU_AnOut_6, &value);
+return addWrite(ID_RTU_DigIn_7, &value);
 }
 
 
-int getStatus_RTU_AnOut_6()
+int getStatus_RTU_DigIn_7()
 {
-return getStatus(ID_RTU_AnOut_6);
+return getStatus(ID_RTU_DigIn_7);
 }
 
 
-int doWrite_RTU_AnOut_7(int16_t value)
+int doWrite_RTU_DigIn_8(int value)
 {
-return doWrite(ID_RTU_AnOut_7,  &value);
+return doWrite(ID_RTU_DigIn_8,  &value);
 }
 
 
-int addWrite_RTU_AnOut_7(int16_t value)
+int addWrite_RTU_DigIn_8(int value)
 {
-return addWrite(ID_RTU_AnOut_7, &value);
+return addWrite(ID_RTU_DigIn_8, &value);
 }
 
 
-int getStatus_RTU_AnOut_7()
+int getStatus_RTU_DigIn_8()
 {
-return getStatus(ID_RTU_AnOut_7);
+return getStatus(ID_RTU_DigIn_8);
 }
 
 
-int doWrite_RTU_AnOut_8(int16_t value)
+int doWrite_RTU_DigIn_9(int value)
 {
-return doWrite(ID_RTU_AnOut_8,  &value);
+return doWrite(ID_RTU_DigIn_9,  &value);
 }
 
 
-int addWrite_RTU_AnOut_8(int16_t value)
+int addWrite_RTU_DigIn_9(int value)
 {
-return addWrite(ID_RTU_AnOut_8, &value);
+return addWrite(ID_RTU_DigIn_9, &value);
 }
 
 
-int getStatus_RTU_AnOut_8()
+int getStatus_RTU_DigIn_9()
 {
-return getStatus(ID_RTU_AnOut_8);
+return getStatus(ID_RTU_DigIn_9);
+}
+
+
+int doWrite_RTU_DigIn_10(int value)
+{
+return doWrite(ID_RTU_DigIn_10,  &value);
+}
+
+
+int addWrite_RTU_DigIn_10(int value)
+{
+return addWrite(ID_RTU_DigIn_10, &value);
+}
+
+
+int getStatus_RTU_DigIn_10()
+{
+return getStatus(ID_RTU_DigIn_10);
+}
+
+
+int doWrite_RTU_DigIn_11(int value)
+{
+return doWrite(ID_RTU_DigIn_11,  &value);
+}
+
+
+int addWrite_RTU_DigIn_11(int value)
+{
+return addWrite(ID_RTU_DigIn_11, &value);
+}
+
+
+int getStatus_RTU_DigIn_11()
+{
+return getStatus(ID_RTU_DigIn_11);
+}
+
+
+int doWrite_RTU_DigIn_12(int value)
+{
+return doWrite(ID_RTU_DigIn_12,  &value);
+}
+
+
+int addWrite_RTU_DigIn_12(int value)
+{
+return addWrite(ID_RTU_DigIn_12, &value);
+}
+
+
+int getStatus_RTU_DigIn_12()
+{
+return getStatus(ID_RTU_DigIn_12);
+}
+
+
+int doWrite_RTU_DigIn_13(int value)
+{
+return doWrite(ID_RTU_DigIn_13,  &value);
+}
+
+
+int addWrite_RTU_DigIn_13(int value)
+{
+return addWrite(ID_RTU_DigIn_13, &value);
+}
+
+
+int getStatus_RTU_DigIn_13()
+{
+return getStatus(ID_RTU_DigIn_13);
+}
+
+
+int doWrite_RTU_DigIn_14(int value)
+{
+return doWrite(ID_RTU_DigIn_14,  &value);
+}
+
+
+int addWrite_RTU_DigIn_14(int value)
+{
+return addWrite(ID_RTU_DigIn_14, &value);
+}
+
+
+int getStatus_RTU_DigIn_14()
+{
+return getStatus(ID_RTU_DigIn_14);
+}
+
+
+int doWrite_RTU_DigIn_15(int value)
+{
+return doWrite(ID_RTU_DigIn_15,  &value);
+}
+
+
+int addWrite_RTU_DigIn_15(int value)
+{
+return addWrite(ID_RTU_DigIn_15, &value);
+}
+
+
+int getStatus_RTU_DigIn_15()
+{
+return getStatus(ID_RTU_DigIn_15);
+}
+
+
+int doWrite_RTU_DigIn_16(int value)
+{
+return doWrite(ID_RTU_DigIn_16,  &value);
+}
+
+
+int addWrite_RTU_DigIn_16(int value)
+{
+return addWrite(ID_RTU_DigIn_16, &value);
+}
+
+
+int getStatus_RTU_DigIn_16()
+{
+return getStatus(ID_RTU_DigIn_16);
+}
+
+
+int doWrite_RTU_Tamb(int16_t value)
+{
+return doWrite(ID_RTU_Tamb,  &value);
+}
+
+
+int addWrite_RTU_Tamb(int16_t value)
+{
+return addWrite(ID_RTU_Tamb, &value);
+}
+
+
+int getStatus_RTU_Tamb()
+{
+return getStatus(ID_RTU_Tamb);
 }
 
 
@@ -2139,21 +1973,471 @@ return getStatus(ID_RTU_AnInConf_2);
 }
 
 
-int doWrite_RTU_HeartBeat(u_int32_t value)
+int doWrite_RTU_AnIn_1(int16_t value)
 {
-return doWrite(ID_RTU_HeartBeat,  &value);
+return doWrite(ID_RTU_AnIn_1,  &value);
 }
 
 
-int addWrite_RTU_HeartBeat(u_int32_t value)
+int addWrite_RTU_AnIn_1(int16_t value)
 {
-return addWrite(ID_RTU_HeartBeat, &value);
+return addWrite(ID_RTU_AnIn_1, &value);
 }
 
 
-int getStatus_RTU_HeartBeat()
+int getStatus_RTU_AnIn_1()
 {
-return getStatus(ID_RTU_HeartBeat);
+return getStatus(ID_RTU_AnIn_1);
+}
+
+
+int doWrite_RTU_AnIn_2(int16_t value)
+{
+return doWrite(ID_RTU_AnIn_2,  &value);
+}
+
+
+int addWrite_RTU_AnIn_2(int16_t value)
+{
+return addWrite(ID_RTU_AnIn_2, &value);
+}
+
+
+int getStatus_RTU_AnIn_2()
+{
+return getStatus(ID_RTU_AnIn_2);
+}
+
+
+int doWrite_RTU_LocDigDir_1(int value)
+{
+return doWrite(ID_RTU_LocDigDir_1,  &value);
+}
+
+
+int addWrite_RTU_LocDigDir_1(int value)
+{
+return addWrite(ID_RTU_LocDigDir_1, &value);
+}
+
+
+int getStatus_RTU_LocDigDir_1()
+{
+return getStatus(ID_RTU_LocDigDir_1);
+}
+
+
+int doWrite_RTU_LocDigDir_2(int value)
+{
+return doWrite(ID_RTU_LocDigDir_2,  &value);
+}
+
+
+int addWrite_RTU_LocDigDir_2(int value)
+{
+return addWrite(ID_RTU_LocDigDir_2, &value);
+}
+
+
+int getStatus_RTU_LocDigDir_2()
+{
+return getStatus(ID_RTU_LocDigDir_2);
+}
+
+
+int doWrite_RTU_LocDigDir_3(int value)
+{
+return doWrite(ID_RTU_LocDigDir_3,  &value);
+}
+
+
+int addWrite_RTU_LocDigDir_3(int value)
+{
+return addWrite(ID_RTU_LocDigDir_3, &value);
+}
+
+
+int getStatus_RTU_LocDigDir_3()
+{
+return getStatus(ID_RTU_LocDigDir_3);
+}
+
+
+int doWrite_RTU_LocDigDir_4(int value)
+{
+return doWrite(ID_RTU_LocDigDir_4,  &value);
+}
+
+
+int addWrite_RTU_LocDigDir_4(int value)
+{
+return addWrite(ID_RTU_LocDigDir_4, &value);
+}
+
+
+int getStatus_RTU_LocDigDir_4()
+{
+return getStatus(ID_RTU_LocDigDir_4);
+}
+
+
+int doWrite_RTU_LocDigDir_5(int value)
+{
+return doWrite(ID_RTU_LocDigDir_5,  &value);
+}
+
+
+int addWrite_RTU_LocDigDir_5(int value)
+{
+return addWrite(ID_RTU_LocDigDir_5, &value);
+}
+
+
+int getStatus_RTU_LocDigDir_5()
+{
+return getStatus(ID_RTU_LocDigDir_5);
+}
+
+
+int doWrite_RTU_LocDigDir_6(int value)
+{
+return doWrite(ID_RTU_LocDigDir_6,  &value);
+}
+
+
+int addWrite_RTU_LocDigDir_6(int value)
+{
+return addWrite(ID_RTU_LocDigDir_6, &value);
+}
+
+
+int getStatus_RTU_LocDigDir_6()
+{
+return getStatus(ID_RTU_LocDigDir_6);
+}
+
+
+int doWrite_RTU_LocDigDir_7(int value)
+{
+return doWrite(ID_RTU_LocDigDir_7,  &value);
+}
+
+
+int addWrite_RTU_LocDigDir_7(int value)
+{
+return addWrite(ID_RTU_LocDigDir_7, &value);
+}
+
+
+int getStatus_RTU_LocDigDir_7()
+{
+return getStatus(ID_RTU_LocDigDir_7);
+}
+
+
+int doWrite_RTU_LocDigDir_8(int value)
+{
+return doWrite(ID_RTU_LocDigDir_8,  &value);
+}
+
+
+int addWrite_RTU_LocDigDir_8(int value)
+{
+return addWrite(ID_RTU_LocDigDir_8, &value);
+}
+
+
+int getStatus_RTU_LocDigDir_8()
+{
+return getStatus(ID_RTU_LocDigDir_8);
+}
+
+
+int doWrite_RTU_LocDigIn_1(int value)
+{
+return doWrite(ID_RTU_LocDigIn_1,  &value);
+}
+
+
+int addWrite_RTU_LocDigIn_1(int value)
+{
+return addWrite(ID_RTU_LocDigIn_1, &value);
+}
+
+
+int getStatus_RTU_LocDigIn_1()
+{
+return getStatus(ID_RTU_LocDigIn_1);
+}
+
+
+int doWrite_RTU_LocDigIn_2(int value)
+{
+return doWrite(ID_RTU_LocDigIn_2,  &value);
+}
+
+
+int addWrite_RTU_LocDigIn_2(int value)
+{
+return addWrite(ID_RTU_LocDigIn_2, &value);
+}
+
+
+int getStatus_RTU_LocDigIn_2()
+{
+return getStatus(ID_RTU_LocDigIn_2);
+}
+
+
+int doWrite_RTU_LocDigIn_3(int value)
+{
+return doWrite(ID_RTU_LocDigIn_3,  &value);
+}
+
+
+int addWrite_RTU_LocDigIn_3(int value)
+{
+return addWrite(ID_RTU_LocDigIn_3, &value);
+}
+
+
+int getStatus_RTU_LocDigIn_3()
+{
+return getStatus(ID_RTU_LocDigIn_3);
+}
+
+
+int doWrite_RTU_LocDigIn_4(int value)
+{
+return doWrite(ID_RTU_LocDigIn_4,  &value);
+}
+
+
+int addWrite_RTU_LocDigIn_4(int value)
+{
+return addWrite(ID_RTU_LocDigIn_4, &value);
+}
+
+
+int getStatus_RTU_LocDigIn_4()
+{
+return getStatus(ID_RTU_LocDigIn_4);
+}
+
+
+int doWrite_RTU_LocDigIn_5(int value)
+{
+return doWrite(ID_RTU_LocDigIn_5,  &value);
+}
+
+
+int addWrite_RTU_LocDigIn_5(int value)
+{
+return addWrite(ID_RTU_LocDigIn_5, &value);
+}
+
+
+int getStatus_RTU_LocDigIn_5()
+{
+return getStatus(ID_RTU_LocDigIn_5);
+}
+
+
+int doWrite_RTU_LocDigIn_6(int value)
+{
+return doWrite(ID_RTU_LocDigIn_6,  &value);
+}
+
+
+int addWrite_RTU_LocDigIn_6(int value)
+{
+return addWrite(ID_RTU_LocDigIn_6, &value);
+}
+
+
+int getStatus_RTU_LocDigIn_6()
+{
+return getStatus(ID_RTU_LocDigIn_6);
+}
+
+
+int doWrite_RTU_LocDigIn_7(int value)
+{
+return doWrite(ID_RTU_LocDigIn_7,  &value);
+}
+
+
+int addWrite_RTU_LocDigIn_7(int value)
+{
+return addWrite(ID_RTU_LocDigIn_7, &value);
+}
+
+
+int getStatus_RTU_LocDigIn_7()
+{
+return getStatus(ID_RTU_LocDigIn_7);
+}
+
+
+int doWrite_RTU_LocDigIn_8(int value)
+{
+return doWrite(ID_RTU_LocDigIn_8,  &value);
+}
+
+
+int addWrite_RTU_LocDigIn_8(int value)
+{
+return addWrite(ID_RTU_LocDigIn_8, &value);
+}
+
+
+int getStatus_RTU_LocDigIn_8()
+{
+return getStatus(ID_RTU_LocDigIn_8);
+}
+
+
+int doWrite_RTU_LocDigOut_1(int value)
+{
+return doWrite(ID_RTU_LocDigOut_1,  &value);
+}
+
+
+int addWrite_RTU_LocDigOut_1(int value)
+{
+return addWrite(ID_RTU_LocDigOut_1, &value);
+}
+
+
+int getStatus_RTU_LocDigOut_1()
+{
+return getStatus(ID_RTU_LocDigOut_1);
+}
+
+
+int doWrite_RTU_LocDigOut_2(int value)
+{
+return doWrite(ID_RTU_LocDigOut_2,  &value);
+}
+
+
+int addWrite_RTU_LocDigOut_2(int value)
+{
+return addWrite(ID_RTU_LocDigOut_2, &value);
+}
+
+
+int getStatus_RTU_LocDigOut_2()
+{
+return getStatus(ID_RTU_LocDigOut_2);
+}
+
+
+int doWrite_RTU_LocDigOut_3(int value)
+{
+return doWrite(ID_RTU_LocDigOut_3,  &value);
+}
+
+
+int addWrite_RTU_LocDigOut_3(int value)
+{
+return addWrite(ID_RTU_LocDigOut_3, &value);
+}
+
+
+int getStatus_RTU_LocDigOut_3()
+{
+return getStatus(ID_RTU_LocDigOut_3);
+}
+
+
+int doWrite_RTU_LocDigOut_4(int value)
+{
+return doWrite(ID_RTU_LocDigOut_4,  &value);
+}
+
+
+int addWrite_RTU_LocDigOut_4(int value)
+{
+return addWrite(ID_RTU_LocDigOut_4, &value);
+}
+
+
+int getStatus_RTU_LocDigOut_4()
+{
+return getStatus(ID_RTU_LocDigOut_4);
+}
+
+
+int doWrite_RTU_LocDigOut_5(int value)
+{
+return doWrite(ID_RTU_LocDigOut_5,  &value);
+}
+
+
+int addWrite_RTU_LocDigOut_5(int value)
+{
+return addWrite(ID_RTU_LocDigOut_5, &value);
+}
+
+
+int getStatus_RTU_LocDigOut_5()
+{
+return getStatus(ID_RTU_LocDigOut_5);
+}
+
+
+int doWrite_RTU_LocDigOut_6(int value)
+{
+return doWrite(ID_RTU_LocDigOut_6,  &value);
+}
+
+
+int addWrite_RTU_LocDigOut_6(int value)
+{
+return addWrite(ID_RTU_LocDigOut_6, &value);
+}
+
+
+int getStatus_RTU_LocDigOut_6()
+{
+return getStatus(ID_RTU_LocDigOut_6);
+}
+
+
+int doWrite_RTU_LocDigOut_7(int value)
+{
+return doWrite(ID_RTU_LocDigOut_7,  &value);
+}
+
+
+int addWrite_RTU_LocDigOut_7(int value)
+{
+return addWrite(ID_RTU_LocDigOut_7, &value);
+}
+
+
+int getStatus_RTU_LocDigOut_7()
+{
+return getStatus(ID_RTU_LocDigOut_7);
+}
+
+
+int doWrite_RTU_LocDigOut_8(int value)
+{
+return doWrite(ID_RTU_LocDigOut_8,  &value);
+}
+
+
+int addWrite_RTU_LocDigOut_8(int value)
+{
+return addWrite(ID_RTU_LocDigOut_8, &value);
+}
+
+
+int getStatus_RTU_LocDigOut_8()
+{
+return getStatus(ID_RTU_LocDigOut_8);
 }
 
 
@@ -19545,25 +19829,7 @@ retval += readFromDb(ID_STATUS, &STATUS);
 retval += readFromDb(ID_RESULT, &RESULT);
 retval += readFromDb(ID_RESULTS_OK, &RESULTS_OK);
 retval += readFromDb(ID_RESULTS_NG, &RESULTS_NG);
-retval += readFromDb(ID_RTU_DigIn_1, &RTU_DigIn_1);
-retval += readFromDb(ID_RTU_DigIn_2, &RTU_DigIn_2);
-retval += readFromDb(ID_RTU_DigIn_3, &RTU_DigIn_3);
-retval += readFromDb(ID_RTU_DigIn_4, &RTU_DigIn_4);
-retval += readFromDb(ID_RTU_DigIn_5, &RTU_DigIn_5);
-retval += readFromDb(ID_RTU_DigIn_6, &RTU_DigIn_6);
-retval += readFromDb(ID_RTU_DigIn_7, &RTU_DigIn_7);
-retval += readFromDb(ID_RTU_DigIn_8, &RTU_DigIn_8);
-retval += readFromDb(ID_RTU_DigIn_9, &RTU_DigIn_9);
-retval += readFromDb(ID_RTU_DigIn_10, &RTU_DigIn_10);
-retval += readFromDb(ID_RTU_DigIn_11, &RTU_DigIn_11);
-retval += readFromDb(ID_RTU_DigIn_12, &RTU_DigIn_12);
-retval += readFromDb(ID_RTU_DigIn_13, &RTU_DigIn_13);
-retval += readFromDb(ID_RTU_DigIn_14, &RTU_DigIn_14);
-retval += readFromDb(ID_RTU_DigIn_15, &RTU_DigIn_15);
-retval += readFromDb(ID_RTU_DigIn_16, &RTU_DigIn_16);
-retval += readFromDb(ID_RTU_AnIn_1, &RTU_AnIn_1);
-retval += readFromDb(ID_RTU_AnIn_2, &RTU_AnIn_2);
-retval += readFromDb(ID_RTU_Tamb, &RTU_Tamb);
+retval += readFromDb(ID_RTU_HeartBeat, &RTU_HeartBeat);
 retval += readFromDb(ID_RTU_DigOut_1, &RTU_DigOut_1);
 retval += readFromDb(ID_RTU_DigOut_2, &RTU_DigOut_2);
 retval += readFromDb(ID_RTU_DigOut_3, &RTU_DigOut_3);
@@ -19580,18 +19846,51 @@ retval += readFromDb(ID_RTU_DigOut_13, &RTU_DigOut_13);
 retval += readFromDb(ID_RTU_DigOut_14, &RTU_DigOut_14);
 retval += readFromDb(ID_RTU_DigOut_15, &RTU_DigOut_15);
 retval += readFromDb(ID_RTU_DigOut_16, &RTU_DigOut_16);
-retval += readFromDb(ID_RTU_AnOutConf_X, &RTU_AnOutConf_X);
-retval += readFromDb(ID_RTU_AnOut_1, &RTU_AnOut_1);
-retval += readFromDb(ID_RTU_AnOut_2, &RTU_AnOut_2);
-retval += readFromDb(ID_RTU_AnOut_3, &RTU_AnOut_3);
-retval += readFromDb(ID_RTU_AnOut_4, &RTU_AnOut_4);
-retval += readFromDb(ID_RTU_AnOut_5, &RTU_AnOut_5);
-retval += readFromDb(ID_RTU_AnOut_6, &RTU_AnOut_6);
-retval += readFromDb(ID_RTU_AnOut_7, &RTU_AnOut_7);
-retval += readFromDb(ID_RTU_AnOut_8, &RTU_AnOut_8);
+retval += readFromDb(ID_RTU_DigIn_1, &RTU_DigIn_1);
+retval += readFromDb(ID_RTU_DigIn_2, &RTU_DigIn_2);
+retval += readFromDb(ID_RTU_DigIn_3, &RTU_DigIn_3);
+retval += readFromDb(ID_RTU_DigIn_4, &RTU_DigIn_4);
+retval += readFromDb(ID_RTU_DigIn_5, &RTU_DigIn_5);
+retval += readFromDb(ID_RTU_DigIn_6, &RTU_DigIn_6);
+retval += readFromDb(ID_RTU_DigIn_7, &RTU_DigIn_7);
+retval += readFromDb(ID_RTU_DigIn_8, &RTU_DigIn_8);
+retval += readFromDb(ID_RTU_DigIn_9, &RTU_DigIn_9);
+retval += readFromDb(ID_RTU_DigIn_10, &RTU_DigIn_10);
+retval += readFromDb(ID_RTU_DigIn_11, &RTU_DigIn_11);
+retval += readFromDb(ID_RTU_DigIn_12, &RTU_DigIn_12);
+retval += readFromDb(ID_RTU_DigIn_13, &RTU_DigIn_13);
+retval += readFromDb(ID_RTU_DigIn_14, &RTU_DigIn_14);
+retval += readFromDb(ID_RTU_DigIn_15, &RTU_DigIn_15);
+retval += readFromDb(ID_RTU_DigIn_16, &RTU_DigIn_16);
+retval += readFromDb(ID_RTU_Tamb, &RTU_Tamb);
 retval += readFromDb(ID_RTU_AnInConf_1, &RTU_AnInConf_1);
 retval += readFromDb(ID_RTU_AnInConf_2, &RTU_AnInConf_2);
-retval += readFromDb(ID_RTU_HeartBeat, &RTU_HeartBeat);
+retval += readFromDb(ID_RTU_AnIn_1, &RTU_AnIn_1);
+retval += readFromDb(ID_RTU_AnIn_2, &RTU_AnIn_2);
+retval += readFromDb(ID_RTU_LocDigDir_1, &RTU_LocDigDir_1);
+retval += readFromDb(ID_RTU_LocDigDir_2, &RTU_LocDigDir_2);
+retval += readFromDb(ID_RTU_LocDigDir_3, &RTU_LocDigDir_3);
+retval += readFromDb(ID_RTU_LocDigDir_4, &RTU_LocDigDir_4);
+retval += readFromDb(ID_RTU_LocDigDir_5, &RTU_LocDigDir_5);
+retval += readFromDb(ID_RTU_LocDigDir_6, &RTU_LocDigDir_6);
+retval += readFromDb(ID_RTU_LocDigDir_7, &RTU_LocDigDir_7);
+retval += readFromDb(ID_RTU_LocDigDir_8, &RTU_LocDigDir_8);
+retval += readFromDb(ID_RTU_LocDigIn_1, &RTU_LocDigIn_1);
+retval += readFromDb(ID_RTU_LocDigIn_2, &RTU_LocDigIn_2);
+retval += readFromDb(ID_RTU_LocDigIn_3, &RTU_LocDigIn_3);
+retval += readFromDb(ID_RTU_LocDigIn_4, &RTU_LocDigIn_4);
+retval += readFromDb(ID_RTU_LocDigIn_5, &RTU_LocDigIn_5);
+retval += readFromDb(ID_RTU_LocDigIn_6, &RTU_LocDigIn_6);
+retval += readFromDb(ID_RTU_LocDigIn_7, &RTU_LocDigIn_7);
+retval += readFromDb(ID_RTU_LocDigIn_8, &RTU_LocDigIn_8);
+retval += readFromDb(ID_RTU_LocDigOut_1, &RTU_LocDigOut_1);
+retval += readFromDb(ID_RTU_LocDigOut_2, &RTU_LocDigOut_2);
+retval += readFromDb(ID_RTU_LocDigOut_3, &RTU_LocDigOut_3);
+retval += readFromDb(ID_RTU_LocDigOut_4, &RTU_LocDigOut_4);
+retval += readFromDb(ID_RTU_LocDigOut_5, &RTU_LocDigOut_5);
+retval += readFromDb(ID_RTU_LocDigOut_6, &RTU_LocDigOut_6);
+retval += readFromDb(ID_RTU_LocDigOut_7, &RTU_LocDigOut_7);
+retval += readFromDb(ID_RTU_LocDigOut_8, &RTU_LocDigOut_8);
 retval += readFromDb(ID_TST_DigIn_1, &TST_DigIn_1);
 retval += readFromDb(ID_TST_DigIn_2, &TST_DigIn_2);
 retval += readFromDb(ID_TST_DigIn_3, &TST_DigIn_3);

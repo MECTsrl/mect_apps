@@ -12,7 +12,14 @@ PROGRAM Init
 	PLC_DigDir_7 := True; (* Analog I/O Test output *)
 	PLC_DigDir_8 := True; (* Analog I/O Test output *)
 
-	RTU_AnOutConf_X := 500; (* ANALOG OUTPUT THRESHOLD *)
+	RTU_LocDigDir_1 := 1; (* TPLC005 Local Digital as Output *)
+	RTU_LocDigDir_2 := 1; (* TPLC005 Local Digital as Output *)
+	RTU_LocDigDir_3 := 1; (* TPLC005 Local Digital as Output *)
+	RTU_LocDigDir_4 := 1; (* TPLC005 Local Digital as Output *)
+	RTU_LocDigDir_5 := 1; (* TPLC005 Local Digital as Output *)
+	RTU_LocDigDir_6 := 1; (* TPLC005 Local Digital as Output *)
+	RTU_LocDigDir_7 := 1; (* TPLC005 Local Digital as Output *)
+	RTU_LocDigDir_8 := 1; (* TPLC005 Local Digital as Output *)
 	TEST2_COMMAND := TEST_STATUS_LOCAL;
 	STATUS := STATUS_IDLE;
 	RESULT := RESULT_UNKNOWN;

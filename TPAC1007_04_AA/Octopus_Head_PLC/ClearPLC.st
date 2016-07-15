@@ -22,14 +22,14 @@ END_VAR
 	RTU_DigOut_15 := FALSE;
 	RTU_DigOut_16 := FALSE;
 
-	RTU_AnOut_1 := 0;
-	RTU_AnOut_2 := 0;
-	RTU_AnOut_3 := 0;
-	RTU_AnOut_4 := 0;
-	RTU_AnOut_5 := 0;
-	RTU_AnOut_6 := 0;
-	RTU_AnOut_7 := 0;
-	RTU_AnOut_8 := 0;
+	RTU_LocDigOut_1 := 0;
+	RTU_LocDigOut_2 := 0;
+	RTU_LocDigOut_3 := 0;
+	RTU_LocDigOut_4 := 0;
+	RTU_LocDigOut_5 := 0;
+	RTU_LocDigOut_6 := 0;
+	RTU_LocDigOut_7 := 0;
+	RTU_LocDigOut_8 := 0;
 	
 	RTU_AnInConf_1 := 0;
 	RTU_AnInConf_2 := 0;

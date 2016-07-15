@@ -86,6 +86,7 @@ void loop(void)
 {
     if (previous_PLC_Heartbeat == PLC_Heartbeat) {
         if ((PLC_time - last_PLC_time) > 1.0) {
+#if 0
             QMessageBox::critical(0, "WATCHDOG", "RTU3 hangup for 1s :(\nRestarting the engine.");
             system("killall fcrts");
             system("/root/fcrts &");
@@ -97,6 +98,9 @@ void loop(void)
             previous_PLC_time = PLC_time;
             last_PLC_time = PLC_time;
             sleep(1);
+#else
+            QMessageBox::critical(0, "RTU3 hangup :(", "What happened?");
+#endif
         }
     } else {
         previous_PLC_Heartbeat = PLC_Heartbeat;
