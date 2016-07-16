@@ -1,0 +1,5472 @@
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+3;P;Addr_node01     ;UINT     ;0   ;RTU       ;               ;3   ;1   ;2   ;193 ;2   ;[RO]
+3;P;Life_node01     ;UINT     ;0   ;RTU       ;               ;3   ;1   ;3   ;193 ;2   ;[RO]
+3;P;ConfAi1_node01  ;UINT     ;0   ;RTU       ;               ;3   ;1   ;40  ;194 ;20  ;[RW]
+3;P;ConfAi2_node01  ;UINT     ;0   ;RTU       ;               ;3   ;1   ;41  ;194 ;20  ;[RW]
+3;P;ValAi1_node01   ;INT      ;3   ;RTU       ;               ;3   ;1   ;42  ;194 ;20  ;[RO]
+3;P;ValAi2_node01   ;INT      ;3   ;RTU       ;               ;3   ;1   ;43  ;194 ;20  ;[RO]
+3;P;Conf1_node01    ;BYTE_BIT ;1   ;RTU       ;               ;3   ;1   ;44  ;194 ;20  ;[RW]
+3;P;Conf2_node01    ;BYTE_BIT ;2   ;RTU       ;               ;3   ;1   ;44  ;194 ;20  ;[RW]
+3;P;Conf3_node01    ;BYTE_BIT ;3   ;RTU       ;               ;3   ;1   ;44  ;194 ;20  ;[RW]
+3;P;Conf4_node01    ;BYTE_BIT ;4   ;RTU       ;               ;3   ;1   ;44  ;194 ;20  ;[RW]
+3;P;Conf5_node01    ;BYTE_BIT ;5   ;RTU       ;               ;3   ;1   ;44  ;194 ;20  ;[RW]
+3;P;Conf6_node01    ;BYTE_BIT ;6   ;RTU       ;               ;3   ;1   ;44  ;194 ;20  ;[RW]
+3;P;Conf7_node01    ;BYTE_BIT ;7   ;RTU       ;               ;3   ;1   ;44  ;194 ;20  ;[RW]
+3;P;Conf8_node01    ;BYTE_BIT ;8   ;RTU       ;               ;3   ;1   ;44  ;194 ;20  ;[RW]
+3;P;digIN5_node01   ;BYTE_BIT ;5   ;RTU       ;               ;3   ;1   ;45  ;194 ;20  ;[RO]
+3;P;digIN6_node01   ;BYTE_BIT ;6   ;RTU       ;               ;3   ;1   ;45  ;194 ;20  ;[RO]
+3;P;digIN7_node01   ;BYTE_BIT ;7   ;RTU       ;               ;3   ;1   ;45  ;194 ;20  ;[RO]
+3;P;digIN8_node01   ;BYTE_BIT ;8   ;RTU       ;               ;3   ;1   ;45  ;194 ;20  ;[RO]
+3;P;digOUT1_node01  ;BYTE_BIT ;1   ;RTU       ;               ;3   ;1   ;46  ;194 ;20  ;[RW]
+3;P;digOUT2_node01  ;BYTE_BIT ;2   ;RTU       ;               ;3   ;1   ;46  ;194 ;20  ;[RW]
+3;P;digOUT3_node01  ;BYTE_BIT ;3   ;RTU       ;               ;3   ;1   ;46  ;194 ;20  ;[RW]
+3;P;digOUT4_node01  ;BYTE_BIT ;4   ;RTU       ;               ;3   ;1   ;46  ;194 ;20  ;[RW]
+;;;;;;;;;;;;
+3;P;Addr_node02     ;UINT     ;0   ;RTU       ;               ;3   ;2   ;2   ;216 ;2   ;[RO]
+3;P;Life_node02     ;UINT     ;0   ;RTU       ;               ;3   ;2   ;3   ;216 ;2   ;[RO]
+3;P;ConfAi1_node02  ;UINT     ;0   ;RTU       ;               ;3   ;2   ;40  ;218 ;20  ;[RW]
+3;P;ConfAi2_node02  ;UINT     ;0   ;RTU       ;               ;3   ;2   ;41  ;218 ;20  ;[RW]
+3;P;ValAi1_node02   ;INT      ;3   ;RTU       ;               ;3   ;2   ;42  ;218 ;20  ;[RO]
+3;P;ValAi2_node02   ;INT      ;3   ;RTU       ;               ;3   ;2   ;43  ;218 ;20  ;[RO]
+3;P;Conf1_node02    ;BYTE_BIT ;1   ;RTU       ;               ;3   ;2   ;44  ;218 ;20  ;[RW]
+3;P;Conf2_node02    ;BYTE_BIT ;2   ;RTU       ;               ;3   ;2   ;44  ;218 ;20  ;[RW]
+3;P;Conf3_node02    ;BYTE_BIT ;3   ;RTU       ;               ;3   ;2   ;44  ;218 ;20  ;[RW]
+3;P;Conf4_node02    ;BYTE_BIT ;4   ;RTU       ;               ;3   ;2   ;44  ;218 ;20  ;[RW]
+3;P;Conf5_node02    ;BYTE_BIT ;5   ;RTU       ;               ;3   ;2   ;44  ;218 ;20  ;[RW]
+3;P;Conf6_node02    ;BYTE_BIT ;6   ;RTU       ;               ;3   ;2   ;44  ;218 ;20  ;[RW]
+3;P;Conf7_node02    ;BYTE_BIT ;7   ;RTU       ;               ;3   ;2   ;44  ;218 ;20  ;[RW]
+3;P;Conf8_node02    ;BYTE_BIT ;8   ;RTU       ;               ;3   ;2   ;44  ;218 ;20  ;[RW]
+3;P;digIN5_node02   ;BYTE_BIT ;5   ;RTU       ;               ;3   ;2   ;45  ;218 ;20  ;[RO]
+3;P;digIN6_node02   ;BYTE_BIT ;6   ;RTU       ;               ;3   ;2   ;45  ;218 ;20  ;[RO]
+3;P;digIN7_node02   ;BYTE_BIT ;7   ;RTU       ;               ;3   ;2   ;45  ;218 ;20  ;[RO]
+3;P;digIN8_node02   ;BYTE_BIT ;8   ;RTU       ;               ;3   ;2   ;45  ;218 ;20  ;[RO]
+3;P;digOUT1_node02  ;BYTE_BIT ;1   ;RTU       ;               ;3   ;2   ;46  ;218 ;20  ;[RW]
+3;P;digOUT2_node02  ;BYTE_BIT ;2   ;RTU       ;               ;3   ;2   ;46  ;218 ;20  ;[RW]
+3;P;digOUT3_node02  ;BYTE_BIT ;3   ;RTU       ;               ;3   ;2   ;46  ;218 ;20  ;[RW]
+3;P;digOUT4_node02  ;BYTE_BIT ;4   ;RTU       ;               ;3   ;2   ;46  ;218 ;20  ;[RW]
+;;;;;;;;;;;;
+3;P;Addr_node03     ;UINT     ;0   ;RTU       ;               ;3   ;3   ;2   ;239 ;2   ;[RO]
+3;P;Life_node03     ;UINT     ;0   ;RTU       ;               ;3   ;3   ;3   ;239 ;2   ;[RO]
+3;P;ConfAi1_node03  ;UINT     ;0   ;RTU       ;               ;3   ;3   ;40  ;241 ;20  ;[RW]
+3;P;ConfAi2_node03  ;UINT     ;0   ;RTU       ;               ;3   ;3   ;41  ;241 ;20  ;[RW]
+3;P;ValAi1_node03   ;INT      ;3   ;RTU       ;               ;3   ;3   ;42  ;241 ;20  ;[RO]
+3;P;ValAi2_node03   ;INT      ;3   ;RTU       ;               ;3   ;3   ;43  ;241 ;20  ;[RO]
+3;P;Conf1_node03    ;BYTE_BIT ;1   ;RTU       ;               ;3   ;3   ;44  ;241 ;20  ;[RW]
+3;P;Conf2_node03    ;BYTE_BIT ;2   ;RTU       ;               ;3   ;3   ;44  ;241 ;20  ;[RW]
+3;P;Conf3_node03    ;BYTE_BIT ;3   ;RTU       ;               ;3   ;3   ;44  ;241 ;20  ;[RW]
+3;P;Conf4_node03    ;BYTE_BIT ;4   ;RTU       ;               ;3   ;3   ;44  ;241 ;20  ;[RW]
+3;P;Conf5_node03    ;BYTE_BIT ;5   ;RTU       ;               ;3   ;3   ;44  ;241 ;20  ;[RW]
+3;P;Conf6_node03    ;BYTE_BIT ;6   ;RTU       ;               ;3   ;3   ;44  ;241 ;20  ;[RW]
+3;P;Conf7_node03    ;BYTE_BIT ;7   ;RTU       ;               ;3   ;3   ;44  ;241 ;20  ;[RW]
+3;P;Conf8_node03    ;BYTE_BIT ;8   ;RTU       ;               ;3   ;3   ;44  ;241 ;20  ;[RW]
+3;P;digIN5_node03   ;BYTE_BIT ;5   ;RTU       ;               ;3   ;3   ;45  ;241 ;20  ;[RO]
+3;P;digIN6_node03   ;BYTE_BIT ;6   ;RTU       ;               ;3   ;3   ;45  ;241 ;20  ;[RO]
+3;P;digIN7_node03   ;BYTE_BIT ;7   ;RTU       ;               ;3   ;3   ;45  ;241 ;20  ;[RO]
+3;P;digIN8_node03   ;BYTE_BIT ;8   ;RTU       ;               ;3   ;3   ;45  ;241 ;20  ;[RO]
+3;P;digOUT1_node03  ;BYTE_BIT ;1   ;RTU       ;               ;3   ;3   ;46  ;241 ;20  ;[RW]
+3;P;digOUT2_node03  ;BYTE_BIT ;2   ;RTU       ;               ;3   ;3   ;46  ;241 ;20  ;[RW]
+3;P;digOUT3_node03  ;BYTE_BIT ;3   ;RTU       ;               ;3   ;3   ;46  ;241 ;20  ;[RW]
+3;P;digOUT4_node03  ;BYTE_BIT ;4   ;RTU       ;               ;3   ;3   ;46  ;241 ;20  ;[RW]
+;;;;;;;;;;;;
+3;P;Addr_node04     ;UINT     ;0   ;RTU       ;               ;3   ;4   ;2   ;261 ;2   ;[RO]
+3;P;Life_node04     ;UINT     ;0   ;RTU       ;               ;3   ;4   ;3   ;261 ;2   ;[RO]
+3;P;ConfAi1_node04  ;UINT     ;0   ;RTU       ;               ;3   ;4   ;40  ;264 ;20  ;[RW]
+3;P;ConfAi2_node04  ;UINT     ;0   ;RTU       ;               ;3   ;4   ;41  ;264 ;20  ;[RW]
+3;P;ValAi1_node04   ;INT      ;3   ;RTU       ;               ;3   ;4   ;42  ;264 ;20  ;[RO]
+3;P;ValAi2_node04   ;INT      ;3   ;RTU       ;               ;3   ;4   ;43  ;264 ;20  ;[RO]
+3;P;Conf1_node04    ;BYTE_BIT ;1   ;RTU       ;               ;3   ;4   ;44  ;264 ;20  ;[RW]
+3;P;Conf2_node04    ;BYTE_BIT ;2   ;RTU       ;               ;3   ;4   ;44  ;264 ;20  ;[RW]
+3;P;Conf3_node04    ;BYTE_BIT ;3   ;RTU       ;               ;3   ;4   ;44  ;264 ;20  ;[RW]
+3;P;Conf4_node04    ;BYTE_BIT ;4   ;RTU       ;               ;3   ;4   ;44  ;264 ;20  ;[RW]
+3;P;Conf5_node04    ;BYTE_BIT ;5   ;RTU       ;               ;3   ;4   ;44  ;264 ;20  ;[RW]
+3;P;Conf6_node04    ;BYTE_BIT ;6   ;RTU       ;               ;3   ;4   ;44  ;264 ;20  ;[RW]
+3;P;Conf7_node04    ;BYTE_BIT ;7   ;RTU       ;               ;3   ;4   ;44  ;264 ;20  ;[RW]
+3;P;Conf8_node04    ;BYTE_BIT ;8   ;RTU       ;               ;3   ;4   ;44  ;264 ;20  ;[RW]
+3;P;digIN5_node04   ;BYTE_BIT ;5   ;RTU       ;               ;3   ;4   ;45  ;264 ;20  ;[RO]
+3;P;digIN6_node04   ;BYTE_BIT ;6   ;RTU       ;               ;3   ;4   ;45  ;264 ;20  ;[RO]
+3;P;digIN7_node04   ;BYTE_BIT ;7   ;RTU       ;               ;3   ;4   ;45  ;264 ;20  ;[RO]
+3;P;digIN8_node04   ;BYTE_BIT ;8   ;RTU       ;               ;3   ;4   ;45  ;264 ;20  ;[RO]
+3;P;digOUT1_node04  ;BYTE_BIT ;1   ;RTU       ;               ;3   ;4   ;46  ;264 ;20  ;[RW]
+3;P;digOUT2_node04  ;BYTE_BIT ;2   ;RTU       ;               ;3   ;4   ;46  ;264 ;20  ;[RW]
+3;P;digOUT3_node04  ;BYTE_BIT ;3   ;RTU       ;               ;3   ;4   ;46  ;264 ;20  ;[RW]
+3;P;digOUT4_node04  ;BYTE_BIT ;4   ;RTU       ;               ;3   ;4   ;46  ;264 ;20  ;[RW]
+;;;;;;;;;;;;
+3;P;Addr_node05     ;UINT     ;0   ;RTU       ;               ;3   ;5   ;2   ;285 ;2   ;[RO]
+3;P;Life_node05     ;UINT     ;0   ;RTU       ;               ;3   ;5   ;3   ;285 ;2   ;[RO]
+3;P;ConfAi1_node05  ;UINT     ;0   ;RTU       ;               ;3   ;5   ;40  ;287 ;20  ;[RW]
+3;P;ConfAi2_node05  ;UINT     ;0   ;RTU       ;               ;3   ;5   ;41  ;287 ;20  ;[RW]
+3;P;ValAi1_node05   ;INT      ;3   ;RTU       ;               ;3   ;5   ;42  ;287 ;20  ;[RO]
+3;P;ValAi2_node05   ;INT      ;3   ;RTU       ;               ;3   ;5   ;43  ;287 ;20  ;[RO]
+3;P;Conf1_node05    ;BYTE_BIT ;1   ;RTU       ;               ;3   ;5   ;44  ;287 ;20  ;[RW]
+3;P;Conf2_node05    ;BYTE_BIT ;2   ;RTU       ;               ;3   ;5   ;44  ;287 ;20  ;[RW]
+3;P;Conf3_node05    ;BYTE_BIT ;3   ;RTU       ;               ;3   ;5   ;44  ;287 ;20  ;[RW]
+3;P;Conf4_node05    ;BYTE_BIT ;4   ;RTU       ;               ;3   ;5   ;44  ;287 ;20  ;[RW]
+3;P;Conf5_node05    ;BYTE_BIT ;5   ;RTU       ;               ;3   ;5   ;44  ;287 ;20  ;[RW]
+3;P;Conf6_node05    ;BYTE_BIT ;6   ;RTU       ;               ;3   ;5   ;44  ;287 ;20  ;[RW]
+3;P;Conf7_node05    ;BYTE_BIT ;7   ;RTU       ;               ;3   ;5   ;44  ;287 ;20  ;[RW]
+3;P;Conf8_node05    ;BYTE_BIT ;8   ;RTU       ;               ;3   ;5   ;44  ;287 ;20  ;[RW]
+3;P;digIN5_node05   ;BYTE_BIT ;5   ;RTU       ;               ;3   ;5   ;45  ;287 ;20  ;[RO]
+3;P;digIN6_node05   ;BYTE_BIT ;6   ;RTU       ;               ;3   ;5   ;45  ;287 ;20  ;[RO]
+3;P;digIN7_node05   ;BYTE_BIT ;7   ;RTU       ;               ;3   ;5   ;45  ;287 ;20  ;[RO]
+3;P;digIN8_node05   ;BYTE_BIT ;8   ;RTU       ;               ;3   ;5   ;45  ;287 ;20  ;[RO]
+3;P;digOUT1_node05  ;BYTE_BIT ;1   ;RTU       ;               ;3   ;5   ;46  ;287 ;20  ;[RW]
+3;P;digOUT2_node05  ;BYTE_BIT ;2   ;RTU       ;               ;3   ;5   ;46  ;287 ;20  ;[RW]
+3;P;digOUT3_node05  ;BYTE_BIT ;3   ;RTU       ;               ;3   ;5   ;46  ;287 ;20  ;[RW]
+3;P;digOUT4_node05  ;BYTE_BIT ;4   ;RTU       ;               ;3   ;5   ;46  ;287 ;20  ;[RW]
+;;;;;;;;;;;;
+3;P;Addr_node06     ;UINT     ;0   ;RTU       ;               ;3   ;6   ;2   ;308 ;2   ;[RO]
+3;P;Life_node06     ;UINT     ;0   ;RTU       ;               ;3   ;6   ;3   ;308 ;2   ;[RO]
+3;P;ConfAi1_node06  ;UINT     ;0   ;RTU       ;               ;3   ;6   ;40  ;310 ;20  ;[RW]
+3;P;ConfAi2_node06  ;UINT     ;0   ;RTU       ;               ;3   ;6   ;41  ;310 ;20  ;[RW]
+3;P;ValAi1_node06   ;INT      ;3   ;RTU       ;               ;3   ;6   ;42  ;310 ;20  ;[RO]
+3;P;ValAi2_node06   ;INT      ;3   ;RTU       ;               ;3   ;6   ;43  ;310 ;20  ;[RO]
+3;P;Conf1_node06    ;BYTE_BIT ;1   ;RTU       ;               ;3   ;6   ;44  ;310 ;20  ;[RW]
+3;P;Conf2_node06    ;BYTE_BIT ;2   ;RTU       ;               ;3   ;6   ;44  ;310 ;20  ;[RW]
+3;P;Conf3_node06    ;BYTE_BIT ;3   ;RTU       ;               ;3   ;6   ;44  ;310 ;20  ;[RW]
+3;P;Conf4_node06    ;BYTE_BIT ;4   ;RTU       ;               ;3   ;6   ;44  ;310 ;20  ;[RW]
+3;P;Conf5_node06    ;BYTE_BIT ;5   ;RTU       ;               ;3   ;6   ;44  ;310 ;20  ;[RW]
+3;P;Conf6_node06    ;BYTE_BIT ;6   ;RTU       ;               ;3   ;6   ;44  ;310 ;20  ;[RW]
+3;P;Conf7_node06    ;BYTE_BIT ;7   ;RTU       ;               ;3   ;6   ;44  ;310 ;20  ;[RW]
+3;P;Conf8_node06    ;BYTE_BIT ;8   ;RTU       ;               ;3   ;6   ;44  ;310 ;20  ;[RW]
+3;P;digIN5_node06   ;BYTE_BIT ;5   ;RTU       ;               ;3   ;6   ;45  ;310 ;20  ;[RO]
+3;P;digIN6_node06   ;BYTE_BIT ;6   ;RTU       ;               ;3   ;6   ;45  ;310 ;20  ;[RO]
+3;P;digIN7_node06   ;BYTE_BIT ;7   ;RTU       ;               ;3   ;6   ;45  ;310 ;20  ;[RO]
+3;P;digIN8_node06   ;BYTE_BIT ;8   ;RTU       ;               ;3   ;6   ;45  ;310 ;20  ;[RO]
+3;P;digOUT1_node06  ;BYTE_BIT ;1   ;RTU       ;               ;3   ;6   ;46  ;310 ;20  ;[RW]
+3;P;digOUT2_node06  ;BYTE_BIT ;2   ;RTU       ;               ;3   ;6   ;46  ;310 ;20  ;[RW]
+3;P;digOUT3_node06  ;BYTE_BIT ;3   ;RTU       ;               ;3   ;6   ;46  ;310 ;20  ;[RW]
+3;P;digOUT4_node06  ;BYTE_BIT ;4   ;RTU       ;               ;3   ;6   ;46  ;310 ;20  ;[RW]
+;;;;;;;;;;;;
+3;P;Addr_node07     ;UINT     ;0   ;RTU       ;               ;3   ;7   ;2   ;331 ;2   ;[RO]
+3;P;Life_node07     ;UINT     ;0   ;RTU       ;               ;3   ;7   ;3   ;331 ;2   ;[RO]
+3;P;ConfAi1_node07  ;UINT     ;0   ;RTU       ;               ;3   ;7   ;40  ;333 ;20  ;[RW]
+3;P;ConfAi2_node07  ;UINT     ;0   ;RTU       ;               ;3   ;7   ;41  ;333 ;20  ;[RW]
+3;P;ValAi1_node07   ;INT      ;3   ;RTU       ;               ;3   ;7   ;42  ;333 ;20  ;[RO]
+3;P;ValAi2_node07   ;INT      ;3   ;RTU       ;               ;3   ;7   ;43  ;333 ;20  ;[RO]
+3;P;Conf1_node07    ;BYTE_BIT ;1   ;RTU       ;               ;3   ;7   ;44  ;333 ;20  ;[RW]
+3;P;Conf2_node07    ;BYTE_BIT ;2   ;RTU       ;               ;3   ;7   ;44  ;333 ;20  ;[RW]
+3;P;Conf3_node07    ;BYTE_BIT ;3   ;RTU       ;               ;3   ;7   ;44  ;333 ;20  ;[RW]
+3;P;Conf4_node07    ;BYTE_BIT ;4   ;RTU       ;               ;3   ;7   ;44  ;333 ;20  ;[RW]
+3;P;Conf5_node07    ;BYTE_BIT ;5   ;RTU       ;               ;3   ;7   ;44  ;333 ;20  ;[RW]
+3;P;Conf6_node07    ;BYTE_BIT ;6   ;RTU       ;               ;3   ;7   ;44  ;333 ;20  ;[RW]
+3;P;Conf7_node07    ;BYTE_BIT ;7   ;RTU       ;               ;3   ;7   ;44  ;333 ;20  ;[RW]
+3;P;Conf8_node07    ;BYTE_BIT ;8   ;RTU       ;               ;3   ;7   ;44  ;333 ;20  ;[RW]
+3;P;digIN5_node07   ;BYTE_BIT ;5   ;RTU       ;               ;3   ;7   ;45  ;333 ;20  ;[RO]
+3;P;digIN6_node07   ;BYTE_BIT ;6   ;RTU       ;               ;3   ;7   ;45  ;333 ;20  ;[RO]
+3;P;digIN7_node07   ;BYTE_BIT ;7   ;RTU       ;               ;3   ;7   ;45  ;333 ;20  ;[RO]
+3;P;digIN8_node07   ;BYTE_BIT ;8   ;RTU       ;               ;3   ;7   ;45  ;333 ;20  ;[RO]
+3;P;digOUT1_node07  ;BYTE_BIT ;1   ;RTU       ;               ;3   ;7   ;46  ;333 ;20  ;[RW]
+3;P;digOUT2_node07  ;BYTE_BIT ;2   ;RTU       ;               ;3   ;7   ;46  ;333 ;20  ;[RW]
+3;P;digOUT3_node07  ;BYTE_BIT ;3   ;RTU       ;               ;3   ;7   ;46  ;333 ;20  ;[RW]
+3;P;digOUT4_node07  ;BYTE_BIT ;4   ;RTU       ;               ;3   ;7   ;46  ;333 ;20  ;[RW]
+;;;;;;;;;;;;
+3;P;Addr_node08     ;UINT     ;0   ;RTU       ;               ;3   ;8   ;2   ;354 ;2   ;[RO]
+3;P;Life_node08     ;UINT     ;0   ;RTU       ;               ;3   ;8   ;3   ;354 ;2   ;[RO]
+3;P;ConfAi1_node08  ;UINT     ;0   ;RTU       ;               ;3   ;8   ;40  ;356 ;20  ;[RW]
+3;P;ConfAi2_node08  ;UINT     ;0   ;RTU       ;               ;3   ;8   ;41  ;356 ;20  ;[RW]
+3;P;ValAi1_node08   ;INT      ;3   ;RTU       ;               ;3   ;8   ;42  ;356 ;20  ;[RO]
+3;P;ValAi2_node08   ;INT      ;3   ;RTU       ;               ;3   ;8   ;43  ;356 ;20  ;[RO]
+3;P;Conf1_node08    ;BYTE_BIT ;1   ;RTU       ;               ;3   ;8   ;44  ;356 ;20  ;[RW]
+3;P;Conf2_node08    ;BYTE_BIT ;2   ;RTU       ;               ;3   ;8   ;44  ;356 ;20  ;[RW]
+3;P;Conf3_node08    ;BYTE_BIT ;3   ;RTU       ;               ;3   ;8   ;44  ;356 ;20  ;[RW]
+3;P;Conf4_node08    ;BYTE_BIT ;4   ;RTU       ;               ;3   ;8   ;44  ;356 ;20  ;[RW]
+3;P;Conf5_node08    ;BYTE_BIT ;5   ;RTU       ;               ;3   ;8   ;44  ;356 ;20  ;[RW]
+3;P;Conf6_node08    ;BYTE_BIT ;6   ;RTU       ;               ;3   ;8   ;44  ;356 ;20  ;[RW]
+3;P;Conf7_node08    ;BYTE_BIT ;7   ;RTU       ;               ;3   ;8   ;44  ;356 ;20  ;[RW]
+3;P;Conf8_node08    ;BYTE_BIT ;8   ;RTU       ;               ;3   ;8   ;44  ;356 ;20  ;[RW]
+3;P;digIN5_node08   ;BYTE_BIT ;5   ;RTU       ;               ;3   ;8   ;45  ;356 ;20  ;[RO]
+3;P;digIN6_node08   ;BYTE_BIT ;6   ;RTU       ;               ;3   ;8   ;45  ;356 ;20  ;[RO]
+3;P;digIN7_node08   ;BYTE_BIT ;7   ;RTU       ;               ;3   ;8   ;45  ;356 ;20  ;[RO]
+3;P;digIN8_node08   ;BYTE_BIT ;8   ;RTU       ;               ;3   ;8   ;45  ;356 ;20  ;[RO]
+3;P;digOUT1_node08  ;BYTE_BIT ;1   ;RTU       ;               ;3   ;8   ;46  ;356 ;20  ;[RW]
+3;P;digOUT2_node08  ;BYTE_BIT ;2   ;RTU       ;               ;3   ;8   ;46  ;356 ;20  ;[RW]
+3;P;digOUT3_node08  ;BYTE_BIT ;3   ;RTU       ;               ;3   ;8   ;46  ;356 ;20  ;[RW]
+3;P;digOUT4_node08  ;BYTE_BIT ;4   ;RTU       ;               ;3   ;8   ;46  ;356 ;20  ;[RW]
+;;;;;;;;;;;;
+3;P;Addr_node09     ;UINT     ;0   ;RTU       ;               ;3   ;9   ;2   ;377 ;2   ;[RO]
+3;P;Life_node09     ;UINT     ;0   ;RTU       ;               ;3   ;9   ;3   ;377 ;2   ;[RO]
+3;P;ConfAi1_node09  ;UINT     ;0   ;RTU       ;               ;3   ;9   ;40  ;379 ;20  ;[RW]
+3;P;ConfAi2_node09  ;UINT     ;0   ;RTU       ;               ;3   ;9   ;41  ;379 ;20  ;[RW]
+3;P;ValAi1_node09   ;INT      ;3   ;RTU       ;               ;3   ;9   ;42  ;379 ;20  ;[RO]
+3;P;ValAi2_node09   ;INT      ;3   ;RTU       ;               ;3   ;9   ;43  ;379 ;20  ;[RO]
+3;P;Conf1_node09    ;BYTE_BIT ;1   ;RTU       ;               ;3   ;9   ;44  ;379 ;20  ;[RW]
+3;P;Conf2_node09    ;BYTE_BIT ;2   ;RTU       ;               ;3   ;9   ;44  ;379 ;20  ;[RW]
+3;P;Conf3_node09    ;BYTE_BIT ;3   ;RTU       ;               ;3   ;9   ;44  ;379 ;20  ;[RW]
+3;P;Conf4_node09    ;BYTE_BIT ;4   ;RTU       ;               ;3   ;9   ;44  ;379 ;20  ;[RW]
+3;P;Conf5_node09    ;BYTE_BIT ;5   ;RTU       ;               ;3   ;9   ;44  ;379 ;20  ;[RW]
+3;P;Conf6_node09    ;BYTE_BIT ;6   ;RTU       ;               ;3   ;9   ;44  ;379 ;20  ;[RW]
+3;P;Conf7_node09    ;BYTE_BIT ;7   ;RTU       ;               ;3   ;9   ;44  ;379 ;20  ;[RW]
+3;P;Conf8_node019   ;BYTE_BIT ;8   ;RTU       ;               ;3   ;9   ;44  ;379 ;20  ;[RW]
+3;P;digIN5_node09   ;BYTE_BIT ;5   ;RTU       ;               ;3   ;9   ;45  ;379 ;20  ;[RO]
+3;P;digIN6_node09   ;BYTE_BIT ;6   ;RTU       ;               ;3   ;9   ;45  ;379 ;20  ;[RO]
+3;P;digIN7_node09   ;BYTE_BIT ;7   ;RTU       ;               ;3   ;9   ;45  ;379 ;20  ;[RO]
+3;P;digIN8_node09   ;BYTE_BIT ;8   ;RTU       ;               ;3   ;9   ;45  ;379 ;20  ;[RO]
+3;P;digOUT1_node09  ;BYTE_BIT ;1   ;RTU       ;               ;3   ;9   ;46  ;379 ;20  ;[RW]
+3;P;digOUT2_node09  ;BYTE_BIT ;2   ;RTU       ;               ;3   ;9   ;46  ;379 ;20  ;[RW]
+3;P;digOUT3_node09  ;BYTE_BIT ;3   ;RTU       ;               ;3   ;9   ;46  ;379 ;20  ;[RW]
+3;P;digOUT4_node09  ;BYTE_BIT ;4   ;RTU       ;               ;3   ;9   ;46  ;379 ;20  ;[RW]
+;;;;;;;;;;;;
+3;P;Addr_node10     ;UINT     ;0   ;RTU       ;               ;3   ;10  ;2   ;400 ;2   ;[RO]
+3;P;Life_node10     ;UINT     ;0   ;RTU       ;               ;3   ;10  ;3   ;400 ;2   ;[RO]
+3;P;ConfAi1_node10  ;UINT     ;0   ;RTU       ;               ;3   ;10  ;40  ;402 ;20  ;[RW]
+3;P;ConfAi2_node10  ;UINT     ;0   ;RTU       ;               ;3   ;10  ;41  ;402 ;20  ;[RW]
+3;P;ValAi1_node10   ;INT      ;3   ;RTU       ;               ;3   ;10  ;42  ;402 ;20  ;[RO]
+3;P;ValAi2_node10   ;INT      ;3   ;RTU       ;               ;3   ;10  ;43  ;402 ;20  ;[RO]
+3;P;Conf1_node10    ;BYTE_BIT ;1   ;RTU       ;               ;3   ;10  ;44  ;402 ;20  ;[RW]
+3;P;Conf2_node10    ;BYTE_BIT ;2   ;RTU       ;               ;3   ;10  ;44  ;402 ;20  ;[RW]
+3;P;Conf3_node10    ;BYTE_BIT ;3   ;RTU       ;               ;3   ;10  ;44  ;402 ;20  ;[RW]
+3;P;Conf4_node10    ;BYTE_BIT ;4   ;RTU       ;               ;3   ;10  ;44  ;402 ;20  ;[RW]
+3;P;Conf5_node10    ;BYTE_BIT ;5   ;RTU       ;               ;3   ;10  ;44  ;402 ;20  ;[RW]
+3;P;Conf6_node10    ;BYTE_BIT ;6   ;RTU       ;               ;3   ;10  ;44  ;402 ;20  ;[RW]
+3;P;Conf7_node10    ;BYTE_BIT ;7   ;RTU       ;               ;3   ;10  ;44  ;402 ;20  ;[RW]
+3;P;Conf8_node10    ;BYTE_BIT ;8   ;RTU       ;               ;3   ;10  ;44  ;402 ;20  ;[RW]
+3;P;digIN5_node10   ;BYTE_BIT ;5   ;RTU       ;               ;3   ;10  ;45  ;402 ;20  ;[RO]
+3;P;digIN6_node10   ;BYTE_BIT ;6   ;RTU       ;               ;3   ;10  ;45  ;402 ;20  ;[RO]
+3;P;digIN7_node10   ;BYTE_BIT ;7   ;RTU       ;               ;3   ;10  ;45  ;402 ;20  ;[RO]
+3;P;digIN8_node10   ;BYTE_BIT ;8   ;RTU       ;               ;3   ;10  ;45  ;402 ;20  ;[RO]
+3;P;digOUT1_node10  ;BYTE_BIT ;1   ;RTU       ;               ;3   ;10  ;46  ;402 ;20  ;[RW]
+3;P;digOUT2_node10  ;BYTE_BIT ;2   ;RTU       ;               ;3   ;10  ;46  ;402 ;20  ;[RW]
+3;P;digOUT3_node10  ;BYTE_BIT ;3   ;RTU       ;               ;3   ;10  ;46  ;402 ;20  ;[RW]
+3;P;digOUT4_node10  ;BYTE_BIT ;4   ;RTU       ;               ;3   ;10  ;46  ;402 ;20  ;[RW]
+;;;;;;;;;;;;
+3;P;Addr_node11     ;UINT     ;0   ;RTU       ;               ;3   ;11  ;2   ;423 ;2   ;[RO]
+3;P;Life_node11     ;UINT     ;0   ;RTU       ;               ;3   ;11  ;3   ;423 ;2   ;[RO]
+3;P;ConfAi1_node11  ;UINT     ;0   ;RTU       ;               ;3   ;11  ;40  ;425 ;20  ;[RW]
+3;P;ConfAi2_node11  ;UINT     ;0   ;RTU       ;               ;3   ;11  ;41  ;425 ;20  ;[RW]
+3;P;ValAi1_node11   ;INT      ;3   ;RTU       ;               ;3   ;11  ;42  ;425 ;20  ;[RO]
+3;P;ValAi2_node11   ;INT      ;3   ;RTU       ;               ;3   ;11  ;43  ;425 ;20  ;[RO]
+3;P;Conf1_node11    ;BYTE_BIT ;1   ;RTU       ;               ;3   ;11  ;44  ;425 ;20  ;[RW]
+3;P;Conf2_node11    ;BYTE_BIT ;2   ;RTU       ;               ;3   ;11  ;44  ;425 ;20  ;[RW]
+3;P;Conf3_node11    ;BYTE_BIT ;3   ;RTU       ;               ;3   ;11  ;44  ;425 ;20  ;[RW]
+3;P;Conf4_node11    ;BYTE_BIT ;4   ;RTU       ;               ;3   ;11  ;44  ;425 ;20  ;[RW]
+3;P;Conf5_node11    ;BYTE_BIT ;5   ;RTU       ;               ;3   ;11  ;44  ;425 ;20  ;[RW]
+3;P;Conf6_node11    ;BYTE_BIT ;6   ;RTU       ;               ;3   ;11  ;44  ;425 ;20  ;[RW]
+3;P;Conf7_node11    ;BYTE_BIT ;7   ;RTU       ;               ;3   ;11  ;44  ;425 ;20  ;[RW]
+3;P;Conf8_node11    ;BYTE_BIT ;8   ;RTU       ;               ;3   ;11  ;44  ;425 ;20  ;[RW]
+3;P;digIN5_node11   ;BYTE_BIT ;5   ;RTU       ;               ;3   ;11  ;45  ;425 ;20  ;[RO]
+3;P;digIN6_node11   ;BYTE_BIT ;6   ;RTU       ;               ;3   ;11  ;45  ;425 ;20  ;[RO]
+3;P;digIN7_node11   ;BYTE_BIT ;7   ;RTU       ;               ;3   ;11  ;45  ;425 ;20  ;[RO]
+3;P;digIN8_node11   ;BYTE_BIT ;8   ;RTU       ;               ;3   ;11  ;45  ;425 ;20  ;[RO]
+3;P;digOUT1_node11  ;BYTE_BIT ;1   ;RTU       ;               ;3   ;11  ;46  ;425 ;20  ;[RW]
+3;P;digOUT2_node11  ;BYTE_BIT ;2   ;RTU       ;               ;3   ;11  ;46  ;425 ;20  ;[RW]
+3;P;digOUT3_node11  ;BYTE_BIT ;3   ;RTU       ;               ;3   ;11  ;46  ;425 ;20  ;[RW]
+3;P;digOUT4_node11  ;BYTE_BIT ;4   ;RTU       ;               ;3   ;11  ;46  ;425 ;20  ;[RW]
+;;;;;;;;;;;;
+3;P;Addr_node12     ;UINT     ;0   ;RTU       ;               ;3   ;12  ;2   ;446 ;2   ;[RO]
+3;P;Life_node12     ;UINT     ;0   ;RTU       ;               ;3   ;12  ;3   ;446 ;2   ;[RO]
+3;P;ConfAi1_node12  ;UINT     ;0   ;RTU       ;               ;3   ;12  ;40  ;448 ;20  ;[RW]
+3;P;ConfAi2_node12  ;UINT     ;0   ;RTU       ;               ;3   ;12  ;41  ;448 ;20  ;[RW]
+3;P;ValAi1_node12   ;INT      ;3   ;RTU       ;               ;3   ;12  ;42  ;448 ;20  ;[RO]
+3;P;ValAi2_node12   ;INT      ;3   ;RTU       ;               ;3   ;12  ;43  ;448 ;20  ;[RO]
+3;P;Conf1_node12    ;BYTE_BIT ;1   ;RTU       ;               ;3   ;12  ;44  ;448 ;20  ;[RW]
+3;P;Conf2_node12    ;BYTE_BIT ;2   ;RTU       ;               ;3   ;12  ;44  ;448 ;20  ;[RW]
+3;P;Conf3_node12    ;BYTE_BIT ;3   ;RTU       ;               ;3   ;12  ;44  ;448 ;20  ;[RW]
+3;P;Conf4_node12    ;BYTE_BIT ;4   ;RTU       ;               ;3   ;12  ;44  ;448 ;20  ;[RW]
+3;P;Conf5_node12    ;BYTE_BIT ;5   ;RTU       ;               ;3   ;12  ;44  ;448 ;20  ;[RW]
+3;P;Conf6_node12    ;BYTE_BIT ;6   ;RTU       ;               ;3   ;12  ;44  ;448 ;20  ;[RW]
+3;P;Conf7_node12    ;BYTE_BIT ;7   ;RTU       ;               ;3   ;12  ;44  ;448 ;20  ;[RW]
+3;P;Conf8_node12    ;BYTE_BIT ;8   ;RTU       ;               ;3   ;12  ;44  ;448 ;20  ;[RW]
+3;P;digIN5_node12   ;BYTE_BIT ;5   ;RTU       ;               ;3   ;12  ;45  ;448 ;20  ;[RO]
+3;P;digIN6_node12   ;BYTE_BIT ;6   ;RTU       ;               ;3   ;12  ;45  ;448 ;20  ;[RO]
+3;P;digIN7_node12   ;BYTE_BIT ;7   ;RTU       ;               ;3   ;12  ;45  ;448 ;20  ;[RO]
+3;P;digIN8_node12   ;BYTE_BIT ;8   ;RTU       ;               ;3   ;12  ;45  ;448 ;20  ;[RO]
+3;P;digOUT1_node12  ;BYTE_BIT ;1   ;RTU       ;               ;3   ;12  ;46  ;448 ;20  ;[RW]
+3;P;digOUT2_node12  ;BYTE_BIT ;2   ;RTU       ;               ;3   ;12  ;46  ;448 ;20  ;[RW]
+3;P;digOUT3_node12  ;BYTE_BIT ;3   ;RTU       ;               ;3   ;12  ;46  ;448 ;20  ;[RW]
+3;P;digOUT4_node12  ;BYTE_BIT ;4   ;RTU       ;               ;3   ;12  ;46  ;448 ;20  ;[RW]
+;;;;;;;;;;;;
+3;P;Addr_node13     ;UINT     ;0   ;RTU       ;               ;    ;13  ;2   ;469 ;2   ;[RO]
+3;P;Life_node13     ;UINT     ;0   ;RTU       ;               ;    ;13  ;3   ;469 ;2   ;[RO]
+3;P;ConfAi1_node13  ;UINT     ;0   ;RTU       ;               ;    ;13  ;40  ;471 ;20  ;[RW]
+3;P;ConfAi2_node13  ;UINT     ;0   ;RTU       ;               ;    ;13  ;41  ;471 ;20  ;[RW]
+3;P;ValAi1_node13   ;INT      ;3   ;RTU       ;               ;    ;13  ;42  ;471 ;20  ;[RO]
+3;P;ValAi2_node13   ;INT      ;3   ;RTU       ;               ;    ;13  ;43  ;471 ;20  ;[RO]
+3;P;Conf1_node13    ;BYTE_BIT ;1   ;RTU       ;               ;    ;13  ;44  ;471 ;20  ;[RW]
+3;P;Conf2_node13    ;BYTE_BIT ;2   ;RTU       ;               ;    ;13  ;44  ;471 ;20  ;[RW]
+3;P;Conf3_node13    ;BYTE_BIT ;3   ;RTU       ;               ;    ;13  ;44  ;471 ;20  ;[RW]
+3;P;Conf4_node13    ;BYTE_BIT ;4   ;RTU       ;               ;    ;13  ;44  ;471 ;20  ;[RW]
+3;P;Conf5_node13    ;BYTE_BIT ;5   ;RTU       ;               ;    ;13  ;44  ;471 ;20  ;[RW]
+3;P;Conf6_node13    ;BYTE_BIT ;6   ;RTU       ;               ;    ;13  ;44  ;471 ;20  ;[RW]
+3;P;Conf7_node13    ;BYTE_BIT ;7   ;RTU       ;               ;    ;13  ;44  ;471 ;20  ;[RW]
+3;P;Conf8_node13    ;BYTE_BIT ;8   ;RTU       ;               ;    ;13  ;44  ;471 ;20  ;[RW]
+3;P;digIN5_node13   ;BYTE_BIT ;5   ;RTU       ;               ;    ;13  ;45  ;471 ;20  ;[RO]
+3;P;digIN6_node13   ;BYTE_BIT ;6   ;RTU       ;               ;    ;13  ;45  ;471 ;20  ;[RO]
+3;P;digIN7_node13   ;BYTE_BIT ;7   ;RTU       ;               ;    ;13  ;45  ;471 ;20  ;[RO]
+3;P;digIN8_node13   ;BYTE_BIT ;8   ;RTU       ;               ;    ;13  ;45  ;471 ;20  ;[RO]
+3;P;digOUT1_node13  ;BYTE_BIT ;1   ;RTU       ;               ;    ;13  ;46  ;471 ;20  ;[RW]
+3;P;digOUT2_node13  ;BYTE_BIT ;2   ;RTU       ;               ;    ;13  ;46  ;471 ;20  ;[RW]
+3;P;digOUT3_node13  ;BYTE_BIT ;3   ;RTU       ;               ;    ;13  ;46  ;471 ;20  ;[RW]
+3;P;digOUT4_node13  ;BYTE_BIT ;4   ;RTU       ;               ;    ;13  ;46  ;471 ;20  ;[RW]
+;;;;;;;;;;;;
+3;P;Addr_node14     ;UINT     ;0   ;RTU       ;               ;    ;14  ;2   ;492 ;2   ;[RO]
+3;P;Life_node14     ;UINT     ;0   ;RTU       ;               ;    ;14  ;3   ;492 ;2   ;[RO]
+3;P;ConfAi1_node14  ;UINT     ;0   ;RTU       ;               ;    ;14  ;40  ;494 ;20  ;[RW]
+3;P;ConfAi2_node14  ;UINT     ;0   ;RTU       ;               ;    ;14  ;41  ;494 ;20  ;[RW]
+3;P;ValAi1_node14   ;INT      ;3   ;RTU       ;               ;    ;14  ;42  ;494 ;20  ;[RO]
+3;P;ValAi2_node14   ;INT      ;3   ;RTU       ;               ;    ;14  ;43  ;494 ;20  ;[RO]
+3;P;Conf1_node14    ;BYTE_BIT ;1   ;RTU       ;               ;    ;14  ;44  ;494 ;20  ;[RW]
+3;P;Conf2_node14    ;BYTE_BIT ;2   ;RTU       ;               ;    ;14  ;44  ;494 ;20  ;[RW]
+3;P;Conf3_node14    ;BYTE_BIT ;3   ;RTU       ;               ;    ;14  ;44  ;494 ;20  ;[RW]
+3;P;Conf4_node14    ;BYTE_BIT ;4   ;RTU       ;               ;    ;14  ;44  ;494 ;20  ;[RW]
+3;P;Conf5_node14    ;BYTE_BIT ;5   ;RTU       ;               ;    ;14  ;44  ;494 ;20  ;[RW]
+3;P;Conf6_node14    ;BYTE_BIT ;6   ;RTU       ;               ;    ;14  ;44  ;494 ;20  ;[RW]
+3;P;Conf7_node14    ;BYTE_BIT ;7   ;RTU       ;               ;    ;14  ;44  ;494 ;20  ;[RW]
+3;P;Conf8_node14    ;BYTE_BIT ;8   ;RTU       ;               ;    ;14  ;44  ;494 ;20  ;[RW]
+3;P;digIN5_node14   ;BYTE_BIT ;5   ;RTU       ;               ;    ;14  ;45  ;494 ;20  ;[RO]
+3;P;digIN6_node14   ;BYTE_BIT ;6   ;RTU       ;               ;    ;14  ;45  ;494 ;20  ;[RO]
+3;P;digIN7_node14   ;BYTE_BIT ;7   ;RTU       ;               ;    ;14  ;45  ;494 ;20  ;[RO]
+3;P;digIN8_node14   ;BYTE_BIT ;8   ;RTU       ;               ;    ;14  ;45  ;494 ;20  ;[RO]
+3;P;digOUT1_node14  ;BYTE_BIT ;1   ;RTU       ;               ;    ;14  ;46  ;494 ;20  ;[RW]
+3;P;digOUT2_node14  ;BYTE_BIT ;2   ;RTU       ;               ;    ;14  ;46  ;494 ;20  ;[RW]
+3;P;digOUT3_node14  ;BYTE_BIT ;3   ;RTU       ;               ;    ;14  ;46  ;494 ;20  ;[RW]
+3;P;digOUT4_node14  ;BYTE_BIT ;4   ;RTU       ;               ;    ;14  ;46  ;494 ;20  ;[RW]
+;;;;;;;;;;;;
+3;P;Addr_node15     ;UINT     ;0   ;RTU       ;               ;    ;15  ;2   ;515 ;2   ;[RO]
+3;P;Life_node15     ;UINT     ;0   ;RTU       ;               ;    ;15  ;3   ;515 ;2   ;[RO]
+3;P;ConfAi1_node15  ;UINT     ;0   ;RTU       ;               ;    ;15  ;40  ;517 ;20  ;[RW]
+3;P;ConfAi2_node15  ;UINT     ;0   ;RTU       ;               ;    ;15  ;41  ;517 ;20  ;[RW]
+3;P;ValAi1_node15   ;INT      ;3   ;RTU       ;               ;    ;15  ;42  ;517 ;20  ;[RO]
+3;P;ValAi2_node15   ;INT      ;3   ;RTU       ;               ;    ;15  ;43  ;517 ;20  ;[RO]
+3;P;Conf1_node15    ;BYTE_BIT ;1   ;RTU       ;               ;    ;15  ;44  ;517 ;20  ;[RW]
+3;P;Conf2_node15    ;BYTE_BIT ;2   ;RTU       ;               ;    ;15  ;44  ;517 ;20  ;[RW]
+3;P;Conf3_node15    ;BYTE_BIT ;3   ;RTU       ;               ;    ;15  ;44  ;517 ;20  ;[RW]
+3;P;Conf4_node15    ;BYTE_BIT ;4   ;RTU       ;               ;    ;15  ;44  ;517 ;20  ;[RW]
+3;P;Conf5_node15    ;BYTE_BIT ;5   ;RTU       ;               ;    ;15  ;44  ;517 ;20  ;[RW]
+3;P;Conf6_node15    ;BYTE_BIT ;6   ;RTU       ;               ;    ;15  ;44  ;517 ;20  ;[RW]
+3;P;Conf7_node15    ;BYTE_BIT ;7   ;RTU       ;               ;    ;15  ;44  ;517 ;20  ;[RW]
+3;P;Conf8_node15    ;BYTE_BIT ;8   ;RTU       ;               ;    ;15  ;44  ;517 ;20  ;[RW]
+3;P;digIN5_node15   ;BYTE_BIT ;5   ;RTU       ;               ;    ;15  ;45  ;517 ;20  ;[RO]
+3;P;digIN6_node15   ;BYTE_BIT ;6   ;RTU       ;               ;    ;15  ;45  ;517 ;20  ;[RO]
+3;P;digIN7_node15   ;BYTE_BIT ;7   ;RTU       ;               ;    ;15  ;45  ;517 ;20  ;[RO]
+3;P;digIN8_node15   ;BYTE_BIT ;8   ;RTU       ;               ;    ;15  ;45  ;517 ;20  ;[RO]
+3;P;digOUT1_node15  ;BYTE_BIT ;1   ;RTU       ;               ;    ;15  ;46  ;517 ;20  ;[RW]
+3;P;digOUT2_node15  ;BYTE_BIT ;2   ;RTU       ;               ;    ;15  ;46  ;517 ;20  ;[RW]
+3;P;digOUT3_node15  ;BYTE_BIT ;3   ;RTU       ;               ;    ;15  ;46  ;517 ;20  ;[RW]
+3;P;digOUT4_node15  ;BYTE_BIT ;4   ;RTU       ;               ;    ;15  ;46  ;517 ;20  ;[RW]
+;;;;;;;;;;;;
+3;P;Addr_node16     ;UINT     ;0   ;RTU       ;               ;    ;16  ;2   ;538 ;2   ;[RO]
+3;P;Life_node16     ;UINT     ;0   ;RTU       ;               ;    ;16  ;3   ;538 ;2   ;[RO]
+3;P;ConfAi1_node16  ;UINT     ;0   ;RTU       ;               ;    ;16  ;40  ;540 ;20  ;[RW]
+3;P;ConfAi2_node16  ;UINT     ;0   ;RTU       ;               ;    ;16  ;41  ;540 ;20  ;[RW]
+3;P;ValAi1_node16   ;INT      ;3   ;RTU       ;               ;    ;16  ;42  ;540 ;20  ;[RO]
+3;P;ValAi2_node16   ;INT      ;3   ;RTU       ;               ;    ;16  ;43  ;540 ;20  ;[RO]
+3;P;Conf1_node16    ;BYTE_BIT ;1   ;RTU       ;               ;    ;16  ;44  ;540 ;20  ;[RW]
+3;P;Conf2_node16    ;BYTE_BIT ;2   ;RTU       ;               ;    ;16  ;44  ;540 ;20  ;[RW]
+3;P;Conf3_node16    ;BYTE_BIT ;3   ;RTU       ;               ;    ;16  ;44  ;540 ;20  ;[RW]
+3;P;Conf4_node16    ;BYTE_BIT ;4   ;RTU       ;               ;    ;16  ;44  ;540 ;20  ;[RW]
+3;P;Conf5_node16    ;BYTE_BIT ;5   ;RTU       ;               ;    ;16  ;44  ;540 ;20  ;[RW]
+3;P;Conf6_node16    ;BYTE_BIT ;6   ;RTU       ;               ;    ;16  ;44  ;540 ;20  ;[RW]
+3;P;Conf7_node16    ;BYTE_BIT ;7   ;RTU       ;               ;    ;16  ;44  ;540 ;20  ;[RW]
+3;P;Conf8_node16    ;BYTE_BIT ;8   ;RTU       ;               ;    ;16  ;44  ;540 ;20  ;[RW]
+3;P;digIN5_node16   ;BYTE_BIT ;5   ;RTU       ;               ;    ;16  ;45  ;540 ;20  ;[RO]
+3;P;digIN6_node16   ;BYTE_BIT ;6   ;RTU       ;               ;    ;16  ;45  ;540 ;20  ;[RO]
+3;P;digIN7_node16   ;BYTE_BIT ;7   ;RTU       ;               ;    ;16  ;45  ;540 ;20  ;[RO]
+3;P;digIN8_node16   ;BYTE_BIT ;8   ;RTU       ;               ;    ;16  ;45  ;540 ;20  ;[RO]
+3;P;digOUT1_node16  ;BYTE_BIT ;1   ;RTU       ;               ;    ;16  ;46  ;540 ;20  ;[RW]
+3;P;digOUT2_node16  ;BYTE_BIT ;2   ;RTU       ;               ;    ;16  ;46  ;540 ;20  ;[RW]
+3;P;digOUT3_node16  ;BYTE_BIT ;3   ;RTU       ;               ;    ;16  ;46  ;540 ;20  ;[RW]
+3;P;digOUT4_node16  ;BYTE_BIT ;4   ;RTU       ;               ;    ;16  ;46  ;540 ;20  ;[RW]
+;;;;;;;;;;;;
+3;P;Addr_node17     ;UINT     ;0   ;RTU       ;               ;    ;17  ;2   ;561 ;2   ;[RO]
+3;P;Life_node17     ;UINT     ;0   ;RTU       ;               ;    ;17  ;3   ;561 ;2   ;[RO]
+3;P;ConfAi1_node17  ;UINT     ;0   ;RTU       ;               ;    ;17  ;40  ;563 ;20  ;[RW]
+3;P;ConfAi2_node17  ;UINT     ;0   ;RTU       ;               ;    ;17  ;41  ;563 ;20  ;[RW]
+3;P;ValAi1_node17   ;INT      ;3   ;RTU       ;               ;    ;17  ;42  ;563 ;20  ;[RO]
+3;P;ValAi2_node17   ;INT      ;3   ;RTU       ;               ;    ;17  ;43  ;563 ;20  ;[RO]
+3;P;Conf1_node17    ;BYTE_BIT ;1   ;RTU       ;               ;    ;17  ;44  ;563 ;20  ;[RW]
+3;P;Conf2_node17    ;BYTE_BIT ;2   ;RTU       ;               ;    ;17  ;44  ;563 ;20  ;[RW]
+3;P;Conf3_node17    ;BYTE_BIT ;3   ;RTU       ;               ;    ;17  ;44  ;563 ;20  ;[RW]
+3;P;Conf4_node17    ;BYTE_BIT ;4   ;RTU       ;               ;    ;17  ;44  ;563 ;20  ;[RW]
+3;P;Conf5_node17    ;BYTE_BIT ;5   ;RTU       ;               ;    ;17  ;44  ;563 ;20  ;[RW]
+3;P;Conf6_node17    ;BYTE_BIT ;6   ;RTU       ;               ;    ;17  ;44  ;563 ;20  ;[RW]
+3;P;Conf7_node17    ;BYTE_BIT ;7   ;RTU       ;               ;    ;17  ;44  ;563 ;20  ;[RW]
+3;P;Conf8_node17    ;BYTE_BIT ;8   ;RTU       ;               ;    ;17  ;44  ;563 ;20  ;[RW]
+3;P;digIN5_node17   ;BYTE_BIT ;5   ;RTU       ;               ;    ;17  ;45  ;563 ;20  ;[RO]
+3;P;digIN6_node17   ;BYTE_BIT ;6   ;RTU       ;               ;    ;17  ;45  ;563 ;20  ;[RO]
+3;P;digIN7_node17   ;BYTE_BIT ;7   ;RTU       ;               ;    ;17  ;45  ;563 ;20  ;[RO]
+3;P;digIN8_node17   ;BYTE_BIT ;8   ;RTU       ;               ;    ;17  ;45  ;563 ;20  ;[RO]
+3;P;digOUT1_node17  ;BYTE_BIT ;1   ;RTU       ;               ;    ;17  ;46  ;563 ;20  ;[RW]
+3;P;digOUT2_node17  ;BYTE_BIT ;2   ;RTU       ;               ;    ;17  ;46  ;563 ;20  ;[RW]
+3;P;digOUT3_node17  ;BYTE_BIT ;3   ;RTU       ;               ;    ;17  ;46  ;563 ;20  ;[RW]
+3;P;digOUT4_node17  ;BYTE_BIT ;4   ;RTU       ;               ;    ;17  ;46  ;563 ;20  ;[RW]
+;;;;;;;;;;;;
+3;P;Addr_node18     ;UINT     ;0   ;RTU       ;               ;    ;18  ;2   ;584 ;2   ;[RO]
+3;P;Life_node18     ;UINT     ;0   ;RTU       ;               ;    ;18  ;3   ;584 ;2   ;[RO]
+3;P;ConfAi1_node18  ;UINT     ;0   ;RTU       ;               ;    ;18  ;40  ;586 ;20  ;[RW]
+3;P;ConfAi2_node18  ;UINT     ;0   ;RTU       ;               ;    ;18  ;41  ;586 ;20  ;[RW]
+3;P;ValAi1_node18   ;INT      ;3   ;RTU       ;               ;    ;18  ;42  ;586 ;20  ;[RO]
+3;P;ValAi2_node18   ;INT      ;3   ;RTU       ;               ;    ;18  ;43  ;586 ;20  ;[RO]
+3;P;Conf1_node18    ;BYTE_BIT ;1   ;RTU       ;               ;    ;18  ;44  ;586 ;20  ;[RW]
+3;P;Conf2_node18    ;BYTE_BIT ;2   ;RTU       ;               ;    ;18  ;44  ;586 ;20  ;[RW]
+3;P;Conf3_node18    ;BYTE_BIT ;3   ;RTU       ;               ;    ;18  ;44  ;586 ;20  ;[RW]
+3;P;Conf4_node18    ;BYTE_BIT ;4   ;RTU       ;               ;    ;18  ;44  ;586 ;20  ;[RW]
+3;P;Conf5_node18    ;BYTE_BIT ;5   ;RTU       ;               ;    ;18  ;44  ;586 ;20  ;[RW]
+3;P;Conf6_node18    ;BYTE_BIT ;6   ;RTU       ;               ;    ;18  ;44  ;586 ;20  ;[RW]
+3;P;Conf7_node18    ;BYTE_BIT ;7   ;RTU       ;               ;    ;18  ;44  ;586 ;20  ;[RW]
+3;P;Conf8_node18    ;BYTE_BIT ;8   ;RTU       ;               ;    ;18  ;44  ;586 ;20  ;[RW]
+3;P;digIN5_node18   ;BYTE_BIT ;5   ;RTU       ;               ;    ;18  ;45  ;586 ;20  ;[RO]
+3;P;digIN6_node18   ;BYTE_BIT ;6   ;RTU       ;               ;    ;18  ;45  ;586 ;20  ;[RO]
+3;P;digIN7_node18   ;BYTE_BIT ;7   ;RTU       ;               ;    ;18  ;45  ;586 ;20  ;[RO]
+3;P;digIN8_node18   ;BYTE_BIT ;8   ;RTU       ;               ;    ;18  ;45  ;586 ;20  ;[RO]
+3;P;digOUT1_node18  ;BYTE_BIT ;1   ;RTU       ;               ;    ;18  ;46  ;586 ;20  ;[RW]
+3;P;digOUT2_node18  ;BYTE_BIT ;2   ;RTU       ;               ;    ;18  ;46  ;586 ;20  ;[RW]
+3;P;digOUT3_node18  ;BYTE_BIT ;3   ;RTU       ;               ;    ;18  ;46  ;586 ;20  ;[RW]
+3;P;digOUT4_node18  ;BYTE_BIT ;4   ;RTU       ;               ;    ;18  ;46  ;586 ;20  ;[RW]
+;;;;;;;;;;;;
+3;P;Addr_node19     ;UINT     ;0   ;RTU       ;               ;    ;19  ;2   ;607 ;2   ;[RO]
+3;P;Life_node19     ;UINT     ;0   ;RTU       ;               ;    ;19  ;3   ;607 ;2   ;[RO]
+3;P;ConfAi1_node19  ;UINT     ;0   ;RTU       ;               ;    ;19  ;40  ;609 ;20  ;[RW]
+3;P;ConfAi2_node19  ;UINT     ;0   ;RTU       ;               ;    ;19  ;41  ;609 ;20  ;[RW]
+3;P;ValAi1_node19   ;INT      ;3   ;RTU       ;               ;    ;19  ;42  ;609 ;20  ;[RO]
+3;P;ValAi2_node19   ;INT      ;3   ;RTU       ;               ;    ;19  ;43  ;609 ;20  ;[RO]
+3;P;Conf1_node19    ;BYTE_BIT ;1   ;RTU       ;               ;    ;19  ;44  ;609 ;20  ;[RW]
+3;P;Conf2_node19    ;BYTE_BIT ;2   ;RTU       ;               ;    ;19  ;44  ;609 ;20  ;[RW]
+3;P;Conf3_node19    ;BYTE_BIT ;3   ;RTU       ;               ;    ;19  ;44  ;609 ;20  ;[RW]
+3;P;Conf4_node19    ;BYTE_BIT ;4   ;RTU       ;               ;    ;19  ;44  ;609 ;20  ;[RW]
+3;P;Conf5_node19    ;BYTE_BIT ;5   ;RTU       ;               ;    ;19  ;44  ;609 ;20  ;[RW]
+3;P;Conf6_node19    ;BYTE_BIT ;6   ;RTU       ;               ;    ;19  ;44  ;609 ;20  ;[RW]
+3;P;Conf7_node19    ;BYTE_BIT ;7   ;RTU       ;               ;    ;19  ;44  ;609 ;20  ;[RW]
+3;P;Conf8_node19    ;BYTE_BIT ;8   ;RTU       ;               ;    ;19  ;44  ;609 ;20  ;[RW]
+3;P;digIN5_node19   ;BYTE_BIT ;5   ;RTU       ;               ;    ;19  ;45  ;609 ;20  ;[RO]
+3;P;digIN6_node19   ;BYTE_BIT ;6   ;RTU       ;               ;    ;19  ;45  ;609 ;20  ;[RO]
+3;P;digIN7_node19   ;BYTE_BIT ;7   ;RTU       ;               ;    ;19  ;45  ;609 ;20  ;[RO]
+3;P;digIN8_node19   ;BYTE_BIT ;8   ;RTU       ;               ;    ;19  ;45  ;609 ;20  ;[RO]
+3;P;digOUT1_node19  ;BYTE_BIT ;1   ;RTU       ;               ;    ;19  ;46  ;609 ;20  ;[RW]
+3;P;digOUT2_node19  ;BYTE_BIT ;2   ;RTU       ;               ;    ;19  ;46  ;609 ;20  ;[RW]
+3;P;digOUT3_node19  ;BYTE_BIT ;3   ;RTU       ;               ;    ;19  ;46  ;609 ;20  ;[RW]
+3;P;digOUT4_node19  ;BYTE_BIT ;4   ;RTU       ;               ;    ;19  ;46  ;609 ;20  ;[RW]
+;;;;;;;;;;;;
+3;P;Addr_node20     ;UINT     ;0   ;RTU       ;               ;    ;20  ;2   ;630 ;2   ;[RO]
+3;P;Life_node20     ;UINT     ;0   ;RTU       ;               ;    ;20  ;3   ;630 ;2   ;[RO]
+3;P;ConfAi1_node20  ;UINT     ;0   ;RTU       ;               ;    ;20  ;40  ;632 ;20  ;[RW]
+3;P;ConfAi2_node20  ;UINT     ;0   ;RTU       ;               ;    ;20  ;41  ;632 ;20  ;[RW]
+3;P;ValAi1_node20   ;INT      ;3   ;RTU       ;               ;    ;20  ;42  ;632 ;20  ;[RO]
+3;P;ValAi2_node20   ;INT      ;3   ;RTU       ;               ;    ;20  ;43  ;632 ;20  ;[RO]
+3;P;Conf1_node20    ;BYTE_BIT ;1   ;RTU       ;               ;    ;20  ;44  ;632 ;20  ;[RW]
+3;P;Conf2_node20    ;BYTE_BIT ;2   ;RTU       ;               ;    ;20  ;44  ;632 ;20  ;[RW]
+3;P;Conf3_node20    ;BYTE_BIT ;3   ;RTU       ;               ;    ;20  ;44  ;632 ;20  ;[RW]
+3;P;Conf4_node20    ;BYTE_BIT ;4   ;RTU       ;               ;    ;20  ;44  ;632 ;20  ;[RW]
+3;P;Conf5_node20    ;BYTE_BIT ;5   ;RTU       ;               ;    ;20  ;44  ;632 ;20  ;[RW]
+3;P;Conf6_node20    ;BYTE_BIT ;6   ;RTU       ;               ;    ;20  ;44  ;632 ;20  ;[RW]
+3;P;Conf7_node20    ;BYTE_BIT ;7   ;RTU       ;               ;    ;20  ;44  ;632 ;20  ;[RW]
+3;P;Conf8_node20    ;BYTE_BIT ;8   ;RTU       ;               ;    ;20  ;44  ;632 ;20  ;[RW]
+3;P;digIN5_node20   ;BYTE_BIT ;5   ;RTU       ;               ;    ;20  ;45  ;632 ;20  ;[RO]
+3;P;digIN6_node20   ;BYTE_BIT ;6   ;RTU       ;               ;    ;20  ;45  ;632 ;20  ;[RO]
+3;P;digIN7_node20   ;BYTE_BIT ;7   ;RTU       ;               ;    ;20  ;45  ;632 ;20  ;[RO]
+3;P;digIN8_node20   ;BYTE_BIT ;8   ;RTU       ;               ;    ;20  ;45  ;632 ;20  ;[RO]
+3;P;digOUT1_node20  ;BYTE_BIT ;1   ;RTU       ;               ;    ;20  ;46  ;632 ;20  ;[RW]
+3;P;digOUT2_node20  ;BYTE_BIT ;2   ;RTU       ;               ;    ;20  ;46  ;632 ;20  ;[RW]
+3;P;digOUT3_node20  ;BYTE_BIT ;3   ;RTU       ;               ;    ;20  ;46  ;632 ;20  ;[RW]
+3;P;digOUT4_node20  ;BYTE_BIT ;4   ;RTU       ;               ;    ;20  ;46  ;632 ;20  ;[RW]
+;;;;;;;;;;;;
+3;P;Addr_node21     ;UINT     ;0   ;RTU       ;               ;    ;21  ;2   ;653 ;2   ;[RO]
+3;P;Life_node21     ;UINT     ;0   ;RTU       ;               ;    ;21  ;3   ;653 ;2   ;[RO]
+3;P;ConfAi1_node21  ;UINT     ;0   ;RTU       ;               ;    ;21  ;40  ;655 ;20  ;[RW]
+3;P;ConfAi2_node21  ;UINT     ;0   ;RTU       ;               ;    ;21  ;41  ;655 ;20  ;[RW]
+3;P;ValAi1_node21   ;INT      ;3   ;RTU       ;               ;    ;21  ;42  ;655 ;20  ;[RO]
+3;P;ValAi2_node21   ;INT      ;3   ;RTU       ;               ;    ;21  ;43  ;655 ;20  ;[RO]
+3;P;Conf1_node21    ;BYTE_BIT ;1   ;RTU       ;               ;    ;21  ;44  ;655 ;20  ;[RW]
+3;P;Conf2_node21    ;BYTE_BIT ;2   ;RTU       ;               ;    ;21  ;44  ;655 ;20  ;[RW]
+3;P;Conf3_node21    ;BYTE_BIT ;3   ;RTU       ;               ;    ;21  ;44  ;655 ;20  ;[RW]
+3;P;Conf4_node21    ;BYTE_BIT ;4   ;RTU       ;               ;    ;21  ;44  ;655 ;20  ;[RW]
+3;P;Conf5_node21    ;BYTE_BIT ;5   ;RTU       ;               ;    ;21  ;44  ;655 ;20  ;[RW]
+3;P;Conf6_node21    ;BYTE_BIT ;6   ;RTU       ;               ;    ;21  ;44  ;655 ;20  ;[RW]
+3;P;Conf7_node21    ;BYTE_BIT ;7   ;RTU       ;               ;    ;21  ;44  ;655 ;20  ;[RW]
+3;P;Conf8_node21    ;BYTE_BIT ;8   ;RTU       ;               ;    ;21  ;44  ;655 ;20  ;[RW]
+3;P;digIN5_node21   ;BYTE_BIT ;5   ;RTU       ;               ;    ;21  ;45  ;655 ;20  ;[RO]
+3;P;digIN6_node21   ;BYTE_BIT ;6   ;RTU       ;               ;    ;21  ;45  ;655 ;20  ;[RO]
+3;P;digIN7_node21   ;BYTE_BIT ;7   ;RTU       ;               ;    ;21  ;45  ;655 ;20  ;[RO]
+3;P;digIN8_node21   ;BYTE_BIT ;8   ;RTU       ;               ;    ;21  ;45  ;655 ;20  ;[RO]
+3;P;digOUT1_node21  ;BYTE_BIT ;1   ;RTU       ;               ;    ;21  ;46  ;655 ;20  ;[RW]
+3;P;digOUT2_node21  ;BYTE_BIT ;2   ;RTU       ;               ;    ;21  ;46  ;655 ;20  ;[RW]
+3;P;digOUT3_node21  ;BYTE_BIT ;3   ;RTU       ;               ;    ;21  ;46  ;655 ;20  ;[RW]
+3;P;digOUT4_node21  ;BYTE_BIT ;4   ;RTU       ;               ;    ;21  ;46  ;655 ;20  ;[RW]
+;;;;;;;;;;;;
+3;P;Addr_node22     ;UINT     ;0   ;RTU       ;               ;    ;22  ;2   ;676 ;2   ;[RO]
+3;P;Life_node22     ;UINT     ;0   ;RTU       ;               ;    ;22  ;3   ;676 ;2   ;[RO]
+3;P;ConfAi1_node22  ;UINT     ;0   ;RTU       ;               ;    ;22  ;40  ;678 ;20  ;[RW]
+3;P;ConfAi2_node22  ;UINT     ;0   ;RTU       ;               ;    ;22  ;41  ;678 ;20  ;[RW]
+3;P;ValAi1_node22   ;INT      ;3   ;RTU       ;               ;    ;22  ;42  ;678 ;20  ;[RO]
+3;P;ValAi2_node22   ;INT      ;3   ;RTU       ;               ;    ;22  ;43  ;678 ;20  ;[RO]
+3;P;Conf1_node22    ;BYTE_BIT ;1   ;RTU       ;               ;    ;22  ;44  ;678 ;20  ;[RW]
+3;P;Conf2_node22    ;BYTE_BIT ;2   ;RTU       ;               ;    ;22  ;44  ;678 ;20  ;[RW]
+3;P;Conf3_node22    ;BYTE_BIT ;3   ;RTU       ;               ;    ;22  ;44  ;678 ;20  ;[RW]
+3;P;Conf4_node22    ;BYTE_BIT ;4   ;RTU       ;               ;    ;22  ;44  ;678 ;20  ;[RW]
+3;P;Conf5_node22    ;BYTE_BIT ;5   ;RTU       ;               ;    ;22  ;44  ;678 ;20  ;[RW]
+3;P;Conf6_node22    ;BYTE_BIT ;6   ;RTU       ;               ;    ;22  ;44  ;678 ;20  ;[RW]
+3;P;Conf7_node22    ;BYTE_BIT ;7   ;RTU       ;               ;    ;22  ;44  ;678 ;20  ;[RW]
+3;P;Conf8_node22    ;BYTE_BIT ;8   ;RTU       ;               ;    ;22  ;44  ;678 ;20  ;[RW]
+3;P;digIN5_node22   ;BYTE_BIT ;5   ;RTU       ;               ;    ;22  ;45  ;678 ;20  ;[RO]
+3;P;digIN6_node22   ;BYTE_BIT ;6   ;RTU       ;               ;    ;22  ;45  ;678 ;20  ;[RO]
+3;P;digIN7_node22   ;BYTE_BIT ;7   ;RTU       ;               ;    ;22  ;45  ;678 ;20  ;[RO]
+3;P;digIN8_node22   ;BYTE_BIT ;8   ;RTU       ;               ;    ;22  ;45  ;678 ;20  ;[RO]
+3;P;digOUT1_node22  ;BYTE_BIT ;1   ;RTU       ;               ;    ;22  ;46  ;678 ;20  ;[RW]
+3;P;digOUT2_node22  ;BYTE_BIT ;2   ;RTU       ;               ;    ;22  ;46  ;678 ;20  ;[RW]
+3;P;digOUT3_node22  ;BYTE_BIT ;3   ;RTU       ;               ;    ;22  ;46  ;678 ;20  ;[RW]
+3;P;digOUT4_node22  ;BYTE_BIT ;4   ;RTU       ;               ;    ;22  ;46  ;678 ;20  ;[RW]
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+3;P;Addr_node23     ;UINT     ;0   ;RTU       ;               ;    ;23  ;2   ;700 ;2   ;[RO]
+3;P;Life_node23     ;UINT     ;0   ;RTU       ;               ;    ;23  ;3   ;700 ;2   ;[RO]
+3;P;ConfAi1_node23  ;UINT     ;0   ;RTU       ;               ;    ;23  ;40  ;702 ;20  ;[RW]
+3;P;ConfAi2_node23  ;UINT     ;0   ;RTU       ;               ;    ;23  ;41  ;702 ;20  ;[RW]
+3;P;ValAi1_node23   ;INT      ;3   ;RTU       ;               ;    ;23  ;42  ;702 ;20  ;[RO]
+3;P;ValAi2_node23   ;INT      ;3   ;RTU       ;               ;    ;23  ;43  ;702 ;20  ;[RO]
+3;P;Conf1_node23    ;BYTE_BIT ;1   ;RTU       ;               ;    ;23  ;44  ;702 ;20  ;[RW]
+3;P;Conf2_node23    ;BYTE_BIT ;2   ;RTU       ;               ;    ;23  ;44  ;702 ;20  ;[RW]
+3;P;Conf3_node23    ;BYTE_BIT ;3   ;RTU       ;               ;    ;23  ;44  ;702 ;20  ;[RW]
+3;P;Conf4_node23    ;BYTE_BIT ;4   ;RTU       ;               ;    ;23  ;44  ;702 ;20  ;[RW]
+3;P;Conf5_node23    ;BYTE_BIT ;5   ;RTU       ;               ;    ;23  ;44  ;702 ;20  ;[RW]
+3;P;Conf6_node23    ;BYTE_BIT ;6   ;RTU       ;               ;    ;23  ;44  ;702 ;20  ;[RW]
+3;P;Conf7_node23    ;BYTE_BIT ;7   ;RTU       ;               ;    ;23  ;44  ;702 ;20  ;[RW]
+3;P;Conf8_node23    ;BYTE_BIT ;8   ;RTU       ;               ;    ;23  ;44  ;702 ;20  ;[RW]
+3;P;digIN5_node23   ;BYTE_BIT ;5   ;RTU       ;               ;    ;23  ;45  ;702 ;20  ;[RO]
+3;P;digIN6_node23   ;BYTE_BIT ;6   ;RTU       ;               ;    ;23  ;45  ;702 ;20  ;[RO]
+3;P;digIN7_node23   ;BYTE_BIT ;7   ;RTU       ;               ;    ;23  ;45  ;702 ;20  ;[RO]
+3;P;digIN8_node23   ;BYTE_BIT ;8   ;RTU       ;               ;    ;23  ;45  ;702 ;20  ;[RO]
+3;P;digOUT1_node23  ;BYTE_BIT ;1   ;RTU       ;               ;    ;23  ;46  ;702 ;20  ;[RW]
+3;P;digOUT2_node23  ;BYTE_BIT ;2   ;RTU       ;               ;    ;23  ;46  ;702 ;20  ;[RW]
+3;P;digOUT3_node23  ;BYTE_BIT ;3   ;RTU       ;               ;    ;23  ;46  ;702 ;20  ;[RW]
+3;P;digOUT4_node23  ;BYTE_BIT ;4   ;RTU       ;               ;    ;23  ;46  ;702 ;20  ;[RW]
+;;;;;;;;;;;;
+3;P;Addr_node24     ;UINT     ;0   ;RTU       ;               ;    ;24  ;-25534;723 ;2   ;[RO]
+3;P;Life_node24     ;UINT     ;0   ;RTU       ;               ;    ;24  ;-25533;723 ;2   ;[RO]
+3;P;ConfAi1_node24  ;UINT     ;0   ;RTU       ;               ;    ;24  ;-25496;725 ;20  ;[RW]
+3;P;ConfAi2_node24  ;UINT     ;0   ;RTU       ;               ;    ;24  ;-25495;725 ;20  ;[RW]
+3;P;ValAi1_node24   ;INT      ;3   ;RTU       ;               ;    ;24  ;-25494;725 ;20  ;[RO]
+3;P;ValAi2_node24   ;INT      ;3   ;RTU       ;               ;    ;24  ;-25493;725 ;20  ;[RO]
+3;P;Conf1_node24    ;BYTE_BIT ;1   ;RTU       ;               ;    ;24  ;-25492;725 ;20  ;[RW]
+3;P;Conf2_node24    ;BYTE_BIT ;2   ;RTU       ;               ;    ;24  ;-25492;725 ;20  ;[RW]
+3;P;Conf3_node24    ;BYTE_BIT ;3   ;RTU       ;               ;    ;24  ;-25492;725 ;20  ;[RW]
+3;P;Conf4_node24    ;BYTE_BIT ;4   ;RTU       ;               ;    ;24  ;-25492;725 ;20  ;[RW]
+3;P;Conf5_node24    ;BYTE_BIT ;5   ;RTU       ;               ;    ;24  ;-25492;725 ;20  ;[RW]
+3;P;Conf6_node24    ;BYTE_BIT ;6   ;RTU       ;               ;    ;24  ;-25492;725 ;20  ;[RW]
+3;P;Conf7_node24    ;BYTE_BIT ;7   ;RTU       ;               ;    ;24  ;-25492;725 ;20  ;[RW]
+3;P;Conf8_node24    ;BYTE_BIT ;8   ;RTU       ;               ;    ;24  ;-25492;725 ;20  ;[RW]
+3;P;digIN5_node24   ;BYTE_BIT ;5   ;RTU       ;               ;    ;24  ;-25491;725 ;20  ;[RO]
+3;P;digIN6_node24   ;BYTE_BIT ;6   ;RTU       ;               ;    ;24  ;-25491;725 ;20  ;[RO]
+3;P;digIN7_node24   ;BYTE_BIT ;7   ;RTU       ;               ;    ;24  ;-25491;725 ;20  ;[RO]
+3;P;digIN8_node24   ;BYTE_BIT ;8   ;RTU       ;               ;    ;24  ;-25491;725 ;20  ;[RO]
+3;P;digOUT1_node24  ;BYTE_BIT ;1   ;RTU       ;               ;    ;24  ;-25490;725 ;20  ;[RW]
+3;P;digOUT2_node24  ;BYTE_BIT ;2   ;RTU       ;               ;    ;24  ;-25490;725 ;20  ;[RW]
+3;P;digOUT3_node24  ;BYTE_BIT ;3   ;RTU       ;               ;    ;24  ;-25490;725 ;20  ;[RW]
+3;P;digOUT4_node24  ;BYTE_BIT ;4   ;RTU       ;               ;    ;24  ;-25490;725 ;20  ;[RW]
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+1;P;RTU0_TYPE_PORT  ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5000;10  ;[RO]
+1;P;RTU0_BAUDRATE   ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5000;10  ;[RO]
+1;P;RTU0_STATUS     ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5000;10  ;[RO]
+1;P;RTU0_READS      ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5000;10  ;[RO]
+1;P;RTU0_WRITES     ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5000;10  ;[RO]
+1;P;RTU0_TIMEOUTS   ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5000;10  ;[RO]
+1;P;RTU0_COMM_ERRORS;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5000;10  ;[RO]
+1;P;RTU0_LAST_ERROR ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5000;10  ;[RO]
+1;P;RTU0_WRITE_QUEUE;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5000;10  ;[RO]
+1;P;RTU0_READ_QUEUE ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5000;10  ;[RO]
+1;P;RTU1_TYPE_PORT  ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5010;10  ;[RO]
+1;P;RTU1_BAUDRATE   ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5010;10  ;[RO]
+1;P;RTU1_STATUS     ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5010;10  ;[RO]
+1;P;RTU1_READS      ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5010;10  ;[RO]
+1;P;RTU1_WRITES     ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5010;10  ;[RO]
+1;P;RTU1_TIMEOUTS   ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5010;10  ;[RO]
+1;P;RTU1_COMM_ERRORS;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5010;10  ;[RO]
+1;P;RTU1_LAST_ERROR ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5010;10  ;[RO]
+1;P;RTU1_WRITE_QUEUE;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5010;10  ;[RO]
+1;P;RTU1_READ_QUEUE ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5010;10  ;[RO]
+1;P;RTU3_TYPE_PORT  ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5020;10  ;[RO]
+1;P;RTU3_BAUDRATE   ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5020;10  ;[RO]
+1;P;RTU3_STATUS     ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5020;10  ;[RO]
+1;P;RTU3_READS      ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5020;10  ;[RO]
+1;P;RTU3_WRITES     ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5020;10  ;[RO]
+1;P;RTU3_TIMEOUTS   ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5020;10  ;[RO]
+1;P;RTU3_COMM_ERRORS;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5020;10  ;[RO]
+1;P;RTU3_LAST_ERROR ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5020;10  ;[RO]
+1;P;RTU3_WRITE_QUEUE;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5020;10  ;[RO]
+1;P;RTU3_READ_QUEUE ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5020;10  ;[RO]
+1;P;CAN0_TYPE_PORT  ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5030;10  ;[RO]
+1;P;CAN0_BAUDRATE   ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5030;10  ;[RO]
+1;P;CAN0_STATUS     ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5030;10  ;[RO]
+1;P;CAN0_READS      ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5030;10  ;[RO]
+1;P;CAN0_WRITES     ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5030;10  ;[RO]
+1;P;CAN0_TIMEOUTS   ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5030;10  ;[RO]
+1;P;CAN0_COMM_ERRORS;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5030;10  ;[RO]
+1;P;CAN0_LAST_ERROR ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5030;10  ;[RO]
+1;P;CAN0_WRITE_QUEUE;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5030;10  ;[RO]
+1;P;CAN0_READ_QUEUE ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5030;10  ;[RO]
+1;P;CAN1_TYPE_PORT  ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5040;10  ;[RO]
+1;P;CAN1_BAUDRATE   ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5040;10  ;[RO]
+1;P;CAN1_STATUS     ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5040;10  ;[RO]
+1;P;CAN1_READS      ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5040;10  ;[RO]
+1;P;CAN1_WRITES     ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5040;10  ;[RO]
+1;P;CAN1_TIMEOUTS   ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5040;10  ;[RO]
+1;P;CAN1_COMM_ERRORS;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5040;10  ;[RO]
+1;P;CAN1_LAST_ERROR ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5040;10  ;[RO]
+1;P;CAN1_WRITE_QUEUE;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5040;10  ;[RO]
+1;P;CAN1_READ_QUEUE ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5040;10  ;[RO]
+1;P;TCPS_TYPE_PORT  ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5050;10  ;[RO]
+1;P;TCPS_IP_ADDRESS ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5050;10  ;[RO]
+1;P;TCPS_STATUS     ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5050;10  ;[RO]
+1;P;TCPS_READS      ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5050;10  ;[RO]
+1;P;TCPS_WRITES     ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5050;10  ;[RO]
+1;P;TCPS_TIMEOUTS   ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5050;10  ;[RO]
+1;P;TCPS_COMM_ERRORS;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5050;10  ;[RO]
+1;P;TCPS_LAST_ERROR ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5050;10  ;[RO]
+1;P;TCPS_WRITE_QUEUE;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5050;10  ;[RO]
+1;P;TCPS_READ_QUEUE ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5050;10  ;[RO]
+1;P;TCP0_TYPE_PORT  ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5060;10  ;[RO]
+1;P;TCP0_IP_ADDRESS ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5060;10  ;[RO]
+1;P;TCP0_STATUS     ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5060;10  ;[RO]
+1;P;TCP0_READS      ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5060;10  ;[RO]
+1;P;TCP0_WRITES     ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5060;10  ;[RO]
+1;P;TCP0_TIMEOUTS   ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5060;10  ;[RO]
+1;P;TCP0_COMM_ERRORS;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5060;10  ;[RO]
+1;P;TCP0_LAST_ERROR ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5060;10  ;[RO]
+1;P;TCP0_WRITE_QUEUE;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5060;10  ;[RO]
+1;P;TCP0_READ_QUEUE ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5060;10  ;[RO]
+1;P;TCP1_TYPE_PORT  ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5070;10  ;[RO]
+1;P;TCP1_IP_ADDRESS ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5070;10  ;[RO]
+1;P;TCP1_STATUS     ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5070;10  ;[RO]
+1;P;TCP1_READS      ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5070;10  ;[RO]
+1;P;TCP1_WRITES     ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5070;10  ;[RO]
+1;P;TCP1_TIMEOUTS   ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5070;10  ;[RO]
+1;P;TCP1_COMM_ERRORS;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5070;10  ;[RO]
+1;P;TCP1_LAST_ERROR ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5070;10  ;[RO]
+1;P;TCP1_WRITE_QUEUE;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5070;10  ;[RO]
+1;P;TCP1_READ_QUEUE ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5070;10  ;[RO]
+1;P;TCP2_TYPE_PORT  ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5080;10  ;[RO]
+1;P;TCP2_IP_ADDRESS ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5080;10  ;[RO]
+1;P;TCP2_STATUS     ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5080;10  ;[RO]
+1;P;TCP2_READS      ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5080;10  ;[RO]
+1;P;TCP2_WRITES     ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5080;10  ;[RO]
+1;P;TCP2_TIMEOUTS   ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5080;10  ;[RO]
+1;P;TCP2_COMM_ERRORS;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5080;10  ;[RO]
+1;P;TCP2_LAST_ERROR ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5080;10  ;[RO]
+1;P;TCP2_WRITE_QUEUE;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5080;10  ;[RO]
+1;P;TCP2_READ_QUEUE ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5080;10  ;[RO]
+1;P;TCP3_TYPE_PORT  ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5090;10  ;[RO]
+1;P;TCP3_IP_ADDRESS ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5090;10  ;[RO]
+1;P;TCP3_STATUS     ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5090;10  ;[RO]
+1;P;TCP3_READS      ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5090;10  ;[RO]
+1;P;TCP3_WRITES     ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5090;10  ;[RO]
+1;P;TCP3_TIMEOUTS   ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5090;10  ;[RO]
+1;P;TCP3_COMM_ERRORS;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5090;10  ;[RO]
+1;P;TCP3_LAST_ERROR ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5090;10  ;[RO]
+1;P;TCP3_WRITE_QUEUE;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5090;10  ;[RO]
+1;P;TCP3_READ_QUEUE ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5090;10  ;[RO]
+1;P;TCP4_TYPE_PORT  ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5100;10  ;[RO]
+1;P;TCP4_IP_ADDRESS ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5100;10  ;[RO]
+1;P;TCP4_STATUS     ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5100;10  ;[RO]
+1;P;TCP4_READS      ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5100;10  ;[RO]
+1;P;TCP4_WRITES     ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5100;10  ;[RO]
+1;P;TCP4_TIMEOUTS   ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5100;10  ;[RO]
+1;P;TCP4_COMM_ERRORS;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5100;10  ;[RO]
+1;P;TCP4_LAST_ERROR ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5100;10  ;[RO]
+1;P;TCP4_WRITE_QUEUE;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5100;10  ;[RO]
+1;P;TCP4_READ_QUEUE ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5100;10  ;[RO]
+1;P;TCP5_TYPE_PORT  ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5110;10  ;[RO]
+1;P;TCP5_IP_ADDRESS ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5110;10  ;[RO]
+1;P;TCP5_STATUS     ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5110;10  ;[RO]
+1;P;TCP5_READS      ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5110;10  ;[RO]
+1;P;TCP5_WRITES     ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5110;10  ;[RO]
+1;P;TCP5_TIMEOUTS   ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5110;10  ;[RO]
+1;P;TCP5_COMM_ERRORS;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5110;10  ;[RO]
+1;P;TCP5_LAST_ERROR ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5110;10  ;[RO]
+1;P;TCP5_WRITE_QUEUE;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5110;10  ;[RO]
+1;P;TCP5_READ_QUEUE ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5110;10  ;[RO]
+1;P;TCP6_TYPE_PORT  ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5120;10  ;[RO]
+1;P;TCP6_IP_ADDRESS ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5120;10  ;[RO]
+1;P;TCP6_STATUS     ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5120;10  ;[RO]
+1;P;TCP6_READS      ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5120;10  ;[RO]
+1;P;TCP6_WRITES     ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5120;10  ;[RO]
+1;P;TCP6_TIMEOUTS   ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5120;10  ;[RO]
+1;P;TCP6_COMM_ERRORS;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5120;10  ;[RO]
+1;P;TCP6_LAST_ERROR ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5120;10  ;[RO]
+1;P;TCP6_WRITE_QUEUE;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5120;10  ;[RO]
+1;P;TCP6_READ_QUEUE ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5120;10  ;[RO]
+1;P;TCP7_TYPE_PORT  ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5130;10  ;[RO]
+1;P;TCP7_IP_ADDRESS ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5130;10  ;[RO]
+1;P;TCP7_STATUS     ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5130;10  ;[RO]
+1;P;TCP7_READS      ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5130;10  ;[RO]
+1;P;TCP7_WRITES     ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5130;10  ;[RO]
+1;P;TCP7_TIMEOUTS   ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5130;10  ;[RO]
+1;P;TCP7_COMM_ERRORS;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5130;10  ;[RO]
+1;P;TCP7_LAST_ERROR ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5130;10  ;[RO]
+1;P;TCP7_WRITE_QUEUE;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5130;10  ;[RO]
+1;P;TCP7_READ_QUEUE ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5130;10  ;[RO]
+1;P;TCP8_TYPE_PORT  ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5140;10  ;[RO]
+1;P;TCP8_IP_ADDRESS ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5140;10  ;[RO]
+1;P;TCP8_STATUS     ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5140;10  ;[RO]
+1;P;TCP8_READS      ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5140;10  ;[RO]
+1;P;TCP8_WRITES     ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5140;10  ;[RO]
+1;P;TCP8_TIMEOUTS   ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5140;10  ;[RO]
+1;P;TCP8_COMM_ERRORS;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5140;10  ;[RO]
+1;P;TCP8_LAST_ERROR ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5140;10  ;[RO]
+1;P;TCP8_WRITE_QUEUE;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5140;10  ;[RO]
+1;P;TCP8_READ_QUEUE ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5140;10  ;[RO]
+1;P;TCP9_TYPE_PORT  ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5150;10  ;[RO]
+1;P;TCP9_IP_ADDRESS ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5150;10  ;[RO]
+1;P;TCP9_STATUS     ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5150;10  ;[RO]
+1;P;TCP9_READS      ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5150;10  ;[RO]
+1;P;TCP9_WRITES     ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5150;10  ;[RO]
+1;P;TCP9_TIMEOUTS   ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5150;10  ;[RO]
+1;P;TCP9_COMM_ERRORS;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5150;10  ;[RO]
+1;P;TCP9_LAST_ERROR ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5150;10  ;[RO]
+1;P;TCP9_WRITE_QUEUE;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5150;10  ;[RO]
+1;P;TCP9_READ_QUEUE ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5150;10  ;[RO]
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+1;P;NODE_01_DEV_NODE;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5172;2   ;[RO]
+1;P;NODE_01_STATUS  ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5172;2   ;[RO]
+1;P;NODE_02_DEV_NODE;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5174;2   ;[RO]
+1;P;NODE_02_STATUS  ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5174;2   ;[RO]
+1;P;NODE_03_DEV_NODE;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5176;2   ;[RO]
+1;P;NODE_03_STATUS  ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5176;2   ;[RO]
+1;P;NODE_04_DEV_NODE;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5178;2   ;[RO]
+1;P;NODE_04_STATUS  ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5178;2   ;[RO]
+1;P;NODE_05_DEV_NODE;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5180;2   ;[RO]
+1;P;NODE_05_STATUS  ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5180;2   ;[RO]
+1;P;NODE_06_DEV_NODE;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5182;2   ;[RO]
+1;P;NODE_06_STATUS  ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5182;2   ;[RO]
+1;P;NODE_07_DEV_NODE;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5184;2   ;[RO]
+1;P;NODE_07_STATUS  ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5184;2   ;[RO]
+1;P;NODE_08_DEV_NODE;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5186;2   ;[RO]
+1;P;NODE_08_STATUS  ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5186;2   ;[RO]
+1;P;NODE_09_DEV_NODE;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5188;2   ;[RO]
+1;P;NODE_09_STATUS  ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5188;2   ;[RO]
+1;P;NODE_10_DEV_NODE;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5190;2   ;[RO]
+1;P;NODE_10_STATUS  ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5190;2   ;[RO]
+1;P;NODE_11_DEV_NODE;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5192;2   ;[RO]
+1;P;NODE_11_STATUS  ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5192;2   ;[RO]
+1;P;NODE_12_DEV_NODE;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5194;2   ;[RO]
+1;P;NODE_12_STATUS  ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5194;2   ;[RO]
+1;P;NODE_13_DEV_NODE;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5196;2   ;[RO]
+1;P;NODE_13_STATUS  ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5196;2   ;[RO]
+1;P;NODE_14_DEV_NODE;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5198;2   ;[RO]
+1;P;NODE_14_STATUS  ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5198;2   ;[RO]
+1;P;NODE_15_DEV_NODE;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5200;2   ;[RO]
+1;P;NODE_15_STATUS  ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5200;2   ;[RO]
+1;P;NODE_16_DEV_NODE;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5202;2   ;[RO]
+1;P;NODE_16_STATUS  ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5202;2   ;[RO]
+1;P;NODE_17_DEV_NODE;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5204;2   ;[RO]
+1;P;NODE_17_STATUS  ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5204;2   ;[RO]
+1;P;NODE_18_DEV_NODE;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5206;2   ;[RO]
+1;P;NODE_18_STATUS  ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5206;2   ;[RO]
+1;P;NODE_19_DEV_NODE;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5208;2   ;[RO]
+1;P;NODE_19_STATUS  ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5208;2   ;[RO]
+1;P;NODE_20_DEV_NODE;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5210;2   ;[RO]
+1;P;NODE_20_STATUS  ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5210;2   ;[RO]
+1;P;NODE_21_DEV_NODE;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5212;2   ;[RO]
+1;P;NODE_21_STATUS  ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5212;2   ;[RO]
+1;P;NODE_22_DEV_NODE;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5214;2   ;[RO]
+1;P;NODE_22_STATUS  ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5214;2   ;[RO]
+1;P;NODE_23_DEV_NODE;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5216;2   ;[RO]
+1;P;NODE_23_STATUS  ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5216;2   ;[RO]
+1;P;NODE_24_DEV_NODE;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5218;2   ;[RO]
+1;P;NODE_24_STATUS  ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5218;2   ;[RO]
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+1;P;PLC_DigIn_1     ;BYTE_BIT ;1   ;CANOPEN   ;               ;    ;1   ;1   ;5300;55  ;[RO]
+1;P;PLC_DigIn_2     ;BYTE_BIT ;2   ;CANOPEN   ;               ;    ;1   ;1   ;5300;55  ;[RO]
+1;P;PLC_DigIn_3     ;BYTE_BIT ;3   ;CANOPEN   ;               ;    ;1   ;1   ;5300;55  ;[RO]
+1;P;PLC_DigIn_4     ;BYTE_BIT ;4   ;CANOPEN   ;               ;    ;1   ;1   ;5300;55  ;[RO]
+1;P;PLC_DigIn_5     ;BYTE_BIT ;5   ;CANOPEN   ;               ;    ;1   ;1   ;5300;55  ;[RO]
+1;P;PLC_DigIn_6     ;BYTE_BIT ;6   ;CANOPEN   ;               ;    ;1   ;1   ;5300;55  ;[RO]
+1;P;PLC_DigIn_7     ;BYTE_BIT ;7   ;CANOPEN   ;               ;    ;1   ;1   ;5300;55  ;[RO]
+1;P;PLC_DigIn_8     ;BYTE_BIT ;8   ;CANOPEN   ;               ;    ;1   ;1   ;5300;55  ;[RO]
+1;P;PLC_Reserved_1  ;BYTE_BIT ;1   ;CANOPEN   ;               ;    ;1   ;2   ;5300;55  ;[RO]
+1;P;PLC_DigOut_1    ;BYTE_BIT ;1   ;CANOPEN   ;               ;    ;1   ;3   ;5300;55  ;[RW]
+1;P;PLC_DigOut_2    ;BYTE_BIT ;2   ;CANOPEN   ;               ;    ;1   ;3   ;5300;55  ;[RW]
+1;P;PLC_DigOut_3    ;BYTE_BIT ;3   ;CANOPEN   ;               ;    ;1   ;3   ;5300;55  ;[RW]
+1;P;PLC_DigOut_4    ;BYTE_BIT ;4   ;CANOPEN   ;               ;    ;1   ;3   ;5300;55  ;[RW]
+1;P;PLC_DigOut_5    ;BYTE_BIT ;5   ;CANOPEN   ;               ;    ;1   ;3   ;5300;55  ;[RW]
+1;P;PLC_DigOut_6    ;BYTE_BIT ;6   ;CANOPEN   ;               ;    ;1   ;3   ;5300;55  ;[RW]
+1;P;PLC_DigOut_7    ;BYTE_BIT ;7   ;CANOPEN   ;               ;    ;1   ;3   ;5300;55  ;[RW]
+1;P;PLC_DigOut_8    ;BYTE_BIT ;8   ;CANOPEN   ;               ;    ;1   ;3   ;5300;55  ;[RW]
+1;P;PLC_DigOut_9    ;BYTE_BIT ;1   ;CANOPEN   ;               ;    ;1   ;4   ;5300;55  ;[RW]
+1;P;PLC_DigOut_10   ;BYTE_BIT ;2   ;CANOPEN   ;               ;    ;1   ;4   ;5300;55  ;[RW]
+1;P;PLC_DigOut_11   ;BYTE_BIT ;3   ;CANOPEN   ;               ;    ;1   ;4   ;5300;55  ;[RW]
+1;P;PLC_DigOut_12   ;BYTE_BIT ;4   ;CANOPEN   ;               ;    ;1   ;4   ;5300;55  ;[RW]
+1;P;PLC_Hwconf      ;UINT     ;0   ;CANOPEN   ;               ;    ;1   ;5   ;5300;55  ;[RO]
+1;P;PLC_Revisione   ;UINT     ;0   ;CANOPEN   ;               ;    ;1   ;6   ;5300;55  ;[RO]
+1;P;PLC_StatusReg   ;UINT     ;0   ;CANOPEN   ;               ;    ;1   ;7   ;5300;55  ;[RO]
+1;P;PLC_Heartbeat   ;UINT     ;0   ;CANOPEN   ;               ;    ;1   ;8   ;5300;55  ;[RO]
+1;P;PLC_AnIn_1      ;INT      ;3   ;CANOPEN   ;               ;    ;1   ;9   ;5300;55  ;[RO]
+1;P;PLC_AnIn_2      ;INT      ;3   ;CANOPEN   ;               ;    ;1   ;10  ;5300;55  ;[RO]
+1;P;PLC_AnIn_3      ;INT      ;3   ;CANOPEN   ;               ;    ;1   ;11  ;5300;55  ;[RO]
+1;P;PLC_AnIn_4      ;INT      ;3   ;CANOPEN   ;               ;    ;1   ;12  ;5300;55  ;[RO]
+1;P;PLC_EncoderCo_Lo;UINT     ;1   ;CANOPEN   ;               ;    ;1   ;13  ;5300;55  ;[RO]
+1;P;PLC_EncoderCo_Hi;UINT     ;1   ;CANOPEN   ;               ;    ;1   ;14  ;5300;55  ;[RO]
+1;P;PLC_CaptureT1_Lo;UINT     ;0   ;CANOPEN   ;               ;    ;1   ;15  ;5300;55  ;[RO]
+1;P;PLC_CaptureT1_Hi;UINT     ;0   ;CANOPEN   ;               ;    ;1   ;16  ;5300;55  ;[RO]
+1;P;PLC_CaptureT2_Lo;UINT     ;0   ;CANOPEN   ;               ;    ;1   ;17  ;5300;55  ;[RO]
+1;P;PLC_CaptureT2_Hi;UINT     ;0   ;CANOPEN   ;               ;    ;1   ;18  ;5300;55  ;[RO]
+1;P;PLC_RPM         ;UINT     ;1   ;CANOPEN   ;               ;    ;1   ;19  ;5300;55  ;[RO]
+1;P;PLC_Tamb        ;INT      ;1   ;CANOPEN   ;               ;    ;1   ;20  ;5300;55  ;[RO]
+1;P;PLC_EnableEnc   ;UINT     ;0   ;CANOPEN   ;               ;    ;1   ;21  ;5300;55  ;[RW]
+1;P;PLC_ResetCount  ;UINT     ;0   ;CANOPEN   ;               ;    ;1   ;22  ;5300;55  ;[RW]
+1;P;PLC_AnInConf_1  ;UINT     ;0   ;CANOPEN   ;               ;    ;1   ;23  ;5300;55  ;[RW]
+1;P;PLC_AnInConf_2  ;UINT     ;0   ;CANOPEN   ;               ;    ;1   ;24  ;5300;55  ;[RW]
+1;P;PLC_AnInConf_3  ;UINT     ;0   ;CANOPEN   ;               ;    ;1   ;25  ;5300;55  ;[RW]
+1;P;PLC_AnInConf_4  ;UINT     ;0   ;CANOPEN   ;               ;    ;1   ;26  ;5300;55  ;[RW]
+1;P;PLC_AnOutConf_1 ;UINT     ;0   ;CANOPEN   ;               ;    ;1   ;27  ;5300;55  ;[RW]
+1;P;PLC_AnOutConf_2 ;UINT     ;0   ;CANOPEN   ;               ;    ;1   ;28  ;5300;55  ;[RW]
+1;P;PLC_Reserved_2  ;UINT     ;0   ;CANOPEN   ;               ;    ;1   ;29  ;5300;55  ;[RW]
+1;P;PLC_Reserved_3  ;UINT     ;0   ;CANOPEN   ;               ;    ;1   ;30  ;5300;55  ;[RW]
+1;P;PLC_AnOut_1     ;INT      ;2   ;CANOPEN   ;               ;    ;1   ;31  ;5300;55  ;[RW]
+1;P;PLC_AnOut_2     ;INT      ;2   ;CANOPEN   ;               ;    ;1   ;32  ;5300;55  ;[RW]
+1;P;PLC_Reserved_4  ;INT      ;2   ;CANOPEN   ;               ;    ;1   ;33  ;5300;55  ;[RW]
+1;P;PLC_Reserved_5  ;INT      ;2   ;CANOPEN   ;               ;    ;1   ;34  ;5300;55  ;[RW]
+1;P;PLC_FiltAnIn_1  ;UINT     ;2   ;CANOPEN   ;               ;    ;1   ;35  ;5300;55  ;[RW]
+1;P;PLC_FiltAnIn_2  ;UINT     ;2   ;CANOPEN   ;               ;    ;1   ;36  ;5300;55  ;[RW]
+1;P;PLC_FiltAnIn_3  ;UINT     ;2   ;CANOPEN   ;               ;    ;1   ;37  ;5300;55  ;[RW]
+1;P;PLC_FiltAnIn_4  ;UINT     ;2   ;CANOPEN   ;               ;    ;1   ;38  ;5300;55  ;[RW]
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+1;P;CH0_NETRUN      ;BIT      ;0   ;CANOPEN   ;               ;    ;0   ;0   ;5357;1   ;[RO]
+1;P;CH0_NETGOOD     ;BIT      ;0   ;CANOPEN   ;               ;    ;0   ;0   ;5358;1   ;[RO]
+1;P;CH0_NETERR      ;UDINT    ;0   ;CANOPEN   ;               ;    ;0   ;0   ;5359;1   ;[RO]
+1;P;CH0_NETRST      ;BIT      ;0   ;CANOPEN   ;               ;    ;0   ;0   ;5360;1   ;[RW]
+1;P;CH0_NETDIS      ;BIT      ;0   ;CANOPEN   ;               ;    ;0   ;0   ;5361;1   ;[RW]
+1;P;CH0_01_NODERUN  ;BIT      ;0   ;CANOPEN   ;               ;    ;0   ;0   ;5362;1   ;[RO]
+1;P;CH0_01_NODEGOOD ;BIT      ;0   ;CANOPEN   ;               ;    ;0   ;0   ;5363;1   ;[RO]
+1;P;CH0_01_NODEERR  ;UDINT    ;0   ;CANOPEN   ;               ;    ;0   ;0   ;5364;1   ;[RO]
+1;P;CH0_01_NODERST  ;BIT      ;0   ;CANOPEN   ;               ;    ;0   ;0   ;5365;1   ;[RW]
+1;P;CH0_01_NODEDIS  ;BIT      ;0   ;CANOPEN   ;               ;    ;0   ;0   ;5366;1   ;[RW]
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+1;P;PLC_time        ;REAL     ;2   ;PLC       ;               ;    ;    ;    ;5390;4   ;[RO]
+1;P;PLC_timeMin     ;REAL     ;2   ;PLC       ;               ;    ;    ;    ;5390;4   ;[RO]
+1;P;PLC_timeMax     ;REAL     ;2   ;PLC       ;               ;    ;    ;    ;5390;4   ;[RO]
+1;P;PLC_timeWin     ;REAL     ;2   ;PLC       ;               ;    ;    ;    ;5390;4   ;[RW]
+1;P;PLC_Version     ;UINT     ;3   ;PLC       ;               ;    ;    ;    ;5394;1   ;[RO]
+1;P;PLC_EngineStatus;UINT     ;0   ;PLC       ;               ;    ;    ;    ;5395;1   ;[RO]
+1;P;PLC_ResetValues ;BIT      ;0   ;PLC       ;               ;    ;    ;    ;5396;1   ;[RW]
+1;P;PLC_buzzerOn    ;BIT      ;0   ;PLC       ;               ;    ;    ;    ;5397;1   ;[RW]
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
