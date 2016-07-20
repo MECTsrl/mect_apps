@@ -87,27 +87,19 @@ void loop(void)
 {
     if (previous_PLC_Heartbeat == PLC_Heartbeat) {
         if ((PLC_time - last_PLC_time) > 1.0) {
-#if 0
-            QMessageBox::critical(0, "WATCHDOG", "RTU3 hangup for 1s :(\nRestarting the engine.");
-            system("killall fcrts");
-            system("/root/fcrts &");
-            do {
-                sleep(1);
-                previous_PLC_time = PLC_time;
-            } while (previous_PLC_time == PLC_time);
-            previous_PLC_Heartbeat = PLC_Heartbeat;
-            previous_PLC_time = PLC_time;
-            last_PLC_time = PLC_time;
-            sleep(1);
-#else
-            QMessageBox::critical(0, "RTU3 hangup :(", "What happened?");
-#endif
+            QMessageBox box;
+            box.setWindowTitle("RTU3 hangup :(");
+            box.setText("What happened?");
+            box.exec();
         }
     } else {
         previous_PLC_Heartbeat = PLC_Heartbeat;
         last_PLC_time = PLC_time;
         if (previous_PLC_time == PLC_time) {
-            QMessageBox::critical(0, "PLC_time hangup :(", "What happened?");
+            QMessageBox box;
+            box.setWindowTitle("PLC_time hangup :(");
+            box.setText("What happened?");
+            box.exec();
         } else {
             previous_PLC_time = PLC_time;
         }
@@ -157,7 +149,10 @@ void loop(void)
                 } else {
                     logStop();
                     if (RESULTS_OK == TEST_STEP_MAX) {
-                        QMessageBox::information(0, "TEST RESULT", "RESULT = OK\n\nnow PWR_OFF then touch OK");
+                        QMessageBox box;
+                        box.setWindowTitle("TEST RESULT");
+                        box.setText("RESULT = OK\n\nnow PWR_OFF then touch OK");
+                        box.exec();
                     }
                     return;
                 }
