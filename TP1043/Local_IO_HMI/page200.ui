@@ -104,6 +104,7 @@ background-color: rgb(170, 255, 255);
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
+     <pointsize>8</pointsize>
     </font>
    </property>
    <property name="text">
@@ -159,7 +160,7 @@ background-color: rgb(170, 255, 255);
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>10</pointsize>
+     <pointsize>8</pointsize>
     </font>
    </property>
    <property name="toolTip">
@@ -211,6 +212,11 @@ background-color: rgb(170, 255, 255);
      <width>120</width>
      <height>34</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>8</pointsize>
+    </font>
    </property>
    <property name="toolTip">
     <string>CAN1_BAUDRATE</string>
@@ -265,14 +271,14 @@ background-color: rgb(170, 255, 255);
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>10</pointsize>
+     <pointsize>8</pointsize>
     </font>
    </property>
    <property name="styleSheet">
     <string notr="true">background-color: rgb(170, 255, 127);</string>
    </property>
    <property name="text">
-    <string>Local_IO page200</string>
+    <string>Local_IO p.200</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>
@@ -290,7 +296,7 @@ background-color: rgb(170, 255, 255);
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>10</pointsize>
+     <pointsize>8</pointsize>
     </font>
    </property>
    <property name="toolTip">
@@ -343,6 +349,7 @@ background-color: rgb(170, 255, 255);
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
+     <pointsize>8</pointsize>
     </font>
    </property>
    <property name="checkable">
@@ -408,7 +415,7 @@ background-color: rgb(170, 255, 255);
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>10</pointsize>
+     <pointsize>8</pointsize>
     </font>
    </property>
    <property name="styleSheet">
@@ -433,6 +440,7 @@ background-color: rgb(170, 255, 255);
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
+     <pointsize>8</pointsize>
     </font>
    </property>
    <property name="text">
@@ -484,6 +492,11 @@ background-color: rgb(170, 255, 255);
      <width>34</width>
      <height>34</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>8</pointsize>
+    </font>
    </property>
    <property name="checkable">
     <bool>true</bool>
@@ -551,7 +564,7 @@ background-color: rgb(170, 255, 255);
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>10</pointsize>
+     <pointsize>8</pointsize>
     </font>
    </property>
    <property name="styleSheet">
@@ -576,7 +589,7 @@ background-color: rgb(170, 255, 255);
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>10</pointsize>
+     <pointsize>8</pointsize>
      <weight>50</weight>
      <bold>false</bold>
     </font>
@@ -647,6 +660,7 @@ background-color: rgb(170, 255, 255);
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
+     <pointsize>8</pointsize>
     </font>
    </property>
    <property name="text">
@@ -705,7 +719,7 @@ background-color: rgb(170, 255, 255);
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>10</pointsize>
+     <pointsize>8</pointsize>
     </font>
    </property>
    <property name="styleSheet">
@@ -730,6 +744,7 @@ background-color: rgb(170, 255, 255);
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
+     <pointsize>8</pointsize>
     </font>
    </property>
    <property name="text">
@@ -785,6 +800,7 @@ background-color: rgb(170, 255, 255);
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
+     <pointsize>8</pointsize>
     </font>
    </property>
    <property name="text">
@@ -840,6 +856,11 @@ background-color: rgb(170, 255, 255);
      <height>272</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
    <property name="orientation">
     <enum>Qt::Vertical</enum>
    </property>
@@ -856,6 +877,7 @@ background-color: rgb(170, 255, 255);
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
+     <pointsize>8</pointsize>
     </font>
    </property>
    <property name="orientation">
@@ -927,6 +949,7 @@ background-color: rgb(170, 255, 255);
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
+     <pointsize>8</pointsize>
     </font>
    </property>
    <property name="text">
@@ -978,6 +1001,11 @@ background-color: rgb(170, 255, 255);
      <width>481</width>
      <height>3</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>8</pointsize>
+    </font>
    </property>
    <property name="orientation">
     <enum>Qt::Horizontal</enum>
@@ -1051,6 +1079,7 @@ background-color: rgb(170, 255, 255);
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
+     <pointsize>8</pointsize>
     </font>
    </property>
    <property name="text">
@@ -1134,6 +1163,7 @@ background-color: rgb(170, 255, 255);
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
+     <pointsize>8</pointsize>
     </font>
    </property>
    <property name="text">
@@ -1192,7 +1222,7 @@ background-color: rgb(170, 255, 255);
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>13</pointsize>
+     <pointsize>8</pointsize>
     </font>
    </property>
    <property name="text">
@@ -1258,6 +1288,7 @@ background-color: rgb(170, 255, 255);
    <property name="font">
     <font>
      <family>DejaVu Sans Mono</family>
+     <pointsize>8</pointsize>
     </font>
    </property>
    <property name="toolTip">
@@ -1351,7 +1382,7 @@ background-color: rgb(170, 255, 255);
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>10</pointsize>
+     <pointsize>8</pointsize>
      <weight>75</weight>
      <bold>true</bold>
     </font>
@@ -1439,6 +1470,11 @@ background-color: rgb(170, 255, 255);
      <height>34</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
    <property name="toolTip">
     <string>TCPS_IP_ADDRESS</string>
    </property>
@@ -1492,6 +1528,7 @@ background-color: rgb(170, 255, 255);
    <property name="font">
     <font>
      <family>DejaVu Sans Mono</family>
+     <pointsize>8</pointsize>
     </font>
    </property>
    <property name="toolTip">
@@ -1529,6 +1566,7 @@ background-color: rgb(170, 255, 255);
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
+     <pointsize>8</pointsize>
     </font>
    </property>
    <property name="text">
@@ -1581,6 +1619,11 @@ background-color: rgb(170, 255, 255);
      <height>272</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
    <property name="orientation">
     <enum>Qt::Vertical</enum>
    </property>
@@ -1593,6 +1636,11 @@ background-color: rgb(170, 255, 255);
      <width>481</width>
      <height>3</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>8</pointsize>
+    </font>
    </property>
    <property name="orientation">
     <enum>Qt::Horizontal</enum>
@@ -1702,6 +1750,7 @@ background-color: rgb(170, 255, 255);
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
+     <pointsize>8</pointsize>
     </font>
    </property>
    <property name="text">
@@ -1779,6 +1828,11 @@ background-color: rgb(170, 255, 255);
      <height>68</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
    <property name="orientation">
     <enum>Qt::Vertical</enum>
    </property>
@@ -1827,6 +1881,11 @@ background-color: rgb(170, 255, 255);
      <width>120</width>
      <height>70</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>8</pointsize>
+    </font>
    </property>
    <property name="toolTip">
     <string/>
@@ -1878,6 +1937,7 @@ background-color: rgb(170, 255, 255);
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
+     <pointsize>8</pointsize>
     </font>
    </property>
    <property name="text">
@@ -1929,6 +1989,11 @@ background-color: rgb(170, 255, 255);
      <width>3</width>
      <height>272</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>8</pointsize>
+    </font>
    </property>
    <property name="orientation">
     <enum>Qt::Vertical</enum>
