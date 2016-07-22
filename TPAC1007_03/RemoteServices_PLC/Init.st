@@ -12,4 +12,8 @@ PLC_DigDir_2 := 1; (* Latency <-- PLC_DigIn_3  *)
 PLC_DigDir_3 := 0; (* TPC_DigIn_3  *)
 PLC_DigDir_4 := 1; (* TPC_DigOut_4 *)
 
+PLC_AnInConf_1 := 2; (* 0..10 V *)
+PLC_AnInConf_2 := 2; (* 0..10 V *)
+PLC_AnOutConf_1 := 2; (* 0..10 V *)
+
 END_PROGRAM
