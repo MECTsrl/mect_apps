@@ -49,7 +49,7 @@
    <property name="font">
     <font>
      <family>DejaVu Sans Mono</family>
-     <pointsize>10</pointsize>
+     <pointsize>9</pointsize>
     </font>
    </property>
    <property name="orientation">
@@ -68,7 +68,7 @@
    <property name="font">
     <font>
      <family>DejaVu Sans Mono</family>
-     <pointsize>10</pointsize>
+     <pointsize>9</pointsize>
     </font>
    </property>
    <property name="orientation">
@@ -87,7 +87,7 @@
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>13</pointsize>
+     <pointsize>9</pointsize>
     </font>
    </property>
    <property name="styleSheet">
@@ -112,7 +112,7 @@
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>13</pointsize>
+     <pointsize>9</pointsize>
     </font>
    </property>
    <property name="styleSheet">
@@ -140,7 +140,7 @@
    <property name="font">
     <font>
      <family>DejaVu Sans Mono</family>
-     <pointsize>13</pointsize>
+     <pointsize>9</pointsize>
      <weight>50</weight>
      <bold>false</bold>
     </font>
@@ -211,7 +211,7 @@
    <property name="font">
     <font>
      <family>DejaVu Sans Mono</family>
-     <pointsize>13</pointsize>
+     <pointsize>9</pointsize>
      <weight>50</weight>
      <bold>false</bold>
     </font>
@@ -285,7 +285,7 @@
    <property name="font">
     <font>
      <family>DejaVu Sans Mono</family>
-     <pointsize>13</pointsize>
+     <pointsize>9</pointsize>
      <weight>50</weight>
      <bold>false</bold>
     </font>
@@ -353,7 +353,7 @@
    <property name="font">
     <font>
      <family>DejaVu Sans Mono</family>
-     <pointsize>13</pointsize>
+     <pointsize>9</pointsize>
      <weight>50</weight>
      <bold>false</bold>
     </font>
@@ -418,7 +418,7 @@
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>13</pointsize>
+     <pointsize>9</pointsize>
     </font>
    </property>
    <property name="styleSheet">
@@ -443,7 +443,7 @@
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>13</pointsize>
+     <pointsize>9</pointsize>
     </font>
    </property>
    <property name="styleSheet">
@@ -468,7 +468,7 @@
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>13</pointsize>
+     <pointsize>9</pointsize>
     </font>
    </property>
    <property name="styleSheet">
@@ -493,7 +493,7 @@
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>13</pointsize>
+     <pointsize>9</pointsize>
     </font>
    </property>
    <property name="styleSheet">
@@ -518,7 +518,7 @@
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>13</pointsize>
+     <pointsize>9</pointsize>
     </font>
    </property>
    <property name="styleSheet">
@@ -543,7 +543,7 @@
    <property name="font">
     <font>
      <family>DejaVu Sans Mono</family>
-     <pointsize>13</pointsize>
+     <pointsize>9</pointsize>
      <weight>50</weight>
      <bold>false</bold>
     </font>
@@ -611,7 +611,7 @@
    <property name="font">
     <font>
      <family>DejaVu Sans Mono</family>
-     <pointsize>13</pointsize>
+     <pointsize>9</pointsize>
      <weight>50</weight>
      <bold>false</bold>
     </font>
@@ -679,7 +679,7 @@
    <property name="font">
     <font>
      <family>DejaVu Sans Mono</family>
-     <pointsize>13</pointsize>
+     <pointsize>9</pointsize>
      <weight>50</weight>
      <bold>false</bold>
     </font>
@@ -750,7 +750,7 @@
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>13</pointsize>
+     <pointsize>9</pointsize>
     </font>
    </property>
    <property name="checkable">
@@ -819,7 +819,7 @@
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>13</pointsize>
+     <pointsize>9</pointsize>
     </font>
    </property>
    <property name="styleSheet">
@@ -844,7 +844,7 @@
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>13</pointsize>
+     <pointsize>9</pointsize>
     </font>
    </property>
    <property name="styleSheet">
@@ -869,7 +869,7 @@
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>13</pointsize>
+     <pointsize>9</pointsize>
     </font>
    </property>
    <property name="styleSheet">
@@ -894,7 +894,7 @@
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>13</pointsize>
+     <pointsize>9</pointsize>
     </font>
    </property>
    <property name="styleSheet">
@@ -919,7 +919,7 @@
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>13</pointsize>
+     <pointsize>9</pointsize>
     </font>
    </property>
    <property name="styleSheet">
@@ -944,7 +944,7 @@
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>13</pointsize>
+     <pointsize>9</pointsize>
     </font>
    </property>
    <property name="styleSheet">
@@ -969,7 +969,7 @@
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>13</pointsize>
+     <pointsize>9</pointsize>
     </font>
    </property>
    <property name="styleSheet">
@@ -994,7 +994,7 @@
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>13</pointsize>
+     <pointsize>9</pointsize>
     </font>
    </property>
    <property name="styleSheet">
@@ -1019,7 +1019,7 @@
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>13</pointsize>
+     <pointsize>9</pointsize>
     </font>
    </property>
    <property name="styleSheet">
@@ -1044,7 +1044,7 @@
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>13</pointsize>
+     <pointsize>9</pointsize>
     </font>
    </property>
    <property name="styleSheet">
@@ -1069,7 +1069,7 @@
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>13</pointsize>
+     <pointsize>9</pointsize>
     </font>
    </property>
    <property name="styleSheet">
@@ -1094,7 +1094,7 @@
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>13</pointsize>
+     <pointsize>9</pointsize>
     </font>
    </property>
    <property name="styleSheet">
@@ -1119,7 +1119,7 @@
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>13</pointsize>
+     <pointsize>9</pointsize>
     </font>
    </property>
    <property name="styleSheet">
@@ -1147,7 +1147,7 @@
    <property name="font">
     <font>
      <family>DejaVu Sans Mono</family>
-     <pointsize>13</pointsize>
+     <pointsize>9</pointsize>
      <weight>50</weight>
      <bold>false</bold>
     </font>
@@ -1215,7 +1215,7 @@
    <property name="font">
     <font>
      <family>DejaVu Sans Mono</family>
-     <pointsize>13</pointsize>
+     <pointsize>9</pointsize>
      <weight>50</weight>
      <bold>false</bold>
     </font>
@@ -1283,7 +1283,7 @@
    <property name="font">
     <font>
      <family>DejaVu Sans Mono</family>
-     <pointsize>13</pointsize>
+     <pointsize>9</pointsize>
      <weight>50</weight>
      <bold>false</bold>
     </font>
@@ -1351,7 +1351,7 @@
    <property name="font">
     <font>
      <family>DejaVu Sans Mono</family>
-     <pointsize>13</pointsize>
+     <pointsize>9</pointsize>
      <weight>50</weight>
      <bold>false</bold>
     </font>
@@ -1416,7 +1416,7 @@
    <property name="font">
     <font>
      <family>DejaVu Sans Mono</family>
-     <pointsize>13</pointsize>
+     <pointsize>9</pointsize>
      <weight>50</weight>
      <bold>false</bold>
     </font>
@@ -1775,7 +1775,7 @@
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>13</pointsize>
+     <pointsize>9</pointsize>
     </font>
    </property>
    <property name="checkable">
@@ -1841,7 +1841,7 @@
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>13</pointsize>
+     <pointsize>9</pointsize>
     </font>
    </property>
    <property name="checkable">
@@ -1907,7 +1907,7 @@
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>13</pointsize>
+     <pointsize>9</pointsize>
     </font>
    </property>
    <property name="checkable">
@@ -1973,7 +1973,7 @@
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>13</pointsize>
+     <pointsize>9</pointsize>
     </font>
    </property>
    <property name="checkable">
@@ -2039,7 +2039,7 @@
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>13</pointsize>
+     <pointsize>9</pointsize>
     </font>
    </property>
    <property name="checkable">
@@ -2105,7 +2105,7 @@
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>13</pointsize>
+     <pointsize>9</pointsize>
     </font>
    </property>
    <property name="checkable">
@@ -2171,7 +2171,7 @@
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>13</pointsize>
+     <pointsize>9</pointsize>
     </font>
    </property>
    <property name="checkable">
@@ -2237,7 +2237,7 @@
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>13</pointsize>
+     <pointsize>9</pointsize>
     </font>
    </property>
    <property name="checkable">
@@ -2306,7 +2306,7 @@
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>13</pointsize>
+     <pointsize>9</pointsize>
     </font>
    </property>
    <property name="checkable">
@@ -2372,7 +2372,7 @@
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>13</pointsize>
+     <pointsize>9</pointsize>
     </font>
    </property>
    <property name="checkable">
@@ -2438,7 +2438,7 @@
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>13</pointsize>
+     <pointsize>9</pointsize>
     </font>
    </property>
    <property name="checkable">
@@ -2504,7 +2504,7 @@
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>13</pointsize>
+     <pointsize>9</pointsize>
     </font>
    </property>
    <property name="checkable">
@@ -2570,7 +2570,7 @@
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>13</pointsize>
+     <pointsize>9</pointsize>
     </font>
    </property>
    <property name="styleSheet">
@@ -2625,7 +2625,7 @@
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>13</pointsize>
+     <pointsize>9</pointsize>
     </font>
    </property>
    <property name="styleSheet">
@@ -2680,7 +2680,7 @@
    <property name="font">
     <font>
      <family>DejaVu Sans Mono</family>
-     <pointsize>13</pointsize>
+     <pointsize>9</pointsize>
      <weight>50</weight>
      <bold>false</bold>
     </font>
@@ -2748,7 +2748,7 @@
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>13</pointsize>
+     <pointsize>9</pointsize>
      <weight>50</weight>
      <bold>false</bold>
     </font>
@@ -2778,7 +2778,7 @@
    <property name="font">
     <font>
      <family>DejaVu Sans Mono</family>
-     <pointsize>13</pointsize>
+     <pointsize>9</pointsize>
      <weight>50</weight>
      <bold>false</bold>
     </font>
@@ -2849,7 +2849,7 @@
    <property name="font">
     <font>
      <family>DejaVu Sans Mono</family>
-     <pointsize>13</pointsize>
+     <pointsize>9</pointsize>
      <weight>50</weight>
      <bold>false</bold>
     </font>
@@ -2920,7 +2920,7 @@
    <property name="font">
     <font>
      <family>DejaVu Sans Mono</family>
-     <pointsize>13</pointsize>
+     <pointsize>9</pointsize>
      <weight>50</weight>
      <bold>false</bold>
     </font>
@@ -2988,7 +2988,7 @@
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>13</pointsize>
+     <pointsize>9</pointsize>
     </font>
    </property>
    <property name="text">
@@ -3188,7 +3188,7 @@
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>13</pointsize>
+     <pointsize>9</pointsize>
     </font>
    </property>
    <property name="styleSheet">
@@ -3210,6 +3210,11 @@
      <height>3</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <pointsize>9</pointsize>
+    </font>
+   </property>
    <property name="orientation">
     <enum>Qt::Horizontal</enum>
    </property>
@@ -3226,7 +3231,7 @@
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>13</pointsize>
+     <pointsize>9</pointsize>
     </font>
    </property>
    <property name="styleSheet">

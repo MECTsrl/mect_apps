@@ -43,7 +43,7 @@
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>10</pointsize>
+     <pointsize>7</pointsize>
     </font>
    </property>
    <property name="checkable">
@@ -112,7 +112,7 @@
    <property name="font">
     <font>
      <family>DejaVu Sans Mono</family>
-     <pointsize>10</pointsize>
+     <pointsize>7</pointsize>
     </font>
    </property>
    <property name="orientation">
@@ -128,6 +128,11 @@
      <height>3</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
+   </property>
    <property name="orientation">
     <enum>Qt::Horizontal</enum>
    </property>
@@ -140,6 +145,11 @@
      <width>320</width>
      <height>3</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
    </property>
    <property name="orientation">
     <enum>Qt::Horizontal</enum>
@@ -157,7 +167,7 @@
    <property name="font">
     <font>
      <family>DejaVu Sans Mono</family>
-     <pointsize>10</pointsize>
+     <pointsize>7</pointsize>
     </font>
    </property>
    <property name="orientation">
@@ -176,7 +186,7 @@
    <property name="font">
     <font>
      <family>DejaVu Sans Mono</family>
-     <pointsize>10</pointsize>
+     <pointsize>7</pointsize>
     </font>
    </property>
    <property name="orientation">
@@ -195,6 +205,7 @@
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
+     <pointsize>7</pointsize>
     </font>
    </property>
    <property name="text">
@@ -250,6 +261,7 @@
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
+     <pointsize>7</pointsize>
     </font>
    </property>
    <property name="text">
@@ -308,7 +320,7 @@
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>8</pointsize>
+     <pointsize>7</pointsize>
     </font>
    </property>
    <property name="toolTip">
@@ -361,6 +373,7 @@
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
+     <pointsize>7</pointsize>
     </font>
    </property>
    <property name="text">
@@ -416,6 +429,11 @@
      <height>27</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
+   </property>
    <property name="toolTip">
     <string>CAN0_BAUDRATE</string>
    </property>
@@ -469,6 +487,7 @@
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
+     <pointsize>7</pointsize>
     </font>
    </property>
    <property name="text">
@@ -524,7 +543,7 @@
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>8</pointsize>
+     <pointsize>7</pointsize>
      <weight>75</weight>
      <bold>true</bold>
     </font>
@@ -552,6 +571,7 @@ CAN0 NODE1</string>
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
+     <pointsize>7</pointsize>
     </font>
    </property>
    <property name="text">
@@ -607,6 +627,7 @@ CAN0 NODE1</string>
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
+     <pointsize>7</pointsize>
     </font>
    </property>
    <property name="text">
@@ -662,6 +683,7 @@ CAN0 NODE1</string>
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
+     <pointsize>7</pointsize>
     </font>
    </property>
    <property name="text">
@@ -714,6 +736,11 @@ CAN0 NODE1</string>
      <height>3</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
+   </property>
    <property name="orientation">
     <enum>Qt::Horizontal</enum>
    </property>
@@ -726,6 +753,11 @@ CAN0 NODE1</string>
      <width>320</width>
      <height>3</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
    </property>
    <property name="orientation">
     <enum>Qt::Horizontal</enum>
@@ -743,6 +775,7 @@ CAN0 NODE1</string>
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
+     <pointsize>7</pointsize>
     </font>
    </property>
    <property name="text">
@@ -798,6 +831,7 @@ CAN0 NODE1</string>
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
+     <pointsize>7</pointsize>
     </font>
    </property>
    <property name="text">
@@ -853,7 +887,7 @@ CAN0 NODE1</string>
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>8</pointsize>
+     <pointsize>7</pointsize>
      <weight>75</weight>
      <bold>true</bold>
     </font>
@@ -880,6 +914,11 @@ RTU3 NODE20</string>
      <width>80</width>
      <height>27</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
    </property>
    <property name="toolTip">
     <string>RTU3_BAUDRATE</string>
@@ -934,7 +973,7 @@ RTU3 NODE20</string>
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>8</pointsize>
+     <pointsize>7</pointsize>
     </font>
    </property>
    <property name="toolTip">
@@ -987,6 +1026,7 @@ RTU3 NODE20</string>
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
+     <pointsize>7</pointsize>
     </font>
    </property>
    <property name="text">
@@ -1042,6 +1082,7 @@ RTU3 NODE20</string>
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
+     <pointsize>7</pointsize>
     </font>
    </property>
    <property name="text">
@@ -1097,6 +1138,11 @@ RTU3 NODE20</string>
      <height>27</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
+   </property>
    <property name="toolTip">
     <string>RTU_HEARTBEAT</string>
    </property>
@@ -1147,6 +1193,7 @@ RTU3 NODE20</string>
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
+     <pointsize>7</pointsize>
     </font>
    </property>
    <property name="text">
@@ -1205,6 +1252,7 @@ RTU3 NODE20</string>
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
+     <pointsize>7</pointsize>
     </font>
    </property>
    <property name="text">
@@ -1260,6 +1308,7 @@ RTU3 NODE20</string>
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
+     <pointsize>7</pointsize>
     </font>
    </property>
    <property name="text">
@@ -1318,6 +1367,7 @@ RTU3 NODE20</string>
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
+     <pointsize>7</pointsize>
     </font>
    </property>
    <property name="text">
@@ -1379,7 +1429,7 @@ RTU3 NODE20</string>
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>8</pointsize>
+     <pointsize>7</pointsize>
     </font>
    </property>
    <property name="styleSheet">
@@ -1435,6 +1485,7 @@ RTU3 NODE20</string>
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
+     <pointsize>7</pointsize>
     </font>
    </property>
    <property name="checkable">
@@ -1503,7 +1554,7 @@ RTU3 NODE20</string>
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>10</pointsize>
+     <pointsize>7</pointsize>
     </font>
    </property>
    <property name="text">
@@ -1569,6 +1620,7 @@ RTU3 NODE20</string>
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
+     <pointsize>7</pointsize>
     </font>
    </property>
    <property name="text">
@@ -1624,6 +1676,7 @@ RTU3 NODE20</string>
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
+     <pointsize>7</pointsize>
     </font>
    </property>
    <property name="text">
@@ -1679,6 +1732,11 @@ RTU3 NODE20</string>
      <height>27</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
+   </property>
    <property name="toolTip">
     <string>CAN1_BAUDRATE</string>
    </property>
@@ -1732,7 +1790,7 @@ RTU3 NODE20</string>
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>8</pointsize>
+     <pointsize>7</pointsize>
     </font>
    </property>
    <property name="toolTip">
@@ -1785,6 +1843,7 @@ RTU3 NODE20</string>
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
+     <pointsize>7</pointsize>
     </font>
    </property>
    <property name="text">
@@ -1840,6 +1899,7 @@ RTU3 NODE20</string>
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
+     <pointsize>7</pointsize>
     </font>
    </property>
    <property name="text">
@@ -1895,6 +1955,7 @@ RTU3 NODE20</string>
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
+     <pointsize>7</pointsize>
     </font>
    </property>
    <property name="text">
@@ -1953,6 +2014,7 @@ RTU3 NODE20</string>
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
+     <pointsize>7</pointsize>
     </font>
    </property>
    <property name="text">
@@ -2008,6 +2070,7 @@ RTU3 NODE20</string>
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
+     <pointsize>7</pointsize>
     </font>
    </property>
    <property name="text">
@@ -2096,6 +2159,11 @@ RTU3 NODE20</string>
      <height>26</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
+   </property>
    <property name="checkable">
     <bool>true</bool>
    </property>
@@ -2158,6 +2226,11 @@ RTU3 NODE20</string>
      <width>26</width>
      <height>26</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
    </property>
    <property name="checkable">
     <bool>true</bool>
@@ -2264,6 +2337,7 @@ RTU3 NODE20</string>
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
+     <pointsize>7</pointsize>
     </font>
    </property>
    <property name="text">
@@ -2322,7 +2396,7 @@ RTU3 NODE20</string>
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>10</pointsize>
+     <pointsize>7</pointsize>
     </font>
    </property>
    <property name="toolTip">
@@ -2375,7 +2449,7 @@ RTU3 NODE20</string>
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>10</pointsize>
+     <pointsize>7</pointsize>
     </font>
    </property>
    <property name="toolTip">
@@ -2428,6 +2502,7 @@ RTU3 NODE20</string>
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
+     <pointsize>7</pointsize>
     </font>
    </property>
    <property name="text">
@@ -2483,6 +2558,7 @@ RTU3 NODE20</string>
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
+     <pointsize>7</pointsize>
     </font>
    </property>
    <property name="text">
@@ -2538,7 +2614,7 @@ RTU3 NODE20</string>
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>8</pointsize>
+     <pointsize>7</pointsize>
      <weight>75</weight>
      <bold>true</bold>
     </font>
@@ -2565,6 +2641,11 @@ RTU3 NODE20</string>
      <width>80</width>
      <height>27</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
    </property>
    <property name="toolTip">
     <string>TCPS_IP_ADDRESS</string>
@@ -2622,7 +2703,7 @@ RTU3 NODE20</string>
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>8</pointsize>
+     <pointsize>7</pointsize>
     </font>
    </property>
    <property name="toolTip">
@@ -2675,7 +2756,7 @@ RTU3 NODE20</string>
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>8</pointsize>
+     <pointsize>7</pointsize>
      <weight>75</weight>
      <bold>true</bold>
     </font>
