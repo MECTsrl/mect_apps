@@ -271,7 +271,7 @@ background-color: rgb(170, 170, 255);
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>11</pointsize>
+     <pointsize>10</pointsize>
     </font>
    </property>
    <property name="toolTip">
@@ -596,7 +596,7 @@ background-color: rgb(170, 170, 255);
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>11</pointsize>
+     <pointsize>10</pointsize>
     </font>
    </property>
    <property name="toolTip">

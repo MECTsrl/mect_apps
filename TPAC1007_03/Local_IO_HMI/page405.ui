@@ -43,7 +43,7 @@ background-color: rgb(255, 255, 127);
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>12</pointsize>
+  <pointsize>9</pointsize>
 </font>
 </property>
 <property name="styleSheet">
@@ -91,6 +91,12 @@ background-color: rgb(255, 255, 127);
 <iconset>
 <normaloff>:/off.png</normaloff>:/off.png</iconset>
 </property>
+<property name="font">
+ <font>
+  <family>DejaVu Sans</family>
+  <pointsize>8</pointsize>
+ </font>
+</property>
 </widget>
 <widget class="QLabel" name="label_PLC_AnOut_7">
 <property name="geometry">
@@ -104,7 +110,7 @@ background-color: rgb(255, 255, 127);
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>6</pointsize>
+  <pointsize>4</pointsize>
 </font>
 </property>
 <property name="styleSheet">
@@ -148,6 +154,12 @@ config</string>
 <property name="visibilityVar">
 <string/>
 </property>
+<property name="font">
+ <font>
+  <family>DejaVu Sans</family>
+  <pointsize>8</pointsize>
+ </font>
+</property>
 </widget>
 <widget class="QLabel" name="label_PLC_AnOut_14">
 <property name="geometry">
@@ -161,7 +173,7 @@ config</string>
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>12</pointsize>
+  <pointsize>9</pointsize>
 </font>
 </property>
 <property name="styleSheet">
@@ -186,7 +198,7 @@ config</string>
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>10</pointsize>
+  <pointsize>7</pointsize>
 </font>
 </property>
 <property name="styleSheet">
@@ -211,7 +223,7 @@ config</string>
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>6</pointsize>
+  <pointsize>4</pointsize>
 </font>
 </property>
 <property name="styleSheet">
@@ -281,6 +293,12 @@ RD</string>
 <property name="borderRadius">
 <number>0</number>
 </property>
+<property name="font">
+ <font>
+  <family>DejaVu Sans</family>
+  <pointsize>8</pointsize>
+ </font>
+</property>
 </widget>
 <widget class="ATCMlabel" name="atcmLabelAnOut_11">
 <property name="geometry">
@@ -338,6 +356,12 @@ RD</string>
 <property name="borderRadius">
 <number>0</number>
 </property>
+<property name="font">
+ <font>
+  <family>DejaVu Sans</family>
+  <pointsize>8</pointsize>
+ </font>
+</property>
 </widget>
 <widget class="Line" name="line_hr_4">
 <property name="geometry">
@@ -350,6 +374,12 @@ RD</string>
 </property>
 <property name="orientation">
 <enum>Qt::Horizontal</enum>
+</property>
+<property name="font">
+ <font>
+  <family>DejaVu Sans</family>
+  <pointsize>8</pointsize>
+ </font>
 </property>
 </widget>
 <widget class="ATCMlabel" name="atcmLabel_RES_HWconfig_2">
@@ -408,6 +438,12 @@ RD</string>
 <property name="borderRadius">
 <number>0</number>
 </property>
+<property name="font">
+ <font>
+  <family>DejaVu Sans</family>
+  <pointsize>8</pointsize>
+ </font>
+</property>
 </widget>
 <widget class="Line" name="line_hr_2">
 <property name="geometry">
@@ -420,6 +456,12 @@ RD</string>
 </property>
 <property name="orientation">
 <enum>Qt::Horizontal</enum>
+</property>
+<property name="font">
+ <font>
+  <family>DejaVu Sans</family>
+  <pointsize>8</pointsize>
+ </font>
 </property>
 </widget>
 <widget class="ATCMlabel" name="atcmLabel_RES_FWrevision">
@@ -478,6 +520,12 @@ RD</string>
 <property name="borderRadius">
 <number>0</number>
 </property>
+<property name="font">
+ <font>
+  <family>DejaVu Sans</family>
+  <pointsize>8</pointsize>
+ </font>
+</property>
 </widget>
 <widget class="ATCMbutton" name="atcmButton_5">
 <property name="geometry">
@@ -491,7 +539,7 @@ RD</string>
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>10</pointsize>
+  <pointsize>7</pointsize>
 <weight>50</weight>
 <bold>false</bold>
 </font>
@@ -559,6 +607,12 @@ RD</string>
 <property name="orientation">
 <enum>Qt::Vertical</enum>
 </property>
+<property name="font">
+ <font>
+  <family>DejaVu Sans</family>
+  <pointsize>8</pointsize>
+ </font>
+</property>
 </widget>
 <widget class="ATCMbutton" name="atcmButton_page402_2">
 <property name="geometry">
@@ -608,6 +662,12 @@ RD</string>
 </property>
 <property name="apparence">
 <enum>QFrame::Raised</enum>
+</property>
+<property name="font">
+ <font>
+  <family>DejaVu Sans</family>
+  <pointsize>8</pointsize>
+ </font>
 </property>
 </widget>
 <widget class="ATCMlabel" name="atcmLabel_RES_FWrevision_2">
@@ -666,6 +726,12 @@ RD</string>
 <property name="borderRadius">
 <number>0</number>
 </property>
+<property name="font">
+ <font>
+  <family>DejaVu Sans</family>
+  <pointsize>8</pointsize>
+ </font>
+</property>
 </widget>
 <widget class="ATCMled" name="atcmLed_RES_RTU1_RD">
 <property name="geometry">
@@ -701,6 +767,12 @@ RD</string>
 <property name="offIcon">
 <iconset>
 <normaloff>:/off.png</normaloff>:/off.png</iconset>
+</property>
+<property name="font">
+ <font>
+  <family>DejaVu Sans</family>
+  <pointsize>8</pointsize>
+ </font>
 </property>
 </widget>
 <widget class="ATCMlabel" name="atcmLabelAnOut_1">
@@ -759,6 +831,12 @@ RD</string>
 <property name="borderRadius">
 <number>0</number>
 </property>
+<property name="font">
+ <font>
+  <family>DejaVu Sans</family>
+  <pointsize>8</pointsize>
+ </font>
+</property>
 </widget>
 <widget class="ATCMled" name="atcmLed_PLC_AnOut_6">
 <property name="geometry">
@@ -795,6 +873,12 @@ RD</string>
 <iconset>
 <normaloff>:/off.png</normaloff>:/off.png</iconset>
 </property>
+<property name="font">
+ <font>
+  <family>DejaVu Sans</family>
+  <pointsize>8</pointsize>
+ </font>
+</property>
 </widget>
 <widget class="ATCMled" name="atcmLed_TST_RTU1_WR">
 <property name="geometry">
@@ -830,6 +914,12 @@ RD</string>
 <property name="offIcon">
 <iconset>
 <normaloff>:/off.png</normaloff>:/off.png</iconset>
+</property>
+<property name="font">
+ <font>
+  <family>DejaVu Sans</family>
+  <pointsize>8</pointsize>
+ </font>
 </property>
 </widget>
 <widget class="ATCMlabel" name="atcmLabel_RES_HWconfig">
@@ -888,6 +978,12 @@ RD</string>
 <property name="borderRadius">
 <number>0</number>
 </property>
+<property name="font">
+ <font>
+  <family>DejaVu Sans</family>
+  <pointsize>8</pointsize>
+ </font>
+</property>
 </widget>
 <widget class="Line" name="line_vt_2">
 <property name="geometry">
@@ -900,6 +996,12 @@ RD</string>
 </property>
 <property name="orientation">
 <enum>Qt::Vertical</enum>
+</property>
+<property name="font">
+ <font>
+  <family>DejaVu Sans</family>
+  <pointsize>8</pointsize>
+ </font>
 </property>
 </widget>
 <widget class="QLabel" name="label_Start_3">
@@ -914,7 +1016,7 @@ RD</string>
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>10</pointsize>
+  <pointsize>7</pointsize>
 </font>
 </property>
 <property name="styleSheet">
@@ -939,6 +1041,7 @@ RD</string>
 <property name="font">
 <font>
 <family>DejaVu Sans Mono</family>
+  <pointsize>8</pointsize>
 </font>
 </property>
 <property name="toolTip">
@@ -996,6 +1099,12 @@ RD</string>
 <iconset>
 <normaloff>:/off.png</normaloff>:/off.png</iconset>
 </property>
+<property name="font">
+ <font>
+  <family>DejaVu Sans</family>
+  <pointsize>8</pointsize>
+ </font>
+</property>
 </widget>
 <widget class="ATCMled" name="atcmLed_PLC_AnOut_7">
 <property name="geometry">
@@ -1032,6 +1141,12 @@ RD</string>
 <iconset>
 <normaloff>:/off.png</normaloff>:/off.png</iconset>
 </property>
+<property name="font">
+ <font>
+  <family>DejaVu Sans</family>
+  <pointsize>8</pointsize>
+ </font>
+</property>
 </widget>
 <widget class="ATCMlabel" name="atcmLabel_PLC_time">
 <property name="enabled">
@@ -1048,7 +1163,7 @@ RD</string>
 <property name="font">
 <font>
 <family>DejaVu Sans Mono</family>
-<pointsize>12</pointsize>
+  <pointsize>9</pointsize>
 </font>
 </property>
 <property name="text">
@@ -1111,7 +1226,7 @@ RD</string>
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>10</pointsize>
+  <pointsize>7</pointsize>
 </font>
 </property>
 <property name="toolTip">
@@ -1164,7 +1279,7 @@ RD</string>
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>6</pointsize>
+  <pointsize>4</pointsize>
 </font>
 </property>
 <property name="styleSheet">
@@ -1190,7 +1305,7 @@ WR</string>
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>12</pointsize>
+  <pointsize>9</pointsize>
 </font>
 </property>
 <property name="styleSheet">
@@ -1215,6 +1330,12 @@ WR</string>
 <property name="orientation">
 <enum>Qt::Vertical</enum>
 </property>
+<property name="font">
+ <font>
+  <family>DejaVu Sans</family>
+  <pointsize>8</pointsize>
+ </font>
+</property>
 </widget>
 <widget class="ATCMdate" name="atcmDate">
 <property name="geometry">
@@ -1228,6 +1349,7 @@ WR</string>
 <property name="font">
 <font>
 <family>DejaVu Sans Mono</family>
+  <pointsize>8</pointsize>
 </font>
 </property>
 <property name="toolTip">
@@ -1288,6 +1410,12 @@ WR</string>
 <iconset>
 <normaloff>:/off.png</normaloff>:/off.png</iconset>
 </property>
+<property name="font">
+ <font>
+  <family>DejaVu Sans</family>
+  <pointsize>8</pointsize>
+ </font>
+</property>
 </widget>
 <widget class="ATCMlabel" name="atcmLabelAnOut_6">
 <property name="geometry">
@@ -1345,6 +1473,12 @@ WR</string>
 <property name="borderRadius">
 <number>0</number>
 </property>
+<property name="font">
+ <font>
+  <family>DejaVu Sans</family>
+  <pointsize>8</pointsize>
+ </font>
+</property>
 </widget>
 <widget class="QLabel" name="label_PLC_AnOut_6">
 <property name="geometry">
@@ -1358,7 +1492,7 @@ WR</string>
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>6</pointsize>
+  <pointsize>4</pointsize>
 </font>
 </property>
 <property name="styleSheet">
@@ -1384,7 +1518,7 @@ revision</string>
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>12</pointsize>
+  <pointsize>9</pointsize>
 </font>
 </property>
 <property name="styleSheet">
@@ -1432,6 +1566,12 @@ revision</string>
 <iconset>
 <normaloff>:/off.png</normaloff>:/off.png</iconset>
 </property>
+<property name="font">
+ <font>
+  <family>DejaVu Sans</family>
+  <pointsize>8</pointsize>
+ </font>
+</property>
 </widget>
 <widget class="QLabel" name="label_PLC_AnOut_1">
 <property name="geometry">
@@ -1445,7 +1585,7 @@ revision</string>
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>6</pointsize>
+  <pointsize>4</pointsize>
 </font>
 </property>
 <property name="styleSheet">
@@ -1493,6 +1633,12 @@ revision</string>
 <iconset>
 <normaloff>:/off.png</normaloff>:/off.png</iconset>
 </property>
+<property name="font">
+ <font>
+  <family>DejaVu Sans</family>
+  <pointsize>8</pointsize>
+ </font>
+</property>
 </widget>
 <widget class="Line" name="line_hr_3">
 <property name="geometry">
@@ -1505,6 +1651,12 @@ revision</string>
 </property>
 <property name="orientation">
 <enum>Qt::Horizontal</enum>
+</property>
+<property name="font">
+ <font>
+  <family>DejaVu Sans</family>
+  <pointsize>8</pointsize>
+ </font>
 </property>
 </widget>
 <widget class="QLabel" name="label_18">
@@ -1519,7 +1671,7 @@ revision</string>
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>10</pointsize>
+  <pointsize>7</pointsize>
 </font>
 </property>
 <property name="styleSheet">
@@ -1543,6 +1695,12 @@ revision</string>
 </property>
 <property name="orientation">
 <enum>Qt::Horizontal</enum>
+</property>
+<property name="font">
+ <font>
+  <family>DejaVu Sans</family>
+  <pointsize>8</pointsize>
+ </font>
 </property>
 </widget>
 <zorder>label_PLC_AnOut_15</zorder>
@@ -1627,20 +1785,20 @@ revision</string>
 </customwidget>
 </customwidgets>
 <resources/>
- <connections>
-  <connection>
-   <sender>atcmButton_5</sender>
-   <signal>newPage(const char*,bool)</signal>
-   <receiver>page405</receiver>
-   <slot>goto_page(const char*,bool)</slot>
-  </connection>
-  <connection>
-   <sender>atcmButton_page402_2</sender>
-   <signal>newPage(const char*,bool)</signal>
-   <receiver>page405</receiver>
-   <slot>goto_page(const char*,bool)</slot>
-  </connection>
- </connections>
+<connections>
+<connection>
+<sender>atcmButton_5</sender>
+<signal>newPage(const char*,bool)</signal>
+<receiver>page405</receiver>
+<slot>goto_page(const char*,bool)</slot>
+</connection>
+<connection>
+<sender>atcmButton_page402_2</sender>
+<signal>newPage(const char*,bool)</signal>
+<receiver>page405</receiver>
+<slot>goto_page(const char*,bool)</slot>
+</connection>
+</connections>
 <slots>
 <slot>goto_page(const char*,bool)</slot>
 </slots>

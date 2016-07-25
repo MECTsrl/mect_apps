@@ -43,7 +43,7 @@ background-color: rgb(170, 170, 255);
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>13</pointsize>
+  <pointsize>9</pointsize>
 </font>
 </property>
 <property name="styleSheet">
@@ -68,7 +68,7 @@ background-color: rgb(170, 170, 255);
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>12</pointsize>
+  <pointsize>9</pointsize>
 </font>
 </property>
 <property name="styleSheet">
@@ -93,7 +93,7 @@ background-color: rgb(170, 170, 255);
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>13</pointsize>
+  <pointsize>9</pointsize>
 </font>
 </property>
 <property name="styleSheet">
@@ -118,7 +118,7 @@ background-color: rgb(170, 170, 255);
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>8</pointsize>
+  <pointsize>6</pointsize>
 </font>
 </property>
 <property name="orientation">
@@ -137,7 +137,7 @@ background-color: rgb(170, 170, 255);
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>12</pointsize>
+  <pointsize>9</pointsize>
 </font>
 </property>
 <property name="styleSheet">
@@ -162,7 +162,7 @@ background-color: rgb(170, 170, 255);
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>12</pointsize>
+  <pointsize>9</pointsize>
 </font>
 </property>
 <property name="toolTip">
@@ -218,7 +218,7 @@ background-color: rgb(170, 170, 255);
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>8</pointsize>
+  <pointsize>6</pointsize>
 </font>
 </property>
 <property name="orientation">
@@ -237,7 +237,7 @@ background-color: rgb(170, 170, 255);
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>12</pointsize>
+  <pointsize>9</pointsize>
 </font>
 </property>
 <property name="styleSheet">
@@ -262,7 +262,7 @@ background-color: rgb(170, 170, 255);
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>12</pointsize>
+  <pointsize>9</pointsize>
 </font>
 </property>
 <property name="styleSheet">
@@ -287,7 +287,7 @@ background-color: rgb(170, 170, 255);
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>12</pointsize>
+  <pointsize>9</pointsize>
 </font>
 </property>
 <property name="styleSheet">
@@ -312,7 +312,7 @@ background-color: rgb(170, 170, 255);
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>13</pointsize>
+  <pointsize>9</pointsize>
 </font>
 </property>
 <property name="styleSheet">
@@ -337,7 +337,7 @@ background-color: rgb(170, 170, 255);
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>13</pointsize>
+  <pointsize>9</pointsize>
 </font>
 </property>
 <property name="styleSheet">
@@ -362,7 +362,7 @@ background-color: rgb(170, 170, 255);
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>12</pointsize>
+  <pointsize>9</pointsize>
 </font>
 </property>
 <property name="styleSheet">
@@ -387,7 +387,7 @@ background-color: rgb(170, 170, 255);
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>8</pointsize>
+  <pointsize>6</pointsize>
 </font>
 </property>
 <property name="orientation">
@@ -406,7 +406,7 @@ background-color: rgb(170, 170, 255);
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>8</pointsize>
+  <pointsize>6</pointsize>
 </font>
 </property>
 <property name="orientation">
@@ -425,7 +425,7 @@ background-color: rgb(170, 170, 255);
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>8</pointsize>
+  <pointsize>6</pointsize>
 </font>
 </property>
 <property name="orientation">
@@ -444,7 +444,7 @@ background-color: rgb(170, 170, 255);
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>8</pointsize>
+  <pointsize>6</pointsize>
 </font>
 </property>
 <property name="text">
@@ -507,7 +507,7 @@ background-color: rgb(170, 170, 255);
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>8</pointsize>
+  <pointsize>6</pointsize>
 </font>
 </property>
 <property name="text">
@@ -573,7 +573,7 @@ background-color: rgb(170, 170, 255);
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>8</pointsize>
+  <pointsize>6</pointsize>
 </font>
 </property>
 <property name="text">
@@ -639,7 +639,7 @@ background-color: rgb(170, 170, 255);
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>8</pointsize>
+  <pointsize>6</pointsize>
 </font>
 </property>
 <property name="text">
@@ -711,7 +711,7 @@ background-color: rgb(170, 170, 255);
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>8</pointsize>
+  <pointsize>6</pointsize>
 </font>
 </property>
 <property name="variable">
@@ -747,7 +747,7 @@ background-color: rgb(170, 170, 255);
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>8</pointsize>
+  <pointsize>6</pointsize>
 </font>
 </property>
 <property name="text">
@@ -810,7 +810,7 @@ background-color: rgb(170, 170, 255);
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>8</pointsize>
+  <pointsize>6</pointsize>
 </font>
 </property>
 <property name="text">
@@ -876,7 +876,7 @@ background-color: rgb(170, 170, 255);
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>8</pointsize>
+  <pointsize>6</pointsize>
 </font>
 </property>
 <property name="text">
@@ -942,7 +942,7 @@ background-color: rgb(170, 170, 255);
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>8</pointsize>
+  <pointsize>6</pointsize>
 </font>
 </property>
 <property name="text">
@@ -1008,7 +1008,7 @@ background-color: rgb(170, 170, 255);
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>8</pointsize>
+  <pointsize>6</pointsize>
 </font>
 </property>
 <property name="text">
@@ -1071,7 +1071,7 @@ background-color: rgb(170, 170, 255);
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>8</pointsize>
+  <pointsize>6</pointsize>
 </font>
 </property>
 <property name="text">
@@ -1137,7 +1137,7 @@ background-color: rgb(170, 170, 255);
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>8</pointsize>
+  <pointsize>6</pointsize>
 </font>
 </property>
 <property name="text">
@@ -1203,7 +1203,7 @@ background-color: rgb(170, 170, 255);
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>8</pointsize>
+  <pointsize>6</pointsize>
 </font>
 </property>
 <property name="text">
@@ -1266,7 +1266,7 @@ background-color: rgb(170, 170, 255);
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>8</pointsize>
+  <pointsize>6</pointsize>
 </font>
 </property>
 <property name="text">
@@ -1329,7 +1329,7 @@ background-color: rgb(170, 170, 255);
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>8</pointsize>
+  <pointsize>6</pointsize>
 </font>
 </property>
 <property name="text">
@@ -1401,7 +1401,7 @@ background-color: rgb(170, 170, 255);
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>8</pointsize>
+  <pointsize>6</pointsize>
 </font>
 </property>
 <property name="variable">
@@ -1437,7 +1437,7 @@ background-color: rgb(170, 170, 255);
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>8</pointsize>
+  <pointsize>6</pointsize>
 </font>
 </property>
 <property name="text">
@@ -1509,7 +1509,7 @@ background-color: rgb(170, 170, 255);
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>8</pointsize>
+  <pointsize>6</pointsize>
 </font>
 </property>
 <property name="variable">
@@ -1545,7 +1545,7 @@ background-color: rgb(170, 170, 255);
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>8</pointsize>
+  <pointsize>6</pointsize>
 </font>
 </property>
 <property name="text">
@@ -1608,7 +1608,7 @@ background-color: rgb(170, 170, 255);
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>8</pointsize>
+  <pointsize>6</pointsize>
 </font>
 </property>
 <property name="text">
@@ -1671,7 +1671,7 @@ background-color: rgb(170, 170, 255);
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>8</pointsize>
+  <pointsize>6</pointsize>
 </font>
 </property>
 <property name="text">
@@ -1743,7 +1743,7 @@ background-color: rgb(170, 170, 255);
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>8</pointsize>
+  <pointsize>6</pointsize>
 </font>
 </property>
 <property name="variable">
@@ -1779,7 +1779,7 @@ background-color: rgb(170, 170, 255);
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>8</pointsize>
+  <pointsize>6</pointsize>
 </font>
 </property>
 <property name="text">
@@ -1845,7 +1845,7 @@ background-color: rgb(170, 170, 255);
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>8</pointsize>
+  <pointsize>6</pointsize>
 </font>
 </property>
 <property name="text">
@@ -1908,7 +1908,7 @@ background-color: rgb(170, 170, 255);
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>12</pointsize>
+  <pointsize>9</pointsize>
 </font>
 </property>
 <property name="styleSheet">
@@ -1933,7 +1933,7 @@ background-color: rgb(170, 170, 255);
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>12</pointsize>
+  <pointsize>9</pointsize>
 </font>
 </property>
 <property name="styleSheet">
@@ -1958,7 +1958,7 @@ background-color: rgb(170, 170, 255);
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>8</pointsize>
+  <pointsize>6</pointsize>
 </font>
 </property>
 <property name="text">
@@ -2021,7 +2021,7 @@ background-color: rgb(170, 170, 255);
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>8</pointsize>
+  <pointsize>6</pointsize>
 </font>
 </property>
 <property name="text">
@@ -2090,7 +2090,7 @@ background-color: rgb(170, 170, 255);
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>8</pointsize>
+  <pointsize>6</pointsize>
 </font>
 </property>
 <property name="variable">
@@ -2126,7 +2126,7 @@ background-color: rgb(170, 170, 255);
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>8</pointsize>
+  <pointsize>6</pointsize>
 </font>
 </property>
 <property name="text">
@@ -2192,7 +2192,7 @@ background-color: rgb(170, 170, 255);
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>8</pointsize>
+  <pointsize>6</pointsize>
 </font>
 </property>
 <property name="text">
@@ -2264,7 +2264,7 @@ background-color: rgb(170, 170, 255);
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>8</pointsize>
+  <pointsize>6</pointsize>
 </font>
 </property>
 <property name="variable">
@@ -2300,7 +2300,7 @@ background-color: rgb(170, 170, 255);
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>8</pointsize>
+  <pointsize>6</pointsize>
 </font>
 </property>
 <property name="text">
@@ -2363,7 +2363,7 @@ background-color: rgb(170, 170, 255);
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>8</pointsize>
+  <pointsize>6</pointsize>
 </font>
 </property>
 <property name="text">
@@ -2429,7 +2429,7 @@ background-color: rgb(170, 170, 255);
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>8</pointsize>
+  <pointsize>6</pointsize>
 </font>
 </property>
 <property name="text">
@@ -2495,7 +2495,7 @@ background-color: rgb(170, 170, 255);
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>8</pointsize>
+  <pointsize>6</pointsize>
 </font>
 </property>
 <property name="text">
@@ -2558,7 +2558,7 @@ background-color: rgb(170, 170, 255);
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>12</pointsize>
+  <pointsize>9</pointsize>
 </font>
 </property>
 <property name="styleSheet">
@@ -2583,7 +2583,7 @@ background-color: rgb(170, 170, 255);
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>12</pointsize>
+  <pointsize>9</pointsize>
 </font>
 </property>
 <property name="styleSheet">
@@ -2608,7 +2608,7 @@ background-color: rgb(170, 170, 255);
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>8</pointsize>
+  <pointsize>6</pointsize>
 </font>
 </property>
 <property name="text">
@@ -2674,7 +2674,7 @@ background-color: rgb(170, 170, 255);
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>8</pointsize>
+  <pointsize>6</pointsize>
 </font>
 </property>
 <property name="text">
@@ -2740,7 +2740,7 @@ background-color: rgb(170, 170, 255);
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>8</pointsize>
+  <pointsize>6</pointsize>
 </font>
 </property>
 <property name="text">
@@ -2806,7 +2806,7 @@ background-color: rgb(170, 170, 255);
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>8</pointsize>
+  <pointsize>6</pointsize>
 </font>
 </property>
 <property name="text">
@@ -2872,7 +2872,7 @@ background-color: rgb(170, 170, 255);
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>11</pointsize>
+  <pointsize>8</pointsize>
 </font>
 </property>
 <property name="toolTip">
@@ -2913,7 +2913,7 @@ background-color: rgb(170, 170, 255);
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>8</pointsize>
+  <pointsize>6</pointsize>
 </font>
 </property>
 <property name="variable">
@@ -2949,7 +2949,7 @@ background-color: rgb(170, 170, 255);
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>11</pointsize>
+  <pointsize>8</pointsize>
 <weight>50</weight>
 <bold>false</bold>
 </font>
@@ -3016,7 +3016,7 @@ background-color: rgb(170, 170, 255);
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>8</pointsize>
+  <pointsize>6</pointsize>
 </font>
 </property>
 <property name="variable">
@@ -3052,7 +3052,7 @@ background-color: rgb(170, 170, 255);
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>12</pointsize>
+  <pointsize>9</pointsize>
 <weight>50</weight>
 <bold>false</bold>
 </font>
@@ -3120,7 +3120,7 @@ background-color: rgb(170, 170, 255);
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>13</pointsize>
+  <pointsize>9</pointsize>
 </font>
 </property>
 <property name="styleSheet">
@@ -3151,7 +3151,7 @@ background-color: rgb(170, 170, 255);
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>8</pointsize>
+  <pointsize>6</pointsize>
 </font>
 </property>
 <property name="mapping">
@@ -3188,7 +3188,7 @@ background-color: rgb(170, 170, 255);
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>8</pointsize>
+  <pointsize>6</pointsize>
 </font>
 </property>
 <property name="variable">
@@ -3230,7 +3230,7 @@ background-color: rgb(170, 170, 255);
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>8</pointsize>
+  <pointsize>6</pointsize>
 </font>
 </property>
 <property name="variable">
@@ -3266,7 +3266,7 @@ background-color: rgb(170, 170, 255);
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>11</pointsize>
+  <pointsize>8</pointsize>
 </font>
 </property>
 <property name="toolTip">
@@ -3301,7 +3301,7 @@ background-color: rgb(170, 170, 255);
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>12</pointsize>
+  <pointsize>9</pointsize>
 </font>
 </property>
 <property name="styleSheet">
@@ -3434,13 +3434,13 @@ background-color: rgb(170, 170, 255);
 </hint>
 </hints>
 </connection>
-  <connection>
-   <sender>atcmButton_6</sender>
-   <signal>newPage(const char*,bool)</signal>
-   <receiver>page402</receiver>
-   <slot>goto_page(const char*,bool)</slot>
-  </connection>
- </connections>
+<connection>
+<sender>atcmButton_6</sender>
+<signal>newPage(const char*,bool)</signal>
+<receiver>page402</receiver>
+<slot>goto_page(const char*,bool)</slot>
+</connection>
+</connections>
 <slots>
 <slot>goto_page(const char*,bool)</slot>
 </slots>

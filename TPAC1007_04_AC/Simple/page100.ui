@@ -3421,7 +3421,7 @@ color: rgb(0, 0, 0);</string>
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>10</pointsize>
+     <pointsize>8</pointsize>
      <weight>50</weight>
      <bold>false</bold>
     </font>

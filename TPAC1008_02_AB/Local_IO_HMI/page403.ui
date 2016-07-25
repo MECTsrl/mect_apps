@@ -43,7 +43,7 @@ background-color: rgb(170, 170, 127);
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>12</pointsize>
+  <pointsize>9</pointsize>
 </font>
 </property>
 <property name="styleSheet">
@@ -68,7 +68,7 @@ background-color: rgb(170, 170, 127);
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>8</pointsize>
+  <pointsize>6</pointsize>
 </font>
 </property>
 <property name="orientation">
@@ -87,7 +87,7 @@ background-color: rgb(170, 170, 127);
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>12</pointsize>
+  <pointsize>9</pointsize>
 </font>
 </property>
 <property name="styleSheet">
@@ -112,7 +112,7 @@ background-color: rgb(170, 170, 127);
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>12</pointsize>
+  <pointsize>9</pointsize>
 </font>
 </property>
 <property name="toolTip">
@@ -168,7 +168,7 @@ background-color: rgb(170, 170, 127);
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>8</pointsize>
+  <pointsize>6</pointsize>
 </font>
 </property>
 <property name="orientation">
@@ -187,7 +187,7 @@ background-color: rgb(170, 170, 127);
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>12</pointsize>
+  <pointsize>9</pointsize>
 </font>
 </property>
 <property name="styleSheet">
@@ -212,7 +212,7 @@ background-color: rgb(170, 170, 127);
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>12</pointsize>
+  <pointsize>9</pointsize>
 </font>
 </property>
 <property name="styleSheet">
@@ -237,7 +237,7 @@ background-color: rgb(170, 170, 127);
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>8</pointsize>
+  <pointsize>6</pointsize>
 </font>
 </property>
 <property name="orientation">
@@ -256,7 +256,7 @@ background-color: rgb(170, 170, 127);
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>9</pointsize>
+  <pointsize>6</pointsize>
 </font>
 </property>
 <property name="styleSheet">
@@ -282,7 +282,7 @@ WR</string>
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>8</pointsize>
+  <pointsize>6</pointsize>
 </font>
 </property>
 <property name="text">
@@ -351,7 +351,7 @@ WR</string>
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>8</pointsize>
+  <pointsize>6</pointsize>
 </font>
 </property>
 <property name="variable">
@@ -393,7 +393,7 @@ WR</string>
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>8</pointsize>
+  <pointsize>6</pointsize>
 </font>
 </property>
 <property name="variable">
@@ -435,7 +435,7 @@ WR</string>
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>8</pointsize>
+  <pointsize>6</pointsize>
 </font>
 </property>
 <property name="variable">
@@ -477,7 +477,7 @@ WR</string>
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>8</pointsize>
+  <pointsize>6</pointsize>
 </font>
 </property>
 <property name="variable">
@@ -513,7 +513,7 @@ WR</string>
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>8</pointsize>
+  <pointsize>6</pointsize>
 </font>
 </property>
 <property name="text">
@@ -582,7 +582,7 @@ WR</string>
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>8</pointsize>
+  <pointsize>6</pointsize>
 </font>
 </property>
 <property name="variable">
@@ -618,7 +618,7 @@ WR</string>
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>9</pointsize>
+  <pointsize>6</pointsize>
 </font>
 </property>
 <property name="styleSheet">
@@ -644,7 +644,7 @@ RD</string>
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>8</pointsize>
+  <pointsize>6</pointsize>
 </font>
 </property>
 <property name="text">
@@ -707,7 +707,7 @@ RD</string>
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>10</pointsize>
+  <pointsize>7</pointsize>
 </font>
 </property>
 <property name="styleSheet">
@@ -732,7 +732,7 @@ RD</string>
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>9</pointsize>
+  <pointsize>6</pointsize>
 </font>
 </property>
 <property name="styleSheet">
@@ -764,7 +764,7 @@ WR</string>
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>8</pointsize>
+  <pointsize>6</pointsize>
 </font>
 </property>
 <property name="variable">
@@ -806,7 +806,7 @@ WR</string>
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>8</pointsize>
+  <pointsize>6</pointsize>
 </font>
 </property>
 <property name="variable">
@@ -848,7 +848,7 @@ WR</string>
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>8</pointsize>
+  <pointsize>6</pointsize>
 </font>
 </property>
 <property name="variable">
@@ -884,7 +884,7 @@ WR</string>
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>10</pointsize>
+  <pointsize>7</pointsize>
 </font>
 </property>
 <property name="styleSheet">
@@ -909,7 +909,7 @@ WR</string>
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>8</pointsize>
+  <pointsize>6</pointsize>
 </font>
 </property>
 <property name="text">
@@ -978,7 +978,7 @@ WR</string>
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>8</pointsize>
+  <pointsize>6</pointsize>
 </font>
 </property>
 <property name="variable">
@@ -1014,7 +1014,7 @@ WR</string>
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>8</pointsize>
+  <pointsize>6</pointsize>
 </font>
 </property>
 <property name="text">
@@ -1083,7 +1083,7 @@ WR</string>
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>8</pointsize>
+  <pointsize>6</pointsize>
 </font>
 </property>
 <property name="variable">
@@ -1125,7 +1125,7 @@ WR</string>
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>8</pointsize>
+  <pointsize>6</pointsize>
 </font>
 </property>
 <property name="variable">
@@ -1167,7 +1167,7 @@ WR</string>
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>8</pointsize>
+  <pointsize>6</pointsize>
 </font>
 </property>
 <property name="variable">
@@ -1209,7 +1209,7 @@ WR</string>
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>8</pointsize>
+  <pointsize>6</pointsize>
 </font>
 </property>
 <property name="variable">
@@ -1251,7 +1251,7 @@ WR</string>
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>8</pointsize>
+  <pointsize>6</pointsize>
 </font>
 </property>
 <property name="variable">
@@ -1287,7 +1287,7 @@ WR</string>
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>9</pointsize>
+  <pointsize>6</pointsize>
 </font>
 </property>
 <property name="styleSheet">
@@ -1313,7 +1313,7 @@ RD</string>
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>8</pointsize>
+  <pointsize>6</pointsize>
 </font>
 </property>
 <property name="orientation">
@@ -1332,7 +1332,7 @@ RD</string>
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>8</pointsize>
+  <pointsize>6</pointsize>
 </font>
 </property>
 <property name="orientation">
@@ -1351,7 +1351,7 @@ RD</string>
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>8</pointsize>
+  <pointsize>6</pointsize>
 </font>
 </property>
 <property name="orientation">
@@ -1370,7 +1370,7 @@ RD</string>
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>8</pointsize>
+  <pointsize>6</pointsize>
 </font>
 </property>
 <property name="orientation">
@@ -1389,7 +1389,7 @@ RD</string>
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>8</pointsize>
+  <pointsize>6</pointsize>
 </font>
 </property>
 <property name="orientation">
@@ -1408,7 +1408,7 @@ RD</string>
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>12</pointsize>
+  <pointsize>9</pointsize>
 <weight>50</weight>
 <bold>false</bold>
 </font>
@@ -1482,7 +1482,7 @@ RD</string>
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>8</pointsize>
+  <pointsize>6</pointsize>
 </font>
 </property>
 <property name="variable">
@@ -1524,7 +1524,7 @@ RD</string>
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>8</pointsize>
+  <pointsize>6</pointsize>
 </font>
 </property>
 <property name="mapping">
@@ -1561,7 +1561,7 @@ RD</string>
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>8</pointsize>
+  <pointsize>6</pointsize>
 </font>
 </property>
 <property name="variable">
@@ -1597,7 +1597,7 @@ RD</string>
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>11</pointsize>
+  <pointsize>8</pointsize>
 <weight>50</weight>
 <bold>false</bold>
 </font>
@@ -1658,7 +1658,7 @@ RD</string>
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>11</pointsize>
+  <pointsize>8</pointsize>
 </font>
 </property>
 <property name="toolTip">
@@ -1699,7 +1699,7 @@ RD</string>
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>8</pointsize>
+  <pointsize>6</pointsize>
 </font>
 </property>
 <property name="variable">
@@ -1741,7 +1741,7 @@ RD</string>
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>8</pointsize>
+  <pointsize>6</pointsize>
 </font>
 </property>
 <property name="variable">
@@ -1777,7 +1777,7 @@ RD</string>
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>11</pointsize>
+  <pointsize>8</pointsize>
 </font>
 </property>
 <property name="toolTip">
@@ -1812,7 +1812,7 @@ RD</string>
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>13</pointsize>
+  <pointsize>9</pointsize>
 </font>
 </property>
 <property name="styleSheet">
@@ -1837,7 +1837,7 @@ RD</string>
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>12</pointsize>
+  <pointsize>9</pointsize>
 </font>
 </property>
 <property name="styleSheet">
@@ -1862,7 +1862,7 @@ RD</string>
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>8</pointsize>
+  <pointsize>6</pointsize>
 </font>
 </property>
 <property name="orientation">
@@ -1970,13 +1970,13 @@ RD</string>
 </hint>
 </hints>
 </connection>
-  <connection>
-   <sender>atcmButton_6</sender>
-   <signal>newPage(const char*,bool)</signal>
-   <receiver>page403</receiver>
-   <slot>goto_page(const char*,bool)</slot>
-  </connection>
- </connections>
+<connection>
+<sender>atcmButton_6</sender>
+<signal>newPage(const char*,bool)</signal>
+<receiver>page403</receiver>
+<slot>goto_page(const char*,bool)</slot>
+</connection>
+</connections>
 <slots>
 <slot>goto_page(const char*,bool)</slot>
 </slots>

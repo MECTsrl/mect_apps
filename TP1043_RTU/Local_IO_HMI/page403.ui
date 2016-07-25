@@ -1,795 +1,845 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>page403</class>
- <widget class="QWidget" name="page403">
-  <property name="geometry">
-   <rect>
-    <x>0</x>
-    <y>0</y>
-    <width>480</width>
-    <height>272</height>
-   </rect>
-  </property>
-  <property name="minimumSize">
-   <size>
-    <width>480</width>
-    <height>272</height>
-   </size>
-  </property>
-  <property name="maximumSize">
-   <size>
-    <width>480</width>
-    <height>272</height>
-   </size>
-  </property>
-  <property name="windowTitle">
-   <string>page403</string>
-  </property>
-  <property name="styleSheet">
-   <string notr="true">QWidget#page403
+<class>page403</class>
+<widget class="QWidget" name="page403">
+<property name="geometry">
+<rect>
+<x>0</x>
+<y>0</y>
+<width>480</width>
+<height>272</height>
+</rect>
+</property>
+<property name="minimumSize">
+<size>
+<width>480</width>
+<height>272</height>
+</size>
+</property>
+<property name="maximumSize">
+<size>
+<width>480</width>
+<height>272</height>
+</size>
+</property>
+<property name="windowTitle">
+<string>page403</string>
+</property>
+<property name="styleSheet">
+<string notr="true">QWidget#page403
 {
 background-color: rgb(255, 255, 127);
 }</string>
-  </property>
-  <widget class="QLabel" name="label_Page">
-   <property name="geometry">
-    <rect>
-     <x>361</x>
-     <y>50</y>
-     <width>120</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>DejaVu Sans</family>
-     <pointsize>10</pointsize>
-    </font>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background-color: rgb(170, 255, 127);</string>
-   </property>
-   <property name="text">
-    <string>page403: An.In.</string>
-   </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_18">
-   <property name="geometry">
-    <rect>
-     <x>359</x>
-     <y>29</y>
-     <width>120</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>DejaVu Sans</family>
-     <pointsize>10</pointsize>
-    </font>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background-color: rgb(170, 255, 127);</string>
-   </property>
-   <property name="text">
-    <string>Local_IO</string>
-   </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
-   </property>
-  </widget>
-  <widget class="Line" name="line_vt_2">
-   <property name="geometry">
-    <rect>
-     <x>241</x>
-     <y>1</y>
-     <width>3</width>
-     <height>272</height>
-    </rect>
-   </property>
-   <property name="orientation">
-    <enum>Qt::Vertical</enum>
-   </property>
-  </widget>
-  <widget class="Line" name="line_hr_2">
-   <property name="geometry">
-    <rect>
-     <x>1</x>
-     <y>100</y>
-     <width>481</width>
-     <height>3</height>
-    </rect>
-   </property>
-   <property name="orientation">
-    <enum>Qt::Horizontal</enum>
-   </property>
-  </widget>
-  <widget class="Line" name="line_hr_1">
-   <property name="geometry">
-    <rect>
-     <x>1</x>
-     <y>69</y>
-     <width>481</width>
-     <height>3</height>
-    </rect>
-   </property>
-   <property name="orientation">
-    <enum>Qt::Horizontal</enum>
-   </property>
-  </widget>
-  <widget class="Line" name="line_vt_4">
-   <property name="geometry">
-    <rect>
-     <x>361</x>
-     <y>1</y>
-     <width>3</width>
-     <height>272</height>
-    </rect>
-   </property>
-   <property name="orientation">
-    <enum>Qt::Vertical</enum>
-   </property>
-  </widget>
-  <widget class="ATCMdate" name="atcmDate">
-   <property name="geometry">
-    <rect>
-     <x>240</x>
-     <y>0</y>
-     <width>121</width>
-     <height>22</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>DejaVu Sans Mono</family>
-    </font>
-   </property>
-   <property name="toolTip">
-    <string>ATCM QDate</string>
-   </property>
-   <property name="whatsThis">
-    <string>ATCMdate widget</string>
-   </property>
-   <property name="bgColor">
-    <color>
-     <red>170</red>
-     <green>255</green>
-     <blue>127</blue>
-    </color>
-   </property>
-   <property name="borderWidth">
-    <number>0</number>
-   </property>
-   <property name="borderRadius">
-    <number>0</number>
-   </property>
-   <property name="format">
-    <enum>ATCMdate::YYYY_MM_DD</enum>
-   </property>
-  </widget>
-  <widget class="ATCMbutton" name="atcmButton_5">
-   <property name="geometry">
-    <rect>
-     <x>360</x>
-     <y>0</y>
-     <width>120</width>
-     <height>32</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>DejaVu Sans</family>
-     <pointsize>10</pointsize>
-     <weight>50</weight>
-     <bold>false</bold>
-    </font>
-   </property>
-   <property name="toolTip">
-    <string/>
-   </property>
-   <property name="whatsThis">
-    <string>ATCMbutton widget</string>
-   </property>
-   <property name="pageName">
-    <string>menu</string>
-   </property>
-   <property name="statusvar">
-    <string/>
-   </property>
-   <property name="viewStatus">
-    <bool>false</bool>
-   </property>
-   <property name="refresh">
-    <number>200</number>
-   </property>
-   <property name="visibilityVar">
-    <string/>
-   </property>
-   <property name="bgColor">
-    <color>
-     <red>85</red>
-     <green>255</green>
-     <blue>255</blue>
-    </color>
-   </property>
-   <property name="borderColor">
-    <color>
-     <red>220</red>
-     <green>220</green>
-     <blue>220</blue>
-    </color>
-   </property>
-   <property name="text">
-    <string>TP1043_01_A</string>
-   </property>
-   <property name="pressText">
-    <string>TP1043_01_A</string>
-   </property>
-   <property name="borderWidth">
-    <number>2</number>
-   </property>
-   <property name="borderRadius">
-    <number>0</number>
-   </property>
-   <property name="apparence">
-    <enum>QFrame::Raised</enum>
-   </property>
-  </widget>
-  <widget class="Line" name="line_hr_3">
-   <property name="geometry">
-    <rect>
-     <x>1</x>
-     <y>238</y>
-     <width>481</width>
-     <height>3</height>
-    </rect>
-   </property>
-   <property name="orientation">
-    <enum>Qt::Horizontal</enum>
-   </property>
-  </widget>
-  <widget class="Line" name="line_vt_1">
-   <property name="geometry">
-    <rect>
-     <x>121</x>
-     <y>0</y>
-     <width>3</width>
-     <height>272</height>
-    </rect>
-   </property>
-   <property name="orientation">
-    <enum>Qt::Vertical</enum>
-   </property>
-  </widget>
-  <widget class="ATCMtime" name="atcmTime_2">
-   <property name="geometry">
-    <rect>
-     <x>240</x>
-     <y>22</y>
-     <width>121</width>
-     <height>22</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>DejaVu Sans Mono</family>
-    </font>
-   </property>
-   <property name="toolTip">
-    <string>ATCM QTime</string>
-   </property>
-   <property name="whatsThis">
-    <string>ATCMtime widget</string>
-   </property>
-   <property name="bgColor">
-    <color>
-     <red>170</red>
-     <green>255</green>
-     <blue>127</blue>
-    </color>
-   </property>
-   <property name="borderWidth">
-    <number>0</number>
-   </property>
-   <property name="borderRadius">
-    <number>0</number>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_PLC_AnInConf_">
-   <property name="geometry">
-    <rect>
-     <x>-1</x>
-     <y>170</y>
-     <width>120</width>
-     <height>33</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>DejaVu Sans</family>
-     <pointsize>12</pointsize>
-    </font>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background-color: rgb(255, 255, 127);</string>
-   </property>
-   <property name="text">
-    <string>PLC_AnInConf_</string>
-   </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_AnIn_2">
-   <property name="geometry">
-    <rect>
-     <x>241</x>
-     <y>70</y>
-     <width>121</width>
-     <height>34</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>DejaVu Sans</family>
-     <pointsize>13</pointsize>
-    </font>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background-color: rgb(170, 255, 255);</string>
-   </property>
-   <property name="text">
-    <string>2</string>
-   </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_RES_AnIn_">
-   <property name="geometry">
-    <rect>
-     <x>1</x>
-     <y>240</y>
-     <width>120</width>
-     <height>33</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>DejaVu Sans</family>
-     <pointsize>12</pointsize>
-    </font>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background-color: rgb(255, 255, 127);</string>
-   </property>
-   <property name="text">
-    <string>RES_AnIn_</string>
-   </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_AnIn_1">
-   <property name="geometry">
-    <rect>
-     <x>121</x>
-     <y>70</y>
-     <width>121</width>
-     <height>34</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>DejaVu Sans</family>
-     <pointsize>13</pointsize>
-    </font>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background-color: rgb(170, 255, 255);</string>
-   </property>
-   <property name="text">
-    <string>1</string>
-   </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_TST_AnIn_">
-   <property name="geometry">
-    <rect>
-     <x>-1</x>
-     <y>100</y>
-     <width>120</width>
-     <height>33</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>DejaVu Sans</family>
-     <pointsize>12</pointsize>
-    </font>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background-color: rgb(255, 255, 127);</string>
-   </property>
-   <property name="text">
-    <string>TST_AnIn_</string>
-   </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_VAL_AnInConf_">
-   <property name="geometry">
-    <rect>
-     <x>-1</x>
-     <y>134</y>
-     <width>120</width>
-     <height>33</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>DejaVu Sans</family>
-     <pointsize>12</pointsize>
-    </font>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background-color: rgb(170, 255, 255);</string>
-   </property>
-   <property name="text">
-    <string>VAL_AnInConf_</string>
-   </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_PLC_AnIn_">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>205</y>
-     <width>120</width>
-     <height>33</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>DejaVu Sans</family>
-     <pointsize>12</pointsize>
-    </font>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background-color: rgb(170, 255, 255);</string>
-   </property>
-   <property name="text">
-    <string>PLC_AnIn_</string>
-   </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
-   </property>
-  </widget>
-  <widget class="ATCMbutton" name="atcmButton_page402_2">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>70</y>
-     <width>120</width>
-     <height>34</height>
-    </rect>
-   </property>
-   <property name="toolTip">
-    <string/>
-   </property>
-   <property name="whatsThis">
-    <string>ATCMbutton widget</string>
-   </property>
-   <property name="pageName">
-    <string>page400</string>
-   </property>
-   <property name="statusvar">
-    <string/>
-   </property>
-   <property name="viewStatus">
-    <bool>false</bool>
-   </property>
-   <property name="visibilityVar">
-    <string/>
-   </property>
-   <property name="bgColor">
-    <color>
-     <red>170</red>
-     <green>255</green>
-     <blue>255</blue>
-    </color>
-   </property>
-   <property name="text">
-    <string>page400 TST</string>
-   </property>
-   <property name="pressText">
-    <string>page400 TST</string>
-   </property>
-   <property name="borderWidth">
-    <number>0</number>
-   </property>
-   <property name="borderRadius">
-    <number>0</number>
-   </property>
-   <property name="apparence">
-    <enum>QFrame::Raised</enum>
-   </property>
-  </widget>
-  <widget class="ATCMlabel" name="atcmLabel_PLC_time">
-   <property name="enabled">
-    <bool>false</bool>
-   </property>
-   <property name="geometry">
-    <rect>
-     <x>241</x>
-     <y>44</y>
-     <width>120</width>
-     <height>25</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>DejaVu Sans Mono</family>
-     <pointsize>12</pointsize>
-    </font>
-   </property>
-   <property name="text">
-    <string>86400.00</string>
-   </property>
-   <property name="toolTip">
-    <string>PLC_time</string>
-   </property>
-   <property name="whatsThis">
-    <string>ATCMlabel widget</string>
-   </property>
-   <property name="variable">
-    <string>PLC_time</string>
-   </property>
-   <property name="refresh">
-    <number>500</number>
-   </property>
-   <property name="max">
-    <string>0</string>
-   </property>
-   <property name="min">
-    <string>0</string>
-   </property>
-   <property name="viewStatus">
-    <bool>false</bool>
-   </property>
-   <property name="visibilityVar">
-    <string/>
-   </property>
-   <property name="bgColor">
-    <color>
-     <red>170</red>
-     <green>255</green>
-     <blue>127</blue>
-    </color>
-   </property>
-   <property name="fontColor">
-    <color>
-     <red>0</red>
-     <green>0</green>
-     <blue>0</blue>
-    </color>
-   </property>
-   <property name="borderWidth">
-    <number>0</number>
-   </property>
-   <property name="borderRadius">
-    <number>0</number>
-   </property>
-  </widget>
-  <widget class="ATCMcombobox" name="atcmComboBox">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>34</y>
-     <width>120</width>
-     <height>34</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>DejaVu Sans</family>
-     <pointsize>10</pointsize>
-    </font>
-   </property>
-   <property name="toolTip">
-    <string>TEST_COMMAND</string>
-   </property>
-   <property name="whatsThis">
-    <string>ATCMcombobox widget</string>
-   </property>
-   <property name="variable">
-    <string>TEST_COMMAND</string>
-   </property>
-   <property name="refresh">
-    <number>500</number>
-   </property>
-   <property name="viewStatus">
-    <bool>false</bool>
-   </property>
-   <property name="writeAcknowledge">
-    <bool>false</bool>
-   </property>
-   <property name="visibilityVar">
-    <string/>
-   </property>
-   <property name="bgColor">
-    <color>
-     <red>170</red>
-     <green>255</green>
-     <blue>127</blue>
-    </color>
-   </property>
-   <property name="borderWidth">
-    <number>0</number>
-   </property>
-   <property name="borderRadius">
-    <number>0</number>
-   </property>
-   <property name="mapping">
-    <string>0;LOCAL;216;REMOTE;42;DONE</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_Start_3">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>120</width>
-     <height>34</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>DejaVu Sans</family>
-     <pointsize>10</pointsize>
-    </font>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background-color: rgb(170, 255, 255);</string>
-   </property>
-   <property name="text">
-    <string>Modbus/TCP</string>
-   </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
-   </property>
-  </widget>
-  <widget class="ATCManimation" name="atcmAnimation_TEST_STATUS">
-   <property name="geometry">
-    <rect>
-     <x>120</x>
-     <y>0</y>
-     <width>120</width>
-     <height>68</height>
-    </rect>
-   </property>
-   <property name="toolTip">
-    <string>TEST_STATUS</string>
-   </property>
-   <property name="whatsThis">
-    <string>ATCManimation widget</string>
-   </property>
-   <property name="mapping">
-    <string>0;:/icons/my_img/local.png;216;:/icons/my_img/remote.png;42;:/icons/my_img/done.png</string>
-   </property>
-   <property name="variable">
-    <string>TEST_STATUS</string>
-   </property>
-   <property name="refresh">
-    <number>500</number>
-   </property>
-   <property name="viewStatus">
-    <bool>false</bool>
-   </property>
-   <property name="visibilityVar">
-    <string/>
-   </property>
-  </widget>
-  <zorder>label_Page</zorder>
-  <zorder>label_18</zorder>
-  <zorder>atcmDate</zorder>
-  <zorder>atcmButton_5</zorder>
-  <zorder>atcmTime_2</zorder>
-  <zorder>label_PLC_AnInConf_</zorder>
-  <zorder>label_AnIn_2</zorder>
-  <zorder>label_RES_AnIn_</zorder>
-  <zorder>label_AnIn_1</zorder>
-  <zorder>label_TST_AnIn_</zorder>
-  <zorder>label_VAL_AnInConf_</zorder>
-  <zorder>label_PLC_AnIn_</zorder>
-  <zorder>atcmButton_page402_2</zorder>
-  <zorder>atcmLabel_PLC_time</zorder>
-  <zorder>atcmComboBox</zorder>
-  <zorder>label_Start_3</zorder>
-  <zorder>atcmAnimation_TEST_STATUS</zorder>
-  <zorder>line_vt_2</zorder>
-  <zorder>line_vt_1</zorder>
-  <zorder>line_vt_4</zorder>
-  <zorder>line_hr_2</zorder>
-  <zorder>line_hr_3</zorder>
-  <zorder>line_hr_1</zorder>
- </widget>
- <customwidgets>
-  <customwidget>
-   <class>ATCManimation</class>
-   <extends>QLabel</extends>
-   <header>atcmplugin.h</header>
-  </customwidget>
-  <customwidget>
-   <class>ATCMbutton</class>
-   <extends>QPushButton</extends>
-   <header>atcmplugin.h</header>
-  </customwidget>
-  <customwidget>
-   <class>ATCMcombobox</class>
-   <extends>QComboBox</extends>
-   <header>atcmplugin.h</header>
-  </customwidget>
-  <customwidget>
-   <class>ATCMdate</class>
-   <extends>QPushButton</extends>
-   <header>atcmplugin.h</header>
-  </customwidget>
-  <customwidget>
-   <class>ATCMlabel</class>
-   <extends>QPushButton</extends>
-   <header>atcmplugin.h</header>
-  </customwidget>
-  <customwidget>
-   <class>ATCMtime</class>
-   <extends>QPushButton</extends>
-   <header>atcmplugin.h</header>
-  </customwidget>
- </customwidgets>
- <resources/>
- <connections>
-  <connection>
-   <sender>atcmButton_5</sender>
-   <signal>newPage(const char*,bool)</signal>
-   <receiver>page403</receiver>
-   <slot>goto_page(const char*,bool)</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>20</x>
-     <y>20</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>20</x>
-     <y>20</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>atcmButton_page402_2</sender>
-   <signal>newPage(const char*,bool)</signal>
-   <receiver>page403</receiver>
-   <slot>goto_page(const char*,bool)</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>20</x>
-     <y>20</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>20</x>
-     <y>20</y>
-    </hint>
-   </hints>
-  </connection>
- </connections>
- <slots>
-  <slot>goto_page(const char*,bool)</slot>
- </slots>
+</property>
+<widget class="QLabel" name="label_Page">
+<property name="geometry">
+<rect>
+<x>361</x>
+<y>50</y>
+<width>120</width>
+<height>20</height>
+</rect>
+</property>
+<property name="font">
+<font>
+<family>DejaVu Sans</family>
+  <pointsize>7</pointsize>
+</font>
+</property>
+<property name="styleSheet">
+<string notr="true">background-color: rgb(170, 255, 127);</string>
+</property>
+<property name="text">
+<string>page403: An.In.</string>
+</property>
+<property name="alignment">
+<set>Qt::AlignCenter</set>
+</property>
+</widget>
+<widget class="QLabel" name="label_18">
+<property name="geometry">
+<rect>
+<x>359</x>
+<y>29</y>
+<width>120</width>
+<height>20</height>
+</rect>
+</property>
+<property name="font">
+<font>
+<family>DejaVu Sans</family>
+  <pointsize>7</pointsize>
+</font>
+</property>
+<property name="styleSheet">
+<string notr="true">background-color: rgb(170, 255, 127);</string>
+</property>
+<property name="text">
+<string>Local_IO</string>
+</property>
+<property name="alignment">
+<set>Qt::AlignCenter</set>
+</property>
+</widget>
+<widget class="Line" name="line_vt_2">
+<property name="geometry">
+<rect>
+<x>241</x>
+<y>1</y>
+<width>3</width>
+<height>272</height>
+</rect>
+</property>
+<property name="orientation">
+<enum>Qt::Vertical</enum>
+</property>
+<property name="font">
+ <font>
+  <family>DejaVu Sans</family>
+  <pointsize>8</pointsize>
+ </font>
+</property>
+</widget>
+<widget class="Line" name="line_hr_2">
+<property name="geometry">
+<rect>
+<x>1</x>
+<y>100</y>
+<width>481</width>
+<height>3</height>
+</rect>
+</property>
+<property name="orientation">
+<enum>Qt::Horizontal</enum>
+</property>
+<property name="font">
+ <font>
+  <family>DejaVu Sans</family>
+  <pointsize>8</pointsize>
+ </font>
+</property>
+</widget>
+<widget class="Line" name="line_hr_1">
+<property name="geometry">
+<rect>
+<x>1</x>
+<y>69</y>
+<width>481</width>
+<height>3</height>
+</rect>
+</property>
+<property name="orientation">
+<enum>Qt::Horizontal</enum>
+</property>
+<property name="font">
+ <font>
+  <family>DejaVu Sans</family>
+  <pointsize>8</pointsize>
+ </font>
+</property>
+</widget>
+<widget class="Line" name="line_vt_4">
+<property name="geometry">
+<rect>
+<x>361</x>
+<y>1</y>
+<width>3</width>
+<height>272</height>
+</rect>
+</property>
+<property name="orientation">
+<enum>Qt::Vertical</enum>
+</property>
+<property name="font">
+ <font>
+  <family>DejaVu Sans</family>
+  <pointsize>8</pointsize>
+ </font>
+</property>
+</widget>
+<widget class="ATCMdate" name="atcmDate">
+<property name="geometry">
+<rect>
+<x>240</x>
+<y>0</y>
+<width>121</width>
+<height>22</height>
+</rect>
+</property>
+<property name="font">
+<font>
+<family>DejaVu Sans Mono</family>
+  <pointsize>8</pointsize>
+</font>
+</property>
+<property name="toolTip">
+<string>ATCM QDate</string>
+</property>
+<property name="whatsThis">
+<string>ATCMdate widget</string>
+</property>
+<property name="bgColor">
+<color>
+<red>170</red>
+<green>255</green>
+<blue>127</blue>
+</color>
+</property>
+<property name="borderWidth">
+<number>0</number>
+</property>
+<property name="borderRadius">
+<number>0</number>
+</property>
+<property name="format">
+<enum>ATCMdate::YYYY_MM_DD</enum>
+</property>
+</widget>
+<widget class="ATCMbutton" name="atcmButton_5">
+<property name="geometry">
+<rect>
+<x>360</x>
+<y>0</y>
+<width>120</width>
+<height>32</height>
+</rect>
+</property>
+<property name="font">
+<font>
+<family>DejaVu Sans</family>
+  <pointsize>7</pointsize>
+<weight>50</weight>
+<bold>false</bold>
+</font>
+</property>
+<property name="toolTip">
+<string/>
+</property>
+<property name="whatsThis">
+<string>ATCMbutton widget</string>
+</property>
+<property name="pageName">
+<string>menu</string>
+</property>
+<property name="statusvar">
+<string/>
+</property>
+<property name="viewStatus">
+<bool>false</bool>
+</property>
+<property name="refresh">
+<number>200</number>
+</property>
+<property name="visibilityVar">
+<string/>
+</property>
+<property name="bgColor">
+<color>
+<red>85</red>
+<green>255</green>
+<blue>255</blue>
+</color>
+</property>
+<property name="borderColor">
+<color>
+<red>220</red>
+<green>220</green>
+<blue>220</blue>
+</color>
+</property>
+<property name="text">
+<string>TP1043_01_A</string>
+</property>
+<property name="pressText">
+<string>TP1043_01_A</string>
+</property>
+<property name="borderWidth">
+<number>2</number>
+</property>
+<property name="borderRadius">
+<number>0</number>
+</property>
+<property name="apparence">
+<enum>QFrame::Raised</enum>
+</property>
+</widget>
+<widget class="Line" name="line_hr_3">
+<property name="geometry">
+<rect>
+<x>1</x>
+<y>238</y>
+<width>481</width>
+<height>3</height>
+</rect>
+</property>
+<property name="orientation">
+<enum>Qt::Horizontal</enum>
+</property>
+<property name="font">
+ <font>
+  <family>DejaVu Sans</family>
+  <pointsize>8</pointsize>
+ </font>
+</property>
+</widget>
+<widget class="Line" name="line_vt_1">
+<property name="geometry">
+<rect>
+<x>121</x>
+<y>0</y>
+<width>3</width>
+<height>272</height>
+</rect>
+</property>
+<property name="orientation">
+<enum>Qt::Vertical</enum>
+</property>
+<property name="font">
+ <font>
+  <family>DejaVu Sans</family>
+  <pointsize>8</pointsize>
+ </font>
+</property>
+</widget>
+<widget class="ATCMtime" name="atcmTime_2">
+<property name="geometry">
+<rect>
+<x>240</x>
+<y>22</y>
+<width>121</width>
+<height>22</height>
+</rect>
+</property>
+<property name="font">
+<font>
+<family>DejaVu Sans Mono</family>
+  <pointsize>8</pointsize>
+</font>
+</property>
+<property name="toolTip">
+<string>ATCM QTime</string>
+</property>
+<property name="whatsThis">
+<string>ATCMtime widget</string>
+</property>
+<property name="bgColor">
+<color>
+<red>170</red>
+<green>255</green>
+<blue>127</blue>
+</color>
+</property>
+<property name="borderWidth">
+<number>0</number>
+</property>
+<property name="borderRadius">
+<number>0</number>
+</property>
+</widget>
+<widget class="QLabel" name="label_PLC_AnInConf_">
+<property name="geometry">
+<rect>
+<x>-1</x>
+<y>170</y>
+<width>120</width>
+<height>33</height>
+</rect>
+</property>
+<property name="font">
+<font>
+<family>DejaVu Sans</family>
+  <pointsize>9</pointsize>
+</font>
+</property>
+<property name="styleSheet">
+<string notr="true">background-color: rgb(255, 255, 127);</string>
+</property>
+<property name="text">
+<string>PLC_AnInConf_</string>
+</property>
+<property name="alignment">
+<set>Qt::AlignCenter</set>
+</property>
+</widget>
+<widget class="QLabel" name="label_AnIn_2">
+<property name="geometry">
+<rect>
+<x>241</x>
+<y>70</y>
+<width>121</width>
+<height>34</height>
+</rect>
+</property>
+<property name="font">
+<font>
+<family>DejaVu Sans</family>
+  <pointsize>9</pointsize>
+</font>
+</property>
+<property name="styleSheet">
+<string notr="true">background-color: rgb(170, 255, 255);</string>
+</property>
+<property name="text">
+<string>2</string>
+</property>
+<property name="alignment">
+<set>Qt::AlignCenter</set>
+</property>
+</widget>
+<widget class="QLabel" name="label_RES_AnIn_">
+<property name="geometry">
+<rect>
+<x>1</x>
+<y>240</y>
+<width>120</width>
+<height>33</height>
+</rect>
+</property>
+<property name="font">
+<font>
+<family>DejaVu Sans</family>
+  <pointsize>9</pointsize>
+</font>
+</property>
+<property name="styleSheet">
+<string notr="true">background-color: rgb(255, 255, 127);</string>
+</property>
+<property name="text">
+<string>RES_AnIn_</string>
+</property>
+<property name="alignment">
+<set>Qt::AlignCenter</set>
+</property>
+</widget>
+<widget class="QLabel" name="label_AnIn_1">
+<property name="geometry">
+<rect>
+<x>121</x>
+<y>70</y>
+<width>121</width>
+<height>34</height>
+</rect>
+</property>
+<property name="font">
+<font>
+<family>DejaVu Sans</family>
+  <pointsize>9</pointsize>
+</font>
+</property>
+<property name="styleSheet">
+<string notr="true">background-color: rgb(170, 255, 255);</string>
+</property>
+<property name="text">
+<string>1</string>
+</property>
+<property name="alignment">
+<set>Qt::AlignCenter</set>
+</property>
+</widget>
+<widget class="QLabel" name="label_TST_AnIn_">
+<property name="geometry">
+<rect>
+<x>-1</x>
+<y>100</y>
+<width>120</width>
+<height>33</height>
+</rect>
+</property>
+<property name="font">
+<font>
+<family>DejaVu Sans</family>
+  <pointsize>9</pointsize>
+</font>
+</property>
+<property name="styleSheet">
+<string notr="true">background-color: rgb(255, 255, 127);</string>
+</property>
+<property name="text">
+<string>TST_AnIn_</string>
+</property>
+<property name="alignment">
+<set>Qt::AlignCenter</set>
+</property>
+</widget>
+<widget class="QLabel" name="label_VAL_AnInConf_">
+<property name="geometry">
+<rect>
+<x>-1</x>
+<y>134</y>
+<width>120</width>
+<height>33</height>
+</rect>
+</property>
+<property name="font">
+<font>
+<family>DejaVu Sans</family>
+  <pointsize>9</pointsize>
+</font>
+</property>
+<property name="styleSheet">
+<string notr="true">background-color: rgb(170, 255, 255);</string>
+</property>
+<property name="text">
+<string>VAL_AnInConf_</string>
+</property>
+<property name="alignment">
+<set>Qt::AlignCenter</set>
+</property>
+</widget>
+<widget class="QLabel" name="label_PLC_AnIn_">
+<property name="geometry">
+<rect>
+<x>0</x>
+<y>205</y>
+<width>120</width>
+<height>33</height>
+</rect>
+</property>
+<property name="font">
+<font>
+<family>DejaVu Sans</family>
+  <pointsize>9</pointsize>
+</font>
+</property>
+<property name="styleSheet">
+<string notr="true">background-color: rgb(170, 255, 255);</string>
+</property>
+<property name="text">
+<string>PLC_AnIn_</string>
+</property>
+<property name="alignment">
+<set>Qt::AlignCenter</set>
+</property>
+</widget>
+<widget class="ATCMbutton" name="atcmButton_page402_2">
+<property name="geometry">
+<rect>
+<x>0</x>
+<y>70</y>
+<width>120</width>
+<height>34</height>
+</rect>
+</property>
+<property name="toolTip">
+<string/>
+</property>
+<property name="whatsThis">
+<string>ATCMbutton widget</string>
+</property>
+<property name="pageName">
+<string>page400</string>
+</property>
+<property name="statusvar">
+<string/>
+</property>
+<property name="viewStatus">
+<bool>false</bool>
+</property>
+<property name="visibilityVar">
+<string/>
+</property>
+<property name="bgColor">
+<color>
+<red>170</red>
+<green>255</green>
+<blue>255</blue>
+</color>
+</property>
+<property name="text">
+<string>page400 TST</string>
+</property>
+<property name="pressText">
+<string>page400 TST</string>
+</property>
+<property name="borderWidth">
+<number>0</number>
+</property>
+<property name="borderRadius">
+<number>0</number>
+</property>
+<property name="apparence">
+<enum>QFrame::Raised</enum>
+</property>
+<property name="font">
+ <font>
+  <family>DejaVu Sans</family>
+  <pointsize>8</pointsize>
+ </font>
+</property>
+</widget>
+<widget class="ATCMlabel" name="atcmLabel_PLC_time">
+<property name="enabled">
+<bool>false</bool>
+</property>
+<property name="geometry">
+<rect>
+<x>241</x>
+<y>44</y>
+<width>120</width>
+<height>25</height>
+</rect>
+</property>
+<property name="font">
+<font>
+<family>DejaVu Sans Mono</family>
+  <pointsize>9</pointsize>
+</font>
+</property>
+<property name="text">
+<string>86400.00</string>
+</property>
+<property name="toolTip">
+<string>PLC_time</string>
+</property>
+<property name="whatsThis">
+<string>ATCMlabel widget</string>
+</property>
+<property name="variable">
+<string>PLC_time</string>
+</property>
+<property name="refresh">
+<number>500</number>
+</property>
+<property name="max">
+<string>0</string>
+</property>
+<property name="min">
+<string>0</string>
+</property>
+<property name="viewStatus">
+<bool>false</bool>
+</property>
+<property name="visibilityVar">
+<string/>
+</property>
+<property name="bgColor">
+<color>
+<red>170</red>
+<green>255</green>
+<blue>127</blue>
+</color>
+</property>
+<property name="fontColor">
+<color>
+<red>0</red>
+<green>0</green>
+<blue>0</blue>
+</color>
+</property>
+<property name="borderWidth">
+<number>0</number>
+</property>
+<property name="borderRadius">
+<number>0</number>
+</property>
+</widget>
+<widget class="ATCMcombobox" name="atcmComboBox">
+<property name="geometry">
+<rect>
+<x>0</x>
+<y>34</y>
+<width>120</width>
+<height>34</height>
+</rect>
+</property>
+<property name="font">
+<font>
+<family>DejaVu Sans</family>
+  <pointsize>7</pointsize>
+</font>
+</property>
+<property name="toolTip">
+<string>TEST_COMMAND</string>
+</property>
+<property name="whatsThis">
+<string>ATCMcombobox widget</string>
+</property>
+<property name="variable">
+<string>TEST_COMMAND</string>
+</property>
+<property name="refresh">
+<number>500</number>
+</property>
+<property name="viewStatus">
+<bool>false</bool>
+</property>
+<property name="writeAcknowledge">
+<bool>false</bool>
+</property>
+<property name="visibilityVar">
+<string/>
+</property>
+<property name="bgColor">
+<color>
+<red>170</red>
+<green>255</green>
+<blue>127</blue>
+</color>
+</property>
+<property name="borderWidth">
+<number>0</number>
+</property>
+<property name="borderRadius">
+<number>0</number>
+</property>
+<property name="mapping">
+<string>0;LOCAL;216;REMOTE;42;DONE</string>
+</property>
+</widget>
+<widget class="QLabel" name="label_Start_3">
+<property name="geometry">
+<rect>
+<x>0</x>
+<y>0</y>
+<width>120</width>
+<height>34</height>
+</rect>
+</property>
+<property name="font">
+<font>
+<family>DejaVu Sans</family>
+  <pointsize>7</pointsize>
+</font>
+</property>
+<property name="styleSheet">
+<string notr="true">background-color: rgb(170, 255, 255);</string>
+</property>
+<property name="text">
+<string>Modbus/TCP</string>
+</property>
+<property name="alignment">
+<set>Qt::AlignCenter</set>
+</property>
+</widget>
+<widget class="ATCManimation" name="atcmAnimation_TEST_STATUS">
+<property name="geometry">
+<rect>
+<x>120</x>
+<y>0</y>
+<width>120</width>
+<height>68</height>
+</rect>
+</property>
+<property name="toolTip">
+<string>TEST_STATUS</string>
+</property>
+<property name="whatsThis">
+<string>ATCManimation widget</string>
+</property>
+<property name="mapping">
+<string>0;:/icons/my_img/local.png;216;:/icons/my_img/remote.png;42;:/icons/my_img/done.png</string>
+</property>
+<property name="variable">
+<string>TEST_STATUS</string>
+</property>
+<property name="refresh">
+<number>500</number>
+</property>
+<property name="viewStatus">
+<bool>false</bool>
+</property>
+<property name="visibilityVar">
+<string/>
+</property>
+<property name="font">
+ <font>
+  <family>DejaVu Sans</family>
+  <pointsize>8</pointsize>
+ </font>
+</property>
+</widget>
+<zorder>label_Page</zorder>
+<zorder>label_18</zorder>
+<zorder>atcmDate</zorder>
+<zorder>atcmButton_5</zorder>
+<zorder>atcmTime_2</zorder>
+<zorder>label_PLC_AnInConf_</zorder>
+<zorder>label_AnIn_2</zorder>
+<zorder>label_RES_AnIn_</zorder>
+<zorder>label_AnIn_1</zorder>
+<zorder>label_TST_AnIn_</zorder>
+<zorder>label_VAL_AnInConf_</zorder>
+<zorder>label_PLC_AnIn_</zorder>
+<zorder>atcmButton_page402_2</zorder>
+<zorder>atcmLabel_PLC_time</zorder>
+<zorder>atcmComboBox</zorder>
+<zorder>label_Start_3</zorder>
+<zorder>atcmAnimation_TEST_STATUS</zorder>
+<zorder>line_vt_2</zorder>
+<zorder>line_vt_1</zorder>
+<zorder>line_vt_4</zorder>
+<zorder>line_hr_2</zorder>
+<zorder>line_hr_3</zorder>
+<zorder>line_hr_1</zorder>
+</widget>
+<customwidgets>
+<customwidget>
+<class>ATCManimation</class>
+<extends>QLabel</extends>
+<header>atcmplugin.h</header>
+</customwidget>
+<customwidget>
+<class>ATCMbutton</class>
+<extends>QPushButton</extends>
+<header>atcmplugin.h</header>
+</customwidget>
+<customwidget>
+<class>ATCMcombobox</class>
+<extends>QComboBox</extends>
+<header>atcmplugin.h</header>
+</customwidget>
+<customwidget>
+<class>ATCMdate</class>
+<extends>QPushButton</extends>
+<header>atcmplugin.h</header>
+</customwidget>
+<customwidget>
+<class>ATCMlabel</class>
+<extends>QPushButton</extends>
+<header>atcmplugin.h</header>
+</customwidget>
+<customwidget>
+<class>ATCMtime</class>
+<extends>QPushButton</extends>
+<header>atcmplugin.h</header>
+</customwidget>
+</customwidgets>
+<resources/>
+<connections>
+<connection>
+<sender>atcmButton_5</sender>
+<signal>newPage(const char*,bool)</signal>
+<receiver>page403</receiver>
+<slot>goto_page(const char*,bool)</slot>
+<hints>
+<hint type="sourcelabel">
+<x>20</x>
+<y>20</y>
+</hint>
+<hint type="destinationlabel">
+<x>20</x>
+<y>20</y>
+</hint>
+</hints>
+</connection>
+<connection>
+<sender>atcmButton_page402_2</sender>
+<signal>newPage(const char*,bool)</signal>
+<receiver>page403</receiver>
+<slot>goto_page(const char*,bool)</slot>
+<hints>
+<hint type="sourcelabel">
+<x>20</x>
+<y>20</y>
+</hint>
+<hint type="destinationlabel">
+<x>20</x>
+<y>20</y>
+</hint>
+</hints>
+</connection>
+</connections>
+<slots>
+<slot>goto_page(const char*,bool)</slot>
+</slots>
 </ui>
