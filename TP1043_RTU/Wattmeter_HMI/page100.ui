@@ -235,7 +235,7 @@ background-color: rgb(170, 255, 127);
    <property name="font">
     <font>
      <family>DejaVu Sans Mono</family>
-     <pointsize>36</pointsize>
+     <pointsize>27</pointsize>
      <weight>75</weight>
      <bold>true</bold>
     </font>
@@ -468,7 +468,7 @@ background-color: rgb(170, 255, 127);
    <property name="font">
     <font>
      <family>DejaVu Sans Mono</family>
-     <pointsize>28</pointsize>
+     <pointsize>22</pointsize>
      <weight>75</weight>
      <bold>true</bold>
     </font>
@@ -542,7 +542,7 @@ background-color: rgb(170, 255, 127);
    <property name="font">
     <font>
      <family>DejaVu Sans Mono</family>
-     <pointsize>28</pointsize>
+     <pointsize>22</pointsize>
      <weight>75</weight>
      <bold>true</bold>
     </font>

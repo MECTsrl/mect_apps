@@ -40,6 +40,12 @@ background-color: rgb(255, 255, 127);
      <height>272</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
    <property name="orientation">
     <enum>Qt::Vertical</enum>
    </property>
@@ -81,7 +87,8 @@ revision</string>
    </property>
    <property name="font">
     <font>
-     <family>DejaVu Sans Mono</family>
+     <family>DejaVu Sans</family>
+     <pointsize>8</pointsize>
     </font>
    </property>
    <property name="toolTip">
@@ -119,7 +126,7 @@ revision</string>
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>12</pointsize>
+     <pointsize>8</pointsize>
     </font>
    </property>
    <property name="styleSheet">
@@ -180,7 +187,7 @@ revision</string>
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>10</pointsize>
+     <pointsize>8</pointsize>
      <weight>50</weight>
      <bold>false</bold>
     </font>
@@ -245,6 +252,12 @@ revision</string>
      <height>272</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
    <property name="orientation">
     <enum>Qt::Vertical</enum>
    </property>
@@ -257,6 +270,12 @@ revision</string>
      <width>30</width>
      <height>35</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>8</pointsize>
+    </font>
    </property>
    <property name="text">
     <string>321</string>
@@ -318,7 +337,7 @@ revision</string>
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>10</pointsize>
+     <pointsize>8</pointsize>
     </font>
    </property>
    <property name="styleSheet">
@@ -343,7 +362,7 @@ revision</string>
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>12</pointsize>
+     <pointsize>8</pointsize>
     </font>
    </property>
    <property name="styleSheet">
@@ -364,6 +383,12 @@ revision</string>
      <width>30</width>
      <height>35</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>8</pointsize>
+    </font>
    </property>
    <property name="text">
     <string>321</string>
@@ -483,6 +508,12 @@ revision</string>
      <height>3</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
    <property name="orientation">
     <enum>Qt::Horizontal</enum>
    </property>
@@ -499,7 +530,7 @@ revision</string>
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>10</pointsize>
+     <pointsize>8</pointsize>
     </font>
    </property>
    <property name="styleSheet">
@@ -521,6 +552,12 @@ revision</string>
      <height>272</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
    <property name="orientation">
     <enum>Qt::Vertical</enum>
    </property>
@@ -533,6 +570,12 @@ revision</string>
      <width>31</width>
      <height>35</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>8</pointsize>
+    </font>
    </property>
    <property name="text">
     <string>123</string>
@@ -594,7 +637,7 @@ revision</string>
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>12</pointsize>
+     <pointsize>8</pointsize>
     </font>
    </property>
    <property name="styleSheet">
@@ -651,6 +694,12 @@ revision</string>
      <width>31</width>
      <height>35</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>8</pointsize>
+    </font>
    </property>
    <property name="text">
     <string>1.11</string>
@@ -714,8 +763,8 @@ revision</string>
    </property>
    <property name="font">
     <font>
-     <family>DejaVu Sans Mono</family>
-     <pointsize>12</pointsize>
+     <family>DejaVu Sans</family>
+     <pointsize>8</pointsize>
     </font>
    </property>
    <property name="text">
@@ -806,6 +855,12 @@ revision</string>
      <height>3</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
    <property name="orientation">
     <enum>Qt::Horizontal</enum>
    </property>
@@ -894,7 +949,7 @@ revision</string>
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>10</pointsize>
+     <pointsize>8</pointsize>
     </font>
    </property>
    <property name="toolTip">
@@ -943,6 +998,12 @@ revision</string>
      <width>31</width>
      <height>35</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>8</pointsize>
+    </font>
    </property>
    <property name="text">
     <string>1.11</string>
@@ -1065,7 +1126,8 @@ WR</string>
    </property>
    <property name="font">
     <font>
-     <family>DejaVu Sans Mono</family>
+     <family>DejaVu Sans</family>
+     <pointsize>8</pointsize>
     </font>
    </property>
    <property name="toolTip">
@@ -1136,7 +1198,7 @@ WR</string>
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>10</pointsize>
+     <pointsize>8</pointsize>
     </font>
    </property>
    <property name="styleSheet">
@@ -1158,6 +1220,12 @@ WR</string>
      <height>3</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
    <property name="orientation">
     <enum>Qt::Horizontal</enum>
    </property>
@@ -1170,6 +1238,12 @@ WR</string>
      <width>31</width>
      <height>35</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>8</pointsize>
+    </font>
    </property>
    <property name="text">
     <string>123</string>
@@ -1228,6 +1302,12 @@ WR</string>
      <height>34</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
    <property name="toolTip">
     <string/>
    </property>
@@ -1278,6 +1358,12 @@ WR</string>
      <height>3</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
    <property name="orientation">
     <enum>Qt::Horizontal</enum>
    </property>
@@ -1316,6 +1402,12 @@ config</string>
      <width>31</width>
      <height>35</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>8</pointsize>
+    </font>
    </property>
    <property name="text">
     <string>123</string>
@@ -1413,7 +1505,7 @@ config</string>
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>12</pointsize>
+     <pointsize>8</pointsize>
     </font>
    </property>
    <property name="styleSheet">
@@ -1496,6 +1588,12 @@ RD</string>
      <width>30</width>
      <height>35</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>8</pointsize>
+    </font>
    </property>
    <property name="text">
     <string>321</string>
