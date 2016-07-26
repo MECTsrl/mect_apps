@@ -43,6 +43,12 @@ background-color: rgb(255, 255, 127);
 <property name="orientation">
 <enum>Qt::Vertical</enum>
 </property>
+<property name="font">
+ <font>
+  <family>DejaVu Sans</family>
+  <pointsize>8</pointsize>
+ </font>
+</property>
 </widget>
 <widget class="ATCMdate" name="atcmDate">
 <property name="geometry">
@@ -56,6 +62,7 @@ background-color: rgb(255, 255, 127);
 <property name="font">
 <font>
 <family>DejaVu Sans Mono</family>
+  <pointsize>8</pointsize>
 </font>
 </property>
 <property name="toolTip">
@@ -93,6 +100,7 @@ background-color: rgb(255, 255, 127);
 <property name="font">
 <font>
 <family>DejaVu Sans Mono</family>
+  <pointsize>8</pointsize>
 </font>
 </property>
 <property name="toolTip">
@@ -164,6 +172,12 @@ background-color: rgb(255, 255, 127);
 <property name="apparence">
 <enum>QFrame::Raised</enum>
 </property>
+<property name="font">
+ <font>
+  <family>DejaVu Sans</family>
+  <pointsize>8</pointsize>
+ </font>
+</property>
 </widget>
 <widget class="ATCMled" name="atcmLed_PLC_DigIn_6">
 <property name="geometry">
@@ -200,6 +214,12 @@ background-color: rgb(255, 255, 127);
 <iconset>
 <normaloff>:/off.png</normaloff>:/off.png</iconset>
 </property>
+<property name="font">
+ <font>
+  <family>DejaVu Sans</family>
+  <pointsize>8</pointsize>
+ </font>
+</property>
 </widget>
 <widget class="QLabel" name="label_PLC_DigIn_1">
 <property name="geometry">
@@ -213,7 +233,7 @@ background-color: rgb(255, 255, 127);
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>13</pointsize>
+  <pointsize>9</pointsize>
 </font>
 </property>
 <property name="styleSheet">
@@ -238,7 +258,7 @@ background-color: rgb(255, 255, 127);
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>13</pointsize>
+  <pointsize>9</pointsize>
 </font>
 </property>
 <property name="styleSheet">
@@ -300,6 +320,12 @@ background-color: rgb(255, 255, 127);
 <property name="apparence">
 <enum>QFrame::Raised</enum>
 </property>
+<property name="font">
+ <font>
+  <family>DejaVu Sans</family>
+  <pointsize>8</pointsize>
+ </font>
+</property>
 </widget>
 <widget class="ATCMled" name="atcmLed_PLC_DigIn_10">
 <property name="geometry">
@@ -335,6 +361,12 @@ background-color: rgb(255, 255, 127);
 <property name="offIcon">
 <iconset>
 <normaloff>:/off.png</normaloff>:/off.png</iconset>
+</property>
+<property name="font">
+ <font>
+  <family>DejaVu Sans</family>
+  <pointsize>8</pointsize>
+ </font>
 </property>
 </widget>
 <widget class="ATCMled" name="atcmLed_PLC_DigIn_5">
@@ -372,6 +404,12 @@ background-color: rgb(255, 255, 127);
 <iconset>
 <normaloff>:/off.png</normaloff>:/off.png</iconset>
 </property>
+<property name="font">
+ <font>
+  <family>DejaVu Sans</family>
+  <pointsize>8</pointsize>
+ </font>
+</property>
 </widget>
 <widget class="ATCMled" name="atcmLed_PLC_DigOut_13">
 <property name="geometry">
@@ -407,6 +445,12 @@ background-color: rgb(255, 255, 127);
 <property name="offIcon">
 <iconset>
 <normaloff>:/off.png</normaloff>:/off.png</iconset>
+</property>
+<property name="font">
+ <font>
+  <family>DejaVu Sans</family>
+  <pointsize>8</pointsize>
+ </font>
 </property>
 </widget>
 <widget class="ATCMled" name="atcmLed_PLC_AnOut_2">
@@ -444,6 +488,12 @@ background-color: rgb(255, 255, 127);
 <iconset>
 <normaloff>:/off.png</normaloff>:/off.png</iconset>
 </property>
+<property name="font">
+ <font>
+  <family>DejaVu Sans</family>
+  <pointsize>8</pointsize>
+ </font>
+</property>
 </widget>
 <widget class="Line" name="line_hr_1">
 <property name="geometry">
@@ -456,6 +506,12 @@ background-color: rgb(255, 255, 127);
 </property>
 <property name="orientation">
 <enum>Qt::Horizontal</enum>
+</property>
+<property name="font">
+ <font>
+  <family>DejaVu Sans</family>
+  <pointsize>8</pointsize>
+ </font>
 </property>
 </widget>
 <widget class="QLabel" name="label_PLC_DigIn_3">
@@ -470,7 +526,7 @@ background-color: rgb(255, 255, 127);
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>13</pointsize>
+  <pointsize>9</pointsize>
 </font>
 </property>
 <property name="styleSheet">
@@ -494,6 +550,12 @@ background-color: rgb(255, 255, 127);
 </property>
 <property name="orientation">
 <enum>Qt::Horizontal</enum>
+</property>
+<property name="font">
+ <font>
+  <family>DejaVu Sans</family>
+  <pointsize>8</pointsize>
+ </font>
 </property>
 </widget>
 <widget class="ATCMled" name="atcmLed_PLC_DigIn_11">
@@ -531,6 +593,12 @@ background-color: rgb(255, 255, 127);
 <iconset>
 <normaloff>:/off.png</normaloff>:/off.png</iconset>
 </property>
+<property name="font">
+ <font>
+  <family>DejaVu Sans</family>
+  <pointsize>8</pointsize>
+ </font>
+</property>
 </widget>
 <widget class="ATCMled" name="atcmLed_PLC_AnOut_1">
 <property name="geometry">
@@ -566,6 +634,12 @@ background-color: rgb(255, 255, 127);
 <property name="offIcon">
 <iconset>
 <normaloff>:/off.png</normaloff>:/off.png</iconset>
+</property>
+<property name="font">
+ <font>
+  <family>DejaVu Sans</family>
+  <pointsize>8</pointsize>
+ </font>
 </property>
 </widget>
 <widget class="ATCMled" name="atcmLed_PLC_AnIn_2">
@@ -603,6 +677,12 @@ background-color: rgb(255, 255, 127);
 <iconset>
 <normaloff>:/off.png</normaloff>:/off.png</iconset>
 </property>
+<property name="font">
+ <font>
+  <family>DejaVu Sans</family>
+  <pointsize>8</pointsize>
+ </font>
+</property>
 </widget>
 <widget class="ATCMled" name="atcmLed_PLC_AnOut_4">
 <property name="geometry">
@@ -638,6 +718,12 @@ background-color: rgb(255, 255, 127);
 <property name="offIcon">
 <iconset>
 <normaloff>:/off.png</normaloff>:/off.png</iconset>
+</property>
+<property name="font">
+ <font>
+  <family>DejaVu Sans</family>
+  <pointsize>8</pointsize>
+ </font>
 </property>
 </widget>
 <widget class="ATCMled" name="atcmLed_PLC_DigOut_18">
@@ -675,6 +761,12 @@ background-color: rgb(255, 255, 127);
 <iconset>
 <normaloff>:/off.png</normaloff>:/off.png</iconset>
 </property>
+<property name="font">
+ <font>
+  <family>DejaVu Sans</family>
+  <pointsize>8</pointsize>
+ </font>
+</property>
 </widget>
 <widget class="ATCMled" name="atcmLed_PLC_DigIn_3">
 <property name="geometry">
@@ -710,6 +802,12 @@ background-color: rgb(255, 255, 127);
 <property name="offIcon">
 <iconset>
 <normaloff>:/off.png</normaloff>:/off.png</iconset>
+</property>
+<property name="font">
+ <font>
+  <family>DejaVu Sans</family>
+  <pointsize>8</pointsize>
+ </font>
 </property>
 </widget>
 <widget class="ATCMled" name="atcmLed_PLC_DigIn_1">
@@ -747,6 +845,12 @@ background-color: rgb(255, 255, 127);
 <iconset>
 <normaloff>:/off.png</normaloff>:/off.png</iconset>
 </property>
+<property name="font">
+ <font>
+  <family>DejaVu Sans</family>
+  <pointsize>8</pointsize>
+ </font>
+</property>
 </widget>
 <widget class="ATCMled" name="atcmLed_PLC_DigIn_7">
 <property name="geometry">
@@ -782,6 +886,12 @@ background-color: rgb(255, 255, 127);
 <property name="offIcon">
 <iconset>
 <normaloff>:/off.png</normaloff>:/off.png</iconset>
+</property>
+<property name="font">
+ <font>
+  <family>DejaVu Sans</family>
+  <pointsize>8</pointsize>
+ </font>
 </property>
 </widget>
 <widget class="ATCMled" name="atcmLed_PLC_DigIn_4">
@@ -819,6 +929,12 @@ background-color: rgb(255, 255, 127);
 <iconset>
 <normaloff>:/off.png</normaloff>:/off.png</iconset>
 </property>
+<property name="font">
+ <font>
+  <family>DejaVu Sans</family>
+  <pointsize>8</pointsize>
+ </font>
+</property>
 </widget>
 <widget class="ATCMled" name="atcmLed_PLC_AnIn_1">
 <property name="geometry">
@@ -854,6 +970,12 @@ background-color: rgb(255, 255, 127);
 <property name="offIcon">
 <iconset>
 <normaloff>:/off.png</normaloff>:/off.png</iconset>
+</property>
+<property name="font">
+ <font>
+  <family>DejaVu Sans</family>
+  <pointsize>8</pointsize>
+ </font>
 </property>
 </widget>
 <widget class="ATCMled" name="atcmLed_PLC_DigIn_2">
@@ -891,6 +1013,12 @@ background-color: rgb(255, 255, 127);
 <iconset>
 <normaloff>:/off.png</normaloff>:/off.png</iconset>
 </property>
+<property name="font">
+ <font>
+  <family>DejaVu Sans</family>
+  <pointsize>8</pointsize>
+ </font>
+</property>
 </widget>
 <widget class="QLabel" name="label_PLC_DigIn_11">
 <property name="geometry">
@@ -904,7 +1032,7 @@ background-color: rgb(255, 255, 127);
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>13</pointsize>
+  <pointsize>9</pointsize>
 </font>
 </property>
 <property name="styleSheet">
@@ -929,7 +1057,7 @@ background-color: rgb(255, 255, 127);
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>13</pointsize>
+  <pointsize>9</pointsize>
 </font>
 </property>
 <property name="styleSheet">
@@ -954,7 +1082,7 @@ background-color: rgb(255, 255, 127);
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>13</pointsize>
+  <pointsize>9</pointsize>
 </font>
 </property>
 <property name="styleSheet">
@@ -979,7 +1107,7 @@ background-color: rgb(255, 255, 127);
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>10</pointsize>
+  <pointsize>7</pointsize>
 </font>
 </property>
 <property name="styleSheet">
@@ -1004,7 +1132,7 @@ background-color: rgb(255, 255, 127);
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>10</pointsize>
+  <pointsize>7</pointsize>
 <weight>50</weight>
 <bold>false</bold>
 </font>
@@ -1075,7 +1203,7 @@ background-color: rgb(255, 255, 127);
 <property name="font">
 <font>
 <family>DejaVu Sans Mono</family>
-<pointsize>12</pointsize>
+  <pointsize>9</pointsize>
 </font>
 </property>
 <property name="text">
@@ -1175,6 +1303,12 @@ background-color: rgb(255, 255, 127);
 <property name="apparence">
 <enum>QFrame::Raised</enum>
 </property>
+<property name="font">
+ <font>
+  <family>DejaVu Sans</family>
+  <pointsize>8</pointsize>
+ </font>
+</property>
 </widget>
 <widget class="QLabel" name="label_PLC_DigIn_4">
 <property name="geometry">
@@ -1188,7 +1322,7 @@ background-color: rgb(255, 255, 127);
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>13</pointsize>
+  <pointsize>9</pointsize>
 </font>
 </property>
 <property name="styleSheet">
@@ -1213,6 +1347,12 @@ background-color: rgb(255, 255, 127);
 <property name="orientation">
 <enum>Qt::Horizontal</enum>
 </property>
+<property name="font">
+ <font>
+  <family>DejaVu Sans</family>
+  <pointsize>8</pointsize>
+ </font>
+</property>
 </widget>
 <widget class="QLabel" name="label_PLC_DigIn_5">
 <property name="geometry">
@@ -1226,7 +1366,7 @@ background-color: rgb(255, 255, 127);
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>13</pointsize>
+  <pointsize>9</pointsize>
 </font>
 </property>
 <property name="styleSheet">
@@ -1274,6 +1414,12 @@ background-color: rgb(255, 255, 127);
 <iconset>
 <normaloff>:/off.png</normaloff>:/off.png</iconset>
 </property>
+<property name="font">
+ <font>
+  <family>DejaVu Sans</family>
+  <pointsize>8</pointsize>
+ </font>
+</property>
 </widget>
 <widget class="QLabel" name="label_PLC_DigIn_7">
 <property name="geometry">
@@ -1287,7 +1433,7 @@ background-color: rgb(255, 255, 127);
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>13</pointsize>
+  <pointsize>9</pointsize>
 </font>
 </property>
 <property name="styleSheet">
@@ -1335,6 +1481,12 @@ background-color: rgb(255, 255, 127);
 <iconset>
 <normaloff>:/off.png</normaloff>:/off.png</iconset>
 </property>
+<property name="font">
+ <font>
+  <family>DejaVu Sans</family>
+  <pointsize>8</pointsize>
+ </font>
+</property>
 </widget>
 <widget class="ATCMled" name="atcmLed_PLC_DigOut_2">
 <property name="geometry">
@@ -1370,6 +1522,12 @@ background-color: rgb(255, 255, 127);
 <property name="offIcon">
 <iconset>
 <normaloff>:/off.png</normaloff>:/off.png</iconset>
+</property>
+<property name="font">
+ <font>
+  <family>DejaVu Sans</family>
+  <pointsize>8</pointsize>
+ </font>
 </property>
 </widget>
 <widget class="ATCMled" name="atcmLed_PLC_DigOut_8">
@@ -1407,6 +1565,12 @@ background-color: rgb(255, 255, 127);
 <iconset>
 <normaloff>:/off.png</normaloff>:/off.png</iconset>
 </property>
+<property name="font">
+ <font>
+  <family>DejaVu Sans</family>
+  <pointsize>8</pointsize>
+ </font>
+</property>
 </widget>
 <widget class="QLabel" name="label_PLC_DigIn_9">
 <property name="geometry">
@@ -1420,7 +1584,7 @@ background-color: rgb(255, 255, 127);
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>13</pointsize>
+  <pointsize>9</pointsize>
 </font>
 </property>
 <property name="styleSheet">
@@ -1468,6 +1632,12 @@ background-color: rgb(255, 255, 127);
 <iconset>
 <normaloff>:/off.png</normaloff>:/off.png</iconset>
 </property>
+<property name="font">
+ <font>
+  <family>DejaVu Sans</family>
+  <pointsize>8</pointsize>
+ </font>
+</property>
 </widget>
 <widget class="QLabel" name="label_PLC_DigIn_12">
 <property name="geometry">
@@ -1481,7 +1651,7 @@ background-color: rgb(255, 255, 127);
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>13</pointsize>
+  <pointsize>9</pointsize>
 </font>
 </property>
 <property name="styleSheet">
@@ -1524,6 +1694,12 @@ background-color: rgb(255, 255, 127);
 <property name="visibilityVar">
 <string/>
 </property>
+<property name="font">
+ <font>
+  <family>DejaVu Sans</family>
+  <pointsize>8</pointsize>
+ </font>
+</property>
 </widget>
 <widget class="ATCMled" name="atcmLed_PLC_DigOut_20">
 <property name="geometry">
@@ -1560,6 +1736,12 @@ background-color: rgb(255, 255, 127);
 <iconset>
 <normaloff>:/off.png</normaloff>:/off.png</iconset>
 </property>
+<property name="font">
+ <font>
+  <family>DejaVu Sans</family>
+  <pointsize>8</pointsize>
+ </font>
+</property>
 </widget>
 <widget class="QLabel" name="label_PLC_DigIn_2">
 <property name="geometry">
@@ -1573,7 +1755,7 @@ background-color: rgb(255, 255, 127);
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>13</pointsize>
+  <pointsize>9</pointsize>
 </font>
 </property>
 <property name="styleSheet">
@@ -1635,6 +1817,12 @@ background-color: rgb(255, 255, 127);
 <property name="apparence">
 <enum>QFrame::Raised</enum>
 </property>
+<property name="font">
+ <font>
+  <family>DejaVu Sans</family>
+  <pointsize>8</pointsize>
+ </font>
+</property>
 </widget>
 <widget class="ATCMled" name="atcmLed_PLC_DigOut_6">
 <property name="geometry">
@@ -1671,6 +1859,12 @@ background-color: rgb(255, 255, 127);
 <iconset>
 <normaloff>:/off.png</normaloff>:/off.png</iconset>
 </property>
+<property name="font">
+ <font>
+  <family>DejaVu Sans</family>
+  <pointsize>8</pointsize>
+ </font>
+</property>
 </widget>
 <widget class="ATCMled" name="atcmLed_PLC_DigOut_4">
 <property name="geometry">
@@ -1706,6 +1900,12 @@ background-color: rgb(255, 255, 127);
 <property name="offIcon">
 <iconset>
 <normaloff>:/off.png</normaloff>:/off.png</iconset>
+</property>
+<property name="font">
+ <font>
+  <family>DejaVu Sans</family>
+  <pointsize>8</pointsize>
+ </font>
 </property>
 </widget>
 <widget class="ATCMbutton" name="atcmButton_page401">
@@ -1757,6 +1957,12 @@ background-color: rgb(255, 255, 127);
 <property name="apparence">
 <enum>QFrame::Raised</enum>
 </property>
+<property name="font">
+ <font>
+  <family>DejaVu Sans</family>
+  <pointsize>8</pointsize>
+ </font>
+</property>
 </widget>
 <widget class="ATCMled" name="atcmLed_PLC_DigIn_8">
 <property name="geometry">
@@ -1793,6 +1999,12 @@ background-color: rgb(255, 255, 127);
 <iconset>
 <normaloff>:/off.png</normaloff>:/off.png</iconset>
 </property>
+<property name="font">
+ <font>
+  <family>DejaVu Sans</family>
+  <pointsize>8</pointsize>
+ </font>
+</property>
 </widget>
 <widget class="QLabel" name="label_Start_3">
 <property name="geometry">
@@ -1806,7 +2018,7 @@ background-color: rgb(255, 255, 127);
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>10</pointsize>
+  <pointsize>7</pointsize>
 </font>
 </property>
 <property name="styleSheet">
@@ -1853,6 +2065,12 @@ background-color: rgb(255, 255, 127);
 <property name="offIcon">
 <iconset>
 <normaloff>:/off.png</normaloff>:/off.png</iconset>
+</property>
+<property name="font">
+ <font>
+  <family>DejaVu Sans</family>
+  <pointsize>8</pointsize>
+ </font>
 </property>
 </widget>
 <widget class="ATCMbutton" name="atcmButton_page402">
@@ -1904,6 +2122,12 @@ background-color: rgb(255, 255, 127);
 <property name="apparence">
 <enum>QFrame::Raised</enum>
 </property>
+<property name="font">
+ <font>
+  <family>DejaVu Sans</family>
+  <pointsize>8</pointsize>
+ </font>
+</property>
 </widget>
 <widget class="ATCMled" name="atcmLed_PLC_AnOut_3">
 <property name="geometry">
@@ -1939,6 +2163,12 @@ background-color: rgb(255, 255, 127);
 <property name="offIcon">
 <iconset>
 <normaloff>:/off.png</normaloff>:/off.png</iconset>
+</property>
+<property name="font">
+ <font>
+  <family>DejaVu Sans</family>
+  <pointsize>8</pointsize>
+ </font>
 </property>
 </widget>
 <widget class="ATCMled" name="atcmLed_PLC_DigOut_1">
@@ -1976,6 +2206,12 @@ background-color: rgb(255, 255, 127);
 <iconset>
 <normaloff>:/off.png</normaloff>:/off.png</iconset>
 </property>
+<property name="font">
+ <font>
+  <family>DejaVu Sans</family>
+  <pointsize>8</pointsize>
+ </font>
+</property>
 </widget>
 <widget class="ATCMled" name="atcmLed_PLC_DigIn_12">
 <property name="geometry">
@@ -2012,6 +2248,12 @@ background-color: rgb(255, 255, 127);
 <iconset>
 <normaloff>:/off.png</normaloff>:/off.png</iconset>
 </property>
+<property name="font">
+ <font>
+  <family>DejaVu Sans</family>
+  <pointsize>8</pointsize>
+ </font>
+</property>
 </widget>
 <widget class="ATCMcombobox" name="atcmComboBox">
 <property name="geometry">
@@ -2025,7 +2267,7 @@ background-color: rgb(255, 255, 127);
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>10</pointsize>
+  <pointsize>7</pointsize>
 </font>
 </property>
 <property name="toolTip">
@@ -2078,6 +2320,12 @@ background-color: rgb(255, 255, 127);
 <property name="orientation">
 <enum>Qt::Horizontal</enum>
 </property>
+<property name="font">
+ <font>
+  <family>DejaVu Sans</family>
+  <pointsize>8</pointsize>
+ </font>
+</property>
 </widget>
 <widget class="Line" name="line_vt_1">
 <property name="geometry">
@@ -2090,6 +2338,12 @@ background-color: rgb(255, 255, 127);
 </property>
 <property name="orientation">
 <enum>Qt::Vertical</enum>
+</property>
+<property name="font">
+ <font>
+  <family>DejaVu Sans</family>
+  <pointsize>8</pointsize>
+ </font>
 </property>
 </widget>
 <widget class="ATCMled" name="atcmLed_PLC_DigOut_17">
@@ -2127,6 +2381,12 @@ background-color: rgb(255, 255, 127);
 <iconset>
 <normaloff>:/off.png</normaloff>:/off.png</iconset>
 </property>
+<property name="font">
+ <font>
+  <family>DejaVu Sans</family>
+  <pointsize>8</pointsize>
+ </font>
+</property>
 </widget>
 <widget class="ATCMled" name="atcmLed_PLC_DigOut_3">
 <property name="geometry">
@@ -2163,6 +2423,12 @@ background-color: rgb(255, 255, 127);
 <iconset>
 <normaloff>:/off.png</normaloff>:/off.png</iconset>
 </property>
+<property name="font">
+ <font>
+  <family>DejaVu Sans</family>
+  <pointsize>8</pointsize>
+ </font>
+</property>
 </widget>
 <widget class="QLabel" name="label_Page">
 <property name="geometry">
@@ -2176,7 +2442,7 @@ background-color: rgb(255, 255, 127);
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>10</pointsize>
+  <pointsize>7</pointsize>
 <weight>75</weight>
 <bold>true</bold>
 </font>
@@ -2202,6 +2468,12 @@ background-color: rgb(255, 255, 127);
 </property>
 <property name="orientation">
 <enum>Qt::Vertical</enum>
+</property>
+<property name="font">
+ <font>
+  <family>DejaVu Sans</family>
+  <pointsize>8</pointsize>
+ </font>
 </property>
 </widget>
 <zorder>atcmDate</zorder>
@@ -2308,50 +2580,50 @@ background-color: rgb(255, 255, 127);
 </customwidget>
 </customwidgets>
 <resources/>
- <connections>
-  <connection>
-   <sender>atcmButton_page405</sender>
-   <signal>newPage(const char*,bool)</signal>
-   <receiver>page400</receiver>
-   <slot>goto_page(const char*,bool)</slot>
-  </connection>
-  <connection>
-   <sender>atcmButton_page403</sender>
-   <signal>newPage(const char*,bool)</signal>
-   <receiver>page400</receiver>
-   <slot>goto_page(const char*,bool)</slot>
-  </connection>
-  <connection>
-   <sender>atcmButton_5</sender>
-   <signal>newPage(const char*,bool)</signal>
-   <receiver>page400</receiver>
-   <slot>goto_page(const char*,bool)</slot>
-  </connection>
-  <connection>
-   <sender>atcmButton_page402_2</sender>
-   <signal>newPage(const char*,bool)</signal>
-   <receiver>page400</receiver>
-   <slot>goto_page(const char*,bool)</slot>
-  </connection>
-  <connection>
-   <sender>atcmButton_page404</sender>
-   <signal>newPage(const char*,bool)</signal>
-   <receiver>page400</receiver>
-   <slot>goto_page(const char*,bool)</slot>
-  </connection>
-  <connection>
-   <sender>atcmButton_page401</sender>
-   <signal>newPage(const char*,bool)</signal>
-   <receiver>page400</receiver>
-   <slot>goto_page(const char*,bool)</slot>
-  </connection>
-  <connection>
-   <sender>atcmButton_page402</sender>
-   <signal>newPage(const char*,bool)</signal>
-   <receiver>page400</receiver>
-   <slot>goto_page(const char*,bool)</slot>
-  </connection>
- </connections>
+<connections>
+<connection>
+<sender>atcmButton_page405</sender>
+<signal>newPage(const char*,bool)</signal>
+<receiver>page400</receiver>
+<slot>goto_page(const char*,bool)</slot>
+</connection>
+<connection>
+<sender>atcmButton_page403</sender>
+<signal>newPage(const char*,bool)</signal>
+<receiver>page400</receiver>
+<slot>goto_page(const char*,bool)</slot>
+</connection>
+<connection>
+<sender>atcmButton_5</sender>
+<signal>newPage(const char*,bool)</signal>
+<receiver>page400</receiver>
+<slot>goto_page(const char*,bool)</slot>
+</connection>
+<connection>
+<sender>atcmButton_page402_2</sender>
+<signal>newPage(const char*,bool)</signal>
+<receiver>page400</receiver>
+<slot>goto_page(const char*,bool)</slot>
+</connection>
+<connection>
+<sender>atcmButton_page404</sender>
+<signal>newPage(const char*,bool)</signal>
+<receiver>page400</receiver>
+<slot>goto_page(const char*,bool)</slot>
+</connection>
+<connection>
+<sender>atcmButton_page401</sender>
+<signal>newPage(const char*,bool)</signal>
+<receiver>page400</receiver>
+<slot>goto_page(const char*,bool)</slot>
+</connection>
+<connection>
+<sender>atcmButton_page402</sender>
+<signal>newPage(const char*,bool)</signal>
+<receiver>page400</receiver>
+<slot>goto_page(const char*,bool)</slot>
+</connection>
+</connections>
 <slots>
 <slot>goto_page(const char*,bool)</slot>
 </slots>

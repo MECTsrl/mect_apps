@@ -47,7 +47,7 @@
 <property name="font">
 <font>
 <family>DejaVu Sans Mono</family>
-<pointsize>13</pointsize>
+  <pointsize>9</pointsize>
 <weight>75</weight>
 <bold>true</bold>
 </font>
@@ -138,6 +138,12 @@
 <iconset>
 <normaloff>:/off.png</normaloff>:/off.png</iconset>
 </property>
+<property name="font">
+ <font>
+  <family>DejaVu Sans</family>
+  <pointsize>8</pointsize>
+ </font>
+</property>
 </widget>
 <widget class="ATCMled" name="atcmLed_PLC_DigIn_3">
 <property name="geometry">
@@ -174,6 +180,12 @@
 <iconset>
 <normaloff>:/off.png</normaloff>:/off.png</iconset>
 </property>
+<property name="font">
+ <font>
+  <family>DejaVu Sans</family>
+  <pointsize>8</pointsize>
+ </font>
+</property>
 </widget>
 <widget class="ATCMlabel" name="atcmLabel_PLC_Heartbeat">
 <property name="geometry">
@@ -187,7 +199,7 @@
 <property name="font">
 <font>
 <family>DejaVu Sans Mono</family>
-<pointsize>10</pointsize>
+  <pointsize>7</pointsize>
 <weight>50</weight>
 <bold>false</bold>
 </font>
@@ -261,7 +273,7 @@
 <property name="font">
 <font>
 <family>DejaVu Sans Mono</family>
-<pointsize>9</pointsize>
+  <pointsize>6</pointsize>
 </font>
 </property>
 <property name="checkable">
@@ -340,7 +352,7 @@
 <property name="font">
 <font>
 <family>DejaVu Sans Mono</family>
-<pointsize>9</pointsize>
+  <pointsize>6</pointsize>
 </font>
 </property>
 <property name="checkable">
@@ -419,7 +431,7 @@
 <property name="font">
 <font>
 <family>DejaVu Sans Mono</family>
-<pointsize>10</pointsize>
+  <pointsize>7</pointsize>
 </font>
 </property>
 <property name="toolTip">
@@ -501,6 +513,12 @@
 <iconset>
 <normaloff>:/off.png</normaloff>:/off.png</iconset>
 </property>
+<property name="font">
+ <font>
+  <family>DejaVu Sans</family>
+  <pointsize>8</pointsize>
+ </font>
+</property>
 </widget>
 <widget class="ATCMlabel" name="atcmLabel_PLC_Encoder">
 <property name="enabled">
@@ -517,7 +535,7 @@
 <property name="font">
 <font>
 <family>DejaVu Sans Mono</family>
-<pointsize>10</pointsize>
+  <pointsize>7</pointsize>
 <weight>75</weight>
 <bold>true</bold>
 </font>
@@ -585,7 +603,7 @@
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>10</pointsize>
+  <pointsize>7</pointsize>
 <weight>50</weight>
 <bold>false</bold>
 </font>
@@ -612,6 +630,12 @@
 <property name="orientation">
 <enum>Qt::Horizontal</enum>
 </property>
+<property name="font">
+ <font>
+  <family>DejaVu Sans</family>
+  <pointsize>8</pointsize>
+ </font>
+</property>
 </widget>
 <widget class="QLabel" name="label_PLC_DigIn_8">
 <property name="geometry">
@@ -625,7 +649,7 @@
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>13</pointsize>
+  <pointsize>9</pointsize>
 </font>
 </property>
 <property name="styleSheet">
@@ -650,6 +674,12 @@
 <property name="orientation">
 <enum>Qt::Vertical</enum>
 </property>
+<property name="font">
+ <font>
+  <family>DejaVu Sans</family>
+  <pointsize>8</pointsize>
+ </font>
+</property>
 </widget>
 <widget class="ATCMbutton" name="atcmButton_PLC_DigOut_8">
 <property name="geometry">
@@ -663,7 +693,7 @@
 <property name="font">
 <font>
 <family>DejaVu Sans Mono</family>
-<pointsize>9</pointsize>
+  <pointsize>6</pointsize>
 </font>
 </property>
 <property name="checkable">
@@ -758,6 +788,12 @@
 <iconset>
 <normaloff>:/off.png</normaloff>:/off.png</iconset>
 </property>
+<property name="font">
+ <font>
+  <family>DejaVu Sans</family>
+  <pointsize>8</pointsize>
+ </font>
+</property>
 </widget>
 <widget class="ATCMbutton" name="atcmButton_PLC_DigDir_7">
 <property name="geometry">
@@ -771,7 +807,7 @@
 <property name="font">
 <font>
 <family>DejaVu Sans Mono</family>
-<pointsize>9</pointsize>
+  <pointsize>6</pointsize>
 </font>
 </property>
 <property name="checkable">
@@ -850,7 +886,7 @@
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>13</pointsize>
+  <pointsize>9</pointsize>
 </font>
 </property>
 <property name="styleSheet">
@@ -878,7 +914,7 @@
 <property name="font">
 <font>
 <family>DejaVu Sans Mono</family>
-<pointsize>10</pointsize>
+  <pointsize>7</pointsize>
 <weight>50</weight>
 <bold>false</bold>
 </font>
@@ -949,7 +985,7 @@
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>13</pointsize>
+  <pointsize>9</pointsize>
 </font>
 </property>
 <property name="styleSheet">
@@ -997,6 +1033,12 @@
 <iconset>
 <normaloff>:/off.png</normaloff>:/off.png</iconset>
 </property>
+<property name="font">
+ <font>
+  <family>DejaVu Sans</family>
+  <pointsize>8</pointsize>
+ </font>
+</property>
 </widget>
 <widget class="ATCMbutton" name="atcmButton_PLC_DigOut_6">
 <property name="geometry">
@@ -1010,7 +1052,7 @@
 <property name="font">
 <font>
 <family>DejaVu Sans Mono</family>
-<pointsize>9</pointsize>
+  <pointsize>6</pointsize>
 </font>
 </property>
 <property name="checkable">
@@ -1105,6 +1147,12 @@
 <iconset>
 <normaloff>:/off.png</normaloff>:/off.png</iconset>
 </property>
+<property name="font">
+ <font>
+  <family>DejaVu Sans</family>
+  <pointsize>8</pointsize>
+ </font>
+</property>
 </widget>
 <widget class="ATCMbutton" name="atcmButton_PLC_DigOut_1">
 <property name="geometry">
@@ -1118,7 +1166,7 @@
 <property name="font">
 <font>
 <family>DejaVu Sans Mono</family>
-<pointsize>9</pointsize>
+  <pointsize>6</pointsize>
 </font>
 </property>
 <property name="checkable">
@@ -1190,7 +1238,7 @@
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>13</pointsize>
+  <pointsize>9</pointsize>
 </font>
 </property>
 <property name="styleSheet">
@@ -1215,7 +1263,7 @@
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>13</pointsize>
+  <pointsize>9</pointsize>
 </font>
 </property>
 <property name="toolTip">
@@ -1284,6 +1332,7 @@
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
+  <pointsize>8</pointsize>
 </font>
 </property>
 <property name="toolTip">
@@ -1394,7 +1443,7 @@
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>13</pointsize>
+  <pointsize>9</pointsize>
 </font>
 </property>
 <property name="styleSheet">
@@ -1422,7 +1471,7 @@
 <property name="font">
 <font>
 <family>DejaVu Sans Mono</family>
-<pointsize>13</pointsize>
+  <pointsize>9</pointsize>
 </font>
 </property>
 <property name="text">
@@ -1488,7 +1537,7 @@
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>13</pointsize>
+  <pointsize>9</pointsize>
 <weight>50</weight>
 <bold>false</bold>
 </font>
@@ -1515,7 +1564,7 @@
 <property name="font">
 <font>
 <family>DejaVu Sans Mono</family>
-<pointsize>9</pointsize>
+  <pointsize>6</pointsize>
 </font>
 </property>
 <property name="checkable">
@@ -1597,7 +1646,7 @@
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>13</pointsize>
+  <pointsize>9</pointsize>
 </font>
 </property>
 <property name="styleSheet">
@@ -1645,6 +1694,12 @@
 <iconset>
 <normaloff>:/off.png</normaloff>:/off.png</iconset>
 </property>
+<property name="font">
+ <font>
+  <family>DejaVu Sans</family>
+  <pointsize>8</pointsize>
+ </font>
+</property>
 </widget>
 <widget class="Line" name="line_hr_3">
 <property name="geometry">
@@ -1657,6 +1712,12 @@
 </property>
 <property name="orientation">
 <enum>Qt::Horizontal</enum>
+</property>
+<property name="font">
+ <font>
+  <family>DejaVu Sans</family>
+  <pointsize>8</pointsize>
+ </font>
 </property>
 </widget>
 <widget class="ATCMbutton" name="atcmButton_PLC_DigDir_6">
@@ -1671,7 +1732,7 @@
 <property name="font">
 <font>
 <family>DejaVu Sans Mono</family>
-<pointsize>9</pointsize>
+  <pointsize>6</pointsize>
 </font>
 </property>
 <property name="checkable">
@@ -1750,7 +1811,7 @@
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>13</pointsize>
+  <pointsize>9</pointsize>
 </font>
 </property>
 <property name="checkable">
@@ -1828,7 +1889,7 @@
 <property name="font">
 <font>
 <family>DejaVu Sans Mono</family>
-<pointsize>13</pointsize>
+  <pointsize>9</pointsize>
 <weight>50</weight>
 <bold>false</bold>
 </font>
@@ -1893,7 +1954,7 @@
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>13</pointsize>
+  <pointsize>9</pointsize>
 <weight>75</weight>
 <bold>true</bold>
 </font>
@@ -1920,7 +1981,7 @@
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>13</pointsize>
+  <pointsize>9</pointsize>
 </font>
 </property>
 <property name="styleSheet">
@@ -1945,7 +2006,7 @@
 <property name="font">
 <font>
 <family>DejaVu Sans Mono</family>
-<pointsize>10</pointsize>
+  <pointsize>7</pointsize>
 </font>
 </property>
 <property name="toolTip">
@@ -1983,7 +2044,7 @@
 <property name="font">
 <font>
 <family>DejaVu Sans Mono</family>
-<pointsize>13</pointsize>
+  <pointsize>9</pointsize>
 <weight>75</weight>
 <bold>true</bold>
 </font>
@@ -2051,7 +2112,7 @@
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>13</pointsize>
+  <pointsize>9</pointsize>
 </font>
 </property>
 <property name="styleSheet">
@@ -2076,7 +2137,7 @@
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>13</pointsize>
+  <pointsize>9</pointsize>
 <weight>50</weight>
 <bold>false</bold>
 </font>
@@ -2103,7 +2164,7 @@
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>13</pointsize>
+  <pointsize>9</pointsize>
 </font>
 </property>
 <property name="styleSheet">
@@ -2151,6 +2212,12 @@
 <iconset>
 <normaloff>:/off.png</normaloff>:/off.png</iconset>
 </property>
+<property name="font">
+ <font>
+  <family>DejaVu Sans</family>
+  <pointsize>8</pointsize>
+ </font>
+</property>
 </widget>
 <widget class="ATCMbutton" name="atcmButton_PLC_DigDir_8">
 <property name="geometry">
@@ -2164,7 +2231,7 @@
 <property name="font">
 <font>
 <family>DejaVu Sans Mono</family>
-<pointsize>9</pointsize>
+  <pointsize>6</pointsize>
 </font>
 </property>
 <property name="checkable">
@@ -2243,7 +2310,7 @@
 <property name="font">
 <font>
 <family>DejaVu Sans Mono</family>
-<pointsize>9</pointsize>
+  <pointsize>6</pointsize>
 </font>
 </property>
 <property name="checkable">
@@ -2315,7 +2382,7 @@
 <property name="font">
 <font>
 <family>DejaVu Sans Mono</family>
-<pointsize>9</pointsize>
+  <pointsize>6</pointsize>
 </font>
 </property>
 <property name="checkable">
@@ -2387,7 +2454,7 @@
 <property name="font">
 <font>
 <family>DejaVu Sans Mono</family>
-<pointsize>10</pointsize>
+  <pointsize>7</pointsize>
 </font>
 </property>
 <property name="toolTip">
@@ -2448,6 +2515,12 @@
 <iconset>
 <normaloff>:/off.png</normaloff>:/off.png</iconset>
 </property>
+<property name="font">
+ <font>
+  <family>DejaVu Sans</family>
+  <pointsize>8</pointsize>
+ </font>
+</property>
 </widget>
 <widget class="Line" name="line_vt_2">
 <property name="geometry">
@@ -2460,6 +2533,12 @@
 </property>
 <property name="orientation">
 <enum>Qt::Vertical</enum>
+</property>
+<property name="font">
+ <font>
+  <family>DejaVu Sans</family>
+  <pointsize>8</pointsize>
+ </font>
 </property>
 </widget>
 <widget class="ATCMled" name="atcmLed_PLC_DigIn_7">
@@ -2497,6 +2576,12 @@
 <iconset>
 <normaloff>:/off.png</normaloff>:/off.png</iconset>
 </property>
+<property name="font">
+ <font>
+  <family>DejaVu Sans</family>
+  <pointsize>8</pointsize>
+ </font>
+</property>
 </widget>
 <widget class="ATCMbutton" name="atcmButton_PLC_DigOut_5">
 <property name="geometry">
@@ -2510,7 +2595,7 @@
 <property name="font">
 <font>
 <family>DejaVu Sans Mono</family>
-<pointsize>9</pointsize>
+  <pointsize>6</pointsize>
 </font>
 </property>
 <property name="checkable">
@@ -2582,7 +2667,7 @@
 <property name="font">
 <font>
 <family>DejaVu Sans Mono</family>
-<pointsize>13</pointsize>
+  <pointsize>9</pointsize>
 <weight>75</weight>
 <bold>true</bold>
 </font>
@@ -2653,7 +2738,7 @@
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>13</pointsize>
+  <pointsize>9</pointsize>
 </font>
 </property>
 <property name="styleSheet">
@@ -2678,7 +2763,7 @@
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>13</pointsize>
+  <pointsize>9</pointsize>
 <weight>50</weight>
 <bold>false</bold>
 </font>
@@ -2705,7 +2790,7 @@
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>10</pointsize>
+  <pointsize>7</pointsize>
 <weight>50</weight>
 <bold>false</bold>
 </font>
@@ -2773,7 +2858,7 @@
 <property name="font">
 <font>
 <family>DejaVu Sans Mono</family>
-<pointsize>9</pointsize>
+  <pointsize>6</pointsize>
 </font>
 </property>
 <property name="checkable">
@@ -2845,6 +2930,12 @@
 <property name="orientation">
 <enum>Qt::Vertical</enum>
 </property>
+<property name="font">
+ <font>
+  <family>DejaVu Sans</family>
+  <pointsize>8</pointsize>
+ </font>
+</property>
 </widget>
 <widget class="QLabel" name="label_Qt_Project">
 <property name="geometry">
@@ -2858,7 +2949,7 @@
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>10</pointsize>
+  <pointsize>7</pointsize>
 </font>
 </property>
 <property name="styleSheet">
@@ -2882,6 +2973,12 @@
 </property>
 <property name="orientation">
 <enum>Qt::Horizontal</enum>
+</property>
+<property name="font">
+ <font>
+  <family>DejaVu Sans</family>
+  <pointsize>8</pointsize>
+ </font>
 </property>
 </widget>
 <widget class="ATCMled" name="atcmLed_PLC_DigIn_9">
@@ -2919,6 +3016,12 @@
 <iconset>
 <normaloff>:/off.png</normaloff>:/off.png</iconset>
 </property>
+<property name="font">
+ <font>
+  <family>DejaVu Sans</family>
+  <pointsize>8</pointsize>
+ </font>
+</property>
 </widget>
 <widget class="ATCMcombobox" name="atcmComboBox_PLC_AnInConf_2">
 <property name="geometry">
@@ -2932,7 +3035,7 @@
 <property name="font">
 <font>
 <family>DejaVu Sans Mono</family>
-<pointsize>10</pointsize>
+  <pointsize>7</pointsize>
 </font>
 </property>
 <property name="toolTip">
@@ -2991,7 +3094,7 @@
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>13</pointsize>
+  <pointsize>9</pointsize>
 </font>
 </property>
 <property name="styleSheet">
@@ -3039,6 +3142,12 @@
 <iconset>
 <normaloff>:/off.png</normaloff>:/off.png</iconset>
 </property>
+<property name="font">
+ <font>
+  <family>DejaVu Sans</family>
+  <pointsize>8</pointsize>
+ </font>
+</property>
 </widget>
 <widget class="ATCMbutton" name="atcmButton_PLC_DigDir_1">
 <property name="geometry">
@@ -3052,7 +3161,7 @@
 <property name="font">
 <font>
 <family>DejaVu Sans Mono</family>
-<pointsize>9</pointsize>
+  <pointsize>6</pointsize>
 </font>
 </property>
 <property name="checkable">
@@ -3131,7 +3240,7 @@
 <property name="font">
 <font>
 <family>DejaVu Sans Mono</family>
-<pointsize>9</pointsize>
+  <pointsize>6</pointsize>
 </font>
 </property>
 <property name="checkable">
@@ -3210,7 +3319,7 @@
 <property name="font">
 <font>
 <family>DejaVu Sans Mono</family>
-<pointsize>10</pointsize>
+  <pointsize>7</pointsize>
 </font>
 </property>
 <property name="toolTip">
@@ -3269,7 +3378,7 @@
 <property name="font">
 <font>
 <family>DejaVu Sans Mono</family>
-<pointsize>9</pointsize>
+  <pointsize>6</pointsize>
 </font>
 </property>
 <property name="checkable">
@@ -3436,14 +3545,14 @@
 </customwidget>
 </customwidgets>
 <resources/>
- <connections>
-  <connection>
-   <sender>atcmButton_menu</sender>
-   <signal>newPage(const char*,bool)</signal>
-   <receiver>page100</receiver>
-   <slot>goto_page(const char*,bool)</slot>
-  </connection>
- </connections>
+<connections>
+<connection>
+<sender>atcmButton_menu</sender>
+<signal>newPage(const char*,bool)</signal>
+<receiver>page100</receiver>
+<slot>goto_page(const char*,bool)</slot>
+</connection>
+</connections>
 <slots>
 <slot>goto_page(const char*,bool)</slot>
 </slots>

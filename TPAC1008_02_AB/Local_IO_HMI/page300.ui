@@ -43,7 +43,7 @@ background-color: rgb(170, 170, 255);
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>13</pointsize>
+  <pointsize>9</pointsize>
 </font>
 </property>
 <property name="styleSheet">
@@ -68,7 +68,7 @@ background-color: rgb(170, 170, 255);
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>11</pointsize>
+  <pointsize>8</pointsize>
 </font>
 </property>
 <property name="toolTip">
@@ -103,7 +103,7 @@ background-color: rgb(170, 170, 255);
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>10</pointsize>
+  <pointsize>7</pointsize>
 </font>
 </property>
 <property name="styleSheet">
@@ -128,7 +128,7 @@ background-color: rgb(170, 170, 255);
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>11</pointsize>
+  <pointsize>8</pointsize>
 <weight>50</weight>
 <bold>false</bold>
 </font>
@@ -205,10 +205,10 @@ background-color: rgb(170, 170, 255);
 <string/>
 </property>
 <property name="font">
- <font>
-  <family>DejaVu Sans</family>
-  <pointsize>8</pointsize>
- </font>
+<font>
+<family>DejaVu Sans</family>
+  <pointsize>6</pointsize>
+</font>
 </property>
 </widget>
 <widget class="ATCMbutton" name="atcmButton_6">
@@ -223,7 +223,7 @@ background-color: rgb(170, 170, 255);
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>11</pointsize>
+  <pointsize>8</pointsize>
 <weight>50</weight>
 <bold>false</bold>
 </font>
@@ -291,7 +291,7 @@ background-color: rgb(170, 170, 255);
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>11</pointsize>
+  <pointsize>8</pointsize>
 </font>
 </property>
 <property name="toolTip">
@@ -326,7 +326,7 @@ background-color: rgb(170, 170, 255);
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>10</pointsize>
+  <pointsize>7</pointsize>
 </font>
 </property>
 <property name="toolTip">
@@ -380,10 +380,10 @@ background-color: rgb(170, 170, 255);
 <enum>Qt::Horizontal</enum>
 </property>
 <property name="font">
- <font>
-  <family>DejaVu Sans</family>
-  <pointsize>8</pointsize>
- </font>
+<font>
+<family>DejaVu Sans</family>
+  <pointsize>6</pointsize>
+</font>
 </property>
 </widget>
 <widget class="ATCMgraph" name="atcmGraph">
@@ -398,7 +398,7 @@ background-color: rgb(170, 170, 255);
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-  <pointsize>8</pointsize>
+  <pointsize>6</pointsize>
 </font>
 </property>
 <property name="toolTip">
@@ -499,7 +499,7 @@ background-color: rgb(170, 170, 255);
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-  <pointsize>8</pointsize>
+  <pointsize>6</pointsize>
 </font>
 </property>
 <property name="toolTip">
@@ -650,10 +650,10 @@ background-color: rgb(170, 170, 255);
 <enum>QFrame::Raised</enum>
 </property>
 <property name="font">
- <font>
-  <family>DejaVu Sans</family>
-  <pointsize>8</pointsize>
- </font>
+<font>
+<family>DejaVu Sans</family>
+  <pointsize>6</pointsize>
+</font>
 </property>
 </widget>
 <widget class="ATCMgraph" name="atcmGraph_3">
@@ -668,7 +668,7 @@ background-color: rgb(170, 170, 255);
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-  <pointsize>8</pointsize>
+  <pointsize>6</pointsize>
 </font>
 </property>
 <property name="toolTip">
@@ -776,10 +776,10 @@ background-color: rgb(170, 170, 255);
 <enum>Qt::Horizontal</enum>
 </property>
 <property name="font">
- <font>
-  <family>DejaVu Sans</family>
-  <pointsize>8</pointsize>
- </font>
+<font>
+<family>DejaVu Sans</family>
+  <pointsize>6</pointsize>
+</font>
 </property>
 </widget>
 <widget class="QLabel" name="label_PLC_DigIn_2">
@@ -794,7 +794,7 @@ background-color: rgb(170, 170, 255);
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>13</pointsize>
+  <pointsize>9</pointsize>
 </font>
 </property>
 <property name="styleSheet">
@@ -843,10 +843,10 @@ background-color: rgb(170, 170, 255);
 <normaloff>:/off.png</normaloff>:/off.png</iconset>
 </property>
 <property name="font">
- <font>
-  <family>DejaVu Sans</family>
-  <pointsize>8</pointsize>
- </font>
+<font>
+<family>DejaVu Sans</family>
+  <pointsize>6</pointsize>
+</font>
 </property>
 </widget>
 <widget class="ATCMled" name="atcmLed_PLC_DigOut_12">
@@ -885,10 +885,10 @@ background-color: rgb(170, 170, 255);
 <normaloff>:/off.png</normaloff>:/off.png</iconset>
 </property>
 <property name="font">
- <font>
-  <family>DejaVu Sans</family>
-  <pointsize>8</pointsize>
- </font>
+<font>
+<family>DejaVu Sans</family>
+  <pointsize>6</pointsize>
+</font>
 </property>
 </widget>
 <widget class="ATCMled" name="atcmLed_PLC_DigIn_8">
@@ -927,10 +927,10 @@ background-color: rgb(170, 170, 255);
 <normaloff>:/off.png</normaloff>:/off.png</iconset>
 </property>
 <property name="font">
- <font>
-  <family>DejaVu Sans</family>
-  <pointsize>8</pointsize>
- </font>
+<font>
+<family>DejaVu Sans</family>
+  <pointsize>6</pointsize>
+</font>
 </property>
 </widget>
 <widget class="ATCMled" name="atcmLed_PLC_DigIn_3">
@@ -969,10 +969,10 @@ background-color: rgb(170, 170, 255);
 <normaloff>:/off.png</normaloff>:/off.png</iconset>
 </property>
 <property name="font">
- <font>
-  <family>DejaVu Sans</family>
-  <pointsize>8</pointsize>
- </font>
+<font>
+<family>DejaVu Sans</family>
+  <pointsize>6</pointsize>
+</font>
 </property>
 </widget>
 <widget class="QLabel" name="label_PLC_DigIn_4">
@@ -987,7 +987,7 @@ background-color: rgb(170, 170, 255);
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>13</pointsize>
+  <pointsize>9</pointsize>
 </font>
 </property>
 <property name="styleSheet">
@@ -1036,10 +1036,10 @@ background-color: rgb(170, 170, 255);
 <normaloff>:/off.png</normaloff>:/off.png</iconset>
 </property>
 <property name="font">
- <font>
-  <family>DejaVu Sans</family>
-  <pointsize>8</pointsize>
- </font>
+<font>
+<family>DejaVu Sans</family>
+  <pointsize>6</pointsize>
+</font>
 </property>
 </widget>
 <widget class="ATCMled" name="atcmLed_PLC_DigIn_6">
@@ -1078,10 +1078,10 @@ background-color: rgb(170, 170, 255);
 <normaloff>:/off.png</normaloff>:/off.png</iconset>
 </property>
 <property name="font">
- <font>
-  <family>DejaVu Sans</family>
-  <pointsize>8</pointsize>
- </font>
+<font>
+<family>DejaVu Sans</family>
+  <pointsize>6</pointsize>
+</font>
 </property>
 </widget>
 <widget class="QLabel" name="label_PLC_DigIn_10">
@@ -1096,7 +1096,7 @@ background-color: rgb(170, 170, 255);
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>13</pointsize>
+  <pointsize>9</pointsize>
 </font>
 </property>
 <property name="styleSheet">
@@ -1121,7 +1121,7 @@ background-color: rgb(170, 170, 255);
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>13</pointsize>
+  <pointsize>9</pointsize>
 </font>
 </property>
 <property name="styleSheet">
@@ -1170,10 +1170,10 @@ background-color: rgb(170, 170, 255);
 <normaloff>:/off.png</normaloff>:/off.png</iconset>
 </property>
 <property name="font">
- <font>
-  <family>DejaVu Sans</family>
-  <pointsize>8</pointsize>
- </font>
+<font>
+<family>DejaVu Sans</family>
+  <pointsize>6</pointsize>
+</font>
 </property>
 </widget>
 <widget class="ATCMled" name="atcmLed_PLC_DigOut_2">
@@ -1212,10 +1212,10 @@ background-color: rgb(170, 170, 255);
 <normaloff>:/off.png</normaloff>:/off.png</iconset>
 </property>
 <property name="font">
- <font>
-  <family>DejaVu Sans</family>
-  <pointsize>8</pointsize>
- </font>
+<font>
+<family>DejaVu Sans</family>
+  <pointsize>6</pointsize>
+</font>
 </property>
 </widget>
 <widget class="ATCMled" name="atcmLed_PLC_DigIn_2">
@@ -1254,10 +1254,10 @@ background-color: rgb(170, 170, 255);
 <normaloff>:/off.png</normaloff>:/off.png</iconset>
 </property>
 <property name="font">
- <font>
-  <family>DejaVu Sans</family>
-  <pointsize>8</pointsize>
- </font>
+<font>
+<family>DejaVu Sans</family>
+  <pointsize>6</pointsize>
+</font>
 </property>
 </widget>
 <widget class="QLabel" name="label_PLC_DigIn_9">
@@ -1272,7 +1272,7 @@ background-color: rgb(170, 170, 255);
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>13</pointsize>
+  <pointsize>9</pointsize>
 </font>
 </property>
 <property name="styleSheet">
@@ -1321,10 +1321,10 @@ background-color: rgb(170, 170, 255);
 <normaloff>:/off.png</normaloff>:/off.png</iconset>
 </property>
 <property name="font">
- <font>
-  <family>DejaVu Sans</family>
-  <pointsize>8</pointsize>
- </font>
+<font>
+<family>DejaVu Sans</family>
+  <pointsize>6</pointsize>
+</font>
 </property>
 </widget>
 <widget class="QLabel" name="label_RTU_AnIn_17">
@@ -1339,7 +1339,7 @@ background-color: rgb(170, 170, 255);
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>12</pointsize>
+  <pointsize>9</pointsize>
 </font>
 </property>
 <property name="styleSheet">
@@ -1364,7 +1364,7 @@ background-color: rgb(170, 170, 255);
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>13</pointsize>
+  <pointsize>9</pointsize>
 </font>
 </property>
 <property name="styleSheet">
@@ -1389,7 +1389,7 @@ background-color: rgb(170, 170, 255);
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>13</pointsize>
+  <pointsize>9</pointsize>
 </font>
 </property>
 <property name="styleSheet">
@@ -1438,10 +1438,10 @@ background-color: rgb(170, 170, 255);
 <normaloff>:/off.png</normaloff>:/off.png</iconset>
 </property>
 <property name="font">
- <font>
-  <family>DejaVu Sans</family>
-  <pointsize>8</pointsize>
- </font>
+<font>
+<family>DejaVu Sans</family>
+  <pointsize>6</pointsize>
+</font>
 </property>
 </widget>
 <widget class="ATCMled" name="atcmLed_PLC_DigOut_7">
@@ -1480,10 +1480,10 @@ background-color: rgb(170, 170, 255);
 <normaloff>:/off.png</normaloff>:/off.png</iconset>
 </property>
 <property name="font">
- <font>
-  <family>DejaVu Sans</family>
-  <pointsize>8</pointsize>
- </font>
+<font>
+<family>DejaVu Sans</family>
+  <pointsize>6</pointsize>
+</font>
 </property>
 </widget>
 <widget class="ATCMled" name="atcmLed_PLC_DigOut_6">
@@ -1522,10 +1522,10 @@ background-color: rgb(170, 170, 255);
 <normaloff>:/off.png</normaloff>:/off.png</iconset>
 </property>
 <property name="font">
- <font>
-  <family>DejaVu Sans</family>
-  <pointsize>8</pointsize>
- </font>
+<font>
+<family>DejaVu Sans</family>
+  <pointsize>6</pointsize>
+</font>
 </property>
 </widget>
 <widget class="QLabel" name="label_PLC_DigIn_3">
@@ -1540,7 +1540,7 @@ background-color: rgb(170, 170, 255);
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>13</pointsize>
+  <pointsize>9</pointsize>
 </font>
 </property>
 <property name="styleSheet">
@@ -1589,10 +1589,10 @@ background-color: rgb(170, 170, 255);
 <normaloff>:/off.png</normaloff>:/off.png</iconset>
 </property>
 <property name="font">
- <font>
-  <family>DejaVu Sans</family>
-  <pointsize>8</pointsize>
- </font>
+<font>
+<family>DejaVu Sans</family>
+  <pointsize>6</pointsize>
+</font>
 </property>
 </widget>
 <widget class="ATCMled" name="atcmLed_PLC_DigIn_4">
@@ -1631,10 +1631,10 @@ background-color: rgb(170, 170, 255);
 <normaloff>:/off.png</normaloff>:/off.png</iconset>
 </property>
 <property name="font">
- <font>
-  <family>DejaVu Sans</family>
-  <pointsize>8</pointsize>
- </font>
+<font>
+<family>DejaVu Sans</family>
+  <pointsize>6</pointsize>
+</font>
 </property>
 </widget>
 <widget class="ATCMled" name="atcmLed_PLC_DigIn_5">
@@ -1673,10 +1673,10 @@ background-color: rgb(170, 170, 255);
 <normaloff>:/off.png</normaloff>:/off.png</iconset>
 </property>
 <property name="font">
- <font>
-  <family>DejaVu Sans</family>
-  <pointsize>8</pointsize>
- </font>
+<font>
+<family>DejaVu Sans</family>
+  <pointsize>6</pointsize>
+</font>
 </property>
 </widget>
 <widget class="QLabel" name="label_PLC_DigIn_1">
@@ -1691,7 +1691,7 @@ background-color: rgb(170, 170, 255);
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>13</pointsize>
+  <pointsize>9</pointsize>
 </font>
 </property>
 <property name="styleSheet">
@@ -1716,7 +1716,7 @@ background-color: rgb(170, 170, 255);
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>12</pointsize>
+  <pointsize>9</pointsize>
 </font>
 </property>
 <property name="styleSheet">
@@ -1765,10 +1765,10 @@ background-color: rgb(170, 170, 255);
 <normaloff>:/off.png</normaloff>:/off.png</iconset>
 </property>
 <property name="font">
- <font>
-  <family>DejaVu Sans</family>
-  <pointsize>8</pointsize>
- </font>
+<font>
+<family>DejaVu Sans</family>
+  <pointsize>6</pointsize>
+</font>
 </property>
 </widget>
 <widget class="QLabel" name="label_PLC_DigIn_5">
@@ -1783,7 +1783,7 @@ background-color: rgb(170, 170, 255);
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>13</pointsize>
+  <pointsize>9</pointsize>
 </font>
 </property>
 <property name="styleSheet">
@@ -1832,10 +1832,10 @@ background-color: rgb(170, 170, 255);
 <normaloff>:/off.png</normaloff>:/off.png</iconset>
 </property>
 <property name="font">
- <font>
-  <family>DejaVu Sans</family>
-  <pointsize>8</pointsize>
- </font>
+<font>
+<family>DejaVu Sans</family>
+  <pointsize>6</pointsize>
+</font>
 </property>
 </widget>
 <widget class="ATCMled" name="atcmLed_PLC_DigOut_5">
@@ -1874,10 +1874,10 @@ background-color: rgb(170, 170, 255);
 <normaloff>:/off.png</normaloff>:/off.png</iconset>
 </property>
 <property name="font">
- <font>
-  <family>DejaVu Sans</family>
-  <pointsize>8</pointsize>
- </font>
+<font>
+<family>DejaVu Sans</family>
+  <pointsize>6</pointsize>
+</font>
 </property>
 </widget>
 <widget class="ATCMled" name="atcmLed_PLC_DigOut_1">
@@ -1916,10 +1916,10 @@ background-color: rgb(170, 170, 255);
 <normaloff>:/off.png</normaloff>:/off.png</iconset>
 </property>
 <property name="font">
- <font>
-  <family>DejaVu Sans</family>
-  <pointsize>8</pointsize>
- </font>
+<font>
+<family>DejaVu Sans</family>
+  <pointsize>6</pointsize>
+</font>
 </property>
 </widget>
 <widget class="QLabel" name="label_PLC_DigIn_7">
@@ -1934,7 +1934,7 @@ background-color: rgb(170, 170, 255);
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>13</pointsize>
+  <pointsize>9</pointsize>
 </font>
 </property>
 <property name="styleSheet">
@@ -1959,7 +1959,7 @@ background-color: rgb(170, 170, 255);
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>13</pointsize>
+  <pointsize>9</pointsize>
 </font>
 </property>
 <property name="styleSheet">

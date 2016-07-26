@@ -43,6 +43,12 @@ background-color: rgb(255, 255, 127);
 <property name="orientation">
 <enum>Qt::Horizontal</enum>
 </property>
+<property name="font">
+ <font>
+  <family>DejaVu Sans</family>
+  <pointsize>8</pointsize>
+ </font>
+</property>
 </widget>
 <widget class="QLabel" name="label_Start_3">
 <property name="geometry">
@@ -56,7 +62,7 @@ background-color: rgb(255, 255, 127);
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>10</pointsize>
+  <pointsize>7</pointsize>
 </font>
 </property>
 <property name="styleSheet">
@@ -84,7 +90,7 @@ background-color: rgb(255, 255, 127);
 <property name="font">
 <font>
 <family>DejaVu Sans Mono</family>
-<pointsize>12</pointsize>
+  <pointsize>9</pointsize>
 </font>
 </property>
 <property name="text">
@@ -191,6 +197,12 @@ background-color: rgb(255, 255, 127);
 <property name="borderRadius">
 <number>0</number>
 </property>
+<property name="font">
+ <font>
+  <family>DejaVu Sans</family>
+  <pointsize>8</pointsize>
+ </font>
+</property>
 </widget>
 <widget class="Line" name="line_hr_1">
 <property name="geometry">
@@ -203,6 +215,12 @@ background-color: rgb(255, 255, 127);
 </property>
 <property name="orientation">
 <enum>Qt::Horizontal</enum>
+</property>
+<property name="font">
+ <font>
+  <family>DejaVu Sans</family>
+  <pointsize>8</pointsize>
+ </font>
 </property>
 </widget>
 <widget class="ATCMlabel" name="atcmLabel_RES_AnIn_1">
@@ -261,6 +279,12 @@ background-color: rgb(255, 255, 127);
 <property name="borderRadius">
 <number>0</number>
 </property>
+<property name="font">
+ <font>
+  <family>DejaVu Sans</family>
+  <pointsize>8</pointsize>
+ </font>
+</property>
 </widget>
 <widget class="QLabel" name="label_PLC_AnIn_">
 <property name="geometry">
@@ -274,7 +298,7 @@ background-color: rgb(255, 255, 127);
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>12</pointsize>
+  <pointsize>9</pointsize>
 </font>
 </property>
 <property name="styleSheet">
@@ -299,6 +323,12 @@ background-color: rgb(255, 255, 127);
 <property name="orientation">
 <enum>Qt::Vertical</enum>
 </property>
+<property name="font">
+ <font>
+  <family>DejaVu Sans</family>
+  <pointsize>8</pointsize>
+ </font>
+</property>
 </widget>
 <widget class="Line" name="line_hr_2">
 <property name="geometry">
@@ -311,6 +341,12 @@ background-color: rgb(255, 255, 127);
 </property>
 <property name="orientation">
 <enum>Qt::Horizontal</enum>
+</property>
+<property name="font">
+ <font>
+  <family>DejaVu Sans</family>
+  <pointsize>8</pointsize>
+ </font>
 </property>
 </widget>
 <widget class="QLabel" name="label_18">
@@ -325,7 +361,7 @@ background-color: rgb(255, 255, 127);
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>10</pointsize>
+  <pointsize>7</pointsize>
 </font>
 </property>
 <property name="styleSheet">
@@ -373,6 +409,12 @@ background-color: rgb(255, 255, 127);
 <iconset>
 <normaloff>:/off.png</normaloff>:/off.png</iconset>
 </property>
+<property name="font">
+ <font>
+  <family>DejaVu Sans</family>
+  <pointsize>8</pointsize>
+ </font>
+</property>
 </widget>
 <widget class="Line" name="line_vt_2">
 <property name="geometry">
@@ -385,6 +427,12 @@ background-color: rgb(255, 255, 127);
 </property>
 <property name="orientation">
 <enum>Qt::Vertical</enum>
+</property>
+<property name="font">
+ <font>
+  <family>DejaVu Sans</family>
+  <pointsize>8</pointsize>
+ </font>
 </property>
 </widget>
 <widget class="ATCMlabel" name="atcmLabel_PLC_AnIn_2">
@@ -443,6 +491,12 @@ background-color: rgb(255, 255, 127);
 <property name="borderRadius">
 <number>0</number>
 </property>
+<property name="font">
+ <font>
+  <family>DejaVu Sans</family>
+  <pointsize>8</pointsize>
+ </font>
+</property>
 </widget>
 <widget class="QLabel" name="label_VAL_AnInConf_">
 <property name="geometry">
@@ -456,7 +510,7 @@ background-color: rgb(255, 255, 127);
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>12</pointsize>
+  <pointsize>9</pointsize>
 </font>
 </property>
 <property name="styleSheet">
@@ -481,7 +535,7 @@ background-color: rgb(255, 255, 127);
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>10</pointsize>
+  <pointsize>7</pointsize>
 </font>
 </property>
 <property name="styleSheet">
@@ -506,7 +560,7 @@ background-color: rgb(255, 255, 127);
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>10</pointsize>
+  <pointsize>7</pointsize>
 </font>
 </property>
 <property name="toolTip">
@@ -559,6 +613,7 @@ background-color: rgb(255, 255, 127);
 <property name="font">
 <font>
 <family>DejaVu Sans Mono</family>
+  <pointsize>8</pointsize>
 </font>
 </property>
 <property name="toolTip">
@@ -637,6 +692,12 @@ background-color: rgb(255, 255, 127);
 <property name="borderRadius">
 <number>0</number>
 </property>
+<property name="font">
+ <font>
+  <family>DejaVu Sans</family>
+  <pointsize>8</pointsize>
+ </font>
+</property>
 </widget>
 <widget class="ATCManimation" name="atcmAnimation_TEST_STATUS">
 <property name="geometry">
@@ -668,6 +729,12 @@ background-color: rgb(255, 255, 127);
 <property name="visibilityVar">
 <string/>
 </property>
+<property name="font">
+ <font>
+  <family>DejaVu Sans</family>
+  <pointsize>8</pointsize>
+ </font>
+</property>
 </widget>
 <widget class="ATCMbutton" name="atcmButton_5">
 <property name="geometry">
@@ -681,7 +748,7 @@ background-color: rgb(255, 255, 127);
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>10</pointsize>
+  <pointsize>7</pointsize>
 <weight>50</weight>
 <bold>false</bold>
 </font>
@@ -749,6 +816,12 @@ background-color: rgb(255, 255, 127);
 <property name="orientation">
 <enum>Qt::Vertical</enum>
 </property>
+<property name="font">
+ <font>
+  <family>DejaVu Sans</family>
+  <pointsize>8</pointsize>
+ </font>
+</property>
 </widget>
 <widget class="QLabel" name="label_AnIn_1">
 <property name="geometry">
@@ -762,7 +835,7 @@ background-color: rgb(255, 255, 127);
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>13</pointsize>
+  <pointsize>9</pointsize>
 </font>
 </property>
 <property name="styleSheet">
@@ -831,6 +904,12 @@ background-color: rgb(255, 255, 127);
 <property name="borderRadius">
 <number>0</number>
 </property>
+<property name="font">
+ <font>
+  <family>DejaVu Sans</family>
+  <pointsize>8</pointsize>
+ </font>
+</property>
 </widget>
 <widget class="ATCMdate" name="atcmDate">
 <property name="geometry">
@@ -844,6 +923,7 @@ background-color: rgb(255, 255, 127);
 <property name="font">
 <font>
 <family>DejaVu Sans Mono</family>
+  <pointsize>8</pointsize>
 </font>
 </property>
 <property name="toolTip">
@@ -925,6 +1005,12 @@ background-color: rgb(255, 255, 127);
 <property name="borderRadius">
 <number>0</number>
 </property>
+<property name="font">
+ <font>
+  <family>DejaVu Sans</family>
+  <pointsize>8</pointsize>
+ </font>
+</property>
 </widget>
 <widget class="ATCMbutton" name="atcmButton_page402_2">
 <property name="geometry">
@@ -975,6 +1061,12 @@ background-color: rgb(255, 255, 127);
 <property name="apparence">
 <enum>QFrame::Raised</enum>
 </property>
+<property name="font">
+ <font>
+  <family>DejaVu Sans</family>
+  <pointsize>8</pointsize>
+ </font>
+</property>
 </widget>
 <widget class="QLabel" name="label_PLC_AnInConf_">
 <property name="geometry">
@@ -988,7 +1080,7 @@ background-color: rgb(255, 255, 127);
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>12</pointsize>
+  <pointsize>9</pointsize>
 </font>
 </property>
 <property name="styleSheet">
@@ -1013,7 +1105,7 @@ background-color: rgb(255, 255, 127);
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>12</pointsize>
+  <pointsize>9</pointsize>
 </font>
 </property>
 <property name="styleSheet">
@@ -1060,6 +1152,12 @@ background-color: rgb(255, 255, 127);
 <property name="offIcon">
 <iconset>
 <normaloff>:/off.png</normaloff>:/off.png</iconset>
+</property>
+<property name="font">
+ <font>
+  <family>DejaVu Sans</family>
+  <pointsize>8</pointsize>
+ </font>
 </property>
 </widget>
 <widget class="ATCMlabel" name="atcmLabel_VAL_AnInConf_1">
@@ -1118,6 +1216,12 @@ background-color: rgb(255, 255, 127);
 <property name="borderRadius">
 <number>0</number>
 </property>
+<property name="font">
+ <font>
+  <family>DejaVu Sans</family>
+  <pointsize>8</pointsize>
+ </font>
+</property>
 </widget>
 <widget class="QLabel" name="label_TST_AnIn_">
 <property name="geometry">
@@ -1131,7 +1235,7 @@ background-color: rgb(255, 255, 127);
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>12</pointsize>
+  <pointsize>9</pointsize>
 </font>
 </property>
 <property name="styleSheet">
@@ -1156,7 +1260,7 @@ background-color: rgb(255, 255, 127);
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>13</pointsize>
+  <pointsize>9</pointsize>
 </font>
 </property>
 <property name="styleSheet">
@@ -1224,6 +1328,12 @@ background-color: rgb(255, 255, 127);
 </property>
 <property name="borderRadius">
 <number>0</number>
+</property>
+<property name="font">
+ <font>
+  <family>DejaVu Sans</family>
+  <pointsize>8</pointsize>
+ </font>
 </property>
 </widget>
 <zorder>label_Start_3</zorder>
@@ -1298,20 +1408,20 @@ background-color: rgb(255, 255, 127);
 </customwidget>
 </customwidgets>
 <resources/>
- <connections>
-  <connection>
-   <sender>atcmButton_5</sender>
-   <signal>newPage(const char*,bool)</signal>
-   <receiver>page403</receiver>
-   <slot>goto_page(const char*,bool)</slot>
-  </connection>
-  <connection>
-   <sender>atcmButton_page402_2</sender>
-   <signal>newPage(const char*,bool)</signal>
-   <receiver>page403</receiver>
-   <slot>goto_page(const char*,bool)</slot>
-  </connection>
- </connections>
+<connections>
+<connection>
+<sender>atcmButton_5</sender>
+<signal>newPage(const char*,bool)</signal>
+<receiver>page403</receiver>
+<slot>goto_page(const char*,bool)</slot>
+</connection>
+<connection>
+<sender>atcmButton_page402_2</sender>
+<signal>newPage(const char*,bool)</signal>
+<receiver>page403</receiver>
+<slot>goto_page(const char*,bool)</slot>
+</connection>
+</connections>
 <slots>
 <slot>goto_page(const char*,bool)</slot>
 </slots>

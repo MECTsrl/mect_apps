@@ -43,6 +43,7 @@ background-color: rgb(255, 255, 127);
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
+  <pointsize>8</pointsize>
 </font>
 </property>
 <property name="checkable">
@@ -145,6 +146,12 @@ background-color: rgb(255, 255, 127);
 <property name="borderRadius">
 <number>0</number>
 </property>
+<property name="font">
+ <font>
+  <family>DejaVu Sans</family>
+  <pointsize>8</pointsize>
+ </font>
+</property>
 </widget>
 <widget class="Line" name="line_hr_10">
 <property name="geometry">
@@ -157,6 +164,12 @@ background-color: rgb(255, 255, 127);
 </property>
 <property name="orientation">
 <enum>Qt::Horizontal</enum>
+</property>
+<property name="font">
+ <font>
+  <family>DejaVu Sans</family>
+  <pointsize>8</pointsize>
+ </font>
 </property>
 </widget>
 <widget class="QLabel" name="label_RTU_AnIn_15">
@@ -171,7 +184,7 @@ background-color: rgb(255, 255, 127);
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>8</pointsize>
+  <pointsize>6</pointsize>
 </font>
 </property>
 <property name="styleSheet">
@@ -233,6 +246,12 @@ background-color: rgb(255, 255, 127);
 <property name="borderRadius">
 <number>0</number>
 </property>
+<property name="font">
+ <font>
+  <family>DejaVu Sans</family>
+  <pointsize>8</pointsize>
+ </font>
+</property>
 </widget>
 <widget class="QLabel" name="label_RTU_AnIn_18">
 <property name="geometry">
@@ -246,7 +265,7 @@ background-color: rgb(255, 255, 127);
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>8</pointsize>
+  <pointsize>6</pointsize>
 </font>
 </property>
 <property name="styleSheet">
@@ -271,7 +290,7 @@ background-color: rgb(255, 255, 127);
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>8</pointsize>
+  <pointsize>6</pointsize>
 </font>
 </property>
 <property name="toolTip">
@@ -324,7 +343,7 @@ background-color: rgb(255, 255, 127);
 <property name="font">
 <font>
 <family>DejaVu Sans Mono</family>
-<pointsize>12</pointsize>
+  <pointsize>9</pointsize>
 </font>
 </property>
 <property name="text">
@@ -387,6 +406,12 @@ background-color: rgb(255, 255, 127);
 <property name="orientation">
 <enum>Qt::Horizontal</enum>
 </property>
+<property name="font">
+ <font>
+  <family>DejaVu Sans</family>
+  <pointsize>8</pointsize>
+ </font>
+</property>
 </widget>
 <widget class="ATCMlabel" name="atcmLabel_10">
 <property name="enabled">
@@ -403,7 +428,7 @@ background-color: rgb(255, 255, 127);
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>7</pointsize>
+  <pointsize>5</pointsize>
 </font>
 </property>
 <property name="toolTip">
@@ -462,7 +487,7 @@ background-color: rgb(255, 255, 127);
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>7</pointsize>
+  <pointsize>5</pointsize>
 </font>
 </property>
 <property name="text">
@@ -521,6 +546,12 @@ background-color: rgb(255, 255, 127);
 <property name="orientation">
 <enum>Qt::Vertical</enum>
 </property>
+<property name="font">
+ <font>
+  <family>DejaVu Sans</family>
+  <pointsize>8</pointsize>
+ </font>
+</property>
 </widget>
 <widget class="Line" name="line_hr_3">
 <property name="geometry">
@@ -533,6 +564,12 @@ background-color: rgb(255, 255, 127);
 </property>
 <property name="orientation">
 <enum>Qt::Horizontal</enum>
+</property>
+<property name="font">
+ <font>
+  <family>DejaVu Sans</family>
+  <pointsize>8</pointsize>
+ </font>
 </property>
 </widget>
 <widget class="QLabel" name="label_Qt_Project_2">
@@ -547,7 +584,7 @@ background-color: rgb(255, 255, 127);
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>10</pointsize>
+  <pointsize>7</pointsize>
 <weight>75</weight>
 <bold>true</bold>
 </font>
@@ -574,6 +611,12 @@ background-color: rgb(255, 255, 127);
 <property name="orientation">
 <enum>Qt::Horizontal</enum>
 </property>
+<property name="font">
+ <font>
+  <family>DejaVu Sans</family>
+  <pointsize>8</pointsize>
+ </font>
+</property>
 </widget>
 <widget class="Line" name="line_3">
 <property name="geometry">
@@ -586,6 +629,12 @@ background-color: rgb(255, 255, 127);
 </property>
 <property name="orientation">
 <enum>Qt::Vertical</enum>
+</property>
+<property name="font">
+ <font>
+  <family>DejaVu Sans</family>
+  <pointsize>8</pointsize>
+ </font>
 </property>
 </widget>
 <widget class="ATCMlabel" name="atcmLabel_16">
@@ -637,6 +686,12 @@ background-color: rgb(255, 255, 127);
 <property name="borderRadius">
 <number>0</number>
 </property>
+<property name="font">
+ <font>
+  <family>DejaVu Sans</family>
+  <pointsize>8</pointsize>
+ </font>
+</property>
 </widget>
 <widget class="Line" name="line_4">
 <property name="geometry">
@@ -649,6 +704,12 @@ background-color: rgb(255, 255, 127);
 </property>
 <property name="orientation">
 <enum>Qt::Vertical</enum>
+</property>
+<property name="font">
+ <font>
+  <family>DejaVu Sans</family>
+  <pointsize>8</pointsize>
+ </font>
 </property>
 </widget>
 <widget class="ATCMbutton" name="atcmButton_menu_2">
@@ -663,7 +724,7 @@ background-color: rgb(255, 255, 127);
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>10</pointsize>
+  <pointsize>7</pointsize>
 <weight>50</weight>
 <bold>false</bold>
 </font>
@@ -768,6 +829,12 @@ background-color: rgb(255, 255, 127);
 <property name="borderRadius">
 <number>0</number>
 </property>
+<property name="font">
+ <font>
+  <family>DejaVu Sans</family>
+  <pointsize>8</pointsize>
+ </font>
+</property>
 </widget>
 <widget class="Line" name="line_hr_6">
 <property name="geometry">
@@ -780,6 +847,12 @@ background-color: rgb(255, 255, 127);
 </property>
 <property name="orientation">
 <enum>Qt::Horizontal</enum>
+</property>
+<property name="font">
+ <font>
+  <family>DejaVu Sans</family>
+  <pointsize>8</pointsize>
+ </font>
 </property>
 </widget>
 <widget class="QLabel" name="label_RTU_AnIn_19">
@@ -794,7 +867,7 @@ background-color: rgb(255, 255, 127);
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>8</pointsize>
+  <pointsize>6</pointsize>
 </font>
 </property>
 <property name="styleSheet">
@@ -822,7 +895,7 @@ background-color: rgb(255, 255, 127);
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>7</pointsize>
+  <pointsize>5</pointsize>
 </font>
 </property>
 <property name="text">
@@ -912,6 +985,12 @@ background-color: rgb(255, 255, 127);
 <property name="borderRadius">
 <number>0</number>
 </property>
+<property name="font">
+ <font>
+  <family>DejaVu Sans</family>
+  <pointsize>8</pointsize>
+ </font>
+</property>
 </widget>
 <widget class="QLabel" name="label_RTU_AnIn_16">
 <property name="geometry">
@@ -925,7 +1004,7 @@ background-color: rgb(255, 255, 127);
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>8</pointsize>
+  <pointsize>6</pointsize>
 </font>
 </property>
 <property name="styleSheet">
@@ -950,7 +1029,7 @@ background-color: rgb(255, 255, 127);
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>10</pointsize>
+  <pointsize>7</pointsize>
 </font>
 </property>
 <property name="styleSheet">
@@ -975,6 +1054,12 @@ background-color: rgb(255, 255, 127);
 <property name="orientation">
 <enum>Qt::Vertical</enum>
 </property>
+<property name="font">
+ <font>
+  <family>DejaVu Sans</family>
+  <pointsize>8</pointsize>
+ </font>
+</property>
 </widget>
 <widget class="QLabel" name="label_RTU_AnIn_10">
 <property name="geometry">
@@ -988,7 +1073,7 @@ background-color: rgb(255, 255, 127);
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>10</pointsize>
+  <pointsize>7</pointsize>
 <weight>75</weight>
 <bold>true</bold>
 </font>
@@ -1016,7 +1101,7 @@ NODE 20 [1]</string>
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>8</pointsize>
+  <pointsize>6</pointsize>
 </font>
 </property>
 <property name="toolTip">
@@ -1069,6 +1154,7 @@ NODE 20 [1]</string>
 <property name="font">
 <font>
 <family>DejaVu Sans Mono</family>
+  <pointsize>8</pointsize>
 </font>
 </property>
 <property name="toolTip">
@@ -1105,6 +1191,12 @@ NODE 20 [1]</string>
 </property>
 <property name="orientation">
 <enum>Qt::Horizontal</enum>
+</property>
+<property name="font">
+ <font>
+  <family>DejaVu Sans</family>
+  <pointsize>8</pointsize>
+ </font>
 </property>
 </widget>
 <widget class="ATCMbutton" name="atcmButton_16">
@@ -1153,6 +1245,12 @@ NODE 20 [1]</string>
 <property name="borderRadius">
 <number>0</number>
 </property>
+<property name="font">
+ <font>
+  <family>DejaVu Sans</family>
+  <pointsize>8</pointsize>
+ </font>
+</property>
 </widget>
 <widget class="ATCMcombobox" name="atcmComboBox_4">
 <property name="geometry">
@@ -1166,7 +1264,7 @@ NODE 20 [1]</string>
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>8</pointsize>
+  <pointsize>6</pointsize>
 </font>
 </property>
 <property name="toolTip">
@@ -1219,6 +1317,7 @@ NODE 20 [1]</string>
 <property name="font">
 <font>
 <family>DejaVu Sans Mono</family>
+  <pointsize>8</pointsize>
 </font>
 </property>
 <property name="toolTip">
@@ -1253,7 +1352,7 @@ NODE 20 [1]</string>
 <property name="font">
 <font>
 <family>DejaVu Sans</family>
-<pointsize>8</pointsize>
+  <pointsize>6</pointsize>
 </font>
 </property>
 <property name="styleSheet">
@@ -1277,6 +1376,12 @@ NODE 20 [1]</string>
 </property>
 <property name="orientation">
 <enum>Qt::Horizontal</enum>
+</property>
+<property name="font">
+ <font>
+  <family>DejaVu Sans</family>
+  <pointsize>8</pointsize>
+ </font>
 </property>
 </widget>
 <widget class="ATCMbutton" name="atcmButton">
@@ -1324,6 +1429,12 @@ NODE 20 [1]</string>
 </property>
 <property name="borderRadius">
 <number>20</number>
+</property>
+<property name="font">
+ <font>
+  <family>DejaVu Sans</family>
+  <pointsize>8</pointsize>
+ </font>
 </property>
 </widget>
 <zorder>atcmButton_2</zorder>
@@ -1392,32 +1503,32 @@ NODE 20 [1]</string>
 </customwidget>
 </customwidgets>
 <resources/>
- <connections>
-  <connection>
-   <sender>atcmButton_menu_2</sender>
-   <signal>newPage(const char*,bool)</signal>
-   <receiver>page101</receiver>
-   <slot>goto_page(const char*,bool)</slot>
-  </connection>
-  <connection>
-   <sender>atcmButton_17</sender>
-   <signal>newPage(const char*,bool)</signal>
-   <receiver>page101</receiver>
-   <slot>goto_page(const char*,bool)</slot>
-  </connection>
-  <connection>
-   <sender>atcmButton_16</sender>
-   <signal>newPage(const char*,bool)</signal>
-   <receiver>page101</receiver>
-   <slot>goto_page(const char*,bool)</slot>
-  </connection>
-  <connection>
-   <sender>atcmButton</sender>
-   <signal>newPage(const char*,bool)</signal>
-   <receiver>page101</receiver>
-   <slot>goto_page(const char*,bool)</slot>
-  </connection>
- </connections>
+<connections>
+<connection>
+<sender>atcmButton_menu_2</sender>
+<signal>newPage(const char*,bool)</signal>
+<receiver>page101</receiver>
+<slot>goto_page(const char*,bool)</slot>
+</connection>
+<connection>
+<sender>atcmButton_17</sender>
+<signal>newPage(const char*,bool)</signal>
+<receiver>page101</receiver>
+<slot>goto_page(const char*,bool)</slot>
+</connection>
+<connection>
+<sender>atcmButton_16</sender>
+<signal>newPage(const char*,bool)</signal>
+<receiver>page101</receiver>
+<slot>goto_page(const char*,bool)</slot>
+</connection>
+<connection>
+<sender>atcmButton</sender>
+<signal>newPage(const char*,bool)</signal>
+<receiver>page101</receiver>
+<slot>goto_page(const char*,bool)</slot>
+</connection>
+</connections>
 <slots>
 <slot>goto_page(const char*,bool)</slot>
 </slots>
