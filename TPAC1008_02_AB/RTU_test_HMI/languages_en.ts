@@ -361,7 +361,8 @@
     <message>
         <location filename="page100.ui" line="99"/>
         <location filename="page100.ui" line="111"/>
-        <source>digIN5_node01</source>
+        <source>DigOut_5_node01</source>
+        <oldsource>digIN5_node01</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -413,6 +414,30 @@
         <location filename="page100.ui" line="8315"/>
         <location filename="page100.ui" line="8416"/>
         <location filename="page100.ui" line="8629"/>
+        <location filename="page100.ui" line="10131"/>
+        <location filename="page100.ui" line="10173"/>
+        <location filename="page100.ui" line="10215"/>
+        <location filename="page100.ui" line="10257"/>
+        <location filename="page100.ui" line="10299"/>
+        <location filename="page100.ui" line="10341"/>
+        <location filename="page100.ui" line="10383"/>
+        <location filename="page100.ui" line="10425"/>
+        <location filename="page100.ui" line="10467"/>
+        <location filename="page100.ui" line="10509"/>
+        <location filename="page100.ui" line="10551"/>
+        <location filename="page100.ui" line="10593"/>
+        <location filename="page100.ui" line="10635"/>
+        <location filename="page100.ui" line="10677"/>
+        <location filename="page100.ui" line="10719"/>
+        <location filename="page100.ui" line="10761"/>
+        <location filename="page100.ui" line="10803"/>
+        <location filename="page100.ui" line="10845"/>
+        <location filename="page100.ui" line="10887"/>
+        <location filename="page100.ui" line="10929"/>
+        <location filename="page100.ui" line="10971"/>
+        <location filename="page100.ui" line="11013"/>
+        <location filename="page100.ui" line="11055"/>
+        <location filename="page100.ui" line="11097"/>
         <source>ATCMled widget</source>
         <translation type="unfinished"></translation>
     </message>
@@ -449,7 +474,8 @@
     <message>
         <location filename="page100.ui" line="328"/>
         <location filename="page100.ui" line="340"/>
-        <source>digOUT1_node01</source>
+        <source>DigIn_7_node01</source>
+        <oldsource>digOUT1_node01</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -592,6 +618,7 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="page100.ui" line="841"/>
         <location filename="page100.ui" line="863"/>
         <source>menu</source>
         <translation type="unfinished"></translation>
@@ -745,8 +772,8 @@
     <message>
         <location filename="page100.ui" line="1505"/>
         <location filename="page100.ui" line="1517"/>
-        <source>digOUT1_node02</source>
-        <oldsource>digIN6_node01</oldsource>
+        <source>DigIn_7_node02</source>
+        <oldsource>digOUT1_node02</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -764,7 +791,8 @@
     <message>
         <location filename="page100.ui" line="1662"/>
         <location filename="page100.ui" line="1674"/>
-        <source>digIN5_node02</source>
+        <source>DigOut_5_node02</source>
+        <oldsource>digIN5_node02</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -931,9 +959,154 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="page100.ui" line="10128"/>
+        <location filename="page100.ui" line="10140"/>
+        <source>DigIn_6_node04</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page100.ui" line="10170"/>
+        <location filename="page100.ui" line="10182"/>
+        <source>DigIn_6_node12</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page100.ui" line="10212"/>
+        <location filename="page100.ui" line="10224"/>
+        <source>DigIn_6_node01</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page100.ui" line="10254"/>
+        <location filename="page100.ui" line="10266"/>
+        <source>DigIn_6_node05</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page100.ui" line="10296"/>
+        <location filename="page100.ui" line="10308"/>
+        <source>DigIn_6_node21</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page100.ui" line="10338"/>
+        <location filename="page100.ui" line="10350"/>
+        <source>DigIn_6_node13</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page100.ui" line="10380"/>
+        <location filename="page100.ui" line="10392"/>
+        <source>DigIn_6_node20</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page100.ui" line="10422"/>
+        <location filename="page100.ui" line="10434"/>
+        <source>DigIn_6_node16</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page100.ui" line="10464"/>
+        <location filename="page100.ui" line="10476"/>
+        <source>DigIn_6_node14</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page100.ui" line="10506"/>
+        <location filename="page100.ui" line="10518"/>
+        <source>DigIn_6_node23</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page100.ui" line="10548"/>
+        <location filename="page100.ui" line="10560"/>
+        <source>DigIn_6_node15</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page100.ui" line="10590"/>
+        <location filename="page100.ui" line="10602"/>
+        <source>DigIn_6_node02</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page100.ui" line="10632"/>
+        <location filename="page100.ui" line="10644"/>
+        <source>DigIn_6_node19</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page100.ui" line="10674"/>
+        <location filename="page100.ui" line="10686"/>
+        <source>DigIn_6_node22</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page100.ui" line="10716"/>
+        <location filename="page100.ui" line="10728"/>
+        <source>DigIn_6_node17</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page100.ui" line="10758"/>
+        <location filename="page100.ui" line="10770"/>
+        <source>DigIn_6_node03</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page100.ui" line="10800"/>
+        <location filename="page100.ui" line="10812"/>
+        <source>DigIn_6_node06</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page100.ui" line="10842"/>
+        <location filename="page100.ui" line="10854"/>
+        <source>DigIn_6_node07</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page100.ui" line="10884"/>
+        <location filename="page100.ui" line="10896"/>
+        <source>DigIn_6_node08</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page100.ui" line="10926"/>
+        <location filename="page100.ui" line="10938"/>
+        <source>DigIn_6_node09</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page100.ui" line="10968"/>
+        <location filename="page100.ui" line="10980"/>
+        <source>DigIn_6_node18</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page100.ui" line="11010"/>
+        <location filename="page100.ui" line="11022"/>
+        <source>DigIn_6_node24</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page100.ui" line="11052"/>
+        <location filename="page100.ui" line="11064"/>
+        <source>DigIn_6_node10</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page100.ui" line="11094"/>
+        <location filename="page100.ui" line="11106"/>
+        <source>DigIn_6_node11</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="page100.ui" line="1819"/>
         <location filename="page100.ui" line="1831"/>
-        <source>digOUT1_node03</source>
+        <source>DigIn_7_node03</source>
+        <oldsource>digOUT1_node03</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -945,7 +1118,8 @@
     <message>
         <location filename="page100.ui" line="1976"/>
         <location filename="page100.ui" line="1988"/>
-        <source>digIN5_node03</source>
+        <source>DigOut_5_node03</source>
+        <oldsource>digIN5_node03</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -981,13 +1155,15 @@
     <message>
         <location filename="page100.ui" line="2304"/>
         <location filename="page100.ui" line="2316"/>
-        <source>digIN5_node04</source>
+        <source>DigOut_5_node04</source>
+        <oldsource>digIN5_node04</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="page100.ui" line="2346"/>
         <location filename="page100.ui" line="2358"/>
-        <source>digOUT1_node04</source>
+        <source>DigIn_7_node04</source>
+        <oldsource>digOUT1_node04</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1011,7 +1187,8 @@
     <message>
         <location filename="page100.ui" line="2559"/>
         <location filename="page100.ui" line="2571"/>
-        <source>digIN5_node05</source>
+        <source>DigOut_5_node05</source>
+        <oldsource>digIN5_node05</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1023,7 +1200,8 @@
     <message>
         <location filename="page100.ui" line="2660"/>
         <location filename="page100.ui" line="2672"/>
-        <source>digOUT1_node05</source>
+        <source>DigIn_7_node05</source>
+        <oldsource>digOUT1_node05</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1041,7 +1219,8 @@
     <message>
         <location filename="page100.ui" line="2820"/>
         <location filename="page100.ui" line="2832"/>
-        <source>digOUT1_node06</source>
+        <source>DigIn_7_node06</source>
+        <oldsource>digOUT1_node06</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1053,7 +1232,8 @@
     <message>
         <location filename="page100.ui" line="2921"/>
         <location filename="page100.ui" line="2933"/>
-        <source>digIN5_node06</source>
+        <source>DigOut_5_node06</source>
+        <oldsource>digIN5_node06</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1065,8 +1245,8 @@
     <message>
         <location filename="page100.ui" line="3235"/>
         <location filename="page100.ui" line="3247"/>
-        <source>digIN5_node07</source>
-        <oldsource>digIN6_node06</oldsource>
+        <source>DigOut_5_node07</source>
+        <oldsource>digIN5_node07</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1084,7 +1264,8 @@
     <message>
         <location filename="page100.ui" line="3134"/>
         <location filename="page100.ui" line="3146"/>
-        <source>digOUT1_node07</source>
+        <source>DigIn_7_node07</source>
+        <oldsource>digOUT1_node07</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1121,7 +1302,8 @@
     <message>
         <location filename="page100.ui" line="3448"/>
         <location filename="page100.ui" line="3460"/>
-        <source>digOUT1_node08</source>
+        <source>DigIn_7_node08</source>
+        <oldsource>digOUT1_node08</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1133,7 +1315,8 @@
     <message>
         <location filename="page100.ui" line="3549"/>
         <location filename="page100.ui" line="3561"/>
-        <source>digIN5_node08</source>
+        <source>DigOut_5_node08</source>
+        <oldsource>digIN5_node08</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1151,7 +1334,8 @@
     <message>
         <location filename="page100.ui" line="3762"/>
         <location filename="page100.ui" line="3774"/>
-        <source>digOUT1_node09</source>
+        <source>DigIn_7_node09</source>
+        <oldsource>digOUT1_node09</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1163,7 +1347,8 @@
     <message>
         <location filename="page100.ui" line="3863"/>
         <location filename="page100.ui" line="3875"/>
-        <source>digIN5_node09</source>
+        <source>DigOut_5_node09</source>
+        <oldsource>digIN5_node09</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1187,7 +1372,8 @@
     <message>
         <location filename="page100.ui" line="4076"/>
         <location filename="page100.ui" line="4088"/>
-        <source>digOUT1_node10</source>
+        <source>DigIn_7_node10</source>
+        <oldsource>digOUT1_node10</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1199,7 +1385,8 @@
     <message>
         <location filename="page100.ui" line="4177"/>
         <location filename="page100.ui" line="4189"/>
-        <source>digIN5_node10</source>
+        <source>DigOut_5_node10</source>
+        <oldsource>digIN5_node10</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1223,7 +1410,8 @@
     <message>
         <location filename="page100.ui" line="4390"/>
         <location filename="page100.ui" line="4402"/>
-        <source>digOUT1_node11</source>
+        <source>DigIn_7_node11</source>
+        <oldsource>digOUT1_node11</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1235,7 +1423,8 @@
     <message>
         <location filename="page100.ui" line="4491"/>
         <location filename="page100.ui" line="4503"/>
-        <source>digIN5_node11</source>
+        <source>DigOut_5_node11</source>
+        <oldsource>digIN5_node11</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1266,7 +1455,8 @@
     <message>
         <location filename="page100.ui" line="4704"/>
         <location filename="page100.ui" line="4716"/>
-        <source>digOUT1_node12</source>
+        <source>DigIn_7_node12</source>
+        <oldsource>digOUT1_node12</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1278,7 +1468,8 @@
     <message>
         <location filename="page100.ui" line="4805"/>
         <location filename="page100.ui" line="4817"/>
-        <source>digIN5_node12</source>
+        <source>DigOut_5_node12</source>
+        <oldsource>digIN5_node12</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1290,8 +1481,8 @@
     <message>
         <location filename="page100.ui" line="5380"/>
         <location filename="page100.ui" line="5392"/>
-        <source>digOUT1_node15</source>
-        <oldsource>digIN6_node12</oldsource>
+        <source>DigIn_7_node15</source>
+        <oldsource>digOUT1_node15</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1316,19 +1507,22 @@
     <message>
         <location filename="page100.ui" line="5077"/>
         <location filename="page100.ui" line="5089"/>
-        <source>digIN5_node21</source>
+        <source>DigOut_5_node21</source>
+        <oldsource>digIN5_node21</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="page100.ui" line="5119"/>
         <location filename="page100.ui" line="5131"/>
-        <source>digIN5_node14</source>
+        <source>DigOut_5_node14</source>
+        <oldsource>digIN5_node14</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="page100.ui" line="5161"/>
         <location filename="page100.ui" line="5173"/>
-        <source>digIN5_node23</source>
+        <source>DigOut_5_node23</source>
+        <oldsource>digIN5_node23</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1358,7 +1552,8 @@
     <message>
         <location filename="page100.ui" line="5537"/>
         <location filename="page100.ui" line="5549"/>
-        <source>digOUT1_node14</source>
+        <source>DigIn_7_node14</source>
+        <oldsource>digOUT1_node14</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1370,7 +1565,8 @@
     <message>
         <location filename="page100.ui" line="5638"/>
         <location filename="page100.ui" line="5650"/>
-        <source>digIN5_node20</source>
+        <source>DigOut_5_node20</source>
+        <oldsource>digIN5_node20</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1394,7 +1590,8 @@
     <message>
         <location filename="page100.ui" line="5848"/>
         <location filename="page100.ui" line="5860"/>
-        <source>digIN5_node18</source>
+        <source>DigOut_5_node18</source>
+        <oldsource>digIN5_node18</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1412,25 +1609,29 @@
     <message>
         <location filename="page100.ui" line="6005"/>
         <location filename="page100.ui" line="6017"/>
-        <source>digOUT1_node18</source>
+        <source>DigIn_7_node18</source>
+        <oldsource>digOUT1_node18</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="page100.ui" line="6047"/>
         <location filename="page100.ui" line="6059"/>
-        <source>digIN5_node24</source>
+        <source>DigOut_5_node24</source>
+        <oldsource>digIN5_node24</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="page100.ui" line="6089"/>
         <location filename="page100.ui" line="6101"/>
-        <source>digOUT1_node17</source>
+        <source>DigIn_7_node17</source>
+        <oldsource>digOUT1_node17</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="page100.ui" line="6131"/>
         <location filename="page100.ui" line="6143"/>
-        <source>digOUT1_node22</source>
+        <source>DigIn_7_node22</source>
+        <oldsource>digOUT1_node22</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1442,7 +1643,8 @@
     <message>
         <location filename="page100.ui" line="6232"/>
         <location filename="page100.ui" line="6244"/>
-        <source>digIN5_node19</source>
+        <source>DigOut_5_node19</source>
+        <oldsource>digIN5_node19</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1472,7 +1674,8 @@
     <message>
         <location filename="page100.ui" line="6504"/>
         <location filename="page100.ui" line="6516"/>
-        <source>digOUT1_node13</source>
+        <source>DigIn_7_node13</source>
+        <oldsource>digOUT1_node13</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1496,8 +1699,8 @@
     <message>
         <location filename="page100.ui" line="7488"/>
         <location filename="page100.ui" line="7500"/>
-        <source>digOUT1_node19</source>
-        <oldsource>digIN6_node19</oldsource>
+        <source>DigIn_7_node19</source>
+        <oldsource>digOUT1_node19</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1509,7 +1712,8 @@
     <message>
         <location filename="page100.ui" line="6770"/>
         <location filename="page100.ui" line="6782"/>
-        <source>digOUT1_node16</source>
+        <source>DigIn_7_node16</source>
+        <oldsource>digOUT1_node16</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1563,7 +1767,8 @@
     <message>
         <location filename="page100.ui" line="7272"/>
         <location filename="page100.ui" line="7284"/>
-        <source>digOUT1_node23</source>
+        <source>DigIn_7_node23</source>
+        <oldsource>digOUT1_node23</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1599,19 +1804,22 @@
     <message>
         <location filename="page100.ui" line="7642"/>
         <location filename="page100.ui" line="7654"/>
-        <source>digIN5_node13</source>
+        <source>DigOut_5_node13</source>
+        <oldsource>digIN5_node13</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="page100.ui" line="7684"/>
         <location filename="page100.ui" line="7696"/>
-        <source>digIN5_node16</source>
+        <source>DigOut_5_node16</source>
+        <oldsource>digIN5_node16</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="page100.ui" line="7726"/>
         <location filename="page100.ui" line="7738"/>
-        <source>digIN5_node22</source>
+        <source>DigOut_5_node22</source>
+        <oldsource>digIN5_node22</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1666,7 +1874,8 @@
     <message>
         <location filename="page100.ui" line="8172"/>
         <location filename="page100.ui" line="8184"/>
-        <source>digOUT1_node20</source>
+        <source>DigIn_7_node20</source>
+        <oldsource>digOUT1_node20</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1678,13 +1887,15 @@
     <message>
         <location filename="page100.ui" line="8270"/>
         <location filename="page100.ui" line="8282"/>
-        <source>digOUT1_node21</source>
+        <source>DigIn_7_node21</source>
+        <oldsource>digOUT1_node21</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="page100.ui" line="8312"/>
         <location filename="page100.ui" line="8324"/>
-        <source>digIN5_node15</source>
+        <source>DigOut_5_node15</source>
+        <oldsource>digIN5_node15</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1696,7 +1907,8 @@
     <message>
         <location filename="page100.ui" line="8413"/>
         <location filename="page100.ui" line="8425"/>
-        <source>digOUT1_node24</source>
+        <source>DigIn_7_node24</source>
+        <oldsource>digOUT1_node24</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1720,7 +1932,8 @@
     <message>
         <location filename="page100.ui" line="8626"/>
         <location filename="page100.ui" line="8638"/>
-        <source>digIN5_node17</source>
+        <source>DigOut_5_node17</source>
+        <oldsource>digIN5_node17</oldsource>
         <translation type="unfinished"></translation>
     </message>
 </context>

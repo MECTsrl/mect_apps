@@ -13,532 +13,532 @@ DWORD_BIT <-> int
  
 u_int16_t Addr_node01 = 0;
 u_int16_t Life_node01 = 0;
-u_int16_t ConfAi1_node01 = 0;
-u_int16_t ConfAi2_node01 = 0;
+u_int16_t AnInCnf_1_node01 = 0;
+u_int16_t AnInCnf_2_node01 = 0;
 int16_t ValAi1_node01 = 0;
 int16_t ValAi2_node01 = 0;
-int Conf1_node01 = 0;
-int Conf2_node01 = 0;
-int Conf3_node01 = 0;
-int Conf4_node01 = 0;
-int Conf5_node01 = 0;
-int Conf6_node01 = 0;
-int Conf7_node01 = 0;
-int Conf8_node01 = 0;
-int digIN5_node01 = 0;
-int digIN6_node01 = 0;
-int digIN7_node01 = 0;
-int digIN8_node01 = 0;
-int digOUT1_node01 = 0;
-int digOUT2_node01 = 0;
-int digOUT3_node01 = 0;
-int digOUT4_node01 = 0;
+int DigDir_1_node01 = 0;
+int DigDir_2_node01 = 0;
+int DigDir_3_node01 = 0;
+int DigDir_4_node01 = 0;
+int DigDir_5_node01 = 0;
+int DigDir_6_node01 = 0;
+int DigDir_7_node01 = 0;
+int DigDir_8_node01 = 0;
+int DigIn_2_node01 = 0;
+int DigIn_3_node01 = 0;
+int DigIn_6_node01 = 0;
+int DigIn_7_node01 = 0;
+int DigOut_1_node01 = 0;
+int DigOut_4_node01 = 0;
+int DigOut_5_node01 = 0;
+int DigOut_8_node01 = 0;
 u_int16_t Addr_node02 = 0;
 u_int16_t Life_node02 = 0;
-u_int16_t ConfAi1_node02 = 0;
-u_int16_t ConfAi2_node02 = 0;
+u_int16_t AnInCnf_1_node02 = 0;
+u_int16_t AnInCnf_2_node02 = 0;
 int16_t ValAi1_node02 = 0;
 int16_t ValAi2_node02 = 0;
-int Conf1_node02 = 0;
-int Conf2_node02 = 0;
-int Conf3_node02 = 0;
-int Conf4_node02 = 0;
-int Conf5_node02 = 0;
-int Conf6_node02 = 0;
-int Conf7_node02 = 0;
-int Conf8_node02 = 0;
-int digIN5_node02 = 0;
-int digIN6_node02 = 0;
-int digIN7_node02 = 0;
-int digIN8_node02 = 0;
-int digOUT1_node02 = 0;
-int digOUT2_node02 = 0;
-int digOUT3_node02 = 0;
-int digOUT4_node02 = 0;
+int DigDir_1_node02 = 0;
+int DigDir_2_node02 = 0;
+int DigDir_3_node02 = 0;
+int DigDir_4_node02 = 0;
+int DigDir_5_node02 = 0;
+int DigDir_6_node02 = 0;
+int DigDir_7_node02 = 0;
+int DigDir_8_node02 = 0;
+int DigIn_2_node02 = 0;
+int DigIn_3_node02 = 0;
+int DigIn_6_node02 = 0;
+int DigIn_7_node02 = 0;
+int DigOut_1_node02 = 0;
+int DigOut_4_node02 = 0;
+int DigOut_5_node02 = 0;
+int DigOut_8_node02 = 0;
 u_int16_t Addr_node03 = 0;
 u_int16_t Life_node03 = 0;
-u_int16_t ConfAi1_node03 = 0;
-u_int16_t ConfAi2_node03 = 0;
+u_int16_t AnInCnf_1_node03 = 0;
+u_int16_t AnInCnf_2_node03 = 0;
 int16_t ValAi1_node03 = 0;
 int16_t ValAi2_node03 = 0;
-int Conf1_node03 = 0;
-int Conf2_node03 = 0;
-int Conf3_node03 = 0;
-int Conf4_node03 = 0;
-int Conf5_node03 = 0;
-int Conf6_node03 = 0;
-int Conf7_node03 = 0;
-int Conf8_node03 = 0;
-int digIN5_node03 = 0;
-int digIN6_node03 = 0;
-int digIN7_node03 = 0;
-int digIN8_node03 = 0;
-int digOUT1_node03 = 0;
-int digOUT2_node03 = 0;
-int digOUT3_node03 = 0;
-int digOUT4_node03 = 0;
+int DigDir_1_node03 = 0;
+int DigDir_2_node03 = 0;
+int DigDir_3_node03 = 0;
+int DigDir_4_node03 = 0;
+int DigDir_5_node03 = 0;
+int DigDir_6_node03 = 0;
+int DigDir_7_node03 = 0;
+int DigDir_8_node03 = 0;
+int DigIn_2_node03 = 0;
+int DigIn_3_node03 = 0;
+int DigIn_6_node03 = 0;
+int DigIn_7_node03 = 0;
+int DigOut_1_node03 = 0;
+int DigOut_4_node03 = 0;
+int DigOut_5_node03 = 0;
+int DigOut_8_node03 = 0;
 u_int16_t Addr_node04 = 0;
 u_int16_t Life_node04 = 0;
-u_int16_t ConfAi1_node04 = 0;
-u_int16_t ConfAi2_node04 = 0;
+u_int16_t AnInCnf_1_node04 = 0;
+u_int16_t AnInCnf_2_node04 = 0;
 int16_t ValAi1_node04 = 0;
 int16_t ValAi2_node04 = 0;
-int Conf1_node04 = 0;
-int Conf2_node04 = 0;
-int Conf3_node04 = 0;
-int Conf4_node04 = 0;
-int Conf5_node04 = 0;
-int Conf6_node04 = 0;
-int Conf7_node04 = 0;
-int Conf8_node04 = 0;
-int digIN5_node04 = 0;
-int digIN6_node04 = 0;
-int digIN7_node04 = 0;
-int digIN8_node04 = 0;
-int digOUT1_node04 = 0;
-int digOUT2_node04 = 0;
-int digOUT3_node04 = 0;
-int digOUT4_node04 = 0;
+int DigDir_1_node04 = 0;
+int DigDir_2_node04 = 0;
+int DigDir_3_node04 = 0;
+int DigDir_4_node04 = 0;
+int DigDir_5_node04 = 0;
+int DigDir_6_node04 = 0;
+int DigDir_7_node04 = 0;
+int DigDir_8_node04 = 0;
+int DigIn_2_node04 = 0;
+int DigIn_3_node04 = 0;
+int DigIn_6_node04 = 0;
+int DigIn_7_node04 = 0;
+int DigOut_1_node04 = 0;
+int DigOut_4_node04 = 0;
+int DigOut_5_node04 = 0;
+int DigOut_8_node04 = 0;
 u_int16_t Addr_node05 = 0;
 u_int16_t Life_node05 = 0;
-u_int16_t ConfAi1_node05 = 0;
-u_int16_t ConfAi2_node05 = 0;
+u_int16_t AnInCnf_1_node05 = 0;
+u_int16_t AnInCnf_2_node05 = 0;
 int16_t ValAi1_node05 = 0;
 int16_t ValAi2_node05 = 0;
-int Conf1_node05 = 0;
-int Conf2_node05 = 0;
-int Conf3_node05 = 0;
-int Conf4_node05 = 0;
-int Conf5_node05 = 0;
-int Conf6_node05 = 0;
-int Conf7_node05 = 0;
-int Conf8_node05 = 0;
-int digIN5_node05 = 0;
-int digIN6_node05 = 0;
-int digIN7_node05 = 0;
-int digIN8_node05 = 0;
-int digOUT1_node05 = 0;
-int digOUT2_node05 = 0;
-int digOUT3_node05 = 0;
-int digOUT4_node05 = 0;
+int DigDir_1_node05 = 0;
+int DigDir_2_node05 = 0;
+int DigDir_3_node05 = 0;
+int DigDir_4_node05 = 0;
+int DigDir_5_node05 = 0;
+int DigDir_6_node05 = 0;
+int DigDir_7_node05 = 0;
+int DigDir_8_node05 = 0;
+int DigIn_2_node05 = 0;
+int DigIn_3_node05 = 0;
+int DigIn_6_node05 = 0;
+int DigIn_7_node05 = 0;
+int DigOut_1_node05 = 0;
+int DigOut_4_node05 = 0;
+int DigOut_5_node05 = 0;
+int DigOut_8_node05 = 0;
 u_int16_t Addr_node06 = 0;
 u_int16_t Life_node06 = 0;
-u_int16_t ConfAi1_node06 = 0;
-u_int16_t ConfAi2_node06 = 0;
+u_int16_t AnInCnf_1_node06 = 0;
+u_int16_t AnInCnf_2_node06 = 0;
 int16_t ValAi1_node06 = 0;
 int16_t ValAi2_node06 = 0;
-int Conf1_node06 = 0;
-int Conf2_node06 = 0;
-int Conf3_node06 = 0;
-int Conf4_node06 = 0;
-int Conf5_node06 = 0;
-int Conf6_node06 = 0;
-int Conf7_node06 = 0;
-int Conf8_node06 = 0;
-int digIN5_node06 = 0;
-int digIN6_node06 = 0;
-int digIN7_node06 = 0;
-int digIN8_node06 = 0;
-int digOUT1_node06 = 0;
-int digOUT2_node06 = 0;
-int digOUT3_node06 = 0;
-int digOUT4_node06 = 0;
+int DigDir_1_node06 = 0;
+int DigDir_2_node06 = 0;
+int DigDir_3_node06 = 0;
+int DigDir_4_node06 = 0;
+int DigDir_5_node06 = 0;
+int DigDir_6_node06 = 0;
+int DigDir_7_node06 = 0;
+int DigDir_8_node06 = 0;
+int DigIn_2_node06 = 0;
+int DigIn_3_node06 = 0;
+int DigIn_6_node06 = 0;
+int DigIn_7_node06 = 0;
+int DigOut_1_node06 = 0;
+int DigOut_4_node06 = 0;
+int DigOut_5_node06 = 0;
+int DigOut_8_node06 = 0;
 u_int16_t Addr_node07 = 0;
 u_int16_t Life_node07 = 0;
-u_int16_t ConfAi1_node07 = 0;
-u_int16_t ConfAi2_node07 = 0;
+u_int16_t AnInCnf_1_node07 = 0;
+u_int16_t AnInCnf_2_node07 = 0;
 int16_t ValAi1_node07 = 0;
 int16_t ValAi2_node07 = 0;
-int Conf1_node07 = 0;
-int Conf2_node07 = 0;
-int Conf3_node07 = 0;
-int Conf4_node07 = 0;
-int Conf5_node07 = 0;
-int Conf6_node07 = 0;
-int Conf7_node07 = 0;
-int Conf8_node07 = 0;
-int digIN5_node07 = 0;
-int digIN6_node07 = 0;
-int digIN7_node07 = 0;
-int digIN8_node07 = 0;
-int digOUT1_node07 = 0;
-int digOUT2_node07 = 0;
-int digOUT3_node07 = 0;
-int digOUT4_node07 = 0;
+int DigDir_1_node07 = 0;
+int DigDir_2_node07 = 0;
+int DigDir_3_node07 = 0;
+int DigDir_4_node07 = 0;
+int DigDir_5_node07 = 0;
+int DigDir_6_node07 = 0;
+int DigDir_7_node07 = 0;
+int DigDir_8_node07 = 0;
+int DigIn_2_node07 = 0;
+int DigIn_3_node07 = 0;
+int DigIn_6_node07 = 0;
+int DigIn_7_node07 = 0;
+int DigOut_1_node07 = 0;
+int DigOut_4_node07 = 0;
+int DigOut_5_node07 = 0;
+int DigOut_8_node07 = 0;
 u_int16_t Addr_node08 = 0;
 u_int16_t Life_node08 = 0;
-u_int16_t ConfAi1_node08 = 0;
-u_int16_t ConfAi2_node08 = 0;
+u_int16_t AnInCnf_1_node08 = 0;
+u_int16_t AnInCnf_2_node08 = 0;
 int16_t ValAi1_node08 = 0;
 int16_t ValAi2_node08 = 0;
-int Conf1_node08 = 0;
-int Conf2_node08 = 0;
-int Conf3_node08 = 0;
-int Conf4_node08 = 0;
-int Conf5_node08 = 0;
-int Conf6_node08 = 0;
-int Conf7_node08 = 0;
-int Conf8_node08 = 0;
-int digIN5_node08 = 0;
-int digIN6_node08 = 0;
-int digIN7_node08 = 0;
-int digIN8_node08 = 0;
-int digOUT1_node08 = 0;
-int digOUT2_node08 = 0;
-int digOUT3_node08 = 0;
-int digOUT4_node08 = 0;
+int DigDir_1_node08 = 0;
+int DigDir_2_node08 = 0;
+int DigDir_3_node08 = 0;
+int DigDir_4_node08 = 0;
+int DigDir_5_node08 = 0;
+int DigDir_6_node08 = 0;
+int DigDir_7_node08 = 0;
+int DigDir_8_node08 = 0;
+int DigIn_2_node08 = 0;
+int DigIn_3_node08 = 0;
+int DigIn_6_node08 = 0;
+int DigIn_7_node08 = 0;
+int DigOut_1_node08 = 0;
+int DigOut_4_node08 = 0;
+int DigOut_5_node08 = 0;
+int DigOut_8_node08 = 0;
 u_int16_t Addr_node09 = 0;
 u_int16_t Life_node09 = 0;
-u_int16_t ConfAi1_node09 = 0;
-u_int16_t ConfAi2_node09 = 0;
+u_int16_t AnInCnf_1_node09 = 0;
+u_int16_t AnInCnf_2_node09 = 0;
 int16_t ValAi1_node09 = 0;
 int16_t ValAi2_node09 = 0;
-int Conf1_node09 = 0;
-int Conf2_node09 = 0;
-int Conf3_node09 = 0;
-int Conf4_node09 = 0;
-int Conf5_node09 = 0;
-int Conf6_node09 = 0;
-int Conf7_node09 = 0;
-int Conf8_node019 = 0;
-int digIN5_node09 = 0;
-int digIN6_node09 = 0;
-int digIN7_node09 = 0;
-int digIN8_node09 = 0;
-int digOUT1_node09 = 0;
-int digOUT2_node09 = 0;
-int digOUT3_node09 = 0;
-int digOUT4_node09 = 0;
+int DigDir_1_node09 = 0;
+int DigDir_2_node09 = 0;
+int DigDir_3_node09 = 0;
+int DigDir_4_node09 = 0;
+int DigDir_5_node09 = 0;
+int DigDir_6_node09 = 0;
+int DigDir_7_node09 = 0;
+int DigDir_8_node09 = 0;
+int DigIn_2_node09 = 0;
+int DigIn_3_node09 = 0;
+int DigIn_6_node09 = 0;
+int DigIn_7_node09 = 0;
+int DigOut_1_node09 = 0;
+int DigOut_4_node09 = 0;
+int DigOut_5_node09 = 0;
+int DigOut_8_node09 = 0;
 u_int16_t Addr_node10 = 0;
 u_int16_t Life_node10 = 0;
-u_int16_t ConfAi1_node10 = 0;
-u_int16_t ConfAi2_node10 = 0;
+u_int16_t AnInCnf_1_node10 = 0;
+u_int16_t AnInCnf_2_node10 = 0;
 int16_t ValAi1_node10 = 0;
 int16_t ValAi2_node10 = 0;
-int Conf1_node10 = 0;
-int Conf2_node10 = 0;
-int Conf3_node10 = 0;
-int Conf4_node10 = 0;
-int Conf5_node10 = 0;
-int Conf6_node10 = 0;
-int Conf7_node10 = 0;
-int Conf8_node10 = 0;
-int digIN5_node10 = 0;
-int digIN6_node10 = 0;
-int digIN7_node10 = 0;
-int digIN8_node10 = 0;
-int digOUT1_node10 = 0;
-int digOUT2_node10 = 0;
-int digOUT3_node10 = 0;
-int digOUT4_node10 = 0;
+int DigDir_1_node10 = 0;
+int DigDir_2_node10 = 0;
+int DigDir_3_node10 = 0;
+int DigDir_4_node10 = 0;
+int DigDir_5_node10 = 0;
+int DigDir_6_node10 = 0;
+int DigDir_7_node10 = 0;
+int DigDir_8_node10 = 0;
+int DigIn_2_node10 = 0;
+int DigIn_3_node10 = 0;
+int DigIn_6_node10 = 0;
+int DigIn_7_node10 = 0;
+int DigOut_1_node10 = 0;
+int DigOut_4_node10 = 0;
+int DigOut_5_node10 = 0;
+int DigOut_8_node10 = 0;
 u_int16_t Addr_node11 = 0;
 u_int16_t Life_node11 = 0;
-u_int16_t ConfAi1_node11 = 0;
-u_int16_t ConfAi2_node11 = 0;
+u_int16_t AnInCnf_1_node11 = 0;
+u_int16_t AnInCnf_2_node11 = 0;
 int16_t ValAi1_node11 = 0;
 int16_t ValAi2_node11 = 0;
-int Conf1_node11 = 0;
-int Conf2_node11 = 0;
-int Conf3_node11 = 0;
-int Conf4_node11 = 0;
-int Conf5_node11 = 0;
-int Conf6_node11 = 0;
-int Conf7_node11 = 0;
-int Conf8_node11 = 0;
-int digIN5_node11 = 0;
-int digIN6_node11 = 0;
-int digIN7_node11 = 0;
-int digIN8_node11 = 0;
-int digOUT1_node11 = 0;
-int digOUT2_node11 = 0;
-int digOUT3_node11 = 0;
-int digOUT4_node11 = 0;
+int DigDir_1_node11 = 0;
+int DigDir_2_node11 = 0;
+int DigDir_3_node11 = 0;
+int DigDir_4_node11 = 0;
+int DigDir_5_node11 = 0;
+int DigDir_6_node11 = 0;
+int DigDir_7_node11 = 0;
+int DigDir_8_node11 = 0;
+int DigIn_2_node11 = 0;
+int DigIn_3_node11 = 0;
+int DigIn_6_node11 = 0;
+int DigIn_7_node11 = 0;
+int DigOut_1_node11 = 0;
+int DigOut_4_node11 = 0;
+int DigOut_5_node11 = 0;
+int DigOut_8_node11 = 0;
 u_int16_t Addr_node12 = 0;
 u_int16_t Life_node12 = 0;
-u_int16_t ConfAi1_node12 = 0;
-u_int16_t ConfAi2_node12 = 0;
+u_int16_t AnInCnf_1_node12 = 0;
+u_int16_t AnInCnf_2_node12 = 0;
 int16_t ValAi1_node12 = 0;
 int16_t ValAi2_node12 = 0;
-int Conf1_node12 = 0;
-int Conf2_node12 = 0;
-int Conf3_node12 = 0;
-int Conf4_node12 = 0;
-int Conf5_node12 = 0;
-int Conf6_node12 = 0;
-int Conf7_node12 = 0;
-int Conf8_node12 = 0;
-int digIN5_node12 = 0;
-int digIN6_node12 = 0;
-int digIN7_node12 = 0;
-int digIN8_node12 = 0;
-int digOUT1_node12 = 0;
-int digOUT2_node12 = 0;
-int digOUT3_node12 = 0;
-int digOUT4_node12 = 0;
+int DigDir_1_node12 = 0;
+int DigDir_2_node12 = 0;
+int DigDir_3_node12 = 0;
+int DigDir_4_node12 = 0;
+int DigDir_5_node12 = 0;
+int DigDir_6_node12 = 0;
+int DigDir_7_node12 = 0;
+int DigDir_8_node12 = 0;
+int DigIn_2_node12 = 0;
+int DigIn_3_node12 = 0;
+int DigIn_6_node12 = 0;
+int DigIn_7_node12 = 0;
+int DigOut_1_node12 = 0;
+int DigOut_4_node12 = 0;
+int DigOut_5_node12 = 0;
+int DigOut_8_node12 = 0;
 u_int16_t Addr_node13 = 0;
 u_int16_t Life_node13 = 0;
-u_int16_t ConfAi1_node13 = 0;
-u_int16_t ConfAi2_node13 = 0;
+u_int16_t AnInCnf_1_node13 = 0;
+u_int16_t AnInCnf_2_node13 = 0;
 int16_t ValAi1_node13 = 0;
 int16_t ValAi2_node13 = 0;
-int Conf1_node13 = 0;
-int Conf2_node13 = 0;
-int Conf3_node13 = 0;
-int Conf4_node13 = 0;
-int Conf5_node13 = 0;
-int Conf6_node13 = 0;
-int Conf7_node13 = 0;
-int Conf8_node13 = 0;
-int digIN5_node13 = 0;
-int digIN6_node13 = 0;
-int digIN7_node13 = 0;
-int digIN8_node13 = 0;
-int digOUT1_node13 = 0;
-int digOUT2_node13 = 0;
-int digOUT3_node13 = 0;
-int digOUT4_node13 = 0;
+int DigDir_1_node13 = 0;
+int DigDir_2_node13 = 0;
+int DigDir_3_node13 = 0;
+int DigDir_4_node13 = 0;
+int DigDir_5_node13 = 0;
+int DigDir_6_node13 = 0;
+int DigDir_7_node13 = 0;
+int DigDir_8_node13 = 0;
+int DigIn_2_node13 = 0;
+int DigIn_3_node13 = 0;
+int DigIn_6_node13 = 0;
+int DigIn_7_node13 = 0;
+int DigOut_1_node13 = 0;
+int DigOut_4_node13 = 0;
+int DigOut_5_node13 = 0;
+int DigOut_8_node13 = 0;
 u_int16_t Addr_node14 = 0;
 u_int16_t Life_node14 = 0;
-u_int16_t ConfAi1_node14 = 0;
-u_int16_t ConfAi2_node14 = 0;
+u_int16_t AnInCnf_1_node14 = 0;
+u_int16_t AnInCnf_2_node14 = 0;
 int16_t ValAi1_node14 = 0;
 int16_t ValAi2_node14 = 0;
-int Conf1_node14 = 0;
-int Conf2_node14 = 0;
-int Conf3_node14 = 0;
-int Conf4_node14 = 0;
-int Conf5_node14 = 0;
-int Conf6_node14 = 0;
-int Conf7_node14 = 0;
-int Conf8_node14 = 0;
-int digIN5_node14 = 0;
-int digIN6_node14 = 0;
-int digIN7_node14 = 0;
-int digIN8_node14 = 0;
-int digOUT1_node14 = 0;
-int digOUT2_node14 = 0;
-int digOUT3_node14 = 0;
-int digOUT4_node14 = 0;
+int DigDir_1_node14 = 0;
+int DigDir_2_node14 = 0;
+int DigDir_3_node14 = 0;
+int DigDir_4_node14 = 0;
+int DigDir_5_node14 = 0;
+int DigDir_6_node14 = 0;
+int DigDir_7_node14 = 0;
+int DigDir_8_node14 = 0;
+int DigIn_2_node14 = 0;
+int DigIn_3_node14 = 0;
+int DigIn_6_node14 = 0;
+int DigIn_7_node14 = 0;
+int DigOut_1_node14 = 0;
+int DigOut_4_node14 = 0;
+int DigOut_5_node14 = 0;
+int DigOut_8_node14 = 0;
 u_int16_t Addr_node15 = 0;
 u_int16_t Life_node15 = 0;
-u_int16_t ConfAi1_node15 = 0;
-u_int16_t ConfAi2_node15 = 0;
+u_int16_t AnInCnf_1_node15 = 0;
+u_int16_t AnInCnf_2_node15 = 0;
 int16_t ValAi1_node15 = 0;
 int16_t ValAi2_node15 = 0;
-int Conf1_node15 = 0;
-int Conf2_node15 = 0;
-int Conf3_node15 = 0;
-int Conf4_node15 = 0;
-int Conf5_node15 = 0;
-int Conf6_node15 = 0;
-int Conf7_node15 = 0;
-int Conf8_node15 = 0;
-int digIN5_node15 = 0;
-int digIN6_node15 = 0;
-int digIN7_node15 = 0;
-int digIN8_node15 = 0;
-int digOUT1_node15 = 0;
-int digOUT2_node15 = 0;
-int digOUT3_node15 = 0;
-int digOUT4_node15 = 0;
+int DigDir_1_node15 = 0;
+int DigDir_2_node15 = 0;
+int DigDir_3_node15 = 0;
+int DigDir_4_node15 = 0;
+int DigDir_5_node15 = 0;
+int DigDir_6_node15 = 0;
+int DigDir_7_node15 = 0;
+int DigDir_8_node15 = 0;
+int DigIn_2_node15 = 0;
+int DigIn_3_node15 = 0;
+int DigIn_6_node15 = 0;
+int DigIn_7_node15 = 0;
+int DigOut_1_node15 = 0;
+int DigOut_4_node15 = 0;
+int DigOut_5_node15 = 0;
+int DigOut_8_node15 = 0;
 u_int16_t Addr_node16 = 0;
 u_int16_t Life_node16 = 0;
-u_int16_t ConfAi1_node16 = 0;
-u_int16_t ConfAi2_node16 = 0;
+u_int16_t AnInCnf_1_node16 = 0;
+u_int16_t AnInCnf_2_node16 = 0;
 int16_t ValAi1_node16 = 0;
 int16_t ValAi2_node16 = 0;
-int Conf1_node16 = 0;
-int Conf2_node16 = 0;
-int Conf3_node16 = 0;
-int Conf4_node16 = 0;
-int Conf5_node16 = 0;
-int Conf6_node16 = 0;
-int Conf7_node16 = 0;
-int Conf8_node16 = 0;
-int digIN5_node16 = 0;
-int digIN6_node16 = 0;
-int digIN7_node16 = 0;
-int digIN8_node16 = 0;
-int digOUT1_node16 = 0;
-int digOUT2_node16 = 0;
-int digOUT3_node16 = 0;
-int digOUT4_node16 = 0;
+int DigDir_1_node16 = 0;
+int DigDir_2_node16 = 0;
+int DigDir_3_node16 = 0;
+int DigDir_4_node16 = 0;
+int DigDir_5_node16 = 0;
+int DigDir_6_node16 = 0;
+int DigDir_7_node16 = 0;
+int DigDir_8_node16 = 0;
+int DigIn_2_node16 = 0;
+int DigIn_3_node16 = 0;
+int DigIn_6_node16 = 0;
+int DigIn_7_node16 = 0;
+int DigOut_1_node16 = 0;
+int DigOut_4_node16 = 0;
+int DigOut_5_node16 = 0;
+int DigOut_8_node16 = 0;
 u_int16_t Addr_node17 = 0;
 u_int16_t Life_node17 = 0;
-u_int16_t ConfAi1_node17 = 0;
-u_int16_t ConfAi2_node17 = 0;
+u_int16_t AnInCnf_1_node17 = 0;
+u_int16_t AnInCnf_2_node17 = 0;
 int16_t ValAi1_node17 = 0;
 int16_t ValAi2_node17 = 0;
-int Conf1_node17 = 0;
-int Conf2_node17 = 0;
-int Conf3_node17 = 0;
-int Conf4_node17 = 0;
-int Conf5_node17 = 0;
-int Conf6_node17 = 0;
-int Conf7_node17 = 0;
-int Conf8_node17 = 0;
-int digIN5_node17 = 0;
-int digIN6_node17 = 0;
-int digIN7_node17 = 0;
-int digIN8_node17 = 0;
-int digOUT1_node17 = 0;
-int digOUT2_node17 = 0;
-int digOUT3_node17 = 0;
-int digOUT4_node17 = 0;
+int DigDir_1_node17 = 0;
+int DigDir_2_node17 = 0;
+int DigDir_3_node17 = 0;
+int DigDir_4_node17 = 0;
+int DigDir_5_node17 = 0;
+int DigDir_6_node17 = 0;
+int DigDir_7_node17 = 0;
+int DigDir_8_node17 = 0;
+int DigIn_2_node17 = 0;
+int DigIn_3_node17 = 0;
+int DigIn_6_node17 = 0;
+int DigIn_7_node17 = 0;
+int DigOut_1_node17 = 0;
+int DigOut_4_node17 = 0;
+int DigOut_5_node17 = 0;
+int DigOut_8_node17 = 0;
 u_int16_t Addr_node18 = 0;
 u_int16_t Life_node18 = 0;
-u_int16_t ConfAi1_node18 = 0;
-u_int16_t ConfAi2_node18 = 0;
+u_int16_t AnInCnf_1_node18 = 0;
+u_int16_t AnInCnf_2_node18 = 0;
 int16_t ValAi1_node18 = 0;
 int16_t ValAi2_node18 = 0;
-int Conf1_node18 = 0;
-int Conf2_node18 = 0;
-int Conf3_node18 = 0;
-int Conf4_node18 = 0;
-int Conf5_node18 = 0;
-int Conf6_node18 = 0;
-int Conf7_node18 = 0;
-int Conf8_node18 = 0;
-int digIN5_node18 = 0;
-int digIN6_node18 = 0;
-int digIN7_node18 = 0;
-int digIN8_node18 = 0;
-int digOUT1_node18 = 0;
-int digOUT2_node18 = 0;
-int digOUT3_node18 = 0;
-int digOUT4_node18 = 0;
+int DigDir_1_node18 = 0;
+int DigDir_2_node18 = 0;
+int DigDir_3_node18 = 0;
+int DigDir_4_node18 = 0;
+int DigDir_5_node18 = 0;
+int DigDir_6_node18 = 0;
+int DigDir_7_node18 = 0;
+int DigDir_8_node18 = 0;
+int DigIn_2_node18 = 0;
+int DigIn_3_node18 = 0;
+int DigIn_6_node18 = 0;
+int DigIn_7_node18 = 0;
+int DigOut_1_node18 = 0;
+int DigOut_4_node18 = 0;
+int DigOut_5_node18 = 0;
+int DigOut_8_node18 = 0;
 u_int16_t Addr_node19 = 0;
 u_int16_t Life_node19 = 0;
-u_int16_t ConfAi1_node19 = 0;
-u_int16_t ConfAi2_node19 = 0;
+u_int16_t AnInCnf_1_node19 = 0;
+u_int16_t AnInCnf_2_node19 = 0;
 int16_t ValAi1_node19 = 0;
 int16_t ValAi2_node19 = 0;
-int Conf1_node19 = 0;
-int Conf2_node19 = 0;
-int Conf3_node19 = 0;
-int Conf4_node19 = 0;
-int Conf5_node19 = 0;
-int Conf6_node19 = 0;
-int Conf7_node19 = 0;
-int Conf8_node19 = 0;
-int digIN5_node19 = 0;
-int digIN6_node19 = 0;
-int digIN7_node19 = 0;
-int digIN8_node19 = 0;
-int digOUT1_node19 = 0;
-int digOUT2_node19 = 0;
-int digOUT3_node19 = 0;
-int digOUT4_node19 = 0;
+int DigDir_1_node19 = 0;
+int DigDir_2_node19 = 0;
+int DigDir_3_node19 = 0;
+int DigDir_4_node19 = 0;
+int DigDir_5_node19 = 0;
+int DigDir_6_node19 = 0;
+int DigDir_7_node19 = 0;
+int DigDir_8_node19 = 0;
+int DigIn_2_node19 = 0;
+int DigIn_3_node19 = 0;
+int DigIn_6_node19 = 0;
+int DigIn_7_node19 = 0;
+int DigOut_1_node19 = 0;
+int DigOut_4_node19 = 0;
+int DigOut_5_node19 = 0;
+int DigOut_8_node19 = 0;
 u_int16_t Addr_node20 = 0;
 u_int16_t Life_node20 = 0;
-u_int16_t ConfAi1_node20 = 0;
-u_int16_t ConfAi2_node20 = 0;
+u_int16_t AnInCnf_1_node20 = 0;
+u_int16_t AnInCnf_2_node20 = 0;
 int16_t ValAi1_node20 = 0;
 int16_t ValAi2_node20 = 0;
-int Conf1_node20 = 0;
-int Conf2_node20 = 0;
-int Conf3_node20 = 0;
-int Conf4_node20 = 0;
-int Conf5_node20 = 0;
-int Conf6_node20 = 0;
-int Conf7_node20 = 0;
-int Conf8_node20 = 0;
-int digIN5_node20 = 0;
-int digIN6_node20 = 0;
-int digIN7_node20 = 0;
-int digIN8_node20 = 0;
-int digOUT1_node20 = 0;
-int digOUT2_node20 = 0;
-int digOUT3_node20 = 0;
-int digOUT4_node20 = 0;
+int DigDir_1_node20 = 0;
+int DigDir_2_node20 = 0;
+int DigDir_3_node20 = 0;
+int DigDir_4_node20 = 0;
+int DigDir_5_node20 = 0;
+int DigDir_6_node20 = 0;
+int DigDir_7_node20 = 0;
+int DigDir_8_node20 = 0;
+int DigIn_2_node20 = 0;
+int DigIn_3_node20 = 0;
+int DigIn_6_node20 = 0;
+int DigIn_7_node20 = 0;
+int DigOut_1_node20 = 0;
+int DigOut_4_node20 = 0;
+int DigOut_5_node20 = 0;
+int DigOut_8_node20 = 0;
 u_int16_t Addr_node21 = 0;
 u_int16_t Life_node21 = 0;
-u_int16_t ConfAi1_node21 = 0;
-u_int16_t ConfAi2_node21 = 0;
+u_int16_t AnInCnf_1_node21 = 0;
+u_int16_t AnInCnf_2_node21 = 0;
 int16_t ValAi1_node21 = 0;
 int16_t ValAi2_node21 = 0;
-int Conf1_node21 = 0;
-int Conf2_node21 = 0;
-int Conf3_node21 = 0;
-int Conf4_node21 = 0;
-int Conf5_node21 = 0;
-int Conf6_node21 = 0;
-int Conf7_node21 = 0;
-int Conf8_node21 = 0;
-int digIN5_node21 = 0;
-int digIN6_node21 = 0;
-int digIN7_node21 = 0;
-int digIN8_node21 = 0;
-int digOUT1_node21 = 0;
-int digOUT2_node21 = 0;
-int digOUT3_node21 = 0;
-int digOUT4_node21 = 0;
+int DigDir_1_node21 = 0;
+int DigDir_2_node21 = 0;
+int DigDir_3_node21 = 0;
+int DigDir_4_node21 = 0;
+int DigDir_5_node21 = 0;
+int DigDir_6_node21 = 0;
+int DigDir_7_node21 = 0;
+int DigDir_8_node21 = 0;
+int DigIn_2_node21 = 0;
+int DigIn_3_node21 = 0;
+int DigIn_6_node21 = 0;
+int DigIn_7_node21 = 0;
+int DigOut_1_node21 = 0;
+int DigOut_4_node21 = 0;
+int DigOut_5_node21 = 0;
+int DigOut_8_node21 = 0;
 u_int16_t Addr_node22 = 0;
 u_int16_t Life_node22 = 0;
-u_int16_t ConfAi1_node22 = 0;
-u_int16_t ConfAi2_node22 = 0;
+u_int16_t AnInCnf_1_node22 = 0;
+u_int16_t AnInCnf_2_node22 = 0;
 int16_t ValAi1_node22 = 0;
 int16_t ValAi2_node22 = 0;
-int Conf1_node22 = 0;
-int Conf2_node22 = 0;
-int Conf3_node22 = 0;
-int Conf4_node22 = 0;
-int Conf5_node22 = 0;
-int Conf6_node22 = 0;
-int Conf7_node22 = 0;
-int Conf8_node22 = 0;
-int digIN5_node22 = 0;
-int digIN6_node22 = 0;
-int digIN7_node22 = 0;
-int digIN8_node22 = 0;
-int digOUT1_node22 = 0;
-int digOUT2_node22 = 0;
-int digOUT3_node22 = 0;
-int digOUT4_node22 = 0;
+int DigDir_1_node22 = 0;
+int DigDir_2_node22 = 0;
+int DigDir_3_node22 = 0;
+int DigDir_4_node22 = 0;
+int DigDir_5_node22 = 0;
+int DigDir_6_node22 = 0;
+int DigDir_7_node22 = 0;
+int DigDir_8_node22 = 0;
+int DigIn_2_node22 = 0;
+int DigIn_3_node22 = 0;
+int DigIn_6_node22 = 0;
+int DigIn_7_node22 = 0;
+int DigOut_1_node22 = 0;
+int DigOut_4_node22 = 0;
+int DigOut_5_node22 = 0;
+int DigOut_8_node22 = 0;
 u_int16_t Addr_node23 = 0;
 u_int16_t Life_node23 = 0;
-u_int16_t ConfAi1_node23 = 0;
-u_int16_t ConfAi2_node23 = 0;
+u_int16_t AnInCnf_1_node23 = 0;
+u_int16_t AnInCnf_2_node23 = 0;
 int16_t ValAi1_node23 = 0;
 int16_t ValAi2_node23 = 0;
-int Conf1_node23 = 0;
-int Conf2_node23 = 0;
-int Conf3_node23 = 0;
-int Conf4_node23 = 0;
-int Conf5_node23 = 0;
-int Conf6_node23 = 0;
-int Conf7_node23 = 0;
-int Conf8_node23 = 0;
-int digIN5_node23 = 0;
-int digIN6_node23 = 0;
-int digIN7_node23 = 0;
-int digIN8_node23 = 0;
-int digOUT1_node23 = 0;
-int digOUT2_node23 = 0;
-int digOUT3_node23 = 0;
-int digOUT4_node23 = 0;
+int DigDir_1_node23 = 0;
+int DigDir_2_node23 = 0;
+int DigDir_3_node23 = 0;
+int DigDir_4_node23 = 0;
+int DigDir_5_node23 = 0;
+int DigDir_6_node23 = 0;
+int DigDir_7_node23 = 0;
+int DigDir_8_node23 = 0;
+int DigIn_2_node23 = 0;
+int DigIn_3_node23 = 0;
+int DigIn_6_node23 = 0;
+int DigIn_7_node23 = 0;
+int DigOut_1_node23 = 0;
+int DigOut_4_node23 = 0;
+int DigOut_5_node23 = 0;
+int DigOut_8_node23 = 0;
 u_int16_t Addr_node24 = 0;
 u_int16_t Life_node24 = 0;
-u_int16_t ConfAi1_node24 = 0;
-u_int16_t ConfAi2_node24 = 0;
+u_int16_t AnInCnf_1_node24 = 0;
+u_int16_t AnInCnf_2_node24 = 0;
 int16_t ValAi1_node24 = 0;
 int16_t ValAi2_node24 = 0;
-int Conf1_node24 = 0;
-int Conf2_node24 = 0;
-int Conf3_node24 = 0;
-int Conf4_node24 = 0;
-int Conf5_node24 = 0;
-int Conf6_node24 = 0;
-int Conf7_node24 = 0;
-int Conf8_node24 = 0;
-int digIN5_node24 = 0;
-int digIN6_node24 = 0;
-int digIN7_node24 = 0;
-int digIN8_node24 = 0;
-int digOUT1_node24 = 0;
-int digOUT2_node24 = 0;
-int digOUT3_node24 = 0;
-int digOUT4_node24 = 0;
+int DigDir_1_node24 = 0;
+int DigDir_2_node24 = 0;
+int DigDir_3_node24 = 0;
+int DigDir_4_node24 = 0;
+int DigDir_5_node24 = 0;
+int DigDir_6_node24 = 0;
+int DigDir_7_node24 = 0;
+int DigDir_8_node24 = 0;
+int DigIn_2_node24 = 0;
+int DigIn_3_node24 = 0;
+int DigIn_6_node24 = 0;
+int DigIn_7_node24 = 0;
+int DigOut_1_node24 = 0;
+int DigOut_4_node24 = 0;
+int DigOut_5_node24 = 0;
+int DigOut_8_node24 = 0;
 u_int32_t RTU0_TYPE_PORT = 0;
 u_int32_t RTU0_BAUDRATE = 0;
 u_int32_t RTU0_STATUS = 0;
@@ -858,39 +858,39 @@ return getStatus(ID_Life_node01);
 }
 
 
-int doWrite_ConfAi1_node01(u_int16_t value)
+int doWrite_AnInCnf_1_node01(u_int16_t value)
 {
-return doWrite(ID_ConfAi1_node01,  &value);
+return doWrite(ID_AnInCnf_1_node01,  &value);
 }
 
 
-int addWrite_ConfAi1_node01(u_int16_t value)
+int addWrite_AnInCnf_1_node01(u_int16_t value)
 {
-return addWrite(ID_ConfAi1_node01, &value);
+return addWrite(ID_AnInCnf_1_node01, &value);
 }
 
 
-int getStatus_ConfAi1_node01()
+int getStatus_AnInCnf_1_node01()
 {
-return getStatus(ID_ConfAi1_node01);
+return getStatus(ID_AnInCnf_1_node01);
 }
 
 
-int doWrite_ConfAi2_node01(u_int16_t value)
+int doWrite_AnInCnf_2_node01(u_int16_t value)
 {
-return doWrite(ID_ConfAi2_node01,  &value);
+return doWrite(ID_AnInCnf_2_node01,  &value);
 }
 
 
-int addWrite_ConfAi2_node01(u_int16_t value)
+int addWrite_AnInCnf_2_node01(u_int16_t value)
 {
-return addWrite(ID_ConfAi2_node01, &value);
+return addWrite(ID_AnInCnf_2_node01, &value);
 }
 
 
-int getStatus_ConfAi2_node01()
+int getStatus_AnInCnf_2_node01()
 {
-return getStatus(ID_ConfAi2_node01);
+return getStatus(ID_AnInCnf_2_node01);
 }
 
 
@@ -930,291 +930,291 @@ return getStatus(ID_ValAi2_node01);
 }
 
 
-int doWrite_Conf1_node01(int value)
+int doWrite_DigDir_1_node01(int value)
 {
-return doWrite(ID_Conf1_node01,  &value);
+return doWrite(ID_DigDir_1_node01,  &value);
 }
 
 
-int addWrite_Conf1_node01(int value)
+int addWrite_DigDir_1_node01(int value)
 {
-return addWrite(ID_Conf1_node01, &value);
+return addWrite(ID_DigDir_1_node01, &value);
 }
 
 
-int getStatus_Conf1_node01()
+int getStatus_DigDir_1_node01()
 {
-return getStatus(ID_Conf1_node01);
+return getStatus(ID_DigDir_1_node01);
 }
 
 
-int doWrite_Conf2_node01(int value)
+int doWrite_DigDir_2_node01(int value)
 {
-return doWrite(ID_Conf2_node01,  &value);
+return doWrite(ID_DigDir_2_node01,  &value);
 }
 
 
-int addWrite_Conf2_node01(int value)
+int addWrite_DigDir_2_node01(int value)
 {
-return addWrite(ID_Conf2_node01, &value);
+return addWrite(ID_DigDir_2_node01, &value);
 }
 
 
-int getStatus_Conf2_node01()
+int getStatus_DigDir_2_node01()
 {
-return getStatus(ID_Conf2_node01);
+return getStatus(ID_DigDir_2_node01);
 }
 
 
-int doWrite_Conf3_node01(int value)
+int doWrite_DigDir_3_node01(int value)
 {
-return doWrite(ID_Conf3_node01,  &value);
+return doWrite(ID_DigDir_3_node01,  &value);
 }
 
 
-int addWrite_Conf3_node01(int value)
+int addWrite_DigDir_3_node01(int value)
 {
-return addWrite(ID_Conf3_node01, &value);
+return addWrite(ID_DigDir_3_node01, &value);
 }
 
 
-int getStatus_Conf3_node01()
+int getStatus_DigDir_3_node01()
 {
-return getStatus(ID_Conf3_node01);
+return getStatus(ID_DigDir_3_node01);
 }
 
 
-int doWrite_Conf4_node01(int value)
+int doWrite_DigDir_4_node01(int value)
 {
-return doWrite(ID_Conf4_node01,  &value);
+return doWrite(ID_DigDir_4_node01,  &value);
 }
 
 
-int addWrite_Conf4_node01(int value)
+int addWrite_DigDir_4_node01(int value)
 {
-return addWrite(ID_Conf4_node01, &value);
+return addWrite(ID_DigDir_4_node01, &value);
 }
 
 
-int getStatus_Conf4_node01()
+int getStatus_DigDir_4_node01()
 {
-return getStatus(ID_Conf4_node01);
+return getStatus(ID_DigDir_4_node01);
 }
 
 
-int doWrite_Conf5_node01(int value)
+int doWrite_DigDir_5_node01(int value)
 {
-return doWrite(ID_Conf5_node01,  &value);
+return doWrite(ID_DigDir_5_node01,  &value);
 }
 
 
-int addWrite_Conf5_node01(int value)
+int addWrite_DigDir_5_node01(int value)
 {
-return addWrite(ID_Conf5_node01, &value);
+return addWrite(ID_DigDir_5_node01, &value);
 }
 
 
-int getStatus_Conf5_node01()
+int getStatus_DigDir_5_node01()
 {
-return getStatus(ID_Conf5_node01);
+return getStatus(ID_DigDir_5_node01);
 }
 
 
-int doWrite_Conf6_node01(int value)
+int doWrite_DigDir_6_node01(int value)
 {
-return doWrite(ID_Conf6_node01,  &value);
+return doWrite(ID_DigDir_6_node01,  &value);
 }
 
 
-int addWrite_Conf6_node01(int value)
+int addWrite_DigDir_6_node01(int value)
 {
-return addWrite(ID_Conf6_node01, &value);
+return addWrite(ID_DigDir_6_node01, &value);
 }
 
 
-int getStatus_Conf6_node01()
+int getStatus_DigDir_6_node01()
 {
-return getStatus(ID_Conf6_node01);
+return getStatus(ID_DigDir_6_node01);
 }
 
 
-int doWrite_Conf7_node01(int value)
+int doWrite_DigDir_7_node01(int value)
 {
-return doWrite(ID_Conf7_node01,  &value);
+return doWrite(ID_DigDir_7_node01,  &value);
 }
 
 
-int addWrite_Conf7_node01(int value)
+int addWrite_DigDir_7_node01(int value)
 {
-return addWrite(ID_Conf7_node01, &value);
+return addWrite(ID_DigDir_7_node01, &value);
 }
 
 
-int getStatus_Conf7_node01()
+int getStatus_DigDir_7_node01()
 {
-return getStatus(ID_Conf7_node01);
+return getStatus(ID_DigDir_7_node01);
 }
 
 
-int doWrite_Conf8_node01(int value)
+int doWrite_DigDir_8_node01(int value)
 {
-return doWrite(ID_Conf8_node01,  &value);
+return doWrite(ID_DigDir_8_node01,  &value);
 }
 
 
-int addWrite_Conf8_node01(int value)
+int addWrite_DigDir_8_node01(int value)
 {
-return addWrite(ID_Conf8_node01, &value);
+return addWrite(ID_DigDir_8_node01, &value);
 }
 
 
-int getStatus_Conf8_node01()
+int getStatus_DigDir_8_node01()
 {
-return getStatus(ID_Conf8_node01);
+return getStatus(ID_DigDir_8_node01);
 }
 
 
-int doWrite_digIN5_node01(int value)
+int doWrite_DigIn_2_node01(int value)
 {
-return doWrite(ID_digIN5_node01,  &value);
+return doWrite(ID_DigIn_2_node01,  &value);
 }
 
 
-int addWrite_digIN5_node01(int value)
+int addWrite_DigIn_2_node01(int value)
 {
-return addWrite(ID_digIN5_node01, &value);
+return addWrite(ID_DigIn_2_node01, &value);
 }
 
 
-int getStatus_digIN5_node01()
+int getStatus_DigIn_2_node01()
 {
-return getStatus(ID_digIN5_node01);
+return getStatus(ID_DigIn_2_node01);
 }
 
 
-int doWrite_digIN6_node01(int value)
+int doWrite_DigIn_3_node01(int value)
 {
-return doWrite(ID_digIN6_node01,  &value);
+return doWrite(ID_DigIn_3_node01,  &value);
 }
 
 
-int addWrite_digIN6_node01(int value)
+int addWrite_DigIn_3_node01(int value)
 {
-return addWrite(ID_digIN6_node01, &value);
+return addWrite(ID_DigIn_3_node01, &value);
 }
 
 
-int getStatus_digIN6_node01()
+int getStatus_DigIn_3_node01()
 {
-return getStatus(ID_digIN6_node01);
+return getStatus(ID_DigIn_3_node01);
 }
 
 
-int doWrite_digIN7_node01(int value)
+int doWrite_DigIn_6_node01(int value)
 {
-return doWrite(ID_digIN7_node01,  &value);
+return doWrite(ID_DigIn_6_node01,  &value);
 }
 
 
-int addWrite_digIN7_node01(int value)
+int addWrite_DigIn_6_node01(int value)
 {
-return addWrite(ID_digIN7_node01, &value);
+return addWrite(ID_DigIn_6_node01, &value);
 }
 
 
-int getStatus_digIN7_node01()
+int getStatus_DigIn_6_node01()
 {
-return getStatus(ID_digIN7_node01);
+return getStatus(ID_DigIn_6_node01);
 }
 
 
-int doWrite_digIN8_node01(int value)
+int doWrite_DigIn_7_node01(int value)
 {
-return doWrite(ID_digIN8_node01,  &value);
+return doWrite(ID_DigIn_7_node01,  &value);
 }
 
 
-int addWrite_digIN8_node01(int value)
+int addWrite_DigIn_7_node01(int value)
 {
-return addWrite(ID_digIN8_node01, &value);
+return addWrite(ID_DigIn_7_node01, &value);
 }
 
 
-int getStatus_digIN8_node01()
+int getStatus_DigIn_7_node01()
 {
-return getStatus(ID_digIN8_node01);
+return getStatus(ID_DigIn_7_node01);
 }
 
 
-int doWrite_digOUT1_node01(int value)
+int doWrite_DigOut_1_node01(int value)
 {
-return doWrite(ID_digOUT1_node01,  &value);
+return doWrite(ID_DigOut_1_node01,  &value);
 }
 
 
-int addWrite_digOUT1_node01(int value)
+int addWrite_DigOut_1_node01(int value)
 {
-return addWrite(ID_digOUT1_node01, &value);
+return addWrite(ID_DigOut_1_node01, &value);
 }
 
 
-int getStatus_digOUT1_node01()
+int getStatus_DigOut_1_node01()
 {
-return getStatus(ID_digOUT1_node01);
+return getStatus(ID_DigOut_1_node01);
 }
 
 
-int doWrite_digOUT2_node01(int value)
+int doWrite_DigOut_4_node01(int value)
 {
-return doWrite(ID_digOUT2_node01,  &value);
+return doWrite(ID_DigOut_4_node01,  &value);
 }
 
 
-int addWrite_digOUT2_node01(int value)
+int addWrite_DigOut_4_node01(int value)
 {
-return addWrite(ID_digOUT2_node01, &value);
+return addWrite(ID_DigOut_4_node01, &value);
 }
 
 
-int getStatus_digOUT2_node01()
+int getStatus_DigOut_4_node01()
 {
-return getStatus(ID_digOUT2_node01);
+return getStatus(ID_DigOut_4_node01);
 }
 
 
-int doWrite_digOUT3_node01(int value)
+int doWrite_DigOut_5_node01(int value)
 {
-return doWrite(ID_digOUT3_node01,  &value);
+return doWrite(ID_DigOut_5_node01,  &value);
 }
 
 
-int addWrite_digOUT3_node01(int value)
+int addWrite_DigOut_5_node01(int value)
 {
-return addWrite(ID_digOUT3_node01, &value);
+return addWrite(ID_DigOut_5_node01, &value);
 }
 
 
-int getStatus_digOUT3_node01()
+int getStatus_DigOut_5_node01()
 {
-return getStatus(ID_digOUT3_node01);
+return getStatus(ID_DigOut_5_node01);
 }
 
 
-int doWrite_digOUT4_node01(int value)
+int doWrite_DigOut_8_node01(int value)
 {
-return doWrite(ID_digOUT4_node01,  &value);
+return doWrite(ID_DigOut_8_node01,  &value);
 }
 
 
-int addWrite_digOUT4_node01(int value)
+int addWrite_DigOut_8_node01(int value)
 {
-return addWrite(ID_digOUT4_node01, &value);
+return addWrite(ID_DigOut_8_node01, &value);
 }
 
 
-int getStatus_digOUT4_node01()
+int getStatus_DigOut_8_node01()
 {
-return getStatus(ID_digOUT4_node01);
+return getStatus(ID_DigOut_8_node01);
 }
 
 
@@ -1254,39 +1254,39 @@ return getStatus(ID_Life_node02);
 }
 
 
-int doWrite_ConfAi1_node02(u_int16_t value)
+int doWrite_AnInCnf_1_node02(u_int16_t value)
 {
-return doWrite(ID_ConfAi1_node02,  &value);
+return doWrite(ID_AnInCnf_1_node02,  &value);
 }
 
 
-int addWrite_ConfAi1_node02(u_int16_t value)
+int addWrite_AnInCnf_1_node02(u_int16_t value)
 {
-return addWrite(ID_ConfAi1_node02, &value);
+return addWrite(ID_AnInCnf_1_node02, &value);
 }
 
 
-int getStatus_ConfAi1_node02()
+int getStatus_AnInCnf_1_node02()
 {
-return getStatus(ID_ConfAi1_node02);
+return getStatus(ID_AnInCnf_1_node02);
 }
 
 
-int doWrite_ConfAi2_node02(u_int16_t value)
+int doWrite_AnInCnf_2_node02(u_int16_t value)
 {
-return doWrite(ID_ConfAi2_node02,  &value);
+return doWrite(ID_AnInCnf_2_node02,  &value);
 }
 
 
-int addWrite_ConfAi2_node02(u_int16_t value)
+int addWrite_AnInCnf_2_node02(u_int16_t value)
 {
-return addWrite(ID_ConfAi2_node02, &value);
+return addWrite(ID_AnInCnf_2_node02, &value);
 }
 
 
-int getStatus_ConfAi2_node02()
+int getStatus_AnInCnf_2_node02()
 {
-return getStatus(ID_ConfAi2_node02);
+return getStatus(ID_AnInCnf_2_node02);
 }
 
 
@@ -1326,291 +1326,291 @@ return getStatus(ID_ValAi2_node02);
 }
 
 
-int doWrite_Conf1_node02(int value)
+int doWrite_DigDir_1_node02(int value)
 {
-return doWrite(ID_Conf1_node02,  &value);
+return doWrite(ID_DigDir_1_node02,  &value);
 }
 
 
-int addWrite_Conf1_node02(int value)
+int addWrite_DigDir_1_node02(int value)
 {
-return addWrite(ID_Conf1_node02, &value);
+return addWrite(ID_DigDir_1_node02, &value);
 }
 
 
-int getStatus_Conf1_node02()
+int getStatus_DigDir_1_node02()
 {
-return getStatus(ID_Conf1_node02);
+return getStatus(ID_DigDir_1_node02);
 }
 
 
-int doWrite_Conf2_node02(int value)
+int doWrite_DigDir_2_node02(int value)
 {
-return doWrite(ID_Conf2_node02,  &value);
+return doWrite(ID_DigDir_2_node02,  &value);
 }
 
 
-int addWrite_Conf2_node02(int value)
+int addWrite_DigDir_2_node02(int value)
 {
-return addWrite(ID_Conf2_node02, &value);
+return addWrite(ID_DigDir_2_node02, &value);
 }
 
 
-int getStatus_Conf2_node02()
+int getStatus_DigDir_2_node02()
 {
-return getStatus(ID_Conf2_node02);
+return getStatus(ID_DigDir_2_node02);
 }
 
 
-int doWrite_Conf3_node02(int value)
+int doWrite_DigDir_3_node02(int value)
 {
-return doWrite(ID_Conf3_node02,  &value);
+return doWrite(ID_DigDir_3_node02,  &value);
 }
 
 
-int addWrite_Conf3_node02(int value)
+int addWrite_DigDir_3_node02(int value)
 {
-return addWrite(ID_Conf3_node02, &value);
+return addWrite(ID_DigDir_3_node02, &value);
 }
 
 
-int getStatus_Conf3_node02()
+int getStatus_DigDir_3_node02()
 {
-return getStatus(ID_Conf3_node02);
+return getStatus(ID_DigDir_3_node02);
 }
 
 
-int doWrite_Conf4_node02(int value)
+int doWrite_DigDir_4_node02(int value)
 {
-return doWrite(ID_Conf4_node02,  &value);
+return doWrite(ID_DigDir_4_node02,  &value);
 }
 
 
-int addWrite_Conf4_node02(int value)
+int addWrite_DigDir_4_node02(int value)
 {
-return addWrite(ID_Conf4_node02, &value);
+return addWrite(ID_DigDir_4_node02, &value);
 }
 
 
-int getStatus_Conf4_node02()
+int getStatus_DigDir_4_node02()
 {
-return getStatus(ID_Conf4_node02);
+return getStatus(ID_DigDir_4_node02);
 }
 
 
-int doWrite_Conf5_node02(int value)
+int doWrite_DigDir_5_node02(int value)
 {
-return doWrite(ID_Conf5_node02,  &value);
+return doWrite(ID_DigDir_5_node02,  &value);
 }
 
 
-int addWrite_Conf5_node02(int value)
+int addWrite_DigDir_5_node02(int value)
 {
-return addWrite(ID_Conf5_node02, &value);
+return addWrite(ID_DigDir_5_node02, &value);
 }
 
 
-int getStatus_Conf5_node02()
+int getStatus_DigDir_5_node02()
 {
-return getStatus(ID_Conf5_node02);
+return getStatus(ID_DigDir_5_node02);
 }
 
 
-int doWrite_Conf6_node02(int value)
+int doWrite_DigDir_6_node02(int value)
 {
-return doWrite(ID_Conf6_node02,  &value);
+return doWrite(ID_DigDir_6_node02,  &value);
 }
 
 
-int addWrite_Conf6_node02(int value)
+int addWrite_DigDir_6_node02(int value)
 {
-return addWrite(ID_Conf6_node02, &value);
+return addWrite(ID_DigDir_6_node02, &value);
 }
 
 
-int getStatus_Conf6_node02()
+int getStatus_DigDir_6_node02()
 {
-return getStatus(ID_Conf6_node02);
+return getStatus(ID_DigDir_6_node02);
 }
 
 
-int doWrite_Conf7_node02(int value)
+int doWrite_DigDir_7_node02(int value)
 {
-return doWrite(ID_Conf7_node02,  &value);
+return doWrite(ID_DigDir_7_node02,  &value);
 }
 
 
-int addWrite_Conf7_node02(int value)
+int addWrite_DigDir_7_node02(int value)
 {
-return addWrite(ID_Conf7_node02, &value);
+return addWrite(ID_DigDir_7_node02, &value);
 }
 
 
-int getStatus_Conf7_node02()
+int getStatus_DigDir_7_node02()
 {
-return getStatus(ID_Conf7_node02);
+return getStatus(ID_DigDir_7_node02);
 }
 
 
-int doWrite_Conf8_node02(int value)
+int doWrite_DigDir_8_node02(int value)
 {
-return doWrite(ID_Conf8_node02,  &value);
+return doWrite(ID_DigDir_8_node02,  &value);
 }
 
 
-int addWrite_Conf8_node02(int value)
+int addWrite_DigDir_8_node02(int value)
 {
-return addWrite(ID_Conf8_node02, &value);
+return addWrite(ID_DigDir_8_node02, &value);
 }
 
 
-int getStatus_Conf8_node02()
+int getStatus_DigDir_8_node02()
 {
-return getStatus(ID_Conf8_node02);
+return getStatus(ID_DigDir_8_node02);
 }
 
 
-int doWrite_digIN5_node02(int value)
+int doWrite_DigIn_2_node02(int value)
 {
-return doWrite(ID_digIN5_node02,  &value);
+return doWrite(ID_DigIn_2_node02,  &value);
 }
 
 
-int addWrite_digIN5_node02(int value)
+int addWrite_DigIn_2_node02(int value)
 {
-return addWrite(ID_digIN5_node02, &value);
+return addWrite(ID_DigIn_2_node02, &value);
 }
 
 
-int getStatus_digIN5_node02()
+int getStatus_DigIn_2_node02()
 {
-return getStatus(ID_digIN5_node02);
+return getStatus(ID_DigIn_2_node02);
 }
 
 
-int doWrite_digIN6_node02(int value)
+int doWrite_DigIn_3_node02(int value)
 {
-return doWrite(ID_digIN6_node02,  &value);
+return doWrite(ID_DigIn_3_node02,  &value);
 }
 
 
-int addWrite_digIN6_node02(int value)
+int addWrite_DigIn_3_node02(int value)
 {
-return addWrite(ID_digIN6_node02, &value);
+return addWrite(ID_DigIn_3_node02, &value);
 }
 
 
-int getStatus_digIN6_node02()
+int getStatus_DigIn_3_node02()
 {
-return getStatus(ID_digIN6_node02);
+return getStatus(ID_DigIn_3_node02);
 }
 
 
-int doWrite_digIN7_node02(int value)
+int doWrite_DigIn_6_node02(int value)
 {
-return doWrite(ID_digIN7_node02,  &value);
+return doWrite(ID_DigIn_6_node02,  &value);
 }
 
 
-int addWrite_digIN7_node02(int value)
+int addWrite_DigIn_6_node02(int value)
 {
-return addWrite(ID_digIN7_node02, &value);
+return addWrite(ID_DigIn_6_node02, &value);
 }
 
 
-int getStatus_digIN7_node02()
+int getStatus_DigIn_6_node02()
 {
-return getStatus(ID_digIN7_node02);
+return getStatus(ID_DigIn_6_node02);
 }
 
 
-int doWrite_digIN8_node02(int value)
+int doWrite_DigIn_7_node02(int value)
 {
-return doWrite(ID_digIN8_node02,  &value);
+return doWrite(ID_DigIn_7_node02,  &value);
 }
 
 
-int addWrite_digIN8_node02(int value)
+int addWrite_DigIn_7_node02(int value)
 {
-return addWrite(ID_digIN8_node02, &value);
+return addWrite(ID_DigIn_7_node02, &value);
 }
 
 
-int getStatus_digIN8_node02()
+int getStatus_DigIn_7_node02()
 {
-return getStatus(ID_digIN8_node02);
+return getStatus(ID_DigIn_7_node02);
 }
 
 
-int doWrite_digOUT1_node02(int value)
+int doWrite_DigOut_1_node02(int value)
 {
-return doWrite(ID_digOUT1_node02,  &value);
+return doWrite(ID_DigOut_1_node02,  &value);
 }
 
 
-int addWrite_digOUT1_node02(int value)
+int addWrite_DigOut_1_node02(int value)
 {
-return addWrite(ID_digOUT1_node02, &value);
+return addWrite(ID_DigOut_1_node02, &value);
 }
 
 
-int getStatus_digOUT1_node02()
+int getStatus_DigOut_1_node02()
 {
-return getStatus(ID_digOUT1_node02);
+return getStatus(ID_DigOut_1_node02);
 }
 
 
-int doWrite_digOUT2_node02(int value)
+int doWrite_DigOut_4_node02(int value)
 {
-return doWrite(ID_digOUT2_node02,  &value);
+return doWrite(ID_DigOut_4_node02,  &value);
 }
 
 
-int addWrite_digOUT2_node02(int value)
+int addWrite_DigOut_4_node02(int value)
 {
-return addWrite(ID_digOUT2_node02, &value);
+return addWrite(ID_DigOut_4_node02, &value);
 }
 
 
-int getStatus_digOUT2_node02()
+int getStatus_DigOut_4_node02()
 {
-return getStatus(ID_digOUT2_node02);
+return getStatus(ID_DigOut_4_node02);
 }
 
 
-int doWrite_digOUT3_node02(int value)
+int doWrite_DigOut_5_node02(int value)
 {
-return doWrite(ID_digOUT3_node02,  &value);
+return doWrite(ID_DigOut_5_node02,  &value);
 }
 
 
-int addWrite_digOUT3_node02(int value)
+int addWrite_DigOut_5_node02(int value)
 {
-return addWrite(ID_digOUT3_node02, &value);
+return addWrite(ID_DigOut_5_node02, &value);
 }
 
 
-int getStatus_digOUT3_node02()
+int getStatus_DigOut_5_node02()
 {
-return getStatus(ID_digOUT3_node02);
+return getStatus(ID_DigOut_5_node02);
 }
 
 
-int doWrite_digOUT4_node02(int value)
+int doWrite_DigOut_8_node02(int value)
 {
-return doWrite(ID_digOUT4_node02,  &value);
+return doWrite(ID_DigOut_8_node02,  &value);
 }
 
 
-int addWrite_digOUT4_node02(int value)
+int addWrite_DigOut_8_node02(int value)
 {
-return addWrite(ID_digOUT4_node02, &value);
+return addWrite(ID_DigOut_8_node02, &value);
 }
 
 
-int getStatus_digOUT4_node02()
+int getStatus_DigOut_8_node02()
 {
-return getStatus(ID_digOUT4_node02);
+return getStatus(ID_DigOut_8_node02);
 }
 
 
@@ -1650,39 +1650,39 @@ return getStatus(ID_Life_node03);
 }
 
 
-int doWrite_ConfAi1_node03(u_int16_t value)
+int doWrite_AnInCnf_1_node03(u_int16_t value)
 {
-return doWrite(ID_ConfAi1_node03,  &value);
+return doWrite(ID_AnInCnf_1_node03,  &value);
 }
 
 
-int addWrite_ConfAi1_node03(u_int16_t value)
+int addWrite_AnInCnf_1_node03(u_int16_t value)
 {
-return addWrite(ID_ConfAi1_node03, &value);
+return addWrite(ID_AnInCnf_1_node03, &value);
 }
 
 
-int getStatus_ConfAi1_node03()
+int getStatus_AnInCnf_1_node03()
 {
-return getStatus(ID_ConfAi1_node03);
+return getStatus(ID_AnInCnf_1_node03);
 }
 
 
-int doWrite_ConfAi2_node03(u_int16_t value)
+int doWrite_AnInCnf_2_node03(u_int16_t value)
 {
-return doWrite(ID_ConfAi2_node03,  &value);
+return doWrite(ID_AnInCnf_2_node03,  &value);
 }
 
 
-int addWrite_ConfAi2_node03(u_int16_t value)
+int addWrite_AnInCnf_2_node03(u_int16_t value)
 {
-return addWrite(ID_ConfAi2_node03, &value);
+return addWrite(ID_AnInCnf_2_node03, &value);
 }
 
 
-int getStatus_ConfAi2_node03()
+int getStatus_AnInCnf_2_node03()
 {
-return getStatus(ID_ConfAi2_node03);
+return getStatus(ID_AnInCnf_2_node03);
 }
 
 
@@ -1722,291 +1722,291 @@ return getStatus(ID_ValAi2_node03);
 }
 
 
-int doWrite_Conf1_node03(int value)
+int doWrite_DigDir_1_node03(int value)
 {
-return doWrite(ID_Conf1_node03,  &value);
+return doWrite(ID_DigDir_1_node03,  &value);
 }
 
 
-int addWrite_Conf1_node03(int value)
+int addWrite_DigDir_1_node03(int value)
 {
-return addWrite(ID_Conf1_node03, &value);
+return addWrite(ID_DigDir_1_node03, &value);
 }
 
 
-int getStatus_Conf1_node03()
+int getStatus_DigDir_1_node03()
 {
-return getStatus(ID_Conf1_node03);
+return getStatus(ID_DigDir_1_node03);
 }
 
 
-int doWrite_Conf2_node03(int value)
+int doWrite_DigDir_2_node03(int value)
 {
-return doWrite(ID_Conf2_node03,  &value);
+return doWrite(ID_DigDir_2_node03,  &value);
 }
 
 
-int addWrite_Conf2_node03(int value)
+int addWrite_DigDir_2_node03(int value)
 {
-return addWrite(ID_Conf2_node03, &value);
+return addWrite(ID_DigDir_2_node03, &value);
 }
 
 
-int getStatus_Conf2_node03()
+int getStatus_DigDir_2_node03()
 {
-return getStatus(ID_Conf2_node03);
+return getStatus(ID_DigDir_2_node03);
 }
 
 
-int doWrite_Conf3_node03(int value)
+int doWrite_DigDir_3_node03(int value)
 {
-return doWrite(ID_Conf3_node03,  &value);
+return doWrite(ID_DigDir_3_node03,  &value);
 }
 
 
-int addWrite_Conf3_node03(int value)
+int addWrite_DigDir_3_node03(int value)
 {
-return addWrite(ID_Conf3_node03, &value);
+return addWrite(ID_DigDir_3_node03, &value);
 }
 
 
-int getStatus_Conf3_node03()
+int getStatus_DigDir_3_node03()
 {
-return getStatus(ID_Conf3_node03);
+return getStatus(ID_DigDir_3_node03);
 }
 
 
-int doWrite_Conf4_node03(int value)
+int doWrite_DigDir_4_node03(int value)
 {
-return doWrite(ID_Conf4_node03,  &value);
+return doWrite(ID_DigDir_4_node03,  &value);
 }
 
 
-int addWrite_Conf4_node03(int value)
+int addWrite_DigDir_4_node03(int value)
 {
-return addWrite(ID_Conf4_node03, &value);
+return addWrite(ID_DigDir_4_node03, &value);
 }
 
 
-int getStatus_Conf4_node03()
+int getStatus_DigDir_4_node03()
 {
-return getStatus(ID_Conf4_node03);
+return getStatus(ID_DigDir_4_node03);
 }
 
 
-int doWrite_Conf5_node03(int value)
+int doWrite_DigDir_5_node03(int value)
 {
-return doWrite(ID_Conf5_node03,  &value);
+return doWrite(ID_DigDir_5_node03,  &value);
 }
 
 
-int addWrite_Conf5_node03(int value)
+int addWrite_DigDir_5_node03(int value)
 {
-return addWrite(ID_Conf5_node03, &value);
+return addWrite(ID_DigDir_5_node03, &value);
 }
 
 
-int getStatus_Conf5_node03()
+int getStatus_DigDir_5_node03()
 {
-return getStatus(ID_Conf5_node03);
+return getStatus(ID_DigDir_5_node03);
 }
 
 
-int doWrite_Conf6_node03(int value)
+int doWrite_DigDir_6_node03(int value)
 {
-return doWrite(ID_Conf6_node03,  &value);
+return doWrite(ID_DigDir_6_node03,  &value);
 }
 
 
-int addWrite_Conf6_node03(int value)
+int addWrite_DigDir_6_node03(int value)
 {
-return addWrite(ID_Conf6_node03, &value);
+return addWrite(ID_DigDir_6_node03, &value);
 }
 
 
-int getStatus_Conf6_node03()
+int getStatus_DigDir_6_node03()
 {
-return getStatus(ID_Conf6_node03);
+return getStatus(ID_DigDir_6_node03);
 }
 
 
-int doWrite_Conf7_node03(int value)
+int doWrite_DigDir_7_node03(int value)
 {
-return doWrite(ID_Conf7_node03,  &value);
+return doWrite(ID_DigDir_7_node03,  &value);
 }
 
 
-int addWrite_Conf7_node03(int value)
+int addWrite_DigDir_7_node03(int value)
 {
-return addWrite(ID_Conf7_node03, &value);
+return addWrite(ID_DigDir_7_node03, &value);
 }
 
 
-int getStatus_Conf7_node03()
+int getStatus_DigDir_7_node03()
 {
-return getStatus(ID_Conf7_node03);
+return getStatus(ID_DigDir_7_node03);
 }
 
 
-int doWrite_Conf8_node03(int value)
+int doWrite_DigDir_8_node03(int value)
 {
-return doWrite(ID_Conf8_node03,  &value);
+return doWrite(ID_DigDir_8_node03,  &value);
 }
 
 
-int addWrite_Conf8_node03(int value)
+int addWrite_DigDir_8_node03(int value)
 {
-return addWrite(ID_Conf8_node03, &value);
+return addWrite(ID_DigDir_8_node03, &value);
 }
 
 
-int getStatus_Conf8_node03()
+int getStatus_DigDir_8_node03()
 {
-return getStatus(ID_Conf8_node03);
+return getStatus(ID_DigDir_8_node03);
 }
 
 
-int doWrite_digIN5_node03(int value)
+int doWrite_DigIn_2_node03(int value)
 {
-return doWrite(ID_digIN5_node03,  &value);
+return doWrite(ID_DigIn_2_node03,  &value);
 }
 
 
-int addWrite_digIN5_node03(int value)
+int addWrite_DigIn_2_node03(int value)
 {
-return addWrite(ID_digIN5_node03, &value);
+return addWrite(ID_DigIn_2_node03, &value);
 }
 
 
-int getStatus_digIN5_node03()
+int getStatus_DigIn_2_node03()
 {
-return getStatus(ID_digIN5_node03);
+return getStatus(ID_DigIn_2_node03);
 }
 
 
-int doWrite_digIN6_node03(int value)
+int doWrite_DigIn_3_node03(int value)
 {
-return doWrite(ID_digIN6_node03,  &value);
+return doWrite(ID_DigIn_3_node03,  &value);
 }
 
 
-int addWrite_digIN6_node03(int value)
+int addWrite_DigIn_3_node03(int value)
 {
-return addWrite(ID_digIN6_node03, &value);
+return addWrite(ID_DigIn_3_node03, &value);
 }
 
 
-int getStatus_digIN6_node03()
+int getStatus_DigIn_3_node03()
 {
-return getStatus(ID_digIN6_node03);
+return getStatus(ID_DigIn_3_node03);
 }
 
 
-int doWrite_digIN7_node03(int value)
+int doWrite_DigIn_6_node03(int value)
 {
-return doWrite(ID_digIN7_node03,  &value);
+return doWrite(ID_DigIn_6_node03,  &value);
 }
 
 
-int addWrite_digIN7_node03(int value)
+int addWrite_DigIn_6_node03(int value)
 {
-return addWrite(ID_digIN7_node03, &value);
+return addWrite(ID_DigIn_6_node03, &value);
 }
 
 
-int getStatus_digIN7_node03()
+int getStatus_DigIn_6_node03()
 {
-return getStatus(ID_digIN7_node03);
+return getStatus(ID_DigIn_6_node03);
 }
 
 
-int doWrite_digIN8_node03(int value)
+int doWrite_DigIn_7_node03(int value)
 {
-return doWrite(ID_digIN8_node03,  &value);
+return doWrite(ID_DigIn_7_node03,  &value);
 }
 
 
-int addWrite_digIN8_node03(int value)
+int addWrite_DigIn_7_node03(int value)
 {
-return addWrite(ID_digIN8_node03, &value);
+return addWrite(ID_DigIn_7_node03, &value);
 }
 
 
-int getStatus_digIN8_node03()
+int getStatus_DigIn_7_node03()
 {
-return getStatus(ID_digIN8_node03);
+return getStatus(ID_DigIn_7_node03);
 }
 
 
-int doWrite_digOUT1_node03(int value)
+int doWrite_DigOut_1_node03(int value)
 {
-return doWrite(ID_digOUT1_node03,  &value);
+return doWrite(ID_DigOut_1_node03,  &value);
 }
 
 
-int addWrite_digOUT1_node03(int value)
+int addWrite_DigOut_1_node03(int value)
 {
-return addWrite(ID_digOUT1_node03, &value);
+return addWrite(ID_DigOut_1_node03, &value);
 }
 
 
-int getStatus_digOUT1_node03()
+int getStatus_DigOut_1_node03()
 {
-return getStatus(ID_digOUT1_node03);
+return getStatus(ID_DigOut_1_node03);
 }
 
 
-int doWrite_digOUT2_node03(int value)
+int doWrite_DigOut_4_node03(int value)
 {
-return doWrite(ID_digOUT2_node03,  &value);
+return doWrite(ID_DigOut_4_node03,  &value);
 }
 
 
-int addWrite_digOUT2_node03(int value)
+int addWrite_DigOut_4_node03(int value)
 {
-return addWrite(ID_digOUT2_node03, &value);
+return addWrite(ID_DigOut_4_node03, &value);
 }
 
 
-int getStatus_digOUT2_node03()
+int getStatus_DigOut_4_node03()
 {
-return getStatus(ID_digOUT2_node03);
+return getStatus(ID_DigOut_4_node03);
 }
 
 
-int doWrite_digOUT3_node03(int value)
+int doWrite_DigOut_5_node03(int value)
 {
-return doWrite(ID_digOUT3_node03,  &value);
+return doWrite(ID_DigOut_5_node03,  &value);
 }
 
 
-int addWrite_digOUT3_node03(int value)
+int addWrite_DigOut_5_node03(int value)
 {
-return addWrite(ID_digOUT3_node03, &value);
+return addWrite(ID_DigOut_5_node03, &value);
 }
 
 
-int getStatus_digOUT3_node03()
+int getStatus_DigOut_5_node03()
 {
-return getStatus(ID_digOUT3_node03);
+return getStatus(ID_DigOut_5_node03);
 }
 
 
-int doWrite_digOUT4_node03(int value)
+int doWrite_DigOut_8_node03(int value)
 {
-return doWrite(ID_digOUT4_node03,  &value);
+return doWrite(ID_DigOut_8_node03,  &value);
 }
 
 
-int addWrite_digOUT4_node03(int value)
+int addWrite_DigOut_8_node03(int value)
 {
-return addWrite(ID_digOUT4_node03, &value);
+return addWrite(ID_DigOut_8_node03, &value);
 }
 
 
-int getStatus_digOUT4_node03()
+int getStatus_DigOut_8_node03()
 {
-return getStatus(ID_digOUT4_node03);
+return getStatus(ID_DigOut_8_node03);
 }
 
 
@@ -2046,39 +2046,39 @@ return getStatus(ID_Life_node04);
 }
 
 
-int doWrite_ConfAi1_node04(u_int16_t value)
+int doWrite_AnInCnf_1_node04(u_int16_t value)
 {
-return doWrite(ID_ConfAi1_node04,  &value);
+return doWrite(ID_AnInCnf_1_node04,  &value);
 }
 
 
-int addWrite_ConfAi1_node04(u_int16_t value)
+int addWrite_AnInCnf_1_node04(u_int16_t value)
 {
-return addWrite(ID_ConfAi1_node04, &value);
+return addWrite(ID_AnInCnf_1_node04, &value);
 }
 
 
-int getStatus_ConfAi1_node04()
+int getStatus_AnInCnf_1_node04()
 {
-return getStatus(ID_ConfAi1_node04);
+return getStatus(ID_AnInCnf_1_node04);
 }
 
 
-int doWrite_ConfAi2_node04(u_int16_t value)
+int doWrite_AnInCnf_2_node04(u_int16_t value)
 {
-return doWrite(ID_ConfAi2_node04,  &value);
+return doWrite(ID_AnInCnf_2_node04,  &value);
 }
 
 
-int addWrite_ConfAi2_node04(u_int16_t value)
+int addWrite_AnInCnf_2_node04(u_int16_t value)
 {
-return addWrite(ID_ConfAi2_node04, &value);
+return addWrite(ID_AnInCnf_2_node04, &value);
 }
 
 
-int getStatus_ConfAi2_node04()
+int getStatus_AnInCnf_2_node04()
 {
-return getStatus(ID_ConfAi2_node04);
+return getStatus(ID_AnInCnf_2_node04);
 }
 
 
@@ -2118,291 +2118,291 @@ return getStatus(ID_ValAi2_node04);
 }
 
 
-int doWrite_Conf1_node04(int value)
+int doWrite_DigDir_1_node04(int value)
 {
-return doWrite(ID_Conf1_node04,  &value);
+return doWrite(ID_DigDir_1_node04,  &value);
 }
 
 
-int addWrite_Conf1_node04(int value)
+int addWrite_DigDir_1_node04(int value)
 {
-return addWrite(ID_Conf1_node04, &value);
+return addWrite(ID_DigDir_1_node04, &value);
 }
 
 
-int getStatus_Conf1_node04()
+int getStatus_DigDir_1_node04()
 {
-return getStatus(ID_Conf1_node04);
+return getStatus(ID_DigDir_1_node04);
 }
 
 
-int doWrite_Conf2_node04(int value)
+int doWrite_DigDir_2_node04(int value)
 {
-return doWrite(ID_Conf2_node04,  &value);
+return doWrite(ID_DigDir_2_node04,  &value);
 }
 
 
-int addWrite_Conf2_node04(int value)
+int addWrite_DigDir_2_node04(int value)
 {
-return addWrite(ID_Conf2_node04, &value);
+return addWrite(ID_DigDir_2_node04, &value);
 }
 
 
-int getStatus_Conf2_node04()
+int getStatus_DigDir_2_node04()
 {
-return getStatus(ID_Conf2_node04);
+return getStatus(ID_DigDir_2_node04);
 }
 
 
-int doWrite_Conf3_node04(int value)
+int doWrite_DigDir_3_node04(int value)
 {
-return doWrite(ID_Conf3_node04,  &value);
+return doWrite(ID_DigDir_3_node04,  &value);
 }
 
 
-int addWrite_Conf3_node04(int value)
+int addWrite_DigDir_3_node04(int value)
 {
-return addWrite(ID_Conf3_node04, &value);
+return addWrite(ID_DigDir_3_node04, &value);
 }
 
 
-int getStatus_Conf3_node04()
+int getStatus_DigDir_3_node04()
 {
-return getStatus(ID_Conf3_node04);
+return getStatus(ID_DigDir_3_node04);
 }
 
 
-int doWrite_Conf4_node04(int value)
+int doWrite_DigDir_4_node04(int value)
 {
-return doWrite(ID_Conf4_node04,  &value);
+return doWrite(ID_DigDir_4_node04,  &value);
 }
 
 
-int addWrite_Conf4_node04(int value)
+int addWrite_DigDir_4_node04(int value)
 {
-return addWrite(ID_Conf4_node04, &value);
+return addWrite(ID_DigDir_4_node04, &value);
 }
 
 
-int getStatus_Conf4_node04()
+int getStatus_DigDir_4_node04()
 {
-return getStatus(ID_Conf4_node04);
+return getStatus(ID_DigDir_4_node04);
 }
 
 
-int doWrite_Conf5_node04(int value)
+int doWrite_DigDir_5_node04(int value)
 {
-return doWrite(ID_Conf5_node04,  &value);
+return doWrite(ID_DigDir_5_node04,  &value);
 }
 
 
-int addWrite_Conf5_node04(int value)
+int addWrite_DigDir_5_node04(int value)
 {
-return addWrite(ID_Conf5_node04, &value);
+return addWrite(ID_DigDir_5_node04, &value);
 }
 
 
-int getStatus_Conf5_node04()
+int getStatus_DigDir_5_node04()
 {
-return getStatus(ID_Conf5_node04);
+return getStatus(ID_DigDir_5_node04);
 }
 
 
-int doWrite_Conf6_node04(int value)
+int doWrite_DigDir_6_node04(int value)
 {
-return doWrite(ID_Conf6_node04,  &value);
+return doWrite(ID_DigDir_6_node04,  &value);
 }
 
 
-int addWrite_Conf6_node04(int value)
+int addWrite_DigDir_6_node04(int value)
 {
-return addWrite(ID_Conf6_node04, &value);
+return addWrite(ID_DigDir_6_node04, &value);
 }
 
 
-int getStatus_Conf6_node04()
+int getStatus_DigDir_6_node04()
 {
-return getStatus(ID_Conf6_node04);
+return getStatus(ID_DigDir_6_node04);
 }
 
 
-int doWrite_Conf7_node04(int value)
+int doWrite_DigDir_7_node04(int value)
 {
-return doWrite(ID_Conf7_node04,  &value);
+return doWrite(ID_DigDir_7_node04,  &value);
 }
 
 
-int addWrite_Conf7_node04(int value)
+int addWrite_DigDir_7_node04(int value)
 {
-return addWrite(ID_Conf7_node04, &value);
+return addWrite(ID_DigDir_7_node04, &value);
 }
 
 
-int getStatus_Conf7_node04()
+int getStatus_DigDir_7_node04()
 {
-return getStatus(ID_Conf7_node04);
+return getStatus(ID_DigDir_7_node04);
 }
 
 
-int doWrite_Conf8_node04(int value)
+int doWrite_DigDir_8_node04(int value)
 {
-return doWrite(ID_Conf8_node04,  &value);
+return doWrite(ID_DigDir_8_node04,  &value);
 }
 
 
-int addWrite_Conf8_node04(int value)
+int addWrite_DigDir_8_node04(int value)
 {
-return addWrite(ID_Conf8_node04, &value);
+return addWrite(ID_DigDir_8_node04, &value);
 }
 
 
-int getStatus_Conf8_node04()
+int getStatus_DigDir_8_node04()
 {
-return getStatus(ID_Conf8_node04);
+return getStatus(ID_DigDir_8_node04);
 }
 
 
-int doWrite_digIN5_node04(int value)
+int doWrite_DigIn_2_node04(int value)
 {
-return doWrite(ID_digIN5_node04,  &value);
+return doWrite(ID_DigIn_2_node04,  &value);
 }
 
 
-int addWrite_digIN5_node04(int value)
+int addWrite_DigIn_2_node04(int value)
 {
-return addWrite(ID_digIN5_node04, &value);
+return addWrite(ID_DigIn_2_node04, &value);
 }
 
 
-int getStatus_digIN5_node04()
+int getStatus_DigIn_2_node04()
 {
-return getStatus(ID_digIN5_node04);
+return getStatus(ID_DigIn_2_node04);
 }
 
 
-int doWrite_digIN6_node04(int value)
+int doWrite_DigIn_3_node04(int value)
 {
-return doWrite(ID_digIN6_node04,  &value);
+return doWrite(ID_DigIn_3_node04,  &value);
 }
 
 
-int addWrite_digIN6_node04(int value)
+int addWrite_DigIn_3_node04(int value)
 {
-return addWrite(ID_digIN6_node04, &value);
+return addWrite(ID_DigIn_3_node04, &value);
 }
 
 
-int getStatus_digIN6_node04()
+int getStatus_DigIn_3_node04()
 {
-return getStatus(ID_digIN6_node04);
+return getStatus(ID_DigIn_3_node04);
 }
 
 
-int doWrite_digIN7_node04(int value)
+int doWrite_DigIn_6_node04(int value)
 {
-return doWrite(ID_digIN7_node04,  &value);
+return doWrite(ID_DigIn_6_node04,  &value);
 }
 
 
-int addWrite_digIN7_node04(int value)
+int addWrite_DigIn_6_node04(int value)
 {
-return addWrite(ID_digIN7_node04, &value);
+return addWrite(ID_DigIn_6_node04, &value);
 }
 
 
-int getStatus_digIN7_node04()
+int getStatus_DigIn_6_node04()
 {
-return getStatus(ID_digIN7_node04);
+return getStatus(ID_DigIn_6_node04);
 }
 
 
-int doWrite_digIN8_node04(int value)
+int doWrite_DigIn_7_node04(int value)
 {
-return doWrite(ID_digIN8_node04,  &value);
+return doWrite(ID_DigIn_7_node04,  &value);
 }
 
 
-int addWrite_digIN8_node04(int value)
+int addWrite_DigIn_7_node04(int value)
 {
-return addWrite(ID_digIN8_node04, &value);
+return addWrite(ID_DigIn_7_node04, &value);
 }
 
 
-int getStatus_digIN8_node04()
+int getStatus_DigIn_7_node04()
 {
-return getStatus(ID_digIN8_node04);
+return getStatus(ID_DigIn_7_node04);
 }
 
 
-int doWrite_digOUT1_node04(int value)
+int doWrite_DigOut_1_node04(int value)
 {
-return doWrite(ID_digOUT1_node04,  &value);
+return doWrite(ID_DigOut_1_node04,  &value);
 }
 
 
-int addWrite_digOUT1_node04(int value)
+int addWrite_DigOut_1_node04(int value)
 {
-return addWrite(ID_digOUT1_node04, &value);
+return addWrite(ID_DigOut_1_node04, &value);
 }
 
 
-int getStatus_digOUT1_node04()
+int getStatus_DigOut_1_node04()
 {
-return getStatus(ID_digOUT1_node04);
+return getStatus(ID_DigOut_1_node04);
 }
 
 
-int doWrite_digOUT2_node04(int value)
+int doWrite_DigOut_4_node04(int value)
 {
-return doWrite(ID_digOUT2_node04,  &value);
+return doWrite(ID_DigOut_4_node04,  &value);
 }
 
 
-int addWrite_digOUT2_node04(int value)
+int addWrite_DigOut_4_node04(int value)
 {
-return addWrite(ID_digOUT2_node04, &value);
+return addWrite(ID_DigOut_4_node04, &value);
 }
 
 
-int getStatus_digOUT2_node04()
+int getStatus_DigOut_4_node04()
 {
-return getStatus(ID_digOUT2_node04);
+return getStatus(ID_DigOut_4_node04);
 }
 
 
-int doWrite_digOUT3_node04(int value)
+int doWrite_DigOut_5_node04(int value)
 {
-return doWrite(ID_digOUT3_node04,  &value);
+return doWrite(ID_DigOut_5_node04,  &value);
 }
 
 
-int addWrite_digOUT3_node04(int value)
+int addWrite_DigOut_5_node04(int value)
 {
-return addWrite(ID_digOUT3_node04, &value);
+return addWrite(ID_DigOut_5_node04, &value);
 }
 
 
-int getStatus_digOUT3_node04()
+int getStatus_DigOut_5_node04()
 {
-return getStatus(ID_digOUT3_node04);
+return getStatus(ID_DigOut_5_node04);
 }
 
 
-int doWrite_digOUT4_node04(int value)
+int doWrite_DigOut_8_node04(int value)
 {
-return doWrite(ID_digOUT4_node04,  &value);
+return doWrite(ID_DigOut_8_node04,  &value);
 }
 
 
-int addWrite_digOUT4_node04(int value)
+int addWrite_DigOut_8_node04(int value)
 {
-return addWrite(ID_digOUT4_node04, &value);
+return addWrite(ID_DigOut_8_node04, &value);
 }
 
 
-int getStatus_digOUT4_node04()
+int getStatus_DigOut_8_node04()
 {
-return getStatus(ID_digOUT4_node04);
+return getStatus(ID_DigOut_8_node04);
 }
 
 
@@ -2442,39 +2442,39 @@ return getStatus(ID_Life_node05);
 }
 
 
-int doWrite_ConfAi1_node05(u_int16_t value)
+int doWrite_AnInCnf_1_node05(u_int16_t value)
 {
-return doWrite(ID_ConfAi1_node05,  &value);
+return doWrite(ID_AnInCnf_1_node05,  &value);
 }
 
 
-int addWrite_ConfAi1_node05(u_int16_t value)
+int addWrite_AnInCnf_1_node05(u_int16_t value)
 {
-return addWrite(ID_ConfAi1_node05, &value);
+return addWrite(ID_AnInCnf_1_node05, &value);
 }
 
 
-int getStatus_ConfAi1_node05()
+int getStatus_AnInCnf_1_node05()
 {
-return getStatus(ID_ConfAi1_node05);
+return getStatus(ID_AnInCnf_1_node05);
 }
 
 
-int doWrite_ConfAi2_node05(u_int16_t value)
+int doWrite_AnInCnf_2_node05(u_int16_t value)
 {
-return doWrite(ID_ConfAi2_node05,  &value);
+return doWrite(ID_AnInCnf_2_node05,  &value);
 }
 
 
-int addWrite_ConfAi2_node05(u_int16_t value)
+int addWrite_AnInCnf_2_node05(u_int16_t value)
 {
-return addWrite(ID_ConfAi2_node05, &value);
+return addWrite(ID_AnInCnf_2_node05, &value);
 }
 
 
-int getStatus_ConfAi2_node05()
+int getStatus_AnInCnf_2_node05()
 {
-return getStatus(ID_ConfAi2_node05);
+return getStatus(ID_AnInCnf_2_node05);
 }
 
 
@@ -2514,291 +2514,291 @@ return getStatus(ID_ValAi2_node05);
 }
 
 
-int doWrite_Conf1_node05(int value)
+int doWrite_DigDir_1_node05(int value)
 {
-return doWrite(ID_Conf1_node05,  &value);
+return doWrite(ID_DigDir_1_node05,  &value);
 }
 
 
-int addWrite_Conf1_node05(int value)
+int addWrite_DigDir_1_node05(int value)
 {
-return addWrite(ID_Conf1_node05, &value);
+return addWrite(ID_DigDir_1_node05, &value);
 }
 
 
-int getStatus_Conf1_node05()
+int getStatus_DigDir_1_node05()
 {
-return getStatus(ID_Conf1_node05);
+return getStatus(ID_DigDir_1_node05);
 }
 
 
-int doWrite_Conf2_node05(int value)
+int doWrite_DigDir_2_node05(int value)
 {
-return doWrite(ID_Conf2_node05,  &value);
+return doWrite(ID_DigDir_2_node05,  &value);
 }
 
 
-int addWrite_Conf2_node05(int value)
+int addWrite_DigDir_2_node05(int value)
 {
-return addWrite(ID_Conf2_node05, &value);
+return addWrite(ID_DigDir_2_node05, &value);
 }
 
 
-int getStatus_Conf2_node05()
+int getStatus_DigDir_2_node05()
 {
-return getStatus(ID_Conf2_node05);
+return getStatus(ID_DigDir_2_node05);
 }
 
 
-int doWrite_Conf3_node05(int value)
+int doWrite_DigDir_3_node05(int value)
 {
-return doWrite(ID_Conf3_node05,  &value);
+return doWrite(ID_DigDir_3_node05,  &value);
 }
 
 
-int addWrite_Conf3_node05(int value)
+int addWrite_DigDir_3_node05(int value)
 {
-return addWrite(ID_Conf3_node05, &value);
+return addWrite(ID_DigDir_3_node05, &value);
 }
 
 
-int getStatus_Conf3_node05()
+int getStatus_DigDir_3_node05()
 {
-return getStatus(ID_Conf3_node05);
+return getStatus(ID_DigDir_3_node05);
 }
 
 
-int doWrite_Conf4_node05(int value)
+int doWrite_DigDir_4_node05(int value)
 {
-return doWrite(ID_Conf4_node05,  &value);
+return doWrite(ID_DigDir_4_node05,  &value);
 }
 
 
-int addWrite_Conf4_node05(int value)
+int addWrite_DigDir_4_node05(int value)
 {
-return addWrite(ID_Conf4_node05, &value);
+return addWrite(ID_DigDir_4_node05, &value);
 }
 
 
-int getStatus_Conf4_node05()
+int getStatus_DigDir_4_node05()
 {
-return getStatus(ID_Conf4_node05);
+return getStatus(ID_DigDir_4_node05);
 }
 
 
-int doWrite_Conf5_node05(int value)
+int doWrite_DigDir_5_node05(int value)
 {
-return doWrite(ID_Conf5_node05,  &value);
+return doWrite(ID_DigDir_5_node05,  &value);
 }
 
 
-int addWrite_Conf5_node05(int value)
+int addWrite_DigDir_5_node05(int value)
 {
-return addWrite(ID_Conf5_node05, &value);
+return addWrite(ID_DigDir_5_node05, &value);
 }
 
 
-int getStatus_Conf5_node05()
+int getStatus_DigDir_5_node05()
 {
-return getStatus(ID_Conf5_node05);
+return getStatus(ID_DigDir_5_node05);
 }
 
 
-int doWrite_Conf6_node05(int value)
+int doWrite_DigDir_6_node05(int value)
 {
-return doWrite(ID_Conf6_node05,  &value);
+return doWrite(ID_DigDir_6_node05,  &value);
 }
 
 
-int addWrite_Conf6_node05(int value)
+int addWrite_DigDir_6_node05(int value)
 {
-return addWrite(ID_Conf6_node05, &value);
+return addWrite(ID_DigDir_6_node05, &value);
 }
 
 
-int getStatus_Conf6_node05()
+int getStatus_DigDir_6_node05()
 {
-return getStatus(ID_Conf6_node05);
+return getStatus(ID_DigDir_6_node05);
 }
 
 
-int doWrite_Conf7_node05(int value)
+int doWrite_DigDir_7_node05(int value)
 {
-return doWrite(ID_Conf7_node05,  &value);
+return doWrite(ID_DigDir_7_node05,  &value);
 }
 
 
-int addWrite_Conf7_node05(int value)
+int addWrite_DigDir_7_node05(int value)
 {
-return addWrite(ID_Conf7_node05, &value);
+return addWrite(ID_DigDir_7_node05, &value);
 }
 
 
-int getStatus_Conf7_node05()
+int getStatus_DigDir_7_node05()
 {
-return getStatus(ID_Conf7_node05);
+return getStatus(ID_DigDir_7_node05);
 }
 
 
-int doWrite_Conf8_node05(int value)
+int doWrite_DigDir_8_node05(int value)
 {
-return doWrite(ID_Conf8_node05,  &value);
+return doWrite(ID_DigDir_8_node05,  &value);
 }
 
 
-int addWrite_Conf8_node05(int value)
+int addWrite_DigDir_8_node05(int value)
 {
-return addWrite(ID_Conf8_node05, &value);
+return addWrite(ID_DigDir_8_node05, &value);
 }
 
 
-int getStatus_Conf8_node05()
+int getStatus_DigDir_8_node05()
 {
-return getStatus(ID_Conf8_node05);
+return getStatus(ID_DigDir_8_node05);
 }
 
 
-int doWrite_digIN5_node05(int value)
+int doWrite_DigIn_2_node05(int value)
 {
-return doWrite(ID_digIN5_node05,  &value);
+return doWrite(ID_DigIn_2_node05,  &value);
 }
 
 
-int addWrite_digIN5_node05(int value)
+int addWrite_DigIn_2_node05(int value)
 {
-return addWrite(ID_digIN5_node05, &value);
+return addWrite(ID_DigIn_2_node05, &value);
 }
 
 
-int getStatus_digIN5_node05()
+int getStatus_DigIn_2_node05()
 {
-return getStatus(ID_digIN5_node05);
+return getStatus(ID_DigIn_2_node05);
 }
 
 
-int doWrite_digIN6_node05(int value)
+int doWrite_DigIn_3_node05(int value)
 {
-return doWrite(ID_digIN6_node05,  &value);
+return doWrite(ID_DigIn_3_node05,  &value);
 }
 
 
-int addWrite_digIN6_node05(int value)
+int addWrite_DigIn_3_node05(int value)
 {
-return addWrite(ID_digIN6_node05, &value);
+return addWrite(ID_DigIn_3_node05, &value);
 }
 
 
-int getStatus_digIN6_node05()
+int getStatus_DigIn_3_node05()
 {
-return getStatus(ID_digIN6_node05);
+return getStatus(ID_DigIn_3_node05);
 }
 
 
-int doWrite_digIN7_node05(int value)
+int doWrite_DigIn_6_node05(int value)
 {
-return doWrite(ID_digIN7_node05,  &value);
+return doWrite(ID_DigIn_6_node05,  &value);
 }
 
 
-int addWrite_digIN7_node05(int value)
+int addWrite_DigIn_6_node05(int value)
 {
-return addWrite(ID_digIN7_node05, &value);
+return addWrite(ID_DigIn_6_node05, &value);
 }
 
 
-int getStatus_digIN7_node05()
+int getStatus_DigIn_6_node05()
 {
-return getStatus(ID_digIN7_node05);
+return getStatus(ID_DigIn_6_node05);
 }
 
 
-int doWrite_digIN8_node05(int value)
+int doWrite_DigIn_7_node05(int value)
 {
-return doWrite(ID_digIN8_node05,  &value);
+return doWrite(ID_DigIn_7_node05,  &value);
 }
 
 
-int addWrite_digIN8_node05(int value)
+int addWrite_DigIn_7_node05(int value)
 {
-return addWrite(ID_digIN8_node05, &value);
+return addWrite(ID_DigIn_7_node05, &value);
 }
 
 
-int getStatus_digIN8_node05()
+int getStatus_DigIn_7_node05()
 {
-return getStatus(ID_digIN8_node05);
+return getStatus(ID_DigIn_7_node05);
 }
 
 
-int doWrite_digOUT1_node05(int value)
+int doWrite_DigOut_1_node05(int value)
 {
-return doWrite(ID_digOUT1_node05,  &value);
+return doWrite(ID_DigOut_1_node05,  &value);
 }
 
 
-int addWrite_digOUT1_node05(int value)
+int addWrite_DigOut_1_node05(int value)
 {
-return addWrite(ID_digOUT1_node05, &value);
+return addWrite(ID_DigOut_1_node05, &value);
 }
 
 
-int getStatus_digOUT1_node05()
+int getStatus_DigOut_1_node05()
 {
-return getStatus(ID_digOUT1_node05);
+return getStatus(ID_DigOut_1_node05);
 }
 
 
-int doWrite_digOUT2_node05(int value)
+int doWrite_DigOut_4_node05(int value)
 {
-return doWrite(ID_digOUT2_node05,  &value);
+return doWrite(ID_DigOut_4_node05,  &value);
 }
 
 
-int addWrite_digOUT2_node05(int value)
+int addWrite_DigOut_4_node05(int value)
 {
-return addWrite(ID_digOUT2_node05, &value);
+return addWrite(ID_DigOut_4_node05, &value);
 }
 
 
-int getStatus_digOUT2_node05()
+int getStatus_DigOut_4_node05()
 {
-return getStatus(ID_digOUT2_node05);
+return getStatus(ID_DigOut_4_node05);
 }
 
 
-int doWrite_digOUT3_node05(int value)
+int doWrite_DigOut_5_node05(int value)
 {
-return doWrite(ID_digOUT3_node05,  &value);
+return doWrite(ID_DigOut_5_node05,  &value);
 }
 
 
-int addWrite_digOUT3_node05(int value)
+int addWrite_DigOut_5_node05(int value)
 {
-return addWrite(ID_digOUT3_node05, &value);
+return addWrite(ID_DigOut_5_node05, &value);
 }
 
 
-int getStatus_digOUT3_node05()
+int getStatus_DigOut_5_node05()
 {
-return getStatus(ID_digOUT3_node05);
+return getStatus(ID_DigOut_5_node05);
 }
 
 
-int doWrite_digOUT4_node05(int value)
+int doWrite_DigOut_8_node05(int value)
 {
-return doWrite(ID_digOUT4_node05,  &value);
+return doWrite(ID_DigOut_8_node05,  &value);
 }
 
 
-int addWrite_digOUT4_node05(int value)
+int addWrite_DigOut_8_node05(int value)
 {
-return addWrite(ID_digOUT4_node05, &value);
+return addWrite(ID_DigOut_8_node05, &value);
 }
 
 
-int getStatus_digOUT4_node05()
+int getStatus_DigOut_8_node05()
 {
-return getStatus(ID_digOUT4_node05);
+return getStatus(ID_DigOut_8_node05);
 }
 
 
@@ -2838,39 +2838,39 @@ return getStatus(ID_Life_node06);
 }
 
 
-int doWrite_ConfAi1_node06(u_int16_t value)
+int doWrite_AnInCnf_1_node06(u_int16_t value)
 {
-return doWrite(ID_ConfAi1_node06,  &value);
+return doWrite(ID_AnInCnf_1_node06,  &value);
 }
 
 
-int addWrite_ConfAi1_node06(u_int16_t value)
+int addWrite_AnInCnf_1_node06(u_int16_t value)
 {
-return addWrite(ID_ConfAi1_node06, &value);
+return addWrite(ID_AnInCnf_1_node06, &value);
 }
 
 
-int getStatus_ConfAi1_node06()
+int getStatus_AnInCnf_1_node06()
 {
-return getStatus(ID_ConfAi1_node06);
+return getStatus(ID_AnInCnf_1_node06);
 }
 
 
-int doWrite_ConfAi2_node06(u_int16_t value)
+int doWrite_AnInCnf_2_node06(u_int16_t value)
 {
-return doWrite(ID_ConfAi2_node06,  &value);
+return doWrite(ID_AnInCnf_2_node06,  &value);
 }
 
 
-int addWrite_ConfAi2_node06(u_int16_t value)
+int addWrite_AnInCnf_2_node06(u_int16_t value)
 {
-return addWrite(ID_ConfAi2_node06, &value);
+return addWrite(ID_AnInCnf_2_node06, &value);
 }
 
 
-int getStatus_ConfAi2_node06()
+int getStatus_AnInCnf_2_node06()
 {
-return getStatus(ID_ConfAi2_node06);
+return getStatus(ID_AnInCnf_2_node06);
 }
 
 
@@ -2910,291 +2910,291 @@ return getStatus(ID_ValAi2_node06);
 }
 
 
-int doWrite_Conf1_node06(int value)
+int doWrite_DigDir_1_node06(int value)
 {
-return doWrite(ID_Conf1_node06,  &value);
+return doWrite(ID_DigDir_1_node06,  &value);
 }
 
 
-int addWrite_Conf1_node06(int value)
+int addWrite_DigDir_1_node06(int value)
 {
-return addWrite(ID_Conf1_node06, &value);
+return addWrite(ID_DigDir_1_node06, &value);
 }
 
 
-int getStatus_Conf1_node06()
+int getStatus_DigDir_1_node06()
 {
-return getStatus(ID_Conf1_node06);
+return getStatus(ID_DigDir_1_node06);
 }
 
 
-int doWrite_Conf2_node06(int value)
+int doWrite_DigDir_2_node06(int value)
 {
-return doWrite(ID_Conf2_node06,  &value);
+return doWrite(ID_DigDir_2_node06,  &value);
 }
 
 
-int addWrite_Conf2_node06(int value)
+int addWrite_DigDir_2_node06(int value)
 {
-return addWrite(ID_Conf2_node06, &value);
+return addWrite(ID_DigDir_2_node06, &value);
 }
 
 
-int getStatus_Conf2_node06()
+int getStatus_DigDir_2_node06()
 {
-return getStatus(ID_Conf2_node06);
+return getStatus(ID_DigDir_2_node06);
 }
 
 
-int doWrite_Conf3_node06(int value)
+int doWrite_DigDir_3_node06(int value)
 {
-return doWrite(ID_Conf3_node06,  &value);
+return doWrite(ID_DigDir_3_node06,  &value);
 }
 
 
-int addWrite_Conf3_node06(int value)
+int addWrite_DigDir_3_node06(int value)
 {
-return addWrite(ID_Conf3_node06, &value);
+return addWrite(ID_DigDir_3_node06, &value);
 }
 
 
-int getStatus_Conf3_node06()
+int getStatus_DigDir_3_node06()
 {
-return getStatus(ID_Conf3_node06);
+return getStatus(ID_DigDir_3_node06);
 }
 
 
-int doWrite_Conf4_node06(int value)
+int doWrite_DigDir_4_node06(int value)
 {
-return doWrite(ID_Conf4_node06,  &value);
+return doWrite(ID_DigDir_4_node06,  &value);
 }
 
 
-int addWrite_Conf4_node06(int value)
+int addWrite_DigDir_4_node06(int value)
 {
-return addWrite(ID_Conf4_node06, &value);
+return addWrite(ID_DigDir_4_node06, &value);
 }
 
 
-int getStatus_Conf4_node06()
+int getStatus_DigDir_4_node06()
 {
-return getStatus(ID_Conf4_node06);
+return getStatus(ID_DigDir_4_node06);
 }
 
 
-int doWrite_Conf5_node06(int value)
+int doWrite_DigDir_5_node06(int value)
 {
-return doWrite(ID_Conf5_node06,  &value);
+return doWrite(ID_DigDir_5_node06,  &value);
 }
 
 
-int addWrite_Conf5_node06(int value)
+int addWrite_DigDir_5_node06(int value)
 {
-return addWrite(ID_Conf5_node06, &value);
+return addWrite(ID_DigDir_5_node06, &value);
 }
 
 
-int getStatus_Conf5_node06()
+int getStatus_DigDir_5_node06()
 {
-return getStatus(ID_Conf5_node06);
+return getStatus(ID_DigDir_5_node06);
 }
 
 
-int doWrite_Conf6_node06(int value)
+int doWrite_DigDir_6_node06(int value)
 {
-return doWrite(ID_Conf6_node06,  &value);
+return doWrite(ID_DigDir_6_node06,  &value);
 }
 
 
-int addWrite_Conf6_node06(int value)
+int addWrite_DigDir_6_node06(int value)
 {
-return addWrite(ID_Conf6_node06, &value);
+return addWrite(ID_DigDir_6_node06, &value);
 }
 
 
-int getStatus_Conf6_node06()
+int getStatus_DigDir_6_node06()
 {
-return getStatus(ID_Conf6_node06);
+return getStatus(ID_DigDir_6_node06);
 }
 
 
-int doWrite_Conf7_node06(int value)
+int doWrite_DigDir_7_node06(int value)
 {
-return doWrite(ID_Conf7_node06,  &value);
+return doWrite(ID_DigDir_7_node06,  &value);
 }
 
 
-int addWrite_Conf7_node06(int value)
+int addWrite_DigDir_7_node06(int value)
 {
-return addWrite(ID_Conf7_node06, &value);
+return addWrite(ID_DigDir_7_node06, &value);
 }
 
 
-int getStatus_Conf7_node06()
+int getStatus_DigDir_7_node06()
 {
-return getStatus(ID_Conf7_node06);
+return getStatus(ID_DigDir_7_node06);
 }
 
 
-int doWrite_Conf8_node06(int value)
+int doWrite_DigDir_8_node06(int value)
 {
-return doWrite(ID_Conf8_node06,  &value);
+return doWrite(ID_DigDir_8_node06,  &value);
 }
 
 
-int addWrite_Conf8_node06(int value)
+int addWrite_DigDir_8_node06(int value)
 {
-return addWrite(ID_Conf8_node06, &value);
+return addWrite(ID_DigDir_8_node06, &value);
 }
 
 
-int getStatus_Conf8_node06()
+int getStatus_DigDir_8_node06()
 {
-return getStatus(ID_Conf8_node06);
+return getStatus(ID_DigDir_8_node06);
 }
 
 
-int doWrite_digIN5_node06(int value)
+int doWrite_DigIn_2_node06(int value)
 {
-return doWrite(ID_digIN5_node06,  &value);
+return doWrite(ID_DigIn_2_node06,  &value);
 }
 
 
-int addWrite_digIN5_node06(int value)
+int addWrite_DigIn_2_node06(int value)
 {
-return addWrite(ID_digIN5_node06, &value);
+return addWrite(ID_DigIn_2_node06, &value);
 }
 
 
-int getStatus_digIN5_node06()
+int getStatus_DigIn_2_node06()
 {
-return getStatus(ID_digIN5_node06);
+return getStatus(ID_DigIn_2_node06);
 }
 
 
-int doWrite_digIN6_node06(int value)
+int doWrite_DigIn_3_node06(int value)
 {
-return doWrite(ID_digIN6_node06,  &value);
+return doWrite(ID_DigIn_3_node06,  &value);
 }
 
 
-int addWrite_digIN6_node06(int value)
+int addWrite_DigIn_3_node06(int value)
 {
-return addWrite(ID_digIN6_node06, &value);
+return addWrite(ID_DigIn_3_node06, &value);
 }
 
 
-int getStatus_digIN6_node06()
+int getStatus_DigIn_3_node06()
 {
-return getStatus(ID_digIN6_node06);
+return getStatus(ID_DigIn_3_node06);
 }
 
 
-int doWrite_digIN7_node06(int value)
+int doWrite_DigIn_6_node06(int value)
 {
-return doWrite(ID_digIN7_node06,  &value);
+return doWrite(ID_DigIn_6_node06,  &value);
 }
 
 
-int addWrite_digIN7_node06(int value)
+int addWrite_DigIn_6_node06(int value)
 {
-return addWrite(ID_digIN7_node06, &value);
+return addWrite(ID_DigIn_6_node06, &value);
 }
 
 
-int getStatus_digIN7_node06()
+int getStatus_DigIn_6_node06()
 {
-return getStatus(ID_digIN7_node06);
+return getStatus(ID_DigIn_6_node06);
 }
 
 
-int doWrite_digIN8_node06(int value)
+int doWrite_DigIn_7_node06(int value)
 {
-return doWrite(ID_digIN8_node06,  &value);
+return doWrite(ID_DigIn_7_node06,  &value);
 }
 
 
-int addWrite_digIN8_node06(int value)
+int addWrite_DigIn_7_node06(int value)
 {
-return addWrite(ID_digIN8_node06, &value);
+return addWrite(ID_DigIn_7_node06, &value);
 }
 
 
-int getStatus_digIN8_node06()
+int getStatus_DigIn_7_node06()
 {
-return getStatus(ID_digIN8_node06);
+return getStatus(ID_DigIn_7_node06);
 }
 
 
-int doWrite_digOUT1_node06(int value)
+int doWrite_DigOut_1_node06(int value)
 {
-return doWrite(ID_digOUT1_node06,  &value);
+return doWrite(ID_DigOut_1_node06,  &value);
 }
 
 
-int addWrite_digOUT1_node06(int value)
+int addWrite_DigOut_1_node06(int value)
 {
-return addWrite(ID_digOUT1_node06, &value);
+return addWrite(ID_DigOut_1_node06, &value);
 }
 
 
-int getStatus_digOUT1_node06()
+int getStatus_DigOut_1_node06()
 {
-return getStatus(ID_digOUT1_node06);
+return getStatus(ID_DigOut_1_node06);
 }
 
 
-int doWrite_digOUT2_node06(int value)
+int doWrite_DigOut_4_node06(int value)
 {
-return doWrite(ID_digOUT2_node06,  &value);
+return doWrite(ID_DigOut_4_node06,  &value);
 }
 
 
-int addWrite_digOUT2_node06(int value)
+int addWrite_DigOut_4_node06(int value)
 {
-return addWrite(ID_digOUT2_node06, &value);
+return addWrite(ID_DigOut_4_node06, &value);
 }
 
 
-int getStatus_digOUT2_node06()
+int getStatus_DigOut_4_node06()
 {
-return getStatus(ID_digOUT2_node06);
+return getStatus(ID_DigOut_4_node06);
 }
 
 
-int doWrite_digOUT3_node06(int value)
+int doWrite_DigOut_5_node06(int value)
 {
-return doWrite(ID_digOUT3_node06,  &value);
+return doWrite(ID_DigOut_5_node06,  &value);
 }
 
 
-int addWrite_digOUT3_node06(int value)
+int addWrite_DigOut_5_node06(int value)
 {
-return addWrite(ID_digOUT3_node06, &value);
+return addWrite(ID_DigOut_5_node06, &value);
 }
 
 
-int getStatus_digOUT3_node06()
+int getStatus_DigOut_5_node06()
 {
-return getStatus(ID_digOUT3_node06);
+return getStatus(ID_DigOut_5_node06);
 }
 
 
-int doWrite_digOUT4_node06(int value)
+int doWrite_DigOut_8_node06(int value)
 {
-return doWrite(ID_digOUT4_node06,  &value);
+return doWrite(ID_DigOut_8_node06,  &value);
 }
 
 
-int addWrite_digOUT4_node06(int value)
+int addWrite_DigOut_8_node06(int value)
 {
-return addWrite(ID_digOUT4_node06, &value);
+return addWrite(ID_DigOut_8_node06, &value);
 }
 
 
-int getStatus_digOUT4_node06()
+int getStatus_DigOut_8_node06()
 {
-return getStatus(ID_digOUT4_node06);
+return getStatus(ID_DigOut_8_node06);
 }
 
 
@@ -3234,39 +3234,39 @@ return getStatus(ID_Life_node07);
 }
 
 
-int doWrite_ConfAi1_node07(u_int16_t value)
+int doWrite_AnInCnf_1_node07(u_int16_t value)
 {
-return doWrite(ID_ConfAi1_node07,  &value);
+return doWrite(ID_AnInCnf_1_node07,  &value);
 }
 
 
-int addWrite_ConfAi1_node07(u_int16_t value)
+int addWrite_AnInCnf_1_node07(u_int16_t value)
 {
-return addWrite(ID_ConfAi1_node07, &value);
+return addWrite(ID_AnInCnf_1_node07, &value);
 }
 
 
-int getStatus_ConfAi1_node07()
+int getStatus_AnInCnf_1_node07()
 {
-return getStatus(ID_ConfAi1_node07);
+return getStatus(ID_AnInCnf_1_node07);
 }
 
 
-int doWrite_ConfAi2_node07(u_int16_t value)
+int doWrite_AnInCnf_2_node07(u_int16_t value)
 {
-return doWrite(ID_ConfAi2_node07,  &value);
+return doWrite(ID_AnInCnf_2_node07,  &value);
 }
 
 
-int addWrite_ConfAi2_node07(u_int16_t value)
+int addWrite_AnInCnf_2_node07(u_int16_t value)
 {
-return addWrite(ID_ConfAi2_node07, &value);
+return addWrite(ID_AnInCnf_2_node07, &value);
 }
 
 
-int getStatus_ConfAi2_node07()
+int getStatus_AnInCnf_2_node07()
 {
-return getStatus(ID_ConfAi2_node07);
+return getStatus(ID_AnInCnf_2_node07);
 }
 
 
@@ -3306,291 +3306,291 @@ return getStatus(ID_ValAi2_node07);
 }
 
 
-int doWrite_Conf1_node07(int value)
+int doWrite_DigDir_1_node07(int value)
 {
-return doWrite(ID_Conf1_node07,  &value);
+return doWrite(ID_DigDir_1_node07,  &value);
 }
 
 
-int addWrite_Conf1_node07(int value)
+int addWrite_DigDir_1_node07(int value)
 {
-return addWrite(ID_Conf1_node07, &value);
+return addWrite(ID_DigDir_1_node07, &value);
 }
 
 
-int getStatus_Conf1_node07()
+int getStatus_DigDir_1_node07()
 {
-return getStatus(ID_Conf1_node07);
+return getStatus(ID_DigDir_1_node07);
 }
 
 
-int doWrite_Conf2_node07(int value)
+int doWrite_DigDir_2_node07(int value)
 {
-return doWrite(ID_Conf2_node07,  &value);
+return doWrite(ID_DigDir_2_node07,  &value);
 }
 
 
-int addWrite_Conf2_node07(int value)
+int addWrite_DigDir_2_node07(int value)
 {
-return addWrite(ID_Conf2_node07, &value);
+return addWrite(ID_DigDir_2_node07, &value);
 }
 
 
-int getStatus_Conf2_node07()
+int getStatus_DigDir_2_node07()
 {
-return getStatus(ID_Conf2_node07);
+return getStatus(ID_DigDir_2_node07);
 }
 
 
-int doWrite_Conf3_node07(int value)
+int doWrite_DigDir_3_node07(int value)
 {
-return doWrite(ID_Conf3_node07,  &value);
+return doWrite(ID_DigDir_3_node07,  &value);
 }
 
 
-int addWrite_Conf3_node07(int value)
+int addWrite_DigDir_3_node07(int value)
 {
-return addWrite(ID_Conf3_node07, &value);
+return addWrite(ID_DigDir_3_node07, &value);
 }
 
 
-int getStatus_Conf3_node07()
+int getStatus_DigDir_3_node07()
 {
-return getStatus(ID_Conf3_node07);
+return getStatus(ID_DigDir_3_node07);
 }
 
 
-int doWrite_Conf4_node07(int value)
+int doWrite_DigDir_4_node07(int value)
 {
-return doWrite(ID_Conf4_node07,  &value);
+return doWrite(ID_DigDir_4_node07,  &value);
 }
 
 
-int addWrite_Conf4_node07(int value)
+int addWrite_DigDir_4_node07(int value)
 {
-return addWrite(ID_Conf4_node07, &value);
+return addWrite(ID_DigDir_4_node07, &value);
 }
 
 
-int getStatus_Conf4_node07()
+int getStatus_DigDir_4_node07()
 {
-return getStatus(ID_Conf4_node07);
+return getStatus(ID_DigDir_4_node07);
 }
 
 
-int doWrite_Conf5_node07(int value)
+int doWrite_DigDir_5_node07(int value)
 {
-return doWrite(ID_Conf5_node07,  &value);
+return doWrite(ID_DigDir_5_node07,  &value);
 }
 
 
-int addWrite_Conf5_node07(int value)
+int addWrite_DigDir_5_node07(int value)
 {
-return addWrite(ID_Conf5_node07, &value);
+return addWrite(ID_DigDir_5_node07, &value);
 }
 
 
-int getStatus_Conf5_node07()
+int getStatus_DigDir_5_node07()
 {
-return getStatus(ID_Conf5_node07);
+return getStatus(ID_DigDir_5_node07);
 }
 
 
-int doWrite_Conf6_node07(int value)
+int doWrite_DigDir_6_node07(int value)
 {
-return doWrite(ID_Conf6_node07,  &value);
+return doWrite(ID_DigDir_6_node07,  &value);
 }
 
 
-int addWrite_Conf6_node07(int value)
+int addWrite_DigDir_6_node07(int value)
 {
-return addWrite(ID_Conf6_node07, &value);
+return addWrite(ID_DigDir_6_node07, &value);
 }
 
 
-int getStatus_Conf6_node07()
+int getStatus_DigDir_6_node07()
 {
-return getStatus(ID_Conf6_node07);
+return getStatus(ID_DigDir_6_node07);
 }
 
 
-int doWrite_Conf7_node07(int value)
+int doWrite_DigDir_7_node07(int value)
 {
-return doWrite(ID_Conf7_node07,  &value);
+return doWrite(ID_DigDir_7_node07,  &value);
 }
 
 
-int addWrite_Conf7_node07(int value)
+int addWrite_DigDir_7_node07(int value)
 {
-return addWrite(ID_Conf7_node07, &value);
+return addWrite(ID_DigDir_7_node07, &value);
 }
 
 
-int getStatus_Conf7_node07()
+int getStatus_DigDir_7_node07()
 {
-return getStatus(ID_Conf7_node07);
+return getStatus(ID_DigDir_7_node07);
 }
 
 
-int doWrite_Conf8_node07(int value)
+int doWrite_DigDir_8_node07(int value)
 {
-return doWrite(ID_Conf8_node07,  &value);
+return doWrite(ID_DigDir_8_node07,  &value);
 }
 
 
-int addWrite_Conf8_node07(int value)
+int addWrite_DigDir_8_node07(int value)
 {
-return addWrite(ID_Conf8_node07, &value);
+return addWrite(ID_DigDir_8_node07, &value);
 }
 
 
-int getStatus_Conf8_node07()
+int getStatus_DigDir_8_node07()
 {
-return getStatus(ID_Conf8_node07);
+return getStatus(ID_DigDir_8_node07);
 }
 
 
-int doWrite_digIN5_node07(int value)
+int doWrite_DigIn_2_node07(int value)
 {
-return doWrite(ID_digIN5_node07,  &value);
+return doWrite(ID_DigIn_2_node07,  &value);
 }
 
 
-int addWrite_digIN5_node07(int value)
+int addWrite_DigIn_2_node07(int value)
 {
-return addWrite(ID_digIN5_node07, &value);
+return addWrite(ID_DigIn_2_node07, &value);
 }
 
 
-int getStatus_digIN5_node07()
+int getStatus_DigIn_2_node07()
 {
-return getStatus(ID_digIN5_node07);
+return getStatus(ID_DigIn_2_node07);
 }
 
 
-int doWrite_digIN6_node07(int value)
+int doWrite_DigIn_3_node07(int value)
 {
-return doWrite(ID_digIN6_node07,  &value);
+return doWrite(ID_DigIn_3_node07,  &value);
 }
 
 
-int addWrite_digIN6_node07(int value)
+int addWrite_DigIn_3_node07(int value)
 {
-return addWrite(ID_digIN6_node07, &value);
+return addWrite(ID_DigIn_3_node07, &value);
 }
 
 
-int getStatus_digIN6_node07()
+int getStatus_DigIn_3_node07()
 {
-return getStatus(ID_digIN6_node07);
+return getStatus(ID_DigIn_3_node07);
 }
 
 
-int doWrite_digIN7_node07(int value)
+int doWrite_DigIn_6_node07(int value)
 {
-return doWrite(ID_digIN7_node07,  &value);
+return doWrite(ID_DigIn_6_node07,  &value);
 }
 
 
-int addWrite_digIN7_node07(int value)
+int addWrite_DigIn_6_node07(int value)
 {
-return addWrite(ID_digIN7_node07, &value);
+return addWrite(ID_DigIn_6_node07, &value);
 }
 
 
-int getStatus_digIN7_node07()
+int getStatus_DigIn_6_node07()
 {
-return getStatus(ID_digIN7_node07);
+return getStatus(ID_DigIn_6_node07);
 }
 
 
-int doWrite_digIN8_node07(int value)
+int doWrite_DigIn_7_node07(int value)
 {
-return doWrite(ID_digIN8_node07,  &value);
+return doWrite(ID_DigIn_7_node07,  &value);
 }
 
 
-int addWrite_digIN8_node07(int value)
+int addWrite_DigIn_7_node07(int value)
 {
-return addWrite(ID_digIN8_node07, &value);
+return addWrite(ID_DigIn_7_node07, &value);
 }
 
 
-int getStatus_digIN8_node07()
+int getStatus_DigIn_7_node07()
 {
-return getStatus(ID_digIN8_node07);
+return getStatus(ID_DigIn_7_node07);
 }
 
 
-int doWrite_digOUT1_node07(int value)
+int doWrite_DigOut_1_node07(int value)
 {
-return doWrite(ID_digOUT1_node07,  &value);
+return doWrite(ID_DigOut_1_node07,  &value);
 }
 
 
-int addWrite_digOUT1_node07(int value)
+int addWrite_DigOut_1_node07(int value)
 {
-return addWrite(ID_digOUT1_node07, &value);
+return addWrite(ID_DigOut_1_node07, &value);
 }
 
 
-int getStatus_digOUT1_node07()
+int getStatus_DigOut_1_node07()
 {
-return getStatus(ID_digOUT1_node07);
+return getStatus(ID_DigOut_1_node07);
 }
 
 
-int doWrite_digOUT2_node07(int value)
+int doWrite_DigOut_4_node07(int value)
 {
-return doWrite(ID_digOUT2_node07,  &value);
+return doWrite(ID_DigOut_4_node07,  &value);
 }
 
 
-int addWrite_digOUT2_node07(int value)
+int addWrite_DigOut_4_node07(int value)
 {
-return addWrite(ID_digOUT2_node07, &value);
+return addWrite(ID_DigOut_4_node07, &value);
 }
 
 
-int getStatus_digOUT2_node07()
+int getStatus_DigOut_4_node07()
 {
-return getStatus(ID_digOUT2_node07);
+return getStatus(ID_DigOut_4_node07);
 }
 
 
-int doWrite_digOUT3_node07(int value)
+int doWrite_DigOut_5_node07(int value)
 {
-return doWrite(ID_digOUT3_node07,  &value);
+return doWrite(ID_DigOut_5_node07,  &value);
 }
 
 
-int addWrite_digOUT3_node07(int value)
+int addWrite_DigOut_5_node07(int value)
 {
-return addWrite(ID_digOUT3_node07, &value);
+return addWrite(ID_DigOut_5_node07, &value);
 }
 
 
-int getStatus_digOUT3_node07()
+int getStatus_DigOut_5_node07()
 {
-return getStatus(ID_digOUT3_node07);
+return getStatus(ID_DigOut_5_node07);
 }
 
 
-int doWrite_digOUT4_node07(int value)
+int doWrite_DigOut_8_node07(int value)
 {
-return doWrite(ID_digOUT4_node07,  &value);
+return doWrite(ID_DigOut_8_node07,  &value);
 }
 
 
-int addWrite_digOUT4_node07(int value)
+int addWrite_DigOut_8_node07(int value)
 {
-return addWrite(ID_digOUT4_node07, &value);
+return addWrite(ID_DigOut_8_node07, &value);
 }
 
 
-int getStatus_digOUT4_node07()
+int getStatus_DigOut_8_node07()
 {
-return getStatus(ID_digOUT4_node07);
+return getStatus(ID_DigOut_8_node07);
 }
 
 
@@ -3630,39 +3630,39 @@ return getStatus(ID_Life_node08);
 }
 
 
-int doWrite_ConfAi1_node08(u_int16_t value)
+int doWrite_AnInCnf_1_node08(u_int16_t value)
 {
-return doWrite(ID_ConfAi1_node08,  &value);
+return doWrite(ID_AnInCnf_1_node08,  &value);
 }
 
 
-int addWrite_ConfAi1_node08(u_int16_t value)
+int addWrite_AnInCnf_1_node08(u_int16_t value)
 {
-return addWrite(ID_ConfAi1_node08, &value);
+return addWrite(ID_AnInCnf_1_node08, &value);
 }
 
 
-int getStatus_ConfAi1_node08()
+int getStatus_AnInCnf_1_node08()
 {
-return getStatus(ID_ConfAi1_node08);
+return getStatus(ID_AnInCnf_1_node08);
 }
 
 
-int doWrite_ConfAi2_node08(u_int16_t value)
+int doWrite_AnInCnf_2_node08(u_int16_t value)
 {
-return doWrite(ID_ConfAi2_node08,  &value);
+return doWrite(ID_AnInCnf_2_node08,  &value);
 }
 
 
-int addWrite_ConfAi2_node08(u_int16_t value)
+int addWrite_AnInCnf_2_node08(u_int16_t value)
 {
-return addWrite(ID_ConfAi2_node08, &value);
+return addWrite(ID_AnInCnf_2_node08, &value);
 }
 
 
-int getStatus_ConfAi2_node08()
+int getStatus_AnInCnf_2_node08()
 {
-return getStatus(ID_ConfAi2_node08);
+return getStatus(ID_AnInCnf_2_node08);
 }
 
 
@@ -3702,291 +3702,291 @@ return getStatus(ID_ValAi2_node08);
 }
 
 
-int doWrite_Conf1_node08(int value)
+int doWrite_DigDir_1_node08(int value)
 {
-return doWrite(ID_Conf1_node08,  &value);
+return doWrite(ID_DigDir_1_node08,  &value);
 }
 
 
-int addWrite_Conf1_node08(int value)
+int addWrite_DigDir_1_node08(int value)
 {
-return addWrite(ID_Conf1_node08, &value);
+return addWrite(ID_DigDir_1_node08, &value);
 }
 
 
-int getStatus_Conf1_node08()
+int getStatus_DigDir_1_node08()
 {
-return getStatus(ID_Conf1_node08);
+return getStatus(ID_DigDir_1_node08);
 }
 
 
-int doWrite_Conf2_node08(int value)
+int doWrite_DigDir_2_node08(int value)
 {
-return doWrite(ID_Conf2_node08,  &value);
+return doWrite(ID_DigDir_2_node08,  &value);
 }
 
 
-int addWrite_Conf2_node08(int value)
+int addWrite_DigDir_2_node08(int value)
 {
-return addWrite(ID_Conf2_node08, &value);
+return addWrite(ID_DigDir_2_node08, &value);
 }
 
 
-int getStatus_Conf2_node08()
+int getStatus_DigDir_2_node08()
 {
-return getStatus(ID_Conf2_node08);
+return getStatus(ID_DigDir_2_node08);
 }
 
 
-int doWrite_Conf3_node08(int value)
+int doWrite_DigDir_3_node08(int value)
 {
-return doWrite(ID_Conf3_node08,  &value);
+return doWrite(ID_DigDir_3_node08,  &value);
 }
 
 
-int addWrite_Conf3_node08(int value)
+int addWrite_DigDir_3_node08(int value)
 {
-return addWrite(ID_Conf3_node08, &value);
+return addWrite(ID_DigDir_3_node08, &value);
 }
 
 
-int getStatus_Conf3_node08()
+int getStatus_DigDir_3_node08()
 {
-return getStatus(ID_Conf3_node08);
+return getStatus(ID_DigDir_3_node08);
 }
 
 
-int doWrite_Conf4_node08(int value)
+int doWrite_DigDir_4_node08(int value)
 {
-return doWrite(ID_Conf4_node08,  &value);
+return doWrite(ID_DigDir_4_node08,  &value);
 }
 
 
-int addWrite_Conf4_node08(int value)
+int addWrite_DigDir_4_node08(int value)
 {
-return addWrite(ID_Conf4_node08, &value);
+return addWrite(ID_DigDir_4_node08, &value);
 }
 
 
-int getStatus_Conf4_node08()
+int getStatus_DigDir_4_node08()
 {
-return getStatus(ID_Conf4_node08);
+return getStatus(ID_DigDir_4_node08);
 }
 
 
-int doWrite_Conf5_node08(int value)
+int doWrite_DigDir_5_node08(int value)
 {
-return doWrite(ID_Conf5_node08,  &value);
+return doWrite(ID_DigDir_5_node08,  &value);
 }
 
 
-int addWrite_Conf5_node08(int value)
+int addWrite_DigDir_5_node08(int value)
 {
-return addWrite(ID_Conf5_node08, &value);
+return addWrite(ID_DigDir_5_node08, &value);
 }
 
 
-int getStatus_Conf5_node08()
+int getStatus_DigDir_5_node08()
 {
-return getStatus(ID_Conf5_node08);
+return getStatus(ID_DigDir_5_node08);
 }
 
 
-int doWrite_Conf6_node08(int value)
+int doWrite_DigDir_6_node08(int value)
 {
-return doWrite(ID_Conf6_node08,  &value);
+return doWrite(ID_DigDir_6_node08,  &value);
 }
 
 
-int addWrite_Conf6_node08(int value)
+int addWrite_DigDir_6_node08(int value)
 {
-return addWrite(ID_Conf6_node08, &value);
+return addWrite(ID_DigDir_6_node08, &value);
 }
 
 
-int getStatus_Conf6_node08()
+int getStatus_DigDir_6_node08()
 {
-return getStatus(ID_Conf6_node08);
+return getStatus(ID_DigDir_6_node08);
 }
 
 
-int doWrite_Conf7_node08(int value)
+int doWrite_DigDir_7_node08(int value)
 {
-return doWrite(ID_Conf7_node08,  &value);
+return doWrite(ID_DigDir_7_node08,  &value);
 }
 
 
-int addWrite_Conf7_node08(int value)
+int addWrite_DigDir_7_node08(int value)
 {
-return addWrite(ID_Conf7_node08, &value);
+return addWrite(ID_DigDir_7_node08, &value);
 }
 
 
-int getStatus_Conf7_node08()
+int getStatus_DigDir_7_node08()
 {
-return getStatus(ID_Conf7_node08);
+return getStatus(ID_DigDir_7_node08);
 }
 
 
-int doWrite_Conf8_node08(int value)
+int doWrite_DigDir_8_node08(int value)
 {
-return doWrite(ID_Conf8_node08,  &value);
+return doWrite(ID_DigDir_8_node08,  &value);
 }
 
 
-int addWrite_Conf8_node08(int value)
+int addWrite_DigDir_8_node08(int value)
 {
-return addWrite(ID_Conf8_node08, &value);
+return addWrite(ID_DigDir_8_node08, &value);
 }
 
 
-int getStatus_Conf8_node08()
+int getStatus_DigDir_8_node08()
 {
-return getStatus(ID_Conf8_node08);
+return getStatus(ID_DigDir_8_node08);
 }
 
 
-int doWrite_digIN5_node08(int value)
+int doWrite_DigIn_2_node08(int value)
 {
-return doWrite(ID_digIN5_node08,  &value);
+return doWrite(ID_DigIn_2_node08,  &value);
 }
 
 
-int addWrite_digIN5_node08(int value)
+int addWrite_DigIn_2_node08(int value)
 {
-return addWrite(ID_digIN5_node08, &value);
+return addWrite(ID_DigIn_2_node08, &value);
 }
 
 
-int getStatus_digIN5_node08()
+int getStatus_DigIn_2_node08()
 {
-return getStatus(ID_digIN5_node08);
+return getStatus(ID_DigIn_2_node08);
 }
 
 
-int doWrite_digIN6_node08(int value)
+int doWrite_DigIn_3_node08(int value)
 {
-return doWrite(ID_digIN6_node08,  &value);
+return doWrite(ID_DigIn_3_node08,  &value);
 }
 
 
-int addWrite_digIN6_node08(int value)
+int addWrite_DigIn_3_node08(int value)
 {
-return addWrite(ID_digIN6_node08, &value);
+return addWrite(ID_DigIn_3_node08, &value);
 }
 
 
-int getStatus_digIN6_node08()
+int getStatus_DigIn_3_node08()
 {
-return getStatus(ID_digIN6_node08);
+return getStatus(ID_DigIn_3_node08);
 }
 
 
-int doWrite_digIN7_node08(int value)
+int doWrite_DigIn_6_node08(int value)
 {
-return doWrite(ID_digIN7_node08,  &value);
+return doWrite(ID_DigIn_6_node08,  &value);
 }
 
 
-int addWrite_digIN7_node08(int value)
+int addWrite_DigIn_6_node08(int value)
 {
-return addWrite(ID_digIN7_node08, &value);
+return addWrite(ID_DigIn_6_node08, &value);
 }
 
 
-int getStatus_digIN7_node08()
+int getStatus_DigIn_6_node08()
 {
-return getStatus(ID_digIN7_node08);
+return getStatus(ID_DigIn_6_node08);
 }
 
 
-int doWrite_digIN8_node08(int value)
+int doWrite_DigIn_7_node08(int value)
 {
-return doWrite(ID_digIN8_node08,  &value);
+return doWrite(ID_DigIn_7_node08,  &value);
 }
 
 
-int addWrite_digIN8_node08(int value)
+int addWrite_DigIn_7_node08(int value)
 {
-return addWrite(ID_digIN8_node08, &value);
+return addWrite(ID_DigIn_7_node08, &value);
 }
 
 
-int getStatus_digIN8_node08()
+int getStatus_DigIn_7_node08()
 {
-return getStatus(ID_digIN8_node08);
+return getStatus(ID_DigIn_7_node08);
 }
 
 
-int doWrite_digOUT1_node08(int value)
+int doWrite_DigOut_1_node08(int value)
 {
-return doWrite(ID_digOUT1_node08,  &value);
+return doWrite(ID_DigOut_1_node08,  &value);
 }
 
 
-int addWrite_digOUT1_node08(int value)
+int addWrite_DigOut_1_node08(int value)
 {
-return addWrite(ID_digOUT1_node08, &value);
+return addWrite(ID_DigOut_1_node08, &value);
 }
 
 
-int getStatus_digOUT1_node08()
+int getStatus_DigOut_1_node08()
 {
-return getStatus(ID_digOUT1_node08);
+return getStatus(ID_DigOut_1_node08);
 }
 
 
-int doWrite_digOUT2_node08(int value)
+int doWrite_DigOut_4_node08(int value)
 {
-return doWrite(ID_digOUT2_node08,  &value);
+return doWrite(ID_DigOut_4_node08,  &value);
 }
 
 
-int addWrite_digOUT2_node08(int value)
+int addWrite_DigOut_4_node08(int value)
 {
-return addWrite(ID_digOUT2_node08, &value);
+return addWrite(ID_DigOut_4_node08, &value);
 }
 
 
-int getStatus_digOUT2_node08()
+int getStatus_DigOut_4_node08()
 {
-return getStatus(ID_digOUT2_node08);
+return getStatus(ID_DigOut_4_node08);
 }
 
 
-int doWrite_digOUT3_node08(int value)
+int doWrite_DigOut_5_node08(int value)
 {
-return doWrite(ID_digOUT3_node08,  &value);
+return doWrite(ID_DigOut_5_node08,  &value);
 }
 
 
-int addWrite_digOUT3_node08(int value)
+int addWrite_DigOut_5_node08(int value)
 {
-return addWrite(ID_digOUT3_node08, &value);
+return addWrite(ID_DigOut_5_node08, &value);
 }
 
 
-int getStatus_digOUT3_node08()
+int getStatus_DigOut_5_node08()
 {
-return getStatus(ID_digOUT3_node08);
+return getStatus(ID_DigOut_5_node08);
 }
 
 
-int doWrite_digOUT4_node08(int value)
+int doWrite_DigOut_8_node08(int value)
 {
-return doWrite(ID_digOUT4_node08,  &value);
+return doWrite(ID_DigOut_8_node08,  &value);
 }
 
 
-int addWrite_digOUT4_node08(int value)
+int addWrite_DigOut_8_node08(int value)
 {
-return addWrite(ID_digOUT4_node08, &value);
+return addWrite(ID_DigOut_8_node08, &value);
 }
 
 
-int getStatus_digOUT4_node08()
+int getStatus_DigOut_8_node08()
 {
-return getStatus(ID_digOUT4_node08);
+return getStatus(ID_DigOut_8_node08);
 }
 
 
@@ -4026,39 +4026,39 @@ return getStatus(ID_Life_node09);
 }
 
 
-int doWrite_ConfAi1_node09(u_int16_t value)
+int doWrite_AnInCnf_1_node09(u_int16_t value)
 {
-return doWrite(ID_ConfAi1_node09,  &value);
+return doWrite(ID_AnInCnf_1_node09,  &value);
 }
 
 
-int addWrite_ConfAi1_node09(u_int16_t value)
+int addWrite_AnInCnf_1_node09(u_int16_t value)
 {
-return addWrite(ID_ConfAi1_node09, &value);
+return addWrite(ID_AnInCnf_1_node09, &value);
 }
 
 
-int getStatus_ConfAi1_node09()
+int getStatus_AnInCnf_1_node09()
 {
-return getStatus(ID_ConfAi1_node09);
+return getStatus(ID_AnInCnf_1_node09);
 }
 
 
-int doWrite_ConfAi2_node09(u_int16_t value)
+int doWrite_AnInCnf_2_node09(u_int16_t value)
 {
-return doWrite(ID_ConfAi2_node09,  &value);
+return doWrite(ID_AnInCnf_2_node09,  &value);
 }
 
 
-int addWrite_ConfAi2_node09(u_int16_t value)
+int addWrite_AnInCnf_2_node09(u_int16_t value)
 {
-return addWrite(ID_ConfAi2_node09, &value);
+return addWrite(ID_AnInCnf_2_node09, &value);
 }
 
 
-int getStatus_ConfAi2_node09()
+int getStatus_AnInCnf_2_node09()
 {
-return getStatus(ID_ConfAi2_node09);
+return getStatus(ID_AnInCnf_2_node09);
 }
 
 
@@ -4098,291 +4098,291 @@ return getStatus(ID_ValAi2_node09);
 }
 
 
-int doWrite_Conf1_node09(int value)
+int doWrite_DigDir_1_node09(int value)
 {
-return doWrite(ID_Conf1_node09,  &value);
+return doWrite(ID_DigDir_1_node09,  &value);
 }
 
 
-int addWrite_Conf1_node09(int value)
+int addWrite_DigDir_1_node09(int value)
 {
-return addWrite(ID_Conf1_node09, &value);
+return addWrite(ID_DigDir_1_node09, &value);
 }
 
 
-int getStatus_Conf1_node09()
+int getStatus_DigDir_1_node09()
 {
-return getStatus(ID_Conf1_node09);
+return getStatus(ID_DigDir_1_node09);
 }
 
 
-int doWrite_Conf2_node09(int value)
+int doWrite_DigDir_2_node09(int value)
 {
-return doWrite(ID_Conf2_node09,  &value);
+return doWrite(ID_DigDir_2_node09,  &value);
 }
 
 
-int addWrite_Conf2_node09(int value)
+int addWrite_DigDir_2_node09(int value)
 {
-return addWrite(ID_Conf2_node09, &value);
+return addWrite(ID_DigDir_2_node09, &value);
 }
 
 
-int getStatus_Conf2_node09()
+int getStatus_DigDir_2_node09()
 {
-return getStatus(ID_Conf2_node09);
+return getStatus(ID_DigDir_2_node09);
 }
 
 
-int doWrite_Conf3_node09(int value)
+int doWrite_DigDir_3_node09(int value)
 {
-return doWrite(ID_Conf3_node09,  &value);
+return doWrite(ID_DigDir_3_node09,  &value);
 }
 
 
-int addWrite_Conf3_node09(int value)
+int addWrite_DigDir_3_node09(int value)
 {
-return addWrite(ID_Conf3_node09, &value);
+return addWrite(ID_DigDir_3_node09, &value);
 }
 
 
-int getStatus_Conf3_node09()
+int getStatus_DigDir_3_node09()
 {
-return getStatus(ID_Conf3_node09);
+return getStatus(ID_DigDir_3_node09);
 }
 
 
-int doWrite_Conf4_node09(int value)
+int doWrite_DigDir_4_node09(int value)
 {
-return doWrite(ID_Conf4_node09,  &value);
+return doWrite(ID_DigDir_4_node09,  &value);
 }
 
 
-int addWrite_Conf4_node09(int value)
+int addWrite_DigDir_4_node09(int value)
 {
-return addWrite(ID_Conf4_node09, &value);
+return addWrite(ID_DigDir_4_node09, &value);
 }
 
 
-int getStatus_Conf4_node09()
+int getStatus_DigDir_4_node09()
 {
-return getStatus(ID_Conf4_node09);
+return getStatus(ID_DigDir_4_node09);
 }
 
 
-int doWrite_Conf5_node09(int value)
+int doWrite_DigDir_5_node09(int value)
 {
-return doWrite(ID_Conf5_node09,  &value);
+return doWrite(ID_DigDir_5_node09,  &value);
 }
 
 
-int addWrite_Conf5_node09(int value)
+int addWrite_DigDir_5_node09(int value)
 {
-return addWrite(ID_Conf5_node09, &value);
+return addWrite(ID_DigDir_5_node09, &value);
 }
 
 
-int getStatus_Conf5_node09()
+int getStatus_DigDir_5_node09()
 {
-return getStatus(ID_Conf5_node09);
+return getStatus(ID_DigDir_5_node09);
 }
 
 
-int doWrite_Conf6_node09(int value)
+int doWrite_DigDir_6_node09(int value)
 {
-return doWrite(ID_Conf6_node09,  &value);
+return doWrite(ID_DigDir_6_node09,  &value);
 }
 
 
-int addWrite_Conf6_node09(int value)
+int addWrite_DigDir_6_node09(int value)
 {
-return addWrite(ID_Conf6_node09, &value);
+return addWrite(ID_DigDir_6_node09, &value);
 }
 
 
-int getStatus_Conf6_node09()
+int getStatus_DigDir_6_node09()
 {
-return getStatus(ID_Conf6_node09);
+return getStatus(ID_DigDir_6_node09);
 }
 
 
-int doWrite_Conf7_node09(int value)
+int doWrite_DigDir_7_node09(int value)
 {
-return doWrite(ID_Conf7_node09,  &value);
+return doWrite(ID_DigDir_7_node09,  &value);
 }
 
 
-int addWrite_Conf7_node09(int value)
+int addWrite_DigDir_7_node09(int value)
 {
-return addWrite(ID_Conf7_node09, &value);
+return addWrite(ID_DigDir_7_node09, &value);
 }
 
 
-int getStatus_Conf7_node09()
+int getStatus_DigDir_7_node09()
 {
-return getStatus(ID_Conf7_node09);
+return getStatus(ID_DigDir_7_node09);
 }
 
 
-int doWrite_Conf8_node019(int value)
+int doWrite_DigDir_8_node09(int value)
 {
-return doWrite(ID_Conf8_node019,  &value);
+return doWrite(ID_DigDir_8_node09,  &value);
 }
 
 
-int addWrite_Conf8_node019(int value)
+int addWrite_DigDir_8_node09(int value)
 {
-return addWrite(ID_Conf8_node019, &value);
+return addWrite(ID_DigDir_8_node09, &value);
 }
 
 
-int getStatus_Conf8_node019()
+int getStatus_DigDir_8_node09()
 {
-return getStatus(ID_Conf8_node019);
+return getStatus(ID_DigDir_8_node09);
 }
 
 
-int doWrite_digIN5_node09(int value)
+int doWrite_DigIn_2_node09(int value)
 {
-return doWrite(ID_digIN5_node09,  &value);
+return doWrite(ID_DigIn_2_node09,  &value);
 }
 
 
-int addWrite_digIN5_node09(int value)
+int addWrite_DigIn_2_node09(int value)
 {
-return addWrite(ID_digIN5_node09, &value);
+return addWrite(ID_DigIn_2_node09, &value);
 }
 
 
-int getStatus_digIN5_node09()
+int getStatus_DigIn_2_node09()
 {
-return getStatus(ID_digIN5_node09);
+return getStatus(ID_DigIn_2_node09);
 }
 
 
-int doWrite_digIN6_node09(int value)
+int doWrite_DigIn_3_node09(int value)
 {
-return doWrite(ID_digIN6_node09,  &value);
+return doWrite(ID_DigIn_3_node09,  &value);
 }
 
 
-int addWrite_digIN6_node09(int value)
+int addWrite_DigIn_3_node09(int value)
 {
-return addWrite(ID_digIN6_node09, &value);
+return addWrite(ID_DigIn_3_node09, &value);
 }
 
 
-int getStatus_digIN6_node09()
+int getStatus_DigIn_3_node09()
 {
-return getStatus(ID_digIN6_node09);
+return getStatus(ID_DigIn_3_node09);
 }
 
 
-int doWrite_digIN7_node09(int value)
+int doWrite_DigIn_6_node09(int value)
 {
-return doWrite(ID_digIN7_node09,  &value);
+return doWrite(ID_DigIn_6_node09,  &value);
 }
 
 
-int addWrite_digIN7_node09(int value)
+int addWrite_DigIn_6_node09(int value)
 {
-return addWrite(ID_digIN7_node09, &value);
+return addWrite(ID_DigIn_6_node09, &value);
 }
 
 
-int getStatus_digIN7_node09()
+int getStatus_DigIn_6_node09()
 {
-return getStatus(ID_digIN7_node09);
+return getStatus(ID_DigIn_6_node09);
 }
 
 
-int doWrite_digIN8_node09(int value)
+int doWrite_DigIn_7_node09(int value)
 {
-return doWrite(ID_digIN8_node09,  &value);
+return doWrite(ID_DigIn_7_node09,  &value);
 }
 
 
-int addWrite_digIN8_node09(int value)
+int addWrite_DigIn_7_node09(int value)
 {
-return addWrite(ID_digIN8_node09, &value);
+return addWrite(ID_DigIn_7_node09, &value);
 }
 
 
-int getStatus_digIN8_node09()
+int getStatus_DigIn_7_node09()
 {
-return getStatus(ID_digIN8_node09);
+return getStatus(ID_DigIn_7_node09);
 }
 
 
-int doWrite_digOUT1_node09(int value)
+int doWrite_DigOut_1_node09(int value)
 {
-return doWrite(ID_digOUT1_node09,  &value);
+return doWrite(ID_DigOut_1_node09,  &value);
 }
 
 
-int addWrite_digOUT1_node09(int value)
+int addWrite_DigOut_1_node09(int value)
 {
-return addWrite(ID_digOUT1_node09, &value);
+return addWrite(ID_DigOut_1_node09, &value);
 }
 
 
-int getStatus_digOUT1_node09()
+int getStatus_DigOut_1_node09()
 {
-return getStatus(ID_digOUT1_node09);
+return getStatus(ID_DigOut_1_node09);
 }
 
 
-int doWrite_digOUT2_node09(int value)
+int doWrite_DigOut_4_node09(int value)
 {
-return doWrite(ID_digOUT2_node09,  &value);
+return doWrite(ID_DigOut_4_node09,  &value);
 }
 
 
-int addWrite_digOUT2_node09(int value)
+int addWrite_DigOut_4_node09(int value)
 {
-return addWrite(ID_digOUT2_node09, &value);
+return addWrite(ID_DigOut_4_node09, &value);
 }
 
 
-int getStatus_digOUT2_node09()
+int getStatus_DigOut_4_node09()
 {
-return getStatus(ID_digOUT2_node09);
+return getStatus(ID_DigOut_4_node09);
 }
 
 
-int doWrite_digOUT3_node09(int value)
+int doWrite_DigOut_5_node09(int value)
 {
-return doWrite(ID_digOUT3_node09,  &value);
+return doWrite(ID_DigOut_5_node09,  &value);
 }
 
 
-int addWrite_digOUT3_node09(int value)
+int addWrite_DigOut_5_node09(int value)
 {
-return addWrite(ID_digOUT3_node09, &value);
+return addWrite(ID_DigOut_5_node09, &value);
 }
 
 
-int getStatus_digOUT3_node09()
+int getStatus_DigOut_5_node09()
 {
-return getStatus(ID_digOUT3_node09);
+return getStatus(ID_DigOut_5_node09);
 }
 
 
-int doWrite_digOUT4_node09(int value)
+int doWrite_DigOut_8_node09(int value)
 {
-return doWrite(ID_digOUT4_node09,  &value);
+return doWrite(ID_DigOut_8_node09,  &value);
 }
 
 
-int addWrite_digOUT4_node09(int value)
+int addWrite_DigOut_8_node09(int value)
 {
-return addWrite(ID_digOUT4_node09, &value);
+return addWrite(ID_DigOut_8_node09, &value);
 }
 
 
-int getStatus_digOUT4_node09()
+int getStatus_DigOut_8_node09()
 {
-return getStatus(ID_digOUT4_node09);
+return getStatus(ID_DigOut_8_node09);
 }
 
 
@@ -4422,39 +4422,39 @@ return getStatus(ID_Life_node10);
 }
 
 
-int doWrite_ConfAi1_node10(u_int16_t value)
+int doWrite_AnInCnf_1_node10(u_int16_t value)
 {
-return doWrite(ID_ConfAi1_node10,  &value);
+return doWrite(ID_AnInCnf_1_node10,  &value);
 }
 
 
-int addWrite_ConfAi1_node10(u_int16_t value)
+int addWrite_AnInCnf_1_node10(u_int16_t value)
 {
-return addWrite(ID_ConfAi1_node10, &value);
+return addWrite(ID_AnInCnf_1_node10, &value);
 }
 
 
-int getStatus_ConfAi1_node10()
+int getStatus_AnInCnf_1_node10()
 {
-return getStatus(ID_ConfAi1_node10);
+return getStatus(ID_AnInCnf_1_node10);
 }
 
 
-int doWrite_ConfAi2_node10(u_int16_t value)
+int doWrite_AnInCnf_2_node10(u_int16_t value)
 {
-return doWrite(ID_ConfAi2_node10,  &value);
+return doWrite(ID_AnInCnf_2_node10,  &value);
 }
 
 
-int addWrite_ConfAi2_node10(u_int16_t value)
+int addWrite_AnInCnf_2_node10(u_int16_t value)
 {
-return addWrite(ID_ConfAi2_node10, &value);
+return addWrite(ID_AnInCnf_2_node10, &value);
 }
 
 
-int getStatus_ConfAi2_node10()
+int getStatus_AnInCnf_2_node10()
 {
-return getStatus(ID_ConfAi2_node10);
+return getStatus(ID_AnInCnf_2_node10);
 }
 
 
@@ -4494,291 +4494,291 @@ return getStatus(ID_ValAi2_node10);
 }
 
 
-int doWrite_Conf1_node10(int value)
+int doWrite_DigDir_1_node10(int value)
 {
-return doWrite(ID_Conf1_node10,  &value);
+return doWrite(ID_DigDir_1_node10,  &value);
 }
 
 
-int addWrite_Conf1_node10(int value)
+int addWrite_DigDir_1_node10(int value)
 {
-return addWrite(ID_Conf1_node10, &value);
+return addWrite(ID_DigDir_1_node10, &value);
 }
 
 
-int getStatus_Conf1_node10()
+int getStatus_DigDir_1_node10()
 {
-return getStatus(ID_Conf1_node10);
+return getStatus(ID_DigDir_1_node10);
 }
 
 
-int doWrite_Conf2_node10(int value)
+int doWrite_DigDir_2_node10(int value)
 {
-return doWrite(ID_Conf2_node10,  &value);
+return doWrite(ID_DigDir_2_node10,  &value);
 }
 
 
-int addWrite_Conf2_node10(int value)
+int addWrite_DigDir_2_node10(int value)
 {
-return addWrite(ID_Conf2_node10, &value);
+return addWrite(ID_DigDir_2_node10, &value);
 }
 
 
-int getStatus_Conf2_node10()
+int getStatus_DigDir_2_node10()
 {
-return getStatus(ID_Conf2_node10);
+return getStatus(ID_DigDir_2_node10);
 }
 
 
-int doWrite_Conf3_node10(int value)
+int doWrite_DigDir_3_node10(int value)
 {
-return doWrite(ID_Conf3_node10,  &value);
+return doWrite(ID_DigDir_3_node10,  &value);
 }
 
 
-int addWrite_Conf3_node10(int value)
+int addWrite_DigDir_3_node10(int value)
 {
-return addWrite(ID_Conf3_node10, &value);
+return addWrite(ID_DigDir_3_node10, &value);
 }
 
 
-int getStatus_Conf3_node10()
+int getStatus_DigDir_3_node10()
 {
-return getStatus(ID_Conf3_node10);
+return getStatus(ID_DigDir_3_node10);
 }
 
 
-int doWrite_Conf4_node10(int value)
+int doWrite_DigDir_4_node10(int value)
 {
-return doWrite(ID_Conf4_node10,  &value);
+return doWrite(ID_DigDir_4_node10,  &value);
 }
 
 
-int addWrite_Conf4_node10(int value)
+int addWrite_DigDir_4_node10(int value)
 {
-return addWrite(ID_Conf4_node10, &value);
+return addWrite(ID_DigDir_4_node10, &value);
 }
 
 
-int getStatus_Conf4_node10()
+int getStatus_DigDir_4_node10()
 {
-return getStatus(ID_Conf4_node10);
+return getStatus(ID_DigDir_4_node10);
 }
 
 
-int doWrite_Conf5_node10(int value)
+int doWrite_DigDir_5_node10(int value)
 {
-return doWrite(ID_Conf5_node10,  &value);
+return doWrite(ID_DigDir_5_node10,  &value);
 }
 
 
-int addWrite_Conf5_node10(int value)
+int addWrite_DigDir_5_node10(int value)
 {
-return addWrite(ID_Conf5_node10, &value);
+return addWrite(ID_DigDir_5_node10, &value);
 }
 
 
-int getStatus_Conf5_node10()
+int getStatus_DigDir_5_node10()
 {
-return getStatus(ID_Conf5_node10);
+return getStatus(ID_DigDir_5_node10);
 }
 
 
-int doWrite_Conf6_node10(int value)
+int doWrite_DigDir_6_node10(int value)
 {
-return doWrite(ID_Conf6_node10,  &value);
+return doWrite(ID_DigDir_6_node10,  &value);
 }
 
 
-int addWrite_Conf6_node10(int value)
+int addWrite_DigDir_6_node10(int value)
 {
-return addWrite(ID_Conf6_node10, &value);
+return addWrite(ID_DigDir_6_node10, &value);
 }
 
 
-int getStatus_Conf6_node10()
+int getStatus_DigDir_6_node10()
 {
-return getStatus(ID_Conf6_node10);
+return getStatus(ID_DigDir_6_node10);
 }
 
 
-int doWrite_Conf7_node10(int value)
+int doWrite_DigDir_7_node10(int value)
 {
-return doWrite(ID_Conf7_node10,  &value);
+return doWrite(ID_DigDir_7_node10,  &value);
 }
 
 
-int addWrite_Conf7_node10(int value)
+int addWrite_DigDir_7_node10(int value)
 {
-return addWrite(ID_Conf7_node10, &value);
+return addWrite(ID_DigDir_7_node10, &value);
 }
 
 
-int getStatus_Conf7_node10()
+int getStatus_DigDir_7_node10()
 {
-return getStatus(ID_Conf7_node10);
+return getStatus(ID_DigDir_7_node10);
 }
 
 
-int doWrite_Conf8_node10(int value)
+int doWrite_DigDir_8_node10(int value)
 {
-return doWrite(ID_Conf8_node10,  &value);
+return doWrite(ID_DigDir_8_node10,  &value);
 }
 
 
-int addWrite_Conf8_node10(int value)
+int addWrite_DigDir_8_node10(int value)
 {
-return addWrite(ID_Conf8_node10, &value);
+return addWrite(ID_DigDir_8_node10, &value);
 }
 
 
-int getStatus_Conf8_node10()
+int getStatus_DigDir_8_node10()
 {
-return getStatus(ID_Conf8_node10);
+return getStatus(ID_DigDir_8_node10);
 }
 
 
-int doWrite_digIN5_node10(int value)
+int doWrite_DigIn_2_node10(int value)
 {
-return doWrite(ID_digIN5_node10,  &value);
+return doWrite(ID_DigIn_2_node10,  &value);
 }
 
 
-int addWrite_digIN5_node10(int value)
+int addWrite_DigIn_2_node10(int value)
 {
-return addWrite(ID_digIN5_node10, &value);
+return addWrite(ID_DigIn_2_node10, &value);
 }
 
 
-int getStatus_digIN5_node10()
+int getStatus_DigIn_2_node10()
 {
-return getStatus(ID_digIN5_node10);
+return getStatus(ID_DigIn_2_node10);
 }
 
 
-int doWrite_digIN6_node10(int value)
+int doWrite_DigIn_3_node10(int value)
 {
-return doWrite(ID_digIN6_node10,  &value);
+return doWrite(ID_DigIn_3_node10,  &value);
 }
 
 
-int addWrite_digIN6_node10(int value)
+int addWrite_DigIn_3_node10(int value)
 {
-return addWrite(ID_digIN6_node10, &value);
+return addWrite(ID_DigIn_3_node10, &value);
 }
 
 
-int getStatus_digIN6_node10()
+int getStatus_DigIn_3_node10()
 {
-return getStatus(ID_digIN6_node10);
+return getStatus(ID_DigIn_3_node10);
 }
 
 
-int doWrite_digIN7_node10(int value)
+int doWrite_DigIn_6_node10(int value)
 {
-return doWrite(ID_digIN7_node10,  &value);
+return doWrite(ID_DigIn_6_node10,  &value);
 }
 
 
-int addWrite_digIN7_node10(int value)
+int addWrite_DigIn_6_node10(int value)
 {
-return addWrite(ID_digIN7_node10, &value);
+return addWrite(ID_DigIn_6_node10, &value);
 }
 
 
-int getStatus_digIN7_node10()
+int getStatus_DigIn_6_node10()
 {
-return getStatus(ID_digIN7_node10);
+return getStatus(ID_DigIn_6_node10);
 }
 
 
-int doWrite_digIN8_node10(int value)
+int doWrite_DigIn_7_node10(int value)
 {
-return doWrite(ID_digIN8_node10,  &value);
+return doWrite(ID_DigIn_7_node10,  &value);
 }
 
 
-int addWrite_digIN8_node10(int value)
+int addWrite_DigIn_7_node10(int value)
 {
-return addWrite(ID_digIN8_node10, &value);
+return addWrite(ID_DigIn_7_node10, &value);
 }
 
 
-int getStatus_digIN8_node10()
+int getStatus_DigIn_7_node10()
 {
-return getStatus(ID_digIN8_node10);
+return getStatus(ID_DigIn_7_node10);
 }
 
 
-int doWrite_digOUT1_node10(int value)
+int doWrite_DigOut_1_node10(int value)
 {
-return doWrite(ID_digOUT1_node10,  &value);
+return doWrite(ID_DigOut_1_node10,  &value);
 }
 
 
-int addWrite_digOUT1_node10(int value)
+int addWrite_DigOut_1_node10(int value)
 {
-return addWrite(ID_digOUT1_node10, &value);
+return addWrite(ID_DigOut_1_node10, &value);
 }
 
 
-int getStatus_digOUT1_node10()
+int getStatus_DigOut_1_node10()
 {
-return getStatus(ID_digOUT1_node10);
+return getStatus(ID_DigOut_1_node10);
 }
 
 
-int doWrite_digOUT2_node10(int value)
+int doWrite_DigOut_4_node10(int value)
 {
-return doWrite(ID_digOUT2_node10,  &value);
+return doWrite(ID_DigOut_4_node10,  &value);
 }
 
 
-int addWrite_digOUT2_node10(int value)
+int addWrite_DigOut_4_node10(int value)
 {
-return addWrite(ID_digOUT2_node10, &value);
+return addWrite(ID_DigOut_4_node10, &value);
 }
 
 
-int getStatus_digOUT2_node10()
+int getStatus_DigOut_4_node10()
 {
-return getStatus(ID_digOUT2_node10);
+return getStatus(ID_DigOut_4_node10);
 }
 
 
-int doWrite_digOUT3_node10(int value)
+int doWrite_DigOut_5_node10(int value)
 {
-return doWrite(ID_digOUT3_node10,  &value);
+return doWrite(ID_DigOut_5_node10,  &value);
 }
 
 
-int addWrite_digOUT3_node10(int value)
+int addWrite_DigOut_5_node10(int value)
 {
-return addWrite(ID_digOUT3_node10, &value);
+return addWrite(ID_DigOut_5_node10, &value);
 }
 
 
-int getStatus_digOUT3_node10()
+int getStatus_DigOut_5_node10()
 {
-return getStatus(ID_digOUT3_node10);
+return getStatus(ID_DigOut_5_node10);
 }
 
 
-int doWrite_digOUT4_node10(int value)
+int doWrite_DigOut_8_node10(int value)
 {
-return doWrite(ID_digOUT4_node10,  &value);
+return doWrite(ID_DigOut_8_node10,  &value);
 }
 
 
-int addWrite_digOUT4_node10(int value)
+int addWrite_DigOut_8_node10(int value)
 {
-return addWrite(ID_digOUT4_node10, &value);
+return addWrite(ID_DigOut_8_node10, &value);
 }
 
 
-int getStatus_digOUT4_node10()
+int getStatus_DigOut_8_node10()
 {
-return getStatus(ID_digOUT4_node10);
+return getStatus(ID_DigOut_8_node10);
 }
 
 
@@ -4818,39 +4818,39 @@ return getStatus(ID_Life_node11);
 }
 
 
-int doWrite_ConfAi1_node11(u_int16_t value)
+int doWrite_AnInCnf_1_node11(u_int16_t value)
 {
-return doWrite(ID_ConfAi1_node11,  &value);
+return doWrite(ID_AnInCnf_1_node11,  &value);
 }
 
 
-int addWrite_ConfAi1_node11(u_int16_t value)
+int addWrite_AnInCnf_1_node11(u_int16_t value)
 {
-return addWrite(ID_ConfAi1_node11, &value);
+return addWrite(ID_AnInCnf_1_node11, &value);
 }
 
 
-int getStatus_ConfAi1_node11()
+int getStatus_AnInCnf_1_node11()
 {
-return getStatus(ID_ConfAi1_node11);
+return getStatus(ID_AnInCnf_1_node11);
 }
 
 
-int doWrite_ConfAi2_node11(u_int16_t value)
+int doWrite_AnInCnf_2_node11(u_int16_t value)
 {
-return doWrite(ID_ConfAi2_node11,  &value);
+return doWrite(ID_AnInCnf_2_node11,  &value);
 }
 
 
-int addWrite_ConfAi2_node11(u_int16_t value)
+int addWrite_AnInCnf_2_node11(u_int16_t value)
 {
-return addWrite(ID_ConfAi2_node11, &value);
+return addWrite(ID_AnInCnf_2_node11, &value);
 }
 
 
-int getStatus_ConfAi2_node11()
+int getStatus_AnInCnf_2_node11()
 {
-return getStatus(ID_ConfAi2_node11);
+return getStatus(ID_AnInCnf_2_node11);
 }
 
 
@@ -4890,291 +4890,291 @@ return getStatus(ID_ValAi2_node11);
 }
 
 
-int doWrite_Conf1_node11(int value)
+int doWrite_DigDir_1_node11(int value)
 {
-return doWrite(ID_Conf1_node11,  &value);
+return doWrite(ID_DigDir_1_node11,  &value);
 }
 
 
-int addWrite_Conf1_node11(int value)
+int addWrite_DigDir_1_node11(int value)
 {
-return addWrite(ID_Conf1_node11, &value);
+return addWrite(ID_DigDir_1_node11, &value);
 }
 
 
-int getStatus_Conf1_node11()
+int getStatus_DigDir_1_node11()
 {
-return getStatus(ID_Conf1_node11);
+return getStatus(ID_DigDir_1_node11);
 }
 
 
-int doWrite_Conf2_node11(int value)
+int doWrite_DigDir_2_node11(int value)
 {
-return doWrite(ID_Conf2_node11,  &value);
+return doWrite(ID_DigDir_2_node11,  &value);
 }
 
 
-int addWrite_Conf2_node11(int value)
+int addWrite_DigDir_2_node11(int value)
 {
-return addWrite(ID_Conf2_node11, &value);
+return addWrite(ID_DigDir_2_node11, &value);
 }
 
 
-int getStatus_Conf2_node11()
+int getStatus_DigDir_2_node11()
 {
-return getStatus(ID_Conf2_node11);
+return getStatus(ID_DigDir_2_node11);
 }
 
 
-int doWrite_Conf3_node11(int value)
+int doWrite_DigDir_3_node11(int value)
 {
-return doWrite(ID_Conf3_node11,  &value);
+return doWrite(ID_DigDir_3_node11,  &value);
 }
 
 
-int addWrite_Conf3_node11(int value)
+int addWrite_DigDir_3_node11(int value)
 {
-return addWrite(ID_Conf3_node11, &value);
+return addWrite(ID_DigDir_3_node11, &value);
 }
 
 
-int getStatus_Conf3_node11()
+int getStatus_DigDir_3_node11()
 {
-return getStatus(ID_Conf3_node11);
+return getStatus(ID_DigDir_3_node11);
 }
 
 
-int doWrite_Conf4_node11(int value)
+int doWrite_DigDir_4_node11(int value)
 {
-return doWrite(ID_Conf4_node11,  &value);
+return doWrite(ID_DigDir_4_node11,  &value);
 }
 
 
-int addWrite_Conf4_node11(int value)
+int addWrite_DigDir_4_node11(int value)
 {
-return addWrite(ID_Conf4_node11, &value);
+return addWrite(ID_DigDir_4_node11, &value);
 }
 
 
-int getStatus_Conf4_node11()
+int getStatus_DigDir_4_node11()
 {
-return getStatus(ID_Conf4_node11);
+return getStatus(ID_DigDir_4_node11);
 }
 
 
-int doWrite_Conf5_node11(int value)
+int doWrite_DigDir_5_node11(int value)
 {
-return doWrite(ID_Conf5_node11,  &value);
+return doWrite(ID_DigDir_5_node11,  &value);
 }
 
 
-int addWrite_Conf5_node11(int value)
+int addWrite_DigDir_5_node11(int value)
 {
-return addWrite(ID_Conf5_node11, &value);
+return addWrite(ID_DigDir_5_node11, &value);
 }
 
 
-int getStatus_Conf5_node11()
+int getStatus_DigDir_5_node11()
 {
-return getStatus(ID_Conf5_node11);
+return getStatus(ID_DigDir_5_node11);
 }
 
 
-int doWrite_Conf6_node11(int value)
+int doWrite_DigDir_6_node11(int value)
 {
-return doWrite(ID_Conf6_node11,  &value);
+return doWrite(ID_DigDir_6_node11,  &value);
 }
 
 
-int addWrite_Conf6_node11(int value)
+int addWrite_DigDir_6_node11(int value)
 {
-return addWrite(ID_Conf6_node11, &value);
+return addWrite(ID_DigDir_6_node11, &value);
 }
 
 
-int getStatus_Conf6_node11()
+int getStatus_DigDir_6_node11()
 {
-return getStatus(ID_Conf6_node11);
+return getStatus(ID_DigDir_6_node11);
 }
 
 
-int doWrite_Conf7_node11(int value)
+int doWrite_DigDir_7_node11(int value)
 {
-return doWrite(ID_Conf7_node11,  &value);
+return doWrite(ID_DigDir_7_node11,  &value);
 }
 
 
-int addWrite_Conf7_node11(int value)
+int addWrite_DigDir_7_node11(int value)
 {
-return addWrite(ID_Conf7_node11, &value);
+return addWrite(ID_DigDir_7_node11, &value);
 }
 
 
-int getStatus_Conf7_node11()
+int getStatus_DigDir_7_node11()
 {
-return getStatus(ID_Conf7_node11);
+return getStatus(ID_DigDir_7_node11);
 }
 
 
-int doWrite_Conf8_node11(int value)
+int doWrite_DigDir_8_node11(int value)
 {
-return doWrite(ID_Conf8_node11,  &value);
+return doWrite(ID_DigDir_8_node11,  &value);
 }
 
 
-int addWrite_Conf8_node11(int value)
+int addWrite_DigDir_8_node11(int value)
 {
-return addWrite(ID_Conf8_node11, &value);
+return addWrite(ID_DigDir_8_node11, &value);
 }
 
 
-int getStatus_Conf8_node11()
+int getStatus_DigDir_8_node11()
 {
-return getStatus(ID_Conf8_node11);
+return getStatus(ID_DigDir_8_node11);
 }
 
 
-int doWrite_digIN5_node11(int value)
+int doWrite_DigIn_2_node11(int value)
 {
-return doWrite(ID_digIN5_node11,  &value);
+return doWrite(ID_DigIn_2_node11,  &value);
 }
 
 
-int addWrite_digIN5_node11(int value)
+int addWrite_DigIn_2_node11(int value)
 {
-return addWrite(ID_digIN5_node11, &value);
+return addWrite(ID_DigIn_2_node11, &value);
 }
 
 
-int getStatus_digIN5_node11()
+int getStatus_DigIn_2_node11()
 {
-return getStatus(ID_digIN5_node11);
+return getStatus(ID_DigIn_2_node11);
 }
 
 
-int doWrite_digIN6_node11(int value)
+int doWrite_DigIn_3_node11(int value)
 {
-return doWrite(ID_digIN6_node11,  &value);
+return doWrite(ID_DigIn_3_node11,  &value);
 }
 
 
-int addWrite_digIN6_node11(int value)
+int addWrite_DigIn_3_node11(int value)
 {
-return addWrite(ID_digIN6_node11, &value);
+return addWrite(ID_DigIn_3_node11, &value);
 }
 
 
-int getStatus_digIN6_node11()
+int getStatus_DigIn_3_node11()
 {
-return getStatus(ID_digIN6_node11);
+return getStatus(ID_DigIn_3_node11);
 }
 
 
-int doWrite_digIN7_node11(int value)
+int doWrite_DigIn_6_node11(int value)
 {
-return doWrite(ID_digIN7_node11,  &value);
+return doWrite(ID_DigIn_6_node11,  &value);
 }
 
 
-int addWrite_digIN7_node11(int value)
+int addWrite_DigIn_6_node11(int value)
 {
-return addWrite(ID_digIN7_node11, &value);
+return addWrite(ID_DigIn_6_node11, &value);
 }
 
 
-int getStatus_digIN7_node11()
+int getStatus_DigIn_6_node11()
 {
-return getStatus(ID_digIN7_node11);
+return getStatus(ID_DigIn_6_node11);
 }
 
 
-int doWrite_digIN8_node11(int value)
+int doWrite_DigIn_7_node11(int value)
 {
-return doWrite(ID_digIN8_node11,  &value);
+return doWrite(ID_DigIn_7_node11,  &value);
 }
 
 
-int addWrite_digIN8_node11(int value)
+int addWrite_DigIn_7_node11(int value)
 {
-return addWrite(ID_digIN8_node11, &value);
+return addWrite(ID_DigIn_7_node11, &value);
 }
 
 
-int getStatus_digIN8_node11()
+int getStatus_DigIn_7_node11()
 {
-return getStatus(ID_digIN8_node11);
+return getStatus(ID_DigIn_7_node11);
 }
 
 
-int doWrite_digOUT1_node11(int value)
+int doWrite_DigOut_1_node11(int value)
 {
-return doWrite(ID_digOUT1_node11,  &value);
+return doWrite(ID_DigOut_1_node11,  &value);
 }
 
 
-int addWrite_digOUT1_node11(int value)
+int addWrite_DigOut_1_node11(int value)
 {
-return addWrite(ID_digOUT1_node11, &value);
+return addWrite(ID_DigOut_1_node11, &value);
 }
 
 
-int getStatus_digOUT1_node11()
+int getStatus_DigOut_1_node11()
 {
-return getStatus(ID_digOUT1_node11);
+return getStatus(ID_DigOut_1_node11);
 }
 
 
-int doWrite_digOUT2_node11(int value)
+int doWrite_DigOut_4_node11(int value)
 {
-return doWrite(ID_digOUT2_node11,  &value);
+return doWrite(ID_DigOut_4_node11,  &value);
 }
 
 
-int addWrite_digOUT2_node11(int value)
+int addWrite_DigOut_4_node11(int value)
 {
-return addWrite(ID_digOUT2_node11, &value);
+return addWrite(ID_DigOut_4_node11, &value);
 }
 
 
-int getStatus_digOUT2_node11()
+int getStatus_DigOut_4_node11()
 {
-return getStatus(ID_digOUT2_node11);
+return getStatus(ID_DigOut_4_node11);
 }
 
 
-int doWrite_digOUT3_node11(int value)
+int doWrite_DigOut_5_node11(int value)
 {
-return doWrite(ID_digOUT3_node11,  &value);
+return doWrite(ID_DigOut_5_node11,  &value);
 }
 
 
-int addWrite_digOUT3_node11(int value)
+int addWrite_DigOut_5_node11(int value)
 {
-return addWrite(ID_digOUT3_node11, &value);
+return addWrite(ID_DigOut_5_node11, &value);
 }
 
 
-int getStatus_digOUT3_node11()
+int getStatus_DigOut_5_node11()
 {
-return getStatus(ID_digOUT3_node11);
+return getStatus(ID_DigOut_5_node11);
 }
 
 
-int doWrite_digOUT4_node11(int value)
+int doWrite_DigOut_8_node11(int value)
 {
-return doWrite(ID_digOUT4_node11,  &value);
+return doWrite(ID_DigOut_8_node11,  &value);
 }
 
 
-int addWrite_digOUT4_node11(int value)
+int addWrite_DigOut_8_node11(int value)
 {
-return addWrite(ID_digOUT4_node11, &value);
+return addWrite(ID_DigOut_8_node11, &value);
 }
 
 
-int getStatus_digOUT4_node11()
+int getStatus_DigOut_8_node11()
 {
-return getStatus(ID_digOUT4_node11);
+return getStatus(ID_DigOut_8_node11);
 }
 
 
@@ -5214,39 +5214,39 @@ return getStatus(ID_Life_node12);
 }
 
 
-int doWrite_ConfAi1_node12(u_int16_t value)
+int doWrite_AnInCnf_1_node12(u_int16_t value)
 {
-return doWrite(ID_ConfAi1_node12,  &value);
+return doWrite(ID_AnInCnf_1_node12,  &value);
 }
 
 
-int addWrite_ConfAi1_node12(u_int16_t value)
+int addWrite_AnInCnf_1_node12(u_int16_t value)
 {
-return addWrite(ID_ConfAi1_node12, &value);
+return addWrite(ID_AnInCnf_1_node12, &value);
 }
 
 
-int getStatus_ConfAi1_node12()
+int getStatus_AnInCnf_1_node12()
 {
-return getStatus(ID_ConfAi1_node12);
+return getStatus(ID_AnInCnf_1_node12);
 }
 
 
-int doWrite_ConfAi2_node12(u_int16_t value)
+int doWrite_AnInCnf_2_node12(u_int16_t value)
 {
-return doWrite(ID_ConfAi2_node12,  &value);
+return doWrite(ID_AnInCnf_2_node12,  &value);
 }
 
 
-int addWrite_ConfAi2_node12(u_int16_t value)
+int addWrite_AnInCnf_2_node12(u_int16_t value)
 {
-return addWrite(ID_ConfAi2_node12, &value);
+return addWrite(ID_AnInCnf_2_node12, &value);
 }
 
 
-int getStatus_ConfAi2_node12()
+int getStatus_AnInCnf_2_node12()
 {
-return getStatus(ID_ConfAi2_node12);
+return getStatus(ID_AnInCnf_2_node12);
 }
 
 
@@ -5286,291 +5286,291 @@ return getStatus(ID_ValAi2_node12);
 }
 
 
-int doWrite_Conf1_node12(int value)
+int doWrite_DigDir_1_node12(int value)
 {
-return doWrite(ID_Conf1_node12,  &value);
+return doWrite(ID_DigDir_1_node12,  &value);
 }
 
 
-int addWrite_Conf1_node12(int value)
+int addWrite_DigDir_1_node12(int value)
 {
-return addWrite(ID_Conf1_node12, &value);
+return addWrite(ID_DigDir_1_node12, &value);
 }
 
 
-int getStatus_Conf1_node12()
+int getStatus_DigDir_1_node12()
 {
-return getStatus(ID_Conf1_node12);
+return getStatus(ID_DigDir_1_node12);
 }
 
 
-int doWrite_Conf2_node12(int value)
+int doWrite_DigDir_2_node12(int value)
 {
-return doWrite(ID_Conf2_node12,  &value);
+return doWrite(ID_DigDir_2_node12,  &value);
 }
 
 
-int addWrite_Conf2_node12(int value)
+int addWrite_DigDir_2_node12(int value)
 {
-return addWrite(ID_Conf2_node12, &value);
+return addWrite(ID_DigDir_2_node12, &value);
 }
 
 
-int getStatus_Conf2_node12()
+int getStatus_DigDir_2_node12()
 {
-return getStatus(ID_Conf2_node12);
+return getStatus(ID_DigDir_2_node12);
 }
 
 
-int doWrite_Conf3_node12(int value)
+int doWrite_DigDir_3_node12(int value)
 {
-return doWrite(ID_Conf3_node12,  &value);
+return doWrite(ID_DigDir_3_node12,  &value);
 }
 
 
-int addWrite_Conf3_node12(int value)
+int addWrite_DigDir_3_node12(int value)
 {
-return addWrite(ID_Conf3_node12, &value);
+return addWrite(ID_DigDir_3_node12, &value);
 }
 
 
-int getStatus_Conf3_node12()
+int getStatus_DigDir_3_node12()
 {
-return getStatus(ID_Conf3_node12);
+return getStatus(ID_DigDir_3_node12);
 }
 
 
-int doWrite_Conf4_node12(int value)
+int doWrite_DigDir_4_node12(int value)
 {
-return doWrite(ID_Conf4_node12,  &value);
+return doWrite(ID_DigDir_4_node12,  &value);
 }
 
 
-int addWrite_Conf4_node12(int value)
+int addWrite_DigDir_4_node12(int value)
 {
-return addWrite(ID_Conf4_node12, &value);
+return addWrite(ID_DigDir_4_node12, &value);
 }
 
 
-int getStatus_Conf4_node12()
+int getStatus_DigDir_4_node12()
 {
-return getStatus(ID_Conf4_node12);
+return getStatus(ID_DigDir_4_node12);
 }
 
 
-int doWrite_Conf5_node12(int value)
+int doWrite_DigDir_5_node12(int value)
 {
-return doWrite(ID_Conf5_node12,  &value);
+return doWrite(ID_DigDir_5_node12,  &value);
 }
 
 
-int addWrite_Conf5_node12(int value)
+int addWrite_DigDir_5_node12(int value)
 {
-return addWrite(ID_Conf5_node12, &value);
+return addWrite(ID_DigDir_5_node12, &value);
 }
 
 
-int getStatus_Conf5_node12()
+int getStatus_DigDir_5_node12()
 {
-return getStatus(ID_Conf5_node12);
+return getStatus(ID_DigDir_5_node12);
 }
 
 
-int doWrite_Conf6_node12(int value)
+int doWrite_DigDir_6_node12(int value)
 {
-return doWrite(ID_Conf6_node12,  &value);
+return doWrite(ID_DigDir_6_node12,  &value);
 }
 
 
-int addWrite_Conf6_node12(int value)
+int addWrite_DigDir_6_node12(int value)
 {
-return addWrite(ID_Conf6_node12, &value);
+return addWrite(ID_DigDir_6_node12, &value);
 }
 
 
-int getStatus_Conf6_node12()
+int getStatus_DigDir_6_node12()
 {
-return getStatus(ID_Conf6_node12);
+return getStatus(ID_DigDir_6_node12);
 }
 
 
-int doWrite_Conf7_node12(int value)
+int doWrite_DigDir_7_node12(int value)
 {
-return doWrite(ID_Conf7_node12,  &value);
+return doWrite(ID_DigDir_7_node12,  &value);
 }
 
 
-int addWrite_Conf7_node12(int value)
+int addWrite_DigDir_7_node12(int value)
 {
-return addWrite(ID_Conf7_node12, &value);
+return addWrite(ID_DigDir_7_node12, &value);
 }
 
 
-int getStatus_Conf7_node12()
+int getStatus_DigDir_7_node12()
 {
-return getStatus(ID_Conf7_node12);
+return getStatus(ID_DigDir_7_node12);
 }
 
 
-int doWrite_Conf8_node12(int value)
+int doWrite_DigDir_8_node12(int value)
 {
-return doWrite(ID_Conf8_node12,  &value);
+return doWrite(ID_DigDir_8_node12,  &value);
 }
 
 
-int addWrite_Conf8_node12(int value)
+int addWrite_DigDir_8_node12(int value)
 {
-return addWrite(ID_Conf8_node12, &value);
+return addWrite(ID_DigDir_8_node12, &value);
 }
 
 
-int getStatus_Conf8_node12()
+int getStatus_DigDir_8_node12()
 {
-return getStatus(ID_Conf8_node12);
+return getStatus(ID_DigDir_8_node12);
 }
 
 
-int doWrite_digIN5_node12(int value)
+int doWrite_DigIn_2_node12(int value)
 {
-return doWrite(ID_digIN5_node12,  &value);
+return doWrite(ID_DigIn_2_node12,  &value);
 }
 
 
-int addWrite_digIN5_node12(int value)
+int addWrite_DigIn_2_node12(int value)
 {
-return addWrite(ID_digIN5_node12, &value);
+return addWrite(ID_DigIn_2_node12, &value);
 }
 
 
-int getStatus_digIN5_node12()
+int getStatus_DigIn_2_node12()
 {
-return getStatus(ID_digIN5_node12);
+return getStatus(ID_DigIn_2_node12);
 }
 
 
-int doWrite_digIN6_node12(int value)
+int doWrite_DigIn_3_node12(int value)
 {
-return doWrite(ID_digIN6_node12,  &value);
+return doWrite(ID_DigIn_3_node12,  &value);
 }
 
 
-int addWrite_digIN6_node12(int value)
+int addWrite_DigIn_3_node12(int value)
 {
-return addWrite(ID_digIN6_node12, &value);
+return addWrite(ID_DigIn_3_node12, &value);
 }
 
 
-int getStatus_digIN6_node12()
+int getStatus_DigIn_3_node12()
 {
-return getStatus(ID_digIN6_node12);
+return getStatus(ID_DigIn_3_node12);
 }
 
 
-int doWrite_digIN7_node12(int value)
+int doWrite_DigIn_6_node12(int value)
 {
-return doWrite(ID_digIN7_node12,  &value);
+return doWrite(ID_DigIn_6_node12,  &value);
 }
 
 
-int addWrite_digIN7_node12(int value)
+int addWrite_DigIn_6_node12(int value)
 {
-return addWrite(ID_digIN7_node12, &value);
+return addWrite(ID_DigIn_6_node12, &value);
 }
 
 
-int getStatus_digIN7_node12()
+int getStatus_DigIn_6_node12()
 {
-return getStatus(ID_digIN7_node12);
+return getStatus(ID_DigIn_6_node12);
 }
 
 
-int doWrite_digIN8_node12(int value)
+int doWrite_DigIn_7_node12(int value)
 {
-return doWrite(ID_digIN8_node12,  &value);
+return doWrite(ID_DigIn_7_node12,  &value);
 }
 
 
-int addWrite_digIN8_node12(int value)
+int addWrite_DigIn_7_node12(int value)
 {
-return addWrite(ID_digIN8_node12, &value);
+return addWrite(ID_DigIn_7_node12, &value);
 }
 
 
-int getStatus_digIN8_node12()
+int getStatus_DigIn_7_node12()
 {
-return getStatus(ID_digIN8_node12);
+return getStatus(ID_DigIn_7_node12);
 }
 
 
-int doWrite_digOUT1_node12(int value)
+int doWrite_DigOut_1_node12(int value)
 {
-return doWrite(ID_digOUT1_node12,  &value);
+return doWrite(ID_DigOut_1_node12,  &value);
 }
 
 
-int addWrite_digOUT1_node12(int value)
+int addWrite_DigOut_1_node12(int value)
 {
-return addWrite(ID_digOUT1_node12, &value);
+return addWrite(ID_DigOut_1_node12, &value);
 }
 
 
-int getStatus_digOUT1_node12()
+int getStatus_DigOut_1_node12()
 {
-return getStatus(ID_digOUT1_node12);
+return getStatus(ID_DigOut_1_node12);
 }
 
 
-int doWrite_digOUT2_node12(int value)
+int doWrite_DigOut_4_node12(int value)
 {
-return doWrite(ID_digOUT2_node12,  &value);
+return doWrite(ID_DigOut_4_node12,  &value);
 }
 
 
-int addWrite_digOUT2_node12(int value)
+int addWrite_DigOut_4_node12(int value)
 {
-return addWrite(ID_digOUT2_node12, &value);
+return addWrite(ID_DigOut_4_node12, &value);
 }
 
 
-int getStatus_digOUT2_node12()
+int getStatus_DigOut_4_node12()
 {
-return getStatus(ID_digOUT2_node12);
+return getStatus(ID_DigOut_4_node12);
 }
 
 
-int doWrite_digOUT3_node12(int value)
+int doWrite_DigOut_5_node12(int value)
 {
-return doWrite(ID_digOUT3_node12,  &value);
+return doWrite(ID_DigOut_5_node12,  &value);
 }
 
 
-int addWrite_digOUT3_node12(int value)
+int addWrite_DigOut_5_node12(int value)
 {
-return addWrite(ID_digOUT3_node12, &value);
+return addWrite(ID_DigOut_5_node12, &value);
 }
 
 
-int getStatus_digOUT3_node12()
+int getStatus_DigOut_5_node12()
 {
-return getStatus(ID_digOUT3_node12);
+return getStatus(ID_DigOut_5_node12);
 }
 
 
-int doWrite_digOUT4_node12(int value)
+int doWrite_DigOut_8_node12(int value)
 {
-return doWrite(ID_digOUT4_node12,  &value);
+return doWrite(ID_DigOut_8_node12,  &value);
 }
 
 
-int addWrite_digOUT4_node12(int value)
+int addWrite_DigOut_8_node12(int value)
 {
-return addWrite(ID_digOUT4_node12, &value);
+return addWrite(ID_DigOut_8_node12, &value);
 }
 
 
-int getStatus_digOUT4_node12()
+int getStatus_DigOut_8_node12()
 {
-return getStatus(ID_digOUT4_node12);
+return getStatus(ID_DigOut_8_node12);
 }
 
 
@@ -5610,39 +5610,39 @@ return getStatus(ID_Life_node13);
 }
 
 
-int doWrite_ConfAi1_node13(u_int16_t value)
+int doWrite_AnInCnf_1_node13(u_int16_t value)
 {
-return doWrite(ID_ConfAi1_node13,  &value);
+return doWrite(ID_AnInCnf_1_node13,  &value);
 }
 
 
-int addWrite_ConfAi1_node13(u_int16_t value)
+int addWrite_AnInCnf_1_node13(u_int16_t value)
 {
-return addWrite(ID_ConfAi1_node13, &value);
+return addWrite(ID_AnInCnf_1_node13, &value);
 }
 
 
-int getStatus_ConfAi1_node13()
+int getStatus_AnInCnf_1_node13()
 {
-return getStatus(ID_ConfAi1_node13);
+return getStatus(ID_AnInCnf_1_node13);
 }
 
 
-int doWrite_ConfAi2_node13(u_int16_t value)
+int doWrite_AnInCnf_2_node13(u_int16_t value)
 {
-return doWrite(ID_ConfAi2_node13,  &value);
+return doWrite(ID_AnInCnf_2_node13,  &value);
 }
 
 
-int addWrite_ConfAi2_node13(u_int16_t value)
+int addWrite_AnInCnf_2_node13(u_int16_t value)
 {
-return addWrite(ID_ConfAi2_node13, &value);
+return addWrite(ID_AnInCnf_2_node13, &value);
 }
 
 
-int getStatus_ConfAi2_node13()
+int getStatus_AnInCnf_2_node13()
 {
-return getStatus(ID_ConfAi2_node13);
+return getStatus(ID_AnInCnf_2_node13);
 }
 
 
@@ -5682,291 +5682,291 @@ return getStatus(ID_ValAi2_node13);
 }
 
 
-int doWrite_Conf1_node13(int value)
+int doWrite_DigDir_1_node13(int value)
 {
-return doWrite(ID_Conf1_node13,  &value);
+return doWrite(ID_DigDir_1_node13,  &value);
 }
 
 
-int addWrite_Conf1_node13(int value)
+int addWrite_DigDir_1_node13(int value)
 {
-return addWrite(ID_Conf1_node13, &value);
+return addWrite(ID_DigDir_1_node13, &value);
 }
 
 
-int getStatus_Conf1_node13()
+int getStatus_DigDir_1_node13()
 {
-return getStatus(ID_Conf1_node13);
+return getStatus(ID_DigDir_1_node13);
 }
 
 
-int doWrite_Conf2_node13(int value)
+int doWrite_DigDir_2_node13(int value)
 {
-return doWrite(ID_Conf2_node13,  &value);
+return doWrite(ID_DigDir_2_node13,  &value);
 }
 
 
-int addWrite_Conf2_node13(int value)
+int addWrite_DigDir_2_node13(int value)
 {
-return addWrite(ID_Conf2_node13, &value);
+return addWrite(ID_DigDir_2_node13, &value);
 }
 
 
-int getStatus_Conf2_node13()
+int getStatus_DigDir_2_node13()
 {
-return getStatus(ID_Conf2_node13);
+return getStatus(ID_DigDir_2_node13);
 }
 
 
-int doWrite_Conf3_node13(int value)
+int doWrite_DigDir_3_node13(int value)
 {
-return doWrite(ID_Conf3_node13,  &value);
+return doWrite(ID_DigDir_3_node13,  &value);
 }
 
 
-int addWrite_Conf3_node13(int value)
+int addWrite_DigDir_3_node13(int value)
 {
-return addWrite(ID_Conf3_node13, &value);
+return addWrite(ID_DigDir_3_node13, &value);
 }
 
 
-int getStatus_Conf3_node13()
+int getStatus_DigDir_3_node13()
 {
-return getStatus(ID_Conf3_node13);
+return getStatus(ID_DigDir_3_node13);
 }
 
 
-int doWrite_Conf4_node13(int value)
+int doWrite_DigDir_4_node13(int value)
 {
-return doWrite(ID_Conf4_node13,  &value);
+return doWrite(ID_DigDir_4_node13,  &value);
 }
 
 
-int addWrite_Conf4_node13(int value)
+int addWrite_DigDir_4_node13(int value)
 {
-return addWrite(ID_Conf4_node13, &value);
+return addWrite(ID_DigDir_4_node13, &value);
 }
 
 
-int getStatus_Conf4_node13()
+int getStatus_DigDir_4_node13()
 {
-return getStatus(ID_Conf4_node13);
+return getStatus(ID_DigDir_4_node13);
 }
 
 
-int doWrite_Conf5_node13(int value)
+int doWrite_DigDir_5_node13(int value)
 {
-return doWrite(ID_Conf5_node13,  &value);
+return doWrite(ID_DigDir_5_node13,  &value);
 }
 
 
-int addWrite_Conf5_node13(int value)
+int addWrite_DigDir_5_node13(int value)
 {
-return addWrite(ID_Conf5_node13, &value);
+return addWrite(ID_DigDir_5_node13, &value);
 }
 
 
-int getStatus_Conf5_node13()
+int getStatus_DigDir_5_node13()
 {
-return getStatus(ID_Conf5_node13);
+return getStatus(ID_DigDir_5_node13);
 }
 
 
-int doWrite_Conf6_node13(int value)
+int doWrite_DigDir_6_node13(int value)
 {
-return doWrite(ID_Conf6_node13,  &value);
+return doWrite(ID_DigDir_6_node13,  &value);
 }
 
 
-int addWrite_Conf6_node13(int value)
+int addWrite_DigDir_6_node13(int value)
 {
-return addWrite(ID_Conf6_node13, &value);
+return addWrite(ID_DigDir_6_node13, &value);
 }
 
 
-int getStatus_Conf6_node13()
+int getStatus_DigDir_6_node13()
 {
-return getStatus(ID_Conf6_node13);
+return getStatus(ID_DigDir_6_node13);
 }
 
 
-int doWrite_Conf7_node13(int value)
+int doWrite_DigDir_7_node13(int value)
 {
-return doWrite(ID_Conf7_node13,  &value);
+return doWrite(ID_DigDir_7_node13,  &value);
 }
 
 
-int addWrite_Conf7_node13(int value)
+int addWrite_DigDir_7_node13(int value)
 {
-return addWrite(ID_Conf7_node13, &value);
+return addWrite(ID_DigDir_7_node13, &value);
 }
 
 
-int getStatus_Conf7_node13()
+int getStatus_DigDir_7_node13()
 {
-return getStatus(ID_Conf7_node13);
+return getStatus(ID_DigDir_7_node13);
 }
 
 
-int doWrite_Conf8_node13(int value)
+int doWrite_DigDir_8_node13(int value)
 {
-return doWrite(ID_Conf8_node13,  &value);
+return doWrite(ID_DigDir_8_node13,  &value);
 }
 
 
-int addWrite_Conf8_node13(int value)
+int addWrite_DigDir_8_node13(int value)
 {
-return addWrite(ID_Conf8_node13, &value);
+return addWrite(ID_DigDir_8_node13, &value);
 }
 
 
-int getStatus_Conf8_node13()
+int getStatus_DigDir_8_node13()
 {
-return getStatus(ID_Conf8_node13);
+return getStatus(ID_DigDir_8_node13);
 }
 
 
-int doWrite_digIN5_node13(int value)
+int doWrite_DigIn_2_node13(int value)
 {
-return doWrite(ID_digIN5_node13,  &value);
+return doWrite(ID_DigIn_2_node13,  &value);
 }
 
 
-int addWrite_digIN5_node13(int value)
+int addWrite_DigIn_2_node13(int value)
 {
-return addWrite(ID_digIN5_node13, &value);
+return addWrite(ID_DigIn_2_node13, &value);
 }
 
 
-int getStatus_digIN5_node13()
+int getStatus_DigIn_2_node13()
 {
-return getStatus(ID_digIN5_node13);
+return getStatus(ID_DigIn_2_node13);
 }
 
 
-int doWrite_digIN6_node13(int value)
+int doWrite_DigIn_3_node13(int value)
 {
-return doWrite(ID_digIN6_node13,  &value);
+return doWrite(ID_DigIn_3_node13,  &value);
 }
 
 
-int addWrite_digIN6_node13(int value)
+int addWrite_DigIn_3_node13(int value)
 {
-return addWrite(ID_digIN6_node13, &value);
+return addWrite(ID_DigIn_3_node13, &value);
 }
 
 
-int getStatus_digIN6_node13()
+int getStatus_DigIn_3_node13()
 {
-return getStatus(ID_digIN6_node13);
+return getStatus(ID_DigIn_3_node13);
 }
 
 
-int doWrite_digIN7_node13(int value)
+int doWrite_DigIn_6_node13(int value)
 {
-return doWrite(ID_digIN7_node13,  &value);
+return doWrite(ID_DigIn_6_node13,  &value);
 }
 
 
-int addWrite_digIN7_node13(int value)
+int addWrite_DigIn_6_node13(int value)
 {
-return addWrite(ID_digIN7_node13, &value);
+return addWrite(ID_DigIn_6_node13, &value);
 }
 
 
-int getStatus_digIN7_node13()
+int getStatus_DigIn_6_node13()
 {
-return getStatus(ID_digIN7_node13);
+return getStatus(ID_DigIn_6_node13);
 }
 
 
-int doWrite_digIN8_node13(int value)
+int doWrite_DigIn_7_node13(int value)
 {
-return doWrite(ID_digIN8_node13,  &value);
+return doWrite(ID_DigIn_7_node13,  &value);
 }
 
 
-int addWrite_digIN8_node13(int value)
+int addWrite_DigIn_7_node13(int value)
 {
-return addWrite(ID_digIN8_node13, &value);
+return addWrite(ID_DigIn_7_node13, &value);
 }
 
 
-int getStatus_digIN8_node13()
+int getStatus_DigIn_7_node13()
 {
-return getStatus(ID_digIN8_node13);
+return getStatus(ID_DigIn_7_node13);
 }
 
 
-int doWrite_digOUT1_node13(int value)
+int doWrite_DigOut_1_node13(int value)
 {
-return doWrite(ID_digOUT1_node13,  &value);
+return doWrite(ID_DigOut_1_node13,  &value);
 }
 
 
-int addWrite_digOUT1_node13(int value)
+int addWrite_DigOut_1_node13(int value)
 {
-return addWrite(ID_digOUT1_node13, &value);
+return addWrite(ID_DigOut_1_node13, &value);
 }
 
 
-int getStatus_digOUT1_node13()
+int getStatus_DigOut_1_node13()
 {
-return getStatus(ID_digOUT1_node13);
+return getStatus(ID_DigOut_1_node13);
 }
 
 
-int doWrite_digOUT2_node13(int value)
+int doWrite_DigOut_4_node13(int value)
 {
-return doWrite(ID_digOUT2_node13,  &value);
+return doWrite(ID_DigOut_4_node13,  &value);
 }
 
 
-int addWrite_digOUT2_node13(int value)
+int addWrite_DigOut_4_node13(int value)
 {
-return addWrite(ID_digOUT2_node13, &value);
+return addWrite(ID_DigOut_4_node13, &value);
 }
 
 
-int getStatus_digOUT2_node13()
+int getStatus_DigOut_4_node13()
 {
-return getStatus(ID_digOUT2_node13);
+return getStatus(ID_DigOut_4_node13);
 }
 
 
-int doWrite_digOUT3_node13(int value)
+int doWrite_DigOut_5_node13(int value)
 {
-return doWrite(ID_digOUT3_node13,  &value);
+return doWrite(ID_DigOut_5_node13,  &value);
 }
 
 
-int addWrite_digOUT3_node13(int value)
+int addWrite_DigOut_5_node13(int value)
 {
-return addWrite(ID_digOUT3_node13, &value);
+return addWrite(ID_DigOut_5_node13, &value);
 }
 
 
-int getStatus_digOUT3_node13()
+int getStatus_DigOut_5_node13()
 {
-return getStatus(ID_digOUT3_node13);
+return getStatus(ID_DigOut_5_node13);
 }
 
 
-int doWrite_digOUT4_node13(int value)
+int doWrite_DigOut_8_node13(int value)
 {
-return doWrite(ID_digOUT4_node13,  &value);
+return doWrite(ID_DigOut_8_node13,  &value);
 }
 
 
-int addWrite_digOUT4_node13(int value)
+int addWrite_DigOut_8_node13(int value)
 {
-return addWrite(ID_digOUT4_node13, &value);
+return addWrite(ID_DigOut_8_node13, &value);
 }
 
 
-int getStatus_digOUT4_node13()
+int getStatus_DigOut_8_node13()
 {
-return getStatus(ID_digOUT4_node13);
+return getStatus(ID_DigOut_8_node13);
 }
 
 
@@ -6006,39 +6006,39 @@ return getStatus(ID_Life_node14);
 }
 
 
-int doWrite_ConfAi1_node14(u_int16_t value)
+int doWrite_AnInCnf_1_node14(u_int16_t value)
 {
-return doWrite(ID_ConfAi1_node14,  &value);
+return doWrite(ID_AnInCnf_1_node14,  &value);
 }
 
 
-int addWrite_ConfAi1_node14(u_int16_t value)
+int addWrite_AnInCnf_1_node14(u_int16_t value)
 {
-return addWrite(ID_ConfAi1_node14, &value);
+return addWrite(ID_AnInCnf_1_node14, &value);
 }
 
 
-int getStatus_ConfAi1_node14()
+int getStatus_AnInCnf_1_node14()
 {
-return getStatus(ID_ConfAi1_node14);
+return getStatus(ID_AnInCnf_1_node14);
 }
 
 
-int doWrite_ConfAi2_node14(u_int16_t value)
+int doWrite_AnInCnf_2_node14(u_int16_t value)
 {
-return doWrite(ID_ConfAi2_node14,  &value);
+return doWrite(ID_AnInCnf_2_node14,  &value);
 }
 
 
-int addWrite_ConfAi2_node14(u_int16_t value)
+int addWrite_AnInCnf_2_node14(u_int16_t value)
 {
-return addWrite(ID_ConfAi2_node14, &value);
+return addWrite(ID_AnInCnf_2_node14, &value);
 }
 
 
-int getStatus_ConfAi2_node14()
+int getStatus_AnInCnf_2_node14()
 {
-return getStatus(ID_ConfAi2_node14);
+return getStatus(ID_AnInCnf_2_node14);
 }
 
 
@@ -6078,291 +6078,291 @@ return getStatus(ID_ValAi2_node14);
 }
 
 
-int doWrite_Conf1_node14(int value)
+int doWrite_DigDir_1_node14(int value)
 {
-return doWrite(ID_Conf1_node14,  &value);
+return doWrite(ID_DigDir_1_node14,  &value);
 }
 
 
-int addWrite_Conf1_node14(int value)
+int addWrite_DigDir_1_node14(int value)
 {
-return addWrite(ID_Conf1_node14, &value);
+return addWrite(ID_DigDir_1_node14, &value);
 }
 
 
-int getStatus_Conf1_node14()
+int getStatus_DigDir_1_node14()
 {
-return getStatus(ID_Conf1_node14);
+return getStatus(ID_DigDir_1_node14);
 }
 
 
-int doWrite_Conf2_node14(int value)
+int doWrite_DigDir_2_node14(int value)
 {
-return doWrite(ID_Conf2_node14,  &value);
+return doWrite(ID_DigDir_2_node14,  &value);
 }
 
 
-int addWrite_Conf2_node14(int value)
+int addWrite_DigDir_2_node14(int value)
 {
-return addWrite(ID_Conf2_node14, &value);
+return addWrite(ID_DigDir_2_node14, &value);
 }
 
 
-int getStatus_Conf2_node14()
+int getStatus_DigDir_2_node14()
 {
-return getStatus(ID_Conf2_node14);
+return getStatus(ID_DigDir_2_node14);
 }
 
 
-int doWrite_Conf3_node14(int value)
+int doWrite_DigDir_3_node14(int value)
 {
-return doWrite(ID_Conf3_node14,  &value);
+return doWrite(ID_DigDir_3_node14,  &value);
 }
 
 
-int addWrite_Conf3_node14(int value)
+int addWrite_DigDir_3_node14(int value)
 {
-return addWrite(ID_Conf3_node14, &value);
+return addWrite(ID_DigDir_3_node14, &value);
 }
 
 
-int getStatus_Conf3_node14()
+int getStatus_DigDir_3_node14()
 {
-return getStatus(ID_Conf3_node14);
+return getStatus(ID_DigDir_3_node14);
 }
 
 
-int doWrite_Conf4_node14(int value)
+int doWrite_DigDir_4_node14(int value)
 {
-return doWrite(ID_Conf4_node14,  &value);
+return doWrite(ID_DigDir_4_node14,  &value);
 }
 
 
-int addWrite_Conf4_node14(int value)
+int addWrite_DigDir_4_node14(int value)
 {
-return addWrite(ID_Conf4_node14, &value);
+return addWrite(ID_DigDir_4_node14, &value);
 }
 
 
-int getStatus_Conf4_node14()
+int getStatus_DigDir_4_node14()
 {
-return getStatus(ID_Conf4_node14);
+return getStatus(ID_DigDir_4_node14);
 }
 
 
-int doWrite_Conf5_node14(int value)
+int doWrite_DigDir_5_node14(int value)
 {
-return doWrite(ID_Conf5_node14,  &value);
+return doWrite(ID_DigDir_5_node14,  &value);
 }
 
 
-int addWrite_Conf5_node14(int value)
+int addWrite_DigDir_5_node14(int value)
 {
-return addWrite(ID_Conf5_node14, &value);
+return addWrite(ID_DigDir_5_node14, &value);
 }
 
 
-int getStatus_Conf5_node14()
+int getStatus_DigDir_5_node14()
 {
-return getStatus(ID_Conf5_node14);
+return getStatus(ID_DigDir_5_node14);
 }
 
 
-int doWrite_Conf6_node14(int value)
+int doWrite_DigDir_6_node14(int value)
 {
-return doWrite(ID_Conf6_node14,  &value);
+return doWrite(ID_DigDir_6_node14,  &value);
 }
 
 
-int addWrite_Conf6_node14(int value)
+int addWrite_DigDir_6_node14(int value)
 {
-return addWrite(ID_Conf6_node14, &value);
+return addWrite(ID_DigDir_6_node14, &value);
 }
 
 
-int getStatus_Conf6_node14()
+int getStatus_DigDir_6_node14()
 {
-return getStatus(ID_Conf6_node14);
+return getStatus(ID_DigDir_6_node14);
 }
 
 
-int doWrite_Conf7_node14(int value)
+int doWrite_DigDir_7_node14(int value)
 {
-return doWrite(ID_Conf7_node14,  &value);
+return doWrite(ID_DigDir_7_node14,  &value);
 }
 
 
-int addWrite_Conf7_node14(int value)
+int addWrite_DigDir_7_node14(int value)
 {
-return addWrite(ID_Conf7_node14, &value);
+return addWrite(ID_DigDir_7_node14, &value);
 }
 
 
-int getStatus_Conf7_node14()
+int getStatus_DigDir_7_node14()
 {
-return getStatus(ID_Conf7_node14);
+return getStatus(ID_DigDir_7_node14);
 }
 
 
-int doWrite_Conf8_node14(int value)
+int doWrite_DigDir_8_node14(int value)
 {
-return doWrite(ID_Conf8_node14,  &value);
+return doWrite(ID_DigDir_8_node14,  &value);
 }
 
 
-int addWrite_Conf8_node14(int value)
+int addWrite_DigDir_8_node14(int value)
 {
-return addWrite(ID_Conf8_node14, &value);
+return addWrite(ID_DigDir_8_node14, &value);
 }
 
 
-int getStatus_Conf8_node14()
+int getStatus_DigDir_8_node14()
 {
-return getStatus(ID_Conf8_node14);
+return getStatus(ID_DigDir_8_node14);
 }
 
 
-int doWrite_digIN5_node14(int value)
+int doWrite_DigIn_2_node14(int value)
 {
-return doWrite(ID_digIN5_node14,  &value);
+return doWrite(ID_DigIn_2_node14,  &value);
 }
 
 
-int addWrite_digIN5_node14(int value)
+int addWrite_DigIn_2_node14(int value)
 {
-return addWrite(ID_digIN5_node14, &value);
+return addWrite(ID_DigIn_2_node14, &value);
 }
 
 
-int getStatus_digIN5_node14()
+int getStatus_DigIn_2_node14()
 {
-return getStatus(ID_digIN5_node14);
+return getStatus(ID_DigIn_2_node14);
 }
 
 
-int doWrite_digIN6_node14(int value)
+int doWrite_DigIn_3_node14(int value)
 {
-return doWrite(ID_digIN6_node14,  &value);
+return doWrite(ID_DigIn_3_node14,  &value);
 }
 
 
-int addWrite_digIN6_node14(int value)
+int addWrite_DigIn_3_node14(int value)
 {
-return addWrite(ID_digIN6_node14, &value);
+return addWrite(ID_DigIn_3_node14, &value);
 }
 
 
-int getStatus_digIN6_node14()
+int getStatus_DigIn_3_node14()
 {
-return getStatus(ID_digIN6_node14);
+return getStatus(ID_DigIn_3_node14);
 }
 
 
-int doWrite_digIN7_node14(int value)
+int doWrite_DigIn_6_node14(int value)
 {
-return doWrite(ID_digIN7_node14,  &value);
+return doWrite(ID_DigIn_6_node14,  &value);
 }
 
 
-int addWrite_digIN7_node14(int value)
+int addWrite_DigIn_6_node14(int value)
 {
-return addWrite(ID_digIN7_node14, &value);
+return addWrite(ID_DigIn_6_node14, &value);
 }
 
 
-int getStatus_digIN7_node14()
+int getStatus_DigIn_6_node14()
 {
-return getStatus(ID_digIN7_node14);
+return getStatus(ID_DigIn_6_node14);
 }
 
 
-int doWrite_digIN8_node14(int value)
+int doWrite_DigIn_7_node14(int value)
 {
-return doWrite(ID_digIN8_node14,  &value);
+return doWrite(ID_DigIn_7_node14,  &value);
 }
 
 
-int addWrite_digIN8_node14(int value)
+int addWrite_DigIn_7_node14(int value)
 {
-return addWrite(ID_digIN8_node14, &value);
+return addWrite(ID_DigIn_7_node14, &value);
 }
 
 
-int getStatus_digIN8_node14()
+int getStatus_DigIn_7_node14()
 {
-return getStatus(ID_digIN8_node14);
+return getStatus(ID_DigIn_7_node14);
 }
 
 
-int doWrite_digOUT1_node14(int value)
+int doWrite_DigOut_1_node14(int value)
 {
-return doWrite(ID_digOUT1_node14,  &value);
+return doWrite(ID_DigOut_1_node14,  &value);
 }
 
 
-int addWrite_digOUT1_node14(int value)
+int addWrite_DigOut_1_node14(int value)
 {
-return addWrite(ID_digOUT1_node14, &value);
+return addWrite(ID_DigOut_1_node14, &value);
 }
 
 
-int getStatus_digOUT1_node14()
+int getStatus_DigOut_1_node14()
 {
-return getStatus(ID_digOUT1_node14);
+return getStatus(ID_DigOut_1_node14);
 }
 
 
-int doWrite_digOUT2_node14(int value)
+int doWrite_DigOut_4_node14(int value)
 {
-return doWrite(ID_digOUT2_node14,  &value);
+return doWrite(ID_DigOut_4_node14,  &value);
 }
 
 
-int addWrite_digOUT2_node14(int value)
+int addWrite_DigOut_4_node14(int value)
 {
-return addWrite(ID_digOUT2_node14, &value);
+return addWrite(ID_DigOut_4_node14, &value);
 }
 
 
-int getStatus_digOUT2_node14()
+int getStatus_DigOut_4_node14()
 {
-return getStatus(ID_digOUT2_node14);
+return getStatus(ID_DigOut_4_node14);
 }
 
 
-int doWrite_digOUT3_node14(int value)
+int doWrite_DigOut_5_node14(int value)
 {
-return doWrite(ID_digOUT3_node14,  &value);
+return doWrite(ID_DigOut_5_node14,  &value);
 }
 
 
-int addWrite_digOUT3_node14(int value)
+int addWrite_DigOut_5_node14(int value)
 {
-return addWrite(ID_digOUT3_node14, &value);
+return addWrite(ID_DigOut_5_node14, &value);
 }
 
 
-int getStatus_digOUT3_node14()
+int getStatus_DigOut_5_node14()
 {
-return getStatus(ID_digOUT3_node14);
+return getStatus(ID_DigOut_5_node14);
 }
 
 
-int doWrite_digOUT4_node14(int value)
+int doWrite_DigOut_8_node14(int value)
 {
-return doWrite(ID_digOUT4_node14,  &value);
+return doWrite(ID_DigOut_8_node14,  &value);
 }
 
 
-int addWrite_digOUT4_node14(int value)
+int addWrite_DigOut_8_node14(int value)
 {
-return addWrite(ID_digOUT4_node14, &value);
+return addWrite(ID_DigOut_8_node14, &value);
 }
 
 
-int getStatus_digOUT4_node14()
+int getStatus_DigOut_8_node14()
 {
-return getStatus(ID_digOUT4_node14);
+return getStatus(ID_DigOut_8_node14);
 }
 
 
@@ -6402,39 +6402,39 @@ return getStatus(ID_Life_node15);
 }
 
 
-int doWrite_ConfAi1_node15(u_int16_t value)
+int doWrite_AnInCnf_1_node15(u_int16_t value)
 {
-return doWrite(ID_ConfAi1_node15,  &value);
+return doWrite(ID_AnInCnf_1_node15,  &value);
 }
 
 
-int addWrite_ConfAi1_node15(u_int16_t value)
+int addWrite_AnInCnf_1_node15(u_int16_t value)
 {
-return addWrite(ID_ConfAi1_node15, &value);
+return addWrite(ID_AnInCnf_1_node15, &value);
 }
 
 
-int getStatus_ConfAi1_node15()
+int getStatus_AnInCnf_1_node15()
 {
-return getStatus(ID_ConfAi1_node15);
+return getStatus(ID_AnInCnf_1_node15);
 }
 
 
-int doWrite_ConfAi2_node15(u_int16_t value)
+int doWrite_AnInCnf_2_node15(u_int16_t value)
 {
-return doWrite(ID_ConfAi2_node15,  &value);
+return doWrite(ID_AnInCnf_2_node15,  &value);
 }
 
 
-int addWrite_ConfAi2_node15(u_int16_t value)
+int addWrite_AnInCnf_2_node15(u_int16_t value)
 {
-return addWrite(ID_ConfAi2_node15, &value);
+return addWrite(ID_AnInCnf_2_node15, &value);
 }
 
 
-int getStatus_ConfAi2_node15()
+int getStatus_AnInCnf_2_node15()
 {
-return getStatus(ID_ConfAi2_node15);
+return getStatus(ID_AnInCnf_2_node15);
 }
 
 
@@ -6474,291 +6474,291 @@ return getStatus(ID_ValAi2_node15);
 }
 
 
-int doWrite_Conf1_node15(int value)
+int doWrite_DigDir_1_node15(int value)
 {
-return doWrite(ID_Conf1_node15,  &value);
+return doWrite(ID_DigDir_1_node15,  &value);
 }
 
 
-int addWrite_Conf1_node15(int value)
+int addWrite_DigDir_1_node15(int value)
 {
-return addWrite(ID_Conf1_node15, &value);
+return addWrite(ID_DigDir_1_node15, &value);
 }
 
 
-int getStatus_Conf1_node15()
+int getStatus_DigDir_1_node15()
 {
-return getStatus(ID_Conf1_node15);
+return getStatus(ID_DigDir_1_node15);
 }
 
 
-int doWrite_Conf2_node15(int value)
+int doWrite_DigDir_2_node15(int value)
 {
-return doWrite(ID_Conf2_node15,  &value);
+return doWrite(ID_DigDir_2_node15,  &value);
 }
 
 
-int addWrite_Conf2_node15(int value)
+int addWrite_DigDir_2_node15(int value)
 {
-return addWrite(ID_Conf2_node15, &value);
+return addWrite(ID_DigDir_2_node15, &value);
 }
 
 
-int getStatus_Conf2_node15()
+int getStatus_DigDir_2_node15()
 {
-return getStatus(ID_Conf2_node15);
+return getStatus(ID_DigDir_2_node15);
 }
 
 
-int doWrite_Conf3_node15(int value)
+int doWrite_DigDir_3_node15(int value)
 {
-return doWrite(ID_Conf3_node15,  &value);
+return doWrite(ID_DigDir_3_node15,  &value);
 }
 
 
-int addWrite_Conf3_node15(int value)
+int addWrite_DigDir_3_node15(int value)
 {
-return addWrite(ID_Conf3_node15, &value);
+return addWrite(ID_DigDir_3_node15, &value);
 }
 
 
-int getStatus_Conf3_node15()
+int getStatus_DigDir_3_node15()
 {
-return getStatus(ID_Conf3_node15);
+return getStatus(ID_DigDir_3_node15);
 }
 
 
-int doWrite_Conf4_node15(int value)
+int doWrite_DigDir_4_node15(int value)
 {
-return doWrite(ID_Conf4_node15,  &value);
+return doWrite(ID_DigDir_4_node15,  &value);
 }
 
 
-int addWrite_Conf4_node15(int value)
+int addWrite_DigDir_4_node15(int value)
 {
-return addWrite(ID_Conf4_node15, &value);
+return addWrite(ID_DigDir_4_node15, &value);
 }
 
 
-int getStatus_Conf4_node15()
+int getStatus_DigDir_4_node15()
 {
-return getStatus(ID_Conf4_node15);
+return getStatus(ID_DigDir_4_node15);
 }
 
 
-int doWrite_Conf5_node15(int value)
+int doWrite_DigDir_5_node15(int value)
 {
-return doWrite(ID_Conf5_node15,  &value);
+return doWrite(ID_DigDir_5_node15,  &value);
 }
 
 
-int addWrite_Conf5_node15(int value)
+int addWrite_DigDir_5_node15(int value)
 {
-return addWrite(ID_Conf5_node15, &value);
+return addWrite(ID_DigDir_5_node15, &value);
 }
 
 
-int getStatus_Conf5_node15()
+int getStatus_DigDir_5_node15()
 {
-return getStatus(ID_Conf5_node15);
+return getStatus(ID_DigDir_5_node15);
 }
 
 
-int doWrite_Conf6_node15(int value)
+int doWrite_DigDir_6_node15(int value)
 {
-return doWrite(ID_Conf6_node15,  &value);
+return doWrite(ID_DigDir_6_node15,  &value);
 }
 
 
-int addWrite_Conf6_node15(int value)
+int addWrite_DigDir_6_node15(int value)
 {
-return addWrite(ID_Conf6_node15, &value);
+return addWrite(ID_DigDir_6_node15, &value);
 }
 
 
-int getStatus_Conf6_node15()
+int getStatus_DigDir_6_node15()
 {
-return getStatus(ID_Conf6_node15);
+return getStatus(ID_DigDir_6_node15);
 }
 
 
-int doWrite_Conf7_node15(int value)
+int doWrite_DigDir_7_node15(int value)
 {
-return doWrite(ID_Conf7_node15,  &value);
+return doWrite(ID_DigDir_7_node15,  &value);
 }
 
 
-int addWrite_Conf7_node15(int value)
+int addWrite_DigDir_7_node15(int value)
 {
-return addWrite(ID_Conf7_node15, &value);
+return addWrite(ID_DigDir_7_node15, &value);
 }
 
 
-int getStatus_Conf7_node15()
+int getStatus_DigDir_7_node15()
 {
-return getStatus(ID_Conf7_node15);
+return getStatus(ID_DigDir_7_node15);
 }
 
 
-int doWrite_Conf8_node15(int value)
+int doWrite_DigDir_8_node15(int value)
 {
-return doWrite(ID_Conf8_node15,  &value);
+return doWrite(ID_DigDir_8_node15,  &value);
 }
 
 
-int addWrite_Conf8_node15(int value)
+int addWrite_DigDir_8_node15(int value)
 {
-return addWrite(ID_Conf8_node15, &value);
+return addWrite(ID_DigDir_8_node15, &value);
 }
 
 
-int getStatus_Conf8_node15()
+int getStatus_DigDir_8_node15()
 {
-return getStatus(ID_Conf8_node15);
+return getStatus(ID_DigDir_8_node15);
 }
 
 
-int doWrite_digIN5_node15(int value)
+int doWrite_DigIn_2_node15(int value)
 {
-return doWrite(ID_digIN5_node15,  &value);
+return doWrite(ID_DigIn_2_node15,  &value);
 }
 
 
-int addWrite_digIN5_node15(int value)
+int addWrite_DigIn_2_node15(int value)
 {
-return addWrite(ID_digIN5_node15, &value);
+return addWrite(ID_DigIn_2_node15, &value);
 }
 
 
-int getStatus_digIN5_node15()
+int getStatus_DigIn_2_node15()
 {
-return getStatus(ID_digIN5_node15);
+return getStatus(ID_DigIn_2_node15);
 }
 
 
-int doWrite_digIN6_node15(int value)
+int doWrite_DigIn_3_node15(int value)
 {
-return doWrite(ID_digIN6_node15,  &value);
+return doWrite(ID_DigIn_3_node15,  &value);
 }
 
 
-int addWrite_digIN6_node15(int value)
+int addWrite_DigIn_3_node15(int value)
 {
-return addWrite(ID_digIN6_node15, &value);
+return addWrite(ID_DigIn_3_node15, &value);
 }
 
 
-int getStatus_digIN6_node15()
+int getStatus_DigIn_3_node15()
 {
-return getStatus(ID_digIN6_node15);
+return getStatus(ID_DigIn_3_node15);
 }
 
 
-int doWrite_digIN7_node15(int value)
+int doWrite_DigIn_6_node15(int value)
 {
-return doWrite(ID_digIN7_node15,  &value);
+return doWrite(ID_DigIn_6_node15,  &value);
 }
 
 
-int addWrite_digIN7_node15(int value)
+int addWrite_DigIn_6_node15(int value)
 {
-return addWrite(ID_digIN7_node15, &value);
+return addWrite(ID_DigIn_6_node15, &value);
 }
 
 
-int getStatus_digIN7_node15()
+int getStatus_DigIn_6_node15()
 {
-return getStatus(ID_digIN7_node15);
+return getStatus(ID_DigIn_6_node15);
 }
 
 
-int doWrite_digIN8_node15(int value)
+int doWrite_DigIn_7_node15(int value)
 {
-return doWrite(ID_digIN8_node15,  &value);
+return doWrite(ID_DigIn_7_node15,  &value);
 }
 
 
-int addWrite_digIN8_node15(int value)
+int addWrite_DigIn_7_node15(int value)
 {
-return addWrite(ID_digIN8_node15, &value);
+return addWrite(ID_DigIn_7_node15, &value);
 }
 
 
-int getStatus_digIN8_node15()
+int getStatus_DigIn_7_node15()
 {
-return getStatus(ID_digIN8_node15);
+return getStatus(ID_DigIn_7_node15);
 }
 
 
-int doWrite_digOUT1_node15(int value)
+int doWrite_DigOut_1_node15(int value)
 {
-return doWrite(ID_digOUT1_node15,  &value);
+return doWrite(ID_DigOut_1_node15,  &value);
 }
 
 
-int addWrite_digOUT1_node15(int value)
+int addWrite_DigOut_1_node15(int value)
 {
-return addWrite(ID_digOUT1_node15, &value);
+return addWrite(ID_DigOut_1_node15, &value);
 }
 
 
-int getStatus_digOUT1_node15()
+int getStatus_DigOut_1_node15()
 {
-return getStatus(ID_digOUT1_node15);
+return getStatus(ID_DigOut_1_node15);
 }
 
 
-int doWrite_digOUT2_node15(int value)
+int doWrite_DigOut_4_node15(int value)
 {
-return doWrite(ID_digOUT2_node15,  &value);
+return doWrite(ID_DigOut_4_node15,  &value);
 }
 
 
-int addWrite_digOUT2_node15(int value)
+int addWrite_DigOut_4_node15(int value)
 {
-return addWrite(ID_digOUT2_node15, &value);
+return addWrite(ID_DigOut_4_node15, &value);
 }
 
 
-int getStatus_digOUT2_node15()
+int getStatus_DigOut_4_node15()
 {
-return getStatus(ID_digOUT2_node15);
+return getStatus(ID_DigOut_4_node15);
 }
 
 
-int doWrite_digOUT3_node15(int value)
+int doWrite_DigOut_5_node15(int value)
 {
-return doWrite(ID_digOUT3_node15,  &value);
+return doWrite(ID_DigOut_5_node15,  &value);
 }
 
 
-int addWrite_digOUT3_node15(int value)
+int addWrite_DigOut_5_node15(int value)
 {
-return addWrite(ID_digOUT3_node15, &value);
+return addWrite(ID_DigOut_5_node15, &value);
 }
 
 
-int getStatus_digOUT3_node15()
+int getStatus_DigOut_5_node15()
 {
-return getStatus(ID_digOUT3_node15);
+return getStatus(ID_DigOut_5_node15);
 }
 
 
-int doWrite_digOUT4_node15(int value)
+int doWrite_DigOut_8_node15(int value)
 {
-return doWrite(ID_digOUT4_node15,  &value);
+return doWrite(ID_DigOut_8_node15,  &value);
 }
 
 
-int addWrite_digOUT4_node15(int value)
+int addWrite_DigOut_8_node15(int value)
 {
-return addWrite(ID_digOUT4_node15, &value);
+return addWrite(ID_DigOut_8_node15, &value);
 }
 
 
-int getStatus_digOUT4_node15()
+int getStatus_DigOut_8_node15()
 {
-return getStatus(ID_digOUT4_node15);
+return getStatus(ID_DigOut_8_node15);
 }
 
 
@@ -6798,39 +6798,39 @@ return getStatus(ID_Life_node16);
 }
 
 
-int doWrite_ConfAi1_node16(u_int16_t value)
+int doWrite_AnInCnf_1_node16(u_int16_t value)
 {
-return doWrite(ID_ConfAi1_node16,  &value);
+return doWrite(ID_AnInCnf_1_node16,  &value);
 }
 
 
-int addWrite_ConfAi1_node16(u_int16_t value)
+int addWrite_AnInCnf_1_node16(u_int16_t value)
 {
-return addWrite(ID_ConfAi1_node16, &value);
+return addWrite(ID_AnInCnf_1_node16, &value);
 }
 
 
-int getStatus_ConfAi1_node16()
+int getStatus_AnInCnf_1_node16()
 {
-return getStatus(ID_ConfAi1_node16);
+return getStatus(ID_AnInCnf_1_node16);
 }
 
 
-int doWrite_ConfAi2_node16(u_int16_t value)
+int doWrite_AnInCnf_2_node16(u_int16_t value)
 {
-return doWrite(ID_ConfAi2_node16,  &value);
+return doWrite(ID_AnInCnf_2_node16,  &value);
 }
 
 
-int addWrite_ConfAi2_node16(u_int16_t value)
+int addWrite_AnInCnf_2_node16(u_int16_t value)
 {
-return addWrite(ID_ConfAi2_node16, &value);
+return addWrite(ID_AnInCnf_2_node16, &value);
 }
 
 
-int getStatus_ConfAi2_node16()
+int getStatus_AnInCnf_2_node16()
 {
-return getStatus(ID_ConfAi2_node16);
+return getStatus(ID_AnInCnf_2_node16);
 }
 
 
@@ -6870,291 +6870,291 @@ return getStatus(ID_ValAi2_node16);
 }
 
 
-int doWrite_Conf1_node16(int value)
+int doWrite_DigDir_1_node16(int value)
 {
-return doWrite(ID_Conf1_node16,  &value);
+return doWrite(ID_DigDir_1_node16,  &value);
 }
 
 
-int addWrite_Conf1_node16(int value)
+int addWrite_DigDir_1_node16(int value)
 {
-return addWrite(ID_Conf1_node16, &value);
+return addWrite(ID_DigDir_1_node16, &value);
 }
 
 
-int getStatus_Conf1_node16()
+int getStatus_DigDir_1_node16()
 {
-return getStatus(ID_Conf1_node16);
+return getStatus(ID_DigDir_1_node16);
 }
 
 
-int doWrite_Conf2_node16(int value)
+int doWrite_DigDir_2_node16(int value)
 {
-return doWrite(ID_Conf2_node16,  &value);
+return doWrite(ID_DigDir_2_node16,  &value);
 }
 
 
-int addWrite_Conf2_node16(int value)
+int addWrite_DigDir_2_node16(int value)
 {
-return addWrite(ID_Conf2_node16, &value);
+return addWrite(ID_DigDir_2_node16, &value);
 }
 
 
-int getStatus_Conf2_node16()
+int getStatus_DigDir_2_node16()
 {
-return getStatus(ID_Conf2_node16);
+return getStatus(ID_DigDir_2_node16);
 }
 
 
-int doWrite_Conf3_node16(int value)
+int doWrite_DigDir_3_node16(int value)
 {
-return doWrite(ID_Conf3_node16,  &value);
+return doWrite(ID_DigDir_3_node16,  &value);
 }
 
 
-int addWrite_Conf3_node16(int value)
+int addWrite_DigDir_3_node16(int value)
 {
-return addWrite(ID_Conf3_node16, &value);
+return addWrite(ID_DigDir_3_node16, &value);
 }
 
 
-int getStatus_Conf3_node16()
+int getStatus_DigDir_3_node16()
 {
-return getStatus(ID_Conf3_node16);
+return getStatus(ID_DigDir_3_node16);
 }
 
 
-int doWrite_Conf4_node16(int value)
+int doWrite_DigDir_4_node16(int value)
 {
-return doWrite(ID_Conf4_node16,  &value);
+return doWrite(ID_DigDir_4_node16,  &value);
 }
 
 
-int addWrite_Conf4_node16(int value)
+int addWrite_DigDir_4_node16(int value)
 {
-return addWrite(ID_Conf4_node16, &value);
+return addWrite(ID_DigDir_4_node16, &value);
 }
 
 
-int getStatus_Conf4_node16()
+int getStatus_DigDir_4_node16()
 {
-return getStatus(ID_Conf4_node16);
+return getStatus(ID_DigDir_4_node16);
 }
 
 
-int doWrite_Conf5_node16(int value)
+int doWrite_DigDir_5_node16(int value)
 {
-return doWrite(ID_Conf5_node16,  &value);
+return doWrite(ID_DigDir_5_node16,  &value);
 }
 
 
-int addWrite_Conf5_node16(int value)
+int addWrite_DigDir_5_node16(int value)
 {
-return addWrite(ID_Conf5_node16, &value);
+return addWrite(ID_DigDir_5_node16, &value);
 }
 
 
-int getStatus_Conf5_node16()
+int getStatus_DigDir_5_node16()
 {
-return getStatus(ID_Conf5_node16);
+return getStatus(ID_DigDir_5_node16);
 }
 
 
-int doWrite_Conf6_node16(int value)
+int doWrite_DigDir_6_node16(int value)
 {
-return doWrite(ID_Conf6_node16,  &value);
+return doWrite(ID_DigDir_6_node16,  &value);
 }
 
 
-int addWrite_Conf6_node16(int value)
+int addWrite_DigDir_6_node16(int value)
 {
-return addWrite(ID_Conf6_node16, &value);
+return addWrite(ID_DigDir_6_node16, &value);
 }
 
 
-int getStatus_Conf6_node16()
+int getStatus_DigDir_6_node16()
 {
-return getStatus(ID_Conf6_node16);
+return getStatus(ID_DigDir_6_node16);
 }
 
 
-int doWrite_Conf7_node16(int value)
+int doWrite_DigDir_7_node16(int value)
 {
-return doWrite(ID_Conf7_node16,  &value);
+return doWrite(ID_DigDir_7_node16,  &value);
 }
 
 
-int addWrite_Conf7_node16(int value)
+int addWrite_DigDir_7_node16(int value)
 {
-return addWrite(ID_Conf7_node16, &value);
+return addWrite(ID_DigDir_7_node16, &value);
 }
 
 
-int getStatus_Conf7_node16()
+int getStatus_DigDir_7_node16()
 {
-return getStatus(ID_Conf7_node16);
+return getStatus(ID_DigDir_7_node16);
 }
 
 
-int doWrite_Conf8_node16(int value)
+int doWrite_DigDir_8_node16(int value)
 {
-return doWrite(ID_Conf8_node16,  &value);
+return doWrite(ID_DigDir_8_node16,  &value);
 }
 
 
-int addWrite_Conf8_node16(int value)
+int addWrite_DigDir_8_node16(int value)
 {
-return addWrite(ID_Conf8_node16, &value);
+return addWrite(ID_DigDir_8_node16, &value);
 }
 
 
-int getStatus_Conf8_node16()
+int getStatus_DigDir_8_node16()
 {
-return getStatus(ID_Conf8_node16);
+return getStatus(ID_DigDir_8_node16);
 }
 
 
-int doWrite_digIN5_node16(int value)
+int doWrite_DigIn_2_node16(int value)
 {
-return doWrite(ID_digIN5_node16,  &value);
+return doWrite(ID_DigIn_2_node16,  &value);
 }
 
 
-int addWrite_digIN5_node16(int value)
+int addWrite_DigIn_2_node16(int value)
 {
-return addWrite(ID_digIN5_node16, &value);
+return addWrite(ID_DigIn_2_node16, &value);
 }
 
 
-int getStatus_digIN5_node16()
+int getStatus_DigIn_2_node16()
 {
-return getStatus(ID_digIN5_node16);
+return getStatus(ID_DigIn_2_node16);
 }
 
 
-int doWrite_digIN6_node16(int value)
+int doWrite_DigIn_3_node16(int value)
 {
-return doWrite(ID_digIN6_node16,  &value);
+return doWrite(ID_DigIn_3_node16,  &value);
 }
 
 
-int addWrite_digIN6_node16(int value)
+int addWrite_DigIn_3_node16(int value)
 {
-return addWrite(ID_digIN6_node16, &value);
+return addWrite(ID_DigIn_3_node16, &value);
 }
 
 
-int getStatus_digIN6_node16()
+int getStatus_DigIn_3_node16()
 {
-return getStatus(ID_digIN6_node16);
+return getStatus(ID_DigIn_3_node16);
 }
 
 
-int doWrite_digIN7_node16(int value)
+int doWrite_DigIn_6_node16(int value)
 {
-return doWrite(ID_digIN7_node16,  &value);
+return doWrite(ID_DigIn_6_node16,  &value);
 }
 
 
-int addWrite_digIN7_node16(int value)
+int addWrite_DigIn_6_node16(int value)
 {
-return addWrite(ID_digIN7_node16, &value);
+return addWrite(ID_DigIn_6_node16, &value);
 }
 
 
-int getStatus_digIN7_node16()
+int getStatus_DigIn_6_node16()
 {
-return getStatus(ID_digIN7_node16);
+return getStatus(ID_DigIn_6_node16);
 }
 
 
-int doWrite_digIN8_node16(int value)
+int doWrite_DigIn_7_node16(int value)
 {
-return doWrite(ID_digIN8_node16,  &value);
+return doWrite(ID_DigIn_7_node16,  &value);
 }
 
 
-int addWrite_digIN8_node16(int value)
+int addWrite_DigIn_7_node16(int value)
 {
-return addWrite(ID_digIN8_node16, &value);
+return addWrite(ID_DigIn_7_node16, &value);
 }
 
 
-int getStatus_digIN8_node16()
+int getStatus_DigIn_7_node16()
 {
-return getStatus(ID_digIN8_node16);
+return getStatus(ID_DigIn_7_node16);
 }
 
 
-int doWrite_digOUT1_node16(int value)
+int doWrite_DigOut_1_node16(int value)
 {
-return doWrite(ID_digOUT1_node16,  &value);
+return doWrite(ID_DigOut_1_node16,  &value);
 }
 
 
-int addWrite_digOUT1_node16(int value)
+int addWrite_DigOut_1_node16(int value)
 {
-return addWrite(ID_digOUT1_node16, &value);
+return addWrite(ID_DigOut_1_node16, &value);
 }
 
 
-int getStatus_digOUT1_node16()
+int getStatus_DigOut_1_node16()
 {
-return getStatus(ID_digOUT1_node16);
+return getStatus(ID_DigOut_1_node16);
 }
 
 
-int doWrite_digOUT2_node16(int value)
+int doWrite_DigOut_4_node16(int value)
 {
-return doWrite(ID_digOUT2_node16,  &value);
+return doWrite(ID_DigOut_4_node16,  &value);
 }
 
 
-int addWrite_digOUT2_node16(int value)
+int addWrite_DigOut_4_node16(int value)
 {
-return addWrite(ID_digOUT2_node16, &value);
+return addWrite(ID_DigOut_4_node16, &value);
 }
 
 
-int getStatus_digOUT2_node16()
+int getStatus_DigOut_4_node16()
 {
-return getStatus(ID_digOUT2_node16);
+return getStatus(ID_DigOut_4_node16);
 }
 
 
-int doWrite_digOUT3_node16(int value)
+int doWrite_DigOut_5_node16(int value)
 {
-return doWrite(ID_digOUT3_node16,  &value);
+return doWrite(ID_DigOut_5_node16,  &value);
 }
 
 
-int addWrite_digOUT3_node16(int value)
+int addWrite_DigOut_5_node16(int value)
 {
-return addWrite(ID_digOUT3_node16, &value);
+return addWrite(ID_DigOut_5_node16, &value);
 }
 
 
-int getStatus_digOUT3_node16()
+int getStatus_DigOut_5_node16()
 {
-return getStatus(ID_digOUT3_node16);
+return getStatus(ID_DigOut_5_node16);
 }
 
 
-int doWrite_digOUT4_node16(int value)
+int doWrite_DigOut_8_node16(int value)
 {
-return doWrite(ID_digOUT4_node16,  &value);
+return doWrite(ID_DigOut_8_node16,  &value);
 }
 
 
-int addWrite_digOUT4_node16(int value)
+int addWrite_DigOut_8_node16(int value)
 {
-return addWrite(ID_digOUT4_node16, &value);
+return addWrite(ID_DigOut_8_node16, &value);
 }
 
 
-int getStatus_digOUT4_node16()
+int getStatus_DigOut_8_node16()
 {
-return getStatus(ID_digOUT4_node16);
+return getStatus(ID_DigOut_8_node16);
 }
 
 
@@ -7194,39 +7194,39 @@ return getStatus(ID_Life_node17);
 }
 
 
-int doWrite_ConfAi1_node17(u_int16_t value)
+int doWrite_AnInCnf_1_node17(u_int16_t value)
 {
-return doWrite(ID_ConfAi1_node17,  &value);
+return doWrite(ID_AnInCnf_1_node17,  &value);
 }
 
 
-int addWrite_ConfAi1_node17(u_int16_t value)
+int addWrite_AnInCnf_1_node17(u_int16_t value)
 {
-return addWrite(ID_ConfAi1_node17, &value);
+return addWrite(ID_AnInCnf_1_node17, &value);
 }
 
 
-int getStatus_ConfAi1_node17()
+int getStatus_AnInCnf_1_node17()
 {
-return getStatus(ID_ConfAi1_node17);
+return getStatus(ID_AnInCnf_1_node17);
 }
 
 
-int doWrite_ConfAi2_node17(u_int16_t value)
+int doWrite_AnInCnf_2_node17(u_int16_t value)
 {
-return doWrite(ID_ConfAi2_node17,  &value);
+return doWrite(ID_AnInCnf_2_node17,  &value);
 }
 
 
-int addWrite_ConfAi2_node17(u_int16_t value)
+int addWrite_AnInCnf_2_node17(u_int16_t value)
 {
-return addWrite(ID_ConfAi2_node17, &value);
+return addWrite(ID_AnInCnf_2_node17, &value);
 }
 
 
-int getStatus_ConfAi2_node17()
+int getStatus_AnInCnf_2_node17()
 {
-return getStatus(ID_ConfAi2_node17);
+return getStatus(ID_AnInCnf_2_node17);
 }
 
 
@@ -7266,291 +7266,291 @@ return getStatus(ID_ValAi2_node17);
 }
 
 
-int doWrite_Conf1_node17(int value)
+int doWrite_DigDir_1_node17(int value)
 {
-return doWrite(ID_Conf1_node17,  &value);
+return doWrite(ID_DigDir_1_node17,  &value);
 }
 
 
-int addWrite_Conf1_node17(int value)
+int addWrite_DigDir_1_node17(int value)
 {
-return addWrite(ID_Conf1_node17, &value);
+return addWrite(ID_DigDir_1_node17, &value);
 }
 
 
-int getStatus_Conf1_node17()
+int getStatus_DigDir_1_node17()
 {
-return getStatus(ID_Conf1_node17);
+return getStatus(ID_DigDir_1_node17);
 }
 
 
-int doWrite_Conf2_node17(int value)
+int doWrite_DigDir_2_node17(int value)
 {
-return doWrite(ID_Conf2_node17,  &value);
+return doWrite(ID_DigDir_2_node17,  &value);
 }
 
 
-int addWrite_Conf2_node17(int value)
+int addWrite_DigDir_2_node17(int value)
 {
-return addWrite(ID_Conf2_node17, &value);
+return addWrite(ID_DigDir_2_node17, &value);
 }
 
 
-int getStatus_Conf2_node17()
+int getStatus_DigDir_2_node17()
 {
-return getStatus(ID_Conf2_node17);
+return getStatus(ID_DigDir_2_node17);
 }
 
 
-int doWrite_Conf3_node17(int value)
+int doWrite_DigDir_3_node17(int value)
 {
-return doWrite(ID_Conf3_node17,  &value);
+return doWrite(ID_DigDir_3_node17,  &value);
 }
 
 
-int addWrite_Conf3_node17(int value)
+int addWrite_DigDir_3_node17(int value)
 {
-return addWrite(ID_Conf3_node17, &value);
+return addWrite(ID_DigDir_3_node17, &value);
 }
 
 
-int getStatus_Conf3_node17()
+int getStatus_DigDir_3_node17()
 {
-return getStatus(ID_Conf3_node17);
+return getStatus(ID_DigDir_3_node17);
 }
 
 
-int doWrite_Conf4_node17(int value)
+int doWrite_DigDir_4_node17(int value)
 {
-return doWrite(ID_Conf4_node17,  &value);
+return doWrite(ID_DigDir_4_node17,  &value);
 }
 
 
-int addWrite_Conf4_node17(int value)
+int addWrite_DigDir_4_node17(int value)
 {
-return addWrite(ID_Conf4_node17, &value);
+return addWrite(ID_DigDir_4_node17, &value);
 }
 
 
-int getStatus_Conf4_node17()
+int getStatus_DigDir_4_node17()
 {
-return getStatus(ID_Conf4_node17);
+return getStatus(ID_DigDir_4_node17);
 }
 
 
-int doWrite_Conf5_node17(int value)
+int doWrite_DigDir_5_node17(int value)
 {
-return doWrite(ID_Conf5_node17,  &value);
+return doWrite(ID_DigDir_5_node17,  &value);
 }
 
 
-int addWrite_Conf5_node17(int value)
+int addWrite_DigDir_5_node17(int value)
 {
-return addWrite(ID_Conf5_node17, &value);
+return addWrite(ID_DigDir_5_node17, &value);
 }
 
 
-int getStatus_Conf5_node17()
+int getStatus_DigDir_5_node17()
 {
-return getStatus(ID_Conf5_node17);
+return getStatus(ID_DigDir_5_node17);
 }
 
 
-int doWrite_Conf6_node17(int value)
+int doWrite_DigDir_6_node17(int value)
 {
-return doWrite(ID_Conf6_node17,  &value);
+return doWrite(ID_DigDir_6_node17,  &value);
 }
 
 
-int addWrite_Conf6_node17(int value)
+int addWrite_DigDir_6_node17(int value)
 {
-return addWrite(ID_Conf6_node17, &value);
+return addWrite(ID_DigDir_6_node17, &value);
 }
 
 
-int getStatus_Conf6_node17()
+int getStatus_DigDir_6_node17()
 {
-return getStatus(ID_Conf6_node17);
+return getStatus(ID_DigDir_6_node17);
 }
 
 
-int doWrite_Conf7_node17(int value)
+int doWrite_DigDir_7_node17(int value)
 {
-return doWrite(ID_Conf7_node17,  &value);
+return doWrite(ID_DigDir_7_node17,  &value);
 }
 
 
-int addWrite_Conf7_node17(int value)
+int addWrite_DigDir_7_node17(int value)
 {
-return addWrite(ID_Conf7_node17, &value);
+return addWrite(ID_DigDir_7_node17, &value);
 }
 
 
-int getStatus_Conf7_node17()
+int getStatus_DigDir_7_node17()
 {
-return getStatus(ID_Conf7_node17);
+return getStatus(ID_DigDir_7_node17);
 }
 
 
-int doWrite_Conf8_node17(int value)
+int doWrite_DigDir_8_node17(int value)
 {
-return doWrite(ID_Conf8_node17,  &value);
+return doWrite(ID_DigDir_8_node17,  &value);
 }
 
 
-int addWrite_Conf8_node17(int value)
+int addWrite_DigDir_8_node17(int value)
 {
-return addWrite(ID_Conf8_node17, &value);
+return addWrite(ID_DigDir_8_node17, &value);
 }
 
 
-int getStatus_Conf8_node17()
+int getStatus_DigDir_8_node17()
 {
-return getStatus(ID_Conf8_node17);
+return getStatus(ID_DigDir_8_node17);
 }
 
 
-int doWrite_digIN5_node17(int value)
+int doWrite_DigIn_2_node17(int value)
 {
-return doWrite(ID_digIN5_node17,  &value);
+return doWrite(ID_DigIn_2_node17,  &value);
 }
 
 
-int addWrite_digIN5_node17(int value)
+int addWrite_DigIn_2_node17(int value)
 {
-return addWrite(ID_digIN5_node17, &value);
+return addWrite(ID_DigIn_2_node17, &value);
 }
 
 
-int getStatus_digIN5_node17()
+int getStatus_DigIn_2_node17()
 {
-return getStatus(ID_digIN5_node17);
+return getStatus(ID_DigIn_2_node17);
 }
 
 
-int doWrite_digIN6_node17(int value)
+int doWrite_DigIn_3_node17(int value)
 {
-return doWrite(ID_digIN6_node17,  &value);
+return doWrite(ID_DigIn_3_node17,  &value);
 }
 
 
-int addWrite_digIN6_node17(int value)
+int addWrite_DigIn_3_node17(int value)
 {
-return addWrite(ID_digIN6_node17, &value);
+return addWrite(ID_DigIn_3_node17, &value);
 }
 
 
-int getStatus_digIN6_node17()
+int getStatus_DigIn_3_node17()
 {
-return getStatus(ID_digIN6_node17);
+return getStatus(ID_DigIn_3_node17);
 }
 
 
-int doWrite_digIN7_node17(int value)
+int doWrite_DigIn_6_node17(int value)
 {
-return doWrite(ID_digIN7_node17,  &value);
+return doWrite(ID_DigIn_6_node17,  &value);
 }
 
 
-int addWrite_digIN7_node17(int value)
+int addWrite_DigIn_6_node17(int value)
 {
-return addWrite(ID_digIN7_node17, &value);
+return addWrite(ID_DigIn_6_node17, &value);
 }
 
 
-int getStatus_digIN7_node17()
+int getStatus_DigIn_6_node17()
 {
-return getStatus(ID_digIN7_node17);
+return getStatus(ID_DigIn_6_node17);
 }
 
 
-int doWrite_digIN8_node17(int value)
+int doWrite_DigIn_7_node17(int value)
 {
-return doWrite(ID_digIN8_node17,  &value);
+return doWrite(ID_DigIn_7_node17,  &value);
 }
 
 
-int addWrite_digIN8_node17(int value)
+int addWrite_DigIn_7_node17(int value)
 {
-return addWrite(ID_digIN8_node17, &value);
+return addWrite(ID_DigIn_7_node17, &value);
 }
 
 
-int getStatus_digIN8_node17()
+int getStatus_DigIn_7_node17()
 {
-return getStatus(ID_digIN8_node17);
+return getStatus(ID_DigIn_7_node17);
 }
 
 
-int doWrite_digOUT1_node17(int value)
+int doWrite_DigOut_1_node17(int value)
 {
-return doWrite(ID_digOUT1_node17,  &value);
+return doWrite(ID_DigOut_1_node17,  &value);
 }
 
 
-int addWrite_digOUT1_node17(int value)
+int addWrite_DigOut_1_node17(int value)
 {
-return addWrite(ID_digOUT1_node17, &value);
+return addWrite(ID_DigOut_1_node17, &value);
 }
 
 
-int getStatus_digOUT1_node17()
+int getStatus_DigOut_1_node17()
 {
-return getStatus(ID_digOUT1_node17);
+return getStatus(ID_DigOut_1_node17);
 }
 
 
-int doWrite_digOUT2_node17(int value)
+int doWrite_DigOut_4_node17(int value)
 {
-return doWrite(ID_digOUT2_node17,  &value);
+return doWrite(ID_DigOut_4_node17,  &value);
 }
 
 
-int addWrite_digOUT2_node17(int value)
+int addWrite_DigOut_4_node17(int value)
 {
-return addWrite(ID_digOUT2_node17, &value);
+return addWrite(ID_DigOut_4_node17, &value);
 }
 
 
-int getStatus_digOUT2_node17()
+int getStatus_DigOut_4_node17()
 {
-return getStatus(ID_digOUT2_node17);
+return getStatus(ID_DigOut_4_node17);
 }
 
 
-int doWrite_digOUT3_node17(int value)
+int doWrite_DigOut_5_node17(int value)
 {
-return doWrite(ID_digOUT3_node17,  &value);
+return doWrite(ID_DigOut_5_node17,  &value);
 }
 
 
-int addWrite_digOUT3_node17(int value)
+int addWrite_DigOut_5_node17(int value)
 {
-return addWrite(ID_digOUT3_node17, &value);
+return addWrite(ID_DigOut_5_node17, &value);
 }
 
 
-int getStatus_digOUT3_node17()
+int getStatus_DigOut_5_node17()
 {
-return getStatus(ID_digOUT3_node17);
+return getStatus(ID_DigOut_5_node17);
 }
 
 
-int doWrite_digOUT4_node17(int value)
+int doWrite_DigOut_8_node17(int value)
 {
-return doWrite(ID_digOUT4_node17,  &value);
+return doWrite(ID_DigOut_8_node17,  &value);
 }
 
 
-int addWrite_digOUT4_node17(int value)
+int addWrite_DigOut_8_node17(int value)
 {
-return addWrite(ID_digOUT4_node17, &value);
+return addWrite(ID_DigOut_8_node17, &value);
 }
 
 
-int getStatus_digOUT4_node17()
+int getStatus_DigOut_8_node17()
 {
-return getStatus(ID_digOUT4_node17);
+return getStatus(ID_DigOut_8_node17);
 }
 
 
@@ -7590,39 +7590,39 @@ return getStatus(ID_Life_node18);
 }
 
 
-int doWrite_ConfAi1_node18(u_int16_t value)
+int doWrite_AnInCnf_1_node18(u_int16_t value)
 {
-return doWrite(ID_ConfAi1_node18,  &value);
+return doWrite(ID_AnInCnf_1_node18,  &value);
 }
 
 
-int addWrite_ConfAi1_node18(u_int16_t value)
+int addWrite_AnInCnf_1_node18(u_int16_t value)
 {
-return addWrite(ID_ConfAi1_node18, &value);
+return addWrite(ID_AnInCnf_1_node18, &value);
 }
 
 
-int getStatus_ConfAi1_node18()
+int getStatus_AnInCnf_1_node18()
 {
-return getStatus(ID_ConfAi1_node18);
+return getStatus(ID_AnInCnf_1_node18);
 }
 
 
-int doWrite_ConfAi2_node18(u_int16_t value)
+int doWrite_AnInCnf_2_node18(u_int16_t value)
 {
-return doWrite(ID_ConfAi2_node18,  &value);
+return doWrite(ID_AnInCnf_2_node18,  &value);
 }
 
 
-int addWrite_ConfAi2_node18(u_int16_t value)
+int addWrite_AnInCnf_2_node18(u_int16_t value)
 {
-return addWrite(ID_ConfAi2_node18, &value);
+return addWrite(ID_AnInCnf_2_node18, &value);
 }
 
 
-int getStatus_ConfAi2_node18()
+int getStatus_AnInCnf_2_node18()
 {
-return getStatus(ID_ConfAi2_node18);
+return getStatus(ID_AnInCnf_2_node18);
 }
 
 
@@ -7662,291 +7662,291 @@ return getStatus(ID_ValAi2_node18);
 }
 
 
-int doWrite_Conf1_node18(int value)
+int doWrite_DigDir_1_node18(int value)
 {
-return doWrite(ID_Conf1_node18,  &value);
+return doWrite(ID_DigDir_1_node18,  &value);
 }
 
 
-int addWrite_Conf1_node18(int value)
+int addWrite_DigDir_1_node18(int value)
 {
-return addWrite(ID_Conf1_node18, &value);
+return addWrite(ID_DigDir_1_node18, &value);
 }
 
 
-int getStatus_Conf1_node18()
+int getStatus_DigDir_1_node18()
 {
-return getStatus(ID_Conf1_node18);
+return getStatus(ID_DigDir_1_node18);
 }
 
 
-int doWrite_Conf2_node18(int value)
+int doWrite_DigDir_2_node18(int value)
 {
-return doWrite(ID_Conf2_node18,  &value);
+return doWrite(ID_DigDir_2_node18,  &value);
 }
 
 
-int addWrite_Conf2_node18(int value)
+int addWrite_DigDir_2_node18(int value)
 {
-return addWrite(ID_Conf2_node18, &value);
+return addWrite(ID_DigDir_2_node18, &value);
 }
 
 
-int getStatus_Conf2_node18()
+int getStatus_DigDir_2_node18()
 {
-return getStatus(ID_Conf2_node18);
+return getStatus(ID_DigDir_2_node18);
 }
 
 
-int doWrite_Conf3_node18(int value)
+int doWrite_DigDir_3_node18(int value)
 {
-return doWrite(ID_Conf3_node18,  &value);
+return doWrite(ID_DigDir_3_node18,  &value);
 }
 
 
-int addWrite_Conf3_node18(int value)
+int addWrite_DigDir_3_node18(int value)
 {
-return addWrite(ID_Conf3_node18, &value);
+return addWrite(ID_DigDir_3_node18, &value);
 }
 
 
-int getStatus_Conf3_node18()
+int getStatus_DigDir_3_node18()
 {
-return getStatus(ID_Conf3_node18);
+return getStatus(ID_DigDir_3_node18);
 }
 
 
-int doWrite_Conf4_node18(int value)
+int doWrite_DigDir_4_node18(int value)
 {
-return doWrite(ID_Conf4_node18,  &value);
+return doWrite(ID_DigDir_4_node18,  &value);
 }
 
 
-int addWrite_Conf4_node18(int value)
+int addWrite_DigDir_4_node18(int value)
 {
-return addWrite(ID_Conf4_node18, &value);
+return addWrite(ID_DigDir_4_node18, &value);
 }
 
 
-int getStatus_Conf4_node18()
+int getStatus_DigDir_4_node18()
 {
-return getStatus(ID_Conf4_node18);
+return getStatus(ID_DigDir_4_node18);
 }
 
 
-int doWrite_Conf5_node18(int value)
+int doWrite_DigDir_5_node18(int value)
 {
-return doWrite(ID_Conf5_node18,  &value);
+return doWrite(ID_DigDir_5_node18,  &value);
 }
 
 
-int addWrite_Conf5_node18(int value)
+int addWrite_DigDir_5_node18(int value)
 {
-return addWrite(ID_Conf5_node18, &value);
+return addWrite(ID_DigDir_5_node18, &value);
 }
 
 
-int getStatus_Conf5_node18()
+int getStatus_DigDir_5_node18()
 {
-return getStatus(ID_Conf5_node18);
+return getStatus(ID_DigDir_5_node18);
 }
 
 
-int doWrite_Conf6_node18(int value)
+int doWrite_DigDir_6_node18(int value)
 {
-return doWrite(ID_Conf6_node18,  &value);
+return doWrite(ID_DigDir_6_node18,  &value);
 }
 
 
-int addWrite_Conf6_node18(int value)
+int addWrite_DigDir_6_node18(int value)
 {
-return addWrite(ID_Conf6_node18, &value);
+return addWrite(ID_DigDir_6_node18, &value);
 }
 
 
-int getStatus_Conf6_node18()
+int getStatus_DigDir_6_node18()
 {
-return getStatus(ID_Conf6_node18);
+return getStatus(ID_DigDir_6_node18);
 }
 
 
-int doWrite_Conf7_node18(int value)
+int doWrite_DigDir_7_node18(int value)
 {
-return doWrite(ID_Conf7_node18,  &value);
+return doWrite(ID_DigDir_7_node18,  &value);
 }
 
 
-int addWrite_Conf7_node18(int value)
+int addWrite_DigDir_7_node18(int value)
 {
-return addWrite(ID_Conf7_node18, &value);
+return addWrite(ID_DigDir_7_node18, &value);
 }
 
 
-int getStatus_Conf7_node18()
+int getStatus_DigDir_7_node18()
 {
-return getStatus(ID_Conf7_node18);
+return getStatus(ID_DigDir_7_node18);
 }
 
 
-int doWrite_Conf8_node18(int value)
+int doWrite_DigDir_8_node18(int value)
 {
-return doWrite(ID_Conf8_node18,  &value);
+return doWrite(ID_DigDir_8_node18,  &value);
 }
 
 
-int addWrite_Conf8_node18(int value)
+int addWrite_DigDir_8_node18(int value)
 {
-return addWrite(ID_Conf8_node18, &value);
+return addWrite(ID_DigDir_8_node18, &value);
 }
 
 
-int getStatus_Conf8_node18()
+int getStatus_DigDir_8_node18()
 {
-return getStatus(ID_Conf8_node18);
+return getStatus(ID_DigDir_8_node18);
 }
 
 
-int doWrite_digIN5_node18(int value)
+int doWrite_DigIn_2_node18(int value)
 {
-return doWrite(ID_digIN5_node18,  &value);
+return doWrite(ID_DigIn_2_node18,  &value);
 }
 
 
-int addWrite_digIN5_node18(int value)
+int addWrite_DigIn_2_node18(int value)
 {
-return addWrite(ID_digIN5_node18, &value);
+return addWrite(ID_DigIn_2_node18, &value);
 }
 
 
-int getStatus_digIN5_node18()
+int getStatus_DigIn_2_node18()
 {
-return getStatus(ID_digIN5_node18);
+return getStatus(ID_DigIn_2_node18);
 }
 
 
-int doWrite_digIN6_node18(int value)
+int doWrite_DigIn_3_node18(int value)
 {
-return doWrite(ID_digIN6_node18,  &value);
+return doWrite(ID_DigIn_3_node18,  &value);
 }
 
 
-int addWrite_digIN6_node18(int value)
+int addWrite_DigIn_3_node18(int value)
 {
-return addWrite(ID_digIN6_node18, &value);
+return addWrite(ID_DigIn_3_node18, &value);
 }
 
 
-int getStatus_digIN6_node18()
+int getStatus_DigIn_3_node18()
 {
-return getStatus(ID_digIN6_node18);
+return getStatus(ID_DigIn_3_node18);
 }
 
 
-int doWrite_digIN7_node18(int value)
+int doWrite_DigIn_6_node18(int value)
 {
-return doWrite(ID_digIN7_node18,  &value);
+return doWrite(ID_DigIn_6_node18,  &value);
 }
 
 
-int addWrite_digIN7_node18(int value)
+int addWrite_DigIn_6_node18(int value)
 {
-return addWrite(ID_digIN7_node18, &value);
+return addWrite(ID_DigIn_6_node18, &value);
 }
 
 
-int getStatus_digIN7_node18()
+int getStatus_DigIn_6_node18()
 {
-return getStatus(ID_digIN7_node18);
+return getStatus(ID_DigIn_6_node18);
 }
 
 
-int doWrite_digIN8_node18(int value)
+int doWrite_DigIn_7_node18(int value)
 {
-return doWrite(ID_digIN8_node18,  &value);
+return doWrite(ID_DigIn_7_node18,  &value);
 }
 
 
-int addWrite_digIN8_node18(int value)
+int addWrite_DigIn_7_node18(int value)
 {
-return addWrite(ID_digIN8_node18, &value);
+return addWrite(ID_DigIn_7_node18, &value);
 }
 
 
-int getStatus_digIN8_node18()
+int getStatus_DigIn_7_node18()
 {
-return getStatus(ID_digIN8_node18);
+return getStatus(ID_DigIn_7_node18);
 }
 
 
-int doWrite_digOUT1_node18(int value)
+int doWrite_DigOut_1_node18(int value)
 {
-return doWrite(ID_digOUT1_node18,  &value);
+return doWrite(ID_DigOut_1_node18,  &value);
 }
 
 
-int addWrite_digOUT1_node18(int value)
+int addWrite_DigOut_1_node18(int value)
 {
-return addWrite(ID_digOUT1_node18, &value);
+return addWrite(ID_DigOut_1_node18, &value);
 }
 
 
-int getStatus_digOUT1_node18()
+int getStatus_DigOut_1_node18()
 {
-return getStatus(ID_digOUT1_node18);
+return getStatus(ID_DigOut_1_node18);
 }
 
 
-int doWrite_digOUT2_node18(int value)
+int doWrite_DigOut_4_node18(int value)
 {
-return doWrite(ID_digOUT2_node18,  &value);
+return doWrite(ID_DigOut_4_node18,  &value);
 }
 
 
-int addWrite_digOUT2_node18(int value)
+int addWrite_DigOut_4_node18(int value)
 {
-return addWrite(ID_digOUT2_node18, &value);
+return addWrite(ID_DigOut_4_node18, &value);
 }
 
 
-int getStatus_digOUT2_node18()
+int getStatus_DigOut_4_node18()
 {
-return getStatus(ID_digOUT2_node18);
+return getStatus(ID_DigOut_4_node18);
 }
 
 
-int doWrite_digOUT3_node18(int value)
+int doWrite_DigOut_5_node18(int value)
 {
-return doWrite(ID_digOUT3_node18,  &value);
+return doWrite(ID_DigOut_5_node18,  &value);
 }
 
 
-int addWrite_digOUT3_node18(int value)
+int addWrite_DigOut_5_node18(int value)
 {
-return addWrite(ID_digOUT3_node18, &value);
+return addWrite(ID_DigOut_5_node18, &value);
 }
 
 
-int getStatus_digOUT3_node18()
+int getStatus_DigOut_5_node18()
 {
-return getStatus(ID_digOUT3_node18);
+return getStatus(ID_DigOut_5_node18);
 }
 
 
-int doWrite_digOUT4_node18(int value)
+int doWrite_DigOut_8_node18(int value)
 {
-return doWrite(ID_digOUT4_node18,  &value);
+return doWrite(ID_DigOut_8_node18,  &value);
 }
 
 
-int addWrite_digOUT4_node18(int value)
+int addWrite_DigOut_8_node18(int value)
 {
-return addWrite(ID_digOUT4_node18, &value);
+return addWrite(ID_DigOut_8_node18, &value);
 }
 
 
-int getStatus_digOUT4_node18()
+int getStatus_DigOut_8_node18()
 {
-return getStatus(ID_digOUT4_node18);
+return getStatus(ID_DigOut_8_node18);
 }
 
 
@@ -7986,39 +7986,39 @@ return getStatus(ID_Life_node19);
 }
 
 
-int doWrite_ConfAi1_node19(u_int16_t value)
+int doWrite_AnInCnf_1_node19(u_int16_t value)
 {
-return doWrite(ID_ConfAi1_node19,  &value);
+return doWrite(ID_AnInCnf_1_node19,  &value);
 }
 
 
-int addWrite_ConfAi1_node19(u_int16_t value)
+int addWrite_AnInCnf_1_node19(u_int16_t value)
 {
-return addWrite(ID_ConfAi1_node19, &value);
+return addWrite(ID_AnInCnf_1_node19, &value);
 }
 
 
-int getStatus_ConfAi1_node19()
+int getStatus_AnInCnf_1_node19()
 {
-return getStatus(ID_ConfAi1_node19);
+return getStatus(ID_AnInCnf_1_node19);
 }
 
 
-int doWrite_ConfAi2_node19(u_int16_t value)
+int doWrite_AnInCnf_2_node19(u_int16_t value)
 {
-return doWrite(ID_ConfAi2_node19,  &value);
+return doWrite(ID_AnInCnf_2_node19,  &value);
 }
 
 
-int addWrite_ConfAi2_node19(u_int16_t value)
+int addWrite_AnInCnf_2_node19(u_int16_t value)
 {
-return addWrite(ID_ConfAi2_node19, &value);
+return addWrite(ID_AnInCnf_2_node19, &value);
 }
 
 
-int getStatus_ConfAi2_node19()
+int getStatus_AnInCnf_2_node19()
 {
-return getStatus(ID_ConfAi2_node19);
+return getStatus(ID_AnInCnf_2_node19);
 }
 
 
@@ -8058,291 +8058,291 @@ return getStatus(ID_ValAi2_node19);
 }
 
 
-int doWrite_Conf1_node19(int value)
+int doWrite_DigDir_1_node19(int value)
 {
-return doWrite(ID_Conf1_node19,  &value);
+return doWrite(ID_DigDir_1_node19,  &value);
 }
 
 
-int addWrite_Conf1_node19(int value)
+int addWrite_DigDir_1_node19(int value)
 {
-return addWrite(ID_Conf1_node19, &value);
+return addWrite(ID_DigDir_1_node19, &value);
 }
 
 
-int getStatus_Conf1_node19()
+int getStatus_DigDir_1_node19()
 {
-return getStatus(ID_Conf1_node19);
+return getStatus(ID_DigDir_1_node19);
 }
 
 
-int doWrite_Conf2_node19(int value)
+int doWrite_DigDir_2_node19(int value)
 {
-return doWrite(ID_Conf2_node19,  &value);
+return doWrite(ID_DigDir_2_node19,  &value);
 }
 
 
-int addWrite_Conf2_node19(int value)
+int addWrite_DigDir_2_node19(int value)
 {
-return addWrite(ID_Conf2_node19, &value);
+return addWrite(ID_DigDir_2_node19, &value);
 }
 
 
-int getStatus_Conf2_node19()
+int getStatus_DigDir_2_node19()
 {
-return getStatus(ID_Conf2_node19);
+return getStatus(ID_DigDir_2_node19);
 }
 
 
-int doWrite_Conf3_node19(int value)
+int doWrite_DigDir_3_node19(int value)
 {
-return doWrite(ID_Conf3_node19,  &value);
+return doWrite(ID_DigDir_3_node19,  &value);
 }
 
 
-int addWrite_Conf3_node19(int value)
+int addWrite_DigDir_3_node19(int value)
 {
-return addWrite(ID_Conf3_node19, &value);
+return addWrite(ID_DigDir_3_node19, &value);
 }
 
 
-int getStatus_Conf3_node19()
+int getStatus_DigDir_3_node19()
 {
-return getStatus(ID_Conf3_node19);
+return getStatus(ID_DigDir_3_node19);
 }
 
 
-int doWrite_Conf4_node19(int value)
+int doWrite_DigDir_4_node19(int value)
 {
-return doWrite(ID_Conf4_node19,  &value);
+return doWrite(ID_DigDir_4_node19,  &value);
 }
 
 
-int addWrite_Conf4_node19(int value)
+int addWrite_DigDir_4_node19(int value)
 {
-return addWrite(ID_Conf4_node19, &value);
+return addWrite(ID_DigDir_4_node19, &value);
 }
 
 
-int getStatus_Conf4_node19()
+int getStatus_DigDir_4_node19()
 {
-return getStatus(ID_Conf4_node19);
+return getStatus(ID_DigDir_4_node19);
 }
 
 
-int doWrite_Conf5_node19(int value)
+int doWrite_DigDir_5_node19(int value)
 {
-return doWrite(ID_Conf5_node19,  &value);
+return doWrite(ID_DigDir_5_node19,  &value);
 }
 
 
-int addWrite_Conf5_node19(int value)
+int addWrite_DigDir_5_node19(int value)
 {
-return addWrite(ID_Conf5_node19, &value);
+return addWrite(ID_DigDir_5_node19, &value);
 }
 
 
-int getStatus_Conf5_node19()
+int getStatus_DigDir_5_node19()
 {
-return getStatus(ID_Conf5_node19);
+return getStatus(ID_DigDir_5_node19);
 }
 
 
-int doWrite_Conf6_node19(int value)
+int doWrite_DigDir_6_node19(int value)
 {
-return doWrite(ID_Conf6_node19,  &value);
+return doWrite(ID_DigDir_6_node19,  &value);
 }
 
 
-int addWrite_Conf6_node19(int value)
+int addWrite_DigDir_6_node19(int value)
 {
-return addWrite(ID_Conf6_node19, &value);
+return addWrite(ID_DigDir_6_node19, &value);
 }
 
 
-int getStatus_Conf6_node19()
+int getStatus_DigDir_6_node19()
 {
-return getStatus(ID_Conf6_node19);
+return getStatus(ID_DigDir_6_node19);
 }
 
 
-int doWrite_Conf7_node19(int value)
+int doWrite_DigDir_7_node19(int value)
 {
-return doWrite(ID_Conf7_node19,  &value);
+return doWrite(ID_DigDir_7_node19,  &value);
 }
 
 
-int addWrite_Conf7_node19(int value)
+int addWrite_DigDir_7_node19(int value)
 {
-return addWrite(ID_Conf7_node19, &value);
+return addWrite(ID_DigDir_7_node19, &value);
 }
 
 
-int getStatus_Conf7_node19()
+int getStatus_DigDir_7_node19()
 {
-return getStatus(ID_Conf7_node19);
+return getStatus(ID_DigDir_7_node19);
 }
 
 
-int doWrite_Conf8_node19(int value)
+int doWrite_DigDir_8_node19(int value)
 {
-return doWrite(ID_Conf8_node19,  &value);
+return doWrite(ID_DigDir_8_node19,  &value);
 }
 
 
-int addWrite_Conf8_node19(int value)
+int addWrite_DigDir_8_node19(int value)
 {
-return addWrite(ID_Conf8_node19, &value);
+return addWrite(ID_DigDir_8_node19, &value);
 }
 
 
-int getStatus_Conf8_node19()
+int getStatus_DigDir_8_node19()
 {
-return getStatus(ID_Conf8_node19);
+return getStatus(ID_DigDir_8_node19);
 }
 
 
-int doWrite_digIN5_node19(int value)
+int doWrite_DigIn_2_node19(int value)
 {
-return doWrite(ID_digIN5_node19,  &value);
+return doWrite(ID_DigIn_2_node19,  &value);
 }
 
 
-int addWrite_digIN5_node19(int value)
+int addWrite_DigIn_2_node19(int value)
 {
-return addWrite(ID_digIN5_node19, &value);
+return addWrite(ID_DigIn_2_node19, &value);
 }
 
 
-int getStatus_digIN5_node19()
+int getStatus_DigIn_2_node19()
 {
-return getStatus(ID_digIN5_node19);
+return getStatus(ID_DigIn_2_node19);
 }
 
 
-int doWrite_digIN6_node19(int value)
+int doWrite_DigIn_3_node19(int value)
 {
-return doWrite(ID_digIN6_node19,  &value);
+return doWrite(ID_DigIn_3_node19,  &value);
 }
 
 
-int addWrite_digIN6_node19(int value)
+int addWrite_DigIn_3_node19(int value)
 {
-return addWrite(ID_digIN6_node19, &value);
+return addWrite(ID_DigIn_3_node19, &value);
 }
 
 
-int getStatus_digIN6_node19()
+int getStatus_DigIn_3_node19()
 {
-return getStatus(ID_digIN6_node19);
+return getStatus(ID_DigIn_3_node19);
 }
 
 
-int doWrite_digIN7_node19(int value)
+int doWrite_DigIn_6_node19(int value)
 {
-return doWrite(ID_digIN7_node19,  &value);
+return doWrite(ID_DigIn_6_node19,  &value);
 }
 
 
-int addWrite_digIN7_node19(int value)
+int addWrite_DigIn_6_node19(int value)
 {
-return addWrite(ID_digIN7_node19, &value);
+return addWrite(ID_DigIn_6_node19, &value);
 }
 
 
-int getStatus_digIN7_node19()
+int getStatus_DigIn_6_node19()
 {
-return getStatus(ID_digIN7_node19);
+return getStatus(ID_DigIn_6_node19);
 }
 
 
-int doWrite_digIN8_node19(int value)
+int doWrite_DigIn_7_node19(int value)
 {
-return doWrite(ID_digIN8_node19,  &value);
+return doWrite(ID_DigIn_7_node19,  &value);
 }
 
 
-int addWrite_digIN8_node19(int value)
+int addWrite_DigIn_7_node19(int value)
 {
-return addWrite(ID_digIN8_node19, &value);
+return addWrite(ID_DigIn_7_node19, &value);
 }
 
 
-int getStatus_digIN8_node19()
+int getStatus_DigIn_7_node19()
 {
-return getStatus(ID_digIN8_node19);
+return getStatus(ID_DigIn_7_node19);
 }
 
 
-int doWrite_digOUT1_node19(int value)
+int doWrite_DigOut_1_node19(int value)
 {
-return doWrite(ID_digOUT1_node19,  &value);
+return doWrite(ID_DigOut_1_node19,  &value);
 }
 
 
-int addWrite_digOUT1_node19(int value)
+int addWrite_DigOut_1_node19(int value)
 {
-return addWrite(ID_digOUT1_node19, &value);
+return addWrite(ID_DigOut_1_node19, &value);
 }
 
 
-int getStatus_digOUT1_node19()
+int getStatus_DigOut_1_node19()
 {
-return getStatus(ID_digOUT1_node19);
+return getStatus(ID_DigOut_1_node19);
 }
 
 
-int doWrite_digOUT2_node19(int value)
+int doWrite_DigOut_4_node19(int value)
 {
-return doWrite(ID_digOUT2_node19,  &value);
+return doWrite(ID_DigOut_4_node19,  &value);
 }
 
 
-int addWrite_digOUT2_node19(int value)
+int addWrite_DigOut_4_node19(int value)
 {
-return addWrite(ID_digOUT2_node19, &value);
+return addWrite(ID_DigOut_4_node19, &value);
 }
 
 
-int getStatus_digOUT2_node19()
+int getStatus_DigOut_4_node19()
 {
-return getStatus(ID_digOUT2_node19);
+return getStatus(ID_DigOut_4_node19);
 }
 
 
-int doWrite_digOUT3_node19(int value)
+int doWrite_DigOut_5_node19(int value)
 {
-return doWrite(ID_digOUT3_node19,  &value);
+return doWrite(ID_DigOut_5_node19,  &value);
 }
 
 
-int addWrite_digOUT3_node19(int value)
+int addWrite_DigOut_5_node19(int value)
 {
-return addWrite(ID_digOUT3_node19, &value);
+return addWrite(ID_DigOut_5_node19, &value);
 }
 
 
-int getStatus_digOUT3_node19()
+int getStatus_DigOut_5_node19()
 {
-return getStatus(ID_digOUT3_node19);
+return getStatus(ID_DigOut_5_node19);
 }
 
 
-int doWrite_digOUT4_node19(int value)
+int doWrite_DigOut_8_node19(int value)
 {
-return doWrite(ID_digOUT4_node19,  &value);
+return doWrite(ID_DigOut_8_node19,  &value);
 }
 
 
-int addWrite_digOUT4_node19(int value)
+int addWrite_DigOut_8_node19(int value)
 {
-return addWrite(ID_digOUT4_node19, &value);
+return addWrite(ID_DigOut_8_node19, &value);
 }
 
 
-int getStatus_digOUT4_node19()
+int getStatus_DigOut_8_node19()
 {
-return getStatus(ID_digOUT4_node19);
+return getStatus(ID_DigOut_8_node19);
 }
 
 
@@ -8382,39 +8382,39 @@ return getStatus(ID_Life_node20);
 }
 
 
-int doWrite_ConfAi1_node20(u_int16_t value)
+int doWrite_AnInCnf_1_node20(u_int16_t value)
 {
-return doWrite(ID_ConfAi1_node20,  &value);
+return doWrite(ID_AnInCnf_1_node20,  &value);
 }
 
 
-int addWrite_ConfAi1_node20(u_int16_t value)
+int addWrite_AnInCnf_1_node20(u_int16_t value)
 {
-return addWrite(ID_ConfAi1_node20, &value);
+return addWrite(ID_AnInCnf_1_node20, &value);
 }
 
 
-int getStatus_ConfAi1_node20()
+int getStatus_AnInCnf_1_node20()
 {
-return getStatus(ID_ConfAi1_node20);
+return getStatus(ID_AnInCnf_1_node20);
 }
 
 
-int doWrite_ConfAi2_node20(u_int16_t value)
+int doWrite_AnInCnf_2_node20(u_int16_t value)
 {
-return doWrite(ID_ConfAi2_node20,  &value);
+return doWrite(ID_AnInCnf_2_node20,  &value);
 }
 
 
-int addWrite_ConfAi2_node20(u_int16_t value)
+int addWrite_AnInCnf_2_node20(u_int16_t value)
 {
-return addWrite(ID_ConfAi2_node20, &value);
+return addWrite(ID_AnInCnf_2_node20, &value);
 }
 
 
-int getStatus_ConfAi2_node20()
+int getStatus_AnInCnf_2_node20()
 {
-return getStatus(ID_ConfAi2_node20);
+return getStatus(ID_AnInCnf_2_node20);
 }
 
 
@@ -8454,291 +8454,291 @@ return getStatus(ID_ValAi2_node20);
 }
 
 
-int doWrite_Conf1_node20(int value)
+int doWrite_DigDir_1_node20(int value)
 {
-return doWrite(ID_Conf1_node20,  &value);
+return doWrite(ID_DigDir_1_node20,  &value);
 }
 
 
-int addWrite_Conf1_node20(int value)
+int addWrite_DigDir_1_node20(int value)
 {
-return addWrite(ID_Conf1_node20, &value);
+return addWrite(ID_DigDir_1_node20, &value);
 }
 
 
-int getStatus_Conf1_node20()
+int getStatus_DigDir_1_node20()
 {
-return getStatus(ID_Conf1_node20);
+return getStatus(ID_DigDir_1_node20);
 }
 
 
-int doWrite_Conf2_node20(int value)
+int doWrite_DigDir_2_node20(int value)
 {
-return doWrite(ID_Conf2_node20,  &value);
+return doWrite(ID_DigDir_2_node20,  &value);
 }
 
 
-int addWrite_Conf2_node20(int value)
+int addWrite_DigDir_2_node20(int value)
 {
-return addWrite(ID_Conf2_node20, &value);
+return addWrite(ID_DigDir_2_node20, &value);
 }
 
 
-int getStatus_Conf2_node20()
+int getStatus_DigDir_2_node20()
 {
-return getStatus(ID_Conf2_node20);
+return getStatus(ID_DigDir_2_node20);
 }
 
 
-int doWrite_Conf3_node20(int value)
+int doWrite_DigDir_3_node20(int value)
 {
-return doWrite(ID_Conf3_node20,  &value);
+return doWrite(ID_DigDir_3_node20,  &value);
 }
 
 
-int addWrite_Conf3_node20(int value)
+int addWrite_DigDir_3_node20(int value)
 {
-return addWrite(ID_Conf3_node20, &value);
+return addWrite(ID_DigDir_3_node20, &value);
 }
 
 
-int getStatus_Conf3_node20()
+int getStatus_DigDir_3_node20()
 {
-return getStatus(ID_Conf3_node20);
+return getStatus(ID_DigDir_3_node20);
 }
 
 
-int doWrite_Conf4_node20(int value)
+int doWrite_DigDir_4_node20(int value)
 {
-return doWrite(ID_Conf4_node20,  &value);
+return doWrite(ID_DigDir_4_node20,  &value);
 }
 
 
-int addWrite_Conf4_node20(int value)
+int addWrite_DigDir_4_node20(int value)
 {
-return addWrite(ID_Conf4_node20, &value);
+return addWrite(ID_DigDir_4_node20, &value);
 }
 
 
-int getStatus_Conf4_node20()
+int getStatus_DigDir_4_node20()
 {
-return getStatus(ID_Conf4_node20);
+return getStatus(ID_DigDir_4_node20);
 }
 
 
-int doWrite_Conf5_node20(int value)
+int doWrite_DigDir_5_node20(int value)
 {
-return doWrite(ID_Conf5_node20,  &value);
+return doWrite(ID_DigDir_5_node20,  &value);
 }
 
 
-int addWrite_Conf5_node20(int value)
+int addWrite_DigDir_5_node20(int value)
 {
-return addWrite(ID_Conf5_node20, &value);
+return addWrite(ID_DigDir_5_node20, &value);
 }
 
 
-int getStatus_Conf5_node20()
+int getStatus_DigDir_5_node20()
 {
-return getStatus(ID_Conf5_node20);
+return getStatus(ID_DigDir_5_node20);
 }
 
 
-int doWrite_Conf6_node20(int value)
+int doWrite_DigDir_6_node20(int value)
 {
-return doWrite(ID_Conf6_node20,  &value);
+return doWrite(ID_DigDir_6_node20,  &value);
 }
 
 
-int addWrite_Conf6_node20(int value)
+int addWrite_DigDir_6_node20(int value)
 {
-return addWrite(ID_Conf6_node20, &value);
+return addWrite(ID_DigDir_6_node20, &value);
 }
 
 
-int getStatus_Conf6_node20()
+int getStatus_DigDir_6_node20()
 {
-return getStatus(ID_Conf6_node20);
+return getStatus(ID_DigDir_6_node20);
 }
 
 
-int doWrite_Conf7_node20(int value)
+int doWrite_DigDir_7_node20(int value)
 {
-return doWrite(ID_Conf7_node20,  &value);
+return doWrite(ID_DigDir_7_node20,  &value);
 }
 
 
-int addWrite_Conf7_node20(int value)
+int addWrite_DigDir_7_node20(int value)
 {
-return addWrite(ID_Conf7_node20, &value);
+return addWrite(ID_DigDir_7_node20, &value);
 }
 
 
-int getStatus_Conf7_node20()
+int getStatus_DigDir_7_node20()
 {
-return getStatus(ID_Conf7_node20);
+return getStatus(ID_DigDir_7_node20);
 }
 
 
-int doWrite_Conf8_node20(int value)
+int doWrite_DigDir_8_node20(int value)
 {
-return doWrite(ID_Conf8_node20,  &value);
+return doWrite(ID_DigDir_8_node20,  &value);
 }
 
 
-int addWrite_Conf8_node20(int value)
+int addWrite_DigDir_8_node20(int value)
 {
-return addWrite(ID_Conf8_node20, &value);
+return addWrite(ID_DigDir_8_node20, &value);
 }
 
 
-int getStatus_Conf8_node20()
+int getStatus_DigDir_8_node20()
 {
-return getStatus(ID_Conf8_node20);
+return getStatus(ID_DigDir_8_node20);
 }
 
 
-int doWrite_digIN5_node20(int value)
+int doWrite_DigIn_2_node20(int value)
 {
-return doWrite(ID_digIN5_node20,  &value);
+return doWrite(ID_DigIn_2_node20,  &value);
 }
 
 
-int addWrite_digIN5_node20(int value)
+int addWrite_DigIn_2_node20(int value)
 {
-return addWrite(ID_digIN5_node20, &value);
+return addWrite(ID_DigIn_2_node20, &value);
 }
 
 
-int getStatus_digIN5_node20()
+int getStatus_DigIn_2_node20()
 {
-return getStatus(ID_digIN5_node20);
+return getStatus(ID_DigIn_2_node20);
 }
 
 
-int doWrite_digIN6_node20(int value)
+int doWrite_DigIn_3_node20(int value)
 {
-return doWrite(ID_digIN6_node20,  &value);
+return doWrite(ID_DigIn_3_node20,  &value);
 }
 
 
-int addWrite_digIN6_node20(int value)
+int addWrite_DigIn_3_node20(int value)
 {
-return addWrite(ID_digIN6_node20, &value);
+return addWrite(ID_DigIn_3_node20, &value);
 }
 
 
-int getStatus_digIN6_node20()
+int getStatus_DigIn_3_node20()
 {
-return getStatus(ID_digIN6_node20);
+return getStatus(ID_DigIn_3_node20);
 }
 
 
-int doWrite_digIN7_node20(int value)
+int doWrite_DigIn_6_node20(int value)
 {
-return doWrite(ID_digIN7_node20,  &value);
+return doWrite(ID_DigIn_6_node20,  &value);
 }
 
 
-int addWrite_digIN7_node20(int value)
+int addWrite_DigIn_6_node20(int value)
 {
-return addWrite(ID_digIN7_node20, &value);
+return addWrite(ID_DigIn_6_node20, &value);
 }
 
 
-int getStatus_digIN7_node20()
+int getStatus_DigIn_6_node20()
 {
-return getStatus(ID_digIN7_node20);
+return getStatus(ID_DigIn_6_node20);
 }
 
 
-int doWrite_digIN8_node20(int value)
+int doWrite_DigIn_7_node20(int value)
 {
-return doWrite(ID_digIN8_node20,  &value);
+return doWrite(ID_DigIn_7_node20,  &value);
 }
 
 
-int addWrite_digIN8_node20(int value)
+int addWrite_DigIn_7_node20(int value)
 {
-return addWrite(ID_digIN8_node20, &value);
+return addWrite(ID_DigIn_7_node20, &value);
 }
 
 
-int getStatus_digIN8_node20()
+int getStatus_DigIn_7_node20()
 {
-return getStatus(ID_digIN8_node20);
+return getStatus(ID_DigIn_7_node20);
 }
 
 
-int doWrite_digOUT1_node20(int value)
+int doWrite_DigOut_1_node20(int value)
 {
-return doWrite(ID_digOUT1_node20,  &value);
+return doWrite(ID_DigOut_1_node20,  &value);
 }
 
 
-int addWrite_digOUT1_node20(int value)
+int addWrite_DigOut_1_node20(int value)
 {
-return addWrite(ID_digOUT1_node20, &value);
+return addWrite(ID_DigOut_1_node20, &value);
 }
 
 
-int getStatus_digOUT1_node20()
+int getStatus_DigOut_1_node20()
 {
-return getStatus(ID_digOUT1_node20);
+return getStatus(ID_DigOut_1_node20);
 }
 
 
-int doWrite_digOUT2_node20(int value)
+int doWrite_DigOut_4_node20(int value)
 {
-return doWrite(ID_digOUT2_node20,  &value);
+return doWrite(ID_DigOut_4_node20,  &value);
 }
 
 
-int addWrite_digOUT2_node20(int value)
+int addWrite_DigOut_4_node20(int value)
 {
-return addWrite(ID_digOUT2_node20, &value);
+return addWrite(ID_DigOut_4_node20, &value);
 }
 
 
-int getStatus_digOUT2_node20()
+int getStatus_DigOut_4_node20()
 {
-return getStatus(ID_digOUT2_node20);
+return getStatus(ID_DigOut_4_node20);
 }
 
 
-int doWrite_digOUT3_node20(int value)
+int doWrite_DigOut_5_node20(int value)
 {
-return doWrite(ID_digOUT3_node20,  &value);
+return doWrite(ID_DigOut_5_node20,  &value);
 }
 
 
-int addWrite_digOUT3_node20(int value)
+int addWrite_DigOut_5_node20(int value)
 {
-return addWrite(ID_digOUT3_node20, &value);
+return addWrite(ID_DigOut_5_node20, &value);
 }
 
 
-int getStatus_digOUT3_node20()
+int getStatus_DigOut_5_node20()
 {
-return getStatus(ID_digOUT3_node20);
+return getStatus(ID_DigOut_5_node20);
 }
 
 
-int doWrite_digOUT4_node20(int value)
+int doWrite_DigOut_8_node20(int value)
 {
-return doWrite(ID_digOUT4_node20,  &value);
+return doWrite(ID_DigOut_8_node20,  &value);
 }
 
 
-int addWrite_digOUT4_node20(int value)
+int addWrite_DigOut_8_node20(int value)
 {
-return addWrite(ID_digOUT4_node20, &value);
+return addWrite(ID_DigOut_8_node20, &value);
 }
 
 
-int getStatus_digOUT4_node20()
+int getStatus_DigOut_8_node20()
 {
-return getStatus(ID_digOUT4_node20);
+return getStatus(ID_DigOut_8_node20);
 }
 
 
@@ -8778,39 +8778,39 @@ return getStatus(ID_Life_node21);
 }
 
 
-int doWrite_ConfAi1_node21(u_int16_t value)
+int doWrite_AnInCnf_1_node21(u_int16_t value)
 {
-return doWrite(ID_ConfAi1_node21,  &value);
+return doWrite(ID_AnInCnf_1_node21,  &value);
 }
 
 
-int addWrite_ConfAi1_node21(u_int16_t value)
+int addWrite_AnInCnf_1_node21(u_int16_t value)
 {
-return addWrite(ID_ConfAi1_node21, &value);
+return addWrite(ID_AnInCnf_1_node21, &value);
 }
 
 
-int getStatus_ConfAi1_node21()
+int getStatus_AnInCnf_1_node21()
 {
-return getStatus(ID_ConfAi1_node21);
+return getStatus(ID_AnInCnf_1_node21);
 }
 
 
-int doWrite_ConfAi2_node21(u_int16_t value)
+int doWrite_AnInCnf_2_node21(u_int16_t value)
 {
-return doWrite(ID_ConfAi2_node21,  &value);
+return doWrite(ID_AnInCnf_2_node21,  &value);
 }
 
 
-int addWrite_ConfAi2_node21(u_int16_t value)
+int addWrite_AnInCnf_2_node21(u_int16_t value)
 {
-return addWrite(ID_ConfAi2_node21, &value);
+return addWrite(ID_AnInCnf_2_node21, &value);
 }
 
 
-int getStatus_ConfAi2_node21()
+int getStatus_AnInCnf_2_node21()
 {
-return getStatus(ID_ConfAi2_node21);
+return getStatus(ID_AnInCnf_2_node21);
 }
 
 
@@ -8850,291 +8850,291 @@ return getStatus(ID_ValAi2_node21);
 }
 
 
-int doWrite_Conf1_node21(int value)
+int doWrite_DigDir_1_node21(int value)
 {
-return doWrite(ID_Conf1_node21,  &value);
+return doWrite(ID_DigDir_1_node21,  &value);
 }
 
 
-int addWrite_Conf1_node21(int value)
+int addWrite_DigDir_1_node21(int value)
 {
-return addWrite(ID_Conf1_node21, &value);
+return addWrite(ID_DigDir_1_node21, &value);
 }
 
 
-int getStatus_Conf1_node21()
+int getStatus_DigDir_1_node21()
 {
-return getStatus(ID_Conf1_node21);
+return getStatus(ID_DigDir_1_node21);
 }
 
 
-int doWrite_Conf2_node21(int value)
+int doWrite_DigDir_2_node21(int value)
 {
-return doWrite(ID_Conf2_node21,  &value);
+return doWrite(ID_DigDir_2_node21,  &value);
 }
 
 
-int addWrite_Conf2_node21(int value)
+int addWrite_DigDir_2_node21(int value)
 {
-return addWrite(ID_Conf2_node21, &value);
+return addWrite(ID_DigDir_2_node21, &value);
 }
 
 
-int getStatus_Conf2_node21()
+int getStatus_DigDir_2_node21()
 {
-return getStatus(ID_Conf2_node21);
+return getStatus(ID_DigDir_2_node21);
 }
 
 
-int doWrite_Conf3_node21(int value)
+int doWrite_DigDir_3_node21(int value)
 {
-return doWrite(ID_Conf3_node21,  &value);
+return doWrite(ID_DigDir_3_node21,  &value);
 }
 
 
-int addWrite_Conf3_node21(int value)
+int addWrite_DigDir_3_node21(int value)
 {
-return addWrite(ID_Conf3_node21, &value);
+return addWrite(ID_DigDir_3_node21, &value);
 }
 
 
-int getStatus_Conf3_node21()
+int getStatus_DigDir_3_node21()
 {
-return getStatus(ID_Conf3_node21);
+return getStatus(ID_DigDir_3_node21);
 }
 
 
-int doWrite_Conf4_node21(int value)
+int doWrite_DigDir_4_node21(int value)
 {
-return doWrite(ID_Conf4_node21,  &value);
+return doWrite(ID_DigDir_4_node21,  &value);
 }
 
 
-int addWrite_Conf4_node21(int value)
+int addWrite_DigDir_4_node21(int value)
 {
-return addWrite(ID_Conf4_node21, &value);
+return addWrite(ID_DigDir_4_node21, &value);
 }
 
 
-int getStatus_Conf4_node21()
+int getStatus_DigDir_4_node21()
 {
-return getStatus(ID_Conf4_node21);
+return getStatus(ID_DigDir_4_node21);
 }
 
 
-int doWrite_Conf5_node21(int value)
+int doWrite_DigDir_5_node21(int value)
 {
-return doWrite(ID_Conf5_node21,  &value);
+return doWrite(ID_DigDir_5_node21,  &value);
 }
 
 
-int addWrite_Conf5_node21(int value)
+int addWrite_DigDir_5_node21(int value)
 {
-return addWrite(ID_Conf5_node21, &value);
+return addWrite(ID_DigDir_5_node21, &value);
 }
 
 
-int getStatus_Conf5_node21()
+int getStatus_DigDir_5_node21()
 {
-return getStatus(ID_Conf5_node21);
+return getStatus(ID_DigDir_5_node21);
 }
 
 
-int doWrite_Conf6_node21(int value)
+int doWrite_DigDir_6_node21(int value)
 {
-return doWrite(ID_Conf6_node21,  &value);
+return doWrite(ID_DigDir_6_node21,  &value);
 }
 
 
-int addWrite_Conf6_node21(int value)
+int addWrite_DigDir_6_node21(int value)
 {
-return addWrite(ID_Conf6_node21, &value);
+return addWrite(ID_DigDir_6_node21, &value);
 }
 
 
-int getStatus_Conf6_node21()
+int getStatus_DigDir_6_node21()
 {
-return getStatus(ID_Conf6_node21);
+return getStatus(ID_DigDir_6_node21);
 }
 
 
-int doWrite_Conf7_node21(int value)
+int doWrite_DigDir_7_node21(int value)
 {
-return doWrite(ID_Conf7_node21,  &value);
+return doWrite(ID_DigDir_7_node21,  &value);
 }
 
 
-int addWrite_Conf7_node21(int value)
+int addWrite_DigDir_7_node21(int value)
 {
-return addWrite(ID_Conf7_node21, &value);
+return addWrite(ID_DigDir_7_node21, &value);
 }
 
 
-int getStatus_Conf7_node21()
+int getStatus_DigDir_7_node21()
 {
-return getStatus(ID_Conf7_node21);
+return getStatus(ID_DigDir_7_node21);
 }
 
 
-int doWrite_Conf8_node21(int value)
+int doWrite_DigDir_8_node21(int value)
 {
-return doWrite(ID_Conf8_node21,  &value);
+return doWrite(ID_DigDir_8_node21,  &value);
 }
 
 
-int addWrite_Conf8_node21(int value)
+int addWrite_DigDir_8_node21(int value)
 {
-return addWrite(ID_Conf8_node21, &value);
+return addWrite(ID_DigDir_8_node21, &value);
 }
 
 
-int getStatus_Conf8_node21()
+int getStatus_DigDir_8_node21()
 {
-return getStatus(ID_Conf8_node21);
+return getStatus(ID_DigDir_8_node21);
 }
 
 
-int doWrite_digIN5_node21(int value)
+int doWrite_DigIn_2_node21(int value)
 {
-return doWrite(ID_digIN5_node21,  &value);
+return doWrite(ID_DigIn_2_node21,  &value);
 }
 
 
-int addWrite_digIN5_node21(int value)
+int addWrite_DigIn_2_node21(int value)
 {
-return addWrite(ID_digIN5_node21, &value);
+return addWrite(ID_DigIn_2_node21, &value);
 }
 
 
-int getStatus_digIN5_node21()
+int getStatus_DigIn_2_node21()
 {
-return getStatus(ID_digIN5_node21);
+return getStatus(ID_DigIn_2_node21);
 }
 
 
-int doWrite_digIN6_node21(int value)
+int doWrite_DigIn_3_node21(int value)
 {
-return doWrite(ID_digIN6_node21,  &value);
+return doWrite(ID_DigIn_3_node21,  &value);
 }
 
 
-int addWrite_digIN6_node21(int value)
+int addWrite_DigIn_3_node21(int value)
 {
-return addWrite(ID_digIN6_node21, &value);
+return addWrite(ID_DigIn_3_node21, &value);
 }
 
 
-int getStatus_digIN6_node21()
+int getStatus_DigIn_3_node21()
 {
-return getStatus(ID_digIN6_node21);
+return getStatus(ID_DigIn_3_node21);
 }
 
 
-int doWrite_digIN7_node21(int value)
+int doWrite_DigIn_6_node21(int value)
 {
-return doWrite(ID_digIN7_node21,  &value);
+return doWrite(ID_DigIn_6_node21,  &value);
 }
 
 
-int addWrite_digIN7_node21(int value)
+int addWrite_DigIn_6_node21(int value)
 {
-return addWrite(ID_digIN7_node21, &value);
+return addWrite(ID_DigIn_6_node21, &value);
 }
 
 
-int getStatus_digIN7_node21()
+int getStatus_DigIn_6_node21()
 {
-return getStatus(ID_digIN7_node21);
+return getStatus(ID_DigIn_6_node21);
 }
 
 
-int doWrite_digIN8_node21(int value)
+int doWrite_DigIn_7_node21(int value)
 {
-return doWrite(ID_digIN8_node21,  &value);
+return doWrite(ID_DigIn_7_node21,  &value);
 }
 
 
-int addWrite_digIN8_node21(int value)
+int addWrite_DigIn_7_node21(int value)
 {
-return addWrite(ID_digIN8_node21, &value);
+return addWrite(ID_DigIn_7_node21, &value);
 }
 
 
-int getStatus_digIN8_node21()
+int getStatus_DigIn_7_node21()
 {
-return getStatus(ID_digIN8_node21);
+return getStatus(ID_DigIn_7_node21);
 }
 
 
-int doWrite_digOUT1_node21(int value)
+int doWrite_DigOut_1_node21(int value)
 {
-return doWrite(ID_digOUT1_node21,  &value);
+return doWrite(ID_DigOut_1_node21,  &value);
 }
 
 
-int addWrite_digOUT1_node21(int value)
+int addWrite_DigOut_1_node21(int value)
 {
-return addWrite(ID_digOUT1_node21, &value);
+return addWrite(ID_DigOut_1_node21, &value);
 }
 
 
-int getStatus_digOUT1_node21()
+int getStatus_DigOut_1_node21()
 {
-return getStatus(ID_digOUT1_node21);
+return getStatus(ID_DigOut_1_node21);
 }
 
 
-int doWrite_digOUT2_node21(int value)
+int doWrite_DigOut_4_node21(int value)
 {
-return doWrite(ID_digOUT2_node21,  &value);
+return doWrite(ID_DigOut_4_node21,  &value);
 }
 
 
-int addWrite_digOUT2_node21(int value)
+int addWrite_DigOut_4_node21(int value)
 {
-return addWrite(ID_digOUT2_node21, &value);
+return addWrite(ID_DigOut_4_node21, &value);
 }
 
 
-int getStatus_digOUT2_node21()
+int getStatus_DigOut_4_node21()
 {
-return getStatus(ID_digOUT2_node21);
+return getStatus(ID_DigOut_4_node21);
 }
 
 
-int doWrite_digOUT3_node21(int value)
+int doWrite_DigOut_5_node21(int value)
 {
-return doWrite(ID_digOUT3_node21,  &value);
+return doWrite(ID_DigOut_5_node21,  &value);
 }
 
 
-int addWrite_digOUT3_node21(int value)
+int addWrite_DigOut_5_node21(int value)
 {
-return addWrite(ID_digOUT3_node21, &value);
+return addWrite(ID_DigOut_5_node21, &value);
 }
 
 
-int getStatus_digOUT3_node21()
+int getStatus_DigOut_5_node21()
 {
-return getStatus(ID_digOUT3_node21);
+return getStatus(ID_DigOut_5_node21);
 }
 
 
-int doWrite_digOUT4_node21(int value)
+int doWrite_DigOut_8_node21(int value)
 {
-return doWrite(ID_digOUT4_node21,  &value);
+return doWrite(ID_DigOut_8_node21,  &value);
 }
 
 
-int addWrite_digOUT4_node21(int value)
+int addWrite_DigOut_8_node21(int value)
 {
-return addWrite(ID_digOUT4_node21, &value);
+return addWrite(ID_DigOut_8_node21, &value);
 }
 
 
-int getStatus_digOUT4_node21()
+int getStatus_DigOut_8_node21()
 {
-return getStatus(ID_digOUT4_node21);
+return getStatus(ID_DigOut_8_node21);
 }
 
 
@@ -9174,39 +9174,39 @@ return getStatus(ID_Life_node22);
 }
 
 
-int doWrite_ConfAi1_node22(u_int16_t value)
+int doWrite_AnInCnf_1_node22(u_int16_t value)
 {
-return doWrite(ID_ConfAi1_node22,  &value);
+return doWrite(ID_AnInCnf_1_node22,  &value);
 }
 
 
-int addWrite_ConfAi1_node22(u_int16_t value)
+int addWrite_AnInCnf_1_node22(u_int16_t value)
 {
-return addWrite(ID_ConfAi1_node22, &value);
+return addWrite(ID_AnInCnf_1_node22, &value);
 }
 
 
-int getStatus_ConfAi1_node22()
+int getStatus_AnInCnf_1_node22()
 {
-return getStatus(ID_ConfAi1_node22);
+return getStatus(ID_AnInCnf_1_node22);
 }
 
 
-int doWrite_ConfAi2_node22(u_int16_t value)
+int doWrite_AnInCnf_2_node22(u_int16_t value)
 {
-return doWrite(ID_ConfAi2_node22,  &value);
+return doWrite(ID_AnInCnf_2_node22,  &value);
 }
 
 
-int addWrite_ConfAi2_node22(u_int16_t value)
+int addWrite_AnInCnf_2_node22(u_int16_t value)
 {
-return addWrite(ID_ConfAi2_node22, &value);
+return addWrite(ID_AnInCnf_2_node22, &value);
 }
 
 
-int getStatus_ConfAi2_node22()
+int getStatus_AnInCnf_2_node22()
 {
-return getStatus(ID_ConfAi2_node22);
+return getStatus(ID_AnInCnf_2_node22);
 }
 
 
@@ -9246,291 +9246,291 @@ return getStatus(ID_ValAi2_node22);
 }
 
 
-int doWrite_Conf1_node22(int value)
+int doWrite_DigDir_1_node22(int value)
 {
-return doWrite(ID_Conf1_node22,  &value);
+return doWrite(ID_DigDir_1_node22,  &value);
 }
 
 
-int addWrite_Conf1_node22(int value)
+int addWrite_DigDir_1_node22(int value)
 {
-return addWrite(ID_Conf1_node22, &value);
+return addWrite(ID_DigDir_1_node22, &value);
 }
 
 
-int getStatus_Conf1_node22()
+int getStatus_DigDir_1_node22()
 {
-return getStatus(ID_Conf1_node22);
+return getStatus(ID_DigDir_1_node22);
 }
 
 
-int doWrite_Conf2_node22(int value)
+int doWrite_DigDir_2_node22(int value)
 {
-return doWrite(ID_Conf2_node22,  &value);
+return doWrite(ID_DigDir_2_node22,  &value);
 }
 
 
-int addWrite_Conf2_node22(int value)
+int addWrite_DigDir_2_node22(int value)
 {
-return addWrite(ID_Conf2_node22, &value);
+return addWrite(ID_DigDir_2_node22, &value);
 }
 
 
-int getStatus_Conf2_node22()
+int getStatus_DigDir_2_node22()
 {
-return getStatus(ID_Conf2_node22);
+return getStatus(ID_DigDir_2_node22);
 }
 
 
-int doWrite_Conf3_node22(int value)
+int doWrite_DigDir_3_node22(int value)
 {
-return doWrite(ID_Conf3_node22,  &value);
+return doWrite(ID_DigDir_3_node22,  &value);
 }
 
 
-int addWrite_Conf3_node22(int value)
+int addWrite_DigDir_3_node22(int value)
 {
-return addWrite(ID_Conf3_node22, &value);
+return addWrite(ID_DigDir_3_node22, &value);
 }
 
 
-int getStatus_Conf3_node22()
+int getStatus_DigDir_3_node22()
 {
-return getStatus(ID_Conf3_node22);
+return getStatus(ID_DigDir_3_node22);
 }
 
 
-int doWrite_Conf4_node22(int value)
+int doWrite_DigDir_4_node22(int value)
 {
-return doWrite(ID_Conf4_node22,  &value);
+return doWrite(ID_DigDir_4_node22,  &value);
 }
 
 
-int addWrite_Conf4_node22(int value)
+int addWrite_DigDir_4_node22(int value)
 {
-return addWrite(ID_Conf4_node22, &value);
+return addWrite(ID_DigDir_4_node22, &value);
 }
 
 
-int getStatus_Conf4_node22()
+int getStatus_DigDir_4_node22()
 {
-return getStatus(ID_Conf4_node22);
+return getStatus(ID_DigDir_4_node22);
 }
 
 
-int doWrite_Conf5_node22(int value)
+int doWrite_DigDir_5_node22(int value)
 {
-return doWrite(ID_Conf5_node22,  &value);
+return doWrite(ID_DigDir_5_node22,  &value);
 }
 
 
-int addWrite_Conf5_node22(int value)
+int addWrite_DigDir_5_node22(int value)
 {
-return addWrite(ID_Conf5_node22, &value);
+return addWrite(ID_DigDir_5_node22, &value);
 }
 
 
-int getStatus_Conf5_node22()
+int getStatus_DigDir_5_node22()
 {
-return getStatus(ID_Conf5_node22);
+return getStatus(ID_DigDir_5_node22);
 }
 
 
-int doWrite_Conf6_node22(int value)
+int doWrite_DigDir_6_node22(int value)
 {
-return doWrite(ID_Conf6_node22,  &value);
+return doWrite(ID_DigDir_6_node22,  &value);
 }
 
 
-int addWrite_Conf6_node22(int value)
+int addWrite_DigDir_6_node22(int value)
 {
-return addWrite(ID_Conf6_node22, &value);
+return addWrite(ID_DigDir_6_node22, &value);
 }
 
 
-int getStatus_Conf6_node22()
+int getStatus_DigDir_6_node22()
 {
-return getStatus(ID_Conf6_node22);
+return getStatus(ID_DigDir_6_node22);
 }
 
 
-int doWrite_Conf7_node22(int value)
+int doWrite_DigDir_7_node22(int value)
 {
-return doWrite(ID_Conf7_node22,  &value);
+return doWrite(ID_DigDir_7_node22,  &value);
 }
 
 
-int addWrite_Conf7_node22(int value)
+int addWrite_DigDir_7_node22(int value)
 {
-return addWrite(ID_Conf7_node22, &value);
+return addWrite(ID_DigDir_7_node22, &value);
 }
 
 
-int getStatus_Conf7_node22()
+int getStatus_DigDir_7_node22()
 {
-return getStatus(ID_Conf7_node22);
+return getStatus(ID_DigDir_7_node22);
 }
 
 
-int doWrite_Conf8_node22(int value)
+int doWrite_DigDir_8_node22(int value)
 {
-return doWrite(ID_Conf8_node22,  &value);
+return doWrite(ID_DigDir_8_node22,  &value);
 }
 
 
-int addWrite_Conf8_node22(int value)
+int addWrite_DigDir_8_node22(int value)
 {
-return addWrite(ID_Conf8_node22, &value);
+return addWrite(ID_DigDir_8_node22, &value);
 }
 
 
-int getStatus_Conf8_node22()
+int getStatus_DigDir_8_node22()
 {
-return getStatus(ID_Conf8_node22);
+return getStatus(ID_DigDir_8_node22);
 }
 
 
-int doWrite_digIN5_node22(int value)
+int doWrite_DigIn_2_node22(int value)
 {
-return doWrite(ID_digIN5_node22,  &value);
+return doWrite(ID_DigIn_2_node22,  &value);
 }
 
 
-int addWrite_digIN5_node22(int value)
+int addWrite_DigIn_2_node22(int value)
 {
-return addWrite(ID_digIN5_node22, &value);
+return addWrite(ID_DigIn_2_node22, &value);
 }
 
 
-int getStatus_digIN5_node22()
+int getStatus_DigIn_2_node22()
 {
-return getStatus(ID_digIN5_node22);
+return getStatus(ID_DigIn_2_node22);
 }
 
 
-int doWrite_digIN6_node22(int value)
+int doWrite_DigIn_3_node22(int value)
 {
-return doWrite(ID_digIN6_node22,  &value);
+return doWrite(ID_DigIn_3_node22,  &value);
 }
 
 
-int addWrite_digIN6_node22(int value)
+int addWrite_DigIn_3_node22(int value)
 {
-return addWrite(ID_digIN6_node22, &value);
+return addWrite(ID_DigIn_3_node22, &value);
 }
 
 
-int getStatus_digIN6_node22()
+int getStatus_DigIn_3_node22()
 {
-return getStatus(ID_digIN6_node22);
+return getStatus(ID_DigIn_3_node22);
 }
 
 
-int doWrite_digIN7_node22(int value)
+int doWrite_DigIn_6_node22(int value)
 {
-return doWrite(ID_digIN7_node22,  &value);
+return doWrite(ID_DigIn_6_node22,  &value);
 }
 
 
-int addWrite_digIN7_node22(int value)
+int addWrite_DigIn_6_node22(int value)
 {
-return addWrite(ID_digIN7_node22, &value);
+return addWrite(ID_DigIn_6_node22, &value);
 }
 
 
-int getStatus_digIN7_node22()
+int getStatus_DigIn_6_node22()
 {
-return getStatus(ID_digIN7_node22);
+return getStatus(ID_DigIn_6_node22);
 }
 
 
-int doWrite_digIN8_node22(int value)
+int doWrite_DigIn_7_node22(int value)
 {
-return doWrite(ID_digIN8_node22,  &value);
+return doWrite(ID_DigIn_7_node22,  &value);
 }
 
 
-int addWrite_digIN8_node22(int value)
+int addWrite_DigIn_7_node22(int value)
 {
-return addWrite(ID_digIN8_node22, &value);
+return addWrite(ID_DigIn_7_node22, &value);
 }
 
 
-int getStatus_digIN8_node22()
+int getStatus_DigIn_7_node22()
 {
-return getStatus(ID_digIN8_node22);
+return getStatus(ID_DigIn_7_node22);
 }
 
 
-int doWrite_digOUT1_node22(int value)
+int doWrite_DigOut_1_node22(int value)
 {
-return doWrite(ID_digOUT1_node22,  &value);
+return doWrite(ID_DigOut_1_node22,  &value);
 }
 
 
-int addWrite_digOUT1_node22(int value)
+int addWrite_DigOut_1_node22(int value)
 {
-return addWrite(ID_digOUT1_node22, &value);
+return addWrite(ID_DigOut_1_node22, &value);
 }
 
 
-int getStatus_digOUT1_node22()
+int getStatus_DigOut_1_node22()
 {
-return getStatus(ID_digOUT1_node22);
+return getStatus(ID_DigOut_1_node22);
 }
 
 
-int doWrite_digOUT2_node22(int value)
+int doWrite_DigOut_4_node22(int value)
 {
-return doWrite(ID_digOUT2_node22,  &value);
+return doWrite(ID_DigOut_4_node22,  &value);
 }
 
 
-int addWrite_digOUT2_node22(int value)
+int addWrite_DigOut_4_node22(int value)
 {
-return addWrite(ID_digOUT2_node22, &value);
+return addWrite(ID_DigOut_4_node22, &value);
 }
 
 
-int getStatus_digOUT2_node22()
+int getStatus_DigOut_4_node22()
 {
-return getStatus(ID_digOUT2_node22);
+return getStatus(ID_DigOut_4_node22);
 }
 
 
-int doWrite_digOUT3_node22(int value)
+int doWrite_DigOut_5_node22(int value)
 {
-return doWrite(ID_digOUT3_node22,  &value);
+return doWrite(ID_DigOut_5_node22,  &value);
 }
 
 
-int addWrite_digOUT3_node22(int value)
+int addWrite_DigOut_5_node22(int value)
 {
-return addWrite(ID_digOUT3_node22, &value);
+return addWrite(ID_DigOut_5_node22, &value);
 }
 
 
-int getStatus_digOUT3_node22()
+int getStatus_DigOut_5_node22()
 {
-return getStatus(ID_digOUT3_node22);
+return getStatus(ID_DigOut_5_node22);
 }
 
 
-int doWrite_digOUT4_node22(int value)
+int doWrite_DigOut_8_node22(int value)
 {
-return doWrite(ID_digOUT4_node22,  &value);
+return doWrite(ID_DigOut_8_node22,  &value);
 }
 
 
-int addWrite_digOUT4_node22(int value)
+int addWrite_DigOut_8_node22(int value)
 {
-return addWrite(ID_digOUT4_node22, &value);
+return addWrite(ID_DigOut_8_node22, &value);
 }
 
 
-int getStatus_digOUT4_node22()
+int getStatus_DigOut_8_node22()
 {
-return getStatus(ID_digOUT4_node22);
+return getStatus(ID_DigOut_8_node22);
 }
 
 
@@ -9570,39 +9570,39 @@ return getStatus(ID_Life_node23);
 }
 
 
-int doWrite_ConfAi1_node23(u_int16_t value)
+int doWrite_AnInCnf_1_node23(u_int16_t value)
 {
-return doWrite(ID_ConfAi1_node23,  &value);
+return doWrite(ID_AnInCnf_1_node23,  &value);
 }
 
 
-int addWrite_ConfAi1_node23(u_int16_t value)
+int addWrite_AnInCnf_1_node23(u_int16_t value)
 {
-return addWrite(ID_ConfAi1_node23, &value);
+return addWrite(ID_AnInCnf_1_node23, &value);
 }
 
 
-int getStatus_ConfAi1_node23()
+int getStatus_AnInCnf_1_node23()
 {
-return getStatus(ID_ConfAi1_node23);
+return getStatus(ID_AnInCnf_1_node23);
 }
 
 
-int doWrite_ConfAi2_node23(u_int16_t value)
+int doWrite_AnInCnf_2_node23(u_int16_t value)
 {
-return doWrite(ID_ConfAi2_node23,  &value);
+return doWrite(ID_AnInCnf_2_node23,  &value);
 }
 
 
-int addWrite_ConfAi2_node23(u_int16_t value)
+int addWrite_AnInCnf_2_node23(u_int16_t value)
 {
-return addWrite(ID_ConfAi2_node23, &value);
+return addWrite(ID_AnInCnf_2_node23, &value);
 }
 
 
-int getStatus_ConfAi2_node23()
+int getStatus_AnInCnf_2_node23()
 {
-return getStatus(ID_ConfAi2_node23);
+return getStatus(ID_AnInCnf_2_node23);
 }
 
 
@@ -9642,291 +9642,291 @@ return getStatus(ID_ValAi2_node23);
 }
 
 
-int doWrite_Conf1_node23(int value)
+int doWrite_DigDir_1_node23(int value)
 {
-return doWrite(ID_Conf1_node23,  &value);
+return doWrite(ID_DigDir_1_node23,  &value);
 }
 
 
-int addWrite_Conf1_node23(int value)
+int addWrite_DigDir_1_node23(int value)
 {
-return addWrite(ID_Conf1_node23, &value);
+return addWrite(ID_DigDir_1_node23, &value);
 }
 
 
-int getStatus_Conf1_node23()
+int getStatus_DigDir_1_node23()
 {
-return getStatus(ID_Conf1_node23);
+return getStatus(ID_DigDir_1_node23);
 }
 
 
-int doWrite_Conf2_node23(int value)
+int doWrite_DigDir_2_node23(int value)
 {
-return doWrite(ID_Conf2_node23,  &value);
+return doWrite(ID_DigDir_2_node23,  &value);
 }
 
 
-int addWrite_Conf2_node23(int value)
+int addWrite_DigDir_2_node23(int value)
 {
-return addWrite(ID_Conf2_node23, &value);
+return addWrite(ID_DigDir_2_node23, &value);
 }
 
 
-int getStatus_Conf2_node23()
+int getStatus_DigDir_2_node23()
 {
-return getStatus(ID_Conf2_node23);
+return getStatus(ID_DigDir_2_node23);
 }
 
 
-int doWrite_Conf3_node23(int value)
+int doWrite_DigDir_3_node23(int value)
 {
-return doWrite(ID_Conf3_node23,  &value);
+return doWrite(ID_DigDir_3_node23,  &value);
 }
 
 
-int addWrite_Conf3_node23(int value)
+int addWrite_DigDir_3_node23(int value)
 {
-return addWrite(ID_Conf3_node23, &value);
+return addWrite(ID_DigDir_3_node23, &value);
 }
 
 
-int getStatus_Conf3_node23()
+int getStatus_DigDir_3_node23()
 {
-return getStatus(ID_Conf3_node23);
+return getStatus(ID_DigDir_3_node23);
 }
 
 
-int doWrite_Conf4_node23(int value)
+int doWrite_DigDir_4_node23(int value)
 {
-return doWrite(ID_Conf4_node23,  &value);
+return doWrite(ID_DigDir_4_node23,  &value);
 }
 
 
-int addWrite_Conf4_node23(int value)
+int addWrite_DigDir_4_node23(int value)
 {
-return addWrite(ID_Conf4_node23, &value);
+return addWrite(ID_DigDir_4_node23, &value);
 }
 
 
-int getStatus_Conf4_node23()
+int getStatus_DigDir_4_node23()
 {
-return getStatus(ID_Conf4_node23);
+return getStatus(ID_DigDir_4_node23);
 }
 
 
-int doWrite_Conf5_node23(int value)
+int doWrite_DigDir_5_node23(int value)
 {
-return doWrite(ID_Conf5_node23,  &value);
+return doWrite(ID_DigDir_5_node23,  &value);
 }
 
 
-int addWrite_Conf5_node23(int value)
+int addWrite_DigDir_5_node23(int value)
 {
-return addWrite(ID_Conf5_node23, &value);
+return addWrite(ID_DigDir_5_node23, &value);
 }
 
 
-int getStatus_Conf5_node23()
+int getStatus_DigDir_5_node23()
 {
-return getStatus(ID_Conf5_node23);
+return getStatus(ID_DigDir_5_node23);
 }
 
 
-int doWrite_Conf6_node23(int value)
+int doWrite_DigDir_6_node23(int value)
 {
-return doWrite(ID_Conf6_node23,  &value);
+return doWrite(ID_DigDir_6_node23,  &value);
 }
 
 
-int addWrite_Conf6_node23(int value)
+int addWrite_DigDir_6_node23(int value)
 {
-return addWrite(ID_Conf6_node23, &value);
+return addWrite(ID_DigDir_6_node23, &value);
 }
 
 
-int getStatus_Conf6_node23()
+int getStatus_DigDir_6_node23()
 {
-return getStatus(ID_Conf6_node23);
+return getStatus(ID_DigDir_6_node23);
 }
 
 
-int doWrite_Conf7_node23(int value)
+int doWrite_DigDir_7_node23(int value)
 {
-return doWrite(ID_Conf7_node23,  &value);
+return doWrite(ID_DigDir_7_node23,  &value);
 }
 
 
-int addWrite_Conf7_node23(int value)
+int addWrite_DigDir_7_node23(int value)
 {
-return addWrite(ID_Conf7_node23, &value);
+return addWrite(ID_DigDir_7_node23, &value);
 }
 
 
-int getStatus_Conf7_node23()
+int getStatus_DigDir_7_node23()
 {
-return getStatus(ID_Conf7_node23);
+return getStatus(ID_DigDir_7_node23);
 }
 
 
-int doWrite_Conf8_node23(int value)
+int doWrite_DigDir_8_node23(int value)
 {
-return doWrite(ID_Conf8_node23,  &value);
+return doWrite(ID_DigDir_8_node23,  &value);
 }
 
 
-int addWrite_Conf8_node23(int value)
+int addWrite_DigDir_8_node23(int value)
 {
-return addWrite(ID_Conf8_node23, &value);
+return addWrite(ID_DigDir_8_node23, &value);
 }
 
 
-int getStatus_Conf8_node23()
+int getStatus_DigDir_8_node23()
 {
-return getStatus(ID_Conf8_node23);
+return getStatus(ID_DigDir_8_node23);
 }
 
 
-int doWrite_digIN5_node23(int value)
+int doWrite_DigIn_2_node23(int value)
 {
-return doWrite(ID_digIN5_node23,  &value);
+return doWrite(ID_DigIn_2_node23,  &value);
 }
 
 
-int addWrite_digIN5_node23(int value)
+int addWrite_DigIn_2_node23(int value)
 {
-return addWrite(ID_digIN5_node23, &value);
+return addWrite(ID_DigIn_2_node23, &value);
 }
 
 
-int getStatus_digIN5_node23()
+int getStatus_DigIn_2_node23()
 {
-return getStatus(ID_digIN5_node23);
+return getStatus(ID_DigIn_2_node23);
 }
 
 
-int doWrite_digIN6_node23(int value)
+int doWrite_DigIn_3_node23(int value)
 {
-return doWrite(ID_digIN6_node23,  &value);
+return doWrite(ID_DigIn_3_node23,  &value);
 }
 
 
-int addWrite_digIN6_node23(int value)
+int addWrite_DigIn_3_node23(int value)
 {
-return addWrite(ID_digIN6_node23, &value);
+return addWrite(ID_DigIn_3_node23, &value);
 }
 
 
-int getStatus_digIN6_node23()
+int getStatus_DigIn_3_node23()
 {
-return getStatus(ID_digIN6_node23);
+return getStatus(ID_DigIn_3_node23);
 }
 
 
-int doWrite_digIN7_node23(int value)
+int doWrite_DigIn_6_node23(int value)
 {
-return doWrite(ID_digIN7_node23,  &value);
+return doWrite(ID_DigIn_6_node23,  &value);
 }
 
 
-int addWrite_digIN7_node23(int value)
+int addWrite_DigIn_6_node23(int value)
 {
-return addWrite(ID_digIN7_node23, &value);
+return addWrite(ID_DigIn_6_node23, &value);
 }
 
 
-int getStatus_digIN7_node23()
+int getStatus_DigIn_6_node23()
 {
-return getStatus(ID_digIN7_node23);
+return getStatus(ID_DigIn_6_node23);
 }
 
 
-int doWrite_digIN8_node23(int value)
+int doWrite_DigIn_7_node23(int value)
 {
-return doWrite(ID_digIN8_node23,  &value);
+return doWrite(ID_DigIn_7_node23,  &value);
 }
 
 
-int addWrite_digIN8_node23(int value)
+int addWrite_DigIn_7_node23(int value)
 {
-return addWrite(ID_digIN8_node23, &value);
+return addWrite(ID_DigIn_7_node23, &value);
 }
 
 
-int getStatus_digIN8_node23()
+int getStatus_DigIn_7_node23()
 {
-return getStatus(ID_digIN8_node23);
+return getStatus(ID_DigIn_7_node23);
 }
 
 
-int doWrite_digOUT1_node23(int value)
+int doWrite_DigOut_1_node23(int value)
 {
-return doWrite(ID_digOUT1_node23,  &value);
+return doWrite(ID_DigOut_1_node23,  &value);
 }
 
 
-int addWrite_digOUT1_node23(int value)
+int addWrite_DigOut_1_node23(int value)
 {
-return addWrite(ID_digOUT1_node23, &value);
+return addWrite(ID_DigOut_1_node23, &value);
 }
 
 
-int getStatus_digOUT1_node23()
+int getStatus_DigOut_1_node23()
 {
-return getStatus(ID_digOUT1_node23);
+return getStatus(ID_DigOut_1_node23);
 }
 
 
-int doWrite_digOUT2_node23(int value)
+int doWrite_DigOut_4_node23(int value)
 {
-return doWrite(ID_digOUT2_node23,  &value);
+return doWrite(ID_DigOut_4_node23,  &value);
 }
 
 
-int addWrite_digOUT2_node23(int value)
+int addWrite_DigOut_4_node23(int value)
 {
-return addWrite(ID_digOUT2_node23, &value);
+return addWrite(ID_DigOut_4_node23, &value);
 }
 
 
-int getStatus_digOUT2_node23()
+int getStatus_DigOut_4_node23()
 {
-return getStatus(ID_digOUT2_node23);
+return getStatus(ID_DigOut_4_node23);
 }
 
 
-int doWrite_digOUT3_node23(int value)
+int doWrite_DigOut_5_node23(int value)
 {
-return doWrite(ID_digOUT3_node23,  &value);
+return doWrite(ID_DigOut_5_node23,  &value);
 }
 
 
-int addWrite_digOUT3_node23(int value)
+int addWrite_DigOut_5_node23(int value)
 {
-return addWrite(ID_digOUT3_node23, &value);
+return addWrite(ID_DigOut_5_node23, &value);
 }
 
 
-int getStatus_digOUT3_node23()
+int getStatus_DigOut_5_node23()
 {
-return getStatus(ID_digOUT3_node23);
+return getStatus(ID_DigOut_5_node23);
 }
 
 
-int doWrite_digOUT4_node23(int value)
+int doWrite_DigOut_8_node23(int value)
 {
-return doWrite(ID_digOUT4_node23,  &value);
+return doWrite(ID_DigOut_8_node23,  &value);
 }
 
 
-int addWrite_digOUT4_node23(int value)
+int addWrite_DigOut_8_node23(int value)
 {
-return addWrite(ID_digOUT4_node23, &value);
+return addWrite(ID_DigOut_8_node23, &value);
 }
 
 
-int getStatus_digOUT4_node23()
+int getStatus_DigOut_8_node23()
 {
-return getStatus(ID_digOUT4_node23);
+return getStatus(ID_DigOut_8_node23);
 }
 
 
@@ -9966,39 +9966,39 @@ return getStatus(ID_Life_node24);
 }
 
 
-int doWrite_ConfAi1_node24(u_int16_t value)
+int doWrite_AnInCnf_1_node24(u_int16_t value)
 {
-return doWrite(ID_ConfAi1_node24,  &value);
+return doWrite(ID_AnInCnf_1_node24,  &value);
 }
 
 
-int addWrite_ConfAi1_node24(u_int16_t value)
+int addWrite_AnInCnf_1_node24(u_int16_t value)
 {
-return addWrite(ID_ConfAi1_node24, &value);
+return addWrite(ID_AnInCnf_1_node24, &value);
 }
 
 
-int getStatus_ConfAi1_node24()
+int getStatus_AnInCnf_1_node24()
 {
-return getStatus(ID_ConfAi1_node24);
+return getStatus(ID_AnInCnf_1_node24);
 }
 
 
-int doWrite_ConfAi2_node24(u_int16_t value)
+int doWrite_AnInCnf_2_node24(u_int16_t value)
 {
-return doWrite(ID_ConfAi2_node24,  &value);
+return doWrite(ID_AnInCnf_2_node24,  &value);
 }
 
 
-int addWrite_ConfAi2_node24(u_int16_t value)
+int addWrite_AnInCnf_2_node24(u_int16_t value)
 {
-return addWrite(ID_ConfAi2_node24, &value);
+return addWrite(ID_AnInCnf_2_node24, &value);
 }
 
 
-int getStatus_ConfAi2_node24()
+int getStatus_AnInCnf_2_node24()
 {
-return getStatus(ID_ConfAi2_node24);
+return getStatus(ID_AnInCnf_2_node24);
 }
 
 
@@ -10038,291 +10038,291 @@ return getStatus(ID_ValAi2_node24);
 }
 
 
-int doWrite_Conf1_node24(int value)
+int doWrite_DigDir_1_node24(int value)
 {
-return doWrite(ID_Conf1_node24,  &value);
+return doWrite(ID_DigDir_1_node24,  &value);
 }
 
 
-int addWrite_Conf1_node24(int value)
+int addWrite_DigDir_1_node24(int value)
 {
-return addWrite(ID_Conf1_node24, &value);
+return addWrite(ID_DigDir_1_node24, &value);
 }
 
 
-int getStatus_Conf1_node24()
+int getStatus_DigDir_1_node24()
 {
-return getStatus(ID_Conf1_node24);
+return getStatus(ID_DigDir_1_node24);
 }
 
 
-int doWrite_Conf2_node24(int value)
+int doWrite_DigDir_2_node24(int value)
 {
-return doWrite(ID_Conf2_node24,  &value);
+return doWrite(ID_DigDir_2_node24,  &value);
 }
 
 
-int addWrite_Conf2_node24(int value)
+int addWrite_DigDir_2_node24(int value)
 {
-return addWrite(ID_Conf2_node24, &value);
+return addWrite(ID_DigDir_2_node24, &value);
 }
 
 
-int getStatus_Conf2_node24()
+int getStatus_DigDir_2_node24()
 {
-return getStatus(ID_Conf2_node24);
+return getStatus(ID_DigDir_2_node24);
 }
 
 
-int doWrite_Conf3_node24(int value)
+int doWrite_DigDir_3_node24(int value)
 {
-return doWrite(ID_Conf3_node24,  &value);
+return doWrite(ID_DigDir_3_node24,  &value);
 }
 
 
-int addWrite_Conf3_node24(int value)
+int addWrite_DigDir_3_node24(int value)
 {
-return addWrite(ID_Conf3_node24, &value);
+return addWrite(ID_DigDir_3_node24, &value);
 }
 
 
-int getStatus_Conf3_node24()
+int getStatus_DigDir_3_node24()
 {
-return getStatus(ID_Conf3_node24);
+return getStatus(ID_DigDir_3_node24);
 }
 
 
-int doWrite_Conf4_node24(int value)
+int doWrite_DigDir_4_node24(int value)
 {
-return doWrite(ID_Conf4_node24,  &value);
+return doWrite(ID_DigDir_4_node24,  &value);
 }
 
 
-int addWrite_Conf4_node24(int value)
+int addWrite_DigDir_4_node24(int value)
 {
-return addWrite(ID_Conf4_node24, &value);
+return addWrite(ID_DigDir_4_node24, &value);
 }
 
 
-int getStatus_Conf4_node24()
+int getStatus_DigDir_4_node24()
 {
-return getStatus(ID_Conf4_node24);
+return getStatus(ID_DigDir_4_node24);
 }
 
 
-int doWrite_Conf5_node24(int value)
+int doWrite_DigDir_5_node24(int value)
 {
-return doWrite(ID_Conf5_node24,  &value);
+return doWrite(ID_DigDir_5_node24,  &value);
 }
 
 
-int addWrite_Conf5_node24(int value)
+int addWrite_DigDir_5_node24(int value)
 {
-return addWrite(ID_Conf5_node24, &value);
+return addWrite(ID_DigDir_5_node24, &value);
 }
 
 
-int getStatus_Conf5_node24()
+int getStatus_DigDir_5_node24()
 {
-return getStatus(ID_Conf5_node24);
+return getStatus(ID_DigDir_5_node24);
 }
 
 
-int doWrite_Conf6_node24(int value)
+int doWrite_DigDir_6_node24(int value)
 {
-return doWrite(ID_Conf6_node24,  &value);
+return doWrite(ID_DigDir_6_node24,  &value);
 }
 
 
-int addWrite_Conf6_node24(int value)
+int addWrite_DigDir_6_node24(int value)
 {
-return addWrite(ID_Conf6_node24, &value);
+return addWrite(ID_DigDir_6_node24, &value);
 }
 
 
-int getStatus_Conf6_node24()
+int getStatus_DigDir_6_node24()
 {
-return getStatus(ID_Conf6_node24);
+return getStatus(ID_DigDir_6_node24);
 }
 
 
-int doWrite_Conf7_node24(int value)
+int doWrite_DigDir_7_node24(int value)
 {
-return doWrite(ID_Conf7_node24,  &value);
+return doWrite(ID_DigDir_7_node24,  &value);
 }
 
 
-int addWrite_Conf7_node24(int value)
+int addWrite_DigDir_7_node24(int value)
 {
-return addWrite(ID_Conf7_node24, &value);
+return addWrite(ID_DigDir_7_node24, &value);
 }
 
 
-int getStatus_Conf7_node24()
+int getStatus_DigDir_7_node24()
 {
-return getStatus(ID_Conf7_node24);
+return getStatus(ID_DigDir_7_node24);
 }
 
 
-int doWrite_Conf8_node24(int value)
+int doWrite_DigDir_8_node24(int value)
 {
-return doWrite(ID_Conf8_node24,  &value);
+return doWrite(ID_DigDir_8_node24,  &value);
 }
 
 
-int addWrite_Conf8_node24(int value)
+int addWrite_DigDir_8_node24(int value)
 {
-return addWrite(ID_Conf8_node24, &value);
+return addWrite(ID_DigDir_8_node24, &value);
 }
 
 
-int getStatus_Conf8_node24()
+int getStatus_DigDir_8_node24()
 {
-return getStatus(ID_Conf8_node24);
+return getStatus(ID_DigDir_8_node24);
 }
 
 
-int doWrite_digIN5_node24(int value)
+int doWrite_DigIn_2_node24(int value)
 {
-return doWrite(ID_digIN5_node24,  &value);
+return doWrite(ID_DigIn_2_node24,  &value);
 }
 
 
-int addWrite_digIN5_node24(int value)
+int addWrite_DigIn_2_node24(int value)
 {
-return addWrite(ID_digIN5_node24, &value);
+return addWrite(ID_DigIn_2_node24, &value);
 }
 
 
-int getStatus_digIN5_node24()
+int getStatus_DigIn_2_node24()
 {
-return getStatus(ID_digIN5_node24);
+return getStatus(ID_DigIn_2_node24);
 }
 
 
-int doWrite_digIN6_node24(int value)
+int doWrite_DigIn_3_node24(int value)
 {
-return doWrite(ID_digIN6_node24,  &value);
+return doWrite(ID_DigIn_3_node24,  &value);
 }
 
 
-int addWrite_digIN6_node24(int value)
+int addWrite_DigIn_3_node24(int value)
 {
-return addWrite(ID_digIN6_node24, &value);
+return addWrite(ID_DigIn_3_node24, &value);
 }
 
 
-int getStatus_digIN6_node24()
+int getStatus_DigIn_3_node24()
 {
-return getStatus(ID_digIN6_node24);
+return getStatus(ID_DigIn_3_node24);
 }
 
 
-int doWrite_digIN7_node24(int value)
+int doWrite_DigIn_6_node24(int value)
 {
-return doWrite(ID_digIN7_node24,  &value);
+return doWrite(ID_DigIn_6_node24,  &value);
 }
 
 
-int addWrite_digIN7_node24(int value)
+int addWrite_DigIn_6_node24(int value)
 {
-return addWrite(ID_digIN7_node24, &value);
+return addWrite(ID_DigIn_6_node24, &value);
 }
 
 
-int getStatus_digIN7_node24()
+int getStatus_DigIn_6_node24()
 {
-return getStatus(ID_digIN7_node24);
+return getStatus(ID_DigIn_6_node24);
 }
 
 
-int doWrite_digIN8_node24(int value)
+int doWrite_DigIn_7_node24(int value)
 {
-return doWrite(ID_digIN8_node24,  &value);
+return doWrite(ID_DigIn_7_node24,  &value);
 }
 
 
-int addWrite_digIN8_node24(int value)
+int addWrite_DigIn_7_node24(int value)
 {
-return addWrite(ID_digIN8_node24, &value);
+return addWrite(ID_DigIn_7_node24, &value);
 }
 
 
-int getStatus_digIN8_node24()
+int getStatus_DigIn_7_node24()
 {
-return getStatus(ID_digIN8_node24);
+return getStatus(ID_DigIn_7_node24);
 }
 
 
-int doWrite_digOUT1_node24(int value)
+int doWrite_DigOut_1_node24(int value)
 {
-return doWrite(ID_digOUT1_node24,  &value);
+return doWrite(ID_DigOut_1_node24,  &value);
 }
 
 
-int addWrite_digOUT1_node24(int value)
+int addWrite_DigOut_1_node24(int value)
 {
-return addWrite(ID_digOUT1_node24, &value);
+return addWrite(ID_DigOut_1_node24, &value);
 }
 
 
-int getStatus_digOUT1_node24()
+int getStatus_DigOut_1_node24()
 {
-return getStatus(ID_digOUT1_node24);
+return getStatus(ID_DigOut_1_node24);
 }
 
 
-int doWrite_digOUT2_node24(int value)
+int doWrite_DigOut_4_node24(int value)
 {
-return doWrite(ID_digOUT2_node24,  &value);
+return doWrite(ID_DigOut_4_node24,  &value);
 }
 
 
-int addWrite_digOUT2_node24(int value)
+int addWrite_DigOut_4_node24(int value)
 {
-return addWrite(ID_digOUT2_node24, &value);
+return addWrite(ID_DigOut_4_node24, &value);
 }
 
 
-int getStatus_digOUT2_node24()
+int getStatus_DigOut_4_node24()
 {
-return getStatus(ID_digOUT2_node24);
+return getStatus(ID_DigOut_4_node24);
 }
 
 
-int doWrite_digOUT3_node24(int value)
+int doWrite_DigOut_5_node24(int value)
 {
-return doWrite(ID_digOUT3_node24,  &value);
+return doWrite(ID_DigOut_5_node24,  &value);
 }
 
 
-int addWrite_digOUT3_node24(int value)
+int addWrite_DigOut_5_node24(int value)
 {
-return addWrite(ID_digOUT3_node24, &value);
+return addWrite(ID_DigOut_5_node24, &value);
 }
 
 
-int getStatus_digOUT3_node24()
+int getStatus_DigOut_5_node24()
 {
-return getStatus(ID_digOUT3_node24);
+return getStatus(ID_DigOut_5_node24);
 }
 
 
-int doWrite_digOUT4_node24(int value)
+int doWrite_DigOut_8_node24(int value)
 {
-return doWrite(ID_digOUT4_node24,  &value);
+return doWrite(ID_DigOut_8_node24,  &value);
 }
 
 
-int addWrite_digOUT4_node24(int value)
+int addWrite_DigOut_8_node24(int value)
 {
-return addWrite(ID_digOUT4_node24, &value);
+return addWrite(ID_DigOut_8_node24, &value);
 }
 
 
-int getStatus_digOUT4_node24()
+int getStatus_DigOut_8_node24()
 {
-return getStatus(ID_digOUT4_node24);
+return getStatus(ID_DigOut_8_node24);
 }
 
 
@@ -15389,532 +15389,532 @@ int update_all(void)
 int retval = 0;
 retval += readFromDb(ID_Addr_node01, &Addr_node01);
 retval += readFromDb(ID_Life_node01, &Life_node01);
-retval += readFromDb(ID_ConfAi1_node01, &ConfAi1_node01);
-retval += readFromDb(ID_ConfAi2_node01, &ConfAi2_node01);
+retval += readFromDb(ID_AnInCnf_1_node01, &AnInCnf_1_node01);
+retval += readFromDb(ID_AnInCnf_2_node01, &AnInCnf_2_node01);
 retval += readFromDb(ID_ValAi1_node01, &ValAi1_node01);
 retval += readFromDb(ID_ValAi2_node01, &ValAi2_node01);
-retval += readFromDb(ID_Conf1_node01, &Conf1_node01);
-retval += readFromDb(ID_Conf2_node01, &Conf2_node01);
-retval += readFromDb(ID_Conf3_node01, &Conf3_node01);
-retval += readFromDb(ID_Conf4_node01, &Conf4_node01);
-retval += readFromDb(ID_Conf5_node01, &Conf5_node01);
-retval += readFromDb(ID_Conf6_node01, &Conf6_node01);
-retval += readFromDb(ID_Conf7_node01, &Conf7_node01);
-retval += readFromDb(ID_Conf8_node01, &Conf8_node01);
-retval += readFromDb(ID_digIN5_node01, &digIN5_node01);
-retval += readFromDb(ID_digIN6_node01, &digIN6_node01);
-retval += readFromDb(ID_digIN7_node01, &digIN7_node01);
-retval += readFromDb(ID_digIN8_node01, &digIN8_node01);
-retval += readFromDb(ID_digOUT1_node01, &digOUT1_node01);
-retval += readFromDb(ID_digOUT2_node01, &digOUT2_node01);
-retval += readFromDb(ID_digOUT3_node01, &digOUT3_node01);
-retval += readFromDb(ID_digOUT4_node01, &digOUT4_node01);
+retval += readFromDb(ID_DigDir_1_node01, &DigDir_1_node01);
+retval += readFromDb(ID_DigDir_2_node01, &DigDir_2_node01);
+retval += readFromDb(ID_DigDir_3_node01, &DigDir_3_node01);
+retval += readFromDb(ID_DigDir_4_node01, &DigDir_4_node01);
+retval += readFromDb(ID_DigDir_5_node01, &DigDir_5_node01);
+retval += readFromDb(ID_DigDir_6_node01, &DigDir_6_node01);
+retval += readFromDb(ID_DigDir_7_node01, &DigDir_7_node01);
+retval += readFromDb(ID_DigDir_8_node01, &DigDir_8_node01);
+retval += readFromDb(ID_DigIn_2_node01, &DigIn_2_node01);
+retval += readFromDb(ID_DigIn_3_node01, &DigIn_3_node01);
+retval += readFromDb(ID_DigIn_6_node01, &DigIn_6_node01);
+retval += readFromDb(ID_DigIn_7_node01, &DigIn_7_node01);
+retval += readFromDb(ID_DigOut_1_node01, &DigOut_1_node01);
+retval += readFromDb(ID_DigOut_4_node01, &DigOut_4_node01);
+retval += readFromDb(ID_DigOut_5_node01, &DigOut_5_node01);
+retval += readFromDb(ID_DigOut_8_node01, &DigOut_8_node01);
 retval += readFromDb(ID_Addr_node02, &Addr_node02);
 retval += readFromDb(ID_Life_node02, &Life_node02);
-retval += readFromDb(ID_ConfAi1_node02, &ConfAi1_node02);
-retval += readFromDb(ID_ConfAi2_node02, &ConfAi2_node02);
+retval += readFromDb(ID_AnInCnf_1_node02, &AnInCnf_1_node02);
+retval += readFromDb(ID_AnInCnf_2_node02, &AnInCnf_2_node02);
 retval += readFromDb(ID_ValAi1_node02, &ValAi1_node02);
 retval += readFromDb(ID_ValAi2_node02, &ValAi2_node02);
-retval += readFromDb(ID_Conf1_node02, &Conf1_node02);
-retval += readFromDb(ID_Conf2_node02, &Conf2_node02);
-retval += readFromDb(ID_Conf3_node02, &Conf3_node02);
-retval += readFromDb(ID_Conf4_node02, &Conf4_node02);
-retval += readFromDb(ID_Conf5_node02, &Conf5_node02);
-retval += readFromDb(ID_Conf6_node02, &Conf6_node02);
-retval += readFromDb(ID_Conf7_node02, &Conf7_node02);
-retval += readFromDb(ID_Conf8_node02, &Conf8_node02);
-retval += readFromDb(ID_digIN5_node02, &digIN5_node02);
-retval += readFromDb(ID_digIN6_node02, &digIN6_node02);
-retval += readFromDb(ID_digIN7_node02, &digIN7_node02);
-retval += readFromDb(ID_digIN8_node02, &digIN8_node02);
-retval += readFromDb(ID_digOUT1_node02, &digOUT1_node02);
-retval += readFromDb(ID_digOUT2_node02, &digOUT2_node02);
-retval += readFromDb(ID_digOUT3_node02, &digOUT3_node02);
-retval += readFromDb(ID_digOUT4_node02, &digOUT4_node02);
+retval += readFromDb(ID_DigDir_1_node02, &DigDir_1_node02);
+retval += readFromDb(ID_DigDir_2_node02, &DigDir_2_node02);
+retval += readFromDb(ID_DigDir_3_node02, &DigDir_3_node02);
+retval += readFromDb(ID_DigDir_4_node02, &DigDir_4_node02);
+retval += readFromDb(ID_DigDir_5_node02, &DigDir_5_node02);
+retval += readFromDb(ID_DigDir_6_node02, &DigDir_6_node02);
+retval += readFromDb(ID_DigDir_7_node02, &DigDir_7_node02);
+retval += readFromDb(ID_DigDir_8_node02, &DigDir_8_node02);
+retval += readFromDb(ID_DigIn_2_node02, &DigIn_2_node02);
+retval += readFromDb(ID_DigIn_3_node02, &DigIn_3_node02);
+retval += readFromDb(ID_DigIn_6_node02, &DigIn_6_node02);
+retval += readFromDb(ID_DigIn_7_node02, &DigIn_7_node02);
+retval += readFromDb(ID_DigOut_1_node02, &DigOut_1_node02);
+retval += readFromDb(ID_DigOut_4_node02, &DigOut_4_node02);
+retval += readFromDb(ID_DigOut_5_node02, &DigOut_5_node02);
+retval += readFromDb(ID_DigOut_8_node02, &DigOut_8_node02);
 retval += readFromDb(ID_Addr_node03, &Addr_node03);
 retval += readFromDb(ID_Life_node03, &Life_node03);
-retval += readFromDb(ID_ConfAi1_node03, &ConfAi1_node03);
-retval += readFromDb(ID_ConfAi2_node03, &ConfAi2_node03);
+retval += readFromDb(ID_AnInCnf_1_node03, &AnInCnf_1_node03);
+retval += readFromDb(ID_AnInCnf_2_node03, &AnInCnf_2_node03);
 retval += readFromDb(ID_ValAi1_node03, &ValAi1_node03);
 retval += readFromDb(ID_ValAi2_node03, &ValAi2_node03);
-retval += readFromDb(ID_Conf1_node03, &Conf1_node03);
-retval += readFromDb(ID_Conf2_node03, &Conf2_node03);
-retval += readFromDb(ID_Conf3_node03, &Conf3_node03);
-retval += readFromDb(ID_Conf4_node03, &Conf4_node03);
-retval += readFromDb(ID_Conf5_node03, &Conf5_node03);
-retval += readFromDb(ID_Conf6_node03, &Conf6_node03);
-retval += readFromDb(ID_Conf7_node03, &Conf7_node03);
-retval += readFromDb(ID_Conf8_node03, &Conf8_node03);
-retval += readFromDb(ID_digIN5_node03, &digIN5_node03);
-retval += readFromDb(ID_digIN6_node03, &digIN6_node03);
-retval += readFromDb(ID_digIN7_node03, &digIN7_node03);
-retval += readFromDb(ID_digIN8_node03, &digIN8_node03);
-retval += readFromDb(ID_digOUT1_node03, &digOUT1_node03);
-retval += readFromDb(ID_digOUT2_node03, &digOUT2_node03);
-retval += readFromDb(ID_digOUT3_node03, &digOUT3_node03);
-retval += readFromDb(ID_digOUT4_node03, &digOUT4_node03);
+retval += readFromDb(ID_DigDir_1_node03, &DigDir_1_node03);
+retval += readFromDb(ID_DigDir_2_node03, &DigDir_2_node03);
+retval += readFromDb(ID_DigDir_3_node03, &DigDir_3_node03);
+retval += readFromDb(ID_DigDir_4_node03, &DigDir_4_node03);
+retval += readFromDb(ID_DigDir_5_node03, &DigDir_5_node03);
+retval += readFromDb(ID_DigDir_6_node03, &DigDir_6_node03);
+retval += readFromDb(ID_DigDir_7_node03, &DigDir_7_node03);
+retval += readFromDb(ID_DigDir_8_node03, &DigDir_8_node03);
+retval += readFromDb(ID_DigIn_2_node03, &DigIn_2_node03);
+retval += readFromDb(ID_DigIn_3_node03, &DigIn_3_node03);
+retval += readFromDb(ID_DigIn_6_node03, &DigIn_6_node03);
+retval += readFromDb(ID_DigIn_7_node03, &DigIn_7_node03);
+retval += readFromDb(ID_DigOut_1_node03, &DigOut_1_node03);
+retval += readFromDb(ID_DigOut_4_node03, &DigOut_4_node03);
+retval += readFromDb(ID_DigOut_5_node03, &DigOut_5_node03);
+retval += readFromDb(ID_DigOut_8_node03, &DigOut_8_node03);
 retval += readFromDb(ID_Addr_node04, &Addr_node04);
 retval += readFromDb(ID_Life_node04, &Life_node04);
-retval += readFromDb(ID_ConfAi1_node04, &ConfAi1_node04);
-retval += readFromDb(ID_ConfAi2_node04, &ConfAi2_node04);
+retval += readFromDb(ID_AnInCnf_1_node04, &AnInCnf_1_node04);
+retval += readFromDb(ID_AnInCnf_2_node04, &AnInCnf_2_node04);
 retval += readFromDb(ID_ValAi1_node04, &ValAi1_node04);
 retval += readFromDb(ID_ValAi2_node04, &ValAi2_node04);
-retval += readFromDb(ID_Conf1_node04, &Conf1_node04);
-retval += readFromDb(ID_Conf2_node04, &Conf2_node04);
-retval += readFromDb(ID_Conf3_node04, &Conf3_node04);
-retval += readFromDb(ID_Conf4_node04, &Conf4_node04);
-retval += readFromDb(ID_Conf5_node04, &Conf5_node04);
-retval += readFromDb(ID_Conf6_node04, &Conf6_node04);
-retval += readFromDb(ID_Conf7_node04, &Conf7_node04);
-retval += readFromDb(ID_Conf8_node04, &Conf8_node04);
-retval += readFromDb(ID_digIN5_node04, &digIN5_node04);
-retval += readFromDb(ID_digIN6_node04, &digIN6_node04);
-retval += readFromDb(ID_digIN7_node04, &digIN7_node04);
-retval += readFromDb(ID_digIN8_node04, &digIN8_node04);
-retval += readFromDb(ID_digOUT1_node04, &digOUT1_node04);
-retval += readFromDb(ID_digOUT2_node04, &digOUT2_node04);
-retval += readFromDb(ID_digOUT3_node04, &digOUT3_node04);
-retval += readFromDb(ID_digOUT4_node04, &digOUT4_node04);
+retval += readFromDb(ID_DigDir_1_node04, &DigDir_1_node04);
+retval += readFromDb(ID_DigDir_2_node04, &DigDir_2_node04);
+retval += readFromDb(ID_DigDir_3_node04, &DigDir_3_node04);
+retval += readFromDb(ID_DigDir_4_node04, &DigDir_4_node04);
+retval += readFromDb(ID_DigDir_5_node04, &DigDir_5_node04);
+retval += readFromDb(ID_DigDir_6_node04, &DigDir_6_node04);
+retval += readFromDb(ID_DigDir_7_node04, &DigDir_7_node04);
+retval += readFromDb(ID_DigDir_8_node04, &DigDir_8_node04);
+retval += readFromDb(ID_DigIn_2_node04, &DigIn_2_node04);
+retval += readFromDb(ID_DigIn_3_node04, &DigIn_3_node04);
+retval += readFromDb(ID_DigIn_6_node04, &DigIn_6_node04);
+retval += readFromDb(ID_DigIn_7_node04, &DigIn_7_node04);
+retval += readFromDb(ID_DigOut_1_node04, &DigOut_1_node04);
+retval += readFromDb(ID_DigOut_4_node04, &DigOut_4_node04);
+retval += readFromDb(ID_DigOut_5_node04, &DigOut_5_node04);
+retval += readFromDb(ID_DigOut_8_node04, &DigOut_8_node04);
 retval += readFromDb(ID_Addr_node05, &Addr_node05);
 retval += readFromDb(ID_Life_node05, &Life_node05);
-retval += readFromDb(ID_ConfAi1_node05, &ConfAi1_node05);
-retval += readFromDb(ID_ConfAi2_node05, &ConfAi2_node05);
+retval += readFromDb(ID_AnInCnf_1_node05, &AnInCnf_1_node05);
+retval += readFromDb(ID_AnInCnf_2_node05, &AnInCnf_2_node05);
 retval += readFromDb(ID_ValAi1_node05, &ValAi1_node05);
 retval += readFromDb(ID_ValAi2_node05, &ValAi2_node05);
-retval += readFromDb(ID_Conf1_node05, &Conf1_node05);
-retval += readFromDb(ID_Conf2_node05, &Conf2_node05);
-retval += readFromDb(ID_Conf3_node05, &Conf3_node05);
-retval += readFromDb(ID_Conf4_node05, &Conf4_node05);
-retval += readFromDb(ID_Conf5_node05, &Conf5_node05);
-retval += readFromDb(ID_Conf6_node05, &Conf6_node05);
-retval += readFromDb(ID_Conf7_node05, &Conf7_node05);
-retval += readFromDb(ID_Conf8_node05, &Conf8_node05);
-retval += readFromDb(ID_digIN5_node05, &digIN5_node05);
-retval += readFromDb(ID_digIN6_node05, &digIN6_node05);
-retval += readFromDb(ID_digIN7_node05, &digIN7_node05);
-retval += readFromDb(ID_digIN8_node05, &digIN8_node05);
-retval += readFromDb(ID_digOUT1_node05, &digOUT1_node05);
-retval += readFromDb(ID_digOUT2_node05, &digOUT2_node05);
-retval += readFromDb(ID_digOUT3_node05, &digOUT3_node05);
-retval += readFromDb(ID_digOUT4_node05, &digOUT4_node05);
+retval += readFromDb(ID_DigDir_1_node05, &DigDir_1_node05);
+retval += readFromDb(ID_DigDir_2_node05, &DigDir_2_node05);
+retval += readFromDb(ID_DigDir_3_node05, &DigDir_3_node05);
+retval += readFromDb(ID_DigDir_4_node05, &DigDir_4_node05);
+retval += readFromDb(ID_DigDir_5_node05, &DigDir_5_node05);
+retval += readFromDb(ID_DigDir_6_node05, &DigDir_6_node05);
+retval += readFromDb(ID_DigDir_7_node05, &DigDir_7_node05);
+retval += readFromDb(ID_DigDir_8_node05, &DigDir_8_node05);
+retval += readFromDb(ID_DigIn_2_node05, &DigIn_2_node05);
+retval += readFromDb(ID_DigIn_3_node05, &DigIn_3_node05);
+retval += readFromDb(ID_DigIn_6_node05, &DigIn_6_node05);
+retval += readFromDb(ID_DigIn_7_node05, &DigIn_7_node05);
+retval += readFromDb(ID_DigOut_1_node05, &DigOut_1_node05);
+retval += readFromDb(ID_DigOut_4_node05, &DigOut_4_node05);
+retval += readFromDb(ID_DigOut_5_node05, &DigOut_5_node05);
+retval += readFromDb(ID_DigOut_8_node05, &DigOut_8_node05);
 retval += readFromDb(ID_Addr_node06, &Addr_node06);
 retval += readFromDb(ID_Life_node06, &Life_node06);
-retval += readFromDb(ID_ConfAi1_node06, &ConfAi1_node06);
-retval += readFromDb(ID_ConfAi2_node06, &ConfAi2_node06);
+retval += readFromDb(ID_AnInCnf_1_node06, &AnInCnf_1_node06);
+retval += readFromDb(ID_AnInCnf_2_node06, &AnInCnf_2_node06);
 retval += readFromDb(ID_ValAi1_node06, &ValAi1_node06);
 retval += readFromDb(ID_ValAi2_node06, &ValAi2_node06);
-retval += readFromDb(ID_Conf1_node06, &Conf1_node06);
-retval += readFromDb(ID_Conf2_node06, &Conf2_node06);
-retval += readFromDb(ID_Conf3_node06, &Conf3_node06);
-retval += readFromDb(ID_Conf4_node06, &Conf4_node06);
-retval += readFromDb(ID_Conf5_node06, &Conf5_node06);
-retval += readFromDb(ID_Conf6_node06, &Conf6_node06);
-retval += readFromDb(ID_Conf7_node06, &Conf7_node06);
-retval += readFromDb(ID_Conf8_node06, &Conf8_node06);
-retval += readFromDb(ID_digIN5_node06, &digIN5_node06);
-retval += readFromDb(ID_digIN6_node06, &digIN6_node06);
-retval += readFromDb(ID_digIN7_node06, &digIN7_node06);
-retval += readFromDb(ID_digIN8_node06, &digIN8_node06);
-retval += readFromDb(ID_digOUT1_node06, &digOUT1_node06);
-retval += readFromDb(ID_digOUT2_node06, &digOUT2_node06);
-retval += readFromDb(ID_digOUT3_node06, &digOUT3_node06);
-retval += readFromDb(ID_digOUT4_node06, &digOUT4_node06);
+retval += readFromDb(ID_DigDir_1_node06, &DigDir_1_node06);
+retval += readFromDb(ID_DigDir_2_node06, &DigDir_2_node06);
+retval += readFromDb(ID_DigDir_3_node06, &DigDir_3_node06);
+retval += readFromDb(ID_DigDir_4_node06, &DigDir_4_node06);
+retval += readFromDb(ID_DigDir_5_node06, &DigDir_5_node06);
+retval += readFromDb(ID_DigDir_6_node06, &DigDir_6_node06);
+retval += readFromDb(ID_DigDir_7_node06, &DigDir_7_node06);
+retval += readFromDb(ID_DigDir_8_node06, &DigDir_8_node06);
+retval += readFromDb(ID_DigIn_2_node06, &DigIn_2_node06);
+retval += readFromDb(ID_DigIn_3_node06, &DigIn_3_node06);
+retval += readFromDb(ID_DigIn_6_node06, &DigIn_6_node06);
+retval += readFromDb(ID_DigIn_7_node06, &DigIn_7_node06);
+retval += readFromDb(ID_DigOut_1_node06, &DigOut_1_node06);
+retval += readFromDb(ID_DigOut_4_node06, &DigOut_4_node06);
+retval += readFromDb(ID_DigOut_5_node06, &DigOut_5_node06);
+retval += readFromDb(ID_DigOut_8_node06, &DigOut_8_node06);
 retval += readFromDb(ID_Addr_node07, &Addr_node07);
 retval += readFromDb(ID_Life_node07, &Life_node07);
-retval += readFromDb(ID_ConfAi1_node07, &ConfAi1_node07);
-retval += readFromDb(ID_ConfAi2_node07, &ConfAi2_node07);
+retval += readFromDb(ID_AnInCnf_1_node07, &AnInCnf_1_node07);
+retval += readFromDb(ID_AnInCnf_2_node07, &AnInCnf_2_node07);
 retval += readFromDb(ID_ValAi1_node07, &ValAi1_node07);
 retval += readFromDb(ID_ValAi2_node07, &ValAi2_node07);
-retval += readFromDb(ID_Conf1_node07, &Conf1_node07);
-retval += readFromDb(ID_Conf2_node07, &Conf2_node07);
-retval += readFromDb(ID_Conf3_node07, &Conf3_node07);
-retval += readFromDb(ID_Conf4_node07, &Conf4_node07);
-retval += readFromDb(ID_Conf5_node07, &Conf5_node07);
-retval += readFromDb(ID_Conf6_node07, &Conf6_node07);
-retval += readFromDb(ID_Conf7_node07, &Conf7_node07);
-retval += readFromDb(ID_Conf8_node07, &Conf8_node07);
-retval += readFromDb(ID_digIN5_node07, &digIN5_node07);
-retval += readFromDb(ID_digIN6_node07, &digIN6_node07);
-retval += readFromDb(ID_digIN7_node07, &digIN7_node07);
-retval += readFromDb(ID_digIN8_node07, &digIN8_node07);
-retval += readFromDb(ID_digOUT1_node07, &digOUT1_node07);
-retval += readFromDb(ID_digOUT2_node07, &digOUT2_node07);
-retval += readFromDb(ID_digOUT3_node07, &digOUT3_node07);
-retval += readFromDb(ID_digOUT4_node07, &digOUT4_node07);
+retval += readFromDb(ID_DigDir_1_node07, &DigDir_1_node07);
+retval += readFromDb(ID_DigDir_2_node07, &DigDir_2_node07);
+retval += readFromDb(ID_DigDir_3_node07, &DigDir_3_node07);
+retval += readFromDb(ID_DigDir_4_node07, &DigDir_4_node07);
+retval += readFromDb(ID_DigDir_5_node07, &DigDir_5_node07);
+retval += readFromDb(ID_DigDir_6_node07, &DigDir_6_node07);
+retval += readFromDb(ID_DigDir_7_node07, &DigDir_7_node07);
+retval += readFromDb(ID_DigDir_8_node07, &DigDir_8_node07);
+retval += readFromDb(ID_DigIn_2_node07, &DigIn_2_node07);
+retval += readFromDb(ID_DigIn_3_node07, &DigIn_3_node07);
+retval += readFromDb(ID_DigIn_6_node07, &DigIn_6_node07);
+retval += readFromDb(ID_DigIn_7_node07, &DigIn_7_node07);
+retval += readFromDb(ID_DigOut_1_node07, &DigOut_1_node07);
+retval += readFromDb(ID_DigOut_4_node07, &DigOut_4_node07);
+retval += readFromDb(ID_DigOut_5_node07, &DigOut_5_node07);
+retval += readFromDb(ID_DigOut_8_node07, &DigOut_8_node07);
 retval += readFromDb(ID_Addr_node08, &Addr_node08);
 retval += readFromDb(ID_Life_node08, &Life_node08);
-retval += readFromDb(ID_ConfAi1_node08, &ConfAi1_node08);
-retval += readFromDb(ID_ConfAi2_node08, &ConfAi2_node08);
+retval += readFromDb(ID_AnInCnf_1_node08, &AnInCnf_1_node08);
+retval += readFromDb(ID_AnInCnf_2_node08, &AnInCnf_2_node08);
 retval += readFromDb(ID_ValAi1_node08, &ValAi1_node08);
 retval += readFromDb(ID_ValAi2_node08, &ValAi2_node08);
-retval += readFromDb(ID_Conf1_node08, &Conf1_node08);
-retval += readFromDb(ID_Conf2_node08, &Conf2_node08);
-retval += readFromDb(ID_Conf3_node08, &Conf3_node08);
-retval += readFromDb(ID_Conf4_node08, &Conf4_node08);
-retval += readFromDb(ID_Conf5_node08, &Conf5_node08);
-retval += readFromDb(ID_Conf6_node08, &Conf6_node08);
-retval += readFromDb(ID_Conf7_node08, &Conf7_node08);
-retval += readFromDb(ID_Conf8_node08, &Conf8_node08);
-retval += readFromDb(ID_digIN5_node08, &digIN5_node08);
-retval += readFromDb(ID_digIN6_node08, &digIN6_node08);
-retval += readFromDb(ID_digIN7_node08, &digIN7_node08);
-retval += readFromDb(ID_digIN8_node08, &digIN8_node08);
-retval += readFromDb(ID_digOUT1_node08, &digOUT1_node08);
-retval += readFromDb(ID_digOUT2_node08, &digOUT2_node08);
-retval += readFromDb(ID_digOUT3_node08, &digOUT3_node08);
-retval += readFromDb(ID_digOUT4_node08, &digOUT4_node08);
+retval += readFromDb(ID_DigDir_1_node08, &DigDir_1_node08);
+retval += readFromDb(ID_DigDir_2_node08, &DigDir_2_node08);
+retval += readFromDb(ID_DigDir_3_node08, &DigDir_3_node08);
+retval += readFromDb(ID_DigDir_4_node08, &DigDir_4_node08);
+retval += readFromDb(ID_DigDir_5_node08, &DigDir_5_node08);
+retval += readFromDb(ID_DigDir_6_node08, &DigDir_6_node08);
+retval += readFromDb(ID_DigDir_7_node08, &DigDir_7_node08);
+retval += readFromDb(ID_DigDir_8_node08, &DigDir_8_node08);
+retval += readFromDb(ID_DigIn_2_node08, &DigIn_2_node08);
+retval += readFromDb(ID_DigIn_3_node08, &DigIn_3_node08);
+retval += readFromDb(ID_DigIn_6_node08, &DigIn_6_node08);
+retval += readFromDb(ID_DigIn_7_node08, &DigIn_7_node08);
+retval += readFromDb(ID_DigOut_1_node08, &DigOut_1_node08);
+retval += readFromDb(ID_DigOut_4_node08, &DigOut_4_node08);
+retval += readFromDb(ID_DigOut_5_node08, &DigOut_5_node08);
+retval += readFromDb(ID_DigOut_8_node08, &DigOut_8_node08);
 retval += readFromDb(ID_Addr_node09, &Addr_node09);
 retval += readFromDb(ID_Life_node09, &Life_node09);
-retval += readFromDb(ID_ConfAi1_node09, &ConfAi1_node09);
-retval += readFromDb(ID_ConfAi2_node09, &ConfAi2_node09);
+retval += readFromDb(ID_AnInCnf_1_node09, &AnInCnf_1_node09);
+retval += readFromDb(ID_AnInCnf_2_node09, &AnInCnf_2_node09);
 retval += readFromDb(ID_ValAi1_node09, &ValAi1_node09);
 retval += readFromDb(ID_ValAi2_node09, &ValAi2_node09);
-retval += readFromDb(ID_Conf1_node09, &Conf1_node09);
-retval += readFromDb(ID_Conf2_node09, &Conf2_node09);
-retval += readFromDb(ID_Conf3_node09, &Conf3_node09);
-retval += readFromDb(ID_Conf4_node09, &Conf4_node09);
-retval += readFromDb(ID_Conf5_node09, &Conf5_node09);
-retval += readFromDb(ID_Conf6_node09, &Conf6_node09);
-retval += readFromDb(ID_Conf7_node09, &Conf7_node09);
-retval += readFromDb(ID_Conf8_node019, &Conf8_node019);
-retval += readFromDb(ID_digIN5_node09, &digIN5_node09);
-retval += readFromDb(ID_digIN6_node09, &digIN6_node09);
-retval += readFromDb(ID_digIN7_node09, &digIN7_node09);
-retval += readFromDb(ID_digIN8_node09, &digIN8_node09);
-retval += readFromDb(ID_digOUT1_node09, &digOUT1_node09);
-retval += readFromDb(ID_digOUT2_node09, &digOUT2_node09);
-retval += readFromDb(ID_digOUT3_node09, &digOUT3_node09);
-retval += readFromDb(ID_digOUT4_node09, &digOUT4_node09);
+retval += readFromDb(ID_DigDir_1_node09, &DigDir_1_node09);
+retval += readFromDb(ID_DigDir_2_node09, &DigDir_2_node09);
+retval += readFromDb(ID_DigDir_3_node09, &DigDir_3_node09);
+retval += readFromDb(ID_DigDir_4_node09, &DigDir_4_node09);
+retval += readFromDb(ID_DigDir_5_node09, &DigDir_5_node09);
+retval += readFromDb(ID_DigDir_6_node09, &DigDir_6_node09);
+retval += readFromDb(ID_DigDir_7_node09, &DigDir_7_node09);
+retval += readFromDb(ID_DigDir_8_node09, &DigDir_8_node09);
+retval += readFromDb(ID_DigIn_2_node09, &DigIn_2_node09);
+retval += readFromDb(ID_DigIn_3_node09, &DigIn_3_node09);
+retval += readFromDb(ID_DigIn_6_node09, &DigIn_6_node09);
+retval += readFromDb(ID_DigIn_7_node09, &DigIn_7_node09);
+retval += readFromDb(ID_DigOut_1_node09, &DigOut_1_node09);
+retval += readFromDb(ID_DigOut_4_node09, &DigOut_4_node09);
+retval += readFromDb(ID_DigOut_5_node09, &DigOut_5_node09);
+retval += readFromDb(ID_DigOut_8_node09, &DigOut_8_node09);
 retval += readFromDb(ID_Addr_node10, &Addr_node10);
 retval += readFromDb(ID_Life_node10, &Life_node10);
-retval += readFromDb(ID_ConfAi1_node10, &ConfAi1_node10);
-retval += readFromDb(ID_ConfAi2_node10, &ConfAi2_node10);
+retval += readFromDb(ID_AnInCnf_1_node10, &AnInCnf_1_node10);
+retval += readFromDb(ID_AnInCnf_2_node10, &AnInCnf_2_node10);
 retval += readFromDb(ID_ValAi1_node10, &ValAi1_node10);
 retval += readFromDb(ID_ValAi2_node10, &ValAi2_node10);
-retval += readFromDb(ID_Conf1_node10, &Conf1_node10);
-retval += readFromDb(ID_Conf2_node10, &Conf2_node10);
-retval += readFromDb(ID_Conf3_node10, &Conf3_node10);
-retval += readFromDb(ID_Conf4_node10, &Conf4_node10);
-retval += readFromDb(ID_Conf5_node10, &Conf5_node10);
-retval += readFromDb(ID_Conf6_node10, &Conf6_node10);
-retval += readFromDb(ID_Conf7_node10, &Conf7_node10);
-retval += readFromDb(ID_Conf8_node10, &Conf8_node10);
-retval += readFromDb(ID_digIN5_node10, &digIN5_node10);
-retval += readFromDb(ID_digIN6_node10, &digIN6_node10);
-retval += readFromDb(ID_digIN7_node10, &digIN7_node10);
-retval += readFromDb(ID_digIN8_node10, &digIN8_node10);
-retval += readFromDb(ID_digOUT1_node10, &digOUT1_node10);
-retval += readFromDb(ID_digOUT2_node10, &digOUT2_node10);
-retval += readFromDb(ID_digOUT3_node10, &digOUT3_node10);
-retval += readFromDb(ID_digOUT4_node10, &digOUT4_node10);
+retval += readFromDb(ID_DigDir_1_node10, &DigDir_1_node10);
+retval += readFromDb(ID_DigDir_2_node10, &DigDir_2_node10);
+retval += readFromDb(ID_DigDir_3_node10, &DigDir_3_node10);
+retval += readFromDb(ID_DigDir_4_node10, &DigDir_4_node10);
+retval += readFromDb(ID_DigDir_5_node10, &DigDir_5_node10);
+retval += readFromDb(ID_DigDir_6_node10, &DigDir_6_node10);
+retval += readFromDb(ID_DigDir_7_node10, &DigDir_7_node10);
+retval += readFromDb(ID_DigDir_8_node10, &DigDir_8_node10);
+retval += readFromDb(ID_DigIn_2_node10, &DigIn_2_node10);
+retval += readFromDb(ID_DigIn_3_node10, &DigIn_3_node10);
+retval += readFromDb(ID_DigIn_6_node10, &DigIn_6_node10);
+retval += readFromDb(ID_DigIn_7_node10, &DigIn_7_node10);
+retval += readFromDb(ID_DigOut_1_node10, &DigOut_1_node10);
+retval += readFromDb(ID_DigOut_4_node10, &DigOut_4_node10);
+retval += readFromDb(ID_DigOut_5_node10, &DigOut_5_node10);
+retval += readFromDb(ID_DigOut_8_node10, &DigOut_8_node10);
 retval += readFromDb(ID_Addr_node11, &Addr_node11);
 retval += readFromDb(ID_Life_node11, &Life_node11);
-retval += readFromDb(ID_ConfAi1_node11, &ConfAi1_node11);
-retval += readFromDb(ID_ConfAi2_node11, &ConfAi2_node11);
+retval += readFromDb(ID_AnInCnf_1_node11, &AnInCnf_1_node11);
+retval += readFromDb(ID_AnInCnf_2_node11, &AnInCnf_2_node11);
 retval += readFromDb(ID_ValAi1_node11, &ValAi1_node11);
 retval += readFromDb(ID_ValAi2_node11, &ValAi2_node11);
-retval += readFromDb(ID_Conf1_node11, &Conf1_node11);
-retval += readFromDb(ID_Conf2_node11, &Conf2_node11);
-retval += readFromDb(ID_Conf3_node11, &Conf3_node11);
-retval += readFromDb(ID_Conf4_node11, &Conf4_node11);
-retval += readFromDb(ID_Conf5_node11, &Conf5_node11);
-retval += readFromDb(ID_Conf6_node11, &Conf6_node11);
-retval += readFromDb(ID_Conf7_node11, &Conf7_node11);
-retval += readFromDb(ID_Conf8_node11, &Conf8_node11);
-retval += readFromDb(ID_digIN5_node11, &digIN5_node11);
-retval += readFromDb(ID_digIN6_node11, &digIN6_node11);
-retval += readFromDb(ID_digIN7_node11, &digIN7_node11);
-retval += readFromDb(ID_digIN8_node11, &digIN8_node11);
-retval += readFromDb(ID_digOUT1_node11, &digOUT1_node11);
-retval += readFromDb(ID_digOUT2_node11, &digOUT2_node11);
-retval += readFromDb(ID_digOUT3_node11, &digOUT3_node11);
-retval += readFromDb(ID_digOUT4_node11, &digOUT4_node11);
+retval += readFromDb(ID_DigDir_1_node11, &DigDir_1_node11);
+retval += readFromDb(ID_DigDir_2_node11, &DigDir_2_node11);
+retval += readFromDb(ID_DigDir_3_node11, &DigDir_3_node11);
+retval += readFromDb(ID_DigDir_4_node11, &DigDir_4_node11);
+retval += readFromDb(ID_DigDir_5_node11, &DigDir_5_node11);
+retval += readFromDb(ID_DigDir_6_node11, &DigDir_6_node11);
+retval += readFromDb(ID_DigDir_7_node11, &DigDir_7_node11);
+retval += readFromDb(ID_DigDir_8_node11, &DigDir_8_node11);
+retval += readFromDb(ID_DigIn_2_node11, &DigIn_2_node11);
+retval += readFromDb(ID_DigIn_3_node11, &DigIn_3_node11);
+retval += readFromDb(ID_DigIn_6_node11, &DigIn_6_node11);
+retval += readFromDb(ID_DigIn_7_node11, &DigIn_7_node11);
+retval += readFromDb(ID_DigOut_1_node11, &DigOut_1_node11);
+retval += readFromDb(ID_DigOut_4_node11, &DigOut_4_node11);
+retval += readFromDb(ID_DigOut_5_node11, &DigOut_5_node11);
+retval += readFromDb(ID_DigOut_8_node11, &DigOut_8_node11);
 retval += readFromDb(ID_Addr_node12, &Addr_node12);
 retval += readFromDb(ID_Life_node12, &Life_node12);
-retval += readFromDb(ID_ConfAi1_node12, &ConfAi1_node12);
-retval += readFromDb(ID_ConfAi2_node12, &ConfAi2_node12);
+retval += readFromDb(ID_AnInCnf_1_node12, &AnInCnf_1_node12);
+retval += readFromDb(ID_AnInCnf_2_node12, &AnInCnf_2_node12);
 retval += readFromDb(ID_ValAi1_node12, &ValAi1_node12);
 retval += readFromDb(ID_ValAi2_node12, &ValAi2_node12);
-retval += readFromDb(ID_Conf1_node12, &Conf1_node12);
-retval += readFromDb(ID_Conf2_node12, &Conf2_node12);
-retval += readFromDb(ID_Conf3_node12, &Conf3_node12);
-retval += readFromDb(ID_Conf4_node12, &Conf4_node12);
-retval += readFromDb(ID_Conf5_node12, &Conf5_node12);
-retval += readFromDb(ID_Conf6_node12, &Conf6_node12);
-retval += readFromDb(ID_Conf7_node12, &Conf7_node12);
-retval += readFromDb(ID_Conf8_node12, &Conf8_node12);
-retval += readFromDb(ID_digIN5_node12, &digIN5_node12);
-retval += readFromDb(ID_digIN6_node12, &digIN6_node12);
-retval += readFromDb(ID_digIN7_node12, &digIN7_node12);
-retval += readFromDb(ID_digIN8_node12, &digIN8_node12);
-retval += readFromDb(ID_digOUT1_node12, &digOUT1_node12);
-retval += readFromDb(ID_digOUT2_node12, &digOUT2_node12);
-retval += readFromDb(ID_digOUT3_node12, &digOUT3_node12);
-retval += readFromDb(ID_digOUT4_node12, &digOUT4_node12);
+retval += readFromDb(ID_DigDir_1_node12, &DigDir_1_node12);
+retval += readFromDb(ID_DigDir_2_node12, &DigDir_2_node12);
+retval += readFromDb(ID_DigDir_3_node12, &DigDir_3_node12);
+retval += readFromDb(ID_DigDir_4_node12, &DigDir_4_node12);
+retval += readFromDb(ID_DigDir_5_node12, &DigDir_5_node12);
+retval += readFromDb(ID_DigDir_6_node12, &DigDir_6_node12);
+retval += readFromDb(ID_DigDir_7_node12, &DigDir_7_node12);
+retval += readFromDb(ID_DigDir_8_node12, &DigDir_8_node12);
+retval += readFromDb(ID_DigIn_2_node12, &DigIn_2_node12);
+retval += readFromDb(ID_DigIn_3_node12, &DigIn_3_node12);
+retval += readFromDb(ID_DigIn_6_node12, &DigIn_6_node12);
+retval += readFromDb(ID_DigIn_7_node12, &DigIn_7_node12);
+retval += readFromDb(ID_DigOut_1_node12, &DigOut_1_node12);
+retval += readFromDb(ID_DigOut_4_node12, &DigOut_4_node12);
+retval += readFromDb(ID_DigOut_5_node12, &DigOut_5_node12);
+retval += readFromDb(ID_DigOut_8_node12, &DigOut_8_node12);
 retval += readFromDb(ID_Addr_node13, &Addr_node13);
 retval += readFromDb(ID_Life_node13, &Life_node13);
-retval += readFromDb(ID_ConfAi1_node13, &ConfAi1_node13);
-retval += readFromDb(ID_ConfAi2_node13, &ConfAi2_node13);
+retval += readFromDb(ID_AnInCnf_1_node13, &AnInCnf_1_node13);
+retval += readFromDb(ID_AnInCnf_2_node13, &AnInCnf_2_node13);
 retval += readFromDb(ID_ValAi1_node13, &ValAi1_node13);
 retval += readFromDb(ID_ValAi2_node13, &ValAi2_node13);
-retval += readFromDb(ID_Conf1_node13, &Conf1_node13);
-retval += readFromDb(ID_Conf2_node13, &Conf2_node13);
-retval += readFromDb(ID_Conf3_node13, &Conf3_node13);
-retval += readFromDb(ID_Conf4_node13, &Conf4_node13);
-retval += readFromDb(ID_Conf5_node13, &Conf5_node13);
-retval += readFromDb(ID_Conf6_node13, &Conf6_node13);
-retval += readFromDb(ID_Conf7_node13, &Conf7_node13);
-retval += readFromDb(ID_Conf8_node13, &Conf8_node13);
-retval += readFromDb(ID_digIN5_node13, &digIN5_node13);
-retval += readFromDb(ID_digIN6_node13, &digIN6_node13);
-retval += readFromDb(ID_digIN7_node13, &digIN7_node13);
-retval += readFromDb(ID_digIN8_node13, &digIN8_node13);
-retval += readFromDb(ID_digOUT1_node13, &digOUT1_node13);
-retval += readFromDb(ID_digOUT2_node13, &digOUT2_node13);
-retval += readFromDb(ID_digOUT3_node13, &digOUT3_node13);
-retval += readFromDb(ID_digOUT4_node13, &digOUT4_node13);
+retval += readFromDb(ID_DigDir_1_node13, &DigDir_1_node13);
+retval += readFromDb(ID_DigDir_2_node13, &DigDir_2_node13);
+retval += readFromDb(ID_DigDir_3_node13, &DigDir_3_node13);
+retval += readFromDb(ID_DigDir_4_node13, &DigDir_4_node13);
+retval += readFromDb(ID_DigDir_5_node13, &DigDir_5_node13);
+retval += readFromDb(ID_DigDir_6_node13, &DigDir_6_node13);
+retval += readFromDb(ID_DigDir_7_node13, &DigDir_7_node13);
+retval += readFromDb(ID_DigDir_8_node13, &DigDir_8_node13);
+retval += readFromDb(ID_DigIn_2_node13, &DigIn_2_node13);
+retval += readFromDb(ID_DigIn_3_node13, &DigIn_3_node13);
+retval += readFromDb(ID_DigIn_6_node13, &DigIn_6_node13);
+retval += readFromDb(ID_DigIn_7_node13, &DigIn_7_node13);
+retval += readFromDb(ID_DigOut_1_node13, &DigOut_1_node13);
+retval += readFromDb(ID_DigOut_4_node13, &DigOut_4_node13);
+retval += readFromDb(ID_DigOut_5_node13, &DigOut_5_node13);
+retval += readFromDb(ID_DigOut_8_node13, &DigOut_8_node13);
 retval += readFromDb(ID_Addr_node14, &Addr_node14);
 retval += readFromDb(ID_Life_node14, &Life_node14);
-retval += readFromDb(ID_ConfAi1_node14, &ConfAi1_node14);
-retval += readFromDb(ID_ConfAi2_node14, &ConfAi2_node14);
+retval += readFromDb(ID_AnInCnf_1_node14, &AnInCnf_1_node14);
+retval += readFromDb(ID_AnInCnf_2_node14, &AnInCnf_2_node14);
 retval += readFromDb(ID_ValAi1_node14, &ValAi1_node14);
 retval += readFromDb(ID_ValAi2_node14, &ValAi2_node14);
-retval += readFromDb(ID_Conf1_node14, &Conf1_node14);
-retval += readFromDb(ID_Conf2_node14, &Conf2_node14);
-retval += readFromDb(ID_Conf3_node14, &Conf3_node14);
-retval += readFromDb(ID_Conf4_node14, &Conf4_node14);
-retval += readFromDb(ID_Conf5_node14, &Conf5_node14);
-retval += readFromDb(ID_Conf6_node14, &Conf6_node14);
-retval += readFromDb(ID_Conf7_node14, &Conf7_node14);
-retval += readFromDb(ID_Conf8_node14, &Conf8_node14);
-retval += readFromDb(ID_digIN5_node14, &digIN5_node14);
-retval += readFromDb(ID_digIN6_node14, &digIN6_node14);
-retval += readFromDb(ID_digIN7_node14, &digIN7_node14);
-retval += readFromDb(ID_digIN8_node14, &digIN8_node14);
-retval += readFromDb(ID_digOUT1_node14, &digOUT1_node14);
-retval += readFromDb(ID_digOUT2_node14, &digOUT2_node14);
-retval += readFromDb(ID_digOUT3_node14, &digOUT3_node14);
-retval += readFromDb(ID_digOUT4_node14, &digOUT4_node14);
+retval += readFromDb(ID_DigDir_1_node14, &DigDir_1_node14);
+retval += readFromDb(ID_DigDir_2_node14, &DigDir_2_node14);
+retval += readFromDb(ID_DigDir_3_node14, &DigDir_3_node14);
+retval += readFromDb(ID_DigDir_4_node14, &DigDir_4_node14);
+retval += readFromDb(ID_DigDir_5_node14, &DigDir_5_node14);
+retval += readFromDb(ID_DigDir_6_node14, &DigDir_6_node14);
+retval += readFromDb(ID_DigDir_7_node14, &DigDir_7_node14);
+retval += readFromDb(ID_DigDir_8_node14, &DigDir_8_node14);
+retval += readFromDb(ID_DigIn_2_node14, &DigIn_2_node14);
+retval += readFromDb(ID_DigIn_3_node14, &DigIn_3_node14);
+retval += readFromDb(ID_DigIn_6_node14, &DigIn_6_node14);
+retval += readFromDb(ID_DigIn_7_node14, &DigIn_7_node14);
+retval += readFromDb(ID_DigOut_1_node14, &DigOut_1_node14);
+retval += readFromDb(ID_DigOut_4_node14, &DigOut_4_node14);
+retval += readFromDb(ID_DigOut_5_node14, &DigOut_5_node14);
+retval += readFromDb(ID_DigOut_8_node14, &DigOut_8_node14);
 retval += readFromDb(ID_Addr_node15, &Addr_node15);
 retval += readFromDb(ID_Life_node15, &Life_node15);
-retval += readFromDb(ID_ConfAi1_node15, &ConfAi1_node15);
-retval += readFromDb(ID_ConfAi2_node15, &ConfAi2_node15);
+retval += readFromDb(ID_AnInCnf_1_node15, &AnInCnf_1_node15);
+retval += readFromDb(ID_AnInCnf_2_node15, &AnInCnf_2_node15);
 retval += readFromDb(ID_ValAi1_node15, &ValAi1_node15);
 retval += readFromDb(ID_ValAi2_node15, &ValAi2_node15);
-retval += readFromDb(ID_Conf1_node15, &Conf1_node15);
-retval += readFromDb(ID_Conf2_node15, &Conf2_node15);
-retval += readFromDb(ID_Conf3_node15, &Conf3_node15);
-retval += readFromDb(ID_Conf4_node15, &Conf4_node15);
-retval += readFromDb(ID_Conf5_node15, &Conf5_node15);
-retval += readFromDb(ID_Conf6_node15, &Conf6_node15);
-retval += readFromDb(ID_Conf7_node15, &Conf7_node15);
-retval += readFromDb(ID_Conf8_node15, &Conf8_node15);
-retval += readFromDb(ID_digIN5_node15, &digIN5_node15);
-retval += readFromDb(ID_digIN6_node15, &digIN6_node15);
-retval += readFromDb(ID_digIN7_node15, &digIN7_node15);
-retval += readFromDb(ID_digIN8_node15, &digIN8_node15);
-retval += readFromDb(ID_digOUT1_node15, &digOUT1_node15);
-retval += readFromDb(ID_digOUT2_node15, &digOUT2_node15);
-retval += readFromDb(ID_digOUT3_node15, &digOUT3_node15);
-retval += readFromDb(ID_digOUT4_node15, &digOUT4_node15);
+retval += readFromDb(ID_DigDir_1_node15, &DigDir_1_node15);
+retval += readFromDb(ID_DigDir_2_node15, &DigDir_2_node15);
+retval += readFromDb(ID_DigDir_3_node15, &DigDir_3_node15);
+retval += readFromDb(ID_DigDir_4_node15, &DigDir_4_node15);
+retval += readFromDb(ID_DigDir_5_node15, &DigDir_5_node15);
+retval += readFromDb(ID_DigDir_6_node15, &DigDir_6_node15);
+retval += readFromDb(ID_DigDir_7_node15, &DigDir_7_node15);
+retval += readFromDb(ID_DigDir_8_node15, &DigDir_8_node15);
+retval += readFromDb(ID_DigIn_2_node15, &DigIn_2_node15);
+retval += readFromDb(ID_DigIn_3_node15, &DigIn_3_node15);
+retval += readFromDb(ID_DigIn_6_node15, &DigIn_6_node15);
+retval += readFromDb(ID_DigIn_7_node15, &DigIn_7_node15);
+retval += readFromDb(ID_DigOut_1_node15, &DigOut_1_node15);
+retval += readFromDb(ID_DigOut_4_node15, &DigOut_4_node15);
+retval += readFromDb(ID_DigOut_5_node15, &DigOut_5_node15);
+retval += readFromDb(ID_DigOut_8_node15, &DigOut_8_node15);
 retval += readFromDb(ID_Addr_node16, &Addr_node16);
 retval += readFromDb(ID_Life_node16, &Life_node16);
-retval += readFromDb(ID_ConfAi1_node16, &ConfAi1_node16);
-retval += readFromDb(ID_ConfAi2_node16, &ConfAi2_node16);
+retval += readFromDb(ID_AnInCnf_1_node16, &AnInCnf_1_node16);
+retval += readFromDb(ID_AnInCnf_2_node16, &AnInCnf_2_node16);
 retval += readFromDb(ID_ValAi1_node16, &ValAi1_node16);
 retval += readFromDb(ID_ValAi2_node16, &ValAi2_node16);
-retval += readFromDb(ID_Conf1_node16, &Conf1_node16);
-retval += readFromDb(ID_Conf2_node16, &Conf2_node16);
-retval += readFromDb(ID_Conf3_node16, &Conf3_node16);
-retval += readFromDb(ID_Conf4_node16, &Conf4_node16);
-retval += readFromDb(ID_Conf5_node16, &Conf5_node16);
-retval += readFromDb(ID_Conf6_node16, &Conf6_node16);
-retval += readFromDb(ID_Conf7_node16, &Conf7_node16);
-retval += readFromDb(ID_Conf8_node16, &Conf8_node16);
-retval += readFromDb(ID_digIN5_node16, &digIN5_node16);
-retval += readFromDb(ID_digIN6_node16, &digIN6_node16);
-retval += readFromDb(ID_digIN7_node16, &digIN7_node16);
-retval += readFromDb(ID_digIN8_node16, &digIN8_node16);
-retval += readFromDb(ID_digOUT1_node16, &digOUT1_node16);
-retval += readFromDb(ID_digOUT2_node16, &digOUT2_node16);
-retval += readFromDb(ID_digOUT3_node16, &digOUT3_node16);
-retval += readFromDb(ID_digOUT4_node16, &digOUT4_node16);
+retval += readFromDb(ID_DigDir_1_node16, &DigDir_1_node16);
+retval += readFromDb(ID_DigDir_2_node16, &DigDir_2_node16);
+retval += readFromDb(ID_DigDir_3_node16, &DigDir_3_node16);
+retval += readFromDb(ID_DigDir_4_node16, &DigDir_4_node16);
+retval += readFromDb(ID_DigDir_5_node16, &DigDir_5_node16);
+retval += readFromDb(ID_DigDir_6_node16, &DigDir_6_node16);
+retval += readFromDb(ID_DigDir_7_node16, &DigDir_7_node16);
+retval += readFromDb(ID_DigDir_8_node16, &DigDir_8_node16);
+retval += readFromDb(ID_DigIn_2_node16, &DigIn_2_node16);
+retval += readFromDb(ID_DigIn_3_node16, &DigIn_3_node16);
+retval += readFromDb(ID_DigIn_6_node16, &DigIn_6_node16);
+retval += readFromDb(ID_DigIn_7_node16, &DigIn_7_node16);
+retval += readFromDb(ID_DigOut_1_node16, &DigOut_1_node16);
+retval += readFromDb(ID_DigOut_4_node16, &DigOut_4_node16);
+retval += readFromDb(ID_DigOut_5_node16, &DigOut_5_node16);
+retval += readFromDb(ID_DigOut_8_node16, &DigOut_8_node16);
 retval += readFromDb(ID_Addr_node17, &Addr_node17);
 retval += readFromDb(ID_Life_node17, &Life_node17);
-retval += readFromDb(ID_ConfAi1_node17, &ConfAi1_node17);
-retval += readFromDb(ID_ConfAi2_node17, &ConfAi2_node17);
+retval += readFromDb(ID_AnInCnf_1_node17, &AnInCnf_1_node17);
+retval += readFromDb(ID_AnInCnf_2_node17, &AnInCnf_2_node17);
 retval += readFromDb(ID_ValAi1_node17, &ValAi1_node17);
 retval += readFromDb(ID_ValAi2_node17, &ValAi2_node17);
-retval += readFromDb(ID_Conf1_node17, &Conf1_node17);
-retval += readFromDb(ID_Conf2_node17, &Conf2_node17);
-retval += readFromDb(ID_Conf3_node17, &Conf3_node17);
-retval += readFromDb(ID_Conf4_node17, &Conf4_node17);
-retval += readFromDb(ID_Conf5_node17, &Conf5_node17);
-retval += readFromDb(ID_Conf6_node17, &Conf6_node17);
-retval += readFromDb(ID_Conf7_node17, &Conf7_node17);
-retval += readFromDb(ID_Conf8_node17, &Conf8_node17);
-retval += readFromDb(ID_digIN5_node17, &digIN5_node17);
-retval += readFromDb(ID_digIN6_node17, &digIN6_node17);
-retval += readFromDb(ID_digIN7_node17, &digIN7_node17);
-retval += readFromDb(ID_digIN8_node17, &digIN8_node17);
-retval += readFromDb(ID_digOUT1_node17, &digOUT1_node17);
-retval += readFromDb(ID_digOUT2_node17, &digOUT2_node17);
-retval += readFromDb(ID_digOUT3_node17, &digOUT3_node17);
-retval += readFromDb(ID_digOUT4_node17, &digOUT4_node17);
+retval += readFromDb(ID_DigDir_1_node17, &DigDir_1_node17);
+retval += readFromDb(ID_DigDir_2_node17, &DigDir_2_node17);
+retval += readFromDb(ID_DigDir_3_node17, &DigDir_3_node17);
+retval += readFromDb(ID_DigDir_4_node17, &DigDir_4_node17);
+retval += readFromDb(ID_DigDir_5_node17, &DigDir_5_node17);
+retval += readFromDb(ID_DigDir_6_node17, &DigDir_6_node17);
+retval += readFromDb(ID_DigDir_7_node17, &DigDir_7_node17);
+retval += readFromDb(ID_DigDir_8_node17, &DigDir_8_node17);
+retval += readFromDb(ID_DigIn_2_node17, &DigIn_2_node17);
+retval += readFromDb(ID_DigIn_3_node17, &DigIn_3_node17);
+retval += readFromDb(ID_DigIn_6_node17, &DigIn_6_node17);
+retval += readFromDb(ID_DigIn_7_node17, &DigIn_7_node17);
+retval += readFromDb(ID_DigOut_1_node17, &DigOut_1_node17);
+retval += readFromDb(ID_DigOut_4_node17, &DigOut_4_node17);
+retval += readFromDb(ID_DigOut_5_node17, &DigOut_5_node17);
+retval += readFromDb(ID_DigOut_8_node17, &DigOut_8_node17);
 retval += readFromDb(ID_Addr_node18, &Addr_node18);
 retval += readFromDb(ID_Life_node18, &Life_node18);
-retval += readFromDb(ID_ConfAi1_node18, &ConfAi1_node18);
-retval += readFromDb(ID_ConfAi2_node18, &ConfAi2_node18);
+retval += readFromDb(ID_AnInCnf_1_node18, &AnInCnf_1_node18);
+retval += readFromDb(ID_AnInCnf_2_node18, &AnInCnf_2_node18);
 retval += readFromDb(ID_ValAi1_node18, &ValAi1_node18);
 retval += readFromDb(ID_ValAi2_node18, &ValAi2_node18);
-retval += readFromDb(ID_Conf1_node18, &Conf1_node18);
-retval += readFromDb(ID_Conf2_node18, &Conf2_node18);
-retval += readFromDb(ID_Conf3_node18, &Conf3_node18);
-retval += readFromDb(ID_Conf4_node18, &Conf4_node18);
-retval += readFromDb(ID_Conf5_node18, &Conf5_node18);
-retval += readFromDb(ID_Conf6_node18, &Conf6_node18);
-retval += readFromDb(ID_Conf7_node18, &Conf7_node18);
-retval += readFromDb(ID_Conf8_node18, &Conf8_node18);
-retval += readFromDb(ID_digIN5_node18, &digIN5_node18);
-retval += readFromDb(ID_digIN6_node18, &digIN6_node18);
-retval += readFromDb(ID_digIN7_node18, &digIN7_node18);
-retval += readFromDb(ID_digIN8_node18, &digIN8_node18);
-retval += readFromDb(ID_digOUT1_node18, &digOUT1_node18);
-retval += readFromDb(ID_digOUT2_node18, &digOUT2_node18);
-retval += readFromDb(ID_digOUT3_node18, &digOUT3_node18);
-retval += readFromDb(ID_digOUT4_node18, &digOUT4_node18);
+retval += readFromDb(ID_DigDir_1_node18, &DigDir_1_node18);
+retval += readFromDb(ID_DigDir_2_node18, &DigDir_2_node18);
+retval += readFromDb(ID_DigDir_3_node18, &DigDir_3_node18);
+retval += readFromDb(ID_DigDir_4_node18, &DigDir_4_node18);
+retval += readFromDb(ID_DigDir_5_node18, &DigDir_5_node18);
+retval += readFromDb(ID_DigDir_6_node18, &DigDir_6_node18);
+retval += readFromDb(ID_DigDir_7_node18, &DigDir_7_node18);
+retval += readFromDb(ID_DigDir_8_node18, &DigDir_8_node18);
+retval += readFromDb(ID_DigIn_2_node18, &DigIn_2_node18);
+retval += readFromDb(ID_DigIn_3_node18, &DigIn_3_node18);
+retval += readFromDb(ID_DigIn_6_node18, &DigIn_6_node18);
+retval += readFromDb(ID_DigIn_7_node18, &DigIn_7_node18);
+retval += readFromDb(ID_DigOut_1_node18, &DigOut_1_node18);
+retval += readFromDb(ID_DigOut_4_node18, &DigOut_4_node18);
+retval += readFromDb(ID_DigOut_5_node18, &DigOut_5_node18);
+retval += readFromDb(ID_DigOut_8_node18, &DigOut_8_node18);
 retval += readFromDb(ID_Addr_node19, &Addr_node19);
 retval += readFromDb(ID_Life_node19, &Life_node19);
-retval += readFromDb(ID_ConfAi1_node19, &ConfAi1_node19);
-retval += readFromDb(ID_ConfAi2_node19, &ConfAi2_node19);
+retval += readFromDb(ID_AnInCnf_1_node19, &AnInCnf_1_node19);
+retval += readFromDb(ID_AnInCnf_2_node19, &AnInCnf_2_node19);
 retval += readFromDb(ID_ValAi1_node19, &ValAi1_node19);
 retval += readFromDb(ID_ValAi2_node19, &ValAi2_node19);
-retval += readFromDb(ID_Conf1_node19, &Conf1_node19);
-retval += readFromDb(ID_Conf2_node19, &Conf2_node19);
-retval += readFromDb(ID_Conf3_node19, &Conf3_node19);
-retval += readFromDb(ID_Conf4_node19, &Conf4_node19);
-retval += readFromDb(ID_Conf5_node19, &Conf5_node19);
-retval += readFromDb(ID_Conf6_node19, &Conf6_node19);
-retval += readFromDb(ID_Conf7_node19, &Conf7_node19);
-retval += readFromDb(ID_Conf8_node19, &Conf8_node19);
-retval += readFromDb(ID_digIN5_node19, &digIN5_node19);
-retval += readFromDb(ID_digIN6_node19, &digIN6_node19);
-retval += readFromDb(ID_digIN7_node19, &digIN7_node19);
-retval += readFromDb(ID_digIN8_node19, &digIN8_node19);
-retval += readFromDb(ID_digOUT1_node19, &digOUT1_node19);
-retval += readFromDb(ID_digOUT2_node19, &digOUT2_node19);
-retval += readFromDb(ID_digOUT3_node19, &digOUT3_node19);
-retval += readFromDb(ID_digOUT4_node19, &digOUT4_node19);
+retval += readFromDb(ID_DigDir_1_node19, &DigDir_1_node19);
+retval += readFromDb(ID_DigDir_2_node19, &DigDir_2_node19);
+retval += readFromDb(ID_DigDir_3_node19, &DigDir_3_node19);
+retval += readFromDb(ID_DigDir_4_node19, &DigDir_4_node19);
+retval += readFromDb(ID_DigDir_5_node19, &DigDir_5_node19);
+retval += readFromDb(ID_DigDir_6_node19, &DigDir_6_node19);
+retval += readFromDb(ID_DigDir_7_node19, &DigDir_7_node19);
+retval += readFromDb(ID_DigDir_8_node19, &DigDir_8_node19);
+retval += readFromDb(ID_DigIn_2_node19, &DigIn_2_node19);
+retval += readFromDb(ID_DigIn_3_node19, &DigIn_3_node19);
+retval += readFromDb(ID_DigIn_6_node19, &DigIn_6_node19);
+retval += readFromDb(ID_DigIn_7_node19, &DigIn_7_node19);
+retval += readFromDb(ID_DigOut_1_node19, &DigOut_1_node19);
+retval += readFromDb(ID_DigOut_4_node19, &DigOut_4_node19);
+retval += readFromDb(ID_DigOut_5_node19, &DigOut_5_node19);
+retval += readFromDb(ID_DigOut_8_node19, &DigOut_8_node19);
 retval += readFromDb(ID_Addr_node20, &Addr_node20);
 retval += readFromDb(ID_Life_node20, &Life_node20);
-retval += readFromDb(ID_ConfAi1_node20, &ConfAi1_node20);
-retval += readFromDb(ID_ConfAi2_node20, &ConfAi2_node20);
+retval += readFromDb(ID_AnInCnf_1_node20, &AnInCnf_1_node20);
+retval += readFromDb(ID_AnInCnf_2_node20, &AnInCnf_2_node20);
 retval += readFromDb(ID_ValAi1_node20, &ValAi1_node20);
 retval += readFromDb(ID_ValAi2_node20, &ValAi2_node20);
-retval += readFromDb(ID_Conf1_node20, &Conf1_node20);
-retval += readFromDb(ID_Conf2_node20, &Conf2_node20);
-retval += readFromDb(ID_Conf3_node20, &Conf3_node20);
-retval += readFromDb(ID_Conf4_node20, &Conf4_node20);
-retval += readFromDb(ID_Conf5_node20, &Conf5_node20);
-retval += readFromDb(ID_Conf6_node20, &Conf6_node20);
-retval += readFromDb(ID_Conf7_node20, &Conf7_node20);
-retval += readFromDb(ID_Conf8_node20, &Conf8_node20);
-retval += readFromDb(ID_digIN5_node20, &digIN5_node20);
-retval += readFromDb(ID_digIN6_node20, &digIN6_node20);
-retval += readFromDb(ID_digIN7_node20, &digIN7_node20);
-retval += readFromDb(ID_digIN8_node20, &digIN8_node20);
-retval += readFromDb(ID_digOUT1_node20, &digOUT1_node20);
-retval += readFromDb(ID_digOUT2_node20, &digOUT2_node20);
-retval += readFromDb(ID_digOUT3_node20, &digOUT3_node20);
-retval += readFromDb(ID_digOUT4_node20, &digOUT4_node20);
+retval += readFromDb(ID_DigDir_1_node20, &DigDir_1_node20);
+retval += readFromDb(ID_DigDir_2_node20, &DigDir_2_node20);
+retval += readFromDb(ID_DigDir_3_node20, &DigDir_3_node20);
+retval += readFromDb(ID_DigDir_4_node20, &DigDir_4_node20);
+retval += readFromDb(ID_DigDir_5_node20, &DigDir_5_node20);
+retval += readFromDb(ID_DigDir_6_node20, &DigDir_6_node20);
+retval += readFromDb(ID_DigDir_7_node20, &DigDir_7_node20);
+retval += readFromDb(ID_DigDir_8_node20, &DigDir_8_node20);
+retval += readFromDb(ID_DigIn_2_node20, &DigIn_2_node20);
+retval += readFromDb(ID_DigIn_3_node20, &DigIn_3_node20);
+retval += readFromDb(ID_DigIn_6_node20, &DigIn_6_node20);
+retval += readFromDb(ID_DigIn_7_node20, &DigIn_7_node20);
+retval += readFromDb(ID_DigOut_1_node20, &DigOut_1_node20);
+retval += readFromDb(ID_DigOut_4_node20, &DigOut_4_node20);
+retval += readFromDb(ID_DigOut_5_node20, &DigOut_5_node20);
+retval += readFromDb(ID_DigOut_8_node20, &DigOut_8_node20);
 retval += readFromDb(ID_Addr_node21, &Addr_node21);
 retval += readFromDb(ID_Life_node21, &Life_node21);
-retval += readFromDb(ID_ConfAi1_node21, &ConfAi1_node21);
-retval += readFromDb(ID_ConfAi2_node21, &ConfAi2_node21);
+retval += readFromDb(ID_AnInCnf_1_node21, &AnInCnf_1_node21);
+retval += readFromDb(ID_AnInCnf_2_node21, &AnInCnf_2_node21);
 retval += readFromDb(ID_ValAi1_node21, &ValAi1_node21);
 retval += readFromDb(ID_ValAi2_node21, &ValAi2_node21);
-retval += readFromDb(ID_Conf1_node21, &Conf1_node21);
-retval += readFromDb(ID_Conf2_node21, &Conf2_node21);
-retval += readFromDb(ID_Conf3_node21, &Conf3_node21);
-retval += readFromDb(ID_Conf4_node21, &Conf4_node21);
-retval += readFromDb(ID_Conf5_node21, &Conf5_node21);
-retval += readFromDb(ID_Conf6_node21, &Conf6_node21);
-retval += readFromDb(ID_Conf7_node21, &Conf7_node21);
-retval += readFromDb(ID_Conf8_node21, &Conf8_node21);
-retval += readFromDb(ID_digIN5_node21, &digIN5_node21);
-retval += readFromDb(ID_digIN6_node21, &digIN6_node21);
-retval += readFromDb(ID_digIN7_node21, &digIN7_node21);
-retval += readFromDb(ID_digIN8_node21, &digIN8_node21);
-retval += readFromDb(ID_digOUT1_node21, &digOUT1_node21);
-retval += readFromDb(ID_digOUT2_node21, &digOUT2_node21);
-retval += readFromDb(ID_digOUT3_node21, &digOUT3_node21);
-retval += readFromDb(ID_digOUT4_node21, &digOUT4_node21);
+retval += readFromDb(ID_DigDir_1_node21, &DigDir_1_node21);
+retval += readFromDb(ID_DigDir_2_node21, &DigDir_2_node21);
+retval += readFromDb(ID_DigDir_3_node21, &DigDir_3_node21);
+retval += readFromDb(ID_DigDir_4_node21, &DigDir_4_node21);
+retval += readFromDb(ID_DigDir_5_node21, &DigDir_5_node21);
+retval += readFromDb(ID_DigDir_6_node21, &DigDir_6_node21);
+retval += readFromDb(ID_DigDir_7_node21, &DigDir_7_node21);
+retval += readFromDb(ID_DigDir_8_node21, &DigDir_8_node21);
+retval += readFromDb(ID_DigIn_2_node21, &DigIn_2_node21);
+retval += readFromDb(ID_DigIn_3_node21, &DigIn_3_node21);
+retval += readFromDb(ID_DigIn_6_node21, &DigIn_6_node21);
+retval += readFromDb(ID_DigIn_7_node21, &DigIn_7_node21);
+retval += readFromDb(ID_DigOut_1_node21, &DigOut_1_node21);
+retval += readFromDb(ID_DigOut_4_node21, &DigOut_4_node21);
+retval += readFromDb(ID_DigOut_5_node21, &DigOut_5_node21);
+retval += readFromDb(ID_DigOut_8_node21, &DigOut_8_node21);
 retval += readFromDb(ID_Addr_node22, &Addr_node22);
 retval += readFromDb(ID_Life_node22, &Life_node22);
-retval += readFromDb(ID_ConfAi1_node22, &ConfAi1_node22);
-retval += readFromDb(ID_ConfAi2_node22, &ConfAi2_node22);
+retval += readFromDb(ID_AnInCnf_1_node22, &AnInCnf_1_node22);
+retval += readFromDb(ID_AnInCnf_2_node22, &AnInCnf_2_node22);
 retval += readFromDb(ID_ValAi1_node22, &ValAi1_node22);
 retval += readFromDb(ID_ValAi2_node22, &ValAi2_node22);
-retval += readFromDb(ID_Conf1_node22, &Conf1_node22);
-retval += readFromDb(ID_Conf2_node22, &Conf2_node22);
-retval += readFromDb(ID_Conf3_node22, &Conf3_node22);
-retval += readFromDb(ID_Conf4_node22, &Conf4_node22);
-retval += readFromDb(ID_Conf5_node22, &Conf5_node22);
-retval += readFromDb(ID_Conf6_node22, &Conf6_node22);
-retval += readFromDb(ID_Conf7_node22, &Conf7_node22);
-retval += readFromDb(ID_Conf8_node22, &Conf8_node22);
-retval += readFromDb(ID_digIN5_node22, &digIN5_node22);
-retval += readFromDb(ID_digIN6_node22, &digIN6_node22);
-retval += readFromDb(ID_digIN7_node22, &digIN7_node22);
-retval += readFromDb(ID_digIN8_node22, &digIN8_node22);
-retval += readFromDb(ID_digOUT1_node22, &digOUT1_node22);
-retval += readFromDb(ID_digOUT2_node22, &digOUT2_node22);
-retval += readFromDb(ID_digOUT3_node22, &digOUT3_node22);
-retval += readFromDb(ID_digOUT4_node22, &digOUT4_node22);
+retval += readFromDb(ID_DigDir_1_node22, &DigDir_1_node22);
+retval += readFromDb(ID_DigDir_2_node22, &DigDir_2_node22);
+retval += readFromDb(ID_DigDir_3_node22, &DigDir_3_node22);
+retval += readFromDb(ID_DigDir_4_node22, &DigDir_4_node22);
+retval += readFromDb(ID_DigDir_5_node22, &DigDir_5_node22);
+retval += readFromDb(ID_DigDir_6_node22, &DigDir_6_node22);
+retval += readFromDb(ID_DigDir_7_node22, &DigDir_7_node22);
+retval += readFromDb(ID_DigDir_8_node22, &DigDir_8_node22);
+retval += readFromDb(ID_DigIn_2_node22, &DigIn_2_node22);
+retval += readFromDb(ID_DigIn_3_node22, &DigIn_3_node22);
+retval += readFromDb(ID_DigIn_6_node22, &DigIn_6_node22);
+retval += readFromDb(ID_DigIn_7_node22, &DigIn_7_node22);
+retval += readFromDb(ID_DigOut_1_node22, &DigOut_1_node22);
+retval += readFromDb(ID_DigOut_4_node22, &DigOut_4_node22);
+retval += readFromDb(ID_DigOut_5_node22, &DigOut_5_node22);
+retval += readFromDb(ID_DigOut_8_node22, &DigOut_8_node22);
 retval += readFromDb(ID_Addr_node23, &Addr_node23);
 retval += readFromDb(ID_Life_node23, &Life_node23);
-retval += readFromDb(ID_ConfAi1_node23, &ConfAi1_node23);
-retval += readFromDb(ID_ConfAi2_node23, &ConfAi2_node23);
+retval += readFromDb(ID_AnInCnf_1_node23, &AnInCnf_1_node23);
+retval += readFromDb(ID_AnInCnf_2_node23, &AnInCnf_2_node23);
 retval += readFromDb(ID_ValAi1_node23, &ValAi1_node23);
 retval += readFromDb(ID_ValAi2_node23, &ValAi2_node23);
-retval += readFromDb(ID_Conf1_node23, &Conf1_node23);
-retval += readFromDb(ID_Conf2_node23, &Conf2_node23);
-retval += readFromDb(ID_Conf3_node23, &Conf3_node23);
-retval += readFromDb(ID_Conf4_node23, &Conf4_node23);
-retval += readFromDb(ID_Conf5_node23, &Conf5_node23);
-retval += readFromDb(ID_Conf6_node23, &Conf6_node23);
-retval += readFromDb(ID_Conf7_node23, &Conf7_node23);
-retval += readFromDb(ID_Conf8_node23, &Conf8_node23);
-retval += readFromDb(ID_digIN5_node23, &digIN5_node23);
-retval += readFromDb(ID_digIN6_node23, &digIN6_node23);
-retval += readFromDb(ID_digIN7_node23, &digIN7_node23);
-retval += readFromDb(ID_digIN8_node23, &digIN8_node23);
-retval += readFromDb(ID_digOUT1_node23, &digOUT1_node23);
-retval += readFromDb(ID_digOUT2_node23, &digOUT2_node23);
-retval += readFromDb(ID_digOUT3_node23, &digOUT3_node23);
-retval += readFromDb(ID_digOUT4_node23, &digOUT4_node23);
+retval += readFromDb(ID_DigDir_1_node23, &DigDir_1_node23);
+retval += readFromDb(ID_DigDir_2_node23, &DigDir_2_node23);
+retval += readFromDb(ID_DigDir_3_node23, &DigDir_3_node23);
+retval += readFromDb(ID_DigDir_4_node23, &DigDir_4_node23);
+retval += readFromDb(ID_DigDir_5_node23, &DigDir_5_node23);
+retval += readFromDb(ID_DigDir_6_node23, &DigDir_6_node23);
+retval += readFromDb(ID_DigDir_7_node23, &DigDir_7_node23);
+retval += readFromDb(ID_DigDir_8_node23, &DigDir_8_node23);
+retval += readFromDb(ID_DigIn_2_node23, &DigIn_2_node23);
+retval += readFromDb(ID_DigIn_3_node23, &DigIn_3_node23);
+retval += readFromDb(ID_DigIn_6_node23, &DigIn_6_node23);
+retval += readFromDb(ID_DigIn_7_node23, &DigIn_7_node23);
+retval += readFromDb(ID_DigOut_1_node23, &DigOut_1_node23);
+retval += readFromDb(ID_DigOut_4_node23, &DigOut_4_node23);
+retval += readFromDb(ID_DigOut_5_node23, &DigOut_5_node23);
+retval += readFromDb(ID_DigOut_8_node23, &DigOut_8_node23);
 retval += readFromDb(ID_Addr_node24, &Addr_node24);
 retval += readFromDb(ID_Life_node24, &Life_node24);
-retval += readFromDb(ID_ConfAi1_node24, &ConfAi1_node24);
-retval += readFromDb(ID_ConfAi2_node24, &ConfAi2_node24);
+retval += readFromDb(ID_AnInCnf_1_node24, &AnInCnf_1_node24);
+retval += readFromDb(ID_AnInCnf_2_node24, &AnInCnf_2_node24);
 retval += readFromDb(ID_ValAi1_node24, &ValAi1_node24);
 retval += readFromDb(ID_ValAi2_node24, &ValAi2_node24);
-retval += readFromDb(ID_Conf1_node24, &Conf1_node24);
-retval += readFromDb(ID_Conf2_node24, &Conf2_node24);
-retval += readFromDb(ID_Conf3_node24, &Conf3_node24);
-retval += readFromDb(ID_Conf4_node24, &Conf4_node24);
-retval += readFromDb(ID_Conf5_node24, &Conf5_node24);
-retval += readFromDb(ID_Conf6_node24, &Conf6_node24);
-retval += readFromDb(ID_Conf7_node24, &Conf7_node24);
-retval += readFromDb(ID_Conf8_node24, &Conf8_node24);
-retval += readFromDb(ID_digIN5_node24, &digIN5_node24);
-retval += readFromDb(ID_digIN6_node24, &digIN6_node24);
-retval += readFromDb(ID_digIN7_node24, &digIN7_node24);
-retval += readFromDb(ID_digIN8_node24, &digIN8_node24);
-retval += readFromDb(ID_digOUT1_node24, &digOUT1_node24);
-retval += readFromDb(ID_digOUT2_node24, &digOUT2_node24);
-retval += readFromDb(ID_digOUT3_node24, &digOUT3_node24);
-retval += readFromDb(ID_digOUT4_node24, &digOUT4_node24);
+retval += readFromDb(ID_DigDir_1_node24, &DigDir_1_node24);
+retval += readFromDb(ID_DigDir_2_node24, &DigDir_2_node24);
+retval += readFromDb(ID_DigDir_3_node24, &DigDir_3_node24);
+retval += readFromDb(ID_DigDir_4_node24, &DigDir_4_node24);
+retval += readFromDb(ID_DigDir_5_node24, &DigDir_5_node24);
+retval += readFromDb(ID_DigDir_6_node24, &DigDir_6_node24);
+retval += readFromDb(ID_DigDir_7_node24, &DigDir_7_node24);
+retval += readFromDb(ID_DigDir_8_node24, &DigDir_8_node24);
+retval += readFromDb(ID_DigIn_2_node24, &DigIn_2_node24);
+retval += readFromDb(ID_DigIn_3_node24, &DigIn_3_node24);
+retval += readFromDb(ID_DigIn_6_node24, &DigIn_6_node24);
+retval += readFromDb(ID_DigIn_7_node24, &DigIn_7_node24);
+retval += readFromDb(ID_DigOut_1_node24, &DigOut_1_node24);
+retval += readFromDb(ID_DigOut_4_node24, &DigOut_4_node24);
+retval += readFromDb(ID_DigOut_5_node24, &DigOut_5_node24);
+retval += readFromDb(ID_DigOut_8_node24, &DigOut_8_node24);
 retval += readFromDb(ID_RTU0_TYPE_PORT, &RTU0_TYPE_PORT);
 retval += readFromDb(ID_RTU0_BAUDRATE, &RTU0_BAUDRATE);
 retval += readFromDb(ID_RTU0_STATUS, &RTU0_STATUS);

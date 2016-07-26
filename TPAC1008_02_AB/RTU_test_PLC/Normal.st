@@ -13,30 +13,30 @@ END_VAR
 
 	(* in each round touch every node *)
 	case (counter mod 24) + 1 of
-		1: digOUT1_node01 := onoff;
-	    2: digOUT1_node02 := onoff;
-        3: digOUT1_node03 := onoff;
-	    4: digOUT1_node04 := onoff;
-	    5: digOUT1_node05 := onoff;
-	    6: digOUT1_node06 := onoff;
-	    7: digOUT1_node07 := onoff;
-	    8: digOUT1_node08 := onoff;
-	    9: digOUT1_node09 := onoff;
-	   10: digOUT1_node10 := onoff;
-	   11: digOUT1_node11 := onoff;
-	   12: digOUT1_node12 := onoff;
-	   13: digOUT1_node13 := onoff;
-	   14: digOUT1_node14 := onoff;
-	   15: digOUT1_node15 := onoff;
-	   16: digOUT1_node16 := onoff;
-	   17: digOUT1_node17 := onoff;
-	   18: digOUT1_node18 := onoff;
-	   19: digOUT1_node19 := onoff;
-	   20: digOUT1_node20 := onoff;
-	   21: digOUT1_node21 := onoff;
-	   22: digOUT1_node22 := onoff;
-	   23: digOUT1_node23 := onoff;
-	   24: digOUT1_node24 := onoff;
+		1: DigOut_5_node01 := onoff;
+	    2: DigOut_5_node02 := onoff;
+        3: DigOut_5_node03 := onoff;
+	    4: DigOut_5_node04 := onoff;
+	    5: DigOut_5_node05 := onoff;
+	    6: DigOut_5_node06 := onoff;
+	    7: DigOut_5_node07 := onoff;
+	    8: DigOut_5_node08 := onoff;
+	    9: DigOut_5_node09 := onoff;
+	   10: DigOut_5_node10 := onoff;
+	   11: DigOut_5_node11 := onoff;
+	   12: DigOut_5_node12 := onoff;
+	   13: DigOut_5_node13 := onoff;
+	   14: DigOut_5_node14 := onoff;
+	   15: DigOut_5_node15 := onoff;
+	   16: DigOut_5_node16 := onoff;
+	   17: DigOut_5_node17 := onoff;
+	   18: DigOut_5_node18 := onoff;
+	   19: DigOut_5_node19 := onoff;
+	   20: DigOut_5_node20 := onoff;
+	   21: DigOut_5_node21 := onoff;
+	   22: DigOut_5_node22 := onoff;
+	   23: DigOut_5_node23 := onoff;
+	   24: DigOut_5_node24 := onoff;
 	end_case;
 
 	(* increment the counter, with overflow *)

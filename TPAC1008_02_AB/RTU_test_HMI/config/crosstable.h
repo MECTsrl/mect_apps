@@ -29,17 +29,17 @@ int doWrite_Life_node01(u_int16_t value);
 int addWrite_Life_node01(u_int16_t value);
 int getStatus_Life_node01();
  
-#define ID_ConfAi1_node01 195
-extern u_int16_t ConfAi1_node01;
-int doWrite_ConfAi1_node01(u_int16_t value);
-int addWrite_ConfAi1_node01(u_int16_t value);
-int getStatus_ConfAi1_node01();
+#define ID_AnInCnf_1_node01 195
+extern u_int16_t AnInCnf_1_node01;
+int doWrite_AnInCnf_1_node01(u_int16_t value);
+int addWrite_AnInCnf_1_node01(u_int16_t value);
+int getStatus_AnInCnf_1_node01();
  
-#define ID_ConfAi2_node01 196
-extern u_int16_t ConfAi2_node01;
-int doWrite_ConfAi2_node01(u_int16_t value);
-int addWrite_ConfAi2_node01(u_int16_t value);
-int getStatus_ConfAi2_node01();
+#define ID_AnInCnf_2_node01 196
+extern u_int16_t AnInCnf_2_node01;
+int doWrite_AnInCnf_2_node01(u_int16_t value);
+int addWrite_AnInCnf_2_node01(u_int16_t value);
+int getStatus_AnInCnf_2_node01();
  
 #define ID_ValAi1_node01 197
 extern int16_t ValAi1_node01;
@@ -53,101 +53,101 @@ int doWrite_ValAi2_node01(int16_t value);
 int addWrite_ValAi2_node01(int16_t value);
 int getStatus_ValAi2_node01();
  
-#define ID_Conf1_node01 199
-extern int Conf1_node01;
-int doWrite_Conf1_node01(int value);
-int addWrite_Conf1_node01(int value);
-int getStatus_Conf1_node01();
+#define ID_DigDir_1_node01 199
+extern int DigDir_1_node01;
+int doWrite_DigDir_1_node01(int value);
+int addWrite_DigDir_1_node01(int value);
+int getStatus_DigDir_1_node01();
  
-#define ID_Conf2_node01 200
-extern int Conf2_node01;
-int doWrite_Conf2_node01(int value);
-int addWrite_Conf2_node01(int value);
-int getStatus_Conf2_node01();
+#define ID_DigDir_2_node01 200
+extern int DigDir_2_node01;
+int doWrite_DigDir_2_node01(int value);
+int addWrite_DigDir_2_node01(int value);
+int getStatus_DigDir_2_node01();
  
-#define ID_Conf3_node01 201
-extern int Conf3_node01;
-int doWrite_Conf3_node01(int value);
-int addWrite_Conf3_node01(int value);
-int getStatus_Conf3_node01();
+#define ID_DigDir_3_node01 201
+extern int DigDir_3_node01;
+int doWrite_DigDir_3_node01(int value);
+int addWrite_DigDir_3_node01(int value);
+int getStatus_DigDir_3_node01();
  
-#define ID_Conf4_node01 202
-extern int Conf4_node01;
-int doWrite_Conf4_node01(int value);
-int addWrite_Conf4_node01(int value);
-int getStatus_Conf4_node01();
+#define ID_DigDir_4_node01 202
+extern int DigDir_4_node01;
+int doWrite_DigDir_4_node01(int value);
+int addWrite_DigDir_4_node01(int value);
+int getStatus_DigDir_4_node01();
  
-#define ID_Conf5_node01 203
-extern int Conf5_node01;
-int doWrite_Conf5_node01(int value);
-int addWrite_Conf5_node01(int value);
-int getStatus_Conf5_node01();
+#define ID_DigDir_5_node01 203
+extern int DigDir_5_node01;
+int doWrite_DigDir_5_node01(int value);
+int addWrite_DigDir_5_node01(int value);
+int getStatus_DigDir_5_node01();
  
-#define ID_Conf6_node01 204
-extern int Conf6_node01;
-int doWrite_Conf6_node01(int value);
-int addWrite_Conf6_node01(int value);
-int getStatus_Conf6_node01();
+#define ID_DigDir_6_node01 204
+extern int DigDir_6_node01;
+int doWrite_DigDir_6_node01(int value);
+int addWrite_DigDir_6_node01(int value);
+int getStatus_DigDir_6_node01();
  
-#define ID_Conf7_node01 205
-extern int Conf7_node01;
-int doWrite_Conf7_node01(int value);
-int addWrite_Conf7_node01(int value);
-int getStatus_Conf7_node01();
+#define ID_DigDir_7_node01 205
+extern int DigDir_7_node01;
+int doWrite_DigDir_7_node01(int value);
+int addWrite_DigDir_7_node01(int value);
+int getStatus_DigDir_7_node01();
  
-#define ID_Conf8_node01 206
-extern int Conf8_node01;
-int doWrite_Conf8_node01(int value);
-int addWrite_Conf8_node01(int value);
-int getStatus_Conf8_node01();
+#define ID_DigDir_8_node01 206
+extern int DigDir_8_node01;
+int doWrite_DigDir_8_node01(int value);
+int addWrite_DigDir_8_node01(int value);
+int getStatus_DigDir_8_node01();
  
-#define ID_digIN5_node01 207
-extern int digIN5_node01;
-int doWrite_digIN5_node01(int value);
-int addWrite_digIN5_node01(int value);
-int getStatus_digIN5_node01();
+#define ID_DigIn_2_node01 207
+extern int DigIn_2_node01;
+int doWrite_DigIn_2_node01(int value);
+int addWrite_DigIn_2_node01(int value);
+int getStatus_DigIn_2_node01();
  
-#define ID_digIN6_node01 208
-extern int digIN6_node01;
-int doWrite_digIN6_node01(int value);
-int addWrite_digIN6_node01(int value);
-int getStatus_digIN6_node01();
+#define ID_DigIn_3_node01 208
+extern int DigIn_3_node01;
+int doWrite_DigIn_3_node01(int value);
+int addWrite_DigIn_3_node01(int value);
+int getStatus_DigIn_3_node01();
  
-#define ID_digIN7_node01 209
-extern int digIN7_node01;
-int doWrite_digIN7_node01(int value);
-int addWrite_digIN7_node01(int value);
-int getStatus_digIN7_node01();
+#define ID_DigIn_6_node01 209
+extern int DigIn_6_node01;
+int doWrite_DigIn_6_node01(int value);
+int addWrite_DigIn_6_node01(int value);
+int getStatus_DigIn_6_node01();
  
-#define ID_digIN8_node01 210
-extern int digIN8_node01;
-int doWrite_digIN8_node01(int value);
-int addWrite_digIN8_node01(int value);
-int getStatus_digIN8_node01();
+#define ID_DigIn_7_node01 210
+extern int DigIn_7_node01;
+int doWrite_DigIn_7_node01(int value);
+int addWrite_DigIn_7_node01(int value);
+int getStatus_DigIn_7_node01();
  
-#define ID_digOUT1_node01 211
-extern int digOUT1_node01;
-int doWrite_digOUT1_node01(int value);
-int addWrite_digOUT1_node01(int value);
-int getStatus_digOUT1_node01();
+#define ID_DigOut_1_node01 211
+extern int DigOut_1_node01;
+int doWrite_DigOut_1_node01(int value);
+int addWrite_DigOut_1_node01(int value);
+int getStatus_DigOut_1_node01();
  
-#define ID_digOUT2_node01 212
-extern int digOUT2_node01;
-int doWrite_digOUT2_node01(int value);
-int addWrite_digOUT2_node01(int value);
-int getStatus_digOUT2_node01();
+#define ID_DigOut_4_node01 212
+extern int DigOut_4_node01;
+int doWrite_DigOut_4_node01(int value);
+int addWrite_DigOut_4_node01(int value);
+int getStatus_DigOut_4_node01();
  
-#define ID_digOUT3_node01 213
-extern int digOUT3_node01;
-int doWrite_digOUT3_node01(int value);
-int addWrite_digOUT3_node01(int value);
-int getStatus_digOUT3_node01();
+#define ID_DigOut_5_node01 213
+extern int DigOut_5_node01;
+int doWrite_DigOut_5_node01(int value);
+int addWrite_DigOut_5_node01(int value);
+int getStatus_DigOut_5_node01();
  
-#define ID_digOUT4_node01 214
-extern int digOUT4_node01;
-int doWrite_digOUT4_node01(int value);
-int addWrite_digOUT4_node01(int value);
-int getStatus_digOUT4_node01();
+#define ID_DigOut_8_node01 214
+extern int DigOut_8_node01;
+int doWrite_DigOut_8_node01(int value);
+int addWrite_DigOut_8_node01(int value);
+int getStatus_DigOut_8_node01();
  
 #define ID_Addr_node02 216
 extern u_int16_t Addr_node02;
@@ -161,17 +161,17 @@ int doWrite_Life_node02(u_int16_t value);
 int addWrite_Life_node02(u_int16_t value);
 int getStatus_Life_node02();
  
-#define ID_ConfAi1_node02 218
-extern u_int16_t ConfAi1_node02;
-int doWrite_ConfAi1_node02(u_int16_t value);
-int addWrite_ConfAi1_node02(u_int16_t value);
-int getStatus_ConfAi1_node02();
+#define ID_AnInCnf_1_node02 218
+extern u_int16_t AnInCnf_1_node02;
+int doWrite_AnInCnf_1_node02(u_int16_t value);
+int addWrite_AnInCnf_1_node02(u_int16_t value);
+int getStatus_AnInCnf_1_node02();
  
-#define ID_ConfAi2_node02 219
-extern u_int16_t ConfAi2_node02;
-int doWrite_ConfAi2_node02(u_int16_t value);
-int addWrite_ConfAi2_node02(u_int16_t value);
-int getStatus_ConfAi2_node02();
+#define ID_AnInCnf_2_node02 219
+extern u_int16_t AnInCnf_2_node02;
+int doWrite_AnInCnf_2_node02(u_int16_t value);
+int addWrite_AnInCnf_2_node02(u_int16_t value);
+int getStatus_AnInCnf_2_node02();
  
 #define ID_ValAi1_node02 220
 extern int16_t ValAi1_node02;
@@ -185,101 +185,101 @@ int doWrite_ValAi2_node02(int16_t value);
 int addWrite_ValAi2_node02(int16_t value);
 int getStatus_ValAi2_node02();
  
-#define ID_Conf1_node02 222
-extern int Conf1_node02;
-int doWrite_Conf1_node02(int value);
-int addWrite_Conf1_node02(int value);
-int getStatus_Conf1_node02();
+#define ID_DigDir_1_node02 222
+extern int DigDir_1_node02;
+int doWrite_DigDir_1_node02(int value);
+int addWrite_DigDir_1_node02(int value);
+int getStatus_DigDir_1_node02();
  
-#define ID_Conf2_node02 223
-extern int Conf2_node02;
-int doWrite_Conf2_node02(int value);
-int addWrite_Conf2_node02(int value);
-int getStatus_Conf2_node02();
+#define ID_DigDir_2_node02 223
+extern int DigDir_2_node02;
+int doWrite_DigDir_2_node02(int value);
+int addWrite_DigDir_2_node02(int value);
+int getStatus_DigDir_2_node02();
  
-#define ID_Conf3_node02 224
-extern int Conf3_node02;
-int doWrite_Conf3_node02(int value);
-int addWrite_Conf3_node02(int value);
-int getStatus_Conf3_node02();
+#define ID_DigDir_3_node02 224
+extern int DigDir_3_node02;
+int doWrite_DigDir_3_node02(int value);
+int addWrite_DigDir_3_node02(int value);
+int getStatus_DigDir_3_node02();
  
-#define ID_Conf4_node02 225
-extern int Conf4_node02;
-int doWrite_Conf4_node02(int value);
-int addWrite_Conf4_node02(int value);
-int getStatus_Conf4_node02();
+#define ID_DigDir_4_node02 225
+extern int DigDir_4_node02;
+int doWrite_DigDir_4_node02(int value);
+int addWrite_DigDir_4_node02(int value);
+int getStatus_DigDir_4_node02();
  
-#define ID_Conf5_node02 226
-extern int Conf5_node02;
-int doWrite_Conf5_node02(int value);
-int addWrite_Conf5_node02(int value);
-int getStatus_Conf5_node02();
+#define ID_DigDir_5_node02 226
+extern int DigDir_5_node02;
+int doWrite_DigDir_5_node02(int value);
+int addWrite_DigDir_5_node02(int value);
+int getStatus_DigDir_5_node02();
  
-#define ID_Conf6_node02 227
-extern int Conf6_node02;
-int doWrite_Conf6_node02(int value);
-int addWrite_Conf6_node02(int value);
-int getStatus_Conf6_node02();
+#define ID_DigDir_6_node02 227
+extern int DigDir_6_node02;
+int doWrite_DigDir_6_node02(int value);
+int addWrite_DigDir_6_node02(int value);
+int getStatus_DigDir_6_node02();
  
-#define ID_Conf7_node02 228
-extern int Conf7_node02;
-int doWrite_Conf7_node02(int value);
-int addWrite_Conf7_node02(int value);
-int getStatus_Conf7_node02();
+#define ID_DigDir_7_node02 228
+extern int DigDir_7_node02;
+int doWrite_DigDir_7_node02(int value);
+int addWrite_DigDir_7_node02(int value);
+int getStatus_DigDir_7_node02();
  
-#define ID_Conf8_node02 229
-extern int Conf8_node02;
-int doWrite_Conf8_node02(int value);
-int addWrite_Conf8_node02(int value);
-int getStatus_Conf8_node02();
+#define ID_DigDir_8_node02 229
+extern int DigDir_8_node02;
+int doWrite_DigDir_8_node02(int value);
+int addWrite_DigDir_8_node02(int value);
+int getStatus_DigDir_8_node02();
  
-#define ID_digIN5_node02 230
-extern int digIN5_node02;
-int doWrite_digIN5_node02(int value);
-int addWrite_digIN5_node02(int value);
-int getStatus_digIN5_node02();
+#define ID_DigIn_2_node02 230
+extern int DigIn_2_node02;
+int doWrite_DigIn_2_node02(int value);
+int addWrite_DigIn_2_node02(int value);
+int getStatus_DigIn_2_node02();
  
-#define ID_digIN6_node02 231
-extern int digIN6_node02;
-int doWrite_digIN6_node02(int value);
-int addWrite_digIN6_node02(int value);
-int getStatus_digIN6_node02();
+#define ID_DigIn_3_node02 231
+extern int DigIn_3_node02;
+int doWrite_DigIn_3_node02(int value);
+int addWrite_DigIn_3_node02(int value);
+int getStatus_DigIn_3_node02();
  
-#define ID_digIN7_node02 232
-extern int digIN7_node02;
-int doWrite_digIN7_node02(int value);
-int addWrite_digIN7_node02(int value);
-int getStatus_digIN7_node02();
+#define ID_DigIn_6_node02 232
+extern int DigIn_6_node02;
+int doWrite_DigIn_6_node02(int value);
+int addWrite_DigIn_6_node02(int value);
+int getStatus_DigIn_6_node02();
  
-#define ID_digIN8_node02 233
-extern int digIN8_node02;
-int doWrite_digIN8_node02(int value);
-int addWrite_digIN8_node02(int value);
-int getStatus_digIN8_node02();
+#define ID_DigIn_7_node02 233
+extern int DigIn_7_node02;
+int doWrite_DigIn_7_node02(int value);
+int addWrite_DigIn_7_node02(int value);
+int getStatus_DigIn_7_node02();
  
-#define ID_digOUT1_node02 234
-extern int digOUT1_node02;
-int doWrite_digOUT1_node02(int value);
-int addWrite_digOUT1_node02(int value);
-int getStatus_digOUT1_node02();
+#define ID_DigOut_1_node02 234
+extern int DigOut_1_node02;
+int doWrite_DigOut_1_node02(int value);
+int addWrite_DigOut_1_node02(int value);
+int getStatus_DigOut_1_node02();
  
-#define ID_digOUT2_node02 235
-extern int digOUT2_node02;
-int doWrite_digOUT2_node02(int value);
-int addWrite_digOUT2_node02(int value);
-int getStatus_digOUT2_node02();
+#define ID_DigOut_4_node02 235
+extern int DigOut_4_node02;
+int doWrite_DigOut_4_node02(int value);
+int addWrite_DigOut_4_node02(int value);
+int getStatus_DigOut_4_node02();
  
-#define ID_digOUT3_node02 236
-extern int digOUT3_node02;
-int doWrite_digOUT3_node02(int value);
-int addWrite_digOUT3_node02(int value);
-int getStatus_digOUT3_node02();
+#define ID_DigOut_5_node02 236
+extern int DigOut_5_node02;
+int doWrite_DigOut_5_node02(int value);
+int addWrite_DigOut_5_node02(int value);
+int getStatus_DigOut_5_node02();
  
-#define ID_digOUT4_node02 237
-extern int digOUT4_node02;
-int doWrite_digOUT4_node02(int value);
-int addWrite_digOUT4_node02(int value);
-int getStatus_digOUT4_node02();
+#define ID_DigOut_8_node02 237
+extern int DigOut_8_node02;
+int doWrite_DigOut_8_node02(int value);
+int addWrite_DigOut_8_node02(int value);
+int getStatus_DigOut_8_node02();
  
 #define ID_Addr_node03 239
 extern u_int16_t Addr_node03;
@@ -293,17 +293,17 @@ int doWrite_Life_node03(u_int16_t value);
 int addWrite_Life_node03(u_int16_t value);
 int getStatus_Life_node03();
  
-#define ID_ConfAi1_node03 241
-extern u_int16_t ConfAi1_node03;
-int doWrite_ConfAi1_node03(u_int16_t value);
-int addWrite_ConfAi1_node03(u_int16_t value);
-int getStatus_ConfAi1_node03();
+#define ID_AnInCnf_1_node03 241
+extern u_int16_t AnInCnf_1_node03;
+int doWrite_AnInCnf_1_node03(u_int16_t value);
+int addWrite_AnInCnf_1_node03(u_int16_t value);
+int getStatus_AnInCnf_1_node03();
  
-#define ID_ConfAi2_node03 242
-extern u_int16_t ConfAi2_node03;
-int doWrite_ConfAi2_node03(u_int16_t value);
-int addWrite_ConfAi2_node03(u_int16_t value);
-int getStatus_ConfAi2_node03();
+#define ID_AnInCnf_2_node03 242
+extern u_int16_t AnInCnf_2_node03;
+int doWrite_AnInCnf_2_node03(u_int16_t value);
+int addWrite_AnInCnf_2_node03(u_int16_t value);
+int getStatus_AnInCnf_2_node03();
  
 #define ID_ValAi1_node03 243
 extern int16_t ValAi1_node03;
@@ -317,101 +317,101 @@ int doWrite_ValAi2_node03(int16_t value);
 int addWrite_ValAi2_node03(int16_t value);
 int getStatus_ValAi2_node03();
  
-#define ID_Conf1_node03 245
-extern int Conf1_node03;
-int doWrite_Conf1_node03(int value);
-int addWrite_Conf1_node03(int value);
-int getStatus_Conf1_node03();
+#define ID_DigDir_1_node03 245
+extern int DigDir_1_node03;
+int doWrite_DigDir_1_node03(int value);
+int addWrite_DigDir_1_node03(int value);
+int getStatus_DigDir_1_node03();
  
-#define ID_Conf2_node03 246
-extern int Conf2_node03;
-int doWrite_Conf2_node03(int value);
-int addWrite_Conf2_node03(int value);
-int getStatus_Conf2_node03();
+#define ID_DigDir_2_node03 246
+extern int DigDir_2_node03;
+int doWrite_DigDir_2_node03(int value);
+int addWrite_DigDir_2_node03(int value);
+int getStatus_DigDir_2_node03();
  
-#define ID_Conf3_node03 247
-extern int Conf3_node03;
-int doWrite_Conf3_node03(int value);
-int addWrite_Conf3_node03(int value);
-int getStatus_Conf3_node03();
+#define ID_DigDir_3_node03 247
+extern int DigDir_3_node03;
+int doWrite_DigDir_3_node03(int value);
+int addWrite_DigDir_3_node03(int value);
+int getStatus_DigDir_3_node03();
  
-#define ID_Conf4_node03 248
-extern int Conf4_node03;
-int doWrite_Conf4_node03(int value);
-int addWrite_Conf4_node03(int value);
-int getStatus_Conf4_node03();
+#define ID_DigDir_4_node03 248
+extern int DigDir_4_node03;
+int doWrite_DigDir_4_node03(int value);
+int addWrite_DigDir_4_node03(int value);
+int getStatus_DigDir_4_node03();
  
-#define ID_Conf5_node03 249
-extern int Conf5_node03;
-int doWrite_Conf5_node03(int value);
-int addWrite_Conf5_node03(int value);
-int getStatus_Conf5_node03();
+#define ID_DigDir_5_node03 249
+extern int DigDir_5_node03;
+int doWrite_DigDir_5_node03(int value);
+int addWrite_DigDir_5_node03(int value);
+int getStatus_DigDir_5_node03();
  
-#define ID_Conf6_node03 250
-extern int Conf6_node03;
-int doWrite_Conf6_node03(int value);
-int addWrite_Conf6_node03(int value);
-int getStatus_Conf6_node03();
+#define ID_DigDir_6_node03 250
+extern int DigDir_6_node03;
+int doWrite_DigDir_6_node03(int value);
+int addWrite_DigDir_6_node03(int value);
+int getStatus_DigDir_6_node03();
  
-#define ID_Conf7_node03 251
-extern int Conf7_node03;
-int doWrite_Conf7_node03(int value);
-int addWrite_Conf7_node03(int value);
-int getStatus_Conf7_node03();
+#define ID_DigDir_7_node03 251
+extern int DigDir_7_node03;
+int doWrite_DigDir_7_node03(int value);
+int addWrite_DigDir_7_node03(int value);
+int getStatus_DigDir_7_node03();
  
-#define ID_Conf8_node03 252
-extern int Conf8_node03;
-int doWrite_Conf8_node03(int value);
-int addWrite_Conf8_node03(int value);
-int getStatus_Conf8_node03();
+#define ID_DigDir_8_node03 252
+extern int DigDir_8_node03;
+int doWrite_DigDir_8_node03(int value);
+int addWrite_DigDir_8_node03(int value);
+int getStatus_DigDir_8_node03();
  
-#define ID_digIN5_node03 253
-extern int digIN5_node03;
-int doWrite_digIN5_node03(int value);
-int addWrite_digIN5_node03(int value);
-int getStatus_digIN5_node03();
+#define ID_DigIn_2_node03 253
+extern int DigIn_2_node03;
+int doWrite_DigIn_2_node03(int value);
+int addWrite_DigIn_2_node03(int value);
+int getStatus_DigIn_2_node03();
  
-#define ID_digIN6_node03 254
-extern int digIN6_node03;
-int doWrite_digIN6_node03(int value);
-int addWrite_digIN6_node03(int value);
-int getStatus_digIN6_node03();
+#define ID_DigIn_3_node03 254
+extern int DigIn_3_node03;
+int doWrite_DigIn_3_node03(int value);
+int addWrite_DigIn_3_node03(int value);
+int getStatus_DigIn_3_node03();
  
-#define ID_digIN7_node03 255
-extern int digIN7_node03;
-int doWrite_digIN7_node03(int value);
-int addWrite_digIN7_node03(int value);
-int getStatus_digIN7_node03();
+#define ID_DigIn_6_node03 255
+extern int DigIn_6_node03;
+int doWrite_DigIn_6_node03(int value);
+int addWrite_DigIn_6_node03(int value);
+int getStatus_DigIn_6_node03();
  
-#define ID_digIN8_node03 256
-extern int digIN8_node03;
-int doWrite_digIN8_node03(int value);
-int addWrite_digIN8_node03(int value);
-int getStatus_digIN8_node03();
+#define ID_DigIn_7_node03 256
+extern int DigIn_7_node03;
+int doWrite_DigIn_7_node03(int value);
+int addWrite_DigIn_7_node03(int value);
+int getStatus_DigIn_7_node03();
  
-#define ID_digOUT1_node03 257
-extern int digOUT1_node03;
-int doWrite_digOUT1_node03(int value);
-int addWrite_digOUT1_node03(int value);
-int getStatus_digOUT1_node03();
+#define ID_DigOut_1_node03 257
+extern int DigOut_1_node03;
+int doWrite_DigOut_1_node03(int value);
+int addWrite_DigOut_1_node03(int value);
+int getStatus_DigOut_1_node03();
  
-#define ID_digOUT2_node03 258
-extern int digOUT2_node03;
-int doWrite_digOUT2_node03(int value);
-int addWrite_digOUT2_node03(int value);
-int getStatus_digOUT2_node03();
+#define ID_DigOut_4_node03 258
+extern int DigOut_4_node03;
+int doWrite_DigOut_4_node03(int value);
+int addWrite_DigOut_4_node03(int value);
+int getStatus_DigOut_4_node03();
  
-#define ID_digOUT3_node03 259
-extern int digOUT3_node03;
-int doWrite_digOUT3_node03(int value);
-int addWrite_digOUT3_node03(int value);
-int getStatus_digOUT3_node03();
+#define ID_DigOut_5_node03 259
+extern int DigOut_5_node03;
+int doWrite_DigOut_5_node03(int value);
+int addWrite_DigOut_5_node03(int value);
+int getStatus_DigOut_5_node03();
  
-#define ID_digOUT4_node03 260
-extern int digOUT4_node03;
-int doWrite_digOUT4_node03(int value);
-int addWrite_digOUT4_node03(int value);
-int getStatus_digOUT4_node03();
+#define ID_DigOut_8_node03 260
+extern int DigOut_8_node03;
+int doWrite_DigOut_8_node03(int value);
+int addWrite_DigOut_8_node03(int value);
+int getStatus_DigOut_8_node03();
  
 #define ID_Addr_node04 262
 extern u_int16_t Addr_node04;
@@ -425,17 +425,17 @@ int doWrite_Life_node04(u_int16_t value);
 int addWrite_Life_node04(u_int16_t value);
 int getStatus_Life_node04();
  
-#define ID_ConfAi1_node04 264
-extern u_int16_t ConfAi1_node04;
-int doWrite_ConfAi1_node04(u_int16_t value);
-int addWrite_ConfAi1_node04(u_int16_t value);
-int getStatus_ConfAi1_node04();
+#define ID_AnInCnf_1_node04 264
+extern u_int16_t AnInCnf_1_node04;
+int doWrite_AnInCnf_1_node04(u_int16_t value);
+int addWrite_AnInCnf_1_node04(u_int16_t value);
+int getStatus_AnInCnf_1_node04();
  
-#define ID_ConfAi2_node04 265
-extern u_int16_t ConfAi2_node04;
-int doWrite_ConfAi2_node04(u_int16_t value);
-int addWrite_ConfAi2_node04(u_int16_t value);
-int getStatus_ConfAi2_node04();
+#define ID_AnInCnf_2_node04 265
+extern u_int16_t AnInCnf_2_node04;
+int doWrite_AnInCnf_2_node04(u_int16_t value);
+int addWrite_AnInCnf_2_node04(u_int16_t value);
+int getStatus_AnInCnf_2_node04();
  
 #define ID_ValAi1_node04 266
 extern int16_t ValAi1_node04;
@@ -449,101 +449,101 @@ int doWrite_ValAi2_node04(int16_t value);
 int addWrite_ValAi2_node04(int16_t value);
 int getStatus_ValAi2_node04();
  
-#define ID_Conf1_node04 268
-extern int Conf1_node04;
-int doWrite_Conf1_node04(int value);
-int addWrite_Conf1_node04(int value);
-int getStatus_Conf1_node04();
+#define ID_DigDir_1_node04 268
+extern int DigDir_1_node04;
+int doWrite_DigDir_1_node04(int value);
+int addWrite_DigDir_1_node04(int value);
+int getStatus_DigDir_1_node04();
  
-#define ID_Conf2_node04 269
-extern int Conf2_node04;
-int doWrite_Conf2_node04(int value);
-int addWrite_Conf2_node04(int value);
-int getStatus_Conf2_node04();
+#define ID_DigDir_2_node04 269
+extern int DigDir_2_node04;
+int doWrite_DigDir_2_node04(int value);
+int addWrite_DigDir_2_node04(int value);
+int getStatus_DigDir_2_node04();
  
-#define ID_Conf3_node04 270
-extern int Conf3_node04;
-int doWrite_Conf3_node04(int value);
-int addWrite_Conf3_node04(int value);
-int getStatus_Conf3_node04();
+#define ID_DigDir_3_node04 270
+extern int DigDir_3_node04;
+int doWrite_DigDir_3_node04(int value);
+int addWrite_DigDir_3_node04(int value);
+int getStatus_DigDir_3_node04();
  
-#define ID_Conf4_node04 271
-extern int Conf4_node04;
-int doWrite_Conf4_node04(int value);
-int addWrite_Conf4_node04(int value);
-int getStatus_Conf4_node04();
+#define ID_DigDir_4_node04 271
+extern int DigDir_4_node04;
+int doWrite_DigDir_4_node04(int value);
+int addWrite_DigDir_4_node04(int value);
+int getStatus_DigDir_4_node04();
  
-#define ID_Conf5_node04 272
-extern int Conf5_node04;
-int doWrite_Conf5_node04(int value);
-int addWrite_Conf5_node04(int value);
-int getStatus_Conf5_node04();
+#define ID_DigDir_5_node04 272
+extern int DigDir_5_node04;
+int doWrite_DigDir_5_node04(int value);
+int addWrite_DigDir_5_node04(int value);
+int getStatus_DigDir_5_node04();
  
-#define ID_Conf6_node04 273
-extern int Conf6_node04;
-int doWrite_Conf6_node04(int value);
-int addWrite_Conf6_node04(int value);
-int getStatus_Conf6_node04();
+#define ID_DigDir_6_node04 273
+extern int DigDir_6_node04;
+int doWrite_DigDir_6_node04(int value);
+int addWrite_DigDir_6_node04(int value);
+int getStatus_DigDir_6_node04();
  
-#define ID_Conf7_node04 274
-extern int Conf7_node04;
-int doWrite_Conf7_node04(int value);
-int addWrite_Conf7_node04(int value);
-int getStatus_Conf7_node04();
+#define ID_DigDir_7_node04 274
+extern int DigDir_7_node04;
+int doWrite_DigDir_7_node04(int value);
+int addWrite_DigDir_7_node04(int value);
+int getStatus_DigDir_7_node04();
  
-#define ID_Conf8_node04 275
-extern int Conf8_node04;
-int doWrite_Conf8_node04(int value);
-int addWrite_Conf8_node04(int value);
-int getStatus_Conf8_node04();
+#define ID_DigDir_8_node04 275
+extern int DigDir_8_node04;
+int doWrite_DigDir_8_node04(int value);
+int addWrite_DigDir_8_node04(int value);
+int getStatus_DigDir_8_node04();
  
-#define ID_digIN5_node04 276
-extern int digIN5_node04;
-int doWrite_digIN5_node04(int value);
-int addWrite_digIN5_node04(int value);
-int getStatus_digIN5_node04();
+#define ID_DigIn_2_node04 276
+extern int DigIn_2_node04;
+int doWrite_DigIn_2_node04(int value);
+int addWrite_DigIn_2_node04(int value);
+int getStatus_DigIn_2_node04();
  
-#define ID_digIN6_node04 277
-extern int digIN6_node04;
-int doWrite_digIN6_node04(int value);
-int addWrite_digIN6_node04(int value);
-int getStatus_digIN6_node04();
+#define ID_DigIn_3_node04 277
+extern int DigIn_3_node04;
+int doWrite_DigIn_3_node04(int value);
+int addWrite_DigIn_3_node04(int value);
+int getStatus_DigIn_3_node04();
  
-#define ID_digIN7_node04 278
-extern int digIN7_node04;
-int doWrite_digIN7_node04(int value);
-int addWrite_digIN7_node04(int value);
-int getStatus_digIN7_node04();
+#define ID_DigIn_6_node04 278
+extern int DigIn_6_node04;
+int doWrite_DigIn_6_node04(int value);
+int addWrite_DigIn_6_node04(int value);
+int getStatus_DigIn_6_node04();
  
-#define ID_digIN8_node04 279
-extern int digIN8_node04;
-int doWrite_digIN8_node04(int value);
-int addWrite_digIN8_node04(int value);
-int getStatus_digIN8_node04();
+#define ID_DigIn_7_node04 279
+extern int DigIn_7_node04;
+int doWrite_DigIn_7_node04(int value);
+int addWrite_DigIn_7_node04(int value);
+int getStatus_DigIn_7_node04();
  
-#define ID_digOUT1_node04 280
-extern int digOUT1_node04;
-int doWrite_digOUT1_node04(int value);
-int addWrite_digOUT1_node04(int value);
-int getStatus_digOUT1_node04();
+#define ID_DigOut_1_node04 280
+extern int DigOut_1_node04;
+int doWrite_DigOut_1_node04(int value);
+int addWrite_DigOut_1_node04(int value);
+int getStatus_DigOut_1_node04();
  
-#define ID_digOUT2_node04 281
-extern int digOUT2_node04;
-int doWrite_digOUT2_node04(int value);
-int addWrite_digOUT2_node04(int value);
-int getStatus_digOUT2_node04();
+#define ID_DigOut_4_node04 281
+extern int DigOut_4_node04;
+int doWrite_DigOut_4_node04(int value);
+int addWrite_DigOut_4_node04(int value);
+int getStatus_DigOut_4_node04();
  
-#define ID_digOUT3_node04 282
-extern int digOUT3_node04;
-int doWrite_digOUT3_node04(int value);
-int addWrite_digOUT3_node04(int value);
-int getStatus_digOUT3_node04();
+#define ID_DigOut_5_node04 282
+extern int DigOut_5_node04;
+int doWrite_DigOut_5_node04(int value);
+int addWrite_DigOut_5_node04(int value);
+int getStatus_DigOut_5_node04();
  
-#define ID_digOUT4_node04 283
-extern int digOUT4_node04;
-int doWrite_digOUT4_node04(int value);
-int addWrite_digOUT4_node04(int value);
-int getStatus_digOUT4_node04();
+#define ID_DigOut_8_node04 283
+extern int DigOut_8_node04;
+int doWrite_DigOut_8_node04(int value);
+int addWrite_DigOut_8_node04(int value);
+int getStatus_DigOut_8_node04();
  
 #define ID_Addr_node05 285
 extern u_int16_t Addr_node05;
@@ -557,17 +557,17 @@ int doWrite_Life_node05(u_int16_t value);
 int addWrite_Life_node05(u_int16_t value);
 int getStatus_Life_node05();
  
-#define ID_ConfAi1_node05 287
-extern u_int16_t ConfAi1_node05;
-int doWrite_ConfAi1_node05(u_int16_t value);
-int addWrite_ConfAi1_node05(u_int16_t value);
-int getStatus_ConfAi1_node05();
+#define ID_AnInCnf_1_node05 287
+extern u_int16_t AnInCnf_1_node05;
+int doWrite_AnInCnf_1_node05(u_int16_t value);
+int addWrite_AnInCnf_1_node05(u_int16_t value);
+int getStatus_AnInCnf_1_node05();
  
-#define ID_ConfAi2_node05 288
-extern u_int16_t ConfAi2_node05;
-int doWrite_ConfAi2_node05(u_int16_t value);
-int addWrite_ConfAi2_node05(u_int16_t value);
-int getStatus_ConfAi2_node05();
+#define ID_AnInCnf_2_node05 288
+extern u_int16_t AnInCnf_2_node05;
+int doWrite_AnInCnf_2_node05(u_int16_t value);
+int addWrite_AnInCnf_2_node05(u_int16_t value);
+int getStatus_AnInCnf_2_node05();
  
 #define ID_ValAi1_node05 289
 extern int16_t ValAi1_node05;
@@ -581,101 +581,101 @@ int doWrite_ValAi2_node05(int16_t value);
 int addWrite_ValAi2_node05(int16_t value);
 int getStatus_ValAi2_node05();
  
-#define ID_Conf1_node05 291
-extern int Conf1_node05;
-int doWrite_Conf1_node05(int value);
-int addWrite_Conf1_node05(int value);
-int getStatus_Conf1_node05();
+#define ID_DigDir_1_node05 291
+extern int DigDir_1_node05;
+int doWrite_DigDir_1_node05(int value);
+int addWrite_DigDir_1_node05(int value);
+int getStatus_DigDir_1_node05();
  
-#define ID_Conf2_node05 292
-extern int Conf2_node05;
-int doWrite_Conf2_node05(int value);
-int addWrite_Conf2_node05(int value);
-int getStatus_Conf2_node05();
+#define ID_DigDir_2_node05 292
+extern int DigDir_2_node05;
+int doWrite_DigDir_2_node05(int value);
+int addWrite_DigDir_2_node05(int value);
+int getStatus_DigDir_2_node05();
  
-#define ID_Conf3_node05 293
-extern int Conf3_node05;
-int doWrite_Conf3_node05(int value);
-int addWrite_Conf3_node05(int value);
-int getStatus_Conf3_node05();
+#define ID_DigDir_3_node05 293
+extern int DigDir_3_node05;
+int doWrite_DigDir_3_node05(int value);
+int addWrite_DigDir_3_node05(int value);
+int getStatus_DigDir_3_node05();
  
-#define ID_Conf4_node05 294
-extern int Conf4_node05;
-int doWrite_Conf4_node05(int value);
-int addWrite_Conf4_node05(int value);
-int getStatus_Conf4_node05();
+#define ID_DigDir_4_node05 294
+extern int DigDir_4_node05;
+int doWrite_DigDir_4_node05(int value);
+int addWrite_DigDir_4_node05(int value);
+int getStatus_DigDir_4_node05();
  
-#define ID_Conf5_node05 295
-extern int Conf5_node05;
-int doWrite_Conf5_node05(int value);
-int addWrite_Conf5_node05(int value);
-int getStatus_Conf5_node05();
+#define ID_DigDir_5_node05 295
+extern int DigDir_5_node05;
+int doWrite_DigDir_5_node05(int value);
+int addWrite_DigDir_5_node05(int value);
+int getStatus_DigDir_5_node05();
  
-#define ID_Conf6_node05 296
-extern int Conf6_node05;
-int doWrite_Conf6_node05(int value);
-int addWrite_Conf6_node05(int value);
-int getStatus_Conf6_node05();
+#define ID_DigDir_6_node05 296
+extern int DigDir_6_node05;
+int doWrite_DigDir_6_node05(int value);
+int addWrite_DigDir_6_node05(int value);
+int getStatus_DigDir_6_node05();
  
-#define ID_Conf7_node05 297
-extern int Conf7_node05;
-int doWrite_Conf7_node05(int value);
-int addWrite_Conf7_node05(int value);
-int getStatus_Conf7_node05();
+#define ID_DigDir_7_node05 297
+extern int DigDir_7_node05;
+int doWrite_DigDir_7_node05(int value);
+int addWrite_DigDir_7_node05(int value);
+int getStatus_DigDir_7_node05();
  
-#define ID_Conf8_node05 298
-extern int Conf8_node05;
-int doWrite_Conf8_node05(int value);
-int addWrite_Conf8_node05(int value);
-int getStatus_Conf8_node05();
+#define ID_DigDir_8_node05 298
+extern int DigDir_8_node05;
+int doWrite_DigDir_8_node05(int value);
+int addWrite_DigDir_8_node05(int value);
+int getStatus_DigDir_8_node05();
  
-#define ID_digIN5_node05 299
-extern int digIN5_node05;
-int doWrite_digIN5_node05(int value);
-int addWrite_digIN5_node05(int value);
-int getStatus_digIN5_node05();
+#define ID_DigIn_2_node05 299
+extern int DigIn_2_node05;
+int doWrite_DigIn_2_node05(int value);
+int addWrite_DigIn_2_node05(int value);
+int getStatus_DigIn_2_node05();
  
-#define ID_digIN6_node05 300
-extern int digIN6_node05;
-int doWrite_digIN6_node05(int value);
-int addWrite_digIN6_node05(int value);
-int getStatus_digIN6_node05();
+#define ID_DigIn_3_node05 300
+extern int DigIn_3_node05;
+int doWrite_DigIn_3_node05(int value);
+int addWrite_DigIn_3_node05(int value);
+int getStatus_DigIn_3_node05();
  
-#define ID_digIN7_node05 301
-extern int digIN7_node05;
-int doWrite_digIN7_node05(int value);
-int addWrite_digIN7_node05(int value);
-int getStatus_digIN7_node05();
+#define ID_DigIn_6_node05 301
+extern int DigIn_6_node05;
+int doWrite_DigIn_6_node05(int value);
+int addWrite_DigIn_6_node05(int value);
+int getStatus_DigIn_6_node05();
  
-#define ID_digIN8_node05 302
-extern int digIN8_node05;
-int doWrite_digIN8_node05(int value);
-int addWrite_digIN8_node05(int value);
-int getStatus_digIN8_node05();
+#define ID_DigIn_7_node05 302
+extern int DigIn_7_node05;
+int doWrite_DigIn_7_node05(int value);
+int addWrite_DigIn_7_node05(int value);
+int getStatus_DigIn_7_node05();
  
-#define ID_digOUT1_node05 303
-extern int digOUT1_node05;
-int doWrite_digOUT1_node05(int value);
-int addWrite_digOUT1_node05(int value);
-int getStatus_digOUT1_node05();
+#define ID_DigOut_1_node05 303
+extern int DigOut_1_node05;
+int doWrite_DigOut_1_node05(int value);
+int addWrite_DigOut_1_node05(int value);
+int getStatus_DigOut_1_node05();
  
-#define ID_digOUT2_node05 304
-extern int digOUT2_node05;
-int doWrite_digOUT2_node05(int value);
-int addWrite_digOUT2_node05(int value);
-int getStatus_digOUT2_node05();
+#define ID_DigOut_4_node05 304
+extern int DigOut_4_node05;
+int doWrite_DigOut_4_node05(int value);
+int addWrite_DigOut_4_node05(int value);
+int getStatus_DigOut_4_node05();
  
-#define ID_digOUT3_node05 305
-extern int digOUT3_node05;
-int doWrite_digOUT3_node05(int value);
-int addWrite_digOUT3_node05(int value);
-int getStatus_digOUT3_node05();
+#define ID_DigOut_5_node05 305
+extern int DigOut_5_node05;
+int doWrite_DigOut_5_node05(int value);
+int addWrite_DigOut_5_node05(int value);
+int getStatus_DigOut_5_node05();
  
-#define ID_digOUT4_node05 306
-extern int digOUT4_node05;
-int doWrite_digOUT4_node05(int value);
-int addWrite_digOUT4_node05(int value);
-int getStatus_digOUT4_node05();
+#define ID_DigOut_8_node05 306
+extern int DigOut_8_node05;
+int doWrite_DigOut_8_node05(int value);
+int addWrite_DigOut_8_node05(int value);
+int getStatus_DigOut_8_node05();
  
 #define ID_Addr_node06 308
 extern u_int16_t Addr_node06;
@@ -689,17 +689,17 @@ int doWrite_Life_node06(u_int16_t value);
 int addWrite_Life_node06(u_int16_t value);
 int getStatus_Life_node06();
  
-#define ID_ConfAi1_node06 310
-extern u_int16_t ConfAi1_node06;
-int doWrite_ConfAi1_node06(u_int16_t value);
-int addWrite_ConfAi1_node06(u_int16_t value);
-int getStatus_ConfAi1_node06();
+#define ID_AnInCnf_1_node06 310
+extern u_int16_t AnInCnf_1_node06;
+int doWrite_AnInCnf_1_node06(u_int16_t value);
+int addWrite_AnInCnf_1_node06(u_int16_t value);
+int getStatus_AnInCnf_1_node06();
  
-#define ID_ConfAi2_node06 311
-extern u_int16_t ConfAi2_node06;
-int doWrite_ConfAi2_node06(u_int16_t value);
-int addWrite_ConfAi2_node06(u_int16_t value);
-int getStatus_ConfAi2_node06();
+#define ID_AnInCnf_2_node06 311
+extern u_int16_t AnInCnf_2_node06;
+int doWrite_AnInCnf_2_node06(u_int16_t value);
+int addWrite_AnInCnf_2_node06(u_int16_t value);
+int getStatus_AnInCnf_2_node06();
  
 #define ID_ValAi1_node06 312
 extern int16_t ValAi1_node06;
@@ -713,101 +713,101 @@ int doWrite_ValAi2_node06(int16_t value);
 int addWrite_ValAi2_node06(int16_t value);
 int getStatus_ValAi2_node06();
  
-#define ID_Conf1_node06 314
-extern int Conf1_node06;
-int doWrite_Conf1_node06(int value);
-int addWrite_Conf1_node06(int value);
-int getStatus_Conf1_node06();
+#define ID_DigDir_1_node06 314
+extern int DigDir_1_node06;
+int doWrite_DigDir_1_node06(int value);
+int addWrite_DigDir_1_node06(int value);
+int getStatus_DigDir_1_node06();
  
-#define ID_Conf2_node06 315
-extern int Conf2_node06;
-int doWrite_Conf2_node06(int value);
-int addWrite_Conf2_node06(int value);
-int getStatus_Conf2_node06();
+#define ID_DigDir_2_node06 315
+extern int DigDir_2_node06;
+int doWrite_DigDir_2_node06(int value);
+int addWrite_DigDir_2_node06(int value);
+int getStatus_DigDir_2_node06();
  
-#define ID_Conf3_node06 316
-extern int Conf3_node06;
-int doWrite_Conf3_node06(int value);
-int addWrite_Conf3_node06(int value);
-int getStatus_Conf3_node06();
+#define ID_DigDir_3_node06 316
+extern int DigDir_3_node06;
+int doWrite_DigDir_3_node06(int value);
+int addWrite_DigDir_3_node06(int value);
+int getStatus_DigDir_3_node06();
  
-#define ID_Conf4_node06 317
-extern int Conf4_node06;
-int doWrite_Conf4_node06(int value);
-int addWrite_Conf4_node06(int value);
-int getStatus_Conf4_node06();
+#define ID_DigDir_4_node06 317
+extern int DigDir_4_node06;
+int doWrite_DigDir_4_node06(int value);
+int addWrite_DigDir_4_node06(int value);
+int getStatus_DigDir_4_node06();
  
-#define ID_Conf5_node06 318
-extern int Conf5_node06;
-int doWrite_Conf5_node06(int value);
-int addWrite_Conf5_node06(int value);
-int getStatus_Conf5_node06();
+#define ID_DigDir_5_node06 318
+extern int DigDir_5_node06;
+int doWrite_DigDir_5_node06(int value);
+int addWrite_DigDir_5_node06(int value);
+int getStatus_DigDir_5_node06();
  
-#define ID_Conf6_node06 319
-extern int Conf6_node06;
-int doWrite_Conf6_node06(int value);
-int addWrite_Conf6_node06(int value);
-int getStatus_Conf6_node06();
+#define ID_DigDir_6_node06 319
+extern int DigDir_6_node06;
+int doWrite_DigDir_6_node06(int value);
+int addWrite_DigDir_6_node06(int value);
+int getStatus_DigDir_6_node06();
  
-#define ID_Conf7_node06 320
-extern int Conf7_node06;
-int doWrite_Conf7_node06(int value);
-int addWrite_Conf7_node06(int value);
-int getStatus_Conf7_node06();
+#define ID_DigDir_7_node06 320
+extern int DigDir_7_node06;
+int doWrite_DigDir_7_node06(int value);
+int addWrite_DigDir_7_node06(int value);
+int getStatus_DigDir_7_node06();
  
-#define ID_Conf8_node06 321
-extern int Conf8_node06;
-int doWrite_Conf8_node06(int value);
-int addWrite_Conf8_node06(int value);
-int getStatus_Conf8_node06();
+#define ID_DigDir_8_node06 321
+extern int DigDir_8_node06;
+int doWrite_DigDir_8_node06(int value);
+int addWrite_DigDir_8_node06(int value);
+int getStatus_DigDir_8_node06();
  
-#define ID_digIN5_node06 322
-extern int digIN5_node06;
-int doWrite_digIN5_node06(int value);
-int addWrite_digIN5_node06(int value);
-int getStatus_digIN5_node06();
+#define ID_DigIn_2_node06 322
+extern int DigIn_2_node06;
+int doWrite_DigIn_2_node06(int value);
+int addWrite_DigIn_2_node06(int value);
+int getStatus_DigIn_2_node06();
  
-#define ID_digIN6_node06 323
-extern int digIN6_node06;
-int doWrite_digIN6_node06(int value);
-int addWrite_digIN6_node06(int value);
-int getStatus_digIN6_node06();
+#define ID_DigIn_3_node06 323
+extern int DigIn_3_node06;
+int doWrite_DigIn_3_node06(int value);
+int addWrite_DigIn_3_node06(int value);
+int getStatus_DigIn_3_node06();
  
-#define ID_digIN7_node06 324
-extern int digIN7_node06;
-int doWrite_digIN7_node06(int value);
-int addWrite_digIN7_node06(int value);
-int getStatus_digIN7_node06();
+#define ID_DigIn_6_node06 324
+extern int DigIn_6_node06;
+int doWrite_DigIn_6_node06(int value);
+int addWrite_DigIn_6_node06(int value);
+int getStatus_DigIn_6_node06();
  
-#define ID_digIN8_node06 325
-extern int digIN8_node06;
-int doWrite_digIN8_node06(int value);
-int addWrite_digIN8_node06(int value);
-int getStatus_digIN8_node06();
+#define ID_DigIn_7_node06 325
+extern int DigIn_7_node06;
+int doWrite_DigIn_7_node06(int value);
+int addWrite_DigIn_7_node06(int value);
+int getStatus_DigIn_7_node06();
  
-#define ID_digOUT1_node06 326
-extern int digOUT1_node06;
-int doWrite_digOUT1_node06(int value);
-int addWrite_digOUT1_node06(int value);
-int getStatus_digOUT1_node06();
+#define ID_DigOut_1_node06 326
+extern int DigOut_1_node06;
+int doWrite_DigOut_1_node06(int value);
+int addWrite_DigOut_1_node06(int value);
+int getStatus_DigOut_1_node06();
  
-#define ID_digOUT2_node06 327
-extern int digOUT2_node06;
-int doWrite_digOUT2_node06(int value);
-int addWrite_digOUT2_node06(int value);
-int getStatus_digOUT2_node06();
+#define ID_DigOut_4_node06 327
+extern int DigOut_4_node06;
+int doWrite_DigOut_4_node06(int value);
+int addWrite_DigOut_4_node06(int value);
+int getStatus_DigOut_4_node06();
  
-#define ID_digOUT3_node06 328
-extern int digOUT3_node06;
-int doWrite_digOUT3_node06(int value);
-int addWrite_digOUT3_node06(int value);
-int getStatus_digOUT3_node06();
+#define ID_DigOut_5_node06 328
+extern int DigOut_5_node06;
+int doWrite_DigOut_5_node06(int value);
+int addWrite_DigOut_5_node06(int value);
+int getStatus_DigOut_5_node06();
  
-#define ID_digOUT4_node06 329
-extern int digOUT4_node06;
-int doWrite_digOUT4_node06(int value);
-int addWrite_digOUT4_node06(int value);
-int getStatus_digOUT4_node06();
+#define ID_DigOut_8_node06 329
+extern int DigOut_8_node06;
+int doWrite_DigOut_8_node06(int value);
+int addWrite_DigOut_8_node06(int value);
+int getStatus_DigOut_8_node06();
  
 #define ID_Addr_node07 331
 extern u_int16_t Addr_node07;
@@ -821,17 +821,17 @@ int doWrite_Life_node07(u_int16_t value);
 int addWrite_Life_node07(u_int16_t value);
 int getStatus_Life_node07();
  
-#define ID_ConfAi1_node07 333
-extern u_int16_t ConfAi1_node07;
-int doWrite_ConfAi1_node07(u_int16_t value);
-int addWrite_ConfAi1_node07(u_int16_t value);
-int getStatus_ConfAi1_node07();
+#define ID_AnInCnf_1_node07 333
+extern u_int16_t AnInCnf_1_node07;
+int doWrite_AnInCnf_1_node07(u_int16_t value);
+int addWrite_AnInCnf_1_node07(u_int16_t value);
+int getStatus_AnInCnf_1_node07();
  
-#define ID_ConfAi2_node07 334
-extern u_int16_t ConfAi2_node07;
-int doWrite_ConfAi2_node07(u_int16_t value);
-int addWrite_ConfAi2_node07(u_int16_t value);
-int getStatus_ConfAi2_node07();
+#define ID_AnInCnf_2_node07 334
+extern u_int16_t AnInCnf_2_node07;
+int doWrite_AnInCnf_2_node07(u_int16_t value);
+int addWrite_AnInCnf_2_node07(u_int16_t value);
+int getStatus_AnInCnf_2_node07();
  
 #define ID_ValAi1_node07 335
 extern int16_t ValAi1_node07;
@@ -845,101 +845,101 @@ int doWrite_ValAi2_node07(int16_t value);
 int addWrite_ValAi2_node07(int16_t value);
 int getStatus_ValAi2_node07();
  
-#define ID_Conf1_node07 337
-extern int Conf1_node07;
-int doWrite_Conf1_node07(int value);
-int addWrite_Conf1_node07(int value);
-int getStatus_Conf1_node07();
+#define ID_DigDir_1_node07 337
+extern int DigDir_1_node07;
+int doWrite_DigDir_1_node07(int value);
+int addWrite_DigDir_1_node07(int value);
+int getStatus_DigDir_1_node07();
  
-#define ID_Conf2_node07 338
-extern int Conf2_node07;
-int doWrite_Conf2_node07(int value);
-int addWrite_Conf2_node07(int value);
-int getStatus_Conf2_node07();
+#define ID_DigDir_2_node07 338
+extern int DigDir_2_node07;
+int doWrite_DigDir_2_node07(int value);
+int addWrite_DigDir_2_node07(int value);
+int getStatus_DigDir_2_node07();
  
-#define ID_Conf3_node07 339
-extern int Conf3_node07;
-int doWrite_Conf3_node07(int value);
-int addWrite_Conf3_node07(int value);
-int getStatus_Conf3_node07();
+#define ID_DigDir_3_node07 339
+extern int DigDir_3_node07;
+int doWrite_DigDir_3_node07(int value);
+int addWrite_DigDir_3_node07(int value);
+int getStatus_DigDir_3_node07();
  
-#define ID_Conf4_node07 340
-extern int Conf4_node07;
-int doWrite_Conf4_node07(int value);
-int addWrite_Conf4_node07(int value);
-int getStatus_Conf4_node07();
+#define ID_DigDir_4_node07 340
+extern int DigDir_4_node07;
+int doWrite_DigDir_4_node07(int value);
+int addWrite_DigDir_4_node07(int value);
+int getStatus_DigDir_4_node07();
  
-#define ID_Conf5_node07 341
-extern int Conf5_node07;
-int doWrite_Conf5_node07(int value);
-int addWrite_Conf5_node07(int value);
-int getStatus_Conf5_node07();
+#define ID_DigDir_5_node07 341
+extern int DigDir_5_node07;
+int doWrite_DigDir_5_node07(int value);
+int addWrite_DigDir_5_node07(int value);
+int getStatus_DigDir_5_node07();
  
-#define ID_Conf6_node07 342
-extern int Conf6_node07;
-int doWrite_Conf6_node07(int value);
-int addWrite_Conf6_node07(int value);
-int getStatus_Conf6_node07();
+#define ID_DigDir_6_node07 342
+extern int DigDir_6_node07;
+int doWrite_DigDir_6_node07(int value);
+int addWrite_DigDir_6_node07(int value);
+int getStatus_DigDir_6_node07();
  
-#define ID_Conf7_node07 343
-extern int Conf7_node07;
-int doWrite_Conf7_node07(int value);
-int addWrite_Conf7_node07(int value);
-int getStatus_Conf7_node07();
+#define ID_DigDir_7_node07 343
+extern int DigDir_7_node07;
+int doWrite_DigDir_7_node07(int value);
+int addWrite_DigDir_7_node07(int value);
+int getStatus_DigDir_7_node07();
  
-#define ID_Conf8_node07 344
-extern int Conf8_node07;
-int doWrite_Conf8_node07(int value);
-int addWrite_Conf8_node07(int value);
-int getStatus_Conf8_node07();
+#define ID_DigDir_8_node07 344
+extern int DigDir_8_node07;
+int doWrite_DigDir_8_node07(int value);
+int addWrite_DigDir_8_node07(int value);
+int getStatus_DigDir_8_node07();
  
-#define ID_digIN5_node07 345
-extern int digIN5_node07;
-int doWrite_digIN5_node07(int value);
-int addWrite_digIN5_node07(int value);
-int getStatus_digIN5_node07();
+#define ID_DigIn_2_node07 345
+extern int DigIn_2_node07;
+int doWrite_DigIn_2_node07(int value);
+int addWrite_DigIn_2_node07(int value);
+int getStatus_DigIn_2_node07();
  
-#define ID_digIN6_node07 346
-extern int digIN6_node07;
-int doWrite_digIN6_node07(int value);
-int addWrite_digIN6_node07(int value);
-int getStatus_digIN6_node07();
+#define ID_DigIn_3_node07 346
+extern int DigIn_3_node07;
+int doWrite_DigIn_3_node07(int value);
+int addWrite_DigIn_3_node07(int value);
+int getStatus_DigIn_3_node07();
  
-#define ID_digIN7_node07 347
-extern int digIN7_node07;
-int doWrite_digIN7_node07(int value);
-int addWrite_digIN7_node07(int value);
-int getStatus_digIN7_node07();
+#define ID_DigIn_6_node07 347
+extern int DigIn_6_node07;
+int doWrite_DigIn_6_node07(int value);
+int addWrite_DigIn_6_node07(int value);
+int getStatus_DigIn_6_node07();
  
-#define ID_digIN8_node07 348
-extern int digIN8_node07;
-int doWrite_digIN8_node07(int value);
-int addWrite_digIN8_node07(int value);
-int getStatus_digIN8_node07();
+#define ID_DigIn_7_node07 348
+extern int DigIn_7_node07;
+int doWrite_DigIn_7_node07(int value);
+int addWrite_DigIn_7_node07(int value);
+int getStatus_DigIn_7_node07();
  
-#define ID_digOUT1_node07 349
-extern int digOUT1_node07;
-int doWrite_digOUT1_node07(int value);
-int addWrite_digOUT1_node07(int value);
-int getStatus_digOUT1_node07();
+#define ID_DigOut_1_node07 349
+extern int DigOut_1_node07;
+int doWrite_DigOut_1_node07(int value);
+int addWrite_DigOut_1_node07(int value);
+int getStatus_DigOut_1_node07();
  
-#define ID_digOUT2_node07 350
-extern int digOUT2_node07;
-int doWrite_digOUT2_node07(int value);
-int addWrite_digOUT2_node07(int value);
-int getStatus_digOUT2_node07();
+#define ID_DigOut_4_node07 350
+extern int DigOut_4_node07;
+int doWrite_DigOut_4_node07(int value);
+int addWrite_DigOut_4_node07(int value);
+int getStatus_DigOut_4_node07();
  
-#define ID_digOUT3_node07 351
-extern int digOUT3_node07;
-int doWrite_digOUT3_node07(int value);
-int addWrite_digOUT3_node07(int value);
-int getStatus_digOUT3_node07();
+#define ID_DigOut_5_node07 351
+extern int DigOut_5_node07;
+int doWrite_DigOut_5_node07(int value);
+int addWrite_DigOut_5_node07(int value);
+int getStatus_DigOut_5_node07();
  
-#define ID_digOUT4_node07 352
-extern int digOUT4_node07;
-int doWrite_digOUT4_node07(int value);
-int addWrite_digOUT4_node07(int value);
-int getStatus_digOUT4_node07();
+#define ID_DigOut_8_node07 352
+extern int DigOut_8_node07;
+int doWrite_DigOut_8_node07(int value);
+int addWrite_DigOut_8_node07(int value);
+int getStatus_DigOut_8_node07();
  
 #define ID_Addr_node08 354
 extern u_int16_t Addr_node08;
@@ -953,17 +953,17 @@ int doWrite_Life_node08(u_int16_t value);
 int addWrite_Life_node08(u_int16_t value);
 int getStatus_Life_node08();
  
-#define ID_ConfAi1_node08 356
-extern u_int16_t ConfAi1_node08;
-int doWrite_ConfAi1_node08(u_int16_t value);
-int addWrite_ConfAi1_node08(u_int16_t value);
-int getStatus_ConfAi1_node08();
+#define ID_AnInCnf_1_node08 356
+extern u_int16_t AnInCnf_1_node08;
+int doWrite_AnInCnf_1_node08(u_int16_t value);
+int addWrite_AnInCnf_1_node08(u_int16_t value);
+int getStatus_AnInCnf_1_node08();
  
-#define ID_ConfAi2_node08 357
-extern u_int16_t ConfAi2_node08;
-int doWrite_ConfAi2_node08(u_int16_t value);
-int addWrite_ConfAi2_node08(u_int16_t value);
-int getStatus_ConfAi2_node08();
+#define ID_AnInCnf_2_node08 357
+extern u_int16_t AnInCnf_2_node08;
+int doWrite_AnInCnf_2_node08(u_int16_t value);
+int addWrite_AnInCnf_2_node08(u_int16_t value);
+int getStatus_AnInCnf_2_node08();
  
 #define ID_ValAi1_node08 358
 extern int16_t ValAi1_node08;
@@ -977,101 +977,101 @@ int doWrite_ValAi2_node08(int16_t value);
 int addWrite_ValAi2_node08(int16_t value);
 int getStatus_ValAi2_node08();
  
-#define ID_Conf1_node08 360
-extern int Conf1_node08;
-int doWrite_Conf1_node08(int value);
-int addWrite_Conf1_node08(int value);
-int getStatus_Conf1_node08();
+#define ID_DigDir_1_node08 360
+extern int DigDir_1_node08;
+int doWrite_DigDir_1_node08(int value);
+int addWrite_DigDir_1_node08(int value);
+int getStatus_DigDir_1_node08();
  
-#define ID_Conf2_node08 361
-extern int Conf2_node08;
-int doWrite_Conf2_node08(int value);
-int addWrite_Conf2_node08(int value);
-int getStatus_Conf2_node08();
+#define ID_DigDir_2_node08 361
+extern int DigDir_2_node08;
+int doWrite_DigDir_2_node08(int value);
+int addWrite_DigDir_2_node08(int value);
+int getStatus_DigDir_2_node08();
  
-#define ID_Conf3_node08 362
-extern int Conf3_node08;
-int doWrite_Conf3_node08(int value);
-int addWrite_Conf3_node08(int value);
-int getStatus_Conf3_node08();
+#define ID_DigDir_3_node08 362
+extern int DigDir_3_node08;
+int doWrite_DigDir_3_node08(int value);
+int addWrite_DigDir_3_node08(int value);
+int getStatus_DigDir_3_node08();
  
-#define ID_Conf4_node08 363
-extern int Conf4_node08;
-int doWrite_Conf4_node08(int value);
-int addWrite_Conf4_node08(int value);
-int getStatus_Conf4_node08();
+#define ID_DigDir_4_node08 363
+extern int DigDir_4_node08;
+int doWrite_DigDir_4_node08(int value);
+int addWrite_DigDir_4_node08(int value);
+int getStatus_DigDir_4_node08();
  
-#define ID_Conf5_node08 364
-extern int Conf5_node08;
-int doWrite_Conf5_node08(int value);
-int addWrite_Conf5_node08(int value);
-int getStatus_Conf5_node08();
+#define ID_DigDir_5_node08 364
+extern int DigDir_5_node08;
+int doWrite_DigDir_5_node08(int value);
+int addWrite_DigDir_5_node08(int value);
+int getStatus_DigDir_5_node08();
  
-#define ID_Conf6_node08 365
-extern int Conf6_node08;
-int doWrite_Conf6_node08(int value);
-int addWrite_Conf6_node08(int value);
-int getStatus_Conf6_node08();
+#define ID_DigDir_6_node08 365
+extern int DigDir_6_node08;
+int doWrite_DigDir_6_node08(int value);
+int addWrite_DigDir_6_node08(int value);
+int getStatus_DigDir_6_node08();
  
-#define ID_Conf7_node08 366
-extern int Conf7_node08;
-int doWrite_Conf7_node08(int value);
-int addWrite_Conf7_node08(int value);
-int getStatus_Conf7_node08();
+#define ID_DigDir_7_node08 366
+extern int DigDir_7_node08;
+int doWrite_DigDir_7_node08(int value);
+int addWrite_DigDir_7_node08(int value);
+int getStatus_DigDir_7_node08();
  
-#define ID_Conf8_node08 367
-extern int Conf8_node08;
-int doWrite_Conf8_node08(int value);
-int addWrite_Conf8_node08(int value);
-int getStatus_Conf8_node08();
+#define ID_DigDir_8_node08 367
+extern int DigDir_8_node08;
+int doWrite_DigDir_8_node08(int value);
+int addWrite_DigDir_8_node08(int value);
+int getStatus_DigDir_8_node08();
  
-#define ID_digIN5_node08 368
-extern int digIN5_node08;
-int doWrite_digIN5_node08(int value);
-int addWrite_digIN5_node08(int value);
-int getStatus_digIN5_node08();
+#define ID_DigIn_2_node08 368
+extern int DigIn_2_node08;
+int doWrite_DigIn_2_node08(int value);
+int addWrite_DigIn_2_node08(int value);
+int getStatus_DigIn_2_node08();
  
-#define ID_digIN6_node08 369
-extern int digIN6_node08;
-int doWrite_digIN6_node08(int value);
-int addWrite_digIN6_node08(int value);
-int getStatus_digIN6_node08();
+#define ID_DigIn_3_node08 369
+extern int DigIn_3_node08;
+int doWrite_DigIn_3_node08(int value);
+int addWrite_DigIn_3_node08(int value);
+int getStatus_DigIn_3_node08();
  
-#define ID_digIN7_node08 370
-extern int digIN7_node08;
-int doWrite_digIN7_node08(int value);
-int addWrite_digIN7_node08(int value);
-int getStatus_digIN7_node08();
+#define ID_DigIn_6_node08 370
+extern int DigIn_6_node08;
+int doWrite_DigIn_6_node08(int value);
+int addWrite_DigIn_6_node08(int value);
+int getStatus_DigIn_6_node08();
  
-#define ID_digIN8_node08 371
-extern int digIN8_node08;
-int doWrite_digIN8_node08(int value);
-int addWrite_digIN8_node08(int value);
-int getStatus_digIN8_node08();
+#define ID_DigIn_7_node08 371
+extern int DigIn_7_node08;
+int doWrite_DigIn_7_node08(int value);
+int addWrite_DigIn_7_node08(int value);
+int getStatus_DigIn_7_node08();
  
-#define ID_digOUT1_node08 372
-extern int digOUT1_node08;
-int doWrite_digOUT1_node08(int value);
-int addWrite_digOUT1_node08(int value);
-int getStatus_digOUT1_node08();
+#define ID_DigOut_1_node08 372
+extern int DigOut_1_node08;
+int doWrite_DigOut_1_node08(int value);
+int addWrite_DigOut_1_node08(int value);
+int getStatus_DigOut_1_node08();
  
-#define ID_digOUT2_node08 373
-extern int digOUT2_node08;
-int doWrite_digOUT2_node08(int value);
-int addWrite_digOUT2_node08(int value);
-int getStatus_digOUT2_node08();
+#define ID_DigOut_4_node08 373
+extern int DigOut_4_node08;
+int doWrite_DigOut_4_node08(int value);
+int addWrite_DigOut_4_node08(int value);
+int getStatus_DigOut_4_node08();
  
-#define ID_digOUT3_node08 374
-extern int digOUT3_node08;
-int doWrite_digOUT3_node08(int value);
-int addWrite_digOUT3_node08(int value);
-int getStatus_digOUT3_node08();
+#define ID_DigOut_5_node08 374
+extern int DigOut_5_node08;
+int doWrite_DigOut_5_node08(int value);
+int addWrite_DigOut_5_node08(int value);
+int getStatus_DigOut_5_node08();
  
-#define ID_digOUT4_node08 375
-extern int digOUT4_node08;
-int doWrite_digOUT4_node08(int value);
-int addWrite_digOUT4_node08(int value);
-int getStatus_digOUT4_node08();
+#define ID_DigOut_8_node08 375
+extern int DigOut_8_node08;
+int doWrite_DigOut_8_node08(int value);
+int addWrite_DigOut_8_node08(int value);
+int getStatus_DigOut_8_node08();
  
 #define ID_Addr_node09 377
 extern u_int16_t Addr_node09;
@@ -1085,17 +1085,17 @@ int doWrite_Life_node09(u_int16_t value);
 int addWrite_Life_node09(u_int16_t value);
 int getStatus_Life_node09();
  
-#define ID_ConfAi1_node09 379
-extern u_int16_t ConfAi1_node09;
-int doWrite_ConfAi1_node09(u_int16_t value);
-int addWrite_ConfAi1_node09(u_int16_t value);
-int getStatus_ConfAi1_node09();
+#define ID_AnInCnf_1_node09 379
+extern u_int16_t AnInCnf_1_node09;
+int doWrite_AnInCnf_1_node09(u_int16_t value);
+int addWrite_AnInCnf_1_node09(u_int16_t value);
+int getStatus_AnInCnf_1_node09();
  
-#define ID_ConfAi2_node09 380
-extern u_int16_t ConfAi2_node09;
-int doWrite_ConfAi2_node09(u_int16_t value);
-int addWrite_ConfAi2_node09(u_int16_t value);
-int getStatus_ConfAi2_node09();
+#define ID_AnInCnf_2_node09 380
+extern u_int16_t AnInCnf_2_node09;
+int doWrite_AnInCnf_2_node09(u_int16_t value);
+int addWrite_AnInCnf_2_node09(u_int16_t value);
+int getStatus_AnInCnf_2_node09();
  
 #define ID_ValAi1_node09 381
 extern int16_t ValAi1_node09;
@@ -1109,101 +1109,101 @@ int doWrite_ValAi2_node09(int16_t value);
 int addWrite_ValAi2_node09(int16_t value);
 int getStatus_ValAi2_node09();
  
-#define ID_Conf1_node09 383
-extern int Conf1_node09;
-int doWrite_Conf1_node09(int value);
-int addWrite_Conf1_node09(int value);
-int getStatus_Conf1_node09();
+#define ID_DigDir_1_node09 383
+extern int DigDir_1_node09;
+int doWrite_DigDir_1_node09(int value);
+int addWrite_DigDir_1_node09(int value);
+int getStatus_DigDir_1_node09();
  
-#define ID_Conf2_node09 384
-extern int Conf2_node09;
-int doWrite_Conf2_node09(int value);
-int addWrite_Conf2_node09(int value);
-int getStatus_Conf2_node09();
+#define ID_DigDir_2_node09 384
+extern int DigDir_2_node09;
+int doWrite_DigDir_2_node09(int value);
+int addWrite_DigDir_2_node09(int value);
+int getStatus_DigDir_2_node09();
  
-#define ID_Conf3_node09 385
-extern int Conf3_node09;
-int doWrite_Conf3_node09(int value);
-int addWrite_Conf3_node09(int value);
-int getStatus_Conf3_node09();
+#define ID_DigDir_3_node09 385
+extern int DigDir_3_node09;
+int doWrite_DigDir_3_node09(int value);
+int addWrite_DigDir_3_node09(int value);
+int getStatus_DigDir_3_node09();
  
-#define ID_Conf4_node09 386
-extern int Conf4_node09;
-int doWrite_Conf4_node09(int value);
-int addWrite_Conf4_node09(int value);
-int getStatus_Conf4_node09();
+#define ID_DigDir_4_node09 386
+extern int DigDir_4_node09;
+int doWrite_DigDir_4_node09(int value);
+int addWrite_DigDir_4_node09(int value);
+int getStatus_DigDir_4_node09();
  
-#define ID_Conf5_node09 387
-extern int Conf5_node09;
-int doWrite_Conf5_node09(int value);
-int addWrite_Conf5_node09(int value);
-int getStatus_Conf5_node09();
+#define ID_DigDir_5_node09 387
+extern int DigDir_5_node09;
+int doWrite_DigDir_5_node09(int value);
+int addWrite_DigDir_5_node09(int value);
+int getStatus_DigDir_5_node09();
  
-#define ID_Conf6_node09 388
-extern int Conf6_node09;
-int doWrite_Conf6_node09(int value);
-int addWrite_Conf6_node09(int value);
-int getStatus_Conf6_node09();
+#define ID_DigDir_6_node09 388
+extern int DigDir_6_node09;
+int doWrite_DigDir_6_node09(int value);
+int addWrite_DigDir_6_node09(int value);
+int getStatus_DigDir_6_node09();
  
-#define ID_Conf7_node09 389
-extern int Conf7_node09;
-int doWrite_Conf7_node09(int value);
-int addWrite_Conf7_node09(int value);
-int getStatus_Conf7_node09();
+#define ID_DigDir_7_node09 389
+extern int DigDir_7_node09;
+int doWrite_DigDir_7_node09(int value);
+int addWrite_DigDir_7_node09(int value);
+int getStatus_DigDir_7_node09();
  
-#define ID_Conf8_node019 390
-extern int Conf8_node019;
-int doWrite_Conf8_node019(int value);
-int addWrite_Conf8_node019(int value);
-int getStatus_Conf8_node019();
+#define ID_DigDir_8_node09 390
+extern int DigDir_8_node09;
+int doWrite_DigDir_8_node09(int value);
+int addWrite_DigDir_8_node09(int value);
+int getStatus_DigDir_8_node09();
  
-#define ID_digIN5_node09 391
-extern int digIN5_node09;
-int doWrite_digIN5_node09(int value);
-int addWrite_digIN5_node09(int value);
-int getStatus_digIN5_node09();
+#define ID_DigIn_2_node09 391
+extern int DigIn_2_node09;
+int doWrite_DigIn_2_node09(int value);
+int addWrite_DigIn_2_node09(int value);
+int getStatus_DigIn_2_node09();
  
-#define ID_digIN6_node09 392
-extern int digIN6_node09;
-int doWrite_digIN6_node09(int value);
-int addWrite_digIN6_node09(int value);
-int getStatus_digIN6_node09();
+#define ID_DigIn_3_node09 392
+extern int DigIn_3_node09;
+int doWrite_DigIn_3_node09(int value);
+int addWrite_DigIn_3_node09(int value);
+int getStatus_DigIn_3_node09();
  
-#define ID_digIN7_node09 393
-extern int digIN7_node09;
-int doWrite_digIN7_node09(int value);
-int addWrite_digIN7_node09(int value);
-int getStatus_digIN7_node09();
+#define ID_DigIn_6_node09 393
+extern int DigIn_6_node09;
+int doWrite_DigIn_6_node09(int value);
+int addWrite_DigIn_6_node09(int value);
+int getStatus_DigIn_6_node09();
  
-#define ID_digIN8_node09 394
-extern int digIN8_node09;
-int doWrite_digIN8_node09(int value);
-int addWrite_digIN8_node09(int value);
-int getStatus_digIN8_node09();
+#define ID_DigIn_7_node09 394
+extern int DigIn_7_node09;
+int doWrite_DigIn_7_node09(int value);
+int addWrite_DigIn_7_node09(int value);
+int getStatus_DigIn_7_node09();
  
-#define ID_digOUT1_node09 395
-extern int digOUT1_node09;
-int doWrite_digOUT1_node09(int value);
-int addWrite_digOUT1_node09(int value);
-int getStatus_digOUT1_node09();
+#define ID_DigOut_1_node09 395
+extern int DigOut_1_node09;
+int doWrite_DigOut_1_node09(int value);
+int addWrite_DigOut_1_node09(int value);
+int getStatus_DigOut_1_node09();
  
-#define ID_digOUT2_node09 396
-extern int digOUT2_node09;
-int doWrite_digOUT2_node09(int value);
-int addWrite_digOUT2_node09(int value);
-int getStatus_digOUT2_node09();
+#define ID_DigOut_4_node09 396
+extern int DigOut_4_node09;
+int doWrite_DigOut_4_node09(int value);
+int addWrite_DigOut_4_node09(int value);
+int getStatus_DigOut_4_node09();
  
-#define ID_digOUT3_node09 397
-extern int digOUT3_node09;
-int doWrite_digOUT3_node09(int value);
-int addWrite_digOUT3_node09(int value);
-int getStatus_digOUT3_node09();
+#define ID_DigOut_5_node09 397
+extern int DigOut_5_node09;
+int doWrite_DigOut_5_node09(int value);
+int addWrite_DigOut_5_node09(int value);
+int getStatus_DigOut_5_node09();
  
-#define ID_digOUT4_node09 398
-extern int digOUT4_node09;
-int doWrite_digOUT4_node09(int value);
-int addWrite_digOUT4_node09(int value);
-int getStatus_digOUT4_node09();
+#define ID_DigOut_8_node09 398
+extern int DigOut_8_node09;
+int doWrite_DigOut_8_node09(int value);
+int addWrite_DigOut_8_node09(int value);
+int getStatus_DigOut_8_node09();
  
 #define ID_Addr_node10 400
 extern u_int16_t Addr_node10;
@@ -1217,17 +1217,17 @@ int doWrite_Life_node10(u_int16_t value);
 int addWrite_Life_node10(u_int16_t value);
 int getStatus_Life_node10();
  
-#define ID_ConfAi1_node10 402
-extern u_int16_t ConfAi1_node10;
-int doWrite_ConfAi1_node10(u_int16_t value);
-int addWrite_ConfAi1_node10(u_int16_t value);
-int getStatus_ConfAi1_node10();
+#define ID_AnInCnf_1_node10 402
+extern u_int16_t AnInCnf_1_node10;
+int doWrite_AnInCnf_1_node10(u_int16_t value);
+int addWrite_AnInCnf_1_node10(u_int16_t value);
+int getStatus_AnInCnf_1_node10();
  
-#define ID_ConfAi2_node10 403
-extern u_int16_t ConfAi2_node10;
-int doWrite_ConfAi2_node10(u_int16_t value);
-int addWrite_ConfAi2_node10(u_int16_t value);
-int getStatus_ConfAi2_node10();
+#define ID_AnInCnf_2_node10 403
+extern u_int16_t AnInCnf_2_node10;
+int doWrite_AnInCnf_2_node10(u_int16_t value);
+int addWrite_AnInCnf_2_node10(u_int16_t value);
+int getStatus_AnInCnf_2_node10();
  
 #define ID_ValAi1_node10 404
 extern int16_t ValAi1_node10;
@@ -1241,101 +1241,101 @@ int doWrite_ValAi2_node10(int16_t value);
 int addWrite_ValAi2_node10(int16_t value);
 int getStatus_ValAi2_node10();
  
-#define ID_Conf1_node10 406
-extern int Conf1_node10;
-int doWrite_Conf1_node10(int value);
-int addWrite_Conf1_node10(int value);
-int getStatus_Conf1_node10();
+#define ID_DigDir_1_node10 406
+extern int DigDir_1_node10;
+int doWrite_DigDir_1_node10(int value);
+int addWrite_DigDir_1_node10(int value);
+int getStatus_DigDir_1_node10();
  
-#define ID_Conf2_node10 407
-extern int Conf2_node10;
-int doWrite_Conf2_node10(int value);
-int addWrite_Conf2_node10(int value);
-int getStatus_Conf2_node10();
+#define ID_DigDir_2_node10 407
+extern int DigDir_2_node10;
+int doWrite_DigDir_2_node10(int value);
+int addWrite_DigDir_2_node10(int value);
+int getStatus_DigDir_2_node10();
  
-#define ID_Conf3_node10 408
-extern int Conf3_node10;
-int doWrite_Conf3_node10(int value);
-int addWrite_Conf3_node10(int value);
-int getStatus_Conf3_node10();
+#define ID_DigDir_3_node10 408
+extern int DigDir_3_node10;
+int doWrite_DigDir_3_node10(int value);
+int addWrite_DigDir_3_node10(int value);
+int getStatus_DigDir_3_node10();
  
-#define ID_Conf4_node10 409
-extern int Conf4_node10;
-int doWrite_Conf4_node10(int value);
-int addWrite_Conf4_node10(int value);
-int getStatus_Conf4_node10();
+#define ID_DigDir_4_node10 409
+extern int DigDir_4_node10;
+int doWrite_DigDir_4_node10(int value);
+int addWrite_DigDir_4_node10(int value);
+int getStatus_DigDir_4_node10();
  
-#define ID_Conf5_node10 410
-extern int Conf5_node10;
-int doWrite_Conf5_node10(int value);
-int addWrite_Conf5_node10(int value);
-int getStatus_Conf5_node10();
+#define ID_DigDir_5_node10 410
+extern int DigDir_5_node10;
+int doWrite_DigDir_5_node10(int value);
+int addWrite_DigDir_5_node10(int value);
+int getStatus_DigDir_5_node10();
  
-#define ID_Conf6_node10 411
-extern int Conf6_node10;
-int doWrite_Conf6_node10(int value);
-int addWrite_Conf6_node10(int value);
-int getStatus_Conf6_node10();
+#define ID_DigDir_6_node10 411
+extern int DigDir_6_node10;
+int doWrite_DigDir_6_node10(int value);
+int addWrite_DigDir_6_node10(int value);
+int getStatus_DigDir_6_node10();
  
-#define ID_Conf7_node10 412
-extern int Conf7_node10;
-int doWrite_Conf7_node10(int value);
-int addWrite_Conf7_node10(int value);
-int getStatus_Conf7_node10();
+#define ID_DigDir_7_node10 412
+extern int DigDir_7_node10;
+int doWrite_DigDir_7_node10(int value);
+int addWrite_DigDir_7_node10(int value);
+int getStatus_DigDir_7_node10();
  
-#define ID_Conf8_node10 413
-extern int Conf8_node10;
-int doWrite_Conf8_node10(int value);
-int addWrite_Conf8_node10(int value);
-int getStatus_Conf8_node10();
+#define ID_DigDir_8_node10 413
+extern int DigDir_8_node10;
+int doWrite_DigDir_8_node10(int value);
+int addWrite_DigDir_8_node10(int value);
+int getStatus_DigDir_8_node10();
  
-#define ID_digIN5_node10 414
-extern int digIN5_node10;
-int doWrite_digIN5_node10(int value);
-int addWrite_digIN5_node10(int value);
-int getStatus_digIN5_node10();
+#define ID_DigIn_2_node10 414
+extern int DigIn_2_node10;
+int doWrite_DigIn_2_node10(int value);
+int addWrite_DigIn_2_node10(int value);
+int getStatus_DigIn_2_node10();
  
-#define ID_digIN6_node10 415
-extern int digIN6_node10;
-int doWrite_digIN6_node10(int value);
-int addWrite_digIN6_node10(int value);
-int getStatus_digIN6_node10();
+#define ID_DigIn_3_node10 415
+extern int DigIn_3_node10;
+int doWrite_DigIn_3_node10(int value);
+int addWrite_DigIn_3_node10(int value);
+int getStatus_DigIn_3_node10();
  
-#define ID_digIN7_node10 416
-extern int digIN7_node10;
-int doWrite_digIN7_node10(int value);
-int addWrite_digIN7_node10(int value);
-int getStatus_digIN7_node10();
+#define ID_DigIn_6_node10 416
+extern int DigIn_6_node10;
+int doWrite_DigIn_6_node10(int value);
+int addWrite_DigIn_6_node10(int value);
+int getStatus_DigIn_6_node10();
  
-#define ID_digIN8_node10 417
-extern int digIN8_node10;
-int doWrite_digIN8_node10(int value);
-int addWrite_digIN8_node10(int value);
-int getStatus_digIN8_node10();
+#define ID_DigIn_7_node10 417
+extern int DigIn_7_node10;
+int doWrite_DigIn_7_node10(int value);
+int addWrite_DigIn_7_node10(int value);
+int getStatus_DigIn_7_node10();
  
-#define ID_digOUT1_node10 418
-extern int digOUT1_node10;
-int doWrite_digOUT1_node10(int value);
-int addWrite_digOUT1_node10(int value);
-int getStatus_digOUT1_node10();
+#define ID_DigOut_1_node10 418
+extern int DigOut_1_node10;
+int doWrite_DigOut_1_node10(int value);
+int addWrite_DigOut_1_node10(int value);
+int getStatus_DigOut_1_node10();
  
-#define ID_digOUT2_node10 419
-extern int digOUT2_node10;
-int doWrite_digOUT2_node10(int value);
-int addWrite_digOUT2_node10(int value);
-int getStatus_digOUT2_node10();
+#define ID_DigOut_4_node10 419
+extern int DigOut_4_node10;
+int doWrite_DigOut_4_node10(int value);
+int addWrite_DigOut_4_node10(int value);
+int getStatus_DigOut_4_node10();
  
-#define ID_digOUT3_node10 420
-extern int digOUT3_node10;
-int doWrite_digOUT3_node10(int value);
-int addWrite_digOUT3_node10(int value);
-int getStatus_digOUT3_node10();
+#define ID_DigOut_5_node10 420
+extern int DigOut_5_node10;
+int doWrite_DigOut_5_node10(int value);
+int addWrite_DigOut_5_node10(int value);
+int getStatus_DigOut_5_node10();
  
-#define ID_digOUT4_node10 421
-extern int digOUT4_node10;
-int doWrite_digOUT4_node10(int value);
-int addWrite_digOUT4_node10(int value);
-int getStatus_digOUT4_node10();
+#define ID_DigOut_8_node10 421
+extern int DigOut_8_node10;
+int doWrite_DigOut_8_node10(int value);
+int addWrite_DigOut_8_node10(int value);
+int getStatus_DigOut_8_node10();
  
 #define ID_Addr_node11 423
 extern u_int16_t Addr_node11;
@@ -1349,17 +1349,17 @@ int doWrite_Life_node11(u_int16_t value);
 int addWrite_Life_node11(u_int16_t value);
 int getStatus_Life_node11();
  
-#define ID_ConfAi1_node11 425
-extern u_int16_t ConfAi1_node11;
-int doWrite_ConfAi1_node11(u_int16_t value);
-int addWrite_ConfAi1_node11(u_int16_t value);
-int getStatus_ConfAi1_node11();
+#define ID_AnInCnf_1_node11 425
+extern u_int16_t AnInCnf_1_node11;
+int doWrite_AnInCnf_1_node11(u_int16_t value);
+int addWrite_AnInCnf_1_node11(u_int16_t value);
+int getStatus_AnInCnf_1_node11();
  
-#define ID_ConfAi2_node11 426
-extern u_int16_t ConfAi2_node11;
-int doWrite_ConfAi2_node11(u_int16_t value);
-int addWrite_ConfAi2_node11(u_int16_t value);
-int getStatus_ConfAi2_node11();
+#define ID_AnInCnf_2_node11 426
+extern u_int16_t AnInCnf_2_node11;
+int doWrite_AnInCnf_2_node11(u_int16_t value);
+int addWrite_AnInCnf_2_node11(u_int16_t value);
+int getStatus_AnInCnf_2_node11();
  
 #define ID_ValAi1_node11 427
 extern int16_t ValAi1_node11;
@@ -1373,101 +1373,101 @@ int doWrite_ValAi2_node11(int16_t value);
 int addWrite_ValAi2_node11(int16_t value);
 int getStatus_ValAi2_node11();
  
-#define ID_Conf1_node11 429
-extern int Conf1_node11;
-int doWrite_Conf1_node11(int value);
-int addWrite_Conf1_node11(int value);
-int getStatus_Conf1_node11();
+#define ID_DigDir_1_node11 429
+extern int DigDir_1_node11;
+int doWrite_DigDir_1_node11(int value);
+int addWrite_DigDir_1_node11(int value);
+int getStatus_DigDir_1_node11();
  
-#define ID_Conf2_node11 430
-extern int Conf2_node11;
-int doWrite_Conf2_node11(int value);
-int addWrite_Conf2_node11(int value);
-int getStatus_Conf2_node11();
+#define ID_DigDir_2_node11 430
+extern int DigDir_2_node11;
+int doWrite_DigDir_2_node11(int value);
+int addWrite_DigDir_2_node11(int value);
+int getStatus_DigDir_2_node11();
  
-#define ID_Conf3_node11 431
-extern int Conf3_node11;
-int doWrite_Conf3_node11(int value);
-int addWrite_Conf3_node11(int value);
-int getStatus_Conf3_node11();
+#define ID_DigDir_3_node11 431
+extern int DigDir_3_node11;
+int doWrite_DigDir_3_node11(int value);
+int addWrite_DigDir_3_node11(int value);
+int getStatus_DigDir_3_node11();
  
-#define ID_Conf4_node11 432
-extern int Conf4_node11;
-int doWrite_Conf4_node11(int value);
-int addWrite_Conf4_node11(int value);
-int getStatus_Conf4_node11();
+#define ID_DigDir_4_node11 432
+extern int DigDir_4_node11;
+int doWrite_DigDir_4_node11(int value);
+int addWrite_DigDir_4_node11(int value);
+int getStatus_DigDir_4_node11();
  
-#define ID_Conf5_node11 433
-extern int Conf5_node11;
-int doWrite_Conf5_node11(int value);
-int addWrite_Conf5_node11(int value);
-int getStatus_Conf5_node11();
+#define ID_DigDir_5_node11 433
+extern int DigDir_5_node11;
+int doWrite_DigDir_5_node11(int value);
+int addWrite_DigDir_5_node11(int value);
+int getStatus_DigDir_5_node11();
  
-#define ID_Conf6_node11 434
-extern int Conf6_node11;
-int doWrite_Conf6_node11(int value);
-int addWrite_Conf6_node11(int value);
-int getStatus_Conf6_node11();
+#define ID_DigDir_6_node11 434
+extern int DigDir_6_node11;
+int doWrite_DigDir_6_node11(int value);
+int addWrite_DigDir_6_node11(int value);
+int getStatus_DigDir_6_node11();
  
-#define ID_Conf7_node11 435
-extern int Conf7_node11;
-int doWrite_Conf7_node11(int value);
-int addWrite_Conf7_node11(int value);
-int getStatus_Conf7_node11();
+#define ID_DigDir_7_node11 435
+extern int DigDir_7_node11;
+int doWrite_DigDir_7_node11(int value);
+int addWrite_DigDir_7_node11(int value);
+int getStatus_DigDir_7_node11();
  
-#define ID_Conf8_node11 436
-extern int Conf8_node11;
-int doWrite_Conf8_node11(int value);
-int addWrite_Conf8_node11(int value);
-int getStatus_Conf8_node11();
+#define ID_DigDir_8_node11 436
+extern int DigDir_8_node11;
+int doWrite_DigDir_8_node11(int value);
+int addWrite_DigDir_8_node11(int value);
+int getStatus_DigDir_8_node11();
  
-#define ID_digIN5_node11 437
-extern int digIN5_node11;
-int doWrite_digIN5_node11(int value);
-int addWrite_digIN5_node11(int value);
-int getStatus_digIN5_node11();
+#define ID_DigIn_2_node11 437
+extern int DigIn_2_node11;
+int doWrite_DigIn_2_node11(int value);
+int addWrite_DigIn_2_node11(int value);
+int getStatus_DigIn_2_node11();
  
-#define ID_digIN6_node11 438
-extern int digIN6_node11;
-int doWrite_digIN6_node11(int value);
-int addWrite_digIN6_node11(int value);
-int getStatus_digIN6_node11();
+#define ID_DigIn_3_node11 438
+extern int DigIn_3_node11;
+int doWrite_DigIn_3_node11(int value);
+int addWrite_DigIn_3_node11(int value);
+int getStatus_DigIn_3_node11();
  
-#define ID_digIN7_node11 439
-extern int digIN7_node11;
-int doWrite_digIN7_node11(int value);
-int addWrite_digIN7_node11(int value);
-int getStatus_digIN7_node11();
+#define ID_DigIn_6_node11 439
+extern int DigIn_6_node11;
+int doWrite_DigIn_6_node11(int value);
+int addWrite_DigIn_6_node11(int value);
+int getStatus_DigIn_6_node11();
  
-#define ID_digIN8_node11 440
-extern int digIN8_node11;
-int doWrite_digIN8_node11(int value);
-int addWrite_digIN8_node11(int value);
-int getStatus_digIN8_node11();
+#define ID_DigIn_7_node11 440
+extern int DigIn_7_node11;
+int doWrite_DigIn_7_node11(int value);
+int addWrite_DigIn_7_node11(int value);
+int getStatus_DigIn_7_node11();
  
-#define ID_digOUT1_node11 441
-extern int digOUT1_node11;
-int doWrite_digOUT1_node11(int value);
-int addWrite_digOUT1_node11(int value);
-int getStatus_digOUT1_node11();
+#define ID_DigOut_1_node11 441
+extern int DigOut_1_node11;
+int doWrite_DigOut_1_node11(int value);
+int addWrite_DigOut_1_node11(int value);
+int getStatus_DigOut_1_node11();
  
-#define ID_digOUT2_node11 442
-extern int digOUT2_node11;
-int doWrite_digOUT2_node11(int value);
-int addWrite_digOUT2_node11(int value);
-int getStatus_digOUT2_node11();
+#define ID_DigOut_4_node11 442
+extern int DigOut_4_node11;
+int doWrite_DigOut_4_node11(int value);
+int addWrite_DigOut_4_node11(int value);
+int getStatus_DigOut_4_node11();
  
-#define ID_digOUT3_node11 443
-extern int digOUT3_node11;
-int doWrite_digOUT3_node11(int value);
-int addWrite_digOUT3_node11(int value);
-int getStatus_digOUT3_node11();
+#define ID_DigOut_5_node11 443
+extern int DigOut_5_node11;
+int doWrite_DigOut_5_node11(int value);
+int addWrite_DigOut_5_node11(int value);
+int getStatus_DigOut_5_node11();
  
-#define ID_digOUT4_node11 444
-extern int digOUT4_node11;
-int doWrite_digOUT4_node11(int value);
-int addWrite_digOUT4_node11(int value);
-int getStatus_digOUT4_node11();
+#define ID_DigOut_8_node11 444
+extern int DigOut_8_node11;
+int doWrite_DigOut_8_node11(int value);
+int addWrite_DigOut_8_node11(int value);
+int getStatus_DigOut_8_node11();
  
 #define ID_Addr_node12 446
 extern u_int16_t Addr_node12;
@@ -1481,17 +1481,17 @@ int doWrite_Life_node12(u_int16_t value);
 int addWrite_Life_node12(u_int16_t value);
 int getStatus_Life_node12();
  
-#define ID_ConfAi1_node12 448
-extern u_int16_t ConfAi1_node12;
-int doWrite_ConfAi1_node12(u_int16_t value);
-int addWrite_ConfAi1_node12(u_int16_t value);
-int getStatus_ConfAi1_node12();
+#define ID_AnInCnf_1_node12 448
+extern u_int16_t AnInCnf_1_node12;
+int doWrite_AnInCnf_1_node12(u_int16_t value);
+int addWrite_AnInCnf_1_node12(u_int16_t value);
+int getStatus_AnInCnf_1_node12();
  
-#define ID_ConfAi2_node12 449
-extern u_int16_t ConfAi2_node12;
-int doWrite_ConfAi2_node12(u_int16_t value);
-int addWrite_ConfAi2_node12(u_int16_t value);
-int getStatus_ConfAi2_node12();
+#define ID_AnInCnf_2_node12 449
+extern u_int16_t AnInCnf_2_node12;
+int doWrite_AnInCnf_2_node12(u_int16_t value);
+int addWrite_AnInCnf_2_node12(u_int16_t value);
+int getStatus_AnInCnf_2_node12();
  
 #define ID_ValAi1_node12 450
 extern int16_t ValAi1_node12;
@@ -1505,101 +1505,101 @@ int doWrite_ValAi2_node12(int16_t value);
 int addWrite_ValAi2_node12(int16_t value);
 int getStatus_ValAi2_node12();
  
-#define ID_Conf1_node12 452
-extern int Conf1_node12;
-int doWrite_Conf1_node12(int value);
-int addWrite_Conf1_node12(int value);
-int getStatus_Conf1_node12();
+#define ID_DigDir_1_node12 452
+extern int DigDir_1_node12;
+int doWrite_DigDir_1_node12(int value);
+int addWrite_DigDir_1_node12(int value);
+int getStatus_DigDir_1_node12();
  
-#define ID_Conf2_node12 453
-extern int Conf2_node12;
-int doWrite_Conf2_node12(int value);
-int addWrite_Conf2_node12(int value);
-int getStatus_Conf2_node12();
+#define ID_DigDir_2_node12 453
+extern int DigDir_2_node12;
+int doWrite_DigDir_2_node12(int value);
+int addWrite_DigDir_2_node12(int value);
+int getStatus_DigDir_2_node12();
  
-#define ID_Conf3_node12 454
-extern int Conf3_node12;
-int doWrite_Conf3_node12(int value);
-int addWrite_Conf3_node12(int value);
-int getStatus_Conf3_node12();
+#define ID_DigDir_3_node12 454
+extern int DigDir_3_node12;
+int doWrite_DigDir_3_node12(int value);
+int addWrite_DigDir_3_node12(int value);
+int getStatus_DigDir_3_node12();
  
-#define ID_Conf4_node12 455
-extern int Conf4_node12;
-int doWrite_Conf4_node12(int value);
-int addWrite_Conf4_node12(int value);
-int getStatus_Conf4_node12();
+#define ID_DigDir_4_node12 455
+extern int DigDir_4_node12;
+int doWrite_DigDir_4_node12(int value);
+int addWrite_DigDir_4_node12(int value);
+int getStatus_DigDir_4_node12();
  
-#define ID_Conf5_node12 456
-extern int Conf5_node12;
-int doWrite_Conf5_node12(int value);
-int addWrite_Conf5_node12(int value);
-int getStatus_Conf5_node12();
+#define ID_DigDir_5_node12 456
+extern int DigDir_5_node12;
+int doWrite_DigDir_5_node12(int value);
+int addWrite_DigDir_5_node12(int value);
+int getStatus_DigDir_5_node12();
  
-#define ID_Conf6_node12 457
-extern int Conf6_node12;
-int doWrite_Conf6_node12(int value);
-int addWrite_Conf6_node12(int value);
-int getStatus_Conf6_node12();
+#define ID_DigDir_6_node12 457
+extern int DigDir_6_node12;
+int doWrite_DigDir_6_node12(int value);
+int addWrite_DigDir_6_node12(int value);
+int getStatus_DigDir_6_node12();
  
-#define ID_Conf7_node12 458
-extern int Conf7_node12;
-int doWrite_Conf7_node12(int value);
-int addWrite_Conf7_node12(int value);
-int getStatus_Conf7_node12();
+#define ID_DigDir_7_node12 458
+extern int DigDir_7_node12;
+int doWrite_DigDir_7_node12(int value);
+int addWrite_DigDir_7_node12(int value);
+int getStatus_DigDir_7_node12();
  
-#define ID_Conf8_node12 459
-extern int Conf8_node12;
-int doWrite_Conf8_node12(int value);
-int addWrite_Conf8_node12(int value);
-int getStatus_Conf8_node12();
+#define ID_DigDir_8_node12 459
+extern int DigDir_8_node12;
+int doWrite_DigDir_8_node12(int value);
+int addWrite_DigDir_8_node12(int value);
+int getStatus_DigDir_8_node12();
  
-#define ID_digIN5_node12 460
-extern int digIN5_node12;
-int doWrite_digIN5_node12(int value);
-int addWrite_digIN5_node12(int value);
-int getStatus_digIN5_node12();
+#define ID_DigIn_2_node12 460
+extern int DigIn_2_node12;
+int doWrite_DigIn_2_node12(int value);
+int addWrite_DigIn_2_node12(int value);
+int getStatus_DigIn_2_node12();
  
-#define ID_digIN6_node12 461
-extern int digIN6_node12;
-int doWrite_digIN6_node12(int value);
-int addWrite_digIN6_node12(int value);
-int getStatus_digIN6_node12();
+#define ID_DigIn_3_node12 461
+extern int DigIn_3_node12;
+int doWrite_DigIn_3_node12(int value);
+int addWrite_DigIn_3_node12(int value);
+int getStatus_DigIn_3_node12();
  
-#define ID_digIN7_node12 462
-extern int digIN7_node12;
-int doWrite_digIN7_node12(int value);
-int addWrite_digIN7_node12(int value);
-int getStatus_digIN7_node12();
+#define ID_DigIn_6_node12 462
+extern int DigIn_6_node12;
+int doWrite_DigIn_6_node12(int value);
+int addWrite_DigIn_6_node12(int value);
+int getStatus_DigIn_6_node12();
  
-#define ID_digIN8_node12 463
-extern int digIN8_node12;
-int doWrite_digIN8_node12(int value);
-int addWrite_digIN8_node12(int value);
-int getStatus_digIN8_node12();
+#define ID_DigIn_7_node12 463
+extern int DigIn_7_node12;
+int doWrite_DigIn_7_node12(int value);
+int addWrite_DigIn_7_node12(int value);
+int getStatus_DigIn_7_node12();
  
-#define ID_digOUT1_node12 464
-extern int digOUT1_node12;
-int doWrite_digOUT1_node12(int value);
-int addWrite_digOUT1_node12(int value);
-int getStatus_digOUT1_node12();
+#define ID_DigOut_1_node12 464
+extern int DigOut_1_node12;
+int doWrite_DigOut_1_node12(int value);
+int addWrite_DigOut_1_node12(int value);
+int getStatus_DigOut_1_node12();
  
-#define ID_digOUT2_node12 465
-extern int digOUT2_node12;
-int doWrite_digOUT2_node12(int value);
-int addWrite_digOUT2_node12(int value);
-int getStatus_digOUT2_node12();
+#define ID_DigOut_4_node12 465
+extern int DigOut_4_node12;
+int doWrite_DigOut_4_node12(int value);
+int addWrite_DigOut_4_node12(int value);
+int getStatus_DigOut_4_node12();
  
-#define ID_digOUT3_node12 466
-extern int digOUT3_node12;
-int doWrite_digOUT3_node12(int value);
-int addWrite_digOUT3_node12(int value);
-int getStatus_digOUT3_node12();
+#define ID_DigOut_5_node12 466
+extern int DigOut_5_node12;
+int doWrite_DigOut_5_node12(int value);
+int addWrite_DigOut_5_node12(int value);
+int getStatus_DigOut_5_node12();
  
-#define ID_digOUT4_node12 467
-extern int digOUT4_node12;
-int doWrite_digOUT4_node12(int value);
-int addWrite_digOUT4_node12(int value);
-int getStatus_digOUT4_node12();
+#define ID_DigOut_8_node12 467
+extern int DigOut_8_node12;
+int doWrite_DigOut_8_node12(int value);
+int addWrite_DigOut_8_node12(int value);
+int getStatus_DigOut_8_node12();
  
 #define ID_Addr_node13 469
 extern u_int16_t Addr_node13;
@@ -1613,17 +1613,17 @@ int doWrite_Life_node13(u_int16_t value);
 int addWrite_Life_node13(u_int16_t value);
 int getStatus_Life_node13();
  
-#define ID_ConfAi1_node13 471
-extern u_int16_t ConfAi1_node13;
-int doWrite_ConfAi1_node13(u_int16_t value);
-int addWrite_ConfAi1_node13(u_int16_t value);
-int getStatus_ConfAi1_node13();
+#define ID_AnInCnf_1_node13 471
+extern u_int16_t AnInCnf_1_node13;
+int doWrite_AnInCnf_1_node13(u_int16_t value);
+int addWrite_AnInCnf_1_node13(u_int16_t value);
+int getStatus_AnInCnf_1_node13();
  
-#define ID_ConfAi2_node13 472
-extern u_int16_t ConfAi2_node13;
-int doWrite_ConfAi2_node13(u_int16_t value);
-int addWrite_ConfAi2_node13(u_int16_t value);
-int getStatus_ConfAi2_node13();
+#define ID_AnInCnf_2_node13 472
+extern u_int16_t AnInCnf_2_node13;
+int doWrite_AnInCnf_2_node13(u_int16_t value);
+int addWrite_AnInCnf_2_node13(u_int16_t value);
+int getStatus_AnInCnf_2_node13();
  
 #define ID_ValAi1_node13 473
 extern int16_t ValAi1_node13;
@@ -1637,101 +1637,101 @@ int doWrite_ValAi2_node13(int16_t value);
 int addWrite_ValAi2_node13(int16_t value);
 int getStatus_ValAi2_node13();
  
-#define ID_Conf1_node13 475
-extern int Conf1_node13;
-int doWrite_Conf1_node13(int value);
-int addWrite_Conf1_node13(int value);
-int getStatus_Conf1_node13();
+#define ID_DigDir_1_node13 475
+extern int DigDir_1_node13;
+int doWrite_DigDir_1_node13(int value);
+int addWrite_DigDir_1_node13(int value);
+int getStatus_DigDir_1_node13();
  
-#define ID_Conf2_node13 476
-extern int Conf2_node13;
-int doWrite_Conf2_node13(int value);
-int addWrite_Conf2_node13(int value);
-int getStatus_Conf2_node13();
+#define ID_DigDir_2_node13 476
+extern int DigDir_2_node13;
+int doWrite_DigDir_2_node13(int value);
+int addWrite_DigDir_2_node13(int value);
+int getStatus_DigDir_2_node13();
  
-#define ID_Conf3_node13 477
-extern int Conf3_node13;
-int doWrite_Conf3_node13(int value);
-int addWrite_Conf3_node13(int value);
-int getStatus_Conf3_node13();
+#define ID_DigDir_3_node13 477
+extern int DigDir_3_node13;
+int doWrite_DigDir_3_node13(int value);
+int addWrite_DigDir_3_node13(int value);
+int getStatus_DigDir_3_node13();
  
-#define ID_Conf4_node13 478
-extern int Conf4_node13;
-int doWrite_Conf4_node13(int value);
-int addWrite_Conf4_node13(int value);
-int getStatus_Conf4_node13();
+#define ID_DigDir_4_node13 478
+extern int DigDir_4_node13;
+int doWrite_DigDir_4_node13(int value);
+int addWrite_DigDir_4_node13(int value);
+int getStatus_DigDir_4_node13();
  
-#define ID_Conf5_node13 479
-extern int Conf5_node13;
-int doWrite_Conf5_node13(int value);
-int addWrite_Conf5_node13(int value);
-int getStatus_Conf5_node13();
+#define ID_DigDir_5_node13 479
+extern int DigDir_5_node13;
+int doWrite_DigDir_5_node13(int value);
+int addWrite_DigDir_5_node13(int value);
+int getStatus_DigDir_5_node13();
  
-#define ID_Conf6_node13 480
-extern int Conf6_node13;
-int doWrite_Conf6_node13(int value);
-int addWrite_Conf6_node13(int value);
-int getStatus_Conf6_node13();
+#define ID_DigDir_6_node13 480
+extern int DigDir_6_node13;
+int doWrite_DigDir_6_node13(int value);
+int addWrite_DigDir_6_node13(int value);
+int getStatus_DigDir_6_node13();
  
-#define ID_Conf7_node13 481
-extern int Conf7_node13;
-int doWrite_Conf7_node13(int value);
-int addWrite_Conf7_node13(int value);
-int getStatus_Conf7_node13();
+#define ID_DigDir_7_node13 481
+extern int DigDir_7_node13;
+int doWrite_DigDir_7_node13(int value);
+int addWrite_DigDir_7_node13(int value);
+int getStatus_DigDir_7_node13();
  
-#define ID_Conf8_node13 482
-extern int Conf8_node13;
-int doWrite_Conf8_node13(int value);
-int addWrite_Conf8_node13(int value);
-int getStatus_Conf8_node13();
+#define ID_DigDir_8_node13 482
+extern int DigDir_8_node13;
+int doWrite_DigDir_8_node13(int value);
+int addWrite_DigDir_8_node13(int value);
+int getStatus_DigDir_8_node13();
  
-#define ID_digIN5_node13 483
-extern int digIN5_node13;
-int doWrite_digIN5_node13(int value);
-int addWrite_digIN5_node13(int value);
-int getStatus_digIN5_node13();
+#define ID_DigIn_2_node13 483
+extern int DigIn_2_node13;
+int doWrite_DigIn_2_node13(int value);
+int addWrite_DigIn_2_node13(int value);
+int getStatus_DigIn_2_node13();
  
-#define ID_digIN6_node13 484
-extern int digIN6_node13;
-int doWrite_digIN6_node13(int value);
-int addWrite_digIN6_node13(int value);
-int getStatus_digIN6_node13();
+#define ID_DigIn_3_node13 484
+extern int DigIn_3_node13;
+int doWrite_DigIn_3_node13(int value);
+int addWrite_DigIn_3_node13(int value);
+int getStatus_DigIn_3_node13();
  
-#define ID_digIN7_node13 485
-extern int digIN7_node13;
-int doWrite_digIN7_node13(int value);
-int addWrite_digIN7_node13(int value);
-int getStatus_digIN7_node13();
+#define ID_DigIn_6_node13 485
+extern int DigIn_6_node13;
+int doWrite_DigIn_6_node13(int value);
+int addWrite_DigIn_6_node13(int value);
+int getStatus_DigIn_6_node13();
  
-#define ID_digIN8_node13 486
-extern int digIN8_node13;
-int doWrite_digIN8_node13(int value);
-int addWrite_digIN8_node13(int value);
-int getStatus_digIN8_node13();
+#define ID_DigIn_7_node13 486
+extern int DigIn_7_node13;
+int doWrite_DigIn_7_node13(int value);
+int addWrite_DigIn_7_node13(int value);
+int getStatus_DigIn_7_node13();
  
-#define ID_digOUT1_node13 487
-extern int digOUT1_node13;
-int doWrite_digOUT1_node13(int value);
-int addWrite_digOUT1_node13(int value);
-int getStatus_digOUT1_node13();
+#define ID_DigOut_1_node13 487
+extern int DigOut_1_node13;
+int doWrite_DigOut_1_node13(int value);
+int addWrite_DigOut_1_node13(int value);
+int getStatus_DigOut_1_node13();
  
-#define ID_digOUT2_node13 488
-extern int digOUT2_node13;
-int doWrite_digOUT2_node13(int value);
-int addWrite_digOUT2_node13(int value);
-int getStatus_digOUT2_node13();
+#define ID_DigOut_4_node13 488
+extern int DigOut_4_node13;
+int doWrite_DigOut_4_node13(int value);
+int addWrite_DigOut_4_node13(int value);
+int getStatus_DigOut_4_node13();
  
-#define ID_digOUT3_node13 489
-extern int digOUT3_node13;
-int doWrite_digOUT3_node13(int value);
-int addWrite_digOUT3_node13(int value);
-int getStatus_digOUT3_node13();
+#define ID_DigOut_5_node13 489
+extern int DigOut_5_node13;
+int doWrite_DigOut_5_node13(int value);
+int addWrite_DigOut_5_node13(int value);
+int getStatus_DigOut_5_node13();
  
-#define ID_digOUT4_node13 490
-extern int digOUT4_node13;
-int doWrite_digOUT4_node13(int value);
-int addWrite_digOUT4_node13(int value);
-int getStatus_digOUT4_node13();
+#define ID_DigOut_8_node13 490
+extern int DigOut_8_node13;
+int doWrite_DigOut_8_node13(int value);
+int addWrite_DigOut_8_node13(int value);
+int getStatus_DigOut_8_node13();
  
 #define ID_Addr_node14 492
 extern u_int16_t Addr_node14;
@@ -1745,17 +1745,17 @@ int doWrite_Life_node14(u_int16_t value);
 int addWrite_Life_node14(u_int16_t value);
 int getStatus_Life_node14();
  
-#define ID_ConfAi1_node14 494
-extern u_int16_t ConfAi1_node14;
-int doWrite_ConfAi1_node14(u_int16_t value);
-int addWrite_ConfAi1_node14(u_int16_t value);
-int getStatus_ConfAi1_node14();
+#define ID_AnInCnf_1_node14 494
+extern u_int16_t AnInCnf_1_node14;
+int doWrite_AnInCnf_1_node14(u_int16_t value);
+int addWrite_AnInCnf_1_node14(u_int16_t value);
+int getStatus_AnInCnf_1_node14();
  
-#define ID_ConfAi2_node14 495
-extern u_int16_t ConfAi2_node14;
-int doWrite_ConfAi2_node14(u_int16_t value);
-int addWrite_ConfAi2_node14(u_int16_t value);
-int getStatus_ConfAi2_node14();
+#define ID_AnInCnf_2_node14 495
+extern u_int16_t AnInCnf_2_node14;
+int doWrite_AnInCnf_2_node14(u_int16_t value);
+int addWrite_AnInCnf_2_node14(u_int16_t value);
+int getStatus_AnInCnf_2_node14();
  
 #define ID_ValAi1_node14 496
 extern int16_t ValAi1_node14;
@@ -1769,101 +1769,101 @@ int doWrite_ValAi2_node14(int16_t value);
 int addWrite_ValAi2_node14(int16_t value);
 int getStatus_ValAi2_node14();
  
-#define ID_Conf1_node14 498
-extern int Conf1_node14;
-int doWrite_Conf1_node14(int value);
-int addWrite_Conf1_node14(int value);
-int getStatus_Conf1_node14();
+#define ID_DigDir_1_node14 498
+extern int DigDir_1_node14;
+int doWrite_DigDir_1_node14(int value);
+int addWrite_DigDir_1_node14(int value);
+int getStatus_DigDir_1_node14();
  
-#define ID_Conf2_node14 499
-extern int Conf2_node14;
-int doWrite_Conf2_node14(int value);
-int addWrite_Conf2_node14(int value);
-int getStatus_Conf2_node14();
+#define ID_DigDir_2_node14 499
+extern int DigDir_2_node14;
+int doWrite_DigDir_2_node14(int value);
+int addWrite_DigDir_2_node14(int value);
+int getStatus_DigDir_2_node14();
  
-#define ID_Conf3_node14 500
-extern int Conf3_node14;
-int doWrite_Conf3_node14(int value);
-int addWrite_Conf3_node14(int value);
-int getStatus_Conf3_node14();
+#define ID_DigDir_3_node14 500
+extern int DigDir_3_node14;
+int doWrite_DigDir_3_node14(int value);
+int addWrite_DigDir_3_node14(int value);
+int getStatus_DigDir_3_node14();
  
-#define ID_Conf4_node14 501
-extern int Conf4_node14;
-int doWrite_Conf4_node14(int value);
-int addWrite_Conf4_node14(int value);
-int getStatus_Conf4_node14();
+#define ID_DigDir_4_node14 501
+extern int DigDir_4_node14;
+int doWrite_DigDir_4_node14(int value);
+int addWrite_DigDir_4_node14(int value);
+int getStatus_DigDir_4_node14();
  
-#define ID_Conf5_node14 502
-extern int Conf5_node14;
-int doWrite_Conf5_node14(int value);
-int addWrite_Conf5_node14(int value);
-int getStatus_Conf5_node14();
+#define ID_DigDir_5_node14 502
+extern int DigDir_5_node14;
+int doWrite_DigDir_5_node14(int value);
+int addWrite_DigDir_5_node14(int value);
+int getStatus_DigDir_5_node14();
  
-#define ID_Conf6_node14 503
-extern int Conf6_node14;
-int doWrite_Conf6_node14(int value);
-int addWrite_Conf6_node14(int value);
-int getStatus_Conf6_node14();
+#define ID_DigDir_6_node14 503
+extern int DigDir_6_node14;
+int doWrite_DigDir_6_node14(int value);
+int addWrite_DigDir_6_node14(int value);
+int getStatus_DigDir_6_node14();
  
-#define ID_Conf7_node14 504
-extern int Conf7_node14;
-int doWrite_Conf7_node14(int value);
-int addWrite_Conf7_node14(int value);
-int getStatus_Conf7_node14();
+#define ID_DigDir_7_node14 504
+extern int DigDir_7_node14;
+int doWrite_DigDir_7_node14(int value);
+int addWrite_DigDir_7_node14(int value);
+int getStatus_DigDir_7_node14();
  
-#define ID_Conf8_node14 505
-extern int Conf8_node14;
-int doWrite_Conf8_node14(int value);
-int addWrite_Conf8_node14(int value);
-int getStatus_Conf8_node14();
+#define ID_DigDir_8_node14 505
+extern int DigDir_8_node14;
+int doWrite_DigDir_8_node14(int value);
+int addWrite_DigDir_8_node14(int value);
+int getStatus_DigDir_8_node14();
  
-#define ID_digIN5_node14 506
-extern int digIN5_node14;
-int doWrite_digIN5_node14(int value);
-int addWrite_digIN5_node14(int value);
-int getStatus_digIN5_node14();
+#define ID_DigIn_2_node14 506
+extern int DigIn_2_node14;
+int doWrite_DigIn_2_node14(int value);
+int addWrite_DigIn_2_node14(int value);
+int getStatus_DigIn_2_node14();
  
-#define ID_digIN6_node14 507
-extern int digIN6_node14;
-int doWrite_digIN6_node14(int value);
-int addWrite_digIN6_node14(int value);
-int getStatus_digIN6_node14();
+#define ID_DigIn_3_node14 507
+extern int DigIn_3_node14;
+int doWrite_DigIn_3_node14(int value);
+int addWrite_DigIn_3_node14(int value);
+int getStatus_DigIn_3_node14();
  
-#define ID_digIN7_node14 508
-extern int digIN7_node14;
-int doWrite_digIN7_node14(int value);
-int addWrite_digIN7_node14(int value);
-int getStatus_digIN7_node14();
+#define ID_DigIn_6_node14 508
+extern int DigIn_6_node14;
+int doWrite_DigIn_6_node14(int value);
+int addWrite_DigIn_6_node14(int value);
+int getStatus_DigIn_6_node14();
  
-#define ID_digIN8_node14 509
-extern int digIN8_node14;
-int doWrite_digIN8_node14(int value);
-int addWrite_digIN8_node14(int value);
-int getStatus_digIN8_node14();
+#define ID_DigIn_7_node14 509
+extern int DigIn_7_node14;
+int doWrite_DigIn_7_node14(int value);
+int addWrite_DigIn_7_node14(int value);
+int getStatus_DigIn_7_node14();
  
-#define ID_digOUT1_node14 510
-extern int digOUT1_node14;
-int doWrite_digOUT1_node14(int value);
-int addWrite_digOUT1_node14(int value);
-int getStatus_digOUT1_node14();
+#define ID_DigOut_1_node14 510
+extern int DigOut_1_node14;
+int doWrite_DigOut_1_node14(int value);
+int addWrite_DigOut_1_node14(int value);
+int getStatus_DigOut_1_node14();
  
-#define ID_digOUT2_node14 511
-extern int digOUT2_node14;
-int doWrite_digOUT2_node14(int value);
-int addWrite_digOUT2_node14(int value);
-int getStatus_digOUT2_node14();
+#define ID_DigOut_4_node14 511
+extern int DigOut_4_node14;
+int doWrite_DigOut_4_node14(int value);
+int addWrite_DigOut_4_node14(int value);
+int getStatus_DigOut_4_node14();
  
-#define ID_digOUT3_node14 512
-extern int digOUT3_node14;
-int doWrite_digOUT3_node14(int value);
-int addWrite_digOUT3_node14(int value);
-int getStatus_digOUT3_node14();
+#define ID_DigOut_5_node14 512
+extern int DigOut_5_node14;
+int doWrite_DigOut_5_node14(int value);
+int addWrite_DigOut_5_node14(int value);
+int getStatus_DigOut_5_node14();
  
-#define ID_digOUT4_node14 513
-extern int digOUT4_node14;
-int doWrite_digOUT4_node14(int value);
-int addWrite_digOUT4_node14(int value);
-int getStatus_digOUT4_node14();
+#define ID_DigOut_8_node14 513
+extern int DigOut_8_node14;
+int doWrite_DigOut_8_node14(int value);
+int addWrite_DigOut_8_node14(int value);
+int getStatus_DigOut_8_node14();
  
 #define ID_Addr_node15 515
 extern u_int16_t Addr_node15;
@@ -1877,17 +1877,17 @@ int doWrite_Life_node15(u_int16_t value);
 int addWrite_Life_node15(u_int16_t value);
 int getStatus_Life_node15();
  
-#define ID_ConfAi1_node15 517
-extern u_int16_t ConfAi1_node15;
-int doWrite_ConfAi1_node15(u_int16_t value);
-int addWrite_ConfAi1_node15(u_int16_t value);
-int getStatus_ConfAi1_node15();
+#define ID_AnInCnf_1_node15 517
+extern u_int16_t AnInCnf_1_node15;
+int doWrite_AnInCnf_1_node15(u_int16_t value);
+int addWrite_AnInCnf_1_node15(u_int16_t value);
+int getStatus_AnInCnf_1_node15();
  
-#define ID_ConfAi2_node15 518
-extern u_int16_t ConfAi2_node15;
-int doWrite_ConfAi2_node15(u_int16_t value);
-int addWrite_ConfAi2_node15(u_int16_t value);
-int getStatus_ConfAi2_node15();
+#define ID_AnInCnf_2_node15 518
+extern u_int16_t AnInCnf_2_node15;
+int doWrite_AnInCnf_2_node15(u_int16_t value);
+int addWrite_AnInCnf_2_node15(u_int16_t value);
+int getStatus_AnInCnf_2_node15();
  
 #define ID_ValAi1_node15 519
 extern int16_t ValAi1_node15;
@@ -1901,101 +1901,101 @@ int doWrite_ValAi2_node15(int16_t value);
 int addWrite_ValAi2_node15(int16_t value);
 int getStatus_ValAi2_node15();
  
-#define ID_Conf1_node15 521
-extern int Conf1_node15;
-int doWrite_Conf1_node15(int value);
-int addWrite_Conf1_node15(int value);
-int getStatus_Conf1_node15();
+#define ID_DigDir_1_node15 521
+extern int DigDir_1_node15;
+int doWrite_DigDir_1_node15(int value);
+int addWrite_DigDir_1_node15(int value);
+int getStatus_DigDir_1_node15();
  
-#define ID_Conf2_node15 522
-extern int Conf2_node15;
-int doWrite_Conf2_node15(int value);
-int addWrite_Conf2_node15(int value);
-int getStatus_Conf2_node15();
+#define ID_DigDir_2_node15 522
+extern int DigDir_2_node15;
+int doWrite_DigDir_2_node15(int value);
+int addWrite_DigDir_2_node15(int value);
+int getStatus_DigDir_2_node15();
  
-#define ID_Conf3_node15 523
-extern int Conf3_node15;
-int doWrite_Conf3_node15(int value);
-int addWrite_Conf3_node15(int value);
-int getStatus_Conf3_node15();
+#define ID_DigDir_3_node15 523
+extern int DigDir_3_node15;
+int doWrite_DigDir_3_node15(int value);
+int addWrite_DigDir_3_node15(int value);
+int getStatus_DigDir_3_node15();
  
-#define ID_Conf4_node15 524
-extern int Conf4_node15;
-int doWrite_Conf4_node15(int value);
-int addWrite_Conf4_node15(int value);
-int getStatus_Conf4_node15();
+#define ID_DigDir_4_node15 524
+extern int DigDir_4_node15;
+int doWrite_DigDir_4_node15(int value);
+int addWrite_DigDir_4_node15(int value);
+int getStatus_DigDir_4_node15();
  
-#define ID_Conf5_node15 525
-extern int Conf5_node15;
-int doWrite_Conf5_node15(int value);
-int addWrite_Conf5_node15(int value);
-int getStatus_Conf5_node15();
+#define ID_DigDir_5_node15 525
+extern int DigDir_5_node15;
+int doWrite_DigDir_5_node15(int value);
+int addWrite_DigDir_5_node15(int value);
+int getStatus_DigDir_5_node15();
  
-#define ID_Conf6_node15 526
-extern int Conf6_node15;
-int doWrite_Conf6_node15(int value);
-int addWrite_Conf6_node15(int value);
-int getStatus_Conf6_node15();
+#define ID_DigDir_6_node15 526
+extern int DigDir_6_node15;
+int doWrite_DigDir_6_node15(int value);
+int addWrite_DigDir_6_node15(int value);
+int getStatus_DigDir_6_node15();
  
-#define ID_Conf7_node15 527
-extern int Conf7_node15;
-int doWrite_Conf7_node15(int value);
-int addWrite_Conf7_node15(int value);
-int getStatus_Conf7_node15();
+#define ID_DigDir_7_node15 527
+extern int DigDir_7_node15;
+int doWrite_DigDir_7_node15(int value);
+int addWrite_DigDir_7_node15(int value);
+int getStatus_DigDir_7_node15();
  
-#define ID_Conf8_node15 528
-extern int Conf8_node15;
-int doWrite_Conf8_node15(int value);
-int addWrite_Conf8_node15(int value);
-int getStatus_Conf8_node15();
+#define ID_DigDir_8_node15 528
+extern int DigDir_8_node15;
+int doWrite_DigDir_8_node15(int value);
+int addWrite_DigDir_8_node15(int value);
+int getStatus_DigDir_8_node15();
  
-#define ID_digIN5_node15 529
-extern int digIN5_node15;
-int doWrite_digIN5_node15(int value);
-int addWrite_digIN5_node15(int value);
-int getStatus_digIN5_node15();
+#define ID_DigIn_2_node15 529
+extern int DigIn_2_node15;
+int doWrite_DigIn_2_node15(int value);
+int addWrite_DigIn_2_node15(int value);
+int getStatus_DigIn_2_node15();
  
-#define ID_digIN6_node15 530
-extern int digIN6_node15;
-int doWrite_digIN6_node15(int value);
-int addWrite_digIN6_node15(int value);
-int getStatus_digIN6_node15();
+#define ID_DigIn_3_node15 530
+extern int DigIn_3_node15;
+int doWrite_DigIn_3_node15(int value);
+int addWrite_DigIn_3_node15(int value);
+int getStatus_DigIn_3_node15();
  
-#define ID_digIN7_node15 531
-extern int digIN7_node15;
-int doWrite_digIN7_node15(int value);
-int addWrite_digIN7_node15(int value);
-int getStatus_digIN7_node15();
+#define ID_DigIn_6_node15 531
+extern int DigIn_6_node15;
+int doWrite_DigIn_6_node15(int value);
+int addWrite_DigIn_6_node15(int value);
+int getStatus_DigIn_6_node15();
  
-#define ID_digIN8_node15 532
-extern int digIN8_node15;
-int doWrite_digIN8_node15(int value);
-int addWrite_digIN8_node15(int value);
-int getStatus_digIN8_node15();
+#define ID_DigIn_7_node15 532
+extern int DigIn_7_node15;
+int doWrite_DigIn_7_node15(int value);
+int addWrite_DigIn_7_node15(int value);
+int getStatus_DigIn_7_node15();
  
-#define ID_digOUT1_node15 533
-extern int digOUT1_node15;
-int doWrite_digOUT1_node15(int value);
-int addWrite_digOUT1_node15(int value);
-int getStatus_digOUT1_node15();
+#define ID_DigOut_1_node15 533
+extern int DigOut_1_node15;
+int doWrite_DigOut_1_node15(int value);
+int addWrite_DigOut_1_node15(int value);
+int getStatus_DigOut_1_node15();
  
-#define ID_digOUT2_node15 534
-extern int digOUT2_node15;
-int doWrite_digOUT2_node15(int value);
-int addWrite_digOUT2_node15(int value);
-int getStatus_digOUT2_node15();
+#define ID_DigOut_4_node15 534
+extern int DigOut_4_node15;
+int doWrite_DigOut_4_node15(int value);
+int addWrite_DigOut_4_node15(int value);
+int getStatus_DigOut_4_node15();
  
-#define ID_digOUT3_node15 535
-extern int digOUT3_node15;
-int doWrite_digOUT3_node15(int value);
-int addWrite_digOUT3_node15(int value);
-int getStatus_digOUT3_node15();
+#define ID_DigOut_5_node15 535
+extern int DigOut_5_node15;
+int doWrite_DigOut_5_node15(int value);
+int addWrite_DigOut_5_node15(int value);
+int getStatus_DigOut_5_node15();
  
-#define ID_digOUT4_node15 536
-extern int digOUT4_node15;
-int doWrite_digOUT4_node15(int value);
-int addWrite_digOUT4_node15(int value);
-int getStatus_digOUT4_node15();
+#define ID_DigOut_8_node15 536
+extern int DigOut_8_node15;
+int doWrite_DigOut_8_node15(int value);
+int addWrite_DigOut_8_node15(int value);
+int getStatus_DigOut_8_node15();
  
 #define ID_Addr_node16 538
 extern u_int16_t Addr_node16;
@@ -2009,17 +2009,17 @@ int doWrite_Life_node16(u_int16_t value);
 int addWrite_Life_node16(u_int16_t value);
 int getStatus_Life_node16();
  
-#define ID_ConfAi1_node16 540
-extern u_int16_t ConfAi1_node16;
-int doWrite_ConfAi1_node16(u_int16_t value);
-int addWrite_ConfAi1_node16(u_int16_t value);
-int getStatus_ConfAi1_node16();
+#define ID_AnInCnf_1_node16 540
+extern u_int16_t AnInCnf_1_node16;
+int doWrite_AnInCnf_1_node16(u_int16_t value);
+int addWrite_AnInCnf_1_node16(u_int16_t value);
+int getStatus_AnInCnf_1_node16();
  
-#define ID_ConfAi2_node16 541
-extern u_int16_t ConfAi2_node16;
-int doWrite_ConfAi2_node16(u_int16_t value);
-int addWrite_ConfAi2_node16(u_int16_t value);
-int getStatus_ConfAi2_node16();
+#define ID_AnInCnf_2_node16 541
+extern u_int16_t AnInCnf_2_node16;
+int doWrite_AnInCnf_2_node16(u_int16_t value);
+int addWrite_AnInCnf_2_node16(u_int16_t value);
+int getStatus_AnInCnf_2_node16();
  
 #define ID_ValAi1_node16 542
 extern int16_t ValAi1_node16;
@@ -2033,101 +2033,101 @@ int doWrite_ValAi2_node16(int16_t value);
 int addWrite_ValAi2_node16(int16_t value);
 int getStatus_ValAi2_node16();
  
-#define ID_Conf1_node16 544
-extern int Conf1_node16;
-int doWrite_Conf1_node16(int value);
-int addWrite_Conf1_node16(int value);
-int getStatus_Conf1_node16();
+#define ID_DigDir_1_node16 544
+extern int DigDir_1_node16;
+int doWrite_DigDir_1_node16(int value);
+int addWrite_DigDir_1_node16(int value);
+int getStatus_DigDir_1_node16();
  
-#define ID_Conf2_node16 545
-extern int Conf2_node16;
-int doWrite_Conf2_node16(int value);
-int addWrite_Conf2_node16(int value);
-int getStatus_Conf2_node16();
+#define ID_DigDir_2_node16 545
+extern int DigDir_2_node16;
+int doWrite_DigDir_2_node16(int value);
+int addWrite_DigDir_2_node16(int value);
+int getStatus_DigDir_2_node16();
  
-#define ID_Conf3_node16 546
-extern int Conf3_node16;
-int doWrite_Conf3_node16(int value);
-int addWrite_Conf3_node16(int value);
-int getStatus_Conf3_node16();
+#define ID_DigDir_3_node16 546
+extern int DigDir_3_node16;
+int doWrite_DigDir_3_node16(int value);
+int addWrite_DigDir_3_node16(int value);
+int getStatus_DigDir_3_node16();
  
-#define ID_Conf4_node16 547
-extern int Conf4_node16;
-int doWrite_Conf4_node16(int value);
-int addWrite_Conf4_node16(int value);
-int getStatus_Conf4_node16();
+#define ID_DigDir_4_node16 547
+extern int DigDir_4_node16;
+int doWrite_DigDir_4_node16(int value);
+int addWrite_DigDir_4_node16(int value);
+int getStatus_DigDir_4_node16();
  
-#define ID_Conf5_node16 548
-extern int Conf5_node16;
-int doWrite_Conf5_node16(int value);
-int addWrite_Conf5_node16(int value);
-int getStatus_Conf5_node16();
+#define ID_DigDir_5_node16 548
+extern int DigDir_5_node16;
+int doWrite_DigDir_5_node16(int value);
+int addWrite_DigDir_5_node16(int value);
+int getStatus_DigDir_5_node16();
  
-#define ID_Conf6_node16 549
-extern int Conf6_node16;
-int doWrite_Conf6_node16(int value);
-int addWrite_Conf6_node16(int value);
-int getStatus_Conf6_node16();
+#define ID_DigDir_6_node16 549
+extern int DigDir_6_node16;
+int doWrite_DigDir_6_node16(int value);
+int addWrite_DigDir_6_node16(int value);
+int getStatus_DigDir_6_node16();
  
-#define ID_Conf7_node16 550
-extern int Conf7_node16;
-int doWrite_Conf7_node16(int value);
-int addWrite_Conf7_node16(int value);
-int getStatus_Conf7_node16();
+#define ID_DigDir_7_node16 550
+extern int DigDir_7_node16;
+int doWrite_DigDir_7_node16(int value);
+int addWrite_DigDir_7_node16(int value);
+int getStatus_DigDir_7_node16();
  
-#define ID_Conf8_node16 551
-extern int Conf8_node16;
-int doWrite_Conf8_node16(int value);
-int addWrite_Conf8_node16(int value);
-int getStatus_Conf8_node16();
+#define ID_DigDir_8_node16 551
+extern int DigDir_8_node16;
+int doWrite_DigDir_8_node16(int value);
+int addWrite_DigDir_8_node16(int value);
+int getStatus_DigDir_8_node16();
  
-#define ID_digIN5_node16 552
-extern int digIN5_node16;
-int doWrite_digIN5_node16(int value);
-int addWrite_digIN5_node16(int value);
-int getStatus_digIN5_node16();
+#define ID_DigIn_2_node16 552
+extern int DigIn_2_node16;
+int doWrite_DigIn_2_node16(int value);
+int addWrite_DigIn_2_node16(int value);
+int getStatus_DigIn_2_node16();
  
-#define ID_digIN6_node16 553
-extern int digIN6_node16;
-int doWrite_digIN6_node16(int value);
-int addWrite_digIN6_node16(int value);
-int getStatus_digIN6_node16();
+#define ID_DigIn_3_node16 553
+extern int DigIn_3_node16;
+int doWrite_DigIn_3_node16(int value);
+int addWrite_DigIn_3_node16(int value);
+int getStatus_DigIn_3_node16();
  
-#define ID_digIN7_node16 554
-extern int digIN7_node16;
-int doWrite_digIN7_node16(int value);
-int addWrite_digIN7_node16(int value);
-int getStatus_digIN7_node16();
+#define ID_DigIn_6_node16 554
+extern int DigIn_6_node16;
+int doWrite_DigIn_6_node16(int value);
+int addWrite_DigIn_6_node16(int value);
+int getStatus_DigIn_6_node16();
  
-#define ID_digIN8_node16 555
-extern int digIN8_node16;
-int doWrite_digIN8_node16(int value);
-int addWrite_digIN8_node16(int value);
-int getStatus_digIN8_node16();
+#define ID_DigIn_7_node16 555
+extern int DigIn_7_node16;
+int doWrite_DigIn_7_node16(int value);
+int addWrite_DigIn_7_node16(int value);
+int getStatus_DigIn_7_node16();
  
-#define ID_digOUT1_node16 556
-extern int digOUT1_node16;
-int doWrite_digOUT1_node16(int value);
-int addWrite_digOUT1_node16(int value);
-int getStatus_digOUT1_node16();
+#define ID_DigOut_1_node16 556
+extern int DigOut_1_node16;
+int doWrite_DigOut_1_node16(int value);
+int addWrite_DigOut_1_node16(int value);
+int getStatus_DigOut_1_node16();
  
-#define ID_digOUT2_node16 557
-extern int digOUT2_node16;
-int doWrite_digOUT2_node16(int value);
-int addWrite_digOUT2_node16(int value);
-int getStatus_digOUT2_node16();
+#define ID_DigOut_4_node16 557
+extern int DigOut_4_node16;
+int doWrite_DigOut_4_node16(int value);
+int addWrite_DigOut_4_node16(int value);
+int getStatus_DigOut_4_node16();
  
-#define ID_digOUT3_node16 558
-extern int digOUT3_node16;
-int doWrite_digOUT3_node16(int value);
-int addWrite_digOUT3_node16(int value);
-int getStatus_digOUT3_node16();
+#define ID_DigOut_5_node16 558
+extern int DigOut_5_node16;
+int doWrite_DigOut_5_node16(int value);
+int addWrite_DigOut_5_node16(int value);
+int getStatus_DigOut_5_node16();
  
-#define ID_digOUT4_node16 559
-extern int digOUT4_node16;
-int doWrite_digOUT4_node16(int value);
-int addWrite_digOUT4_node16(int value);
-int getStatus_digOUT4_node16();
+#define ID_DigOut_8_node16 559
+extern int DigOut_8_node16;
+int doWrite_DigOut_8_node16(int value);
+int addWrite_DigOut_8_node16(int value);
+int getStatus_DigOut_8_node16();
  
 #define ID_Addr_node17 561
 extern u_int16_t Addr_node17;
@@ -2141,17 +2141,17 @@ int doWrite_Life_node17(u_int16_t value);
 int addWrite_Life_node17(u_int16_t value);
 int getStatus_Life_node17();
  
-#define ID_ConfAi1_node17 563
-extern u_int16_t ConfAi1_node17;
-int doWrite_ConfAi1_node17(u_int16_t value);
-int addWrite_ConfAi1_node17(u_int16_t value);
-int getStatus_ConfAi1_node17();
+#define ID_AnInCnf_1_node17 563
+extern u_int16_t AnInCnf_1_node17;
+int doWrite_AnInCnf_1_node17(u_int16_t value);
+int addWrite_AnInCnf_1_node17(u_int16_t value);
+int getStatus_AnInCnf_1_node17();
  
-#define ID_ConfAi2_node17 564
-extern u_int16_t ConfAi2_node17;
-int doWrite_ConfAi2_node17(u_int16_t value);
-int addWrite_ConfAi2_node17(u_int16_t value);
-int getStatus_ConfAi2_node17();
+#define ID_AnInCnf_2_node17 564
+extern u_int16_t AnInCnf_2_node17;
+int doWrite_AnInCnf_2_node17(u_int16_t value);
+int addWrite_AnInCnf_2_node17(u_int16_t value);
+int getStatus_AnInCnf_2_node17();
  
 #define ID_ValAi1_node17 565
 extern int16_t ValAi1_node17;
@@ -2165,101 +2165,101 @@ int doWrite_ValAi2_node17(int16_t value);
 int addWrite_ValAi2_node17(int16_t value);
 int getStatus_ValAi2_node17();
  
-#define ID_Conf1_node17 567
-extern int Conf1_node17;
-int doWrite_Conf1_node17(int value);
-int addWrite_Conf1_node17(int value);
-int getStatus_Conf1_node17();
+#define ID_DigDir_1_node17 567
+extern int DigDir_1_node17;
+int doWrite_DigDir_1_node17(int value);
+int addWrite_DigDir_1_node17(int value);
+int getStatus_DigDir_1_node17();
  
-#define ID_Conf2_node17 568
-extern int Conf2_node17;
-int doWrite_Conf2_node17(int value);
-int addWrite_Conf2_node17(int value);
-int getStatus_Conf2_node17();
+#define ID_DigDir_2_node17 568
+extern int DigDir_2_node17;
+int doWrite_DigDir_2_node17(int value);
+int addWrite_DigDir_2_node17(int value);
+int getStatus_DigDir_2_node17();
  
-#define ID_Conf3_node17 569
-extern int Conf3_node17;
-int doWrite_Conf3_node17(int value);
-int addWrite_Conf3_node17(int value);
-int getStatus_Conf3_node17();
+#define ID_DigDir_3_node17 569
+extern int DigDir_3_node17;
+int doWrite_DigDir_3_node17(int value);
+int addWrite_DigDir_3_node17(int value);
+int getStatus_DigDir_3_node17();
  
-#define ID_Conf4_node17 570
-extern int Conf4_node17;
-int doWrite_Conf4_node17(int value);
-int addWrite_Conf4_node17(int value);
-int getStatus_Conf4_node17();
+#define ID_DigDir_4_node17 570
+extern int DigDir_4_node17;
+int doWrite_DigDir_4_node17(int value);
+int addWrite_DigDir_4_node17(int value);
+int getStatus_DigDir_4_node17();
  
-#define ID_Conf5_node17 571
-extern int Conf5_node17;
-int doWrite_Conf5_node17(int value);
-int addWrite_Conf5_node17(int value);
-int getStatus_Conf5_node17();
+#define ID_DigDir_5_node17 571
+extern int DigDir_5_node17;
+int doWrite_DigDir_5_node17(int value);
+int addWrite_DigDir_5_node17(int value);
+int getStatus_DigDir_5_node17();
  
-#define ID_Conf6_node17 572
-extern int Conf6_node17;
-int doWrite_Conf6_node17(int value);
-int addWrite_Conf6_node17(int value);
-int getStatus_Conf6_node17();
+#define ID_DigDir_6_node17 572
+extern int DigDir_6_node17;
+int doWrite_DigDir_6_node17(int value);
+int addWrite_DigDir_6_node17(int value);
+int getStatus_DigDir_6_node17();
  
-#define ID_Conf7_node17 573
-extern int Conf7_node17;
-int doWrite_Conf7_node17(int value);
-int addWrite_Conf7_node17(int value);
-int getStatus_Conf7_node17();
+#define ID_DigDir_7_node17 573
+extern int DigDir_7_node17;
+int doWrite_DigDir_7_node17(int value);
+int addWrite_DigDir_7_node17(int value);
+int getStatus_DigDir_7_node17();
  
-#define ID_Conf8_node17 574
-extern int Conf8_node17;
-int doWrite_Conf8_node17(int value);
-int addWrite_Conf8_node17(int value);
-int getStatus_Conf8_node17();
+#define ID_DigDir_8_node17 574
+extern int DigDir_8_node17;
+int doWrite_DigDir_8_node17(int value);
+int addWrite_DigDir_8_node17(int value);
+int getStatus_DigDir_8_node17();
  
-#define ID_digIN5_node17 575
-extern int digIN5_node17;
-int doWrite_digIN5_node17(int value);
-int addWrite_digIN5_node17(int value);
-int getStatus_digIN5_node17();
+#define ID_DigIn_2_node17 575
+extern int DigIn_2_node17;
+int doWrite_DigIn_2_node17(int value);
+int addWrite_DigIn_2_node17(int value);
+int getStatus_DigIn_2_node17();
  
-#define ID_digIN6_node17 576
-extern int digIN6_node17;
-int doWrite_digIN6_node17(int value);
-int addWrite_digIN6_node17(int value);
-int getStatus_digIN6_node17();
+#define ID_DigIn_3_node17 576
+extern int DigIn_3_node17;
+int doWrite_DigIn_3_node17(int value);
+int addWrite_DigIn_3_node17(int value);
+int getStatus_DigIn_3_node17();
  
-#define ID_digIN7_node17 577
-extern int digIN7_node17;
-int doWrite_digIN7_node17(int value);
-int addWrite_digIN7_node17(int value);
-int getStatus_digIN7_node17();
+#define ID_DigIn_6_node17 577
+extern int DigIn_6_node17;
+int doWrite_DigIn_6_node17(int value);
+int addWrite_DigIn_6_node17(int value);
+int getStatus_DigIn_6_node17();
  
-#define ID_digIN8_node17 578
-extern int digIN8_node17;
-int doWrite_digIN8_node17(int value);
-int addWrite_digIN8_node17(int value);
-int getStatus_digIN8_node17();
+#define ID_DigIn_7_node17 578
+extern int DigIn_7_node17;
+int doWrite_DigIn_7_node17(int value);
+int addWrite_DigIn_7_node17(int value);
+int getStatus_DigIn_7_node17();
  
-#define ID_digOUT1_node17 579
-extern int digOUT1_node17;
-int doWrite_digOUT1_node17(int value);
-int addWrite_digOUT1_node17(int value);
-int getStatus_digOUT1_node17();
+#define ID_DigOut_1_node17 579
+extern int DigOut_1_node17;
+int doWrite_DigOut_1_node17(int value);
+int addWrite_DigOut_1_node17(int value);
+int getStatus_DigOut_1_node17();
  
-#define ID_digOUT2_node17 580
-extern int digOUT2_node17;
-int doWrite_digOUT2_node17(int value);
-int addWrite_digOUT2_node17(int value);
-int getStatus_digOUT2_node17();
+#define ID_DigOut_4_node17 580
+extern int DigOut_4_node17;
+int doWrite_DigOut_4_node17(int value);
+int addWrite_DigOut_4_node17(int value);
+int getStatus_DigOut_4_node17();
  
-#define ID_digOUT3_node17 581
-extern int digOUT3_node17;
-int doWrite_digOUT3_node17(int value);
-int addWrite_digOUT3_node17(int value);
-int getStatus_digOUT3_node17();
+#define ID_DigOut_5_node17 581
+extern int DigOut_5_node17;
+int doWrite_DigOut_5_node17(int value);
+int addWrite_DigOut_5_node17(int value);
+int getStatus_DigOut_5_node17();
  
-#define ID_digOUT4_node17 582
-extern int digOUT4_node17;
-int doWrite_digOUT4_node17(int value);
-int addWrite_digOUT4_node17(int value);
-int getStatus_digOUT4_node17();
+#define ID_DigOut_8_node17 582
+extern int DigOut_8_node17;
+int doWrite_DigOut_8_node17(int value);
+int addWrite_DigOut_8_node17(int value);
+int getStatus_DigOut_8_node17();
  
 #define ID_Addr_node18 584
 extern u_int16_t Addr_node18;
@@ -2273,17 +2273,17 @@ int doWrite_Life_node18(u_int16_t value);
 int addWrite_Life_node18(u_int16_t value);
 int getStatus_Life_node18();
  
-#define ID_ConfAi1_node18 586
-extern u_int16_t ConfAi1_node18;
-int doWrite_ConfAi1_node18(u_int16_t value);
-int addWrite_ConfAi1_node18(u_int16_t value);
-int getStatus_ConfAi1_node18();
+#define ID_AnInCnf_1_node18 586
+extern u_int16_t AnInCnf_1_node18;
+int doWrite_AnInCnf_1_node18(u_int16_t value);
+int addWrite_AnInCnf_1_node18(u_int16_t value);
+int getStatus_AnInCnf_1_node18();
  
-#define ID_ConfAi2_node18 587
-extern u_int16_t ConfAi2_node18;
-int doWrite_ConfAi2_node18(u_int16_t value);
-int addWrite_ConfAi2_node18(u_int16_t value);
-int getStatus_ConfAi2_node18();
+#define ID_AnInCnf_2_node18 587
+extern u_int16_t AnInCnf_2_node18;
+int doWrite_AnInCnf_2_node18(u_int16_t value);
+int addWrite_AnInCnf_2_node18(u_int16_t value);
+int getStatus_AnInCnf_2_node18();
  
 #define ID_ValAi1_node18 588
 extern int16_t ValAi1_node18;
@@ -2297,101 +2297,101 @@ int doWrite_ValAi2_node18(int16_t value);
 int addWrite_ValAi2_node18(int16_t value);
 int getStatus_ValAi2_node18();
  
-#define ID_Conf1_node18 590
-extern int Conf1_node18;
-int doWrite_Conf1_node18(int value);
-int addWrite_Conf1_node18(int value);
-int getStatus_Conf1_node18();
+#define ID_DigDir_1_node18 590
+extern int DigDir_1_node18;
+int doWrite_DigDir_1_node18(int value);
+int addWrite_DigDir_1_node18(int value);
+int getStatus_DigDir_1_node18();
  
-#define ID_Conf2_node18 591
-extern int Conf2_node18;
-int doWrite_Conf2_node18(int value);
-int addWrite_Conf2_node18(int value);
-int getStatus_Conf2_node18();
+#define ID_DigDir_2_node18 591
+extern int DigDir_2_node18;
+int doWrite_DigDir_2_node18(int value);
+int addWrite_DigDir_2_node18(int value);
+int getStatus_DigDir_2_node18();
  
-#define ID_Conf3_node18 592
-extern int Conf3_node18;
-int doWrite_Conf3_node18(int value);
-int addWrite_Conf3_node18(int value);
-int getStatus_Conf3_node18();
+#define ID_DigDir_3_node18 592
+extern int DigDir_3_node18;
+int doWrite_DigDir_3_node18(int value);
+int addWrite_DigDir_3_node18(int value);
+int getStatus_DigDir_3_node18();
  
-#define ID_Conf4_node18 593
-extern int Conf4_node18;
-int doWrite_Conf4_node18(int value);
-int addWrite_Conf4_node18(int value);
-int getStatus_Conf4_node18();
+#define ID_DigDir_4_node18 593
+extern int DigDir_4_node18;
+int doWrite_DigDir_4_node18(int value);
+int addWrite_DigDir_4_node18(int value);
+int getStatus_DigDir_4_node18();
  
-#define ID_Conf5_node18 594
-extern int Conf5_node18;
-int doWrite_Conf5_node18(int value);
-int addWrite_Conf5_node18(int value);
-int getStatus_Conf5_node18();
+#define ID_DigDir_5_node18 594
+extern int DigDir_5_node18;
+int doWrite_DigDir_5_node18(int value);
+int addWrite_DigDir_5_node18(int value);
+int getStatus_DigDir_5_node18();
  
-#define ID_Conf6_node18 595
-extern int Conf6_node18;
-int doWrite_Conf6_node18(int value);
-int addWrite_Conf6_node18(int value);
-int getStatus_Conf6_node18();
+#define ID_DigDir_6_node18 595
+extern int DigDir_6_node18;
+int doWrite_DigDir_6_node18(int value);
+int addWrite_DigDir_6_node18(int value);
+int getStatus_DigDir_6_node18();
  
-#define ID_Conf7_node18 596
-extern int Conf7_node18;
-int doWrite_Conf7_node18(int value);
-int addWrite_Conf7_node18(int value);
-int getStatus_Conf7_node18();
+#define ID_DigDir_7_node18 596
+extern int DigDir_7_node18;
+int doWrite_DigDir_7_node18(int value);
+int addWrite_DigDir_7_node18(int value);
+int getStatus_DigDir_7_node18();
  
-#define ID_Conf8_node18 597
-extern int Conf8_node18;
-int doWrite_Conf8_node18(int value);
-int addWrite_Conf8_node18(int value);
-int getStatus_Conf8_node18();
+#define ID_DigDir_8_node18 597
+extern int DigDir_8_node18;
+int doWrite_DigDir_8_node18(int value);
+int addWrite_DigDir_8_node18(int value);
+int getStatus_DigDir_8_node18();
  
-#define ID_digIN5_node18 598
-extern int digIN5_node18;
-int doWrite_digIN5_node18(int value);
-int addWrite_digIN5_node18(int value);
-int getStatus_digIN5_node18();
+#define ID_DigIn_2_node18 598
+extern int DigIn_2_node18;
+int doWrite_DigIn_2_node18(int value);
+int addWrite_DigIn_2_node18(int value);
+int getStatus_DigIn_2_node18();
  
-#define ID_digIN6_node18 599
-extern int digIN6_node18;
-int doWrite_digIN6_node18(int value);
-int addWrite_digIN6_node18(int value);
-int getStatus_digIN6_node18();
+#define ID_DigIn_3_node18 599
+extern int DigIn_3_node18;
+int doWrite_DigIn_3_node18(int value);
+int addWrite_DigIn_3_node18(int value);
+int getStatus_DigIn_3_node18();
  
-#define ID_digIN7_node18 600
-extern int digIN7_node18;
-int doWrite_digIN7_node18(int value);
-int addWrite_digIN7_node18(int value);
-int getStatus_digIN7_node18();
+#define ID_DigIn_6_node18 600
+extern int DigIn_6_node18;
+int doWrite_DigIn_6_node18(int value);
+int addWrite_DigIn_6_node18(int value);
+int getStatus_DigIn_6_node18();
  
-#define ID_digIN8_node18 601
-extern int digIN8_node18;
-int doWrite_digIN8_node18(int value);
-int addWrite_digIN8_node18(int value);
-int getStatus_digIN8_node18();
+#define ID_DigIn_7_node18 601
+extern int DigIn_7_node18;
+int doWrite_DigIn_7_node18(int value);
+int addWrite_DigIn_7_node18(int value);
+int getStatus_DigIn_7_node18();
  
-#define ID_digOUT1_node18 602
-extern int digOUT1_node18;
-int doWrite_digOUT1_node18(int value);
-int addWrite_digOUT1_node18(int value);
-int getStatus_digOUT1_node18();
+#define ID_DigOut_1_node18 602
+extern int DigOut_1_node18;
+int doWrite_DigOut_1_node18(int value);
+int addWrite_DigOut_1_node18(int value);
+int getStatus_DigOut_1_node18();
  
-#define ID_digOUT2_node18 603
-extern int digOUT2_node18;
-int doWrite_digOUT2_node18(int value);
-int addWrite_digOUT2_node18(int value);
-int getStatus_digOUT2_node18();
+#define ID_DigOut_4_node18 603
+extern int DigOut_4_node18;
+int doWrite_DigOut_4_node18(int value);
+int addWrite_DigOut_4_node18(int value);
+int getStatus_DigOut_4_node18();
  
-#define ID_digOUT3_node18 604
-extern int digOUT3_node18;
-int doWrite_digOUT3_node18(int value);
-int addWrite_digOUT3_node18(int value);
-int getStatus_digOUT3_node18();
+#define ID_DigOut_5_node18 604
+extern int DigOut_5_node18;
+int doWrite_DigOut_5_node18(int value);
+int addWrite_DigOut_5_node18(int value);
+int getStatus_DigOut_5_node18();
  
-#define ID_digOUT4_node18 605
-extern int digOUT4_node18;
-int doWrite_digOUT4_node18(int value);
-int addWrite_digOUT4_node18(int value);
-int getStatus_digOUT4_node18();
+#define ID_DigOut_8_node18 605
+extern int DigOut_8_node18;
+int doWrite_DigOut_8_node18(int value);
+int addWrite_DigOut_8_node18(int value);
+int getStatus_DigOut_8_node18();
  
 #define ID_Addr_node19 607
 extern u_int16_t Addr_node19;
@@ -2405,17 +2405,17 @@ int doWrite_Life_node19(u_int16_t value);
 int addWrite_Life_node19(u_int16_t value);
 int getStatus_Life_node19();
  
-#define ID_ConfAi1_node19 609
-extern u_int16_t ConfAi1_node19;
-int doWrite_ConfAi1_node19(u_int16_t value);
-int addWrite_ConfAi1_node19(u_int16_t value);
-int getStatus_ConfAi1_node19();
+#define ID_AnInCnf_1_node19 609
+extern u_int16_t AnInCnf_1_node19;
+int doWrite_AnInCnf_1_node19(u_int16_t value);
+int addWrite_AnInCnf_1_node19(u_int16_t value);
+int getStatus_AnInCnf_1_node19();
  
-#define ID_ConfAi2_node19 610
-extern u_int16_t ConfAi2_node19;
-int doWrite_ConfAi2_node19(u_int16_t value);
-int addWrite_ConfAi2_node19(u_int16_t value);
-int getStatus_ConfAi2_node19();
+#define ID_AnInCnf_2_node19 610
+extern u_int16_t AnInCnf_2_node19;
+int doWrite_AnInCnf_2_node19(u_int16_t value);
+int addWrite_AnInCnf_2_node19(u_int16_t value);
+int getStatus_AnInCnf_2_node19();
  
 #define ID_ValAi1_node19 611
 extern int16_t ValAi1_node19;
@@ -2429,101 +2429,101 @@ int doWrite_ValAi2_node19(int16_t value);
 int addWrite_ValAi2_node19(int16_t value);
 int getStatus_ValAi2_node19();
  
-#define ID_Conf1_node19 613
-extern int Conf1_node19;
-int doWrite_Conf1_node19(int value);
-int addWrite_Conf1_node19(int value);
-int getStatus_Conf1_node19();
+#define ID_DigDir_1_node19 613
+extern int DigDir_1_node19;
+int doWrite_DigDir_1_node19(int value);
+int addWrite_DigDir_1_node19(int value);
+int getStatus_DigDir_1_node19();
  
-#define ID_Conf2_node19 614
-extern int Conf2_node19;
-int doWrite_Conf2_node19(int value);
-int addWrite_Conf2_node19(int value);
-int getStatus_Conf2_node19();
+#define ID_DigDir_2_node19 614
+extern int DigDir_2_node19;
+int doWrite_DigDir_2_node19(int value);
+int addWrite_DigDir_2_node19(int value);
+int getStatus_DigDir_2_node19();
  
-#define ID_Conf3_node19 615
-extern int Conf3_node19;
-int doWrite_Conf3_node19(int value);
-int addWrite_Conf3_node19(int value);
-int getStatus_Conf3_node19();
+#define ID_DigDir_3_node19 615
+extern int DigDir_3_node19;
+int doWrite_DigDir_3_node19(int value);
+int addWrite_DigDir_3_node19(int value);
+int getStatus_DigDir_3_node19();
  
-#define ID_Conf4_node19 616
-extern int Conf4_node19;
-int doWrite_Conf4_node19(int value);
-int addWrite_Conf4_node19(int value);
-int getStatus_Conf4_node19();
+#define ID_DigDir_4_node19 616
+extern int DigDir_4_node19;
+int doWrite_DigDir_4_node19(int value);
+int addWrite_DigDir_4_node19(int value);
+int getStatus_DigDir_4_node19();
  
-#define ID_Conf5_node19 617
-extern int Conf5_node19;
-int doWrite_Conf5_node19(int value);
-int addWrite_Conf5_node19(int value);
-int getStatus_Conf5_node19();
+#define ID_DigDir_5_node19 617
+extern int DigDir_5_node19;
+int doWrite_DigDir_5_node19(int value);
+int addWrite_DigDir_5_node19(int value);
+int getStatus_DigDir_5_node19();
  
-#define ID_Conf6_node19 618
-extern int Conf6_node19;
-int doWrite_Conf6_node19(int value);
-int addWrite_Conf6_node19(int value);
-int getStatus_Conf6_node19();
+#define ID_DigDir_6_node19 618
+extern int DigDir_6_node19;
+int doWrite_DigDir_6_node19(int value);
+int addWrite_DigDir_6_node19(int value);
+int getStatus_DigDir_6_node19();
  
-#define ID_Conf7_node19 619
-extern int Conf7_node19;
-int doWrite_Conf7_node19(int value);
-int addWrite_Conf7_node19(int value);
-int getStatus_Conf7_node19();
+#define ID_DigDir_7_node19 619
+extern int DigDir_7_node19;
+int doWrite_DigDir_7_node19(int value);
+int addWrite_DigDir_7_node19(int value);
+int getStatus_DigDir_7_node19();
  
-#define ID_Conf8_node19 620
-extern int Conf8_node19;
-int doWrite_Conf8_node19(int value);
-int addWrite_Conf8_node19(int value);
-int getStatus_Conf8_node19();
+#define ID_DigDir_8_node19 620
+extern int DigDir_8_node19;
+int doWrite_DigDir_8_node19(int value);
+int addWrite_DigDir_8_node19(int value);
+int getStatus_DigDir_8_node19();
  
-#define ID_digIN5_node19 621
-extern int digIN5_node19;
-int doWrite_digIN5_node19(int value);
-int addWrite_digIN5_node19(int value);
-int getStatus_digIN5_node19();
+#define ID_DigIn_2_node19 621
+extern int DigIn_2_node19;
+int doWrite_DigIn_2_node19(int value);
+int addWrite_DigIn_2_node19(int value);
+int getStatus_DigIn_2_node19();
  
-#define ID_digIN6_node19 622
-extern int digIN6_node19;
-int doWrite_digIN6_node19(int value);
-int addWrite_digIN6_node19(int value);
-int getStatus_digIN6_node19();
+#define ID_DigIn_3_node19 622
+extern int DigIn_3_node19;
+int doWrite_DigIn_3_node19(int value);
+int addWrite_DigIn_3_node19(int value);
+int getStatus_DigIn_3_node19();
  
-#define ID_digIN7_node19 623
-extern int digIN7_node19;
-int doWrite_digIN7_node19(int value);
-int addWrite_digIN7_node19(int value);
-int getStatus_digIN7_node19();
+#define ID_DigIn_6_node19 623
+extern int DigIn_6_node19;
+int doWrite_DigIn_6_node19(int value);
+int addWrite_DigIn_6_node19(int value);
+int getStatus_DigIn_6_node19();
  
-#define ID_digIN8_node19 624
-extern int digIN8_node19;
-int doWrite_digIN8_node19(int value);
-int addWrite_digIN8_node19(int value);
-int getStatus_digIN8_node19();
+#define ID_DigIn_7_node19 624
+extern int DigIn_7_node19;
+int doWrite_DigIn_7_node19(int value);
+int addWrite_DigIn_7_node19(int value);
+int getStatus_DigIn_7_node19();
  
-#define ID_digOUT1_node19 625
-extern int digOUT1_node19;
-int doWrite_digOUT1_node19(int value);
-int addWrite_digOUT1_node19(int value);
-int getStatus_digOUT1_node19();
+#define ID_DigOut_1_node19 625
+extern int DigOut_1_node19;
+int doWrite_DigOut_1_node19(int value);
+int addWrite_DigOut_1_node19(int value);
+int getStatus_DigOut_1_node19();
  
-#define ID_digOUT2_node19 626
-extern int digOUT2_node19;
-int doWrite_digOUT2_node19(int value);
-int addWrite_digOUT2_node19(int value);
-int getStatus_digOUT2_node19();
+#define ID_DigOut_4_node19 626
+extern int DigOut_4_node19;
+int doWrite_DigOut_4_node19(int value);
+int addWrite_DigOut_4_node19(int value);
+int getStatus_DigOut_4_node19();
  
-#define ID_digOUT3_node19 627
-extern int digOUT3_node19;
-int doWrite_digOUT3_node19(int value);
-int addWrite_digOUT3_node19(int value);
-int getStatus_digOUT3_node19();
+#define ID_DigOut_5_node19 627
+extern int DigOut_5_node19;
+int doWrite_DigOut_5_node19(int value);
+int addWrite_DigOut_5_node19(int value);
+int getStatus_DigOut_5_node19();
  
-#define ID_digOUT4_node19 628
-extern int digOUT4_node19;
-int doWrite_digOUT4_node19(int value);
-int addWrite_digOUT4_node19(int value);
-int getStatus_digOUT4_node19();
+#define ID_DigOut_8_node19 628
+extern int DigOut_8_node19;
+int doWrite_DigOut_8_node19(int value);
+int addWrite_DigOut_8_node19(int value);
+int getStatus_DigOut_8_node19();
  
 #define ID_Addr_node20 630
 extern u_int16_t Addr_node20;
@@ -2537,17 +2537,17 @@ int doWrite_Life_node20(u_int16_t value);
 int addWrite_Life_node20(u_int16_t value);
 int getStatus_Life_node20();
  
-#define ID_ConfAi1_node20 632
-extern u_int16_t ConfAi1_node20;
-int doWrite_ConfAi1_node20(u_int16_t value);
-int addWrite_ConfAi1_node20(u_int16_t value);
-int getStatus_ConfAi1_node20();
+#define ID_AnInCnf_1_node20 632
+extern u_int16_t AnInCnf_1_node20;
+int doWrite_AnInCnf_1_node20(u_int16_t value);
+int addWrite_AnInCnf_1_node20(u_int16_t value);
+int getStatus_AnInCnf_1_node20();
  
-#define ID_ConfAi2_node20 633
-extern u_int16_t ConfAi2_node20;
-int doWrite_ConfAi2_node20(u_int16_t value);
-int addWrite_ConfAi2_node20(u_int16_t value);
-int getStatus_ConfAi2_node20();
+#define ID_AnInCnf_2_node20 633
+extern u_int16_t AnInCnf_2_node20;
+int doWrite_AnInCnf_2_node20(u_int16_t value);
+int addWrite_AnInCnf_2_node20(u_int16_t value);
+int getStatus_AnInCnf_2_node20();
  
 #define ID_ValAi1_node20 634
 extern int16_t ValAi1_node20;
@@ -2561,101 +2561,101 @@ int doWrite_ValAi2_node20(int16_t value);
 int addWrite_ValAi2_node20(int16_t value);
 int getStatus_ValAi2_node20();
  
-#define ID_Conf1_node20 636
-extern int Conf1_node20;
-int doWrite_Conf1_node20(int value);
-int addWrite_Conf1_node20(int value);
-int getStatus_Conf1_node20();
+#define ID_DigDir_1_node20 636
+extern int DigDir_1_node20;
+int doWrite_DigDir_1_node20(int value);
+int addWrite_DigDir_1_node20(int value);
+int getStatus_DigDir_1_node20();
  
-#define ID_Conf2_node20 637
-extern int Conf2_node20;
-int doWrite_Conf2_node20(int value);
-int addWrite_Conf2_node20(int value);
-int getStatus_Conf2_node20();
+#define ID_DigDir_2_node20 637
+extern int DigDir_2_node20;
+int doWrite_DigDir_2_node20(int value);
+int addWrite_DigDir_2_node20(int value);
+int getStatus_DigDir_2_node20();
  
-#define ID_Conf3_node20 638
-extern int Conf3_node20;
-int doWrite_Conf3_node20(int value);
-int addWrite_Conf3_node20(int value);
-int getStatus_Conf3_node20();
+#define ID_DigDir_3_node20 638
+extern int DigDir_3_node20;
+int doWrite_DigDir_3_node20(int value);
+int addWrite_DigDir_3_node20(int value);
+int getStatus_DigDir_3_node20();
  
-#define ID_Conf4_node20 639
-extern int Conf4_node20;
-int doWrite_Conf4_node20(int value);
-int addWrite_Conf4_node20(int value);
-int getStatus_Conf4_node20();
+#define ID_DigDir_4_node20 639
+extern int DigDir_4_node20;
+int doWrite_DigDir_4_node20(int value);
+int addWrite_DigDir_4_node20(int value);
+int getStatus_DigDir_4_node20();
  
-#define ID_Conf5_node20 640
-extern int Conf5_node20;
-int doWrite_Conf5_node20(int value);
-int addWrite_Conf5_node20(int value);
-int getStatus_Conf5_node20();
+#define ID_DigDir_5_node20 640
+extern int DigDir_5_node20;
+int doWrite_DigDir_5_node20(int value);
+int addWrite_DigDir_5_node20(int value);
+int getStatus_DigDir_5_node20();
  
-#define ID_Conf6_node20 641
-extern int Conf6_node20;
-int doWrite_Conf6_node20(int value);
-int addWrite_Conf6_node20(int value);
-int getStatus_Conf6_node20();
+#define ID_DigDir_6_node20 641
+extern int DigDir_6_node20;
+int doWrite_DigDir_6_node20(int value);
+int addWrite_DigDir_6_node20(int value);
+int getStatus_DigDir_6_node20();
  
-#define ID_Conf7_node20 642
-extern int Conf7_node20;
-int doWrite_Conf7_node20(int value);
-int addWrite_Conf7_node20(int value);
-int getStatus_Conf7_node20();
+#define ID_DigDir_7_node20 642
+extern int DigDir_7_node20;
+int doWrite_DigDir_7_node20(int value);
+int addWrite_DigDir_7_node20(int value);
+int getStatus_DigDir_7_node20();
  
-#define ID_Conf8_node20 643
-extern int Conf8_node20;
-int doWrite_Conf8_node20(int value);
-int addWrite_Conf8_node20(int value);
-int getStatus_Conf8_node20();
+#define ID_DigDir_8_node20 643
+extern int DigDir_8_node20;
+int doWrite_DigDir_8_node20(int value);
+int addWrite_DigDir_8_node20(int value);
+int getStatus_DigDir_8_node20();
  
-#define ID_digIN5_node20 644
-extern int digIN5_node20;
-int doWrite_digIN5_node20(int value);
-int addWrite_digIN5_node20(int value);
-int getStatus_digIN5_node20();
+#define ID_DigIn_2_node20 644
+extern int DigIn_2_node20;
+int doWrite_DigIn_2_node20(int value);
+int addWrite_DigIn_2_node20(int value);
+int getStatus_DigIn_2_node20();
  
-#define ID_digIN6_node20 645
-extern int digIN6_node20;
-int doWrite_digIN6_node20(int value);
-int addWrite_digIN6_node20(int value);
-int getStatus_digIN6_node20();
+#define ID_DigIn_3_node20 645
+extern int DigIn_3_node20;
+int doWrite_DigIn_3_node20(int value);
+int addWrite_DigIn_3_node20(int value);
+int getStatus_DigIn_3_node20();
  
-#define ID_digIN7_node20 646
-extern int digIN7_node20;
-int doWrite_digIN7_node20(int value);
-int addWrite_digIN7_node20(int value);
-int getStatus_digIN7_node20();
+#define ID_DigIn_6_node20 646
+extern int DigIn_6_node20;
+int doWrite_DigIn_6_node20(int value);
+int addWrite_DigIn_6_node20(int value);
+int getStatus_DigIn_6_node20();
  
-#define ID_digIN8_node20 647
-extern int digIN8_node20;
-int doWrite_digIN8_node20(int value);
-int addWrite_digIN8_node20(int value);
-int getStatus_digIN8_node20();
+#define ID_DigIn_7_node20 647
+extern int DigIn_7_node20;
+int doWrite_DigIn_7_node20(int value);
+int addWrite_DigIn_7_node20(int value);
+int getStatus_DigIn_7_node20();
  
-#define ID_digOUT1_node20 648
-extern int digOUT1_node20;
-int doWrite_digOUT1_node20(int value);
-int addWrite_digOUT1_node20(int value);
-int getStatus_digOUT1_node20();
+#define ID_DigOut_1_node20 648
+extern int DigOut_1_node20;
+int doWrite_DigOut_1_node20(int value);
+int addWrite_DigOut_1_node20(int value);
+int getStatus_DigOut_1_node20();
  
-#define ID_digOUT2_node20 649
-extern int digOUT2_node20;
-int doWrite_digOUT2_node20(int value);
-int addWrite_digOUT2_node20(int value);
-int getStatus_digOUT2_node20();
+#define ID_DigOut_4_node20 649
+extern int DigOut_4_node20;
+int doWrite_DigOut_4_node20(int value);
+int addWrite_DigOut_4_node20(int value);
+int getStatus_DigOut_4_node20();
  
-#define ID_digOUT3_node20 650
-extern int digOUT3_node20;
-int doWrite_digOUT3_node20(int value);
-int addWrite_digOUT3_node20(int value);
-int getStatus_digOUT3_node20();
+#define ID_DigOut_5_node20 650
+extern int DigOut_5_node20;
+int doWrite_DigOut_5_node20(int value);
+int addWrite_DigOut_5_node20(int value);
+int getStatus_DigOut_5_node20();
  
-#define ID_digOUT4_node20 651
-extern int digOUT4_node20;
-int doWrite_digOUT4_node20(int value);
-int addWrite_digOUT4_node20(int value);
-int getStatus_digOUT4_node20();
+#define ID_DigOut_8_node20 651
+extern int DigOut_8_node20;
+int doWrite_DigOut_8_node20(int value);
+int addWrite_DigOut_8_node20(int value);
+int getStatus_DigOut_8_node20();
  
 #define ID_Addr_node21 653
 extern u_int16_t Addr_node21;
@@ -2669,17 +2669,17 @@ int doWrite_Life_node21(u_int16_t value);
 int addWrite_Life_node21(u_int16_t value);
 int getStatus_Life_node21();
  
-#define ID_ConfAi1_node21 655
-extern u_int16_t ConfAi1_node21;
-int doWrite_ConfAi1_node21(u_int16_t value);
-int addWrite_ConfAi1_node21(u_int16_t value);
-int getStatus_ConfAi1_node21();
+#define ID_AnInCnf_1_node21 655
+extern u_int16_t AnInCnf_1_node21;
+int doWrite_AnInCnf_1_node21(u_int16_t value);
+int addWrite_AnInCnf_1_node21(u_int16_t value);
+int getStatus_AnInCnf_1_node21();
  
-#define ID_ConfAi2_node21 656
-extern u_int16_t ConfAi2_node21;
-int doWrite_ConfAi2_node21(u_int16_t value);
-int addWrite_ConfAi2_node21(u_int16_t value);
-int getStatus_ConfAi2_node21();
+#define ID_AnInCnf_2_node21 656
+extern u_int16_t AnInCnf_2_node21;
+int doWrite_AnInCnf_2_node21(u_int16_t value);
+int addWrite_AnInCnf_2_node21(u_int16_t value);
+int getStatus_AnInCnf_2_node21();
  
 #define ID_ValAi1_node21 657
 extern int16_t ValAi1_node21;
@@ -2693,101 +2693,101 @@ int doWrite_ValAi2_node21(int16_t value);
 int addWrite_ValAi2_node21(int16_t value);
 int getStatus_ValAi2_node21();
  
-#define ID_Conf1_node21 659
-extern int Conf1_node21;
-int doWrite_Conf1_node21(int value);
-int addWrite_Conf1_node21(int value);
-int getStatus_Conf1_node21();
+#define ID_DigDir_1_node21 659
+extern int DigDir_1_node21;
+int doWrite_DigDir_1_node21(int value);
+int addWrite_DigDir_1_node21(int value);
+int getStatus_DigDir_1_node21();
  
-#define ID_Conf2_node21 660
-extern int Conf2_node21;
-int doWrite_Conf2_node21(int value);
-int addWrite_Conf2_node21(int value);
-int getStatus_Conf2_node21();
+#define ID_DigDir_2_node21 660
+extern int DigDir_2_node21;
+int doWrite_DigDir_2_node21(int value);
+int addWrite_DigDir_2_node21(int value);
+int getStatus_DigDir_2_node21();
  
-#define ID_Conf3_node21 661
-extern int Conf3_node21;
-int doWrite_Conf3_node21(int value);
-int addWrite_Conf3_node21(int value);
-int getStatus_Conf3_node21();
+#define ID_DigDir_3_node21 661
+extern int DigDir_3_node21;
+int doWrite_DigDir_3_node21(int value);
+int addWrite_DigDir_3_node21(int value);
+int getStatus_DigDir_3_node21();
  
-#define ID_Conf4_node21 662
-extern int Conf4_node21;
-int doWrite_Conf4_node21(int value);
-int addWrite_Conf4_node21(int value);
-int getStatus_Conf4_node21();
+#define ID_DigDir_4_node21 662
+extern int DigDir_4_node21;
+int doWrite_DigDir_4_node21(int value);
+int addWrite_DigDir_4_node21(int value);
+int getStatus_DigDir_4_node21();
  
-#define ID_Conf5_node21 663
-extern int Conf5_node21;
-int doWrite_Conf5_node21(int value);
-int addWrite_Conf5_node21(int value);
-int getStatus_Conf5_node21();
+#define ID_DigDir_5_node21 663
+extern int DigDir_5_node21;
+int doWrite_DigDir_5_node21(int value);
+int addWrite_DigDir_5_node21(int value);
+int getStatus_DigDir_5_node21();
  
-#define ID_Conf6_node21 664
-extern int Conf6_node21;
-int doWrite_Conf6_node21(int value);
-int addWrite_Conf6_node21(int value);
-int getStatus_Conf6_node21();
+#define ID_DigDir_6_node21 664
+extern int DigDir_6_node21;
+int doWrite_DigDir_6_node21(int value);
+int addWrite_DigDir_6_node21(int value);
+int getStatus_DigDir_6_node21();
  
-#define ID_Conf7_node21 665
-extern int Conf7_node21;
-int doWrite_Conf7_node21(int value);
-int addWrite_Conf7_node21(int value);
-int getStatus_Conf7_node21();
+#define ID_DigDir_7_node21 665
+extern int DigDir_7_node21;
+int doWrite_DigDir_7_node21(int value);
+int addWrite_DigDir_7_node21(int value);
+int getStatus_DigDir_7_node21();
  
-#define ID_Conf8_node21 666
-extern int Conf8_node21;
-int doWrite_Conf8_node21(int value);
-int addWrite_Conf8_node21(int value);
-int getStatus_Conf8_node21();
+#define ID_DigDir_8_node21 666
+extern int DigDir_8_node21;
+int doWrite_DigDir_8_node21(int value);
+int addWrite_DigDir_8_node21(int value);
+int getStatus_DigDir_8_node21();
  
-#define ID_digIN5_node21 667
-extern int digIN5_node21;
-int doWrite_digIN5_node21(int value);
-int addWrite_digIN5_node21(int value);
-int getStatus_digIN5_node21();
+#define ID_DigIn_2_node21 667
+extern int DigIn_2_node21;
+int doWrite_DigIn_2_node21(int value);
+int addWrite_DigIn_2_node21(int value);
+int getStatus_DigIn_2_node21();
  
-#define ID_digIN6_node21 668
-extern int digIN6_node21;
-int doWrite_digIN6_node21(int value);
-int addWrite_digIN6_node21(int value);
-int getStatus_digIN6_node21();
+#define ID_DigIn_3_node21 668
+extern int DigIn_3_node21;
+int doWrite_DigIn_3_node21(int value);
+int addWrite_DigIn_3_node21(int value);
+int getStatus_DigIn_3_node21();
  
-#define ID_digIN7_node21 669
-extern int digIN7_node21;
-int doWrite_digIN7_node21(int value);
-int addWrite_digIN7_node21(int value);
-int getStatus_digIN7_node21();
+#define ID_DigIn_6_node21 669
+extern int DigIn_6_node21;
+int doWrite_DigIn_6_node21(int value);
+int addWrite_DigIn_6_node21(int value);
+int getStatus_DigIn_6_node21();
  
-#define ID_digIN8_node21 670
-extern int digIN8_node21;
-int doWrite_digIN8_node21(int value);
-int addWrite_digIN8_node21(int value);
-int getStatus_digIN8_node21();
+#define ID_DigIn_7_node21 670
+extern int DigIn_7_node21;
+int doWrite_DigIn_7_node21(int value);
+int addWrite_DigIn_7_node21(int value);
+int getStatus_DigIn_7_node21();
  
-#define ID_digOUT1_node21 671
-extern int digOUT1_node21;
-int doWrite_digOUT1_node21(int value);
-int addWrite_digOUT1_node21(int value);
-int getStatus_digOUT1_node21();
+#define ID_DigOut_1_node21 671
+extern int DigOut_1_node21;
+int doWrite_DigOut_1_node21(int value);
+int addWrite_DigOut_1_node21(int value);
+int getStatus_DigOut_1_node21();
  
-#define ID_digOUT2_node21 672
-extern int digOUT2_node21;
-int doWrite_digOUT2_node21(int value);
-int addWrite_digOUT2_node21(int value);
-int getStatus_digOUT2_node21();
+#define ID_DigOut_4_node21 672
+extern int DigOut_4_node21;
+int doWrite_DigOut_4_node21(int value);
+int addWrite_DigOut_4_node21(int value);
+int getStatus_DigOut_4_node21();
  
-#define ID_digOUT3_node21 673
-extern int digOUT3_node21;
-int doWrite_digOUT3_node21(int value);
-int addWrite_digOUT3_node21(int value);
-int getStatus_digOUT3_node21();
+#define ID_DigOut_5_node21 673
+extern int DigOut_5_node21;
+int doWrite_DigOut_5_node21(int value);
+int addWrite_DigOut_5_node21(int value);
+int getStatus_DigOut_5_node21();
  
-#define ID_digOUT4_node21 674
-extern int digOUT4_node21;
-int doWrite_digOUT4_node21(int value);
-int addWrite_digOUT4_node21(int value);
-int getStatus_digOUT4_node21();
+#define ID_DigOut_8_node21 674
+extern int DigOut_8_node21;
+int doWrite_DigOut_8_node21(int value);
+int addWrite_DigOut_8_node21(int value);
+int getStatus_DigOut_8_node21();
  
 #define ID_Addr_node22 676
 extern u_int16_t Addr_node22;
@@ -2801,17 +2801,17 @@ int doWrite_Life_node22(u_int16_t value);
 int addWrite_Life_node22(u_int16_t value);
 int getStatus_Life_node22();
  
-#define ID_ConfAi1_node22 678
-extern u_int16_t ConfAi1_node22;
-int doWrite_ConfAi1_node22(u_int16_t value);
-int addWrite_ConfAi1_node22(u_int16_t value);
-int getStatus_ConfAi1_node22();
+#define ID_AnInCnf_1_node22 678
+extern u_int16_t AnInCnf_1_node22;
+int doWrite_AnInCnf_1_node22(u_int16_t value);
+int addWrite_AnInCnf_1_node22(u_int16_t value);
+int getStatus_AnInCnf_1_node22();
  
-#define ID_ConfAi2_node22 679
-extern u_int16_t ConfAi2_node22;
-int doWrite_ConfAi2_node22(u_int16_t value);
-int addWrite_ConfAi2_node22(u_int16_t value);
-int getStatus_ConfAi2_node22();
+#define ID_AnInCnf_2_node22 679
+extern u_int16_t AnInCnf_2_node22;
+int doWrite_AnInCnf_2_node22(u_int16_t value);
+int addWrite_AnInCnf_2_node22(u_int16_t value);
+int getStatus_AnInCnf_2_node22();
  
 #define ID_ValAi1_node22 680
 extern int16_t ValAi1_node22;
@@ -2825,101 +2825,101 @@ int doWrite_ValAi2_node22(int16_t value);
 int addWrite_ValAi2_node22(int16_t value);
 int getStatus_ValAi2_node22();
  
-#define ID_Conf1_node22 682
-extern int Conf1_node22;
-int doWrite_Conf1_node22(int value);
-int addWrite_Conf1_node22(int value);
-int getStatus_Conf1_node22();
+#define ID_DigDir_1_node22 682
+extern int DigDir_1_node22;
+int doWrite_DigDir_1_node22(int value);
+int addWrite_DigDir_1_node22(int value);
+int getStatus_DigDir_1_node22();
  
-#define ID_Conf2_node22 683
-extern int Conf2_node22;
-int doWrite_Conf2_node22(int value);
-int addWrite_Conf2_node22(int value);
-int getStatus_Conf2_node22();
+#define ID_DigDir_2_node22 683
+extern int DigDir_2_node22;
+int doWrite_DigDir_2_node22(int value);
+int addWrite_DigDir_2_node22(int value);
+int getStatus_DigDir_2_node22();
  
-#define ID_Conf3_node22 684
-extern int Conf3_node22;
-int doWrite_Conf3_node22(int value);
-int addWrite_Conf3_node22(int value);
-int getStatus_Conf3_node22();
+#define ID_DigDir_3_node22 684
+extern int DigDir_3_node22;
+int doWrite_DigDir_3_node22(int value);
+int addWrite_DigDir_3_node22(int value);
+int getStatus_DigDir_3_node22();
  
-#define ID_Conf4_node22 685
-extern int Conf4_node22;
-int doWrite_Conf4_node22(int value);
-int addWrite_Conf4_node22(int value);
-int getStatus_Conf4_node22();
+#define ID_DigDir_4_node22 685
+extern int DigDir_4_node22;
+int doWrite_DigDir_4_node22(int value);
+int addWrite_DigDir_4_node22(int value);
+int getStatus_DigDir_4_node22();
  
-#define ID_Conf5_node22 686
-extern int Conf5_node22;
-int doWrite_Conf5_node22(int value);
-int addWrite_Conf5_node22(int value);
-int getStatus_Conf5_node22();
+#define ID_DigDir_5_node22 686
+extern int DigDir_5_node22;
+int doWrite_DigDir_5_node22(int value);
+int addWrite_DigDir_5_node22(int value);
+int getStatus_DigDir_5_node22();
  
-#define ID_Conf6_node22 687
-extern int Conf6_node22;
-int doWrite_Conf6_node22(int value);
-int addWrite_Conf6_node22(int value);
-int getStatus_Conf6_node22();
+#define ID_DigDir_6_node22 687
+extern int DigDir_6_node22;
+int doWrite_DigDir_6_node22(int value);
+int addWrite_DigDir_6_node22(int value);
+int getStatus_DigDir_6_node22();
  
-#define ID_Conf7_node22 688
-extern int Conf7_node22;
-int doWrite_Conf7_node22(int value);
-int addWrite_Conf7_node22(int value);
-int getStatus_Conf7_node22();
+#define ID_DigDir_7_node22 688
+extern int DigDir_7_node22;
+int doWrite_DigDir_7_node22(int value);
+int addWrite_DigDir_7_node22(int value);
+int getStatus_DigDir_7_node22();
  
-#define ID_Conf8_node22 689
-extern int Conf8_node22;
-int doWrite_Conf8_node22(int value);
-int addWrite_Conf8_node22(int value);
-int getStatus_Conf8_node22();
+#define ID_DigDir_8_node22 689
+extern int DigDir_8_node22;
+int doWrite_DigDir_8_node22(int value);
+int addWrite_DigDir_8_node22(int value);
+int getStatus_DigDir_8_node22();
  
-#define ID_digIN5_node22 690
-extern int digIN5_node22;
-int doWrite_digIN5_node22(int value);
-int addWrite_digIN5_node22(int value);
-int getStatus_digIN5_node22();
+#define ID_DigIn_2_node22 690
+extern int DigIn_2_node22;
+int doWrite_DigIn_2_node22(int value);
+int addWrite_DigIn_2_node22(int value);
+int getStatus_DigIn_2_node22();
  
-#define ID_digIN6_node22 691
-extern int digIN6_node22;
-int doWrite_digIN6_node22(int value);
-int addWrite_digIN6_node22(int value);
-int getStatus_digIN6_node22();
+#define ID_DigIn_3_node22 691
+extern int DigIn_3_node22;
+int doWrite_DigIn_3_node22(int value);
+int addWrite_DigIn_3_node22(int value);
+int getStatus_DigIn_3_node22();
  
-#define ID_digIN7_node22 692
-extern int digIN7_node22;
-int doWrite_digIN7_node22(int value);
-int addWrite_digIN7_node22(int value);
-int getStatus_digIN7_node22();
+#define ID_DigIn_6_node22 692
+extern int DigIn_6_node22;
+int doWrite_DigIn_6_node22(int value);
+int addWrite_DigIn_6_node22(int value);
+int getStatus_DigIn_6_node22();
  
-#define ID_digIN8_node22 693
-extern int digIN8_node22;
-int doWrite_digIN8_node22(int value);
-int addWrite_digIN8_node22(int value);
-int getStatus_digIN8_node22();
+#define ID_DigIn_7_node22 693
+extern int DigIn_7_node22;
+int doWrite_DigIn_7_node22(int value);
+int addWrite_DigIn_7_node22(int value);
+int getStatus_DigIn_7_node22();
  
-#define ID_digOUT1_node22 694
-extern int digOUT1_node22;
-int doWrite_digOUT1_node22(int value);
-int addWrite_digOUT1_node22(int value);
-int getStatus_digOUT1_node22();
+#define ID_DigOut_1_node22 694
+extern int DigOut_1_node22;
+int doWrite_DigOut_1_node22(int value);
+int addWrite_DigOut_1_node22(int value);
+int getStatus_DigOut_1_node22();
  
-#define ID_digOUT2_node22 695
-extern int digOUT2_node22;
-int doWrite_digOUT2_node22(int value);
-int addWrite_digOUT2_node22(int value);
-int getStatus_digOUT2_node22();
+#define ID_DigOut_4_node22 695
+extern int DigOut_4_node22;
+int doWrite_DigOut_4_node22(int value);
+int addWrite_DigOut_4_node22(int value);
+int getStatus_DigOut_4_node22();
  
-#define ID_digOUT3_node22 696
-extern int digOUT3_node22;
-int doWrite_digOUT3_node22(int value);
-int addWrite_digOUT3_node22(int value);
-int getStatus_digOUT3_node22();
+#define ID_DigOut_5_node22 696
+extern int DigOut_5_node22;
+int doWrite_DigOut_5_node22(int value);
+int addWrite_DigOut_5_node22(int value);
+int getStatus_DigOut_5_node22();
  
-#define ID_digOUT4_node22 697
-extern int digOUT4_node22;
-int doWrite_digOUT4_node22(int value);
-int addWrite_digOUT4_node22(int value);
-int getStatus_digOUT4_node22();
+#define ID_DigOut_8_node22 697
+extern int DigOut_8_node22;
+int doWrite_DigOut_8_node22(int value);
+int addWrite_DigOut_8_node22(int value);
+int getStatus_DigOut_8_node22();
  
 #define ID_Addr_node23 700
 extern u_int16_t Addr_node23;
@@ -2933,17 +2933,17 @@ int doWrite_Life_node23(u_int16_t value);
 int addWrite_Life_node23(u_int16_t value);
 int getStatus_Life_node23();
  
-#define ID_ConfAi1_node23 702
-extern u_int16_t ConfAi1_node23;
-int doWrite_ConfAi1_node23(u_int16_t value);
-int addWrite_ConfAi1_node23(u_int16_t value);
-int getStatus_ConfAi1_node23();
+#define ID_AnInCnf_1_node23 702
+extern u_int16_t AnInCnf_1_node23;
+int doWrite_AnInCnf_1_node23(u_int16_t value);
+int addWrite_AnInCnf_1_node23(u_int16_t value);
+int getStatus_AnInCnf_1_node23();
  
-#define ID_ConfAi2_node23 703
-extern u_int16_t ConfAi2_node23;
-int doWrite_ConfAi2_node23(u_int16_t value);
-int addWrite_ConfAi2_node23(u_int16_t value);
-int getStatus_ConfAi2_node23();
+#define ID_AnInCnf_2_node23 703
+extern u_int16_t AnInCnf_2_node23;
+int doWrite_AnInCnf_2_node23(u_int16_t value);
+int addWrite_AnInCnf_2_node23(u_int16_t value);
+int getStatus_AnInCnf_2_node23();
  
 #define ID_ValAi1_node23 704
 extern int16_t ValAi1_node23;
@@ -2957,101 +2957,101 @@ int doWrite_ValAi2_node23(int16_t value);
 int addWrite_ValAi2_node23(int16_t value);
 int getStatus_ValAi2_node23();
  
-#define ID_Conf1_node23 706
-extern int Conf1_node23;
-int doWrite_Conf1_node23(int value);
-int addWrite_Conf1_node23(int value);
-int getStatus_Conf1_node23();
+#define ID_DigDir_1_node23 706
+extern int DigDir_1_node23;
+int doWrite_DigDir_1_node23(int value);
+int addWrite_DigDir_1_node23(int value);
+int getStatus_DigDir_1_node23();
  
-#define ID_Conf2_node23 707
-extern int Conf2_node23;
-int doWrite_Conf2_node23(int value);
-int addWrite_Conf2_node23(int value);
-int getStatus_Conf2_node23();
+#define ID_DigDir_2_node23 707
+extern int DigDir_2_node23;
+int doWrite_DigDir_2_node23(int value);
+int addWrite_DigDir_2_node23(int value);
+int getStatus_DigDir_2_node23();
  
-#define ID_Conf3_node23 708
-extern int Conf3_node23;
-int doWrite_Conf3_node23(int value);
-int addWrite_Conf3_node23(int value);
-int getStatus_Conf3_node23();
+#define ID_DigDir_3_node23 708
+extern int DigDir_3_node23;
+int doWrite_DigDir_3_node23(int value);
+int addWrite_DigDir_3_node23(int value);
+int getStatus_DigDir_3_node23();
  
-#define ID_Conf4_node23 709
-extern int Conf4_node23;
-int doWrite_Conf4_node23(int value);
-int addWrite_Conf4_node23(int value);
-int getStatus_Conf4_node23();
+#define ID_DigDir_4_node23 709
+extern int DigDir_4_node23;
+int doWrite_DigDir_4_node23(int value);
+int addWrite_DigDir_4_node23(int value);
+int getStatus_DigDir_4_node23();
  
-#define ID_Conf5_node23 710
-extern int Conf5_node23;
-int doWrite_Conf5_node23(int value);
-int addWrite_Conf5_node23(int value);
-int getStatus_Conf5_node23();
+#define ID_DigDir_5_node23 710
+extern int DigDir_5_node23;
+int doWrite_DigDir_5_node23(int value);
+int addWrite_DigDir_5_node23(int value);
+int getStatus_DigDir_5_node23();
  
-#define ID_Conf6_node23 711
-extern int Conf6_node23;
-int doWrite_Conf6_node23(int value);
-int addWrite_Conf6_node23(int value);
-int getStatus_Conf6_node23();
+#define ID_DigDir_6_node23 711
+extern int DigDir_6_node23;
+int doWrite_DigDir_6_node23(int value);
+int addWrite_DigDir_6_node23(int value);
+int getStatus_DigDir_6_node23();
  
-#define ID_Conf7_node23 712
-extern int Conf7_node23;
-int doWrite_Conf7_node23(int value);
-int addWrite_Conf7_node23(int value);
-int getStatus_Conf7_node23();
+#define ID_DigDir_7_node23 712
+extern int DigDir_7_node23;
+int doWrite_DigDir_7_node23(int value);
+int addWrite_DigDir_7_node23(int value);
+int getStatus_DigDir_7_node23();
  
-#define ID_Conf8_node23 713
-extern int Conf8_node23;
-int doWrite_Conf8_node23(int value);
-int addWrite_Conf8_node23(int value);
-int getStatus_Conf8_node23();
+#define ID_DigDir_8_node23 713
+extern int DigDir_8_node23;
+int doWrite_DigDir_8_node23(int value);
+int addWrite_DigDir_8_node23(int value);
+int getStatus_DigDir_8_node23();
  
-#define ID_digIN5_node23 714
-extern int digIN5_node23;
-int doWrite_digIN5_node23(int value);
-int addWrite_digIN5_node23(int value);
-int getStatus_digIN5_node23();
+#define ID_DigIn_2_node23 714
+extern int DigIn_2_node23;
+int doWrite_DigIn_2_node23(int value);
+int addWrite_DigIn_2_node23(int value);
+int getStatus_DigIn_2_node23();
  
-#define ID_digIN6_node23 715
-extern int digIN6_node23;
-int doWrite_digIN6_node23(int value);
-int addWrite_digIN6_node23(int value);
-int getStatus_digIN6_node23();
+#define ID_DigIn_3_node23 715
+extern int DigIn_3_node23;
+int doWrite_DigIn_3_node23(int value);
+int addWrite_DigIn_3_node23(int value);
+int getStatus_DigIn_3_node23();
  
-#define ID_digIN7_node23 716
-extern int digIN7_node23;
-int doWrite_digIN7_node23(int value);
-int addWrite_digIN7_node23(int value);
-int getStatus_digIN7_node23();
+#define ID_DigIn_6_node23 716
+extern int DigIn_6_node23;
+int doWrite_DigIn_6_node23(int value);
+int addWrite_DigIn_6_node23(int value);
+int getStatus_DigIn_6_node23();
  
-#define ID_digIN8_node23 717
-extern int digIN8_node23;
-int doWrite_digIN8_node23(int value);
-int addWrite_digIN8_node23(int value);
-int getStatus_digIN8_node23();
+#define ID_DigIn_7_node23 717
+extern int DigIn_7_node23;
+int doWrite_DigIn_7_node23(int value);
+int addWrite_DigIn_7_node23(int value);
+int getStatus_DigIn_7_node23();
  
-#define ID_digOUT1_node23 718
-extern int digOUT1_node23;
-int doWrite_digOUT1_node23(int value);
-int addWrite_digOUT1_node23(int value);
-int getStatus_digOUT1_node23();
+#define ID_DigOut_1_node23 718
+extern int DigOut_1_node23;
+int doWrite_DigOut_1_node23(int value);
+int addWrite_DigOut_1_node23(int value);
+int getStatus_DigOut_1_node23();
  
-#define ID_digOUT2_node23 719
-extern int digOUT2_node23;
-int doWrite_digOUT2_node23(int value);
-int addWrite_digOUT2_node23(int value);
-int getStatus_digOUT2_node23();
+#define ID_DigOut_4_node23 719
+extern int DigOut_4_node23;
+int doWrite_DigOut_4_node23(int value);
+int addWrite_DigOut_4_node23(int value);
+int getStatus_DigOut_4_node23();
  
-#define ID_digOUT3_node23 720
-extern int digOUT3_node23;
-int doWrite_digOUT3_node23(int value);
-int addWrite_digOUT3_node23(int value);
-int getStatus_digOUT3_node23();
+#define ID_DigOut_5_node23 720
+extern int DigOut_5_node23;
+int doWrite_DigOut_5_node23(int value);
+int addWrite_DigOut_5_node23(int value);
+int getStatus_DigOut_5_node23();
  
-#define ID_digOUT4_node23 721
-extern int digOUT4_node23;
-int doWrite_digOUT4_node23(int value);
-int addWrite_digOUT4_node23(int value);
-int getStatus_digOUT4_node23();
+#define ID_DigOut_8_node23 721
+extern int DigOut_8_node23;
+int doWrite_DigOut_8_node23(int value);
+int addWrite_DigOut_8_node23(int value);
+int getStatus_DigOut_8_node23();
  
 #define ID_Addr_node24 723
 extern u_int16_t Addr_node24;
@@ -3065,17 +3065,17 @@ int doWrite_Life_node24(u_int16_t value);
 int addWrite_Life_node24(u_int16_t value);
 int getStatus_Life_node24();
  
-#define ID_ConfAi1_node24 725
-extern u_int16_t ConfAi1_node24;
-int doWrite_ConfAi1_node24(u_int16_t value);
-int addWrite_ConfAi1_node24(u_int16_t value);
-int getStatus_ConfAi1_node24();
+#define ID_AnInCnf_1_node24 725
+extern u_int16_t AnInCnf_1_node24;
+int doWrite_AnInCnf_1_node24(u_int16_t value);
+int addWrite_AnInCnf_1_node24(u_int16_t value);
+int getStatus_AnInCnf_1_node24();
  
-#define ID_ConfAi2_node24 726
-extern u_int16_t ConfAi2_node24;
-int doWrite_ConfAi2_node24(u_int16_t value);
-int addWrite_ConfAi2_node24(u_int16_t value);
-int getStatus_ConfAi2_node24();
+#define ID_AnInCnf_2_node24 726
+extern u_int16_t AnInCnf_2_node24;
+int doWrite_AnInCnf_2_node24(u_int16_t value);
+int addWrite_AnInCnf_2_node24(u_int16_t value);
+int getStatus_AnInCnf_2_node24();
  
 #define ID_ValAi1_node24 727
 extern int16_t ValAi1_node24;
@@ -3089,101 +3089,101 @@ int doWrite_ValAi2_node24(int16_t value);
 int addWrite_ValAi2_node24(int16_t value);
 int getStatus_ValAi2_node24();
  
-#define ID_Conf1_node24 729
-extern int Conf1_node24;
-int doWrite_Conf1_node24(int value);
-int addWrite_Conf1_node24(int value);
-int getStatus_Conf1_node24();
+#define ID_DigDir_1_node24 729
+extern int DigDir_1_node24;
+int doWrite_DigDir_1_node24(int value);
+int addWrite_DigDir_1_node24(int value);
+int getStatus_DigDir_1_node24();
  
-#define ID_Conf2_node24 730
-extern int Conf2_node24;
-int doWrite_Conf2_node24(int value);
-int addWrite_Conf2_node24(int value);
-int getStatus_Conf2_node24();
+#define ID_DigDir_2_node24 730
+extern int DigDir_2_node24;
+int doWrite_DigDir_2_node24(int value);
+int addWrite_DigDir_2_node24(int value);
+int getStatus_DigDir_2_node24();
  
-#define ID_Conf3_node24 731
-extern int Conf3_node24;
-int doWrite_Conf3_node24(int value);
-int addWrite_Conf3_node24(int value);
-int getStatus_Conf3_node24();
+#define ID_DigDir_3_node24 731
+extern int DigDir_3_node24;
+int doWrite_DigDir_3_node24(int value);
+int addWrite_DigDir_3_node24(int value);
+int getStatus_DigDir_3_node24();
  
-#define ID_Conf4_node24 732
-extern int Conf4_node24;
-int doWrite_Conf4_node24(int value);
-int addWrite_Conf4_node24(int value);
-int getStatus_Conf4_node24();
+#define ID_DigDir_4_node24 732
+extern int DigDir_4_node24;
+int doWrite_DigDir_4_node24(int value);
+int addWrite_DigDir_4_node24(int value);
+int getStatus_DigDir_4_node24();
  
-#define ID_Conf5_node24 733
-extern int Conf5_node24;
-int doWrite_Conf5_node24(int value);
-int addWrite_Conf5_node24(int value);
-int getStatus_Conf5_node24();
+#define ID_DigDir_5_node24 733
+extern int DigDir_5_node24;
+int doWrite_DigDir_5_node24(int value);
+int addWrite_DigDir_5_node24(int value);
+int getStatus_DigDir_5_node24();
  
-#define ID_Conf6_node24 734
-extern int Conf6_node24;
-int doWrite_Conf6_node24(int value);
-int addWrite_Conf6_node24(int value);
-int getStatus_Conf6_node24();
+#define ID_DigDir_6_node24 734
+extern int DigDir_6_node24;
+int doWrite_DigDir_6_node24(int value);
+int addWrite_DigDir_6_node24(int value);
+int getStatus_DigDir_6_node24();
  
-#define ID_Conf7_node24 735
-extern int Conf7_node24;
-int doWrite_Conf7_node24(int value);
-int addWrite_Conf7_node24(int value);
-int getStatus_Conf7_node24();
+#define ID_DigDir_7_node24 735
+extern int DigDir_7_node24;
+int doWrite_DigDir_7_node24(int value);
+int addWrite_DigDir_7_node24(int value);
+int getStatus_DigDir_7_node24();
  
-#define ID_Conf8_node24 736
-extern int Conf8_node24;
-int doWrite_Conf8_node24(int value);
-int addWrite_Conf8_node24(int value);
-int getStatus_Conf8_node24();
+#define ID_DigDir_8_node24 736
+extern int DigDir_8_node24;
+int doWrite_DigDir_8_node24(int value);
+int addWrite_DigDir_8_node24(int value);
+int getStatus_DigDir_8_node24();
  
-#define ID_digIN5_node24 737
-extern int digIN5_node24;
-int doWrite_digIN5_node24(int value);
-int addWrite_digIN5_node24(int value);
-int getStatus_digIN5_node24();
+#define ID_DigIn_2_node24 737
+extern int DigIn_2_node24;
+int doWrite_DigIn_2_node24(int value);
+int addWrite_DigIn_2_node24(int value);
+int getStatus_DigIn_2_node24();
  
-#define ID_digIN6_node24 738
-extern int digIN6_node24;
-int doWrite_digIN6_node24(int value);
-int addWrite_digIN6_node24(int value);
-int getStatus_digIN6_node24();
+#define ID_DigIn_3_node24 738
+extern int DigIn_3_node24;
+int doWrite_DigIn_3_node24(int value);
+int addWrite_DigIn_3_node24(int value);
+int getStatus_DigIn_3_node24();
  
-#define ID_digIN7_node24 739
-extern int digIN7_node24;
-int doWrite_digIN7_node24(int value);
-int addWrite_digIN7_node24(int value);
-int getStatus_digIN7_node24();
+#define ID_DigIn_6_node24 739
+extern int DigIn_6_node24;
+int doWrite_DigIn_6_node24(int value);
+int addWrite_DigIn_6_node24(int value);
+int getStatus_DigIn_6_node24();
  
-#define ID_digIN8_node24 740
-extern int digIN8_node24;
-int doWrite_digIN8_node24(int value);
-int addWrite_digIN8_node24(int value);
-int getStatus_digIN8_node24();
+#define ID_DigIn_7_node24 740
+extern int DigIn_7_node24;
+int doWrite_DigIn_7_node24(int value);
+int addWrite_DigIn_7_node24(int value);
+int getStatus_DigIn_7_node24();
  
-#define ID_digOUT1_node24 741
-extern int digOUT1_node24;
-int doWrite_digOUT1_node24(int value);
-int addWrite_digOUT1_node24(int value);
-int getStatus_digOUT1_node24();
+#define ID_DigOut_1_node24 741
+extern int DigOut_1_node24;
+int doWrite_DigOut_1_node24(int value);
+int addWrite_DigOut_1_node24(int value);
+int getStatus_DigOut_1_node24();
  
-#define ID_digOUT2_node24 742
-extern int digOUT2_node24;
-int doWrite_digOUT2_node24(int value);
-int addWrite_digOUT2_node24(int value);
-int getStatus_digOUT2_node24();
+#define ID_DigOut_4_node24 742
+extern int DigOut_4_node24;
+int doWrite_DigOut_4_node24(int value);
+int addWrite_DigOut_4_node24(int value);
+int getStatus_DigOut_4_node24();
  
-#define ID_digOUT3_node24 743
-extern int digOUT3_node24;
-int doWrite_digOUT3_node24(int value);
-int addWrite_digOUT3_node24(int value);
-int getStatus_digOUT3_node24();
+#define ID_DigOut_5_node24 743
+extern int DigOut_5_node24;
+int doWrite_DigOut_5_node24(int value);
+int addWrite_DigOut_5_node24(int value);
+int getStatus_DigOut_5_node24();
  
-#define ID_digOUT4_node24 744
-extern int digOUT4_node24;
-int doWrite_digOUT4_node24(int value);
-int addWrite_digOUT4_node24(int value);
-int getStatus_digOUT4_node24();
+#define ID_DigOut_8_node24 744
+extern int DigOut_8_node24;
+int doWrite_DigOut_8_node24(int value);
+int addWrite_DigOut_8_node24(int value);
+int getStatus_DigOut_8_node24();
  
 #define ID_RTU0_TYPE_PORT 5000
 extern u_int32_t RTU0_TYPE_PORT;
