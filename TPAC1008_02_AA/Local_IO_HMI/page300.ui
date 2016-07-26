@@ -217,7 +217,7 @@ background-color: rgb(170, 170, 255);
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>10</pointsize>
+     <pointsize>9</pointsize>
      <weight>50</weight>
      <bold>false</bold>
     </font>
@@ -258,10 +258,10 @@ background-color: rgb(170, 170, 255);
     </color>
    </property>
    <property name="text">
-    <string>TPAC1008_02</string>
+    <string>TPAC1008_02_AA</string>
    </property>
    <property name="pressText">
-    <string>TPAC1008_02</string>
+    <string>TPAC1008_02_AA</string>
    </property>
    <property name="borderWidth">
     <number>2</number>

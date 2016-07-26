@@ -194,16 +194,16 @@ background-color: rgb(170, 170, 255);
   <widget class="ATCMbutton" name="atcmButton_6">
    <property name="geometry">
     <rect>
-     <x>460</x>
+     <x>440</x>
      <y>-1</y>
-     <width>141</width>
+     <width>161</width>
      <height>58</height>
     </rect>
    </property>
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>11</pointsize>
+     <pointsize>10</pointsize>
      <weight>50</weight>
      <bold>false</bold>
     </font>
@@ -244,10 +244,10 @@ background-color: rgb(170, 170, 255);
     </color>
    </property>
    <property name="text">
-    <string>TPAC1008_02</string>
+    <string>TPAC1008_02_AA</string>
    </property>
    <property name="pressText">
-    <string>TPAC1008_02</string>
+    <string>TPAC1008_02_AA</string>
    </property>
    <property name="borderWidth">
     <number>2</number>
@@ -441,7 +441,7 @@ background-color: rgb(170, 170, 255);
   <widget class="ATCMlabel" name="atcmLabel_PLC_time">
    <property name="geometry">
     <rect>
-     <x>361</x>
+     <x>340</x>
      <y>0</y>
      <width>100</width>
      <height>28</height>

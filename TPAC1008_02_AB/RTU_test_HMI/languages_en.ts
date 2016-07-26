@@ -592,8 +592,14 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="page100.ui" line="841"/>
         <location filename="page100.ui" line="863"/>
         <source>menu</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page100.ui" line="835"/>
+        <source>page: menu  status: </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
