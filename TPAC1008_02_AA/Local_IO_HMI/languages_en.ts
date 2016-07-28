@@ -1602,8 +1602,8 @@
     <message>
         <location filename="page300.ui" line="261"/>
         <location filename="page300.ui" line="264"/>
-        <source>TPAC1008_02</source>
-        <oldsource>TPAC1008</oldsource>
+        <source>TPAC1008_02_AA</source>
+        <oldsource>TPAC1008_02</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2443,8 +2443,8 @@
     <message>
         <location filename="page401.ui" line="100"/>
         <location filename="page401.ui" line="103"/>
-        <source>TPAC1008_02</source>
-        <oldsource>TPAC1008</oldsource>
+        <source>TPAC1008_02_AA</source>
+        <oldsource>TPAC1008_02</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3143,8 +3143,8 @@
     <message>
         <location filename="page402.ui" line="247"/>
         <location filename="page402.ui" line="250"/>
-        <source>TPAC1008_02</source>
-        <oldsource>TPAC1008</oldsource>
+        <source>TPAC1008_02_AA</source>
+        <oldsource>TPAC1008_02</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
