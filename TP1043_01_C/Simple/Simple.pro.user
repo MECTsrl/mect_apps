@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 2.7.84, 2016-07-26T19:17:05. -->
+<!-- Written by QtCreator 2.7.84, 2016-07-28T10:29:26. -->
 <qtcreator>
  <data>
   <variable>ProjectExplorer.Project.ActiveTarget</variable>
@@ -54,7 +54,7 @@
    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">IMX28</value>
    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">IMX28</value>
    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">{4a3d9564-037d-44df-a261-271377ff6ac7}</value>
-   <value type="int" key="ProjectExplorer.Target.ActiveBuildConfiguration">1</value>
+   <value type="int" key="ProjectExplorer.Target.ActiveBuildConfiguration">0</value>
    <value type="int" key="ProjectExplorer.Target.ActiveDeployConfiguration">0</value>
    <value type="int" key="ProjectExplorer.Target.ActiveRunConfiguration">0</value>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.BuildConfiguration.0">
@@ -113,7 +113,7 @@
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4BuildConfiguration</value>
     <value type="int" key="Qt4ProjectManager.Qt4BuildConfiguration.BuildConfiguration">2</value>
-    <value type="QString" key="Qt4ProjectManager.Qt4BuildConfiguration.BuildDirectory">C:/MectApps/TP1043_RTU/Local_IO_HMI</value>
+    <value type="QString" key="Qt4ProjectManager.Qt4BuildConfiguration.BuildDirectory">C:/MectApps/TP1043_01_C/Simple</value>
     <value type="bool" key="Qt4ProjectManager.Qt4BuildConfiguration.UseShadowBuild">false</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.BuildConfiguration.1">
@@ -172,7 +172,7 @@
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4BuildConfiguration</value>
     <value type="int" key="Qt4ProjectManager.Qt4BuildConfiguration.BuildConfiguration">0</value>
-    <value type="QString" key="Qt4ProjectManager.Qt4BuildConfiguration.BuildDirectory">C:/MectApps/TP1043_RTU/Local_IO_HMI</value>
+    <value type="QString" key="Qt4ProjectManager.Qt4BuildConfiguration.BuildDirectory">C:/MectApps/TP1043_01_C/Simple</value>
     <value type="bool" key="Qt4ProjectManager.Qt4BuildConfiguration.UseShadowBuild">false</value>
    </valuemap>
    <value type="int" key="ProjectExplorer.Target.BuildConfigurationCount">2</value>
@@ -208,256 +208,11 @@
       <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Upload files via SFTP</value>
       <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
       <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">RemoteLinux.DirectUploadStep</value>
-      <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedFiles">
-       <value type="QString">C:/MectApps/TP1043_RTU/Local_IO_HMI/config/system.ini</value>
-       <value type="QString">C:/MectApps/TP1043_RTU/Local_IO_HMI/config/Alarms.csv</value>
-       <value type="QString">C:/MectApps/TP1043_RTU/Local_IO_HMI/config/splash.png</value>
-       <value type="QString">C:/MectApps/TP1043_RTU/Local_IO_HMI/config/lang_table.csv</value>
-       <value type="QString">C:/MectApps/TP1043_RTU/Local_IO_HMI/config/trend1.csv</value>
-       <value type="QString">C:/MectApps/TP1043_RTU/Local_IO_HMI/config/systool.png</value>
-       <value type="QString">C:/MectApps/TP1043_RTU/Local_IO_HMI/config/trend1.csv</value>
-       <value type="QString">C:/MectApps/TP1043_RTU/Local_IO_HMI/config/systool.png</value>
-       <value type="QString">C:/MectApps/TP1043_RTU/Local_IO_HMI/config/dont_run_safe_hmi</value>
-       <value type="QString">C:/MectApps/TP1043_RTU/Local_IO_HMI/config/Crosstable.csv</value>
-       <value type="QString">C:/MectApps/TP1043_RTU/Local_IO_HMI/config/system.ini</value>
-       <value type="QString">C:/MectApps/TP1043_RTU/Local_IO_HMI/config/splash.png</value>
-       <value type="QString">C:/MectApps/TP1043_RTU/Local_IO_HMI/config/store1.csv</value>
-       <value type="QString">C:/MectApps/TP1043_RTU/Local_IO_HMI/hmi</value>
-       <value type="QString">C:/MectApps/TP1043_RTU/Local_IO_HMI/config/Alarms.csv</value>
-       <value type="QString">C:/MectApps/TP1043_RTU/Local_IO_HMI/config/Crosstable.csv</value>
-       <value type="QString">C:/MectApps/TP1043_RTU/Local_IO_HMI/config/lang_table.csv</value>
-       <value type="QString">C:/MectApps/TP1043_RTU/Local_IO_HMI/config/systool.png</value>
-       <value type="QString">C:/MectApps/TP1043_RTU/Local_IO_HMI/hmi</value>
-       <value type="QString">C:/MectApps/TP1043_RTU/Local_IO_HMI/config/dont_run_safe_hmi</value>
-       <value type="QString">C:/MectApps/TP1043_RTU/Local_IO_HMI/config/Alarms.csv</value>
-       <value type="QString">C:/MectApps/TP1043_RTU/Local_IO_HMI/config/lang_table.csv</value>
-       <value type="QString">C:/MectApps/TP1043_RTU/Local_IO_HMI/config/trend1.csv</value>
-       <value type="QString">C:/MectApps/TP1043_RTU/Local_IO_HMI/hmi</value>
-       <value type="QString">C:/MectApps/TP1043_RTU/Local_IO_HMI/config/dont_run_safe_hmi</value>
-       <value type="QString">C:/MectApps/TP1043_RTU/Local_IO_HMI/config/system.ini</value>
-       <value type="QString">C:/MectApps/TP1043_RTU/Local_IO_HMI/config/splash.png</value>
-       <value type="QString">C:/MectApps/TP1043_RTU/Local_IO_HMI/config/store1.csv</value>
-       <value type="QString">C:/MectApps/TP1043_RTU/Local_IO_HMI/config/Alarms.csv</value>
-       <value type="QString">C:/MectApps/TP1043_RTU/Local_IO_HMI/config/Crosstable.csv</value>
-       <value type="QString">C:/MectApps/TP1043_RTU/Local_IO_HMI/config/lang_table.csv</value>
-       <value type="QString">C:/MectApps/TP1043_RTU/Local_IO_HMI/config/systool.png</value>
-       <value type="QString">C:/MectApps/TP1043_RTU/Local_IO_HMI/config/trend1.csv</value>
-       <value type="QString">C:/MectApps/TP1043_RTU/Local_IO_HMI/config/store1.csv</value>
-       <value type="QString">C:/MectApps/TP1043_RTU/Local_IO_HMI/hmi</value>
-       <value type="QString">C:/MectApps/TP1043_RTU/Local_IO_HMI/config/Crosstable.csv</value>
-       <value type="QString">C:/MectApps/TP1043_RTU/Local_IO_HMI/config/trend1.csv</value>
-       <value type="QString">C:/MectApps/TP1043_RTU/Local_IO_HMI/config/store1.csv</value>
-       <value type="QString">C:/MectApps/TP1043_RTU/Local_IO_HMI/config/system.ini</value>
-       <value type="QString">C:/MectApps/TP1043_RTU/Local_IO_HMI/config/splash.png</value>
-       <value type="QString">C:/MectApps/TP1043_RTU/Local_IO_HMI/config/Alarms.csv</value>
-       <value type="QString">C:/MectApps/TP1043_RTU/Local_IO_HMI/config/splash.png</value>
-       <value type="QString">C:/MectApps/TP1043_RTU/Local_IO_HMI/config/Crosstable.csv</value>
-       <value type="QString">C:/MectApps/TP1043_RTU/Local_IO_HMI/config/system.ini</value>
-       <value type="QString">C:/MectApps/TP1043_RTU/Local_IO_HMI/config/lang_table.csv</value>
-       <value type="QString">C:/MectApps/TP1043_RTU/Local_IO_HMI/config/systool.png</value>
-       <value type="QString">C:/MectApps/TP1043_RTU/Local_IO_HMI/config/store1.csv</value>
-       <value type="QString">C:/MectApps/TP1043_RTU/Local_IO_HMI/hmi</value>
-      </valuelist>
-      <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedHosts">
-       <value type="QString">192.168.5.211</value>
-       <value type="QString">192.168.5.115</value>
-       <value type="QString">192.168.5.211</value>
-       <value type="QString">192.168.5.115</value>
-       <value type="QString">192.168.5.115</value>
-       <value type="QString">192.168.5.117</value>
-       <value type="QString">192.168.5.113</value>
-       <value type="QString">192.168.5.211</value>
-       <value type="QString">192.168.5.115</value>
-       <value type="QString">192.168.5.113</value>
-       <value type="QString">192.168.5.111</value>
-       <value type="QString">192.168.5.115</value>
-       <value type="QString">192.168.5.117</value>
-       <value type="QString">192.168.5.111</value>
-       <value type="QString">192.168.5.117</value>
-       <value type="QString">192.168.5.115</value>
-       <value type="QString">192.168.5.117</value>
-       <value type="QString">192.168.5.115</value>
-       <value type="QString">192.168.5.117</value>
-       <value type="QString">192.168.5.211</value>
-       <value type="QString">192.168.5.211</value>
-       <value type="QString">192.168.5.211</value>
-       <value type="QString">192.168.5.111</value>
-       <value type="QString">192.168.5.211</value>
-       <value type="QString">192.168.5.117</value>
-       <value type="QString">192.168.5.117</value>
-       <value type="QString">192.168.5.113</value>
-       <value type="QString">192.168.5.115</value>
-       <value type="QString">192.168.5.111</value>
-       <value type="QString">192.168.5.117</value>
-       <value type="QString">192.168.5.111</value>
-       <value type="QString">192.168.5.113</value>
-       <value type="QString">192.168.5.211</value>
-       <value type="QString">192.168.5.113</value>
-       <value type="QString">192.168.5.115</value>
-       <value type="QString">192.168.5.211</value>
-       <value type="QString">192.168.5.117</value>
-       <value type="QString">192.168.5.211</value>
-       <value type="QString">192.168.5.115</value>
-       <value type="QString">192.168.5.111</value>
-       <value type="QString">192.168.5.113</value>
-       <value type="QString">192.168.5.117</value>
-       <value type="QString">192.168.5.111</value>
-       <value type="QString">192.168.5.113</value>
-       <value type="QString">192.168.5.113</value>
-       <value type="QString">192.168.5.111</value>
-       <value type="QString">192.168.5.111</value>
-       <value type="QString">192.168.5.113</value>
-      </valuelist>
-      <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedRemotePaths">
-       <value type="QString">/local/etc/sysconfig</value>
-       <value type="QString">/local/etc/sysconfig</value>
-       <value type="QString">/local/etc/sysconfig/img</value>
-       <value type="QString">/local/etc/sysconfig</value>
-       <value type="QString">/local/data/customtrend</value>
-       <value type="QString">/local/etc/sysconfig/img</value>
-       <value type="QString">/local/data/customtrend</value>
-       <value type="QString">/local/etc/sysconfig/img</value>
-       <value type="QString">/var/tmp</value>
-       <value type="QString">/local/etc/sysconfig</value>
-       <value type="QString">/local/etc/sysconfig</value>
-       <value type="QString">/local/etc/sysconfig/img</value>
-       <value type="QString">/local/data/customstore</value>
-       <value type="QString">/local/root</value>
-       <value type="QString">/local/etc/sysconfig</value>
-       <value type="QString">/local/etc/sysconfig</value>
-       <value type="QString">/local/etc/sysconfig</value>
-       <value type="QString">/local/etc/sysconfig/img</value>
-       <value type="QString">/local/root</value>
-       <value type="QString">/var/tmp</value>
-       <value type="QString">/local/etc/sysconfig</value>
-       <value type="QString">/local/etc/sysconfig</value>
-       <value type="QString">/local/data/customtrend</value>
-       <value type="QString">/local/root</value>
-       <value type="QString">/var/tmp</value>
-       <value type="QString">/local/etc/sysconfig</value>
-       <value type="QString">/local/etc/sysconfig/img</value>
-       <value type="QString">/local/data/customstore</value>
-       <value type="QString">/local/etc/sysconfig</value>
-       <value type="QString">/local/etc/sysconfig</value>
-       <value type="QString">/local/etc/sysconfig</value>
-       <value type="QString">/local/etc/sysconfig/img</value>
-       <value type="QString">/local/data/customtrend</value>
-       <value type="QString">/local/data/customstore</value>
-       <value type="QString">/local/root</value>
-       <value type="QString">/local/etc/sysconfig</value>
-       <value type="QString">/local/data/customtrend</value>
-       <value type="QString">/local/data/customstore</value>
-       <value type="QString">/local/etc/sysconfig</value>
-       <value type="QString">/local/etc/sysconfig/img</value>
-       <value type="QString">/local/etc/sysconfig</value>
-       <value type="QString">/local/etc/sysconfig/img</value>
-       <value type="QString">/local/etc/sysconfig</value>
-       <value type="QString">/local/etc/sysconfig</value>
-       <value type="QString">/local/etc/sysconfig</value>
-       <value type="QString">/local/etc/sysconfig/img</value>
-       <value type="QString">/local/data/customstore</value>
-       <value type="QString">/local/root</value>
-      </valuelist>
-      <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedSysroots">
-       <value type="QString">C:/Qt485/imx28/rootfs</value>
-       <value type="QString">C:/Qt485/imx28/rootfs</value>
-       <value type="QString">C:/Qt485/imx28/rootfs</value>
-       <value type="QString">C:/Qt485/imx28/rootfs</value>
-       <value type="QString">C:/Qt485/imx28/rootfs</value>
-       <value type="QString">C:/Qt485/imx28/rootfs</value>
-       <value type="QString">C:/Qt485/imx28/rootfs</value>
-       <value type="QString">C:/Qt485/imx28/rootfs</value>
-       <value type="QString">C:/Qt485/imx28/rootfs</value>
-       <value type="QString">C:/Qt485/imx28/rootfs</value>
-       <value type="QString">C:/Qt485/imx28/rootfs</value>
-       <value type="QString">C:/Qt485/imx28/rootfs</value>
-       <value type="QString">C:/Qt485/imx28/rootfs</value>
-       <value type="QString">C:/Qt485/imx28/rootfs</value>
-       <value type="QString">C:/Qt485/imx28/rootfs</value>
-       <value type="QString">C:/Qt485/imx28/rootfs</value>
-       <value type="QString">C:/Qt485/imx28/rootfs</value>
-       <value type="QString">C:/Qt485/imx28/rootfs</value>
-       <value type="QString">C:/Qt485/imx28/rootfs</value>
-       <value type="QString">C:/Qt485/imx28/rootfs</value>
-       <value type="QString">C:/Qt485/imx28/rootfs</value>
-       <value type="QString">C:/Qt485/imx28/rootfs</value>
-       <value type="QString">C:/Qt485/imx28/rootfs</value>
-       <value type="QString">C:/Qt485/imx28/rootfs</value>
-       <value type="QString">C:/Qt485/imx28/rootfs</value>
-       <value type="QString">C:/Qt485/imx28/rootfs</value>
-       <value type="QString">C:/Qt485/imx28/rootfs</value>
-       <value type="QString">C:/Qt485/imx28/rootfs</value>
-       <value type="QString">C:/Qt485/imx28/rootfs</value>
-       <value type="QString">C:/Qt485/imx28/rootfs</value>
-       <value type="QString">C:/Qt485/imx28/rootfs</value>
-       <value type="QString">C:/Qt485/imx28/rootfs</value>
-       <value type="QString">C:/Qt485/imx28/rootfs</value>
-       <value type="QString">C:/Qt485/imx28/rootfs</value>
-       <value type="QString">C:/Qt485/imx28/rootfs</value>
-       <value type="QString">C:/Qt485/imx28/rootfs</value>
-       <value type="QString">C:/Qt485/imx28/rootfs</value>
-       <value type="QString">C:/Qt485/imx28/rootfs</value>
-       <value type="QString">C:/Qt485/imx28/rootfs</value>
-       <value type="QString">C:/Qt485/imx28/rootfs</value>
-       <value type="QString">C:/Qt485/imx28/rootfs</value>
-       <value type="QString">C:/Qt485/imx28/rootfs</value>
-       <value type="QString">C:/Qt485/imx28/rootfs</value>
-       <value type="QString">C:/Qt485/imx28/rootfs</value>
-       <value type="QString">C:/Qt485/imx28/rootfs</value>
-       <value type="QString">C:/Qt485/imx28/rootfs</value>
-       <value type="QString">C:/Qt485/imx28/rootfs</value>
-       <value type="QString">C:/Qt485/imx28/rootfs</value>
-      </valuelist>
-      <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedTimes">
-       <value type="QDateTime">2016-07-26T15:24:33</value>
-       <value type="QDateTime">2016-01-19T11:58:32</value>
-       <value type="QDateTime">2016-07-26T15:24:33</value>
-       <value type="QDateTime">2016-01-19T11:58:32</value>
-       <value type="QDateTime">2016-01-19T11:58:33</value>
-       <value type="QDateTime">2016-02-04T15:54:56</value>
-       <value type="QDateTime">2016-01-26T18:49:54</value>
-       <value type="QDateTime">2016-03-11T10:01:17</value>
-       <value type="QDateTime">2016-01-19T11:58:32</value>
-       <value type="QDateTime">2016-01-26T18:49:53</value>
-       <value type="QDateTime">2016-03-10T17:14:28</value>
-       <value type="QDateTime">2016-01-19T11:58:32</value>
-       <value type="QDateTime">2016-02-04T15:54:56</value>
-       <value type="QDateTime">2016-03-10T17:14:30</value>
-       <value type="QDateTime">2016-02-04T15:54:56</value>
-       <value type="QDateTime">2016-01-19T11:58:32</value>
-       <value type="QDateTime">2016-02-04T15:54:56</value>
-       <value type="QDateTime">2016-01-19T11:58:33</value>
-       <value type="QDateTime">2016-02-04T15:54:57</value>
-       <value type="QDateTime">2016-01-20T20:00:23</value>
-       <value type="QDateTime">2016-03-11T10:01:17</value>
-       <value type="QDateTime">2016-03-11T10:01:17</value>
-       <value type="QDateTime">2016-03-10T17:14:29</value>
-       <value type="QDateTime">2016-07-26T15:24:35</value>
-       <value type="QDateTime">2016-01-20T20:01:39</value>
-       <value type="QDateTime">2016-02-04T15:54:56</value>
-       <value type="QDateTime">2016-01-26T18:49:53</value>
-       <value type="QDateTime">2016-01-19T11:58:33</value>
-       <value type="QDateTime">2016-03-10T17:14:28</value>
-       <value type="QDateTime">2016-02-04T15:54:56</value>
-       <value type="QDateTime">2016-03-10T17:14:28</value>
-       <value type="QDateTime">2016-01-26T18:49:54</value>
-       <value type="QDateTime">2016-07-26T15:24:33</value>
-       <value type="QDateTime">2016-01-26T18:49:54</value>
-       <value type="QDateTime">2016-01-19T11:58:34</value>
-       <value type="QDateTime">2016-07-26T15:24:32</value>
-       <value type="QDateTime">2016-02-04T15:54:56</value>
-       <value type="QDateTime">2016-03-11T10:01:17</value>
-       <value type="QDateTime">2016-01-19T11:58:32</value>
-       <value type="QDateTime">2016-03-10T17:14:29</value>
-       <value type="QDateTime">2016-01-26T18:49:53</value>
-       <value type="QDateTime">2016-02-04T15:54:56</value>
-       <value type="QDateTime">2016-03-10T17:14:28</value>
-       <value type="QDateTime">2016-01-26T18:49:53</value>
-       <value type="QDateTime">2016-01-26T18:49:53</value>
-       <value type="QDateTime">2016-03-10T17:14:29</value>
-       <value type="QDateTime">2016-03-10T17:14:29</value>
-       <value type="QDateTime">2016-01-26T18:49:54</value>
-      </valuelist>
+      <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedFiles"/>
+      <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedHosts"/>
+      <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedRemotePaths"/>
+      <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedSysroots"/>
+      <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedTimes"/>
       <value type="bool" key="RemoteLinux.GenericDirectUploadStep.Incremental">false</value>
      </valuemap>
      <value type="int" key="ProjectExplorer.BuildStepList.StepsCount">3</value>
@@ -506,11 +261,11 @@
     </valuelist>
     <value type="int" key="PE.EnvironmentAspect.Base">1</value>
     <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Local_IO_HMI (on Remote Device)</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Simple (on Remote Device)</value>
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">RemoteLinuxRunConfiguration:C:/MectApps/TP1043_01_A/Local_IO_HMI/Local_IO_HMI.pro</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">RemoteLinuxRunConfiguration:C:/MectApps/TP1043_01_C/Simple/Simple.pro</value>
     <value type="QString" key="Qt4ProjectManager.MaemoRunConfiguration.Arguments"></value>
-    <value type="QString" key="Qt4ProjectManager.MaemoRunConfiguration.ProFile">Local_IO_HMI.pro</value>
+    <value type="QString" key="Qt4ProjectManager.MaemoRunConfiguration.ProFile">Simple.pro</value>
     <value type="QString" key="RemoteLinux.RunConfig.AlternateRemoteExecutable"></value>
     <value type="bool" key="RemoteLinux.RunConfig.UseAlternateRemoteExecutable">false</value>
     <value type="QString" key="RemoteLinux.RunConfig.WorkingDirectory"></value>
