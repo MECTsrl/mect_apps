@@ -27,7 +27,7 @@ file=Slow.st
 file=$(LIBDIR)\ATCM_IEC1131_3.4cl
 
 [Targets]
-file=TPAC1007_4_AA.ATHW119
+file=TP1043_01_A.ATHW119
 
 [Compiler.ATHW119]
 opt=bp2

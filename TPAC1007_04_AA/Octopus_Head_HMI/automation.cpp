@@ -148,7 +148,7 @@ void loop(void)
                     next_step = 1;
                 } else {
                     logStop();
-                    if (RESULTS_OK == TEST_STEP_MAX) {
+                    if (RESULTS_OK == TEST_STEP_MAX && RESULTS_NG == 0) {
                         QMessageBox box;
                         box.setWindowTitle("TEST RESULT");
                         box.setText("RESULT = OK\n\nnow PWR_OFF then touch OK");

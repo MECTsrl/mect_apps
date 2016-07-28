@@ -10,12 +10,105 @@
     </message>
     <message>
         <location filename="page100.ui" line="55"/>
+        <location filename="page100.ui" line="397"/>
         <source>ATCMbutton widget</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="page100.ui" line="121"/>
         <source>Local_IO</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page100.ui" line="165"/>
+        <source>86400.00</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page100.ui" line="168"/>
+        <location filename="page100.ui" line="174"/>
+        <source>PLC_time</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page100.ui" line="171"/>
+        <location filename="page100.ui" line="240"/>
+        <location filename="page100.ui" line="341"/>
+        <source>ATCMlabel widget</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page100.ui" line="177"/>
+        <source> s</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page100.ui" line="183"/>
+        <location filename="page100.ui" line="186"/>
+        <location filename="page100.ui" line="252"/>
+        <location filename="page100.ui" line="255"/>
+        <location filename="page100.ui" line="350"/>
+        <location filename="page100.ui" line="353"/>
+        <source>0</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page100.ui" line="234"/>
+        <source>1.xyz</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page100.ui" line="237"/>
+        <location filename="page100.ui" line="243"/>
+        <source>PLC_Version</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page100.ui" line="246"/>
+        <source>Engine: v</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page100.ui" line="287"/>
+        <location filename="page100.ui" line="299"/>
+        <source>RTU_RTU1_RD</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page100.ui" line="290"/>
+        <source>ATCMled widget</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page100.ui" line="338"/>
+        <location filename="page100.ui" line="344"/>
+        <source>RTU_HEARTBEAT</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page100.ui" line="394"/>
+        <location filename="page100.ui" line="406"/>
+        <source>RTU_RTU1_WR</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page100.ui" line="460"/>
+        <source>ATCM QTime</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page100.ui" line="463"/>
+        <source>ATCMtime widget</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page100.ui" line="495"/>
+        <source>ATCM QDate</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page100.ui" line="498"/>
+        <source>ATCMdate widget</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
