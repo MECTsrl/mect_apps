@@ -41,11 +41,11 @@ END_VAR
 		(* no PWM AnOut *)
 		if (TST_AnOut_1 ) then 
 			Temp_PLC_AnOutConf := Temp_PLC_AnOutConf + word_to_uint(shl(uint_to_word(VAL_AnOutConf_1),0));
-			PLC_AnOut_1 := VAL_AnOut_1;
+			PLC_AnOut_1 := 0; (* value afterwords, because in Crosstable AnOut is before AnOutConf *)
 		end_if; 		
 		if (TST_AnOut_2 ) then
 			Temp_PLC_AnOutConf := Temp_PLC_AnOutConf + word_to_uint(shl(uint_to_word(VAL_AnOutConf_2),4));
-			PLC_AnOut_2 := VAL_AnOut_2;
+			PLC_AnOut_2 := 0; (* value afterwords, because in Crosstable AnOut is before AnOutConf *)
 		end_if; 
 	    PLC_AnOutConf := Temp_PLC_AnOutConf;
 	
@@ -58,6 +58,12 @@ END_VAR
 	
 	elsif substatus = 1 then
 
+		if (TST_AnOut_1 ) then 
+			PLC_AnOut_1 := VAL_AnOut_1;
+		end_if; 		
+		if (TST_AnOut_2 ) then
+			PLC_AnOut_2 := VAL_AnOut_2;
+		end_if; 
 		; (* no PWM AnOut *)
 
 	elsif substatus = 2 then
