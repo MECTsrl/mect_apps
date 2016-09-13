@@ -10,7 +10,6 @@ WORD_BIT  <-> int
 DWORD_BIT <-> int
 */ 
 #include "crosstable.h"
-#include "cross_table_utility.h"
  
 int16_t TCP_AnIn_1 = 0;
 int16_t TCP_AnIn_2 = 0;

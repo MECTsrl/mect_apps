@@ -15,6 +15,7 @@ DWORD_BIT <-> int
 extern "C" {
 #endif
 #include <sys/types.h>
+#include "cross_table_utility.h"
  
 #define ID_DOUT0_TE0_00 201
 extern int DOUT0_TE0_00;

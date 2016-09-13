@@ -423,13 +423,6 @@ RTU0 / NODE 2</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="1846"/>
-        <location filename="page100.ui" line="1852"/>
-        <source>PLC_DigIn_6</source>
-        <oldsource>PLC_DigIn_12</oldsource>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="page100.ui" line="855"/>
         <source>menu</source>
         <translation type="unfinished"></translation>
@@ -1085,15 +1078,6 @@ RTU0 / NODE 2</oldsource>
         <location filename="page401.ui" line="1714"/>
         <source>TST_DigIn_6</source>
         <oldsource>PLC_DigIn_10</oldsource>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page401.ui" line="105"/>
-        <location filename="page401.ui" line="111"/>
-        <location filename="page401.ui" line="411"/>
-        <location filename="page401.ui" line="1203"/>
-        <location filename="page401.ui" line="1714"/>
-        <source>TST_DigIn_6</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

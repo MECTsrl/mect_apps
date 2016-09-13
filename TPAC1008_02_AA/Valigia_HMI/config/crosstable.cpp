@@ -10,7 +10,6 @@ WORD_BIT  <-> int
 DWORD_BIT <-> int
 */ 
 #include "crosstable.h"
-#include "cross_table_utility.h"
  
 int DOUT0_TE0_00 = 0;
 int DOUT0_TE0_01 = 0;

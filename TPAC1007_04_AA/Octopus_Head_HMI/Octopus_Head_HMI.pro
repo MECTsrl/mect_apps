@@ -61,8 +61,10 @@ RESOURCES += \
     resources.qrc
 
 OTHER_FILES += \
-    recipes/TP1043_01_A/2.csv \
     recipes/TP1043_01_A/1.csv \
+    recipes/TP1043_01_A/2.csv \
+    recipes/TP1043_01_B/1.csv \
+    recipes/TP1043_01_B/2.csv \
     recipes/TPAC1006/1.csv \
     recipes/TPAC1006/2.csv \
     recipes/TPAC1007_03/1.csv \
@@ -88,6 +90,9 @@ OTHER_FILES += \
 
 recipes_TP1043_01_A.files = recipes/TP1043_01_A/1.csv recipes/TP1043_01_A/2.csv
 recipes_TP1043_01_A.path = /local/data/recipe/TP1043_01_A
+
+recipes_TP1043_01_B.files = recipes/TP1043_01_B/1.csv recipes/TP1043_01_B/2.csv
+recipes_TP1043_01_B.path = /local/data/recipe/TP1043_01_B
 
 recipes_TPAC1006.files = recipes/TPAC1006/1.csv recipes/TPAC1006/2.csv
 recipes_TPAC1006.path = /local/data/recipe/TPAC1006
@@ -124,6 +129,7 @@ recipes_Values.path = /local/data/recipe/Values
 
 INSTALLS += \
     recipes_TP1043_01_A \
+    recipes_TP1043_01_B \
     recipes_TPAC1006 \
     recipes_TPAC1007_03 \
     recipes_TPAC1007_LV \
