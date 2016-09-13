@@ -14,6 +14,8 @@
 #include "ui_page300.h"
 #include "crosstable.h"
 
+#include "automation.h"
+
 /**
  * @brief this macro is used to set the PAGE300 style.
  * the syntax is html stylesheet-like
@@ -43,6 +45,15 @@ page300::page300(QWidget *parent) :
     /* set the style described into the macro SET_PAGE300_STYLE */
     SET_PAGE300_STYLE();
     translateFontSize(this);
+    qtitle.clear();
+    qtext.clear();
+    setTheWidget(this);
+}
+
+void page300::messageBox(char *title, char *text)
+{
+    qtitle = QString(title);
+    qtext = QString(text);
 }
 
 /**
@@ -75,6 +86,14 @@ void page300::updateData()
     }
     /* call the parent updateData member */
     page::updateData();
+    if (! qtitle.isEmpty() ) {
+        QMessageBox box(this);
+        box.setWindowTitle(qtitle);
+        box.setText(qtext);
+        box.exec();
+        qtitle.clear();
+        qtext.clear();
+    }
     /* This code show how to connect
      * the cross table variable named "RET_REG_1" to the HMI label "label1val"
      * and if it is not NULL, set the Status led "led1" without using ATCM plugins

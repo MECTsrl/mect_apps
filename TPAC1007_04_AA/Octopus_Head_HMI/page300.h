@@ -25,7 +25,8 @@ public:
     ~page300();
     virtual void reload(void);
     virtual void updateData();
-    
+    void messageBox(char *title, char *text);
+
 private slots:
     void changeEvent(QEvent * event);
     void on_atcmComboBox_PRODUCT_ID_currentIndexChanged(int index);
@@ -33,6 +34,8 @@ private slots:
 
 private:
     Ui::page300 *ui;
+    QString qtitle;
+    QString qtext;
 };
 
 #endif // PAGE300_H

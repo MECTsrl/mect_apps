@@ -4,6 +4,7 @@
 #include "pagebrowser.h"
 #include "crosstable.h"
 #include "automation.h"
+#include <QMessageBox>
 
 // OCTOPUS STATUS
 #define STATUS_IDLE       0
@@ -74,6 +75,7 @@ static void doReload();
 static u_int16_t previous_PLC_Heartbeat;
 static float previous_PLC_time;
 static float last_PLC_time;
+static page300 *thePage = NULL;
 
 void setup(void)
 {
@@ -83,23 +85,26 @@ void setup(void)
     last_PLC_time = PLC_time;
 }
 
+void setTheWidget(page300 *p)
+{
+    thePage = p;
+}
+
 void loop(void)
 {
     if (previous_PLC_Heartbeat == PLC_Heartbeat) {
         if ((PLC_time - last_PLC_time) > 1.0) {
-            QMessageBox box;
-            box.setWindowTitle("RTU3 hangup :(");
-            box.setText("What happened?");
-            box.exec();
+            if (thePage) {
+                thePage->messageBox("RTU3 hangup :(", "What happened?");
+            }
         }
     } else {
         previous_PLC_Heartbeat = PLC_Heartbeat;
         last_PLC_time = PLC_time;
         if (previous_PLC_time == PLC_time) {
-            QMessageBox box;
-            box.setWindowTitle("PLC_time hangup :(");
-            box.setText("What happened?");
-            box.exec();
+            if (thePage) {
+                thePage->messageBox("PLC_time hangup :(", "What happened?");
+            }
         } else {
             previous_PLC_time = PLC_time;
         }
@@ -149,10 +154,9 @@ void loop(void)
                 } else {
                     logStop();
                     if (RESULTS_OK == TEST_STEP_MAX && RESULTS_NG == 0) {
-                        QMessageBox box;
-                        box.setWindowTitle("TEST RESULT");
-                        box.setText("RESULT = OK\n\nnow PWR_OFF then touch OK");
-                        box.exec();
+                        if (thePage) {
+                            thePage->messageBox("TEST RESULT", "RESULT = OK\n\nnow PWR_OFF then touch OK");
+                        }
                     }
                     return;
                 }
