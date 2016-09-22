@@ -61,6 +61,13 @@ END_VAR
 			STATUS := STATUS_STOPPING;
 			return;
 		end_if;
+	    if (TEST2_STATUS = TEST_STATUS_LOCAL or TESTx_STATUS = TEST_STATUS_LOCAL) then
+			(* ops, something crashed or rebooted *)
+			RESULT := RESULT_NG;
+			RESULTS_NG := RESULTS_NG + 1;
+			STATUS := STATUS_DONE;
+			return;
+		end_if;
 		case substatus of
 		0: (* clear the OK test variables and write the TST ones *)
 			ClearOK();
