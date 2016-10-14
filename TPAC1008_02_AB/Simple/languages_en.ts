@@ -318,8 +318,6 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="1231"/>
-        <location filename="page100.ui" line="1237"/>
         <location filename="page100.ui" line="2114"/>
         <location filename="page100.ui" line="2120"/>
         <source>PLC_CaptureT1_Lo</source>

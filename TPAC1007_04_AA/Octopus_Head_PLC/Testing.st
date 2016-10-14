@@ -20,7 +20,7 @@ END_VAR
 			ClearPLC();
 			TEST2_COMMAND := TEST_STATUS_REMOTE;
 			TEST_STEP := 0;
-			RESULT := RESULT_UNKNOWN;
+			RESULT := RESULT_UNKNOWN; PLC_AnOut_3 := 0; (* Trigger Reset *)
 			RESULTS_OK := 0;
 			RESULTS_NG := 0;
 			STATUS := STATUS_STARTING;
@@ -63,7 +63,7 @@ END_VAR
 		end_if;
 	    if (TEST2_STATUS = TEST_STATUS_LOCAL or TESTx_STATUS = TEST_STATUS_LOCAL) then
 			(* ops, something crashed or rebooted *)
-			RESULT := RESULT_NG;
+			RESULT := RESULT_NG; PLC_AnOut_3 := 500; (* Trigger *)
 			RESULTS_NG := RESULTS_NG + 1;
 			STATUS := STATUS_DONE;
 			return;
@@ -107,7 +107,7 @@ END_VAR
 				RESULT := RESULT_OK;
 				RESULTS_OK := RESULTS_OK + 1;
 			else
-				RESULT := RESULT_NG;
+				RESULT := RESULT_NG; PLC_AnOut_3 := 500; (* Trigger *)
 				RESULTS_NG := RESULTS_NG + 1;
 			end_if;
 			substatus := 8;
@@ -138,7 +138,7 @@ END_VAR
 			return;
 		end_if;
 	    if (TEST2_STATUS = TEST_STATUS_REMOTE and TESTx_STATUS = TEST_STATUS_REMOTE) then
-			RESULT := RESULT_UNKNOWN;
+			RESULT := RESULT_UNKNOWN; PLC_AnOut_3 := 0; (* Trigger Reset *)
 			STATUS := STATUS_READY;
 			return;
 		end_if;
@@ -155,7 +155,7 @@ END_VAR
 		end_if;
 	
 	STATUS_STOPPING:
-		RESULT := RESULT_UNKNOWN;
+		RESULT := RESULT_UNKNOWN; PLC_AnOut_3 := 0; (* Trigger Reset *)
 	    TEST2_COMMAND := TEST_STATUS_LOCAL;
 	    TESTx_COMMAND := TEST_STATUS_LOCAL;
 		PLC_DigOut_2 := 0;

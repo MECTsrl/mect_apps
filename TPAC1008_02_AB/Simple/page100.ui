@@ -1228,13 +1228,13 @@ background-color: rgb(170, 255, 255);
     <string notr="true">color: rgb(0, 85, 0);</string>
    </property>
    <property name="toolTip">
-    <string>PLC_CaptureT1_Lo</string>
+    <string>PLC_EncoderCo_Lo</string>
    </property>
    <property name="whatsThis">
     <string>ATCMlabel widget</string>
    </property>
    <property name="variable">
-    <string>PLC_CaptureT1_Lo</string>
+    <string>PLC_EncoderCo_Lo</string>
    </property>
    <property name="refresh">
     <number>200</number>

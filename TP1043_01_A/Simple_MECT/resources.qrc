@@ -1,5 +1,6 @@
 <RCC>
     <qresource prefix="/icons"/>
-    <qresource prefix="/fonts"/>
+    <qresource prefix="/fonts">
+        <file>digital-7 (mono).ttf</file>
+    </qresource>
 </RCC>
-
