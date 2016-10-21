@@ -13,6 +13,9 @@
 #include "page100.h"
 #include "ui_page100.h"
 #include "crosstable.h"
+#include <qwt.h>
+#include <qwt_dial.h>
+#include "qwt_dial_needle.h"
 
 /**
  * @brief this macro is used to set the PAGE100 style.
@@ -43,6 +46,18 @@ page100::page100(QWidget *parent) :
     /* set the style described into the macro SET_PAGE100_STYLE */
     SET_PAGE100_STYLE();
     translateFontSize(this);
+    // Creating Needle for qwtDial1
+    QwtDialSimpleNeedle *needle1 = new QwtDialSimpleNeedle(
+                QwtDialSimpleNeedle::Arrow, true, Qt::red,
+                QColor(Qt::gray).light(130));
+    // Setting Needle for qwtDial1
+    ui->qwtDial1->setNeedle(needle1);
+    // Creating Needle for qwtDial2
+    QwtDialSimpleNeedle *needle2 = new QwtDialSimpleNeedle(
+                QwtDialSimpleNeedle::Arrow, true, Qt::blue,
+                QColor(Qt::gray).light(130));
+    // Setting Needle for qwtDial2
+    ui->qwtDial2->setNeedle(needle2);
 }
 
 /**
@@ -70,7 +85,13 @@ void page100::updateData()
     }
     /* call the parent updateData member */
     page::updateData();
+
+    // Reading Analog Input 1 and setting to Dial 1
+    ui->qwtDial1->setValue(PLC_AnIn_1 / 1000);
     
+    // Reading Analog Input 2 and setting to Dial 2
+    ui->qwtDial2->setValue(PLC_AnIn_2 / 1000);
+
     /* To read the cross table variable UINT TEST1:
      *    uint_16 tmp = TEST1;
      */
