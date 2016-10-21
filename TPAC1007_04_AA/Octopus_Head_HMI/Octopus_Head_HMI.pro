@@ -70,6 +70,7 @@ OTHER_FILES += \
     recipes/TPAC1007_03/1.csv \
     recipes/TPAC1007_03/2.csv \
     recipes/TPAC1007_LV/1.csv \
+    recipes/TPAC1007_LV/2.csv \
     recipes/TPAC1007_04_AA/1.csv \
     recipes/TPAC1007_04_AA/2.csv \
     recipes/TPAC1007_04_AB/1.csv \
@@ -102,7 +103,7 @@ recipes_TPAC1006.path = /local/data/recipe/TPAC1006
 recipes_TPAC1007_03.files = recipes/TPAC1007_03/1.csv recipes/TPAC1007_03/2.csv
 recipes_TPAC1007_03.path = /local/data/recipe/TPAC1007_03
 
-recipes_TPAC1007_LV.files = recipes/TPAC1007_LV/1.csv
+recipes_TPAC1007_LV.files = recipes/TPAC1007_LV/1.csv recipes/TPAC1007_LV/2.csv
 recipes_TPAC1007_LV.path = /local/data/recipe/TPAC1007_LV
 
 recipes_TPAC1007_04_AA.files = recipes/TPAC1007_04_AA/1.csv recipes/TPAC1007_04_AA/2.csv

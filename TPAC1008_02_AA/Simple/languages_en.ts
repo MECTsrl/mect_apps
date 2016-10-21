@@ -22,8 +22,8 @@
         <location filename="page100.ui" line="106"/>
         <location filename="page100.ui" line="2018"/>
         <location filename="page100.ui" line="2623"/>
-        <location filename="page100.ui" line="3383"/>
-        <location filename="page100.ui" line="3454"/>
+        <location filename="page100.ui" line="3389"/>
+        <location filename="page100.ui" line="3460"/>
         <source>0x1234</source>
         <translation type="unfinished"></translation>
     </message>
@@ -49,14 +49,14 @@
         <location filename="page100.ui" line="2188"/>
         <location filename="page100.ui" line="2339"/>
         <location filename="page100.ui" line="2632"/>
-        <location filename="page100.ui" line="3052"/>
-        <location filename="page100.ui" line="3211"/>
-        <location filename="page100.ui" line="3282"/>
-        <location filename="page100.ui" line="3392"/>
-        <location filename="page100.ui" line="3463"/>
-        <location filename="page100.ui" line="3593"/>
-        <location filename="page100.ui" line="3764"/>
-        <location filename="page100.ui" line="4102"/>
+        <location filename="page100.ui" line="3058"/>
+        <location filename="page100.ui" line="3217"/>
+        <location filename="page100.ui" line="3288"/>
+        <location filename="page100.ui" line="3398"/>
+        <location filename="page100.ui" line="3469"/>
+        <location filename="page100.ui" line="3599"/>
+        <location filename="page100.ui" line="3770"/>
+        <location filename="page100.ui" line="4108"/>
         <source>ATCMlabel widget</source>
         <translation type="unfinished"></translation>
     </message>
@@ -94,23 +94,23 @@
         <location filename="page100.ui" line="2351"/>
         <location filename="page100.ui" line="2641"/>
         <location filename="page100.ui" line="2644"/>
-        <location filename="page100.ui" line="3043"/>
-        <location filename="page100.ui" line="3061"/>
-        <location filename="page100.ui" line="3064"/>
-        <location filename="page100.ui" line="3223"/>
-        <location filename="page100.ui" line="3226"/>
-        <location filename="page100.ui" line="3291"/>
-        <location filename="page100.ui" line="3294"/>
-        <location filename="page100.ui" line="3401"/>
-        <location filename="page100.ui" line="3404"/>
-        <location filename="page100.ui" line="3472"/>
-        <location filename="page100.ui" line="3475"/>
-        <location filename="page100.ui" line="3602"/>
-        <location filename="page100.ui" line="3605"/>
-        <location filename="page100.ui" line="3773"/>
-        <location filename="page100.ui" line="3776"/>
-        <location filename="page100.ui" line="4111"/>
-        <location filename="page100.ui" line="4114"/>
+        <location filename="page100.ui" line="3049"/>
+        <location filename="page100.ui" line="3067"/>
+        <location filename="page100.ui" line="3070"/>
+        <location filename="page100.ui" line="3229"/>
+        <location filename="page100.ui" line="3232"/>
+        <location filename="page100.ui" line="3297"/>
+        <location filename="page100.ui" line="3300"/>
+        <location filename="page100.ui" line="3407"/>
+        <location filename="page100.ui" line="3410"/>
+        <location filename="page100.ui" line="3478"/>
+        <location filename="page100.ui" line="3481"/>
+        <location filename="page100.ui" line="3608"/>
+        <location filename="page100.ui" line="3611"/>
+        <location filename="page100.ui" line="3779"/>
+        <location filename="page100.ui" line="3782"/>
+        <location filename="page100.ui" line="4117"/>
+        <location filename="page100.ui" line="4120"/>
         <source>0</source>
         <translation type="unfinished"></translation>
     </message>
@@ -131,11 +131,11 @@
         <location filename="page100.ui" line="1846"/>
         <location filename="page100.ui" line="2402"/>
         <location filename="page100.ui" line="2478"/>
-        <location filename="page100.ui" line="2796"/>
-        <location filename="page100.ui" line="2917"/>
-        <location filename="page100.ui" line="3683"/>
-        <location filename="page100.ui" line="3857"/>
-        <location filename="page100.ui" line="4002"/>
+        <location filename="page100.ui" line="2799"/>
+        <location filename="page100.ui" line="2923"/>
+        <location filename="page100.ui" line="3689"/>
+        <location filename="page100.ui" line="3863"/>
+        <location filename="page100.ui" line="4008"/>
         <source>ATCMbutton widget</source>
         <translation type="unfinished"></translation>
     </message>
@@ -171,9 +171,9 @@
         <location filename="page100.ui" line="1971"/>
         <location filename="page100.ui" line="2264"/>
         <location filename="page100.ui" line="2748"/>
-        <location filename="page100.ui" line="3109"/>
-        <location filename="page100.ui" line="3336"/>
-        <location filename="page100.ui" line="3951"/>
+        <location filename="page100.ui" line="3115"/>
+        <location filename="page100.ui" line="3342"/>
+        <location filename="page100.ui" line="3957"/>
         <source>ATCMled widget</source>
         <translation type="unfinished"></translation>
     </message>
@@ -220,6 +220,7 @@
     <message>
         <location filename="page100.ui" line="570"/>
         <location filename="page100.ui" line="573"/>
+        <location filename="page100.ui" line="2811"/>
         <source>2</source>
         <translation type="unfinished"></translation>
     </message>
@@ -240,8 +241,8 @@
         <location filename="page100.ui" line="778"/>
         <location filename="page100.ui" line="1373"/>
         <location filename="page100.ui" line="2695"/>
-        <location filename="page100.ui" line="2855"/>
-        <location filename="page100.ui" line="3526"/>
+        <location filename="page100.ui" line="2861"/>
+        <location filename="page100.ui" line="3532"/>
         <source>ATCMcombobox widget</source>
         <translation type="unfinished"></translation>
     </message>
@@ -249,7 +250,7 @@
         <location filename="page100.ui" line="680"/>
         <location filename="page100.ui" line="815"/>
         <location filename="page100.ui" line="1410"/>
-        <location filename="page100.ui" line="2892"/>
+        <location filename="page100.ui" line="2898"/>
         <source>1;[mA] 4..20;2;[V] 0..10;3;[°C] TCJ;4;[°C] TCK;5;[°C] TCT;6;[°C] PT100E;7;[°C] PT100R;8;[°C] TCS;9;[°C] TCB;10;[°C] TCR;0;--</source>
         <oldsource>0;---;1;[mA] 4..20;2;[V] 0..10;3;[°C] 0..600;4;[°C] 0..1200;5;[°C] 0..400;6;[°C]-40..800;7;[°C]-40..200</oldsource>
         <translation type="unfinished"></translation>
@@ -318,8 +319,6 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="1231"/>
-        <location filename="page100.ui" line="1237"/>
         <location filename="page100.ui" line="2114"/>
         <location filename="page100.ui" line="2120"/>
         <source>PLC_CaptureT1_Lo</source>
@@ -338,8 +337,8 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="2852"/>
-        <location filename="page100.ui" line="2861"/>
+        <location filename="page100.ui" line="2858"/>
+        <location filename="page100.ui" line="2867"/>
         <source>PLC_AnInConf_1</source>
         <translation type="unfinished"></translation>
     </message>
@@ -347,9 +346,9 @@
         <location filename="page100.ui" line="1431"/>
         <location filename="page100.ui" line="1698"/>
         <location filename="page100.ui" line="2330"/>
-        <location filename="page100.ui" line="3273"/>
-        <location filename="page100.ui" line="3584"/>
-        <location filename="page100.ui" line="3755"/>
+        <location filename="page100.ui" line="3279"/>
+        <location filename="page100.ui" line="3590"/>
+        <location filename="page100.ui" line="3761"/>
         <source>1.012</source>
         <translation type="unfinished"></translation>
     </message>
@@ -357,6 +356,12 @@
         <location filename="page100.ui" line="1108"/>
         <location filename="page100.ui" line="1111"/>
         <source>TPAC1008_02_AA</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page100.ui" line="1231"/>
+        <location filename="page100.ui" line="1237"/>
+        <source>PLC_EncoderCo_Lo</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -518,7 +523,7 @@
     </message>
     <message>
         <location filename="page100.ui" line="2732"/>
-        <location filename="page100.ui" line="3563"/>
+        <location filename="page100.ui" line="3569"/>
         <source>1;[mA] 4..20;2;[V] 0..10;3;[%] PWM;0;--</source>
         <translation type="unfinished"></translation>
     </message>
@@ -529,93 +534,93 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="2793"/>
-        <location filename="page100.ui" line="2805"/>
+        <location filename="page100.ui" line="2796"/>
+        <location filename="page100.ui" line="2808"/>
         <source>PLC_EnableEnc</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="2821"/>
-        <location filename="page100.ui" line="2824"/>
+        <location filename="page100.ui" line="2827"/>
+        <location filename="page100.ui" line="2830"/>
         <source>Enable</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="2914"/>
-        <location filename="page100.ui" line="2926"/>
+        <location filename="page100.ui" line="2920"/>
+        <location filename="page100.ui" line="2932"/>
         <source>PLC_DigOut_10</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="2959"/>
-        <location filename="page100.ui" line="2962"/>
+        <location filename="page100.ui" line="2965"/>
+        <location filename="page100.ui" line="2968"/>
         <source>10</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="2992"/>
+        <location filename="page100.ui" line="2998"/>
         <source>StatusReg.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="3019"/>
+        <location filename="page100.ui" line="3025"/>
         <source>AnOut_2</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="3049"/>
         <location filename="page100.ui" line="3055"/>
+        <location filename="page100.ui" line="3061"/>
         <source>PLC_FiltAnIn_4</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="3106"/>
-        <location filename="page100.ui" line="3118"/>
+        <location filename="page100.ui" line="3112"/>
+        <location filename="page100.ui" line="3124"/>
         <source>PLC_DigIn_6</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="3178"/>
+        <location filename="page100.ui" line="3184"/>
         <source>RPM</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="3202"/>
+        <location filename="page100.ui" line="3208"/>
         <source>25.0</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="3208"/>
         <location filename="page100.ui" line="3214"/>
+        <location filename="page100.ui" line="3220"/>
         <source>PLC_Tamb</source>
         <translation type="unfinished"></translation>
     </message>
     <message utf8="true">
-        <location filename="page100.ui" line="3217"/>
+        <location filename="page100.ui" line="3223"/>
         <source> °C</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="3279"/>
         <location filename="page100.ui" line="3285"/>
+        <location filename="page100.ui" line="3291"/>
         <source>PLC_AnIn_3</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="3333"/>
-        <location filename="page100.ui" line="3345"/>
+        <location filename="page100.ui" line="3339"/>
+        <location filename="page100.ui" line="3351"/>
         <source>CH0_01_NODEGOOD</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="3389"/>
         <location filename="page100.ui" line="3395"/>
+        <location filename="page100.ui" line="3401"/>
         <source>PLC_CaptureT1_Hi</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="3460"/>
         <location filename="page100.ui" line="3466"/>
+        <location filename="page100.ui" line="3472"/>
         <source>PLC_EncoderCo_Hi</source>
         <translation type="unfinished"></translation>
     </message>
@@ -626,88 +631,88 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="3523"/>
-        <location filename="page100.ui" line="3532"/>
+        <location filename="page100.ui" line="3529"/>
+        <location filename="page100.ui" line="3538"/>
         <source>PLC_AnOutConf_2</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="3590"/>
         <location filename="page100.ui" line="3596"/>
+        <location filename="page100.ui" line="3602"/>
         <source>PLC_AnIn_2</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="3655"/>
+        <location filename="page100.ui" line="3661"/>
         <source>Capture_1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="3680"/>
-        <location filename="page100.ui" line="3692"/>
+        <location filename="page100.ui" line="3686"/>
+        <location filename="page100.ui" line="3698"/>
         <source>PLC_DigOut_5</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="3725"/>
-        <location filename="page100.ui" line="3728"/>
+        <location filename="page100.ui" line="3731"/>
+        <location filename="page100.ui" line="3734"/>
         <source>5</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="3761"/>
         <location filename="page100.ui" line="3767"/>
+        <location filename="page100.ui" line="3773"/>
         <source>PLC_AnOut_1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="3829"/>
+        <location filename="page100.ui" line="3835"/>
         <source>AnIn_1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="3854"/>
-        <location filename="page100.ui" line="3866"/>
+        <location filename="page100.ui" line="3860"/>
+        <location filename="page100.ui" line="3872"/>
         <source>PLC_DigOut_4</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="3899"/>
-        <location filename="page100.ui" line="3902"/>
+        <location filename="page100.ui" line="3905"/>
+        <location filename="page100.ui" line="3908"/>
         <source>4</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="3932"/>
+        <location filename="page100.ui" line="3938"/>
         <source>Tamb</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="3948"/>
-        <location filename="page100.ui" line="3960"/>
+        <location filename="page100.ui" line="3954"/>
+        <location filename="page100.ui" line="3966"/>
         <source>CH0_NETGOOD</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="3999"/>
-        <location filename="page100.ui" line="4011"/>
+        <location filename="page100.ui" line="4005"/>
+        <location filename="page100.ui" line="4017"/>
         <source>PLC_DigOut_9</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="4044"/>
-        <location filename="page100.ui" line="4047"/>
+        <location filename="page100.ui" line="4050"/>
+        <location filename="page100.ui" line="4053"/>
         <source>9</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="4093"/>
+        <location filename="page100.ui" line="4099"/>
         <source>0x02</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="4099"/>
         <location filename="page100.ui" line="4105"/>
+        <location filename="page100.ui" line="4111"/>
         <source>PLC_Hwconf</source>
         <translation type="unfinished"></translation>
     </message>

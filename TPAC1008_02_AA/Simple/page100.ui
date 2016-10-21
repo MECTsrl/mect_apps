@@ -1228,13 +1228,13 @@ background-color: rgb(170, 255, 255);
     <string notr="true">color: rgb(0, 85, 0);</string>
    </property>
    <property name="toolTip">
-    <string>PLC_CaptureT1_Lo</string>
+    <string>PLC_EncoderCo_Lo</string>
    </property>
    <property name="whatsThis">
     <string>ATCMlabel widget</string>
    </property>
    <property name="variable">
-    <string>PLC_CaptureT1_Lo</string>
+    <string>PLC_EncoderCo_Lo</string>
    </property>
    <property name="refresh">
     <number>200</number>
@@ -2789,6 +2789,9 @@ background-color: rgb(170, 255, 255);
      <pointsize>11</pointsize>
     </font>
    </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
    <property name="toolTip">
     <string>PLC_EnableEnc</string>
    </property>
@@ -2803,6 +2806,9 @@ background-color: rgb(170, 255, 255);
    </property>
    <property name="statusvar">
     <string>PLC_EnableEnc</string>
+   </property>
+   <property name="statusPressedValue">
+    <string>2</string>
    </property>
    <property name="viewStatus">
     <bool>false</bool>
