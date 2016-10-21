@@ -5331,7 +5331,7 @@
 1;P;PLC_Reserved_2  ;INT      ;3   ;RTU       ;               ;3   ;20  ;13  ;5300;54  ;[RO]
 1;P;PLC_Reserved_3  ;INT      ;3   ;RTU       ;               ;3   ;20  ;14  ;5300;54  ;[RO]
 1;P;PLC_Tamb        ;INT      ;1   ;RTU       ;               ;3   ;20  ;15  ;5300;54  ;[RO]
-1;P;PLC_Encoder     ;UDINT    ;0   ;RTU       ;               ;3   ;20  ;16  ;5300;54  ;[RO]
+1;P;PLC_Encoder     ;DINT     ;0   ;RTU       ;               ;3   ;20  ;16  ;5300;54  ;[RO]
 1;P;PLC_Capture     ;UDINT    ;0   ;RTU       ;               ;3   ;20  ;18  ;5300;54  ;[RO]
 1;P;PLC_DigOut_1    ;BYTE_BIT ;1   ;RTU       ;               ;3   ;20  ;20  ;5300;54  ;[RW]
 1;P;PLC_DigOut_2    ;BYTE_BIT ;2   ;RTU       ;               ;3   ;20  ;20  ;5300;54  ;[RW]

@@ -5348,10 +5348,10 @@
 1;P;PLC_AnOut_2     ;INT      ;2   ;CANOPEN   ;               ;    ;1   ;32  ;5300;55  ;[RW]
 1;P;PLC_Reserved_4  ;INT      ;2   ;CANOPEN   ;               ;    ;1   ;33  ;5300;55  ;[RW]
 1;P;PLC_Reserved_5  ;INT      ;2   ;CANOPEN   ;               ;    ;1   ;34  ;5300;55  ;[RW]
-1;P;PLC_FiltAnIn_1  ;UINT     ;2   ;CANOPEN   ;               ;    ;1   ;35  ;5300;55  ;[RW]
-1;P;PLC_FiltAnIn_2  ;UINT     ;2   ;CANOPEN   ;               ;    ;1   ;36  ;5300;55  ;[RW]
-1;P;PLC_FiltAnIn_3  ;UINT     ;2   ;CANOPEN   ;               ;    ;1   ;37  ;5300;55  ;[RW]
-1;P;PLC_FiltAnIn_4  ;UINT     ;2   ;CANOPEN   ;               ;    ;1   ;38  ;5300;55  ;[RW]
+1;P;PLC_FiltAnIn_1  ;UINT     ;0   ;CANOPEN   ;               ;    ;1   ;35  ;5300;55  ;[RW]
+1;P;PLC_FiltAnIn_2  ;UINT     ;0   ;CANOPEN   ;               ;    ;1   ;36  ;5300;55  ;[RW]
+1;P;PLC_FiltAnIn_3  ;UINT     ;0   ;CANOPEN   ;               ;    ;1   ;37  ;5300;55  ;[RW]
+1;P;PLC_FiltAnIn_4  ;UINT     ;0   ;CANOPEN   ;               ;    ;1   ;38  ;5300;55  ;[RW]
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
 1;P;CH0_NETRUN      ;BIT      ;0   ;CANOPEN   ;               ;    ;0   ;0   ;5357;1   ;[RO]

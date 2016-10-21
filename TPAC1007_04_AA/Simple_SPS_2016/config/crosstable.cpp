@@ -10,7 +10,6 @@ WORD_BIT  <-> int
 DWORD_BIT <-> int
 */ 
 #include "crosstable.h"
-#include "cross_table_utility.h"
  
 u_int32_t RTU0_TYPE_PORT = 0;
 u_int32_t RTU0_BAUDRATE = 0;
@@ -238,7 +237,7 @@ int16_t PLC_Reserved_1 = 0;
 int16_t PLC_Reserved_2 = 0;
 int16_t PLC_Reserved_3 = 0;
 int16_t PLC_Tamb = 0;
-u_int32_t PLC_Encoder = 0;
+int32_t PLC_Encoder = 0;
 u_int32_t PLC_Capture = 0;
 int PLC_DigOut_1 = 0;
 int PLC_DigOut_2 = 0;
@@ -4336,13 +4335,13 @@ return getStatus(ID_PLC_Tamb);
 }
 
 
-int doWrite_PLC_Encoder(u_int32_t value)
+int doWrite_PLC_Encoder(int32_t value)
 {
 return doWrite(ID_PLC_Encoder,  &value);
 }
 
 
-int addWrite_PLC_Encoder(u_int32_t value)
+int addWrite_PLC_Encoder(int32_t value)
 {
 return addWrite(ID_PLC_Encoder, &value);
 }

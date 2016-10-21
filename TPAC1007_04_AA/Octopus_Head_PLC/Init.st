@@ -23,11 +23,17 @@ PROGRAM Init
 	TEST2_COMMAND := TEST_STATUS_LOCAL;
 	STATUS := STATUS_IDLE;
 	RESULT := RESULT_UNKNOWN;
+
 	if not PLC_DigIn_1 then
 		PLC_DigOut_2 := False;
 		PLC_DigOut_3 := False;
 	end_if;
 
+	PLC_AnOutConf_3 := 2; (* Logic Analyzer Trigger *)
+(*	PLC_AnOut_3 := 0; 
+    [CMD]: ERROR V0211: Download Configuration {Invalid parameter.}
+    [VMM]: < WARNING >  Task '' is neither cyclic nor event driven!
+*)
 (* ClearPLC(); 
    [CMD]: ERROR V0308: Download Configuration {To many read/write memory regions.}
 *)

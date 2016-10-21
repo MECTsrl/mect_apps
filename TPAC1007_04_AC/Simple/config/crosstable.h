@@ -15,6 +15,7 @@ DWORD_BIT <-> int
 extern "C" {
 #endif
 #include <sys/types.h>
+#include "cross_table_utility.h"
  
 #define ID_RTU0_TYPE_PORT 5000
 extern u_int32_t RTU0_TYPE_PORT;
@@ -1246,23 +1247,23 @@ int doWrite_PLC_AnOutConf_1(u_int16_t value);
 int addWrite_PLC_AnOutConf_1(u_int16_t value);
 int getStatus_PLC_AnOutConf_1();
  
-#define ID_PLC_AnOutConf_2 5313
-extern u_int16_t PLC_AnOutConf_2;
-int doWrite_PLC_AnOutConf_2(u_int16_t value);
-int addWrite_PLC_AnOutConf_2(u_int16_t value);
-int getStatus_PLC_AnOutConf_2();
+#define ID_PLC_Reserved_1 5313
+extern u_int16_t PLC_Reserved_1;
+int doWrite_PLC_Reserved_1(u_int16_t value);
+int addWrite_PLC_Reserved_1(u_int16_t value);
+int getStatus_PLC_Reserved_1();
  
-#define ID_PLC_AnOutConf_3 5314
-extern u_int16_t PLC_AnOutConf_3;
-int doWrite_PLC_AnOutConf_3(u_int16_t value);
-int addWrite_PLC_AnOutConf_3(u_int16_t value);
-int getStatus_PLC_AnOutConf_3();
+#define ID_PLC_Reserved_2 5314
+extern u_int16_t PLC_Reserved_2;
+int doWrite_PLC_Reserved_2(u_int16_t value);
+int addWrite_PLC_Reserved_2(u_int16_t value);
+int getStatus_PLC_Reserved_2();
  
-#define ID_PLC_AnOutConf_4 5315
-extern u_int16_t PLC_AnOutConf_4;
-int doWrite_PLC_AnOutConf_4(u_int16_t value);
-int addWrite_PLC_AnOutConf_4(u_int16_t value);
-int getStatus_PLC_AnOutConf_4();
+#define ID_PLC_Reserved_3 5315
+extern u_int16_t PLC_Reserved_3;
+int doWrite_PLC_Reserved_3(u_int16_t value);
+int addWrite_PLC_Reserved_3(u_int16_t value);
+int getStatus_PLC_Reserved_3();
  
 #define ID_PLC_DigIn_1 5316
 extern int PLC_DigIn_1;
@@ -1348,23 +1349,23 @@ int doWrite_PLC_AnIn_2(int16_t value);
 int addWrite_PLC_AnIn_2(int16_t value);
 int getStatus_PLC_AnIn_2();
  
-#define ID_PLC_Reserved_1 5330
-extern int16_t PLC_Reserved_1;
-int doWrite_PLC_Reserved_1(int16_t value);
-int addWrite_PLC_Reserved_1(int16_t value);
-int getStatus_PLC_Reserved_1();
+#define ID_PLC_Reserved_4 5330
+extern int16_t PLC_Reserved_4;
+int doWrite_PLC_Reserved_4(int16_t value);
+int addWrite_PLC_Reserved_4(int16_t value);
+int getStatus_PLC_Reserved_4();
  
-#define ID_PLC_Reserved_2 5331
-extern int16_t PLC_Reserved_2;
-int doWrite_PLC_Reserved_2(int16_t value);
-int addWrite_PLC_Reserved_2(int16_t value);
-int getStatus_PLC_Reserved_2();
+#define ID_PLC_Reserved_5 5331
+extern int16_t PLC_Reserved_5;
+int doWrite_PLC_Reserved_5(int16_t value);
+int addWrite_PLC_Reserved_5(int16_t value);
+int getStatus_PLC_Reserved_5();
  
-#define ID_PLC_Reserved_3 5332
-extern int16_t PLC_Reserved_3;
-int doWrite_PLC_Reserved_3(int16_t value);
-int addWrite_PLC_Reserved_3(int16_t value);
-int getStatus_PLC_Reserved_3();
+#define ID_PLC_Reserved_6 5332
+extern int16_t PLC_Reserved_6;
+int doWrite_PLC_Reserved_6(int16_t value);
+int addWrite_PLC_Reserved_6(int16_t value);
+int getStatus_PLC_Reserved_6();
  
 #define ID_PLC_Tamb 5333
 extern int16_t PLC_Tamb;
@@ -1373,9 +1374,9 @@ int addWrite_PLC_Tamb(int16_t value);
 int getStatus_PLC_Tamb();
  
 #define ID_PLC_Encoder 5334
-extern u_int32_t PLC_Encoder;
-int doWrite_PLC_Encoder(u_int32_t value);
-int addWrite_PLC_Encoder(u_int32_t value);
+extern int32_t PLC_Encoder;
+int doWrite_PLC_Encoder(int32_t value);
+int addWrite_PLC_Encoder(int32_t value);
 int getStatus_PLC_Encoder();
  
 #define ID_PLC_Capture 5335
@@ -1437,6 +1438,24 @@ extern int16_t PLC_AnOut_1;
 int doWrite_PLC_AnOut_1(int16_t value);
 int addWrite_PLC_AnOut_1(int16_t value);
 int getStatus_PLC_AnOut_1();
+ 
+#define ID_PLC_Reserved_7 5345
+extern int16_t PLC_Reserved_7;
+int doWrite_PLC_Reserved_7(int16_t value);
+int addWrite_PLC_Reserved_7(int16_t value);
+int getStatus_PLC_Reserved_7();
+ 
+#define ID_PLC_Reserved_8 5346
+extern int16_t PLC_Reserved_8;
+int doWrite_PLC_Reserved_8(int16_t value);
+int addWrite_PLC_Reserved_8(int16_t value);
+int getStatus_PLC_Reserved_8();
+ 
+#define ID_PLC_Reserved_9 5347
+extern int16_t PLC_Reserved_9;
+int doWrite_PLC_Reserved_9(int16_t value);
+int addWrite_PLC_Reserved_9(int16_t value);
+int getStatus_PLC_Reserved_9();
  
 #define ID_PLC_EncoderStart 5348
 extern u_int16_t PLC_EncoderStart;
