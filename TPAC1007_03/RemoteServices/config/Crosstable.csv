@@ -190,10 +190,10 @@
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
-2;P;TCP_AnIn_1      ;INT      ;3   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;1   ;193 ;4   ;[RW]
-2;P;TCP_AnIn_2      ;INT      ;3   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;2   ;193 ;4   ;[RW]
-2;P;TCP_DigIn_3     ;WORD_BIT ;3   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;3   ;193 ;4   ;[RW]
-2;P;TCP_DigOut_4    ;WORD_BIT ;4   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;4   ;193 ;4   ;[RO]
+3;P;TCP_AnIn_1      ;INT      ;3   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;1   ;193 ;4   ;[RW]
+3;P;TCP_AnIn_2      ;INT      ;3   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;2   ;193 ;4   ;[RW]
+3;P;TCP_DigIn_3     ;WORD_BIT ;3   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;3   ;193 ;4   ;[RW]
+3;P;TCP_DigOut_4    ;WORD_BIT ;4   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;4   ;193 ;4   ;[RO]
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
