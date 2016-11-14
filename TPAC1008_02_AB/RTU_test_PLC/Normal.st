@@ -6,6 +6,9 @@ PROGRAM Normal
 VAR
 	counter : uint := 0;
 	onoff : bool := true;
+	first : bool := false;
+	timer_an1 : TON;
+	timer_an2 : TON;
 END_VAR
 
 	(* one round true and one round false *)
@@ -57,5 +60,32 @@ END_VAR
 	if (DigIn_7_node22 <> DigOut_8_node22) then DigOut_8_node22 := DigIn_7_node22; end_if;
 	if (DigIn_7_node23 <> DigOut_8_node23) then DigOut_8_node23 := DigIn_7_node23; end_if;
 	if (DigIn_7_node24 <> DigOut_8_node24) then DigOut_8_node24 := DigIn_7_node24; end_if;
+
+	
+	if CH0_01_NODERUN = true and first = false then
+		PLC_AnOutConf_1 := 2;
+		PLC_AnOutConf_2 := 2;
+		first := true;
+	end_if;
+	
+	timer_an1 (IN := true, PT := T#2s);
+	if timer_an1.q = true then
+		timer_an1 (IN := false);
+		if PLC_AnOut_1 > 900 then
+			PLC_AnOut_1 := 0;
+		else
+			PLC_AnOut_1 := 1000;
+		end_if;
+	end_if;
+
+	timer_an2 (IN := true, PT := T#3s);
+	if timer_an2.q = true then
+		timer_an2 (IN := false);
+		if PLC_AnOut_2 > 900 then
+			PLC_AnOut_2 := 0;
+		else
+			PLC_AnOut_2 := 1000;
+		end_if;
+	end_if;
 	
 END_PROGRAM
