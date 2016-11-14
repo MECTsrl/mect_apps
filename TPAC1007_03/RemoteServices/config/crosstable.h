@@ -53,6 +53,12 @@ int doWrite_LOC_FALLING(int value);
 int addWrite_LOC_FALLING(int value);
 int getStatus_LOC_FALLING();
  
+#define ID_CHANGE_DIG_OUT4 224
+extern int CHANGE_DIG_OUT4;
+int doWrite_CHANGE_DIG_OUT4(int value);
+int addWrite_CHANGE_DIG_OUT4(int value);
+int getStatus_CHANGE_DIG_OUT4();
+ 
 #define ID_RTU0_TYPE_PORT 5000
 extern u_int32_t RTU0_TYPE_PORT;
 int doWrite_RTU0_TYPE_PORT(u_int32_t value);

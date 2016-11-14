@@ -17,6 +17,7 @@ int TCP_DigIn_3 = 0;
 int TCP_DigOut_4 = 0;
 int LOC_RISING = 0;
 int LOC_FALLING = 0;
+int CHANGE_DIG_OUT4 = 0;
 u_int32_t RTU0_TYPE_PORT = 0;
 u_int32_t RTU0_BAUDRATE = 0;
 u_int32_t RTU0_STATUS = 0;
@@ -339,6 +340,24 @@ return addWrite(ID_LOC_FALLING, &value);
 int getStatus_LOC_FALLING()
 {
 return getStatus(ID_LOC_FALLING);
+}
+
+
+int doWrite_CHANGE_DIG_OUT4(int value)
+{
+return doWrite(ID_CHANGE_DIG_OUT4,  &value);
+}
+
+
+int addWrite_CHANGE_DIG_OUT4(int value)
+{
+return addWrite(ID_CHANGE_DIG_OUT4, &value);
+}
+
+
+int getStatus_CHANGE_DIG_OUT4()
+{
+return getStatus(ID_CHANGE_DIG_OUT4);
 }
 
 
@@ -4221,6 +4240,7 @@ retval += readFromDb(ID_TCP_DigIn_3, &TCP_DigIn_3);
 retval += readFromDb(ID_TCP_DigOut_4, &TCP_DigOut_4);
 retval += readFromDb(ID_LOC_RISING, &LOC_RISING);
 retval += readFromDb(ID_LOC_FALLING, &LOC_FALLING);
+retval += readFromDb(ID_CHANGE_DIG_OUT4, &CHANGE_DIG_OUT4);
 retval += readFromDb(ID_RTU0_TYPE_PORT, &RTU0_TYPE_PORT);
 retval += readFromDb(ID_RTU0_BAUDRATE, &RTU0_BAUDRATE);
 retval += readFromDb(ID_RTU0_STATUS, &RTU0_STATUS);
