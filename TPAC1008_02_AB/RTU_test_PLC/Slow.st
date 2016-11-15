@@ -6,9 +6,8 @@ PROGRAM Slow
 
 
 	
-	
-	PLC_DigOut_1 := not PLC_DigOut_1;
-	
+	;
+	(*PLC_DigOut_1 := not PLC_DigOut_1;*)
 
 
 END_PROGRAM

@@ -149,6 +149,12 @@ int doWrite_DigOut_8_node01(int value);
 int addWrite_DigOut_8_node01(int value);
 int getStatus_DigOut_8_node01();
  
+#define ID_errors_can 215
+extern u_int32_t errors_can;
+int doWrite_errors_can(u_int32_t value);
+int addWrite_errors_can(u_int32_t value);
+int getStatus_errors_can();
+ 
 #define ID_Addr_node02 216
 extern u_int16_t Addr_node02;
 int doWrite_Addr_node02(u_int16_t value);
@@ -280,6 +286,12 @@ extern int DigOut_8_node02;
 int doWrite_DigOut_8_node02(int value);
 int addWrite_DigOut_8_node02(int value);
 int getStatus_DigOut_8_node02();
+ 
+#define ID_errors_01 238
+extern u_int32_t errors_01;
+int doWrite_errors_01(u_int32_t value);
+int addWrite_errors_01(u_int32_t value);
+int getStatus_errors_01();
  
 #define ID_Addr_node03 239
 extern u_int16_t Addr_node03;
@@ -413,6 +425,12 @@ int doWrite_DigOut_8_node03(int value);
 int addWrite_DigOut_8_node03(int value);
 int getStatus_DigOut_8_node03();
  
+#define ID_errors_02 261
+extern u_int32_t errors_02;
+int doWrite_errors_02(u_int32_t value);
+int addWrite_errors_02(u_int32_t value);
+int getStatus_errors_02();
+ 
 #define ID_Addr_node04 262
 extern u_int16_t Addr_node04;
 int doWrite_Addr_node04(u_int16_t value);
@@ -544,6 +562,12 @@ extern int DigOut_8_node04;
 int doWrite_DigOut_8_node04(int value);
 int addWrite_DigOut_8_node04(int value);
 int getStatus_DigOut_8_node04();
+ 
+#define ID_errors_03 284
+extern u_int32_t errors_03;
+int doWrite_errors_03(u_int32_t value);
+int addWrite_errors_03(u_int32_t value);
+int getStatus_errors_03();
  
 #define ID_Addr_node05 285
 extern u_int16_t Addr_node05;
@@ -677,6 +701,12 @@ int doWrite_DigOut_8_node05(int value);
 int addWrite_DigOut_8_node05(int value);
 int getStatus_DigOut_8_node05();
  
+#define ID_errors_04 307
+extern u_int32_t errors_04;
+int doWrite_errors_04(u_int32_t value);
+int addWrite_errors_04(u_int32_t value);
+int getStatus_errors_04();
+ 
 #define ID_Addr_node06 308
 extern u_int16_t Addr_node06;
 int doWrite_Addr_node06(u_int16_t value);
@@ -808,6 +838,12 @@ extern int DigOut_8_node06;
 int doWrite_DigOut_8_node06(int value);
 int addWrite_DigOut_8_node06(int value);
 int getStatus_DigOut_8_node06();
+ 
+#define ID_errors_05 330
+extern u_int32_t errors_05;
+int doWrite_errors_05(u_int32_t value);
+int addWrite_errors_05(u_int32_t value);
+int getStatus_errors_05();
  
 #define ID_Addr_node07 331
 extern u_int16_t Addr_node07;
@@ -941,6 +977,12 @@ int doWrite_DigOut_8_node07(int value);
 int addWrite_DigOut_8_node07(int value);
 int getStatus_DigOut_8_node07();
  
+#define ID_errors_06 353
+extern u_int32_t errors_06;
+int doWrite_errors_06(u_int32_t value);
+int addWrite_errors_06(u_int32_t value);
+int getStatus_errors_06();
+ 
 #define ID_Addr_node08 354
 extern u_int16_t Addr_node08;
 int doWrite_Addr_node08(u_int16_t value);
@@ -1072,6 +1114,12 @@ extern int DigOut_8_node08;
 int doWrite_DigOut_8_node08(int value);
 int addWrite_DigOut_8_node08(int value);
 int getStatus_DigOut_8_node08();
+ 
+#define ID_errors_07 376
+extern u_int32_t errors_07;
+int doWrite_errors_07(u_int32_t value);
+int addWrite_errors_07(u_int32_t value);
+int getStatus_errors_07();
  
 #define ID_Addr_node09 377
 extern u_int16_t Addr_node09;
@@ -1205,6 +1253,12 @@ int doWrite_DigOut_8_node09(int value);
 int addWrite_DigOut_8_node09(int value);
 int getStatus_DigOut_8_node09();
  
+#define ID_errors_08 399
+extern u_int32_t errors_08;
+int doWrite_errors_08(u_int32_t value);
+int addWrite_errors_08(u_int32_t value);
+int getStatus_errors_08();
+ 
 #define ID_Addr_node10 400
 extern u_int16_t Addr_node10;
 int doWrite_Addr_node10(u_int16_t value);
@@ -1336,6 +1390,12 @@ extern int DigOut_8_node10;
 int doWrite_DigOut_8_node10(int value);
 int addWrite_DigOut_8_node10(int value);
 int getStatus_DigOut_8_node10();
+ 
+#define ID_errors_09 422
+extern u_int32_t errors_09;
+int doWrite_errors_09(u_int32_t value);
+int addWrite_errors_09(u_int32_t value);
+int getStatus_errors_09();
  
 #define ID_Addr_node11 423
 extern u_int16_t Addr_node11;
@@ -1469,6 +1529,12 @@ int doWrite_DigOut_8_node11(int value);
 int addWrite_DigOut_8_node11(int value);
 int getStatus_DigOut_8_node11();
  
+#define ID_errors_10 445
+extern u_int32_t errors_10;
+int doWrite_errors_10(u_int32_t value);
+int addWrite_errors_10(u_int32_t value);
+int getStatus_errors_10();
+ 
 #define ID_Addr_node12 446
 extern u_int16_t Addr_node12;
 int doWrite_Addr_node12(u_int16_t value);
@@ -1600,6 +1666,12 @@ extern int DigOut_8_node12;
 int doWrite_DigOut_8_node12(int value);
 int addWrite_DigOut_8_node12(int value);
 int getStatus_DigOut_8_node12();
+ 
+#define ID_errors_11 468
+extern u_int32_t errors_11;
+int doWrite_errors_11(u_int32_t value);
+int addWrite_errors_11(u_int32_t value);
+int getStatus_errors_11();
  
 #define ID_Addr_node13 469
 extern u_int16_t Addr_node13;
@@ -1733,6 +1805,12 @@ int doWrite_DigOut_8_node13(int value);
 int addWrite_DigOut_8_node13(int value);
 int getStatus_DigOut_8_node13();
  
+#define ID_errors_12 491
+extern u_int32_t errors_12;
+int doWrite_errors_12(u_int32_t value);
+int addWrite_errors_12(u_int32_t value);
+int getStatus_errors_12();
+ 
 #define ID_Addr_node14 492
 extern u_int16_t Addr_node14;
 int doWrite_Addr_node14(u_int16_t value);
@@ -1864,6 +1942,12 @@ extern int DigOut_8_node14;
 int doWrite_DigOut_8_node14(int value);
 int addWrite_DigOut_8_node14(int value);
 int getStatus_DigOut_8_node14();
+ 
+#define ID_errors_13 514
+extern u_int32_t errors_13;
+int doWrite_errors_13(u_int32_t value);
+int addWrite_errors_13(u_int32_t value);
+int getStatus_errors_13();
  
 #define ID_Addr_node15 515
 extern u_int16_t Addr_node15;
@@ -1997,6 +2081,12 @@ int doWrite_DigOut_8_node15(int value);
 int addWrite_DigOut_8_node15(int value);
 int getStatus_DigOut_8_node15();
  
+#define ID_errors_14 537
+extern u_int32_t errors_14;
+int doWrite_errors_14(u_int32_t value);
+int addWrite_errors_14(u_int32_t value);
+int getStatus_errors_14();
+ 
 #define ID_Addr_node16 538
 extern u_int16_t Addr_node16;
 int doWrite_Addr_node16(u_int16_t value);
@@ -2128,6 +2218,12 @@ extern int DigOut_8_node16;
 int doWrite_DigOut_8_node16(int value);
 int addWrite_DigOut_8_node16(int value);
 int getStatus_DigOut_8_node16();
+ 
+#define ID_errors_15 560
+extern u_int32_t errors_15;
+int doWrite_errors_15(u_int32_t value);
+int addWrite_errors_15(u_int32_t value);
+int getStatus_errors_15();
  
 #define ID_Addr_node17 561
 extern u_int16_t Addr_node17;
@@ -2261,6 +2357,12 @@ int doWrite_DigOut_8_node17(int value);
 int addWrite_DigOut_8_node17(int value);
 int getStatus_DigOut_8_node17();
  
+#define ID_errors_16 583
+extern u_int32_t errors_16;
+int doWrite_errors_16(u_int32_t value);
+int addWrite_errors_16(u_int32_t value);
+int getStatus_errors_16();
+ 
 #define ID_Addr_node18 584
 extern u_int16_t Addr_node18;
 int doWrite_Addr_node18(u_int16_t value);
@@ -2392,6 +2494,12 @@ extern int DigOut_8_node18;
 int doWrite_DigOut_8_node18(int value);
 int addWrite_DigOut_8_node18(int value);
 int getStatus_DigOut_8_node18();
+ 
+#define ID_errors_17 606
+extern u_int32_t errors_17;
+int doWrite_errors_17(u_int32_t value);
+int addWrite_errors_17(u_int32_t value);
+int getStatus_errors_17();
  
 #define ID_Addr_node19 607
 extern u_int16_t Addr_node19;
@@ -2525,6 +2633,12 @@ int doWrite_DigOut_8_node19(int value);
 int addWrite_DigOut_8_node19(int value);
 int getStatus_DigOut_8_node19();
  
+#define ID_errors_18 629
+extern u_int32_t errors_18;
+int doWrite_errors_18(u_int32_t value);
+int addWrite_errors_18(u_int32_t value);
+int getStatus_errors_18();
+ 
 #define ID_Addr_node20 630
 extern u_int16_t Addr_node20;
 int doWrite_Addr_node20(u_int16_t value);
@@ -2656,6 +2770,12 @@ extern int DigOut_8_node20;
 int doWrite_DigOut_8_node20(int value);
 int addWrite_DigOut_8_node20(int value);
 int getStatus_DigOut_8_node20();
+ 
+#define ID_errors_19 652
+extern u_int32_t errors_19;
+int doWrite_errors_19(u_int32_t value);
+int addWrite_errors_19(u_int32_t value);
+int getStatus_errors_19();
  
 #define ID_Addr_node21 653
 extern u_int16_t Addr_node21;
@@ -2789,6 +2909,12 @@ int doWrite_DigOut_8_node21(int value);
 int addWrite_DigOut_8_node21(int value);
 int getStatus_DigOut_8_node21();
  
+#define ID_errors_20 675
+extern u_int32_t errors_20;
+int doWrite_errors_20(u_int32_t value);
+int addWrite_errors_20(u_int32_t value);
+int getStatus_errors_20();
+ 
 #define ID_Addr_node22 676
 extern u_int16_t Addr_node22;
 int doWrite_Addr_node22(u_int16_t value);
@@ -2920,6 +3046,18 @@ extern int DigOut_8_node22;
 int doWrite_DigOut_8_node22(int value);
 int addWrite_DigOut_8_node22(int value);
 int getStatus_DigOut_8_node22();
+ 
+#define ID_errors_21 698
+extern u_int32_t errors_21;
+int doWrite_errors_21(u_int32_t value);
+int addWrite_errors_21(u_int32_t value);
+int getStatus_errors_21();
+ 
+#define ID_errors_22 699
+extern u_int32_t errors_22;
+int doWrite_errors_22(u_int32_t value);
+int addWrite_errors_22(u_int32_t value);
+int getStatus_errors_22();
  
 #define ID_Addr_node23 700
 extern u_int16_t Addr_node23;
@@ -3053,6 +3191,12 @@ int doWrite_DigOut_8_node23(int value);
 int addWrite_DigOut_8_node23(int value);
 int getStatus_DigOut_8_node23();
  
+#define ID_errors_23 722
+extern u_int32_t errors_23;
+int doWrite_errors_23(u_int32_t value);
+int addWrite_errors_23(u_int32_t value);
+int getStatus_errors_23();
+ 
 #define ID_Addr_node24 723
 extern u_int16_t Addr_node24;
 int doWrite_Addr_node24(u_int16_t value);
@@ -3184,6 +3328,444 @@ extern int DigOut_8_node24;
 int doWrite_DigOut_8_node24(int value);
 int addWrite_DigOut_8_node24(int value);
 int getStatus_DigOut_8_node24();
+ 
+#define ID_errors_24 745
+extern u_int32_t errors_24;
+int doWrite_errors_24(u_int32_t value);
+int addWrite_errors_24(u_int32_t value);
+int getStatus_errors_24();
+ 
+#define ID_latency_01_ms 746
+extern u_int16_t latency_01_ms;
+int doWrite_latency_01_ms(u_int16_t value);
+int addWrite_latency_01_ms(u_int16_t value);
+int getStatus_latency_01_ms();
+ 
+#define ID_latency_02_ms 747
+extern u_int16_t latency_02_ms;
+int doWrite_latency_02_ms(u_int16_t value);
+int addWrite_latency_02_ms(u_int16_t value);
+int getStatus_latency_02_ms();
+ 
+#define ID_latency_03_ms 748
+extern u_int16_t latency_03_ms;
+int doWrite_latency_03_ms(u_int16_t value);
+int addWrite_latency_03_ms(u_int16_t value);
+int getStatus_latency_03_ms();
+ 
+#define ID_latency_04_ms 749
+extern u_int16_t latency_04_ms;
+int doWrite_latency_04_ms(u_int16_t value);
+int addWrite_latency_04_ms(u_int16_t value);
+int getStatus_latency_04_ms();
+ 
+#define ID_latency_05_ms 750
+extern u_int16_t latency_05_ms;
+int doWrite_latency_05_ms(u_int16_t value);
+int addWrite_latency_05_ms(u_int16_t value);
+int getStatus_latency_05_ms();
+ 
+#define ID_latency_06_ms 751
+extern u_int16_t latency_06_ms;
+int doWrite_latency_06_ms(u_int16_t value);
+int addWrite_latency_06_ms(u_int16_t value);
+int getStatus_latency_06_ms();
+ 
+#define ID_latency_07_ms 752
+extern u_int16_t latency_07_ms;
+int doWrite_latency_07_ms(u_int16_t value);
+int addWrite_latency_07_ms(u_int16_t value);
+int getStatus_latency_07_ms();
+ 
+#define ID_latency_08_ms 753
+extern u_int16_t latency_08_ms;
+int doWrite_latency_08_ms(u_int16_t value);
+int addWrite_latency_08_ms(u_int16_t value);
+int getStatus_latency_08_ms();
+ 
+#define ID_latency_09_ms 754
+extern u_int16_t latency_09_ms;
+int doWrite_latency_09_ms(u_int16_t value);
+int addWrite_latency_09_ms(u_int16_t value);
+int getStatus_latency_09_ms();
+ 
+#define ID_latency_10_ms 755
+extern u_int16_t latency_10_ms;
+int doWrite_latency_10_ms(u_int16_t value);
+int addWrite_latency_10_ms(u_int16_t value);
+int getStatus_latency_10_ms();
+ 
+#define ID_latency_11_ms 756
+extern u_int16_t latency_11_ms;
+int doWrite_latency_11_ms(u_int16_t value);
+int addWrite_latency_11_ms(u_int16_t value);
+int getStatus_latency_11_ms();
+ 
+#define ID_latency_12_ms 757
+extern u_int16_t latency_12_ms;
+int doWrite_latency_12_ms(u_int16_t value);
+int addWrite_latency_12_ms(u_int16_t value);
+int getStatus_latency_12_ms();
+ 
+#define ID_latency_13_ms 758
+extern u_int16_t latency_13_ms;
+int doWrite_latency_13_ms(u_int16_t value);
+int addWrite_latency_13_ms(u_int16_t value);
+int getStatus_latency_13_ms();
+ 
+#define ID_latency_14_ms 759
+extern u_int16_t latency_14_ms;
+int doWrite_latency_14_ms(u_int16_t value);
+int addWrite_latency_14_ms(u_int16_t value);
+int getStatus_latency_14_ms();
+ 
+#define ID_latency_15_ms 760
+extern u_int16_t latency_15_ms;
+int doWrite_latency_15_ms(u_int16_t value);
+int addWrite_latency_15_ms(u_int16_t value);
+int getStatus_latency_15_ms();
+ 
+#define ID_latency_16_ms 761
+extern u_int16_t latency_16_ms;
+int doWrite_latency_16_ms(u_int16_t value);
+int addWrite_latency_16_ms(u_int16_t value);
+int getStatus_latency_16_ms();
+ 
+#define ID_latency_17_ms 762
+extern u_int16_t latency_17_ms;
+int doWrite_latency_17_ms(u_int16_t value);
+int addWrite_latency_17_ms(u_int16_t value);
+int getStatus_latency_17_ms();
+ 
+#define ID_latency_18_ms 763
+extern u_int16_t latency_18_ms;
+int doWrite_latency_18_ms(u_int16_t value);
+int addWrite_latency_18_ms(u_int16_t value);
+int getStatus_latency_18_ms();
+ 
+#define ID_latency_19_ms 764
+extern u_int16_t latency_19_ms;
+int doWrite_latency_19_ms(u_int16_t value);
+int addWrite_latency_19_ms(u_int16_t value);
+int getStatus_latency_19_ms();
+ 
+#define ID_latency_20_ms 765
+extern u_int16_t latency_20_ms;
+int doWrite_latency_20_ms(u_int16_t value);
+int addWrite_latency_20_ms(u_int16_t value);
+int getStatus_latency_20_ms();
+ 
+#define ID_latency_21_ms 766
+extern u_int16_t latency_21_ms;
+int doWrite_latency_21_ms(u_int16_t value);
+int addWrite_latency_21_ms(u_int16_t value);
+int getStatus_latency_21_ms();
+ 
+#define ID_latency_22_ms 767
+extern u_int16_t latency_22_ms;
+int doWrite_latency_22_ms(u_int16_t value);
+int addWrite_latency_22_ms(u_int16_t value);
+int getStatus_latency_22_ms();
+ 
+#define ID_latency_23_ms 768
+extern u_int16_t latency_23_ms;
+int doWrite_latency_23_ms(u_int16_t value);
+int addWrite_latency_23_ms(u_int16_t value);
+int getStatus_latency_23_ms();
+ 
+#define ID_latency_24_ms 769
+extern u_int16_t latency_24_ms;
+int doWrite_latency_24_ms(u_int16_t value);
+int addWrite_latency_24_ms(u_int16_t value);
+int getStatus_latency_24_ms();
+ 
+#define ID_min_latency_01_m 770
+extern u_int16_t min_latency_01_m;
+int doWrite_min_latency_01_m(u_int16_t value);
+int addWrite_min_latency_01_m(u_int16_t value);
+int getStatus_min_latency_01_m();
+ 
+#define ID_min_latency_02_m 771
+extern u_int16_t min_latency_02_m;
+int doWrite_min_latency_02_m(u_int16_t value);
+int addWrite_min_latency_02_m(u_int16_t value);
+int getStatus_min_latency_02_m();
+ 
+#define ID_min_latency_03_m 772
+extern u_int16_t min_latency_03_m;
+int doWrite_min_latency_03_m(u_int16_t value);
+int addWrite_min_latency_03_m(u_int16_t value);
+int getStatus_min_latency_03_m();
+ 
+#define ID_min_latency_04_m 773
+extern u_int16_t min_latency_04_m;
+int doWrite_min_latency_04_m(u_int16_t value);
+int addWrite_min_latency_04_m(u_int16_t value);
+int getStatus_min_latency_04_m();
+ 
+#define ID_min_latency_05_m 774
+extern u_int16_t min_latency_05_m;
+int doWrite_min_latency_05_m(u_int16_t value);
+int addWrite_min_latency_05_m(u_int16_t value);
+int getStatus_min_latency_05_m();
+ 
+#define ID_min_latency_06_m 775
+extern u_int16_t min_latency_06_m;
+int doWrite_min_latency_06_m(u_int16_t value);
+int addWrite_min_latency_06_m(u_int16_t value);
+int getStatus_min_latency_06_m();
+ 
+#define ID_min_latency_07_m 776
+extern u_int16_t min_latency_07_m;
+int doWrite_min_latency_07_m(u_int16_t value);
+int addWrite_min_latency_07_m(u_int16_t value);
+int getStatus_min_latency_07_m();
+ 
+#define ID_min_latency_08_m 777
+extern u_int16_t min_latency_08_m;
+int doWrite_min_latency_08_m(u_int16_t value);
+int addWrite_min_latency_08_m(u_int16_t value);
+int getStatus_min_latency_08_m();
+ 
+#define ID_min_latency_09_m 778
+extern u_int16_t min_latency_09_m;
+int doWrite_min_latency_09_m(u_int16_t value);
+int addWrite_min_latency_09_m(u_int16_t value);
+int getStatus_min_latency_09_m();
+ 
+#define ID_min_latency_10_m 779
+extern u_int16_t min_latency_10_m;
+int doWrite_min_latency_10_m(u_int16_t value);
+int addWrite_min_latency_10_m(u_int16_t value);
+int getStatus_min_latency_10_m();
+ 
+#define ID_min_latency_11_m 780
+extern u_int16_t min_latency_11_m;
+int doWrite_min_latency_11_m(u_int16_t value);
+int addWrite_min_latency_11_m(u_int16_t value);
+int getStatus_min_latency_11_m();
+ 
+#define ID_min_latency_12_m 781
+extern u_int16_t min_latency_12_m;
+int doWrite_min_latency_12_m(u_int16_t value);
+int addWrite_min_latency_12_m(u_int16_t value);
+int getStatus_min_latency_12_m();
+ 
+#define ID_min_latency_13_m 782
+extern u_int16_t min_latency_13_m;
+int doWrite_min_latency_13_m(u_int16_t value);
+int addWrite_min_latency_13_m(u_int16_t value);
+int getStatus_min_latency_13_m();
+ 
+#define ID_min_latency_14_m 783
+extern u_int16_t min_latency_14_m;
+int doWrite_min_latency_14_m(u_int16_t value);
+int addWrite_min_latency_14_m(u_int16_t value);
+int getStatus_min_latency_14_m();
+ 
+#define ID_min_latency_15_m 784
+extern u_int16_t min_latency_15_m;
+int doWrite_min_latency_15_m(u_int16_t value);
+int addWrite_min_latency_15_m(u_int16_t value);
+int getStatus_min_latency_15_m();
+ 
+#define ID_min_latency_16_m 785
+extern u_int16_t min_latency_16_m;
+int doWrite_min_latency_16_m(u_int16_t value);
+int addWrite_min_latency_16_m(u_int16_t value);
+int getStatus_min_latency_16_m();
+ 
+#define ID_min_latency_17_m 786
+extern u_int16_t min_latency_17_m;
+int doWrite_min_latency_17_m(u_int16_t value);
+int addWrite_min_latency_17_m(u_int16_t value);
+int getStatus_min_latency_17_m();
+ 
+#define ID_min_latency_18_m 787
+extern u_int16_t min_latency_18_m;
+int doWrite_min_latency_18_m(u_int16_t value);
+int addWrite_min_latency_18_m(u_int16_t value);
+int getStatus_min_latency_18_m();
+ 
+#define ID_min_latency_19_m 788
+extern u_int16_t min_latency_19_m;
+int doWrite_min_latency_19_m(u_int16_t value);
+int addWrite_min_latency_19_m(u_int16_t value);
+int getStatus_min_latency_19_m();
+ 
+#define ID_min_latency_20_m 789
+extern u_int16_t min_latency_20_m;
+int doWrite_min_latency_20_m(u_int16_t value);
+int addWrite_min_latency_20_m(u_int16_t value);
+int getStatus_min_latency_20_m();
+ 
+#define ID_min_latency_21_m 790
+extern u_int16_t min_latency_21_m;
+int doWrite_min_latency_21_m(u_int16_t value);
+int addWrite_min_latency_21_m(u_int16_t value);
+int getStatus_min_latency_21_m();
+ 
+#define ID_min_latency_22_m 791
+extern u_int16_t min_latency_22_m;
+int doWrite_min_latency_22_m(u_int16_t value);
+int addWrite_min_latency_22_m(u_int16_t value);
+int getStatus_min_latency_22_m();
+ 
+#define ID_min_latency_23_m 792
+extern u_int16_t min_latency_23_m;
+int doWrite_min_latency_23_m(u_int16_t value);
+int addWrite_min_latency_23_m(u_int16_t value);
+int getStatus_min_latency_23_m();
+ 
+#define ID_min_latency_24_m 793
+extern u_int16_t min_latency_24_m;
+int doWrite_min_latency_24_m(u_int16_t value);
+int addWrite_min_latency_24_m(u_int16_t value);
+int getStatus_min_latency_24_m();
+ 
+#define ID_max_latency_01_m 794
+extern u_int16_t max_latency_01_m;
+int doWrite_max_latency_01_m(u_int16_t value);
+int addWrite_max_latency_01_m(u_int16_t value);
+int getStatus_max_latency_01_m();
+ 
+#define ID_max_latency_02_m 795
+extern u_int16_t max_latency_02_m;
+int doWrite_max_latency_02_m(u_int16_t value);
+int addWrite_max_latency_02_m(u_int16_t value);
+int getStatus_max_latency_02_m();
+ 
+#define ID_max_latency_03_m 796
+extern u_int16_t max_latency_03_m;
+int doWrite_max_latency_03_m(u_int16_t value);
+int addWrite_max_latency_03_m(u_int16_t value);
+int getStatus_max_latency_03_m();
+ 
+#define ID_max_latency_04_m 797
+extern u_int16_t max_latency_04_m;
+int doWrite_max_latency_04_m(u_int16_t value);
+int addWrite_max_latency_04_m(u_int16_t value);
+int getStatus_max_latency_04_m();
+ 
+#define ID_max_latency_05_m 798
+extern u_int16_t max_latency_05_m;
+int doWrite_max_latency_05_m(u_int16_t value);
+int addWrite_max_latency_05_m(u_int16_t value);
+int getStatus_max_latency_05_m();
+ 
+#define ID_max_latency_06_m 799
+extern u_int16_t max_latency_06_m;
+int doWrite_max_latency_06_m(u_int16_t value);
+int addWrite_max_latency_06_m(u_int16_t value);
+int getStatus_max_latency_06_m();
+ 
+#define ID_max_latency_07_m 800
+extern u_int16_t max_latency_07_m;
+int doWrite_max_latency_07_m(u_int16_t value);
+int addWrite_max_latency_07_m(u_int16_t value);
+int getStatus_max_latency_07_m();
+ 
+#define ID_max_latency_08_m 801
+extern u_int16_t max_latency_08_m;
+int doWrite_max_latency_08_m(u_int16_t value);
+int addWrite_max_latency_08_m(u_int16_t value);
+int getStatus_max_latency_08_m();
+ 
+#define ID_max_latency_09_m 802
+extern u_int16_t max_latency_09_m;
+int doWrite_max_latency_09_m(u_int16_t value);
+int addWrite_max_latency_09_m(u_int16_t value);
+int getStatus_max_latency_09_m();
+ 
+#define ID_max_latency_10_m 803
+extern u_int16_t max_latency_10_m;
+int doWrite_max_latency_10_m(u_int16_t value);
+int addWrite_max_latency_10_m(u_int16_t value);
+int getStatus_max_latency_10_m();
+ 
+#define ID_max_latency_11_m 804
+extern u_int16_t max_latency_11_m;
+int doWrite_max_latency_11_m(u_int16_t value);
+int addWrite_max_latency_11_m(u_int16_t value);
+int getStatus_max_latency_11_m();
+ 
+#define ID_max_latency_12_m 805
+extern u_int16_t max_latency_12_m;
+int doWrite_max_latency_12_m(u_int16_t value);
+int addWrite_max_latency_12_m(u_int16_t value);
+int getStatus_max_latency_12_m();
+ 
+#define ID_max_latency_13_m 806
+extern u_int16_t max_latency_13_m;
+int doWrite_max_latency_13_m(u_int16_t value);
+int addWrite_max_latency_13_m(u_int16_t value);
+int getStatus_max_latency_13_m();
+ 
+#define ID_max_latency_14_m 807
+extern u_int16_t max_latency_14_m;
+int doWrite_max_latency_14_m(u_int16_t value);
+int addWrite_max_latency_14_m(u_int16_t value);
+int getStatus_max_latency_14_m();
+ 
+#define ID_max_latency_15_m 808
+extern u_int16_t max_latency_15_m;
+int doWrite_max_latency_15_m(u_int16_t value);
+int addWrite_max_latency_15_m(u_int16_t value);
+int getStatus_max_latency_15_m();
+ 
+#define ID_max_latency_16_m 809
+extern u_int16_t max_latency_16_m;
+int doWrite_max_latency_16_m(u_int16_t value);
+int addWrite_max_latency_16_m(u_int16_t value);
+int getStatus_max_latency_16_m();
+ 
+#define ID_max_latency_17_m 810
+extern u_int16_t max_latency_17_m;
+int doWrite_max_latency_17_m(u_int16_t value);
+int addWrite_max_latency_17_m(u_int16_t value);
+int getStatus_max_latency_17_m();
+ 
+#define ID_max_latency_18_m 811
+extern u_int16_t max_latency_18_m;
+int doWrite_max_latency_18_m(u_int16_t value);
+int addWrite_max_latency_18_m(u_int16_t value);
+int getStatus_max_latency_18_m();
+ 
+#define ID_max_latency_19_m 812
+extern u_int16_t max_latency_19_m;
+int doWrite_max_latency_19_m(u_int16_t value);
+int addWrite_max_latency_19_m(u_int16_t value);
+int getStatus_max_latency_19_m();
+ 
+#define ID_max_latency_20_m 813
+extern u_int16_t max_latency_20_m;
+int doWrite_max_latency_20_m(u_int16_t value);
+int addWrite_max_latency_20_m(u_int16_t value);
+int getStatus_max_latency_20_m();
+ 
+#define ID_max_latency_21_m 814
+extern u_int16_t max_latency_21_m;
+int doWrite_max_latency_21_m(u_int16_t value);
+int addWrite_max_latency_21_m(u_int16_t value);
+int getStatus_max_latency_21_m();
+ 
+#define ID_max_latency_22_m 815
+extern u_int16_t max_latency_22_m;
+int doWrite_max_latency_22_m(u_int16_t value);
+int addWrite_max_latency_22_m(u_int16_t value);
+int getStatus_max_latency_22_m();
+ 
+#define ID_max_latency_23_m 816
+extern u_int16_t max_latency_23_m;
+int doWrite_max_latency_23_m(u_int16_t value);
+int addWrite_max_latency_23_m(u_int16_t value);
+int getStatus_max_latency_23_m();
+ 
+#define ID_max_latency_24_m 817
+extern u_int16_t max_latency_24_m;
+int doWrite_max_latency_24_m(u_int16_t value);
+int addWrite_max_latency_24_m(u_int16_t value);
+int getStatus_max_latency_24_m();
  
 #define ID_RTU0_TYPE_PORT 5000
 extern u_int32_t RTU0_TYPE_PORT;

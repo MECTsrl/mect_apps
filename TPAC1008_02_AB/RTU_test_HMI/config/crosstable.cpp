@@ -33,6 +33,7 @@ int DigOut_1_node01 = 0;
 int DigOut_4_node01 = 0;
 int DigOut_5_node01 = 0;
 int DigOut_8_node01 = 0;
+u_int32_t errors_can = 0;
 u_int16_t Addr_node02 = 0;
 u_int16_t Life_node02 = 0;
 u_int16_t AnInCnf_1_node02 = 0;
@@ -55,6 +56,7 @@ int DigOut_1_node02 = 0;
 int DigOut_4_node02 = 0;
 int DigOut_5_node02 = 0;
 int DigOut_8_node02 = 0;
+u_int32_t errors_01 = 0;
 u_int16_t Addr_node03 = 0;
 u_int16_t Life_node03 = 0;
 u_int16_t AnInCnf_1_node03 = 0;
@@ -77,6 +79,7 @@ int DigOut_1_node03 = 0;
 int DigOut_4_node03 = 0;
 int DigOut_5_node03 = 0;
 int DigOut_8_node03 = 0;
+u_int32_t errors_02 = 0;
 u_int16_t Addr_node04 = 0;
 u_int16_t Life_node04 = 0;
 u_int16_t AnInCnf_1_node04 = 0;
@@ -99,6 +102,7 @@ int DigOut_1_node04 = 0;
 int DigOut_4_node04 = 0;
 int DigOut_5_node04 = 0;
 int DigOut_8_node04 = 0;
+u_int32_t errors_03 = 0;
 u_int16_t Addr_node05 = 0;
 u_int16_t Life_node05 = 0;
 u_int16_t AnInCnf_1_node05 = 0;
@@ -121,6 +125,7 @@ int DigOut_1_node05 = 0;
 int DigOut_4_node05 = 0;
 int DigOut_5_node05 = 0;
 int DigOut_8_node05 = 0;
+u_int32_t errors_04 = 0;
 u_int16_t Addr_node06 = 0;
 u_int16_t Life_node06 = 0;
 u_int16_t AnInCnf_1_node06 = 0;
@@ -143,6 +148,7 @@ int DigOut_1_node06 = 0;
 int DigOut_4_node06 = 0;
 int DigOut_5_node06 = 0;
 int DigOut_8_node06 = 0;
+u_int32_t errors_05 = 0;
 u_int16_t Addr_node07 = 0;
 u_int16_t Life_node07 = 0;
 u_int16_t AnInCnf_1_node07 = 0;
@@ -165,6 +171,7 @@ int DigOut_1_node07 = 0;
 int DigOut_4_node07 = 0;
 int DigOut_5_node07 = 0;
 int DigOut_8_node07 = 0;
+u_int32_t errors_06 = 0;
 u_int16_t Addr_node08 = 0;
 u_int16_t Life_node08 = 0;
 u_int16_t AnInCnf_1_node08 = 0;
@@ -187,6 +194,7 @@ int DigOut_1_node08 = 0;
 int DigOut_4_node08 = 0;
 int DigOut_5_node08 = 0;
 int DigOut_8_node08 = 0;
+u_int32_t errors_07 = 0;
 u_int16_t Addr_node09 = 0;
 u_int16_t Life_node09 = 0;
 u_int16_t AnInCnf_1_node09 = 0;
@@ -209,6 +217,7 @@ int DigOut_1_node09 = 0;
 int DigOut_4_node09 = 0;
 int DigOut_5_node09 = 0;
 int DigOut_8_node09 = 0;
+u_int32_t errors_08 = 0;
 u_int16_t Addr_node10 = 0;
 u_int16_t Life_node10 = 0;
 u_int16_t AnInCnf_1_node10 = 0;
@@ -231,6 +240,7 @@ int DigOut_1_node10 = 0;
 int DigOut_4_node10 = 0;
 int DigOut_5_node10 = 0;
 int DigOut_8_node10 = 0;
+u_int32_t errors_09 = 0;
 u_int16_t Addr_node11 = 0;
 u_int16_t Life_node11 = 0;
 u_int16_t AnInCnf_1_node11 = 0;
@@ -253,6 +263,7 @@ int DigOut_1_node11 = 0;
 int DigOut_4_node11 = 0;
 int DigOut_5_node11 = 0;
 int DigOut_8_node11 = 0;
+u_int32_t errors_10 = 0;
 u_int16_t Addr_node12 = 0;
 u_int16_t Life_node12 = 0;
 u_int16_t AnInCnf_1_node12 = 0;
@@ -275,6 +286,7 @@ int DigOut_1_node12 = 0;
 int DigOut_4_node12 = 0;
 int DigOut_5_node12 = 0;
 int DigOut_8_node12 = 0;
+u_int32_t errors_11 = 0;
 u_int16_t Addr_node13 = 0;
 u_int16_t Life_node13 = 0;
 u_int16_t AnInCnf_1_node13 = 0;
@@ -297,6 +309,7 @@ int DigOut_1_node13 = 0;
 int DigOut_4_node13 = 0;
 int DigOut_5_node13 = 0;
 int DigOut_8_node13 = 0;
+u_int32_t errors_12 = 0;
 u_int16_t Addr_node14 = 0;
 u_int16_t Life_node14 = 0;
 u_int16_t AnInCnf_1_node14 = 0;
@@ -319,6 +332,7 @@ int DigOut_1_node14 = 0;
 int DigOut_4_node14 = 0;
 int DigOut_5_node14 = 0;
 int DigOut_8_node14 = 0;
+u_int32_t errors_13 = 0;
 u_int16_t Addr_node15 = 0;
 u_int16_t Life_node15 = 0;
 u_int16_t AnInCnf_1_node15 = 0;
@@ -341,6 +355,7 @@ int DigOut_1_node15 = 0;
 int DigOut_4_node15 = 0;
 int DigOut_5_node15 = 0;
 int DigOut_8_node15 = 0;
+u_int32_t errors_14 = 0;
 u_int16_t Addr_node16 = 0;
 u_int16_t Life_node16 = 0;
 u_int16_t AnInCnf_1_node16 = 0;
@@ -363,6 +378,7 @@ int DigOut_1_node16 = 0;
 int DigOut_4_node16 = 0;
 int DigOut_5_node16 = 0;
 int DigOut_8_node16 = 0;
+u_int32_t errors_15 = 0;
 u_int16_t Addr_node17 = 0;
 u_int16_t Life_node17 = 0;
 u_int16_t AnInCnf_1_node17 = 0;
@@ -385,6 +401,7 @@ int DigOut_1_node17 = 0;
 int DigOut_4_node17 = 0;
 int DigOut_5_node17 = 0;
 int DigOut_8_node17 = 0;
+u_int32_t errors_16 = 0;
 u_int16_t Addr_node18 = 0;
 u_int16_t Life_node18 = 0;
 u_int16_t AnInCnf_1_node18 = 0;
@@ -407,6 +424,7 @@ int DigOut_1_node18 = 0;
 int DigOut_4_node18 = 0;
 int DigOut_5_node18 = 0;
 int DigOut_8_node18 = 0;
+u_int32_t errors_17 = 0;
 u_int16_t Addr_node19 = 0;
 u_int16_t Life_node19 = 0;
 u_int16_t AnInCnf_1_node19 = 0;
@@ -429,6 +447,7 @@ int DigOut_1_node19 = 0;
 int DigOut_4_node19 = 0;
 int DigOut_5_node19 = 0;
 int DigOut_8_node19 = 0;
+u_int32_t errors_18 = 0;
 u_int16_t Addr_node20 = 0;
 u_int16_t Life_node20 = 0;
 u_int16_t AnInCnf_1_node20 = 0;
@@ -451,6 +470,7 @@ int DigOut_1_node20 = 0;
 int DigOut_4_node20 = 0;
 int DigOut_5_node20 = 0;
 int DigOut_8_node20 = 0;
+u_int32_t errors_19 = 0;
 u_int16_t Addr_node21 = 0;
 u_int16_t Life_node21 = 0;
 u_int16_t AnInCnf_1_node21 = 0;
@@ -473,6 +493,7 @@ int DigOut_1_node21 = 0;
 int DigOut_4_node21 = 0;
 int DigOut_5_node21 = 0;
 int DigOut_8_node21 = 0;
+u_int32_t errors_20 = 0;
 u_int16_t Addr_node22 = 0;
 u_int16_t Life_node22 = 0;
 u_int16_t AnInCnf_1_node22 = 0;
@@ -495,6 +516,8 @@ int DigOut_1_node22 = 0;
 int DigOut_4_node22 = 0;
 int DigOut_5_node22 = 0;
 int DigOut_8_node22 = 0;
+u_int32_t errors_21 = 0;
+u_int32_t errors_22 = 0;
 u_int16_t Addr_node23 = 0;
 u_int16_t Life_node23 = 0;
 u_int16_t AnInCnf_1_node23 = 0;
@@ -517,6 +540,7 @@ int DigOut_1_node23 = 0;
 int DigOut_4_node23 = 0;
 int DigOut_5_node23 = 0;
 int DigOut_8_node23 = 0;
+u_int32_t errors_23 = 0;
 u_int16_t Addr_node24 = 0;
 u_int16_t Life_node24 = 0;
 u_int16_t AnInCnf_1_node24 = 0;
@@ -539,6 +563,79 @@ int DigOut_1_node24 = 0;
 int DigOut_4_node24 = 0;
 int DigOut_5_node24 = 0;
 int DigOut_8_node24 = 0;
+u_int32_t errors_24 = 0;
+u_int16_t latency_01_ms = 0;
+u_int16_t latency_02_ms = 0;
+u_int16_t latency_03_ms = 0;
+u_int16_t latency_04_ms = 0;
+u_int16_t latency_05_ms = 0;
+u_int16_t latency_06_ms = 0;
+u_int16_t latency_07_ms = 0;
+u_int16_t latency_08_ms = 0;
+u_int16_t latency_09_ms = 0;
+u_int16_t latency_10_ms = 0;
+u_int16_t latency_11_ms = 0;
+u_int16_t latency_12_ms = 0;
+u_int16_t latency_13_ms = 0;
+u_int16_t latency_14_ms = 0;
+u_int16_t latency_15_ms = 0;
+u_int16_t latency_16_ms = 0;
+u_int16_t latency_17_ms = 0;
+u_int16_t latency_18_ms = 0;
+u_int16_t latency_19_ms = 0;
+u_int16_t latency_20_ms = 0;
+u_int16_t latency_21_ms = 0;
+u_int16_t latency_22_ms = 0;
+u_int16_t latency_23_ms = 0;
+u_int16_t latency_24_ms = 0;
+u_int16_t min_latency_01_m = 0;
+u_int16_t min_latency_02_m = 0;
+u_int16_t min_latency_03_m = 0;
+u_int16_t min_latency_04_m = 0;
+u_int16_t min_latency_05_m = 0;
+u_int16_t min_latency_06_m = 0;
+u_int16_t min_latency_07_m = 0;
+u_int16_t min_latency_08_m = 0;
+u_int16_t min_latency_09_m = 0;
+u_int16_t min_latency_10_m = 0;
+u_int16_t min_latency_11_m = 0;
+u_int16_t min_latency_12_m = 0;
+u_int16_t min_latency_13_m = 0;
+u_int16_t min_latency_14_m = 0;
+u_int16_t min_latency_15_m = 0;
+u_int16_t min_latency_16_m = 0;
+u_int16_t min_latency_17_m = 0;
+u_int16_t min_latency_18_m = 0;
+u_int16_t min_latency_19_m = 0;
+u_int16_t min_latency_20_m = 0;
+u_int16_t min_latency_21_m = 0;
+u_int16_t min_latency_22_m = 0;
+u_int16_t min_latency_23_m = 0;
+u_int16_t min_latency_24_m = 0;
+u_int16_t max_latency_01_m = 0;
+u_int16_t max_latency_02_m = 0;
+u_int16_t max_latency_03_m = 0;
+u_int16_t max_latency_04_m = 0;
+u_int16_t max_latency_05_m = 0;
+u_int16_t max_latency_06_m = 0;
+u_int16_t max_latency_07_m = 0;
+u_int16_t max_latency_08_m = 0;
+u_int16_t max_latency_09_m = 0;
+u_int16_t max_latency_10_m = 0;
+u_int16_t max_latency_11_m = 0;
+u_int16_t max_latency_12_m = 0;
+u_int16_t max_latency_13_m = 0;
+u_int16_t max_latency_14_m = 0;
+u_int16_t max_latency_15_m = 0;
+u_int16_t max_latency_16_m = 0;
+u_int16_t max_latency_17_m = 0;
+u_int16_t max_latency_18_m = 0;
+u_int16_t max_latency_19_m = 0;
+u_int16_t max_latency_20_m = 0;
+u_int16_t max_latency_21_m = 0;
+u_int16_t max_latency_22_m = 0;
+u_int16_t max_latency_23_m = 0;
+u_int16_t max_latency_24_m = 0;
 u_int32_t RTU0_TYPE_PORT = 0;
 u_int32_t RTU0_BAUDRATE = 0;
 u_int32_t RTU0_STATUS = 0;
@@ -1218,6 +1315,24 @@ return getStatus(ID_DigOut_8_node01);
 }
 
 
+int doWrite_errors_can(u_int32_t value)
+{
+return doWrite(ID_errors_can,  &value);
+}
+
+
+int addWrite_errors_can(u_int32_t value)
+{
+return addWrite(ID_errors_can, &value);
+}
+
+
+int getStatus_errors_can()
+{
+return getStatus(ID_errors_can);
+}
+
+
 int doWrite_Addr_node02(u_int16_t value)
 {
 return doWrite(ID_Addr_node02,  &value);
@@ -1611,6 +1726,24 @@ return addWrite(ID_DigOut_8_node02, &value);
 int getStatus_DigOut_8_node02()
 {
 return getStatus(ID_DigOut_8_node02);
+}
+
+
+int doWrite_errors_01(u_int32_t value)
+{
+return doWrite(ID_errors_01,  &value);
+}
+
+
+int addWrite_errors_01(u_int32_t value)
+{
+return addWrite(ID_errors_01, &value);
+}
+
+
+int getStatus_errors_01()
+{
+return getStatus(ID_errors_01);
 }
 
 
@@ -2010,6 +2143,24 @@ return getStatus(ID_DigOut_8_node03);
 }
 
 
+int doWrite_errors_02(u_int32_t value)
+{
+return doWrite(ID_errors_02,  &value);
+}
+
+
+int addWrite_errors_02(u_int32_t value)
+{
+return addWrite(ID_errors_02, &value);
+}
+
+
+int getStatus_errors_02()
+{
+return getStatus(ID_errors_02);
+}
+
+
 int doWrite_Addr_node04(u_int16_t value)
 {
 return doWrite(ID_Addr_node04,  &value);
@@ -2403,6 +2554,24 @@ return addWrite(ID_DigOut_8_node04, &value);
 int getStatus_DigOut_8_node04()
 {
 return getStatus(ID_DigOut_8_node04);
+}
+
+
+int doWrite_errors_03(u_int32_t value)
+{
+return doWrite(ID_errors_03,  &value);
+}
+
+
+int addWrite_errors_03(u_int32_t value)
+{
+return addWrite(ID_errors_03, &value);
+}
+
+
+int getStatus_errors_03()
+{
+return getStatus(ID_errors_03);
 }
 
 
@@ -2802,6 +2971,24 @@ return getStatus(ID_DigOut_8_node05);
 }
 
 
+int doWrite_errors_04(u_int32_t value)
+{
+return doWrite(ID_errors_04,  &value);
+}
+
+
+int addWrite_errors_04(u_int32_t value)
+{
+return addWrite(ID_errors_04, &value);
+}
+
+
+int getStatus_errors_04()
+{
+return getStatus(ID_errors_04);
+}
+
+
 int doWrite_Addr_node06(u_int16_t value)
 {
 return doWrite(ID_Addr_node06,  &value);
@@ -3195,6 +3382,24 @@ return addWrite(ID_DigOut_8_node06, &value);
 int getStatus_DigOut_8_node06()
 {
 return getStatus(ID_DigOut_8_node06);
+}
+
+
+int doWrite_errors_05(u_int32_t value)
+{
+return doWrite(ID_errors_05,  &value);
+}
+
+
+int addWrite_errors_05(u_int32_t value)
+{
+return addWrite(ID_errors_05, &value);
+}
+
+
+int getStatus_errors_05()
+{
+return getStatus(ID_errors_05);
 }
 
 
@@ -3594,6 +3799,24 @@ return getStatus(ID_DigOut_8_node07);
 }
 
 
+int doWrite_errors_06(u_int32_t value)
+{
+return doWrite(ID_errors_06,  &value);
+}
+
+
+int addWrite_errors_06(u_int32_t value)
+{
+return addWrite(ID_errors_06, &value);
+}
+
+
+int getStatus_errors_06()
+{
+return getStatus(ID_errors_06);
+}
+
+
 int doWrite_Addr_node08(u_int16_t value)
 {
 return doWrite(ID_Addr_node08,  &value);
@@ -3987,6 +4210,24 @@ return addWrite(ID_DigOut_8_node08, &value);
 int getStatus_DigOut_8_node08()
 {
 return getStatus(ID_DigOut_8_node08);
+}
+
+
+int doWrite_errors_07(u_int32_t value)
+{
+return doWrite(ID_errors_07,  &value);
+}
+
+
+int addWrite_errors_07(u_int32_t value)
+{
+return addWrite(ID_errors_07, &value);
+}
+
+
+int getStatus_errors_07()
+{
+return getStatus(ID_errors_07);
 }
 
 
@@ -4386,6 +4627,24 @@ return getStatus(ID_DigOut_8_node09);
 }
 
 
+int doWrite_errors_08(u_int32_t value)
+{
+return doWrite(ID_errors_08,  &value);
+}
+
+
+int addWrite_errors_08(u_int32_t value)
+{
+return addWrite(ID_errors_08, &value);
+}
+
+
+int getStatus_errors_08()
+{
+return getStatus(ID_errors_08);
+}
+
+
 int doWrite_Addr_node10(u_int16_t value)
 {
 return doWrite(ID_Addr_node10,  &value);
@@ -4779,6 +5038,24 @@ return addWrite(ID_DigOut_8_node10, &value);
 int getStatus_DigOut_8_node10()
 {
 return getStatus(ID_DigOut_8_node10);
+}
+
+
+int doWrite_errors_09(u_int32_t value)
+{
+return doWrite(ID_errors_09,  &value);
+}
+
+
+int addWrite_errors_09(u_int32_t value)
+{
+return addWrite(ID_errors_09, &value);
+}
+
+
+int getStatus_errors_09()
+{
+return getStatus(ID_errors_09);
 }
 
 
@@ -5178,6 +5455,24 @@ return getStatus(ID_DigOut_8_node11);
 }
 
 
+int doWrite_errors_10(u_int32_t value)
+{
+return doWrite(ID_errors_10,  &value);
+}
+
+
+int addWrite_errors_10(u_int32_t value)
+{
+return addWrite(ID_errors_10, &value);
+}
+
+
+int getStatus_errors_10()
+{
+return getStatus(ID_errors_10);
+}
+
+
 int doWrite_Addr_node12(u_int16_t value)
 {
 return doWrite(ID_Addr_node12,  &value);
@@ -5571,6 +5866,24 @@ return addWrite(ID_DigOut_8_node12, &value);
 int getStatus_DigOut_8_node12()
 {
 return getStatus(ID_DigOut_8_node12);
+}
+
+
+int doWrite_errors_11(u_int32_t value)
+{
+return doWrite(ID_errors_11,  &value);
+}
+
+
+int addWrite_errors_11(u_int32_t value)
+{
+return addWrite(ID_errors_11, &value);
+}
+
+
+int getStatus_errors_11()
+{
+return getStatus(ID_errors_11);
 }
 
 
@@ -5970,6 +6283,24 @@ return getStatus(ID_DigOut_8_node13);
 }
 
 
+int doWrite_errors_12(u_int32_t value)
+{
+return doWrite(ID_errors_12,  &value);
+}
+
+
+int addWrite_errors_12(u_int32_t value)
+{
+return addWrite(ID_errors_12, &value);
+}
+
+
+int getStatus_errors_12()
+{
+return getStatus(ID_errors_12);
+}
+
+
 int doWrite_Addr_node14(u_int16_t value)
 {
 return doWrite(ID_Addr_node14,  &value);
@@ -6363,6 +6694,24 @@ return addWrite(ID_DigOut_8_node14, &value);
 int getStatus_DigOut_8_node14()
 {
 return getStatus(ID_DigOut_8_node14);
+}
+
+
+int doWrite_errors_13(u_int32_t value)
+{
+return doWrite(ID_errors_13,  &value);
+}
+
+
+int addWrite_errors_13(u_int32_t value)
+{
+return addWrite(ID_errors_13, &value);
+}
+
+
+int getStatus_errors_13()
+{
+return getStatus(ID_errors_13);
 }
 
 
@@ -6762,6 +7111,24 @@ return getStatus(ID_DigOut_8_node15);
 }
 
 
+int doWrite_errors_14(u_int32_t value)
+{
+return doWrite(ID_errors_14,  &value);
+}
+
+
+int addWrite_errors_14(u_int32_t value)
+{
+return addWrite(ID_errors_14, &value);
+}
+
+
+int getStatus_errors_14()
+{
+return getStatus(ID_errors_14);
+}
+
+
 int doWrite_Addr_node16(u_int16_t value)
 {
 return doWrite(ID_Addr_node16,  &value);
@@ -7155,6 +7522,24 @@ return addWrite(ID_DigOut_8_node16, &value);
 int getStatus_DigOut_8_node16()
 {
 return getStatus(ID_DigOut_8_node16);
+}
+
+
+int doWrite_errors_15(u_int32_t value)
+{
+return doWrite(ID_errors_15,  &value);
+}
+
+
+int addWrite_errors_15(u_int32_t value)
+{
+return addWrite(ID_errors_15, &value);
+}
+
+
+int getStatus_errors_15()
+{
+return getStatus(ID_errors_15);
 }
 
 
@@ -7554,6 +7939,24 @@ return getStatus(ID_DigOut_8_node17);
 }
 
 
+int doWrite_errors_16(u_int32_t value)
+{
+return doWrite(ID_errors_16,  &value);
+}
+
+
+int addWrite_errors_16(u_int32_t value)
+{
+return addWrite(ID_errors_16, &value);
+}
+
+
+int getStatus_errors_16()
+{
+return getStatus(ID_errors_16);
+}
+
+
 int doWrite_Addr_node18(u_int16_t value)
 {
 return doWrite(ID_Addr_node18,  &value);
@@ -7947,6 +8350,24 @@ return addWrite(ID_DigOut_8_node18, &value);
 int getStatus_DigOut_8_node18()
 {
 return getStatus(ID_DigOut_8_node18);
+}
+
+
+int doWrite_errors_17(u_int32_t value)
+{
+return doWrite(ID_errors_17,  &value);
+}
+
+
+int addWrite_errors_17(u_int32_t value)
+{
+return addWrite(ID_errors_17, &value);
+}
+
+
+int getStatus_errors_17()
+{
+return getStatus(ID_errors_17);
 }
 
 
@@ -8346,6 +8767,24 @@ return getStatus(ID_DigOut_8_node19);
 }
 
 
+int doWrite_errors_18(u_int32_t value)
+{
+return doWrite(ID_errors_18,  &value);
+}
+
+
+int addWrite_errors_18(u_int32_t value)
+{
+return addWrite(ID_errors_18, &value);
+}
+
+
+int getStatus_errors_18()
+{
+return getStatus(ID_errors_18);
+}
+
+
 int doWrite_Addr_node20(u_int16_t value)
 {
 return doWrite(ID_Addr_node20,  &value);
@@ -8739,6 +9178,24 @@ return addWrite(ID_DigOut_8_node20, &value);
 int getStatus_DigOut_8_node20()
 {
 return getStatus(ID_DigOut_8_node20);
+}
+
+
+int doWrite_errors_19(u_int32_t value)
+{
+return doWrite(ID_errors_19,  &value);
+}
+
+
+int addWrite_errors_19(u_int32_t value)
+{
+return addWrite(ID_errors_19, &value);
+}
+
+
+int getStatus_errors_19()
+{
+return getStatus(ID_errors_19);
 }
 
 
@@ -9138,6 +9595,24 @@ return getStatus(ID_DigOut_8_node21);
 }
 
 
+int doWrite_errors_20(u_int32_t value)
+{
+return doWrite(ID_errors_20,  &value);
+}
+
+
+int addWrite_errors_20(u_int32_t value)
+{
+return addWrite(ID_errors_20, &value);
+}
+
+
+int getStatus_errors_20()
+{
+return getStatus(ID_errors_20);
+}
+
+
 int doWrite_Addr_node22(u_int16_t value)
 {
 return doWrite(ID_Addr_node22,  &value);
@@ -9531,6 +10006,42 @@ return addWrite(ID_DigOut_8_node22, &value);
 int getStatus_DigOut_8_node22()
 {
 return getStatus(ID_DigOut_8_node22);
+}
+
+
+int doWrite_errors_21(u_int32_t value)
+{
+return doWrite(ID_errors_21,  &value);
+}
+
+
+int addWrite_errors_21(u_int32_t value)
+{
+return addWrite(ID_errors_21, &value);
+}
+
+
+int getStatus_errors_21()
+{
+return getStatus(ID_errors_21);
+}
+
+
+int doWrite_errors_22(u_int32_t value)
+{
+return doWrite(ID_errors_22,  &value);
+}
+
+
+int addWrite_errors_22(u_int32_t value)
+{
+return addWrite(ID_errors_22, &value);
+}
+
+
+int getStatus_errors_22()
+{
+return getStatus(ID_errors_22);
 }
 
 
@@ -9930,6 +10441,24 @@ return getStatus(ID_DigOut_8_node23);
 }
 
 
+int doWrite_errors_23(u_int32_t value)
+{
+return doWrite(ID_errors_23,  &value);
+}
+
+
+int addWrite_errors_23(u_int32_t value)
+{
+return addWrite(ID_errors_23, &value);
+}
+
+
+int getStatus_errors_23()
+{
+return getStatus(ID_errors_23);
+}
+
+
 int doWrite_Addr_node24(u_int16_t value)
 {
 return doWrite(ID_Addr_node24,  &value);
@@ -10323,6 +10852,1320 @@ return addWrite(ID_DigOut_8_node24, &value);
 int getStatus_DigOut_8_node24()
 {
 return getStatus(ID_DigOut_8_node24);
+}
+
+
+int doWrite_errors_24(u_int32_t value)
+{
+return doWrite(ID_errors_24,  &value);
+}
+
+
+int addWrite_errors_24(u_int32_t value)
+{
+return addWrite(ID_errors_24, &value);
+}
+
+
+int getStatus_errors_24()
+{
+return getStatus(ID_errors_24);
+}
+
+
+int doWrite_latency_01_ms(u_int16_t value)
+{
+return doWrite(ID_latency_01_ms,  &value);
+}
+
+
+int addWrite_latency_01_ms(u_int16_t value)
+{
+return addWrite(ID_latency_01_ms, &value);
+}
+
+
+int getStatus_latency_01_ms()
+{
+return getStatus(ID_latency_01_ms);
+}
+
+
+int doWrite_latency_02_ms(u_int16_t value)
+{
+return doWrite(ID_latency_02_ms,  &value);
+}
+
+
+int addWrite_latency_02_ms(u_int16_t value)
+{
+return addWrite(ID_latency_02_ms, &value);
+}
+
+
+int getStatus_latency_02_ms()
+{
+return getStatus(ID_latency_02_ms);
+}
+
+
+int doWrite_latency_03_ms(u_int16_t value)
+{
+return doWrite(ID_latency_03_ms,  &value);
+}
+
+
+int addWrite_latency_03_ms(u_int16_t value)
+{
+return addWrite(ID_latency_03_ms, &value);
+}
+
+
+int getStatus_latency_03_ms()
+{
+return getStatus(ID_latency_03_ms);
+}
+
+
+int doWrite_latency_04_ms(u_int16_t value)
+{
+return doWrite(ID_latency_04_ms,  &value);
+}
+
+
+int addWrite_latency_04_ms(u_int16_t value)
+{
+return addWrite(ID_latency_04_ms, &value);
+}
+
+
+int getStatus_latency_04_ms()
+{
+return getStatus(ID_latency_04_ms);
+}
+
+
+int doWrite_latency_05_ms(u_int16_t value)
+{
+return doWrite(ID_latency_05_ms,  &value);
+}
+
+
+int addWrite_latency_05_ms(u_int16_t value)
+{
+return addWrite(ID_latency_05_ms, &value);
+}
+
+
+int getStatus_latency_05_ms()
+{
+return getStatus(ID_latency_05_ms);
+}
+
+
+int doWrite_latency_06_ms(u_int16_t value)
+{
+return doWrite(ID_latency_06_ms,  &value);
+}
+
+
+int addWrite_latency_06_ms(u_int16_t value)
+{
+return addWrite(ID_latency_06_ms, &value);
+}
+
+
+int getStatus_latency_06_ms()
+{
+return getStatus(ID_latency_06_ms);
+}
+
+
+int doWrite_latency_07_ms(u_int16_t value)
+{
+return doWrite(ID_latency_07_ms,  &value);
+}
+
+
+int addWrite_latency_07_ms(u_int16_t value)
+{
+return addWrite(ID_latency_07_ms, &value);
+}
+
+
+int getStatus_latency_07_ms()
+{
+return getStatus(ID_latency_07_ms);
+}
+
+
+int doWrite_latency_08_ms(u_int16_t value)
+{
+return doWrite(ID_latency_08_ms,  &value);
+}
+
+
+int addWrite_latency_08_ms(u_int16_t value)
+{
+return addWrite(ID_latency_08_ms, &value);
+}
+
+
+int getStatus_latency_08_ms()
+{
+return getStatus(ID_latency_08_ms);
+}
+
+
+int doWrite_latency_09_ms(u_int16_t value)
+{
+return doWrite(ID_latency_09_ms,  &value);
+}
+
+
+int addWrite_latency_09_ms(u_int16_t value)
+{
+return addWrite(ID_latency_09_ms, &value);
+}
+
+
+int getStatus_latency_09_ms()
+{
+return getStatus(ID_latency_09_ms);
+}
+
+
+int doWrite_latency_10_ms(u_int16_t value)
+{
+return doWrite(ID_latency_10_ms,  &value);
+}
+
+
+int addWrite_latency_10_ms(u_int16_t value)
+{
+return addWrite(ID_latency_10_ms, &value);
+}
+
+
+int getStatus_latency_10_ms()
+{
+return getStatus(ID_latency_10_ms);
+}
+
+
+int doWrite_latency_11_ms(u_int16_t value)
+{
+return doWrite(ID_latency_11_ms,  &value);
+}
+
+
+int addWrite_latency_11_ms(u_int16_t value)
+{
+return addWrite(ID_latency_11_ms, &value);
+}
+
+
+int getStatus_latency_11_ms()
+{
+return getStatus(ID_latency_11_ms);
+}
+
+
+int doWrite_latency_12_ms(u_int16_t value)
+{
+return doWrite(ID_latency_12_ms,  &value);
+}
+
+
+int addWrite_latency_12_ms(u_int16_t value)
+{
+return addWrite(ID_latency_12_ms, &value);
+}
+
+
+int getStatus_latency_12_ms()
+{
+return getStatus(ID_latency_12_ms);
+}
+
+
+int doWrite_latency_13_ms(u_int16_t value)
+{
+return doWrite(ID_latency_13_ms,  &value);
+}
+
+
+int addWrite_latency_13_ms(u_int16_t value)
+{
+return addWrite(ID_latency_13_ms, &value);
+}
+
+
+int getStatus_latency_13_ms()
+{
+return getStatus(ID_latency_13_ms);
+}
+
+
+int doWrite_latency_14_ms(u_int16_t value)
+{
+return doWrite(ID_latency_14_ms,  &value);
+}
+
+
+int addWrite_latency_14_ms(u_int16_t value)
+{
+return addWrite(ID_latency_14_ms, &value);
+}
+
+
+int getStatus_latency_14_ms()
+{
+return getStatus(ID_latency_14_ms);
+}
+
+
+int doWrite_latency_15_ms(u_int16_t value)
+{
+return doWrite(ID_latency_15_ms,  &value);
+}
+
+
+int addWrite_latency_15_ms(u_int16_t value)
+{
+return addWrite(ID_latency_15_ms, &value);
+}
+
+
+int getStatus_latency_15_ms()
+{
+return getStatus(ID_latency_15_ms);
+}
+
+
+int doWrite_latency_16_ms(u_int16_t value)
+{
+return doWrite(ID_latency_16_ms,  &value);
+}
+
+
+int addWrite_latency_16_ms(u_int16_t value)
+{
+return addWrite(ID_latency_16_ms, &value);
+}
+
+
+int getStatus_latency_16_ms()
+{
+return getStatus(ID_latency_16_ms);
+}
+
+
+int doWrite_latency_17_ms(u_int16_t value)
+{
+return doWrite(ID_latency_17_ms,  &value);
+}
+
+
+int addWrite_latency_17_ms(u_int16_t value)
+{
+return addWrite(ID_latency_17_ms, &value);
+}
+
+
+int getStatus_latency_17_ms()
+{
+return getStatus(ID_latency_17_ms);
+}
+
+
+int doWrite_latency_18_ms(u_int16_t value)
+{
+return doWrite(ID_latency_18_ms,  &value);
+}
+
+
+int addWrite_latency_18_ms(u_int16_t value)
+{
+return addWrite(ID_latency_18_ms, &value);
+}
+
+
+int getStatus_latency_18_ms()
+{
+return getStatus(ID_latency_18_ms);
+}
+
+
+int doWrite_latency_19_ms(u_int16_t value)
+{
+return doWrite(ID_latency_19_ms,  &value);
+}
+
+
+int addWrite_latency_19_ms(u_int16_t value)
+{
+return addWrite(ID_latency_19_ms, &value);
+}
+
+
+int getStatus_latency_19_ms()
+{
+return getStatus(ID_latency_19_ms);
+}
+
+
+int doWrite_latency_20_ms(u_int16_t value)
+{
+return doWrite(ID_latency_20_ms,  &value);
+}
+
+
+int addWrite_latency_20_ms(u_int16_t value)
+{
+return addWrite(ID_latency_20_ms, &value);
+}
+
+
+int getStatus_latency_20_ms()
+{
+return getStatus(ID_latency_20_ms);
+}
+
+
+int doWrite_latency_21_ms(u_int16_t value)
+{
+return doWrite(ID_latency_21_ms,  &value);
+}
+
+
+int addWrite_latency_21_ms(u_int16_t value)
+{
+return addWrite(ID_latency_21_ms, &value);
+}
+
+
+int getStatus_latency_21_ms()
+{
+return getStatus(ID_latency_21_ms);
+}
+
+
+int doWrite_latency_22_ms(u_int16_t value)
+{
+return doWrite(ID_latency_22_ms,  &value);
+}
+
+
+int addWrite_latency_22_ms(u_int16_t value)
+{
+return addWrite(ID_latency_22_ms, &value);
+}
+
+
+int getStatus_latency_22_ms()
+{
+return getStatus(ID_latency_22_ms);
+}
+
+
+int doWrite_latency_23_ms(u_int16_t value)
+{
+return doWrite(ID_latency_23_ms,  &value);
+}
+
+
+int addWrite_latency_23_ms(u_int16_t value)
+{
+return addWrite(ID_latency_23_ms, &value);
+}
+
+
+int getStatus_latency_23_ms()
+{
+return getStatus(ID_latency_23_ms);
+}
+
+
+int doWrite_latency_24_ms(u_int16_t value)
+{
+return doWrite(ID_latency_24_ms,  &value);
+}
+
+
+int addWrite_latency_24_ms(u_int16_t value)
+{
+return addWrite(ID_latency_24_ms, &value);
+}
+
+
+int getStatus_latency_24_ms()
+{
+return getStatus(ID_latency_24_ms);
+}
+
+
+int doWrite_min_latency_01_m(u_int16_t value)
+{
+return doWrite(ID_min_latency_01_m,  &value);
+}
+
+
+int addWrite_min_latency_01_m(u_int16_t value)
+{
+return addWrite(ID_min_latency_01_m, &value);
+}
+
+
+int getStatus_min_latency_01_m()
+{
+return getStatus(ID_min_latency_01_m);
+}
+
+
+int doWrite_min_latency_02_m(u_int16_t value)
+{
+return doWrite(ID_min_latency_02_m,  &value);
+}
+
+
+int addWrite_min_latency_02_m(u_int16_t value)
+{
+return addWrite(ID_min_latency_02_m, &value);
+}
+
+
+int getStatus_min_latency_02_m()
+{
+return getStatus(ID_min_latency_02_m);
+}
+
+
+int doWrite_min_latency_03_m(u_int16_t value)
+{
+return doWrite(ID_min_latency_03_m,  &value);
+}
+
+
+int addWrite_min_latency_03_m(u_int16_t value)
+{
+return addWrite(ID_min_latency_03_m, &value);
+}
+
+
+int getStatus_min_latency_03_m()
+{
+return getStatus(ID_min_latency_03_m);
+}
+
+
+int doWrite_min_latency_04_m(u_int16_t value)
+{
+return doWrite(ID_min_latency_04_m,  &value);
+}
+
+
+int addWrite_min_latency_04_m(u_int16_t value)
+{
+return addWrite(ID_min_latency_04_m, &value);
+}
+
+
+int getStatus_min_latency_04_m()
+{
+return getStatus(ID_min_latency_04_m);
+}
+
+
+int doWrite_min_latency_05_m(u_int16_t value)
+{
+return doWrite(ID_min_latency_05_m,  &value);
+}
+
+
+int addWrite_min_latency_05_m(u_int16_t value)
+{
+return addWrite(ID_min_latency_05_m, &value);
+}
+
+
+int getStatus_min_latency_05_m()
+{
+return getStatus(ID_min_latency_05_m);
+}
+
+
+int doWrite_min_latency_06_m(u_int16_t value)
+{
+return doWrite(ID_min_latency_06_m,  &value);
+}
+
+
+int addWrite_min_latency_06_m(u_int16_t value)
+{
+return addWrite(ID_min_latency_06_m, &value);
+}
+
+
+int getStatus_min_latency_06_m()
+{
+return getStatus(ID_min_latency_06_m);
+}
+
+
+int doWrite_min_latency_07_m(u_int16_t value)
+{
+return doWrite(ID_min_latency_07_m,  &value);
+}
+
+
+int addWrite_min_latency_07_m(u_int16_t value)
+{
+return addWrite(ID_min_latency_07_m, &value);
+}
+
+
+int getStatus_min_latency_07_m()
+{
+return getStatus(ID_min_latency_07_m);
+}
+
+
+int doWrite_min_latency_08_m(u_int16_t value)
+{
+return doWrite(ID_min_latency_08_m,  &value);
+}
+
+
+int addWrite_min_latency_08_m(u_int16_t value)
+{
+return addWrite(ID_min_latency_08_m, &value);
+}
+
+
+int getStatus_min_latency_08_m()
+{
+return getStatus(ID_min_latency_08_m);
+}
+
+
+int doWrite_min_latency_09_m(u_int16_t value)
+{
+return doWrite(ID_min_latency_09_m,  &value);
+}
+
+
+int addWrite_min_latency_09_m(u_int16_t value)
+{
+return addWrite(ID_min_latency_09_m, &value);
+}
+
+
+int getStatus_min_latency_09_m()
+{
+return getStatus(ID_min_latency_09_m);
+}
+
+
+int doWrite_min_latency_10_m(u_int16_t value)
+{
+return doWrite(ID_min_latency_10_m,  &value);
+}
+
+
+int addWrite_min_latency_10_m(u_int16_t value)
+{
+return addWrite(ID_min_latency_10_m, &value);
+}
+
+
+int getStatus_min_latency_10_m()
+{
+return getStatus(ID_min_latency_10_m);
+}
+
+
+int doWrite_min_latency_11_m(u_int16_t value)
+{
+return doWrite(ID_min_latency_11_m,  &value);
+}
+
+
+int addWrite_min_latency_11_m(u_int16_t value)
+{
+return addWrite(ID_min_latency_11_m, &value);
+}
+
+
+int getStatus_min_latency_11_m()
+{
+return getStatus(ID_min_latency_11_m);
+}
+
+
+int doWrite_min_latency_12_m(u_int16_t value)
+{
+return doWrite(ID_min_latency_12_m,  &value);
+}
+
+
+int addWrite_min_latency_12_m(u_int16_t value)
+{
+return addWrite(ID_min_latency_12_m, &value);
+}
+
+
+int getStatus_min_latency_12_m()
+{
+return getStatus(ID_min_latency_12_m);
+}
+
+
+int doWrite_min_latency_13_m(u_int16_t value)
+{
+return doWrite(ID_min_latency_13_m,  &value);
+}
+
+
+int addWrite_min_latency_13_m(u_int16_t value)
+{
+return addWrite(ID_min_latency_13_m, &value);
+}
+
+
+int getStatus_min_latency_13_m()
+{
+return getStatus(ID_min_latency_13_m);
+}
+
+
+int doWrite_min_latency_14_m(u_int16_t value)
+{
+return doWrite(ID_min_latency_14_m,  &value);
+}
+
+
+int addWrite_min_latency_14_m(u_int16_t value)
+{
+return addWrite(ID_min_latency_14_m, &value);
+}
+
+
+int getStatus_min_latency_14_m()
+{
+return getStatus(ID_min_latency_14_m);
+}
+
+
+int doWrite_min_latency_15_m(u_int16_t value)
+{
+return doWrite(ID_min_latency_15_m,  &value);
+}
+
+
+int addWrite_min_latency_15_m(u_int16_t value)
+{
+return addWrite(ID_min_latency_15_m, &value);
+}
+
+
+int getStatus_min_latency_15_m()
+{
+return getStatus(ID_min_latency_15_m);
+}
+
+
+int doWrite_min_latency_16_m(u_int16_t value)
+{
+return doWrite(ID_min_latency_16_m,  &value);
+}
+
+
+int addWrite_min_latency_16_m(u_int16_t value)
+{
+return addWrite(ID_min_latency_16_m, &value);
+}
+
+
+int getStatus_min_latency_16_m()
+{
+return getStatus(ID_min_latency_16_m);
+}
+
+
+int doWrite_min_latency_17_m(u_int16_t value)
+{
+return doWrite(ID_min_latency_17_m,  &value);
+}
+
+
+int addWrite_min_latency_17_m(u_int16_t value)
+{
+return addWrite(ID_min_latency_17_m, &value);
+}
+
+
+int getStatus_min_latency_17_m()
+{
+return getStatus(ID_min_latency_17_m);
+}
+
+
+int doWrite_min_latency_18_m(u_int16_t value)
+{
+return doWrite(ID_min_latency_18_m,  &value);
+}
+
+
+int addWrite_min_latency_18_m(u_int16_t value)
+{
+return addWrite(ID_min_latency_18_m, &value);
+}
+
+
+int getStatus_min_latency_18_m()
+{
+return getStatus(ID_min_latency_18_m);
+}
+
+
+int doWrite_min_latency_19_m(u_int16_t value)
+{
+return doWrite(ID_min_latency_19_m,  &value);
+}
+
+
+int addWrite_min_latency_19_m(u_int16_t value)
+{
+return addWrite(ID_min_latency_19_m, &value);
+}
+
+
+int getStatus_min_latency_19_m()
+{
+return getStatus(ID_min_latency_19_m);
+}
+
+
+int doWrite_min_latency_20_m(u_int16_t value)
+{
+return doWrite(ID_min_latency_20_m,  &value);
+}
+
+
+int addWrite_min_latency_20_m(u_int16_t value)
+{
+return addWrite(ID_min_latency_20_m, &value);
+}
+
+
+int getStatus_min_latency_20_m()
+{
+return getStatus(ID_min_latency_20_m);
+}
+
+
+int doWrite_min_latency_21_m(u_int16_t value)
+{
+return doWrite(ID_min_latency_21_m,  &value);
+}
+
+
+int addWrite_min_latency_21_m(u_int16_t value)
+{
+return addWrite(ID_min_latency_21_m, &value);
+}
+
+
+int getStatus_min_latency_21_m()
+{
+return getStatus(ID_min_latency_21_m);
+}
+
+
+int doWrite_min_latency_22_m(u_int16_t value)
+{
+return doWrite(ID_min_latency_22_m,  &value);
+}
+
+
+int addWrite_min_latency_22_m(u_int16_t value)
+{
+return addWrite(ID_min_latency_22_m, &value);
+}
+
+
+int getStatus_min_latency_22_m()
+{
+return getStatus(ID_min_latency_22_m);
+}
+
+
+int doWrite_min_latency_23_m(u_int16_t value)
+{
+return doWrite(ID_min_latency_23_m,  &value);
+}
+
+
+int addWrite_min_latency_23_m(u_int16_t value)
+{
+return addWrite(ID_min_latency_23_m, &value);
+}
+
+
+int getStatus_min_latency_23_m()
+{
+return getStatus(ID_min_latency_23_m);
+}
+
+
+int doWrite_min_latency_24_m(u_int16_t value)
+{
+return doWrite(ID_min_latency_24_m,  &value);
+}
+
+
+int addWrite_min_latency_24_m(u_int16_t value)
+{
+return addWrite(ID_min_latency_24_m, &value);
+}
+
+
+int getStatus_min_latency_24_m()
+{
+return getStatus(ID_min_latency_24_m);
+}
+
+
+int doWrite_max_latency_01_m(u_int16_t value)
+{
+return doWrite(ID_max_latency_01_m,  &value);
+}
+
+
+int addWrite_max_latency_01_m(u_int16_t value)
+{
+return addWrite(ID_max_latency_01_m, &value);
+}
+
+
+int getStatus_max_latency_01_m()
+{
+return getStatus(ID_max_latency_01_m);
+}
+
+
+int doWrite_max_latency_02_m(u_int16_t value)
+{
+return doWrite(ID_max_latency_02_m,  &value);
+}
+
+
+int addWrite_max_latency_02_m(u_int16_t value)
+{
+return addWrite(ID_max_latency_02_m, &value);
+}
+
+
+int getStatus_max_latency_02_m()
+{
+return getStatus(ID_max_latency_02_m);
+}
+
+
+int doWrite_max_latency_03_m(u_int16_t value)
+{
+return doWrite(ID_max_latency_03_m,  &value);
+}
+
+
+int addWrite_max_latency_03_m(u_int16_t value)
+{
+return addWrite(ID_max_latency_03_m, &value);
+}
+
+
+int getStatus_max_latency_03_m()
+{
+return getStatus(ID_max_latency_03_m);
+}
+
+
+int doWrite_max_latency_04_m(u_int16_t value)
+{
+return doWrite(ID_max_latency_04_m,  &value);
+}
+
+
+int addWrite_max_latency_04_m(u_int16_t value)
+{
+return addWrite(ID_max_latency_04_m, &value);
+}
+
+
+int getStatus_max_latency_04_m()
+{
+return getStatus(ID_max_latency_04_m);
+}
+
+
+int doWrite_max_latency_05_m(u_int16_t value)
+{
+return doWrite(ID_max_latency_05_m,  &value);
+}
+
+
+int addWrite_max_latency_05_m(u_int16_t value)
+{
+return addWrite(ID_max_latency_05_m, &value);
+}
+
+
+int getStatus_max_latency_05_m()
+{
+return getStatus(ID_max_latency_05_m);
+}
+
+
+int doWrite_max_latency_06_m(u_int16_t value)
+{
+return doWrite(ID_max_latency_06_m,  &value);
+}
+
+
+int addWrite_max_latency_06_m(u_int16_t value)
+{
+return addWrite(ID_max_latency_06_m, &value);
+}
+
+
+int getStatus_max_latency_06_m()
+{
+return getStatus(ID_max_latency_06_m);
+}
+
+
+int doWrite_max_latency_07_m(u_int16_t value)
+{
+return doWrite(ID_max_latency_07_m,  &value);
+}
+
+
+int addWrite_max_latency_07_m(u_int16_t value)
+{
+return addWrite(ID_max_latency_07_m, &value);
+}
+
+
+int getStatus_max_latency_07_m()
+{
+return getStatus(ID_max_latency_07_m);
+}
+
+
+int doWrite_max_latency_08_m(u_int16_t value)
+{
+return doWrite(ID_max_latency_08_m,  &value);
+}
+
+
+int addWrite_max_latency_08_m(u_int16_t value)
+{
+return addWrite(ID_max_latency_08_m, &value);
+}
+
+
+int getStatus_max_latency_08_m()
+{
+return getStatus(ID_max_latency_08_m);
+}
+
+
+int doWrite_max_latency_09_m(u_int16_t value)
+{
+return doWrite(ID_max_latency_09_m,  &value);
+}
+
+
+int addWrite_max_latency_09_m(u_int16_t value)
+{
+return addWrite(ID_max_latency_09_m, &value);
+}
+
+
+int getStatus_max_latency_09_m()
+{
+return getStatus(ID_max_latency_09_m);
+}
+
+
+int doWrite_max_latency_10_m(u_int16_t value)
+{
+return doWrite(ID_max_latency_10_m,  &value);
+}
+
+
+int addWrite_max_latency_10_m(u_int16_t value)
+{
+return addWrite(ID_max_latency_10_m, &value);
+}
+
+
+int getStatus_max_latency_10_m()
+{
+return getStatus(ID_max_latency_10_m);
+}
+
+
+int doWrite_max_latency_11_m(u_int16_t value)
+{
+return doWrite(ID_max_latency_11_m,  &value);
+}
+
+
+int addWrite_max_latency_11_m(u_int16_t value)
+{
+return addWrite(ID_max_latency_11_m, &value);
+}
+
+
+int getStatus_max_latency_11_m()
+{
+return getStatus(ID_max_latency_11_m);
+}
+
+
+int doWrite_max_latency_12_m(u_int16_t value)
+{
+return doWrite(ID_max_latency_12_m,  &value);
+}
+
+
+int addWrite_max_latency_12_m(u_int16_t value)
+{
+return addWrite(ID_max_latency_12_m, &value);
+}
+
+
+int getStatus_max_latency_12_m()
+{
+return getStatus(ID_max_latency_12_m);
+}
+
+
+int doWrite_max_latency_13_m(u_int16_t value)
+{
+return doWrite(ID_max_latency_13_m,  &value);
+}
+
+
+int addWrite_max_latency_13_m(u_int16_t value)
+{
+return addWrite(ID_max_latency_13_m, &value);
+}
+
+
+int getStatus_max_latency_13_m()
+{
+return getStatus(ID_max_latency_13_m);
+}
+
+
+int doWrite_max_latency_14_m(u_int16_t value)
+{
+return doWrite(ID_max_latency_14_m,  &value);
+}
+
+
+int addWrite_max_latency_14_m(u_int16_t value)
+{
+return addWrite(ID_max_latency_14_m, &value);
+}
+
+
+int getStatus_max_latency_14_m()
+{
+return getStatus(ID_max_latency_14_m);
+}
+
+
+int doWrite_max_latency_15_m(u_int16_t value)
+{
+return doWrite(ID_max_latency_15_m,  &value);
+}
+
+
+int addWrite_max_latency_15_m(u_int16_t value)
+{
+return addWrite(ID_max_latency_15_m, &value);
+}
+
+
+int getStatus_max_latency_15_m()
+{
+return getStatus(ID_max_latency_15_m);
+}
+
+
+int doWrite_max_latency_16_m(u_int16_t value)
+{
+return doWrite(ID_max_latency_16_m,  &value);
+}
+
+
+int addWrite_max_latency_16_m(u_int16_t value)
+{
+return addWrite(ID_max_latency_16_m, &value);
+}
+
+
+int getStatus_max_latency_16_m()
+{
+return getStatus(ID_max_latency_16_m);
+}
+
+
+int doWrite_max_latency_17_m(u_int16_t value)
+{
+return doWrite(ID_max_latency_17_m,  &value);
+}
+
+
+int addWrite_max_latency_17_m(u_int16_t value)
+{
+return addWrite(ID_max_latency_17_m, &value);
+}
+
+
+int getStatus_max_latency_17_m()
+{
+return getStatus(ID_max_latency_17_m);
+}
+
+
+int doWrite_max_latency_18_m(u_int16_t value)
+{
+return doWrite(ID_max_latency_18_m,  &value);
+}
+
+
+int addWrite_max_latency_18_m(u_int16_t value)
+{
+return addWrite(ID_max_latency_18_m, &value);
+}
+
+
+int getStatus_max_latency_18_m()
+{
+return getStatus(ID_max_latency_18_m);
+}
+
+
+int doWrite_max_latency_19_m(u_int16_t value)
+{
+return doWrite(ID_max_latency_19_m,  &value);
+}
+
+
+int addWrite_max_latency_19_m(u_int16_t value)
+{
+return addWrite(ID_max_latency_19_m, &value);
+}
+
+
+int getStatus_max_latency_19_m()
+{
+return getStatus(ID_max_latency_19_m);
+}
+
+
+int doWrite_max_latency_20_m(u_int16_t value)
+{
+return doWrite(ID_max_latency_20_m,  &value);
+}
+
+
+int addWrite_max_latency_20_m(u_int16_t value)
+{
+return addWrite(ID_max_latency_20_m, &value);
+}
+
+
+int getStatus_max_latency_20_m()
+{
+return getStatus(ID_max_latency_20_m);
+}
+
+
+int doWrite_max_latency_21_m(u_int16_t value)
+{
+return doWrite(ID_max_latency_21_m,  &value);
+}
+
+
+int addWrite_max_latency_21_m(u_int16_t value)
+{
+return addWrite(ID_max_latency_21_m, &value);
+}
+
+
+int getStatus_max_latency_21_m()
+{
+return getStatus(ID_max_latency_21_m);
+}
+
+
+int doWrite_max_latency_22_m(u_int16_t value)
+{
+return doWrite(ID_max_latency_22_m,  &value);
+}
+
+
+int addWrite_max_latency_22_m(u_int16_t value)
+{
+return addWrite(ID_max_latency_22_m, &value);
+}
+
+
+int getStatus_max_latency_22_m()
+{
+return getStatus(ID_max_latency_22_m);
+}
+
+
+int doWrite_max_latency_23_m(u_int16_t value)
+{
+return doWrite(ID_max_latency_23_m,  &value);
+}
+
+
+int addWrite_max_latency_23_m(u_int16_t value)
+{
+return addWrite(ID_max_latency_23_m, &value);
+}
+
+
+int getStatus_max_latency_23_m()
+{
+return getStatus(ID_max_latency_23_m);
+}
+
+
+int doWrite_max_latency_24_m(u_int16_t value)
+{
+return doWrite(ID_max_latency_24_m,  &value);
+}
+
+
+int addWrite_max_latency_24_m(u_int16_t value)
+{
+return addWrite(ID_max_latency_24_m, &value);
+}
+
+
+int getStatus_max_latency_24_m()
+{
+return getStatus(ID_max_latency_24_m);
 }
 
 
@@ -15409,6 +17252,7 @@ retval += readFromDb(ID_DigOut_1_node01, &DigOut_1_node01);
 retval += readFromDb(ID_DigOut_4_node01, &DigOut_4_node01);
 retval += readFromDb(ID_DigOut_5_node01, &DigOut_5_node01);
 retval += readFromDb(ID_DigOut_8_node01, &DigOut_8_node01);
+retval += readFromDb(ID_errors_can, &errors_can);
 retval += readFromDb(ID_Addr_node02, &Addr_node02);
 retval += readFromDb(ID_Life_node02, &Life_node02);
 retval += readFromDb(ID_AnInCnf_1_node02, &AnInCnf_1_node02);
@@ -15431,6 +17275,7 @@ retval += readFromDb(ID_DigOut_1_node02, &DigOut_1_node02);
 retval += readFromDb(ID_DigOut_4_node02, &DigOut_4_node02);
 retval += readFromDb(ID_DigOut_5_node02, &DigOut_5_node02);
 retval += readFromDb(ID_DigOut_8_node02, &DigOut_8_node02);
+retval += readFromDb(ID_errors_01, &errors_01);
 retval += readFromDb(ID_Addr_node03, &Addr_node03);
 retval += readFromDb(ID_Life_node03, &Life_node03);
 retval += readFromDb(ID_AnInCnf_1_node03, &AnInCnf_1_node03);
@@ -15453,6 +17298,7 @@ retval += readFromDb(ID_DigOut_1_node03, &DigOut_1_node03);
 retval += readFromDb(ID_DigOut_4_node03, &DigOut_4_node03);
 retval += readFromDb(ID_DigOut_5_node03, &DigOut_5_node03);
 retval += readFromDb(ID_DigOut_8_node03, &DigOut_8_node03);
+retval += readFromDb(ID_errors_02, &errors_02);
 retval += readFromDb(ID_Addr_node04, &Addr_node04);
 retval += readFromDb(ID_Life_node04, &Life_node04);
 retval += readFromDb(ID_AnInCnf_1_node04, &AnInCnf_1_node04);
@@ -15475,6 +17321,7 @@ retval += readFromDb(ID_DigOut_1_node04, &DigOut_1_node04);
 retval += readFromDb(ID_DigOut_4_node04, &DigOut_4_node04);
 retval += readFromDb(ID_DigOut_5_node04, &DigOut_5_node04);
 retval += readFromDb(ID_DigOut_8_node04, &DigOut_8_node04);
+retval += readFromDb(ID_errors_03, &errors_03);
 retval += readFromDb(ID_Addr_node05, &Addr_node05);
 retval += readFromDb(ID_Life_node05, &Life_node05);
 retval += readFromDb(ID_AnInCnf_1_node05, &AnInCnf_1_node05);
@@ -15497,6 +17344,7 @@ retval += readFromDb(ID_DigOut_1_node05, &DigOut_1_node05);
 retval += readFromDb(ID_DigOut_4_node05, &DigOut_4_node05);
 retval += readFromDb(ID_DigOut_5_node05, &DigOut_5_node05);
 retval += readFromDb(ID_DigOut_8_node05, &DigOut_8_node05);
+retval += readFromDb(ID_errors_04, &errors_04);
 retval += readFromDb(ID_Addr_node06, &Addr_node06);
 retval += readFromDb(ID_Life_node06, &Life_node06);
 retval += readFromDb(ID_AnInCnf_1_node06, &AnInCnf_1_node06);
@@ -15519,6 +17367,7 @@ retval += readFromDb(ID_DigOut_1_node06, &DigOut_1_node06);
 retval += readFromDb(ID_DigOut_4_node06, &DigOut_4_node06);
 retval += readFromDb(ID_DigOut_5_node06, &DigOut_5_node06);
 retval += readFromDb(ID_DigOut_8_node06, &DigOut_8_node06);
+retval += readFromDb(ID_errors_05, &errors_05);
 retval += readFromDb(ID_Addr_node07, &Addr_node07);
 retval += readFromDb(ID_Life_node07, &Life_node07);
 retval += readFromDb(ID_AnInCnf_1_node07, &AnInCnf_1_node07);
@@ -15541,6 +17390,7 @@ retval += readFromDb(ID_DigOut_1_node07, &DigOut_1_node07);
 retval += readFromDb(ID_DigOut_4_node07, &DigOut_4_node07);
 retval += readFromDb(ID_DigOut_5_node07, &DigOut_5_node07);
 retval += readFromDb(ID_DigOut_8_node07, &DigOut_8_node07);
+retval += readFromDb(ID_errors_06, &errors_06);
 retval += readFromDb(ID_Addr_node08, &Addr_node08);
 retval += readFromDb(ID_Life_node08, &Life_node08);
 retval += readFromDb(ID_AnInCnf_1_node08, &AnInCnf_1_node08);
@@ -15563,6 +17413,7 @@ retval += readFromDb(ID_DigOut_1_node08, &DigOut_1_node08);
 retval += readFromDb(ID_DigOut_4_node08, &DigOut_4_node08);
 retval += readFromDb(ID_DigOut_5_node08, &DigOut_5_node08);
 retval += readFromDb(ID_DigOut_8_node08, &DigOut_8_node08);
+retval += readFromDb(ID_errors_07, &errors_07);
 retval += readFromDb(ID_Addr_node09, &Addr_node09);
 retval += readFromDb(ID_Life_node09, &Life_node09);
 retval += readFromDb(ID_AnInCnf_1_node09, &AnInCnf_1_node09);
@@ -15585,6 +17436,7 @@ retval += readFromDb(ID_DigOut_1_node09, &DigOut_1_node09);
 retval += readFromDb(ID_DigOut_4_node09, &DigOut_4_node09);
 retval += readFromDb(ID_DigOut_5_node09, &DigOut_5_node09);
 retval += readFromDb(ID_DigOut_8_node09, &DigOut_8_node09);
+retval += readFromDb(ID_errors_08, &errors_08);
 retval += readFromDb(ID_Addr_node10, &Addr_node10);
 retval += readFromDb(ID_Life_node10, &Life_node10);
 retval += readFromDb(ID_AnInCnf_1_node10, &AnInCnf_1_node10);
@@ -15607,6 +17459,7 @@ retval += readFromDb(ID_DigOut_1_node10, &DigOut_1_node10);
 retval += readFromDb(ID_DigOut_4_node10, &DigOut_4_node10);
 retval += readFromDb(ID_DigOut_5_node10, &DigOut_5_node10);
 retval += readFromDb(ID_DigOut_8_node10, &DigOut_8_node10);
+retval += readFromDb(ID_errors_09, &errors_09);
 retval += readFromDb(ID_Addr_node11, &Addr_node11);
 retval += readFromDb(ID_Life_node11, &Life_node11);
 retval += readFromDb(ID_AnInCnf_1_node11, &AnInCnf_1_node11);
@@ -15629,6 +17482,7 @@ retval += readFromDb(ID_DigOut_1_node11, &DigOut_1_node11);
 retval += readFromDb(ID_DigOut_4_node11, &DigOut_4_node11);
 retval += readFromDb(ID_DigOut_5_node11, &DigOut_5_node11);
 retval += readFromDb(ID_DigOut_8_node11, &DigOut_8_node11);
+retval += readFromDb(ID_errors_10, &errors_10);
 retval += readFromDb(ID_Addr_node12, &Addr_node12);
 retval += readFromDb(ID_Life_node12, &Life_node12);
 retval += readFromDb(ID_AnInCnf_1_node12, &AnInCnf_1_node12);
@@ -15651,6 +17505,7 @@ retval += readFromDb(ID_DigOut_1_node12, &DigOut_1_node12);
 retval += readFromDb(ID_DigOut_4_node12, &DigOut_4_node12);
 retval += readFromDb(ID_DigOut_5_node12, &DigOut_5_node12);
 retval += readFromDb(ID_DigOut_8_node12, &DigOut_8_node12);
+retval += readFromDb(ID_errors_11, &errors_11);
 retval += readFromDb(ID_Addr_node13, &Addr_node13);
 retval += readFromDb(ID_Life_node13, &Life_node13);
 retval += readFromDb(ID_AnInCnf_1_node13, &AnInCnf_1_node13);
@@ -15673,6 +17528,7 @@ retval += readFromDb(ID_DigOut_1_node13, &DigOut_1_node13);
 retval += readFromDb(ID_DigOut_4_node13, &DigOut_4_node13);
 retval += readFromDb(ID_DigOut_5_node13, &DigOut_5_node13);
 retval += readFromDb(ID_DigOut_8_node13, &DigOut_8_node13);
+retval += readFromDb(ID_errors_12, &errors_12);
 retval += readFromDb(ID_Addr_node14, &Addr_node14);
 retval += readFromDb(ID_Life_node14, &Life_node14);
 retval += readFromDb(ID_AnInCnf_1_node14, &AnInCnf_1_node14);
@@ -15695,6 +17551,7 @@ retval += readFromDb(ID_DigOut_1_node14, &DigOut_1_node14);
 retval += readFromDb(ID_DigOut_4_node14, &DigOut_4_node14);
 retval += readFromDb(ID_DigOut_5_node14, &DigOut_5_node14);
 retval += readFromDb(ID_DigOut_8_node14, &DigOut_8_node14);
+retval += readFromDb(ID_errors_13, &errors_13);
 retval += readFromDb(ID_Addr_node15, &Addr_node15);
 retval += readFromDb(ID_Life_node15, &Life_node15);
 retval += readFromDb(ID_AnInCnf_1_node15, &AnInCnf_1_node15);
@@ -15717,6 +17574,7 @@ retval += readFromDb(ID_DigOut_1_node15, &DigOut_1_node15);
 retval += readFromDb(ID_DigOut_4_node15, &DigOut_4_node15);
 retval += readFromDb(ID_DigOut_5_node15, &DigOut_5_node15);
 retval += readFromDb(ID_DigOut_8_node15, &DigOut_8_node15);
+retval += readFromDb(ID_errors_14, &errors_14);
 retval += readFromDb(ID_Addr_node16, &Addr_node16);
 retval += readFromDb(ID_Life_node16, &Life_node16);
 retval += readFromDb(ID_AnInCnf_1_node16, &AnInCnf_1_node16);
@@ -15739,6 +17597,7 @@ retval += readFromDb(ID_DigOut_1_node16, &DigOut_1_node16);
 retval += readFromDb(ID_DigOut_4_node16, &DigOut_4_node16);
 retval += readFromDb(ID_DigOut_5_node16, &DigOut_5_node16);
 retval += readFromDb(ID_DigOut_8_node16, &DigOut_8_node16);
+retval += readFromDb(ID_errors_15, &errors_15);
 retval += readFromDb(ID_Addr_node17, &Addr_node17);
 retval += readFromDb(ID_Life_node17, &Life_node17);
 retval += readFromDb(ID_AnInCnf_1_node17, &AnInCnf_1_node17);
@@ -15761,6 +17620,7 @@ retval += readFromDb(ID_DigOut_1_node17, &DigOut_1_node17);
 retval += readFromDb(ID_DigOut_4_node17, &DigOut_4_node17);
 retval += readFromDb(ID_DigOut_5_node17, &DigOut_5_node17);
 retval += readFromDb(ID_DigOut_8_node17, &DigOut_8_node17);
+retval += readFromDb(ID_errors_16, &errors_16);
 retval += readFromDb(ID_Addr_node18, &Addr_node18);
 retval += readFromDb(ID_Life_node18, &Life_node18);
 retval += readFromDb(ID_AnInCnf_1_node18, &AnInCnf_1_node18);
@@ -15783,6 +17643,7 @@ retval += readFromDb(ID_DigOut_1_node18, &DigOut_1_node18);
 retval += readFromDb(ID_DigOut_4_node18, &DigOut_4_node18);
 retval += readFromDb(ID_DigOut_5_node18, &DigOut_5_node18);
 retval += readFromDb(ID_DigOut_8_node18, &DigOut_8_node18);
+retval += readFromDb(ID_errors_17, &errors_17);
 retval += readFromDb(ID_Addr_node19, &Addr_node19);
 retval += readFromDb(ID_Life_node19, &Life_node19);
 retval += readFromDb(ID_AnInCnf_1_node19, &AnInCnf_1_node19);
@@ -15805,6 +17666,7 @@ retval += readFromDb(ID_DigOut_1_node19, &DigOut_1_node19);
 retval += readFromDb(ID_DigOut_4_node19, &DigOut_4_node19);
 retval += readFromDb(ID_DigOut_5_node19, &DigOut_5_node19);
 retval += readFromDb(ID_DigOut_8_node19, &DigOut_8_node19);
+retval += readFromDb(ID_errors_18, &errors_18);
 retval += readFromDb(ID_Addr_node20, &Addr_node20);
 retval += readFromDb(ID_Life_node20, &Life_node20);
 retval += readFromDb(ID_AnInCnf_1_node20, &AnInCnf_1_node20);
@@ -15827,6 +17689,7 @@ retval += readFromDb(ID_DigOut_1_node20, &DigOut_1_node20);
 retval += readFromDb(ID_DigOut_4_node20, &DigOut_4_node20);
 retval += readFromDb(ID_DigOut_5_node20, &DigOut_5_node20);
 retval += readFromDb(ID_DigOut_8_node20, &DigOut_8_node20);
+retval += readFromDb(ID_errors_19, &errors_19);
 retval += readFromDb(ID_Addr_node21, &Addr_node21);
 retval += readFromDb(ID_Life_node21, &Life_node21);
 retval += readFromDb(ID_AnInCnf_1_node21, &AnInCnf_1_node21);
@@ -15849,6 +17712,7 @@ retval += readFromDb(ID_DigOut_1_node21, &DigOut_1_node21);
 retval += readFromDb(ID_DigOut_4_node21, &DigOut_4_node21);
 retval += readFromDb(ID_DigOut_5_node21, &DigOut_5_node21);
 retval += readFromDb(ID_DigOut_8_node21, &DigOut_8_node21);
+retval += readFromDb(ID_errors_20, &errors_20);
 retval += readFromDb(ID_Addr_node22, &Addr_node22);
 retval += readFromDb(ID_Life_node22, &Life_node22);
 retval += readFromDb(ID_AnInCnf_1_node22, &AnInCnf_1_node22);
@@ -15871,6 +17735,8 @@ retval += readFromDb(ID_DigOut_1_node22, &DigOut_1_node22);
 retval += readFromDb(ID_DigOut_4_node22, &DigOut_4_node22);
 retval += readFromDb(ID_DigOut_5_node22, &DigOut_5_node22);
 retval += readFromDb(ID_DigOut_8_node22, &DigOut_8_node22);
+retval += readFromDb(ID_errors_21, &errors_21);
+retval += readFromDb(ID_errors_22, &errors_22);
 retval += readFromDb(ID_Addr_node23, &Addr_node23);
 retval += readFromDb(ID_Life_node23, &Life_node23);
 retval += readFromDb(ID_AnInCnf_1_node23, &AnInCnf_1_node23);
@@ -15893,6 +17759,7 @@ retval += readFromDb(ID_DigOut_1_node23, &DigOut_1_node23);
 retval += readFromDb(ID_DigOut_4_node23, &DigOut_4_node23);
 retval += readFromDb(ID_DigOut_5_node23, &DigOut_5_node23);
 retval += readFromDb(ID_DigOut_8_node23, &DigOut_8_node23);
+retval += readFromDb(ID_errors_23, &errors_23);
 retval += readFromDb(ID_Addr_node24, &Addr_node24);
 retval += readFromDb(ID_Life_node24, &Life_node24);
 retval += readFromDb(ID_AnInCnf_1_node24, &AnInCnf_1_node24);
@@ -15915,6 +17782,79 @@ retval += readFromDb(ID_DigOut_1_node24, &DigOut_1_node24);
 retval += readFromDb(ID_DigOut_4_node24, &DigOut_4_node24);
 retval += readFromDb(ID_DigOut_5_node24, &DigOut_5_node24);
 retval += readFromDb(ID_DigOut_8_node24, &DigOut_8_node24);
+retval += readFromDb(ID_errors_24, &errors_24);
+retval += readFromDb(ID_latency_01_ms, &latency_01_ms);
+retval += readFromDb(ID_latency_02_ms, &latency_02_ms);
+retval += readFromDb(ID_latency_03_ms, &latency_03_ms);
+retval += readFromDb(ID_latency_04_ms, &latency_04_ms);
+retval += readFromDb(ID_latency_05_ms, &latency_05_ms);
+retval += readFromDb(ID_latency_06_ms, &latency_06_ms);
+retval += readFromDb(ID_latency_07_ms, &latency_07_ms);
+retval += readFromDb(ID_latency_08_ms, &latency_08_ms);
+retval += readFromDb(ID_latency_09_ms, &latency_09_ms);
+retval += readFromDb(ID_latency_10_ms, &latency_10_ms);
+retval += readFromDb(ID_latency_11_ms, &latency_11_ms);
+retval += readFromDb(ID_latency_12_ms, &latency_12_ms);
+retval += readFromDb(ID_latency_13_ms, &latency_13_ms);
+retval += readFromDb(ID_latency_14_ms, &latency_14_ms);
+retval += readFromDb(ID_latency_15_ms, &latency_15_ms);
+retval += readFromDb(ID_latency_16_ms, &latency_16_ms);
+retval += readFromDb(ID_latency_17_ms, &latency_17_ms);
+retval += readFromDb(ID_latency_18_ms, &latency_18_ms);
+retval += readFromDb(ID_latency_19_ms, &latency_19_ms);
+retval += readFromDb(ID_latency_20_ms, &latency_20_ms);
+retval += readFromDb(ID_latency_21_ms, &latency_21_ms);
+retval += readFromDb(ID_latency_22_ms, &latency_22_ms);
+retval += readFromDb(ID_latency_23_ms, &latency_23_ms);
+retval += readFromDb(ID_latency_24_ms, &latency_24_ms);
+retval += readFromDb(ID_min_latency_01_m, &min_latency_01_m);
+retval += readFromDb(ID_min_latency_02_m, &min_latency_02_m);
+retval += readFromDb(ID_min_latency_03_m, &min_latency_03_m);
+retval += readFromDb(ID_min_latency_04_m, &min_latency_04_m);
+retval += readFromDb(ID_min_latency_05_m, &min_latency_05_m);
+retval += readFromDb(ID_min_latency_06_m, &min_latency_06_m);
+retval += readFromDb(ID_min_latency_07_m, &min_latency_07_m);
+retval += readFromDb(ID_min_latency_08_m, &min_latency_08_m);
+retval += readFromDb(ID_min_latency_09_m, &min_latency_09_m);
+retval += readFromDb(ID_min_latency_10_m, &min_latency_10_m);
+retval += readFromDb(ID_min_latency_11_m, &min_latency_11_m);
+retval += readFromDb(ID_min_latency_12_m, &min_latency_12_m);
+retval += readFromDb(ID_min_latency_13_m, &min_latency_13_m);
+retval += readFromDb(ID_min_latency_14_m, &min_latency_14_m);
+retval += readFromDb(ID_min_latency_15_m, &min_latency_15_m);
+retval += readFromDb(ID_min_latency_16_m, &min_latency_16_m);
+retval += readFromDb(ID_min_latency_17_m, &min_latency_17_m);
+retval += readFromDb(ID_min_latency_18_m, &min_latency_18_m);
+retval += readFromDb(ID_min_latency_19_m, &min_latency_19_m);
+retval += readFromDb(ID_min_latency_20_m, &min_latency_20_m);
+retval += readFromDb(ID_min_latency_21_m, &min_latency_21_m);
+retval += readFromDb(ID_min_latency_22_m, &min_latency_22_m);
+retval += readFromDb(ID_min_latency_23_m, &min_latency_23_m);
+retval += readFromDb(ID_min_latency_24_m, &min_latency_24_m);
+retval += readFromDb(ID_max_latency_01_m, &max_latency_01_m);
+retval += readFromDb(ID_max_latency_02_m, &max_latency_02_m);
+retval += readFromDb(ID_max_latency_03_m, &max_latency_03_m);
+retval += readFromDb(ID_max_latency_04_m, &max_latency_04_m);
+retval += readFromDb(ID_max_latency_05_m, &max_latency_05_m);
+retval += readFromDb(ID_max_latency_06_m, &max_latency_06_m);
+retval += readFromDb(ID_max_latency_07_m, &max_latency_07_m);
+retval += readFromDb(ID_max_latency_08_m, &max_latency_08_m);
+retval += readFromDb(ID_max_latency_09_m, &max_latency_09_m);
+retval += readFromDb(ID_max_latency_10_m, &max_latency_10_m);
+retval += readFromDb(ID_max_latency_11_m, &max_latency_11_m);
+retval += readFromDb(ID_max_latency_12_m, &max_latency_12_m);
+retval += readFromDb(ID_max_latency_13_m, &max_latency_13_m);
+retval += readFromDb(ID_max_latency_14_m, &max_latency_14_m);
+retval += readFromDb(ID_max_latency_15_m, &max_latency_15_m);
+retval += readFromDb(ID_max_latency_16_m, &max_latency_16_m);
+retval += readFromDb(ID_max_latency_17_m, &max_latency_17_m);
+retval += readFromDb(ID_max_latency_18_m, &max_latency_18_m);
+retval += readFromDb(ID_max_latency_19_m, &max_latency_19_m);
+retval += readFromDb(ID_max_latency_20_m, &max_latency_20_m);
+retval += readFromDb(ID_max_latency_21_m, &max_latency_21_m);
+retval += readFromDb(ID_max_latency_22_m, &max_latency_22_m);
+retval += readFromDb(ID_max_latency_23_m, &max_latency_23_m);
+retval += readFromDb(ID_max_latency_24_m, &max_latency_24_m);
 retval += readFromDb(ID_RTU0_TYPE_PORT, &RTU0_TYPE_PORT);
 retval += readFromDb(ID_RTU0_BAUDRATE, &RTU0_BAUDRATE);
 retval += readFromDb(ID_RTU0_STATUS, &RTU0_STATUS);

@@ -212,7 +212,7 @@
 3;P;DigOut_4_node01 ;BYTE_BIT ;4   ;RTU       ;               ;3   ;1   ;46  ;194 ;20  ;[RW]
 3;P;DigOut_5_node01 ;BYTE_BIT ;5   ;RTU       ;               ;3   ;1   ;46  ;194 ;20  ;[RW]
 3;P;DigOut_8_node01 ;BYTE_BIT ;8   ;RTU       ;               ;3   ;1   ;46  ;194 ;20  ;[RW]
-;;;;;;;;;;;;
+1;P;errors_can      ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;1   ;1   ;[RW]
 3;P;Addr_node02     ;UINT     ;0   ;RTU       ;               ;3   ;2   ;2   ;216 ;2   ;[RO]
 3;P;Life_node02     ;UINT     ;0   ;RTU       ;               ;3   ;2   ;3   ;216 ;2   ;[RO]
 3;P;AnInCnf_1_node02;UINT     ;0   ;RTU       ;               ;3   ;2   ;40  ;218 ;20  ;[RW]
@@ -235,7 +235,7 @@
 3;P;DigOut_4_node02 ;BYTE_BIT ;4   ;RTU       ;               ;3   ;2   ;46  ;218 ;20  ;[RW]
 3;P;DigOut_5_node02 ;BYTE_BIT ;5   ;RTU       ;               ;3   ;2   ;46  ;218 ;20  ;[RW]
 3;P;DigOut_8_node02 ;BYTE_BIT ;8   ;RTU       ;               ;3   ;2   ;46  ;218 ;20  ;[RW]
-;;;;;;;;;;;;
+1;P;errors_01       ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;2   ;1   ;[RW]
 3;P;Addr_node03     ;UINT     ;0   ;RTU       ;               ;3   ;3   ;2   ;239 ;2   ;[RO]
 3;P;Life_node03     ;UINT     ;0   ;RTU       ;               ;3   ;3   ;3   ;239 ;2   ;[RO]
 3;P;AnInCnf_1_node03;UINT     ;0   ;RTU       ;               ;3   ;3   ;40  ;241 ;20  ;[RW]
@@ -258,7 +258,7 @@
 3;P;DigOut_4_node03 ;BYTE_BIT ;4   ;RTU       ;               ;3   ;3   ;46  ;241 ;20  ;[RW]
 3;P;DigOut_5_node03 ;BYTE_BIT ;5   ;RTU       ;               ;3   ;3   ;46  ;241 ;20  ;[RW]
 3;P;DigOut_8_node03 ;BYTE_BIT ;8   ;RTU       ;               ;3   ;3   ;46  ;241 ;20  ;[RW]
-;;;;;;;;;;;;
+1;P;errors_02       ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;3   ;1   ;[RW]
 3;P;Addr_node04     ;UINT     ;0   ;RTU       ;               ;3   ;4   ;2   ;261 ;2   ;[RO]
 3;P;Life_node04     ;UINT     ;0   ;RTU       ;               ;3   ;4   ;3   ;261 ;2   ;[RO]
 3;P;AnInCnf_1_node04;UINT     ;0   ;RTU       ;               ;3   ;4   ;40  ;264 ;20  ;[RW]
@@ -281,7 +281,7 @@
 3;P;DigOut_4_node04 ;BYTE_BIT ;4   ;RTU       ;               ;3   ;4   ;46  ;264 ;20  ;[RW]
 3;P;DigOut_5_node04 ;BYTE_BIT ;5   ;RTU       ;               ;3   ;4   ;46  ;264 ;20  ;[RW]
 3;P;DigOut_8_node04 ;BYTE_BIT ;8   ;RTU       ;               ;3   ;4   ;46  ;264 ;20  ;[RW]
-;;;;;;;;;;;;
+1;P;errors_03       ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;4   ;1   ;[RW]
 3;P;Addr_node05     ;UINT     ;0   ;RTU       ;               ;3   ;5   ;2   ;285 ;2   ;[RO]
 3;P;Life_node05     ;UINT     ;0   ;RTU       ;               ;3   ;5   ;3   ;285 ;2   ;[RO]
 3;P;AnInCnf_1_node05;UINT     ;0   ;RTU       ;               ;3   ;5   ;40  ;287 ;20  ;[RW]
@@ -304,7 +304,7 @@
 3;P;DigOut_4_node05 ;BYTE_BIT ;4   ;RTU       ;               ;3   ;5   ;46  ;287 ;20  ;[RW]
 3;P;DigOut_5_node05 ;BYTE_BIT ;5   ;RTU       ;               ;3   ;5   ;46  ;287 ;20  ;[RW]
 3;P;DigOut_8_node05 ;BYTE_BIT ;8   ;RTU       ;               ;3   ;5   ;46  ;287 ;20  ;[RW]
-;;;;;;;;;;;;
+1;P;errors_04       ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5   ;1   ;[RW]
 3;P;Addr_node06     ;UINT     ;0   ;RTU       ;               ;3   ;6   ;2   ;308 ;2   ;[RO]
 3;P;Life_node06     ;UINT     ;0   ;RTU       ;               ;3   ;6   ;3   ;308 ;2   ;[RO]
 3;P;AnInCnf_1_node06;UINT     ;0   ;RTU       ;               ;3   ;6   ;40  ;310 ;20  ;[RW]
@@ -327,7 +327,7 @@
 3;P;DigOut_4_node06 ;BYTE_BIT ;4   ;RTU       ;               ;3   ;6   ;46  ;310 ;20  ;[RW]
 3;P;DigOut_5_node06 ;BYTE_BIT ;5   ;RTU       ;               ;3   ;6   ;46  ;310 ;20  ;[RW]
 3;P;DigOut_8_node06 ;BYTE_BIT ;8   ;RTU       ;               ;3   ;6   ;46  ;310 ;20  ;[RW]
-;;;;;;;;;;;;
+1;P;errors_05       ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;6   ;1   ;[RW]
 3;P;Addr_node07     ;UINT     ;0   ;RTU       ;               ;3   ;7   ;2   ;331 ;2   ;[RO]
 3;P;Life_node07     ;UINT     ;0   ;RTU       ;               ;3   ;7   ;3   ;331 ;2   ;[RO]
 3;P;AnInCnf_1_node07;UINT     ;0   ;RTU       ;               ;3   ;7   ;40  ;333 ;20  ;[RW]
@@ -350,7 +350,7 @@
 3;P;DigOut_4_node07 ;BYTE_BIT ;4   ;RTU       ;               ;3   ;7   ;46  ;333 ;20  ;[RW]
 3;P;DigOut_5_node07 ;BYTE_BIT ;5   ;RTU       ;               ;3   ;7   ;46  ;333 ;20  ;[RW]
 3;P;DigOut_8_node07 ;BYTE_BIT ;8   ;RTU       ;               ;3   ;7   ;46  ;333 ;20  ;[RW]
-;;;;;;;;;;;;
+1;P;errors_06       ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;7   ;1   ;[RW]
 3;P;Addr_node08     ;UINT     ;0   ;RTU       ;               ;3   ;8   ;2   ;354 ;2   ;[RO]
 3;P;Life_node08     ;UINT     ;0   ;RTU       ;               ;3   ;8   ;3   ;354 ;2   ;[RO]
 3;P;AnInCnf_1_node08;UINT     ;0   ;RTU       ;               ;3   ;8   ;40  ;356 ;20  ;[RW]
@@ -373,7 +373,7 @@
 3;P;DigOut_4_node08 ;BYTE_BIT ;4   ;RTU       ;               ;3   ;8   ;46  ;356 ;20  ;[RW]
 3;P;DigOut_5_node08 ;BYTE_BIT ;5   ;RTU       ;               ;3   ;8   ;46  ;356 ;20  ;[RW]
 3;P;DigOut_8_node08 ;BYTE_BIT ;8   ;RTU       ;               ;3   ;8   ;46  ;356 ;20  ;[RW]
-;;;;;;;;;;;;
+1;P;errors_07       ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;8   ;1   ;[RW]
 3;P;Addr_node09     ;UINT     ;0   ;RTU       ;               ;3   ;9   ;2   ;377 ;2   ;[RO]
 3;P;Life_node09     ;UINT     ;0   ;RTU       ;               ;3   ;9   ;3   ;377 ;2   ;[RO]
 3;P;AnInCnf_1_node09;UINT     ;0   ;RTU       ;               ;3   ;9   ;40  ;379 ;20  ;[RW]
@@ -396,7 +396,7 @@
 3;P;DigOut_4_node09 ;BYTE_BIT ;4   ;RTU       ;               ;3   ;9   ;46  ;379 ;20  ;[RW]
 3;P;DigOut_5_node09 ;BYTE_BIT ;5   ;RTU       ;               ;3   ;9   ;46  ;379 ;20  ;[RW]
 3;P;DigOut_8_node09 ;BYTE_BIT ;8   ;RTU       ;               ;3   ;9   ;46  ;379 ;20  ;[RW]
-;;;;;;;;;;;;
+1;P;errors_08       ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;9   ;1   ;[RW]
 3;P;Addr_node10     ;UINT     ;0   ;RTU       ;               ;3   ;10  ;2   ;400 ;2   ;[RO]
 3;P;Life_node10     ;UINT     ;0   ;RTU       ;               ;3   ;10  ;3   ;400 ;2   ;[RO]
 3;P;AnInCnf_1_node10;UINT     ;0   ;RTU       ;               ;3   ;10  ;40  ;402 ;20  ;[RW]
@@ -419,7 +419,7 @@
 3;P;DigOut_4_node10 ;BYTE_BIT ;4   ;RTU       ;               ;3   ;10  ;46  ;402 ;20  ;[RW]
 3;P;DigOut_5_node10 ;BYTE_BIT ;5   ;RTU       ;               ;3   ;10  ;46  ;402 ;20  ;[RW]
 3;P;DigOut_8_node10 ;BYTE_BIT ;8   ;RTU       ;               ;3   ;10  ;46  ;402 ;20  ;[RW]
-;;;;;;;;;;;;
+1;P;errors_09       ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;10  ;1   ;[RW]
 3;P;Addr_node11     ;UINT     ;0   ;RTU       ;               ;3   ;11  ;2   ;423 ;2   ;[RO]
 3;P;Life_node11     ;UINT     ;0   ;RTU       ;               ;3   ;11  ;3   ;423 ;2   ;[RO]
 3;P;AnInCnf_1_node11;UINT     ;0   ;RTU       ;               ;3   ;11  ;40  ;425 ;20  ;[RW]
@@ -442,7 +442,7 @@
 3;P;DigOut_4_node11 ;BYTE_BIT ;4   ;RTU       ;               ;3   ;11  ;46  ;425 ;20  ;[RW]
 3;P;DigOut_5_node11 ;BYTE_BIT ;5   ;RTU       ;               ;3   ;11  ;46  ;425 ;20  ;[RW]
 3;P;DigOut_8_node11 ;BYTE_BIT ;8   ;RTU       ;               ;3   ;11  ;46  ;425 ;20  ;[RW]
-;;;;;;;;;;;;
+1;P;errors_10       ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;11  ;1   ;[RW]
 3;P;Addr_node12     ;UINT     ;0   ;RTU       ;               ;3   ;12  ;2   ;446 ;2   ;[RO]
 3;P;Life_node12     ;UINT     ;0   ;RTU       ;               ;3   ;12  ;3   ;446 ;2   ;[RO]
 3;P;AnInCnf_1_node12;UINT     ;0   ;RTU       ;               ;3   ;12  ;40  ;448 ;20  ;[RW]
@@ -465,7 +465,7 @@
 3;P;DigOut_4_node12 ;BYTE_BIT ;4   ;RTU       ;               ;3   ;12  ;46  ;448 ;20  ;[RW]
 3;P;DigOut_5_node12 ;BYTE_BIT ;5   ;RTU       ;               ;3   ;12  ;46  ;448 ;20  ;[RW]
 3;P;DigOut_8_node12 ;BYTE_BIT ;8   ;RTU       ;               ;3   ;12  ;46  ;448 ;20  ;[RW]
-;;;;;;;;;;;;
+1;P;errors_11       ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;12  ;1   ;[RW]
 3;P;Addr_node13     ;UINT     ;0   ;RTU       ;               ;    ;13  ;2   ;469 ;2   ;[RO]
 3;P;Life_node13     ;UINT     ;0   ;RTU       ;               ;    ;13  ;3   ;469 ;2   ;[RO]
 3;P;AnInCnf_1_node13;UINT     ;0   ;RTU       ;               ;    ;13  ;40  ;471 ;20  ;[RW]
@@ -488,7 +488,7 @@
 3;P;DigOut_4_node13 ;BYTE_BIT ;4   ;RTU       ;               ;    ;13  ;46  ;471 ;20  ;[RW]
 3;P;DigOut_5_node13 ;BYTE_BIT ;5   ;RTU       ;               ;    ;13  ;46  ;471 ;20  ;[RW]
 3;P;DigOut_8_node13 ;BYTE_BIT ;8   ;RTU       ;               ;    ;13  ;46  ;471 ;20  ;[RW]
-;;;;;;;;;;;;
+1;P;errors_12       ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;13  ;1   ;[RW]
 3;P;Addr_node14     ;UINT     ;0   ;RTU       ;               ;    ;14  ;2   ;492 ;2   ;[RO]
 3;P;Life_node14     ;UINT     ;0   ;RTU       ;               ;    ;14  ;3   ;492 ;2   ;[RO]
 3;P;AnInCnf_1_node14;UINT     ;0   ;RTU       ;               ;    ;14  ;40  ;494 ;20  ;[RW]
@@ -511,7 +511,7 @@
 3;P;DigOut_4_node14 ;BYTE_BIT ;4   ;RTU       ;               ;    ;14  ;46  ;494 ;20  ;[RW]
 3;P;DigOut_5_node14 ;BYTE_BIT ;5   ;RTU       ;               ;    ;14  ;46  ;494 ;20  ;[RW]
 3;P;DigOut_8_node14 ;BYTE_BIT ;8   ;RTU       ;               ;    ;14  ;46  ;494 ;20  ;[RW]
-;;;;;;;;;;;;
+1;P;errors_13       ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;14  ;1   ;[RW]
 3;P;Addr_node15     ;UINT     ;0   ;RTU       ;               ;    ;15  ;2   ;515 ;2   ;[RO]
 3;P;Life_node15     ;UINT     ;0   ;RTU       ;               ;    ;15  ;3   ;515 ;2   ;[RO]
 3;P;AnInCnf_1_node15;UINT     ;0   ;RTU       ;               ;    ;15  ;40  ;517 ;20  ;[RW]
@@ -534,7 +534,7 @@
 3;P;DigOut_4_node15 ;BYTE_BIT ;4   ;RTU       ;               ;    ;15  ;46  ;517 ;20  ;[RW]
 3;P;DigOut_5_node15 ;BYTE_BIT ;5   ;RTU       ;               ;    ;15  ;46  ;517 ;20  ;[RW]
 3;P;DigOut_8_node15 ;BYTE_BIT ;8   ;RTU       ;               ;    ;15  ;46  ;517 ;20  ;[RW]
-;;;;;;;;;;;;
+1;P;errors_14       ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;15  ;1   ;[RW]
 3;P;Addr_node16     ;UINT     ;0   ;RTU       ;               ;    ;16  ;2   ;538 ;2   ;[RO]
 3;P;Life_node16     ;UINT     ;0   ;RTU       ;               ;    ;16  ;3   ;538 ;2   ;[RO]
 3;P;AnInCnf_1_node16;UINT     ;0   ;RTU       ;               ;    ;16  ;40  ;540 ;20  ;[RW]
@@ -557,7 +557,7 @@
 3;P;DigOut_4_node16 ;BYTE_BIT ;4   ;RTU       ;               ;    ;16  ;46  ;540 ;20  ;[RW]
 3;P;DigOut_5_node16 ;BYTE_BIT ;5   ;RTU       ;               ;    ;16  ;46  ;540 ;20  ;[RW]
 3;P;DigOut_8_node16 ;BYTE_BIT ;8   ;RTU       ;               ;    ;16  ;46  ;540 ;20  ;[RW]
-;;;;;;;;;;;;
+1;P;errors_15       ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;16  ;1   ;[RW]
 3;P;Addr_node17     ;UINT     ;0   ;RTU       ;               ;    ;17  ;2   ;561 ;2   ;[RO]
 3;P;Life_node17     ;UINT     ;0   ;RTU       ;               ;    ;17  ;3   ;561 ;2   ;[RO]
 3;P;AnInCnf_1_node17;UINT     ;0   ;RTU       ;               ;    ;17  ;40  ;563 ;20  ;[RW]
@@ -580,7 +580,7 @@
 3;P;DigOut_4_node17 ;BYTE_BIT ;4   ;RTU       ;               ;    ;17  ;46  ;563 ;20  ;[RW]
 3;P;DigOut_5_node17 ;BYTE_BIT ;5   ;RTU       ;               ;    ;17  ;46  ;563 ;20  ;[RW]
 3;P;DigOut_8_node17 ;BYTE_BIT ;8   ;RTU       ;               ;    ;17  ;46  ;563 ;20  ;[RW]
-;;;;;;;;;;;;
+1;P;errors_16       ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;17  ;1   ;[RW]
 3;P;Addr_node18     ;UINT     ;0   ;RTU       ;               ;    ;18  ;2   ;584 ;2   ;[RO]
 3;P;Life_node18     ;UINT     ;0   ;RTU       ;               ;    ;18  ;3   ;584 ;2   ;[RO]
 3;P;AnInCnf_1_node18;UINT     ;0   ;RTU       ;               ;    ;18  ;40  ;586 ;20  ;[RW]
@@ -603,7 +603,7 @@
 3;P;DigOut_4_node18 ;BYTE_BIT ;4   ;RTU       ;               ;    ;18  ;46  ;586 ;20  ;[RW]
 3;P;DigOut_5_node18 ;BYTE_BIT ;5   ;RTU       ;               ;    ;18  ;46  ;586 ;20  ;[RW]
 3;P;DigOut_8_node18 ;BYTE_BIT ;8   ;RTU       ;               ;    ;18  ;46  ;586 ;20  ;[RW]
-;;;;;;;;;;;;
+1;P;errors_17       ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;18  ;1   ;[RW]
 3;P;Addr_node19     ;UINT     ;0   ;RTU       ;               ;    ;19  ;2   ;607 ;2   ;[RO]
 3;P;Life_node19     ;UINT     ;0   ;RTU       ;               ;    ;19  ;3   ;607 ;2   ;[RO]
 3;P;AnInCnf_1_node19;UINT     ;0   ;RTU       ;               ;    ;19  ;40  ;609 ;20  ;[RW]
@@ -626,7 +626,7 @@
 3;P;DigOut_4_node19 ;BYTE_BIT ;4   ;RTU       ;               ;    ;19  ;46  ;609 ;20  ;[RW]
 3;P;DigOut_5_node19 ;BYTE_BIT ;5   ;RTU       ;               ;    ;19  ;46  ;609 ;20  ;[RW]
 3;P;DigOut_8_node19 ;BYTE_BIT ;8   ;RTU       ;               ;    ;19  ;46  ;609 ;20  ;[RW]
-;;;;;;;;;;;;
+1;P;errors_18       ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;19  ;1   ;[RW]
 3;P;Addr_node20     ;UINT     ;0   ;RTU       ;               ;    ;20  ;2   ;630 ;2   ;[RO]
 3;P;Life_node20     ;UINT     ;0   ;RTU       ;               ;    ;20  ;3   ;630 ;2   ;[RO]
 3;P;AnInCnf_1_node20;UINT     ;0   ;RTU       ;               ;    ;20  ;40  ;632 ;20  ;[RW]
@@ -649,7 +649,7 @@
 3;P;DigOut_4_node20 ;BYTE_BIT ;4   ;RTU       ;               ;    ;20  ;46  ;632 ;20  ;[RW]
 3;P;DigOut_5_node20 ;BYTE_BIT ;5   ;RTU       ;               ;    ;20  ;46  ;632 ;20  ;[RW]
 3;P;DigOut_8_node20 ;BYTE_BIT ;8   ;RTU       ;               ;    ;20  ;46  ;632 ;20  ;[RW]
-;;;;;;;;;;;;
+1;P;errors_19       ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;20  ;1   ;[RW]
 3;P;Addr_node21     ;UINT     ;0   ;RTU       ;               ;    ;21  ;2   ;653 ;2   ;[RO]
 3;P;Life_node21     ;UINT     ;0   ;RTU       ;               ;    ;21  ;3   ;653 ;2   ;[RO]
 3;P;AnInCnf_1_node21;UINT     ;0   ;RTU       ;               ;    ;21  ;40  ;655 ;20  ;[RW]
@@ -672,7 +672,7 @@
 3;P;DigOut_4_node21 ;BYTE_BIT ;4   ;RTU       ;               ;    ;21  ;46  ;655 ;20  ;[RW]
 3;P;DigOut_5_node21 ;BYTE_BIT ;5   ;RTU       ;               ;    ;21  ;46  ;655 ;20  ;[RW]
 3;P;DigOut_8_node21 ;BYTE_BIT ;8   ;RTU       ;               ;    ;21  ;46  ;655 ;20  ;[RW]
-;;;;;;;;;;;;
+1;P;errors_20       ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;21  ;1   ;[RW]
 3;P;Addr_node22     ;UINT     ;0   ;RTU       ;               ;    ;22  ;2   ;676 ;2   ;[RO]
 3;P;Life_node22     ;UINT     ;0   ;RTU       ;               ;    ;22  ;3   ;676 ;2   ;[RO]
 3;P;AnInCnf_1_node22;UINT     ;0   ;RTU       ;               ;    ;22  ;40  ;678 ;20  ;[RW]
@@ -695,8 +695,8 @@
 3;P;DigOut_4_node22 ;BYTE_BIT ;4   ;RTU       ;               ;    ;22  ;46  ;678 ;20  ;[RW]
 3;P;DigOut_5_node22 ;BYTE_BIT ;5   ;RTU       ;               ;    ;22  ;46  ;678 ;20  ;[RW]
 3;P;DigOut_8_node22 ;BYTE_BIT ;8   ;RTU       ;               ;    ;22  ;46  ;678 ;20  ;[RW]
-;;;;;;;;;;;;
-;;;;;;;;;;;;
+1;P;errors_21       ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;22  ;1   ;[RW]
+1;P;errors_22       ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;23  ;1   ;[RW]
 3;P;Addr_node23     ;UINT     ;0   ;RTU       ;               ;    ;23  ;2   ;700 ;2   ;[RO]
 3;P;Life_node23     ;UINT     ;0   ;RTU       ;               ;    ;23  ;3   ;700 ;2   ;[RO]
 3;P;AnInCnf_1_node23;UINT     ;0   ;RTU       ;               ;    ;23  ;40  ;702 ;20  ;[RW]
@@ -719,7 +719,7 @@
 3;P;DigOut_4_node23 ;BYTE_BIT ;4   ;RTU       ;               ;    ;23  ;46  ;702 ;20  ;[RW]
 3;P;DigOut_5_node23 ;BYTE_BIT ;5   ;RTU       ;               ;    ;23  ;46  ;702 ;20  ;[RW]
 3;P;DigOut_8_node23 ;BYTE_BIT ;8   ;RTU       ;               ;    ;23  ;46  ;702 ;20  ;[RW]
-;;;;;;;;;;;;
+1;P;errors_23       ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;24  ;1   ;[RW]
 3;P;Addr_node24     ;UINT     ;0   ;RTU       ;               ;    ;24  ;-25534;723 ;2   ;[RO]
 3;P;Life_node24     ;UINT     ;0   ;RTU       ;               ;    ;24  ;-25533;723 ;2   ;[RO]
 3;P;AnInCnf_1_node24;UINT     ;0   ;RTU       ;               ;    ;24  ;-25496;725 ;20  ;[RW]
@@ -742,79 +742,79 @@
 3;P;DigOut_4_node24 ;BYTE_BIT ;4   ;RTU       ;               ;    ;24  ;-25490;725 ;20  ;[RW]
 3;P;DigOut_5_node24 ;BYTE_BIT ;5   ;RTU       ;               ;    ;24  ;-25490;725 ;20  ;[RW]
 3;P;DigOut_8_node24 ;BYTE_BIT ;8   ;RTU       ;               ;    ;24  ;-25490;725 ;20  ;[RW]
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
+1;P;errors_24       ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;25  ;1   ;[RW]
+1;P;latency_01_ms   ;UINT     ;0   ;PLC       ;               ;    ;    ;    ;26  ;1   ;[RW]
+1;P;latency_02_ms   ;UINT     ;0   ;PLC       ;               ;    ;    ;    ;27  ;1   ;[RW]
+1;P;latency_03_ms   ;UINT     ;0   ;PLC       ;               ;    ;    ;    ;28  ;1   ;[RW]
+1;P;latency_04_ms   ;UINT     ;0   ;PLC       ;               ;    ;    ;    ;29  ;1   ;[RW]
+1;P;latency_05_ms   ;UINT     ;0   ;PLC       ;               ;    ;    ;    ;30  ;1   ;[RW]
+1;P;latency_06_ms   ;UINT     ;0   ;PLC       ;               ;    ;    ;    ;31  ;1   ;[RW]
+1;P;latency_07_ms   ;UINT     ;0   ;PLC       ;               ;    ;    ;    ;32  ;1   ;[RW]
+1;P;latency_08_ms   ;UINT     ;0   ;PLC       ;               ;    ;    ;    ;33  ;1   ;[RW]
+1;P;latency_09_ms   ;UINT     ;0   ;PLC       ;               ;    ;    ;    ;34  ;1   ;[RW]
+1;P;latency_10_ms   ;UINT     ;0   ;PLC       ;               ;    ;    ;    ;35  ;1   ;[RW]
+1;P;latency_11_ms   ;UINT     ;0   ;PLC       ;               ;    ;    ;    ;36  ;1   ;[RW]
+1;P;latency_12_ms   ;UINT     ;0   ;PLC       ;               ;    ;    ;    ;37  ;1   ;[RW]
+1;P;latency_13_ms   ;UINT     ;0   ;PLC       ;               ;    ;    ;    ;38  ;1   ;[RW]
+1;P;latency_14_ms   ;UINT     ;0   ;PLC       ;               ;    ;    ;    ;39  ;1   ;[RW]
+1;P;latency_15_ms   ;UINT     ;0   ;PLC       ;               ;    ;    ;    ;40  ;1   ;[RW]
+1;P;latency_16_ms   ;UINT     ;0   ;PLC       ;               ;    ;    ;    ;41  ;1   ;[RW]
+1;P;latency_17_ms   ;UINT     ;0   ;PLC       ;               ;    ;    ;    ;42  ;1   ;[RW]
+1;P;latency_18_ms   ;UINT     ;0   ;PLC       ;               ;    ;    ;    ;43  ;1   ;[RW]
+1;P;latency_19_ms   ;UINT     ;0   ;PLC       ;               ;    ;    ;    ;44  ;1   ;[RW]
+1;P;latency_20_ms   ;UINT     ;0   ;PLC       ;               ;    ;    ;    ;45  ;1   ;[RW]
+1;P;latency_21_ms   ;UINT     ;0   ;PLC       ;               ;    ;    ;    ;46  ;1   ;[RW]
+1;P;latency_22_ms   ;UINT     ;0   ;PLC       ;               ;    ;    ;    ;47  ;1   ;[RW]
+1;P;latency_23_ms   ;UINT     ;0   ;PLC       ;               ;    ;    ;    ;48  ;1   ;[RW]
+1;P;latency_24_ms   ;UINT     ;0   ;PLC       ;               ;    ;    ;    ;49  ;1   ;[RW]
+1;P;min_latency_01_m;UINT     ;0   ;PLC       ;               ;    ;    ;    ;50  ;1   ;[RW]
+1;P;min_latency_02_m;UINT     ;0   ;PLC       ;               ;    ;    ;    ;51  ;1   ;[RW]
+1;P;min_latency_03_m;UINT     ;0   ;PLC       ;               ;    ;    ;    ;52  ;1   ;[RW]
+1;P;min_latency_04_m;UINT     ;0   ;PLC       ;               ;    ;    ;    ;53  ;1   ;[RW]
+1;P;min_latency_05_m;UINT     ;0   ;PLC       ;               ;    ;    ;    ;54  ;1   ;[RW]
+1;P;min_latency_06_m;UINT     ;0   ;PLC       ;               ;    ;    ;    ;55  ;1   ;[RW]
+1;P;min_latency_07_m;UINT     ;0   ;PLC       ;               ;    ;    ;    ;56  ;1   ;[RW]
+1;P;min_latency_08_m;UINT     ;0   ;PLC       ;               ;    ;    ;    ;57  ;1   ;[RW]
+1;P;min_latency_09_m;UINT     ;0   ;PLC       ;               ;    ;    ;    ;58  ;1   ;[RW]
+1;P;min_latency_10_m;UINT     ;0   ;PLC       ;               ;    ;    ;    ;59  ;1   ;[RW]
+1;P;min_latency_11_m;UINT     ;0   ;PLC       ;               ;    ;    ;    ;60  ;1   ;[RW]
+1;P;min_latency_12_m;UINT     ;0   ;PLC       ;               ;    ;    ;    ;61  ;1   ;[RW]
+1;P;min_latency_13_m;UINT     ;0   ;PLC       ;               ;    ;    ;    ;62  ;1   ;[RW]
+1;P;min_latency_14_m;UINT     ;0   ;PLC       ;               ;    ;    ;    ;63  ;1   ;[RW]
+1;P;min_latency_15_m;UINT     ;0   ;PLC       ;               ;    ;    ;    ;64  ;1   ;[RW]
+1;P;min_latency_16_m;UINT     ;0   ;PLC       ;               ;    ;    ;    ;65  ;1   ;[RW]
+1;P;min_latency_17_m;UINT     ;0   ;PLC       ;               ;    ;    ;    ;66  ;1   ;[RW]
+1;P;min_latency_18_m;UINT     ;0   ;PLC       ;               ;    ;    ;    ;67  ;1   ;[RW]
+1;P;min_latency_19_m;UINT     ;0   ;PLC       ;               ;    ;    ;    ;68  ;1   ;[RW]
+1;P;min_latency_20_m;UINT     ;0   ;PLC       ;               ;    ;    ;    ;69  ;1   ;[RW]
+1;P;min_latency_21_m;UINT     ;0   ;PLC       ;               ;    ;    ;    ;70  ;1   ;[RW]
+1;P;min_latency_22_m;UINT     ;0   ;PLC       ;               ;    ;    ;    ;71  ;1   ;[RW]
+1;P;min_latency_23_m;UINT     ;0   ;PLC       ;               ;    ;    ;    ;72  ;1   ;[RW]
+1;P;min_latency_24_m;UINT     ;0   ;PLC       ;               ;    ;    ;    ;73  ;1   ;[RW]
+1;P;max_latency_01_m;UINT     ;0   ;PLC       ;               ;    ;    ;    ;74  ;1   ;[RW]
+1;P;max_latency_02_m;UINT     ;0   ;PLC       ;               ;    ;    ;    ;75  ;1   ;[RW]
+1;P;max_latency_03_m;UINT     ;0   ;PLC       ;               ;    ;    ;    ;76  ;1   ;[RW]
+1;P;max_latency_04_m;UINT     ;0   ;PLC       ;               ;    ;    ;    ;77  ;1   ;[RW]
+1;P;max_latency_05_m;UINT     ;0   ;PLC       ;               ;    ;    ;    ;78  ;1   ;[RW]
+1;P;max_latency_06_m;UINT     ;0   ;PLC       ;               ;    ;    ;    ;79  ;1   ;[RW]
+1;P;max_latency_07_m;UINT     ;0   ;PLC       ;               ;    ;    ;    ;80  ;1   ;[RW]
+1;P;max_latency_08_m;UINT     ;0   ;PLC       ;               ;    ;    ;    ;81  ;1   ;[RW]
+1;P;max_latency_09_m;UINT     ;0   ;PLC       ;               ;    ;    ;    ;82  ;1   ;[RW]
+1;P;max_latency_10_m;UINT     ;0   ;PLC       ;               ;    ;    ;    ;83  ;1   ;[RW]
+1;P;max_latency_11_m;UINT     ;0   ;PLC       ;               ;    ;    ;    ;84  ;1   ;[RW]
+1;P;max_latency_12_m;UINT     ;0   ;PLC       ;               ;    ;    ;    ;85  ;1   ;[RW]
+1;P;max_latency_13_m;UINT     ;0   ;PLC       ;               ;    ;    ;    ;86  ;1   ;[RW]
+1;P;max_latency_14_m;UINT     ;0   ;PLC       ;               ;    ;    ;    ;87  ;1   ;[RW]
+1;P;max_latency_15_m;UINT     ;0   ;PLC       ;               ;    ;    ;    ;88  ;1   ;[RW]
+1;P;max_latency_16_m;UINT     ;0   ;PLC       ;               ;    ;    ;    ;89  ;1   ;[RW]
+1;P;max_latency_17_m;UINT     ;0   ;PLC       ;               ;    ;    ;    ;90  ;1   ;[RW]
+1;P;max_latency_18_m;UINT     ;0   ;PLC       ;               ;    ;    ;    ;91  ;1   ;[RW]
+1;P;max_latency_19_m;UINT     ;0   ;PLC       ;               ;    ;    ;    ;92  ;1   ;[RW]
+1;P;max_latency_20_m;UINT     ;0   ;PLC       ;               ;    ;    ;    ;93  ;1   ;[RW]
+1;P;max_latency_21_m;UINT     ;0   ;PLC       ;               ;    ;    ;    ;94  ;1   ;[RW]
+1;P;max_latency_22_m;UINT     ;0   ;PLC       ;               ;    ;    ;    ;95  ;1   ;[RW]
+1;P;max_latency_23_m;UINT     ;0   ;PLC       ;               ;    ;    ;    ;96  ;1   ;[RW]
+1;P;max_latency_24_m;UINT     ;0   ;PLC       ;               ;    ;    ;    ;97  ;1   ;[RW]
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
