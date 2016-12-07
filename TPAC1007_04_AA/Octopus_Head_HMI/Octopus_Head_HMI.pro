@@ -65,6 +65,14 @@ OTHER_FILES += \
     recipes/TP1043_01_A/2.csv \
     recipes/TP1043_01_B/1.csv \
     recipes/TP1043_01_B/2.csv \
+    recipes/TP1057_01_A/1.csv \
+    recipes/TP1057_01_A/2.csv \
+    recipes/TP1057_01_B/1.csv \
+    recipes/TP1057_01_B/2.csv \
+    recipes/TP1070_01_A/1.csv \
+    recipes/TP1070_01_A/2.csv \
+    recipes/TP1070_01_C/1.csv \
+    recipes/TP1070_01_C/2.csv \
     recipes/TPAC1006/1.csv \
     recipes/TPAC1006/2.csv \
     recipes/TPAC1007_03/1.csv \
@@ -91,6 +99,10 @@ OTHER_FILES += \
     recipes/TPLC100/2.csv \
     recipes/Values/1.csv \
     recipes/Values/2.csv \
+    recipes/TP1057_01_B/2.csv \
+    recipes/TP1057_01_B/1.csv \
+    recipes/TP1057_01_A/2.csv \
+    recipes/TP1057_01_A/1.csv
 
 
 recipes_TP1043_01_A.files = recipes/TP1043_01_A/1.csv recipes/TP1043_01_A/2.csv
@@ -98,6 +110,18 @@ recipes_TP1043_01_A.path = /local/data/recipe/TP1043_01_A
 
 recipes_TP1043_01_B.files = recipes/TP1043_01_B/1.csv recipes/TP1043_01_B/2.csv
 recipes_TP1043_01_B.path = /local/data/recipe/TP1043_01_B
+
+recipes_TP1057_01_A.files = recipes/TP1057_01_A/1.csv recipes/TP1057_01_A/2.csv
+recipes_TP1057_01_A.path = /local/data/recipe/TP1057_01_A
+
+recipes_TP1057_01_B.files = recipes/TP1057_01_B/1.csv recipes/TP1057_01_B/2.csv
+recipes_TP1057_01_B.path = /local/data/recipe/TP1057_01_B
+
+recipes_TP1070_01_A.files = recipes/TP1070_01_A/1.csv recipes/TP1070_01_A/2.csv
+recipes_TP1070_01_A.path = /local/data/recipe/TP1070_01_A
+
+recipes_TP1070_01_C.files = recipes/TP1070_01_C/1.csv recipes/TP1070_01_C/2.csv
+recipes_TP1070_01_C.path = /local/data/recipe/TP1070_01_C
 
 recipes_TPAC1006.files = recipes/TPAC1006/1.csv recipes/TPAC1006/2.csv
 recipes_TPAC1006.path = /local/data/recipe/TPAC1006
@@ -141,6 +165,10 @@ recipes_Values.path = /local/data/recipe/Values
 INSTALLS += \
     recipes_TP1043_01_A \
     recipes_TP1043_01_B \
+    recipes_TP1057_01_A \
+    recipes_TP1057_01_B \
+    recipes_TP1070_01_A \
+    recipes_TP1070_01_C \
     recipes_TPAC1006 \
     recipes_TPAC1007_03 \
     recipes_TPAC1007_LV \
