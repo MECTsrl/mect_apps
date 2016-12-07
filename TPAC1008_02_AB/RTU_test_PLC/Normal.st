@@ -151,7 +151,7 @@ END_VAR
 
 	end_if;
 
-	timer (IN := true, PT := T#3s);
+	timer (IN := true, PT := T#4s);
 
 	(* FIRST/LAST STEP *)
 	if timer.q = true then
