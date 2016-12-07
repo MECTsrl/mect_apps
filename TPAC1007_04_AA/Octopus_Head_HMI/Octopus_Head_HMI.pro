@@ -71,6 +71,8 @@ OTHER_FILES += \
     recipes/TP1057_01_B/2.csv \
     recipes/TP1070_01_A/1.csv \
     recipes/TP1070_01_A/2.csv \
+    recipes/TP1070_01_B/1.csv \
+    recipes/TP1070_01_B/2.csv \
     recipes/TP1070_01_C/1.csv \
     recipes/TP1070_01_C/2.csv \
     recipes/TPAC1006/1.csv \
@@ -95,6 +97,8 @@ OTHER_FILES += \
     recipes/TPAC1008_02_AD/2.csv \
     recipes/TPAC1008_02_AE/1.csv \
     recipes/TPAC1008_02_AE/2.csv \
+    recipes/TPAC1008_02_AF/1.csv \
+    recipes/TPAC1008_02_AF/2.csv \
     recipes/TPLC100/1.csv \
     recipes/TPLC100/2.csv \
     recipes/Values/1.csv \
@@ -119,6 +123,9 @@ recipes_TP1057_01_B.path = /local/data/recipe/TP1057_01_B
 
 recipes_TP1070_01_A.files = recipes/TP1070_01_A/1.csv recipes/TP1070_01_A/2.csv
 recipes_TP1070_01_A.path = /local/data/recipe/TP1070_01_A
+
+recipes_TP1070_01_B.files = recipes/TP1070_01_B/1.csv recipes/TP1070_01_B/2.csv
+recipes_TP1070_01_B.path = /local/data/recipe/TP1070_01_B
 
 recipes_TP1070_01_C.files = recipes/TP1070_01_C/1.csv recipes/TP1070_01_C/2.csv
 recipes_TP1070_01_C.path = /local/data/recipe/TP1070_01_C
@@ -156,6 +163,9 @@ recipes_TPAC1008_02_AD.path = /local/data/recipe/TPAC1008_02_AD
 recipes_TPAC1008_02_AE.files = recipes/TPAC1008_02_AE/1.csv recipes/TPAC1008_02_AE/2.csv
 recipes_TPAC1008_02_AE.path = /local/data/recipe/TPAC1008_02_AE
 
+recipes_TPAC1008_02_AF.files = recipes/TPAC1008_02_AF/1.csv recipes/TPAC1008_02_AF/2.csv
+recipes_TPAC1008_02_AF.path = /local/data/recipe/TPAC1008_02_AF
+
 recipes_TPLC100.files = recipes/TPLC100/1.csv recipes/TPLC100/2.csv
 recipes_TPLC100.path = /local/data/recipe/TPLC100
 
@@ -168,6 +178,7 @@ INSTALLS += \
     recipes_TP1057_01_A \
     recipes_TP1057_01_B \
     recipes_TP1070_01_A \
+    recipes_TP1070_01_B \
     recipes_TP1070_01_C \
     recipes_TPAC1006 \
     recipes_TPAC1007_03 \
@@ -179,6 +190,7 @@ INSTALLS += \
     recipes_TPAC1008_02_AA \
     recipes_TPAC1008_02_AB \
     recipes_TPAC1008_02_AD \
+    recipes_TPAC1008_02_AE \
     recipes_TPAC1008_02_AE \
     recipes_TPLC100 \
     recipes_Values
