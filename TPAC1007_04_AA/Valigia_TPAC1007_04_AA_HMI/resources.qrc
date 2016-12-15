@@ -1,0 +1,13 @@
+<RCC>
+    <qresource prefix="/icons">
+        <file>my-image/Sfondo.png</file>
+        <file>my-image/logo_senza_sfondo.PNG</file>
+        <file>my-image/Alarm.png</file>
+        <file>my-image/Back_2.png</file>
+        <file>my-image/Home_2.png</file>
+        <file>my-image/Start.png</file>
+        <file>my-image/Stop.png</file>
+        <file>my-image/LedGrey.png</file>
+    </qresource>
+    <qresource prefix="/fonts"/>
+</RCC>
