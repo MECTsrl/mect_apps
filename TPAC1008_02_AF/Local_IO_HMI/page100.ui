@@ -3047,7 +3047,7 @@ background-color: rgb(255, 255, 127);
     <enum>QFrame::Raised</enum>
    </property>
    <property name="mapping">
-    <string>1;[mA] 4..20;0;--</string>
+    <string>0;--;2;[V] 0..10;3;[%] PWM</string>
    </property>
   </widget>
   <widget class="ATCMlabel" name="atcmLabel_17">
@@ -3447,7 +3447,7 @@ background-color: rgb(255, 255, 127);
     <enum>QFrame::Raised</enum>
    </property>
    <property name="mapping">
-    <string>1;[V] 0..10;0;--</string>
+    <string>0;--;1;[mA] 4..20</string>
    </property>
   </widget>
   <widget class="ATCMbutton" name="atcmButton_27">
