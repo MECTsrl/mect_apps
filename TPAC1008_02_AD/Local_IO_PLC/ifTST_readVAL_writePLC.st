@@ -52,14 +52,14 @@ END_VAR
 	    if (TST_AnOut_3 ) then 
 			if (VAL_AnOutConf_3 = 3) then
 				PLC_AnOutConf_3 := 2; PLC_AnOut_3 := 1000; (* 10.00 V is the PWM amplitude *)
-			elsif (VAL_AnOutConf_3 = 2) then
+			else
 				PLC_AnOutConf_3 := VAL_AnOutConf_3; PLC_AnOut_3 := VAL_AnOut_3;(* only 0..10 V *)
 			end_if;
 		end_if;
 		if (TST_AnOut_4 ) then 
 			if (VAL_AnOutConf_4 = 3) then
 				PLC_AnOutConf_4 := 2; PLC_AnOut_4 := 1000; (* 10.00 V is the PWM amplitude *)
-			elsif (VAL_AnOutConf_4 = 2) then
+			else
 				PLC_AnOutConf_4 := VAL_AnOutConf_4; PLC_AnOut_4 := VAL_AnOut_4;(* only 0..10 V *)
 			end_if;
 		end_if;
