@@ -191,6 +191,6 @@ INSTALLS += \
     recipes_TPAC1008_02_AB \
     recipes_TPAC1008_02_AD \
     recipes_TPAC1008_02_AE \
-    recipes_TPAC1008_02_AE \
+    recipes_TPAC1008_02_AF \
     recipes_TPLC100 \
     recipes_Values
