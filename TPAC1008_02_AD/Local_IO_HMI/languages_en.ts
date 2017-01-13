@@ -588,8 +588,8 @@
     <message>
         <location filename="page100.ui" line="3050"/>
         <location filename="page100.ui" line="3450"/>
-        <source>1;[V] 0..10;0;--;3;[%] PWM</source>
-        <oldsource>1;[V] 0..10;0;--</oldsource>
+        <source>2;[V] 0..10;0;--;3;[%] PWM</source>
+        <oldsource>1;[V] 0..10;0;--;3;[%] PWM</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>

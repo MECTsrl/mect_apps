@@ -480,7 +480,8 @@
     <message>
         <location filename="page100.ui" line="2221"/>
         <location filename="page100.ui" line="3465"/>
-        <source>1;[V] 0..10;0;--</source>
+        <source>2;[V] 0..10;0;--;3;[%] PWM</source>
+        <oldsource>1;[V] 0..10;0;--</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
