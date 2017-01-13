@@ -472,7 +472,8 @@
     <message>
         <location filename="page100.ui" line="1602"/>
         <location filename="page100.ui" line="1605"/>
-        <source>TPAC1008_02_AA</source>
+        <source>TPAC1008_02_AA/B</source>
+        <oldsource>TPAC1008_02_AA</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
