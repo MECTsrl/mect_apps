@@ -2109,13 +2109,13 @@ color: rgb(0, 170, 0);</string>
     <string notr="true">color: rgb(0, 85, 0);</string>
    </property>
    <property name="toolTip">
-    <string/>
+    <string>ActivePower</string>
    </property>
    <property name="whatsThis">
     <string>ATCMlabel widget</string>
    </property>
    <property name="variable">
-    <string/>
+    <string>ActivePower</string>
    </property>
    <property name="prefix">
     <string>Power = </string>
@@ -2340,7 +2340,7 @@ color: rgb(0, 170, 0);</string>
     <double>10.000000000000000</double>
    </property>
    <property name="y2Variable">
-    <string/>
+    <string>ActivePower</string>
    </property>
    <property name="y2Min">
     <string>0</string>

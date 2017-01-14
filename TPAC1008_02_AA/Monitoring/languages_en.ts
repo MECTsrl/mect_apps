@@ -227,6 +227,13 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="page100.ui" line="2112"/>
+        <location filename="page100.ui" line="2118"/>
+        <location filename="page100.ui" line="2343"/>
+        <source>ActivePower</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="page100.ui" line="2635"/>
         <source>off 5</source>
         <translation type="unfinished"></translation>

@@ -11,6 +11,10 @@ DWORD_BIT <-> int
 */ 
 #include "crosstable.h"
  
+float Voltage = 0;
+float Current = 0;
+float ActivePower = 0;
+float ApparentPower = 0;
 u_int32_t RTU0_TYPE_PORT = 0;
 u_int32_t RTU0_BAUDRATE = 0;
 u_int32_t RTU0_STATUS = 0;
@@ -276,6 +280,78 @@ u_int16_t PLC_Version = 0;
 u_int16_t PLC_EngineStatus = 0;
 int PLC_ResetValues = 0;
 int PLC_buzzerOn = 0;
+
+
+int doWrite_Voltage(float value)
+{
+return doWrite(ID_Voltage,  &value);
+}
+
+
+int addWrite_Voltage(float value)
+{
+return addWrite(ID_Voltage, &value);
+}
+
+
+int getStatus_Voltage()
+{
+return getStatus(ID_Voltage);
+}
+
+
+int doWrite_Current(float value)
+{
+return doWrite(ID_Current,  &value);
+}
+
+
+int addWrite_Current(float value)
+{
+return addWrite(ID_Current, &value);
+}
+
+
+int getStatus_Current()
+{
+return getStatus(ID_Current);
+}
+
+
+int doWrite_ActivePower(float value)
+{
+return doWrite(ID_ActivePower,  &value);
+}
+
+
+int addWrite_ActivePower(float value)
+{
+return addWrite(ID_ActivePower, &value);
+}
+
+
+int getStatus_ActivePower()
+{
+return getStatus(ID_ActivePower);
+}
+
+
+int doWrite_ApparentPower(float value)
+{
+return doWrite(ID_ApparentPower,  &value);
+}
+
+
+int addWrite_ApparentPower(float value)
+{
+return addWrite(ID_ApparentPower, &value);
+}
+
+
+int getStatus_ApparentPower()
+{
+return getStatus(ID_ApparentPower);
+}
 
 
 int doWrite_RTU0_TYPE_PORT(u_int32_t value)
@@ -5051,6 +5127,10 @@ return getStatus(ID_PLC_buzzerOn);
 int update_all(void)
 {
 int retval = 0;
+retval += readFromDb(ID_Voltage, &Voltage);
+retval += readFromDb(ID_Current, &Current);
+retval += readFromDb(ID_ActivePower, &ActivePower);
+retval += readFromDb(ID_ApparentPower, &ApparentPower);
 retval += readFromDb(ID_RTU0_TYPE_PORT, &RTU0_TYPE_PORT);
 retval += readFromDb(ID_RTU0_BAUDRATE, &RTU0_BAUDRATE);
 retval += readFromDb(ID_RTU0_STATUS, &RTU0_STATUS);
