@@ -17,6 +17,30 @@ extern "C" {
 #include <sys/types.h>
 #include "cross_table_utility.h"
  
+#define ID_Voltage 193
+extern float Voltage;
+int doWrite_Voltage(float value);
+int addWrite_Voltage(float value);
+int getStatus_Voltage();
+ 
+#define ID_Current 194
+extern float Current;
+int doWrite_Current(float value);
+int addWrite_Current(float value);
+int getStatus_Current();
+ 
+#define ID_ActivePower 195
+extern float ActivePower;
+int doWrite_ActivePower(float value);
+int addWrite_ActivePower(float value);
+int getStatus_ActivePower();
+ 
+#define ID_ApparentPower 196
+extern float ApparentPower;
+int doWrite_ApparentPower(float value);
+int addWrite_ApparentPower(float value);
+int getStatus_ApparentPower();
+ 
 #define ID_RTU0_TYPE_PORT 5000
 extern u_int32_t RTU0_TYPE_PORT;
 int doWrite_RTU0_TYPE_PORT(u_int32_t value);

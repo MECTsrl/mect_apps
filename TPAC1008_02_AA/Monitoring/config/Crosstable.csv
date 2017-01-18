@@ -190,10 +190,10 @@
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
+2;P;Voltage         ;REALCDAB ;1   ;RTU       ;               ;3   ;1   ;30001;193 ;1   ;[RO]Volts
+2;P;Current         ;REALCDAB ;2   ;RTU       ;               ;3   ;1   ;30007;194 ;1   ;[RO]Amps
+2;P;ActivePower     ;REALCDAB ;1   ;RTU       ;               ;3   ;1   ;30013;195 ;1   ;[RO]Watts
+2;P;ApparentPower   ;REALCDAB ;1   ;RTU       ;               ;3   ;1   ;30019;196 ;1   ;[RO]VA
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
