@@ -26,7 +26,8 @@
     <message>
         <location filename="page100.ui" line="114"/>
         <location filename="page100.ui" line="117"/>
-        <source>TP1057_01_A</source>
+        <source>TP1057_01_B</source>
+        <oldsource>TP1057_01_A</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
