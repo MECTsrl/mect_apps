@@ -2137,7 +2137,7 @@ color: rgb(0, 170, 0);</string>
    </property>
    <property name="font">
     <font>
-     <family>DejaVu Sans Mono</family>
+     <family>DejaVu Sans</family>
      <pointsize>11</pointsize>
     </font>
    </property>
@@ -2177,7 +2177,7 @@ color: rgb(0, 170, 0);</string>
    </property>
    <property name="font">
     <font>
-     <family>DejaVu Sans Mono</family>
+     <family>DejaVu Sans</family>
      <pointsize>11</pointsize>
     </font>
    </property>
@@ -2217,7 +2217,7 @@ color: rgb(0, 170, 0);</string>
    </property>
    <property name="font">
     <font>
-     <family>DejaVu Sans Mono</family>
+     <family>DejaVu Sans</family>
      <pointsize>11</pointsize>
     </font>
    </property>
@@ -2257,7 +2257,7 @@ color: rgb(0, 170, 0);</string>
    </property>
    <property name="font">
     <font>
-     <family>DejaVu Sans Mono</family>
+     <family>DejaVu Sans</family>
      <pointsize>11</pointsize>
     </font>
    </property>

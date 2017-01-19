@@ -2,7 +2,7 @@
 #include "automation.h"
 
 #define PT100CONF 7 // PT100_R
-#define PT100FILT 32 // sample filtering
+#define PT100FILT 64 // sample filtering
 
 static bool configured;
 
