@@ -15,6 +15,7 @@
 #include "crosstable.h"
 
 #include "automation.h"
+#include <qwt_color_map.h>
 
 /**
  * @brief this macro is used to set the PAGE100 style.
@@ -45,6 +46,14 @@ page100::page100(QWidget *parent) :
     /* set the style described into the macro SET_PAGE100_STYLE */
     SET_PAGE100_STYLE();
     translateFontSize(this);
+
+    // Thermometers colors
+    QwtLinearColorMap *colorMap = new QwtLinearColorMap();
+    colorMap->setColorInterval( Qt::blue, Qt::red );
+    ui->Thermo_1->setColorMap( colorMap );
+    ui->Thermo_2->setColorMap( colorMap );
+    ui->Thermo_3->setColorMap( colorMap );
+    ui->Thermo_4->setColorMap( colorMap );
 }
 
 /**

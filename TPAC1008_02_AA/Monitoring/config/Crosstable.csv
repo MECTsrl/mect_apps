@@ -192,8 +192,17 @@
 ;;;;;;;;;;;;
 2;P;Voltage         ;REALCDAB ;1   ;RTU       ;               ;3   ;1   ;30001;193 ;1   ;[RO]Volts
 2;P;Current         ;REALCDAB ;2   ;RTU       ;               ;3   ;1   ;30007;194 ;1   ;[RO]Amps
-2;P;ActivePower     ;REALCDAB ;1   ;RTU       ;               ;3   ;1   ;30013;195 ;1   ;[RO]Watts
+2;S;ActivePower     ;REALCDAB ;1   ;RTU       ;               ;3   ;1   ;30013;195 ;1   ;[RO]Watts
 2;P;ApparentPower   ;REALCDAB ;1   ;RTU       ;               ;3   ;1   ;30019;196 ;1   ;[RO]VA
+3;H;ReactivePower   ;REALCDAB ;1   ;RTU       ;               ;3   ;1   ;30025;197 ;1   ;[RO]VAr
+3;H;PowerFactor     ;REALCDAB ;2   ;RTU       ;               ;3   ;1   ;30031;198 ;1   ;[RO]
+3;H;Frequency       ;REALCDAB ;2   ;RTU       ;               ;3   ;1   ;30071;199 ;5   ;[RO]Hz
+3;H;ImportActiveEner;REALCDAB ;2   ;RTU       ;               ;3   ;1   ;30073;199 ;5   ;[RO]kWh
+3;H;ExportActiveEner;REALCDAB ;2   ;RTU       ;               ;3   ;1   ;30075;199 ;5   ;[RO]kWh
+3;H;ImportReactiveEn;REALCDAB ;2   ;RTU       ;               ;3   ;1   ;30077;199 ;5   ;[RO]kvarh
+3;H;ExportReactiveEn;REALCDAB ;2   ;RTU       ;               ;3   ;1   ;30079;199 ;5   ;[RO]kvarh
+3;H;TotalActiveEnerg;REALCDAB ;2   ;RTU       ;               ;3   ;1   ;30343;204 ;2   ;[RO]kWh
+3;H;TotalReactiveEne;REALCDAB ;2   ;RTU       ;               ;3   ;1   ;30345;204 ;2   ;[RO]kvarh
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
@@ -988,16 +997,7 @@
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
+3;P;s_voltage       ;REALCDAB ;2   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;1   ;1   ;1   ;[RW]V
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
@@ -5305,7 +5305,7 @@
 1;P;PLC_DigIn_6     ;BYTE_BIT ;6   ;CANOPEN   ;               ;    ;1   ;1   ;5300;55  ;[RO]
 1;P;PLC_DigIn_7     ;BYTE_BIT ;7   ;CANOPEN   ;               ;    ;1   ;1   ;5300;55  ;[RO]
 1;P;PLC_DigIn_8     ;BYTE_BIT ;8   ;CANOPEN   ;               ;    ;1   ;1   ;5300;55  ;[RO]
-1;P;PLC_Reserved_1  ;BYTE_BIT ;1   ;CANOPEN   ;               ;    ;1   ;2   ;5300;55  ;[RO]
+1;P;PLC_Reserved_1  ;BYTE     ;0   ;CANOPEN   ;               ;    ;1   ;2   ;5300;55  ;[RO]
 1;P;PLC_DigOut_1    ;BYTE_BIT ;1   ;CANOPEN   ;               ;    ;1   ;3   ;5300;55  ;[RW]
 1;P;PLC_DigOut_2    ;BYTE_BIT ;2   ;CANOPEN   ;               ;    ;1   ;3   ;5300;55  ;[RW]
 1;P;PLC_DigOut_3    ;BYTE_BIT ;3   ;CANOPEN   ;               ;    ;1   ;3   ;5300;55  ;[RW]

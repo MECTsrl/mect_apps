@@ -5,6 +5,7 @@ DINT      <-> int32_t
 UDINT     <-> u_int32_t
 REAL      <-> float
 BIT       <-> int
+BYTE      <-> u_int8_t
 BYTE_BIT  <-> int
 WORD_BIT  <-> int
 DWORD_BIT <-> int
@@ -40,6 +41,66 @@ extern float ApparentPower;
 int doWrite_ApparentPower(float value);
 int addWrite_ApparentPower(float value);
 int getStatus_ApparentPower();
+ 
+#define ID_ReactivePower 197
+extern float ReactivePower;
+int doWrite_ReactivePower(float value);
+int addWrite_ReactivePower(float value);
+int getStatus_ReactivePower();
+ 
+#define ID_PowerFactor 198
+extern float PowerFactor;
+int doWrite_PowerFactor(float value);
+int addWrite_PowerFactor(float value);
+int getStatus_PowerFactor();
+ 
+#define ID_Frequency 199
+extern float Frequency;
+int doWrite_Frequency(float value);
+int addWrite_Frequency(float value);
+int getStatus_Frequency();
+ 
+#define ID_ImportActiveEner 200
+extern float ImportActiveEner;
+int doWrite_ImportActiveEner(float value);
+int addWrite_ImportActiveEner(float value);
+int getStatus_ImportActiveEner();
+ 
+#define ID_ExportActiveEner 201
+extern float ExportActiveEner;
+int doWrite_ExportActiveEner(float value);
+int addWrite_ExportActiveEner(float value);
+int getStatus_ExportActiveEner();
+ 
+#define ID_ImportReactiveEn 202
+extern float ImportReactiveEn;
+int doWrite_ImportReactiveEn(float value);
+int addWrite_ImportReactiveEn(float value);
+int getStatus_ImportReactiveEn();
+ 
+#define ID_ExportReactiveEn 203
+extern float ExportReactiveEn;
+int doWrite_ExportReactiveEn(float value);
+int addWrite_ExportReactiveEn(float value);
+int getStatus_ExportReactiveEn();
+ 
+#define ID_TotalActiveEnerg 204
+extern float TotalActiveEnerg;
+int doWrite_TotalActiveEnerg(float value);
+int addWrite_TotalActiveEnerg(float value);
+int getStatus_TotalActiveEnerg();
+ 
+#define ID_TotalReactiveEne 205
+extern float TotalReactiveEne;
+int doWrite_TotalReactiveEne(float value);
+int addWrite_TotalReactiveEne(float value);
+int getStatus_TotalReactiveEne();
+ 
+#define ID_s_voltage 1000
+extern float s_voltage;
+int doWrite_s_voltage(float value);
+int addWrite_s_voltage(float value);
+int getStatus_s_voltage();
  
 #define ID_RTU0_TYPE_PORT 5000
 extern u_int32_t RTU0_TYPE_PORT;
@@ -1242,9 +1303,9 @@ int addWrite_PLC_DigIn_8(int value);
 int getStatus_PLC_DigIn_8();
  
 #define ID_PLC_Reserved_1 5308
-extern int PLC_Reserved_1;
-int doWrite_PLC_Reserved_1(int value);
-int addWrite_PLC_Reserved_1(int value);
+extern u_int8_t PLC_Reserved_1;
+int doWrite_PLC_Reserved_1(u_int8_t value);
+int addWrite_PLC_Reserved_1(u_int8_t value);
 int getStatus_PLC_Reserved_1();
  
 #define ID_PLC_DigOut_1 5309

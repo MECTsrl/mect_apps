@@ -5,6 +5,7 @@ DINT      <-> int32_t
 UDINT     <-> u_int32_t
 REAL      <-> float
 BIT       <-> int
+BYTE      <-> u_int8_t
 BYTE_BIT  <-> int
 WORD_BIT  <-> int
 DWORD_BIT <-> int
@@ -15,6 +16,16 @@ float Voltage = 0;
 float Current = 0;
 float ActivePower = 0;
 float ApparentPower = 0;
+float ReactivePower = 0;
+float PowerFactor = 0;
+float Frequency = 0;
+float ImportActiveEner = 0;
+float ExportActiveEner = 0;
+float ImportReactiveEn = 0;
+float ExportReactiveEn = 0;
+float TotalActiveEnerg = 0;
+float TotalReactiveEne = 0;
+float s_voltage = 0;
 u_int32_t RTU0_TYPE_PORT = 0;
 u_int32_t RTU0_BAUDRATE = 0;
 u_int32_t RTU0_STATUS = 0;
@@ -215,7 +226,7 @@ int PLC_DigIn_5 = 0;
 int PLC_DigIn_6 = 0;
 int PLC_DigIn_7 = 0;
 int PLC_DigIn_8 = 0;
-int PLC_Reserved_1 = 0;
+u_int8_t PLC_Reserved_1 = 0;
 int PLC_DigOut_1 = 0;
 int PLC_DigOut_2 = 0;
 int PLC_DigOut_3 = 0;
@@ -351,6 +362,186 @@ return addWrite(ID_ApparentPower, &value);
 int getStatus_ApparentPower()
 {
 return getStatus(ID_ApparentPower);
+}
+
+
+int doWrite_ReactivePower(float value)
+{
+return doWrite(ID_ReactivePower,  &value);
+}
+
+
+int addWrite_ReactivePower(float value)
+{
+return addWrite(ID_ReactivePower, &value);
+}
+
+
+int getStatus_ReactivePower()
+{
+return getStatus(ID_ReactivePower);
+}
+
+
+int doWrite_PowerFactor(float value)
+{
+return doWrite(ID_PowerFactor,  &value);
+}
+
+
+int addWrite_PowerFactor(float value)
+{
+return addWrite(ID_PowerFactor, &value);
+}
+
+
+int getStatus_PowerFactor()
+{
+return getStatus(ID_PowerFactor);
+}
+
+
+int doWrite_Frequency(float value)
+{
+return doWrite(ID_Frequency,  &value);
+}
+
+
+int addWrite_Frequency(float value)
+{
+return addWrite(ID_Frequency, &value);
+}
+
+
+int getStatus_Frequency()
+{
+return getStatus(ID_Frequency);
+}
+
+
+int doWrite_ImportActiveEner(float value)
+{
+return doWrite(ID_ImportActiveEner,  &value);
+}
+
+
+int addWrite_ImportActiveEner(float value)
+{
+return addWrite(ID_ImportActiveEner, &value);
+}
+
+
+int getStatus_ImportActiveEner()
+{
+return getStatus(ID_ImportActiveEner);
+}
+
+
+int doWrite_ExportActiveEner(float value)
+{
+return doWrite(ID_ExportActiveEner,  &value);
+}
+
+
+int addWrite_ExportActiveEner(float value)
+{
+return addWrite(ID_ExportActiveEner, &value);
+}
+
+
+int getStatus_ExportActiveEner()
+{
+return getStatus(ID_ExportActiveEner);
+}
+
+
+int doWrite_ImportReactiveEn(float value)
+{
+return doWrite(ID_ImportReactiveEn,  &value);
+}
+
+
+int addWrite_ImportReactiveEn(float value)
+{
+return addWrite(ID_ImportReactiveEn, &value);
+}
+
+
+int getStatus_ImportReactiveEn()
+{
+return getStatus(ID_ImportReactiveEn);
+}
+
+
+int doWrite_ExportReactiveEn(float value)
+{
+return doWrite(ID_ExportReactiveEn,  &value);
+}
+
+
+int addWrite_ExportReactiveEn(float value)
+{
+return addWrite(ID_ExportReactiveEn, &value);
+}
+
+
+int getStatus_ExportReactiveEn()
+{
+return getStatus(ID_ExportReactiveEn);
+}
+
+
+int doWrite_TotalActiveEnerg(float value)
+{
+return doWrite(ID_TotalActiveEnerg,  &value);
+}
+
+
+int addWrite_TotalActiveEnerg(float value)
+{
+return addWrite(ID_TotalActiveEnerg, &value);
+}
+
+
+int getStatus_TotalActiveEnerg()
+{
+return getStatus(ID_TotalActiveEnerg);
+}
+
+
+int doWrite_TotalReactiveEne(float value)
+{
+return doWrite(ID_TotalReactiveEne,  &value);
+}
+
+
+int addWrite_TotalReactiveEne(float value)
+{
+return addWrite(ID_TotalReactiveEne, &value);
+}
+
+
+int getStatus_TotalReactiveEne()
+{
+return getStatus(ID_TotalReactiveEne);
+}
+
+
+int doWrite_s_voltage(float value)
+{
+return doWrite(ID_s_voltage,  &value);
+}
+
+
+int addWrite_s_voltage(float value)
+{
+return addWrite(ID_s_voltage, &value);
+}
+
+
+int getStatus_s_voltage()
+{
+return getStatus(ID_s_voltage);
 }
 
 
@@ -3954,13 +4145,13 @@ return getStatus(ID_PLC_DigIn_8);
 }
 
 
-int doWrite_PLC_Reserved_1(int value)
+int doWrite_PLC_Reserved_1(u_int8_t value)
 {
 return doWrite(ID_PLC_Reserved_1,  &value);
 }
 
 
-int addWrite_PLC_Reserved_1(int value)
+int addWrite_PLC_Reserved_1(u_int8_t value)
 {
 return addWrite(ID_PLC_Reserved_1, &value);
 }
@@ -5131,6 +5322,16 @@ retval += readFromDb(ID_Voltage, &Voltage);
 retval += readFromDb(ID_Current, &Current);
 retval += readFromDb(ID_ActivePower, &ActivePower);
 retval += readFromDb(ID_ApparentPower, &ApparentPower);
+retval += readFromDb(ID_ReactivePower, &ReactivePower);
+retval += readFromDb(ID_PowerFactor, &PowerFactor);
+retval += readFromDb(ID_Frequency, &Frequency);
+retval += readFromDb(ID_ImportActiveEner, &ImportActiveEner);
+retval += readFromDb(ID_ExportActiveEner, &ExportActiveEner);
+retval += readFromDb(ID_ImportReactiveEn, &ImportReactiveEn);
+retval += readFromDb(ID_ExportReactiveEn, &ExportReactiveEn);
+retval += readFromDb(ID_TotalActiveEnerg, &TotalActiveEnerg);
+retval += readFromDb(ID_TotalReactiveEne, &TotalReactiveEne);
+retval += readFromDb(ID_s_voltage, &s_voltage);
 retval += readFromDb(ID_RTU0_TYPE_PORT, &RTU0_TYPE_PORT);
 retval += readFromDb(ID_RTU0_BAUDRATE, &RTU0_BAUDRATE);
 retval += readFromDb(ID_RTU0_STATUS, &RTU0_STATUS);
