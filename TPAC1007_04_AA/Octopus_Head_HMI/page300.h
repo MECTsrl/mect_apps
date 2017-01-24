@@ -25,7 +25,7 @@ public:
     ~page300();
     virtual void reload(void);
     virtual void updateData();
-    void messageBox(char *title, char *text);
+    void messageBox(const char *title, const char *text);
 
 private slots:
     void changeEvent(QEvent * event);

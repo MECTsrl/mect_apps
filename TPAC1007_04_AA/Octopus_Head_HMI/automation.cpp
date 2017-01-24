@@ -61,16 +61,17 @@ static char product_name[][15] = {
 static char recipe_name[][3] = {"-", "1", "2"};
 
 #define abs(v) (((v) > 0)? (v):-(v))
-#define MAX_STEP 64
+
 // TST_...
 QList<u_int16_t> testsIndexes;
-QList<u_int32_t> testsTable[MAX_STEP];
+QList<u_int32_t> testsTable[MAX_RCP_STEP];
 // VAL_...
 QList<u_int16_t> valuesIndexes;
-QList<u_int32_t> valuesTable[MAX_STEP];
+QList<u_int32_t> valuesTable[MAX_RCP_STEP];
 
 static void clearAllTST(void);
 static void doReload();
+static int doWriteRecipe(int step, QList<u_int16_t> *indexes, QList<u_int32_t> table[]);
 
 static u_int16_t previous_PLC_Heartbeat;
 static float previous_PLC_time;
@@ -92,6 +93,9 @@ void setTheWidget(page300 *p)
 
 void loop(void)
 {
+    static int substatus = 0;
+    static int next_step = 0;
+
     if (previous_PLC_Heartbeat == PLC_Heartbeat) {
         if ((PLC_time - last_PLC_time) > 1.0) {
             if (thePage) {
@@ -121,11 +125,13 @@ void loop(void)
             doWrite_DO_RELOAD(0);
             sleep(1); // just for viewing the led change
         }
+        substatus = 0;
         break;
 
     case STATUS_STARTING:
         /* this state is managed in PLC */
         logStop();
+        substatus = 0;
         break;
 
     case STATUS_READY:
@@ -136,47 +142,64 @@ void loop(void)
         if (DO_RELOAD) {
             doReload();
             doWrite_DO_RELOAD(0);
+            substatus = 0;
         }
         if (TEST2_STATUS != TEST_STATUS_REMOTE || TESTx_STATUS != TEST_STATUS_REMOTE) {
             doWrite_STATUS(STATUS_STARTING);
+            substatus = 0;
             return;
         }
-        if (AUTOMATIC || PLC_GO_BUTTON) {
-            int next_step;
-            if (TEST_STEP_MAX == 0) {
-                return;
-            }
-            // next step
-            next_step = TEST_STEP;
-            if (next_step >= TEST_STEP_MAX) {
-                if (DO_REPEAT) {
-                    next_step = 1;
-                } else {
-                    logStop();
-                    if (RESULTS_OK == TEST_STEP_MAX && RESULTS_NG == 0) {
-                        if (thePage) {
-                            thePage->messageBox("TEST RESULT", "RESULT = OK\n\nnow PWR_OFF then touch OK");
-                        }
-                    }
+        switch (substatus) {
+        case 0:
+            if (AUTOMATIC || PLC_GO_BUTTON) {
+                if (TEST_STEP_MAX == 0) {
                     return;
                 }
-            } else {
-                ++next_step;
+                // next step
+                next_step = TEST_STEP;
+                if (next_step >= TEST_STEP_MAX) {
+                    if (DO_REPEAT) {
+                        next_step = 1;
+                    } else {
+                        logStop();
+                        if (RESULTS_OK == TEST_STEP_MAX && RESULTS_NG == 0) {
+                            if (thePage) {
+                                thePage->messageBox("TEST RESULT", "RESULT = OK\n\nnow PWR_OFF then touch OK");
+                            }
+                        }
+                        return;
+                    }
+                } else {
+                    ++next_step;
+                }
+                logStart();
+                doWrite_TEST_STEP(next_step);
+                clearAllTST(); // ***
+                substatus = 1;
             }
-            logStart();
-            doWrite_TEST_STEP(next_step);
-            clearAllTST();
-            if (writeRecipe(next_step - 1, &testsIndexes, testsTable) != 0) {
+            break;
+        case 1:
+            if (doWriteRecipe(next_step - 1, &testsIndexes, testsTable) != 0) {
                 doWrite_STATUS(STATUS_ERROR);
+                substatus = 0;
                 return;
             }
-            if (writeRecipe(next_step - 1, &valuesIndexes, valuesTable) != 0) {
+            substatus = 2;
+            break;
+        case 2:
+            if (doWriteRecipe(next_step - 1, &valuesIndexes, valuesTable) != 0) {
                 doWrite_STATUS(STATUS_ERROR);
+                substatus = 0;
                 return;
             }
+            substatus = 3;
+            break;
+        case 3:
             doWrite_STATUS(STATUS_TESTING);
-            sleep(1);
-            return;
+            substatus = 0;
+            break;
+        default:
+            substatus = 0;
         }
         break;
 
@@ -192,27 +215,32 @@ void loop(void)
             doWrite_STATUS(STATUS_RESETTING);
             return;
         }
+        substatus = 0;
         break;
 
     case STATUS_TESTING:
         /* this state is managed in PLC */
+        substatus = 0;
         break;
 
     case STATUS_DONE:
         /* this state is managed in PLC */
+        substatus = 0;
         break;
 
     case STATUS_RESETTING:
         /* this state is managed in PLC */
+        substatus = 0;
         break;
 
     case STATUS_STOPPING:
         /* this state is managed in PLC */
         logStop();
+        substatus = 0;
         break;
 
     default:
-        ;
+        substatus = 0;
     }
 }
 
@@ -236,116 +264,93 @@ static void doReload()
     }
 }
 
-char *strtok_csv(char *string, const char *separators, char **savedptr)
-{
-    char *p, *s;
-
-    if (separators == NULL || savedptr == NULL) {
-        return NULL;
-    }
-    if (string == NULL) {
-        p = *savedptr;
-        if (p == NULL) {
-            return NULL;
-        }
-    } else {
-        p = string;
-    }
-
-    s = strstr(p, separators);
-    if (s == NULL) {
-        *savedptr = NULL;
-        return p;
-    }
-    *s = 0;
-    *savedptr = s + 1;
-
-    // remove spaces at head
-    while (p < s && isspace(*p)) {
-        ++p;
-    }
-    // remove spaces at tail
-    --s;
-    while (s > p && isspace(*s)) {
-        *s = 0;
-        --s;
-    }
-    return p;
-}
-
 static void clearAllTST(void)
 {
-    beginWrite();
+    doWrite_TST_DigIn_1(0);
+    doWrite_TST_DigIn_2(0);
+    doWrite_TST_DigIn_3(0);
+    doWrite_TST_DigIn_4(0);
+    doWrite_TST_DigIn_5(0);
+    doWrite_TST_DigIn_6(0);
+    doWrite_TST_DigIn_7(0);
+    doWrite_TST_DigIn_8(0);
+    doWrite_TST_DigIn_9(0);
+    doWrite_TST_DigIn_10(0);
+    doWrite_TST_DigIn_11(0);
+    doWrite_TST_DigIn_12(0);
+    doWrite_TST_DigIn_13(0);
+    doWrite_TST_DigIn_14(0);
+    doWrite_TST_DigIn_15(0);
+    doWrite_TST_DigIn_16(0);
 
-    addWrite_TST_DigIn_1(0);
-    addWrite_TST_DigIn_2(0);
-    addWrite_TST_DigIn_3(0);
-    addWrite_TST_DigIn_4(0);
-    addWrite_TST_DigIn_5(0);
-    addWrite_TST_DigIn_6(0);
-    addWrite_TST_DigIn_7(0);
-    addWrite_TST_DigIn_8(0);
-    addWrite_TST_DigIn_9(0);
-    addWrite_TST_DigIn_10(0);
-    addWrite_TST_DigIn_11(0);
-    addWrite_TST_DigIn_12(0);
-    addWrite_TST_DigIn_13(0);
-    addWrite_TST_DigIn_14(0);
-    addWrite_TST_DigIn_15(0);
-    addWrite_TST_DigIn_16(0);
+    doWrite_TST_DigOut_1(0);
+    doWrite_TST_DigOut_2(0);
+    doWrite_TST_DigOut_3(0);
+    doWrite_TST_DigOut_4(0);
+    doWrite_TST_DigOut_5(0);
+    doWrite_TST_DigOut_6(0);
+    doWrite_TST_DigOut_7(0);
+    doWrite_TST_DigOut_8(0);
+    doWrite_TST_DigOut_9(0);
+    doWrite_TST_DigOut_10(0);
+    doWrite_TST_DigOut_11(0);
+    doWrite_TST_DigOut_12(0);
+    doWrite_TST_DigOut_13(0);
+    doWrite_TST_DigOut_14(0);
+    doWrite_TST_DigOut_15(0);
+    doWrite_TST_DigOut_16(0);
 
-    addWrite_TST_DigOut_1(0);
-    addWrite_TST_DigOut_2(0);
-    addWrite_TST_DigOut_3(0);
-    addWrite_TST_DigOut_4(0);
-    addWrite_TST_DigOut_5(0);
-    addWrite_TST_DigOut_6(0);
-    addWrite_TST_DigOut_7(0);
-    addWrite_TST_DigOut_8(0);
-    addWrite_TST_DigOut_9(0);
-    addWrite_TST_DigOut_10(0);
-    addWrite_TST_DigOut_11(0);
-    addWrite_TST_DigOut_12(0);
-    addWrite_TST_DigOut_13(0);
-    addWrite_TST_DigOut_14(0);
-    addWrite_TST_DigOut_15(0);
-    addWrite_TST_DigOut_16(0);
+    doWrite_TST_AnIn_1(0);
+    doWrite_TST_AnIn_2(0);
+    doWrite_TST_AnIn_3(0);
+    doWrite_TST_AnIn_4(0);
+    doWrite_TST_AnIn_5(0);
+    doWrite_TST_AnIn_6(0);
+    doWrite_TST_AnIn_7(0);
+    doWrite_TST_AnIn_8(0);
+    doWrite_TST_AnIn_9(0);
+    doWrite_TST_AnIn_10(0);
+    doWrite_TST_AnIn_11(0);
+    doWrite_TST_AnIn_12(0);
 
-    addWrite_TST_AnIn_1(0);
-    addWrite_TST_AnIn_2(0);
-    addWrite_TST_AnIn_3(0);
-    addWrite_TST_AnIn_4(0);
-    addWrite_TST_AnIn_5(0);
-    addWrite_TST_AnIn_6(0);
-    addWrite_TST_AnIn_7(0);
-    addWrite_TST_AnIn_8(0);
-    addWrite_TST_AnIn_9(0);
-    addWrite_TST_AnIn_10(0);
-    addWrite_TST_AnIn_11(0);
-    addWrite_TST_AnIn_12(0);
+    doWrite_TST_AnOut_1(0);
+    doWrite_TST_AnOut_2(0);
+    doWrite_TST_AnOut_3(0);
+    doWrite_TST_AnOut_4(0);
 
-    addWrite_TST_AnOut_1(0);
-    addWrite_TST_AnOut_2(0);
-    addWrite_TST_AnOut_3(0);
-    addWrite_TST_AnOut_4(0);
+    doWrite_TST_Tamb(0);
+    doWrite_TST_RPM(0);
+    doWrite_TST_VCC_set(0);
+    doWrite_TST_mA_max(0);
+    doWrite_TST_VCC_fbk(0);
+    doWrite_TST_mA_fbk(0);
+    doWrite_TST_FWrevision(0);
+    doWrite_TST_HWconfig(0);
 
-    addWrite_TST_Tamb(0);
-    addWrite_TST_RPM(0);
-    addWrite_TST_VCC_set(0);
-    addWrite_TST_mA_max(0);
-    addWrite_TST_VCC_fbk(0);
-    addWrite_TST_mA_fbk(0);
-    addWrite_TST_FWrevision(0);
-    addWrite_TST_HWconfig(0);
+    doWrite_TST_RTUS_WR(0);
+    doWrite_TST_RTUS_RD(0);
+    doWrite_TST_RTU1_WR(0);
+    doWrite_TST_RTU1_RD(0);
+    doWrite_TST_RTU3_WR(0);
+    doWrite_TST_RTU3_RD(0);
+    doWrite_TST_CAN1_WR(0);
+    doWrite_TST_CAN1_RD(0);
+}
 
-    addWrite_TST_RTUS_WR(0);
-    addWrite_TST_RTUS_RD(0);
-    addWrite_TST_RTU1_WR(0);
-    addWrite_TST_RTU1_RD(0);
-    addWrite_TST_RTU3_WR(0);
-    addWrite_TST_RTU3_RD(0);
-    addWrite_TST_CAN1_WR(0);
-    addWrite_TST_CAN1_RD(0);
+static int doWriteRecipe(int step, QList<u_int16_t> *indexes, QList<u_int32_t> table[])
+{
+    int errors = 0;
 
-    endWrite();
+    if (step >= MAX_RCP_STEP)
+    {
+        return -1;
+    }
+    for (int i = 0; i < table[step].count(); i++)
+    {
+        u_int16_t addr = indexes->at(i);
+        u_int32_t value = table[step].at(i);
+        errors += doWrite(addr, &value);
+    }
+
+    return errors;
 }

@@ -50,7 +50,7 @@ page300::page300(QWidget *parent) :
     setTheWidget(this);
 }
 
-void page300::messageBox(char *title, char *text)
+void page300::messageBox(const char *title, const char *text)
 {
     qtitle = QString(title);
     qtext = QString(text);
