@@ -5,7 +5,7 @@
 # @section LICENSE
 # Copyright Mect s.r.l. 2013
 #
-# @brief Qmake project file for TPAC1008_02_AE
+# @brief Qmake project file for TPAC1008_02_AF
 #
 
 INSTALLS += target
@@ -31,7 +31,7 @@ OTHER_FILES += \
 
 include(./common.pri)
 
-TYPE = "TPAC1008_02_AE"
+TYPE = "TPAC1008_02_AF"
 
 # display size
 MODEL = "<width>800</width><height>480</height>"

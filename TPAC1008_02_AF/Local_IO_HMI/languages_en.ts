@@ -569,8 +569,8 @@
     <message>
         <location filename="page100.ui" line="2937"/>
         <location filename="page100.ui" line="2940"/>
-        <source>TPAC1008_02_AD</source>
-        <oldsource>TPAC1008_02_AE</oldsource>
+        <source>TPAC1008_02_AF</source>
+        <oldsource>TPAC1008_02_AD</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -587,9 +587,8 @@
     </message>
     <message>
         <location filename="page100.ui" line="3050"/>
-        <location filename="page100.ui" line="3450"/>
-        <source>1;[V] 0..10;0;--</source>
-        <oldsource>1;[mA] 4..20;0;--</oldsource>
+        <source>0;--;2;[V] 0..10;3;[%] PWM</source>
+        <oldsource>1;[V] 0..10;0;--</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -646,6 +645,11 @@
         <location filename="page100.ui" line="3410"/>
         <location filename="page100.ui" line="3419"/>
         <source>PLC_AnOutConf_4</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page100.ui" line="3450"/>
+        <source>0;--;1;[mA] 4..20</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

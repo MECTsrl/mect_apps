@@ -36,7 +36,7 @@ END_VAR
 					substatus := 3;
 				end_if;
 			3: (* wait for input settling *)
-		        timer(IN := TRUE, PT := T#3000ms); (* TPAC1006 AnIn *)
+		        timer(IN := TRUE, PT := T#1000ms);
 				if timer.Q then
 					timer(IN := FALSE);
 					(* for each tested input read the actual value *)

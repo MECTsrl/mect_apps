@@ -31,7 +31,7 @@ OTHER_FILES += \
 
 include(./common.pri)
 
-TYPE = "TPAC1008_02_AE"
+TYPE = "TPAC1008_02_AD"
 
 # display size
 MODEL = "<width>800</width><height>480</height>"

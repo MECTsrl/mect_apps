@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 2.7.84, 2017-01-13T18:16:26. -->
+<!-- Written by QtCreator 2.7.84, 2017-01-24T16:39:40. -->
 <qtcreator>
  <data>
   <variable>ProjectExplorer.Project.ActiveTarget</variable>
@@ -245,13 +245,13 @@
        <value type="QString">C:/Qt485/imx28/rootfs</value>
       </valuelist>
       <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedTimes">
-       <value type="QDateTime">2017-01-13T17:40:33</value>
-       <value type="QDateTime">2017-01-13T17:40:33</value>
-       <value type="QDateTime">2017-01-13T17:40:34</value>
-       <value type="QDateTime">2017-01-13T17:40:33</value>
-       <value type="QDateTime">2017-01-13T17:40:33</value>
-       <value type="QDateTime">2017-01-13T17:40:33</value>
-       <value type="QDateTime">2017-01-13T17:40:33</value>
+       <value type="QDateTime">2017-01-24T16:37:33</value>
+       <value type="QDateTime">2017-01-24T16:37:33</value>
+       <value type="QDateTime">2017-01-24T16:37:34</value>
+       <value type="QDateTime">2017-01-24T16:37:33</value>
+       <value type="QDateTime">2017-01-24T16:37:33</value>
+       <value type="QDateTime">2017-01-24T16:37:33</value>
+       <value type="QDateTime">2017-01-24T16:37:33</value>
       </valuelist>
       <value type="bool" key="RemoteLinux.GenericDirectUploadStep.Incremental">false</value>
      </valuemap>

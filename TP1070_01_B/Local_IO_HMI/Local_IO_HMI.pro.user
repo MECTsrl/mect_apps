@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 2.7.84, 2016-12-07T14:17:25. -->
+<!-- Written by QtCreator 2.7.84, 2017-01-24T17:36:10. -->
 <qtcreator>
  <data>
   <variable>ProjectExplorer.Project.ActiveTarget</variable>
@@ -208,11 +208,51 @@
       <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Upload files via SFTP</value>
       <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
       <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">RemoteLinux.DirectUploadStep</value>
-      <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedFiles"/>
-      <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedHosts"/>
-      <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedRemotePaths"/>
-      <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedSysroots"/>
-      <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedTimes"/>
+      <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedFiles">
+       <value type="QString">C:/MectApps/TP1070_01_B/Local_IO_HMI/config/system.ini</value>
+       <value type="QString">C:/MectApps/TP1070_01_B/Local_IO_HMI/config/iomap1.cmg</value>
+       <value type="QString">C:/MectApps/TP1070_01_B/Local_IO_HMI/config/network1.cmg</value>
+       <value type="QString">C:/MectApps/TP1070_01_B/Local_IO_HMI/config/Crosstable.csv</value>
+       <value type="QString">C:/MectApps/TP1070_01_B/Local_IO_HMI/config/trend1.csv</value>
+       <value type="QString">C:/MectApps/TP1070_01_B/Local_IO_HMI/hmi</value>
+       <value type="QString">C:/MectApps/TP1070_01_B/Local_IO_HMI/config/splash.png</value>
+      </valuelist>
+      <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedHosts">
+       <value type="QString">192.168.5.211</value>
+       <value type="QString">192.168.5.211</value>
+       <value type="QString">192.168.5.211</value>
+       <value type="QString">192.168.5.211</value>
+       <value type="QString">192.168.5.211</value>
+       <value type="QString">192.168.5.211</value>
+       <value type="QString">192.168.5.211</value>
+      </valuelist>
+      <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedRemotePaths">
+       <value type="QString">/local/etc/sysconfig</value>
+       <value type="QString">/local/etc/sysconfig</value>
+       <value type="QString">/local/etc/sysconfig</value>
+       <value type="QString">/local/etc/sysconfig</value>
+       <value type="QString">/local/data/customtrend</value>
+       <value type="QString">/local/root</value>
+       <value type="QString">/local/etc/sysconfig/img</value>
+      </valuelist>
+      <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedSysroots">
+       <value type="QString">C:/Qt485/imx28/rootfs</value>
+       <value type="QString">C:/Qt485/imx28/rootfs</value>
+       <value type="QString">C:/Qt485/imx28/rootfs</value>
+       <value type="QString">C:/Qt485/imx28/rootfs</value>
+       <value type="QString">C:/Qt485/imx28/rootfs</value>
+       <value type="QString">C:/Qt485/imx28/rootfs</value>
+       <value type="QString">C:/Qt485/imx28/rootfs</value>
+      </valuelist>
+      <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedTimes">
+       <value type="QDateTime">2017-01-24T17:28:53</value>
+       <value type="QDateTime">2017-01-24T17:28:53</value>
+       <value type="QDateTime">2017-01-24T17:28:53</value>
+       <value type="QDateTime">2017-01-24T17:28:52</value>
+       <value type="QDateTime">2017-01-24T17:28:53</value>
+       <value type="QDateTime">2017-01-24T17:28:53</value>
+       <value type="QDateTime">2017-01-24T17:28:53</value>
+      </valuelist>
       <value type="bool" key="RemoteLinux.GenericDirectUploadStep.Incremental">false</value>
      </valuemap>
      <value type="int" key="ProjectExplorer.BuildStepList.StepsCount">3</value>

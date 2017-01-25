@@ -86,6 +86,7 @@ void page300::updateData()
     }
     /* call the parent updateData member */
     page::updateData();
+    ui->label->setText(QString("A=%1 R=%2") .arg(AUTOMATIC) .arg(DO_REPEAT));
     if (! qtitle.isEmpty() ) {
         QMessageBox box(this);
         box.setWindowTitle(qtitle);

@@ -1578,6 +1578,19 @@ ON</string>
     <enum>ATCMlabel::Hex</enum>
    </property>
   </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>90</y>
+     <width>91</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
   <zorder>atcmAnimation_STATUS</zorder>
   <zorder>label_Qt_Project</zorder>
   <zorder>atcmButton_menu</zorder>
@@ -1612,6 +1625,7 @@ ON</string>
   <zorder>atcmLabel_PLC_Heartbeat</zorder>
   <zorder>atcmButton_16</zorder>
   <zorder>atcmButton_AUTO</zorder>
+  <zorder>label</zorder>
  </widget>
  <customwidgets>
   <customwidget>
