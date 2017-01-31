@@ -69,9 +69,8 @@ QList<u_int32_t> testsTable[MAX_RCP_STEP];
 QList<u_int16_t> valuesIndexes;
 QList<u_int32_t> valuesTable[MAX_RCP_STEP];
 
-static void clearAllTST(void);
+static int clearAllTST(void);
 static void doReload();
-static int doWriteRecipe(int step, QList<u_int16_t> *indexes, QList<u_int32_t> table[]);
 
 static u_int16_t previous_PLC_Heartbeat;
 static float previous_PLC_time;
@@ -114,7 +113,6 @@ void loop(void)
         }
     }
 
-
     switch (STATUS) {   // OCTOPUS STATE MACHINE
 
     case STATUS_IDLE:
@@ -122,7 +120,6 @@ void loop(void)
         logStop();
         if (DO_RELOAD) {
             doReload();
-            doWrite_DO_RELOAD(0);
             sleep(1); // just for viewing the led change
         }
         substatus = 0;
@@ -141,8 +138,8 @@ void loop(void)
         }
         if (DO_RELOAD) {
             doReload();
-            doWrite_DO_RELOAD(0);
             substatus = 0;
+            return;
         }
         if (TEST2_STATUS != TEST_STATUS_REMOTE || TESTx_STATUS != TEST_STATUS_REMOTE) {
             doWrite_STATUS(STATUS_STARTING);
@@ -174,33 +171,40 @@ void loop(void)
                 }
                 logStart();
                 doWrite_TEST_STEP(next_step);
-                clearAllTST(); // ***
                 substatus = 1;
             }
             break;
         case 1:
-            if (writeRecipe(next_step - 1, &testsIndexes, testsTable) != 0) {
-                doWrite_STATUS(STATUS_ERROR);
-                substatus = 0;
+            if (clearAllTST() != 0) {
+                fprintf(stderr, "clearAllTST() failed, retry after 1s\n");
+                sleep(1);
                 return;
             }
             substatus = 2;
             break;
         case 2:
-            if (writeRecipe(next_step - 1, &valuesIndexes, valuesTable) != 0) {
-                doWrite_STATUS(STATUS_ERROR);
-                substatus = 0;
+            if (writeRecipe(next_step - 1, &testsIndexes, testsTable) != 0) {
+                fprintf(stderr, "writeRecipe(tests) failed, retry after 1s\n");
+                sleep(1);
                 return;
             }
             substatus = 3;
             break;
         case 3:
-            doWrite_STATUS(STATUS_TESTING);
+            if (writeRecipe(next_step - 1, &valuesIndexes, valuesTable) != 0) {
+                fprintf(stderr, "writeRecipe(values) failed, retry after 1s\n");
+                sleep(1);
+                return;
+            }
             substatus = 4;
             break;
         case 4:
+            doWrite_STATUS(STATUS_TESTING);
+            substatus = 5;
+            break;
+        case 5:
             if (thePage) {
-                thePage->messageBox("Warning", "substatus 4");
+                thePage->messageBox("Warning", "substatus 5");
             }
             break;
         default:
@@ -264,102 +268,89 @@ static void doReload()
 
     if (t == v && t > 0 && v > 0) {
         doWrite_TEST_STEP_MAX(t);
+        doWrite_DO_RELOAD(0);
     } else {
         doWrite_TEST_STEP_MAX(0);
     }
 }
 
-static void clearAllTST(void)
-{
-    beginWrite();
-
-    addWrite_TST_DigIn_1(0);
-    addWrite_TST_DigIn_2(0);
-    addWrite_TST_DigIn_3(0);
-    addWrite_TST_DigIn_4(0);
-    addWrite_TST_DigIn_5(0);
-    addWrite_TST_DigIn_6(0);
-    addWrite_TST_DigIn_7(0);
-    addWrite_TST_DigIn_8(0);
-    addWrite_TST_DigIn_9(0);
-    addWrite_TST_DigIn_10(0);
-    addWrite_TST_DigIn_11(0);
-    addWrite_TST_DigIn_12(0);
-    addWrite_TST_DigIn_13(0);
-    addWrite_TST_DigIn_14(0);
-    addWrite_TST_DigIn_15(0);
-    addWrite_TST_DigIn_16(0);
-
-    addWrite_TST_DigOut_1(0);
-    addWrite_TST_DigOut_2(0);
-    addWrite_TST_DigOut_3(0);
-    addWrite_TST_DigOut_4(0);
-    addWrite_TST_DigOut_5(0);
-    addWrite_TST_DigOut_6(0);
-    addWrite_TST_DigOut_7(0);
-    addWrite_TST_DigOut_8(0);
-    addWrite_TST_DigOut_9(0);
-    addWrite_TST_DigOut_10(0);
-    addWrite_TST_DigOut_11(0);
-    addWrite_TST_DigOut_12(0);
-    addWrite_TST_DigOut_13(0);
-    addWrite_TST_DigOut_14(0);
-    addWrite_TST_DigOut_15(0);
-    addWrite_TST_DigOut_16(0);
-
-    addWrite_TST_AnIn_1(0);
-    addWrite_TST_AnIn_2(0);
-    addWrite_TST_AnIn_3(0);
-    addWrite_TST_AnIn_4(0);
-    addWrite_TST_AnIn_5(0);
-    addWrite_TST_AnIn_6(0);
-    addWrite_TST_AnIn_7(0);
-    addWrite_TST_AnIn_8(0);
-    addWrite_TST_AnIn_9(0);
-    addWrite_TST_AnIn_10(0);
-    addWrite_TST_AnIn_11(0);
-    addWrite_TST_AnIn_12(0);
-
-    addWrite_TST_AnOut_1(0);
-    addWrite_TST_AnOut_2(0);
-    addWrite_TST_AnOut_3(0);
-    addWrite_TST_AnOut_4(0);
-
-    addWrite_TST_Tamb(0);
-    addWrite_TST_RPM(0);
-    addWrite_TST_VCC_set(0);
-    addWrite_TST_mA_max(0);
-    addWrite_TST_VCC_fbk(0);
-    addWrite_TST_mA_fbk(0);
-    addWrite_TST_FWrevision(0);
-    addWrite_TST_HWconfig(0);
-
-    addWrite_TST_RTUS_WR(0);
-    addWrite_TST_RTUS_RD(0);
-    addWrite_TST_RTU1_WR(0);
-    addWrite_TST_RTU1_RD(0);
-    addWrite_TST_RTU3_WR(0);
-    addWrite_TST_RTU3_RD(0);
-    addWrite_TST_CAN1_WR(0);
-    addWrite_TST_CAN1_RD(0);
-
-    endWrite();
-}
-
-static int doWriteRecipe(int step, QList<u_int16_t> *indexes, QList<u_int32_t> table[])
+static int clearAllTST(void)
 {
     int errors = 0;
 
-    if (step >= MAX_RCP_STEP)
-    {
-        return -1;
-    }
-    for (int i = 0; i < table[step].count(); i++)
-    {
-        u_int16_t addr = indexes->at(i);
-        u_int32_t value = table[step].at(i);
-        errors += doWrite(addr, &value);
-    }
+    beginWrite();
+
+    errors += addWrite_TST_DigIn_1(0);
+    errors += addWrite_TST_DigIn_2(0);
+    errors += addWrite_TST_DigIn_3(0);
+    errors += addWrite_TST_DigIn_4(0);
+    errors += addWrite_TST_DigIn_5(0);
+    errors += addWrite_TST_DigIn_6(0);
+    errors += addWrite_TST_DigIn_7(0);
+    errors += addWrite_TST_DigIn_8(0);
+    errors += addWrite_TST_DigIn_9(0);
+    errors += addWrite_TST_DigIn_10(0);
+    errors += addWrite_TST_DigIn_11(0);
+    errors += addWrite_TST_DigIn_12(0);
+    errors += addWrite_TST_DigIn_13(0);
+    errors += addWrite_TST_DigIn_14(0);
+    errors += addWrite_TST_DigIn_15(0);
+    errors += addWrite_TST_DigIn_16(0);
+
+    errors += addWrite_TST_DigOut_1(0);
+    errors += addWrite_TST_DigOut_2(0);
+    errors += addWrite_TST_DigOut_3(0);
+    errors += addWrite_TST_DigOut_4(0);
+    errors += addWrite_TST_DigOut_5(0);
+    errors += addWrite_TST_DigOut_6(0);
+    errors += addWrite_TST_DigOut_7(0);
+    errors += addWrite_TST_DigOut_8(0);
+    errors += addWrite_TST_DigOut_9(0);
+    errors += addWrite_TST_DigOut_10(0);
+    errors += addWrite_TST_DigOut_11(0);
+    errors += addWrite_TST_DigOut_12(0);
+    errors += addWrite_TST_DigOut_13(0);
+    errors += addWrite_TST_DigOut_14(0);
+    errors += addWrite_TST_DigOut_15(0);
+    errors += addWrite_TST_DigOut_16(0);
+
+    errors += addWrite_TST_AnIn_1(0);
+    errors += addWrite_TST_AnIn_2(0);
+    errors += addWrite_TST_AnIn_3(0);
+    errors += addWrite_TST_AnIn_4(0);
+    errors += addWrite_TST_AnIn_5(0);
+    errors += addWrite_TST_AnIn_6(0);
+    errors += addWrite_TST_AnIn_7(0);
+    errors += addWrite_TST_AnIn_8(0);
+    errors += addWrite_TST_AnIn_9(0);
+    errors += addWrite_TST_AnIn_10(0);
+    errors += addWrite_TST_AnIn_11(0);
+    errors += addWrite_TST_AnIn_12(0);
+
+    errors += addWrite_TST_AnOut_1(0);
+    errors += addWrite_TST_AnOut_2(0);
+    errors += addWrite_TST_AnOut_3(0);
+    errors += addWrite_TST_AnOut_4(0);
+
+    errors += addWrite_TST_Tamb(0);
+    errors += addWrite_TST_RPM(0);
+    errors += addWrite_TST_VCC_set(0);
+    errors += addWrite_TST_mA_max(0);
+    errors += addWrite_TST_VCC_fbk(0);
+    errors += addWrite_TST_mA_fbk(0);
+    errors += addWrite_TST_FWrevision(0);
+    errors += addWrite_TST_HWconfig(0);
+
+    errors += addWrite_TST_RTUS_WR(0);
+    errors += addWrite_TST_RTUS_RD(0);
+    errors += addWrite_TST_RTU1_WR(0);
+    errors += addWrite_TST_RTU1_RD(0);
+    errors += addWrite_TST_RTU3_WR(0);
+    errors += addWrite_TST_RTU3_RD(0);
+    errors += addWrite_TST_CAN1_WR(0);
+    errors += addWrite_TST_CAN1_RD(0);
+
+    endWrite();
 
     return errors;
 }
