@@ -2270,7 +2270,7 @@ ON</string>
      <normaloff>:/off.png</normaloff>:/off.png</iconset>
    </property>
   </widget>
-  <widget class="ATCMcombobox" name="atcmComboBox_PLC_AnOutConf_2">
+  <widget class="ATCMcombobox" name="atcmComboBox_PLC_AnOutConf_1">
    <property name="geometry">
     <rect>
      <x>122</x>
@@ -2329,7 +2329,7 @@ ON</string>
     <string>0;---;1;[mA] 4..20;2;[V] 0..10;3;[%] PWM</string>
    </property>
   </widget>
-  <widget class="ATCMcombobox" name="atcmComboBox_PLC_AnOutConf_3">
+  <widget class="ATCMcombobox" name="atcmComboBox_PLC_AnOutConf_2">
    <property name="geometry">
     <rect>
      <x>210</x>
@@ -2388,7 +2388,7 @@ ON</string>
     <string>0;---;1;[mA] 4..20;2;[V] 0..10;3;[%] PWM</string>
    </property>
   </widget>
-  <widget class="ATCMcombobox" name="atcmComboBox_PLC_AnOutConf_4">
+  <widget class="ATCMcombobox" name="atcmComboBox_PLC_AnOutConf_3">
    <property name="geometry">
     <rect>
      <x>300</x>
@@ -2447,7 +2447,7 @@ ON</string>
     <string>0;---;1;[mA] 4..20;2;[V] 0..10;3;[%] PWM</string>
    </property>
   </widget>
-  <widget class="ATCMcombobox" name="atcmComboBox_PLC_AnOutConf_5">
+  <widget class="ATCMcombobox" name="atcmComboBox_PLC_AnOutConf_4">
    <property name="geometry">
     <rect>
      <x>390</x>
@@ -2557,10 +2557,10 @@ ON</string>
   <zorder>atcmLabel_PLC_Heartbeat_2</zorder>
   <zorder>atcmButton_16</zorder>
   <zorder>atcmLed_GO_1</zorder>
+  <zorder>atcmComboBox_PLC_AnOutConf_1</zorder>
   <zorder>atcmComboBox_PLC_AnOutConf_2</zorder>
   <zorder>atcmComboBox_PLC_AnOutConf_3</zorder>
   <zorder>atcmComboBox_PLC_AnOutConf_4</zorder>
-  <zorder>atcmComboBox_PLC_AnOutConf_5</zorder>
   <zorder>atcmButton_3</zorder>
   <zorder>atcmButton_4</zorder>
  </widget>

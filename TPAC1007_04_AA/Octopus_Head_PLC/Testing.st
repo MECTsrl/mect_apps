@@ -116,7 +116,10 @@ END_VAR
 			if timer.Q then
 				timer(IN := FALSE);
 				STATUS := STATUS_DONE;
+				substatus := 9;
 			end_if;
+		9: 
+			;
 		else
 			;
 		end_case;
@@ -129,6 +132,8 @@ END_VAR
 		if (AUTOMATIC and RESULT = RESULT_OK) or PLC_DigIn_4 then (* GO *)
 			(* ClearPLC(); *)
 			STATUS := STATUS_RESETTING;
+	        TEST2_COMMAND := TEST_STATUS_REMOTE;
+	        TESTx_COMMAND := TEST_STATUS_REMOTE;
 			return;
 		end_if;
 		
@@ -139,6 +144,7 @@ END_VAR
 		end_if;
 	    if (TEST2_STATUS = TEST_STATUS_REMOTE and TESTx_STATUS = TEST_STATUS_REMOTE) then
 			RESULT := RESULT_UNKNOWN; PLC_AnOut_3 := 0; (* Trigger Reset *)
+			substatus := 0;
 			STATUS := STATUS_READY;
 			return;
 		end_if;
