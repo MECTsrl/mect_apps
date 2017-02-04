@@ -62,6 +62,9 @@ static char recipe_name[][3] = {"-", "1", "2"};
 
 #define abs(v) (((v) > 0)? (v):-(v))
 
+// TST_... (Zeroes)
+QList<u_int16_t> zeroesIndexes;
+QList<u_int32_t> zeroesTable[MAX_RCP_STEP];
 // TST_...
 QList<u_int16_t> testsIndexes;
 QList<u_int32_t> testsTable[MAX_RCP_STEP];
@@ -69,7 +72,6 @@ QList<u_int32_t> testsTable[MAX_RCP_STEP];
 QList<u_int16_t> valuesIndexes;
 QList<u_int32_t> valuesTable[MAX_RCP_STEP];
 
-static int clearAllTST(void);
 static void doReload();
 
 static u_int16_t previous_PLC_Heartbeat;
@@ -175,17 +177,11 @@ void loop(void)
             }
             break;
         case 1:
-            if (clearAllTST() != 0) {
-                fprintf(stderr, "clearAllTST() failed, retry after 1s\n");
+            if (writeRecipe(next_step - 1, &zeroesIndexes, zeroesTable) != 0) {
+                fprintf(stderr, "writeRecipe(zeroes) failed, retry after 1s\n");
                 sleep(1);
                 return;
             }
-            substatus = 101;
-            break;
-        case 101:
-            substatus = 102;
-            break;
-        case 102:
             substatus = 2;
             break;
         case 2:
@@ -264,6 +260,10 @@ static void doReload()
     char filename[256];
     int t, v;
 
+    // file: /local/data/recipe/Zeroes/0.csv
+    snprintf(filename, 256, "%s/%s/%s.csv", RECIPE_DIR, "Zeroes", "0");
+    t = loadRecipe(filename, &zeroesIndexes, zeroesTable);
+
     // file: /local/data/recipe/TPAC1007_4AA/2.csv
     snprintf(filename, 256, "%s/%s/%s.csv", RECIPE_DIR, product_name[PRODUCT_ID], recipe_name[TEST_ID]);
     t = loadRecipe(filename, &testsIndexes, testsTable);
@@ -278,158 +278,4 @@ static void doReload()
     } else {
         doWrite_TEST_STEP_MAX(0);
     }
-}
-
-static int clearAllTST(void)
-{
-    int errors = 0;
-
-#if 1
-    beginWrite();
-
-    errors += addWrite_TST_DigIn_1(0);
-    errors += addWrite_TST_DigIn_2(0);
-    errors += addWrite_TST_DigIn_3(0);
-    errors += addWrite_TST_DigIn_4(0);
-    errors += addWrite_TST_DigIn_5(0);
-    errors += addWrite_TST_DigIn_6(0);
-    errors += addWrite_TST_DigIn_7(0);
-    errors += addWrite_TST_DigIn_8(0);
-    errors += addWrite_TST_DigIn_9(0);
-    errors += addWrite_TST_DigIn_10(0);
-    errors += addWrite_TST_DigIn_11(0);
-    errors += addWrite_TST_DigIn_12(0);
-    errors += addWrite_TST_DigIn_13(0);
-    errors += addWrite_TST_DigIn_14(0);
-    errors += addWrite_TST_DigIn_15(0);
-    errors += addWrite_TST_DigIn_16(0);
-
-    errors += addWrite_TST_DigOut_1(0);
-    errors += addWrite_TST_DigOut_2(0);
-    errors += addWrite_TST_DigOut_3(0);
-    errors += addWrite_TST_DigOut_4(0);
-    errors += addWrite_TST_DigOut_5(0);
-    errors += addWrite_TST_DigOut_6(0);
-    errors += addWrite_TST_DigOut_7(0);
-    errors += addWrite_TST_DigOut_8(0);
-    errors += addWrite_TST_DigOut_9(0);
-    errors += addWrite_TST_DigOut_10(0);
-    errors += addWrite_TST_DigOut_11(0);
-    errors += addWrite_TST_DigOut_12(0);
-    errors += addWrite_TST_DigOut_13(0);
-    errors += addWrite_TST_DigOut_14(0);
-    errors += addWrite_TST_DigOut_15(0);
-    errors += addWrite_TST_DigOut_16(0);
-
-    errors += addWrite_TST_AnIn_1(0);
-    errors += addWrite_TST_AnIn_2(0);
-    errors += addWrite_TST_AnIn_3(0);
-    errors += addWrite_TST_AnIn_4(0);
-    errors += addWrite_TST_AnIn_5(0);
-    errors += addWrite_TST_AnIn_6(0);
-    errors += addWrite_TST_AnIn_7(0);
-    errors += addWrite_TST_AnIn_8(0);
-    errors += addWrite_TST_AnIn_9(0);
-    errors += addWrite_TST_AnIn_10(0);
-    errors += addWrite_TST_AnIn_11(0);
-    errors += addWrite_TST_AnIn_12(0);
-
-    errors += addWrite_TST_AnOut_1(0);
-    errors += addWrite_TST_AnOut_2(0);
-    errors += addWrite_TST_AnOut_3(0);
-    errors += addWrite_TST_AnOut_4(0);
-
-    errors += addWrite_TST_Tamb(0);
-    errors += addWrite_TST_RPM(0);
-    errors += addWrite_TST_VCC_set(0);
-    errors += addWrite_TST_mA_max(0);
-    errors += addWrite_TST_VCC_fbk(0);
-    errors += addWrite_TST_mA_fbk(0);
-    errors += addWrite_TST_FWrevision(0);
-    errors += addWrite_TST_HWconfig(0);
-
-    errors += addWrite_TST_RTUS_WR(0);
-    errors += addWrite_TST_RTUS_RD(0);
-    errors += addWrite_TST_RTU1_WR(0);
-    errors += addWrite_TST_RTU1_RD(0);
-    errors += addWrite_TST_RTU3_WR(0);
-    errors += addWrite_TST_RTU3_RD(0);
-    errors += addWrite_TST_CAN1_WR(0);
-    errors += addWrite_TST_CAN1_RD(0);
-
-    endWrite();
-#else
-
-    errors += doWrite_TST_DigIn_1(0);
-    errors += doWrite_TST_DigIn_2(0);
-    errors += doWrite_TST_DigIn_3(0);
-    errors += doWrite_TST_DigIn_4(0);
-    errors += doWrite_TST_DigIn_5(0);
-    errors += doWrite_TST_DigIn_6(0);
-    errors += doWrite_TST_DigIn_7(0);
-    errors += doWrite_TST_DigIn_8(0);
-    errors += doWrite_TST_DigIn_9(0);
-    errors += doWrite_TST_DigIn_10(0);
-    errors += doWrite_TST_DigIn_11(0);
-    errors += doWrite_TST_DigIn_12(0);
-    errors += doWrite_TST_DigIn_13(0);
-    errors += doWrite_TST_DigIn_14(0);
-    errors += doWrite_TST_DigIn_15(0);
-    errors += doWrite_TST_DigIn_16(0);
-
-    errors += doWrite_TST_DigOut_1(0);
-    errors += doWrite_TST_DigOut_2(0);
-    errors += doWrite_TST_DigOut_3(0);
-    errors += doWrite_TST_DigOut_4(0);
-    errors += doWrite_TST_DigOut_5(0);
-    errors += doWrite_TST_DigOut_6(0);
-    errors += doWrite_TST_DigOut_7(0);
-    errors += doWrite_TST_DigOut_8(0);
-    errors += doWrite_TST_DigOut_9(0);
-    errors += doWrite_TST_DigOut_10(0);
-    errors += doWrite_TST_DigOut_11(0);
-    errors += doWrite_TST_DigOut_12(0);
-    errors += doWrite_TST_DigOut_13(0);
-    errors += doWrite_TST_DigOut_14(0);
-    errors += doWrite_TST_DigOut_15(0);
-    errors += doWrite_TST_DigOut_16(0);
-
-    errors += doWrite_TST_AnIn_1(0);
-    errors += doWrite_TST_AnIn_2(0);
-    errors += doWrite_TST_AnIn_3(0);
-    errors += doWrite_TST_AnIn_4(0);
-    errors += doWrite_TST_AnIn_5(0);
-    errors += doWrite_TST_AnIn_6(0);
-    errors += doWrite_TST_AnIn_7(0);
-    errors += doWrite_TST_AnIn_8(0);
-    errors += doWrite_TST_AnIn_9(0);
-    errors += doWrite_TST_AnIn_10(0);
-    errors += doWrite_TST_AnIn_11(0);
-    errors += doWrite_TST_AnIn_12(0);
-
-    errors += doWrite_TST_AnOut_1(0);
-    errors += doWrite_TST_AnOut_2(0);
-    errors += doWrite_TST_AnOut_3(0);
-    errors += doWrite_TST_AnOut_4(0);
-
-    errors += doWrite_TST_Tamb(0);
-    errors += doWrite_TST_RPM(0);
-    errors += doWrite_TST_VCC_set(0);
-    errors += doWrite_TST_mA_max(0);
-    errors += doWrite_TST_VCC_fbk(0);
-    errors += doWrite_TST_mA_fbk(0);
-    errors += doWrite_TST_FWrevision(0);
-    errors += doWrite_TST_HWconfig(0);
-
-    errors += doWrite_TST_RTUS_WR(0);
-    errors += doWrite_TST_RTUS_RD(0);
-    errors += doWrite_TST_RTU1_WR(0);
-    errors += doWrite_TST_RTU1_RD(0);
-    errors += doWrite_TST_RTU3_WR(0);
-    errors += doWrite_TST_RTU3_RD(0);
-    errors += doWrite_TST_CAN1_WR(0);
-    errors += doWrite_TST_CAN1_RD(0);
-
-#endif
-    return errors;
 }

@@ -106,8 +106,8 @@ OTHER_FILES += \
     recipes/TP1057_01_B/2.csv \
     recipes/TP1057_01_B/1.csv \
     recipes/TP1057_01_A/2.csv \
-    recipes/TP1057_01_A/1.csv
-
+    recipes/TP1057_01_A/1.csv \
+    recipes/Zeroes/0.csv
 
 recipes_TP1043_01_A.files = recipes/TP1043_01_A/1.csv recipes/TP1043_01_A/2.csv
 recipes_TP1043_01_A.path = /local/data/recipe/TP1043_01_A
@@ -172,6 +172,9 @@ recipes_TPLC100.path = /local/data/recipe/TPLC100
 recipes_Values.files = recipes/Values/1.csv recipes/Values/2.csv
 recipes_Values.path = /local/data/recipe/Values
 
+recipes_Zeroes.files = recipes/Zeroes/0.csv
+recipes_Zeroes.path = /local/data/recipe/Zeroes
+
 INSTALLS += \
     recipes_TP1043_01_A \
     recipes_TP1043_01_B \
@@ -193,4 +196,5 @@ INSTALLS += \
     recipes_TPAC1008_02_AE \
     recipes_TPAC1008_02_AF \
     recipes_TPLC100 \
-    recipes_Values
+    recipes_Values \
+    recipes_Zeroes
