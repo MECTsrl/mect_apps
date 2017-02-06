@@ -73,6 +73,7 @@ QList<u_int16_t> valuesIndexes;
 QList<u_int32_t> valuesTable[MAX_RCP_STEP];
 
 static void doReload();
+extern int checkRecipe(int step, QList<u_int16_t> *indexes, QList<u_int32_t> table[]);
 
 static u_int16_t previous_PLC_Heartbeat;
 static float previous_PLC_time;
@@ -178,36 +179,69 @@ void loop(void)
             break;
         case 1:
             if (writeRecipe(next_step - 1, &zeroesIndexes, zeroesTable) != 0) {
-                fprintf(stderr, "writeRecipe(zeroes) failed, retry after 1s\n");
-                sleep(1);
-                return;
+                fprintf(stderr, "writeRecipe(zeroes) failed, retry after 100ms\n");
+            } else {
+                substatus = 101;
             }
-            substatus = 2;
+            break;
+        case 101:
+            substatus = 102;
+            break;
+        case 102:
+            if (! checkRecipe(next_step - 1, &zeroesIndexes, zeroesTable)) {
+                fprintf(stderr, "checkRecipe(zeroes) failed, retry writeRecipe()\n");
+                substatus = 1;
+            } else {
+                substatus = 2;
+            }
             break;
         case 2:
             if (writeRecipe(next_step - 1, &testsIndexes, testsTable) != 0) {
-                fprintf(stderr, "writeRecipe(tests) failed, retry after 1s\n");
-                sleep(1);
-                return;
+                fprintf(stderr, "writeRecipe(tests) failed, retry after 100ms\n");
+            } else {
+                substatus = 201;
             }
-            substatus = 3;
+            break;
+        case 201:
+            substatus = 202;
+            break;
+        case 202:
+            if (! checkRecipe(next_step - 1, &testsIndexes, testsTable)) {
+                fprintf(stderr, "checkRecipe(tests) failed, retry writeRecipe()\n");
+                substatus = 2;
+            } else {
+                substatus = 3;
+            }
             break;
         case 3:
             if (writeRecipe(next_step - 1, &valuesIndexes, valuesTable) != 0) {
-                fprintf(stderr, "writeRecipe(values) failed, retry after 1s\n");
-                sleep(1);
-                return;
+                fprintf(stderr, "writeRecipe(values) failed, retry after 100ms\n");
+            } else {
+                substatus = 301;
             }
-            substatus = 4;
+            break;
+        case 301:
+            substatus = 302;
+            break;
+        case 302:
+            if (! checkRecipe(next_step - 1, &valuesIndexes, valuesTable)) {
+                fprintf(stderr, "checkRecipe(values) failed, retry writeRecipe()\n");
+                substatus = 3;
+            } else {
+                substatus = 4;
+            }
             break;
         case 4:
             doWrite_STATUS(STATUS_TESTING);
-            substatus = 5;
+            substatus = 401;
+            break;
+        case 401:
+            substatus = 402;
+        case 402:
+            fprintf(stderr, "check (STATUS==STATUS_TESTING) failed, retry doWrite()\n");
+            substatus = 4;
             break;
         case 5:
-            if (thePage) {
-                thePage->messageBox("Warning", "substatus 5");
-            }
             break;
         default:
             substatus = 0;
