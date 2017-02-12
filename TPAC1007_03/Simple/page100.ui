@@ -28,7 +28,8 @@
   <property name="styleSheet">
    <string notr="true">QWidget#page100
 {
-	background-color: rgb(255, 255, 127);
+	
+	background-color: rgb(170, 255, 255);
 }
 </string>
   </property>
@@ -36,7 +37,7 @@
    <property name="geometry">
     <rect>
      <x>31</x>
-     <y>70</y>
+     <y>68</y>
      <width>31</width>
      <height>34</height>
     </rect>
@@ -80,7 +81,7 @@
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>13</pointsize>
+     <pointsize>10</pointsize>
     </font>
    </property>
    <property name="styleSheet">
@@ -105,7 +106,7 @@
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>13</pointsize>
+     <pointsize>10</pointsize>
     </font>
    </property>
    <property name="styleSheet">
@@ -122,7 +123,7 @@
    <property name="geometry">
     <rect>
      <x>0</x>
-     <y>35</y>
+     <y>34</y>
      <width>31</width>
      <height>34</height>
     </rect>
@@ -161,16 +162,16 @@
     <string>PLC_DigDir_1</string>
    </property>
    <property name="bgColor">
-    <color alpha="127">
-     <red>170</red>
-     <green>255</green>
-     <blue>255</blue>
+    <color alpha="128">
+     <red>255</red>
+     <green>85</green>
+     <blue>0</blue>
     </color>
    </property>
    <property name="bgPressColor">
     <color alpha="127">
-     <red>255</red>
-     <green>170</green>
+     <red>85</red>
+     <green>255</green>
      <blue>0</blue>
     </color>
    </property>
@@ -202,7 +203,7 @@
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>13</pointsize>
+     <pointsize>10</pointsize>
     </font>
    </property>
    <property name="styleSheet">
@@ -218,9 +219,9 @@
   <widget class="ATCMbutton" name="atcmButton_PLC_EncoderReset">
    <property name="geometry">
     <rect>
-     <x>401</x>
-     <y>104</y>
-     <width>81</width>
+     <x>286</x>
+     <y>0</y>
+     <width>46</width>
      <height>34</height>
     </rect>
    </property>
@@ -256,16 +257,16 @@
    </property>
    <property name="bgColor">
     <color>
-     <red>170</red>
+     <red>85</red>
      <green>255</green>
      <blue>255</blue>
     </color>
    </property>
    <property name="bgPressColor">
     <color>
-     <red>85</red>
+     <red>170</red>
      <green>255</green>
-     <blue>255</blue>
+     <blue>127</blue>
     </color>
    </property>
    <property name="text">
@@ -275,10 +276,10 @@
     <string>Reset</string>
    </property>
    <property name="borderWidth">
-    <number>1</number>
+    <number>0</number>
    </property>
    <property name="borderRadius">
-    <number>0</number>
+    <number>15</number>
    </property>
    <property name="apparence">
     <enum>QFrame::Raised</enum>
@@ -288,7 +289,7 @@
    <property name="geometry">
     <rect>
      <x>150</x>
-     <y>1</y>
+     <y>0</y>
      <width>31</width>
      <height>34</height>
     </rect>
@@ -367,7 +368,7 @@
    <property name="geometry">
     <rect>
      <x>1</x>
-     <y>70</y>
+     <y>68</y>
      <width>31</width>
      <height>34</height>
     </rect>
@@ -403,7 +404,7 @@
    <property name="geometry">
     <rect>
      <x>61</x>
-     <y>70</y>
+     <y>68</y>
      <width>31</width>
      <height>34</height>
     </rect>
@@ -439,7 +440,7 @@
    <property name="geometry">
     <rect>
      <x>90</x>
-     <y>1</y>
+     <y>0</y>
      <width>31</width>
      <height>34</height>
     </rect>
@@ -529,7 +530,7 @@
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>13</pointsize>
+     <pointsize>10</pointsize>
     </font>
    </property>
    <property name="styleSheet">
@@ -554,13 +555,13 @@
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>13</pointsize>
+     <pointsize>10</pointsize>
      <weight>50</weight>
      <bold>false</bold>
     </font>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: rgb(170, 255, 255);</string>
+    <string notr="true">background-color: rgb(85, 255, 255);</string>
    </property>
    <property name="text">
     <string>10</string>
@@ -568,13 +569,16 @@
    <property name="alignment">
     <set>Qt::AlignCenter</set>
    </property>
+   <property name="margin">
+    <number>0</number>
+   </property>
   </widget>
   <widget class="ATCMbutton" name="atcmButton_PLC_EncoderStart">
    <property name="geometry">
     <rect>
-     <x>241</x>
-     <y>104</y>
-     <width>81</width>
+     <x>240</x>
+     <y>0</y>
+     <width>46</width>
      <height>34</height>
     </rect>
    </property>
@@ -616,7 +620,7 @@
    </property>
    <property name="bgColor">
     <color>
-     <red>170</red>
+     <red>85</red>
      <green>255</green>
      <blue>255</blue>
     </color>
@@ -629,16 +633,16 @@
     </color>
    </property>
    <property name="text">
-    <string>Encoder</string>
+    <string>Start</string>
    </property>
    <property name="pressText">
-    <string>Encoder</string>
+    <string>Stop</string>
    </property>
    <property name="borderWidth">
-    <number>1</number>
+    <number>0</number>
    </property>
    <property name="borderRadius">
-    <number>0</number>
+    <number>15</number>
    </property>
    <property name="apparence">
     <enum>QFrame::Raised</enum>
@@ -648,7 +652,7 @@
    <property name="geometry">
     <rect>
      <x>210</x>
-     <y>1</y>
+     <y>0</y>
      <width>31</width>
      <height>34</height>
     </rect>
@@ -723,38 +727,11 @@
     <enum>QFrame::Raised</enum>
    </property>
   </widget>
-  <widget class="QLabel" name="label_PLC_AnIn_1">
-   <property name="geometry">
-    <rect>
-     <x>1</x>
-     <y>106</y>
-     <width>80</width>
-     <height>34</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>DejaVu Sans</family>
-     <pointsize>10</pointsize>
-     <weight>50</weight>
-     <bold>false</bold>
-    </font>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background-color: rgb(170, 255, 255);</string>
-   </property>
-   <property name="text">
-    <string>AnIn_1</string>
-   </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
-   </property>
-  </widget>
   <widget class="ATCMled" name="atcmLed_PLC_DigIn_8">
    <property name="geometry">
     <rect>
      <x>211</x>
-     <y>70</y>
+     <y>68</y>
      <width>31</width>
      <height>34</height>
     </rect>
@@ -790,7 +767,7 @@
    <property name="geometry">
     <rect>
      <x>30</x>
-     <y>35</y>
+     <y>34</y>
      <width>31</width>
      <height>34</height>
     </rect>
@@ -829,16 +806,16 @@
     <string>PLC_DigDir_2</string>
    </property>
    <property name="bgColor">
-    <color alpha="127">
-     <red>170</red>
-     <green>255</green>
-     <blue>255</blue>
+    <color alpha="128">
+     <red>255</red>
+     <green>85</green>
+     <blue>0</blue>
     </color>
    </property>
    <property name="bgPressColor">
     <color alpha="127">
-     <red>255</red>
-     <green>170</green>
+     <red>85</red>
+     <green>255</green>
      <blue>0</blue>
     </color>
    </property>
@@ -861,8 +838,8 @@
   <widget class="Line" name="line_vt_2">
    <property name="geometry">
     <rect>
-     <x>241</x>
-     <y>1</y>
+     <x>240</x>
+     <y>0</y>
      <width>3</width>
      <height>272</height>
     </rect>
@@ -877,9 +854,9 @@
    </property>
    <property name="geometry">
     <rect>
-     <x>81</x>
-     <y>106</y>
-     <width>80</width>
+     <x>0</x>
+     <y>102</y>
+     <width>160</width>
      <height>34</height>
     </rect>
    </property>
@@ -906,6 +883,9 @@
    <property name="variable">
     <string>PLC_AnIn_1</string>
    </property>
+   <property name="prefix">
+    <string>AnIn_1  </string>
+   </property>
    <property name="refresh">
     <number>200</number>
    </property>
@@ -923,9 +903,9 @@
    </property>
    <property name="bgColor">
     <color>
-     <red>170</red>
+     <red>255</red>
      <green>255</green>
-     <blue>255</blue>
+     <blue>127</blue>
     </color>
    </property>
    <property name="fontColor">
@@ -954,11 +934,11 @@
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>13</pointsize>
+     <pointsize>10</pointsize>
     </font>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: rgb(170, 255, 255);</string>
+    <string notr="true">background-color: rgb(85, 255, 255);</string>
    </property>
    <property name="text">
     <string>11</string>
@@ -970,8 +950,8 @@
   <widget class="ATCMcombobox" name="atcmComboBox_PLC_AnInConf_1">
    <property name="geometry">
     <rect>
-     <x>161</x>
-     <y>106</y>
+     <x>160</x>
+     <y>102</y>
      <width>80</width>
      <height>34</height>
     </rect>
@@ -1008,9 +988,9 @@
    </property>
    <property name="bgColor">
     <color>
-     <red>170</red>
+     <red>255</red>
      <green>255</green>
-     <blue>255</blue>
+     <blue>127</blue>
     </color>
    </property>
    <property name="borderWidth">
@@ -1030,7 +1010,7 @@
    <property name="geometry">
     <rect>
      <x>90</x>
-     <y>35</y>
+     <y>34</y>
      <width>31</width>
      <height>34</height>
     </rect>
@@ -1069,16 +1049,16 @@
     <string>PLC_DigDir_4</string>
    </property>
    <property name="bgColor">
-    <color alpha="127">
-     <red>170</red>
-     <green>255</green>
-     <blue>255</blue>
+    <color alpha="128">
+     <red>255</red>
+     <green>85</green>
+     <blue>0</blue>
     </color>
    </property>
    <property name="bgPressColor">
     <color alpha="127">
-     <red>255</red>
-     <green>170</green>
+     <red>85</red>
+     <green>255</green>
      <blue>0</blue>
     </color>
    </property>
@@ -1101,8 +1081,8 @@
   <widget class="Line" name="line_vt_4">
    <property name="geometry">
     <rect>
-     <x>361</x>
-     <y>0</y>
+     <x>360</x>
+     <y>34</y>
      <width>3</width>
      <height>102</height>
     </rect>
@@ -1123,7 +1103,7 @@
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>13</pointsize>
+     <pointsize>10</pointsize>
     </font>
    </property>
    <property name="styleSheet">
@@ -1148,7 +1128,7 @@
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>13</pointsize>
+     <pointsize>10</pointsize>
     </font>
    </property>
    <property name="styleSheet">
@@ -1164,9 +1144,9 @@
   <widget class="ATCMbutton" name="atcmButton_menu">
    <property name="geometry">
     <rect>
-     <x>361</x>
+     <x>333</x>
      <y>0</y>
-     <width>120</width>
+     <width>147</width>
      <height>34</height>
     </rect>
    </property>
@@ -1201,9 +1181,9 @@
    </property>
    <property name="bgColor">
     <color>
-     <red>85</red>
+     <red>255</red>
      <green>255</green>
-     <blue>255</blue>
+     <blue>0</blue>
     </color>
    </property>
    <property name="borderColor">
@@ -1217,7 +1197,7 @@
     <string>TPAC1007_03</string>
    </property>
    <property name="pressText">
-    <string>TPAC1007_03</string>
+    <string>menu</string>
    </property>
    <property name="borderWidth">
     <number>1</number>
@@ -1232,8 +1212,8 @@
   <widget class="Line" name="line_vt_1">
    <property name="geometry">
     <rect>
-     <x>121</x>
-     <y>1</y>
+     <x>120</x>
+     <y>0</y>
      <width>3</width>
      <height>102</height>
     </rect>
@@ -1246,7 +1226,7 @@
    <property name="geometry">
     <rect>
      <x>91</x>
-     <y>70</y>
+     <y>68</y>
      <width>31</width>
      <height>34</height>
     </rect>
@@ -1284,16 +1264,16 @@
    </property>
    <property name="geometry">
     <rect>
-     <x>322</x>
-     <y>104</y>
-     <width>80</width>
+     <x>240</x>
+     <y>102</y>
+     <width>93</width>
      <height>34</height>
     </rect>
    </property>
    <property name="font">
     <font>
      <family>DejaVu Sans Mono</family>
-     <pointsize>10</pointsize>
+     <pointsize>8</pointsize>
      <weight>75</weight>
      <bold>true</bold>
     </font>
@@ -1327,7 +1307,7 @@
    </property>
    <property name="bgColor">
     <color>
-     <red>170</red>
+     <red>85</red>
      <green>255</green>
      <blue>255</blue>
     </color>
@@ -1346,7 +1326,7 @@
     <number>0</number>
    </property>
    <property name="apparence">
-    <enum>QFrame::Sunken</enum>
+    <enum>QFrame::Plain</enum>
    </property>
    <property name="format">
     <enum>ATCMlabel::Hex</enum>
@@ -1356,7 +1336,7 @@
    <property name="geometry">
     <rect>
      <x>181</x>
-     <y>70</y>
+     <y>68</y>
      <width>31</width>
      <height>34</height>
     </rect>
@@ -1388,39 +1368,12 @@
      <normaloff>:/off.png</normaloff>:/off.png</iconset>
    </property>
   </widget>
-  <widget class="QLabel" name="label_PLC_AnIn_2">
-   <property name="geometry">
-    <rect>
-     <x>1</x>
-     <y>138</y>
-     <width>80</width>
-     <height>34</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>DejaVu Sans</family>
-     <pointsize>10</pointsize>
-     <weight>50</weight>
-     <bold>false</bold>
-    </font>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background-color: rgb(255, 255, 127);</string>
-   </property>
-   <property name="text">
-    <string>AnIn_2</string>
-   </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
-   </property>
-  </widget>
   <widget class="Line" name="line_hr_1">
    <property name="geometry">
     <rect>
-     <x>1</x>
-     <y>70</y>
-     <width>481</width>
+     <x>0</x>
+     <y>68</y>
+     <width>360</width>
      <height>3</height>
     </rect>
    </property>
@@ -1428,38 +1381,11 @@
     <enum>Qt::Horizontal</enum>
    </property>
   </widget>
-  <widget class="QLabel" name="label_PLC_AnOut_1">
-   <property name="geometry">
-    <rect>
-     <x>241</x>
-     <y>136</y>
-     <width>80</width>
-     <height>34</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>DejaVu Sans</family>
-     <pointsize>10</pointsize>
-     <weight>50</weight>
-     <bold>false</bold>
-    </font>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background-color: rgb(255, 255, 127);</string>
-   </property>
-   <property name="text">
-    <string>AnOut_1</string>
-   </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
-   </property>
-  </widget>
   <widget class="ATCMcombobox" name="atcmComboBox_PLC_AnInConf_2">
    <property name="geometry">
     <rect>
-     <x>161</x>
-     <y>138</y>
+     <x>160</x>
+     <y>136</y>
      <width>80</width>
      <height>34</height>
     </rect>
@@ -1496,9 +1422,9 @@
    </property>
    <property name="bgColor">
     <color>
-     <red>255</red>
+     <red>170</red>
      <green>255</green>
-     <blue>127</blue>
+     <blue>255</blue>
     </color>
    </property>
    <property name="borderWidth">
@@ -1518,7 +1444,7 @@
    <property name="geometry">
     <rect>
      <x>120</x>
-     <y>35</y>
+     <y>34</y>
      <width>31</width>
      <height>34</height>
     </rect>
@@ -1557,16 +1483,16 @@
     <string>PLC_DigDir_5</string>
    </property>
    <property name="bgColor">
-    <color alpha="127">
-     <red>170</red>
-     <green>255</green>
-     <blue>255</blue>
+    <color alpha="128">
+     <red>255</red>
+     <green>85</green>
+     <blue>0</blue>
     </color>
    </property>
    <property name="bgPressColor">
     <color alpha="127">
-     <red>255</red>
-     <green>170</green>
+     <red>85</red>
+     <green>255</green>
      <blue>0</blue>
     </color>
    </property>
@@ -1590,7 +1516,7 @@
    <property name="geometry">
     <rect>
      <x>301</x>
-     <y>70</y>
+     <y>68</y>
      <width>31</width>
      <height>34</height>
     </rect>
@@ -1634,7 +1560,7 @@
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>13</pointsize>
+     <pointsize>10</pointsize>
     </font>
    </property>
    <property name="styleSheet">
@@ -1651,7 +1577,7 @@
    <property name="geometry">
     <rect>
      <x>180</x>
-     <y>35</y>
+     <y>34</y>
      <width>31</width>
      <height>34</height>
     </rect>
@@ -1690,16 +1616,16 @@
     <string>PLC_DigDir_7</string>
    </property>
    <property name="bgColor">
-    <color alpha="127">
-     <red>170</red>
-     <green>255</green>
-     <blue>255</blue>
+    <color alpha="128">
+     <red>255</red>
+     <green>85</green>
+     <blue>0</blue>
     </color>
    </property>
    <property name="bgPressColor">
     <color alpha="127">
-     <red>255</red>
-     <green>170</green>
+     <red>85</red>
+     <green>255</green>
      <blue>0</blue>
     </color>
    </property>
@@ -1723,7 +1649,7 @@
    <property name="geometry">
     <rect>
      <x>0</x>
-     <y>1</y>
+     <y>0</y>
      <width>31</width>
      <height>34</height>
     </rect>
@@ -1736,6 +1662,9 @@
    </property>
    <property name="checkable">
     <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
    </property>
    <property name="toolTip">
     <string>PLC_DigDir_1</string>
@@ -1810,7 +1739,7 @@
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>13</pointsize>
+     <pointsize>10</pointsize>
     </font>
    </property>
    <property name="styleSheet">
@@ -1829,9 +1758,9 @@
    </property>
    <property name="geometry">
     <rect>
-     <x>81</x>
-     <y>138</y>
-     <width>80</width>
+     <x>0</x>
+     <y>136</y>
+     <width>160</width>
      <height>34</height>
     </rect>
    </property>
@@ -1858,6 +1787,9 @@
    <property name="variable">
     <string>PLC_AnIn_2</string>
    </property>
+   <property name="prefix">
+    <string>AnIn_2  </string>
+   </property>
    <property name="refresh">
     <number>200</number>
    </property>
@@ -1875,9 +1807,9 @@
    </property>
    <property name="bgColor">
     <color>
-     <red>255</red>
+     <red>170</red>
      <green>255</green>
-     <blue>127</blue>
+     <blue>255</blue>
     </color>
    </property>
    <property name="fontColor">
@@ -1898,7 +1830,7 @@
    <property name="geometry">
     <rect>
      <x>30</x>
-     <y>1</y>
+     <y>0</y>
      <width>31</width>
      <height>34</height>
     </rect>
@@ -1977,7 +1909,7 @@
    <property name="geometry">
     <rect>
      <x>60</x>
-     <y>35</y>
+     <y>34</y>
      <width>31</width>
      <height>34</height>
     </rect>
@@ -2016,16 +1948,16 @@
     <string>PLC_DigDir_3</string>
    </property>
    <property name="bgColor">
-    <color alpha="127">
-     <red>170</red>
-     <green>255</green>
-     <blue>255</blue>
+    <color alpha="128">
+     <red>255</red>
+     <green>85</green>
+     <blue>0</blue>
     </color>
    </property>
    <property name="bgPressColor">
     <color alpha="127">
-     <red>255</red>
-     <green>170</green>
+     <red>85</red>
+     <green>255</green>
      <blue>0</blue>
     </color>
    </property>
@@ -2049,7 +1981,7 @@
    <property name="geometry">
     <rect>
      <x>271</x>
-     <y>70</y>
+     <y>68</y>
      <width>31</width>
      <height>34</height>
     </rect>
@@ -2098,7 +2030,7 @@
    <property name="geometry">
     <rect>
      <x>121</x>
-     <y>70</y>
+     <y>68</y>
      <width>31</width>
      <height>34</height>
     </rect>
@@ -2133,9 +2065,9 @@
   <widget class="ATCMlabel" name="atcmLabel_PLC_AnOut_1">
    <property name="geometry">
     <rect>
-     <x>321</x>
+     <x>240</x>
      <y>136</y>
-     <width>80</width>
+     <width>160</width>
      <height>34</height>
     </rect>
    </property>
@@ -2148,7 +2080,7 @@
     </font>
    </property>
    <property name="text">
-    <string>1.012</string>
+    <string>1.50</string>
    </property>
    <property name="styleSheet">
     <string notr="true">color: rgb(0, 85, 0);</string>
@@ -2161,6 +2093,9 @@
    </property>
    <property name="variable">
     <string>PLC_AnOut_1</string>
+   </property>
+   <property name="prefix">
+    <string>AnOut_1  </string>
    </property>
    <property name="refresh">
     <number>200</number>
@@ -2180,7 +2115,7 @@
    <property name="bgColor">
     <color>
      <red>255</red>
-     <green>255</green>
+     <green>170</green>
      <blue>127</blue>
     </color>
    </property>
@@ -2205,7 +2140,7 @@
    <property name="geometry">
     <rect>
      <x>60</x>
-     <y>1</y>
+     <y>0</y>
      <width>31</width>
      <height>34</height>
     </rect>
@@ -2292,11 +2227,11 @@
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>13</pointsize>
+     <pointsize>10</pointsize>
     </font>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: rgb(170, 255, 255);</string>
+    <string notr="true">background-color: rgb(85, 255, 255);</string>
    </property>
    <property name="text">
     <string>9</string>
@@ -2309,7 +2244,7 @@
    <property name="geometry">
     <rect>
      <x>1</x>
-     <y>104</y>
+     <y>102</y>
      <width>481</width>
      <height>3</height>
     </rect>
@@ -2322,7 +2257,7 @@
    <property name="geometry">
     <rect>
      <x>120</x>
-     <y>1</y>
+     <y>0</y>
      <width>31</width>
      <height>34</height>
     </rect>
@@ -2401,7 +2336,7 @@
    <property name="geometry">
     <rect>
      <x>210</x>
-     <y>35</y>
+     <y>34</y>
      <width>31</width>
      <height>34</height>
     </rect>
@@ -2440,16 +2375,16 @@
     <string>PLC_DigDir_8</string>
    </property>
    <property name="bgColor">
-    <color alpha="127">
-     <red>170</red>
-     <green>255</green>
-     <blue>255</blue>
+    <color alpha="128">
+     <red>255</red>
+     <green>85</green>
+     <blue>0</blue>
     </color>
    </property>
    <property name="bgPressColor">
     <color alpha="127">
-     <red>255</red>
-     <green>170</green>
+     <red>85</red>
+     <green>255</green>
      <blue>0</blue>
     </color>
    </property>
@@ -2472,7 +2407,7 @@
   <widget class="ATCMcombobox" name="atcmComboBox_PLC_AnOutConf_1">
    <property name="geometry">
     <rect>
-     <x>401</x>
+     <x>400</x>
      <y>136</y>
      <width>80</width>
      <height>34</height>
@@ -2511,7 +2446,7 @@
    <property name="bgColor">
     <color>
      <red>255</red>
-     <green>255</green>
+     <green>170</green>
      <blue>127</blue>
     </color>
    </property>
@@ -2528,33 +2463,6 @@
     <string>1;[mA] 4..20;2;[V] 0..10;0;---</string>
    </property>
   </widget>
-  <widget class="QLabel" name="label_Qt_Project">
-   <property name="geometry">
-    <rect>
-     <x>241</x>
-     <y>0</y>
-     <width>120</width>
-     <height>34</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>DejaVu Sans</family>
-     <pointsize>13</pointsize>
-     <weight>50</weight>
-     <bold>false</bold>
-    </font>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background-color: rgb(170, 255, 127);</string>
-   </property>
-   <property name="text">
-    <string>Simple</string>
-   </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
-   </property>
-  </widget>
   <widget class="QLabel" name="label_PLC_DigIn_5">
    <property name="geometry">
     <rect>
@@ -2567,7 +2475,7 @@
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>13</pointsize>
+     <pointsize>10</pointsize>
     </font>
    </property>
    <property name="styleSheet">
@@ -2584,7 +2492,7 @@
    <property name="geometry">
     <rect>
      <x>241</x>
-     <y>70</y>
+     <y>68</y>
      <width>31</width>
      <height>34</height>
     </rect>
@@ -2620,7 +2528,7 @@
    <property name="geometry">
     <rect>
      <x>151</x>
-     <y>70</y>
+     <y>68</y>
      <width>31</width>
      <height>34</height>
     </rect>
@@ -2656,7 +2564,7 @@
    <property name="geometry">
     <rect>
      <x>180</x>
-     <y>1</y>
+     <y>0</y>
      <width>31</width>
      <height>34</height>
     </rect>
@@ -2735,7 +2643,7 @@
    <property name="geometry">
     <rect>
      <x>331</x>
-     <y>70</y>
+     <y>68</y>
      <width>31</width>
      <height>34</height>
     </rect>
@@ -2771,7 +2679,7 @@
    <property name="geometry">
     <rect>
      <x>150</x>
-     <y>35</y>
+     <y>34</y>
      <width>31</width>
      <height>34</height>
     </rect>
@@ -2810,16 +2718,16 @@
     <string>PLC_DigDir_6</string>
    </property>
    <property name="bgColor">
-    <color alpha="127">
-     <red>170</red>
-     <green>255</green>
-     <blue>255</blue>
+    <color alpha="128">
+     <red>255</red>
+     <green>85</green>
+     <blue>0</blue>
     </color>
    </property>
    <property name="bgPressColor">
     <color alpha="127">
-     <red>255</red>
-     <green>170</green>
+     <red>85</red>
+     <green>255</green>
      <blue>0</blue>
     </color>
    </property>
@@ -2845,7 +2753,7 @@
      <x>360</x>
      <y>34</y>
      <width>120</width>
-     <height>20</height>
+     <height>17</height>
     </rect>
    </property>
    <property name="font">
@@ -2855,10 +2763,10 @@
     </font>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: rgb(170, 255, 127);</string>
+    <string notr="true">background-color: rgb(255, 255, 0);</string>
    </property>
    <property name="text">
-    <string>page100</string>
+    <string>Simple</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>
@@ -2871,19 +2779,21 @@
    <property name="geometry">
     <rect>
      <x>421</x>
-     <y>52</y>
+     <y>85</y>
      <width>60</width>
-     <height>21</height>
+     <height>17</height>
     </rect>
    </property>
    <property name="font">
     <font>
      <family>DejaVu Sans Mono</family>
-     <pointsize>10</pointsize>
+     <pointsize>8</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
     </font>
    </property>
    <property name="text">
-    <string>0xc</string>
+    <string>0x000c</string>
    </property>
    <property name="toolTip">
     <string>PLC_HWconfig</string>
@@ -2939,9 +2849,9 @@
    </property>
    <property name="geometry">
     <rect>
-     <x>360</x>
-     <y>70</y>
-     <width>120</width>
+     <x>240</x>
+     <y>170</y>
+     <width>93</width>
      <height>34</height>
     </rect>
    </property>
@@ -2964,7 +2874,7 @@
     <string>PLC_Version</string>
    </property>
    <property name="prefix">
-    <string>Engine: v</string>
+    <string>Eng. v</string>
    </property>
    <property name="refresh">
     <number>500</number>
@@ -2983,7 +2893,7 @@
    </property>
    <property name="bgColor">
     <color>
-     <red>255</red>
+     <red>170</red>
      <green>255</green>
      <blue>127</blue>
     </color>
@@ -3001,16 +2911,16 @@
    </property>
    <property name="geometry">
     <rect>
-     <x>361</x>
-     <y>52</y>
+     <x>360</x>
+     <y>85</y>
      <width>60</width>
-     <height>21</height>
+     <height>17</height>
     </rect>
    </property>
    <property name="font">
     <font>
      <family>DejaVu Sans Mono</family>
-     <pointsize>10</pointsize>
+     <pointsize>8</pointsize>
      <weight>50</weight>
      <bold>false</bold>
     </font>
@@ -3026,6 +2936,9 @@
    </property>
    <property name="variable">
     <string>PLC_FWrevision</string>
+   </property>
+   <property name="prefix">
+    <string>FW </string>
    </property>
    <property name="refresh">
     <number>200</number>
@@ -3069,18 +2982,18 @@
    </property>
    <property name="geometry">
     <rect>
-     <x>320</x>
-     <y>170</y>
-     <width>80</width>
+     <x>240</x>
+     <y>238</y>
+     <width>93</width>
      <height>34</height>
     </rect>
    </property>
    <property name="font">
     <font>
      <family>DejaVu Sans Mono</family>
-     <pointsize>10</pointsize>
-     <weight>75</weight>
-     <bold>true</bold>
+     <pointsize>8</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
     </font>
    </property>
    <property name="text">
@@ -3098,8 +3011,11 @@
    <property name="variable">
     <string>PLC_Tamb</string>
    </property>
-   <property name="suffix">
+   <property name="prefix">
     <string/>
+   </property>
+   <property name="suffix">
+    <string> °C</string>
    </property>
    <property name="refresh">
     <number>200</number>
@@ -3120,7 +3036,7 @@
     <color>
      <red>170</red>
      <green>255</green>
-     <blue>255</blue>
+     <blue>127</blue>
     </color>
    </property>
    <property name="fontColor">
@@ -3137,7 +3053,7 @@
     <number>0</number>
    </property>
   </widget>
-  <widget class="ATCMlabel" name="atcmLabel_23">
+  <widget class="ATCMlabel" name="atcmLabel_PLC_time">
    <property name="enabled">
     <bool>false</bool>
    </property>
@@ -3145,15 +3061,18 @@
     <rect>
      <x>240</x>
      <y>204</y>
-     <width>120</width>
+     <width>93</width>
      <height>34</height>
     </rect>
    </property>
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>10</pointsize>
+     <pointsize>8</pointsize>
     </font>
+   </property>
+   <property name="text">
+    <string>86400.00</string>
    </property>
    <property name="toolTip">
     <string>PLC_time</string>
@@ -3184,7 +3103,7 @@
    </property>
    <property name="bgColor">
     <color>
-     <red>255</red>
+     <red>170</red>
      <green>255</green>
      <blue>127</blue>
     </color>
@@ -3199,16 +3118,16 @@
   <widget class="ATCMtime" name="atcmTime">
    <property name="geometry">
     <rect>
-     <x>359</x>
-     <y>238</y>
-     <width>121</width>
-     <height>34</height>
+     <x>360</x>
+     <y>68</y>
+     <width>120</width>
+     <height>17</height>
     </rect>
    </property>
    <property name="font">
     <font>
      <family>DejaVu Sans Mono</family>
-     <pointsize>10</pointsize>
+     <pointsize>8</pointsize>
     </font>
    </property>
    <property name="toolTip">
@@ -3231,77 +3150,26 @@
     <number>0</number>
    </property>
   </widget>
-  <widget class="QLabel" name="label_PLC_Tamb">
-   <property name="geometry">
-    <rect>
-     <x>240</x>
-     <y>170</y>
-     <width>80</width>
-     <height>34</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>DejaVu Sans</family>
-     <pointsize>10</pointsize>
-     <weight>50</weight>
-     <bold>false</bold>
-    </font>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background-color: rgb(170, 255, 255);</string>
-   </property>
-   <property name="text">
-    <string>Tamb</string>
-   </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_PLC_Tamb_2">
-   <property name="geometry">
-    <rect>
-     <x>400</x>
-     <y>170</y>
-     <width>80</width>
-     <height>34</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>DejaVu Sans</family>
-     <pointsize>10</pointsize>
-     <weight>50</weight>
-     <bold>false</bold>
-    </font>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background-color: rgb(170, 255, 255);</string>
-   </property>
-   <property name="text">
-    <string>°C</string>
-   </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
-   </property>
-  </widget>
   <widget class="ATCMlabel" name="atcmLabel_22">
    <property name="enabled">
     <bool>false</bool>
    </property>
    <property name="geometry">
     <rect>
-     <x>240</x>
-     <y>238</y>
+     <x>360</x>
+     <y>102</y>
      <width>120</width>
      <height>34</height>
     </rect>
    </property>
    <property name="font">
     <font>
-     <family>DejaVu Sans</family>
-     <pointsize>10</pointsize>
+     <family>DejaVu Sans Mono</family>
+     <pointsize>6</pointsize>
     </font>
+   </property>
+   <property name="text">
+    <string>1111.0000.1111.0000b</string>
    </property>
    <property name="toolTip">
     <string>PLC_Heartbeat</string>
@@ -3311,6 +3179,9 @@
    </property>
    <property name="variable">
     <string>PLC_Heartbeat</string>
+   </property>
+   <property name="prefix">
+    <string/>
    </property>
    <property name="refresh">
     <number>100</number>
@@ -3331,7 +3202,7 @@
     <color>
      <red>170</red>
      <green>255</green>
-     <blue>255</blue>
+     <blue>127</blue>
     </color>
    </property>
    <property name="borderWidth">
@@ -3341,22 +3212,22 @@
     <number>0</number>
    </property>
    <property name="format">
-    <enum>ATCMlabel::Hex</enum>
+    <enum>ATCMlabel::Bin</enum>
    </property>
   </widget>
   <widget class="ATCMdate" name="atcmDate">
    <property name="geometry">
     <rect>
-     <x>359</x>
-     <y>204</y>
-     <width>121</width>
-     <height>34</height>
+     <x>360</x>
+     <y>51</y>
+     <width>120</width>
+     <height>17</height>
     </rect>
    </property>
    <property name="font">
     <font>
      <family>DejaVu Sans Mono</family>
-     <pointsize>10</pointsize>
+     <pointsize>8</pointsize>
     </font>
    </property>
    <property name="toolTip">
@@ -3383,6 +3254,9 @@
    </property>
   </widget>
   <widget class="QwtDial" name="qwtDial1">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
    <property name="geometry">
     <rect>
      <x>10</x>
@@ -3474,6 +3348,365 @@
     <double>300.000000000000000</double>
    </property>
   </widget>
+  <widget class="ATCMspinbox" name="atcmSpinbox">
+   <property name="geometry">
+    <rect>
+     <x>333</x>
+     <y>170</y>
+     <width>147</width>
+     <height>34</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans Mono</family>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="suffix">
+    <string/>
+   </property>
+   <property name="maximum">
+    <double>10.000000000000000</double>
+   </property>
+   <property name="singleStep">
+    <double>0.250000000000000</double>
+   </property>
+   <property name="value">
+    <double>1.750000000000000</double>
+   </property>
+   <property name="toolTip">
+    <string>PLC_AnOut_1</string>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMspinbox widget</string>
+   </property>
+   <property name="variable">
+    <string>PLC_AnOut_1</string>
+   </property>
+   <property name="refresh">
+    <number>200</number>
+   </property>
+   <property name="viewStatus">
+    <bool>false</bool>
+   </property>
+   <property name="visibilityVar">
+    <string/>
+   </property>
+   <property name="bgColor">
+    <color>
+     <red>255</red>
+     <green>170</green>
+     <blue>0</blue>
+    </color>
+   </property>
+   <property name="labelColor">
+    <color>
+     <red>255</red>
+     <green>170</green>
+     <blue>127</blue>
+    </color>
+   </property>
+   <property name="borderWidth">
+    <number>0</number>
+   </property>
+   <property name="borderRadius">
+    <number>0</number>
+   </property>
+   <property name="apparence">
+    <enum>QFrame::Raised</enum>
+   </property>
+  </widget>
+  <widget class="Line" name="line_vt_5">
+   <property name="geometry">
+    <rect>
+     <x>333</x>
+     <y>170</y>
+     <width>3</width>
+     <height>102</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+  </widget>
+  <widget class="Line" name="line_vt_6">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>170</y>
+     <width>3</width>
+     <height>102</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_PLC_AnIn_1_Qwt">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>170</y>
+     <width>121</width>
+     <height>101</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 127);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_PLC_AnIn_2_Qwt">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>170</y>
+     <width>120</width>
+     <height>102</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(170, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="Line" name="line_vt_7">
+   <property name="geometry">
+    <rect>
+     <x>332</x>
+     <y>0</y>
+     <width>3</width>
+     <height>138</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_PLC_Encoder">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>70</y>
+     <width>91</width>
+     <height>34</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(85, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="ATCMprogressbar" name="atcmProgressbar">
+   <property name="geometry">
+    <rect>
+     <x>333</x>
+     <y>238</y>
+     <width>147</width>
+     <height>34</height>
+    </rect>
+   </property>
+   <property name="maximum">
+    <number>10</number>
+   </property>
+   <property name="value">
+    <number>3</number>
+   </property>
+   <property name="toolTip">
+    <string>PLC_AnOut_1</string>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMprogressbar widget</string>
+   </property>
+   <property name="variable">
+    <string>PLC_AnOut_1</string>
+   </property>
+   <property name="refresh">
+    <number>200</number>
+   </property>
+   <property name="viewStatus">
+    <bool>false</bool>
+   </property>
+   <property name="visibilityVar">
+    <string/>
+   </property>
+   <property name="barColor">
+    <color>
+     <red>255</red>
+     <green>170</green>
+     <blue>0</blue>
+    </color>
+   </property>
+   <property name="bgColor">
+    <color>
+     <red>127</red>
+     <green>127</green>
+     <blue>127</blue>
+    </color>
+   </property>
+   <property name="borderWidth">
+    <number>0</number>
+   </property>
+   <property name="borderRadius">
+    <number>0</number>
+   </property>
+   <property name="apparence">
+    <enum>QFrame::Raised</enum>
+   </property>
+  </widget>
+  <widget class="ATCMslider" name="atcmSlider">
+   <property name="geometry">
+    <rect>
+     <x>333</x>
+     <y>204</y>
+     <width>147</width>
+     <height>34</height>
+    </rect>
+   </property>
+   <property name="maximum">
+    <number>10</number>
+   </property>
+   <property name="pageStep">
+    <number>3</number>
+   </property>
+   <property name="value">
+    <number>5</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+   <property name="toolTip">
+    <string>PLC_AnOut_1</string>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMslider widget</string>
+   </property>
+   <property name="variable">
+    <string>PLC_AnOut_1</string>
+   </property>
+   <property name="refresh">
+    <number>200</number>
+   </property>
+   <property name="viewStatus">
+    <bool>false</bool>
+   </property>
+   <property name="visibilityVar">
+    <string/>
+   </property>
+   <property name="handlerColor">
+    <color>
+     <red>255</red>
+     <green>170</green>
+     <blue>0</blue>
+    </color>
+   </property>
+   <property name="subColor">
+    <color>
+     <red>255</red>
+     <green>170</green>
+     <blue>127</blue>
+    </color>
+   </property>
+   <property name="addColor">
+    <color>
+     <red>127</red>
+     <green>127</green>
+     <blue>127</blue>
+    </color>
+   </property>
+   <property name="borderWidth">
+    <number>1</number>
+   </property>
+   <property name="borderRadius">
+    <number>0</number>
+   </property>
+   <property name="apparence">
+    <enum>QFrame::Raised</enum>
+   </property>
+  </widget>
+  <widget class="Line" name="line_hr_4">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>204</y>
+     <width>93</width>
+     <height>3</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="Line" name="line_hr_5">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>238</y>
+     <width>93</width>
+     <height>3</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="Line" name="line_hr_6">
+   <property name="geometry">
+    <rect>
+     <x>360</x>
+     <y>51</y>
+     <width>120</width>
+     <height>3</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="Line" name="line_hr_7">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>136</y>
+     <width>481</width>
+     <height>3</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="Line" name="line_hr_8">
+   <property name="geometry">
+    <rect>
+     <x>360</x>
+     <y>85</y>
+     <width>120</width>
+     <height>3</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <zorder>atcmLabel_10</zorder>
+  <zorder>atcmProgressbar</zorder>
+  <zorder>atcmSpinbox</zorder>
+  <zorder>atcmSlider</zorder>
+  <zorder>atcmLabel_22</zorder>
+  <zorder>atcmLabel_PLC_Tamb</zorder>
+  <zorder>label_PLC_Encoder</zorder>
+  <zorder>label_PLC_AnIn_2_Qwt</zorder>
+  <zorder>label_PLC_AnIn_1_Qwt</zorder>
   <zorder>atcmLed_PLC_DigIn_2</zorder>
   <zorder>label_PLC_DigIn_3</zorder>
   <zorder>label_PLC_DigIn_7</zorder>
@@ -3487,19 +3720,15 @@
   <zorder>label_PLC_DigIn_10</zorder>
   <zorder>atcmButton_PLC_EncoderStart</zorder>
   <zorder>atcmButton_PLC_DigDir_8</zorder>
-  <zorder>label_PLC_AnIn_1</zorder>
   <zorder>atcmLed_PLC_DigIn_8</zorder>
   <zorder>atcmLabel_PLC_AnIn_1</zorder>
   <zorder>label_PLC_DigIn_11</zorder>
   <zorder>atcmComboBox_PLC_AnInConf_1</zorder>
   <zorder>label_PLC_DigIn_6</zorder>
   <zorder>label_PLC_DigIn_4</zorder>
-  <zorder>atcmButton_menu</zorder>
   <zorder>atcmLed_PLC_DigIn_4</zorder>
   <zorder>atcmLabel_PLC_Encoder</zorder>
   <zorder>atcmLed_PLC_DigIn_7</zorder>
-  <zorder>label_PLC_AnIn_2</zorder>
-  <zorder>label_PLC_AnOut_1</zorder>
   <zorder>atcmComboBox_PLC_AnInConf_2</zorder>
   <zorder>atcmLed_PLC_DigIn_11</zorder>
   <zorder>label_PLC_DigIn_1</zorder>
@@ -3514,7 +3743,6 @@
   <zorder>label_PLC_DigIn_9</zorder>
   <zorder>atcmButton_PLC_DigDir_5</zorder>
   <zorder>atcmComboBox_PLC_AnOutConf_1</zorder>
-  <zorder>label_Qt_Project</zorder>
   <zorder>label_PLC_DigIn_5</zorder>
   <zorder>atcmLed_PLC_DigIn_9</zorder>
   <zorder>atcmLed_PLC_DigIn_6</zorder>
@@ -3522,20 +3750,9 @@
   <zorder>atcmLed_PLC_DigIn_12</zorder>
   <zorder>label_Qt_Project_2</zorder>
   <zorder>atcmLabel_HWconfig</zorder>
-  <zorder>atcmLabel_10</zorder>
   <zorder>atcmLabel_FWrevision</zorder>
-  <zorder>line_hr_3</zorder>
-  <zorder>line_hr_2</zorder>
-  <zorder>line_hr_1</zorder>
-  <zorder>line_vt_1</zorder>
-  <zorder>line_vt_2</zorder>
-  <zorder>line_vt_4</zorder>
-  <zorder>atcmLabel_PLC_Tamb</zorder>
-  <zorder>atcmLabel_23</zorder>
+  <zorder>atcmLabel_PLC_time</zorder>
   <zorder>atcmTime</zorder>
-  <zorder>label_PLC_Tamb</zorder>
-  <zorder>label_PLC_Tamb_2</zorder>
-  <zorder>atcmLabel_22</zorder>
   <zorder>atcmDate</zorder>
   <zorder>atcmButton_PLC_DigOut_4</zorder>
   <zorder>atcmButton_PLC_DigOut_3</zorder>
@@ -3547,6 +3764,21 @@
   <zorder>atcmButton_PLC_DigOut_2</zorder>
   <zorder>qwtDial1</zorder>
   <zorder>qwtDial2</zorder>
+  <zorder>atcmButton_menu</zorder>
+  <zorder>line_hr_1</zorder>
+  <zorder>line_hr_6</zorder>
+  <zorder>line_vt_1</zorder>
+  <zorder>line_vt_6</zorder>
+  <zorder>line_hr_3</zorder>
+  <zorder>line_vt_4</zorder>
+  <zorder>line_vt_2</zorder>
+  <zorder>line_vt_5</zorder>
+  <zorder>line_hr_4</zorder>
+  <zorder>line_hr_5</zorder>
+  <zorder>line_vt_7</zorder>
+  <zorder>line_hr_2</zorder>
+  <zorder>line_hr_7</zorder>
+  <zorder>line_hr_8</zorder>
  </widget>
  <customwidgets>
   <customwidget>
@@ -3572,6 +3804,21 @@
   <customwidget>
    <class>ATCMled</class>
    <extends>QLabel</extends>
+   <header>atcmplugin.h</header>
+  </customwidget>
+  <customwidget>
+   <class>ATCMprogressbar</class>
+   <extends>QProgressBar</extends>
+   <header>atcmplugin.h</header>
+  </customwidget>
+  <customwidget>
+   <class>ATCMslider</class>
+   <extends>QSlider</extends>
+   <header>atcmplugin.h</header>
+  </customwidget>
+  <customwidget>
+   <class>ATCMspinbox</class>
+   <extends>QDoubleSpinBox</extends>
    <header>atcmplugin.h</header>
   </customwidget>
   <customwidget>
