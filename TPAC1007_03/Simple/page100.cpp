@@ -120,3 +120,11 @@ page100::~page100()
 }
 
 
+
+void page100::on_atcmButton_Log_toggled(bool checked)
+{
+    if (checked)
+        logStart();
+    else
+        logStop();
+}

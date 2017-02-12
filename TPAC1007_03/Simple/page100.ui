@@ -28,8 +28,8 @@
   <property name="styleSheet">
    <string notr="true">QWidget#page100
 {
-	
-	background-color: rgb(170, 255, 255);
+
+background-color: rgb(170, 255, 255);
 }
 </string>
   </property>
@@ -47,6 +47,12 @@
    </property>
    <property name="whatsThis">
     <string>ATCMled widget</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>8</pointsize>
+    </font>
    </property>
    <property name="variable">
     <string>PLC_DigIn_2</string>
@@ -379,6 +385,12 @@
    <property name="whatsThis">
     <string>ATCMled widget</string>
    </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
    <property name="variable">
     <string>PLC_DigIn_1</string>
    </property>
@@ -414,6 +426,12 @@
    </property>
    <property name="whatsThis">
     <string>ATCMled widget</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>8</pointsize>
+    </font>
    </property>
    <property name="variable">
     <string>PLC_DigIn_3</string>
@@ -742,6 +760,12 @@
    <property name="whatsThis">
     <string>ATCMled widget</string>
    </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
    <property name="variable">
     <string>PLC_DigIn_8</string>
    </property>
@@ -843,6 +867,12 @@
      <width>3</width>
      <height>272</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>8</pointsize>
+    </font>
    </property>
    <property name="orientation">
     <enum>Qt::Vertical</enum>
@@ -1081,11 +1111,17 @@
   <widget class="Line" name="line_vt_4">
    <property name="geometry">
     <rect>
-     <x>360</x>
+     <x>364</x>
      <y>34</y>
      <width>3</width>
      <height>102</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>8</pointsize>
+    </font>
    </property>
    <property name="orientation">
     <enum>Qt::Vertical</enum>
@@ -1218,6 +1254,12 @@
      <height>102</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
    <property name="orientation">
     <enum>Qt::Vertical</enum>
    </property>
@@ -1236,6 +1278,12 @@
    </property>
    <property name="whatsThis">
     <string>ATCMled widget</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>8</pointsize>
+    </font>
    </property>
    <property name="variable">
     <string>PLC_DigIn_4</string>
@@ -1347,6 +1395,12 @@
    <property name="whatsThis">
     <string>ATCMled widget</string>
    </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
    <property name="variable">
     <string>PLC_DigIn_7</string>
    </property>
@@ -1373,9 +1427,15 @@
     <rect>
      <x>0</x>
      <y>68</y>
-     <width>360</width>
+     <width>364</width>
      <height>3</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>8</pointsize>
+    </font>
    </property>
    <property name="orientation">
     <enum>Qt::Horizontal</enum>
@@ -1526,6 +1586,12 @@
    </property>
    <property name="whatsThis">
     <string>ATCMled widget</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>8</pointsize>
+    </font>
    </property>
    <property name="variable">
     <string>PLC_DigIn_11</string>
@@ -1992,6 +2058,12 @@
    <property name="whatsThis">
     <string>ATCMled widget</string>
    </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
    <property name="variable">
     <string>PLC_DigIn_10</string>
    </property>
@@ -2022,6 +2094,12 @@
      <height>3</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
    <property name="orientation">
     <enum>Qt::Horizontal</enum>
    </property>
@@ -2040,6 +2118,12 @@
    </property>
    <property name="whatsThis">
     <string>ATCMled widget</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>8</pointsize>
+    </font>
    </property>
    <property name="variable">
     <string>PLC_DigIn_5</string>
@@ -2218,7 +2302,7 @@
   <widget class="QLabel" name="label_PLC_DigIn_9">
    <property name="geometry">
     <rect>
-     <x>241</x>
+     <x>240</x>
      <y>34</y>
      <width>31</width>
      <height>34</height>
@@ -2248,6 +2332,12 @@
      <width>481</width>
      <height>3</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>8</pointsize>
+    </font>
    </property>
    <property name="orientation">
     <enum>Qt::Horizontal</enum>
@@ -2491,7 +2581,7 @@
   <widget class="ATCMled" name="atcmLed_PLC_DigIn_9">
    <property name="geometry">
     <rect>
-     <x>241</x>
+     <x>240</x>
      <y>68</y>
      <width>31</width>
      <height>34</height>
@@ -2502,6 +2592,12 @@
    </property>
    <property name="whatsThis">
     <string>ATCMled widget</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>8</pointsize>
+    </font>
    </property>
    <property name="variable">
     <string>PLC_DigIn_9</string>
@@ -2538,6 +2634,12 @@
    </property>
    <property name="whatsThis">
     <string>ATCMled widget</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>8</pointsize>
+    </font>
    </property>
    <property name="variable">
     <string>PLC_DigIn_6</string>
@@ -2654,6 +2756,12 @@
    <property name="whatsThis">
     <string>ATCMled widget</string>
    </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
    <property name="variable">
     <string>PLC_DigIn_12</string>
    </property>
@@ -2750,9 +2858,9 @@
   <widget class="QLabel" name="label_Qt_Project_2">
    <property name="geometry">
     <rect>
-     <x>360</x>
+     <x>364</x>
      <y>34</y>
-     <width>120</width>
+     <width>116</width>
      <height>17</height>
     </rect>
    </property>
@@ -2778,9 +2886,9 @@
    </property>
    <property name="geometry">
     <rect>
-     <x>421</x>
+     <x>422</x>
      <y>85</y>
-     <width>60</width>
+     <width>58</width>
      <height>17</height>
     </rect>
    </property>
@@ -2911,9 +3019,9 @@
    </property>
    <property name="geometry">
     <rect>
-     <x>360</x>
+     <x>364</x>
      <y>85</y>
-     <width>60</width>
+     <width>58</width>
      <height>17</height>
     </rect>
    </property>
@@ -3118,9 +3226,9 @@
   <widget class="ATCMtime" name="atcmTime">
    <property name="geometry">
     <rect>
-     <x>360</x>
+     <x>364</x>
      <y>68</y>
-     <width>120</width>
+     <width>116</width>
      <height>17</height>
     </rect>
    </property>
@@ -3156,16 +3264,16 @@
    </property>
    <property name="geometry">
     <rect>
-     <x>360</x>
+     <x>364</x>
      <y>102</y>
-     <width>120</width>
+     <width>116</width>
      <height>34</height>
     </rect>
    </property>
    <property name="font">
     <font>
      <family>DejaVu Sans Mono</family>
-     <pointsize>6</pointsize>
+     <pointsize>5</pointsize>
     </font>
    </property>
    <property name="text">
@@ -3218,9 +3326,9 @@
   <widget class="ATCMdate" name="atcmDate">
    <property name="geometry">
     <rect>
-     <x>360</x>
+     <x>364</x>
      <y>51</y>
-     <width>120</width>
+     <width>116</width>
      <height>17</height>
     </rect>
    </property>
@@ -3428,6 +3536,12 @@
      <height>102</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
    <property name="orientation">
     <enum>Qt::Vertical</enum>
    </property>
@@ -3441,6 +3555,12 @@
      <height>102</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
    <property name="orientation">
     <enum>Qt::Vertical</enum>
    </property>
@@ -3453,6 +3573,12 @@
      <width>121</width>
      <height>101</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>8</pointsize>
+    </font>
    </property>
    <property name="styleSheet">
     <string notr="true">background-color: rgb(255, 255, 127);</string>
@@ -3470,6 +3596,12 @@
      <height>102</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
    <property name="styleSheet">
     <string notr="true">background-color: rgb(170, 255, 255);</string>
    </property>
@@ -3486,6 +3618,12 @@
      <height>138</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
    <property name="orientation">
     <enum>Qt::Vertical</enum>
    </property>
@@ -3498,6 +3636,12 @@
      <width>91</width>
      <height>34</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>8</pointsize>
+    </font>
    </property>
    <property name="styleSheet">
     <string notr="true">background-color: rgb(85, 255, 255);</string>
@@ -3526,6 +3670,12 @@
    </property>
    <property name="whatsThis">
     <string>ATCMprogressbar widget</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>8</pointsize>
+    </font>
    </property>
    <property name="variable">
     <string>PLC_AnOut_1</string>
@@ -3590,6 +3740,12 @@
    <property name="whatsThis">
     <string>ATCMslider widget</string>
    </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
    <property name="variable">
     <string>PLC_AnOut_1</string>
    </property>
@@ -3642,6 +3798,12 @@
      <height>3</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
    <property name="orientation">
     <enum>Qt::Horizontal</enum>
    </property>
@@ -3654,6 +3816,12 @@
      <width>93</width>
      <height>3</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>8</pointsize>
+    </font>
    </property>
    <property name="orientation">
     <enum>Qt::Horizontal</enum>
@@ -3668,6 +3836,12 @@
      <height>3</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
    <property name="orientation">
     <enum>Qt::Horizontal</enum>
    </property>
@@ -3681,6 +3855,12 @@
      <height>3</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
    <property name="orientation">
     <enum>Qt::Horizontal</enum>
    </property>
@@ -3688,16 +3868,89 @@
   <widget class="Line" name="line_hr_8">
    <property name="geometry">
     <rect>
-     <x>360</x>
+     <x>364</x>
      <y>85</y>
-     <width>120</width>
+     <width>116</width>
      <height>3</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>8</pointsize>
+    </font>
    </property>
    <property name="orientation">
     <enum>Qt::Horizontal</enum>
    </property>
   </widget>
+  <widget class="ATCMbutton" name="atcmButton_Log">
+   <property name="geometry">
+    <rect>
+     <x>333</x>
+     <y>102</y>
+     <width>31</width>
+     <height>34</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+   <property name="toolTip">
+    <string/>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMbutton widget</string>
+   </property>
+   <property name="pageName">
+    <string notr="true"/>
+   </property>
+   <property name="statusvar">
+    <string notr="true"/>
+   </property>
+   <property name="viewStatus">
+    <bool>false</bool>
+   </property>
+   <property name="visibilityVar">
+    <string notr="true"/>
+   </property>
+   <property name="bgColor">
+    <color>
+     <red>255</red>
+     <green>85</green>
+     <blue>0</blue>
+    </color>
+   </property>
+   <property name="bgPressColor">
+    <color>
+     <red>85</red>
+     <green>255</green>
+     <blue>0</blue>
+    </color>
+   </property>
+   <property name="text">
+    <string>Log</string>
+   </property>
+   <property name="pressText">
+    <string>Log</string>
+   </property>
+   <property name="borderRadius">
+    <number>0</number>
+   </property>
+   <property name="apparence">
+    <enum>QFrame::Raised</enum>
+   </property>
+  </widget>
+  <zorder>atcmButton_Log</zorder>
   <zorder>atcmLabel_10</zorder>
   <zorder>atcmProgressbar</zorder>
   <zorder>atcmSpinbox</zorder>
