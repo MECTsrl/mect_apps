@@ -66,7 +66,7 @@
         <location filename="page100.ui" line="2447"/>
         <location filename="page100.ui" line="2687"/>
         <location filename="page100.ui" line="2808"/>
-        <location filename="page100.ui" line="3912"/>
+        <location filename="page100.ui" line="3914"/>
         <source>ATCMbutton widget</source>
         <translation type="unfinished"></translation>
     </message>
@@ -537,8 +537,8 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="3941"/>
-        <location filename="page100.ui" line="3944"/>
+        <location filename="page100.ui" line="3943"/>
+        <location filename="page100.ui" line="3946"/>
         <source>Log</source>
         <translation type="unfinished"></translation>
     </message>

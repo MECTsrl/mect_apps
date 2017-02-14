@@ -564,7 +564,7 @@ background-color: rgb(170, 255, 255);
   <widget class="QLabel" name="label_PLC_DigIn_10">
    <property name="geometry">
     <rect>
-     <x>272</x>
+     <x>271</x>
      <y>34</y>
      <width>31</width>
      <height>34</height>
@@ -3830,9 +3830,9 @@ background-color: rgb(170, 255, 255);
   <widget class="Line" name="line_hr_6">
    <property name="geometry">
     <rect>
-     <x>360</x>
+     <x>364</x>
      <y>51</y>
-     <width>120</width>
+     <width>116</width>
      <height>3</height>
     </rect>
    </property>
@@ -3897,6 +3897,8 @@ background-color: rgb(170, 255, 255);
     <font>
      <family>DejaVu Sans</family>
      <pointsize>8</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
     </font>
    </property>
    <property name="checkable">
@@ -3926,13 +3928,13 @@ background-color: rgb(170, 255, 255);
    <property name="bgColor">
     <color>
      <red>255</red>
-     <green>85</green>
-     <blue>0</blue>
+     <green>255</green>
+     <blue>255</blue>
     </color>
    </property>
    <property name="bgPressColor">
     <color>
-     <red>85</red>
+     <red>255</red>
      <green>255</green>
      <blue>0</blue>
     </color>

@@ -28,3 +28,21 @@ RESOURCES += \
     resources.qrc
 
 
+# Analog Output Family of Recipes
+
+OTHER_FILES += recipes/AnOut/up_and_down.csv recipes/AnOut/sine_wave.csv
+
+recipes_AnOut.files = recipes/AnOut/up_and_down.csv recipes/AnOut/sine_wave.csv
+recipes_AnOut.path = /local/data/recipe/AnOut
+
+INSTALLS += recipes_AnOut
+
+
+# Digital Output Family of Recipes
+
+OTHER_FILES += recipes/DigOut/from_1_to_4.csv recipes/DigOut/from_1_to_8.csv
+
+recipes_DigOut.files = recipes/DigOut/from_1_to_4.csv recipes/DigOut/from_1_to_8.csv
+recipes_DigOut.path = /local/data/recipe/DigOut
+
+INSTALLS += recipes_DigOut
