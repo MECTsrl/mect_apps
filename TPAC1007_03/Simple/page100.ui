@@ -222,75 +222,6 @@ background-color: rgb(170, 255, 255);
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
-  <widget class="ATCMbutton" name="atcmButton_PLC_EncoderReset">
-   <property name="geometry">
-    <rect>
-     <x>286</x>
-     <y>0</y>
-     <width>46</width>
-     <height>34</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>DejaVu Sans</family>
-     <pointsize>10</pointsize>
-    </font>
-   </property>
-   <property name="toolTip">
-    <string>PLC_EncoderReset</string>
-   </property>
-   <property name="whatsThis">
-    <string>ATCMbutton widget</string>
-   </property>
-   <property name="pageName">
-    <string/>
-   </property>
-   <property name="passwordVar">
-    <string/>
-   </property>
-   <property name="statusvar">
-    <string>PLC_EncoderReset</string>
-   </property>
-   <property name="viewStatus">
-    <bool>false</bool>
-   </property>
-   <property name="refresh">
-    <number>200</number>
-   </property>
-   <property name="visibilityVar">
-    <string/>
-   </property>
-   <property name="bgColor">
-    <color>
-     <red>85</red>
-     <green>255</green>
-     <blue>255</blue>
-    </color>
-   </property>
-   <property name="bgPressColor">
-    <color>
-     <red>170</red>
-     <green>255</green>
-     <blue>127</blue>
-    </color>
-   </property>
-   <property name="text">
-    <string>Reset</string>
-   </property>
-   <property name="pressText">
-    <string>Reset</string>
-   </property>
-   <property name="borderWidth">
-    <number>0</number>
-   </property>
-   <property name="borderRadius">
-    <number>15</number>
-   </property>
-   <property name="apparence">
-    <enum>QFrame::Raised</enum>
-   </property>
-  </widget>
   <widget class="ATCMbutton" name="atcmButton_PLC_DigDir_6">
    <property name="geometry">
     <rect>
@@ -589,81 +520,6 @@ background-color: rgb(170, 255, 255);
    </property>
    <property name="margin">
     <number>0</number>
-   </property>
-  </widget>
-  <widget class="ATCMbutton" name="atcmButton_PLC_EncoderStart">
-   <property name="geometry">
-    <rect>
-     <x>240</x>
-     <y>0</y>
-     <width>46</width>
-     <height>34</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>DejaVu Sans</family>
-     <pointsize>10</pointsize>
-    </font>
-   </property>
-   <property name="checkable">
-    <bool>true</bool>
-   </property>
-   <property name="toolTip">
-    <string>PLC_EncEnable</string>
-   </property>
-   <property name="whatsThis">
-    <string>ATCMbutton widget</string>
-   </property>
-   <property name="pageName">
-    <string/>
-   </property>
-   <property name="passwordVar">
-    <string/>
-   </property>
-   <property name="statusvar">
-    <string>PLC_EncEnable</string>
-   </property>
-   <property name="statusPressedValue">
-    <string>2</string>
-   </property>
-   <property name="viewStatus">
-    <bool>false</bool>
-   </property>
-   <property name="refresh">
-    <number>200</number>
-   </property>
-   <property name="visibilityVar">
-    <string/>
-   </property>
-   <property name="bgColor">
-    <color>
-     <red>85</red>
-     <green>255</green>
-     <blue>255</blue>
-    </color>
-   </property>
-   <property name="bgPressColor">
-    <color>
-     <red>85</red>
-     <green>255</green>
-     <blue>255</blue>
-    </color>
-   </property>
-   <property name="text">
-    <string>Start</string>
-   </property>
-   <property name="pressText">
-    <string>Stop</string>
-   </property>
-   <property name="borderWidth">
-    <number>0</number>
-   </property>
-   <property name="borderRadius">
-    <number>15</number>
-   </property>
-   <property name="apparence">
-    <enum>QFrame::Raised</enum>
    </property>
   </widget>
   <widget class="ATCMbutton" name="atcmButton_PLC_DigDir_8">
@@ -1236,7 +1092,7 @@ background-color: rgb(170, 255, 255);
     <string>menu</string>
    </property>
    <property name="borderWidth">
-    <number>1</number>
+    <number>0</number>
    </property>
    <property name="borderRadius">
     <number>0</number>
@@ -3952,6 +3808,63 @@ background-color: rgb(170, 255, 255);
     <enum>QFrame::Raised</enum>
    </property>
   </widget>
+  <widget class="ATCMcombobox" name="atcmComboBox">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>0</y>
+     <width>93</width>
+     <height>34</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="toolTip">
+    <string>PLC_EncEnable</string>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMcombobox widget</string>
+   </property>
+   <property name="variable">
+    <string>PLC_EncEnable</string>
+   </property>
+   <property name="refresh">
+    <number>200</number>
+   </property>
+   <property name="viewStatus">
+    <bool>false</bool>
+   </property>
+   <property name="writeAcknowledge">
+    <bool>false</bool>
+   </property>
+   <property name="visibilityVar">
+    <string/>
+   </property>
+   <property name="bgColor">
+    <color>
+     <red>85</red>
+     <green>255</green>
+     <blue>255</blue>
+    </color>
+   </property>
+   <property name="borderWidth">
+    <number>0</number>
+   </property>
+   <property name="borderRadius">
+    <number>0</number>
+   </property>
+   <property name="apparence">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <property name="mapping">
+    <string>1;Encoder;2;Counter;3;---</string>
+   </property>
+  </widget>
+  <zorder>atcmComboBox</zorder>
   <zorder>atcmButton_Log</zorder>
   <zorder>atcmLabel_10</zorder>
   <zorder>atcmProgressbar</zorder>
@@ -3966,14 +3879,12 @@ background-color: rgb(170, 255, 255);
   <zorder>label_PLC_DigIn_3</zorder>
   <zorder>label_PLC_DigIn_7</zorder>
   <zorder>label_PLC_DigIn_12</zorder>
-  <zorder>atcmButton_PLC_EncoderReset</zorder>
   <zorder>atcmButton_PLC_DigDir_6</zorder>
   <zorder>atcmLed_PLC_DigIn_1</zorder>
   <zorder>atcmLed_PLC_DigIn_3</zorder>
   <zorder>atcmButton_PLC_DigDir_4</zorder>
   <zorder>label_PLC_DigIn_8</zorder>
   <zorder>label_PLC_DigIn_10</zorder>
-  <zorder>atcmButton_PLC_EncoderStart</zorder>
   <zorder>atcmButton_PLC_DigDir_8</zorder>
   <zorder>atcmLed_PLC_DigIn_8</zorder>
   <zorder>atcmLabel_PLC_AnIn_1</zorder>
