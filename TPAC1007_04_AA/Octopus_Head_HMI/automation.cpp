@@ -174,74 +174,74 @@ void loop(void)
                 }
                 logStart();
                 doWrite_TEST_STEP(next_step);
-                substatus = 1;
+                substatus = 10;
             }
             break;
-        case 1:
+        case 10:
             if (writeRecipe(next_step - 1, &zeroesIndexes, zeroesTable) != 0) {
                 fprintf(stderr, "writeRecipe(zeroes) failed, retry after 100ms\n");
             } else {
-                substatus = 101;
+                substatus = 11;
             }
             break;
-        case 101:
-            substatus = 102;
+        case 11:
+            substatus = 12;
             break;
-        case 102:
+        case 12:
             if (! checkRecipe(next_step - 1, &zeroesIndexes, zeroesTable)) {
                 fprintf(stderr, "checkRecipe(zeroes) failed, retry writeRecipe()\n");
-                substatus = 1;
+                substatus = 10;
             } else {
-                substatus = 2;
+                substatus = 20;
             }
             break;
-        case 2:
+        case 20:
             if (writeRecipe(next_step - 1, &testsIndexes, testsTable) != 0) {
                 fprintf(stderr, "writeRecipe(tests) failed, retry after 100ms\n");
             } else {
-                substatus = 201;
+                substatus = 21;
             }
             break;
-        case 201:
-            substatus = 202;
+        case 21:
+            substatus = 22;
             break;
-        case 202:
+        case 22:
             if (! checkRecipe(next_step - 1, &testsIndexes, testsTable)) {
                 fprintf(stderr, "checkRecipe(tests) failed, retry writeRecipe()\n");
-                substatus = 2;
+                substatus = 20;
             } else {
-                substatus = 3;
+                substatus = 30;
             }
             break;
-        case 3:
+        case 30:
             if (writeRecipe(next_step - 1, &valuesIndexes, valuesTable) != 0) {
                 fprintf(stderr, "writeRecipe(values) failed, retry after 100ms\n");
             } else {
-                substatus = 301;
+                substatus = 31;
             }
             break;
-        case 301:
-            substatus = 302;
+        case 31:
+            substatus = 32;
             break;
-        case 302:
+        case 32:
             if (! checkRecipe(next_step - 1, &valuesIndexes, valuesTable)) {
                 fprintf(stderr, "checkRecipe(values) failed, retry writeRecipe()\n");
-                substatus = 3;
+                substatus = 30;
             } else {
-                substatus = 4;
+                substatus = 40;
             }
             break;
-        case 4:
+        case 40:
             doWrite_STATUS(STATUS_TESTING);
-            substatus = 401;
+            substatus = 41;
             break;
-        case 401:
-            substatus = 402;
-        case 402:
+        case 41:
+            substatus = 42;
+        case 42:
             fprintf(stderr, "check (STATUS==STATUS_TESTING) failed, retry doWrite()\n");
-            substatus = 4;
+            substatus = 40;
             break;
-        case 5:
+        case 50:
             break;
         default:
             substatus = 0;

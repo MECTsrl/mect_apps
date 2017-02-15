@@ -13,4 +13,5 @@
         <file>my_img/7_ERROR.png</file>
         <file>my_img/STATUS.svg</file>
     </qresource>
+    <qresource prefix="/fonts"/>
 </RCC>

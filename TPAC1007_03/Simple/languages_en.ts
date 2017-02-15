@@ -618,4 +618,164 @@
         <translation type="unfinished"></translation>
     </message>
 </context>
+<context>
+    <name>page200</name>
+    <message>
+        <location filename="page200.ui" line="29"/>
+        <source>page200</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="53"/>
+        <source>ATCM QDate</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="56"/>
+        <source>ATCMdate widget</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="484"/>
+        <source>ATCMlabel widget</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="91"/>
+        <source>ATCM QTime</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="94"/>
+        <source>ATCMtime widget</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="131"/>
+        <source>ATCMbutton widget</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="134"/>
+        <location filename="page200.ui" line="166"/>
+        <source>menu</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="163"/>
+        <source>TPAC1007_03</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="197"/>
+        <source>Simple</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="219"/>
+        <source>ATCM QGraph</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="222"/>
+        <source>ATCMgraph widget</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="225"/>
+        <location filename="page200.ui" line="264"/>
+        <source>PLC_time</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="228"/>
+        <location filename="page200.ui" line="267"/>
+        <source>PLC_timeMin</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="231"/>
+        <location filename="page200.ui" line="270"/>
+        <source>PLC_timeMax</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="243"/>
+        <location filename="page200.ui" line="258"/>
+        <source>PLC_AnIn_1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="246"/>
+        <location filename="page200.ui" line="276"/>
+        <source>-1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="249"/>
+        <location filename="page200.ui" line="279"/>
+        <source>11</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="273"/>
+        <source>PLC_AnIn_2</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="307"/>
+        <location filename="page200.ui" line="322"/>
+        <source>PLC_Version</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="428"/>
+        <location filename="page200.ui" line="440"/>
+        <location filename="page200.ui" line="481"/>
+        <location filename="page200.ui" line="487"/>
+        <source>X</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="431"/>
+        <source>ATCMslider widget</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="490"/>
+        <source>X = </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="310"/>
+        <source>ATCManimation widget</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="319"/>
+        <source>1;:/systemicons/Film.png;2;:/systemicons/Smile.png;3;:/systemicons/Thumbs_up.png</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="350"/>
+        <source>PLC_timeWin = </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="353"/>
+        <source> s</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="368"/>
+        <location filename="page200.ui" line="374"/>
+        <source>PLC_timeWin</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="371"/>
+        <source>ATCMspinbox widget</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
 </TS>

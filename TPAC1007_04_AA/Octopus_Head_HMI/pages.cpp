@@ -11,6 +11,7 @@
 
 #include "app_logprint.h"
 #include "crosstable.h"
+#include "global_var.h"
 #include "utility.h"
 #include "pages.h"
 
@@ -18,6 +19,7 @@ void printVncDisplayString(char * vncString)
 {
     sprintf(vncString, "Multi: VNC:0:size=%dx%d Transformed:rot%d", WIDTH, HEIGHT, ROTATION);
     userPageList 
+            << "system_ini"
             << "page100"
             << "page200"
             << "page201"
@@ -33,6 +35,10 @@ void printVncDisplayString(char * vncString)
             /* add here the label of the new page */
             ;
     userPageList.removeDuplicates();
+    
+#ifdef GIT_TAG
+    HMIversion = GIT_TAG;
+#endif
 }
 
 int create_page_nb(page ** p, int pageNb)

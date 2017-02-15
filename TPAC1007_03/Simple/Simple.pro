@@ -12,16 +12,19 @@ include(./template.pri)
 
 HEADERS += \
     automation.h \
-    page100.h
+    page100.h \
+    page200.h
 
 
 FORMS += \
-    page100.ui
+    page100.ui \
+    page200.ui
 
 
 SOURCES += \
     automation.cpp \
-    page100.cpp
+    page100.cpp \
+    page200.cpp
 
 
 RESOURCES += \

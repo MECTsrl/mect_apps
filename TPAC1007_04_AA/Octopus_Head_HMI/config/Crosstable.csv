@@ -5327,11 +5327,11 @@
 1;P;PLC_DigIn_12    ;WORD_BIT ;12  ;RTU       ;               ;3   ;20  ;9   ;5300;54  ;[RO]
 1;P;PLC_AnIn_1      ;INT      ;3   ;RTU       ;               ;3   ;20  ;10  ;5300;54  ;[RO]
 1;P;PLC_AnIn_2      ;INT      ;3   ;RTU       ;               ;3   ;20  ;11  ;5300;54  ;[RO]
-1;P;PLC_AnIn_3      ;INT      ;3   ;RTU       ;               ;3   ;20  ;12  ;5300;54  ;[RO]
-1;P;PLC_AnIn_4      ;INT      ;3   ;RTU       ;               ;3   ;20  ;13  ;5300;54  ;[RO]
-1;P;PLC_AnIn_5      ;INT      ;3   ;RTU       ;               ;3   ;20  ;14  ;5300;54  ;[RO]
+1;P;PLC_Reserved_1  ;INT      ;3   ;RTU       ;               ;3   ;20  ;12  ;5300;54  ;[RO]
+1;P;PLC_Reserved_2  ;INT      ;3   ;RTU       ;               ;3   ;20  ;13  ;5300;54  ;[RO]
+1;P;PLC_Reserved_3  ;INT      ;3   ;RTU       ;               ;3   ;20  ;14  ;5300;54  ;[RO]
 1;P;PLC_Tamb        ;INT      ;1   ;RTU       ;               ;3   ;20  ;15  ;5300;54  ;[RO]
-1;P;PLC_Encoder     ;UDINT    ;0   ;RTU       ;               ;3   ;20  ;16  ;5300;54  ;[RO]
+1;P;PLC_Encoder     ;DINT     ;0   ;RTU       ;               ;3   ;20  ;16  ;5300;54  ;[RO]
 1;P;PLC_Capture     ;UDINT    ;0   ;RTU       ;               ;3   ;20  ;18  ;5300;54  ;[RO]
 1;P;PLC_DigOut_1    ;BYTE_BIT ;1   ;RTU       ;               ;3   ;20  ;20  ;5300;54  ;[RW]
 1;P;PLC_DigOut_2    ;BYTE_BIT ;2   ;RTU       ;               ;3   ;20  ;20  ;5300;54  ;[RW]
@@ -5394,7 +5394,7 @@
 1;P;PLC_Version     ;UINT     ;3   ;PLC       ;               ;    ;    ;    ;5394;1   ;[RO]
 1;P;PLC_EngineStatus;UINT     ;0   ;PLC       ;               ;    ;    ;    ;5395;1   ;[RO]
 1;P;PLC_ResetValues ;BIT      ;0   ;PLC       ;               ;    ;    ;    ;5396;1   ;[RW]
-;;;;;;;;;;;;
+1;P;PLC_buzzerOn    ;BIT      ;0   ;PLC       ;               ;    ;    ;    ;5397;1   ;[RW]
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;

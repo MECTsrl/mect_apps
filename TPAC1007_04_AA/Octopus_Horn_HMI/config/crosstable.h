@@ -2610,23 +2610,23 @@ int doWrite_PLC_AnIn_2(int16_t value);
 int addWrite_PLC_AnIn_2(int16_t value);
 int getStatus_PLC_AnIn_2();
  
-#define ID_PLC_AnIn_3 5330
-extern int16_t PLC_AnIn_3;
-int doWrite_PLC_AnIn_3(int16_t value);
-int addWrite_PLC_AnIn_3(int16_t value);
-int getStatus_PLC_AnIn_3();
+#define ID_PLC_Reserved_1 5330
+extern int16_t PLC_Reserved_1;
+int doWrite_PLC_Reserved_1(int16_t value);
+int addWrite_PLC_Reserved_1(int16_t value);
+int getStatus_PLC_Reserved_1();
  
-#define ID_PLC_AnIn_4 5331
-extern int16_t PLC_AnIn_4;
-int doWrite_PLC_AnIn_4(int16_t value);
-int addWrite_PLC_AnIn_4(int16_t value);
-int getStatus_PLC_AnIn_4();
+#define ID_PLC_Reserved_2 5331
+extern int16_t PLC_Reserved_2;
+int doWrite_PLC_Reserved_2(int16_t value);
+int addWrite_PLC_Reserved_2(int16_t value);
+int getStatus_PLC_Reserved_2();
  
-#define ID_PLC_AnIn_5 5332
-extern int16_t PLC_AnIn_5;
-int doWrite_PLC_AnIn_5(int16_t value);
-int addWrite_PLC_AnIn_5(int16_t value);
-int getStatus_PLC_AnIn_5();
+#define ID_PLC_Reserved_3 5332
+extern int16_t PLC_Reserved_3;
+int doWrite_PLC_Reserved_3(int16_t value);
+int addWrite_PLC_Reserved_3(int16_t value);
+int getStatus_PLC_Reserved_3();
  
 #define ID_PLC_Tamb 5333
 extern int16_t PLC_Tamb;
@@ -2635,9 +2635,9 @@ int addWrite_PLC_Tamb(int16_t value);
 int getStatus_PLC_Tamb();
  
 #define ID_PLC_Encoder 5334
-extern u_int32_t PLC_Encoder;
-int doWrite_PLC_Encoder(u_int32_t value);
-int addWrite_PLC_Encoder(u_int32_t value);
+extern int32_t PLC_Encoder;
+int doWrite_PLC_Encoder(int32_t value);
+int addWrite_PLC_Encoder(int32_t value);
 int getStatus_PLC_Encoder();
  
 #define ID_PLC_Capture 5335
@@ -2795,6 +2795,12 @@ extern int PLC_ResetValues;
 int doWrite_PLC_ResetValues(int value);
 int addWrite_PLC_ResetValues(int value);
 int getStatus_PLC_ResetValues();
+ 
+#define ID_PLC_buzzerOn 5397
+extern int PLC_buzzerOn;
+int doWrite_PLC_buzzerOn(int value);
+int addWrite_PLC_buzzerOn(int value);
+int getStatus_PLC_buzzerOn();
  
 #ifdef __cplusplus
 }

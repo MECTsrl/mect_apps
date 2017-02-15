@@ -26,6 +26,7 @@ INPUT(
 ./moc_page434.o
 ./moc_page444.o
 ./moc_page201.o
+./qrc_systemicons.o
 ./qrc_languages.o
 ./qrc_resources.o
 );

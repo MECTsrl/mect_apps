@@ -58,7 +58,8 @@ SOURCES += \
     page201.cpp
 
 RESOURCES += \
-    resources.qrc
+    resources.qrc \
+    systemicons.qrc
 
 OTHER_FILES += \
     recipes/TP1043_01_A/1.csv \

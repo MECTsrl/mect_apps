@@ -1,5 +1,5 @@
 #include "crosstable.h"
-#include <stdio.h>
+#include "automation.h"
 
 // TEST_STATUS
 #define STATUS_LOCAL  0x0000
@@ -8,6 +8,7 @@
 
 void setup(void)
 {
+    logStart();
 }
 
 void loop(void)
