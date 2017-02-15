@@ -5,6 +5,7 @@ DINT      <-> int32_t
 UDINT     <-> u_int32_t
 REAL      <-> float
 BIT       <-> int
+BYTE      <-> u_int8_t
 BYTE_BIT  <-> int
 WORD_BIT  <-> int
 DWORD_BIT <-> int
@@ -22,210 +23,6 @@ extern u_int16_t STATUS;
 int doWrite_STATUS(u_int16_t value);
 int addWrite_STATUS(u_int16_t value);
 int getStatus_STATUS();
- 
-#define ID_RTU_HEARTBEAT 200
-extern u_int16_t RTU_HEARTBEAT;
-int doWrite_RTU_HEARTBEAT(u_int16_t value);
-int addWrite_RTU_HEARTBEAT(u_int16_t value);
-int getStatus_RTU_HEARTBEAT();
- 
-#define ID_RTU_RTU1_WR 201
-extern int RTU_RTU1_WR;
-int doWrite_RTU_RTU1_WR(int value);
-int addWrite_RTU_RTU1_WR(int value);
-int getStatus_RTU_RTU1_WR();
- 
-#define ID_RTU_RTU1_RD 202
-extern int RTU_RTU1_RD;
-int doWrite_RTU_RTU1_RD(int value);
-int addWrite_RTU_RTU1_RD(int value);
-int getStatus_RTU_RTU1_RD();
- 
-#define ID_TPLC005_BAUDRATE 205
-extern u_int16_t TPLC005_BAUDRATE;
-int doWrite_TPLC005_BAUDRATE(u_int16_t value);
-int addWrite_TPLC005_BAUDRATE(u_int16_t value);
-int getStatus_TPLC005_BAUDRATE();
- 
-#define ID_TPLC005_ADDRESS 206
-extern u_int16_t TPLC005_ADDRESS;
-int doWrite_TPLC005_ADDRESS(u_int16_t value);
-int addWrite_TPLC005_ADDRESS(u_int16_t value);
-int getStatus_TPLC005_ADDRESS();
- 
-#define ID_TPLC005_LIFETIME 207
-extern u_int16_t TPLC005_LIFETIME;
-int doWrite_TPLC005_LIFETIME(u_int16_t value);
-int addWrite_TPLC005_LIFETIME(u_int16_t value);
-int getStatus_TPLC005_LIFETIME();
- 
-#define ID_TPLC005_AnInCf_1 211
-extern u_int16_t TPLC005_AnInCf_1;
-int doWrite_TPLC005_AnInCf_1(u_int16_t value);
-int addWrite_TPLC005_AnInCf_1(u_int16_t value);
-int getStatus_TPLC005_AnInCf_1();
- 
-#define ID_TPLC005_AnInCf_2 212
-extern u_int16_t TPLC005_AnInCf_2;
-int doWrite_TPLC005_AnInCf_2(u_int16_t value);
-int addWrite_TPLC005_AnInCf_2(u_int16_t value);
-int getStatus_TPLC005_AnInCf_2();
- 
-#define ID_TPLC005_AnIn_1 213
-extern int16_t TPLC005_AnIn_1;
-int doWrite_TPLC005_AnIn_1(int16_t value);
-int addWrite_TPLC005_AnIn_1(int16_t value);
-int getStatus_TPLC005_AnIn_1();
- 
-#define ID_TPLC005_AnIn_2 214
-extern int16_t TPLC005_AnIn_2;
-int doWrite_TPLC005_AnIn_2(int16_t value);
-int addWrite_TPLC005_AnIn_2(int16_t value);
-int getStatus_TPLC005_AnIn_2();
- 
-#define ID_TPLC005_DigDir_1 215
-extern int TPLC005_DigDir_1;
-int doWrite_TPLC005_DigDir_1(int value);
-int addWrite_TPLC005_DigDir_1(int value);
-int getStatus_TPLC005_DigDir_1();
- 
-#define ID_TPLC005_DigDir_2 216
-extern int TPLC005_DigDir_2;
-int doWrite_TPLC005_DigDir_2(int value);
-int addWrite_TPLC005_DigDir_2(int value);
-int getStatus_TPLC005_DigDir_2();
- 
-#define ID_TPLC005_DigDir_3 217
-extern int TPLC005_DigDir_3;
-int doWrite_TPLC005_DigDir_3(int value);
-int addWrite_TPLC005_DigDir_3(int value);
-int getStatus_TPLC005_DigDir_3();
- 
-#define ID_TPLC005_DigDir_4 218
-extern int TPLC005_DigDir_4;
-int doWrite_TPLC005_DigDir_4(int value);
-int addWrite_TPLC005_DigDir_4(int value);
-int getStatus_TPLC005_DigDir_4();
- 
-#define ID_TPLC005_DigDir_5 219
-extern int TPLC005_DigDir_5;
-int doWrite_TPLC005_DigDir_5(int value);
-int addWrite_TPLC005_DigDir_5(int value);
-int getStatus_TPLC005_DigDir_5();
- 
-#define ID_TPLC005_DigDir_6 220
-extern int TPLC005_DigDir_6;
-int doWrite_TPLC005_DigDir_6(int value);
-int addWrite_TPLC005_DigDir_6(int value);
-int getStatus_TPLC005_DigDir_6();
- 
-#define ID_TPLC005_DigDir_7 221
-extern int TPLC005_DigDir_7;
-int doWrite_TPLC005_DigDir_7(int value);
-int addWrite_TPLC005_DigDir_7(int value);
-int getStatus_TPLC005_DigDir_7();
- 
-#define ID_TPLC005_DigDir_8 222
-extern int TPLC005_DigDir_8;
-int doWrite_TPLC005_DigDir_8(int value);
-int addWrite_TPLC005_DigDir_8(int value);
-int getStatus_TPLC005_DigDir_8();
- 
-#define ID_TPLC005_DigIn_1 223
-extern int TPLC005_DigIn_1;
-int doWrite_TPLC005_DigIn_1(int value);
-int addWrite_TPLC005_DigIn_1(int value);
-int getStatus_TPLC005_DigIn_1();
- 
-#define ID_TPLC005_DigIn_2 224
-extern int TPLC005_DigIn_2;
-int doWrite_TPLC005_DigIn_2(int value);
-int addWrite_TPLC005_DigIn_2(int value);
-int getStatus_TPLC005_DigIn_2();
- 
-#define ID_TPLC005_DigIn_3 225
-extern int TPLC005_DigIn_3;
-int doWrite_TPLC005_DigIn_3(int value);
-int addWrite_TPLC005_DigIn_3(int value);
-int getStatus_TPLC005_DigIn_3();
- 
-#define ID_TPLC005_DigIn_4 226
-extern int TPLC005_DigIn_4;
-int doWrite_TPLC005_DigIn_4(int value);
-int addWrite_TPLC005_DigIn_4(int value);
-int getStatus_TPLC005_DigIn_4();
- 
-#define ID_TPLC005_DigIn_5 227
-extern int TPLC005_DigIn_5;
-int doWrite_TPLC005_DigIn_5(int value);
-int addWrite_TPLC005_DigIn_5(int value);
-int getStatus_TPLC005_DigIn_5();
- 
-#define ID_TPLC005_DigIn_6 228
-extern int TPLC005_DigIn_6;
-int doWrite_TPLC005_DigIn_6(int value);
-int addWrite_TPLC005_DigIn_6(int value);
-int getStatus_TPLC005_DigIn_6();
- 
-#define ID_TPLC005_DigIn_7 229
-extern int TPLC005_DigIn_7;
-int doWrite_TPLC005_DigIn_7(int value);
-int addWrite_TPLC005_DigIn_7(int value);
-int getStatus_TPLC005_DigIn_7();
- 
-#define ID_TPLC005_DigIn_8 230
-extern int TPLC005_DigIn_8;
-int doWrite_TPLC005_DigIn_8(int value);
-int addWrite_TPLC005_DigIn_8(int value);
-int getStatus_TPLC005_DigIn_8();
- 
-#define ID_TPLC005_DigOut_1 231
-extern int TPLC005_DigOut_1;
-int doWrite_TPLC005_DigOut_1(int value);
-int addWrite_TPLC005_DigOut_1(int value);
-int getStatus_TPLC005_DigOut_1();
- 
-#define ID_TPLC005_DigOut_2 232
-extern int TPLC005_DigOut_2;
-int doWrite_TPLC005_DigOut_2(int value);
-int addWrite_TPLC005_DigOut_2(int value);
-int getStatus_TPLC005_DigOut_2();
- 
-#define ID_TPLC005_DigOut_3 233
-extern int TPLC005_DigOut_3;
-int doWrite_TPLC005_DigOut_3(int value);
-int addWrite_TPLC005_DigOut_3(int value);
-int getStatus_TPLC005_DigOut_3();
- 
-#define ID_TPLC005_DigOut_4 234
-extern int TPLC005_DigOut_4;
-int doWrite_TPLC005_DigOut_4(int value);
-int addWrite_TPLC005_DigOut_4(int value);
-int getStatus_TPLC005_DigOut_4();
- 
-#define ID_TPLC005_DigOut_5 235
-extern int TPLC005_DigOut_5;
-int doWrite_TPLC005_DigOut_5(int value);
-int addWrite_TPLC005_DigOut_5(int value);
-int getStatus_TPLC005_DigOut_5();
- 
-#define ID_TPLC005_DigOut_6 236
-extern int TPLC005_DigOut_6;
-int doWrite_TPLC005_DigOut_6(int value);
-int addWrite_TPLC005_DigOut_6(int value);
-int getStatus_TPLC005_DigOut_6();
- 
-#define ID_TPLC005_DigOut_7 237
-extern int TPLC005_DigOut_7;
-int doWrite_TPLC005_DigOut_7(int value);
-int addWrite_TPLC005_DigOut_7(int value);
-int getStatus_TPLC005_DigOut_7();
- 
-#define ID_TPLC005_DigOut_8 238
-extern int TPLC005_DigOut_8;
-int doWrite_TPLC005_DigOut_8(int value);
-int addWrite_TPLC005_DigOut_8(int value);
-int getStatus_TPLC005_DigOut_8();
  
 #define ID_TEST_COMMAND 4000
 extern u_int16_t TEST_COMMAND;
@@ -2818,6 +2615,12 @@ extern int PLC_ResetValues;
 int doWrite_PLC_ResetValues(int value);
 int addWrite_PLC_ResetValues(int value);
 int getStatus_PLC_ResetValues();
+ 
+#define ID_PLC_buzzerOn 5397
+extern int PLC_buzzerOn;
+int doWrite_PLC_buzzerOn(int value);
+int addWrite_PLC_buzzerOn(int value);
+int getStatus_PLC_buzzerOn();
  
 #ifdef __cplusplus
 }

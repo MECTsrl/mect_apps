@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 2.7.84, 2016-11-11T14:09:18. -->
+<!-- Written by QtCreator 2.7.84, 2017-02-15T12:27:17. -->
 <qtcreator>
  <data>
   <variable>ProjectExplorer.Project.ActiveTarget</variable>
@@ -221,8 +221,8 @@
        <value type="QString">C:/MectApps/TPAC1007_04_AA/Simple/hmi</value>
        <value type="QString">C:/MectApps/TPAC1007_03/Simple/config/splash.png</value>
        <value type="QString">C:/MectApps2/TPAC1007_03/Simple/config/trend1.csv</value>
-       <value type="QString">C:/MectApps/TPAC1007_04_AA/Simple/config/splash.png</value>
        <value type="QString">C:/MectApps/TPAC1007_LV/Simple/config/trend1.csv</value>
+       <value type="QString">C:/MectApps/TPAC1007_04_AA/Simple/config/splash.png</value>
        <value type="QString">C:/MectApps2/TPAC1007_03/Simple/config/Crosstable.csv</value>
        <value type="QString">C:/MectApps/TPAC1007_03/Simple/config/system.ini</value>
        <value type="QString">C:/MectApps/TPAC1007_LV/Simple/hmi</value>
@@ -265,8 +265,8 @@
        <value type="QString">/local/root</value>
        <value type="QString">/local/etc/sysconfig/img</value>
        <value type="QString">/local/data/customtrend</value>
-       <value type="QString">/local/etc/sysconfig/img</value>
        <value type="QString">/local/data/customtrend</value>
+       <value type="QString">/local/etc/sysconfig/img</value>
        <value type="QString">/local/etc/sysconfig</value>
        <value type="QString">/local/etc/sysconfig</value>
        <value type="QString">/local/root</value>
@@ -298,25 +298,25 @@
       </valuelist>
       <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedTimes">
        <value type="QDateTime">2016-05-17T08:13:54</value>
-       <value type="QDateTime">2016-11-11T14:06:56</value>
+       <value type="QDateTime">2017-02-15T12:21:41</value>
        <value type="QDateTime">2016-05-13T17:18:01</value>
        <value type="QDateTime">2016-05-13T18:18:15</value>
        <value type="QDateTime">2016-05-13T15:10:24</value>
-       <value type="QDateTime">2016-11-11T14:06:56</value>
+       <value type="QDateTime">2017-02-15T12:21:41</value>
        <value type="QDateTime">2016-06-01T17:22:43</value>
        <value type="QDateTime">2016-05-17T08:13:54</value>
        <value type="QDateTime">2016-06-01T17:22:43</value>
        <value type="QDateTime">2016-06-01T17:22:44</value>
        <value type="QDateTime">2016-05-13T15:10:24</value>
        <value type="QDateTime">2016-05-17T08:13:54</value>
+       <value type="QDateTime">2017-02-15T12:21:41</value>
        <value type="QDateTime">2016-06-01T17:22:43</value>
-       <value type="QDateTime">2016-11-11T14:06:56</value>
        <value type="QDateTime">2016-05-17T08:13:54</value>
        <value type="QDateTime">2016-05-13T15:23:13</value>
-       <value type="QDateTime">2016-11-11T14:06:57</value>
+       <value type="QDateTime">2017-02-15T12:21:41</value>
        <value type="QDateTime">2016-05-17T08:13:55</value>
        <value type="QDateTime">2016-06-01T17:22:43</value>
-       <value type="QDateTime">2016-11-11T14:06:56</value>
+       <value type="QDateTime">2017-02-15T12:21:41</value>
       </valuelist>
       <value type="bool" key="RemoteLinux.GenericDirectUploadStep.Incremental">false</value>
      </valuemap>
