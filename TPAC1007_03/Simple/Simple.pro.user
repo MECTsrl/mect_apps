@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 2.7.84, 2017-02-15T20:15:05. -->
+<!-- Written by QtCreator 2.7.84, 2017-02-17T17:24:48. -->
 <qtcreator>
  <data>
   <variable>ProjectExplorer.Project.ActiveTarget</variable>
@@ -210,8 +210,10 @@
       <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">RemoteLinux.DirectUploadStep</value>
       <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedFiles">
        <value type="QString">C:/MectApps/TPAC1007_03/Simple/hmi</value>
+       <value type="QString">C:/MectApps/TPAC1007_03/Simple/recipes/AnOut/sine_wave.csv</value>
        <value type="QString">C:/MectApps/TPAC1007_03/Simple/config/splash.png</value>
        <value type="QString">C:/MectApps/TPAC1007_03/Simple/config/Crosstable.csv</value>
+       <value type="QString">C:/MectApps/TPAC1007_03/Simple/recipes/AnOut/up_and_down.csv</value>
        <value type="QString">C:/MectApps/TPAC1007_03/Simple/recipes/AnOut/sine_wave.csv</value>
        <value type="QString">C:/MectApps/TPAC1007_03/Simple/hmi</value>
        <value type="QString">C:/MectApps/TPAC1007_03/Simple/config/trend1.csv</value>
@@ -224,7 +226,9 @@
        <value type="QString">C:/MectApps/TPAC1007_03/Simple/config/system.ini</value>
        <value type="QString">C:/MectApps/TPAC1007_03/Simple/hmi</value>
        <value type="QString">C:/MectApps/TPAC1007_03/Simple/config/system.ini</value>
+       <value type="QString">C:/MectApps/TPAC1007_03/Simple/recipes/DigOut/from_1_to_4.csv</value>
        <value type="QString">C:/MectApps/TPAC1007_03/Simple/config/splash.png</value>
+       <value type="QString">C:/MectApps/TPAC1007_03/Simple/recipes/DigOut/from_1_to_8.csv</value>
        <value type="QString">C:/MectApps/TPAC1007_03/Simple/recipes/AnOut/up_and_down.csv</value>
        <value type="QString">C:/MectApps/TPAC1007_03/Simple/recipes/DigOut/from_1_to_4.csv</value>
        <value type="QString">C:/MectApps/TPAC1007_03/Simple/recipes/DigOut/from_1_to_8.csv</value>
@@ -233,7 +237,9 @@
       <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedHosts">
        <value type="QString">192.168.5.110</value>
        <value type="QString">192.168.5.110</value>
+       <value type="QString">192.168.5.110</value>
        <value type="QString">192.168.5.102</value>
+       <value type="QString">192.168.5.110</value>
        <value type="QString">192.168.5.102</value>
        <value type="QString">192.168.5.102</value>
        <value type="QString">192.168.5.102</value>
@@ -246,7 +252,9 @@
        <value type="QString">192.168.5.110</value>
        <value type="QString">192.168.5.211</value>
        <value type="QString">192.168.5.102</value>
+       <value type="QString">192.168.5.110</value>
        <value type="QString">192.168.5.211</value>
+       <value type="QString">192.168.5.110</value>
        <value type="QString">192.168.5.102</value>
        <value type="QString">192.168.5.102</value>
        <value type="QString">192.168.5.102</value>
@@ -254,8 +262,10 @@
       </valuelist>
       <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedRemotePaths">
        <value type="QString">/local/root</value>
+       <value type="QString">/local/data/recipe/AnOut</value>
        <value type="QString">/local/etc/sysconfig/img</value>
        <value type="QString">/local/etc/sysconfig</value>
+       <value type="QString">/local/data/recipe/AnOut</value>
        <value type="QString">/local/data/recipe/AnOut</value>
        <value type="QString">/local/root</value>
        <value type="QString">/local/data/customtrend</value>
@@ -268,7 +278,9 @@
        <value type="QString">/local/etc/sysconfig</value>
        <value type="QString">/local/root</value>
        <value type="QString">/local/etc/sysconfig</value>
+       <value type="QString">/local/data/recipe/DigOut</value>
        <value type="QString">/local/etc/sysconfig/img</value>
+       <value type="QString">/local/data/recipe/DigOut</value>
        <value type="QString">/local/data/recipe/AnOut</value>
        <value type="QString">/local/data/recipe/DigOut</value>
        <value type="QString">/local/data/recipe/AnOut</value>
@@ -295,28 +307,36 @@
        <value type="QString">C:/Qt485/imx28/rootfs</value>
        <value type="QString">C:/Qt485/imx28/rootfs</value>
        <value type="QString">C:/Qt485/imx28/rootfs</value>
+       <value type="QString">C:/Qt485/imx28/rootfs</value>
+       <value type="QString">C:/Qt485/imx28/rootfs</value>
+       <value type="QString">C:/Qt485/imx28/rootfs</value>
+       <value type="QString">C:/Qt485/imx28/rootfs</value>
       </valuelist>
       <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedTimes">
-       <value type="QDateTime">2017-02-12T23:24:34</value>
-       <value type="QDateTime">2017-02-12T23:24:33</value>
-       <value type="QDateTime">2017-02-15T20:13:22</value>
-       <value type="QDateTime">2017-02-15T20:13:22</value>
-       <value type="QDateTime">2017-02-15T20:13:23</value>
-       <value type="QDateTime">2017-02-15T20:13:22</value>
-       <value type="QDateTime">2017-02-12T23:24:33</value>
-       <value type="QDateTime">2017-02-12T23:24:32</value>
+       <value type="QDateTime">2017-02-17T02:48:55</value>
+       <value type="QDateTime">2017-02-17T02:48:53</value>
+       <value type="QDateTime">2017-02-17T02:48:53</value>
+       <value type="QDateTime">2017-02-17T17:23:25</value>
+       <value type="QDateTime">2017-02-17T02:48:53</value>
+       <value type="QDateTime">2017-02-17T17:23:25</value>
+       <value type="QDateTime">2017-02-17T17:23:26</value>
+       <value type="QDateTime">2017-02-17T17:23:25</value>
+       <value type="QDateTime">2017-02-17T02:48:53</value>
+       <value type="QDateTime">2017-02-17T02:48:53</value>
        <value type="QDateTime">2016-06-11T12:42:38</value>
        <value type="QDateTime">2016-06-11T12:42:38</value>
        <value type="QDateTime">2016-06-11T12:42:38</value>
-       <value type="QDateTime">2017-02-15T20:13:22</value>
-       <value type="QDateTime">2017-02-12T23:24:33</value>
+       <value type="QDateTime">2017-02-17T17:23:25</value>
+       <value type="QDateTime">2017-02-17T02:48:53</value>
        <value type="QDateTime">2016-06-11T12:42:38</value>
-       <value type="QDateTime">2017-02-15T20:13:22</value>
+       <value type="QDateTime">2017-02-17T17:23:25</value>
+       <value type="QDateTime">2017-02-17T02:48:53</value>
        <value type="QDateTime">2016-06-11T12:42:38</value>
-       <value type="QDateTime">2017-02-15T20:13:22</value>
-       <value type="QDateTime">2017-02-15T20:13:22</value>
+       <value type="QDateTime">2017-02-17T02:48:54</value>
+       <value type="QDateTime">2017-02-17T17:23:25</value>
+       <value type="QDateTime">2017-02-17T17:23:25</value>
        <value type="QDateTime">2017-02-13T17:02:57</value>
-       <value type="QDateTime">2017-02-15T20:13:22</value>
+       <value type="QDateTime">2017-02-17T17:23:25</value>
       </valuelist>
       <value type="bool" key="RemoteLinux.GenericDirectUploadStep.Incremental">false</value>
      </valuemap>

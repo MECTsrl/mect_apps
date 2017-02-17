@@ -64,7 +64,8 @@
         <location filename="page100.ui" line="2303"/>
         <location filename="page100.ui" line="2543"/>
         <location filename="page100.ui" line="2664"/>
-        <location filename="page100.ui" line="3770"/>
+        <location filename="page100.ui" line="3764"/>
+        <location filename="page100.ui" line="3883"/>
         <source>ATCMbutton widget</source>
         <translation type="unfinished"></translation>
     </message>
@@ -183,8 +184,8 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="page100.ui" line="3821"/>
         <location filename="page100.ui" line="3827"/>
-        <location filename="page100.ui" line="3833"/>
         <source>PLC_EncEnable</source>
         <translation type="unfinished"></translation>
     </message>
@@ -316,7 +317,7 @@
         <location filename="page100.ui" line="855"/>
         <location filename="page100.ui" line="1319"/>
         <location filename="page100.ui" line="2372"/>
-        <location filename="page100.ui" line="3830"/>
+        <location filename="page100.ui" line="3824"/>
         <source>ATCMcombobox widget</source>
         <translation type="unfinished"></translation>
     </message>
@@ -459,12 +460,12 @@
     <message>
         <location filename="page100.ui" line="2029"/>
         <location filename="page100.ui" line="2035"/>
+        <location filename="page100.ui" line="3339"/>
         <location filename="page100.ui" line="3345"/>
-        <location filename="page100.ui" line="3351"/>
-        <location filename="page100.ui" line="3525"/>
-        <location filename="page100.ui" line="3537"/>
-        <location filename="page100.ui" line="3594"/>
-        <location filename="page100.ui" line="3606"/>
+        <location filename="page100.ui" line="3519"/>
+        <location filename="page100.ui" line="3531"/>
+        <location filename="page100.ui" line="3588"/>
+        <location filename="page100.ui" line="3600"/>
         <source>PLC_AnOut_1</source>
         <translation type="unfinished"></translation>
     </message>
@@ -508,19 +509,24 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="3597"/>
+        <location filename="page100.ui" line="3591"/>
         <source>ATCMslider widget</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="3799"/>
-        <location filename="page100.ui" line="3802"/>
+        <location filename="page100.ui" line="3793"/>
+        <location filename="page100.ui" line="3796"/>
         <source>Log</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="3864"/>
+        <location filename="page100.ui" line="3858"/>
         <source>1;Encoder;2;Counter;3;---</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page100.ui" line="3908"/>
+        <source>page200</source>
         <translation type="unfinished"></translation>
     </message>
     <message utf8="true">
@@ -535,22 +541,22 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="3348"/>
+        <location filename="page100.ui" line="3342"/>
         <source>ATCMspinbox widget</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="3528"/>
+        <location filename="page100.ui" line="3522"/>
         <source>ATCMprogressbar widget</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="3242"/>
+        <location filename="page100.ui" line="3239"/>
         <source>An In 1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="3288"/>
+        <location filename="page100.ui" line="3282"/>
         <source>An In 2</source>
         <translation type="unfinished"></translation>
     </message>
@@ -652,6 +658,10 @@
     </message>
     <message>
         <location filename="page200.ui" line="131"/>
+        <location filename="page200.ui" line="540"/>
+        <location filename="page200.ui" line="600"/>
+        <location filename="page200.ui" line="660"/>
+        <location filename="page200.ui" line="742"/>
         <source>ATCMbutton widget</source>
         <translation type="unfinished"></translation>
     </message>
@@ -668,7 +678,8 @@
     </message>
     <message>
         <location filename="page200.ui" line="197"/>
-        <source>Simple</source>
+        <source>Simple: page200</source>
+        <oldsource>Simple</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -725,10 +736,6 @@
     <message>
         <location filename="page200.ui" line="307"/>
         <location filename="page200.ui" line="322"/>
-        <source>PLC_Version</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="page200.ui" line="428"/>
         <location filename="page200.ui" line="440"/>
         <location filename="page200.ui" line="481"/>
@@ -747,13 +754,25 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="page200.ui" line="657"/>
+        <source>page: trend1.csv  status: </source>
+        <oldsource>page: trend  status: </oldsource>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="739"/>
+        <source>page: store  status: </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="page200.ui" line="310"/>
         <source>ATCManimation widget</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="page200.ui" line="319"/>
-        <source>1;:/systemicons/Film.png;2;:/systemicons/Smile.png;3;:/systemicons/Thumbs_up.png</source>
+        <source>1;:/systemicons/Film.png;2;:/systemicons/Smile.png;3;:/systemicons/Thumbs_up.png;4;:/systemicons/Linux.png</source>
+        <oldsource>1;:/systemicons/Film.png;2;:/systemicons/Smile.png;3;:/systemicons/Thumbs_up.png</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
