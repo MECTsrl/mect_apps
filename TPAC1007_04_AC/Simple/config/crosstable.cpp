@@ -12,6 +12,7 @@ DWORD_BIT <-> int
 */ 
 #include "crosstable.h"
  
+u_int8_t X = 0;
 u_int32_t RTU0_TYPE_PORT = 0;
 u_int32_t RTU0_BAUDRATE = 0;
 u_int32_t RTU0_STATUS = 0;
@@ -266,6 +267,24 @@ u_int16_t PLC_Version = 0;
 u_int16_t PLC_EngineStatus = 0;
 int PLC_ResetValues = 0;
 int PLC_buzzerOn = 0;
+
+
+int doWrite_X(u_int8_t value)
+{
+return doWrite(ID_X,  &value);
+}
+
+
+int addWrite_X(u_int8_t value)
+{
+return addWrite(ID_X, &value);
+}
+
+
+int getStatus_X()
+{
+return getStatus(ID_X);
+}
 
 
 int doWrite_RTU0_TYPE_PORT(u_int32_t value)
@@ -4843,6 +4862,7 @@ return getStatus(ID_PLC_buzzerOn);
 int update_all(void)
 {
 int retval = 0;
+retval += readFromDb(ID_X, &X);
 retval += readFromDb(ID_RTU0_TYPE_PORT, &RTU0_TYPE_PORT);
 retval += readFromDb(ID_RTU0_BAUDRATE, &RTU0_BAUDRATE);
 retval += readFromDb(ID_RTU0_STATUS, &RTU0_STATUS);

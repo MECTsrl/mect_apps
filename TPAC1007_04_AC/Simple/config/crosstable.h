@@ -18,6 +18,12 @@ extern "C" {
 #include <sys/types.h>
 #include "cross_table_utility.h"
  
+#define ID_X 192
+extern u_int8_t X;
+int doWrite_X(u_int8_t value);
+int addWrite_X(u_int8_t value);
+int getStatus_X();
+ 
 #define ID_RTU0_TYPE_PORT 5000
 extern u_int32_t RTU0_TYPE_PORT;
 int doWrite_RTU0_TYPE_PORT(u_int32_t value);

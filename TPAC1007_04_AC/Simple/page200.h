@@ -7,34 +7,31 @@
  *
  * @brief Main page
  */
-#ifndef PAGE100_H
-#define PAGE100_H
+#ifndef PAGE200_H
+#define PAGE200_H
 
 #include "pagebrowser.h"
 
 namespace Ui {
-class page100;
+class page200;
 }
 
-class page100 : public page
+class page200 : public page
 {
     Q_OBJECT
     
 public:
-    explicit page100(QWidget *parent = 0);
-    ~page100();
+    explicit page200(QWidget *parent = 0);
+    ~page200();
     virtual void reload(void);
     virtual void updateData();
     
 private slots:
     void changeEvent(QEvent * event);
     
-    void on_atcmButton_Log_clicked(bool checked);
-
 private:
-    Ui::page100 *ui;
+    Ui::page200 *ui;
 };
 
-#endif // PAGE100_H
-
+#endif // PAGE200_H
 

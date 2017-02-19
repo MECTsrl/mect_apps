@@ -10,19 +10,15 @@
 #include "app_logprint.h"
 #include "atcmplugin.h"
 #include "main.h"
-#include "page100.h"
-#include "ui_page100.h"
+#include "page300.h"
+#include "ui_page300.h"
 #include "crosstable.h"
 
-#include <qwt.h>
-#include <qwt_dial.h>
-#include <qwt_dial_needle.h>
-
 /**
- * @brief this macro is used to set the PAGE100 style.
+ * @brief this macro is used to set the PAGE300 style.
  * the syntax is html stylesheet-like
  */
-#define SET_PAGE100_STYLE() { \
+#define SET_PAGE300_STYLE() { \
     QString mystyle; \
     mystyle.append(this->styleSheet()); \
     /* add there the page stilesheet customization */ \
@@ -33,9 +29,9 @@
 /**
  * @brief This is the constructor. The operation written here, are executed only one time: at the instantiation of the page.
  */
-page100::page100(QWidget *parent) :
+page300::page300(QWidget *parent) :
     page(parent),
-    ui(new Ui::page100)
+    ui(new Ui::page300)
 {
     ui->setupUi(this);
     /* set here the protection level (pwd_admin_e, pwd_super_user_e, pwd_user_e, pwd_operator_e), default is pwd_operator_e
@@ -44,30 +40,15 @@ page100::page100(QWidget *parent) :
     
     /* set up the page style */
     //SET_PAGE_STYLE();
-    /* set the style described into the macro SET_PAGE100_STYLE */
-    SET_PAGE100_STYLE();
+    /* set the style described into the macro SET_PAGE300_STYLE */
+    SET_PAGE300_STYLE();
     translateFontSize(this);
-
-    // Creating Needle for qwtDial1
-    QwtDialSimpleNeedle *needle1 = new QwtDialSimpleNeedle(
-                QwtDialSimpleNeedle::Arrow, true, Qt::red,
-                QColor(Qt::gray).light(130));
-    // Setting Needle for qwtDial1
-    ui->qwtDial1->setNeedle(needle1);
-
-    // Creating Needle for qwtDial2
-    QwtDialSimpleNeedle *needle2 = new QwtDialSimpleNeedle(
-                QwtDialSimpleNeedle::Arrow, true, Qt::blue,
-                QColor(Qt::gray).light(130));
-    // Setting Needle for qwtDial2
-    ui->qwtDial2->setNeedle(needle2);
-
 }
 
 /**
  * @brief This is the reload member. The operation written here, are executed every time this page is shown.
  */
-void page100::reload()
+void page300::reload()
 {
     /*
        H variables initalizations:
@@ -81,7 +62,7 @@ void page100::reload()
 /**
  * @brief This is the updateData member. The operation written here, are executed every REFRESH_MS milliseconds.
  */
-void page100::updateData()
+void page300::updateData()
 {
     if (this->isVisible() == false)
     {
@@ -96,18 +77,24 @@ void page100::updateData()
     /* To write 5 into the the cross table variable UINT TEST1:
      *    doWrite_TEST1(5);
      */
-    // Reading Analog Input 1 and setting to Dial 1
-    ui->qwtDial1->setValue(PLC_AnIn_1 / 1000);
-
-    // Reading Analog Input 2 and setting to Dial 2
-    ui->qwtDial2->setValue(PLC_AnIn_2 / 1000);
-
+    if (!ui->spinBox->isReadOnly())
+    {
+        int step = ui->spinBox->value();
+        if (checkRecipe(step - 1, &recipeIndexes, recipeTable))
+        {
+            fprintf(stderr, "checkRecipe(%d) ok", step);
+        }
+        else
+        {
+            fprintf(stderr, "checkRecipe(%d) failed\n", step);
+        }
+    }
 }
 
 /**
  * @brief This is the event slot to detect new language translation.
  */
-void page100::changeEvent(QEvent * event)
+void page300::changeEvent(QEvent * event)
 {
     if (event->type() == QEvent::LanguageChange)
     {
@@ -118,17 +105,52 @@ void page100::changeEvent(QEvent * event)
 /**
  * @brief This is the distructor member. The operation written here, are executed only one time when the page will be deleted.
  */
-page100::~page100()
+page300::~page300()
 {
     delete ui;
 }
 
 
-
-void page100::on_atcmButton_Log_clicked(bool checked)
+void page300::on_atcmComboBox_currentIndexChanged(const QString &recipe)
 {
-    if (checked)
-        logStart();
+    char filename[84];
+    snprintf(filename, 84, "%s/%s.csv", RECIPE_DIR, recipe.toAscii().data());
+
+    steps_number = loadRecipe(filename, &recipeIndexes, recipeTable);
+
+    if (steps_number > 0)
+    {
+        ui->spinBox->setMinimum(1);
+        ui->label_min->setNum(1);
+        ui->spinBox->setMaximum(steps_number);
+        ui->label_max->setNum(steps_number);
+        current_step = 1;
+        ui->spinBox->setValue(1);
+        ui->spinBox->setReadOnly(false);
+    }
     else
-        logStop();
+    {
+        ui->spinBox->setMinimum(0);
+        ui->label_min->setNum(0);
+        ui->spinBox->setMaximum(0);
+        ui->label_max->setNum(0);
+        current_step = 0;
+        ui->spinBox->setValue(0);
+        ui->spinBox->setReadOnly(true);
+    }
+}
+
+void page300::on_spinBox_valueChanged(int step)
+{
+    if (step > 0 && step < steps_number)
+    {
+        if (writeRecipe(step - 1, &recipeIndexes, recipeTable))
+        {
+            fprintf(stderr, "writeRecipe(%d) failed\n", step);
+        }
+        else
+        {
+            fprintf(stderr, "writeRecipe(%d) ok\n", step);
+        }
+    }
 }
