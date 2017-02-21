@@ -758,7 +758,7 @@ background-color: rgb(170, 255, 255);
   <widget class="ATCMcombobox" name="atcmComboBox_PLC_AnInConf_2">
    <property name="geometry">
     <rect>
-     <x>160</x>
+     <x>120</x>
      <y>136</y>
      <width>80</width>
      <height>34</height>
@@ -811,7 +811,7 @@ background-color: rgb(170, 255, 255);
     <enum>QFrame::Raised</enum>
    </property>
    <property name="mapping">
-    <string>1;[mA] 4..20;2;[V] 0..10;3;[°C] TCJ;4;[°C] TCK;5;[°C] TCT;6;[°C] PT100E;7;[°C] PT100R;0;--</string>
+    <string>1;4..20mA;2;0..10V;3;TCJ;4;TCK;5;TCT;6;PT100E;7;PT100R</string>
    </property>
   </widget>
   <widget class="ATCMled" name="atcmLed_PLC_DigIn_3">
@@ -1315,7 +1315,7 @@ background-color: rgb(170, 255, 255);
     <enum>QFrame::Raised</enum>
    </property>
    <property name="mapping">
-    <string>1;[mA] 4..20;2;[V] 0..10;0;---</string>
+    <string>1;4..20mA;2;0..10V</string>
    </property>
   </widget>
   <widget class="ATCMled" name="atcmLed_PLC_DigIn_5">
@@ -2342,7 +2342,7 @@ background-color: rgb(170, 255, 255);
   <widget class="ATCMcombobox" name="atcmComboBox_PLC_AnInConf_1">
    <property name="geometry">
     <rect>
-     <x>160</x>
+     <x>120</x>
      <y>102</y>
      <width>80</width>
      <height>34</height>
@@ -2395,7 +2395,7 @@ background-color: rgb(170, 255, 255);
     <enum>QFrame::Raised</enum>
    </property>
    <property name="mapping">
-    <string>1;[mA] 4..20;2;[V] 0..10;3;[°C] TCJ;4;[°C] TCK;5;[°C] TCT;6;[°C] PT100E;7;[°C] PT100R;0;--</string>
+    <string>1;4..20mA;2;0..10V;3;TCJ;4;TCK;5;TCT;6;PT100E;7;PT100R</string>
    </property>
   </widget>
   <widget class="ATCMled" name="atcmLed_PLC_DigIn_12">
@@ -3474,6 +3474,9 @@ background-color: rgb(170, 255, 255);
    <property name="borderRadius">
     <number>0</number>
    </property>
+   <property name="apparence">
+    <enum>QFrame::Plain</enum>
+   </property>
    <property name="format">
     <enum>ATCMlabel::Hex</enum>
    </property>
@@ -3792,7 +3795,7 @@ background-color: rgb(170, 255, 255);
     </font>
    </property>
    <property name="text">
-    <string>0x12345678</string>
+    <string>-1234567890</string>
    </property>
    <property name="toolTip">
     <string>PLC_Encoder</string>
@@ -3842,7 +3845,7 @@ background-color: rgb(170, 255, 255);
     <enum>QFrame::Plain</enum>
    </property>
    <property name="format">
-    <enum>ATCMlabel::Hex</enum>
+    <enum>ATCMlabel::Dec</enum>
    </property>
   </widget>
   <widget class="ATCMbutton" name="atcmButton_PLC_DigDir_2">
@@ -4006,7 +4009,7 @@ background-color: rgb(170, 255, 255);
     <rect>
      <x>240</x>
      <y>119</y>
-     <width>93</width>
+     <width>124</width>
      <height>3</height>
     </rect>
    </property>
@@ -4026,7 +4029,7 @@ background-color: rgb(170, 255, 255);
    </property>
    <property name="geometry">
     <rect>
-     <x>120</x>
+     <x>200</x>
      <y>102</y>
      <width>40</width>
      <height>34</height>
@@ -4056,10 +4059,10 @@ background-color: rgb(170, 255, 255);
     <string>PLC_AnIn1Filter</string>
    </property>
    <property name="prefix">
-    <string>[</string>
+    <string/>
    </property>
    <property name="suffix">
-    <string>]</string>
+    <string/>
    </property>
    <property name="refresh">
     <number>200</number>
@@ -4099,7 +4102,7 @@ background-color: rgb(170, 255, 255);
    </property>
    <property name="geometry">
     <rect>
-     <x>120</x>
+     <x>200</x>
      <y>136</y>
      <width>40</width>
      <height>34</height>
@@ -4129,10 +4132,10 @@ background-color: rgb(170, 255, 255);
     <string>PLC_AnIn2Filter</string>
    </property>
    <property name="prefix">
-    <string>[</string>
+    <string/>
    </property>
    <property name="suffix">
-    <string>]</string>
+    <string/>
    </property>
    <property name="refresh">
     <number>200</number>
@@ -4188,7 +4191,7 @@ background-color: rgb(170, 255, 255);
    <property name="font">
     <font>
      <family>DejaVu Sans Mono</family>
-     <pointsize>5</pointsize>
+     <pointsize>7</pointsize>
     </font>
    </property>
    <property name="text">
@@ -4236,6 +4239,25 @@ background-color: rgb(170, 255, 255);
    </property>
    <property name="format">
     <enum>ATCMlabel::Hex</enum>
+   </property>
+  </widget>
+  <widget class="Line" name="line_vt_8">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>102</y>
+     <width>3</width>
+     <height>68</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
    </property>
   </widget>
   <zorder>atcmLabel_PLC_StatusReg</zorder>
@@ -4325,6 +4347,7 @@ background-color: rgb(170, 255, 255);
   <zorder>line_vt_7</zorder>
   <zorder>line_hr_7</zorder>
   <zorder>atcmButton_Transparent</zorder>
+  <zorder>line_vt_8</zorder>
  </widget>
  <customwidgets>
   <customwidget>

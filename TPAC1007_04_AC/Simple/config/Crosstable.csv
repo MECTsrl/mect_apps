@@ -190,10 +190,10 @@
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
 1;P;X               ;BYTE     ;0   ;PLC       ;               ;    ;    ;    ;1   ;1   ;[RW]
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
+1;P;Alarm_1         ;BIT      ;0   ;PLC       ;               ;    ;    ;    ;2   ;1   ;[AL PLC_DigIn_11 RISING]
+1;P;Alarm_2         ;BIT      ;0   ;PLC       ;               ;    ;    ;    ;3   ;1   ;[AL PLC_Encoder <= -10.00]
+1;P;Event_1         ;BIT      ;0   ;PLC       ;               ;    ;    ;    ;4   ;1   ;[EV PLC_DigIn_12 RISING]
+1;P;Event_2         ;BIT      ;0   ;PLC       ;               ;    ;    ;    ;5   ;1   ;[EV PLC_Encoder < 0.00]
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;

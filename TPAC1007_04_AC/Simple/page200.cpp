@@ -57,6 +57,7 @@ void page200::reload()
        alarm banner initialization in QLineEdit:
          rotateShowError(ui->myLineEdit, ERROR_LABEL_PERIOD_MS);
      */
+    rotateShowError(ui->lineEdit_Alarms, ERROR_LABEL_PERIOD_MS);
 }
 
 /**

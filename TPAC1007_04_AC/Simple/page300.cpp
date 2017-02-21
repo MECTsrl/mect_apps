@@ -43,6 +43,12 @@ page300::page300(QWidget *parent) :
     /* set the style described into the macro SET_PAGE300_STYLE */
     SET_PAGE300_STYLE();
     translateFontSize(this);
+
+    justWroteRecipe = false;
+    ui->comboBox->addItem("AnOut/sine_wave");
+    ui->comboBox->addItem("AnOut/up_and_down");
+    ui->comboBox->addItem("DigOut/from_1_to_4");
+    ui->comboBox->addItem("DigOut/from_1_to_8");
 }
 
 /**
@@ -77,12 +83,13 @@ void page300::updateData()
     /* To write 5 into the the cross table variable UINT TEST1:
      *    doWrite_TEST1(5);
      */
-    if (!ui->spinBox->isReadOnly())
+    if (justWroteRecipe)
     {
         int step = ui->spinBox->value();
         if (checkRecipe(step - 1, &recipeIndexes, recipeTable))
         {
             fprintf(stderr, "checkRecipe(%d) ok", step);
+            justWroteRecipe = false;
         }
         else
         {
@@ -110,8 +117,23 @@ page300::~page300()
     delete ui;
 }
 
+void page300::on_spinBox_valueChanged(int step)
+{
+    if (step > 0 && step < steps_number)
+    {
+        if (writeRecipe(step - 1, &recipeIndexes, recipeTable))
+        {
+            fprintf(stderr, "writeRecipe(%d) failed\n", step);
+        }
+        else
+        {
+            fprintf(stderr, "writeRecipe(%d) ok\n", step);
+            justWroteRecipe = true;
+        }
+    }
+}
 
-void page300::on_atcmComboBox_currentIndexChanged(const QString &recipe)
+void page300::on_comboBox_currentIndexChanged(const QString &recipe)
 {
     char filename[84];
     snprintf(filename, 84, "%s/%s.csv", RECIPE_DIR, recipe.toAscii().data());
@@ -137,20 +159,5 @@ void page300::on_atcmComboBox_currentIndexChanged(const QString &recipe)
         current_step = 0;
         ui->spinBox->setValue(0);
         ui->spinBox->setReadOnly(true);
-    }
-}
-
-void page300::on_spinBox_valueChanged(int step)
-{
-    if (step > 0 && step < steps_number)
-    {
-        if (writeRecipe(step - 1, &recipeIndexes, recipeTable))
-        {
-            fprintf(stderr, "writeRecipe(%d) failed\n", step);
-        }
-        else
-        {
-            fprintf(stderr, "writeRecipe(%d) ok\n", step);
-        }
     }
 }

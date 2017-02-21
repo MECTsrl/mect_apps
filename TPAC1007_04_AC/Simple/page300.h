@@ -28,10 +28,9 @@ public:
     
 private slots:
     void changeEvent(QEvent * event);
-    
-    void on_atcmComboBox_currentIndexChanged(const QString &recipe);
-
     void on_spinBox_valueChanged(int step);
+
+    void on_comboBox_currentIndexChanged(const QString &recipe);
 
 private:
     Ui::page300 *ui;
@@ -40,6 +39,7 @@ private:
     int current_step;
     QList<u_int16_t> recipeIndexes;
     QList<u_int32_t> recipeTable[MAX_RCP_STEP];
+    bool justWroteRecipe;
 
 };
 
