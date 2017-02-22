@@ -57,6 +57,8 @@ void page200::reload()
        alarm banner initialization in QLineEdit:
          rotateShowError(ui->myLineEdit, ERROR_LABEL_PERIOD_MS);
      */
+
+    doWrite_PLC_timeWin(30.0);
     rotateShowError(ui->lineEdit_Alarms, ERROR_LABEL_PERIOD_MS);
 }
 
@@ -77,7 +79,28 @@ void page200::updateData()
      */
     /* To write 5 into the the cross table variable UINT TEST1:
      *    doWrite_TEST1(5);
-     */	
+     */
+
+    if (PLC_timeWin <= 15.0)
+    {
+        if (ui->atcmGraph->x1Step() != 5.0)
+            ui->atcmGraph->setX1Step(5.0);
+    }
+    else if (PLC_timeWin <= 30.0)
+    {
+        if (ui->atcmGraph->x1Step() != 10.0)
+            ui->atcmGraph->setX1Step(10.0);
+    }
+    else if (PLC_timeWin <= 60.0)
+    {
+        if (ui->atcmGraph->x1Step() != 20.0)
+            ui->atcmGraph->setX1Step(20.0);
+    }
+    else // max == 120.0
+    {
+        if (ui->atcmGraph->x1Step() != 40.0)
+            ui->atcmGraph->setX1Step(40.0);
+    }
 }
 
 /**
@@ -99,3 +122,8 @@ page200::~page200()
     delete ui;
 }
 
+
+void page200::on_atcmButton_HOME_2_clicked()
+{
+    ui->atcmGraph->RunStop();
+}

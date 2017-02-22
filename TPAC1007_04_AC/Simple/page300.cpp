@@ -44,6 +44,7 @@ page300::page300(QWidget *parent) :
     SET_PAGE300_STYLE();
     translateFontSize(this);
 
+    do_write_step = -1;
     justWroteRecipe = false;
     ui->comboBox->addItem("AnOut/sine_wave");
     ui->comboBox->addItem("AnOut/up_and_down");
@@ -83,18 +84,34 @@ void page300::updateData()
     /* To write 5 into the the cross table variable UINT TEST1:
      *    doWrite_TEST1(5);
      */
-    if (justWroteRecipe)
+    if (do_write_step > 0 && do_write_step <= steps_number)
+    {
+        int step = do_write_step;
+
+        if (writeRecipe(step - 1, &recipeIndexes, recipeTable))
+        {
+            fprintf(stderr, "writeRecipe(%d) failed, retrying\n", step);
+        }
+        else
+        {
+            fprintf(stderr, "writeRecipe(%d) ok\n", step);
+            do_write_step = -1;
+            justWroteRecipe = true;
+        }
+    }
+    else if (justWroteRecipe)
     {
         int step = ui->spinBox->value();
         if (checkRecipe(step - 1, &recipeIndexes, recipeTable))
         {
             fprintf(stderr, "checkRecipe(%d) ok", step);
-            justWroteRecipe = false;
         }
         else
         {
-            fprintf(stderr, "checkRecipe(%d) failed\n", step);
+            fprintf(stderr, "checkRecipe(%d) failed, retrying\n", step);
+            do_write_step = step;
         }
+        justWroteRecipe = false;
     }
 }
 
@@ -119,18 +136,7 @@ page300::~page300()
 
 void page300::on_spinBox_valueChanged(int step)
 {
-    if (step > 0 && step < steps_number)
-    {
-        if (writeRecipe(step - 1, &recipeIndexes, recipeTable))
-        {
-            fprintf(stderr, "writeRecipe(%d) failed\n", step);
-        }
-        else
-        {
-            fprintf(stderr, "writeRecipe(%d) ok\n", step);
-            justWroteRecipe = true;
-        }
-    }
+    do_write_step = step;
 }
 
 void page300::on_comboBox_currentIndexChanged(const QString &recipe)

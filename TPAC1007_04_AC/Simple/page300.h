@@ -39,8 +39,8 @@ private:
     int current_step;
     QList<u_int16_t> recipeIndexes;
     QList<u_int32_t> recipeTable[MAX_RCP_STEP];
+    int do_write_step;
     bool justWroteRecipe;
-
 };
 
 #endif // PAGE300_H
