@@ -25,6 +25,10 @@ void printVncDisplayString(char * vncString)
                /* add here the label of the new page */
                ;
     userPageList.removeDuplicates();
+    
+#ifdef GIT_TAG
+    HMIversion = GIT_TAG;
+#endif
 }
 
 int create_page_nb(page ** p, int pageNb)

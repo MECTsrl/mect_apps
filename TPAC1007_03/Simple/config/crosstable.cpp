@@ -13,6 +13,10 @@ DWORD_BIT <-> int
 #include "crosstable.h"
  
 u_int8_t X = 0;
+int Alarm_1 = 0;
+int Alarm_2 = 0;
+int Event_1 = 0;
+int Event_2 = 0;
 u_int32_t RTU0_TYPE_PORT = 0;
 u_int32_t RTU0_BAUDRATE = 0;
 u_int32_t RTU0_STATUS = 0;
@@ -203,7 +207,7 @@ int PLC_DigIn_12 = 0;
 int16_t PLC_AnIn_1 = 0;
 int16_t PLC_AnIn_2 = 0;
 int16_t PLC_Tamb = 0;
-u_int32_t PLC_Encoder = 0;
+int32_t PLC_Encoder = 0;
 int PLC_DigOut_1 = 0;
 int PLC_DigOut_2 = 0;
 int PLC_DigOut_3 = 0;
@@ -245,6 +249,78 @@ return addWrite(ID_X, &value);
 int getStatus_X()
 {
 return getStatus(ID_X);
+}
+
+
+int doWrite_Alarm_1(int value)
+{
+return doWrite(ID_Alarm_1,  &value);
+}
+
+
+int addWrite_Alarm_1(int value)
+{
+return addWrite(ID_Alarm_1, &value);
+}
+
+
+int getStatus_Alarm_1()
+{
+return getStatus(ID_Alarm_1);
+}
+
+
+int doWrite_Alarm_2(int value)
+{
+return doWrite(ID_Alarm_2,  &value);
+}
+
+
+int addWrite_Alarm_2(int value)
+{
+return addWrite(ID_Alarm_2, &value);
+}
+
+
+int getStatus_Alarm_2()
+{
+return getStatus(ID_Alarm_2);
+}
+
+
+int doWrite_Event_1(int value)
+{
+return doWrite(ID_Event_1,  &value);
+}
+
+
+int addWrite_Event_1(int value)
+{
+return addWrite(ID_Event_1, &value);
+}
+
+
+int getStatus_Event_1()
+{
+return getStatus(ID_Event_1);
+}
+
+
+int doWrite_Event_2(int value)
+{
+return doWrite(ID_Event_2,  &value);
+}
+
+
+int addWrite_Event_2(int value)
+{
+return addWrite(ID_Event_2, &value);
+}
+
+
+int getStatus_Event_2()
+{
+return getStatus(ID_Event_2);
 }
 
 
@@ -3668,13 +3744,13 @@ return getStatus(ID_PLC_Tamb);
 }
 
 
-int doWrite_PLC_Encoder(u_int32_t value)
+int doWrite_PLC_Encoder(int32_t value)
 {
 return doWrite(ID_PLC_Encoder,  &value);
 }
 
 
-int addWrite_PLC_Encoder(u_int32_t value)
+int addWrite_PLC_Encoder(int32_t value)
 {
 return addWrite(ID_PLC_Encoder, &value);
 }
@@ -4122,6 +4198,10 @@ int update_all(void)
 {
 int retval = 0;
 retval += readFromDb(ID_X, &X);
+retval += readFromDb(ID_Alarm_1, &Alarm_1);
+retval += readFromDb(ID_Alarm_2, &Alarm_2);
+retval += readFromDb(ID_Event_1, &Event_1);
+retval += readFromDb(ID_Event_2, &Event_2);
 retval += readFromDb(ID_RTU0_TYPE_PORT, &RTU0_TYPE_PORT);
 retval += readFromDb(ID_RTU0_BAUDRATE, &RTU0_BAUDRATE);
 retval += readFromDb(ID_RTU0_STATUS, &RTU0_STATUS);

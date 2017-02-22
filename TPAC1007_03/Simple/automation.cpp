@@ -1,4 +1,5 @@
 #include "crosstable.h"
+#include "automation.h"
 
 /* put here the initalization */
 void setup(void)

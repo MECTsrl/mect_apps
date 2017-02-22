@@ -190,10 +190,10 @@
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
 1;P;X               ;BYTE     ;0   ;PLC       ;               ;    ;    ;    ;1   ;1   ;[RW]
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
+1;P;Alarm_1         ;BIT      ;0   ;PLC       ;               ;    ;    ;    ;2   ;1   ;[AL PLC_DigIn_11 RISING]
+1;P;Alarm_2         ;BIT      ;0   ;PLC       ;               ;    ;    ;    ;3   ;1   ;[AL PLC_Encoder <= -10.00]
+1;P;Event_1         ;BIT      ;0   ;PLC       ;               ;    ;    ;    ;4   ;1   ;[EV PLC_DigIn_12 RISING]
+1;P;Event_2         ;BIT      ;0   ;PLC       ;               ;    ;    ;    ;5   ;1   ;[EV PLC_Encoder < 0.00]
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
@@ -5325,7 +5325,7 @@
 1;F;PLC_AnIn_1      ;INT      ;3   ;RTU       ;               ;3   ;20  ;7   ;5300;45  ;[RO]
 1;F;PLC_AnIn_2      ;INT      ;3   ;RTU       ;               ;3   ;20  ;8   ;5300;45  ;[RO]
 1;S;PLC_Tamb        ;INT      ;1   ;RTU       ;               ;3   ;20  ;9   ;5300;45  ;[RO]
-1;P;PLC_Encoder     ;UDINT    ;0   ;RTU       ;               ;3   ;20  ;10  ;5300;45  ;[RO]
+1;P;PLC_Encoder     ;DINT     ;0   ;RTU       ;               ;3   ;20  ;10  ;5300;45  ;[RO]
 1;P;PLC_DigOut_1    ;BYTE_BIT ;1   ;RTU       ;               ;3   ;20  ;12  ;5300;45  ;[RW]
 1;P;PLC_DigOut_2    ;BYTE_BIT ;2   ;RTU       ;               ;3   ;20  ;12  ;5300;45  ;[RW]
 1;P;PLC_DigOut_3    ;BYTE_BIT ;3   ;RTU       ;               ;3   ;20  ;12  ;5300;45  ;[RW]

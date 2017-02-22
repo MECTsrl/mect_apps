@@ -13,9 +13,10 @@
 #include "page100.h"
 #include "ui_page100.h"
 #include "crosstable.h"
+
 #include <qwt.h>
 #include <qwt_dial.h>
-#include "qwt_dial_needle.h"
+#include <qwt_dial_needle.h>
 
 /**
  * @brief this macro is used to set the PAGE100 style.
@@ -88,19 +89,19 @@ void page100::updateData()
     }
     /* call the parent updateData member */
     page::updateData();
-
-    // Reading Analog Input 1 and setting to Dial 1
-    ui->qwtDial1->setValue(PLC_AnIn_1 / 1000);
     
-    // Reading Analog Input 2 and setting to Dial 2
-    ui->qwtDial2->setValue(PLC_AnIn_2 / 1000);
-
     /* To read the cross table variable UINT TEST1:
      *    uint_16 tmp = TEST1;
      */
     /* To write 5 into the the cross table variable UINT TEST1:
      *    doWrite_TEST1(5);
      */
+    // Reading Analog Input 1 and setting to Dial 1
+    ui->qwtDial1->setValue(PLC_AnIn_1 / 1000);
+
+    // Reading Analog Input 2 and setting to Dial 2
+    ui->qwtDial2->setValue(PLC_AnIn_2 / 1000);
+
 }
 
 /**
@@ -124,7 +125,7 @@ page100::~page100()
 
 
 
-void page100::on_atcmButton_Log_toggled(bool checked)
+void page100::on_atcmButton_Log_clicked(bool checked)
 {
     if (checked)
         logStart();
