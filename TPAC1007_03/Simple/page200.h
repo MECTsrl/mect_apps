@@ -29,6 +29,8 @@ public:
 private slots:
     void changeEvent(QEvent * event);
     
+    void on_atcmButton_HOME_2_clicked();
+
 private:
     Ui::page200 *ui;
 };

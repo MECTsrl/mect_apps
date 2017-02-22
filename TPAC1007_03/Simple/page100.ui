@@ -510,7 +510,7 @@ background-color: rgb(170, 255, 255);
     </font>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: rgb(85, 255, 255);</string>
+    <string notr="true">background-color: rgb(170, 170, 255);</string>
    </property>
    <property name="text">
     <string>10</string>
@@ -1183,7 +1183,10 @@ background-color: rgb(170, 255, 255);
     </font>
    </property>
    <property name="text">
-    <string>0x12345678</string>
+    <string>-12345678</string>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(170, 170, 255);</string>
    </property>
    <property name="toolTip">
     <string>PLC_Encoder</string>
@@ -1211,8 +1214,8 @@ background-color: rgb(170, 255, 255);
    </property>
    <property name="bgColor">
     <color>
-     <red>85</red>
-     <green>255</green>
+     <red>170</red>
+     <green>170</green>
      <blue>255</blue>
     </color>
    </property>
@@ -1233,7 +1236,7 @@ background-color: rgb(170, 255, 255);
     <enum>QFrame::Plain</enum>
    </property>
    <property name="format">
-    <enum>ATCMlabel::Hex</enum>
+    <enum>ATCMlabel::Dec</enum>
    </property>
   </widget>
   <widget class="ATCMled" name="atcmLed_PLC_DigIn_7">
@@ -2171,7 +2174,7 @@ background-color: rgb(170, 255, 255);
     </font>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: rgb(85, 255, 255);</string>
+    <string notr="true">background-color: rgb(170, 170, 255);</string>
    </property>
    <property name="text">
     <string>9</string>
