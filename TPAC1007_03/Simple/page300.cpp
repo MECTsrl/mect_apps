@@ -104,7 +104,7 @@ void page300::updateData()
         int step = ui->spinBox->value();
         if (checkRecipe(step - 1, &recipeIndexes, recipeTable))
         {
-            fprintf(stderr, "checkRecipe(%d) ok", step);
+            fprintf(stderr, "checkRecipe(%d) ok\nstop", step);
         }
         else
         {

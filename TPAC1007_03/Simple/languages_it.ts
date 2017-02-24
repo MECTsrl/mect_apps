@@ -656,6 +656,7 @@
     <message>
         <location filename="page200.ui" line="230"/>
         <location filename="page200.ui" line="898"/>
+        <location filename="page200.ui" line="1433"/>
         <source>ATCMlabel widget</source>
         <translation type="unfinished"></translation>
     </message>
@@ -717,6 +718,8 @@
         <location filename="page200.ui" line="916"/>
         <location filename="page200.ui" line="1156"/>
         <location filename="page200.ui" line="1189"/>
+        <location filename="page200.ui" line="1442"/>
+        <location filename="page200.ui" line="1445"/>
         <source>0</source>
         <translation type="unfinished"></translation>
     </message>
@@ -738,6 +741,8 @@
         <location filename="page200.ui" line="964"/>
         <location filename="page200.ui" line="1223"/>
         <location filename="page200.ui" line="1265"/>
+        <location filename="page200.ui" line="1493"/>
+        <location filename="page200.ui" line="1535"/>
         <source>ATCMled widget</source>
         <translation type="unfinished"></translation>
     </message>
@@ -819,6 +824,30 @@ Y2=PLC_AnIn_2</source>
     <message>
         <location filename="page200.ui" line="1403"/>
         <source>Events:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="1427"/>
+        <source>-12.345</source>
+        <oldsource>-12345</oldsource>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="1430"/>
+        <location filename="page200.ui" line="1436"/>
+        <source>RealValue</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="1490"/>
+        <location filename="page200.ui" line="1502"/>
+        <source>Alarm_3</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="1532"/>
+        <location filename="page200.ui" line="1544"/>
+        <source>Event_3</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1201,6 +1230,22 @@ Y2=PLC_AnIn_2</source>
     <message>
         <location filename="page300.ui" line="2068"/>
         <source>ATCMdate widget</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page300.ui" line="2182"/>
+        <location filename="page300.ui" line="2191"/>
+        <source>PLC_AnOutConf_1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page300.ui" line="2185"/>
+        <source>ATCMcombobox widget</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page300.ui" line="2222"/>
+        <source>1;[mA] 4..20;2;[V] 0..10;0;---</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

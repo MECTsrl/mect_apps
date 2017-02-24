@@ -36,17 +36,35 @@ int doWrite_Alarm_2(int value);
 int addWrite_Alarm_2(int value);
 int getStatus_Alarm_2();
  
-#define ID_Event_1 195
+#define ID_Alarm_3 195
+extern int Alarm_3;
+int doWrite_Alarm_3(int value);
+int addWrite_Alarm_3(int value);
+int getStatus_Alarm_3();
+ 
+#define ID_Event_1 196
 extern int Event_1;
 int doWrite_Event_1(int value);
 int addWrite_Event_1(int value);
 int getStatus_Event_1();
  
-#define ID_Event_2 196
+#define ID_Event_2 197
 extern int Event_2;
 int doWrite_Event_2(int value);
 int addWrite_Event_2(int value);
 int getStatus_Event_2();
+ 
+#define ID_Event_3 198
+extern int Event_3;
+int doWrite_Event_3(int value);
+int addWrite_Event_3(int value);
+int getStatus_Event_3();
+ 
+#define ID_RealValue 199
+extern float RealValue;
+int doWrite_RealValue(float value);
+int addWrite_RealValue(float value);
+int getStatus_RealValue();
  
 #define ID_RTU0_TYPE_PORT 5000
 extern u_int32_t RTU0_TYPE_PORT;
