@@ -11,6 +11,7 @@
 
 #include "app_logprint.h"
 #include "crosstable.h"
+#include "global_var.h"
 #include "utility.h"
 #include "pages.h"
 
@@ -21,7 +22,7 @@ void printVncDisplayString(char * vncString)
             << "system_ini"
             << "page100"
             << "page200"
-            << "page300"
+            // do not load at boot time << "page300"
                /* add here the label of the new page */
                ;
     userPageList.removeDuplicates();

@@ -52,4 +52,3 @@ recipes_DigOut.files = recipes/DigOut/from_1_to_4.csv recipes/DigOut/from_1_to_8
 recipes_DigOut.path = /local/data/recipe/DigOut
 
 INSTALLS += recipes_DigOut
-

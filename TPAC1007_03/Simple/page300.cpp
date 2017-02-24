@@ -118,7 +118,6 @@ page300::~page300()
     delete ui;
 }
 
-
 void page300::on_spinBox_valueChanged(int step)
 {
     ui->spinBox->setEnabled(false);
