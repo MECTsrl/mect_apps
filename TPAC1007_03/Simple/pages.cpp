@@ -22,7 +22,7 @@ void printVncDisplayString(char * vncString)
             << "system_ini"
             << "page100"
             << "page200"
-            // commented out << "page300"
+            // do not load at boot time << "page300"
                /* add here the label of the new page */
                ;
     userPageList.removeDuplicates();

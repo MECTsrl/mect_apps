@@ -44,8 +44,7 @@ page300::page300(QWidget *parent) :
     SET_PAGE300_STYLE();
     translateFontSize(this);
 
-    do_write_step = -1;
-    justWroteRecipe = false;
+    doCheckRecipe = false;
     ui->comboBox->addItem("AnOut/sine_wave");
     ui->comboBox->addItem("AnOut/up_and_down");
     ui->comboBox->addItem("DigOut/from_1_to_4");
@@ -84,34 +83,19 @@ void page300::updateData()
     /* To write 5 into the the cross table variable UINT TEST1:
      *    doWrite_TEST1(5);
      */	
-    if (do_write_step > 0 && do_write_step <= steps_number)
-    {
-        int step = do_write_step;
 
-        if (writeRecipe(step - 1, &recipeIndexes, recipeTable))
-        {
-            fprintf(stderr, "writeRecipe(%d) failed, retrying\n", step);
-        }
-        else
-        {
-            fprintf(stderr, "writeRecipe(%d) ok\n", step);
-            do_write_step = -1;
-            justWroteRecipe = true;
-        }
-    }
-    else if (justWroteRecipe)
+    if (doCheckRecipe)
     {
         int step = ui->spinBox->value();
         if (checkRecipe(step - 1, &recipeIndexes, recipeTable))
         {
-            fprintf(stderr, "checkRecipe(%d) ok\nstop", step);
+            fprintf(stderr, "checkRecipe(%d) ok\n", step);
+            doCheckRecipe = false;
         }
         else
         {
             fprintf(stderr, "checkRecipe(%d) failed, retrying\n", step);
-            do_write_step = step;
         }
-        justWroteRecipe = false;
     }
 }
 
@@ -137,7 +121,20 @@ page300::~page300()
 
 void page300::on_spinBox_valueChanged(int step)
 {
-    do_write_step = step;
+    ui->spinBox->setEnabled(false);
+    if (step > 0)
+    {
+        if (writeRecipe(step - 1, &recipeIndexes, recipeTable))
+        {
+            fprintf(stderr, "writeRecipe(%d) failed, please retry\n", step);
+        }
+        else
+        {
+            sleep(1);
+            doCheckRecipe = true;
+        }
+    }
+    ui->spinBox->setEnabled(true);
 }
 
 void page300::on_comboBox_currentIndexChanged(const QString &recipe)
@@ -145,26 +142,30 @@ void page300::on_comboBox_currentIndexChanged(const QString &recipe)
     char filename[84];
     snprintf(filename, 84, "%s/%s.csv", RECIPE_DIR, recipe.toAscii().data());
 
+    ui->spinBox->setEnabled(false);
     steps_number = loadRecipe(filename, &recipeIndexes, recipeTable);
 
     if (steps_number > 0)
     {
-        ui->spinBox->setMinimum(1);
         ui->label_min->setNum(1);
-        ui->spinBox->setMaximum(steps_number);
         ui->label_max->setNum(steps_number);
-        current_step = 1;
-        ui->spinBox->setValue(1);
+
+        ui->spinBox->setMinimum(1);
+        ui->spinBox->setMaximum(steps_number);
+
+        ui->spinBox->setValue(0);
         ui->spinBox->setReadOnly(false);
     }
     else
     {
-        ui->spinBox->setMinimum(0);
         ui->label_min->setNum(0);
-        ui->spinBox->setMaximum(0);
         ui->label_max->setNum(0);
-        current_step = 0;
+
+        ui->spinBox->setMinimum(0);
+        ui->spinBox->setMaximum(0);
+
         ui->spinBox->setValue(0);
         ui->spinBox->setReadOnly(true);
     }
+    ui->spinBox->setEnabled(true);
 }
