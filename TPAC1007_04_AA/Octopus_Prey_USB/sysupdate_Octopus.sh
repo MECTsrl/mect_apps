@@ -32,10 +32,10 @@ cp /local/flash/root/fcrts /root/
 rm -f etc
 test -d $mntdir/etc || cp -r /local/flash/etc $mntdir/etc
 ln -s $mntdir/etc etc 2>/dev/null
-/etc/rc.d/init.d/network restart
 
-rm /local/kindofupdate.lck
+/etc/rc.d/init.d/network restart
 
 echo "Updated the links."
 
-return 0
+exec /etc/rc.d/init.d/autoexec start >/dev/null 2>&1
+
