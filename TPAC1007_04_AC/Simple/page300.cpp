@@ -129,7 +129,6 @@ void page300::on_spinBox_valueChanged(int step)
         }
         else
         {
-            sleep(1);
             doCheckRecipe = true;
         }
     }

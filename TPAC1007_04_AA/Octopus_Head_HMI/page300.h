@@ -26,6 +26,7 @@ public:
     virtual void reload(void);
     virtual void updateData();
     void messageBox(const char *title, const char *text);
+    void setMessage(const char *msg);
 
 private slots:
     void changeEvent(QEvent * event);

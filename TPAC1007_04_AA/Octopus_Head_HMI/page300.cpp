@@ -56,6 +56,11 @@ void page300::messageBox(const char *title, const char *text)
     qtext = QString(text);
 }
 
+void page300::setMessage(const char *msg)
+{
+    ui->label_msg->setText(msg);
+}
+
 /**
  * @brief This is the reload member. The operation written here, are executed every time this page is shown.
  */

@@ -1560,7 +1560,7 @@ ON</source>
     </message>
     <message>
         <location filename="page201.ui" line="156"/>
-        <location filename="page201.ui" line="162"/>
+        <location filename="page201.ui" line="168"/>
         <source>PLC_DigOut_2</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1619,7 +1619,7 @@ ON</source>
     </message>
     <message>
         <location filename="page201.ui" line="478"/>
-        <location filename="page201.ui" line="484"/>
+        <location filename="page201.ui" line="490"/>
         <source>PLC_DigIn_1</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1642,7 +1642,7 @@ ON</source>
     </message>
     <message>
         <location filename="page201.ui" line="617"/>
-        <location filename="page201.ui" line="623"/>
+        <location filename="page201.ui" line="629"/>
         <source>PLC_DigOut_3</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2111,7 +2111,7 @@ NODE 1 [1]</source>
     </message>
     <message>
         <location filename="page300.ui" line="694"/>
-        <location filename="page300.ui" line="703"/>
+        <location filename="page300.ui" line="709"/>
         <source>STATUS</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2129,7 +2129,7 @@ NODE 1 [1]</source>
     </message>
     <message>
         <location filename="page300.ui" line="1107"/>
-        <location filename="page300.ui" line="1113"/>
+        <location filename="page300.ui" line="1119"/>
         <source>DO_RELOAD</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2157,7 +2157,7 @@ NODE 1 [1]</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page300.ui" line="700"/>
+        <location filename="page300.ui" line="706"/>
         <source>0;:/icons/my_img/0_IDLE.png;1;:/icons/my_img/1_STARTING.png;2;:/icons/my_img/2_READY.png;3;:/icons/my_img/3_TESTING.png;4;:/icons/my_img/4_DONE.png;5;:/icons/my_img/5_RESETTING.png;6;:/icons/my_img/6_STOPPING.png;7;:/icons/my_img/7_ERROR.png</source>
         <oldsource>1;:/icons/my_img/1_IDLE.png;2;:/icons/my_img/2_STARTING.png;4;:/icons/my_img/4_READY.png;8;:/icons/my_img/8_TESTING.png;16;:/icons/my_img/16_DONE.png;32;:/icons/my_img/32_RESETTING.png;64;:/icons/my_img/64_STOPPING.png</oldsource>
         <translation type="unfinished"></translation>
@@ -2182,21 +2182,21 @@ NODE 1 [1]</source>
     </message>
     <message>
         <location filename="page300.ui" line="337"/>
-        <location filename="page300.ui" line="343"/>
+        <location filename="page300.ui" line="349"/>
         <location filename="page300.ui" line="793"/>
-        <location filename="page300.ui" line="799"/>
+        <location filename="page300.ui" line="805"/>
         <source>PLC_DigIn_4</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="page300.ui" line="1065"/>
-        <location filename="page300.ui" line="1071"/>
+        <location filename="page300.ui" line="1077"/>
         <source>PLC_DigOut_3</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="page300.ui" line="1023"/>
-        <location filename="page300.ui" line="1029"/>
+        <location filename="page300.ui" line="1035"/>
         <source>PLC_DigOut_2</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2220,11 +2220,11 @@ ON</source>
     </message>
     <message>
         <location filename="page300.ui" line="379"/>
-        <location filename="page300.ui" line="385"/>
+        <location filename="page300.ui" line="391"/>
         <location filename="page300.ui" line="835"/>
-        <location filename="page300.ui" line="841"/>
+        <location filename="page300.ui" line="847"/>
         <location filename="page300.ui" line="877"/>
-        <location filename="page300.ui" line="883"/>
+        <location filename="page300.ui" line="889"/>
         <source>PLC_DigIn_1</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2357,12 +2357,12 @@ ON</source>
     </message>
     <message>
         <location filename="page300.ui" line="534"/>
-        <location filename="page300.ui" line="543"/>
+        <location filename="page300.ui" line="549"/>
         <source>RESULT</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page300.ui" line="540"/>
+        <location filename="page300.ui" line="546"/>
         <source>-1;:/icons/my_img/UNKNOWN.png;0;:/icons/my_img/NG.png;1;:/icons/my_img/OK.png</source>
         <translation type="unfinished"></translation>
     </message>

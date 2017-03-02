@@ -76,6 +76,7 @@ static void doReload();
 extern int checkRecipe(int step, QList<u_int16_t> *indexes, QList<u_int32_t> table[]);
 
 static u_int16_t previous_PLC_Heartbeat;
+static u_int16_t previous_RTU_Heartbeat;
 static float previous_PLC_time;
 static float last_PLC_time;
 static page300 *thePage = NULL;
@@ -83,9 +84,10 @@ static page300 *thePage = NULL;
 void setup(void)
 {
     doWrite_RESULT(RESULT_UNKNOWN);
-    previous_PLC_Heartbeat = PLC_Heartbeat;
     previous_PLC_time = PLC_time;
     last_PLC_time = PLC_time;
+    previous_PLC_Heartbeat = PLC_Heartbeat;
+    previous_RTU_Heartbeat = RTU_HeartBeat;
 }
 
 void setTheWidget(page300 *p)
@@ -93,27 +95,52 @@ void setTheWidget(page300 *p)
     thePage = p;
 }
 
+static int failed_writeRecipe = 0;
+static int failed_checkRecipe = 0;
+static int failed_doWrite = 0;
+
+void update_message()
+{
+    char msg[255];
+
+    sprintf(msg, "#%u@%u,%u: writeRecipe=%d, checkRecipe=%d, doWrite=%d",
+            TEST_STEP, RESULTS_OK, RESULTS_NG,
+            failed_writeRecipe, failed_checkRecipe, failed_doWrite);
+    thePage->setMessage(msg);
+}
+
 void loop(void)
 {
     static int substatus = 0;
     static int next_step = 0;
 
-    if (previous_PLC_Heartbeat == PLC_Heartbeat) {
-        if ((PLC_time - last_PLC_time) > 1.0) {
-            if (thePage) {
-                thePage->messageBox("RTU3 hangup :(", "What happened?");
-            }
-        }
-    } else {
+    if (thePage == NULL) {
         previous_PLC_Heartbeat = PLC_Heartbeat;
         last_PLC_time = PLC_time;
-        if (previous_PLC_time == PLC_time) {
-            if (thePage) {
-                thePage->messageBox("PLC_time hangup :(", "What happened?");
-            }
-        } else {
-            previous_PLC_time = PLC_time;
+        previous_PLC_time = PLC_time;
+        previous_RTU_Heartbeat = RTU_HeartBeat;
+        return;
+    }
+
+    // fcrts UDP communication test @100 ms
+    if (PLC_time == previous_PLC_time) {
+        thePage->messageBox("PLC_time hangup :(", "What happened to fcrts?");
+    }
+    previous_PLC_time = PLC_time;
+
+    // LPC RTU3 communication test @ 100ms
+    if (previous_PLC_Heartbeat == PLC_Heartbeat) {
+        thePage->messageBox("RTU3 hangup :(", "What happened to LPC?");
+    }
+    previous_PLC_Heartbeat = PLC_Heartbeat;
+
+    // TPLC005 RTU0 communication test @ 1s
+    if ((PLC_time - last_PLC_time) > 1.5) {
+        if (previous_RTU_Heartbeat == RTU_HeartBeat) {
+            thePage->messageBox("RTU0 hangup :(", "What happened to TPLC005?");
         }
+        last_PLC_time = PLC_time;
+        previous_RTU_Heartbeat = RTU_HeartBeat;
     }
 
     switch (STATUS) {   // OCTOPUS STATE MACHINE
@@ -163,9 +190,7 @@ void loop(void)
                     } else {
                         logStop();
                         if (RESULTS_OK == TEST_STEP_MAX && RESULTS_NG == 0) {
-                            if (thePage) {
-                                thePage->messageBox("TEST RESULT", "RESULT = OK\n\nnow PWR_OFF then touch OK");
-                            }
+                            thePage->messageBox("TEST RESULT", "RESULT = OK\n\nnow PWR_OFF then touch OK");
                         }
                         return;
                     }
@@ -179,7 +204,9 @@ void loop(void)
             break;
         case 10:
             if (writeRecipe(next_step - 1, &zeroesIndexes, zeroesTable) != 0) {
-                fprintf(stderr, "writeRecipe(zeroes) failed, retry after 100ms\n");
+                fprintf(stderr, "writeRecipe(zeroes) failed, retry after 100ms");
+                ++failed_writeRecipe;
+                update_message();
             } else {
                 substatus = 11;
             }
@@ -188,8 +215,13 @@ void loop(void)
             substatus = 12;
             break;
         case 12:
+            substatus = 13;
+            break;
+        case 13:
             if (! checkRecipe(next_step - 1, &zeroesIndexes, zeroesTable)) {
-                fprintf(stderr, "checkRecipe(zeroes) failed, retry writeRecipe()\n");
+                fprintf(stderr, "checkRecipe(zeroes) failed after 300 ms, rewrite after 100ms\n");
+                ++failed_checkRecipe;
+                update_message();
                 substatus = 10;
             } else {
                 substatus = 20;
@@ -198,6 +230,8 @@ void loop(void)
         case 20:
             if (writeRecipe(next_step - 1, &testsIndexes, testsTable) != 0) {
                 fprintf(stderr, "writeRecipe(tests) failed, retry after 100ms\n");
+                ++failed_writeRecipe;
+                update_message();
             } else {
                 substatus = 21;
             }
@@ -206,8 +240,13 @@ void loop(void)
             substatus = 22;
             break;
         case 22:
+            substatus = 23;
+            break;
+        case 23:
             if (! checkRecipe(next_step - 1, &testsIndexes, testsTable)) {
-                fprintf(stderr, "checkRecipe(tests) failed, retry writeRecipe()\n");
+                fprintf(stderr, "checkRecipe(tests) failed after 300 ms, rewrite  after 100ms\n");
+                ++failed_checkRecipe;
+                update_message();
                 substatus = 20;
             } else {
                 substatus = 30;
@@ -216,6 +255,8 @@ void loop(void)
         case 30:
             if (writeRecipe(next_step - 1, &valuesIndexes, valuesTable) != 0) {
                 fprintf(stderr, "writeRecipe(values) failed, retry after 100ms\n");
+                ++failed_writeRecipe;
+                update_message();
             } else {
                 substatus = 31;
             }
@@ -224,8 +265,13 @@ void loop(void)
             substatus = 32;
             break;
         case 32:
+            substatus = 33;
+            break;
+        case 33:
             if (! checkRecipe(next_step - 1, &valuesIndexes, valuesTable)) {
-                fprintf(stderr, "checkRecipe(values) failed, retry writeRecipe()\n");
+                fprintf(stderr, "checkRecipe(values) failed after 300 ms, rewrite after 100ms\n");
+                ++failed_checkRecipe;
+                update_message();
                 substatus = 30;
             } else {
                 substatus = 40;
@@ -236,12 +282,11 @@ void loop(void)
             substatus = 41;
             break;
         case 41:
+            fprintf(stderr, "check (STATUS==STATUS_TESTING) failed\n");
+            ++failed_doWrite;
+            update_message();
             substatus = 42;
         case 42:
-            fprintf(stderr, "check (STATUS==STATUS_TESTING) failed, retry doWrite()\n");
-            substatus = 40;
-            break;
-        case 50:
             break;
         default:
             substatus = 0;
