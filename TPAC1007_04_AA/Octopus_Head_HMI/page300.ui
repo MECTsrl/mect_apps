@@ -434,9 +434,6 @@ ON</string>
    <property name="currentIndex">
     <number>0</number>
    </property>
-   <property name="maxCount">
-    <number>22</number>
-   </property>
    <property name="variable">
     <string>PRODUCT_ID</string>
    </property>
@@ -741,9 +738,6 @@ ON</string>
    </property>
    <property name="currentIndex">
     <number>0</number>
-   </property>
-   <property name="maxCount">
-    <number>10</number>
    </property>
    <property name="variable">
     <string>TEST_ID</string>

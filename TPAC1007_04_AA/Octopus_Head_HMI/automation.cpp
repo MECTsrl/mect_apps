@@ -31,7 +31,6 @@
 #define PLC_GO_BUTTON PLC_DigIn_4
 
 // PRODUCT_NAMES <-- PRODUCT_ID
-#define PRODUCT_MAX 21
 static char product_name[][15] = {
     /*00*/ "-",
     /*01*/ "TP1043_01_A",
