@@ -37,5 +37,8 @@ ln -s $mntdir/etc etc 2>/dev/null
 
 echo "Updated the links."
 
-exec /etc/rc.d/init.d/autoexec start >/dev/null 2>&1
+killall splash
+/etc/rc.d/init.d/autoexec start >/dev/null 2>&1
+
+read
 
