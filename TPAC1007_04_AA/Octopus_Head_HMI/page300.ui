@@ -893,6 +893,9 @@ ON</string>
    </property>
   </widget>
   <widget class="ATCMlabel" name="atcmLabel_RESULTS_OK">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
    <property name="geometry">
     <rect>
      <x>240</x>
@@ -949,6 +952,9 @@ ON</string>
    </property>
   </widget>
   <widget class="ATCMlabel" name="atcmLabel_RESULTS_NG">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
    <property name="geometry">
     <rect>
      <x>300</x>

@@ -1761,10 +1761,10 @@ RTU3 node2
     </color>
    </property>
    <property name="text">
-    <string>TPAC1008_02_AA</string>
+    <string>TP1070_01_A</string>
    </property>
    <property name="pressText">
-    <string>TPAC1008_02_AA</string>
+    <string>TP1070_01_A</string>
    </property>
    <property name="borderWidth">
     <number>0</number>

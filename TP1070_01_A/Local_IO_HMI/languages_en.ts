@@ -1250,11 +1250,6 @@ Fieldbus</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page402.ui" line="667"/>
-        <source>PLC_AnIn_</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="page402.ui" line="692"/>
         <source>RES_AnIn_</source>
         <translation type="unfinished"></translation>
