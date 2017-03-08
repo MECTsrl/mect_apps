@@ -219,9 +219,9 @@
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
-1;P;LOC_RISING      ;BIT      ;0   ;PLC       ;               ;    ;    ;    ;222 ;3   ;[EV PLC_DigIn_3 RISING]
-1;P;LOC_FALLING     ;BIT      ;0   ;PLC       ;               ;    ;    ;    ;222 ;3   ;[EV PLC_DigIn_3 FALLING]
-1;P;CHANGE_DIG_OUT4 ;BIT      ;0   ;PLC       ;               ;    ;    ;    ;222 ;3   ;[EV PLC_DigOut_4 != TCP_DigOut_4]
+1;P;LOC_RISING      ;BIT      ;0   ;PLC       ;               ;    ;    ;    ;222 ;3   ;[EV PLC_DigIn_7 RISING]
+1;P;LOC_FALLING     ;BIT      ;0   ;PLC       ;               ;    ;    ;    ;222 ;3   ;[EV PLC_DigIn_7 FALLING]
+1;P;CHANGE_DIG_OUT4 ;BIT      ;0   ;PLC       ;               ;    ;    ;    ;222 ;3   ;[EV PLC_DigOut_8 != TCP_DigOut_4]
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;

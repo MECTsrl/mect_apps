@@ -6,10 +6,6 @@ PROGRAM Normal
 
 TCP_AnIn_1 := PLC_AnIn_1;
 TCP_AnIn_2 := PLC_AnIn_2;
-(*TCP_DigIn_3 := PLC_DigIn_3;
-
-if (PLC_DigOut_4 <> TCP_DigOut_4) then
-	PLC_DigOut_4 := TCP_DigOut_4;
-end_if;*)
+(* TCP_DigIn_3 and TCP_DigOut_4 are managed in the Events program *)
 
 END_PROGRAM
