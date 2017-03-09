@@ -21,10 +21,6 @@ void printVncDisplayString(char * vncString)
             << "system_ini"
             << "page100"
             << "page200"
-            << "page310"
-            << "page320"
-            << "page330"
-            << "page340"
             /* add here the label of the new page */
             ;
     userPageList.removeDuplicates();
@@ -42,18 +38,6 @@ int create_page_nb(page ** p, int pageNb)
         break;
     case 0x200:
         *p = (page *)(new page200);
-        break;
-    case 0x310:
-        *p = (page *)(new page310);
-        break;
-    case 0x320:
-        *p = (page *)(new page320);
-        break;
-    case 0x330:
-        *p = (page *)(new page330);
-        break;
-    case 0x340:
-        *p = (page *)(new page340);
         break;
         /* add here the case labeled with the HEX id of the new pages */
     default:

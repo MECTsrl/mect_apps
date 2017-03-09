@@ -13,10 +13,6 @@
 #include "page0.h"
 #include "page100.h"
 #include "page200.h"
-#include "page310.h"
-#include "page320.h"
-#include "page330.h"
-#include "page340.h"
 /* add here the header of the new page */
 
 #endif

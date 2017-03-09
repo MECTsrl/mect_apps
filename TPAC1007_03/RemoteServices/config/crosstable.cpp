@@ -5,6 +5,7 @@ DINT      <-> int32_t
 UDINT     <-> u_int32_t
 REAL      <-> float
 BIT       <-> int
+BYTE      <-> u_int8_t
 BYTE_BIT  <-> int
 WORD_BIT  <-> int
 DWORD_BIT <-> int
@@ -208,7 +209,7 @@ int PLC_DigIn_12 = 0;
 int16_t PLC_AnIn_1 = 0;
 int16_t PLC_AnIn_2 = 0;
 int16_t PLC_Tamb = 0;
-u_int32_t PLC_Encoder = 0;
+int32_t PLC_Encoder = 0;
 int PLC_DigOut_1 = 0;
 int PLC_DigOut_2 = 0;
 int PLC_DigOut_3 = 0;
@@ -3781,13 +3782,13 @@ return getStatus(ID_PLC_Tamb);
 }
 
 
-int doWrite_PLC_Encoder(u_int32_t value)
+int doWrite_PLC_Encoder(int32_t value)
 {
 return doWrite(ID_PLC_Encoder,  &value);
 }
 
 
-int addWrite_PLC_Encoder(u_int32_t value)
+int addWrite_PLC_Encoder(int32_t value)
 {
 return addWrite(ID_PLC_Encoder, &value);
 }

@@ -5,6 +5,7 @@ DINT      <-> int32_t
 UDINT     <-> u_int32_t
 REAL      <-> float
 BIT       <-> int
+BYTE      <-> u_int8_t
 BYTE_BIT  <-> int
 WORD_BIT  <-> int
 DWORD_BIT <-> int
@@ -1200,9 +1201,9 @@ int addWrite_PLC_Tamb(int16_t value);
 int getStatus_PLC_Tamb();
  
 #define ID_PLC_Encoder 5328
-extern u_int32_t PLC_Encoder;
-int doWrite_PLC_Encoder(u_int32_t value);
-int addWrite_PLC_Encoder(u_int32_t value);
+extern int32_t PLC_Encoder;
+int doWrite_PLC_Encoder(int32_t value);
+int addWrite_PLC_Encoder(int32_t value);
 int getStatus_PLC_Encoder();
  
 #define ID_PLC_DigOut_1 5329

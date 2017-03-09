@@ -1306,13 +1306,13 @@
     </font>
    </property>
    <property name="toolTip">
-    <string/>
+    <string>page: trend1  status: </string>
    </property>
    <property name="whatsThis">
     <string>ATCMbutton widget</string>
    </property>
    <property name="pageName">
-    <string>page310</string>
+    <string>trend1</string>
    </property>
    <property name="remember">
     <bool>true</bool>
@@ -1337,7 +1337,7 @@
     <string>AnIn_1</string>
    </property>
    <property name="pressText">
-    <string>AnIn_1</string>
+    <string>trend1</string>
    </property>
    <property name="borderWidth">
     <number>0</number>
@@ -1367,13 +1367,13 @@
     </font>
    </property>
    <property name="toolTip">
-    <string/>
+    <string>page: trend2  status: </string>
    </property>
    <property name="whatsThis">
     <string>ATCMbutton widget</string>
    </property>
    <property name="pageName">
-    <string>page320</string>
+    <string>trend2</string>
    </property>
    <property name="remember">
     <bool>true</bool>
@@ -1398,7 +1398,7 @@
     <string>AnIn_2</string>
    </property>
    <property name="pressText">
-    <string>AnIn_2</string>
+    <string>trend2</string>
    </property>
    <property name="borderWidth">
     <number>0</number>
@@ -1428,13 +1428,13 @@
     </font>
    </property>
    <property name="toolTip">
-    <string/>
+    <string>page: trend3.csv  status: </string>
    </property>
    <property name="whatsThis">
     <string>ATCMbutton widget</string>
    </property>
    <property name="pageName">
-    <string>page330</string>
+    <string>trend3.csv</string>
    </property>
    <property name="remember">
     <bool>true</bool>
@@ -1459,7 +1459,7 @@
     <string>DigIn_3</string>
    </property>
    <property name="pressText">
-    <string>DigIn_3</string>
+    <string>trend3.csv</string>
    </property>
    <property name="borderWidth">
     <number>0</number>
@@ -1489,13 +1489,13 @@
     </font>
    </property>
    <property name="toolTip">
-    <string/>
+    <string>page: trend4.csv  status: </string>
    </property>
    <property name="whatsThis">
     <string>ATCMbutton widget</string>
    </property>
    <property name="pageName">
-    <string>page340</string>
+    <string>trend4.csv</string>
    </property>
    <property name="remember">
     <bool>true</bool>
@@ -1520,7 +1520,7 @@
     <string>DigOut_4</string>
    </property>
    <property name="pressText">
-    <string>DigOut_4</string>
+    <string>trend4.csv</string>
    </property>
    <property name="borderWidth">
     <number>0</number>

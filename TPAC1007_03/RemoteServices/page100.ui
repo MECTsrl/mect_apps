@@ -555,12 +555,12 @@
     <font>
      <family>DejaVu Sans</family>
      <pointsize>9</pointsize>
-     <weight>75</weight>
-     <bold>true</bold>
+     <weight>50</weight>
+     <bold>false</bold>
     </font>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: rgb(170, 255, 255);</string>
+    <string notr="true">background-color: rgb(255, 170, 255);</string>
    </property>
    <property name="text">
     <string>10</string>
@@ -602,6 +602,9 @@
    <property name="statusvar">
     <string>PLC_EncEnable</string>
    </property>
+   <property name="statusReleasedValue">
+    <string>1</string>
+   </property>
    <property name="statusPressedValue">
     <string>2</string>
    </property>
@@ -632,7 +635,7 @@
     <string>Encoder</string>
    </property>
    <property name="pressText">
-    <string>Encoder</string>
+    <string>Counter</string>
    </property>
    <property name="borderWidth">
     <number>1</number>
@@ -1294,12 +1297,12 @@
     <font>
      <family>DejaVu Sans Mono</family>
      <pointsize>9</pointsize>
-     <weight>75</weight>
-     <bold>true</bold>
+     <weight>50</weight>
+     <bold>false</bold>
     </font>
    </property>
    <property name="text">
-    <string>0x12345678</string>
+    <string>12345678</string>
    </property>
    <property name="toolTip">
     <string>PLC_Encoder</string>
@@ -1327,8 +1330,8 @@
    </property>
    <property name="bgColor">
     <color>
-     <red>170</red>
-     <green>255</green>
+     <red>255</red>
+     <green>170</green>
      <blue>255</blue>
     </color>
    </property>
@@ -1346,10 +1349,10 @@
     <number>0</number>
    </property>
    <property name="apparence">
-    <enum>QFrame::Sunken</enum>
+    <enum>QFrame::Plain</enum>
    </property>
    <property name="format">
-    <enum>ATCMlabel::Hex</enum>
+    <enum>ATCMlabel::Dec</enum>
    </property>
   </widget>
   <widget class="ATCMled" name="atcmLed_PLC_DigIn_7">
@@ -2296,7 +2299,7 @@
     </font>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: rgb(170, 255, 255);</string>
+    <string notr="true">background-color: rgb(255, 170, 255);</string>
    </property>
    <property name="text">
     <string>9</string>
@@ -2544,7 +2547,8 @@
     </font>
    </property>
    <property name="toolTip">
-    <string>ATCM QGraph</string>
+    <string>Y1=PLC_AnIn_1
+Y2=PLC_AnIn_2</string>
    </property>
    <property name="whatsThis">
     <string>ATCMgraph widget</string>
