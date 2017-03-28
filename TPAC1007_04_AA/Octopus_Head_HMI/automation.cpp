@@ -1,5 +1,4 @@
 #include "app_logprint.h"
-#include "atcmplugin.h"
 #include "main.h"
 #include "pagebrowser.h"
 #include "crosstable.h"

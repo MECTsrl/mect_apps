@@ -16,1924 +16,1579 @@
     </message>
     <message>
         <location filename="page100.ui" line="52"/>
-        <location filename="page100.ui" line="150"/>
-        <location filename="page100.ui" line="225"/>
-        <location filename="page100.ui" line="281"/>
-        <location filename="page100.ui" line="414"/>
-        <location filename="page100.ui" line="470"/>
-        <location filename="page100.ui" line="580"/>
-        <location filename="page100.ui" line="636"/>
-        <location filename="page100.ui" line="723"/>
-        <location filename="page100.ui" line="779"/>
-        <location filename="page100.ui" line="894"/>
-        <location filename="page100.ui" line="950"/>
-        <location filename="page100.ui" line="1006"/>
-        <location filename="page100.ui" line="1084"/>
-        <location filename="page100.ui" line="1193"/>
-        <location filename="page100.ui" line="1383"/>
-        <location filename="page100.ui" line="1439"/>
-        <location filename="page100.ui" line="1556"/>
-        <location filename="page100.ui" line="1713"/>
-        <location filename="page100.ui" line="1769"/>
-        <location filename="page100.ui" line="1870"/>
-        <location filename="page100.ui" line="2027"/>
-        <location filename="page100.ui" line="2083"/>
-        <location filename="page100.ui" line="2142"/>
-        <location filename="page100.ui" line="2201"/>
-        <location filename="page100.ui" line="2397"/>
-        <location filename="page100.ui" line="2456"/>
-        <location filename="page100.ui" line="2610"/>
-        <location filename="page100.ui" line="2711"/>
-        <location filename="page100.ui" line="2770"/>
-        <location filename="page100.ui" line="2871"/>
-        <location filename="page100.ui" line="2972"/>
-        <location filename="page100.ui" line="3084"/>
-        <location filename="page100.ui" line="3185"/>
-        <location filename="page100.ui" line="3286"/>
-        <location filename="page100.ui" line="3398"/>
-        <location filename="page100.ui" line="3499"/>
-        <location filename="page100.ui" line="3600"/>
-        <location filename="page100.ui" line="3712"/>
-        <location filename="page100.ui" line="3813"/>
-        <location filename="page100.ui" line="3914"/>
-        <location filename="page100.ui" line="4026"/>
-        <location filename="page100.ui" line="4127"/>
-        <location filename="page100.ui" line="4228"/>
-        <location filename="page100.ui" line="4340"/>
-        <location filename="page100.ui" line="4441"/>
-        <location filename="page100.ui" line="4542"/>
-        <location filename="page100.ui" line="4654"/>
-        <location filename="page100.ui" line="4755"/>
-        <location filename="page100.ui" line="4856"/>
-        <location filename="page100.ui" line="4968"/>
-        <location filename="page100.ui" line="5027"/>
-        <location filename="page100.ui" line="5212"/>
-        <location filename="page100.ui" line="5271"/>
-        <location filename="page100.ui" line="5330"/>
-        <location filename="page100.ui" line="5431"/>
-        <location filename="page100.ui" line="5490"/>
-        <location filename="page100.ui" line="5588"/>
-        <location filename="page100.ui" line="5689"/>
-        <location filename="page100.ui" line="5745"/>
-        <location filename="page100.ui" line="5801"/>
-        <location filename="page100.ui" line="5899"/>
-        <location filename="page100.ui" line="5958"/>
-        <location filename="page100.ui" line="6182"/>
-        <location filename="page100.ui" line="6283"/>
-        <location filename="page100.ui" line="6398"/>
-        <location filename="page100.ui" line="6555"/>
-        <location filename="page100.ui" line="6611"/>
-        <location filename="page100.ui" line="6723"/>
-        <location filename="page100.ui" line="6821"/>
-        <location filename="page100.ui" line="6936"/>
-        <location filename="page100.ui" line="6995"/>
-        <location filename="page100.ui" line="7107"/>
-        <location filename="page100.ui" line="7166"/>
-        <location filename="page100.ui" line="7323"/>
-        <location filename="page100.ui" line="7438"/>
-        <location filename="page100.ui" line="7539"/>
-        <location filename="page100.ui" line="7777"/>
-        <location filename="page100.ui" line="7892"/>
-        <location filename="page100.ui" line="7951"/>
-        <location filename="page100.ui" line="8122"/>
-        <location filename="page100.ui" line="8223"/>
-        <location filename="page100.ui" line="8363"/>
-        <location filename="page100.ui" line="8464"/>
-        <location filename="page100.ui" line="8523"/>
-        <location filename="page100.ui" line="8677"/>
-        <location filename="page100.ui" line="8793"/>
-        <location filename="page100.ui" line="8849"/>
-        <location filename="page100.ui" line="8905"/>
-        <location filename="page100.ui" line="8961"/>
-        <location filename="page100.ui" line="9017"/>
-        <location filename="page100.ui" line="9073"/>
-        <location filename="page100.ui" line="9129"/>
-        <location filename="page100.ui" line="9185"/>
-        <location filename="page100.ui" line="9241"/>
-        <location filename="page100.ui" line="9297"/>
-        <location filename="page100.ui" line="9353"/>
-        <location filename="page100.ui" line="9409"/>
-        <location filename="page100.ui" line="9465"/>
-        <location filename="page100.ui" line="9521"/>
-        <location filename="page100.ui" line="9577"/>
-        <location filename="page100.ui" line="9633"/>
-        <location filename="page100.ui" line="9689"/>
-        <location filename="page100.ui" line="9745"/>
-        <location filename="page100.ui" line="9801"/>
-        <location filename="page100.ui" line="9857"/>
-        <location filename="page100.ui" line="9913"/>
-        <location filename="page100.ui" line="9969"/>
-        <location filename="page100.ui" line="10025"/>
-        <location filename="page100.ui" line="10081"/>
+        <location filename="page100.ui" line="108"/>
+        <location filename="page100.ui" line="183"/>
+        <location filename="page100.ui" line="300"/>
+        <location filename="page100.ui" line="387"/>
+        <location filename="page100.ui" line="446"/>
+        <location filename="page100.ui" line="502"/>
+        <location filename="page100.ui" line="586"/>
+        <location filename="page100.ui" line="695"/>
+        <location filename="page100.ui" line="860"/>
+        <location filename="page100.ui" line="916"/>
+        <location filename="page100.ui" line="1033"/>
+        <location filename="page100.ui" line="1148"/>
+        <location filename="page100.ui" line="1204"/>
+        <location filename="page100.ui" line="1305"/>
+        <location filename="page100.ui" line="1420"/>
+        <location filename="page100.ui" line="1476"/>
+        <location filename="page100.ui" line="1535"/>
+        <location filename="page100.ui" line="1594"/>
+        <location filename="page100.ui" line="1748"/>
+        <location filename="page100.ui" line="1807"/>
+        <location filename="page100.ui" line="1919"/>
+        <location filename="page100.ui" line="2020"/>
+        <location filename="page100.ui" line="2079"/>
+        <location filename="page100.ui" line="2180"/>
+        <location filename="page100.ui" line="2239"/>
+        <location filename="page100.ui" line="2351"/>
+        <location filename="page100.ui" line="2452"/>
+        <location filename="page100.ui" line="2511"/>
+        <location filename="page100.ui" line="2623"/>
+        <location filename="page100.ui" line="2724"/>
+        <location filename="page100.ui" line="2783"/>
+        <location filename="page100.ui" line="2895"/>
+        <location filename="page100.ui" line="2996"/>
+        <location filename="page100.ui" line="3055"/>
+        <location filename="page100.ui" line="3167"/>
+        <location filename="page100.ui" line="3268"/>
+        <location filename="page100.ui" line="3327"/>
+        <location filename="page100.ui" line="3439"/>
+        <location filename="page100.ui" line="3540"/>
+        <location filename="page100.ui" line="3599"/>
+        <location filename="page100.ui" line="3711"/>
+        <location filename="page100.ui" line="3812"/>
+        <location filename="page100.ui" line="3871"/>
+        <location filename="page100.ui" line="3983"/>
+        <location filename="page100.ui" line="4042"/>
+        <location filename="page100.ui" line="4101"/>
+        <location filename="page100.ui" line="4160"/>
+        <location filename="page100.ui" line="4219"/>
+        <location filename="page100.ui" line="4320"/>
+        <location filename="page100.ui" line="4379"/>
+        <location filename="page100.ui" line="4477"/>
+        <location filename="page100.ui" line="4536"/>
+        <location filename="page100.ui" line="4592"/>
+        <location filename="page100.ui" line="4648"/>
+        <location filename="page100.ui" line="4704"/>
+        <location filename="page100.ui" line="4763"/>
+        <location filename="page100.ui" line="4945"/>
+        <location filename="page100.ui" line="5004"/>
+        <location filename="page100.ui" line="5119"/>
+        <location filename="page100.ui" line="5276"/>
+        <location filename="page100.ui" line="5332"/>
+        <location filename="page100.ui" line="5444"/>
+        <location filename="page100.ui" line="5542"/>
+        <location filename="page100.ui" line="5657"/>
+        <location filename="page100.ui" line="5716"/>
+        <location filename="page100.ui" line="5828"/>
+        <location filename="page100.ui" line="5887"/>
+        <location filename="page100.ui" line="6044"/>
+        <location filename="page100.ui" line="6159"/>
+        <location filename="page100.ui" line="6260"/>
+        <location filename="page100.ui" line="6372"/>
+        <location filename="page100.ui" line="6487"/>
+        <location filename="page100.ui" line="6546"/>
+        <location filename="page100.ui" line="6717"/>
+        <location filename="page100.ui" line="6818"/>
+        <location filename="page100.ui" line="6916"/>
+        <location filename="page100.ui" line="7017"/>
+        <location filename="page100.ui" line="7076"/>
+        <location filename="page100.ui" line="7188"/>
+        <location filename="page100.ui" line="7304"/>
+        <location filename="page100.ui" line="7360"/>
+        <location filename="page100.ui" line="7416"/>
+        <location filename="page100.ui" line="7472"/>
+        <location filename="page100.ui" line="7528"/>
+        <location filename="page100.ui" line="7584"/>
+        <location filename="page100.ui" line="7640"/>
+        <location filename="page100.ui" line="7696"/>
+        <location filename="page100.ui" line="7752"/>
+        <location filename="page100.ui" line="7808"/>
+        <location filename="page100.ui" line="7864"/>
+        <location filename="page100.ui" line="7920"/>
+        <location filename="page100.ui" line="7976"/>
+        <location filename="page100.ui" line="8032"/>
+        <location filename="page100.ui" line="8088"/>
+        <location filename="page100.ui" line="8144"/>
+        <location filename="page100.ui" line="8200"/>
+        <location filename="page100.ui" line="8256"/>
+        <location filename="page100.ui" line="8312"/>
+        <location filename="page100.ui" line="8368"/>
+        <location filename="page100.ui" line="8424"/>
+        <location filename="page100.ui" line="8480"/>
+        <location filename="page100.ui" line="8536"/>
+        <location filename="page100.ui" line="8592"/>
+        <location filename="page100.ui" line="8730"/>
+        <location filename="page100.ui" line="8880"/>
+        <location filename="page100.ui" line="8964"/>
+        <location filename="page100.ui" line="9020"/>
+        <location filename="page100.ui" line="9079"/>
+        <location filename="page100.ui" line="9180"/>
+        <location filename="page100.ui" line="9281"/>
         <source>ATCMlabel widget</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="page100.ui" line="58"/>
-        <location filename="page100.ui" line="287"/>
+        <location filename="page100.ui" line="189"/>
         <source>er: </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="page100.ui" line="64"/>
         <location filename="page100.ui" line="67"/>
-        <location filename="page100.ui" line="162"/>
-        <location filename="page100.ui" line="165"/>
-        <location filename="page100.ui" line="237"/>
-        <location filename="page100.ui" line="240"/>
-        <location filename="page100.ui" line="293"/>
-        <location filename="page100.ui" line="296"/>
-        <location filename="page100.ui" line="426"/>
-        <location filename="page100.ui" line="429"/>
-        <location filename="page100.ui" line="482"/>
-        <location filename="page100.ui" line="485"/>
-        <location filename="page100.ui" line="592"/>
-        <location filename="page100.ui" line="595"/>
-        <location filename="page100.ui" line="651"/>
-        <location filename="page100.ui" line="654"/>
-        <location filename="page100.ui" line="735"/>
-        <location filename="page100.ui" line="738"/>
-        <location filename="page100.ui" line="794"/>
-        <location filename="page100.ui" line="797"/>
-        <location filename="page100.ui" line="906"/>
-        <location filename="page100.ui" line="909"/>
-        <location filename="page100.ui" line="962"/>
-        <location filename="page100.ui" line="965"/>
-        <location filename="page100.ui" line="1015"/>
-        <location filename="page100.ui" line="1018"/>
-        <location filename="page100.ui" line="1096"/>
-        <location filename="page100.ui" line="1099"/>
-        <location filename="page100.ui" line="1205"/>
-        <location filename="page100.ui" line="1208"/>
-        <location filename="page100.ui" line="1395"/>
-        <location filename="page100.ui" line="1398"/>
-        <location filename="page100.ui" line="1451"/>
-        <location filename="page100.ui" line="1454"/>
-        <location filename="page100.ui" line="1571"/>
-        <location filename="page100.ui" line="1574"/>
-        <location filename="page100.ui" line="1725"/>
-        <location filename="page100.ui" line="1728"/>
-        <location filename="page100.ui" line="1784"/>
-        <location filename="page100.ui" line="1787"/>
-        <location filename="page100.ui" line="1885"/>
-        <location filename="page100.ui" line="1888"/>
-        <location filename="page100.ui" line="2039"/>
-        <location filename="page100.ui" line="2042"/>
-        <location filename="page100.ui" line="2098"/>
-        <location filename="page100.ui" line="2101"/>
-        <location filename="page100.ui" line="2157"/>
-        <location filename="page100.ui" line="2160"/>
-        <location filename="page100.ui" line="2213"/>
-        <location filename="page100.ui" line="2216"/>
-        <location filename="page100.ui" line="2412"/>
-        <location filename="page100.ui" line="2415"/>
-        <location filename="page100.ui" line="2468"/>
-        <location filename="page100.ui" line="2471"/>
-        <location filename="page100.ui" line="2625"/>
-        <location filename="page100.ui" line="2628"/>
-        <location filename="page100.ui" line="2726"/>
-        <location filename="page100.ui" line="2729"/>
-        <location filename="page100.ui" line="2785"/>
-        <location filename="page100.ui" line="2788"/>
-        <location filename="page100.ui" line="2886"/>
-        <location filename="page100.ui" line="2889"/>
-        <location filename="page100.ui" line="2984"/>
-        <location filename="page100.ui" line="2987"/>
-        <location filename="page100.ui" line="3099"/>
-        <location filename="page100.ui" line="3102"/>
-        <location filename="page100.ui" line="3200"/>
-        <location filename="page100.ui" line="3203"/>
-        <location filename="page100.ui" line="3298"/>
-        <location filename="page100.ui" line="3301"/>
-        <location filename="page100.ui" line="3413"/>
-        <location filename="page100.ui" line="3416"/>
-        <location filename="page100.ui" line="3514"/>
-        <location filename="page100.ui" line="3517"/>
-        <location filename="page100.ui" line="3612"/>
-        <location filename="page100.ui" line="3615"/>
-        <location filename="page100.ui" line="3727"/>
-        <location filename="page100.ui" line="3730"/>
-        <location filename="page100.ui" line="3828"/>
-        <location filename="page100.ui" line="3831"/>
-        <location filename="page100.ui" line="3926"/>
-        <location filename="page100.ui" line="3929"/>
-        <location filename="page100.ui" line="4041"/>
-        <location filename="page100.ui" line="4044"/>
-        <location filename="page100.ui" line="4142"/>
-        <location filename="page100.ui" line="4145"/>
-        <location filename="page100.ui" line="4240"/>
-        <location filename="page100.ui" line="4243"/>
-        <location filename="page100.ui" line="4355"/>
-        <location filename="page100.ui" line="4358"/>
-        <location filename="page100.ui" line="4456"/>
-        <location filename="page100.ui" line="4459"/>
-        <location filename="page100.ui" line="4554"/>
-        <location filename="page100.ui" line="4557"/>
-        <location filename="page100.ui" line="4669"/>
-        <location filename="page100.ui" line="4672"/>
-        <location filename="page100.ui" line="4770"/>
-        <location filename="page100.ui" line="4773"/>
-        <location filename="page100.ui" line="4868"/>
-        <location filename="page100.ui" line="4871"/>
-        <location filename="page100.ui" line="4983"/>
-        <location filename="page100.ui" line="4986"/>
-        <location filename="page100.ui" line="5042"/>
-        <location filename="page100.ui" line="5045"/>
-        <location filename="page100.ui" line="5227"/>
-        <location filename="page100.ui" line="5230"/>
-        <location filename="page100.ui" line="5286"/>
-        <location filename="page100.ui" line="5289"/>
-        <location filename="page100.ui" line="5345"/>
-        <location filename="page100.ui" line="5348"/>
-        <location filename="page100.ui" line="5446"/>
-        <location filename="page100.ui" line="5449"/>
-        <location filename="page100.ui" line="5502"/>
-        <location filename="page100.ui" line="5505"/>
-        <location filename="page100.ui" line="5603"/>
-        <location filename="page100.ui" line="5606"/>
-        <location filename="page100.ui" line="5701"/>
-        <location filename="page100.ui" line="5704"/>
-        <location filename="page100.ui" line="5757"/>
-        <location filename="page100.ui" line="5760"/>
-        <location filename="page100.ui" line="5813"/>
-        <location filename="page100.ui" line="5816"/>
-        <location filename="page100.ui" line="5914"/>
-        <location filename="page100.ui" line="5917"/>
-        <location filename="page100.ui" line="5970"/>
-        <location filename="page100.ui" line="5973"/>
-        <location filename="page100.ui" line="6197"/>
-        <location filename="page100.ui" line="6200"/>
-        <location filename="page100.ui" line="6298"/>
-        <location filename="page100.ui" line="6301"/>
-        <location filename="page100.ui" line="6413"/>
-        <location filename="page100.ui" line="6416"/>
-        <location filename="page100.ui" line="6567"/>
-        <location filename="page100.ui" line="6570"/>
-        <location filename="page100.ui" line="6623"/>
-        <location filename="page100.ui" line="6626"/>
+        <location filename="page100.ui" line="120"/>
+        <location filename="page100.ui" line="123"/>
+        <location filename="page100.ui" line="195"/>
+        <location filename="page100.ui" line="198"/>
+        <location filename="page100.ui" line="315"/>
+        <location filename="page100.ui" line="318"/>
+        <location filename="page100.ui" line="362"/>
+        <location filename="page100.ui" line="402"/>
+        <location filename="page100.ui" line="405"/>
+        <location filename="page100.ui" line="458"/>
+        <location filename="page100.ui" line="461"/>
+        <location filename="page100.ui" line="514"/>
+        <location filename="page100.ui" line="517"/>
+        <location filename="page100.ui" line="598"/>
+        <location filename="page100.ui" line="601"/>
+        <location filename="page100.ui" line="707"/>
+        <location filename="page100.ui" line="710"/>
+        <location filename="page100.ui" line="872"/>
+        <location filename="page100.ui" line="875"/>
+        <location filename="page100.ui" line="928"/>
+        <location filename="page100.ui" line="931"/>
+        <location filename="page100.ui" line="1048"/>
+        <location filename="page100.ui" line="1051"/>
+        <location filename="page100.ui" line="1160"/>
+        <location filename="page100.ui" line="1163"/>
+        <location filename="page100.ui" line="1219"/>
+        <location filename="page100.ui" line="1222"/>
+        <location filename="page100.ui" line="1320"/>
+        <location filename="page100.ui" line="1323"/>
+        <location filename="page100.ui" line="1432"/>
+        <location filename="page100.ui" line="1435"/>
+        <location filename="page100.ui" line="1491"/>
+        <location filename="page100.ui" line="1494"/>
+        <location filename="page100.ui" line="1550"/>
+        <location filename="page100.ui" line="1553"/>
+        <location filename="page100.ui" line="1606"/>
+        <location filename="page100.ui" line="1609"/>
+        <location filename="page100.ui" line="1763"/>
+        <location filename="page100.ui" line="1766"/>
+        <location filename="page100.ui" line="1819"/>
+        <location filename="page100.ui" line="1822"/>
+        <location filename="page100.ui" line="1934"/>
+        <location filename="page100.ui" line="1937"/>
+        <location filename="page100.ui" line="2035"/>
+        <location filename="page100.ui" line="2038"/>
+        <location filename="page100.ui" line="2094"/>
+        <location filename="page100.ui" line="2097"/>
+        <location filename="page100.ui" line="2195"/>
+        <location filename="page100.ui" line="2198"/>
+        <location filename="page100.ui" line="2251"/>
+        <location filename="page100.ui" line="2254"/>
+        <location filename="page100.ui" line="2366"/>
+        <location filename="page100.ui" line="2369"/>
+        <location filename="page100.ui" line="2467"/>
+        <location filename="page100.ui" line="2470"/>
+        <location filename="page100.ui" line="2523"/>
+        <location filename="page100.ui" line="2526"/>
+        <location filename="page100.ui" line="2638"/>
+        <location filename="page100.ui" line="2641"/>
+        <location filename="page100.ui" line="2739"/>
+        <location filename="page100.ui" line="2742"/>
+        <location filename="page100.ui" line="2795"/>
+        <location filename="page100.ui" line="2798"/>
+        <location filename="page100.ui" line="2910"/>
+        <location filename="page100.ui" line="2913"/>
+        <location filename="page100.ui" line="3011"/>
+        <location filename="page100.ui" line="3014"/>
+        <location filename="page100.ui" line="3067"/>
+        <location filename="page100.ui" line="3070"/>
+        <location filename="page100.ui" line="3182"/>
+        <location filename="page100.ui" line="3185"/>
+        <location filename="page100.ui" line="3283"/>
+        <location filename="page100.ui" line="3286"/>
+        <location filename="page100.ui" line="3339"/>
+        <location filename="page100.ui" line="3342"/>
+        <location filename="page100.ui" line="3454"/>
+        <location filename="page100.ui" line="3457"/>
+        <location filename="page100.ui" line="3555"/>
+        <location filename="page100.ui" line="3558"/>
+        <location filename="page100.ui" line="3611"/>
+        <location filename="page100.ui" line="3614"/>
+        <location filename="page100.ui" line="3726"/>
+        <location filename="page100.ui" line="3729"/>
+        <location filename="page100.ui" line="3827"/>
+        <location filename="page100.ui" line="3830"/>
+        <location filename="page100.ui" line="3883"/>
+        <location filename="page100.ui" line="3886"/>
+        <location filename="page100.ui" line="3998"/>
+        <location filename="page100.ui" line="4001"/>
+        <location filename="page100.ui" line="4057"/>
+        <location filename="page100.ui" line="4060"/>
+        <location filename="page100.ui" line="4116"/>
+        <location filename="page100.ui" line="4119"/>
+        <location filename="page100.ui" line="4175"/>
+        <location filename="page100.ui" line="4178"/>
+        <location filename="page100.ui" line="4234"/>
+        <location filename="page100.ui" line="4237"/>
+        <location filename="page100.ui" line="4335"/>
+        <location filename="page100.ui" line="4338"/>
+        <location filename="page100.ui" line="4391"/>
+        <location filename="page100.ui" line="4394"/>
+        <location filename="page100.ui" line="4492"/>
+        <location filename="page100.ui" line="4495"/>
+        <location filename="page100.ui" line="4548"/>
+        <location filename="page100.ui" line="4551"/>
+        <location filename="page100.ui" line="4604"/>
+        <location filename="page100.ui" line="4607"/>
+        <location filename="page100.ui" line="4660"/>
+        <location filename="page100.ui" line="4663"/>
+        <location filename="page100.ui" line="4719"/>
+        <location filename="page100.ui" line="4722"/>
+        <location filename="page100.ui" line="4775"/>
+        <location filename="page100.ui" line="4778"/>
+        <location filename="page100.ui" line="4960"/>
+        <location filename="page100.ui" line="4963"/>
+        <location filename="page100.ui" line="5019"/>
+        <location filename="page100.ui" line="5022"/>
+        <location filename="page100.ui" line="5134"/>
+        <location filename="page100.ui" line="5137"/>
+        <location filename="page100.ui" line="5288"/>
+        <location filename="page100.ui" line="5291"/>
+        <location filename="page100.ui" line="5344"/>
+        <location filename="page100.ui" line="5347"/>
+        <location filename="page100.ui" line="5456"/>
+        <location filename="page100.ui" line="5459"/>
+        <location filename="page100.ui" line="5557"/>
+        <location filename="page100.ui" line="5560"/>
+        <location filename="page100.ui" line="5672"/>
+        <location filename="page100.ui" line="5675"/>
+        <location filename="page100.ui" line="5728"/>
+        <location filename="page100.ui" line="5731"/>
+        <location filename="page100.ui" line="5843"/>
+        <location filename="page100.ui" line="5846"/>
+        <location filename="page100.ui" line="5902"/>
+        <location filename="page100.ui" line="5905"/>
+        <location filename="page100.ui" line="6059"/>
+        <location filename="page100.ui" line="6062"/>
+        <location filename="page100.ui" line="6174"/>
+        <location filename="page100.ui" line="6177"/>
+        <location filename="page100.ui" line="6272"/>
+        <location filename="page100.ui" line="6275"/>
+        <location filename="page100.ui" line="6387"/>
+        <location filename="page100.ui" line="6390"/>
+        <location filename="page100.ui" line="6502"/>
+        <location filename="page100.ui" line="6505"/>
+        <location filename="page100.ui" line="6561"/>
+        <location filename="page100.ui" line="6564"/>
+        <location filename="page100.ui" line="6732"/>
         <location filename="page100.ui" line="6735"/>
-        <location filename="page100.ui" line="6738"/>
-        <location filename="page100.ui" line="6836"/>
-        <location filename="page100.ui" line="6839"/>
-        <location filename="page100.ui" line="6951"/>
-        <location filename="page100.ui" line="6954"/>
-        <location filename="page100.ui" line="7007"/>
-        <location filename="page100.ui" line="7010"/>
-        <location filename="page100.ui" line="7122"/>
-        <location filename="page100.ui" line="7125"/>
-        <location filename="page100.ui" line="7181"/>
-        <location filename="page100.ui" line="7184"/>
-        <location filename="page100.ui" line="7338"/>
-        <location filename="page100.ui" line="7341"/>
-        <location filename="page100.ui" line="7453"/>
-        <location filename="page100.ui" line="7456"/>
-        <location filename="page100.ui" line="7551"/>
-        <location filename="page100.ui" line="7554"/>
-        <location filename="page100.ui" line="7792"/>
-        <location filename="page100.ui" line="7795"/>
-        <location filename="page100.ui" line="7907"/>
-        <location filename="page100.ui" line="7910"/>
-        <location filename="page100.ui" line="7966"/>
-        <location filename="page100.ui" line="7969"/>
-        <location filename="page100.ui" line="8137"/>
-        <location filename="page100.ui" line="8140"/>
-        <location filename="page100.ui" line="8235"/>
-        <location filename="page100.ui" line="8238"/>
-        <location filename="page100.ui" line="8378"/>
-        <location filename="page100.ui" line="8381"/>
-        <location filename="page100.ui" line="8479"/>
-        <location filename="page100.ui" line="8482"/>
-        <location filename="page100.ui" line="8535"/>
-        <location filename="page100.ui" line="8538"/>
-        <location filename="page100.ui" line="8692"/>
-        <location filename="page100.ui" line="8695"/>
-        <location filename="page100.ui" line="8805"/>
-        <location filename="page100.ui" line="8808"/>
-        <location filename="page100.ui" line="8861"/>
-        <location filename="page100.ui" line="8864"/>
-        <location filename="page100.ui" line="8917"/>
-        <location filename="page100.ui" line="8920"/>
-        <location filename="page100.ui" line="8973"/>
+        <location filename="page100.ui" line="6830"/>
+        <location filename="page100.ui" line="6833"/>
+        <location filename="page100.ui" line="6931"/>
+        <location filename="page100.ui" line="6934"/>
+        <location filename="page100.ui" line="7032"/>
+        <location filename="page100.ui" line="7035"/>
+        <location filename="page100.ui" line="7088"/>
+        <location filename="page100.ui" line="7091"/>
+        <location filename="page100.ui" line="7203"/>
+        <location filename="page100.ui" line="7206"/>
+        <location filename="page100.ui" line="7316"/>
+        <location filename="page100.ui" line="7319"/>
+        <location filename="page100.ui" line="7372"/>
+        <location filename="page100.ui" line="7375"/>
+        <location filename="page100.ui" line="7428"/>
+        <location filename="page100.ui" line="7431"/>
+        <location filename="page100.ui" line="7484"/>
+        <location filename="page100.ui" line="7487"/>
+        <location filename="page100.ui" line="7540"/>
+        <location filename="page100.ui" line="7543"/>
+        <location filename="page100.ui" line="7596"/>
+        <location filename="page100.ui" line="7599"/>
+        <location filename="page100.ui" line="7652"/>
+        <location filename="page100.ui" line="7655"/>
+        <location filename="page100.ui" line="7708"/>
+        <location filename="page100.ui" line="7711"/>
+        <location filename="page100.ui" line="7764"/>
+        <location filename="page100.ui" line="7767"/>
+        <location filename="page100.ui" line="7820"/>
+        <location filename="page100.ui" line="7823"/>
+        <location filename="page100.ui" line="7876"/>
+        <location filename="page100.ui" line="7879"/>
+        <location filename="page100.ui" line="7932"/>
+        <location filename="page100.ui" line="7935"/>
+        <location filename="page100.ui" line="7988"/>
+        <location filename="page100.ui" line="7991"/>
+        <location filename="page100.ui" line="8044"/>
+        <location filename="page100.ui" line="8047"/>
+        <location filename="page100.ui" line="8100"/>
+        <location filename="page100.ui" line="8103"/>
+        <location filename="page100.ui" line="8156"/>
+        <location filename="page100.ui" line="8159"/>
+        <location filename="page100.ui" line="8212"/>
+        <location filename="page100.ui" line="8215"/>
+        <location filename="page100.ui" line="8268"/>
+        <location filename="page100.ui" line="8271"/>
+        <location filename="page100.ui" line="8324"/>
+        <location filename="page100.ui" line="8327"/>
+        <location filename="page100.ui" line="8380"/>
+        <location filename="page100.ui" line="8383"/>
+        <location filename="page100.ui" line="8436"/>
+        <location filename="page100.ui" line="8439"/>
+        <location filename="page100.ui" line="8492"/>
+        <location filename="page100.ui" line="8495"/>
+        <location filename="page100.ui" line="8548"/>
+        <location filename="page100.ui" line="8551"/>
+        <location filename="page100.ui" line="8604"/>
+        <location filename="page100.ui" line="8607"/>
+        <location filename="page100.ui" line="8724"/>
+        <location filename="page100.ui" line="8742"/>
+        <location filename="page100.ui" line="8745"/>
+        <location filename="page100.ui" line="8892"/>
+        <location filename="page100.ui" line="8895"/>
         <location filename="page100.ui" line="8976"/>
-        <location filename="page100.ui" line="9029"/>
-        <location filename="page100.ui" line="9032"/>
-        <location filename="page100.ui" line="9085"/>
-        <location filename="page100.ui" line="9088"/>
-        <location filename="page100.ui" line="9141"/>
-        <location filename="page100.ui" line="9144"/>
-        <location filename="page100.ui" line="9197"/>
-        <location filename="page100.ui" line="9200"/>
-        <location filename="page100.ui" line="9253"/>
-        <location filename="page100.ui" line="9256"/>
-        <location filename="page100.ui" line="9309"/>
-        <location filename="page100.ui" line="9312"/>
-        <location filename="page100.ui" line="9365"/>
-        <location filename="page100.ui" line="9368"/>
-        <location filename="page100.ui" line="9421"/>
-        <location filename="page100.ui" line="9424"/>
-        <location filename="page100.ui" line="9477"/>
-        <location filename="page100.ui" line="9480"/>
-        <location filename="page100.ui" line="9533"/>
-        <location filename="page100.ui" line="9536"/>
-        <location filename="page100.ui" line="9589"/>
-        <location filename="page100.ui" line="9592"/>
-        <location filename="page100.ui" line="9645"/>
-        <location filename="page100.ui" line="9648"/>
-        <location filename="page100.ui" line="9701"/>
-        <location filename="page100.ui" line="9704"/>
-        <location filename="page100.ui" line="9757"/>
-        <location filename="page100.ui" line="9760"/>
-        <location filename="page100.ui" line="9813"/>
-        <location filename="page100.ui" line="9816"/>
-        <location filename="page100.ui" line="9869"/>
-        <location filename="page100.ui" line="9872"/>
-        <location filename="page100.ui" line="9925"/>
-        <location filename="page100.ui" line="9928"/>
-        <location filename="page100.ui" line="9981"/>
-        <location filename="page100.ui" line="9984"/>
-        <location filename="page100.ui" line="10037"/>
-        <location filename="page100.ui" line="10040"/>
-        <location filename="page100.ui" line="10093"/>
-        <location filename="page100.ui" line="10096"/>
+        <location filename="page100.ui" line="8979"/>
+        <location filename="page100.ui" line="9035"/>
+        <location filename="page100.ui" line="9038"/>
+        <location filename="page100.ui" line="9094"/>
+        <location filename="page100.ui" line="9097"/>
+        <location filename="page100.ui" line="9195"/>
+        <location filename="page100.ui" line="9198"/>
+        <location filename="page100.ui" line="9296"/>
+        <location filename="page100.ui" line="9299"/>
         <source>0</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="99"/>
-        <location filename="page100.ui" line="111"/>
-        <source>DigOut_5_node01</source>
-        <oldsource>digIN5_node01</oldsource>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page100.ui" line="102"/>
-        <location filename="page100.ui" line="331"/>
-        <location filename="page100.ui" line="1508"/>
-        <location filename="page100.ui" line="1665"/>
-        <location filename="page100.ui" line="1822"/>
-        <location filename="page100.ui" line="1979"/>
-        <location filename="page100.ui" line="2307"/>
-        <location filename="page100.ui" line="2349"/>
-        <location filename="page100.ui" line="2562"/>
-        <location filename="page100.ui" line="2663"/>
-        <location filename="page100.ui" line="2823"/>
-        <location filename="page100.ui" line="2924"/>
-        <location filename="page100.ui" line="3137"/>
-        <location filename="page100.ui" line="3238"/>
-        <location filename="page100.ui" line="3451"/>
-        <location filename="page100.ui" line="3552"/>
-        <location filename="page100.ui" line="3765"/>
-        <location filename="page100.ui" line="3866"/>
-        <location filename="page100.ui" line="4079"/>
-        <location filename="page100.ui" line="4180"/>
-        <location filename="page100.ui" line="4393"/>
-        <location filename="page100.ui" line="4494"/>
-        <location filename="page100.ui" line="4707"/>
-        <location filename="page100.ui" line="4808"/>
-        <location filename="page100.ui" line="5080"/>
-        <location filename="page100.ui" line="5122"/>
-        <location filename="page100.ui" line="5164"/>
-        <location filename="page100.ui" line="5383"/>
-        <location filename="page100.ui" line="5540"/>
-        <location filename="page100.ui" line="5641"/>
-        <location filename="page100.ui" line="5851"/>
-        <location filename="page100.ui" line="6008"/>
-        <location filename="page100.ui" line="6050"/>
-        <location filename="page100.ui" line="6092"/>
-        <location filename="page100.ui" line="6134"/>
-        <location filename="page100.ui" line="6235"/>
-        <location filename="page100.ui" line="6507"/>
-        <location filename="page100.ui" line="6773"/>
-        <location filename="page100.ui" line="7275"/>
-        <location filename="page100.ui" line="7491"/>
-        <location filename="page100.ui" line="7645"/>
-        <location filename="page100.ui" line="7687"/>
-        <location filename="page100.ui" line="7729"/>
-        <location filename="page100.ui" line="8175"/>
-        <location filename="page100.ui" line="8273"/>
-        <location filename="page100.ui" line="8315"/>
-        <location filename="page100.ui" line="8416"/>
-        <location filename="page100.ui" line="8629"/>
-        <location filename="page100.ui" line="10131"/>
-        <location filename="page100.ui" line="10173"/>
-        <location filename="page100.ui" line="10215"/>
-        <location filename="page100.ui" line="10257"/>
-        <location filename="page100.ui" line="10299"/>
-        <location filename="page100.ui" line="10341"/>
-        <location filename="page100.ui" line="10383"/>
-        <location filename="page100.ui" line="10425"/>
-        <location filename="page100.ui" line="10467"/>
-        <location filename="page100.ui" line="10509"/>
-        <location filename="page100.ui" line="10551"/>
-        <location filename="page100.ui" line="10593"/>
-        <location filename="page100.ui" line="10635"/>
-        <location filename="page100.ui" line="10677"/>
-        <location filename="page100.ui" line="10719"/>
-        <location filename="page100.ui" line="10761"/>
-        <location filename="page100.ui" line="10803"/>
-        <location filename="page100.ui" line="10845"/>
-        <location filename="page100.ui" line="10887"/>
-        <location filename="page100.ui" line="10929"/>
-        <location filename="page100.ui" line="10971"/>
-        <location filename="page100.ui" line="11013"/>
-        <location filename="page100.ui" line="11055"/>
-        <location filename="page100.ui" line="11097"/>
+        <location filename="page100.ui" line="233"/>
+        <location filename="page100.ui" line="985"/>
+        <location filename="page100.ui" line="1257"/>
+        <location filename="page100.ui" line="1700"/>
+        <location filename="page100.ui" line="1972"/>
+        <location filename="page100.ui" line="2132"/>
+        <location filename="page100.ui" line="2404"/>
+        <location filename="page100.ui" line="2676"/>
+        <location filename="page100.ui" line="2948"/>
+        <location filename="page100.ui" line="3220"/>
+        <location filename="page100.ui" line="3492"/>
+        <location filename="page100.ui" line="3764"/>
+        <location filename="page100.ui" line="4272"/>
+        <location filename="page100.ui" line="4429"/>
+        <location filename="page100.ui" line="4813"/>
+        <location filename="page100.ui" line="4855"/>
+        <location filename="page100.ui" line="4897"/>
+        <location filename="page100.ui" line="5228"/>
+        <location filename="page100.ui" line="5494"/>
+        <location filename="page100.ui" line="5996"/>
+        <location filename="page100.ui" line="6212"/>
+        <location filename="page100.ui" line="6770"/>
+        <location filename="page100.ui" line="6868"/>
+        <location filename="page100.ui" line="6969"/>
+        <location filename="page100.ui" line="9132"/>
+        <location filename="page100.ui" line="9233"/>
         <source>ATCMled widget</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="147"/>
-        <location filename="page100.ui" line="153"/>
+        <location filename="page100.ui" line="105"/>
+        <location filename="page100.ui" line="111"/>
         <source>RTU3_TIMEOUTS</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="156"/>
-        <location filename="page100.ui" line="1445"/>
+        <location filename="page100.ui" line="114"/>
+        <location filename="page100.ui" line="922"/>
         <source>to:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="222"/>
-        <location filename="page100.ui" line="228"/>
-        <source>RTU0_WRITES</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page100.ui" line="231"/>
-        <location filename="page100.ui" line="420"/>
-        <source>w: </source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page100.ui" line="278"/>
-        <location filename="page100.ui" line="284"/>
+        <location filename="page100.ui" line="180"/>
+        <location filename="page100.ui" line="186"/>
         <source>RTU3_COMM_ERRORS</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="328"/>
-        <location filename="page100.ui" line="340"/>
+        <location filename="page100.ui" line="230"/>
+        <location filename="page100.ui" line="242"/>
         <source>DigIn_7_node01</source>
         <oldsource>digOUT1_node01</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="376"/>
+        <location filename="page100.ui" line="8689"/>
         <source>ATCM QDate</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="379"/>
+        <location filename="page100.ui" line="8692"/>
         <source>ATCMdate widget</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="411"/>
-        <location filename="page100.ui" line="417"/>
-        <source>RTU3_WRITES</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page100.ui" line="467"/>
-        <location filename="page100.ui" line="473"/>
-        <source>RTU3_READS</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page100.ui" line="476"/>
-        <location filename="page100.ui" line="586"/>
-        <source>r: </source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page100.ui" line="542"/>
+        <location filename="page100.ui" line="8839"/>
         <source>ATCM QTime</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="545"/>
+        <location filename="page100.ui" line="8842"/>
         <source>ATCMtime widget</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="577"/>
-        <location filename="page100.ui" line="583"/>
-        <source>RTU0_READS</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page100.ui" line="633"/>
-        <location filename="page100.ui" line="639"/>
+        <location filename="page100.ui" line="297"/>
+        <location filename="page100.ui" line="303"/>
         <source>ValAi2_node01</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="645"/>
-        <location filename="page100.ui" line="788"/>
-        <location filename="page100.ui" line="1565"/>
-        <location filename="page100.ui" line="1778"/>
-        <location filename="page100.ui" line="1879"/>
-        <location filename="page100.ui" line="2092"/>
-        <location filename="page100.ui" line="2151"/>
-        <location filename="page100.ui" line="2406"/>
-        <location filename="page100.ui" line="2619"/>
-        <location filename="page100.ui" line="2720"/>
-        <location filename="page100.ui" line="2779"/>
-        <location filename="page100.ui" line="2880"/>
-        <location filename="page100.ui" line="3093"/>
-        <location filename="page100.ui" line="3194"/>
-        <location filename="page100.ui" line="3407"/>
-        <location filename="page100.ui" line="3508"/>
-        <location filename="page100.ui" line="3721"/>
-        <location filename="page100.ui" line="3822"/>
-        <location filename="page100.ui" line="4035"/>
-        <location filename="page100.ui" line="4136"/>
-        <location filename="page100.ui" line="4349"/>
-        <location filename="page100.ui" line="4450"/>
-        <location filename="page100.ui" line="4663"/>
-        <location filename="page100.ui" line="4764"/>
-        <location filename="page100.ui" line="4977"/>
-        <location filename="page100.ui" line="5036"/>
-        <location filename="page100.ui" line="5221"/>
-        <location filename="page100.ui" line="5280"/>
-        <location filename="page100.ui" line="5339"/>
-        <location filename="page100.ui" line="5440"/>
-        <location filename="page100.ui" line="5597"/>
-        <location filename="page100.ui" line="5908"/>
-        <location filename="page100.ui" line="6191"/>
-        <location filename="page100.ui" line="6292"/>
-        <location filename="page100.ui" line="6407"/>
-        <location filename="page100.ui" line="6830"/>
-        <location filename="page100.ui" line="6945"/>
-        <location filename="page100.ui" line="7116"/>
-        <location filename="page100.ui" line="7175"/>
-        <location filename="page100.ui" line="7332"/>
-        <location filename="page100.ui" line="7447"/>
-        <location filename="page100.ui" line="7786"/>
-        <location filename="page100.ui" line="7901"/>
-        <location filename="page100.ui" line="7960"/>
-        <location filename="page100.ui" line="8131"/>
-        <location filename="page100.ui" line="8372"/>
-        <location filename="page100.ui" line="8473"/>
-        <location filename="page100.ui" line="8686"/>
+        <location filename="page100.ui" line="309"/>
+        <location filename="page100.ui" line="396"/>
+        <location filename="page100.ui" line="1042"/>
+        <location filename="page100.ui" line="1213"/>
+        <location filename="page100.ui" line="1314"/>
+        <location filename="page100.ui" line="1485"/>
+        <location filename="page100.ui" line="1544"/>
+        <location filename="page100.ui" line="1757"/>
+        <location filename="page100.ui" line="1928"/>
+        <location filename="page100.ui" line="2029"/>
+        <location filename="page100.ui" line="2088"/>
+        <location filename="page100.ui" line="2189"/>
+        <location filename="page100.ui" line="2360"/>
+        <location filename="page100.ui" line="2461"/>
+        <location filename="page100.ui" line="2632"/>
+        <location filename="page100.ui" line="2733"/>
+        <location filename="page100.ui" line="2904"/>
+        <location filename="page100.ui" line="3005"/>
+        <location filename="page100.ui" line="3176"/>
+        <location filename="page100.ui" line="3277"/>
+        <location filename="page100.ui" line="3448"/>
+        <location filename="page100.ui" line="3549"/>
+        <location filename="page100.ui" line="3720"/>
+        <location filename="page100.ui" line="3821"/>
+        <location filename="page100.ui" line="3992"/>
+        <location filename="page100.ui" line="4051"/>
+        <location filename="page100.ui" line="4110"/>
+        <location filename="page100.ui" line="4169"/>
+        <location filename="page100.ui" line="4228"/>
+        <location filename="page100.ui" line="4329"/>
+        <location filename="page100.ui" line="4486"/>
+        <location filename="page100.ui" line="4713"/>
+        <location filename="page100.ui" line="4954"/>
+        <location filename="page100.ui" line="5013"/>
+        <location filename="page100.ui" line="5128"/>
+        <location filename="page100.ui" line="5551"/>
+        <location filename="page100.ui" line="5666"/>
+        <location filename="page100.ui" line="5837"/>
+        <location filename="page100.ui" line="5896"/>
+        <location filename="page100.ui" line="6053"/>
+        <location filename="page100.ui" line="6168"/>
+        <location filename="page100.ui" line="6381"/>
+        <location filename="page100.ui" line="6496"/>
+        <location filename="page100.ui" line="6555"/>
+        <location filename="page100.ui" line="6726"/>
+        <location filename="page100.ui" line="6925"/>
+        <location filename="page100.ui" line="7026"/>
+        <location filename="page100.ui" line="7197"/>
+        <location filename="page100.ui" line="9029"/>
+        <location filename="page100.ui" line="9088"/>
+        <location filename="page100.ui" line="9189"/>
+        <location filename="page100.ui" line="9290"/>
         <source> V</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="695"/>
-        <source>RTU0</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page100.ui" line="717"/>
+        <location filename="page100.ui" line="8874"/>
         <source>1.0xx</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="720"/>
-        <location filename="page100.ui" line="726"/>
+        <location filename="page100.ui" line="8877"/>
+        <location filename="page100.ui" line="8883"/>
         <source>PLC_Version</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="729"/>
+        <location filename="page100.ui" line="8886"/>
         <source>Eng v.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="776"/>
-        <location filename="page100.ui" line="782"/>
+        <location filename="page100.ui" line="384"/>
+        <location filename="page100.ui" line="390"/>
         <source>ValAi1_node01</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="838"/>
+        <location filename="page100.ui" line="8786"/>
         <source>ATCMbutton widget</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="860"/>
+        <location filename="page100.ui" line="8808"/>
         <source>TPAC1008_02_AB</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="841"/>
-        <location filename="page100.ui" line="863"/>
+        <location filename="page100.ui" line="8789"/>
+        <location filename="page100.ui" line="8811"/>
         <source>menu</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="891"/>
-        <location filename="page100.ui" line="897"/>
+        <location filename="page100.ui" line="443"/>
+        <location filename="page100.ui" line="449"/>
         <source>RTU0_READ_QUEUE</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="900"/>
-        <location filename="page100.ui" line="1389"/>
+        <location filename="page100.ui" line="452"/>
+        <location filename="page100.ui" line="866"/>
         <source>rq: </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="947"/>
-        <location filename="page100.ui" line="953"/>
+        <location filename="page100.ui" line="499"/>
+        <location filename="page100.ui" line="505"/>
         <source>Life_node01</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="1003"/>
-        <location filename="page100.ui" line="1009"/>
+        <location filename="page100.ui" line="8958"/>
+        <source>86400.00</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page100.ui" line="8961"/>
+        <location filename="page100.ui" line="8967"/>
         <source>PLC_time</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="1059"/>
-        <source>RTU3</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page100.ui" line="1081"/>
-        <location filename="page100.ui" line="1087"/>
+        <location filename="page100.ui" line="583"/>
+        <location filename="page100.ui" line="589"/>
         <source>RTU3_WRITE_QUEUE</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="1090"/>
-        <location filename="page100.ui" line="1199"/>
+        <location filename="page100.ui" line="592"/>
+        <location filename="page100.ui" line="701"/>
         <source>wq:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="1137"/>
-        <location filename="page100.ui" line="1143"/>
+        <location filename="page100.ui" line="639"/>
+        <location filename="page100.ui" line="645"/>
         <source>RTU0_STATUS</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="1140"/>
-        <location filename="page100.ui" line="1274"/>
-        <location filename="page100.ui" line="1330"/>
-        <location filename="page100.ui" line="1618"/>
-        <location filename="page100.ui" line="1932"/>
-        <location filename="page100.ui" line="2260"/>
-        <location filename="page100.ui" line="2515"/>
-        <location filename="page100.ui" line="3031"/>
-        <location filename="page100.ui" line="3345"/>
-        <location filename="page100.ui" line="3659"/>
-        <location filename="page100.ui" line="3973"/>
-        <location filename="page100.ui" line="4287"/>
-        <location filename="page100.ui" line="4601"/>
-        <location filename="page100.ui" line="4915"/>
-        <location filename="page100.ui" line="6345"/>
-        <location filename="page100.ui" line="6460"/>
-        <location filename="page100.ui" line="6670"/>
-        <location filename="page100.ui" line="6883"/>
-        <location filename="page100.ui" line="7054"/>
-        <location filename="page100.ui" line="7228"/>
-        <location filename="page100.ui" line="7385"/>
-        <location filename="page100.ui" line="7598"/>
-        <location filename="page100.ui" line="7839"/>
-        <location filename="page100.ui" line="8013"/>
-        <location filename="page100.ui" line="8069"/>
-        <location filename="page100.ui" line="8582"/>
+        <location filename="page100.ui" line="642"/>
+        <location filename="page100.ui" line="751"/>
+        <location filename="page100.ui" line="807"/>
+        <location filename="page100.ui" line="1095"/>
+        <location filename="page100.ui" line="1367"/>
+        <location filename="page100.ui" line="1653"/>
+        <location filename="page100.ui" line="1866"/>
+        <location filename="page100.ui" line="2298"/>
+        <location filename="page100.ui" line="2570"/>
+        <location filename="page100.ui" line="2842"/>
+        <location filename="page100.ui" line="3114"/>
+        <location filename="page100.ui" line="3386"/>
+        <location filename="page100.ui" line="3658"/>
+        <location filename="page100.ui" line="3930"/>
+        <location filename="page100.ui" line="5066"/>
+        <location filename="page100.ui" line="5181"/>
+        <location filename="page100.ui" line="5391"/>
+        <location filename="page100.ui" line="5604"/>
+        <location filename="page100.ui" line="5775"/>
+        <location filename="page100.ui" line="5949"/>
+        <location filename="page100.ui" line="6106"/>
+        <location filename="page100.ui" line="6319"/>
+        <location filename="page100.ui" line="6434"/>
+        <location filename="page100.ui" line="6608"/>
+        <location filename="page100.ui" line="6664"/>
+        <location filename="page100.ui" line="7135"/>
         <source>ATCMcombobox widget</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="1171"/>
-        <location filename="page100.ui" line="1305"/>
+        <location filename="page100.ui" line="673"/>
+        <location filename="page100.ui" line="782"/>
         <source>1;NOT_CONNECTED;2;CONNECTED;3;CONNECTED_WITH_ERRORS;4;DEVICE_BLACKLIST;5;NO_HOPE;0;ZERO</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="1190"/>
-        <location filename="page100.ui" line="1196"/>
+        <location filename="page100.ui" line="692"/>
+        <location filename="page100.ui" line="698"/>
         <source>RTU0_WRITE_QUEUE</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="1249"/>
+        <location filename="page100.ui" line="8727"/>
+        <location filename="page100.ui" line="8733"/>
+        <source>errors_can</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page100.ui" line="8736"/>
+        <source>errors_can=</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page100.ui" line="8936"/>
         <source>RTU_test</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="1271"/>
-        <location filename="page100.ui" line="1277"/>
+        <location filename="page100.ui" line="748"/>
+        <location filename="page100.ui" line="754"/>
         <source>RTU3_STATUS</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="1327"/>
-        <location filename="page100.ui" line="1333"/>
+        <location filename="page100.ui" line="561"/>
+        <source>3</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page100.ui" line="804"/>
+        <location filename="page100.ui" line="810"/>
         <source>NODE_01_STATUS</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="1361"/>
-        <location filename="page100.ui" line="1649"/>
-        <location filename="page100.ui" line="1963"/>
-        <location filename="page100.ui" line="2291"/>
-        <location filename="page100.ui" line="2546"/>
-        <location filename="page100.ui" line="3062"/>
-        <location filename="page100.ui" line="3376"/>
-        <location filename="page100.ui" line="3690"/>
-        <location filename="page100.ui" line="4004"/>
-        <location filename="page100.ui" line="4318"/>
-        <location filename="page100.ui" line="4632"/>
-        <location filename="page100.ui" line="4946"/>
-        <location filename="page100.ui" line="6376"/>
-        <location filename="page100.ui" line="6491"/>
-        <location filename="page100.ui" line="6701"/>
-        <location filename="page100.ui" line="6914"/>
-        <location filename="page100.ui" line="7085"/>
-        <location filename="page100.ui" line="7259"/>
-        <location filename="page100.ui" line="7416"/>
-        <location filename="page100.ui" line="7629"/>
-        <location filename="page100.ui" line="7870"/>
-        <location filename="page100.ui" line="8044"/>
-        <location filename="page100.ui" line="8100"/>
-        <location filename="page100.ui" line="8613"/>
+        <location filename="page100.ui" line="838"/>
+        <location filename="page100.ui" line="1126"/>
+        <location filename="page100.ui" line="1398"/>
+        <location filename="page100.ui" line="1684"/>
+        <location filename="page100.ui" line="1897"/>
+        <location filename="page100.ui" line="2329"/>
+        <location filename="page100.ui" line="2601"/>
+        <location filename="page100.ui" line="2873"/>
+        <location filename="page100.ui" line="3145"/>
+        <location filename="page100.ui" line="3417"/>
+        <location filename="page100.ui" line="3689"/>
+        <location filename="page100.ui" line="3961"/>
+        <location filename="page100.ui" line="5097"/>
+        <location filename="page100.ui" line="5212"/>
+        <location filename="page100.ui" line="5422"/>
+        <location filename="page100.ui" line="5635"/>
+        <location filename="page100.ui" line="5806"/>
+        <location filename="page100.ui" line="5980"/>
+        <location filename="page100.ui" line="6137"/>
+        <location filename="page100.ui" line="6350"/>
+        <location filename="page100.ui" line="6465"/>
+        <location filename="page100.ui" line="6639"/>
+        <location filename="page100.ui" line="6695"/>
+        <location filename="page100.ui" line="7166"/>
         <source>1;NODE_OK;2;TIMEOUT;3;BLACKLIST;0;NO_NODE</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="1380"/>
-        <location filename="page100.ui" line="1386"/>
+        <location filename="page100.ui" line="857"/>
+        <location filename="page100.ui" line="863"/>
         <source>RTU3_READ_QUEUE</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="1436"/>
-        <location filename="page100.ui" line="1442"/>
+        <location filename="page100.ui" line="913"/>
+        <location filename="page100.ui" line="919"/>
         <source>RTU0_TIMEOUTS</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="1505"/>
-        <location filename="page100.ui" line="1517"/>
+        <location filename="page100.ui" line="982"/>
+        <location filename="page100.ui" line="994"/>
         <source>DigIn_7_node02</source>
         <oldsource>digOUT1_node02</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="1553"/>
-        <location filename="page100.ui" line="1559"/>
+        <location filename="page100.ui" line="1030"/>
+        <location filename="page100.ui" line="1036"/>
         <source>ValAi2_node02</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="1615"/>
-        <location filename="page100.ui" line="1621"/>
+        <location filename="page100.ui" line="1092"/>
+        <location filename="page100.ui" line="1098"/>
         <source>NODE_02_STATUS</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="1662"/>
-        <location filename="page100.ui" line="1674"/>
-        <source>DigOut_5_node02</source>
-        <oldsource>digIN5_node02</oldsource>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page100.ui" line="1710"/>
-        <location filename="page100.ui" line="1716"/>
+        <location filename="page100.ui" line="1145"/>
+        <location filename="page100.ui" line="1151"/>
         <source>Life_node02</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="1766"/>
-        <location filename="page100.ui" line="1772"/>
+        <location filename="page100.ui" line="1201"/>
+        <location filename="page100.ui" line="1207"/>
         <source>ValAi1_node02</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="1867"/>
-        <location filename="page100.ui" line="1873"/>
+        <location filename="page100.ui" line="1302"/>
+        <location filename="page100.ui" line="1308"/>
         <source>ValAi2_node03</source>
         <oldsource>digIN6_node02</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="8790"/>
-        <location filename="page100.ui" line="8796"/>
+        <location filename="page100.ui" line="7301"/>
+        <location filename="page100.ui" line="7307"/>
         <source>Addr_node01</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="8846"/>
-        <location filename="page100.ui" line="8852"/>
+        <location filename="page100.ui" line="7357"/>
+        <location filename="page100.ui" line="7363"/>
         <source>Addr_node02</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="8902"/>
-        <location filename="page100.ui" line="8908"/>
+        <location filename="page100.ui" line="7413"/>
+        <location filename="page100.ui" line="7419"/>
         <source>Addr_node03</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="8958"/>
-        <location filename="page100.ui" line="8964"/>
+        <location filename="page100.ui" line="7469"/>
+        <location filename="page100.ui" line="7475"/>
         <source>Addr_node05</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="9014"/>
-        <location filename="page100.ui" line="9020"/>
+        <location filename="page100.ui" line="7525"/>
+        <location filename="page100.ui" line="7531"/>
         <source>Addr_node06</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="9070"/>
-        <location filename="page100.ui" line="9076"/>
+        <location filename="page100.ui" line="7581"/>
+        <location filename="page100.ui" line="7587"/>
         <source>Addr_node04</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="9126"/>
-        <location filename="page100.ui" line="9132"/>
+        <location filename="page100.ui" line="7637"/>
+        <location filename="page100.ui" line="7643"/>
         <source>Addr_node08</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="9182"/>
-        <location filename="page100.ui" line="9188"/>
+        <location filename="page100.ui" line="7693"/>
+        <location filename="page100.ui" line="7699"/>
         <source>Addr_node09</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="9238"/>
-        <location filename="page100.ui" line="9244"/>
+        <location filename="page100.ui" line="7749"/>
+        <location filename="page100.ui" line="7755"/>
         <source>Addr_node07</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="9294"/>
-        <location filename="page100.ui" line="9300"/>
+        <location filename="page100.ui" line="7805"/>
+        <location filename="page100.ui" line="7811"/>
         <source>Addr_node11</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="9350"/>
-        <location filename="page100.ui" line="9356"/>
+        <location filename="page100.ui" line="7861"/>
+        <location filename="page100.ui" line="7867"/>
         <source>Addr_node12</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="9406"/>
-        <location filename="page100.ui" line="9412"/>
+        <location filename="page100.ui" line="7917"/>
+        <location filename="page100.ui" line="7923"/>
         <source>Addr_node10</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="9462"/>
-        <location filename="page100.ui" line="9468"/>
+        <location filename="page100.ui" line="7973"/>
+        <location filename="page100.ui" line="7979"/>
         <source>Addr_node22</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="9518"/>
-        <location filename="page100.ui" line="9524"/>
+        <location filename="page100.ui" line="8029"/>
+        <location filename="page100.ui" line="8035"/>
         <source>Addr_node14</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="9574"/>
-        <location filename="page100.ui" line="9580"/>
+        <location filename="page100.ui" line="8085"/>
+        <location filename="page100.ui" line="8091"/>
         <source>Addr_node19</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="9630"/>
-        <location filename="page100.ui" line="9636"/>
+        <location filename="page100.ui" line="8141"/>
+        <location filename="page100.ui" line="8147"/>
         <source>Addr_node16</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="9686"/>
-        <location filename="page100.ui" line="9692"/>
+        <location filename="page100.ui" line="8197"/>
+        <location filename="page100.ui" line="8203"/>
         <source>Addr_node23</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="9742"/>
-        <location filename="page100.ui" line="9748"/>
+        <location filename="page100.ui" line="8253"/>
+        <location filename="page100.ui" line="8259"/>
         <source>Addr_node15</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="9798"/>
-        <location filename="page100.ui" line="9804"/>
+        <location filename="page100.ui" line="8309"/>
+        <location filename="page100.ui" line="8315"/>
         <source>Addr_node20</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="9854"/>
-        <location filename="page100.ui" line="9860"/>
+        <location filename="page100.ui" line="8365"/>
+        <location filename="page100.ui" line="8371"/>
         <source>Addr_node17</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="9910"/>
-        <location filename="page100.ui" line="9916"/>
+        <location filename="page100.ui" line="8421"/>
+        <location filename="page100.ui" line="8427"/>
         <source>Addr_node24</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="9966"/>
-        <location filename="page100.ui" line="9972"/>
+        <location filename="page100.ui" line="8477"/>
+        <location filename="page100.ui" line="8483"/>
         <source>Addr_node13</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="10022"/>
-        <location filename="page100.ui" line="10028"/>
+        <location filename="page100.ui" line="8533"/>
+        <location filename="page100.ui" line="8539"/>
         <source>Addr_node21</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="10078"/>
-        <location filename="page100.ui" line="10084"/>
+        <location filename="page100.ui" line="8589"/>
+        <location filename="page100.ui" line="8595"/>
         <source>Addr_node18</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="10128"/>
-        <location filename="page100.ui" line="10140"/>
-        <source>DigIn_6_node04</source>
+        <location filename="page100.ui" line="9017"/>
+        <location filename="page100.ui" line="9023"/>
+        <location filename="page100.ui" line="9278"/>
+        <location filename="page100.ui" line="9284"/>
+        <source>PLC_AnOut_1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="10170"/>
-        <location filename="page100.ui" line="10182"/>
-        <source>DigIn_6_node12</source>
+        <location filename="page100.ui" line="9076"/>
+        <location filename="page100.ui" line="9082"/>
+        <location filename="page100.ui" line="9177"/>
+        <location filename="page100.ui" line="9183"/>
+        <source>PLC_AnOut_2</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="10212"/>
-        <location filename="page100.ui" line="10224"/>
-        <source>DigIn_6_node01</source>
+        <location filename="page100.ui" line="9129"/>
+        <location filename="page100.ui" line="9141"/>
+        <location filename="page100.ui" line="9230"/>
+        <location filename="page100.ui" line="9242"/>
+        <source>PLC_DigOut_1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="10254"/>
-        <location filename="page100.ui" line="10266"/>
-        <source>DigIn_6_node05</source>
+        <location filename="page100.ui" line="8970"/>
+        <source> s</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="10296"/>
-        <location filename="page100.ui" line="10308"/>
-        <source>DigIn_6_node21</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page100.ui" line="10338"/>
-        <location filename="page100.ui" line="10350"/>
-        <source>DigIn_6_node13</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page100.ui" line="10380"/>
-        <location filename="page100.ui" line="10392"/>
-        <source>DigIn_6_node20</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page100.ui" line="10422"/>
-        <location filename="page100.ui" line="10434"/>
-        <source>DigIn_6_node16</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page100.ui" line="10464"/>
-        <location filename="page100.ui" line="10476"/>
-        <source>DigIn_6_node14</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page100.ui" line="10506"/>
-        <location filename="page100.ui" line="10518"/>
-        <source>DigIn_6_node23</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page100.ui" line="10548"/>
-        <location filename="page100.ui" line="10560"/>
-        <source>DigIn_6_node15</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page100.ui" line="10590"/>
-        <location filename="page100.ui" line="10602"/>
-        <source>DigIn_6_node02</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page100.ui" line="10632"/>
-        <location filename="page100.ui" line="10644"/>
-        <source>DigIn_6_node19</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page100.ui" line="10674"/>
-        <location filename="page100.ui" line="10686"/>
-        <source>DigIn_6_node22</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page100.ui" line="10716"/>
-        <location filename="page100.ui" line="10728"/>
-        <source>DigIn_6_node17</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page100.ui" line="10758"/>
-        <location filename="page100.ui" line="10770"/>
-        <source>DigIn_6_node03</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page100.ui" line="10800"/>
-        <location filename="page100.ui" line="10812"/>
-        <source>DigIn_6_node06</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page100.ui" line="10842"/>
-        <location filename="page100.ui" line="10854"/>
-        <source>DigIn_6_node07</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page100.ui" line="10884"/>
-        <location filename="page100.ui" line="10896"/>
-        <source>DigIn_6_node08</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page100.ui" line="10926"/>
-        <location filename="page100.ui" line="10938"/>
-        <source>DigIn_6_node09</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page100.ui" line="10968"/>
-        <location filename="page100.ui" line="10980"/>
-        <source>DigIn_6_node18</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page100.ui" line="11010"/>
-        <location filename="page100.ui" line="11022"/>
-        <source>DigIn_6_node24</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page100.ui" line="11052"/>
-        <location filename="page100.ui" line="11064"/>
-        <source>DigIn_6_node10</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page100.ui" line="11094"/>
-        <location filename="page100.ui" line="11106"/>
-        <source>DigIn_6_node11</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page100.ui" line="1819"/>
-        <location filename="page100.ui" line="1831"/>
+        <location filename="page100.ui" line="1254"/>
+        <location filename="page100.ui" line="1266"/>
         <source>DigIn_7_node03</source>
         <oldsource>digOUT1_node03</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="1929"/>
-        <location filename="page100.ui" line="1935"/>
+        <location filename="page100.ui" line="1364"/>
+        <location filename="page100.ui" line="1370"/>
         <source>NODE_03_STATUS</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="1976"/>
-        <location filename="page100.ui" line="1988"/>
-        <source>DigOut_5_node03</source>
-        <oldsource>digIN5_node03</oldsource>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page100.ui" line="2024"/>
-        <location filename="page100.ui" line="2030"/>
+        <location filename="page100.ui" line="1417"/>
+        <location filename="page100.ui" line="1423"/>
         <source>Life_node03</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="2080"/>
-        <location filename="page100.ui" line="2086"/>
+        <location filename="page100.ui" line="1473"/>
+        <location filename="page100.ui" line="1479"/>
         <source>ValAi1_node03</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="2139"/>
-        <location filename="page100.ui" line="2145"/>
+        <location filename="page100.ui" line="1532"/>
+        <location filename="page100.ui" line="1538"/>
         <source>ValAi2_node04</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="2198"/>
-        <location filename="page100.ui" line="2204"/>
+        <location filename="page100.ui" line="1591"/>
+        <location filename="page100.ui" line="1597"/>
         <source>Life_node04</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="2257"/>
-        <location filename="page100.ui" line="2263"/>
+        <location filename="page100.ui" line="1650"/>
+        <location filename="page100.ui" line="1656"/>
         <source>NODE_04_STATUS</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="2304"/>
-        <location filename="page100.ui" line="2316"/>
-        <source>DigOut_5_node04</source>
-        <oldsource>digIN5_node04</oldsource>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page100.ui" line="2346"/>
-        <location filename="page100.ui" line="2358"/>
+        <location filename="page100.ui" line="1697"/>
+        <location filename="page100.ui" line="1709"/>
         <source>DigIn_7_node04</source>
         <oldsource>digOUT1_node04</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="2394"/>
-        <location filename="page100.ui" line="2400"/>
+        <location filename="page100.ui" line="1745"/>
+        <location filename="page100.ui" line="1751"/>
         <source>ValAi1_node04</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="2453"/>
-        <location filename="page100.ui" line="2459"/>
+        <location filename="page100.ui" line="1804"/>
+        <location filename="page100.ui" line="1810"/>
         <source>Life_node05</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="2512"/>
-        <location filename="page100.ui" line="2518"/>
+        <location filename="page100.ui" line="1863"/>
+        <location filename="page100.ui" line="1869"/>
         <source>NODE_05_STATUS</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="2559"/>
-        <location filename="page100.ui" line="2571"/>
-        <source>DigOut_5_node05</source>
-        <oldsource>digIN5_node05</oldsource>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page100.ui" line="2607"/>
-        <location filename="page100.ui" line="2613"/>
+        <location filename="page100.ui" line="1916"/>
+        <location filename="page100.ui" line="1922"/>
         <source>ValAi1_node05</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="2660"/>
-        <location filename="page100.ui" line="2672"/>
+        <location filename="page100.ui" line="1969"/>
+        <location filename="page100.ui" line="1981"/>
         <source>DigIn_7_node05</source>
         <oldsource>digOUT1_node05</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="2708"/>
-        <location filename="page100.ui" line="2714"/>
+        <location filename="page100.ui" line="2017"/>
+        <location filename="page100.ui" line="2023"/>
         <source>ValAi2_node05</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="2767"/>
-        <location filename="page100.ui" line="2773"/>
+        <location filename="page100.ui" line="2076"/>
+        <location filename="page100.ui" line="2082"/>
         <source>ValAi1_node06</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="2820"/>
-        <location filename="page100.ui" line="2832"/>
+        <location filename="page100.ui" line="2129"/>
+        <location filename="page100.ui" line="2141"/>
         <source>DigIn_7_node06</source>
         <oldsource>digOUT1_node06</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="2868"/>
-        <location filename="page100.ui" line="2874"/>
+        <location filename="page100.ui" line="2177"/>
+        <location filename="page100.ui" line="2183"/>
         <source>ValAi2_node06</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="2921"/>
-        <location filename="page100.ui" line="2933"/>
-        <source>DigOut_5_node06</source>
-        <oldsource>digIN5_node06</oldsource>
+        <location filename="page100.ui" line="2673"/>
+        <location filename="page100.ui" line="2685"/>
+        <source>DigIn_7_node08</source>
+        <oldsource>DigOut_5_node06</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="2969"/>
-        <location filename="page100.ui" line="2975"/>
+        <location filename="page100.ui" line="2236"/>
+        <location filename="page100.ui" line="2242"/>
         <source>Life_node06</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="3235"/>
-        <location filename="page100.ui" line="3247"/>
-        <source>DigOut_5_node07</source>
-        <oldsource>digIN5_node07</oldsource>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page100.ui" line="3028"/>
-        <location filename="page100.ui" line="3034"/>
+        <location filename="page100.ui" line="2295"/>
+        <location filename="page100.ui" line="2301"/>
         <source>NODE_06_STATUS</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="3081"/>
-        <location filename="page100.ui" line="3087"/>
+        <location filename="page100.ui" line="2348"/>
+        <location filename="page100.ui" line="2354"/>
         <source>ValAi1_node07</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="3134"/>
-        <location filename="page100.ui" line="3146"/>
+        <location filename="page100.ui" line="2401"/>
+        <location filename="page100.ui" line="2413"/>
         <source>DigIn_7_node07</source>
         <oldsource>digOUT1_node07</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="3182"/>
-        <location filename="page100.ui" line="3188"/>
+        <location filename="page100.ui" line="2449"/>
+        <location filename="page100.ui" line="2455"/>
         <source>ValAi2_node07</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="3283"/>
-        <location filename="page100.ui" line="3289"/>
+        <location filename="page100.ui" line="2508"/>
+        <location filename="page100.ui" line="2514"/>
         <source>Life_node07</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="3597"/>
-        <location filename="page100.ui" line="3603"/>
+        <location filename="page100.ui" line="2780"/>
+        <location filename="page100.ui" line="2786"/>
         <source>Life_node08</source>
         <oldsource>digIN6_node07</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="3342"/>
-        <location filename="page100.ui" line="3348"/>
+        <location filename="page100.ui" line="2567"/>
+        <location filename="page100.ui" line="2573"/>
         <source>NODE_07_STATUS</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="3395"/>
-        <location filename="page100.ui" line="3401"/>
+        <location filename="page100.ui" line="2620"/>
+        <location filename="page100.ui" line="2626"/>
         <source>ValAi1_node08</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="3448"/>
-        <location filename="page100.ui" line="3460"/>
-        <source>DigIn_7_node08</source>
-        <oldsource>digOUT1_node08</oldsource>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page100.ui" line="3496"/>
-        <location filename="page100.ui" line="3502"/>
+        <location filename="page100.ui" line="2721"/>
+        <location filename="page100.ui" line="2727"/>
         <source>ValAi2_node08</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="3549"/>
-        <location filename="page100.ui" line="3561"/>
-        <source>DigOut_5_node08</source>
-        <oldsource>digIN5_node08</oldsource>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page100.ui" line="3656"/>
-        <location filename="page100.ui" line="3662"/>
+        <location filename="page100.ui" line="2839"/>
+        <location filename="page100.ui" line="2845"/>
         <source>NODE_08_STATUS</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="3709"/>
-        <location filename="page100.ui" line="3715"/>
+        <location filename="page100.ui" line="2892"/>
+        <location filename="page100.ui" line="2898"/>
         <source>ValAi1_node09</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="3762"/>
-        <location filename="page100.ui" line="3774"/>
+        <location filename="page100.ui" line="2945"/>
+        <location filename="page100.ui" line="2957"/>
         <source>DigIn_7_node09</source>
         <oldsource>digOUT1_node09</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="3810"/>
-        <location filename="page100.ui" line="3816"/>
+        <location filename="page100.ui" line="2993"/>
+        <location filename="page100.ui" line="2999"/>
         <source>ValAi2_node09</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="3863"/>
-        <location filename="page100.ui" line="3875"/>
-        <source>DigOut_5_node09</source>
-        <oldsource>digIN5_node09</oldsource>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page100.ui" line="3911"/>
-        <location filename="page100.ui" line="3917"/>
+        <location filename="page100.ui" line="3052"/>
+        <location filename="page100.ui" line="3058"/>
         <source>Life_node09</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="3970"/>
-        <location filename="page100.ui" line="3976"/>
+        <location filename="page100.ui" line="3111"/>
+        <location filename="page100.ui" line="3117"/>
         <source>NODE_09_STATUS</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="4023"/>
-        <location filename="page100.ui" line="4029"/>
+        <location filename="page100.ui" line="3164"/>
+        <location filename="page100.ui" line="3170"/>
         <source>ValAi1_node10</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="4076"/>
-        <location filename="page100.ui" line="4088"/>
+        <location filename="page100.ui" line="3217"/>
+        <location filename="page100.ui" line="3229"/>
         <source>DigIn_7_node10</source>
         <oldsource>digOUT1_node10</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="4124"/>
-        <location filename="page100.ui" line="4130"/>
+        <location filename="page100.ui" line="3265"/>
+        <location filename="page100.ui" line="3271"/>
         <source>ValAi2_node10</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="4177"/>
-        <location filename="page100.ui" line="4189"/>
-        <source>DigOut_5_node10</source>
-        <oldsource>digIN5_node10</oldsource>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page100.ui" line="4225"/>
-        <location filename="page100.ui" line="4231"/>
+        <location filename="page100.ui" line="3324"/>
+        <location filename="page100.ui" line="3330"/>
         <source>Life_node10</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="4284"/>
-        <location filename="page100.ui" line="4290"/>
+        <location filename="page100.ui" line="3383"/>
+        <location filename="page100.ui" line="3389"/>
         <source>NODE_10_STATUS</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="4337"/>
-        <location filename="page100.ui" line="4343"/>
+        <location filename="page100.ui" line="3436"/>
+        <location filename="page100.ui" line="3442"/>
         <source>ValAi1_node11</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="4390"/>
-        <location filename="page100.ui" line="4402"/>
+        <location filename="page100.ui" line="3489"/>
+        <location filename="page100.ui" line="3501"/>
         <source>DigIn_7_node11</source>
         <oldsource>digOUT1_node11</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="4438"/>
-        <location filename="page100.ui" line="4444"/>
+        <location filename="page100.ui" line="3537"/>
+        <location filename="page100.ui" line="3543"/>
         <source>ValAi2_node11</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="4491"/>
-        <location filename="page100.ui" line="4503"/>
-        <source>DigOut_5_node11</source>
-        <oldsource>digIN5_node11</oldsource>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page100.ui" line="4539"/>
-        <location filename="page100.ui" line="4545"/>
+        <location filename="page100.ui" line="3596"/>
+        <location filename="page100.ui" line="3602"/>
         <source>Life_node11</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="5024"/>
-        <location filename="page100.ui" line="5030"/>
+        <location filename="page100.ui" line="4039"/>
+        <location filename="page100.ui" line="4045"/>
         <source>ValAi1_node23</source>
         <oldsource>digIN6_node11</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="4598"/>
-        <location filename="page100.ui" line="4604"/>
+        <location filename="page100.ui" line="3655"/>
+        <location filename="page100.ui" line="3661"/>
         <source>NODE_11_STATUS</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="4651"/>
-        <location filename="page100.ui" line="4657"/>
+        <location filename="page100.ui" line="3708"/>
+        <location filename="page100.ui" line="3714"/>
         <source>ValAi1_node12</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="4704"/>
-        <location filename="page100.ui" line="4716"/>
+        <location filename="page100.ui" line="3761"/>
+        <location filename="page100.ui" line="3773"/>
         <source>DigIn_7_node12</source>
         <oldsource>digOUT1_node12</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="4752"/>
-        <location filename="page100.ui" line="4758"/>
+        <location filename="page100.ui" line="3809"/>
+        <location filename="page100.ui" line="3815"/>
         <source>ValAi2_node12</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="4805"/>
-        <location filename="page100.ui" line="4817"/>
-        <source>DigOut_5_node12</source>
-        <oldsource>digIN5_node12</oldsource>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page100.ui" line="4853"/>
-        <location filename="page100.ui" line="4859"/>
+        <location filename="page100.ui" line="3868"/>
+        <location filename="page100.ui" line="3874"/>
         <source>Life_node12</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="5380"/>
-        <location filename="page100.ui" line="5392"/>
+        <location filename="page100.ui" line="4269"/>
+        <location filename="page100.ui" line="4281"/>
         <source>DigIn_7_node15</source>
         <oldsource>digOUT1_node15</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="4912"/>
-        <location filename="page100.ui" line="4918"/>
+        <location filename="page100.ui" line="3927"/>
+        <location filename="page100.ui" line="3933"/>
         <source>NODE_12_STATUS</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="5487"/>
-        <location filename="page100.ui" line="5493"/>
+        <location filename="page100.ui" line="4376"/>
+        <location filename="page100.ui" line="4382"/>
         <source>Life_node20</source>
         <oldsource>digIN6_node20</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="4965"/>
-        <location filename="page100.ui" line="4971"/>
+        <location filename="page100.ui" line="3980"/>
+        <location filename="page100.ui" line="3986"/>
         <source>ValAi1_node15</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="5077"/>
-        <location filename="page100.ui" line="5089"/>
-        <source>DigOut_5_node21</source>
-        <oldsource>digIN5_node21</oldsource>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page100.ui" line="5119"/>
-        <location filename="page100.ui" line="5131"/>
-        <source>DigOut_5_node14</source>
-        <oldsource>digIN5_node14</oldsource>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page100.ui" line="5161"/>
-        <location filename="page100.ui" line="5173"/>
-        <source>DigOut_5_node23</source>
-        <oldsource>digIN5_node23</oldsource>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page100.ui" line="5209"/>
-        <location filename="page100.ui" line="5215"/>
+        <location filename="page100.ui" line="4098"/>
+        <location filename="page100.ui" line="4104"/>
         <source>ValAi2_node20</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="5268"/>
-        <location filename="page100.ui" line="5274"/>
+        <location filename="page100.ui" line="4157"/>
+        <location filename="page100.ui" line="4163"/>
         <source>ValAi2_node18</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="5327"/>
-        <location filename="page100.ui" line="5333"/>
+        <location filename="page100.ui" line="4216"/>
+        <location filename="page100.ui" line="4222"/>
         <source>ValAi2_node14</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="5428"/>
-        <location filename="page100.ui" line="5434"/>
+        <location filename="page100.ui" line="4317"/>
+        <location filename="page100.ui" line="4323"/>
         <source>ValAi2_node23</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="5537"/>
-        <location filename="page100.ui" line="5549"/>
+        <location filename="page100.ui" line="4426"/>
+        <location filename="page100.ui" line="4438"/>
         <source>DigIn_7_node14</source>
         <oldsource>digOUT1_node14</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="5585"/>
-        <location filename="page100.ui" line="5591"/>
+        <location filename="page100.ui" line="4474"/>
+        <location filename="page100.ui" line="4480"/>
         <source>ValAi2_node17</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="5638"/>
-        <location filename="page100.ui" line="5650"/>
-        <source>DigOut_5_node20</source>
-        <oldsource>digIN5_node20</oldsource>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page100.ui" line="5686"/>
-        <location filename="page100.ui" line="5692"/>
+        <location filename="page100.ui" line="4533"/>
+        <location filename="page100.ui" line="4539"/>
         <source>Life_node24</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="5742"/>
-        <location filename="page100.ui" line="5748"/>
+        <location filename="page100.ui" line="4589"/>
+        <location filename="page100.ui" line="4595"/>
         <source>Life_node21</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="5798"/>
-        <location filename="page100.ui" line="5804"/>
+        <location filename="page100.ui" line="4645"/>
+        <location filename="page100.ui" line="4651"/>
         <source>Life_node17</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="5848"/>
-        <location filename="page100.ui" line="5860"/>
-        <source>DigOut_5_node18</source>
-        <oldsource>digIN5_node18</oldsource>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page100.ui" line="5896"/>
-        <location filename="page100.ui" line="5902"/>
+        <location filename="page100.ui" line="4701"/>
+        <location filename="page100.ui" line="4707"/>
         <source>ValAi2_node22</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="5955"/>
-        <location filename="page100.ui" line="5961"/>
+        <location filename="page100.ui" line="4760"/>
+        <location filename="page100.ui" line="4766"/>
         <source>Life_node16</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="6005"/>
-        <location filename="page100.ui" line="6017"/>
+        <location filename="page100.ui" line="4810"/>
+        <location filename="page100.ui" line="4822"/>
         <source>DigIn_7_node18</source>
         <oldsource>digOUT1_node18</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="6047"/>
-        <location filename="page100.ui" line="6059"/>
-        <source>DigOut_5_node24</source>
-        <oldsource>digIN5_node24</oldsource>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page100.ui" line="6089"/>
-        <location filename="page100.ui" line="6101"/>
+        <location filename="page100.ui" line="4852"/>
+        <location filename="page100.ui" line="4864"/>
         <source>DigIn_7_node17</source>
         <oldsource>digOUT1_node17</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="6131"/>
-        <location filename="page100.ui" line="6143"/>
+        <location filename="page100.ui" line="4894"/>
+        <location filename="page100.ui" line="4906"/>
         <source>DigIn_7_node22</source>
         <oldsource>digOUT1_node22</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="6179"/>
-        <location filename="page100.ui" line="6185"/>
+        <location filename="page100.ui" line="4942"/>
+        <location filename="page100.ui" line="4948"/>
         <source>ValAi1_node14</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="6232"/>
-        <location filename="page100.ui" line="6244"/>
-        <source>DigOut_5_node19</source>
-        <oldsource>digIN5_node19</oldsource>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page100.ui" line="6280"/>
-        <location filename="page100.ui" line="6286"/>
+        <location filename="page100.ui" line="5001"/>
+        <location filename="page100.ui" line="5007"/>
         <source>ValAi2_node15</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="6342"/>
-        <location filename="page100.ui" line="6348"/>
+        <location filename="page100.ui" line="5063"/>
+        <location filename="page100.ui" line="5069"/>
         <source>NODE_19_STATUS</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="6395"/>
-        <location filename="page100.ui" line="6401"/>
+        <location filename="page100.ui" line="5116"/>
+        <location filename="page100.ui" line="5122"/>
         <source>ValAi2_node19</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="6457"/>
-        <location filename="page100.ui" line="6463"/>
+        <location filename="page100.ui" line="5178"/>
+        <location filename="page100.ui" line="5184"/>
         <source>NODE_14_STATUS</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="6504"/>
-        <location filename="page100.ui" line="6516"/>
+        <location filename="page100.ui" line="5225"/>
+        <location filename="page100.ui" line="5237"/>
         <source>DigIn_7_node13</source>
         <oldsource>digOUT1_node13</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="6552"/>
-        <location filename="page100.ui" line="6558"/>
+        <location filename="page100.ui" line="5273"/>
+        <location filename="page100.ui" line="5279"/>
         <source>Life_node19</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="6608"/>
-        <location filename="page100.ui" line="6614"/>
+        <location filename="page100.ui" line="5329"/>
+        <location filename="page100.ui" line="5335"/>
         <source>Life_node18</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="6667"/>
-        <location filename="page100.ui" line="6673"/>
+        <location filename="page100.ui" line="5388"/>
+        <location filename="page100.ui" line="5394"/>
         <source>NODE_21_STATUS</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="7488"/>
-        <location filename="page100.ui" line="7500"/>
+        <location filename="page100.ui" line="6209"/>
+        <location filename="page100.ui" line="6221"/>
         <source>DigIn_7_node19</source>
         <oldsource>digOUT1_node19</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="6720"/>
-        <location filename="page100.ui" line="6726"/>
+        <location filename="page100.ui" line="5441"/>
+        <location filename="page100.ui" line="5447"/>
         <source>Life_node23</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="6770"/>
-        <location filename="page100.ui" line="6782"/>
+        <location filename="page100.ui" line="5491"/>
+        <location filename="page100.ui" line="5503"/>
         <source>DigIn_7_node16</source>
         <oldsource>digOUT1_node16</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="6818"/>
-        <location filename="page100.ui" line="6824"/>
+        <location filename="page100.ui" line="5539"/>
+        <location filename="page100.ui" line="5545"/>
         <source>ValAi1_node20</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="6880"/>
-        <location filename="page100.ui" line="6886"/>
+        <location filename="page100.ui" line="5601"/>
+        <location filename="page100.ui" line="5607"/>
         <source>NODE_23_STATUS</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="6933"/>
-        <location filename="page100.ui" line="6939"/>
+        <location filename="page100.ui" line="5654"/>
+        <location filename="page100.ui" line="5660"/>
         <source>ValAi1_node18</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="6992"/>
-        <location filename="page100.ui" line="6998"/>
+        <location filename="page100.ui" line="5713"/>
+        <location filename="page100.ui" line="5719"/>
         <source>Life_node13</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="7051"/>
-        <location filename="page100.ui" line="7057"/>
+        <location filename="page100.ui" line="5772"/>
+        <location filename="page100.ui" line="5778"/>
         <source>NODE_17_STATUS</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="7104"/>
-        <location filename="page100.ui" line="7110"/>
+        <location filename="page100.ui" line="5825"/>
+        <location filename="page100.ui" line="5831"/>
         <source>ValAi1_node24</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="7163"/>
-        <location filename="page100.ui" line="7169"/>
+        <location filename="page100.ui" line="5884"/>
+        <location filename="page100.ui" line="5890"/>
         <source>ValAi2_node21</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="7225"/>
-        <location filename="page100.ui" line="7231"/>
+        <location filename="page100.ui" line="5946"/>
+        <location filename="page100.ui" line="5952"/>
         <source>NODE_16_STATUS</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="7272"/>
-        <location filename="page100.ui" line="7284"/>
+        <location filename="page100.ui" line="5993"/>
+        <location filename="page100.ui" line="6005"/>
         <source>DigIn_7_node23</source>
         <oldsource>digOUT1_node23</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="7320"/>
-        <location filename="page100.ui" line="7326"/>
+        <location filename="page100.ui" line="6041"/>
+        <location filename="page100.ui" line="6047"/>
         <source>ValAi1_node17</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="7382"/>
-        <location filename="page100.ui" line="7388"/>
+        <location filename="page100.ui" line="6103"/>
+        <location filename="page100.ui" line="6109"/>
         <source>NODE_24_STATUS</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="7435"/>
-        <location filename="page100.ui" line="7441"/>
+        <location filename="page100.ui" line="6156"/>
+        <location filename="page100.ui" line="6162"/>
         <source>ValAi1_node13</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="7536"/>
-        <location filename="page100.ui" line="7542"/>
+        <location filename="page100.ui" line="6257"/>
+        <location filename="page100.ui" line="6263"/>
         <source>Life_node15</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="7595"/>
-        <location filename="page100.ui" line="7601"/>
+        <location filename="page100.ui" line="6316"/>
+        <location filename="page100.ui" line="6322"/>
         <source>NODE_20_STATUS</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="7642"/>
-        <location filename="page100.ui" line="7654"/>
-        <source>DigOut_5_node13</source>
-        <oldsource>digIN5_node13</oldsource>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page100.ui" line="7684"/>
-        <location filename="page100.ui" line="7696"/>
-        <source>DigOut_5_node16</source>
-        <oldsource>digIN5_node16</oldsource>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page100.ui" line="7726"/>
-        <location filename="page100.ui" line="7738"/>
-        <source>DigOut_5_node22</source>
-        <oldsource>digIN5_node22</oldsource>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page100.ui" line="8674"/>
-        <location filename="page100.ui" line="8680"/>
+        <location filename="page100.ui" line="7185"/>
+        <location filename="page100.ui" line="7191"/>
         <source>ValAi1_node19</source>
         <oldsource>digIN6_node23</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="7774"/>
-        <location filename="page100.ui" line="7780"/>
+        <location filename="page100.ui" line="6369"/>
+        <location filename="page100.ui" line="6375"/>
         <source>ValAi1_node22</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="7836"/>
-        <location filename="page100.ui" line="7842"/>
+        <location filename="page100.ui" line="6431"/>
+        <location filename="page100.ui" line="6437"/>
         <source>NODE_18_STATUS</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="7889"/>
-        <location filename="page100.ui" line="7895"/>
+        <location filename="page100.ui" line="6484"/>
+        <location filename="page100.ui" line="6490"/>
         <source>ValAi1_node16</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="7948"/>
-        <location filename="page100.ui" line="7954"/>
+        <location filename="page100.ui" line="6543"/>
+        <location filename="page100.ui" line="6549"/>
         <source>ValAi2_node13</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="8010"/>
-        <location filename="page100.ui" line="8016"/>
+        <location filename="page100.ui" line="6605"/>
+        <location filename="page100.ui" line="6611"/>
         <source>NODE_13_STATUS</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="8066"/>
-        <location filename="page100.ui" line="8072"/>
+        <location filename="page100.ui" line="6661"/>
+        <location filename="page100.ui" line="6667"/>
         <source>NODE_22_STATUS</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="8119"/>
-        <location filename="page100.ui" line="8125"/>
+        <location filename="page100.ui" line="6714"/>
+        <location filename="page100.ui" line="6720"/>
         <source>ValAi2_node16</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="8172"/>
-        <location filename="page100.ui" line="8184"/>
+        <location filename="page100.ui" line="6767"/>
+        <location filename="page100.ui" line="6779"/>
         <source>DigIn_7_node20</source>
         <oldsource>digOUT1_node20</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="8220"/>
-        <location filename="page100.ui" line="8226"/>
+        <location filename="page100.ui" line="6815"/>
+        <location filename="page100.ui" line="6821"/>
         <source>Life_node14</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="8270"/>
-        <location filename="page100.ui" line="8282"/>
+        <location filename="page100.ui" line="6865"/>
+        <location filename="page100.ui" line="6877"/>
         <source>DigIn_7_node21</source>
         <oldsource>digOUT1_node21</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="8312"/>
-        <location filename="page100.ui" line="8324"/>
-        <source>DigOut_5_node15</source>
-        <oldsource>digIN5_node15</oldsource>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page100.ui" line="8360"/>
-        <location filename="page100.ui" line="8366"/>
+        <location filename="page100.ui" line="6913"/>
+        <location filename="page100.ui" line="6919"/>
         <source>ValAi1_node21</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="8413"/>
-        <location filename="page100.ui" line="8425"/>
+        <location filename="page100.ui" line="6966"/>
+        <location filename="page100.ui" line="6978"/>
         <source>DigIn_7_node24</source>
         <oldsource>digOUT1_node24</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="8461"/>
-        <location filename="page100.ui" line="8467"/>
+        <location filename="page100.ui" line="7014"/>
+        <location filename="page100.ui" line="7020"/>
         <source>ValAi2_node24</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="8520"/>
-        <location filename="page100.ui" line="8526"/>
+        <location filename="page100.ui" line="7073"/>
+        <location filename="page100.ui" line="7079"/>
         <source>Life_node22</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="8579"/>
-        <location filename="page100.ui" line="8585"/>
+        <location filename="page100.ui" line="7132"/>
+        <location filename="page100.ui" line="7138"/>
         <source>NODE_15_STATUS</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page100.ui" line="8626"/>
-        <location filename="page100.ui" line="8638"/>
-        <source>DigOut_5_node17</source>
-        <oldsource>digIN5_node17</oldsource>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -1952,1493 +1607,1709 @@
     </message>
     <message>
         <location filename="page200.ui" line="55"/>
-        <location filename="page200.ui" line="139"/>
-        <location filename="page200.ui" line="198"/>
-        <location filename="page200.ui" line="260"/>
-        <location filename="page200.ui" line="319"/>
-        <location filename="page200.ui" line="416"/>
-        <location filename="page200.ui" line="475"/>
-        <location filename="page200.ui" line="537"/>
-        <location filename="page200.ui" line="646"/>
-        <location filename="page200.ui" line="705"/>
-        <location filename="page200.ui" line="767"/>
-        <location filename="page200.ui" line="851"/>
-        <location filename="page200.ui" line="994"/>
-        <location filename="page200.ui" line="1056"/>
-        <location filename="page200.ui" line="1196"/>
-        <location filename="page200.ui" line="1252"/>
-        <location filename="page200.ui" line="1367"/>
-        <location filename="page200.ui" line="1538"/>
-        <location filename="page200.ui" line="1597"/>
-        <location filename="page200.ui" line="2067"/>
-        <location filename="page200.ui" line="2129"/>
-        <location filename="page200.ui" line="2322"/>
-        <location filename="page200.ui" line="2384"/>
-        <location filename="page200.ui" line="2502"/>
-        <location filename="page200.ui" line="2564"/>
-        <location filename="page200.ui" line="2626"/>
-        <location filename="page200.ui" line="2704"/>
-        <location filename="page200.ui" line="2763"/>
-        <location filename="page200.ui" line="2819"/>
-        <location filename="page200.ui" line="2878"/>
-        <location filename="page200.ui" line="2934"/>
-        <location filename="page200.ui" line="2990"/>
-        <location filename="page200.ui" line="3049"/>
-        <location filename="page200.ui" line="3108"/>
-        <location filename="page200.ui" line="3167"/>
-        <location filename="page200.ui" line="3245"/>
-        <location filename="page200.ui" line="3307"/>
-        <location filename="page200.ui" line="3401"/>
-        <location filename="page200.ui" line="3460"/>
-        <location filename="page200.ui" line="3578"/>
-        <location filename="page200.ui" line="3640"/>
-        <location filename="page200.ui" line="3755"/>
-        <location filename="page200.ui" line="3870"/>
-        <location filename="page200.ui" line="3985"/>
-        <location filename="page200.ui" line="4044"/>
-        <location filename="page200.ui" line="4106"/>
-        <location filename="page200.ui" line="4240"/>
-        <location filename="page200.ui" line="4299"/>
-        <location filename="page200.ui" line="4358"/>
-        <location filename="page200.ui" line="4470"/>
-        <location filename="page200.ui" line="4529"/>
-        <location filename="page200.ui" line="4644"/>
-        <location filename="page200.ui" line="4703"/>
-        <location filename="page200.ui" line="4930"/>
-        <location filename="page200.ui" line="4992"/>
-        <location filename="page200.ui" line="5054"/>
-        <location filename="page200.ui" line="5116"/>
-        <location filename="page200.ui" line="5253"/>
-        <location filename="page200.ui" line="5312"/>
-        <location filename="page200.ui" line="5368"/>
-        <location filename="page200.ui" line="5427"/>
-        <location filename="page200.ui" line="5489"/>
-        <location filename="page200.ui" line="5548"/>
-        <location filename="page200.ui" line="5607"/>
+        <location filename="page200.ui" line="114"/>
+        <location filename="page200.ui" line="173"/>
+        <location filename="page200.ui" line="238"/>
+        <location filename="page200.ui" line="297"/>
+        <location filename="page200.ui" line="394"/>
+        <location filename="page200.ui" line="453"/>
+        <location filename="page200.ui" line="515"/>
+        <location filename="page200.ui" line="627"/>
+        <location filename="page200.ui" line="692"/>
+        <location filename="page200.ui" line="776"/>
+        <location filename="page200.ui" line="919"/>
+        <location filename="page200.ui" line="984"/>
+        <location filename="page200.ui" line="1099"/>
+        <location filename="page200.ui" line="1214"/>
+        <location filename="page200.ui" line="1385"/>
+        <location filename="page200.ui" line="1444"/>
+        <location filename="page200.ui" line="1914"/>
+        <location filename="page200.ui" line="1976"/>
+        <location filename="page200.ui" line="2172"/>
+        <location filename="page200.ui" line="2237"/>
+        <location filename="page200.ui" line="2358"/>
+        <location filename="page200.ui" line="2423"/>
+        <location filename="page200.ui" line="2488"/>
+        <location filename="page200.ui" line="2566"/>
+        <location filename="page200.ui" line="2625"/>
+        <location filename="page200.ui" line="2684"/>
+        <location filename="page200.ui" line="2743"/>
+        <location filename="page200.ui" line="2802"/>
+        <location filename="page200.ui" line="2861"/>
+        <location filename="page200.ui" line="2920"/>
+        <location filename="page200.ui" line="2979"/>
+        <location filename="page200.ui" line="3057"/>
+        <location filename="page200.ui" line="3122"/>
+        <location filename="page200.ui" line="3216"/>
+        <location filename="page200.ui" line="3275"/>
+        <location filename="page200.ui" line="3393"/>
+        <location filename="page200.ui" line="3455"/>
+        <location filename="page200.ui" line="3570"/>
+        <location filename="page200.ui" line="3685"/>
+        <location filename="page200.ui" line="3803"/>
+        <location filename="page200.ui" line="3868"/>
+        <location filename="page200.ui" line="4002"/>
+        <location filename="page200.ui" line="4061"/>
+        <location filename="page200.ui" line="4120"/>
+        <location filename="page200.ui" line="4235"/>
+        <location filename="page200.ui" line="4350"/>
+        <location filename="page200.ui" line="4409"/>
+        <location filename="page200.ui" line="4636"/>
+        <location filename="page200.ui" line="4698"/>
+        <location filename="page200.ui" line="4760"/>
+        <location filename="page200.ui" line="4825"/>
+        <location filename="page200.ui" line="4962"/>
+        <location filename="page200.ui" line="5021"/>
+        <location filename="page200.ui" line="5080"/>
+        <location filename="page200.ui" line="5145"/>
+        <location filename="page200.ui" line="5204"/>
+        <location filename="page200.ui" line="5263"/>
+        <location filename="page200.ui" line="5325"/>
+        <location filename="page200.ui" line="5387"/>
+        <location filename="page200.ui" line="5446"/>
+        <location filename="page200.ui" line="5505"/>
         <location filename="page200.ui" line="5669"/>
         <location filename="page200.ui" line="5731"/>
-        <location filename="page200.ui" line="5790"/>
-        <location filename="page200.ui" line="5849"/>
-        <location filename="page200.ui" line="6008"/>
-        <location filename="page200.ui" line="6070"/>
-        <location filename="page200.ui" line="6132"/>
-        <location filename="page200.ui" line="6194"/>
-        <location filename="page200.ui" line="6256"/>
-        <location filename="page200.ui" line="6318"/>
-        <location filename="page200.ui" line="6380"/>
-        <location filename="page200.ui" line="6442"/>
-        <location filename="page200.ui" line="6504"/>
-        <location filename="page200.ui" line="6566"/>
-        <location filename="page200.ui" line="6628"/>
-        <location filename="page200.ui" line="6690"/>
-        <location filename="page200.ui" line="6852"/>
-        <location filename="page200.ui" line="6914"/>
-        <location filename="page200.ui" line="6976"/>
-        <location filename="page200.ui" line="7038"/>
-        <location filename="page200.ui" line="7097"/>
-        <location filename="page200.ui" line="7159"/>
-        <location filename="page200.ui" line="7221"/>
-        <location filename="page200.ui" line="7283"/>
-        <location filename="page200.ui" line="7345"/>
-        <location filename="page200.ui" line="7404"/>
-        <location filename="page200.ui" line="7466"/>
-        <location filename="page200.ui" line="7525"/>
-        <location filename="page200.ui" line="7587"/>
-        <location filename="page200.ui" line="7649"/>
-        <location filename="page200.ui" line="7711"/>
-        <location filename="page200.ui" line="7770"/>
-        <location filename="page200.ui" line="7832"/>
-        <location filename="page200.ui" line="7894"/>
-        <location filename="page200.ui" line="7956"/>
-        <location filename="page200.ui" line="8018"/>
-        <location filename="page200.ui" line="8080"/>
-        <location filename="page200.ui" line="8142"/>
-        <location filename="page200.ui" line="8201"/>
-        <location filename="page200.ui" line="8260"/>
-        <location filename="page200.ui" line="8322"/>
-        <location filename="page200.ui" line="8384"/>
-        <location filename="page200.ui" line="8446"/>
+        <location filename="page200.ui" line="5793"/>
+        <location filename="page200.ui" line="5855"/>
+        <location filename="page200.ui" line="5917"/>
+        <location filename="page200.ui" line="5979"/>
+        <location filename="page200.ui" line="6041"/>
+        <location filename="page200.ui" line="6103"/>
+        <location filename="page200.ui" line="6165"/>
+        <location filename="page200.ui" line="6227"/>
+        <location filename="page200.ui" line="6289"/>
+        <location filename="page200.ui" line="6351"/>
+        <location filename="page200.ui" line="6518"/>
+        <location filename="page200.ui" line="6580"/>
+        <location filename="page200.ui" line="6645"/>
+        <location filename="page200.ui" line="6707"/>
+        <location filename="page200.ui" line="6766"/>
+        <location filename="page200.ui" line="6828"/>
+        <location filename="page200.ui" line="6893"/>
+        <location filename="page200.ui" line="6958"/>
+        <location filename="page200.ui" line="7020"/>
+        <location filename="page200.ui" line="7079"/>
+        <location filename="page200.ui" line="7141"/>
+        <location filename="page200.ui" line="7200"/>
+        <location filename="page200.ui" line="7262"/>
+        <location filename="page200.ui" line="7324"/>
+        <location filename="page200.ui" line="7386"/>
+        <location filename="page200.ui" line="7445"/>
+        <location filename="page200.ui" line="7507"/>
+        <location filename="page200.ui" line="7572"/>
+        <location filename="page200.ui" line="7634"/>
+        <location filename="page200.ui" line="7699"/>
+        <location filename="page200.ui" line="7761"/>
+        <location filename="page200.ui" line="7826"/>
+        <location filename="page200.ui" line="7885"/>
+        <location filename="page200.ui" line="7944"/>
+        <location filename="page200.ui" line="8006"/>
+        <location filename="page200.ui" line="8068"/>
+        <location filename="page200.ui" line="8130"/>
+        <location filename="page200.ui" line="8189"/>
+        <location filename="page200.ui" line="8251"/>
+        <location filename="page200.ui" line="8316"/>
+        <location filename="page200.ui" line="8378"/>
+        <location filename="page200.ui" line="8443"/>
         <location filename="page200.ui" line="8505"/>
-        <location filename="page200.ui" line="8567"/>
+        <location filename="page200.ui" line="8570"/>
         <location filename="page200.ui" line="8629"/>
-        <location filename="page200.ui" line="8691"/>
-        <location filename="page200.ui" line="8753"/>
-        <location filename="page200.ui" line="8815"/>
-        <location filename="page200.ui" line="8877"/>
-        <location filename="page200.ui" line="8936"/>
+        <location filename="page200.ui" line="8688"/>
+        <location filename="page200.ui" line="8750"/>
+        <location filename="page200.ui" line="8812"/>
+        <location filename="page200.ui" line="8874"/>
+        <location filename="page200.ui" line="8933"/>
         <location filename="page200.ui" line="8995"/>
-        <location filename="page200.ui" line="9057"/>
-        <location filename="page200.ui" line="9119"/>
-        <location filename="page200.ui" line="9181"/>
-        <location filename="page200.ui" line="9240"/>
-        <location filename="page200.ui" line="9302"/>
-        <location filename="page200.ui" line="9364"/>
-        <location filename="page200.ui" line="9426"/>
-        <location filename="page200.ui" line="9488"/>
-        <location filename="page200.ui" line="9550"/>
-        <location filename="page200.ui" line="9612"/>
-        <location filename="page200.ui" line="9671"/>
-        <location filename="page200.ui" line="9730"/>
-        <location filename="page200.ui" line="9814"/>
+        <location filename="page200.ui" line="9060"/>
+        <location filename="page200.ui" line="9122"/>
+        <location filename="page200.ui" line="9187"/>
+        <location filename="page200.ui" line="9249"/>
+        <location filename="page200.ui" line="9314"/>
+        <location filename="page200.ui" line="9373"/>
+        <location filename="page200.ui" line="9432"/>
+        <location filename="page200.ui" line="9494"/>
+        <location filename="page200.ui" line="10670"/>
+        <location filename="page200.ui" line="10726"/>
+        <location filename="page200.ui" line="10782"/>
+        <location filename="page200.ui" line="10838"/>
+        <location filename="page200.ui" line="10894"/>
+        <location filename="page200.ui" line="10950"/>
+        <location filename="page200.ui" line="11006"/>
+        <location filename="page200.ui" line="11062"/>
         <source>ATCMlabel widget</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="page200.ui" line="67"/>
         <location filename="page200.ui" line="70"/>
-        <location filename="page200.ui" line="151"/>
-        <location filename="page200.ui" line="154"/>
-        <location filename="page200.ui" line="213"/>
-        <location filename="page200.ui" line="216"/>
-        <location filename="page200.ui" line="272"/>
-        <location filename="page200.ui" line="275"/>
-        <location filename="page200.ui" line="334"/>
-        <location filename="page200.ui" line="337"/>
-        <location filename="page200.ui" line="428"/>
-        <location filename="page200.ui" line="431"/>
-        <location filename="page200.ui" line="490"/>
-        <location filename="page200.ui" line="493"/>
-        <location filename="page200.ui" line="549"/>
-        <location filename="page200.ui" line="552"/>
-        <location filename="page200.ui" line="658"/>
-        <location filename="page200.ui" line="661"/>
-        <location filename="page200.ui" line="720"/>
-        <location filename="page200.ui" line="723"/>
-        <location filename="page200.ui" line="779"/>
-        <location filename="page200.ui" line="782"/>
-        <location filename="page200.ui" line="863"/>
-        <location filename="page200.ui" line="866"/>
-        <location filename="page200.ui" line="1009"/>
-        <location filename="page200.ui" line="1012"/>
-        <location filename="page200.ui" line="1068"/>
-        <location filename="page200.ui" line="1071"/>
-        <location filename="page200.ui" line="1208"/>
-        <location filename="page200.ui" line="1211"/>
-        <location filename="page200.ui" line="1264"/>
-        <location filename="page200.ui" line="1267"/>
-        <location filename="page200.ui" line="1379"/>
-        <location filename="page200.ui" line="1382"/>
-        <location filename="page200.ui" line="1550"/>
-        <location filename="page200.ui" line="1553"/>
-        <location filename="page200.ui" line="1609"/>
-        <location filename="page200.ui" line="1612"/>
-        <location filename="page200.ui" line="2082"/>
-        <location filename="page200.ui" line="2085"/>
-        <location filename="page200.ui" line="2144"/>
-        <location filename="page200.ui" line="2147"/>
-        <location filename="page200.ui" line="2337"/>
-        <location filename="page200.ui" line="2340"/>
-        <location filename="page200.ui" line="2399"/>
-        <location filename="page200.ui" line="2402"/>
-        <location filename="page200.ui" line="2517"/>
-        <location filename="page200.ui" line="2520"/>
-        <location filename="page200.ui" line="2579"/>
-        <location filename="page200.ui" line="2582"/>
-        <location filename="page200.ui" line="2638"/>
-        <location filename="page200.ui" line="2641"/>
-        <location filename="page200.ui" line="2716"/>
-        <location filename="page200.ui" line="2719"/>
-        <location filename="page200.ui" line="2775"/>
-        <location filename="page200.ui" line="2778"/>
-        <location filename="page200.ui" line="2831"/>
-        <location filename="page200.ui" line="2834"/>
-        <location filename="page200.ui" line="2890"/>
-        <location filename="page200.ui" line="2893"/>
-        <location filename="page200.ui" line="2943"/>
-        <location filename="page200.ui" line="2946"/>
-        <location filename="page200.ui" line="3002"/>
-        <location filename="page200.ui" line="3005"/>
-        <location filename="page200.ui" line="3061"/>
-        <location filename="page200.ui" line="3064"/>
-        <location filename="page200.ui" line="3120"/>
-        <location filename="page200.ui" line="3123"/>
-        <location filename="page200.ui" line="3179"/>
-        <location filename="page200.ui" line="3182"/>
-        <location filename="page200.ui" line="3260"/>
-        <location filename="page200.ui" line="3263"/>
-        <location filename="page200.ui" line="3319"/>
-        <location filename="page200.ui" line="3322"/>
-        <location filename="page200.ui" line="3413"/>
-        <location filename="page200.ui" line="3416"/>
-        <location filename="page200.ui" line="3475"/>
-        <location filename="page200.ui" line="3478"/>
-        <location filename="page200.ui" line="3593"/>
-        <location filename="page200.ui" line="3596"/>
-        <location filename="page200.ui" line="3652"/>
-        <location filename="page200.ui" line="3655"/>
-        <location filename="page200.ui" line="3770"/>
-        <location filename="page200.ui" line="3773"/>
-        <location filename="page200.ui" line="3885"/>
-        <location filename="page200.ui" line="3888"/>
-        <location filename="page200.ui" line="3997"/>
-        <location filename="page200.ui" line="4000"/>
-        <location filename="page200.ui" line="4059"/>
-        <location filename="page200.ui" line="4062"/>
-        <location filename="page200.ui" line="4118"/>
-        <location filename="page200.ui" line="4121"/>
-        <location filename="page200.ui" line="4252"/>
-        <location filename="page200.ui" line="4255"/>
-        <location filename="page200.ui" line="4311"/>
-        <location filename="page200.ui" line="4314"/>
-        <location filename="page200.ui" line="4370"/>
-        <location filename="page200.ui" line="4373"/>
-        <location filename="page200.ui" line="4482"/>
-        <location filename="page200.ui" line="4485"/>
-        <location filename="page200.ui" line="4541"/>
-        <location filename="page200.ui" line="4544"/>
-        <location filename="page200.ui" line="4656"/>
-        <location filename="page200.ui" line="4659"/>
-        <location filename="page200.ui" line="4715"/>
-        <location filename="page200.ui" line="4718"/>
-        <location filename="page200.ui" line="4945"/>
-        <location filename="page200.ui" line="4948"/>
-        <location filename="page200.ui" line="5007"/>
-        <location filename="page200.ui" line="5010"/>
-        <location filename="page200.ui" line="5069"/>
-        <location filename="page200.ui" line="5072"/>
-        <location filename="page200.ui" line="5131"/>
-        <location filename="page200.ui" line="5134"/>
-        <location filename="page200.ui" line="5265"/>
-        <location filename="page200.ui" line="5268"/>
-        <location filename="page200.ui" line="5324"/>
-        <location filename="page200.ui" line="5327"/>
-        <location filename="page200.ui" line="5380"/>
-        <location filename="page200.ui" line="5383"/>
-        <location filename="page200.ui" line="5442"/>
-        <location filename="page200.ui" line="5445"/>
-        <location filename="page200.ui" line="5501"/>
-        <location filename="page200.ui" line="5504"/>
-        <location filename="page200.ui" line="5560"/>
-        <location filename="page200.ui" line="5563"/>
-        <location filename="page200.ui" line="5622"/>
-        <location filename="page200.ui" line="5625"/>
+        <location filename="page200.ui" line="126"/>
+        <location filename="page200.ui" line="129"/>
+        <location filename="page200.ui" line="188"/>
+        <location filename="page200.ui" line="191"/>
+        <location filename="page200.ui" line="250"/>
+        <location filename="page200.ui" line="253"/>
+        <location filename="page200.ui" line="312"/>
+        <location filename="page200.ui" line="315"/>
+        <location filename="page200.ui" line="406"/>
+        <location filename="page200.ui" line="409"/>
+        <location filename="page200.ui" line="468"/>
+        <location filename="page200.ui" line="471"/>
+        <location filename="page200.ui" line="527"/>
+        <location filename="page200.ui" line="530"/>
+        <location filename="page200.ui" line="642"/>
+        <location filename="page200.ui" line="645"/>
+        <location filename="page200.ui" line="704"/>
+        <location filename="page200.ui" line="707"/>
+        <location filename="page200.ui" line="788"/>
+        <location filename="page200.ui" line="791"/>
+        <location filename="page200.ui" line="934"/>
+        <location filename="page200.ui" line="937"/>
+        <location filename="page200.ui" line="996"/>
+        <location filename="page200.ui" line="999"/>
+        <location filename="page200.ui" line="1111"/>
+        <location filename="page200.ui" line="1114"/>
+        <location filename="page200.ui" line="1226"/>
+        <location filename="page200.ui" line="1229"/>
+        <location filename="page200.ui" line="1397"/>
+        <location filename="page200.ui" line="1400"/>
+        <location filename="page200.ui" line="1456"/>
+        <location filename="page200.ui" line="1459"/>
+        <location filename="page200.ui" line="1929"/>
+        <location filename="page200.ui" line="1932"/>
+        <location filename="page200.ui" line="1991"/>
+        <location filename="page200.ui" line="1994"/>
+        <location filename="page200.ui" line="2187"/>
+        <location filename="page200.ui" line="2190"/>
+        <location filename="page200.ui" line="2252"/>
+        <location filename="page200.ui" line="2255"/>
+        <location filename="page200.ui" line="2373"/>
+        <location filename="page200.ui" line="2376"/>
+        <location filename="page200.ui" line="2438"/>
+        <location filename="page200.ui" line="2441"/>
+        <location filename="page200.ui" line="2500"/>
+        <location filename="page200.ui" line="2503"/>
+        <location filename="page200.ui" line="2578"/>
+        <location filename="page200.ui" line="2581"/>
+        <location filename="page200.ui" line="2637"/>
+        <location filename="page200.ui" line="2640"/>
+        <location filename="page200.ui" line="2696"/>
+        <location filename="page200.ui" line="2699"/>
+        <location filename="page200.ui" line="2755"/>
+        <location filename="page200.ui" line="2758"/>
+        <location filename="page200.ui" line="2814"/>
+        <location filename="page200.ui" line="2817"/>
+        <location filename="page200.ui" line="2873"/>
+        <location filename="page200.ui" line="2876"/>
+        <location filename="page200.ui" line="2932"/>
+        <location filename="page200.ui" line="2935"/>
+        <location filename="page200.ui" line="2991"/>
+        <location filename="page200.ui" line="2994"/>
+        <location filename="page200.ui" line="3072"/>
+        <location filename="page200.ui" line="3075"/>
+        <location filename="page200.ui" line="3134"/>
+        <location filename="page200.ui" line="3137"/>
+        <location filename="page200.ui" line="3228"/>
+        <location filename="page200.ui" line="3231"/>
+        <location filename="page200.ui" line="3290"/>
+        <location filename="page200.ui" line="3293"/>
+        <location filename="page200.ui" line="3408"/>
+        <location filename="page200.ui" line="3411"/>
+        <location filename="page200.ui" line="3467"/>
+        <location filename="page200.ui" line="3470"/>
+        <location filename="page200.ui" line="3585"/>
+        <location filename="page200.ui" line="3588"/>
+        <location filename="page200.ui" line="3700"/>
+        <location filename="page200.ui" line="3703"/>
+        <location filename="page200.ui" line="3818"/>
+        <location filename="page200.ui" line="3821"/>
+        <location filename="page200.ui" line="3880"/>
+        <location filename="page200.ui" line="3883"/>
+        <location filename="page200.ui" line="4014"/>
+        <location filename="page200.ui" line="4017"/>
+        <location filename="page200.ui" line="4073"/>
+        <location filename="page200.ui" line="4076"/>
+        <location filename="page200.ui" line="4132"/>
+        <location filename="page200.ui" line="4135"/>
+        <location filename="page200.ui" line="4247"/>
+        <location filename="page200.ui" line="4250"/>
+        <location filename="page200.ui" line="4362"/>
+        <location filename="page200.ui" line="4365"/>
+        <location filename="page200.ui" line="4421"/>
+        <location filename="page200.ui" line="4424"/>
+        <location filename="page200.ui" line="4651"/>
+        <location filename="page200.ui" line="4654"/>
+        <location filename="page200.ui" line="4713"/>
+        <location filename="page200.ui" line="4716"/>
+        <location filename="page200.ui" line="4775"/>
+        <location filename="page200.ui" line="4778"/>
+        <location filename="page200.ui" line="4840"/>
+        <location filename="page200.ui" line="4843"/>
+        <location filename="page200.ui" line="4974"/>
+        <location filename="page200.ui" line="4977"/>
+        <location filename="page200.ui" line="5033"/>
+        <location filename="page200.ui" line="5036"/>
+        <location filename="page200.ui" line="5095"/>
+        <location filename="page200.ui" line="5098"/>
+        <location filename="page200.ui" line="5157"/>
+        <location filename="page200.ui" line="5160"/>
+        <location filename="page200.ui" line="5216"/>
+        <location filename="page200.ui" line="5219"/>
+        <location filename="page200.ui" line="5278"/>
+        <location filename="page200.ui" line="5281"/>
+        <location filename="page200.ui" line="5340"/>
+        <location filename="page200.ui" line="5343"/>
+        <location filename="page200.ui" line="5399"/>
+        <location filename="page200.ui" line="5402"/>
+        <location filename="page200.ui" line="5458"/>
+        <location filename="page200.ui" line="5461"/>
+        <location filename="page200.ui" line="5517"/>
+        <location filename="page200.ui" line="5520"/>
         <location filename="page200.ui" line="5684"/>
         <location filename="page200.ui" line="5687"/>
-        <location filename="page200.ui" line="5743"/>
         <location filename="page200.ui" line="5746"/>
-        <location filename="page200.ui" line="5802"/>
-        <location filename="page200.ui" line="5805"/>
-        <location filename="page200.ui" line="5861"/>
-        <location filename="page200.ui" line="5864"/>
-        <location filename="page200.ui" line="6023"/>
-        <location filename="page200.ui" line="6026"/>
-        <location filename="page200.ui" line="6085"/>
-        <location filename="page200.ui" line="6088"/>
-        <location filename="page200.ui" line="6147"/>
-        <location filename="page200.ui" line="6150"/>
-        <location filename="page200.ui" line="6209"/>
-        <location filename="page200.ui" line="6212"/>
-        <location filename="page200.ui" line="6271"/>
-        <location filename="page200.ui" line="6274"/>
-        <location filename="page200.ui" line="6333"/>
-        <location filename="page200.ui" line="6336"/>
-        <location filename="page200.ui" line="6395"/>
-        <location filename="page200.ui" line="6398"/>
-        <location filename="page200.ui" line="6457"/>
-        <location filename="page200.ui" line="6460"/>
-        <location filename="page200.ui" line="6519"/>
-        <location filename="page200.ui" line="6522"/>
-        <location filename="page200.ui" line="6581"/>
-        <location filename="page200.ui" line="6584"/>
-        <location filename="page200.ui" line="6643"/>
-        <location filename="page200.ui" line="6646"/>
-        <location filename="page200.ui" line="6705"/>
-        <location filename="page200.ui" line="6708"/>
-        <location filename="page200.ui" line="6867"/>
-        <location filename="page200.ui" line="6870"/>
-        <location filename="page200.ui" line="6929"/>
-        <location filename="page200.ui" line="6932"/>
-        <location filename="page200.ui" line="6991"/>
-        <location filename="page200.ui" line="6994"/>
-        <location filename="page200.ui" line="7050"/>
-        <location filename="page200.ui" line="7053"/>
-        <location filename="page200.ui" line="7112"/>
-        <location filename="page200.ui" line="7115"/>
-        <location filename="page200.ui" line="7174"/>
-        <location filename="page200.ui" line="7177"/>
-        <location filename="page200.ui" line="7236"/>
-        <location filename="page200.ui" line="7239"/>
-        <location filename="page200.ui" line="7298"/>
-        <location filename="page200.ui" line="7301"/>
-        <location filename="page200.ui" line="7357"/>
-        <location filename="page200.ui" line="7360"/>
-        <location filename="page200.ui" line="7419"/>
-        <location filename="page200.ui" line="7422"/>
-        <location filename="page200.ui" line="7478"/>
-        <location filename="page200.ui" line="7481"/>
-        <location filename="page200.ui" line="7540"/>
-        <location filename="page200.ui" line="7543"/>
-        <location filename="page200.ui" line="7602"/>
-        <location filename="page200.ui" line="7605"/>
-        <location filename="page200.ui" line="7664"/>
-        <location filename="page200.ui" line="7667"/>
-        <location filename="page200.ui" line="7723"/>
-        <location filename="page200.ui" line="7726"/>
-        <location filename="page200.ui" line="7785"/>
-        <location filename="page200.ui" line="7788"/>
-        <location filename="page200.ui" line="7847"/>
-        <location filename="page200.ui" line="7850"/>
-        <location filename="page200.ui" line="7909"/>
-        <location filename="page200.ui" line="7912"/>
-        <location filename="page200.ui" line="7971"/>
-        <location filename="page200.ui" line="7974"/>
-        <location filename="page200.ui" line="8033"/>
-        <location filename="page200.ui" line="8036"/>
-        <location filename="page200.ui" line="8095"/>
-        <location filename="page200.ui" line="8098"/>
-        <location filename="page200.ui" line="8154"/>
-        <location filename="page200.ui" line="8157"/>
-        <location filename="page200.ui" line="8213"/>
-        <location filename="page200.ui" line="8216"/>
-        <location filename="page200.ui" line="8275"/>
-        <location filename="page200.ui" line="8278"/>
-        <location filename="page200.ui" line="8337"/>
-        <location filename="page200.ui" line="8340"/>
-        <location filename="page200.ui" line="8399"/>
-        <location filename="page200.ui" line="8402"/>
+        <location filename="page200.ui" line="5749"/>
+        <location filename="page200.ui" line="5808"/>
+        <location filename="page200.ui" line="5811"/>
+        <location filename="page200.ui" line="5870"/>
+        <location filename="page200.ui" line="5873"/>
+        <location filename="page200.ui" line="5932"/>
+        <location filename="page200.ui" line="5935"/>
+        <location filename="page200.ui" line="5994"/>
+        <location filename="page200.ui" line="5997"/>
+        <location filename="page200.ui" line="6056"/>
+        <location filename="page200.ui" line="6059"/>
+        <location filename="page200.ui" line="6118"/>
+        <location filename="page200.ui" line="6121"/>
+        <location filename="page200.ui" line="6180"/>
+        <location filename="page200.ui" line="6183"/>
+        <location filename="page200.ui" line="6242"/>
+        <location filename="page200.ui" line="6245"/>
+        <location filename="page200.ui" line="6304"/>
+        <location filename="page200.ui" line="6307"/>
+        <location filename="page200.ui" line="6366"/>
+        <location filename="page200.ui" line="6369"/>
+        <location filename="page200.ui" line="6533"/>
+        <location filename="page200.ui" line="6536"/>
+        <location filename="page200.ui" line="6595"/>
+        <location filename="page200.ui" line="6598"/>
+        <location filename="page200.ui" line="6660"/>
+        <location filename="page200.ui" line="6663"/>
+        <location filename="page200.ui" line="6719"/>
+        <location filename="page200.ui" line="6722"/>
+        <location filename="page200.ui" line="6781"/>
+        <location filename="page200.ui" line="6784"/>
+        <location filename="page200.ui" line="6843"/>
+        <location filename="page200.ui" line="6846"/>
+        <location filename="page200.ui" line="6908"/>
+        <location filename="page200.ui" line="6911"/>
+        <location filename="page200.ui" line="6973"/>
+        <location filename="page200.ui" line="6976"/>
+        <location filename="page200.ui" line="7032"/>
+        <location filename="page200.ui" line="7035"/>
+        <location filename="page200.ui" line="7094"/>
+        <location filename="page200.ui" line="7097"/>
+        <location filename="page200.ui" line="7153"/>
+        <location filename="page200.ui" line="7156"/>
+        <location filename="page200.ui" line="7215"/>
+        <location filename="page200.ui" line="7218"/>
+        <location filename="page200.ui" line="7277"/>
+        <location filename="page200.ui" line="7280"/>
+        <location filename="page200.ui" line="7339"/>
+        <location filename="page200.ui" line="7342"/>
+        <location filename="page200.ui" line="7398"/>
+        <location filename="page200.ui" line="7401"/>
+        <location filename="page200.ui" line="7460"/>
+        <location filename="page200.ui" line="7463"/>
+        <location filename="page200.ui" line="7522"/>
+        <location filename="page200.ui" line="7525"/>
+        <location filename="page200.ui" line="7587"/>
+        <location filename="page200.ui" line="7590"/>
+        <location filename="page200.ui" line="7649"/>
+        <location filename="page200.ui" line="7652"/>
+        <location filename="page200.ui" line="7714"/>
+        <location filename="page200.ui" line="7717"/>
+        <location filename="page200.ui" line="7776"/>
+        <location filename="page200.ui" line="7779"/>
+        <location filename="page200.ui" line="7838"/>
+        <location filename="page200.ui" line="7841"/>
+        <location filename="page200.ui" line="7897"/>
+        <location filename="page200.ui" line="7900"/>
+        <location filename="page200.ui" line="7959"/>
+        <location filename="page200.ui" line="7962"/>
+        <location filename="page200.ui" line="8021"/>
+        <location filename="page200.ui" line="8024"/>
+        <location filename="page200.ui" line="8083"/>
+        <location filename="page200.ui" line="8086"/>
+        <location filename="page200.ui" line="8142"/>
+        <location filename="page200.ui" line="8145"/>
+        <location filename="page200.ui" line="8204"/>
+        <location filename="page200.ui" line="8207"/>
+        <location filename="page200.ui" line="8266"/>
+        <location filename="page200.ui" line="8269"/>
+        <location filename="page200.ui" line="8331"/>
+        <location filename="page200.ui" line="8334"/>
+        <location filename="page200.ui" line="8393"/>
+        <location filename="page200.ui" line="8396"/>
         <location filename="page200.ui" line="8458"/>
         <location filename="page200.ui" line="8461"/>
         <location filename="page200.ui" line="8520"/>
         <location filename="page200.ui" line="8523"/>
         <location filename="page200.ui" line="8582"/>
         <location filename="page200.ui" line="8585"/>
+        <location filename="page200.ui" line="8641"/>
         <location filename="page200.ui" line="8644"/>
-        <location filename="page200.ui" line="8647"/>
+        <location filename="page200.ui" line="8703"/>
         <location filename="page200.ui" line="8706"/>
-        <location filename="page200.ui" line="8709"/>
+        <location filename="page200.ui" line="8765"/>
         <location filename="page200.ui" line="8768"/>
-        <location filename="page200.ui" line="8771"/>
+        <location filename="page200.ui" line="8827"/>
         <location filename="page200.ui" line="8830"/>
-        <location filename="page200.ui" line="8833"/>
+        <location filename="page200.ui" line="8886"/>
         <location filename="page200.ui" line="8889"/>
-        <location filename="page200.ui" line="8892"/>
         <location filename="page200.ui" line="8948"/>
         <location filename="page200.ui" line="8951"/>
         <location filename="page200.ui" line="9010"/>
         <location filename="page200.ui" line="9013"/>
-        <location filename="page200.ui" line="9072"/>
         <location filename="page200.ui" line="9075"/>
-        <location filename="page200.ui" line="9134"/>
+        <location filename="page200.ui" line="9078"/>
         <location filename="page200.ui" line="9137"/>
-        <location filename="page200.ui" line="9193"/>
-        <location filename="page200.ui" line="9196"/>
-        <location filename="page200.ui" line="9255"/>
-        <location filename="page200.ui" line="9258"/>
-        <location filename="page200.ui" line="9317"/>
-        <location filename="page200.ui" line="9320"/>
-        <location filename="page200.ui" line="9379"/>
-        <location filename="page200.ui" line="9382"/>
-        <location filename="page200.ui" line="9441"/>
-        <location filename="page200.ui" line="9444"/>
-        <location filename="page200.ui" line="9503"/>
+        <location filename="page200.ui" line="9140"/>
+        <location filename="page200.ui" line="9202"/>
+        <location filename="page200.ui" line="9205"/>
+        <location filename="page200.ui" line="9264"/>
+        <location filename="page200.ui" line="9267"/>
+        <location filename="page200.ui" line="9326"/>
+        <location filename="page200.ui" line="9329"/>
+        <location filename="page200.ui" line="9385"/>
+        <location filename="page200.ui" line="9388"/>
+        <location filename="page200.ui" line="9447"/>
+        <location filename="page200.ui" line="9450"/>
+        <location filename="page200.ui" line="9488"/>
         <location filename="page200.ui" line="9506"/>
-        <location filename="page200.ui" line="9565"/>
-        <location filename="page200.ui" line="9568"/>
-        <location filename="page200.ui" line="9624"/>
-        <location filename="page200.ui" line="9627"/>
-        <location filename="page200.ui" line="9683"/>
-        <location filename="page200.ui" line="9686"/>
-        <location filename="page200.ui" line="9745"/>
-        <location filename="page200.ui" line="9748"/>
-        <location filename="page200.ui" line="9826"/>
-        <location filename="page200.ui" line="9829"/>
+        <location filename="page200.ui" line="9509"/>
+        <location filename="page200.ui" line="10682"/>
+        <location filename="page200.ui" line="10685"/>
+        <location filename="page200.ui" line="10738"/>
+        <location filename="page200.ui" line="10741"/>
+        <location filename="page200.ui" line="10794"/>
+        <location filename="page200.ui" line="10797"/>
+        <location filename="page200.ui" line="10850"/>
+        <location filename="page200.ui" line="10853"/>
+        <location filename="page200.ui" line="10906"/>
+        <location filename="page200.ui" line="10909"/>
+        <location filename="page200.ui" line="10962"/>
+        <location filename="page200.ui" line="10965"/>
+        <location filename="page200.ui" line="11018"/>
+        <location filename="page200.ui" line="11021"/>
+        <location filename="page200.ui" line="11074"/>
+        <location filename="page200.ui" line="11077"/>
+        <location filename="page200.ui" line="11121"/>
         <source>0</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="page200.ui" line="111"/>
-        <source>RTU3</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page200.ui" line="136"/>
-        <location filename="page200.ui" line="142"/>
+        <location filename="page200.ui" line="117"/>
         <source>latency_11_ms</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="195"/>
-        <location filename="page200.ui" line="201"/>
+        <location filename="page200.ui" line="170"/>
+        <location filename="page200.ui" line="176"/>
         <source>errors_11</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="257"/>
-        <location filename="page200.ui" line="263"/>
+        <location filename="page200.ui" line="235"/>
+        <location filename="page200.ui" line="241"/>
         <source>Addr_node02</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="316"/>
-        <location filename="page200.ui" line="322"/>
+        <location filename="page200.ui" line="294"/>
+        <location filename="page200.ui" line="300"/>
         <source>min_latency_08_m</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="375"/>
+        <location filename="page200.ui" line="353"/>
         <source>ATCM QTime</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="378"/>
+        <location filename="page200.ui" line="356"/>
         <source>ATCMtime widget</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="413"/>
-        <location filename="page200.ui" line="419"/>
+        <location filename="page200.ui" line="391"/>
+        <location filename="page200.ui" line="397"/>
         <source>latency_09_ms</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="472"/>
-        <location filename="page200.ui" line="478"/>
+        <location filename="page200.ui" line="450"/>
+        <location filename="page200.ui" line="456"/>
         <source>min_latency_05_m</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="534"/>
-        <location filename="page200.ui" line="540"/>
+        <location filename="page200.ui" line="512"/>
+        <location filename="page200.ui" line="518"/>
         <source>latency_01_ms</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="590"/>
-        <location filename="page200.ui" line="596"/>
+        <location filename="page200.ui" line="568"/>
+        <location filename="page200.ui" line="574"/>
         <source>RTU3_STATUS</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="593"/>
-        <location filename="page200.ui" line="910"/>
-        <location filename="page200.ui" line="1140"/>
-        <location filename="page200.ui" line="1311"/>
-        <location filename="page200.ui" line="1426"/>
-        <location filename="page200.ui" line="1482"/>
-        <location filename="page200.ui" line="1675"/>
-        <location filename="page200.ui" line="1731"/>
-        <location filename="page200.ui" line="1787"/>
-        <location filename="page200.ui" line="1843"/>
-        <location filename="page200.ui" line="1899"/>
-        <location filename="page200.ui" line="1955"/>
-        <location filename="page200.ui" line="2011"/>
-        <location filename="page200.ui" line="2191"/>
-        <location filename="page200.ui" line="2266"/>
-        <location filename="page200.ui" line="2446"/>
-        <location filename="page200.ui" line="3522"/>
-        <location filename="page200.ui" line="3699"/>
-        <location filename="page200.ui" line="3814"/>
-        <location filename="page200.ui" line="3932"/>
-        <location filename="page200.ui" line="4184"/>
-        <location filename="page200.ui" line="4417"/>
-        <location filename="page200.ui" line="4588"/>
-        <location filename="page200.ui" line="4762"/>
-        <location filename="page200.ui" line="4818"/>
-        <location filename="page200.ui" line="4874"/>
+        <location filename="page200.ui" line="571"/>
+        <location filename="page200.ui" line="835"/>
+        <location filename="page200.ui" line="1043"/>
+        <location filename="page200.ui" line="1158"/>
+        <location filename="page200.ui" line="1273"/>
+        <location filename="page200.ui" line="1329"/>
+        <location filename="page200.ui" line="1522"/>
+        <location filename="page200.ui" line="1578"/>
+        <location filename="page200.ui" line="1634"/>
+        <location filename="page200.ui" line="1690"/>
+        <location filename="page200.ui" line="1746"/>
+        <location filename="page200.ui" line="1802"/>
+        <location filename="page200.ui" line="1858"/>
+        <location filename="page200.ui" line="2041"/>
+        <location filename="page200.ui" line="2116"/>
+        <location filename="page200.ui" line="2302"/>
+        <location filename="page200.ui" line="3337"/>
+        <location filename="page200.ui" line="3514"/>
+        <location filename="page200.ui" line="3629"/>
+        <location filename="page200.ui" line="3747"/>
+        <location filename="page200.ui" line="3946"/>
+        <location filename="page200.ui" line="4179"/>
+        <location filename="page200.ui" line="4294"/>
+        <location filename="page200.ui" line="4468"/>
+        <location filename="page200.ui" line="4524"/>
+        <location filename="page200.ui" line="4580"/>
         <source>ATCMcombobox widget</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="624"/>
-        <location filename="page200.ui" line="3845"/>
+        <location filename="page200.ui" line="602"/>
+        <location filename="page200.ui" line="3660"/>
         <source>1;NOT_CONNECTED;2;CONNECTED;3;CONNECTED_WITH_ERRORS;4;DEVICE_BLACKLIST;5;NO_HOPE;0;ZERO</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="643"/>
-        <location filename="page200.ui" line="649"/>
-        <source>RTU3_READS</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page200.ui" line="652"/>
-        <location filename="page200.ui" line="5374"/>
-        <source>r: </source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page200.ui" line="702"/>
-        <location filename="page200.ui" line="708"/>
+        <location filename="page200.ui" line="624"/>
+        <location filename="page200.ui" line="630"/>
         <source>errors_05</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="764"/>
-        <location filename="page200.ui" line="770"/>
+        <location filename="page200.ui" line="689"/>
+        <location filename="page200.ui" line="695"/>
         <source>Addr_node11</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="823"/>
+        <location filename="page200.ui" line="748"/>
         <source>RTU_test</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="848"/>
-        <location filename="page200.ui" line="854"/>
+        <location filename="page200.ui" line="773"/>
+        <location filename="page200.ui" line="779"/>
         <source>latency_04_ms</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="907"/>
-        <location filename="page200.ui" line="913"/>
+        <location filename="page200.ui" line="832"/>
+        <location filename="page200.ui" line="838"/>
         <source>NODE_16_STATUS</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="941"/>
-        <location filename="page200.ui" line="1171"/>
-        <location filename="page200.ui" line="1342"/>
-        <location filename="page200.ui" line="1457"/>
-        <location filename="page200.ui" line="1513"/>
-        <location filename="page200.ui" line="1706"/>
-        <location filename="page200.ui" line="1762"/>
-        <location filename="page200.ui" line="1818"/>
-        <location filename="page200.ui" line="1874"/>
-        <location filename="page200.ui" line="1930"/>
-        <location filename="page200.ui" line="1986"/>
-        <location filename="page200.ui" line="2042"/>
-        <location filename="page200.ui" line="2222"/>
-        <location filename="page200.ui" line="2297"/>
-        <location filename="page200.ui" line="2477"/>
-        <location filename="page200.ui" line="3553"/>
-        <location filename="page200.ui" line="3730"/>
-        <location filename="page200.ui" line="3963"/>
-        <location filename="page200.ui" line="4215"/>
-        <location filename="page200.ui" line="4448"/>
-        <location filename="page200.ui" line="4619"/>
-        <location filename="page200.ui" line="4793"/>
-        <location filename="page200.ui" line="4849"/>
-        <location filename="page200.ui" line="4905"/>
+        <location filename="page200.ui" line="866"/>
+        <location filename="page200.ui" line="1074"/>
+        <location filename="page200.ui" line="1189"/>
+        <location filename="page200.ui" line="1304"/>
+        <location filename="page200.ui" line="1360"/>
+        <location filename="page200.ui" line="1553"/>
+        <location filename="page200.ui" line="1609"/>
+        <location filename="page200.ui" line="1665"/>
+        <location filename="page200.ui" line="1721"/>
+        <location filename="page200.ui" line="1777"/>
+        <location filename="page200.ui" line="1833"/>
+        <location filename="page200.ui" line="1889"/>
+        <location filename="page200.ui" line="2072"/>
+        <location filename="page200.ui" line="2147"/>
+        <location filename="page200.ui" line="2333"/>
+        <location filename="page200.ui" line="3368"/>
+        <location filename="page200.ui" line="3545"/>
+        <location filename="page200.ui" line="3778"/>
+        <location filename="page200.ui" line="3977"/>
+        <location filename="page200.ui" line="4210"/>
+        <location filename="page200.ui" line="4325"/>
+        <location filename="page200.ui" line="4499"/>
+        <location filename="page200.ui" line="4555"/>
+        <location filename="page200.ui" line="4611"/>
         <source>1;NODE_OK;2;TIMEOUT;3;BLACKLIST;0;NO_NODE</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="991"/>
-        <location filename="page200.ui" line="997"/>
+        <location filename="page200.ui" line="916"/>
+        <location filename="page200.ui" line="922"/>
         <source>errors_02</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="1053"/>
-        <location filename="page200.ui" line="1059"/>
+        <location filename="page200.ui" line="981"/>
+        <location filename="page200.ui" line="987"/>
         <source>Addr_node13</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="1112"/>
-        <source>RTU0</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page200.ui" line="1137"/>
-        <location filename="page200.ui" line="1143"/>
+        <location filename="page200.ui" line="1040"/>
+        <location filename="page200.ui" line="1046"/>
         <source>NODE_19_STATUS</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="1193"/>
-        <location filename="page200.ui" line="1199"/>
+        <location filename="page200.ui" line="1096"/>
+        <location filename="page200.ui" line="1102"/>
         <source>Addr_node19</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="1249"/>
-        <location filename="page200.ui" line="1255"/>
+        <location filename="page200.ui" line="11003"/>
+        <location filename="page200.ui" line="11009"/>
         <source>RTU3_TIMEOUTS</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="1258"/>
-        <location filename="page200.ui" line="3991"/>
+        <location filename="page200.ui" line="10956"/>
+        <location filename="page200.ui" line="11012"/>
         <source>to:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="1308"/>
-        <location filename="page200.ui" line="1314"/>
+        <location filename="page200.ui" line="1155"/>
+        <location filename="page200.ui" line="1161"/>
         <source>NODE_24_STATUS</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="1364"/>
-        <location filename="page200.ui" line="1370"/>
+        <location filename="page200.ui" line="1211"/>
+        <location filename="page200.ui" line="1217"/>
         <source>Addr_node21</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="1423"/>
-        <location filename="page200.ui" line="1429"/>
+        <location filename="page200.ui" line="1270"/>
+        <location filename="page200.ui" line="1276"/>
         <source>NODE_21_STATUS</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="1479"/>
-        <location filename="page200.ui" line="1485"/>
+        <location filename="page200.ui" line="1326"/>
+        <location filename="page200.ui" line="1332"/>
         <source>NODE_12_STATUS</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="1535"/>
-        <location filename="page200.ui" line="1541"/>
+        <location filename="page200.ui" line="1382"/>
+        <location filename="page200.ui" line="1388"/>
         <source>Addr_node10</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="1594"/>
-        <location filename="page200.ui" line="1600"/>
+        <location filename="page200.ui" line="1441"/>
+        <location filename="page200.ui" line="1447"/>
         <source>Addr_node05</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="1672"/>
-        <location filename="page200.ui" line="1678"/>
+        <location filename="page200.ui" line="1519"/>
+        <location filename="page200.ui" line="1525"/>
         <source>NODE_10_STATUS</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="1728"/>
-        <location filename="page200.ui" line="1734"/>
+        <location filename="page200.ui" line="1575"/>
+        <location filename="page200.ui" line="1581"/>
         <source>NODE_08_STATUS</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="1784"/>
-        <location filename="page200.ui" line="1790"/>
+        <location filename="page200.ui" line="1631"/>
+        <location filename="page200.ui" line="1637"/>
         <source>NODE_06_STATUS</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="1840"/>
-        <location filename="page200.ui" line="1846"/>
+        <location filename="page200.ui" line="1687"/>
+        <location filename="page200.ui" line="1693"/>
         <source>NODE_13_STATUS</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="1896"/>
-        <location filename="page200.ui" line="1902"/>
+        <location filename="page200.ui" line="1743"/>
+        <location filename="page200.ui" line="1749"/>
         <source>NODE_11_STATUS</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="1952"/>
-        <location filename="page200.ui" line="1958"/>
+        <location filename="page200.ui" line="1799"/>
+        <location filename="page200.ui" line="1805"/>
         <source>NODE_04_STATUS</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="2008"/>
-        <location filename="page200.ui" line="2014"/>
+        <location filename="page200.ui" line="1855"/>
+        <location filename="page200.ui" line="1861"/>
         <source>NODE_22_STATUS</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="2064"/>
-        <location filename="page200.ui" line="2070"/>
+        <location filename="page200.ui" line="1911"/>
+        <location filename="page200.ui" line="1917"/>
         <source>min_latency_06_m</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="2126"/>
-        <location filename="page200.ui" line="2132"/>
+        <location filename="page200.ui" line="1973"/>
+        <location filename="page200.ui" line="1979"/>
         <source>errors_10</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="2188"/>
-        <location filename="page200.ui" line="2194"/>
+        <location filename="page200.ui" line="2038"/>
+        <location filename="page200.ui" line="2044"/>
         <source>NODE_15_STATUS</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="2263"/>
-        <location filename="page200.ui" line="2269"/>
+        <location filename="page200.ui" line="2113"/>
+        <location filename="page200.ui" line="2119"/>
         <source>NODE_18_STATUS</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="2319"/>
-        <location filename="page200.ui" line="2325"/>
+        <location filename="page200.ui" line="2169"/>
+        <location filename="page200.ui" line="2175"/>
         <source>errors_07</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="2443"/>
-        <location filename="page200.ui" line="2449"/>
+        <location filename="page200.ui" line="2299"/>
+        <location filename="page200.ui" line="2305"/>
         <source>NODE_20_STATUS</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="2499"/>
-        <location filename="page200.ui" line="2505"/>
+        <location filename="page200.ui" line="2355"/>
+        <location filename="page200.ui" line="2361"/>
         <source>errors_08</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="2561"/>
-        <location filename="page200.ui" line="2567"/>
+        <location filename="page200.ui" line="2420"/>
+        <location filename="page200.ui" line="2426"/>
         <source>errors_03</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="2623"/>
-        <location filename="page200.ui" line="2629"/>
+        <location filename="page200.ui" line="2485"/>
+        <location filename="page200.ui" line="2491"/>
         <source>latency_03_ms</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="2701"/>
-        <location filename="page200.ui" line="2707"/>
+        <location filename="page200.ui" line="2563"/>
+        <location filename="page200.ui" line="2569"/>
         <source>latency_05_ms</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="2760"/>
-        <location filename="page200.ui" line="2766"/>
+        <location filename="page200.ui" line="2622"/>
+        <location filename="page200.ui" line="2628"/>
         <source>Addr_node04</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="2816"/>
-        <location filename="page200.ui" line="2822"/>
-        <source>RTU0_WRITES</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page200.ui" line="2825"/>
-        <location filename="page200.ui" line="4476"/>
-        <source>w: </source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page200.ui" line="2875"/>
-        <location filename="page200.ui" line="2881"/>
+        <location filename="page200.ui" line="2681"/>
+        <location filename="page200.ui" line="2687"/>
         <source>Addr_node06</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="2931"/>
-        <location filename="page200.ui" line="2937"/>
+        <location filename="page200.ui" line="2737"/>
+        <source>86400.00</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="2740"/>
+        <location filename="page200.ui" line="2746"/>
         <source>PLC_time</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="2987"/>
-        <location filename="page200.ui" line="2993"/>
+        <location filename="page200.ui" line="2749"/>
+        <source> s</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="2799"/>
+        <location filename="page200.ui" line="2805"/>
         <source>Addr_node24</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="3046"/>
-        <location filename="page200.ui" line="3052"/>
+        <location filename="page200.ui" line="2858"/>
+        <location filename="page200.ui" line="2864"/>
         <source>Addr_node16</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="3105"/>
-        <location filename="page200.ui" line="3111"/>
+        <location filename="page200.ui" line="2917"/>
+        <location filename="page200.ui" line="2923"/>
         <source>Addr_node12</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="3164"/>
-        <location filename="page200.ui" line="3170"/>
+        <location filename="page200.ui" line="2976"/>
+        <location filename="page200.ui" line="2982"/>
         <source>Addr_node08</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="3242"/>
-        <location filename="page200.ui" line="3248"/>
+        <location filename="page200.ui" line="3054"/>
+        <location filename="page200.ui" line="3060"/>
         <source>errors_06</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="3304"/>
-        <location filename="page200.ui" line="3310"/>
+        <location filename="page200.ui" line="3119"/>
+        <location filename="page200.ui" line="3125"/>
         <source>latency_06_ms</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="3360"/>
+        <location filename="page200.ui" line="3175"/>
         <source>ATCM QDate</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="3363"/>
+        <location filename="page200.ui" line="3178"/>
         <source>ATCMdate widget</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="3398"/>
-        <location filename="page200.ui" line="3404"/>
+        <location filename="page200.ui" line="3213"/>
+        <location filename="page200.ui" line="3219"/>
         <source>latency_10_ms</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="3457"/>
-        <location filename="page200.ui" line="3463"/>
+        <location filename="page200.ui" line="3272"/>
+        <location filename="page200.ui" line="3278"/>
         <source>min_latency_12_m</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="3519"/>
-        <location filename="page200.ui" line="3525"/>
+        <location filename="page200.ui" line="3334"/>
+        <location filename="page200.ui" line="3340"/>
         <source>NODE_01_STATUS</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="3575"/>
-        <location filename="page200.ui" line="3581"/>
+        <location filename="page200.ui" line="3390"/>
+        <location filename="page200.ui" line="3396"/>
         <source>min_latency_09_m</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="3637"/>
-        <location filename="page200.ui" line="3643"/>
+        <location filename="page200.ui" line="3452"/>
+        <location filename="page200.ui" line="3458"/>
         <source>latency_07_ms</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="3696"/>
-        <location filename="page200.ui" line="3702"/>
+        <location filename="page200.ui" line="3511"/>
+        <location filename="page200.ui" line="3517"/>
         <source>NODE_03_STATUS</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="3752"/>
-        <location filename="page200.ui" line="3758"/>
+        <location filename="page200.ui" line="3567"/>
+        <location filename="page200.ui" line="3573"/>
         <source>min_latency_01_m</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="3811"/>
-        <location filename="page200.ui" line="3817"/>
+        <location filename="page200.ui" line="3626"/>
+        <location filename="page200.ui" line="3632"/>
         <source>RTU0_STATUS</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="3867"/>
-        <location filename="page200.ui" line="3873"/>
+        <location filename="page200.ui" line="3682"/>
+        <location filename="page200.ui" line="3688"/>
         <source>min_latency_03_m</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="3929"/>
-        <location filename="page200.ui" line="3935"/>
+        <location filename="page200.ui" line="3744"/>
+        <location filename="page200.ui" line="3750"/>
         <source>NODE_02_STATUS</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="3982"/>
-        <location filename="page200.ui" line="3988"/>
+        <location filename="page200.ui" line="10645"/>
+        <source>3</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="10667"/>
+        <location filename="page200.ui" line="10673"/>
+        <source>RTU0_READ_QUEUE</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="10676"/>
+        <location filename="page200.ui" line="11068"/>
+        <source>rq: </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="10723"/>
+        <location filename="page200.ui" line="10729"/>
+        <source>RTU0_WRITE_QUEUE</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="10732"/>
+        <location filename="page200.ui" line="10844"/>
+        <source>wq:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="10779"/>
+        <location filename="page200.ui" line="10785"/>
+        <source>RTU0_COMM_ERRORS</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="10788"/>
+        <location filename="page200.ui" line="10900"/>
+        <source>er: </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="10835"/>
+        <location filename="page200.ui" line="10841"/>
+        <source>RTU3_WRITE_QUEUE</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="10891"/>
+        <location filename="page200.ui" line="10897"/>
+        <source>RTU3_COMM_ERRORS</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="10947"/>
+        <location filename="page200.ui" line="10953"/>
         <source>RTU0_TIMEOUTS</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="4041"/>
-        <location filename="page200.ui" line="4047"/>
+        <location filename="page200.ui" line="3800"/>
+        <location filename="page200.ui" line="3806"/>
         <source>errors_04</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="4103"/>
-        <location filename="page200.ui" line="4109"/>
+        <location filename="page200.ui" line="3865"/>
+        <location filename="page200.ui" line="3871"/>
         <source>Addr_node07</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="4181"/>
-        <location filename="page200.ui" line="4187"/>
+        <location filename="page200.ui" line="3943"/>
+        <location filename="page200.ui" line="3949"/>
         <source>NODE_17_STATUS</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="4234"/>
+        <location filename="page200.ui" line="3996"/>
         <source>1.0xx</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="4237"/>
-        <location filename="page200.ui" line="4243"/>
+        <location filename="page200.ui" line="3999"/>
+        <location filename="page200.ui" line="4005"/>
         <source>PLC_Version</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="4246"/>
+        <location filename="page200.ui" line="4008"/>
         <source>Eng v.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="4296"/>
-        <location filename="page200.ui" line="4302"/>
+        <location filename="page200.ui" line="4058"/>
+        <location filename="page200.ui" line="4064"/>
         <source>Addr_node17</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="4355"/>
-        <location filename="page200.ui" line="4361"/>
+        <location filename="page200.ui" line="4117"/>
+        <location filename="page200.ui" line="4123"/>
         <source>Addr_node09</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="4414"/>
-        <location filename="page200.ui" line="4420"/>
+        <location filename="page200.ui" line="4176"/>
+        <location filename="page200.ui" line="4182"/>
         <source>NODE_14_STATUS</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="4467"/>
-        <location filename="page200.ui" line="4473"/>
-        <source>RTU3_WRITES</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page200.ui" line="4526"/>
-        <location filename="page200.ui" line="4532"/>
+        <location filename="page200.ui" line="4232"/>
+        <location filename="page200.ui" line="4238"/>
         <source>Addr_node20</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="4585"/>
-        <location filename="page200.ui" line="4591"/>
+        <location filename="page200.ui" line="4291"/>
+        <location filename="page200.ui" line="4297"/>
         <source>NODE_23_STATUS</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="4641"/>
-        <location filename="page200.ui" line="4647"/>
+        <location filename="page200.ui" line="4347"/>
+        <location filename="page200.ui" line="4353"/>
         <source>Addr_node03</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="4700"/>
-        <location filename="page200.ui" line="4706"/>
+        <location filename="page200.ui" line="4406"/>
+        <location filename="page200.ui" line="4412"/>
         <source>latency_12_ms</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="4759"/>
-        <location filename="page200.ui" line="4765"/>
+        <location filename="page200.ui" line="4465"/>
+        <location filename="page200.ui" line="4471"/>
         <source>NODE_05_STATUS</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="4815"/>
-        <location filename="page200.ui" line="4821"/>
+        <location filename="page200.ui" line="4521"/>
+        <location filename="page200.ui" line="4527"/>
         <source>NODE_07_STATUS</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="4871"/>
-        <location filename="page200.ui" line="4877"/>
+        <location filename="page200.ui" line="4577"/>
+        <location filename="page200.ui" line="4583"/>
         <source>NODE_09_STATUS</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="4927"/>
-        <location filename="page200.ui" line="4933"/>
+        <location filename="page200.ui" line="4633"/>
+        <location filename="page200.ui" line="4639"/>
         <source>min_latency_11_m</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="4989"/>
-        <location filename="page200.ui" line="4995"/>
+        <location filename="page200.ui" line="4695"/>
+        <location filename="page200.ui" line="4701"/>
         <source>min_latency_07_m</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="5051"/>
-        <location filename="page200.ui" line="5057"/>
+        <location filename="page200.ui" line="4757"/>
+        <location filename="page200.ui" line="4763"/>
         <source>errors_09</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="5113"/>
-        <location filename="page200.ui" line="5119"/>
+        <location filename="page200.ui" line="4822"/>
+        <location filename="page200.ui" line="4828"/>
         <source>min_latency_10_m</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="5175"/>
+        <location filename="page200.ui" line="4884"/>
         <source>ATCMbutton widget</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="5178"/>
-        <location filename="page200.ui" line="5200"/>
+        <location filename="page200.ui" line="4887"/>
+        <location filename="page200.ui" line="4909"/>
         <source>menu</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="5197"/>
+        <location filename="page200.ui" line="4906"/>
         <source>TPAC1008_02_AB</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="5250"/>
-        <location filename="page200.ui" line="5256"/>
+        <location filename="page200.ui" line="4959"/>
+        <location filename="page200.ui" line="4965"/>
         <source>latency_08_ms</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="5309"/>
-        <location filename="page200.ui" line="5315"/>
+        <location filename="page200.ui" line="5018"/>
+        <location filename="page200.ui" line="5024"/>
         <source>latency_02_ms</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="5365"/>
-        <location filename="page200.ui" line="5371"/>
-        <source>RTU0_READS</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page200.ui" line="5424"/>
-        <location filename="page200.ui" line="5430"/>
+        <location filename="page200.ui" line="5077"/>
+        <location filename="page200.ui" line="5083"/>
         <source>errors_01</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="5486"/>
-        <location filename="page200.ui" line="5492"/>
+        <location filename="page200.ui" line="5142"/>
+        <location filename="page200.ui" line="5148"/>
         <source>Addr_node18</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="5545"/>
-        <location filename="page200.ui" line="5551"/>
+        <location filename="page200.ui" line="5201"/>
+        <location filename="page200.ui" line="5207"/>
         <source>Addr_node22</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="5604"/>
-        <location filename="page200.ui" line="5610"/>
+        <location filename="page200.ui" line="5260"/>
+        <location filename="page200.ui" line="5266"/>
         <source>min_latency_04_m</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="5322"/>
+        <location filename="page200.ui" line="5328"/>
+        <source>min_latency_02_m</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="5384"/>
+        <location filename="page200.ui" line="5390"/>
+        <source>Addr_node23</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="5443"/>
+        <location filename="page200.ui" line="5449"/>
+        <source>Addr_node14</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="5502"/>
+        <location filename="page200.ui" line="5508"/>
+        <source>Addr_node15</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="9500"/>
+        <source>errors_can=</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="9541"/>
+        <location filename="page200.ui" line="9553"/>
+        <source>DigIn_7_node16</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="9544"/>
+        <location filename="page200.ui" line="9586"/>
+        <location filename="page200.ui" line="9628"/>
+        <location filename="page200.ui" line="9670"/>
+        <location filename="page200.ui" line="9712"/>
+        <location filename="page200.ui" line="9754"/>
+        <location filename="page200.ui" line="9796"/>
+        <location filename="page200.ui" line="9838"/>
+        <location filename="page200.ui" line="9880"/>
+        <location filename="page200.ui" line="9922"/>
+        <location filename="page200.ui" line="9964"/>
+        <location filename="page200.ui" line="10006"/>
+        <location filename="page200.ui" line="10048"/>
+        <location filename="page200.ui" line="10090"/>
+        <location filename="page200.ui" line="10132"/>
+        <location filename="page200.ui" line="10174"/>
+        <location filename="page200.ui" line="10216"/>
+        <location filename="page200.ui" line="10258"/>
+        <location filename="page200.ui" line="10300"/>
+        <location filename="page200.ui" line="10342"/>
+        <location filename="page200.ui" line="10384"/>
+        <location filename="page200.ui" line="10426"/>
+        <location filename="page200.ui" line="10468"/>
+        <location filename="page200.ui" line="10510"/>
+        <location filename="page200.ui" line="10552"/>
+        <location filename="page200.ui" line="10594"/>
+        <source>ATCMled widget</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="9583"/>
+        <location filename="page200.ui" line="9595"/>
+        <source>DigIn_7_node21</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="9625"/>
+        <location filename="page200.ui" line="9637"/>
+        <source>DigIn_7_node09</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="9667"/>
+        <location filename="page200.ui" line="9679"/>
+        <source>DigIn_7_node20</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="9709"/>
+        <location filename="page200.ui" line="9721"/>
+        <source>DigIn_7_node19</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="9751"/>
+        <location filename="page200.ui" line="9763"/>
+        <source>DigIn_7_node04</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="9793"/>
+        <location filename="page200.ui" line="9805"/>
+        <source>DigIn_7_node10</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="9835"/>
+        <location filename="page200.ui" line="9847"/>
+        <source>DigIn_7_node22</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="9877"/>
+        <location filename="page200.ui" line="9889"/>
+        <source>DigIn_7_node17</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="9919"/>
+        <location filename="page200.ui" line="9931"/>
+        <source>DigIn_7_node11</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="9961"/>
+        <location filename="page200.ui" line="9973"/>
+        <source>DigIn_7_node18</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="10003"/>
+        <location filename="page200.ui" line="10015"/>
+        <source>DigIn_7_node06</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="10045"/>
+        <location filename="page200.ui" line="10057"/>
+        <source>DigIn_7_node05</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="10087"/>
+        <location filename="page200.ui" line="10099"/>
+        <source>DigIn_7_node14</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="10129"/>
+        <location filename="page200.ui" line="10141"/>
+        <source>DigIn_7_node12</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="10171"/>
+        <location filename="page200.ui" line="10183"/>
+        <source>DigIn_7_node03</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="10213"/>
+        <location filename="page200.ui" line="10225"/>
+        <source>DigIn_7_node15</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="10255"/>
+        <location filename="page200.ui" line="10267"/>
+        <source>DigIn_7_node07</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="10297"/>
+        <location filename="page200.ui" line="10309"/>
+        <source>DigIn_7_node13</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="10339"/>
+        <location filename="page200.ui" line="10351"/>
+        <source>DigIn_7_node02</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="10381"/>
+        <location filename="page200.ui" line="10393"/>
+        <source>DigIn_7_node23</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="10423"/>
+        <location filename="page200.ui" line="10435"/>
+        <source>DigIn_7_node08</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="10465"/>
+        <location filename="page200.ui" line="10477"/>
+        <source>DigIn_7_node01</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="10507"/>
+        <location filename="page200.ui" line="10519"/>
+        <source>DigIn_7_node24</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="10549"/>
+        <location filename="page200.ui" line="10561"/>
+        <location filename="page200.ui" line="10591"/>
+        <location filename="page200.ui" line="10603"/>
+        <source>PLC_DigOut_1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="page200.ui" line="5666"/>
         <location filename="page200.ui" line="5672"/>
-        <source>min_latency_02_m</source>
+        <source>max_latency_01_m</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="page200.ui" line="5728"/>
         <location filename="page200.ui" line="5734"/>
-        <source>Addr_node23</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page200.ui" line="5787"/>
-        <location filename="page200.ui" line="5793"/>
-        <source>Addr_node14</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page200.ui" line="5846"/>
-        <location filename="page200.ui" line="5852"/>
-        <source>Addr_node15</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page200.ui" line="5905"/>
-        <location filename="page200.ui" line="6774"/>
-        <source>Latency_ms</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page200.ui" line="5930"/>
-        <location filename="page200.ui" line="6749"/>
-        <source>Errori</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page200.ui" line="5955"/>
-        <location filename="page200.ui" line="6824"/>
-        <source>Min_Lat_ms</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page200.ui" line="5980"/>
-        <location filename="page200.ui" line="6799"/>
-        <source>Max_Lat_ms</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page200.ui" line="6005"/>
-        <location filename="page200.ui" line="6011"/>
-        <source>max_latency_01_m</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page200.ui" line="6067"/>
-        <location filename="page200.ui" line="6073"/>
         <source>max_latency_02_m</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="6129"/>
-        <location filename="page200.ui" line="6135"/>
+        <location filename="page200.ui" line="5790"/>
+        <location filename="page200.ui" line="5796"/>
         <source>max_latency_03_m</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="6191"/>
-        <location filename="page200.ui" line="6197"/>
+        <location filename="page200.ui" line="5852"/>
+        <location filename="page200.ui" line="5858"/>
         <source>max_latency_04_m</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="6253"/>
-        <location filename="page200.ui" line="6259"/>
+        <location filename="page200.ui" line="5914"/>
+        <location filename="page200.ui" line="5920"/>
         <source>max_latency_05_m</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="6315"/>
-        <location filename="page200.ui" line="6321"/>
+        <location filename="page200.ui" line="5976"/>
+        <location filename="page200.ui" line="5982"/>
         <source>max_latency_06_m</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="6377"/>
-        <location filename="page200.ui" line="6383"/>
+        <location filename="page200.ui" line="6038"/>
+        <location filename="page200.ui" line="6044"/>
         <source>max_latency_07_m</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="6439"/>
-        <location filename="page200.ui" line="6445"/>
+        <location filename="page200.ui" line="6100"/>
+        <location filename="page200.ui" line="6106"/>
         <source>max_latency_08_m</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="6501"/>
-        <location filename="page200.ui" line="6507"/>
+        <location filename="page200.ui" line="6162"/>
+        <location filename="page200.ui" line="6168"/>
         <source>max_latency_09_m</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="6563"/>
-        <location filename="page200.ui" line="6569"/>
+        <location filename="page200.ui" line="6224"/>
+        <location filename="page200.ui" line="6230"/>
         <source>max_latency_10_m</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="6625"/>
-        <location filename="page200.ui" line="6631"/>
+        <location filename="page200.ui" line="6286"/>
+        <location filename="page200.ui" line="6292"/>
         <source>max_latency_11_m</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="6687"/>
-        <location filename="page200.ui" line="6693"/>
+        <location filename="page200.ui" line="6348"/>
+        <location filename="page200.ui" line="6354"/>
         <source>max_latency_12_m</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="6849"/>
-        <location filename="page200.ui" line="6855"/>
+        <location filename="page200.ui" line="6515"/>
+        <location filename="page200.ui" line="6521"/>
         <source>max_latency_13_m</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="6911"/>
-        <location filename="page200.ui" line="6917"/>
+        <location filename="page200.ui" line="6577"/>
+        <location filename="page200.ui" line="6583"/>
         <source>errors_15</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="6973"/>
-        <location filename="page200.ui" line="6979"/>
+        <location filename="page200.ui" line="6642"/>
+        <location filename="page200.ui" line="6648"/>
         <source>min_latency_13_m</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="7035"/>
-        <location filename="page200.ui" line="7041"/>
+        <location filename="page200.ui" line="6704"/>
+        <location filename="page200.ui" line="6710"/>
         <source>latency_14_ms</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="7094"/>
-        <location filename="page200.ui" line="7100"/>
+        <location filename="page200.ui" line="6763"/>
+        <location filename="page200.ui" line="6769"/>
         <source>max_latency_15_m</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="7156"/>
-        <location filename="page200.ui" line="7162"/>
+        <location filename="page200.ui" line="6825"/>
+        <location filename="page200.ui" line="6831"/>
         <source>errors_14</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="7218"/>
-        <location filename="page200.ui" line="7224"/>
+        <location filename="page200.ui" line="6890"/>
+        <location filename="page200.ui" line="6896"/>
         <source>errors_13</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="2381"/>
-        <location filename="page200.ui" line="2387"/>
+        <location filename="page200.ui" line="2234"/>
+        <location filename="page200.ui" line="2240"/>
         <source>errors_12</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="7280"/>
-        <location filename="page200.ui" line="7286"/>
+        <location filename="page200.ui" line="5561"/>
+        <location filename="page200.ui" line="6437"/>
+        <source>Latency
+ms</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="5589"/>
+        <location filename="page200.ui" line="6412"/>
+        <source>Errors</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="5614"/>
+        <location filename="page200.ui" line="6489"/>
+        <source>min Latency
+ms</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="5640"/>
+        <location filename="page200.ui" line="6463"/>
+        <source>Max Latency
+ms</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="6955"/>
+        <location filename="page200.ui" line="6961"/>
         <source>min_latency_15_m</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="7342"/>
-        <location filename="page200.ui" line="7348"/>
+        <location filename="page200.ui" line="7017"/>
+        <location filename="page200.ui" line="7023"/>
         <source>latency_15_ms</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="7401"/>
-        <location filename="page200.ui" line="7407"/>
+        <location filename="page200.ui" line="7076"/>
+        <location filename="page200.ui" line="7082"/>
         <source>min_latency_14_m</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="7463"/>
-        <location filename="page200.ui" line="7469"/>
+        <location filename="page200.ui" line="7138"/>
+        <location filename="page200.ui" line="7144"/>
         <source>latency_13_ms</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="7522"/>
-        <location filename="page200.ui" line="7528"/>
+        <location filename="page200.ui" line="7197"/>
+        <location filename="page200.ui" line="7203"/>
         <source>max_latency_14_m</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="7584"/>
-        <location filename="page200.ui" line="7590"/>
+        <location filename="page200.ui" line="7259"/>
+        <location filename="page200.ui" line="7265"/>
         <source>min_latency_18_m</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="7646"/>
-        <location filename="page200.ui" line="7652"/>
+        <location filename="page200.ui" line="7321"/>
+        <location filename="page200.ui" line="7327"/>
         <source>min_latency_16_m</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="7708"/>
-        <location filename="page200.ui" line="7714"/>
+        <location filename="page200.ui" line="7383"/>
+        <location filename="page200.ui" line="7389"/>
         <source>latency_16_ms</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="7767"/>
-        <location filename="page200.ui" line="7773"/>
+        <location filename="page200.ui" line="7442"/>
+        <location filename="page200.ui" line="7448"/>
         <source>max_latency_16_m</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="7829"/>
-        <location filename="page200.ui" line="7835"/>
+        <location filename="page200.ui" line="7504"/>
+        <location filename="page200.ui" line="7510"/>
         <source>errors_18</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="7891"/>
-        <location filename="page200.ui" line="7897"/>
+        <location filename="page200.ui" line="7569"/>
+        <location filename="page200.ui" line="7575"/>
         <source>max_latency_18_m</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="7953"/>
-        <location filename="page200.ui" line="7959"/>
+        <location filename="page200.ui" line="7631"/>
+        <location filename="page200.ui" line="7637"/>
         <source>errors_17</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="8015"/>
-        <location filename="page200.ui" line="8021"/>
+        <location filename="page200.ui" line="7696"/>
+        <location filename="page200.ui" line="7702"/>
         <source>min_latency_17_m</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="8077"/>
-        <location filename="page200.ui" line="8083"/>
+        <location filename="page200.ui" line="7758"/>
+        <location filename="page200.ui" line="7764"/>
         <source>errors_16</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="8139"/>
-        <location filename="page200.ui" line="8145"/>
+        <location filename="page200.ui" line="7823"/>
+        <location filename="page200.ui" line="7829"/>
         <source>latency_17_ms</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="8198"/>
-        <location filename="page200.ui" line="8204"/>
+        <location filename="page200.ui" line="7882"/>
+        <location filename="page200.ui" line="7888"/>
         <source>latency_18_ms</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="8257"/>
-        <location filename="page200.ui" line="8263"/>
+        <location filename="page200.ui" line="7941"/>
+        <location filename="page200.ui" line="7947"/>
         <source>max_latency_17_m</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="8319"/>
-        <location filename="page200.ui" line="8325"/>
+        <location filename="page200.ui" line="8003"/>
+        <location filename="page200.ui" line="8009"/>
         <source>min_latency_21_m</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="8381"/>
-        <location filename="page200.ui" line="8387"/>
+        <location filename="page200.ui" line="8065"/>
+        <location filename="page200.ui" line="8071"/>
         <source>min_latency_19_m</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="8443"/>
-        <location filename="page200.ui" line="8449"/>
+        <location filename="page200.ui" line="8127"/>
+        <location filename="page200.ui" line="8133"/>
         <source>latency_19_ms</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="8186"/>
+        <location filename="page200.ui" line="8192"/>
+        <source>max_latency_19_m</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="8248"/>
+        <location filename="page200.ui" line="8254"/>
+        <source>errors_21</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="8313"/>
+        <location filename="page200.ui" line="8319"/>
+        <source>max_latency_21_m</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="8375"/>
+        <location filename="page200.ui" line="8381"/>
+        <source>errors_20</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="8440"/>
+        <location filename="page200.ui" line="8446"/>
+        <source>min_latency_20_m</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="page200.ui" line="8502"/>
         <location filename="page200.ui" line="8508"/>
-        <source>max_latency_19_m</source>
+        <source>errors_19</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="8564"/>
-        <location filename="page200.ui" line="8570"/>
-        <source>errors_21</source>
+        <location filename="page200.ui" line="8567"/>
+        <location filename="page200.ui" line="8573"/>
+        <source>latency_20_ms</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="page200.ui" line="8626"/>
         <location filename="page200.ui" line="8632"/>
-        <source>max_latency_21_m</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page200.ui" line="8688"/>
-        <location filename="page200.ui" line="8694"/>
-        <source>errors_20</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page200.ui" line="8750"/>
-        <location filename="page200.ui" line="8756"/>
-        <source>min_latency_20_m</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page200.ui" line="8812"/>
-        <location filename="page200.ui" line="8818"/>
-        <source>errors_19</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page200.ui" line="8874"/>
-        <location filename="page200.ui" line="8880"/>
-        <source>latency_20_ms</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page200.ui" line="8933"/>
-        <location filename="page200.ui" line="8939"/>
         <source>latency_21_ms</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="8685"/>
+        <location filename="page200.ui" line="8691"/>
+        <source>max_latency_20_m</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="8747"/>
+        <location filename="page200.ui" line="8753"/>
+        <source>min_latency_24_m</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="8809"/>
+        <location filename="page200.ui" line="8815"/>
+        <source>min_latency_22_m</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="8871"/>
+        <location filename="page200.ui" line="8877"/>
+        <source>latency_22_ms</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="8930"/>
+        <location filename="page200.ui" line="8936"/>
+        <source>max_latency_22_m</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="page200.ui" line="8992"/>
         <location filename="page200.ui" line="8998"/>
-        <source>max_latency_20_m</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page200.ui" line="9054"/>
-        <location filename="page200.ui" line="9060"/>
-        <source>min_latency_24_m</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page200.ui" line="9116"/>
-        <location filename="page200.ui" line="9122"/>
-        <source>min_latency_22_m</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page200.ui" line="9178"/>
-        <location filename="page200.ui" line="9184"/>
-        <source>latency_22_ms</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page200.ui" line="9237"/>
-        <location filename="page200.ui" line="9243"/>
-        <source>max_latency_22_m</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page200.ui" line="9299"/>
-        <location filename="page200.ui" line="9305"/>
         <source>errors_24</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="9361"/>
-        <location filename="page200.ui" line="9367"/>
+        <location filename="page200.ui" line="9057"/>
+        <location filename="page200.ui" line="9063"/>
         <source>max_latency_24_m</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="9423"/>
-        <location filename="page200.ui" line="9429"/>
+        <location filename="page200.ui" line="9119"/>
+        <location filename="page200.ui" line="9125"/>
         <source>errors_23</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="9485"/>
-        <location filename="page200.ui" line="9491"/>
+        <location filename="page200.ui" line="9184"/>
+        <location filename="page200.ui" line="9190"/>
         <source>min_latency_23_m</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="9547"/>
-        <location filename="page200.ui" line="9553"/>
+        <location filename="page200.ui" line="9246"/>
+        <location filename="page200.ui" line="9252"/>
         <source>errors_22</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="9609"/>
-        <location filename="page200.ui" line="9615"/>
+        <location filename="page200.ui" line="9311"/>
+        <location filename="page200.ui" line="9317"/>
         <source>latency_23_ms</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="9668"/>
-        <location filename="page200.ui" line="9674"/>
+        <location filename="page200.ui" line="9370"/>
+        <location filename="page200.ui" line="9376"/>
         <source>latency_24_ms</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="9727"/>
-        <location filename="page200.ui" line="9733"/>
+        <location filename="page200.ui" line="9429"/>
+        <location filename="page200.ui" line="9435"/>
         <source>max_latency_23_m</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="9789"/>
-        <source>Can Error:</source>
+        <location filename="page200.ui" line="9491"/>
+        <location filename="page200.ui" line="9497"/>
+        <source>errors_can</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="9811"/>
-        <location filename="page200.ui" line="9817"/>
-        <source>errors_can</source>
+        <location filename="page200.ui" line="11059"/>
+        <location filename="page200.ui" line="11065"/>
+        <source>RTU3_READ_QUEUE</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

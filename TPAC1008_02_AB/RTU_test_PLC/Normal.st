@@ -8,8 +8,6 @@ VAR
 	onoff : bool := true;
 	first : bool := true;
 	timer : TON;
-	timer_an1 : TON;
-	timer_an2 : TON;
 	value : bool := true;
 	timer_ms : UINT := 0;
 	do_second_loop : bool := false;
@@ -145,9 +143,11 @@ END_VAR
 		max_latency_23_m := 0;
 		max_latency_24_m := 0;
 
-		(* 4. set first output value *)
+		(* 4. set first output values *)
 		value := true;
-		PLC_DigOut_1 := value;
+		PLC_DigOut_1 := true;
+		PLC_AnOut_1 := 900;
+		PLC_AnOut_2 := 100;
 
 	end_if;
 
@@ -265,7 +265,13 @@ END_VAR
 		(* 4. set new output value *)
 		value := not value;
 		PLC_DigOut_1 := value;
-
+		if value then
+			PLC_AnOut_1 := 900;
+			PLC_AnOut_2 := 100;
+		else
+			PLC_AnOut_1 := 100;
+			PLC_AnOut_2 := 900;
+		end_if;
 
 	(* OTHER STEPS *)
 	else
@@ -563,28 +569,6 @@ END_VAR
 
 	end_if;
 
-	(* analog output 1 square wave *)
-	timer_an1 (IN := true, PT := T#2s);
-	if timer_an1.q = true then
-		timer_an1 (IN := false);
-		if PLC_AnOut_1 > 900 then
-			PLC_AnOut_1 := 0;
-		else
-			PLC_AnOut_1 := 1000;
-		end_if;
-	end_if;
-
-	(* analog output 2 square wave *)
-	timer_an2 (IN := true, PT := T#3s);
-	if timer_an2.q = true then
-		timer_an2 (IN := false);
-		if PLC_AnOut_2 > 900 then
-			PLC_AnOut_2 := 0;
-		else
-			PLC_AnOut_2 := 1000;
-		end_if;
-	end_if;
-	
 	if do_second_loop then
 		(* one round true and one round false *)
 		onoff := ((counter / 12) mod 2) = 0;

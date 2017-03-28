@@ -17,10 +17,12 @@ void setup(void)
 /* put here the operation made every 100ms */
 void loop(void)
 {
+    static bool configured = false;
+
     /* Local */
-    if (CH0_NETGOOD) {
-        if (PLC_AnInConf != 0x22)
-            doWrite_PLC_AnInConf(0x22);
+    if (! configured && CH0_NETGOOD) {
+        doWrite_PLC_AnInConf(0x22);
+        configured = true;
     }
 }
 

@@ -36,8 +36,8 @@
    </property>
    <property name="geometry">
     <rect>
-     <x>1</x>
-     <y>68</y>
+     <x>0</x>
+     <y>72</y>
      <width>35</width>
      <height>34</height>
     </rect>
@@ -70,7 +70,7 @@
     <string>0</string>
    </property>
    <property name="viewStatus">
-    <bool>false</bool>
+    <bool>true</bool>
    </property>
    <property name="visibilityVar">
     <string/>
@@ -83,35 +83,10 @@
     </color>
    </property>
    <property name="borderWidth">
-    <number>0</number>
+    <number>2</number>
    </property>
    <property name="borderRadius">
     <number>0</number>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_2">
-   <property name="geometry">
-    <rect>
-     <x>1</x>
-     <y>20</y>
-     <width>100</width>
-     <height>24</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>DejaVu Sans</family>
-     <pointsize>12</pointsize>
-    </font>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background-color: rgb(255, 255, 127);</string>
-   </property>
-   <property name="text">
-    <string>RTU3</string>
-   </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
    </property>
   </widget>
   <widget class="ATCMlabel" name="atcmLabel_49">
@@ -120,8 +95,8 @@
    </property>
    <property name="geometry">
     <rect>
-     <x>101</x>
-     <y>408</y>
+     <x>100</x>
+     <y>412</y>
      <width>75</width>
      <height>34</height>
     </rect>
@@ -179,8 +154,8 @@
    </property>
    <property name="geometry">
     <rect>
-     <x>176</x>
-     <y>408</y>
+     <x>175</x>
+     <y>412</y>
      <width>75</width>
      <height>34</height>
     </rect>
@@ -234,6 +209,9 @@
    <property name="borderRadius">
     <number>0</number>
    </property>
+   <property name="apparence">
+    <enum>QFrame::Sunken</enum>
+   </property>
   </widget>
   <widget class="ATCMlabel" name="atcmLabel_90">
    <property name="enabled">
@@ -241,8 +219,8 @@
    </property>
    <property name="geometry">
     <rect>
-     <x>1</x>
-     <y>102</y>
+     <x>0</x>
+     <y>106</y>
      <width>35</width>
      <height>34</height>
     </rect>
@@ -275,7 +253,7 @@
     <string>0</string>
    </property>
    <property name="viewStatus">
-    <bool>false</bool>
+    <bool>true</bool>
    </property>
    <property name="visibilityVar">
     <string/>
@@ -288,7 +266,7 @@
     </color>
    </property>
    <property name="borderWidth">
-    <number>0</number>
+    <number>2</number>
    </property>
    <property name="borderRadius">
     <number>0</number>
@@ -300,8 +278,8 @@
    </property>
    <property name="geometry">
     <rect>
-     <x>251</x>
-     <y>306</y>
+     <x>250</x>
+     <y>310</y>
      <width>75</width>
      <height>34</height>
     </rect>
@@ -360,7 +338,7 @@
    <property name="geometry">
     <rect>
      <x>101</x>
-     <y>-4</y>
+     <y>0</y>
      <width>100</width>
      <height>24</height>
     </rect>
@@ -397,8 +375,8 @@
    </property>
    <property name="geometry">
     <rect>
-     <x>101</x>
-     <y>340</y>
+     <x>100</x>
+     <y>344</y>
      <width>75</width>
      <height>34</height>
     </rect>
@@ -456,8 +434,8 @@
    </property>
    <property name="geometry">
     <rect>
-     <x>251</x>
-     <y>204</y>
+     <x>250</x>
+     <y>208</y>
      <width>75</width>
      <height>34</height>
     </rect>
@@ -518,8 +496,8 @@
    </property>
    <property name="geometry">
     <rect>
-     <x>101</x>
-     <y>68</y>
+     <x>100</x>
+     <y>72</y>
      <width>75</width>
      <height>34</height>
     </rect>
@@ -574,9 +552,9 @@
   <widget class="ATCMcombobox" name="atcmComboBox_7">
    <property name="geometry">
     <rect>
-     <x>1</x>
-     <y>44</y>
-     <width>100</width>
+     <x>0</x>
+     <y>48</y>
+     <width>120</width>
      <height>24</height>
     </rect>
    </property>
@@ -611,7 +589,7 @@
     <color>
      <red>255</red>
      <green>255</green>
-     <blue>127</blue>
+     <blue>0</blue>
     </color>
    </property>
    <property name="borderWidth">
@@ -624,70 +602,14 @@
     <string>1;NOT_CONNECTED;2;CONNECTED;3;CONNECTED_WITH_ERRORS;4;DEVICE_BLACKLIST;5;NO_HOPE;0;ZERO</string>
    </property>
   </widget>
-  <widget class="ATCMlabel" name="atcmLabel_5">
-   <property name="geometry">
-    <rect>
-     <x>101</x>
-     <y>20</y>
-     <width>100</width>
-     <height>24</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>DejaVu Sans</family>
-     <pointsize>8</pointsize>
-    </font>
-   </property>
-   <property name="toolTip">
-    <string>RTU3_READS</string>
-   </property>
-   <property name="whatsThis">
-    <string>ATCMlabel widget</string>
-   </property>
-   <property name="variable">
-    <string>RTU3_READS</string>
-   </property>
-   <property name="prefix">
-    <string>r: </string>
-   </property>
-   <property name="refresh">
-    <number>200</number>
-   </property>
-   <property name="max">
-    <string>0</string>
-   </property>
-   <property name="min">
-    <string>0</string>
-   </property>
-   <property name="viewStatus">
-    <bool>false</bool>
-   </property>
-   <property name="visibilityVar">
-    <string/>
-   </property>
-   <property name="bgColor">
-    <color>
-     <red>255</red>
-     <green>255</green>
-     <blue>127</blue>
-    </color>
-   </property>
-   <property name="borderWidth">
-    <number>0</number>
-   </property>
-   <property name="borderRadius">
-    <number>0</number>
-   </property>
-  </widget>
   <widget class="ATCMlabel" name="atcmLabel_30">
    <property name="enabled">
     <bool>false</bool>
    </property>
    <property name="geometry">
     <rect>
-     <x>176</x>
-     <y>204</y>
+     <x>175</x>
+     <y>208</y>
      <width>75</width>
      <height>34</height>
     </rect>
@@ -741,6 +663,9 @@
    <property name="borderRadius">
     <number>0</number>
    </property>
+   <property name="apparence">
+    <enum>QFrame::Sunken</enum>
+   </property>
   </widget>
   <widget class="ATCMlabel" name="atcmLabel_98">
    <property name="enabled">
@@ -748,8 +673,8 @@
    </property>
    <property name="geometry">
     <rect>
-     <x>1</x>
-     <y>408</y>
+     <x>0</x>
+     <y>412</y>
      <width>35</width>
      <height>34</height>
     </rect>
@@ -782,7 +707,7 @@
     <string>0</string>
    </property>
    <property name="viewStatus">
-    <bool>false</bool>
+    <bool>true</bool>
    </property>
    <property name="visibilityVar">
     <string/>
@@ -795,7 +720,7 @@
     </color>
    </property>
    <property name="borderWidth">
-    <number>0</number>
+    <number>2</number>
    </property>
    <property name="borderRadius">
     <number>0</number>
@@ -804,8 +729,8 @@
   <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
-     <x>530</x>
-     <y>-4</y>
+     <x>520</x>
+     <y>0</y>
      <width>81</width>
      <height>24</height>
     </rect>
@@ -832,8 +757,8 @@
    </property>
    <property name="geometry">
     <rect>
-     <x>101</x>
-     <y>170</y>
+     <x>100</x>
+     <y>174</y>
      <width>75</width>
      <height>34</height>
     </rect>
@@ -892,7 +817,7 @@
    <property name="geometry">
     <rect>
      <x>435</x>
-     <y>170</y>
+     <y>174</y>
      <width>75</width>
      <height>34</height>
     </rect>
@@ -945,7 +870,7 @@
    <property name="geometry">
     <rect>
      <x>337</x>
-     <y>66</y>
+     <y>70</y>
      <width>64</width>
      <height>411</height>
     </rect>
@@ -975,8 +900,8 @@
    </property>
    <property name="geometry">
     <rect>
-     <x>176</x>
-     <y>102</y>
+     <x>175</x>
+     <y>106</y>
      <width>75</width>
      <height>34</height>
     </rect>
@@ -1030,6 +955,9 @@
    <property name="borderRadius">
     <number>0</number>
    </property>
+   <property name="apparence">
+    <enum>QFrame::Sunken</enum>
+   </property>
   </widget>
   <widget class="ATCMlabel" name="atcmLabel_110">
    <property name="enabled">
@@ -1037,8 +965,8 @@
    </property>
    <property name="geometry">
     <rect>
-     <x>401</x>
-     <y>68</y>
+     <x>400</x>
+     <y>72</y>
      <width>35</width>
      <height>34</height>
     </rect>
@@ -1071,7 +999,7 @@
     <string>0</string>
    </property>
    <property name="viewStatus">
-    <bool>false</bool>
+    <bool>true</bool>
    </property>
    <property name="visibilityVar">
     <string/>
@@ -1084,35 +1012,10 @@
     </color>
    </property>
    <property name="borderWidth">
-    <number>0</number>
+    <number>2</number>
    </property>
    <property name="borderRadius">
     <number>0</number>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_3">
-   <property name="geometry">
-    <rect>
-     <x>401</x>
-     <y>20</y>
-     <width>100</width>
-     <height>24</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>DejaVu Sans</family>
-     <pointsize>12</pointsize>
-    </font>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background-color: rgb(170, 255, 255);</string>
-   </property>
-   <property name="text">
-    <string>RTU0</string>
-   </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
    </property>
   </widget>
   <widget class="ATCMcombobox" name="atcmComboBox_18">
@@ -1121,8 +1024,8 @@
    </property>
    <property name="geometry">
     <rect>
-     <x>436</x>
-     <y>272</y>
+     <x>435</x>
+     <y>276</y>
      <width>75</width>
      <height>34</height>
     </rect>
@@ -1177,8 +1080,8 @@
    </property>
    <property name="geometry">
     <rect>
-     <x>401</x>
-     <y>272</y>
+     <x>400</x>
+     <y>276</y>
      <width>35</width>
      <height>34</height>
     </rect>
@@ -1211,7 +1114,7 @@
     <string>0</string>
    </property>
    <property name="viewStatus">
-    <bool>false</bool>
+    <bool>true</bool>
    </property>
    <property name="visibilityVar">
     <string/>
@@ -1224,63 +1127,7 @@
     </color>
    </property>
    <property name="borderWidth">
-    <number>0</number>
-   </property>
-   <property name="borderRadius">
-    <number>0</number>
-   </property>
-  </widget>
-  <widget class="ATCMlabel" name="atcmLabel_7">
-   <property name="geometry">
-    <rect>
-     <x>301</x>
-     <y>20</y>
-     <width>100</width>
-     <height>24</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>DejaVu Sans</family>
-     <pointsize>8</pointsize>
-    </font>
-   </property>
-   <property name="toolTip">
-    <string>RTU3_TIMEOUTS</string>
-   </property>
-   <property name="whatsThis">
-    <string>ATCMlabel widget</string>
-   </property>
-   <property name="variable">
-    <string>RTU3_TIMEOUTS</string>
-   </property>
-   <property name="prefix">
-    <string>to:</string>
-   </property>
-   <property name="refresh">
-    <number>200</number>
-   </property>
-   <property name="max">
-    <string>0</string>
-   </property>
-   <property name="min">
-    <string>0</string>
-   </property>
-   <property name="viewStatus">
-    <bool>false</bool>
-   </property>
-   <property name="visibilityVar">
-    <string/>
-   </property>
-   <property name="bgColor">
-    <color>
-     <red>255</red>
-     <green>255</green>
-     <blue>127</blue>
-    </color>
-   </property>
-   <property name="borderWidth">
-    <number>0</number>
+    <number>2</number>
    </property>
    <property name="borderRadius">
     <number>0</number>
@@ -1292,8 +1139,8 @@
    </property>
    <property name="geometry">
     <rect>
-     <x>436</x>
-     <y>442</y>
+     <x>435</x>
+     <y>446</y>
      <width>75</width>
      <height>34</height>
     </rect>
@@ -1348,8 +1195,8 @@
    </property>
    <property name="geometry">
     <rect>
-     <x>401</x>
-     <y>340</y>
+     <x>400</x>
+     <y>344</y>
      <width>35</width>
      <height>34</height>
     </rect>
@@ -1382,7 +1229,7 @@
     <string>0</string>
    </property>
    <property name="viewStatus">
-    <bool>false</bool>
+    <bool>true</bool>
    </property>
    <property name="visibilityVar">
     <string/>
@@ -1395,7 +1242,7 @@
     </color>
    </property>
    <property name="borderWidth">
-    <number>0</number>
+    <number>2</number>
    </property>
    <property name="borderRadius">
     <number>0</number>
@@ -1407,8 +1254,8 @@
    </property>
    <property name="geometry">
     <rect>
-     <x>436</x>
-     <y>340</y>
+     <x>435</x>
+     <y>344</y>
      <width>75</width>
      <height>34</height>
     </rect>
@@ -1463,8 +1310,8 @@
    </property>
    <property name="geometry">
     <rect>
-     <x>36</x>
-     <y>442</y>
+     <x>35</x>
+     <y>446</y>
      <width>75</width>
      <height>34</height>
     </rect>
@@ -1519,8 +1366,8 @@
    </property>
    <property name="geometry">
     <rect>
-     <x>1</x>
-     <y>374</y>
+     <x>0</x>
+     <y>378</y>
      <width>35</width>
      <height>34</height>
     </rect>
@@ -1553,7 +1400,7 @@
     <string>0</string>
    </property>
    <property name="viewStatus">
-    <bool>false</bool>
+    <bool>true</bool>
    </property>
    <property name="visibilityVar">
     <string/>
@@ -1566,7 +1413,7 @@
     </color>
    </property>
    <property name="borderWidth">
-    <number>0</number>
+    <number>2</number>
    </property>
    <property name="borderRadius">
     <number>0</number>
@@ -1578,8 +1425,8 @@
    </property>
    <property name="geometry">
     <rect>
-     <x>1</x>
-     <y>204</y>
+     <x>0</x>
+     <y>208</y>
      <width>35</width>
      <height>34</height>
     </rect>
@@ -1612,7 +1459,7 @@
     <string>0</string>
    </property>
    <property name="viewStatus">
-    <bool>false</bool>
+    <bool>true</bool>
    </property>
    <property name="visibilityVar">
     <string/>
@@ -1625,7 +1472,7 @@
     </color>
    </property>
    <property name="borderWidth">
-    <number>0</number>
+    <number>2</number>
    </property>
    <property name="borderRadius">
     <number>0</number>
@@ -1634,8 +1481,8 @@
   <widget class="Line" name="line_3">
    <property name="geometry">
     <rect>
-     <x>401</x>
-     <y>-4</y>
+     <x>400</x>
+     <y>0</y>
      <width>3</width>
      <height>480</height>
     </rect>
@@ -1656,8 +1503,8 @@
    </property>
    <property name="geometry">
     <rect>
-     <x>36</x>
-     <y>374</y>
+     <x>35</x>
+     <y>378</y>
      <width>75</width>
      <height>34</height>
     </rect>
@@ -1712,8 +1559,8 @@
    </property>
    <property name="geometry">
     <rect>
-     <x>36</x>
-     <y>306</y>
+     <x>35</x>
+     <y>310</y>
      <width>75</width>
      <height>34</height>
     </rect>
@@ -1768,8 +1615,8 @@
    </property>
    <property name="geometry">
     <rect>
-     <x>36</x>
-     <y>238</y>
+     <x>35</x>
+     <y>242</y>
      <width>75</width>
      <height>34</height>
     </rect>
@@ -1824,8 +1671,8 @@
    </property>
    <property name="geometry">
     <rect>
-     <x>436</x>
-     <y>68</y>
+     <x>435</x>
+     <y>72</y>
      <width>75</width>
      <height>34</height>
     </rect>
@@ -1880,8 +1727,8 @@
    </property>
    <property name="geometry">
     <rect>
-     <x>36</x>
-     <y>408</y>
+     <x>35</x>
+     <y>412</y>
      <width>75</width>
      <height>34</height>
     </rect>
@@ -1936,8 +1783,8 @@
    </property>
    <property name="geometry">
     <rect>
-     <x>36</x>
-     <y>170</y>
+     <x>35</x>
+     <y>174</y>
      <width>75</width>
      <height>34</height>
     </rect>
@@ -1992,8 +1839,8 @@
    </property>
    <property name="geometry">
     <rect>
-     <x>436</x>
-     <y>374</y>
+     <x>435</x>
+     <y>378</y>
      <width>75</width>
      <height>34</height>
     </rect>
@@ -2048,8 +1895,8 @@
    </property>
    <property name="geometry">
     <rect>
-     <x>251</x>
-     <y>238</y>
+     <x>250</x>
+     <y>242</y>
      <width>75</width>
      <height>34</height>
     </rect>
@@ -2110,8 +1957,8 @@
    </property>
    <property name="geometry">
     <rect>
-     <x>176</x>
-     <y>374</y>
+     <x>175</x>
+     <y>378</y>
      <width>75</width>
      <height>34</height>
     </rect>
@@ -2165,6 +2012,9 @@
    <property name="borderRadius">
     <number>0</number>
    </property>
+   <property name="apparence">
+    <enum>QFrame::Sunken</enum>
+   </property>
   </widget>
   <widget class="ATCMcombobox" name="atcmComboBox_29">
    <property name="enabled">
@@ -2172,8 +2022,8 @@
    </property>
    <property name="geometry">
     <rect>
-     <x>436</x>
-     <y>136</y>
+     <x>435</x>
+     <y>140</y>
      <width>75</width>
      <height>34</height>
     </rect>
@@ -2225,8 +2075,8 @@
   <widget class="Line" name="line">
    <property name="geometry">
     <rect>
-     <x>1</x>
-     <y>20</y>
+     <x>0</x>
+     <y>24</y>
      <width>800</width>
      <height>3</height>
     </rect>
@@ -2248,7 +2098,7 @@
    <property name="geometry">
     <rect>
      <x>435</x>
-     <y>238</y>
+     <y>242</y>
      <width>75</width>
      <height>34</height>
     </rect>
@@ -2303,8 +2153,8 @@
    </property>
    <property name="geometry">
     <rect>
-     <x>176</x>
-     <y>272</y>
+     <x>175</x>
+     <y>276</y>
      <width>75</width>
      <height>34</height>
     </rect>
@@ -2357,6 +2207,9 @@
    </property>
    <property name="borderRadius">
     <number>0</number>
+   </property>
+   <property name="apparence">
+    <enum>QFrame::Sunken</enum>
    </property>
   </widget>
   <widget class="ATCMlabel" name="atcmLabel_50">
@@ -2365,8 +2218,8 @@
    </property>
    <property name="geometry">
     <rect>
-     <x>176</x>
-     <y>442</y>
+     <x>175</x>
+     <y>446</y>
      <width>75</width>
      <height>34</height>
     </rect>
@@ -2420,6 +2273,9 @@
    <property name="borderRadius">
     <number>0</number>
    </property>
+   <property name="apparence">
+    <enum>QFrame::Sunken</enum>
+   </property>
   </widget>
   <widget class="ATCMcombobox" name="atcmComboBox_25">
    <property name="enabled">
@@ -2427,8 +2283,8 @@
    </property>
    <property name="geometry">
     <rect>
-     <x>436</x>
-     <y>306</y>
+     <x>435</x>
+     <y>310</y>
      <width>75</width>
      <height>34</height>
     </rect>
@@ -2483,8 +2339,8 @@
    </property>
    <property name="geometry">
     <rect>
-     <x>176</x>
-     <y>306</y>
+     <x>175</x>
+     <y>310</y>
      <width>75</width>
      <height>34</height>
     </rect>
@@ -2537,6 +2393,9 @@
    </property>
    <property name="borderRadius">
     <number>0</number>
+   </property>
+   <property name="apparence">
+    <enum>QFrame::Sunken</enum>
    </property>
   </widget>
   <widget class="ATCMlabel" name="atcmLabel_25">
@@ -2545,8 +2404,8 @@
    </property>
    <property name="geometry">
     <rect>
-     <x>176</x>
-     <y>136</y>
+     <x>175</x>
+     <y>140</y>
      <width>75</width>
      <height>34</height>
     </rect>
@@ -2600,6 +2459,9 @@
    <property name="borderRadius">
     <number>0</number>
    </property>
+   <property name="apparence">
+    <enum>QFrame::Sunken</enum>
+   </property>
   </widget>
   <widget class="ATCMlabel" name="atcmLabel_24">
    <property name="enabled">
@@ -2607,8 +2469,8 @@
    </property>
    <property name="geometry">
     <rect>
-     <x>101</x>
-     <y>136</y>
+     <x>100</x>
+     <y>140</y>
      <width>75</width>
      <height>34</height>
     </rect>
@@ -2664,7 +2526,7 @@
    <property name="geometry">
     <rect>
      <x>1</x>
-     <y>374</y>
+     <y>378</y>
      <width>800</width>
      <height>3</height>
     </rect>
@@ -2685,8 +2547,8 @@
    </property>
    <property name="geometry">
     <rect>
-     <x>101</x>
-     <y>204</y>
+     <x>100</x>
+     <y>208</y>
      <width>75</width>
      <height>34</height>
     </rect>
@@ -2744,8 +2606,8 @@
    </property>
    <property name="geometry">
     <rect>
-     <x>1</x>
-     <y>170</y>
+     <x>0</x>
+     <y>174</y>
      <width>35</width>
      <height>34</height>
     </rect>
@@ -2778,7 +2640,7 @@
     <string>0</string>
    </property>
    <property name="viewStatus">
-    <bool>false</bool>
+    <bool>true</bool>
    </property>
    <property name="visibilityVar">
     <string/>
@@ -2791,63 +2653,7 @@
     </color>
    </property>
    <property name="borderWidth">
-    <number>0</number>
-   </property>
-   <property name="borderRadius">
-    <number>0</number>
-   </property>
-  </widget>
-  <widget class="ATCMlabel" name="atcmLabel_14">
-   <property name="geometry">
-    <rect>
-     <x>601</x>
-     <y>20</y>
-     <width>100</width>
-     <height>24</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>DejaVu Sans</family>
-     <pointsize>8</pointsize>
-    </font>
-   </property>
-   <property name="toolTip">
-    <string>RTU0_WRITES</string>
-   </property>
-   <property name="whatsThis">
-    <string>ATCMlabel widget</string>
-   </property>
-   <property name="variable">
-    <string>RTU0_WRITES</string>
-   </property>
-   <property name="prefix">
-    <string>w: </string>
-   </property>
-   <property name="refresh">
-    <number>200</number>
-   </property>
-   <property name="max">
-    <string>0</string>
-   </property>
-   <property name="min">
-    <string>0</string>
-   </property>
-   <property name="viewStatus">
-    <bool>false</bool>
-   </property>
-   <property name="visibilityVar">
-    <string/>
-   </property>
-   <property name="bgColor">
-    <color>
-     <red>170</red>
-     <green>255</green>
-     <blue>255</blue>
-    </color>
-   </property>
-   <property name="borderWidth">
-    <number>0</number>
+    <number>2</number>
    </property>
    <property name="borderRadius">
     <number>0</number>
@@ -2859,8 +2665,8 @@
    </property>
    <property name="geometry">
     <rect>
-     <x>1</x>
-     <y>238</y>
+     <x>0</x>
+     <y>242</y>
      <width>35</width>
      <height>34</height>
     </rect>
@@ -2893,7 +2699,7 @@
     <string>0</string>
    </property>
    <property name="viewStatus">
-    <bool>false</bool>
+    <bool>true</bool>
    </property>
    <property name="visibilityVar">
     <string/>
@@ -2906,7 +2712,7 @@
     </color>
    </property>
    <property name="borderWidth">
-    <number>0</number>
+    <number>2</number>
    </property>
    <property name="borderRadius">
     <number>0</number>
@@ -2916,7 +2722,7 @@
    <property name="geometry">
     <rect>
      <x>301</x>
-     <y>-4</y>
+     <y>0</y>
      <width>100</width>
      <height>24</height>
     </rect>
@@ -2927,6 +2733,9 @@
      <pointsize>8</pointsize>
     </font>
    </property>
+   <property name="text">
+    <string>86400.00</string>
+   </property>
    <property name="toolTip">
     <string>PLC_time</string>
    </property>
@@ -2935,6 +2744,9 @@
    </property>
    <property name="variable">
     <string>PLC_time</string>
+   </property>
+   <property name="suffix">
+    <string> s</string>
    </property>
    <property name="refresh">
     <number>200</number>
@@ -2955,7 +2767,7 @@
     <color>
      <red>255</red>
      <green>255</green>
-     <blue>127</blue>
+     <blue>191</blue>
     </color>
    </property>
    <property name="borderWidth">
@@ -2971,8 +2783,8 @@
    </property>
    <property name="geometry">
     <rect>
-     <x>401</x>
-     <y>442</y>
+     <x>400</x>
+     <y>446</y>
      <width>35</width>
      <height>34</height>
     </rect>
@@ -3005,7 +2817,7 @@
     <string>0</string>
    </property>
    <property name="viewStatus">
-    <bool>false</bool>
+    <bool>true</bool>
    </property>
    <property name="visibilityVar">
     <string/>
@@ -3018,7 +2830,7 @@
     </color>
    </property>
    <property name="borderWidth">
-    <number>0</number>
+    <number>2</number>
    </property>
    <property name="borderRadius">
     <number>0</number>
@@ -3030,8 +2842,8 @@
    </property>
    <property name="geometry">
     <rect>
-     <x>401</x>
-     <y>170</y>
+     <x>400</x>
+     <y>174</y>
      <width>35</width>
      <height>34</height>
     </rect>
@@ -3064,7 +2876,7 @@
     <string>0</string>
    </property>
    <property name="viewStatus">
-    <bool>false</bool>
+    <bool>true</bool>
    </property>
    <property name="visibilityVar">
     <string/>
@@ -3077,7 +2889,7 @@
     </color>
    </property>
    <property name="borderWidth">
-    <number>0</number>
+    <number>2</number>
    </property>
    <property name="borderRadius">
     <number>0</number>
@@ -3089,8 +2901,8 @@
    </property>
    <property name="geometry">
     <rect>
-     <x>1</x>
-     <y>442</y>
+     <x>0</x>
+     <y>446</y>
      <width>35</width>
      <height>34</height>
     </rect>
@@ -3123,7 +2935,7 @@
     <string>0</string>
    </property>
    <property name="viewStatus">
-    <bool>false</bool>
+    <bool>true</bool>
    </property>
    <property name="visibilityVar">
     <string/>
@@ -3136,7 +2948,7 @@
     </color>
    </property>
    <property name="borderWidth">
-    <number>0</number>
+    <number>2</number>
    </property>
    <property name="borderRadius">
     <number>0</number>
@@ -3148,8 +2960,8 @@
    </property>
    <property name="geometry">
     <rect>
-     <x>1</x>
-     <y>306</y>
+     <x>0</x>
+     <y>310</y>
      <width>35</width>
      <height>34</height>
     </rect>
@@ -3182,7 +2994,7 @@
     <string>0</string>
    </property>
    <property name="viewStatus">
-    <bool>false</bool>
+    <bool>true</bool>
    </property>
    <property name="visibilityVar">
     <string/>
@@ -3195,7 +3007,7 @@
     </color>
    </property>
    <property name="borderWidth">
-    <number>0</number>
+    <number>2</number>
    </property>
    <property name="borderRadius">
     <number>0</number>
@@ -3205,7 +3017,7 @@
    <property name="geometry">
     <rect>
      <x>1</x>
-     <y>272</y>
+     <y>276</y>
      <width>800</width>
      <height>3</height>
     </rect>
@@ -3226,8 +3038,8 @@
    </property>
    <property name="geometry">
     <rect>
-     <x>176</x>
-     <y>238</y>
+     <x>175</x>
+     <y>242</y>
      <width>75</width>
      <height>34</height>
     </rect>
@@ -3281,6 +3093,9 @@
    <property name="borderRadius">
     <number>0</number>
    </property>
+   <property name="apparence">
+    <enum>QFrame::Sunken</enum>
+   </property>
   </widget>
   <widget class="ATCMlabel" name="atcmLabel_34">
    <property name="enabled">
@@ -3288,8 +3103,8 @@
    </property>
    <property name="geometry">
     <rect>
-     <x>101</x>
-     <y>238</y>
+     <x>100</x>
+     <y>242</y>
      <width>75</width>
      <height>34</height>
     </rect>
@@ -3345,7 +3160,7 @@
    <property name="geometry">
     <rect>
      <x>1</x>
-     <y>-4</y>
+     <y>0</y>
      <width>100</width>
      <height>24</height>
     </rect>
@@ -3382,8 +3197,8 @@
    </property>
    <property name="geometry">
     <rect>
-     <x>101</x>
-     <y>374</y>
+     <x>100</x>
+     <y>378</y>
      <width>75</width>
      <height>34</height>
     </rect>
@@ -3441,8 +3256,8 @@
    </property>
    <property name="geometry">
     <rect>
-     <x>251</x>
-     <y>442</y>
+     <x>250</x>
+     <y>446</y>
      <width>75</width>
      <height>34</height>
     </rect>
@@ -3503,8 +3318,8 @@
    </property>
    <property name="geometry">
     <rect>
-     <x>36</x>
-     <y>68</y>
+     <x>35</x>
+     <y>72</y>
      <width>75</width>
      <height>34</height>
     </rect>
@@ -3559,8 +3374,8 @@
    </property>
    <property name="geometry">
     <rect>
-     <x>251</x>
-     <y>340</y>
+     <x>250</x>
+     <y>344</y>
      <width>75</width>
      <height>34</height>
     </rect>
@@ -3621,8 +3436,8 @@
    </property>
    <property name="geometry">
     <rect>
-     <x>101</x>
-     <y>272</y>
+     <x>100</x>
+     <y>276</y>
      <width>75</width>
      <height>34</height>
     </rect>
@@ -3680,8 +3495,8 @@
    </property>
    <property name="geometry">
     <rect>
-     <x>36</x>
-     <y>136</y>
+     <x>35</x>
+     <y>140</y>
      <width>75</width>
      <height>34</height>
     </rect>
@@ -3736,8 +3551,8 @@
    </property>
    <property name="geometry">
     <rect>
-     <x>251</x>
-     <y>68</y>
+     <x>250</x>
+     <y>72</y>
      <width>75</width>
      <height>34</height>
     </rect>
@@ -3795,9 +3610,9 @@
   <widget class="ATCMcombobox" name="atcmComboBox_8">
    <property name="geometry">
     <rect>
-     <x>401</x>
-     <y>44</y>
-     <width>100</width>
+     <x>400</x>
+     <y>48</y>
+     <width>120</width>
      <height>24</height>
     </rect>
    </property>
@@ -3830,7 +3645,7 @@
    </property>
    <property name="bgColor">
     <color>
-     <red>170</red>
+     <red>0</red>
      <green>255</green>
      <blue>255</blue>
     </color>
@@ -3851,8 +3666,8 @@
    </property>
    <property name="geometry">
     <rect>
-     <x>251</x>
-     <y>136</y>
+     <x>250</x>
+     <y>140</y>
      <width>75</width>
      <height>34</height>
     </rect>
@@ -3913,8 +3728,8 @@
    </property>
    <property name="geometry">
     <rect>
-     <x>36</x>
-     <y>102</y>
+     <x>35</x>
+     <y>106</y>
      <width>75</width>
      <height>34</height>
     </rect>
@@ -3963,70 +3778,14 @@
     <string>1;NODE_OK;2;TIMEOUT;3;BLACKLIST;0;NO_NODE</string>
    </property>
   </widget>
-  <widget class="ATCMlabel" name="atcmLabel_16">
-   <property name="geometry">
-    <rect>
-     <x>701</x>
-     <y>20</y>
-     <width>100</width>
-     <height>24</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>DejaVu Sans</family>
-     <pointsize>8</pointsize>
-    </font>
-   </property>
-   <property name="toolTip">
-    <string>RTU0_TIMEOUTS</string>
-   </property>
-   <property name="whatsThis">
-    <string>ATCMlabel widget</string>
-   </property>
-   <property name="variable">
-    <string>RTU0_TIMEOUTS</string>
-   </property>
-   <property name="prefix">
-    <string>to:</string>
-   </property>
-   <property name="refresh">
-    <number>200</number>
-   </property>
-   <property name="max">
-    <string>0</string>
-   </property>
-   <property name="min">
-    <string>0</string>
-   </property>
-   <property name="viewStatus">
-    <bool>false</bool>
-   </property>
-   <property name="visibilityVar">
-    <string/>
-   </property>
-   <property name="bgColor">
-    <color>
-     <red>170</red>
-     <green>255</green>
-     <blue>255</blue>
-    </color>
-   </property>
-   <property name="borderWidth">
-    <number>0</number>
-   </property>
-   <property name="borderRadius">
-    <number>0</number>
-   </property>
-  </widget>
   <widget class="ATCMlabel" name="atcmLabel_28">
    <property name="enabled">
     <bool>false</bool>
    </property>
    <property name="geometry">
     <rect>
-     <x>176</x>
-     <y>170</y>
+     <x>175</x>
+     <y>174</y>
      <width>75</width>
      <height>34</height>
     </rect>
@@ -4080,6 +3839,9 @@
    <property name="borderRadius">
     <number>0</number>
    </property>
+   <property name="apparence">
+    <enum>QFrame::Sunken</enum>
+   </property>
   </widget>
   <widget class="ATCMlabel" name="atcmLabel_97">
    <property name="enabled">
@@ -4087,8 +3849,8 @@
    </property>
    <property name="geometry">
     <rect>
-     <x>1</x>
-     <y>272</y>
+     <x>0</x>
+     <y>276</y>
      <width>35</width>
      <height>34</height>
     </rect>
@@ -4121,7 +3883,7 @@
     <string>0</string>
    </property>
    <property name="viewStatus">
-    <bool>false</bool>
+    <bool>true</bool>
    </property>
    <property name="visibilityVar">
     <string/>
@@ -4134,7 +3896,7 @@
     </color>
    </property>
    <property name="borderWidth">
-    <number>0</number>
+    <number>2</number>
    </property>
    <property name="borderRadius">
     <number>0</number>
@@ -4144,7 +3906,7 @@
    <property name="geometry">
     <rect>
      <x>1</x>
-     <y>170</y>
+     <y>174</y>
      <width>800</width>
      <height>3</height>
     </rect>
@@ -4166,7 +3928,7 @@
    <property name="geometry">
     <rect>
      <x>435</x>
-     <y>204</y>
+     <y>208</y>
      <width>75</width>
      <height>34</height>
     </rect>
@@ -4219,7 +3981,7 @@
    <property name="geometry">
     <rect>
      <x>201</x>
-     <y>-4</y>
+     <y>0</y>
      <width>100</width>
      <height>24</height>
     </rect>
@@ -4280,8 +4042,8 @@
    </property>
    <property name="geometry">
     <rect>
-     <x>401</x>
-     <y>204</y>
+     <x>400</x>
+     <y>208</y>
      <width>35</width>
      <height>34</height>
     </rect>
@@ -4314,7 +4076,7 @@
     <string>0</string>
    </property>
    <property name="viewStatus">
-    <bool>false</bool>
+    <bool>true</bool>
    </property>
    <property name="visibilityVar">
     <string/>
@@ -4327,7 +4089,7 @@
     </color>
    </property>
    <property name="borderWidth">
-    <number>0</number>
+    <number>2</number>
    </property>
    <property name="borderRadius">
     <number>0</number>
@@ -4339,8 +4101,8 @@
    </property>
    <property name="geometry">
     <rect>
-     <x>1</x>
-     <y>340</y>
+     <x>0</x>
+     <y>344</y>
      <width>35</width>
      <height>34</height>
     </rect>
@@ -4373,7 +4135,7 @@
     <string>0</string>
    </property>
    <property name="viewStatus">
-    <bool>false</bool>
+    <bool>true</bool>
    </property>
    <property name="visibilityVar">
     <string/>
@@ -4386,7 +4148,7 @@
     </color>
    </property>
    <property name="borderWidth">
-    <number>0</number>
+    <number>2</number>
    </property>
    <property name="borderRadius">
     <number>0</number>
@@ -4398,8 +4160,8 @@
    </property>
    <property name="geometry">
     <rect>
-     <x>436</x>
-     <y>102</y>
+     <x>435</x>
+     <y>106</y>
      <width>75</width>
      <height>34</height>
     </rect>
@@ -4448,70 +4210,14 @@
     <string>1;NODE_OK;2;TIMEOUT;3;BLACKLIST;0;NO_NODE</string>
    </property>
   </widget>
-  <widget class="ATCMlabel" name="atcmLabel_6">
-   <property name="geometry">
-    <rect>
-     <x>201</x>
-     <y>20</y>
-     <width>100</width>
-     <height>24</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>DejaVu Sans</family>
-     <pointsize>8</pointsize>
-    </font>
-   </property>
-   <property name="toolTip">
-    <string>RTU3_WRITES</string>
-   </property>
-   <property name="whatsThis">
-    <string>ATCMlabel widget</string>
-   </property>
-   <property name="variable">
-    <string>RTU3_WRITES</string>
-   </property>
-   <property name="prefix">
-    <string>w: </string>
-   </property>
-   <property name="refresh">
-    <number>200</number>
-   </property>
-   <property name="max">
-    <string>0</string>
-   </property>
-   <property name="min">
-    <string>0</string>
-   </property>
-   <property name="viewStatus">
-    <bool>false</bool>
-   </property>
-   <property name="visibilityVar">
-    <string/>
-   </property>
-   <property name="bgColor">
-    <color>
-     <red>255</red>
-     <green>255</green>
-     <blue>127</blue>
-    </color>
-   </property>
-   <property name="borderWidth">
-    <number>0</number>
-   </property>
-   <property name="borderRadius">
-    <number>0</number>
-   </property>
-  </widget>
   <widget class="ATCMlabel" name="atcmLabel_107">
    <property name="enabled">
     <bool>false</bool>
    </property>
    <property name="geometry">
     <rect>
-     <x>401</x>
-     <y>306</y>
+     <x>400</x>
+     <y>310</y>
      <width>35</width>
      <height>34</height>
     </rect>
@@ -4544,7 +4250,7 @@
     <string>0</string>
    </property>
    <property name="viewStatus">
-    <bool>false</bool>
+    <bool>true</bool>
    </property>
    <property name="visibilityVar">
     <string/>
@@ -4557,7 +4263,7 @@
     </color>
    </property>
    <property name="borderWidth">
-    <number>0</number>
+    <number>2</number>
    </property>
    <property name="borderRadius">
     <number>0</number>
@@ -4569,8 +4275,8 @@
    </property>
    <property name="geometry">
     <rect>
-     <x>436</x>
-     <y>408</y>
+     <x>435</x>
+     <y>412</y>
      <width>75</width>
      <height>34</height>
     </rect>
@@ -4625,8 +4331,8 @@
    </property>
    <property name="geometry">
     <rect>
-     <x>1</x>
-     <y>136</y>
+     <x>0</x>
+     <y>140</y>
      <width>35</width>
      <height>34</height>
     </rect>
@@ -4659,7 +4365,7 @@
     <string>0</string>
    </property>
    <property name="viewStatus">
-    <bool>false</bool>
+    <bool>true</bool>
    </property>
    <property name="visibilityVar">
     <string/>
@@ -4672,7 +4378,7 @@
     </color>
    </property>
    <property name="borderWidth">
-    <number>0</number>
+    <number>2</number>
    </property>
    <property name="borderRadius">
     <number>0</number>
@@ -4684,8 +4390,8 @@
    </property>
    <property name="geometry">
     <rect>
-     <x>101</x>
-     <y>442</y>
+     <x>100</x>
+     <y>446</y>
      <width>75</width>
      <height>34</height>
     </rect>
@@ -4743,8 +4449,8 @@
    </property>
    <property name="geometry">
     <rect>
-     <x>36</x>
-     <y>204</y>
+     <x>35</x>
+     <y>208</y>
      <width>75</width>
      <height>34</height>
     </rect>
@@ -4799,8 +4505,8 @@
    </property>
    <property name="geometry">
     <rect>
-     <x>36</x>
-     <y>272</y>
+     <x>35</x>
+     <y>276</y>
      <width>75</width>
      <height>34</height>
     </rect>
@@ -4855,8 +4561,8 @@
    </property>
    <property name="geometry">
     <rect>
-     <x>36</x>
-     <y>340</y>
+     <x>35</x>
+     <y>344</y>
      <width>75</width>
      <height>34</height>
     </rect>
@@ -4911,8 +4617,8 @@
    </property>
    <property name="geometry">
     <rect>
-     <x>251</x>
-     <y>408</y>
+     <x>250</x>
+     <y>412</y>
      <width>75</width>
      <height>34</height>
     </rect>
@@ -4973,8 +4679,8 @@
    </property>
    <property name="geometry">
     <rect>
-     <x>251</x>
-     <y>272</y>
+     <x>250</x>
+     <y>276</y>
      <width>75</width>
      <height>34</height>
     </rect>
@@ -5035,8 +4741,8 @@
    </property>
    <property name="geometry">
     <rect>
-     <x>176</x>
-     <y>340</y>
+     <x>175</x>
+     <y>344</y>
      <width>75</width>
      <height>34</height>
     </rect>
@@ -5090,6 +4796,9 @@
    <property name="borderRadius">
     <number>0</number>
    </property>
+   <property name="apparence">
+    <enum>QFrame::Sunken</enum>
+   </property>
   </widget>
   <widget class="ATCMlabel" name="atcmLabel_45">
    <property name="enabled">
@@ -5097,8 +4806,8 @@
    </property>
    <property name="geometry">
     <rect>
-     <x>251</x>
-     <y>374</y>
+     <x>250</x>
+     <y>378</y>
      <width>75</width>
      <height>34</height>
     </rect>
@@ -5157,7 +4866,7 @@
    <property name="geometry">
     <rect>
      <x>601</x>
-     <y>-4</y>
+     <y>0</y>
      <width>200</width>
      <height>24</height>
     </rect>
@@ -5212,8 +4921,8 @@
   <widget class="Line" name="line_2">
    <property name="geometry">
     <rect>
-     <x>1</x>
-     <y>68</y>
+     <x>0</x>
+     <y>72</y>
      <width>800</width>
      <height>3</height>
     </rect>
@@ -5234,8 +4943,8 @@
    </property>
    <property name="geometry">
     <rect>
-     <x>101</x>
-     <y>306</y>
+     <x>100</x>
+     <y>310</y>
      <width>75</width>
      <height>34</height>
     </rect>
@@ -5293,8 +5002,8 @@
    </property>
    <property name="geometry">
     <rect>
-     <x>101</x>
-     <y>102</y>
+     <x>100</x>
+     <y>106</y>
      <width>75</width>
      <height>34</height>
     </rect>
@@ -5346,70 +5055,14 @@
     <number>0</number>
    </property>
   </widget>
-  <widget class="ATCMlabel" name="atcmLabel_10">
-   <property name="geometry">
-    <rect>
-     <x>501</x>
-     <y>20</y>
-     <width>100</width>
-     <height>24</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>DejaVu Sans</family>
-     <pointsize>8</pointsize>
-    </font>
-   </property>
-   <property name="toolTip">
-    <string>RTU0_READS</string>
-   </property>
-   <property name="whatsThis">
-    <string>ATCMlabel widget</string>
-   </property>
-   <property name="variable">
-    <string>RTU0_READS</string>
-   </property>
-   <property name="prefix">
-    <string>r: </string>
-   </property>
-   <property name="refresh">
-    <number>200</number>
-   </property>
-   <property name="max">
-    <string>0</string>
-   </property>
-   <property name="min">
-    <string>0</string>
-   </property>
-   <property name="viewStatus">
-    <bool>false</bool>
-   </property>
-   <property name="visibilityVar">
-    <string/>
-   </property>
-   <property name="bgColor">
-    <color>
-     <red>170</red>
-     <green>255</green>
-     <blue>255</blue>
-    </color>
-   </property>
-   <property name="borderWidth">
-    <number>0</number>
-   </property>
-   <property name="borderRadius">
-    <number>0</number>
-   </property>
-  </widget>
   <widget class="ATCMlabel" name="atcmLabel_18">
    <property name="enabled">
     <bool>false</bool>
    </property>
    <property name="geometry">
     <rect>
-     <x>176</x>
-     <y>68</y>
+     <x>175</x>
+     <y>72</y>
      <width>75</width>
      <height>34</height>
     </rect>
@@ -5463,6 +5116,9 @@
    <property name="borderRadius">
     <number>0</number>
    </property>
+   <property name="apparence">
+    <enum>QFrame::Sunken</enum>
+   </property>
   </widget>
   <widget class="ATCMlabel" name="atcmLabel_112">
    <property name="enabled">
@@ -5470,8 +5126,8 @@
    </property>
    <property name="geometry">
     <rect>
-     <x>401</x>
-     <y>238</y>
+     <x>400</x>
+     <y>242</y>
      <width>35</width>
      <height>34</height>
     </rect>
@@ -5504,7 +5160,7 @@
     <string>0</string>
    </property>
    <property name="viewStatus">
-    <bool>false</bool>
+    <bool>true</bool>
    </property>
    <property name="visibilityVar">
     <string/>
@@ -5517,7 +5173,7 @@
     </color>
    </property>
    <property name="borderWidth">
-    <number>0</number>
+    <number>2</number>
    </property>
    <property name="borderRadius">
     <number>0</number>
@@ -5529,8 +5185,8 @@
    </property>
    <property name="geometry">
     <rect>
-     <x>401</x>
-     <y>374</y>
+     <x>400</x>
+     <y>378</y>
      <width>35</width>
      <height>34</height>
     </rect>
@@ -5563,7 +5219,7 @@
     <string>0</string>
    </property>
    <property name="viewStatus">
-    <bool>false</bool>
+    <bool>true</bool>
    </property>
    <property name="visibilityVar">
     <string/>
@@ -5576,7 +5232,7 @@
     </color>
    </property>
    <property name="borderWidth">
-    <number>0</number>
+    <number>2</number>
    </property>
    <property name="borderRadius">
     <number>0</number>
@@ -5588,8 +5244,8 @@
    </property>
    <property name="geometry">
     <rect>
-     <x>251</x>
-     <y>170</y>
+     <x>250</x>
+     <y>174</y>
      <width>75</width>
      <height>34</height>
     </rect>
@@ -5650,8 +5306,8 @@
    </property>
    <property name="geometry">
     <rect>
-     <x>251</x>
-     <y>102</y>
+     <x>250</x>
+     <y>106</y>
      <width>75</width>
      <height>34</height>
     </rect>
@@ -5712,8 +5368,8 @@
    </property>
    <property name="geometry">
     <rect>
-     <x>401</x>
-     <y>408</y>
+     <x>400</x>
+     <y>412</y>
      <width>35</width>
      <height>34</height>
     </rect>
@@ -5746,7 +5402,7 @@
     <string>0</string>
    </property>
    <property name="viewStatus">
-    <bool>false</bool>
+    <bool>true</bool>
    </property>
    <property name="visibilityVar">
     <string/>
@@ -5759,7 +5415,7 @@
     </color>
    </property>
    <property name="borderWidth">
-    <number>0</number>
+    <number>2</number>
    </property>
    <property name="borderRadius">
     <number>0</number>
@@ -5771,8 +5427,8 @@
    </property>
    <property name="geometry">
     <rect>
-     <x>401</x>
-     <y>102</y>
+     <x>400</x>
+     <y>106</y>
      <width>35</width>
      <height>34</height>
     </rect>
@@ -5805,7 +5461,7 @@
     <string>0</string>
    </property>
    <property name="viewStatus">
-    <bool>false</bool>
+    <bool>true</bool>
    </property>
    <property name="visibilityVar">
     <string/>
@@ -5818,7 +5474,7 @@
     </color>
    </property>
    <property name="borderWidth">
-    <number>0</number>
+    <number>2</number>
    </property>
    <property name="borderRadius">
     <number>0</number>
@@ -5830,8 +5486,8 @@
    </property>
    <property name="geometry">
     <rect>
-     <x>401</x>
-     <y>136</y>
+     <x>400</x>
+     <y>140</y>
      <width>35</width>
      <height>34</height>
     </rect>
@@ -5864,7 +5520,7 @@
     <string>0</string>
    </property>
    <property name="viewStatus">
-    <bool>false</bool>
+    <bool>true</bool>
    </property>
    <property name="visibilityVar">
     <string/>
@@ -5877,7 +5533,7 @@
     </color>
    </property>
    <property name="borderWidth">
-    <number>0</number>
+    <number>2</number>
    </property>
    <property name="borderRadius">
     <number>0</number>
@@ -5886,9 +5542,9 @@
   <widget class="QLabel" name="label_6">
    <property name="geometry">
     <rect>
-     <x>102</x>
-     <y>44</y>
-     <width>71</width>
+     <x>120</x>
+     <y>48</y>
+     <width>55</width>
      <height>24</height>
     </rect>
    </property>
@@ -5899,10 +5555,11 @@
     </font>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: rgb(255, 255, 127);</string>
+    <string notr="true">background-color: rgb(255, 255, 0);</string>
    </property>
    <property name="text">
-    <string>Latency_ms</string>
+    <string>Latency
+ms</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>
@@ -5911,23 +5568,25 @@
   <widget class="QLabel" name="label_7">
    <property name="geometry">
     <rect>
-     <x>173</x>
-     <y>44</y>
-     <width>81</width>
+     <x>175</x>
+     <y>48</y>
+     <width>75</width>
      <height>24</height>
     </rect>
    </property>
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>6</pointsize>
+     <pointsize>9</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
     </font>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: rgb(255, 255, 127);</string>
+    <string notr="true">background-color: rgb(255, 255,0);</string>
    </property>
    <property name="text">
-    <string>Errori</string>
+    <string>Errors</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>
@@ -5936,9 +5595,9 @@
   <widget class="QLabel" name="label_8">
    <property name="geometry">
     <rect>
-     <x>240</x>
-     <y>44</y>
-     <width>81</width>
+     <x>250</x>
+     <y>48</y>
+     <width>75</width>
      <height>24</height>
     </rect>
    </property>
@@ -5949,10 +5608,11 @@
     </font>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: rgb(255, 255, 127);</string>
+    <string notr="true">background-color: rgb(255, 255, 0);</string>
    </property>
    <property name="text">
-    <string>Min_Lat_ms</string>
+    <string>min Latency
+ms</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>
@@ -5961,9 +5621,9 @@
   <widget class="QLabel" name="label_9">
    <property name="geometry">
     <rect>
-     <x>320</x>
-     <y>43</y>
-     <width>81</width>
+     <x>325</x>
+     <y>47</y>
+     <width>75</width>
      <height>24</height>
     </rect>
    </property>
@@ -5974,10 +5634,11 @@
     </font>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: rgb(255, 255, 127);</string>
+    <string notr="true">background-color: rgb(255, 255, 0);</string>
    </property>
    <property name="text">
-    <string>Max_Lat_ms</string>
+    <string>Max Latency
+ms</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>
@@ -5990,7 +5651,7 @@
    <property name="geometry">
     <rect>
      <x>325</x>
-     <y>68</y>
+     <y>72</y>
      <width>75</width>
      <height>34</height>
     </rect>
@@ -6052,7 +5713,7 @@
    <property name="geometry">
     <rect>
      <x>325</x>
-     <y>102</y>
+     <y>106</y>
      <width>75</width>
      <height>34</height>
     </rect>
@@ -6114,7 +5775,7 @@
    <property name="geometry">
     <rect>
      <x>325</x>
-     <y>136</y>
+     <y>140</y>
      <width>75</width>
      <height>34</height>
     </rect>
@@ -6176,7 +5837,7 @@
    <property name="geometry">
     <rect>
      <x>325</x>
-     <y>170</y>
+     <y>174</y>
      <width>75</width>
      <height>34</height>
     </rect>
@@ -6238,7 +5899,7 @@
    <property name="geometry">
     <rect>
      <x>325</x>
-     <y>204</y>
+     <y>208</y>
      <width>75</width>
      <height>34</height>
     </rect>
@@ -6300,7 +5961,7 @@
    <property name="geometry">
     <rect>
      <x>325</x>
-     <y>238</y>
+     <y>242</y>
      <width>75</width>
      <height>34</height>
     </rect>
@@ -6362,7 +6023,7 @@
    <property name="geometry">
     <rect>
      <x>325</x>
-     <y>272</y>
+     <y>276</y>
      <width>75</width>
      <height>34</height>
     </rect>
@@ -6424,7 +6085,7 @@
    <property name="geometry">
     <rect>
      <x>325</x>
-     <y>306</y>
+     <y>310</y>
      <width>75</width>
      <height>34</height>
     </rect>
@@ -6486,7 +6147,7 @@
    <property name="geometry">
     <rect>
      <x>325</x>
-     <y>340</y>
+     <y>344</y>
      <width>75</width>
      <height>34</height>
     </rect>
@@ -6548,7 +6209,7 @@
    <property name="geometry">
     <rect>
      <x>325</x>
-     <y>374</y>
+     <y>378</y>
      <width>75</width>
      <height>34</height>
     </rect>
@@ -6610,7 +6271,7 @@
    <property name="geometry">
     <rect>
      <x>325</x>
-     <y>408</y>
+     <y>412</y>
      <width>75</width>
      <height>34</height>
     </rect>
@@ -6672,7 +6333,7 @@
    <property name="geometry">
     <rect>
      <x>325</x>
-     <y>442</y>
+     <y>446</y>
      <width>75</width>
      <height>34</height>
     </rect>
@@ -6730,23 +6391,25 @@
   <widget class="QLabel" name="label_10">
    <property name="geometry">
     <rect>
-     <x>573</x>
-     <y>43</y>
-     <width>81</width>
+     <x>575</x>
+     <y>47</y>
+     <width>75</width>
      <height>24</height>
     </rect>
    </property>
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>6</pointsize>
+     <pointsize>9</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
     </font>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: rgb(170, 255, 255);</string>
+    <string notr="true">background-color: rgb(0, 255, 255);</string>
    </property>
    <property name="text">
-    <string>Errori</string>
+    <string>Errors</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>
@@ -6755,9 +6418,9 @@
   <widget class="QLabel" name="label_11">
    <property name="geometry">
     <rect>
-     <x>502</x>
-     <y>43</y>
-     <width>71</width>
+     <x>520</x>
+     <y>47</y>
+     <width>55</width>
      <height>24</height>
     </rect>
    </property>
@@ -6768,10 +6431,11 @@
     </font>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: rgb(170, 255, 255);</string>
+    <string notr="true">background-color: rgb(0, 255, 255);</string>
    </property>
    <property name="text">
-    <string>Latency_ms</string>
+    <string>Latency
+ms</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>
@@ -6780,9 +6444,9 @@
   <widget class="QLabel" name="label_12">
    <property name="geometry">
     <rect>
-     <x>720</x>
-     <y>42</y>
-     <width>81</width>
+     <x>725</x>
+     <y>46</y>
+     <width>75</width>
      <height>24</height>
     </rect>
    </property>
@@ -6793,10 +6457,11 @@
     </font>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: rgb(170, 255, 255);</string>
+    <string notr="true">background-color: rgb(0, 255, 255);</string>
    </property>
    <property name="text">
-    <string>Max_Lat_ms</string>
+    <string>Max Latency
+ms</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>
@@ -6805,9 +6470,9 @@
   <widget class="QLabel" name="label_13">
    <property name="geometry">
     <rect>
-     <x>640</x>
-     <y>43</y>
-     <width>81</width>
+     <x>650</x>
+     <y>47</y>
+     <width>75</width>
      <height>24</height>
     </rect>
    </property>
@@ -6818,10 +6483,11 @@
     </font>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: rgb(170, 255, 255);</string>
+    <string notr="true">background-color: rgb(0, 255, 255);</string>
    </property>
    <property name="text">
-    <string>Min_Lat_ms</string>
+    <string>min Latency
+ms</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>
@@ -6834,7 +6500,7 @@
    <property name="geometry">
     <rect>
      <x>725</x>
-     <y>67</y>
+     <y>71</y>
      <width>75</width>
      <height>34</height>
     </rect>
@@ -6895,8 +6561,8 @@
    </property>
    <property name="geometry">
     <rect>
-     <x>576</x>
-     <y>135</y>
+     <x>575</x>
+     <y>139</y>
      <width>75</width>
      <height>34</height>
     </rect>
@@ -6950,6 +6616,9 @@
    <property name="borderRadius">
     <number>0</number>
    </property>
+   <property name="apparence">
+    <enum>QFrame::Sunken</enum>
+   </property>
   </widget>
   <widget class="ATCMlabel" name="atcmLabel_54">
    <property name="enabled">
@@ -6957,8 +6626,8 @@
    </property>
    <property name="geometry">
     <rect>
-     <x>651</x>
-     <y>67</y>
+     <x>650</x>
+     <y>71</y>
      <width>75</width>
      <height>34</height>
     </rect>
@@ -7019,8 +6688,8 @@
    </property>
    <property name="geometry">
     <rect>
-     <x>501</x>
-     <y>101</y>
+     <x>500</x>
+     <y>105</y>
      <width>75</width>
      <height>34</height>
     </rect>
@@ -7079,7 +6748,7 @@
    <property name="geometry">
     <rect>
      <x>725</x>
-     <y>135</y>
+     <y>139</y>
      <width>75</width>
      <height>34</height>
     </rect>
@@ -7140,8 +6809,8 @@
    </property>
    <property name="geometry">
     <rect>
-     <x>576</x>
-     <y>101</y>
+     <x>575</x>
+     <y>105</y>
      <width>75</width>
      <height>34</height>
     </rect>
@@ -7194,6 +6863,9 @@
    </property>
    <property name="borderRadius">
     <number>0</number>
+   </property>
+   <property name="apparence">
+    <enum>QFrame::Sunken</enum>
    </property>
   </widget>
   <widget class="ATCMlabel" name="atcmLabel_57">
@@ -7202,8 +6874,8 @@
    </property>
    <property name="geometry">
     <rect>
-     <x>576</x>
-     <y>67</y>
+     <x>575</x>
+     <y>71</y>
      <width>75</width>
      <height>34</height>
     </rect>
@@ -7257,6 +6929,9 @@
    <property name="borderRadius">
     <number>0</number>
    </property>
+   <property name="apparence">
+    <enum>QFrame::Sunken</enum>
+   </property>
   </widget>
   <widget class="ATCMlabel" name="atcmLabel_58">
    <property name="enabled">
@@ -7264,8 +6939,8 @@
    </property>
    <property name="geometry">
     <rect>
-     <x>651</x>
-     <y>135</y>
+     <x>650</x>
+     <y>139</y>
      <width>75</width>
      <height>34</height>
     </rect>
@@ -7326,8 +7001,8 @@
    </property>
    <property name="geometry">
     <rect>
-     <x>501</x>
-     <y>135</y>
+     <x>500</x>
+     <y>139</y>
      <width>75</width>
      <height>34</height>
     </rect>
@@ -7385,8 +7060,8 @@
    </property>
    <property name="geometry">
     <rect>
-     <x>651</x>
-     <y>101</y>
+     <x>650</x>
+     <y>105</y>
      <width>75</width>
      <height>34</height>
     </rect>
@@ -7447,8 +7122,8 @@
    </property>
    <property name="geometry">
     <rect>
-     <x>501</x>
-     <y>67</y>
+     <x>500</x>
+     <y>71</y>
      <width>75</width>
      <height>34</height>
     </rect>
@@ -7507,7 +7182,7 @@
    <property name="geometry">
     <rect>
      <x>725</x>
-     <y>101</y>
+     <y>105</y>
      <width>75</width>
      <height>34</height>
     </rect>
@@ -7568,8 +7243,8 @@
    </property>
    <property name="geometry">
     <rect>
-     <x>648</x>
-     <y>237</y>
+     <x>650</x>
+     <y>241</y>
      <width>75</width>
      <height>34</height>
     </rect>
@@ -7630,8 +7305,8 @@
    </property>
    <property name="geometry">
     <rect>
-     <x>648</x>
-     <y>169</y>
+     <x>650</x>
+     <y>173</y>
      <width>75</width>
      <height>34</height>
     </rect>
@@ -7692,8 +7367,8 @@
    </property>
    <property name="geometry">
     <rect>
-     <x>498</x>
-     <y>169</y>
+     <x>500</x>
+     <y>173</y>
      <width>75</width>
      <height>34</height>
     </rect>
@@ -7751,8 +7426,8 @@
    </property>
    <property name="geometry">
     <rect>
-     <x>722</x>
-     <y>169</y>
+     <x>725</x>
+     <y>173</y>
      <width>75</width>
      <height>34</height>
     </rect>
@@ -7813,8 +7488,8 @@
    </property>
    <property name="geometry">
     <rect>
-     <x>573</x>
-     <y>237</y>
+     <x>575</x>
+     <y>241</y>
      <width>75</width>
      <height>34</height>
     </rect>
@@ -7868,6 +7543,9 @@
    <property name="borderRadius">
     <number>0</number>
    </property>
+   <property name="apparence">
+    <enum>QFrame::Sunken</enum>
+   </property>
   </widget>
   <widget class="ATCMlabel" name="atcmLabel_129">
    <property name="enabled">
@@ -7875,8 +7553,8 @@
    </property>
    <property name="geometry">
     <rect>
-     <x>722</x>
-     <y>237</y>
+     <x>725</x>
+     <y>241</y>
      <width>75</width>
      <height>34</height>
     </rect>
@@ -7937,8 +7615,8 @@
    </property>
    <property name="geometry">
     <rect>
-     <x>573</x>
-     <y>203</y>
+     <x>575</x>
+     <y>207</y>
      <width>75</width>
      <height>34</height>
     </rect>
@@ -7992,6 +7670,9 @@
    <property name="borderRadius">
     <number>0</number>
    </property>
+   <property name="apparence">
+    <enum>QFrame::Sunken</enum>
+   </property>
   </widget>
   <widget class="ATCMlabel" name="atcmLabel_67">
    <property name="enabled">
@@ -7999,8 +7680,8 @@
    </property>
    <property name="geometry">
     <rect>
-     <x>648</x>
-     <y>203</y>
+     <x>650</x>
+     <y>207</y>
      <width>75</width>
      <height>34</height>
     </rect>
@@ -8061,8 +7742,8 @@
    </property>
    <property name="geometry">
     <rect>
-     <x>573</x>
-     <y>169</y>
+     <x>575</x>
+     <y>173</y>
      <width>75</width>
      <height>34</height>
     </rect>
@@ -8116,6 +7797,9 @@
    <property name="borderRadius">
     <number>0</number>
    </property>
+   <property name="apparence">
+    <enum>QFrame::Sunken</enum>
+   </property>
   </widget>
   <widget class="ATCMlabel" name="atcmLabel_69">
    <property name="enabled">
@@ -8123,8 +7807,8 @@
    </property>
    <property name="geometry">
     <rect>
-     <x>498</x>
-     <y>203</y>
+     <x>500</x>
+     <y>207</y>
      <width>75</width>
      <height>34</height>
     </rect>
@@ -8182,8 +7866,8 @@
    </property>
    <property name="geometry">
     <rect>
-     <x>498</x>
-     <y>237</y>
+     <x>500</x>
+     <y>241</y>
      <width>75</width>
      <height>34</height>
     </rect>
@@ -8241,8 +7925,8 @@
    </property>
    <property name="geometry">
     <rect>
-     <x>722</x>
-     <y>203</y>
+     <x>725</x>
+     <y>207</y>
      <width>75</width>
      <height>34</height>
     </rect>
@@ -8303,8 +7987,8 @@
    </property>
    <property name="geometry">
     <rect>
-     <x>651</x>
-     <y>341</y>
+     <x>650</x>
+     <y>345</y>
      <width>75</width>
      <height>34</height>
     </rect>
@@ -8365,8 +8049,8 @@
    </property>
    <property name="geometry">
     <rect>
-     <x>651</x>
-     <y>273</y>
+     <x>650</x>
+     <y>277</y>
      <width>75</width>
      <height>34</height>
     </rect>
@@ -8427,8 +8111,8 @@
    </property>
    <property name="geometry">
     <rect>
-     <x>501</x>
-     <y>273</y>
+     <x>500</x>
+     <y>277</y>
      <width>75</width>
      <height>34</height>
     </rect>
@@ -8487,7 +8171,7 @@
    <property name="geometry">
     <rect>
      <x>725</x>
-     <y>273</y>
+     <y>277</y>
      <width>75</width>
      <height>34</height>
     </rect>
@@ -8548,8 +8232,8 @@
    </property>
    <property name="geometry">
     <rect>
-     <x>576</x>
-     <y>341</y>
+     <x>575</x>
+     <y>345</y>
      <width>75</width>
      <height>34</height>
     </rect>
@@ -8603,6 +8287,9 @@
    <property name="borderRadius">
     <number>0</number>
    </property>
+   <property name="apparence">
+    <enum>QFrame::Sunken</enum>
+   </property>
   </widget>
   <widget class="ATCMlabel" name="atcmLabel_132">
    <property name="enabled">
@@ -8611,7 +8298,7 @@
    <property name="geometry">
     <rect>
      <x>725</x>
-     <y>341</y>
+     <y>345</y>
      <width>75</width>
      <height>34</height>
     </rect>
@@ -8672,8 +8359,8 @@
    </property>
    <property name="geometry">
     <rect>
-     <x>576</x>
-     <y>307</y>
+     <x>575</x>
+     <y>311</y>
      <width>75</width>
      <height>34</height>
     </rect>
@@ -8727,6 +8414,9 @@
    <property name="borderRadius">
     <number>0</number>
    </property>
+   <property name="apparence">
+    <enum>QFrame::Sunken</enum>
+   </property>
   </widget>
   <widget class="ATCMlabel" name="atcmLabel_76">
    <property name="enabled">
@@ -8734,8 +8424,8 @@
    </property>
    <property name="geometry">
     <rect>
-     <x>651</x>
-     <y>307</y>
+     <x>650</x>
+     <y>311</y>
      <width>75</width>
      <height>34</height>
     </rect>
@@ -8796,8 +8486,8 @@
    </property>
    <property name="geometry">
     <rect>
-     <x>576</x>
-     <y>273</y>
+     <x>575</x>
+     <y>277</y>
      <width>75</width>
      <height>34</height>
     </rect>
@@ -8851,6 +8541,9 @@
    <property name="borderRadius">
     <number>0</number>
    </property>
+   <property name="apparence">
+    <enum>QFrame::Sunken</enum>
+   </property>
   </widget>
   <widget class="ATCMlabel" name="atcmLabel_78">
    <property name="enabled">
@@ -8858,8 +8551,8 @@
    </property>
    <property name="geometry">
     <rect>
-     <x>501</x>
-     <y>307</y>
+     <x>500</x>
+     <y>311</y>
      <width>75</width>
      <height>34</height>
     </rect>
@@ -8917,8 +8610,8 @@
    </property>
    <property name="geometry">
     <rect>
-     <x>501</x>
-     <y>341</y>
+     <x>500</x>
+     <y>345</y>
      <width>75</width>
      <height>34</height>
     </rect>
@@ -8977,7 +8670,7 @@
    <property name="geometry">
     <rect>
      <x>725</x>
-     <y>307</y>
+     <y>311</y>
      <width>75</width>
      <height>34</height>
     </rect>
@@ -9039,7 +8732,7 @@
    <property name="geometry">
     <rect>
      <x>650</x>
-     <y>442</y>
+     <y>446</y>
      <width>75</width>
      <height>34</height>
     </rect>
@@ -9101,7 +8794,7 @@
    <property name="geometry">
     <rect>
      <x>650</x>
-     <y>374</y>
+     <y>378</y>
      <width>75</width>
      <height>34</height>
     </rect>
@@ -9163,7 +8856,7 @@
    <property name="geometry">
     <rect>
      <x>500</x>
-     <y>374</y>
+     <y>378</y>
      <width>75</width>
      <height>34</height>
     </rect>
@@ -9221,8 +8914,8 @@
    </property>
    <property name="geometry">
     <rect>
-     <x>724</x>
-     <y>374</y>
+     <x>725</x>
+     <y>378</y>
      <width>75</width>
      <height>34</height>
     </rect>
@@ -9284,7 +8977,7 @@
    <property name="geometry">
     <rect>
      <x>575</x>
-     <y>442</y>
+     <y>446</y>
      <width>75</width>
      <height>34</height>
     </rect>
@@ -9338,6 +9031,9 @@
    <property name="borderRadius">
     <number>0</number>
    </property>
+   <property name="apparence">
+    <enum>QFrame::Sunken</enum>
+   </property>
   </widget>
   <widget class="ATCMlabel" name="atcmLabel_135">
    <property name="enabled">
@@ -9345,8 +9041,8 @@
    </property>
    <property name="geometry">
     <rect>
-     <x>724</x>
-     <y>442</y>
+     <x>725</x>
+     <y>446</y>
      <width>75</width>
      <height>34</height>
     </rect>
@@ -9408,7 +9104,7 @@
    <property name="geometry">
     <rect>
      <x>575</x>
-     <y>408</y>
+     <y>412</y>
      <width>75</width>
      <height>34</height>
     </rect>
@@ -9462,6 +9158,9 @@
    <property name="borderRadius">
     <number>0</number>
    </property>
+   <property name="apparence">
+    <enum>QFrame::Sunken</enum>
+   </property>
   </widget>
   <widget class="ATCMlabel" name="atcmLabel_85">
    <property name="enabled">
@@ -9470,7 +9169,7 @@
    <property name="geometry">
     <rect>
      <x>650</x>
-     <y>408</y>
+     <y>412</y>
      <width>75</width>
      <height>34</height>
     </rect>
@@ -9532,7 +9231,7 @@
    <property name="geometry">
     <rect>
      <x>575</x>
-     <y>374</y>
+     <y>378</y>
      <width>75</width>
      <height>34</height>
     </rect>
@@ -9586,6 +9285,9 @@
    <property name="borderRadius">
     <number>0</number>
    </property>
+   <property name="apparence">
+    <enum>QFrame::Sunken</enum>
+   </property>
   </widget>
   <widget class="ATCMlabel" name="atcmLabel_87">
    <property name="enabled">
@@ -9594,7 +9296,7 @@
    <property name="geometry">
     <rect>
      <x>500</x>
-     <y>408</y>
+     <y>412</y>
      <width>75</width>
      <height>34</height>
     </rect>
@@ -9653,7 +9355,7 @@
    <property name="geometry">
     <rect>
      <x>500</x>
-     <y>442</y>
+     <y>446</y>
      <width>75</width>
      <height>34</height>
     </rect>
@@ -9711,8 +9413,8 @@
    </property>
    <property name="geometry">
     <rect>
-     <x>724</x>
-     <y>408</y>
+     <x>725</x>
+     <y>412</y>
      <width>75</width>
      <height>34</height>
     </rect>
@@ -9767,13 +9469,13 @@
     <number>0</number>
    </property>
   </widget>
-  <widget class="QLabel" name="label_5">
+  <widget class="ATCMlabel" name="atcmLabel_137">
    <property name="geometry">
     <rect>
      <x>400</x>
      <y>0</y>
-     <width>71</width>
-     <height>24</height>
+     <width>120</width>
+     <height>25</height>
     </rect>
    </property>
    <property name="font">
@@ -9781,31 +9483,9 @@
      <family>DejaVu Sans</family>
      <pointsize>8</pointsize>
     </font>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background-color: rgb(170, 170, 255);</string>
    </property>
    <property name="text">
-    <string>Can Error:</string>
-   </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
-   </property>
-  </widget>
-  <widget class="ATCMlabel" name="atcmLabel_137">
-   <property name="geometry">
-    <rect>
-     <x>470</x>
-     <y>0</y>
-     <width>61</width>
-     <height>21</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>DejaVu Sans</family>
-     <pointsize>8</pointsize>
-    </font>
+    <string>0</string>
    </property>
    <property name="toolTip">
     <string>errors_can</string>
@@ -9817,7 +9497,7 @@
     <string>errors_can</string>
    </property>
    <property name="prefix">
-    <string/>
+    <string>errors_can=</string>
    </property>
    <property name="refresh">
     <number>200</number>
@@ -9836,8 +9516,8 @@
    </property>
    <property name="bgColor">
     <color>
-     <red>170</red>
-     <green>170</green>
+     <red>191</red>
+     <green>191</green>
      <blue>255</blue>
     </color>
    </property>
@@ -9848,10 +9528,1605 @@
     <number>0</number>
    </property>
   </widget>
-  <zorder>label_5</zorder>
+  <widget class="ATCMled" name="atcmLed_57">
+   <property name="geometry">
+    <rect>
+     <x>503</x>
+     <y>184</y>
+     <width>16</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>DigIn_7_node16</string>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMled widget</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+   <property name="variable">
+    <string>DigIn_7_node16</string>
+   </property>
+   <property name="refresh">
+    <number>200</number>
+   </property>
+   <property name="viewStatus">
+    <bool>true</bool>
+   </property>
+   <property name="visibilityVar">
+    <string/>
+   </property>
+   <property name="onIcon">
+    <iconset>
+     <normaloff>:/on.png</normaloff>:/on.png</iconset>
+   </property>
+   <property name="offIcon">
+    <iconset>
+     <normaloff>:/off.png</normaloff>:/off.png</iconset>
+   </property>
+  </widget>
+  <widget class="ATCMled" name="atcmLed_67">
+   <property name="geometry">
+    <rect>
+     <x>503</x>
+     <y>354</y>
+     <width>16</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>DigIn_7_node21</string>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMled widget</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+   <property name="variable">
+    <string>DigIn_7_node21</string>
+   </property>
+   <property name="refresh">
+    <number>200</number>
+   </property>
+   <property name="viewStatus">
+    <bool>true</bool>
+   </property>
+   <property name="visibilityVar">
+    <string/>
+   </property>
+   <property name="onIcon">
+    <iconset>
+     <normaloff>:/on.png</normaloff>:/on.png</iconset>
+   </property>
+   <property name="offIcon">
+    <iconset>
+     <normaloff>:/off.png</normaloff>:/off.png</iconset>
+   </property>
+  </widget>
+  <widget class="ATCMled" name="atcmLed_25">
+   <property name="geometry">
+    <rect>
+     <x>103</x>
+     <y>354</y>
+     <width>16</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>DigIn_7_node09</string>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMled widget</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+   <property name="variable">
+    <string>DigIn_7_node09</string>
+   </property>
+   <property name="refresh">
+    <number>200</number>
+   </property>
+   <property name="viewStatus">
+    <bool>true</bool>
+   </property>
+   <property name="visibilityVar">
+    <string/>
+   </property>
+   <property name="onIcon">
+    <iconset>
+     <normaloff>:/on.png</normaloff>:/on.png</iconset>
+   </property>
+   <property name="offIcon">
+    <iconset>
+     <normaloff>:/off.png</normaloff>:/off.png</iconset>
+   </property>
+  </widget>
+  <widget class="ATCMled" name="atcmLed_66">
+   <property name="geometry">
+    <rect>
+     <x>503</x>
+     <y>320</y>
+     <width>16</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>DigIn_7_node20</string>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMled widget</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+   <property name="variable">
+    <string>DigIn_7_node20</string>
+   </property>
+   <property name="refresh">
+    <number>200</number>
+   </property>
+   <property name="viewStatus">
+    <bool>true</bool>
+   </property>
+   <property name="visibilityVar">
+    <string/>
+   </property>
+   <property name="onIcon">
+    <iconset>
+     <normaloff>:/on.png</normaloff>:/on.png</iconset>
+   </property>
+   <property name="offIcon">
+    <iconset>
+     <normaloff>:/off.png</normaloff>:/off.png</iconset>
+   </property>
+  </widget>
+  <widget class="ATCMled" name="atcmLed_61">
+   <property name="geometry">
+    <rect>
+     <x>503</x>
+     <y>286</y>
+     <width>16</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>DigIn_7_node19</string>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMled widget</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+   <property name="variable">
+    <string>DigIn_7_node19</string>
+   </property>
+   <property name="refresh">
+    <number>200</number>
+   </property>
+   <property name="viewStatus">
+    <bool>true</bool>
+   </property>
+   <property name="visibilityVar">
+    <string/>
+   </property>
+   <property name="onIcon">
+    <iconset>
+     <normaloff>:/on.png</normaloff>:/on.png</iconset>
+   </property>
+   <property name="offIcon">
+    <iconset>
+     <normaloff>:/off.png</normaloff>:/off.png</iconset>
+   </property>
+  </widget>
+  <widget class="ATCMled" name="atcmLed_12">
+   <property name="geometry">
+    <rect>
+     <x>103</x>
+     <y>184</y>
+     <width>16</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>DigIn_7_node04</string>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMled widget</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+   <property name="variable">
+    <string>DigIn_7_node04</string>
+   </property>
+   <property name="refresh">
+    <number>200</number>
+   </property>
+   <property name="viewStatus">
+    <bool>true</bool>
+   </property>
+   <property name="visibilityVar">
+    <string/>
+   </property>
+   <property name="onIcon">
+    <iconset>
+     <normaloff>:/on.png</normaloff>:/on.png</iconset>
+   </property>
+   <property name="offIcon">
+    <iconset>
+     <normaloff>:/off.png</normaloff>:/off.png</iconset>
+   </property>
+  </widget>
+  <widget class="ATCMled" name="atcmLed_28">
+   <property name="geometry">
+    <rect>
+     <x>103</x>
+     <y>388</y>
+     <width>16</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>DigIn_7_node10</string>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMled widget</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+   <property name="variable">
+    <string>DigIn_7_node10</string>
+   </property>
+   <property name="refresh">
+    <number>200</number>
+   </property>
+   <property name="viewStatus">
+    <bool>true</bool>
+   </property>
+   <property name="visibilityVar">
+    <string/>
+   </property>
+   <property name="onIcon">
+    <iconset>
+     <normaloff>:/on.png</normaloff>:/on.png</iconset>
+   </property>
+   <property name="offIcon">
+    <iconset>
+     <normaloff>:/off.png</normaloff>:/off.png</iconset>
+   </property>
+  </widget>
+  <widget class="ATCMled" name="atcmLed_51">
+   <property name="geometry">
+    <rect>
+     <x>503</x>
+     <y>388</y>
+     <width>16</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>DigIn_7_node22</string>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMled widget</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+   <property name="variable">
+    <string>DigIn_7_node22</string>
+   </property>
+   <property name="refresh">
+    <number>200</number>
+   </property>
+   <property name="viewStatus">
+    <bool>true</bool>
+   </property>
+   <property name="visibilityVar">
+    <string/>
+   </property>
+   <property name="onIcon">
+    <iconset>
+     <normaloff>:/on.png</normaloff>:/on.png</iconset>
+   </property>
+   <property name="offIcon">
+    <iconset>
+     <normaloff>:/off.png</normaloff>:/off.png</iconset>
+   </property>
+  </widget>
+  <widget class="ATCMled" name="atcmLed_50">
+   <property name="geometry">
+    <rect>
+     <x>503</x>
+     <y>218</y>
+     <width>16</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>DigIn_7_node17</string>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMled widget</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+   <property name="variable">
+    <string>DigIn_7_node17</string>
+   </property>
+   <property name="refresh">
+    <number>200</number>
+   </property>
+   <property name="viewStatus">
+    <bool>true</bool>
+   </property>
+   <property name="visibilityVar">
+    <string/>
+   </property>
+   <property name="onIcon">
+    <iconset>
+     <normaloff>:/on.png</normaloff>:/on.png</iconset>
+   </property>
+   <property name="offIcon">
+    <iconset>
+     <normaloff>:/off.png</normaloff>:/off.png</iconset>
+   </property>
+  </widget>
+  <widget class="ATCMled" name="atcmLed_31">
+   <property name="geometry">
+    <rect>
+     <x>103</x>
+     <y>422</y>
+     <width>16</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>DigIn_7_node11</string>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMled widget</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+   <property name="variable">
+    <string>DigIn_7_node11</string>
+   </property>
+   <property name="refresh">
+    <number>200</number>
+   </property>
+   <property name="viewStatus">
+    <bool>true</bool>
+   </property>
+   <property name="visibilityVar">
+    <string/>
+   </property>
+   <property name="onIcon">
+    <iconset>
+     <normaloff>:/on.png</normaloff>:/on.png</iconset>
+   </property>
+   <property name="offIcon">
+    <iconset>
+     <normaloff>:/off.png</normaloff>:/off.png</iconset>
+   </property>
+  </widget>
+  <widget class="ATCMled" name="atcmLed_48">
+   <property name="geometry">
+    <rect>
+     <x>503</x>
+     <y>252</y>
+     <width>16</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>DigIn_7_node18</string>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMled widget</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+   <property name="variable">
+    <string>DigIn_7_node18</string>
+   </property>
+   <property name="refresh">
+    <number>200</number>
+   </property>
+   <property name="viewStatus">
+    <bool>true</bool>
+   </property>
+   <property name="visibilityVar">
+    <string/>
+   </property>
+   <property name="onIcon">
+    <iconset>
+     <normaloff>:/on.png</normaloff>:/on.png</iconset>
+   </property>
+   <property name="offIcon">
+    <iconset>
+     <normaloff>:/off.png</normaloff>:/off.png</iconset>
+   </property>
+  </widget>
+  <widget class="ATCMled" name="atcmLed_16">
+   <property name="geometry">
+    <rect>
+     <x>103</x>
+     <y>252</y>
+     <width>16</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>DigIn_7_node06</string>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMled widget</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+   <property name="variable">
+    <string>DigIn_7_node06</string>
+   </property>
+   <property name="refresh">
+    <number>200</number>
+   </property>
+   <property name="viewStatus">
+    <bool>true</bool>
+   </property>
+   <property name="visibilityVar">
+    <string/>
+   </property>
+   <property name="onIcon">
+    <iconset>
+     <normaloff>:/on.png</normaloff>:/on.png</iconset>
+   </property>
+   <property name="offIcon">
+    <iconset>
+     <normaloff>:/off.png</normaloff>:/off.png</iconset>
+   </property>
+  </widget>
+  <widget class="ATCMled" name="atcmLed_15">
+   <property name="geometry">
+    <rect>
+     <x>103</x>
+     <y>218</y>
+     <width>16</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>DigIn_7_node05</string>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMled widget</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+   <property name="variable">
+    <string>DigIn_7_node05</string>
+   </property>
+   <property name="refresh">
+    <number>200</number>
+   </property>
+   <property name="viewStatus">
+    <bool>true</bool>
+   </property>
+   <property name="visibilityVar">
+    <string/>
+   </property>
+   <property name="onIcon">
+    <iconset>
+     <normaloff>:/on.png</normaloff>:/on.png</iconset>
+   </property>
+   <property name="offIcon">
+    <iconset>
+     <normaloff>:/off.png</normaloff>:/off.png</iconset>
+   </property>
+  </widget>
+  <widget class="ATCMled" name="atcmLed_44">
+   <property name="geometry">
+    <rect>
+     <x>503</x>
+     <y>116</y>
+     <width>16</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>DigIn_7_node14</string>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMled widget</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+   <property name="variable">
+    <string>DigIn_7_node14</string>
+   </property>
+   <property name="refresh">
+    <number>200</number>
+   </property>
+   <property name="viewStatus">
+    <bool>true</bool>
+   </property>
+   <property name="visibilityVar">
+    <string/>
+   </property>
+   <property name="onIcon">
+    <iconset>
+     <normaloff>:/on.png</normaloff>:/on.png</iconset>
+   </property>
+   <property name="offIcon">
+    <iconset>
+     <normaloff>:/off.png</normaloff>:/off.png</iconset>
+   </property>
+  </widget>
+  <widget class="ATCMled" name="atcmLed_34">
+   <property name="geometry">
+    <rect>
+     <x>103</x>
+     <y>456</y>
+     <width>16</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>DigIn_7_node12</string>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMled widget</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+   <property name="variable">
+    <string>DigIn_7_node12</string>
+   </property>
+   <property name="refresh">
+    <number>200</number>
+   </property>
+   <property name="viewStatus">
+    <bool>true</bool>
+   </property>
+   <property name="visibilityVar">
+    <string/>
+   </property>
+   <property name="onIcon">
+    <iconset>
+     <normaloff>:/on.png</normaloff>:/on.png</iconset>
+   </property>
+   <property name="offIcon">
+    <iconset>
+     <normaloff>:/off.png</normaloff>:/off.png</iconset>
+   </property>
+  </widget>
+  <widget class="ATCMled" name="atcmLed_7">
+   <property name="geometry">
+    <rect>
+     <x>103</x>
+     <y>150</y>
+     <width>16</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>DigIn_7_node03</string>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMled widget</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+   <property name="variable">
+    <string>DigIn_7_node03</string>
+   </property>
+   <property name="refresh">
+    <number>200</number>
+   </property>
+   <property name="viewStatus">
+    <bool>true</bool>
+   </property>
+   <property name="visibilityVar">
+    <string/>
+   </property>
+   <property name="onIcon">
+    <iconset>
+     <normaloff>:/on.png</normaloff>:/on.png</iconset>
+   </property>
+   <property name="offIcon">
+    <iconset>
+     <normaloff>:/off.png</normaloff>:/off.png</iconset>
+   </property>
+  </widget>
+  <widget class="ATCMled" name="atcmLed_43">
+   <property name="geometry">
+    <rect>
+     <x>503</x>
+     <y>150</y>
+     <width>16</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>DigIn_7_node15</string>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMled widget</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+   <property name="variable">
+    <string>DigIn_7_node15</string>
+   </property>
+   <property name="refresh">
+    <number>200</number>
+   </property>
+   <property name="viewStatus">
+    <bool>true</bool>
+   </property>
+   <property name="visibilityVar">
+    <string/>
+   </property>
+   <property name="onIcon">
+    <iconset>
+     <normaloff>:/on.png</normaloff>:/on.png</iconset>
+   </property>
+   <property name="offIcon">
+    <iconset>
+     <normaloff>:/off.png</normaloff>:/off.png</iconset>
+   </property>
+  </widget>
+  <widget class="ATCMled" name="atcmLed_19">
+   <property name="geometry">
+    <rect>
+     <x>103</x>
+     <y>286</y>
+     <width>16</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>DigIn_7_node07</string>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMled widget</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+   <property name="variable">
+    <string>DigIn_7_node07</string>
+   </property>
+   <property name="refresh">
+    <number>200</number>
+   </property>
+   <property name="viewStatus">
+    <bool>true</bool>
+   </property>
+   <property name="visibilityVar">
+    <string/>
+   </property>
+   <property name="onIcon">
+    <iconset>
+     <normaloff>:/on.png</normaloff>:/on.png</iconset>
+   </property>
+   <property name="offIcon">
+    <iconset>
+     <normaloff>:/off.png</normaloff>:/off.png</iconset>
+   </property>
+  </widget>
+  <widget class="ATCMled" name="atcmLed_55">
+   <property name="geometry">
+    <rect>
+     <x>503</x>
+     <y>82</y>
+     <width>16</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>DigIn_7_node13</string>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMled widget</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+   <property name="variable">
+    <string>DigIn_7_node13</string>
+   </property>
+   <property name="refresh">
+    <number>200</number>
+   </property>
+   <property name="viewStatus">
+    <bool>true</bool>
+   </property>
+   <property name="visibilityVar">
+    <string/>
+   </property>
+   <property name="onIcon">
+    <iconset>
+     <normaloff>:/on.png</normaloff>:/on.png</iconset>
+   </property>
+   <property name="offIcon">
+    <iconset>
+     <normaloff>:/off.png</normaloff>:/off.png</iconset>
+   </property>
+  </widget>
+  <widget class="ATCMled" name="atcmLed_4">
+   <property name="geometry">
+    <rect>
+     <x>103</x>
+     <y>116</y>
+     <width>16</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>DigIn_7_node02</string>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMled widget</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+   <property name="variable">
+    <string>DigIn_7_node02</string>
+   </property>
+   <property name="refresh">
+    <number>200</number>
+   </property>
+   <property name="viewStatus">
+    <bool>true</bool>
+   </property>
+   <property name="visibilityVar">
+    <string/>
+   </property>
+   <property name="onIcon">
+    <iconset>
+     <normaloff>:/on.png</normaloff>:/on.png</iconset>
+   </property>
+   <property name="offIcon">
+    <iconset>
+     <normaloff>:/off.png</normaloff>:/off.png</iconset>
+   </property>
+  </widget>
+  <widget class="ATCMled" name="atcmLed_60">
+   <property name="geometry">
+    <rect>
+     <x>503</x>
+     <y>422</y>
+     <width>16</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>DigIn_7_node23</string>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMled widget</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+   <property name="variable">
+    <string>DigIn_7_node23</string>
+   </property>
+   <property name="refresh">
+    <number>200</number>
+   </property>
+   <property name="viewStatus">
+    <bool>true</bool>
+   </property>
+   <property name="visibilityVar">
+    <string/>
+   </property>
+   <property name="onIcon">
+    <iconset>
+     <normaloff>:/on.png</normaloff>:/on.png</iconset>
+   </property>
+   <property name="offIcon">
+    <iconset>
+     <normaloff>:/off.png</normaloff>:/off.png</iconset>
+   </property>
+  </widget>
+  <widget class="ATCMled" name="atcmLed_22">
+   <property name="geometry">
+    <rect>
+     <x>103</x>
+     <y>320</y>
+     <width>16</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>DigIn_7_node08</string>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMled widget</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+   <property name="variable">
+    <string>DigIn_7_node08</string>
+   </property>
+   <property name="refresh">
+    <number>200</number>
+   </property>
+   <property name="viewStatus">
+    <bool>true</bool>
+   </property>
+   <property name="visibilityVar">
+    <string/>
+   </property>
+   <property name="onIcon">
+    <iconset>
+     <normaloff>:/on.png</normaloff>:/on.png</iconset>
+   </property>
+   <property name="offIcon">
+    <iconset>
+     <normaloff>:/off.png</normaloff>:/off.png</iconset>
+   </property>
+  </widget>
+  <widget class="ATCMled" name="atcmLed">
+   <property name="geometry">
+    <rect>
+     <x>103</x>
+     <y>82</y>
+     <width>16</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>DigIn_7_node01</string>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMled widget</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+   <property name="variable">
+    <string>DigIn_7_node01</string>
+   </property>
+   <property name="refresh">
+    <number>200</number>
+   </property>
+   <property name="viewStatus">
+    <bool>true</bool>
+   </property>
+   <property name="visibilityVar">
+    <string/>
+   </property>
+   <property name="onIcon">
+    <iconset>
+     <normaloff>:/on.png</normaloff>:/on.png</iconset>
+   </property>
+   <property name="offIcon">
+    <iconset>
+     <normaloff>:/off.png</normaloff>:/off.png</iconset>
+   </property>
+  </widget>
+  <widget class="ATCMled" name="atcmLed_70">
+   <property name="geometry">
+    <rect>
+     <x>503</x>
+     <y>456</y>
+     <width>16</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>DigIn_7_node24</string>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMled widget</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+   <property name="variable">
+    <string>DigIn_7_node24</string>
+   </property>
+   <property name="refresh">
+    <number>200</number>
+   </property>
+   <property name="viewStatus">
+    <bool>true</bool>
+   </property>
+   <property name="visibilityVar">
+    <string/>
+   </property>
+   <property name="onIcon">
+    <iconset>
+     <normaloff>:/on.png</normaloff>:/on.png</iconset>
+   </property>
+   <property name="offIcon">
+    <iconset>
+     <normaloff>:/off.png</normaloff>:/off.png</iconset>
+   </property>
+  </widget>
+  <widget class="ATCMled" name="atcmLed_56">
+   <property name="geometry">
+    <rect>
+     <x>503</x>
+     <y>53</y>
+     <width>16</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>PLC_DigOut_1</string>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMled widget</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+   <property name="variable">
+    <string>PLC_DigOut_1</string>
+   </property>
+   <property name="refresh">
+    <number>200</number>
+   </property>
+   <property name="viewStatus">
+    <bool>true</bool>
+   </property>
+   <property name="visibilityVar">
+    <string/>
+   </property>
+   <property name="onIcon">
+    <iconset>
+     <normaloff>:/on.png</normaloff>:/on.png</iconset>
+   </property>
+   <property name="offIcon">
+    <iconset>
+     <normaloff>:/off.png</normaloff>:/off.png</iconset>
+   </property>
+  </widget>
+  <widget class="ATCMled" name="atcmLed_2">
+   <property name="geometry">
+    <rect>
+     <x>103</x>
+     <y>53</y>
+     <width>16</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>PLC_DigOut_1</string>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMled widget</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+   <property name="variable">
+    <string>PLC_DigOut_1</string>
+   </property>
+   <property name="refresh">
+    <number>200</number>
+   </property>
+   <property name="viewStatus">
+    <bool>true</bool>
+   </property>
+   <property name="visibilityVar">
+    <string/>
+   </property>
+   <property name="onIcon">
+    <iconset>
+     <normaloff>:/on.png</normaloff>:/on.png</iconset>
+   </property>
+   <property name="offIcon">
+    <iconset>
+     <normaloff>:/off.png</normaloff>:/off.png</iconset>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>24</y>
+     <width>35</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 0);</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Box</enum>
+   </property>
+   <property name="text">
+    <string>3</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="ATCMlabel" name="atcmLabel_12">
+   <property name="geometry">
+    <rect>
+     <x>435</x>
+     <y>24</y>
+     <width>75</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+   <property name="toolTip">
+    <string>RTU0_READ_QUEUE</string>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMlabel widget</string>
+   </property>
+   <property name="variable">
+    <string>RTU0_READ_QUEUE</string>
+   </property>
+   <property name="prefix">
+    <string>rq: </string>
+   </property>
+   <property name="refresh">
+    <number>200</number>
+   </property>
+   <property name="max">
+    <string>0</string>
+   </property>
+   <property name="min">
+    <string>0</string>
+   </property>
+   <property name="viewStatus">
+    <bool>false</bool>
+   </property>
+   <property name="visibilityVar">
+    <string/>
+   </property>
+   <property name="bgColor">
+    <color>
+     <red>0</red>
+     <green>255</green>
+     <blue>255</blue>
+    </color>
+   </property>
+   <property name="borderWidth">
+    <number>0</number>
+   </property>
+   <property name="borderRadius">
+    <number>0</number>
+   </property>
+  </widget>
+  <widget class="ATCMlabel" name="atcmLabel_15">
+   <property name="geometry">
+    <rect>
+     <x>510</x>
+     <y>24</y>
+     <width>75</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+   <property name="toolTip">
+    <string>RTU0_WRITE_QUEUE</string>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMlabel widget</string>
+   </property>
+   <property name="variable">
+    <string>RTU0_WRITE_QUEUE</string>
+   </property>
+   <property name="prefix">
+    <string>wq:</string>
+   </property>
+   <property name="refresh">
+    <number>200</number>
+   </property>
+   <property name="max">
+    <string>0</string>
+   </property>
+   <property name="min">
+    <string>0</string>
+   </property>
+   <property name="viewStatus">
+    <bool>false</bool>
+   </property>
+   <property name="visibilityVar">
+    <string/>
+   </property>
+   <property name="bgColor">
+    <color>
+     <red>0</red>
+     <green>255</green>
+     <blue>255</blue>
+    </color>
+   </property>
+   <property name="borderWidth">
+    <number>0</number>
+   </property>
+   <property name="borderRadius">
+    <number>0</number>
+   </property>
+  </widget>
+  <widget class="ATCMlabel" name="atcmLabel_13">
+   <property name="geometry">
+    <rect>
+     <x>687</x>
+     <y>24</y>
+     <width>113</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+   <property name="toolTip">
+    <string>RTU0_COMM_ERRORS</string>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMlabel widget</string>
+   </property>
+   <property name="variable">
+    <string>RTU0_COMM_ERRORS</string>
+   </property>
+   <property name="prefix">
+    <string>er: </string>
+   </property>
+   <property name="refresh">
+    <number>200</number>
+   </property>
+   <property name="max">
+    <string>0</string>
+   </property>
+   <property name="min">
+    <string>0</string>
+   </property>
+   <property name="viewStatus">
+    <bool>false</bool>
+   </property>
+   <property name="visibilityVar">
+    <string/>
+   </property>
+   <property name="bgColor">
+    <color>
+     <red>0</red>
+     <green>255</green>
+     <blue>255</blue>
+    </color>
+   </property>
+   <property name="borderWidth">
+    <number>0</number>
+   </property>
+   <property name="borderRadius">
+    <number>0</number>
+   </property>
+  </widget>
+  <widget class="ATCMlabel" name="atcmLabel_9">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>24</y>
+     <width>75</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+   <property name="toolTip">
+    <string>RTU3_WRITE_QUEUE</string>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMlabel widget</string>
+   </property>
+   <property name="variable">
+    <string>RTU3_WRITE_QUEUE</string>
+   </property>
+   <property name="prefix">
+    <string>wq:</string>
+   </property>
+   <property name="refresh">
+    <number>200</number>
+   </property>
+   <property name="max">
+    <string>0</string>
+   </property>
+   <property name="min">
+    <string>0</string>
+   </property>
+   <property name="viewStatus">
+    <bool>false</bool>
+   </property>
+   <property name="visibilityVar">
+    <string/>
+   </property>
+   <property name="bgColor">
+    <color>
+     <red>255</red>
+     <green>255</green>
+     <blue>0</blue>
+    </color>
+   </property>
+   <property name="borderWidth">
+    <number>0</number>
+   </property>
+   <property name="borderRadius">
+    <number>0</number>
+   </property>
+  </widget>
+  <widget class="ATCMlabel" name="atcmLabel_11">
+   <property name="geometry">
+    <rect>
+     <x>287</x>
+     <y>24</y>
+     <width>113</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+   <property name="toolTip">
+    <string>RTU3_COMM_ERRORS</string>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMlabel widget</string>
+   </property>
+   <property name="variable">
+    <string>RTU3_COMM_ERRORS</string>
+   </property>
+   <property name="prefix">
+    <string>er: </string>
+   </property>
+   <property name="refresh">
+    <number>200</number>
+   </property>
+   <property name="max">
+    <string>0</string>
+   </property>
+   <property name="min">
+    <string>0</string>
+   </property>
+   <property name="viewStatus">
+    <bool>false</bool>
+   </property>
+   <property name="visibilityVar">
+    <string/>
+   </property>
+   <property name="bgColor">
+    <color>
+     <red>255</red>
+     <green>255</green>
+     <blue>0</blue>
+    </color>
+   </property>
+   <property name="borderWidth">
+    <number>0</number>
+   </property>
+   <property name="borderRadius">
+    <number>0</number>
+   </property>
+  </widget>
+  <widget class="ATCMlabel" name="atcmLabel_16">
+   <property name="geometry">
+    <rect>
+     <x>585</x>
+     <y>24</y>
+     <width>113</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+   <property name="toolTip">
+    <string>RTU0_TIMEOUTS</string>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMlabel widget</string>
+   </property>
+   <property name="variable">
+    <string>RTU0_TIMEOUTS</string>
+   </property>
+   <property name="prefix">
+    <string>to:</string>
+   </property>
+   <property name="refresh">
+    <number>200</number>
+   </property>
+   <property name="max">
+    <string>0</string>
+   </property>
+   <property name="min">
+    <string>0</string>
+   </property>
+   <property name="viewStatus">
+    <bool>false</bool>
+   </property>
+   <property name="visibilityVar">
+    <string/>
+   </property>
+   <property name="bgColor">
+    <color>
+     <red>0</red>
+     <green>255</green>
+     <blue>255</blue>
+    </color>
+   </property>
+   <property name="borderWidth">
+    <number>0</number>
+   </property>
+   <property name="borderRadius">
+    <number>0</number>
+   </property>
+  </widget>
+  <widget class="ATCMlabel" name="atcmLabel_7">
+   <property name="geometry">
+    <rect>
+     <x>185</x>
+     <y>24</y>
+     <width>113</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+   <property name="toolTip">
+    <string>RTU3_TIMEOUTS</string>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMlabel widget</string>
+   </property>
+   <property name="variable">
+    <string>RTU3_TIMEOUTS</string>
+   </property>
+   <property name="prefix">
+    <string>to:</string>
+   </property>
+   <property name="refresh">
+    <number>200</number>
+   </property>
+   <property name="max">
+    <string>0</string>
+   </property>
+   <property name="min">
+    <string>0</string>
+   </property>
+   <property name="viewStatus">
+    <bool>false</bool>
+   </property>
+   <property name="visibilityVar">
+    <string/>
+   </property>
+   <property name="bgColor">
+    <color>
+     <red>255</red>
+     <green>255</green>
+     <blue>0</blue>
+    </color>
+   </property>
+   <property name="borderWidth">
+    <number>0</number>
+   </property>
+   <property name="borderRadius">
+    <number>0</number>
+   </property>
+  </widget>
+  <widget class="ATCMlabel" name="atcmLabel_8">
+   <property name="geometry">
+    <rect>
+     <x>35</x>
+     <y>24</y>
+     <width>75</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+   <property name="toolTip">
+    <string>RTU3_READ_QUEUE</string>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMlabel widget</string>
+   </property>
+   <property name="variable">
+    <string>RTU3_READ_QUEUE</string>
+   </property>
+   <property name="prefix">
+    <string>rq: </string>
+   </property>
+   <property name="refresh">
+    <number>200</number>
+   </property>
+   <property name="max">
+    <string>0</string>
+   </property>
+   <property name="min">
+    <string>0</string>
+   </property>
+   <property name="viewStatus">
+    <bool>false</bool>
+   </property>
+   <property name="visibilityVar">
+    <string/>
+   </property>
+   <property name="bgColor">
+    <color>
+     <red>255</red>
+     <green>255</green>
+     <blue>0</blue>
+    </color>
+   </property>
+   <property name="borderWidth">
+    <number>0</number>
+   </property>
+   <property name="borderRadius">
+    <number>0</number>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>400</x>
+     <y>24</y>
+     <width>35</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(0, 255, 255);</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Box</enum>
+   </property>
+   <property name="text">
+    <string>0</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <zorder>label_6</zorder>
   <zorder>label_4</zorder>
   <zorder>atcmLabel_89</zorder>
-  <zorder>label_2</zorder>
   <zorder>atcmLabel_49</zorder>
   <zorder>atcmLabel_47</zorder>
   <zorder>atcmLabel_90</zorder>
@@ -9861,17 +11136,14 @@
   <zorder>atcmLabel_31</zorder>
   <zorder>atcmLabel_17</zorder>
   <zorder>atcmComboBox_7</zorder>
-  <zorder>atcmLabel_5</zorder>
   <zorder>atcmLabel_30</zorder>
   <zorder>atcmLabel_98</zorder>
   <zorder>atcmLabel_27</zorder>
   <zorder>atcmComboBox_23</zorder>
   <zorder>atcmLabel_22</zorder>
   <zorder>atcmLabel_110</zorder>
-  <zorder>label_3</zorder>
   <zorder>atcmComboBox_18</zorder>
   <zorder>atcmLabel_103</zorder>
-  <zorder>atcmLabel_7</zorder>
   <zorder>atcmComboBox_24</zorder>
   <zorder>atcmLabel_111</zorder>
   <zorder>atcmComboBox_20</zorder>
@@ -9897,7 +11169,6 @@
   <zorder>atcmLabel_24</zorder>
   <zorder>atcmLabel_29</zorder>
   <zorder>atcmLabel_94</zorder>
-  <zorder>atcmLabel_14</zorder>
   <zorder>atcmLabel_93</zorder>
   <zorder>atcmLabel_3</zorder>
   <zorder>atcmLabel_109</zorder>
@@ -9917,7 +11188,6 @@
   <zorder>atcmComboBox_8</zorder>
   <zorder>atcmLabel_23</zorder>
   <zorder>atcmComboBox_5</zorder>
-  <zorder>atcmLabel_16</zorder>
   <zorder>atcmLabel_28</zorder>
   <zorder>atcmLabel_97</zorder>
   <zorder>atcmComboBox_22</zorder>
@@ -9925,7 +11195,6 @@
   <zorder>atcmLabel_108</zorder>
   <zorder>atcmLabel_96</zorder>
   <zorder>atcmComboBox_19</zorder>
-  <zorder>atcmLabel_6</zorder>
   <zorder>atcmLabel_107</zorder>
   <zorder>atcmComboBox_21</zorder>
   <zorder>atcmLabel_91</zorder>
@@ -9940,7 +11209,6 @@
   <zorder>atcmButton</zorder>
   <zorder>atcmLabel_40</zorder>
   <zorder>atcmLabel_21</zorder>
-  <zorder>atcmLabel_10</zorder>
   <zorder>atcmLabel_18</zorder>
   <zorder>atcmLabel_112</zorder>
   <zorder>atcmLabel_101</zorder>
@@ -9950,7 +11218,6 @@
   <zorder>atcmLabel_102</zorder>
   <zorder>atcmLabel_106</zorder>
   <zorder>line_3</zorder>
-  <zorder>label_6</zorder>
   <zorder>label_7</zorder>
   <zorder>label_8</zorder>
   <zorder>label_9</zorder>
@@ -10021,10 +11288,46 @@
   <zorder>line_6</zorder>
   <zorder>line_5</zorder>
   <zorder>line_4</zorder>
-  <zorder>line_2</zorder>
   <zorder>atcmLabel_137</zorder>
-  <zorder>line</zorder>
   <zorder>label</zorder>
+  <zorder>line_2</zorder>
+  <zorder>atcmLed_57</zorder>
+  <zorder>atcmLed_67</zorder>
+  <zorder>atcmLed_25</zorder>
+  <zorder>atcmLed_66</zorder>
+  <zorder>atcmLed_61</zorder>
+  <zorder>atcmLed_12</zorder>
+  <zorder>atcmLed_28</zorder>
+  <zorder>atcmLed_51</zorder>
+  <zorder>atcmLed_50</zorder>
+  <zorder>atcmLed_31</zorder>
+  <zorder>atcmLed_48</zorder>
+  <zorder>atcmLed_16</zorder>
+  <zorder>atcmLed_15</zorder>
+  <zorder>atcmLed_44</zorder>
+  <zorder>atcmLed_34</zorder>
+  <zorder>atcmLed_7</zorder>
+  <zorder>atcmLed_43</zorder>
+  <zorder>atcmLed_19</zorder>
+  <zorder>atcmLed_55</zorder>
+  <zorder>atcmLed_4</zorder>
+  <zorder>atcmLed_60</zorder>
+  <zorder>atcmLed_22</zorder>
+  <zorder>atcmLed</zorder>
+  <zorder>atcmLed_70</zorder>
+  <zorder>atcmLed_56</zorder>
+  <zorder>atcmLed_2</zorder>
+  <zorder>label_2</zorder>
+  <zorder>atcmLabel_12</zorder>
+  <zorder>atcmLabel_15</zorder>
+  <zorder>atcmLabel_13</zorder>
+  <zorder>atcmLabel_9</zorder>
+  <zorder>atcmLabel_11</zorder>
+  <zorder>atcmLabel_16</zorder>
+  <zorder>atcmLabel_7</zorder>
+  <zorder>atcmLabel_8</zorder>
+  <zorder>label_3</zorder>
+  <zorder>line</zorder>
  </widget>
  <customwidgets>
   <customwidget>
@@ -10045,6 +11348,11 @@
   <customwidget>
    <class>ATCMlabel</class>
    <extends>QPushButton</extends>
+   <header>atcmplugin.h</header>
+  </customwidget>
+  <customwidget>
+   <class>ATCMled</class>
+   <extends>QLabel</extends>
    <header>atcmplugin.h</header>
   </customwidget>
   <customwidget>
