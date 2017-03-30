@@ -10564,7 +10564,7 @@ ms</string>
     <number>200</number>
    </property>
    <property name="viewStatus">
-    <bool>true</bool>
+    <bool>false</bool>
    </property>
    <property name="visibilityVar">
     <string/>
@@ -10606,7 +10606,7 @@ ms</string>
     <number>200</number>
    </property>
    <property name="viewStatus">
-    <bool>true</bool>
+    <bool>false</bool>
    </property>
    <property name="visibilityVar">
     <string/>

@@ -10,12 +10,11 @@ VAR
 	timer : TON;
 	value : bool := true;
 	timer_ms : UINT := 0;
+	period_ms : UINT := 0;
 	do_second_loop : bool := false;
-	
-END_VAR
 
-	(* increment timer *)
-	timer_ms := timer_ms + 50;
+    INFO : TASKINFO;
+END_VAR
 
 	(* check can status *)
 	if CH0_01_NODERUN = false then
@@ -63,8 +62,9 @@ END_VAR
 		errors_23 := 0;
 		errors_24 := 0;
 	
-		(* 2. reset latency timer *)
+		(* 2. reset latency and rearm timer *)
 		timer_ms := 0;
+		timer (IN := false);
 	
 		(* 3. reset latencies, ... *)
 		latency_01_ms := 0;
@@ -117,7 +117,6 @@ END_VAR
 		min_latency_23_m := 0;
 		min_latency_24_m := 0;
 		
-	
 		max_latency_01_m := 0;
 		max_latency_02_m := 0;
 		max_latency_03_m := 0;
@@ -149,8 +148,16 @@ END_VAR
 		PLC_AnOut_1 := 900;
 		PLC_AnOut_2 := 100;
 
+		(* 5. get the task info *)
+		GetLocalTaskInfo('Task4_Normal_50ms', INFO);
+		period_ms := INT_TO_UINT(TIME_TO_INT(INFO.CYCLE));
+		OutputDebugString(CONCAT('period_ms = ', UINT_TO_STRING(period_ms), ' ms'));
 	end_if;
 
+	(* increment latency value *)
+	timer_ms := timer_ms + period_ms;
+
+	(* touch the timer *)
 	timer (IN := true, PT := T#4s);
 
 	(* FIRST/LAST STEP *)
@@ -160,76 +167,76 @@ END_VAR
 		timer (IN := false);
 	
 		(* 1. check latency errors *)
-		if latency_01_ms = 0 then
+		if latency_01_ms = 0 or NODE_01_STATUS <> 1 then
 			errors_01 := errors_01 + 1;
 		end_if;
-		if latency_02_ms = 0 then
+		if latency_02_ms = 0 or NODE_02_STATUS <> 1 then
 			errors_02 := errors_02 + 1;
 		end_if;
-		if latency_03_ms = 0 then
+		if latency_03_ms = 0 or NODE_03_STATUS <> 1 then
 			errors_03 := errors_03 + 1;
 		end_if;
-		if latency_04_ms = 0 then
+		if latency_04_ms = 0 or NODE_04_STATUS <> 1 then
 			errors_04 := errors_04 + 1;
 		end_if;
-		if latency_05_ms = 0 then
+		if latency_05_ms = 0 or NODE_05_STATUS <> 1 then
 			errors_05 := errors_05 + 1;
 		end_if;
-		if latency_06_ms = 0 then
+		if latency_06_ms = 0 or NODE_06_STATUS <> 1 then
 			errors_06 := errors_06 + 1;
 		end_if;
-		if latency_07_ms = 0 then
+		if latency_07_ms = 0 or NODE_07_STATUS <> 1 then
 			errors_07 := errors_07 + 1;
 		end_if;
-		if latency_08_ms = 0 then
+		if latency_08_ms = 0 or NODE_08_STATUS <> 1 then
 			errors_08 := errors_08 + 1;
 		end_if;
-		if latency_09_ms = 0 then
+		if latency_09_ms = 0 or NODE_09_STATUS <> 1 then
 			errors_09 := errors_09 + 1;
 		end_if;
-		if latency_10_ms = 0 then
+		if latency_10_ms = 0 or NODE_10_STATUS <> 1 then
 			errors_10 := errors_10 + 1;
 		end_if;
-		if latency_11_ms = 0 then
+		if latency_11_ms = 0 or NODE_11_STATUS <> 1 then
 			errors_11 := errors_11 + 1;
 		end_if;
-		if latency_12_ms = 0 then
+		if latency_12_ms = 0 or NODE_12_STATUS <> 1 then
 			errors_12 := errors_12 + 1;
 		end_if;
-		if latency_13_ms = 0 then
+		if latency_13_ms = 0 or NODE_13_STATUS <> 1 then
 			errors_13 := errors_13 + 1;
 		end_if;
-		if latency_14_ms = 0 then
+		if latency_14_ms = 0 or NODE_14_STATUS <> 1 then
 			errors_14 := errors_14 + 1;
 		end_if;
-		if latency_15_ms = 0 then
+		if latency_15_ms = 0 or NODE_15_STATUS <> 1 then
 			errors_15 := errors_15 + 1;
 		end_if;
-		if latency_16_ms = 0 then
+		if latency_16_ms = 0 or NODE_16_STATUS <> 1 then
 			errors_16 := errors_16 + 1;
 		end_if;
-		if latency_17_ms = 0 then
+		if latency_17_ms = 0 or NODE_17_STATUS <> 1 then
 			errors_17 := errors_17 + 1;
 		end_if;
-		if latency_18_ms = 0 then
+		if latency_18_ms = 0 or NODE_18_STATUS <> 1 then
 			errors_18 := errors_18 + 1;
 		end_if;
-		if latency_19_ms = 0 then
+		if latency_19_ms = 0 or NODE_19_STATUS <> 1 then
 			errors_19 := errors_19 + 1;
 		end_if;
-		if latency_20_ms = 0 then
+		if latency_20_ms = 0 or NODE_20_STATUS <> 1 then
 			errors_20 := errors_20 + 1;
 		end_if;
-		if latency_21_ms = 0 then
+		if latency_21_ms = 0 or NODE_21_STATUS <> 1 then
 			errors_21 := errors_21 + 1;
 		end_if;
-		if latency_22_ms = 0 then
+		if latency_22_ms = 0 or NODE_22_STATUS <> 1 then
 			errors_22 := errors_22 + 1;
 		end_if;
-		if latency_23_ms = 0 then
+		if latency_23_ms = 0 or NODE_23_STATUS <> 1 then
 			errors_23 := errors_23 + 1;
 		end_if;
-		if latency_24_ms = 0 then
+		if latency_24_ms = 0 or NODE_24_STATUS <> 1 then
 			errors_24 := errors_24 + 1;
 		end_if;
 

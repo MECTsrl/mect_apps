@@ -9038,7 +9038,7 @@
     <string>0</string>
    </property>
    <property name="viewStatus">
-    <bool>true</bool>
+    <bool>false</bool>
    </property>
    <property name="visibilityVar">
     <string/>
@@ -9097,7 +9097,7 @@
     <string>0</string>
    </property>
    <property name="viewStatus">
-    <bool>true</bool>
+    <bool>false</bool>
    </property>
    <property name="visibilityVar">
     <string/>
@@ -9144,7 +9144,7 @@
     <number>200</number>
    </property>
    <property name="viewStatus">
-    <bool>true</bool>
+    <bool>false</bool>
    </property>
    <property name="visibilityVar">
     <string/>
@@ -9198,7 +9198,7 @@
     <string>0</string>
    </property>
    <property name="viewStatus">
-    <bool>true</bool>
+    <bool>false</bool>
    </property>
    <property name="visibilityVar">
     <string/>
@@ -9245,7 +9245,7 @@
     <number>200</number>
    </property>
    <property name="viewStatus">
-    <bool>true</bool>
+    <bool>false</bool>
    </property>
    <property name="visibilityVar">
     <string/>
@@ -9299,7 +9299,7 @@
     <string>0</string>
    </property>
    <property name="viewStatus">
-    <bool>true</bool>
+    <bool>false</bool>
    </property>
    <property name="visibilityVar">
     <string/>
