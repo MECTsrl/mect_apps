@@ -36,3 +36,7 @@ opt=ncc:0
 [Target.HW119]
 ConnectionTimeout=100
 [Classes.Functions]
+file=set_max_dint.st
+file=set_min_dint.st
+file=manage_node.st
+file=check_node.st

@@ -1,0 +1,5 @@
+L
+1;errors_all      ;FF0000;0.00;1.00;
+1;RTU0_STATUS     ;00FF00;0.00;6.00;
+1;RTU3_STATUS     ;0000FF;0.00;6.00;
+1;PLC_DigOut_1    ;000000;0.00;1.00;
