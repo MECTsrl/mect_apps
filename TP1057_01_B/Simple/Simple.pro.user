@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 2.7.84, 2017-05-17T18:28:53. -->
+<!-- Written by QtCreator 2.7.84, 2017-05-17T18:39:31. -->
 <qtcreator>
  <data>
   <variable>ProjectExplorer.Project.ActiveTarget</variable>
@@ -188,7 +188,7 @@
       <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedRemotePaths"/>
       <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedSysroots"/>
       <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedTimes"/>
-      <value type="QString" key="RemoteLinuxCustomCommandDeploymentStep.CommandLine"></value>
+      <value type="QString" key="RemoteLinuxCustomCommandDeploymentStep.CommandLine">stop</value>
      </valuemap>
      <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.1">
       <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
@@ -280,8 +280,6 @@
  </data>
  <data>
   <variable>ProjectExplorer.Project.UserStickyKeys</variable>
-  <valuelist type="QVariantList">
-   <value type="QString">RemoteLinuxCustomCommandDeploymentStep.CommandLine</value>
-  </valuelist>
+  <valuelist type="QVariantList"/>
  </data>
 </qtcreator>
