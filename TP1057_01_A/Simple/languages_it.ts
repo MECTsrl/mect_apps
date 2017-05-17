@@ -21,7 +21,7 @@
     </message>
     <message>
         <location filename="page100.ui" line="61"/>
-        <location filename="page100.ui" line="262"/>
+        <location filename="page100.ui" line="132"/>
         <source>ATCMlabel widget</source>
         <translation type="unfinished"></translation>
     </message>
@@ -33,66 +33,66 @@
     <message>
         <location filename="page100.ui" line="73"/>
         <location filename="page100.ui" line="76"/>
-        <location filename="page100.ui" line="274"/>
-        <location filename="page100.ui" line="277"/>
+        <location filename="page100.ui" line="144"/>
+        <location filename="page100.ui" line="147"/>
         <source>0</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="page100.ui" line="126"/>
-        <source>Simple</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page100.ui" line="153"/>
-        <source>ATCMbutton widget</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page100.ui" line="156"/>
-        <source>menu</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page100.ui" line="185"/>
-        <location filename="page100.ui" line="188"/>
-        <source>TP1057_01_A</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page100.ui" line="216"/>
-        <source>ATCM QTime</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page100.ui" line="219"/>
-        <source>ATCMtime widget</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page100.ui" line="256"/>
         <source>65535</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="259"/>
-        <location filename="page100.ui" line="265"/>
+        <location filename="page100.ui" line="129"/>
+        <location filename="page100.ui" line="135"/>
         <source>PLC_Version</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="268"/>
+        <location filename="page100.ui" line="138"/>
         <source>Engine: v</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="315"/>
+        <location filename="page100.ui" line="185"/>
         <source>ATCM QDate</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="318"/>
+        <location filename="page100.ui" line="188"/>
         <source>ATCMdate widget</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page100.ui" line="228"/>
+        <source>Simple</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page100.ui" line="250"/>
+        <source>ATCM QTime</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page100.ui" line="253"/>
+        <source>ATCMtime widget</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page100.ui" line="290"/>
+        <source>ATCMbutton widget</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page100.ui" line="293"/>
+        <source>menu</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page100.ui" line="322"/>
+        <location filename="page100.ui" line="325"/>
+        <source>TP1057_01_A</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
