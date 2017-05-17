@@ -90,14 +90,16 @@ SOURCES += \
     check_gotopage_bind.commands = @perl $${ATCM_TEMPLATE_BASE_DIR}/ATCM-template-project/connectbutton.pl \"$$_PRO_FILE_PWD_\"
     check_systemini.commands = @perl $${ATCM_TEMPLATE_BASE_DIR}/ATCM-template-project/check_systemini.pl \"$$_PRO_FILE_\" \"$$_PRO_FILE_PWD_\"
     check_default_font.commands = @perl $${ATCM_TEMPLATE_BASE_DIR}/ATCM-template-project/defaultfont.pl \"$$_PRO_FILE_PWD_\"
+# crosstable_compiler invocation moved in defaultfont.pl (for mect_suite_2.0 projects)
+#    crosstable_compiler.commands = $${QT_LUPDATE_PATH}/ctc -c config/Crosstable.csv -g plc/Crosstable.gvl -i config/Crosstable.h -s config/Crosstable.cpp
 
-	QMAKE_EXTRA_TARGETS += check_missing_file check_undeclared_variable check_gotopage_bind check_systemini check_default_font
-	PRE_TARGETDEPS += check_missing_file check_undeclared_variable check_gotopage_bind check_systemini check_default_font
+        QMAKE_EXTRA_TARGETS += check_missing_file check_undeclared_variable check_gotopage_bind check_systemini check_default_font # crosstable_compiler
+        PRE_TARGETDEPS += check_missing_file check_undeclared_variable check_gotopage_bind check_systemini check_default_font # crosstable_compiler
 }
 
-# default icons
-#RESOURCES += \
-#    defaulticons.qrc
+# system icons
+RESOURCES += \
+    systemicons.qrc
 
 # language
 !isEmpty(QT_LUPDATE_PATH) {
@@ -117,3 +119,4 @@ RESOURCES += \
     languages.qrc
 
 include(./languages.pri)
+
