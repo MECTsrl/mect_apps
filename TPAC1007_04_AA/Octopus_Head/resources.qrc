@@ -1,0 +1,18 @@
+<RCC>
+    <qresource prefix="/icons">
+        <file>icons/0_IDLE.png</file>
+        <file>icons/1_STARTING.png</file>
+        <file>icons/2_READY.png</file>
+        <file>icons/3_TESTING.png</file>
+        <file>icons/4_DONE.png</file>
+        <file>icons/5_RESETTING.png</file>
+        <file>icons/6_STOPPING.png</file>
+        <file>icons/7_ERROR.png</file>
+        <file>icons/NG.png</file>
+        <file>icons/OK.png</file>
+        <file>icons/put.your.icons.here</file>
+        <file>icons/STATUS.svg</file>
+        <file>icons/UNKNOWN.png</file>
+    </qresource>
+    <qresource prefix="/fonts"/>
+</RCC>
