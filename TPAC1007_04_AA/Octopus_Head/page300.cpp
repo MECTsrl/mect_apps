@@ -102,10 +102,11 @@ void page300::updateData()
     // Octopus
     ui->label->setText(QString("A=%1 R=%2") .arg(AUTOMATIC) .arg(DO_REPEAT));
     if (! qtitle.isEmpty() ) {
-        QMessageBox box(this);
-        box.setWindowTitle(qtitle);
-        box.setText(qtext);
-        box.exec();
+
+        ui->atcmButton_message->setText(QString("%1\n\n%2").arg(qtitle).arg(qtext));
+        doWrite_PLC_buzzerOn(1);
+        doWrite_MESSAGE_BOX(1);
+
         qtitle.clear();
         qtext.clear();
     }
@@ -141,4 +142,10 @@ void page300::on_atcmComboBox_TEST_ID_currentIndexChanged(int index)
 {
     index = index;
     doWrite_DO_RELOAD(1);
+}
+
+void page300::on_atcmButton_message_toggled(bool checked)
+{
+    if (checked)
+        doWrite_PLC_buzzerOn(0);
 }

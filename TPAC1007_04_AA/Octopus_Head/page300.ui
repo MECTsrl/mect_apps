@@ -1780,6 +1780,77 @@ ON</string>
     <number>0</number>
    </property>
   </widget>
+  <widget class="ATCMbutton" name="atcmButton_message">
+   <property name="geometry">
+    <rect>
+     <x>48</x>
+     <y>27</y>
+     <width>384</width>
+     <height>217</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+   <property name="toolTip">
+    <string>MESSAGE_BOX</string>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMbutton widget</string>
+   </property>
+   <property name="pageName">
+    <string notr="true"/>
+   </property>
+   <property name="passwordVar">
+    <string/>
+   </property>
+   <property name="statusvar">
+    <string>MESSAGE_BOX</string>
+   </property>
+   <property name="statusReleasedValue">
+    <string>1</string>
+   </property>
+   <property name="statusPressedValue">
+    <string>0</string>
+   </property>
+   <property name="viewStatus">
+    <bool>false</bool>
+   </property>
+   <property name="visibilityVar">
+    <string>MESSAGE_BOX</string>
+   </property>
+   <property name="bgColor">
+    <color alpha="192">
+     <red>170</red>
+     <green>255</green>
+     <blue>255</blue>
+    </color>
+   </property>
+   <property name="text">
+    <string>message</string>
+   </property>
+   <property name="pressText">
+    <string>message</string>
+   </property>
+   <property name="borderWidth">
+    <number>1</number>
+   </property>
+   <property name="borderRadius">
+    <number>64</number>
+   </property>
+   <property name="apparence">
+    <enum>QFrame::Plain</enum>
+   </property>
+  </widget>
   <zorder>label_Start_6</zorder>
   <zorder>atcmComboBox_TEST_ID</zorder>
   <zorder>atcmComboBox</zorder>
@@ -1818,6 +1889,7 @@ ON</string>
   <zorder>atcmLed_DO_RELOAD</zorder>
   <zorder>atcmLabel_2</zorder>
   <zorder>atcmLabel_3</zorder>
+  <zorder>atcmButton_message</zorder>
  </widget>
  <customwidgets>
   <customwidget>

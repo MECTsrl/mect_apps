@@ -125,8 +125,14 @@ END_VAR
 		end_case;
 	
 	STATUS_DONE:
+		if (RESULT = RESULT_NG) then
+			(* bip bip bip bip bip bip bip bip bip bip ... *)
+			PLC_buzzerOn := AUTOMATIC;
+		end_if;
+
 		if (not PLC_DigIn_1) then
 			STATUS := STATUS_STOPPING;
+			PLC_buzzerOn := false;
 			return;
 		end_if;
 		if (AUTOMATIC and RESULT = RESULT_OK) or PLC_DigIn_4 then (* GO *)
@@ -134,6 +140,7 @@ END_VAR
 			STATUS := STATUS_RESETTING;
 	        TEST2_COMMAND := TEST_STATUS_REMOTE;
 	        TESTx_COMMAND := TEST_STATUS_REMOTE;
+			PLC_buzzerOn := false;
 			return;
 		end_if;
 		

@@ -2154,6 +2154,7 @@ ON</source>
         <location filename="page300.ui" line="1087"/>
         <location filename="page300.ui" line="1454"/>
         <location filename="page300.ui" line="1526"/>
+        <location filename="page300.ui" line="1808"/>
         <source>ATCMbutton widget</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2232,6 +2233,7 @@ ON</source>
         <location filename="page300.ui" line="1418"/>
         <location filename="page300.ui" line="1660"/>
         <location filename="page300.ui" line="1663"/>
+        <location filename="page300.ui" line="1823"/>
         <source>0</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2395,6 +2397,24 @@ ON</source>
     <message>
         <location filename="page300.ui" line="1759"/>
         <source>Vfbk </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page300.ui" line="1805"/>
+        <location filename="page300.ui" line="1817"/>
+        <location filename="page300.ui" line="1829"/>
+        <source>MESSAGE_BOX</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page300.ui" line="1820"/>
+        <source>1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page300.ui" line="1839"/>
+        <location filename="page300.ui" line="1842"/>
+        <source>message</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

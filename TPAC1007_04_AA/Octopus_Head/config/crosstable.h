@@ -124,6 +124,12 @@ int doWrite_RESULTS_NG(u_int16_t value);
 int addWrite_RESULTS_NG(u_int16_t value);
 int getStatus_RESULTS_NG(void);
 
+#define ID_MESSAGE_BOX 200
+extern int MESSAGE_BOX;
+int doWrite_MESSAGE_BOX(int value);
+int addWrite_MESSAGE_BOX(int value);
+int getStatus_MESSAGE_BOX(void);
+
 #define ID_RTU_HeartBeat 208
 extern u_int32_t RTU_HeartBeat;
 int doWrite_RTU_HeartBeat(u_int32_t value);

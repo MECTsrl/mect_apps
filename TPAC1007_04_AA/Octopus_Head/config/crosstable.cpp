@@ -133,6 +133,13 @@ u_int16_t RESULTS_NG = 0;
 
 
 /*
+ * Variable MESSAGE_BOX
+ */
+
+int MESSAGE_BOX = 0;
+
+
+/*
  * Variable RTU_HeartBeat
  */
 
@@ -7595,6 +7602,24 @@ int
 getStatus_RESULTS_NG(void)
 {
 	return getStatus(ID_RESULTS_NG);
+}
+
+int
+doWrite_MESSAGE_BOX(int value)
+{
+	return doWrite(ID_MESSAGE_BOX, &value);
+}
+
+int
+addWrite_MESSAGE_BOX(int value)
+{
+	return addWrite(ID_MESSAGE_BOX, &value);
+}
+
+int
+getStatus_MESSAGE_BOX(void)
+{
+	return getStatus(ID_MESSAGE_BOX);
 }
 
 int
@@ -26122,6 +26147,7 @@ update_all(void)
 	retval += readFromDb(ID_RESULT, &RESULT);
 	retval += readFromDb(ID_RESULTS_OK, &RESULTS_OK);
 	retval += readFromDb(ID_RESULTS_NG, &RESULTS_NG);
+	retval += readFromDb(ID_MESSAGE_BOX, &MESSAGE_BOX);
 	retval += readFromDb(ID_RTU_HeartBeat, &RTU_HeartBeat);
 	retval += readFromDb(ID_RTU_DigOut_1, &RTU_DigOut_1);
 	retval += readFromDb(ID_RTU_DigOut_2, &RTU_DigOut_2);

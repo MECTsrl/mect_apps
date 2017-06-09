@@ -35,6 +35,8 @@ private slots:
     void on_atcmComboBox_PRODUCT_ID_currentIndexChanged(int index);
     void on_atcmComboBox_TEST_ID_currentIndexChanged(int index);
 
+    void on_atcmButton_message_toggled(bool checked);
+
 private:
     Ui::page300 *ui;
     // Octopus

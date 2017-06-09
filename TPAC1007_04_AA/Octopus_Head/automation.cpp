@@ -176,6 +176,7 @@ void loop(void)
         }
         switch (substatus) {
         case 0:
+        case 1:
             if (AUTOMATIC || PLC_GO_BUTTON) {
                 if (TEST_STEP_MAX == 0) {
                     return;
@@ -187,9 +188,14 @@ void loop(void)
                         next_step = 1;
                     } else {
                         logStop();
-                        if (RESULTS_OK == TEST_STEP_MAX && RESULTS_NG == 0) {
-                            thePage->messageBox("TEST RESULT", "RESULT = OK\n\nnow PWR_OFF then touch OK");
+                        if (substatus == 0) {
+                            if (RESULTS_OK == TEST_STEP_MAX && RESULTS_NG == 0) {
+                                thePage->messageBox("OK :)", "now PWR_OFF then touch me");
+                            } else {
+                                thePage->messageBox("NG :(", "now PWR_OFF then touch me");
+                            }
                         }
+                        substatus = 1;
                         return;
                     }
                 } else {
