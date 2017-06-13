@@ -54,9 +54,22 @@ page300::page300(QWidget *parent) :
 }
 
 // Octopus
-void page300::messageBox(const char *title, const char *text)
+void page300::messageBox(const int result, const char *text)
 {
-    qtitle = QString(title);
+    switch (result) {
+    case RESULT_OK:
+        qtitle = QString("OK :)");
+        qcolor = QColor(170, 255, 255, 192);
+        break;
+    case RESULT_NG:
+        qtitle = QString("NG :(");
+        qcolor = QColor(255, 127, 127, 192);
+        break;
+    case RESULT_UNKNOWN:
+    default:
+        qtitle = QString("?? :|");
+        qcolor = QColor(255, 255, 170, 192);
+    }
     qtext = QString(text);
 }
 
@@ -104,6 +117,7 @@ void page300::updateData()
     if (! qtitle.isEmpty() ) {
 
         ui->atcmButton_message->setText(QString("%1\n\n%2").arg(qtitle).arg(qtext));
+        ui->atcmButton_message->setBgColor(qcolor);
         doWrite_PLC_buzzerOn(1);
         doWrite_MESSAGE_BOX(1);
 

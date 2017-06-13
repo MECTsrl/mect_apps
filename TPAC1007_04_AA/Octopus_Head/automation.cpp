@@ -20,11 +20,6 @@
 #define TEST_STATUS_REMOTE 0x00D8
 #define TEST_STATUS_DONE   0x002A
 
-// RESULT VALUES
-#define RESULT_UNKNOWN  -1
-#define RESULT_NG       0
-#define RESULT_OK       1
-
 // LOCAL DIGITAL INPUTS
 #define PLC_PWR_SWITCH PLC_DigIn_1
 #define PLC_GO_BUTTON PLC_DigIn_4
@@ -50,10 +45,11 @@ static char product_name[][15] = {
     /*16*/ "TPAC1008_01",
     /*17*/ "TPAC1008_02_AA",
     /*18*/ "TPAC1008_02_AB",
-    /*19*/ "TPAC1008_02_AC",
-    /*20*/ "TPAC1008_02_AD",
-    /*21*/ "TPAC1008_02_AE",
-    /*22*/ "TPAC1008_02_AF"
+    /*19*/ "TPAC1008_02_AD",
+    /*20*/ "TPAC1008_02_AE",
+    /*21*/ "TPAC1008_02_AF",
+    /*22*/ "TPLC100_01_AA",
+    /*23*/ "TPLC100_01_AB"
 };
 #define RECIPE_MAX 2
 static char recipe_name[][3] = {"-", "1", "2"};
@@ -122,20 +118,20 @@ void loop(void)
 
     // fcrts UDP communication test @100 ms
     if (PLC_time == previous_PLC_time) {
-        thePage->messageBox("PLC_time hangup :(", "What happened to fcrts?");
+        thePage->messageBox(RESULT_UNKNOWN, "PLC_time hangup :(\nWhat happened to fcrts?");
     }
     previous_PLC_time = PLC_time;
 
     // LPC RTU3 communication test @ 100ms
     if (previous_PLC_Heartbeat == PLC_Heartbeat) {
-        thePage->messageBox("RTU3 hangup :(", "What happened to LPC?");
+        thePage->messageBox(RESULT_UNKNOWN, "RTU3 hangup :(\nWhat happened to LPC?");
     }
     previous_PLC_Heartbeat = PLC_Heartbeat;
 
     // TPLC005 RTU0 communication test @ 1s
     if ((PLC_time - last_PLC_time) > 1.5) {
         if (previous_RTU_Heartbeat == RTU_HeartBeat) {
-            thePage->messageBox("RTU0 hangup :(", "What happened to TPLC005?");
+            thePage->messageBox(RESULT_UNKNOWN, "RTU0 hangup :(\nWhat happened to TPLC005?");
         }
         last_PLC_time = PLC_time;
         previous_RTU_Heartbeat = RTU_HeartBeat;
@@ -190,9 +186,11 @@ void loop(void)
                         logStop();
                         if (substatus == 0) {
                             if (RESULTS_OK == TEST_STEP_MAX && RESULTS_NG == 0) {
-                                thePage->messageBox("OK :)", "now PWR_OFF then touch me");
+                                thePage->messageBox(RESULT_OK, "now PWR_OFF\nthen touch me");
+                            } else if (RESULTS_NG > 0) {
+                                thePage->messageBox(RESULT_NG, "now PWR_OFF\nthen touch me");
                             } else {
-                                thePage->messageBox("NG :(", "now PWR_OFF then touch me");
+                                thePage->messageBox(RESULT_UNKNOWN, "now PWR_OFF\nthen touch me");
                             }
                         }
                         substatus = 1;

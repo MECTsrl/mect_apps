@@ -62,16 +62,18 @@ END_VAR
     TST2_DigOut_8 := TRUE;
 
 	(* Prey AnIn_5 <-- Horn2 AnOut_4 *) 
-	TSTx_AnIn_5 := TST_AnIn_5;
     TST2_AnOut_4:= TST_AnIn_5; (* only TPAC1007_AB *)
 
-	TSTx_AnIn_6 := TST_AnIn_6;
-	TSTx_AnIn_7 := TST_AnIn_7;
-	TSTx_AnIn_8 := TST_AnIn_8;
-	TSTx_AnIn_9 := TST_AnIn_9;
-	TSTx_AnIn_10:= TST_AnIn_10;
-	TSTx_AnIn_11:= TST_AnIn_11;
-	TSTx_AnIn_12:= TST_AnIn_12;
+	(* No more AnIn_5..12
+		TSTx_AnIn_5 := TST_AnIn_5;
+		TSTx_AnIn_6 := TST_AnIn_6;
+		TSTx_AnIn_7 := TST_AnIn_7;
+		TSTx_AnIn_8 := TST_AnIn_8;
+		TSTx_AnIn_9 := TST_AnIn_9;
+		TSTx_AnIn_10:= TST_AnIn_10;
+		TSTx_AnIn_11:= TST_AnIn_11;
+		TSTx_AnIn_12:= TST_AnIn_12;
+ 	*)
 
     (* we test the AnOut 1..2 by both the local AnIn 1..2 and the Horn TPAC1007_4AA AnIn 1..2 and local DigOut 3..4 *)
     TSTx_AnOut_1 := TST_AnOut_1;

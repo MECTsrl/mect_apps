@@ -8,6 +8,10 @@
 void setup(void);
 void loop(void);
 
+// RESULT VALUES
+#define RESULT_UNKNOWN  -1
+#define RESULT_NG       0
+#define RESULT_OK       1
 
 #include "page300.h"
 void setTheWidget(page300 *w);

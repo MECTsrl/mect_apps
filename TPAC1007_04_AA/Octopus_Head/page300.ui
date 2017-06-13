@@ -961,7 +961,7 @@ ON</string>
     <enum>QFrame::Raised</enum>
    </property>
    <property name="mapping">
-    <string>1;TP1043_01_A;2;TP1043_01_B;3;TP1043_01_C;4;TP1057_01_A;5;TP1057_01_B;6;TP1070_01_A;7;TP1070_01_B;8;TP1070_01_C;9;TP1070_01_D;10;TPAC1006;11;TPAC1007_03;12;TPAC1007_04_AA;13;TPAC1007_04_AB;14;TPAC1007_04_AC;15;TPAC1007_LV;16;TPAC1008_01;17;TPAC1008_02_AA;18;TPAC1008_02_AB;19;TPAC1008_02_AC;20;TPAC1008_02_AD;21;TPAC1008_02_AE;22;TPAC1008_02_AF</string>
+    <string>1;TP1043_01_A;2;TP1043_01_B;3;TP1043_01_C;4;TP1057_01_A;5;TP1057_01_B;6;TP1070_01_A;7;TP1070_01_B;8;TP1070_01_C;9;TP1070_01_D;10;TPAC1006;11;TPAC1007_03;12;TPAC1007_04_AA;13;TPAC1007_04_AB;14;TPAC1007_04_AC;15;TPAC1007_LV;16;TPAC1008_01;17;TPAC1008_02_AA;18;TPAC1008_02_AB;19;TPAC1008_02_AD;20;TPAC1008_02_AE;21;TPAC1008_02_AF;22;TPLC100_01_AA;23;TPLC100_01_AB</string>
    </property>
   </widget>
   <widget class="QLabel" name="label_Qt_Page">
@@ -1792,7 +1792,7 @@ ON</string>
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>12</pointsize>
+     <pointsize>18</pointsize>
     </font>
    </property>
    <property name="checkable">
@@ -1800,6 +1800,9 @@ ON</string>
    </property>
    <property name="checked">
     <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
    </property>
    <property name="toolTip">
     <string>MESSAGE_BOX</string>
@@ -1836,10 +1839,16 @@ ON</string>
     </color>
    </property>
    <property name="text">
-    <string>message</string>
+    <string>OK :)
+
+now PWR_OFF
+then touch me</string>
    </property>
    <property name="pressText">
-    <string>message</string>
+    <string>OK :)
+
+now PWR_OFF
+then touch me</string>
    </property>
    <property name="borderWidth">
     <number>1</number>

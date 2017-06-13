@@ -12,8 +12,9 @@ END_VAR
 	2: (* 0.000 10.000 V *)
 		ValueOut := valueIn / 10;
 	3: (* TCJ 0  600 C*)
-		if valueIn = 300 then ValueOut := 160; (* 300°C --> 1,60 mA *)
-		elsif valueIn = 600 then ValueOut := 260; (* 600°C --> 2,60 mA *)
+		if    valueIn =   0 then ValueOut :=   0; (*   0°C <-->  0.000 mV / 10 Ohm = 0.00 mA *)
+		elsif valueIn = 300 then ValueOut := 163; (* 300°C <--> 16.325 mV / 10 Ohm = 1.63 mA *)
+		elsif valueIn = 600 then ValueOut := 331; (* 600°C <--> 33.096 mV / 10 Ohm = 3.31 mA *)
 		else ValueOut := 0;
 		end_if;
 	4: (* TCK 0 1200 C*)

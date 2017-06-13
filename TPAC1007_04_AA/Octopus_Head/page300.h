@@ -26,7 +26,7 @@ public:
     virtual void reload(void);
     virtual void updateData();
     // Octopus
-    void messageBox(const char *title, const char *text);
+    void messageBox(const int result, const char *text);
     void setMessage(const char *msg);
 
 private slots:
@@ -42,6 +42,7 @@ private:
     // Octopus
     QString qtitle;
     QString qtext;
+    QColor qcolor;
 };
 
 #endif // PAGE300_H

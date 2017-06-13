@@ -2154,7 +2154,7 @@ ON</source>
         <location filename="page300.ui" line="1087"/>
         <location filename="page300.ui" line="1454"/>
         <location filename="page300.ui" line="1526"/>
-        <location filename="page300.ui" line="1808"/>
+        <location filename="page300.ui" line="1811"/>
         <source>ATCMbutton widget</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2233,7 +2233,7 @@ ON</source>
         <location filename="page300.ui" line="1418"/>
         <location filename="page300.ui" line="1660"/>
         <location filename="page300.ui" line="1663"/>
-        <location filename="page300.ui" line="1823"/>
+        <location filename="page300.ui" line="1826"/>
         <source>0</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2267,7 +2267,8 @@ ON</source>
     </message>
     <message>
         <location filename="page300.ui" line="964"/>
-        <source>1;TP1043_01_A;2;TP1043_01_B;3;TP1043_01_C;4;TP1057_01_A;5;TP1057_01_B;6;TP1070_01_A;7;TP1070_01_B;8;TP1070_01_C;9;TP1070_01_D;10;TPAC1006;11;TPAC1007_03;12;TPAC1007_04_AA;13;TPAC1007_04_AB;14;TPAC1007_04_AC;15;TPAC1007_LV;16;TPAC1008_01;17;TPAC1008_02_AA;18;TPAC1008_02_AB;19;TPAC1008_02_AC;20;TPAC1008_02_AD;21;TPAC1008_02_AE;22;TPAC1008_02_AF</source>
+        <source>1;TP1043_01_A;2;TP1043_01_B;3;TP1043_01_C;4;TP1057_01_A;5;TP1057_01_B;6;TP1070_01_A;7;TP1070_01_B;8;TP1070_01_C;9;TP1070_01_D;10;TPAC1006;11;TPAC1007_03;12;TPAC1007_04_AA;13;TPAC1007_04_AB;14;TPAC1007_04_AC;15;TPAC1007_LV;16;TPAC1008_01;17;TPAC1008_02_AA;18;TPAC1008_02_AB;19;TPAC1008_02_AD;20;TPAC1008_02_AE;21;TPAC1008_02_AF;22;TPLC100_01_AA;23;TPLC100_01_AB</source>
+        <oldsource>1;TP1043_01_A;2;TP1043_01_B;3;TP1043_01_C;4;TP1057_01_A;5;TP1057_01_B;6;TP1070_01_A;7;TP1070_01_B;8;TP1070_01_C;9;TP1070_01_D;10;TPAC1006;11;TPAC1007_03;12;TPAC1007_04_AA;13;TPAC1007_04_AB;14;TPAC1007_04_AC;15;TPAC1007_LV;16;TPAC1008_01;17;TPAC1008_02_AA;18;TPAC1008_02_AB;19;TPAC1008_02_AD;20;TPAC1008_02_AE;21;TPAC1008_02_AF;22;TPLC100_01_B</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2400,21 +2401,24 @@ ON</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page300.ui" line="1805"/>
-        <location filename="page300.ui" line="1817"/>
-        <location filename="page300.ui" line="1829"/>
+        <location filename="page300.ui" line="1808"/>
+        <location filename="page300.ui" line="1820"/>
+        <location filename="page300.ui" line="1832"/>
         <source>MESSAGE_BOX</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page300.ui" line="1820"/>
+        <location filename="page300.ui" line="1823"/>
         <source>1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page300.ui" line="1839"/>
         <location filename="page300.ui" line="1842"/>
-        <source>message</source>
+        <location filename="page300.ui" line="1848"/>
+        <source>OK :)
+
+now PWR_OFF
+then touch me</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
