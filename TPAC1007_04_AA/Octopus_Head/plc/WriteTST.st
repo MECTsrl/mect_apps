@@ -61,9 +61,9 @@ END_VAR
     TST2_DigOut_6 := TRUE;
     TST2_DigOut_8 := TRUE;
 
-	(* Prey AnIn_5 <-- Horn2 AnOut_4 *) 
-    TST2_AnOut_4:= TST_AnIn_5; (* only TPAC1007_AB *)
-
+	(* Prey AnIn_5 <-- Horn2 AnOut_4 (only TPAC1007_04_AB) *)
+	TSTx_AnIn_5 := TST_AnIn_5;
+    TST2_AnOut_4:= TST_AnIn_5;
 	(* No more AnIn_5..12
 		TSTx_AnIn_5 := TST_AnIn_5;
 		TSTx_AnIn_6 := TST_AnIn_6;
