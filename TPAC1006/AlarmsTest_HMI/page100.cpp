@@ -102,13 +102,16 @@ page100::~page100()
 
 void page100::on_pushButton_clicked()
 {
-    for (int i = 0; i < _active_alarms_events_.count(); i++)
+    pthread_mutex_lock(&_active_alarms_events_mutex);
     {
-        if (_active_alarms_events_.at(i)->ack == NULL)
+        for (int i = 0; i < _active_alarms_events_.count(); i++)
         {
-            _active_alarms_events_.at(i)->ack = new QDateTime();
+            if (! _active_alarms_events_.at(i)->isack)
+            {
+                _active_alarms_events_.at(i)->ack = QDateTime::currentDateTime();
+                _active_alarms_events_.at(i)->isack = true;
+            }
         }
-        *(_active_alarms_events_.at(i)->ack) = QDateTime::currentDateTime();
-        _active_alarms_events_.at(i)->isack = true;
     }
+    pthread_mutex_unlock(&_active_alarms_events_mutex);
 }

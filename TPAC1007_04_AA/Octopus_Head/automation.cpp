@@ -46,9 +46,9 @@ static char product_name[][15] = {
     /*17*/ "TPAC1008_02_AD",
     /*18*/ "TPAC1008_02_AE",
     /*19*/ "TPAC1008_02_AF",
-    /*20*/ "TPLC100_01_AA" ,
-    /*21*/ "TPLC100_01_AB" ,
-    /*22*/ "TPAC1008_03_AC"
+    /*20*/ "TPAC1008_03_AC",
+    /*21*/ "TPLC100_01_AA" ,
+    /*22*/ "TPLC100_01_AB"
     /*23*/
 };
 #define RECIPE_MAX 2

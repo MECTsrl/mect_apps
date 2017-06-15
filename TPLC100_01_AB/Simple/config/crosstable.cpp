@@ -1872,14 +1872,14 @@ u_int16_t PLC_TempScale = 0;
  * Variable PLC_AnOut_1
  */
 
-u_int16_t PLC_AnOut_1 = 0;
+int16_t PLC_AnOut_1 = 0;
 
 
 /*
  * Variable PLC_AnOut_2
  */
 
-u_int16_t PLC_AnOut_2 = 0;
+int16_t PLC_AnOut_2 = 0;
 
 
 /*
@@ -6847,13 +6847,13 @@ getStatus_PLC_TempScale(void)
 }
 
 int
-doWrite_PLC_AnOut_1(u_int16_t value)
+doWrite_PLC_AnOut_1(int16_t value)
 {
 	return doWrite(ID_PLC_AnOut_1, &value);
 }
 
 int
-addWrite_PLC_AnOut_1(u_int16_t value)
+addWrite_PLC_AnOut_1(int16_t value)
 {
 	return addWrite(ID_PLC_AnOut_1, &value);
 }
@@ -6865,13 +6865,13 @@ getStatus_PLC_AnOut_1(void)
 }
 
 int
-doWrite_PLC_AnOut_2(u_int16_t value)
+doWrite_PLC_AnOut_2(int16_t value)
 {
 	return doWrite(ID_PLC_AnOut_2, &value);
 }
 
 int
-addWrite_PLC_AnOut_2(u_int16_t value)
+addWrite_PLC_AnOut_2(int16_t value)
 {
 	return addWrite(ID_PLC_AnOut_2, &value);
 }

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 2.7.84, 2017-06-14T18:39:15. -->
+<!-- Written by QtCreator 2.7.84, 2017-06-15T18:02:52. -->
 <qtcreator>
  <data>
   <variable>ProjectExplorer.Project.ActiveTarget</variable>
@@ -233,10 +233,12 @@
        <value type="QString">C:/mect_apps/TPAC1007_04_AA/Octopus_Head/recipes/TPAC1008_02_AD/1.csv</value>
        <value type="QString">C:/mect_apps/TPAC1007_04_AA/Octopus_Head/recipes/TPAC1007_03/1.csv</value>
        <value type="QString">C:/mect_apps/TPAC1007_04_AA/Octopus_Head/config/Crosstable.csv</value>
+       <value type="QString">C:/mect_apps/TPAC1007_04_AA/Octopus_Head/recipes/TPAC1008_03_AC/2.csv</value>
        <value type="QString">C:/mect_apps/TPAC1007_04_AA/Octopus_Head/recipes/TPAC1006/2.csv</value>
        <value type="QString">C:/mect_apps/TPAC1007_04_AA/Octopus_Head/recipes/TP1043_01_B/1.csv</value>
        <value type="QString">C:/mect_apps/TPAC1007_04_AA/Octopus_Head/recipes/TPAC1007_03/2.csv</value>
        <value type="QString">C:/mect_apps/TPAC1007_04_AA/Octopus_Head/recipes/TPAC1008_02_AD/2.csv</value>
+       <value type="QString">C:/mect_apps/TPAC1007_04_AA/Octopus_Head/recipes/TPAC1008_03_AC/1.csv</value>
        <value type="QString">C:/mect_apps/TPAC1007_04_AA/Octopus_Head/recipes/TPAC1006/1.csv</value>
        <value type="QString">C:/mect_apps/TPAC1007_04_AA/Octopus_Head/recipes/TPAC1008_01/1.csv</value>
        <value type="QString">C:/mect_apps/TPAC1007_04_AA/Octopus_Head/recipes/Values/2.csv</value>
@@ -252,6 +254,8 @@
        <value type="QString">C:/mect_apps/TPAC1007_04_AA/Octopus_Head/recipes/TP1070_01_C/1.csv</value>
       </valuelist>
       <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedHosts">
+       <value type="QString">192.168.5.113</value>
+       <value type="QString">192.168.5.113</value>
        <value type="QString">192.168.5.113</value>
        <value type="QString">192.168.5.113</value>
        <value type="QString">192.168.5.113</value>
@@ -345,10 +349,12 @@
        <value type="QString">/local/data/recipe/TPAC1008_02_AD</value>
        <value type="QString">/local/data/recipe/TPAC1007_03</value>
        <value type="QString">/local/etc/sysconfig</value>
+       <value type="QString">/local/data/recipe/TPAC1008_03_AC</value>
        <value type="QString">/local/data/recipe/TPAC1006</value>
        <value type="QString">/local/data/recipe/TP1043_01_B</value>
        <value type="QString">/local/data/recipe/TPAC1007_03</value>
        <value type="QString">/local/data/recipe/TPAC1008_02_AD</value>
+       <value type="QString">/local/data/recipe/TPAC1008_03_AC</value>
        <value type="QString">/local/data/recipe/TPAC1006</value>
        <value type="QString">/local/data/recipe/TPAC1008_01</value>
        <value type="QString">/local/data/recipe/Values</value>
@@ -418,62 +424,66 @@
        <value type="QString">C:/Qt485/imx28/rootfs</value>
        <value type="QString">C:/Qt485/imx28/rootfs</value>
        <value type="QString">C:/Qt485/imx28/rootfs</value>
+       <value type="QString">C:/Qt485/imx28/rootfs</value>
+       <value type="QString">C:/Qt485/imx28/rootfs</value>
       </valuelist>
       <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedTimes">
-       <value type="QDateTime">2017-06-14T15:55:06</value>
-       <value type="QDateTime">2017-06-14T15:55:04</value>
-       <value type="QDateTime">2017-06-14T15:55:07</value>
-       <value type="QDateTime">2017-06-14T15:55:05</value>
-       <value type="QDateTime">2017-06-14T15:55:04</value>
+       <value type="QDateTime">2017-06-15T18:02:11</value>
+       <value type="QDateTime">2017-06-15T18:02:09</value>
+       <value type="QDateTime">2017-06-15T18:02:13</value>
+       <value type="QDateTime">2017-06-15T18:02:10</value>
+       <value type="QDateTime">2017-06-15T18:02:09</value>
        <value type="QDateTime">2017-06-09T13:07:41</value>
-       <value type="QDateTime">2017-06-14T15:55:04</value>
-       <value type="QDateTime">2017-06-14T15:55:04</value>
-       <value type="QDateTime">2017-06-14T15:55:07</value>
-       <value type="QDateTime">2017-06-14T15:55:03</value>
-       <value type="QDateTime">2017-06-14T15:55:06</value>
+       <value type="QDateTime">2017-06-15T18:02:10</value>
+       <value type="QDateTime">2017-06-15T18:02:10</value>
+       <value type="QDateTime">2017-06-15T18:02:12</value>
+       <value type="QDateTime">2017-06-15T18:02:09</value>
+       <value type="QDateTime">2017-06-15T18:02:12</value>
        <value type="QDateTime">2017-06-09T13:07:41</value>
-       <value type="QDateTime">2017-06-14T15:55:05</value>
-       <value type="QDateTime">2017-06-14T15:55:05</value>
-       <value type="QDateTime">2017-06-14T15:55:06</value>
+       <value type="QDateTime">2017-06-15T18:02:10</value>
+       <value type="QDateTime">2017-06-15T18:02:11</value>
+       <value type="QDateTime">2017-06-15T18:02:11</value>
        <value type="QDateTime">2017-06-13T10:43:05</value>
-       <value type="QDateTime">2017-06-14T15:55:04</value>
+       <value type="QDateTime">2017-06-15T18:02:10</value>
        <value type="QDateTime">2017-06-13T10:43:05</value>
-       <value type="QDateTime">2017-06-14T15:55:05</value>
-       <value type="QDateTime">2017-06-14T15:55:07</value>
-       <value type="QDateTime">2017-06-14T15:55:05</value>
-       <value type="QDateTime">2017-06-14T15:55:07</value>
-       <value type="QDateTime">2017-06-14T15:55:06</value>
-       <value type="QDateTime">2017-06-14T15:55:07</value>
-       <value type="QDateTime">2017-06-14T15:55:06</value>
-       <value type="QDateTime">2017-06-14T15:55:05</value>
-       <value type="QDateTime">2017-06-14T15:55:06</value>
-       <value type="QDateTime">2017-06-14T15:55:05</value>
-       <value type="QDateTime">2017-06-14T15:55:04</value>
-       <value type="QDateTime">2017-06-14T15:55:06</value>
-       <value type="QDateTime">2017-06-14T15:55:07</value>
-       <value type="QDateTime">2017-06-14T15:55:04</value>
-       <value type="QDateTime">2017-06-14T15:55:06</value>
-       <value type="QDateTime">2017-06-14T15:55:07</value>
-       <value type="QDateTime">2017-06-14T15:55:06</value>
-       <value type="QDateTime">2017-06-14T15:55:05</value>
-       <value type="QDateTime">2017-06-14T15:55:03</value>
-       <value type="QDateTime">2017-06-14T15:55:05</value>
-       <value type="QDateTime">2017-06-14T15:55:04</value>
-       <value type="QDateTime">2017-06-14T15:55:05</value>
-       <value type="QDateTime">2017-06-14T15:55:06</value>
-       <value type="QDateTime">2017-06-14T15:55:05</value>
-       <value type="QDateTime">2017-06-14T15:55:06</value>
-       <value type="QDateTime">2017-06-14T15:55:07</value>
-       <value type="QDateTime">2017-06-14T15:55:04</value>
-       <value type="QDateTime">2017-06-14T15:55:06</value>
-       <value type="QDateTime">2017-06-14T15:55:04</value>
-       <value type="QDateTime">2017-06-14T15:55:09</value>
-       <value type="QDateTime">2017-06-14T15:55:04</value>
-       <value type="QDateTime">2017-06-14T15:55:04</value>
-       <value type="QDateTime">2017-06-14T15:55:04</value>
-       <value type="QDateTime">2017-06-14T15:55:06</value>
-       <value type="QDateTime">2017-06-14T15:55:04</value>
-       <value type="QDateTime">2017-06-14T15:55:05</value>
+       <value type="QDateTime">2017-06-15T18:02:11</value>
+       <value type="QDateTime">2017-06-15T18:02:12</value>
+       <value type="QDateTime">2017-06-15T18:02:10</value>
+       <value type="QDateTime">2017-06-15T18:02:12</value>
+       <value type="QDateTime">2017-06-15T18:02:11</value>
+       <value type="QDateTime">2017-06-15T18:02:12</value>
+       <value type="QDateTime">2017-06-15T18:02:11</value>
+       <value type="QDateTime">2017-06-15T18:02:10</value>
+       <value type="QDateTime">2017-06-15T18:02:11</value>
+       <value type="QDateTime">2017-06-15T18:02:10</value>
+       <value type="QDateTime">2017-06-15T18:02:09</value>
+       <value type="QDateTime">2017-06-15T18:02:12</value>
+       <value type="QDateTime">2017-06-15T18:02:12</value>
+       <value type="QDateTime">2017-06-15T18:02:09</value>
+       <value type="QDateTime">2017-06-15T18:02:12</value>
+       <value type="QDateTime">2017-06-15T18:02:12</value>
+       <value type="QDateTime">2017-06-15T18:02:11</value>
+       <value type="QDateTime">2017-06-15T18:02:10</value>
+       <value type="QDateTime">2017-06-15T18:02:09</value>
+       <value type="QDateTime">2017-06-15T18:02:12</value>
+       <value type="QDateTime">2017-06-15T18:02:10</value>
+       <value type="QDateTime">2017-06-15T18:02:09</value>
+       <value type="QDateTime">2017-06-15T18:02:10</value>
+       <value type="QDateTime">2017-06-15T18:02:11</value>
+       <value type="QDateTime">2017-06-15T18:02:12</value>
+       <value type="QDateTime">2017-06-15T18:02:10</value>
+       <value type="QDateTime">2017-06-15T18:02:11</value>
+       <value type="QDateTime">2017-06-15T18:02:12</value>
+       <value type="QDateTime">2017-06-15T18:02:09</value>
+       <value type="QDateTime">2017-06-15T18:02:11</value>
+       <value type="QDateTime">2017-06-15T18:02:09</value>
+       <value type="QDateTime">2017-06-15T18:02:15</value>
+       <value type="QDateTime">2017-06-15T18:02:09</value>
+       <value type="QDateTime">2017-06-15T18:02:09</value>
+       <value type="QDateTime">2017-06-15T18:02:09</value>
+       <value type="QDateTime">2017-06-15T18:02:11</value>
+       <value type="QDateTime">2017-06-15T18:02:09</value>
+       <value type="QDateTime">2017-06-15T18:02:10</value>
       </valuelist>
       <value type="bool" key="RemoteLinux.GenericDirectUploadStep.Incremental">false</value>
      </valuemap>
