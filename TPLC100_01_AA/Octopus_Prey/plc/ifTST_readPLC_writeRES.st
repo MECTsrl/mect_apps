@@ -36,9 +36,8 @@ END_VAR
     if (TST_AnOut_1   ) then ; end_if;
     if (TST_AnOut_2   ) then ; end_if;
 
-    if (TST_Tamb      ) then RES_Tamb := PLC_Tamb; end_if;
+    if (TST_Tamb      ) then RES_Tamb := PLC_CJT_X12; end_if;
 
-	if (TST_RTU1_RD   ) then RES_RTU1_RD := FBS_RTU1_RD; end_if;
-	if (TST_RTU3_RD   ) then RES_RTU3_RD := FBS_RTU3_RD; end_if;
+	if (TST_CAN1_RD   ) then RES_CAN1_RD := CAN_DigIn_1; end_if;
 
 END_FUNCTION

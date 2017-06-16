@@ -12,7 +12,7 @@ INSTALLS += target
 
 config.files = config/Crosstable.csv config/system.ini
 config.path = /local/etc/sysconfig
-config.files += config/iomap0.cmg config/network0.cmg 
+config.files += config/iomap0.cmg config/network0.cmg config/iomap1.cmg config/network1.cmg
 
 splash.files = config/splash.png
 splash.path = /local/etc/sysconfig/img

@@ -52,9 +52,8 @@ END_VAR
 
 	    if (TST_Tamb      ) then RES_Tamb := 0; end_if;
 	   
-		if (TST_RTU3_WR   ) then RTU_RTU_WR := VAL_RTU3_WR; end_if;
-	
-		if (TST_RTU3_RD   ) then RES_RTU3_RD := 0; end_if;
+		if (TST_CAN1_WR   ) then CAN_DigOut_1 := VAL_CAN1_WR; end_if;
+		if (TST_CAN1_RD   ) then RES_CAN1_RD := 0; end_if;
 
 	elsif substatus = 1 then
 

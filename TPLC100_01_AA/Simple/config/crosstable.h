@@ -1613,15 +1613,15 @@ int addWrite_PLC_TempScale(u_int16_t value);
 int getStatus_PLC_TempScale(void);
 
 #define ID_PLC_AnOut_1 5371
-extern u_int16_t PLC_AnOut_1;
-int doWrite_PLC_AnOut_1(u_int16_t value);
-int addWrite_PLC_AnOut_1(u_int16_t value);
+extern int16_t PLC_AnOut_1;
+int doWrite_PLC_AnOut_1(int16_t value);
+int addWrite_PLC_AnOut_1(int16_t value);
 int getStatus_PLC_AnOut_1(void);
 
 #define ID_PLC_AnOut_2 5372
-extern u_int16_t PLC_AnOut_2;
-int doWrite_PLC_AnOut_2(u_int16_t value);
-int addWrite_PLC_AnOut_2(u_int16_t value);
+extern int16_t PLC_AnOut_2;
+int doWrite_PLC_AnOut_2(int16_t value);
+int addWrite_PLC_AnOut_2(int16_t value);
 int getStatus_PLC_AnOut_2(void);
 
 #define ID_PLC_AnInConf_1 5373
