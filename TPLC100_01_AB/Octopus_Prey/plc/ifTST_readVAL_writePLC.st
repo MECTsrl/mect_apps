@@ -12,15 +12,29 @@ END_VAR
 	    if (TST_DigIn_2 ) then RES_DigIn_2 := 0; end_if;
 	    if (TST_DigIn_3 ) then RES_DigIn_3 := 0; end_if;
 	    if (TST_DigIn_4 ) then RES_DigIn_4 := 0; end_if;
+		if (TST_DigIn_5 ) then RES_DigIn_5 := 0; end_if;
+	    if (TST_DigIn_6 ) then RES_DigIn_6 := 0; end_if;
+	    if (TST_DigIn_7 ) then RES_DigIn_7 := 0; end_if;
+	    if (TST_DigIn_8 ) then RES_DigIn_8 := 0; end_if;
 
-	    if (TST_DigOut_1) then PLC_DigOut_1 := VAL_DigOut_1; end_if;
-	    if (TST_DigOut_2) then PLC_DigOut_2 := VAL_DigOut_2; end_if;
-	    if (TST_DigOut_3) then PLC_DigOut_3 := VAL_DigOut_3; end_if;
-	    if (TST_DigOut_4) then PLC_DigOut_4 := VAL_DigOut_4; end_if;
-	    if (TST_DigOut_5) then PLC_DigOut_5 := VAL_DigOut_5; end_if;
-	    if (TST_DigOut_6) then PLC_DigOut_6 := VAL_DigOut_6; end_if;
-	    if (TST_DigOut_7) then PLC_DigOut_7 := VAL_DigOut_7; end_if;
-	    if (TST_DigOut_8) then PLC_DigOut_8 := VAL_DigOut_8; end_if;
+		if (TST_DigIn_9 ) then RES_DigIn_9 := 0; end_if;
+	    if (TST_DigIn_10) then RES_DigIn_10:= 0; end_if;
+	    if (TST_DigIn_11) then RES_DigIn_11:= 0; end_if;
+	    if (TST_DigIn_12) then RES_DigIn_12:= 0; end_if;
+		if (TST_DigIn_13) then RES_DigIn_13:= 0; end_if;
+	    if (TST_DigIn_14) then RES_DigIn_14:= 0; end_if;
+	    if (TST_DigIn_15) then RES_DigIn_15:= 0; end_if;
+	    if (TST_DigIn_16) then RES_DigIn_16:= 0; end_if;
+
+	    if (TST_DigOut_1) then PLC_DigOutEn_1 := 1; PLC_DigOut_1 := VAL_DigOut_1; else PLC_DigOutEn_1 := 0; end_if;
+	    if (TST_DigOut_2) then PLC_DigOutEn_2 := 1; PLC_DigOut_2 := VAL_DigOut_2; else PLC_DigOutEn_2 := 0; end_if;
+	    if (TST_DigOut_3) then PLC_DigOutEn_3 := 1; PLC_DigOut_3 := VAL_DigOut_3; else PLC_DigOutEn_3 := 0; end_if;
+	    if (TST_DigOut_4) then PLC_DigOutEn_4 := 1; PLC_DigOut_4 := VAL_DigOut_4; else PLC_DigOutEn_4 := 0; end_if;
+	    if (TST_DigOut_5) then PLC_DigOutEn_5 := 1; PLC_DigOut_5 := VAL_DigOut_5; else PLC_DigOutEn_5 := 0; end_if;
+	    if (TST_DigOut_6) then PLC_DigOutEn_6 := 1; PLC_DigOut_6 := VAL_DigOut_6; else PLC_DigOutEn_6 := 0; end_if;
+	    if (TST_DigOut_7) then PLC_DigOutEn_7 := 1; PLC_DigOut_7 := VAL_DigOut_7; else PLC_DigOutEn_7 := 0; end_if;
+	    if (TST_DigOut_8) then PLC_DigOutEn_8 := 1; PLC_DigOut_8 := VAL_DigOut_8; else PLC_DigOutEn_8 := 0; end_if;
+
 		if (TST_AnIn_1  ) then PLC_AnInConf_1 := 0; RES_AnIn_1 := 0; end_if; 
 	    if (TST_AnIn_2  ) then PLC_AnInConf_2 := 0; RES_AnIn_2 := 0; end_if;
 		if (TST_AnIn_3  ) then PLC_AnInConf_3 := 0; RES_AnIn_3 := 0; end_if; 
