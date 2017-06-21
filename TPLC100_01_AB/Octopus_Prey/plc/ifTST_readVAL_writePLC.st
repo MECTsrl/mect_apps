@@ -73,12 +73,12 @@ END_VAR
 
 	    if (TST_AnOut_1 ) then
 			if (VAL_AnOutConf_1 = 3) then
-				PLC_AnOutConf_1 := 3; PLC_AnOut_1 := VAL_AnOut_1; (* [%] PWM *)
+				PLC_AnOutConf_1 := 3; (* [%] PWM *)
 			end_if;
 		end_if;
 	    if (TST_AnOut_2 ) then 
 			if (VAL_AnOutConf_2 = 3) then
-				PLC_AnOutConf_2 := 3; PLC_AnOut_2 := VAL_AnOut_2; (* [%] PWM *)
+				PLC_AnOutConf_2 := 3; (* [%] PWM *)
 			end_if;
 		end_if;
 
@@ -97,6 +97,17 @@ END_VAR
 	    if (TST_AnIn_10 ) then PLC_AnInConf_10:= VAL_AnInConf_10; end_if;
 	    if (TST_AnIn_11 ) then PLC_AnInConf_11:= VAL_AnInConf_11; end_if;
 	    if (TST_AnIn_12 ) then PLC_AnInConf_12:= VAL_AnInConf_12; end_if;
+
+	    if (TST_AnOut_1 ) then
+			if (VAL_AnOutConf_1 = 3) then
+				PLC_AnOut_1 := VAL_AnOut_1; (* [%] PWM *)
+			end_if;
+		end_if;
+	    if (TST_AnOut_2 ) then 
+			if (VAL_AnOutConf_2 = 3) then
+				PLC_AnOut_2 := VAL_AnOut_2; (* [%] PWM *)
+			end_if;
+		end_if;
 
 	end_if;
 
