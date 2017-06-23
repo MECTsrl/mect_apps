@@ -3616,5 +3616,20 @@ ms</source>
         <source>RTU0_COMM_ERRORS</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <location filename="page300.ui" line="1532"/>
+        <source>VPN off</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page300.ui" line="1560"/>
+        <source>WiFi off</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page300.ui" line="1588"/>
+        <source>Mobile off</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 </TS>

@@ -442,6 +442,7 @@
         <location filename="page100.ui" line="5925"/>
         <location filename="page100.ui" line="6084"/>
         <location filename="page100.ui" line="6966"/>
+        <location filename="page100.ui" line="8230"/>
         <source>ATCMbutton widget</source>
         <translation type="unfinished"></translation>
     </message>
@@ -902,6 +903,12 @@
         <location filename="page100.ui" line="8125"/>
         <location filename="page100.ui" line="8131"/>
         <source>PLC_AnOutConf_1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page100.ui" line="8252"/>
+        <location filename="page100.ui" line="8255"/>
+        <source>AnIn_5..12 := PT100</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
