@@ -235,9 +235,9 @@
 3;P;S_TCP_DigIn_3   ;UINT     ;0   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;4015;221 ;16  ;[RW]
 3;P;S_TCP_DigOut_4  ;UINT     ;0   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;4016;221 ;16  ;[RW]
 ;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
+1;P;is_WLAN0_ON     ;BIT      ;0   ;PLC       ;               ;    ;    ;    ;238 ;3   ;[RW]isUP_wlan0()
+1;P;is_PPP0_ON      ;BIT      ;0   ;PLC       ;               ;    ;    ;    ;238 ;3   ;[RW]isUP_ppp0()
+1;P;is_TUN0_ON      ;BIT      ;0   ;PLC       ;               ;    ;    ;    ;238 ;3   ;[RW]isUP_tun0()
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
@@ -5299,7 +5299,7 @@
 ;;;;;;;;;;;;
 1;P;PLC_DigIn_1     ;BYTE_BIT ;1   ;CANOPEN   ;               ;0   ;1   ;1   ;5300;55  ;[RO]
 1;P;PLC_DigIn_2     ;BYTE_BIT ;2   ;CANOPEN   ;               ;0   ;1   ;1   ;5300;55  ;[RO]
-1;P;PLC_DigIn_3     ;BYTE_BIT ;3   ;CANOPEN   ;               ;0   ;1   ;1   ;5300;55  ;[RO]
+1;F;PLC_DigIn_3     ;BYTE_BIT ;3   ;CANOPEN   ;               ;0   ;1   ;1   ;5300;55  ;[RO]
 1;P;PLC_DigIn_4     ;BYTE_BIT ;4   ;CANOPEN   ;               ;0   ;1   ;1   ;5300;55  ;[RO]
 1;P;PLC_DigIn_5     ;BYTE_BIT ;5   ;CANOPEN   ;               ;0   ;1   ;1   ;5300;55  ;[RO]
 1;P;PLC_DigIn_6     ;BYTE_BIT ;6   ;CANOPEN   ;               ;0   ;1   ;1   ;5300;55  ;[RO]
@@ -5309,7 +5309,7 @@
 1;P;PLC_DigOut_1    ;BYTE_BIT ;1   ;CANOPEN   ;               ;0   ;1   ;3   ;5300;55  ;[RW]
 1;P;PLC_DigOut_2    ;BYTE_BIT ;2   ;CANOPEN   ;               ;0   ;1   ;3   ;5300;55  ;[RW]
 1;P;PLC_DigOut_3    ;BYTE_BIT ;3   ;CANOPEN   ;               ;0   ;1   ;3   ;5300;55  ;[RW]
-1;P;PLC_DigOut_4    ;BYTE_BIT ;4   ;CANOPEN   ;               ;0   ;1   ;3   ;5300;55  ;[RW]
+1;F;PLC_DigOut_4    ;BYTE_BIT ;4   ;CANOPEN   ;               ;0   ;1   ;3   ;5300;55  ;[RW]
 1;P;PLC_DigOut_5    ;BYTE_BIT ;5   ;CANOPEN   ;               ;0   ;1   ;3   ;5300;55  ;[RW]
 1;P;PLC_DigOut_6    ;BYTE_BIT ;6   ;CANOPEN   ;               ;0   ;1   ;3   ;5300;55  ;[RW]
 1;P;PLC_DigOut_7    ;BYTE_BIT ;7   ;CANOPEN   ;               ;0   ;1   ;3   ;5300;55  ;[RW]
@@ -5322,8 +5322,8 @@
 1;P;PLC_Revisione   ;UINT     ;0   ;CANOPEN   ;               ;0   ;1   ;6   ;5300;55  ;[RO]
 1;P;PLC_StatusReg   ;UINT     ;0   ;CANOPEN   ;               ;0   ;1   ;7   ;5300;55  ;[RO]
 1;P;PLC_Heartbeat   ;UINT     ;0   ;CANOPEN   ;               ;0   ;1   ;8   ;5300;55  ;[RO]
-1;P;PLC_AnIn_1      ;INT      ;3   ;CANOPEN   ;               ;0   ;1   ;9   ;5300;55  ;[RO]
-1;P;PLC_AnIn_2      ;INT      ;3   ;CANOPEN   ;               ;0   ;1   ;10  ;5300;55  ;[RO]
+1;F;PLC_AnIn_1      ;INT      ;3   ;CANOPEN   ;               ;0   ;1   ;9   ;5300;55  ;[RO]
+1;F;PLC_AnIn_2      ;INT      ;3   ;CANOPEN   ;               ;0   ;1   ;10  ;5300;55  ;[RO]
 1;P;PLC_AnIn_3      ;INT      ;3   ;CANOPEN   ;               ;0   ;1   ;11  ;5300;55  ;[RO]
 1;P;PLC_AnIn_4      ;INT      ;3   ;CANOPEN   ;               ;0   ;1   ;12  ;5300;55  ;[RO]
 1;P;PLC_EncoderCo_Lo;UINT     ;1   ;CANOPEN   ;               ;0   ;1   ;13  ;5300;55  ;[RO]

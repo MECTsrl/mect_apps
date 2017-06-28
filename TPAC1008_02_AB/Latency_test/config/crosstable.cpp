@@ -308,6 +308,27 @@ u_int16_t S_TCP_DigOut_4 = 0;
 
 
 /*
+ * Variable is_WLAN0_ON	[ isUP_wlan0() ]
+ */
+
+int is_WLAN0_ON = 0;
+
+
+/*
+ * Variable is_PPP0_ON	[ isUP_ppp0() ]
+ */
+
+int is_PPP0_ON = 0;
+
+
+/*
+ * Variable is_TUN0_ON	[ isUP_tun0() ]
+ */
+
+int is_TUN0_ON = 0;
+
+
+/*
  * Variable RTU0_TYPE_PORT
  */
 
@@ -2879,6 +2900,60 @@ int
 getStatus_S_TCP_DigOut_4(void)
 {
 	return getStatus(ID_S_TCP_DigOut_4);
+}
+
+int
+doWrite_is_WLAN0_ON(int value)
+{
+	return doWrite(ID_is_WLAN0_ON, &value);
+}
+
+int
+addWrite_is_WLAN0_ON(int value)
+{
+	return addWrite(ID_is_WLAN0_ON, &value);
+}
+
+int
+getStatus_is_WLAN0_ON(void)
+{
+	return getStatus(ID_is_WLAN0_ON);
+}
+
+int
+doWrite_is_PPP0_ON(int value)
+{
+	return doWrite(ID_is_PPP0_ON, &value);
+}
+
+int
+addWrite_is_PPP0_ON(int value)
+{
+	return addWrite(ID_is_PPP0_ON, &value);
+}
+
+int
+getStatus_is_PPP0_ON(void)
+{
+	return getStatus(ID_is_PPP0_ON);
+}
+
+int
+doWrite_is_TUN0_ON(int value)
+{
+	return doWrite(ID_is_TUN0_ON, &value);
+}
+
+int
+addWrite_is_TUN0_ON(int value)
+{
+	return addWrite(ID_is_TUN0_ON, &value);
+}
+
+int
+getStatus_is_TUN0_ON(void)
+{
+	return getStatus(ID_is_TUN0_ON);
 }
 
 int
@@ -7697,6 +7772,9 @@ update_all(void)
 	retval += readFromDb(ID_S_TCP_AnIn_2, &S_TCP_AnIn_2);
 	retval += readFromDb(ID_S_TCP_DigIn_3, &S_TCP_DigIn_3);
 	retval += readFromDb(ID_S_TCP_DigOut_4, &S_TCP_DigOut_4);
+	retval += readFromDb(ID_is_WLAN0_ON, &is_WLAN0_ON);
+	retval += readFromDb(ID_is_PPP0_ON, &is_PPP0_ON);
+	retval += readFromDb(ID_is_TUN0_ON, &is_TUN0_ON);
 	retval += readFromDb(ID_RTU0_TYPE_PORT, &RTU0_TYPE_PORT);
 	retval += readFromDb(ID_RTU0_BAUDRATE, &RTU0_BAUDRATE);
 	retval += readFromDb(ID_RTU0_STATUS, &RTU0_STATUS);

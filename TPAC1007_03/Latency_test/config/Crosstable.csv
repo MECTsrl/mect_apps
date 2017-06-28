@@ -190,22 +190,22 @@
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
-2;F;RTUbis_AnIn_1   ;INT      ;3   ;RTU_SRV   ;               ;0   ;1   ;3001;193 ;4   ;[RW]
-2;F;RTUbis_AnIn_2   ;INT      ;3   ;RTU_SRV   ;               ;0   ;1   ;3002;193 ;4   ;[RW]
-2;F;RTUbis_DigIn_3  ;WORD_BIT ;3   ;RTU_SRV   ;               ;0   ;1   ;3003;193 ;4   ;[RW]
-2;F;RTUbis_DigOut_4 ;WORD_BIT ;4   ;RTU_SRV   ;               ;0   ;1   ;3004;193 ;4   ;[RO]
-1;P;RTUbis_RISING   ;BIT      ;0   ;PLC       ;               ;    ;    ;    ;197 ;2   ;[EV RTUbis_DigOut_4 RISING]
-1;P;RTUbis_FALLING  ;BIT      ;0   ;PLC       ;               ;    ;    ;    ;197 ;2   ;[EV RTUbis_DigOut_4 FALLING]
+1;P;LOC_RISING      ;BIT      ;0   ;PLC       ;               ;    ;    ;    ;193 ;2   ;[EV PLC_DigIn_5 RISING]
+1;P;LOC_FALLING     ;BIT      ;0   ;PLC       ;               ;    ;    ;    ;193 ;2   ;[EV PLC_DigIn_5 FALLING]
 ;;;;;;;;;;;;
-3;P;TCP_AnIn_1      ;INT      ;3   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;4001;200 ;4   ;[RW]
-3;P;TCP_AnIn_2      ;INT      ;3   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;4002;200 ;4   ;[RW]
-3;P;TCP_DigIn_3     ;WORD_BIT ;3   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;4003;200 ;4   ;[RW]
-3;P;TCP_DigOut_4    ;WORD_BIT ;4   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;4004;200 ;4   ;[RO]
-1;P;TCP_RISING      ;BIT      ;0   ;PLC       ;               ;    ;    ;    ;204 ;2   ;[EV TCP_DigOut_4 RISING]
-1;P;TCP_FALLING     ;BIT      ;0   ;PLC       ;               ;    ;    ;    ;204 ;2   ;[EV TCP_DigOut_4 FALLING]
+2;F;RTUbis_AnIn_1   ;INT      ;3   ;RTU_SRV   ;               ;0   ;1   ;3001;196 ;4   ;[RW]
+2;F;RTUbis_AnIn_2   ;INT      ;3   ;RTU_SRV   ;               ;0   ;1   ;3002;196 ;4   ;[RW]
+2;V;RTUbis_DigIn_3  ;WORD_BIT ;3   ;RTU_SRV   ;               ;0   ;1   ;3003;196 ;4   ;[RW]
+2;V;RTUbis_DigOut_4 ;WORD_BIT ;4   ;RTU_SRV   ;               ;0   ;1   ;3004;196 ;4   ;[RO]
+1;P;RTUbis_RISING   ;BIT      ;0   ;PLC       ;               ;    ;    ;    ;200 ;2   ;[EV RTUbis_DigOut_4 RISING]
+1;P;RTUbis_FALLING  ;BIT      ;0   ;PLC       ;               ;    ;    ;    ;200 ;2   ;[EV RTUbis_DigOut_4 FALLING]
 ;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
+3;F;TCP_AnIn_1      ;INT      ;3   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;4001;203 ;4   ;[RW]
+3;F;TCP_AnIn_2      ;INT      ;3   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;4002;203 ;4   ;[RW]
+3;V;TCP_DigIn_3     ;WORD_BIT ;3   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;4003;203 ;4   ;[RW]
+3;V;TCP_DigOut_4    ;WORD_BIT ;4   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;4004;203 ;4   ;[RO]
+1;P;TCP_RISING      ;BIT      ;0   ;PLC       ;               ;    ;    ;    ;207 ;2   ;[EV TCP_DigOut_4 RISING]
+1;P;TCP_FALLING     ;BIT      ;0   ;PLC       ;               ;    ;    ;    ;207 ;2   ;[EV TCP_DigOut_4 FALLING]
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
@@ -5312,7 +5312,7 @@
 1;P;PLC_AnOutConf_1 ;UINT     ;0   ;RTU       ;               ;3   ;20  ;5   ;5300;45  ;[RW]
 1;P;PLC_DigIn_1     ;WORD_BIT ;1   ;RTU       ;               ;3   ;20  ;6   ;5300;45  ;[RO]
 1;P;PLC_DigIn_2     ;WORD_BIT ;2   ;RTU       ;               ;3   ;20  ;6   ;5300;45  ;[RO]
-1;P;PLC_DigIn_3     ;WORD_BIT ;3   ;RTU       ;               ;3   ;20  ;6   ;5300;45  ;[RO]
+1;V;PLC_DigIn_3     ;WORD_BIT ;3   ;RTU       ;               ;3   ;20  ;6   ;5300;45  ;[RO]
 1;P;PLC_DigIn_4     ;WORD_BIT ;4   ;RTU       ;               ;3   ;20  ;6   ;5300;45  ;[RO]
 1;P;PLC_DigIn_5     ;WORD_BIT ;5   ;RTU       ;               ;3   ;20  ;6   ;5300;45  ;[RO]
 1;P;PLC_DigIn_6     ;WORD_BIT ;6   ;RTU       ;               ;3   ;20  ;6   ;5300;45  ;[RO]
@@ -5322,8 +5322,8 @@
 1;P;PLC_DigIn_10    ;WORD_BIT ;10  ;RTU       ;               ;3   ;20  ;6   ;5300;45  ;[RO]
 1;P;PLC_DigIn_11    ;WORD_BIT ;11  ;RTU       ;               ;3   ;20  ;6   ;5300;45  ;[RO]
 1;P;PLC_DigIn_12    ;WORD_BIT ;12  ;RTU       ;               ;3   ;20  ;6   ;5300;45  ;[RO]
-1;P;PLC_AnIn_1      ;INT      ;3   ;RTU       ;               ;3   ;20  ;7   ;5300;45  ;[RO]
-1;P;PLC_AnIn_2      ;INT      ;3   ;RTU       ;               ;3   ;20  ;8   ;5300;45  ;[RO]
+1;F;PLC_AnIn_1      ;INT      ;3   ;RTU       ;               ;3   ;20  ;7   ;5300;45  ;[RO]
+1;F;PLC_AnIn_2      ;INT      ;3   ;RTU       ;               ;3   ;20  ;8   ;5300;45  ;[RO]
 1;P;PLC_Tamb        ;INT      ;1   ;RTU       ;               ;3   ;20  ;9   ;5300;45  ;[RO]
 1;P;PLC_Encoder     ;UDINT    ;0   ;RTU       ;               ;3   ;20  ;10  ;5300;45  ;[RO]
 1;P;PLC_DigOut_1    ;BYTE_BIT ;1   ;RTU       ;               ;3   ;20  ;12  ;5300;45  ;[RW]
@@ -5331,9 +5331,9 @@
 1;P;PLC_DigOut_3    ;BYTE_BIT ;3   ;RTU       ;               ;3   ;20  ;12  ;5300;45  ;[RW]
 1;P;PLC_DigOut_4    ;BYTE_BIT ;4   ;RTU       ;               ;3   ;20  ;12  ;5300;45  ;[RW]
 1;P;PLC_DigOut_5    ;BYTE_BIT ;5   ;RTU       ;               ;3   ;20  ;12  ;5300;45  ;[RW]
-1;P;PLC_DigOut_6    ;BYTE_BIT ;6   ;RTU       ;               ;3   ;20  ;12  ;5300;45  ;[RW]
+1;V;PLC_DigOut_6    ;BYTE_BIT ;6   ;RTU       ;               ;3   ;20  ;12  ;5300;45  ;[RW]
 1;P;PLC_DigOut_7    ;BYTE_BIT ;7   ;RTU       ;               ;3   ;20  ;12  ;5300;45  ;[RW]
-1;P;PLC_DigOut_8    ;BYTE_BIT ;8   ;RTU       ;               ;3   ;20  ;12  ;5300;45  ;[RW]
+1;V;PLC_DigOut_8    ;BYTE_BIT ;8   ;RTU       ;               ;3   ;20  ;12  ;5300;45  ;[RW]
 1;P;PLC_AnOut_1     ;INT      ;2   ;RTU       ;               ;3   ;20  ;13  ;5300;45  ;[RW]
 1;P;PLC_EncEnable   ;UINT     ;0   ;RTU       ;               ;3   ;20  ;14  ;5300;45  ;[RW]
 1;P;PLC_EncoderReset;UINT     ;0   ;RTU       ;               ;3   ;20  ;15  ;5300;45  ;[RW]

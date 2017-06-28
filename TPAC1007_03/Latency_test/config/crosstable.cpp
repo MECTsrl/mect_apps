@@ -28,6 +28,20 @@
 #include "global_var.h"
 
 /*
+ * Variable LOC_RISING
+ */
+
+int LOC_RISING = 0;
+
+
+/*
+ * Variable LOC_FALLING
+ */
+
+int LOC_FALLING = 0;
+
+
+/*
  * Variable RTUbis_AnIn_1
  */
 
@@ -1824,6 +1838,42 @@ int PLC_ResetValues = 0;
  */
 
 int PLC_buzzerOn = 0;
+
+int
+doWrite_LOC_RISING(int value)
+{
+	return doWrite(ID_LOC_RISING, &value);
+}
+
+int
+addWrite_LOC_RISING(int value)
+{
+	return addWrite(ID_LOC_RISING, &value);
+}
+
+int
+getStatus_LOC_RISING(void)
+{
+	return getStatus(ID_LOC_RISING);
+}
+
+int
+doWrite_LOC_FALLING(int value)
+{
+	return doWrite(ID_LOC_FALLING, &value);
+}
+
+int
+addWrite_LOC_FALLING(int value)
+{
+	return addWrite(ID_LOC_FALLING, &value);
+}
+
+int
+getStatus_LOC_FALLING(void)
+{
+	return getStatus(ID_LOC_FALLING);
+}
 
 int
 doWrite_RTUbis_AnIn_1(int16_t value)
@@ -6457,6 +6507,8 @@ update_all(void)
 {
 	int retval = 0;
 
+	retval += readFromDb(ID_LOC_RISING, &LOC_RISING);
+	retval += readFromDb(ID_LOC_FALLING, &LOC_FALLING);
 	retval += readFromDb(ID_RTUbis_AnIn_1, &RTUbis_AnIn_1);
 	retval += readFromDb(ID_RTUbis_AnIn_2, &RTUbis_AnIn_2);
 	retval += readFromDb(ID_RTUbis_DigIn_3, &RTUbis_DigIn_3);

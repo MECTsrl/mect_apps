@@ -274,6 +274,24 @@ int doWrite_S_TCP_DigOut_4(u_int16_t value);
 int addWrite_S_TCP_DigOut_4(u_int16_t value);
 int getStatus_S_TCP_DigOut_4(void);
 
+#define ID_is_WLAN0_ON 238
+extern int is_WLAN0_ON;	/* isUP_wlan0() */
+int doWrite_is_WLAN0_ON(int value);
+int addWrite_is_WLAN0_ON(int value);
+int getStatus_is_WLAN0_ON(void);
+
+#define ID_is_PPP0_ON 239
+extern int is_PPP0_ON;	/* isUP_ppp0() */
+int doWrite_is_PPP0_ON(int value);
+int addWrite_is_PPP0_ON(int value);
+int getStatus_is_PPP0_ON(void);
+
+#define ID_is_TUN0_ON 240
+extern int is_TUN0_ON;	/* isUP_tun0() */
+int doWrite_is_TUN0_ON(int value);
+int addWrite_is_TUN0_ON(int value);
+int getStatus_is_TUN0_ON(void);
+
 #define ID_RTU0_TYPE_PORT 5000
 extern u_int32_t RTU0_TYPE_PORT;
 int doWrite_RTU0_TYPE_PORT(u_int32_t value);
