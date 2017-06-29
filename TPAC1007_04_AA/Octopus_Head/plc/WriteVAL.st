@@ -124,7 +124,7 @@ END_VAR
 		2: VAL2_DigOut_3 := 0; VAL2_AnInConf_1 := 2; (* [V] 0..10 *)
 		3: VAL2_DigOut_3 := 0; VAL2_AnInConf_1 := 2; (* [%] PWM --> [V] *)
 		end_case;
-		VAL2_AnInFltr_1 := 0; (*16;*)
+		VAL2_AnInFltr_1 := 10;
 	end_if;
 
 	if TST_AnOut_2  then
@@ -136,7 +136,7 @@ END_VAR
 		2: VAL2_DigOut_4 := 0; VAL2_AnInConf_2 := 2; (* [V] 0..10 *)
 		3: VAL2_DigOut_4 := 0; VAL2_AnInConf_2 := 2; (* [%] PWM --> [V] *)
 		end_case;
-		VAL2_AnInFltr_2 := 0; (*16;*)
+		VAL2_AnInFltr_2 := 10;
 	end_if;
 
 	if TST_AnOut_3  then
