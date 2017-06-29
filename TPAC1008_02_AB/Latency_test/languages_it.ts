@@ -16,6 +16,7 @@
     <message>
         <location filename="page100.ui" line="98"/>
         <location filename="page100.ui" line="110"/>
+        <location filename="page100.ui" line="4245"/>
         <source>PLC_DigIn_3</source>
         <translation type="unfinished"></translation>
     </message>
@@ -26,8 +27,8 @@
         <location filename="page100.ui" line="731"/>
         <location filename="page100.ui" line="1485"/>
         <location filename="page100.ui" line="1635"/>
-        <location filename="page100.ui" line="3959"/>
-        <location filename="page100.ui" line="4001"/>
+        <location filename="page100.ui" line="3867"/>
+        <location filename="page100.ui" line="3909"/>
         <source>ATCMled widget</source>
         <translation type="unfinished"></translation>
     </message>
@@ -59,7 +60,7 @@
     <message>
         <location filename="page100.ui" line="192"/>
         <location filename="page100.ui" line="198"/>
-        <location filename="page100.ui" line="3925"/>
+        <location filename="page100.ui" line="4183"/>
         <source>PLC_AnIn_2</source>
         <translation type="unfinished"></translation>
     </message>
@@ -171,8 +172,10 @@
         <location filename="page100.ui" line="3510"/>
         <location filename="page100.ui" line="3563"/>
         <location filename="page100.ui" line="3566"/>
-        <location filename="page100.ui" line="3895"/>
-        <location filename="page100.ui" line="3928"/>
+        <location filename="page100.ui" line="4159"/>
+        <location filename="page100.ui" line="4186"/>
+        <location filename="page100.ui" line="4248"/>
+        <location filename="page100.ui" line="4275"/>
         <source>0</source>
         <translation type="unfinished"></translation>
     </message>
@@ -205,9 +208,9 @@
         <location filename="page100.ui" line="2195"/>
         <location filename="page100.ui" line="2452"/>
         <location filename="page100.ui" line="2938"/>
-        <location filename="page100.ui" line="4049"/>
-        <location filename="page100.ui" line="4112"/>
-        <location filename="page100.ui" line="4175"/>
+        <location filename="page100.ui" line="3957"/>
+        <location filename="page100.ui" line="4020"/>
+        <location filename="page100.ui" line="4083"/>
         <source>ATCMbutton widget</source>
         <translation type="unfinished"></translation>
     </message>
@@ -262,8 +265,10 @@ Values</oldsource>
     <message>
         <location filename="page100.ui" line="2264"/>
         <location filename="page100.ui" line="2270"/>
-        <location filename="page100.ui" line="3877"/>
-        <location filename="page100.ui" line="3910"/>
+        <location filename="page100.ui" line="4144"/>
+        <location filename="page100.ui" line="4171"/>
+        <location filename="page100.ui" line="4233"/>
+        <location filename="page100.ui" line="4260"/>
         <source>PLC_time</source>
         <translation type="unfinished"></translation>
     </message>
@@ -290,14 +295,8 @@ Values</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="3870"/>
-        <source>Y1=PLC_AnIn_1
-Y2=PLC_AnIn_2</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page100.ui" line="3956"/>
-        <location filename="page100.ui" line="3968"/>
+        <location filename="page100.ui" line="3864"/>
+        <location filename="page100.ui" line="3876"/>
         <source>CH0_01_NODEGOOD</source>
         <translation type="unfinished"></translation>
     </message>
@@ -320,7 +319,7 @@ Y2=PLC_AnIn_2</source>
     <message>
         <location filename="page100.ui" line="904"/>
         <location filename="page100.ui" line="910"/>
-        <location filename="page100.ui" line="3892"/>
+        <location filename="page100.ui" line="4156"/>
         <source>PLC_AnIn_1</source>
         <translation type="unfinished"></translation>
     </message>
@@ -550,6 +549,7 @@ Y2=PLC_AnIn_2</source>
     <message>
         <location filename="page100.ui" line="2449"/>
         <location filename="page100.ui" line="2461"/>
+        <location filename="page100.ui" line="4272"/>
         <source>PLC_DigOut_4</source>
         <translation type="unfinished"></translation>
     </message>
@@ -690,79 +690,102 @@ Y2=PLC_AnIn_2</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="3898"/>
-        <location filename="page100.ui" line="3931"/>
-        <source>10</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page100.ui" line="3998"/>
-        <location filename="page100.ui" line="4010"/>
+        <location filename="page100.ui" line="3906"/>
+        <location filename="page100.ui" line="3918"/>
         <source>CH0_01_NODERUN</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="4210"/>
+        <location filename="page100.ui" line="4118"/>
         <source>VPN ON</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="3874"/>
+        <location filename="page100.ui" line="4137"/>
+        <source>Y1=PLC_AnIn_1
+Y2=PLC_AnIn_2</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page100.ui" line="4141"/>
+        <location filename="page100.ui" line="4230"/>
         <source>ATCMgraph widget</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="3880"/>
-        <location filename="page100.ui" line="3913"/>
+        <location filename="page100.ui" line="4147"/>
+        <location filename="page100.ui" line="4174"/>
+        <location filename="page100.ui" line="4236"/>
+        <location filename="page100.ui" line="4263"/>
         <source>PLC_timeMin</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="3883"/>
-        <location filename="page100.ui" line="3916"/>
+        <location filename="page100.ui" line="4150"/>
+        <location filename="page100.ui" line="4177"/>
+        <location filename="page100.ui" line="4239"/>
+        <location filename="page100.ui" line="4266"/>
         <source>PLC_timeMax</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="4046"/>
-        <location filename="page100.ui" line="4058"/>
+        <location filename="page100.ui" line="4162"/>
+        <location filename="page100.ui" line="4189"/>
+        <source>10</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page100.ui" line="4226"/>
+        <source>Y1=PLC_DigIn_3
+Y2=PLC_DigOut_4</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page100.ui" line="4251"/>
+        <location filename="page100.ui" line="4278"/>
+        <source>1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page100.ui" line="3954"/>
+        <location filename="page100.ui" line="3966"/>
         <source>is_WLAN0_ON</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="4084"/>
+        <location filename="page100.ui" line="3992"/>
         <source>WiFi ON</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="4109"/>
-        <location filename="page100.ui" line="4121"/>
+        <location filename="page100.ui" line="4017"/>
+        <location filename="page100.ui" line="4029"/>
         <source>is_PPP0_ON</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="4147"/>
+        <location filename="page100.ui" line="4055"/>
         <source>Mobile ON</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="4172"/>
-        <location filename="page100.ui" line="4184"/>
+        <location filename="page100.ui" line="4080"/>
+        <location filename="page100.ui" line="4092"/>
         <source>is_TUN0_ON</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="4207"/>
+        <location filename="page100.ui" line="4115"/>
         <source>VPN off</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="4081"/>
+        <location filename="page100.ui" line="3989"/>
         <source>WiFi off</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="4144"/>
+        <location filename="page100.ui" line="4052"/>
         <source>Mobile off</source>
         <translation type="unfinished"></translation>
     </message>

@@ -19,7 +19,7 @@ void loop(void)
         // in PLC application
 
         // default graph window
-        doWrite_PLC_timeWin(30);
+        doWrite_PLC_timeWin(15);
 
         // enable logging
         logStart();
