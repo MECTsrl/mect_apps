@@ -192,8 +192,8 @@
 ;;;;;;;;;;;;
 2;P;RTU_AnInConf_1  ;UINT     ;0   ;RTU       ;               ;3   ;1   ;40  ;193 ;8   ;[RW]
 2;P;RTU_AnInConf_2  ;UINT     ;0   ;RTU       ;               ;3   ;1   ;41  ;193 ;8   ;[RW]
-2;F;RTU_AnIn_1      ;INT      ;2   ;RTU       ;               ;3   ;1   ;42  ;193 ;8   ;[RO]
-2;F;RTU_AnIn_2      ;INT      ;2   ;RTU       ;               ;3   ;1   ;43  ;193 ;8   ;[RO]
+2;F;RTU_AnIn_1      ;INT      ;3   ;RTU       ;               ;3   ;1   ;42  ;193 ;8   ;[RO]
+2;F;RTU_AnIn_2      ;INT      ;3   ;RTU       ;               ;3   ;1   ;43  ;193 ;8   ;[RO]
 2;P;RTU_DigDir_3    ;WORD_BIT ;3   ;RTU       ;               ;3   ;1   ;44  ;193 ;8   ;[RW]
 2;P;RTU_DigDir_4    ;WORD_BIT ;4   ;RTU       ;               ;3   ;1   ;44  ;193 ;8   ;[RW]
 2;F;RTU_DigIn_3     ;WORD_BIT ;3   ;RTU       ;               ;3   ;1   ;45  ;193 ;8   ;[RO]
