@@ -190,22 +190,22 @@
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
-1;P;LOC_RISING      ;BIT      ;0   ;PLC       ;               ;    ;    ;    ;193 ;2   ;[EV PLC_DigIn_5 RISING]
-1;P;LOC_FALLING     ;BIT      ;0   ;PLC       ;               ;    ;    ;    ;193 ;2   ;[EV PLC_DigIn_5 FALLING]
+;;;;;;;;;;;;
+;;;;;;;;;;;;
 ;;;;;;;;;;;;
 2;F;RTUbis_AnIn_1   ;INT      ;3   ;RTU_SRV   ;               ;0   ;1   ;3001;196 ;4   ;[RW]
 2;F;RTUbis_AnIn_2   ;INT      ;3   ;RTU_SRV   ;               ;0   ;1   ;3002;196 ;4   ;[RW]
 2;V;RTUbis_DigIn_3  ;WORD_BIT ;3   ;RTU_SRV   ;               ;0   ;1   ;3003;196 ;4   ;[RW]
 2;V;RTUbis_DigOut_4 ;WORD_BIT ;4   ;RTU_SRV   ;               ;0   ;1   ;3004;196 ;4   ;[RO]
-1;P;RTUbis_RISING   ;BIT      ;0   ;PLC       ;               ;    ;    ;    ;200 ;2   ;[EV RTUbis_DigOut_4 RISING]
-1;P;RTUbis_FALLING  ;BIT      ;0   ;PLC       ;               ;    ;    ;    ;200 ;2   ;[EV RTUbis_DigOut_4 FALLING]
+;;;;;;;;;;;;
+;;;;;;;;;;;;
 ;;;;;;;;;;;;
 3;F;TCP_AnIn_1      ;INT      ;3   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;4001;203 ;4   ;[RW]
 3;F;TCP_AnIn_2      ;INT      ;3   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;4002;203 ;4   ;[RW]
 3;V;TCP_DigIn_3     ;WORD_BIT ;3   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;4003;203 ;4   ;[RW]
 3;V;TCP_DigOut_4    ;WORD_BIT ;4   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;4004;203 ;4   ;[RO]
-1;P;TCP_RISING      ;BIT      ;0   ;PLC       ;               ;    ;    ;    ;207 ;2   ;[EV TCP_DigOut_4 RISING]
-1;P;TCP_FALLING     ;BIT      ;0   ;PLC       ;               ;    ;    ;    ;207 ;2   ;[EV TCP_DigOut_4 FALLING]
+;;;;;;;;;;;;
+;;;;;;;;;;;;
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;

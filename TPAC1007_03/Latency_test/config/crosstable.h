@@ -34,18 +34,6 @@ extern "C" {
 #include "cross_table_utility.h"
 
 
-#define ID_LOC_RISING 193
-extern int LOC_RISING;
-int doWrite_LOC_RISING(int value);
-int addWrite_LOC_RISING(int value);
-int getStatus_LOC_RISING(void);
-
-#define ID_LOC_FALLING 194
-extern int LOC_FALLING;
-int doWrite_LOC_FALLING(int value);
-int addWrite_LOC_FALLING(int value);
-int getStatus_LOC_FALLING(void);
-
 #define ID_RTUbis_AnIn_1 196
 extern int16_t RTUbis_AnIn_1;
 int doWrite_RTUbis_AnIn_1(int16_t value);
@@ -70,18 +58,6 @@ int doWrite_RTUbis_DigOut_4(int value);
 int addWrite_RTUbis_DigOut_4(int value);
 int getStatus_RTUbis_DigOut_4(void);
 
-#define ID_RTUbis_RISING 200
-extern int RTUbis_RISING;
-int doWrite_RTUbis_RISING(int value);
-int addWrite_RTUbis_RISING(int value);
-int getStatus_RTUbis_RISING(void);
-
-#define ID_RTUbis_FALLING 201
-extern int RTUbis_FALLING;
-int doWrite_RTUbis_FALLING(int value);
-int addWrite_RTUbis_FALLING(int value);
-int getStatus_RTUbis_FALLING(void);
-
 #define ID_TCP_AnIn_1 203
 extern int16_t TCP_AnIn_1;
 int doWrite_TCP_AnIn_1(int16_t value);
@@ -105,18 +81,6 @@ extern int TCP_DigOut_4;
 int doWrite_TCP_DigOut_4(int value);
 int addWrite_TCP_DigOut_4(int value);
 int getStatus_TCP_DigOut_4(void);
-
-#define ID_TCP_RISING 207
-extern int TCP_RISING;
-int doWrite_TCP_RISING(int value);
-int addWrite_TCP_RISING(int value);
-int getStatus_TCP_RISING(void);
-
-#define ID_TCP_FALLING 208
-extern int TCP_FALLING;
-int doWrite_TCP_FALLING(int value);
-int addWrite_TCP_FALLING(int value);
-int getStatus_TCP_FALLING(void);
 
 #define ID_RTU0_TYPE_PORT 5000
 extern u_int32_t RTU0_TYPE_PORT;

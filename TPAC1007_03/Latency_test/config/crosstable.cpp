@@ -28,20 +28,6 @@
 #include "global_var.h"
 
 /*
- * Variable LOC_RISING
- */
-
-int LOC_RISING = 0;
-
-
-/*
- * Variable LOC_FALLING
- */
-
-int LOC_FALLING = 0;
-
-
-/*
  * Variable RTUbis_AnIn_1
  */
 
@@ -70,20 +56,6 @@ int RTUbis_DigOut_4 = 0;
 
 
 /*
- * Variable RTUbis_RISING
- */
-
-int RTUbis_RISING = 0;
-
-
-/*
- * Variable RTUbis_FALLING
- */
-
-int RTUbis_FALLING = 0;
-
-
-/*
  * Variable TCP_AnIn_1
  */
 
@@ -109,20 +81,6 @@ int TCP_DigIn_3 = 0;
  */
 
 int TCP_DigOut_4 = 0;
-
-
-/*
- * Variable TCP_RISING
- */
-
-int TCP_RISING = 0;
-
-
-/*
- * Variable TCP_FALLING
- */
-
-int TCP_FALLING = 0;
 
 
 /*
@@ -1840,42 +1798,6 @@ int PLC_ResetValues = 0;
 int PLC_buzzerOn = 0;
 
 int
-doWrite_LOC_RISING(int value)
-{
-	return doWrite(ID_LOC_RISING, &value);
-}
-
-int
-addWrite_LOC_RISING(int value)
-{
-	return addWrite(ID_LOC_RISING, &value);
-}
-
-int
-getStatus_LOC_RISING(void)
-{
-	return getStatus(ID_LOC_RISING);
-}
-
-int
-doWrite_LOC_FALLING(int value)
-{
-	return doWrite(ID_LOC_FALLING, &value);
-}
-
-int
-addWrite_LOC_FALLING(int value)
-{
-	return addWrite(ID_LOC_FALLING, &value);
-}
-
-int
-getStatus_LOC_FALLING(void)
-{
-	return getStatus(ID_LOC_FALLING);
-}
-
-int
 doWrite_RTUbis_AnIn_1(int16_t value)
 {
 	return doWrite(ID_RTUbis_AnIn_1, &value);
@@ -1948,42 +1870,6 @@ getStatus_RTUbis_DigOut_4(void)
 }
 
 int
-doWrite_RTUbis_RISING(int value)
-{
-	return doWrite(ID_RTUbis_RISING, &value);
-}
-
-int
-addWrite_RTUbis_RISING(int value)
-{
-	return addWrite(ID_RTUbis_RISING, &value);
-}
-
-int
-getStatus_RTUbis_RISING(void)
-{
-	return getStatus(ID_RTUbis_RISING);
-}
-
-int
-doWrite_RTUbis_FALLING(int value)
-{
-	return doWrite(ID_RTUbis_FALLING, &value);
-}
-
-int
-addWrite_RTUbis_FALLING(int value)
-{
-	return addWrite(ID_RTUbis_FALLING, &value);
-}
-
-int
-getStatus_RTUbis_FALLING(void)
-{
-	return getStatus(ID_RTUbis_FALLING);
-}
-
-int
 doWrite_TCP_AnIn_1(int16_t value)
 {
 	return doWrite(ID_TCP_AnIn_1, &value);
@@ -2053,42 +1939,6 @@ int
 getStatus_TCP_DigOut_4(void)
 {
 	return getStatus(ID_TCP_DigOut_4);
-}
-
-int
-doWrite_TCP_RISING(int value)
-{
-	return doWrite(ID_TCP_RISING, &value);
-}
-
-int
-addWrite_TCP_RISING(int value)
-{
-	return addWrite(ID_TCP_RISING, &value);
-}
-
-int
-getStatus_TCP_RISING(void)
-{
-	return getStatus(ID_TCP_RISING);
-}
-
-int
-doWrite_TCP_FALLING(int value)
-{
-	return doWrite(ID_TCP_FALLING, &value);
-}
-
-int
-addWrite_TCP_FALLING(int value)
-{
-	return addWrite(ID_TCP_FALLING, &value);
-}
-
-int
-getStatus_TCP_FALLING(void)
-{
-	return getStatus(ID_TCP_FALLING);
 }
 
 int
@@ -6507,20 +6357,14 @@ update_all(void)
 {
 	int retval = 0;
 
-	retval += readFromDb(ID_LOC_RISING, &LOC_RISING);
-	retval += readFromDb(ID_LOC_FALLING, &LOC_FALLING);
 	retval += readFromDb(ID_RTUbis_AnIn_1, &RTUbis_AnIn_1);
 	retval += readFromDb(ID_RTUbis_AnIn_2, &RTUbis_AnIn_2);
 	retval += readFromDb(ID_RTUbis_DigIn_3, &RTUbis_DigIn_3);
 	retval += readFromDb(ID_RTUbis_DigOut_4, &RTUbis_DigOut_4);
-	retval += readFromDb(ID_RTUbis_RISING, &RTUbis_RISING);
-	retval += readFromDb(ID_RTUbis_FALLING, &RTUbis_FALLING);
 	retval += readFromDb(ID_TCP_AnIn_1, &TCP_AnIn_1);
 	retval += readFromDb(ID_TCP_AnIn_2, &TCP_AnIn_2);
 	retval += readFromDb(ID_TCP_DigIn_3, &TCP_DigIn_3);
 	retval += readFromDb(ID_TCP_DigOut_4, &TCP_DigOut_4);
-	retval += readFromDb(ID_TCP_RISING, &TCP_RISING);
-	retval += readFromDb(ID_TCP_FALLING, &TCP_FALLING);
 	retval += readFromDb(ID_RTU0_TYPE_PORT, &RTU0_TYPE_PORT);
 	retval += readFromDb(ID_RTU0_BAUDRATE, &RTU0_BAUDRATE);
 	retval += readFromDb(ID_RTU0_STATUS, &RTU0_STATUS);

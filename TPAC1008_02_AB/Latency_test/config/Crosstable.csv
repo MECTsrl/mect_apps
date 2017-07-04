@@ -209,14 +209,14 @@
 3;F;TCP_DigIn_3     ;WORD_BIT ;3   ;TCP       ;192.168.5.43   ;502 ;1   ;4003;207 ;4   ;[RO]
 3;F;TCP_DigOut_4    ;WORD_BIT ;4   ;TCP       ;192.168.5.43   ;502 ;1   ;4004;207 ;4   ;[RW]
 ;;;;;;;;;;;;
-1;P;LOC_RISING      ;BIT      ;0   ;PLC       ;               ;    ;    ;    ;212 ;8   ;[EV PLC_DigIn_3 RISING]
-1;P;LOC_FALLING     ;BIT      ;0   ;PLC       ;               ;    ;    ;    ;212 ;8   ;[EV PLC_DigIn_3 FALLING]
-1;P;RTU_RISING      ;BIT      ;0   ;PLC       ;               ;    ;    ;    ;212 ;8   ;[EV RTU_DigIn_3 RISING]
-1;P;RTU_FALLING     ;BIT      ;0   ;PLC       ;               ;    ;    ;    ;212 ;8   ;[EV RTU_DigIn_3 FALLING]
-1;P;RTUbis_RISING   ;BIT      ;0   ;PLC       ;               ;    ;    ;    ;212 ;8   ;[EV RTUbis_DigIn_3 RISING]
-1;P;RTUbis_FALLING  ;BIT      ;0   ;PLC       ;               ;    ;    ;    ;212 ;8   ;[EV RTUbis_DigIn_3 FALLING]
-1;P;TCP_RISING      ;BIT      ;0   ;PLC       ;               ;    ;    ;    ;212 ;8   ;[EV TCP_DigIn_3 RISING]
-1;P;TCP_FALLING     ;BIT      ;0   ;PLC       ;               ;    ;    ;    ;212 ;8   ;[EV TCP_DigIn_3 FALLING]
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
 ;;;;;;;;;;;;
 3;P;S_LOC_AnIn_1    ;INT      ;3   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;4001;221 ;16  ;[RW]
 3;P;S_LOC_AnIn_2    ;INT      ;3   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;4002;221 ;16  ;[RW]

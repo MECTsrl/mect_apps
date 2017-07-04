@@ -130,54 +130,6 @@ int doWrite_TCP_DigOut_4(int value);
 int addWrite_TCP_DigOut_4(int value);
 int getStatus_TCP_DigOut_4(void);
 
-#define ID_LOC_RISING 212
-extern int LOC_RISING;
-int doWrite_LOC_RISING(int value);
-int addWrite_LOC_RISING(int value);
-int getStatus_LOC_RISING(void);
-
-#define ID_LOC_FALLING 213
-extern int LOC_FALLING;
-int doWrite_LOC_FALLING(int value);
-int addWrite_LOC_FALLING(int value);
-int getStatus_LOC_FALLING(void);
-
-#define ID_RTU_RISING 214
-extern int RTU_RISING;
-int doWrite_RTU_RISING(int value);
-int addWrite_RTU_RISING(int value);
-int getStatus_RTU_RISING(void);
-
-#define ID_RTU_FALLING 215
-extern int RTU_FALLING;
-int doWrite_RTU_FALLING(int value);
-int addWrite_RTU_FALLING(int value);
-int getStatus_RTU_FALLING(void);
-
-#define ID_RTUbis_RISING 216
-extern int RTUbis_RISING;
-int doWrite_RTUbis_RISING(int value);
-int addWrite_RTUbis_RISING(int value);
-int getStatus_RTUbis_RISING(void);
-
-#define ID_RTUbis_FALLING 217
-extern int RTUbis_FALLING;
-int doWrite_RTUbis_FALLING(int value);
-int addWrite_RTUbis_FALLING(int value);
-int getStatus_RTUbis_FALLING(void);
-
-#define ID_TCP_RISING 218
-extern int TCP_RISING;
-int doWrite_TCP_RISING(int value);
-int addWrite_TCP_RISING(int value);
-int getStatus_TCP_RISING(void);
-
-#define ID_TCP_FALLING 219
-extern int TCP_FALLING;
-int doWrite_TCP_FALLING(int value);
-int addWrite_TCP_FALLING(int value);
-int getStatus_TCP_FALLING(void);
-
 #define ID_S_LOC_AnIn_1 221
 extern int16_t S_LOC_AnIn_1;
 int doWrite_S_LOC_AnIn_1(int16_t value);
