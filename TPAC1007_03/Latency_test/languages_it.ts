@@ -440,6 +440,12 @@ Y2=PLC_AnIn_2</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="page100.ui" line="2170"/>
+        <location filename="page100.ui" line="2182"/>
+        <source>PLC_DigOut_7</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="page100.ui" line="2205"/>
         <location filename="page100.ui" line="2208"/>
         <source>7</source>
