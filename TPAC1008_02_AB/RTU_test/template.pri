@@ -17,7 +17,7 @@ config.files += config/iomap0.cmg config/network0.cmg
 splash.files = config/splash.png
 splash.path = /local/etc/sysconfig/img
 
-customtrend.files = config/trend1.csv config/trend2.csv
+customtrend.files = config/trend1.csv config/trend2.csv config/trend3.csv config/trend4.csv
 customtrend.path = /local/data/customtrend
 
 INSTALLS += config splash customtrend

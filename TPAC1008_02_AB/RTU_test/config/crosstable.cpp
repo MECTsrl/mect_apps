@@ -56,6 +56,27 @@ int32_t max_latency_ms = 0;
 
 
 /*
+ * Variable is_WLAN0_ON	[ isUP_wlan0() ]
+ */
+
+int is_WLAN0_ON = 0;
+
+
+/*
+ * Variable is_PPP0_ON	[ isUP_ppp0() ]
+ */
+
+int is_PPP0_ON = 0;
+
+
+/*
+ * Variable is_TUN0_ON	[ isUP_tun0() ]
+ */
+
+int is_TUN0_ON = 0;
+
+
+/*
  * Variable Addr_node01
  */
 
@@ -6459,6 +6480,60 @@ int
 getStatus_max_latency_ms(void)
 {
 	return getStatus(ID_max_latency_ms);
+}
+
+int
+doWrite_is_WLAN0_ON(int value)
+{
+	return doWrite(ID_is_WLAN0_ON, &value);
+}
+
+int
+addWrite_is_WLAN0_ON(int value)
+{
+	return addWrite(ID_is_WLAN0_ON, &value);
+}
+
+int
+getStatus_is_WLAN0_ON(void)
+{
+	return getStatus(ID_is_WLAN0_ON);
+}
+
+int
+doWrite_is_PPP0_ON(int value)
+{
+	return doWrite(ID_is_PPP0_ON, &value);
+}
+
+int
+addWrite_is_PPP0_ON(int value)
+{
+	return addWrite(ID_is_PPP0_ON, &value);
+}
+
+int
+getStatus_is_PPP0_ON(void)
+{
+	return getStatus(ID_is_PPP0_ON);
+}
+
+int
+doWrite_is_TUN0_ON(int value)
+{
+	return doWrite(ID_is_TUN0_ON, &value);
+}
+
+int
+addWrite_is_TUN0_ON(int value)
+{
+	return addWrite(ID_is_TUN0_ON, &value);
+}
+
+int
+getStatus_is_TUN0_ON(void)
+{
+	return getStatus(ID_is_TUN0_ON);
 }
 
 int
@@ -22761,6 +22836,9 @@ update_all(void)
 	retval += readFromDb(ID_errors_all, &errors_all);
 	retval += readFromDb(ID_min_latency_ms, &min_latency_ms);
 	retval += readFromDb(ID_max_latency_ms, &max_latency_ms);
+	retval += readFromDb(ID_is_WLAN0_ON, &is_WLAN0_ON);
+	retval += readFromDb(ID_is_PPP0_ON, &is_PPP0_ON);
+	retval += readFromDb(ID_is_TUN0_ON, &is_TUN0_ON);
 	retval += readFromDb(ID_Addr_node01, &Addr_node01);
 	retval += readFromDb(ID_Life_node01, &Life_node01);
 	retval += readFromDb(ID_AnInCnf_1_node01, &AnInCnf_1_node01);

@@ -58,6 +58,24 @@ int doWrite_max_latency_ms(int32_t value);
 int addWrite_max_latency_ms(int32_t value);
 int getStatus_max_latency_ms(void);
 
+#define ID_is_WLAN0_ON 197
+extern int is_WLAN0_ON;	/* isUP_wlan0() */
+int doWrite_is_WLAN0_ON(int value);
+int addWrite_is_WLAN0_ON(int value);
+int getStatus_is_WLAN0_ON(void);
+
+#define ID_is_PPP0_ON 198
+extern int is_PPP0_ON;	/* isUP_ppp0() */
+int doWrite_is_PPP0_ON(int value);
+int addWrite_is_PPP0_ON(int value);
+int getStatus_is_PPP0_ON(void);
+
+#define ID_is_TUN0_ON 199
+extern int is_TUN0_ON;	/* isUP_tun0() */
+int doWrite_is_TUN0_ON(int value);
+int addWrite_is_TUN0_ON(int value);
+int getStatus_is_TUN0_ON(void);
+
 #define ID_Addr_node01 200
 extern u_int16_t Addr_node01;
 int doWrite_Addr_node01(u_int16_t value);

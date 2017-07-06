@@ -3,6 +3,9 @@ VAR_GLOBAL
 	errors_all AT %QD0.776:DINT;
 	min_latency_ms AT %QD0.780:DINT;
 	max_latency_ms AT %QD0.784:DINT;
+	is_WLAN0_ON AT %QX0.788.0:BOOL;	(* isUP_wlan0() *)
+	is_PPP0_ON AT %QX0.792.0:BOOL;	(* isUP_ppp0() *)
+	is_TUN0_ON AT %QX0.796.0:BOOL;	(* isUP_tun0() *)
 	Addr_node01 AT %IW0.800:UINT;
 	Life_node01 AT %IW0.804:UINT;
 	AnInCnf_1_node01 AT %QW0.808:UINT;

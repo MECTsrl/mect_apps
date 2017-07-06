@@ -78,36 +78,7 @@ void page300::updateData()
      */
     /* To write 5 into the the cross table variable UINT TEST1:
      *    doWrite_TEST1(5);
-     */	
-    static unsigned counter = 0;
-    ++counter;
-
-    if (counter % 3 == 0) {
-
-        // every 1.5 seconds: update the network status
-
-        if (isUP_wlan0()) {
-            ui->label_WiFi->setText("WiFi ON");
-            ui->label_WiFi->setStyleSheet("background-color: rgb(0, 255, 0);");
-        } else {
-            ui->label_WiFi->setText("WiFi off");
-            ui->label_WiFi->setStyleSheet("background-color: rgb(255, 0, 0);");
-        }
-        if (isUP_ppp0()) {
-            ui->label_Mobile->setText("Mobile ON");
-            ui->label_Mobile->setStyleSheet("background-color: rgb(0, 255, 0);");
-        } else {
-            ui->label_Mobile->setText("Mobile off");
-            ui->label_Mobile->setStyleSheet("background-color: rgb(255, 0, 0);");
-        }
-        if (isUP_tun0()) {
-            ui->label_VPN->setText("VPN ON");
-            ui->label_VPN->setStyleSheet("background-color: rgb(0, 255, 0);");
-        } else {
-            ui->label_VPN->setText("VPN off");
-            ui->label_VPN->setStyleSheet("background-color: rgb(255, 0, 0);");
-        }
-    }
+     */
 }
 
 /**

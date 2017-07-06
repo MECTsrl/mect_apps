@@ -6,36 +6,63 @@ PROGRAM Normal
 VAR
 	counter : uint := 0;
 	onoff : bool := true;
+	configured : bool := false;
 	first : bool := true;
 	timer : TON;
 	value : bool := true;
 	latency_ms : DINT := 0;
 	period_ms : DINT := 0;
 	do_second_loop : bool := false;
+	nodes_ok : int;
 
     INFO : TASKINFO;
 END_VAR
 
-	(* check can status *)
-	if CH0_01_NODERUN = false then
-		if not first then
-			errors_can := errors_can + 1;
+	if not configured then
+
+		(* waiting for CAN0 startup *)
+		if not CH0_01_NODERUN then
+			return;
 		end_if;
+
+		(* init analog outputs *)
+
+		PLC_AnOutConf_1 := 2; (* 0.00 10.00 V *)
+		PLC_AnOut_1 := 0;
+
+		PLC_AnOutConf_2 := 2; (* 0.00 10.00 V *)
+		PLC_AnOut_2 := 0;
+
+		(* init analog inputs *)
+
+		PLC_AnInConf_1 := 3; (* TCJ 0 600 °C *)
+		PLC_FiltAnIn_1 := 32;
+
+		PLC_AnInConf_2 := 3; (* TCJ 0 600 °C *)
+		PLC_FiltAnIn_2 := 32;
+
+		PLC_AnInConf_3 := 2; (* 0.000 10.000 V, wired to PLC_AnOut_1 *)
+		PLC_FiltAnIn_3 := 0;
+
+		PLC_AnInConf_4 := 2; (* 0.000 10.000 V, wired to PLC_AnOut_2 *)		
+		PLC_FiltAnIn_4 := 0;
+
+		(* init error counter *)
+		errors_can := 0;
+
+		configured := true;
+    end_if;
+
+	(* check can status *)
+	if configured and not CH0_01_NODERUN then
+		errors_can := errors_can + 1;
  	    return;
 	end_if;
 
 	(* init *)
 	if first then
 		first := false;
-
-		(* 0. init analog outputs *)
-		PLC_AnOutConf_1 := 2;
-		PLC_AnOutConf_2 := 2;
-		PLC_AnOut_1 := 0;
-		PLC_AnOut_2 := 0;
 		
-		errors_can := 0;
-
 		(* 1. reset latency errors *)
 		errors_all := 0;
 		errors_01 := 0;
@@ -149,7 +176,7 @@ END_VAR
 		value := true;
 		PLC_DigOut_1 := true;
 		PLC_AnOut_1 := 900;
-		PLC_AnOut_2 := 100;
+		PLC_AnOut_2 := 0;
 
 		(* 5. get the task info *)
 		GetLocalTaskInfo('Task4_Normal_50ms', INFO);
@@ -229,46 +256,52 @@ END_VAR
 		PLC_DigOut_1 := value;
 		if value then
 			PLC_AnOut_1 := 900;
-			PLC_AnOut_2 := 100;
 		else
 			PLC_AnOut_1 := 100;
-			PLC_AnOut_2 := 900;
 		end_if;
+
+		(* output is proportional to the number of reached nodes *)
+		nodes_ok := 0;
+		PLC_AnOut_2 := 0;
 
 	(* OTHER STEPS *)
 	else
 		
 		(* for each node: latency from TPAC:DigOut_1 to NODE:DigIn_7 to NODE:DigOut_8 *)
 
-		if manage_node(DigIn_7_node01, latency_ms, value, latency_01_ms, min_latency_01_m, max_latency_01_m) then DigOut_8_node01 := value;; end_if;
-		if manage_node(DigIn_7_node02, latency_ms, value, latency_02_ms, min_latency_02_m, max_latency_02_m) then DigOut_8_node02 := value;; end_if;
-		if manage_node(DigIn_7_node03, latency_ms, value, latency_03_ms, min_latency_03_m, max_latency_03_m) then DigOut_8_node03 := value;; end_if;
-		if manage_node(DigIn_7_node04, latency_ms, value, latency_04_ms, min_latency_04_m, max_latency_04_m) then DigOut_8_node04 := value;; end_if;
+		if manage_node(DigIn_7_node01, latency_ms, value, latency_01_ms, min_latency_01_m, max_latency_01_m) then DigOut_8_node01 := value; nodes_ok := nodes_ok + 1; end_if;
+		if manage_node(DigIn_7_node02, latency_ms, value, latency_02_ms, min_latency_02_m, max_latency_02_m) then DigOut_8_node02 := value; nodes_ok := nodes_ok + 1; end_if;
+		if manage_node(DigIn_7_node03, latency_ms, value, latency_03_ms, min_latency_03_m, max_latency_03_m) then DigOut_8_node03 := value; nodes_ok := nodes_ok + 1; end_if;
+		if manage_node(DigIn_7_node04, latency_ms, value, latency_04_ms, min_latency_04_m, max_latency_04_m) then DigOut_8_node04 := value; nodes_ok := nodes_ok + 1; end_if;
 
-		if manage_node(DigIn_7_node05, latency_ms, value, latency_05_ms, min_latency_05_m, max_latency_05_m) then DigOut_8_node05 := value;; end_if;
-		if manage_node(DigIn_7_node06, latency_ms, value, latency_06_ms, min_latency_06_m, max_latency_06_m) then DigOut_8_node06 := value;; end_if;
-		if manage_node(DigIn_7_node07, latency_ms, value, latency_07_ms, min_latency_07_m, max_latency_07_m) then DigOut_8_node07 := value;; end_if;
-		if manage_node(DigIn_7_node08, latency_ms, value, latency_08_ms, min_latency_08_m, max_latency_08_m) then DigOut_8_node08 := value;; end_if;
+		if manage_node(DigIn_7_node05, latency_ms, value, latency_05_ms, min_latency_05_m, max_latency_05_m) then DigOut_8_node05 := value; nodes_ok := nodes_ok + 1; end_if;
+		if manage_node(DigIn_7_node06, latency_ms, value, latency_06_ms, min_latency_06_m, max_latency_06_m) then DigOut_8_node06 := value; nodes_ok := nodes_ok + 1; end_if;
+		if manage_node(DigIn_7_node07, latency_ms, value, latency_07_ms, min_latency_07_m, max_latency_07_m) then DigOut_8_node07 := value; nodes_ok := nodes_ok + 1; end_if;
+		if manage_node(DigIn_7_node08, latency_ms, value, latency_08_ms, min_latency_08_m, max_latency_08_m) then DigOut_8_node08 := value; nodes_ok := nodes_ok + 1; end_if;
 
-		if manage_node(DigIn_7_node09, latency_ms, value, latency_09_ms, min_latency_09_m, max_latency_09_m) then DigOut_8_node09 := value;; end_if;
-		if manage_node(DigIn_7_node10, latency_ms, value, latency_10_ms, min_latency_10_m, max_latency_10_m) then DigOut_8_node10 := value;; end_if;
-		if manage_node(DigIn_7_node11, latency_ms, value, latency_11_ms, min_latency_11_m, max_latency_11_m) then DigOut_8_node11 := value;; end_if;
-		if manage_node(DigIn_7_node12, latency_ms, value, latency_12_ms, min_latency_12_m, max_latency_12_m) then DigOut_8_node12 := value;; end_if;
+		if manage_node(DigIn_7_node09, latency_ms, value, latency_09_ms, min_latency_09_m, max_latency_09_m) then DigOut_8_node09 := value; nodes_ok := nodes_ok + 1; end_if;
+		if manage_node(DigIn_7_node10, latency_ms, value, latency_10_ms, min_latency_10_m, max_latency_10_m) then DigOut_8_node10 := value; nodes_ok := nodes_ok + 1; end_if;
+		if manage_node(DigIn_7_node11, latency_ms, value, latency_11_ms, min_latency_11_m, max_latency_11_m) then DigOut_8_node11 := value; nodes_ok := nodes_ok + 1; end_if;
+		if manage_node(DigIn_7_node12, latency_ms, value, latency_12_ms, min_latency_12_m, max_latency_12_m) then DigOut_8_node12 := value; nodes_ok := nodes_ok + 1; end_if;
 
-		if manage_node(DigIn_7_node13, latency_ms, value, latency_13_ms, min_latency_13_m, max_latency_13_m) then DigOut_8_node13 := value;; end_if;
-		if manage_node(DigIn_7_node14, latency_ms, value, latency_14_ms, min_latency_14_m, max_latency_14_m) then DigOut_8_node14 := value;; end_if;
-		if manage_node(DigIn_7_node15, latency_ms, value, latency_15_ms, min_latency_15_m, max_latency_15_m) then DigOut_8_node15 := value;; end_if;
-		if manage_node(DigIn_7_node16, latency_ms, value, latency_16_ms, min_latency_16_m, max_latency_16_m) then DigOut_8_node16 := value;; end_if;
+		if manage_node(DigIn_7_node13, latency_ms, value, latency_13_ms, min_latency_13_m, max_latency_13_m) then DigOut_8_node13 := value; nodes_ok := nodes_ok + 1; end_if;
+		if manage_node(DigIn_7_node14, latency_ms, value, latency_14_ms, min_latency_14_m, max_latency_14_m) then DigOut_8_node14 := value; nodes_ok := nodes_ok + 1; end_if;
+		if manage_node(DigIn_7_node15, latency_ms, value, latency_15_ms, min_latency_15_m, max_latency_15_m) then DigOut_8_node15 := value; nodes_ok := nodes_ok + 1; end_if;
+		if manage_node(DigIn_7_node16, latency_ms, value, latency_16_ms, min_latency_16_m, max_latency_16_m) then DigOut_8_node16 := value; nodes_ok := nodes_ok + 1; end_if;
 
-		if manage_node(DigIn_7_node17, latency_ms, value, latency_17_ms, min_latency_17_m, max_latency_17_m) then DigOut_8_node17 := value;; end_if;
-		if manage_node(DigIn_7_node18, latency_ms, value, latency_18_ms, min_latency_18_m, max_latency_18_m) then DigOut_8_node18 := value;; end_if;
-		if manage_node(DigIn_7_node19, latency_ms, value, latency_19_ms, min_latency_19_m, max_latency_19_m) then DigOut_8_node19 := value;; end_if;
-		if manage_node(DigIn_7_node20, latency_ms, value, latency_20_ms, min_latency_20_m, max_latency_20_m) then DigOut_8_node20 := value;; end_if;
+		if manage_node(DigIn_7_node17, latency_ms, value, latency_17_ms, min_latency_17_m, max_latency_17_m) then DigOut_8_node17 := value; nodes_ok := nodes_ok + 1; end_if;
+		if manage_node(DigIn_7_node18, latency_ms, value, latency_18_ms, min_latency_18_m, max_latency_18_m) then DigOut_8_node18 := value; nodes_ok := nodes_ok + 1; end_if;
+		if manage_node(DigIn_7_node19, latency_ms, value, latency_19_ms, min_latency_19_m, max_latency_19_m) then DigOut_8_node19 := value; nodes_ok := nodes_ok + 1; end_if;
+		if manage_node(DigIn_7_node20, latency_ms, value, latency_20_ms, min_latency_20_m, max_latency_20_m) then DigOut_8_node20 := value; nodes_ok := nodes_ok + 1; end_if;
 
-		if manage_node(DigIn_7_node21, latency_ms, value, latency_21_ms, min_latency_21_m, max_latency_21_m) then DigOut_8_node21 := value;; end_if;
-		if manage_node(DigIn_7_node22, latency_ms, value, latency_22_ms, min_latency_22_m, max_latency_22_m) then DigOut_8_node22 := value;; end_if;
-		if manage_node(DigIn_7_node23, latency_ms, value, latency_23_ms, min_latency_23_m, max_latency_23_m) then DigOut_8_node23 := value;; end_if;
-		if manage_node(DigIn_7_node24, latency_ms, value, latency_24_ms, min_latency_24_m, max_latency_24_m) then DigOut_8_node24 := value;; end_if;	
+		if manage_node(DigIn_7_node21, latency_ms, value, latency_21_ms, min_latency_21_m, max_latency_21_m) then DigOut_8_node21 := value; nodes_ok := nodes_ok + 1; end_if;
+		if manage_node(DigIn_7_node22, latency_ms, value, latency_22_ms, min_latency_22_m, max_latency_22_m) then DigOut_8_node22 := value; nodes_ok := nodes_ok + 1; end_if;
+		if manage_node(DigIn_7_node23, latency_ms, value, latency_23_ms, min_latency_23_m, max_latency_23_m) then DigOut_8_node23 := value; nodes_ok := nodes_ok + 1; end_if;
+		if manage_node(DigIn_7_node24, latency_ms, value, latency_24_ms, min_latency_24_m, max_latency_24_m) then DigOut_8_node24 := value; nodes_ok := nodes_ok + 1; end_if;	
+
+		(* output is proportional to the number of reached nodes *)
+
+		PLC_AnOut_2 := nodes_ok * 41; (* max 41 * 24 = 984 (9.84 V) *)
 
 	end_if;
 
