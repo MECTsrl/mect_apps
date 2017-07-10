@@ -1,0 +1,31 @@
+#include "crosstable.h"
+#include "automation.h"
+
+static u_int16_t command;
+static unsigned counter;
+
+void setup(void)
+{
+    /* initalization */
+    command = 0;
+    counter = 0;
+}
+
+void loop(void)
+{
+    /* action @ 100ms */
+    ++counter;
+    if (counter % 10 == 0) {
+        /* action @ 1s */
+        if (Auto_COMMAND) {
+            ++command;
+            doWrite_RTU_COMMAND(command);
+            doWrite_TCP_COMMAND(command);
+        }
+    }
+}
+
+u_int16_t get_command(void)
+{
+    return command;
+}
