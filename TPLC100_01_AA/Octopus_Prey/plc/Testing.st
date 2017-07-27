@@ -28,30 +28,34 @@ END_VAR
 				substatus := 1;
 	        1:	ifTST_readVAL_writePLC(substatus);
 				substatus := 2;
-			2: (* wait for output settling *)
-				timer(IN := TRUE, PT := T#1000ms);
+			2:  ifTST_readVAL_writePLC(substatus);
+				substatus := 3;
+			3:  (* wait for output settling *)
+				timer(IN := TRUE, PT := T#2000ms); (* TPLC100 AnIn *)
 				if timer.Q then
 					timer(IN := FALSE);
 					ifTST_readVAL_writePLC(substatus);
-					substatus := 3;
+					substatus := 4;
 				end_if;
-			3: (* wait for input settling *)
+			4: (* wait for input settling *)
 		        timer(IN := TRUE, PT := T#3000ms); (* TPAC1006 AnIn *)
 				if timer.Q then
 					timer(IN := FALSE);
 					(* for each tested input read the actual value *)
 		        ifTST_readPLC_writeRES();
-					substatus := 4;
+					substatus := 5;
 				end_if;
-			4: (* wait for propagation *)
+			5: (* wait for propagation *)
 				timer(IN := TRUE, PT := T#1000ms);
 				if timer.Q then
 					timer(IN := FALSE);
-					substatus := 5;
+					substatus := 6;
 				end_if;
-			 5: (* change status *)
+			 6: (* change status *)
 				STATUS := STATUS_DONE;
 				TEST_STATUS := STATUS;
+			 else
+				;
 			 end_case;
 	    end_if;
 	

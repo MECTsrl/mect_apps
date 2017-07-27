@@ -98,4 +98,14 @@ page100::~page100()
     delete ui;
 }
 
-
+void page100::on_atcmButton_clicked()
+{
+    doWrite_PLC_AnInConf_5(7);
+    doWrite_PLC_AnInConf_6(7);
+    doWrite_PLC_AnInConf_7(7);
+    doWrite_PLC_AnInConf_8(7);
+    doWrite_PLC_AnInConf_9(7);
+    doWrite_PLC_AnInConf_10(7);
+    doWrite_PLC_AnInConf_11(7);
+    doWrite_PLC_AnInConf_12(7);
+}

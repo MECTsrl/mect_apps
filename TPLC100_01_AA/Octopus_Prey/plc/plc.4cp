@@ -37,5 +37,3 @@ ConnectionTimeout=100
 [Classes.Functions]
 file=ifTST_readVAL_writePLC.st
 file=ifTST_readPLC_writeRES.st
-file=configAnIn.st
-file=configAnOut.st
