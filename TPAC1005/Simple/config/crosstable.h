@@ -1246,49 +1246,49 @@ int doWrite_PLC_Key_10(int value);
 int addWrite_PLC_Key_10(int value);
 int getStatus_PLC_Key_10(void);
 
-#define ID_PLC_time 5400
+#define ID_PLC_time 5390
 extern float PLC_time;
 int doWrite_PLC_time(float value);
 int addWrite_PLC_time(float value);
 int getStatus_PLC_time(void);
 
-#define ID_PLC_timeMin 5401
+#define ID_PLC_timeMin 5391
 extern float PLC_timeMin;
 int doWrite_PLC_timeMin(float value);
 int addWrite_PLC_timeMin(float value);
 int getStatus_PLC_timeMin(void);
 
-#define ID_PLC_timeMax 5402
+#define ID_PLC_timeMax 5392
 extern float PLC_timeMax;
 int doWrite_PLC_timeMax(float value);
 int addWrite_PLC_timeMax(float value);
 int getStatus_PLC_timeMax(void);
 
-#define ID_PLC_timeWin 5403
+#define ID_PLC_timeWin 5393
 extern float PLC_timeWin;
 int doWrite_PLC_timeWin(float value);
 int addWrite_PLC_timeWin(float value);
 int getStatus_PLC_timeWin(void);
 
-#define ID_PLC_Version 5404
+#define ID_PLC_Version 5394
 extern u_int16_t PLC_Version;
 int doWrite_PLC_Version(u_int16_t value);
 int addWrite_PLC_Version(u_int16_t value);
 int getStatus_PLC_Version(void);
 
-#define ID_PLC_EngineStatus 5405
+#define ID_PLC_EngineStatus 5395
 extern u_int16_t PLC_EngineStatus;
 int doWrite_PLC_EngineStatus(u_int16_t value);
 int addWrite_PLC_EngineStatus(u_int16_t value);
 int getStatus_PLC_EngineStatus(void);
 
-#define ID_PLC_ResetValues 5406
+#define ID_PLC_ResetValues 5396
 extern int PLC_ResetValues;
 int doWrite_PLC_ResetValues(int value);
 int addWrite_PLC_ResetValues(int value);
 int getStatus_PLC_ResetValues(void);
 
-#define ID_PLC_buzzerOn 5407
+#define ID_PLC_buzzerOn 5397
 extern int PLC_buzzerOn;
 int doWrite_PLC_buzzerOn(int value);
 int addWrite_PLC_buzzerOn(int value);
