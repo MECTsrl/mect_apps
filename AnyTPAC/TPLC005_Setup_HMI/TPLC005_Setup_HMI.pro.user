@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 2.7.84, 2016-07-11T17:44:39. -->
+<!-- Written by QtCreator 2.7.84, 2017-11-02T09:30:03. -->
 <qtcreator>
  <data>
   <variable>ProjectExplorer.Project.ActiveTarget</variable>
@@ -219,6 +219,11 @@
        <value type="QString">C:/MectApps/AnyTPAC/TPLC005_Setup_HMI/hmi</value>
        <value type="QString">C:/MectApps/AnyTPAC/TPLC005_Setup_HMI/config/trend1.csv</value>
        <value type="QString">C:/MectApps/AnyTPAC/TPLC005_Setup_HMI/hmi</value>
+       <value type="QString">C:/mect_apps/AnyTPAC/TPLC005_Setup_HMI/config/system.ini</value>
+       <value type="QString">C:/mect_apps/AnyTPAC/TPLC005_Setup_HMI/config/Crosstable.csv</value>
+       <value type="QString">C:/mect_apps/AnyTPAC/TPLC005_Setup_HMI/config/splash.png</value>
+       <value type="QString">C:/mect_apps/AnyTPAC/TPLC005_Setup_HMI/config/trend1.csv</value>
+       <value type="QString">C:/mect_apps/AnyTPAC/TPLC005_Setup_HMI/hmi</value>
       </valuelist>
       <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedHosts">
        <value type="QString">192.168.5.113</value>
@@ -231,6 +236,11 @@
        <value type="QString">192.168.5.113</value>
        <value type="QString">192.168.5.211</value>
        <value type="QString">192.168.5.211</value>
+       <value type="QString">192.168.5.112</value>
+       <value type="QString">192.168.5.112</value>
+       <value type="QString">192.168.5.112</value>
+       <value type="QString">192.168.5.112</value>
+       <value type="QString">192.168.5.112</value>
       </valuelist>
       <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedRemotePaths">
        <value type="QString">/local/etc/sysconfig</value>
@@ -243,8 +253,18 @@
        <value type="QString">/local/root</value>
        <value type="QString">/local/data/customtrend</value>
        <value type="QString">/local/root</value>
+       <value type="QString">/local/etc/sysconfig</value>
+       <value type="QString">/local/etc/sysconfig</value>
+       <value type="QString">/local/etc/sysconfig/img</value>
+       <value type="QString">/local/data/customtrend</value>
+       <value type="QString">/local/root</value>
       </valuelist>
       <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedSysroots">
+       <value type="QString">C:/Qt485/imx28/rootfs</value>
+       <value type="QString">C:/Qt485/imx28/rootfs</value>
+       <value type="QString">C:/Qt485/imx28/rootfs</value>
+       <value type="QString">C:/Qt485/imx28/rootfs</value>
+       <value type="QString">C:/Qt485/imx28/rootfs</value>
        <value type="QString">C:/Qt485/imx28/rootfs</value>
        <value type="QString">C:/Qt485/imx28/rootfs</value>
        <value type="QString">C:/Qt485/imx28/rootfs</value>
@@ -267,6 +287,11 @@
        <value type="QDateTime">2016-07-11T12:41:42</value>
        <value type="QDateTime">2016-07-08T12:03:27</value>
        <value type="QDateTime">2016-07-08T12:03:28</value>
+       <value type="QDateTime">2017-11-02T08:51:24</value>
+       <value type="QDateTime">2017-11-02T08:51:24</value>
+       <value type="QDateTime">2017-11-02T08:51:24</value>
+       <value type="QDateTime">2017-11-02T08:51:24</value>
+       <value type="QDateTime">2017-11-02T08:51:24</value>
       </valuelist>
       <value type="bool" key="RemoteLinux.GenericDirectUploadStep.Incremental">false</value>
      </valuemap>
@@ -318,7 +343,7 @@
     <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">TPLC005_Setup_HMI (on Remote Device)</value>
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">RemoteLinuxRunConfiguration:C:/MectApps/AnyTPAC/TPLC005_Setup_HMI/TPLC005_Setup_HMI.pro</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">RemoteLinuxRunConfiguration:C:/mect_apps/AnyTPAC/TPLC005_Setup_HMI/TPLC005_Setup_HMI.pro</value>
     <value type="QString" key="Qt4ProjectManager.MaemoRunConfiguration.Arguments"></value>
     <value type="QString" key="Qt4ProjectManager.MaemoRunConfiguration.ProFile">TPLC005_Setup_HMI.pro</value>
     <value type="QString" key="RemoteLinux.RunConfig.AlternateRemoteExecutable"></value>
