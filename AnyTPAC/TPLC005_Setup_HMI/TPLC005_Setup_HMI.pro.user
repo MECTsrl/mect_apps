@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 2.7.84, 2017-11-02T09:30:03. -->
+<!-- Written by QtCreator 2.7.84, 2017-11-08T09:18:41. -->
 <qtcreator>
  <data>
   <variable>ProjectExplorer.Project.ActiveTarget</variable>
@@ -287,11 +287,11 @@
        <value type="QDateTime">2016-07-11T12:41:42</value>
        <value type="QDateTime">2016-07-08T12:03:27</value>
        <value type="QDateTime">2016-07-08T12:03:28</value>
-       <value type="QDateTime">2017-11-02T08:51:24</value>
-       <value type="QDateTime">2017-11-02T08:51:24</value>
-       <value type="QDateTime">2017-11-02T08:51:24</value>
-       <value type="QDateTime">2017-11-02T08:51:24</value>
-       <value type="QDateTime">2017-11-02T08:51:24</value>
+       <value type="QDateTime">2017-11-08T09:03:06</value>
+       <value type="QDateTime">2017-11-08T09:03:06</value>
+       <value type="QDateTime">2017-11-08T09:03:06</value>
+       <value type="QDateTime">2017-11-08T09:03:06</value>
+       <value type="QDateTime">2017-11-08T09:03:06</value>
       </valuelist>
       <value type="bool" key="RemoteLinux.GenericDirectUploadStep.Incremental">false</value>
      </valuemap>
