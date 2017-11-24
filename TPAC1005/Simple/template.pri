@@ -29,7 +29,7 @@ OTHER_FILES += \
 
 include(./common.pri)
 
-TYPE = "TP1043_01_B"
+TYPE = "TPAC1005"
 
 # display size
 MODEL = "<width>480</width><height>272</height>"

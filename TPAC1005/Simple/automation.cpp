@@ -26,7 +26,7 @@ static int fd;
 void setup(void)
 {
     doWrite_PLC_FastIO_Ena(0x0003FF01);
-    doWrite_PLC_FastIO_Dir(0x00020000); // PLC_FastIO_18 --> GPIO(2,9) PIN275(SSP0_DETECT) [R77]
+    doWrite_PLC_FastIO_Dir(0x00000000);
 
     fd = open("/dev/input/event0", O_RDONLY);
     if (fd < 0) {
