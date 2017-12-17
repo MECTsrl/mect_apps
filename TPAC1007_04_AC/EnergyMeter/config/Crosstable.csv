@@ -1,4 +1,4 @@
-;;;;;;;;;;;;
+3;S;Pmax                           ;UINT     ;2   ;PLC       ;               ;    ;    ;    ;1   ;1   ;[RO]PRMS phase 1 (max)
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
@@ -199,17 +199,17 @@
 3;P;Errore                         ;UINT     ;0   ;RTU       ;               ;0   ;2   ;24  ;196 ;17  ;[RO]Errore Registro
 3;P;unused_25                      ;UINT     ;0   ;RTU       ;               ;0   ;2   ;25  ;196 ;17  ;[RO]
 3;P;unused_26                      ;UINT     ;0   ;RTU       ;               ;0   ;2   ;26  ;196 ;17  ;[RO]
-3;P;Ttotal                         ;UDINTCDAB;2   ;RTU       ;               ;0   ;2   ;27  ;196 ;17  ;[RO]WT1 totale Contatore energia Totale Tariffa 1
-3;P;Tpart                          ;UDINTCDAB;2   ;RTU       ;               ;0   ;2   ;29  ;196 ;17  ;[RW]WT1 parziale Contatore energia Parziale Tariffa 1
+3;S;Ttotal                         ;UDINTCDAB;2   ;RTU       ;               ;0   ;2   ;27  ;196 ;17  ;[RO]WT1 totale Contatore energia Totale Tariffa 1
+3;S;Tpart                          ;UDINTCDAB;2   ;RTU       ;               ;0   ;2   ;29  ;196 ;17  ;[RW]WT1 parziale Contatore energia Parziale Tariffa 1
 3;P;unused_31                      ;UINT     ;0   ;RTU       ;               ;0   ;2   ;31  ;196 ;17  ;[RO]
 3;P;unused_32                      ;UINT     ;0   ;RTU       ;               ;0   ;2   ;32  ;196 ;17  ;[RO]
 3;P;unused_33                      ;UINT     ;0   ;RTU       ;               ;0   ;2   ;33  ;196 ;17  ;[RO]
 3;P;unused_34                      ;UINT     ;0   ;RTU       ;               ;0   ;2   ;34  ;196 ;17  ;[RO]
-3;P;U                              ;UINT     ;0   ;RTU       ;               ;0   ;2   ;35  ;196 ;17  ;[RO]URMS phase 1
-3;P;I                              ;UINT     ;1   ;RTU       ;               ;0   ;2   ;36  ;196 ;17  ;[RO]IRMS phase 1
-3;P;P                              ;UINT     ;2   ;RTU       ;               ;0   ;2   ;37  ;196 ;17  ;[RO]PRMS phase 1
-3;P;Q                              ;INT      ;2   ;RTU       ;               ;0   ;2   ;38  ;196 ;17  ;[RO]QRMS phase 1
-3;P;C                              ;INT      ;2   ;RTU       ;               ;0   ;2   ;39  ;196 ;17  ;[RO]cos phi phase 1
+3;F;U                              ;UINT     ;0   ;RTU       ;               ;0   ;2   ;35  ;196 ;17  ;[RO]URMS phase 1
+3;F;I                              ;UINT     ;1   ;RTU       ;               ;0   ;2   ;36  ;196 ;17  ;[RO]IRMS phase 1
+3;S;P                              ;UINT     ;2   ;RTU       ;               ;0   ;2   ;37  ;196 ;17  ;[RO]PRMS phase 1
+3;S;Q                              ;INT      ;2   ;RTU       ;               ;0   ;2   ;38  ;196 ;17  ;[RO]QRMS phase 1
+3;F;C                              ;INT      ;2   ;RTU       ;               ;0   ;2   ;39  ;196 ;17  ;[RO]cos phi phase 1
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;

@@ -34,6 +34,12 @@ extern "C" {
 #include "cross_table_utility.h"
 
 
+#define ID_Pmax 1
+extern u_int16_t Pmax;	/* PRMS phase 1 (max) */
+int doWrite_Pmax(u_int16_t value);
+int addWrite_Pmax(u_int16_t value);
+int getStatus_Pmax(void);
+
 #define ID_EM_Firmware 194
 extern u_int16_t EM_Firmware;	/* Firmware-Version */
 int doWrite_EM_Firmware(u_int16_t value);

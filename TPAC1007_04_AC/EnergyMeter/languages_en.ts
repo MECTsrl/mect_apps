@@ -613,4 +613,242 @@
         <translation type="unfinished"></translation>
     </message>
 </context>
+<context>
+    <name>page200</name>
+    <message>
+        <location filename="page200.ui" line="26"/>
+        <location filename="page200.ui" line="399"/>
+        <source>page200</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="50"/>
+        <source>ATCM QDate</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="53"/>
+        <source>ATCMdate widget</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="98"/>
+        <location filename="page200.ui" line="328"/>
+        <location filename="page200.ui" line="424"/>
+        <location filename="page200.ui" line="494"/>
+        <location filename="page200.ui" line="1003"/>
+        <location filename="page200.ui" line="1059"/>
+        <source>ATCMbutton widget</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="134"/>
+        <location filename="page200.ui" line="137"/>
+        <source>page300</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="168"/>
+        <location filename="page200.ui" line="1125"/>
+        <source>xxxxx.xx</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="1091"/>
+        <source>STOPPED</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="1128"/>
+        <location filename="page200.ui" line="1134"/>
+        <source>Tpart</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="174"/>
+        <location filename="page200.ui" line="242"/>
+        <location filename="page200.ui" line="737"/>
+        <location filename="page200.ui" line="809"/>
+        <location filename="page200.ui" line="1131"/>
+        <source>ATCMlabel widget</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="1140"/>
+        <source> kWh</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="236"/>
+        <source>86400,00</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="171"/>
+        <location filename="page200.ui" line="177"/>
+        <location filename="page200.ui" line="674"/>
+        <source>Pmax</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="239"/>
+        <location filename="page200.ui" line="245"/>
+        <location filename="page200.ui" line="610"/>
+        <location filename="page200.ui" line="625"/>
+        <location filename="page200.ui" line="656"/>
+        <location filename="page200.ui" line="671"/>
+        <location filename="page200.ui" line="882"/>
+        <location filename="page200.ui" line="897"/>
+        <location filename="page200.ui" line="928"/>
+        <location filename="page200.ui" line="943"/>
+        <source>PLC_time</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="303"/>
+        <source>Energy Meter</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="364"/>
+        <location filename="page200.ui" line="367"/>
+        <source>page100</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="460"/>
+        <location filename="page200.ui" line="463"/>
+        <source>page400</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="530"/>
+        <location filename="page200.ui" line="533"/>
+        <source>menu</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="561"/>
+        <source>ATCM QTime</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="564"/>
+        <source>ATCMtime widget</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="607"/>
+        <location filename="page200.ui" line="879"/>
+        <source>ATCMgraph widget</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="613"/>
+        <location filename="page200.ui" line="659"/>
+        <location filename="page200.ui" line="885"/>
+        <location filename="page200.ui" line="931"/>
+        <source>PLC_timeMin</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="616"/>
+        <location filename="page200.ui" line="662"/>
+        <location filename="page200.ui" line="888"/>
+        <location filename="page200.ui" line="934"/>
+        <source>PLC_timeMax</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="628"/>
+        <location filename="page200.ui" line="734"/>
+        <location filename="page200.ui" line="740"/>
+        <source>P</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="631"/>
+        <source>0</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="634"/>
+        <location filename="page200.ui" line="680"/>
+        <source>4</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="677"/>
+        <location filename="page200.ui" line="949"/>
+        <source>0.000000</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="952"/>
+        <source>100.000000</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="806"/>
+        <location filename="page200.ui" line="812"/>
+        <location filename="page200.ui" line="900"/>
+        <source>C</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="1025"/>
+        <location filename="page200.ui" line="1028"/>
+        <source>reset</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="603"/>
+        <source>Y1=P
+Y2=Pmax</source>
+        <oldsource>Y1=P
+Y2=</oldsource>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="875"/>
+        <source>Y1=C
+Y2=</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="903"/>
+        <source>0.5</source>
+        <oldsource>0,5</oldsource>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="906"/>
+        <source>1.0</source>
+        <oldsource>1</oldsource>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="689"/>
+        <location filename="page200.ui" line="961"/>
+        <source>Potenza</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="731"/>
+        <location filename="page200.ui" line="803"/>
+        <source>x.xx</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="183"/>
+        <location filename="page200.ui" line="746"/>
+        <source> kW</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message utf8="true">
+        <location filename="page200.ui" line="815"/>
+        <source>cos(ϕ) </source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
 </TS>

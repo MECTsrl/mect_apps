@@ -1,4 +1,5 @@
 VAR_GLOBAL
+	Pmax AT %IW0.4:UINT;	(* PRMS phase 1 (max) *)
 	EM_Firmware AT %IW0.776:UINT;	(* Firmware-Version *)
 	Status AT %IW0.784:UINT;	(* Status *)
 	Timeout AT %IW0.788:UINT;	(* Timeout Modbus *)

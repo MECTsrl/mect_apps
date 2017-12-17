@@ -28,6 +28,13 @@
 #include "global_var.h"
 
 /*
+ * Variable Pmax	[ PRMS phase 1 (max) ]
+ */
+
+u_int16_t Pmax = 0;
+
+
+/*
  * Variable EM_Firmware	[ Firmware-Version ]
  */
 
@@ -1929,6 +1936,24 @@ int PLC_ResetValues = 0;
  */
 
 int PLC_buzzerOn = 0;
+
+int
+doWrite_Pmax(u_int16_t value)
+{
+	return doWrite(ID_Pmax, &value);
+}
+
+int
+addWrite_Pmax(u_int16_t value)
+{
+	return addWrite(ID_Pmax, &value);
+}
+
+int
+getStatus_Pmax(void)
+{
+	return getStatus(ID_Pmax);
+}
 
 int
 doWrite_EM_Firmware(u_int16_t value)
@@ -6832,6 +6857,7 @@ update_all(void)
 {
 	int retval = 0;
 
+	retval += readFromDb(ID_Pmax, &Pmax);
 	retval += readFromDb(ID_EM_Firmware, &EM_Firmware);
 	retval += readFromDb(ID_Status, &Status);
 	retval += readFromDb(ID_Timeout, &Timeout);
