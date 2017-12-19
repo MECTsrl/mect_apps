@@ -637,7 +637,7 @@
         <location filename="page200.ui" line="424"/>
         <location filename="page200.ui" line="494"/>
         <location filename="page200.ui" line="1003"/>
-        <location filename="page200.ui" line="1059"/>
+        <location filename="page200.ui" line="1065"/>
         <source>ATCMbutton widget</source>
         <translation type="unfinished"></translation>
     </message>
@@ -649,18 +649,13 @@
     </message>
     <message>
         <location filename="page200.ui" line="168"/>
-        <location filename="page200.ui" line="1125"/>
+        <location filename="page200.ui" line="1128"/>
         <source>xxxxx.xx</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="1091"/>
-        <source>STOPPED</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page200.ui" line="1128"/>
-        <location filename="page200.ui" line="1134"/>
+        <location filename="page200.ui" line="1131"/>
+        <location filename="page200.ui" line="1137"/>
         <source>Tpart</source>
         <translation type="unfinished"></translation>
     </message>
@@ -669,12 +664,12 @@
         <location filename="page200.ui" line="242"/>
         <location filename="page200.ui" line="737"/>
         <location filename="page200.ui" line="809"/>
-        <location filename="page200.ui" line="1131"/>
+        <location filename="page200.ui" line="1134"/>
         <source>ATCMlabel widget</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="1140"/>
+        <location filename="page200.ui" line="1143"/>
         <source> kWh</source>
         <translation type="unfinished"></translation>
     </message>

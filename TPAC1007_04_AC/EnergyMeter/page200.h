@@ -31,8 +31,6 @@ private slots:
     
     void on_atcmButton_clicked();
 
-    void on_atcmButton_2_clicked(bool checked);
-
 private:
     Ui::page200 *ui;
 };

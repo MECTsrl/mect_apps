@@ -4,7 +4,8 @@
 /* put here the initalization */
 void setup(void)
 {
-    doWrite_PLC_timeWin(60);
+    doWrite_PLC_timeWin(300);
+    logStart();
 }
 
 /* put here the operation made every 100ms */

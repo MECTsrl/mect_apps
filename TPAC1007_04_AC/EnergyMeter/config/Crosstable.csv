@@ -1,4 +1,4 @@
-3;S;Pmax                           ;UINT     ;2   ;PLC       ;               ;    ;    ;    ;1   ;1   ;[RO]PRMS phase 1 (max)
+3;F;Pmax                           ;UINT     ;2   ;PLC       ;               ;    ;    ;    ;1   ;1   ;[RO]PRMS phase 1 (max)
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
@@ -199,8 +199,8 @@
 3;P;Errore                         ;UINT     ;0   ;RTU       ;               ;0   ;2   ;24  ;196 ;17  ;[RO]Errore Registro
 3;P;unused_25                      ;UINT     ;0   ;RTU       ;               ;0   ;2   ;25  ;196 ;17  ;[RO]
 3;P;unused_26                      ;UINT     ;0   ;RTU       ;               ;0   ;2   ;26  ;196 ;17  ;[RO]
-3;S;Ttotal                         ;UDINTCDAB;2   ;RTU       ;               ;0   ;2   ;27  ;196 ;17  ;[RO]WT1 totale Contatore energia Totale Tariffa 1
-3;S;Tpart                          ;UDINTCDAB;2   ;RTU       ;               ;0   ;2   ;29  ;196 ;17  ;[RW]WT1 parziale Contatore energia Parziale Tariffa 1
+3;F;Ttotal                         ;UDINTCDAB;2   ;RTU       ;               ;0   ;2   ;27  ;196 ;17  ;[RO]WT1 totale Contatore energia Totale Tariffa 1
+3;F;Tpart                          ;UDINTCDAB;2   ;RTU       ;               ;0   ;2   ;29  ;196 ;17  ;[RW]WT1 parziale Contatore energia Parziale Tariffa 1
 3;P;unused_31                      ;UINT     ;0   ;RTU       ;               ;0   ;2   ;31  ;196 ;17  ;[RO]
 3;P;unused_32                      ;UINT     ;0   ;RTU       ;               ;0   ;2   ;32  ;196 ;17  ;[RO]
 3;P;unused_33                      ;UINT     ;0   ;RTU       ;               ;0   ;2   ;33  ;196 ;17  ;[RO]

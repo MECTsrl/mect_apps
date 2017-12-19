@@ -104,14 +104,3 @@ void page200::on_atcmButton_clicked()
     doWrite_Tpart(0);
     doWrite_Pmax(0);
 }
-
-void page200::on_atcmButton_2_clicked(bool checked)
-{
-    if (checked) {
-        ui->atcmGraph_P->RunStop();
-        ui->atcmGraph_C->RunStop();
-    } else {
-        ui->atcmGraph_P->RunStop();
-        ui->atcmGraph_C->RunStop();
-    }
-}
