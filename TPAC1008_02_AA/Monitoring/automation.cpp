@@ -8,6 +8,7 @@ static bool configured;
 
 void setup(void)
 {
+    doWrite_PLC_HMI_Version(5678); // v5.678
     configured = false;
 }
 

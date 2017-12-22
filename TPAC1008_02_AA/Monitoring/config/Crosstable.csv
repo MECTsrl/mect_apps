@@ -5395,7 +5395,7 @@
 1;P;PLC_EngineStatus               ;UINT     ;0   ;PLC       ;               ;    ;    ;    ;5390;10  ;[RO]
 1;P;PLC_ResetValues                ;BIT      ;0   ;PLC       ;               ;    ;    ;    ;5390;10  ;[RW]
 1;P;PLC_buzzerOn                   ;BIT      ;0   ;PLC       ;               ;    ;    ;    ;5390;10  ;[RW]
-1;P;PLC_PLC_Version                ;UINT     ;3   ;PLC       ;               ;    ;    ;    ;5390;10  ;[RO]
+1;P;PLC_PLC_Version                ;UINT     ;3   ;PLC       ;               ;    ;    ;    ;5390;10  ;[RW]
 1;P;PLC_HMI_Version                ;UINT     ;3   ;PLC       ;               ;    ;    ;    ;5390;10  ;[RO]
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
