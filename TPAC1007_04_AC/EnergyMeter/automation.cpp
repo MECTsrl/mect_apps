@@ -4,7 +4,7 @@
 /* put here the initalization */
 void setup(void)
 {
-    doWrite_PLC_timeWin(300);
+    doWrite_PLC_timeWin(60);
     logStart();
 }
 
