@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/icons">
+        <file>icons/LedOff_scuro.png</file>
+        <file>icons/LedOn_chiaro.png</file>
+    </qresource>
+    <qresource prefix="/fonts"/>
+</RCC>
