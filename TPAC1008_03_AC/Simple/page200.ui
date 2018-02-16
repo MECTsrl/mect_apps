@@ -8049,40 +8049,20 @@ color: rgb(255, 255, 255);</string>
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>8</pointsize>
+     <pointsize>7</pointsize>
     </font>
    </property>
    <property name="styleSheet">
     <string notr="true">background-color: rgb(255, 255, 127);</string>
    </property>
    <property name="text">
-    <string/>
+    <string>....... NPN .......</string>
    </property>
-  </widget>
-  <widget class="QLabel" name="label_FastIO_7">
-   <property name="geometry">
-    <rect>
-     <x>700</x>
-     <y>60</y>
-     <width>51</width>
-     <height>61</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>DejaVu Sans</family>
-     <pointsize>8</pointsize>
-    </font>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background-color: rgb(255, 255, 127);</string>
-   </property>
-   <property name="text">
-    <string/>
+   <property name="alignment">
+    <set>Qt::AlignBottom|Qt::AlignHCenter</set>
    </property>
   </widget>
   <zorder>label_FastIO_6</zorder>
-  <zorder>label_FastIO_7</zorder>
   <zorder>label_FastIO_3</zorder>
   <zorder>label_FastIO_2</zorder>
   <zorder>label_FastIO_4</zorder>
