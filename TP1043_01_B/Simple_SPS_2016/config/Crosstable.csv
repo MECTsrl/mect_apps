@@ -190,73 +190,73 @@
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
-1;P;DINP_TE3_00     ;BIT      ;0   ;CANOPEN   ;               ;1   ;1   ;1   ;193 ;16  ;[RO]
-1;P;DINP_TE3_01     ;BIT      ;0   ;CANOPEN   ;               ;1   ;1   ;2   ;193 ;16  ;[RO]
-1;P;DINP_TE3_02     ;BIT      ;0   ;CANOPEN   ;               ;1   ;1   ;3   ;193 ;16  ;[RO]
-1;P;DINP_TE3_03     ;BIT      ;0   ;CANOPEN   ;               ;1   ;1   ;4   ;193 ;16  ;[RO]
-1;P;DINP_TE3_04     ;BIT      ;0   ;CANOPEN   ;               ;1   ;1   ;5   ;193 ;16  ;[RO]
-1;P;DINP_TE3_05     ;BIT      ;0   ;CANOPEN   ;               ;1   ;1   ;6   ;193 ;16  ;[RO]
-1;P;DINP_TE3_06     ;BIT      ;0   ;CANOPEN   ;               ;1   ;1   ;7   ;193 ;16  ;[RO]
-1;P;DINP_TE3_07     ;BIT      ;0   ;CANOPEN   ;               ;1   ;1   ;8   ;193 ;16  ;[RO]
-1;P;DINP_TE3_08     ;BIT      ;0   ;CANOPEN   ;               ;1   ;1   ;9   ;193 ;16  ;[RO]
-1;P;DINP_TE3_09     ;BIT      ;0   ;CANOPEN   ;               ;1   ;1   ;10  ;193 ;16  ;[RO]
-1;P;DINP_TE3_0A     ;BIT      ;0   ;CANOPEN   ;               ;1   ;1   ;11  ;193 ;16  ;[RO]
-1;P;DINP_TE3_0B     ;BIT      ;0   ;CANOPEN   ;               ;1   ;1   ;12  ;193 ;16  ;[RO]
-1;P;DINP_TE3_0C     ;BIT      ;0   ;CANOPEN   ;               ;1   ;1   ;13  ;193 ;16  ;[RO]
-1;P;DINP_TE3_0D     ;BIT      ;0   ;CANOPEN   ;               ;1   ;1   ;14  ;193 ;16  ;[RO]
-1;P;DINP_TE3_0E     ;BIT      ;0   ;CANOPEN   ;               ;1   ;1   ;15  ;193 ;16  ;[RO]
-1;P;DINP_TE3_0F     ;BIT      ;0   ;CANOPEN   ;               ;1   ;1   ;16  ;193 ;16  ;[RO]
-1;P;DOUT_TE0_00     ;BIT      ;0   ;CANOPEN   ;               ;1   ;1   ;17  ;209 ;16  ;[RW]
-1;P;DOUT_TE0_01     ;BIT      ;0   ;CANOPEN   ;               ;1   ;1   ;18  ;209 ;16  ;[RW]
-1;P;DOUT_TE0_02     ;BIT      ;0   ;CANOPEN   ;               ;1   ;1   ;19  ;209 ;16  ;[RW]
-1;P;DOUT_TE0_03     ;BIT      ;0   ;CANOPEN   ;               ;1   ;1   ;20  ;209 ;16  ;[RW]
-1;P;DOUT_TE0_04     ;BIT      ;0   ;CANOPEN   ;               ;1   ;1   ;21  ;209 ;16  ;[RW]
-1;P;DOUT_TE0_05     ;BIT      ;0   ;CANOPEN   ;               ;1   ;1   ;22  ;209 ;16  ;[RW]
-1;P;DOUT_TE0_06     ;BIT      ;0   ;CANOPEN   ;               ;1   ;1   ;23  ;209 ;16  ;[RW]
-1;P;DOUT_TE0_07     ;BIT      ;0   ;CANOPEN   ;               ;1   ;1   ;24  ;209 ;16  ;[RW]
-1;P;DOUT_TE0_08     ;BIT      ;0   ;CANOPEN   ;               ;1   ;1   ;25  ;209 ;16  ;[RW]
-1;P;DOUT_TE0_09     ;BIT      ;0   ;CANOPEN   ;               ;1   ;1   ;26  ;209 ;16  ;[RW]
-1;P;DOUT_TE0_0A     ;BIT      ;0   ;CANOPEN   ;               ;1   ;1   ;27  ;209 ;16  ;[RW]
-1;P;DOUT_TE0_0B     ;BIT      ;0   ;CANOPEN   ;               ;1   ;1   ;28  ;209 ;16  ;[RW]
-1;P;DOUT_TE0_0C     ;BIT      ;0   ;CANOPEN   ;               ;1   ;1   ;29  ;209 ;16  ;[RW]
-1;P;DOUT_TE0_0D     ;BIT      ;0   ;CANOPEN   ;               ;1   ;1   ;30  ;209 ;16  ;[RW]
-1;P;DOUT_TE0_0E     ;BIT      ;0   ;CANOPEN   ;               ;1   ;1   ;31  ;209 ;16  ;[RW]
-1;P;DOUT_TE0_0F     ;BIT      ;0   ;CANOPEN   ;               ;1   ;1   ;32  ;209 ;16  ;[RW]
-1;P;DOUT_TE1_00     ;BIT      ;0   ;CANOPEN   ;               ;1   ;1   ;33  ;225 ;16  ;[RW]
-1;P;DOUT_TE1_01     ;BIT      ;0   ;CANOPEN   ;               ;1   ;1   ;34  ;225 ;16  ;[RW]
-1;P;DOUT_TE1_02     ;BIT      ;0   ;CANOPEN   ;               ;1   ;1   ;35  ;225 ;16  ;[RW]
-1;P;DOUT_TE1_03     ;BIT      ;0   ;CANOPEN   ;               ;1   ;1   ;36  ;225 ;16  ;[RW]
-1;P;DOUT_TE1_04     ;BIT      ;0   ;CANOPEN   ;               ;1   ;1   ;37  ;225 ;16  ;[RW]
-1;P;DOUT_TE1_05     ;BIT      ;0   ;CANOPEN   ;               ;1   ;1   ;38  ;225 ;16  ;[RW]
-1;P;DOUT_TE1_06     ;BIT      ;0   ;CANOPEN   ;               ;1   ;1   ;39  ;225 ;16  ;[RW]
-1;P;DOUT_TE1_07     ;BIT      ;0   ;CANOPEN   ;               ;1   ;1   ;40  ;225 ;16  ;[RW]
-1;P;DOUT_TE1_08     ;BIT      ;0   ;CANOPEN   ;               ;1   ;1   ;41  ;225 ;16  ;[RW]
-1;P;DOUT_TE1_09     ;BIT      ;0   ;CANOPEN   ;               ;1   ;1   ;42  ;225 ;16  ;[RW]
-1;P;DOUT_TE1_0A     ;BIT      ;0   ;CANOPEN   ;               ;1   ;1   ;43  ;225 ;16  ;[RW]
-1;P;DOUT_TE1_0B     ;BIT      ;0   ;CANOPEN   ;               ;1   ;1   ;44  ;225 ;16  ;[RW]
-1;P;DOUT_TE1_0C     ;BIT      ;0   ;CANOPEN   ;               ;1   ;1   ;45  ;225 ;16  ;[RW]
-1;P;DOUT_TE1_0D     ;BIT      ;0   ;CANOPEN   ;               ;1   ;1   ;46  ;225 ;16  ;[RW]
-1;P;DOUT_TE1_0E     ;BIT      ;0   ;CANOPEN   ;               ;1   ;1   ;47  ;225 ;16  ;[RW]
-1;P;DOUT_TE1_0F     ;BIT      ;0   ;CANOPEN   ;               ;1   ;1   ;48  ;225 ;16  ;[RW]
-1;P;ANIN0_TE2_00    ;INT      ;0   ;CANOPEN   ;               ;1   ;1   ;49  ;241 ;4   ;[RO]
-1;P;ANIN0_TE2_01    ;INT      ;0   ;CANOPEN   ;               ;1   ;1   ;50  ;241 ;4   ;[RO]
-1;P;ANIN0_TE2_02    ;INT      ;0   ;CANOPEN   ;               ;1   ;1   ;51  ;241 ;4   ;[RO]
-1;P;ANIN0_TE2_03    ;INT      ;0   ;CANOPEN   ;               ;1   ;1   ;52  ;241 ;4   ;[RO]
+1;P;DINP_TE3_00     ;BIT      ;0   ;CANOPEN   ;               ;1   ;1   ;1   ;193 ;52  ;[RO]
+1;P;DINP_TE3_01     ;BIT      ;0   ;CANOPEN   ;               ;1   ;1   ;2   ;193 ;52  ;[RO]
+1;P;DINP_TE3_02     ;BIT      ;0   ;CANOPEN   ;               ;1   ;1   ;3   ;193 ;52  ;[RO]
+1;P;DINP_TE3_03     ;BIT      ;0   ;CANOPEN   ;               ;1   ;1   ;4   ;193 ;52  ;[RO]
+1;P;DINP_TE3_04     ;BIT      ;0   ;CANOPEN   ;               ;1   ;1   ;5   ;193 ;52  ;[RO]
+1;P;DINP_TE3_05     ;BIT      ;0   ;CANOPEN   ;               ;1   ;1   ;6   ;193 ;52  ;[RO]
+1;P;DINP_TE3_06     ;BIT      ;0   ;CANOPEN   ;               ;1   ;1   ;7   ;193 ;52  ;[RO]
+1;P;DINP_TE3_07     ;BIT      ;0   ;CANOPEN   ;               ;1   ;1   ;8   ;193 ;52  ;[RO]
+1;P;DINP_TE3_08     ;BIT      ;0   ;CANOPEN   ;               ;1   ;1   ;9   ;193 ;52  ;[RO]
+1;P;DINP_TE3_09     ;BIT      ;0   ;CANOPEN   ;               ;1   ;1   ;10  ;193 ;52  ;[RO]
+1;P;DINP_TE3_0A     ;BIT      ;0   ;CANOPEN   ;               ;1   ;1   ;11  ;193 ;52  ;[RO]
+1;P;DINP_TE3_0B     ;BIT      ;0   ;CANOPEN   ;               ;1   ;1   ;12  ;193 ;52  ;[RO]
+1;P;DINP_TE3_0C     ;BIT      ;0   ;CANOPEN   ;               ;1   ;1   ;13  ;193 ;52  ;[RO]
+1;P;DINP_TE3_0D     ;BIT      ;0   ;CANOPEN   ;               ;1   ;1   ;14  ;193 ;52  ;[RO]
+1;P;DINP_TE3_0E     ;BIT      ;0   ;CANOPEN   ;               ;1   ;1   ;15  ;193 ;52  ;[RO]
+1;P;DINP_TE3_0F     ;BIT      ;0   ;CANOPEN   ;               ;1   ;1   ;16  ;193 ;52  ;[RO]
+1;P;DOUT_TE0_00     ;BIT      ;0   ;CANOPEN   ;               ;1   ;1   ;17  ;193 ;52  ;[RW]
+1;P;DOUT_TE0_01     ;BIT      ;0   ;CANOPEN   ;               ;1   ;1   ;18  ;193 ;52  ;[RW]
+1;P;DOUT_TE0_02     ;BIT      ;0   ;CANOPEN   ;               ;1   ;1   ;19  ;193 ;52  ;[RW]
+1;P;DOUT_TE0_03     ;BIT      ;0   ;CANOPEN   ;               ;1   ;1   ;20  ;193 ;52  ;[RW]
+1;P;DOUT_TE0_04     ;BIT      ;0   ;CANOPEN   ;               ;1   ;1   ;21  ;193 ;52  ;[RW]
+1;P;DOUT_TE0_05     ;BIT      ;0   ;CANOPEN   ;               ;1   ;1   ;22  ;193 ;52  ;[RW]
+1;P;DOUT_TE0_06     ;BIT      ;0   ;CANOPEN   ;               ;1   ;1   ;23  ;193 ;52  ;[RW]
+1;P;DOUT_TE0_07     ;BIT      ;0   ;CANOPEN   ;               ;1   ;1   ;24  ;193 ;52  ;[RW]
+1;P;DOUT_TE0_08     ;BIT      ;0   ;CANOPEN   ;               ;1   ;1   ;25  ;193 ;52  ;[RW]
+1;P;DOUT_TE0_09     ;BIT      ;0   ;CANOPEN   ;               ;1   ;1   ;26  ;193 ;52  ;[RW]
+1;P;DOUT_TE0_0A     ;BIT      ;0   ;CANOPEN   ;               ;1   ;1   ;27  ;193 ;52  ;[RW]
+1;P;DOUT_TE0_0B     ;BIT      ;0   ;CANOPEN   ;               ;1   ;1   ;28  ;193 ;52  ;[RW]
+1;P;DOUT_TE0_0C     ;BIT      ;0   ;CANOPEN   ;               ;1   ;1   ;29  ;193 ;52  ;[RW]
+1;P;DOUT_TE0_0D     ;BIT      ;0   ;CANOPEN   ;               ;1   ;1   ;30  ;193 ;52  ;[RW]
+1;P;DOUT_TE0_0E     ;BIT      ;0   ;CANOPEN   ;               ;1   ;1   ;31  ;193 ;52  ;[RW]
+1;P;DOUT_TE0_0F     ;BIT      ;0   ;CANOPEN   ;               ;1   ;1   ;32  ;193 ;52  ;[RW]
+1;P;DOUT_TE1_00     ;BIT      ;0   ;CANOPEN   ;               ;1   ;1   ;33  ;193 ;52  ;[RW]
+1;P;DOUT_TE1_01     ;BIT      ;0   ;CANOPEN   ;               ;1   ;1   ;34  ;193 ;52  ;[RW]
+1;P;DOUT_TE1_02     ;BIT      ;0   ;CANOPEN   ;               ;1   ;1   ;35  ;193 ;52  ;[RW]
+1;P;DOUT_TE1_03     ;BIT      ;0   ;CANOPEN   ;               ;1   ;1   ;36  ;193 ;52  ;[RW]
+1;P;DOUT_TE1_04     ;BIT      ;0   ;CANOPEN   ;               ;1   ;1   ;37  ;193 ;52  ;[RW]
+1;P;DOUT_TE1_05     ;BIT      ;0   ;CANOPEN   ;               ;1   ;1   ;38  ;193 ;52  ;[RW]
+1;P;DOUT_TE1_06     ;BIT      ;0   ;CANOPEN   ;               ;1   ;1   ;39  ;193 ;52  ;[RW]
+1;P;DOUT_TE1_07     ;BIT      ;0   ;CANOPEN   ;               ;1   ;1   ;40  ;193 ;52  ;[RW]
+1;P;DOUT_TE1_08     ;BIT      ;0   ;CANOPEN   ;               ;1   ;1   ;41  ;193 ;52  ;[RW]
+1;P;DOUT_TE1_09     ;BIT      ;0   ;CANOPEN   ;               ;1   ;1   ;42  ;193 ;52  ;[RW]
+1;P;DOUT_TE1_0A     ;BIT      ;0   ;CANOPEN   ;               ;1   ;1   ;43  ;193 ;52  ;[RW]
+1;P;DOUT_TE1_0B     ;BIT      ;0   ;CANOPEN   ;               ;1   ;1   ;44  ;193 ;52  ;[RW]
+1;P;DOUT_TE1_0C     ;BIT      ;0   ;CANOPEN   ;               ;1   ;1   ;45  ;193 ;52  ;[RW]
+1;P;DOUT_TE1_0D     ;BIT      ;0   ;CANOPEN   ;               ;1   ;1   ;46  ;193 ;52  ;[RW]
+1;P;DOUT_TE1_0E     ;BIT      ;0   ;CANOPEN   ;               ;1   ;1   ;47  ;193 ;52  ;[RW]
+1;P;DOUT_TE1_0F     ;BIT      ;0   ;CANOPEN   ;               ;1   ;1   ;48  ;193 ;52  ;[RW]
+1;P;ANIN0_TE2_00    ;INT      ;0   ;CANOPEN   ;               ;1   ;1   ;49  ;193 ;52  ;[RO]
+1;P;ANIN0_TE2_01    ;INT      ;0   ;CANOPEN   ;               ;1   ;1   ;50  ;193 ;52  ;[RO]
+1;P;ANIN0_TE2_02    ;INT      ;0   ;CANOPEN   ;               ;1   ;1   ;51  ;193 ;52  ;[RO]
+1;P;ANIN0_TE2_03    ;INT      ;0   ;CANOPEN   ;               ;1   ;1   ;52  ;193 ;52  ;[RO]
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
-1;P;CH1_NETRUN      ;BIT      ;0   ;CANOPEN   ;               ;1   ;0   ;0   ;5342;1   ;[RO]
-1;P;CH1_NETGOOD     ;BIT      ;0   ;CANOPEN   ;               ;1   ;0   ;0   ;5343;1   ;[RO]
-1;P;CH1_NETERR      ;UDINT    ;0   ;CANOPEN   ;               ;1   ;0   ;0   ;5344;1   ;[RO]
-1;P;CH1_NETRST      ;BIT      ;0   ;CANOPEN   ;               ;1   ;0   ;0   ;5345;1   ;[RW]
-1;P;CH1_NETDIS      ;BIT      ;0   ;CANOPEN   ;               ;1   ;0   ;0   ;5346;1   ;[RW]
-1;P;CH1_01_NODERUN  ;BIT      ;0   ;CANOPEN   ;               ;1   ;0   ;0   ;5347;1   ;[RO]
-1;P;CH1_01_NODEGOOD ;BIT      ;0   ;CANOPEN   ;               ;1   ;0   ;0   ;5348;1   ;[RO]
-1;P;CH1_01_NODEERR  ;UDINT    ;0   ;CANOPEN   ;               ;1   ;0   ;0   ;5349;1   ;[RO]
-1;P;CH1_01_NODERST  ;BIT      ;0   ;CANOPEN   ;               ;1   ;0   ;0   ;5350;1   ;[RW]
-1;P;CH1_01_NODEDIS  ;BIT      ;0   ;CANOPEN   ;               ;1   ;0   ;0   ;5351;1   ;[RW]
+1;P;CH1_NETRUN      ;BIT      ;0   ;CANOPEN   ;               ;1   ;0   ;0   ;250 ;10  ;[RO]
+1;P;CH1_NETGOOD     ;BIT      ;0   ;CANOPEN   ;               ;1   ;0   ;0   ;250 ;10  ;[RO]
+1;P;CH1_NETERR      ;UDINT    ;0   ;CANOPEN   ;               ;1   ;0   ;0   ;250 ;10  ;[RO]
+1;P;CH1_NETRST      ;BIT      ;0   ;CANOPEN   ;               ;1   ;0   ;0   ;250 ;10  ;[RW]
+1;P;CH1_NETDIS      ;BIT      ;0   ;CANOPEN   ;               ;1   ;0   ;0   ;250 ;10  ;[RW]
+1;P;CH1_01_NODERUN  ;BIT      ;0   ;CANOPEN   ;               ;1   ;0   ;0   ;250 ;10  ;[RO]
+1;P;CH1_01_NODEGOOD ;BIT      ;0   ;CANOPEN   ;               ;1   ;0   ;0   ;250 ;10  ;[RO]
+1;P;CH1_01_NODEERR  ;UDINT    ;0   ;CANOPEN   ;               ;1   ;0   ;0   ;250 ;10  ;[RO]
+1;P;CH1_01_NODERST  ;BIT      ;0   ;CANOPEN   ;               ;1   ;0   ;0   ;250 ;10  ;[RW]
+1;P;CH1_01_NODEDIS  ;BIT      ;0   ;CANOPEN   ;               ;1   ;0   ;0   ;250 ;10  ;[RW]
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
@@ -5037,6 +5037,68 @@
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+1;P;RTU0_TYPE_PORT  ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5000;10  ;[RO]
+1;P;RTU0_BAUDRATE   ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5000;10  ;[RO]
+1;P;RTU0_STATUS     ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5000;10  ;[RO]
+1;P;RTU0_READS      ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5000;10  ;[RO]
+1;P;RTU0_WRITES     ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5000;10  ;[RO]
+1;P;RTU0_TIMEOUTS   ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5000;10  ;[RO]
+1;P;RTU0_COMM_ERRORS;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5000;10  ;[RO]
+1;P;RTU0_LAST_ERROR ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5000;10  ;[RO]
+1;P;RTU0_WRITE_QUEUE;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5000;10  ;[RO]
+1;P;RTU0_READ_QUEUE ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5000;10  ;[RO]
+1;P;RTU1_TYPE_PORT  ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5010;10  ;[RO]
+1;P;RTU1_BAUDRATE   ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5010;10  ;[RO]
+1;P;RTU1_STATUS     ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5010;10  ;[RO]
+1;P;RTU1_READS      ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5010;10  ;[RO]
+1;P;RTU1_WRITES     ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5010;10  ;[RO]
+1;P;RTU1_TIMEOUTS   ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5010;10  ;[RO]
+1;P;RTU1_COMM_ERRORS;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5010;10  ;[RO]
+1;P;RTU1_LAST_ERROR ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5010;10  ;[RO]
+1;P;RTU1_WRITE_QUEUE;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5010;10  ;[RO]
+1;P;RTU1_READ_QUEUE ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5010;10  ;[RO]
+1;P;RTU3_TYPE_PORT  ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5020;10  ;[RO]
+1;P;RTU3_BAUDRATE   ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5020;10  ;[RO]
+1;P;RTU3_STATUS     ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5020;10  ;[RO]
+1;P;RTU3_READS      ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5020;10  ;[RO]
+1;P;RTU3_WRITES     ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5020;10  ;[RO]
+1;P;RTU3_TIMEOUTS   ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5020;10  ;[RO]
+1;P;RTU3_COMM_ERRORS;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5020;10  ;[RO]
+1;P;RTU3_LAST_ERROR ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5020;10  ;[RO]
+1;P;RTU3_WRITE_QUEUE;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5020;10  ;[RO]
+1;P;RTU3_READ_QUEUE ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5020;10  ;[RO]
+1;P;CAN0_TYPE_PORT  ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5030;10  ;[RO]
+1;P;CAN0_BAUDRATE   ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5030;10  ;[RO]
+1;P;CAN0_STATUS     ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5030;10  ;[RO]
+1;P;CAN0_READS      ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5030;10  ;[RO]
+1;P;CAN0_WRITES     ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5030;10  ;[RO]
+1;P;CAN0_TIMEOUTS   ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5030;10  ;[RO]
+1;P;CAN0_COMM_ERRORS;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5030;10  ;[RO]
+1;P;CAN0_LAST_ERROR ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5030;10  ;[RO]
+1;P;CAN0_WRITE_QUEUE;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5030;10  ;[RO]
+1;P;CAN0_READ_QUEUE ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5030;10  ;[RO]
 1;P;CAN1_TYPE_PORT  ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5040;10  ;[RO]
 1;P;CAN1_BAUDRATE   ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5040;10  ;[RO]
 1;P;CAN1_STATUS     ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5040;10  ;[RO]
@@ -5387,14 +5449,16 @@
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
-1;P;PLC_time        ;REAL     ;2   ;PLC       ;               ;    ;    ;    ;5390;4   ;[RO]
-1;P;PLC_timeMin     ;REAL     ;2   ;PLC       ;               ;    ;    ;    ;5390;4   ;[RO]
-1;P;PLC_timeMax     ;REAL     ;2   ;PLC       ;               ;    ;    ;    ;5390;4   ;[RO]
-1;P;PLC_timeWin     ;REAL     ;2   ;PLC       ;               ;    ;    ;    ;5390;4   ;[RW]
-1;P;PLC_Version     ;UINT     ;3   ;PLC       ;               ;    ;    ;    ;5394;1   ;[RO]
-1;P;PLC_EngineStatus;UINT     ;0   ;PLC       ;               ;    ;    ;    ;5395;1   ;[RO]
-1;P;PLC_ResetValues ;BIT      ;0   ;PLC       ;               ;    ;    ;    ;5396;1   ;[RW]
-1;P;PLC_buzzerOn    ;BIT      ;0   ;PLC       ;               ;    ;    ;    ;5397;1   ;[RW]
+1;P;PLC_time        ;REAL     ;2   ;PLC       ;               ;    ;    ;    ;5390;10  ;[RO]Seconds since boot (reset each 24h)
+1;P;PLC_timeMin     ;REAL     ;2   ;PLC       ;               ;    ;    ;    ;5390;10  ;[RO]10 seconds window start
+1;P;PLC_timeMax     ;REAL     ;2   ;PLC       ;               ;    ;    ;    ;5390;10  ;[RO]10 seconds window stop
+1;P;PLC_timeWin     ;REAL     ;2   ;PLC       ;               ;    ;    ;    ;5390;10  ;[RW]Graph display window
+1;P;PLC_Version     ;UINT     ;3   ;PLC       ;               ;    ;    ;    ;5390;10  ;[RO]Run Time version
+1;P;PLC_EngineStatus;UINT     ;0   ;PLC       ;               ;    ;    ;    ;5390;10  ;[RO]PLC status
+1;P;PLC_ResetValues ;BIT      ;0   ;PLC       ;               ;    ;    ;    ;5390;10  ;[RW]Diagnostic variables reset
+1;P;PLC_buzzerOn    ;BIT      ;0   ;PLC       ;               ;    ;    ;    ;5390;10  ;[RW]Buzzer sound (enable = 1 disable = 0)
+1;P;PLC_PLC_Version ;UINT     ;3   ;PLC       ;               ;    ;    ;    ;5390;10  ;[RO]PLC application version
+1;P;PLC_HMI_Version ;UINT     ;3   ;PLC       ;               ;    ;    ;    ;5390;10  ;[RO]HMI application version
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
@@ -5405,68 +5469,4 @@
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
+1;P;PLC_Year        ;UINT     ;0   ;PLC       ;               ;    ;    ;    ;5410;6   ;[RO]Currently year

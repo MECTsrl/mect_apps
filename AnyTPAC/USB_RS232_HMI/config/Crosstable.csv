@@ -5387,14 +5387,16 @@
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
-1;P;PLC_time        ;REAL     ;2   ;PLC       ;               ;    ;    ;    ;5390;4   ;[RO]
-1;P;PLC_timeMin     ;REAL     ;2   ;PLC       ;               ;    ;    ;    ;5390;4   ;[RO]
-1;P;PLC_timeMax     ;REAL     ;2   ;PLC       ;               ;    ;    ;    ;5390;4   ;[RO]
-1;P;PLC_timeWin     ;REAL     ;2   ;PLC       ;               ;    ;    ;    ;5390;4   ;[RW]
-1;P;PLC_Version     ;UINT     ;3   ;PLC       ;               ;    ;    ;    ;5394;1   ;[RO]
-1;P;PLC_EngineStatus;UINT     ;0   ;PLC       ;               ;    ;    ;    ;5395;1   ;[RO]
-1;P;PLC_ResetValues ;BIT      ;0   ;PLC       ;               ;    ;    ;    ;5396;1   ;[RW]
-1;P;PLC_buzzerOn    ;BIT      ;0   ;PLC       ;               ;    ;    ;    ;5397;1   ;[RW]
+1;P;PLC_time        ;REAL     ;2   ;PLC       ;               ;    ;    ;    ;5390;10  ;[RO]Seconds since boot (reset each 24h)
+1;P;PLC_timeMin     ;REAL     ;2   ;PLC       ;               ;    ;    ;    ;5390;10  ;[RO]10 seconds window start
+1;P;PLC_timeMax     ;REAL     ;2   ;PLC       ;               ;    ;    ;    ;5390;10  ;[RO]10 seconds window stop
+1;P;PLC_timeWin     ;REAL     ;2   ;PLC       ;               ;    ;    ;    ;5390;10  ;[RW]Graph display window
+1;P;PLC_Version     ;UINT     ;3   ;PLC       ;               ;    ;    ;    ;5390;10  ;[RO]Run Time version
+1;P;PLC_EngineStatus;UINT     ;0   ;PLC       ;               ;    ;    ;    ;5390;10  ;[RO]PLC status
+1;P;PLC_ResetValues ;BIT      ;0   ;PLC       ;               ;    ;    ;    ;5390;10  ;[RW]Diagnostic variables reset
+1;P;PLC_buzzerOn    ;BIT      ;0   ;PLC       ;               ;    ;    ;    ;5390;10  ;[RW]Buzzer sound (enable = 1 disable = 0)
+1;P;PLC_PLC_Version ;UINT     ;3   ;PLC       ;               ;    ;    ;    ;5390;10  ;[RO]PLC application version
+1;P;PLC_HMI_Version ;UINT     ;3   ;PLC       ;               ;    ;    ;    ;5390;10  ;[RO]HMI application version
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
@@ -5405,8 +5407,16 @@
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
+1;P;PLC_Year        ;UINT     ;0   ;PLC       ;               ;    ;    ;    ;5410;6   ;[RO]Currently year
+1;P;PLC_Month       ;UINT     ;0   ;PLC       ;               ;    ;    ;    ;5410;6   ;[RO]Currently month
+1;P;PLC_Day         ;UINT     ;0   ;PLC       ;               ;    ;    ;    ;5410;6   ;[RO]Currently day
+1;P;PLC_Hours       ;UINT     ;0   ;PLC       ;               ;    ;    ;    ;5410;6   ;[RO]Currently hour
+1;P;PLC_Minutes     ;UINT     ;0   ;PLC       ;               ;    ;    ;    ;5410;6   ;[RO]Currently minutes
+1;P;PLC_Seconds     ;UINT     ;0   ;PLC       ;               ;    ;    ;    ;5410;6   ;[RO]Currently seconds
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
+1;P;PLC_WATCHDOGEN  ;BIT      ;0   ;PLC       ;               ;    ;    ;    ;5418;2   ;[RW]Enable Watchdog
+1;P;PLC_WATCHDOG_ms ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5418;2   ;[RW]Reset Watchdog timer
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
@@ -5422,51 +5432,41 @@
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
+1;P;PLC_BEEP_VOLUME ;BYTE     ;0   ;PLC       ;               ;    ;    ;    ;5435;4   ;[RW]Beep volume (when buzzerOn)
+1;P;PLC_TOUCH_VOLUME;BYTE     ;0   ;PLC       ;               ;    ;    ;    ;5435;4   ;[RW]Touch volume 
+1;P;PLC_ALARM_VOLUME;BYTE     ;0   ;PLC       ;               ;    ;    ;    ;5435;4   ;[RW]Alarm volume (when alarm)
+1;P;PLC_BUZZER      ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5435;4   ;[RW]Enable dynamic buzzer sound (0x44332211 up=0x11(%) on=0x22(cs) off=0x33(cs) rep=0x44(times))
+0;P;PLC_FastIO_Ena  ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5439;34  ;[RW]Not available
+0;P;PLC_FastIO_Dir  ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5439;34  ;[RW]Not available
+0;P;PLC_FastIO_1    ;BIT      ;0   ;PLC       ;               ;    ;    ;    ;5439;34  ;[RW]Not available
+0;P;PLC_FastIO_2    ;BIT      ;0   ;PLC       ;               ;    ;    ;    ;5439;34  ;[RW]Not available
+0;P;PLC_FastIO_3    ;BIT      ;0   ;PLC       ;               ;    ;    ;    ;5439;34  ;[RW]Not available
+0;P;PLC_FastIO_4    ;BIT      ;0   ;PLC       ;               ;    ;    ;    ;5439;34  ;[RW]Not available
+0;P;PLC_FastIO_5    ;BIT      ;0   ;PLC       ;               ;    ;    ;    ;5439;34  ;[RW]Not available
+0;P;PLC_FastIO_6    ;BIT      ;0   ;PLC       ;               ;    ;    ;    ;5439;34  ;[RW]Not available
+0;P;PLC_FastIO_7    ;BIT      ;0   ;PLC       ;               ;    ;    ;    ;5439;34  ;[RW]Not available
+0;P;PLC_FastIO_8    ;BIT      ;0   ;PLC       ;               ;    ;    ;    ;5439;34  ;[RW]Not available
+0;P;PLC_FastIO_9    ;BIT      ;0   ;PLC       ;               ;    ;    ;    ;5439;34  ;[RW]Not available
+0;P;PLC_FastIO_10   ;BIT      ;0   ;PLC       ;               ;    ;    ;    ;5439;34  ;[RW]Not available
+0;P;PLC_FastIO_11   ;BIT      ;0   ;PLC       ;               ;    ;    ;    ;5439;34  ;[RW]Not available
+0;P;PLC_FastIO_12   ;BIT      ;0   ;PLC       ;               ;    ;    ;    ;5439;34  ;[RW]Not available
+0;P;PLC_FastIO_13   ;BIT      ;0   ;PLC       ;               ;    ;    ;    ;5439;34  ;[RW]Not available
+0;P;PLC_FastIO_14   ;BIT      ;0   ;PLC       ;               ;    ;    ;    ;5439;34  ;[RW]Not available
+0;P;PLC_FastIO_15   ;BIT      ;0   ;PLC       ;               ;    ;    ;    ;5439;34  ;[RW]Not available
+0;P;PLC_FastIO_16   ;BIT      ;0   ;PLC       ;               ;    ;    ;    ;5439;34  ;[RW]Not available
+0;P;PLC_FastIO_17   ;BIT      ;0   ;PLC       ;               ;    ;    ;    ;5439;34  ;[RW]Not available
+0;P;PLC_FastIO_18   ;BIT      ;0   ;PLC       ;               ;    ;    ;    ;5439;34  ;[RW]Not available
+0;P;PLC_FastIO_19   ;BIT      ;0   ;PLC       ;               ;    ;    ;    ;5439;34  ;[RW]Not available
+0;P;PLC_FastIO_20   ;BIT      ;0   ;PLC       ;               ;    ;    ;    ;5439;34  ;[RW]Not available
+0;P;PLC_FastIO_21   ;BIT      ;0   ;PLC       ;               ;    ;    ;    ;5439;34  ;[RW]Not available
+0;P;PLC_FastIO_22   ;BIT      ;0   ;PLC       ;               ;    ;    ;    ;5439;34  ;[RW]Not available
+0;P;PLC_FastIO_23   ;BIT      ;0   ;PLC       ;               ;    ;    ;    ;5439;34  ;[RW]Not available
+0;P;PLC_FastIO_24   ;BIT      ;0   ;PLC       ;               ;    ;    ;    ;5439;34  ;[RW]Not available
+0;P;PLC_FastIO_25   ;BIT      ;0   ;PLC       ;               ;    ;    ;    ;5439;34  ;[RW]Not available
+0;P;PLC_FastIO_26   ;BIT      ;0   ;PLC       ;               ;    ;    ;    ;5439;34  ;[RW]Not available
+0;P;PLC_FastIO_27   ;BIT      ;0   ;PLC       ;               ;    ;    ;    ;5439;34  ;[RW]Not available
+0;P;PLC_FastIO_28   ;BIT      ;0   ;PLC       ;               ;    ;    ;    ;5439;34  ;[RW]Not available
+0;P;PLC_FastIO_29   ;BIT      ;0   ;PLC       ;               ;    ;    ;    ;5439;34  ;[RW]Not available
+0;P;PLC_FastIO_30   ;BIT      ;0   ;PLC       ;               ;    ;    ;    ;5439;34  ;[RW]Not available
+0;P;PLC_FastIO_31   ;BIT      ;0   ;PLC       ;               ;    ;    ;    ;5439;34  ;[RW]Not available
+0;P;PLC_FastIO_32   ;BIT      ;0   ;PLC       ;               ;    ;    ;    ;5439;34  ;[RW]Not available

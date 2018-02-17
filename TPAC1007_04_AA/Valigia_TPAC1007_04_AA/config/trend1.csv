@@ -1,0 +1,5 @@
+L
+1;AnIn_1          ;FF0000;0.00;10.00;Sinusoide_1
+0;AnIn_2          ;00FF00;0.00;10.00;Sinusoide_2
+1;Valore_1        ;0000FF;0.00;20.00;Onda_quadra
+0;                ;000000;0.00;1.00;

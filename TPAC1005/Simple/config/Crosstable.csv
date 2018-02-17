@@ -5387,16 +5387,16 @@
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
-1;P;PLC_time        ;REAL     ;2   ;PLC       ;               ;    ;    ;    ;5390;10  ;[RO]
-1;P;PLC_timeMin     ;REAL     ;2   ;PLC       ;               ;    ;    ;    ;5390;10  ;[RO]
-1;P;PLC_timeMax     ;REAL     ;2   ;PLC       ;               ;    ;    ;    ;5390;10  ;[RO]
-1;P;PLC_timeWin     ;REAL     ;2   ;PLC       ;               ;    ;    ;    ;5390;10  ;[RW]
-1;P;PLC_Version     ;UINT     ;3   ;PLC       ;               ;    ;    ;    ;5390;10  ;[RO]
-1;P;PLC_EngineStatus;UINT     ;0   ;PLC       ;               ;    ;    ;    ;5390;10  ;[RO]
-1;P;PLC_ResetValues ;BIT      ;0   ;PLC       ;               ;    ;    ;    ;5390;10  ;[RW]
-1;P;PLC_buzzerOn    ;BIT      ;0   ;PLC       ;               ;    ;    ;    ;5390;10  ;[RW]
-1;P;PLC_PLC_Version ;UINT     ;3   ;PLC       ;               ;    ;    ;    ;5390;10  ;[RO]
-1;P;PLC_HMI_Version ;UINT     ;3   ;PLC       ;               ;    ;    ;    ;5390;10  ;[RO]
+1;P;PLC_time        ;REAL     ;2   ;PLC       ;               ;    ;    ;    ;5390;10  ;[RO]Seconds since boot (reset each 24h)
+1;P;PLC_timeMin     ;REAL     ;2   ;PLC       ;               ;    ;    ;    ;5390;10  ;[RO]10 seconds window start
+1;P;PLC_timeMax     ;REAL     ;2   ;PLC       ;               ;    ;    ;    ;5390;10  ;[RO]10 seconds window stop
+1;P;PLC_timeWin     ;REAL     ;2   ;PLC       ;               ;    ;    ;    ;5390;10  ;[RW]Graph display window
+1;P;PLC_Version     ;UINT     ;3   ;PLC       ;               ;    ;    ;    ;5390;10  ;[RO]Run Time version
+1;P;PLC_EngineStatus;UINT     ;0   ;PLC       ;               ;    ;    ;    ;5390;10  ;[RO]PLC status
+1;P;PLC_ResetValues ;BIT      ;0   ;PLC       ;               ;    ;    ;    ;5390;10  ;[RW]Diagnostic variables reset
+1;P;PLC_buzzerOn    ;BIT      ;0   ;PLC       ;               ;    ;    ;    ;5390;10  ;[RW]Buzzer sound (enable = 1 disable = 0)
+1;P;PLC_PLC_Version ;UINT     ;3   ;PLC       ;               ;    ;    ;    ;5390;10  ;[RO]PLC application version
+1;P;PLC_HMI_Version ;UINT     ;3   ;PLC       ;               ;    ;    ;    ;5390;10  ;[RO]HMI application version
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
@@ -5407,16 +5407,16 @@
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
-1;P;PLC_Year        ;UINT     ;0   ;PLC       ;               ;    ;    ;    ;5410;10  ;[RO]
-1;P;PLC_Month       ;UINT     ;0   ;PLC       ;               ;    ;    ;    ;5410;10  ;[RO]
-1;P;PLC_Day         ;UINT     ;0   ;PLC       ;               ;    ;    ;    ;5410;10  ;[RO]
-1;P;PLC_Hours       ;UINT     ;0   ;PLC       ;               ;    ;    ;    ;5410;10  ;[RO]
-1;P;PLC_Minutes     ;UINT     ;0   ;PLC       ;               ;    ;    ;    ;5410;10  ;[RO]
-1;P;PLC_Seconds     ;UINT     ;0   ;PLC       ;               ;    ;    ;    ;5410;10  ;[RO]
-1;P;PLC_SetDate     ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5410;10  ;[RW]
-1;P;PLC_SetTime     ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5410;10  ;[RW]
-1;P;PLC_WATCHDOGEN  ;BIT      ;0   ;PLC       ;               ;    ;    ;    ;5410;10  ;[RW]
-1;P;PLC_WATCHDOG_ms ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5410;10  ;[RW]
+1;P;PLC_Year        ;UINT     ;0   ;PLC       ;               ;    ;    ;    ;5410;6   ;[RO]Currently year
+1;P;PLC_Month       ;UINT     ;0   ;PLC       ;               ;    ;    ;    ;5410;6   ;[RO]Currently month
+1;P;PLC_Day         ;UINT     ;0   ;PLC       ;               ;    ;    ;    ;5410;6   ;[RO]Currently day
+1;P;PLC_Hours       ;UINT     ;0   ;PLC       ;               ;    ;    ;    ;5410;6   ;[RO]Currently hour
+1;P;PLC_Minutes     ;UINT     ;0   ;PLC       ;               ;    ;    ;    ;5410;6   ;[RO]Currently minutes
+1;P;PLC_Seconds     ;UINT     ;0   ;PLC       ;               ;    ;    ;    ;5410;6   ;[RO]Currently seconds
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+1;P;PLC_WATCHDOGEN  ;BIT      ;0   ;PLC       ;               ;    ;    ;    ;5418;2   ;[RW]Enable Watchdog
+1;P;PLC_WATCHDOG_ms ;UDINT    ;0   ;PLC       ;               ;    ;    ;    ;5418;2   ;[RW]Reset Watchdog timer
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
