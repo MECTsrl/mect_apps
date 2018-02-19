@@ -130,7 +130,7 @@ OTHER_FILES += \
     languages_en.ts
 
 include(./languages.pri)
-
+TYPE = "TPAC1007_LV"
 # display size
 MODEL = "<width>480</width><height>272</height>"
 
