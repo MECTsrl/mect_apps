@@ -16,6 +16,7 @@ RESOURCE Resource1
         PROGRAM Fast_Inst1 WITH  Task3_Fast_10ms: Fast;
         PROGRAM Normal_Inst1 WITH  Task4_Normal_100ms: Normal;
         PROGRAM Slow_Inst1 WITH  Task5_Slow_1000ms: Slow;
+        PROGRAM Testing_Inst1 WITH  Task4_Normal_100ms: Testing;
         
 END_RESOURCE
 

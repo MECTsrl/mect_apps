@@ -34,6 +34,12 @@ extern "C" {
 #include "cross_table_utility.h"
 
 
+#define ID_STATUS 193
+extern u_int16_t STATUS;
+int doWrite_STATUS(u_int16_t value);
+int addWrite_STATUS(u_int16_t value);
+int getStatus_STATUS(void);
+
 #define ID_RTU_HEARTBEAT 200
 extern u_int16_t RTU_HEARTBEAT;
 int doWrite_RTU_HEARTBEAT(u_int16_t value);

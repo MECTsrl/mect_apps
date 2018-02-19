@@ -28,6 +28,13 @@
 #include "global_var.h"
 
 /*
+ * Variable STATUS
+ */
+
+u_int16_t STATUS = 0;
+
+
+/*
  * Variable RTU_HEARTBEAT
  */
 
@@ -4344,6 +4351,24 @@ int PLC_FastIO_31 = 0;
  */
 
 int PLC_FastIO_32 = 0;
+
+int
+doWrite_STATUS(u_int16_t value)
+{
+	return doWrite(ID_STATUS, &value);
+}
+
+int
+addWrite_STATUS(u_int16_t value)
+{
+	return addWrite(ID_STATUS, &value);
+}
+
+int
+getStatus_STATUS(void)
+{
+	return getStatus(ID_STATUS);
+}
 
 int
 doWrite_RTU_HEARTBEAT(u_int16_t value)
@@ -15457,6 +15482,7 @@ update_all(void)
 {
 	int retval = 0;
 
+	retval += readFromDb(ID_STATUS, &STATUS);
 	retval += readFromDb(ID_RTU_HEARTBEAT, &RTU_HEARTBEAT);
 	retval += readFromDb(ID_RTU_RTU_WR, &RTU_RTU_WR);
 	retval += readFromDb(ID_RTU_RTU_RD, &RTU_RTU_RD);
