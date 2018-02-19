@@ -3729,7 +3729,7 @@ background-color: rgb(255, 255, 127);
     </font>
    </property>
    <property name="mapping">
-    <string>0;:/icons/my_img/local.png;216;:/icons/my_img/remote.png;42;:/icons/my_img/done.png</string>
+    <string>0;:/icons/icons/local.png;216;:/icons/icons/remote.png;42;:/icons/icons/done.png</string>
    </property>
    <property name="variable">
     <string>TEST_STATUS</string>
