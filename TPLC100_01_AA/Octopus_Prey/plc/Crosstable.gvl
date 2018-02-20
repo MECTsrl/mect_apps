@@ -424,110 +424,124 @@ VAR_GLOBAL
 	NODE_15_STATUS AT %ID0.20804:UDINT;
 	NODE_16_DEV_NODE AT %ID0.20808:UDINT;
 	NODE_16_STATUS AT %ID0.20812:UDINT;
-	PLC_DigIn_1 AT %IX0.21200.0:BOOL;
-	PLC_DigIn_2 AT %IX0.21204.0:BOOL;
-	PLC_DigIn_3 AT %IX0.21208.0:BOOL;
-	PLC_DigIn_4 AT %IX0.21212.0:BOOL;
-	PLC_DigIn_5 AT %IX0.21216.0:BOOL;
-	PLC_DigIn_6 AT %IX0.21220.0:BOOL;
-	PLC_DigIn_7 AT %IX0.21224.0:BOOL;
-	PLC_DigIn_8 AT %IX0.21228.0:BOOL;
-	PLC_DigIn_9 AT %IX0.21232.0:BOOL;
-	PLC_DigIn_10 AT %IX0.21236.0:BOOL;
-	PLC_DigIn_11 AT %IX0.21240.0:BOOL;
-	PLC_DigIn_12 AT %IX0.21244.0:BOOL;
-	PLC_DigIn_13 AT %IX0.21248.0:BOOL;
-	PLC_DigIn_14 AT %IX0.21252.0:BOOL;
-	PLC_DigIn_15 AT %IX0.21256.0:BOOL;
-	PLC_DigIn_16 AT %IX0.21260.0:BOOL;
-	PLC_FWrel_Dig AT %IB0.21264:BYTE;
-	PLC_FWrel_An AT %IB0.21268:BYTE;
-	PLC_DigOut_1 AT %QX0.21272.0:BOOL;
-	PLC_DigOut_2 AT %QX0.21276.0:BOOL;
-	PLC_DigOut_3 AT %QX0.21280.0:BOOL;
-	PLC_DigOut_4 AT %QX0.21284.0:BOOL;
-	PLC_DigOut_5 AT %QX0.21288.0:BOOL;
-	PLC_DigOut_6 AT %QX0.21292.0:BOOL;
-	PLC_DigOut_7 AT %QX0.21296.0:BOOL;
-	PLC_DigOut_8 AT %QX0.21300.0:BOOL;
-	PLC_DigOut_9 AT %QX0.21304.0:BOOL;
-	PLC_DigOut_10 AT %QX0.21308.0:BOOL;
-	PLC_DigOut_11 AT %QX0.21312.0:BOOL;
-	PLC_DigOut_12 AT %QX0.21316.0:BOOL;
-	PLC_DigOutEn_1 AT %QX0.21320.0:BOOL;
-	PLC_DigOutEn_2 AT %QX0.21324.0:BOOL;
-	PLC_DigOutEn_3 AT %QX0.21328.0:BOOL;
-	PLC_DigOutEn_4 AT %QX0.21332.0:BOOL;
-	PLC_DigOutEn_5 AT %QX0.21336.0:BOOL;
-	PLC_DigOutEn_6 AT %QX0.21340.0:BOOL;
-	PLC_DigOutEn_7 AT %QX0.21344.0:BOOL;
-	PLC_DigOutEn_8 AT %QX0.21348.0:BOOL;
-	PLC_DigOutDly_1 AT %QX0.21352.0:BOOL;
-	PLC_DigOutDly_2 AT %QX0.21356.0:BOOL;
-	PLC_DigOutDly_3 AT %QX0.21360.0:BOOL;
-	PLC_DigOutDly_4 AT %QX0.21364.0:BOOL;
-	PLC_DigOutDly_5 AT %QX0.21368.0:BOOL;
-	PLC_DigOutDly_6 AT %QX0.21372.0:BOOL;
-	PLC_DigOutDly_7 AT %QX0.21376.0:BOOL;
-	PLC_DigOutDly_8 AT %QX0.21380.0:BOOL;
-	PLC_AnIn_1 AT %IW0.21384:INT;
-	PLC_AnIn_2 AT %IW0.21388:INT;
-	PLC_AnIn_3 AT %IW0.21392:INT;
-	PLC_AnIn_4 AT %IW0.21396:INT;
-	PLC_AnIn_5 AT %IW0.21400:INT;
-	PLC_AnIn_6 AT %IW0.21404:INT;
-	PLC_AnIn_7 AT %IW0.21408:INT;
-	PLC_AnIn_8 AT %IW0.21412:INT;
-	PLC_AnIn_9 AT %IW0.21416:INT;
-	PLC_AnIn_10 AT %IW0.21420:INT;
-	PLC_AnIn_11 AT %IW0.21424:INT;
-	PLC_AnIn_12 AT %IW0.21428:INT;
-	PLC_CJT_X12 AT %IW0.21432:INT;
-	PLC_CJT_X11 AT %IW0.21436:INT;
-	PLC_VCC AT %IW0.21440:UINT;
-	PLC_AnInST_1_4 AT %IW0.21444:UINT;
-	PLC_AnInST_5_8 AT %IW0.21448:UINT;
-	PLC_AnInST_9_12 AT %IW0.21452:UINT;
-	PLC_AnOutST_1_2 AT %IW0.21456:UINT;
-	PLC_BoardStatus AT %IW0.21460:UINT;
-	PLC_BoardErrors AT %IW0.21464:UINT;
-	PLC_HeartBeat AT %IW0.21468:UINT;
-	PLC_Encoder_Lo AT %IW0.21472:UINT;
-	PLC_Encoder_Hi AT %IW0.21476:UINT;
-	PLC_TempScale AT %QW0.21480:UINT;
-	PLC_AnOut_1 AT %QW0.21484:INT;
-	PLC_AnOut_2 AT %QW0.21488:INT;
-	PLC_AnInConf_1 AT %QW0.21492:UINT;
-	PLC_AnInConf_2 AT %QW0.21496:UINT;
-	PLC_AnInConf_3 AT %QW0.21500:UINT;
-	PLC_AnInConf_4 AT %QW0.21504:UINT;
-	PLC_AnInConf_5 AT %QW0.21508:UINT;
-	PLC_AnInConf_6 AT %QW0.21512:UINT;
-	PLC_AnInConf_7 AT %QW0.21516:UINT;
-	PLC_AnInConf_8 AT %QW0.21520:UINT;
-	PLC_AnInConf_9 AT %QW0.21524:UINT;
-	PLC_AnInConf_10 AT %QW0.21528:UINT;
-	PLC_AnInConf_11 AT %QW0.21532:UINT;
-	PLC_AnInConf_12 AT %QW0.21536:UINT;
-	PLC_AnOutConf_1 AT %QW0.21540:UINT;
-	PLC_AnOutConf_2 AT %QW0.21544:UINT;
-	PLC_ResetCount AT %QW0.21548:UINT;
-	PLC_time AT %ID0.21560:REAL;
-	PLC_timeMin AT %ID0.21564:REAL;
-	PLC_timeMax AT %ID0.21568:REAL;
-	PLC_timeWin AT %QD0.21572:REAL;
-	PLC_Version AT %IW0.21576:UINT;
-	PLC_EngineStatus AT %IW0.21580:UINT;
-	PLC_ResetValues AT %QX0.21584.0:BOOL;
-	PLC_buzzerOn AT %QX0.21588.0:BOOL;
-	CH0_NETRUN AT %IX0.21600.0:BOOL;
-	CH0_NETGOOD AT %IX0.21604.0:BOOL;
-	CH0_NETERR AT %ID0.21608:UDINT;
-	CH0_NETRST AT %QX0.21612.0:BOOL;
-	CH0_NETDIS AT %QX0.21616.0:BOOL;
-	CH0_01_NODERUN AT %IX0.21620.0:BOOL;
-	CH0_01_NODEGOOD AT %IX0.21624.0:BOOL;
-	CH0_01_NODEERR AT %ID0.21628:UDINT;
-	CH0_01_NODERST AT %QX0.21632.0:BOOL;
-	CH0_01_NODEDIS AT %QX0.21636.0:BOOL;
+	PLC_DigIn_1 AT %IX0.21200.0:BOOL;	(* Digital input 1 value *)
+	PLC_DigIn_2 AT %IX0.21204.0:BOOL;	(* Digital input 2 value *)
+	PLC_DigIn_3 AT %IX0.21208.0:BOOL;	(* Digital input 3 value *)
+	PLC_DigIn_4 AT %IX0.21212.0:BOOL;	(* Digital input 4 value *)
+	PLC_DigIn_5 AT %IX0.21216.0:BOOL;	(* Digital input 5 value *)
+	PLC_DigIn_6 AT %IX0.21220.0:BOOL;	(* Digital input 6 value *)
+	PLC_DigIn_7 AT %IX0.21224.0:BOOL;	(* Digital input 7 value *)
+	PLC_DigIn_8 AT %IX0.21228.0:BOOL;	(* Digital input 8 value *)
+	PLC_DigIn_9 AT %IX0.21232.0:BOOL;	(* Configuration mini dip input 9 *)
+	PLC_DigIn_10 AT %IX0.21236.0:BOOL;	(* Configuration mini dip input 10 *)
+	PLC_DigIn_11 AT %IX0.21240.0:BOOL;	(* Configuration mini dip input 11 *)
+	PLC_DigIn_12 AT %IX0.21244.0:BOOL;	(* Configuration mini dip input 12 *)
+	PLC_DigIn_13 AT %IX0.21248.0:BOOL;	(* Configuration mini dip input 13 *)
+	PLC_DigIn_14 AT %IX0.21252.0:BOOL;	(* Configuration mini dip input 14 *)
+	PLC_DigIn_15 AT %IX0.21256.0:BOOL;	(* Configuration mini dip input 15 *)
+	PLC_DigIn_16 AT %IX0.21260.0:BOOL;	(* Configuration mini dip input 16 *)
+	PLC_FWrel_Dig AT %IB0.21264:BYTE;	(* Digital In Out firmware version *)
+	PLC_FWrel_An AT %IB0.21268:BYTE;	(* Analog In Out firmware version *)
+	PLC_DigOut_1 AT %QX0.21272.0:BOOL;	(* Digital output 1 value *)
+	PLC_DigOut_2 AT %QX0.21276.0:BOOL;	(* Digital output 2 value *)
+	PLC_DigOut_3 AT %QX0.21280.0:BOOL;	(* Digital output 3 value *)
+	PLC_DigOut_4 AT %QX0.21284.0:BOOL;	(* Digital output 4 value *)
+	PLC_DigOut_5 AT %QX0.21288.0:BOOL;	(* Digital output 5 value *)
+	PLC_DigOut_6 AT %QX0.21292.0:BOOL;	(* Digital output 6 value *)
+	PLC_DigOut_7 AT %QX0.21296.0:BOOL;	(* Digital output 7 value *)
+	PLC_DigOut_8 AT %QX0.21300.0:BOOL;	(* Digital output 8 value *)
+	PLC_Reserved_1 AT %QX0.21304.0:BOOL;	(* Reserved *)
+	PLC_Reserved_2 AT %QX0.21308.0:BOOL;	(* Reserved *)
+	PLC_Reserved_3 AT %QX0.21312.0:BOOL;	(* Reserved *)
+	PLC_Reserved_4 AT %QX0.21316.0:BOOL;	(* Reserved *)
+	PLC_DigOutEn_1 AT %QX0.21320.0:BOOL;	(* Digital output 1 enable *)
+	PLC_DigOutEn_2 AT %QX0.21324.0:BOOL;	(* Digital output 2 enable *)
+	PLC_DigOutEn_3 AT %QX0.21328.0:BOOL;	(* Digital output 3 enable *)
+	PLC_DigOutEn_4 AT %QX0.21332.0:BOOL;	(* Digital output 4 enable *)
+	PLC_DigOutEn_5 AT %QX0.21336.0:BOOL;	(* Digital output 5 enable *)
+	PLC_DigOutEn_6 AT %QX0.21340.0:BOOL;	(* Digital output 6 enable *)
+	PLC_DigOutEn_7 AT %QX0.21344.0:BOOL;	(* Digital output 7 enable *)
+	PLC_DigOutEn_8 AT %QX0.21348.0:BOOL;	(* Digital output 8 enable *)
+	PLC_DigOutDly_1 AT %QX0.21352.0:BOOL;	(* Not available *)
+	PLC_DigOutDly_2 AT %QX0.21356.0:BOOL;	(* Not available *)
+	PLC_DigOutDly_3 AT %QX0.21360.0:BOOL;	(* Not available *)
+	PLC_DigOutDly_4 AT %QX0.21364.0:BOOL;	(* Not available *)
+	PLC_DigOutDly_5 AT %QX0.21368.0:BOOL;	(* Not available *)
+	PLC_DigOutDly_6 AT %QX0.21372.0:BOOL;	(* Not available *)
+	PLC_DigOutDly_7 AT %QX0.21376.0:BOOL;	(* Not available *)
+	PLC_DigOutDly_8 AT %QX0.21380.0:BOOL;	(* Not available *)
+	PLC_AnIn_1 AT %IW0.21384:INT;	(* Analog input 1 value *)
+	PLC_AnIn_2 AT %IW0.21388:INT;	(* Analog input 2 value *)
+	PLC_AnIn_3 AT %IW0.21392:INT;	(* Analog input 3 value *)
+	PLC_AnIn_4 AT %IW0.21396:INT;	(* Analog input 4 value *)
+	PLC_AnIn_5 AT %IW0.21400:INT;	(* Analog input 5 value *)
+	PLC_AnIn_6 AT %IW0.21404:INT;	(* Analog input 6 value *)
+	PLC_AnIn_7 AT %IW0.21408:INT;	(* Analog input 7 value *)
+	PLC_AnIn_8 AT %IW0.21412:INT;	(* Analog input 8 value *)
+	PLC_AnIn_9 AT %IW0.21416:INT;	(* Analog input 9 value *)
+	PLC_AnIn_10 AT %IW0.21420:INT;	(* Analog input 10 value *)
+	PLC_AnIn_11 AT %IW0.21424:INT;	(* Analog input 11 value *)
+	PLC_AnIn_12 AT %IW0.21428:INT;	(* Analog input 12 value *)
+	PLC_CJT_X12 AT %IW0.21432:INT;	(* M12 Cold junction compensation value *)
+	PLC_CJT_X11 AT %IW0.21436:INT;	(* M11 Cold junction compensation value *)
+	PLC_VCC AT %IW0.21440:UINT;	(* Ratiometric voltage supply *)
+	PLC_AnInST_1_4 AT %IW0.21444:UINT;	(* Analog inputs from 1 to 4 status *)
+	PLC_AnInST_5_8 AT %IW0.21448:UINT;	(* Analog inputs from 5 to 8 status *)
+	PLC_AnInST_9_12 AT %IW0.21452:UINT;	(* Analog inputs from 9 to 12 status *)
+	PLC_AnOutST_1_2 AT %IW0.21456:UINT;	(* Analog outputs 1 and 2 status *)
+	PLC_BoardStatus AT %IW0.21460:UINT;	(* Status board code *)
+	PLC_BoardErrors AT %IW0.21464:UINT;	(* Errors board code *)
+	PLC_HeartBeat AT %IW0.21468:UINT;	(* In - Out board function check *)
+	PLC_Reserved_5 AT %IW0.21472:UINT;	(* Reserved *)
+	PLC_Reserved_6 AT %IW0.21476:UINT;	(* Reserved *)
+	PLC_TempScale AT %QW0.21480:UINT;	(* Temperature scale *)
+	PLC_AnOut_1 AT %QW0.21484:INT;	(* Analog output 1 value *)
+	PLC_AnOut_2 AT %QW0.21488:INT;	(* Analog output 2 value *)
+	PLC_AnInConf_1 AT %QW0.21492:UINT;	(* Analog input 1 configuration *)
+	PLC_AnInConf_2 AT %QW0.21496:UINT;	(* Analog input 2 configuration *)
+	PLC_AnInConf_3 AT %QW0.21500:UINT;	(* Analog input 3 configuration *)
+	PLC_AnInConf_4 AT %QW0.21504:UINT;	(* Analog input 4 configuration *)
+	PLC_AnInConf_5 AT %QW0.21508:UINT;	(* Analog input 5 configuration *)
+	PLC_AnInConf_6 AT %QW0.21512:UINT;	(* Analog input 6 configuration *)
+	PLC_AnInConf_7 AT %QW0.21516:UINT;	(* Analog input 7 configuration *)
+	PLC_AnInConf_8 AT %QW0.21520:UINT;	(* Analog input 8 configuration *)
+	PLC_AnInConf_9 AT %QW0.21524:UINT;	(* Analog input 9 configuration *)
+	PLC_AnInConf_10 AT %QW0.21528:UINT;	(* Analog input 10 configuration *)
+	PLC_AnInConf_11 AT %QW0.21532:UINT;	(* Analog input 11 configuration *)
+	PLC_AnInConf_12 AT %QW0.21536:UINT;	(* Analog input 12 configuration *)
+	PLC_AnOutConf_1 AT %QW0.21540:UINT;	(* Analog output 1 configuration *)
+	PLC_AnOutConf_2 AT %QW0.21544:UINT;	(* Analog output 2 configuration *)
+	PLC_Reserved_7 AT %QW0.21548:UINT;	(* Reserved *)
+	PLC_time AT %ID0.21560:REAL;	(* Seconds since boot (reset each 24h) *)
+	PLC_timeMin AT %ID0.21564:REAL;	(* 10 seconds window start *)
+	PLC_timeMax AT %ID0.21568:REAL;	(* 10 seconds window stop *)
+	PLC_timeWin AT %QD0.21572:REAL;	(* Graph display window *)
+	PLC_Version AT %IW0.21576:UINT;	(* Run Time version *)
+	PLC_EngineStatus AT %IW0.21580:UINT;	(* PLC status *)
+	PLC_ResetValues AT %QX0.21584.0:BOOL;	(* Diagnostic variables reset *)
+	PLC_buzzerOn AT %QX0.21588.0:BOOL;	(* Buzzer sound (enable = 1 disable = 0) *)
+	PLC_PLC_Version AT %IW0.21592:UINT;	(* PLC application version *)
+	PLC_HMI_Version AT %IW0.21596:UINT;	(* HMI application version *)
+	CH0_NETRUN AT %IX0.21600.0:BOOL;	(* Active channel *)
+	CH0_NETGOOD AT %IX0.21604.0:BOOL;	(* Channel configuration *)
+	CH0_NETERR AT %ID0.21608:UDINT;	(* Bus status *)
+	CH0_NETRST AT %QX0.21612.0:BOOL;	(* Bus reset *)
+	CH0_NETDIS AT %QX0.21616.0:BOOL;	(* Disable the bus *)
+	CH0_01_NODERUN AT %IX0.21620.0:BOOL;	(* In Out board - active channel *)
+	CH0_01_NODEGOOD AT %IX0.21624.0:BOOL;	(* In Out board - channel configuration *)
+	CH0_01_NODEERR AT %ID0.21628:UDINT;	(* In Out board - bus status *)
+	CH0_01_NODERST AT %QX0.21632.0:BOOL;	(* In Out board - bus reset *)
+	CH0_01_NODEDIS AT %QX0.21636.0:BOOL;	(* In Out board - disable the bus *)
+	PLC_Year AT %IW0.21640:UINT;	(* Currently year *)
+	PLC_Month AT %IW0.21644:UINT;	(* Currently month *)
+	PLC_Day AT %IW0.21648:UINT;	(* Currently day *)
+	PLC_Hours AT %IW0.21652:UINT;	(* Currently hour *)
+	PLC_Minutes AT %IW0.21656:UINT;	(* Currently minutes *)
+	PLC_Seconds AT %IW0.21660:UINT;	(* Currently seconds *)
+	PLC_WATCHDOGEN AT %QX0.21672.0:BOOL;	(* Enable Watchdog *)
+	PLC_WATCHDOG_ms AT %QD0.21676:UDINT;	(* Reset Watchdog timer *)
+	PLC_BEEP_VOLUME AT %QB0.21740:BYTE;	(* Beep volume (when buzzerOn) *)
+	PLC_TOUCH_VOLUME AT %QB0.21744:BYTE;	(* Touch volume *)
+	PLC_ALARM_VOLUME AT %QB0.21748:BYTE;	(* Alarm volume (when alarm) *)
+	PLC_BUZZER AT %QD0.21752:UDINT;	(* Enable dynamic buzzer sound (0x44332211 up=0x11(%) on=0x22(cs) off=0x33(cs) rep=0x44(times)) *)
 END_VAR
