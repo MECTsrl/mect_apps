@@ -1,4 +1,5 @@
 #include "crosstable.h"
+#include "automation.h"
 
 static int counter;
 

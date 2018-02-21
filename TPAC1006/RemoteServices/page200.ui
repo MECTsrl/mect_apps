@@ -287,13 +287,13 @@ background-color: rgb(255, 255, 127);
     <string>65535</string>
    </property>
    <property name="toolTip">
-    <string>CAN1_READ_QUEUE</string>
+    <string>CAN1_BUS_LOAD</string>
    </property>
    <property name="whatsThis">
     <string>ATCMlabel widget</string>
    </property>
    <property name="variable">
-    <string>CAN1_READ_QUEUE</string>
+    <string>CAN1_BUS_LOAD</string>
    </property>
    <property name="refresh">
     <number>100</number>
@@ -588,13 +588,13 @@ CAN1 NODE1</string>
     <string>65535</string>
    </property>
    <property name="toolTip">
-    <string>RTU3_READ_QUEUE</string>
+    <string>RTU3_BUS_LOAD</string>
    </property>
    <property name="whatsThis">
     <string>ATCMlabel widget</string>
    </property>
    <property name="variable">
-    <string>RTU3_READ_QUEUE</string>
+    <string>RTU3_BUS_LOAD</string>
    </property>
    <property name="refresh">
     <number>100</number>
@@ -1585,13 +1585,13 @@ CAN0 NODE1</string>
     <string>65535</string>
    </property>
    <property name="toolTip">
-    <string>CAN0_READ_QUEUE</string>
+    <string>CAN0_BUS_LOAD</string>
    </property>
    <property name="whatsThis">
     <string>ATCMlabel widget</string>
    </property>
    <property name="variable">
-    <string>CAN0_READ_QUEUE</string>
+    <string>CAN0_BUS_LOAD</string>
    </property>
    <property name="refresh">
     <number>100</number>
@@ -2423,13 +2423,13 @@ CAN0 NODE1</string>
     <string>65535</string>
    </property>
    <property name="toolTip">
-    <string>TCP0_READ_QUEUE</string>
+    <string>TCP0_BUS_LOAD</string>
    </property>
    <property name="whatsThis">
     <string>ATCMlabel widget</string>
    </property>
    <property name="variable">
-    <string>TCP0_READ_QUEUE</string>
+    <string>TCP0_BUS_LOAD</string>
    </property>
    <property name="refresh">
     <number>100</number>

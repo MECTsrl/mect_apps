@@ -1011,13 +1011,13 @@ RTU0 NODE0</string>
     <string>65535</string>
    </property>
    <property name="toolTip">
-    <string>RTU0_READ_QUEUE</string>
+    <string>RTU0_BUS_LOAD</string>
    </property>
    <property name="whatsThis">
     <string>ATCMlabel widget</string>
    </property>
    <property name="variable">
-    <string>RTU0_READ_QUEUE</string>
+    <string>RTU0_BUS_LOAD</string>
    </property>
    <property name="refresh">
     <number>100</number>

@@ -140,10 +140,10 @@ u_int32_t RTU0_WRITE_QUEUE = 0;
 
 
 /*
- * Variable RTU0_READ_QUEUE
+ * Variable RTU0_BUS_LOAD
  */
 
-u_int32_t RTU0_READ_QUEUE = 0;
+u_int32_t RTU0_BUS_LOAD = 0;
 
 
 /*
@@ -210,10 +210,10 @@ u_int32_t RTU3_WRITE_QUEUE = 0;
 
 
 /*
- * Variable RTU3_READ_QUEUE
+ * Variable RTU3_BUS_LOAD
  */
 
-u_int32_t RTU3_READ_QUEUE = 0;
+u_int32_t RTU3_BUS_LOAD = 0;
 
 
 /*
@@ -280,10 +280,10 @@ u_int32_t TCPS_WRITE_QUEUE = 0;
 
 
 /*
- * Variable TCPS_READ_QUEUE
+ * Variable TCPS_BUS_LOAD
  */
 
-u_int32_t TCPS_READ_QUEUE = 0;
+u_int32_t TCPS_BUS_LOAD = 0;
 
 
 /*
@@ -350,10 +350,10 @@ u_int32_t TCP0_WRITE_QUEUE = 0;
 
 
 /*
- * Variable TCP0_READ_QUEUE
+ * Variable TCP0_BUS_LOAD
  */
 
-u_int32_t TCP0_READ_QUEUE = 0;
+u_int32_t TCP0_BUS_LOAD = 0;
 
 
 /*
@@ -420,10 +420,10 @@ u_int32_t TCP1_WRITE_QUEUE = 0;
 
 
 /*
- * Variable TCP1_READ_QUEUE
+ * Variable TCP1_BUS_LOAD
  */
 
-u_int32_t TCP1_READ_QUEUE = 0;
+u_int32_t TCP1_BUS_LOAD = 0;
 
 
 /*
@@ -490,10 +490,10 @@ u_int32_t TCP2_WRITE_QUEUE = 0;
 
 
 /*
- * Variable TCP2_READ_QUEUE
+ * Variable TCP2_BUS_LOAD
  */
 
-u_int32_t TCP2_READ_QUEUE = 0;
+u_int32_t TCP2_BUS_LOAD = 0;
 
 
 /*
@@ -560,10 +560,10 @@ u_int32_t TCP3_WRITE_QUEUE = 0;
 
 
 /*
- * Variable TCP3_READ_QUEUE
+ * Variable TCP3_BUS_LOAD
  */
 
-u_int32_t TCP3_READ_QUEUE = 0;
+u_int32_t TCP3_BUS_LOAD = 0;
 
 
 /*
@@ -630,10 +630,10 @@ u_int32_t TCP4_WRITE_QUEUE = 0;
 
 
 /*
- * Variable TCP4_READ_QUEUE
+ * Variable TCP4_BUS_LOAD
  */
 
-u_int32_t TCP4_READ_QUEUE = 0;
+u_int32_t TCP4_BUS_LOAD = 0;
 
 
 /*
@@ -700,10 +700,10 @@ u_int32_t TCP5_WRITE_QUEUE = 0;
 
 
 /*
- * Variable TCP5_READ_QUEUE
+ * Variable TCP5_BUS_LOAD
  */
 
-u_int32_t TCP5_READ_QUEUE = 0;
+u_int32_t TCP5_BUS_LOAD = 0;
 
 
 /*
@@ -770,10 +770,10 @@ u_int32_t TCP6_WRITE_QUEUE = 0;
 
 
 /*
- * Variable TCP6_READ_QUEUE
+ * Variable TCP6_BUS_LOAD
  */
 
-u_int32_t TCP6_READ_QUEUE = 0;
+u_int32_t TCP6_BUS_LOAD = 0;
 
 
 /*
@@ -840,10 +840,10 @@ u_int32_t TCP7_WRITE_QUEUE = 0;
 
 
 /*
- * Variable TCP7_READ_QUEUE
+ * Variable TCP7_BUS_LOAD
  */
 
-u_int32_t TCP7_READ_QUEUE = 0;
+u_int32_t TCP7_BUS_LOAD = 0;
 
 
 /*
@@ -910,10 +910,10 @@ u_int32_t TCP8_WRITE_QUEUE = 0;
 
 
 /*
- * Variable TCP8_READ_QUEUE
+ * Variable TCP8_BUS_LOAD
  */
 
-u_int32_t TCP8_READ_QUEUE = 0;
+u_int32_t TCP8_BUS_LOAD = 0;
 
 
 /*
@@ -980,10 +980,10 @@ u_int32_t TCP9_WRITE_QUEUE = 0;
 
 
 /*
- * Variable TCP9_READ_QUEUE
+ * Variable TCP9_BUS_LOAD
  */
 
-u_int32_t TCP9_READ_QUEUE = 0;
+u_int32_t TCP9_BUS_LOAD = 0;
 
 
 /*
@@ -1652,21 +1652,21 @@ getStatus_RTU0_WRITE_QUEUE(void)
 }
 
 int
-doWrite_RTU0_READ_QUEUE(u_int32_t value)
+doWrite_RTU0_BUS_LOAD(u_int32_t value)
 {
-	return doWrite(ID_RTU0_READ_QUEUE, &value);
+	return doWrite(ID_RTU0_BUS_LOAD, &value);
 }
 
 int
-addWrite_RTU0_READ_QUEUE(u_int32_t value)
+addWrite_RTU0_BUS_LOAD(u_int32_t value)
 {
-	return addWrite(ID_RTU0_READ_QUEUE, &value);
+	return addWrite(ID_RTU0_BUS_LOAD, &value);
 }
 
 int
-getStatus_RTU0_READ_QUEUE(void)
+getStatus_RTU0_BUS_LOAD(void)
 {
-	return getStatus(ID_RTU0_READ_QUEUE);
+	return getStatus(ID_RTU0_BUS_LOAD);
 }
 
 int
@@ -1832,21 +1832,21 @@ getStatus_RTU3_WRITE_QUEUE(void)
 }
 
 int
-doWrite_RTU3_READ_QUEUE(u_int32_t value)
+doWrite_RTU3_BUS_LOAD(u_int32_t value)
 {
-	return doWrite(ID_RTU3_READ_QUEUE, &value);
+	return doWrite(ID_RTU3_BUS_LOAD, &value);
 }
 
 int
-addWrite_RTU3_READ_QUEUE(u_int32_t value)
+addWrite_RTU3_BUS_LOAD(u_int32_t value)
 {
-	return addWrite(ID_RTU3_READ_QUEUE, &value);
+	return addWrite(ID_RTU3_BUS_LOAD, &value);
 }
 
 int
-getStatus_RTU3_READ_QUEUE(void)
+getStatus_RTU3_BUS_LOAD(void)
 {
-	return getStatus(ID_RTU3_READ_QUEUE);
+	return getStatus(ID_RTU3_BUS_LOAD);
 }
 
 int
@@ -2012,21 +2012,21 @@ getStatus_TCPS_WRITE_QUEUE(void)
 }
 
 int
-doWrite_TCPS_READ_QUEUE(u_int32_t value)
+doWrite_TCPS_BUS_LOAD(u_int32_t value)
 {
-	return doWrite(ID_TCPS_READ_QUEUE, &value);
+	return doWrite(ID_TCPS_BUS_LOAD, &value);
 }
 
 int
-addWrite_TCPS_READ_QUEUE(u_int32_t value)
+addWrite_TCPS_BUS_LOAD(u_int32_t value)
 {
-	return addWrite(ID_TCPS_READ_QUEUE, &value);
+	return addWrite(ID_TCPS_BUS_LOAD, &value);
 }
 
 int
-getStatus_TCPS_READ_QUEUE(void)
+getStatus_TCPS_BUS_LOAD(void)
 {
-	return getStatus(ID_TCPS_READ_QUEUE);
+	return getStatus(ID_TCPS_BUS_LOAD);
 }
 
 int
@@ -2192,21 +2192,21 @@ getStatus_TCP0_WRITE_QUEUE(void)
 }
 
 int
-doWrite_TCP0_READ_QUEUE(u_int32_t value)
+doWrite_TCP0_BUS_LOAD(u_int32_t value)
 {
-	return doWrite(ID_TCP0_READ_QUEUE, &value);
+	return doWrite(ID_TCP0_BUS_LOAD, &value);
 }
 
 int
-addWrite_TCP0_READ_QUEUE(u_int32_t value)
+addWrite_TCP0_BUS_LOAD(u_int32_t value)
 {
-	return addWrite(ID_TCP0_READ_QUEUE, &value);
+	return addWrite(ID_TCP0_BUS_LOAD, &value);
 }
 
 int
-getStatus_TCP0_READ_QUEUE(void)
+getStatus_TCP0_BUS_LOAD(void)
 {
-	return getStatus(ID_TCP0_READ_QUEUE);
+	return getStatus(ID_TCP0_BUS_LOAD);
 }
 
 int
@@ -2372,21 +2372,21 @@ getStatus_TCP1_WRITE_QUEUE(void)
 }
 
 int
-doWrite_TCP1_READ_QUEUE(u_int32_t value)
+doWrite_TCP1_BUS_LOAD(u_int32_t value)
 {
-	return doWrite(ID_TCP1_READ_QUEUE, &value);
+	return doWrite(ID_TCP1_BUS_LOAD, &value);
 }
 
 int
-addWrite_TCP1_READ_QUEUE(u_int32_t value)
+addWrite_TCP1_BUS_LOAD(u_int32_t value)
 {
-	return addWrite(ID_TCP1_READ_QUEUE, &value);
+	return addWrite(ID_TCP1_BUS_LOAD, &value);
 }
 
 int
-getStatus_TCP1_READ_QUEUE(void)
+getStatus_TCP1_BUS_LOAD(void)
 {
-	return getStatus(ID_TCP1_READ_QUEUE);
+	return getStatus(ID_TCP1_BUS_LOAD);
 }
 
 int
@@ -2552,21 +2552,21 @@ getStatus_TCP2_WRITE_QUEUE(void)
 }
 
 int
-doWrite_TCP2_READ_QUEUE(u_int32_t value)
+doWrite_TCP2_BUS_LOAD(u_int32_t value)
 {
-	return doWrite(ID_TCP2_READ_QUEUE, &value);
+	return doWrite(ID_TCP2_BUS_LOAD, &value);
 }
 
 int
-addWrite_TCP2_READ_QUEUE(u_int32_t value)
+addWrite_TCP2_BUS_LOAD(u_int32_t value)
 {
-	return addWrite(ID_TCP2_READ_QUEUE, &value);
+	return addWrite(ID_TCP2_BUS_LOAD, &value);
 }
 
 int
-getStatus_TCP2_READ_QUEUE(void)
+getStatus_TCP2_BUS_LOAD(void)
 {
-	return getStatus(ID_TCP2_READ_QUEUE);
+	return getStatus(ID_TCP2_BUS_LOAD);
 }
 
 int
@@ -2732,21 +2732,21 @@ getStatus_TCP3_WRITE_QUEUE(void)
 }
 
 int
-doWrite_TCP3_READ_QUEUE(u_int32_t value)
+doWrite_TCP3_BUS_LOAD(u_int32_t value)
 {
-	return doWrite(ID_TCP3_READ_QUEUE, &value);
+	return doWrite(ID_TCP3_BUS_LOAD, &value);
 }
 
 int
-addWrite_TCP3_READ_QUEUE(u_int32_t value)
+addWrite_TCP3_BUS_LOAD(u_int32_t value)
 {
-	return addWrite(ID_TCP3_READ_QUEUE, &value);
+	return addWrite(ID_TCP3_BUS_LOAD, &value);
 }
 
 int
-getStatus_TCP3_READ_QUEUE(void)
+getStatus_TCP3_BUS_LOAD(void)
 {
-	return getStatus(ID_TCP3_READ_QUEUE);
+	return getStatus(ID_TCP3_BUS_LOAD);
 }
 
 int
@@ -2912,21 +2912,21 @@ getStatus_TCP4_WRITE_QUEUE(void)
 }
 
 int
-doWrite_TCP4_READ_QUEUE(u_int32_t value)
+doWrite_TCP4_BUS_LOAD(u_int32_t value)
 {
-	return doWrite(ID_TCP4_READ_QUEUE, &value);
+	return doWrite(ID_TCP4_BUS_LOAD, &value);
 }
 
 int
-addWrite_TCP4_READ_QUEUE(u_int32_t value)
+addWrite_TCP4_BUS_LOAD(u_int32_t value)
 {
-	return addWrite(ID_TCP4_READ_QUEUE, &value);
+	return addWrite(ID_TCP4_BUS_LOAD, &value);
 }
 
 int
-getStatus_TCP4_READ_QUEUE(void)
+getStatus_TCP4_BUS_LOAD(void)
 {
-	return getStatus(ID_TCP4_READ_QUEUE);
+	return getStatus(ID_TCP4_BUS_LOAD);
 }
 
 int
@@ -3092,21 +3092,21 @@ getStatus_TCP5_WRITE_QUEUE(void)
 }
 
 int
-doWrite_TCP5_READ_QUEUE(u_int32_t value)
+doWrite_TCP5_BUS_LOAD(u_int32_t value)
 {
-	return doWrite(ID_TCP5_READ_QUEUE, &value);
+	return doWrite(ID_TCP5_BUS_LOAD, &value);
 }
 
 int
-addWrite_TCP5_READ_QUEUE(u_int32_t value)
+addWrite_TCP5_BUS_LOAD(u_int32_t value)
 {
-	return addWrite(ID_TCP5_READ_QUEUE, &value);
+	return addWrite(ID_TCP5_BUS_LOAD, &value);
 }
 
 int
-getStatus_TCP5_READ_QUEUE(void)
+getStatus_TCP5_BUS_LOAD(void)
 {
-	return getStatus(ID_TCP5_READ_QUEUE);
+	return getStatus(ID_TCP5_BUS_LOAD);
 }
 
 int
@@ -3272,21 +3272,21 @@ getStatus_TCP6_WRITE_QUEUE(void)
 }
 
 int
-doWrite_TCP6_READ_QUEUE(u_int32_t value)
+doWrite_TCP6_BUS_LOAD(u_int32_t value)
 {
-	return doWrite(ID_TCP6_READ_QUEUE, &value);
+	return doWrite(ID_TCP6_BUS_LOAD, &value);
 }
 
 int
-addWrite_TCP6_READ_QUEUE(u_int32_t value)
+addWrite_TCP6_BUS_LOAD(u_int32_t value)
 {
-	return addWrite(ID_TCP6_READ_QUEUE, &value);
+	return addWrite(ID_TCP6_BUS_LOAD, &value);
 }
 
 int
-getStatus_TCP6_READ_QUEUE(void)
+getStatus_TCP6_BUS_LOAD(void)
 {
-	return getStatus(ID_TCP6_READ_QUEUE);
+	return getStatus(ID_TCP6_BUS_LOAD);
 }
 
 int
@@ -3452,21 +3452,21 @@ getStatus_TCP7_WRITE_QUEUE(void)
 }
 
 int
-doWrite_TCP7_READ_QUEUE(u_int32_t value)
+doWrite_TCP7_BUS_LOAD(u_int32_t value)
 {
-	return doWrite(ID_TCP7_READ_QUEUE, &value);
+	return doWrite(ID_TCP7_BUS_LOAD, &value);
 }
 
 int
-addWrite_TCP7_READ_QUEUE(u_int32_t value)
+addWrite_TCP7_BUS_LOAD(u_int32_t value)
 {
-	return addWrite(ID_TCP7_READ_QUEUE, &value);
+	return addWrite(ID_TCP7_BUS_LOAD, &value);
 }
 
 int
-getStatus_TCP7_READ_QUEUE(void)
+getStatus_TCP7_BUS_LOAD(void)
 {
-	return getStatus(ID_TCP7_READ_QUEUE);
+	return getStatus(ID_TCP7_BUS_LOAD);
 }
 
 int
@@ -3632,21 +3632,21 @@ getStatus_TCP8_WRITE_QUEUE(void)
 }
 
 int
-doWrite_TCP8_READ_QUEUE(u_int32_t value)
+doWrite_TCP8_BUS_LOAD(u_int32_t value)
 {
-	return doWrite(ID_TCP8_READ_QUEUE, &value);
+	return doWrite(ID_TCP8_BUS_LOAD, &value);
 }
 
 int
-addWrite_TCP8_READ_QUEUE(u_int32_t value)
+addWrite_TCP8_BUS_LOAD(u_int32_t value)
 {
-	return addWrite(ID_TCP8_READ_QUEUE, &value);
+	return addWrite(ID_TCP8_BUS_LOAD, &value);
 }
 
 int
-getStatus_TCP8_READ_QUEUE(void)
+getStatus_TCP8_BUS_LOAD(void)
 {
-	return getStatus(ID_TCP8_READ_QUEUE);
+	return getStatus(ID_TCP8_BUS_LOAD);
 }
 
 int
@@ -3812,21 +3812,21 @@ getStatus_TCP9_WRITE_QUEUE(void)
 }
 
 int
-doWrite_TCP9_READ_QUEUE(u_int32_t value)
+doWrite_TCP9_BUS_LOAD(u_int32_t value)
 {
-	return doWrite(ID_TCP9_READ_QUEUE, &value);
+	return doWrite(ID_TCP9_BUS_LOAD, &value);
 }
 
 int
-addWrite_TCP9_READ_QUEUE(u_int32_t value)
+addWrite_TCP9_BUS_LOAD(u_int32_t value)
 {
-	return addWrite(ID_TCP9_READ_QUEUE, &value);
+	return addWrite(ID_TCP9_BUS_LOAD, &value);
 }
 
 int
-getStatus_TCP9_READ_QUEUE(void)
+getStatus_TCP9_BUS_LOAD(void)
 {
-	return getStatus(ID_TCP9_READ_QUEUE);
+	return getStatus(ID_TCP9_BUS_LOAD);
 }
 
 int
@@ -4823,7 +4823,7 @@ update_all(void)
 	retval += readFromDb(ID_RTU0_COMM_ERRORS, &RTU0_COMM_ERRORS);
 	retval += readFromDb(ID_RTU0_LAST_ERROR, &RTU0_LAST_ERROR);
 	retval += readFromDb(ID_RTU0_WRITE_QUEUE, &RTU0_WRITE_QUEUE);
-	retval += readFromDb(ID_RTU0_READ_QUEUE, &RTU0_READ_QUEUE);
+	retval += readFromDb(ID_RTU0_BUS_LOAD, &RTU0_BUS_LOAD);
 	retval += readFromDb(ID_RTU3_TYPE_PORT, &RTU3_TYPE_PORT);
 	retval += readFromDb(ID_RTU3_BAUDRATE, &RTU3_BAUDRATE);
 	retval += readFromDb(ID_RTU3_STATUS, &RTU3_STATUS);
@@ -4833,7 +4833,7 @@ update_all(void)
 	retval += readFromDb(ID_RTU3_COMM_ERRORS, &RTU3_COMM_ERRORS);
 	retval += readFromDb(ID_RTU3_LAST_ERROR, &RTU3_LAST_ERROR);
 	retval += readFromDb(ID_RTU3_WRITE_QUEUE, &RTU3_WRITE_QUEUE);
-	retval += readFromDb(ID_RTU3_READ_QUEUE, &RTU3_READ_QUEUE);
+	retval += readFromDb(ID_RTU3_BUS_LOAD, &RTU3_BUS_LOAD);
 	retval += readFromDb(ID_TCPS_TYPE_PORT, &TCPS_TYPE_PORT);
 	retval += readFromDb(ID_TCPS_IP_ADDRESS, &TCPS_IP_ADDRESS);
 	retval += readFromDb(ID_TCPS_STATUS, &TCPS_STATUS);
@@ -4843,7 +4843,7 @@ update_all(void)
 	retval += readFromDb(ID_TCPS_COMM_ERRORS, &TCPS_COMM_ERRORS);
 	retval += readFromDb(ID_TCPS_LAST_ERROR, &TCPS_LAST_ERROR);
 	retval += readFromDb(ID_TCPS_WRITE_QUEUE, &TCPS_WRITE_QUEUE);
-	retval += readFromDb(ID_TCPS_READ_QUEUE, &TCPS_READ_QUEUE);
+	retval += readFromDb(ID_TCPS_BUS_LOAD, &TCPS_BUS_LOAD);
 	retval += readFromDb(ID_TCP0_TYPE_PORT, &TCP0_TYPE_PORT);
 	retval += readFromDb(ID_TCP0_IP_ADDRESS, &TCP0_IP_ADDRESS);
 	retval += readFromDb(ID_TCP0_STATUS, &TCP0_STATUS);
@@ -4853,7 +4853,7 @@ update_all(void)
 	retval += readFromDb(ID_TCP0_COMM_ERRORS, &TCP0_COMM_ERRORS);
 	retval += readFromDb(ID_TCP0_LAST_ERROR, &TCP0_LAST_ERROR);
 	retval += readFromDb(ID_TCP0_WRITE_QUEUE, &TCP0_WRITE_QUEUE);
-	retval += readFromDb(ID_TCP0_READ_QUEUE, &TCP0_READ_QUEUE);
+	retval += readFromDb(ID_TCP0_BUS_LOAD, &TCP0_BUS_LOAD);
 	retval += readFromDb(ID_TCP1_TYPE_PORT, &TCP1_TYPE_PORT);
 	retval += readFromDb(ID_TCP1_IP_ADDRESS, &TCP1_IP_ADDRESS);
 	retval += readFromDb(ID_TCP1_STATUS, &TCP1_STATUS);
@@ -4863,7 +4863,7 @@ update_all(void)
 	retval += readFromDb(ID_TCP1_COMM_ERRORS, &TCP1_COMM_ERRORS);
 	retval += readFromDb(ID_TCP1_LAST_ERROR, &TCP1_LAST_ERROR);
 	retval += readFromDb(ID_TCP1_WRITE_QUEUE, &TCP1_WRITE_QUEUE);
-	retval += readFromDb(ID_TCP1_READ_QUEUE, &TCP1_READ_QUEUE);
+	retval += readFromDb(ID_TCP1_BUS_LOAD, &TCP1_BUS_LOAD);
 	retval += readFromDb(ID_TCP2_TYPE_PORT, &TCP2_TYPE_PORT);
 	retval += readFromDb(ID_TCP2_IP_ADDRESS, &TCP2_IP_ADDRESS);
 	retval += readFromDb(ID_TCP2_STATUS, &TCP2_STATUS);
@@ -4873,7 +4873,7 @@ update_all(void)
 	retval += readFromDb(ID_TCP2_COMM_ERRORS, &TCP2_COMM_ERRORS);
 	retval += readFromDb(ID_TCP2_LAST_ERROR, &TCP2_LAST_ERROR);
 	retval += readFromDb(ID_TCP2_WRITE_QUEUE, &TCP2_WRITE_QUEUE);
-	retval += readFromDb(ID_TCP2_READ_QUEUE, &TCP2_READ_QUEUE);
+	retval += readFromDb(ID_TCP2_BUS_LOAD, &TCP2_BUS_LOAD);
 	retval += readFromDb(ID_TCP3_TYPE_PORT, &TCP3_TYPE_PORT);
 	retval += readFromDb(ID_TCP3_IP_ADDRESS, &TCP3_IP_ADDRESS);
 	retval += readFromDb(ID_TCP3_STATUS, &TCP3_STATUS);
@@ -4883,7 +4883,7 @@ update_all(void)
 	retval += readFromDb(ID_TCP3_COMM_ERRORS, &TCP3_COMM_ERRORS);
 	retval += readFromDb(ID_TCP3_LAST_ERROR, &TCP3_LAST_ERROR);
 	retval += readFromDb(ID_TCP3_WRITE_QUEUE, &TCP3_WRITE_QUEUE);
-	retval += readFromDb(ID_TCP3_READ_QUEUE, &TCP3_READ_QUEUE);
+	retval += readFromDb(ID_TCP3_BUS_LOAD, &TCP3_BUS_LOAD);
 	retval += readFromDb(ID_TCP4_TYPE_PORT, &TCP4_TYPE_PORT);
 	retval += readFromDb(ID_TCP4_IP_ADDRESS, &TCP4_IP_ADDRESS);
 	retval += readFromDb(ID_TCP4_STATUS, &TCP4_STATUS);
@@ -4893,7 +4893,7 @@ update_all(void)
 	retval += readFromDb(ID_TCP4_COMM_ERRORS, &TCP4_COMM_ERRORS);
 	retval += readFromDb(ID_TCP4_LAST_ERROR, &TCP4_LAST_ERROR);
 	retval += readFromDb(ID_TCP4_WRITE_QUEUE, &TCP4_WRITE_QUEUE);
-	retval += readFromDb(ID_TCP4_READ_QUEUE, &TCP4_READ_QUEUE);
+	retval += readFromDb(ID_TCP4_BUS_LOAD, &TCP4_BUS_LOAD);
 	retval += readFromDb(ID_TCP5_TYPE_PORT, &TCP5_TYPE_PORT);
 	retval += readFromDb(ID_TCP5_IP_ADDRESS, &TCP5_IP_ADDRESS);
 	retval += readFromDb(ID_TCP5_STATUS, &TCP5_STATUS);
@@ -4903,7 +4903,7 @@ update_all(void)
 	retval += readFromDb(ID_TCP5_COMM_ERRORS, &TCP5_COMM_ERRORS);
 	retval += readFromDb(ID_TCP5_LAST_ERROR, &TCP5_LAST_ERROR);
 	retval += readFromDb(ID_TCP5_WRITE_QUEUE, &TCP5_WRITE_QUEUE);
-	retval += readFromDb(ID_TCP5_READ_QUEUE, &TCP5_READ_QUEUE);
+	retval += readFromDb(ID_TCP5_BUS_LOAD, &TCP5_BUS_LOAD);
 	retval += readFromDb(ID_TCP6_TYPE_PORT, &TCP6_TYPE_PORT);
 	retval += readFromDb(ID_TCP6_IP_ADDRESS, &TCP6_IP_ADDRESS);
 	retval += readFromDb(ID_TCP6_STATUS, &TCP6_STATUS);
@@ -4913,7 +4913,7 @@ update_all(void)
 	retval += readFromDb(ID_TCP6_COMM_ERRORS, &TCP6_COMM_ERRORS);
 	retval += readFromDb(ID_TCP6_LAST_ERROR, &TCP6_LAST_ERROR);
 	retval += readFromDb(ID_TCP6_WRITE_QUEUE, &TCP6_WRITE_QUEUE);
-	retval += readFromDb(ID_TCP6_READ_QUEUE, &TCP6_READ_QUEUE);
+	retval += readFromDb(ID_TCP6_BUS_LOAD, &TCP6_BUS_LOAD);
 	retval += readFromDb(ID_TCP7_TYPE_PORT, &TCP7_TYPE_PORT);
 	retval += readFromDb(ID_TCP7_IP_ADDRESS, &TCP7_IP_ADDRESS);
 	retval += readFromDb(ID_TCP7_STATUS, &TCP7_STATUS);
@@ -4923,7 +4923,7 @@ update_all(void)
 	retval += readFromDb(ID_TCP7_COMM_ERRORS, &TCP7_COMM_ERRORS);
 	retval += readFromDb(ID_TCP7_LAST_ERROR, &TCP7_LAST_ERROR);
 	retval += readFromDb(ID_TCP7_WRITE_QUEUE, &TCP7_WRITE_QUEUE);
-	retval += readFromDb(ID_TCP7_READ_QUEUE, &TCP7_READ_QUEUE);
+	retval += readFromDb(ID_TCP7_BUS_LOAD, &TCP7_BUS_LOAD);
 	retval += readFromDb(ID_TCP8_TYPE_PORT, &TCP8_TYPE_PORT);
 	retval += readFromDb(ID_TCP8_IP_ADDRESS, &TCP8_IP_ADDRESS);
 	retval += readFromDb(ID_TCP8_STATUS, &TCP8_STATUS);
@@ -4933,7 +4933,7 @@ update_all(void)
 	retval += readFromDb(ID_TCP8_COMM_ERRORS, &TCP8_COMM_ERRORS);
 	retval += readFromDb(ID_TCP8_LAST_ERROR, &TCP8_LAST_ERROR);
 	retval += readFromDb(ID_TCP8_WRITE_QUEUE, &TCP8_WRITE_QUEUE);
-	retval += readFromDb(ID_TCP8_READ_QUEUE, &TCP8_READ_QUEUE);
+	retval += readFromDb(ID_TCP8_BUS_LOAD, &TCP8_BUS_LOAD);
 	retval += readFromDb(ID_TCP9_TYPE_PORT, &TCP9_TYPE_PORT);
 	retval += readFromDb(ID_TCP9_IP_ADDRESS, &TCP9_IP_ADDRESS);
 	retval += readFromDb(ID_TCP9_STATUS, &TCP9_STATUS);
@@ -4943,7 +4943,7 @@ update_all(void)
 	retval += readFromDb(ID_TCP9_COMM_ERRORS, &TCP9_COMM_ERRORS);
 	retval += readFromDb(ID_TCP9_LAST_ERROR, &TCP9_LAST_ERROR);
 	retval += readFromDb(ID_TCP9_WRITE_QUEUE, &TCP9_WRITE_QUEUE);
-	retval += readFromDb(ID_TCP9_READ_QUEUE, &TCP9_READ_QUEUE);
+	retval += readFromDb(ID_TCP9_BUS_LOAD, &TCP9_BUS_LOAD);
 	retval += readFromDb(ID_NODE_01_DEV_NODE, &NODE_01_DEV_NODE);
 	retval += readFromDb(ID_NODE_01_STATUS, &NODE_01_STATUS);
 	retval += readFromDb(ID_NODE_02_DEV_NODE, &NODE_02_DEV_NODE);

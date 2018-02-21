@@ -13,7 +13,6 @@
 #include "page100.h"
 #include "ui_page100.h"
 #include "crosstable.h"
-
 #include "automation.h" // for get_command()
 
 /**
@@ -56,11 +55,6 @@ void page100::reload()
        H variables initalizations:
          variableList.clear();
          variableList << "VARIABLE1" << "VARIABLE2" << "VARIABLE3"
-       trend initialization:
-         strncpy(_actual_trend_, "trend1.csv",FILENAME_MAX);
-         _trend_data_reload_ = true;
-       store initialization:
-         strncpy(_actual_store_, "store1.csv",FILENAME_MAX);
        alarm banner initialization in QLineEdit:
          rotateShowError(ui->myLineEdit, ERROR_LABEL_PERIOD_MS);
      */
@@ -77,26 +71,14 @@ void page100::updateData()
     }
     /* call the parent updateData member */
     page::updateData();
-    /* This code show how to connect
-     * the cross table variable named "RET_REG_1" to the HMI label "label1val"
-     * and if it is not NULL, set the Status led "led1" without using ATCM plugins
-     *    WARNING: only MIRROR variable can be read or the variable listed
-     *            into the active variable list variableList defined at the top of this file
-     
-     if (getFormattedVar("RET_REG_1", ui->label1val, ui->led1) == false)
-     {
-        LOG_PRINT(error_e, "cannot read variable '%s'","RET_REG_1" );
-     }
+    
+    /* To read the cross table variable UINT TEST1:
+     *    uint_16 tmp = TEST1;
      */
-    /* This code show how to write a cross table variable named "NRE_REG_1"  without using ATCM plugins.
-     * Usually this code is putted into a button slot.
-     * The variable could be not present into the active variable list "variableList"
-     if (writeVar("NRE_REG_1", &value) == true)
-     {
-         LOG_PRINT(info_e,"################### NRE_REG_1 %d\n", value);
-     }
+    /* To write 5 into the the cross table variable UINT TEST1:
+     *    doWrite_TEST1(5);
      */
-    ui->label_command->setText(QString("<---=  %1").arg(get_command()));
+     ui->label_command->setText(QString("<---=  %1").arg(get_command()));
 }
 
 /**

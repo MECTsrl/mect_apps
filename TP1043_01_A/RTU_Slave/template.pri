@@ -32,7 +32,7 @@ include(./common.pri)
 TYPE = "TP1043_01_A"
 
 # display size
-MODEL = "%Model%"
+MODEL = "<width>480</width><height>272</height>"
 
 equals(MODEL, "<width>320</width><height>240</height>") {
     DEFINES+=WIDTH=320
@@ -64,3 +64,4 @@ equals(MODEL, "<width>480</width><height>800</height>") {
     DEFINES+=HEIGHT=800
     DEFINES+=ROTATION=270
 }
+

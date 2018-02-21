@@ -1858,13 +1858,13 @@
     </font>
    </property>
    <property name="toolTip">
-    <string>RTU3_READ_QUEUE</string>
+    <string>RTU3_BUS_LOAD</string>
    </property>
    <property name="whatsThis">
     <string>ATCMlabel widget</string>
    </property>
    <property name="variable">
-    <string>RTU3_READ_QUEUE</string>
+    <string>RTU3_BUS_LOAD</string>
    </property>
    <property name="prefix">
     <string>rq: </string>
@@ -6429,13 +6429,13 @@ ms</string>
     </font>
    </property>
    <property name="toolTip">
-    <string>RTU0_READ_QUEUE</string>
+    <string>RTU0_BUS_LOAD</string>
    </property>
    <property name="whatsThis">
     <string>ATCMlabel widget</string>
    </property>
    <property name="variable">
-    <string>RTU0_READ_QUEUE</string>
+    <string>RTU0_BUS_LOAD</string>
    </property>
    <property name="prefix">
     <string>rq: </string>

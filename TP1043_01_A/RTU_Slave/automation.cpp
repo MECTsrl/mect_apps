@@ -1,4 +1,5 @@
 #include "crosstable.h"
+#include "automation.h"
 
 static u_int16_t heartbeat;
 
@@ -23,3 +24,4 @@ void loop(void)
     doWrite_RTU_REPLY(-RTU_COMMAND);
     doWrite_TCP_REPLY(-TCP_COMMAND);
 }
+

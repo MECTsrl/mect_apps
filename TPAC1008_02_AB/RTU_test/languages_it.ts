@@ -600,7 +600,8 @@
     <message>
         <location filename="page100.ui" line="876"/>
         <location filename="page100.ui" line="882"/>
-        <source>RTU0_READ_QUEUE</source>
+        <source>RTU0_BUS_LOAD</source>
+        <oldsource>RTU0_READ_QUEUE</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1111,7 +1112,8 @@
     <message>
         <location filename="page100.ui" line="5148"/>
         <location filename="page100.ui" line="5154"/>
-        <source>RTU3_READ_QUEUE</source>
+        <source>RTU3_BUS_LOAD</source>
+        <oldsource>RTU3_READ_QUEUE</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2269,7 +2271,8 @@
     <message>
         <location filename="page200.ui" line="1861"/>
         <location filename="page200.ui" line="1867"/>
-        <source>RTU3_READ_QUEUE</source>
+        <source>RTU3_BUS_LOAD</source>
+        <oldsource>RTU3_READ_QUEUE</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2780,7 +2783,8 @@ ms</source>
     <message>
         <location filename="page200.ui" line="6432"/>
         <location filename="page200.ui" line="6438"/>
-        <source>RTU0_READ_QUEUE</source>
+        <source>RTU0_BUS_LOAD</source>
+        <oldsource>RTU0_READ_QUEUE</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3517,8 +3521,8 @@ ms</source>
         <location filename="page300.ui" line="2702"/>
         <location filename="page300.ui" line="2765"/>
         <location filename="page300.ui" line="2828"/>
-        <location filename="page300.ui" line="3010"/>
-        <location filename="page300.ui" line="3059"/>
+        <location filename="page300.ui" line="3016"/>
+        <location filename="page300.ui" line="3065"/>
         <source>ATCMbutton widget</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3639,24 +3643,14 @@ ms</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page300.ui" line="3007"/>
-        <source>page: page100  status: </source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page300.ui" line="3025"/>
-        <location filename="page300.ui" line="3028"/>
+        <location filename="page300.ui" line="3031"/>
+        <location filename="page300.ui" line="3034"/>
         <source>page100</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page300.ui" line="3056"/>
-        <source>page: page200  status: </source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page300.ui" line="3074"/>
-        <location filename="page300.ui" line="3077"/>
+        <location filename="page300.ui" line="3080"/>
+        <location filename="page300.ui" line="3083"/>
         <source>page200</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3784,7 +3778,8 @@ Y2=PLC_AnIn_2</source>
     <message>
         <location filename="page300.ui" line="927"/>
         <location filename="page300.ui" line="933"/>
-        <source>RTU3_READ_QUEUE</source>
+        <source>RTU3_BUS_LOAD</source>
+        <oldsource>RTU3_READ_QUEUE</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3859,7 +3854,8 @@ Y2=PLC_AnIn_2</source>
     <message>
         <location filename="page300.ui" line="1429"/>
         <location filename="page300.ui" line="1435"/>
-        <source>RTU0_READ_QUEUE</source>
+        <source>RTU0_BUS_LOAD</source>
+        <oldsource>RTU0_READ_QUEUE</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>

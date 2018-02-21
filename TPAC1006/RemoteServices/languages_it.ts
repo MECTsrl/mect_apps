@@ -611,7 +611,8 @@ Services</source>
     <message>
         <location filename="page200.ui" line="290"/>
         <location filename="page200.ui" line="296"/>
-        <source>CAN1_READ_QUEUE</source>
+        <source>CAN1_BUS_LOAD</source>
+        <oldsource>CAN1_READ_QUEUE</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -665,7 +666,8 @@ RTU3 NODE1</source>
     <message>
         <location filename="page200.ui" line="591"/>
         <location filename="page200.ui" line="597"/>
-        <source>RTU3_READ_QUEUE</source>
+        <source>RTU3_BUS_LOAD</source>
+        <oldsource>RTU3_READ_QUEUE</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -765,7 +767,8 @@ CAN0 NODE1</source>
     <message>
         <location filename="page200.ui" line="2426"/>
         <location filename="page200.ui" line="2432"/>
-        <source>TCP0_READ_QUEUE</source>
+        <source>TCP0_BUS_LOAD</source>
+        <oldsource>TCP0_READ_QUEUE</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -901,7 +904,8 @@ CAN0 NODE1</source>
     <message>
         <location filename="page200.ui" line="1588"/>
         <location filename="page200.ui" line="1594"/>
-        <source>CAN0_READ_QUEUE</source>
+        <source>CAN0_BUS_LOAD</source>
+        <oldsource>CAN0_READ_QUEUE</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>

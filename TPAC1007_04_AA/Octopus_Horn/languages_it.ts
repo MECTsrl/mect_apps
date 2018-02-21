@@ -725,7 +725,8 @@
     <message>
         <location filename="page200.ui" line="52"/>
         <location filename="page200.ui" line="58"/>
-        <source>RTU0_READ_QUEUE</source>
+        <source>RTU0_BUS_LOAD</source>
+        <oldsource>RTU0_READ_QUEUE</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1068,7 +1069,8 @@ RTU0 NODE2</source>
     <message>
         <location filename="page200.ui" line="1758"/>
         <location filename="page200.ui" line="1764"/>
-        <source>RTU3_READ_QUEUE</source>
+        <source>RTU3_BUS_LOAD</source>
+        <oldsource>RTU3_READ_QUEUE</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>

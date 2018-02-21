@@ -274,7 +274,8 @@ RTU0 NODE0</source>
     <message>
         <location filename="page100.ui" line="1014"/>
         <location filename="page100.ui" line="1020"/>
-        <source>RTU0_READ_QUEUE</source>
+        <source>RTU0_BUS_LOAD</source>
+        <oldsource>RTU0_READ_QUEUE</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>

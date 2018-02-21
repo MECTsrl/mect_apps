@@ -1002,7 +1002,8 @@
     <message>
         <location filename="page200.ui" line="1226"/>
         <location filename="page200.ui" line="1232"/>
-        <source>TCPS_READ_QUEUE</source>
+        <source>TCPS_BUS_LOAD</source>
+        <oldsource>TCPS_READ_QUEUE</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1033,7 +1034,8 @@
     <message>
         <location filename="page200.ui" line="1483"/>
         <location filename="page200.ui" line="1489"/>
-        <source>CAN0_READ_QUEUE</source>
+        <source>CAN0_BUS_LOAD</source>
+        <oldsource>CAN0_READ_QUEUE</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1186,7 +1188,8 @@ X45M-MID</source>
     <message>
         <location filename="page200.ui" line="2615"/>
         <location filename="page200.ui" line="2621"/>
-        <source>RTU3_READ_QUEUE</source>
+        <source>RTU3_BUS_LOAD</source>
+        <oldsource>RTU3_READ_QUEUE</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1680,13 +1683,15 @@ X45M-MID</source>
     <message>
         <location filename="page300.ui" line="2058"/>
         <location filename="page300.ui" line="2064"/>
-        <source>TCPS_READ_QUEUE</source>
+        <source>TCPS_BUS_LOAD</source>
+        <oldsource>TCPS_READ_QUEUE</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="page300.ui" line="2139"/>
         <location filename="page300.ui" line="2145"/>
-        <source>RTU3_READ_QUEUE</source>
+        <source>RTU3_BUS_LOAD</source>
+        <oldsource>RTU3_READ_QUEUE</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>

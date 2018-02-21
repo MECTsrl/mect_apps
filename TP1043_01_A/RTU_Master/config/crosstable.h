@@ -130,11 +130,11 @@ int doWrite_RTU0_WRITE_QUEUE(u_int32_t value);
 int addWrite_RTU0_WRITE_QUEUE(u_int32_t value);
 int getStatus_RTU0_WRITE_QUEUE(void);
 
-#define ID_RTU0_READ_QUEUE 5009
-extern u_int32_t RTU0_READ_QUEUE;
-int doWrite_RTU0_READ_QUEUE(u_int32_t value);
-int addWrite_RTU0_READ_QUEUE(u_int32_t value);
-int getStatus_RTU0_READ_QUEUE(void);
+#define ID_RTU0_BUS_LOAD 5009
+extern u_int32_t RTU0_BUS_LOAD;
+int doWrite_RTU0_BUS_LOAD(u_int32_t value);
+int addWrite_RTU0_BUS_LOAD(u_int32_t value);
+int getStatus_RTU0_BUS_LOAD(void);
 
 #define ID_RTU3_TYPE_PORT 5020
 extern u_int32_t RTU3_TYPE_PORT;
@@ -190,11 +190,11 @@ int doWrite_RTU3_WRITE_QUEUE(u_int32_t value);
 int addWrite_RTU3_WRITE_QUEUE(u_int32_t value);
 int getStatus_RTU3_WRITE_QUEUE(void);
 
-#define ID_RTU3_READ_QUEUE 5029
-extern u_int32_t RTU3_READ_QUEUE;
-int doWrite_RTU3_READ_QUEUE(u_int32_t value);
-int addWrite_RTU3_READ_QUEUE(u_int32_t value);
-int getStatus_RTU3_READ_QUEUE(void);
+#define ID_RTU3_BUS_LOAD 5029
+extern u_int32_t RTU3_BUS_LOAD;
+int doWrite_RTU3_BUS_LOAD(u_int32_t value);
+int addWrite_RTU3_BUS_LOAD(u_int32_t value);
+int getStatus_RTU3_BUS_LOAD(void);
 
 #define ID_TCPS_TYPE_PORT 5050
 extern u_int32_t TCPS_TYPE_PORT;
@@ -250,11 +250,11 @@ int doWrite_TCPS_WRITE_QUEUE(u_int32_t value);
 int addWrite_TCPS_WRITE_QUEUE(u_int32_t value);
 int getStatus_TCPS_WRITE_QUEUE(void);
 
-#define ID_TCPS_READ_QUEUE 5059
-extern u_int32_t TCPS_READ_QUEUE;
-int doWrite_TCPS_READ_QUEUE(u_int32_t value);
-int addWrite_TCPS_READ_QUEUE(u_int32_t value);
-int getStatus_TCPS_READ_QUEUE(void);
+#define ID_TCPS_BUS_LOAD 5059
+extern u_int32_t TCPS_BUS_LOAD;
+int doWrite_TCPS_BUS_LOAD(u_int32_t value);
+int addWrite_TCPS_BUS_LOAD(u_int32_t value);
+int getStatus_TCPS_BUS_LOAD(void);
 
 #define ID_TCP0_TYPE_PORT 5060
 extern u_int32_t TCP0_TYPE_PORT;
@@ -310,11 +310,11 @@ int doWrite_TCP0_WRITE_QUEUE(u_int32_t value);
 int addWrite_TCP0_WRITE_QUEUE(u_int32_t value);
 int getStatus_TCP0_WRITE_QUEUE(void);
 
-#define ID_TCP0_READ_QUEUE 5069
-extern u_int32_t TCP0_READ_QUEUE;
-int doWrite_TCP0_READ_QUEUE(u_int32_t value);
-int addWrite_TCP0_READ_QUEUE(u_int32_t value);
-int getStatus_TCP0_READ_QUEUE(void);
+#define ID_TCP0_BUS_LOAD 5069
+extern u_int32_t TCP0_BUS_LOAD;
+int doWrite_TCP0_BUS_LOAD(u_int32_t value);
+int addWrite_TCP0_BUS_LOAD(u_int32_t value);
+int getStatus_TCP0_BUS_LOAD(void);
 
 #define ID_TCP1_TYPE_PORT 5070
 extern u_int32_t TCP1_TYPE_PORT;
@@ -370,11 +370,11 @@ int doWrite_TCP1_WRITE_QUEUE(u_int32_t value);
 int addWrite_TCP1_WRITE_QUEUE(u_int32_t value);
 int getStatus_TCP1_WRITE_QUEUE(void);
 
-#define ID_TCP1_READ_QUEUE 5079
-extern u_int32_t TCP1_READ_QUEUE;
-int doWrite_TCP1_READ_QUEUE(u_int32_t value);
-int addWrite_TCP1_READ_QUEUE(u_int32_t value);
-int getStatus_TCP1_READ_QUEUE(void);
+#define ID_TCP1_BUS_LOAD 5079
+extern u_int32_t TCP1_BUS_LOAD;
+int doWrite_TCP1_BUS_LOAD(u_int32_t value);
+int addWrite_TCP1_BUS_LOAD(u_int32_t value);
+int getStatus_TCP1_BUS_LOAD(void);
 
 #define ID_TCP2_TYPE_PORT 5080
 extern u_int32_t TCP2_TYPE_PORT;
@@ -430,11 +430,11 @@ int doWrite_TCP2_WRITE_QUEUE(u_int32_t value);
 int addWrite_TCP2_WRITE_QUEUE(u_int32_t value);
 int getStatus_TCP2_WRITE_QUEUE(void);
 
-#define ID_TCP2_READ_QUEUE 5089
-extern u_int32_t TCP2_READ_QUEUE;
-int doWrite_TCP2_READ_QUEUE(u_int32_t value);
-int addWrite_TCP2_READ_QUEUE(u_int32_t value);
-int getStatus_TCP2_READ_QUEUE(void);
+#define ID_TCP2_BUS_LOAD 5089
+extern u_int32_t TCP2_BUS_LOAD;
+int doWrite_TCP2_BUS_LOAD(u_int32_t value);
+int addWrite_TCP2_BUS_LOAD(u_int32_t value);
+int getStatus_TCP2_BUS_LOAD(void);
 
 #define ID_TCP3_TYPE_PORT 5090
 extern u_int32_t TCP3_TYPE_PORT;
@@ -490,11 +490,11 @@ int doWrite_TCP3_WRITE_QUEUE(u_int32_t value);
 int addWrite_TCP3_WRITE_QUEUE(u_int32_t value);
 int getStatus_TCP3_WRITE_QUEUE(void);
 
-#define ID_TCP3_READ_QUEUE 5099
-extern u_int32_t TCP3_READ_QUEUE;
-int doWrite_TCP3_READ_QUEUE(u_int32_t value);
-int addWrite_TCP3_READ_QUEUE(u_int32_t value);
-int getStatus_TCP3_READ_QUEUE(void);
+#define ID_TCP3_BUS_LOAD 5099
+extern u_int32_t TCP3_BUS_LOAD;
+int doWrite_TCP3_BUS_LOAD(u_int32_t value);
+int addWrite_TCP3_BUS_LOAD(u_int32_t value);
+int getStatus_TCP3_BUS_LOAD(void);
 
 #define ID_TCP4_TYPE_PORT 5100
 extern u_int32_t TCP4_TYPE_PORT;
@@ -550,11 +550,11 @@ int doWrite_TCP4_WRITE_QUEUE(u_int32_t value);
 int addWrite_TCP4_WRITE_QUEUE(u_int32_t value);
 int getStatus_TCP4_WRITE_QUEUE(void);
 
-#define ID_TCP4_READ_QUEUE 5109
-extern u_int32_t TCP4_READ_QUEUE;
-int doWrite_TCP4_READ_QUEUE(u_int32_t value);
-int addWrite_TCP4_READ_QUEUE(u_int32_t value);
-int getStatus_TCP4_READ_QUEUE(void);
+#define ID_TCP4_BUS_LOAD 5109
+extern u_int32_t TCP4_BUS_LOAD;
+int doWrite_TCP4_BUS_LOAD(u_int32_t value);
+int addWrite_TCP4_BUS_LOAD(u_int32_t value);
+int getStatus_TCP4_BUS_LOAD(void);
 
 #define ID_TCP5_TYPE_PORT 5110
 extern u_int32_t TCP5_TYPE_PORT;
@@ -610,11 +610,11 @@ int doWrite_TCP5_WRITE_QUEUE(u_int32_t value);
 int addWrite_TCP5_WRITE_QUEUE(u_int32_t value);
 int getStatus_TCP5_WRITE_QUEUE(void);
 
-#define ID_TCP5_READ_QUEUE 5119
-extern u_int32_t TCP5_READ_QUEUE;
-int doWrite_TCP5_READ_QUEUE(u_int32_t value);
-int addWrite_TCP5_READ_QUEUE(u_int32_t value);
-int getStatus_TCP5_READ_QUEUE(void);
+#define ID_TCP5_BUS_LOAD 5119
+extern u_int32_t TCP5_BUS_LOAD;
+int doWrite_TCP5_BUS_LOAD(u_int32_t value);
+int addWrite_TCP5_BUS_LOAD(u_int32_t value);
+int getStatus_TCP5_BUS_LOAD(void);
 
 #define ID_TCP6_TYPE_PORT 5120
 extern u_int32_t TCP6_TYPE_PORT;
@@ -670,11 +670,11 @@ int doWrite_TCP6_WRITE_QUEUE(u_int32_t value);
 int addWrite_TCP6_WRITE_QUEUE(u_int32_t value);
 int getStatus_TCP6_WRITE_QUEUE(void);
 
-#define ID_TCP6_READ_QUEUE 5129
-extern u_int32_t TCP6_READ_QUEUE;
-int doWrite_TCP6_READ_QUEUE(u_int32_t value);
-int addWrite_TCP6_READ_QUEUE(u_int32_t value);
-int getStatus_TCP6_READ_QUEUE(void);
+#define ID_TCP6_BUS_LOAD 5129
+extern u_int32_t TCP6_BUS_LOAD;
+int doWrite_TCP6_BUS_LOAD(u_int32_t value);
+int addWrite_TCP6_BUS_LOAD(u_int32_t value);
+int getStatus_TCP6_BUS_LOAD(void);
 
 #define ID_TCP7_TYPE_PORT 5130
 extern u_int32_t TCP7_TYPE_PORT;
@@ -730,11 +730,11 @@ int doWrite_TCP7_WRITE_QUEUE(u_int32_t value);
 int addWrite_TCP7_WRITE_QUEUE(u_int32_t value);
 int getStatus_TCP7_WRITE_QUEUE(void);
 
-#define ID_TCP7_READ_QUEUE 5139
-extern u_int32_t TCP7_READ_QUEUE;
-int doWrite_TCP7_READ_QUEUE(u_int32_t value);
-int addWrite_TCP7_READ_QUEUE(u_int32_t value);
-int getStatus_TCP7_READ_QUEUE(void);
+#define ID_TCP7_BUS_LOAD 5139
+extern u_int32_t TCP7_BUS_LOAD;
+int doWrite_TCP7_BUS_LOAD(u_int32_t value);
+int addWrite_TCP7_BUS_LOAD(u_int32_t value);
+int getStatus_TCP7_BUS_LOAD(void);
 
 #define ID_TCP8_TYPE_PORT 5140
 extern u_int32_t TCP8_TYPE_PORT;
@@ -790,11 +790,11 @@ int doWrite_TCP8_WRITE_QUEUE(u_int32_t value);
 int addWrite_TCP8_WRITE_QUEUE(u_int32_t value);
 int getStatus_TCP8_WRITE_QUEUE(void);
 
-#define ID_TCP8_READ_QUEUE 5149
-extern u_int32_t TCP8_READ_QUEUE;
-int doWrite_TCP8_READ_QUEUE(u_int32_t value);
-int addWrite_TCP8_READ_QUEUE(u_int32_t value);
-int getStatus_TCP8_READ_QUEUE(void);
+#define ID_TCP8_BUS_LOAD 5149
+extern u_int32_t TCP8_BUS_LOAD;
+int doWrite_TCP8_BUS_LOAD(u_int32_t value);
+int addWrite_TCP8_BUS_LOAD(u_int32_t value);
+int getStatus_TCP8_BUS_LOAD(void);
 
 #define ID_TCP9_TYPE_PORT 5150
 extern u_int32_t TCP9_TYPE_PORT;
@@ -850,11 +850,11 @@ int doWrite_TCP9_WRITE_QUEUE(u_int32_t value);
 int addWrite_TCP9_WRITE_QUEUE(u_int32_t value);
 int getStatus_TCP9_WRITE_QUEUE(void);
 
-#define ID_TCP9_READ_QUEUE 5159
-extern u_int32_t TCP9_READ_QUEUE;
-int doWrite_TCP9_READ_QUEUE(u_int32_t value);
-int addWrite_TCP9_READ_QUEUE(u_int32_t value);
-int getStatus_TCP9_READ_QUEUE(void);
+#define ID_TCP9_BUS_LOAD 5159
+extern u_int32_t TCP9_BUS_LOAD;
+int doWrite_TCP9_BUS_LOAD(u_int32_t value);
+int addWrite_TCP9_BUS_LOAD(u_int32_t value);
+int getStatus_TCP9_BUS_LOAD(void);
 
 #define ID_NODE_01_DEV_NODE 5172
 extern u_int32_t NODE_01_DEV_NODE;

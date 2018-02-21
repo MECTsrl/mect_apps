@@ -1,5 +1,5 @@
 #include "crosstable.h"
-
+#include "automation.h"
 static u_int16_t command;
 
 void setup(void)
@@ -22,3 +22,4 @@ u_int16_t get_command(void)
 {
     return command;
 }
+

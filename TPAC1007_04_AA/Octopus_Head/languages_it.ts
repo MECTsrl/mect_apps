@@ -1620,7 +1620,8 @@ ON</source>
     <message>
         <location filename="page201.ui" line="677"/>
         <location filename="page201.ui" line="683"/>
-        <source>TCP0_READ_QUEUE</source>
+        <source>TCP0_BUS_LOAD</source>
+        <oldsource>TCP0_READ_QUEUE</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1811,7 +1812,8 @@ Prey [3]</source>
     <message>
         <location filename="page201.ui" line="2182"/>
         <location filename="page201.ui" line="2188"/>
-        <source>RTU0_READ_QUEUE</source>
+        <source>RTU0_BUS_LOAD</source>
+        <oldsource>RTU0_READ_QUEUE</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2000,7 +2002,8 @@ NODE 1 [1]</source>
     <message>
         <location filename="page201.ui" line="3647"/>
         <location filename="page201.ui" line="3653"/>
-        <source>RTU3_READ_QUEUE</source>
+        <source>RTU3_BUS_LOAD</source>
+        <oldsource>RTU3_READ_QUEUE</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2030,7 +2033,8 @@ NODE 1 [1]</source>
     <message>
         <location filename="page201.ui" line="3952"/>
         <location filename="page201.ui" line="3958"/>
-        <source>TCP1_READ_QUEUE</source>
+        <source>TCP1_BUS_LOAD</source>
+        <oldsource>TCP1_READ_QUEUE</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>

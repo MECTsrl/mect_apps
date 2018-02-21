@@ -1740,6 +1740,11 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="page200.ui" line="8059"/>
+        <source>....... NPN .......</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="page200.ui" line="5868"/>
         <location filename="page200.ui" line="5880"/>
         <source>PLC_DigOut_15</source>

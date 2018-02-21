@@ -102,7 +102,7 @@ page100::~page100()
 
 void page100::on_pushButton_clicked()
 {
-    pthread_mutex_lock(&_active_alarms_events_mutex);
+    pthread_mutex_lock(&alarmevents_list_mutex);
     {
         for (int i = 0; i < _active_alarms_events_.count(); i++)
         {
@@ -113,5 +113,5 @@ void page100::on_pushButton_clicked()
             }
         }
     }
-    pthread_mutex_unlock(&_active_alarms_events_mutex);
+    pthread_mutex_unlock(&alarmevents_list_mutex);
 }

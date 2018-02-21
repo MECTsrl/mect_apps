@@ -1223,13 +1223,13 @@
     <string/>
    </property>
    <property name="toolTip">
-    <string>TCPS_READ_QUEUE</string>
+    <string>TCPS_BUS_LOAD</string>
    </property>
    <property name="whatsThis">
     <string>ATCMlabel widget</string>
    </property>
    <property name="variable">
-    <string>TCPS_READ_QUEUE</string>
+    <string>TCPS_BUS_LOAD</string>
    </property>
    <property name="refresh">
     <number>500</number>
@@ -1480,13 +1480,13 @@
     <string/>
    </property>
    <property name="toolTip">
-    <string>CAN0_READ_QUEUE</string>
+    <string>CAN0_BUS_LOAD</string>
    </property>
    <property name="whatsThis">
     <string>ATCMlabel widget</string>
    </property>
    <property name="variable">
-    <string>CAN0_READ_QUEUE</string>
+    <string>CAN0_BUS_LOAD</string>
    </property>
    <property name="refresh">
     <number>500</number>
@@ -2612,13 +2612,13 @@ X45M-MID</string>
     <string/>
    </property>
    <property name="toolTip">
-    <string>RTU3_READ_QUEUE</string>
+    <string>RTU3_BUS_LOAD</string>
    </property>
    <property name="whatsThis">
     <string>ATCMlabel widget</string>
    </property>
    <property name="variable">
-    <string>RTU3_READ_QUEUE</string>
+    <string>RTU3_BUS_LOAD</string>
    </property>
    <property name="refresh">
     <number>500</number>

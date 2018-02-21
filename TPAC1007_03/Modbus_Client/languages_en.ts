@@ -141,7 +141,8 @@
     <message>
         <location filename="page100.ui" line="201"/>
         <location filename="page100.ui" line="207"/>
-        <source>RTU0_READ_QUEUE</source>
+        <source>RTU0_BUS_LOAD</source>
+        <oldsource>RTU0_READ_QUEUE</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -458,7 +459,8 @@ RTU 0 NODE 2</source>
     <message>
         <location filename="page100.ui" line="2596"/>
         <location filename="page100.ui" line="2602"/>
-        <source>TCP0_READ_QUEUE</source>
+        <source>TCP0_BUS_LOAD</source>
+        <oldsource>TCP0_READ_QUEUE</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>

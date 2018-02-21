@@ -303,7 +303,8 @@ Y2=Tensione</source>
     <message>
         <location filename="page200.ui" line="499"/>
         <location filename="page200.ui" line="505"/>
-        <source>RTU0_READ_QUEUE</source>
+        <source>RTU0_BUS_LOAD</source>
+        <oldsource>RTU0_READ_QUEUE</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -570,7 +571,7 @@ Master / Client</source>
     </message>
     <message>
         <location filename="page300.ui" line="126"/>
-        <location filename="page300.ui" line="560"/>
+        <location filename="page300.ui" line="566"/>
         <source>ATCMbutton widget</source>
         <translation type="unfinished"></translation>
     </message>
@@ -610,7 +611,7 @@ Master / Client</source>
     </message>
     <message>
         <location filename="page300.ui" line="254"/>
-        <location filename="page300.ui" line="260"/>
+        <location filename="page300.ui" line="266"/>
         <location filename="page300.ui" line="373"/>
         <source>Potenza_Distacco</source>
         <translation type="unfinished"></translation>
@@ -657,7 +658,7 @@ Master / Client</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page300.ui" line="563"/>
+        <location filename="page300.ui" line="569"/>
         <source>BACK</source>
         <translation type="unfinished"></translation>
     </message>
@@ -699,7 +700,8 @@ Master / Client</source>
     <message>
         <location filename="page300.ui" line="746"/>
         <location filename="page300.ui" line="752"/>
-        <source>RTU0_READ_QUEUE</source>
+        <source>RTU0_BUS_LOAD</source>
+        <oldsource>RTU0_READ_QUEUE</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -727,7 +729,7 @@ Master / Client</source>
     </message>
     <message>
         <location filename="page300.ui" line="976"/>
-        <location filename="page300.ui" line="982"/>
+        <location filename="page300.ui" line="988"/>
         <location filename="page300.ui" line="1281"/>
         <source>Potenza_Critica</source>
         <translation type="unfinished"></translation>
