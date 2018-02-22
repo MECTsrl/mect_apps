@@ -1,9 +1,0 @@
-<RCC>
-    <qresource prefix="/config">
-        <file>config/system.ini</file>
-        <file>config/Crosstable.csv</file>
-        <file>config/trend1.csv</file>
-        <file>config/splash.png</file>
-    </qresource>
-    <qresource prefix="/icons"/>
-</RCC>

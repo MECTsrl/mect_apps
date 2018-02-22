@@ -1087,12 +1087,6 @@ NODE2</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="5196"/>
-        <location filename="page100.ui" line="5202"/>
-        <source>PLC_AnInConf_2</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="page100.ui" line="7264"/>
         <location filename="page100.ui" line="7270"/>
         <source>PLC_AnInConf_1</source>
