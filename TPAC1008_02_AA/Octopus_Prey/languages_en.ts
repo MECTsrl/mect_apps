@@ -568,7 +568,8 @@
     </message>
     <message>
         <location filename="page100.ui" line="2831"/>
-        <source>0;:/icons/my_img/local.png;216;:/icons/my_img/remote.png;42;:/icons/my_img/done.png</source>
+        <source>0;:/icons/icons/local.png;216;:/icons/icons/remote.png;42;:/icons/icons/done.png</source>
+        <oldsource>0;:/icons/my_img/local.png;216;:/icons/my_img/remote.png;42;:/icons/my_img/done.png</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
