@@ -176,9 +176,9 @@
     </message>
     <message>
         <location filename="page100.ui" line="601"/>
-        <location filename="page100.ui" line="607"/>
+        <location filename="page100.ui" line="613"/>
         <location filename="page100.ui" line="2316"/>
-        <location filename="page100.ui" line="2322"/>
+        <location filename="page100.ui" line="2328"/>
         <source>CH1_NETRUN</source>
         <translation type="unfinished"></translation>
     </message>
@@ -221,7 +221,7 @@
     </message>
     <message>
         <location filename="page100.ui" line="720"/>
-        <location filename="page100.ui" line="726"/>
+        <location filename="page100.ui" line="732"/>
         <source>PLC_DigIn_6</source>
         <translation type="unfinished"></translation>
     </message>
@@ -239,9 +239,9 @@
     </message>
     <message>
         <location filename="page100.ui" line="838"/>
-        <location filename="page100.ui" line="844"/>
+        <location filename="page100.ui" line="850"/>
         <location filename="page100.ui" line="3449"/>
-        <location filename="page100.ui" line="3455"/>
+        <location filename="page100.ui" line="3461"/>
         <source>CH1_01_NODEGOOD</source>
         <translation type="unfinished"></translation>
     </message>
@@ -259,7 +259,7 @@
     </message>
     <message>
         <location filename="page100.ui" line="1039"/>
-        <location filename="page100.ui" line="1045"/>
+        <location filename="page100.ui" line="1051"/>
         <source>PLC_DigIn_8</source>
         <translation type="unfinished"></translation>
     </message>
@@ -277,9 +277,9 @@
     </message>
     <message>
         <location filename="page100.ui" line="1171"/>
-        <location filename="page100.ui" line="1177"/>
+        <location filename="page100.ui" line="1183"/>
         <location filename="page100.ui" line="2427"/>
-        <location filename="page100.ui" line="2433"/>
+        <location filename="page100.ui" line="2439"/>
         <source>CH1_NETGOOD</source>
         <translation type="unfinished"></translation>
     </message>
@@ -330,13 +330,13 @@
     </message>
     <message>
         <location filename="page100.ui" line="1550"/>
-        <location filename="page100.ui" line="1556"/>
+        <location filename="page100.ui" line="1562"/>
         <source>PLC_DigIn_7</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="page100.ui" line="1592"/>
-        <location filename="page100.ui" line="1598"/>
+        <location filename="page100.ui" line="1604"/>
         <source>CH0_01_NODEGOOD</source>
         <translation type="unfinished"></translation>
     </message>
@@ -348,7 +348,7 @@
     </message>
     <message>
         <location filename="page100.ui" line="1702"/>
-        <location filename="page100.ui" line="1708"/>
+        <location filename="page100.ui" line="1714"/>
         <source>PLC_DigIn_5</source>
         <translation type="unfinished"></translation>
     </message>
@@ -410,7 +410,7 @@
     </message>
     <message>
         <location filename="page100.ui" line="2149"/>
-        <location filename="page100.ui" line="2155"/>
+        <location filename="page100.ui" line="2161"/>
         <source>PLC_DigIn_2</source>
         <translation type="unfinished"></translation>
     </message>
@@ -453,9 +453,9 @@
     </message>
     <message>
         <location filename="page100.ui" line="2496"/>
-        <location filename="page100.ui" line="2502"/>
+        <location filename="page100.ui" line="2508"/>
         <location filename="page100.ui" line="3407"/>
-        <location filename="page100.ui" line="3413"/>
+        <location filename="page100.ui" line="3419"/>
         <source>CH1_01_NODERUN</source>
         <translation type="unfinished"></translation>
     </message>
@@ -472,7 +472,7 @@
     </message>
     <message>
         <location filename="page100.ui" line="2641"/>
-        <location filename="page100.ui" line="2647"/>
+        <location filename="page100.ui" line="2653"/>
         <source>PLC_DigIn_3</source>
         <translation type="unfinished"></translation>
     </message>
@@ -483,7 +483,7 @@
     </message>
     <message>
         <location filename="page100.ui" line="2710"/>
-        <location filename="page100.ui" line="2716"/>
+        <location filename="page100.ui" line="2722"/>
         <source>CH0_NETRUN</source>
         <translation type="unfinished"></translation>
     </message>
@@ -509,7 +509,7 @@
     </message>
     <message>
         <location filename="page100.ui" line="2841"/>
-        <location filename="page100.ui" line="2847"/>
+        <location filename="page100.ui" line="2853"/>
         <source>PLC_DigIn_4</source>
         <translation type="unfinished"></translation>
     </message>
@@ -526,7 +526,7 @@
     </message>
     <message>
         <location filename="page100.ui" line="2957"/>
-        <location filename="page100.ui" line="2963"/>
+        <location filename="page100.ui" line="2969"/>
         <source>PLC_DigIn_1</source>
         <translation type="unfinished"></translation>
     </message>
@@ -560,7 +560,7 @@
     </message>
     <message>
         <location filename="page100.ui" line="3165"/>
-        <location filename="page100.ui" line="3174"/>
+        <location filename="page100.ui" line="3180"/>
         <source>TEST_STATUS</source>
         <translation type="unfinished"></translation>
     </message>
@@ -570,13 +570,13 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="3171"/>
-        <source>0;:/icons/my_img/local.png;216;:/icons/my_img/remote.png;42;:/icons/my_img/done.png</source>
+        <location filename="page100.ui" line="3177"/>
+        <source>0;:/icons/icons/local.png;216;:/icons/icons/remote.png;42;:/icons/icons/done.png</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="page100.ui" line="3202"/>
-        <location filename="page100.ui" line="3208"/>
+        <location filename="page100.ui" line="3214"/>
         <source>CH0_01_NODERUN</source>
         <translation type="unfinished"></translation>
     </message>
@@ -623,7 +623,7 @@
     </message>
     <message>
         <location filename="page100.ui" line="3643"/>
-        <location filename="page100.ui" line="3649"/>
+        <location filename="page100.ui" line="3655"/>
         <source>CH0_NETGOOD</source>
         <translation type="unfinished"></translation>
     </message>
