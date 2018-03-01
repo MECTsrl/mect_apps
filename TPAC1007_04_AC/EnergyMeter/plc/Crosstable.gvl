@@ -244,7 +244,7 @@ VAR_GLOBAL
 	PLC_Reserved_5 AT %IW0.21400:INT;	(* Reserved *)
 	PLC_Reserved_6 AT %IW0.21404:INT;	(* Reserved *)
 	PLC_Tamb AT %IW0.21408:INT;	(* Cold junction compensation value *)
-	PLC_Encoder AT %ID0.21412:DINT;	(* Encoder reading value *)
+	PLC_Encoder AT %QD0.21412:DINT;	(* Encoder reading value *)
 	PLC_Capture AT %ID0.21416:UDINT;	(* Time between 2 input edges *)
 	PLC_DigOut_1 AT %QX0.21420.0:BOOL;	(* Digital output 1 value *)
 	PLC_DigOut_2 AT %QX0.21424.0:BOOL;	(* Digital output 2 value *)

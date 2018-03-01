@@ -5331,7 +5331,7 @@
 1;P;PLC_Reserved_5                 ;INT      ;3   ;RTU       ;               ;3   ;20  ;13  ;5300;54  ;[RO]Reserved
 1;P;PLC_Reserved_6                 ;INT      ;3   ;RTU       ;               ;3   ;20  ;14  ;5300;54  ;[RO]Reserved
 1;P;PLC_Tamb                       ;INT      ;1   ;RTU       ;               ;3   ;20  ;15  ;5300;54  ;[RO]Cold junction compensation value
-1;P;PLC_Encoder                    ;DINT     ;0   ;RTU       ;               ;3   ;20  ;16  ;5300;54  ;[RO]Encoder reading value
+1;P;PLC_Encoder                    ;DINT     ;0   ;RTU       ;               ;3   ;20  ;16  ;5300;54  ;[RW]Encoder reading value
 1;P;PLC_Capture                    ;UDINT    ;0   ;RTU       ;               ;3   ;20  ;18  ;5300;54  ;[RO]Time between 2 input edges
 1;P;PLC_DigOut_1                   ;BYTE_BIT ;1   ;RTU       ;               ;3   ;20  ;20  ;5300;54  ;[RW]Digital output 1 value
 1;P;PLC_DigOut_2                   ;BYTE_BIT ;2   ;RTU       ;               ;3   ;20  ;20  ;5300;54  ;[RW]Digital output 2 value
