@@ -60,15 +60,18 @@ void page300::messageBox(const int result, const char *text)
     case RESULT_OK:
         qtitle = QString("OK :)");
         qcolor = QColor(170, 255, 255, 192);
+        doWrite_PLC_BUZZER(0x02281464);
         break;
     case RESULT_NG:
         qtitle = QString("NG :(");
         qcolor = QColor(255, 127, 127, 192);
+        doWrite_PLC_BUZZER(0x03281464); // in plc
         break;
     case RESULT_UNKNOWN:
     default:
         qtitle = QString("?? :|");
         qcolor = QColor(255, 255, 170, 192);
+        doWrite_PLC_BUZZER(0x05281464);
     }
     qtext = QString(text);
 }
@@ -118,7 +121,7 @@ void page300::updateData()
 
         ui->atcmButton_message->setText(QString("%1\n\n%2").arg(qtitle).arg(qtext));
         ui->atcmButton_message->setBgColor(qcolor);
-        doWrite_PLC_buzzerOn(1);
+//        doWrite_PLC_buzzerOn(1);
         doWrite_MESSAGE_BOX(1);
 
         qtitle.clear();
@@ -160,6 +163,7 @@ void page300::on_atcmComboBox_TEST_ID_currentIndexChanged(int index)
 
 void page300::on_atcmButton_message_toggled(bool checked)
 {
-    if (checked)
-        doWrite_PLC_buzzerOn(0);
+    if (checked) {
+//        doWrite_PLC_buzzerOn(0);
+    }
 }

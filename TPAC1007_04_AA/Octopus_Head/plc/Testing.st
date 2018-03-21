@@ -107,8 +107,10 @@ END_VAR
 				RESULT := RESULT_OK;
 				RESULTS_OK := RESULTS_OK + 1;
 			else
-				RESULT := RESULT_NG; PLC_AnOut_3 := 500; (* Trigger *)
+				RESULT := RESULT_NG;
 				RESULTS_NG := RESULTS_NG + 1;
+				PLC_AnOut_3 := 500; (* Trigger *)
+				PLC_BUZZER := 16#05281464; (* Error Beep *)
 			end_if;
 			substatus := 8;
 	    8: (* let the hmi visualize the result *)
@@ -125,14 +127,8 @@ END_VAR
 		end_case;
 	
 	STATUS_DONE:
-		if (RESULT = RESULT_NG) then
-			(* bip bip bip bip bip bip bip bip bip bip ... *)
-			PLC_buzzerOn := AUTOMATIC;
-		end_if;
-
 		if (not PLC_DigIn_1) then
 			STATUS := STATUS_STOPPING;
-			PLC_buzzerOn := false;
 			return;
 		end_if;
 		if (AUTOMATIC and RESULT = RESULT_OK) or PLC_DigIn_4 then (* GO *)
@@ -140,7 +136,6 @@ END_VAR
 			STATUS := STATUS_RESETTING;
 	        TEST2_COMMAND := TEST_STATUS_REMOTE;
 	        TESTx_COMMAND := TEST_STATUS_REMOTE;
-			PLC_buzzerOn := false;
 			return;
 		end_if;
 		

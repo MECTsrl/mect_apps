@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 2.7.84, 2018-03-20T18:46:23. -->
+<!-- Written by QtCreator 2.7.84, 2018-03-21T12:22:02. -->
 <qtcreator>
  <data>
   <variable>ProjectExplorer.Project.ActiveTarget</variable>
@@ -452,68 +452,68 @@
        <value type="QString">C:/Qt485/imx28/rootfs</value>
       </valuelist>
       <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedTimes">
-       <value type="QDateTime">2018-03-20T18:44:50</value>
-       <value type="QDateTime">2018-03-20T18:44:47</value>
-       <value type="QDateTime">2018-03-20T18:44:51</value>
-       <value type="QDateTime">2018-03-20T18:44:48</value>
-       <value type="QDateTime">2018-03-20T18:44:46</value>
-       <value type="QDateTime">2018-03-20T18:44:48</value>
+       <value type="QDateTime">2018-03-21T12:07:01</value>
+       <value type="QDateTime">2018-03-21T12:06:58</value>
+       <value type="QDateTime">2018-03-21T12:07:02</value>
+       <value type="QDateTime">2018-03-21T12:06:59</value>
+       <value type="QDateTime">2018-03-21T12:06:57</value>
+       <value type="QDateTime">2018-03-21T12:06:59</value>
        <value type="QDateTime">2017-06-09T13:07:41</value>
-       <value type="QDateTime">2018-03-20T18:44:47</value>
-       <value type="QDateTime">2018-03-20T18:44:47</value>
-       <value type="QDateTime">2018-03-20T18:44:48</value>
-       <value type="QDateTime">2018-03-20T18:44:51</value>
-       <value type="QDateTime">2018-03-20T18:44:46</value>
-       <value type="QDateTime">2018-03-20T18:44:50</value>
+       <value type="QDateTime">2018-03-21T12:06:58</value>
+       <value type="QDateTime">2018-03-21T12:06:58</value>
+       <value type="QDateTime">2018-03-21T12:06:59</value>
+       <value type="QDateTime">2018-03-21T12:07:01</value>
+       <value type="QDateTime">2018-03-21T12:06:57</value>
+       <value type="QDateTime">2018-03-21T12:07:01</value>
        <value type="QDateTime">2017-06-09T13:07:41</value>
-       <value type="QDateTime">2018-03-20T18:44:48</value>
-       <value type="QDateTime">2018-03-20T18:44:49</value>
-       <value type="QDateTime">2018-03-20T18:44:49</value>
+       <value type="QDateTime">2018-03-21T12:06:59</value>
+       <value type="QDateTime">2018-03-21T12:07:00</value>
+       <value type="QDateTime">2018-03-21T12:07:00</value>
        <value type="QDateTime">2017-06-13T10:43:05</value>
-       <value type="QDateTime">2018-03-20T18:44:47</value>
+       <value type="QDateTime">2018-03-21T12:06:58</value>
        <value type="QDateTime">2017-06-13T10:43:05</value>
-       <value type="QDateTime">2018-03-20T18:44:49</value>
-       <value type="QDateTime">2018-03-20T18:44:50</value>
-       <value type="QDateTime">2018-03-20T18:44:48</value>
-       <value type="QDateTime">2018-03-20T18:44:51</value>
-       <value type="QDateTime">2018-03-20T18:44:49</value>
-       <value type="QDateTime">2018-03-20T18:44:51</value>
-       <value type="QDateTime">2018-03-20T18:44:50</value>
-       <value type="QDateTime">2018-03-20T18:44:49</value>
-       <value type="QDateTime">2018-03-20T18:44:49</value>
-       <value type="QDateTime">2018-03-20T18:44:49</value>
-       <value type="QDateTime">2018-03-20T18:44:46</value>
-       <value type="QDateTime">2018-03-20T18:44:50</value>
-       <value type="QDateTime">2018-03-20T18:44:47</value>
-       <value type="QDateTime">2018-03-20T18:44:51</value>
-       <value type="QDateTime">2018-03-20T18:44:46</value>
-       <value type="QDateTime">2018-03-20T18:44:50</value>
-       <value type="QDateTime">2018-03-20T18:44:51</value>
-       <value type="QDateTime">2018-03-20T18:44:50</value>
-       <value type="QDateTime">2018-03-20T18:44:48</value>
-       <value type="QDateTime">2018-03-20T18:44:46</value>
-       <value type="QDateTime">2018-03-20T18:44:51</value>
-       <value type="QDateTime">2018-03-20T18:44:48</value>
-       <value type="QDateTime">2018-03-20T18:44:46</value>
-       <value type="QDateTime">2018-03-20T18:44:48</value>
-       <value type="QDateTime">2018-03-20T18:44:47</value>
-       <value type="QDateTime">2018-03-20T18:44:50</value>
-       <value type="QDateTime">2018-03-20T18:44:51</value>
-       <value type="QDateTime">2018-03-20T18:44:46</value>
-       <value type="QDateTime">2018-03-20T18:44:48</value>
-       <value type="QDateTime">2018-03-20T18:44:49</value>
-       <value type="QDateTime">2018-03-20T18:44:51</value>
-       <value type="QDateTime">2018-03-20T18:44:47</value>
-       <value type="QDateTime">2018-03-20T18:44:49</value>
-       <value type="QDateTime">2018-03-20T18:44:46</value>
-       <value type="QDateTime">2018-03-20T18:44:55</value>
-       <value type="QDateTime">2018-03-20T18:44:47</value>
-       <value type="QDateTime">2018-03-20T18:44:47</value>
-       <value type="QDateTime">2018-03-20T18:44:47</value>
-       <value type="QDateTime">2018-03-20T18:44:46</value>
-       <value type="QDateTime">2018-03-20T18:44:50</value>
-       <value type="QDateTime">2018-03-20T18:44:47</value>
-       <value type="QDateTime">2018-03-20T18:44:48</value>
+       <value type="QDateTime">2018-03-21T12:07:00</value>
+       <value type="QDateTime">2018-03-21T12:07:01</value>
+       <value type="QDateTime">2018-03-21T12:06:59</value>
+       <value type="QDateTime">2018-03-21T12:07:02</value>
+       <value type="QDateTime">2018-03-21T12:07:00</value>
+       <value type="QDateTime">2018-03-21T12:07:02</value>
+       <value type="QDateTime">2018-03-21T12:07:01</value>
+       <value type="QDateTime">2018-03-21T12:07:00</value>
+       <value type="QDateTime">2018-03-21T12:07:00</value>
+       <value type="QDateTime">2018-03-21T12:07:00</value>
+       <value type="QDateTime">2018-03-21T12:06:57</value>
+       <value type="QDateTime">2018-03-21T12:07:01</value>
+       <value type="QDateTime">2018-03-21T12:06:58</value>
+       <value type="QDateTime">2018-03-21T12:07:02</value>
+       <value type="QDateTime">2018-03-21T12:06:57</value>
+       <value type="QDateTime">2018-03-21T12:07:01</value>
+       <value type="QDateTime">2018-03-21T12:07:02</value>
+       <value type="QDateTime">2018-03-21T12:07:01</value>
+       <value type="QDateTime">2018-03-21T12:06:59</value>
+       <value type="QDateTime">2018-03-21T12:06:57</value>
+       <value type="QDateTime">2018-03-21T12:07:02</value>
+       <value type="QDateTime">2018-03-21T12:06:59</value>
+       <value type="QDateTime">2018-03-21T12:06:57</value>
+       <value type="QDateTime">2018-03-21T12:06:59</value>
+       <value type="QDateTime">2018-03-21T12:06:58</value>
+       <value type="QDateTime">2018-03-21T12:07:01</value>
+       <value type="QDateTime">2018-03-21T12:07:02</value>
+       <value type="QDateTime">2018-03-21T12:06:58</value>
+       <value type="QDateTime">2018-03-21T12:06:59</value>
+       <value type="QDateTime">2018-03-21T12:07:00</value>
+       <value type="QDateTime">2018-03-21T12:07:02</value>
+       <value type="QDateTime">2018-03-21T12:06:58</value>
+       <value type="QDateTime">2018-03-21T12:07:00</value>
+       <value type="QDateTime">2018-03-21T12:06:57</value>
+       <value type="QDateTime">2018-03-21T12:07:06</value>
+       <value type="QDateTime">2018-03-21T12:06:58</value>
+       <value type="QDateTime">2018-03-21T12:06:58</value>
+       <value type="QDateTime">2018-03-21T12:06:58</value>
+       <value type="QDateTime">2018-03-21T12:06:57</value>
+       <value type="QDateTime">2018-03-21T12:07:01</value>
+       <value type="QDateTime">2018-03-21T12:06:58</value>
+       <value type="QDateTime">2018-03-21T12:06:59</value>
       </valuelist>
       <value type="bool" key="RemoteLinux.GenericDirectUploadStep.Incremental">false</value>
      </valuemap>
