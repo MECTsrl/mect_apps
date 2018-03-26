@@ -3347,7 +3347,7 @@ ms</source>
         <location filename="page300.ui" line="2470"/>
         <location filename="page300.ui" line="2545"/>
         <location filename="page300.ui" line="2614"/>
-        <location filename="page300.ui" line="2960"/>
+        <location filename="page300.ui" line="2963"/>
         <source>ATCMlabel widget</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3408,8 +3408,8 @@ ms</source>
         <location filename="page300.ui" line="1954"/>
         <location filename="page300.ui" line="2020"/>
         <location filename="page300.ui" line="2057"/>
-        <location filename="page300.ui" line="2972"/>
         <location filename="page300.ui" line="2975"/>
+        <location filename="page300.ui" line="2978"/>
         <source>0</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3518,11 +3518,11 @@ ms</source>
     </message>
     <message>
         <location filename="page300.ui" line="532"/>
-        <location filename="page300.ui" line="2702"/>
-        <location filename="page300.ui" line="2765"/>
-        <location filename="page300.ui" line="2828"/>
-        <location filename="page300.ui" line="3016"/>
-        <location filename="page300.ui" line="3065"/>
+        <location filename="page300.ui" line="2705"/>
+        <location filename="page300.ui" line="2768"/>
+        <location filename="page300.ui" line="2831"/>
+        <location filename="page300.ui" line="3019"/>
+        <location filename="page300.ui" line="3068"/>
         <source>ATCMbutton widget</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3547,7 +3547,7 @@ ms</source>
         <location filename="page300.ui" line="660"/>
         <location filename="page300.ui" line="868"/>
         <location filename="page300.ui" line="983"/>
-        <location filename="page300.ui" line="2954"/>
+        <location filename="page300.ui" line="2957"/>
         <source>xxxx</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3633,24 +3633,24 @@ ms</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page300.ui" line="2863"/>
+        <location filename="page300.ui" line="2866"/>
         <source>WiFi ON</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page300.ui" line="2966"/>
+        <location filename="page300.ui" line="2969"/>
         <source>errors_can = </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page300.ui" line="3031"/>
         <location filename="page300.ui" line="3034"/>
+        <location filename="page300.ui" line="3037"/>
         <source>page100</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page300.ui" line="3080"/>
         <location filename="page300.ui" line="3083"/>
+        <location filename="page300.ui" line="3086"/>
         <source>page200</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3749,8 +3749,8 @@ Y2=PLC_AnIn_2</source>
     <message>
         <location filename="page300.ui" line="722"/>
         <location filename="page300.ui" line="728"/>
-        <location filename="page300.ui" line="2957"/>
-        <location filename="page300.ui" line="2963"/>
+        <location filename="page300.ui" line="2960"/>
+        <location filename="page300.ui" line="2966"/>
         <source>errors_can</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3865,45 +3865,45 @@ Y2=PLC_AnIn_2</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page300.ui" line="2699"/>
-        <location filename="page300.ui" line="2711"/>
+        <location filename="page300.ui" line="2702"/>
+        <location filename="page300.ui" line="2714"/>
         <source>is_TUN0_ON</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page300.ui" line="2734"/>
+        <location filename="page300.ui" line="2737"/>
         <source>VPN off</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page300.ui" line="2737"/>
+        <location filename="page300.ui" line="2740"/>
         <source>VPN ON</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page300.ui" line="2762"/>
-        <location filename="page300.ui" line="2774"/>
+        <location filename="page300.ui" line="2765"/>
+        <location filename="page300.ui" line="2777"/>
         <source>is_PPP0_ON</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page300.ui" line="2800"/>
+        <location filename="page300.ui" line="2803"/>
         <source>Mobile ON</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page300.ui" line="2825"/>
-        <location filename="page300.ui" line="2837"/>
+        <location filename="page300.ui" line="2828"/>
+        <location filename="page300.ui" line="2840"/>
         <source>is_WLAN0_ON</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page300.ui" line="2860"/>
+        <location filename="page300.ui" line="2863"/>
         <source>WiFi off</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page300.ui" line="2797"/>
+        <location filename="page300.ui" line="2800"/>
         <source>Mobile off</source>
         <translation type="unfinished"></translation>
     </message>

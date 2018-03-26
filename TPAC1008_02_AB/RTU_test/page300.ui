@@ -2695,6 +2695,9 @@ Y2=PLC_AnIn_4</string>
      <pointsize>8</pointsize>
     </font>
    </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
    <property name="toolTip">
     <string>is_TUN0_ON</string>
    </property>
