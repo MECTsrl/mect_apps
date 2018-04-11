@@ -1,0 +1,19 @@
+
+$ create-react-app demo-react
+$ cd demo-react
+$ npm install axios
+
+$ (edit)
+$ npm run build
+
+$ ssh root@192.168.5.211
+root@mect /local/flash/root$ mount -o remount,rw /
+root@mect /local/flash/root$ cd /usr/share/www/
+root@mect /usr/share/www$ ln -s /root/webmi
+root@mect /usr/share/www$ mount -o remount,ro /
+root@mect /usr/share/www$ cd
+root@mect /local/flash/root$ exit
+
+$ npm run build && rsync -avx --delete build/ root@192.168.5.211:webmi/
+
+
