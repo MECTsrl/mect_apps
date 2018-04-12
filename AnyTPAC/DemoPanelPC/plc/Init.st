@@ -7,7 +7,7 @@ VAR
 
 END_VAR
 
-	HEARTBEAT := 0.1;
+	theHEARTBEAT := 1;
 
 END_PROGRAM
 

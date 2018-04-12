@@ -31,21 +31,21 @@
  * Variable theHEARTBEAT
  */
 
-float theHEARTBEAT = 0;
+u_int16_t theHEARTBEAT = 0;
 
 
 /*
  * Variable theINPUT
  */
 
-int32_t theINPUT = 0;
+int16_t theINPUT = 0;
 
 
 /*
  * Variable theOUTPUT
  */
 
-int32_t theOUTPUT = 0;
+int16_t theOUTPUT = 0;
 
 
 /*
@@ -1336,13 +1336,13 @@ u_int8_t PLC_ALARM_VOLUME = 0;
 u_int32_t PLC_BUZZER = 0;
 
 int
-doWrite_theHEARTBEAT(float value)
+doWrite_theHEARTBEAT(u_int16_t value)
 {
 	return doWrite(ID_theHEARTBEAT, &value);
 }
 
 int
-addWrite_theHEARTBEAT(float value)
+addWrite_theHEARTBEAT(u_int16_t value)
 {
 	return addWrite(ID_theHEARTBEAT, &value);
 }
@@ -1354,13 +1354,13 @@ getStatus_theHEARTBEAT(void)
 }
 
 int
-doWrite_theINPUT(int32_t value)
+doWrite_theINPUT(int16_t value)
 {
 	return doWrite(ID_theINPUT, &value);
 }
 
 int
-addWrite_theINPUT(int32_t value)
+addWrite_theINPUT(int16_t value)
 {
 	return addWrite(ID_theINPUT, &value);
 }
@@ -1372,13 +1372,13 @@ getStatus_theINPUT(void)
 }
 
 int
-doWrite_theOUTPUT(int32_t value)
+doWrite_theOUTPUT(int16_t value)
 {
 	return doWrite(ID_theOUTPUT, &value);
 }
 
 int
-addWrite_theOUTPUT(int32_t value)
+addWrite_theOUTPUT(int16_t value)
 {
 	return addWrite(ID_theOUTPUT, &value);
 }

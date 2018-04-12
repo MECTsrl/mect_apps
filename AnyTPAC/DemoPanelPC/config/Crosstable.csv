@@ -190,9 +190,9 @@
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
-1;P;theHEARTBEAT                   ;REAL     ;1   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;0     ;193 ;3   ;[RW]
-1;P;theINPUT                       ;DINT     ;0   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;2     ;193 ;3   ;[RW]
-1;P;theOUTPUT                      ;DINT     ;0   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;4     ;193 ;3   ;[RW]
+1;P;theHEARTBEAT                   ;UINT     ;0   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;0     ;193 ;3   ;[RW]
+1;P;theINPUT                       ;INT      ;0   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;1     ;193 ;3   ;[RW]
+1;P;theOUTPUT                      ;INT      ;0   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;2     ;193 ;3   ;[RW]
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;

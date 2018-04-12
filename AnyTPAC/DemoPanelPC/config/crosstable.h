@@ -35,21 +35,21 @@ extern "C" {
 
 
 #define ID_theHEARTBEAT 193
-extern float theHEARTBEAT;
-int doWrite_theHEARTBEAT(float value);
-int addWrite_theHEARTBEAT(float value);
+extern u_int16_t theHEARTBEAT;
+int doWrite_theHEARTBEAT(u_int16_t value);
+int addWrite_theHEARTBEAT(u_int16_t value);
 int getStatus_theHEARTBEAT(void);
 
 #define ID_theINPUT 194
-extern int32_t theINPUT;
-int doWrite_theINPUT(int32_t value);
-int addWrite_theINPUT(int32_t value);
+extern int16_t theINPUT;
+int doWrite_theINPUT(int16_t value);
+int addWrite_theINPUT(int16_t value);
 int getStatus_theINPUT(void);
 
 #define ID_theOUTPUT 195
-extern int32_t theOUTPUT;
-int doWrite_theOUTPUT(int32_t value);
-int addWrite_theOUTPUT(int32_t value);
+extern int16_t theOUTPUT;
+int doWrite_theOUTPUT(int16_t value);
+int addWrite_theOUTPUT(int16_t value);
 int getStatus_theOUTPUT(void);
 
 #define ID_RTU0_TYPE_PORT 5000

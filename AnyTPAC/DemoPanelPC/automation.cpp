@@ -7,7 +7,6 @@ void do_write_query();
 /* put here the initalization */
 void setup(void)
 {
-    doWrite_theHEARTBEAT(0.0);
 }
 
 /* put here the operation made every 100ms */
@@ -24,14 +23,15 @@ void update_all_json()
     // update each 0.5 s
     if (counter % 5 == 0) {
 
-        FILE *file_json = fopen("/tmp/update_all.json", "w+");
+        unlink("/tmp/update_all.json");
+        FILE *file_json = fopen("/tmp/update_all.json", "w");
         if (file_json) {
             fprintf(file_json,
                     "Content-Type: application/json; charset=UTF-8\n"
                     "\n"
                     "{\n");
 
-            fprintf(file_json, "\"theHEARTBEAT\" :\"%0.2f\",\n", theHEARTBEAT);
+            fprintf(file_json, "\"theHEARTBEAT\" :\"%u\",\n", theHEARTBEAT);
             fprintf(file_json, "\"theINPUT\"     :\"%d\",\n", theINPUT);
             fprintf(file_json, "\"theOUTPUT\"    :\"%d\",\n", theOUTPUT);
 
@@ -48,8 +48,6 @@ void update_all_json()
         } else {
             fprintf(stderr, "update_all_json(): cannot write json\n");
         }
-
-        doWrite_theHEARTBEAT(theHEARTBEAT + 0.5);
     }
     ++counter;
 }
@@ -64,14 +62,13 @@ void do_write_query()
     fprintf(stderr, "new file\n");
     while (! feof(file_query)) {
         char name[42];
-        float fvalue;
+        int ivalue;
 
-        if (fscanf(file_query, "%41[^=]=%f ", name, &fvalue) != 2) {
+        if (fscanf(file_query, "%41[^=]=%d ", name, &ivalue) != 2) {
             fprintf(stderr, "bad fscanf\n");
             break;
         }
         if (strcmp(name, "theINPUT") == 0) {
-            int ivalue = (int)fvalue;
 
             fprintf(stderr, "doWrite_theINPUT(%d)\n", ivalue);
             doWrite_theINPUT(ivalue);
