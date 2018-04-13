@@ -30,13 +30,14 @@ class App extends Component {
   }
 
   render() {
-    if (!this.state.started) {
-        return <div className="App">
-	    	<button className="start-button" onClick={this.enterFullScreen}>START WebMI</button>
-	        </div>;
-    } else {
-        return <div><Page100 /></div>;
-    }
+    // if (!this.state.started) {
+    //     return <div className="App">
+    //         	<button className="start-button" onClick={this.enterFullScreen}>START WebMI</button>
+    //             </div>;
+    // } else {
+    //     return <div><Page100 /></div>;
+    // }
+    return <div><Page100 /></div>;
   }
 }
 

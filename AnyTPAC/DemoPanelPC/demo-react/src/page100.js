@@ -15,8 +15,8 @@ class Page100 extends Component {
 
     this.state = {
         theHEARTBEAT : 0,
-        theINPUT : 0,
-        theOUTPUT : 0,
+        theLED : 0,
+        theBUTTON : 0,
         readStatus : "?",
         writeStatus : "?"
 
@@ -35,9 +35,9 @@ class Page100 extends Component {
     //    Content-Type: application/json; charset=UTF-8
     //
     //    {
-    //    "theHEARTBEAT"    :"5.10",
-    //    "theINPUT"        :"0",
-    //    "theOUTPUT"       :"0",
+    //    "theHEARTBEAT" :"510",
+    //    "theLED"       :"0",
+    //    "theBUTTON"    :"1",
     //    "PLC_Year"     :"2018",
     //    "PLC_Month"    :"4",
     //    "PLC_Day"      :"11",
@@ -52,13 +52,13 @@ class Page100 extends Component {
         .then(function (response) {
 
             let tmpHEARTBEAT = response.data.theHEARTBEAT; // parseFloat(response.data.theHEARTBEAT).toFixed(2);
-            let tmpINPUT = response.data.theINPUT; // parseInt(response.data.theINPUT, 10);
-            let tmpOUTPUT = response.data.theOUTPUT; // parseInt(response.data.theOUTPUT, 10);
+            let tmpINPUT = response.data.theLED; // parseInt(response.data.theLED, 10);
+            let tmpOUTPUT = response.data.theBUTTON; // parseInt(response.data.theBUTTON, 10);
 
             thisPage.setState({
 		theHEARTBEAT : tmpHEARTBEAT ,
-		theINPUT : tmpINPUT , 
-		theOUTPUT : tmpOUTPUT ,
+		theLED : tmpINPUT , 
+		theBUTTON : tmpOUTPUT ,
 		readStatus : "OK " + response.data
 	    });
 	})
@@ -86,10 +86,10 @@ class Page100 extends Component {
     }
 
     on_INPUT_clicked() {
-	if (this.state.theINPUT == 0) {
-            this.doWrite({ params: {theINPUT: 1} });
+	if (this.state.theLED == 0) {
+            this.doWrite({ params: {theLED: 1} });
 	} else {
-            this.doWrite({ params: {theINPUT: 0} });
+            this.doWrite({ params: {theLED: 0} });
 	}
     }
 
@@ -105,9 +105,9 @@ class Page100 extends Component {
 
 	    <p className="page100-style"></p>
 	    <p></p>
-            <p className="p-values">{this.state.theHEARTBEAT}</p>
-	    <p>theINPUT <button className={(this.state.theINPUT == 0)?"button-0":"button-1"} onClick={this.on_INPUT_clicked}>{(this.state.theINPUT == 0)?"off":"ON"}</button> &lt;-- touch here</p>
-	    <p>theOUTPUT <button className={(this.state.theOUTPUT == 0)?"button-0":"button-1"}>{(this.state.theOUTPUT == 0)?"off":"ON"}</button></p>
+            <p>theHEARTBEAT {this.state.theHEARTBEAT}</p>
+	    <p>theLED <button className={(this.state.theLED == 0)?"button-0":"button-1"} onClick={this.on_INPUT_clicked}>{(this.state.theLED == 0)?"off":"ON"}</button> &lt;-- touch here</p>
+	    <p>theBUTTON <button className={(this.state.theBUTTON == 0)?"button-0":"button-1"}>{(this.state.theBUTTON == 0)?"off":"ON"}</button></p>
 
             <p className="p-title">demo-react {version} page100</p>
             <p className="p-msg">readStatus={this.state.readStatus}<br/>writeStatus={this.state.writeStatus}</p>

@@ -1,7 +1,7 @@
 
 .page100-style {
     position: center;
-    width: 440px; height: 440px;
+    width: 220px; height: 220px;
     background-image: url("./page100.png"); background-repeat: no-repeat; background-size: cover;
     background-color: #0babb0;
 }
