@@ -645,7 +645,7 @@ background-color: rgb(0, 0, 0);
    <property name="font">
     <font>
      <family>DejaVu Sans Mono</family>
-     <pointsize>9</pointsize>
+     <pointsize>11</pointsize>
     </font>
    </property>
    <property name="text">
@@ -702,6 +702,9 @@ background-color: rgb(0, 0, 0);
    <property name="borderRadius">
     <number>0</number>
    </property>
+   <property name="apparence">
+    <enum>QFrame::Plain</enum>
+   </property>
   </widget>
   <widget class="ATCMled" name="atcmLed_INPUT">
    <property name="geometry">
@@ -713,7 +716,7 @@ background-color: rgb(0, 0, 0);
     </rect>
    </property>
    <property name="toolTip">
-    <string>theINPUT</string>
+    <string>theLED</string>
    </property>
    <property name="whatsThis">
     <string>ATCMled widget</string>
@@ -725,7 +728,7 @@ background-color: rgb(0, 0, 0);
     </font>
    </property>
    <property name="variable">
-    <string>theINPUT</string>
+    <string>theLED</string>
    </property>
    <property name="refresh">
     <number>200</number>
@@ -748,16 +751,16 @@ background-color: rgb(0, 0, 0);
   <widget class="ATCMbutton" name="atcmButton_OUTPUT">
    <property name="geometry">
     <rect>
-     <x>240</x>
-     <y>110</y>
-     <width>42</width>
-     <height>42</height>
+     <x>239</x>
+     <y>108</y>
+     <width>44</width>
+     <height>44</height>
     </rect>
    </property>
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>8</pointsize>
+     <pointsize>11</pointsize>
     </font>
    </property>
    <property name="checkable">
@@ -767,7 +770,7 @@ background-color: rgb(0, 0, 0);
     <bool>false</bool>
    </property>
    <property name="toolTip">
-    <string>theOUTPUT</string>
+    <string>theBUTTON</string>
    </property>
    <property name="whatsThis">
     <string>ATCMbutton widget</string>
@@ -779,7 +782,7 @@ background-color: rgb(0, 0, 0);
     <string/>
    </property>
    <property name="statusvar">
-    <string>theOUTPUT</string>
+    <string>theBUTTON</string>
    </property>
    <property name="viewStatus">
     <bool>false</bool>
@@ -796,9 +799,9 @@ background-color: rgb(0, 0, 0);
    </property>
    <property name="borderColor">
     <color>
-     <red>255</red>
-     <green>255</green>
-     <blue>0</blue>
+     <red>170</red>
+     <green>170</green>
+     <blue>127</blue>
     </color>
    </property>
    <property name="bgPressColor">
@@ -810,9 +813,9 @@ background-color: rgb(0, 0, 0);
    </property>
    <property name="borderPressColor">
     <color>
-     <red>0</red>
-     <green>255</green>
-     <blue>255</blue>
+     <red>170</red>
+     <green>170</green>
+     <blue>127</blue>
     </color>
    </property>
    <property name="text">
@@ -822,10 +825,13 @@ background-color: rgb(0, 0, 0);
     <string>ON</string>
    </property>
    <property name="borderWidth">
-    <number>1</number>
+    <number>4</number>
    </property>
    <property name="borderRadius">
     <number>0</number>
+   </property>
+   <property name="apparence">
+    <enum>QFrame::Raised</enum>
    </property>
   </widget>
  </widget>

@@ -190,9 +190,9 @@
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
-1;P;theHEARTBEAT                   ;UINT     ;0   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;0     ;193 ;3   ;[RW]
-1;P;theINPUT                       ;INT      ;0   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;1     ;193 ;3   ;[RW]
-1;P;theOUTPUT                      ;INT      ;0   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;2     ;193 ;3   ;[RW]
+1;P;theHEARTBEAT                   ;UDINT    ;0   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;0     ;193 ;3   ;[RW]
+1;P;theLED                         ;INT      ;0   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;2     ;193 ;3   ;[RW]
+1;P;theBUTTON                      ;INT      ;0   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;3     ;193 ;3   ;[RW]
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;

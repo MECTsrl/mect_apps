@@ -31,21 +31,21 @@
  * Variable theHEARTBEAT
  */
 
-u_int16_t theHEARTBEAT = 0;
+u_int32_t theHEARTBEAT = 0;
 
 
 /*
- * Variable theINPUT
+ * Variable theLED
  */
 
-int16_t theINPUT = 0;
+int16_t theLED = 0;
 
 
 /*
- * Variable theOUTPUT
+ * Variable theBUTTON
  */
 
-int16_t theOUTPUT = 0;
+int16_t theBUTTON = 0;
 
 
 /*
@@ -1336,13 +1336,13 @@ u_int8_t PLC_ALARM_VOLUME = 0;
 u_int32_t PLC_BUZZER = 0;
 
 int
-doWrite_theHEARTBEAT(u_int16_t value)
+doWrite_theHEARTBEAT(u_int32_t value)
 {
 	return doWrite(ID_theHEARTBEAT, &value);
 }
 
 int
-addWrite_theHEARTBEAT(u_int16_t value)
+addWrite_theHEARTBEAT(u_int32_t value)
 {
 	return addWrite(ID_theHEARTBEAT, &value);
 }
@@ -1354,39 +1354,39 @@ getStatus_theHEARTBEAT(void)
 }
 
 int
-doWrite_theINPUT(int16_t value)
+doWrite_theLED(int16_t value)
 {
-	return doWrite(ID_theINPUT, &value);
+	return doWrite(ID_theLED, &value);
 }
 
 int
-addWrite_theINPUT(int16_t value)
+addWrite_theLED(int16_t value)
 {
-	return addWrite(ID_theINPUT, &value);
+	return addWrite(ID_theLED, &value);
 }
 
 int
-getStatus_theINPUT(void)
+getStatus_theLED(void)
 {
-	return getStatus(ID_theINPUT);
+	return getStatus(ID_theLED);
 }
 
 int
-doWrite_theOUTPUT(int16_t value)
+doWrite_theBUTTON(int16_t value)
 {
-	return doWrite(ID_theOUTPUT, &value);
+	return doWrite(ID_theBUTTON, &value);
 }
 
 int
-addWrite_theOUTPUT(int16_t value)
+addWrite_theBUTTON(int16_t value)
 {
-	return addWrite(ID_theOUTPUT, &value);
+	return addWrite(ID_theBUTTON, &value);
 }
 
 int
-getStatus_theOUTPUT(void)
+getStatus_theBUTTON(void)
 {
-	return getStatus(ID_theOUTPUT);
+	return getStatus(ID_theBUTTON);
 }
 
 int
@@ -4708,8 +4708,8 @@ update_all(void)
 	int retval = 0;
 
 	retval += readFromDb(ID_theHEARTBEAT, &theHEARTBEAT);
-	retval += readFromDb(ID_theINPUT, &theINPUT);
-	retval += readFromDb(ID_theOUTPUT, &theOUTPUT);
+	retval += readFromDb(ID_theLED, &theLED);
+	retval += readFromDb(ID_theBUTTON, &theBUTTON);
 	retval += readFromDb(ID_RTU0_TYPE_PORT, &RTU0_TYPE_PORT);
 	retval += readFromDb(ID_RTU0_BAUDRATE, &RTU0_BAUDRATE);
 	retval += readFromDb(ID_RTU0_STATUS, &RTU0_STATUS);

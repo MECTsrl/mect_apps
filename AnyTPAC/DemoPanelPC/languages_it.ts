@@ -107,7 +107,7 @@
     </message>
     <message>
         <location filename="page100.ui" line="592"/>
-        <location filename="page100.ui" line="773"/>
+        <location filename="page100.ui" line="776"/>
         <source>ATCMbutton widget</source>
         <translation type="unfinished"></translation>
     </message>
@@ -130,31 +130,29 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="716"/>
-        <location filename="page100.ui" line="728"/>
-        <source>theINPUT</source>
-        <oldsource>INPUT</oldsource>
+        <location filename="page100.ui" line="719"/>
+        <location filename="page100.ui" line="731"/>
+        <source>theLED</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="719"/>
+        <location filename="page100.ui" line="773"/>
+        <location filename="page100.ui" line="785"/>
+        <source>theBUTTON</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page100.ui" line="722"/>
         <source>ATCMled widget</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="770"/>
-        <location filename="page100.ui" line="782"/>
-        <source>theOUTPUT</source>
-        <oldsource>OUTPUT</oldsource>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page100.ui" line="819"/>
+        <location filename="page100.ui" line="822"/>
         <source>off</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="822"/>
+        <location filename="page100.ui" line="825"/>
         <source>ON</source>
         <translation type="unfinished"></translation>
     </message>

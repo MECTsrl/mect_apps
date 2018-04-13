@@ -35,22 +35,22 @@ extern "C" {
 
 
 #define ID_theHEARTBEAT 193
-extern u_int16_t theHEARTBEAT;
-int doWrite_theHEARTBEAT(u_int16_t value);
-int addWrite_theHEARTBEAT(u_int16_t value);
+extern u_int32_t theHEARTBEAT;
+int doWrite_theHEARTBEAT(u_int32_t value);
+int addWrite_theHEARTBEAT(u_int32_t value);
 int getStatus_theHEARTBEAT(void);
 
-#define ID_theINPUT 194
-extern int16_t theINPUT;
-int doWrite_theINPUT(int16_t value);
-int addWrite_theINPUT(int16_t value);
-int getStatus_theINPUT(void);
+#define ID_theLED 194
+extern int16_t theLED;
+int doWrite_theLED(int16_t value);
+int addWrite_theLED(int16_t value);
+int getStatus_theLED(void);
 
-#define ID_theOUTPUT 195
-extern int16_t theOUTPUT;
-int doWrite_theOUTPUT(int16_t value);
-int addWrite_theOUTPUT(int16_t value);
-int getStatus_theOUTPUT(void);
+#define ID_theBUTTON 195
+extern int16_t theBUTTON;
+int doWrite_theBUTTON(int16_t value);
+int addWrite_theBUTTON(int16_t value);
+int getStatus_theBUTTON(void);
 
 #define ID_RTU0_TYPE_PORT 5000
 extern u_int32_t RTU0_TYPE_PORT;

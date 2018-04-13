@@ -23,7 +23,6 @@ void update_all_json()
     // update each 0.5 s
     if (counter % 5 == 0) {
 
-        unlink("/tmp/update_all.json");
         FILE *file_json = fopen("/tmp/update_all.json", "w");
         if (file_json) {
             fprintf(file_json,
@@ -32,8 +31,8 @@ void update_all_json()
                     "{\n");
 
             fprintf(file_json, "\"theHEARTBEAT\" :\"%u\",\n", theHEARTBEAT);
-            fprintf(file_json, "\"theINPUT\"     :\"%d\",\n", theINPUT);
-            fprintf(file_json, "\"theOUTPUT\"    :\"%d\",\n", theOUTPUT);
+            fprintf(file_json, "\"theLED\"       :\"%d\",\n", theLED);
+            fprintf(file_json, "\"theBUTTON\"    :\"%d\",\n", theBUTTON);
 
             fprintf(file_json, "\"PLC_Year\"     :\"%u\",\n", PLC_Year);
             fprintf(file_json, "\"PLC_Month\"    :\"%u\",\n", PLC_Month);
@@ -59,7 +58,6 @@ void do_write_query()
     if (!file_query) {
         return;
     }
-    fprintf(stderr, "new file\n");
     while (! feof(file_query)) {
         char name[42];
         int ivalue;
@@ -68,14 +66,13 @@ void do_write_query()
             fprintf(stderr, "bad fscanf\n");
             break;
         }
-        if (strcmp(name, "theINPUT") == 0) {
+        if (strcmp(name, "theLED") == 0) {
 
-            fprintf(stderr, "doWrite_theINPUT(%d)\n", ivalue);
-            doWrite_theINPUT(ivalue);
+            fprintf(stderr, "doWrite_theLED(%d)\n", ivalue);
+            doWrite_theLED(ivalue);
         }
     }
     fclose(file_query);
-    fprintf(stderr, "unlink\n");
     unlink("/tmp/do_write.query");
 }
 
