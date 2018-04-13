@@ -37,7 +37,7 @@ background-color: rgb(0, 0, 0);
    </property>
    <property name="geometry">
     <rect>
-     <x>100</x>
+     <x>0</x>
      <y>242</y>
      <width>40</width>
      <height>30</height>
@@ -110,7 +110,7 @@ background-color: rgb(0, 0, 0);
    </property>
    <property name="geometry">
     <rect>
-     <x>140</x>
+     <x>40</x>
      <y>242</y>
      <width>40</width>
      <height>30</height>
@@ -183,7 +183,7 @@ background-color: rgb(0, 0, 0);
    </property>
    <property name="geometry">
     <rect>
-     <x>180</x>
+     <x>80</x>
      <y>242</y>
      <width>40</width>
      <height>30</height>
@@ -256,8 +256,8 @@ background-color: rgb(0, 0, 0);
    </property>
    <property name="geometry">
     <rect>
-     <x>100</x>
-     <y>212</y>
+     <x>120</x>
+     <y>242</y>
      <width>40</width>
      <height>30</height>
     </rect>
@@ -329,8 +329,8 @@ background-color: rgb(0, 0, 0);
    </property>
    <property name="geometry">
     <rect>
-     <x>140</x>
-     <y>212</y>
+     <x>160</x>
+     <y>242</y>
      <width>40</width>
      <height>30</height>
     </rect>
@@ -402,8 +402,8 @@ background-color: rgb(0, 0, 0);
    </property>
    <property name="geometry">
     <rect>
-     <x>180</x>
-     <y>212</y>
+     <x>200</x>
+     <y>242</y>
      <width>40</width>
      <height>30</height>
     </rect>
@@ -474,14 +474,14 @@ background-color: rgb(0, 0, 0);
     <rect>
      <x>240</x>
      <y>242</y>
-     <width>111</width>
+     <width>90</width>
      <height>30</height>
     </rect>
    </property>
    <property name="font">
     <font>
      <family>DejaVu Sans Mono</family>
-     <pointsize>9</pointsize>
+     <pointsize>8</pointsize>
     </font>
    </property>
    <property name="toolTip">
@@ -524,16 +524,16 @@ background-color: rgb(0, 0, 0);
   <widget class="ATCMtime" name="atcmTime">
    <property name="geometry">
     <rect>
-     <x>240</x>
-     <y>212</y>
-     <width>111</width>
+     <x>330</x>
+     <y>242</y>
+     <width>90</width>
      <height>30</height>
     </rect>
    </property>
    <property name="font">
     <font>
      <family>DejaVu Sans Mono</family>
-     <pointsize>9</pointsize>
+     <pointsize>8</pointsize>
     </font>
    </property>
    <property name="toolTip">
@@ -574,9 +574,9 @@ background-color: rgb(0, 0, 0);
    <property name="geometry">
     <rect>
      <x>419</x>
-     <y>231</y>
+     <y>242</y>
      <width>60</width>
-     <height>41</height>
+     <height>30</height>
     </rect>
    </property>
    <property name="font">
@@ -636,16 +636,16 @@ background-color: rgb(0, 0, 0);
   <widget class="ATCMlabel" name="atcmLabel_HEARTBEAT">
    <property name="geometry">
     <rect>
-     <x>170</x>
-     <y>40</y>
-     <width>121</width>
+     <x>120</x>
+     <y>100</y>
+     <width>241</width>
      <height>42</height>
     </rect>
    </property>
    <property name="font">
     <font>
      <family>DejaVu Sans Mono</family>
-     <pointsize>11</pointsize>
+     <pointsize>20</pointsize>
     </font>
    </property>
    <property name="text">
@@ -679,7 +679,7 @@ background-color: rgb(0, 0, 0);
     <color>
      <red>0</red>
      <green>0</green>
-     <blue>0</blue>
+     <blue>64</blue>
     </color>
    </property>
    <property name="borderColor">
@@ -709,10 +709,10 @@ background-color: rgb(0, 0, 0);
   <widget class="ATCMled" name="atcmLed_INPUT">
    <property name="geometry">
     <rect>
-     <x>180</x>
-     <y>110</y>
-     <width>42</width>
-     <height>42</height>
+     <x>150</x>
+     <y>152</y>
+     <width>84</width>
+     <height>84</height>
     </rect>
    </property>
    <property name="toolTip">
@@ -752,15 +752,15 @@ background-color: rgb(0, 0, 0);
    <property name="geometry">
     <rect>
      <x>239</x>
-     <y>108</y>
-     <width>44</width>
-     <height>44</height>
+     <y>150</y>
+     <width>84</width>
+     <height>84</height>
     </rect>
    </property>
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>11</pointsize>
+     <pointsize>20</pointsize>
     </font>
    </property>
    <property name="checkable">
@@ -832,6 +832,265 @@ background-color: rgb(0, 0, 0);
    </property>
    <property name="apparence">
     <enum>QFrame::Raised</enum>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelVNC">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>120</width>
+     <height>80</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>9</pointsize>
+    </font>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(85, 85, 0);
+color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Box</enum>
+   </property>
+   <property name="lineWidth">
+    <number>1</number>
+   </property>
+   <property name="text">
+    <string>VNC
+Android</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignHCenter|Qt::AlignTop</set>
+   </property>
+   <property name="margin">
+    <number>0</number>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelTCP">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>0</y>
+     <width>120</width>
+     <height>80</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>9</pointsize>
+    </font>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(85, 85, 0);
+color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Box</enum>
+   </property>
+   <property name="lineWidth">
+    <number>1</number>
+   </property>
+   <property name="text">
+    <string>Modbus/TCP
+Android</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignHCenter|Qt::AlignTop</set>
+   </property>
+   <property name="margin">
+    <number>0</number>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelVNC_4">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>360</x>
+     <y>0</y>
+     <width>120</width>
+     <height>80</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>9</pointsize>
+    </font>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(85, 85, 0);
+color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Box</enum>
+   </property>
+   <property name="lineWidth">
+    <number>1</number>
+   </property>
+   <property name="text">
+    <string>VNC</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignHCenter|Qt::AlignTop</set>
+   </property>
+   <property name="margin">
+    <number>0</number>
+   </property>
+  </widget>
+  <widget class="ATCMlabel" name="atcmLabel">
+   <property name="geometry">
+    <rect>
+     <x>244</x>
+     <y>57</y>
+     <width>56</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>6</pointsize>
+    </font>
+   </property>
+   <property name="toolTip">
+    <string>TCPS_READS</string>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMlabel widget</string>
+   </property>
+   <property name="variable">
+    <string>TCPS_READS</string>
+   </property>
+   <property name="refresh">
+    <number>200</number>
+   </property>
+   <property name="max">
+    <string notr="true">0</string>
+   </property>
+   <property name="min">
+    <string notr="true">0</string>
+   </property>
+   <property name="viewStatus">
+    <bool>false</bool>
+   </property>
+   <property name="visibilityVar">
+    <string/>
+   </property>
+   <property name="borderWidth">
+    <number>1</number>
+   </property>
+   <property name="borderRadius">
+    <number>0</number>
+   </property>
+  </widget>
+  <widget class="ATCMlabel" name="atcmLabel_2">
+   <property name="geometry">
+    <rect>
+     <x>303</x>
+     <y>57</y>
+     <width>55</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>6</pointsize>
+    </font>
+   </property>
+   <property name="toolTip">
+    <string>TCPS_WRITES</string>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMlabel widget</string>
+   </property>
+   <property name="variable">
+    <string>TCPS_WRITES</string>
+   </property>
+   <property name="refresh">
+    <number>200</number>
+   </property>
+   <property name="max">
+    <string notr="true">0</string>
+   </property>
+   <property name="min">
+    <string notr="true">0</string>
+   </property>
+   <property name="viewStatus">
+    <bool>false</bool>
+   </property>
+   <property name="visibilityVar">
+    <string/>
+   </property>
+   <property name="borderWidth">
+    <number>1</number>
+   </property>
+   <property name="borderRadius">
+    <number>0</number>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelVNC_2">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>0</y>
+     <width>120</width>
+     <height>80</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>9</pointsize>
+    </font>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(85, 85, 0);
+color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Box</enum>
+   </property>
+   <property name="lineWidth">
+    <number>1</number>
+   </property>
+   <property name="text">
+    <string>HTML5
+Android</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignHCenter|Qt::AlignTop</set>
+   </property>
+   <property name="margin">
+    <number>0</number>
    </property>
   </widget>
  </widget>

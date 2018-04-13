@@ -27,6 +27,8 @@
         <location filename="page100.ui" line="351"/>
         <location filename="page100.ui" line="424"/>
         <location filename="page100.ui" line="658"/>
+        <location filename="page100.ui" line="981"/>
+        <location filename="page100.ui" line="1027"/>
         <source>ATCMlabel widget</source>
         <translation type="unfinished"></translation>
     </message>
@@ -139,6 +141,41 @@
         <location filename="page100.ui" line="773"/>
         <location filename="page100.ui" line="785"/>
         <source>theBUTTON</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page100.ui" line="869"/>
+        <source>VNC
+Android</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page100.ui" line="911"/>
+        <source>Modbus/TCP
+Android</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page100.ui" line="953"/>
+        <source>VNC</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page100.ui" line="978"/>
+        <location filename="page100.ui" line="984"/>
+        <source>TCPS_READS</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page100.ui" line="1024"/>
+        <location filename="page100.ui" line="1030"/>
+        <source>TCPS_WRITES</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page100.ui" line="1086"/>
+        <source>HTML5
+Android</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
