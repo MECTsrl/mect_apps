@@ -27,8 +27,9 @@
         <location filename="page100.ui" line="351"/>
         <location filename="page100.ui" line="424"/>
         <location filename="page100.ui" line="658"/>
-        <location filename="page100.ui" line="981"/>
-        <location filename="page100.ui" line="1027"/>
+        <location filename="page100.ui" line="985"/>
+        <location filename="page100.ui" line="1048"/>
+        <location filename="page100.ui" line="1153"/>
         <source>ATCMlabel widget</source>
         <translation type="unfinished"></translation>
     </message>
@@ -157,25 +158,39 @@ Android</source>
     </message>
     <message>
         <location filename="page100.ui" line="953"/>
-        <source>VNC</source>
+        <source>Eng./TCP
+Android</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="978"/>
-        <location filename="page100.ui" line="984"/>
+        <location filename="page100.ui" line="979"/>
+        <location filename="page100.ui" line="1042"/>
+        <location filename="page100.ui" line="1147"/>
+        <source>123456</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page100.ui" line="982"/>
+        <location filename="page100.ui" line="988"/>
         <source>TCPS_READS</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="1024"/>
-        <location filename="page100.ui" line="1030"/>
+        <location filename="page100.ui" line="1045"/>
+        <location filename="page100.ui" line="1051"/>
         <source>TCPS_WRITES</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="1086"/>
+        <location filename="page100.ui" line="1121"/>
         <source>HTML5
 Android</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page100.ui" line="1150"/>
+        <location filename="page100.ui" line="1156"/>
+        <source>HTML5_writes</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

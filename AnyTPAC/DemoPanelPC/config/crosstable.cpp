@@ -49,6 +49,13 @@ int16_t theBUTTON = 0;
 
 
 /*
+ * Variable HTML5_writes
+ */
+
+u_int32_t HTML5_writes = 0;
+
+
+/*
  * Variable RTU0_TYPE_PORT
  */
 
@@ -1387,6 +1394,24 @@ int
 getStatus_theBUTTON(void)
 {
 	return getStatus(ID_theBUTTON);
+}
+
+int
+doWrite_HTML5_writes(u_int32_t value)
+{
+	return doWrite(ID_HTML5_writes, &value);
+}
+
+int
+addWrite_HTML5_writes(u_int32_t value)
+{
+	return addWrite(ID_HTML5_writes, &value);
+}
+
+int
+getStatus_HTML5_writes(void)
+{
+	return getStatus(ID_HTML5_writes);
 }
 
 int
@@ -4710,6 +4735,7 @@ update_all(void)
 	retval += readFromDb(ID_theHEARTBEAT, &theHEARTBEAT);
 	retval += readFromDb(ID_theLED, &theLED);
 	retval += readFromDb(ID_theBUTTON, &theBUTTON);
+	retval += readFromDb(ID_HTML5_writes, &HTML5_writes);
 	retval += readFromDb(ID_RTU0_TYPE_PORT, &RTU0_TYPE_PORT);
 	retval += readFromDb(ID_RTU0_BAUDRATE, &RTU0_BAUDRATE);
 	retval += readFromDb(ID_RTU0_STATUS, &RTU0_STATUS);

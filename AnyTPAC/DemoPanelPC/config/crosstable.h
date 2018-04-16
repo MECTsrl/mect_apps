@@ -52,6 +52,12 @@ int doWrite_theBUTTON(int16_t value);
 int addWrite_theBUTTON(int16_t value);
 int getStatus_theBUTTON(void);
 
+#define ID_HTML5_writes 197
+extern u_int32_t HTML5_writes;
+int doWrite_HTML5_writes(u_int32_t value);
+int addWrite_HTML5_writes(u_int32_t value);
+int getStatus_HTML5_writes(void);
+
 #define ID_RTU0_TYPE_PORT 5000
 extern u_int32_t RTU0_TYPE_PORT;
 int doWrite_RTU0_TYPE_PORT(u_int32_t value);

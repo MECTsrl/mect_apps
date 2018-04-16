@@ -843,7 +843,7 @@ background-color: rgb(0, 0, 0);
      <x>0</x>
      <y>0</y>
      <width>120</width>
-     <height>80</height>
+     <height>70</height>
     </rect>
    </property>
    <property name="font">
@@ -885,7 +885,7 @@ Android</string>
      <x>240</x>
      <y>0</y>
      <width>120</width>
-     <height>80</height>
+     <height>70</height>
     </rect>
    </property>
    <property name="font">
@@ -927,7 +927,7 @@ Android</string>
      <x>360</x>
      <y>0</y>
      <width>120</width>
-     <height>80</height>
+     <height>70</height>
     </rect>
    </property>
    <property name="font">
@@ -950,7 +950,8 @@ color: rgb(255, 255, 255);</string>
     <number>1</number>
    </property>
    <property name="text">
-    <string>VNC</string>
+    <string>Eng./TCP
+Android</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignHCenter|Qt::AlignTop</set>
@@ -962,17 +963,20 @@ color: rgb(255, 255, 255);</string>
   <widget class="ATCMlabel" name="atcmLabel">
    <property name="geometry">
     <rect>
-     <x>244</x>
-     <y>57</y>
+     <x>243</x>
+     <y>47</y>
      <width>56</width>
      <height>20</height>
     </rect>
    </property>
    <property name="font">
     <font>
-     <family>DejaVu Sans</family>
+     <family>DejaVu Sans Mono</family>
      <pointsize>6</pointsize>
     </font>
+   </property>
+   <property name="text">
+    <string>123456</string>
    </property>
    <property name="toolTip">
     <string>TCPS_READS</string>
@@ -998,8 +1002,22 @@ color: rgb(255, 255, 255);</string>
    <property name="visibilityVar">
     <string/>
    </property>
+   <property name="bgColor">
+    <color>
+     <red>85</red>
+     <green>85</green>
+     <blue>81</blue>
+    </color>
+   </property>
+   <property name="fontColor">
+    <color>
+     <red>255</red>
+     <green>255</green>
+     <blue>255</blue>
+    </color>
+   </property>
    <property name="borderWidth">
-    <number>1</number>
+    <number>0</number>
    </property>
    <property name="borderRadius">
     <number>0</number>
@@ -1008,17 +1026,20 @@ color: rgb(255, 255, 255);</string>
   <widget class="ATCMlabel" name="atcmLabel_2">
    <property name="geometry">
     <rect>
-     <x>303</x>
-     <y>57</y>
+     <x>302</x>
+     <y>47</y>
      <width>55</width>
      <height>20</height>
     </rect>
    </property>
    <property name="font">
     <font>
-     <family>DejaVu Sans</family>
+     <family>DejaVu Sans Mono</family>
      <pointsize>6</pointsize>
     </font>
+   </property>
+   <property name="text">
+    <string>123456</string>
    </property>
    <property name="toolTip">
     <string>TCPS_WRITES</string>
@@ -1044,8 +1065,22 @@ color: rgb(255, 255, 255);</string>
    <property name="visibilityVar">
     <string/>
    </property>
+   <property name="bgColor">
+    <color>
+     <red>85</red>
+     <green>85</green>
+     <blue>81</blue>
+    </color>
+   </property>
+   <property name="fontColor">
+    <color>
+     <red>255</red>
+     <green>255</green>
+     <blue>255</blue>
+    </color>
+   </property>
    <property name="borderWidth">
-    <number>1</number>
+    <number>0</number>
    </property>
    <property name="borderRadius">
     <number>0</number>
@@ -1060,7 +1095,7 @@ color: rgb(255, 255, 255);</string>
      <x>120</x>
      <y>0</y>
      <width>120</width>
-     <height>80</height>
+     <height>70</height>
     </rect>
    </property>
    <property name="font">
@@ -1090,6 +1125,69 @@ Android</string>
     <set>Qt::AlignHCenter|Qt::AlignTop</set>
    </property>
    <property name="margin">
+    <number>0</number>
+   </property>
+  </widget>
+  <widget class="ATCMlabel" name="atcmLabel_3">
+   <property name="geometry">
+    <rect>
+     <x>181</x>
+     <y>47</y>
+     <width>55</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans Mono</family>
+     <pointsize>6</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>123456</string>
+   </property>
+   <property name="toolTip">
+    <string>HTML5_writes</string>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMlabel widget</string>
+   </property>
+   <property name="variable">
+    <string>HTML5_writes</string>
+   </property>
+   <property name="refresh">
+    <number>200</number>
+   </property>
+   <property name="max">
+    <string notr="true">0</string>
+   </property>
+   <property name="min">
+    <string notr="true">0</string>
+   </property>
+   <property name="viewStatus">
+    <bool>false</bool>
+   </property>
+   <property name="visibilityVar">
+    <string/>
+   </property>
+   <property name="bgColor">
+    <color>
+     <red>85</red>
+     <green>85</green>
+     <blue>81</blue>
+    </color>
+   </property>
+   <property name="fontColor">
+    <color>
+     <red>255</red>
+     <green>255</green>
+     <blue>255</blue>
+    </color>
+   </property>
+   <property name="borderWidth">
+    <number>0</number>
+   </property>
+   <property name="borderRadius">
     <number>0</number>
    </property>
   </widget>

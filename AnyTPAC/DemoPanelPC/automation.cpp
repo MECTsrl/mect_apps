@@ -70,6 +70,8 @@ void do_write_query()
 
             fprintf(stderr, "doWrite_theLED(%d)\n", ivalue);
             doWrite_theLED(ivalue);
+
+            doWrite_HTML5_writes(HTML5_writes + 1);
         }
     }
     fclose(file_query);
