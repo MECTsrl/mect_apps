@@ -24,9 +24,6 @@ file=Slow.st
 
 [Libs]
 file=$(LIBDIR)\ATCM_IEC1131_3.4cl
-file=$(LIBDIR)\ATCM_Utility.4cl
-file=$(LIBDIR)\ATCM_System2.4cl
-file=$(LIBDIR)\ATCM_System.4cl
 
 [Targets]
 file=TPAC.ATHW119

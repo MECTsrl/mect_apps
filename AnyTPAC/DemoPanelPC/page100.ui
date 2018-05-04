@@ -573,7 +573,7 @@ background-color: rgb(0, 0, 0);
   <widget class="ATCMbutton" name="atcmButton_menu">
    <property name="geometry">
     <rect>
-     <x>419</x>
+     <x>420</x>
      <y>242</y>
      <width>60</width>
      <height>30</height>
