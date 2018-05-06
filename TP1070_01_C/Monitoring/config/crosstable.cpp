@@ -357,24 +357,31 @@ int XX_DigOut_8 = 0;
 
 
 /*
- * Variable MPT91_Scala	[ 8 ]
+ * Variable MPT91_Scala	[ 0x0008 ]
  */
 
 int MPT91_Scala = 0;
 
 
 /*
- * Variable MPT91_Temperatura	[ 100 ]
+ * Variable MPT91_Temperatura	[ 0x0100 ]
  */
 
 int16_t MPT91_Temperatura = 0;
 
 
 /*
- * Variable MPT91_Set_point	[ 101 ]
+ * Variable MPT91_Set_point	[ 0x0101 ]
  */
 
 int16_t MPT91_Set_point = 0;
+
+
+/*
+ * Variable MPT91_Isteresi_OnOff	[ 0x010B ]
+ */
+
+int16_t MPT91_Isteresi_OnOff = 0;
 
 
 /*
@@ -2828,6 +2835,24 @@ int
 getStatus_MPT91_Set_point(void)
 {
 	return getStatus(ID_MPT91_Set_point);
+}
+
+int
+doWrite_MPT91_Isteresi_OnOff(int16_t value)
+{
+	return doWrite(ID_MPT91_Isteresi_OnOff, &value);
+}
+
+int
+addWrite_MPT91_Isteresi_OnOff(int16_t value)
+{
+	return addWrite(ID_MPT91_Isteresi_OnOff, &value);
+}
+
+int
+getStatus_MPT91_Isteresi_OnOff(void)
+{
+	return getStatus(ID_MPT91_Isteresi_OnOff);
 }
 
 int
@@ -6882,6 +6907,7 @@ update_all(void)
 	retval += readFromDb(ID_MPT91_Scala, &MPT91_Scala);
 	retval += readFromDb(ID_MPT91_Temperatura, &MPT91_Temperatura);
 	retval += readFromDb(ID_MPT91_Set_point, &MPT91_Set_point);
+	retval += readFromDb(ID_MPT91_Isteresi_OnOff, &MPT91_Isteresi_OnOff);
 	retval += readFromDb(ID_RTU0_TYPE_PORT, &RTU0_TYPE_PORT);
 	retval += readFromDb(ID_RTU0_BAUDRATE, &RTU0_BAUDRATE);
 	retval += readFromDb(ID_RTU0_STATUS, &RTU0_STATUS);

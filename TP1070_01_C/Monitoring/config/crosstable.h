@@ -317,22 +317,28 @@ int addWrite_XX_DigOut_8(int value);
 int getStatus_XX_DigOut_8(void);
 
 #define ID_MPT91_Scala 300
-extern int MPT91_Scala;	/* 8 */
+extern int MPT91_Scala;	/* 0x0008 */
 int doWrite_MPT91_Scala(int value);
 int addWrite_MPT91_Scala(int value);
 int getStatus_MPT91_Scala(void);
 
 #define ID_MPT91_Temperatura 301
-extern int16_t MPT91_Temperatura;	/* 100 */
+extern int16_t MPT91_Temperatura;	/* 0x0100 */
 int doWrite_MPT91_Temperatura(int16_t value);
 int addWrite_MPT91_Temperatura(int16_t value);
 int getStatus_MPT91_Temperatura(void);
 
 #define ID_MPT91_Set_point 302
-extern int16_t MPT91_Set_point;	/* 101 */
+extern int16_t MPT91_Set_point;	/* 0x0101 */
 int doWrite_MPT91_Set_point(int16_t value);
 int addWrite_MPT91_Set_point(int16_t value);
 int getStatus_MPT91_Set_point(void);
+
+#define ID_MPT91_Isteresi_OnOff 303
+extern int16_t MPT91_Isteresi_OnOff;	/* 0x010B */
+int doWrite_MPT91_Isteresi_OnOff(int16_t value);
+int addWrite_MPT91_Isteresi_OnOff(int16_t value);
+int getStatus_MPT91_Isteresi_OnOff(void);
 
 #define ID_RTU0_TYPE_PORT 5000
 extern u_int32_t RTU0_TYPE_PORT;

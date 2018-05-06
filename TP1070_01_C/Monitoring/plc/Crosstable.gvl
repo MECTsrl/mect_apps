@@ -46,9 +46,10 @@ VAR_GLOBAL
 	XX_DigOut_6 AT %QX0.976.0:BOOL;	(* Digital output 6 value MPNC005 *)
 	XX_DigOut_7 AT %QX0.980.0:BOOL;	(* Digital output 7 value MPNC005 *)
 	XX_DigOut_8 AT %QX0.984.0:BOOL;	(* Digital output 8 value MPNC005 *)
-	MPT91_Scala AT %QX0.1200.0:BOOL;	(* 8 *)
-	MPT91_Temperatura AT %IW0.1204:INT;	(* 100 *)
-	MPT91_Set_point AT %QW0.1208:INT;	(* 101 *)
+	MPT91_Scala AT %QX0.1200.0:BOOL;	(* 0x0008 *)
+	MPT91_Temperatura AT %IW0.1204:INT;	(* 0x0100 *)
+	MPT91_Set_point AT %QW0.1208:INT;	(* 0x0101 *)
+	MPT91_Isteresi_OnOff AT %QW0.1212:INT;	(* 0x010B *)
 	RTU0_TYPE_PORT AT %ID0.20000:UDINT;
 	RTU0_BAUDRATE AT %ID0.20004:UDINT;
 	RTU0_STATUS AT %ID0.20008:UDINT;
