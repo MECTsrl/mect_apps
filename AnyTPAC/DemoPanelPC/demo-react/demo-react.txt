@@ -1,5 +1,5 @@
 
-$ create-react-app demo-react
+$ npx create-react-app demo-react
 $ cd demo-react
 $ npm install axios
 

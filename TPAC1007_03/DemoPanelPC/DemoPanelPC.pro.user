@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 2.7.84, 2018-05-06T19:14:39. -->
+<!-- Written by QtCreator 2.7.84, 2018-05-06T20:15:52. -->
 <qtcreator>
  <data>
   <variable>ProjectExplorer.Project.ActiveTarget</variable>
@@ -113,7 +113,7 @@
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4BuildConfiguration</value>
     <value type="int" key="Qt4ProjectManager.Qt4BuildConfiguration.BuildConfiguration">2</value>
-    <value type="QString" key="Qt4ProjectManager.Qt4BuildConfiguration.BuildDirectory">C:/mect_apps/AnyTPAC/DemoPanelPC</value>
+    <value type="QString" key="Qt4ProjectManager.Qt4BuildConfiguration.BuildDirectory">C:/mect_apps/TPAC1007_03/DemoPanelPC</value>
     <value type="bool" key="Qt4ProjectManager.Qt4BuildConfiguration.UseShadowBuild">false</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.BuildConfiguration.1">
@@ -172,7 +172,7 @@
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4BuildConfiguration</value>
     <value type="int" key="Qt4ProjectManager.Qt4BuildConfiguration.BuildConfiguration">0</value>
-    <value type="QString" key="Qt4ProjectManager.Qt4BuildConfiguration.BuildDirectory">C:/mect_apps/AnyTPAC/DemoPanelPC</value>
+    <value type="QString" key="Qt4ProjectManager.Qt4BuildConfiguration.BuildDirectory">C:/mect_apps/TPAC1007_03/DemoPanelPC</value>
     <value type="bool" key="Qt4ProjectManager.Qt4BuildConfiguration.UseShadowBuild">false</value>
    </valuemap>
    <value type="int" key="ProjectExplorer.Target.BuildConfigurationCount">2</value>
@@ -196,11 +196,11 @@
       <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
       <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">RemoteLinux.DirectUploadStep</value>
       <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedFiles">
-       <value type="QString">C:/mect_apps/AnyTPAC/DemoPanelPC/config/system.ini</value>
-       <value type="QString">C:/mect_apps/AnyTPAC/DemoPanelPC/config/trend1.csv</value>
-       <value type="QString">C:/mect_apps/AnyTPAC/DemoPanelPC/hmi</value>
-       <value type="QString">C:/mect_apps/AnyTPAC/DemoPanelPC/config/Crosstable.csv</value>
-       <value type="QString">C:/mect_apps/AnyTPAC/DemoPanelPC/config/splash.png</value>
+       <value type="QString">C:/mect_apps/TPAC1007_03/DemoPanelPC/hmi</value>
+       <value type="QString">C:/mect_apps/TPAC1007_03/DemoPanelPC/config/trend1.csv</value>
+       <value type="QString">C:/mect_apps/TPAC1007_03/DemoPanelPC/config/Crosstable.csv</value>
+       <value type="QString">C:/mect_apps/TPAC1007_03/DemoPanelPC/config/system.ini</value>
+       <value type="QString">C:/mect_apps/TPAC1007_03/DemoPanelPC/config/splash.png</value>
       </valuelist>
       <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedHosts">
        <value type="QString">192.168.5.211</value>
@@ -210,9 +210,9 @@
        <value type="QString">192.168.5.211</value>
       </valuelist>
       <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedRemotePaths">
-       <value type="QString">/local/etc/sysconfig</value>
-       <value type="QString">/local/data/customtrend</value>
        <value type="QString">/local/root</value>
+       <value type="QString">/local/data/customtrend</value>
+       <value type="QString">/local/etc/sysconfig</value>
        <value type="QString">/local/etc/sysconfig</value>
        <value type="QString">/local/etc/sysconfig/img</value>
       </valuelist>
@@ -224,11 +224,11 @@
        <value type="QString">C:/Qt485/imx28/rootfs</value>
       </valuelist>
       <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedTimes">
-       <value type="QDateTime">2018-04-19T10:01:40</value>
-       <value type="QDateTime">2018-04-19T10:01:40</value>
-       <value type="QDateTime">2018-04-19T10:01:41</value>
-       <value type="QDateTime">2018-04-19T10:01:40</value>
-       <value type="QDateTime">2018-04-19T10:01:40</value>
+       <value type="QDateTime">2018-05-06T19:53:07</value>
+       <value type="QDateTime">2018-05-06T19:53:06</value>
+       <value type="QDateTime">2018-05-06T19:53:06</value>
+       <value type="QDateTime">2018-05-06T19:53:06</value>
+       <value type="QDateTime">2018-05-06T19:53:06</value>
       </valuelist>
       <value type="bool" key="RemoteLinux.GenericDirectUploadStep.Incremental">false</value>
      </valuemap>
@@ -280,7 +280,7 @@
     <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">DemoPanelPC (on Remote Device)</value>
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">RemoteLinuxRunConfiguration:C:/mect_apps/AnyTPAC/DemoPanelPC/DemoPanelPC.pro</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">RemoteLinuxRunConfiguration:C:/mect_apps/TPAC1007_03/DemoPanelPC/DemoPanelPC.pro</value>
     <value type="QString" key="Qt4ProjectManager.MaemoRunConfiguration.Arguments"></value>
     <value type="QString" key="Qt4ProjectManager.MaemoRunConfiguration.ProFile">DemoPanelPC.pro</value>
     <value type="QString" key="RemoteLinux.RunConfig.AlternateRemoteExecutable"></value>
