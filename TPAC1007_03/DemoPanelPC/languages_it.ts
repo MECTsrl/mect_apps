@@ -9,118 +9,118 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="101"/>
-        <location filename="page100.ui" line="206"/>
-        <location filename="page100.ui" line="519"/>
-        <location filename="page100.ui" line="592"/>
+        <location filename="page100.ui" line="69"/>
+        <source>VNC</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page100.ui" line="100"/>
+        <location filename="page100.ui" line="205"/>
+        <location filename="page100.ui" line="518"/>
+        <location filename="page100.ui" line="591"/>
         <source>ATCMlabel widget</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="69"/>
-        <source>VNC
-Android</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page100.ui" line="95"/>
-        <location filename="page100.ui" line="200"/>
-        <location filename="page100.ui" line="586"/>
+        <location filename="page100.ui" line="94"/>
+        <location filename="page100.ui" line="199"/>
+        <location filename="page100.ui" line="585"/>
         <source>123456</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="98"/>
-        <location filename="page100.ui" line="104"/>
+        <location filename="page100.ui" line="97"/>
+        <location filename="page100.ui" line="103"/>
         <source>HTML5_writes</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="174"/>
-        <source>Modbus/TCP
-Android</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page100.ui" line="430"/>
-        <location filename="page100.ui" line="442"/>
+        <location filename="page100.ui" line="429"/>
+        <location filename="page100.ui" line="441"/>
         <source>theBUTTON</source>
         <oldsource>theLED</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="203"/>
-        <location filename="page100.ui" line="209"/>
+        <location filename="page100.ui" line="202"/>
+        <location filename="page100.ui" line="208"/>
         <source>TCPS_READS</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="279"/>
+        <location filename="page100.ui" line="173"/>
+        <source>Modbus/TCP
+Android Studio</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page100.ui" line="278"/>
         <source>HTML5
-Android</source>
+ReactJS</source>
+        <oldsource>HTML5</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="321"/>
+        <location filename="page100.ui" line="320"/>
         <source>Eng./TCP
-Android</source>
+Qt for Android</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="350"/>
-        <location filename="page100.ui" line="433"/>
-        <location filename="page100.ui" line="686"/>
+        <location filename="page100.ui" line="349"/>
+        <location filename="page100.ui" line="432"/>
+        <location filename="page100.ui" line="685"/>
         <source>ATCMbutton widget</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="393"/>
-        <location filename="page100.ui" line="396"/>
+        <location filename="page100.ui" line="392"/>
+        <location filename="page100.ui" line="395"/>
         <source>menu</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="479"/>
+        <location filename="page100.ui" line="478"/>
         <source>red off</source>
         <oldsource>off</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="482"/>
+        <location filename="page100.ui" line="481"/>
         <source>red ON</source>
         <oldsource>ON</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="513"/>
+        <location filename="page100.ui" line="512"/>
         <source>4000111000</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="516"/>
-        <location filename="page100.ui" line="522"/>
+        <location filename="page100.ui" line="515"/>
+        <location filename="page100.ui" line="521"/>
         <source>theHEARTBEAT</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="589"/>
-        <location filename="page100.ui" line="595"/>
+        <location filename="page100.ui" line="588"/>
+        <location filename="page100.ui" line="594"/>
         <source>TCPS_WRITES</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="683"/>
-        <location filename="page100.ui" line="695"/>
+        <location filename="page100.ui" line="682"/>
+        <location filename="page100.ui" line="694"/>
         <source>theLED</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="732"/>
+        <location filename="page100.ui" line="731"/>
         <source>blu off</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="735"/>
+        <location filename="page100.ui" line="734"/>
         <source>blu ON</source>
         <translation type="unfinished"></translation>
     </message>

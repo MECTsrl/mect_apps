@@ -30,9 +30,9 @@ void update_all_json()
                     "\n"
                     "{\n");
 
-            fprintf(file_json, "\"theHEARTBEAT\" :\"%u\",\n", theHEARTBEAT);
-            fprintf(file_json, "\"theLED\"       :\"%d\",\n", theLED);
-            fprintf(file_json, "\"theBUTTON\"    :\"%d\",\n", theBUTTON);
+            fprintf(file_json, "\"theHEARTBEAT\": %u,\n", theHEARTBEAT);
+            fprintf(file_json, "\"theLED\": %d,\n", theLED);
+            fprintf(file_json, "\"theBUTTON\": %d\n", theBUTTON); // no comma after the last one!!
 
             fprintf(file_json,"}\n");
             fclose(file_json);

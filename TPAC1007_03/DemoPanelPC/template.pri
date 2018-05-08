@@ -32,7 +32,14 @@ include(./common.pri)
 TYPE = "TPAC1007_03"
 
 # display size
-MODEL = "<width>480</width><height>272</height>"
+MODEL = "<width>480</width><height>270</height>"
+
+# 1.78:1
+equals(MODEL, "<width>480</width><height>270</height>") {
+    DEFINES+=WIDTH=480
+    DEFINES+=HEIGHT=270
+    DEFINES+=ROTATION=0
+}
 
 equals(MODEL, "<width>320</width><height>240</height>") {
     DEFINES+=WIDTH=320
