@@ -76,7 +76,13 @@
     <message>
         <location filename="page100.ui" line="388"/>
         <location filename="page100.ui" line="400"/>
-        <source>PLC_DigIn_1</source>
+        <source>theBUTTON</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page100.ui" line="578"/>
+        <location filename="page100.ui" line="590"/>
+        <source>theLED</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -98,12 +104,6 @@
         <location filename="page100.ui" line="474"/>
         <location filename="page100.ui" line="480"/>
         <source>theHEARTBEAT</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page100.ui" line="578"/>
-        <location filename="page100.ui" line="590"/>
-        <source>PLC_DigOut_2</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

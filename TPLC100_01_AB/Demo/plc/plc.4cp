@@ -16,9 +16,6 @@ file=Resource1.cst
 
 [Classes.Programs]
 file=Init.st
-file=Alarms.st
-file=Events.st
-file=Fast.st
 file=Normal.st
 file=Slow.st
 

@@ -31,7 +31,28 @@
  * Variable theHEARTBEAT
  */
 
-int32_t theHEARTBEAT = 0;
+u_int32_t theHEARTBEAT = 0;
+
+
+/*
+ * Variable theLED
+ */
+
+int16_t theLED = 0;
+
+
+/*
+ * Variable theBUTTON
+ */
+
+int16_t theBUTTON = 0;
+
+
+/*
+ * Variable HTML5_writes
+ */
+
+u_int32_t HTML5_writes = 0;
 
 
 /*
@@ -2239,13 +2260,13 @@ u_int8_t PLC_ALARM_VOLUME = 0;
 u_int32_t PLC_BUZZER = 0;
 
 int
-doWrite_theHEARTBEAT(int32_t value)
+doWrite_theHEARTBEAT(u_int32_t value)
 {
 	return doWrite(ID_theHEARTBEAT, &value);
 }
 
 int
-addWrite_theHEARTBEAT(int32_t value)
+addWrite_theHEARTBEAT(u_int32_t value)
 {
 	return addWrite(ID_theHEARTBEAT, &value);
 }
@@ -2254,6 +2275,60 @@ int
 getStatus_theHEARTBEAT(void)
 {
 	return getStatus(ID_theHEARTBEAT);
+}
+
+int
+doWrite_theLED(int16_t value)
+{
+	return doWrite(ID_theLED, &value);
+}
+
+int
+addWrite_theLED(int16_t value)
+{
+	return addWrite(ID_theLED, &value);
+}
+
+int
+getStatus_theLED(void)
+{
+	return getStatus(ID_theLED);
+}
+
+int
+doWrite_theBUTTON(int16_t value)
+{
+	return doWrite(ID_theBUTTON, &value);
+}
+
+int
+addWrite_theBUTTON(int16_t value)
+{
+	return addWrite(ID_theBUTTON, &value);
+}
+
+int
+getStatus_theBUTTON(void)
+{
+	return getStatus(ID_theBUTTON);
+}
+
+int
+doWrite_HTML5_writes(u_int32_t value)
+{
+	return doWrite(ID_HTML5_writes, &value);
+}
+
+int
+addWrite_HTML5_writes(u_int32_t value)
+{
+	return addWrite(ID_HTML5_writes, &value);
+}
+
+int
+getStatus_HTML5_writes(void)
+{
+	return getStatus(ID_HTML5_writes);
 }
 
 int
@@ -7933,6 +8008,9 @@ update_all(void)
 	int retval = 0;
 
 	retval += readFromDb(ID_theHEARTBEAT, &theHEARTBEAT);
+	retval += readFromDb(ID_theLED, &theLED);
+	retval += readFromDb(ID_theBUTTON, &theBUTTON);
+	retval += readFromDb(ID_HTML5_writes, &HTML5_writes);
 	retval += readFromDb(ID_VAR1, &VAR1);
 	retval += readFromDb(ID_VAR2, &VAR2);
 	retval += readFromDb(ID_VAR3, &VAR3);

@@ -34,25 +34,43 @@ extern "C" {
 #include "cross_table_utility.h"
 
 
-#define ID_theHEARTBEAT 200
-extern int32_t theHEARTBEAT;
-int doWrite_theHEARTBEAT(int32_t value);
-int addWrite_theHEARTBEAT(int32_t value);
+#define ID_theHEARTBEAT 193
+extern u_int32_t theHEARTBEAT;
+int doWrite_theHEARTBEAT(u_int32_t value);
+int addWrite_theHEARTBEAT(u_int32_t value);
 int getStatus_theHEARTBEAT(void);
 
-#define ID_VAR1 201
+#define ID_theLED 194
+extern int16_t theLED;
+int doWrite_theLED(int16_t value);
+int addWrite_theLED(int16_t value);
+int getStatus_theLED(void);
+
+#define ID_theBUTTON 195
+extern int16_t theBUTTON;
+int doWrite_theBUTTON(int16_t value);
+int addWrite_theBUTTON(int16_t value);
+int getStatus_theBUTTON(void);
+
+#define ID_HTML5_writes 197
+extern u_int32_t HTML5_writes;
+int doWrite_HTML5_writes(u_int32_t value);
+int addWrite_HTML5_writes(u_int32_t value);
+int getStatus_HTML5_writes(void);
+
+#define ID_VAR1 199
 extern u_int32_t VAR1;
 int doWrite_VAR1(u_int32_t value);
 int addWrite_VAR1(u_int32_t value);
 int getStatus_VAR1(void);
 
-#define ID_VAR2 202
+#define ID_VAR2 200
 extern u_int32_t VAR2;
 int doWrite_VAR2(u_int32_t value);
 int addWrite_VAR2(u_int32_t value);
 int getStatus_VAR2(void);
 
-#define ID_VAR3 203
+#define ID_VAR3 201
 extern u_int32_t VAR3;
 int doWrite_VAR3(u_int32_t value);
 int addWrite_VAR3(u_int32_t value);

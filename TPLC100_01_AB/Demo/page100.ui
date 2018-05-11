@@ -292,7 +292,7 @@ background-color: rgb(0, 0, 0);
      <x>360</x>
      <y>230</y>
      <width>120</width>
-     <height>42</height>
+     <height>40</height>
     </rect>
    </property>
    <property name="font">
@@ -385,7 +385,7 @@ background-color: rgb(0, 0, 0);
     <bool>false</bool>
    </property>
    <property name="toolTip">
-    <string>PLC_DigIn_1</string>
+    <string>theBUTTON</string>
    </property>
    <property name="whatsThis">
     <string>ATCMbutton widget</string>
@@ -397,7 +397,7 @@ background-color: rgb(0, 0, 0);
     <string/>
    </property>
    <property name="statusvar">
-    <string>PLC_DigIn_1</string>
+    <string>theBUTTON</string>
    </property>
    <property name="viewStatus">
     <bool>false</bool>
@@ -575,7 +575,7 @@ background-color: rgb(0, 0, 0);
     <bool>false</bool>
    </property>
    <property name="toolTip">
-    <string>PLC_DigOut_2</string>
+    <string>theLED</string>
    </property>
    <property name="whatsThis">
     <string>ATCMbutton widget</string>
@@ -587,7 +587,7 @@ background-color: rgb(0, 0, 0);
     <string/>
    </property>
    <property name="statusvar">
-    <string>PLC_DigOut_2</string>
+    <string>theLED</string>
    </property>
    <property name="viewStatus">
     <bool>false</bool>
