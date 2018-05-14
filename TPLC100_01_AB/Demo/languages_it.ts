@@ -31,14 +31,6 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="73"/>
-        <location filename="page100.ui" line="157"/>
-        <location filename="page100.ui" line="241"/>
-        <source> kW</source>
-        <oldsource> s</oldsource>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="page100.ui" line="79"/>
         <location filename="page100.ui" line="82"/>
         <location filename="page100.ui" line="163"/>
@@ -83,6 +75,13 @@
         <location filename="page100.ui" line="578"/>
         <location filename="page100.ui" line="590"/>
         <source>theLED</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page100.ui" line="665"/>
+        <location filename="page100.ui" line="697"/>
+        <location filename="page100.ui" line="729"/>
+        <source>kWh</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
