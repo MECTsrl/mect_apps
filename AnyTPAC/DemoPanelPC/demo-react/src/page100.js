@@ -51,7 +51,8 @@ class Page100 extends Component {
                 thisPage.setState({
                     theHEARTBEAT : tmpHEARTBEAT,
                     theLED : tmpLED,
-                    theBUTTON : tmpBUTTON
+                    theBUTTON : tmpBUTTON,
+                    msg: "update_all OK"
                 });
             })
             .catch(function (error) {
@@ -59,7 +60,7 @@ class Page100 extends Component {
                     theHEARTBEAT: -1,
                     theLED: 0,
                     theBUTTON: 0,
-                    msg: "update_all OK "
+                    msg: "update_all ERROR"
                 });
             });
   }
@@ -97,14 +98,16 @@ class Page100 extends Component {
         //            <ol>{renderValues}</ol>
 
         return <div>
-        <p><video controls preload="auto" autoplay="autoplay" loop width="100%" muted>
+        <p className="p-barra">
+        &nbsp; <button className="demo">HTML5 React JS</button>
+        &nbsp; <button className="heartbeat">{this.state.theHEARTBEAT}</button>
+        &nbsp; <button className={(this.state.theBUTTON)?"button-1":"button-0"}>{(this.state.theBUTTON)?"red ON":"red off"}</button>
+        &nbsp; <button className={(this.state.theLED)?"led-1":"led-0"} onClick={this.on_INPUT_clicked}> {(this.state.theLED)?"blu ON":"blu off"} </button>
+        &nbsp; {this.state.msg}
+        <br/><video controls preload="auto" autoplay="true" loop width="100%" muted>
             <source src="/webmi/video.mp4" type="video/mp4"/>
             Your browser does not support the video tag.
-        </video></p>
-        <p className="p-barra">
-         &nbsp; <button className="heartbeat">{this.state.theHEARTBEAT}</button>
-         &nbsp; <button className={(this.state.theBUTTON)?"button-1":"button-0"}>{(this.state.theBUTTON)?"red ON":"red off"}</button>
-         &nbsp; <button className={(this.state.theLED)?"led-1":"led-0"} onClick={this.on_INPUT_clicked}> {(this.state.theLED)?"blu ON":"blu off"} </button>
+        </video>
         </p>
         </div>;
     }
