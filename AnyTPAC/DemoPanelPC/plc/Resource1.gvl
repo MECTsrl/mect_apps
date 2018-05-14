@@ -1,7 +1,0 @@
-(* Global variable file *)
-VAR_GLOBAL
-
-	extraVariable : int;
-
-END_VAR
-
