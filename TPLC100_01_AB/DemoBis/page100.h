@@ -11,6 +11,7 @@
 #define PAGE100_H
 
 #include "pagebrowser.h"
+#include <QStringList>
 
 namespace Ui {
 class page100;
@@ -31,8 +32,9 @@ private slots:
     
 private:
     Ui::page100 *ui;
-    int slide;
+    int slideNo;
     int tempo_ds;
+    QStringList lstSlides;
 };
 
 #endif // PAGE100_H

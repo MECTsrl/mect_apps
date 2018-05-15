@@ -14,6 +14,8 @@
 #include "ui_page100.h"
 #include "crosstable.h"
 
+#include <QString>
+
 /**
  * @brief this macro is used to set the PAGE100 style.
  * the syntax is html stylesheet-like
@@ -44,8 +46,23 @@ page100::page100(QWidget *parent) :
     SET_PAGE100_STYLE();
     translateFontSize(this);
 
-    slide = 0;
+    slideNo = -1;
     tempo_ds = 0;
+    lstSlides.clear();
+    lstSlides
+            << QString::fromAscii("01_GRUPPO")
+            << QString::fromAscii("02_STARTER KIT")
+            << QString::fromAscii("03_TPAC1007")
+            << QString::fromAscii("04_TPAC1008")
+            << QString::fromAscii("05_TP1043")
+            << QString::fromAscii("06_TP1070")
+            << QString::fromAscii("07_TPLC050")
+            << QString::fromAscii("08_TPLC100")
+            << QString::fromAscii("09_TPLC050_020_030")
+            << QString::fromAscii("10_MPNC005_020_030")
+        ;
+
+
 }
 
 /**
@@ -83,11 +100,11 @@ void page100::updateData()
 
     tempo_ds += 5;
     if (tempo_ds >= 50) {
-        slide = (slide + 1) % 5;
+        slideNo = (++slideNo) % lstSlides.count();
         tempo_ds = 0;
 //        ui->labelSlideShow->setText(QString(" Slide #%1 ").arg(slide + 1));
         ui->labelSlideShow->setText("");
-        ui->labelSlideShow->setStyleSheet(QString("border-image: url(:/icons/icons/%1.png);").arg(slide + 1));
+        ui->labelSlideShow->setStyleSheet(QString("border-image: url(:/icons/icons/%1.png);").arg(lstSlides[slideNo]));
     }
 }
 
