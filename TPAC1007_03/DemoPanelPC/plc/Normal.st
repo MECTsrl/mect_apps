@@ -7,7 +7,6 @@ VAR
 	
 END_VAR
 
-	theHEARTBEAT := theHEARTBEAT + 1; 
 	if PLC_DigIn_1 then
 		theBUTTON := 1;
 	else

@@ -170,8 +170,7 @@ color: rgb(255, 255, 255);</string>
     <number>1</number>
    </property>
    <property name="text">
-    <string>Modbus/TCP
-Android Studio</string>
+    <string>Modbus/TCP</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignHCenter|Qt::AlignTop</set>
@@ -275,8 +274,7 @@ color: rgb(255, 255, 255);</string>
     <number>1</number>
    </property>
    <property name="text">
-    <string>HTML5
-ReactJS</string>
+    <string>HTML5/React</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignHCenter|Qt::AlignTop</set>
@@ -317,8 +315,7 @@ color: rgb(255, 255, 255);</string>
     <number>1</number>
    </property>
    <property name="text">
-    <string>Eng./TCP
-Qt for Android</string>
+    <string>PLC/TCP</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignHCenter|Qt::AlignTop</set>
