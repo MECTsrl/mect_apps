@@ -1,0 +1,2 @@
+The Modbus/TCP Android demo application is in:
+	https://github.com/MECTsrl/Modbus4Android/tree/sps2018
