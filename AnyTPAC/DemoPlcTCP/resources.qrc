@@ -2,10 +2,15 @@
     <qresource prefix="/icons">
         <file>resources/LedOff.png</file>
         <file>resources/LedOn.png</file>
-        <file>resources/1.png</file>
-        <file>resources/2.png</file>
-        <file>resources/3.png</file>
-        <file>resources/4.png</file>
-        <file>resources/5.png</file>
+        <file>resources/01_GRUPPO.png</file>
+        <file>resources/02_STARTER KIT.png</file>
+        <file>resources/03_TPAC1007.png</file>
+        <file>resources/04_TPAC1008.png</file>
+        <file>resources/05_TP1043.png</file>
+        <file>resources/06_TP1070.png</file>
+        <file>resources/07_TPLC050.png</file>
+        <file>resources/08_TPLC100.png</file>
+        <file>resources/09_TPLC050_020_030.png</file>
+        <file>resources/10_MPNC005_020_030.png</file>
     </qresource>
 </RCC>

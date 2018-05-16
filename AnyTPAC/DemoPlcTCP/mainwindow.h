@@ -32,6 +32,7 @@ private:
     QMediaPlayer *videoPlayer;
     QVideoWidget *videoWidget;
 
+    QStringList lstSlides;
     int slide;
     int tempo_ds;
 };
