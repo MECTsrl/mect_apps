@@ -1,0 +1,15 @@
+<RCC>
+    <qresource prefix="/icons">
+        <file>icons/01_GRUPPO.png</file>
+        <file>icons/02_STARTER KIT.png</file>
+        <file>icons/03_TPAC1007.png</file>
+        <file>icons/04_TPAC1008.png</file>
+        <file>icons/05_TP1043.png</file>
+        <file>icons/06_TP1070.png</file>
+        <file>icons/07_TPLC050.png</file>
+        <file>icons/08_TPLC100.png</file>
+        <file>icons/09_TPLC050_020_030.png</file>
+        <file>icons/10_MPNC005_020_030.png</file>
+    </qresource>
+    <qresource prefix="/fonts"/>
+</RCC>
