@@ -17,8 +17,9 @@
 
 void printVncDisplayString(char * vncString)
 {
-    sprintf(vncString, "Multi: VNC:0:size=%dx%d Transformed:rot%d", WIDTH, HEIGHT, ROTATION);
-    userPageList 
+//  sprintf(vncString, "Multi: VNC:0:size=%dx%d Transformed:rot%d", WIDTH, HEIGHT, ROTATION);
+    sprintf(vncString, "VNC:0:size=%dx%d", WIDTH, HEIGHT);
+    userPageList
             << "system_ini"
             << "page100"
                /* add here the label of the new page */

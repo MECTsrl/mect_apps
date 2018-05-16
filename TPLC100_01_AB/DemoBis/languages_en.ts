@@ -25,50 +25,50 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="135"/>
-        <location filename="page100.ui" line="252"/>
+        <location filename="page100.ui" line="141"/>
+        <location filename="page100.ui" line="287"/>
         <source>ATCMbutton widget</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="132"/>
-        <location filename="page100.ui" line="144"/>
+        <location filename="page100.ui" line="284"/>
+        <location filename="page100.ui" line="296"/>
         <source>theBUTTON</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="181"/>
+        <location filename="page100.ui" line="333"/>
         <source>red off</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="184"/>
+        <location filename="page100.ui" line="336"/>
         <source>red ON</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="249"/>
-        <location filename="page100.ui" line="261"/>
+        <location filename="page100.ui" line="138"/>
+        <location filename="page100.ui" line="150"/>
         <source>theLED</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="298"/>
+        <location filename="page100.ui" line="187"/>
         <source>blu off</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="301"/>
+        <location filename="page100.ui" line="190"/>
         <source>blu ON</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="332"/>
+        <location filename="page100.ui" line="221"/>
         <source>SlideShow</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="364"/>
+        <location filename="page100.ui" line="253"/>
         <source>VNC</source>
         <translation type="unfinished"></translation>
     </message>

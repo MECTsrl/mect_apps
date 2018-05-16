@@ -46,6 +46,8 @@ page100::page100(QWidget *parent) :
     SET_PAGE100_STYLE();
     translateFontSize(this);
 
+    ui->atcmButton_theBUTTON->setEnabled(false);
+
     slideNo = -1;
     tempo_ds = 0;
     lstSlides.clear();
@@ -100,7 +102,10 @@ void page100::updateData()
 
     tempo_ds += 5;
     if (tempo_ds >= 50) {
-        slideNo = (++slideNo) % lstSlides.count();
+        ++slideNo;
+        if (slideNo >= lstSlides.count()) {
+            slideNo = 0;
+        }
         tempo_ds = 0;
 //        ui->labelSlideShow->setText(QString(" Slide #%1 ").arg(slide + 1));
         ui->labelSlideShow->setText("");

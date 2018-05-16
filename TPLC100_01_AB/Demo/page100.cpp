@@ -43,6 +43,8 @@ page100::page100(QWidget *parent) :
     /* set the style described into the macro SET_PAGE100_STYLE */
     SET_PAGE100_STYLE();
     translateFontSize(this);
+
+    ui->atcmButton_theBUTTON->setEnabled(false);
 }
 
 /**
