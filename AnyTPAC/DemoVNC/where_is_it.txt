@@ -1,0 +1,2 @@
+The MECT_VNC Android demo application is in:
+	https://github.com/MECTsrl/remote-desktop-clients/tree/v4.0.0_mect
