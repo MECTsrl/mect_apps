@@ -9,7 +9,7 @@ void setup(void)
     doWrite_XX_AnInConf_1(0x07);// [°C] PT100R
     doWrite_XX_AnInConf_2(0x07);// [°C] PT100R
 
-    doWrite_XX_AnInConf_A(0x0777);// [°C] PT100R
+    doWrite_XX_AnInConf_A(0x7777);// [°C] PT100R
     doWrite_XX_AnInConf_B(0x0777);// [°C] PT100R
     doWrite_XX_AnInConf_C(0x0777);// [°C] PT100R
 

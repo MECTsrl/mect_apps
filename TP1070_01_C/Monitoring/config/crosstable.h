@@ -340,6 +340,84 @@ int doWrite_MPT91_Isteresi_OnOff(int16_t value);
 int addWrite_MPT91_Isteresi_OnOff(int16_t value);
 int getStatus_MPT91_Isteresi_OnOff(void);
 
+#define ID_SystemVoltage_0 1000
+extern float SystemVoltage_0;	/* 0x0A 0x100C Tensione in V (PRINCIPALE) */
+int doWrite_SystemVoltage_0(float value);
+int addWrite_SystemVoltage_0(float value);
+int getStatus_SystemVoltage_0(void);
+
+#define ID_SysPowerFactor_0 1001
+extern float SysPowerFactor_0;	/* 0x0A 0x101E Fattore di Potenza 0 (PRINCIPALE) */
+int doWrite_SysPowerFactor_0(float value);
+int addWrite_SysPowerFactor_0(float value);
+int getStatus_SysPowerFactor_0(void);
+
+#define ID_SysActivePower_0 1002
+extern float SysActivePower_0;	/* 0x0A 0x1026 Potenza Attiva 0 in W (PRINCIPALE) */
+int doWrite_SysActivePower_0(float value);
+int addWrite_SysActivePower_0(float value);
+int getStatus_SysActivePower_0(void);
+
+#define ID_SysActivePower_1 1003
+extern float SysActivePower_1;	/* 0x0B 0x1026 Potenza Attiva 0 in W (TOTOVOLTAICO) */
+int doWrite_SysActivePower_1(float value);
+int addWrite_SysActivePower_1(float value);
+int getStatus_SysActivePower_1(void);
+
+#define ID_SysActivePower_2 1004
+extern float SysActivePower_2;	/* 0x0C 0x1026 Potenza Attiva 0 in W (ESTERNI) */
+int doWrite_SysActivePower_2(float value);
+int addWrite_SysActivePower_2(float value);
+int getStatus_SysActivePower_2(void);
+
+#define ID_SysActivePower_3 1005
+extern float SysActivePower_3;	/* 0x0D 0x1026 Potenza Attiva 0 in W (PIANO SOPRA) */
+int doWrite_SysActivePower_3(float value);
+int addWrite_SysActivePower_3(float value);
+int getStatus_SysActivePower_3(void);
+
+#define ID_SysActivePower_4 1006
+extern float SysActivePower_4;	/* 0x0E 0x1026 Potenza Attiva 0 in W (PIANO TERRA) */
+int doWrite_SysActivePower_4(float value);
+int addWrite_SysActivePower_4(float value);
+int getStatus_SysActivePower_4(void);
+
+#define ID_SysActivePower_5 1007
+extern float SysActivePower_5;	/* 0x0F 0x1026 Potenza Attiva 0 in W (PIANO SOTTO) */
+int doWrite_SysActivePower_5(float value);
+int addWrite_SysActivePower_5(float value);
+int getStatus_SysActivePower_5(void);
+
+#define ID_SysActivePower_6 1008
+extern float SysActivePower_6;	/* 0x10 0x1026 Potenza Attiva 0 in W (AUTO ELETTRICA) */
+int doWrite_SysActivePower_6(float value);
+int addWrite_SysActivePower_6(float value);
+int getStatus_SysActivePower_6(void);
+
+#define ID_SysActivePower_7 1009
+extern float SysActivePower_7;	/* 0x11 0x1026 Potenza Attiva 0 in W (DEUMIDIFICATORE) */
+int doWrite_SysActivePower_7(float value);
+int addWrite_SysActivePower_7(float value);
+int getStatus_SysActivePower_7(void);
+
+#define ID_SysActivePower_8 1010
+extern float SysActivePower_8;	/* 0x12 0x1026 Potenza Attiva 0 in W (LAVANDERIA) */
+int doWrite_SysActivePower_8(float value);
+int addWrite_SysActivePower_8(float value);
+int getStatus_SysActivePower_8(void);
+
+#define ID_SysActivePower_9 1011
+extern float SysActivePower_9;	/* 0x13 0x1026 Potenza Attiva 0 in W (UPS) */
+int doWrite_SysActivePower_9(float value);
+int addWrite_SysActivePower_9(float value);
+int getStatus_SysActivePower_9(void);
+
+#define ID_SysApparentPower_9 1012
+extern float SysApparentPower_9;	/* 0x13 0x102E Potenza Apparente 0 in VA (UPS) */
+int doWrite_SysApparentPower_9(float value);
+int addWrite_SysApparentPower_9(float value);
+int getStatus_SysApparentPower_9(void);
+
 #define ID_RTU0_TYPE_PORT 5000
 extern u_int32_t RTU0_TYPE_PORT;
 int doWrite_RTU0_TYPE_PORT(u_int32_t value);

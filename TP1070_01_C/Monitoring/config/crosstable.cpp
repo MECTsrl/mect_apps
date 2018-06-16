@@ -385,6 +385,97 @@ int16_t MPT91_Isteresi_OnOff = 0;
 
 
 /*
+ * Variable SystemVoltage_0	[ 0x0A 0x100C Tensione in V (PRINCIPALE) ]
+ */
+
+float SystemVoltage_0 = 0;
+
+
+/*
+ * Variable SysPowerFactor_0	[ 0x0A 0x101E Fattore di Potenza 0 (PRINCIPALE) ]
+ */
+
+float SysPowerFactor_0 = 0;
+
+
+/*
+ * Variable SysActivePower_0	[ 0x0A 0x1026 Potenza Attiva 0 in W (PRINCIPALE) ]
+ */
+
+float SysActivePower_0 = 0;
+
+
+/*
+ * Variable SysActivePower_1	[ 0x0B 0x1026 Potenza Attiva 0 in W (TOTOVOLTAICO) ]
+ */
+
+float SysActivePower_1 = 0;
+
+
+/*
+ * Variable SysActivePower_2	[ 0x0C 0x1026 Potenza Attiva 0 in W (ESTERNI) ]
+ */
+
+float SysActivePower_2 = 0;
+
+
+/*
+ * Variable SysActivePower_3	[ 0x0D 0x1026 Potenza Attiva 0 in W (PIANO SOPRA) ]
+ */
+
+float SysActivePower_3 = 0;
+
+
+/*
+ * Variable SysActivePower_4	[ 0x0E 0x1026 Potenza Attiva 0 in W (PIANO TERRA) ]
+ */
+
+float SysActivePower_4 = 0;
+
+
+/*
+ * Variable SysActivePower_5	[ 0x0F 0x1026 Potenza Attiva 0 in W (PIANO SOTTO) ]
+ */
+
+float SysActivePower_5 = 0;
+
+
+/*
+ * Variable SysActivePower_6	[ 0x10 0x1026 Potenza Attiva 0 in W (AUTO ELETTRICA) ]
+ */
+
+float SysActivePower_6 = 0;
+
+
+/*
+ * Variable SysActivePower_7	[ 0x11 0x1026 Potenza Attiva 0 in W (DEUMIDIFICATORE) ]
+ */
+
+float SysActivePower_7 = 0;
+
+
+/*
+ * Variable SysActivePower_8	[ 0x12 0x1026 Potenza Attiva 0 in W (LAVANDERIA) ]
+ */
+
+float SysActivePower_8 = 0;
+
+
+/*
+ * Variable SysActivePower_9	[ 0x13 0x1026 Potenza Attiva 0 in W (UPS) ]
+ */
+
+float SysActivePower_9 = 0;
+
+
+/*
+ * Variable SysApparentPower_9	[ 0x13 0x102E Potenza Apparente 0 in VA (UPS) ]
+ */
+
+float SysApparentPower_9 = 0;
+
+
+/*
  * Variable RTU0_TYPE_PORT
  */
 
@@ -2853,6 +2944,240 @@ int
 getStatus_MPT91_Isteresi_OnOff(void)
 {
 	return getStatus(ID_MPT91_Isteresi_OnOff);
+}
+
+int
+doWrite_SystemVoltage_0(float value)
+{
+	return doWrite(ID_SystemVoltage_0, &value);
+}
+
+int
+addWrite_SystemVoltage_0(float value)
+{
+	return addWrite(ID_SystemVoltage_0, &value);
+}
+
+int
+getStatus_SystemVoltage_0(void)
+{
+	return getStatus(ID_SystemVoltage_0);
+}
+
+int
+doWrite_SysPowerFactor_0(float value)
+{
+	return doWrite(ID_SysPowerFactor_0, &value);
+}
+
+int
+addWrite_SysPowerFactor_0(float value)
+{
+	return addWrite(ID_SysPowerFactor_0, &value);
+}
+
+int
+getStatus_SysPowerFactor_0(void)
+{
+	return getStatus(ID_SysPowerFactor_0);
+}
+
+int
+doWrite_SysActivePower_0(float value)
+{
+	return doWrite(ID_SysActivePower_0, &value);
+}
+
+int
+addWrite_SysActivePower_0(float value)
+{
+	return addWrite(ID_SysActivePower_0, &value);
+}
+
+int
+getStatus_SysActivePower_0(void)
+{
+	return getStatus(ID_SysActivePower_0);
+}
+
+int
+doWrite_SysActivePower_1(float value)
+{
+	return doWrite(ID_SysActivePower_1, &value);
+}
+
+int
+addWrite_SysActivePower_1(float value)
+{
+	return addWrite(ID_SysActivePower_1, &value);
+}
+
+int
+getStatus_SysActivePower_1(void)
+{
+	return getStatus(ID_SysActivePower_1);
+}
+
+int
+doWrite_SysActivePower_2(float value)
+{
+	return doWrite(ID_SysActivePower_2, &value);
+}
+
+int
+addWrite_SysActivePower_2(float value)
+{
+	return addWrite(ID_SysActivePower_2, &value);
+}
+
+int
+getStatus_SysActivePower_2(void)
+{
+	return getStatus(ID_SysActivePower_2);
+}
+
+int
+doWrite_SysActivePower_3(float value)
+{
+	return doWrite(ID_SysActivePower_3, &value);
+}
+
+int
+addWrite_SysActivePower_3(float value)
+{
+	return addWrite(ID_SysActivePower_3, &value);
+}
+
+int
+getStatus_SysActivePower_3(void)
+{
+	return getStatus(ID_SysActivePower_3);
+}
+
+int
+doWrite_SysActivePower_4(float value)
+{
+	return doWrite(ID_SysActivePower_4, &value);
+}
+
+int
+addWrite_SysActivePower_4(float value)
+{
+	return addWrite(ID_SysActivePower_4, &value);
+}
+
+int
+getStatus_SysActivePower_4(void)
+{
+	return getStatus(ID_SysActivePower_4);
+}
+
+int
+doWrite_SysActivePower_5(float value)
+{
+	return doWrite(ID_SysActivePower_5, &value);
+}
+
+int
+addWrite_SysActivePower_5(float value)
+{
+	return addWrite(ID_SysActivePower_5, &value);
+}
+
+int
+getStatus_SysActivePower_5(void)
+{
+	return getStatus(ID_SysActivePower_5);
+}
+
+int
+doWrite_SysActivePower_6(float value)
+{
+	return doWrite(ID_SysActivePower_6, &value);
+}
+
+int
+addWrite_SysActivePower_6(float value)
+{
+	return addWrite(ID_SysActivePower_6, &value);
+}
+
+int
+getStatus_SysActivePower_6(void)
+{
+	return getStatus(ID_SysActivePower_6);
+}
+
+int
+doWrite_SysActivePower_7(float value)
+{
+	return doWrite(ID_SysActivePower_7, &value);
+}
+
+int
+addWrite_SysActivePower_7(float value)
+{
+	return addWrite(ID_SysActivePower_7, &value);
+}
+
+int
+getStatus_SysActivePower_7(void)
+{
+	return getStatus(ID_SysActivePower_7);
+}
+
+int
+doWrite_SysActivePower_8(float value)
+{
+	return doWrite(ID_SysActivePower_8, &value);
+}
+
+int
+addWrite_SysActivePower_8(float value)
+{
+	return addWrite(ID_SysActivePower_8, &value);
+}
+
+int
+getStatus_SysActivePower_8(void)
+{
+	return getStatus(ID_SysActivePower_8);
+}
+
+int
+doWrite_SysActivePower_9(float value)
+{
+	return doWrite(ID_SysActivePower_9, &value);
+}
+
+int
+addWrite_SysActivePower_9(float value)
+{
+	return addWrite(ID_SysActivePower_9, &value);
+}
+
+int
+getStatus_SysActivePower_9(void)
+{
+	return getStatus(ID_SysActivePower_9);
+}
+
+int
+doWrite_SysApparentPower_9(float value)
+{
+	return doWrite(ID_SysApparentPower_9, &value);
+}
+
+int
+addWrite_SysApparentPower_9(float value)
+{
+	return addWrite(ID_SysApparentPower_9, &value);
+}
+
+int
+getStatus_SysApparentPower_9(void)
+{
+	return getStatus(ID_SysApparentPower_9);
 }
 
 int
@@ -6908,6 +7233,19 @@ update_all(void)
 	retval += readFromDb(ID_MPT91_Temperatura, &MPT91_Temperatura);
 	retval += readFromDb(ID_MPT91_Set_point, &MPT91_Set_point);
 	retval += readFromDb(ID_MPT91_Isteresi_OnOff, &MPT91_Isteresi_OnOff);
+	retval += readFromDb(ID_SystemVoltage_0, &SystemVoltage_0);
+	retval += readFromDb(ID_SysPowerFactor_0, &SysPowerFactor_0);
+	retval += readFromDb(ID_SysActivePower_0, &SysActivePower_0);
+	retval += readFromDb(ID_SysActivePower_1, &SysActivePower_1);
+	retval += readFromDb(ID_SysActivePower_2, &SysActivePower_2);
+	retval += readFromDb(ID_SysActivePower_3, &SysActivePower_3);
+	retval += readFromDb(ID_SysActivePower_4, &SysActivePower_4);
+	retval += readFromDb(ID_SysActivePower_5, &SysActivePower_5);
+	retval += readFromDb(ID_SysActivePower_6, &SysActivePower_6);
+	retval += readFromDb(ID_SysActivePower_7, &SysActivePower_7);
+	retval += readFromDb(ID_SysActivePower_8, &SysActivePower_8);
+	retval += readFromDb(ID_SysActivePower_9, &SysActivePower_9);
+	retval += readFromDb(ID_SysApparentPower_9, &SysApparentPower_9);
 	retval += readFromDb(ID_RTU0_TYPE_PORT, &RTU0_TYPE_PORT);
 	retval += readFromDb(ID_RTU0_BAUDRATE, &RTU0_BAUDRATE);
 	retval += readFromDb(ID_RTU0_STATUS, &RTU0_STATUS);

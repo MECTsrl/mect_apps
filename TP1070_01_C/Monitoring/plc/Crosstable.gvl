@@ -50,6 +50,19 @@ VAR_GLOBAL
 	MPT91_Temperatura AT %IW0.1204:INT;	(* 0x0100 *)
 	MPT91_Set_point AT %QW0.1208:INT;	(* 0x0101 *)
 	MPT91_Isteresi_OnOff AT %QW0.1212:INT;	(* 0x010B *)
+	SystemVoltage_0 AT %ID0.4000:REAL;	(* 0x0A 0x100C Tensione in V (PRINCIPALE) *)
+	SysPowerFactor_0 AT %ID0.4004:REAL;	(* 0x0A 0x101E Fattore di Potenza 0 (PRINCIPALE) *)
+	SysActivePower_0 AT %ID0.4008:REAL;	(* 0x0A 0x1026 Potenza Attiva 0 in W (PRINCIPALE) *)
+	SysActivePower_1 AT %ID0.4012:REAL;	(* 0x0B 0x1026 Potenza Attiva 0 in W (TOTOVOLTAICO) *)
+	SysActivePower_2 AT %ID0.4016:REAL;	(* 0x0C 0x1026 Potenza Attiva 0 in W (ESTERNI) *)
+	SysActivePower_3 AT %ID0.4020:REAL;	(* 0x0D 0x1026 Potenza Attiva 0 in W (PIANO SOPRA) *)
+	SysActivePower_4 AT %ID0.4024:REAL;	(* 0x0E 0x1026 Potenza Attiva 0 in W (PIANO TERRA) *)
+	SysActivePower_5 AT %ID0.4028:REAL;	(* 0x0F 0x1026 Potenza Attiva 0 in W (PIANO SOTTO) *)
+	SysActivePower_6 AT %ID0.4032:REAL;	(* 0x10 0x1026 Potenza Attiva 0 in W (AUTO ELETTRICA) *)
+	SysActivePower_7 AT %ID0.4036:REAL;	(* 0x11 0x1026 Potenza Attiva 0 in W (DEUMIDIFICATORE) *)
+	SysActivePower_8 AT %ID0.4040:REAL;	(* 0x12 0x1026 Potenza Attiva 0 in W (LAVANDERIA) *)
+	SysActivePower_9 AT %ID0.4044:REAL;	(* 0x13 0x1026 Potenza Attiva 0 in W (UPS) *)
+	SysApparentPower_9 AT %ID0.4048:REAL;	(* 0x13 0x102E Potenza Apparente 0 in VA (UPS) *)
 	RTU0_TYPE_PORT AT %ID0.20000:UDINT;
 	RTU0_BAUDRATE AT %ID0.20004:UDINT;
 	RTU0_STATUS AT %ID0.20008:UDINT;
