@@ -22,11 +22,57 @@ void setup(void)
     doWrite_XX_DigDir_6(1); // output BYPASS DEUMIDIFICATORE
     doWrite_XX_DigDir_7(1); // output BYPASS LAVANDERIA
     doWrite_XX_DigDir_8(1); // output BYPASS PUFFER
+
+    doWrite_openvpn_restart_times(0);
+
+    logStart();
 }
 
-/* put here the operation made every 100ms */
+bool isUP_ppp0(void)
+{
+    return system("ip addr show dev ppp0 2>&1 | grep ',UP' >/dev/null ") == 0;
+}
+
+bool isUP_tun0(void)
+{
+    return system("ip addr show dev tun_mrs 2>&1 | grep ',UP' >/dev/null ") == 0;
+}
+
 void loop(void)
 {
-    
-}
+    static unsigned counter = 0;
 
+    ++counter;
+
+    // update the network status, one interface each 500 ms
+    switch (counter % 10) {
+    case 0:
+        if (isUP_ppp0()) {
+            if (!is_PPP0_ON)
+                doWrite_is_PPP0_ON(1);
+        } else {
+            if (is_PPP0_ON)
+                doWrite_is_PPP0_ON(0);
+        }
+        break;
+    case 5:
+        if (isUP_tun0()) {
+            if (!is_TUN0_ON)
+                doWrite_is_TUN0_ON(1);
+        } else {
+            if (is_TUN0_ON)
+                doWrite_is_TUN0_ON(0);
+        }
+        break;
+    default:
+        ;
+    }
+
+    // try restarting openvpn each five minutes
+    if ((counter % 300000) == 0) {
+        if (! is_TUN0_ON) {
+            doWrite_openvpn_restart_times(openvpn_restart_times + 1);
+            system("/etc/rc.d/init.d/openvpn restart");
+        }
+    }
+}

@@ -28,6 +28,55 @@
 #include "global_var.h"
 
 /*
+ * Variable openvpn_restart_times
+ */
+
+u_int32_t openvpn_restart_times = 0;
+
+
+/*
+ * Variable is_PPP0_ON	[ isUP_ppp0() ]
+ */
+
+int is_PPP0_ON = 0;
+
+
+/*
+ * Variable is_TUN0_ON	[ isUP_tun0() ]
+ */
+
+int is_TUN0_ON = 0;
+
+
+/*
+ * Variable MPT91_Scala	[ 0x0008 ]
+ */
+
+int MPT91_Scala = 0;
+
+
+/*
+ * Variable MPT91_Temperatura	[ 0x0100 ]
+ */
+
+int16_t MPT91_Temperatura = 0;
+
+
+/*
+ * Variable MPT91_Set_point	[ 0x0101 ]
+ */
+
+int16_t MPT91_Set_point = 0;
+
+
+/*
+ * Variable MPT91_Isteresi_OnOff	[ 0x010B ]
+ */
+
+int16_t MPT91_Isteresi_OnOff = 0;
+
+
+/*
  * Variable XX_Baudrate	[ Baudrate MPNC005 device ]
  */
 
@@ -357,34 +406,6 @@ int XX_DigOut_8 = 0;
 
 
 /*
- * Variable MPT91_Scala	[ 0x0008 ]
- */
-
-int MPT91_Scala = 0;
-
-
-/*
- * Variable MPT91_Temperatura	[ 0x0100 ]
- */
-
-int16_t MPT91_Temperatura = 0;
-
-
-/*
- * Variable MPT91_Set_point	[ 0x0101 ]
- */
-
-int16_t MPT91_Set_point = 0;
-
-
-/*
- * Variable MPT91_Isteresi_OnOff	[ 0x010B ]
- */
-
-int16_t MPT91_Isteresi_OnOff = 0;
-
-
-/*
  * Variable SystemVoltage_0	[ 0x0A 0x100C Tensione in V (PRINCIPALE) ]
  */
 
@@ -406,10 +427,31 @@ float SysActivePower_0 = 0;
 
 
 /*
- * Variable SysActivePower_1	[ 0x0B 0x1026 Potenza Attiva 0 in W (TOTOVOLTAICO) ]
+ * Variable SysImpActiveEnergy_0	[ 0x0A 0x1106 Energia Attiva Importata 0 in Wh (PRINCIPALE) ]
+ */
+
+float SysImpActiveEnergy_0 = 0;
+
+
+/*
+ * Variable SysExpActiveEnergy_0	[ 0x0A 0x110E Energia Attiva Esportata 0 in Wh (PRINCIPALE) ]
+ */
+
+float SysExpActiveEnergy_0 = 0;
+
+
+/*
+ * Variable SysActivePower_1	[ 0x0B 0x1026 Potenza Attiva 0 in W (FOTOVOLTAICO) ]
  */
 
 float SysActivePower_1 = 0;
+
+
+/*
+ * Variable SysExpActiveEnergy_1	[ 0x0B 0x110E Energia Attiva Esportata 0 in Wh (FOTOVOLTAICO) ]
+ */
+
+float SysExpActiveEnergy_1 = 0;
 
 
 /*
@@ -420,10 +462,24 @@ float SysActivePower_2 = 0;
 
 
 /*
+ * Variable SysImpActiveEnergy_2	[ 0x0C 0x1106 Energia Attiva Importata 0 in Wh (ESTERNI) ]
+ */
+
+float SysImpActiveEnergy_2 = 0;
+
+
+/*
  * Variable SysActivePower_3	[ 0x0D 0x1026 Potenza Attiva 0 in W (PIANO SOPRA) ]
  */
 
 float SysActivePower_3 = 0;
+
+
+/*
+ * Variable SysImpActiveEnergy_3	[ 0x0D 0x1106 Energia Attiva Importata 0 in Wh (PIANO SOPRA) ]
+ */
+
+float SysImpActiveEnergy_3 = 0;
 
 
 /*
@@ -434,10 +490,24 @@ float SysActivePower_4 = 0;
 
 
 /*
+ * Variable SysImpActiveEnergy_4	[ 0x0E 0x1106 Energia Attiva Importata 0 in Wh (PIANO TERRA) ]
+ */
+
+float SysImpActiveEnergy_4 = 0;
+
+
+/*
  * Variable SysActivePower_5	[ 0x0F 0x1026 Potenza Attiva 0 in W (PIANO SOTTO) ]
  */
 
 float SysActivePower_5 = 0;
+
+
+/*
+ * Variable SysImpActiveEnergy_5	[ 0x0F 0x1106 Energia Attiva Importata 0 in Wh (PIANO SOTTO) ]
+ */
+
+float SysImpActiveEnergy_5 = 0;
 
 
 /*
@@ -448,6 +518,13 @@ float SysActivePower_6 = 0;
 
 
 /*
+ * Variable SysImpActiveEnergy_6	[ 0x10 0x1106 Energia Attiva Importata 0 in Wh (AUTO ELETTRICA) ]
+ */
+
+float SysImpActiveEnergy_6 = 0;
+
+
+/*
  * Variable SysActivePower_7	[ 0x11 0x1026 Potenza Attiva 0 in W (DEUMIDIFICATORE) ]
  */
 
@@ -455,10 +532,24 @@ float SysActivePower_7 = 0;
 
 
 /*
+ * Variable SysImpActiveEnergy_7	[ 0x11 0x1106 Energia Attiva Importata 0 in Wh (DEUMIDIFICATORE) ]
+ */
+
+float SysImpActiveEnergy_7 = 0;
+
+
+/*
  * Variable SysActivePower_8	[ 0x12 0x1026 Potenza Attiva 0 in W (LAVANDERIA) ]
  */
 
 float SysActivePower_8 = 0;
+
+
+/*
+ * Variable SysImpActiveEnergy_8	[ 0x12 0x1106 Energia Attiva Importata 0 in Wh (LAVANDERIA) ]
+ */
+
+float SysImpActiveEnergy_8 = 0;
 
 
 /*
@@ -473,6 +564,13 @@ float SysActivePower_9 = 0;
  */
 
 float SysApparentPower_9 = 0;
+
+
+/*
+ * Variable SysImpActiveEnergy_9	[ 0x13 0x1106 Energia Attiva Importata 0 in Wh (UPS) ]
+ */
+
+float SysImpActiveEnergy_9 = 0;
 
 
 /*
@@ -1820,62 +1918,6 @@ u_int32_t NODE_16_STATUS = 0;
 
 
 /*
- * Variable PLC_DigIn_1	[ Digital input 1 value ]
- */
-
-int PLC_DigIn_1 = 0;
-
-
-/*
- * Variable PLC_DigIn_2	[ Digital input 2 value ]
- */
-
-int PLC_DigIn_2 = 0;
-
-
-/*
- * Variable PLC_DigIn_3	[ Digital input 3 value ]
- */
-
-int PLC_DigIn_3 = 0;
-
-
-/*
- * Variable PLC_DigIn_4	[ Digital input 4 value ]
- */
-
-int PLC_DigIn_4 = 0;
-
-
-/*
- * Variable PLC_DigIn_5	[ Digital input 5 value ]
- */
-
-int PLC_DigIn_5 = 0;
-
-
-/*
- * Variable PLC_DigIn_6	[ Digital input 6 value ]
- */
-
-int PLC_DigIn_6 = 0;
-
-
-/*
- * Variable PLC_DigIn_7	[ Digital input 7 value ]
- */
-
-int PLC_DigIn_7 = 0;
-
-
-/*
- * Variable PLC_DigIn_8	[ Digital input 8 value ]
- */
-
-int PLC_DigIn_8 = 0;
-
-
-/*
  * Variable PLC_time	[ Seconds since boot (reset each 24h) ]
  */
 
@@ -2027,6 +2069,132 @@ u_int8_t PLC_ALARM_VOLUME = 0;
  */
 
 u_int32_t PLC_BUZZER = 0;
+
+int
+doWrite_openvpn_restart_times(u_int32_t value)
+{
+	return doWrite(ID_openvpn_restart_times, &value);
+}
+
+int
+addWrite_openvpn_restart_times(u_int32_t value)
+{
+	return addWrite(ID_openvpn_restart_times, &value);
+}
+
+int
+getStatus_openvpn_restart_times(void)
+{
+	return getStatus(ID_openvpn_restart_times);
+}
+
+int
+doWrite_is_PPP0_ON(int value)
+{
+	return doWrite(ID_is_PPP0_ON, &value);
+}
+
+int
+addWrite_is_PPP0_ON(int value)
+{
+	return addWrite(ID_is_PPP0_ON, &value);
+}
+
+int
+getStatus_is_PPP0_ON(void)
+{
+	return getStatus(ID_is_PPP0_ON);
+}
+
+int
+doWrite_is_TUN0_ON(int value)
+{
+	return doWrite(ID_is_TUN0_ON, &value);
+}
+
+int
+addWrite_is_TUN0_ON(int value)
+{
+	return addWrite(ID_is_TUN0_ON, &value);
+}
+
+int
+getStatus_is_TUN0_ON(void)
+{
+	return getStatus(ID_is_TUN0_ON);
+}
+
+int
+doWrite_MPT91_Scala(int value)
+{
+	return doWrite(ID_MPT91_Scala, &value);
+}
+
+int
+addWrite_MPT91_Scala(int value)
+{
+	return addWrite(ID_MPT91_Scala, &value);
+}
+
+int
+getStatus_MPT91_Scala(void)
+{
+	return getStatus(ID_MPT91_Scala);
+}
+
+int
+doWrite_MPT91_Temperatura(int16_t value)
+{
+	return doWrite(ID_MPT91_Temperatura, &value);
+}
+
+int
+addWrite_MPT91_Temperatura(int16_t value)
+{
+	return addWrite(ID_MPT91_Temperatura, &value);
+}
+
+int
+getStatus_MPT91_Temperatura(void)
+{
+	return getStatus(ID_MPT91_Temperatura);
+}
+
+int
+doWrite_MPT91_Set_point(int16_t value)
+{
+	return doWrite(ID_MPT91_Set_point, &value);
+}
+
+int
+addWrite_MPT91_Set_point(int16_t value)
+{
+	return addWrite(ID_MPT91_Set_point, &value);
+}
+
+int
+getStatus_MPT91_Set_point(void)
+{
+	return getStatus(ID_MPT91_Set_point);
+}
+
+int
+doWrite_MPT91_Isteresi_OnOff(int16_t value)
+{
+	return doWrite(ID_MPT91_Isteresi_OnOff, &value);
+}
+
+int
+addWrite_MPT91_Isteresi_OnOff(int16_t value)
+{
+	return addWrite(ID_MPT91_Isteresi_OnOff, &value);
+}
+
+int
+getStatus_MPT91_Isteresi_OnOff(void)
+{
+	return getStatus(ID_MPT91_Isteresi_OnOff);
+}
 
 int
 doWrite_XX_Baudrate(u_int16_t value)
@@ -2875,78 +3043,6 @@ getStatus_XX_DigOut_8(void)
 }
 
 int
-doWrite_MPT91_Scala(int value)
-{
-	return doWrite(ID_MPT91_Scala, &value);
-}
-
-int
-addWrite_MPT91_Scala(int value)
-{
-	return addWrite(ID_MPT91_Scala, &value);
-}
-
-int
-getStatus_MPT91_Scala(void)
-{
-	return getStatus(ID_MPT91_Scala);
-}
-
-int
-doWrite_MPT91_Temperatura(int16_t value)
-{
-	return doWrite(ID_MPT91_Temperatura, &value);
-}
-
-int
-addWrite_MPT91_Temperatura(int16_t value)
-{
-	return addWrite(ID_MPT91_Temperatura, &value);
-}
-
-int
-getStatus_MPT91_Temperatura(void)
-{
-	return getStatus(ID_MPT91_Temperatura);
-}
-
-int
-doWrite_MPT91_Set_point(int16_t value)
-{
-	return doWrite(ID_MPT91_Set_point, &value);
-}
-
-int
-addWrite_MPT91_Set_point(int16_t value)
-{
-	return addWrite(ID_MPT91_Set_point, &value);
-}
-
-int
-getStatus_MPT91_Set_point(void)
-{
-	return getStatus(ID_MPT91_Set_point);
-}
-
-int
-doWrite_MPT91_Isteresi_OnOff(int16_t value)
-{
-	return doWrite(ID_MPT91_Isteresi_OnOff, &value);
-}
-
-int
-addWrite_MPT91_Isteresi_OnOff(int16_t value)
-{
-	return addWrite(ID_MPT91_Isteresi_OnOff, &value);
-}
-
-int
-getStatus_MPT91_Isteresi_OnOff(void)
-{
-	return getStatus(ID_MPT91_Isteresi_OnOff);
-}
-
-int
 doWrite_SystemVoltage_0(float value)
 {
 	return doWrite(ID_SystemVoltage_0, &value);
@@ -3001,6 +3097,42 @@ getStatus_SysActivePower_0(void)
 }
 
 int
+doWrite_SysImpActiveEnergy_0(float value)
+{
+	return doWrite(ID_SysImpActiveEnergy_0, &value);
+}
+
+int
+addWrite_SysImpActiveEnergy_0(float value)
+{
+	return addWrite(ID_SysImpActiveEnergy_0, &value);
+}
+
+int
+getStatus_SysImpActiveEnergy_0(void)
+{
+	return getStatus(ID_SysImpActiveEnergy_0);
+}
+
+int
+doWrite_SysExpActiveEnergy_0(float value)
+{
+	return doWrite(ID_SysExpActiveEnergy_0, &value);
+}
+
+int
+addWrite_SysExpActiveEnergy_0(float value)
+{
+	return addWrite(ID_SysExpActiveEnergy_0, &value);
+}
+
+int
+getStatus_SysExpActiveEnergy_0(void)
+{
+	return getStatus(ID_SysExpActiveEnergy_0);
+}
+
+int
 doWrite_SysActivePower_1(float value)
 {
 	return doWrite(ID_SysActivePower_1, &value);
@@ -3016,6 +3148,24 @@ int
 getStatus_SysActivePower_1(void)
 {
 	return getStatus(ID_SysActivePower_1);
+}
+
+int
+doWrite_SysExpActiveEnergy_1(float value)
+{
+	return doWrite(ID_SysExpActiveEnergy_1, &value);
+}
+
+int
+addWrite_SysExpActiveEnergy_1(float value)
+{
+	return addWrite(ID_SysExpActiveEnergy_1, &value);
+}
+
+int
+getStatus_SysExpActiveEnergy_1(void)
+{
+	return getStatus(ID_SysExpActiveEnergy_1);
 }
 
 int
@@ -3037,6 +3187,24 @@ getStatus_SysActivePower_2(void)
 }
 
 int
+doWrite_SysImpActiveEnergy_2(float value)
+{
+	return doWrite(ID_SysImpActiveEnergy_2, &value);
+}
+
+int
+addWrite_SysImpActiveEnergy_2(float value)
+{
+	return addWrite(ID_SysImpActiveEnergy_2, &value);
+}
+
+int
+getStatus_SysImpActiveEnergy_2(void)
+{
+	return getStatus(ID_SysImpActiveEnergy_2);
+}
+
+int
 doWrite_SysActivePower_3(float value)
 {
 	return doWrite(ID_SysActivePower_3, &value);
@@ -3052,6 +3220,24 @@ int
 getStatus_SysActivePower_3(void)
 {
 	return getStatus(ID_SysActivePower_3);
+}
+
+int
+doWrite_SysImpActiveEnergy_3(float value)
+{
+	return doWrite(ID_SysImpActiveEnergy_3, &value);
+}
+
+int
+addWrite_SysImpActiveEnergy_3(float value)
+{
+	return addWrite(ID_SysImpActiveEnergy_3, &value);
+}
+
+int
+getStatus_SysImpActiveEnergy_3(void)
+{
+	return getStatus(ID_SysImpActiveEnergy_3);
 }
 
 int
@@ -3073,6 +3259,24 @@ getStatus_SysActivePower_4(void)
 }
 
 int
+doWrite_SysImpActiveEnergy_4(float value)
+{
+	return doWrite(ID_SysImpActiveEnergy_4, &value);
+}
+
+int
+addWrite_SysImpActiveEnergy_4(float value)
+{
+	return addWrite(ID_SysImpActiveEnergy_4, &value);
+}
+
+int
+getStatus_SysImpActiveEnergy_4(void)
+{
+	return getStatus(ID_SysImpActiveEnergy_4);
+}
+
+int
 doWrite_SysActivePower_5(float value)
 {
 	return doWrite(ID_SysActivePower_5, &value);
@@ -3088,6 +3292,24 @@ int
 getStatus_SysActivePower_5(void)
 {
 	return getStatus(ID_SysActivePower_5);
+}
+
+int
+doWrite_SysImpActiveEnergy_5(float value)
+{
+	return doWrite(ID_SysImpActiveEnergy_5, &value);
+}
+
+int
+addWrite_SysImpActiveEnergy_5(float value)
+{
+	return addWrite(ID_SysImpActiveEnergy_5, &value);
+}
+
+int
+getStatus_SysImpActiveEnergy_5(void)
+{
+	return getStatus(ID_SysImpActiveEnergy_5);
 }
 
 int
@@ -3109,6 +3331,24 @@ getStatus_SysActivePower_6(void)
 }
 
 int
+doWrite_SysImpActiveEnergy_6(float value)
+{
+	return doWrite(ID_SysImpActiveEnergy_6, &value);
+}
+
+int
+addWrite_SysImpActiveEnergy_6(float value)
+{
+	return addWrite(ID_SysImpActiveEnergy_6, &value);
+}
+
+int
+getStatus_SysImpActiveEnergy_6(void)
+{
+	return getStatus(ID_SysImpActiveEnergy_6);
+}
+
+int
 doWrite_SysActivePower_7(float value)
 {
 	return doWrite(ID_SysActivePower_7, &value);
@@ -3127,6 +3367,24 @@ getStatus_SysActivePower_7(void)
 }
 
 int
+doWrite_SysImpActiveEnergy_7(float value)
+{
+	return doWrite(ID_SysImpActiveEnergy_7, &value);
+}
+
+int
+addWrite_SysImpActiveEnergy_7(float value)
+{
+	return addWrite(ID_SysImpActiveEnergy_7, &value);
+}
+
+int
+getStatus_SysImpActiveEnergy_7(void)
+{
+	return getStatus(ID_SysImpActiveEnergy_7);
+}
+
+int
 doWrite_SysActivePower_8(float value)
 {
 	return doWrite(ID_SysActivePower_8, &value);
@@ -3142,6 +3400,24 @@ int
 getStatus_SysActivePower_8(void)
 {
 	return getStatus(ID_SysActivePower_8);
+}
+
+int
+doWrite_SysImpActiveEnergy_8(float value)
+{
+	return doWrite(ID_SysImpActiveEnergy_8, &value);
+}
+
+int
+addWrite_SysImpActiveEnergy_8(float value)
+{
+	return addWrite(ID_SysImpActiveEnergy_8, &value);
+}
+
+int
+getStatus_SysImpActiveEnergy_8(void)
+{
+	return getStatus(ID_SysImpActiveEnergy_8);
 }
 
 int
@@ -3178,6 +3454,24 @@ int
 getStatus_SysApparentPower_9(void)
 {
 	return getStatus(ID_SysApparentPower_9);
+}
+
+int
+doWrite_SysImpActiveEnergy_9(float value)
+{
+	return doWrite(ID_SysImpActiveEnergy_9, &value);
+}
+
+int
+addWrite_SysImpActiveEnergy_9(float value)
+{
+	return addWrite(ID_SysImpActiveEnergy_9, &value);
+}
+
+int
+getStatus_SysImpActiveEnergy_9(void)
+{
+	return getStatus(ID_SysImpActiveEnergy_9);
 }
 
 int
@@ -6637,150 +6931,6 @@ getStatus_NODE_16_STATUS(void)
 }
 
 int
-doWrite_PLC_DigIn_1(int value)
-{
-	return doWrite(ID_PLC_DigIn_1, &value);
-}
-
-int
-addWrite_PLC_DigIn_1(int value)
-{
-	return addWrite(ID_PLC_DigIn_1, &value);
-}
-
-int
-getStatus_PLC_DigIn_1(void)
-{
-	return getStatus(ID_PLC_DigIn_1);
-}
-
-int
-doWrite_PLC_DigIn_2(int value)
-{
-	return doWrite(ID_PLC_DigIn_2, &value);
-}
-
-int
-addWrite_PLC_DigIn_2(int value)
-{
-	return addWrite(ID_PLC_DigIn_2, &value);
-}
-
-int
-getStatus_PLC_DigIn_2(void)
-{
-	return getStatus(ID_PLC_DigIn_2);
-}
-
-int
-doWrite_PLC_DigIn_3(int value)
-{
-	return doWrite(ID_PLC_DigIn_3, &value);
-}
-
-int
-addWrite_PLC_DigIn_3(int value)
-{
-	return addWrite(ID_PLC_DigIn_3, &value);
-}
-
-int
-getStatus_PLC_DigIn_3(void)
-{
-	return getStatus(ID_PLC_DigIn_3);
-}
-
-int
-doWrite_PLC_DigIn_4(int value)
-{
-	return doWrite(ID_PLC_DigIn_4, &value);
-}
-
-int
-addWrite_PLC_DigIn_4(int value)
-{
-	return addWrite(ID_PLC_DigIn_4, &value);
-}
-
-int
-getStatus_PLC_DigIn_4(void)
-{
-	return getStatus(ID_PLC_DigIn_4);
-}
-
-int
-doWrite_PLC_DigIn_5(int value)
-{
-	return doWrite(ID_PLC_DigIn_5, &value);
-}
-
-int
-addWrite_PLC_DigIn_5(int value)
-{
-	return addWrite(ID_PLC_DigIn_5, &value);
-}
-
-int
-getStatus_PLC_DigIn_5(void)
-{
-	return getStatus(ID_PLC_DigIn_5);
-}
-
-int
-doWrite_PLC_DigIn_6(int value)
-{
-	return doWrite(ID_PLC_DigIn_6, &value);
-}
-
-int
-addWrite_PLC_DigIn_6(int value)
-{
-	return addWrite(ID_PLC_DigIn_6, &value);
-}
-
-int
-getStatus_PLC_DigIn_6(void)
-{
-	return getStatus(ID_PLC_DigIn_6);
-}
-
-int
-doWrite_PLC_DigIn_7(int value)
-{
-	return doWrite(ID_PLC_DigIn_7, &value);
-}
-
-int
-addWrite_PLC_DigIn_7(int value)
-{
-	return addWrite(ID_PLC_DigIn_7, &value);
-}
-
-int
-getStatus_PLC_DigIn_7(void)
-{
-	return getStatus(ID_PLC_DigIn_7);
-}
-
-int
-doWrite_PLC_DigIn_8(int value)
-{
-	return doWrite(ID_PLC_DigIn_8, &value);
-}
-
-int
-addWrite_PLC_DigIn_8(int value)
-{
-	return addWrite(ID_PLC_DigIn_8, &value);
-}
-
-int
-getStatus_PLC_DigIn_8(void)
-{
-	return getStatus(ID_PLC_DigIn_8);
-}
-
-int
 doWrite_PLC_time(float value)
 {
 	return doWrite(ID_PLC_time, &value);
@@ -7182,6 +7332,13 @@ update_all(void)
 {
 	int retval = 0;
 
+	retval += readFromDb(ID_openvpn_restart_times, &openvpn_restart_times);
+	retval += readFromDb(ID_is_PPP0_ON, &is_PPP0_ON);
+	retval += readFromDb(ID_is_TUN0_ON, &is_TUN0_ON);
+	retval += readFromDb(ID_MPT91_Scala, &MPT91_Scala);
+	retval += readFromDb(ID_MPT91_Temperatura, &MPT91_Temperatura);
+	retval += readFromDb(ID_MPT91_Set_point, &MPT91_Set_point);
+	retval += readFromDb(ID_MPT91_Isteresi_OnOff, &MPT91_Isteresi_OnOff);
 	retval += readFromDb(ID_XX_Baudrate, &XX_Baudrate);
 	retval += readFromDb(ID_XX_NodeID, &XX_NodeID);
 	retval += readFromDb(ID_XX_HeartBeat, &XX_HeartBeat);
@@ -7229,23 +7386,30 @@ update_all(void)
 	retval += readFromDb(ID_XX_DigOut_6, &XX_DigOut_6);
 	retval += readFromDb(ID_XX_DigOut_7, &XX_DigOut_7);
 	retval += readFromDb(ID_XX_DigOut_8, &XX_DigOut_8);
-	retval += readFromDb(ID_MPT91_Scala, &MPT91_Scala);
-	retval += readFromDb(ID_MPT91_Temperatura, &MPT91_Temperatura);
-	retval += readFromDb(ID_MPT91_Set_point, &MPT91_Set_point);
-	retval += readFromDb(ID_MPT91_Isteresi_OnOff, &MPT91_Isteresi_OnOff);
 	retval += readFromDb(ID_SystemVoltage_0, &SystemVoltage_0);
 	retval += readFromDb(ID_SysPowerFactor_0, &SysPowerFactor_0);
 	retval += readFromDb(ID_SysActivePower_0, &SysActivePower_0);
+	retval += readFromDb(ID_SysImpActiveEnergy_0, &SysImpActiveEnergy_0);
+	retval += readFromDb(ID_SysExpActiveEnergy_0, &SysExpActiveEnergy_0);
 	retval += readFromDb(ID_SysActivePower_1, &SysActivePower_1);
+	retval += readFromDb(ID_SysExpActiveEnergy_1, &SysExpActiveEnergy_1);
 	retval += readFromDb(ID_SysActivePower_2, &SysActivePower_2);
+	retval += readFromDb(ID_SysImpActiveEnergy_2, &SysImpActiveEnergy_2);
 	retval += readFromDb(ID_SysActivePower_3, &SysActivePower_3);
+	retval += readFromDb(ID_SysImpActiveEnergy_3, &SysImpActiveEnergy_3);
 	retval += readFromDb(ID_SysActivePower_4, &SysActivePower_4);
+	retval += readFromDb(ID_SysImpActiveEnergy_4, &SysImpActiveEnergy_4);
 	retval += readFromDb(ID_SysActivePower_5, &SysActivePower_5);
+	retval += readFromDb(ID_SysImpActiveEnergy_5, &SysImpActiveEnergy_5);
 	retval += readFromDb(ID_SysActivePower_6, &SysActivePower_6);
+	retval += readFromDb(ID_SysImpActiveEnergy_6, &SysImpActiveEnergy_6);
 	retval += readFromDb(ID_SysActivePower_7, &SysActivePower_7);
+	retval += readFromDb(ID_SysImpActiveEnergy_7, &SysImpActiveEnergy_7);
 	retval += readFromDb(ID_SysActivePower_8, &SysActivePower_8);
+	retval += readFromDb(ID_SysImpActiveEnergy_8, &SysImpActiveEnergy_8);
 	retval += readFromDb(ID_SysActivePower_9, &SysActivePower_9);
 	retval += readFromDb(ID_SysApparentPower_9, &SysApparentPower_9);
+	retval += readFromDb(ID_SysImpActiveEnergy_9, &SysImpActiveEnergy_9);
 	retval += readFromDb(ID_RTU0_TYPE_PORT, &RTU0_TYPE_PORT);
 	retval += readFromDb(ID_RTU0_BAUDRATE, &RTU0_BAUDRATE);
 	retval += readFromDb(ID_RTU0_STATUS, &RTU0_STATUS);
@@ -7438,14 +7602,6 @@ update_all(void)
 	retval += readFromDb(ID_NODE_15_STATUS, &NODE_15_STATUS);
 	retval += readFromDb(ID_NODE_16_DEV_NODE, &NODE_16_DEV_NODE);
 	retval += readFromDb(ID_NODE_16_STATUS, &NODE_16_STATUS);
-	retval += readFromDb(ID_PLC_DigIn_1, &PLC_DigIn_1);
-	retval += readFromDb(ID_PLC_DigIn_2, &PLC_DigIn_2);
-	retval += readFromDb(ID_PLC_DigIn_3, &PLC_DigIn_3);
-	retval += readFromDb(ID_PLC_DigIn_4, &PLC_DigIn_4);
-	retval += readFromDb(ID_PLC_DigIn_5, &PLC_DigIn_5);
-	retval += readFromDb(ID_PLC_DigIn_6, &PLC_DigIn_6);
-	retval += readFromDb(ID_PLC_DigIn_7, &PLC_DigIn_7);
-	retval += readFromDb(ID_PLC_DigIn_8, &PLC_DigIn_8);
 	retval += readFromDb(ID_PLC_time, &PLC_time);
 	retval += readFromDb(ID_PLC_timeMin, &PLC_timeMin);
 	retval += readFromDb(ID_PLC_timeMax, &PLC_timeMax);
