@@ -23,7 +23,7 @@ void setup(void)
     doWrite_XX_DigDir_7(1); // output BYPASS LAVANDERIA
     doWrite_XX_DigDir_8(1); // output BYPASS PUFFER
 
-    doWrite_openvpn_restart_times(0);
+    // doWrite_openvpn_restart_times(0);
 
     logStart();
 }
@@ -69,7 +69,7 @@ void loop(void)
     }
 
     // try restarting openvpn each five minutes
-    if ((counter % 300000) == 0) {
+    if ((counter % 3000) == 0) {
         if (! is_TUN0_ON) {
             doWrite_openvpn_restart_times(openvpn_restart_times + 1);
             system("/etc/rc.d/init.d/openvpn restart");
