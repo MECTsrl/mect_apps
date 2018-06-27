@@ -208,16 +208,16 @@ background-color: rgb(0, 0, 0);
    </property>
    <property name="geometry">
     <rect>
-     <x>466</x>
+     <x>566</x>
      <y>400</y>
-     <width>75</width>
+     <width>59</width>
      <height>40</height>
     </rect>
    </property>
    <property name="font">
     <font>
      <family>DejaVu Sans Mono</family>
-     <pointsize>12</pointsize>
+     <pointsize>11</pointsize>
      <weight>75</weight>
      <bold>true</bold>
     </font>
@@ -289,16 +289,16 @@ background-color: rgb(0, 0, 0);
    </property>
    <property name="geometry">
     <rect>
-     <x>581</x>
+     <x>650</x>
      <y>400</y>
-     <width>75</width>
+     <width>59</width>
      <height>40</height>
     </rect>
    </property>
    <property name="font">
     <font>
      <family>DejaVu Sans Mono</family>
-     <pointsize>12</pointsize>
+     <pointsize>11</pointsize>
      <weight>75</weight>
      <bold>true</bold>
     </font>
@@ -373,16 +373,16 @@ background-color: rgb(0, 0, 0);
    </property>
    <property name="geometry">
     <rect>
-     <x>541</x>
+     <x>624</x>
      <y>400</y>
-     <width>40</width>
+     <width>29</width>
      <height>40</height>
     </rect>
    </property>
    <property name="font">
     <font>
      <family>DejaVu Sans Mono</family>
-     <pointsize>11</pointsize>
+     <pointsize>8</pointsize>
      <weight>75</weight>
      <bold>true</bold>
     </font>
@@ -449,7 +449,7 @@ background-color: rgb(0, 0, 0);
     </rect>
    </property>
    <property name="toolTip">
-    <string>XX_DigIn_3</string>
+    <string>XX_DigIn_2</string>
    </property>
    <property name="whatsThis">
     <string>ATCMled widget</string>
@@ -461,7 +461,7 @@ background-color: rgb(0, 0, 0);
     </font>
    </property>
    <property name="variable">
-    <string>XX_DigIn_3</string>
+    <string>XX_DigIn_2</string>
    </property>
    <property name="refresh">
     <number>500</number>
@@ -491,7 +491,7 @@ background-color: rgb(0, 0, 0);
     </rect>
    </property>
    <property name="toolTip">
-    <string>XX_DigIn_7</string>
+    <string>XX_DigIn_6</string>
    </property>
    <property name="whatsThis">
     <string>ATCMled widget</string>
@@ -503,7 +503,7 @@ background-color: rgb(0, 0, 0);
     </font>
    </property>
    <property name="variable">
-    <string>XX_DigIn_7</string>
+    <string>XX_DigIn_6</string>
    </property>
    <property name="refresh">
     <number>500</number>
@@ -533,7 +533,7 @@ background-color: rgb(0, 0, 0);
     </rect>
    </property>
    <property name="toolTip">
-    <string>XX_DigIn_1</string>
+    <string>XX_DigIn_4</string>
    </property>
    <property name="whatsThis">
     <string>ATCMled widget</string>
@@ -545,7 +545,7 @@ background-color: rgb(0, 0, 0);
     </font>
    </property>
    <property name="variable">
-    <string>XX_DigIn_1</string>
+    <string>XX_DigIn_4</string>
    </property>
    <property name="refresh">
     <number>500</number>
@@ -575,7 +575,7 @@ background-color: rgb(0, 0, 0);
     </rect>
    </property>
    <property name="toolTip">
-    <string>XX_DigIn_6</string>
+    <string>XX_DigIn_7</string>
    </property>
    <property name="whatsThis">
     <string>ATCMled widget</string>
@@ -587,7 +587,7 @@ background-color: rgb(0, 0, 0);
     </font>
    </property>
    <property name="variable">
-    <string>XX_DigIn_6</string>
+    <string>XX_DigIn_7</string>
    </property>
    <property name="refresh">
     <number>500</number>
@@ -617,7 +617,7 @@ background-color: rgb(0, 0, 0);
     </rect>
    </property>
    <property name="toolTip">
-    <string>XX_DigIn_2</string>
+    <string>XX_DigIn_3</string>
    </property>
    <property name="whatsThis">
     <string>ATCMled widget</string>
@@ -629,7 +629,7 @@ background-color: rgb(0, 0, 0);
     </font>
    </property>
    <property name="variable">
-    <string>XX_DigIn_2</string>
+    <string>XX_DigIn_3</string>
    </property>
    <property name="refresh">
     <number>500</number>
@@ -659,7 +659,7 @@ background-color: rgb(0, 0, 0);
     </rect>
    </property>
    <property name="toolTip">
-    <string>XX_DigIn_8</string>
+    <string>XX_DigIn_5</string>
    </property>
    <property name="whatsThis">
     <string>ATCMled widget</string>
@@ -671,7 +671,7 @@ background-color: rgb(0, 0, 0);
     </font>
    </property>
    <property name="variable">
-    <string>XX_DigIn_8</string>
+    <string>XX_DigIn_5</string>
    </property>
    <property name="refresh">
     <number>500</number>
@@ -701,7 +701,7 @@ background-color: rgb(0, 0, 0);
     </rect>
    </property>
    <property name="toolTip">
-    <string>XX_DigIn_4</string>
+    <string>XX_DigIn_1</string>
    </property>
    <property name="whatsThis">
     <string>ATCMled widget</string>
@@ -713,7 +713,7 @@ background-color: rgb(0, 0, 0);
     </font>
    </property>
    <property name="variable">
-    <string>XX_DigIn_4</string>
+    <string>XX_DigIn_1</string>
    </property>
    <property name="refresh">
     <number>500</number>
@@ -743,7 +743,7 @@ background-color: rgb(0, 0, 0);
     </rect>
    </property>
    <property name="toolTip">
-    <string>XX_DigIn_5</string>
+    <string>XX_DigIn_8</string>
    </property>
    <property name="whatsThis">
     <string>ATCMled widget</string>
@@ -755,7 +755,7 @@ background-color: rgb(0, 0, 0);
     </font>
    </property>
    <property name="variable">
-    <string>XX_DigIn_5</string>
+    <string>XX_DigIn_8</string>
    </property>
    <property name="refresh">
     <number>500</number>
@@ -2388,7 +2388,7 @@ background-color: rgb(0, 0, 0);
     <bool>false</bool>
    </property>
    <property name="toolTip">
-    <string>XX_DigOut_5</string>
+    <string>XX_DigOut_8</string>
    </property>
    <property name="whatsThis">
     <string>ATCMbutton widget</string>
@@ -2400,7 +2400,7 @@ background-color: rgb(0, 0, 0);
     <string/>
    </property>
    <property name="statusvar">
-    <string>XX_DigOut_5</string>
+    <string>XX_DigOut_8</string>
    </property>
    <property name="viewStatus">
     <bool>false</bool>
@@ -2481,7 +2481,7 @@ background-color: rgb(0, 0, 0);
     <bool>false</bool>
    </property>
    <property name="toolTip">
-    <string>XX_DigOut_6</string>
+    <string>XX_DigOut_7</string>
    </property>
    <property name="whatsThis">
     <string>ATCMbutton widget</string>
@@ -2493,7 +2493,7 @@ background-color: rgb(0, 0, 0);
     <string/>
    </property>
    <property name="statusvar">
-    <string>XX_DigOut_6</string>
+    <string>XX_DigOut_7</string>
    </property>
    <property name="viewStatus">
     <bool>false</bool>
@@ -2574,7 +2574,7 @@ background-color: rgb(0, 0, 0);
     <bool>false</bool>
    </property>
    <property name="toolTip">
-    <string>XX_DigOut_7</string>
+    <string>XX_DigOut_6</string>
    </property>
    <property name="whatsThis">
     <string>ATCMbutton widget</string>
@@ -2586,7 +2586,7 @@ background-color: rgb(0, 0, 0);
     <string/>
    </property>
    <property name="statusvar">
-    <string>XX_DigOut_7</string>
+    <string>XX_DigOut_6</string>
    </property>
    <property name="viewStatus">
     <bool>false</bool>
@@ -2667,7 +2667,7 @@ background-color: rgb(0, 0, 0);
     <bool>false</bool>
    </property>
    <property name="toolTip">
-    <string>XX_DigOut_8</string>
+    <string>XX_DigOut_5</string>
    </property>
    <property name="whatsThis">
     <string>ATCMbutton widget</string>
@@ -2679,7 +2679,7 @@ background-color: rgb(0, 0, 0);
     <string/>
    </property>
    <property name="statusvar">
-    <string>XX_DigOut_8</string>
+    <string>XX_DigOut_5</string>
    </property>
    <property name="viewStatus">
     <bool>false</bool>
@@ -2799,22 +2799,21 @@ background-color: rgb(0, 0, 0);
     <rect>
      <x>266</x>
      <y>400</y>
-     <width>200</width>
+     <width>301</width>
      <height>40</height>
     </rect>
    </property>
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>8</pointsize>
+     <pointsize>10</pointsize>
     </font>
    </property>
    <property name="styleSheet">
     <string notr="true">background-color: rgb(0,0,0);color: rgb(0,255,0);</string>
    </property>
    <property name="text">
-    <string>CALDAIA
-(PUFFER)</string>
+    <string>CALDAIA (PUFFER)</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -3731,16 +3730,16 @@ background-color: rgb(0, 0, 0);
    </property>
    <property name="geometry">
     <rect>
-     <x>656</x>
+     <x>710</x>
      <y>400</y>
-     <width>69</width>
+     <width>29</width>
      <height>40</height>
     </rect>
    </property>
    <property name="font">
     <font>
      <family>DejaVu Sans Mono</family>
-     <pointsize>11</pointsize>
+     <pointsize>8</pointsize>
      <weight>75</weight>
      <bold>true</bold>
     </font>
@@ -4076,7 +4075,7 @@ color: rgb(85, 85, 255);</string>
      <x>566</x>
      <y>0</y>
      <width>3</width>
-     <height>400</height>
+     <height>440</height>
     </rect>
    </property>
    <property name="font">
@@ -4300,16 +4299,16 @@ color: rgb(85, 85, 255);</string>
    </property>
    <property name="geometry">
     <rect>
-     <x>725</x>
+     <x>741</x>
      <y>400</y>
-     <width>75</width>
+     <width>59</width>
      <height>40</height>
     </rect>
    </property>
    <property name="font">
     <font>
      <family>DejaVu Sans Mono</family>
-     <pointsize>12</pointsize>
+     <pointsize>11</pointsize>
      <weight>75</weight>
      <bold>true</bold>
     </font>
@@ -4756,9 +4755,9 @@ color: rgb(0, 0, 0);</string>
   <widget class="ATCMbutton" name="atcmButton_10">
    <property name="geometry">
     <rect>
-     <x>636</x>
+     <x>644</x>
      <y>0</y>
-     <width>70</width>
+     <width>78</width>
      <height>40</height>
     </rect>
    </property>
@@ -4824,7 +4823,7 @@ color: rgb(0, 0, 0);</string>
     <rect>
      <x>566</x>
      <y>0</y>
-     <width>70</width>
+     <width>78</width>
      <height>40</height>
     </rect>
    </property>
@@ -4885,20 +4884,20 @@ color: rgb(0, 0, 0);</string>
   <widget class="ATCMlabel" name="atcmLabel_6">
    <property name="geometry">
     <rect>
-     <x>706</x>
+     <x>722</x>
      <y>0</y>
-     <width>94</width>
+     <width>78</width>
      <height>40</height>
     </rect>
    </property>
    <property name="font">
     <font>
      <family>DejaVu Sans Mono</family>
-     <pointsize>9</pointsize>
+     <pointsize>8</pointsize>
     </font>
    </property>
    <property name="text">
-    <string>nnnnnn</string>
+    <string>nnnnn</string>
    </property>
    <property name="toolTip">
     <string>openvpn_restart_times</string>
@@ -4910,7 +4909,7 @@ color: rgb(0, 0, 0);</string>
     <string>openvpn_restart_times</string>
    </property>
    <property name="prefix">
-    <string># </string>
+    <string/>
    </property>
    <property name="refresh">
     <number>200</number>
@@ -4930,19 +4929,19 @@ color: rgb(0, 0, 0);</string>
    <property name="bgColor">
     <color>
      <red>0</red>
-     <green>0</green>
+     <green>255</green>
      <blue>0</blue>
     </color>
    </property>
    <property name="fontColor">
     <color>
-     <red>255</red>
+     <red>0</red>
      <green>0</green>
      <blue>0</blue>
     </color>
    </property>
    <property name="borderWidth">
-    <number>0</number>
+    <number>1</number>
    </property>
    <property name="borderRadius">
     <number>0</number>
