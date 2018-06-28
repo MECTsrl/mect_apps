@@ -79,6 +79,7 @@
         <location filename="page100.ui" line="4483"/>
         <location filename="page100.ui" line="4555"/>
         <location filename="page100.ui" line="4906"/>
+        <location filename="page100.ui" line="4980"/>
         <source>ATCMlabel widget</source>
         <translation type="unfinished"></translation>
     </message>
@@ -228,6 +229,8 @@
         <location filename="page100.ui" line="4421"/>
         <location filename="page100.ui" line="4498"/>
         <location filename="page100.ui" line="4501"/>
+        <location filename="page100.ui" line="4995"/>
+        <location filename="page100.ui" line="4998"/>
         <source>0</source>
         <translation type="unfinished"></translation>
     </message>
@@ -446,9 +449,14 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="3446"/>
         <location filename="page100.ui" line="4489"/>
         <source>- </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page100.ui" line="4977"/>
+        <location filename="page100.ui" line="4983"/>
+        <source>SysImpActiveEnergy_1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -687,6 +695,7 @@
         <location filename="page100.ui" line="3588"/>
         <location filename="page100.ui" line="3668"/>
         <location filename="page100.ui" line="4474"/>
+        <location filename="page100.ui" line="4971"/>
         <source>NNnnn.N</source>
         <translation type="unfinished"></translation>
     </message>
@@ -703,6 +712,7 @@
         <location filename="page100.ui" line="3606"/>
         <location filename="page100.ui" line="3686"/>
         <location filename="page100.ui" line="4492"/>
+        <location filename="page100.ui" line="4989"/>
         <source> Wh</source>
         <translation type="unfinished"></translation>
     </message>

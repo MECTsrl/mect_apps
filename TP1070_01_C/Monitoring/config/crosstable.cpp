@@ -448,6 +448,13 @@ float SysActivePower_1 = 0;
 
 
 /*
+ * Variable SysImpActiveEnergy_1	[ 0x0B 0x1106 Energia Attiva Importata 1 in Wh (FOTOVOLTAICO) ]
+ */
+
+float SysImpActiveEnergy_1 = 0;
+
+
+/*
  * Variable SysExpActiveEnergy_1	[ 0x0B 0x110E Energia Attiva Esportata 0 in Wh (FOTOVOLTAICO) ]
  */
 
@@ -3148,6 +3155,24 @@ int
 getStatus_SysActivePower_1(void)
 {
 	return getStatus(ID_SysActivePower_1);
+}
+
+int
+doWrite_SysImpActiveEnergy_1(float value)
+{
+	return doWrite(ID_SysImpActiveEnergy_1, &value);
+}
+
+int
+addWrite_SysImpActiveEnergy_1(float value)
+{
+	return addWrite(ID_SysImpActiveEnergy_1, &value);
+}
+
+int
+getStatus_SysImpActiveEnergy_1(void)
+{
+	return getStatus(ID_SysImpActiveEnergy_1);
 }
 
 int
@@ -7392,6 +7417,7 @@ update_all(void)
 	retval += readFromDb(ID_SysImpActiveEnergy_0, &SysImpActiveEnergy_0);
 	retval += readFromDb(ID_SysExpActiveEnergy_0, &SysExpActiveEnergy_0);
 	retval += readFromDb(ID_SysActivePower_1, &SysActivePower_1);
+	retval += readFromDb(ID_SysImpActiveEnergy_1, &SysImpActiveEnergy_1);
 	retval += readFromDb(ID_SysExpActiveEnergy_1, &SysExpActiveEnergy_1);
 	retval += readFromDb(ID_SysActivePower_2, &SysActivePower_2);
 	retval += readFromDb(ID_SysImpActiveEnergy_2, &SysImpActiveEnergy_2);

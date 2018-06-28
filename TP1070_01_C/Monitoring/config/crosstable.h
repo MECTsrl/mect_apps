@@ -394,109 +394,115 @@ int doWrite_SysActivePower_1(float value);
 int addWrite_SysActivePower_1(float value);
 int getStatus_SysActivePower_1(void);
 
-#define ID_SysExpActiveEnergy_1 255
+#define ID_SysImpActiveEnergy_1 255
+extern float SysImpActiveEnergy_1;	/* 0x0B 0x1106 Energia Attiva Importata 1 in Wh (FOTOVOLTAICO) */
+int doWrite_SysImpActiveEnergy_1(float value);
+int addWrite_SysImpActiveEnergy_1(float value);
+int getStatus_SysImpActiveEnergy_1(void);
+
+#define ID_SysExpActiveEnergy_1 256
 extern float SysExpActiveEnergy_1;	/* 0x0B 0x110E Energia Attiva Esportata 0 in Wh (FOTOVOLTAICO) */
 int doWrite_SysExpActiveEnergy_1(float value);
 int addWrite_SysExpActiveEnergy_1(float value);
 int getStatus_SysExpActiveEnergy_1(void);
 
-#define ID_SysActivePower_2 256
+#define ID_SysActivePower_2 257
 extern float SysActivePower_2;	/* 0x0C 0x1026 Potenza Attiva 0 in W (ESTERNI) */
 int doWrite_SysActivePower_2(float value);
 int addWrite_SysActivePower_2(float value);
 int getStatus_SysActivePower_2(void);
 
-#define ID_SysImpActiveEnergy_2 257
+#define ID_SysImpActiveEnergy_2 258
 extern float SysImpActiveEnergy_2;	/* 0x0C 0x1106 Energia Attiva Importata 0 in Wh (ESTERNI) */
 int doWrite_SysImpActiveEnergy_2(float value);
 int addWrite_SysImpActiveEnergy_2(float value);
 int getStatus_SysImpActiveEnergy_2(void);
 
-#define ID_SysActivePower_3 258
+#define ID_SysActivePower_3 259
 extern float SysActivePower_3;	/* 0x0D 0x1026 Potenza Attiva 0 in W (PIANO SOPRA) */
 int doWrite_SysActivePower_3(float value);
 int addWrite_SysActivePower_3(float value);
 int getStatus_SysActivePower_3(void);
 
-#define ID_SysImpActiveEnergy_3 259
+#define ID_SysImpActiveEnergy_3 260
 extern float SysImpActiveEnergy_3;	/* 0x0D 0x1106 Energia Attiva Importata 0 in Wh (PIANO SOPRA) */
 int doWrite_SysImpActiveEnergy_3(float value);
 int addWrite_SysImpActiveEnergy_3(float value);
 int getStatus_SysImpActiveEnergy_3(void);
 
-#define ID_SysActivePower_4 260
+#define ID_SysActivePower_4 261
 extern float SysActivePower_4;	/* 0x0E 0x1026 Potenza Attiva 0 in W (PIANO TERRA) */
 int doWrite_SysActivePower_4(float value);
 int addWrite_SysActivePower_4(float value);
 int getStatus_SysActivePower_4(void);
 
-#define ID_SysImpActiveEnergy_4 261
+#define ID_SysImpActiveEnergy_4 262
 extern float SysImpActiveEnergy_4;	/* 0x0E 0x1106 Energia Attiva Importata 0 in Wh (PIANO TERRA) */
 int doWrite_SysImpActiveEnergy_4(float value);
 int addWrite_SysImpActiveEnergy_4(float value);
 int getStatus_SysImpActiveEnergy_4(void);
 
-#define ID_SysActivePower_5 262
+#define ID_SysActivePower_5 263
 extern float SysActivePower_5;	/* 0x0F 0x1026 Potenza Attiva 0 in W (PIANO SOTTO) */
 int doWrite_SysActivePower_5(float value);
 int addWrite_SysActivePower_5(float value);
 int getStatus_SysActivePower_5(void);
 
-#define ID_SysImpActiveEnergy_5 263
+#define ID_SysImpActiveEnergy_5 264
 extern float SysImpActiveEnergy_5;	/* 0x0F 0x1106 Energia Attiva Importata 0 in Wh (PIANO SOTTO) */
 int doWrite_SysImpActiveEnergy_5(float value);
 int addWrite_SysImpActiveEnergy_5(float value);
 int getStatus_SysImpActiveEnergy_5(void);
 
-#define ID_SysActivePower_6 264
+#define ID_SysActivePower_6 265
 extern float SysActivePower_6;	/* 0x10 0x1026 Potenza Attiva 0 in W (AUTO ELETTRICA) */
 int doWrite_SysActivePower_6(float value);
 int addWrite_SysActivePower_6(float value);
 int getStatus_SysActivePower_6(void);
 
-#define ID_SysImpActiveEnergy_6 265
+#define ID_SysImpActiveEnergy_6 266
 extern float SysImpActiveEnergy_6;	/* 0x10 0x1106 Energia Attiva Importata 0 in Wh (AUTO ELETTRICA) */
 int doWrite_SysImpActiveEnergy_6(float value);
 int addWrite_SysImpActiveEnergy_6(float value);
 int getStatus_SysImpActiveEnergy_6(void);
 
-#define ID_SysActivePower_7 266
+#define ID_SysActivePower_7 267
 extern float SysActivePower_7;	/* 0x11 0x1026 Potenza Attiva 0 in W (DEUMIDIFICATORE) */
 int doWrite_SysActivePower_7(float value);
 int addWrite_SysActivePower_7(float value);
 int getStatus_SysActivePower_7(void);
 
-#define ID_SysImpActiveEnergy_7 267
+#define ID_SysImpActiveEnergy_7 268
 extern float SysImpActiveEnergy_7;	/* 0x11 0x1106 Energia Attiva Importata 0 in Wh (DEUMIDIFICATORE) */
 int doWrite_SysImpActiveEnergy_7(float value);
 int addWrite_SysImpActiveEnergy_7(float value);
 int getStatus_SysImpActiveEnergy_7(void);
 
-#define ID_SysActivePower_8 268
+#define ID_SysActivePower_8 269
 extern float SysActivePower_8;	/* 0x12 0x1026 Potenza Attiva 0 in W (LAVANDERIA) */
 int doWrite_SysActivePower_8(float value);
 int addWrite_SysActivePower_8(float value);
 int getStatus_SysActivePower_8(void);
 
-#define ID_SysImpActiveEnergy_8 269
+#define ID_SysImpActiveEnergy_8 270
 extern float SysImpActiveEnergy_8;	/* 0x12 0x1106 Energia Attiva Importata 0 in Wh (LAVANDERIA) */
 int doWrite_SysImpActiveEnergy_8(float value);
 int addWrite_SysImpActiveEnergy_8(float value);
 int getStatus_SysImpActiveEnergy_8(void);
 
-#define ID_SysActivePower_9 270
+#define ID_SysActivePower_9 271
 extern float SysActivePower_9;	/* 0x13 0x1026 Potenza Attiva 0 in W (UPS) */
 int doWrite_SysActivePower_9(float value);
 int addWrite_SysActivePower_9(float value);
 int getStatus_SysActivePower_9(void);
 
-#define ID_SysApparentPower_9 271
+#define ID_SysApparentPower_9 272
 extern float SysApparentPower_9;	/* 0x13 0x102E Potenza Apparente 0 in VA (UPS) */
 int doWrite_SysApparentPower_9(float value);
 int addWrite_SysApparentPower_9(float value);
 int getStatus_SysApparentPower_9(void);
 
-#define ID_SysImpActiveEnergy_9 272
+#define ID_SysImpActiveEnergy_9 273
 extern float SysImpActiveEnergy_9;	/* 0x13 0x1106 Energia Attiva Importata 0 in Wh (UPS) */
 int doWrite_SysImpActiveEnergy_9(float value);
 int addWrite_SysImpActiveEnergy_9(float value);
