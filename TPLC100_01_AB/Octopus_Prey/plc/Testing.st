@@ -31,14 +31,14 @@ END_VAR
 			2:  ifTST_readVAL_writePLC(substatus);
 				substatus := 3;
 			3:  (* wait for output settling *)
-				timer(IN := TRUE, PT := T#2000ms); (* TPLC100 AnIn *)
+				timer(IN := TRUE, PT := T#3333ms); (* TPLC100 AnIn *)
 				if timer.Q then
 					timer(IN := FALSE);
 					ifTST_readVAL_writePLC(substatus);
 					substatus := 4;
 				end_if;
 			4: (* wait for input settling *)
-		        timer(IN := TRUE, PT := T#3000ms); (* TPAC1006 AnIn *)
+		        timer(IN := TRUE, PT := T#9999ms); (* TPLC100 AnIn *)
 				if timer.Q then
 					timer(IN := FALSE);
 					(* for each tested input read the actual value *)

@@ -54,8 +54,8 @@ static char product_name[][15] = {
     /*25*/ "TPLC100_01_AB" ,
     /*26*/
 };
-#define RECIPE_MAX 2
-static char recipe_name[][3] = {"-", "1", "2"};
+#define RECIPE_MAX 3
+static char recipe_name[][RECIPE_MAX] = {"-", "1", "2", "3"};
 
 #define abs(v) (((v) > 0)? (v):-(v))
 

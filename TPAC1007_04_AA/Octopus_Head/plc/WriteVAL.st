@@ -107,13 +107,14 @@ END_VAR
 		VAL2_AnOut_4 := ValueOut(Val_AnIn_5, VAL_AnInConf_5);
 	end_if;
 
-	if TST_AnIn_6  then ; end_if;
-	if TST_AnIn_7  then ; end_if;
-	if TST_AnIn_8  then ; end_if;
-	if TST_AnIn_9  then ; end_if;
-	if TST_AnIn_10 then ; end_if;
-	if TST_AnIn_11 then ; end_if;
-	if TST_AnIn_12 then ; end_if;
+	(* TPLC100 AnIn_5..12 *)
+	if TST_AnIn_6  then VALx_AnInConf_6  := VAL_AnInConf_6 ; end_if;
+	if TST_AnIn_7  then VALx_AnInConf_7  := VAL_AnInConf_7 ; end_if;
+	if TST_AnIn_8  then VALx_AnInConf_8  := VAL_AnInConf_8 ; end_if;
+	if TST_AnIn_9  then VALx_AnInConf_9  := VAL_AnInConf_9 ; end_if;
+	if TST_AnIn_10 then VALx_AnInConf_10 := VAL_AnInConf_10; end_if;
+	if TST_AnIn_11 then VALx_AnInConf_11 := VAL_AnInConf_11; end_if;
+	if TST_AnIn_12 then VALx_AnInConf_12 := VAL_AnInConf_12; end_if;
 
 	if TST_AnOut_1  then
 		VALx_AnOut_1 := VAL_AnOut_1;

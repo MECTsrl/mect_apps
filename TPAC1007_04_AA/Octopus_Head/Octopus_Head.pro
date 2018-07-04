@@ -104,10 +104,12 @@ OTHER_FILES += \
     recipes/TPLC100_01_AA/2.csv \
     recipes/TPLC100_01_AB/1.csv \
     recipes/TPLC100_01_AB/2.csv \
+    recipes/TPLC100_01_AB/3.csv \
     recipes/TPAC1008_03_AC/1.csv \
     recipes/TPAC1008_03_AC/2.csv \
     recipes/Values/1.csv \
     recipes/Values/2.csv \
+    recipes/Values/3.csv \
     recipes/Zeroes/0.csv \
     recipes/TPAC1005/2.csv \
     recipes/TPAC1005/1.csv
@@ -181,13 +183,13 @@ recipes_TPAC1008_02_AF.path = /local/data/recipe/TPAC1008_02_AF
 recipes_TPLC100_01_AA.files = recipes/TPLC100_01_AA/1.csv recipes/TPLC100_01_AA/2.csv
 recipes_TPLC100_01_AA.path = /local/data/recipe/TPLC100_01_AA
 
-recipes_TPLC100_01_AB.files = recipes/TPLC100_01_AB/1.csv recipes/TPLC100_01_AB/2.csv
+recipes_TPLC100_01_AB.files = recipes/TPLC100_01_AB/1.csv recipes/TPLC100_01_AB/2.csv recipes/TPLC100_01_AB/3.csv
 recipes_TPLC100_01_AB.path = /local/data/recipe/TPLC100_01_AB
 
 recipes_TPAC1008_03_AC.files = recipes/TPAC1008_03_AC/1.csv recipes/TPAC1008_03_AC/2.csv
 recipes_TPAC1008_03_AC.path = /local/data/recipe/TPAC1008_03_AC
 
-recipes_Values.files = recipes/Values/1.csv recipes/Values/2.csv
+recipes_Values.files = recipes/Values/1.csv recipes/Values/2.csv recipes/Values/3.csv
 recipes_Values.path = /local/data/recipe/Values
 
 recipes_Zeroes.files = recipes/Zeroes/0.csv

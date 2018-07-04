@@ -53,7 +53,18 @@ END_VAR
 	if TST_AnIn_3  then OK_AnIn_3  := CheckAnIn(RES_AnIn_3 , VAL_AnIn_3 , VAL_AnInConf_3 , RES_Tamb); end_if;
 	if TST_AnIn_4  then OK_AnIn_4  := CheckAnIn(RES_AnIn_4 , VAL_AnIn_4 , VAL_AnInConf_4 , RES_Tamb); end_if;
 
-	if TST_AnIn_5  then OK_AnIn_5  := CheckAnIn(RES_AnIn_5 , VAL_AnIn_5 , VAL_AnInConf_5 , RES_Tamb); end_if;
+	if TST_AnIn_5  then
+		if VAL_AnInConf_5 = 2 then 
+			(* TPAC1007_04_AB with Decimals=3 *)
+			OK_AnIn_5  := CheckAnIn(RES_AnIn_5 , VAL_AnIn_5 , VAL_AnInConf_5 , RES_Tamb);
+		elsif VAL_AnInConf_5 = 7 then 
+			(* TPLC100_01_AB with Decimals=3 but fixed point=1 *)
+			OK_AnIn_5  := CheckAnIn(RES_AnIn_5 / 100, VAL_AnIn_5 /100, VAL_AnInConf_5 , RES_Tamb);
+		else
+			OK_AnIn_5 := false;
+		end_if;
+	end_if;
+
 
 	if TST_AnIn_6  then OK_AnIn_6  := CheckAnIn(RES_AnIn_6 , VAL_AnIn_6 , VAL_AnInConf_6 , RES_Tamb); end_if;
 	if TST_AnIn_7  then OK_AnIn_7  := CheckAnIn(RES_AnIn_7 , VAL_AnIn_7 , VAL_AnInConf_7 , RES_Tamb); end_if;

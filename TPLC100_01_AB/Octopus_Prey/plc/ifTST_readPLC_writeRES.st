@@ -37,7 +37,8 @@ END_VAR
     if (TST_AnIn_3    ) then RES_AnIn_3  := PLC_AnIn_3 ; end_if;
     if (TST_AnIn_4    ) then RES_AnIn_4  := PLC_AnIn_4 ; end_if;
 
-    if (TST_AnIn_5    ) then RES_AnIn_5  := PLC_AnIn_5 ; end_if;
+    if (TST_AnIn_5    ) then RES_AnIn_5  := PLC_AnIn_5 * 100; end_if;
+
     if (TST_AnIn_6    ) then RES_AnIn_6  := PLC_AnIn_6 ; end_if;
     if (TST_AnIn_7    ) then RES_AnIn_7  := PLC_AnIn_7 ; end_if;
     if (TST_AnIn_8    ) then RES_AnIn_8  := PLC_AnIn_8 ; end_if;

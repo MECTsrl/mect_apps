@@ -40,14 +40,14 @@ END_VAR
 		if (TST_AnIn_3  ) then PLC_AnInConf_3 := 0; RES_AnIn_3 := 0; end_if; 
 	    if (TST_AnIn_4  ) then PLC_AnInConf_4 := 0; RES_AnIn_4 := 0; end_if;
 
-	    if (TST_AnIn_5  ) then PLC_AnInConf_5 := 0; RES_AnIn_5 := 0; end_if;
-	    if (TST_AnIn_6  ) then PLC_AnInConf_6 := 0; RES_AnIn_6 := 0; end_if;
-	    if (TST_AnIn_7  ) then PLC_AnInConf_7 := 0; RES_AnIn_7 := 0; end_if;
-	    if (TST_AnIn_8  ) then PLC_AnInConf_8 := 0; RES_AnIn_8 := 0; end_if;
-	    if (TST_AnIn_9  ) then PLC_AnInConf_9 := 0; RES_AnIn_9 := 0; end_if;
-	    if (TST_AnIn_10 ) then PLC_AnInConf_10:= 0; RES_AnIn_10:= 0; end_if;
-	    if (TST_AnIn_11 ) then PLC_AnInConf_11:= 0; RES_AnIn_11:= 0; end_if;
-	    if (TST_AnIn_12 ) then PLC_AnInConf_12:= 0; RES_AnIn_12:= 0; end_if;
+	    if (TST_AnIn_5  ) then (* PLC_AnInConf_5 := 0; *) RES_AnIn_5 := 0; end_if;
+	    if (TST_AnIn_6  ) then (* PLC_AnInConf_6 := 0; *) RES_AnIn_6 := 0; end_if;
+	    if (TST_AnIn_7  ) then (* PLC_AnInConf_7 := 0; *) RES_AnIn_7 := 0; end_if;
+	    if (TST_AnIn_8  ) then (* PLC_AnInConf_8 := 0; *) RES_AnIn_8 := 0; end_if;
+	    if (TST_AnIn_9  ) then (* PLC_AnInConf_9 := 0; *) RES_AnIn_9 := 0; end_if;
+	    if (TST_AnIn_10 ) then (* PLC_AnInConf_10:= 0; *) RES_AnIn_10:= 0; end_if;
+	    if (TST_AnIn_11 ) then (* PLC_AnInConf_11:= 0; *) RES_AnIn_11:= 0; end_if;
+	    if (TST_AnIn_12 ) then (* PLC_AnInConf_12:= 0; *) RES_AnIn_12:= 0; end_if;
 
 	    if (TST_AnOut_1 ) then
 			if (VAL_AnOutConf_1 = 3) then
