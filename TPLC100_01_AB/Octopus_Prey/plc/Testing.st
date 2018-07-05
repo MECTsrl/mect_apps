@@ -23,37 +23,44 @@ END_VAR
 	    end_if;
 	    if (TEST_COMMAND = STATUS_DONE) then
 			case substatus of
-			0: (* for each tested output write the specified value *)
-	        	ifTST_readVAL_writePLC(substatus);
+
+			0:  ifTST_readVAL_writePLC(substatus); (* AnInConf := 0; AnOutConf = x | 2(pwm) *)
 				substatus := 1;
-	        1:	ifTST_readVAL_writePLC(substatus);
+
+	        1:	ifTST_readVAL_writePLC(substatus); (* AnOutConf := 3(pwm) *)
 				substatus := 2;
-			2:  ifTST_readVAL_writePLC(substatus);
+
+			2:  ifTST_readVAL_writePLC(substatus); (* AnOut := y(pwm) *)
 				substatus := 3;
-			3:  (* wait for output settling *)
-				timer(IN := TRUE, PT := T#3333ms); (* TPLC100 AnIn *)
+
+			3:  timer(IN := TRUE, PT := T#2000ms); (* wait for output settling *)
 				if timer.Q then
 					timer(IN := FALSE);
-					ifTST_readVAL_writePLC(substatus);
+					ifTST_readVAL_writePLC(substatus); (* AnInConf := x *)
 					substatus := 4;
 				end_if;
-			4: (* wait for input settling *)
-		        timer(IN := TRUE, PT := T#9999ms); (* TPLC100 AnIn *)
-				if timer.Q then
-					timer(IN := FALSE);
-					(* for each tested input read the actual value *)
-		        ifTST_readPLC_writeRES();
+
+			4:  if allAnalogInputsAreOK() then (* wait for input settling *)
 					substatus := 5;
 				end_if;
-			5: (* wait for propagation *)
-				timer(IN := TRUE, PT := T#1000ms);
+
+			5:  timer(IN := TRUE, PT := T#2000ms); (* wait a bit *)
 				if timer.Q then
 					timer(IN := FALSE);
+			        ifTST_readPLC_writeRES();
 					substatus := 6;
 				end_if;
-			 6: (* change status *)
+
+			6:  timer(IN := TRUE, PT := T#1000ms); (* wait for propagation *)
+				if timer.Q then
+					timer(IN := FALSE);
+					substatus := 7;
+				end_if;
+
+			 7: (* change status *)
 				STATUS := STATUS_DONE;
 				TEST_STATUS := STATUS;
+
 			 else
 				;
 			 end_case;

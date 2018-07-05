@@ -34,7 +34,7 @@ END_VAR
 					substatus := 2;
 				end_if;
 			2: (* wait for the analog inputs *)
-				timer(IN := TRUE, PT := T#3000ms); 
+				timer(IN := TRUE, PT := T#5000ms); 
 				if timer.Q then
 					timer(IN := FALSE);
 	        		(* for each tested input write the actual value *)

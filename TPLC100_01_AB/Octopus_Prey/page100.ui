@@ -88,13 +88,13 @@ background-color: rgb(0, 0, 0);
    <property name="font">
     <font>
      <family>DejaVu Sans Mono</family>
-     <pointsize>5</pointsize>
+     <pointsize>8</pointsize>
      <weight>75</weight>
      <bold>true</bold>
     </font>
    </property>
    <property name="text">
-    <string>0x01020304</string>
+    <string>0x0021</string>
    </property>
    <property name="styleSheet">
     <string notr="true">color: rgb(0, 0, 127);</string>
@@ -154,7 +154,7 @@ background-color: rgb(0, 0, 0);
    <property name="geometry">
     <rect>
      <x>180</x>
-     <y>204</y>
+     <y>207</y>
      <width>60</width>
      <height>136</height>
     </rect>
@@ -162,13 +162,13 @@ background-color: rgb(0, 0, 0);
    <property name="font">
     <font>
      <family>DejaVu Sans Mono</family>
-     <pointsize>5</pointsize>
+     <pointsize>8</pointsize>
      <weight>75</weight>
      <bold>true</bold>
     </font>
    </property>
    <property name="text">
-    <string>0x01020304</string>
+    <string>0x8765</string>
    </property>
    <property name="styleSheet">
     <string notr="true">color: rgb(0, 0, 127);</string>
@@ -256,7 +256,7 @@ background-color: rgb(0, 0, 0);
    <property name="geometry">
     <rect>
      <x>0</x>
-     <y>306</y>
+     <y>309</y>
      <width>120</width>
      <height>34</height>
     </rect>
@@ -321,6 +321,9 @@ background-color: rgb(0, 0, 0);
    </property>
    <property name="borderRadius">
     <number>0</number>
+   </property>
+   <property name="apparence">
+    <enum>QFrame::Plain</enum>
    </property>
   </widget>
   <widget class="ATCMled" name="atcmLed_PLC_DigIn_4">
@@ -387,7 +390,7 @@ background-color: rgb(0, 0, 0);
   <widget class="ATCMlabel" name="atcmLabel_PLC_AnOut_1">
    <property name="geometry">
     <rect>
-     <x>240</x>
+     <x>241</x>
      <y>68</y>
      <width>120</width>
      <height>34</height>
@@ -465,7 +468,7 @@ background-color: rgb(0, 0, 0);
    <property name="geometry">
     <rect>
      <x>0</x>
-     <y>340</y>
+     <y>346</y>
      <width>120</width>
      <height>34</height>
     </rect>
@@ -542,7 +545,7 @@ background-color: rgb(0, 0, 0);
    <property name="geometry">
     <rect>
      <x>0</x>
-     <y>238</y>
+     <y>241</y>
      <width>120</width>
      <height>34</height>
     </rect>
@@ -677,13 +680,13 @@ background-color: rgb(0, 0, 0);
    <property name="font">
     <font>
      <family>DejaVu Sans Mono</family>
-     <pointsize>5</pointsize>
+     <pointsize>8</pointsize>
      <weight>75</weight>
      <bold>true</bold>
     </font>
    </property>
    <property name="text">
-    <string>0x01020304</string>
+    <string>0x4321</string>
    </property>
    <property name="styleSheet">
     <string notr="true">color: rgb(0, 0, 127);</string>
@@ -811,6 +814,9 @@ background-color: rgb(0, 0, 0);
    </property>
    <property name="borderRadius">
     <number>0</number>
+   </property>
+   <property name="apparence">
+    <enum>QFrame::Plain</enum>
    </property>
   </widget>
   <widget class="ATCMled" name="atcmLed_CH0_01_NODEGOOD">
@@ -1020,6 +1026,9 @@ background-color: rgb(0, 0, 0);
    <property name="borderRadius">
     <number>0</number>
    </property>
+   <property name="apparence">
+    <enum>QFrame::Plain</enum>
+   </property>
   </widget>
   <widget class="ATCMlabel" name="atcmLabel_PLC_AnIn_3">
    <property name="enabled">
@@ -1093,6 +1102,9 @@ background-color: rgb(0, 0, 0);
    </property>
    <property name="borderRadius">
     <number>0</number>
+   </property>
+   <property name="apparence">
+    <enum>QFrame::Plain</enum>
    </property>
   </widget>
   <widget class="ATCMled" name="atcmLed_CH0_01_NODERUN">
@@ -1237,7 +1249,7 @@ background-color: rgb(0, 0, 0);
    <property name="geometry">
     <rect>
      <x>180</x>
-     <y>338</y>
+     <y>344</y>
      <width>60</width>
      <height>136</height>
     </rect>
@@ -1245,13 +1257,13 @@ background-color: rgb(0, 0, 0);
    <property name="font">
     <font>
      <family>DejaVu Sans Mono</family>
-     <pointsize>5</pointsize>
+     <pointsize>8</pointsize>
      <weight>75</weight>
      <bold>true</bold>
     </font>
    </property>
    <property name="text">
-    <string>0x01020304</string>
+    <string>0xCBA9</string>
    </property>
    <property name="styleSheet">
     <string notr="true">color: rgb(0, 0, 127);</string>
@@ -1339,7 +1351,7 @@ background-color: rgb(0, 0, 0);
    <property name="geometry">
     <rect>
      <x>0</x>
-     <y>374</y>
+     <y>380</y>
      <width>120</width>
      <height>34</height>
     </rect>
@@ -1405,6 +1417,9 @@ background-color: rgb(0, 0, 0);
    <property name="borderRadius">
     <number>0</number>
    </property>
+   <property name="apparence">
+    <enum>QFrame::Plain</enum>
+   </property>
   </widget>
   <widget class="Line" name="line_hr_2">
    <property name="geometry">
@@ -1435,7 +1450,7 @@ background-color: rgb(0, 0, 0);
    <property name="geometry">
     <rect>
      <x>480</x>
-     <y>68</y>
+     <y>70</y>
      <width>60</width>
      <height>34</height>
     </rect>
@@ -1516,7 +1531,7 @@ background-color: rgb(0, 0, 0);
   <widget class="ATCMlabel" name="atcmLabel_PLC_AnOut_2">
    <property name="geometry">
     <rect>
-     <x>240</x>
+     <x>241</x>
      <y>102</y>
      <width>120</width>
      <height>34</height>
@@ -1663,7 +1678,7 @@ background-color: rgb(0, 0, 0);
    <property name="geometry">
     <rect>
      <x>0</x>
-     <y>272</y>
+     <y>275</y>
      <width>120</width>
      <height>34</height>
     </rect>
@@ -1740,7 +1755,7 @@ background-color: rgb(0, 0, 0);
    <property name="geometry">
     <rect>
      <x>0</x>
-     <y>406</y>
+     <y>412</y>
      <width>120</width>
      <height>34</height>
     </rect>
@@ -1805,6 +1820,9 @@ background-color: rgb(0, 0, 0);
    </property>
    <property name="borderRadius">
     <number>0</number>
+   </property>
+   <property name="apparence">
+    <enum>QFrame::Plain</enum>
    </property>
   </widget>
   <widget class="QLabel" name="label_PLC_DigIn_8">
@@ -1881,7 +1899,7 @@ background-color: rgb(0, 0, 0);
    <property name="geometry">
     <rect>
      <x>0</x>
-     <y>440</y>
+     <y>446</y>
      <width>120</width>
      <height>34</height>
     </rect>
@@ -2000,7 +2018,7 @@ background-color: rgb(0, 0, 0);
    <property name="geometry">
     <rect>
      <x>0</x>
-     <y>204</y>
+     <y>207</y>
      <width>120</width>
      <height>34</height>
     </rect>
@@ -2065,6 +2083,9 @@ background-color: rgb(0, 0, 0);
    </property>
    <property name="borderRadius">
     <number>0</number>
+   </property>
+   <property name="apparence">
+    <enum>QFrame::Plain</enum>
    </property>
   </widget>
   <widget class="Line" name="line_vt_2">
@@ -2292,12 +2313,15 @@ background-color: rgb(0, 0, 0);
    <property name="borderRadius">
     <number>0</number>
    </property>
+   <property name="apparence">
+    <enum>QFrame::Plain</enum>
+   </property>
   </widget>
   <widget class="Line" name="line_hr_3">
    <property name="geometry">
     <rect>
      <x>0</x>
-     <y>340</y>
+     <y>343</y>
      <width>800</width>
      <height>3</height>
     </rect>
@@ -2487,7 +2511,7 @@ background-color: rgb(0, 0, 0);
    <property name="geometry">
     <rect>
      <x>540</x>
-     <y>68</y>
+     <y>70</y>
      <width>80</width>
      <height>34</height>
     </rect>
@@ -3143,7 +3167,7 @@ background-color: rgb(0, 0, 0);
    <property name="geometry">
     <rect>
      <x>480</x>
-     <y>102</y>
+     <y>104</y>
      <width>60</width>
      <height>34</height>
     </rect>
@@ -3225,7 +3249,7 @@ background-color: rgb(0, 0, 0);
    <property name="geometry">
     <rect>
      <x>540</x>
-     <y>102</y>
+     <y>104</y>
      <width>80</width>
      <height>34</height>
     </rect>
@@ -3307,7 +3331,7 @@ background-color: rgb(0, 0, 0);
    <property name="geometry">
     <rect>
      <x>540</x>
-     <y>170</y>
+     <y>172</y>
      <width>80</width>
      <height>34</height>
     </rect>
@@ -3389,7 +3413,7 @@ background-color: rgb(0, 0, 0);
    <property name="geometry">
     <rect>
      <x>480</x>
-     <y>170</y>
+     <y>172</y>
      <width>60</width>
      <height>34</height>
     </rect>
@@ -3471,7 +3495,7 @@ background-color: rgb(0, 0, 0);
    <property name="geometry">
     <rect>
      <x>480</x>
-     <y>136</y>
+     <y>138</y>
      <width>60</width>
      <height>34</height>
     </rect>
@@ -3553,7 +3577,7 @@ background-color: rgb(0, 0, 0);
    <property name="geometry">
     <rect>
      <x>540</x>
-     <y>136</y>
+     <y>138</y>
      <width>80</width>
      <height>34</height>
     </rect>
@@ -3635,7 +3659,7 @@ background-color: rgb(0, 0, 0);
    <property name="geometry">
     <rect>
      <x>540</x>
-     <y>238</y>
+     <y>240</y>
      <width>80</width>
      <height>34</height>
     </rect>
@@ -3717,7 +3741,7 @@ background-color: rgb(0, 0, 0);
    <property name="geometry">
     <rect>
      <x>540</x>
-     <y>272</y>
+     <y>274</y>
      <width>80</width>
      <height>34</height>
     </rect>
@@ -3799,7 +3823,7 @@ background-color: rgb(0, 0, 0);
    <property name="geometry">
     <rect>
      <x>480</x>
-     <y>238</y>
+     <y>240</y>
      <width>60</width>
      <height>34</height>
     </rect>
@@ -3881,7 +3905,7 @@ background-color: rgb(0, 0, 0);
    <property name="geometry">
     <rect>
      <x>540</x>
-     <y>306</y>
+     <y>308</y>
      <width>80</width>
      <height>34</height>
     </rect>
@@ -3963,7 +3987,7 @@ background-color: rgb(0, 0, 0);
    <property name="geometry">
     <rect>
      <x>480</x>
-     <y>204</y>
+     <y>206</y>
      <width>60</width>
      <height>34</height>
     </rect>
@@ -4045,7 +4069,7 @@ background-color: rgb(0, 0, 0);
    <property name="geometry">
     <rect>
      <x>480</x>
-     <y>306</y>
+     <y>308</y>
      <width>60</width>
      <height>34</height>
     </rect>
@@ -4127,7 +4151,7 @@ background-color: rgb(0, 0, 0);
    <property name="geometry">
     <rect>
      <x>540</x>
-     <y>204</y>
+     <y>206</y>
      <width>80</width>
      <height>34</height>
     </rect>
@@ -4209,7 +4233,7 @@ background-color: rgb(0, 0, 0);
    <property name="geometry">
     <rect>
      <x>480</x>
-     <y>272</y>
+     <y>274</y>
      <width>60</width>
      <height>34</height>
     </rect>
@@ -4442,7 +4466,7 @@ background-color: rgb(0, 0, 0);
    <property name="geometry">
     <rect>
      <x>680</x>
-     <y>272</y>
+     <y>278</y>
      <width>120</width>
      <height>34</height>
     </rect>
@@ -4516,7 +4540,7 @@ background-color: rgb(0, 0, 0);
    <property name="geometry">
     <rect>
      <x>680</x>
-     <y>238</y>
+     <y>244</y>
      <width>120</width>
      <height>34</height>
     </rect>
@@ -4590,7 +4614,7 @@ background-color: rgb(0, 0, 0);
    <property name="geometry">
     <rect>
      <x>680</x>
-     <y>306</y>
+     <y>312</y>
      <width>120</width>
      <height>34</height>
     </rect>
@@ -4664,7 +4688,7 @@ background-color: rgb(0, 0, 0);
    <property name="geometry">
     <rect>
      <x>680</x>
-     <y>340</y>
+     <y>346</y>
      <width>120</width>
      <height>34</height>
     </rect>
@@ -4811,7 +4835,7 @@ background-color: rgb(0, 0, 0);
    <property name="geometry">
     <rect>
      <x>680</x>
-     <y>374</y>
+     <y>380</y>
      <width>120</width>
      <height>34</height>
     </rect>
@@ -4885,7 +4909,7 @@ background-color: rgb(0, 0, 0);
    <property name="geometry">
     <rect>
      <x>680</x>
-     <y>408</y>
+     <y>414</y>
      <width>120</width>
      <height>34</height>
     </rect>
@@ -5028,7 +5052,7 @@ background-color: rgb(0, 0, 0);
    <property name="geometry">
     <rect>
      <x>680</x>
-     <y>440</y>
+     <y>446</y>
      <width>120</width>
      <height>34</height>
     </rect>
@@ -5099,7 +5123,7 @@ background-color: rgb(0, 0, 0);
    <property name="geometry">
     <rect>
      <x>620</x>
-     <y>68</y>
+     <y>70</y>
      <width>60</width>
      <height>34</height>
     </rect>
@@ -5181,7 +5205,7 @@ background-color: rgb(0, 0, 0);
    <property name="geometry">
     <rect>
      <x>620</x>
-     <y>238</y>
+     <y>240</y>
      <width>60</width>
      <height>34</height>
     </rect>
@@ -5263,7 +5287,7 @@ background-color: rgb(0, 0, 0);
    <property name="geometry">
     <rect>
      <x>620</x>
-     <y>136</y>
+     <y>138</y>
      <width>60</width>
      <height>34</height>
     </rect>
@@ -5345,7 +5369,7 @@ background-color: rgb(0, 0, 0);
    <property name="geometry">
     <rect>
      <x>620</x>
-     <y>272</y>
+     <y>274</y>
      <width>60</width>
      <height>34</height>
     </rect>
@@ -5427,7 +5451,7 @@ background-color: rgb(0, 0, 0);
    <property name="geometry">
     <rect>
      <x>620</x>
-     <y>102</y>
+     <y>104</y>
      <width>60</width>
      <height>34</height>
     </rect>
@@ -5509,7 +5533,7 @@ background-color: rgb(0, 0, 0);
    <property name="geometry">
     <rect>
      <x>620</x>
-     <y>306</y>
+     <y>308</y>
      <width>60</width>
      <height>34</height>
     </rect>
@@ -5591,7 +5615,7 @@ background-color: rgb(0, 0, 0);
    <property name="geometry">
     <rect>
      <x>620</x>
-     <y>170</y>
+     <y>172</y>
      <width>60</width>
      <height>34</height>
     </rect>
@@ -5673,7 +5697,7 @@ background-color: rgb(0, 0, 0);
    <property name="geometry">
     <rect>
      <x>620</x>
-     <y>204</y>
+     <y>206</y>
      <width>60</width>
      <height>34</height>
     </rect>
@@ -5917,7 +5941,7 @@ background-color: rgb(0, 0, 0);
    <property name="geometry">
     <rect>
      <x>420</x>
-     <y>340</y>
+     <y>346</y>
      <width>60</width>
      <height>34</height>
     </rect>
@@ -5970,7 +5994,7 @@ background-color: rgb(0, 0, 0);
    <property name="geometry">
     <rect>
      <x>360</x>
-     <y>440</y>
+     <y>446</y>
      <width>121</width>
      <height>34</height>
     </rect>
@@ -6023,7 +6047,7 @@ background-color: rgb(0, 0, 0);
    <property name="geometry">
     <rect>
      <x>360</x>
-     <y>205</y>
+     <y>207</y>
      <width>120</width>
      <height>34</height>
     </rect>
@@ -6054,7 +6078,7 @@ NODE</string>
    <property name="geometry">
     <rect>
      <x>420</x>
-     <y>374</y>
+     <y>380</y>
      <width>60</width>
      <height>34</height>
     </rect>
@@ -6110,7 +6134,7 @@ NODE</string>
    <property name="geometry">
     <rect>
      <x>360</x>
-     <y>306</y>
+     <y>309</y>
      <width>60</width>
      <height>34</height>
     </rect>
@@ -6166,7 +6190,7 @@ NODE</string>
    <property name="geometry">
     <rect>
      <x>420</x>
-     <y>238</y>
+     <y>241</y>
      <width>60</width>
      <height>34</height>
     </rect>
@@ -6225,7 +6249,7 @@ NODE</string>
    <property name="geometry">
     <rect>
      <x>360</x>
-     <y>238</y>
+     <y>241</y>
      <width>60</width>
      <height>34</height>
     </rect>
@@ -6284,7 +6308,7 @@ NODE</string>
    <property name="geometry">
     <rect>
      <x>360</x>
-     <y>272</y>
+     <y>275</y>
      <width>120</width>
      <height>34</height>
     </rect>
@@ -6340,7 +6364,7 @@ NODE</string>
    <property name="geometry">
     <rect>
      <x>360</x>
-     <y>340</y>
+     <y>346</y>
      <width>60</width>
      <height>34</height>
     </rect>
@@ -6396,7 +6420,7 @@ NODE</string>
    <property name="geometry">
     <rect>
      <x>420</x>
-     <y>306</y>
+     <y>309</y>
      <width>60</width>
      <height>34</height>
     </rect>
@@ -6452,7 +6476,7 @@ NODE</string>
    <property name="geometry">
     <rect>
      <x>360</x>
-     <y>374</y>
+     <y>380</y>
      <width>60</width>
      <height>34</height>
     </rect>
@@ -6508,7 +6532,7 @@ NODE</string>
    <property name="geometry">
     <rect>
      <x>360</x>
-     <y>406</y>
+     <y>412</y>
      <width>120</width>
      <height>34</height>
     </rect>
@@ -6564,7 +6588,7 @@ NODE</string>
    <property name="geometry">
     <rect>
      <x>240</x>
-     <y>406</y>
+     <y>412</y>
      <width>120</width>
      <height>34</height>
     </rect>
@@ -6589,7 +6613,7 @@ NODE</string>
    <property name="geometry">
     <rect>
      <x>240</x>
-     <y>272</y>
+     <y>275</y>
      <width>120</width>
      <height>34</height>
     </rect>
@@ -6642,7 +6666,7 @@ NODE</string>
    <property name="geometry">
     <rect>
      <x>240</x>
-     <y>340</y>
+     <y>346</y>
      <width>120</width>
      <height>34</height>
     </rect>
@@ -6667,7 +6691,7 @@ NODE</string>
    <property name="geometry">
     <rect>
      <x>240</x>
-     <y>374</y>
+     <y>380</y>
      <width>120</width>
      <height>34</height>
     </rect>
@@ -6692,7 +6716,7 @@ NODE</string>
    <property name="geometry">
     <rect>
      <x>240</x>
-     <y>306</y>
+     <y>309</y>
      <width>120</width>
      <height>34</height>
     </rect>
@@ -6717,7 +6741,7 @@ NODE</string>
    <property name="geometry">
     <rect>
      <x>240</x>
-     <y>238</y>
+     <y>241</y>
      <width>120</width>
      <height>34</height>
     </rect>
@@ -6783,7 +6807,7 @@ NODE</string>
    <property name="geometry">
     <rect>
      <x>240</x>
-     <y>440</y>
+     <y>446</y>
      <width>120</width>
      <height>34</height>
     </rect>
@@ -6811,7 +6835,7 @@ NODE</string>
    <property name="geometry">
     <rect>
      <x>240</x>
-     <y>204</y>
+     <y>207</y>
      <width>120</width>
      <height>34</height>
     </rect>
@@ -6887,7 +6911,7 @@ NODE</string>
     </font>
    </property>
    <property name="text">
-    <string>0x1234</string>
+    <string>c</string>
    </property>
    <property name="styleSheet">
     <string notr="true">color: rgb(85, 0, 127);</string>
@@ -6940,7 +6964,7 @@ NODE</string>
     <enum>QFrame::Raised</enum>
    </property>
    <property name="format">
-    <enum>ATCMlabel::Hex</enum>
+    <enum>ATCMlabel::Dec</enum>
    </property>
   </widget>
   <widget class="ATCMlabel" name="atcmLabel_PLC_Counter_Hi_3">
@@ -6964,7 +6988,7 @@ NODE</string>
     </font>
    </property>
    <property name="text">
-    <string>0x1234</string>
+    <string>c</string>
    </property>
    <property name="styleSheet">
     <string notr="true">color: rgb(85, 0, 127);</string>
@@ -7017,7 +7041,7 @@ NODE</string>
     <enum>QFrame::Raised</enum>
    </property>
    <property name="format">
-    <enum>ATCMlabel::Hex</enum>
+    <enum>ATCMlabel::Dec</enum>
    </property>
   </widget>
   <widget class="ATCMlabel" name="atcmLabel_PLC_Counter_Hi_4">
@@ -7041,7 +7065,7 @@ NODE</string>
     </font>
    </property>
    <property name="text">
-    <string>0x1234</string>
+    <string>c</string>
    </property>
    <property name="styleSheet">
     <string notr="true">color: rgb(85, 0, 127);</string>
@@ -7094,7 +7118,7 @@ NODE</string>
     <enum>QFrame::Raised</enum>
    </property>
    <property name="format">
-    <enum>ATCMlabel::Hex</enum>
+    <enum>ATCMlabel::Dec</enum>
    </property>
   </widget>
   <widget class="ATCMlabel" name="atcmLabel_PLC_Counter_Hi_5">
@@ -7118,7 +7142,7 @@ NODE</string>
     </font>
    </property>
    <property name="text">
-    <string>0x1234</string>
+    <string>c</string>
    </property>
    <property name="styleSheet">
     <string notr="true">color: rgb(85, 0, 127);</string>
@@ -7171,7 +7195,7 @@ NODE</string>
     <enum>QFrame::Raised</enum>
    </property>
    <property name="format">
-    <enum>ATCMlabel::Hex</enum>
+    <enum>ATCMlabel::Dec</enum>
    </property>
   </widget>
   <widget class="ATCMlabel" name="atcmLabel_PLC_Counter_Hi_6">
@@ -7181,7 +7205,7 @@ NODE</string>
    <property name="geometry">
     <rect>
      <x>120</x>
-     <y>306</y>
+     <y>309</y>
      <width>60</width>
      <height>34</height>
     </rect>
@@ -7195,7 +7219,7 @@ NODE</string>
     </font>
    </property>
    <property name="text">
-    <string>0x1234</string>
+    <string>c</string>
    </property>
    <property name="styleSheet">
     <string notr="true">color: rgb(85, 0, 127);</string>
@@ -7248,7 +7272,7 @@ NODE</string>
     <enum>QFrame::Raised</enum>
    </property>
    <property name="format">
-    <enum>ATCMlabel::Hex</enum>
+    <enum>ATCMlabel::Dec</enum>
    </property>
   </widget>
   <widget class="ATCMlabel" name="atcmLabel_PLC_Counter_Hi_7">
@@ -7258,7 +7282,7 @@ NODE</string>
    <property name="geometry">
     <rect>
      <x>120</x>
-     <y>238</y>
+     <y>241</y>
      <width>60</width>
      <height>34</height>
     </rect>
@@ -7272,7 +7296,7 @@ NODE</string>
     </font>
    </property>
    <property name="text">
-    <string>0x1234</string>
+    <string>c</string>
    </property>
    <property name="styleSheet">
     <string notr="true">color: rgb(85, 0, 127);</string>
@@ -7325,7 +7349,7 @@ NODE</string>
     <enum>QFrame::Raised</enum>
    </property>
    <property name="format">
-    <enum>ATCMlabel::Hex</enum>
+    <enum>ATCMlabel::Dec</enum>
    </property>
   </widget>
   <widget class="ATCMlabel" name="atcmLabel_PLC_Counter_Hi_8">
@@ -7335,7 +7359,7 @@ NODE</string>
    <property name="geometry">
     <rect>
      <x>120</x>
-     <y>204</y>
+     <y>207</y>
      <width>60</width>
      <height>34</height>
     </rect>
@@ -7349,7 +7373,7 @@ NODE</string>
     </font>
    </property>
    <property name="text">
-    <string>0x1234</string>
+    <string>c</string>
    </property>
    <property name="styleSheet">
     <string notr="true">color: rgb(85, 0, 127);</string>
@@ -7402,7 +7426,7 @@ NODE</string>
     <enum>QFrame::Raised</enum>
    </property>
    <property name="format">
-    <enum>ATCMlabel::Hex</enum>
+    <enum>ATCMlabel::Dec</enum>
    </property>
   </widget>
   <widget class="ATCMlabel" name="atcmLabel_PLC_Counter_Hi_9">
@@ -7412,7 +7436,7 @@ NODE</string>
    <property name="geometry">
     <rect>
      <x>120</x>
-     <y>272</y>
+     <y>275</y>
      <width>60</width>
      <height>34</height>
     </rect>
@@ -7426,7 +7450,7 @@ NODE</string>
     </font>
    </property>
    <property name="text">
-    <string>0x1234</string>
+    <string>c</string>
    </property>
    <property name="styleSheet">
     <string notr="true">color: rgb(85, 0, 127);</string>
@@ -7479,7 +7503,7 @@ NODE</string>
     <enum>QFrame::Raised</enum>
    </property>
    <property name="format">
-    <enum>ATCMlabel::Hex</enum>
+    <enum>ATCMlabel::Dec</enum>
    </property>
   </widget>
   <widget class="ATCMlabel" name="atcmLabel_PLC_Counter_Hi_10">
@@ -7489,7 +7513,7 @@ NODE</string>
    <property name="geometry">
     <rect>
      <x>120</x>
-     <y>440</y>
+     <y>446</y>
      <width>60</width>
      <height>34</height>
     </rect>
@@ -7503,7 +7527,7 @@ NODE</string>
     </font>
    </property>
    <property name="text">
-    <string>0x1234</string>
+    <string>c</string>
    </property>
    <property name="styleSheet">
     <string notr="true">color: rgb(85, 0, 127);</string>
@@ -7556,7 +7580,7 @@ NODE</string>
     <enum>QFrame::Raised</enum>
    </property>
    <property name="format">
-    <enum>ATCMlabel::Hex</enum>
+    <enum>ATCMlabel::Dec</enum>
    </property>
   </widget>
   <widget class="ATCMlabel" name="atcmLabel_PLC_Counter_Hi_11">
@@ -7566,7 +7590,7 @@ NODE</string>
    <property name="geometry">
     <rect>
      <x>120</x>
-     <y>374</y>
+     <y>380</y>
      <width>60</width>
      <height>34</height>
     </rect>
@@ -7580,7 +7604,7 @@ NODE</string>
     </font>
    </property>
    <property name="text">
-    <string>0x1234</string>
+    <string>c</string>
    </property>
    <property name="styleSheet">
     <string notr="true">color: rgb(85, 0, 127);</string>
@@ -7633,7 +7657,7 @@ NODE</string>
     <enum>QFrame::Raised</enum>
    </property>
    <property name="format">
-    <enum>ATCMlabel::Hex</enum>
+    <enum>ATCMlabel::Dec</enum>
    </property>
   </widget>
   <widget class="ATCMlabel" name="atcmLabel_PLC_Counter_Hi_12">
@@ -7643,7 +7667,7 @@ NODE</string>
    <property name="geometry">
     <rect>
      <x>120</x>
-     <y>340</y>
+     <y>346</y>
      <width>60</width>
      <height>34</height>
     </rect>
@@ -7657,7 +7681,7 @@ NODE</string>
     </font>
    </property>
    <property name="text">
-    <string>0x1234</string>
+    <string>c</string>
    </property>
    <property name="styleSheet">
     <string notr="true">color: rgb(85, 0, 127);</string>
@@ -7710,7 +7734,7 @@ NODE</string>
     <enum>QFrame::Raised</enum>
    </property>
    <property name="format">
-    <enum>ATCMlabel::Hex</enum>
+    <enum>ATCMlabel::Dec</enum>
    </property>
   </widget>
   <widget class="ATCMlabel" name="atcmLabel_PLC_Counter_Hi_13">
@@ -7720,7 +7744,7 @@ NODE</string>
    <property name="geometry">
     <rect>
      <x>120</x>
-     <y>406</y>
+     <y>412</y>
      <width>60</width>
      <height>34</height>
     </rect>
@@ -7734,7 +7758,7 @@ NODE</string>
     </font>
    </property>
    <property name="text">
-    <string>0x1234</string>
+    <string>c</string>
    </property>
    <property name="styleSheet">
     <string notr="true">color: rgb(85, 0, 127);</string>
@@ -7787,7 +7811,7 @@ NODE</string>
     <enum>QFrame::Raised</enum>
    </property>
    <property name="format">
-    <enum>ATCMlabel::Hex</enum>
+    <enum>ATCMlabel::Dec</enum>
    </property>
   </widget>
   <widget class="ATCMlabel" name="atcmLabel_PLC_Counter_Hi_14">
@@ -7811,7 +7835,7 @@ NODE</string>
     </font>
    </property>
    <property name="text">
-    <string>0x1234</string>
+    <string>conf</string>
    </property>
    <property name="styleSheet">
     <string notr="true">color: rgb(85, 0, 127);</string>
@@ -7864,7 +7888,7 @@ NODE</string>
     <enum>QFrame::Raised</enum>
    </property>
    <property name="format">
-    <enum>ATCMlabel::Hex</enum>
+    <enum>ATCMlabel::Dec</enum>
    </property>
   </widget>
   <widget class="ATCMlabel" name="atcmLabel_PLC_Counter_Hi_15">
@@ -7888,7 +7912,7 @@ NODE</string>
     </font>
    </property>
    <property name="text">
-    <string>0x1234</string>
+    <string>conf</string>
    </property>
    <property name="styleSheet">
     <string notr="true">color: rgb(85, 0, 127);</string>
@@ -7941,7 +7965,7 @@ NODE</string>
     <enum>QFrame::Raised</enum>
    </property>
    <property name="format">
-    <enum>ATCMlabel::Hex</enum>
+    <enum>ATCMlabel::Dec</enum>
    </property>
   </widget>
   <widget class="ATCMled" name="atcmLed_PLC_DigIn_17">
@@ -7990,7 +8014,7 @@ NODE</string>
    <property name="geometry">
     <rect>
      <x>480</x>
-     <y>406</y>
+     <y>445</y>
      <width>200</width>
      <height>34</height>
     </rect>
@@ -8175,13 +8199,13 @@ NODE</string>
   <zorder>line_vt_1</zorder>
   <zorder>line_hr_3</zorder>
   <zorder>line_vt_5</zorder>
-  <zorder>line_hr_2</zorder>
   <zorder>line_vt_4</zorder>
   <zorder>line_vt_3</zorder>
   <zorder>line_vt_2</zorder>
   <zorder>line_hr_1</zorder>
   <zorder>atcmLed_PLC_DigIn_17</zorder>
   <zorder>atcmButton</zorder>
+  <zorder>line_hr_2</zorder>
  </widget>
  <customwidgets>
   <customwidget>

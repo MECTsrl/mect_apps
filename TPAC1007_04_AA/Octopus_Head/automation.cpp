@@ -208,7 +208,7 @@ void loop(void)
             }
             break;
         case 10:
-            if (writeRecipe(next_step - 1, &zeroesIndexes, zeroesTable) != 0) {
+            if (writeRecipe(0, &zeroesIndexes, zeroesTable) != 0) {
                 fprintf(stderr, "writeRecipe(zeroes) failed, retry after 100ms");
                 ++failed_writeRecipe;
                 update_message();
@@ -223,7 +223,7 @@ void loop(void)
             substatus = 13;
             break;
         case 13:
-            if (! checkRecipe(next_step - 1, &zeroesIndexes, zeroesTable)) {
+            if (! checkRecipe(0, &zeroesIndexes, zeroesTable)) {
                 fprintf(stderr, "checkRecipe(zeroes) failed after 300 ms, rewrite after 100ms\n");
                 ++failed_checkRecipe;
                 update_message();
@@ -342,11 +342,11 @@ void loop(void)
 static void doReload()
 {
     char filename[256];
-    int t, v;
+    int z, t, v;
 
     // file: /local/data/recipe/Zeroes/0.csv
     snprintf(filename, 256, "%s/%s/%s.csv", RECIPE_DIR, "Zeroes", "0");
-    t = loadRecipe(filename, &zeroesIndexes, zeroesTable);
+    z = loadRecipe(filename, &zeroesIndexes, zeroesTable);
 
     // file: /local/data/recipe/TPAC1007_4AA/2.csv
     snprintf(filename, 256, "%s/%s/%s.csv", RECIPE_DIR, product_name[PRODUCT_ID], recipe_name[TEST_ID]);
@@ -356,7 +356,7 @@ static void doReload()
     snprintf(filename, 256, "%s/Values/%s.csv", RECIPE_DIR, recipe_name[TEST_ID]);
     v = loadRecipe(filename, &valuesIndexes, valuesTable);
 
-    if (t == v && t > 0 && v > 0) {
+    if (z == 1 && t > 0 && v > 0 && t == v) {
         doWrite_TEST_STEP_MAX(t);
         doWrite_DO_RELOAD(0);
     } else {
