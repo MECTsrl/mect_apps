@@ -50,9 +50,10 @@ static char product_name[][15] = {
     /*21*/ "TPAC1008_02_AE",
     /*22*/ "TPAC1008_02_AF",
     /*23*/ "TPAC1008_03_AC",
-    /*24*/ "TPLC100_01_AA" ,
-    /*25*/ "TPLC100_01_AB" ,
-    /*26*/
+    /*24*/ "TPLC050_01_AA" ,
+    /*25*/ "TPLC100_01_AA" ,
+    /*26*/ "TPLC100_01_AB" ,
+    /*27*/
 };
 #define RECIPE_MAX 3
 static char recipe_name[][RECIPE_MAX] = {"-", "1", "2", "3"};
