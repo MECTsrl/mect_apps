@@ -1,0 +1,9 @@
+(* Constant file *)
+CONST
+
+	STATUS_LOCAL : UINT := 16#0000;
+	STATUS_REMOTE : UINT := 16#00d8;
+	STATUS_DONE : UINT := 16#002a;
+	
+END_CONST
+
