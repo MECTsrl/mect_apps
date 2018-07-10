@@ -130,6 +130,12 @@ int doWrite_MESSAGE_BOX(int value);
 int addWrite_MESSAGE_BOX(int value);
 int getStatus_MESSAGE_BOX(void);
 
+#define ID_VccDrop 201
+extern int VccDrop;
+int doWrite_VccDrop(int value);
+int addWrite_VccDrop(int value);
+int getStatus_VccDrop(void);
+
 #define ID_RTU_HeartBeat 208
 extern u_int32_t RTU_HeartBeat;
 int doWrite_RTU_HeartBeat(u_int32_t value);

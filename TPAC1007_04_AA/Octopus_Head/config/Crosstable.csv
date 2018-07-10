@@ -190,15 +190,15 @@
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
-1;V;AUTOMATIC                      ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;193 ;8   ;[RO]
-1;V;DO_REPEAT                      ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;193 ;8   ;[RO]
-1;V;DO_RELOAD                      ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;193 ;8   ;[RO]
-1;V;STATUS                         ;UINT     ;0   ;PLC       ;               ;    ;    ;      ;193 ;8   ;[RW]
-1;V;RESULT                         ;INT      ;0   ;PLC       ;               ;    ;    ;      ;193 ;8   ;[RW]
-1;V;RESULTS_OK                     ;UINT     ;0   ;PLC       ;               ;    ;    ;      ;193 ;8   ;[RW]
-1;V;RESULTS_NG                     ;UINT     ;0   ;PLC       ;               ;    ;    ;      ;193 ;8   ;[RW]
-1;P;MESSAGE_BOX                    ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;193 ;8   ;[RW]
-;;;;;;;;;;;;
+1;V;AUTOMATIC                      ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;193 ;9   ;[RO]
+1;V;DO_REPEAT                      ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;193 ;9   ;[RO]
+1;V;DO_RELOAD                      ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;193 ;9   ;[RO]
+1;V;STATUS                         ;UINT     ;0   ;PLC       ;               ;    ;    ;      ;193 ;9   ;[RW]
+1;V;RESULT                         ;INT      ;0   ;PLC       ;               ;    ;    ;      ;193 ;9   ;[RW]
+1;V;RESULTS_OK                     ;UINT     ;0   ;PLC       ;               ;    ;    ;      ;193 ;9   ;[RW]
+1;V;RESULTS_NG                     ;UINT     ;0   ;PLC       ;               ;    ;    ;      ;193 ;9   ;[RW]
+1;P;MESSAGE_BOX                    ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;193 ;9   ;[RW]
+1;P;VccDrop                        ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;193 ;9   ;[RW]
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;

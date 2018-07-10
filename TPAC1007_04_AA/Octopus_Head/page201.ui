@@ -2885,13 +2885,13 @@ Horn [2]</string>
     </font>
    </property>
    <property name="toolTip">
-    <string/>
+    <string>page: BACK  status: </string>
    </property>
    <property name="whatsThis">
     <string>ATCMbutton widget</string>
    </property>
    <property name="pageName">
-    <string>page201</string>
+    <string>BACK</string>
    </property>
    <property name="statusvar">
     <string/>

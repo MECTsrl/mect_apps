@@ -140,6 +140,13 @@ int MESSAGE_BOX = 0;
 
 
 /*
+ * Variable VccDrop
+ */
+
+int VccDrop = 0;
+
+
+/*
  * Variable RTU_HeartBeat
  */
 
@@ -7718,6 +7725,24 @@ int
 getStatus_MESSAGE_BOX(void)
 {
 	return getStatus(ID_MESSAGE_BOX);
+}
+
+int
+doWrite_VccDrop(int value)
+{
+	return doWrite(ID_VccDrop, &value);
+}
+
+int
+addWrite_VccDrop(int value)
+{
+	return addWrite(ID_VccDrop, &value);
+}
+
+int
+getStatus_VccDrop(void)
+{
+	return getStatus(ID_VccDrop);
 }
 
 int
@@ -26498,6 +26523,7 @@ update_all(void)
 	retval += readFromDb(ID_RESULTS_OK, &RESULTS_OK);
 	retval += readFromDb(ID_RESULTS_NG, &RESULTS_NG);
 	retval += readFromDb(ID_MESSAGE_BOX, &MESSAGE_BOX);
+	retval += readFromDb(ID_VccDrop, &VccDrop);
 	retval += readFromDb(ID_RTU_HeartBeat, &RTU_HeartBeat);
 	retval += readFromDb(ID_RTU_DigOut_1, &RTU_DigOut_1);
 	retval += readFromDb(ID_RTU_DigOut_2, &RTU_DigOut_2);
