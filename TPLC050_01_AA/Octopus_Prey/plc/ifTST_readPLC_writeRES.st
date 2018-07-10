@@ -23,6 +23,9 @@ END_VAR
     if (TST_DigOut_7  ) then ; end_if;
     if (TST_DigOut_8  ) then ; end_if;
 
+    if (TST_DigIn_8   ) then RES_DigIn_8 := YY_DigIn_A_1; end_if;
+    if (TST_DigOut_9  ) then ; end_if;
+
     if (TST_AnIn_1    ) then RES_AnIn_1 := PLC_AnIn_1; end_if;
     if (TST_AnIn_2    ) then RES_AnIn_2 := PLC_AnIn_2; end_if;
 

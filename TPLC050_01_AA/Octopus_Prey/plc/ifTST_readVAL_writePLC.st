@@ -26,7 +26,10 @@ END_VAR
 	    if (TST_DigOut_7) then PLC_DigDir_7 := 1; PLC_DigOut_7 := VAL_DigOut_7; end_if;
 	    if (TST_DigOut_8) then PLC_DigDir_8 := 1; PLC_DigOut_8 := VAL_DigOut_8; end_if;
 	
-	    if (TST_AnIn_1  ) then PLC_AnInConf_1 := 0; RES_AnIn_1 := 0; end_if; 
+	    if (TST_DigIn_9 ) then RES_DigIn_9 := 0; end_if;
+	    if (TST_DigOut_9) then YY_DigOut_A_1 := VAL_DigOut_9; end_if;
+
+		if (TST_AnIn_1  ) then PLC_AnInConf_1 := 0; RES_AnIn_1 := 0; end_if; 
 	    if (TST_AnIn_2  ) then PLC_AnInConf_2 := 0; RES_AnIn_2 := 0; end_if;
 		
 	    if (TST_Tamb      ) then RES_Tamb := 0; end_if;

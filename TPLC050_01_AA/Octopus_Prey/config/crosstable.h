@@ -58,6 +58,1014 @@ int doWrite_RTU_RTU1_RD(int value);
 int addWrite_RTU_RTU1_RD(int value);
 int getStatus_RTU_RTU1_RD(void);
 
+#define ID_YY_AnInConf_A 300
+extern u_int16_t YY_AnInConf_A;	/* Analog inputs configuration MPNC030 module A */
+int doWrite_YY_AnInConf_A(u_int16_t value);
+int addWrite_YY_AnInConf_A(u_int16_t value);
+int getStatus_YY_AnInConf_A(void);
+
+#define ID_YY_AnInConf_B 301
+extern u_int16_t YY_AnInConf_B;	/* Analog inputs configuration MPNC030 module B */
+int doWrite_YY_AnInConf_B(u_int16_t value);
+int addWrite_YY_AnInConf_B(u_int16_t value);
+int getStatus_YY_AnInConf_B(void);
+
+#define ID_YY_AnInConf_C 302
+extern u_int16_t YY_AnInConf_C;	/* Analog inputs configuration MPNC030 module C */
+int doWrite_YY_AnInConf_C(u_int16_t value);
+int addWrite_YY_AnInConf_C(u_int16_t value);
+int getStatus_YY_AnInConf_C(void);
+
+#define ID_YY_AnInConf_D 303
+extern u_int16_t YY_AnInConf_D;	/* Analog inputs configuration MPNC030 module D */
+int doWrite_YY_AnInConf_D(u_int16_t value);
+int addWrite_YY_AnInConf_D(u_int16_t value);
+int getStatus_YY_AnInConf_D(void);
+
+#define ID_YY_AnIn_A_1 304
+extern int16_t YY_AnIn_A_1;	/* Analog input 1 value MPNC030 module A */
+int doWrite_YY_AnIn_A_1(int16_t value);
+int addWrite_YY_AnIn_A_1(int16_t value);
+int getStatus_YY_AnIn_A_1(void);
+
+#define ID_YY_AnIn_A_2 305
+extern int16_t YY_AnIn_A_2;	/* Analog input 2 value MPNC030 module A */
+int doWrite_YY_AnIn_A_2(int16_t value);
+int addWrite_YY_AnIn_A_2(int16_t value);
+int getStatus_YY_AnIn_A_2(void);
+
+#define ID_YY_AnIn_A_3 306
+extern int16_t YY_AnIn_A_3;	/* Analog input 3 value MPNC030 module A */
+int doWrite_YY_AnIn_A_3(int16_t value);
+int addWrite_YY_AnIn_A_3(int16_t value);
+int getStatus_YY_AnIn_A_3(void);
+
+#define ID_YY_AnIn_A_4 307
+extern int16_t YY_AnIn_A_4;	/* Analog input 4 value MPNC030 module A */
+int doWrite_YY_AnIn_A_4(int16_t value);
+int addWrite_YY_AnIn_A_4(int16_t value);
+int getStatus_YY_AnIn_A_4(void);
+
+#define ID_YY_AnIn_B_1 308
+extern int16_t YY_AnIn_B_1;	/* Analog input 1 value MPNC030 module B */
+int doWrite_YY_AnIn_B_1(int16_t value);
+int addWrite_YY_AnIn_B_1(int16_t value);
+int getStatus_YY_AnIn_B_1(void);
+
+#define ID_YY_AnIn_B_2 309
+extern int16_t YY_AnIn_B_2;	/* Analog input 2 value MPNC030 module B */
+int doWrite_YY_AnIn_B_2(int16_t value);
+int addWrite_YY_AnIn_B_2(int16_t value);
+int getStatus_YY_AnIn_B_2(void);
+
+#define ID_YY_AnIn_B_3 310
+extern int16_t YY_AnIn_B_3;	/* Analog input 3 value MPNC030 module B */
+int doWrite_YY_AnIn_B_3(int16_t value);
+int addWrite_YY_AnIn_B_3(int16_t value);
+int getStatus_YY_AnIn_B_3(void);
+
+#define ID_YY_AnIn_B_4 311
+extern int16_t YY_AnIn_B_4;	/* Analog input 4 value MPNC030 module B */
+int doWrite_YY_AnIn_B_4(int16_t value);
+int addWrite_YY_AnIn_B_4(int16_t value);
+int getStatus_YY_AnIn_B_4(void);
+
+#define ID_YY_AnIn_C_1 312
+extern int16_t YY_AnIn_C_1;	/* Analog input 1 value MPNC030 module C */
+int doWrite_YY_AnIn_C_1(int16_t value);
+int addWrite_YY_AnIn_C_1(int16_t value);
+int getStatus_YY_AnIn_C_1(void);
+
+#define ID_YY_AnIn_C_2 313
+extern int16_t YY_AnIn_C_2;	/* Analog input 2 value MPNC030 module C */
+int doWrite_YY_AnIn_C_2(int16_t value);
+int addWrite_YY_AnIn_C_2(int16_t value);
+int getStatus_YY_AnIn_C_2(void);
+
+#define ID_YY_AnIn_C_3 314
+extern int16_t YY_AnIn_C_3;	/* Analog input 3 value MPNC030 module C */
+int doWrite_YY_AnIn_C_3(int16_t value);
+int addWrite_YY_AnIn_C_3(int16_t value);
+int getStatus_YY_AnIn_C_3(void);
+
+#define ID_YY_AnIn_C_4 315
+extern int16_t YY_AnIn_C_4;	/* Analog input 4 value MPNC030 module C */
+int doWrite_YY_AnIn_C_4(int16_t value);
+int addWrite_YY_AnIn_C_4(int16_t value);
+int getStatus_YY_AnIn_C_4(void);
+
+#define ID_YY_AnIn_D_1 316
+extern int16_t YY_AnIn_D_1;	/* Analog input 1 value MPNC030 module D */
+int doWrite_YY_AnIn_D_1(int16_t value);
+int addWrite_YY_AnIn_D_1(int16_t value);
+int getStatus_YY_AnIn_D_1(void);
+
+#define ID_YY_AnIn_D_2 317
+extern int16_t YY_AnIn_D_2;	/* Analog input 2 value MPNC030 module D */
+int doWrite_YY_AnIn_D_2(int16_t value);
+int addWrite_YY_AnIn_D_2(int16_t value);
+int getStatus_YY_AnIn_D_2(void);
+
+#define ID_YY_AnIn_D_3 318
+extern int16_t YY_AnIn_D_3;	/* Analog input 3 value MPNC030 module D */
+int doWrite_YY_AnIn_D_3(int16_t value);
+int addWrite_YY_AnIn_D_3(int16_t value);
+int getStatus_YY_AnIn_D_3(void);
+
+#define ID_YY_AnIn_D_4 319
+extern int16_t YY_AnIn_D_4;	/* Analog input 4 value MPNC030 module D */
+int doWrite_YY_AnIn_D_4(int16_t value);
+int addWrite_YY_AnIn_D_4(int16_t value);
+int getStatus_YY_AnIn_D_4(void);
+
+#define ID_YY_DigOut_A_1 320
+extern int YY_DigOut_A_1;	/* Digital output value bit 1 MPNC020 02 module A */
+int doWrite_YY_DigOut_A_1(int value);
+int addWrite_YY_DigOut_A_1(int value);
+int getStatus_YY_DigOut_A_1(void);
+
+#define ID_YY_DigOut_A_2 321
+extern int YY_DigOut_A_2;	/* Digital output value bit 2 MPNC020 02 module A */
+int doWrite_YY_DigOut_A_2(int value);
+int addWrite_YY_DigOut_A_2(int value);
+int getStatus_YY_DigOut_A_2(void);
+
+#define ID_YY_DigOut_A_3 322
+extern int YY_DigOut_A_3;	/* Digital output value bit 3 MPNC020 02 module A */
+int doWrite_YY_DigOut_A_3(int value);
+int addWrite_YY_DigOut_A_3(int value);
+int getStatus_YY_DigOut_A_3(void);
+
+#define ID_YY_DigOut_A_4 323
+extern int YY_DigOut_A_4;	/* Digital output value bit 4 MPNC020 02 module A */
+int doWrite_YY_DigOut_A_4(int value);
+int addWrite_YY_DigOut_A_4(int value);
+int getStatus_YY_DigOut_A_4(void);
+
+#define ID_YY_DigOut_A_5 324
+extern int YY_DigOut_A_5;	/* Digital output value bit 5 MPNC020 02 module A */
+int doWrite_YY_DigOut_A_5(int value);
+int addWrite_YY_DigOut_A_5(int value);
+int getStatus_YY_DigOut_A_5(void);
+
+#define ID_YY_DigOut_A_6 325
+extern int YY_DigOut_A_6;	/* Digital output value bit 6 MPNC020 02 module A */
+int doWrite_YY_DigOut_A_6(int value);
+int addWrite_YY_DigOut_A_6(int value);
+int getStatus_YY_DigOut_A_6(void);
+
+#define ID_YY_DigOut_A_7 326
+extern int YY_DigOut_A_7;	/* Digital output value bit 7 MPNC020 02 module A */
+int doWrite_YY_DigOut_A_7(int value);
+int addWrite_YY_DigOut_A_7(int value);
+int getStatus_YY_DigOut_A_7(void);
+
+#define ID_YY_DigOut_A_8 327
+extern int YY_DigOut_A_8;	/* Digital output value bit 8 MPNC020 02 module A */
+int doWrite_YY_DigOut_A_8(int value);
+int addWrite_YY_DigOut_A_8(int value);
+int getStatus_YY_DigOut_A_8(void);
+
+#define ID_YY_DigOut_A_9 328
+extern int YY_DigOut_A_9;	/* Digital output value bit 9 MPNC020 02 module A */
+int doWrite_YY_DigOut_A_9(int value);
+int addWrite_YY_DigOut_A_9(int value);
+int getStatus_YY_DigOut_A_9(void);
+
+#define ID_YY_DigOut_A_10 329
+extern int YY_DigOut_A_10;	/* Digital output value bit 10 MPNC020 02 module A */
+int doWrite_YY_DigOut_A_10(int value);
+int addWrite_YY_DigOut_A_10(int value);
+int getStatus_YY_DigOut_A_10(void);
+
+#define ID_YY_DigOut_A_11 330
+extern int YY_DigOut_A_11;	/* Digital output value bit 11 MPNC020 02 module A */
+int doWrite_YY_DigOut_A_11(int value);
+int addWrite_YY_DigOut_A_11(int value);
+int getStatus_YY_DigOut_A_11(void);
+
+#define ID_YY_DigOut_A_12 331
+extern int YY_DigOut_A_12;	/* Digital output value bit 12 MPNC020 02 module A */
+int doWrite_YY_DigOut_A_12(int value);
+int addWrite_YY_DigOut_A_12(int value);
+int getStatus_YY_DigOut_A_12(void);
+
+#define ID_YY_DigOut_A_13 332
+extern int YY_DigOut_A_13;	/* Digital output value bit 13 MPNC020 02 module A */
+int doWrite_YY_DigOut_A_13(int value);
+int addWrite_YY_DigOut_A_13(int value);
+int getStatus_YY_DigOut_A_13(void);
+
+#define ID_YY_DigOut_A_14 333
+extern int YY_DigOut_A_14;	/* Digital output value bit 14 MPNC020 02 module A */
+int doWrite_YY_DigOut_A_14(int value);
+int addWrite_YY_DigOut_A_14(int value);
+int getStatus_YY_DigOut_A_14(void);
+
+#define ID_YY_DigOut_A_15 334
+extern int YY_DigOut_A_15;	/* Digital output value bit 15 MPNC020 02 module A */
+int doWrite_YY_DigOut_A_15(int value);
+int addWrite_YY_DigOut_A_15(int value);
+int getStatus_YY_DigOut_A_15(void);
+
+#define ID_YY_DigOut_A_16 335
+extern int YY_DigOut_A_16;	/* Digital output value bit 16 MPNC020 02 module A */
+int doWrite_YY_DigOut_A_16(int value);
+int addWrite_YY_DigOut_A_16(int value);
+int getStatus_YY_DigOut_A_16(void);
+
+#define ID_YY_DigOut_B_1 336
+extern int YY_DigOut_B_1;	/* Digital output value bit 1 MPNC020 02 module B */
+int doWrite_YY_DigOut_B_1(int value);
+int addWrite_YY_DigOut_B_1(int value);
+int getStatus_YY_DigOut_B_1(void);
+
+#define ID_YY_DigOut_B_2 337
+extern int YY_DigOut_B_2;	/* Digital output value bit 2 MPNC020 02 module B */
+int doWrite_YY_DigOut_B_2(int value);
+int addWrite_YY_DigOut_B_2(int value);
+int getStatus_YY_DigOut_B_2(void);
+
+#define ID_YY_DigOut_B_3 338
+extern int YY_DigOut_B_3;	/* Digital output value bit 3 MPNC020 02 module B */
+int doWrite_YY_DigOut_B_3(int value);
+int addWrite_YY_DigOut_B_3(int value);
+int getStatus_YY_DigOut_B_3(void);
+
+#define ID_YY_DigOut_B_4 339
+extern int YY_DigOut_B_4;	/* Digital output value bit 4 MPNC020 02 module B */
+int doWrite_YY_DigOut_B_4(int value);
+int addWrite_YY_DigOut_B_4(int value);
+int getStatus_YY_DigOut_B_4(void);
+
+#define ID_YY_DigOut_B_5 340
+extern int YY_DigOut_B_5;	/* Digital output value bit 5 MPNC020 02 module B */
+int doWrite_YY_DigOut_B_5(int value);
+int addWrite_YY_DigOut_B_5(int value);
+int getStatus_YY_DigOut_B_5(void);
+
+#define ID_YY_DigOut_B_6 341
+extern int YY_DigOut_B_6;	/* Digital output value bit 6 MPNC020 02 module B */
+int doWrite_YY_DigOut_B_6(int value);
+int addWrite_YY_DigOut_B_6(int value);
+int getStatus_YY_DigOut_B_6(void);
+
+#define ID_YY_DigOut_B_7 342
+extern int YY_DigOut_B_7;	/* Digital output value bit 7 MPNC020 02 module B */
+int doWrite_YY_DigOut_B_7(int value);
+int addWrite_YY_DigOut_B_7(int value);
+int getStatus_YY_DigOut_B_7(void);
+
+#define ID_YY_DigOut_B_8 343
+extern int YY_DigOut_B_8;	/* Digital output value bit 8 MPNC020 02 module B */
+int doWrite_YY_DigOut_B_8(int value);
+int addWrite_YY_DigOut_B_8(int value);
+int getStatus_YY_DigOut_B_8(void);
+
+#define ID_YY_DigOut_B_9 344
+extern int YY_DigOut_B_9;	/* Digital output value bit 9 MPNC020 02 module B */
+int doWrite_YY_DigOut_B_9(int value);
+int addWrite_YY_DigOut_B_9(int value);
+int getStatus_YY_DigOut_B_9(void);
+
+#define ID_YY_DigOut_B_10 345
+extern int YY_DigOut_B_10;	/* Digital output value bit 10 MPNC020 02 module B */
+int doWrite_YY_DigOut_B_10(int value);
+int addWrite_YY_DigOut_B_10(int value);
+int getStatus_YY_DigOut_B_10(void);
+
+#define ID_YY_DigOut_B_11 346
+extern int YY_DigOut_B_11;	/* Digital output value bit 11 MPNC020 02 module B */
+int doWrite_YY_DigOut_B_11(int value);
+int addWrite_YY_DigOut_B_11(int value);
+int getStatus_YY_DigOut_B_11(void);
+
+#define ID_YY_DigOut_B_12 347
+extern int YY_DigOut_B_12;	/* Digital output value bit 12 MPNC020 02 module B */
+int doWrite_YY_DigOut_B_12(int value);
+int addWrite_YY_DigOut_B_12(int value);
+int getStatus_YY_DigOut_B_12(void);
+
+#define ID_YY_DigOut_B_13 348
+extern int YY_DigOut_B_13;	/* Digital output value bit 13 MPNC020 02 module B */
+int doWrite_YY_DigOut_B_13(int value);
+int addWrite_YY_DigOut_B_13(int value);
+int getStatus_YY_DigOut_B_13(void);
+
+#define ID_YY_DigOut_B_14 349
+extern int YY_DigOut_B_14;	/* Digital output value bit 14 MPNC020 02 module B */
+int doWrite_YY_DigOut_B_14(int value);
+int addWrite_YY_DigOut_B_14(int value);
+int getStatus_YY_DigOut_B_14(void);
+
+#define ID_YY_DigOut_B_15 350
+extern int YY_DigOut_B_15;	/* Digital output value bit 15 MPNC020 02 module B */
+int doWrite_YY_DigOut_B_15(int value);
+int addWrite_YY_DigOut_B_15(int value);
+int getStatus_YY_DigOut_B_15(void);
+
+#define ID_YY_DigOut_B_16 351
+extern int YY_DigOut_B_16;	/* Digital output value bit 16 MPNC020 02 module B */
+int doWrite_YY_DigOut_B_16(int value);
+int addWrite_YY_DigOut_B_16(int value);
+int getStatus_YY_DigOut_B_16(void);
+
+#define ID_YY_DigOut_C_1 352
+extern int YY_DigOut_C_1;	/* Digital output value bit 1 MPNC020 02 module C */
+int doWrite_YY_DigOut_C_1(int value);
+int addWrite_YY_DigOut_C_1(int value);
+int getStatus_YY_DigOut_C_1(void);
+
+#define ID_YY_DigOut_C_2 353
+extern int YY_DigOut_C_2;	/* Digital output value bit 2 MPNC020 02 module C */
+int doWrite_YY_DigOut_C_2(int value);
+int addWrite_YY_DigOut_C_2(int value);
+int getStatus_YY_DigOut_C_2(void);
+
+#define ID_YY_DigOut_C_3 354
+extern int YY_DigOut_C_3;	/* Digital output value bit 3 MPNC020 02 module C */
+int doWrite_YY_DigOut_C_3(int value);
+int addWrite_YY_DigOut_C_3(int value);
+int getStatus_YY_DigOut_C_3(void);
+
+#define ID_YY_DigOut_C_4 355
+extern int YY_DigOut_C_4;	/* Digital output value bit 4 MPNC020 02 module C */
+int doWrite_YY_DigOut_C_4(int value);
+int addWrite_YY_DigOut_C_4(int value);
+int getStatus_YY_DigOut_C_4(void);
+
+#define ID_YY_DigOut_C_5 356
+extern int YY_DigOut_C_5;	/* Digital output value bit 5 MPNC020 02 module C */
+int doWrite_YY_DigOut_C_5(int value);
+int addWrite_YY_DigOut_C_5(int value);
+int getStatus_YY_DigOut_C_5(void);
+
+#define ID_YY_DigOut_C_6 357
+extern int YY_DigOut_C_6;	/* Digital output value bit 6 MPNC020 02 module C */
+int doWrite_YY_DigOut_C_6(int value);
+int addWrite_YY_DigOut_C_6(int value);
+int getStatus_YY_DigOut_C_6(void);
+
+#define ID_YY_DigOut_C_7 358
+extern int YY_DigOut_C_7;	/* Digital output value bit 7 MPNC020 02 module C */
+int doWrite_YY_DigOut_C_7(int value);
+int addWrite_YY_DigOut_C_7(int value);
+int getStatus_YY_DigOut_C_7(void);
+
+#define ID_YY_DigOut_C_8 359
+extern int YY_DigOut_C_8;	/* Digital output value bit 8 MPNC020 02 module C */
+int doWrite_YY_DigOut_C_8(int value);
+int addWrite_YY_DigOut_C_8(int value);
+int getStatus_YY_DigOut_C_8(void);
+
+#define ID_YY_DigOut_C_9 360
+extern int YY_DigOut_C_9;	/* Digital output value bit 9 MPNC020 02 module C */
+int doWrite_YY_DigOut_C_9(int value);
+int addWrite_YY_DigOut_C_9(int value);
+int getStatus_YY_DigOut_C_9(void);
+
+#define ID_YY_DigOut_C_10 361
+extern int YY_DigOut_C_10;	/* Digital output value bit 10 MPNC020 02 module C */
+int doWrite_YY_DigOut_C_10(int value);
+int addWrite_YY_DigOut_C_10(int value);
+int getStatus_YY_DigOut_C_10(void);
+
+#define ID_YY_DigOut_C_11 362
+extern int YY_DigOut_C_11;	/* Digital output value bit 11 MPNC020 02 module C */
+int doWrite_YY_DigOut_C_11(int value);
+int addWrite_YY_DigOut_C_11(int value);
+int getStatus_YY_DigOut_C_11(void);
+
+#define ID_YY_DigOut_C_12 363
+extern int YY_DigOut_C_12;	/* Digital output value bit 12 MPNC020 02 module C */
+int doWrite_YY_DigOut_C_12(int value);
+int addWrite_YY_DigOut_C_12(int value);
+int getStatus_YY_DigOut_C_12(void);
+
+#define ID_YY_DigOut_C_13 364
+extern int YY_DigOut_C_13;	/* Digital output value bit 13 MPNC020 02 module C */
+int doWrite_YY_DigOut_C_13(int value);
+int addWrite_YY_DigOut_C_13(int value);
+int getStatus_YY_DigOut_C_13(void);
+
+#define ID_YY_DigOut_C_14 365
+extern int YY_DigOut_C_14;	/* Digital output value bit 14 MPNC020 02 module C */
+int doWrite_YY_DigOut_C_14(int value);
+int addWrite_YY_DigOut_C_14(int value);
+int getStatus_YY_DigOut_C_14(void);
+
+#define ID_YY_DigOut_C_15 366
+extern int YY_DigOut_C_15;	/* Digital output value bit 15 MPNC020 02 module C */
+int doWrite_YY_DigOut_C_15(int value);
+int addWrite_YY_DigOut_C_15(int value);
+int getStatus_YY_DigOut_C_15(void);
+
+#define ID_YY_DigOut_C_16 367
+extern int YY_DigOut_C_16;	/* Digital output value bit 16 MPNC020 02 module C */
+int doWrite_YY_DigOut_C_16(int value);
+int addWrite_YY_DigOut_C_16(int value);
+int getStatus_YY_DigOut_C_16(void);
+
+#define ID_YY_DigOut_D_1 368
+extern int YY_DigOut_D_1;	/* Digital output value bit 1 MPNC020 02 module D */
+int doWrite_YY_DigOut_D_1(int value);
+int addWrite_YY_DigOut_D_1(int value);
+int getStatus_YY_DigOut_D_1(void);
+
+#define ID_YY_DigOut_D_2 369
+extern int YY_DigOut_D_2;	/* Digital output value bit 2 MPNC020 02 module D */
+int doWrite_YY_DigOut_D_2(int value);
+int addWrite_YY_DigOut_D_2(int value);
+int getStatus_YY_DigOut_D_2(void);
+
+#define ID_YY_DigOut_D_3 370
+extern int YY_DigOut_D_3;	/* Digital output value bit 3 MPNC020 02 module D */
+int doWrite_YY_DigOut_D_3(int value);
+int addWrite_YY_DigOut_D_3(int value);
+int getStatus_YY_DigOut_D_3(void);
+
+#define ID_YY_DigOut_D_4 371
+extern int YY_DigOut_D_4;	/* Digital output value bit 4 MPNC020 02 module D */
+int doWrite_YY_DigOut_D_4(int value);
+int addWrite_YY_DigOut_D_4(int value);
+int getStatus_YY_DigOut_D_4(void);
+
+#define ID_YY_DigOut_D_5 372
+extern int YY_DigOut_D_5;	/* Digital output value bit 5 MPNC020 02 module D */
+int doWrite_YY_DigOut_D_5(int value);
+int addWrite_YY_DigOut_D_5(int value);
+int getStatus_YY_DigOut_D_5(void);
+
+#define ID_YY_DigOut_D_6 373
+extern int YY_DigOut_D_6;	/* Digital output value bit 6 MPNC020 02 module D */
+int doWrite_YY_DigOut_D_6(int value);
+int addWrite_YY_DigOut_D_6(int value);
+int getStatus_YY_DigOut_D_6(void);
+
+#define ID_YY_DigOut_D_7 374
+extern int YY_DigOut_D_7;	/* Digital output value bit 7 MPNC020 02 module D */
+int doWrite_YY_DigOut_D_7(int value);
+int addWrite_YY_DigOut_D_7(int value);
+int getStatus_YY_DigOut_D_7(void);
+
+#define ID_YY_DigOut_D_8 375
+extern int YY_DigOut_D_8;	/* Digital output value bit 8 MPNC020 02 module D */
+int doWrite_YY_DigOut_D_8(int value);
+int addWrite_YY_DigOut_D_8(int value);
+int getStatus_YY_DigOut_D_8(void);
+
+#define ID_YY_DigOut_D_9 376
+extern int YY_DigOut_D_9;	/* Digital output value bit 9 MPNC020 02 module D */
+int doWrite_YY_DigOut_D_9(int value);
+int addWrite_YY_DigOut_D_9(int value);
+int getStatus_YY_DigOut_D_9(void);
+
+#define ID_YY_DigOut_D_10 377
+extern int YY_DigOut_D_10;	/* Digital output value bit 10 MPNC020 02 module D */
+int doWrite_YY_DigOut_D_10(int value);
+int addWrite_YY_DigOut_D_10(int value);
+int getStatus_YY_DigOut_D_10(void);
+
+#define ID_YY_DigOut_D_11 378
+extern int YY_DigOut_D_11;	/* Digital output value bit 11 MPNC020 02 module D */
+int doWrite_YY_DigOut_D_11(int value);
+int addWrite_YY_DigOut_D_11(int value);
+int getStatus_YY_DigOut_D_11(void);
+
+#define ID_YY_DigOut_D_12 379
+extern int YY_DigOut_D_12;	/* Digital output value bit 12 MPNC020 02 module D */
+int doWrite_YY_DigOut_D_12(int value);
+int addWrite_YY_DigOut_D_12(int value);
+int getStatus_YY_DigOut_D_12(void);
+
+#define ID_YY_DigOut_D_13 380
+extern int YY_DigOut_D_13;	/* Digital output value bit 13 MPNC020 02 module D */
+int doWrite_YY_DigOut_D_13(int value);
+int addWrite_YY_DigOut_D_13(int value);
+int getStatus_YY_DigOut_D_13(void);
+
+#define ID_YY_DigOut_D_14 381
+extern int YY_DigOut_D_14;	/* Digital output value bit 14 MPNC020 02 module D */
+int doWrite_YY_DigOut_D_14(int value);
+int addWrite_YY_DigOut_D_14(int value);
+int getStatus_YY_DigOut_D_14(void);
+
+#define ID_YY_DigOut_D_15 382
+extern int YY_DigOut_D_15;	/* Digital output value bit 15 MPNC020 02 module D */
+int doWrite_YY_DigOut_D_15(int value);
+int addWrite_YY_DigOut_D_15(int value);
+int getStatus_YY_DigOut_D_15(void);
+
+#define ID_YY_DigOut_D_16 383
+extern int YY_DigOut_D_16;	/* Digital output value bit 16 MPNC020 02 module D */
+int doWrite_YY_DigOut_D_16(int value);
+int addWrite_YY_DigOut_D_16(int value);
+int getStatus_YY_DigOut_D_16(void);
+
+#define ID_YY_DigIn_A_1 384
+extern int YY_DigIn_A_1;	/* Digital input value bit 1 MPNC020 01 module A */
+int doWrite_YY_DigIn_A_1(int value);
+int addWrite_YY_DigIn_A_1(int value);
+int getStatus_YY_DigIn_A_1(void);
+
+#define ID_YY_DigIn_A_2 385
+extern int YY_DigIn_A_2;	/* Digital input value bit 2 MPNC020 01 module A */
+int doWrite_YY_DigIn_A_2(int value);
+int addWrite_YY_DigIn_A_2(int value);
+int getStatus_YY_DigIn_A_2(void);
+
+#define ID_YY_DigIn_A_3 386
+extern int YY_DigIn_A_3;	/* Digital input value bit 3 MPNC020 01 module A */
+int doWrite_YY_DigIn_A_3(int value);
+int addWrite_YY_DigIn_A_3(int value);
+int getStatus_YY_DigIn_A_3(void);
+
+#define ID_YY_DigIn_A_4 387
+extern int YY_DigIn_A_4;	/* Digital input value bit 4 MPNC020 01 module A */
+int doWrite_YY_DigIn_A_4(int value);
+int addWrite_YY_DigIn_A_4(int value);
+int getStatus_YY_DigIn_A_4(void);
+
+#define ID_YY_DigIn_A_5 388
+extern int YY_DigIn_A_5;	/* Digital input value bit 5 MPNC020 01 module A */
+int doWrite_YY_DigIn_A_5(int value);
+int addWrite_YY_DigIn_A_5(int value);
+int getStatus_YY_DigIn_A_5(void);
+
+#define ID_YY_DigIn_A_6 389
+extern int YY_DigIn_A_6;	/* Digital input value bit 6 MPNC020 01 module A */
+int doWrite_YY_DigIn_A_6(int value);
+int addWrite_YY_DigIn_A_6(int value);
+int getStatus_YY_DigIn_A_6(void);
+
+#define ID_YY_DigIn_A_7 390
+extern int YY_DigIn_A_7;	/* Digital input value bit 7 MPNC020 01 module A */
+int doWrite_YY_DigIn_A_7(int value);
+int addWrite_YY_DigIn_A_7(int value);
+int getStatus_YY_DigIn_A_7(void);
+
+#define ID_YY_DigIn_A_8 391
+extern int YY_DigIn_A_8;	/* Digital input value bit 8 MPNC020 01 module A */
+int doWrite_YY_DigIn_A_8(int value);
+int addWrite_YY_DigIn_A_8(int value);
+int getStatus_YY_DigIn_A_8(void);
+
+#define ID_YY_DigIn_A_9 392
+extern int YY_DigIn_A_9;	/* Digital input value bit 9 MPNC020 01 module A */
+int doWrite_YY_DigIn_A_9(int value);
+int addWrite_YY_DigIn_A_9(int value);
+int getStatus_YY_DigIn_A_9(void);
+
+#define ID_YY_DigIn_A_10 393
+extern int YY_DigIn_A_10;	/* Digital input value bit 10 MPNC020 01 module A */
+int doWrite_YY_DigIn_A_10(int value);
+int addWrite_YY_DigIn_A_10(int value);
+int getStatus_YY_DigIn_A_10(void);
+
+#define ID_YY_DigIn_A_11 394
+extern int YY_DigIn_A_11;	/* Digital input value bit 11 MPNC020 01 module A */
+int doWrite_YY_DigIn_A_11(int value);
+int addWrite_YY_DigIn_A_11(int value);
+int getStatus_YY_DigIn_A_11(void);
+
+#define ID_YY_DigIn_A_12 395
+extern int YY_DigIn_A_12;	/* Digital input value bit 12 MPNC020 01 module A */
+int doWrite_YY_DigIn_A_12(int value);
+int addWrite_YY_DigIn_A_12(int value);
+int getStatus_YY_DigIn_A_12(void);
+
+#define ID_YY_DigIn_A_13 396
+extern int YY_DigIn_A_13;	/* Digital input value bit 13 MPNC020 01 module A */
+int doWrite_YY_DigIn_A_13(int value);
+int addWrite_YY_DigIn_A_13(int value);
+int getStatus_YY_DigIn_A_13(void);
+
+#define ID_YY_DigIn_A_14 397
+extern int YY_DigIn_A_14;	/* Digital input value bit 14 MPNC020 01 module A */
+int doWrite_YY_DigIn_A_14(int value);
+int addWrite_YY_DigIn_A_14(int value);
+int getStatus_YY_DigIn_A_14(void);
+
+#define ID_YY_DigIn_A_15 398
+extern int YY_DigIn_A_15;	/* Digital input value bit 15 MPNC020 01 module A */
+int doWrite_YY_DigIn_A_15(int value);
+int addWrite_YY_DigIn_A_15(int value);
+int getStatus_YY_DigIn_A_15(void);
+
+#define ID_YY_DigIn_A_16 399
+extern int YY_DigIn_A_16;	/* Digital input value bit 16 MPNC020 01 module A */
+int doWrite_YY_DigIn_A_16(int value);
+int addWrite_YY_DigIn_A_16(int value);
+int getStatus_YY_DigIn_A_16(void);
+
+#define ID_YY_DigIn_B_1 400
+extern int YY_DigIn_B_1;	/* Digital input value bit 1 MPNC020 01 module B */
+int doWrite_YY_DigIn_B_1(int value);
+int addWrite_YY_DigIn_B_1(int value);
+int getStatus_YY_DigIn_B_1(void);
+
+#define ID_YY_DigIn_B_2 401
+extern int YY_DigIn_B_2;	/* Digital input value bit 2 MPNC020 01 module B */
+int doWrite_YY_DigIn_B_2(int value);
+int addWrite_YY_DigIn_B_2(int value);
+int getStatus_YY_DigIn_B_2(void);
+
+#define ID_YY_DigIn_B_3 402
+extern int YY_DigIn_B_3;	/* Digital input value bit 3 MPNC020 01 module B */
+int doWrite_YY_DigIn_B_3(int value);
+int addWrite_YY_DigIn_B_3(int value);
+int getStatus_YY_DigIn_B_3(void);
+
+#define ID_YY_DigIn_B_4 403
+extern int YY_DigIn_B_4;	/* Digital input value bit 4 MPNC020 01 module B */
+int doWrite_YY_DigIn_B_4(int value);
+int addWrite_YY_DigIn_B_4(int value);
+int getStatus_YY_DigIn_B_4(void);
+
+#define ID_YY_DigIn_B_5 404
+extern int YY_DigIn_B_5;	/* Digital input value bit 5 MPNC020 01 module B */
+int doWrite_YY_DigIn_B_5(int value);
+int addWrite_YY_DigIn_B_5(int value);
+int getStatus_YY_DigIn_B_5(void);
+
+#define ID_YY_DigIn_B_6 405
+extern int YY_DigIn_B_6;	/* Digital input value bit 6 MPNC020 01 module B */
+int doWrite_YY_DigIn_B_6(int value);
+int addWrite_YY_DigIn_B_6(int value);
+int getStatus_YY_DigIn_B_6(void);
+
+#define ID_YY_DigIn_B_7 406
+extern int YY_DigIn_B_7;	/* Digital input value bit 7 MPNC020 01 module B */
+int doWrite_YY_DigIn_B_7(int value);
+int addWrite_YY_DigIn_B_7(int value);
+int getStatus_YY_DigIn_B_7(void);
+
+#define ID_YY_DigIn_B_8 407
+extern int YY_DigIn_B_8;	/* Digital input value bit 8 MPNC020 01 module B */
+int doWrite_YY_DigIn_B_8(int value);
+int addWrite_YY_DigIn_B_8(int value);
+int getStatus_YY_DigIn_B_8(void);
+
+#define ID_YY_DigIn_B_9 408
+extern int YY_DigIn_B_9;	/* Digital input value bit 9 MPNC020 01 module B */
+int doWrite_YY_DigIn_B_9(int value);
+int addWrite_YY_DigIn_B_9(int value);
+int getStatus_YY_DigIn_B_9(void);
+
+#define ID_YY_DigIn_B_10 409
+extern int YY_DigIn_B_10;	/* Digital input value bit 10 MPNC020 01 module B */
+int doWrite_YY_DigIn_B_10(int value);
+int addWrite_YY_DigIn_B_10(int value);
+int getStatus_YY_DigIn_B_10(void);
+
+#define ID_YY_DigIn_B_11 410
+extern int YY_DigIn_B_11;	/* Digital input value bit 11 MPNC020 01 module B */
+int doWrite_YY_DigIn_B_11(int value);
+int addWrite_YY_DigIn_B_11(int value);
+int getStatus_YY_DigIn_B_11(void);
+
+#define ID_YY_DigIn_B_12 411
+extern int YY_DigIn_B_12;	/* Digital input value bit 12 MPNC020 01 module B */
+int doWrite_YY_DigIn_B_12(int value);
+int addWrite_YY_DigIn_B_12(int value);
+int getStatus_YY_DigIn_B_12(void);
+
+#define ID_YY_DigIn_B_13 412
+extern int YY_DigIn_B_13;	/* Digital input value bit 13 MPNC020 01 module B */
+int doWrite_YY_DigIn_B_13(int value);
+int addWrite_YY_DigIn_B_13(int value);
+int getStatus_YY_DigIn_B_13(void);
+
+#define ID_YY_DigIn_B_14 413
+extern int YY_DigIn_B_14;	/* Digital input value bit 14 MPNC020 01 module B */
+int doWrite_YY_DigIn_B_14(int value);
+int addWrite_YY_DigIn_B_14(int value);
+int getStatus_YY_DigIn_B_14(void);
+
+#define ID_YY_DigIn_B_15 414
+extern int YY_DigIn_B_15;	/* Digital input value bit 15 MPNC020 01 module B */
+int doWrite_YY_DigIn_B_15(int value);
+int addWrite_YY_DigIn_B_15(int value);
+int getStatus_YY_DigIn_B_15(void);
+
+#define ID_YY_DigIn_B_16 415
+extern int YY_DigIn_B_16;	/* Digital input value bit 16 MPNC020 01 module B */
+int doWrite_YY_DigIn_B_16(int value);
+int addWrite_YY_DigIn_B_16(int value);
+int getStatus_YY_DigIn_B_16(void);
+
+#define ID_YY_DigIn_C_1 416
+extern int YY_DigIn_C_1;	/* Digital input value bit 1 MPNC020 01 module C */
+int doWrite_YY_DigIn_C_1(int value);
+int addWrite_YY_DigIn_C_1(int value);
+int getStatus_YY_DigIn_C_1(void);
+
+#define ID_YY_DigIn_C_2 417
+extern int YY_DigIn_C_2;	/* Digital input value bit 2 MPNC020 01 module C */
+int doWrite_YY_DigIn_C_2(int value);
+int addWrite_YY_DigIn_C_2(int value);
+int getStatus_YY_DigIn_C_2(void);
+
+#define ID_YY_DigIn_C_3 418
+extern int YY_DigIn_C_3;	/* Digital input value bit 3 MPNC020 01 module C */
+int doWrite_YY_DigIn_C_3(int value);
+int addWrite_YY_DigIn_C_3(int value);
+int getStatus_YY_DigIn_C_3(void);
+
+#define ID_YY_DigIn_C_4 419
+extern int YY_DigIn_C_4;	/* Digital input value bit 4 MPNC020 01 module C */
+int doWrite_YY_DigIn_C_4(int value);
+int addWrite_YY_DigIn_C_4(int value);
+int getStatus_YY_DigIn_C_4(void);
+
+#define ID_YY_DigIn_C_5 420
+extern int YY_DigIn_C_5;	/* Digital input value bit 5 MPNC020 01 module C */
+int doWrite_YY_DigIn_C_5(int value);
+int addWrite_YY_DigIn_C_5(int value);
+int getStatus_YY_DigIn_C_5(void);
+
+#define ID_YY_DigIn_C_6 421
+extern int YY_DigIn_C_6;	/* Digital input value bit 6 MPNC020 01 module C */
+int doWrite_YY_DigIn_C_6(int value);
+int addWrite_YY_DigIn_C_6(int value);
+int getStatus_YY_DigIn_C_6(void);
+
+#define ID_YY_DigIn_C_7 422
+extern int YY_DigIn_C_7;	/* Digital input value bit 7 MPNC020 01 module C */
+int doWrite_YY_DigIn_C_7(int value);
+int addWrite_YY_DigIn_C_7(int value);
+int getStatus_YY_DigIn_C_7(void);
+
+#define ID_YY_DigIn_C_8 423
+extern int YY_DigIn_C_8;	/* Digital input value bit 8 MPNC020 01 module C */
+int doWrite_YY_DigIn_C_8(int value);
+int addWrite_YY_DigIn_C_8(int value);
+int getStatus_YY_DigIn_C_8(void);
+
+#define ID_YY_DigIn_C_9 424
+extern int YY_DigIn_C_9;	/* Digital input value bit 9 MPNC020 01 module C */
+int doWrite_YY_DigIn_C_9(int value);
+int addWrite_YY_DigIn_C_9(int value);
+int getStatus_YY_DigIn_C_9(void);
+
+#define ID_YY_DigIn_C_10 425
+extern int YY_DigIn_C_10;	/* Digital input value bit 10 MPNC020 01 module C */
+int doWrite_YY_DigIn_C_10(int value);
+int addWrite_YY_DigIn_C_10(int value);
+int getStatus_YY_DigIn_C_10(void);
+
+#define ID_YY_DigIn_C_11 426
+extern int YY_DigIn_C_11;	/* Digital input value bit 11 MPNC020 01 module C */
+int doWrite_YY_DigIn_C_11(int value);
+int addWrite_YY_DigIn_C_11(int value);
+int getStatus_YY_DigIn_C_11(void);
+
+#define ID_YY_DigIn_C_12 427
+extern int YY_DigIn_C_12;	/* Digital input value bit 12 MPNC020 01 module C */
+int doWrite_YY_DigIn_C_12(int value);
+int addWrite_YY_DigIn_C_12(int value);
+int getStatus_YY_DigIn_C_12(void);
+
+#define ID_YY_DigIn_C_13 428
+extern int YY_DigIn_C_13;	/* Digital input value bit 13 MPNC020 01 module C */
+int doWrite_YY_DigIn_C_13(int value);
+int addWrite_YY_DigIn_C_13(int value);
+int getStatus_YY_DigIn_C_13(void);
+
+#define ID_YY_DigIn_C_14 429
+extern int YY_DigIn_C_14;	/* Digital input value bit 14 MPNC020 01 module C */
+int doWrite_YY_DigIn_C_14(int value);
+int addWrite_YY_DigIn_C_14(int value);
+int getStatus_YY_DigIn_C_14(void);
+
+#define ID_YY_DigIn_C_15 430
+extern int YY_DigIn_C_15;	/* Digital input value bit 15 MPNC020 01 module C */
+int doWrite_YY_DigIn_C_15(int value);
+int addWrite_YY_DigIn_C_15(int value);
+int getStatus_YY_DigIn_C_15(void);
+
+#define ID_YY_DigIn_C_16 431
+extern int YY_DigIn_C_16;	/* Digital input value bit 16 MPNC020 01 module C */
+int doWrite_YY_DigIn_C_16(int value);
+int addWrite_YY_DigIn_C_16(int value);
+int getStatus_YY_DigIn_C_16(void);
+
+#define ID_YY_DigIn_D_1 432
+extern int YY_DigIn_D_1;	/* Digital input value bit 1 MPNC020 01 module D */
+int doWrite_YY_DigIn_D_1(int value);
+int addWrite_YY_DigIn_D_1(int value);
+int getStatus_YY_DigIn_D_1(void);
+
+#define ID_YY_DigIn_D_2 433
+extern int YY_DigIn_D_2;	/* Digital input value bit 2 MPNC020 01 module D */
+int doWrite_YY_DigIn_D_2(int value);
+int addWrite_YY_DigIn_D_2(int value);
+int getStatus_YY_DigIn_D_2(void);
+
+#define ID_YY_DigIn_D_3 434
+extern int YY_DigIn_D_3;	/* Digital input value bit 3 MPNC020 01 module D */
+int doWrite_YY_DigIn_D_3(int value);
+int addWrite_YY_DigIn_D_3(int value);
+int getStatus_YY_DigIn_D_3(void);
+
+#define ID_YY_DigIn_D_4 435
+extern int YY_DigIn_D_4;	/* Digital input value bit 4 MPNC020 01 module D */
+int doWrite_YY_DigIn_D_4(int value);
+int addWrite_YY_DigIn_D_4(int value);
+int getStatus_YY_DigIn_D_4(void);
+
+#define ID_YY_DigIn_D_5 436
+extern int YY_DigIn_D_5;	/* Digital input value bit 5 MPNC020 01 module D */
+int doWrite_YY_DigIn_D_5(int value);
+int addWrite_YY_DigIn_D_5(int value);
+int getStatus_YY_DigIn_D_5(void);
+
+#define ID_YY_DigIn_D_6 437
+extern int YY_DigIn_D_6;	/* Digital input value bit 6 MPNC020 01 module D */
+int doWrite_YY_DigIn_D_6(int value);
+int addWrite_YY_DigIn_D_6(int value);
+int getStatus_YY_DigIn_D_6(void);
+
+#define ID_YY_DigIn_D_7 438
+extern int YY_DigIn_D_7;	/* Digital input value bit 7 MPNC020 01 module D */
+int doWrite_YY_DigIn_D_7(int value);
+int addWrite_YY_DigIn_D_7(int value);
+int getStatus_YY_DigIn_D_7(void);
+
+#define ID_YY_DigIn_D_8 439
+extern int YY_DigIn_D_8;	/* Digital input value bit 8 MPNC020 01 module D */
+int doWrite_YY_DigIn_D_8(int value);
+int addWrite_YY_DigIn_D_8(int value);
+int getStatus_YY_DigIn_D_8(void);
+
+#define ID_YY_DigIn_D_9 440
+extern int YY_DigIn_D_9;	/* Digital input value bit 9 MPNC020 01 module D */
+int doWrite_YY_DigIn_D_9(int value);
+int addWrite_YY_DigIn_D_9(int value);
+int getStatus_YY_DigIn_D_9(void);
+
+#define ID_YY_DigIn_D_10 441
+extern int YY_DigIn_D_10;	/* Digital input value bit 10 MPNC020 01 module D */
+int doWrite_YY_DigIn_D_10(int value);
+int addWrite_YY_DigIn_D_10(int value);
+int getStatus_YY_DigIn_D_10(void);
+
+#define ID_YY_DigIn_D_11 442
+extern int YY_DigIn_D_11;	/* Digital input value bit 11 MPNC020 01 module D */
+int doWrite_YY_DigIn_D_11(int value);
+int addWrite_YY_DigIn_D_11(int value);
+int getStatus_YY_DigIn_D_11(void);
+
+#define ID_YY_DigIn_D_12 443
+extern int YY_DigIn_D_12;	/* Digital input value bit 12 MPNC020 01 module D */
+int doWrite_YY_DigIn_D_12(int value);
+int addWrite_YY_DigIn_D_12(int value);
+int getStatus_YY_DigIn_D_12(void);
+
+#define ID_YY_DigIn_D_13 444
+extern int YY_DigIn_D_13;	/* Digital input value bit 13 MPNC020 01 module D */
+int doWrite_YY_DigIn_D_13(int value);
+int addWrite_YY_DigIn_D_13(int value);
+int getStatus_YY_DigIn_D_13(void);
+
+#define ID_YY_DigIn_D_14 445
+extern int YY_DigIn_D_14;	/* Digital input value bit 14 MPNC020 01 module D */
+int doWrite_YY_DigIn_D_14(int value);
+int addWrite_YY_DigIn_D_14(int value);
+int getStatus_YY_DigIn_D_14(void);
+
+#define ID_YY_DigIn_D_15 446
+extern int YY_DigIn_D_15;	/* Digital input value bit 15 MPNC020 01 module D */
+int doWrite_YY_DigIn_D_15(int value);
+int addWrite_YY_DigIn_D_15(int value);
+int getStatus_YY_DigIn_D_15(void);
+
+#define ID_YY_DigIn_D_16 447
+extern int YY_DigIn_D_16;	/* Digital input value bit 16 MPNC020 01 module D */
+int doWrite_YY_DigIn_D_16(int value);
+int addWrite_YY_DigIn_D_16(int value);
+int getStatus_YY_DigIn_D_16(void);
+
+#define ID_YY_AnOutConf_A 448
+extern u_int16_t YY_AnOutConf_A;	/* Analog outputs configuration MPNC035 module A */
+int doWrite_YY_AnOutConf_A(u_int16_t value);
+int addWrite_YY_AnOutConf_A(u_int16_t value);
+int getStatus_YY_AnOutConf_A(void);
+
+#define ID_YY_AnOutConf_B 449
+extern u_int16_t YY_AnOutConf_B;	/* Analog outputs configuration MPNC035 module B */
+int doWrite_YY_AnOutConf_B(u_int16_t value);
+int addWrite_YY_AnOutConf_B(u_int16_t value);
+int getStatus_YY_AnOutConf_B(void);
+
+#define ID_YY_AnOutConf_C 450
+extern u_int16_t YY_AnOutConf_C;	/* Analog outputs configuration MPNC035 module C */
+int doWrite_YY_AnOutConf_C(u_int16_t value);
+int addWrite_YY_AnOutConf_C(u_int16_t value);
+int getStatus_YY_AnOutConf_C(void);
+
+#define ID_YY_AnOutConf_D 451
+extern u_int16_t YY_AnOutConf_D;	/* Analog outputs configuration MPNC035 module D */
+int doWrite_YY_AnOutConf_D(u_int16_t value);
+int addWrite_YY_AnOutConf_D(u_int16_t value);
+int getStatus_YY_AnOutConf_D(void);
+
+#define ID_YY_AnOut_A_1 452
+extern int16_t YY_AnOut_A_1;	/* Analog output 1 value MPNC035 module A */
+int doWrite_YY_AnOut_A_1(int16_t value);
+int addWrite_YY_AnOut_A_1(int16_t value);
+int getStatus_YY_AnOut_A_1(void);
+
+#define ID_YY_AnOut_A_2 453
+extern int16_t YY_AnOut_A_2;	/* Analog output 2 value MPNC035 module A */
+int doWrite_YY_AnOut_A_2(int16_t value);
+int addWrite_YY_AnOut_A_2(int16_t value);
+int getStatus_YY_AnOut_A_2(void);
+
+#define ID_YY_AnOut_A_3 454
+extern int16_t YY_AnOut_A_3;	/* Analog output 3 value MPNC035 module A */
+int doWrite_YY_AnOut_A_3(int16_t value);
+int addWrite_YY_AnOut_A_3(int16_t value);
+int getStatus_YY_AnOut_A_3(void);
+
+#define ID_YY_AnOut_A_4 455
+extern int16_t YY_AnOut_A_4;	/* Analog output 4 value MPNC035 module A */
+int doWrite_YY_AnOut_A_4(int16_t value);
+int addWrite_YY_AnOut_A_4(int16_t value);
+int getStatus_YY_AnOut_A_4(void);
+
+#define ID_YY_AnOut_B_1 456
+extern int16_t YY_AnOut_B_1;	/* Analog output 1 value MPNC035 module B */
+int doWrite_YY_AnOut_B_1(int16_t value);
+int addWrite_YY_AnOut_B_1(int16_t value);
+int getStatus_YY_AnOut_B_1(void);
+
+#define ID_YY_AnOut_B_2 457
+extern int16_t YY_AnOut_B_2;	/* Analog output 2 value MPNC035 module B */
+int doWrite_YY_AnOut_B_2(int16_t value);
+int addWrite_YY_AnOut_B_2(int16_t value);
+int getStatus_YY_AnOut_B_2(void);
+
+#define ID_YY_AnOut_B_3 458
+extern int16_t YY_AnOut_B_3;	/* Analog output 3 value MPNC035 module B */
+int doWrite_YY_AnOut_B_3(int16_t value);
+int addWrite_YY_AnOut_B_3(int16_t value);
+int getStatus_YY_AnOut_B_3(void);
+
+#define ID_YY_AnOut_B_4 459
+extern int16_t YY_AnOut_B_4;	/* Analog output 4 value MPNC035 module B */
+int doWrite_YY_AnOut_B_4(int16_t value);
+int addWrite_YY_AnOut_B_4(int16_t value);
+int getStatus_YY_AnOut_B_4(void);
+
+#define ID_YY_AnOut_C_1 460
+extern int16_t YY_AnOut_C_1;	/* Analog output 1 value MPNC035 module C */
+int doWrite_YY_AnOut_C_1(int16_t value);
+int addWrite_YY_AnOut_C_1(int16_t value);
+int getStatus_YY_AnOut_C_1(void);
+
+#define ID_YY_AnOut_C_2 461
+extern int16_t YY_AnOut_C_2;	/* Analog output 2 value MPNC035 module C */
+int doWrite_YY_AnOut_C_2(int16_t value);
+int addWrite_YY_AnOut_C_2(int16_t value);
+int getStatus_YY_AnOut_C_2(void);
+
+#define ID_YY_AnOut_C_3 462
+extern int16_t YY_AnOut_C_3;	/* Analog output 3 value MPNC035 module C */
+int doWrite_YY_AnOut_C_3(int16_t value);
+int addWrite_YY_AnOut_C_3(int16_t value);
+int getStatus_YY_AnOut_C_3(void);
+
+#define ID_YY_AnOut_C_4 463
+extern int16_t YY_AnOut_C_4;	/* Analog output 4 value MPNC035 module C */
+int doWrite_YY_AnOut_C_4(int16_t value);
+int addWrite_YY_AnOut_C_4(int16_t value);
+int getStatus_YY_AnOut_C_4(void);
+
+#define ID_YY_AnOut_D_1 464
+extern int16_t YY_AnOut_D_1;	/* Analog output 1 value MPNC035 module D */
+int doWrite_YY_AnOut_D_1(int16_t value);
+int addWrite_YY_AnOut_D_1(int16_t value);
+int getStatus_YY_AnOut_D_1(void);
+
+#define ID_YY_AnOut_D_2 465
+extern int16_t YY_AnOut_D_2;	/* Analog output 2 value MPNC035 module D */
+int doWrite_YY_AnOut_D_2(int16_t value);
+int addWrite_YY_AnOut_D_2(int16_t value);
+int getStatus_YY_AnOut_D_2(void);
+
+#define ID_YY_AnOut_D_3 466
+extern int16_t YY_AnOut_D_3;	/* Analog output 3 value MPNC035 module D */
+int doWrite_YY_AnOut_D_3(int16_t value);
+int addWrite_YY_AnOut_D_3(int16_t value);
+int getStatus_YY_AnOut_D_3(void);
+
+#define ID_YY_AnOut_D_4 467
+extern int16_t YY_AnOut_D_4;	/* Analog output 4 value MPNC035 module D */
+int doWrite_YY_AnOut_D_4(int16_t value);
+int addWrite_YY_AnOut_D_4(int16_t value);
+int getStatus_YY_AnOut_D_4(void);
+
 #define ID_TEST_COMMAND 4000
 extern u_int16_t TEST_COMMAND;
 int doWrite_TEST_COMMAND(u_int16_t value);
