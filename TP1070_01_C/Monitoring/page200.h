@@ -29,6 +29,8 @@ public:
 private slots:
     void changeEvent(QEvent * event);
     
+    void on_pushButton_clicked();
+
 private:
     Ui::page200 *ui;
 };

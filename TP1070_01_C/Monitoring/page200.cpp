@@ -98,3 +98,21 @@ page200::~page200()
     delete ui;
 }
 
+
+void page200::on_pushButton_clicked()
+{
+    beginWrite();
+    addWrite_NODE_01_STATUS(0);
+    addWrite_NODE_02_STATUS(0);
+    addWrite_NODE_03_STATUS(0);
+    addWrite_NODE_04_STATUS(0);
+    addWrite_NODE_05_STATUS(0);
+    addWrite_NODE_06_STATUS(0);
+    addWrite_NODE_07_STATUS(0);
+    addWrite_NODE_08_STATUS(0);
+    addWrite_NODE_09_STATUS(0);
+    addWrite_NODE_10_STATUS(0);
+    addWrite_NODE_11_STATUS(0);
+    addWrite_NODE_12_STATUS(0);
+    endWrite();
+}
