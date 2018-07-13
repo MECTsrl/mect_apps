@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 2.7.84, 2018-07-10T18:46:41. -->
+<!-- Written by QtCreator 2.7.84, 2018-07-12T16:51:39. -->
 <qtcreator>
  <data>
   <variable>ProjectExplorer.Project.ActiveTarget</variable>
@@ -468,72 +468,72 @@
        <value type="QString">C:/Qt485/imx28/rootfs</value>
       </valuelist>
       <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedTimes">
-       <value type="QDateTime">2018-07-10T18:40:23</value>
-       <value type="QDateTime">2018-07-10T18:40:21</value>
-       <value type="QDateTime">2018-07-10T18:40:25</value>
-       <value type="QDateTime">2018-07-10T18:40:21</value>
-       <value type="QDateTime">2018-07-10T18:40:20</value>
-       <value type="QDateTime">2018-07-10T18:40:22</value>
+       <value type="QDateTime">2018-07-12T10:22:17</value>
+       <value type="QDateTime">2018-07-12T10:22:15</value>
+       <value type="QDateTime">2018-07-12T10:22:19</value>
+       <value type="QDateTime">2018-07-12T10:22:16</value>
+       <value type="QDateTime">2018-07-12T10:22:15</value>
+       <value type="QDateTime">2018-07-12T10:22:16</value>
        <value type="QDateTime">2017-06-09T13:07:41</value>
-       <value type="QDateTime">2018-07-10T18:40:21</value>
-       <value type="QDateTime">2018-07-10T18:40:21</value>
-       <value type="QDateTime">2018-07-10T18:40:22</value>
-       <value type="QDateTime">2018-07-10T18:40:24</value>
-       <value type="QDateTime">2018-07-10T18:40:24</value>
-       <value type="QDateTime">2018-07-10T18:40:20</value>
-       <value type="QDateTime">2018-07-10T18:40:23</value>
-       <value type="QDateTime">2018-07-10T18:40:24</value>
+       <value type="QDateTime">2018-07-12T10:22:16</value>
+       <value type="QDateTime">2018-07-12T10:22:16</value>
+       <value type="QDateTime">2018-07-12T10:22:16</value>
+       <value type="QDateTime">2018-07-12T10:22:18</value>
+       <value type="QDateTime">2018-07-12T10:22:18</value>
+       <value type="QDateTime">2018-07-12T10:22:14</value>
+       <value type="QDateTime">2018-07-12T10:22:18</value>
+       <value type="QDateTime">2018-07-12T10:22:18</value>
        <value type="QDateTime">2017-06-09T13:07:41</value>
-       <value type="QDateTime">2018-07-10T18:40:22</value>
-       <value type="QDateTime">2018-07-10T18:40:22</value>
-       <value type="QDateTime">2018-07-10T18:40:23</value>
+       <value type="QDateTime">2018-07-12T10:22:16</value>
+       <value type="QDateTime">2018-07-12T10:22:17</value>
+       <value type="QDateTime">2018-07-12T10:22:17</value>
        <value type="QDateTime">2017-06-13T10:43:05</value>
-       <value type="QDateTime">2018-07-10T18:40:21</value>
+       <value type="QDateTime">2018-07-12T10:22:16</value>
        <value type="QDateTime">2017-06-13T10:43:05</value>
-       <value type="QDateTime">2018-07-10T18:40:22</value>
-       <value type="QDateTime">2018-07-10T18:40:23</value>
-       <value type="QDateTime">2018-07-10T18:40:22</value>
-       <value type="QDateTime">2018-07-10T18:40:24</value>
-       <value type="QDateTime">2018-07-10T18:40:22</value>
-       <value type="QDateTime">2018-07-10T18:40:24</value>
-       <value type="QDateTime">2018-07-10T18:40:23</value>
-       <value type="QDateTime">2018-07-10T18:40:22</value>
-       <value type="QDateTime">2018-07-10T18:40:23</value>
-       <value type="QDateTime">2018-07-10T18:40:22</value>
-       <value type="QDateTime">2018-07-10T18:40:20</value>
-       <value type="QDateTime">2018-07-10T18:40:24</value>
-       <value type="QDateTime">2018-07-10T18:40:23</value>
-       <value type="QDateTime">2018-07-10T18:40:21</value>
-       <value type="QDateTime">2018-07-10T18:40:24</value>
-       <value type="QDateTime">2018-07-10T18:40:20</value>
-       <value type="QDateTime">2018-07-10T18:40:23</value>
-       <value type="QDateTime">2018-07-10T18:40:24</value>
-       <value type="QDateTime">2018-07-10T18:40:23</value>
-       <value type="QDateTime">2018-07-10T18:40:22</value>
-       <value type="QDateTime">2018-07-10T18:40:20</value>
-       <value type="QDateTime">2018-07-10T18:40:24</value>
-       <value type="QDateTime">2018-07-10T18:40:22</value>
-       <value type="QDateTime">2018-07-10T18:40:20</value>
-       <value type="QDateTime">2018-07-10T18:40:22</value>
-       <value type="QDateTime">2018-07-10T18:40:21</value>
-       <value type="QDateTime">2018-07-10T18:40:23</value>
-       <value type="QDateTime">2018-07-10T18:40:24</value>
-       <value type="QDateTime">2018-07-10T18:40:24</value>
-       <value type="QDateTime">2018-07-10T18:40:21</value>
-       <value type="QDateTime">2018-07-10T18:40:22</value>
-       <value type="QDateTime">2018-07-10T18:40:23</value>
-       <value type="QDateTime">2018-07-10T18:40:24</value>
-       <value type="QDateTime">2018-07-10T18:40:21</value>
-       <value type="QDateTime">2018-07-10T18:40:23</value>
-       <value type="QDateTime">2018-07-10T18:40:20</value>
-       <value type="QDateTime">2018-07-10T18:40:27</value>
-       <value type="QDateTime">2018-07-10T18:40:21</value>
-       <value type="QDateTime">2018-07-10T18:40:21</value>
-       <value type="QDateTime">2018-07-10T18:40:21</value>
-       <value type="QDateTime">2018-07-10T18:40:20</value>
-       <value type="QDateTime">2018-07-10T18:40:23</value>
-       <value type="QDateTime">2018-07-10T18:40:21</value>
-       <value type="QDateTime">2018-07-10T18:40:21</value>
+       <value type="QDateTime">2018-07-12T10:22:17</value>
+       <value type="QDateTime">2018-07-12T10:22:18</value>
+       <value type="QDateTime">2018-07-12T10:22:16</value>
+       <value type="QDateTime">2018-07-12T10:22:18</value>
+       <value type="QDateTime">2018-07-12T10:22:17</value>
+       <value type="QDateTime">2018-07-12T10:22:18</value>
+       <value type="QDateTime">2018-07-12T10:22:17</value>
+       <value type="QDateTime">2018-07-12T10:22:17</value>
+       <value type="QDateTime">2018-07-12T10:22:17</value>
+       <value type="QDateTime">2018-07-12T10:22:16</value>
+       <value type="QDateTime">2018-07-12T10:22:15</value>
+       <value type="QDateTime">2018-07-12T10:22:18</value>
+       <value type="QDateTime">2018-07-12T10:22:18</value>
+       <value type="QDateTime">2018-07-12T10:22:15</value>
+       <value type="QDateTime">2018-07-12T10:22:18</value>
+       <value type="QDateTime">2018-07-12T10:22:15</value>
+       <value type="QDateTime">2018-07-12T10:22:18</value>
+       <value type="QDateTime">2018-07-12T10:22:19</value>
+       <value type="QDateTime">2018-07-12T10:22:17</value>
+       <value type="QDateTime">2018-07-12T10:22:16</value>
+       <value type="QDateTime">2018-07-12T10:22:14</value>
+       <value type="QDateTime">2018-07-12T10:22:19</value>
+       <value type="QDateTime">2018-07-12T10:22:16</value>
+       <value type="QDateTime">2018-07-12T10:22:15</value>
+       <value type="QDateTime">2018-07-12T10:22:16</value>
+       <value type="QDateTime">2018-07-12T10:22:15</value>
+       <value type="QDateTime">2018-07-12T10:22:18</value>
+       <value type="QDateTime">2018-07-12T10:22:18</value>
+       <value type="QDateTime">2018-07-12T10:22:19</value>
+       <value type="QDateTime">2018-07-12T10:22:15</value>
+       <value type="QDateTime">2018-07-12T10:22:16</value>
+       <value type="QDateTime">2018-07-12T10:22:17</value>
+       <value type="QDateTime">2018-07-12T10:22:19</value>
+       <value type="QDateTime">2018-07-12T10:22:15</value>
+       <value type="QDateTime">2018-07-12T10:22:17</value>
+       <value type="QDateTime">2018-07-12T10:22:15</value>
+       <value type="QDateTime">2018-07-12T10:22:21</value>
+       <value type="QDateTime">2018-07-12T10:22:15</value>
+       <value type="QDateTime">2018-07-12T10:22:15</value>
+       <value type="QDateTime">2018-07-12T10:22:15</value>
+       <value type="QDateTime">2018-07-12T10:22:14</value>
+       <value type="QDateTime">2018-07-12T10:22:17</value>
+       <value type="QDateTime">2018-07-12T10:22:15</value>
+       <value type="QDateTime">2018-07-12T10:22:16</value>
       </valuelist>
       <value type="bool" key="RemoteLinux.GenericDirectUploadStep.Incremental">false</value>
      </valuemap>

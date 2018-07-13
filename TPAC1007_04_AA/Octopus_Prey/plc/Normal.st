@@ -2,8 +2,7 @@
 ]]*)
 PROGRAM Normal 
 #import "Crosstable.gvl"
-VAR
-END_VAR
+#import "Resource1.gvl"
 
-;
+flip_flop_100ms := not flip_flop_100ms;
 END_PROGRAM

@@ -192,8 +192,8 @@
 ;;;;;;;;;;;;
 1;P;STATUS                         ;UINT     ;0   ;PLC       ;               ;    ;    ;      ;193 ;1   ;[RW]
 ;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
+1;P;SquareWave                     ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;195 ;2   ;[RO]produce a square wave on DigOut_1 @ 10 ms
+1;P;SquareWaveBeginning            ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;195 ;2   ;[EV SquareWave RISING]
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
@@ -5352,7 +5352,7 @@
 1;P;PLC_AnIn1Filter                ;UINT     ;0   ;RTU       ;               ;3   ;20  ;29    ;5300;54  ;[RW]Analog input 1 filter
 1;P;PLC_AnIn2Filter                ;UINT     ;0   ;RTU       ;               ;3   ;20  ;30    ;5300;54  ;[RW]Analog input 2 filter
 ;;;;;;;;;;;;
-;;;;;;;;;;;;
+1;P;PhantomVariable                ;UINT     ;0   ;RTU       ;               ;3   ;21  ;30    ;5355;1   ;[RO]
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;

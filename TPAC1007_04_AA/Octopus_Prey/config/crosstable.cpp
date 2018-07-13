@@ -35,6 +35,20 @@ u_int16_t STATUS = 0;
 
 
 /*
+ * Variable SquareWave	[ produce a square wave on DigOut_1 @ 10 ms ]
+ */
+
+int SquareWave = 0;
+
+
+/*
+ * Variable SquareWaveBeginning
+ */
+
+int SquareWaveBeginning = 0;
+
+
+/*
  * Variable RTU_HEARTBEAT
  */
 
@@ -3220,6 +3234,13 @@ u_int16_t PLC_AnIn2Filter = 0;
 
 
 /*
+ * Variable PhantomVariable
+ */
+
+u_int16_t PhantomVariable = 0;
+
+
+/*
  * Variable PLC_time	[ Seconds since boot (reset each 24h) ]
  */
 
@@ -3388,6 +3409,42 @@ int
 getStatus_STATUS(void)
 {
 	return getStatus(ID_STATUS);
+}
+
+int
+doWrite_SquareWave(int value)
+{
+	return doWrite(ID_SquareWave, &value);
+}
+
+int
+addWrite_SquareWave(int value)
+{
+	return addWrite(ID_SquareWave, &value);
+}
+
+int
+getStatus_SquareWave(void)
+{
+	return getStatus(ID_SquareWave);
+}
+
+int
+doWrite_SquareWaveBeginning(int value)
+{
+	return doWrite(ID_SquareWaveBeginning, &value);
+}
+
+int
+addWrite_SquareWaveBeginning(int value)
+{
+	return addWrite(ID_SquareWaveBeginning, &value);
+}
+
+int
+getStatus_SquareWaveBeginning(void)
+{
+	return getStatus(ID_SquareWaveBeginning);
 }
 
 int
@@ -11581,6 +11638,24 @@ getStatus_PLC_AnIn2Filter(void)
 }
 
 int
+doWrite_PhantomVariable(u_int16_t value)
+{
+	return doWrite(ID_PhantomVariable, &value);
+}
+
+int
+addWrite_PhantomVariable(u_int16_t value)
+{
+	return addWrite(ID_PhantomVariable, &value);
+}
+
+int
+getStatus_PhantomVariable(void)
+{
+	return getStatus(ID_PhantomVariable);
+}
+
+int
 doWrite_PLC_time(float value)
 {
 	return doWrite(ID_PLC_time, &value);
@@ -11983,6 +12058,8 @@ update_all(void)
 	int retval = 0;
 
 	retval += readFromDb(ID_STATUS, &STATUS);
+	retval += readFromDb(ID_SquareWave, &SquareWave);
+	retval += readFromDb(ID_SquareWaveBeginning, &SquareWaveBeginning);
 	retval += readFromDb(ID_RTU_HEARTBEAT, &RTU_HEARTBEAT);
 	retval += readFromDb(ID_RTU_RTU1_WR, &RTU_RTU1_WR);
 	retval += readFromDb(ID_RTU_RTU1_RD, &RTU_RTU1_RD);
@@ -12438,6 +12515,7 @@ update_all(void)
 	retval += readFromDb(ID_PLC_StatusReg, &PLC_StatusReg);
 	retval += readFromDb(ID_PLC_AnIn1Filter, &PLC_AnIn1Filter);
 	retval += readFromDb(ID_PLC_AnIn2Filter, &PLC_AnIn2Filter);
+	retval += readFromDb(ID_PhantomVariable, &PhantomVariable);
 	retval += readFromDb(ID_PLC_time, &PLC_time);
 	retval += readFromDb(ID_PLC_timeMin, &PLC_timeMin);
 	retval += readFromDb(ID_PLC_timeMax, &PLC_timeMax);

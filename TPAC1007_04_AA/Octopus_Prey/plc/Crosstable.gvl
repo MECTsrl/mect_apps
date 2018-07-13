@@ -1,5 +1,7 @@
 VAR_GLOBAL
 	STATUS AT %QW0.772:UINT;
+	SquareWave AT %IX0.780.0:BOOL;	(* produce a square wave on DigOut_1 @ 10 ms *)
+	SquareWaveBeginning AT %IX0.784.0:BOOL;
 	RTU_HEARTBEAT AT %QW0.800:UINT;
 	RTU_RTU1_WR AT %QX0.804.0:BOOL;
 	RTU_RTU1_RD AT %IX0.808.0:BOOL;
@@ -455,6 +457,7 @@ VAR_GLOBAL
 	PLC_StatusReg AT %IW0.21404:UINT;	(* In - Out board status *)
 	PLC_AnIn1Filter AT %QW0.21408:UINT;	(* Analog input 1 filter *)
 	PLC_AnIn2Filter AT %QW0.21412:UINT;	(* Analog input 2 filter *)
+	PhantomVariable AT %IW0.21420:UINT;
 	PLC_time AT %ID0.21560:REAL;	(* Seconds since boot (reset each 24h) *)
 	PLC_timeMin AT %ID0.21564:REAL;	(* 10 seconds window start *)
 	PLC_timeMax AT %ID0.21568:REAL;	(* 10 seconds window stop *)
