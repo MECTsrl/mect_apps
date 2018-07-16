@@ -5,7 +5,7 @@
 # @section LICENSE
 # Copyright Mect s.r.l. 2013
 #
-# @brief Qmake project file for TPAC1008_02_AD
+# @brief Qmake project file for TPAC1008_03_AC
 #
 
 INSTALLS += target
