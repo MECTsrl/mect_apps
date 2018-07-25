@@ -307,7 +307,7 @@
     </message>
     <message>
         <location filename="page100.ui" line="895"/>
-        <source>Simple</source>
+        <source>Octopus_Prey</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

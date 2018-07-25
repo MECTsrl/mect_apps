@@ -892,7 +892,7 @@
     <string notr="true">background-color: rgb(170, 255, 127);</string>
    </property>
    <property name="text">
-    <string>Simple</string>
+    <string>Octopus_Prey</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>
