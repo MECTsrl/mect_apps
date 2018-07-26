@@ -50,7 +50,21 @@ END_VAR
 				PLC_AnOutConf_2 := VAL_AnOutConf_2; PLC_AnOut_2 := VAL_AnOut_2;
 			end_if;
 		end_if;
-	    
+   	    if (TST_AnOut_3 ) then 
+			if (VAL_AnOutConf_3 = 3) then
+				PLC_AnOutConf_3 := 2; PLC_AnOut_3 := 1000; (* 10.00 V is the PWM amplitude *)
+			else
+				PLC_AnOutConf_3 := VAL_AnOutConf_3; PLC_AnOut_3 := VAL_AnOut_3;(* only 0..10 V *)
+			end_if;
+		end_if;
+		if (TST_AnOut_4 ) then 
+			if (VAL_AnOutConf_4 = 3) then
+				PLC_AnOutConf_4 := 2; PLC_AnOut_4 := 1000; (* 10.00 V is the PWM amplitude *)
+			else
+				PLC_AnOutConf_4 := VAL_AnOutConf_4; PLC_AnOut_4 := VAL_AnOut_4;(* only 0..10 V *)
+			end_if;
+		end_if;
+
 	    if (TST_Tamb      ) then RES_Tamb := 0; end_if;
 		if (TST_RPM		  ) then RES_RPM := 0; end_if;
 	   
@@ -70,6 +84,16 @@ END_VAR
 	    if (TST_AnOut_2 ) then 
 			if (VAL_AnOutConf_2 = 3) then
 				PLC_AnOutConf_2 := 3; PLC_AnOut_2 := VAL_AnOut_2; (* [%] PWM *)
+			end_if;
+		end_if;
+		if (TST_AnOut_3 ) then
+			if (VAL_AnOutConf_3 = 3) then
+				PLC_AnOutConf_3 := 3; PLC_AnOut_3 := VAL_AnOut_3; (* [%] PWM *)
+			end_if;
+		end_if;
+	    if (TST_AnOut_4 ) then 
+			if (VAL_AnOutConf_4 = 3) then
+				PLC_AnOutConf_4 := 3; PLC_AnOut_4 := VAL_AnOut_4; (* [%] PWM *)
 			end_if;
 		end_if;
 

@@ -19,14 +19,11 @@ END_VAR
     if (TST_AnIn_2    ) then RES_AnIn_2 := PLC_AnIn_2; end_if;
 	if (TST_AnIn_3    ) then RES_AnIn_3 := PLC_AnIn_3; end_if;
     if (TST_AnIn_4    ) then RES_AnIn_4 := PLC_AnIn_4; end_if;
-
-    if (TST_AnOut_1   ) then ; end_if;
-    if (TST_AnOut_2   ) then ; end_if;
-   
+  
     if (TST_Tamb      ) then RES_Tamb := PLC_Tamb; end_if;
     if (TST_RPM       ) then RES_RPM := PLC_RPM / 10; end_if;
    
 	if (TST_RTU1_RD   ) then RES_RTU1_RD := RTU_RTU_RD; end_if;	
-	if (TST_RTU3_RD   ) then RES_RTU3_RD := PLC_DigIn_9; end_if;	(* ???? *)
+	if (TST_RTU3_RD   ) then RES_RTU3_RD := PLC_DigIn_9; end_if;
 
 END_FUNCTION

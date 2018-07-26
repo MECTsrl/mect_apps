@@ -4,8 +4,7 @@
 /* put here the initalization */
 void setup(void)
 {
-    doWrite_PLC_FastIO_Ena(0x000000FF);
-    doWrite_PLC_FastIO_Dir(0x0000000F);
+
 }
 
 /* put here the operation made every 100ms */
