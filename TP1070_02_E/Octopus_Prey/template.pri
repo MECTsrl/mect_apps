@@ -21,7 +21,7 @@ customtrend.files = config/trend1.csv
 customtrend.path = /local/data/customtrend
 
 sounds.files = sounds/Front_Center.wav sounds/Front_Left.wav sounds/Front_Right.wav
-sounds.path = /root
+sounds.path = /local/root
 
 INSTALLS += config splash customtrend sounds
 

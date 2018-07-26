@@ -102,10 +102,15 @@ page100::~page100()
 
 void page100::on_pushButton_clicked()
 {
-    system("amixer sset Playback 85%,0% ; aplay  Front_Left.wav");
+    system("amixer sset Playback 85%,0% ; aplay /local/root/Front_Left.wav");
 }
 
 void page100::on_pushButton_2_clicked()
 {
-    system("amixer sset Playback 0%,85% ; aplay  Front_Right.wav");
+    system("amixer sset Playback 0%,85% ; aplay /local/root/Front_Right.wav");
+}
+
+void page100::on_pushButton_3_clicked()
+{
+    system("amixer sset Playback 85%,85% ; aplay /local/root/Front_Center.wav");
 }
