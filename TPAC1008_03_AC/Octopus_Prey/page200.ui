@@ -137,11 +137,11 @@ background-color: rgb(0, 0, 127);
     <string/>
    </property>
    <property name="onIcon">
-    <iconset resource="resources.qrc">
+    <iconset>
      <normaloff>:/icons/icons/LedOn_chiaro.png</normaloff>:/icons/icons/LedOn_chiaro.png</iconset>
    </property>
    <property name="offIcon">
-    <iconset resource="resources.qrc">
+    <iconset>
      <normaloff>:/icons/icons/LedOff_scuro.png</normaloff>:/icons/icons/LedOff_scuro.png</iconset>
    </property>
   </widget>
@@ -3749,11 +3749,11 @@ color: rgb(255, 255, 255);</string>
     <string/>
    </property>
    <property name="onIcon">
-    <iconset resource="resources.qrc">
+    <iconset>
      <normaloff>:/icons/icons/LedOn_chiaro.png</normaloff>:/icons/icons/LedOn_chiaro.png</iconset>
    </property>
    <property name="offIcon">
-    <iconset resource="resources.qrc">
+    <iconset>
      <normaloff>:/icons/icons/LedOff_scuro.png</normaloff>:/icons/icons/LedOff_scuro.png</iconset>
    </property>
   </widget>
@@ -4711,11 +4711,11 @@ color: rgb(255, 255, 255);</string>
     <string/>
    </property>
    <property name="onIcon">
-    <iconset resource="resources.qrc">
+    <iconset>
      <normaloff>:/icons/icons/LedOn_chiaro.png</normaloff>:/icons/icons/LedOn_chiaro.png</iconset>
    </property>
    <property name="offIcon">
-    <iconset resource="resources.qrc">
+    <iconset>
      <normaloff>:/icons/icons/LedOff_scuro.png</normaloff>:/icons/icons/LedOff_scuro.png</iconset>
    </property>
   </widget>
@@ -6637,11 +6637,11 @@ color: rgb(255, 255, 255);</string>
     <string/>
    </property>
    <property name="onIcon">
-    <iconset resource="resources.qrc">
+    <iconset>
      <normaloff>:/icons/icons/LedOn_chiaro.png</normaloff>:/icons/icons/LedOn_chiaro.png</iconset>
    </property>
    <property name="offIcon">
-    <iconset resource="resources.qrc">
+    <iconset>
      <normaloff>:/icons/icons/LedOff_scuro.png</normaloff>:/icons/icons/LedOff_scuro.png</iconset>
    </property>
   </widget>
@@ -8020,7 +8020,7 @@ color: rgb(255, 255, 255);</string>
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>8</pointsize>
+     <pointsize>7</pointsize>
      <weight>50</weight>
      <italic>false</italic>
      <bold>false</bold>
@@ -8242,9 +8242,7 @@ color: rgb(255, 255, 255);</string>
    <header>atcmplugin.h</header>
   </customwidget>
  </customwidgets>
- <resources>
-  <include location="resources.qrc"/>
- </resources>
+ <resources/>
  <connections>
   <connection>
    <sender>atcmButton_9</sender>
