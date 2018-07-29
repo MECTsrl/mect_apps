@@ -1913,13 +1913,13 @@ background-color: rgb(0, 0, 0);
     <string notr="true">color: rgb(0, 85, 0);</string>
    </property>
    <property name="toolTip">
-    <string/>
+    <string>SysActivePower_10</string>
    </property>
    <property name="whatsThis">
     <string>ATCMlabel widget</string>
    </property>
    <property name="variable">
-    <string/>
+    <string>SysActivePower_10</string>
    </property>
    <property name="prefix">
     <string/>
@@ -3591,13 +3591,13 @@ background-color: rgb(0, 0, 0);
     <string notr="true">color: rgb(0, 85, 0);</string>
    </property>
    <property name="toolTip">
-    <string/>
+    <string>SysImpActiveEnergy_10</string>
    </property>
    <property name="whatsThis">
     <string>ATCMlabel widget</string>
    </property>
    <property name="variable">
-    <string/>
+    <string>SysImpActiveEnergy_10</string>
    </property>
    <property name="prefix">
     <string/>

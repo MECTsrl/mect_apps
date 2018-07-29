@@ -508,6 +508,18 @@ int doWrite_SysImpActiveEnergy_9(float value);
 int addWrite_SysImpActiveEnergy_9(float value);
 int getStatus_SysImpActiveEnergy_9(void);
 
+#define ID_SysActivePower_10 274
+extern float SysActivePower_10;	/* 0x14 0x1026 Potenza Attiva 0 in W (Caldaia+Puffer) */
+int doWrite_SysActivePower_10(float value);
+int addWrite_SysActivePower_10(float value);
+int getStatus_SysActivePower_10(void);
+
+#define ID_SysImpActiveEnergy_10 275
+extern float SysImpActiveEnergy_10;	/* 0x14 0x1106 Energia Attiva Importata 0 in Wh (Caldaia+Puffer) */
+int doWrite_SysImpActiveEnergy_10(float value);
+int addWrite_SysImpActiveEnergy_10(float value);
+int getStatus_SysImpActiveEnergy_10(void);
+
 #define ID_RTU0_TYPE_PORT 5000
 extern u_int32_t RTU0_TYPE_PORT;
 int doWrite_RTU0_TYPE_PORT(u_int32_t value);

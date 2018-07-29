@@ -350,6 +350,12 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="page100.ui" line="1916"/>
+        <location filename="page100.ui" line="1922"/>
+        <source>SysActivePower_10</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="page100.ui" line="1996"/>
         <location filename="page100.ui" line="2002"/>
         <source>SysActivePower_7</source>
@@ -446,6 +452,12 @@
         <location filename="page100.ui" line="3437"/>
         <location filename="page100.ui" line="3443"/>
         <source>SysExpActiveEnergy_1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page100.ui" line="3594"/>
+        <location filename="page100.ui" line="3600"/>
+        <source>SysImpActiveEnergy_10</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -881,6 +893,7 @@
         <location filename="page200.ui" line="3217"/>
         <location filename="page200.ui" line="3349"/>
         <location filename="page200.ui" line="3879"/>
+        <location filename="page200.ui" line="4097"/>
         <source>ATCMlabel widget</source>
         <translation type="unfinished"></translation>
     </message>
@@ -949,6 +962,8 @@
         <location filename="page200.ui" line="3229"/>
         <location filename="page200.ui" line="3358"/>
         <location filename="page200.ui" line="3361"/>
+        <location filename="page200.ui" line="4106"/>
+        <location filename="page200.ui" line="4109"/>
         <source>0</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1008,6 +1023,7 @@
         <location filename="page200.ui" line="3019"/>
         <location filename="page200.ui" line="3151"/>
         <location filename="page200.ui" line="3283"/>
+        <location filename="page200.ui" line="3999"/>
         <source>ATCMcombobox widget</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1048,6 +1064,7 @@
         <location filename="page200.ui" line="3057"/>
         <location filename="page200.ui" line="3189"/>
         <location filename="page200.ui" line="3321"/>
+        <location filename="page200.ui" line="4037"/>
         <source>1;NODE_OK;2;TIMEOUT;3;BLACKLIST;4;DISCONNECTED;5;NODE_DISABLED;0;NO_NODE</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1238,8 +1255,20 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="3733"/>
-        <source>12#19 CALDAIA(PUFFER)</source>
+        <location filename="page200.ui" line="3996"/>
+        <location filename="page200.ui" line="4002"/>
+        <source>NODE_13_STATUS</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="4060"/>
+        <source>13#20 CALDAIA(PUFFER)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="4094"/>
+        <location filename="page200.ui" line="4100"/>
+        <source>NODE_13_DEV_NODE</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1268,6 +1297,11 @@
         <location filename="page200.ui" line="608"/>
         <location filename="page200.ui" line="1298"/>
         <source> bps</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="3733"/>
+        <source>12#19 UPS</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1326,6 +1360,7 @@
         <location filename="page200.ui" line="3079"/>
         <location filename="page200.ui" line="3211"/>
         <location filename="page200.ui" line="3343"/>
+        <location filename="page200.ui" line="4091"/>
         <source>0xXXXXxxxx</source>
         <translation type="unfinished"></translation>
     </message>

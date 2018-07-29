@@ -28,7 +28,7 @@
   <property name="styleSheet">
    <string notr="true">QWidget#page200
 {
-background-color: rgb(0, 0, 0);
+	background-color: rgb(0, 0, 0);
 }
 </string>
   </property>
@@ -38,8 +38,8 @@ background-color: rgb(0, 0, 0);
    </property>
    <property name="geometry">
     <rect>
-     <x>0</x>
-     <y>126</y>
+     <x>200</x>
+     <y>51</y>
      <width>96</width>
      <height>24</height>
     </rect>
@@ -107,8 +107,8 @@ background-color: rgb(0, 0, 0);
    </property>
    <property name="geometry">
     <rect>
-     <x>400</x>
-     <y>100</y>
+     <x>600</x>
+     <y>29</y>
      <width>96</width>
      <height>24</height>
     </rect>
@@ -176,8 +176,8 @@ background-color: rgb(0, 0, 0);
    </property>
    <property name="geometry">
     <rect>
-     <x>400</x>
-     <y>122</y>
+     <x>600</x>
+     <y>51</y>
      <width>96</width>
      <height>24</height>
     </rect>
@@ -379,8 +379,8 @@ background-color: rgb(0, 0, 0);
    </property>
    <property name="geometry">
     <rect>
-     <x>0</x>
-     <y>104</y>
+     <x>200</x>
+     <y>29</y>
      <width>96</width>
      <height>24</height>
     </rect>
@@ -448,8 +448,8 @@ background-color: rgb(0, 0, 0);
    </property>
    <property name="geometry">
     <rect>
-     <x>496</x>
-     <y>122</y>
+     <x>696</x>
+     <y>51</y>
      <width>96</width>
      <height>24</height>
     </rect>
@@ -518,7 +518,7 @@ background-color: rgb(0, 0, 0);
    <property name="geometry">
     <rect>
      <x>96</x>
-     <y>160</y>
+     <y>90</y>
      <width>114</width>
      <height>24</height>
     </rect>
@@ -649,8 +649,8 @@ background-color: rgb(0, 0, 0);
    </property>
    <property name="geometry">
     <rect>
-     <x>96</x>
-     <y>80</y>
+     <x>296</x>
+     <y>5</y>
      <width>96</width>
      <height>24</height>
     </rect>
@@ -1000,8 +1000,8 @@ background-color: rgb(0, 0, 0);
    </property>
    <property name="geometry">
     <rect>
-     <x>96</x>
-     <y>126</y>
+     <x>296</x>
+     <y>51</y>
      <width>96</width>
      <height>24</height>
     </rect>
@@ -1133,7 +1133,7 @@ background-color: rgb(0, 0, 0);
    <property name="geometry">
     <rect>
      <x>400</x>
-     <y>160</y>
+     <y>89</y>
      <width>96</width>
      <height>24</height>
     </rect>
@@ -1201,8 +1201,8 @@ background-color: rgb(0, 0, 0);
    </property>
    <property name="geometry">
     <rect>
-     <x>496</x>
-     <y>76</y>
+     <x>696</x>
+     <y>5</y>
      <width>96</width>
      <height>24</height>
     </rect>
@@ -1368,7 +1368,7 @@ color: rgb(255,170,0);</string>
    <property name="geometry">
     <rect>
      <x>0</x>
-     <y>160</y>
+     <y>90</y>
      <width>96</width>
      <height>24</height>
     </rect>
@@ -1464,8 +1464,8 @@ color: rgb(255,170,0);</string>
    </property>
    <property name="geometry">
     <rect>
-     <x>496</x>
-     <y>100</y>
+     <x>696</x>
+     <y>29</y>
      <width>96</width>
      <height>24</height>
     </rect>
@@ -1533,8 +1533,8 @@ color: rgb(255,170,0);</string>
    </property>
    <property name="geometry">
     <rect>
-     <x>96</x>
-     <y>104</y>
+     <x>296</x>
+     <y>29</y>
      <width>96</width>
      <height>24</height>
     </rect>
@@ -1671,8 +1671,8 @@ color: rgb(255,170,0);</string>
    </property>
    <property name="geometry">
     <rect>
-     <x>400</x>
-     <y>76</y>
+     <x>600</x>
+     <y>5</y>
      <width>96</width>
      <height>24</height>
     </rect>
@@ -1746,8 +1746,8 @@ color: rgb(255,170,0);</string>
    </property>
    <property name="geometry">
     <rect>
-     <x>0</x>
-     <y>80</y>
+     <x>200</x>
+     <y>5</y>
      <width>96</width>
      <height>24</height>
     </rect>
@@ -1822,7 +1822,7 @@ color: rgb(255,170,0);</string>
    <property name="geometry">
     <rect>
      <x>496</x>
-     <y>160</y>
+     <y>89</y>
      <width>114</width>
      <height>24</height>
     </rect>
@@ -2077,7 +2077,7 @@ color: rgb(0, 0, 0);</string>
    <property name="geometry">
     <rect>
      <x>496</x>
-     <y>190</y>
+     <y>119</y>
      <width>114</width>
      <height>24</height>
     </rect>
@@ -2140,7 +2140,7 @@ color: rgb(0, 0, 0);</string>
    <property name="geometry">
     <rect>
      <x>400</x>
-     <y>190</y>
+     <y>119</y>
      <width>96</width>
      <height>24</height>
     </rect>
@@ -2209,7 +2209,7 @@ color: rgb(0, 0, 0);</string>
    <property name="geometry">
     <rect>
      <x>496</x>
-     <y>210</y>
+     <y>139</y>
      <width>114</width>
      <height>24</height>
     </rect>
@@ -2272,7 +2272,7 @@ color: rgb(0, 0, 0);</string>
    <property name="geometry">
     <rect>
      <x>400</x>
-     <y>210</y>
+     <y>139</y>
      <width>96</width>
      <height>24</height>
     </rect>
@@ -2341,7 +2341,7 @@ color: rgb(0, 0, 0);</string>
    <property name="geometry">
     <rect>
      <x>496</x>
-     <y>240</y>
+     <y>169</y>
      <width>114</width>
      <height>24</height>
     </rect>
@@ -2404,7 +2404,7 @@ color: rgb(0, 0, 0);</string>
    <property name="geometry">
     <rect>
      <x>400</x>
-     <y>240</y>
+     <y>169</y>
      <width>96</width>
      <height>24</height>
     </rect>
@@ -2473,7 +2473,7 @@ color: rgb(0, 0, 0);</string>
    <property name="geometry">
     <rect>
      <x>496</x>
-     <y>260</y>
+     <y>189</y>
      <width>114</width>
      <height>24</height>
     </rect>
@@ -2536,7 +2536,7 @@ color: rgb(0, 0, 0);</string>
    <property name="geometry">
     <rect>
      <x>400</x>
-     <y>260</y>
+     <y>189</y>
      <width>96</width>
      <height>24</height>
     </rect>
@@ -2605,7 +2605,7 @@ color: rgb(0, 0, 0);</string>
    <property name="geometry">
     <rect>
      <x>496</x>
-     <y>290</y>
+     <y>223</y>
      <width>114</width>
      <height>24</height>
     </rect>
@@ -2668,7 +2668,7 @@ color: rgb(0, 0, 0);</string>
    <property name="geometry">
     <rect>
      <x>400</x>
-     <y>290</y>
+     <y>223</y>
      <width>96</width>
      <height>24</height>
     </rect>
@@ -2737,7 +2737,7 @@ color: rgb(0, 0, 0);</string>
    <property name="geometry">
     <rect>
      <x>496</x>
-     <y>310</y>
+     <y>243</y>
      <width>114</width>
      <height>24</height>
     </rect>
@@ -2800,7 +2800,7 @@ color: rgb(0, 0, 0);</string>
    <property name="geometry">
     <rect>
      <x>400</x>
-     <y>310</y>
+     <y>243</y>
      <width>96</width>
      <height>24</height>
     </rect>
@@ -2869,7 +2869,7 @@ color: rgb(0, 0, 0);</string>
    <property name="geometry">
     <rect>
      <x>496</x>
-     <y>340</y>
+     <y>272</y>
      <width>114</width>
      <height>24</height>
     </rect>
@@ -2932,7 +2932,7 @@ color: rgb(0, 0, 0);</string>
    <property name="geometry">
     <rect>
      <x>400</x>
-     <y>340</y>
+     <y>272</y>
      <width>96</width>
      <height>24</height>
     </rect>
@@ -3001,7 +3001,7 @@ color: rgb(0, 0, 0);</string>
    <property name="geometry">
     <rect>
      <x>496</x>
-     <y>360</y>
+     <y>292</y>
      <width>114</width>
      <height>24</height>
     </rect>
@@ -3064,7 +3064,7 @@ color: rgb(0, 0, 0);</string>
    <property name="geometry">
     <rect>
      <x>400</x>
-     <y>360</y>
+     <y>292</y>
      <width>96</width>
      <height>24</height>
     </rect>
@@ -3133,7 +3133,7 @@ color: rgb(0, 0, 0);</string>
    <property name="geometry">
     <rect>
      <x>496</x>
-     <y>390</y>
+     <y>326</y>
      <width>114</width>
      <height>24</height>
     </rect>
@@ -3196,7 +3196,7 @@ color: rgb(0, 0, 0);</string>
    <property name="geometry">
     <rect>
      <x>400</x>
-     <y>390</y>
+     <y>326</y>
      <width>96</width>
      <height>24</height>
     </rect>
@@ -3265,7 +3265,7 @@ color: rgb(0, 0, 0);</string>
    <property name="geometry">
     <rect>
      <x>496</x>
-     <y>410</y>
+     <y>346</y>
      <width>114</width>
      <height>24</height>
     </rect>
@@ -3328,7 +3328,7 @@ color: rgb(0, 0, 0);</string>
    <property name="geometry">
     <rect>
      <x>400</x>
-     <y>410</y>
+     <y>346</y>
      <width>96</width>
      <height>24</height>
     </rect>
@@ -3394,7 +3394,7 @@ color: rgb(0, 0, 0);</string>
    <property name="geometry">
     <rect>
      <x>610</x>
-     <y>160</y>
+     <y>89</y>
      <width>190</width>
      <height>24</height>
     </rect>
@@ -3426,7 +3426,7 @@ color: rgb(255,255,255);</string>
    <property name="geometry">
     <rect>
      <x>610</x>
-     <y>190</y>
+     <y>119</y>
      <width>190</width>
      <height>24</height>
     </rect>
@@ -3458,7 +3458,7 @@ color: rgb(255,255,255);</string>
    <property name="geometry">
     <rect>
      <x>610</x>
-     <y>210</y>
+     <y>139</y>
      <width>190</width>
      <height>24</height>
     </rect>
@@ -3490,7 +3490,7 @@ color: rgb(255,255,255);</string>
    <property name="geometry">
     <rect>
      <x>610</x>
-     <y>240</y>
+     <y>169</y>
      <width>190</width>
      <height>24</height>
     </rect>
@@ -3522,7 +3522,7 @@ color: rgb(255,255,255);</string>
    <property name="geometry">
     <rect>
      <x>610</x>
-     <y>260</y>
+     <y>189</y>
      <width>190</width>
      <height>24</height>
     </rect>
@@ -3554,7 +3554,7 @@ color: rgb(255,255,255);</string>
    <property name="geometry">
     <rect>
      <x>610</x>
-     <y>290</y>
+     <y>223</y>
      <width>190</width>
      <height>24</height>
     </rect>
@@ -3586,7 +3586,7 @@ color: rgb(255,255,255);</string>
    <property name="geometry">
     <rect>
      <x>610</x>
-     <y>310</y>
+     <y>243</y>
      <width>190</width>
      <height>24</height>
     </rect>
@@ -3618,7 +3618,7 @@ color: rgb(255,255,255);</string>
    <property name="geometry">
     <rect>
      <x>610</x>
-     <y>340</y>
+     <y>272</y>
      <width>190</width>
      <height>24</height>
     </rect>
@@ -3650,7 +3650,7 @@ color: rgb(255,255,255);</string>
    <property name="geometry">
     <rect>
      <x>610</x>
-     <y>360</y>
+     <y>292</y>
      <width>190</width>
      <height>24</height>
     </rect>
@@ -3682,7 +3682,7 @@ color: rgb(255,255,255);</string>
    <property name="geometry">
     <rect>
      <x>610</x>
-     <y>390</y>
+     <y>326</y>
      <width>190</width>
      <height>24</height>
     </rect>
@@ -3714,7 +3714,7 @@ color: rgb(255,255,255);</string>
    <property name="geometry">
     <rect>
      <x>610</x>
-     <y>410</y>
+     <y>346</y>
      <width>190</width>
      <height>24</height>
     </rect>
@@ -3730,7 +3730,7 @@ color: rgb(255,255,255);</string>
 color: rgb(255,255,255);</string>
    </property>
    <property name="text">
-    <string>12#19 CALDAIA(PUFFER)</string>
+    <string>12#19 UPS</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -3927,7 +3927,7 @@ color: rgb(255,255,255);</string>
    <property name="geometry">
     <rect>
      <x>210</x>
-     <y>160</y>
+     <y>90</y>
      <width>190</width>
      <height>24</height>
     </rect>
@@ -3972,6 +3972,170 @@ color: rgb(255, 255, 255);</string>
    </property>
    <property name="text">
     <string>Deselect All</string>
+   </property>
+  </widget>
+  <widget class="ATCMcombobox" name="atcmComboBox_22">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>496</x>
+     <y>370</y>
+     <width>114</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+   <property name="toolTip">
+    <string>NODE_13_STATUS</string>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMcombobox widget</string>
+   </property>
+   <property name="variable">
+    <string>NODE_13_STATUS</string>
+   </property>
+   <property name="refresh">
+    <number>500</number>
+   </property>
+   <property name="viewStatus">
+    <bool>false</bool>
+   </property>
+   <property name="writeAcknowledge">
+    <bool>false</bool>
+   </property>
+   <property name="visibilityVar">
+    <string/>
+   </property>
+   <property name="bgColor">
+    <color>
+     <red>0</red>
+     <green>0</green>
+     <blue>0</blue>
+    </color>
+   </property>
+   <property name="fontColor">
+    <color>
+     <red>255</red>
+     <green>255</green>
+     <blue>0</blue>
+    </color>
+   </property>
+   <property name="borderWidth">
+    <number>0</number>
+   </property>
+   <property name="borderRadius">
+    <number>0</number>
+   </property>
+   <property name="mapping">
+    <string>1;NODE_OK;2;TIMEOUT;3;BLACKLIST;4;DISCONNECTED;5;NODE_DISABLED;0;NO_NODE</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_RTU_AnIn_26">
+   <property name="geometry">
+    <rect>
+     <x>610</x>
+     <y>370</y>
+     <width>190</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(0, 0, 0);
+color: rgb(255,255,255);</string>
+   </property>
+   <property name="text">
+    <string>13#20 CALDAIA(PUFFER)</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+   </property>
+   <property name="margin">
+    <number>0</number>
+   </property>
+   <property name="indent">
+    <number>0</number>
+   </property>
+  </widget>
+  <widget class="ATCMlabel" name="atcmLabel_55">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>400</x>
+     <y>370</y>
+     <width>96</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>0xXXXXxxxx</string>
+   </property>
+   <property name="toolTip">
+    <string>NODE_13_DEV_NODE</string>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMlabel widget</string>
+   </property>
+   <property name="variable">
+    <string>NODE_13_DEV_NODE</string>
+   </property>
+   <property name="refresh">
+    <number>500</number>
+   </property>
+   <property name="max">
+    <string>0</string>
+   </property>
+   <property name="min">
+    <string>0</string>
+   </property>
+   <property name="viewStatus">
+    <bool>false</bool>
+   </property>
+   <property name="visibilityVar">
+    <string/>
+   </property>
+   <property name="bgColor">
+    <color>
+     <red>0</red>
+     <green>0</green>
+     <blue>0</blue>
+    </color>
+   </property>
+   <property name="fontColor">
+    <color>
+     <red>255</red>
+     <green>170</green>
+     <blue>0</blue>
+    </color>
+   </property>
+   <property name="borderWidth">
+    <number>0</number>
+   </property>
+   <property name="borderRadius">
+    <number>0</number>
+   </property>
+   <property name="format">
+    <enum>ATCMlabel::Hex</enum>
    </property>
   </widget>
   <zorder>atcmLabel_44</zorder>
@@ -4040,8 +4204,11 @@ color: rgb(255, 255, 255);</string>
   <zorder>atcmLabel_33</zorder>
   <zorder>label_RTU_AnIn_19</zorder>
   <zorder>label_RTU_AnIn_23</zorder>
-  <zorder>line_6</zorder>
   <zorder>pushButton</zorder>
+  <zorder>atcmComboBox_22</zorder>
+  <zorder>label_RTU_AnIn_26</zorder>
+  <zorder>atcmLabel_55</zorder>
+  <zorder>line_6</zorder>
  </widget>
  <customwidgets>
   <customwidget>
