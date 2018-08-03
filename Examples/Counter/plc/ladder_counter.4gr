@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FCPOU>
+    <EDITINFO EDITNAME="" EDITVERSION="" EDITCATID="" EDITCLASSID="" />
+    <HEADER>
+<![CDATA[(*[[&#13;&#10;]]*)&#13;&#10;PROGRAM&#32;ladder_counter&#32;&#13;&#10;#import&#32;&quot;Crosstable.gvl&quot;&#13;&#10;#import&#32;&quot;Resource1.gvl&quot;&#13;&#10;VAR&#13;&#10;&#32;&#32;&#32;&#32;counter_up:CTU;&#13;&#10;&#32;&#32;&#32;&#32;greater&#32;:&#32;bool;&#13;&#10;&#32;&#32;&#32;&#32;little:&#32;bool;&#13;&#10;&#32;&#32;&#32;&#32;mem_little:&#32;bool;&#13;&#10;&#32;&#32;&#32;&#32;input_counter:bool;&#13;&#10;&#32;&#32;&#32;&#32;reset:&#32;bool&#32;:=&#32;false;&#13;&#10;END_VAR&#13;&#10;]]>
+    </HEADER>
+    <BODY LANG="ld" SFC_MENU="0">
+        <FNC TYPENAME="GT" ORIGIN="22;5" SIZE="12;8">
+            <PINLIST>
+                <PIN CLASS="output" ORIGIN="34;10" />
+                <PIN CLASS="input" NAME="IN1" ORIGIN="22;10" />
+                <PIN CLASS="inext" NAME="IN2" ORIGIN="22;12" />
+                <PIN CLASS="input" NAME="EN" ORIGIN="22;8" />
+                <PIN CLASS="output" NAME="ENO" ORIGIN="34;8" />
+
+            </PINLIST>
+
+        </FNC>
+        <VARREAD ORIGIN="8;9" SIZE="14;2" NAME="PLC_AnIn_1" OUTORIGIN="22;10" />
+        <LINE ORIGIN="6;8" SIZE="16;0" />
+        <LINE ORIGIN="22;12" SIZE="0;2" />
+        <LINE ORIGIN="20;14" SIZE="2;0" />
+        <VARREAD ORIGIN="12;13" SIZE="8;2" NAME="5000" OUTORIGIN="20;14" />
+        <POWERRAIL ORIGIN="6;4" SIZE="0;62" />
+        <VARWRITE ORIGIN="34;11" SIZE="6;2" NAME="greater" INORIGIN="34;12" />
+        <LINE ORIGIN="34;10" SIZE="0;2" />
+        <VARREAD ORIGIN="42;13" SIZE="8;2" NAME="2000" OUTORIGIN="50;14" />
+        <VARREAD ORIGIN="42;9" SIZE="10;2" NAME="PLC_AnIn_1" OUTORIGIN="52;10" />
+        <LINE ORIGIN="50;14" SIZE="2;0" />
+        <LINE ORIGIN="52;12" SIZE="0;2" />
+        <FNC TYPENAME="LT" ORIGIN="52;5" SIZE="12;8">
+            <PINLIST>
+                <PIN CLASS="output" ORIGIN="64;10" />
+                <PIN CLASS="input" NAME="IN1" ORIGIN="52;10" />
+                <PIN CLASS="inext" NAME="IN2" ORIGIN="52;12" />
+                <PIN CLASS="input" NAME="EN" ORIGIN="52;8" />
+                <PIN CLASS="output" NAME="ENO" ORIGIN="64;8" />
+
+            </PINLIST>
+
+        </FNC>
+        <LINE ORIGIN="34;8" SIZE="18;0" />
+        <LINE ORIGIN="6;20" SIZE="2;0" />
+        <CONTACT ORIGIN="8;17" SIZE="6;4" NAME="little" FUNC="normal" INORIGIN="8;20" OUTORIGIN="14;20" />
+        <POWERRAIL ORIGIN="28;18" SIZE="0;4" />
+        <COIL ORIGIN="14;17" SIZE="10;4" NAME="mem_little" FUNC="set" INORIGIN="14;20" OUTORIGIN="24;20" />
+        <LINE ORIGIN="24;20" SIZE="4;0" />
+        <FNC TYPENAME="AND" ORIGIN="18;23" SIZE="12;8">
+            <PINLIST>
+                <PIN CLASS="output" ORIGIN="30;28" />
+                <PIN CLASS="input" NAME="IN1" ORIGIN="18;28" />
+                <PIN CLASS="inext" NAME="IN2" ORIGIN="18;30" />
+                <PIN CLASS="input" NAME="EN" ORIGIN="18;26" />
+                <PIN CLASS="output" NAME="ENO" ORIGIN="30;26" />
+
+            </PINLIST>
+
+        </FNC>
+        <VARREAD ORIGIN="10;27" SIZE="8;2" NAME="greater" OUTORIGIN="18;28" />
+        <LINE ORIGIN="6;26" SIZE="12;0" />
+        <VARREAD ORIGIN="8;29" SIZE="10;2" NAME="mem_little" OUTORIGIN="18;30" />
+        <VARWRITE ORIGIN="30;27" SIZE="18;2" NAME="input_counter" INORIGIN="30;28" />
+        <LINE ORIGIN="6;36" SIZE="34;0" />
+        <LINE ORIGIN="40;42" SIZE="0;4" />
+        <LINE ORIGIN="38;40" SIZE="0;2" />
+        <LINE ORIGIN="38;40" SIZE="2;0" />
+        <LINE ORIGIN="52;40" SIZE="0;2" />
+        <VARWRITE ORIGIN="52;37" SIZE="8;2" NAME="reset" INORIGIN="52;38" />
+        <LINE ORIGIN="6;50" SIZE="4;0" />
+        <COIL ORIGIN="24;47" SIZE="10;4" NAME="mem_little" FUNC="reset" INORIGIN="24;50" OUTORIGIN="34;50" />
+        <POWERRAIL ORIGIN="34;48" SIZE="0;4" />
+        <CONTACT ORIGIN="10;47" SIZE="14;4" NAME="input_counter" FUNC="normal" INORIGIN="10;50" OUTORIGIN="24;50" />
+        <VARREAD ORIGIN="36;45" SIZE="4;2" NAME="10" OUTORIGIN="40;46" />
+        <FB NAME="counter_up" TYPENAME="CTU" ORIGIN="40;31" SIZE="12;12">
+            <PINLIST>
+                <PIN CLASS="input" NAME="CU" ORIGIN="40;38" R_EDGE="1" />
+                <PIN CLASS="input" NAME="R" ORIGIN="40;40" />
+                <PIN CLASS="input" NAME="PV" ORIGIN="40;42" />
+                <PIN CLASS="output" NAME="Q" ORIGIN="52;38" />
+                <PIN CLASS="output" NAME="CV" ORIGIN="52;40" />
+                <PIN CLASS="input" NAME="EN" ORIGIN="40;36" />
+                <PIN CLASS="output" NAME="ENO" ORIGIN="52;36" />
+
+            </PINLIST>
+
+        </FB>
+        <VARWRITE ORIGIN="52;41" SIZE="8;2" NAME="Count" INORIGIN="52;42" />
+        <VARREAD ORIGIN="32;41" SIZE="6;2" NAME="reset" OUTORIGIN="38;42" />
+        <VARREAD ORIGIN="26;37" SIZE="14;2" NAME="input_counter" OUTORIGIN="40;38" />
+        <VARWRITE ORIGIN="64;9" SIZE="4;2" NAME="little" INORIGIN="64;10" />
+        <COMMENT ORIGIN="70;2" SIZE="80;24">
+            <OBJCOMMENT>
+<![CDATA[&#32;EN:&#32;Here&#32;we&#32;have&#32;an&#32;exemple&#32;of&#32;an&#32;up&#32;counter&#32;that&#32;counts&#32;the&#32;number&#32;of&#32;times&#32;in&#32;which&#32;the&#32;signal&#32;PLC_AnIn_1&#32;&#13;&#10;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;(a&#32;voltage&#32;signal)&#32;goes&#32;both&#32;down&#32;(up)&#32;a&#32;lower-bound&#32;(an&#32;upper-bound).&#13;&#10;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;When&#32;the&#32;number&#32;of&#32;counting&#32;reachs&#32;10,the&#32;counter&#32;is&#32;reset&#32;to&#32;0.&#13;&#10;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;One&#32;can&#32;also&#32;measure&#32;the&#32;elapsed&#32;time&#32;between&#32;two&#32;events&#32;where&#32;the&#32;counting&#32;condition&#32;above&#32;is&#32;verified.&#13;&#10;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;See&#32;Normal&#32;program&#32;for&#32;ST&#32;language.&#13;&#10;&#13;&#10;&#32;&#32;IT:&#32;Qui&#32;abbiamo&#32;un&#32;esempio&#32;di&#32;un&#32;contatore&#32;che&#32;conta&#32;i&#32;numeri&#32;delle&#32;volte&#32;in&#32;cui&#32;il&#32;segnale&#32;PLC_AnIn_1&#13;&#10;&#32;&#32;&#32;&#32;&#32;&#32;(segnale&#32;di&#32;tensione)&#32;va&#32;prima&#32;sotto&#32;una&#32;soglia&#32;minima,&#32;&#32;poi&#32;sopra&#32;una&#32;soglia&#32;massima.&#13;&#10;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Quando&#32;il&#32;conteggio&#32;raggiunge&#32;il&#32;numero&#32;10,&#32;il&#32;contatore&#32;è&#32;resettato&#32;a&#32;0.&#13;&#10;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Si&#32;puo&#32;anche&#32;misurare&#32;il&#32;tempo&#32;trascorso&#32;tra&#32;due&#32;eventi&#32;dove&#32;si&#32;è&#32;verificata&#32;la&#32;condizione&#32;di&#32;conteggio.&#13;&#10;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Per&#32;il&#32;linguaggio&#32;ST&#32;vedere&#32;il&#32;programma&#32;&quot;Normal&quot;.]]>
+            </OBJCOMMENT>
+
+        </COMMENT>
+
+    </BODY>
+
+</FCPOU>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FCPOU>
+    <EDITINFO EDITNAME="" EDITVERSION="" EDITCATID="" EDITCLASSID="" />
+    <HEADER>
+<![CDATA[(*[[&#13;&#10;]]*)&#13;&#10;PROGRAM&#32;Ladder_timer_TP&#32;&#13;&#10;#import&#32;&quot;Crosstable.gvl&quot;&#13;&#10;#import&#32;&quot;Resource1.gvl&quot;&#13;&#10;VAR&#13;&#10;timer1:&#32;TP;&#13;&#10;timer2:&#32;TP;&#13;&#10;END_VAR&#13;&#10;]]>
+    </HEADER>
+    <BODY LANG="ld" SFC_MENU="0">
+        <POWERRAIL ORIGIN="6;12" SIZE="0;70" />
+        <COMMENT ORIGIN="10;12" SIZE="90;18">
+            <OBJCOMMENT>
+<![CDATA[&#32;EN:&#32;this&#32;example&#32;demonstrates&#32;the&#32;TP&#32;timer&#32;function.&#32;When&#32;PLC_DigOut_1&#32;is&#32;high(Output_1&#32;button&#32;on&#32;TPAC&#32;screen&#32;is&#32;pressed),&#32;&#13;&#10;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;and&#32;when&#32;PLC_DigIn_2&#32;input&#32;is&#32;high&#32;(switch&#32;2&#32;is&#32;ON&#32;in&#32;STK&#32;board),&#32;the&#32;LED&#32;3&#32;associated&#32;to&#32;the&#32;output&#32;PLC_DigOut&#32;_3&#32;will&#13;&#10;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;be&#32;ON&#32;at&#32;least&#32;for&#32;10&#32;seconds&#32;as&#32;specified&#32;in&#32;PT&#32;input.then&#32;is&#32;OFF.&#13;&#10;&#09;&#09;&#32;&#13;&#10;&#32;IT:&#32;Questo&#32;esempio&#32;dimostra&#32;come&#32;funziona&#32;il&#32;timer&#32;TP.&#32;Quando&#32;il&#32;buttone&#32;Output_1&#32;sullo&#32;schermo&#32;del&#32;TPAC&#32;è&#32;premuto,&#32;&#13;&#10;&#32;&#32;&#32;&#32;&#32;&#32;PLC_DigOut_1&#32;diventa&#32;alto.&#32;Se&#32;l&apos;ingresso&#32;PLC_DigIn_2&#32;è&#32;alto&#32;(lo&#32;switch&#32;2&#32;è&#32;ON&#32;sulla&#32;board&#32;STK),&#32;allora&#32;il&#32;LED&#32;associato&#13;&#10;&#32;&#32;&#32;&#32;&#32;&#32;a&#32;PLC_DigOut_3&#32;si&#32;accende&#32;per&#32;almeno&#32;10&#32;secondi,&#32;come&#32;specificato&#32;sull&apos;ingresso&#32;PT,&#32;successivamente&#32;si&#32;spegne.&#32;]]>
+            </OBJCOMMENT>
+
+        </COMMENT>
+        <LINE ORIGIN="20;38" SIZE="18;0" />
+        <CONTACT ORIGIN="6;35" SIZE="14;4" NAME="PLC_DigOut_1" FUNC="normal" INORIGIN="6;38" OUTORIGIN="20;38" />
+        <LINE ORIGIN="36;42" SIZE="2;0" />
+        <LINE ORIGIN="36;40" SIZE="2;0" />
+        <FB NAME="timer1" TYPENAME="TP" ORIGIN="38;33" SIZE="10;10">
+            <PINLIST>
+                <PIN CLASS="input" NAME="IN" ORIGIN="38;40" />
+                <PIN CLASS="input" NAME="PT" ORIGIN="38;42" />
+                <PIN CLASS="output" NAME="Q" ORIGIN="48;40" />
+                <PIN CLASS="output" NAME="ET" ORIGIN="48;42" />
+                <PIN CLASS="input" NAME="EN" ORIGIN="38;38" />
+                <PIN CLASS="output" NAME="ENO" ORIGIN="48;38" />
+
+            </PINLIST>
+
+        </FB>
+        <VARREAD ORIGIN="26;43" SIZE="10;2" NAME="T#10s" OUTORIGIN="36;44" />
+        <VARREAD ORIGIN="26;39" SIZE="10;2" NAME="PLC_DigIn_2" OUTORIGIN="36;40" />
+        <LINE ORIGIN="36;42" SIZE="0;2" />
+        <VARWRITE ORIGIN="48;39" SIZE="12;2" NAME="PLC_DigOut_3" INORIGIN="48;40" />
+        <FB NAME="timer2" TYPENAME="TP" ORIGIN="68;71" SIZE="10;10">
+            <PINLIST>
+                <PIN CLASS="input" NAME="IN" ORIGIN="68;78" />
+                <PIN CLASS="input" NAME="PT" ORIGIN="68;80" />
+                <PIN CLASS="output" NAME="Q" ORIGIN="78;78" />
+                <PIN CLASS="output" NAME="ET" ORIGIN="78;80" />
+                <PIN CLASS="input" NAME="EN" ORIGIN="68;76" />
+                <PIN CLASS="output" NAME="ENO" ORIGIN="78;76" />
+
+            </PINLIST>
+
+        </FB>
+        <VARWRITE ORIGIN="78;77" SIZE="14;2" NAME="PLC_DigOut_6" INORIGIN="78;78" />
+        <LINE ORIGIN="54;80" SIZE="14;0" />
+        <LINE ORIGIN="54;78" SIZE="0;2" />
+        <LINE ORIGIN="54;76" SIZE="14;0" />
+        <VARREAD ORIGIN="58;77" SIZE="10;2" NAME="PLC_DigIn_5" OUTORIGIN="68;78" />
+        <LINE ORIGIN="34;78" SIZE="6;0" />
+        <LINE ORIGIN="34;76" SIZE="6;0" />
+        <LINE ORIGIN="22;80" SIZE="0;2" />
+        <VARREAD ORIGIN="16;81" SIZE="6;2" NAME="1000" OUTORIGIN="22;82" />
+        <FNC TYPENAME="INT_TO_TIME" ORIGIN="40;73" SIZE="14;6">
+            <PINLIST>
+                <PIN CLASS="output" ORIGIN="54;78" />
+                <PIN CLASS="input" NAME="IN" ORIGIN="40;78" />
+                <PIN CLASS="input" NAME="EN" ORIGIN="40;76" />
+                <PIN CLASS="output" NAME="ENO" ORIGIN="54;76" />
+
+            </PINLIST>
+
+        </FNC>
+        <FNC TYPENAME="MUL" ORIGIN="22;73" SIZE="12;8">
+            <PINLIST>
+                <PIN CLASS="output" ORIGIN="34;78" />
+                <PIN CLASS="input" NAME="IN1" ORIGIN="22;78" />
+                <PIN CLASS="inext" NAME="IN2" ORIGIN="22;80" />
+                <PIN CLASS="input" NAME="EN" ORIGIN="22;76" />
+                <PIN CLASS="output" NAME="ENO" ORIGIN="34;76" />
+
+            </PINLIST>
+
+        </FNC>
+        <CONTACT ORIGIN="6;73" SIZE="14;4" NAME="PLC_DigOut_4" FUNC="normal" INORIGIN="6;76" OUTORIGIN="20;76" />
+        <VARREAD ORIGIN="10;77" SIZE="12;2" NAME="Var_to_convert" OUTORIGIN="22;78" />
+        <LINE ORIGIN="20;76" SIZE="2;0" />
+        <COMMENT ORIGIN="8;48" SIZE="92;22">
+            <OBJCOMMENT>
+<![CDATA[EN&#32;:&#32;In&#32;this&#32;example&#32;the&#32;only&#32;difference&#32;from&#32;the&#32;first&#32;one&#32;is&#32;that&#32;the&#32;PT&#32;time&#32;is&#32;set&#32;by&#32;the&#32;user&#32;by&#32;Var_to_convert&#32;variable&#13;&#10;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;(&#32;insert&#32;a&#32;value,&#32;see&#32;label&#32;time&#32;on&#32;the&#32;TPAC&#32;screen).&#32;delay_time&#32;is&#32;a&#32;time&#32;type&#32;variable,&#32;so&#32;the&#32;integer&#32;type&#32;variable&#13;&#10;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;int_time&#32;must&#32;be&#32;multiplied&#32;by&#32;1000&#32;(because&#32;TPAC&#32;works&#32;with&#32;milleseconds)&#32;and&#32;converted&#32;to&#32;a&#32;time&#32;type&#32;variable&#13;&#10;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;by&#32;the&#32;function&#32;INT_TO_TIME.&#13;&#10;&#13;&#10;&#13;&#10;&#32;IT&#32;:&#32;In&#32;questo&#32;esempio&#32;l&apos;unica&#32;differenza&#32;dal&#32;primo&#32;sta&#32;nel&#32;fatto&#32;che&#32;il&#32;tempo&#32;PT&#32;&#32;deve&#32;essere&#32;stabilito&#13;&#10;&#32;&#32;&#32;&#32;&#32;&#32;&#32;dall&apos;utente,tramite&#32;la&#32;variabile&#32;Var_to_convert&#32;(se&#32;inserisce&#32;un&#32;valore&#32;in&#32;label&#32;time&#32;sullo&#32;schermo&#32;del&#32;TPAC).&#13;&#10;&#32;&#32;&#32;&#32;&#32;&#32;&#32;la&#32;variabile&#32;INTERA&#32;Var_to_convert&#32;verra&#32;moltiplicata&#32;per&#32;1000&#32;perché&#32;il&#32;TPAC&#32;lavora&#32;con&#32;millesecondi,&#32;poi&#32;&#13;&#10;&#32;&#32;&#32;&#32;&#32;&#32;&#32;convertita&#32;dal&#32;blocco&#32;INT_TO_TIME&#32;ad&#32;un&#32;tipo&#32;TIME.]]>
+            </OBJCOMMENT>
+
+        </COMMENT>
+
+    </BODY>
+
+</FCPOU>

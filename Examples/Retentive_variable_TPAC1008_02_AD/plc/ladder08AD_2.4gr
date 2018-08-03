@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FCPOU>
+    <EDITINFO EDITNAME="" EDITVERSION="" EDITCATID="" EDITCLASSID="" />
+    <HEADER>
+<![CDATA[(*[[&#13;&#10;]]*)&#13;&#10;PROGRAM&#32;ladder08AD_2&#13;&#10;#import&#32;&quot;Crosstable.gvl&quot;&#13;&#10;#import&#32;&quot;Resource1.gvl&quot;&#32;&#13;&#10;VAR&#13;&#10;first&#32;:&#32;bool&#32;:=&#32;true;&#13;&#10;END_VAR&#13;&#10;]]>
+    </HEADER>
+    <BODY LANG="ld" SFC_MENU="0">
+        <POWERRAIL ORIGIN="2;6" SIZE="0;62" />
+        <CONTACT ORIGIN="2;45" SIZE="16;4" NAME="CH0_01_NODERUN" FUNC="normal" INORIGIN="2;48" OUTORIGIN="18;48" />
+        <CONTACT ORIGIN="18;45" SIZE="6;4" NAME="first" FUNC="closed" INORIGIN="18;48" OUTORIGIN="24;48" />
+        <VARREAD ORIGIN="24;49" SIZE="12;2" NAME="PLC_DigOut_1" OUTORIGIN="36;50" />
+        <FNC TYPENAME="MOVE" ORIGIN="36;45" SIZE="10;6">
+            <PINLIST>
+                <PIN CLASS="output" ORIGIN="46;50" />
+                <PIN CLASS="input" NAME="In" ORIGIN="36;50" />
+                <PIN CLASS="input" NAME="EN" ORIGIN="36;48" />
+                <PIN CLASS="output" NAME="ENO" ORIGIN="46;48" />
+
+            </PINLIST>
+
+        </FNC>
+        <FNC TYPENAME="MOVE" ORIGIN="74;45" SIZE="10;6">
+            <PINLIST>
+                <PIN CLASS="output" ORIGIN="84;50" />
+                <PIN CLASS="input" NAME="In" ORIGIN="74;50" />
+                <PIN CLASS="input" NAME="EN" ORIGIN="74;48" />
+                <PIN CLASS="output" NAME="ENO" ORIGIN="84;48" />
+
+            </PINLIST>
+
+        </FNC>
+        <LINE ORIGIN="46;48" SIZE="28;0" />
+        <VARWRITE ORIGIN="84;49" SIZE="14;2" NAME="Retentive_AnVal" INORIGIN="84;50" />
+        <VARREAD ORIGIN="62;49" SIZE="12;2" NAME="PLC_AnOut_1" OUTORIGIN="74;50" />
+        <LINE ORIGIN="24;48" SIZE="12;0" />
+        <VARWRITE ORIGIN="46;49" SIZE="14;2" NAME="Retentive_DigVal" INORIGIN="46;50" />
+        <CONTACT ORIGIN="22;31" SIZE="8;4" NAME="first" FUNC="normal" INORIGIN="22;34" OUTORIGIN="30;34" />
+        <VARREAD ORIGIN="26;35" SIZE="4;2" NAME="2" OUTORIGIN="30;36" />
+        <FNC TYPENAME="MOVE" ORIGIN="30;31" SIZE="10;6">
+            <PINLIST>
+                <PIN CLASS="output" ORIGIN="40;36" />
+                <PIN CLASS="input" NAME="In" ORIGIN="30;36" />
+                <PIN CLASS="input" NAME="EN" ORIGIN="30;34" />
+                <PIN CLASS="output" NAME="ENO" ORIGIN="40;34" />
+
+            </PINLIST>
+
+        </FNC>
+        <VARWRITE ORIGIN="40;35" SIZE="14;2" NAME="PLC_AnOutConf_1" INORIGIN="40;36" />
+        <LINE ORIGIN="40;34" SIZE="16;0" />
+        <VARREAD ORIGIN="38;39" SIZE="18;2" NAME="Retentive_DigVal" OUTORIGIN="56;40" />
+        <LINE ORIGIN="56;36" SIZE="0;4" />
+        <FNC TYPENAME="MOVE" ORIGIN="56;31" SIZE="10;6">
+            <PINLIST>
+                <PIN CLASS="output" ORIGIN="66;36" />
+                <PIN CLASS="input" NAME="In" ORIGIN="56;36" />
+                <PIN CLASS="input" NAME="EN" ORIGIN="56;34" />
+                <PIN CLASS="output" NAME="ENO" ORIGIN="66;34" />
+
+            </PINLIST>
+
+        </FNC>
+        <LINE ORIGIN="66;36" SIZE="0;4" />
+        <VARWRITE ORIGIN="66;39" SIZE="14;2" NAME="PLC_DigOut_1" INORIGIN="66;40" />
+        <LINE ORIGIN="66;34" SIZE="16;0" />
+        <VARREAD ORIGIN="68;35" SIZE="14;2" NAME="Retentive_AnVal" OUTORIGIN="82;36" />
+        <FNC TYPENAME="MOVE" ORIGIN="82;31" SIZE="10;6">
+            <PINLIST>
+                <PIN CLASS="output" ORIGIN="92;36" />
+                <PIN CLASS="input" NAME="In" ORIGIN="82;36" />
+                <PIN CLASS="input" NAME="EN" ORIGIN="82;34" />
+                <PIN CLASS="output" NAME="ENO" ORIGIN="92;34" />
+
+            </PINLIST>
+
+        </FNC>
+        <LINE ORIGIN="92;36" SIZE="0;2" />
+        <VARWRITE ORIGIN="92;37" SIZE="14;2" NAME="PLC_AnOut_1" INORIGIN="92;38" />
+        <FNC TYPENAME="MOVE" ORIGIN="108;31" SIZE="10;6">
+            <PINLIST>
+                <PIN CLASS="output" ORIGIN="118;36" />
+                <PIN CLASS="input" NAME="In" ORIGIN="108;36" />
+                <PIN CLASS="input" NAME="EN" ORIGIN="108;34" />
+                <PIN CLASS="output" NAME="ENO" ORIGIN="118;34" />
+
+            </PINLIST>
+
+        </FNC>
+        <VARWRITE ORIGIN="118;35" SIZE="4;2" NAME="first" INORIGIN="118;36" />
+        <LINE ORIGIN="92;34" SIZE="16;0" />
+        <VARREAD ORIGIN="104;41" SIZE="4;2" NAME="0" OUTORIGIN="108;42" />
+        <LINE ORIGIN="108;36" SIZE="0;6" />
+        <CONTACT ORIGIN="2;31" SIZE="20;4" NAME="CH0_01_NODERUN" FUNC="normal" INORIGIN="2;34" OUTORIGIN="22;34" />
+        <COMMENT ORIGIN="6;2" SIZE="106;28">
+            <OBJCOMMENT>
+<![CDATA[&#32;&#32;&#32;EN:&#32;TPAC1008_02&#32;uses&#32;CAN&#32;protocol&#32;and&#32;it&#32;is&#32;enabled&#32;by&#32;CH0_01_NODERUN.&#32;The&#32;i/o&#32;configuration&#32;and&#32;initialization&#32;should&#32;be&#32;&#13;&#10;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;done&#32;here&#32;and&#32;not&#32;in&#32;the&#32;Task0_Init.&#13;&#10;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this&#32;is&#32;an&#32;exemple&#32;about&#32;retentive&#32;variables,&#32;if&#32;CH0_01_NODERUN&#32;(CAN&#32;enabled)&#32;is&#32;true,&#32;first&#32;is&#32;also&#32;true&#32;and&#32;PLC_DigOut_1&#32;is&#32;true&#32;&#13;&#10;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this&#32;value&#32;(&#32;PLC_DigOut_1)&#32;will&#32;be&#32;assigned&#32;to&#32;Retentive_DigVal&#32;(a&#32;retentive&#32;variable).&#32;In&#32;this&#32;way&#32;if&#32;one&#32;switches&#32;off&#32;and&#32;then&#13;&#10;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;on&#32;the&#32;TPAC,&#32;the&#32;output&#32;PLC_DigOut_1&#32;will&#32;still&#32;continue&#32;to&#32;be&#32;true&#32;(LED&#32;ON).&#32;the&#32;same&#32;with&#32;PLC_AnOut_1.&#13;&#10;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;See&#32;Normal&#32;program&#32;for&#32;ST&#32;language.&#13;&#10;&#13;&#10;&#32;&#32;&#32;&#32;IT:&#32;I&#32;TPAC1008_02&#32;usano&#32;internamente&#32;il&#32;protocollo&#32;CAN&#32;ed&#32;è&#32;abilitato&#32;da&#32;CH0_01_NODERUN.&#32;La&#32;configurazione&#32;e&#32;l&apos;inizializazzione&#32;vanno&#32;fatte&#32;qui&#32;&#13;&#10;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;e&#32;non&#32;nel&#32;Task0_Init.&#13;&#10;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Questo&#32;è&#32;un&#32;esempio&#32;di&#32;variabili&#32;&quot;retentive&quot;&#32;(mantengono&#32;il&#32;valore&#32;allo&#32;spegnimento),&#32;se&#32;CH0_01_NODERUN&#32;è&#32;vero&#32;(CAN&#32;abilitato)&#32;si&#32;memorizza&#13;&#10;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;il&#32;valore&#32;di&#32;alcune&#32;uscite.&#32;I&#32;valori&#32;delle&#32;uscite&#32;possono&#32;essere&#32;inseriti&#32;da&#32;HMI.&#32;In&#32;questo&#32;modo&#32;se&#32;si&#32;spegne&#32;e&#32;poi&#32;si&#32;accende&#32;il&#32;dispositivo&#32;le&#32;uscite&#32;&#13;&#10;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;avranno&#32;il&#32;valore&#32;precedentemente&#32;memorizzato.&#13;&#10;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Per&#32;il&#32;linguaggio&#32;ST&#32;vedere&#32;il&#32;programma&#32;&quot;Normal&quot;.&#13;&#10;&#09;&#09;&#13;&#10;]]>
+            </OBJCOMMENT>
+
+        </COMMENT>
+
+    </BODY>
+
+</FCPOU>

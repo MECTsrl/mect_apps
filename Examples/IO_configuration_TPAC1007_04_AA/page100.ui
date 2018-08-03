@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+<class>page100</class>
+<widget class="QWidget" name="page100">
+<property name="geometry">
+<rect>
+<x>0</x>
+<y>0</y>
+<width>480</width><height>272</height>
+</rect>
+</property>
+<property name="minimumSize">
+<size>
+<width>480</width><height>272</height>
+</size>
+</property>
+<property name="maximumSize">
+<size>
+<width>480</width><height>272</height>
+</size>
+</property>
+<property name="windowTitle">
+<string>page100</string>
+</property>
+<property name="styleSheet">
+<string notr="true">QWidget#page100
+{
+}</string>
+</property>
+<property name="font">
+ <font>
+  <family>DejaVu Sans</family>
+  <pointsize>8</pointsize>
+ </font>
+</property>
+</widget>
+<resources/>
+<connections/>
+<slots>
+<slot>goto_page(const char*,bool)</slot>
+</slots>
+</ui>
+
