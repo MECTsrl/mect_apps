@@ -27,7 +27,8 @@ ln -s $mntdir/control control 2>/dev/null
 rm -f root
 test -d $mntdir/root || mkdir -p $mntdir/root
 ln -s $mntdir/root root 2>/dev/null
-cp /local/flash/root/fcrts /root/
+
+test -x $mntdir/root/fcrts || cp /local/flash/root/fcrts $mntdir/root/fcrts
 
 rm -f etc
 test -d $mntdir/etc || cp -r /local/flash/etc $mntdir/etc
