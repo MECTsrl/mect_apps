@@ -283,25 +283,34 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="814"/>
-        <location filename="page100.ui" line="1207"/>
-        <location filename="page100.ui" line="1285"/>
-        <source>p.terra </source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page100.ui" line="891"/>
-        <location filename="page100.ui" line="1369"/>
-        <location filename="page100.ui" line="1447"/>
-        <source>p.sotto </source>
-        <oldsource>sotto </oldsource>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="page100.ui" line="1045"/>
+        <source>sopra nord </source>
+        <oldsource>p.sopra </oldsource>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="page100.ui" line="1123"/>
-        <source>p.sopra </source>
-        <oldsource>sopra centro </oldsource>
+        <source>sopra sud </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page100.ui" line="1207"/>
+        <source>soggiorno </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page100.ui" line="1285"/>
+        <source>corridoio </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page100.ui" line="1369"/>
+        <source>cantina </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page100.ui" line="1447"/>
+        <source>scala </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -432,11 +441,6 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="3209"/>
-        <source>+ </source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="page100.ui" line="3277"/>
         <location filename="page100.ui" line="3283"/>
         <source>SysImpActiveEnergy_8</source>
@@ -461,11 +465,6 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="4489"/>
-        <source>- </source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="page100.ui" line="4977"/>
         <location filename="page100.ui" line="4983"/>
         <source>SysImpActiveEnergy_1</source>
@@ -475,6 +474,16 @@
         <location filename="page100.ui" line="3514"/>
         <location filename="page100.ui" line="3520"/>
         <source>SysImpActiveEnergy_2</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page100.ui" line="814"/>
+        <source>cucina </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page100.ui" line="891"/>
+        <source>lavanderia </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -708,7 +717,8 @@
         <location filename="page100.ui" line="3668"/>
         <location filename="page100.ui" line="4474"/>
         <location filename="page100.ui" line="4971"/>
-        <source>NNnnn.N</source>
+        <source>nNNNnnn.N</source>
+        <oldsource>NNnnn.N</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>

@@ -17,7 +17,7 @@ config.path = /local/etc/sysconfig
 splash.files = config/splash.png
 splash.path = /local/etc/sysconfig/img
 
-customtrend.files = config/trend1.csv
+customtrend.files = config/trend1.csv config/trend_piani.csv config/trend_caldaia.csv
 customtrend.path = /local/data/customtrend
 
 INSTALLS += config splash customtrend
@@ -25,7 +25,9 @@ INSTALLS += config splash customtrend
 # language
 OTHER_FILES += \
     languages_it.ts \
-    languages_en.ts
+    languages_en.ts \
+    config/trend_caldaia.csv \
+    config/trend_piani.csv
 
 include(./common.pri)
 

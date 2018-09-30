@@ -189,13 +189,13 @@
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
-1;F;openvpn_restart_times          ;UDINT    ;0   ;PLC       ;               ;    ;    ;      ;192 ;3   ;[RW]
-1;F;is_PPP0_ON                     ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;192 ;3   ;[RW]isUP_ppp0()
-1;F;is_TUN0_ON                     ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;192 ;3   ;[RW]isUP_tun0()
+1;P;openvpn_restart_times          ;UDINT    ;0   ;PLC       ;               ;    ;    ;      ;192 ;3   ;[RW]
+1;P;is_PPP0_ON                     ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;192 ;3   ;[RW]isUP_ppp0()
+1;P;is_TUN0_ON                     ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;192 ;3   ;[RW]isUP_tun0()
 ;;;;;;;;;;;;
 2;P;MPT91_Scala                    ;BIT      ;0   ;RTU       ;               ;0   ;1   ;8     ;196 ;1   ;[RW]0x0008
-2;S;MPT91_Temperatura              ;INT      ;1   ;RTU       ;               ;0   ;1   ;300256;197 ;1   ;[RO]0x0100
-2;S;MPT91_Set_point                ;INT      ;1   ;RTU       ;               ;0   ;1   ;257   ;198 ;1   ;[RW]0x0101
+2;F;MPT91_Temperatura              ;INT      ;1   ;RTU       ;               ;0   ;1   ;300256;197 ;1   ;[RO]0x0100
+2;F;MPT91_Set_point                ;INT      ;1   ;RTU       ;               ;0   ;1   ;257   ;198 ;1   ;[RW]0x0101
 2;P;MPT91_Isteresi_OnOff           ;INT      ;1   ;RTU       ;               ;0   ;1   ;267   ;199 ;1   ;[RW]0x010B
 ;;;;;;;;;;;;
 2;P;XX_Baudrate                    ;UINT     ;0   ;RTU       ;               ;3   ;1   ;1     ;201 ;19  ;[RO]Baudrate MPNC005 device
@@ -205,17 +205,17 @@
 2;P;XX_AnInConf_B                  ;UINT     ;0   ;RTU       ;               ;3   ;1   ;6     ;201 ;19  ;[RW]Analog inputs configuration MPNC030 module B
 2;P;XX_AnInConf_C                  ;UINT     ;0   ;RTU       ;               ;3   ;1   ;7     ;201 ;19  ;[RW]Analog inputs configuration MPNC030 module C
 2;P;XX_AnInConf_D                  ;UINT     ;0   ;RTU       ;               ;3   ;1   ;8     ;201 ;19  ;[RW]Analog inputs configuration MPNC030 module D
-2;S;XX_AnIn_A_1                    ;INT      ;1   ;RTU       ;               ;3   ;1   ;9     ;201 ;19  ;[RO]Analog input 1 value MPNC030 module A
-2;S;XX_AnIn_A_2                    ;INT      ;1   ;RTU       ;               ;3   ;1   ;10    ;201 ;19  ;[RO]Analog input 2 value MPNC030 module A
-2;S;XX_AnIn_A_3                    ;INT      ;1   ;RTU       ;               ;3   ;1   ;11    ;201 ;19  ;[RO]Analog input 3 value MPNC030 module A
-2;S;XX_AnIn_A_4                    ;INT      ;1   ;RTU       ;               ;3   ;1   ;12    ;201 ;19  ;[RO]Analog input 4 value MPNC030 module A
-2;S;XX_AnIn_B_1                    ;INT      ;1   ;RTU       ;               ;3   ;1   ;13    ;201 ;19  ;[RO]Analog input 1 value MPNC030 module B
-2;S;XX_AnIn_B_2                    ;INT      ;1   ;RTU       ;               ;3   ;1   ;14    ;201 ;19  ;[RO]Analog input 2 value MPNC030 module B
-2;S;XX_AnIn_B_3                    ;INT      ;1   ;RTU       ;               ;3   ;1   ;15    ;201 ;19  ;[RO]Analog input 3 value MPNC030 module B
+2;F;XX_AnIn_A_1                    ;INT      ;1   ;RTU       ;               ;3   ;1   ;9     ;201 ;19  ;[RO]Analog input 1 value MPNC030 module A
+2;F;XX_AnIn_A_2                    ;INT      ;1   ;RTU       ;               ;3   ;1   ;10    ;201 ;19  ;[RO]Analog input 2 value MPNC030 module A
+2;F;XX_AnIn_A_3                    ;INT      ;1   ;RTU       ;               ;3   ;1   ;11    ;201 ;19  ;[RO]Analog input 3 value MPNC030 module A
+2;F;XX_AnIn_A_4                    ;INT      ;1   ;RTU       ;               ;3   ;1   ;12    ;201 ;19  ;[RO]Analog input 4 value MPNC030 module A
+2;F;XX_AnIn_B_1                    ;INT      ;1   ;RTU       ;               ;3   ;1   ;13    ;201 ;19  ;[RO]Analog input 1 value MPNC030 module B
+2;F;XX_AnIn_B_2                    ;INT      ;1   ;RTU       ;               ;3   ;1   ;14    ;201 ;19  ;[RO]Analog input 2 value MPNC030 module B
+2;F;XX_AnIn_B_3                    ;INT      ;1   ;RTU       ;               ;3   ;1   ;15    ;201 ;19  ;[RO]Analog input 3 value MPNC030 module B
 2;P;XX_AnIn_B_4                    ;INT      ;1   ;RTU       ;               ;3   ;1   ;16    ;201 ;19  ;[RO]Analog input 4 value MPNC030 module B
-2;S;XX_AnIn_C_1                    ;INT      ;1   ;RTU       ;               ;3   ;1   ;17    ;201 ;19  ;[RO]Analog input 1 value MPNC030 module C
-2;S;XX_AnIn_C_2                    ;INT      ;1   ;RTU       ;               ;3   ;1   ;18    ;201 ;19  ;[RO]Analog input 2 value MPNC030 module C
-2;S;XX_AnIn_C_3                    ;INT      ;1   ;RTU       ;               ;3   ;1   ;19    ;201 ;19  ;[RO]Analog input 3 value MPNC030 module C
+2;F;XX_AnIn_C_1                    ;INT      ;1   ;RTU       ;               ;3   ;1   ;17    ;201 ;19  ;[RO]Analog input 1 value MPNC030 module C
+2;F;XX_AnIn_C_2                    ;INT      ;1   ;RTU       ;               ;3   ;1   ;18    ;201 ;19  ;[RO]Analog input 2 value MPNC030 module C
+2;F;XX_AnIn_C_3                    ;INT      ;1   ;RTU       ;               ;3   ;1   ;19    ;201 ;19  ;[RO]Analog input 3 value MPNC030 module C
 2;P;XX_AnIn_C_4                    ;INT      ;1   ;RTU       ;               ;3   ;1   ;20    ;201 ;19  ;[RO]Analog input 4 value MPNC030 module C
 2;P;XX_AnInConf_1                  ;UINT     ;0   ;RTU       ;               ;3   ;1   ;40    ;220 ;28  ;[RW]Analog input 1 configuration MPNC005
 2;P;XX_AnInConf_2                  ;UINT     ;0   ;RTU       ;               ;3   ;1   ;41    ;220 ;28  ;[RW]Analog input 2 configuration MPNC005
@@ -246,33 +246,33 @@
 2;P;XX_DigOut_7                    ;BYTE_BIT ;7   ;RTU       ;               ;3   ;1   ;46    ;220 ;28  ;[RW]Digital output 7 value MPNC005
 2;P;XX_DigOut_8                    ;BYTE_BIT ;8   ;RTU       ;               ;3   ;1   ;46    ;220 ;28  ;[RW]Digital output 8 value MPNC005
 ;;;;;;;;;;;;
-3;P;SystemVoltage_0                ;REALCDAB ;1   ;RTU       ;               ;3   ;10  ;4108  ;249 ;1   ;[RO]0x0A 0x100C Tensione in V (PRINCIPALE)
+3;F;SystemVoltage_0                ;REALCDAB ;1   ;RTU       ;               ;3   ;10  ;4108  ;249 ;1   ;[RO]0x0A 0x100C Tensione in V (PRINCIPALE)
 3;P;SysPowerFactor_0               ;REALCDAB ;3   ;RTU       ;               ;3   ;10  ;4126  ;250 ;1   ;[RO]0x0A 0x101E Fattore di Potenza 0 (PRINCIPALE)
-3;P;SysActivePower_0               ;REALCDAB ;0   ;RTU       ;               ;3   ;10  ;4134  ;251 ;1   ;[RO]0x0A 0x1026 Potenza Attiva 0 in W (PRINCIPALE)
-3;P;SysImpActiveEnergy_0           ;REALCDAB ;1   ;RTU       ;               ;3   ;10  ;4358  ;252 ;1   ;[RO]0x0A 0x1106 Energia Attiva Importata 0 in Wh (PRINCIPALE)
-3;P;SysExpActiveEnergy_0           ;REALCDAB ;1   ;RTU       ;               ;3   ;10  ;4366  ;253 ;1   ;[RO]0x0A 0x110E Energia Attiva Esportata 0 in Wh (PRINCIPALE)
-3;P;SysActivePower_1               ;REALCDAB ;0   ;RTU       ;               ;3   ;11  ;4134  ;254 ;1   ;[RO]0x0B 0x1026 Potenza Attiva 0 in W (FOTOVOLTAICO)
-3;P;SysImpActiveEnergy_1           ;REALCDAB ;1   ;RTU       ;               ;3   ;11  ;4358  ;255 ;1   ;[RO]0x0B 0x1106 Energia Attiva Importata 1 in Wh (FOTOVOLTAICO)
-3;P;SysExpActiveEnergy_1           ;REALCDAB ;1   ;RTU       ;               ;3   ;11  ;4366  ;256 ;1   ;[RO]0x0B 0x110E Energia Attiva Esportata 0 in Wh (FOTOVOLTAICO)
-3;P;SysActivePower_2               ;REALCDAB ;0   ;RTU       ;               ;3   ;12  ;4134  ;257 ;1   ;[RO]0x0C 0x1026 Potenza Attiva 0 in W (ESTERNI)
-3;P;SysImpActiveEnergy_2           ;REALCDAB ;1   ;RTU       ;               ;3   ;12  ;4358  ;258 ;1   ;[RO]0x0C 0x1106 Energia Attiva Importata 0 in Wh (ESTERNI)
-3;P;SysActivePower_3               ;REALCDAB ;0   ;RTU       ;               ;3   ;13  ;4134  ;259 ;1   ;[RO]0x0D 0x1026 Potenza Attiva 0 in W (PIANO SOPRA)
-3;P;SysImpActiveEnergy_3           ;REALCDAB ;1   ;RTU       ;               ;3   ;13  ;4358  ;260 ;1   ;[RO]0x0D 0x1106 Energia Attiva Importata 0 in Wh (PIANO SOPRA)
-3;P;SysActivePower_4               ;REALCDAB ;0   ;RTU       ;               ;3   ;14  ;4134  ;261 ;1   ;[RO]0x0E 0x1026 Potenza Attiva 0 in W (PIANO TERRA)
-3;P;SysImpActiveEnergy_4           ;REALCDAB ;1   ;RTU       ;               ;3   ;14  ;4358  ;262 ;1   ;[RO]0x0E 0x1106 Energia Attiva Importata 0 in Wh (PIANO TERRA)
-3;P;SysActivePower_5               ;REALCDAB ;0   ;RTU       ;               ;3   ;15  ;4134  ;263 ;1   ;[RO]0x0F 0x1026 Potenza Attiva 0 in W (PIANO SOTTO)
-3;P;SysImpActiveEnergy_5           ;REALCDAB ;1   ;RTU       ;               ;3   ;15  ;4358  ;264 ;1   ;[RO]0x0F 0x1106 Energia Attiva Importata 0 in Wh (PIANO SOTTO)
-3;P;SysActivePower_6               ;REALCDAB ;0   ;RTU       ;               ;3   ;16  ;4134  ;265 ;1   ;[RO]0x10 0x1026 Potenza Attiva 0 in W (AUTO ELETTRICA)
-3;P;SysImpActiveEnergy_6           ;REALCDAB ;1   ;RTU       ;               ;3   ;16  ;4358  ;266 ;1   ;[RO]0x10 0x1106 Energia Attiva Importata 0 in Wh (AUTO ELETTRICA)
-3;P;SysActivePower_7               ;REALCDAB ;0   ;RTU       ;               ;3   ;17  ;4134  ;267 ;1   ;[RO]0x11 0x1026 Potenza Attiva 0 in W (DEUMIDIFICATORE)
-3;P;SysImpActiveEnergy_7           ;REALCDAB ;1   ;RTU       ;               ;3   ;17  ;4358  ;268 ;1   ;[RO]0x11 0x1106 Energia Attiva Importata 0 in Wh (DEUMIDIFICATORE)
-3;P;SysActivePower_8               ;REALCDAB ;0   ;RTU       ;               ;3   ;18  ;4134  ;269 ;1   ;[RO]0x12 0x1026 Potenza Attiva 0 in W (LAVANDERIA)
-3;P;SysImpActiveEnergy_8           ;REALCDAB ;1   ;RTU       ;               ;3   ;18  ;4358  ;270 ;1   ;[RO]0x12 0x1106 Energia Attiva Importata 0 in Wh (LAVANDERIA)
-3;P;SysActivePower_9               ;REALCDAB ;0   ;RTU       ;               ;3   ;19  ;4134  ;271 ;1   ;[RO]0x13 0x1026 Potenza Attiva 0 in W (UPS)
-3;P;SysApparentPower_9             ;REALCDAB ;0   ;RTU       ;               ;3   ;19  ;4142  ;272 ;1   ;[RO]0x13 0x102E Potenza Apparente 0 in VA (UPS)
-3;P;SysImpActiveEnergy_9           ;REALCDAB ;1   ;RTU       ;               ;3   ;19  ;4358  ;273 ;1   ;[RO]0x13 0x1106 Energia Attiva Importata 0 in Wh (UPS)
-3;P;SysActivePower_10              ;REALCDAB ;0   ;RTU       ;               ;3   ;20  ;4134  ;274 ;1   ;[RO]0x14 0x1026 Potenza Attiva 0 in W (Caldaia+Puffer)
-3;P;SysImpActiveEnergy_10          ;REALCDAB ;1   ;RTU       ;               ;3   ;20  ;4358  ;275 ;1   ;[RO]0x14 0x1106 Energia Attiva Importata 0 in Wh (Caldaia+Puffer)
+3;F;SysActivePower_0               ;REALCDAB ;0   ;RTU       ;               ;3   ;10  ;4134  ;251 ;1   ;[RO]0x0A 0x1026 Potenza Attiva 0 in W (PRINCIPALE)
+3;S;SysImpActiveEnergy_0           ;REALCDAB ;1   ;RTU       ;               ;3   ;10  ;4358  ;252 ;1   ;[RO]0x0A 0x1106 Energia Attiva Importata 0 in Wh (PRINCIPALE)
+3;S;SysExpActiveEnergy_0           ;REALCDAB ;1   ;RTU       ;               ;3   ;10  ;4366  ;253 ;1   ;[RO]0x0A 0x110E Energia Attiva Esportata 0 in Wh (PRINCIPALE)
+3;F;SysActivePower_1               ;REALCDAB ;0   ;RTU       ;               ;3   ;11  ;4134  ;254 ;1   ;[RO]0x0B 0x1026 Potenza Attiva 0 in W (FOTOVOLTAICO)
+3;S;SysImpActiveEnergy_1           ;REALCDAB ;1   ;RTU       ;               ;3   ;11  ;4358  ;255 ;1   ;[RO]0x0B 0x1106 Energia Attiva Importata 1 in Wh (FOTOVOLTAICO)
+3;S;SysExpActiveEnergy_1           ;REALCDAB ;1   ;RTU       ;               ;3   ;11  ;4366  ;256 ;1   ;[RO]0x0B 0x110E Energia Attiva Esportata 0 in Wh (FOTOVOLTAICO)
+3;F;SysActivePower_2               ;REALCDAB ;0   ;RTU       ;               ;3   ;12  ;4134  ;257 ;1   ;[RO]0x0C 0x1026 Potenza Attiva 0 in W (ESTERNI)
+3;S;SysImpActiveEnergy_2           ;REALCDAB ;1   ;RTU       ;               ;3   ;12  ;4358  ;258 ;1   ;[RO]0x0C 0x1106 Energia Attiva Importata 0 in Wh (ESTERNI)
+3;F;SysActivePower_3               ;REALCDAB ;0   ;RTU       ;               ;3   ;13  ;4134  ;259 ;1   ;[RO]0x0D 0x1026 Potenza Attiva 0 in W (PIANO SOPRA)
+3;S;SysImpActiveEnergy_3           ;REALCDAB ;1   ;RTU       ;               ;3   ;13  ;4358  ;260 ;1   ;[RO]0x0D 0x1106 Energia Attiva Importata 0 in Wh (PIANO SOPRA)
+3;F;SysActivePower_4               ;REALCDAB ;0   ;RTU       ;               ;3   ;14  ;4134  ;261 ;1   ;[RO]0x0E 0x1026 Potenza Attiva 0 in W (PIANO TERRA)
+3;S;SysImpActiveEnergy_4           ;REALCDAB ;1   ;RTU       ;               ;3   ;14  ;4358  ;262 ;1   ;[RO]0x0E 0x1106 Energia Attiva Importata 0 in Wh (PIANO TERRA)
+3;F;SysActivePower_5               ;REALCDAB ;0   ;RTU       ;               ;3   ;15  ;4134  ;263 ;1   ;[RO]0x0F 0x1026 Potenza Attiva 0 in W (PIANO SOTTO)
+3;S;SysImpActiveEnergy_5           ;REALCDAB ;1   ;RTU       ;               ;3   ;15  ;4358  ;264 ;1   ;[RO]0x0F 0x1106 Energia Attiva Importata 0 in Wh (PIANO SOTTO)
+3;F;SysActivePower_6               ;REALCDAB ;0   ;RTU       ;               ;3   ;16  ;4134  ;265 ;1   ;[RO]0x10 0x1026 Potenza Attiva 0 in W (AUTO ELETTRICA)
+3;S;SysImpActiveEnergy_6           ;REALCDAB ;1   ;RTU       ;               ;3   ;16  ;4358  ;266 ;1   ;[RO]0x10 0x1106 Energia Attiva Importata 0 in Wh (AUTO ELETTRICA)
+3;F;SysActivePower_7               ;REALCDAB ;0   ;RTU       ;               ;3   ;17  ;4134  ;267 ;1   ;[RO]0x11 0x1026 Potenza Attiva 0 in W (DEUMIDIFICATORE)
+3;S;SysImpActiveEnergy_7           ;REALCDAB ;1   ;RTU       ;               ;3   ;17  ;4358  ;268 ;1   ;[RO]0x11 0x1106 Energia Attiva Importata 0 in Wh (DEUMIDIFICATORE)
+3;F;SysActivePower_8               ;REALCDAB ;0   ;RTU       ;               ;3   ;18  ;4134  ;269 ;1   ;[RO]0x12 0x1026 Potenza Attiva 0 in W (LAVANDERIA)
+3;S;SysImpActiveEnergy_8           ;REALCDAB ;1   ;RTU       ;               ;3   ;18  ;4358  ;270 ;1   ;[RO]0x12 0x1106 Energia Attiva Importata 0 in Wh (LAVANDERIA)
+3;F;SysActivePower_9               ;REALCDAB ;0   ;RTU       ;               ;3   ;19  ;4134  ;271 ;1   ;[RO]0x13 0x1026 Potenza Attiva 0 in W (UPS)
+3;F;SysApparentPower_9             ;REALCDAB ;0   ;RTU       ;               ;3   ;19  ;4142  ;272 ;1   ;[RO]0x13 0x102E Potenza Apparente 0 in VA (UPS)
+3;S;SysImpActiveEnergy_9           ;REALCDAB ;1   ;RTU       ;               ;3   ;19  ;4358  ;273 ;1   ;[RO]0x13 0x1106 Energia Attiva Importata 0 in Wh (UPS)
+3;F;SysActivePower_10              ;REALCDAB ;0   ;RTU       ;               ;3   ;20  ;4134  ;274 ;1   ;[RO]0x14 0x1026 Potenza Attiva 0 in W (Caldaia+Puffer)
+3;S;SysImpActiveEnergy_10          ;REALCDAB ;1   ;RTU       ;               ;3   ;20  ;4358  ;275 ;1   ;[RO]0x14 0x1106 Energia Attiva Importata 0 in Wh (Caldaia+Puffer)
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
