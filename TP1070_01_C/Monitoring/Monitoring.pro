@@ -30,4 +30,10 @@ SOURCES += \
 RESOURCES += \
     resources.qrc
 
+OTHER_FILES += \
+    customtrend/trend_termostati.csv \
+    customtrend/trend_potenze.csv \
+    customtrend/trend_piani.csv \
+    customtrend/trend_caldaia.csv
+
 

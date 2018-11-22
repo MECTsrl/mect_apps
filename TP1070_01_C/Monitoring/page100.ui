@@ -35,16 +35,16 @@ background-color: rgb(0, 0, 0);
   <widget class="ATCMbutton" name="atcmButton">
    <property name="geometry">
     <rect>
-     <x>0</x>
+     <x>566</x>
      <y>440</y>
-     <width>133</width>
+     <width>78</width>
      <height>40</height>
     </rect>
    </property>
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>10</pointsize>
+     <pointsize>8</pointsize>
     </font>
    </property>
    <property name="iconSize">
@@ -115,334 +115,10 @@ background-color: rgb(0, 0, 0);
     <enum>QFrame::Raised</enum>
    </property>
   </widget>
-  <widget class="ATCMdate" name="atcmDate">
-   <property name="geometry">
-    <rect>
-     <x>399</x>
-     <y>440</y>
-     <width>133</width>
-     <height>40</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>DejaVu Sans Mono</family>
-     <pointsize>9</pointsize>
-    </font>
-   </property>
-   <property name="toolTip">
-    <string>ATCM QDate</string>
-   </property>
-   <property name="whatsThis">
-    <string>ATCMdate widget</string>
-   </property>
-   <property name="bgColor">
-    <color>
-     <red>0</red>
-     <green>0</green>
-     <blue>0</blue>
-    </color>
-   </property>
-   <property name="fontColor">
-    <color>
-     <red>255</red>
-     <green>170</green>
-     <blue>0</blue>
-    </color>
-   </property>
-   <property name="borderWidth">
-    <number>0</number>
-   </property>
-   <property name="borderRadius">
-    <number>0</number>
-   </property>
-   <property name="format">
-    <enum>ATCMdate::YYYY_MM_DD</enum>
-   </property>
-  </widget>
-  <widget class="ATCMtime" name="atcmTime">
-   <property name="geometry">
-    <rect>
-     <x>532</x>
-     <y>440</y>
-     <width>133</width>
-     <height>40</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>DejaVu Sans Mono</family>
-     <pointsize>9</pointsize>
-    </font>
-   </property>
-   <property name="toolTip">
-    <string>ATCM QTime</string>
-   </property>
-   <property name="whatsThis">
-    <string>ATCMtime widget</string>
-   </property>
-   <property name="bgColor">
-    <color>
-     <red>0</red>
-     <green>0</green>
-     <blue>0</blue>
-    </color>
-   </property>
-   <property name="fontColor">
-    <color>
-     <red>255</red>
-     <green>170</green>
-     <blue>0</blue>
-    </color>
-   </property>
-   <property name="borderWidth">
-    <number>0</number>
-   </property>
-   <property name="borderRadius">
-    <number>0</number>
-   </property>
-  </widget>
-  <widget class="ATCMlabel" name="atcmLabel_2">
-   <property name="enabled">
-    <bool>false</bool>
-   </property>
-   <property name="geometry">
-    <rect>
-     <x>566</x>
-     <y>400</y>
-     <width>59</width>
-     <height>40</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>DejaVu Sans Mono</family>
-     <pointsize>11</pointsize>
-     <weight>75</weight>
-     <bold>true</bold>
-    </font>
-   </property>
-   <property name="text">
-    <string>NN.N</string>
-   </property>
-   <property name="toolTip">
-    <string>MPT91_Temperatura</string>
-   </property>
-   <property name="whatsThis">
-    <string>ATCMlabel widget</string>
-   </property>
-   <property name="variable">
-    <string>MPT91_Temperatura</string>
-   </property>
-   <property name="prefix">
-    <string/>
-   </property>
-   <property name="suffix">
-    <string/>
-   </property>
-   <property name="refresh">
-    <number>200</number>
-   </property>
-   <property name="max">
-    <string notr="true">0</string>
-   </property>
-   <property name="min">
-    <string notr="true">0</string>
-   </property>
-   <property name="viewStatus">
-    <bool>false</bool>
-   </property>
-   <property name="visibilityVar">
-    <string/>
-   </property>
-   <property name="bgColor">
-    <color>
-     <red>0</red>
-     <green>0</green>
-     <blue>0</blue>
-    </color>
-   </property>
-   <property name="borderColor">
-    <color>
-     <red>255</red>
-     <green>255</green>
-     <blue>255</blue>
-    </color>
-   </property>
-   <property name="fontColor">
-    <color>
-     <red>255</red>
-     <green>0</green>
-     <blue>0</blue>
-    </color>
-   </property>
-   <property name="borderWidth">
-    <number>0</number>
-   </property>
-   <property name="borderRadius">
-    <number>0</number>
-   </property>
-  </widget>
-  <widget class="ATCMlabel" name="atcmLabel_3">
-   <property name="enabled">
-    <bool>true</bool>
-   </property>
-   <property name="geometry">
-    <rect>
-     <x>650</x>
-     <y>400</y>
-     <width>59</width>
-     <height>40</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>DejaVu Sans Mono</family>
-     <pointsize>11</pointsize>
-     <weight>75</weight>
-     <bold>true</bold>
-    </font>
-   </property>
-   <property name="text">
-    <string>NN.N</string>
-   </property>
-   <property name="toolTip">
-    <string>MPT91_Set_point</string>
-   </property>
-   <property name="whatsThis">
-    <string>ATCMlabel widget</string>
-   </property>
-   <property name="variable">
-    <string>MPT91_Set_point</string>
-   </property>
-   <property name="prefix">
-    <string/>
-   </property>
-   <property name="suffix">
-    <string/>
-   </property>
-   <property name="refresh">
-    <number>200</number>
-   </property>
-   <property name="max">
-    <string notr="true">0</string>
-   </property>
-   <property name="min">
-    <string notr="true">0</string>
-   </property>
-   <property name="viewStatus">
-    <bool>false</bool>
-   </property>
-   <property name="visibilityVar">
-    <string/>
-   </property>
-   <property name="bgColor">
-    <color>
-     <red>0</red>
-     <green>0</green>
-     <blue>0</blue>
-    </color>
-   </property>
-   <property name="borderColor">
-    <color>
-     <red>255</red>
-     <green>255</green>
-     <blue>255</blue>
-    </color>
-   </property>
-   <property name="fontColor">
-    <color>
-     <red>0</red>
-     <green>255</green>
-     <blue>0</blue>
-    </color>
-   </property>
-   <property name="borderWidth">
-    <number>0</number>
-   </property>
-   <property name="borderRadius">
-    <number>0</number>
-   </property>
-   <property name="apparence">
-    <enum>QFrame::Plain</enum>
-   </property>
-  </widget>
-  <widget class="ATCMcombobox" name="atcmComboBox">
-   <property name="enabled">
-    <bool>false</bool>
-   </property>
-   <property name="geometry">
-    <rect>
-     <x>624</x>
-     <y>400</y>
-     <width>29</width>
-     <height>40</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>DejaVu Sans Mono</family>
-     <pointsize>11</pointsize>
-     <weight>75</weight>
-     <bold>true</bold>
-    </font>
-   </property>
-   <property name="toolTip">
-    <string>MPT91_Scala</string>
-   </property>
-   <property name="whatsThis">
-    <string>ATCMcombobox widget</string>
-   </property>
-   <property name="variable">
-    <string>MPT91_Scala</string>
-   </property>
-   <property name="refresh">
-    <number>200</number>
-   </property>
-   <property name="viewStatus">
-    <bool>false</bool>
-   </property>
-   <property name="writeAcknowledge">
-    <bool>false</bool>
-   </property>
-   <property name="visibilityVar">
-    <string/>
-   </property>
-   <property name="bgColor">
-    <color>
-     <red>0</red>
-     <green>0</green>
-     <blue>0</blue>
-    </color>
-   </property>
-   <property name="borderColor">
-    <color>
-     <red>255</red>
-     <green>255</green>
-     <blue>255</blue>
-    </color>
-   </property>
-   <property name="fontColor">
-    <color>
-     <red>255</red>
-     <green>0</green>
-     <blue>0</blue>
-    </color>
-   </property>
-   <property name="borderWidth">
-    <number>0</number>
-   </property>
-   <property name="borderRadius">
-    <number>0</number>
-   </property>
-   <property name="mapping">
-    <string>0;°C;1;°F</string>
-   </property>
-  </widget>
   <widget class="ATCMled" name="atcmLed_9">
    <property name="geometry">
     <rect>
-     <x>271</x>
+     <x>272</x>
      <y>328</y>
      <width>24</width>
      <height>24</height>
@@ -462,48 +138,6 @@ background-color: rgb(0, 0, 0);
    </property>
    <property name="variable">
     <string>XX_DigIn_2</string>
-   </property>
-   <property name="refresh">
-    <number>500</number>
-   </property>
-   <property name="viewStatus">
-    <bool>false</bool>
-   </property>
-   <property name="visibilityVar">
-    <string/>
-   </property>
-   <property name="onIcon">
-    <iconset resource="resources.qrc">
-     <normaloff>:/icons/icons/LedOn_chiaro.png</normaloff>:/icons/icons/LedOn_chiaro.png</iconset>
-   </property>
-   <property name="offIcon">
-    <iconset resource="resources.qrc">
-     <normaloff>:/icons/icons/LedOff_scuro.png</normaloff>:/icons/icons/LedOff_scuro.png</iconset>
-   </property>
-  </widget>
-  <widget class="ATCMled" name="atcmLed_18">
-   <property name="geometry">
-    <rect>
-     <x>354</x>
-     <y>328</y>
-     <width>24</width>
-     <height>24</height>
-    </rect>
-   </property>
-   <property name="toolTip">
-    <string>XX_DigIn_6</string>
-   </property>
-   <property name="whatsThis">
-    <string>ATCMled widget</string>
-   </property>
-   <property name="font">
-    <font>
-     <family>DejaVu Sans</family>
-     <pointsize>8</pointsize>
-    </font>
-   </property>
-   <property name="variable">
-    <string>XX_DigIn_6</string>
    </property>
    <property name="refresh">
     <number>500</number>
@@ -526,7 +160,7 @@ background-color: rgb(0, 0, 0);
   <widget class="ATCMled" name="atcmLed_12">
    <property name="geometry">
     <rect>
-     <x>271</x>
+     <x>272</x>
      <y>248</y>
      <width>24</width>
      <height>24</height>
@@ -565,52 +199,10 @@ background-color: rgb(0, 0, 0);
      <normaloff>:/icons/icons/LedOff_scuro.png</normaloff>:/icons/icons/LedOff_scuro.png</iconset>
    </property>
   </widget>
-  <widget class="ATCMled" name="atcmLed_17">
-   <property name="geometry">
-    <rect>
-     <x>354</x>
-     <y>288</y>
-     <width>24</width>
-     <height>24</height>
-    </rect>
-   </property>
-   <property name="toolTip">
-    <string>XX_DigIn_7</string>
-   </property>
-   <property name="whatsThis">
-    <string>ATCMled widget</string>
-   </property>
-   <property name="font">
-    <font>
-     <family>DejaVu Sans</family>
-     <pointsize>8</pointsize>
-    </font>
-   </property>
-   <property name="variable">
-    <string>XX_DigIn_7</string>
-   </property>
-   <property name="refresh">
-    <number>500</number>
-   </property>
-   <property name="viewStatus">
-    <bool>false</bool>
-   </property>
-   <property name="visibilityVar">
-    <string/>
-   </property>
-   <property name="onIcon">
-    <iconset resource="resources.qrc">
-     <normaloff>:/icons/icons/LedOn_chiaro.png</normaloff>:/icons/icons/LedOn_chiaro.png</iconset>
-   </property>
-   <property name="offIcon">
-    <iconset resource="resources.qrc">
-     <normaloff>:/icons/icons/LedOff_scuro.png</normaloff>:/icons/icons/LedOff_scuro.png</iconset>
-   </property>
-  </widget>
   <widget class="ATCMled" name="atcmLed_11">
    <property name="geometry">
     <rect>
-     <x>271</x>
+     <x>272</x>
      <y>288</y>
      <width>24</width>
      <height>24</height>
@@ -630,48 +222,6 @@ background-color: rgb(0, 0, 0);
    </property>
    <property name="variable">
     <string>XX_DigIn_3</string>
-   </property>
-   <property name="refresh">
-    <number>500</number>
-   </property>
-   <property name="viewStatus">
-    <bool>false</bool>
-   </property>
-   <property name="visibilityVar">
-    <string/>
-   </property>
-   <property name="onIcon">
-    <iconset resource="resources.qrc">
-     <normaloff>:/icons/icons/LedOn_chiaro.png</normaloff>:/icons/icons/LedOn_chiaro.png</iconset>
-   </property>
-   <property name="offIcon">
-    <iconset resource="resources.qrc">
-     <normaloff>:/icons/icons/LedOff_scuro.png</normaloff>:/icons/icons/LedOff_scuro.png</iconset>
-   </property>
-  </widget>
-  <widget class="ATCMled" name="atcmLed_19">
-   <property name="geometry">
-    <rect>
-     <x>354</x>
-     <y>407</y>
-     <width>24</width>
-     <height>24</height>
-    </rect>
-   </property>
-   <property name="toolTip">
-    <string>XX_DigIn_5</string>
-   </property>
-   <property name="whatsThis">
-    <string>ATCMled widget</string>
-   </property>
-   <property name="font">
-    <font>
-     <family>DejaVu Sans</family>
-     <pointsize>8</pointsize>
-    </font>
-   </property>
-   <property name="variable">
-    <string>XX_DigIn_5</string>
    </property>
    <property name="refresh">
     <number>500</number>
@@ -694,7 +244,7 @@ background-color: rgb(0, 0, 0);
   <widget class="ATCMled" name="atcmLed_10">
    <property name="geometry">
     <rect>
-     <x>271</x>
+     <x>272</x>
      <y>408</y>
      <width>24</width>
      <height>24</height>
@@ -733,48 +283,6 @@ background-color: rgb(0, 0, 0);
      <normaloff>:/icons/icons/LedOff_scuro.png</normaloff>:/icons/icons/LedOff_scuro.png</iconset>
    </property>
   </widget>
-  <widget class="ATCMled" name="atcmLed_20">
-   <property name="geometry">
-    <rect>
-     <x>354</x>
-     <y>248</y>
-     <width>24</width>
-     <height>24</height>
-    </rect>
-   </property>
-   <property name="toolTip">
-    <string>XX_DigIn_8</string>
-   </property>
-   <property name="whatsThis">
-    <string>ATCMled widget</string>
-   </property>
-   <property name="font">
-    <font>
-     <family>DejaVu Sans</family>
-     <pointsize>8</pointsize>
-    </font>
-   </property>
-   <property name="variable">
-    <string>XX_DigIn_8</string>
-   </property>
-   <property name="refresh">
-    <number>500</number>
-   </property>
-   <property name="viewStatus">
-    <bool>false</bool>
-   </property>
-   <property name="visibilityVar">
-    <string/>
-   </property>
-   <property name="onIcon">
-    <iconset resource="resources.qrc">
-     <normaloff>:/icons/icons/LedOn_chiaro.png</normaloff>:/icons/icons/LedOn_chiaro.png</iconset>
-   </property>
-   <property name="offIcon">
-    <iconset resource="resources.qrc">
-     <normaloff>:/icons/icons/LedOff_scuro.png</normaloff>:/icons/icons/LedOff_scuro.png</iconset>
-   </property>
-  </widget>
   <widget class="ATCMlabel" name="atcmLabel_15">
    <property name="enabled">
     <bool>false</bool>
@@ -790,13 +298,13 @@ background-color: rgb(0, 0, 0);
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>11</pointsize>
+     <pointsize>10</pointsize>
      <weight>75</weight>
      <bold>true</bold>
     </font>
    </property>
    <property name="text">
-    <string>-NNN.N</string>
+    <string>-NN.N</string>
    </property>
    <property name="styleSheet">
     <string notr="true">color: rgb(0, 85, 0);</string>
@@ -858,7 +366,7 @@ background-color: rgb(0, 0, 0);
    </property>
    <property name="geometry">
     <rect>
-     <x>566</x>
+     <x>570</x>
      <y>280</y>
      <width>234</width>
      <height>40</height>
@@ -867,13 +375,13 @@ background-color: rgb(0, 0, 0);
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>11</pointsize>
+     <pointsize>10</pointsize>
      <weight>75</weight>
      <bold>true</bold>
     </font>
    </property>
    <property name="text">
-    <string>-NNN.N</string>
+    <string>-NN.N</string>
    </property>
    <property name="styleSheet">
     <string notr="true">color: rgb(0, 85, 0);</string>
@@ -944,13 +452,13 @@ background-color: rgb(0, 0, 0);
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>11</pointsize>
+     <pointsize>10</pointsize>
      <weight>75</weight>
      <bold>true</bold>
     </font>
    </property>
    <property name="text">
-    <string>-NNN.N</string>
+    <string>-NN.N</string>
    </property>
    <property name="styleSheet">
     <string notr="true">color: rgb(0, 85, 0);</string>
@@ -1021,13 +529,13 @@ background-color: rgb(0, 0, 0);
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>11</pointsize>
+     <pointsize>10</pointsize>
      <weight>75</weight>
      <bold>true</bold>
     </font>
    </property>
    <property name="text">
-    <string>-NNN.N</string>
+    <string>-NN.N</string>
    </property>
    <property name="styleSheet">
     <string notr="true">color: rgb(0, 85, 0);</string>
@@ -1098,14 +606,14 @@ background-color: rgb(0, 0, 0);
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>11</pointsize>
+     <pointsize>10</pointsize>
      <weight>75</weight>
      <italic>false</italic>
      <bold>true</bold>
     </font>
    </property>
    <property name="text">
-    <string>-NNN.N</string>
+    <string>-NN.N</string>
    </property>
    <property name="styleSheet">
     <string notr="true">color: rgb(0, 85, 0);</string>
@@ -1142,9 +650,9 @@ background-color: rgb(0, 0, 0);
    </property>
    <property name="bgColor">
     <color>
-     <red>0</red>
-     <green>255</green>
-     <blue>255</blue>
+     <red>64</red>
+     <green>64</green>
+     <blue>64</blue>
     </color>
    </property>
    <property name="borderColor">
@@ -1156,9 +664,9 @@ background-color: rgb(0, 0, 0);
    </property>
    <property name="fontColor">
     <color>
-     <red>64</red>
-     <green>64</green>
-     <blue>64</blue>
+     <red>0</red>
+     <green>255</green>
+     <blue>255</blue>
     </color>
    </property>
    <property name="borderWidth">
@@ -1183,13 +691,13 @@ background-color: rgb(0, 0, 0);
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>11</pointsize>
+     <pointsize>10</pointsize>
      <weight>75</weight>
      <bold>true</bold>
     </font>
    </property>
    <property name="text">
-    <string>-NNN.N</string>
+    <string>-NN.N</string>
    </property>
    <property name="styleSheet">
     <string notr="true">color: rgb(0, 85, 0);</string>
@@ -1226,16 +734,16 @@ background-color: rgb(0, 0, 0);
    </property>
    <property name="bgColor">
     <color>
-     <red>0</red>
-     <green>170</green>
-     <blue>255</blue>
+     <red>32</red>
+     <green>32</green>
+     <blue>32</blue>
     </color>
    </property>
    <property name="fontColor">
     <color>
      <red>0</red>
-     <green>32</green>
-     <blue>32</blue>
+     <green>170</green>
+     <blue>255</blue>
     </color>
    </property>
    <property name="borderWidth">
@@ -1251,7 +759,7 @@ background-color: rgb(0, 0, 0);
    </property>
    <property name="geometry">
     <rect>
-     <x>566</x>
+     <x>570</x>
      <y>240</y>
      <width>234</width>
      <height>40</height>
@@ -1260,14 +768,14 @@ background-color: rgb(0, 0, 0);
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>11</pointsize>
+     <pointsize>10</pointsize>
      <weight>75</weight>
      <italic>false</italic>
      <bold>true</bold>
     </font>
    </property>
    <property name="text">
-    <string>-NNN.N</string>
+    <string>-NN.N</string>
    </property>
    <property name="styleSheet">
     <string notr="true">color: rgb(0, 85, 0);</string>
@@ -1304,9 +812,9 @@ background-color: rgb(0, 0, 0);
    </property>
    <property name="bgColor">
     <color>
-     <red>0</red>
-     <green>170</green>
-     <blue>255</blue>
+     <red>32</red>
+     <green>32</green>
+     <blue>32</blue>
     </color>
    </property>
    <property name="borderColor">
@@ -1318,9 +826,9 @@ background-color: rgb(0, 0, 0);
    </property>
    <property name="fontColor">
     <color>
-     <red>32</red>
-     <green>32</green>
-     <blue>32</blue>
+     <red>0</red>
+     <green>170</green>
+     <blue>255</blue>
     </color>
    </property>
    <property name="borderWidth">
@@ -1336,7 +844,7 @@ background-color: rgb(0, 0, 0);
    </property>
    <property name="geometry">
     <rect>
-     <x>566</x>
+     <x>570</x>
      <y>320</y>
      <width>234</width>
      <height>40</height>
@@ -1345,13 +853,13 @@ background-color: rgb(0, 0, 0);
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>11</pointsize>
+     <pointsize>10</pointsize>
      <weight>75</weight>
      <bold>true</bold>
     </font>
    </property>
    <property name="text">
-    <string>-NNN.N</string>
+    <string>-NN.N</string>
    </property>
    <property name="styleSheet">
     <string notr="true">color: rgb(0, 85, 0);</string>
@@ -1413,7 +921,7 @@ background-color: rgb(0, 0, 0);
    </property>
    <property name="geometry">
     <rect>
-     <x>566</x>
+     <x>570</x>
      <y>360</y>
      <width>234</width>
      <height>40</height>
@@ -1422,14 +930,14 @@ background-color: rgb(0, 0, 0);
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>11</pointsize>
+     <pointsize>10</pointsize>
      <weight>75</weight>
      <italic>false</italic>
      <bold>true</bold>
     </font>
    </property>
    <property name="text">
-    <string>-NNN.N</string>
+    <string>-NN.N</string>
    </property>
    <property name="styleSheet">
     <string notr="true">color: rgb(0, 85, 0);</string>
@@ -1467,8 +975,8 @@ background-color: rgb(0, 0, 0);
    <property name="bgColor">
     <color>
      <red>0</red>
-     <green>85</green>
-     <blue>255</blue>
+     <green>0</green>
+     <blue>0</blue>
     </color>
    </property>
    <property name="borderColor">
@@ -1481,8 +989,8 @@ background-color: rgb(0, 0, 0);
    <property name="fontColor">
     <color>
      <red>0</red>
-     <green>0</green>
-     <blue>0</blue>
+     <green>85</green>
+     <blue>255</blue>
     </color>
    </property>
    <property name="borderWidth">
@@ -1944,14 +1452,14 @@ background-color: rgb(0, 0, 0);
    </property>
    <property name="bgColor">
     <color>
-     <red>0</red>
-     <green>0</green>
-     <blue>0</blue>
+     <red>32</red>
+     <green>32</green>
+     <blue>32</blue>
     </color>
    </property>
    <property name="fontColor">
     <color>
-     <red>0</red>
+     <red>255</red>
      <green>255</green>
      <blue>0</blue>
     </color>
@@ -2264,16 +1772,16 @@ background-color: rgb(0, 0, 0);
    </property>
    <property name="bgColor">
     <color>
-     <red>32</red>
-     <green>32</green>
-     <blue>32</blue>
+     <red>0</red>
+     <green>0</green>
+     <blue>0</blue>
     </color>
    </property>
    <property name="fontColor">
     <color>
-     <red>85</red>
-     <green>85</green>
-     <blue>255</blue>
+     <red>0</red>
+     <green>255</green>
+     <blue>0</blue>
     </color>
    </property>
    <property name="borderWidth">
@@ -2689,9 +2197,9 @@ background-color: rgb(0, 0, 0);
    </property>
    <property name="bgColor">
     <color>
-     <red>0</red>
-     <green>0</green>
-     <blue>0</blue>
+     <red>32</red>
+     <green>32</green>
+     <blue>32</blue>
     </color>
    </property>
    <property name="borderColor">
@@ -2703,7 +2211,7 @@ background-color: rgb(0, 0, 0);
    </property>
    <property name="fontColor">
     <color>
-     <red>85</red>
+     <red>255</red>
      <green>255</green>
      <blue>0</blue>
     </color>
@@ -2806,14 +2314,14 @@ background-color: rgb(0, 0, 0);
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>10</pointsize>
+     <pointsize>11</pointsize>
     </font>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: rgb(0,0,0);color: rgb(0,255,0);</string>
+    <string notr="true">background-color: rgb(32,32,32);color: rgb(255,255,0);</string>
    </property>
    <property name="text">
-    <string>CALDAIA (PUFFER)</string>
+    <string>PUFFER</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -2908,16 +2416,16 @@ background-color: rgb(0, 0, 0);
    </property>
    <property name="bgColor">
     <color>
-     <red>32</red>
-     <green>32</green>
-     <blue>32</blue>
+     <red>0</red>
+     <green>0</green>
+     <blue>0</blue>
     </color>
    </property>
    <property name="fontColor">
     <color>
-     <red>85</red>
-     <green>85</green>
-     <blue>255</blue>
+     <red>0</red>
+     <green>255</green>
+     <blue>0</blue>
     </color>
    </property>
    <property name="borderWidth">
@@ -3622,14 +3130,14 @@ background-color: rgb(0, 0, 0);
    </property>
    <property name="bgColor">
     <color>
-     <red>0</red>
-     <green>0</green>
-     <blue>0</blue>
+     <red>32</red>
+     <green>32</green>
+     <blue>32</blue>
     </color>
    </property>
    <property name="fontColor">
     <color>
-     <red>0</red>
+     <red>255</red>
      <green>255</green>
      <blue>0</blue>
     </color>
@@ -3712,90 +3220,6 @@ background-color: rgb(0, 0, 0);
      <red>0</red>
      <green>255</green>
      <blue>255</blue>
-    </color>
-   </property>
-   <property name="borderWidth">
-    <number>0</number>
-   </property>
-   <property name="borderRadius">
-    <number>0</number>
-   </property>
-   <property name="apparence">
-    <enum>QFrame::Plain</enum>
-   </property>
-  </widget>
-  <widget class="ATCMlabel" name="atcmLabel_4">
-   <property name="enabled">
-    <bool>true</bool>
-   </property>
-   <property name="geometry">
-    <rect>
-     <x>710</x>
-     <y>400</y>
-     <width>29</width>
-     <height>40</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>DejaVu Sans Mono</family>
-     <pointsize>8</pointsize>
-     <weight>75</weight>
-     <bold>true</bold>
-    </font>
-   </property>
-   <property name="text">
-    <string>N.N</string>
-   </property>
-   <property name="toolTip">
-    <string>MPT91_Isteresi_OnOff</string>
-   </property>
-   <property name="whatsThis">
-    <string>ATCMlabel widget</string>
-   </property>
-   <property name="variable">
-    <string>MPT91_Isteresi_OnOff</string>
-   </property>
-   <property name="prefix">
-    <string>±</string>
-   </property>
-   <property name="suffix">
-    <string/>
-   </property>
-   <property name="refresh">
-    <number>200</number>
-   </property>
-   <property name="max">
-    <string notr="true">0</string>
-   </property>
-   <property name="min">
-    <string notr="true">0</string>
-   </property>
-   <property name="viewStatus">
-    <bool>false</bool>
-   </property>
-   <property name="visibilityVar">
-    <string/>
-   </property>
-   <property name="bgColor">
-    <color>
-     <red>0</red>
-     <green>0</green>
-     <blue>0</blue>
-    </color>
-   </property>
-   <property name="borderColor">
-    <color>
-     <red>255</red>
-     <green>255</green>
-     <blue>255</blue>
-    </color>
-   </property>
-   <property name="fontColor">
-    <color>
-     <red>0</red>
-     <green>255</green>
-     <blue>0</blue>
     </color>
    </property>
    <property name="borderWidth">
@@ -4006,14 +3430,14 @@ color: rgb(255, 255, 255);</string>
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>12</pointsize>
+     <pointsize>11</pointsize>
      <weight>75</weight>
      <bold>true</bold>
     </font>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: rgb(32,32,32);
-color: rgb(85, 85, 255);</string>
+    <string notr="true">background-color: rgb(0,0,0);
+color: rgb(0,255,0);</string>
    </property>
    <property name="text">
     <string>UPS</string>
@@ -4028,7 +3452,7 @@ color: rgb(85, 85, 255);</string>
   <widget class="Line" name="line_2">
    <property name="geometry">
     <rect>
-     <x>-1</x>
+     <x>0</x>
      <y>80</y>
      <width>567</width>
      <height>3</height>
@@ -4075,7 +3499,7 @@ color: rgb(85, 85, 255);</string>
      <x>566</x>
      <y>0</y>
      <width>3</width>
-     <height>440</height>
+     <height>480</height>
     </rect>
    </property>
    <property name="font">
@@ -4293,83 +3717,6 @@ color: rgb(85, 85, 255);</string>
     <enum>Qt::Horizontal</enum>
    </property>
   </widget>
-  <widget class="ATCMlabel" name="atcmLabel_20">
-   <property name="enabled">
-    <bool>false</bool>
-   </property>
-   <property name="geometry">
-    <rect>
-     <x>741</x>
-     <y>400</y>
-     <width>59</width>
-     <height>40</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>DejaVu Sans Mono</family>
-     <pointsize>11</pointsize>
-     <weight>75</weight>
-     <bold>true</bold>
-    </font>
-   </property>
-   <property name="text">
-    <string>NN.N</string>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">color: rgb(0, 85, 0);</string>
-   </property>
-   <property name="toolTip">
-    <string>XX_AnIn_A_4</string>
-   </property>
-   <property name="whatsThis">
-    <string>ATCMlabel widget</string>
-   </property>
-   <property name="variable">
-    <string>XX_AnIn_A_4</string>
-   </property>
-   <property name="prefix">
-    <string/>
-   </property>
-   <property name="suffix">
-    <string/>
-   </property>
-   <property name="refresh">
-    <number>200</number>
-   </property>
-   <property name="max">
-    <string>0</string>
-   </property>
-   <property name="min">
-    <string>0</string>
-   </property>
-   <property name="viewStatus">
-    <bool>false</bool>
-   </property>
-   <property name="visibilityVar">
-    <string/>
-   </property>
-   <property name="bgColor">
-    <color>
-     <red>0</red>
-     <green>255</green>
-     <blue>0</blue>
-    </color>
-   </property>
-   <property name="fontColor">
-    <color>
-     <red>0</red>
-     <green>0</green>
-     <blue>0</blue>
-    </color>
-   </property>
-   <property name="borderWidth">
-    <number>0</number>
-   </property>
-   <property name="borderRadius">
-    <number>0</number>
-   </property>
-  </widget>
   <widget class="ATCMlabel" name="atcmLabel_59">
    <property name="enabled">
     <bool>false</bool>
@@ -4428,16 +3775,16 @@ color: rgb(85, 85, 255);</string>
    </property>
    <property name="bgColor">
     <color>
-     <red>32</red>
-     <green>32</green>
-     <blue>32</blue>
+     <red>0</red>
+     <green>0</green>
+     <blue>0</blue>
     </color>
    </property>
    <property name="fontColor">
     <color>
-     <red>85</red>
-     <green>85</green>
-     <blue>255</blue>
+     <red>0</red>
+     <green>255</green>
+     <blue>0</blue>
     </color>
    </property>
    <property name="borderWidth">
@@ -4527,100 +3874,6 @@ color: rgb(85, 85, 255);</string>
     <number>0</number>
    </property>
   </widget>
-  <widget class="ATCMlabel" name="atcmLabel">
-   <property name="enabled">
-    <bool>false</bool>
-   </property>
-   <property name="geometry">
-    <rect>
-     <x>665</x>
-     <y>440</y>
-     <width>133</width>
-     <height>40</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>DejaVu Sans Mono</family>
-     <pointsize>9</pointsize>
-    </font>
-   </property>
-   <property name="text">
-    <string>86400,00</string>
-   </property>
-   <property name="toolTip">
-    <string>PLC_time</string>
-   </property>
-   <property name="whatsThis">
-    <string>ATCMlabel widget</string>
-   </property>
-   <property name="variable">
-    <string>PLC_time</string>
-   </property>
-   <property name="suffix">
-    <string> s</string>
-   </property>
-   <property name="refresh">
-    <number>200</number>
-   </property>
-   <property name="max">
-    <string notr="true">0</string>
-   </property>
-   <property name="min">
-    <string notr="true">0</string>
-   </property>
-   <property name="viewStatus">
-    <bool>false</bool>
-   </property>
-   <property name="visibilityVar">
-    <string/>
-   </property>
-   <property name="bgColor">
-    <color>
-     <red>0</red>
-     <green>0</green>
-     <blue>0</blue>
-    </color>
-   </property>
-   <property name="fontColor">
-    <color>
-     <red>255</red>
-     <green>170</green>
-     <blue>0</blue>
-    </color>
-   </property>
-   <property name="borderWidth">
-    <number>0</number>
-   </property>
-   <property name="borderRadius">
-    <number>0</number>
-   </property>
-   <property name="apparence">
-    <enum>QFrame::Plain</enum>
-   </property>
-  </widget>
-  <widget class="Line" name="line_4">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>440</y>
-     <width>800</width>
-     <height>3</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>DejaVu Sans</family>
-     <pointsize>8</pointsize>
-    </font>
-   </property>
-   <property name="styleSheet">
-    <string notr="true"/>
-   </property>
-   <property name="orientation">
-    <enum>Qt::Horizontal</enum>
-   </property>
-  </widget>
   <widget class="Line" name="line_7">
    <property name="geometry">
     <rect>
@@ -4646,16 +3899,16 @@ color: rgb(85, 85, 255);</string>
   <widget class="ATCMbutton" name="atcmButton_2">
    <property name="geometry">
     <rect>
-     <x>266</x>
+     <x>722</x>
      <y>440</y>
-     <width>133</width>
+     <width>78</width>
      <height>40</height>
     </rect>
    </property>
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>10</pointsize>
+     <pointsize>8</pointsize>
     </font>
    </property>
    <property name="iconSize">
@@ -4729,9 +3982,9 @@ color: rgb(85, 85, 255);</string>
   <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
-     <x>133</x>
+     <x>644</x>
      <y>440</y>
-     <width>133</width>
+     <width>78</width>
      <height>40</height>
     </rect>
    </property>
@@ -4750,201 +4003,6 @@ color: rgb(0, 0, 0);</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>
-   </property>
-  </widget>
-  <widget class="ATCMbutton" name="atcmButton_10">
-   <property name="geometry">
-    <rect>
-     <x>644</x>
-     <y>0</y>
-     <width>78</width>
-     <height>40</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>DejaVu Sans</family>
-     <pointsize>8</pointsize>
-    </font>
-   </property>
-   <property name="checkable">
-    <bool>true</bool>
-   </property>
-   <property name="toolTip">
-    <string>is_TUN0_ON</string>
-   </property>
-   <property name="whatsThis">
-    <string>ATCMbutton widget</string>
-   </property>
-   <property name="pageName">
-    <string notr="true"/>
-   </property>
-   <property name="passwordVar">
-    <string/>
-   </property>
-   <property name="statusvar">
-    <string>is_TUN0_ON</string>
-   </property>
-   <property name="viewStatus">
-    <bool>false</bool>
-   </property>
-   <property name="visibilityVar">
-    <string/>
-   </property>
-   <property name="bgColor">
-    <color>
-     <red>255</red>
-     <green>0</green>
-     <blue>0</blue>
-    </color>
-   </property>
-   <property name="bgPressColor">
-    <color>
-     <red>0</red>
-     <green>255</green>
-     <blue>0</blue>
-    </color>
-   </property>
-   <property name="text">
-    <string>VPN off</string>
-   </property>
-   <property name="pressText">
-    <string>VPN ON</string>
-   </property>
-   <property name="borderWidth">
-    <number>1</number>
-   </property>
-   <property name="borderRadius">
-    <number>0</number>
-   </property>
-  </widget>
-  <widget class="ATCMbutton" name="atcmButton_8">
-   <property name="geometry">
-    <rect>
-     <x>566</x>
-     <y>0</y>
-     <width>78</width>
-     <height>40</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>DejaVu Sans</family>
-     <pointsize>8</pointsize>
-    </font>
-   </property>
-   <property name="toolTip">
-    <string>is_PPP0_ON</string>
-   </property>
-   <property name="whatsThis">
-    <string>ATCMbutton widget</string>
-   </property>
-   <property name="pageName">
-    <string notr="true"/>
-   </property>
-   <property name="passwordVar">
-    <string/>
-   </property>
-   <property name="statusvar">
-    <string>is_PPP0_ON</string>
-   </property>
-   <property name="viewStatus">
-    <bool>false</bool>
-   </property>
-   <property name="visibilityVar">
-    <string/>
-   </property>
-   <property name="bgColor">
-    <color>
-     <red>255</red>
-     <green>0</green>
-     <blue>0</blue>
-    </color>
-   </property>
-   <property name="bgPressColor">
-    <color>
-     <red>0</red>
-     <green>255</green>
-     <blue>0</blue>
-    </color>
-   </property>
-   <property name="text">
-    <string>PPP off</string>
-   </property>
-   <property name="pressText">
-    <string>PPP ON</string>
-   </property>
-   <property name="borderWidth">
-    <number>1</number>
-   </property>
-   <property name="borderRadius">
-    <number>0</number>
-   </property>
-  </widget>
-  <widget class="ATCMlabel" name="atcmLabel_6">
-   <property name="geometry">
-    <rect>
-     <x>722</x>
-     <y>0</y>
-     <width>78</width>
-     <height>40</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>DejaVu Sans Mono</family>
-     <pointsize>8</pointsize>
-    </font>
-   </property>
-   <property name="text">
-    <string>nnnnn</string>
-   </property>
-   <property name="toolTip">
-    <string>openvpn_restart_times</string>
-   </property>
-   <property name="whatsThis">
-    <string>ATCMlabel widget</string>
-   </property>
-   <property name="variable">
-    <string>openvpn_restart_times</string>
-   </property>
-   <property name="prefix">
-    <string/>
-   </property>
-   <property name="refresh">
-    <number>200</number>
-   </property>
-   <property name="max">
-    <string notr="true">0</string>
-   </property>
-   <property name="min">
-    <string notr="true">0</string>
-   </property>
-   <property name="viewStatus">
-    <bool>false</bool>
-   </property>
-   <property name="visibilityVar">
-    <string/>
-   </property>
-   <property name="bgColor">
-    <color>
-     <red>0</red>
-     <green>255</green>
-     <blue>0</blue>
-    </color>
-   </property>
-   <property name="fontColor">
-    <color>
-     <red>0</red>
-     <green>0</green>
-     <blue>0</blue>
-    </color>
-   </property>
-   <property name="borderWidth">
-    <number>1</number>
-   </property>
-   <property name="borderRadius">
-    <number>0</number>
    </property>
   </widget>
   <widget class="ATCMlabel" name="atcmLabel_71">
@@ -5046,7 +4104,1376 @@ color: rgb(0, 0, 0);</string>
     <enum>Qt::Horizontal</enum>
    </property>
   </widget>
+  <widget class="ATCMled" name="atcmLed_21">
+   <property name="geometry">
+    <rect>
+     <x>574</x>
+     <y>130</y>
+     <width>24</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string/>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMled widget</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+   <property name="variable">
+    <string/>
+   </property>
+   <property name="refresh">
+    <number>500</number>
+   </property>
+   <property name="viewStatus">
+    <bool>false</bool>
+   </property>
+   <property name="visibilityVar">
+    <string/>
+   </property>
+   <property name="onIcon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/icons/icons/LedOn_chiaro.png</normaloff>:/icons/icons/LedOn_chiaro.png</iconset>
+   </property>
+   <property name="offIcon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/icons/icons/LedOff_scuro.png</normaloff>:/icons/icons/LedOff_scuro.png</iconset>
+   </property>
+  </widget>
+  <widget class="ATCMled" name="atcmLed_22">
+   <property name="geometry">
+    <rect>
+     <x>574</x>
+     <y>210</y>
+     <width>24</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string/>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMled widget</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+   <property name="variable">
+    <string/>
+   </property>
+   <property name="refresh">
+    <number>500</number>
+   </property>
+   <property name="viewStatus">
+    <bool>false</bool>
+   </property>
+   <property name="visibilityVar">
+    <string/>
+   </property>
+   <property name="onIcon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/icons/icons/LedOn_chiaro.png</normaloff>:/icons/icons/LedOn_chiaro.png</iconset>
+   </property>
+   <property name="offIcon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/icons/icons/LedOff_scuro.png</normaloff>:/icons/icons/LedOff_scuro.png</iconset>
+   </property>
+  </widget>
+  <widget class="ATCMled" name="atcmLed_23">
+   <property name="geometry">
+    <rect>
+     <x>574</x>
+     <y>250</y>
+     <width>24</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string/>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMled widget</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+   <property name="variable">
+    <string/>
+   </property>
+   <property name="refresh">
+    <number>500</number>
+   </property>
+   <property name="viewStatus">
+    <bool>false</bool>
+   </property>
+   <property name="visibilityVar">
+    <string/>
+   </property>
+   <property name="onIcon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/icons/icons/LedOn_chiaro.png</normaloff>:/icons/icons/LedOn_chiaro.png</iconset>
+   </property>
+   <property name="offIcon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/icons/icons/LedOff_scuro.png</normaloff>:/icons/icons/LedOff_scuro.png</iconset>
+   </property>
+  </widget>
+  <widget class="ATCMled" name="atcmLed_24">
+   <property name="geometry">
+    <rect>
+     <x>574</x>
+     <y>370</y>
+     <width>24</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string/>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMled widget</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+   <property name="variable">
+    <string/>
+   </property>
+   <property name="refresh">
+    <number>500</number>
+   </property>
+   <property name="viewStatus">
+    <bool>false</bool>
+   </property>
+   <property name="visibilityVar">
+    <string/>
+   </property>
+   <property name="onIcon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/icons/icons/LedOn_chiaro.png</normaloff>:/icons/icons/LedOn_chiaro.png</iconset>
+   </property>
+   <property name="offIcon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/icons/icons/LedOff_scuro.png</normaloff>:/icons/icons/LedOff_scuro.png</iconset>
+   </property>
+  </widget>
+  <widget class="ATCMbutton" name="atcmButton_7">
+   <property name="geometry">
+    <rect>
+     <x>436</x>
+     <y>402</y>
+     <width>38</width>
+     <height>38</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+   <property name="toolTip">
+    <string/>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMbutton widget</string>
+   </property>
+   <property name="pageName">
+    <string notr="true">trend_caldaia</string>
+   </property>
+   <property name="statusvar">
+    <string notr="true"/>
+   </property>
+   <property name="viewStatus">
+    <bool>false</bool>
+   </property>
+   <property name="visibilityVar">
+    <string notr="true"/>
+   </property>
+   <property name="bgColor">
+    <color>
+     <red>0</red>
+     <green>0</green>
+     <blue>0</blue>
+    </color>
+   </property>
+   <property name="borderColor">
+    <color>
+     <red>255</red>
+     <green>255</green>
+     <blue>255</blue>
+    </color>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pressText">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="systemicons.qrc">
+     <normaloff>:/systemicons/3d_bar_chart.png</normaloff>:/systemicons/3d_bar_chart.png</iconset>
+   </property>
+   <property name="borderWidth">
+    <number>1</number>
+   </property>
+   <property name="borderRadius">
+    <number>20</number>
+   </property>
+   <property name="apparence">
+    <enum>QFrame::Raised</enum>
+   </property>
+  </widget>
+  <widget class="ATCMbutton" name="atcmButton_9">
+   <property name="geometry">
+    <rect>
+     <x>352</x>
+     <y>42</y>
+     <width>38</width>
+     <height>38</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+   <property name="toolTip">
+    <string/>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMbutton widget</string>
+   </property>
+   <property name="pageName">
+    <string notr="true">trend_potenze</string>
+   </property>
+   <property name="statusvar">
+    <string notr="true"/>
+   </property>
+   <property name="viewStatus">
+    <bool>false</bool>
+   </property>
+   <property name="visibilityVar">
+    <string notr="true"/>
+   </property>
+   <property name="bgColor">
+    <color>
+     <red>0</red>
+     <green>0</green>
+     <blue>0</blue>
+    </color>
+   </property>
+   <property name="borderColor">
+    <color>
+     <red>255</red>
+     <green>255</green>
+     <blue>255</blue>
+    </color>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pressText">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="systemicons.qrc">
+     <normaloff>:/systemicons/3d_bar_chart.png</normaloff>:/systemicons/3d_bar_chart.png</iconset>
+   </property>
+   <property name="borderWidth">
+    <number>1</number>
+   </property>
+   <property name="borderRadius">
+    <number>20</number>
+   </property>
+   <property name="apparence">
+    <enum>QFrame::Raised</enum>
+   </property>
+  </widget>
+  <widget class="ATCMbutton" name="atcmButton_11">
+   <property name="geometry">
+    <rect>
+     <x>567</x>
+     <y>42</y>
+     <width>38</width>
+     <height>38</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+   <property name="toolTip">
+    <string/>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMbutton widget</string>
+   </property>
+   <property name="pageName">
+    <string notr="true">trend_piani</string>
+   </property>
+   <property name="statusvar">
+    <string notr="true"/>
+   </property>
+   <property name="viewStatus">
+    <bool>false</bool>
+   </property>
+   <property name="visibilityVar">
+    <string notr="true"/>
+   </property>
+   <property name="bgColor">
+    <color>
+     <red>0</red>
+     <green>0</green>
+     <blue>0</blue>
+    </color>
+   </property>
+   <property name="borderColor">
+    <color>
+     <red>255</red>
+     <green>255</green>
+     <blue>255</blue>
+    </color>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pressText">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="systemicons.qrc">
+     <normaloff>:/systemicons/3d_bar_chart.png</normaloff>:/systemicons/3d_bar_chart.png</iconset>
+   </property>
+   <property name="borderWidth">
+    <number>1</number>
+   </property>
+   <property name="borderRadius">
+    <number>20</number>
+   </property>
+   <property name="apparence">
+    <enum>QFrame::Raised</enum>
+   </property>
+  </widget>
+  <widget class="ATCMbutton" name="atcmButton_12">
+   <property name="geometry">
+    <rect>
+     <x>567</x>
+     <y>161</y>
+     <width>38</width>
+     <height>38</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+   <property name="toolTip">
+    <string/>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMbutton widget</string>
+   </property>
+   <property name="pageName">
+    <string notr="true">trend_termostati</string>
+   </property>
+   <property name="statusvar">
+    <string notr="true"/>
+   </property>
+   <property name="viewStatus">
+    <bool>false</bool>
+   </property>
+   <property name="visibilityVar">
+    <string notr="true"/>
+   </property>
+   <property name="bgColor">
+    <color>
+     <red>0</red>
+     <green>0</green>
+     <blue>0</blue>
+    </color>
+   </property>
+   <property name="borderColor">
+    <color>
+     <red>255</red>
+     <green>255</green>
+     <blue>255</blue>
+    </color>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pressText">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="systemicons.qrc">
+     <normaloff>:/systemicons/3d_bar_chart.png</normaloff>:/systemicons/3d_bar_chart.png</iconset>
+   </property>
+   <property name="borderWidth">
+    <number>1</number>
+   </property>
+   <property name="borderRadius">
+    <number>20</number>
+   </property>
+   <property name="apparence">
+    <enum>QFrame::Raised</enum>
+   </property>
+  </widget>
+  <widget class="ATCMlabel" name="atcmLabel_72">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>580</x>
+     <y>411</y>
+     <width>44</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans Mono</family>
+     <pointsize>11</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>YYYY</string>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(0, 85, 0);</string>
+   </property>
+   <property name="toolTip">
+    <string>PLC_Year</string>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMlabel widget</string>
+   </property>
+   <property name="variable">
+    <string>PLC_Year</string>
+   </property>
+   <property name="prefix">
+    <string/>
+   </property>
+   <property name="suffix">
+    <string/>
+   </property>
+   <property name="refresh">
+    <number>200</number>
+   </property>
+   <property name="max">
+    <string>0</string>
+   </property>
+   <property name="min">
+    <string>0</string>
+   </property>
+   <property name="viewStatus">
+    <bool>false</bool>
+   </property>
+   <property name="visibilityVar">
+    <string/>
+   </property>
+   <property name="bgColor">
+    <color>
+     <red>0</red>
+     <green>0</green>
+     <blue>0</blue>
+    </color>
+   </property>
+   <property name="fontColor">
+    <color>
+     <red>255</red>
+     <green>170</green>
+     <blue>0</blue>
+    </color>
+   </property>
+   <property name="borderWidth">
+    <number>0</number>
+   </property>
+   <property name="borderRadius">
+    <number>0</number>
+   </property>
+  </widget>
+  <widget class="ATCMlabel" name="atcmLabel_73">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>623</x>
+     <y>411</y>
+     <width>33</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans Mono</family>
+     <pointsize>11</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>MM</string>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(0, 85, 0);</string>
+   </property>
+   <property name="toolTip">
+    <string>PLC_Month</string>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMlabel widget</string>
+   </property>
+   <property name="variable">
+    <string>PLC_Month</string>
+   </property>
+   <property name="prefix">
+    <string>-</string>
+   </property>
+   <property name="suffix">
+    <string/>
+   </property>
+   <property name="refresh">
+    <number>200</number>
+   </property>
+   <property name="max">
+    <string>0</string>
+   </property>
+   <property name="min">
+    <string>0</string>
+   </property>
+   <property name="viewStatus">
+    <bool>false</bool>
+   </property>
+   <property name="visibilityVar">
+    <string/>
+   </property>
+   <property name="bgColor">
+    <color>
+     <red>0</red>
+     <green>0</green>
+     <blue>0</blue>
+    </color>
+   </property>
+   <property name="fontColor">
+    <color>
+     <red>255</red>
+     <green>170</green>
+     <blue>0</blue>
+    </color>
+   </property>
+   <property name="borderWidth">
+    <number>0</number>
+   </property>
+   <property name="borderRadius">
+    <number>0</number>
+   </property>
+  </widget>
+  <widget class="ATCMlabel" name="atcmLabel_74">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>656</x>
+     <y>411</y>
+     <width>33</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans Mono</family>
+     <pointsize>11</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>DD</string>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(0, 85, 0);</string>
+   </property>
+   <property name="toolTip">
+    <string>PLC_Day</string>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMlabel widget</string>
+   </property>
+   <property name="variable">
+    <string>PLC_Day</string>
+   </property>
+   <property name="prefix">
+    <string>-</string>
+   </property>
+   <property name="suffix">
+    <string/>
+   </property>
+   <property name="refresh">
+    <number>200</number>
+   </property>
+   <property name="max">
+    <string>0</string>
+   </property>
+   <property name="min">
+    <string>0</string>
+   </property>
+   <property name="viewStatus">
+    <bool>false</bool>
+   </property>
+   <property name="visibilityVar">
+    <string/>
+   </property>
+   <property name="bgColor">
+    <color>
+     <red>0</red>
+     <green>0</green>
+     <blue>0</blue>
+    </color>
+   </property>
+   <property name="fontColor">
+    <color>
+     <red>255</red>
+     <green>170</green>
+     <blue>0</blue>
+    </color>
+   </property>
+   <property name="borderWidth">
+    <number>0</number>
+   </property>
+   <property name="borderRadius">
+    <number>0</number>
+   </property>
+  </widget>
+  <widget class="ATCMlabel" name="atcmLabel_75">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>689</x>
+     <y>411</y>
+     <width>33</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans Mono</family>
+     <pointsize>11</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>hh</string>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(0, 85, 0);</string>
+   </property>
+   <property name="toolTip">
+    <string>PLC_Hours</string>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMlabel widget</string>
+   </property>
+   <property name="variable">
+    <string>PLC_Hours</string>
+   </property>
+   <property name="prefix">
+    <string>T</string>
+   </property>
+   <property name="suffix">
+    <string/>
+   </property>
+   <property name="refresh">
+    <number>200</number>
+   </property>
+   <property name="max">
+    <string>0</string>
+   </property>
+   <property name="min">
+    <string>0</string>
+   </property>
+   <property name="viewStatus">
+    <bool>false</bool>
+   </property>
+   <property name="visibilityVar">
+    <string/>
+   </property>
+   <property name="bgColor">
+    <color>
+     <red>0</red>
+     <green>0</green>
+     <blue>0</blue>
+    </color>
+   </property>
+   <property name="fontColor">
+    <color>
+     <red>255</red>
+     <green>170</green>
+     <blue>0</blue>
+    </color>
+   </property>
+   <property name="borderWidth">
+    <number>0</number>
+   </property>
+   <property name="borderRadius">
+    <number>0</number>
+   </property>
+  </widget>
+  <widget class="ATCMlabel" name="atcmLabel_76">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>722</x>
+     <y>411</y>
+     <width>33</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans Mono</family>
+     <pointsize>11</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>mm</string>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(0, 85, 0);</string>
+   </property>
+   <property name="toolTip">
+    <string>PLC_Minutes</string>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMlabel widget</string>
+   </property>
+   <property name="variable">
+    <string>PLC_Minutes</string>
+   </property>
+   <property name="prefix">
+    <string>:</string>
+   </property>
+   <property name="suffix">
+    <string/>
+   </property>
+   <property name="refresh">
+    <number>200</number>
+   </property>
+   <property name="max">
+    <string>0</string>
+   </property>
+   <property name="min">
+    <string>0</string>
+   </property>
+   <property name="viewStatus">
+    <bool>false</bool>
+   </property>
+   <property name="visibilityVar">
+    <string/>
+   </property>
+   <property name="bgColor">
+    <color>
+     <red>0</red>
+     <green>0</green>
+     <blue>0</blue>
+    </color>
+   </property>
+   <property name="fontColor">
+    <color>
+     <red>255</red>
+     <green>170</green>
+     <blue>0</blue>
+    </color>
+   </property>
+   <property name="borderWidth">
+    <number>0</number>
+   </property>
+   <property name="borderRadius">
+    <number>0</number>
+   </property>
+  </widget>
+  <widget class="ATCMlabel" name="atcmLabel_77">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>755</x>
+     <y>411</y>
+     <width>33</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans Mono</family>
+     <pointsize>11</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>ss</string>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(0, 85, 0);</string>
+   </property>
+   <property name="toolTip">
+    <string>PLC_Seconds</string>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMlabel widget</string>
+   </property>
+   <property name="variable">
+    <string>PLC_Seconds</string>
+   </property>
+   <property name="prefix">
+    <string>:</string>
+   </property>
+   <property name="suffix">
+    <string/>
+   </property>
+   <property name="refresh">
+    <number>200</number>
+   </property>
+   <property name="max">
+    <string>0</string>
+   </property>
+   <property name="min">
+    <string>0</string>
+   </property>
+   <property name="viewStatus">
+    <bool>false</bool>
+   </property>
+   <property name="visibilityVar">
+    <string/>
+   </property>
+   <property name="bgColor">
+    <color>
+     <red>0</red>
+     <green>0</green>
+     <blue>0</blue>
+    </color>
+   </property>
+   <property name="fontColor">
+    <color>
+     <red>255</red>
+     <green>170</green>
+     <blue>0</blue>
+    </color>
+   </property>
+   <property name="borderWidth">
+    <number>0</number>
+   </property>
+   <property name="borderRadius">
+    <number>0</number>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_13">
+   <property name="geometry">
+    <rect>
+     <x>266</x>
+     <y>440</y>
+     <width>300</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(0,0,0);
+color: rgb(0, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string>CALDAIA</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+   <property name="margin">
+    <number>7</number>
+   </property>
+  </widget>
+  <widget class="ATCMlabel" name="atcmLabel_20">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>440</y>
+     <width>42</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans Mono</family>
+     <pointsize>11</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>NN.N</string>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(0, 85, 0);</string>
+   </property>
+   <property name="toolTip">
+    <string>XX_AnIn_A_4</string>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMlabel widget</string>
+   </property>
+   <property name="variable">
+    <string>XX_AnIn_A_4</string>
+   </property>
+   <property name="prefix">
+    <string/>
+   </property>
+   <property name="suffix">
+    <string/>
+   </property>
+   <property name="refresh">
+    <number>200</number>
+   </property>
+   <property name="max">
+    <string>0</string>
+   </property>
+   <property name="min">
+    <string>0</string>
+   </property>
+   <property name="viewStatus">
+    <bool>false</bool>
+   </property>
+   <property name="visibilityVar">
+    <string/>
+   </property>
+   <property name="bgColor">
+    <color>
+     <red>0</red>
+     <green>0</green>
+     <blue>0</blue>
+    </color>
+   </property>
+   <property name="fontColor">
+    <color>
+     <red>0</red>
+     <green>255</green>
+     <blue>255</blue>
+    </color>
+   </property>
+   <property name="borderWidth">
+    <number>0</number>
+   </property>
+   <property name="borderRadius">
+    <number>0</number>
+   </property>
+  </widget>
+  <widget class="ATCMcombobox" name="atcmComboBox">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>394</x>
+     <y>400</y>
+     <width>40</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans Mono</family>
+     <pointsize>9</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="toolTip">
+    <string>MPT91_Scala</string>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMcombobox widget</string>
+   </property>
+   <property name="variable">
+    <string>MPT91_Scala</string>
+   </property>
+   <property name="refresh">
+    <number>200</number>
+   </property>
+   <property name="viewStatus">
+    <bool>false</bool>
+   </property>
+   <property name="writeAcknowledge">
+    <bool>false</bool>
+   </property>
+   <property name="visibilityVar">
+    <string/>
+   </property>
+   <property name="bgColor">
+    <color>
+     <red>32</red>
+     <green>32</green>
+     <blue>32</blue>
+    </color>
+   </property>
+   <property name="borderColor">
+    <color>
+     <red>255</red>
+     <green>255</green>
+     <blue>255</blue>
+    </color>
+   </property>
+   <property name="fontColor">
+    <color>
+     <red>255</red>
+     <green>0</green>
+     <blue>0</blue>
+    </color>
+   </property>
+   <property name="borderWidth">
+    <number>0</number>
+   </property>
+   <property name="borderRadius">
+    <number>0</number>
+   </property>
+   <property name="mapping">
+    <string>0;°C;1;°F</string>
+   </property>
+  </widget>
+  <widget class="ATCMlabel" name="atcmLabel_4">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>394</x>
+     <y>420</y>
+     <width>40</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans Mono</family>
+     <pointsize>8</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>N.N</string>
+   </property>
+   <property name="toolTip">
+    <string>MPT91_Isteresi_OnOff</string>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMlabel widget</string>
+   </property>
+   <property name="variable">
+    <string>MPT91_Isteresi_OnOff</string>
+   </property>
+   <property name="prefix">
+    <string>±</string>
+   </property>
+   <property name="suffix">
+    <string/>
+   </property>
+   <property name="refresh">
+    <number>200</number>
+   </property>
+   <property name="max">
+    <string notr="true">0</string>
+   </property>
+   <property name="min">
+    <string notr="true">0</string>
+   </property>
+   <property name="viewStatus">
+    <bool>false</bool>
+   </property>
+   <property name="visibilityVar">
+    <string/>
+   </property>
+   <property name="bgColor">
+    <color>
+     <red>32</red>
+     <green>32</green>
+     <blue>32</blue>
+    </color>
+   </property>
+   <property name="borderColor">
+    <color>
+     <red>255</red>
+     <green>255</green>
+     <blue>255</blue>
+    </color>
+   </property>
+   <property name="fontColor">
+    <color>
+     <red>0</red>
+     <green>255</green>
+     <blue>0</blue>
+    </color>
+   </property>
+   <property name="borderWidth">
+    <number>0</number>
+   </property>
+   <property name="borderRadius">
+    <number>0</number>
+   </property>
+   <property name="apparence">
+    <enum>QFrame::Plain</enum>
+   </property>
+  </widget>
+  <widget class="ATCMlabel" name="atcmLabel_2">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>400</y>
+     <width>44</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans Mono</family>
+     <pointsize>11</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>NN.N</string>
+   </property>
+   <property name="toolTip">
+    <string>MPT91_Temperatura</string>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMlabel widget</string>
+   </property>
+   <property name="variable">
+    <string>MPT91_Temperatura</string>
+   </property>
+   <property name="prefix">
+    <string/>
+   </property>
+   <property name="suffix">
+    <string/>
+   </property>
+   <property name="refresh">
+    <number>200</number>
+   </property>
+   <property name="max">
+    <string notr="true">0</string>
+   </property>
+   <property name="min">
+    <string notr="true">0</string>
+   </property>
+   <property name="viewStatus">
+    <bool>false</bool>
+   </property>
+   <property name="visibilityVar">
+    <string/>
+   </property>
+   <property name="bgColor">
+    <color>
+     <red>32</red>
+     <green>32</green>
+     <blue>32</blue>
+    </color>
+   </property>
+   <property name="borderColor">
+    <color>
+     <red>255</red>
+     <green>255</green>
+     <blue>255</blue>
+    </color>
+   </property>
+   <property name="fontColor">
+    <color>
+     <red>255</red>
+     <green>0</green>
+     <blue>0</blue>
+    </color>
+   </property>
+   <property name="borderWidth">
+    <number>0</number>
+   </property>
+   <property name="borderRadius">
+    <number>0</number>
+   </property>
+  </widget>
+  <widget class="ATCMled" name="atcmLed_25">
+   <property name="geometry">
+    <rect>
+     <x>272</x>
+     <y>450</y>
+     <width>24</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string/>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMled widget</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+   <property name="variable">
+    <string/>
+   </property>
+   <property name="refresh">
+    <number>500</number>
+   </property>
+   <property name="viewStatus">
+    <bool>false</bool>
+   </property>
+   <property name="visibilityVar">
+    <string/>
+   </property>
+   <property name="onIcon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/icons/icons/LedOn_chiaro.png</normaloff>:/icons/icons/LedOn_chiaro.png</iconset>
+   </property>
+   <property name="offIcon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/icons/icons/LedOff_scuro.png</normaloff>:/icons/icons/LedOff_scuro.png</iconset>
+   </property>
+  </widget>
+  <widget class="ATCMlabel" name="atcmLabel_3">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>420</y>
+     <width>44</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans Mono</family>
+     <pointsize>11</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>NN.N</string>
+   </property>
+   <property name="toolTip">
+    <string>MPT91_Set_point</string>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMlabel widget</string>
+   </property>
+   <property name="variable">
+    <string>MPT91_Set_point</string>
+   </property>
+   <property name="prefix">
+    <string/>
+   </property>
+   <property name="suffix">
+    <string/>
+   </property>
+   <property name="refresh">
+    <number>200</number>
+   </property>
+   <property name="max">
+    <string notr="true">0</string>
+   </property>
+   <property name="min">
+    <string notr="true">0</string>
+   </property>
+   <property name="viewStatus">
+    <bool>false</bool>
+   </property>
+   <property name="visibilityVar">
+    <string/>
+   </property>
+   <property name="bgColor">
+    <color>
+     <red>32</red>
+     <green>32</green>
+     <blue>32</blue>
+    </color>
+   </property>
+   <property name="borderColor">
+    <color>
+     <red>255</red>
+     <green>255</green>
+     <blue>255</blue>
+    </color>
+   </property>
+   <property name="fontColor">
+    <color>
+     <red>0</red>
+     <green>255</green>
+     <blue>0</blue>
+    </color>
+   </property>
+   <property name="borderWidth">
+    <number>0</number>
+   </property>
+   <property name="borderRadius">
+    <number>0</number>
+   </property>
+   <property name="apparence">
+    <enum>QFrame::Plain</enum>
+   </property>
+  </widget>
+  <zorder>atcmButton_2</zorder>
   <zorder>label</zorder>
+  <zorder>atcmButton</zorder>
   <zorder>label_12</zorder>
   <zorder>atcmLabel_59</zorder>
   <zorder>atcmLabel_67</zorder>
@@ -5057,7 +5484,6 @@ color: rgb(0, 0, 0);</string>
   <zorder>label_5</zorder>
   <zorder>label_3</zorder>
   <zorder>label_2</zorder>
-  <zorder>atcmButton</zorder>
   <zorder>atcmLabel_15</zorder>
   <zorder>atcmLabel_17</zorder>
   <zorder>atcmLabel_14</zorder>
@@ -5068,12 +5494,8 @@ color: rgb(0, 0, 0);</string>
   <zorder>atcmLabel_47</zorder>
   <zorder>atcmLabel_48</zorder>
   <zorder>atcmLed_10</zorder>
-  <zorder>atcmLed_18</zorder>
-  <zorder>atcmLed_20</zorder>
-  <zorder>atcmLed_17</zorder>
   <zorder>atcmLed_11</zorder>
   <zorder>atcmLed_12</zorder>
-  <zorder>atcmLed_19</zorder>
   <zorder>atcmLed_9</zorder>
   <zorder>atcmLabel_30</zorder>
   <zorder>atcmLabel_31</zorder>
@@ -5108,25 +5530,33 @@ color: rgb(0, 0, 0);</string>
   <zorder>atcmLabel_29</zorder>
   <zorder>atcmLabel_5</zorder>
   <zorder>atcmLabel_70</zorder>
-  <zorder>atcmLabel_4</zorder>
-  <zorder>atcmLabel_2</zorder>
-  <zorder>atcmLabel_20</zorder>
-  <zorder>atcmLabel_3</zorder>
-  <zorder>atcmComboBox</zorder>
-  <zorder>line_3</zorder>
   <zorder>line_11</zorder>
-  <zorder>atcmTime</zorder>
-  <zorder>atcmDate</zorder>
-  <zorder>atcmLabel</zorder>
-  <zorder>line_4</zorder>
   <zorder>line_7</zorder>
-  <zorder>atcmButton_2</zorder>
-  <zorder>atcmButton_10</zorder>
-  <zorder>atcmButton_8</zorder>
-  <zorder>atcmLabel_6</zorder>
   <zorder>line_5</zorder>
   <zorder>atcmLabel_71</zorder>
   <zorder>line_8</zorder>
+  <zorder>atcmLed_21</zorder>
+  <zorder>atcmLed_22</zorder>
+  <zorder>atcmLed_23</zorder>
+  <zorder>atcmLed_24</zorder>
+  <zorder>atcmButton_7</zorder>
+  <zorder>atcmButton_9</zorder>
+  <zorder>atcmButton_11</zorder>
+  <zorder>atcmButton_12</zorder>
+  <zorder>atcmLabel_72</zorder>
+  <zorder>atcmLabel_73</zorder>
+  <zorder>atcmLabel_74</zorder>
+  <zorder>atcmLabel_75</zorder>
+  <zorder>atcmLabel_76</zorder>
+  <zorder>atcmLabel_77</zorder>
+  <zorder>label_13</zorder>
+  <zorder>atcmLabel_20</zorder>
+  <zorder>atcmComboBox</zorder>
+  <zorder>atcmLabel_4</zorder>
+  <zorder>atcmLabel_2</zorder>
+  <zorder>atcmLed_25</zorder>
+  <zorder>atcmLabel_3</zorder>
+  <zorder>line_3</zorder>
  </widget>
  <customwidgets>
   <customwidget>
@@ -5140,11 +5570,6 @@ color: rgb(0, 0, 0);</string>
    <header>atcmplugin.h</header>
   </customwidget>
   <customwidget>
-   <class>ATCMdate</class>
-   <extends>QPushButton</extends>
-   <header>atcmplugin.h</header>
-  </customwidget>
-  <customwidget>
    <class>ATCMlabel</class>
    <extends>QPushButton</extends>
    <header>atcmplugin.h</header>
@@ -5154,14 +5579,10 @@ color: rgb(0, 0, 0);</string>
    <extends>QLabel</extends>
    <header>atcmplugin.h</header>
   </customwidget>
-  <customwidget>
-   <class>ATCMtime</class>
-   <extends>QPushButton</extends>
-   <header>atcmplugin.h</header>
-  </customwidget>
  </customwidgets>
  <resources>
   <include location="resources.qrc"/>
+  <include location="systemicons.qrc"/>
  </resources>
  <connections>
   <connection>
@@ -5182,6 +5603,70 @@ color: rgb(0, 0, 0);</string>
   </connection>
   <connection>
    <sender>atcmButton_2</sender>
+   <signal>newPage(const char*,bool)</signal>
+   <receiver>page100</receiver>
+   <slot>goto_page(const char*,bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>atcmButton_7</sender>
+   <signal>newPage(const char*,bool)</signal>
+   <receiver>page100</receiver>
+   <slot>goto_page(const char*,bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>atcmButton_9</sender>
+   <signal>newPage(const char*,bool)</signal>
+   <receiver>page100</receiver>
+   <slot>goto_page(const char*,bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>atcmButton_11</sender>
+   <signal>newPage(const char*,bool)</signal>
+   <receiver>page100</receiver>
+   <slot>goto_page(const char*,bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>atcmButton_12</sender>
    <signal>newPage(const char*,bool)</signal>
    <receiver>page100</receiver>
    <slot>goto_page(const char*,bool)</slot>
