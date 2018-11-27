@@ -36,6 +36,8 @@ private slots:
     void on_pushButton_Call_5010_toggled(bool checked);
     void on_pushButton_Call_5030_toggled(bool checked);
 
+    void on_pushButton_HangUp_clicked();
+
 private:
     Ui::page100 *ui;
 };

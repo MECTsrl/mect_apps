@@ -267,5 +267,10 @@ smartphone</source>
 laptop</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <location filename="page100.ui" line="1628"/>
+        <source>Hang Up</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 </TS>

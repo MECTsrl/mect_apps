@@ -152,8 +152,6 @@ void page100::on_pushButton_Call_5010_toggled(bool checked)
             enableDisableButtons();
             system("/root/call_5010.sh");
             enableDisableButtons();
-        } else {
-            system("killall pjsua");
         }
     }
 }
@@ -166,8 +164,13 @@ void page100::on_pushButton_Call_5030_toggled(bool checked)
             enableDisableButtons();
             system("/root/call_5030.sh");
             enableDisableButtons();
-        } else {
-            system("killall pjsua");
         }
     }
+}
+
+void page100::on_pushButton_HangUp_clicked()
+{
+    ui->pushButton_Call_5010->setChecked(false);
+    ui->pushButton_Call_5030->setChecked(false);
+    system("killall pjsua");
 }
