@@ -273,8 +273,8 @@
 3;S;SysImpActiveEnergy_9           ;REALCDAB ;1   ;RTU       ;               ;3   ;19  ;4358  ;273 ;1   ;[RO]0x13 0x1106 Energia Attiva Importata 0 in Wh (UPS)
 3;F;SysActivePower_10              ;REALCDAB ;0   ;RTU       ;               ;3   ;20  ;4134  ;274 ;1   ;[RO]0x14 0x1026 Potenza Attiva 0 in W (Caldaia+Puffer)
 3;S;SysImpActiveEnergy_10          ;REALCDAB ;1   ;RTU       ;               ;3   ;20  ;4358  ;275 ;1   ;[RO]0x14 0x1106 Energia Attiva Importata 0 in Wh (Caldaia+Puffer)
-;;;;;;;;;;;;
-;;;;;;;;;;;;
+3;P;SysActivePower_11              ;REALCDAB ;0   ;PLC       ;               ;    ;    ;      ;276 ;2   ;[RO]0x14 0x1026 Potenza Attiva 0 in W (Caldaia)
+3;P;SysImpActiveEnergy_11          ;REALCDAB ;1   ;PLC       ;               ;    ;    ;      ;276 ;2   ;[RO]0x14 0x1106 Energia Attiva Importata 0 in Wh (Caldaia)
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;

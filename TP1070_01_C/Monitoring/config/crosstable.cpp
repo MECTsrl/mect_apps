@@ -595,6 +595,20 @@ float SysImpActiveEnergy_10 = 0;
 
 
 /*
+ * Variable SysActivePower_11	[ 0x14 0x1026 Potenza Attiva 0 in W (Caldaia) ]
+ */
+
+float SysActivePower_11 = 0;
+
+
+/*
+ * Variable SysImpActiveEnergy_11	[ 0x14 0x1106 Energia Attiva Importata 0 in Wh (Caldaia) ]
+ */
+
+float SysImpActiveEnergy_11 = 0;
+
+
+/*
  * Variable RTU0_TYPE_PORT
  */
 
@@ -3547,6 +3561,42 @@ int
 getStatus_SysImpActiveEnergy_10(void)
 {
 	return getStatus(ID_SysImpActiveEnergy_10);
+}
+
+int
+doWrite_SysActivePower_11(float value)
+{
+	return doWrite(ID_SysActivePower_11, &value);
+}
+
+int
+addWrite_SysActivePower_11(float value)
+{
+	return addWrite(ID_SysActivePower_11, &value);
+}
+
+int
+getStatus_SysActivePower_11(void)
+{
+	return getStatus(ID_SysActivePower_11);
+}
+
+int
+doWrite_SysImpActiveEnergy_11(float value)
+{
+	return doWrite(ID_SysImpActiveEnergy_11, &value);
+}
+
+int
+addWrite_SysImpActiveEnergy_11(float value)
+{
+	return addWrite(ID_SysImpActiveEnergy_11, &value);
+}
+
+int
+getStatus_SysImpActiveEnergy_11(void)
+{
+	return getStatus(ID_SysImpActiveEnergy_11);
 }
 
 int
@@ -7488,6 +7538,8 @@ update_all(void)
 	retval += readFromDb(ID_SysImpActiveEnergy_9, &SysImpActiveEnergy_9);
 	retval += readFromDb(ID_SysActivePower_10, &SysActivePower_10);
 	retval += readFromDb(ID_SysImpActiveEnergy_10, &SysImpActiveEnergy_10);
+	retval += readFromDb(ID_SysActivePower_11, &SysActivePower_11);
+	retval += readFromDb(ID_SysImpActiveEnergy_11, &SysImpActiveEnergy_11);
 	retval += readFromDb(ID_RTU0_TYPE_PORT, &RTU0_TYPE_PORT);
 	retval += readFromDb(ID_RTU0_BAUDRATE, &RTU0_BAUDRATE);
 	retval += readFromDb(ID_RTU0_STATUS, &RTU0_STATUS);

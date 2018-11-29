@@ -80,6 +80,8 @@ VAR_GLOBAL
 	SysImpActiveEnergy_9 AT %ID0.1092:REAL;	(* 0x13 0x1106 Energia Attiva Importata 0 in Wh (UPS) *)
 	SysActivePower_10 AT %ID0.1096:REAL;	(* 0x14 0x1026 Potenza Attiva 0 in W (Caldaia+Puffer) *)
 	SysImpActiveEnergy_10 AT %ID0.1100:REAL;	(* 0x14 0x1106 Energia Attiva Importata 0 in Wh (Caldaia+Puffer) *)
+	SysActivePower_11 AT %ID0.1104:REAL;	(* 0x14 0x1026 Potenza Attiva 0 in W (Caldaia) *)
+	SysImpActiveEnergy_11 AT %ID0.1108:REAL;	(* 0x14 0x1106 Energia Attiva Importata 0 in Wh (Caldaia) *)
 	RTU0_TYPE_PORT AT %ID0.20000:UDINT;
 	RTU0_BAUDRATE AT %ID0.20004:UDINT;
 	RTU0_STATUS AT %ID0.20008:UDINT;

@@ -119,7 +119,7 @@ background-color: rgb(0, 0, 0);
    <property name="geometry">
     <rect>
      <x>272</x>
-     <y>328</y>
+     <y>326</y>
      <width>24</width>
      <height>24</height>
     </rect>
@@ -161,7 +161,7 @@ background-color: rgb(0, 0, 0);
    <property name="geometry">
     <rect>
      <x>272</x>
-     <y>248</y>
+     <y>246</y>
      <width>24</width>
      <height>24</height>
     </rect>
@@ -203,7 +203,7 @@ background-color: rgb(0, 0, 0);
    <property name="geometry">
     <rect>
      <x>272</x>
-     <y>288</y>
+     <y>286</y>
      <width>24</width>
      <height>24</height>
     </rect>
@@ -245,7 +245,7 @@ background-color: rgb(0, 0, 0);
    <property name="geometry">
     <rect>
      <x>272</x>
-     <y>408</y>
+     <y>406</y>
      <width>24</width>
      <height>24</height>
     </rect>
@@ -290,7 +290,7 @@ background-color: rgb(0, 0, 0);
    <property name="geometry">
     <rect>
      <x>566</x>
-     <y>160</y>
+     <y>120</y>
      <width>234</width>
      <height>40</height>
     </rect>
@@ -444,7 +444,7 @@ background-color: rgb(0, 0, 0);
    <property name="geometry">
     <rect>
      <x>566</x>
-     <y>40</y>
+     <y>0</y>
      <width>234</width>
      <height>40</height>
     </rect>
@@ -521,7 +521,7 @@ background-color: rgb(0, 0, 0);
    <property name="geometry">
     <rect>
      <x>566</x>
-     <y>80</y>
+     <y>40</y>
      <width>234</width>
      <height>40</height>
     </rect>
@@ -598,7 +598,7 @@ background-color: rgb(0, 0, 0);
    <property name="geometry">
     <rect>
      <x>566</x>
-     <y>120</y>
+     <y>80</y>
      <width>234</width>
      <height>40</height>
     </rect>
@@ -683,7 +683,7 @@ background-color: rgb(0, 0, 0);
    <property name="geometry">
     <rect>
      <x>566</x>
-     <y>200</y>
+     <y>160</y>
      <width>234</width>
      <height>40</height>
     </rect>
@@ -760,7 +760,7 @@ background-color: rgb(0, 0, 0);
    <property name="geometry">
     <rect>
      <x>570</x>
-     <y>240</y>
+     <y>200</y>
      <width>234</width>
      <height>40</height>
     </rect>
@@ -1952,7 +1952,8 @@ background-color: rgb(0, 0, 0);
     </color>
    </property>
    <property name="text">
-    <string>ASPEC</string>
+    <string>ASPEC
+HOME</string>
    </property>
    <property name="pressText">
     <string>BYPASS</string>
@@ -2045,7 +2046,8 @@ background-color: rgb(0, 0, 0);
     </color>
    </property>
    <property name="text">
-    <string>ASPEC</string>
+    <string>ASPEC
+HOME</string>
    </property>
    <property name="pressText">
     <string>BYPASS</string>
@@ -2138,7 +2140,8 @@ background-color: rgb(0, 0, 0);
     </color>
    </property>
    <property name="text">
-    <string>ASPEC</string>
+    <string>ASPEC
+HOME</string>
    </property>
    <property name="pressText">
     <string>BYPASS</string>
@@ -2231,7 +2234,8 @@ background-color: rgb(0, 0, 0);
     </color>
    </property>
    <property name="text">
-    <string>ASPEC</string>
+    <string>ASPEC
+HOME</string>
    </property>
    <property name="pressText">
     <string>BYPASS</string>
@@ -2307,7 +2311,7 @@ background-color: rgb(0, 0, 0);
     <rect>
      <x>266</x>
      <y>400</y>
-     <width>301</width>
+     <width>300</width>
      <height>40</height>
     </rect>
    </property>
@@ -3723,9 +3727,9 @@ color: rgb(0,255,0);</string>
    </property>
    <property name="geometry">
     <rect>
-     <x>266</x>
+     <x>350</x>
      <y>360</y>
-     <width>133</width>
+     <width>81</width>
      <height>40</height>
     </rect>
    </property>
@@ -4107,8 +4111,8 @@ color: rgb(0, 0, 0);</string>
   <widget class="ATCMled" name="atcmLed_21">
    <property name="geometry">
     <rect>
-     <x>574</x>
-     <y>130</y>
+     <x>775</x>
+     <y>86</y>
      <width>24</width>
      <height>24</height>
     </rect>
@@ -4149,8 +4153,8 @@ color: rgb(0, 0, 0);</string>
   <widget class="ATCMled" name="atcmLed_22">
    <property name="geometry">
     <rect>
-     <x>574</x>
-     <y>210</y>
+     <x>775</x>
+     <y>166</y>
      <width>24</width>
      <height>24</height>
     </rect>
@@ -4191,8 +4195,8 @@ color: rgb(0, 0, 0);</string>
   <widget class="ATCMled" name="atcmLed_23">
    <property name="geometry">
     <rect>
-     <x>574</x>
-     <y>250</y>
+     <x>775</x>
+     <y>206</y>
      <width>24</width>
      <height>24</height>
     </rect>
@@ -4233,7 +4237,7 @@ color: rgb(0, 0, 0);</string>
   <widget class="ATCMled" name="atcmLed_24">
    <property name="geometry">
     <rect>
-     <x>574</x>
+     <x>775</x>
      <y>370</y>
      <width>24</width>
      <height>24</height>
@@ -4275,8 +4279,8 @@ color: rgb(0, 0, 0);</string>
   <widget class="ATCMbutton" name="atcmButton_7">
    <property name="geometry">
     <rect>
-     <x>436</x>
-     <y>402</y>
+     <x>400</x>
+     <y>440</y>
      <width>38</width>
      <height>38</height>
     </rect>
@@ -4410,7 +4414,7 @@ color: rgb(0, 0, 0);</string>
    <property name="geometry">
     <rect>
      <x>567</x>
-     <y>42</y>
+     <y>2</y>
      <width>38</width>
      <height>38</height>
     </rect>
@@ -4477,7 +4481,7 @@ color: rgb(0, 0, 0);</string>
    <property name="geometry">
     <rect>
      <x>567</x>
-     <y>161</y>
+     <y>121</y>
      <width>38</width>
      <height>38</height>
     </rect>
@@ -5019,7 +5023,7 @@ color: rgb(0, 0, 0);</string>
    </property>
    <property name="styleSheet">
     <string notr="true">background-color: rgb(0,0,0);
-color: rgb(0, 255, 255);</string>
+color: rgb(0, 255, 0);</string>
    </property>
    <property name="text">
     <string>CALDAIA</string>
@@ -5037,9 +5041,9 @@ color: rgb(0, 255, 255);</string>
    </property>
    <property name="geometry">
     <rect>
-     <x>350</x>
+     <x>351</x>
      <y>440</y>
-     <width>42</width>
+     <width>44</width>
      <height>40</height>
     </rect>
    </property>
@@ -5114,7 +5118,7 @@ color: rgb(0, 255, 255);</string>
    </property>
    <property name="geometry">
     <rect>
-     <x>394</x>
+     <x>395</x>
      <y>400</y>
      <width>40</width>
      <height>20</height>
@@ -5186,7 +5190,7 @@ color: rgb(0, 255, 255);</string>
    </property>
    <property name="geometry">
     <rect>
-     <x>394</x>
+     <x>395</x>
      <y>420</y>
      <width>40</width>
      <height>20</height>
@@ -5270,7 +5274,7 @@ color: rgb(0, 255, 255);</string>
    </property>
    <property name="geometry">
     <rect>
-     <x>350</x>
+     <x>351</x>
      <y>400</y>
      <width>44</width>
      <height>20</height>
@@ -5348,8 +5352,8 @@ color: rgb(0, 255, 255);</string>
   <widget class="ATCMled" name="atcmLed_25">
    <property name="geometry">
     <rect>
-     <x>272</x>
-     <y>450</y>
+     <x>447</x>
+     <y>448</y>
      <width>24</width>
      <height>24</height>
     </rect>
@@ -5393,7 +5397,7 @@ color: rgb(0, 255, 255);</string>
    </property>
    <property name="geometry">
     <rect>
-     <x>350</x>
+     <x>351</x>
      <y>420</y>
      <width>44</width>
      <height>20</height>
@@ -5471,6 +5475,295 @@ color: rgb(0, 255, 255);</string>
     <enum>QFrame::Plain</enum>
    </property>
   </widget>
+  <widget class="ATCMled" name="atcmLed_26">
+   <property name="geometry">
+    <rect>
+     <x>447</x>
+     <y>408</y>
+     <width>24</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string/>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMled widget</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+   <property name="variable">
+    <string/>
+   </property>
+   <property name="refresh">
+    <number>500</number>
+   </property>
+   <property name="viewStatus">
+    <bool>false</bool>
+   </property>
+   <property name="visibilityVar">
+    <string/>
+   </property>
+   <property name="onIcon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/icons/icons/LedOn_chiaro.png</normaloff>:/icons/icons/LedOn_chiaro.png</iconset>
+   </property>
+   <property name="offIcon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/icons/icons/LedOff_scuro.png</normaloff>:/icons/icons/LedOff_scuro.png</iconset>
+   </property>
+  </widget>
+  <widget class="ATCMlabel" name="atcmLabel_78">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>133</x>
+     <y>440</y>
+     <width>133</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans Mono</family>
+     <pointsize>11</pointsize>
+     <weight>50</weight>
+     <italic>true</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>nNNNnnn.N</string>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(0, 85, 0);</string>
+   </property>
+   <property name="toolTip">
+    <string/>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMlabel widget</string>
+   </property>
+   <property name="variable">
+    <string/>
+   </property>
+   <property name="prefix">
+    <string/>
+   </property>
+   <property name="suffix">
+    <string> Wh</string>
+   </property>
+   <property name="refresh">
+    <number>200</number>
+   </property>
+   <property name="max">
+    <string>0</string>
+   </property>
+   <property name="min">
+    <string>0</string>
+   </property>
+   <property name="viewStatus">
+    <bool>false</bool>
+   </property>
+   <property name="visibilityVar">
+    <string/>
+   </property>
+   <property name="bgColor">
+    <color>
+     <red>0</red>
+     <green>0</green>
+     <blue>0</blue>
+    </color>
+   </property>
+   <property name="fontColor">
+    <color>
+     <red>0</red>
+     <green>255</green>
+     <blue>0</blue>
+    </color>
+   </property>
+   <property name="borderWidth">
+    <number>0</number>
+   </property>
+   <property name="borderRadius">
+    <number>0</number>
+   </property>
+   <property name="apparence">
+    <enum>QFrame::Plain</enum>
+   </property>
+  </widget>
+  <widget class="ATCMlabel" name="atcmLabel_79">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>440</y>
+     <width>133</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans Mono</family>
+     <pointsize>16</pointsize>
+     <weight>50</weight>
+     <italic>true</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>NNNN</string>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(0, 85, 0);</string>
+   </property>
+   <property name="toolTip">
+    <string/>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMlabel widget</string>
+   </property>
+   <property name="variable">
+    <string/>
+   </property>
+   <property name="prefix">
+    <string/>
+   </property>
+   <property name="suffix">
+    <string> W</string>
+   </property>
+   <property name="refresh">
+    <number>200</number>
+   </property>
+   <property name="max">
+    <string>0</string>
+   </property>
+   <property name="min">
+    <string>0</string>
+   </property>
+   <property name="viewStatus">
+    <bool>false</bool>
+   </property>
+   <property name="visibilityVar">
+    <string/>
+   </property>
+   <property name="bgColor">
+    <color>
+     <red>0</red>
+     <green>0</green>
+     <blue>0</blue>
+    </color>
+   </property>
+   <property name="fontColor">
+    <color>
+     <red>0</red>
+     <green>255</green>
+     <blue>0</blue>
+    </color>
+   </property>
+   <property name="borderWidth">
+    <number>0</number>
+   </property>
+   <property name="borderRadius">
+    <number>0</number>
+   </property>
+   <property name="apparence">
+    <enum>QFrame::Plain</enum>
+   </property>
+  </widget>
+  <widget class="ATCMlabel" name="atcmLabel_25">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>570</x>
+     <y>240</y>
+     <width>234</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <italic>false</italic>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>-NN.N</string>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(0, 85, 0);</string>
+   </property>
+   <property name="toolTip">
+    <string/>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMlabel widget</string>
+   </property>
+   <property name="variable">
+    <string/>
+   </property>
+   <property name="prefix">
+    <string>ingresso </string>
+   </property>
+   <property name="suffix">
+    <string> °C</string>
+   </property>
+   <property name="refresh">
+    <number>200</number>
+   </property>
+   <property name="max">
+    <string>0</string>
+   </property>
+   <property name="min">
+    <string>0</string>
+   </property>
+   <property name="viewStatus">
+    <bool>false</bool>
+   </property>
+   <property name="visibilityVar">
+    <string/>
+   </property>
+   <property name="bgColor">
+    <color>
+     <red>32</red>
+     <green>32</green>
+     <blue>32</blue>
+    </color>
+   </property>
+   <property name="borderColor">
+    <color>
+     <red>0</red>
+     <green>170</green>
+     <blue>255</blue>
+    </color>
+   </property>
+   <property name="fontColor">
+    <color>
+     <red>0</red>
+     <green>170</green>
+     <blue>255</blue>
+    </color>
+   </property>
+   <property name="borderWidth">
+    <number>0</number>
+   </property>
+   <property name="borderRadius">
+    <number>0</number>
+   </property>
+  </widget>
   <zorder>atcmButton_2</zorder>
   <zorder>label</zorder>
   <zorder>atcmButton</zorder>
@@ -5493,10 +5786,6 @@ color: rgb(0, 255, 255);</string>
   <zorder>atcmLabel_24</zorder>
   <zorder>atcmLabel_47</zorder>
   <zorder>atcmLabel_48</zorder>
-  <zorder>atcmLed_10</zorder>
-  <zorder>atcmLed_11</zorder>
-  <zorder>atcmLed_12</zorder>
-  <zorder>atcmLed_9</zorder>
   <zorder>atcmLabel_30</zorder>
   <zorder>atcmLabel_31</zorder>
   <zorder>atcmLabel_38</zorder>
@@ -5539,7 +5828,6 @@ color: rgb(0, 255, 255);</string>
   <zorder>atcmLed_22</zorder>
   <zorder>atcmLed_23</zorder>
   <zorder>atcmLed_24</zorder>
-  <zorder>atcmButton_7</zorder>
   <zorder>atcmButton_9</zorder>
   <zorder>atcmButton_11</zorder>
   <zorder>atcmButton_12</zorder>
@@ -5557,6 +5845,15 @@ color: rgb(0, 255, 255);</string>
   <zorder>atcmLed_25</zorder>
   <zorder>atcmLabel_3</zorder>
   <zorder>line_3</zorder>
+  <zorder>atcmButton_7</zorder>
+  <zorder>atcmLed_26</zorder>
+  <zorder>atcmLabel_78</zorder>
+  <zorder>atcmLabel_79</zorder>
+  <zorder>atcmLed_12</zorder>
+  <zorder>atcmLed_11</zorder>
+  <zorder>atcmLed_9</zorder>
+  <zorder>atcmLed_10</zorder>
+  <zorder>atcmLabel_25</zorder>
  </widget>
  <customwidgets>
   <customwidget>
@@ -5581,8 +5878,8 @@ color: rgb(0, 255, 255);</string>
   </customwidget>
  </customwidgets>
  <resources>
-  <include location="resources.qrc"/>
   <include location="systemicons.qrc"/>
+  <include location="resources.qrc"/>
  </resources>
  <connections>
   <connection>
