@@ -246,7 +246,7 @@
    <property name="geometry">
     <rect>
      <x>0</x>
-     <y>370</y>
+     <y>400</y>
      <width>100</width>
      <height>30</height>
     </rect>
@@ -716,7 +716,7 @@
    <property name="geometry">
     <rect>
      <x>300</x>
-     <y>370</y>
+     <y>400</y>
      <width>100</width>
      <height>30</height>
     </rect>
@@ -865,7 +865,7 @@
    <property name="geometry">
     <rect>
      <x>100</x>
-     <y>370</y>
+     <y>400</y>
      <width>100</width>
      <height>30</height>
     </rect>
@@ -929,7 +929,7 @@
    <property name="geometry">
     <rect>
      <x>200</x>
-     <y>370</y>
+     <y>400</y>
      <width>100</width>
      <height>30</height>
     </rect>
@@ -3607,9 +3607,9 @@ color: rgb(255, 255, 255);</string>
   <widget class="QPushButton" name="pushButton">
    <property name="geometry">
     <rect>
-     <x>300</x>
+     <x>343</x>
      <y>150</y>
-     <width>100</width>
+     <width>60</width>
      <height>175</height>
     </rect>
    </property>
@@ -3619,8 +3619,12 @@ color: rgb(255, 255, 255);</string>
      <pointsize>8</pointsize>
     </font>
    </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
    <property name="text">
-    <string>Deselect All</string>
+    <string>Disable
+Nodes</string>
    </property>
    <property name="checkable">
     <bool>false</bool>
@@ -3796,8 +3800,8 @@ color: rgb(255,255,255);</string>
   <widget class="ATCMbutton" name="atcmButton_10">
    <property name="geometry">
     <rect>
-     <x>192</x>
-     <y>430</y>
+     <x>132</x>
+     <y>440</y>
      <width>78</width>
      <height>30</height>
     </rect>
@@ -3862,8 +3866,8 @@ color: rgb(255,255,255);</string>
   <widget class="ATCMbutton" name="atcmButton_8">
    <property name="geometry">
     <rect>
-     <x>114</x>
-     <y>430</y>
+     <x>54</x>
+     <y>440</y>
      <width>78</width>
      <height>30</height>
     </rect>
@@ -3925,8 +3929,8 @@ color: rgb(255,255,255);</string>
   <widget class="ATCMlabel" name="atcmLabel_6">
    <property name="geometry">
     <rect>
-     <x>270</x>
-     <y>430</y>
+     <x>210</x>
+     <y>440</y>
      <width>78</width>
      <height>30</height>
     </rect>
@@ -4004,8 +4008,8 @@ color: rgb(255,255,255);</string>
     <font>
      <family>DejaVu Sans Mono</family>
      <pointsize>11</pointsize>
-     <weight>75</weight>
-     <bold>true</bold>
+     <weight>50</weight>
+     <bold>false</bold>
     </font>
    </property>
    <property name="text">
@@ -4081,8 +4085,8 @@ color: rgb(255,255,255);</string>
     <font>
      <family>DejaVu Sans Mono</family>
      <pointsize>11</pointsize>
-     <weight>75</weight>
-     <bold>true</bold>
+     <weight>50</weight>
+     <bold>false</bold>
     </font>
    </property>
    <property name="text">
@@ -4158,8 +4162,8 @@ color: rgb(255,255,255);</string>
     <font>
      <family>DejaVu Sans Mono</family>
      <pointsize>11</pointsize>
-     <weight>75</weight>
-     <bold>true</bold>
+     <weight>50</weight>
+     <bold>false</bold>
     </font>
    </property>
    <property name="text">
@@ -4344,8 +4348,8 @@ color: rgb(0, 0, 0);</string>
     <font>
      <family>DejaVu Sans Mono</family>
      <pointsize>11</pointsize>
-     <weight>75</weight>
-     <bold>true</bold>
+     <weight>50</weight>
+     <bold>false</bold>
     </font>
    </property>
    <property name="text">
@@ -4421,8 +4425,8 @@ color: rgb(0, 0, 0);</string>
     <font>
      <family>DejaVu Sans Mono</family>
      <pointsize>11</pointsize>
-     <weight>75</weight>
-     <bold>true</bold>
+     <weight>50</weight>
+     <bold>false</bold>
     </font>
    </property>
    <property name="text">
@@ -4581,8 +4585,8 @@ color: rgb(0, 0, 0);</string>
     <font>
      <family>DejaVu Sans Mono</family>
      <pointsize>11</pointsize>
-     <weight>75</weight>
-     <bold>true</bold>
+     <weight>50</weight>
+     <bold>false</bold>
     </font>
    </property>
    <property name="text">
