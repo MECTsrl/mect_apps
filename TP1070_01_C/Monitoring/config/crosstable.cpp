@@ -581,14 +581,14 @@ float SysImpActiveEnergy_9 = 0;
 
 
 /*
- * Variable SysActivePower_10	[ 0x14 0x1026 Potenza Attiva 0 in W (Caldaia+Puffer) ]
+ * Variable SysActivePower_10	[ 0x14 0x1026 Potenza Attiva 0 in W (Puffer) ]
  */
 
 float SysActivePower_10 = 0;
 
 
 /*
- * Variable SysImpActiveEnergy_10	[ 0x14 0x1106 Energia Attiva Importata 0 in Wh (Caldaia+Puffer) ]
+ * Variable SysImpActiveEnergy_10	[ 0x14 0x1106 Energia Attiva Importata 0 in Wh (Puffer) ]
  */
 
 float SysImpActiveEnergy_10 = 0;

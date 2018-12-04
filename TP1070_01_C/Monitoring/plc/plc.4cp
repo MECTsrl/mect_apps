@@ -18,7 +18,6 @@ file=Resource1.cst
 file=Init.st
 file=Alarms.st
 file=Events.st
-file=Fast.st
 file=Normal.st
 file=Slow.st
 
@@ -26,7 +25,8 @@ file=Slow.st
 file=$(LIBDIR)\ATCM_IEC1131_3.4cl
 
 [Targets]
-file=TPAC.ATHW119
+file=TPAC_LAN.ATHW119
+file=TPAC_VPN.ATHW119
 
 [Compiler.ATHW119]
 opt=bp2
