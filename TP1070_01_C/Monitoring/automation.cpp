@@ -13,15 +13,15 @@ void setup(void)
     doWrite_XX_AnInConf_B(0x0777);// [°C] PT100R
     doWrite_XX_AnInConf_C(0x0777);// [°C] PT100R
 
-    doWrite_XX_DigDir_1(0); // input ASPEC PHEV
-    doWrite_XX_DigDir_2(0); // input ASPEC DEUMIDIFICATORE
-    doWrite_XX_DigDir_3(0); // input ASPEC LAVANDERIA
-    doWrite_XX_DigDir_4(0); // input ASPEC PUFFER
+    doWrite_XX_DigDir_1(1); // Dig I/O ASPEC PHEV
+    doWrite_XX_DigDir_2(1); // Dig I/O ASPEC DEUMIDIFICATORE
+    doWrite_XX_DigDir_3(1); // Dig I/O ASPEC LAVANDERIA
+    doWrite_XX_DigDir_4(1); // Dig I/O ASPEC PUFFER
 
-    doWrite_XX_DigDir_5(1); // output BYPASS ASPEC PHEV
-    doWrite_XX_DigDir_6(1); // output BYPASS DEUMIDIFICATORE
-    doWrite_XX_DigDir_7(1); // output BYPASS LAVANDERIA
-    doWrite_XX_DigDir_8(1); // output BYPASS PUFFER
+    doWrite_XX_DigDir_5(1); // Dig I/O PIANO SOTTO scala
+    doWrite_XX_DigDir_6(1); // Dig I/O PIANO TERRA corridoio
+    doWrite_XX_DigDir_7(1); // Dig I/O PIANO TERRA soggiorno
+    doWrite_XX_DigDir_8(1); // Dig I/O PIANO SOPRA sud
 
     // doWrite_openvpn_restart_times(0);
 

@@ -99,22 +99,34 @@ page200::~page200()
 }
 
 
-void page200::on_pushButton_clicked()
+void page200::on_pushButton_clicked(bool checked)
 {
+    u_int32_t value;
+
+    if (checked) {
+        value = 0;
+    } else {
+        value = 1;
+    }
     beginWrite();
-    // addWrite_NODE_01_STATUS(0); // MPT91
-    // addWrite_NODE_02_STATUS(0); // MPNC005
-    // addWrite_NODE_03_STATUS(0); // SCAMBIO ENEL
-    // addWrite_NODE_04_STATUS(0); // FOTOVOLTAICO
-    addWrite_NODE_05_STATUS(0); // ESTERNI
-    addWrite_NODE_06_STATUS(0); // PIANO SOPRA
-    addWrite_NODE_07_STATUS(0); // PIANO TERRA
-    addWrite_NODE_08_STATUS(0); // PIANO SOTTO
-    addWrite_NODE_09_STATUS(0); // AUTO ELETTRICA
-    addWrite_NODE_10_STATUS(0); // DEUMIDIFICATORE
-    addWrite_NODE_11_STATUS(0); // LAVANDERIA
-    // addWrite_NODE_12_STATUS(0); // UPS
-    // addWrite_NODE_13_STATUS(0); // CALDAIA(PUFFER)
-    // addWrite_NODE_14_STATUS(0); // CALDAIA
+
+    // RTU0:
+    // addWrite_NODE_01_STATUS(value); // MPT91
+
+    // RTU3:
+    // addWrite_NODE_02_STATUS(value); // MPNC005
+    // addWrite_NODE_03_STATUS(value); // SCAMBIO ENEL
+    // addWrite_NODE_04_STATUS(value); // FOTOVOLTAICO
+    addWrite_NODE_05_STATUS(value); // ESTERNI
+    addWrite_NODE_06_STATUS(value); // PIANO SOPRA
+    addWrite_NODE_07_STATUS(value); // PIANO TERRA
+    addWrite_NODE_08_STATUS(value); // PIANO SOTTO
+    addWrite_NODE_09_STATUS(value); // AUTO ELETTRICA
+    addWrite_NODE_10_STATUS(value); // DEUMIDIFICATORE
+    addWrite_NODE_11_STATUS(value); // LAVANDERIA
+    // addWrite_NODE_12_STATUS(value); // UPS
+    // addWrite_NODE_13_STATUS(value); // PUFFER
+    // addWrite_NODE_14_STATUS(value); // CALDAIA
+
     endWrite();
 }

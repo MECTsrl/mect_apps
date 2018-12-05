@@ -29,7 +29,7 @@ public:
 private slots:
     void changeEvent(QEvent * event);
     
-    void on_pushButton_clicked();
+    void on_pushButton_clicked(bool checked);
 
 private:
     Ui::page200 *ui;

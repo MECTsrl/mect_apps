@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 2.7.84, 2018-12-04T10:15:40. -->
+<!-- Written by QtCreator 2.7.84, 2018-12-05T15:29:19. -->
 <qtcreator>
  <data>
   <variable>ProjectExplorer.Project.ActiveTarget</variable>
@@ -260,20 +260,20 @@
        <value type="QString">C:/Qt485/imx28/rootfs</value>
       </valuelist>
       <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedTimes">
-       <value type="QDateTime">2018-07-28T12:21:57</value>
-       <value type="QDateTime">2018-12-04T10:00:36</value>
-       <value type="QDateTime">2018-12-04T10:00:38</value>
-       <value type="QDateTime">2018-07-28T12:21:57</value>
-       <value type="QDateTime">2018-12-04T10:00:35</value>
+       <value type="QDateTime">2018-12-05T15:19:16</value>
+       <value type="QDateTime">2018-12-05T15:23:52</value>
+       <value type="QDateTime">2018-12-05T15:23:54</value>
+       <value type="QDateTime">2018-12-05T15:19:16</value>
+       <value type="QDateTime">2018-12-05T15:23:51</value>
        <value type="QDateTime">2018-09-30T13:46:11</value>
-       <value type="QDateTime">2018-07-28T12:21:57</value>
+       <value type="QDateTime">2018-12-05T15:19:16</value>
        <value type="QDateTime">2018-10-02T20:08:36</value>
        <value type="QDateTime">2018-10-02T20:08:38</value>
        <value type="QDateTime">2018-09-30T13:46:13</value>
-       <value type="QDateTime">2018-12-04T10:00:37</value>
-       <value type="QDateTime">2018-07-28T12:21:57</value>
-       <value type="QDateTime">2018-07-28T12:21:58</value>
-       <value type="QDateTime">2018-12-04T10:00:54</value>
+       <value type="QDateTime">2018-12-05T15:23:53</value>
+       <value type="QDateTime">2018-12-05T15:19:16</value>
+       <value type="QDateTime">2018-12-05T15:19:17</value>
+       <value type="QDateTime">2018-12-05T15:24:09</value>
       </valuelist>
       <value type="bool" key="RemoteLinux.GenericDirectUploadStep.Incremental">false</value>
      </valuemap>
