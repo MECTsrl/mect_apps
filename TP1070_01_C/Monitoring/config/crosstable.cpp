@@ -49,6 +49,13 @@ int is_TUN0_ON = 0;
 
 
 /*
+ * Variable is_Caldaia_ON
+ */
+
+int is_Caldaia_ON = 0;
+
+
+/*
  * Variable MPT91_Scala	[ 0x0008 ]
  */
 
@@ -2157,6 +2164,24 @@ int
 getStatus_is_TUN0_ON(void)
 {
 	return getStatus(ID_is_TUN0_ON);
+}
+
+int
+doWrite_is_Caldaia_ON(int value)
+{
+	return doWrite(ID_is_Caldaia_ON, &value);
+}
+
+int
+addWrite_is_Caldaia_ON(int value)
+{
+	return addWrite(ID_is_Caldaia_ON, &value);
+}
+
+int
+getStatus_is_Caldaia_ON(void)
+{
+	return getStatus(ID_is_Caldaia_ON);
 }
 
 int
@@ -7460,6 +7485,7 @@ update_all(void)
 	retval += readFromDb(ID_openvpn_restart_times, &openvpn_restart_times);
 	retval += readFromDb(ID_is_PPP0_ON, &is_PPP0_ON);
 	retval += readFromDb(ID_is_TUN0_ON, &is_TUN0_ON);
+	retval += readFromDb(ID_is_Caldaia_ON, &is_Caldaia_ON);
 	retval += readFromDb(ID_MPT91_Scala, &MPT91_Scala);
 	retval += readFromDb(ID_MPT91_Temperatura, &MPT91_Temperatura);
 	retval += readFromDb(ID_MPT91_Set_point, &MPT91_Set_point);

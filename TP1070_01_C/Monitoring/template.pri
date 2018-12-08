@@ -17,8 +17,7 @@ config.path = /local/etc/sysconfig
 splash.files = config/splash.png
 splash.path = /local/etc/sysconfig/img
 
-customtrend.files = config/trend1.csv \
-         config/trend_caldaia.csv config/trend_piani.csv config/trend_potenze.csv config/trend_termostati.csv
+customtrend.files = config/trend1.csv config/trend_caldaia.csv config/trend_piani.csv config/trend_potenze.csv config/trend_termostati.csv config/trend_piano_sopra.csv config/trend_piano_sotto.csv config/trend_piano_terra.csv
 customtrend.path = /local/data/customtrend
 
 INSTALLS += config splash customtrend
@@ -27,7 +26,11 @@ INSTALLS += config splash customtrend
 OTHER_FILES += \
     languages_it.ts \
     languages_en.ts \
-    config/trend_piani.csv
+    config/trend_piani.csv \
+    config/trend_termostati.csv \
+    config/trend_potenze.csv \
+    config/trend_piani.csv \
+    config/trend_caldaia.csv
 
 include(./common.pri)
 

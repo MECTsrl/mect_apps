@@ -52,6 +52,12 @@ int doWrite_is_TUN0_ON(int value);
 int addWrite_is_TUN0_ON(int value);
 int getStatus_is_TUN0_ON(void);
 
+#define ID_is_Caldaia_ON 195
+extern int is_Caldaia_ON;
+int doWrite_is_Caldaia_ON(int value);
+int addWrite_is_Caldaia_ON(int value);
+int getStatus_is_Caldaia_ON(void);
+
 #define ID_MPT91_Scala 196
 extern int MPT91_Scala;	/* 0x0008 */
 int doWrite_MPT91_Scala(int value);

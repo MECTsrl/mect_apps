@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 2.7.84, 2018-12-05T15:29:19. -->
+<!-- Written by QtCreator 2.7.84, 2018-12-09T00:34:15. -->
 <qtcreator>
  <data>
   <variable>ProjectExplorer.Project.ActiveTarget</variable>
@@ -196,51 +196,75 @@
       <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
       <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">RemoteLinux.DirectUploadStep</value>
       <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedFiles">
-       <value type="QString">C:/mect_apps/TP1070_01_C/Monitoring/config/splash.png</value>
+       <value type="QString">C:/mect_apps/TP1070_01_C/Monitoring/customtrend/trend_piani.csv</value>
        <value type="QString">C:/mect_apps/TP1070_01_C/Monitoring/config/system.ini</value>
-       <value type="QString">C:/mect_apps/TP1070_01_C/Monitoring/config/trend1.csv</value>
-       <value type="QString">C:/mect_apps/TP1070_01_C/Monitoring/config/trend1.csv</value>
+       <value type="QString">C:/mect_apps/TP1070_01_C/Monitoring/config/system.ini</value>
        <value type="QString">C:/mect_apps/TP1070_01_C/Monitoring/config/Crosstable.csv</value>
-       <value type="QString">C:/mect_apps/TP1070_01_C/Monitoring/config/trend_temperature.csv</value>
-       <value type="QString">C:/mect_apps/TP1070_01_C/Monitoring/config/Crosstable.csv</value>
-       <value type="QString">C:/mect_apps/TP1070_01_C/Monitoring/config/trend_piani.csv</value>
+       <value type="QString">C:/mect_apps/TP1070_01_C/Monitoring/config/trend_potenze.csv</value>
        <value type="QString">C:/mect_apps/TP1070_01_C/Monitoring/config/trend_caldaia.csv</value>
-       <value type="QString">C:/mect_apps/TP1070_01_C/Monitoring/config/trend_puffer.csv</value>
+       <value type="QString">C:/mect_apps/TP1070_01_C/Monitoring/customtrend/trend_termostati.csv</value>
        <value type="QString">C:/mect_apps/TP1070_01_C/Monitoring/config/splash.png</value>
-       <value type="QString">C:/mect_apps/TP1070_01_C/Monitoring/config/system.ini</value>
+       <value type="QString">C:/mect_apps/TP1070_01_C/Monitoring/config/trend_caldaia.csv</value>
+       <value type="QString">C:/mect_apps/TP1070_01_C/Monitoring/config/trend_temperature.csv</value>
+       <value type="QString">C:/mect_apps/TP1070_01_C/Monitoring/config/trend_puffer.csv</value>
+       <value type="QString">C:/mect_apps/TP1070_01_C/Monitoring/config/trend1.csv</value>
+       <value type="QString">C:/mect_apps/TP1070_01_C/Monitoring/customtrend/trend_potenze.csv</value>
+       <value type="QString">C:/mect_apps/TP1070_01_C/Monitoring/config/splash.png</value>
+       <value type="QString">C:/mect_apps/TP1070_01_C/Monitoring/customtrend/trend_caldaia.csv</value>
+       <value type="QString">C:/mect_apps/TP1070_01_C/Monitoring/config/trend_piani.csv</value>
+       <value type="QString">C:/mect_apps/TP1070_01_C/Monitoring/config/trend_piani.csv</value>
+       <value type="QString">C:/mect_apps/TP1070_01_C/Monitoring/config/Crosstable.csv</value>
+       <value type="QString">C:/mect_apps/TP1070_01_C/Monitoring/config/trend1.csv</value>
        <value type="QString">C:/mect_apps/TP1070_01_C/Monitoring/hmi</value>
+       <value type="QString">C:/mect_apps/TP1070_01_C/Monitoring/config/trend_termostati.csv</value>
        <value type="QString">C:/mect_apps/TP1070_01_C/Monitoring/hmi</value>
       </valuelist>
       <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedHosts">
        <value type="QString">192.168.5.45</value>
+       <value type="QString">192.168.5.45</value>
+       <value type="QString">10.1.0.130</value>
+       <value type="QString">192.168.5.45</value>
+       <value type="QString">192.168.5.45</value>
+       <value type="QString">192.168.5.45</value>
+       <value type="QString">192.168.5.45</value>
+       <value type="QString">192.168.5.45</value>
+       <value type="QString">10.1.0.130</value>
+       <value type="QString">10.1.0.130</value>
        <value type="QString">10.1.0.130</value>
        <value type="QString">10.1.0.130</value>
        <value type="QString">192.168.5.45</value>
        <value type="QString">10.1.0.130</value>
+       <value type="QString">192.168.5.45</value>
        <value type="QString">10.1.0.130</value>
        <value type="QString">192.168.5.45</value>
        <value type="QString">10.1.0.130</value>
-       <value type="QString">10.1.0.130</value>
-       <value type="QString">10.1.0.130</value>
-       <value type="QString">10.1.0.130</value>
+       <value type="QString">192.168.5.45</value>
        <value type="QString">192.168.5.45</value>
        <value type="QString">192.168.5.45</value>
        <value type="QString">10.1.0.130</value>
       </valuelist>
       <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedRemotePaths">
-       <value type="QString">/local/etc/sysconfig/img</value>
-       <value type="QString">/local/etc/sysconfig</value>
-       <value type="QString">/local/data/customtrend</value>
        <value type="QString">/local/data/customtrend</value>
        <value type="QString">/local/etc/sysconfig</value>
-       <value type="QString">/local/data/customtrend</value>
+       <value type="QString">/local/etc/sysconfig</value>
        <value type="QString">/local/etc/sysconfig</value>
        <value type="QString">/local/data/customtrend</value>
        <value type="QString">/local/data/customtrend</value>
        <value type="QString">/local/data/customtrend</value>
        <value type="QString">/local/etc/sysconfig/img</value>
+       <value type="QString">/local/data/customtrend</value>
+       <value type="QString">/local/data/customtrend</value>
+       <value type="QString">/local/data/customtrend</value>
+       <value type="QString">/local/data/customtrend</value>
+       <value type="QString">/local/data/customtrend</value>
+       <value type="QString">/local/etc/sysconfig/img</value>
+       <value type="QString">/local/data/customtrend</value>
+       <value type="QString">/local/data/customtrend</value>
+       <value type="QString">/local/data/customtrend</value>
        <value type="QString">/local/etc/sysconfig</value>
+       <value type="QString">/local/data/customtrend</value>
        <value type="QString">/local/root</value>
+       <value type="QString">/local/data/customtrend</value>
        <value type="QString">/local/root</value>
       </valuelist>
       <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedSysroots">
@@ -258,21 +282,37 @@
        <value type="QString">C:/Qt485/imx28/rootfs</value>
        <value type="QString">C:/Qt485/imx28/rootfs</value>
        <value type="QString">C:/Qt485/imx28/rootfs</value>
+       <value type="QString">C:/Qt485/imx28/rootfs</value>
+       <value type="QString">C:/Qt485/imx28/rootfs</value>
+       <value type="QString">C:/Qt485/imx28/rootfs</value>
+       <value type="QString">C:/Qt485/imx28/rootfs</value>
+       <value type="QString">C:/Qt485/imx28/rootfs</value>
+       <value type="QString">C:/Qt485/imx28/rootfs</value>
+       <value type="QString">C:/Qt485/imx28/rootfs</value>
+       <value type="QString">C:/Qt485/imx28/rootfs</value>
       </valuelist>
       <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedTimes">
-       <value type="QDateTime">2018-12-05T15:19:16</value>
+       <value type="QDateTime">2018-12-07T10:39:42</value>
+       <value type="QDateTime">2018-12-09T00:34:09</value>
        <value type="QDateTime">2018-12-05T15:23:52</value>
-       <value type="QDateTime">2018-12-05T15:23:54</value>
-       <value type="QDateTime">2018-12-05T15:19:16</value>
-       <value type="QDateTime">2018-12-05T15:23:51</value>
-       <value type="QDateTime">2018-09-30T13:46:11</value>
-       <value type="QDateTime">2018-12-05T15:19:16</value>
-       <value type="QDateTime">2018-10-02T20:08:36</value>
+       <value type="QDateTime">2018-12-09T00:34:09</value>
+       <value type="QDateTime">2018-12-09T00:34:10</value>
+       <value type="QDateTime">2018-12-09T00:34:10</value>
+       <value type="QDateTime">2018-12-07T10:39:42</value>
+       <value type="QDateTime">2018-12-09T00:34:09</value>
        <value type="QDateTime">2018-10-02T20:08:38</value>
+       <value type="QDateTime">2018-09-30T13:46:11</value>
        <value type="QDateTime">2018-09-30T13:46:13</value>
+       <value type="QDateTime">2018-12-05T15:23:54</value>
+       <value type="QDateTime">2018-12-07T10:39:42</value>
        <value type="QDateTime">2018-12-05T15:23:53</value>
-       <value type="QDateTime">2018-12-05T15:19:16</value>
-       <value type="QDateTime">2018-12-05T15:19:17</value>
+       <value type="QDateTime">2018-12-07T10:39:42</value>
+       <value type="QDateTime">2018-10-02T20:08:36</value>
+       <value type="QDateTime">2018-12-09T00:34:10</value>
+       <value type="QDateTime">2018-12-05T15:23:51</value>
+       <value type="QDateTime">2018-12-09T00:34:10</value>
+       <value type="QDateTime">2018-12-09T00:34:11</value>
+       <value type="QDateTime">2018-12-09T00:34:10</value>
        <value type="QDateTime">2018-12-05T15:24:09</value>
       </valuelist>
       <value type="bool" key="RemoteLinux.GenericDirectUploadStep.Incremental">false</value>
