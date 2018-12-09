@@ -1,5 +1,5 @@
 L
-1;XX_AnIn_A_1     ;000000;-10.0;70.0;Temperatura esterna
-1;MPT91_Temperatur;FF0000;-10.0;70.0;Temperatura puffer
-1;MPT91_Set_point ;00AA00;-10.0;70.0;Set point valvola
-1;XX_AnIn_A_4     ;00007F;-10.0;70.0;Temperatura ritorno
+1;MPT91_Temperatura;FF0000;-10.0;70.0;Temperatura puffer
+1;MPT91_Set_point  ;00AA00;-10.0;70.0;Set point valvola
+1;is_Caldaia_ON    ;007F7F;  0.0;12.0;Caldaia ON/off
+1;XX_AnIn_A_4      ;00007F;-10.0;70.0;Temperatura ritorno
