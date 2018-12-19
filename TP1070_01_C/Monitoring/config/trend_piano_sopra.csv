@@ -1,5 +1,6 @@
 L
-1;XX_AnIn_A_3     ;7F7FFF;-10.0;30.0;Piano sopra (sud)
-1;XX_AnIn_A_2     ;AA55FF;-10.0;30.0;Piano sopra (nord)
-1;XX_AnIn_A_1     ;000000;-10.0;30.0;Temperatura esterna
+1;XX_AnIn_A_3     ;7F7FFF;-6.0;26.0;Piano sopra (sud)
+1;XX_AnIn_A_2     ;AA55FF;-6.0;26.0;Piano sopra (nord)
+1;XX_AnIn_A_1     ;000000;-6.0;26.0;Temperatura esterna
 1;XX_DigIn_8      ;7F7FFF;0;12;Termostato
+1;XX_DigOut_8     ;FF0000;0;12;Forzatura
