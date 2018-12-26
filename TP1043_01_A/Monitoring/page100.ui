@@ -28,7 +28,7 @@
   <property name="styleSheet">
    <string notr="true">QWidget#page100
 {
-background-color: rgb(170, 170, 127);
+	background-color: rgb(0, 0, 0);
 }</string>
   </property>
   <widget class="ATCMbutton" name="atcmButton_20">
@@ -74,8 +74,8 @@ background-color: rgb(170, 170, 127);
    <property name="fontColor">
     <color>
      <red>255</red>
-     <green>255</green>
-     <blue>255</blue>
+     <green>170</green>
+     <blue>0</blue>
     </color>
    </property>
    <property name="bgPressColor">
@@ -144,8 +144,8 @@ background-color: rgb(170, 170, 127);
    <property name="fontColor">
     <color>
      <red>255</red>
-     <green>255</green>
-     <blue>255</blue>
+     <green>170</green>
+     <blue>0</blue>
     </color>
    </property>
    <property name="bgPressColor">
@@ -188,7 +188,7 @@ background-color: rgb(170, 170, 127);
    </property>
    <property name="styleSheet">
     <string notr="true">background-color: rgb(255, 85, 0);
-color: rgb(255, 255, 255);</string>
+color: rgb(0, 0, 0);</string>
    </property>
    <property name="text">
     <string>page100</string>
@@ -240,8 +240,8 @@ color: rgb(255, 255, 255);</string>
    <property name="fontColor">
     <color>
      <red>255</red>
-     <green>255</green>
-     <blue>255</blue>
+     <green>170</green>
+     <blue>0</blue>
     </color>
    </property>
    <property name="bgPressColor">
@@ -327,13 +327,13 @@ color: rgb(255, 255, 255);</string>
    </property>
    <property name="fontColor">
     <color>
-     <red>255</red>
-     <green>85</green>
-     <blue>0</blue>
+     <red>0</red>
+     <green>0</green>
+     <blue>255</blue>
     </color>
    </property>
    <property name="borderWidth">
-    <number>1</number>
+    <number>0</number>
    </property>
    <property name="borderRadius">
     <number>0</number>
@@ -395,7 +395,7 @@ color: rgb(255, 255, 255);</string>
    <property name="fontColor">
     <color>
      <red>255</red>
-     <green>255</green>
+     <green>170</green>
      <blue>0</blue>
     </color>
    </property>
@@ -406,7 +406,7 @@ color: rgb(255, 255, 255);</string>
     <string>reset</string>
    </property>
    <property name="borderWidth">
-    <number>1</number>
+    <number>0</number>
    </property>
    <property name="borderRadius">
     <number>0</number>
@@ -506,22 +506,22 @@ color: rgb(255, 255, 255);</string>
     </font>
    </property>
    <property name="text">
-    <string>x.xx</string>
+    <string>xxxxx.xx</string>
    </property>
    <property name="toolTip">
-    <string>C</string>
+    <string>Ttotal</string>
    </property>
    <property name="whatsThis">
     <string>ATCMlabel widget</string>
    </property>
    <property name="variable">
-    <string>C</string>
+    <string>Ttotal</string>
    </property>
    <property name="prefix">
-    <string>cos(ϕ) </string>
+    <string>tot. </string>
    </property>
    <property name="suffix">
-    <string/>
+    <string> kWh</string>
    </property>
    <property name="refresh">
     <number>200</number>
@@ -548,12 +548,12 @@ color: rgb(255, 255, 255);</string>
    <property name="fontColor">
     <color>
      <red>255</red>
-     <green>85</green>
+     <green>170</green>
      <blue>0</blue>
     </color>
    </property>
    <property name="borderWidth">
-    <number>1</number>
+    <number>0</number>
    </property>
    <property name="borderRadius">
     <number>0</number>
@@ -628,7 +628,7 @@ color: rgb(255, 255, 255);</string>
     </color>
    </property>
    <property name="borderWidth">
-    <number>1</number>
+    <number>0</number>
    </property>
    <property name="borderRadius">
     <number>0</number>
@@ -651,6 +651,9 @@ color: rgb(255, 255, 255);</string>
      <family>DejaVu Sans</family>
      <pointsize>8</pointsize>
     </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 170, 0);</string>
    </property>
    <property name="toolTip">
     <string>Y1=P
@@ -685,6 +688,9 @@ Y2=Pmax</string>
    </property>
    <property name="y1TickLabelVisible">
     <bool>true</bool>
+   </property>
+   <property name="y1Label">
+    <string>P, Pmax [kW]</string>
    </property>
    <property name="Display1">
     <string/>
