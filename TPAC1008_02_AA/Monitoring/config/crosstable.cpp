@@ -1529,7 +1529,7 @@ int PLC_DigIn_8 = 0;
  * Variable PLC_Reserved_1	[ Reserved ]
  */
 
-u_int8_t PLC_Reserved_1 = 0;
+int PLC_Reserved_1 = 0;
 
 
 /*
@@ -5930,13 +5930,13 @@ getStatus_PLC_DigIn_8(void)
 }
 
 int
-doWrite_PLC_Reserved_1(u_int8_t value)
+doWrite_PLC_Reserved_1(int value)
 {
 	return doWrite(ID_PLC_Reserved_1, &value);
 }
 
 int
-addWrite_PLC_Reserved_1(u_int8_t value)
+addWrite_PLC_Reserved_1(int value)
 {
 	return addWrite(ID_PLC_Reserved_1, &value);
 }

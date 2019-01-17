@@ -4,7 +4,7 @@
 #define PT100CONF 7 // PT100_R
 #define PT100FILT 64 // sample filtering
 
-static bool configured;
+static bool configured = false;
 
 void setup(void)
 {
@@ -14,6 +14,10 @@ void setup(void)
 
 void loop(void)
 {
+
+    static unsigned counter = 0;
+
+    // Scrittura configurazione se il CAN interno è OK
     if (! configured && CH0_NETGOOD)
     {
         // analog inputs configuration
@@ -37,19 +41,32 @@ void loop(void)
         // ok, configured
         configured = true;
     }
+    // Loop continuo a configurazione avvenuta
+	if (configured)  {
+		++counter;
+
+		// try restarting openvpn each five minutes
+		if ((counter % 3000) == 0) {
+            if (! isUP_tun0()) {
+                //	doWrite_openvpn_restart_times(openvpn_restart_times + 1);
+				system("/etc/rc.d/init.d/openvpn restart");
+			}
+		}
+		
+	}
 }
 
 bool isUP_wlan0(void)
 {
-    return system("ip addr show dev wlan0 2>&1 | grep -q '\<UP\>'") == 0;
+    return system("ip addr show dev wlan0 2>&1 | grep ',UP' >/dev/null ") == 0;
 }
 
 bool isUP_ppp0(void)
 {
-    return system("ip addr show dev ppp0 2>&1 | grep -q '\<UP\>'") == 0;
+    return system("ip addr show dev ppp0 2>&1 | grep ',UP' >/dev/null ") == 0;
 }
 
 bool isUP_tun0(void)
 {
-    return system("ip addr show dev tun_mrs 2>&1 | grep -q '\<UP\>'") == 0;
+    return system("ip addr show dev tun_mrs 2>&1 | grep ',UP' >/dev/null ") == 0;
 }
