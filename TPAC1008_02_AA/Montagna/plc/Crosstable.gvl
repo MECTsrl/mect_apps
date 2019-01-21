@@ -17,6 +17,7 @@ VAR_GLOBAL
 	is_PPP0_ON AT %QX0.832.0:BOOL;	(* isUP_ppp0() *)
 	is_TUN0_ON AT %QX0.836.0:BOOL;	(* isUP_tun0() *)
 	is_WLAN0_ON AT %QX0.840.0:BOOL;	(* isUP_wlan0() *)
+	is_Convettore1_ON AT %QX0.844.0:BOOL;	(* Vero se il convettore 1 è ON *)
 	RTU0_TYPE_PORT AT %ID0.20000:UDINT;
 	RTU0_BAUDRATE AT %ID0.20004:UDINT;
 	RTU0_STATUS AT %ID0.20008:UDINT;

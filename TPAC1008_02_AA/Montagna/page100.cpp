@@ -102,9 +102,9 @@ void page100::updateData()
         ui->Thermo_4->setValue(value);
     }
 
-    if (counter % 5 == 0) {
+    if (counter % 10 == 0) {
 
-        // every 2.5 seconds: update the network status
+        // every 5 seconds: update the network status
 
         if (is_WLAN0_ON) {
             ui->label_WiFi->setText("WiFi ON");

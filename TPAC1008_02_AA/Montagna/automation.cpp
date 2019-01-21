@@ -21,6 +21,7 @@ void setup(void)
     doWrite_is_PPP0_ON(0);
     doWrite_is_TUN0_ON(0);
     doWrite_SogliaAntigelo(ANTIGELO);
+    doWrite_is_Convettore1_ON(0);
 }
 
 void loop(void)
@@ -107,6 +108,7 @@ void loop(void)
                 // Accende resistenza stop per convettore 1
                 if (! PLC_DigOut_1)  {
                     doWrite_PLC_DigOut_1(1);
+                    doWrite_is_Convettore1_ON(0);
                     fprintf(stderr, "STOP Convettore\n");
                 }
             }
@@ -116,6 +118,7 @@ void loop(void)
                 // Spegne resistenza stop per convettore 1
                 if (PLC_DigOut_1)  {
                     doWrite_PLC_DigOut_1(0);
+                    doWrite_is_Convettore1_ON(1);
                     fprintf(stderr, "START Convettore\n");
                 }
             }

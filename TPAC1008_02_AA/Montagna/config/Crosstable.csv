@@ -204,11 +204,11 @@
 3;H;TotalActiveEnerg               ;REALCDAB ;2   ;RTU       ;               ;3   ;1   ;300342;204 ;2   ;[RO]kWh
 3;H;TotalReactiveEne               ;REALCDAB ;2   ;RTU       ;               ;3   ;1   ;300344;204 ;2   ;[RO]kvarh
 ;;;;;;;;;;;;
-1;P;openvpn_restart_times          ;UDINT    ;0   ;PLC       ;               ;    ;    ;      ;207 ;4   ;[RW]
-1;P;is_PPP0_ON                     ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;207 ;4   ;[RW]isUP_ppp0()
-1;P;is_TUN0_ON                     ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;207 ;4   ;[RW]isUP_tun0()
-1;P;is_WLAN0_ON                    ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;207 ;4   ;[RW]isUP_wlan0()
-;;;;;;;;;;;;
+1;P;openvpn_restart_times          ;UDINT    ;0   ;PLC       ;               ;    ;    ;      ;207 ;5   ;[RW]
+1;P;is_PPP0_ON                     ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;207 ;5   ;[RW]isUP_ppp0()
+1;P;is_TUN0_ON                     ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;207 ;5   ;[RW]isUP_tun0()
+1;P;is_WLAN0_ON                    ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;207 ;5   ;[RW]isUP_wlan0()
+1;P;is_Convettore1_ON              ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;207 ;5   ;[RW]Vero se il convettore 1 è ON
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
