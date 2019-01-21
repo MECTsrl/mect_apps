@@ -1,0 +1,5 @@
+L
+1;PLC_AnIn_1                     ;0055FF;-20;40.0;Temperatura 1
+1;PLC_AnIn_2                     ;00FF00;-20;40.0;Temperatura 2
+1;PLC_AnIn_3                     ;FF0000;-20;40.0;Temperatura 3
+1;PLC_AnIn_4                     ;005500;-20;40.0;Temperatura 4
