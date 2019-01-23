@@ -6621,7 +6621,7 @@ color: rgb(0, 170, 255);</string>
    </property>
    <property name="geometry">
     <rect>
-     <x>590</x>
+     <x>580</x>
      <y>10</y>
      <width>40</width>
      <height>20</height>
@@ -6705,7 +6705,7 @@ color: rgb(0, 170, 255);</string>
    </property>
    <property name="geometry">
     <rect>
-     <x>655</x>
+     <x>645</x>
      <y>10</y>
      <width>25</width>
      <height>20</height>
@@ -6789,7 +6789,7 @@ color: rgb(0, 170, 255);</string>
    </property>
    <property name="geometry">
     <rect>
-     <x>630</x>
+     <x>620</x>
      <y>10</y>
      <width>25</width>
      <height>20</height>
@@ -6996,8 +6996,8 @@ color: rgb(0, 170, 255);</string>
   </customwidget>
  </customwidgets>
  <resources>
-  <include location="resources.qrc"/>
   <include location="systemicons.qrc"/>
+  <include location="resources.qrc"/>
  </resources>
  <connections>
   <connection>

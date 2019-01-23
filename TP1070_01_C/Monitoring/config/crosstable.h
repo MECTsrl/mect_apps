@@ -118,12 +118,6 @@ int doWrite_XX_AnInConf_C(u_int16_t value);
 int addWrite_XX_AnInConf_C(u_int16_t value);
 int getStatus_XX_AnInConf_C(void);
 
-#define ID_XX_AnInConf_D 207
-extern u_int16_t XX_AnInConf_D;	/* Analog inputs configuration MPNC030 module D */
-int doWrite_XX_AnInConf_D(u_int16_t value);
-int addWrite_XX_AnInConf_D(u_int16_t value);
-int getStatus_XX_AnInConf_D(void);
-
 #define ID_XX_AnIn_A_1 208
 extern int16_t XX_AnIn_A_1;	/* Analog input 1 value MPNC030 module A */
 int doWrite_XX_AnIn_A_1(int16_t value);
@@ -196,343 +190,415 @@ int doWrite_XX_AnIn_C_4(int16_t value);
 int addWrite_XX_AnIn_C_4(int16_t value);
 int getStatus_XX_AnIn_C_4(void);
 
-#define ID_XX_AnInConf_1 220
+#define ID_XX_Reserved_1 352
+extern u_int16_t XX_Reserved_1;
+int doWrite_XX_Reserved_1(u_int16_t value);
+int addWrite_XX_Reserved_1(u_int16_t value);
+int getStatus_XX_Reserved_1(void);
+
+#define ID_XX_Reserved_2 353
+extern u_int16_t XX_Reserved_2;
+int doWrite_XX_Reserved_2(u_int16_t value);
+int addWrite_XX_Reserved_2(u_int16_t value);
+int getStatus_XX_Reserved_2(void);
+
+#define ID_XX_ColdJunctionT 354
+extern int16_t XX_ColdJunctionT;	/* Cold junction temperature value */
+int doWrite_XX_ColdJunctionT(int16_t value);
+int addWrite_XX_ColdJunctionT(int16_t value);
+int getStatus_XX_ColdJunctionT(void);
+
+#define ID_XX_Reserved_3 355
+extern u_int16_t XX_Reserved_3;
+int doWrite_XX_Reserved_3(u_int16_t value);
+int addWrite_XX_Reserved_3(u_int16_t value);
+int getStatus_XX_Reserved_3(void);
+
+#define ID_XX_Reserved_4 356
+extern u_int16_t XX_Reserved_4;
+int doWrite_XX_Reserved_4(u_int16_t value);
+int addWrite_XX_Reserved_4(u_int16_t value);
+int getStatus_XX_Reserved_4(void);
+
+#define ID_XX_Reboot 357
+extern int16_t XX_Reboot;	/* MPNC006 chain reboot */
+int doWrite_XX_Reboot(int16_t value);
+int addWrite_XX_Reboot(int16_t value);
+int getStatus_XX_Reboot(void);
+
+#define ID_XX_ModulesNumber 358
+extern u_int16_t XX_ModulesNumber;	/* Number of modules */
+int doWrite_XX_ModulesNumber(u_int16_t value);
+int addWrite_XX_ModulesNumber(u_int16_t value);
+int getStatus_XX_ModulesNumber(void);
+
+#define ID_XX_AnInConf_1 359
 extern u_int16_t XX_AnInConf_1;	/* Analog input 1 configuration MPNC005 */
 int doWrite_XX_AnInConf_1(u_int16_t value);
 int addWrite_XX_AnInConf_1(u_int16_t value);
 int getStatus_XX_AnInConf_1(void);
 
-#define ID_XX_AnInConf_2 221
+#define ID_XX_AnInConf_2 360
 extern u_int16_t XX_AnInConf_2;	/* Analog input 2 configuration MPNC005 */
 int doWrite_XX_AnInConf_2(u_int16_t value);
 int addWrite_XX_AnInConf_2(u_int16_t value);
 int getStatus_XX_AnInConf_2(void);
 
-#define ID_XX_AnIn_1 222
+#define ID_XX_AnIn_1 361
 extern int16_t XX_AnIn_1;	/* Analog input 1 value MPNC005 */
 int doWrite_XX_AnIn_1(int16_t value);
 int addWrite_XX_AnIn_1(int16_t value);
 int getStatus_XX_AnIn_1(void);
 
-#define ID_XX_AnIn_2 223
+#define ID_XX_AnIn_2 362
 extern int16_t XX_AnIn_2;	/* Analog input 2 value MPNC005 */
 int doWrite_XX_AnIn_2(int16_t value);
 int addWrite_XX_AnIn_2(int16_t value);
 int getStatus_XX_AnIn_2(void);
 
-#define ID_XX_DigDir_1 224
+#define ID_XX_DigDir_1 363
 extern int XX_DigDir_1;	/* Digital IO 1 configuration MPNC005 */
 int doWrite_XX_DigDir_1(int value);
 int addWrite_XX_DigDir_1(int value);
 int getStatus_XX_DigDir_1(void);
 
-#define ID_XX_DigDir_2 225
+#define ID_XX_DigDir_2 364
 extern int XX_DigDir_2;	/* Digital IO 2 configuration MPNC005 */
 int doWrite_XX_DigDir_2(int value);
 int addWrite_XX_DigDir_2(int value);
 int getStatus_XX_DigDir_2(void);
 
-#define ID_XX_DigDir_3 226
+#define ID_XX_DigDir_3 365
 extern int XX_DigDir_3;	/* Digital IO 3 configuration MPNC005 */
 int doWrite_XX_DigDir_3(int value);
 int addWrite_XX_DigDir_3(int value);
 int getStatus_XX_DigDir_3(void);
 
-#define ID_XX_DigDir_4 227
+#define ID_XX_DigDir_4 366
 extern int XX_DigDir_4;	/* Digital IO 4 configuration MPNC005 */
 int doWrite_XX_DigDir_4(int value);
 int addWrite_XX_DigDir_4(int value);
 int getStatus_XX_DigDir_4(void);
 
-#define ID_XX_DigDir_5 228
+#define ID_XX_DigDir_5 367
 extern int XX_DigDir_5;	/* Digital IO 5 configuration MPNC005 */
 int doWrite_XX_DigDir_5(int value);
 int addWrite_XX_DigDir_5(int value);
 int getStatus_XX_DigDir_5(void);
 
-#define ID_XX_DigDir_6 229
+#define ID_XX_DigDir_6 368
 extern int XX_DigDir_6;	/* Digital IO 6 configuration MPNC005 */
 int doWrite_XX_DigDir_6(int value);
 int addWrite_XX_DigDir_6(int value);
 int getStatus_XX_DigDir_6(void);
 
-#define ID_XX_DigDir_7 230
+#define ID_XX_DigDir_7 369
 extern int XX_DigDir_7;	/* Digital IO 7 configuration MPNC005 */
 int doWrite_XX_DigDir_7(int value);
 int addWrite_XX_DigDir_7(int value);
 int getStatus_XX_DigDir_7(void);
 
-#define ID_XX_DigDir_8 231
+#define ID_XX_DigDir_8 370
 extern int XX_DigDir_8;	/* Digital IO 8 configuration MPNC005 */
 int doWrite_XX_DigDir_8(int value);
 int addWrite_XX_DigDir_8(int value);
 int getStatus_XX_DigDir_8(void);
 
-#define ID_XX_DigIn_1 232
+#define ID_XX_DigIn_1 371
 extern int XX_DigIn_1;	/* Digital input 1 value MPNC005 */
 int doWrite_XX_DigIn_1(int value);
 int addWrite_XX_DigIn_1(int value);
 int getStatus_XX_DigIn_1(void);
 
-#define ID_XX_DigIn_2 233
+#define ID_XX_DigIn_2 372
 extern int XX_DigIn_2;	/* Digital input 2 value MPNC005 */
 int doWrite_XX_DigIn_2(int value);
 int addWrite_XX_DigIn_2(int value);
 int getStatus_XX_DigIn_2(void);
 
-#define ID_XX_DigIn_3 234
+#define ID_XX_DigIn_3 373
 extern int XX_DigIn_3;	/* Digital input 3 value MPNC005 */
 int doWrite_XX_DigIn_3(int value);
 int addWrite_XX_DigIn_3(int value);
 int getStatus_XX_DigIn_3(void);
 
-#define ID_XX_DigIn_4 235
+#define ID_XX_DigIn_4 374
 extern int XX_DigIn_4;	/* Digital input 4 value MPNC005 */
 int doWrite_XX_DigIn_4(int value);
 int addWrite_XX_DigIn_4(int value);
 int getStatus_XX_DigIn_4(void);
 
-#define ID_XX_DigIn_5 236
+#define ID_XX_DigIn_5 375
 extern int XX_DigIn_5;	/* Digital input 5 value MPNC005 */
 int doWrite_XX_DigIn_5(int value);
 int addWrite_XX_DigIn_5(int value);
 int getStatus_XX_DigIn_5(void);
 
-#define ID_XX_DigIn_6 237
+#define ID_XX_DigIn_6 376
 extern int XX_DigIn_6;	/* Digital input 6 value MPNC005 */
 int doWrite_XX_DigIn_6(int value);
 int addWrite_XX_DigIn_6(int value);
 int getStatus_XX_DigIn_6(void);
 
-#define ID_XX_DigIn_7 238
+#define ID_XX_DigIn_7 377
 extern int XX_DigIn_7;	/* Digital input 7 value MPNC005 */
 int doWrite_XX_DigIn_7(int value);
 int addWrite_XX_DigIn_7(int value);
 int getStatus_XX_DigIn_7(void);
 
-#define ID_XX_DigIn_8 239
+#define ID_XX_DigIn_8 378
 extern int XX_DigIn_8;	/* Digital input 8 value MPNC005 */
 int doWrite_XX_DigIn_8(int value);
 int addWrite_XX_DigIn_8(int value);
 int getStatus_XX_DigIn_8(void);
 
-#define ID_XX_DigOut_1 240
+#define ID_XX_DigOut_1 379
 extern int XX_DigOut_1;	/* Digital output 1 value MPNC005 */
 int doWrite_XX_DigOut_1(int value);
 int addWrite_XX_DigOut_1(int value);
 int getStatus_XX_DigOut_1(void);
 
-#define ID_XX_DigOut_2 241
+#define ID_XX_DigOut_2 380
 extern int XX_DigOut_2;	/* Digital output 2 value MPNC005 */
 int doWrite_XX_DigOut_2(int value);
 int addWrite_XX_DigOut_2(int value);
 int getStatus_XX_DigOut_2(void);
 
-#define ID_XX_DigOut_3 242
+#define ID_XX_DigOut_3 381
 extern int XX_DigOut_3;	/* Digital output 3 value MPNC005 */
 int doWrite_XX_DigOut_3(int value);
 int addWrite_XX_DigOut_3(int value);
 int getStatus_XX_DigOut_3(void);
 
-#define ID_XX_DigOut_4 243
+#define ID_XX_DigOut_4 382
 extern int XX_DigOut_4;	/* Digital output 4 value MPNC005 */
 int doWrite_XX_DigOut_4(int value);
 int addWrite_XX_DigOut_4(int value);
 int getStatus_XX_DigOut_4(void);
 
-#define ID_XX_DigOut_5 244
+#define ID_XX_DigOut_5 383
 extern int XX_DigOut_5;	/* Digital output 5 value MPNC005 */
 int doWrite_XX_DigOut_5(int value);
 int addWrite_XX_DigOut_5(int value);
 int getStatus_XX_DigOut_5(void);
 
-#define ID_XX_DigOut_6 245
+#define ID_XX_DigOut_6 384
 extern int XX_DigOut_6;	/* Digital output 6 value MPNC005 */
 int doWrite_XX_DigOut_6(int value);
 int addWrite_XX_DigOut_6(int value);
 int getStatus_XX_DigOut_6(void);
 
-#define ID_XX_DigOut_7 246
+#define ID_XX_DigOut_7 385
 extern int XX_DigOut_7;	/* Digital output 7 value MPNC005 */
 int doWrite_XX_DigOut_7(int value);
 int addWrite_XX_DigOut_7(int value);
 int getStatus_XX_DigOut_7(void);
 
-#define ID_XX_DigOut_8 247
+#define ID_XX_DigOut_8 386
 extern int XX_DigOut_8;	/* Digital output 8 value MPNC005 */
 int doWrite_XX_DigOut_8(int value);
 int addWrite_XX_DigOut_8(int value);
 int getStatus_XX_DigOut_8(void);
 
-#define ID_SystemVoltage_0 249
+#define ID_XX_AnInFltr_1 387
+extern u_int16_t XX_AnInFltr_1;	/* Analog input filter 1 MPNC006 */
+int doWrite_XX_AnInFltr_1(u_int16_t value);
+int addWrite_XX_AnInFltr_1(u_int16_t value);
+int getStatus_XX_AnInFltr_1(void);
+
+#define ID_XX_AnInFltr_2 388
+extern u_int16_t XX_AnInFltr_2;	/* Analog input filter 2 MPNC006 */
+int doWrite_XX_AnInFltr_2(u_int16_t value);
+int addWrite_XX_AnInFltr_2(u_int16_t value);
+int getStatus_XX_AnInFltr_2(void);
+
+#define ID_XX_WatchDog 389
+extern u_int16_t XX_WatchDog;	/* WatchDog Timer in Seconds */
+int doWrite_XX_WatchDog(u_int16_t value);
+int addWrite_XX_WatchDog(u_int16_t value);
+int getStatus_XX_WatchDog(void);
+
+#define ID_XX_FirmwareVer 411
+extern u_int16_t XX_FirmwareVer;	/* Firmware release MPNC006 */
+int doWrite_XX_FirmwareVer(u_int16_t value);
+int addWrite_XX_FirmwareVer(u_int16_t value);
+int getStatus_XX_FirmwareVer(void);
+
+#define ID_XX_StatusWord 412
+extern u_int16_t XX_StatusWord;	/* Status word MPNC006 */
+int doWrite_XX_StatusWord(u_int16_t value);
+int addWrite_XX_StatusWord(u_int16_t value);
+int getStatus_XX_StatusWord(void);
+
+#define ID_SystemVoltage_0 414
 extern float SystemVoltage_0;	/* 0x0A 0x100C Tensione in V (PRINCIPALE) */
 int doWrite_SystemVoltage_0(float value);
 int addWrite_SystemVoltage_0(float value);
 int getStatus_SystemVoltage_0(void);
 
-#define ID_SysPowerFactor_0 250
+#define ID_SysPowerFactor_0 415
 extern float SysPowerFactor_0;	/* 0x0A 0x101E Fattore di Potenza 0 (PRINCIPALE) */
 int doWrite_SysPowerFactor_0(float value);
 int addWrite_SysPowerFactor_0(float value);
 int getStatus_SysPowerFactor_0(void);
 
-#define ID_SysActivePower_0 251
+#define ID_SysActivePower_0 416
 extern float SysActivePower_0;	/* 0x0A 0x1026 Potenza Attiva 0 in W (PRINCIPALE) */
 int doWrite_SysActivePower_0(float value);
 int addWrite_SysActivePower_0(float value);
 int getStatus_SysActivePower_0(void);
 
-#define ID_SysImpActiveEnergy_0 252
+#define ID_SysImpActiveEnergy_0 417
 extern float SysImpActiveEnergy_0;	/* 0x0A 0x1106 Energia Attiva Importata 0 in Wh (PRINCIPALE) */
 int doWrite_SysImpActiveEnergy_0(float value);
 int addWrite_SysImpActiveEnergy_0(float value);
 int getStatus_SysImpActiveEnergy_0(void);
 
-#define ID_SysExpActiveEnergy_0 253
+#define ID_SysExpActiveEnergy_0 418
 extern float SysExpActiveEnergy_0;	/* 0x0A 0x110E Energia Attiva Esportata 0 in Wh (PRINCIPALE) */
 int doWrite_SysExpActiveEnergy_0(float value);
 int addWrite_SysExpActiveEnergy_0(float value);
 int getStatus_SysExpActiveEnergy_0(void);
 
-#define ID_SysActivePower_1 254
+#define ID_SysActivePower_1 419
 extern float SysActivePower_1;	/* 0x0B 0x1026 Potenza Attiva 0 in W (FOTOVOLTAICO) */
 int doWrite_SysActivePower_1(float value);
 int addWrite_SysActivePower_1(float value);
 int getStatus_SysActivePower_1(void);
 
-#define ID_SysImpActiveEnergy_1 255
+#define ID_SysImpActiveEnergy_1 420
 extern float SysImpActiveEnergy_1;	/* 0x0B 0x1106 Energia Attiva Importata 1 in Wh (FOTOVOLTAICO) */
 int doWrite_SysImpActiveEnergy_1(float value);
 int addWrite_SysImpActiveEnergy_1(float value);
 int getStatus_SysImpActiveEnergy_1(void);
 
-#define ID_SysExpActiveEnergy_1 256
+#define ID_SysExpActiveEnergy_1 421
 extern float SysExpActiveEnergy_1;	/* 0x0B 0x110E Energia Attiva Esportata 0 in Wh (FOTOVOLTAICO) */
 int doWrite_SysExpActiveEnergy_1(float value);
 int addWrite_SysExpActiveEnergy_1(float value);
 int getStatus_SysExpActiveEnergy_1(void);
 
-#define ID_SysActivePower_2 257
+#define ID_SysActivePower_2 422
 extern float SysActivePower_2;	/* 0x0C 0x1026 Potenza Attiva 0 in W (ESTERNI) */
 int doWrite_SysActivePower_2(float value);
 int addWrite_SysActivePower_2(float value);
 int getStatus_SysActivePower_2(void);
 
-#define ID_SysImpActiveEnergy_2 258
+#define ID_SysImpActiveEnergy_2 423
 extern float SysImpActiveEnergy_2;	/* 0x0C 0x1106 Energia Attiva Importata 0 in Wh (ESTERNI) */
 int doWrite_SysImpActiveEnergy_2(float value);
 int addWrite_SysImpActiveEnergy_2(float value);
 int getStatus_SysImpActiveEnergy_2(void);
 
-#define ID_SysActivePower_3 259
+#define ID_SysActivePower_3 424
 extern float SysActivePower_3;	/* 0x0D 0x1026 Potenza Attiva 0 in W (PIANO SOPRA) */
 int doWrite_SysActivePower_3(float value);
 int addWrite_SysActivePower_3(float value);
 int getStatus_SysActivePower_3(void);
 
-#define ID_SysImpActiveEnergy_3 260
+#define ID_SysImpActiveEnergy_3 425
 extern float SysImpActiveEnergy_3;	/* 0x0D 0x1106 Energia Attiva Importata 0 in Wh (PIANO SOPRA) */
 int doWrite_SysImpActiveEnergy_3(float value);
 int addWrite_SysImpActiveEnergy_3(float value);
 int getStatus_SysImpActiveEnergy_3(void);
 
-#define ID_SysActivePower_4 261
+#define ID_SysActivePower_4 426
 extern float SysActivePower_4;	/* 0x0E 0x1026 Potenza Attiva 0 in W (PIANO TERRA) */
 int doWrite_SysActivePower_4(float value);
 int addWrite_SysActivePower_4(float value);
 int getStatus_SysActivePower_4(void);
 
-#define ID_SysImpActiveEnergy_4 262
+#define ID_SysImpActiveEnergy_4 427
 extern float SysImpActiveEnergy_4;	/* 0x0E 0x1106 Energia Attiva Importata 0 in Wh (PIANO TERRA) */
 int doWrite_SysImpActiveEnergy_4(float value);
 int addWrite_SysImpActiveEnergy_4(float value);
 int getStatus_SysImpActiveEnergy_4(void);
 
-#define ID_SysActivePower_5 263
+#define ID_SysActivePower_5 428
 extern float SysActivePower_5;	/* 0x0F 0x1026 Potenza Attiva 0 in W (PIANO SOTTO) */
 int doWrite_SysActivePower_5(float value);
 int addWrite_SysActivePower_5(float value);
 int getStatus_SysActivePower_5(void);
 
-#define ID_SysImpActiveEnergy_5 264
+#define ID_SysImpActiveEnergy_5 429
 extern float SysImpActiveEnergy_5;	/* 0x0F 0x1106 Energia Attiva Importata 0 in Wh (PIANO SOTTO) */
 int doWrite_SysImpActiveEnergy_5(float value);
 int addWrite_SysImpActiveEnergy_5(float value);
 int getStatus_SysImpActiveEnergy_5(void);
 
-#define ID_SysActivePower_6 265
+#define ID_SysActivePower_6 430
 extern float SysActivePower_6;	/* 0x10 0x1026 Potenza Attiva 0 in W (AUTO ELETTRICA) */
 int doWrite_SysActivePower_6(float value);
 int addWrite_SysActivePower_6(float value);
 int getStatus_SysActivePower_6(void);
 
-#define ID_SysImpActiveEnergy_6 266
+#define ID_SysImpActiveEnergy_6 431
 extern float SysImpActiveEnergy_6;	/* 0x10 0x1106 Energia Attiva Importata 0 in Wh (AUTO ELETTRICA) */
 int doWrite_SysImpActiveEnergy_6(float value);
 int addWrite_SysImpActiveEnergy_6(float value);
 int getStatus_SysImpActiveEnergy_6(void);
 
-#define ID_SysActivePower_7 267
+#define ID_SysActivePower_7 432
 extern float SysActivePower_7;	/* 0x11 0x1026 Potenza Attiva 0 in W (DEUMIDIFICATORE) */
 int doWrite_SysActivePower_7(float value);
 int addWrite_SysActivePower_7(float value);
 int getStatus_SysActivePower_7(void);
 
-#define ID_SysImpActiveEnergy_7 268
+#define ID_SysImpActiveEnergy_7 433
 extern float SysImpActiveEnergy_7;	/* 0x11 0x1106 Energia Attiva Importata 0 in Wh (DEUMIDIFICATORE) */
 int doWrite_SysImpActiveEnergy_7(float value);
 int addWrite_SysImpActiveEnergy_7(float value);
 int getStatus_SysImpActiveEnergy_7(void);
 
-#define ID_SysActivePower_8 269
+#define ID_SysActivePower_8 434
 extern float SysActivePower_8;	/* 0x12 0x1026 Potenza Attiva 0 in W (LAVANDERIA) */
 int doWrite_SysActivePower_8(float value);
 int addWrite_SysActivePower_8(float value);
 int getStatus_SysActivePower_8(void);
 
-#define ID_SysImpActiveEnergy_8 270
+#define ID_SysImpActiveEnergy_8 435
 extern float SysImpActiveEnergy_8;	/* 0x12 0x1106 Energia Attiva Importata 0 in Wh (LAVANDERIA) */
 int doWrite_SysImpActiveEnergy_8(float value);
 int addWrite_SysImpActiveEnergy_8(float value);
 int getStatus_SysImpActiveEnergy_8(void);
 
-#define ID_SysActivePower_9 271
+#define ID_SysActivePower_9 436
 extern float SysActivePower_9;	/* 0x13 0x1026 Potenza Attiva 0 in W (UPS) */
 int doWrite_SysActivePower_9(float value);
 int addWrite_SysActivePower_9(float value);
 int getStatus_SysActivePower_9(void);
 
-#define ID_SysApparentPower_9 272
+#define ID_SysApparentPower_9 437
 extern float SysApparentPower_9;	/* 0x13 0x102E Potenza Apparente 0 in VA (UPS) */
 int doWrite_SysApparentPower_9(float value);
 int addWrite_SysApparentPower_9(float value);
 int getStatus_SysApparentPower_9(void);
 
-#define ID_SysImpActiveEnergy_9 273
+#define ID_SysImpActiveEnergy_9 438
 extern float SysImpActiveEnergy_9;	/* 0x13 0x1106 Energia Attiva Importata 0 in Wh (UPS) */
 int doWrite_SysImpActiveEnergy_9(float value);
 int addWrite_SysImpActiveEnergy_9(float value);
 int getStatus_SysImpActiveEnergy_9(void);
 
-#define ID_SysActivePower_10 274
+#define ID_SysActivePower_10 439
 extern float SysActivePower_10;	/* 0x14 0x1026 Potenza Attiva 0 in W (Puffer) */
 int doWrite_SysActivePower_10(float value);
 int addWrite_SysActivePower_10(float value);
 int getStatus_SysActivePower_10(void);
 
-#define ID_SysImpActiveEnergy_10 275
+#define ID_SysImpActiveEnergy_10 440
 extern float SysImpActiveEnergy_10;	/* 0x14 0x1106 Energia Attiva Importata 0 in Wh (Puffer) */
 int doWrite_SysImpActiveEnergy_10(float value);
 int addWrite_SysImpActiveEnergy_10(float value);
 int getStatus_SysImpActiveEnergy_10(void);
 
-#define ID_SysActivePower_11 276
+#define ID_SysActivePower_11 441
 extern float SysActivePower_11;	/* 0x14 0x1026 Potenza Attiva 0 in W (Caldaia) */
 int doWrite_SysActivePower_11(float value);
 int addWrite_SysActivePower_11(float value);
 int getStatus_SysActivePower_11(void);
 
-#define ID_SysImpActiveEnergy_11 277
+#define ID_SysImpActiveEnergy_11 442
 extern float SysImpActiveEnergy_11;	/* 0x14 0x1106 Energia Attiva Importata 0 in Wh (Caldaia) */
 int doWrite_SysImpActiveEnergy_11(float value);
 int addWrite_SysImpActiveEnergy_11(float value);

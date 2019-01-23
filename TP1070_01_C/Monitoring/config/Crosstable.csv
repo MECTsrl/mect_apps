@@ -198,248 +198,248 @@
 2;F;MPT91_Set_point                ;INT      ;1   ;RTU       ;               ;0   ;1   ;257   ;198 ;1   ;[RW]0x0101
 2;P;MPT91_Isteresi_OnOff           ;INT      ;1   ;RTU       ;               ;0   ;1   ;267   ;199 ;1   ;[RW]0x010B
 ;;;;;;;;;;;;
-2;P;XX_Baudrate                    ;UINT     ;0   ;RTU       ;               ;3   ;1   ;1     ;201 ;19  ;[RO]Baudrate MPNC005 device
-2;P;XX_NodeID                      ;UINT     ;0   ;RTU       ;               ;3   ;1   ;2     ;201 ;19  ;[RO]Address MPNC005 device
-2;P;XX_HeartBeat                   ;UDINT    ;0   ;RTU       ;               ;3   ;1   ;3     ;201 ;19  ;[RO]Life time MPNC005 device
-2;P;XX_AnInConf_A                  ;UINT     ;0   ;RTU       ;               ;3   ;1   ;5     ;201 ;19  ;[RW]Analog inputs configuration MPNC030 module A
-2;P;XX_AnInConf_B                  ;UINT     ;0   ;RTU       ;               ;3   ;1   ;6     ;201 ;19  ;[RW]Analog inputs configuration MPNC030 module B
-2;P;XX_AnInConf_C                  ;UINT     ;0   ;RTU       ;               ;3   ;1   ;7     ;201 ;19  ;[RW]Analog inputs configuration MPNC030 module C
-2;P;XX_AnInConf_D                  ;UINT     ;0   ;RTU       ;               ;3   ;1   ;8     ;201 ;19  ;[RW]Analog inputs configuration MPNC030 module D
-2;F;XX_AnIn_A_1                    ;INT      ;1   ;RTU       ;               ;3   ;1   ;9     ;201 ;19  ;[RO]Analog input 1 value MPNC030 module A
-2;F;XX_AnIn_A_2                    ;INT      ;1   ;RTU       ;               ;3   ;1   ;10    ;201 ;19  ;[RO]Analog input 2 value MPNC030 module A
-2;F;XX_AnIn_A_3                    ;INT      ;1   ;RTU       ;               ;3   ;1   ;11    ;201 ;19  ;[RO]Analog input 3 value MPNC030 module A
-2;F;XX_AnIn_A_4                    ;INT      ;1   ;RTU       ;               ;3   ;1   ;12    ;201 ;19  ;[RO]Analog input 4 value MPNC030 module A
-2;F;XX_AnIn_B_1                    ;INT      ;1   ;RTU       ;               ;3   ;1   ;13    ;201 ;19  ;[RO]Analog input 1 value MPNC030 module B
-2;F;XX_AnIn_B_2                    ;INT      ;1   ;RTU       ;               ;3   ;1   ;14    ;201 ;19  ;[RO]Analog input 2 value MPNC030 module B
-2;F;XX_AnIn_B_3                    ;INT      ;1   ;RTU       ;               ;3   ;1   ;15    ;201 ;19  ;[RO]Analog input 3 value MPNC030 module B
-2;P;XX_AnIn_B_4                    ;INT      ;1   ;RTU       ;               ;3   ;1   ;16    ;201 ;19  ;[RO]Analog input 4 value MPNC030 module B
-2;F;XX_AnIn_C_1                    ;INT      ;1   ;RTU       ;               ;3   ;1   ;17    ;201 ;19  ;[RO]Analog input 1 value MPNC030 module C
-2;F;XX_AnIn_C_2                    ;INT      ;1   ;RTU       ;               ;3   ;1   ;18    ;201 ;19  ;[RO]Analog input 2 value MPNC030 module C
-2;F;XX_AnIn_C_3                    ;INT      ;1   ;RTU       ;               ;3   ;1   ;19    ;201 ;19  ;[RO]Analog input 3 value MPNC030 module C
-2;P;XX_AnIn_C_4                    ;INT      ;1   ;RTU       ;               ;3   ;1   ;20    ;201 ;19  ;[RO]Analog input 4 value MPNC030 module C
-2;P;XX_AnInConf_1                  ;UINT     ;0   ;RTU       ;               ;3   ;1   ;40    ;220 ;28  ;[RW]Analog input 1 configuration MPNC005
-2;P;XX_AnInConf_2                  ;UINT     ;0   ;RTU       ;               ;3   ;1   ;41    ;220 ;28  ;[RW]Analog input 2 configuration MPNC005
-2;P;XX_AnIn_1                      ;INT      ;1   ;RTU       ;               ;3   ;1   ;42    ;220 ;28  ;[RO]Analog input 1 value MPNC005
-2;P;XX_AnIn_2                      ;INT      ;1   ;RTU       ;               ;3   ;1   ;43    ;220 ;28  ;[RO]Analog input 2 value MPNC005
-2;P;XX_DigDir_1                    ;BYTE_BIT ;1   ;RTU       ;               ;3   ;1   ;44    ;220 ;28  ;[RW]Digital IO 1 configuration MPNC005
-2;P;XX_DigDir_2                    ;BYTE_BIT ;2   ;RTU       ;               ;3   ;1   ;44    ;220 ;28  ;[RW]Digital IO 2 configuration MPNC005
-2;P;XX_DigDir_3                    ;BYTE_BIT ;3   ;RTU       ;               ;3   ;1   ;44    ;220 ;28  ;[RW]Digital IO 3 configuration MPNC005
-2;P;XX_DigDir_4                    ;BYTE_BIT ;4   ;RTU       ;               ;3   ;1   ;44    ;220 ;28  ;[RW]Digital IO 4 configuration MPNC005
-2;P;XX_DigDir_5                    ;BYTE_BIT ;5   ;RTU       ;               ;3   ;1   ;44    ;220 ;28  ;[RW]Digital IO 5 configuration MPNC005
-2;P;XX_DigDir_6                    ;BYTE_BIT ;6   ;RTU       ;               ;3   ;1   ;44    ;220 ;28  ;[RW]Digital IO 6 configuration MPNC005
-2;P;XX_DigDir_7                    ;BYTE_BIT ;7   ;RTU       ;               ;3   ;1   ;44    ;220 ;28  ;[RW]Digital IO 7 configuration MPNC005
-2;P;XX_DigDir_8                    ;BYTE_BIT ;8   ;RTU       ;               ;3   ;1   ;44    ;220 ;28  ;[RW]Digital IO 8 configuration MPNC005
-2;F;XX_DigIn_1                     ;BYTE_BIT ;1   ;RTU       ;               ;3   ;1   ;45    ;220 ;28  ;[RO]Digital input 1 value MPNC005
-2;F;XX_DigIn_2                     ;BYTE_BIT ;2   ;RTU       ;               ;3   ;1   ;45    ;220 ;28  ;[RO]Digital input 2 value MPNC005
-2;F;XX_DigIn_3                     ;BYTE_BIT ;3   ;RTU       ;               ;3   ;1   ;45    ;220 ;28  ;[RO]Digital input 3 value MPNC005
-2;F;XX_DigIn_4                     ;BYTE_BIT ;4   ;RTU       ;               ;3   ;1   ;45    ;220 ;28  ;[RO]Digital input 4 value MPNC005
-2;F;XX_DigIn_5                     ;BYTE_BIT ;5   ;RTU       ;               ;3   ;1   ;45    ;220 ;28  ;[RO]Digital input 5 value MPNC005
-2;F;XX_DigIn_6                     ;BYTE_BIT ;6   ;RTU       ;               ;3   ;1   ;45    ;220 ;28  ;[RO]Digital input 6 value MPNC005
-2;F;XX_DigIn_7                     ;BYTE_BIT ;7   ;RTU       ;               ;3   ;1   ;45    ;220 ;28  ;[RO]Digital input 7 value MPNC005
-2;F;XX_DigIn_8                     ;BYTE_BIT ;8   ;RTU       ;               ;3   ;1   ;45    ;220 ;28  ;[RO]Digital input 8 value MPNC005
-2;F;XX_DigOut_1                    ;BYTE_BIT ;1   ;RTU       ;               ;3   ;1   ;46    ;220 ;28  ;[RW]Digital output 1 value MPNC005
-2;F;XX_DigOut_2                    ;BYTE_BIT ;2   ;RTU       ;               ;3   ;1   ;46    ;220 ;28  ;[RW]Digital output 2 value MPNC005
-2;F;XX_DigOut_3                    ;BYTE_BIT ;3   ;RTU       ;               ;3   ;1   ;46    ;220 ;28  ;[RW]Digital output 3 value MPNC005
-2;F;XX_DigOut_4                    ;BYTE_BIT ;4   ;RTU       ;               ;3   ;1   ;46    ;220 ;28  ;[RW]Digital output 4 value MPNC005
-2;F;XX_DigOut_5                    ;BYTE_BIT ;5   ;RTU       ;               ;3   ;1   ;46    ;220 ;28  ;[RW]Digital output 5 value MPNC005
-2;F;XX_DigOut_6                    ;BYTE_BIT ;6   ;RTU       ;               ;3   ;1   ;46    ;220 ;28  ;[RW]Digital output 6 value MPNC005
-2;F;XX_DigOut_7                    ;BYTE_BIT ;7   ;RTU       ;               ;3   ;1   ;46    ;220 ;28  ;[RW]Digital output 7 value MPNC005
-2;F;XX_DigOut_8                    ;BYTE_BIT ;8   ;RTU       ;               ;3   ;1   ;46    ;220 ;28  ;[RW]Digital output 8 value MPNC005
-;;;;;;;;;;;;
-3;F;SystemVoltage_0                ;REALCDAB ;1   ;RTU       ;               ;3   ;10  ;4108  ;249 ;1   ;[RO]0x0A 0x100C Tensione in V (PRINCIPALE)
-3;P;SysPowerFactor_0               ;REALCDAB ;3   ;RTU       ;               ;3   ;10  ;4126  ;250 ;1   ;[RO]0x0A 0x101E Fattore di Potenza 0 (PRINCIPALE)
-3;F;SysActivePower_0               ;REALCDAB ;0   ;RTU       ;               ;3   ;10  ;4134  ;251 ;1   ;[RO]0x0A 0x1026 Potenza Attiva 0 in W (PRINCIPALE)
-3;S;SysImpActiveEnergy_0           ;REALCDAB ;1   ;RTU       ;               ;3   ;10  ;4358  ;252 ;1   ;[RO]0x0A 0x1106 Energia Attiva Importata 0 in Wh (PRINCIPALE)
-3;S;SysExpActiveEnergy_0           ;REALCDAB ;1   ;RTU       ;               ;3   ;10  ;4366  ;253 ;1   ;[RO]0x0A 0x110E Energia Attiva Esportata 0 in Wh (PRINCIPALE)
-3;F;SysActivePower_1               ;REALCDAB ;0   ;RTU       ;               ;3   ;11  ;4134  ;254 ;1   ;[RO]0x0B 0x1026 Potenza Attiva 0 in W (FOTOVOLTAICO)
-3;S;SysImpActiveEnergy_1           ;REALCDAB ;1   ;RTU       ;               ;3   ;11  ;4358  ;255 ;1   ;[RO]0x0B 0x1106 Energia Attiva Importata 1 in Wh (FOTOVOLTAICO)
-3;S;SysExpActiveEnergy_1           ;REALCDAB ;1   ;RTU       ;               ;3   ;11  ;4366  ;256 ;1   ;[RO]0x0B 0x110E Energia Attiva Esportata 0 in Wh (FOTOVOLTAICO)
-3;F;SysActivePower_2               ;REALCDAB ;0   ;RTU       ;               ;3   ;12  ;4134  ;257 ;1   ;[RO]0x0C 0x1026 Potenza Attiva 0 in W (ESTERNI)
-3;S;SysImpActiveEnergy_2           ;REALCDAB ;1   ;RTU       ;               ;3   ;12  ;4358  ;258 ;1   ;[RO]0x0C 0x1106 Energia Attiva Importata 0 in Wh (ESTERNI)
-3;F;SysActivePower_3               ;REALCDAB ;0   ;RTU       ;               ;3   ;13  ;4134  ;259 ;1   ;[RO]0x0D 0x1026 Potenza Attiva 0 in W (PIANO SOPRA)
-3;S;SysImpActiveEnergy_3           ;REALCDAB ;1   ;RTU       ;               ;3   ;13  ;4358  ;260 ;1   ;[RO]0x0D 0x1106 Energia Attiva Importata 0 in Wh (PIANO SOPRA)
-3;F;SysActivePower_4               ;REALCDAB ;0   ;RTU       ;               ;3   ;14  ;4134  ;261 ;1   ;[RO]0x0E 0x1026 Potenza Attiva 0 in W (PIANO TERRA)
-3;S;SysImpActiveEnergy_4           ;REALCDAB ;1   ;RTU       ;               ;3   ;14  ;4358  ;262 ;1   ;[RO]0x0E 0x1106 Energia Attiva Importata 0 in Wh (PIANO TERRA)
-3;F;SysActivePower_5               ;REALCDAB ;0   ;RTU       ;               ;3   ;15  ;4134  ;263 ;1   ;[RO]0x0F 0x1026 Potenza Attiva 0 in W (PIANO SOTTO)
-3;S;SysImpActiveEnergy_5           ;REALCDAB ;1   ;RTU       ;               ;3   ;15  ;4358  ;264 ;1   ;[RO]0x0F 0x1106 Energia Attiva Importata 0 in Wh (PIANO SOTTO)
-3;F;SysActivePower_6               ;REALCDAB ;0   ;RTU       ;               ;3   ;16  ;4134  ;265 ;1   ;[RO]0x10 0x1026 Potenza Attiva 0 in W (AUTO ELETTRICA)
-3;S;SysImpActiveEnergy_6           ;REALCDAB ;1   ;RTU       ;               ;3   ;16  ;4358  ;266 ;1   ;[RO]0x10 0x1106 Energia Attiva Importata 0 in Wh (AUTO ELETTRICA)
-3;F;SysActivePower_7               ;REALCDAB ;0   ;RTU       ;               ;3   ;17  ;4134  ;267 ;1   ;[RO]0x11 0x1026 Potenza Attiva 0 in W (DEUMIDIFICATORE)
-3;S;SysImpActiveEnergy_7           ;REALCDAB ;1   ;RTU       ;               ;3   ;17  ;4358  ;268 ;1   ;[RO]0x11 0x1106 Energia Attiva Importata 0 in Wh (DEUMIDIFICATORE)
-3;F;SysActivePower_8               ;REALCDAB ;0   ;RTU       ;               ;3   ;18  ;4134  ;269 ;1   ;[RO]0x12 0x1026 Potenza Attiva 0 in W (LAVANDERIA)
-3;S;SysImpActiveEnergy_8           ;REALCDAB ;1   ;RTU       ;               ;3   ;18  ;4358  ;270 ;1   ;[RO]0x12 0x1106 Energia Attiva Importata 0 in Wh (LAVANDERIA)
-3;F;SysActivePower_9               ;REALCDAB ;0   ;RTU       ;               ;3   ;19  ;4134  ;271 ;1   ;[RO]0x13 0x1026 Potenza Attiva 0 in W (UPS)
-3;F;SysApparentPower_9             ;REALCDAB ;0   ;RTU       ;               ;3   ;19  ;4142  ;272 ;1   ;[RO]0x13 0x102E Potenza Apparente 0 in VA (UPS)
-3;S;SysImpActiveEnergy_9           ;REALCDAB ;1   ;RTU       ;               ;3   ;19  ;4358  ;273 ;1   ;[RO]0x13 0x1106 Energia Attiva Importata 0 in Wh (UPS)
-3;F;SysActivePower_10              ;REALCDAB ;0   ;RTU       ;               ;3   ;20  ;4134  ;274 ;1   ;[RO]0x14 0x1026 Potenza Attiva 0 in W (Puffer)
-3;S;SysImpActiveEnergy_10          ;REALCDAB ;1   ;RTU       ;               ;3   ;20  ;4358  ;275 ;1   ;[RO]0x14 0x1106 Energia Attiva Importata 0 in Wh (Puffer)
-3;P;SysActivePower_11              ;REALCDAB ;0   ;PLC       ;               ;    ;    ;      ;276 ;2   ;[RW]0x14 0x1026 Potenza Attiva 0 in W (Caldaia)
-3;P;SysImpActiveEnergy_11          ;REALCDAB ;1   ;PLC       ;               ;    ;    ;      ;276 ;2   ;[RW]0x14 0x1106 Energia Attiva Importata 0 in Wh (Caldaia)
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
+2;P;XX_Baudrate                    ;UINT     ;0   ;RTU       ;               ;3   ;1   ;1     ;201 ;6   ;[RO]Baudrate MPNC005 device
+2;P;XX_NodeID                      ;UINT     ;0   ;RTU       ;               ;3   ;1   ;2     ;201 ;6   ;[RO]Address MPNC005 device
+2;P;XX_HeartBeat                   ;UDINT    ;0   ;RTU       ;               ;3   ;1   ;3     ;201 ;6   ;[RO]Life time MPNC005 device
+2;P;XX_AnInConf_A                  ;UINT     ;0   ;RTU       ;               ;3   ;1   ;5     ;201 ;6   ;[RW]Analog inputs configuration MPNC030 module A
+2;P;XX_AnInConf_B                  ;UINT     ;0   ;RTU       ;               ;3   ;1   ;6     ;201 ;6   ;[RW]Analog inputs configuration MPNC030 module B
+2;P;XX_AnInConf_C                  ;UINT     ;0   ;RTU       ;               ;3   ;1   ;7     ;201 ;6   ;[RW]Analog inputs configuration MPNC030 module C
+0;P;XX_AnInConf_D                  ;UINT     ;0   ;RTU       ;               ;3   ;1   ;8     ;207 ;1   ;[RW]Analog inputs configuration MPNC030 module D
+2;F;XX_AnIn_A_1                    ;INT      ;1   ;RTU       ;               ;3   ;1   ;9     ;208 ;12  ;[RO]Analog input 1 value MPNC030 module A
+2;F;XX_AnIn_A_2                    ;INT      ;1   ;RTU       ;               ;3   ;1   ;10    ;208 ;12  ;[RO]Analog input 2 value MPNC030 module A
+2;F;XX_AnIn_A_3                    ;INT      ;1   ;RTU       ;               ;3   ;1   ;11    ;208 ;12  ;[RO]Analog input 3 value MPNC030 module A
+2;F;XX_AnIn_A_4                    ;INT      ;1   ;RTU       ;               ;3   ;1   ;12    ;208 ;12  ;[RO]Analog input 4 value MPNC030 module A
+2;F;XX_AnIn_B_1                    ;INT      ;1   ;RTU       ;               ;3   ;1   ;13    ;208 ;12  ;[RO]Analog input 1 value MPNC030 module B
+2;F;XX_AnIn_B_2                    ;INT      ;1   ;RTU       ;               ;3   ;1   ;14    ;208 ;12  ;[RO]Analog input 2 value MPNC030 module B
+2;F;XX_AnIn_B_3                    ;INT      ;1   ;RTU       ;               ;3   ;1   ;15    ;208 ;12  ;[RO]Analog input 3 value MPNC030 module B
+2;P;XX_AnIn_B_4                    ;INT      ;1   ;RTU       ;               ;3   ;1   ;16    ;208 ;12  ;[RO]Analog input 4 value MPNC030 module B
+2;F;XX_AnIn_C_1                    ;INT      ;1   ;RTU       ;               ;3   ;1   ;17    ;208 ;12  ;[RO]Analog input 1 value MPNC030 module C
+2;F;XX_AnIn_C_2                    ;INT      ;1   ;RTU       ;               ;3   ;1   ;18    ;208 ;12  ;[RO]Analog input 2 value MPNC030 module C
+2;F;XX_AnIn_C_3                    ;INT      ;1   ;RTU       ;               ;3   ;1   ;19    ;208 ;12  ;[RO]Analog input 3 value MPNC030 module C
+2;P;XX_AnIn_C_4                    ;INT      ;1   ;RTU       ;               ;3   ;1   ;20    ;208 ;12  ;[RO]Analog input 4 value MPNC030 module C
+0;P;XX_AnIn_D_1                    ;INT      ;0   ;RTU       ;               ;3   ;1   ;21    ;220 ;1   ;[RO]Analog input 1 value MPNC030 module D
+0;P;XX_AnIn_D_2                    ;INT      ;0   ;RTU       ;               ;3   ;1   ;22    ;221 ;1   ;[RO]Analog input 2 value MPNC030 module D
+0;P;XX_AnIn_D_3                    ;INT      ;0   ;RTU       ;               ;3   ;1   ;23    ;222 ;1   ;[RO]Analog input 3 value MPNC030 module D
+0;P;XX_AnIn_D_4                    ;INT      ;0   ;RTU       ;               ;3   ;1   ;24    ;223 ;1   ;[RO]Analog input 4 value MPNC030 module D
+0;P;XX_DigOut_A_1                  ;WORD_BIT ;1   ;RTU       ;               ;3   ;1   ;25    ;224 ;1   ;[RW]Digital output value bit 1 MPNC020 02 module A
+0;P;XX_DigOut_A_2                  ;WORD_BIT ;2   ;RTU       ;               ;3   ;1   ;25    ;225 ;1   ;[RW]Digital output value bit 2 MPNC020 02 module A
+0;P;XX_DigOut_A_3                  ;WORD_BIT ;3   ;RTU       ;               ;3   ;1   ;25    ;226 ;1   ;[RW]Digital output value bit 3 MPNC020 02 module A
+0;P;XX_DigOut_A_4                  ;WORD_BIT ;4   ;RTU       ;               ;3   ;1   ;25    ;227 ;1   ;[RW]Digital output value bit 4 MPNC020 02 module A
+0;P;XX_DigOut_A_5                  ;WORD_BIT ;5   ;RTU       ;               ;3   ;1   ;25    ;228 ;1   ;[RW]Digital output value bit 5 MPNC020 02 module A
+0;P;XX_DigOut_A_6                  ;WORD_BIT ;6   ;RTU       ;               ;3   ;1   ;25    ;229 ;1   ;[RW]Digital output value bit 6 MPNC020 02 module A
+0;P;XX_DigOut_A_7                  ;WORD_BIT ;7   ;RTU       ;               ;3   ;1   ;25    ;230 ;1   ;[RW]Digital output value bit 7 MPNC020 02 module A
+0;P;XX_DigOut_A_8                  ;WORD_BIT ;8   ;RTU       ;               ;3   ;1   ;25    ;231 ;1   ;[RW]Digital output value bit 8 MPNC020 02 module A
+0;P;XX_DigOut_A_9                  ;WORD_BIT ;9   ;RTU       ;               ;3   ;1   ;25    ;232 ;1   ;[RW]Digital output value bit 9 MPNC020 02 module A
+0;P;XX_DigOut_A_10                 ;WORD_BIT ;10  ;RTU       ;               ;3   ;1   ;25    ;233 ;1   ;[RW]Digital output value bit 10 MPNC020 02 module A
+0;P;XX_DigOut_A_11                 ;WORD_BIT ;11  ;RTU       ;               ;3   ;1   ;25    ;234 ;1   ;[RW]Digital output value bit 11 MPNC020 02 module A
+0;P;XX_DigOut_A_12                 ;WORD_BIT ;12  ;RTU       ;               ;3   ;1   ;25    ;235 ;1   ;[RW]Digital output value bit 12 MPNC020 02 module A
+0;P;XX_DigOut_A_13                 ;WORD_BIT ;13  ;RTU       ;               ;3   ;1   ;25    ;236 ;1   ;[RW]Digital output value bit 13 MPNC020 02 module A
+0;P;XX_DigOut_A_14                 ;WORD_BIT ;14  ;RTU       ;               ;3   ;1   ;25    ;237 ;1   ;[RW]Digital output value bit 14 MPNC020 02 module A
+0;P;XX_DigOut_A_15                 ;WORD_BIT ;15  ;RTU       ;               ;3   ;1   ;25    ;238 ;1   ;[RW]Digital output value bit 15 MPNC020 02 module A
+0;P;XX_DigOut_A_16                 ;WORD_BIT ;16  ;RTU       ;               ;3   ;1   ;25    ;239 ;1   ;[RW]Digital output value bit 16 MPNC020 02 module A
+0;P;XX_DigOut_B_1                  ;WORD_BIT ;1   ;RTU       ;               ;3   ;1   ;26    ;240 ;1   ;[RW]Digital output value bit 1 MPNC020 02 module B
+0;P;XX_DigOut_B_2                  ;WORD_BIT ;2   ;RTU       ;               ;3   ;1   ;26    ;241 ;1   ;[RW]Digital output value bit 2 MPNC020 02 module B
+0;P;XX_DigOut_B_3                  ;WORD_BIT ;3   ;RTU       ;               ;3   ;1   ;26    ;242 ;1   ;[RW]Digital output value bit 3 MPNC020 02 module B
+0;P;XX_DigOut_B_4                  ;WORD_BIT ;4   ;RTU       ;               ;3   ;1   ;26    ;243 ;1   ;[RW]Digital output value bit 4 MPNC020 02 module B
+0;P;XX_DigOut_B_5                  ;WORD_BIT ;5   ;RTU       ;               ;3   ;1   ;26    ;244 ;1   ;[RW]Digital output value bit 5 MPNC020 02 module B
+0;P;XX_DigOut_B_6                  ;WORD_BIT ;6   ;RTU       ;               ;3   ;1   ;26    ;245 ;1   ;[RW]Digital output value bit 6 MPNC020 02 module B
+0;P;XX_DigOut_B_7                  ;WORD_BIT ;7   ;RTU       ;               ;3   ;1   ;26    ;246 ;1   ;[RW]Digital output value bit 7 MPNC020 02 module B
+0;P;XX_DigOut_B_8                  ;WORD_BIT ;8   ;RTU       ;               ;3   ;1   ;26    ;247 ;1   ;[RW]Digital output value bit 8 MPNC020 02 module B
+0;P;XX_DigOut_B_9                  ;WORD_BIT ;9   ;RTU       ;               ;3   ;1   ;26    ;248 ;1   ;[RW]Digital output value bit 9 MPNC020 02 module B
+0;P;XX_DigOut_B_10                 ;WORD_BIT ;10  ;RTU       ;               ;3   ;1   ;26    ;249 ;1   ;[RW]Digital output value bit 10 MPNC020 02 module B
+0;P;XX_DigOut_B_11                 ;WORD_BIT ;11  ;RTU       ;               ;3   ;1   ;26    ;250 ;1   ;[RW]Digital output value bit 11 MPNC020 02 module B
+0;P;XX_DigOut_B_12                 ;WORD_BIT ;12  ;RTU       ;               ;3   ;1   ;26    ;251 ;1   ;[RW]Digital output value bit 12 MPNC020 02 module B
+0;P;XX_DigOut_B_13                 ;WORD_BIT ;13  ;RTU       ;               ;3   ;1   ;26    ;252 ;1   ;[RW]Digital output value bit 13 MPNC020 02 module B
+0;P;XX_DigOut_B_14                 ;WORD_BIT ;14  ;RTU       ;               ;3   ;1   ;26    ;253 ;1   ;[RW]Digital output value bit 14 MPNC020 02 module B
+0;P;XX_DigOut_B_15                 ;WORD_BIT ;15  ;RTU       ;               ;3   ;1   ;26    ;254 ;1   ;[RW]Digital output value bit 15 MPNC020 02 module B
+0;P;XX_DigOut_B_16                 ;WORD_BIT ;16  ;RTU       ;               ;3   ;1   ;26    ;255 ;1   ;[RW]Digital output value bit 16 MPNC020 02 module B
+0;P;XX_DigOut_C_1                  ;WORD_BIT ;1   ;RTU       ;               ;3   ;1   ;27    ;256 ;1   ;[RW]Digital output value bit 1 MPNC020 02 module C
+0;P;XX_DigOut_C_2                  ;WORD_BIT ;2   ;RTU       ;               ;3   ;1   ;27    ;257 ;1   ;[RW]Digital output value bit 2 MPNC020 02 module C
+0;P;XX_DigOut_C_3                  ;WORD_BIT ;3   ;RTU       ;               ;3   ;1   ;27    ;258 ;1   ;[RW]Digital output value bit 3 MPNC020 02 module C
+0;P;XX_DigOut_C_4                  ;WORD_BIT ;4   ;RTU       ;               ;3   ;1   ;27    ;259 ;1   ;[RW]Digital output value bit 4 MPNC020 02 module C
+0;P;XX_DigOut_C_5                  ;WORD_BIT ;5   ;RTU       ;               ;3   ;1   ;27    ;260 ;1   ;[RW]Digital output value bit 5 MPNC020 02 module C
+0;P;XX_DigOut_C_6                  ;WORD_BIT ;6   ;RTU       ;               ;3   ;1   ;27    ;261 ;1   ;[RW]Digital output value bit 6 MPNC020 02 module C
+0;P;XX_DigOut_C_7                  ;WORD_BIT ;7   ;RTU       ;               ;3   ;1   ;27    ;262 ;1   ;[RW]Digital output value bit 7 MPNC020 02 module C
+0;P;XX_DigOut_C_8                  ;WORD_BIT ;8   ;RTU       ;               ;3   ;1   ;27    ;263 ;1   ;[RW]Digital output value bit 8 MPNC020 02 module C
+0;P;XX_DigOut_C_9                  ;WORD_BIT ;9   ;RTU       ;               ;3   ;1   ;27    ;264 ;1   ;[RW]Digital output value bit 9 MPNC020 02 module C
+0;P;XX_DigOut_C_10                 ;WORD_BIT ;10  ;RTU       ;               ;3   ;1   ;27    ;265 ;1   ;[RW]Digital output value bit 10 MPNC020 02 module C
+0;P;XX_DigOut_C_11                 ;WORD_BIT ;11  ;RTU       ;               ;3   ;1   ;27    ;266 ;1   ;[RW]Digital output value bit 11 MPNC020 02 module C
+0;P;XX_DigOut_C_12                 ;WORD_BIT ;12  ;RTU       ;               ;3   ;1   ;27    ;267 ;1   ;[RW]Digital output value bit 12 MPNC020 02 module C
+0;P;XX_DigOut_C_13                 ;WORD_BIT ;13  ;RTU       ;               ;3   ;1   ;27    ;268 ;1   ;[RW]Digital output value bit 13 MPNC020 02 module C
+0;P;XX_DigOut_C_14                 ;WORD_BIT ;14  ;RTU       ;               ;3   ;1   ;27    ;269 ;1   ;[RW]Digital output value bit 14 MPNC020 02 module C
+0;P;XX_DigOut_C_15                 ;WORD_BIT ;15  ;RTU       ;               ;3   ;1   ;27    ;270 ;1   ;[RW]Digital output value bit 15 MPNC020 02 module C
+0;P;XX_DigOut_C_16                 ;WORD_BIT ;16  ;RTU       ;               ;3   ;1   ;27    ;271 ;1   ;[RW]Digital output value bit 16 MPNC020 02 module C
+0;P;XX_DigOut_D_1                  ;WORD_BIT ;1   ;RTU       ;               ;3   ;1   ;28    ;272 ;1   ;[RW]Digital output value bit 1 MPNC020 02 module D
+0;P;XX_DigOut_D_2                  ;WORD_BIT ;2   ;RTU       ;               ;3   ;1   ;28    ;273 ;1   ;[RW]Digital output value bit 2 MPNC020 02 module D
+0;P;XX_DigOut_D_3                  ;WORD_BIT ;3   ;RTU       ;               ;3   ;1   ;28    ;274 ;1   ;[RW]Digital output value bit 3 MPNC020 02 module D
+0;P;XX_DigOut_D_4                  ;WORD_BIT ;4   ;RTU       ;               ;3   ;1   ;28    ;275 ;1   ;[RW]Digital output value bit 4 MPNC020 02 module D
+0;P;XX_DigOut_D_5                  ;WORD_BIT ;5   ;RTU       ;               ;3   ;1   ;28    ;276 ;1   ;[RW]Digital output value bit 5 MPNC020 02 module D
+0;P;XX_DigOut_D_6                  ;WORD_BIT ;6   ;RTU       ;               ;3   ;1   ;28    ;277 ;1   ;[RW]Digital output value bit 6 MPNC020 02 module D
+0;P;XX_DigOut_D_7                  ;WORD_BIT ;7   ;RTU       ;               ;3   ;1   ;28    ;278 ;1   ;[RW]Digital output value bit 7 MPNC020 02 module D
+0;P;XX_DigOut_D_8                  ;WORD_BIT ;8   ;RTU       ;               ;3   ;1   ;28    ;279 ;1   ;[RW]Digital output value bit 8 MPNC020 02 module D
+0;P;XX_DigOut_D_9                  ;WORD_BIT ;9   ;RTU       ;               ;3   ;1   ;28    ;280 ;1   ;[RW]Digital output value bit 9 MPNC020 02 module D
+0;P;XX_DigOut_D_10                 ;WORD_BIT ;10  ;RTU       ;               ;3   ;1   ;28    ;281 ;1   ;[RW]Digital output value bit 10 MPNC020 02 module D
+0;P;XX_DigOut_D_11                 ;WORD_BIT ;11  ;RTU       ;               ;3   ;1   ;28    ;282 ;1   ;[RW]Digital output value bit 11 MPNC020 02 module D
+0;P;XX_DigOut_D_12                 ;WORD_BIT ;12  ;RTU       ;               ;3   ;1   ;28    ;283 ;1   ;[RW]Digital output value bit 12 MPNC020 02 module D
+0;P;XX_DigOut_D_13                 ;WORD_BIT ;13  ;RTU       ;               ;3   ;1   ;28    ;284 ;1   ;[RW]Digital output value bit 13 MPNC020 02 module D
+0;P;XX_DigOut_D_14                 ;WORD_BIT ;14  ;RTU       ;               ;3   ;1   ;28    ;285 ;1   ;[RW]Digital output value bit 14 MPNC020 02 module D
+0;P;XX_DigOut_D_15                 ;WORD_BIT ;15  ;RTU       ;               ;3   ;1   ;28    ;286 ;1   ;[RW]Digital output value bit 15 MPNC020 02 module D
+0;P;XX_DigOut_D_16                 ;WORD_BIT ;16  ;RTU       ;               ;3   ;1   ;28    ;287 ;1   ;[RW]Digital output value bit 16 MPNC020 02 module D
+0;P;XX_DigIn_A_1                   ;WORD_BIT ;1   ;RTU       ;               ;3   ;1   ;29    ;288 ;1   ;[RO]Digital input value bit 1 MPNC020 01 module A
+0;P;XX_DigIn_A_2                   ;WORD_BIT ;2   ;RTU       ;               ;3   ;1   ;29    ;289 ;1   ;[RO]Digital input value bit 2 MPNC020 01 module A
+0;P;XX_DigIn_A_3                   ;WORD_BIT ;3   ;RTU       ;               ;3   ;1   ;29    ;290 ;1   ;[RO]Digital input value bit 3 MPNC020 01 module A
+0;P;XX_DigIn_A_4                   ;WORD_BIT ;4   ;RTU       ;               ;3   ;1   ;29    ;291 ;1   ;[RO]Digital input value bit 4 MPNC020 01 module A
+0;P;XX_DigIn_A_5                   ;WORD_BIT ;5   ;RTU       ;               ;3   ;1   ;29    ;292 ;1   ;[RO]Digital input value bit 5 MPNC020 01 module A
+0;P;XX_DigIn_A_6                   ;WORD_BIT ;6   ;RTU       ;               ;3   ;1   ;29    ;293 ;1   ;[RO]Digital input value bit 6 MPNC020 01 module A
+0;P;XX_DigIn_A_7                   ;WORD_BIT ;7   ;RTU       ;               ;3   ;1   ;29    ;294 ;1   ;[RO]Digital input value bit 7 MPNC020 01 module A
+0;P;XX_DigIn_A_8                   ;WORD_BIT ;8   ;RTU       ;               ;3   ;1   ;29    ;295 ;1   ;[RO]Digital input value bit 8 MPNC020 01 module A
+0;P;XX_DigIn_A_9                   ;WORD_BIT ;9   ;RTU       ;               ;3   ;1   ;29    ;296 ;1   ;[RO]Digital input value bit 9 MPNC020 01 module A
+0;P;XX_DigIn_A_10                  ;WORD_BIT ;10  ;RTU       ;               ;3   ;1   ;29    ;297 ;1   ;[RO]Digital input value bit 10 MPNC020 01 module A
+0;P;XX_DigIn_A_11                  ;WORD_BIT ;11  ;RTU       ;               ;3   ;1   ;29    ;298 ;1   ;[RO]Digital input value bit 11 MPNC020 01 module A
+0;P;XX_DigIn_A_12                  ;WORD_BIT ;12  ;RTU       ;               ;3   ;1   ;29    ;299 ;1   ;[RO]Digital input value bit 12 MPNC020 01 module A
+0;P;XX_DigIn_A_13                  ;WORD_BIT ;13  ;RTU       ;               ;3   ;1   ;29    ;300 ;1   ;[RO]Digital input value bit 13 MPNC020 01 module A
+0;P;XX_DigIn_A_14                  ;WORD_BIT ;14  ;RTU       ;               ;3   ;1   ;29    ;301 ;1   ;[RO]Digital input value bit 14 MPNC020 01 module A
+0;P;XX_DigIn_A_15                  ;WORD_BIT ;15  ;RTU       ;               ;3   ;1   ;29    ;302 ;1   ;[RO]Digital input value bit 15 MPNC020 01 module A
+0;P;XX_DigIn_A_16                  ;WORD_BIT ;16  ;RTU       ;               ;3   ;1   ;29    ;303 ;1   ;[RO]Digital input value bit 16 MPNC020 01 module A
+0;P;XX_DigIn_B_1                   ;WORD_BIT ;1   ;RTU       ;               ;3   ;1   ;30    ;304 ;1   ;[RO]Digital input value bit 1 MPNC020 01 module B
+0;P;XX_DigIn_B_2                   ;WORD_BIT ;2   ;RTU       ;               ;3   ;1   ;30    ;305 ;1   ;[RO]Digital input value bit 2 MPNC020 01 module B
+0;P;XX_DigIn_B_3                   ;WORD_BIT ;3   ;RTU       ;               ;3   ;1   ;30    ;306 ;1   ;[RO]Digital input value bit 3 MPNC020 01 module B
+0;P;XX_DigIn_B_4                   ;WORD_BIT ;4   ;RTU       ;               ;3   ;1   ;30    ;307 ;1   ;[RO]Digital input value bit 4 MPNC020 01 module B
+0;P;XX_DigIn_B_5                   ;WORD_BIT ;5   ;RTU       ;               ;3   ;1   ;30    ;308 ;1   ;[RO]Digital input value bit 5 MPNC020 01 module B
+0;P;XX_DigIn_B_6                   ;WORD_BIT ;6   ;RTU       ;               ;3   ;1   ;30    ;309 ;1   ;[RO]Digital input value bit 6 MPNC020 01 module B
+0;P;XX_DigIn_B_7                   ;WORD_BIT ;7   ;RTU       ;               ;3   ;1   ;30    ;310 ;1   ;[RO]Digital input value bit 7 MPNC020 01 module B
+0;P;XX_DigIn_B_8                   ;WORD_BIT ;8   ;RTU       ;               ;3   ;1   ;30    ;311 ;1   ;[RO]Digital input value bit 8 MPNC020 01 module B
+0;P;XX_DigIn_B_9                   ;WORD_BIT ;9   ;RTU       ;               ;3   ;1   ;30    ;312 ;1   ;[RO]Digital input value bit 9 MPNC020 01 module B
+0;P;XX_DigIn_B_10                  ;WORD_BIT ;10  ;RTU       ;               ;3   ;1   ;30    ;313 ;1   ;[RO]Digital input value bit 10 MPNC020 01 module B
+0;P;XX_DigIn_B_11                  ;WORD_BIT ;11  ;RTU       ;               ;3   ;1   ;30    ;314 ;1   ;[RO]Digital input value bit 11 MPNC020 01 module B
+0;P;XX_DigIn_B_12                  ;WORD_BIT ;12  ;RTU       ;               ;3   ;1   ;30    ;315 ;1   ;[RO]Digital input value bit 12 MPNC020 01 module B
+0;P;XX_DigIn_B_13                  ;WORD_BIT ;13  ;RTU       ;               ;3   ;1   ;30    ;316 ;1   ;[RO]Digital input value bit 13 MPNC020 01 module B
+0;P;XX_DigIn_B_14                  ;WORD_BIT ;14  ;RTU       ;               ;3   ;1   ;30    ;317 ;1   ;[RO]Digital input value bit 14 MPNC020 01 module B
+0;P;XX_DigIn_B_15                  ;WORD_BIT ;15  ;RTU       ;               ;3   ;1   ;30    ;318 ;1   ;[RO]Digital input value bit 15 MPNC020 01 module B
+0;P;XX_DigIn_B_16                  ;WORD_BIT ;16  ;RTU       ;               ;3   ;1   ;30    ;319 ;1   ;[RO]Digital input value bit 16 MPNC020 01 module B
+0;P;XX_DigIn_C_1                   ;WORD_BIT ;1   ;RTU       ;               ;3   ;1   ;31    ;320 ;1   ;[RO]Digital input value bit 1 MPNC020 01 module C
+0;P;XX_DigIn_C_2                   ;WORD_BIT ;2   ;RTU       ;               ;3   ;1   ;31    ;321 ;1   ;[RO]Digital input value bit 2 MPNC020 01 module C
+0;P;XX_DigIn_C_3                   ;WORD_BIT ;3   ;RTU       ;               ;3   ;1   ;31    ;322 ;1   ;[RO]Digital input value bit 3 MPNC020 01 module C
+0;P;XX_DigIn_C_4                   ;WORD_BIT ;4   ;RTU       ;               ;3   ;1   ;31    ;323 ;1   ;[RO]Digital input value bit 4 MPNC020 01 module C
+0;P;XX_DigIn_C_5                   ;WORD_BIT ;5   ;RTU       ;               ;3   ;1   ;31    ;324 ;1   ;[RO]Digital input value bit 5 MPNC020 01 module C
+0;P;XX_DigIn_C_6                   ;WORD_BIT ;6   ;RTU       ;               ;3   ;1   ;31    ;325 ;1   ;[RO]Digital input value bit 6 MPNC020 01 module C
+0;P;XX_DigIn_C_7                   ;WORD_BIT ;7   ;RTU       ;               ;3   ;1   ;31    ;326 ;1   ;[RO]Digital input value bit 7 MPNC020 01 module C
+0;P;XX_DigIn_C_8                   ;WORD_BIT ;8   ;RTU       ;               ;3   ;1   ;31    ;327 ;1   ;[RO]Digital input value bit 8 MPNC020 01 module C
+0;P;XX_DigIn_C_9                   ;WORD_BIT ;9   ;RTU       ;               ;3   ;1   ;31    ;328 ;1   ;[RO]Digital input value bit 9 MPNC020 01 module C
+0;P;XX_DigIn_C_10                  ;WORD_BIT ;10  ;RTU       ;               ;3   ;1   ;31    ;329 ;1   ;[RO]Digital input value bit 10 MPNC020 01 module C
+0;P;XX_DigIn_C_11                  ;WORD_BIT ;11  ;RTU       ;               ;3   ;1   ;31    ;330 ;1   ;[RO]Digital input value bit 11 MPNC020 01 module C
+0;P;XX_DigIn_C_12                  ;WORD_BIT ;12  ;RTU       ;               ;3   ;1   ;31    ;331 ;1   ;[RO]Digital input value bit 12 MPNC020 01 module C
+0;P;XX_DigIn_C_13                  ;WORD_BIT ;13  ;RTU       ;               ;3   ;1   ;31    ;332 ;1   ;[RO]Digital input value bit 13 MPNC020 01 module C
+0;P;XX_DigIn_C_14                  ;WORD_BIT ;14  ;RTU       ;               ;3   ;1   ;31    ;333 ;1   ;[RO]Digital input value bit 14 MPNC020 01 module C
+0;P;XX_DigIn_C_15                  ;WORD_BIT ;15  ;RTU       ;               ;3   ;1   ;31    ;334 ;1   ;[RO]Digital input value bit 15 MPNC020 01 module C
+0;P;XX_DigIn_C_16                  ;WORD_BIT ;16  ;RTU       ;               ;3   ;1   ;31    ;335 ;1   ;[RO]Digital input value bit 16 MPNC020 01 module C
+0;P;XX_DigIn_D_1                   ;WORD_BIT ;1   ;RTU       ;               ;3   ;1   ;32    ;336 ;1   ;[RO]Digital input value bit 1 MPNC020 01 module D
+0;P;XX_DigIn_D_2                   ;WORD_BIT ;2   ;RTU       ;               ;3   ;1   ;32    ;337 ;1   ;[RO]Digital input value bit 2 MPNC020 01 module D
+0;P;XX_DigIn_D_3                   ;WORD_BIT ;3   ;RTU       ;               ;3   ;1   ;32    ;338 ;1   ;[RO]Digital input value bit 3 MPNC020 01 module D
+0;P;XX_DigIn_D_4                   ;WORD_BIT ;4   ;RTU       ;               ;3   ;1   ;32    ;339 ;1   ;[RO]Digital input value bit 4 MPNC020 01 module D
+0;P;XX_DigIn_D_5                   ;WORD_BIT ;5   ;RTU       ;               ;3   ;1   ;32    ;340 ;1   ;[RO]Digital input value bit 5 MPNC020 01 module D
+0;P;XX_DigIn_D_6                   ;WORD_BIT ;6   ;RTU       ;               ;3   ;1   ;32    ;341 ;1   ;[RO]Digital input value bit 6 MPNC020 01 module D
+0;P;XX_DigIn_D_7                   ;WORD_BIT ;7   ;RTU       ;               ;3   ;1   ;32    ;342 ;1   ;[RO]Digital input value bit 7 MPNC020 01 module D
+0;P;XX_DigIn_D_8                   ;WORD_BIT ;8   ;RTU       ;               ;3   ;1   ;32    ;343 ;1   ;[RO]Digital input value bit 8 MPNC020 01 module D
+0;P;XX_DigIn_D_9                   ;WORD_BIT ;9   ;RTU       ;               ;3   ;1   ;32    ;344 ;1   ;[RO]Digital input value bit 9 MPNC020 01 module D
+0;P;XX_DigIn_D_10                  ;WORD_BIT ;10  ;RTU       ;               ;3   ;1   ;32    ;345 ;1   ;[RO]Digital input value bit 10 MPNC020 01 module D
+0;P;XX_DigIn_D_11                  ;WORD_BIT ;11  ;RTU       ;               ;3   ;1   ;32    ;346 ;1   ;[RO]Digital input value bit 11 MPNC020 01 module D
+0;P;XX_DigIn_D_12                  ;WORD_BIT ;12  ;RTU       ;               ;3   ;1   ;32    ;347 ;1   ;[RO]Digital input value bit 12 MPNC020 01 module D
+0;P;XX_DigIn_D_13                  ;WORD_BIT ;13  ;RTU       ;               ;3   ;1   ;32    ;348 ;1   ;[RO]Digital input value bit 13 MPNC020 01 module D
+0;P;XX_DigIn_D_14                  ;WORD_BIT ;14  ;RTU       ;               ;3   ;1   ;32    ;349 ;1   ;[RO]Digital input value bit 14 MPNC020 01 module D
+0;P;XX_DigIn_D_15                  ;WORD_BIT ;15  ;RTU       ;               ;3   ;1   ;32    ;350 ;1   ;[RO]Digital input value bit 15 MPNC020 01 module D
+0;P;XX_DigIn_D_16                  ;WORD_BIT ;16  ;RTU       ;               ;3   ;1   ;32    ;351 ;1   ;[RO]Digital input value bit 16 MPNC020 01 module D
+2;P;XX_Reserved_1                  ;UINT     ;0   ;RTU       ;               ;3   ;1   ;33    ;352 ;38  ;[RO]
+2;P;XX_Reserved_2                  ;UINT     ;0   ;RTU       ;               ;3   ;1   ;34    ;352 ;38  ;[RO]
+2;P;XX_ColdJunctionT               ;INT      ;0   ;RTU       ;               ;3   ;1   ;35    ;352 ;38  ;[RO]Cold junction temperature value
+2;P;XX_Reserved_3                  ;UINT     ;0   ;RTU       ;               ;3   ;1   ;36    ;352 ;38  ;[RO]
+2;P;XX_Reserved_4                  ;UINT     ;0   ;RTU       ;               ;3   ;1   ;37    ;352 ;38  ;[RO]
+2;P;XX_Reboot                      ;INT      ;0   ;RTU       ;               ;3   ;1   ;38    ;352 ;38  ;[RW]MPNC006 chain reboot
+2;P;XX_ModulesNumber               ;UINT     ;0   ;RTU       ;               ;3   ;1   ;39    ;352 ;38  ;[RO]Number of modules
+2;P;XX_AnInConf_1                  ;UINT     ;0   ;RTU       ;               ;3   ;1   ;40    ;352 ;38  ;[RW]Analog input 1 configuration MPNC005
+2;P;XX_AnInConf_2                  ;UINT     ;0   ;RTU       ;               ;3   ;1   ;41    ;352 ;38  ;[RW]Analog input 2 configuration MPNC005
+2;P;XX_AnIn_1                      ;INT      ;1   ;RTU       ;               ;3   ;1   ;42    ;352 ;38  ;[RO]Analog input 1 value MPNC005
+2;P;XX_AnIn_2                      ;INT      ;1   ;RTU       ;               ;3   ;1   ;43    ;352 ;38  ;[RO]Analog input 2 value MPNC005
+2;P;XX_DigDir_1                    ;BYTE_BIT ;1   ;RTU       ;               ;3   ;1   ;44    ;352 ;38  ;[RW]Digital IO 1 configuration MPNC005
+2;P;XX_DigDir_2                    ;BYTE_BIT ;2   ;RTU       ;               ;3   ;1   ;44    ;352 ;38  ;[RW]Digital IO 2 configuration MPNC005
+2;P;XX_DigDir_3                    ;BYTE_BIT ;3   ;RTU       ;               ;3   ;1   ;44    ;352 ;38  ;[RW]Digital IO 3 configuration MPNC005
+2;P;XX_DigDir_4                    ;BYTE_BIT ;4   ;RTU       ;               ;3   ;1   ;44    ;352 ;38  ;[RW]Digital IO 4 configuration MPNC005
+2;P;XX_DigDir_5                    ;BYTE_BIT ;5   ;RTU       ;               ;3   ;1   ;44    ;352 ;38  ;[RW]Digital IO 5 configuration MPNC005
+2;P;XX_DigDir_6                    ;BYTE_BIT ;6   ;RTU       ;               ;3   ;1   ;44    ;352 ;38  ;[RW]Digital IO 6 configuration MPNC005
+2;P;XX_DigDir_7                    ;BYTE_BIT ;7   ;RTU       ;               ;3   ;1   ;44    ;352 ;38  ;[RW]Digital IO 7 configuration MPNC005
+2;P;XX_DigDir_8                    ;BYTE_BIT ;8   ;RTU       ;               ;3   ;1   ;44    ;352 ;38  ;[RW]Digital IO 8 configuration MPNC005
+2;F;XX_DigIn_1                     ;BYTE_BIT ;1   ;RTU       ;               ;3   ;1   ;45    ;352 ;38  ;[RO]Digital input 1 value MPNC005
+2;F;XX_DigIn_2                     ;BYTE_BIT ;2   ;RTU       ;               ;3   ;1   ;45    ;352 ;38  ;[RO]Digital input 2 value MPNC005
+2;F;XX_DigIn_3                     ;BYTE_BIT ;3   ;RTU       ;               ;3   ;1   ;45    ;352 ;38  ;[RO]Digital input 3 value MPNC005
+2;F;XX_DigIn_4                     ;BYTE_BIT ;4   ;RTU       ;               ;3   ;1   ;45    ;352 ;38  ;[RO]Digital input 4 value MPNC005
+2;F;XX_DigIn_5                     ;BYTE_BIT ;5   ;RTU       ;               ;3   ;1   ;45    ;352 ;38  ;[RO]Digital input 5 value MPNC005
+2;F;XX_DigIn_6                     ;BYTE_BIT ;6   ;RTU       ;               ;3   ;1   ;45    ;352 ;38  ;[RO]Digital input 6 value MPNC005
+2;F;XX_DigIn_7                     ;BYTE_BIT ;7   ;RTU       ;               ;3   ;1   ;45    ;352 ;38  ;[RO]Digital input 7 value MPNC005
+2;F;XX_DigIn_8                     ;BYTE_BIT ;8   ;RTU       ;               ;3   ;1   ;45    ;352 ;38  ;[RO]Digital input 8 value MPNC005
+2;F;XX_DigOut_1                    ;BYTE_BIT ;1   ;RTU       ;               ;3   ;1   ;46    ;352 ;38  ;[RW]Digital output 1 value MPNC005
+2;F;XX_DigOut_2                    ;BYTE_BIT ;2   ;RTU       ;               ;3   ;1   ;46    ;352 ;38  ;[RW]Digital output 2 value MPNC005
+2;F;XX_DigOut_3                    ;BYTE_BIT ;3   ;RTU       ;               ;3   ;1   ;46    ;352 ;38  ;[RW]Digital output 3 value MPNC005
+2;F;XX_DigOut_4                    ;BYTE_BIT ;4   ;RTU       ;               ;3   ;1   ;46    ;352 ;38  ;[RW]Digital output 4 value MPNC005
+2;F;XX_DigOut_5                    ;BYTE_BIT ;5   ;RTU       ;               ;3   ;1   ;46    ;352 ;38  ;[RW]Digital output 5 value MPNC005
+2;F;XX_DigOut_6                    ;BYTE_BIT ;6   ;RTU       ;               ;3   ;1   ;46    ;352 ;38  ;[RW]Digital output 6 value MPNC005
+2;F;XX_DigOut_7                    ;BYTE_BIT ;7   ;RTU       ;               ;3   ;1   ;46    ;352 ;38  ;[RW]Digital output 7 value MPNC005
+2;F;XX_DigOut_8                    ;BYTE_BIT ;8   ;RTU       ;               ;3   ;1   ;46    ;352 ;38  ;[RW]Digital output 8 value MPNC005
+2;P;XX_AnInFltr_1                  ;UINT     ;0   ;RTU       ;               ;3   ;1   ;47    ;352 ;38  ;[RW]Analog input filter 1 MPNC006
+2;P;XX_AnInFltr_2                  ;UINT     ;0   ;RTU       ;               ;3   ;1   ;48    ;352 ;38  ;[RW]Analog input filter 2 MPNC006
+2;P;XX_WatchDog                    ;UINT     ;0   ;RTU       ;               ;3   ;1   ;49    ;352 ;38  ;[RW]WatchDog Timer in Seconds
+0;P;XX_AnOutConf_A                 ;UINT     ;0   ;RTU       ;               ;3   ;1   ;50    ;390 ;1   ;[RW]Analog outputs configuration MPNC035 module A
+0;P;XX_AnOutConf_B                 ;UINT     ;0   ;RTU       ;               ;3   ;1   ;51    ;391 ;1   ;[RW]Analog outputs configuration MPNC035 module B
+0;P;XX_AnOutConf_C                 ;UINT     ;0   ;RTU       ;               ;3   ;1   ;52    ;392 ;1   ;[RW]Analog outputs configuration MPNC035 module C
+0;P;XX_AnOutConf_D                 ;UINT     ;0   ;RTU       ;               ;3   ;1   ;53    ;393 ;1   ;[RW]Analog outputs configuration MPNC035 module D
+0;P;XX_Reserved_6                  ;UINT     ;0   ;RTU       ;               ;3   ;1   ;54    ;394 ;1   ;[RO]
+0;P;XX_AnOut_A_1                   ;INT      ;0   ;RTU       ;               ;3   ;1   ;55    ;395 ;1   ;[RW]Analog output 1 value MPNC035 module A
+0;P;XX_AnOut_A_2                   ;INT      ;0   ;RTU       ;               ;3   ;1   ;56    ;396 ;1   ;[RW]Analog output 2 value MPNC035 module A
+0;P;XX_AnOut_A_3                   ;INT      ;0   ;RTU       ;               ;3   ;1   ;57    ;397 ;1   ;[RW]Analog output 3 value MPNC035 module A
+0;P;XX_AnOut_A_4                   ;INT      ;0   ;RTU       ;               ;3   ;1   ;58    ;398 ;1   ;[RW]Analog output 4 value MPNC035 module A
+0;P;XX_AnOut_B_1                   ;INT      ;0   ;RTU       ;               ;3   ;1   ;59    ;399 ;1   ;[RW]Analog output 1 value MPNC035 module B
+0;P;XX_AnOut_B_2                   ;INT      ;0   ;RTU       ;               ;3   ;1   ;60    ;400 ;1   ;[RW]Analog output 2 value MPNC035 module B
+0;P;XX_AnOut_B_3                   ;INT      ;0   ;RTU       ;               ;3   ;1   ;61    ;401 ;1   ;[RW]Analog output 3 value MPNC035 module B
+0;P;XX_AnOut_B_4                   ;INT      ;0   ;RTU       ;               ;3   ;1   ;62    ;402 ;1   ;[RW]Analog output 4 value MPNC035 module B
+0;P;XX_AnOut_C_1                   ;INT      ;0   ;RTU       ;               ;3   ;1   ;63    ;403 ;1   ;[RW]Analog output 1 value MPNC035 module C
+0;P;XX_AnOut_C_2                   ;INT      ;0   ;RTU       ;               ;3   ;1   ;64    ;404 ;1   ;[RW]Analog output 2 value MPNC035 module C
+0;P;XX_AnOut_C_3                   ;INT      ;0   ;RTU       ;               ;3   ;1   ;65    ;405 ;1   ;[RW]Analog output 3 value MPNC035 module C
+0;P;XX_AnOut_C_4                   ;INT      ;0   ;RTU       ;               ;3   ;1   ;66    ;406 ;1   ;[RW]Analog output 4 value MPNC035 module C
+0;P;XX_AnOut_D_1                   ;INT      ;0   ;RTU       ;               ;3   ;1   ;67    ;407 ;1   ;[RW]Analog output 1 value MPNC035 module D
+0;P;XX_AnOut_D_2                   ;INT      ;0   ;RTU       ;               ;3   ;1   ;68    ;408 ;1   ;[RW]Analog output 2 value MPNC035 module D
+0;P;XX_AnOut_D_3                   ;INT      ;0   ;RTU       ;               ;3   ;1   ;69    ;409 ;1   ;[RW]Analog output 3 value MPNC035 module D
+0;P;XX_AnOut_D_4                   ;INT      ;0   ;RTU       ;               ;3   ;1   ;70    ;410 ;1   ;[RW]Analog output 4 value MPNC035 module D
+2;P;XX_FirmwareVer                 ;UINT     ;0   ;RTU       ;               ;3   ;1   ;80    ;411 ;1   ;[RO]Firmware release MPNC006
+2;P;XX_StatusWord                  ;UINT     ;0   ;RTU       ;               ;3   ;1   ;82    ;412 ;1   ;[RO]Status word MPNC006
+;;;;;;;;;;;;
+3;F;SystemVoltage_0                ;REALCDAB ;1   ;RTU       ;               ;3   ;10  ;4108  ;414 ;1   ;[RO]0x0A 0x100C Tensione in V (PRINCIPALE)
+3;P;SysPowerFactor_0               ;REALCDAB ;3   ;RTU       ;               ;3   ;10  ;4126  ;415 ;1   ;[RO]0x0A 0x101E Fattore di Potenza 0 (PRINCIPALE)
+3;F;SysActivePower_0               ;REALCDAB ;0   ;RTU       ;               ;3   ;10  ;4134  ;416 ;1   ;[RO]0x0A 0x1026 Potenza Attiva 0 in W (PRINCIPALE)
+3;S;SysImpActiveEnergy_0           ;REALCDAB ;1   ;RTU       ;               ;3   ;10  ;4358  ;417 ;1   ;[RO]0x0A 0x1106 Energia Attiva Importata 0 in Wh (PRINCIPALE)
+3;S;SysExpActiveEnergy_0           ;REALCDAB ;1   ;RTU       ;               ;3   ;10  ;4366  ;418 ;1   ;[RO]0x0A 0x110E Energia Attiva Esportata 0 in Wh (PRINCIPALE)
+3;F;SysActivePower_1               ;REALCDAB ;0   ;RTU       ;               ;3   ;11  ;4134  ;419 ;1   ;[RO]0x0B 0x1026 Potenza Attiva 0 in W (FOTOVOLTAICO)
+3;S;SysImpActiveEnergy_1           ;REALCDAB ;1   ;RTU       ;               ;3   ;11  ;4358  ;420 ;1   ;[RO]0x0B 0x1106 Energia Attiva Importata 1 in Wh (FOTOVOLTAICO)
+3;S;SysExpActiveEnergy_1           ;REALCDAB ;1   ;RTU       ;               ;3   ;11  ;4366  ;421 ;1   ;[RO]0x0B 0x110E Energia Attiva Esportata 0 in Wh (FOTOVOLTAICO)
+3;F;SysActivePower_2               ;REALCDAB ;0   ;RTU       ;               ;3   ;12  ;4134  ;422 ;1   ;[RO]0x0C 0x1026 Potenza Attiva 0 in W (ESTERNI)
+3;S;SysImpActiveEnergy_2           ;REALCDAB ;1   ;RTU       ;               ;3   ;12  ;4358  ;423 ;1   ;[RO]0x0C 0x1106 Energia Attiva Importata 0 in Wh (ESTERNI)
+3;F;SysActivePower_3               ;REALCDAB ;0   ;RTU       ;               ;3   ;13  ;4134  ;424 ;1   ;[RO]0x0D 0x1026 Potenza Attiva 0 in W (PIANO SOPRA)
+3;S;SysImpActiveEnergy_3           ;REALCDAB ;1   ;RTU       ;               ;3   ;13  ;4358  ;425 ;1   ;[RO]0x0D 0x1106 Energia Attiva Importata 0 in Wh (PIANO SOPRA)
+3;F;SysActivePower_4               ;REALCDAB ;0   ;RTU       ;               ;3   ;14  ;4134  ;426 ;1   ;[RO]0x0E 0x1026 Potenza Attiva 0 in W (PIANO TERRA)
+3;S;SysImpActiveEnergy_4           ;REALCDAB ;1   ;RTU       ;               ;3   ;14  ;4358  ;427 ;1   ;[RO]0x0E 0x1106 Energia Attiva Importata 0 in Wh (PIANO TERRA)
+3;F;SysActivePower_5               ;REALCDAB ;0   ;RTU       ;               ;3   ;15  ;4134  ;428 ;1   ;[RO]0x0F 0x1026 Potenza Attiva 0 in W (PIANO SOTTO)
+3;S;SysImpActiveEnergy_5           ;REALCDAB ;1   ;RTU       ;               ;3   ;15  ;4358  ;429 ;1   ;[RO]0x0F 0x1106 Energia Attiva Importata 0 in Wh (PIANO SOTTO)
+3;F;SysActivePower_6               ;REALCDAB ;0   ;RTU       ;               ;3   ;16  ;4134  ;430 ;1   ;[RO]0x10 0x1026 Potenza Attiva 0 in W (AUTO ELETTRICA)
+3;S;SysImpActiveEnergy_6           ;REALCDAB ;1   ;RTU       ;               ;3   ;16  ;4358  ;431 ;1   ;[RO]0x10 0x1106 Energia Attiva Importata 0 in Wh (AUTO ELETTRICA)
+3;F;SysActivePower_7               ;REALCDAB ;0   ;RTU       ;               ;3   ;17  ;4134  ;432 ;1   ;[RO]0x11 0x1026 Potenza Attiva 0 in W (DEUMIDIFICATORE)
+3;S;SysImpActiveEnergy_7           ;REALCDAB ;1   ;RTU       ;               ;3   ;17  ;4358  ;433 ;1   ;[RO]0x11 0x1106 Energia Attiva Importata 0 in Wh (DEUMIDIFICATORE)
+3;F;SysActivePower_8               ;REALCDAB ;0   ;RTU       ;               ;3   ;18  ;4134  ;434 ;1   ;[RO]0x12 0x1026 Potenza Attiva 0 in W (LAVANDERIA)
+3;S;SysImpActiveEnergy_8           ;REALCDAB ;1   ;RTU       ;               ;3   ;18  ;4358  ;435 ;1   ;[RO]0x12 0x1106 Energia Attiva Importata 0 in Wh (LAVANDERIA)
+3;F;SysActivePower_9               ;REALCDAB ;0   ;RTU       ;               ;3   ;19  ;4134  ;436 ;1   ;[RO]0x13 0x1026 Potenza Attiva 0 in W (UPS)
+3;F;SysApparentPower_9             ;REALCDAB ;0   ;RTU       ;               ;3   ;19  ;4142  ;437 ;1   ;[RO]0x13 0x102E Potenza Apparente 0 in VA (UPS)
+3;S;SysImpActiveEnergy_9           ;REALCDAB ;1   ;RTU       ;               ;3   ;19  ;4358  ;438 ;1   ;[RO]0x13 0x1106 Energia Attiva Importata 0 in Wh (UPS)
+3;F;SysActivePower_10              ;REALCDAB ;0   ;RTU       ;               ;3   ;20  ;4134  ;439 ;1   ;[RO]0x14 0x1026 Potenza Attiva 0 in W (Puffer)
+3;S;SysImpActiveEnergy_10          ;REALCDAB ;1   ;RTU       ;               ;3   ;20  ;4358  ;440 ;1   ;[RO]0x14 0x1106 Energia Attiva Importata 0 in Wh (Puffer)
+3;P;SysActivePower_11              ;REALCDAB ;0   ;PLC       ;               ;    ;    ;      ;441 ;2   ;[RW]0x14 0x1026 Potenza Attiva 0 in W (Caldaia)
+3;P;SysImpActiveEnergy_11          ;REALCDAB ;1   ;PLC       ;               ;    ;    ;      ;441 ;2   ;[RW]0x14 0x1106 Energia Attiva Importata 0 in Wh (Caldaia)
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;

@@ -27,6 +27,7 @@ file=$(LIBDIR)\ATCM_IEC1131_3.4cl
 [Targets]
 file=TPAC_LAN.ATHW119
 file=TPAC_VPN.ATHW119
+file=TPAC_TER.ATHW119
 
 [Compiler.ATHW119]
 opt=bp2

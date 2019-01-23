@@ -1,5 +1,5 @@
 L
-1;XX_AnIn_A_3;7F7FFF;-6.0;26.0;Piano sopra (sud)
-1;XX_AnIn_B_2;FF0000;-6.0;26.0;Piano terra (soggiorno)
-1;XX_AnIn_B_3;FF7F00;-6.0;26.0;Piano terra (corridoio)
-1;XX_AnIn_C_3;007F00;-6.0;26.0;Piano sotto (scala)
+1;XX_AnIn_A_3                    ;7F7FFF;-12.0;36.0;Piano sopra (sud)
+1;XX_AnIn_B_2                    ;FF0000;-12.0;36.0;Piano terra (soggiorno)
+1;XX_AnIn_B_3                    ;FF7F00;-12.0;36.0;Piano terra (corridoio)
+1;XX_AnIn_C_3                    ;007F00;-12.0;36.0;Piano sotto (scala)

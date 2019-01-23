@@ -126,13 +126,6 @@ u_int16_t XX_AnInConf_C = 0;
 
 
 /*
- * Variable XX_AnInConf_D	[ Analog inputs configuration MPNC030 module D ]
- */
-
-u_int16_t XX_AnInConf_D = 0;
-
-
-/*
  * Variable XX_AnIn_A_1	[ Analog input 1 value MPNC030 module A ]
  */
 
@@ -214,6 +207,55 @@ int16_t XX_AnIn_C_3 = 0;
  */
 
 int16_t XX_AnIn_C_4 = 0;
+
+
+/*
+ * Variable XX_Reserved_1
+ */
+
+u_int16_t XX_Reserved_1 = 0;
+
+
+/*
+ * Variable XX_Reserved_2
+ */
+
+u_int16_t XX_Reserved_2 = 0;
+
+
+/*
+ * Variable XX_ColdJunctionT	[ Cold junction temperature value ]
+ */
+
+int16_t XX_ColdJunctionT = 0;
+
+
+/*
+ * Variable XX_Reserved_3
+ */
+
+u_int16_t XX_Reserved_3 = 0;
+
+
+/*
+ * Variable XX_Reserved_4
+ */
+
+u_int16_t XX_Reserved_4 = 0;
+
+
+/*
+ * Variable XX_Reboot	[ MPNC006 chain reboot ]
+ */
+
+int16_t XX_Reboot = 0;
+
+
+/*
+ * Variable XX_ModulesNumber	[ Number of modules ]
+ */
+
+u_int16_t XX_ModulesNumber = 0;
 
 
 /*
@@ -410,6 +452,41 @@ int XX_DigOut_7 = 0;
  */
 
 int XX_DigOut_8 = 0;
+
+
+/*
+ * Variable XX_AnInFltr_1	[ Analog input filter 1 MPNC006 ]
+ */
+
+u_int16_t XX_AnInFltr_1 = 0;
+
+
+/*
+ * Variable XX_AnInFltr_2	[ Analog input filter 2 MPNC006 ]
+ */
+
+u_int16_t XX_AnInFltr_2 = 0;
+
+
+/*
+ * Variable XX_WatchDog	[ WatchDog Timer in Seconds ]
+ */
+
+u_int16_t XX_WatchDog = 0;
+
+
+/*
+ * Variable XX_FirmwareVer	[ Firmware release MPNC006 ]
+ */
+
+u_int16_t XX_FirmwareVer = 0;
+
+
+/*
+ * Variable XX_StatusWord	[ Status word MPNC006 ]
+ */
+
+u_int16_t XX_StatusWord = 0;
 
 
 /*
@@ -2365,24 +2442,6 @@ getStatus_XX_AnInConf_C(void)
 }
 
 int
-doWrite_XX_AnInConf_D(u_int16_t value)
-{
-	return doWrite(ID_XX_AnInConf_D, &value);
-}
-
-int
-addWrite_XX_AnInConf_D(u_int16_t value)
-{
-	return addWrite(ID_XX_AnInConf_D, &value);
-}
-
-int
-getStatus_XX_AnInConf_D(void)
-{
-	return getStatus(ID_XX_AnInConf_D);
-}
-
-int
 doWrite_XX_AnIn_A_1(int16_t value)
 {
 	return doWrite(ID_XX_AnIn_A_1, &value);
@@ -2596,6 +2655,132 @@ int
 getStatus_XX_AnIn_C_4(void)
 {
 	return getStatus(ID_XX_AnIn_C_4);
+}
+
+int
+doWrite_XX_Reserved_1(u_int16_t value)
+{
+	return doWrite(ID_XX_Reserved_1, &value);
+}
+
+int
+addWrite_XX_Reserved_1(u_int16_t value)
+{
+	return addWrite(ID_XX_Reserved_1, &value);
+}
+
+int
+getStatus_XX_Reserved_1(void)
+{
+	return getStatus(ID_XX_Reserved_1);
+}
+
+int
+doWrite_XX_Reserved_2(u_int16_t value)
+{
+	return doWrite(ID_XX_Reserved_2, &value);
+}
+
+int
+addWrite_XX_Reserved_2(u_int16_t value)
+{
+	return addWrite(ID_XX_Reserved_2, &value);
+}
+
+int
+getStatus_XX_Reserved_2(void)
+{
+	return getStatus(ID_XX_Reserved_2);
+}
+
+int
+doWrite_XX_ColdJunctionT(int16_t value)
+{
+	return doWrite(ID_XX_ColdJunctionT, &value);
+}
+
+int
+addWrite_XX_ColdJunctionT(int16_t value)
+{
+	return addWrite(ID_XX_ColdJunctionT, &value);
+}
+
+int
+getStatus_XX_ColdJunctionT(void)
+{
+	return getStatus(ID_XX_ColdJunctionT);
+}
+
+int
+doWrite_XX_Reserved_3(u_int16_t value)
+{
+	return doWrite(ID_XX_Reserved_3, &value);
+}
+
+int
+addWrite_XX_Reserved_3(u_int16_t value)
+{
+	return addWrite(ID_XX_Reserved_3, &value);
+}
+
+int
+getStatus_XX_Reserved_3(void)
+{
+	return getStatus(ID_XX_Reserved_3);
+}
+
+int
+doWrite_XX_Reserved_4(u_int16_t value)
+{
+	return doWrite(ID_XX_Reserved_4, &value);
+}
+
+int
+addWrite_XX_Reserved_4(u_int16_t value)
+{
+	return addWrite(ID_XX_Reserved_4, &value);
+}
+
+int
+getStatus_XX_Reserved_4(void)
+{
+	return getStatus(ID_XX_Reserved_4);
+}
+
+int
+doWrite_XX_Reboot(int16_t value)
+{
+	return doWrite(ID_XX_Reboot, &value);
+}
+
+int
+addWrite_XX_Reboot(int16_t value)
+{
+	return addWrite(ID_XX_Reboot, &value);
+}
+
+int
+getStatus_XX_Reboot(void)
+{
+	return getStatus(ID_XX_Reboot);
+}
+
+int
+doWrite_XX_ModulesNumber(u_int16_t value)
+{
+	return doWrite(ID_XX_ModulesNumber, &value);
+}
+
+int
+addWrite_XX_ModulesNumber(u_int16_t value)
+{
+	return addWrite(ID_XX_ModulesNumber, &value);
+}
+
+int
+getStatus_XX_ModulesNumber(void)
+{
+	return getStatus(ID_XX_ModulesNumber);
 }
 
 int
@@ -3100,6 +3285,96 @@ int
 getStatus_XX_DigOut_8(void)
 {
 	return getStatus(ID_XX_DigOut_8);
+}
+
+int
+doWrite_XX_AnInFltr_1(u_int16_t value)
+{
+	return doWrite(ID_XX_AnInFltr_1, &value);
+}
+
+int
+addWrite_XX_AnInFltr_1(u_int16_t value)
+{
+	return addWrite(ID_XX_AnInFltr_1, &value);
+}
+
+int
+getStatus_XX_AnInFltr_1(void)
+{
+	return getStatus(ID_XX_AnInFltr_1);
+}
+
+int
+doWrite_XX_AnInFltr_2(u_int16_t value)
+{
+	return doWrite(ID_XX_AnInFltr_2, &value);
+}
+
+int
+addWrite_XX_AnInFltr_2(u_int16_t value)
+{
+	return addWrite(ID_XX_AnInFltr_2, &value);
+}
+
+int
+getStatus_XX_AnInFltr_2(void)
+{
+	return getStatus(ID_XX_AnInFltr_2);
+}
+
+int
+doWrite_XX_WatchDog(u_int16_t value)
+{
+	return doWrite(ID_XX_WatchDog, &value);
+}
+
+int
+addWrite_XX_WatchDog(u_int16_t value)
+{
+	return addWrite(ID_XX_WatchDog, &value);
+}
+
+int
+getStatus_XX_WatchDog(void)
+{
+	return getStatus(ID_XX_WatchDog);
+}
+
+int
+doWrite_XX_FirmwareVer(u_int16_t value)
+{
+	return doWrite(ID_XX_FirmwareVer, &value);
+}
+
+int
+addWrite_XX_FirmwareVer(u_int16_t value)
+{
+	return addWrite(ID_XX_FirmwareVer, &value);
+}
+
+int
+getStatus_XX_FirmwareVer(void)
+{
+	return getStatus(ID_XX_FirmwareVer);
+}
+
+int
+doWrite_XX_StatusWord(u_int16_t value)
+{
+	return doWrite(ID_XX_StatusWord, &value);
+}
+
+int
+addWrite_XX_StatusWord(u_int16_t value)
+{
+	return addWrite(ID_XX_StatusWord, &value);
+}
+
+int
+getStatus_XX_StatusWord(void)
+{
+	return getStatus(ID_XX_StatusWord);
 }
 
 int
@@ -7496,7 +7771,6 @@ update_all(void)
 	retval += readFromDb(ID_XX_AnInConf_A, &XX_AnInConf_A);
 	retval += readFromDb(ID_XX_AnInConf_B, &XX_AnInConf_B);
 	retval += readFromDb(ID_XX_AnInConf_C, &XX_AnInConf_C);
-	retval += readFromDb(ID_XX_AnInConf_D, &XX_AnInConf_D);
 	retval += readFromDb(ID_XX_AnIn_A_1, &XX_AnIn_A_1);
 	retval += readFromDb(ID_XX_AnIn_A_2, &XX_AnIn_A_2);
 	retval += readFromDb(ID_XX_AnIn_A_3, &XX_AnIn_A_3);
@@ -7509,6 +7783,13 @@ update_all(void)
 	retval += readFromDb(ID_XX_AnIn_C_2, &XX_AnIn_C_2);
 	retval += readFromDb(ID_XX_AnIn_C_3, &XX_AnIn_C_3);
 	retval += readFromDb(ID_XX_AnIn_C_4, &XX_AnIn_C_4);
+	retval += readFromDb(ID_XX_Reserved_1, &XX_Reserved_1);
+	retval += readFromDb(ID_XX_Reserved_2, &XX_Reserved_2);
+	retval += readFromDb(ID_XX_ColdJunctionT, &XX_ColdJunctionT);
+	retval += readFromDb(ID_XX_Reserved_3, &XX_Reserved_3);
+	retval += readFromDb(ID_XX_Reserved_4, &XX_Reserved_4);
+	retval += readFromDb(ID_XX_Reboot, &XX_Reboot);
+	retval += readFromDb(ID_XX_ModulesNumber, &XX_ModulesNumber);
 	retval += readFromDb(ID_XX_AnInConf_1, &XX_AnInConf_1);
 	retval += readFromDb(ID_XX_AnInConf_2, &XX_AnInConf_2);
 	retval += readFromDb(ID_XX_AnIn_1, &XX_AnIn_1);
@@ -7537,6 +7818,11 @@ update_all(void)
 	retval += readFromDb(ID_XX_DigOut_6, &XX_DigOut_6);
 	retval += readFromDb(ID_XX_DigOut_7, &XX_DigOut_7);
 	retval += readFromDb(ID_XX_DigOut_8, &XX_DigOut_8);
+	retval += readFromDb(ID_XX_AnInFltr_1, &XX_AnInFltr_1);
+	retval += readFromDb(ID_XX_AnInFltr_2, &XX_AnInFltr_2);
+	retval += readFromDb(ID_XX_WatchDog, &XX_WatchDog);
+	retval += readFromDb(ID_XX_FirmwareVer, &XX_FirmwareVer);
+	retval += readFromDb(ID_XX_StatusWord, &XX_StatusWord);
 	retval += readFromDb(ID_SystemVoltage_0, &SystemVoltage_0);
 	retval += readFromDb(ID_SysPowerFactor_0, &SysPowerFactor_0);
 	retval += readFromDb(ID_SysActivePower_0, &SysActivePower_0);
