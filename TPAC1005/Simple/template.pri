@@ -5,14 +5,13 @@
 # @section LICENSE
 # Copyright Mect s.r.l. 2013
 #
-# @brief Qmake project file for TP1043_01_B
+# @brief Qmake project file for TPAC1005
 #
 
 INSTALLS += target
 
 config.files = config/Crosstable.csv config/system.ini
 config.path = /local/etc/sysconfig
-
 
 splash.files = config/splash.png
 splash.path = /local/etc/sysconfig/img

@@ -64,4 +64,3 @@ equals(MODEL, "<width>480</width><height>800</height>") {
     DEFINES+=HEIGHT=800
     DEFINES+=ROTATION=270
 }
-
