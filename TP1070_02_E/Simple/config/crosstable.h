@@ -1282,6 +1282,18 @@ int doWrite_PLC_Seconds(u_int16_t value);
 int addWrite_PLC_Seconds(u_int16_t value);
 int getStatus_PLC_Seconds(void);
 
+#define ID_PLC_UPTIME_s 5416
+extern u_int32_t PLC_UPTIME_s;	/* Uptime in seconds (wraps in 136 years) */
+int doWrite_PLC_UPTIME_s(u_int32_t value);
+int addWrite_PLC_UPTIME_s(u_int32_t value);
+int getStatus_PLC_UPTIME_s(void);
+
+#define ID_PLC_UPTIME_cs 5417
+extern u_int32_t PLC_UPTIME_cs;	/* Uptime in centiseconds = 10 ms (wraps in 497 days) */
+int doWrite_PLC_UPTIME_cs(u_int32_t value);
+int addWrite_PLC_UPTIME_cs(u_int32_t value);
+int getStatus_PLC_UPTIME_cs(void);
+
 #define ID_PLC_WATCHDOGEN 5418
 extern int PLC_WATCHDOGEN;	/* Enable Watchdog */
 int doWrite_PLC_WATCHDOGEN(int value);
@@ -1293,6 +1305,24 @@ extern u_int32_t PLC_WATCHDOG_ms;	/* Reset Watchdog timer */
 int doWrite_PLC_WATCHDOG_ms(u_int32_t value);
 int addWrite_PLC_WATCHDOG_ms(u_int32_t value);
 int getStatus_PLC_WATCHDOG_ms(void);
+
+#define ID_PLC_PRODUCT_ID 5420
+extern u_int32_t PLC_PRODUCT_ID;	/* TP/TPAC/TPLC Product ID (Hex) */
+int doWrite_PLC_PRODUCT_ID(u_int32_t value);
+int addWrite_PLC_PRODUCT_ID(u_int32_t value);
+int getStatus_PLC_PRODUCT_ID(void);
+
+#define ID_PLC_SERIAL_NUMBER 5421
+extern u_int32_t PLC_SERIAL_NUMBER;	/* TP/TPAC/TPLC Serial Number */
+int doWrite_PLC_SERIAL_NUMBER(u_int32_t value);
+int addWrite_PLC_SERIAL_NUMBER(u_int32_t value);
+int getStatus_PLC_SERIAL_NUMBER(void);
+
+#define ID_PLC_HMI_PAGE 5422
+extern int32_t PLC_HMI_PAGE;	/* HMI Page (page100=0x00000100) */
+int doWrite_PLC_HMI_PAGE(int32_t value);
+int addWrite_PLC_HMI_PAGE(int32_t value);
+int getStatus_PLC_HMI_PAGE(void);
 
 #define ID_PLC_BEEP_VOLUME 5435
 extern u_int8_t PLC_BEEP_VOLUME;	/* Beep volume (when buzzerOn) */

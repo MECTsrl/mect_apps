@@ -1484,6 +1484,20 @@ u_int16_t PLC_Seconds = 0;
 
 
 /*
+ * Variable PLC_UPTIME_s	[ Uptime in seconds (wraps in 136 years) ]
+ */
+
+u_int32_t PLC_UPTIME_s = 0;
+
+
+/*
+ * Variable PLC_UPTIME_cs	[ Uptime in centiseconds = 10 ms (wraps in 497 days) ]
+ */
+
+u_int32_t PLC_UPTIME_cs = 0;
+
+
+/*
  * Variable PLC_WATCHDOGEN	[ Enable Watchdog ]
  */
 
@@ -1495,6 +1509,27 @@ int PLC_WATCHDOGEN = 0;
  */
 
 u_int32_t PLC_WATCHDOG_ms = 0;
+
+
+/*
+ * Variable PLC_PRODUCT_ID	[ TP/TPAC/TPLC Product ID (Hex) ]
+ */
+
+u_int32_t PLC_PRODUCT_ID = 0;
+
+
+/*
+ * Variable PLC_SERIAL_NUMBER	[ TP/TPAC/TPLC Serial Number ]
+ */
+
+u_int32_t PLC_SERIAL_NUMBER = 0;
+
+
+/*
+ * Variable PLC_HMI_PAGE	[ HMI Page (page100=0x00000100) ]
+ */
+
+int32_t PLC_HMI_PAGE = 0;
 
 
 /*
@@ -5339,6 +5374,42 @@ getStatus_PLC_Seconds(void)
 }
 
 int
+doWrite_PLC_UPTIME_s(u_int32_t value)
+{
+	return doWrite(ID_PLC_UPTIME_s, &value);
+}
+
+int
+addWrite_PLC_UPTIME_s(u_int32_t value)
+{
+	return addWrite(ID_PLC_UPTIME_s, &value);
+}
+
+int
+getStatus_PLC_UPTIME_s(void)
+{
+	return getStatus(ID_PLC_UPTIME_s);
+}
+
+int
+doWrite_PLC_UPTIME_cs(u_int32_t value)
+{
+	return doWrite(ID_PLC_UPTIME_cs, &value);
+}
+
+int
+addWrite_PLC_UPTIME_cs(u_int32_t value)
+{
+	return addWrite(ID_PLC_UPTIME_cs, &value);
+}
+
+int
+getStatus_PLC_UPTIME_cs(void)
+{
+	return getStatus(ID_PLC_UPTIME_cs);
+}
+
+int
 doWrite_PLC_WATCHDOGEN(int value)
 {
 	return doWrite(ID_PLC_WATCHDOGEN, &value);
@@ -5372,6 +5443,60 @@ int
 getStatus_PLC_WATCHDOG_ms(void)
 {
 	return getStatus(ID_PLC_WATCHDOG_ms);
+}
+
+int
+doWrite_PLC_PRODUCT_ID(u_int32_t value)
+{
+	return doWrite(ID_PLC_PRODUCT_ID, &value);
+}
+
+int
+addWrite_PLC_PRODUCT_ID(u_int32_t value)
+{
+	return addWrite(ID_PLC_PRODUCT_ID, &value);
+}
+
+int
+getStatus_PLC_PRODUCT_ID(void)
+{
+	return getStatus(ID_PLC_PRODUCT_ID);
+}
+
+int
+doWrite_PLC_SERIAL_NUMBER(u_int32_t value)
+{
+	return doWrite(ID_PLC_SERIAL_NUMBER, &value);
+}
+
+int
+addWrite_PLC_SERIAL_NUMBER(u_int32_t value)
+{
+	return addWrite(ID_PLC_SERIAL_NUMBER, &value);
+}
+
+int
+getStatus_PLC_SERIAL_NUMBER(void)
+{
+	return getStatus(ID_PLC_SERIAL_NUMBER);
+}
+
+int
+doWrite_PLC_HMI_PAGE(int32_t value)
+{
+	return doWrite(ID_PLC_HMI_PAGE, &value);
+}
+
+int
+addWrite_PLC_HMI_PAGE(int32_t value)
+{
+	return addWrite(ID_PLC_HMI_PAGE, &value);
+}
+
+int
+getStatus_PLC_HMI_PAGE(void)
+{
+	return getStatus(ID_PLC_HMI_PAGE);
 }
 
 int
@@ -5840,8 +5965,13 @@ update_all(void)
 	retval += readFromDb(ID_PLC_Hours, &PLC_Hours);
 	retval += readFromDb(ID_PLC_Minutes, &PLC_Minutes);
 	retval += readFromDb(ID_PLC_Seconds, &PLC_Seconds);
+	retval += readFromDb(ID_PLC_UPTIME_s, &PLC_UPTIME_s);
+	retval += readFromDb(ID_PLC_UPTIME_cs, &PLC_UPTIME_cs);
 	retval += readFromDb(ID_PLC_WATCHDOGEN, &PLC_WATCHDOGEN);
 	retval += readFromDb(ID_PLC_WATCHDOG_ms, &PLC_WATCHDOG_ms);
+	retval += readFromDb(ID_PLC_PRODUCT_ID, &PLC_PRODUCT_ID);
+	retval += readFromDb(ID_PLC_SERIAL_NUMBER, &PLC_SERIAL_NUMBER);
+	retval += readFromDb(ID_PLC_HMI_PAGE, &PLC_HMI_PAGE);
 	retval += readFromDb(ID_PLC_BEEP_VOLUME, &PLC_BEEP_VOLUME);
 	retval += readFromDb(ID_PLC_TOUCH_VOLUME, &PLC_TOUCH_VOLUME);
 	retval += readFromDb(ID_PLC_ALARM_VOLUME, &PLC_ALARM_VOLUME);
