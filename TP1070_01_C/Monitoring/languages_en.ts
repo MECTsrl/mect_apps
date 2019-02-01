@@ -1031,6 +1031,10 @@ HOME</source>
         <location filename="page200.ui" line="4795"/>
         <location filename="page200.ui" line="4879"/>
         <location filename="page200.ui" line="4963"/>
+        <location filename="page200.ui" line="5044"/>
+        <location filename="page200.ui" line="5121"/>
+        <location filename="page200.ui" line="5198"/>
+        <location filename="page200.ui" line="5272"/>
         <source>ATCMlabel widget</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1115,6 +1119,14 @@ HOME</source>
         <location filename="page200.ui" line="4897"/>
         <location filename="page200.ui" line="4978"/>
         <location filename="page200.ui" line="4981"/>
+        <location filename="page200.ui" line="5059"/>
+        <location filename="page200.ui" line="5062"/>
+        <location filename="page200.ui" line="5136"/>
+        <location filename="page200.ui" line="5139"/>
+        <location filename="page200.ui" line="5210"/>
+        <location filename="page200.ui" line="5213"/>
+        <location filename="page200.ui" line="5284"/>
+        <location filename="page200.ui" line="5287"/>
         <source>0</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1454,6 +1466,70 @@ Nodes</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="page200.ui" line="5041"/>
+        <location filename="page200.ui" line="5047"/>
+        <source>PLC_UPTIME_s</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="5050"/>
+        <location filename="page200.ui" line="5127"/>
+        <source>Uptime </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="5053"/>
+        <source> [s]</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="5115"/>
+        <source>nnnnnNN</source>
+        <oldsource>nnnnnnnnnn</oldsource>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="5118"/>
+        <location filename="page200.ui" line="5124"/>
+        <source>PLC_UPTIME_cs</source>
+        <oldsource>PLC_UPTIME_ns</oldsource>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="5130"/>
+        <source> [cs]</source>
+        <oldsource> [ns]</oldsource>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="5192"/>
+        <location filename="page200.ui" line="5266"/>
+        <source>0xXXXXxxXX</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="5195"/>
+        <location filename="page200.ui" line="5201"/>
+        <source>PLC_SERIAL_NUMBER</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="5204"/>
+        <source>Serial N. </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="5269"/>
+        <location filename="page200.ui" line="5275"/>
+        <source>PLC_PRODUCT_ID</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="5278"/>
+        <source>Product ID </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="page200.ui" line="3597"/>
         <source> 1# 1 MPT91</source>
         <translation type="unfinished"></translation>
@@ -1702,6 +1778,7 @@ Nodes</oldsource>
     </message>
     <message>
         <location filename="page200.ui" line="3953"/>
+        <location filename="page200.ui" line="5038"/>
         <source>nnnnn</source>
         <translation type="unfinished"></translation>
     </message>
