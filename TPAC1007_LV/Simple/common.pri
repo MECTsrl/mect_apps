@@ -119,3 +119,4 @@ RESOURCES += \
     languages.qrc
 
 include(./languages.pri)
+
