@@ -20,6 +20,7 @@ file=Alarms.st
 file=Events.st
 file=Normal.st
 file=Slow.st
+file=VerySlow.st
 
 [Libs]
 file=$(LIBDIR)\ATCM_IEC1131_3.4cl
