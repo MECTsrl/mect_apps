@@ -1533,7 +1533,28 @@ int32_t PLC_HMI_PAGE = 0;
 
 
 /*
- * Variable PLC_BUZZER
+ * Variable PLC_BEEP_VOLUME	[ Beep volume (when buzzerOn) ]
+ */
+
+u_int8_t PLC_BEEP_VOLUME = 0;
+
+
+/*
+ * Variable PLC_TOUCH_VOLUME	[ Touch volume ]
+ */
+
+u_int8_t PLC_TOUCH_VOLUME = 0;
+
+
+/*
+ * Variable PLC_ALARM_VOLUME	[ Alarm volume (when alarm) ]
+ */
+
+u_int8_t PLC_ALARM_VOLUME = 0;
+
+
+/*
+ * Variable PLC_BUZZER	[ Enable dynamic buzzer sound (0x44332211 up=0x11(%) on=0x22(cs) off=0x33(cs) rep=0x44(times)) ]
  */
 
 u_int32_t PLC_BUZZER = 0;
@@ -1554,227 +1575,73 @@ u_int32_t PLC_FastIO_Dir = 0;
 
 
 /*
- * Variable PLC_FastIO_1
+ * Variable PLC_FastIO_1	[ HW Key 04 ]
  */
 
 int PLC_FastIO_1 = 0;
 
 
 /*
- * Variable PLC_FastIO_2
- */
-
-int PLC_FastIO_2 = 0;
-
-
-/*
- * Variable PLC_FastIO_3
- */
-
-int PLC_FastIO_3 = 0;
-
-
-/*
- * Variable PLC_FastIO_4
- */
-
-int PLC_FastIO_4 = 0;
-
-
-/*
- * Variable PLC_FastIO_5
- */
-
-int PLC_FastIO_5 = 0;
-
-
-/*
- * Variable PLC_FastIO_6
- */
-
-int PLC_FastIO_6 = 0;
-
-
-/*
- * Variable PLC_FastIO_7
- */
-
-int PLC_FastIO_7 = 0;
-
-
-/*
- * Variable PLC_FastIO_8
- */
-
-int PLC_FastIO_8 = 0;
-
-
-/*
- * Variable PLC_FastIO_9
+ * Variable PLC_FastIO_9	[ HW Key 07 ]
  */
 
 int PLC_FastIO_9 = 0;
 
 
 /*
- * Variable PLC_FastIO_10
+ * Variable PLC_FastIO_10	[ HW Key 09 ]
  */
 
 int PLC_FastIO_10 = 0;
 
 
 /*
- * Variable PLC_FastIO_11
+ * Variable PLC_FastIO_11	[ HW Key 05 ]
  */
 
 int PLC_FastIO_11 = 0;
 
 
 /*
- * Variable PLC_FastIO_12
+ * Variable PLC_FastIO_12	[ HW Key 06 ]
  */
 
 int PLC_FastIO_12 = 0;
 
 
 /*
- * Variable PLC_FastIO_13
+ * Variable PLC_FastIO_13	[ HW Key 08 ]
  */
 
 int PLC_FastIO_13 = 0;
 
 
 /*
- * Variable PLC_FastIO_14
+ * Variable PLC_FastIO_14	[ HW Key 01 ]
  */
 
 int PLC_FastIO_14 = 0;
 
 
 /*
- * Variable PLC_FastIO_15
+ * Variable PLC_FastIO_15	[ HW Key 02 ]
  */
 
 int PLC_FastIO_15 = 0;
 
 
 /*
- * Variable PLC_FastIO_16
+ * Variable PLC_FastIO_16	[ HW Key 10 ]
  */
 
 int PLC_FastIO_16 = 0;
 
 
 /*
- * Variable PLC_FastIO_17
+ * Variable PLC_FastIO_17	[ HW Key 03 ]
  */
 
 int PLC_FastIO_17 = 0;
-
-
-/*
- * Variable PLC_FastIO_18
- */
-
-int PLC_FastIO_18 = 0;
-
-
-/*
- * Variable PLC_FastIO_19
- */
-
-int PLC_FastIO_19 = 0;
-
-
-/*
- * Variable PLC_FastIO_20
- */
-
-int PLC_FastIO_20 = 0;
-
-
-/*
- * Variable PLC_FastIO_21
- */
-
-int PLC_FastIO_21 = 0;
-
-
-/*
- * Variable PLC_FastIO_22
- */
-
-int PLC_FastIO_22 = 0;
-
-
-/*
- * Variable PLC_FastIO_23
- */
-
-int PLC_FastIO_23 = 0;
-
-
-/*
- * Variable PLC_FastIO_24
- */
-
-int PLC_FastIO_24 = 0;
-
-
-/*
- * Variable PLC_FastIO_25
- */
-
-int PLC_FastIO_25 = 0;
-
-
-/*
- * Variable PLC_FastIO_26
- */
-
-int PLC_FastIO_26 = 0;
-
-
-/*
- * Variable PLC_FastIO_27
- */
-
-int PLC_FastIO_27 = 0;
-
-
-/*
- * Variable PLC_FastIO_28
- */
-
-int PLC_FastIO_28 = 0;
-
-
-/*
- * Variable PLC_FastIO_29
- */
-
-int PLC_FastIO_29 = 0;
-
-
-/*
- * Variable PLC_FastIO_30
- */
-
-int PLC_FastIO_30 = 0;
-
-
-/*
- * Variable PLC_FastIO_31
- */
-
-int PLC_FastIO_31 = 0;
-
-
-/*
- * Variable PLC_FastIO_32
- */
-
-int PLC_FastIO_32 = 0;
 
 int
 doWrite_RTU0_TYPE_PORT(u_int32_t value)
@@ -5647,6 +5514,60 @@ getStatus_PLC_HMI_PAGE(void)
 }
 
 int
+doWrite_PLC_BEEP_VOLUME(u_int8_t value)
+{
+	return doWrite(ID_PLC_BEEP_VOLUME, &value);
+}
+
+int
+addWrite_PLC_BEEP_VOLUME(u_int8_t value)
+{
+	return addWrite(ID_PLC_BEEP_VOLUME, &value);
+}
+
+int
+getStatus_PLC_BEEP_VOLUME(void)
+{
+	return getStatus(ID_PLC_BEEP_VOLUME);
+}
+
+int
+doWrite_PLC_TOUCH_VOLUME(u_int8_t value)
+{
+	return doWrite(ID_PLC_TOUCH_VOLUME, &value);
+}
+
+int
+addWrite_PLC_TOUCH_VOLUME(u_int8_t value)
+{
+	return addWrite(ID_PLC_TOUCH_VOLUME, &value);
+}
+
+int
+getStatus_PLC_TOUCH_VOLUME(void)
+{
+	return getStatus(ID_PLC_TOUCH_VOLUME);
+}
+
+int
+doWrite_PLC_ALARM_VOLUME(u_int8_t value)
+{
+	return doWrite(ID_PLC_ALARM_VOLUME, &value);
+}
+
+int
+addWrite_PLC_ALARM_VOLUME(u_int8_t value)
+{
+	return addWrite(ID_PLC_ALARM_VOLUME, &value);
+}
+
+int
+getStatus_PLC_ALARM_VOLUME(void)
+{
+	return getStatus(ID_PLC_ALARM_VOLUME);
+}
+
+int
 doWrite_PLC_BUZZER(u_int32_t value)
 {
 	return doWrite(ID_PLC_BUZZER, &value);
@@ -5716,132 +5637,6 @@ int
 getStatus_PLC_FastIO_1(void)
 {
 	return getStatus(ID_PLC_FastIO_1);
-}
-
-int
-doWrite_PLC_FastIO_2(int value)
-{
-	return doWrite(ID_PLC_FastIO_2, &value);
-}
-
-int
-addWrite_PLC_FastIO_2(int value)
-{
-	return addWrite(ID_PLC_FastIO_2, &value);
-}
-
-int
-getStatus_PLC_FastIO_2(void)
-{
-	return getStatus(ID_PLC_FastIO_2);
-}
-
-int
-doWrite_PLC_FastIO_3(int value)
-{
-	return doWrite(ID_PLC_FastIO_3, &value);
-}
-
-int
-addWrite_PLC_FastIO_3(int value)
-{
-	return addWrite(ID_PLC_FastIO_3, &value);
-}
-
-int
-getStatus_PLC_FastIO_3(void)
-{
-	return getStatus(ID_PLC_FastIO_3);
-}
-
-int
-doWrite_PLC_FastIO_4(int value)
-{
-	return doWrite(ID_PLC_FastIO_4, &value);
-}
-
-int
-addWrite_PLC_FastIO_4(int value)
-{
-	return addWrite(ID_PLC_FastIO_4, &value);
-}
-
-int
-getStatus_PLC_FastIO_4(void)
-{
-	return getStatus(ID_PLC_FastIO_4);
-}
-
-int
-doWrite_PLC_FastIO_5(int value)
-{
-	return doWrite(ID_PLC_FastIO_5, &value);
-}
-
-int
-addWrite_PLC_FastIO_5(int value)
-{
-	return addWrite(ID_PLC_FastIO_5, &value);
-}
-
-int
-getStatus_PLC_FastIO_5(void)
-{
-	return getStatus(ID_PLC_FastIO_5);
-}
-
-int
-doWrite_PLC_FastIO_6(int value)
-{
-	return doWrite(ID_PLC_FastIO_6, &value);
-}
-
-int
-addWrite_PLC_FastIO_6(int value)
-{
-	return addWrite(ID_PLC_FastIO_6, &value);
-}
-
-int
-getStatus_PLC_FastIO_6(void)
-{
-	return getStatus(ID_PLC_FastIO_6);
-}
-
-int
-doWrite_PLC_FastIO_7(int value)
-{
-	return doWrite(ID_PLC_FastIO_7, &value);
-}
-
-int
-addWrite_PLC_FastIO_7(int value)
-{
-	return addWrite(ID_PLC_FastIO_7, &value);
-}
-
-int
-getStatus_PLC_FastIO_7(void)
-{
-	return getStatus(ID_PLC_FastIO_7);
-}
-
-int
-doWrite_PLC_FastIO_8(int value)
-{
-	return doWrite(ID_PLC_FastIO_8, &value);
-}
-
-int
-addWrite_PLC_FastIO_8(int value)
-{
-	return addWrite(ID_PLC_FastIO_8, &value);
-}
-
-int
-getStatus_PLC_FastIO_8(void)
-{
-	return getStatus(ID_PLC_FastIO_8);
 }
 
 int
@@ -6004,276 +5799,6 @@ int
 getStatus_PLC_FastIO_17(void)
 {
 	return getStatus(ID_PLC_FastIO_17);
-}
-
-int
-doWrite_PLC_FastIO_18(int value)
-{
-	return doWrite(ID_PLC_FastIO_18, &value);
-}
-
-int
-addWrite_PLC_FastIO_18(int value)
-{
-	return addWrite(ID_PLC_FastIO_18, &value);
-}
-
-int
-getStatus_PLC_FastIO_18(void)
-{
-	return getStatus(ID_PLC_FastIO_18);
-}
-
-int
-doWrite_PLC_FastIO_19(int value)
-{
-	return doWrite(ID_PLC_FastIO_19, &value);
-}
-
-int
-addWrite_PLC_FastIO_19(int value)
-{
-	return addWrite(ID_PLC_FastIO_19, &value);
-}
-
-int
-getStatus_PLC_FastIO_19(void)
-{
-	return getStatus(ID_PLC_FastIO_19);
-}
-
-int
-doWrite_PLC_FastIO_20(int value)
-{
-	return doWrite(ID_PLC_FastIO_20, &value);
-}
-
-int
-addWrite_PLC_FastIO_20(int value)
-{
-	return addWrite(ID_PLC_FastIO_20, &value);
-}
-
-int
-getStatus_PLC_FastIO_20(void)
-{
-	return getStatus(ID_PLC_FastIO_20);
-}
-
-int
-doWrite_PLC_FastIO_21(int value)
-{
-	return doWrite(ID_PLC_FastIO_21, &value);
-}
-
-int
-addWrite_PLC_FastIO_21(int value)
-{
-	return addWrite(ID_PLC_FastIO_21, &value);
-}
-
-int
-getStatus_PLC_FastIO_21(void)
-{
-	return getStatus(ID_PLC_FastIO_21);
-}
-
-int
-doWrite_PLC_FastIO_22(int value)
-{
-	return doWrite(ID_PLC_FastIO_22, &value);
-}
-
-int
-addWrite_PLC_FastIO_22(int value)
-{
-	return addWrite(ID_PLC_FastIO_22, &value);
-}
-
-int
-getStatus_PLC_FastIO_22(void)
-{
-	return getStatus(ID_PLC_FastIO_22);
-}
-
-int
-doWrite_PLC_FastIO_23(int value)
-{
-	return doWrite(ID_PLC_FastIO_23, &value);
-}
-
-int
-addWrite_PLC_FastIO_23(int value)
-{
-	return addWrite(ID_PLC_FastIO_23, &value);
-}
-
-int
-getStatus_PLC_FastIO_23(void)
-{
-	return getStatus(ID_PLC_FastIO_23);
-}
-
-int
-doWrite_PLC_FastIO_24(int value)
-{
-	return doWrite(ID_PLC_FastIO_24, &value);
-}
-
-int
-addWrite_PLC_FastIO_24(int value)
-{
-	return addWrite(ID_PLC_FastIO_24, &value);
-}
-
-int
-getStatus_PLC_FastIO_24(void)
-{
-	return getStatus(ID_PLC_FastIO_24);
-}
-
-int
-doWrite_PLC_FastIO_25(int value)
-{
-	return doWrite(ID_PLC_FastIO_25, &value);
-}
-
-int
-addWrite_PLC_FastIO_25(int value)
-{
-	return addWrite(ID_PLC_FastIO_25, &value);
-}
-
-int
-getStatus_PLC_FastIO_25(void)
-{
-	return getStatus(ID_PLC_FastIO_25);
-}
-
-int
-doWrite_PLC_FastIO_26(int value)
-{
-	return doWrite(ID_PLC_FastIO_26, &value);
-}
-
-int
-addWrite_PLC_FastIO_26(int value)
-{
-	return addWrite(ID_PLC_FastIO_26, &value);
-}
-
-int
-getStatus_PLC_FastIO_26(void)
-{
-	return getStatus(ID_PLC_FastIO_26);
-}
-
-int
-doWrite_PLC_FastIO_27(int value)
-{
-	return doWrite(ID_PLC_FastIO_27, &value);
-}
-
-int
-addWrite_PLC_FastIO_27(int value)
-{
-	return addWrite(ID_PLC_FastIO_27, &value);
-}
-
-int
-getStatus_PLC_FastIO_27(void)
-{
-	return getStatus(ID_PLC_FastIO_27);
-}
-
-int
-doWrite_PLC_FastIO_28(int value)
-{
-	return doWrite(ID_PLC_FastIO_28, &value);
-}
-
-int
-addWrite_PLC_FastIO_28(int value)
-{
-	return addWrite(ID_PLC_FastIO_28, &value);
-}
-
-int
-getStatus_PLC_FastIO_28(void)
-{
-	return getStatus(ID_PLC_FastIO_28);
-}
-
-int
-doWrite_PLC_FastIO_29(int value)
-{
-	return doWrite(ID_PLC_FastIO_29, &value);
-}
-
-int
-addWrite_PLC_FastIO_29(int value)
-{
-	return addWrite(ID_PLC_FastIO_29, &value);
-}
-
-int
-getStatus_PLC_FastIO_29(void)
-{
-	return getStatus(ID_PLC_FastIO_29);
-}
-
-int
-doWrite_PLC_FastIO_30(int value)
-{
-	return doWrite(ID_PLC_FastIO_30, &value);
-}
-
-int
-addWrite_PLC_FastIO_30(int value)
-{
-	return addWrite(ID_PLC_FastIO_30, &value);
-}
-
-int
-getStatus_PLC_FastIO_30(void)
-{
-	return getStatus(ID_PLC_FastIO_30);
-}
-
-int
-doWrite_PLC_FastIO_31(int value)
-{
-	return doWrite(ID_PLC_FastIO_31, &value);
-}
-
-int
-addWrite_PLC_FastIO_31(int value)
-{
-	return addWrite(ID_PLC_FastIO_31, &value);
-}
-
-int
-getStatus_PLC_FastIO_31(void)
-{
-	return getStatus(ID_PLC_FastIO_31);
-}
-
-int
-doWrite_PLC_FastIO_32(int value)
-{
-	return doWrite(ID_PLC_FastIO_32, &value);
-}
-
-int
-addWrite_PLC_FastIO_32(int value)
-{
-	return addWrite(ID_PLC_FastIO_32, &value);
-}
-
-int
-getStatus_PLC_FastIO_32(void)
-{
-	return getStatus(ID_PLC_FastIO_32);
 }
 
 
@@ -6497,17 +6022,13 @@ update_all(void)
 	retval += readFromDb(ID_PLC_PRODUCT_ID, &PLC_PRODUCT_ID);
 	retval += readFromDb(ID_PLC_SERIAL_NUMBER, &PLC_SERIAL_NUMBER);
 	retval += readFromDb(ID_PLC_HMI_PAGE, &PLC_HMI_PAGE);
+	retval += readFromDb(ID_PLC_BEEP_VOLUME, &PLC_BEEP_VOLUME);
+	retval += readFromDb(ID_PLC_TOUCH_VOLUME, &PLC_TOUCH_VOLUME);
+	retval += readFromDb(ID_PLC_ALARM_VOLUME, &PLC_ALARM_VOLUME);
 	retval += readFromDb(ID_PLC_BUZZER, &PLC_BUZZER);
 	retval += readFromDb(ID_PLC_FastIO_Ena, &PLC_FastIO_Ena);
 	retval += readFromDb(ID_PLC_FastIO_Dir, &PLC_FastIO_Dir);
 	retval += readFromDb(ID_PLC_FastIO_1, &PLC_FastIO_1);
-	retval += readFromDb(ID_PLC_FastIO_2, &PLC_FastIO_2);
-	retval += readFromDb(ID_PLC_FastIO_3, &PLC_FastIO_3);
-	retval += readFromDb(ID_PLC_FastIO_4, &PLC_FastIO_4);
-	retval += readFromDb(ID_PLC_FastIO_5, &PLC_FastIO_5);
-	retval += readFromDb(ID_PLC_FastIO_6, &PLC_FastIO_6);
-	retval += readFromDb(ID_PLC_FastIO_7, &PLC_FastIO_7);
-	retval += readFromDb(ID_PLC_FastIO_8, &PLC_FastIO_8);
 	retval += readFromDb(ID_PLC_FastIO_9, &PLC_FastIO_9);
 	retval += readFromDb(ID_PLC_FastIO_10, &PLC_FastIO_10);
 	retval += readFromDb(ID_PLC_FastIO_11, &PLC_FastIO_11);
@@ -6517,21 +6038,6 @@ update_all(void)
 	retval += readFromDb(ID_PLC_FastIO_15, &PLC_FastIO_15);
 	retval += readFromDb(ID_PLC_FastIO_16, &PLC_FastIO_16);
 	retval += readFromDb(ID_PLC_FastIO_17, &PLC_FastIO_17);
-	retval += readFromDb(ID_PLC_FastIO_18, &PLC_FastIO_18);
-	retval += readFromDb(ID_PLC_FastIO_19, &PLC_FastIO_19);
-	retval += readFromDb(ID_PLC_FastIO_20, &PLC_FastIO_20);
-	retval += readFromDb(ID_PLC_FastIO_21, &PLC_FastIO_21);
-	retval += readFromDb(ID_PLC_FastIO_22, &PLC_FastIO_22);
-	retval += readFromDb(ID_PLC_FastIO_23, &PLC_FastIO_23);
-	retval += readFromDb(ID_PLC_FastIO_24, &PLC_FastIO_24);
-	retval += readFromDb(ID_PLC_FastIO_25, &PLC_FastIO_25);
-	retval += readFromDb(ID_PLC_FastIO_26, &PLC_FastIO_26);
-	retval += readFromDb(ID_PLC_FastIO_27, &PLC_FastIO_27);
-	retval += readFromDb(ID_PLC_FastIO_28, &PLC_FastIO_28);
-	retval += readFromDb(ID_PLC_FastIO_29, &PLC_FastIO_29);
-	retval += readFromDb(ID_PLC_FastIO_30, &PLC_FastIO_30);
-	retval += readFromDb(ID_PLC_FastIO_31, &PLC_FastIO_31);
-	retval += readFromDb(ID_PLC_FastIO_32, &PLC_FastIO_32);
 
 	return retval;
 }

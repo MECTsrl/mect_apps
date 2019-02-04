@@ -1324,8 +1324,26 @@ int doWrite_PLC_HMI_PAGE(int32_t value);
 int addWrite_PLC_HMI_PAGE(int32_t value);
 int getStatus_PLC_HMI_PAGE(void);
 
+#define ID_PLC_BEEP_VOLUME 5435
+extern u_int8_t PLC_BEEP_VOLUME;	/* Beep volume (when buzzerOn) */
+int doWrite_PLC_BEEP_VOLUME(u_int8_t value);
+int addWrite_PLC_BEEP_VOLUME(u_int8_t value);
+int getStatus_PLC_BEEP_VOLUME(void);
+
+#define ID_PLC_TOUCH_VOLUME 5436
+extern u_int8_t PLC_TOUCH_VOLUME;	/* Touch volume */
+int doWrite_PLC_TOUCH_VOLUME(u_int8_t value);
+int addWrite_PLC_TOUCH_VOLUME(u_int8_t value);
+int getStatus_PLC_TOUCH_VOLUME(void);
+
+#define ID_PLC_ALARM_VOLUME 5437
+extern u_int8_t PLC_ALARM_VOLUME;	/* Alarm volume (when alarm) */
+int doWrite_PLC_ALARM_VOLUME(u_int8_t value);
+int addWrite_PLC_ALARM_VOLUME(u_int8_t value);
+int getStatus_PLC_ALARM_VOLUME(void);
+
 #define ID_PLC_BUZZER 5438
-extern u_int32_t PLC_BUZZER;
+extern u_int32_t PLC_BUZZER;	/* Enable dynamic buzzer sound (0x44332211 up=0x11(%) on=0x22(cs) off=0x33(cs) rep=0x44(times)) */
 int doWrite_PLC_BUZZER(u_int32_t value);
 int addWrite_PLC_BUZZER(u_int32_t value);
 int getStatus_PLC_BUZZER(void);
@@ -1343,196 +1361,64 @@ int addWrite_PLC_FastIO_Dir(u_int32_t value);
 int getStatus_PLC_FastIO_Dir(void);
 
 #define ID_PLC_FastIO_1 5441
-extern int PLC_FastIO_1;
+extern int PLC_FastIO_1;	/* HW Key 04 */
 int doWrite_PLC_FastIO_1(int value);
 int addWrite_PLC_FastIO_1(int value);
 int getStatus_PLC_FastIO_1(void);
 
-#define ID_PLC_FastIO_2 5442
-extern int PLC_FastIO_2;
-int doWrite_PLC_FastIO_2(int value);
-int addWrite_PLC_FastIO_2(int value);
-int getStatus_PLC_FastIO_2(void);
-
-#define ID_PLC_FastIO_3 5443
-extern int PLC_FastIO_3;
-int doWrite_PLC_FastIO_3(int value);
-int addWrite_PLC_FastIO_3(int value);
-int getStatus_PLC_FastIO_3(void);
-
-#define ID_PLC_FastIO_4 5444
-extern int PLC_FastIO_4;
-int doWrite_PLC_FastIO_4(int value);
-int addWrite_PLC_FastIO_4(int value);
-int getStatus_PLC_FastIO_4(void);
-
-#define ID_PLC_FastIO_5 5445
-extern int PLC_FastIO_5;
-int doWrite_PLC_FastIO_5(int value);
-int addWrite_PLC_FastIO_5(int value);
-int getStatus_PLC_FastIO_5(void);
-
-#define ID_PLC_FastIO_6 5446
-extern int PLC_FastIO_6;
-int doWrite_PLC_FastIO_6(int value);
-int addWrite_PLC_FastIO_6(int value);
-int getStatus_PLC_FastIO_6(void);
-
-#define ID_PLC_FastIO_7 5447
-extern int PLC_FastIO_7;
-int doWrite_PLC_FastIO_7(int value);
-int addWrite_PLC_FastIO_7(int value);
-int getStatus_PLC_FastIO_7(void);
-
-#define ID_PLC_FastIO_8 5448
-extern int PLC_FastIO_8;
-int doWrite_PLC_FastIO_8(int value);
-int addWrite_PLC_FastIO_8(int value);
-int getStatus_PLC_FastIO_8(void);
-
 #define ID_PLC_FastIO_9 5449
-extern int PLC_FastIO_9;
+extern int PLC_FastIO_9;	/* HW Key 07 */
 int doWrite_PLC_FastIO_9(int value);
 int addWrite_PLC_FastIO_9(int value);
 int getStatus_PLC_FastIO_9(void);
 
 #define ID_PLC_FastIO_10 5450
-extern int PLC_FastIO_10;
+extern int PLC_FastIO_10;	/* HW Key 09 */
 int doWrite_PLC_FastIO_10(int value);
 int addWrite_PLC_FastIO_10(int value);
 int getStatus_PLC_FastIO_10(void);
 
 #define ID_PLC_FastIO_11 5451
-extern int PLC_FastIO_11;
+extern int PLC_FastIO_11;	/* HW Key 05 */
 int doWrite_PLC_FastIO_11(int value);
 int addWrite_PLC_FastIO_11(int value);
 int getStatus_PLC_FastIO_11(void);
 
 #define ID_PLC_FastIO_12 5452
-extern int PLC_FastIO_12;
+extern int PLC_FastIO_12;	/* HW Key 06 */
 int doWrite_PLC_FastIO_12(int value);
 int addWrite_PLC_FastIO_12(int value);
 int getStatus_PLC_FastIO_12(void);
 
 #define ID_PLC_FastIO_13 5453
-extern int PLC_FastIO_13;
+extern int PLC_FastIO_13;	/* HW Key 08 */
 int doWrite_PLC_FastIO_13(int value);
 int addWrite_PLC_FastIO_13(int value);
 int getStatus_PLC_FastIO_13(void);
 
 #define ID_PLC_FastIO_14 5454
-extern int PLC_FastIO_14;
+extern int PLC_FastIO_14;	/* HW Key 01 */
 int doWrite_PLC_FastIO_14(int value);
 int addWrite_PLC_FastIO_14(int value);
 int getStatus_PLC_FastIO_14(void);
 
 #define ID_PLC_FastIO_15 5455
-extern int PLC_FastIO_15;
+extern int PLC_FastIO_15;	/* HW Key 02 */
 int doWrite_PLC_FastIO_15(int value);
 int addWrite_PLC_FastIO_15(int value);
 int getStatus_PLC_FastIO_15(void);
 
 #define ID_PLC_FastIO_16 5456
-extern int PLC_FastIO_16;
+extern int PLC_FastIO_16;	/* HW Key 10 */
 int doWrite_PLC_FastIO_16(int value);
 int addWrite_PLC_FastIO_16(int value);
 int getStatus_PLC_FastIO_16(void);
 
 #define ID_PLC_FastIO_17 5457
-extern int PLC_FastIO_17;
+extern int PLC_FastIO_17;	/* HW Key 03 */
 int doWrite_PLC_FastIO_17(int value);
 int addWrite_PLC_FastIO_17(int value);
 int getStatus_PLC_FastIO_17(void);
-
-#define ID_PLC_FastIO_18 5458
-extern int PLC_FastIO_18;
-int doWrite_PLC_FastIO_18(int value);
-int addWrite_PLC_FastIO_18(int value);
-int getStatus_PLC_FastIO_18(void);
-
-#define ID_PLC_FastIO_19 5459
-extern int PLC_FastIO_19;
-int doWrite_PLC_FastIO_19(int value);
-int addWrite_PLC_FastIO_19(int value);
-int getStatus_PLC_FastIO_19(void);
-
-#define ID_PLC_FastIO_20 5460
-extern int PLC_FastIO_20;
-int doWrite_PLC_FastIO_20(int value);
-int addWrite_PLC_FastIO_20(int value);
-int getStatus_PLC_FastIO_20(void);
-
-#define ID_PLC_FastIO_21 5461
-extern int PLC_FastIO_21;
-int doWrite_PLC_FastIO_21(int value);
-int addWrite_PLC_FastIO_21(int value);
-int getStatus_PLC_FastIO_21(void);
-
-#define ID_PLC_FastIO_22 5462
-extern int PLC_FastIO_22;
-int doWrite_PLC_FastIO_22(int value);
-int addWrite_PLC_FastIO_22(int value);
-int getStatus_PLC_FastIO_22(void);
-
-#define ID_PLC_FastIO_23 5463
-extern int PLC_FastIO_23;
-int doWrite_PLC_FastIO_23(int value);
-int addWrite_PLC_FastIO_23(int value);
-int getStatus_PLC_FastIO_23(void);
-
-#define ID_PLC_FastIO_24 5464
-extern int PLC_FastIO_24;
-int doWrite_PLC_FastIO_24(int value);
-int addWrite_PLC_FastIO_24(int value);
-int getStatus_PLC_FastIO_24(void);
-
-#define ID_PLC_FastIO_25 5465
-extern int PLC_FastIO_25;
-int doWrite_PLC_FastIO_25(int value);
-int addWrite_PLC_FastIO_25(int value);
-int getStatus_PLC_FastIO_25(void);
-
-#define ID_PLC_FastIO_26 5466
-extern int PLC_FastIO_26;
-int doWrite_PLC_FastIO_26(int value);
-int addWrite_PLC_FastIO_26(int value);
-int getStatus_PLC_FastIO_26(void);
-
-#define ID_PLC_FastIO_27 5467
-extern int PLC_FastIO_27;
-int doWrite_PLC_FastIO_27(int value);
-int addWrite_PLC_FastIO_27(int value);
-int getStatus_PLC_FastIO_27(void);
-
-#define ID_PLC_FastIO_28 5468
-extern int PLC_FastIO_28;
-int doWrite_PLC_FastIO_28(int value);
-int addWrite_PLC_FastIO_28(int value);
-int getStatus_PLC_FastIO_28(void);
-
-#define ID_PLC_FastIO_29 5469
-extern int PLC_FastIO_29;
-int doWrite_PLC_FastIO_29(int value);
-int addWrite_PLC_FastIO_29(int value);
-int getStatus_PLC_FastIO_29(void);
-
-#define ID_PLC_FastIO_30 5470
-extern int PLC_FastIO_30;
-int doWrite_PLC_FastIO_30(int value);
-int addWrite_PLC_FastIO_30(int value);
-int getStatus_PLC_FastIO_30(void);
-
-#define ID_PLC_FastIO_31 5471
-extern int PLC_FastIO_31;
-int doWrite_PLC_FastIO_31(int value);
-int addWrite_PLC_FastIO_31(int value);
-int getStatus_PLC_FastIO_31(void);
-
-#define ID_PLC_FastIO_32 5472
-extern int PLC_FastIO_32;
-int doWrite_PLC_FastIO_32(int value);
-int addWrite_PLC_FastIO_32(int value);
-int getStatus_PLC_FastIO_32(void);
 
 #ifdef __cplusplus
 }
