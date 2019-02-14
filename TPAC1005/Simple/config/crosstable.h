@@ -1420,6 +1420,12 @@ int doWrite_PLC_FastIO_17(int value);
 int addWrite_PLC_FastIO_17(int value);
 int getStatus_PLC_FastIO_17(void);
 
+#define ID_PLC_FastIO_18 5458
+extern int PLC_FastIO_18;	/* Not available */
+int doWrite_PLC_FastIO_18(int value);
+int addWrite_PLC_FastIO_18(int value);
+int getStatus_PLC_FastIO_18(void);
+
 #ifdef __cplusplus
 }
 #endif
