@@ -3295,6 +3295,13 @@ int PLC_FastIO_16 = 0;
 
 int PLC_FastIO_17 = 0;
 
+
+/*
+ * Variable PLC_FastIO_18	[ Not available ]
+ */
+
+int PLC_FastIO_18 = 0;
+
 int
 doWrite_STATUS(u_int16_t value)
 {
@@ -11701,6 +11708,24 @@ getStatus_PLC_FastIO_17(void)
 	return getStatus(ID_PLC_FastIO_17);
 }
 
+int
+doWrite_PLC_FastIO_18(int value)
+{
+	return doWrite(ID_PLC_FastIO_18, &value);
+}
+
+int
+addWrite_PLC_FastIO_18(int value)
+{
+	return addWrite(ID_PLC_FastIO_18, &value);
+}
+
+int
+getStatus_PLC_FastIO_18(void)
+{
+	return getStatus(ID_PLC_FastIO_18);
+}
+
 
 int
 update_all(void)
@@ -12174,6 +12199,7 @@ update_all(void)
 	retval += readFromDb(ID_PLC_FastIO_15, &PLC_FastIO_15);
 	retval += readFromDb(ID_PLC_FastIO_16, &PLC_FastIO_16);
 	retval += readFromDb(ID_PLC_FastIO_17, &PLC_FastIO_17);
+	retval += readFromDb(ID_PLC_FastIO_18, &PLC_FastIO_18);
 
 	return retval;
 }
