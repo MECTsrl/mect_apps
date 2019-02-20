@@ -35,577 +35,577 @@ extern "C" {
 
 
 #define ID_PLC_cella_1 4501
-extern int32_t PLC_cella_1;	/* Valore cella di carico 1 */
+extern int32_t PLC_cella_1;	/* Load Cell 1 Input 24 bit */
 int doWrite_PLC_cella_1(int32_t value);
 int addWrite_PLC_cella_1(int32_t value);
 int getStatus_PLC_cella_1(void);
 
 #define ID_PLC_cella_2 4502
-extern int32_t PLC_cella_2;	/* Valore cella di carico 2 */
+extern int32_t PLC_cella_2;	/* Load Cell 2 Input 24 bit */
 int doWrite_PLC_cella_2(int32_t value);
 int addWrite_PLC_cella_2(int32_t value);
 int getStatus_PLC_cella_2(void);
 
 #define ID_PLC_cella_3 4503
-extern int32_t PLC_cella_3;	/* Valore cella di carico 3 */
+extern int32_t PLC_cella_3;	/* Load Cell 2 Input 24 bit */
 int doWrite_PLC_cella_3(int32_t value);
 int addWrite_PLC_cella_3(int32_t value);
 int getStatus_PLC_cella_3(void);
 
 #define ID_PLC_VCC 4504
-extern int16_t PLC_VCC;
+extern int16_t PLC_VCC;	/* Cell Polarity Voltage */
 int doWrite_PLC_VCC(int16_t value);
 int addWrite_PLC_VCC(int16_t value);
 int getStatus_PLC_VCC(void);
 
 #define ID_PLC_encoder_1 4505
-extern int32_t PLC_encoder_1;	/* Valore encoder 1 */
+extern int32_t PLC_encoder_1;	/* Encoder value 1 32 bit */
 int doWrite_PLC_encoder_1(int32_t value);
 int addWrite_PLC_encoder_1(int32_t value);
 int getStatus_PLC_encoder_1(void);
 
 #define ID_PLC_encoder_2 4506
-extern int32_t PLC_encoder_2;	/* Valore encoder 2 */
+extern int32_t PLC_encoder_2;	/* Encoder value 2 32 bit */
 int doWrite_PLC_encoder_2(int32_t value);
 int addWrite_PLC_encoder_2(int32_t value);
 int getStatus_PLC_encoder_2(void);
 
 #define ID_PLC_encoder_3 4507
-extern int32_t PLC_encoder_3;	/* Valore encoder 3 */
+extern int32_t PLC_encoder_3;	/* Encoder value 3 32 bit */
 int doWrite_PLC_encoder_3(int32_t value);
 int addWrite_PLC_encoder_3(int32_t value);
 int getStatus_PLC_encoder_3(void);
 
 #define ID_PLC_encoder_4 4508
-extern int32_t PLC_encoder_4;	/* Valore encoder 4 */
+extern int32_t PLC_encoder_4;	/* Encoder value 4 32 bit */
 int doWrite_PLC_encoder_4(int32_t value);
 int addWrite_PLC_encoder_4(int32_t value);
 int getStatus_PLC_encoder_4(void);
 
 #define ID_PLC_DigIn_9 4509
-extern int PLC_DigIn_9;	/* Lettura input digitali */
+extern int PLC_DigIn_9;	/* Digital Input 9 */
 int doWrite_PLC_DigIn_9(int value);
 int addWrite_PLC_DigIn_9(int value);
 int getStatus_PLC_DigIn_9(void);
 
 #define ID_PLC_DigIn_10 4510
-extern int PLC_DigIn_10;	/* Lettura input digitali */
+extern int PLC_DigIn_10;	/* Digital Input 10 */
 int doWrite_PLC_DigIn_10(int value);
 int addWrite_PLC_DigIn_10(int value);
 int getStatus_PLC_DigIn_10(void);
 
 #define ID_PLC_DigIn_11 4511
-extern int PLC_DigIn_11;	/* Lettura input digitali */
+extern int PLC_DigIn_11;	/* Digital Input 11 */
 int doWrite_PLC_DigIn_11(int value);
 int addWrite_PLC_DigIn_11(int value);
 int getStatus_PLC_DigIn_11(void);
 
 #define ID_PLC_DigIn_12 4512
-extern int PLC_DigIn_12;	/* Lettura input digitali */
+extern int PLC_DigIn_12;	/* Digital Input 12 */
 int doWrite_PLC_DigIn_12(int value);
 int addWrite_PLC_DigIn_12(int value);
 int getStatus_PLC_DigIn_12(void);
 
 #define ID_PLC_DigIn_13 4513
-extern int PLC_DigIn_13;	/* Lettura input digitali */
+extern int PLC_DigIn_13;	/* Digital Input 13 */
 int doWrite_PLC_DigIn_13(int value);
 int addWrite_PLC_DigIn_13(int value);
 int getStatus_PLC_DigIn_13(void);
 
 #define ID_PLC_DigIn_14 4514
-extern int PLC_DigIn_14;	/* Lettura input digitali */
+extern int PLC_DigIn_14;	/* Digital Input 14 */
 int doWrite_PLC_DigIn_14(int value);
 int addWrite_PLC_DigIn_14(int value);
 int getStatus_PLC_DigIn_14(void);
 
 #define ID_PLC_DigIn_15 4515
-extern int PLC_DigIn_15;	/* Lettura input digitali */
+extern int PLC_DigIn_15;	/* Digital Input 15 */
 int doWrite_PLC_DigIn_15(int value);
 int addWrite_PLC_DigIn_15(int value);
 int getStatus_PLC_DigIn_15(void);
 
 #define ID_PLC_DigIn_16 4516
-extern int PLC_DigIn_16;	/* Lettura input digitali */
+extern int PLC_DigIn_16;	/* Digital Input 16 */
 int doWrite_PLC_DigIn_16(int value);
 int addWrite_PLC_DigIn_16(int value);
 int getStatus_PLC_DigIn_16(void);
 
 #define ID_PLC_DigIn_17 4517
-extern int PLC_DigIn_17;	/* Lettura input digitali */
+extern int PLC_DigIn_17;	/* Digital Input 17 */
 int doWrite_PLC_DigIn_17(int value);
 int addWrite_PLC_DigIn_17(int value);
 int getStatus_PLC_DigIn_17(void);
 
 #define ID_PLC_DigIn_18 4518
-extern int PLC_DigIn_18;	/* Lettura input digitali */
+extern int PLC_DigIn_18;	/* Digital Input 18 */
 int doWrite_PLC_DigIn_18(int value);
 int addWrite_PLC_DigIn_18(int value);
 int getStatus_PLC_DigIn_18(void);
 
 #define ID_PLC_DigIn_19 4519
-extern int PLC_DigIn_19;	/* Lettura input digitali */
+extern int PLC_DigIn_19;	/* Digital Input 19 */
 int doWrite_PLC_DigIn_19(int value);
 int addWrite_PLC_DigIn_19(int value);
 int getStatus_PLC_DigIn_19(void);
 
 #define ID_PLC_DigIn_20 4520
-extern int PLC_DigIn_20;	/* Lettura input digitali */
+extern int PLC_DigIn_20;	/* Digital Input 20 */
 int doWrite_PLC_DigIn_20(int value);
 int addWrite_PLC_DigIn_20(int value);
 int getStatus_PLC_DigIn_20(void);
 
 #define ID_PLC_DigIn_21 4521
-extern int PLC_DigIn_21;	/* Lettura input digitali */
+extern int PLC_DigIn_21;	/* Digital Input 21 */
 int doWrite_PLC_DigIn_21(int value);
 int addWrite_PLC_DigIn_21(int value);
 int getStatus_PLC_DigIn_21(void);
 
 #define ID_PLC_DigIn_22 4522
-extern int PLC_DigIn_22;	/* Lettura input digitali */
+extern int PLC_DigIn_22;	/* Digital Input 22 */
 int doWrite_PLC_DigIn_22(int value);
 int addWrite_PLC_DigIn_22(int value);
 int getStatus_PLC_DigIn_22(void);
 
 #define ID_PLC_DigIn_23 4523
-extern int PLC_DigIn_23;	/* Lettura input digitali */
+extern int PLC_DigIn_23;	/* Digital Input 23 */
 int doWrite_PLC_DigIn_23(int value);
 int addWrite_PLC_DigIn_23(int value);
 int getStatus_PLC_DigIn_23(void);
 
 #define ID_PLC_DigIn_24 4524
-extern int PLC_DigIn_24;	/* Lettura input digitali */
+extern int PLC_DigIn_24;	/* Digital Input 24 */
 int doWrite_PLC_DigIn_24(int value);
 int addWrite_PLC_DigIn_24(int value);
 int getStatus_PLC_DigIn_24(void);
 
 #define ID_PLC_Expansion_HB 4525
-extern u_int16_t PLC_Expansion_HB;	/* Heartbeat della espansione */
+extern u_int16_t PLC_Expansion_HB;	/* Expansion Heartbeat */
 int doWrite_PLC_Expansion_HB(u_int16_t value);
 int addWrite_PLC_Expansion_HB(u_int16_t value);
 int getStatus_PLC_Expansion_HB(void);
 
 #define ID_PLC_Expansion_FW 4526
-extern u_int16_t PLC_Expansion_FW;	/* Versione Firmware della espansione */
+extern u_int16_t PLC_Expansion_FW;	/* FW Expansion Revision */
 int doWrite_PLC_Expansion_FW(u_int16_t value);
 int addWrite_PLC_Expansion_FW(u_int16_t value);
 int getStatus_PLC_Expansion_FW(void);
 
 #define ID_PLC_Expansion_HW 4527
-extern u_int16_t PLC_Expansion_HW;	/* Configurazione HW della espansione */
+extern u_int16_t PLC_Expansion_HW;	/* HW expansion revision */
 int doWrite_PLC_Expansion_HW(u_int16_t value);
 int addWrite_PLC_Expansion_HW(u_int16_t value);
 int getStatus_PLC_Expansion_HW(void);
 
 #define ID_PLC_PtoWork_1 4528
-extern int PLC_PtoWork_1;	/* Registro di stato dalla FPGA */
+extern int PLC_PtoWork_1;	/* PTO status Indicates  PTO  is busy */
 int doWrite_PLC_PtoWork_1(int value);
 int addWrite_PLC_PtoWork_1(int value);
 int getStatus_PLC_PtoWork_1(void);
 
 #define ID_PLC_PtoWork_2 4529
-extern int PLC_PtoWork_2;	/* Registro di stato dalla FPGA */
+extern int PLC_PtoWork_2;	/* PTO status Indicates  PTO  is busy */
 int doWrite_PLC_PtoWork_2(int value);
 int addWrite_PLC_PtoWork_2(int value);
 int getStatus_PLC_PtoWork_2(void);
 
 #define ID_PLC_PtoWork_3 4530
-extern int PLC_PtoWork_3;	/* Registro di stato dalla FPGA */
+extern int PLC_PtoWork_3;	/* PTO status Indicates  PTO  is busy */
 int doWrite_PLC_PtoWork_3(int value);
 int addWrite_PLC_PtoWork_3(int value);
 int getStatus_PLC_PtoWork_3(void);
 
 #define ID_PLC_PtoWork_4 4531
-extern int PLC_PtoWork_4;	/* Registro di stato dalla FPGA */
+extern int PLC_PtoWork_4;	/* PTO status Indicates  PTO  is busy */
 int doWrite_PLC_PtoWork_4(int value);
 int addWrite_PLC_PtoWork_4(int value);
 int getStatus_PLC_PtoWork_4(void);
 
 #define ID_PLC_PtoDone_1 4532
-extern int PLC_PtoDone_1;	/* Registro di stato dalla FPGA */
+extern int PLC_PtoDone_1;	/* PTO status Indicates  PTO  has  finished */
 int doWrite_PLC_PtoDone_1(int value);
 int addWrite_PLC_PtoDone_1(int value);
 int getStatus_PLC_PtoDone_1(void);
 
 #define ID_PLC_PtoDone_2 4533
-extern int PLC_PtoDone_2;	/* Registro di stato dalla FPGA */
+extern int PLC_PtoDone_2;	/* PTO status Indicates  PTO  has  finished */
 int doWrite_PLC_PtoDone_2(int value);
 int addWrite_PLC_PtoDone_2(int value);
 int getStatus_PLC_PtoDone_2(void);
 
 #define ID_PLC_PtoDone_3 4534
-extern int PLC_PtoDone_3;	/* Registro di stato dalla FPGA */
+extern int PLC_PtoDone_3;	/* PTO status Indicates  PTO  has  finished */
 int doWrite_PLC_PtoDone_3(int value);
 int addWrite_PLC_PtoDone_3(int value);
 int getStatus_PLC_PtoDone_3(void);
 
 #define ID_PLC_PtoDone_4 4535
-extern int PLC_PtoDone_4;	/* Registro di stato dalla FPGA */
+extern int PLC_PtoDone_4;	/* PTO status Indicates  PTO  has  finished */
 int doWrite_PLC_PtoDone_4(int value);
 int addWrite_PLC_PtoDone_4(int value);
 int getStatus_PLC_PtoDone_4(void);
 
 #define ID_PLC_EncMatch_1 4536
-extern int PLC_EncMatch_1;	/* Registro di stato dalla FPGA */
+extern int PLC_EncMatch_1;	/* N/A */
 int doWrite_PLC_EncMatch_1(int value);
 int addWrite_PLC_EncMatch_1(int value);
 int getStatus_PLC_EncMatch_1(void);
 
 #define ID_PLC_EncMatch_2 4537
-extern int PLC_EncMatch_2;	/* Registro di stato dalla FPGA */
+extern int PLC_EncMatch_2;	/* N/A */
 int doWrite_PLC_EncMatch_2(int value);
 int addWrite_PLC_EncMatch_2(int value);
 int getStatus_PLC_EncMatch_2(void);
 
 #define ID_PLC_EncMatch_3 4538
-extern int PLC_EncMatch_3;	/* Registro di stato dalla FPGA */
+extern int PLC_EncMatch_3;	/* N/A */
 int doWrite_PLC_EncMatch_3(int value);
 int addWrite_PLC_EncMatch_3(int value);
 int getStatus_PLC_EncMatch_3(void);
 
 #define ID_PLC_EncMatch_4 4539
-extern int PLC_EncMatch_4;	/* Registro di stato dalla FPGA */
+extern int PLC_EncMatch_4;	/* N/A */
 int doWrite_PLC_EncMatch_4(int value);
 int addWrite_PLC_EncMatch_4(int value);
 int getStatus_PLC_EncMatch_4(void);
 
 #define ID_PLC_Exp_ST_13 4540
-extern int PLC_Exp_ST_13;	/* Registro di stato dalla FPGA */
+extern int PLC_Exp_ST_13;	/* N/A */
 int doWrite_PLC_Exp_ST_13(int value);
 int addWrite_PLC_Exp_ST_13(int value);
 int getStatus_PLC_Exp_ST_13(void);
 
 #define ID_PLC_Exp_ST_14 4541
-extern int PLC_Exp_ST_14;	/* Registro di stato dalla FPGA */
+extern int PLC_Exp_ST_14;	/* N/A */
 int doWrite_PLC_Exp_ST_14(int value);
 int addWrite_PLC_Exp_ST_14(int value);
 int getStatus_PLC_Exp_ST_14(void);
 
 #define ID_PLC_Exp_ST_15 4542
-extern int PLC_Exp_ST_15;	/* Registro di stato dalla FPGA */
+extern int PLC_Exp_ST_15;	/* N/A */
 int doWrite_PLC_Exp_ST_15(int value);
 int addWrite_PLC_Exp_ST_15(int value);
 int getStatus_PLC_Exp_ST_15(void);
 
 #define ID_PLC_Exp_ST_16 4543
-extern int PLC_Exp_ST_16;	/* Registro di stato dalla FPGA */
+extern int PLC_Exp_ST_16;	/* N/A */
 int doWrite_PLC_Exp_ST_16(int value);
 int addWrite_PLC_Exp_ST_16(int value);
 int getStatus_PLC_Exp_ST_16(void);
 
 #define ID_PLC_Expansion_ER 4544
-extern u_int16_t PLC_Expansion_ER;	/* Registro errori della espansione */
+extern u_int16_t PLC_Expansion_ER;	/* Internal communication error regiter */
 int doWrite_PLC_Expansion_ER(u_int16_t value);
 int addWrite_PLC_Expansion_ER(u_int16_t value);
 int getStatus_PLC_Expansion_ER(void);
 
 #define ID_PLC_Conf_enc_1 4545
-extern u_int16_t PLC_Conf_enc_1;	/* Configurazione encoder 1. 0=non configurato. 1=encoder bidirezionale. 2=contatore monodirezionale */
+extern u_int16_t PLC_Conf_enc_1;	/* Encoder 1 Configuration. 0=not configured. 1=set monodirectional counter  2=set bidirectional encoder */
 int doWrite_PLC_Conf_enc_1(u_int16_t value);
 int addWrite_PLC_Conf_enc_1(u_int16_t value);
 int getStatus_PLC_Conf_enc_1(void);
 
 #define ID_PLC_Conf_enc_2 4546
-extern u_int16_t PLC_Conf_enc_2;	/* Configurazione encoder 2. */
+extern u_int16_t PLC_Conf_enc_2;	/* Encoder 2 Configuration. 0=not configured. 1=set monodirectional counter  2=set bidirectional encoder */
 int doWrite_PLC_Conf_enc_2(u_int16_t value);
 int addWrite_PLC_Conf_enc_2(u_int16_t value);
 int getStatus_PLC_Conf_enc_2(void);
 
 #define ID_PLC_Conf_enc_3 4547
-extern u_int16_t PLC_Conf_enc_3;	/* Configurazione encoder 3. */
+extern u_int16_t PLC_Conf_enc_3;	/* Encoder 3 Configuration. 0=not configured. 1=set monodirectional counter  2=set bidirectional encoder */
 int doWrite_PLC_Conf_enc_3(u_int16_t value);
 int addWrite_PLC_Conf_enc_3(u_int16_t value);
 int getStatus_PLC_Conf_enc_3(void);
 
 #define ID_PLC_Conf_enc_4 4548
-extern u_int16_t PLC_Conf_enc_4;	/* Configurazione encoder 4. */
+extern u_int16_t PLC_Conf_enc_4;	/* Encoder 4 Configuration. 0=not configured. 1=set monodirectional counter  2=set bidirectional encoder */
 int doWrite_PLC_Conf_enc_4(u_int16_t value);
 int addWrite_PLC_Conf_enc_4(u_int16_t value);
 int getStatus_PLC_Conf_enc_4(void);
 
 #define ID_PLC_Enc_Match_1 4549
-extern int32_t PLC_Enc_Match_1;	/* Impostazione matcing register ENC 1 (Conteggi) */
+extern int32_t PLC_Enc_Match_1;	/* N/A */
 int doWrite_PLC_Enc_Match_1(int32_t value);
 int addWrite_PLC_Enc_Match_1(int32_t value);
 int getStatus_PLC_Enc_Match_1(void);
 
 #define ID_PLC_Enc_Match_2 4550
-extern int32_t PLC_Enc_Match_2;	/* Impostazione matcing register ENC 2 (Conteggi) */
+extern int32_t PLC_Enc_Match_2;	/* N/A */
 int doWrite_PLC_Enc_Match_2(int32_t value);
 int addWrite_PLC_Enc_Match_2(int32_t value);
 int getStatus_PLC_Enc_Match_2(void);
 
 #define ID_PLC_Enc_Match_3 4551
-extern int32_t PLC_Enc_Match_3;	/* Impostazione matcing register ENC 3 (Conteggi) */
+extern int32_t PLC_Enc_Match_3;	/* N/A */
 int doWrite_PLC_Enc_Match_3(int32_t value);
 int addWrite_PLC_Enc_Match_3(int32_t value);
 int getStatus_PLC_Enc_Match_3(void);
 
 #define ID_PLC_Enc_Match_4 4552
-extern int32_t PLC_Enc_Match_4;	/* Impostazione matcing register ENC 4 (Conteggi) */
+extern int32_t PLC_Enc_Match_4;	/* N/A */
 int doWrite_PLC_Enc_Match_4(int32_t value);
 int addWrite_PLC_Enc_Match_4(int32_t value);
 int getStatus_PLC_Enc_Match_4(void);
 
 #define ID_PLC_Pwm_Freq_1 4553
-extern u_int16_t PLC_Pwm_Freq_1;	/* Impostazione frequenza PWM 1 (Hz) */
+extern u_int16_t PLC_Pwm_Freq_1;	/* PTO frequency settings 1Hz resolution */
 int doWrite_PLC_Pwm_Freq_1(u_int16_t value);
 int addWrite_PLC_Pwm_Freq_1(u_int16_t value);
 int getStatus_PLC_Pwm_Freq_1(void);
 
 #define ID_PLC_Pwm_Freq_2 4554
-extern u_int16_t PLC_Pwm_Freq_2;	/* Impostazione frequenza PWM 2 (Hz) */
+extern u_int16_t PLC_Pwm_Freq_2;	/* PTO frequency settings 1Hz resolution */
 int doWrite_PLC_Pwm_Freq_2(u_int16_t value);
 int addWrite_PLC_Pwm_Freq_2(u_int16_t value);
 int getStatus_PLC_Pwm_Freq_2(void);
 
 #define ID_PLC_Pwm_Freq_3 4555
-extern u_int16_t PLC_Pwm_Freq_3;	/* Impostazione frequenza PWM 3 (Hz) */
+extern u_int16_t PLC_Pwm_Freq_3;	/* PTO frequency settings 1Hz resolution */
 int doWrite_PLC_Pwm_Freq_3(u_int16_t value);
 int addWrite_PLC_Pwm_Freq_3(u_int16_t value);
 int getStatus_PLC_Pwm_Freq_3(void);
 
 #define ID_PLC_Pwm_Freq_4 4556
-extern u_int16_t PLC_Pwm_Freq_4;	/* Impostazione frequenza PWM 4 (Hz) */
+extern u_int16_t PLC_Pwm_Freq_4;	/* PTO frequency settings 1Hz resolution */
 int doWrite_PLC_Pwm_Freq_4(u_int16_t value);
 int addWrite_PLC_Pwm_Freq_4(u_int16_t value);
 int getStatus_PLC_Pwm_Freq_4(void);
 
 #define ID_PLC_Delay_Reg_1 4557
-extern u_int16_t PLC_Delay_Reg_1;	/* Impostazione Tempo di ritardo (10x us) */
+extern u_int16_t PLC_Delay_Reg_1;	/* N/A */
 int doWrite_PLC_Delay_Reg_1(u_int16_t value);
 int addWrite_PLC_Delay_Reg_1(u_int16_t value);
 int getStatus_PLC_Delay_Reg_1(void);
 
 #define ID_PLC_Delay_Reg_2 4558
-extern u_int16_t PLC_Delay_Reg_2;	/* Impostazione Tempo di ritardo (10x us) */
+extern u_int16_t PLC_Delay_Reg_2;	/* N/A */
 int doWrite_PLC_Delay_Reg_2(u_int16_t value);
 int addWrite_PLC_Delay_Reg_2(u_int16_t value);
 int getStatus_PLC_Delay_Reg_2(void);
 
 #define ID_PLC_Delay_Reg_3 4559
-extern u_int16_t PLC_Delay_Reg_3;	/* Impostazione Tempo di ritardo (10x us) */
+extern u_int16_t PLC_Delay_Reg_3;	/* N/A */
 int doWrite_PLC_Delay_Reg_3(u_int16_t value);
 int addWrite_PLC_Delay_Reg_3(u_int16_t value);
 int getStatus_PLC_Delay_Reg_3(void);
 
 #define ID_PLC_Delay_Reg_4 4560
-extern u_int16_t PLC_Delay_Reg_4;	/* Impostazione Tempo di ritardo (10x us) */
+extern u_int16_t PLC_Delay_Reg_4;	/* N/A */
 int doWrite_PLC_Delay_Reg_4(u_int16_t value);
 int addWrite_PLC_Delay_Reg_4(u_int16_t value);
 int getStatus_PLC_Delay_Reg_4(void);
 
 #define ID_PLC_Pwm_Steps_1 4561
-extern int32_t PLC_Pwm_Steps_1;	/* Impostazione numero di step da generare PWM 1. 0=funzionamento continuo */
+extern int32_t PLC_Pwm_Steps_1;	/* The number of steps PTO must make or 0 counting indefinitely */
 int doWrite_PLC_Pwm_Steps_1(int32_t value);
 int addWrite_PLC_Pwm_Steps_1(int32_t value);
 int getStatus_PLC_Pwm_Steps_1(void);
 
 #define ID_PLC_Pwm_Steps_2 4562
-extern int32_t PLC_Pwm_Steps_2;	/* Impostazione numero di step da generare PWM 2. */
+extern int32_t PLC_Pwm_Steps_2;	/* The number of steps PTO must make or 0 counting indefinitely */
 int doWrite_PLC_Pwm_Steps_2(int32_t value);
 int addWrite_PLC_Pwm_Steps_2(int32_t value);
 int getStatus_PLC_Pwm_Steps_2(void);
 
 #define ID_PLC_Pwm_Steps_3 4563
-extern int32_t PLC_Pwm_Steps_3;	/* Impostazione numero di step da generare PWM 3. */
+extern int32_t PLC_Pwm_Steps_3;	/* The number of steps PTO must make or 0 counting indefinitely */
 int doWrite_PLC_Pwm_Steps_3(int32_t value);
 int addWrite_PLC_Pwm_Steps_3(int32_t value);
 int getStatus_PLC_Pwm_Steps_3(void);
 
 #define ID_PLC_Pwm_Steps_4 4564
-extern int32_t PLC_Pwm_Steps_4;	/* Impostazione numero di step da generare PWM 4. */
+extern int32_t PLC_Pwm_Steps_4;	/* The number of steps PTO must make or 0 counting indefinitely */
 int doWrite_PLC_Pwm_Steps_4(int32_t value);
 int addWrite_PLC_Pwm_Steps_4(int32_t value);
 int getStatus_PLC_Pwm_Steps_4(void);
 
 #define ID_PLC_DigOut_1 4565
-extern int PLC_DigOut_1;	/* Scrittura uscite digitali */
+extern int PLC_DigOut_1;	/* Digital Output 1 */
 int doWrite_PLC_DigOut_1(int value);
 int addWrite_PLC_DigOut_1(int value);
 int getStatus_PLC_DigOut_1(void);
 
 #define ID_PLC_DigOut_2 4566
-extern int PLC_DigOut_2;	/* Scrittura uscite digitali */
+extern int PLC_DigOut_2;	/* Digital Output 2 */
 int doWrite_PLC_DigOut_2(int value);
 int addWrite_PLC_DigOut_2(int value);
 int getStatus_PLC_DigOut_2(void);
 
 #define ID_PLC_DigOut_3 4567
-extern int PLC_DigOut_3;	/* Scrittura uscite digitali */
+extern int PLC_DigOut_3;	/* Digital Output 3 */
 int doWrite_PLC_DigOut_3(int value);
 int addWrite_PLC_DigOut_3(int value);
 int getStatus_PLC_DigOut_3(void);
 
 #define ID_PLC_DigOut_4 4568
-extern int PLC_DigOut_4;	/* Scrittura uscite digitali */
+extern int PLC_DigOut_4;	/* Digital Output 4 */
 int doWrite_PLC_DigOut_4(int value);
 int addWrite_PLC_DigOut_4(int value);
 int getStatus_PLC_DigOut_4(void);
 
 #define ID_PLC_DigOut_5 4569
-extern int PLC_DigOut_5;	/* Scrittura uscite digitali */
+extern int PLC_DigOut_5;	/* Digital Output 5 */
 int doWrite_PLC_DigOut_5(int value);
 int addWrite_PLC_DigOut_5(int value);
 int getStatus_PLC_DigOut_5(void);
 
 #define ID_PLC_DigOut_6 4570
-extern int PLC_DigOut_6;	/* Scrittura uscite digitali */
+extern int PLC_DigOut_6;	/* Digital Output 6 */
 int doWrite_PLC_DigOut_6(int value);
 int addWrite_PLC_DigOut_6(int value);
 int getStatus_PLC_DigOut_6(void);
 
 #define ID_PLC_DigOut_7 4571
-extern int PLC_DigOut_7;	/* Scrittura uscite digitali */
+extern int PLC_DigOut_7;	/* Digital Output 7 */
 int doWrite_PLC_DigOut_7(int value);
 int addWrite_PLC_DigOut_7(int value);
 int getStatus_PLC_DigOut_7(void);
 
 #define ID_PLC_DigOut_8 4572
-extern int PLC_DigOut_8;	/* Scrittura uscite digitali */
+extern int PLC_DigOut_8;	/* Digital Output 8 */
 int doWrite_PLC_DigOut_8(int value);
 int addWrite_PLC_DigOut_8(int value);
 int getStatus_PLC_DigOut_8(void);
 
 #define ID_PLC_DigOut_9 4573
-extern int PLC_DigOut_9;	/* Scrittura uscite digitali */
+extern int PLC_DigOut_9;	/* Digital Output 9 */
 int doWrite_PLC_DigOut_9(int value);
 int addWrite_PLC_DigOut_9(int value);
 int getStatus_PLC_DigOut_9(void);
 
 #define ID_PLC_DigOut_10 4574
-extern int PLC_DigOut_10;	/* Scrittura uscite digitali */
+extern int PLC_DigOut_10;	/* Digital Output 10 */
 int doWrite_PLC_DigOut_10(int value);
 int addWrite_PLC_DigOut_10(int value);
 int getStatus_PLC_DigOut_10(void);
 
 #define ID_PLC_DigOut_11 4575
-extern int PLC_DigOut_11;	/* Scrittura uscite digitali */
+extern int PLC_DigOut_11;	/* Digital Output 11 */
 int doWrite_PLC_DigOut_11(int value);
 int addWrite_PLC_DigOut_11(int value);
 int getStatus_PLC_DigOut_11(void);
 
 #define ID_PLC_DigOut_12 4576
-extern int PLC_DigOut_12;	/* Scrittura uscite digitali */
+extern int PLC_DigOut_12;	/* Digital Output 12 */
 int doWrite_PLC_DigOut_12(int value);
 int addWrite_PLC_DigOut_12(int value);
 int getStatus_PLC_DigOut_12(void);
 
 #define ID_PLC_DigOut_13 4577
-extern int PLC_DigOut_13;	/* Scrittura uscite digitali */
+extern int PLC_DigOut_13;	/* Digital Output 13 */
 int doWrite_PLC_DigOut_13(int value);
 int addWrite_PLC_DigOut_13(int value);
 int getStatus_PLC_DigOut_13(void);
 
 #define ID_PLC_DigOut_14 4578
-extern int PLC_DigOut_14;	/* Scrittura uscite digitali */
+extern int PLC_DigOut_14;	/* Digital Output 14 */
 int doWrite_PLC_DigOut_14(int value);
 int addWrite_PLC_DigOut_14(int value);
 int getStatus_PLC_DigOut_14(void);
 
 #define ID_PLC_DigOut_15 4579
-extern int PLC_DigOut_15;	/* Scrittura uscite digitali */
+extern int PLC_DigOut_15;	/* Digital Output 15 */
 int doWrite_PLC_DigOut_15(int value);
 int addWrite_PLC_DigOut_15(int value);
 int getStatus_PLC_DigOut_15(void);
 
 #define ID_PLC_DigOut_16 4580
-extern int PLC_DigOut_16;	/* Scrittura uscite digitali */
+extern int PLC_DigOut_16;	/* Digital Output 16 */
 int doWrite_PLC_DigOut_16(int value);
 int addWrite_PLC_DigOut_16(int value);
 int getStatus_PLC_DigOut_16(void);
 
 #define ID_PLC_PtoEnable_1 4581
-extern int PLC_PtoEnable_1;	/* Registro di comando per FPGA */
+extern int PLC_PtoEnable_1;	/* PTO 1 enabling */
 int doWrite_PLC_PtoEnable_1(int value);
 int addWrite_PLC_PtoEnable_1(int value);
 int getStatus_PLC_PtoEnable_1(void);
 
 #define ID_PLC_PtoEnable_2 4582
-extern int PLC_PtoEnable_2;	/* Registro di comando per FPGA */
+extern int PLC_PtoEnable_2;	/* PTO 2 enabling */
 int doWrite_PLC_PtoEnable_2(int value);
 int addWrite_PLC_PtoEnable_2(int value);
 int getStatus_PLC_PtoEnable_2(void);
 
 #define ID_PLC_PtoEnable_3 4583
-extern int PLC_PtoEnable_3;	/* Registro di comando per FPGA */
+extern int PLC_PtoEnable_3;	/* PTO 3 enabling */
 int doWrite_PLC_PtoEnable_3(int value);
 int addWrite_PLC_PtoEnable_3(int value);
 int getStatus_PLC_PtoEnable_3(void);
 
 #define ID_PLC_PtoEnable_4 4584
-extern int PLC_PtoEnable_4;	/* Registro di comando per FPGA */
+extern int PLC_PtoEnable_4;	/* PTO 4 enabling */
 int doWrite_PLC_PtoEnable_4(int value);
 int addWrite_PLC_PtoEnable_4(int value);
 int getStatus_PLC_PtoEnable_4(void);
 
 #define ID_PLC_Exp_CM_5 4585
-extern int PLC_Exp_CM_5;	/* Registro di comando per FPGA */
+extern int PLC_Exp_CM_5;	/* N/A */
 int doWrite_PLC_Exp_CM_5(int value);
 int addWrite_PLC_Exp_CM_5(int value);
 int getStatus_PLC_Exp_CM_5(void);
 
 #define ID_PLC_Exp_CM_6 4586
-extern int PLC_Exp_CM_6;	/* Registro di comando per FPGA */
+extern int PLC_Exp_CM_6;	/* N/A */
 int doWrite_PLC_Exp_CM_6(int value);
 int addWrite_PLC_Exp_CM_6(int value);
 int getStatus_PLC_Exp_CM_6(void);
 
 #define ID_PLC_Exp_CM_7 4587
-extern int PLC_Exp_CM_7;	/* Registro di comando per FPGA */
+extern int PLC_Exp_CM_7;	/* N/A */
 int doWrite_PLC_Exp_CM_7(int value);
 int addWrite_PLC_Exp_CM_7(int value);
 int getStatus_PLC_Exp_CM_7(void);
 
 #define ID_PLC_Exp_CM_8 4588
-extern int PLC_Exp_CM_8;	/* Registro di comando per FPGA */
+extern int PLC_Exp_CM_8;	/* N/A */
 int doWrite_PLC_Exp_CM_8(int value);
 int addWrite_PLC_Exp_CM_8(int value);
 int getStatus_PLC_Exp_CM_8(void);
 
 #define ID_PLC_Exp_CM_9 4589
-extern int PLC_Exp_CM_9;	/* Registro di comando per FPGA */
+extern int PLC_Exp_CM_9;	/* N/A */
 int doWrite_PLC_Exp_CM_9(int value);
 int addWrite_PLC_Exp_CM_9(int value);
 int getStatus_PLC_Exp_CM_9(void);
 
 #define ID_PLC_Exp_CM_10 4590
-extern int PLC_Exp_CM_10;	/* Registro di comando per FPGA */
+extern int PLC_Exp_CM_10;	/* N/A */
 int doWrite_PLC_Exp_CM_10(int value);
 int addWrite_PLC_Exp_CM_10(int value);
 int getStatus_PLC_Exp_CM_10(void);
 
 #define ID_PLC_Exp_CM_11 4591
-extern int PLC_Exp_CM_11;	/* Registro di comando per FPGA */
+extern int PLC_Exp_CM_11;	/* N/A */
 int doWrite_PLC_Exp_CM_11(int value);
 int addWrite_PLC_Exp_CM_11(int value);
 int getStatus_PLC_Exp_CM_11(void);
 
 #define ID_PLC_Exp_CM_12 4592
-extern int PLC_Exp_CM_12;	/* Registro di comando per FPGA */
+extern int PLC_Exp_CM_12;	/* N/A */
 int doWrite_PLC_Exp_CM_12(int value);
 int addWrite_PLC_Exp_CM_12(int value);
 int getStatus_PLC_Exp_CM_12(void);
 
 #define ID_PLC_Exp_CM_13 4593
-extern int PLC_Exp_CM_13;	/* Registro di comando per FPGA */
+extern int PLC_Exp_CM_13;	/* N/A */
 int doWrite_PLC_Exp_CM_13(int value);
 int addWrite_PLC_Exp_CM_13(int value);
 int getStatus_PLC_Exp_CM_13(void);
 
 #define ID_PLC_Exp_CM_14 4594
-extern int PLC_Exp_CM_14;	/* Registro di comando per FPGA */
+extern int PLC_Exp_CM_14;	/* N/A */
 int doWrite_PLC_Exp_CM_14(int value);
 int addWrite_PLC_Exp_CM_14(int value);
 int getStatus_PLC_Exp_CM_14(void);
 
 #define ID_PLC_Exp_CM_15 4595
-extern int PLC_Exp_CM_15;	/* Registro di comando per FPGA */
+extern int PLC_Exp_CM_15;	/* N/A */
 int doWrite_PLC_Exp_CM_15(int value);
 int addWrite_PLC_Exp_CM_15(int value);
 int getStatus_PLC_Exp_CM_15(void);
 
 #define ID_PLC_Exp_CM_16 4596
-extern int PLC_Exp_CM_16;	/* Registro di comando per FPGA */
+extern int PLC_Exp_CM_16;	/* N/A */
 int doWrite_PLC_Exp_CM_16(int value);
 int addWrite_PLC_Exp_CM_16(int value);
 int getStatus_PLC_Exp_CM_16(void);
@@ -1763,49 +1763,49 @@ int addWrite_NODE_16_STATUS(u_int32_t value);
 int getStatus_NODE_16_STATUS(void);
 
 #define ID_PLC_DigIn_1 5300
-extern int PLC_DigIn_1;	/* Digital input 1 value */
+extern int PLC_DigIn_1;	/* Digital Input 1 */
 int doWrite_PLC_DigIn_1(int value);
 int addWrite_PLC_DigIn_1(int value);
 int getStatus_PLC_DigIn_1(void);
 
 #define ID_PLC_DigIn_2 5301
-extern int PLC_DigIn_2;	/* Digital input 2 value */
+extern int PLC_DigIn_2;	/* Digital Input 2 */
 int doWrite_PLC_DigIn_2(int value);
 int addWrite_PLC_DigIn_2(int value);
 int getStatus_PLC_DigIn_2(void);
 
 #define ID_PLC_DigIn_3 5302
-extern int PLC_DigIn_3;	/* Digital input 3 value */
+extern int PLC_DigIn_3;	/* Digital Input 3 */
 int doWrite_PLC_DigIn_3(int value);
 int addWrite_PLC_DigIn_3(int value);
 int getStatus_PLC_DigIn_3(void);
 
 #define ID_PLC_DigIn_4 5303
-extern int PLC_DigIn_4;	/* Digital input 4 value */
+extern int PLC_DigIn_4;	/* Digital Input 4 */
 int doWrite_PLC_DigIn_4(int value);
 int addWrite_PLC_DigIn_4(int value);
 int getStatus_PLC_DigIn_4(void);
 
 #define ID_PLC_DigIn_5 5304
-extern int PLC_DigIn_5;	/* Digital input 5 value */
+extern int PLC_DigIn_5;	/* Digital Input 5 */
 int doWrite_PLC_DigIn_5(int value);
 int addWrite_PLC_DigIn_5(int value);
 int getStatus_PLC_DigIn_5(void);
 
 #define ID_PLC_DigIn_6 5305
-extern int PLC_DigIn_6;	/* Digital input 6 value */
+extern int PLC_DigIn_6;	/* Digital Input 6 */
 int doWrite_PLC_DigIn_6(int value);
 int addWrite_PLC_DigIn_6(int value);
 int getStatus_PLC_DigIn_6(void);
 
 #define ID_PLC_DigIn_7 5306
-extern int PLC_DigIn_7;	/* Digital input 7 value */
+extern int PLC_DigIn_7;	/* Digital Input 7 */
 int doWrite_PLC_DigIn_7(int value);
 int addWrite_PLC_DigIn_7(int value);
 int getStatus_PLC_DigIn_7(void);
 
 #define ID_PLC_DigIn_8 5307
-extern int PLC_DigIn_8;	/* Digital input 8 value */
+extern int PLC_DigIn_8;	/* Digital Input 8 */
 int doWrite_PLC_DigIn_8(int value);
 int addWrite_PLC_DigIn_8(int value);
 int getStatus_PLC_DigIn_8(void);
@@ -1815,78 +1815,6 @@ extern int PLC_Reserved_1;	/* Reserved */
 int doWrite_PLC_Reserved_1(int value);
 int addWrite_PLC_Reserved_1(int value);
 int getStatus_PLC_Reserved_1(void);
-
-#define ID_PLC_DigOut_1x 5309
-extern int PLC_DigOut_1x;	/* Digital output 1 value */
-int doWrite_PLC_DigOut_1x(int value);
-int addWrite_PLC_DigOut_1x(int value);
-int getStatus_PLC_DigOut_1x(void);
-
-#define ID_PLC_DigOut_2x 5310
-extern int PLC_DigOut_2x;	/* Digital output 2 value */
-int doWrite_PLC_DigOut_2x(int value);
-int addWrite_PLC_DigOut_2x(int value);
-int getStatus_PLC_DigOut_2x(void);
-
-#define ID_PLC_DigOut_3x 5311
-extern int PLC_DigOut_3x;	/* Digital output 3 value */
-int doWrite_PLC_DigOut_3x(int value);
-int addWrite_PLC_DigOut_3x(int value);
-int getStatus_PLC_DigOut_3x(void);
-
-#define ID_PLC_DigOut_4x 5312
-extern int PLC_DigOut_4x;	/* Digital output 4 value */
-int doWrite_PLC_DigOut_4x(int value);
-int addWrite_PLC_DigOut_4x(int value);
-int getStatus_PLC_DigOut_4x(void);
-
-#define ID_PLC_DigOut_5x 5313
-extern int PLC_DigOut_5x;	/* Digital output 5 value */
-int doWrite_PLC_DigOut_5x(int value);
-int addWrite_PLC_DigOut_5x(int value);
-int getStatus_PLC_DigOut_5x(void);
-
-#define ID_PLC_DigOut_6x 5314
-extern int PLC_DigOut_6x;	/* Digital output 6 value */
-int doWrite_PLC_DigOut_6x(int value);
-int addWrite_PLC_DigOut_6x(int value);
-int getStatus_PLC_DigOut_6x(void);
-
-#define ID_PLC_DigOut_7x 5315
-extern int PLC_DigOut_7x;	/* Digital output 7 value */
-int doWrite_PLC_DigOut_7x(int value);
-int addWrite_PLC_DigOut_7x(int value);
-int getStatus_PLC_DigOut_7x(void);
-
-#define ID_PLC_DigOut_8x 5316
-extern int PLC_DigOut_8x;	/* Digital output 8 value */
-int doWrite_PLC_DigOut_8x(int value);
-int addWrite_PLC_DigOut_8x(int value);
-int getStatus_PLC_DigOut_8x(void);
-
-#define ID_PLC_DigOut_9x 5317
-extern int PLC_DigOut_9x;	/* Digital output 9 value */
-int doWrite_PLC_DigOut_9x(int value);
-int addWrite_PLC_DigOut_9x(int value);
-int getStatus_PLC_DigOut_9x(void);
-
-#define ID_PLC_DigOut_10x 5318
-extern int PLC_DigOut_10x;	/* Digital output 10 value */
-int doWrite_PLC_DigOut_10x(int value);
-int addWrite_PLC_DigOut_10x(int value);
-int getStatus_PLC_DigOut_10x(void);
-
-#define ID_PLC_DigOut_11x 5319
-extern int PLC_DigOut_11x;	/* Digital output 11 value */
-int doWrite_PLC_DigOut_11x(int value);
-int addWrite_PLC_DigOut_11x(int value);
-int getStatus_PLC_DigOut_11x(void);
-
-#define ID_PLC_DigOut_12x 5320
-extern int PLC_DigOut_12x;	/* Digital output 12 value */
-int doWrite_PLC_DigOut_12x(int value);
-int addWrite_PLC_DigOut_12x(int value);
-int getStatus_PLC_DigOut_12x(void);
 
 #define ID_PLC_Hwconf 5321
 extern u_int16_t PLC_Hwconf;	/* Hardware configuration */

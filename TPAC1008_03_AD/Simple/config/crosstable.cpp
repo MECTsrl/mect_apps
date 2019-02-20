@@ -28,672 +28,672 @@
 #include "global_var.h"
 
 /*
- * Variable PLC_cella_1	[ Valore cella di carico 1 ]
+ * Variable PLC_cella_1	[ Load Cell 1 Input 24 bit ]
  */
 
 int32_t PLC_cella_1 = 0;
 
 
 /*
- * Variable PLC_cella_2	[ Valore cella di carico 2 ]
+ * Variable PLC_cella_2	[ Load Cell 2 Input 24 bit ]
  */
 
 int32_t PLC_cella_2 = 0;
 
 
 /*
- * Variable PLC_cella_3	[ Valore cella di carico 3 ]
+ * Variable PLC_cella_3	[ Load Cell 2 Input 24 bit ]
  */
 
 int32_t PLC_cella_3 = 0;
 
 
 /*
- * Variable PLC_VCC
+ * Variable PLC_VCC	[ Cell Polarity Voltage ]
  */
 
 int16_t PLC_VCC = 0;
 
 
 /*
- * Variable PLC_encoder_1	[ Valore encoder 1 ]
+ * Variable PLC_encoder_1	[ Encoder value 1 32 bit ]
  */
 
 int32_t PLC_encoder_1 = 0;
 
 
 /*
- * Variable PLC_encoder_2	[ Valore encoder 2 ]
+ * Variable PLC_encoder_2	[ Encoder value 2 32 bit ]
  */
 
 int32_t PLC_encoder_2 = 0;
 
 
 /*
- * Variable PLC_encoder_3	[ Valore encoder 3 ]
+ * Variable PLC_encoder_3	[ Encoder value 3 32 bit ]
  */
 
 int32_t PLC_encoder_3 = 0;
 
 
 /*
- * Variable PLC_encoder_4	[ Valore encoder 4 ]
+ * Variable PLC_encoder_4	[ Encoder value 4 32 bit ]
  */
 
 int32_t PLC_encoder_4 = 0;
 
 
 /*
- * Variable PLC_DigIn_9	[ Lettura input digitali ]
+ * Variable PLC_DigIn_9	[ Digital Input 9 ]
  */
 
 int PLC_DigIn_9 = 0;
 
 
 /*
- * Variable PLC_DigIn_10	[ Lettura input digitali ]
+ * Variable PLC_DigIn_10	[ Digital Input 10 ]
  */
 
 int PLC_DigIn_10 = 0;
 
 
 /*
- * Variable PLC_DigIn_11	[ Lettura input digitali ]
+ * Variable PLC_DigIn_11	[ Digital Input 11 ]
  */
 
 int PLC_DigIn_11 = 0;
 
 
 /*
- * Variable PLC_DigIn_12	[ Lettura input digitali ]
+ * Variable PLC_DigIn_12	[ Digital Input 12 ]
  */
 
 int PLC_DigIn_12 = 0;
 
 
 /*
- * Variable PLC_DigIn_13	[ Lettura input digitali ]
+ * Variable PLC_DigIn_13	[ Digital Input 13 ]
  */
 
 int PLC_DigIn_13 = 0;
 
 
 /*
- * Variable PLC_DigIn_14	[ Lettura input digitali ]
+ * Variable PLC_DigIn_14	[ Digital Input 14 ]
  */
 
 int PLC_DigIn_14 = 0;
 
 
 /*
- * Variable PLC_DigIn_15	[ Lettura input digitali ]
+ * Variable PLC_DigIn_15	[ Digital Input 15 ]
  */
 
 int PLC_DigIn_15 = 0;
 
 
 /*
- * Variable PLC_DigIn_16	[ Lettura input digitali ]
+ * Variable PLC_DigIn_16	[ Digital Input 16 ]
  */
 
 int PLC_DigIn_16 = 0;
 
 
 /*
- * Variable PLC_DigIn_17	[ Lettura input digitali ]
+ * Variable PLC_DigIn_17	[ Digital Input 17 ]
  */
 
 int PLC_DigIn_17 = 0;
 
 
 /*
- * Variable PLC_DigIn_18	[ Lettura input digitali ]
+ * Variable PLC_DigIn_18	[ Digital Input 18 ]
  */
 
 int PLC_DigIn_18 = 0;
 
 
 /*
- * Variable PLC_DigIn_19	[ Lettura input digitali ]
+ * Variable PLC_DigIn_19	[ Digital Input 19 ]
  */
 
 int PLC_DigIn_19 = 0;
 
 
 /*
- * Variable PLC_DigIn_20	[ Lettura input digitali ]
+ * Variable PLC_DigIn_20	[ Digital Input 20 ]
  */
 
 int PLC_DigIn_20 = 0;
 
 
 /*
- * Variable PLC_DigIn_21	[ Lettura input digitali ]
+ * Variable PLC_DigIn_21	[ Digital Input 21 ]
  */
 
 int PLC_DigIn_21 = 0;
 
 
 /*
- * Variable PLC_DigIn_22	[ Lettura input digitali ]
+ * Variable PLC_DigIn_22	[ Digital Input 22 ]
  */
 
 int PLC_DigIn_22 = 0;
 
 
 /*
- * Variable PLC_DigIn_23	[ Lettura input digitali ]
+ * Variable PLC_DigIn_23	[ Digital Input 23 ]
  */
 
 int PLC_DigIn_23 = 0;
 
 
 /*
- * Variable PLC_DigIn_24	[ Lettura input digitali ]
+ * Variable PLC_DigIn_24	[ Digital Input 24 ]
  */
 
 int PLC_DigIn_24 = 0;
 
 
 /*
- * Variable PLC_Expansion_HB	[ Heartbeat della espansione ]
+ * Variable PLC_Expansion_HB	[ Expansion Heartbeat ]
  */
 
 u_int16_t PLC_Expansion_HB = 0;
 
 
 /*
- * Variable PLC_Expansion_FW	[ Versione Firmware della espansione ]
+ * Variable PLC_Expansion_FW	[ FW Expansion Revision ]
  */
 
 u_int16_t PLC_Expansion_FW = 0;
 
 
 /*
- * Variable PLC_Expansion_HW	[ Configurazione HW della espansione ]
+ * Variable PLC_Expansion_HW	[ HW expansion revision ]
  */
 
 u_int16_t PLC_Expansion_HW = 0;
 
 
 /*
- * Variable PLC_PtoWork_1	[ Registro di stato dalla FPGA ]
+ * Variable PLC_PtoWork_1	[ PTO status Indicates  PTO  is busy ]
  */
 
 int PLC_PtoWork_1 = 0;
 
 
 /*
- * Variable PLC_PtoWork_2	[ Registro di stato dalla FPGA ]
+ * Variable PLC_PtoWork_2	[ PTO status Indicates  PTO  is busy ]
  */
 
 int PLC_PtoWork_2 = 0;
 
 
 /*
- * Variable PLC_PtoWork_3	[ Registro di stato dalla FPGA ]
+ * Variable PLC_PtoWork_3	[ PTO status Indicates  PTO  is busy ]
  */
 
 int PLC_PtoWork_3 = 0;
 
 
 /*
- * Variable PLC_PtoWork_4	[ Registro di stato dalla FPGA ]
+ * Variable PLC_PtoWork_4	[ PTO status Indicates  PTO  is busy ]
  */
 
 int PLC_PtoWork_4 = 0;
 
 
 /*
- * Variable PLC_PtoDone_1	[ Registro di stato dalla FPGA ]
+ * Variable PLC_PtoDone_1	[ PTO status Indicates  PTO  has  finished ]
  */
 
 int PLC_PtoDone_1 = 0;
 
 
 /*
- * Variable PLC_PtoDone_2	[ Registro di stato dalla FPGA ]
+ * Variable PLC_PtoDone_2	[ PTO status Indicates  PTO  has  finished ]
  */
 
 int PLC_PtoDone_2 = 0;
 
 
 /*
- * Variable PLC_PtoDone_3	[ Registro di stato dalla FPGA ]
+ * Variable PLC_PtoDone_3	[ PTO status Indicates  PTO  has  finished ]
  */
 
 int PLC_PtoDone_3 = 0;
 
 
 /*
- * Variable PLC_PtoDone_4	[ Registro di stato dalla FPGA ]
+ * Variable PLC_PtoDone_4	[ PTO status Indicates  PTO  has  finished ]
  */
 
 int PLC_PtoDone_4 = 0;
 
 
 /*
- * Variable PLC_EncMatch_1	[ Registro di stato dalla FPGA ]
+ * Variable PLC_EncMatch_1	[ N/A ]
  */
 
 int PLC_EncMatch_1 = 0;
 
 
 /*
- * Variable PLC_EncMatch_2	[ Registro di stato dalla FPGA ]
+ * Variable PLC_EncMatch_2	[ N/A ]
  */
 
 int PLC_EncMatch_2 = 0;
 
 
 /*
- * Variable PLC_EncMatch_3	[ Registro di stato dalla FPGA ]
+ * Variable PLC_EncMatch_3	[ N/A ]
  */
 
 int PLC_EncMatch_3 = 0;
 
 
 /*
- * Variable PLC_EncMatch_4	[ Registro di stato dalla FPGA ]
+ * Variable PLC_EncMatch_4	[ N/A ]
  */
 
 int PLC_EncMatch_4 = 0;
 
 
 /*
- * Variable PLC_Exp_ST_13	[ Registro di stato dalla FPGA ]
+ * Variable PLC_Exp_ST_13	[ N/A ]
  */
 
 int PLC_Exp_ST_13 = 0;
 
 
 /*
- * Variable PLC_Exp_ST_14	[ Registro di stato dalla FPGA ]
+ * Variable PLC_Exp_ST_14	[ N/A ]
  */
 
 int PLC_Exp_ST_14 = 0;
 
 
 /*
- * Variable PLC_Exp_ST_15	[ Registro di stato dalla FPGA ]
+ * Variable PLC_Exp_ST_15	[ N/A ]
  */
 
 int PLC_Exp_ST_15 = 0;
 
 
 /*
- * Variable PLC_Exp_ST_16	[ Registro di stato dalla FPGA ]
+ * Variable PLC_Exp_ST_16	[ N/A ]
  */
 
 int PLC_Exp_ST_16 = 0;
 
 
 /*
- * Variable PLC_Expansion_ER	[ Registro errori della espansione ]
+ * Variable PLC_Expansion_ER	[ Internal communication error regiter ]
  */
 
 u_int16_t PLC_Expansion_ER = 0;
 
 
 /*
- * Variable PLC_Conf_enc_1	[ Configurazione encoder 1. 0=non configurato. 1=encoder bidirezionale. 2=contatore monodirezionale ]
+ * Variable PLC_Conf_enc_1	[ Encoder 1 Configuration. 0=not configured. 1=set monodirectional counter  2=set bidirectional encoder ]
  */
 
 u_int16_t PLC_Conf_enc_1 = 0;
 
 
 /*
- * Variable PLC_Conf_enc_2	[ Configurazione encoder 2. ]
+ * Variable PLC_Conf_enc_2	[ Encoder 2 Configuration. 0=not configured. 1=set monodirectional counter  2=set bidirectional encoder ]
  */
 
 u_int16_t PLC_Conf_enc_2 = 0;
 
 
 /*
- * Variable PLC_Conf_enc_3	[ Configurazione encoder 3. ]
+ * Variable PLC_Conf_enc_3	[ Encoder 3 Configuration. 0=not configured. 1=set monodirectional counter  2=set bidirectional encoder ]
  */
 
 u_int16_t PLC_Conf_enc_3 = 0;
 
 
 /*
- * Variable PLC_Conf_enc_4	[ Configurazione encoder 4. ]
+ * Variable PLC_Conf_enc_4	[ Encoder 4 Configuration. 0=not configured. 1=set monodirectional counter  2=set bidirectional encoder ]
  */
 
 u_int16_t PLC_Conf_enc_4 = 0;
 
 
 /*
- * Variable PLC_Enc_Match_1	[ Impostazione matcing register ENC 1 (Conteggi) ]
+ * Variable PLC_Enc_Match_1	[ N/A ]
  */
 
 int32_t PLC_Enc_Match_1 = 0;
 
 
 /*
- * Variable PLC_Enc_Match_2	[ Impostazione matcing register ENC 2 (Conteggi) ]
+ * Variable PLC_Enc_Match_2	[ N/A ]
  */
 
 int32_t PLC_Enc_Match_2 = 0;
 
 
 /*
- * Variable PLC_Enc_Match_3	[ Impostazione matcing register ENC 3 (Conteggi) ]
+ * Variable PLC_Enc_Match_3	[ N/A ]
  */
 
 int32_t PLC_Enc_Match_3 = 0;
 
 
 /*
- * Variable PLC_Enc_Match_4	[ Impostazione matcing register ENC 4 (Conteggi) ]
+ * Variable PLC_Enc_Match_4	[ N/A ]
  */
 
 int32_t PLC_Enc_Match_4 = 0;
 
 
 /*
- * Variable PLC_Pwm_Freq_1	[ Impostazione frequenza PWM 1 (Hz) ]
+ * Variable PLC_Pwm_Freq_1	[ PTO frequency settings 1Hz resolution ]
  */
 
 u_int16_t PLC_Pwm_Freq_1 = 0;
 
 
 /*
- * Variable PLC_Pwm_Freq_2	[ Impostazione frequenza PWM 2 (Hz) ]
+ * Variable PLC_Pwm_Freq_2	[ PTO frequency settings 1Hz resolution ]
  */
 
 u_int16_t PLC_Pwm_Freq_2 = 0;
 
 
 /*
- * Variable PLC_Pwm_Freq_3	[ Impostazione frequenza PWM 3 (Hz) ]
+ * Variable PLC_Pwm_Freq_3	[ PTO frequency settings 1Hz resolution ]
  */
 
 u_int16_t PLC_Pwm_Freq_3 = 0;
 
 
 /*
- * Variable PLC_Pwm_Freq_4	[ Impostazione frequenza PWM 4 (Hz) ]
+ * Variable PLC_Pwm_Freq_4	[ PTO frequency settings 1Hz resolution ]
  */
 
 u_int16_t PLC_Pwm_Freq_4 = 0;
 
 
 /*
- * Variable PLC_Delay_Reg_1	[ Impostazione Tempo di ritardo (10x us) ]
+ * Variable PLC_Delay_Reg_1	[ N/A ]
  */
 
 u_int16_t PLC_Delay_Reg_1 = 0;
 
 
 /*
- * Variable PLC_Delay_Reg_2	[ Impostazione Tempo di ritardo (10x us) ]
+ * Variable PLC_Delay_Reg_2	[ N/A ]
  */
 
 u_int16_t PLC_Delay_Reg_2 = 0;
 
 
 /*
- * Variable PLC_Delay_Reg_3	[ Impostazione Tempo di ritardo (10x us) ]
+ * Variable PLC_Delay_Reg_3	[ N/A ]
  */
 
 u_int16_t PLC_Delay_Reg_3 = 0;
 
 
 /*
- * Variable PLC_Delay_Reg_4	[ Impostazione Tempo di ritardo (10x us) ]
+ * Variable PLC_Delay_Reg_4	[ N/A ]
  */
 
 u_int16_t PLC_Delay_Reg_4 = 0;
 
 
 /*
- * Variable PLC_Pwm_Steps_1	[ Impostazione numero di step da generare PWM 1. 0=funzionamento continuo ]
+ * Variable PLC_Pwm_Steps_1	[ The number of steps PTO must make or 0 counting indefinitely ]
  */
 
 int32_t PLC_Pwm_Steps_1 = 0;
 
 
 /*
- * Variable PLC_Pwm_Steps_2	[ Impostazione numero di step da generare PWM 2. ]
+ * Variable PLC_Pwm_Steps_2	[ The number of steps PTO must make or 0 counting indefinitely ]
  */
 
 int32_t PLC_Pwm_Steps_2 = 0;
 
 
 /*
- * Variable PLC_Pwm_Steps_3	[ Impostazione numero di step da generare PWM 3. ]
+ * Variable PLC_Pwm_Steps_3	[ The number of steps PTO must make or 0 counting indefinitely ]
  */
 
 int32_t PLC_Pwm_Steps_3 = 0;
 
 
 /*
- * Variable PLC_Pwm_Steps_4	[ Impostazione numero di step da generare PWM 4. ]
+ * Variable PLC_Pwm_Steps_4	[ The number of steps PTO must make or 0 counting indefinitely ]
  */
 
 int32_t PLC_Pwm_Steps_4 = 0;
 
 
 /*
- * Variable PLC_DigOut_1	[ Scrittura uscite digitali ]
+ * Variable PLC_DigOut_1	[ Digital Output 1 ]
  */
 
 int PLC_DigOut_1 = 0;
 
 
 /*
- * Variable PLC_DigOut_2	[ Scrittura uscite digitali ]
+ * Variable PLC_DigOut_2	[ Digital Output 2 ]
  */
 
 int PLC_DigOut_2 = 0;
 
 
 /*
- * Variable PLC_DigOut_3	[ Scrittura uscite digitali ]
+ * Variable PLC_DigOut_3	[ Digital Output 3 ]
  */
 
 int PLC_DigOut_3 = 0;
 
 
 /*
- * Variable PLC_DigOut_4	[ Scrittura uscite digitali ]
+ * Variable PLC_DigOut_4	[ Digital Output 4 ]
  */
 
 int PLC_DigOut_4 = 0;
 
 
 /*
- * Variable PLC_DigOut_5	[ Scrittura uscite digitali ]
+ * Variable PLC_DigOut_5	[ Digital Output 5 ]
  */
 
 int PLC_DigOut_5 = 0;
 
 
 /*
- * Variable PLC_DigOut_6	[ Scrittura uscite digitali ]
+ * Variable PLC_DigOut_6	[ Digital Output 6 ]
  */
 
 int PLC_DigOut_6 = 0;
 
 
 /*
- * Variable PLC_DigOut_7	[ Scrittura uscite digitali ]
+ * Variable PLC_DigOut_7	[ Digital Output 7 ]
  */
 
 int PLC_DigOut_7 = 0;
 
 
 /*
- * Variable PLC_DigOut_8	[ Scrittura uscite digitali ]
+ * Variable PLC_DigOut_8	[ Digital Output 8 ]
  */
 
 int PLC_DigOut_8 = 0;
 
 
 /*
- * Variable PLC_DigOut_9	[ Scrittura uscite digitali ]
+ * Variable PLC_DigOut_9	[ Digital Output 9 ]
  */
 
 int PLC_DigOut_9 = 0;
 
 
 /*
- * Variable PLC_DigOut_10	[ Scrittura uscite digitali ]
+ * Variable PLC_DigOut_10	[ Digital Output 10 ]
  */
 
 int PLC_DigOut_10 = 0;
 
 
 /*
- * Variable PLC_DigOut_11	[ Scrittura uscite digitali ]
+ * Variable PLC_DigOut_11	[ Digital Output 11 ]
  */
 
 int PLC_DigOut_11 = 0;
 
 
 /*
- * Variable PLC_DigOut_12	[ Scrittura uscite digitali ]
+ * Variable PLC_DigOut_12	[ Digital Output 12 ]
  */
 
 int PLC_DigOut_12 = 0;
 
 
 /*
- * Variable PLC_DigOut_13	[ Scrittura uscite digitali ]
+ * Variable PLC_DigOut_13	[ Digital Output 13 ]
  */
 
 int PLC_DigOut_13 = 0;
 
 
 /*
- * Variable PLC_DigOut_14	[ Scrittura uscite digitali ]
+ * Variable PLC_DigOut_14	[ Digital Output 14 ]
  */
 
 int PLC_DigOut_14 = 0;
 
 
 /*
- * Variable PLC_DigOut_15	[ Scrittura uscite digitali ]
+ * Variable PLC_DigOut_15	[ Digital Output 15 ]
  */
 
 int PLC_DigOut_15 = 0;
 
 
 /*
- * Variable PLC_DigOut_16	[ Scrittura uscite digitali ]
+ * Variable PLC_DigOut_16	[ Digital Output 16 ]
  */
 
 int PLC_DigOut_16 = 0;
 
 
 /*
- * Variable PLC_PtoEnable_1	[ Registro di comando per FPGA ]
+ * Variable PLC_PtoEnable_1	[ PTO 1 enabling ]
  */
 
 int PLC_PtoEnable_1 = 0;
 
 
 /*
- * Variable PLC_PtoEnable_2	[ Registro di comando per FPGA ]
+ * Variable PLC_PtoEnable_2	[ PTO 2 enabling ]
  */
 
 int PLC_PtoEnable_2 = 0;
 
 
 /*
- * Variable PLC_PtoEnable_3	[ Registro di comando per FPGA ]
+ * Variable PLC_PtoEnable_3	[ PTO 3 enabling ]
  */
 
 int PLC_PtoEnable_3 = 0;
 
 
 /*
- * Variable PLC_PtoEnable_4	[ Registro di comando per FPGA ]
+ * Variable PLC_PtoEnable_4	[ PTO 4 enabling ]
  */
 
 int PLC_PtoEnable_4 = 0;
 
 
 /*
- * Variable PLC_Exp_CM_5	[ Registro di comando per FPGA ]
+ * Variable PLC_Exp_CM_5	[ N/A ]
  */
 
 int PLC_Exp_CM_5 = 0;
 
 
 /*
- * Variable PLC_Exp_CM_6	[ Registro di comando per FPGA ]
+ * Variable PLC_Exp_CM_6	[ N/A ]
  */
 
 int PLC_Exp_CM_6 = 0;
 
 
 /*
- * Variable PLC_Exp_CM_7	[ Registro di comando per FPGA ]
+ * Variable PLC_Exp_CM_7	[ N/A ]
  */
 
 int PLC_Exp_CM_7 = 0;
 
 
 /*
- * Variable PLC_Exp_CM_8	[ Registro di comando per FPGA ]
+ * Variable PLC_Exp_CM_8	[ N/A ]
  */
 
 int PLC_Exp_CM_8 = 0;
 
 
 /*
- * Variable PLC_Exp_CM_9	[ Registro di comando per FPGA ]
+ * Variable PLC_Exp_CM_9	[ N/A ]
  */
 
 int PLC_Exp_CM_9 = 0;
 
 
 /*
- * Variable PLC_Exp_CM_10	[ Registro di comando per FPGA ]
+ * Variable PLC_Exp_CM_10	[ N/A ]
  */
 
 int PLC_Exp_CM_10 = 0;
 
 
 /*
- * Variable PLC_Exp_CM_11	[ Registro di comando per FPGA ]
+ * Variable PLC_Exp_CM_11	[ N/A ]
  */
 
 int PLC_Exp_CM_11 = 0;
 
 
 /*
- * Variable PLC_Exp_CM_12	[ Registro di comando per FPGA ]
+ * Variable PLC_Exp_CM_12	[ N/A ]
  */
 
 int PLC_Exp_CM_12 = 0;
 
 
 /*
- * Variable PLC_Exp_CM_13	[ Registro di comando per FPGA ]
+ * Variable PLC_Exp_CM_13	[ N/A ]
  */
 
 int PLC_Exp_CM_13 = 0;
 
 
 /*
- * Variable PLC_Exp_CM_14	[ Registro di comando per FPGA ]
+ * Variable PLC_Exp_CM_14	[ N/A ]
  */
 
 int PLC_Exp_CM_14 = 0;
 
 
 /*
- * Variable PLC_Exp_CM_15	[ Registro di comando per FPGA ]
+ * Variable PLC_Exp_CM_15	[ N/A ]
  */
 
 int PLC_Exp_CM_15 = 0;
 
 
 /*
- * Variable PLC_Exp_CM_16	[ Registro di comando per FPGA ]
+ * Variable PLC_Exp_CM_16	[ N/A ]
  */
 
 int PLC_Exp_CM_16 = 0;
@@ -2044,56 +2044,56 @@ u_int32_t NODE_16_STATUS = 0;
 
 
 /*
- * Variable PLC_DigIn_1	[ Digital input 1 value ]
+ * Variable PLC_DigIn_1	[ Digital Input 1 ]
  */
 
 int PLC_DigIn_1 = 0;
 
 
 /*
- * Variable PLC_DigIn_2	[ Digital input 2 value ]
+ * Variable PLC_DigIn_2	[ Digital Input 2 ]
  */
 
 int PLC_DigIn_2 = 0;
 
 
 /*
- * Variable PLC_DigIn_3	[ Digital input 3 value ]
+ * Variable PLC_DigIn_3	[ Digital Input 3 ]
  */
 
 int PLC_DigIn_3 = 0;
 
 
 /*
- * Variable PLC_DigIn_4	[ Digital input 4 value ]
+ * Variable PLC_DigIn_4	[ Digital Input 4 ]
  */
 
 int PLC_DigIn_4 = 0;
 
 
 /*
- * Variable PLC_DigIn_5	[ Digital input 5 value ]
+ * Variable PLC_DigIn_5	[ Digital Input 5 ]
  */
 
 int PLC_DigIn_5 = 0;
 
 
 /*
- * Variable PLC_DigIn_6	[ Digital input 6 value ]
+ * Variable PLC_DigIn_6	[ Digital Input 6 ]
  */
 
 int PLC_DigIn_6 = 0;
 
 
 /*
- * Variable PLC_DigIn_7	[ Digital input 7 value ]
+ * Variable PLC_DigIn_7	[ Digital Input 7 ]
  */
 
 int PLC_DigIn_7 = 0;
 
 
 /*
- * Variable PLC_DigIn_8	[ Digital input 8 value ]
+ * Variable PLC_DigIn_8	[ Digital Input 8 ]
  */
 
 int PLC_DigIn_8 = 0;
@@ -2104,90 +2104,6 @@ int PLC_DigIn_8 = 0;
  */
 
 int PLC_Reserved_1 = 0;
-
-
-/*
- * Variable PLC_DigOut_1x	[ Digital output 1 value ]
- */
-
-int PLC_DigOut_1x = 0;
-
-
-/*
- * Variable PLC_DigOut_2x	[ Digital output 2 value ]
- */
-
-int PLC_DigOut_2x = 0;
-
-
-/*
- * Variable PLC_DigOut_3x	[ Digital output 3 value ]
- */
-
-int PLC_DigOut_3x = 0;
-
-
-/*
- * Variable PLC_DigOut_4x	[ Digital output 4 value ]
- */
-
-int PLC_DigOut_4x = 0;
-
-
-/*
- * Variable PLC_DigOut_5x	[ Digital output 5 value ]
- */
-
-int PLC_DigOut_5x = 0;
-
-
-/*
- * Variable PLC_DigOut_6x	[ Digital output 6 value ]
- */
-
-int PLC_DigOut_6x = 0;
-
-
-/*
- * Variable PLC_DigOut_7x	[ Digital output 7 value ]
- */
-
-int PLC_DigOut_7x = 0;
-
-
-/*
- * Variable PLC_DigOut_8x	[ Digital output 8 value ]
- */
-
-int PLC_DigOut_8x = 0;
-
-
-/*
- * Variable PLC_DigOut_9x	[ Digital output 9 value ]
- */
-
-int PLC_DigOut_9x = 0;
-
-
-/*
- * Variable PLC_DigOut_10x	[ Digital output 10 value ]
- */
-
-int PLC_DigOut_10x = 0;
-
-
-/*
- * Variable PLC_DigOut_11x	[ Digital output 11 value ]
- */
-
-int PLC_DigOut_11x = 0;
-
-
-/*
- * Variable PLC_DigOut_12x	[ Digital output 12 value ]
- */
-
-int PLC_DigOut_12x = 0;
 
 
 /*
@@ -8103,222 +8019,6 @@ getStatus_PLC_Reserved_1(void)
 }
 
 int
-doWrite_PLC_DigOut_1x(int value)
-{
-	return doWrite(ID_PLC_DigOut_1x, &value);
-}
-
-int
-addWrite_PLC_DigOut_1x(int value)
-{
-	return addWrite(ID_PLC_DigOut_1x, &value);
-}
-
-int
-getStatus_PLC_DigOut_1x(void)
-{
-	return getStatus(ID_PLC_DigOut_1x);
-}
-
-int
-doWrite_PLC_DigOut_2x(int value)
-{
-	return doWrite(ID_PLC_DigOut_2x, &value);
-}
-
-int
-addWrite_PLC_DigOut_2x(int value)
-{
-	return addWrite(ID_PLC_DigOut_2x, &value);
-}
-
-int
-getStatus_PLC_DigOut_2x(void)
-{
-	return getStatus(ID_PLC_DigOut_2x);
-}
-
-int
-doWrite_PLC_DigOut_3x(int value)
-{
-	return doWrite(ID_PLC_DigOut_3x, &value);
-}
-
-int
-addWrite_PLC_DigOut_3x(int value)
-{
-	return addWrite(ID_PLC_DigOut_3x, &value);
-}
-
-int
-getStatus_PLC_DigOut_3x(void)
-{
-	return getStatus(ID_PLC_DigOut_3x);
-}
-
-int
-doWrite_PLC_DigOut_4x(int value)
-{
-	return doWrite(ID_PLC_DigOut_4x, &value);
-}
-
-int
-addWrite_PLC_DigOut_4x(int value)
-{
-	return addWrite(ID_PLC_DigOut_4x, &value);
-}
-
-int
-getStatus_PLC_DigOut_4x(void)
-{
-	return getStatus(ID_PLC_DigOut_4x);
-}
-
-int
-doWrite_PLC_DigOut_5x(int value)
-{
-	return doWrite(ID_PLC_DigOut_5x, &value);
-}
-
-int
-addWrite_PLC_DigOut_5x(int value)
-{
-	return addWrite(ID_PLC_DigOut_5x, &value);
-}
-
-int
-getStatus_PLC_DigOut_5x(void)
-{
-	return getStatus(ID_PLC_DigOut_5x);
-}
-
-int
-doWrite_PLC_DigOut_6x(int value)
-{
-	return doWrite(ID_PLC_DigOut_6x, &value);
-}
-
-int
-addWrite_PLC_DigOut_6x(int value)
-{
-	return addWrite(ID_PLC_DigOut_6x, &value);
-}
-
-int
-getStatus_PLC_DigOut_6x(void)
-{
-	return getStatus(ID_PLC_DigOut_6x);
-}
-
-int
-doWrite_PLC_DigOut_7x(int value)
-{
-	return doWrite(ID_PLC_DigOut_7x, &value);
-}
-
-int
-addWrite_PLC_DigOut_7x(int value)
-{
-	return addWrite(ID_PLC_DigOut_7x, &value);
-}
-
-int
-getStatus_PLC_DigOut_7x(void)
-{
-	return getStatus(ID_PLC_DigOut_7x);
-}
-
-int
-doWrite_PLC_DigOut_8x(int value)
-{
-	return doWrite(ID_PLC_DigOut_8x, &value);
-}
-
-int
-addWrite_PLC_DigOut_8x(int value)
-{
-	return addWrite(ID_PLC_DigOut_8x, &value);
-}
-
-int
-getStatus_PLC_DigOut_8x(void)
-{
-	return getStatus(ID_PLC_DigOut_8x);
-}
-
-int
-doWrite_PLC_DigOut_9x(int value)
-{
-	return doWrite(ID_PLC_DigOut_9x, &value);
-}
-
-int
-addWrite_PLC_DigOut_9x(int value)
-{
-	return addWrite(ID_PLC_DigOut_9x, &value);
-}
-
-int
-getStatus_PLC_DigOut_9x(void)
-{
-	return getStatus(ID_PLC_DigOut_9x);
-}
-
-int
-doWrite_PLC_DigOut_10x(int value)
-{
-	return doWrite(ID_PLC_DigOut_10x, &value);
-}
-
-int
-addWrite_PLC_DigOut_10x(int value)
-{
-	return addWrite(ID_PLC_DigOut_10x, &value);
-}
-
-int
-getStatus_PLC_DigOut_10x(void)
-{
-	return getStatus(ID_PLC_DigOut_10x);
-}
-
-int
-doWrite_PLC_DigOut_11x(int value)
-{
-	return doWrite(ID_PLC_DigOut_11x, &value);
-}
-
-int
-addWrite_PLC_DigOut_11x(int value)
-{
-	return addWrite(ID_PLC_DigOut_11x, &value);
-}
-
-int
-getStatus_PLC_DigOut_11x(void)
-{
-	return getStatus(ID_PLC_DigOut_11x);
-}
-
-int
-doWrite_PLC_DigOut_12x(int value)
-{
-	return doWrite(ID_PLC_DigOut_12x, &value);
-}
-
-int
-addWrite_PLC_DigOut_12x(int value)
-{
-	return addWrite(ID_PLC_DigOut_12x, &value);
-}
-
-int
-getStatus_PLC_DigOut_12x(void)
-{
-	return getStatus(ID_PLC_DigOut_12x);
-}
-
-int
 doWrite_PLC_Hwconf(u_int16_t value)
 {
 	return doWrite(ID_PLC_Hwconf, &value);
@@ -10079,18 +9779,6 @@ update_all(void)
 	retval += readFromDb(ID_PLC_DigIn_7, &PLC_DigIn_7);
 	retval += readFromDb(ID_PLC_DigIn_8, &PLC_DigIn_8);
 	retval += readFromDb(ID_PLC_Reserved_1, &PLC_Reserved_1);
-	retval += readFromDb(ID_PLC_DigOut_1x, &PLC_DigOut_1x);
-	retval += readFromDb(ID_PLC_DigOut_2x, &PLC_DigOut_2x);
-	retval += readFromDb(ID_PLC_DigOut_3x, &PLC_DigOut_3x);
-	retval += readFromDb(ID_PLC_DigOut_4x, &PLC_DigOut_4x);
-	retval += readFromDb(ID_PLC_DigOut_5x, &PLC_DigOut_5x);
-	retval += readFromDb(ID_PLC_DigOut_6x, &PLC_DigOut_6x);
-	retval += readFromDb(ID_PLC_DigOut_7x, &PLC_DigOut_7x);
-	retval += readFromDb(ID_PLC_DigOut_8x, &PLC_DigOut_8x);
-	retval += readFromDb(ID_PLC_DigOut_9x, &PLC_DigOut_9x);
-	retval += readFromDb(ID_PLC_DigOut_10x, &PLC_DigOut_10x);
-	retval += readFromDb(ID_PLC_DigOut_11x, &PLC_DigOut_11x);
-	retval += readFromDb(ID_PLC_DigOut_12x, &PLC_DigOut_12x);
 	retval += readFromDb(ID_PLC_Hwconf, &PLC_Hwconf);
 	retval += readFromDb(ID_PLC_Revisione, &PLC_Revisione);
 	retval += readFromDb(ID_PLC_StatusReg, &PLC_StatusReg);

@@ -4498,102 +4498,102 @@
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
-1;P;PLC_cella_1                    ;DINT     ;0   ;RTU       ;               ;0   ;1   ;0     ;4501;44  ;[RO]Valore cella di carico 1
-1;P;PLC_cella_2                    ;DINT     ;0   ;RTU       ;               ;0   ;1   ;2     ;4501;44  ;[RO]Valore cella di carico 2
-1;P;PLC_cella_3                    ;DINT     ;0   ;RTU       ;               ;0   ;1   ;4     ;4501;44  ;[RO]Valore cella di carico 3
-1;P;PLC_VCC                        ;INT      ;3   ;RTU       ;               ;0   ;1   ;6     ;4501;44  ;[RO]
-1;P;PLC_encoder_1                  ;DINT     ;0   ;RTU       ;               ;0   ;1   ;7     ;4501;44  ;[RO]Valore encoder 1
-1;P;PLC_encoder_2                  ;DINT     ;0   ;RTU       ;               ;0   ;1   ;9     ;4501;44  ;[RO]Valore encoder 2
-1;P;PLC_encoder_3                  ;DINT     ;0   ;RTU       ;               ;0   ;1   ;11    ;4501;44  ;[RO]Valore encoder 3
-1;P;PLC_encoder_4                  ;DINT     ;0   ;RTU       ;               ;0   ;1   ;13    ;4501;44  ;[RO]Valore encoder 4
-1;P;PLC_DigIn_9                    ;WORD_BIT ;1   ;RTU       ;               ;0   ;1   ;15    ;4501;44  ;[RO]Lettura input digitali
-1;P;PLC_DigIn_10                   ;WORD_BIT ;2   ;RTU       ;               ;0   ;1   ;15    ;4501;44  ;[RO]Lettura input digitali
-1;P;PLC_DigIn_11                   ;WORD_BIT ;3   ;RTU       ;               ;0   ;1   ;15    ;4501;44  ;[RO]Lettura input digitali
-1;P;PLC_DigIn_12                   ;WORD_BIT ;4   ;RTU       ;               ;0   ;1   ;15    ;4501;44  ;[RO]Lettura input digitali
-1;P;PLC_DigIn_13                   ;WORD_BIT ;5   ;RTU       ;               ;0   ;1   ;15    ;4501;44  ;[RO]Lettura input digitali
-1;P;PLC_DigIn_14                   ;WORD_BIT ;6   ;RTU       ;               ;0   ;1   ;15    ;4501;44  ;[RO]Lettura input digitali
-1;P;PLC_DigIn_15                   ;WORD_BIT ;7   ;RTU       ;               ;0   ;1   ;15    ;4501;44  ;[RO]Lettura input digitali
-1;P;PLC_DigIn_16                   ;WORD_BIT ;8   ;RTU       ;               ;0   ;1   ;15    ;4501;44  ;[RO]Lettura input digitali
-1;P;PLC_DigIn_17                   ;WORD_BIT ;9   ;RTU       ;               ;0   ;1   ;15    ;4501;44  ;[RO]Lettura input digitali
-1;P;PLC_DigIn_18                   ;WORD_BIT ;10  ;RTU       ;               ;0   ;1   ;15    ;4501;44  ;[RO]Lettura input digitali
-1;P;PLC_DigIn_19                   ;WORD_BIT ;11  ;RTU       ;               ;0   ;1   ;15    ;4501;44  ;[RO]Lettura input digitali
-1;P;PLC_DigIn_20                   ;WORD_BIT ;12  ;RTU       ;               ;0   ;1   ;15    ;4501;44  ;[RO]Lettura input digitali
-1;P;PLC_DigIn_21                   ;WORD_BIT ;13  ;RTU       ;               ;0   ;1   ;15    ;4501;44  ;[RO]Lettura input digitali
-1;P;PLC_DigIn_22                   ;WORD_BIT ;14  ;RTU       ;               ;0   ;1   ;15    ;4501;44  ;[RO]Lettura input digitali
-1;P;PLC_DigIn_23                   ;WORD_BIT ;15  ;RTU       ;               ;0   ;1   ;15    ;4501;44  ;[RO]Lettura input digitali
-1;P;PLC_DigIn_24                   ;WORD_BIT ;16  ;RTU       ;               ;0   ;1   ;15    ;4501;44  ;[RO]Lettura input digitali
-1;P;PLC_Expansion_HB               ;UINT     ;0   ;RTU       ;               ;0   ;1   ;16    ;4501;44  ;[RO]Heartbeat della espansione
-1;P;PLC_Expansion_FW               ;UINT     ;0   ;RTU       ;               ;0   ;1   ;17    ;4501;44  ;[RO]Versione Firmware della espansione
-1;P;PLC_Expansion_HW               ;UINT     ;0   ;RTU       ;               ;0   ;1   ;18    ;4501;44  ;[RO]Configurazione HW della espansione
-1;P;PLC_PtoWork_1                  ;WORD_BIT ;1   ;RTU       ;               ;0   ;1   ;19    ;4501;44  ;[RO]Registro di stato dalla FPGA
-1;P;PLC_PtoWork_2                  ;WORD_BIT ;2   ;RTU       ;               ;0   ;1   ;19    ;4501;44  ;[RO]Registro di stato dalla FPGA
-1;P;PLC_PtoWork_3                  ;WORD_BIT ;3   ;RTU       ;               ;0   ;1   ;19    ;4501;44  ;[RO]Registro di stato dalla FPGA
-1;P;PLC_PtoWork_4                  ;WORD_BIT ;4   ;RTU       ;               ;0   ;1   ;19    ;4501;44  ;[RO]Registro di stato dalla FPGA
-1;P;PLC_PtoDone_1                  ;WORD_BIT ;5   ;RTU       ;               ;0   ;1   ;19    ;4501;44  ;[RO]Registro di stato dalla FPGA
-1;P;PLC_PtoDone_2                  ;WORD_BIT ;6   ;RTU       ;               ;0   ;1   ;19    ;4501;44  ;[RO]Registro di stato dalla FPGA
-1;P;PLC_PtoDone_3                  ;WORD_BIT ;7   ;RTU       ;               ;0   ;1   ;19    ;4501;44  ;[RO]Registro di stato dalla FPGA
-1;P;PLC_PtoDone_4                  ;WORD_BIT ;8   ;RTU       ;               ;0   ;1   ;19    ;4501;44  ;[RO]Registro di stato dalla FPGA
-1;P;PLC_EncMatch_1                 ;WORD_BIT ;9   ;RTU       ;               ;0   ;1   ;19    ;4501;44  ;[RO]Registro di stato dalla FPGA
-1;P;PLC_EncMatch_2                 ;WORD_BIT ;10  ;RTU       ;               ;0   ;1   ;19    ;4501;44  ;[RO]Registro di stato dalla FPGA
-1;P;PLC_EncMatch_3                 ;WORD_BIT ;11  ;RTU       ;               ;0   ;1   ;19    ;4501;44  ;[RO]Registro di stato dalla FPGA
-1;P;PLC_EncMatch_4                 ;WORD_BIT ;12  ;RTU       ;               ;0   ;1   ;19    ;4501;44  ;[RO]Registro di stato dalla FPGA
-1;P;PLC_Exp_ST_13                  ;WORD_BIT ;13  ;RTU       ;               ;0   ;1   ;19    ;4501;44  ;[RO]Registro di stato dalla FPGA
-1;P;PLC_Exp_ST_14                  ;WORD_BIT ;14  ;RTU       ;               ;0   ;1   ;19    ;4501;44  ;[RO]Registro di stato dalla FPGA
-1;P;PLC_Exp_ST_15                  ;WORD_BIT ;15  ;RTU       ;               ;0   ;1   ;19    ;4501;44  ;[RO]Registro di stato dalla FPGA
-1;P;PLC_Exp_ST_16                  ;WORD_BIT ;16  ;RTU       ;               ;0   ;1   ;19    ;4501;44  ;[RO]Registro di stato dalla FPGA
-1;P;PLC_Expansion_ER               ;UINT     ;0   ;RTU       ;               ;0   ;1   ;20    ;4501;44  ;[RO]Registro errori della espansione
-3;P;PLC_Conf_enc_1                 ;UINT     ;0   ;RTU       ;               ;0   ;1   ;22    ;4545;52  ;[RW]Configurazione encoder 1. 0=non configurato. 1=encoder bidirezionale. 2=contatore monodirezionale
-3;P;PLC_Conf_enc_2                 ;UINT     ;0   ;RTU       ;               ;0   ;1   ;23    ;4545;52  ;[RW]Configurazione encoder 2.
-3;P;PLC_Conf_enc_3                 ;UINT     ;0   ;RTU       ;               ;0   ;1   ;24    ;4545;52  ;[RW]Configurazione encoder 3.
-3;P;PLC_Conf_enc_4                 ;UINT     ;0   ;RTU       ;               ;0   ;1   ;25    ;4545;52  ;[RW]Configurazione encoder 4.
-3;P;PLC_Enc_Match_1                ;DINT     ;0   ;RTU       ;               ;0   ;1   ;26    ;4545;52  ;[RW]Impostazione matcing register ENC 1 (Conteggi)
-3;P;PLC_Enc_Match_2                ;DINT     ;0   ;RTU       ;               ;0   ;1   ;28    ;4545;52  ;[RW]Impostazione matcing register ENC 2 (Conteggi)
-3;P;PLC_Enc_Match_3                ;DINT     ;0   ;RTU       ;               ;0   ;1   ;30    ;4545;52  ;[RW]Impostazione matcing register ENC 3 (Conteggi)
-3;P;PLC_Enc_Match_4                ;DINT     ;0   ;RTU       ;               ;0   ;1   ;32    ;4545;52  ;[RW]Impostazione matcing register ENC 4 (Conteggi)
-3;P;PLC_Pwm_Freq_1                 ;UINT     ;0   ;RTU       ;               ;0   ;1   ;34    ;4545;52  ;[RW]Impostazione frequenza PWM 1 (Hz)
-3;P;PLC_Pwm_Freq_2                 ;UINT     ;0   ;RTU       ;               ;0   ;1   ;35    ;4545;52  ;[RW]Impostazione frequenza PWM 2 (Hz)
-3;P;PLC_Pwm_Freq_3                 ;UINT     ;0   ;RTU       ;               ;0   ;1   ;36    ;4545;52  ;[RW]Impostazione frequenza PWM 3 (Hz)
-3;P;PLC_Pwm_Freq_4                 ;UINT     ;0   ;RTU       ;               ;0   ;1   ;37    ;4545;52  ;[RW]Impostazione frequenza PWM 4 (Hz)
-3;P;PLC_Delay_Reg_1                ;UINT     ;0   ;RTU       ;               ;0   ;1   ;38    ;4545;52  ;[RW]Impostazione Tempo di ritardo (10x us)
-3;P;PLC_Delay_Reg_2                ;UINT     ;0   ;RTU       ;               ;0   ;1   ;39    ;4545;52  ;[RW]Impostazione Tempo di ritardo (10x us)
-3;P;PLC_Delay_Reg_3                ;UINT     ;0   ;RTU       ;               ;0   ;1   ;40    ;4545;52  ;[RW]Impostazione Tempo di ritardo (10x us)
-3;P;PLC_Delay_Reg_4                ;UINT     ;0   ;RTU       ;               ;0   ;1   ;41    ;4545;52  ;[RW]Impostazione Tempo di ritardo (10x us)
-3;P;PLC_Pwm_Steps_1                ;DINT     ;0   ;RTU       ;               ;0   ;1   ;42    ;4545;52  ;[RW]Impostazione numero di step da generare PWM 1. 0=funzionamento continuo
-3;P;PLC_Pwm_Steps_2                ;DINT     ;0   ;RTU       ;               ;0   ;1   ;44    ;4545;52  ;[RW]Impostazione numero di step da generare PWM 2.
-3;P;PLC_Pwm_Steps_3                ;DINT     ;0   ;RTU       ;               ;0   ;1   ;46    ;4545;52  ;[RW]Impostazione numero di step da generare PWM 3.
-3;P;PLC_Pwm_Steps_4                ;DINT     ;0   ;RTU       ;               ;0   ;1   ;48    ;4545;52  ;[RW]Impostazione numero di step da generare PWM 4.
-3;P;PLC_DigOut_1                   ;WORD_BIT ;1   ;RTU       ;               ;0   ;1   ;50    ;4545;52  ;[RW]Scrittura uscite digitali
-3;P;PLC_DigOut_2                   ;WORD_BIT ;2   ;RTU       ;               ;0   ;1   ;50    ;4545;52  ;[RW]Scrittura uscite digitali
-3;P;PLC_DigOut_3                   ;WORD_BIT ;3   ;RTU       ;               ;0   ;1   ;50    ;4545;52  ;[RW]Scrittura uscite digitali
-3;P;PLC_DigOut_4                   ;WORD_BIT ;4   ;RTU       ;               ;0   ;1   ;50    ;4545;52  ;[RW]Scrittura uscite digitali
-3;P;PLC_DigOut_5                   ;WORD_BIT ;5   ;RTU       ;               ;0   ;1   ;50    ;4545;52  ;[RW]Scrittura uscite digitali
-3;P;PLC_DigOut_6                   ;WORD_BIT ;6   ;RTU       ;               ;0   ;1   ;50    ;4545;52  ;[RW]Scrittura uscite digitali
-3;P;PLC_DigOut_7                   ;WORD_BIT ;7   ;RTU       ;               ;0   ;1   ;50    ;4545;52  ;[RW]Scrittura uscite digitali
-3;P;PLC_DigOut_8                   ;WORD_BIT ;8   ;RTU       ;               ;0   ;1   ;50    ;4545;52  ;[RW]Scrittura uscite digitali
-3;P;PLC_DigOut_9                   ;WORD_BIT ;9   ;RTU       ;               ;0   ;1   ;50    ;4545;52  ;[RW]Scrittura uscite digitali
-3;P;PLC_DigOut_10                  ;WORD_BIT ;10  ;RTU       ;               ;0   ;1   ;50    ;4545;52  ;[RW]Scrittura uscite digitali
-3;P;PLC_DigOut_11                  ;WORD_BIT ;11  ;RTU       ;               ;0   ;1   ;50    ;4545;52  ;[RW]Scrittura uscite digitali
-3;P;PLC_DigOut_12                  ;WORD_BIT ;12  ;RTU       ;               ;0   ;1   ;50    ;4545;52  ;[RW]Scrittura uscite digitali
-3;P;PLC_DigOut_13                  ;WORD_BIT ;13  ;RTU       ;               ;0   ;1   ;50    ;4545;52  ;[RW]Scrittura uscite digitali
-3;P;PLC_DigOut_14                  ;WORD_BIT ;14  ;RTU       ;               ;0   ;1   ;50    ;4545;52  ;[RW]Scrittura uscite digitali
-3;P;PLC_DigOut_15                  ;WORD_BIT ;15  ;RTU       ;               ;0   ;1   ;50    ;4545;52  ;[RW]Scrittura uscite digitali
-3;P;PLC_DigOut_16                  ;WORD_BIT ;16  ;RTU       ;               ;0   ;1   ;50    ;4545;52  ;[RW]Scrittura uscite digitali
-3;P;PLC_PtoEnable_1                ;WORD_BIT ;1   ;RTU       ;               ;0   ;1   ;51    ;4545;52  ;[RW]Registro di comando per FPGA
-3;P;PLC_PtoEnable_2                ;WORD_BIT ;2   ;RTU       ;               ;0   ;1   ;51    ;4545;52  ;[RW]Registro di comando per FPGA
-3;P;PLC_PtoEnable_3                ;WORD_BIT ;3   ;RTU       ;               ;0   ;1   ;51    ;4545;52  ;[RW]Registro di comando per FPGA
-3;P;PLC_PtoEnable_4                ;WORD_BIT ;4   ;RTU       ;               ;0   ;1   ;51    ;4545;52  ;[RW]Registro di comando per FPGA
-3;P;PLC_Exp_CM_5                   ;WORD_BIT ;5   ;RTU       ;               ;0   ;1   ;51    ;4545;52  ;[RW]Registro di comando per FPGA
-3;P;PLC_Exp_CM_6                   ;WORD_BIT ;6   ;RTU       ;               ;0   ;1   ;51    ;4545;52  ;[RW]Registro di comando per FPGA
-3;P;PLC_Exp_CM_7                   ;WORD_BIT ;7   ;RTU       ;               ;0   ;1   ;51    ;4545;52  ;[RW]Registro di comando per FPGA
-3;P;PLC_Exp_CM_8                   ;WORD_BIT ;8   ;RTU       ;               ;0   ;1   ;51    ;4545;52  ;[RW]Registro di comando per FPGA
-3;P;PLC_Exp_CM_9                   ;WORD_BIT ;9   ;RTU       ;               ;0   ;1   ;51    ;4545;52  ;[RW]Registro di comando per FPGA
-3;P;PLC_Exp_CM_10                  ;WORD_BIT ;10  ;RTU       ;               ;0   ;1   ;51    ;4545;52  ;[RW]Registro di comando per FPGA
-3;P;PLC_Exp_CM_11                  ;WORD_BIT ;11  ;RTU       ;               ;0   ;1   ;51    ;4545;52  ;[RW]Registro di comando per FPGA
-3;P;PLC_Exp_CM_12                  ;WORD_BIT ;12  ;RTU       ;               ;0   ;1   ;51    ;4545;52  ;[RW]Registro di comando per FPGA
-3;P;PLC_Exp_CM_13                  ;WORD_BIT ;13  ;RTU       ;               ;0   ;1   ;51    ;4545;52  ;[RW]Registro di comando per FPGA
-3;P;PLC_Exp_CM_14                  ;WORD_BIT ;14  ;RTU       ;               ;0   ;1   ;51    ;4545;52  ;[RW]Registro di comando per FPGA
-3;P;PLC_Exp_CM_15                  ;WORD_BIT ;15  ;RTU       ;               ;0   ;1   ;51    ;4545;52  ;[RW]Registro di comando per FPGA
-3;P;PLC_Exp_CM_16                  ;WORD_BIT ;16  ;RTU       ;               ;0   ;1   ;51    ;4545;52  ;[RW]Registro di comando per FPGA
+1;P;PLC_cella_1                    ;DINT     ;0   ;RTU       ;               ;0   ;1   ;0     ;4501;44  ;[RO]Load Cell 1 Input 24 bit
+1;P;PLC_cella_2                    ;DINT     ;0   ;RTU       ;               ;0   ;1   ;2     ;4501;44  ;[RO]Load Cell 2 Input 24 bit
+1;P;PLC_cella_3                    ;DINT     ;0   ;RTU       ;               ;0   ;1   ;4     ;4501;44  ;[RO]Load Cell 2 Input 24 bit
+1;P;PLC_VCC                        ;INT      ;3   ;RTU       ;               ;0   ;1   ;6     ;4501;44  ;[RO]Cell Polarity Voltage
+1;P;PLC_encoder_1                  ;DINT     ;0   ;RTU       ;               ;0   ;1   ;7     ;4501;44  ;[RO]Encoder value 1 32 bit
+1;P;PLC_encoder_2                  ;DINT     ;0   ;RTU       ;               ;0   ;1   ;9     ;4501;44  ;[RO]Encoder value 2 32 bit
+1;P;PLC_encoder_3                  ;DINT     ;0   ;RTU       ;               ;0   ;1   ;11    ;4501;44  ;[RO]Encoder value 3 32 bit
+1;P;PLC_encoder_4                  ;DINT     ;0   ;RTU       ;               ;0   ;1   ;13    ;4501;44  ;[RO]Encoder value 4 32 bit
+1;P;PLC_DigIn_9                    ;WORD_BIT ;1   ;RTU       ;               ;0   ;1   ;15    ;4501;44  ;[RO]Digital Input 9
+1;P;PLC_DigIn_10                   ;WORD_BIT ;2   ;RTU       ;               ;0   ;1   ;15    ;4501;44  ;[RO]Digital Input 10
+1;P;PLC_DigIn_11                   ;WORD_BIT ;3   ;RTU       ;               ;0   ;1   ;15    ;4501;44  ;[RO]Digital Input 11
+1;P;PLC_DigIn_12                   ;WORD_BIT ;4   ;RTU       ;               ;0   ;1   ;15    ;4501;44  ;[RO]Digital Input 12
+1;P;PLC_DigIn_13                   ;WORD_BIT ;5   ;RTU       ;               ;0   ;1   ;15    ;4501;44  ;[RO]Digital Input 13
+1;P;PLC_DigIn_14                   ;WORD_BIT ;6   ;RTU       ;               ;0   ;1   ;15    ;4501;44  ;[RO]Digital Input 14
+1;P;PLC_DigIn_15                   ;WORD_BIT ;7   ;RTU       ;               ;0   ;1   ;15    ;4501;44  ;[RO]Digital Input 15
+1;P;PLC_DigIn_16                   ;WORD_BIT ;8   ;RTU       ;               ;0   ;1   ;15    ;4501;44  ;[RO]Digital Input 16
+1;P;PLC_DigIn_17                   ;WORD_BIT ;9   ;RTU       ;               ;0   ;1   ;15    ;4501;44  ;[RO]Digital Input 17
+1;P;PLC_DigIn_18                   ;WORD_BIT ;10  ;RTU       ;               ;0   ;1   ;15    ;4501;44  ;[RO]Digital Input 18
+1;P;PLC_DigIn_19                   ;WORD_BIT ;11  ;RTU       ;               ;0   ;1   ;15    ;4501;44  ;[RO]Digital Input 19
+1;P;PLC_DigIn_20                   ;WORD_BIT ;12  ;RTU       ;               ;0   ;1   ;15    ;4501;44  ;[RO]Digital Input 20
+1;P;PLC_DigIn_21                   ;WORD_BIT ;13  ;RTU       ;               ;0   ;1   ;15    ;4501;44  ;[RO]Digital Input 21
+1;P;PLC_DigIn_22                   ;WORD_BIT ;14  ;RTU       ;               ;0   ;1   ;15    ;4501;44  ;[RO]Digital Input 22
+1;P;PLC_DigIn_23                   ;WORD_BIT ;15  ;RTU       ;               ;0   ;1   ;15    ;4501;44  ;[RO]Digital Input 23
+1;P;PLC_DigIn_24                   ;WORD_BIT ;16  ;RTU       ;               ;0   ;1   ;15    ;4501;44  ;[RO]Digital Input 24
+1;P;PLC_Expansion_HB               ;UINT     ;0   ;RTU       ;               ;0   ;1   ;16    ;4501;44  ;[RO]Expansion Heartbeat 
+1;P;PLC_Expansion_FW               ;UINT     ;0   ;RTU       ;               ;0   ;1   ;17    ;4501;44  ;[RO]FW Expansion Revision
+1;P;PLC_Expansion_HW               ;UINT     ;0   ;RTU       ;               ;0   ;1   ;18    ;4501;44  ;[RO]HW expansion revision
+1;P;PLC_PtoWork_1                  ;WORD_BIT ;1   ;RTU       ;               ;0   ;1   ;19    ;4501;44  ;[RO]PTO status Indicates  PTO  is busy
+1;P;PLC_PtoWork_2                  ;WORD_BIT ;2   ;RTU       ;               ;0   ;1   ;19    ;4501;44  ;[RO]PTO status Indicates  PTO  is busy
+1;P;PLC_PtoWork_3                  ;WORD_BIT ;3   ;RTU       ;               ;0   ;1   ;19    ;4501;44  ;[RO]PTO status Indicates  PTO  is busy
+1;P;PLC_PtoWork_4                  ;WORD_BIT ;4   ;RTU       ;               ;0   ;1   ;19    ;4501;44  ;[RO]PTO status Indicates  PTO  is busy
+1;P;PLC_PtoDone_1                  ;WORD_BIT ;5   ;RTU       ;               ;0   ;1   ;19    ;4501;44  ;[RO]PTO status Indicates  PTO  has  finished
+1;P;PLC_PtoDone_2                  ;WORD_BIT ;6   ;RTU       ;               ;0   ;1   ;19    ;4501;44  ;[RO]PTO status Indicates  PTO  has  finished
+1;P;PLC_PtoDone_3                  ;WORD_BIT ;7   ;RTU       ;               ;0   ;1   ;19    ;4501;44  ;[RO]PTO status Indicates  PTO  has  finished
+1;P;PLC_PtoDone_4                  ;WORD_BIT ;8   ;RTU       ;               ;0   ;1   ;19    ;4501;44  ;[RO]PTO status Indicates  PTO  has  finished
+1;P;PLC_EncMatch_1                 ;WORD_BIT ;9   ;RTU       ;               ;0   ;1   ;19    ;4501;44  ;[RO]N/A 
+1;P;PLC_EncMatch_2                 ;WORD_BIT ;10  ;RTU       ;               ;0   ;1   ;19    ;4501;44  ;[RO]N/A 
+1;P;PLC_EncMatch_3                 ;WORD_BIT ;11  ;RTU       ;               ;0   ;1   ;19    ;4501;44  ;[RO]N/A 
+1;P;PLC_EncMatch_4                 ;WORD_BIT ;12  ;RTU       ;               ;0   ;1   ;19    ;4501;44  ;[RO]N/A 
+1;P;PLC_Exp_ST_13                  ;WORD_BIT ;13  ;RTU       ;               ;0   ;1   ;19    ;4501;44  ;[RO]N/A 
+1;P;PLC_Exp_ST_14                  ;WORD_BIT ;14  ;RTU       ;               ;0   ;1   ;19    ;4501;44  ;[RO]N/A 
+1;P;PLC_Exp_ST_15                  ;WORD_BIT ;15  ;RTU       ;               ;0   ;1   ;19    ;4501;44  ;[RO]N/A 
+1;P;PLC_Exp_ST_16                  ;WORD_BIT ;16  ;RTU       ;               ;0   ;1   ;19    ;4501;44  ;[RO]N/A 
+1;P;PLC_Expansion_ER               ;UINT     ;0   ;RTU       ;               ;0   ;1   ;20    ;4501;44  ;[RO]Internal communication error regiter
+3;P;PLC_Conf_enc_1                 ;UINT     ;0   ;RTU       ;               ;0   ;1   ;22    ;4545;52  ;[RW]Encoder 1 Configuration. 0=not configured. 1=set monodirectional counter  2=set bidirectional encoder
+3;P;PLC_Conf_enc_2                 ;UINT     ;0   ;RTU       ;               ;0   ;1   ;23    ;4545;52  ;[RW]Encoder 2 Configuration. 0=not configured. 1=set monodirectional counter  2=set bidirectional encoder
+3;P;PLC_Conf_enc_3                 ;UINT     ;0   ;RTU       ;               ;0   ;1   ;24    ;4545;52  ;[RW]Encoder 3 Configuration. 0=not configured. 1=set monodirectional counter  2=set bidirectional encoder
+3;P;PLC_Conf_enc_4                 ;UINT     ;0   ;RTU       ;               ;0   ;1   ;25    ;4545;52  ;[RW]Encoder 4 Configuration. 0=not configured. 1=set monodirectional counter  2=set bidirectional encoder
+3;P;PLC_Enc_Match_1                ;DINT     ;0   ;RTU       ;               ;0   ;1   ;26    ;4545;52  ;[RW]N/A 
+3;P;PLC_Enc_Match_2                ;DINT     ;0   ;RTU       ;               ;0   ;1   ;28    ;4545;52  ;[RW]N/A 
+3;P;PLC_Enc_Match_3                ;DINT     ;0   ;RTU       ;               ;0   ;1   ;30    ;4545;52  ;[RW]N/A 
+3;P;PLC_Enc_Match_4                ;DINT     ;0   ;RTU       ;               ;0   ;1   ;32    ;4545;52  ;[RW]N/A 
+3;P;PLC_Pwm_Freq_1                 ;UINT     ;0   ;RTU       ;               ;0   ;1   ;34    ;4545;52  ;[RW]PTO frequency settings 1Hz resolution
+3;P;PLC_Pwm_Freq_2                 ;UINT     ;0   ;RTU       ;               ;0   ;1   ;35    ;4545;52  ;[RW]PTO frequency settings 1Hz resolution
+3;P;PLC_Pwm_Freq_3                 ;UINT     ;0   ;RTU       ;               ;0   ;1   ;36    ;4545;52  ;[RW]PTO frequency settings 1Hz resolution
+3;P;PLC_Pwm_Freq_4                 ;UINT     ;0   ;RTU       ;               ;0   ;1   ;37    ;4545;52  ;[RW]PTO frequency settings 1Hz resolution
+3;P;PLC_Delay_Reg_1                ;UINT     ;0   ;RTU       ;               ;0   ;1   ;38    ;4545;52  ;[RW]N/A
+3;P;PLC_Delay_Reg_2                ;UINT     ;0   ;RTU       ;               ;0   ;1   ;39    ;4545;52  ;[RW]N/A
+3;P;PLC_Delay_Reg_3                ;UINT     ;0   ;RTU       ;               ;0   ;1   ;40    ;4545;52  ;[RW]N/A
+3;P;PLC_Delay_Reg_4                ;UINT     ;0   ;RTU       ;               ;0   ;1   ;41    ;4545;52  ;[RW]N/A
+3;P;PLC_Pwm_Steps_1                ;DINT     ;0   ;RTU       ;               ;0   ;1   ;42    ;4545;52  ;[RW]The number of steps PTO must make or 0 counting indefinitely
+3;P;PLC_Pwm_Steps_2                ;DINT     ;0   ;RTU       ;               ;0   ;1   ;44    ;4545;52  ;[RW]The number of steps PTO must make or 0 counting indefinitely
+3;P;PLC_Pwm_Steps_3                ;DINT     ;0   ;RTU       ;               ;0   ;1   ;46    ;4545;52  ;[RW]The number of steps PTO must make or 0 counting indefinitely
+3;P;PLC_Pwm_Steps_4                ;DINT     ;0   ;RTU       ;               ;0   ;1   ;48    ;4545;52  ;[RW]The number of steps PTO must make or 0 counting indefinitely
+3;P;PLC_DigOut_1                   ;WORD_BIT ;1   ;RTU       ;               ;0   ;1   ;50    ;4545;52  ;[RW]Digital Output 1
+3;P;PLC_DigOut_2                   ;WORD_BIT ;2   ;RTU       ;               ;0   ;1   ;50    ;4545;52  ;[RW]Digital Output 2
+3;P;PLC_DigOut_3                   ;WORD_BIT ;3   ;RTU       ;               ;0   ;1   ;50    ;4545;52  ;[RW]Digital Output 3
+3;P;PLC_DigOut_4                   ;WORD_BIT ;4   ;RTU       ;               ;0   ;1   ;50    ;4545;52  ;[RW]Digital Output 4
+3;P;PLC_DigOut_5                   ;WORD_BIT ;5   ;RTU       ;               ;0   ;1   ;50    ;4545;52  ;[RW]Digital Output 5
+3;P;PLC_DigOut_6                   ;WORD_BIT ;6   ;RTU       ;               ;0   ;1   ;50    ;4545;52  ;[RW]Digital Output 6
+3;P;PLC_DigOut_7                   ;WORD_BIT ;7   ;RTU       ;               ;0   ;1   ;50    ;4545;52  ;[RW]Digital Output 7
+3;P;PLC_DigOut_8                   ;WORD_BIT ;8   ;RTU       ;               ;0   ;1   ;50    ;4545;52  ;[RW]Digital Output 8
+3;P;PLC_DigOut_9                   ;WORD_BIT ;9   ;RTU       ;               ;0   ;1   ;50    ;4545;52  ;[RW]Digital Output 9
+3;P;PLC_DigOut_10                  ;WORD_BIT ;10  ;RTU       ;               ;0   ;1   ;50    ;4545;52  ;[RW]Digital Output 10
+3;P;PLC_DigOut_11                  ;WORD_BIT ;11  ;RTU       ;               ;0   ;1   ;50    ;4545;52  ;[RW]Digital Output 11
+3;P;PLC_DigOut_12                  ;WORD_BIT ;12  ;RTU       ;               ;0   ;1   ;50    ;4545;52  ;[RW]Digital Output 12
+3;P;PLC_DigOut_13                  ;WORD_BIT ;13  ;RTU       ;               ;0   ;1   ;50    ;4545;52  ;[RW]Digital Output 13
+3;P;PLC_DigOut_14                  ;WORD_BIT ;14  ;RTU       ;               ;0   ;1   ;50    ;4545;52  ;[RW]Digital Output 14
+3;P;PLC_DigOut_15                  ;WORD_BIT ;15  ;RTU       ;               ;0   ;1   ;50    ;4545;52  ;[RW]Digital Output 15
+3;P;PLC_DigOut_16                  ;WORD_BIT ;16  ;RTU       ;               ;0   ;1   ;50    ;4545;52  ;[RW]Digital Output 16
+3;P;PLC_PtoEnable_1                ;WORD_BIT ;1   ;RTU       ;               ;0   ;1   ;51    ;4545;52  ;[RW]PTO 1 enabling 
+3;P;PLC_PtoEnable_2                ;WORD_BIT ;2   ;RTU       ;               ;0   ;1   ;51    ;4545;52  ;[RW]PTO 2 enabling 
+3;P;PLC_PtoEnable_3                ;WORD_BIT ;3   ;RTU       ;               ;0   ;1   ;51    ;4545;52  ;[RW]PTO 3 enabling 
+3;P;PLC_PtoEnable_4                ;WORD_BIT ;4   ;RTU       ;               ;0   ;1   ;51    ;4545;52  ;[RW]PTO 4 enabling 
+3;P;PLC_Exp_CM_5                   ;WORD_BIT ;5   ;RTU       ;               ;0   ;1   ;51    ;4545;52  ;[RW]N/A 
+3;P;PLC_Exp_CM_6                   ;WORD_BIT ;6   ;RTU       ;               ;0   ;1   ;51    ;4545;52  ;[RW]N/A 
+3;P;PLC_Exp_CM_7                   ;WORD_BIT ;7   ;RTU       ;               ;0   ;1   ;51    ;4545;52  ;[RW]N/A 
+3;P;PLC_Exp_CM_8                   ;WORD_BIT ;8   ;RTU       ;               ;0   ;1   ;51    ;4545;52  ;[RW]N/A 
+3;P;PLC_Exp_CM_9                   ;WORD_BIT ;9   ;RTU       ;               ;0   ;1   ;51    ;4545;52  ;[RW]N/A 
+3;P;PLC_Exp_CM_10                  ;WORD_BIT ;10  ;RTU       ;               ;0   ;1   ;51    ;4545;52  ;[RW]N/A 
+3;P;PLC_Exp_CM_11                  ;WORD_BIT ;11  ;RTU       ;               ;0   ;1   ;51    ;4545;52  ;[RW]N/A 
+3;P;PLC_Exp_CM_12                  ;WORD_BIT ;12  ;RTU       ;               ;0   ;1   ;51    ;4545;52  ;[RW]N/A 
+3;P;PLC_Exp_CM_13                  ;WORD_BIT ;13  ;RTU       ;               ;0   ;1   ;51    ;4545;52  ;[RW]N/A 
+3;P;PLC_Exp_CM_14                  ;WORD_BIT ;14  ;RTU       ;               ;0   ;1   ;51    ;4545;52  ;[RW]N/A 
+3;P;PLC_Exp_CM_15                  ;WORD_BIT ;15  ;RTU       ;               ;0   ;1   ;51    ;4545;52  ;[RW]N/A 
+3;P;PLC_Exp_CM_16                  ;WORD_BIT ;16  ;RTU       ;               ;0   ;1   ;51    ;4545;52  ;[RW]N/A 
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
@@ -5297,61 +5297,61 @@
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
-1;P;PLC_DigIn_1                    ;BYTE_BIT ;1   ;CANOPEN   ;               ;0   ;1   ;1     ;5300;55  ;[RO]Digital input 1 value
-1;P;PLC_DigIn_2                    ;BYTE_BIT ;2   ;CANOPEN   ;               ;0   ;1   ;1     ;5300;55  ;[RO]Digital input 2 value
-1;P;PLC_DigIn_3                    ;BYTE_BIT ;3   ;CANOPEN   ;               ;0   ;1   ;1     ;5300;55  ;[RO]Digital input 3 value
-1;P;PLC_DigIn_4                    ;BYTE_BIT ;4   ;CANOPEN   ;               ;0   ;1   ;1     ;5300;55  ;[RO]Digital input 4 value
-1;P;PLC_DigIn_5                    ;BYTE_BIT ;5   ;CANOPEN   ;               ;0   ;1   ;1     ;5300;55  ;[RO]Digital input 5 value
-1;P;PLC_DigIn_6                    ;BYTE_BIT ;6   ;CANOPEN   ;               ;0   ;1   ;1     ;5300;55  ;[RO]Digital input 6 value
-1;P;PLC_DigIn_7                    ;BYTE_BIT ;7   ;CANOPEN   ;               ;0   ;1   ;1     ;5300;55  ;[RO]Digital input 7 value
-1;P;PLC_DigIn_8                    ;BYTE_BIT ;8   ;CANOPEN   ;               ;0   ;1   ;1     ;5300;55  ;[RO]Digital input 8 value
-1;P;PLC_Reserved_1                 ;BYTE_BIT ;1   ;CANOPEN   ;               ;0   ;1   ;2     ;5300;55  ;[RO]Reserved
-1;P;PLC_DigOut_1x                  ;BYTE_BIT ;1   ;CANOPEN   ;               ;0   ;1   ;3     ;5300;55  ;[RW]Digital output 1 value
-1;P;PLC_DigOut_2x                  ;BYTE_BIT ;2   ;CANOPEN   ;               ;0   ;1   ;3     ;5300;55  ;[RW]Digital output 2 value
-1;P;PLC_DigOut_3x                  ;BYTE_BIT ;3   ;CANOPEN   ;               ;0   ;1   ;3     ;5300;55  ;[RW]Digital output 3 value
-1;P;PLC_DigOut_4x                  ;BYTE_BIT ;4   ;CANOPEN   ;               ;0   ;1   ;3     ;5300;55  ;[RW]Digital output 4 value
-1;P;PLC_DigOut_5x                  ;BYTE_BIT ;5   ;CANOPEN   ;               ;0   ;1   ;3     ;5300;55  ;[RW]Digital output 5 value
-1;P;PLC_DigOut_6x                  ;BYTE_BIT ;6   ;CANOPEN   ;               ;0   ;1   ;3     ;5300;55  ;[RW]Digital output 6 value
-1;P;PLC_DigOut_7x                  ;BYTE_BIT ;7   ;CANOPEN   ;               ;0   ;1   ;3     ;5300;55  ;[RW]Digital output 7 value
-1;P;PLC_DigOut_8x                  ;BYTE_BIT ;8   ;CANOPEN   ;               ;0   ;1   ;3     ;5300;55  ;[RW]Digital output 8 value
-1;P;PLC_DigOut_9x                  ;BYTE_BIT ;1   ;CANOPEN   ;               ;0   ;1   ;4     ;5300;55  ;[RW]Digital output 9 value
-1;P;PLC_DigOut_10x                 ;BYTE_BIT ;2   ;CANOPEN   ;               ;0   ;1   ;4     ;5300;55  ;[RW]Digital output 10 value
-1;P;PLC_DigOut_11x                 ;BYTE_BIT ;3   ;CANOPEN   ;               ;0   ;1   ;4     ;5300;55  ;[RW]Digital output 11 value
-1;P;PLC_DigOut_12x                 ;BYTE_BIT ;4   ;CANOPEN   ;               ;0   ;1   ;4     ;5300;55  ;[RW]Digital output 12 value
-1;P;PLC_Hwconf                     ;UINT     ;0   ;CANOPEN   ;               ;0   ;1   ;5     ;5300;55  ;[RO]Hardware configuration
-1;P;PLC_Revisione                  ;UINT     ;0   ;CANOPEN   ;               ;0   ;1   ;6     ;5300;55  ;[RO]Firmware version
-1;P;PLC_StatusReg                  ;UINT     ;0   ;CANOPEN   ;               ;0   ;1   ;7     ;5300;55  ;[RO]In - Out board status
-1;P;PLC_Heartbeat                  ;UINT     ;0   ;CANOPEN   ;               ;0   ;1   ;8     ;5300;55  ;[RO]In - Out board function check
-1;P;PLC_AnIn_1                     ;INT      ;3   ;CANOPEN   ;               ;0   ;1   ;9     ;5300;55  ;[RO]Analog input 1 value
-1;P;PLC_AnIn_2                     ;INT      ;3   ;CANOPEN   ;               ;0   ;1   ;10    ;5300;55  ;[RO]Analog input 2 value
-1;P;PLC_AnIn_3                     ;INT      ;3   ;CANOPEN   ;               ;0   ;1   ;11    ;5300;55  ;[RO]Analog input 3 value
-1;P;PLC_AnIn_4                     ;INT      ;3   ;CANOPEN   ;               ;0   ;1   ;12    ;5300;55  ;[RO]Analog input 4 value
-1;P;PLC_EncoderCo_Lo               ;UINT     ;1   ;CANOPEN   ;               ;0   ;1   ;13    ;5300;55  ;[RO]Encoder reading (LOW)
-1;P;PLC_EncoderCo_Hi               ;UINT     ;1   ;CANOPEN   ;               ;0   ;1   ;14    ;5300;55  ;[RO]Encoder reading (HIGH)
-1;P;PLC_CaptureT1_Lo               ;UINT     ;0   ;CANOPEN   ;               ;0   ;1   ;15    ;5300;55  ;[RO]Time between 2 input edges (LOW)
-1;P;PLC_CaptureT1_Hi               ;UINT     ;0   ;CANOPEN   ;               ;0   ;1   ;16    ;5300;55  ;[RO]Time between 2 input edges (HIGH)
-1;P;PLC_CaptureT2_Lo               ;UINT     ;0   ;CANOPEN   ;               ;0   ;1   ;17    ;5300;55  ;[RO]Time between 2 input edges (LOW)
-1;P;PLC_CaptureT2_Hi               ;UINT     ;0   ;CANOPEN   ;               ;0   ;1   ;18    ;5300;55  ;[RO]Time between 2 input edges (HIGH)
-1;P;PLC_RPM                        ;UINT     ;1   ;CANOPEN   ;               ;0   ;1   ;19    ;5300;55  ;[RO]RPM input
-1;P;PLC_Tamb                       ;INT      ;1   ;CANOPEN   ;               ;0   ;1   ;20    ;5300;55  ;[RO]Cold junction compensation value
-1;P;PLC_EnableEnc                  ;UINT     ;0   ;CANOPEN   ;               ;0   ;1   ;21    ;5300;55  ;[RW]Encoder - counter enable
-1;P;PLC_ResetCount                 ;UINT     ;0   ;CANOPEN   ;               ;0   ;1   ;22    ;5300;55  ;[RW]Encoder reset
-1;P;PLC_AnInConf_1                 ;UINT     ;0   ;CANOPEN   ;               ;0   ;1   ;23    ;5300;55  ;[RW]Analog input 1 configuration
-1;P;PLC_AnInConf_2                 ;UINT     ;0   ;CANOPEN   ;               ;0   ;1   ;24    ;5300;55  ;[RW]Analog input 2 configuration
-1;P;PLC_AnInConf_3                 ;UINT     ;0   ;CANOPEN   ;               ;0   ;1   ;25    ;5300;55  ;[RW]Analog input 3 configuration
-1;P;PLC_AnInConf_4                 ;UINT     ;0   ;CANOPEN   ;               ;0   ;1   ;26    ;5300;55  ;[RW]Analog input 4 configuration
-1;P;PLC_AnOutConf_1                ;UINT     ;0   ;CANOPEN   ;               ;0   ;1   ;27    ;5300;55  ;[RW]Analog output 1 configuration
-1;P;PLC_AnOutConf_2                ;UINT     ;0   ;CANOPEN   ;               ;0   ;1   ;28    ;5300;55  ;[RW]Analog output 2 configuration
-1;P;PLC_AnOutConf_3                ;UINT     ;0   ;CANOPEN   ;               ;0   ;1   ;29    ;5300;55  ;[RW]Analog output 3 configuration
-1;P;PLC_AnOutConf_4                ;UINT     ;0   ;CANOPEN   ;               ;0   ;1   ;30    ;5300;55  ;[RW]Analog output 4 configuration
-1;P;PLC_AnOut_1                    ;INT      ;2   ;CANOPEN   ;               ;0   ;1   ;31    ;5300;55  ;[RW]Analog output 1 value
-1;P;PLC_AnOut_2                    ;INT      ;2   ;CANOPEN   ;               ;0   ;1   ;32    ;5300;55  ;[RW]Analog output 2 value
-1;P;PLC_AnOut_3                    ;INT      ;2   ;CANOPEN   ;               ;0   ;1   ;33    ;5300;55  ;[RW]Analog output 3 value
-1;P;PLC_AnOut_4                    ;INT      ;2   ;CANOPEN   ;               ;0   ;1   ;34    ;5300;55  ;[RW]Analog output 4 value
-1;P;PLC_FiltAnIn_1                 ;UINT     ;0   ;CANOPEN   ;               ;0   ;1   ;35    ;5300;55  ;[RW]Analog input 1 filter
-1;P;PLC_FiltAnIn_2                 ;UINT     ;0   ;CANOPEN   ;               ;0   ;1   ;36    ;5300;55  ;[RW]Analog input 2 filter
-1;P;PLC_FiltAnIn_3                 ;UINT     ;0   ;CANOPEN   ;               ;0   ;1   ;37    ;5300;55  ;[RW]Analog input 3 filter
-1;P;PLC_FiltAnIn_4                 ;UINT     ;0   ;CANOPEN   ;               ;0   ;1   ;38    ;5300;55  ;[RW]Analog input 4 filter
+1;P;PLC_DigIn_1                    ;BYTE_BIT ;1   ;CANOPEN   ;               ;0   ;1   ;1     ;5300;9   ;[RO]Digital Input 1
+1;P;PLC_DigIn_2                    ;BYTE_BIT ;2   ;CANOPEN   ;               ;0   ;1   ;1     ;5300;9   ;[RO]Digital Input 2
+1;P;PLC_DigIn_3                    ;BYTE_BIT ;3   ;CANOPEN   ;               ;0   ;1   ;1     ;5300;9   ;[RO]Digital Input 3
+1;P;PLC_DigIn_4                    ;BYTE_BIT ;4   ;CANOPEN   ;               ;0   ;1   ;1     ;5300;9   ;[RO]Digital Input 4
+1;P;PLC_DigIn_5                    ;BYTE_BIT ;5   ;CANOPEN   ;               ;0   ;1   ;1     ;5300;9   ;[RO]Digital Input 5
+1;P;PLC_DigIn_6                    ;BYTE_BIT ;6   ;CANOPEN   ;               ;0   ;1   ;1     ;5300;9   ;[RO]Digital Input 6
+1;P;PLC_DigIn_7                    ;BYTE_BIT ;7   ;CANOPEN   ;               ;0   ;1   ;1     ;5300;9   ;[RO]Digital Input 7
+1;P;PLC_DigIn_8                    ;BYTE_BIT ;8   ;CANOPEN   ;               ;0   ;1   ;1     ;5300;9   ;[RO]Digital Input 8
+1;P;PLC_Reserved_1                 ;BYTE_BIT ;1   ;CANOPEN   ;               ;0   ;1   ;2     ;5300;9   ;[RO]Reserved
+0;P;PLC_DigOut_1x                  ;BYTE_BIT ;1   ;CANOPEN   ;               ;0   ;1   ;3     ;5309;12  ;[RW]N/A See 4565
+0;P;PLC_DigOut_2x                  ;BYTE_BIT ;2   ;CANOPEN   ;               ;0   ;1   ;3     ;5309;12  ;[RW]N/A See 4566
+0;P;PLC_DigOut_3x                  ;BYTE_BIT ;3   ;CANOPEN   ;               ;0   ;1   ;3     ;5309;12  ;[RW]N/A See 4567
+0;P;PLC_DigOut_4x                  ;BYTE_BIT ;4   ;CANOPEN   ;               ;0   ;1   ;3     ;5309;12  ;[RW]N/A See 4568
+0;P;PLC_DigOut_5x                  ;BYTE_BIT ;5   ;CANOPEN   ;               ;0   ;1   ;3     ;5309;12  ;[RW]N/A See 4569
+0;P;PLC_DigOut_6x                  ;BYTE_BIT ;6   ;CANOPEN   ;               ;0   ;1   ;3     ;5309;12  ;[RW]N/A See 4570
+0;P;PLC_DigOut_7x                  ;BYTE_BIT ;7   ;CANOPEN   ;               ;0   ;1   ;3     ;5309;12  ;[RW]N/A See 4571
+0;P;PLC_DigOut_8x                  ;BYTE_BIT ;8   ;CANOPEN   ;               ;0   ;1   ;3     ;5309;12  ;[RW]N/A See 4572
+0;P;PLC_DigOut_9x                  ;BYTE_BIT ;1   ;CANOPEN   ;               ;0   ;1   ;4     ;5309;12  ;[RW]N/A See 4573
+0;P;PLC_DigOut_10x                 ;BYTE_BIT ;2   ;CANOPEN   ;               ;0   ;1   ;4     ;5309;12  ;[RW]N/A See 4574
+0;P;PLC_DigOut_11x                 ;BYTE_BIT ;3   ;CANOPEN   ;               ;0   ;1   ;4     ;5309;12  ;[RW]N/A See 4575
+0;P;PLC_DigOut_12x                 ;BYTE_BIT ;4   ;CANOPEN   ;               ;0   ;1   ;4     ;5309;12  ;[RW]N/A See 4576
+1;P;PLC_Hwconf                     ;UINT     ;0   ;CANOPEN   ;               ;0   ;1   ;5     ;5321;34  ;[RO]Hardware configuration
+1;P;PLC_Revisione                  ;UINT     ;0   ;CANOPEN   ;               ;0   ;1   ;6     ;5321;34  ;[RO]Firmware version
+1;P;PLC_StatusReg                  ;UINT     ;0   ;CANOPEN   ;               ;0   ;1   ;7     ;5321;34  ;[RO]In - Out board status
+1;P;PLC_Heartbeat                  ;UINT     ;0   ;CANOPEN   ;               ;0   ;1   ;8     ;5321;34  ;[RO]In - Out board function check
+1;P;PLC_AnIn_1                     ;INT      ;3   ;CANOPEN   ;               ;0   ;1   ;9     ;5321;34  ;[RO]Analog input 1 value
+1;P;PLC_AnIn_2                     ;INT      ;3   ;CANOPEN   ;               ;0   ;1   ;10    ;5321;34  ;[RO]Analog input 2 value
+1;P;PLC_AnIn_3                     ;INT      ;3   ;CANOPEN   ;               ;0   ;1   ;11    ;5321;34  ;[RO]Analog input 3 value
+1;P;PLC_AnIn_4                     ;INT      ;3   ;CANOPEN   ;               ;0   ;1   ;12    ;5321;34  ;[RO]Analog input 4 value
+1;P;PLC_EncoderCo_Lo               ;UINT     ;1   ;CANOPEN   ;               ;0   ;1   ;13    ;5321;34  ;[RO]Encoder reading (LOW)
+1;P;PLC_EncoderCo_Hi               ;UINT     ;1   ;CANOPEN   ;               ;0   ;1   ;14    ;5321;34  ;[RO]Encoder reading (HIGH)
+1;P;PLC_CaptureT1_Lo               ;UINT     ;0   ;CANOPEN   ;               ;0   ;1   ;15    ;5321;34  ;[RO]Time between 2 input edges (LOW)
+1;P;PLC_CaptureT1_Hi               ;UINT     ;0   ;CANOPEN   ;               ;0   ;1   ;16    ;5321;34  ;[RO]Time between 2 input edges (HIGH)
+1;P;PLC_CaptureT2_Lo               ;UINT     ;0   ;CANOPEN   ;               ;0   ;1   ;17    ;5321;34  ;[RO]Time between 2 input edges (LOW)
+1;P;PLC_CaptureT2_Hi               ;UINT     ;0   ;CANOPEN   ;               ;0   ;1   ;18    ;5321;34  ;[RO]Time between 2 input edges (HIGH)
+1;P;PLC_RPM                        ;UINT     ;1   ;CANOPEN   ;               ;0   ;1   ;19    ;5321;34  ;[RO]RPM input
+1;P;PLC_Tamb                       ;INT      ;1   ;CANOPEN   ;               ;0   ;1   ;20    ;5321;34  ;[RO]Cold junction compensation value
+1;P;PLC_EnableEnc                  ;UINT     ;0   ;CANOPEN   ;               ;0   ;1   ;21    ;5321;34  ;[RW]Encoder - counter enable
+1;P;PLC_ResetCount                 ;UINT     ;0   ;CANOPEN   ;               ;0   ;1   ;22    ;5321;34  ;[RW]Encoder reset
+1;P;PLC_AnInConf_1                 ;UINT     ;0   ;CANOPEN   ;               ;0   ;1   ;23    ;5321;34  ;[RW]Analog input 1 configuration
+1;P;PLC_AnInConf_2                 ;UINT     ;0   ;CANOPEN   ;               ;0   ;1   ;24    ;5321;34  ;[RW]Analog input 2 configuration
+1;P;PLC_AnInConf_3                 ;UINT     ;0   ;CANOPEN   ;               ;0   ;1   ;25    ;5321;34  ;[RW]Analog input 3 configuration
+1;P;PLC_AnInConf_4                 ;UINT     ;0   ;CANOPEN   ;               ;0   ;1   ;26    ;5321;34  ;[RW]Analog input 4 configuration
+1;P;PLC_AnOutConf_1                ;UINT     ;0   ;CANOPEN   ;               ;0   ;1   ;27    ;5321;34  ;[RW]Analog output 1 configuration
+1;P;PLC_AnOutConf_2                ;UINT     ;0   ;CANOPEN   ;               ;0   ;1   ;28    ;5321;34  ;[RW]Analog output 2 configuration
+1;P;PLC_AnOutConf_3                ;UINT     ;0   ;CANOPEN   ;               ;0   ;1   ;29    ;5321;34  ;[RW]Analog output 3 configuration
+1;P;PLC_AnOutConf_4                ;UINT     ;0   ;CANOPEN   ;               ;0   ;1   ;30    ;5321;34  ;[RW]Analog output 4 configuration
+1;P;PLC_AnOut_1                    ;INT      ;2   ;CANOPEN   ;               ;0   ;1   ;31    ;5321;34  ;[RW]Analog output 1 value
+1;P;PLC_AnOut_2                    ;INT      ;2   ;CANOPEN   ;               ;0   ;1   ;32    ;5321;34  ;[RW]Analog output 2 value
+1;P;PLC_AnOut_3                    ;INT      ;2   ;CANOPEN   ;               ;0   ;1   ;33    ;5321;34  ;[RW]Analog output 3 value
+1;P;PLC_AnOut_4                    ;INT      ;2   ;CANOPEN   ;               ;0   ;1   ;34    ;5321;34  ;[RW]Analog output 4 value
+1;P;PLC_FiltAnIn_1                 ;UINT     ;0   ;CANOPEN   ;               ;0   ;1   ;35    ;5321;34  ;[RW]Analog input 1 filter
+1;P;PLC_FiltAnIn_2                 ;UINT     ;0   ;CANOPEN   ;               ;0   ;1   ;36    ;5321;34  ;[RW]Analog input 2 filter
+1;P;PLC_FiltAnIn_3                 ;UINT     ;0   ;CANOPEN   ;               ;0   ;1   ;37    ;5321;34  ;[RW]Analog input 3 filter
+1;P;PLC_FiltAnIn_4                 ;UINT     ;0   ;CANOPEN   ;               ;0   ;1   ;38    ;5321;34  ;[RW]Analog input 4 filter
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
 1;P;CH0_NETRUN                     ;BIT      ;0   ;CANOPEN   ;               ;0   ;0   ;0     ;5357;1   ;[RO]Active channel
@@ -5432,41 +5432,41 @@
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
-1;P;PLC_BEEP_VOLUME                ;BYTE     ;0   ;PLC       ;               ;    ;    ;      ;5435;14  ;[RW]Beep volume (when buzzerOn)
-1;P;PLC_TOUCH_VOLUME               ;BYTE     ;0   ;PLC       ;               ;    ;    ;      ;5435;14  ;[RW]Touch volume 
-1;P;PLC_ALARM_VOLUME               ;BYTE     ;0   ;PLC       ;               ;    ;    ;      ;5435;14  ;[RW]Alarm volume (when alarm)
-1;P;PLC_BUZZER                     ;UDINT    ;0   ;PLC       ;               ;    ;    ;      ;5435;14  ;[RW]Enable dynamic buzzer sound (0x44332211 up=0x11(%) on=0x22(cs) off=0x33(cs) rep=0x44(times))
-1;P;PLC_FastIO_Ena                 ;UDINT    ;0   ;PLC       ;               ;    ;    ;      ;5435;14  ;[RW]
-1;P;PLC_FastIO_Dir                 ;UDINT    ;0   ;PLC       ;               ;    ;    ;      ;5435;14  ;[RW]
-1;P;PLC_FastIO_1                   ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;5435;14  ;[RW]
-1;P;PLC_FastIO_2                   ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;5435;14  ;[RW]
-1;P;PLC_FastIO_3                   ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;5435;14  ;[RW]
-1;P;PLC_FastIO_4                   ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;5435;14  ;[RW]
-1;P;PLC_FastIO_5                   ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;5435;14  ;[RW]
-1;P;PLC_FastIO_6                   ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;5435;14  ;[RW]
-1;P;PLC_FastIO_7                   ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;5435;14  ;[RW]
-1;P;PLC_FastIO_8                   ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;5435;14  ;[RW]
-0;P;PLC_FastIO_9                   ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;5449;24  ;[RW]
-0;P;PLC_FastIO_10                  ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;5449;24  ;[RW]
-0;P;PLC_FastIO_11                  ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;5449;24  ;[RW]
-0;P;PLC_FastIO_12                  ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;5449;24  ;[RW]
-0;P;PLC_FastIO_13                  ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;5449;24  ;[RW]
-0;P;PLC_FastIO_14                  ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;5449;24  ;[RW]
-0;P;PLC_FastIO_15                  ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;5449;24  ;[RW]
-0;P;PLC_FastIO_16                  ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;5449;24  ;[RW]
-0;P;PLC_FastIO_17                  ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;5449;24  ;[RW]
-0;P;PLC_FastIO_18                  ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;5449;24  ;[RW]
-0;P;PLC_FastIO_19                  ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;5449;24  ;[RW]
-0;P;PLC_FastIO_20                  ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;5449;24  ;[RW]
-0;P;PLC_FastIO_21                  ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;5449;24  ;[RW]
-0;P;PLC_FastIO_22                  ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;5449;24  ;[RW]
-0;P;PLC_FastIO_23                  ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;5449;24  ;[RW]
-0;P;PLC_FastIO_24                  ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;5449;24  ;[RW]
-0;P;PLC_FastIO_25                  ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;5449;24  ;[RW]
-0;P;PLC_FastIO_26                  ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;5449;24  ;[RW]
-0;P;PLC_FastIO_27                  ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;5449;24  ;[RW]
-0;P;PLC_FastIO_28                  ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;5449;24  ;[RW]
-0;P;PLC_FastIO_29                  ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;5449;24  ;[RW]
-0;P;PLC_FastIO_30                  ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;5449;24  ;[RW]
-0;P;PLC_FastIO_31                  ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;5449;24  ;[RW]
-0;P;PLC_FastIO_32                  ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;5449;24  ;[RW]
+1;P;PLC_BEEP_VOLUME                ;BYTE     ;0   ;PLC       ;               ;    ;    ;      ;5435;4   ;[RW]Beep volume (when buzzerOn)
+1;P;PLC_TOUCH_VOLUME               ;BYTE     ;0   ;PLC       ;               ;    ;    ;      ;5435;4   ;[RW]Touch volume 
+1;P;PLC_ALARM_VOLUME               ;BYTE     ;0   ;PLC       ;               ;    ;    ;      ;5435;4   ;[RW]Alarm volume (when alarm)
+1;P;PLC_BUZZER                     ;UDINT    ;0   ;PLC       ;               ;    ;    ;      ;5435;4   ;[RW]Enable dynamic buzzer sound (0x44332211 up=0x11(%) on=0x22(cs) off=0x33(cs) rep=0x44(times))
+1;P;PLC_FastIO_Ena                 ;UDINT    ;0   ;PLC       ;               ;    ;    ;      ;5439;34  ;[RW]
+1;P;PLC_FastIO_Dir                 ;UDINT    ;0   ;PLC       ;               ;    ;    ;      ;5439;34  ;[RW]
+1;P;PLC_FastIO_1                   ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;5439;34  ;[RW]
+1;P;PLC_FastIO_2                   ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;5439;34  ;[RW]
+1;P;PLC_FastIO_3                   ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;5439;34  ;[RW]
+1;P;PLC_FastIO_4                   ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;5439;34  ;[RW]
+1;P;PLC_FastIO_5                   ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;5439;34  ;[RW]
+1;P;PLC_FastIO_6                   ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;5439;34  ;[RW]
+1;P;PLC_FastIO_7                   ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;5439;34  ;[RW]
+1;P;PLC_FastIO_8                   ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;5439;34  ;[RW]
+0;P;PLC_FastIO_9                   ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;5439;34  ;[RW]
+0;P;PLC_FastIO_10                  ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;5439;34  ;[RW]
+0;P;PLC_FastIO_11                  ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;5439;34  ;[RW]
+0;P;PLC_FastIO_12                  ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;5439;34  ;[RW]
+0;P;PLC_FastIO_13                  ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;5439;34  ;[RW]
+0;P;PLC_FastIO_14                  ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;5439;34  ;[RW]
+0;P;PLC_FastIO_15                  ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;5439;34  ;[RW]
+0;P;PLC_FastIO_16                  ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;5439;34  ;[RW]
+0;P;PLC_FastIO_17                  ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;5439;34  ;[RW]
+0;P;PLC_FastIO_18                  ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;5439;34  ;[RW]
+0;P;PLC_FastIO_19                  ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;5439;34  ;[RW]
+0;P;PLC_FastIO_20                  ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;5439;34  ;[RW]
+0;P;PLC_FastIO_21                  ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;5439;34  ;[RW]
+0;P;PLC_FastIO_22                  ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;5439;34  ;[RW]
+0;P;PLC_FastIO_23                  ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;5439;34  ;[RW]
+0;P;PLC_FastIO_24                  ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;5439;34  ;[RW]
+0;P;PLC_FastIO_25                  ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;5439;34  ;[RW]
+0;P;PLC_FastIO_26                  ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;5439;34  ;[RW]
+0;P;PLC_FastIO_27                  ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;5439;34  ;[RW]
+0;P;PLC_FastIO_28                  ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;5439;34  ;[RW]
+0;P;PLC_FastIO_29                  ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;5439;34  ;[RW]
+0;P;PLC_FastIO_30                  ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;5439;34  ;[RW]
+0;P;PLC_FastIO_31                  ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;5439;34  ;[RW]
+0;P;PLC_FastIO_32                  ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;5439;34  ;[RW]
