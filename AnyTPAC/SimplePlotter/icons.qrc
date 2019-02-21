@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/icons">
+        <file>icons/ic_keyboard_36pt.png</file>
+    </qresource>
+</RCC>

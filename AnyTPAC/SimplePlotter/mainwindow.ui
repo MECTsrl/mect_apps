@@ -1,0 +1,482 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>667</width>
+    <height>440</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget {
+	background-color: rgb(41, 69, 112);
+	color: rgb(199, 213, 234);
+	font: 10pt &quot;Arial&quot;;
+}
+QWidget:disabled {
+	color: rgb(125, 158, 207);
+}
+QWidget:focus {
+	color: yellow;
+}
+/* QGroupBox */
+QGroupBox {
+	border: 1px solid rgb(125, 158, 207);	
+	border-radius: 4px;
+    margin-top: 15px; /* leave space at the top for the title */
+}
+QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top left; 	/* position at the top left */
+	color:  rgb(125, 158, 207);	
+    padding: 0 4px;
+}
+/* QLineEdit, QPlainTextEdit */
+QLineEdit, QPlainTextEdit {
+	border: 1px solid rgb(125, 158, 207);	
+	border-radius: 4px;
+	background-color: rgb(48, 81, 130);
+	color:  rgb(199, 213, 234);
+}
+QLineEdit:focus, QPlainTextEdit:focus  {
+	border: 1px solid yellow;	
+	background-color: rgb(62, 104, 168);
+	color: yellow;
+	selection-background-color: rgb(87, 130, 193);
+	selection-color: red;
+}  
+QLineEdit:read-only, QLineEdit:disabled, QPlainTextEdit:read-only, QPlainTextEdit:disabled
+{
+	border: 1px solid rgb(87, 130, 193);	
+	color: Red;
+}
+/* QPushButton */
+QPushButton { 
+	border: 2px solid rgb(125, 158, 207);
+	border-radius: 12px;
+	color:  rgb(199, 213, 234);
+	background-color: 	rgb(48, 81, 130);
+	image-position: top center;
+	font: 10pt &quot;Arial&quot;;	
+	text-align: bottom center;
+}
+QPushButton:selected, QPushButton:hover { 
+	border: 2px solid DarkOrange;
+	color: DarkOrange;
+}
+QPushButton:pressed { 
+	border: 2px solid red;
+	color: red;
+}
+QPushButton:disabled { 
+	border: 2px solid SteelBlue;
+	color: SteelBlue;
+}
+
+/* QCheckBox */
+QCheckBox::indicator {
+    width: 20px;
+    height: 20px;
+}
+
+/* QRadioButton */
+QRadioButton::indicator {
+    width: 20px;
+    height: 20px;
+}
+
+/* QSpinBox */
+QSpinBox {
+    border-width: 1;
+	min-height: 24;
+}
+/* QComboBox */
+QComboBox {
+    border-width: 1;
+	background-color: rgb(48, 81, 130);
+	min-height: 24;
+} 
+/* QProgressBar */
+QProgressBar {
+    border: 2px solid 	rgb(62, 104, 168);
+    border-radius: 5px;
+}
+QProgressBar::chunk {
+    background-color: rgb(125, 158, 207);
+	margin: 1px;
+}
+/* QTabWidget e Tab Bar */
+QTabWidget::pane  {
+	border-top: 1px solid rgb(87, 130, 193);
+	border: 1px solid rgb(87, 130, 193);
+}
+QTabWidget::tab-bar {
+	left: 10px; 
+}
+QTabBar::tab {
+  background: 	rgb(62, 104, 168);
+  color: white;
+  padding: 10px;
+  }
+ QTabBar::tab:selected {
+  background: rgb(199, 213, 234);
+  color: rgb(41, 69, 112);
+ }
+ QTabBar::tab:!selected {
+     margin-top: 4px; /* make non-selected tabs look smaller */
+}
+/* QHeaderView */
+QHeaderView::section {
+  background: 	rgb(62, 104, 168);
+  color: rgb(125, 158, 207);
+    padding-left: 4px;
+    border: 1px solid ;
+}
+
+QHeaderView::section:checked
+{
+    background-color: rgb(125, 158, 207);
+	color: rgb(62, 104, 168);
+}</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_5">
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <widget class="QCustomPlot" name="customPlot" native="true">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>200</width>
+          <height>120</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_3">
+        <item>
+         <widget class="QFrame" name="frame">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>100</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>290</width>
+            <height>100</height>
+           </size>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Plain</enum>
+          </property>
+          <layout class="QFormLayout" name="formLayout">
+           <item row="0" column="0">
+            <widget class="QLabel" name="ipLabel">
+             <property name="text">
+              <string>IP address</string>
+             </property>
+             <property name="buddy">
+              <cstring>ipLineEdit</cstring>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <layout class="QHBoxLayout" name="horizontalLayout">
+             <item>
+              <widget class="QLineEdit" name="ipLineEdit"/>
+             </item>
+             <item>
+              <widget class="QPushButton" name="alphapadButton">
+               <property name="maximumSize">
+                <size>
+                 <width>20</width>
+                 <height>16777215</height>
+                </size>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="icon">
+                <iconset resource="icons.qrc">
+                 <normaloff>:/icons/icons/ic_keyboard_36pt.png</normaloff>:/icons/icons/ic_keyboard_36pt.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>20</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item row="1" column="0">
+            <widget class="QLabel" name="fromLabel">
+             <property name="text">
+              <string>from</string>
+             </property>
+             <property name="buddy">
+              <cstring>fromDateTimeEdit</cstring>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QDateTimeEdit" name="fromDateTimeEdit">
+             <property name="calendarPopup">
+              <bool>false</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="0">
+            <widget class="QLabel" name="toLabel">
+             <property name="text">
+              <string>to</string>
+             </property>
+             <property name="buddy">
+              <cstring>toDateTimeEdit</cstring>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="1">
+            <widget class="QDateTimeEdit" name="toDateTimeEdit"/>
+           </item>
+           <item row="3" column="0">
+            <widget class="QLabel" name="deltaLabel">
+             <property name="text">
+              <string>interval [s]</string>
+             </property>
+             <property name="buddy">
+              <cstring>deltaLineEdit</cstring>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="1">
+            <layout class="QHBoxLayout" name="horizontalLayout_2">
+             <item>
+              <widget class="QLineEdit" name="deltaLineEdit"/>
+             </item>
+             <item>
+              <widget class="QPushButton" name="numpadButton">
+               <property name="maximumSize">
+                <size>
+                 <width>20</width>
+                 <height>16777215</height>
+                </size>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="icon">
+                <iconset resource="icons.qrc">
+                 <normaloff>:/icons/icons/ic_keyboard_36pt.png</normaloff>:/icons/icons/ic_keyboard_36pt.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>20</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QFrame" name="frame_2">
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>100</height>
+           </size>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Plain</enum>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_3">
+           <property name="topMargin">
+            <number>4</number>
+           </property>
+           <property name="bottomMargin">
+            <number>4</number>
+           </property>
+           <item>
+            <widget class="QRadioButton" name="radioDay">
+             <property name="text">
+              <string>Current Day</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QRadioButton" name="radioWeek">
+             <property name="text">
+              <string>Current Week</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QRadioButton" name="radioMonth">
+             <property name="text">
+              <string>Current Month</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QRadioButton" name="radioYear">
+             <property name="text">
+              <string>Current Year</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_4">
+        <item>
+         <widget class="QPushButton" name="zoomInButton">
+          <property name="text">
+           <string>Zoom IN</string>
+          </property>
+          <property name="checkable">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="resetZoomButton">
+          <property name="text">
+           <string>Reset Zoom</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QListWidget" name="varListWidget">
+        <property name="minimumSize">
+         <size>
+          <width>120</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>200</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Plain</enum>
+        </property>
+        <property name="sortingEnabled">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="getVarPushButton">
+        <property name="text">
+         <string>Get Variables</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="getValuesPushButton">
+        <property name="text">
+         <string>Plot Values</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+   <zorder></zorder>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>QCustomPlot</class>
+   <extends>QWidget</extends>
+   <header>qcustomplot.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <tabstops>
+  <tabstop>varListWidget</tabstop>
+  <tabstop>ipLineEdit</tabstop>
+  <tabstop>fromDateTimeEdit</tabstop>
+  <tabstop>toDateTimeEdit</tabstop>
+  <tabstop>deltaLineEdit</tabstop>
+  <tabstop>radioDay</tabstop>
+  <tabstop>radioWeek</tabstop>
+  <tabstop>radioMonth</tabstop>
+  <tabstop>radioYear</tabstop>
+  <tabstop>getVarPushButton</tabstop>
+  <tabstop>getValuesPushButton</tabstop>
+ </tabstops>
+ <resources>
+  <include location="icons.qrc"/>
+ </resources>
+ <connections/>
+</ui>

@@ -1,0 +1,10 @@
+INPUT(
+./main.o
+./mainwindow.o
+./qcustomplot.o
+./mectcomm.o
+./moc_mainwindow.o
+./moc_qcustomplot.o
+./moc_mectcomm.o
+./qrc_icons.o
+);
