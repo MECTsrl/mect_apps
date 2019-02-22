@@ -13,8 +13,11 @@
 #include <QMessageBox>
 #include <QWSServer>
 #include <QProgressBar>
+#include <QDir>
+#include <QFile>
 
 #include "mectcomm.h"
+#include "qcustomplot.h"
 
 namespace Ui {
 class MainWindow;
@@ -36,6 +39,7 @@ private slots:
     void qCustomPlotSetUp();
     void plotData(QList <varPoint> valuesList , QString variableName);
     void progressBar(int progress);
+    void fillTrendList();
 
     void on_getValuesPushButton_clicked();
 
@@ -56,18 +60,19 @@ private slots:
 
     void on_zoomInButton_toggled(bool checked);
 
-
+    void legendClick(QCPLegend *legend, QCPAbstractLegendItem *item);
 
     void on_resetZoomButton_clicked();
+
+    void on_getTrendPushButton_clicked();
 
 private:
     Ui::MainWindow *ui;
     QString currentURL;
     QStringList variableList;
-
+    QStringList trendList;
+    QStringList trendVarList;
     QStringList colorList;
-
-    int plotPixNumber;
 
     mectComm *mectPtr;
 

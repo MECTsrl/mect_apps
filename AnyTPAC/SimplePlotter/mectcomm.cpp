@@ -1414,7 +1414,7 @@ bool mectComm::readLog(QString replyText)
     }
 
 
-    if(currentData=="}"){
+    if(currentData=="}"&& queryChar){
 
         emit variablesReady();
         return true;
@@ -1482,7 +1482,14 @@ bool mectComm::readLog(QString replyText)
 void mectComm::requestShowPage(QUrl newUrl)
 {
    qDebug()<<"Download Page constructor called";
-
+   int pos=newUrl.toString().count();
+   qDebug()<<newUrl;
+   if(newUrl.toString().at(pos-1)=='*'){
+       qDebug()<<"asdasda";
+       queryChar=true;
+   }else{
+       queryChar=false;
+   }
    manager = new QNetworkAccessManager(this);
    manager->get(QNetworkRequest(QUrl(newUrl)));
    QObject::connect(manager,SIGNAL(finished(QNetworkReply*)),this,SLOT(requestReceived(QNetworkReply*)));
@@ -1611,7 +1618,7 @@ bool mectComm::requestValueList(QString IP,QDateTime fromDate,QDateTime toDate, 
                 QUrl currentUrl(newUrl);
                 qDebug()<<currentUrl;
 
-               Query.variables.clear ();
+                Query.variables.clear ();
 
                 requestShowPage (currentUrl);
 
@@ -1671,7 +1678,6 @@ bool mectComm::getDataCount(int &dataCount){
  bool mectComm::getValueVector(QStringList varList,QList <QList<varPoint > > &dataStruct)
  {
      dataStruct.clear ();
-     QString value;
      QList<varPoint> tmpListStruct;
      int i=0;
      int j=0;
@@ -1684,7 +1690,6 @@ bool mectComm::getDataCount(int &dataCount){
          dataStruct.append (tmpListStruct);
 
      }
-     //QCoreApplication::processEvents();
      if( ! rows.isEmpty () )  {
 
          for(j=0;j<rows.count ();j++){
@@ -1709,22 +1714,18 @@ bool mectComm::getDataCount(int &dataCount){
                  }
              }
          }
-
          if(!dataStruct.isEmpty() ) {
              emit dataStructReady();
              return true;
-
          }
          else{
-
              qDebug()<<"getValueVector(QStringList,QList <QList<varPoint > >): QList <QList<varPoint > > is Empty ";
              emit errorSignal ("getValueVector(QStringList,QList <QList<varPoint > >):\n QList <QList<varPoint > >  is Empty ");
              return false;
          }
      }else{
-
          qDebug()<<"getValueVector(QStringList,QList <QList<varPoint > >): No points ";
-         emit errorSignal ("getValueVector(QStringList,QList <QList<varPoint > >):\n No points");
+         emit errorSignal ("getValueVector(QStringList,QList <QList<varPoint > >):\n No points, Try to change the date");
          return false;
      }
 

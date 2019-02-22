@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>667</width>
+    <width>724</width>
     <height>440</height>
    </rect>
   </property>
@@ -61,6 +61,10 @@ QLineEdit:read-only, QLineEdit:disabled, QPlainTextEdit:read-only, QPlainTextEdi
 {
 	border: 1px solid rgb(87, 130, 193);	
 	color: Red;
+}
+QListView::item:selected {
+   background-color: rgb(255, 0, 0);
+   color:  yellow;
 }
 /* QPushButton */
 QPushButton { 
@@ -437,6 +441,13 @@ QHeaderView::section:checked
        <widget class="QPushButton" name="getVarPushButton">
         <property name="text">
          <string>Get Variables</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="getTrendPushButton">
+        <property name="text">
+         <string>Use Trends</string>
         </property>
        </widget>
       </item>

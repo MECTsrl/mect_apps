@@ -6,7 +6,8 @@
 #include "timepopup.h"
 #endif
 
-
+const QString trendsTPACDirectory ="/local/flash/data/customtrend";
+const QString trendsPCDirectory ="C:/sandbox/plotter/trunk/SimplePlotter/trends";
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -42,7 +43,7 @@ MainWindow::MainWindow(QWidget *parent) :
 
     mectPtr=new mectComm();
 
-    plotPixNumber= ui->frame->width ()+ui->frame_2->width ();
+
     ui->radioDay->setChecked (true);
     ui->deltaLineEdit->setText ("200");
 
@@ -61,6 +62,8 @@ MainWindow::MainWindow(QWidget *parent) :
     connect(mectPtr,SIGNAL(variablesReady()),this,SLOT(fillList()));
     connect(mectPtr,SIGNAL(dataReady()),this,SLOT(getValue()));
     connect(mectPtr,SIGNAL(errorSignal(QString)),this,SLOT(errorManager(QString)));
+    connect(ui->customPlot, SIGNAL(legendClick(QCPLegend*,QCPAbstractLegendItem*,QMouseEvent*)),
+             this, SLOT(legendClick(QCPLegend*,QCPAbstractLegendItem*)));
 
 
 }
@@ -68,7 +71,7 @@ MainWindow::MainWindow(QWidget *parent) :
 MainWindow::~MainWindow()
 {
     delete ui;
-    delete mectPtr;
+    //delete mectPtr;
 
 }
 
@@ -89,8 +92,62 @@ void MainWindow::on_getVarPushButton_clicked()
 
             }
         }
+    }else{
+         QMessageBox::critical (this," Error ","There is no IP ");
     }
+}
 
+void MainWindow::on_getTrendPushButton_clicked()
+{
+    if(!ui->ipLineEdit->text ().isEmpty ())  {
+
+        ui->varListWidget->clear ();
+        trendList.clear();
+
+#ifdef Q_WS_QWS
+        QDir trendsDirectory(trendsTPACDirectory);
+#else
+        QDir trendsDirectory(trendsPCDirectory);
+#endif
+        if(trendsDirectory.exists()){
+
+            trendList=trendsDirectory.entryList(QStringList() << "*.csv" << "*.CSV",QDir::Files);
+            fillTrendList();
+
+        }else{
+
+            QMessageBox::critical (this," Error ","Directory doesn't exist: "+ trendsDirectory.path());
+        }
+    }else{
+        QMessageBox::critical (this," Error ","There is no IP ");
+    }
+}
+
+void MainWindow::fillTrendList()
+{
+    ui->getVarPushButton->setEnabled (true);
+    ui->ipLineEdit->setEnabled (true);
+
+    if( trendList.count () ){
+
+        trendList.sort ();
+        trendList.removeDuplicates ();
+
+        ui->varListWidget->addItems (trendList);
+        ui->varListWidget->setSelectionMode(QAbstractItemView::SingleSelection);
+        for(int i = 0; i < ui->varListWidget->count(); ++i)  {
+            QListWidgetItem* item = 0;
+            item = ui->varListWidget->item(i);
+           //item->setFlags(item->flags() | Qt::ItemIsUserCheckable);
+            //item->setCheckState(Qt::Unchecked);
+        }
+
+    ui->getValuesPushButton->setEnabled (true);
+    ui->getValuesPushButton->setText("Plot Trend");
+    }else{
+
+        QMessageBox::critical (this," Trend List ","No Trends on target");
+    }
 }
 
 void MainWindow::fillList()
@@ -102,21 +159,25 @@ void MainWindow::fillList()
 
     mectPtr->getVariableList (varList);
 
+
     if( varList.count () ){
 
         varList.sort ();
         varList.removeDuplicates ();
 
         ui->varListWidget->addItems (varList);
+        ui->varListWidget->setSelectionMode(QAbstractItemView::NoSelection);
 
         for(int i = 0; i < ui->varListWidget->count(); ++i)  {
             QListWidgetItem* item = 0;
             item = ui->varListWidget->item(i);
+
             item->setFlags(item->flags() | Qt::ItemIsUserCheckable);
             item->setCheckState(Qt::Unchecked);
         }
 
     ui->getValuesPushButton->setEnabled (true);
+    ui->getValuesPushButton->setText("Plot Values");
     }else{
 
         QMessageBox::critical (this," Variable List ","No Logged variables on target");
@@ -127,35 +188,109 @@ void MainWindow::fillList()
 void MainWindow::on_getValuesPushButton_clicked()
 {
     ui->getValuesPushButton->setEnabled(false);
-    if(ui->varListWidget->count() > 0){
-        QList <QListWidgetItem*> items;
 
-        variableList.clear ();
+    if(ui->getValuesPushButton->text()=="Plot Values") {
+        if(ui->varListWidget->count() > 0){
+            QList <QListWidgetItem*> items;
 
-        for(int i=0;i<ui->varListWidget->count ();i++){
+            variableList.clear ();
 
-            items.append (ui->varListWidget->item (i));
-        }
+            for(int i=0;i<ui->varListWidget->count ();i++){
 
-        for(int i=0;i<items.count();i++){
+                items.append (ui->varListWidget->item (i));
+            }
 
-            if (items.at(i)->checkState() == Qt::Checked){
-                variableList.append (items.at (i)->text ());
+            for(int i=0;i<items.count();i++){
+
+                if (items.at(i)->checkState() == Qt::Checked){
+                    variableList.append (items.at (i)->text ());
+                }
+            }
+
+            progressBar(0);
+            if (! mectPtr->requestValueList (ui->ipLineEdit->text (),ui->fromDateTimeEdit->dateTime (),ui->toDateTimeEdit->dateTime ()
+                                             ,ui->deltaLineEdit->text (),variableList)) {
+                progressBar(100);
+                ui->getValuesPushButton->setEnabled(true);
             }
         }
-
-        progressBar(0);
-        if (! mectPtr->requestValueList (ui->ipLineEdit->text (),ui->fromDateTimeEdit->dateTime (),ui->toDateTimeEdit->dateTime ()
-                                   ,ui->deltaLineEdit->text (),variableList)) {
-            progressBar(100);
+        else {
             ui->getValuesPushButton->setEnabled(true);
         }
     }
-    else {
-        ui->getValuesPushButton->setEnabled(true);
+
+    else if(ui->getValuesPushButton->text()=="Plot Trend"){
+
+        if(ui->varListWidget->count() >0){
+            QList <QListWidgetItem*> items;
+            QString itemTrendText;
+
+            for(int i=0;i<ui->varListWidget->count ();i++){
+
+                items.append (ui->varListWidget->item (i));
+            }
+
+            for(int i=0;i<items.count();i++){
+
+                if (items.at(i)->isSelected()){
+                    itemTrendText=items.at (i)->text ();
+                    break;
+                }
+            }
+            if(!itemTrendText.isEmpty()){
+#ifdef Q_WS_QWS
+                QString filePath("/local/flash/data/customtrend/");
+#else
+                QString filePath("C:/sandbox/plotter/trunk/SimplePlotter/trends/");
+#endif
+
+                QFile file(filePath+itemTrendText);
+                if (!file.open(QIODevice::ReadOnly | QIODevice::Text)){
+                    QMessageBox::critical (this," Trends List ","Can't Open the file: "+itemTrendText);
+                    ui->getValuesPushButton->setEnabled(true);
+                    return;
+                }
+
+                QStringList trendData;
+                QString tmp;
+                variableList.clear();
+                QTextStream in(&file);
+                int trendIndex=0;
+                while (!in.atEnd()) {
+                    QString line = in.readLine();
+                    if(trendIndex!=0){
+                        trendData=line.split(";",QString::SkipEmptyParts);
+                        tmp=trendData.at(1);
+                        tmp.replace(" ","");
+                        trendData.replace(1,tmp);
+                       // tmp=trendData.at(2);
+                       // trendData.replace(2,"#"+tmp);
+                        variableList.append(tmp);
+                    }
+                    trendIndex++;
+             }
+            if(!variableList.isEmpty()){
+                progressBar(0);
+                if (! mectPtr->requestValueList (ui->ipLineEdit->text (),ui->fromDateTimeEdit->dateTime (),ui->toDateTimeEdit->dateTime ()
+                                                 ,ui->deltaLineEdit->text (),variableList)) {
+                    progressBar(100);
+                    ui->getValuesPushButton->setEnabled(true);
+                   }
+
+            }else{
+                QMessageBox::critical (this," Trends List ","File: "+itemTrendText +" is Empty");
+                ui->getValuesPushButton->setEnabled(true);
+            }
+            }else{
+                QMessageBox::critical (this," Trends List ","No trend selected ");
+                ui->getValuesPushButton->setEnabled(true);
+            }
+        }else {
+            QMessageBox::critical (this," Trends List ","There are no Trends ");
+            ui->getValuesPushButton->setEnabled(true);
+        }
     }
 }
-
 
 void MainWindow::getValue()
 {
@@ -171,8 +306,6 @@ void MainWindow::getValue()
     ui->customPlot->replot();
     ui->getValuesPushButton->setEnabled(true);
 }
-
-
 
 void MainWindow::qCustomPlotSetUp(){
 
@@ -209,7 +342,10 @@ void MainWindow::qCustomPlotSetUp(){
     ui->customPlot->xAxis->setTickLabelColor(Qt::white);
     ui->customPlot->yAxis->setTickLabelColor(Qt::white);
 
+    ui->customPlot->setInteraction(QCP::iSelectLegend);
     ui->customPlot->legend->setVisible(true);
+    ui->customPlot->legend->setSelectableParts(QCPLegend::spItems);
+    ui->customPlot->legend->setSelectedBorderPen(QPen(QColor(Qt::yellow)));
     #ifdef Q_WS_QWS
     ui->customPlot->legend->setVisible(false);
     #endif
@@ -251,8 +387,7 @@ void MainWindow::plotData(QList <varPoint> valuesList , QString variableName){
 
     QColor colorPen(colorList.at (qrand() % colorList.count ()));
 
-    mainGraphLog->setPen(QPen(colorPen));
-
+    mainGraphLog->setPen(QPen(colorPen,2));
 
     //data ticker
     QSharedPointer<QCPAxisTickerDateTime> dateTicker(new QCPAxisTickerDateTime);
@@ -273,8 +408,23 @@ void MainWindow::plotData(QList <varPoint> valuesList , QString variableName){
 
     mainGraphLog->rescaleValueAxis();
 
-
 }
+void MainWindow::legendClick(QCPLegend *legend, QCPAbstractLegendItem *item){
+  if (item)
+  {
+
+      item->setSelected(true);
+      for(int i=0;i<legend->selectedItems().count();i++){
+          if(legend->selectedItems().at(i)->selected()){
+              qDebug()<<"selected N°:"<<i;
+          }
+      }
+
+
+
+  }
+}
+
 
 
 void MainWindow::errorManager(QString errorCode){
@@ -286,7 +436,7 @@ void MainWindow::errorManager(QString errorCode){
 void MainWindow::on_radioDay_toggled(bool checked)
 {
 
-
+int plotPixNumber= ui->customPlot->geometry().width();
     if(checked){
         QDateTime startDay(QDate::currentDate ());
 
@@ -305,6 +455,7 @@ void MainWindow::on_radioDay_toggled(bool checked)
 
 void MainWindow::on_radioWeek_toggled(bool checked)
 {
+    int plotPixNumber= ui->customPlot->geometry().width();
     if(checked){
 
         QDate currentDate=QDate::currentDate ();
@@ -328,7 +479,7 @@ void MainWindow::on_radioWeek_toggled(bool checked)
 
 void MainWindow::on_radioMonth_toggled(bool checked)
 {
-
+int plotPixNumber= ui->customPlot->geometry().width();
     if(checked){
         QDate today=QDate::currentDate ();
         today=QDate(today.year (),today.month (),1);
@@ -348,6 +499,7 @@ void MainWindow::on_radioMonth_toggled(bool checked)
 
 void MainWindow::on_radioYear_toggled(bool checked)
 {
+    int plotPixNumber= ui->customPlot->geometry().width();
     if(checked){
         QDate today=QDate::currentDate ();
         today=QDate(today.year (),1,1);
@@ -418,8 +570,6 @@ void MainWindow::on_resetZoomButton_clicked()
     ui->customPlot->setSelectionRectMode(QCP::srmNone);
 }
 
-
-
 void MainWindow::on_alphapadButton_clicked()
 {
 #ifdef Q_WS_QWS
@@ -482,5 +632,3 @@ void MainWindow::on_fromDateTimeEdit_editingFinished()
 
 #endif
 }
-
-

@@ -300,6 +300,7 @@ private:
      bool dateControl(QDateTime date);
      mectLogRow tmpLowRow;
      query Query;
+     bool queryChar;
      int dataCount;//=0;
 
      ////////////////////////////////////////////////

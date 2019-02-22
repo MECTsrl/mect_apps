@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 2.7.84, 2019-02-21T17:21:52. -->
+<!-- Written by QtCreator 2.7.84, 2019-02-22T18:03:13. -->
 <qtcreator>
  <data>
   <variable>ProjectExplorer.Project.ActiveTarget</variable>
@@ -209,24 +209,18 @@
       <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
       <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">RemoteLinux.DirectUploadStep</value>
       <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedFiles">
-       <value type="QString">C:/mect_apps/AnyTPAC/SimplePlotter/hmi_only</value>
-       <value type="QString">C:/mect_apps/AnyTPAC/SimplePlotter/hmi_only</value>
+       <value type="QString">C:/sandbox/plotter/trunk/SimplePlotter/hmi_only</value>
        <value type="QString">C:/sandbox/plotter/trunk/SimplePlotter/hmi_only</value>
        <value type="QString">C:/sandbox/plotter/trunk/SimplePlotter/SimplePlotter</value>
        <value type="QString">C:/sandbox/plotter/trunk/SimplePlotter/hmi_only</value>
-       <value type="QString">C:/sandbox/plotter/SimplePlotter/hmi_only</value>
       </valuelist>
       <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedHosts">
-       <value type="QString">192.168.5.101</value>
-       <value type="QString">192.168.5.45</value>
+       <value type="QString">192.168.5.122</value>
        <value type="QString">192.168.5.101</value>
        <value type="QString">192.168.5.165</value>
        <value type="QString">192.168.5.165</value>
-       <value type="QString">192.168.5.101</value>
       </valuelist>
       <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedRemotePaths">
-       <value type="QString">/local/root</value>
-       <value type="QString">/local/root</value>
        <value type="QString">/local/root</value>
        <value type="QString">/local/root</value>
        <value type="QString">/local/root</value>
@@ -237,16 +231,12 @@
        <value type="QString">C:/Qt485/imx28/rootfs</value>
        <value type="QString">C:/Qt485/imx28/rootfs</value>
        <value type="QString">C:/Qt485/imx28/rootfs</value>
-       <value type="QString">C:/Qt485/imx28/rootfs</value>
-       <value type="QString">C:/Qt485/imx28/rootfs</value>
       </valuelist>
       <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedTimes">
-       <value type="QDateTime">2019-02-21T17:08:06</value>
-       <value type="QDateTime">2019-02-21T17:18:02</value>
+       <value type="QDateTime">2019-02-22T14:31:36</value>
        <value type="QDateTime">2019-02-21T15:21:20</value>
        <value type="QDateTime">2019-02-21T10:37:24</value>
-       <value type="QDateTime">2019-02-21T15:28:27</value>
-       <value type="QDateTime">2019-02-21T16:54:37</value>
+       <value type="QDateTime">2019-02-22T17:57:42</value>
       </valuelist>
       <value type="bool" key="RemoteLinux.GenericDirectUploadStep.Incremental">true</value>
      </valuemap>
@@ -317,9 +307,9 @@
  <data>
   <variable>ProjectExplorer.Project.Target.1</variable>
   <valuemap type="QVariantMap">
-   <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Desktop</value>
-   <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Desktop</value>
-   <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">{ab96e6b1-9f0a-4ab9-8470-d34c275f209e}</value>
+   <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Desktop2</value>
+   <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Desktop2</value>
+   <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">{7965fcc9-166c-4dbd-9b79-0e2f7d511d0a}</value>
    <value type="int" key="ProjectExplorer.Target.ActiveBuildConfiguration">1</value>
    <value type="int" key="ProjectExplorer.Target.ActiveDeployConfiguration">0</value>
    <value type="int" key="ProjectExplorer.Target.ActiveRunConfiguration">0</value>
@@ -373,7 +363,7 @@
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4BuildConfiguration</value>
     <value type="int" key="Qt4ProjectManager.Qt4BuildConfiguration.BuildConfiguration">2</value>
-    <value type="QString" key="Qt4ProjectManager.Qt4BuildConfiguration.BuildDirectory">C:/sandbox/plotter/SimplePlotter</value>
+    <value type="QString" key="Qt4ProjectManager.Qt4BuildConfiguration.BuildDirectory">C:/sandbox/plotter/trunk/SimplePlotter</value>
     <value type="bool" key="Qt4ProjectManager.Qt4BuildConfiguration.UseShadowBuild">false</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.BuildConfiguration.1">
@@ -426,7 +416,7 @@
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4BuildConfiguration</value>
     <value type="int" key="Qt4ProjectManager.Qt4BuildConfiguration.BuildConfiguration">0</value>
-    <value type="QString" key="Qt4ProjectManager.Qt4BuildConfiguration.BuildDirectory">C:/sandbox/plotter/SimplePlotter</value>
+    <value type="QString" key="Qt4ProjectManager.Qt4BuildConfiguration.BuildDirectory">C:/sandbox/plotter/trunk/SimplePlotter</value>
     <value type="bool" key="Qt4ProjectManager.Qt4BuildConfiguration.UseShadowBuild">false</value>
    </valuemap>
    <value type="int" key="ProjectExplorer.Target.BuildConfigurationCount">2</value>
