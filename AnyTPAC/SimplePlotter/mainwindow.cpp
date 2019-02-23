@@ -6,8 +6,11 @@
 #include "timepopup.h"
 #endif
 
-const QString trendsTPACDirectory ="/local/flash/data/customtrend";
-const QString trendsPCDirectory ="C:/sandbox/plotter/trunk/SimplePlotter/trends";
+#ifdef Q_WS_QWS
+const QString trendsPath ="/local/data/customtrend/";
+#else
+const QString trendsPath ="C:/sandbox/plotter/trunk/SimplePlotter/trends/";
+#endif
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -35,7 +38,7 @@ MainWindow::MainWindow(QWidget *parent) :
 
     ui->ipLineEdit->setValidator (ipValidator);
 
-    ui->ipLineEdit->setText ("192.168.5.165");
+    ui->ipLineEdit->setText ("192.168.5.45");
 
     ui->getValuesPushButton->setEnabled (false);
 
@@ -104,11 +107,9 @@ void MainWindow::on_getTrendPushButton_clicked()
         ui->varListWidget->clear ();
         trendList.clear();
 
-#ifdef Q_WS_QWS
-        QDir trendsDirectory(trendsTPACDirectory);
-#else
-        QDir trendsDirectory(trendsPCDirectory);
-#endif
+
+        QDir trendsDirectory(trendsPath);
+
         if(trendsDirectory.exists()){
 
             trendList=trendsDirectory.entryList(QStringList() << "*.csv" << "*.CSV",QDir::Files);
@@ -238,13 +239,8 @@ void MainWindow::on_getValuesPushButton_clicked()
                 }
             }
             if(!itemTrendText.isEmpty()){
-#ifdef Q_WS_QWS
-                QString filePath("/local/flash/data/customtrend/");
-#else
-                QString filePath("C:/sandbox/plotter/trunk/SimplePlotter/trends/");
-#endif
+                QFile file(trendsPath+itemTrendText);
 
-                QFile file(filePath+itemTrendText);
                 if (!file.open(QIODevice::ReadOnly | QIODevice::Text)){
                     QMessageBox::critical (this," Trends List ","Can't Open the file: "+itemTrendText);
                     ui->getValuesPushButton->setEnabled(true);
