@@ -11,7 +11,9 @@
 #include <QRegExpValidator>
 #include <QUrl>
 #include <QMessageBox>
+#if QT_VERSION < 0x050000
 #include <QWSServer>
+#endif
 #include <QProgressBar>
 #include <QDir>
 #include <QFile>

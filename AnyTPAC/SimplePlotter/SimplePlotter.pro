@@ -9,26 +9,29 @@ QT       += network
 
 QMAKE_CXXFLAGS += -std=c++0x
 
-greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
+greaterThan(QT_MAJOR_VERSION, 4): QT += widgets printsupport
 
+linux-arm-gnueabi-g++:ATCM_ARM_LIBRARY_LIBPATH = $$QT_ROOTFS/usr/lib
+linux-arm-gnueabi-g++:ATCM_ARM_LIBRARY_INCPATH = $$QT_ROOTFS/usr/include
+linux-arm-gnueabi-g++:LIBS += -lATCMinputdialog
+linux-arm-gnueabi-g++:TARGET = hmi_only
 
-unix:ATCM_ARM_LIBRARY_LIBPATH = $$QT_ROOTFS/usr/lib
-unix:ATCM_ARM_LIBRARY_INCPATH = $$QT_ROOTFS/usr/include
-unix:LIBS += -lATCMinputdialog
+!linux-arm-gnueabi-g++:TARGET = SimplePlotter
 
-
-TARGET = hmi_only
 TEMPLATE = app
-
 
 SOURCES += main.cpp\
         mainwindow.cpp \
-    qcustomplot.cpp \
-    mectcomm.cpp
+        qcustomplot.cpp \
+        mectcomm.cpp
 
 HEADERS  += mainwindow.h \
-    qcustomplot.h \
-    mectcomm.h
+        qcustomplot.h \
+        mectcomm.h
+
+#lessThan(QT_MAJOR_VERSION, 5): SOURCES += qcustomplot.cpp
+#lessThan(QT_MAJOR_VERSION, 5): HEADERS += qcustomplot.h
+#greaterThan(QT_MAJOR_VERSION, 4): LIBS += -lqcustomplot
 
 FORMS    += mainwindow.ui
 

@@ -262,6 +262,9 @@ QHeaderView::section:checked
            </item>
            <item row="1" column="1">
             <widget class="QDateTimeEdit" name="fromDateTimeEdit">
+             <property name="displayFormat">
+              <string>yyyy-MM-dd HH:mm:ss</string>
+             </property>
              <property name="calendarPopup">
               <bool>false</bool>
              </property>
@@ -278,7 +281,11 @@ QHeaderView::section:checked
             </widget>
            </item>
            <item row="2" column="1">
-            <widget class="QDateTimeEdit" name="toDateTimeEdit"/>
+            <widget class="QDateTimeEdit" name="toDateTimeEdit">
+             <property name="displayFormat">
+              <string>yyyy-MM-dd HH:mm:ss</string>
+             </property>
+            </widget>
            </item>
            <item row="3" column="0">
             <widget class="QLabel" name="deltaLabel">
@@ -461,7 +468,6 @@ QHeaderView::section:checked
      </layout>
     </item>
    </layout>
-   <zorder></zorder>
   </widget>
  </widget>
  <layoutdefault spacing="6" margin="11"/>

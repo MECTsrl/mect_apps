@@ -136,12 +136,12 @@ void MainWindow::fillTrendList()
 
         ui->varListWidget->addItems (trendList);
         ui->varListWidget->setSelectionMode(QAbstractItemView::SingleSelection);
-        for(int i = 0; i < ui->varListWidget->count(); ++i)  {
-            QListWidgetItem* item = 0;
-            item = ui->varListWidget->item(i);
-           //item->setFlags(item->flags() | Qt::ItemIsUserCheckable);
-            //item->setCheckState(Qt::Unchecked);
-        }
+//        for(int i = 0; i < ui->varListWidget->count(); ++i)  {
+//            QListWidgetItem* item = 0;
+//            item = ui->varListWidget->item(i);
+//            item->setFlags(item->flags() | Qt::ItemIsUserCheckable);
+//            item->setCheckState(Qt::Unchecked);
+//        }
 
     ui->getValuesPushButton->setEnabled (true);
     ui->getValuesPushButton->setText("Plot Trend");

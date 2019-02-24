@@ -1,6 +1,8 @@
 #include "mainwindow.h"
 #include <QApplication>
+#if QT_VERSION < 0x050000
 #include <QWSServer>
+#endif
 
 int main(int argc, char *argv[])
 { 

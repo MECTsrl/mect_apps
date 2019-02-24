@@ -1038,7 +1038,7 @@ bool mectComm::doRecv(struct XBlock &reply)
         tcpSocket->abort();
         return false;
     }
-   if (retval < HD_BLOCK) {
+   if (retval < (qint64)HD_BLOCK) {
         qDebug() << "doRecv() error retval=" << retval;
         tcpSocket->abort();
         return false;
