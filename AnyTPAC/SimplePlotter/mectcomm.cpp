@@ -1485,7 +1485,6 @@ void mectComm::requestShowPage(QUrl newUrl)
    int pos=newUrl.toString().count();
    qDebug()<<newUrl;
    if(newUrl.toString().at(pos-1)=='*'){
-       qDebug()<<"asdasda";
        queryChar=true;
    }else{
        queryChar=false;

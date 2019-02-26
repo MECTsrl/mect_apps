@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 2.7.84, 2019-02-22T18:03:13. -->
+<!-- Written by QtCreator 2.7.84, 2019-02-26T12:46:48. -->
 <qtcreator>
  <data>
   <variable>ProjectExplorer.Project.ActiveTarget</variable>
-  <value type="int">1</value>
+  <value type="int">0</value>
  </data>
  <data>
   <variable>ProjectExplorer.Project.EditorSettings</variable>
@@ -209,18 +209,24 @@
       <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
       <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">RemoteLinux.DirectUploadStep</value>
       <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedFiles">
+       <value type="QString">C:/mect_apps/AnyTPAC/SimplePlotter/hmi_only</value>
        <value type="QString">C:/sandbox/plotter/trunk/SimplePlotter/hmi_only</value>
+       <value type="QString">C:/mect_apps/AnyTPAC/SimplePlotter/hmi_only</value>
        <value type="QString">C:/sandbox/plotter/trunk/SimplePlotter/hmi_only</value>
        <value type="QString">C:/sandbox/plotter/trunk/SimplePlotter/SimplePlotter</value>
        <value type="QString">C:/sandbox/plotter/trunk/SimplePlotter/hmi_only</value>
       </valuelist>
       <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedHosts">
        <value type="QString">192.168.5.122</value>
+       <value type="QString">192.168.5.122</value>
+       <value type="QString">192.168.5.165</value>
        <value type="QString">192.168.5.101</value>
        <value type="QString">192.168.5.165</value>
        <value type="QString">192.168.5.165</value>
       </valuelist>
       <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedRemotePaths">
+       <value type="QString">/local/root</value>
+       <value type="QString">/local/root</value>
        <value type="QString">/local/root</value>
        <value type="QString">/local/root</value>
        <value type="QString">/local/root</value>
@@ -231,9 +237,13 @@
        <value type="QString">C:/Qt485/imx28/rootfs</value>
        <value type="QString">C:/Qt485/imx28/rootfs</value>
        <value type="QString">C:/Qt485/imx28/rootfs</value>
+       <value type="QString">C:/Qt485/imx28/rootfs</value>
+       <value type="QString">C:/Qt485/imx28/rootfs</value>
       </valuelist>
       <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedTimes">
+       <value type="QDateTime">2019-02-26T12:29:27</value>
        <value type="QDateTime">2019-02-22T14:31:36</value>
+       <value type="QDateTime">2019-02-26T12:46:16</value>
        <value type="QDateTime">2019-02-21T15:21:20</value>
        <value type="QDateTime">2019-02-21T10:37:24</value>
        <value type="QDateTime">2019-02-22T17:57:42</value>

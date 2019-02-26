@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>724</width>
+    <width>683</width>
     <height>440</height>
    </rect>
   </property>
@@ -23,7 +23,6 @@
    <string notr="true">QWidget {
 	background-color: rgb(41, 69, 112);
 	color: rgb(199, 213, 234);
-	font: 10pt &quot;Arial&quot;;
 }
 QWidget:disabled {
 	color: rgb(125, 158, 207);
@@ -72,8 +71,7 @@ QPushButton {
 	border-radius: 12px;
 	color:  rgb(199, 213, 234);
 	background-color: 	rgb(48, 81, 130);
-	image-position: top center;
-	font: 10pt &quot;Arial&quot;;	
+	image-position: top center;	
 	text-align: bottom center;
 }
 QPushButton:selected, QPushButton:hover { 
@@ -83,6 +81,10 @@ QPushButton:selected, QPushButton:hover {
 QPushButton:pressed { 
 	border: 2px solid red;
 	color: red;
+}
+QPushButton:checked { 
+	border: 2px solid red;
+	color: DarkOrange;
 }
 QPushButton:disabled { 
 	border: 2px solid SteelBlue;
@@ -127,20 +129,18 @@ QTabWidget::pane  {
 	border: 1px solid rgb(87, 130, 193);
 }
 QTabWidget::tab-bar {
-	left: 10px; 
+	left: 1px; 
 }
 QTabBar::tab {
   background: 	rgb(62, 104, 168);
   color: white;
-  padding: 10px;
+
   }
  QTabBar::tab:selected {
   background: rgb(199, 213, 234);
   color: rgb(41, 69, 112);
  }
- QTabBar::tab:!selected {
-     margin-top: 4px; /* make non-selected tabs look smaller */
-}
+ 
 /* QHeaderView */
 QHeaderView::section {
   background: 	rgb(62, 104, 168);
@@ -266,7 +266,7 @@ QHeaderView::section:checked
               <string>yyyy-MM-dd HH:mm:ss</string>
              </property>
              <property name="calendarPopup">
-              <bool>false</bool>
+              <bool>true</bool>
              </property>
             </widget>
            </item>
@@ -284,6 +284,9 @@ QHeaderView::section:checked
             <widget class="QDateTimeEdit" name="toDateTimeEdit">
              <property name="displayFormat">
               <string>yyyy-MM-dd HH:mm:ss</string>
+             </property>
+             <property name="calendarPopup">
+              <bool>true</bool>
              </property>
             </widget>
            </item>

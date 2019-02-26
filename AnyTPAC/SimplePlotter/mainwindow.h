@@ -17,9 +17,13 @@
 #include <QProgressBar>
 #include <QDir>
 #include <QFile>
+#include <QColorDialog>
+#include <QMenu>
+
 
 #include "mectcomm.h"
 #include "qcustomplot.h"
+#include "timepopup.h"
 
 namespace Ui {
 class MainWindow;
@@ -43,6 +47,10 @@ private slots:
     void progressBar(int progress);
     void fillTrendList();
 
+    void contextMenuRequest(QPoint pos);
+
+    void moveLegend();
+
     void on_getValuesPushButton_clicked();
 
 
@@ -58,15 +66,17 @@ private slots:
 
     void on_numpadButton_clicked();
 
-    void on_fromDateTimeEdit_editingFinished();
-
     void on_zoomInButton_toggled(bool checked);
 
-    void legendClick(QCPLegend *legend, QCPAbstractLegendItem *item);
+    void legendClick();
 
     void on_resetZoomButton_clicked();
 
     void on_getTrendPushButton_clicked();
+
+    void on_fromDateTimeEdit_dateChanged();
+
+    void on_toDateTimeEdit_dateChanged();
 
 private:
     Ui::MainWindow *ui;
@@ -76,7 +86,11 @@ private:
     QStringList trendVarList;
     QStringList colorList;
 
+    int colorNumber;
+
     mectComm *mectPtr;
+    TimePopup *timepopFrom;
+    TimePopup *timepopTo;
 
     QProgressBar *pb;
 

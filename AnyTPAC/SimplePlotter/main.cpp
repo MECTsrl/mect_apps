@@ -1,5 +1,6 @@
 #include "mainwindow.h"
 #include <QApplication>
+
 #if QT_VERSION < 0x050000
 #include <QWSServer>
 #endif
@@ -8,8 +9,6 @@ int main(int argc, char *argv[])
 { 
 
 #ifdef Q_WS_QWS
-    char vncString [64];
-    sprintf(vncString,"Multi: VNC:0:size=%dx%d Transformed:rot%d", 480, 272, 0);
 
     int myargc = 4;
     char *myargv[] =
@@ -17,10 +16,8 @@ int main(int argc, char *argv[])
         argv[0],
         strdup("-qws"),
         strdup("-display"),
-        vncString
+        strdup("VNC:LinuxFb")
     };
-
-
     QApplication a(myargc, myargv);
 #else
     QApplication a(argc, argv);

@@ -17,14 +17,18 @@ MainWindow::MainWindow(QWidget *parent) :
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-
+    ui->alphapadButton->setVisible(false);
+    ui->numpadButton->setVisible(false);
     // build on target
 #ifdef Q_WS_QWS
-  QMainWindow::showFullScreen();
-  QWSServer::setCursorVisible( false );
+    QMainWindow::showFullScreen();
+    QWSServer::setCursorVisible( false );
+    ui->alphapadButton->setVisible(true);
+    ui->numpadButton->setVisible(true);
 #endif
 
-
+    timepopFrom=new TimePopup(ui->fromDateTimeEdit);
+    timepopTo=new TimePopup(ui->toDateTimeEdit);
 
     QValidator *validatorDeltaLine = new QIntValidator(1, 10000, this);
     ui->deltaLineEdit->setValidator (validatorDeltaLine);
@@ -42,22 +46,17 @@ MainWindow::MainWindow(QWidget *parent) :
 
     ui->getValuesPushButton->setEnabled (false);
 
-    //on_radioDay_toggled(true);
-
     mectPtr=new mectComm();
 
-
     ui->radioDay->setChecked (true);
+
     ui->deltaLineEdit->setText ("200");
 
 
     pb=new QProgressBar(ui->customPlot);
+
     pb->setVisible (false);
 
-#ifdef Q_WS_QWS
-  ui->fromDateTimeEdit->setCalendarPopup (true);
-  ui->toDateTimeEdit->setCalendarPopup (true);
-#endif
 
 
     qCustomPlotSetUp();
@@ -65,17 +64,20 @@ MainWindow::MainWindow(QWidget *parent) :
     connect(mectPtr,SIGNAL(variablesReady()),this,SLOT(fillList()));
     connect(mectPtr,SIGNAL(dataReady()),this,SLOT(getValue()));
     connect(mectPtr,SIGNAL(errorSignal(QString)),this,SLOT(errorManager(QString)));
-    connect(ui->customPlot, SIGNAL(legendClick(QCPLegend*,QCPAbstractLegendItem*,QMouseEvent*)),
-             this, SLOT(legendClick(QCPLegend*,QCPAbstractLegendItem*)));
+    connect(ui->customPlot, SIGNAL(legendClick(QCPLegend*,QCPAbstractLegendItem*,QMouseEvent*))
+            ,this, SLOT(legendClick()));
 
 
+
+    // setup policy and connect slot for context menu popup:
+    ui->customPlot->setContextMenuPolicy(Qt::CustomContextMenu);
+    connect(ui->customPlot, SIGNAL(customContextMenuRequested(QPoint)), this, SLOT(contextMenuRequest(QPoint)));
 }
 
 MainWindow::~MainWindow()
 {
     delete ui;
     //delete mectPtr;
-
 }
 
 void MainWindow::on_getVarPushButton_clicked()
@@ -92,7 +94,6 @@ void MainWindow::on_getVarPushButton_clicked()
 
                 ui->getVarPushButton->setEnabled (false);
                 ui->ipLineEdit->setEnabled (false);
-
             }
         }
     }else{
@@ -105,8 +106,8 @@ void MainWindow::on_getTrendPushButton_clicked()
     if(!ui->ipLineEdit->text ().isEmpty ())  {
 
         ui->varListWidget->clear ();
-        trendList.clear();
 
+        trendList.clear();
 
         QDir trendsDirectory(trendsPath);
 
@@ -116,7 +117,6 @@ void MainWindow::on_getTrendPushButton_clicked()
             fillTrendList();
 
         }else{
-
             QMessageBox::critical (this," Error ","Directory doesn't exist: "+ trendsDirectory.path());
         }
     }else{
@@ -342,6 +342,7 @@ void MainWindow::qCustomPlotSetUp(){
     ui->customPlot->legend->setVisible(true);
     ui->customPlot->legend->setSelectableParts(QCPLegend::spItems);
     ui->customPlot->legend->setSelectedBorderPen(QPen(QColor(Qt::yellow)));
+
     #ifdef Q_WS_QWS
     ui->customPlot->legend->setVisible(false);
     #endif
@@ -360,6 +361,9 @@ void MainWindow::qCustomPlotSetUp(){
     colorList.append ("#0000FF");
     colorList.append ("#696969");
     colorList.append ("#FFD700");
+
+    colorNumber=0;
+    ui->customPlot->replot();
 }
 
 
@@ -379,9 +383,13 @@ void MainWindow::plotData(QList <varPoint> valuesList , QString variableName){
     mainGraphLog = ui->customPlot->addGraph(0,0);
     //plot MainData
     mainGraphLog->data()->set(dataPoint);
-     mainGraphLog->setName(variableName);
+    mainGraphLog->setName(variableName);
 
-    QColor colorPen(colorList.at (qrand() % colorList.count ()));
+    QColor colorPen(colorList.at (colorNumber));
+    colorNumber++;
+    if(colorNumber>colorList.count()-1){
+        colorNumber=0;
+    }
 
     mainGraphLog->setPen(QPen(colorPen,2));
 
@@ -392,47 +400,79 @@ void MainWindow::plotData(QList <varPoint> valuesList , QString variableName){
 
     dateTicker->setDateTimeFormat("yyyy-MM-dd\nHH:mm:ss");
 
-    ui->customPlot->xAxis->setTickLabelFont(QFont(QFont().family (),7.5));
+    ui->customPlot->xAxis->setTickLabelFont(QFont(QFont().family(),7.5));
 
     ui->customPlot->xAxis->setTicker(dateTicker);
 
-    ui->customPlot->xAxis->ticker ()->setTickCount (4);
+    ui->customPlot->xAxis->ticker()->setTickCount(4);
 
-    ui->customPlot->xAxis->ticker ()->setTickStepStrategy (QCPAxisTickerDateTime::tssMeetTickCount);
+    ui->customPlot->xAxis->ticker()->setTickStepStrategy (QCPAxisTickerDateTime::tssMeetTickCount);
 
     mainGraphLog->rescaleKeyAxis(true);
 
     mainGraphLog->rescaleValueAxis();
 
 }
-void MainWindow::legendClick(QCPLegend *legend, QCPAbstractLegendItem *item){
-  if (item)
+void MainWindow::legendClick(){
+
+    for (int i=0; i<ui->customPlot->graphCount(); ++i)
+    {
+        QCPGraph *graph = ui->customPlot->graph(i);
+        QCPPlottableLegendItem *item = ui->customPlot->legend->itemWithPlottable(graph);
+        if (item->selected() || graph->selected())
+        {
+            item->setSelected(true);
+
+            graph->setSelection(QCPDataSelection(graph->data()->dataRange()));
+
+            graph->setPen(QPen(QColorDialog::getColor(),2));
+        }
+    }
+}
+
+void MainWindow::contextMenuRequest(QPoint pos)
+{
+  QMenu *menu = new QMenu(this);
+  menu->setAttribute(Qt::WA_DeleteOnClose);
+
+  if (ui->customPlot->legend->selectTest(pos, false) >= 0) // context menu on legend requested
   {
-
-      item->setSelected(true);
-      for(int i=0;i<legend->selectedItems().count();i++){
-          if(legend->selectedItems().at(i)->selected()){
-              qDebug()<<"selected N°:"<<i;
-          }
-      }
-
-
-
+    menu->addAction("Move to top left", this, SLOT(moveLegend()))->setData((int)(Qt::AlignTop|Qt::AlignLeft));
+    menu->addAction("Move to top right", this, SLOT(moveLegend()))->setData((int)(Qt::AlignTop|Qt::AlignRight));
+    menu->addAction("Move to bottom right", this, SLOT(moveLegend()))->setData((int)(Qt::AlignBottom|Qt::AlignRight));
+    menu->addAction("Move to bottom left", this, SLOT(moveLegend()))->setData((int)(Qt::AlignBottom|Qt::AlignLeft));
   }
+
+  menu->popup(ui->customPlot->mapToGlobal(pos));
+}
+
+void MainWindow::moveLegend()
+{
+    if (QAction* contextAction = qobject_cast<QAction*>(sender()))
+    {
+        bool ok;
+        int dataInt = contextAction->data().toInt(&ok);
+        if (ok)
+        {
+            ui->customPlot->axisRect()->insetLayout()->setInsetAlignment(0, (Qt::Alignment)dataInt);
+            ui->customPlot->replot();
+        }
+    }
 }
 
 
 
 void MainWindow::errorManager(QString errorCode){
-
     QMessageBox::critical (this," Error ",errorCode);
-
+    progressBar(100);
+    ui->getVarPushButton->setEnabled(true);
 }
 
 void MainWindow::on_radioDay_toggled(bool checked)
 {
-
-int plotPixNumber= ui->customPlot->geometry().width();
+    disconnect(ui->fromDateTimeEdit,SIGNAL(dateChanged(QDate)),this,SLOT(on_fromDateTimeEdit_dateChanged()));
+    disconnect(ui->toDateTimeEdit,SIGNAL(dateChanged(QDate)),this,SLOT(on_toDateTimeEdit_dateChanged()));
+    int plotPixNumber= ui->customPlot->geometry().width();
     if(checked){
         QDateTime startDay(QDate::currentDate ());
 
@@ -443,14 +483,16 @@ int plotPixNumber= ui->customPlot->geometry().width();
         int delta=(ui->toDateTimeEdit->dateTime ().toTime_t () - ui->fromDateTimeEdit->dateTime ().toTime_t ())/plotPixNumber;
 
         ui->deltaLineEdit->setText (QString::number (delta));
-
     }
+    connect(ui->fromDateTimeEdit,SIGNAL(dateChanged(QDate)),this,SLOT(on_fromDateTimeEdit_dateChanged()));
+    connect(ui->toDateTimeEdit,SIGNAL(dateChanged(QDate)),this,SLOT(on_toDateTimeEdit_dateChanged()));
 }
-
 
 
 void MainWindow::on_radioWeek_toggled(bool checked)
 {
+    disconnect(ui->fromDateTimeEdit,SIGNAL(dateChanged(QDate)),this,SLOT(on_fromDateTimeEdit_dateChanged()));
+    disconnect(ui->toDateTimeEdit,SIGNAL(dateChanged(QDate)),this,SLOT(on_toDateTimeEdit_dateChanged()));
     int plotPixNumber= ui->customPlot->geometry().width();
     if(checked){
 
@@ -470,12 +512,15 @@ void MainWindow::on_radioWeek_toggled(bool checked)
         ui->deltaLineEdit->setText (QString::number (delta));
 
     }
-
+    connect(ui->fromDateTimeEdit,SIGNAL(dateChanged(QDate)),this,SLOT(on_fromDateTimeEdit_dateChanged()));
+    connect(ui->toDateTimeEdit,SIGNAL(dateChanged(QDate)),this,SLOT(on_toDateTimeEdit_dateChanged()));
 }
 
 void MainWindow::on_radioMonth_toggled(bool checked)
 {
-int plotPixNumber= ui->customPlot->geometry().width();
+    disconnect(ui->fromDateTimeEdit,SIGNAL(dateChanged(QDate)),this,SLOT(on_fromDateTimeEdit_dateChanged()));
+    disconnect(ui->toDateTimeEdit,SIGNAL(dateChanged(QDate)),this,SLOT(on_toDateTimeEdit_dateChanged()));
+    int plotPixNumber= ui->customPlot->geometry().width();
     if(checked){
         QDate today=QDate::currentDate ();
         today=QDate(today.year (),today.month (),1);
@@ -490,11 +535,14 @@ int plotPixNumber= ui->customPlot->geometry().width();
 
         ui->deltaLineEdit->setText (QString::number (delta));
     }
-
+    connect(ui->fromDateTimeEdit,SIGNAL(dateChanged(QDate)),this,SLOT(on_fromDateTimeEdit_dateChanged()));
+    connect(ui->toDateTimeEdit,SIGNAL(dateChanged(QDate)),this,SLOT(on_toDateTimeEdit_dateChanged()));
 }
 
 void MainWindow::on_radioYear_toggled(bool checked)
 {
+    disconnect(ui->fromDateTimeEdit,SIGNAL(dateChanged(QDate)),this,SLOT(on_fromDateTimeEdit_dateChanged()));
+    disconnect(ui->toDateTimeEdit,SIGNAL(dateChanged(QDate)),this,SLOT(on_toDateTimeEdit_dateChanged()));
     int plotPixNumber= ui->customPlot->geometry().width();
     if(checked){
         QDate today=QDate::currentDate ();
@@ -504,13 +552,15 @@ void MainWindow::on_radioYear_toggled(bool checked)
         QDateTime startYear(today,start);
 
         ui->fromDateTimeEdit->setDateTime (startYear);
+
         ui->toDateTimeEdit->setDateTime (QDateTime::currentDateTime ());
 
         int delta=(ui->toDateTimeEdit->dateTime ().toTime_t () - ui->fromDateTimeEdit->dateTime ().toTime_t ())/plotPixNumber;
 
         ui->deltaLineEdit->setText (QString::number (delta));
-
     }
+    connect(ui->fromDateTimeEdit,SIGNAL(dateChanged(QDate)),this,SLOT(on_fromDateTimeEdit_dateChanged()));
+    connect(ui->toDateTimeEdit,SIGNAL(dateChanged(QDate)),this,SLOT(on_toDateTimeEdit_dateChanged()));
 }
 
 void MainWindow::progressBar(int progress)
@@ -519,7 +569,6 @@ void MainWindow::progressBar(int progress)
        pb->setValue (0);
        pb->setRange (0,0);
        pb->setVisible (true);
-
     }
     else if(progress==100){
         pb->setValue (progress);
@@ -570,7 +619,7 @@ void MainWindow::on_alphapadButton_clicked()
 {
 #ifdef Q_WS_QWS
 
-  char value[100] = "set Ip";
+    char value[100] = "set Ip";
     alphanumpad * dk;
 
     dk = new alphanumpad(value, value);
@@ -608,23 +657,24 @@ void MainWindow::on_numpadButton_clicked()
 #endif
 }
 
-void MainWindow::on_fromDateTimeEdit_editingFinished()
+
+
+void MainWindow::on_fromDateTimeEdit_dateChanged()
 {
-#ifdef Q_WS_QWS
+    timepopFrom->setTime (ui->fromDateTimeEdit->time());
 
-   /* TimePopup *timepop=new TimePopup(this->ui->fromDateTimeEdit);
-    timepop->setTime (ui->fromDateTimeEdit->time());
+    if(timepopFrom->exec() == QDialog::Accepted)
+      {
+         ui->fromDateTimeEdit->setTime(timepopFrom->getTime());
+      }
+}
 
-   if(timepop->exec() == QDialog::Accepted)
-     {
-        ui->fromDateTimeEdit->setTime(timepop->getTime());
-     }
+void MainWindow::on_toDateTimeEdit_dateChanged()
+{
+    timepopTo->setTime (ui->toDateTimeEdit->time());
 
-   if(timepop!=NULL)
-     {
-       delete (timepop);
-     }*/
-
-
-#endif
+    if(timepopTo->exec() == QDialog::Accepted)
+      {
+         ui->toDateTimeEdit->setTime(timepopTo->getTime());
+      }
 }
