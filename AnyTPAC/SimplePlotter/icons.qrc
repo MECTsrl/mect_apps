@@ -1,5 +1,13 @@
 <RCC>
     <qresource prefix="/icons">
         <file>icons/ic_keyboard_36pt.png</file>
+        <file>icons/ic_access_time_black_24dp.png</file>
+    </qresource>
+    <qresource prefix="/libicons">
+        <file>img/Clear.png</file>
+        <file>img/Back.png</file>
+        <file>img/Delete.png</file>
+        <file>img/OK.png</file>
+        <file>img/Up.png</file>
     </qresource>
 </RCC>

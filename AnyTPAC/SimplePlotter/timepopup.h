@@ -7,6 +7,14 @@
 #include <QTabWidget>
 #include <QListWidgetItem>
 #include <QTimeEdit>
+#include <QVBoxLayout>
+#include <QHBoxLayout>
+#include <QDialogButtonBox>
+#include <QTimeEdit>
+#include <QApplication>
+#include <QHeaderView>
+#include <QDesktopWidget>
+
 
 class QVBoxLayout;
 class QHBoxLayout;

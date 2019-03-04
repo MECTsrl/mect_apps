@@ -3,8 +3,12 @@ INPUT(
 ./mainwindow.o
 ./qcustomplot.o
 ./mectcomm.o
+./timepopup.o
+./calendar.o
 ./moc_mainwindow.o
 ./moc_qcustomplot.o
 ./moc_mectcomm.o
+./moc_timepopup.o
+./moc_calendar.o
 ./qrc_icons.o
 );

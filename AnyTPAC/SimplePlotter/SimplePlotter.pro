@@ -17,6 +17,8 @@ linux-arm-gnueabi-g++:ATCM_ARM_LIBRARY_INCPATH = $$QT_ROOTFS/usr/include
 linux-arm-gnueabi-g++:ATCM_ARM_LIBRARY_INCPATH = $${ATCM_QWT_INCL}
 linux-arm-gnueabi-g++:LIBS += -lATCMinputdialog
 
+#linux-arm-gnueabi-g++:LIBS += -lATCMsystem
+
 linux-arm-gnueabi-g++:TARGET = hmi_only
 
 
@@ -42,12 +44,17 @@ SOURCES += main.cpp\
         mainwindow.cpp \
         qcustomplot.cpp \
         mectcomm.cpp \
-    timepopup.cpp
+	timepopup.cpp \
+	calendar.cpp
+
+
 
 HEADERS  += mainwindow.h \
-        qcustomplot.h \
-        mectcomm.h \
-    timepopup.h
+	    qcustomplot.h \
+	    mectcomm.h \
+	    timepopup.h \
+	    calendar.h
+
 
 #lessThan(QT_MAJOR_VERSION, 5): SOURCES += qcustomplot.cpp
 #lessThan(QT_MAJOR_VERSION, 5): HEADERS += qcustomplot.h
@@ -62,4 +69,5 @@ RESOURCES += \
     icons.qrc
 
 OTHER_FILES += \
-    icons/ic_keyboard_36pt.png
+    icons/ic_keyboard_36pt.png \
+    icons/ic_access_time_black_24dp.png

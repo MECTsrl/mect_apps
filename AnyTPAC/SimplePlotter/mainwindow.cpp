@@ -30,6 +30,9 @@ MainWindow::MainWindow(QWidget *parent) :
     timepopFrom=new TimePopup(ui->fromDateTimeEdit);
     timepopTo=new TimePopup(ui->toDateTimeEdit);
 
+    calendarFrom=new Calendar(ui->fromDateTimeEdit);
+    calendarTo=new Calendar(ui->toDateTimeEdit);
+
     QValidator *validatorDeltaLine = new QIntValidator(1, 10000, this);
     ui->deltaLineEdit->setValidator (validatorDeltaLine);
 
@@ -42,7 +45,7 @@ MainWindow::MainWindow(QWidget *parent) :
 
     ui->ipLineEdit->setValidator (ipValidator);
 
-    ui->ipLineEdit->setText ("192.168.5.45");
+    ui->ipLineEdit->setText ("192.168.5.165");
 
     ui->getValuesPushButton->setEnabled (false);
 
@@ -50,12 +53,21 @@ MainWindow::MainWindow(QWidget *parent) :
 
     ui->radioDay->setChecked (true);
 
-    ui->deltaLineEdit->setText ("200");
+
+    ui->deltaLineEdit->setText("200");
 
 
     pb=new QProgressBar(ui->customPlot);
 
+    pb->setVisible(false);
+
+
+    ui->deltaLineEdit->setText ("200");
+
+    pb=new QProgressBar(ui->customPlot);
+
     pb->setVisible (false);
+
 
 
 
@@ -66,8 +78,6 @@ MainWindow::MainWindow(QWidget *parent) :
     connect(mectPtr,SIGNAL(errorSignal(QString)),this,SLOT(errorManager(QString)));
     connect(ui->customPlot, SIGNAL(legendClick(QCPLegend*,QCPAbstractLegendItem*,QMouseEvent*))
             ,this, SLOT(legendClick()));
-
-
 
     // setup policy and connect slot for context menu popup:
     ui->customPlot->setContextMenuPolicy(Qt::CustomContextMenu);
@@ -136,15 +146,9 @@ void MainWindow::fillTrendList()
 
         ui->varListWidget->addItems (trendList);
         ui->varListWidget->setSelectionMode(QAbstractItemView::SingleSelection);
-//        for(int i = 0; i < ui->varListWidget->count(); ++i)  {
-//            QListWidgetItem* item = 0;
-//            item = ui->varListWidget->item(i);
-//            item->setFlags(item->flags() | Qt::ItemIsUserCheckable);
-//            item->setCheckState(Qt::Unchecked);
-//        }
 
-    ui->getValuesPushButton->setEnabled (true);
-    ui->getValuesPushButton->setText("Plot Trend");
+        ui->getValuesPushButton->setEnabled (true);
+        ui->getValuesPushButton->setText("Plot Trend");
     }else{
 
         QMessageBox::critical (this," Trend List ","No Trends on target");
@@ -272,7 +276,6 @@ void MainWindow::on_getValuesPushButton_clicked()
                     progressBar(100);
                     ui->getValuesPushButton->setEnabled(true);
                    }
-
             }else{
                 QMessageBox::critical (this," Trends List ","File: "+itemTrendText +" is Empty");
                 ui->getValuesPushButton->setEnabled(true);
@@ -461,7 +464,6 @@ void MainWindow::moveLegend()
 }
 
 
-
 void MainWindow::errorManager(QString errorCode){
     QMessageBox::critical (this," Error ",errorCode);
     progressBar(100);
@@ -470,8 +472,6 @@ void MainWindow::errorManager(QString errorCode){
 
 void MainWindow::on_radioDay_toggled(bool checked)
 {
-    disconnect(ui->fromDateTimeEdit,SIGNAL(dateChanged(QDate)),this,SLOT(on_fromDateTimeEdit_dateChanged()));
-    disconnect(ui->toDateTimeEdit,SIGNAL(dateChanged(QDate)),this,SLOT(on_toDateTimeEdit_dateChanged()));
     int plotPixNumber= ui->customPlot->geometry().width();
     if(checked){
         QDateTime startDay(QDate::currentDate ());
@@ -484,15 +484,13 @@ void MainWindow::on_radioDay_toggled(bool checked)
 
         ui->deltaLineEdit->setText (QString::number (delta));
     }
-    connect(ui->fromDateTimeEdit,SIGNAL(dateChanged(QDate)),this,SLOT(on_fromDateTimeEdit_dateChanged()));
-    connect(ui->toDateTimeEdit,SIGNAL(dateChanged(QDate)),this,SLOT(on_toDateTimeEdit_dateChanged()));
+
 }
 
 
 void MainWindow::on_radioWeek_toggled(bool checked)
 {
-    disconnect(ui->fromDateTimeEdit,SIGNAL(dateChanged(QDate)),this,SLOT(on_fromDateTimeEdit_dateChanged()));
-    disconnect(ui->toDateTimeEdit,SIGNAL(dateChanged(QDate)),this,SLOT(on_toDateTimeEdit_dateChanged()));
+
     int plotPixNumber= ui->customPlot->geometry().width();
     if(checked){
 
@@ -512,14 +510,11 @@ void MainWindow::on_radioWeek_toggled(bool checked)
         ui->deltaLineEdit->setText (QString::number (delta));
 
     }
-    connect(ui->fromDateTimeEdit,SIGNAL(dateChanged(QDate)),this,SLOT(on_fromDateTimeEdit_dateChanged()));
-    connect(ui->toDateTimeEdit,SIGNAL(dateChanged(QDate)),this,SLOT(on_toDateTimeEdit_dateChanged()));
+
 }
 
 void MainWindow::on_radioMonth_toggled(bool checked)
 {
-    disconnect(ui->fromDateTimeEdit,SIGNAL(dateChanged(QDate)),this,SLOT(on_fromDateTimeEdit_dateChanged()));
-    disconnect(ui->toDateTimeEdit,SIGNAL(dateChanged(QDate)),this,SLOT(on_toDateTimeEdit_dateChanged()));
     int plotPixNumber= ui->customPlot->geometry().width();
     if(checked){
         QDate today=QDate::currentDate ();
@@ -535,14 +530,11 @@ void MainWindow::on_radioMonth_toggled(bool checked)
 
         ui->deltaLineEdit->setText (QString::number (delta));
     }
-    connect(ui->fromDateTimeEdit,SIGNAL(dateChanged(QDate)),this,SLOT(on_fromDateTimeEdit_dateChanged()));
-    connect(ui->toDateTimeEdit,SIGNAL(dateChanged(QDate)),this,SLOT(on_toDateTimeEdit_dateChanged()));
+
 }
 
 void MainWindow::on_radioYear_toggled(bool checked)
 {
-    disconnect(ui->fromDateTimeEdit,SIGNAL(dateChanged(QDate)),this,SLOT(on_fromDateTimeEdit_dateChanged()));
-    disconnect(ui->toDateTimeEdit,SIGNAL(dateChanged(QDate)),this,SLOT(on_toDateTimeEdit_dateChanged()));
     int plotPixNumber= ui->customPlot->geometry().width();
     if(checked){
         QDate today=QDate::currentDate ();
@@ -559,8 +551,7 @@ void MainWindow::on_radioYear_toggled(bool checked)
 
         ui->deltaLineEdit->setText (QString::number (delta));
     }
-    connect(ui->fromDateTimeEdit,SIGNAL(dateChanged(QDate)),this,SLOT(on_fromDateTimeEdit_dateChanged()));
-    connect(ui->toDateTimeEdit,SIGNAL(dateChanged(QDate)),this,SLOT(on_toDateTimeEdit_dateChanged()));
+
 }
 
 void MainWindow::progressBar(int progress)
@@ -657,24 +648,32 @@ void MainWindow::on_numpadButton_clicked()
 #endif
 }
 
-
-
-void MainWindow::on_fromDateTimeEdit_dateChanged()
-{
-    timepopFrom->setTime (ui->fromDateTimeEdit->time());
-
-    if(timepopFrom->exec() == QDialog::Accepted)
+void MainWindow::on_fromDataButton_clicked(){
+    calendarFrom->setDate(ui->fromDateTimeEdit->date());
+    if(calendarFrom->exec() == QDialog::Accepted)
       {
-         ui->fromDateTimeEdit->setTime(timepopFrom->getTime());
+        ui->fromDateTimeEdit->setDate(calendarFrom->getDate());
+        timepopFrom->setTime (ui->fromDateTimeEdit->time());
+
+        if(timepopFrom->exec() == QDialog::Accepted)
+          {
+             ui->fromDateTimeEdit->setTime(timepopFrom->getTime());
+          }
       }
 }
 
-void MainWindow::on_toDateTimeEdit_dateChanged()
-{
-    timepopTo->setTime (ui->toDateTimeEdit->time());
+void MainWindow::on_toDataButton_clicked(){
+    calendarTo->setDate(ui->toDateTimeEdit->date());
+    if(calendarTo->exec() == QDialog::Accepted)
+    {
 
-    if(timepopTo->exec() == QDialog::Accepted)
-      {
-         ui->toDateTimeEdit->setTime(timepopTo->getTime());
-      }
+        ui->toDateTimeEdit->setDate(calendarTo->getDate());
+        timepopTo->setTime (ui->toDateTimeEdit->time());
+
+        if(timepopTo->exec() == QDialog::Accepted)
+        {
+            ui->toDateTimeEdit->setTime(timepopTo->getTime());
+        }
+    }
 }
+

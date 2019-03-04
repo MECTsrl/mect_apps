@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>683</width>
+    <width>703</width>
     <height>440</height>
    </rect>
   </property>
@@ -153,6 +153,12 @@ QHeaderView::section:checked
 {
     background-color: rgb(125, 158, 207);
 	color: rgb(62, 104, 168);
+}
+QTableWidget{
+	background-color: black;
+}
+QTableWidget::item:selected{
+	background-color: rgb(125, 158, 207);
 }</string>
   </property>
   <widget class="QWidget" name="centralWidget">
@@ -162,9 +168,9 @@ QHeaderView::section:checked
      <verstretch>0</verstretch>
     </sizepolicy>
    </property>
-   <layout class="QHBoxLayout" name="horizontalLayout_5">
+   <layout class="QHBoxLayout" name="horizontalLayout_11">
     <item>
-     <layout class="QVBoxLayout" name="verticalLayout_2">
+     <layout class="QVBoxLayout" name="verticalLayout_4">
       <item>
        <widget class="QCustomPlot" name="customPlot" native="true">
         <property name="sizePolicy">
@@ -179,166 +185,222 @@ QHeaderView::section:checked
           <height>120</height>
          </size>
         </property>
+        <property name="maximumSize">
+         <size>
+          <width>100000</width>
+          <height>100000</height>
+         </size>
+        </property>
        </widget>
       </item>
       <item>
-       <layout class="QHBoxLayout" name="horizontalLayout_3">
+       <layout class="QHBoxLayout" name="horizontalLayout_10">
         <item>
-         <widget class="QFrame" name="frame">
-          <property name="sizePolicy">
-           <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
-            <horstretch>0</horstretch>
-            <verstretch>0</verstretch>
-           </sizepolicy>
-          </property>
-          <property name="minimumSize">
-           <size>
-            <width>0</width>
-            <height>100</height>
-           </size>
-          </property>
-          <property name="maximumSize">
-           <size>
-            <width>290</width>
-            <height>100</height>
-           </size>
-          </property>
-          <property name="frameShape">
-           <enum>QFrame::StyledPanel</enum>
-          </property>
-          <property name="frameShadow">
-           <enum>QFrame::Plain</enum>
-          </property>
-          <layout class="QFormLayout" name="formLayout">
-           <item row="0" column="0">
-            <widget class="QLabel" name="ipLabel">
-             <property name="text">
-              <string>IP address</string>
-             </property>
-             <property name="buddy">
-              <cstring>ipLineEdit</cstring>
-             </property>
-            </widget>
-           </item>
-           <item row="0" column="1">
-            <layout class="QHBoxLayout" name="horizontalLayout">
-             <item>
-              <widget class="QLineEdit" name="ipLineEdit"/>
-             </item>
-             <item>
-              <widget class="QPushButton" name="alphapadButton">
-               <property name="maximumSize">
-                <size>
-                 <width>20</width>
-                 <height>16777215</height>
-                </size>
-               </property>
-               <property name="text">
-                <string/>
-               </property>
-               <property name="icon">
-                <iconset resource="icons.qrc">
-                 <normaloff>:/icons/icons/ic_keyboard_36pt.png</normaloff>:/icons/icons/ic_keyboard_36pt.png</iconset>
-               </property>
-               <property name="iconSize">
-                <size>
-                 <width>20</width>
-                 <height>20</height>
-                </size>
-               </property>
-              </widget>
-             </item>
-            </layout>
-           </item>
-           <item row="1" column="0">
-            <widget class="QLabel" name="fromLabel">
-             <property name="text">
-              <string>from</string>
-             </property>
-             <property name="buddy">
-              <cstring>fromDateTimeEdit</cstring>
-             </property>
-            </widget>
-           </item>
-           <item row="1" column="1">
-            <widget class="QDateTimeEdit" name="fromDateTimeEdit">
-             <property name="displayFormat">
-              <string>yyyy-MM-dd HH:mm:ss</string>
-             </property>
-             <property name="calendarPopup">
-              <bool>true</bool>
-             </property>
-            </widget>
-           </item>
-           <item row="2" column="0">
-            <widget class="QLabel" name="toLabel">
-             <property name="text">
-              <string>to</string>
-             </property>
-             <property name="buddy">
-              <cstring>toDateTimeEdit</cstring>
-             </property>
-            </widget>
-           </item>
-           <item row="2" column="1">
-            <widget class="QDateTimeEdit" name="toDateTimeEdit">
-             <property name="displayFormat">
-              <string>yyyy-MM-dd HH:mm:ss</string>
-             </property>
-             <property name="calendarPopup">
-              <bool>true</bool>
-             </property>
-            </widget>
-           </item>
-           <item row="3" column="0">
-            <widget class="QLabel" name="deltaLabel">
-             <property name="text">
-              <string>interval [s]</string>
-             </property>
-             <property name="buddy">
-              <cstring>deltaLineEdit</cstring>
-             </property>
-            </widget>
-           </item>
-           <item row="3" column="1">
-            <layout class="QHBoxLayout" name="horizontalLayout_2">
-             <item>
-              <widget class="QLineEdit" name="deltaLineEdit"/>
-             </item>
-             <item>
-              <widget class="QPushButton" name="numpadButton">
-               <property name="maximumSize">
-                <size>
-                 <width>20</width>
-                 <height>16777215</height>
-                </size>
-               </property>
-               <property name="text">
-                <string/>
-               </property>
-               <property name="icon">
-                <iconset resource="icons.qrc">
-                 <normaloff>:/icons/icons/ic_keyboard_36pt.png</normaloff>:/icons/icons/ic_keyboard_36pt.png</iconset>
-               </property>
-               <property name="iconSize">
-                <size>
-                 <width>20</width>
-                 <height>20</height>
-                </size>
-               </property>
-              </widget>
-             </item>
-            </layout>
-           </item>
-          </layout>
-         </widget>
+         <layout class="QVBoxLayout" name="verticalLayout_2">
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_6">
+            <item>
+             <widget class="QLabel" name="ipLabel">
+              <property name="text">
+               <string>IP address</string>
+              </property>
+              <property name="buddy">
+               <cstring>ipLineEdit</cstring>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout">
+              <item>
+               <widget class="QLineEdit" name="ipLineEdit"/>
+              </item>
+              <item>
+               <widget class="QPushButton" name="alphapadButton">
+                <property name="maximumSize">
+                 <size>
+                  <width>20</width>
+                  <height>16777215</height>
+                 </size>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="icon">
+                 <iconset resource="icons.qrc">
+                  <normaloff>:/icons/icons/ic_keyboard_36pt.png</normaloff>:/icons/icons/ic_keyboard_36pt.png</iconset>
+                </property>
+                <property name="iconSize">
+                 <size>
+                  <width>20</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_7">
+            <item>
+             <widget class="QLabel" name="fromLabel">
+              <property name="text">
+               <string>from</string>
+              </property>
+              <property name="buddy">
+               <cstring>fromDateTimeEdit</cstring>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_3">
+              <item>
+               <widget class="QDateTimeEdit" name="fromDateTimeEdit">
+                <property name="buttonSymbols">
+                 <enum>QAbstractSpinBox::NoButtons</enum>
+                </property>
+                <property name="displayFormat">
+                 <string>yyyy-MM-dd HH:mm:ss</string>
+                </property>
+                <property name="calendarPopup">
+                 <bool>false</bool>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="fromDataButton">
+                <property name="maximumSize">
+                 <size>
+                  <width>20</width>
+                  <height>16777215</height>
+                 </size>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="icon">
+                 <iconset resource="icons.qrc">
+                  <normaloff>:/icons/icons/ic_access_time_black_24dp.png</normaloff>:/icons/icons/ic_access_time_black_24dp.png</iconset>
+                </property>
+                <property name="iconSize">
+                 <size>
+                  <width>20</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_8">
+            <item>
+             <widget class="QLabel" name="toLabel">
+              <property name="text">
+               <string>to</string>
+              </property>
+              <property name="buddy">
+               <cstring>toDateTimeEdit</cstring>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_5">
+              <item>
+               <widget class="QDateTimeEdit" name="toDateTimeEdit">
+                <property name="buttonSymbols">
+                 <enum>QAbstractSpinBox::NoButtons</enum>
+                </property>
+                <property name="displayFormat">
+                 <string>yyyy-MM-dd HH:mm:ss</string>
+                </property>
+                <property name="calendarPopup">
+                 <bool>false</bool>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="toDataButton">
+                <property name="maximumSize">
+                 <size>
+                  <width>20</width>
+                  <height>16777215</height>
+                 </size>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="icon">
+                 <iconset resource="icons.qrc">
+                  <normaloff>:/icons/icons/ic_access_time_black_24dp.png</normaloff>:/icons/icons/ic_access_time_black_24dp.png</iconset>
+                </property>
+                <property name="iconSize">
+                 <size>
+                  <width>20</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_9">
+            <item>
+             <widget class="QLabel" name="deltaLabel">
+              <property name="text">
+               <string>interval [s]</string>
+              </property>
+              <property name="buddy">
+               <cstring>deltaLineEdit</cstring>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_2">
+              <item>
+               <widget class="QLineEdit" name="deltaLineEdit"/>
+              </item>
+              <item>
+               <widget class="QPushButton" name="numpadButton">
+                <property name="maximumSize">
+                 <size>
+                  <width>20</width>
+                  <height>16777215</height>
+                 </size>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="icon">
+                 <iconset resource="icons.qrc">
+                  <normaloff>:/icons/icons/ic_keyboard_36pt.png</normaloff>:/icons/icons/ic_keyboard_36pt.png</iconset>
+                </property>
+                <property name="iconSize">
+                 <size>
+                  <width>20</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </item>
+         </layout>
         </item>
         <item>
          <widget class="QFrame" name="frame_2">
           <property name="maximumSize">
            <size>
             <width>16777215</width>
-            <height>100</height>
+            <height>120</height>
            </size>
           </property>
           <property name="frameShape">
@@ -408,6 +470,12 @@ QHeaderView::section:checked
        <layout class="QHBoxLayout" name="horizontalLayout_4">
         <item>
          <widget class="QPushButton" name="zoomInButton">
+          <property name="maximumSize">
+           <size>
+            <width>100</width>
+            <height>16777215</height>
+           </size>
+          </property>
           <property name="text">
            <string>Zoom IN</string>
           </property>
@@ -418,6 +486,12 @@ QHeaderView::section:checked
         </item>
         <item>
          <widget class="QPushButton" name="resetZoomButton">
+          <property name="maximumSize">
+           <size>
+            <width>100</width>
+            <height>16777215</height>
+           </size>
+          </property>
           <property name="text">
            <string>Reset Zoom</string>
           </property>
@@ -449,6 +523,12 @@ QHeaderView::section:checked
       </item>
       <item>
        <widget class="QPushButton" name="getVarPushButton">
+        <property name="maximumSize">
+         <size>
+          <width>200</width>
+          <height>16777215</height>
+         </size>
+        </property>
         <property name="text">
          <string>Get Variables</string>
         </property>
@@ -456,6 +536,12 @@ QHeaderView::section:checked
       </item>
       <item>
        <widget class="QPushButton" name="getTrendPushButton">
+        <property name="maximumSize">
+         <size>
+          <width>200</width>
+          <height>16777215</height>
+         </size>
+        </property>
         <property name="text">
          <string>Use Trends</string>
         </property>
@@ -463,6 +549,12 @@ QHeaderView::section:checked
       </item>
       <item>
        <widget class="QPushButton" name="getValuesPushButton">
+        <property name="maximumSize">
+         <size>
+          <width>200</width>
+          <height>16777215</height>
+         </size>
+        </property>
         <property name="text">
          <string>Plot Values</string>
         </property>
@@ -471,6 +563,15 @@ QHeaderView::section:checked
      </layout>
     </item>
    </layout>
+   <zorder></zorder>
+   <zorder></zorder>
+   <zorder></zorder>
+   <zorder></zorder>
+   <zorder>fromDateTimeEdit</zorder>
+   <zorder>deltaLabel</zorder>
+   <zorder>ipLabel</zorder>
+   <zorder>fromLabel</zorder>
+   <zorder>toLabel</zorder>
   </widget>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
@@ -485,11 +586,8 @@ QHeaderView::section:checked
  <tabstops>
   <tabstop>varListWidget</tabstop>
   <tabstop>ipLineEdit</tabstop>
-  <tabstop>fromDateTimeEdit</tabstop>
-  <tabstop>toDateTimeEdit</tabstop>
   <tabstop>deltaLineEdit</tabstop>
   <tabstop>radioDay</tabstop>
-  <tabstop>radioWeek</tabstop>
   <tabstop>radioMonth</tabstop>
   <tabstop>radioYear</tabstop>
   <tabstop>getVarPushButton</tabstop>

@@ -19,11 +19,11 @@
 #include <QFile>
 #include <QColorDialog>
 #include <QMenu>
-
-
 #include "mectcomm.h"
 #include "qcustomplot.h"
 #include "timepopup.h"
+#include "calendar.h"
+
 
 namespace Ui {
 class MainWindow;
@@ -74,9 +74,9 @@ private slots:
 
     void on_getTrendPushButton_clicked();
 
-    void on_fromDateTimeEdit_dateChanged();
+    void on_fromDataButton_clicked();
 
-    void on_toDateTimeEdit_dateChanged();
+    void on_toDataButton_clicked();
 
 private:
     Ui::MainWindow *ui;
@@ -91,6 +91,9 @@ private:
     mectComm *mectPtr;
     TimePopup *timepopFrom;
     TimePopup *timepopTo;
+
+    Calendar *calendarFrom;
+    Calendar *calendarTo;
 
     QProgressBar *pb;
 
