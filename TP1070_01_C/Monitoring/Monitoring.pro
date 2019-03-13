@@ -34,6 +34,8 @@ OTHER_FILES += \
     customtrend/trend_termostati.csv \
     customtrend/trend_potenze.csv \
     customtrend/trend_piani.csv \
-    customtrend/trend_caldaia.csv
+    customtrend/trend_caldaia.csv \
+    icons/LedOn_chiaro.png \
+    icons/LedOff_scuro.png
 
 
