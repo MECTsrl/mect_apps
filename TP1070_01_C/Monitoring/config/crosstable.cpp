@@ -56,34 +56,6 @@ int is_Caldaia_ON = 0;
 
 
 /*
- * Variable MPT91_Scala	[ 0x0008 ]
- */
-
-int MPT91_Scala = 0;
-
-
-/*
- * Variable MPT91_Temperatura	[ 0x0100 ]
- */
-
-int16_t MPT91_Temperatura = 0;
-
-
-/*
- * Variable MPT91_Set_point	[ 0x0101 ]
- */
-
-int16_t MPT91_Set_point = 0;
-
-
-/*
- * Variable MPT91_Isteresi_OnOff	[ 0x010B ]
- */
-
-int16_t MPT91_Isteresi_OnOff = 0;
-
-
-/*
  * Variable XX_Baudrate	[ Baudrate MPNC005 device ]
  */
 
@@ -2294,78 +2266,6 @@ int
 getStatus_is_Caldaia_ON(void)
 {
 	return getStatus(ID_is_Caldaia_ON);
-}
-
-int
-doWrite_MPT91_Scala(int value)
-{
-	return doWrite(ID_MPT91_Scala, &value);
-}
-
-int
-addWrite_MPT91_Scala(int value)
-{
-	return addWrite(ID_MPT91_Scala, &value);
-}
-
-int
-getStatus_MPT91_Scala(void)
-{
-	return getStatus(ID_MPT91_Scala);
-}
-
-int
-doWrite_MPT91_Temperatura(int16_t value)
-{
-	return doWrite(ID_MPT91_Temperatura, &value);
-}
-
-int
-addWrite_MPT91_Temperatura(int16_t value)
-{
-	return addWrite(ID_MPT91_Temperatura, &value);
-}
-
-int
-getStatus_MPT91_Temperatura(void)
-{
-	return getStatus(ID_MPT91_Temperatura);
-}
-
-int
-doWrite_MPT91_Set_point(int16_t value)
-{
-	return doWrite(ID_MPT91_Set_point, &value);
-}
-
-int
-addWrite_MPT91_Set_point(int16_t value)
-{
-	return addWrite(ID_MPT91_Set_point, &value);
-}
-
-int
-getStatus_MPT91_Set_point(void)
-{
-	return getStatus(ID_MPT91_Set_point);
-}
-
-int
-doWrite_MPT91_Isteresi_OnOff(int16_t value)
-{
-	return doWrite(ID_MPT91_Isteresi_OnOff, &value);
-}
-
-int
-addWrite_MPT91_Isteresi_OnOff(int16_t value)
-{
-	return addWrite(ID_MPT91_Isteresi_OnOff, &value);
-}
-
-int
-getStatus_MPT91_Isteresi_OnOff(void)
-{
-	return getStatus(ID_MPT91_Isteresi_OnOff);
 }
 
 int
@@ -7886,10 +7786,6 @@ update_all(void)
 	retval += readFromDb(ID_is_PPP0_ON, &is_PPP0_ON);
 	retval += readFromDb(ID_is_TUN0_ON, &is_TUN0_ON);
 	retval += readFromDb(ID_is_Caldaia_ON, &is_Caldaia_ON);
-	retval += readFromDb(ID_MPT91_Scala, &MPT91_Scala);
-	retval += readFromDb(ID_MPT91_Temperatura, &MPT91_Temperatura);
-	retval += readFromDb(ID_MPT91_Set_point, &MPT91_Set_point);
-	retval += readFromDb(ID_MPT91_Isteresi_OnOff, &MPT91_Isteresi_OnOff);
 	retval += readFromDb(ID_XX_Baudrate, &XX_Baudrate);
 	retval += readFromDb(ID_XX_NodeID, &XX_NodeID);
 	retval += readFromDb(ID_XX_HeartBeat, &XX_HeartBeat);

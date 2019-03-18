@@ -122,10 +122,10 @@ void page200::on_pushButton_clicked(bool checked)
     addWrite_NODE_07_STATUS(value); // PIANO TERRA
     addWrite_NODE_08_STATUS(value); // PIANO SOTTO
     addWrite_NODE_09_STATUS(value); // AUTO ELETTRICA
-    addWrite_NODE_10_STATUS(value); // DEUMIDIFICATORE
+    // addWrite_NODE_10_STATUS(value); // PUFFER 500 W
     addWrite_NODE_11_STATUS(value); // LAVANDERIA
     // addWrite_NODE_12_STATUS(value); // UPS
-    // addWrite_NODE_13_STATUS(value); // PUFFER
+    // addWrite_NODE_13_STATUS(value); // PUFFER 1500 W
     // addWrite_NODE_14_STATUS(value); // CALDAIA
 
     endWrite();

@@ -58,30 +58,6 @@ int doWrite_is_Caldaia_ON(int value);
 int addWrite_is_Caldaia_ON(int value);
 int getStatus_is_Caldaia_ON(void);
 
-#define ID_MPT91_Scala 196
-extern int MPT91_Scala;	/* 0x0008 */
-int doWrite_MPT91_Scala(int value);
-int addWrite_MPT91_Scala(int value);
-int getStatus_MPT91_Scala(void);
-
-#define ID_MPT91_Temperatura 197
-extern int16_t MPT91_Temperatura;	/* 0x0100 */
-int doWrite_MPT91_Temperatura(int16_t value);
-int addWrite_MPT91_Temperatura(int16_t value);
-int getStatus_MPT91_Temperatura(void);
-
-#define ID_MPT91_Set_point 198
-extern int16_t MPT91_Set_point;	/* 0x0101 */
-int doWrite_MPT91_Set_point(int16_t value);
-int addWrite_MPT91_Set_point(int16_t value);
-int getStatus_MPT91_Set_point(void);
-
-#define ID_MPT91_Isteresi_OnOff 199
-extern int16_t MPT91_Isteresi_OnOff;	/* 0x010B */
-int doWrite_MPT91_Isteresi_OnOff(int16_t value);
-int addWrite_MPT91_Isteresi_OnOff(int16_t value);
-int getStatus_MPT91_Isteresi_OnOff(void);
-
 #define ID_XX_Baudrate 201
 extern u_int16_t XX_Baudrate;	/* Baudrate MPNC005 device */
 int doWrite_XX_Baudrate(u_int16_t value);

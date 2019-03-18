@@ -6,12 +6,19 @@ PROGRAM VerySlow
 VAR
 END_VAR
 
-	if (XX_AnIn_A_4 < 50) then
-		(* transitorio all'accensione *)
-		MPT91_Set_point := 50; (* 5.0 °C *)
+	(* XX_AnIn_1 temperatura dell'acqua nel puffer *)
+	(* XX_AnIn_2 temperatura dell'acqua nei termosifoni *)
+	(* XX_DigOut_5 comando valvola a tre vie del puffer *)
+
+	if (XX_AnIn_1 < 50 or XX_AnIn_1 < 50) then
+		(* transitorio all'accensione, teniamo la valvola chiusa *)
+		XX_DigOut_5 := false;
+	elsif (XX_AnIn_1 > XX_AnIn_2) then
+		(* l'acqua nel puffer è più calda di quella nei termosifoni, quindi apriamo la valvola *)  
+		XX_DigOut_5 := true;
 	else
-		(* l'acqua nel puffer, per essere utile, deve essere più calda di quella nei termosifoni *)   
-		MPT91_Set_point := XX_AnIn_A_4 + 10; (* T_ritorno + 1.0 °C *)
+		(* puffer freddo, teniamo la valvola chiusa *)
+		XX_DigOut_5 := false;
 	end_if;
 
 END_PROGRAM

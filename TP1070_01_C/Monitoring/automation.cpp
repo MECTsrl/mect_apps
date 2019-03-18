@@ -6,22 +6,22 @@ void setup(void)
 {
     doWrite_PLC_timeWin(300);
 
-    doWrite_XX_AnInConf_1(0x07);// [°C] PT100R
-    doWrite_XX_AnInConf_2(0x07);// [°C] PT100R
+    doWrite_XX_AnInConf_1(0x7);// [°C] PT100R ACQUA PUFFER
+    doWrite_XX_AnInConf_2(0x7);// [°C] PT100R RITORNO TERMOSIFONE
 
-    doWrite_XX_AnInConf_A(0x7777);// [°C] PT100R
+    doWrite_XX_AnInConf_A(0x0777);// [°C] PT100R
     doWrite_XX_AnInConf_B(0x0777);// [°C] PT100R
     doWrite_XX_AnInConf_C(0x0777);// [°C] PT100R
 
     doWrite_XX_DigDir_1(1); // Dig I/O ASPEC PHEV
-    doWrite_XX_DigDir_2(1); // Dig I/O ASPEC DEUMIDIFICATORE
+    doWrite_XX_DigDir_2(1); // Dig I/O ASPEC PUFFER 500 W
     doWrite_XX_DigDir_3(1); // Dig I/O ASPEC LAVANDERIA
-    doWrite_XX_DigDir_4(1); // Dig I/O ASPEC PUFFER
+    doWrite_XX_DigDir_4(1); // Dig I/O ASPEC PUFFER 1500W
 
     doWrite_XX_DigDir_5(1); // Dig I/O PIANO SOTTO scala
-    doWrite_XX_DigDir_6(1); // Dig I/O PIANO TERRA corridoio
-    doWrite_XX_DigDir_7(1); // Dig I/O PIANO TERRA soggiorno
-    doWrite_XX_DigDir_8(1); // Dig I/O PIANO SOPRA sud
+    doWrite_XX_DigDir_6(1); // Dig I/O PIANO TERRA corridoio+soggiorno
+    doWrite_XX_DigDir_7(1); // Dig I/O PIANO TERRA sud
+    doWrite_XX_DigDir_8(1); // Dig I/O VALVOLA 3 VIE
 
     // doWrite_openvpn_restart_times(0);
 

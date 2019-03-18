@@ -3,10 +3,6 @@ VAR_GLOBAL
 	is_PPP0_ON AT %QX0.772.0:BOOL;	(* isUP_ppp0() *)
 	is_TUN0_ON AT %QX0.776.0:BOOL;	(* isUP_tun0() *)
 	is_Caldaia_ON AT %QX0.780.0:BOOL;
-	MPT91_Scala AT %QX0.784.0:BOOL;	(* 0x0008 *)
-	MPT91_Temperatura AT %IW0.788:INT;	(* 0x0100 *)
-	MPT91_Set_point AT %QW0.792:INT;	(* 0x0101 *)
-	MPT91_Isteresi_OnOff AT %QW0.796:INT;	(* 0x010B *)
 	XX_Baudrate AT %IW0.804:UINT;	(* Baudrate MPNC005 device *)
 	XX_NodeID AT %IW0.808:UINT;	(* Address MPNC005 device *)
 	XX_HeartBeat AT %ID0.812:UDINT;	(* Life time MPNC005 device *)

@@ -1,5 +1,5 @@
 L
-1;XX_AnIn_C_3     ;AA55FF;-12.0;36.0;Piano sotto (scala)
-1;XX_AnIn_C_1     ;0000FF;-12.0;36.0;Piano sotto (Lavanderia)
-1;XX_AnIn_C_2     ;7F7FFF;-12.0;36.0;Piano sotto (cantina)
-1;XX_DigIn_5      ;AA55FF;0;12;Termostato sotto
+1;XX_AnIn_C_3                    ;AA55FF;-12.0;36.0;Piano sotto (scala)
+1;XX_AnIn_C_1                    ;0000FF;-12.0;36.0;Piano sotto (Lavanderia)
+1;XX_AnIn_C_2                    ;7F7FFF;-12.0;36.0;Piano sotto (cantina)
+1;XX_DigIn_6                     ;AA55FF;0;12;Termostato sotto
