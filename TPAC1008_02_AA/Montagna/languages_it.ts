@@ -20,6 +20,7 @@
         <location filename="page100.ui" line="397"/>
         <location filename="page100.ui" line="923"/>
         <location filename="page100.ui" line="1042"/>
+        <location filename="page100.ui" line="2478"/>
         <source>ATCMled widget</source>
         <translation type="unfinished"></translation>
     </message>
@@ -38,8 +39,7 @@
         <location filename="page100.ui" line="1848"/>
         <location filename="page100.ui" line="1924"/>
         <location filename="page100.ui" line="2000"/>
-        <location filename="page100.ui" line="2076"/>
-        <location filename="page100.ui" line="2501"/>
+        <location filename="page100.ui" line="2425"/>
         <source>ATCMbutton widget</source>
         <translation type="unfinished"></translation>
     </message>
@@ -91,6 +91,7 @@
         <location filename="page100.ui" line="1323"/>
         <location filename="page100.ui" line="1400"/>
         <location filename="page100.ui" line="1519"/>
+        <location filename="page100.ui" line="2520"/>
         <source>ATCMlabel widget</source>
         <translation type="unfinished"></translation>
     </message>
@@ -105,6 +106,7 @@
         <location filename="page100.ui" line="869"/>
         <location filename="page100.ui" line="988"/>
         <location filename="page100.ui" line="1332"/>
+        <location filename="page100.ui" line="2526"/>
         <source> °C</source>
         <translation type="unfinished"></translation>
     </message>
@@ -420,7 +422,7 @@ Y2=ActivePower</source>
     </message>
     <message>
         <location filename="page100.ui" line="1814"/>
-        <location filename="page100.ui" line="2529"/>
+        <location filename="page100.ui" line="2453"/>
         <source>trend1.csv</source>
         <translation type="unfinished"></translation>
     </message>
@@ -473,33 +475,29 @@ Y2=ActivePower</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="2073"/>
-        <location filename="page100.ui" line="2085"/>
-        <source>PLC_DigOut_6</source>
+        <location filename="page100.ui" line="2475"/>
+        <location filename="page100.ui" line="2487"/>
+        <source>is_Convettore1_ON</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="2118"/>
-        <source>off 6</source>
+        <location filename="page100.ui" line="2517"/>
+        <location filename="page100.ui" line="2523"/>
+        <source>SogliaAntigelo</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="2121"/>
-        <source>ON 6</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page100.ui" line="2417"/>
+        <location filename="page100.ui" line="2341"/>
         <source>WiFi off</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="2445"/>
+        <location filename="page100.ui" line="2369"/>
         <source>Mobile off</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="2473"/>
+        <location filename="page100.ui" line="2397"/>
         <source>VPN off</source>
         <translation type="unfinished"></translation>
     </message>

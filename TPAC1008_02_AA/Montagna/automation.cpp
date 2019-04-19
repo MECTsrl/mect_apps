@@ -20,7 +20,7 @@ void setup(void)
     doWrite_is_WLAN0_ON(0);
     doWrite_is_PPP0_ON(0);
     doWrite_is_TUN0_ON(0);
-    doWrite_SogliaAntigelo(ANTIGELO);
+    //    doWrite_SogliaAntigelo(ANTIGELO);
     doWrite_is_Convettore1_ON(0);
 }
 

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 2.7.84, 2019-01-21T15:43:52. -->
+<!-- Written by QtCreator 2.7.84, 2019-04-19T17:44:35. -->
 <qtcreator>
  <data>
   <variable>ProjectExplorer.Project.ActiveTarget</variable>
@@ -208,11 +208,56 @@
       <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Upload files via SFTP</value>
       <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
       <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">RemoteLinux.DirectUploadStep</value>
-      <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedFiles"/>
-      <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedHosts"/>
-      <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedRemotePaths"/>
-      <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedSysroots"/>
-      <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedTimes"/>
+      <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedFiles">
+       <value type="QString">E:/mect_apps/TPAC1008_02_AA/Montagna/hmi</value>
+       <value type="QString">E:/mect_apps/TPAC1008_02_AA/Montagna/config/system.ini</value>
+       <value type="QString">E:/mect_apps/TPAC1008_02_AA/Montagna/config/trend2.csv</value>
+       <value type="QString">E:/mect_apps/TPAC1008_02_AA/Montagna/config/trend1.csv</value>
+       <value type="QString">E:/mect_apps/TPAC1008_02_AA/Montagna/config/Crosstable.csv</value>
+       <value type="QString">E:/mect_apps/TPAC1008_02_AA/Montagna/config/iomap0.cmg</value>
+       <value type="QString">E:/mect_apps/TPAC1008_02_AA/Montagna/config/network0.cmg</value>
+       <value type="QString">E:/mect_apps/TPAC1008_02_AA/Montagna/config/splash.png</value>
+      </valuelist>
+      <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedHosts">
+       <value type="QString">10.1.0.221</value>
+       <value type="QString">10.1.0.221</value>
+       <value type="QString">10.1.0.221</value>
+       <value type="QString">10.1.0.221</value>
+       <value type="QString">10.1.0.221</value>
+       <value type="QString">10.1.0.221</value>
+       <value type="QString">10.1.0.221</value>
+       <value type="QString">10.1.0.221</value>
+      </valuelist>
+      <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedRemotePaths">
+       <value type="QString">/local/root</value>
+       <value type="QString">/local/etc/sysconfig</value>
+       <value type="QString">/local/data/customtrend</value>
+       <value type="QString">/local/data/customtrend</value>
+       <value type="QString">/local/etc/sysconfig</value>
+       <value type="QString">/local/etc/sysconfig</value>
+       <value type="QString">/local/etc/sysconfig</value>
+       <value type="QString">/local/etc/sysconfig/img</value>
+      </valuelist>
+      <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedSysroots">
+       <value type="QString">C:/Qt485/imx28/rootfs</value>
+       <value type="QString">C:/Qt485/imx28/rootfs</value>
+       <value type="QString">C:/Qt485/imx28/rootfs</value>
+       <value type="QString">C:/Qt485/imx28/rootfs</value>
+       <value type="QString">C:/Qt485/imx28/rootfs</value>
+       <value type="QString">C:/Qt485/imx28/rootfs</value>
+       <value type="QString">C:/Qt485/imx28/rootfs</value>
+       <value type="QString">C:/Qt485/imx28/rootfs</value>
+      </valuelist>
+      <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedTimes">
+       <value type="QDateTime">2019-04-19T17:37:48</value>
+       <value type="QDateTime">2019-04-19T17:37:30</value>
+       <value type="QDateTime">2019-04-19T17:37:35</value>
+       <value type="QDateTime">2019-04-19T17:37:34</value>
+       <value type="QDateTime">2019-04-19T17:37:29</value>
+       <value type="QDateTime">2019-04-19T17:37:31</value>
+       <value type="QDateTime">2019-04-19T17:37:32</value>
+       <value type="QDateTime">2019-04-19T17:37:33</value>
+      </valuelist>
       <value type="bool" key="RemoteLinux.GenericDirectUploadStep.Incremental">true</value>
      </valuemap>
      <value type="int" key="ProjectExplorer.BuildStepList.StepsCount">3</value>
