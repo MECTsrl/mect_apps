@@ -111,22 +111,21 @@ void page200::on_pushButton_clicked(bool checked)
     beginWrite();
 
     // RTU0:
-    // addWrite_NODE_01_STATUS(value); // MPT91
+    // addWrite_NODE_01_STATUS(value); // MPNC005
 
     // RTU3:
-    // addWrite_NODE_02_STATUS(value); // MPNC005
-    // addWrite_NODE_03_STATUS(value); // SCAMBIO ENEL
-    // addWrite_NODE_04_STATUS(value); // FOTOVOLTAICO
-    addWrite_NODE_05_STATUS(value); // ESTERNI
-    addWrite_NODE_06_STATUS(value); // PIANO SOPRA
-    addWrite_NODE_07_STATUS(value); // PIANO TERRA
-    addWrite_NODE_08_STATUS(value); // PIANO SOTTO
-    addWrite_NODE_09_STATUS(value); // AUTO ELETTRICA
-    // addWrite_NODE_10_STATUS(value); // PUFFER 500 W
-    addWrite_NODE_11_STATUS(value); // LAVANDERIA
-    // addWrite_NODE_12_STATUS(value); // UPS
-    // addWrite_NODE_13_STATUS(value); // PUFFER 1500 W
-    // addWrite_NODE_14_STATUS(value); // CALDAIA
+    // addWrite_NODE_02_STATUS(value); // SCAMBIO ENEL
+    // addWrite_NODE_03_STATUS(value); // FOTOVOLTAICO
+    addWrite_NODE_04_STATUS(value); // ESTERNI
+    addWrite_NODE_05_STATUS(value); // PIANO SOPRA
+    addWrite_NODE_06_STATUS(value); // PIANO TERRA
+    addWrite_NODE_07_STATUS(value); // PIANO SOTTO
+    addWrite_NODE_08_STATUS(value); // AUTO ELETTRICA
+    // addWrite_NODE_09_STATUS(value); // PUFFER 500 W
+    addWrite_NODE_10_STATUS(value); // LAVANDERIA
+    // addWrite_NODE_11_STATUS(value); // UPS
+    // addWrite_NODE_12_STATUS(value); // PUFFER 1500 W
+    // addWrite_NODE_13_STATUS(value); // CALDAIA
 
     endWrite();
 }

@@ -1,5 +1,5 @@
 L
-1;SysActivePower_0;FF0000;-4000;4000;SCAMBIO ENEL
-1;SysActivePower_1;00AA00;-4000;4000;FOTOVOLTAICO
-1;SysActivePower_10;0000FF;-4000;4000;CALDAIA
-1;SysActivePower_6;FF00FF;-4000;4000;AUTO ELETTRICA
+1;SysActivePower_7               ;00AAFF;-4000;4000;PUFFER 0,5 kW
+1;SysActivePower_10              ;0000FF;-4000;4000;PUFFER 1,5kW
+1;SysActivePower_0               ;FF0000;-4000;4000;SCAMBIO ENEL
+1;SysActivePower_1               ;00AA00;-4000;4000;FOTOVOLTAICO

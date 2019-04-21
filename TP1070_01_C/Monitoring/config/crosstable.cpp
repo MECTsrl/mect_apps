@@ -665,6 +665,426 @@ float SysImpActiveEnergy_11 = 0;
 
 
 /*
+ * Variable TCP_is_Caldaia_ON
+ */
+
+int TCP_is_Caldaia_ON = 0;
+
+
+/*
+ * Variable TCP_AnIn_A_1	[ Analog input 1 value MPNC030 module A ]
+ */
+
+int16_t TCP_AnIn_A_1 = 0;
+
+
+/*
+ * Variable TCP_AnIn_A_2	[ Analog input 2 value MPNC030 module A ]
+ */
+
+int16_t TCP_AnIn_A_2 = 0;
+
+
+/*
+ * Variable TCP_AnIn_A_3	[ Analog input 3 value MPNC030 module A ]
+ */
+
+int16_t TCP_AnIn_A_3 = 0;
+
+
+/*
+ * Variable TCP_AnIn_A_4	[ Analog input 4 value MPNC030 module A ]
+ */
+
+int16_t TCP_AnIn_A_4 = 0;
+
+
+/*
+ * Variable TCP_AnIn_B_1	[ Analog input 1 value MPNC030 module B ]
+ */
+
+int16_t TCP_AnIn_B_1 = 0;
+
+
+/*
+ * Variable TCP_AnIn_B_2	[ Analog input 2 value MPNC030 module B ]
+ */
+
+int16_t TCP_AnIn_B_2 = 0;
+
+
+/*
+ * Variable TCP_AnIn_B_3	[ Analog input 3 value MPNC030 module B ]
+ */
+
+int16_t TCP_AnIn_B_3 = 0;
+
+
+/*
+ * Variable TCP_AnIn_B_4	[ Analog input 4 value MPNC030 module B ]
+ */
+
+int16_t TCP_AnIn_B_4 = 0;
+
+
+/*
+ * Variable TCP_AnIn_C_1	[ Analog input 1 value MPNC030 module C ]
+ */
+
+int16_t TCP_AnIn_C_1 = 0;
+
+
+/*
+ * Variable TCP_AnIn_C_2	[ Analog input 2 value MPNC030 module C ]
+ */
+
+int16_t TCP_AnIn_C_2 = 0;
+
+
+/*
+ * Variable TCP_AnIn_C_3	[ Analog input 3 value MPNC030 module C ]
+ */
+
+int16_t TCP_AnIn_C_3 = 0;
+
+
+/*
+ * Variable TCP_AnIn_C_4	[ Analog input 3 value MPNC030 module C ]
+ */
+
+int16_t TCP_AnIn_C_4 = 0;
+
+
+/*
+ * Variable TCP_AnIn_1	[ Analog input 1 value MPNC005 ]
+ */
+
+int16_t TCP_AnIn_1 = 0;
+
+
+/*
+ * Variable TCP_AnIn_2	[ Analog input 2 value MPNC005 ]
+ */
+
+int16_t TCP_AnIn_2 = 0;
+
+
+/*
+ * Variable TCP_DigIn_1	[ Digital input 1 value MPNC005 ]
+ */
+
+int TCP_DigIn_1 = 0;
+
+
+/*
+ * Variable TCP_DigIn_2	[ Digital input 2 value MPNC005 ]
+ */
+
+int TCP_DigIn_2 = 0;
+
+
+/*
+ * Variable TCP_DigIn_3	[ Digital input 3 value MPNC005 ]
+ */
+
+int TCP_DigIn_3 = 0;
+
+
+/*
+ * Variable TCP_DigIn_4	[ Digital input 4 value MPNC005 ]
+ */
+
+int TCP_DigIn_4 = 0;
+
+
+/*
+ * Variable TCP_DigIn_5	[ Digital input 5 value MPNC005 ]
+ */
+
+int TCP_DigIn_5 = 0;
+
+
+/*
+ * Variable TCP_DigIn_6	[ Digital input 6 value MPNC005 ]
+ */
+
+int TCP_DigIn_6 = 0;
+
+
+/*
+ * Variable TCP_DigIn_7	[ Digital input 7 value MPNC005 ]
+ */
+
+int TCP_DigIn_7 = 0;
+
+
+/*
+ * Variable TCP_DigIn_8	[ Digital input 8 value MPNC005 ]
+ */
+
+int TCP_DigIn_8 = 0;
+
+
+/*
+ * Variable TCP_DigOut_1	[ Digital output 1 value MPNC005 ]
+ */
+
+int TCP_DigOut_1 = 0;
+
+
+/*
+ * Variable TCP_DigOut_2	[ Digital output 2 value MPNC005 ]
+ */
+
+int TCP_DigOut_2 = 0;
+
+
+/*
+ * Variable TCP_DigOut_3	[ Digital output 3 value MPNC005 ]
+ */
+
+int TCP_DigOut_3 = 0;
+
+
+/*
+ * Variable TCP_DigOut_4	[ Digital output 4 value MPNC005 ]
+ */
+
+int TCP_DigOut_4 = 0;
+
+
+/*
+ * Variable TCP_DigOut_5	[ Digital output 5 value MPNC005 ]
+ */
+
+int TCP_DigOut_5 = 0;
+
+
+/*
+ * Variable TCP_DigOut_6	[ Digital output 6 value MPNC005 ]
+ */
+
+int TCP_DigOut_6 = 0;
+
+
+/*
+ * Variable TCP_DigOut_7	[ Digital output 7 value MPNC005 ]
+ */
+
+int TCP_DigOut_7 = 0;
+
+
+/*
+ * Variable TCP_DigOut_8	[ Digital output 8 value MPNC005 ]
+ */
+
+int TCP_DigOut_8 = 0;
+
+
+/*
+ * Variable TCP_SystemVoltage_0	[ 0x0A 0x100C Tensione in V (PRINCIPALE) ]
+ */
+
+float TCP_SystemVoltage_0 = 0;
+
+
+/*
+ * Variable TCP_SysPowerFactor_0	[ 0x0A 0x101E Fattore di Potenza 0 (PRINCIPALE) ]
+ */
+
+float TCP_SysPowerFactor_0 = 0;
+
+
+/*
+ * Variable TCP_SysActivePower_0	[ 0x0A 0x1026 Potenza Attiva 0 in W (PRINCIPALE) ]
+ */
+
+float TCP_SysActivePower_0 = 0;
+
+
+/*
+ * Variable TCP_SysImpActiveEnergy_0	[ 0x0A 0x1106 Energia Attiva Importata 0 in Wh (PRINCIPALE) ]
+ */
+
+float TCP_SysImpActiveEnergy_0 = 0;
+
+
+/*
+ * Variable TCP_SysExpActiveEnergy_0	[ 0x0A 0x110E Energia Attiva Esportata 0 in Wh (PRINCIPALE) ]
+ */
+
+float TCP_SysExpActiveEnergy_0 = 0;
+
+
+/*
+ * Variable TCP_SysActivePower_1	[ 0x0B 0x1026 Potenza Attiva 0 in W (FOTOVOLTAICO) ]
+ */
+
+float TCP_SysActivePower_1 = 0;
+
+
+/*
+ * Variable TCP_SysImpActiveEnergy_1	[ 0x0B 0x1106 Energia Attiva Importata 1 in Wh (FOTOVOLTAICO) ]
+ */
+
+float TCP_SysImpActiveEnergy_1 = 0;
+
+
+/*
+ * Variable TCP_SysExpActiveEnergy_1	[ 0x0B 0x110E Energia Attiva Esportata 0 in Wh (FOTOVOLTAICO) ]
+ */
+
+float TCP_SysExpActiveEnergy_1 = 0;
+
+
+/*
+ * Variable TCP_SysActivePower_2	[ 0x0C 0x1026 Potenza Attiva 0 in W (ESTERNI) ]
+ */
+
+float TCP_SysActivePower_2 = 0;
+
+
+/*
+ * Variable TCP_SysImpActiveEnergy_2	[ 0x0C 0x1106 Energia Attiva Importata 0 in Wh (ESTERNI) ]
+ */
+
+float TCP_SysImpActiveEnergy_2 = 0;
+
+
+/*
+ * Variable TCP_SysActivePower_3	[ 0x0D 0x1026 Potenza Attiva 0 in W (PIANO SOPRA) ]
+ */
+
+float TCP_SysActivePower_3 = 0;
+
+
+/*
+ * Variable TCP_SysImpActiveEnergy_3	[ 0x0D 0x1106 Energia Attiva Importata 0 in Wh (PIANO SOPRA) ]
+ */
+
+float TCP_SysImpActiveEnergy_3 = 0;
+
+
+/*
+ * Variable TCP_SysActivePower_4	[ 0x0E 0x1026 Potenza Attiva 0 in W (PIANO TERRA) ]
+ */
+
+float TCP_SysActivePower_4 = 0;
+
+
+/*
+ * Variable TCP_SysImpActiveEnergy_4	[ 0x0E 0x1106 Energia Attiva Importata 0 in Wh (PIANO TERRA) ]
+ */
+
+float TCP_SysImpActiveEnergy_4 = 0;
+
+
+/*
+ * Variable TCP_SysActivePower_5	[ 0x0F 0x1026 Potenza Attiva 0 in W (PIANO SOTTO) ]
+ */
+
+float TCP_SysActivePower_5 = 0;
+
+
+/*
+ * Variable TCP_SysImpActiveEnergy_5	[ 0x0F 0x1106 Energia Attiva Importata 0 in Wh (PIANO SOTTO) ]
+ */
+
+float TCP_SysImpActiveEnergy_5 = 0;
+
+
+/*
+ * Variable TCP_SysActivePower_6	[ 0x10 0x1026 Potenza Attiva 0 in W (AUTO ELETTRICA) ]
+ */
+
+float TCP_SysActivePower_6 = 0;
+
+
+/*
+ * Variable TCP_SysImpActiveEnergy_6	[ 0x10 0x1106 Energia Attiva Importata 0 in Wh (AUTO ELETTRICA) ]
+ */
+
+float TCP_SysImpActiveEnergy_6 = 0;
+
+
+/*
+ * Variable TCP_SysActivePower_7	[ 0x11 0x1026 Potenza Attiva 0 in W (DEUMIDIFICATORE) ]
+ */
+
+float TCP_SysActivePower_7 = 0;
+
+
+/*
+ * Variable TCP_SysImpActiveEnergy_7	[ 0x11 0x1106 Energia Attiva Importata 0 in Wh (DEUMIDIFICATORE) ]
+ */
+
+float TCP_SysImpActiveEnergy_7 = 0;
+
+
+/*
+ * Variable TCP_SysActivePower_8	[ 0x12 0x1026 Potenza Attiva 0 in W (LAVANDERIA) ]
+ */
+
+float TCP_SysActivePower_8 = 0;
+
+
+/*
+ * Variable TCP_SysImpActiveEnergy_8	[ 0x12 0x1106 Energia Attiva Importata 0 in Wh (LAVANDERIA) ]
+ */
+
+float TCP_SysImpActiveEnergy_8 = 0;
+
+
+/*
+ * Variable TCP_SysActivePower_9	[ 0x13 0x1026 Potenza Attiva 0 in W (UPS) ]
+ */
+
+float TCP_SysActivePower_9 = 0;
+
+
+/*
+ * Variable TCP_SysApparentPower_9	[ 0x13 0x102E Potenza Apparente 0 in VA (UPS) ]
+ */
+
+float TCP_SysApparentPower_9 = 0;
+
+
+/*
+ * Variable TCP_SysImpActiveEnergy_9	[ 0x13 0x1106 Energia Attiva Importata 0 in Wh (UPS) ]
+ */
+
+float TCP_SysImpActiveEnergy_9 = 0;
+
+
+/*
+ * Variable TCP_SysActivePower_10	[ 0x14 0x1026 Potenza Attiva 0 in W (Puffer) ]
+ */
+
+float TCP_SysActivePower_10 = 0;
+
+
+/*
+ * Variable TCP_SysImpActiveEnergy_10	[ 0x14 0x1106 Energia Attiva Importata 0 in Wh (Puffer) ]
+ */
+
+float TCP_SysImpActiveEnergy_10 = 0;
+
+
+/*
+ * Variable TCP_SysActivePower_11	[ 0x14 0x1026 Potenza Attiva 0 in W (Caldaia) ]
+ */
+
+float TCP_SysActivePower_11 = 0;
+
+
+/*
+ * Variable TCP_SysImpActiveEnergy_11	[ 0x14 0x1106 Energia Attiva Importata 0 in Wh (Caldaia) ]
+ */
+
+float TCP_SysImpActiveEnergy_11 = 0;
+
+
+/*
  * Variable RTU0_TYPE_PORT
  */
 
@@ -3832,6 +4252,1086 @@ int
 getStatus_SysImpActiveEnergy_11(void)
 {
 	return getStatus(ID_SysImpActiveEnergy_11);
+}
+
+int
+doWrite_TCP_is_Caldaia_ON(int value)
+{
+	return doWrite(ID_TCP_is_Caldaia_ON, &value);
+}
+
+int
+addWrite_TCP_is_Caldaia_ON(int value)
+{
+	return addWrite(ID_TCP_is_Caldaia_ON, &value);
+}
+
+int
+getStatus_TCP_is_Caldaia_ON(void)
+{
+	return getStatus(ID_TCP_is_Caldaia_ON);
+}
+
+int
+doWrite_TCP_AnIn_A_1(int16_t value)
+{
+	return doWrite(ID_TCP_AnIn_A_1, &value);
+}
+
+int
+addWrite_TCP_AnIn_A_1(int16_t value)
+{
+	return addWrite(ID_TCP_AnIn_A_1, &value);
+}
+
+int
+getStatus_TCP_AnIn_A_1(void)
+{
+	return getStatus(ID_TCP_AnIn_A_1);
+}
+
+int
+doWrite_TCP_AnIn_A_2(int16_t value)
+{
+	return doWrite(ID_TCP_AnIn_A_2, &value);
+}
+
+int
+addWrite_TCP_AnIn_A_2(int16_t value)
+{
+	return addWrite(ID_TCP_AnIn_A_2, &value);
+}
+
+int
+getStatus_TCP_AnIn_A_2(void)
+{
+	return getStatus(ID_TCP_AnIn_A_2);
+}
+
+int
+doWrite_TCP_AnIn_A_3(int16_t value)
+{
+	return doWrite(ID_TCP_AnIn_A_3, &value);
+}
+
+int
+addWrite_TCP_AnIn_A_3(int16_t value)
+{
+	return addWrite(ID_TCP_AnIn_A_3, &value);
+}
+
+int
+getStatus_TCP_AnIn_A_3(void)
+{
+	return getStatus(ID_TCP_AnIn_A_3);
+}
+
+int
+doWrite_TCP_AnIn_A_4(int16_t value)
+{
+	return doWrite(ID_TCP_AnIn_A_4, &value);
+}
+
+int
+addWrite_TCP_AnIn_A_4(int16_t value)
+{
+	return addWrite(ID_TCP_AnIn_A_4, &value);
+}
+
+int
+getStatus_TCP_AnIn_A_4(void)
+{
+	return getStatus(ID_TCP_AnIn_A_4);
+}
+
+int
+doWrite_TCP_AnIn_B_1(int16_t value)
+{
+	return doWrite(ID_TCP_AnIn_B_1, &value);
+}
+
+int
+addWrite_TCP_AnIn_B_1(int16_t value)
+{
+	return addWrite(ID_TCP_AnIn_B_1, &value);
+}
+
+int
+getStatus_TCP_AnIn_B_1(void)
+{
+	return getStatus(ID_TCP_AnIn_B_1);
+}
+
+int
+doWrite_TCP_AnIn_B_2(int16_t value)
+{
+	return doWrite(ID_TCP_AnIn_B_2, &value);
+}
+
+int
+addWrite_TCP_AnIn_B_2(int16_t value)
+{
+	return addWrite(ID_TCP_AnIn_B_2, &value);
+}
+
+int
+getStatus_TCP_AnIn_B_2(void)
+{
+	return getStatus(ID_TCP_AnIn_B_2);
+}
+
+int
+doWrite_TCP_AnIn_B_3(int16_t value)
+{
+	return doWrite(ID_TCP_AnIn_B_3, &value);
+}
+
+int
+addWrite_TCP_AnIn_B_3(int16_t value)
+{
+	return addWrite(ID_TCP_AnIn_B_3, &value);
+}
+
+int
+getStatus_TCP_AnIn_B_3(void)
+{
+	return getStatus(ID_TCP_AnIn_B_3);
+}
+
+int
+doWrite_TCP_AnIn_B_4(int16_t value)
+{
+	return doWrite(ID_TCP_AnIn_B_4, &value);
+}
+
+int
+addWrite_TCP_AnIn_B_4(int16_t value)
+{
+	return addWrite(ID_TCP_AnIn_B_4, &value);
+}
+
+int
+getStatus_TCP_AnIn_B_4(void)
+{
+	return getStatus(ID_TCP_AnIn_B_4);
+}
+
+int
+doWrite_TCP_AnIn_C_1(int16_t value)
+{
+	return doWrite(ID_TCP_AnIn_C_1, &value);
+}
+
+int
+addWrite_TCP_AnIn_C_1(int16_t value)
+{
+	return addWrite(ID_TCP_AnIn_C_1, &value);
+}
+
+int
+getStatus_TCP_AnIn_C_1(void)
+{
+	return getStatus(ID_TCP_AnIn_C_1);
+}
+
+int
+doWrite_TCP_AnIn_C_2(int16_t value)
+{
+	return doWrite(ID_TCP_AnIn_C_2, &value);
+}
+
+int
+addWrite_TCP_AnIn_C_2(int16_t value)
+{
+	return addWrite(ID_TCP_AnIn_C_2, &value);
+}
+
+int
+getStatus_TCP_AnIn_C_2(void)
+{
+	return getStatus(ID_TCP_AnIn_C_2);
+}
+
+int
+doWrite_TCP_AnIn_C_3(int16_t value)
+{
+	return doWrite(ID_TCP_AnIn_C_3, &value);
+}
+
+int
+addWrite_TCP_AnIn_C_3(int16_t value)
+{
+	return addWrite(ID_TCP_AnIn_C_3, &value);
+}
+
+int
+getStatus_TCP_AnIn_C_3(void)
+{
+	return getStatus(ID_TCP_AnIn_C_3);
+}
+
+int
+doWrite_TCP_AnIn_C_4(int16_t value)
+{
+	return doWrite(ID_TCP_AnIn_C_4, &value);
+}
+
+int
+addWrite_TCP_AnIn_C_4(int16_t value)
+{
+	return addWrite(ID_TCP_AnIn_C_4, &value);
+}
+
+int
+getStatus_TCP_AnIn_C_4(void)
+{
+	return getStatus(ID_TCP_AnIn_C_4);
+}
+
+int
+doWrite_TCP_AnIn_1(int16_t value)
+{
+	return doWrite(ID_TCP_AnIn_1, &value);
+}
+
+int
+addWrite_TCP_AnIn_1(int16_t value)
+{
+	return addWrite(ID_TCP_AnIn_1, &value);
+}
+
+int
+getStatus_TCP_AnIn_1(void)
+{
+	return getStatus(ID_TCP_AnIn_1);
+}
+
+int
+doWrite_TCP_AnIn_2(int16_t value)
+{
+	return doWrite(ID_TCP_AnIn_2, &value);
+}
+
+int
+addWrite_TCP_AnIn_2(int16_t value)
+{
+	return addWrite(ID_TCP_AnIn_2, &value);
+}
+
+int
+getStatus_TCP_AnIn_2(void)
+{
+	return getStatus(ID_TCP_AnIn_2);
+}
+
+int
+doWrite_TCP_DigIn_1(int value)
+{
+	return doWrite(ID_TCP_DigIn_1, &value);
+}
+
+int
+addWrite_TCP_DigIn_1(int value)
+{
+	return addWrite(ID_TCP_DigIn_1, &value);
+}
+
+int
+getStatus_TCP_DigIn_1(void)
+{
+	return getStatus(ID_TCP_DigIn_1);
+}
+
+int
+doWrite_TCP_DigIn_2(int value)
+{
+	return doWrite(ID_TCP_DigIn_2, &value);
+}
+
+int
+addWrite_TCP_DigIn_2(int value)
+{
+	return addWrite(ID_TCP_DigIn_2, &value);
+}
+
+int
+getStatus_TCP_DigIn_2(void)
+{
+	return getStatus(ID_TCP_DigIn_2);
+}
+
+int
+doWrite_TCP_DigIn_3(int value)
+{
+	return doWrite(ID_TCP_DigIn_3, &value);
+}
+
+int
+addWrite_TCP_DigIn_3(int value)
+{
+	return addWrite(ID_TCP_DigIn_3, &value);
+}
+
+int
+getStatus_TCP_DigIn_3(void)
+{
+	return getStatus(ID_TCP_DigIn_3);
+}
+
+int
+doWrite_TCP_DigIn_4(int value)
+{
+	return doWrite(ID_TCP_DigIn_4, &value);
+}
+
+int
+addWrite_TCP_DigIn_4(int value)
+{
+	return addWrite(ID_TCP_DigIn_4, &value);
+}
+
+int
+getStatus_TCP_DigIn_4(void)
+{
+	return getStatus(ID_TCP_DigIn_4);
+}
+
+int
+doWrite_TCP_DigIn_5(int value)
+{
+	return doWrite(ID_TCP_DigIn_5, &value);
+}
+
+int
+addWrite_TCP_DigIn_5(int value)
+{
+	return addWrite(ID_TCP_DigIn_5, &value);
+}
+
+int
+getStatus_TCP_DigIn_5(void)
+{
+	return getStatus(ID_TCP_DigIn_5);
+}
+
+int
+doWrite_TCP_DigIn_6(int value)
+{
+	return doWrite(ID_TCP_DigIn_6, &value);
+}
+
+int
+addWrite_TCP_DigIn_6(int value)
+{
+	return addWrite(ID_TCP_DigIn_6, &value);
+}
+
+int
+getStatus_TCP_DigIn_6(void)
+{
+	return getStatus(ID_TCP_DigIn_6);
+}
+
+int
+doWrite_TCP_DigIn_7(int value)
+{
+	return doWrite(ID_TCP_DigIn_7, &value);
+}
+
+int
+addWrite_TCP_DigIn_7(int value)
+{
+	return addWrite(ID_TCP_DigIn_7, &value);
+}
+
+int
+getStatus_TCP_DigIn_7(void)
+{
+	return getStatus(ID_TCP_DigIn_7);
+}
+
+int
+doWrite_TCP_DigIn_8(int value)
+{
+	return doWrite(ID_TCP_DigIn_8, &value);
+}
+
+int
+addWrite_TCP_DigIn_8(int value)
+{
+	return addWrite(ID_TCP_DigIn_8, &value);
+}
+
+int
+getStatus_TCP_DigIn_8(void)
+{
+	return getStatus(ID_TCP_DigIn_8);
+}
+
+int
+doWrite_TCP_DigOut_1(int value)
+{
+	return doWrite(ID_TCP_DigOut_1, &value);
+}
+
+int
+addWrite_TCP_DigOut_1(int value)
+{
+	return addWrite(ID_TCP_DigOut_1, &value);
+}
+
+int
+getStatus_TCP_DigOut_1(void)
+{
+	return getStatus(ID_TCP_DigOut_1);
+}
+
+int
+doWrite_TCP_DigOut_2(int value)
+{
+	return doWrite(ID_TCP_DigOut_2, &value);
+}
+
+int
+addWrite_TCP_DigOut_2(int value)
+{
+	return addWrite(ID_TCP_DigOut_2, &value);
+}
+
+int
+getStatus_TCP_DigOut_2(void)
+{
+	return getStatus(ID_TCP_DigOut_2);
+}
+
+int
+doWrite_TCP_DigOut_3(int value)
+{
+	return doWrite(ID_TCP_DigOut_3, &value);
+}
+
+int
+addWrite_TCP_DigOut_3(int value)
+{
+	return addWrite(ID_TCP_DigOut_3, &value);
+}
+
+int
+getStatus_TCP_DigOut_3(void)
+{
+	return getStatus(ID_TCP_DigOut_3);
+}
+
+int
+doWrite_TCP_DigOut_4(int value)
+{
+	return doWrite(ID_TCP_DigOut_4, &value);
+}
+
+int
+addWrite_TCP_DigOut_4(int value)
+{
+	return addWrite(ID_TCP_DigOut_4, &value);
+}
+
+int
+getStatus_TCP_DigOut_4(void)
+{
+	return getStatus(ID_TCP_DigOut_4);
+}
+
+int
+doWrite_TCP_DigOut_5(int value)
+{
+	return doWrite(ID_TCP_DigOut_5, &value);
+}
+
+int
+addWrite_TCP_DigOut_5(int value)
+{
+	return addWrite(ID_TCP_DigOut_5, &value);
+}
+
+int
+getStatus_TCP_DigOut_5(void)
+{
+	return getStatus(ID_TCP_DigOut_5);
+}
+
+int
+doWrite_TCP_DigOut_6(int value)
+{
+	return doWrite(ID_TCP_DigOut_6, &value);
+}
+
+int
+addWrite_TCP_DigOut_6(int value)
+{
+	return addWrite(ID_TCP_DigOut_6, &value);
+}
+
+int
+getStatus_TCP_DigOut_6(void)
+{
+	return getStatus(ID_TCP_DigOut_6);
+}
+
+int
+doWrite_TCP_DigOut_7(int value)
+{
+	return doWrite(ID_TCP_DigOut_7, &value);
+}
+
+int
+addWrite_TCP_DigOut_7(int value)
+{
+	return addWrite(ID_TCP_DigOut_7, &value);
+}
+
+int
+getStatus_TCP_DigOut_7(void)
+{
+	return getStatus(ID_TCP_DigOut_7);
+}
+
+int
+doWrite_TCP_DigOut_8(int value)
+{
+	return doWrite(ID_TCP_DigOut_8, &value);
+}
+
+int
+addWrite_TCP_DigOut_8(int value)
+{
+	return addWrite(ID_TCP_DigOut_8, &value);
+}
+
+int
+getStatus_TCP_DigOut_8(void)
+{
+	return getStatus(ID_TCP_DigOut_8);
+}
+
+int
+doWrite_TCP_SystemVoltage_0(float value)
+{
+	return doWrite(ID_TCP_SystemVoltage_0, &value);
+}
+
+int
+addWrite_TCP_SystemVoltage_0(float value)
+{
+	return addWrite(ID_TCP_SystemVoltage_0, &value);
+}
+
+int
+getStatus_TCP_SystemVoltage_0(void)
+{
+	return getStatus(ID_TCP_SystemVoltage_0);
+}
+
+int
+doWrite_TCP_SysPowerFactor_0(float value)
+{
+	return doWrite(ID_TCP_SysPowerFactor_0, &value);
+}
+
+int
+addWrite_TCP_SysPowerFactor_0(float value)
+{
+	return addWrite(ID_TCP_SysPowerFactor_0, &value);
+}
+
+int
+getStatus_TCP_SysPowerFactor_0(void)
+{
+	return getStatus(ID_TCP_SysPowerFactor_0);
+}
+
+int
+doWrite_TCP_SysActivePower_0(float value)
+{
+	return doWrite(ID_TCP_SysActivePower_0, &value);
+}
+
+int
+addWrite_TCP_SysActivePower_0(float value)
+{
+	return addWrite(ID_TCP_SysActivePower_0, &value);
+}
+
+int
+getStatus_TCP_SysActivePower_0(void)
+{
+	return getStatus(ID_TCP_SysActivePower_0);
+}
+
+int
+doWrite_TCP_SysImpActiveEnergy_0(float value)
+{
+	return doWrite(ID_TCP_SysImpActiveEnergy_0, &value);
+}
+
+int
+addWrite_TCP_SysImpActiveEnergy_0(float value)
+{
+	return addWrite(ID_TCP_SysImpActiveEnergy_0, &value);
+}
+
+int
+getStatus_TCP_SysImpActiveEnergy_0(void)
+{
+	return getStatus(ID_TCP_SysImpActiveEnergy_0);
+}
+
+int
+doWrite_TCP_SysExpActiveEnergy_0(float value)
+{
+	return doWrite(ID_TCP_SysExpActiveEnergy_0, &value);
+}
+
+int
+addWrite_TCP_SysExpActiveEnergy_0(float value)
+{
+	return addWrite(ID_TCP_SysExpActiveEnergy_0, &value);
+}
+
+int
+getStatus_TCP_SysExpActiveEnergy_0(void)
+{
+	return getStatus(ID_TCP_SysExpActiveEnergy_0);
+}
+
+int
+doWrite_TCP_SysActivePower_1(float value)
+{
+	return doWrite(ID_TCP_SysActivePower_1, &value);
+}
+
+int
+addWrite_TCP_SysActivePower_1(float value)
+{
+	return addWrite(ID_TCP_SysActivePower_1, &value);
+}
+
+int
+getStatus_TCP_SysActivePower_1(void)
+{
+	return getStatus(ID_TCP_SysActivePower_1);
+}
+
+int
+doWrite_TCP_SysImpActiveEnergy_1(float value)
+{
+	return doWrite(ID_TCP_SysImpActiveEnergy_1, &value);
+}
+
+int
+addWrite_TCP_SysImpActiveEnergy_1(float value)
+{
+	return addWrite(ID_TCP_SysImpActiveEnergy_1, &value);
+}
+
+int
+getStatus_TCP_SysImpActiveEnergy_1(void)
+{
+	return getStatus(ID_TCP_SysImpActiveEnergy_1);
+}
+
+int
+doWrite_TCP_SysExpActiveEnergy_1(float value)
+{
+	return doWrite(ID_TCP_SysExpActiveEnergy_1, &value);
+}
+
+int
+addWrite_TCP_SysExpActiveEnergy_1(float value)
+{
+	return addWrite(ID_TCP_SysExpActiveEnergy_1, &value);
+}
+
+int
+getStatus_TCP_SysExpActiveEnergy_1(void)
+{
+	return getStatus(ID_TCP_SysExpActiveEnergy_1);
+}
+
+int
+doWrite_TCP_SysActivePower_2(float value)
+{
+	return doWrite(ID_TCP_SysActivePower_2, &value);
+}
+
+int
+addWrite_TCP_SysActivePower_2(float value)
+{
+	return addWrite(ID_TCP_SysActivePower_2, &value);
+}
+
+int
+getStatus_TCP_SysActivePower_2(void)
+{
+	return getStatus(ID_TCP_SysActivePower_2);
+}
+
+int
+doWrite_TCP_SysImpActiveEnergy_2(float value)
+{
+	return doWrite(ID_TCP_SysImpActiveEnergy_2, &value);
+}
+
+int
+addWrite_TCP_SysImpActiveEnergy_2(float value)
+{
+	return addWrite(ID_TCP_SysImpActiveEnergy_2, &value);
+}
+
+int
+getStatus_TCP_SysImpActiveEnergy_2(void)
+{
+	return getStatus(ID_TCP_SysImpActiveEnergy_2);
+}
+
+int
+doWrite_TCP_SysActivePower_3(float value)
+{
+	return doWrite(ID_TCP_SysActivePower_3, &value);
+}
+
+int
+addWrite_TCP_SysActivePower_3(float value)
+{
+	return addWrite(ID_TCP_SysActivePower_3, &value);
+}
+
+int
+getStatus_TCP_SysActivePower_3(void)
+{
+	return getStatus(ID_TCP_SysActivePower_3);
+}
+
+int
+doWrite_TCP_SysImpActiveEnergy_3(float value)
+{
+	return doWrite(ID_TCP_SysImpActiveEnergy_3, &value);
+}
+
+int
+addWrite_TCP_SysImpActiveEnergy_3(float value)
+{
+	return addWrite(ID_TCP_SysImpActiveEnergy_3, &value);
+}
+
+int
+getStatus_TCP_SysImpActiveEnergy_3(void)
+{
+	return getStatus(ID_TCP_SysImpActiveEnergy_3);
+}
+
+int
+doWrite_TCP_SysActivePower_4(float value)
+{
+	return doWrite(ID_TCP_SysActivePower_4, &value);
+}
+
+int
+addWrite_TCP_SysActivePower_4(float value)
+{
+	return addWrite(ID_TCP_SysActivePower_4, &value);
+}
+
+int
+getStatus_TCP_SysActivePower_4(void)
+{
+	return getStatus(ID_TCP_SysActivePower_4);
+}
+
+int
+doWrite_TCP_SysImpActiveEnergy_4(float value)
+{
+	return doWrite(ID_TCP_SysImpActiveEnergy_4, &value);
+}
+
+int
+addWrite_TCP_SysImpActiveEnergy_4(float value)
+{
+	return addWrite(ID_TCP_SysImpActiveEnergy_4, &value);
+}
+
+int
+getStatus_TCP_SysImpActiveEnergy_4(void)
+{
+	return getStatus(ID_TCP_SysImpActiveEnergy_4);
+}
+
+int
+doWrite_TCP_SysActivePower_5(float value)
+{
+	return doWrite(ID_TCP_SysActivePower_5, &value);
+}
+
+int
+addWrite_TCP_SysActivePower_5(float value)
+{
+	return addWrite(ID_TCP_SysActivePower_5, &value);
+}
+
+int
+getStatus_TCP_SysActivePower_5(void)
+{
+	return getStatus(ID_TCP_SysActivePower_5);
+}
+
+int
+doWrite_TCP_SysImpActiveEnergy_5(float value)
+{
+	return doWrite(ID_TCP_SysImpActiveEnergy_5, &value);
+}
+
+int
+addWrite_TCP_SysImpActiveEnergy_5(float value)
+{
+	return addWrite(ID_TCP_SysImpActiveEnergy_5, &value);
+}
+
+int
+getStatus_TCP_SysImpActiveEnergy_5(void)
+{
+	return getStatus(ID_TCP_SysImpActiveEnergy_5);
+}
+
+int
+doWrite_TCP_SysActivePower_6(float value)
+{
+	return doWrite(ID_TCP_SysActivePower_6, &value);
+}
+
+int
+addWrite_TCP_SysActivePower_6(float value)
+{
+	return addWrite(ID_TCP_SysActivePower_6, &value);
+}
+
+int
+getStatus_TCP_SysActivePower_6(void)
+{
+	return getStatus(ID_TCP_SysActivePower_6);
+}
+
+int
+doWrite_TCP_SysImpActiveEnergy_6(float value)
+{
+	return doWrite(ID_TCP_SysImpActiveEnergy_6, &value);
+}
+
+int
+addWrite_TCP_SysImpActiveEnergy_6(float value)
+{
+	return addWrite(ID_TCP_SysImpActiveEnergy_6, &value);
+}
+
+int
+getStatus_TCP_SysImpActiveEnergy_6(void)
+{
+	return getStatus(ID_TCP_SysImpActiveEnergy_6);
+}
+
+int
+doWrite_TCP_SysActivePower_7(float value)
+{
+	return doWrite(ID_TCP_SysActivePower_7, &value);
+}
+
+int
+addWrite_TCP_SysActivePower_7(float value)
+{
+	return addWrite(ID_TCP_SysActivePower_7, &value);
+}
+
+int
+getStatus_TCP_SysActivePower_7(void)
+{
+	return getStatus(ID_TCP_SysActivePower_7);
+}
+
+int
+doWrite_TCP_SysImpActiveEnergy_7(float value)
+{
+	return doWrite(ID_TCP_SysImpActiveEnergy_7, &value);
+}
+
+int
+addWrite_TCP_SysImpActiveEnergy_7(float value)
+{
+	return addWrite(ID_TCP_SysImpActiveEnergy_7, &value);
+}
+
+int
+getStatus_TCP_SysImpActiveEnergy_7(void)
+{
+	return getStatus(ID_TCP_SysImpActiveEnergy_7);
+}
+
+int
+doWrite_TCP_SysActivePower_8(float value)
+{
+	return doWrite(ID_TCP_SysActivePower_8, &value);
+}
+
+int
+addWrite_TCP_SysActivePower_8(float value)
+{
+	return addWrite(ID_TCP_SysActivePower_8, &value);
+}
+
+int
+getStatus_TCP_SysActivePower_8(void)
+{
+	return getStatus(ID_TCP_SysActivePower_8);
+}
+
+int
+doWrite_TCP_SysImpActiveEnergy_8(float value)
+{
+	return doWrite(ID_TCP_SysImpActiveEnergy_8, &value);
+}
+
+int
+addWrite_TCP_SysImpActiveEnergy_8(float value)
+{
+	return addWrite(ID_TCP_SysImpActiveEnergy_8, &value);
+}
+
+int
+getStatus_TCP_SysImpActiveEnergy_8(void)
+{
+	return getStatus(ID_TCP_SysImpActiveEnergy_8);
+}
+
+int
+doWrite_TCP_SysActivePower_9(float value)
+{
+	return doWrite(ID_TCP_SysActivePower_9, &value);
+}
+
+int
+addWrite_TCP_SysActivePower_9(float value)
+{
+	return addWrite(ID_TCP_SysActivePower_9, &value);
+}
+
+int
+getStatus_TCP_SysActivePower_9(void)
+{
+	return getStatus(ID_TCP_SysActivePower_9);
+}
+
+int
+doWrite_TCP_SysApparentPower_9(float value)
+{
+	return doWrite(ID_TCP_SysApparentPower_9, &value);
+}
+
+int
+addWrite_TCP_SysApparentPower_9(float value)
+{
+	return addWrite(ID_TCP_SysApparentPower_9, &value);
+}
+
+int
+getStatus_TCP_SysApparentPower_9(void)
+{
+	return getStatus(ID_TCP_SysApparentPower_9);
+}
+
+int
+doWrite_TCP_SysImpActiveEnergy_9(float value)
+{
+	return doWrite(ID_TCP_SysImpActiveEnergy_9, &value);
+}
+
+int
+addWrite_TCP_SysImpActiveEnergy_9(float value)
+{
+	return addWrite(ID_TCP_SysImpActiveEnergy_9, &value);
+}
+
+int
+getStatus_TCP_SysImpActiveEnergy_9(void)
+{
+	return getStatus(ID_TCP_SysImpActiveEnergy_9);
+}
+
+int
+doWrite_TCP_SysActivePower_10(float value)
+{
+	return doWrite(ID_TCP_SysActivePower_10, &value);
+}
+
+int
+addWrite_TCP_SysActivePower_10(float value)
+{
+	return addWrite(ID_TCP_SysActivePower_10, &value);
+}
+
+int
+getStatus_TCP_SysActivePower_10(void)
+{
+	return getStatus(ID_TCP_SysActivePower_10);
+}
+
+int
+doWrite_TCP_SysImpActiveEnergy_10(float value)
+{
+	return doWrite(ID_TCP_SysImpActiveEnergy_10, &value);
+}
+
+int
+addWrite_TCP_SysImpActiveEnergy_10(float value)
+{
+	return addWrite(ID_TCP_SysImpActiveEnergy_10, &value);
+}
+
+int
+getStatus_TCP_SysImpActiveEnergy_10(void)
+{
+	return getStatus(ID_TCP_SysImpActiveEnergy_10);
+}
+
+int
+doWrite_TCP_SysActivePower_11(float value)
+{
+	return doWrite(ID_TCP_SysActivePower_11, &value);
+}
+
+int
+addWrite_TCP_SysActivePower_11(float value)
+{
+	return addWrite(ID_TCP_SysActivePower_11, &value);
+}
+
+int
+getStatus_TCP_SysActivePower_11(void)
+{
+	return getStatus(ID_TCP_SysActivePower_11);
+}
+
+int
+doWrite_TCP_SysImpActiveEnergy_11(float value)
+{
+	return doWrite(ID_TCP_SysImpActiveEnergy_11, &value);
+}
+
+int
+addWrite_TCP_SysImpActiveEnergy_11(float value)
+{
+	return addWrite(ID_TCP_SysImpActiveEnergy_11, &value);
+}
+
+int
+getStatus_TCP_SysImpActiveEnergy_11(void)
+{
+	return getStatus(ID_TCP_SysImpActiveEnergy_11);
 }
 
 int
@@ -7873,6 +9373,66 @@ update_all(void)
 	retval += readFromDb(ID_SysImpActiveEnergy_10, &SysImpActiveEnergy_10);
 	retval += readFromDb(ID_SysActivePower_11, &SysActivePower_11);
 	retval += readFromDb(ID_SysImpActiveEnergy_11, &SysImpActiveEnergy_11);
+	retval += readFromDb(ID_TCP_is_Caldaia_ON, &TCP_is_Caldaia_ON);
+	retval += readFromDb(ID_TCP_AnIn_A_1, &TCP_AnIn_A_1);
+	retval += readFromDb(ID_TCP_AnIn_A_2, &TCP_AnIn_A_2);
+	retval += readFromDb(ID_TCP_AnIn_A_3, &TCP_AnIn_A_3);
+	retval += readFromDb(ID_TCP_AnIn_A_4, &TCP_AnIn_A_4);
+	retval += readFromDb(ID_TCP_AnIn_B_1, &TCP_AnIn_B_1);
+	retval += readFromDb(ID_TCP_AnIn_B_2, &TCP_AnIn_B_2);
+	retval += readFromDb(ID_TCP_AnIn_B_3, &TCP_AnIn_B_3);
+	retval += readFromDb(ID_TCP_AnIn_B_4, &TCP_AnIn_B_4);
+	retval += readFromDb(ID_TCP_AnIn_C_1, &TCP_AnIn_C_1);
+	retval += readFromDb(ID_TCP_AnIn_C_2, &TCP_AnIn_C_2);
+	retval += readFromDb(ID_TCP_AnIn_C_3, &TCP_AnIn_C_3);
+	retval += readFromDb(ID_TCP_AnIn_C_4, &TCP_AnIn_C_4);
+	retval += readFromDb(ID_TCP_AnIn_1, &TCP_AnIn_1);
+	retval += readFromDb(ID_TCP_AnIn_2, &TCP_AnIn_2);
+	retval += readFromDb(ID_TCP_DigIn_1, &TCP_DigIn_1);
+	retval += readFromDb(ID_TCP_DigIn_2, &TCP_DigIn_2);
+	retval += readFromDb(ID_TCP_DigIn_3, &TCP_DigIn_3);
+	retval += readFromDb(ID_TCP_DigIn_4, &TCP_DigIn_4);
+	retval += readFromDb(ID_TCP_DigIn_5, &TCP_DigIn_5);
+	retval += readFromDb(ID_TCP_DigIn_6, &TCP_DigIn_6);
+	retval += readFromDb(ID_TCP_DigIn_7, &TCP_DigIn_7);
+	retval += readFromDb(ID_TCP_DigIn_8, &TCP_DigIn_8);
+	retval += readFromDb(ID_TCP_DigOut_1, &TCP_DigOut_1);
+	retval += readFromDb(ID_TCP_DigOut_2, &TCP_DigOut_2);
+	retval += readFromDb(ID_TCP_DigOut_3, &TCP_DigOut_3);
+	retval += readFromDb(ID_TCP_DigOut_4, &TCP_DigOut_4);
+	retval += readFromDb(ID_TCP_DigOut_5, &TCP_DigOut_5);
+	retval += readFromDb(ID_TCP_DigOut_6, &TCP_DigOut_6);
+	retval += readFromDb(ID_TCP_DigOut_7, &TCP_DigOut_7);
+	retval += readFromDb(ID_TCP_DigOut_8, &TCP_DigOut_8);
+	retval += readFromDb(ID_TCP_SystemVoltage_0, &TCP_SystemVoltage_0);
+	retval += readFromDb(ID_TCP_SysPowerFactor_0, &TCP_SysPowerFactor_0);
+	retval += readFromDb(ID_TCP_SysActivePower_0, &TCP_SysActivePower_0);
+	retval += readFromDb(ID_TCP_SysImpActiveEnergy_0, &TCP_SysImpActiveEnergy_0);
+	retval += readFromDb(ID_TCP_SysExpActiveEnergy_0, &TCP_SysExpActiveEnergy_0);
+	retval += readFromDb(ID_TCP_SysActivePower_1, &TCP_SysActivePower_1);
+	retval += readFromDb(ID_TCP_SysImpActiveEnergy_1, &TCP_SysImpActiveEnergy_1);
+	retval += readFromDb(ID_TCP_SysExpActiveEnergy_1, &TCP_SysExpActiveEnergy_1);
+	retval += readFromDb(ID_TCP_SysActivePower_2, &TCP_SysActivePower_2);
+	retval += readFromDb(ID_TCP_SysImpActiveEnergy_2, &TCP_SysImpActiveEnergy_2);
+	retval += readFromDb(ID_TCP_SysActivePower_3, &TCP_SysActivePower_3);
+	retval += readFromDb(ID_TCP_SysImpActiveEnergy_3, &TCP_SysImpActiveEnergy_3);
+	retval += readFromDb(ID_TCP_SysActivePower_4, &TCP_SysActivePower_4);
+	retval += readFromDb(ID_TCP_SysImpActiveEnergy_4, &TCP_SysImpActiveEnergy_4);
+	retval += readFromDb(ID_TCP_SysActivePower_5, &TCP_SysActivePower_5);
+	retval += readFromDb(ID_TCP_SysImpActiveEnergy_5, &TCP_SysImpActiveEnergy_5);
+	retval += readFromDb(ID_TCP_SysActivePower_6, &TCP_SysActivePower_6);
+	retval += readFromDb(ID_TCP_SysImpActiveEnergy_6, &TCP_SysImpActiveEnergy_6);
+	retval += readFromDb(ID_TCP_SysActivePower_7, &TCP_SysActivePower_7);
+	retval += readFromDb(ID_TCP_SysImpActiveEnergy_7, &TCP_SysImpActiveEnergy_7);
+	retval += readFromDb(ID_TCP_SysActivePower_8, &TCP_SysActivePower_8);
+	retval += readFromDb(ID_TCP_SysImpActiveEnergy_8, &TCP_SysImpActiveEnergy_8);
+	retval += readFromDb(ID_TCP_SysActivePower_9, &TCP_SysActivePower_9);
+	retval += readFromDb(ID_TCP_SysApparentPower_9, &TCP_SysApparentPower_9);
+	retval += readFromDb(ID_TCP_SysImpActiveEnergy_9, &TCP_SysImpActiveEnergy_9);
+	retval += readFromDb(ID_TCP_SysActivePower_10, &TCP_SysActivePower_10);
+	retval += readFromDb(ID_TCP_SysImpActiveEnergy_10, &TCP_SysImpActiveEnergy_10);
+	retval += readFromDb(ID_TCP_SysActivePower_11, &TCP_SysActivePower_11);
+	retval += readFromDb(ID_TCP_SysImpActiveEnergy_11, &TCP_SysImpActiveEnergy_11);
 	retval += readFromDb(ID_RTU0_TYPE_PORT, &RTU0_TYPE_PORT);
 	retval += readFromDb(ID_RTU0_BAUDRATE, &RTU0_BAUDRATE);
 	retval += readFromDb(ID_RTU0_STATUS, &RTU0_STATUS);

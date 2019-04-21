@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 2.7.84, 2019-03-18T17:31:11. -->
+<!-- Written by QtCreator 2.7.84, 2019-04-21T23:18:11. -->
 <qtcreator>
  <data>
   <variable>ProjectExplorer.Project.ActiveTarget</variable>
@@ -251,6 +251,7 @@
        <value type="QString">C:/mect_apps/TP1070_01_C/Monitoring/customtrend/trend_termostati.csv</value>
        <value type="QString">C:/mect_apps/TP1070_01_C/Monitoring/config/Crosstable.csv</value>
        <value type="QString">C:/mect_apps/TP1070_01_C/Monitoring/config/trend_termostati.csv</value>
+       <value type="QString">U:/mect_apps/TP1070_01_C/Monitoring/config/trend_caldaia_kW.csv</value>
        <value type="QString">C:/mect_apps/TP1070_01_C/Monitoring/config/trend_termostati.csv</value>
        <value type="QString">C:/mect_apps/TP1070_01_C/Monitoring/hmi</value>
        <value type="QString">U:/mect_apps/TP1070_01_C/Monitoring/config/splash.png</value>
@@ -312,6 +313,7 @@
        <value type="QString">192.168.5.45</value>
        <value type="QString">192.168.5.191</value>
        <value type="QString">192.168.5.45</value>
+       <value type="QString">192.168.5.45</value>
        <value type="QString">10.1.0.130</value>
        <value type="QString">192.168.5.45</value>
       </valuelist>
@@ -370,6 +372,7 @@
        <value type="QString">/local/data/customtrend</value>
        <value type="QString">/local/data/customtrend</value>
        <value type="QString">/local/etc/sysconfig</value>
+       <value type="QString">/local/data/customtrend</value>
        <value type="QString">/local/data/customtrend</value>
        <value type="QString">/local/data/customtrend</value>
        <value type="QString">/local/root</value>
@@ -434,15 +437,16 @@
        <value type="QString">C:/Qt485/imx28/rootfs</value>
        <value type="QString">C:/Qt485/imx28/rootfs</value>
        <value type="QString">C:/Qt485/imx28/rootfs</value>
+       <value type="QString">C:/Qt485/imx28/rootfs</value>
       </valuelist>
       <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedTimes">
        <value type="QDateTime">2019-03-04T18:28:24</value>
        <value type="QDateTime">2019-03-18T15:53:39</value>
        <value type="QDateTime">2018-12-05T15:23:54</value>
-       <value type="QDateTime">2019-03-16T21:19:52</value>
+       <value type="QDateTime">2019-04-21T23:14:35</value>
        <value type="QDateTime">2019-03-18T15:53:39</value>
        <value type="QDateTime">2019-03-04T18:28:25</value>
-       <value type="QDateTime">2019-03-16T21:19:52</value>
+       <value type="QDateTime">2019-04-21T23:14:35</value>
        <value type="QDateTime">2018-12-11T11:20:52</value>
        <value type="QDateTime">2019-03-04T18:28:26</value>
        <value type="QDateTime">2019-03-04T18:28:24</value>
@@ -457,33 +461,33 @@
        <value type="QDateTime">2019-03-04T18:28:24</value>
        <value type="QDateTime">2019-01-31T16:24:54</value>
        <value type="QDateTime">2019-03-18T15:53:40</value>
-       <value type="QDateTime">2019-03-16T21:19:53</value>
+       <value type="QDateTime">2019-04-21T23:14:37</value>
        <value type="QDateTime">2019-03-18T15:53:39</value>
        <value type="QDateTime">2018-09-30T13:46:13</value>
-       <value type="QDateTime">2019-03-16T21:19:52</value>
+       <value type="QDateTime">2019-04-21T23:14:36</value>
        <value type="QDateTime">2019-03-04T18:28:24</value>
-       <value type="QDateTime">2019-03-16T21:19:51</value>
+       <value type="QDateTime">2019-04-21T23:14:34</value>
        <value type="QDateTime">2019-03-18T15:53:38</value>
        <value type="QDateTime">2019-03-18T15:53:39</value>
        <value type="QDateTime">2018-12-07T10:39:42</value>
        <value type="QDateTime">2019-01-31T16:24:54</value>
-       <value type="QDateTime">2019-03-16T21:19:56</value>
+       <value type="QDateTime">2019-04-21T23:14:39</value>
        <value type="QDateTime">2018-10-02T20:08:38</value>
-       <value type="QDateTime">2019-03-16T21:19:51</value>
+       <value type="QDateTime">2019-04-21T23:14:34</value>
        <value type="QDateTime">2018-12-07T10:39:42</value>
        <value type="QDateTime">2018-10-02T20:08:36</value>
        <value type="QDateTime">2019-01-31T16:24:53</value>
        <value type="QDateTime">2019-01-31T16:24:54</value>
        <value type="QDateTime">2019-03-04T18:28:24</value>
        <value type="QDateTime">2018-12-05T15:23:53</value>
-       <value type="QDateTime">2019-03-16T21:19:53</value>
+       <value type="QDateTime">2019-04-21T23:14:36</value>
        <value type="QDateTime">2019-03-04T18:28:24</value>
        <value type="QDateTime">2018-12-07T10:39:42</value>
        <value type="QDateTime">2019-03-18T15:53:43</value>
        <value type="QDateTime">2019-03-04T18:28:24</value>
-       <value type="QDateTime">2019-03-16T21:19:53</value>
+       <value type="QDateTime">2019-04-21T23:14:36</value>
        <value type="QDateTime">2019-01-31T16:24:54</value>
-       <value type="QDateTime">2019-03-16T21:19:52</value>
+       <value type="QDateTime">2019-04-21T23:14:35</value>
        <value type="QDateTime">2019-03-18T15:53:38</value>
        <value type="QDateTime">2018-12-05T15:23:52</value>
        <value type="QDateTime">2018-09-30T13:46:11</value>
@@ -491,9 +495,10 @@
        <value type="QDateTime">2018-12-07T10:39:42</value>
        <value type="QDateTime">2019-03-04T18:28:24</value>
        <value type="QDateTime">2019-01-31T16:24:54</value>
+       <value type="QDateTime">2019-04-21T23:14:37</value>
        <value type="QDateTime">2019-03-04T18:28:24</value>
        <value type="QDateTime">2018-12-05T15:24:09</value>
-       <value type="QDateTime">2019-03-16T21:19:51</value>
+       <value type="QDateTime">2019-04-21T23:14:35</value>
       </valuelist>
       <value type="bool" key="RemoteLinux.GenericDirectUploadStep.Incremental">false</value>
      </valuemap>

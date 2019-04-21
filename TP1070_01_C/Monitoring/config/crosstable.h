@@ -580,6 +580,366 @@ int doWrite_SysImpActiveEnergy_11(float value);
 int addWrite_SysImpActiveEnergy_11(float value);
 int getStatus_SysImpActiveEnergy_11(void);
 
+#define ID_TCP_is_Caldaia_ON 1000
+extern int TCP_is_Caldaia_ON;
+int doWrite_TCP_is_Caldaia_ON(int value);
+int addWrite_TCP_is_Caldaia_ON(int value);
+int getStatus_TCP_is_Caldaia_ON(void);
+
+#define ID_TCP_AnIn_A_1 1001
+extern int16_t TCP_AnIn_A_1;	/* Analog input 1 value MPNC030 module A */
+int doWrite_TCP_AnIn_A_1(int16_t value);
+int addWrite_TCP_AnIn_A_1(int16_t value);
+int getStatus_TCP_AnIn_A_1(void);
+
+#define ID_TCP_AnIn_A_2 1002
+extern int16_t TCP_AnIn_A_2;	/* Analog input 2 value MPNC030 module A */
+int doWrite_TCP_AnIn_A_2(int16_t value);
+int addWrite_TCP_AnIn_A_2(int16_t value);
+int getStatus_TCP_AnIn_A_2(void);
+
+#define ID_TCP_AnIn_A_3 1003
+extern int16_t TCP_AnIn_A_3;	/* Analog input 3 value MPNC030 module A */
+int doWrite_TCP_AnIn_A_3(int16_t value);
+int addWrite_TCP_AnIn_A_3(int16_t value);
+int getStatus_TCP_AnIn_A_3(void);
+
+#define ID_TCP_AnIn_A_4 1004
+extern int16_t TCP_AnIn_A_4;	/* Analog input 4 value MPNC030 module A */
+int doWrite_TCP_AnIn_A_4(int16_t value);
+int addWrite_TCP_AnIn_A_4(int16_t value);
+int getStatus_TCP_AnIn_A_4(void);
+
+#define ID_TCP_AnIn_B_1 1005
+extern int16_t TCP_AnIn_B_1;	/* Analog input 1 value MPNC030 module B */
+int doWrite_TCP_AnIn_B_1(int16_t value);
+int addWrite_TCP_AnIn_B_1(int16_t value);
+int getStatus_TCP_AnIn_B_1(void);
+
+#define ID_TCP_AnIn_B_2 1006
+extern int16_t TCP_AnIn_B_2;	/* Analog input 2 value MPNC030 module B */
+int doWrite_TCP_AnIn_B_2(int16_t value);
+int addWrite_TCP_AnIn_B_2(int16_t value);
+int getStatus_TCP_AnIn_B_2(void);
+
+#define ID_TCP_AnIn_B_3 1007
+extern int16_t TCP_AnIn_B_3;	/* Analog input 3 value MPNC030 module B */
+int doWrite_TCP_AnIn_B_3(int16_t value);
+int addWrite_TCP_AnIn_B_3(int16_t value);
+int getStatus_TCP_AnIn_B_3(void);
+
+#define ID_TCP_AnIn_B_4 1008
+extern int16_t TCP_AnIn_B_4;	/* Analog input 4 value MPNC030 module B */
+int doWrite_TCP_AnIn_B_4(int16_t value);
+int addWrite_TCP_AnIn_B_4(int16_t value);
+int getStatus_TCP_AnIn_B_4(void);
+
+#define ID_TCP_AnIn_C_1 1009
+extern int16_t TCP_AnIn_C_1;	/* Analog input 1 value MPNC030 module C */
+int doWrite_TCP_AnIn_C_1(int16_t value);
+int addWrite_TCP_AnIn_C_1(int16_t value);
+int getStatus_TCP_AnIn_C_1(void);
+
+#define ID_TCP_AnIn_C_2 1010
+extern int16_t TCP_AnIn_C_2;	/* Analog input 2 value MPNC030 module C */
+int doWrite_TCP_AnIn_C_2(int16_t value);
+int addWrite_TCP_AnIn_C_2(int16_t value);
+int getStatus_TCP_AnIn_C_2(void);
+
+#define ID_TCP_AnIn_C_3 1011
+extern int16_t TCP_AnIn_C_3;	/* Analog input 3 value MPNC030 module C */
+int doWrite_TCP_AnIn_C_3(int16_t value);
+int addWrite_TCP_AnIn_C_3(int16_t value);
+int getStatus_TCP_AnIn_C_3(void);
+
+#define ID_TCP_AnIn_C_4 1012
+extern int16_t TCP_AnIn_C_4;	/* Analog input 3 value MPNC030 module C */
+int doWrite_TCP_AnIn_C_4(int16_t value);
+int addWrite_TCP_AnIn_C_4(int16_t value);
+int getStatus_TCP_AnIn_C_4(void);
+
+#define ID_TCP_AnIn_1 1013
+extern int16_t TCP_AnIn_1;	/* Analog input 1 value MPNC005 */
+int doWrite_TCP_AnIn_1(int16_t value);
+int addWrite_TCP_AnIn_1(int16_t value);
+int getStatus_TCP_AnIn_1(void);
+
+#define ID_TCP_AnIn_2 1014
+extern int16_t TCP_AnIn_2;	/* Analog input 2 value MPNC005 */
+int doWrite_TCP_AnIn_2(int16_t value);
+int addWrite_TCP_AnIn_2(int16_t value);
+int getStatus_TCP_AnIn_2(void);
+
+#define ID_TCP_DigIn_1 1015
+extern int TCP_DigIn_1;	/* Digital input 1 value MPNC005 */
+int doWrite_TCP_DigIn_1(int value);
+int addWrite_TCP_DigIn_1(int value);
+int getStatus_TCP_DigIn_1(void);
+
+#define ID_TCP_DigIn_2 1016
+extern int TCP_DigIn_2;	/* Digital input 2 value MPNC005 */
+int doWrite_TCP_DigIn_2(int value);
+int addWrite_TCP_DigIn_2(int value);
+int getStatus_TCP_DigIn_2(void);
+
+#define ID_TCP_DigIn_3 1017
+extern int TCP_DigIn_3;	/* Digital input 3 value MPNC005 */
+int doWrite_TCP_DigIn_3(int value);
+int addWrite_TCP_DigIn_3(int value);
+int getStatus_TCP_DigIn_3(void);
+
+#define ID_TCP_DigIn_4 1018
+extern int TCP_DigIn_4;	/* Digital input 4 value MPNC005 */
+int doWrite_TCP_DigIn_4(int value);
+int addWrite_TCP_DigIn_4(int value);
+int getStatus_TCP_DigIn_4(void);
+
+#define ID_TCP_DigIn_5 1019
+extern int TCP_DigIn_5;	/* Digital input 5 value MPNC005 */
+int doWrite_TCP_DigIn_5(int value);
+int addWrite_TCP_DigIn_5(int value);
+int getStatus_TCP_DigIn_5(void);
+
+#define ID_TCP_DigIn_6 1020
+extern int TCP_DigIn_6;	/* Digital input 6 value MPNC005 */
+int doWrite_TCP_DigIn_6(int value);
+int addWrite_TCP_DigIn_6(int value);
+int getStatus_TCP_DigIn_6(void);
+
+#define ID_TCP_DigIn_7 1021
+extern int TCP_DigIn_7;	/* Digital input 7 value MPNC005 */
+int doWrite_TCP_DigIn_7(int value);
+int addWrite_TCP_DigIn_7(int value);
+int getStatus_TCP_DigIn_7(void);
+
+#define ID_TCP_DigIn_8 1022
+extern int TCP_DigIn_8;	/* Digital input 8 value MPNC005 */
+int doWrite_TCP_DigIn_8(int value);
+int addWrite_TCP_DigIn_8(int value);
+int getStatus_TCP_DigIn_8(void);
+
+#define ID_TCP_DigOut_1 1023
+extern int TCP_DigOut_1;	/* Digital output 1 value MPNC005 */
+int doWrite_TCP_DigOut_1(int value);
+int addWrite_TCP_DigOut_1(int value);
+int getStatus_TCP_DigOut_1(void);
+
+#define ID_TCP_DigOut_2 1024
+extern int TCP_DigOut_2;	/* Digital output 2 value MPNC005 */
+int doWrite_TCP_DigOut_2(int value);
+int addWrite_TCP_DigOut_2(int value);
+int getStatus_TCP_DigOut_2(void);
+
+#define ID_TCP_DigOut_3 1025
+extern int TCP_DigOut_3;	/* Digital output 3 value MPNC005 */
+int doWrite_TCP_DigOut_3(int value);
+int addWrite_TCP_DigOut_3(int value);
+int getStatus_TCP_DigOut_3(void);
+
+#define ID_TCP_DigOut_4 1026
+extern int TCP_DigOut_4;	/* Digital output 4 value MPNC005 */
+int doWrite_TCP_DigOut_4(int value);
+int addWrite_TCP_DigOut_4(int value);
+int getStatus_TCP_DigOut_4(void);
+
+#define ID_TCP_DigOut_5 1027
+extern int TCP_DigOut_5;	/* Digital output 5 value MPNC005 */
+int doWrite_TCP_DigOut_5(int value);
+int addWrite_TCP_DigOut_5(int value);
+int getStatus_TCP_DigOut_5(void);
+
+#define ID_TCP_DigOut_6 1028
+extern int TCP_DigOut_6;	/* Digital output 6 value MPNC005 */
+int doWrite_TCP_DigOut_6(int value);
+int addWrite_TCP_DigOut_6(int value);
+int getStatus_TCP_DigOut_6(void);
+
+#define ID_TCP_DigOut_7 1029
+extern int TCP_DigOut_7;	/* Digital output 7 value MPNC005 */
+int doWrite_TCP_DigOut_7(int value);
+int addWrite_TCP_DigOut_7(int value);
+int getStatus_TCP_DigOut_7(void);
+
+#define ID_TCP_DigOut_8 1030
+extern int TCP_DigOut_8;	/* Digital output 8 value MPNC005 */
+int doWrite_TCP_DigOut_8(int value);
+int addWrite_TCP_DigOut_8(int value);
+int getStatus_TCP_DigOut_8(void);
+
+#define ID_TCP_SystemVoltage_0 1032
+extern float TCP_SystemVoltage_0;	/* 0x0A 0x100C Tensione in V (PRINCIPALE) */
+int doWrite_TCP_SystemVoltage_0(float value);
+int addWrite_TCP_SystemVoltage_0(float value);
+int getStatus_TCP_SystemVoltage_0(void);
+
+#define ID_TCP_SysPowerFactor_0 1033
+extern float TCP_SysPowerFactor_0;	/* 0x0A 0x101E Fattore di Potenza 0 (PRINCIPALE) */
+int doWrite_TCP_SysPowerFactor_0(float value);
+int addWrite_TCP_SysPowerFactor_0(float value);
+int getStatus_TCP_SysPowerFactor_0(void);
+
+#define ID_TCP_SysActivePower_0 1034
+extern float TCP_SysActivePower_0;	/* 0x0A 0x1026 Potenza Attiva 0 in W (PRINCIPALE) */
+int doWrite_TCP_SysActivePower_0(float value);
+int addWrite_TCP_SysActivePower_0(float value);
+int getStatus_TCP_SysActivePower_0(void);
+
+#define ID_TCP_SysImpActiveEnergy_0 1035
+extern float TCP_SysImpActiveEnergy_0;	/* 0x0A 0x1106 Energia Attiva Importata 0 in Wh (PRINCIPALE) */
+int doWrite_TCP_SysImpActiveEnergy_0(float value);
+int addWrite_TCP_SysImpActiveEnergy_0(float value);
+int getStatus_TCP_SysImpActiveEnergy_0(void);
+
+#define ID_TCP_SysExpActiveEnergy_0 1036
+extern float TCP_SysExpActiveEnergy_0;	/* 0x0A 0x110E Energia Attiva Esportata 0 in Wh (PRINCIPALE) */
+int doWrite_TCP_SysExpActiveEnergy_0(float value);
+int addWrite_TCP_SysExpActiveEnergy_0(float value);
+int getStatus_TCP_SysExpActiveEnergy_0(void);
+
+#define ID_TCP_SysActivePower_1 1037
+extern float TCP_SysActivePower_1;	/* 0x0B 0x1026 Potenza Attiva 0 in W (FOTOVOLTAICO) */
+int doWrite_TCP_SysActivePower_1(float value);
+int addWrite_TCP_SysActivePower_1(float value);
+int getStatus_TCP_SysActivePower_1(void);
+
+#define ID_TCP_SysImpActiveEnergy_1 1038
+extern float TCP_SysImpActiveEnergy_1;	/* 0x0B 0x1106 Energia Attiva Importata 1 in Wh (FOTOVOLTAICO) */
+int doWrite_TCP_SysImpActiveEnergy_1(float value);
+int addWrite_TCP_SysImpActiveEnergy_1(float value);
+int getStatus_TCP_SysImpActiveEnergy_1(void);
+
+#define ID_TCP_SysExpActiveEnergy_1 1039
+extern float TCP_SysExpActiveEnergy_1;	/* 0x0B 0x110E Energia Attiva Esportata 0 in Wh (FOTOVOLTAICO) */
+int doWrite_TCP_SysExpActiveEnergy_1(float value);
+int addWrite_TCP_SysExpActiveEnergy_1(float value);
+int getStatus_TCP_SysExpActiveEnergy_1(void);
+
+#define ID_TCP_SysActivePower_2 1040
+extern float TCP_SysActivePower_2;	/* 0x0C 0x1026 Potenza Attiva 0 in W (ESTERNI) */
+int doWrite_TCP_SysActivePower_2(float value);
+int addWrite_TCP_SysActivePower_2(float value);
+int getStatus_TCP_SysActivePower_2(void);
+
+#define ID_TCP_SysImpActiveEnergy_2 1041
+extern float TCP_SysImpActiveEnergy_2;	/* 0x0C 0x1106 Energia Attiva Importata 0 in Wh (ESTERNI) */
+int doWrite_TCP_SysImpActiveEnergy_2(float value);
+int addWrite_TCP_SysImpActiveEnergy_2(float value);
+int getStatus_TCP_SysImpActiveEnergy_2(void);
+
+#define ID_TCP_SysActivePower_3 1042
+extern float TCP_SysActivePower_3;	/* 0x0D 0x1026 Potenza Attiva 0 in W (PIANO SOPRA) */
+int doWrite_TCP_SysActivePower_3(float value);
+int addWrite_TCP_SysActivePower_3(float value);
+int getStatus_TCP_SysActivePower_3(void);
+
+#define ID_TCP_SysImpActiveEnergy_3 1043
+extern float TCP_SysImpActiveEnergy_3;	/* 0x0D 0x1106 Energia Attiva Importata 0 in Wh (PIANO SOPRA) */
+int doWrite_TCP_SysImpActiveEnergy_3(float value);
+int addWrite_TCP_SysImpActiveEnergy_3(float value);
+int getStatus_TCP_SysImpActiveEnergy_3(void);
+
+#define ID_TCP_SysActivePower_4 1044
+extern float TCP_SysActivePower_4;	/* 0x0E 0x1026 Potenza Attiva 0 in W (PIANO TERRA) */
+int doWrite_TCP_SysActivePower_4(float value);
+int addWrite_TCP_SysActivePower_4(float value);
+int getStatus_TCP_SysActivePower_4(void);
+
+#define ID_TCP_SysImpActiveEnergy_4 1045
+extern float TCP_SysImpActiveEnergy_4;	/* 0x0E 0x1106 Energia Attiva Importata 0 in Wh (PIANO TERRA) */
+int doWrite_TCP_SysImpActiveEnergy_4(float value);
+int addWrite_TCP_SysImpActiveEnergy_4(float value);
+int getStatus_TCP_SysImpActiveEnergy_4(void);
+
+#define ID_TCP_SysActivePower_5 1046
+extern float TCP_SysActivePower_5;	/* 0x0F 0x1026 Potenza Attiva 0 in W (PIANO SOTTO) */
+int doWrite_TCP_SysActivePower_5(float value);
+int addWrite_TCP_SysActivePower_5(float value);
+int getStatus_TCP_SysActivePower_5(void);
+
+#define ID_TCP_SysImpActiveEnergy_5 1047
+extern float TCP_SysImpActiveEnergy_5;	/* 0x0F 0x1106 Energia Attiva Importata 0 in Wh (PIANO SOTTO) */
+int doWrite_TCP_SysImpActiveEnergy_5(float value);
+int addWrite_TCP_SysImpActiveEnergy_5(float value);
+int getStatus_TCP_SysImpActiveEnergy_5(void);
+
+#define ID_TCP_SysActivePower_6 1048
+extern float TCP_SysActivePower_6;	/* 0x10 0x1026 Potenza Attiva 0 in W (AUTO ELETTRICA) */
+int doWrite_TCP_SysActivePower_6(float value);
+int addWrite_TCP_SysActivePower_6(float value);
+int getStatus_TCP_SysActivePower_6(void);
+
+#define ID_TCP_SysImpActiveEnergy_6 1049
+extern float TCP_SysImpActiveEnergy_6;	/* 0x10 0x1106 Energia Attiva Importata 0 in Wh (AUTO ELETTRICA) */
+int doWrite_TCP_SysImpActiveEnergy_6(float value);
+int addWrite_TCP_SysImpActiveEnergy_6(float value);
+int getStatus_TCP_SysImpActiveEnergy_6(void);
+
+#define ID_TCP_SysActivePower_7 1050
+extern float TCP_SysActivePower_7;	/* 0x11 0x1026 Potenza Attiva 0 in W (DEUMIDIFICATORE) */
+int doWrite_TCP_SysActivePower_7(float value);
+int addWrite_TCP_SysActivePower_7(float value);
+int getStatus_TCP_SysActivePower_7(void);
+
+#define ID_TCP_SysImpActiveEnergy_7 1051
+extern float TCP_SysImpActiveEnergy_7;	/* 0x11 0x1106 Energia Attiva Importata 0 in Wh (DEUMIDIFICATORE) */
+int doWrite_TCP_SysImpActiveEnergy_7(float value);
+int addWrite_TCP_SysImpActiveEnergy_7(float value);
+int getStatus_TCP_SysImpActiveEnergy_7(void);
+
+#define ID_TCP_SysActivePower_8 1052
+extern float TCP_SysActivePower_8;	/* 0x12 0x1026 Potenza Attiva 0 in W (LAVANDERIA) */
+int doWrite_TCP_SysActivePower_8(float value);
+int addWrite_TCP_SysActivePower_8(float value);
+int getStatus_TCP_SysActivePower_8(void);
+
+#define ID_TCP_SysImpActiveEnergy_8 1053
+extern float TCP_SysImpActiveEnergy_8;	/* 0x12 0x1106 Energia Attiva Importata 0 in Wh (LAVANDERIA) */
+int doWrite_TCP_SysImpActiveEnergy_8(float value);
+int addWrite_TCP_SysImpActiveEnergy_8(float value);
+int getStatus_TCP_SysImpActiveEnergy_8(void);
+
+#define ID_TCP_SysActivePower_9 1054
+extern float TCP_SysActivePower_9;	/* 0x13 0x1026 Potenza Attiva 0 in W (UPS) */
+int doWrite_TCP_SysActivePower_9(float value);
+int addWrite_TCP_SysActivePower_9(float value);
+int getStatus_TCP_SysActivePower_9(void);
+
+#define ID_TCP_SysApparentPower_9 1055
+extern float TCP_SysApparentPower_9;	/* 0x13 0x102E Potenza Apparente 0 in VA (UPS) */
+int doWrite_TCP_SysApparentPower_9(float value);
+int addWrite_TCP_SysApparentPower_9(float value);
+int getStatus_TCP_SysApparentPower_9(void);
+
+#define ID_TCP_SysImpActiveEnergy_9 1056
+extern float TCP_SysImpActiveEnergy_9;	/* 0x13 0x1106 Energia Attiva Importata 0 in Wh (UPS) */
+int doWrite_TCP_SysImpActiveEnergy_9(float value);
+int addWrite_TCP_SysImpActiveEnergy_9(float value);
+int getStatus_TCP_SysImpActiveEnergy_9(void);
+
+#define ID_TCP_SysActivePower_10 1057
+extern float TCP_SysActivePower_10;	/* 0x14 0x1026 Potenza Attiva 0 in W (Puffer) */
+int doWrite_TCP_SysActivePower_10(float value);
+int addWrite_TCP_SysActivePower_10(float value);
+int getStatus_TCP_SysActivePower_10(void);
+
+#define ID_TCP_SysImpActiveEnergy_10 1058
+extern float TCP_SysImpActiveEnergy_10;	/* 0x14 0x1106 Energia Attiva Importata 0 in Wh (Puffer) */
+int doWrite_TCP_SysImpActiveEnergy_10(float value);
+int addWrite_TCP_SysImpActiveEnergy_10(float value);
+int getStatus_TCP_SysImpActiveEnergy_10(void);
+
+#define ID_TCP_SysActivePower_11 1059
+extern float TCP_SysActivePower_11;	/* 0x14 0x1026 Potenza Attiva 0 in W (Caldaia) */
+int doWrite_TCP_SysActivePower_11(float value);
+int addWrite_TCP_SysActivePower_11(float value);
+int getStatus_TCP_SysActivePower_11(void);
+
+#define ID_TCP_SysImpActiveEnergy_11 1060
+extern float TCP_SysImpActiveEnergy_11;	/* 0x14 0x1106 Energia Attiva Importata 0 in Wh (Caldaia) */
+int doWrite_TCP_SysImpActiveEnergy_11(float value);
+int addWrite_TCP_SysImpActiveEnergy_11(float value);
+int getStatus_TCP_SysImpActiveEnergy_11(void);
+
 #define ID_RTU0_TYPE_PORT 5000
 extern u_int32_t RTU0_TYPE_PORT;
 int doWrite_RTU0_TYPE_PORT(u_int32_t value);

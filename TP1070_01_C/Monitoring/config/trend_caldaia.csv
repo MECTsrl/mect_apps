@@ -1,5 +1,5 @@
 L
-1;XX_AnIn_1                      ;FF0000;-10.0;70.0;Temperatura puffer
-1;XX_AnIn_2                      ;00007F;-10.0;70.0;Temperatura ritorno
+1;XX_AnIn_2                      ;0000FF;-10.0;70.0;Ritorno [°C]
+1;XX_AnIn_1                      ;FF0000;-10.0;70.0;Puffer [°C]
 1;is_Caldaia_ON                  ;007F7F;0.0;12.0;Caldaia ON/off
 1;XX_AnIn_A_1                    ;000000;-10.0;70.0;Temperatura esterna

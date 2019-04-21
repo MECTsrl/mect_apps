@@ -997,67 +997,67 @@
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
+3;P;TCP_is_Caldaia_ON              ;WORD_BIT ;1   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;0     ;1000;31  ;[RW]
+3;P;TCP_AnIn_A_1                   ;INT      ;1   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;1     ;1000;31  ;[RW]Analog input 1 value MPNC030 module A
+3;P;TCP_AnIn_A_2                   ;INT      ;1   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;2     ;1000;31  ;[RW]Analog input 2 value MPNC030 module A
+3;P;TCP_AnIn_A_3                   ;INT      ;1   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;3     ;1000;31  ;[RW]Analog input 3 value MPNC030 module A
+3;P;TCP_AnIn_A_4                   ;INT      ;1   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;4     ;1000;31  ;[RW]Analog input 4 value MPNC030 module A
+3;P;TCP_AnIn_B_1                   ;INT      ;1   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;5     ;1000;31  ;[RW]Analog input 1 value MPNC030 module B
+3;P;TCP_AnIn_B_2                   ;INT      ;1   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;6     ;1000;31  ;[RW]Analog input 2 value MPNC030 module B
+3;P;TCP_AnIn_B_3                   ;INT      ;1   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;7     ;1000;31  ;[RW]Analog input 3 value MPNC030 module B
+3;P;TCP_AnIn_B_4                   ;INT      ;1   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;8     ;1000;31  ;[RW]Analog input 4 value MPNC030 module B
+3;P;TCP_AnIn_C_1                   ;INT      ;1   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;9     ;1000;31  ;[RW]Analog input 1 value MPNC030 module C
+3;P;TCP_AnIn_C_2                   ;INT      ;1   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;10    ;1000;31  ;[RW]Analog input 2 value MPNC030 module C
+3;P;TCP_AnIn_C_3                   ;INT      ;1   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;11    ;1000;31  ;[RW]Analog input 3 value MPNC030 module C
+3;P;TCP_AnIn_C_4                   ;INT      ;1   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;12    ;1000;31  ;[RW]Analog input 3 value MPNC030 module C
+3;P;TCP_AnIn_1                     ;INT      ;1   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;13    ;1000;31  ;[RW]Analog input 1 value MPNC005
+3;P;TCP_AnIn_2                     ;INT      ;1   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;14    ;1000;31  ;[RW]Analog input 2 value MPNC005
+3;P;TCP_DigIn_1                    ;BYTE_BIT ;1   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;15    ;1000;31  ;[RW]Digital input 1 value MPNC005
+3;P;TCP_DigIn_2                    ;BYTE_BIT ;2   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;15    ;1000;31  ;[RW]Digital input 2 value MPNC005
+3;P;TCP_DigIn_3                    ;BYTE_BIT ;3   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;15    ;1000;31  ;[RW]Digital input 3 value MPNC005
+3;P;TCP_DigIn_4                    ;BYTE_BIT ;4   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;15    ;1000;31  ;[RW]Digital input 4 value MPNC005
+3;P;TCP_DigIn_5                    ;BYTE_BIT ;5   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;15    ;1000;31  ;[RW]Digital input 5 value MPNC005
+3;P;TCP_DigIn_6                    ;BYTE_BIT ;6   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;15    ;1000;31  ;[RW]Digital input 6 value MPNC005
+3;P;TCP_DigIn_7                    ;BYTE_BIT ;7   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;15    ;1000;31  ;[RW]Digital input 7 value MPNC005
+3;P;TCP_DigIn_8                    ;BYTE_BIT ;8   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;15    ;1000;31  ;[RW]Digital input 8 value MPNC005
+3;P;TCP_DigOut_1                   ;BYTE_BIT ;1   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;16    ;1000;31  ;[RW]Digital output 1 value MPNC005
+3;P;TCP_DigOut_2                   ;BYTE_BIT ;2   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;16    ;1000;31  ;[RW]Digital output 2 value MPNC005
+3;P;TCP_DigOut_3                   ;BYTE_BIT ;3   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;16    ;1000;31  ;[RW]Digital output 3 value MPNC005
+3;P;TCP_DigOut_4                   ;BYTE_BIT ;4   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;16    ;1000;31  ;[RW]Digital output 4 value MPNC005
+3;P;TCP_DigOut_5                   ;BYTE_BIT ;5   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;16    ;1000;31  ;[RW]Digital output 5 value MPNC005
+3;P;TCP_DigOut_6                   ;BYTE_BIT ;6   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;16    ;1000;31  ;[RW]Digital output 6 value MPNC005
+3;P;TCP_DigOut_7                   ;BYTE_BIT ;7   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;16    ;1000;31  ;[RW]Digital output 7 value MPNC005
+3;P;TCP_DigOut_8                   ;BYTE_BIT ;8   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;16    ;1000;31  ;[RW]Digital output 8 value MPNC005
 ;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
+3;P;TCP_SystemVoltage_0            ;REALCDAB ;1   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;17    ;1032;29  ;[RW]0x0A 0x100C Tensione in V (PRINCIPALE)
+3;P;TCP_SysPowerFactor_0           ;REALCDAB ;3   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;19    ;1032;29  ;[RW]0x0A 0x101E Fattore di Potenza 0 (PRINCIPALE)
+3;P;TCP_SysActivePower_0           ;REALCDAB ;0   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;21    ;1032;29  ;[RW]0x0A 0x1026 Potenza Attiva 0 in W (PRINCIPALE)
+3;P;TCP_SysImpActiveEnergy_0       ;REALCDAB ;1   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;23    ;1032;29  ;[RW]0x0A 0x1106 Energia Attiva Importata 0 in Wh (PRINCIPALE)
+3;P;TCP_SysExpActiveEnergy_0       ;REALCDAB ;1   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;25    ;1032;29  ;[RW]0x0A 0x110E Energia Attiva Esportata 0 in Wh (PRINCIPALE)
+3;P;TCP_SysActivePower_1           ;REALCDAB ;0   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;27    ;1032;29  ;[RW]0x0B 0x1026 Potenza Attiva 0 in W (FOTOVOLTAICO)
+3;P;TCP_SysImpActiveEnergy_1       ;REALCDAB ;1   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;29    ;1032;29  ;[RW]0x0B 0x1106 Energia Attiva Importata 1 in Wh (FOTOVOLTAICO)
+3;P;TCP_SysExpActiveEnergy_1       ;REALCDAB ;1   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;31    ;1032;29  ;[RW]0x0B 0x110E Energia Attiva Esportata 0 in Wh (FOTOVOLTAICO)
+3;P;TCP_SysActivePower_2           ;REALCDAB ;0   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;33    ;1032;29  ;[RW]0x0C 0x1026 Potenza Attiva 0 in W (ESTERNI)
+3;P;TCP_SysImpActiveEnergy_2       ;REALCDAB ;1   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;35    ;1032;29  ;[RW]0x0C 0x1106 Energia Attiva Importata 0 in Wh (ESTERNI)
+3;P;TCP_SysActivePower_3           ;REALCDAB ;0   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;37    ;1032;29  ;[RW]0x0D 0x1026 Potenza Attiva 0 in W (PIANO SOPRA)
+3;P;TCP_SysImpActiveEnergy_3       ;REALCDAB ;1   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;39    ;1032;29  ;[RW]0x0D 0x1106 Energia Attiva Importata 0 in Wh (PIANO SOPRA)
+3;P;TCP_SysActivePower_4           ;REALCDAB ;0   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;41    ;1032;29  ;[RW]0x0E 0x1026 Potenza Attiva 0 in W (PIANO TERRA)
+3;P;TCP_SysImpActiveEnergy_4       ;REALCDAB ;1   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;43    ;1032;29  ;[RW]0x0E 0x1106 Energia Attiva Importata 0 in Wh (PIANO TERRA)
+3;P;TCP_SysActivePower_5           ;REALCDAB ;0   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;45    ;1032;29  ;[RW]0x0F 0x1026 Potenza Attiva 0 in W (PIANO SOTTO)
+3;P;TCP_SysImpActiveEnergy_5       ;REALCDAB ;1   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;47    ;1032;29  ;[RW]0x0F 0x1106 Energia Attiva Importata 0 in Wh (PIANO SOTTO)
+3;P;TCP_SysActivePower_6           ;REALCDAB ;0   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;49    ;1032;29  ;[RW]0x10 0x1026 Potenza Attiva 0 in W (AUTO ELETTRICA)
+3;P;TCP_SysImpActiveEnergy_6       ;REALCDAB ;1   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;51    ;1032;29  ;[RW]0x10 0x1106 Energia Attiva Importata 0 in Wh (AUTO ELETTRICA)
+3;P;TCP_SysActivePower_7           ;REALCDAB ;0   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;53    ;1032;29  ;[RW]0x11 0x1026 Potenza Attiva 0 in W (DEUMIDIFICATORE)
+3;P;TCP_SysImpActiveEnergy_7       ;REALCDAB ;1   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;55    ;1032;29  ;[RW]0x11 0x1106 Energia Attiva Importata 0 in Wh (DEUMIDIFICATORE)
+3;P;TCP_SysActivePower_8           ;REALCDAB ;0   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;57    ;1032;29  ;[RW]0x12 0x1026 Potenza Attiva 0 in W (LAVANDERIA)
+3;P;TCP_SysImpActiveEnergy_8       ;REALCDAB ;1   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;59    ;1032;29  ;[RW]0x12 0x1106 Energia Attiva Importata 0 in Wh (LAVANDERIA)
+3;P;TCP_SysActivePower_9           ;REALCDAB ;0   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;61    ;1032;29  ;[RW]0x13 0x1026 Potenza Attiva 0 in W (UPS)
+3;P;TCP_SysApparentPower_9         ;REALCDAB ;0   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;63    ;1032;29  ;[RW]0x13 0x102E Potenza Apparente 0 in VA (UPS)
+3;P;TCP_SysImpActiveEnergy_9       ;REALCDAB ;1   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;65    ;1032;29  ;[RW]0x13 0x1106 Energia Attiva Importata 0 in Wh (UPS)
+3;P;TCP_SysActivePower_10          ;REALCDAB ;0   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;67    ;1032;29  ;[RW]0x14 0x1026 Potenza Attiva 0 in W (Puffer)
+3;P;TCP_SysImpActiveEnergy_10      ;REALCDAB ;1   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;69    ;1032;29  ;[RW]0x14 0x1106 Energia Attiva Importata 0 in Wh (Puffer)
+3;P;TCP_SysActivePower_11          ;REALCDAB ;0   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;71    ;1032;29  ;[RW]0x14 0x1026 Potenza Attiva 0 in W (Caldaia)
+3;P;TCP_SysImpActiveEnergy_11      ;REALCDAB ;1   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;73    ;1032;29  ;[RW]0x14 0x1106 Energia Attiva Importata 0 in Wh (Caldaia)
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
