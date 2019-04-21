@@ -1,0 +1,6 @@
+L
+1;TCP_SysActivePower_0 ;FF0000;-4000;4000;Scambio [kW]
+1;TCP_SysActivePower_1 ;00AA00;-4000;4000;Fotovoltaico [kW]
+1;TCP_SysActivePower_7 ;00AA00;-4000;4000;Puffer 0.5 [kW]
+1;TCP_SysActivePower_10;00AA00;-4000;4000;Puffer 1.5 [kW]
+

@@ -1,0 +1,5 @@
+L
+1;TCP_AnIn_2         ;0000FF;-10.0;70.0;Ritorno [°C]
+1;TCP_AnIn_1         ;FF0000;-10.0;70.0;Puffer [°C]
+1;TCP_SysActivePower_7 ;00AA00;-4000;4000;Puffer 0.5 [kW]
+1;TCP_SysActivePower_10;00AA00;-4000;4000;Puffer 1.5 [kW]
