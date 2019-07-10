@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 2.7.84, 2019-04-21T23:18:11. -->
+<!-- Written by QtCreator 2.7.84, 2019-07-10T18:47:03. -->
 <qtcreator>
  <data>
   <variable>ProjectExplorer.Project.ActiveTarget</variable>
@@ -443,10 +443,10 @@
        <value type="QDateTime">2019-03-04T18:28:24</value>
        <value type="QDateTime">2019-03-18T15:53:39</value>
        <value type="QDateTime">2018-12-05T15:23:54</value>
-       <value type="QDateTime">2019-04-21T23:14:35</value>
+       <value type="QDateTime">2019-07-10T15:55:49</value>
        <value type="QDateTime">2019-03-18T15:53:39</value>
        <value type="QDateTime">2019-03-04T18:28:25</value>
-       <value type="QDateTime">2019-04-21T23:14:35</value>
+       <value type="QDateTime">2019-07-10T15:55:50</value>
        <value type="QDateTime">2018-12-11T11:20:52</value>
        <value type="QDateTime">2019-03-04T18:28:26</value>
        <value type="QDateTime">2019-03-04T18:28:24</value>
@@ -461,33 +461,33 @@
        <value type="QDateTime">2019-03-04T18:28:24</value>
        <value type="QDateTime">2019-01-31T16:24:54</value>
        <value type="QDateTime">2019-03-18T15:53:40</value>
-       <value type="QDateTime">2019-04-21T23:14:37</value>
+       <value type="QDateTime">2019-07-10T15:55:51</value>
        <value type="QDateTime">2019-03-18T15:53:39</value>
        <value type="QDateTime">2018-09-30T13:46:13</value>
-       <value type="QDateTime">2019-04-21T23:14:36</value>
+       <value type="QDateTime">2019-07-10T15:55:50</value>
        <value type="QDateTime">2019-03-04T18:28:24</value>
-       <value type="QDateTime">2019-04-21T23:14:34</value>
+       <value type="QDateTime">2019-07-10T15:55:49</value>
        <value type="QDateTime">2019-03-18T15:53:38</value>
        <value type="QDateTime">2019-03-18T15:53:39</value>
        <value type="QDateTime">2018-12-07T10:39:42</value>
        <value type="QDateTime">2019-01-31T16:24:54</value>
-       <value type="QDateTime">2019-04-21T23:14:39</value>
+       <value type="QDateTime">2019-07-10T15:55:55</value>
        <value type="QDateTime">2018-10-02T20:08:38</value>
-       <value type="QDateTime">2019-04-21T23:14:34</value>
+       <value type="QDateTime">2019-07-10T15:55:49</value>
        <value type="QDateTime">2018-12-07T10:39:42</value>
        <value type="QDateTime">2018-10-02T20:08:36</value>
        <value type="QDateTime">2019-01-31T16:24:53</value>
        <value type="QDateTime">2019-01-31T16:24:54</value>
        <value type="QDateTime">2019-03-04T18:28:24</value>
        <value type="QDateTime">2018-12-05T15:23:53</value>
-       <value type="QDateTime">2019-04-21T23:14:36</value>
+       <value type="QDateTime">2019-07-10T15:55:51</value>
        <value type="QDateTime">2019-03-04T18:28:24</value>
        <value type="QDateTime">2018-12-07T10:39:42</value>
        <value type="QDateTime">2019-03-18T15:53:43</value>
        <value type="QDateTime">2019-03-04T18:28:24</value>
-       <value type="QDateTime">2019-04-21T23:14:36</value>
+       <value type="QDateTime">2019-07-10T15:55:51</value>
        <value type="QDateTime">2019-01-31T16:24:54</value>
-       <value type="QDateTime">2019-04-21T23:14:35</value>
+       <value type="QDateTime">2019-07-10T15:55:50</value>
        <value type="QDateTime">2019-03-18T15:53:38</value>
        <value type="QDateTime">2018-12-05T15:23:52</value>
        <value type="QDateTime">2018-09-30T13:46:11</value>
@@ -495,10 +495,10 @@
        <value type="QDateTime">2018-12-07T10:39:42</value>
        <value type="QDateTime">2019-03-04T18:28:24</value>
        <value type="QDateTime">2019-01-31T16:24:54</value>
-       <value type="QDateTime">2019-04-21T23:14:37</value>
+       <value type="QDateTime">2019-07-10T15:55:51</value>
        <value type="QDateTime">2019-03-04T18:28:24</value>
        <value type="QDateTime">2018-12-05T15:24:09</value>
-       <value type="QDateTime">2019-04-21T23:14:35</value>
+       <value type="QDateTime">2019-07-10T15:55:49</value>
       </valuelist>
       <value type="bool" key="RemoteLinux.GenericDirectUploadStep.Incremental">false</value>
      </valuemap>

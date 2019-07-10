@@ -18,6 +18,7 @@ RESOURCE Resource1
         PROGRAM Normal_Inst1 WITH  Task4_Normal_100ms: Normal;
         PROGRAM Slow_Inst1 WITH  Task5_Slow_1000ms: Slow;
         PROGRAM VerySlow_Inst1 WITH  Task6_VerySlow_5minutes: VerySlow;
+        PROGRAM CheckDigIO_Inst1 WITH  Task4_Normal_100ms: CheckDigIO;
         
 END_RESOURCE
 

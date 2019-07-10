@@ -21,6 +21,54 @@ VAR_GLOBAL
 	XX_AnIn_C_2 AT %IW0.868:INT;	(* Analog input 2 value MPNC030 module C *)
 	XX_AnIn_C_3 AT %IW0.872:INT;	(* Analog input 3 value MPNC030 module C *)
 	XX_AnIn_C_4 AT %IW0.876:INT;	(* Analog input 4 value MPNC030 module C *)
+	XX_DigOut_A_1 AT %QX0.896.0:BOOL;	(* Digital output value bit 1 MPNC020 02 module A *)
+	XX_DigOut_A_2 AT %QX0.900.0:BOOL;	(* Digital output value bit 2 MPNC020 02 module A *)
+	XX_DigOut_A_3 AT %QX0.904.0:BOOL;	(* Digital output value bit 3 MPNC020 02 module A *)
+	XX_DigOut_A_4 AT %QX0.908.0:BOOL;	(* Digital output value bit 4 MPNC020 02 module A *)
+	XX_DigOut_A_5 AT %QX0.912.0:BOOL;	(* Digital output value bit 5 MPNC020 02 module A *)
+	XX_DigOut_A_6 AT %QX0.916.0:BOOL;	(* Digital output value bit 6 MPNC020 02 module A *)
+	XX_DigOut_A_7 AT %QX0.920.0:BOOL;	(* Digital output value bit 7 MPNC020 02 module A *)
+	XX_DigOut_A_8 AT %QX0.924.0:BOOL;	(* Digital output value bit 8 MPNC020 02 module A *)
+	XX_DigOut_A_9 AT %QX0.928.0:BOOL;	(* Digital output value bit 9 MPNC020 02 module A *)
+	XX_DigOut_A_10 AT %QX0.932.0:BOOL;	(* Digital output value bit 10 MPNC020 02 module A *)
+	XX_DigOut_A_11 AT %QX0.936.0:BOOL;	(* Digital output value bit 11 MPNC020 02 module A *)
+	XX_DigOut_A_12 AT %QX0.940.0:BOOL;	(* Digital output value bit 12 MPNC020 02 module A *)
+	XX_DigOut_A_13 AT %QX0.944.0:BOOL;	(* Digital output value bit 13 MPNC020 02 module A *)
+	XX_DigOut_A_14 AT %QX0.948.0:BOOL;	(* Digital output value bit 14 MPNC020 02 module A *)
+	XX_DigOut_A_15 AT %QX0.952.0:BOOL;	(* Digital output value bit 15 MPNC020 02 module A *)
+	XX_DigOut_A_16 AT %QX0.956.0:BOOL;	(* Digital output value bit 16 MPNC020 02 module A *)
+	XX_DigIn_A_1 AT %IX0.1152.0:BOOL;	(* Digital input value bit 1 MPNC020 01 module A *)
+	XX_DigIn_A_2 AT %IX0.1156.0:BOOL;	(* Digital input value bit 2 MPNC020 01 module A *)
+	XX_DigIn_A_3 AT %IX0.1160.0:BOOL;	(* Digital input value bit 3 MPNC020 01 module A *)
+	XX_DigIn_A_4 AT %IX0.1164.0:BOOL;	(* Digital input value bit 4 MPNC020 01 module A *)
+	XX_DigIn_A_5 AT %IX0.1168.0:BOOL;	(* Digital input value bit 5 MPNC020 01 module A *)
+	XX_DigIn_A_6 AT %IX0.1172.0:BOOL;	(* Digital input value bit 6 MPNC020 01 module A *)
+	XX_DigIn_A_7 AT %IX0.1176.0:BOOL;	(* Digital input value bit 7 MPNC020 01 module A *)
+	XX_DigIn_A_8 AT %IX0.1180.0:BOOL;	(* Digital input value bit 8 MPNC020 01 module A *)
+	XX_DigIn_A_9 AT %IX0.1184.0:BOOL;	(* Digital input value bit 9 MPNC020 01 module A *)
+	XX_DigIn_A_10 AT %IX0.1188.0:BOOL;	(* Digital input value bit 10 MPNC020 01 module A *)
+	XX_DigIn_A_11 AT %IX0.1192.0:BOOL;	(* Digital input value bit 11 MPNC020 01 module A *)
+	XX_DigIn_A_12 AT %IX0.1196.0:BOOL;	(* Digital input value bit 12 MPNC020 01 module A *)
+	XX_DigIn_A_13 AT %IX0.1200.0:BOOL;	(* Digital input value bit 13 MPNC020 01 module A *)
+	XX_DigIn_A_14 AT %IX0.1204.0:BOOL;	(* Digital input value bit 14 MPNC020 01 module A *)
+	XX_DigIn_A_15 AT %IX0.1208.0:BOOL;	(* Digital input value bit 15 MPNC020 01 module A *)
+	XX_DigIn_A_16 AT %IX0.1212.0:BOOL;	(* Digital input value bit 16 MPNC020 01 module A *)
+	XX_DigIn_B_1 AT %IX0.1216.0:BOOL;	(* Digital input value bit 1 MPNC020 01 module B *)
+	XX_DigIn_B_2 AT %IX0.1220.0:BOOL;	(* Digital input value bit 2 MPNC020 01 module B *)
+	XX_DigIn_B_3 AT %IX0.1224.0:BOOL;	(* Digital input value bit 3 MPNC020 01 module B *)
+	XX_DigIn_B_4 AT %IX0.1228.0:BOOL;	(* Digital input value bit 4 MPNC020 01 module B *)
+	XX_DigIn_B_5 AT %IX0.1232.0:BOOL;	(* Digital input value bit 5 MPNC020 01 module B *)
+	XX_DigIn_B_6 AT %IX0.1236.0:BOOL;	(* Digital input value bit 6 MPNC020 01 module B *)
+	XX_DigIn_B_7 AT %IX0.1240.0:BOOL;	(* Digital input value bit 7 MPNC020 01 module B *)
+	XX_DigIn_B_8 AT %IX0.1244.0:BOOL;	(* Digital input value bit 8 MPNC020 01 module B *)
+	XX_DigIn_B_9 AT %IX0.1248.0:BOOL;	(* Digital input value bit 9 MPNC020 01 module B *)
+	XX_DigIn_B_10 AT %IX0.1252.0:BOOL;	(* Digital input value bit 10 MPNC020 01 module B *)
+	XX_DigIn_B_11 AT %IX0.1256.0:BOOL;	(* Digital input value bit 11 MPNC020 01 module B *)
+	XX_DigIn_B_12 AT %IX0.1260.0:BOOL;	(* Digital input value bit 12 MPNC020 01 module B *)
+	XX_DigIn_B_13 AT %IX0.1264.0:BOOL;	(* Digital input value bit 13 MPNC020 01 module B *)
+	XX_DigIn_B_14 AT %IX0.1268.0:BOOL;	(* Digital input value bit 14 MPNC020 01 module B *)
+	XX_DigIn_B_15 AT %IX0.1272.0:BOOL;	(* Digital input value bit 15 MPNC020 01 module B *)
+	XX_DigIn_B_16 AT %IX0.1276.0:BOOL;	(* Digital input value bit 16 MPNC020 01 module B *)
 	XX_Reserved_1 AT %IW0.1408:UINT;
 	XX_Reserved_2 AT %IW0.1412:UINT;
 	XX_ColdJunctionT AT %IW0.1416:INT;	(* Cold junction temperature value *)
@@ -90,6 +138,39 @@ VAR_GLOBAL
 	SysImpActiveEnergy_10 AT %ID0.1760:REAL;	(* 0x14 0x1106 Energia Attiva Importata 0 in Wh (Puffer) *)
 	SysActivePower_11 AT %QD0.1764:REAL;	(* 0x14 0x1026 Potenza Attiva 0 in W (Caldaia) *)
 	SysImpActiveEnergy_11 AT %QD0.1768:REAL;	(* 0x14 0x1106 Energia Attiva Importata 0 in Wh (Caldaia) *)
+	Alarm AT %QX0.2000.0:BOOL;
+	OK_DigIn_A_1 AT %QX0.2004.0:BOOL;
+	OK_DigIn_A_2 AT %QX0.2008.0:BOOL;
+	OK_DigIn_A_3 AT %QX0.2012.0:BOOL;
+	OK_DigIn_A_4 AT %QX0.2016.0:BOOL;
+	OK_DigIn_A_5 AT %QX0.2020.0:BOOL;
+	OK_DigIn_A_6 AT %QX0.2024.0:BOOL;
+	OK_DigIn_A_7 AT %QX0.2028.0:BOOL;
+	OK_DigIn_A_8 AT %QX0.2032.0:BOOL;
+	OK_DigIn_A_9 AT %QX0.2036.0:BOOL;
+	OK_DigIn_A_10 AT %QX0.2040.0:BOOL;
+	OK_DigIn_A_11 AT %QX0.2044.0:BOOL;
+	OK_DigIn_A_12 AT %QX0.2048.0:BOOL;
+	OK_DigIn_A_13 AT %QX0.2052.0:BOOL;
+	OK_DigIn_A_14 AT %QX0.2056.0:BOOL;
+	OK_DigIn_A_15 AT %QX0.2060.0:BOOL;
+	OK_DigIn_A_16 AT %QX0.2064.0:BOOL;
+	OK_DigIn_B_1 AT %QX0.2068.0:BOOL;
+	OK_DigIn_B_2 AT %QX0.2072.0:BOOL;
+	OK_DigIn_B_3 AT %QX0.2076.0:BOOL;
+	OK_DigIn_B_4 AT %QX0.2080.0:BOOL;
+	OK_DigIn_B_5 AT %QX0.2084.0:BOOL;
+	OK_DigIn_B_6 AT %QX0.2088.0:BOOL;
+	OK_DigIn_B_7 AT %QX0.2092.0:BOOL;
+	OK_DigIn_B_8 AT %QX0.2096.0:BOOL;
+	OK_DigIn_B_9 AT %QX0.2100.0:BOOL;
+	OK_DigIn_B_10 AT %QX0.2104.0:BOOL;
+	OK_DigIn_B_11 AT %QX0.2108.0:BOOL;
+	OK_DigIn_B_12 AT %QX0.2112.0:BOOL;
+	OK_DigIn_B_13 AT %QX0.2116.0:BOOL;
+	OK_DigIn_B_14 AT %QX0.2120.0:BOOL;
+	OK_DigIn_B_15 AT %QX0.2124.0:BOOL;
+	OK_DigIn_B_16 AT %QX0.2128.0:BOOL;
 	TCP_is_Caldaia_ON AT %QX0.4000.0:BOOL;
 	TCP_AnIn_A_1 AT %QW0.4004:INT;	(* Analog input 1 value MPNC030 module A *)
 	TCP_AnIn_A_2 AT %QW0.4008:INT;	(* Analog input 2 value MPNC030 module A *)

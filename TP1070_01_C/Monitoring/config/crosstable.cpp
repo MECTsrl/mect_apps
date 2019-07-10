@@ -182,6 +182,342 @@ int16_t XX_AnIn_C_4 = 0;
 
 
 /*
+ * Variable XX_DigOut_A_1	[ Digital output value bit 1 MPNC020 02 module A ]
+ */
+
+int XX_DigOut_A_1 = 0;
+
+
+/*
+ * Variable XX_DigOut_A_2	[ Digital output value bit 2 MPNC020 02 module A ]
+ */
+
+int XX_DigOut_A_2 = 0;
+
+
+/*
+ * Variable XX_DigOut_A_3	[ Digital output value bit 3 MPNC020 02 module A ]
+ */
+
+int XX_DigOut_A_3 = 0;
+
+
+/*
+ * Variable XX_DigOut_A_4	[ Digital output value bit 4 MPNC020 02 module A ]
+ */
+
+int XX_DigOut_A_4 = 0;
+
+
+/*
+ * Variable XX_DigOut_A_5	[ Digital output value bit 5 MPNC020 02 module A ]
+ */
+
+int XX_DigOut_A_5 = 0;
+
+
+/*
+ * Variable XX_DigOut_A_6	[ Digital output value bit 6 MPNC020 02 module A ]
+ */
+
+int XX_DigOut_A_6 = 0;
+
+
+/*
+ * Variable XX_DigOut_A_7	[ Digital output value bit 7 MPNC020 02 module A ]
+ */
+
+int XX_DigOut_A_7 = 0;
+
+
+/*
+ * Variable XX_DigOut_A_8	[ Digital output value bit 8 MPNC020 02 module A ]
+ */
+
+int XX_DigOut_A_8 = 0;
+
+
+/*
+ * Variable XX_DigOut_A_9	[ Digital output value bit 9 MPNC020 02 module A ]
+ */
+
+int XX_DigOut_A_9 = 0;
+
+
+/*
+ * Variable XX_DigOut_A_10	[ Digital output value bit 10 MPNC020 02 module A ]
+ */
+
+int XX_DigOut_A_10 = 0;
+
+
+/*
+ * Variable XX_DigOut_A_11	[ Digital output value bit 11 MPNC020 02 module A ]
+ */
+
+int XX_DigOut_A_11 = 0;
+
+
+/*
+ * Variable XX_DigOut_A_12	[ Digital output value bit 12 MPNC020 02 module A ]
+ */
+
+int XX_DigOut_A_12 = 0;
+
+
+/*
+ * Variable XX_DigOut_A_13	[ Digital output value bit 13 MPNC020 02 module A ]
+ */
+
+int XX_DigOut_A_13 = 0;
+
+
+/*
+ * Variable XX_DigOut_A_14	[ Digital output value bit 14 MPNC020 02 module A ]
+ */
+
+int XX_DigOut_A_14 = 0;
+
+
+/*
+ * Variable XX_DigOut_A_15	[ Digital output value bit 15 MPNC020 02 module A ]
+ */
+
+int XX_DigOut_A_15 = 0;
+
+
+/*
+ * Variable XX_DigOut_A_16	[ Digital output value bit 16 MPNC020 02 module A ]
+ */
+
+int XX_DigOut_A_16 = 0;
+
+
+/*
+ * Variable XX_DigIn_A_1	[ Digital input value bit 1 MPNC020 01 module A ]
+ */
+
+int XX_DigIn_A_1 = 0;
+
+
+/*
+ * Variable XX_DigIn_A_2	[ Digital input value bit 2 MPNC020 01 module A ]
+ */
+
+int XX_DigIn_A_2 = 0;
+
+
+/*
+ * Variable XX_DigIn_A_3	[ Digital input value bit 3 MPNC020 01 module A ]
+ */
+
+int XX_DigIn_A_3 = 0;
+
+
+/*
+ * Variable XX_DigIn_A_4	[ Digital input value bit 4 MPNC020 01 module A ]
+ */
+
+int XX_DigIn_A_4 = 0;
+
+
+/*
+ * Variable XX_DigIn_A_5	[ Digital input value bit 5 MPNC020 01 module A ]
+ */
+
+int XX_DigIn_A_5 = 0;
+
+
+/*
+ * Variable XX_DigIn_A_6	[ Digital input value bit 6 MPNC020 01 module A ]
+ */
+
+int XX_DigIn_A_6 = 0;
+
+
+/*
+ * Variable XX_DigIn_A_7	[ Digital input value bit 7 MPNC020 01 module A ]
+ */
+
+int XX_DigIn_A_7 = 0;
+
+
+/*
+ * Variable XX_DigIn_A_8	[ Digital input value bit 8 MPNC020 01 module A ]
+ */
+
+int XX_DigIn_A_8 = 0;
+
+
+/*
+ * Variable XX_DigIn_A_9	[ Digital input value bit 9 MPNC020 01 module A ]
+ */
+
+int XX_DigIn_A_9 = 0;
+
+
+/*
+ * Variable XX_DigIn_A_10	[ Digital input value bit 10 MPNC020 01 module A ]
+ */
+
+int XX_DigIn_A_10 = 0;
+
+
+/*
+ * Variable XX_DigIn_A_11	[ Digital input value bit 11 MPNC020 01 module A ]
+ */
+
+int XX_DigIn_A_11 = 0;
+
+
+/*
+ * Variable XX_DigIn_A_12	[ Digital input value bit 12 MPNC020 01 module A ]
+ */
+
+int XX_DigIn_A_12 = 0;
+
+
+/*
+ * Variable XX_DigIn_A_13	[ Digital input value bit 13 MPNC020 01 module A ]
+ */
+
+int XX_DigIn_A_13 = 0;
+
+
+/*
+ * Variable XX_DigIn_A_14	[ Digital input value bit 14 MPNC020 01 module A ]
+ */
+
+int XX_DigIn_A_14 = 0;
+
+
+/*
+ * Variable XX_DigIn_A_15	[ Digital input value bit 15 MPNC020 01 module A ]
+ */
+
+int XX_DigIn_A_15 = 0;
+
+
+/*
+ * Variable XX_DigIn_A_16	[ Digital input value bit 16 MPNC020 01 module A ]
+ */
+
+int XX_DigIn_A_16 = 0;
+
+
+/*
+ * Variable XX_DigIn_B_1	[ Digital input value bit 1 MPNC020 01 module B ]
+ */
+
+int XX_DigIn_B_1 = 0;
+
+
+/*
+ * Variable XX_DigIn_B_2	[ Digital input value bit 2 MPNC020 01 module B ]
+ */
+
+int XX_DigIn_B_2 = 0;
+
+
+/*
+ * Variable XX_DigIn_B_3	[ Digital input value bit 3 MPNC020 01 module B ]
+ */
+
+int XX_DigIn_B_3 = 0;
+
+
+/*
+ * Variable XX_DigIn_B_4	[ Digital input value bit 4 MPNC020 01 module B ]
+ */
+
+int XX_DigIn_B_4 = 0;
+
+
+/*
+ * Variable XX_DigIn_B_5	[ Digital input value bit 5 MPNC020 01 module B ]
+ */
+
+int XX_DigIn_B_5 = 0;
+
+
+/*
+ * Variable XX_DigIn_B_6	[ Digital input value bit 6 MPNC020 01 module B ]
+ */
+
+int XX_DigIn_B_6 = 0;
+
+
+/*
+ * Variable XX_DigIn_B_7	[ Digital input value bit 7 MPNC020 01 module B ]
+ */
+
+int XX_DigIn_B_7 = 0;
+
+
+/*
+ * Variable XX_DigIn_B_8	[ Digital input value bit 8 MPNC020 01 module B ]
+ */
+
+int XX_DigIn_B_8 = 0;
+
+
+/*
+ * Variable XX_DigIn_B_9	[ Digital input value bit 9 MPNC020 01 module B ]
+ */
+
+int XX_DigIn_B_9 = 0;
+
+
+/*
+ * Variable XX_DigIn_B_10	[ Digital input value bit 10 MPNC020 01 module B ]
+ */
+
+int XX_DigIn_B_10 = 0;
+
+
+/*
+ * Variable XX_DigIn_B_11	[ Digital input value bit 11 MPNC020 01 module B ]
+ */
+
+int XX_DigIn_B_11 = 0;
+
+
+/*
+ * Variable XX_DigIn_B_12	[ Digital input value bit 12 MPNC020 01 module B ]
+ */
+
+int XX_DigIn_B_12 = 0;
+
+
+/*
+ * Variable XX_DigIn_B_13	[ Digital input value bit 13 MPNC020 01 module B ]
+ */
+
+int XX_DigIn_B_13 = 0;
+
+
+/*
+ * Variable XX_DigIn_B_14	[ Digital input value bit 14 MPNC020 01 module B ]
+ */
+
+int XX_DigIn_B_14 = 0;
+
+
+/*
+ * Variable XX_DigIn_B_15	[ Digital input value bit 15 MPNC020 01 module B ]
+ */
+
+int XX_DigIn_B_15 = 0;
+
+
+/*
+ * Variable XX_DigIn_B_16	[ Digital input value bit 16 MPNC020 01 module B ]
+ */
+
+int XX_DigIn_B_16 = 0;
+
+
+/*
  * Variable XX_Reserved_1
  */
 
@@ -662,6 +998,237 @@ float SysActivePower_11 = 0;
  */
 
 float SysImpActiveEnergy_11 = 0;
+
+
+/*
+ * Variable Alarm
+ */
+
+int Alarm = 0;
+
+
+/*
+ * Variable OK_DigIn_A_1
+ */
+
+int OK_DigIn_A_1 = 0;
+
+
+/*
+ * Variable OK_DigIn_A_2
+ */
+
+int OK_DigIn_A_2 = 0;
+
+
+/*
+ * Variable OK_DigIn_A_3
+ */
+
+int OK_DigIn_A_3 = 0;
+
+
+/*
+ * Variable OK_DigIn_A_4
+ */
+
+int OK_DigIn_A_4 = 0;
+
+
+/*
+ * Variable OK_DigIn_A_5
+ */
+
+int OK_DigIn_A_5 = 0;
+
+
+/*
+ * Variable OK_DigIn_A_6
+ */
+
+int OK_DigIn_A_6 = 0;
+
+
+/*
+ * Variable OK_DigIn_A_7
+ */
+
+int OK_DigIn_A_7 = 0;
+
+
+/*
+ * Variable OK_DigIn_A_8
+ */
+
+int OK_DigIn_A_8 = 0;
+
+
+/*
+ * Variable OK_DigIn_A_9
+ */
+
+int OK_DigIn_A_9 = 0;
+
+
+/*
+ * Variable OK_DigIn_A_10
+ */
+
+int OK_DigIn_A_10 = 0;
+
+
+/*
+ * Variable OK_DigIn_A_11
+ */
+
+int OK_DigIn_A_11 = 0;
+
+
+/*
+ * Variable OK_DigIn_A_12
+ */
+
+int OK_DigIn_A_12 = 0;
+
+
+/*
+ * Variable OK_DigIn_A_13
+ */
+
+int OK_DigIn_A_13 = 0;
+
+
+/*
+ * Variable OK_DigIn_A_14
+ */
+
+int OK_DigIn_A_14 = 0;
+
+
+/*
+ * Variable OK_DigIn_A_15
+ */
+
+int OK_DigIn_A_15 = 0;
+
+
+/*
+ * Variable OK_DigIn_A_16
+ */
+
+int OK_DigIn_A_16 = 0;
+
+
+/*
+ * Variable OK_DigIn_B_1
+ */
+
+int OK_DigIn_B_1 = 0;
+
+
+/*
+ * Variable OK_DigIn_B_2
+ */
+
+int OK_DigIn_B_2 = 0;
+
+
+/*
+ * Variable OK_DigIn_B_3
+ */
+
+int OK_DigIn_B_3 = 0;
+
+
+/*
+ * Variable OK_DigIn_B_4
+ */
+
+int OK_DigIn_B_4 = 0;
+
+
+/*
+ * Variable OK_DigIn_B_5
+ */
+
+int OK_DigIn_B_5 = 0;
+
+
+/*
+ * Variable OK_DigIn_B_6
+ */
+
+int OK_DigIn_B_6 = 0;
+
+
+/*
+ * Variable OK_DigIn_B_7
+ */
+
+int OK_DigIn_B_7 = 0;
+
+
+/*
+ * Variable OK_DigIn_B_8
+ */
+
+int OK_DigIn_B_8 = 0;
+
+
+/*
+ * Variable OK_DigIn_B_9
+ */
+
+int OK_DigIn_B_9 = 0;
+
+
+/*
+ * Variable OK_DigIn_B_10
+ */
+
+int OK_DigIn_B_10 = 0;
+
+
+/*
+ * Variable OK_DigIn_B_11
+ */
+
+int OK_DigIn_B_11 = 0;
+
+
+/*
+ * Variable OK_DigIn_B_12
+ */
+
+int OK_DigIn_B_12 = 0;
+
+
+/*
+ * Variable OK_DigIn_B_13
+ */
+
+int OK_DigIn_B_13 = 0;
+
+
+/*
+ * Variable OK_DigIn_B_14
+ */
+
+int OK_DigIn_B_14 = 0;
+
+
+/*
+ * Variable OK_DigIn_B_15
+ */
+
+int OK_DigIn_B_15 = 0;
+
+
+/*
+ * Variable OK_DigIn_B_16
+ */
+
+int OK_DigIn_B_16 = 0;
 
 
 /*
@@ -3013,6 +3580,870 @@ getStatus_XX_AnIn_C_4(void)
 }
 
 int
+doWrite_XX_DigOut_A_1(int value)
+{
+	return doWrite(ID_XX_DigOut_A_1, &value);
+}
+
+int
+addWrite_XX_DigOut_A_1(int value)
+{
+	return addWrite(ID_XX_DigOut_A_1, &value);
+}
+
+int
+getStatus_XX_DigOut_A_1(void)
+{
+	return getStatus(ID_XX_DigOut_A_1);
+}
+
+int
+doWrite_XX_DigOut_A_2(int value)
+{
+	return doWrite(ID_XX_DigOut_A_2, &value);
+}
+
+int
+addWrite_XX_DigOut_A_2(int value)
+{
+	return addWrite(ID_XX_DigOut_A_2, &value);
+}
+
+int
+getStatus_XX_DigOut_A_2(void)
+{
+	return getStatus(ID_XX_DigOut_A_2);
+}
+
+int
+doWrite_XX_DigOut_A_3(int value)
+{
+	return doWrite(ID_XX_DigOut_A_3, &value);
+}
+
+int
+addWrite_XX_DigOut_A_3(int value)
+{
+	return addWrite(ID_XX_DigOut_A_3, &value);
+}
+
+int
+getStatus_XX_DigOut_A_3(void)
+{
+	return getStatus(ID_XX_DigOut_A_3);
+}
+
+int
+doWrite_XX_DigOut_A_4(int value)
+{
+	return doWrite(ID_XX_DigOut_A_4, &value);
+}
+
+int
+addWrite_XX_DigOut_A_4(int value)
+{
+	return addWrite(ID_XX_DigOut_A_4, &value);
+}
+
+int
+getStatus_XX_DigOut_A_4(void)
+{
+	return getStatus(ID_XX_DigOut_A_4);
+}
+
+int
+doWrite_XX_DigOut_A_5(int value)
+{
+	return doWrite(ID_XX_DigOut_A_5, &value);
+}
+
+int
+addWrite_XX_DigOut_A_5(int value)
+{
+	return addWrite(ID_XX_DigOut_A_5, &value);
+}
+
+int
+getStatus_XX_DigOut_A_5(void)
+{
+	return getStatus(ID_XX_DigOut_A_5);
+}
+
+int
+doWrite_XX_DigOut_A_6(int value)
+{
+	return doWrite(ID_XX_DigOut_A_6, &value);
+}
+
+int
+addWrite_XX_DigOut_A_6(int value)
+{
+	return addWrite(ID_XX_DigOut_A_6, &value);
+}
+
+int
+getStatus_XX_DigOut_A_6(void)
+{
+	return getStatus(ID_XX_DigOut_A_6);
+}
+
+int
+doWrite_XX_DigOut_A_7(int value)
+{
+	return doWrite(ID_XX_DigOut_A_7, &value);
+}
+
+int
+addWrite_XX_DigOut_A_7(int value)
+{
+	return addWrite(ID_XX_DigOut_A_7, &value);
+}
+
+int
+getStatus_XX_DigOut_A_7(void)
+{
+	return getStatus(ID_XX_DigOut_A_7);
+}
+
+int
+doWrite_XX_DigOut_A_8(int value)
+{
+	return doWrite(ID_XX_DigOut_A_8, &value);
+}
+
+int
+addWrite_XX_DigOut_A_8(int value)
+{
+	return addWrite(ID_XX_DigOut_A_8, &value);
+}
+
+int
+getStatus_XX_DigOut_A_8(void)
+{
+	return getStatus(ID_XX_DigOut_A_8);
+}
+
+int
+doWrite_XX_DigOut_A_9(int value)
+{
+	return doWrite(ID_XX_DigOut_A_9, &value);
+}
+
+int
+addWrite_XX_DigOut_A_9(int value)
+{
+	return addWrite(ID_XX_DigOut_A_9, &value);
+}
+
+int
+getStatus_XX_DigOut_A_9(void)
+{
+	return getStatus(ID_XX_DigOut_A_9);
+}
+
+int
+doWrite_XX_DigOut_A_10(int value)
+{
+	return doWrite(ID_XX_DigOut_A_10, &value);
+}
+
+int
+addWrite_XX_DigOut_A_10(int value)
+{
+	return addWrite(ID_XX_DigOut_A_10, &value);
+}
+
+int
+getStatus_XX_DigOut_A_10(void)
+{
+	return getStatus(ID_XX_DigOut_A_10);
+}
+
+int
+doWrite_XX_DigOut_A_11(int value)
+{
+	return doWrite(ID_XX_DigOut_A_11, &value);
+}
+
+int
+addWrite_XX_DigOut_A_11(int value)
+{
+	return addWrite(ID_XX_DigOut_A_11, &value);
+}
+
+int
+getStatus_XX_DigOut_A_11(void)
+{
+	return getStatus(ID_XX_DigOut_A_11);
+}
+
+int
+doWrite_XX_DigOut_A_12(int value)
+{
+	return doWrite(ID_XX_DigOut_A_12, &value);
+}
+
+int
+addWrite_XX_DigOut_A_12(int value)
+{
+	return addWrite(ID_XX_DigOut_A_12, &value);
+}
+
+int
+getStatus_XX_DigOut_A_12(void)
+{
+	return getStatus(ID_XX_DigOut_A_12);
+}
+
+int
+doWrite_XX_DigOut_A_13(int value)
+{
+	return doWrite(ID_XX_DigOut_A_13, &value);
+}
+
+int
+addWrite_XX_DigOut_A_13(int value)
+{
+	return addWrite(ID_XX_DigOut_A_13, &value);
+}
+
+int
+getStatus_XX_DigOut_A_13(void)
+{
+	return getStatus(ID_XX_DigOut_A_13);
+}
+
+int
+doWrite_XX_DigOut_A_14(int value)
+{
+	return doWrite(ID_XX_DigOut_A_14, &value);
+}
+
+int
+addWrite_XX_DigOut_A_14(int value)
+{
+	return addWrite(ID_XX_DigOut_A_14, &value);
+}
+
+int
+getStatus_XX_DigOut_A_14(void)
+{
+	return getStatus(ID_XX_DigOut_A_14);
+}
+
+int
+doWrite_XX_DigOut_A_15(int value)
+{
+	return doWrite(ID_XX_DigOut_A_15, &value);
+}
+
+int
+addWrite_XX_DigOut_A_15(int value)
+{
+	return addWrite(ID_XX_DigOut_A_15, &value);
+}
+
+int
+getStatus_XX_DigOut_A_15(void)
+{
+	return getStatus(ID_XX_DigOut_A_15);
+}
+
+int
+doWrite_XX_DigOut_A_16(int value)
+{
+	return doWrite(ID_XX_DigOut_A_16, &value);
+}
+
+int
+addWrite_XX_DigOut_A_16(int value)
+{
+	return addWrite(ID_XX_DigOut_A_16, &value);
+}
+
+int
+getStatus_XX_DigOut_A_16(void)
+{
+	return getStatus(ID_XX_DigOut_A_16);
+}
+
+int
+doWrite_XX_DigIn_A_1(int value)
+{
+	return doWrite(ID_XX_DigIn_A_1, &value);
+}
+
+int
+addWrite_XX_DigIn_A_1(int value)
+{
+	return addWrite(ID_XX_DigIn_A_1, &value);
+}
+
+int
+getStatus_XX_DigIn_A_1(void)
+{
+	return getStatus(ID_XX_DigIn_A_1);
+}
+
+int
+doWrite_XX_DigIn_A_2(int value)
+{
+	return doWrite(ID_XX_DigIn_A_2, &value);
+}
+
+int
+addWrite_XX_DigIn_A_2(int value)
+{
+	return addWrite(ID_XX_DigIn_A_2, &value);
+}
+
+int
+getStatus_XX_DigIn_A_2(void)
+{
+	return getStatus(ID_XX_DigIn_A_2);
+}
+
+int
+doWrite_XX_DigIn_A_3(int value)
+{
+	return doWrite(ID_XX_DigIn_A_3, &value);
+}
+
+int
+addWrite_XX_DigIn_A_3(int value)
+{
+	return addWrite(ID_XX_DigIn_A_3, &value);
+}
+
+int
+getStatus_XX_DigIn_A_3(void)
+{
+	return getStatus(ID_XX_DigIn_A_3);
+}
+
+int
+doWrite_XX_DigIn_A_4(int value)
+{
+	return doWrite(ID_XX_DigIn_A_4, &value);
+}
+
+int
+addWrite_XX_DigIn_A_4(int value)
+{
+	return addWrite(ID_XX_DigIn_A_4, &value);
+}
+
+int
+getStatus_XX_DigIn_A_4(void)
+{
+	return getStatus(ID_XX_DigIn_A_4);
+}
+
+int
+doWrite_XX_DigIn_A_5(int value)
+{
+	return doWrite(ID_XX_DigIn_A_5, &value);
+}
+
+int
+addWrite_XX_DigIn_A_5(int value)
+{
+	return addWrite(ID_XX_DigIn_A_5, &value);
+}
+
+int
+getStatus_XX_DigIn_A_5(void)
+{
+	return getStatus(ID_XX_DigIn_A_5);
+}
+
+int
+doWrite_XX_DigIn_A_6(int value)
+{
+	return doWrite(ID_XX_DigIn_A_6, &value);
+}
+
+int
+addWrite_XX_DigIn_A_6(int value)
+{
+	return addWrite(ID_XX_DigIn_A_6, &value);
+}
+
+int
+getStatus_XX_DigIn_A_6(void)
+{
+	return getStatus(ID_XX_DigIn_A_6);
+}
+
+int
+doWrite_XX_DigIn_A_7(int value)
+{
+	return doWrite(ID_XX_DigIn_A_7, &value);
+}
+
+int
+addWrite_XX_DigIn_A_7(int value)
+{
+	return addWrite(ID_XX_DigIn_A_7, &value);
+}
+
+int
+getStatus_XX_DigIn_A_7(void)
+{
+	return getStatus(ID_XX_DigIn_A_7);
+}
+
+int
+doWrite_XX_DigIn_A_8(int value)
+{
+	return doWrite(ID_XX_DigIn_A_8, &value);
+}
+
+int
+addWrite_XX_DigIn_A_8(int value)
+{
+	return addWrite(ID_XX_DigIn_A_8, &value);
+}
+
+int
+getStatus_XX_DigIn_A_8(void)
+{
+	return getStatus(ID_XX_DigIn_A_8);
+}
+
+int
+doWrite_XX_DigIn_A_9(int value)
+{
+	return doWrite(ID_XX_DigIn_A_9, &value);
+}
+
+int
+addWrite_XX_DigIn_A_9(int value)
+{
+	return addWrite(ID_XX_DigIn_A_9, &value);
+}
+
+int
+getStatus_XX_DigIn_A_9(void)
+{
+	return getStatus(ID_XX_DigIn_A_9);
+}
+
+int
+doWrite_XX_DigIn_A_10(int value)
+{
+	return doWrite(ID_XX_DigIn_A_10, &value);
+}
+
+int
+addWrite_XX_DigIn_A_10(int value)
+{
+	return addWrite(ID_XX_DigIn_A_10, &value);
+}
+
+int
+getStatus_XX_DigIn_A_10(void)
+{
+	return getStatus(ID_XX_DigIn_A_10);
+}
+
+int
+doWrite_XX_DigIn_A_11(int value)
+{
+	return doWrite(ID_XX_DigIn_A_11, &value);
+}
+
+int
+addWrite_XX_DigIn_A_11(int value)
+{
+	return addWrite(ID_XX_DigIn_A_11, &value);
+}
+
+int
+getStatus_XX_DigIn_A_11(void)
+{
+	return getStatus(ID_XX_DigIn_A_11);
+}
+
+int
+doWrite_XX_DigIn_A_12(int value)
+{
+	return doWrite(ID_XX_DigIn_A_12, &value);
+}
+
+int
+addWrite_XX_DigIn_A_12(int value)
+{
+	return addWrite(ID_XX_DigIn_A_12, &value);
+}
+
+int
+getStatus_XX_DigIn_A_12(void)
+{
+	return getStatus(ID_XX_DigIn_A_12);
+}
+
+int
+doWrite_XX_DigIn_A_13(int value)
+{
+	return doWrite(ID_XX_DigIn_A_13, &value);
+}
+
+int
+addWrite_XX_DigIn_A_13(int value)
+{
+	return addWrite(ID_XX_DigIn_A_13, &value);
+}
+
+int
+getStatus_XX_DigIn_A_13(void)
+{
+	return getStatus(ID_XX_DigIn_A_13);
+}
+
+int
+doWrite_XX_DigIn_A_14(int value)
+{
+	return doWrite(ID_XX_DigIn_A_14, &value);
+}
+
+int
+addWrite_XX_DigIn_A_14(int value)
+{
+	return addWrite(ID_XX_DigIn_A_14, &value);
+}
+
+int
+getStatus_XX_DigIn_A_14(void)
+{
+	return getStatus(ID_XX_DigIn_A_14);
+}
+
+int
+doWrite_XX_DigIn_A_15(int value)
+{
+	return doWrite(ID_XX_DigIn_A_15, &value);
+}
+
+int
+addWrite_XX_DigIn_A_15(int value)
+{
+	return addWrite(ID_XX_DigIn_A_15, &value);
+}
+
+int
+getStatus_XX_DigIn_A_15(void)
+{
+	return getStatus(ID_XX_DigIn_A_15);
+}
+
+int
+doWrite_XX_DigIn_A_16(int value)
+{
+	return doWrite(ID_XX_DigIn_A_16, &value);
+}
+
+int
+addWrite_XX_DigIn_A_16(int value)
+{
+	return addWrite(ID_XX_DigIn_A_16, &value);
+}
+
+int
+getStatus_XX_DigIn_A_16(void)
+{
+	return getStatus(ID_XX_DigIn_A_16);
+}
+
+int
+doWrite_XX_DigIn_B_1(int value)
+{
+	return doWrite(ID_XX_DigIn_B_1, &value);
+}
+
+int
+addWrite_XX_DigIn_B_1(int value)
+{
+	return addWrite(ID_XX_DigIn_B_1, &value);
+}
+
+int
+getStatus_XX_DigIn_B_1(void)
+{
+	return getStatus(ID_XX_DigIn_B_1);
+}
+
+int
+doWrite_XX_DigIn_B_2(int value)
+{
+	return doWrite(ID_XX_DigIn_B_2, &value);
+}
+
+int
+addWrite_XX_DigIn_B_2(int value)
+{
+	return addWrite(ID_XX_DigIn_B_2, &value);
+}
+
+int
+getStatus_XX_DigIn_B_2(void)
+{
+	return getStatus(ID_XX_DigIn_B_2);
+}
+
+int
+doWrite_XX_DigIn_B_3(int value)
+{
+	return doWrite(ID_XX_DigIn_B_3, &value);
+}
+
+int
+addWrite_XX_DigIn_B_3(int value)
+{
+	return addWrite(ID_XX_DigIn_B_3, &value);
+}
+
+int
+getStatus_XX_DigIn_B_3(void)
+{
+	return getStatus(ID_XX_DigIn_B_3);
+}
+
+int
+doWrite_XX_DigIn_B_4(int value)
+{
+	return doWrite(ID_XX_DigIn_B_4, &value);
+}
+
+int
+addWrite_XX_DigIn_B_4(int value)
+{
+	return addWrite(ID_XX_DigIn_B_4, &value);
+}
+
+int
+getStatus_XX_DigIn_B_4(void)
+{
+	return getStatus(ID_XX_DigIn_B_4);
+}
+
+int
+doWrite_XX_DigIn_B_5(int value)
+{
+	return doWrite(ID_XX_DigIn_B_5, &value);
+}
+
+int
+addWrite_XX_DigIn_B_5(int value)
+{
+	return addWrite(ID_XX_DigIn_B_5, &value);
+}
+
+int
+getStatus_XX_DigIn_B_5(void)
+{
+	return getStatus(ID_XX_DigIn_B_5);
+}
+
+int
+doWrite_XX_DigIn_B_6(int value)
+{
+	return doWrite(ID_XX_DigIn_B_6, &value);
+}
+
+int
+addWrite_XX_DigIn_B_6(int value)
+{
+	return addWrite(ID_XX_DigIn_B_6, &value);
+}
+
+int
+getStatus_XX_DigIn_B_6(void)
+{
+	return getStatus(ID_XX_DigIn_B_6);
+}
+
+int
+doWrite_XX_DigIn_B_7(int value)
+{
+	return doWrite(ID_XX_DigIn_B_7, &value);
+}
+
+int
+addWrite_XX_DigIn_B_7(int value)
+{
+	return addWrite(ID_XX_DigIn_B_7, &value);
+}
+
+int
+getStatus_XX_DigIn_B_7(void)
+{
+	return getStatus(ID_XX_DigIn_B_7);
+}
+
+int
+doWrite_XX_DigIn_B_8(int value)
+{
+	return doWrite(ID_XX_DigIn_B_8, &value);
+}
+
+int
+addWrite_XX_DigIn_B_8(int value)
+{
+	return addWrite(ID_XX_DigIn_B_8, &value);
+}
+
+int
+getStatus_XX_DigIn_B_8(void)
+{
+	return getStatus(ID_XX_DigIn_B_8);
+}
+
+int
+doWrite_XX_DigIn_B_9(int value)
+{
+	return doWrite(ID_XX_DigIn_B_9, &value);
+}
+
+int
+addWrite_XX_DigIn_B_9(int value)
+{
+	return addWrite(ID_XX_DigIn_B_9, &value);
+}
+
+int
+getStatus_XX_DigIn_B_9(void)
+{
+	return getStatus(ID_XX_DigIn_B_9);
+}
+
+int
+doWrite_XX_DigIn_B_10(int value)
+{
+	return doWrite(ID_XX_DigIn_B_10, &value);
+}
+
+int
+addWrite_XX_DigIn_B_10(int value)
+{
+	return addWrite(ID_XX_DigIn_B_10, &value);
+}
+
+int
+getStatus_XX_DigIn_B_10(void)
+{
+	return getStatus(ID_XX_DigIn_B_10);
+}
+
+int
+doWrite_XX_DigIn_B_11(int value)
+{
+	return doWrite(ID_XX_DigIn_B_11, &value);
+}
+
+int
+addWrite_XX_DigIn_B_11(int value)
+{
+	return addWrite(ID_XX_DigIn_B_11, &value);
+}
+
+int
+getStatus_XX_DigIn_B_11(void)
+{
+	return getStatus(ID_XX_DigIn_B_11);
+}
+
+int
+doWrite_XX_DigIn_B_12(int value)
+{
+	return doWrite(ID_XX_DigIn_B_12, &value);
+}
+
+int
+addWrite_XX_DigIn_B_12(int value)
+{
+	return addWrite(ID_XX_DigIn_B_12, &value);
+}
+
+int
+getStatus_XX_DigIn_B_12(void)
+{
+	return getStatus(ID_XX_DigIn_B_12);
+}
+
+int
+doWrite_XX_DigIn_B_13(int value)
+{
+	return doWrite(ID_XX_DigIn_B_13, &value);
+}
+
+int
+addWrite_XX_DigIn_B_13(int value)
+{
+	return addWrite(ID_XX_DigIn_B_13, &value);
+}
+
+int
+getStatus_XX_DigIn_B_13(void)
+{
+	return getStatus(ID_XX_DigIn_B_13);
+}
+
+int
+doWrite_XX_DigIn_B_14(int value)
+{
+	return doWrite(ID_XX_DigIn_B_14, &value);
+}
+
+int
+addWrite_XX_DigIn_B_14(int value)
+{
+	return addWrite(ID_XX_DigIn_B_14, &value);
+}
+
+int
+getStatus_XX_DigIn_B_14(void)
+{
+	return getStatus(ID_XX_DigIn_B_14);
+}
+
+int
+doWrite_XX_DigIn_B_15(int value)
+{
+	return doWrite(ID_XX_DigIn_B_15, &value);
+}
+
+int
+addWrite_XX_DigIn_B_15(int value)
+{
+	return addWrite(ID_XX_DigIn_B_15, &value);
+}
+
+int
+getStatus_XX_DigIn_B_15(void)
+{
+	return getStatus(ID_XX_DigIn_B_15);
+}
+
+int
+doWrite_XX_DigIn_B_16(int value)
+{
+	return doWrite(ID_XX_DigIn_B_16, &value);
+}
+
+int
+addWrite_XX_DigIn_B_16(int value)
+{
+	return addWrite(ID_XX_DigIn_B_16, &value);
+}
+
+int
+getStatus_XX_DigIn_B_16(void)
+{
+	return getStatus(ID_XX_DigIn_B_16);
+}
+
+int
 doWrite_XX_Reserved_1(u_int16_t value)
 {
 	return doWrite(ID_XX_Reserved_1, &value);
@@ -4252,6 +5683,600 @@ int
 getStatus_SysImpActiveEnergy_11(void)
 {
 	return getStatus(ID_SysImpActiveEnergy_11);
+}
+
+int
+doWrite_Alarm(int value)
+{
+	return doWrite(ID_Alarm, &value);
+}
+
+int
+addWrite_Alarm(int value)
+{
+	return addWrite(ID_Alarm, &value);
+}
+
+int
+getStatus_Alarm(void)
+{
+	return getStatus(ID_Alarm);
+}
+
+int
+doWrite_OK_DigIn_A_1(int value)
+{
+	return doWrite(ID_OK_DigIn_A_1, &value);
+}
+
+int
+addWrite_OK_DigIn_A_1(int value)
+{
+	return addWrite(ID_OK_DigIn_A_1, &value);
+}
+
+int
+getStatus_OK_DigIn_A_1(void)
+{
+	return getStatus(ID_OK_DigIn_A_1);
+}
+
+int
+doWrite_OK_DigIn_A_2(int value)
+{
+	return doWrite(ID_OK_DigIn_A_2, &value);
+}
+
+int
+addWrite_OK_DigIn_A_2(int value)
+{
+	return addWrite(ID_OK_DigIn_A_2, &value);
+}
+
+int
+getStatus_OK_DigIn_A_2(void)
+{
+	return getStatus(ID_OK_DigIn_A_2);
+}
+
+int
+doWrite_OK_DigIn_A_3(int value)
+{
+	return doWrite(ID_OK_DigIn_A_3, &value);
+}
+
+int
+addWrite_OK_DigIn_A_3(int value)
+{
+	return addWrite(ID_OK_DigIn_A_3, &value);
+}
+
+int
+getStatus_OK_DigIn_A_3(void)
+{
+	return getStatus(ID_OK_DigIn_A_3);
+}
+
+int
+doWrite_OK_DigIn_A_4(int value)
+{
+	return doWrite(ID_OK_DigIn_A_4, &value);
+}
+
+int
+addWrite_OK_DigIn_A_4(int value)
+{
+	return addWrite(ID_OK_DigIn_A_4, &value);
+}
+
+int
+getStatus_OK_DigIn_A_4(void)
+{
+	return getStatus(ID_OK_DigIn_A_4);
+}
+
+int
+doWrite_OK_DigIn_A_5(int value)
+{
+	return doWrite(ID_OK_DigIn_A_5, &value);
+}
+
+int
+addWrite_OK_DigIn_A_5(int value)
+{
+	return addWrite(ID_OK_DigIn_A_5, &value);
+}
+
+int
+getStatus_OK_DigIn_A_5(void)
+{
+	return getStatus(ID_OK_DigIn_A_5);
+}
+
+int
+doWrite_OK_DigIn_A_6(int value)
+{
+	return doWrite(ID_OK_DigIn_A_6, &value);
+}
+
+int
+addWrite_OK_DigIn_A_6(int value)
+{
+	return addWrite(ID_OK_DigIn_A_6, &value);
+}
+
+int
+getStatus_OK_DigIn_A_6(void)
+{
+	return getStatus(ID_OK_DigIn_A_6);
+}
+
+int
+doWrite_OK_DigIn_A_7(int value)
+{
+	return doWrite(ID_OK_DigIn_A_7, &value);
+}
+
+int
+addWrite_OK_DigIn_A_7(int value)
+{
+	return addWrite(ID_OK_DigIn_A_7, &value);
+}
+
+int
+getStatus_OK_DigIn_A_7(void)
+{
+	return getStatus(ID_OK_DigIn_A_7);
+}
+
+int
+doWrite_OK_DigIn_A_8(int value)
+{
+	return doWrite(ID_OK_DigIn_A_8, &value);
+}
+
+int
+addWrite_OK_DigIn_A_8(int value)
+{
+	return addWrite(ID_OK_DigIn_A_8, &value);
+}
+
+int
+getStatus_OK_DigIn_A_8(void)
+{
+	return getStatus(ID_OK_DigIn_A_8);
+}
+
+int
+doWrite_OK_DigIn_A_9(int value)
+{
+	return doWrite(ID_OK_DigIn_A_9, &value);
+}
+
+int
+addWrite_OK_DigIn_A_9(int value)
+{
+	return addWrite(ID_OK_DigIn_A_9, &value);
+}
+
+int
+getStatus_OK_DigIn_A_9(void)
+{
+	return getStatus(ID_OK_DigIn_A_9);
+}
+
+int
+doWrite_OK_DigIn_A_10(int value)
+{
+	return doWrite(ID_OK_DigIn_A_10, &value);
+}
+
+int
+addWrite_OK_DigIn_A_10(int value)
+{
+	return addWrite(ID_OK_DigIn_A_10, &value);
+}
+
+int
+getStatus_OK_DigIn_A_10(void)
+{
+	return getStatus(ID_OK_DigIn_A_10);
+}
+
+int
+doWrite_OK_DigIn_A_11(int value)
+{
+	return doWrite(ID_OK_DigIn_A_11, &value);
+}
+
+int
+addWrite_OK_DigIn_A_11(int value)
+{
+	return addWrite(ID_OK_DigIn_A_11, &value);
+}
+
+int
+getStatus_OK_DigIn_A_11(void)
+{
+	return getStatus(ID_OK_DigIn_A_11);
+}
+
+int
+doWrite_OK_DigIn_A_12(int value)
+{
+	return doWrite(ID_OK_DigIn_A_12, &value);
+}
+
+int
+addWrite_OK_DigIn_A_12(int value)
+{
+	return addWrite(ID_OK_DigIn_A_12, &value);
+}
+
+int
+getStatus_OK_DigIn_A_12(void)
+{
+	return getStatus(ID_OK_DigIn_A_12);
+}
+
+int
+doWrite_OK_DigIn_A_13(int value)
+{
+	return doWrite(ID_OK_DigIn_A_13, &value);
+}
+
+int
+addWrite_OK_DigIn_A_13(int value)
+{
+	return addWrite(ID_OK_DigIn_A_13, &value);
+}
+
+int
+getStatus_OK_DigIn_A_13(void)
+{
+	return getStatus(ID_OK_DigIn_A_13);
+}
+
+int
+doWrite_OK_DigIn_A_14(int value)
+{
+	return doWrite(ID_OK_DigIn_A_14, &value);
+}
+
+int
+addWrite_OK_DigIn_A_14(int value)
+{
+	return addWrite(ID_OK_DigIn_A_14, &value);
+}
+
+int
+getStatus_OK_DigIn_A_14(void)
+{
+	return getStatus(ID_OK_DigIn_A_14);
+}
+
+int
+doWrite_OK_DigIn_A_15(int value)
+{
+	return doWrite(ID_OK_DigIn_A_15, &value);
+}
+
+int
+addWrite_OK_DigIn_A_15(int value)
+{
+	return addWrite(ID_OK_DigIn_A_15, &value);
+}
+
+int
+getStatus_OK_DigIn_A_15(void)
+{
+	return getStatus(ID_OK_DigIn_A_15);
+}
+
+int
+doWrite_OK_DigIn_A_16(int value)
+{
+	return doWrite(ID_OK_DigIn_A_16, &value);
+}
+
+int
+addWrite_OK_DigIn_A_16(int value)
+{
+	return addWrite(ID_OK_DigIn_A_16, &value);
+}
+
+int
+getStatus_OK_DigIn_A_16(void)
+{
+	return getStatus(ID_OK_DigIn_A_16);
+}
+
+int
+doWrite_OK_DigIn_B_1(int value)
+{
+	return doWrite(ID_OK_DigIn_B_1, &value);
+}
+
+int
+addWrite_OK_DigIn_B_1(int value)
+{
+	return addWrite(ID_OK_DigIn_B_1, &value);
+}
+
+int
+getStatus_OK_DigIn_B_1(void)
+{
+	return getStatus(ID_OK_DigIn_B_1);
+}
+
+int
+doWrite_OK_DigIn_B_2(int value)
+{
+	return doWrite(ID_OK_DigIn_B_2, &value);
+}
+
+int
+addWrite_OK_DigIn_B_2(int value)
+{
+	return addWrite(ID_OK_DigIn_B_2, &value);
+}
+
+int
+getStatus_OK_DigIn_B_2(void)
+{
+	return getStatus(ID_OK_DigIn_B_2);
+}
+
+int
+doWrite_OK_DigIn_B_3(int value)
+{
+	return doWrite(ID_OK_DigIn_B_3, &value);
+}
+
+int
+addWrite_OK_DigIn_B_3(int value)
+{
+	return addWrite(ID_OK_DigIn_B_3, &value);
+}
+
+int
+getStatus_OK_DigIn_B_3(void)
+{
+	return getStatus(ID_OK_DigIn_B_3);
+}
+
+int
+doWrite_OK_DigIn_B_4(int value)
+{
+	return doWrite(ID_OK_DigIn_B_4, &value);
+}
+
+int
+addWrite_OK_DigIn_B_4(int value)
+{
+	return addWrite(ID_OK_DigIn_B_4, &value);
+}
+
+int
+getStatus_OK_DigIn_B_4(void)
+{
+	return getStatus(ID_OK_DigIn_B_4);
+}
+
+int
+doWrite_OK_DigIn_B_5(int value)
+{
+	return doWrite(ID_OK_DigIn_B_5, &value);
+}
+
+int
+addWrite_OK_DigIn_B_5(int value)
+{
+	return addWrite(ID_OK_DigIn_B_5, &value);
+}
+
+int
+getStatus_OK_DigIn_B_5(void)
+{
+	return getStatus(ID_OK_DigIn_B_5);
+}
+
+int
+doWrite_OK_DigIn_B_6(int value)
+{
+	return doWrite(ID_OK_DigIn_B_6, &value);
+}
+
+int
+addWrite_OK_DigIn_B_6(int value)
+{
+	return addWrite(ID_OK_DigIn_B_6, &value);
+}
+
+int
+getStatus_OK_DigIn_B_6(void)
+{
+	return getStatus(ID_OK_DigIn_B_6);
+}
+
+int
+doWrite_OK_DigIn_B_7(int value)
+{
+	return doWrite(ID_OK_DigIn_B_7, &value);
+}
+
+int
+addWrite_OK_DigIn_B_7(int value)
+{
+	return addWrite(ID_OK_DigIn_B_7, &value);
+}
+
+int
+getStatus_OK_DigIn_B_7(void)
+{
+	return getStatus(ID_OK_DigIn_B_7);
+}
+
+int
+doWrite_OK_DigIn_B_8(int value)
+{
+	return doWrite(ID_OK_DigIn_B_8, &value);
+}
+
+int
+addWrite_OK_DigIn_B_8(int value)
+{
+	return addWrite(ID_OK_DigIn_B_8, &value);
+}
+
+int
+getStatus_OK_DigIn_B_8(void)
+{
+	return getStatus(ID_OK_DigIn_B_8);
+}
+
+int
+doWrite_OK_DigIn_B_9(int value)
+{
+	return doWrite(ID_OK_DigIn_B_9, &value);
+}
+
+int
+addWrite_OK_DigIn_B_9(int value)
+{
+	return addWrite(ID_OK_DigIn_B_9, &value);
+}
+
+int
+getStatus_OK_DigIn_B_9(void)
+{
+	return getStatus(ID_OK_DigIn_B_9);
+}
+
+int
+doWrite_OK_DigIn_B_10(int value)
+{
+	return doWrite(ID_OK_DigIn_B_10, &value);
+}
+
+int
+addWrite_OK_DigIn_B_10(int value)
+{
+	return addWrite(ID_OK_DigIn_B_10, &value);
+}
+
+int
+getStatus_OK_DigIn_B_10(void)
+{
+	return getStatus(ID_OK_DigIn_B_10);
+}
+
+int
+doWrite_OK_DigIn_B_11(int value)
+{
+	return doWrite(ID_OK_DigIn_B_11, &value);
+}
+
+int
+addWrite_OK_DigIn_B_11(int value)
+{
+	return addWrite(ID_OK_DigIn_B_11, &value);
+}
+
+int
+getStatus_OK_DigIn_B_11(void)
+{
+	return getStatus(ID_OK_DigIn_B_11);
+}
+
+int
+doWrite_OK_DigIn_B_12(int value)
+{
+	return doWrite(ID_OK_DigIn_B_12, &value);
+}
+
+int
+addWrite_OK_DigIn_B_12(int value)
+{
+	return addWrite(ID_OK_DigIn_B_12, &value);
+}
+
+int
+getStatus_OK_DigIn_B_12(void)
+{
+	return getStatus(ID_OK_DigIn_B_12);
+}
+
+int
+doWrite_OK_DigIn_B_13(int value)
+{
+	return doWrite(ID_OK_DigIn_B_13, &value);
+}
+
+int
+addWrite_OK_DigIn_B_13(int value)
+{
+	return addWrite(ID_OK_DigIn_B_13, &value);
+}
+
+int
+getStatus_OK_DigIn_B_13(void)
+{
+	return getStatus(ID_OK_DigIn_B_13);
+}
+
+int
+doWrite_OK_DigIn_B_14(int value)
+{
+	return doWrite(ID_OK_DigIn_B_14, &value);
+}
+
+int
+addWrite_OK_DigIn_B_14(int value)
+{
+	return addWrite(ID_OK_DigIn_B_14, &value);
+}
+
+int
+getStatus_OK_DigIn_B_14(void)
+{
+	return getStatus(ID_OK_DigIn_B_14);
+}
+
+int
+doWrite_OK_DigIn_B_15(int value)
+{
+	return doWrite(ID_OK_DigIn_B_15, &value);
+}
+
+int
+addWrite_OK_DigIn_B_15(int value)
+{
+	return addWrite(ID_OK_DigIn_B_15, &value);
+}
+
+int
+getStatus_OK_DigIn_B_15(void)
+{
+	return getStatus(ID_OK_DigIn_B_15);
+}
+
+int
+doWrite_OK_DigIn_B_16(int value)
+{
+	return doWrite(ID_OK_DigIn_B_16, &value);
+}
+
+int
+addWrite_OK_DigIn_B_16(int value)
+{
+	return addWrite(ID_OK_DigIn_B_16, &value);
+}
+
+int
+getStatus_OK_DigIn_B_16(void)
+{
+	return getStatus(ID_OK_DigIn_B_16);
 }
 
 int
@@ -9304,6 +11329,54 @@ update_all(void)
 	retval += readFromDb(ID_XX_AnIn_C_2, &XX_AnIn_C_2);
 	retval += readFromDb(ID_XX_AnIn_C_3, &XX_AnIn_C_3);
 	retval += readFromDb(ID_XX_AnIn_C_4, &XX_AnIn_C_4);
+	retval += readFromDb(ID_XX_DigOut_A_1, &XX_DigOut_A_1);
+	retval += readFromDb(ID_XX_DigOut_A_2, &XX_DigOut_A_2);
+	retval += readFromDb(ID_XX_DigOut_A_3, &XX_DigOut_A_3);
+	retval += readFromDb(ID_XX_DigOut_A_4, &XX_DigOut_A_4);
+	retval += readFromDb(ID_XX_DigOut_A_5, &XX_DigOut_A_5);
+	retval += readFromDb(ID_XX_DigOut_A_6, &XX_DigOut_A_6);
+	retval += readFromDb(ID_XX_DigOut_A_7, &XX_DigOut_A_7);
+	retval += readFromDb(ID_XX_DigOut_A_8, &XX_DigOut_A_8);
+	retval += readFromDb(ID_XX_DigOut_A_9, &XX_DigOut_A_9);
+	retval += readFromDb(ID_XX_DigOut_A_10, &XX_DigOut_A_10);
+	retval += readFromDb(ID_XX_DigOut_A_11, &XX_DigOut_A_11);
+	retval += readFromDb(ID_XX_DigOut_A_12, &XX_DigOut_A_12);
+	retval += readFromDb(ID_XX_DigOut_A_13, &XX_DigOut_A_13);
+	retval += readFromDb(ID_XX_DigOut_A_14, &XX_DigOut_A_14);
+	retval += readFromDb(ID_XX_DigOut_A_15, &XX_DigOut_A_15);
+	retval += readFromDb(ID_XX_DigOut_A_16, &XX_DigOut_A_16);
+	retval += readFromDb(ID_XX_DigIn_A_1, &XX_DigIn_A_1);
+	retval += readFromDb(ID_XX_DigIn_A_2, &XX_DigIn_A_2);
+	retval += readFromDb(ID_XX_DigIn_A_3, &XX_DigIn_A_3);
+	retval += readFromDb(ID_XX_DigIn_A_4, &XX_DigIn_A_4);
+	retval += readFromDb(ID_XX_DigIn_A_5, &XX_DigIn_A_5);
+	retval += readFromDb(ID_XX_DigIn_A_6, &XX_DigIn_A_6);
+	retval += readFromDb(ID_XX_DigIn_A_7, &XX_DigIn_A_7);
+	retval += readFromDb(ID_XX_DigIn_A_8, &XX_DigIn_A_8);
+	retval += readFromDb(ID_XX_DigIn_A_9, &XX_DigIn_A_9);
+	retval += readFromDb(ID_XX_DigIn_A_10, &XX_DigIn_A_10);
+	retval += readFromDb(ID_XX_DigIn_A_11, &XX_DigIn_A_11);
+	retval += readFromDb(ID_XX_DigIn_A_12, &XX_DigIn_A_12);
+	retval += readFromDb(ID_XX_DigIn_A_13, &XX_DigIn_A_13);
+	retval += readFromDb(ID_XX_DigIn_A_14, &XX_DigIn_A_14);
+	retval += readFromDb(ID_XX_DigIn_A_15, &XX_DigIn_A_15);
+	retval += readFromDb(ID_XX_DigIn_A_16, &XX_DigIn_A_16);
+	retval += readFromDb(ID_XX_DigIn_B_1, &XX_DigIn_B_1);
+	retval += readFromDb(ID_XX_DigIn_B_2, &XX_DigIn_B_2);
+	retval += readFromDb(ID_XX_DigIn_B_3, &XX_DigIn_B_3);
+	retval += readFromDb(ID_XX_DigIn_B_4, &XX_DigIn_B_4);
+	retval += readFromDb(ID_XX_DigIn_B_5, &XX_DigIn_B_5);
+	retval += readFromDb(ID_XX_DigIn_B_6, &XX_DigIn_B_6);
+	retval += readFromDb(ID_XX_DigIn_B_7, &XX_DigIn_B_7);
+	retval += readFromDb(ID_XX_DigIn_B_8, &XX_DigIn_B_8);
+	retval += readFromDb(ID_XX_DigIn_B_9, &XX_DigIn_B_9);
+	retval += readFromDb(ID_XX_DigIn_B_10, &XX_DigIn_B_10);
+	retval += readFromDb(ID_XX_DigIn_B_11, &XX_DigIn_B_11);
+	retval += readFromDb(ID_XX_DigIn_B_12, &XX_DigIn_B_12);
+	retval += readFromDb(ID_XX_DigIn_B_13, &XX_DigIn_B_13);
+	retval += readFromDb(ID_XX_DigIn_B_14, &XX_DigIn_B_14);
+	retval += readFromDb(ID_XX_DigIn_B_15, &XX_DigIn_B_15);
+	retval += readFromDb(ID_XX_DigIn_B_16, &XX_DigIn_B_16);
 	retval += readFromDb(ID_XX_Reserved_1, &XX_Reserved_1);
 	retval += readFromDb(ID_XX_Reserved_2, &XX_Reserved_2);
 	retval += readFromDb(ID_XX_ColdJunctionT, &XX_ColdJunctionT);
@@ -9373,6 +11446,39 @@ update_all(void)
 	retval += readFromDb(ID_SysImpActiveEnergy_10, &SysImpActiveEnergy_10);
 	retval += readFromDb(ID_SysActivePower_11, &SysActivePower_11);
 	retval += readFromDb(ID_SysImpActiveEnergy_11, &SysImpActiveEnergy_11);
+	retval += readFromDb(ID_Alarm, &Alarm);
+	retval += readFromDb(ID_OK_DigIn_A_1, &OK_DigIn_A_1);
+	retval += readFromDb(ID_OK_DigIn_A_2, &OK_DigIn_A_2);
+	retval += readFromDb(ID_OK_DigIn_A_3, &OK_DigIn_A_3);
+	retval += readFromDb(ID_OK_DigIn_A_4, &OK_DigIn_A_4);
+	retval += readFromDb(ID_OK_DigIn_A_5, &OK_DigIn_A_5);
+	retval += readFromDb(ID_OK_DigIn_A_6, &OK_DigIn_A_6);
+	retval += readFromDb(ID_OK_DigIn_A_7, &OK_DigIn_A_7);
+	retval += readFromDb(ID_OK_DigIn_A_8, &OK_DigIn_A_8);
+	retval += readFromDb(ID_OK_DigIn_A_9, &OK_DigIn_A_9);
+	retval += readFromDb(ID_OK_DigIn_A_10, &OK_DigIn_A_10);
+	retval += readFromDb(ID_OK_DigIn_A_11, &OK_DigIn_A_11);
+	retval += readFromDb(ID_OK_DigIn_A_12, &OK_DigIn_A_12);
+	retval += readFromDb(ID_OK_DigIn_A_13, &OK_DigIn_A_13);
+	retval += readFromDb(ID_OK_DigIn_A_14, &OK_DigIn_A_14);
+	retval += readFromDb(ID_OK_DigIn_A_15, &OK_DigIn_A_15);
+	retval += readFromDb(ID_OK_DigIn_A_16, &OK_DigIn_A_16);
+	retval += readFromDb(ID_OK_DigIn_B_1, &OK_DigIn_B_1);
+	retval += readFromDb(ID_OK_DigIn_B_2, &OK_DigIn_B_2);
+	retval += readFromDb(ID_OK_DigIn_B_3, &OK_DigIn_B_3);
+	retval += readFromDb(ID_OK_DigIn_B_4, &OK_DigIn_B_4);
+	retval += readFromDb(ID_OK_DigIn_B_5, &OK_DigIn_B_5);
+	retval += readFromDb(ID_OK_DigIn_B_6, &OK_DigIn_B_6);
+	retval += readFromDb(ID_OK_DigIn_B_7, &OK_DigIn_B_7);
+	retval += readFromDb(ID_OK_DigIn_B_8, &OK_DigIn_B_8);
+	retval += readFromDb(ID_OK_DigIn_B_9, &OK_DigIn_B_9);
+	retval += readFromDb(ID_OK_DigIn_B_10, &OK_DigIn_B_10);
+	retval += readFromDb(ID_OK_DigIn_B_11, &OK_DigIn_B_11);
+	retval += readFromDb(ID_OK_DigIn_B_12, &OK_DigIn_B_12);
+	retval += readFromDb(ID_OK_DigIn_B_13, &OK_DigIn_B_13);
+	retval += readFromDb(ID_OK_DigIn_B_14, &OK_DigIn_B_14);
+	retval += readFromDb(ID_OK_DigIn_B_15, &OK_DigIn_B_15);
+	retval += readFromDb(ID_OK_DigIn_B_16, &OK_DigIn_B_16);
 	retval += readFromDb(ID_TCP_is_Caldaia_ON, &TCP_is_Caldaia_ON);
 	retval += readFromDb(ID_TCP_AnIn_A_1, &TCP_AnIn_A_1);
 	retval += readFromDb(ID_TCP_AnIn_A_2, &TCP_AnIn_A_2);

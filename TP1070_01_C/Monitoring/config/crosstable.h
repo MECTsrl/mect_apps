@@ -166,6 +166,294 @@ int doWrite_XX_AnIn_C_4(int16_t value);
 int addWrite_XX_AnIn_C_4(int16_t value);
 int getStatus_XX_AnIn_C_4(void);
 
+#define ID_XX_DigOut_A_1 224
+extern int XX_DigOut_A_1;	/* Digital output value bit 1 MPNC020 02 module A */
+int doWrite_XX_DigOut_A_1(int value);
+int addWrite_XX_DigOut_A_1(int value);
+int getStatus_XX_DigOut_A_1(void);
+
+#define ID_XX_DigOut_A_2 225
+extern int XX_DigOut_A_2;	/* Digital output value bit 2 MPNC020 02 module A */
+int doWrite_XX_DigOut_A_2(int value);
+int addWrite_XX_DigOut_A_2(int value);
+int getStatus_XX_DigOut_A_2(void);
+
+#define ID_XX_DigOut_A_3 226
+extern int XX_DigOut_A_3;	/* Digital output value bit 3 MPNC020 02 module A */
+int doWrite_XX_DigOut_A_3(int value);
+int addWrite_XX_DigOut_A_3(int value);
+int getStatus_XX_DigOut_A_3(void);
+
+#define ID_XX_DigOut_A_4 227
+extern int XX_DigOut_A_4;	/* Digital output value bit 4 MPNC020 02 module A */
+int doWrite_XX_DigOut_A_4(int value);
+int addWrite_XX_DigOut_A_4(int value);
+int getStatus_XX_DigOut_A_4(void);
+
+#define ID_XX_DigOut_A_5 228
+extern int XX_DigOut_A_5;	/* Digital output value bit 5 MPNC020 02 module A */
+int doWrite_XX_DigOut_A_5(int value);
+int addWrite_XX_DigOut_A_5(int value);
+int getStatus_XX_DigOut_A_5(void);
+
+#define ID_XX_DigOut_A_6 229
+extern int XX_DigOut_A_6;	/* Digital output value bit 6 MPNC020 02 module A */
+int doWrite_XX_DigOut_A_6(int value);
+int addWrite_XX_DigOut_A_6(int value);
+int getStatus_XX_DigOut_A_6(void);
+
+#define ID_XX_DigOut_A_7 230
+extern int XX_DigOut_A_7;	/* Digital output value bit 7 MPNC020 02 module A */
+int doWrite_XX_DigOut_A_7(int value);
+int addWrite_XX_DigOut_A_7(int value);
+int getStatus_XX_DigOut_A_7(void);
+
+#define ID_XX_DigOut_A_8 231
+extern int XX_DigOut_A_8;	/* Digital output value bit 8 MPNC020 02 module A */
+int doWrite_XX_DigOut_A_8(int value);
+int addWrite_XX_DigOut_A_8(int value);
+int getStatus_XX_DigOut_A_8(void);
+
+#define ID_XX_DigOut_A_9 232
+extern int XX_DigOut_A_9;	/* Digital output value bit 9 MPNC020 02 module A */
+int doWrite_XX_DigOut_A_9(int value);
+int addWrite_XX_DigOut_A_9(int value);
+int getStatus_XX_DigOut_A_9(void);
+
+#define ID_XX_DigOut_A_10 233
+extern int XX_DigOut_A_10;	/* Digital output value bit 10 MPNC020 02 module A */
+int doWrite_XX_DigOut_A_10(int value);
+int addWrite_XX_DigOut_A_10(int value);
+int getStatus_XX_DigOut_A_10(void);
+
+#define ID_XX_DigOut_A_11 234
+extern int XX_DigOut_A_11;	/* Digital output value bit 11 MPNC020 02 module A */
+int doWrite_XX_DigOut_A_11(int value);
+int addWrite_XX_DigOut_A_11(int value);
+int getStatus_XX_DigOut_A_11(void);
+
+#define ID_XX_DigOut_A_12 235
+extern int XX_DigOut_A_12;	/* Digital output value bit 12 MPNC020 02 module A */
+int doWrite_XX_DigOut_A_12(int value);
+int addWrite_XX_DigOut_A_12(int value);
+int getStatus_XX_DigOut_A_12(void);
+
+#define ID_XX_DigOut_A_13 236
+extern int XX_DigOut_A_13;	/* Digital output value bit 13 MPNC020 02 module A */
+int doWrite_XX_DigOut_A_13(int value);
+int addWrite_XX_DigOut_A_13(int value);
+int getStatus_XX_DigOut_A_13(void);
+
+#define ID_XX_DigOut_A_14 237
+extern int XX_DigOut_A_14;	/* Digital output value bit 14 MPNC020 02 module A */
+int doWrite_XX_DigOut_A_14(int value);
+int addWrite_XX_DigOut_A_14(int value);
+int getStatus_XX_DigOut_A_14(void);
+
+#define ID_XX_DigOut_A_15 238
+extern int XX_DigOut_A_15;	/* Digital output value bit 15 MPNC020 02 module A */
+int doWrite_XX_DigOut_A_15(int value);
+int addWrite_XX_DigOut_A_15(int value);
+int getStatus_XX_DigOut_A_15(void);
+
+#define ID_XX_DigOut_A_16 239
+extern int XX_DigOut_A_16;	/* Digital output value bit 16 MPNC020 02 module A */
+int doWrite_XX_DigOut_A_16(int value);
+int addWrite_XX_DigOut_A_16(int value);
+int getStatus_XX_DigOut_A_16(void);
+
+#define ID_XX_DigIn_A_1 288
+extern int XX_DigIn_A_1;	/* Digital input value bit 1 MPNC020 01 module A */
+int doWrite_XX_DigIn_A_1(int value);
+int addWrite_XX_DigIn_A_1(int value);
+int getStatus_XX_DigIn_A_1(void);
+
+#define ID_XX_DigIn_A_2 289
+extern int XX_DigIn_A_2;	/* Digital input value bit 2 MPNC020 01 module A */
+int doWrite_XX_DigIn_A_2(int value);
+int addWrite_XX_DigIn_A_2(int value);
+int getStatus_XX_DigIn_A_2(void);
+
+#define ID_XX_DigIn_A_3 290
+extern int XX_DigIn_A_3;	/* Digital input value bit 3 MPNC020 01 module A */
+int doWrite_XX_DigIn_A_3(int value);
+int addWrite_XX_DigIn_A_3(int value);
+int getStatus_XX_DigIn_A_3(void);
+
+#define ID_XX_DigIn_A_4 291
+extern int XX_DigIn_A_4;	/* Digital input value bit 4 MPNC020 01 module A */
+int doWrite_XX_DigIn_A_4(int value);
+int addWrite_XX_DigIn_A_4(int value);
+int getStatus_XX_DigIn_A_4(void);
+
+#define ID_XX_DigIn_A_5 292
+extern int XX_DigIn_A_5;	/* Digital input value bit 5 MPNC020 01 module A */
+int doWrite_XX_DigIn_A_5(int value);
+int addWrite_XX_DigIn_A_5(int value);
+int getStatus_XX_DigIn_A_5(void);
+
+#define ID_XX_DigIn_A_6 293
+extern int XX_DigIn_A_6;	/* Digital input value bit 6 MPNC020 01 module A */
+int doWrite_XX_DigIn_A_6(int value);
+int addWrite_XX_DigIn_A_6(int value);
+int getStatus_XX_DigIn_A_6(void);
+
+#define ID_XX_DigIn_A_7 294
+extern int XX_DigIn_A_7;	/* Digital input value bit 7 MPNC020 01 module A */
+int doWrite_XX_DigIn_A_7(int value);
+int addWrite_XX_DigIn_A_7(int value);
+int getStatus_XX_DigIn_A_7(void);
+
+#define ID_XX_DigIn_A_8 295
+extern int XX_DigIn_A_8;	/* Digital input value bit 8 MPNC020 01 module A */
+int doWrite_XX_DigIn_A_8(int value);
+int addWrite_XX_DigIn_A_8(int value);
+int getStatus_XX_DigIn_A_8(void);
+
+#define ID_XX_DigIn_A_9 296
+extern int XX_DigIn_A_9;	/* Digital input value bit 9 MPNC020 01 module A */
+int doWrite_XX_DigIn_A_9(int value);
+int addWrite_XX_DigIn_A_9(int value);
+int getStatus_XX_DigIn_A_9(void);
+
+#define ID_XX_DigIn_A_10 297
+extern int XX_DigIn_A_10;	/* Digital input value bit 10 MPNC020 01 module A */
+int doWrite_XX_DigIn_A_10(int value);
+int addWrite_XX_DigIn_A_10(int value);
+int getStatus_XX_DigIn_A_10(void);
+
+#define ID_XX_DigIn_A_11 298
+extern int XX_DigIn_A_11;	/* Digital input value bit 11 MPNC020 01 module A */
+int doWrite_XX_DigIn_A_11(int value);
+int addWrite_XX_DigIn_A_11(int value);
+int getStatus_XX_DigIn_A_11(void);
+
+#define ID_XX_DigIn_A_12 299
+extern int XX_DigIn_A_12;	/* Digital input value bit 12 MPNC020 01 module A */
+int doWrite_XX_DigIn_A_12(int value);
+int addWrite_XX_DigIn_A_12(int value);
+int getStatus_XX_DigIn_A_12(void);
+
+#define ID_XX_DigIn_A_13 300
+extern int XX_DigIn_A_13;	/* Digital input value bit 13 MPNC020 01 module A */
+int doWrite_XX_DigIn_A_13(int value);
+int addWrite_XX_DigIn_A_13(int value);
+int getStatus_XX_DigIn_A_13(void);
+
+#define ID_XX_DigIn_A_14 301
+extern int XX_DigIn_A_14;	/* Digital input value bit 14 MPNC020 01 module A */
+int doWrite_XX_DigIn_A_14(int value);
+int addWrite_XX_DigIn_A_14(int value);
+int getStatus_XX_DigIn_A_14(void);
+
+#define ID_XX_DigIn_A_15 302
+extern int XX_DigIn_A_15;	/* Digital input value bit 15 MPNC020 01 module A */
+int doWrite_XX_DigIn_A_15(int value);
+int addWrite_XX_DigIn_A_15(int value);
+int getStatus_XX_DigIn_A_15(void);
+
+#define ID_XX_DigIn_A_16 303
+extern int XX_DigIn_A_16;	/* Digital input value bit 16 MPNC020 01 module A */
+int doWrite_XX_DigIn_A_16(int value);
+int addWrite_XX_DigIn_A_16(int value);
+int getStatus_XX_DigIn_A_16(void);
+
+#define ID_XX_DigIn_B_1 304
+extern int XX_DigIn_B_1;	/* Digital input value bit 1 MPNC020 01 module B */
+int doWrite_XX_DigIn_B_1(int value);
+int addWrite_XX_DigIn_B_1(int value);
+int getStatus_XX_DigIn_B_1(void);
+
+#define ID_XX_DigIn_B_2 305
+extern int XX_DigIn_B_2;	/* Digital input value bit 2 MPNC020 01 module B */
+int doWrite_XX_DigIn_B_2(int value);
+int addWrite_XX_DigIn_B_2(int value);
+int getStatus_XX_DigIn_B_2(void);
+
+#define ID_XX_DigIn_B_3 306
+extern int XX_DigIn_B_3;	/* Digital input value bit 3 MPNC020 01 module B */
+int doWrite_XX_DigIn_B_3(int value);
+int addWrite_XX_DigIn_B_3(int value);
+int getStatus_XX_DigIn_B_3(void);
+
+#define ID_XX_DigIn_B_4 307
+extern int XX_DigIn_B_4;	/* Digital input value bit 4 MPNC020 01 module B */
+int doWrite_XX_DigIn_B_4(int value);
+int addWrite_XX_DigIn_B_4(int value);
+int getStatus_XX_DigIn_B_4(void);
+
+#define ID_XX_DigIn_B_5 308
+extern int XX_DigIn_B_5;	/* Digital input value bit 5 MPNC020 01 module B */
+int doWrite_XX_DigIn_B_5(int value);
+int addWrite_XX_DigIn_B_5(int value);
+int getStatus_XX_DigIn_B_5(void);
+
+#define ID_XX_DigIn_B_6 309
+extern int XX_DigIn_B_6;	/* Digital input value bit 6 MPNC020 01 module B */
+int doWrite_XX_DigIn_B_6(int value);
+int addWrite_XX_DigIn_B_6(int value);
+int getStatus_XX_DigIn_B_6(void);
+
+#define ID_XX_DigIn_B_7 310
+extern int XX_DigIn_B_7;	/* Digital input value bit 7 MPNC020 01 module B */
+int doWrite_XX_DigIn_B_7(int value);
+int addWrite_XX_DigIn_B_7(int value);
+int getStatus_XX_DigIn_B_7(void);
+
+#define ID_XX_DigIn_B_8 311
+extern int XX_DigIn_B_8;	/* Digital input value bit 8 MPNC020 01 module B */
+int doWrite_XX_DigIn_B_8(int value);
+int addWrite_XX_DigIn_B_8(int value);
+int getStatus_XX_DigIn_B_8(void);
+
+#define ID_XX_DigIn_B_9 312
+extern int XX_DigIn_B_9;	/* Digital input value bit 9 MPNC020 01 module B */
+int doWrite_XX_DigIn_B_9(int value);
+int addWrite_XX_DigIn_B_9(int value);
+int getStatus_XX_DigIn_B_9(void);
+
+#define ID_XX_DigIn_B_10 313
+extern int XX_DigIn_B_10;	/* Digital input value bit 10 MPNC020 01 module B */
+int doWrite_XX_DigIn_B_10(int value);
+int addWrite_XX_DigIn_B_10(int value);
+int getStatus_XX_DigIn_B_10(void);
+
+#define ID_XX_DigIn_B_11 314
+extern int XX_DigIn_B_11;	/* Digital input value bit 11 MPNC020 01 module B */
+int doWrite_XX_DigIn_B_11(int value);
+int addWrite_XX_DigIn_B_11(int value);
+int getStatus_XX_DigIn_B_11(void);
+
+#define ID_XX_DigIn_B_12 315
+extern int XX_DigIn_B_12;	/* Digital input value bit 12 MPNC020 01 module B */
+int doWrite_XX_DigIn_B_12(int value);
+int addWrite_XX_DigIn_B_12(int value);
+int getStatus_XX_DigIn_B_12(void);
+
+#define ID_XX_DigIn_B_13 316
+extern int XX_DigIn_B_13;	/* Digital input value bit 13 MPNC020 01 module B */
+int doWrite_XX_DigIn_B_13(int value);
+int addWrite_XX_DigIn_B_13(int value);
+int getStatus_XX_DigIn_B_13(void);
+
+#define ID_XX_DigIn_B_14 317
+extern int XX_DigIn_B_14;	/* Digital input value bit 14 MPNC020 01 module B */
+int doWrite_XX_DigIn_B_14(int value);
+int addWrite_XX_DigIn_B_14(int value);
+int getStatus_XX_DigIn_B_14(void);
+
+#define ID_XX_DigIn_B_15 318
+extern int XX_DigIn_B_15;	/* Digital input value bit 15 MPNC020 01 module B */
+int doWrite_XX_DigIn_B_15(int value);
+int addWrite_XX_DigIn_B_15(int value);
+int getStatus_XX_DigIn_B_15(void);
+
+#define ID_XX_DigIn_B_16 319
+extern int XX_DigIn_B_16;	/* Digital input value bit 16 MPNC020 01 module B */
+int doWrite_XX_DigIn_B_16(int value);
+int addWrite_XX_DigIn_B_16(int value);
+int getStatus_XX_DigIn_B_16(void);
+
 #define ID_XX_Reserved_1 352
 extern u_int16_t XX_Reserved_1;
 int doWrite_XX_Reserved_1(u_int16_t value);
@@ -579,6 +867,204 @@ extern float SysImpActiveEnergy_11;	/* 0x14 0x1106 Energia Attiva Importata 0 in
 int doWrite_SysImpActiveEnergy_11(float value);
 int addWrite_SysImpActiveEnergy_11(float value);
 int getStatus_SysImpActiveEnergy_11(void);
+
+#define ID_Alarm 500
+extern int Alarm;
+int doWrite_Alarm(int value);
+int addWrite_Alarm(int value);
+int getStatus_Alarm(void);
+
+#define ID_OK_DigIn_A_1 501
+extern int OK_DigIn_A_1;
+int doWrite_OK_DigIn_A_1(int value);
+int addWrite_OK_DigIn_A_1(int value);
+int getStatus_OK_DigIn_A_1(void);
+
+#define ID_OK_DigIn_A_2 502
+extern int OK_DigIn_A_2;
+int doWrite_OK_DigIn_A_2(int value);
+int addWrite_OK_DigIn_A_2(int value);
+int getStatus_OK_DigIn_A_2(void);
+
+#define ID_OK_DigIn_A_3 503
+extern int OK_DigIn_A_3;
+int doWrite_OK_DigIn_A_3(int value);
+int addWrite_OK_DigIn_A_3(int value);
+int getStatus_OK_DigIn_A_3(void);
+
+#define ID_OK_DigIn_A_4 504
+extern int OK_DigIn_A_4;
+int doWrite_OK_DigIn_A_4(int value);
+int addWrite_OK_DigIn_A_4(int value);
+int getStatus_OK_DigIn_A_4(void);
+
+#define ID_OK_DigIn_A_5 505
+extern int OK_DigIn_A_5;
+int doWrite_OK_DigIn_A_5(int value);
+int addWrite_OK_DigIn_A_5(int value);
+int getStatus_OK_DigIn_A_5(void);
+
+#define ID_OK_DigIn_A_6 506
+extern int OK_DigIn_A_6;
+int doWrite_OK_DigIn_A_6(int value);
+int addWrite_OK_DigIn_A_6(int value);
+int getStatus_OK_DigIn_A_6(void);
+
+#define ID_OK_DigIn_A_7 507
+extern int OK_DigIn_A_7;
+int doWrite_OK_DigIn_A_7(int value);
+int addWrite_OK_DigIn_A_7(int value);
+int getStatus_OK_DigIn_A_7(void);
+
+#define ID_OK_DigIn_A_8 508
+extern int OK_DigIn_A_8;
+int doWrite_OK_DigIn_A_8(int value);
+int addWrite_OK_DigIn_A_8(int value);
+int getStatus_OK_DigIn_A_8(void);
+
+#define ID_OK_DigIn_A_9 509
+extern int OK_DigIn_A_9;
+int doWrite_OK_DigIn_A_9(int value);
+int addWrite_OK_DigIn_A_9(int value);
+int getStatus_OK_DigIn_A_9(void);
+
+#define ID_OK_DigIn_A_10 510
+extern int OK_DigIn_A_10;
+int doWrite_OK_DigIn_A_10(int value);
+int addWrite_OK_DigIn_A_10(int value);
+int getStatus_OK_DigIn_A_10(void);
+
+#define ID_OK_DigIn_A_11 511
+extern int OK_DigIn_A_11;
+int doWrite_OK_DigIn_A_11(int value);
+int addWrite_OK_DigIn_A_11(int value);
+int getStatus_OK_DigIn_A_11(void);
+
+#define ID_OK_DigIn_A_12 512
+extern int OK_DigIn_A_12;
+int doWrite_OK_DigIn_A_12(int value);
+int addWrite_OK_DigIn_A_12(int value);
+int getStatus_OK_DigIn_A_12(void);
+
+#define ID_OK_DigIn_A_13 513
+extern int OK_DigIn_A_13;
+int doWrite_OK_DigIn_A_13(int value);
+int addWrite_OK_DigIn_A_13(int value);
+int getStatus_OK_DigIn_A_13(void);
+
+#define ID_OK_DigIn_A_14 514
+extern int OK_DigIn_A_14;
+int doWrite_OK_DigIn_A_14(int value);
+int addWrite_OK_DigIn_A_14(int value);
+int getStatus_OK_DigIn_A_14(void);
+
+#define ID_OK_DigIn_A_15 515
+extern int OK_DigIn_A_15;
+int doWrite_OK_DigIn_A_15(int value);
+int addWrite_OK_DigIn_A_15(int value);
+int getStatus_OK_DigIn_A_15(void);
+
+#define ID_OK_DigIn_A_16 516
+extern int OK_DigIn_A_16;
+int doWrite_OK_DigIn_A_16(int value);
+int addWrite_OK_DigIn_A_16(int value);
+int getStatus_OK_DigIn_A_16(void);
+
+#define ID_OK_DigIn_B_1 517
+extern int OK_DigIn_B_1;
+int doWrite_OK_DigIn_B_1(int value);
+int addWrite_OK_DigIn_B_1(int value);
+int getStatus_OK_DigIn_B_1(void);
+
+#define ID_OK_DigIn_B_2 518
+extern int OK_DigIn_B_2;
+int doWrite_OK_DigIn_B_2(int value);
+int addWrite_OK_DigIn_B_2(int value);
+int getStatus_OK_DigIn_B_2(void);
+
+#define ID_OK_DigIn_B_3 519
+extern int OK_DigIn_B_3;
+int doWrite_OK_DigIn_B_3(int value);
+int addWrite_OK_DigIn_B_3(int value);
+int getStatus_OK_DigIn_B_3(void);
+
+#define ID_OK_DigIn_B_4 520
+extern int OK_DigIn_B_4;
+int doWrite_OK_DigIn_B_4(int value);
+int addWrite_OK_DigIn_B_4(int value);
+int getStatus_OK_DigIn_B_4(void);
+
+#define ID_OK_DigIn_B_5 521
+extern int OK_DigIn_B_5;
+int doWrite_OK_DigIn_B_5(int value);
+int addWrite_OK_DigIn_B_5(int value);
+int getStatus_OK_DigIn_B_5(void);
+
+#define ID_OK_DigIn_B_6 522
+extern int OK_DigIn_B_6;
+int doWrite_OK_DigIn_B_6(int value);
+int addWrite_OK_DigIn_B_6(int value);
+int getStatus_OK_DigIn_B_6(void);
+
+#define ID_OK_DigIn_B_7 523
+extern int OK_DigIn_B_7;
+int doWrite_OK_DigIn_B_7(int value);
+int addWrite_OK_DigIn_B_7(int value);
+int getStatus_OK_DigIn_B_7(void);
+
+#define ID_OK_DigIn_B_8 524
+extern int OK_DigIn_B_8;
+int doWrite_OK_DigIn_B_8(int value);
+int addWrite_OK_DigIn_B_8(int value);
+int getStatus_OK_DigIn_B_8(void);
+
+#define ID_OK_DigIn_B_9 525
+extern int OK_DigIn_B_9;
+int doWrite_OK_DigIn_B_9(int value);
+int addWrite_OK_DigIn_B_9(int value);
+int getStatus_OK_DigIn_B_9(void);
+
+#define ID_OK_DigIn_B_10 526
+extern int OK_DigIn_B_10;
+int doWrite_OK_DigIn_B_10(int value);
+int addWrite_OK_DigIn_B_10(int value);
+int getStatus_OK_DigIn_B_10(void);
+
+#define ID_OK_DigIn_B_11 527
+extern int OK_DigIn_B_11;
+int doWrite_OK_DigIn_B_11(int value);
+int addWrite_OK_DigIn_B_11(int value);
+int getStatus_OK_DigIn_B_11(void);
+
+#define ID_OK_DigIn_B_12 528
+extern int OK_DigIn_B_12;
+int doWrite_OK_DigIn_B_12(int value);
+int addWrite_OK_DigIn_B_12(int value);
+int getStatus_OK_DigIn_B_12(void);
+
+#define ID_OK_DigIn_B_13 529
+extern int OK_DigIn_B_13;
+int doWrite_OK_DigIn_B_13(int value);
+int addWrite_OK_DigIn_B_13(int value);
+int getStatus_OK_DigIn_B_13(void);
+
+#define ID_OK_DigIn_B_14 530
+extern int OK_DigIn_B_14;
+int doWrite_OK_DigIn_B_14(int value);
+int addWrite_OK_DigIn_B_14(int value);
+int getStatus_OK_DigIn_B_14(void);
+
+#define ID_OK_DigIn_B_15 531
+extern int OK_DigIn_B_15;
+int doWrite_OK_DigIn_B_15(int value);
+int addWrite_OK_DigIn_B_15(int value);
+int getStatus_OK_DigIn_B_15(void);
+
+#define ID_OK_DigIn_B_16 532
+extern int OK_DigIn_B_16;
+int doWrite_OK_DigIn_B_16(int value);
+int addWrite_OK_DigIn_B_16(int value);
+int getStatus_OK_DigIn_B_16(void);
 
 #define ID_TCP_is_Caldaia_ON 1000
 extern int TCP_is_Caldaia_ON;

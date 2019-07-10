@@ -6018,10 +6018,10 @@ color: rgb(0, 255, 0);</string>
     </color>
    </property>
    <property name="text">
-    <string>plot</string>
+    <string>dig.i/o</string>
    </property>
    <property name="pressText">
-    <string>plot</string>
+    <string>dig.i/o</string>
    </property>
    <property name="borderWidth">
     <number>1</number>
