@@ -362,6 +362,12 @@ HOME</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="page100.ui" line="3946"/>
+        <location filename="page100.ui" line="3949"/>
+        <source>status</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="page100.ui" line="4456"/>
         <source>PUFFER</source>
         <translation type="unfinished"></translation>
@@ -434,12 +440,6 @@ HOME</source>
         <location filename="page100.ui" line="3125"/>
         <location filename="page100.ui" line="3131"/>
         <source>SysImpActiveEnergy_10</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page100.ui" line="3946"/>
-        <location filename="page100.ui" line="3949"/>
-        <source>errors</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -907,6 +907,9 @@ HOME</source>
         <location filename="page200.ui" line="4269"/>
         <location filename="page200.ui" line="4346"/>
         <location filename="page200.ui" line="4420"/>
+        <location filename="page200.ui" line="4889"/>
+        <location filename="page200.ui" line="4965"/>
+        <location filename="page200.ui" line="5041"/>
         <source>ATCMlabel widget</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1304,6 +1307,11 @@ Nodes</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="page200.ui" line="4675"/>
+        <source>status</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="page200.ui" line="4749"/>
         <location filename="page200.ui" line="4752"/>
         <source>dig.i/o</source>
@@ -1317,6 +1325,55 @@ Nodes</oldsource>
     <message>
         <location filename="page200.ui" line="4844"/>
         <source>ATCMtime widget</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="4883"/>
+        <source>xxx</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="4886"/>
+        <location filename="page200.ui" line="4892"/>
+        <source>XX_WatchDog</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="4895"/>
+        <source>w.d. </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="4962"/>
+        <location filename="page200.ui" line="4968"/>
+        <source>XX_ColdJunctionT</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="4971"/>
+        <source>c.j. </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="5038"/>
+        <location filename="page200.ui" line="5044"/>
+        <source>XX_ModulesNumber</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="5050"/>
+        <source> modules</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="4959"/>
+        <location filename="page200.ui" line="5035"/>
+        <source>xx</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message utf8="true">
+        <location filename="page200.ui" line="4974"/>
+        <source> °C</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1387,11 +1444,6 @@ Nodes</oldsource>
         <location filename="page200.ui" line="4557"/>
         <location filename="page200.ui" line="4560"/>
         <source>table</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page200.ui" line="4675"/>
-        <source>errors</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1501,6 +1553,7 @@ Nodes</oldsource>
     </message>
     <message>
         <location filename="page200.ui" line="956"/>
+        <location filename="page200.ui" line="4898"/>
         <source> s</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2016,7 +2069,7 @@ RTU3</source>
     <message>
         <location filename="page300.ui" line="1760"/>
         <location filename="page300.ui" line="1763"/>
-        <source>errors</source>
+        <source>status</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2444,26 +2497,6 @@ RTU3</source>
         <location filename="page300.ui" line="5368"/>
         <location filename="page300.ui" line="5380"/>
         <source>XX_DigIn_A_15</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page300.ui" line="5444"/>
-        <source>gray</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page300.ui" line="5475"/>
-        <source>red</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page300.ui" line="5506"/>
-        <source>green</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page300.ui" line="5537"/>
-        <source>blue</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

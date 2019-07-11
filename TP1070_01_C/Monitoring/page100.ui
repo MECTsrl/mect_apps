@@ -32,7 +32,7 @@ background-color: rgb(0,0,0);
 }
 </string>
   </property>
-  <widget class="ATCMbutton" name="atcmButton">
+  <widget class="ATCMbutton" name="atcmButton_menu">
    <property name="geometry">
     <rect>
      <x>533</x>
@@ -3875,7 +3875,7 @@ color: rgb(255, 0, 255);</string>
     <number>0</number>
    </property>
   </widget>
-  <widget class="ATCMbutton" name="atcmButton_2">
+  <widget class="ATCMbutton" name="atcmButton_status">
    <property name="geometry">
     <rect>
      <x>667</x>
@@ -3943,10 +3943,10 @@ color: rgb(255, 0, 255);</string>
     </color>
    </property>
    <property name="text">
-    <string>errors</string>
+    <string>status</string>
    </property>
    <property name="pressText">
-    <string>errors</string>
+    <string>status</string>
    </property>
    <property name="borderWidth">
     <number>1</number>
@@ -5950,7 +5950,7 @@ color: rgb(0, 255, 0);</string>
     <enum>Qt::Horizontal</enum>
    </property>
   </widget>
-  <widget class="ATCMbutton" name="atcmButton_3">
+  <widget class="ATCMbutton" name="atcmButton_dig_io">
    <property name="geometry">
     <rect>
      <x>734</x>
@@ -6200,9 +6200,9 @@ color: rgb(0, 127, 0);</string>
   <zorder>atcmLabel_B4</zorder>
   <zorder>atcmLabel_A4</zorder>
   <zorder>atcmLabel_C4</zorder>
-  <zorder>atcmButton_2</zorder>
+  <zorder>atcmButton_status</zorder>
   <zorder>label</zorder>
-  <zorder>atcmButton</zorder>
+  <zorder>atcmButton_menu</zorder>
   <zorder>label_W09_UPS</zorder>
   <zorder>atcmLabel_VA09</zorder>
   <zorder>atcmLabel_Wh02</zorder>
@@ -6273,7 +6273,7 @@ color: rgb(0, 127, 0);</string>
   <zorder>atcmButton_trend_piani_2</zorder>
   <zorder>atcmButton_trend_piani_3</zorder>
   <zorder>atcmButton_trend_piani_4</zorder>
-  <zorder>atcmButton_3</zorder>
+  <zorder>atcmButton_dig_io</zorder>
   <zorder>line_hr_1</zorder>
   <zorder>line_hr_2</zorder>
   <zorder>line_vt_1</zorder>
@@ -6326,7 +6326,7 @@ color: rgb(0, 127, 0);</string>
  </resources>
  <connections>
   <connection>
-   <sender>atcmButton</sender>
+   <sender>atcmButton_menu</sender>
    <signal>newPage(const char*,bool)</signal>
    <receiver>page100</receiver>
    <slot>goto_page(const char*,bool)</slot>
@@ -6342,7 +6342,7 @@ color: rgb(0, 127, 0);</string>
    </hints>
   </connection>
   <connection>
-   <sender>atcmButton_2</sender>
+   <sender>atcmButton_status</sender>
    <signal>newPage(const char*,bool)</signal>
    <receiver>page100</receiver>
    <slot>goto_page(const char*,bool)</slot>
@@ -6454,7 +6454,7 @@ color: rgb(0, 127, 0);</string>
    </hints>
   </connection>
   <connection>
-   <sender>atcmButton_3</sender>
+   <sender>atcmButton_dig_io</sender>
    <signal>newPage(const char*,bool)</signal>
    <receiver>page100</receiver>
    <slot>goto_page(const char*,bool)</slot>

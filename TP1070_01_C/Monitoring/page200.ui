@@ -712,7 +712,7 @@ background-color: rgb(0, 0, 0);
     <number>0</number>
    </property>
   </widget>
-  <widget class="ATCMbutton" name="atcmButton_2">
+  <widget class="ATCMbutton" name="atcmButton_zero">
    <property name="geometry">
     <rect>
      <x>300</x>
@@ -3774,7 +3774,7 @@ Nodes</string>
     <enum>ATCMlabel::Hex</enum>
    </property>
   </widget>
-  <widget class="ATCMbutton" name="atcmButton_10">
+  <widget class="ATCMbutton" name="atcmButton_vpn">
    <property name="geometry">
     <rect>
      <x>100</x>
@@ -3840,7 +3840,7 @@ Nodes</string>
     <number>0</number>
    </property>
   </widget>
-  <widget class="ATCMbutton" name="atcmButton_8">
+  <widget class="ATCMbutton" name="atcmButton_ppp">
    <property name="geometry">
     <rect>
      <x>0</x>
@@ -4486,7 +4486,7 @@ color: rgb(170, 170, 170);</string>
     <enum>Qt::Horizontal</enum>
    </property>
   </widget>
-  <widget class="ATCMbutton" name="atcmButton_3">
+  <widget class="ATCMbutton" name="atcmButton_table">
    <property name="geometry">
     <rect>
      <x>600</x>
@@ -4569,7 +4569,7 @@ color: rgb(170, 170, 170);</string>
     <enum>QFrame::Raised</enum>
    </property>
   </widget>
-  <widget class="ATCMbutton" name="atcmButton">
+  <widget class="ATCMbutton" name="atcmButton_menu">
    <property name="geometry">
     <rect>
      <x>533</x>
@@ -4652,7 +4652,7 @@ color: rgb(170, 170, 170);</string>
     <enum>QFrame::Raised</enum>
    </property>
   </widget>
-  <widget class="QLabel" name="label">
+  <widget class="QLabel" name="label_status">
    <property name="geometry">
     <rect>
      <x>667</x>
@@ -4672,13 +4672,13 @@ color: rgb(170, 170, 170);</string>
 color: rgb(0, 0, 0);</string>
    </property>
    <property name="text">
-    <string>errors</string>
+    <string>status</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
-  <widget class="ATCMbutton" name="atcmButton_4">
+  <widget class="ATCMbutton" name="atcmButton_dig_io">
    <property name="geometry">
     <rect>
      <x>734</x>
@@ -4864,6 +4864,234 @@ color: rgb(0, 0, 0);</string>
     <number>0</number>
    </property>
   </widget>
+  <widget class="ATCMlabel" name="atcmLabel_2">
+   <property name="geometry">
+    <rect>
+     <x>298</x>
+     <y>140</y>
+     <width>100</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>xxx</string>
+   </property>
+   <property name="toolTip">
+    <string>XX_WatchDog</string>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMlabel widget</string>
+   </property>
+   <property name="variable">
+    <string>XX_WatchDog</string>
+   </property>
+   <property name="prefix">
+    <string>w.d. </string>
+   </property>
+   <property name="suffix">
+    <string> s</string>
+   </property>
+   <property name="refresh">
+    <number>200</number>
+   </property>
+   <property name="max">
+    <string notr="true">0</string>
+   </property>
+   <property name="min">
+    <string notr="true">0</string>
+   </property>
+   <property name="viewStatus">
+    <bool>false</bool>
+   </property>
+   <property name="visibilityVar">
+    <string/>
+   </property>
+   <property name="bgColor">
+    <color>
+     <red>0</red>
+     <green>0</green>
+     <blue>0</blue>
+    </color>
+   </property>
+   <property name="borderColor">
+    <color>
+     <red>255</red>
+     <green>255</green>
+     <blue>255</blue>
+    </color>
+   </property>
+   <property name="fontColor">
+    <color>
+     <red>255</red>
+     <green>85</green>
+     <blue>0</blue>
+    </color>
+   </property>
+   <property name="borderWidth">
+    <number>1</number>
+   </property>
+   <property name="borderRadius">
+    <number>0</number>
+   </property>
+  </widget>
+  <widget class="ATCMlabel" name="atcmLabel_3">
+   <property name="geometry">
+    <rect>
+     <x>91</x>
+     <y>140</y>
+     <width>100</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>xx</string>
+   </property>
+   <property name="toolTip">
+    <string>XX_ColdJunctionT</string>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMlabel widget</string>
+   </property>
+   <property name="variable">
+    <string>XX_ColdJunctionT</string>
+   </property>
+   <property name="prefix">
+    <string>c.j. </string>
+   </property>
+   <property name="suffix">
+    <string> °C</string>
+   </property>
+   <property name="refresh">
+    <number>200</number>
+   </property>
+   <property name="max">
+    <string notr="true">0</string>
+   </property>
+   <property name="min">
+    <string notr="true">0</string>
+   </property>
+   <property name="viewStatus">
+    <bool>false</bool>
+   </property>
+   <property name="visibilityVar">
+    <string/>
+   </property>
+   <property name="bgColor">
+    <color>
+     <red>0</red>
+     <green>0</green>
+     <blue>0</blue>
+    </color>
+   </property>
+   <property name="borderColor">
+    <color>
+     <red>255</red>
+     <green>255</green>
+     <blue>255</blue>
+    </color>
+   </property>
+   <property name="fontColor">
+    <color>
+     <red>255</red>
+     <green>85</green>
+     <blue>0</blue>
+    </color>
+   </property>
+   <property name="borderWidth">
+    <number>1</number>
+   </property>
+   <property name="borderRadius">
+    <number>0</number>
+   </property>
+  </widget>
+  <widget class="ATCMlabel" name="atcmLabel_4">
+   <property name="geometry">
+    <rect>
+     <x>195</x>
+     <y>140</y>
+     <width>100</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>xx</string>
+   </property>
+   <property name="toolTip">
+    <string>XX_ModulesNumber</string>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMlabel widget</string>
+   </property>
+   <property name="variable">
+    <string>XX_ModulesNumber</string>
+   </property>
+   <property name="prefix">
+    <string/>
+   </property>
+   <property name="suffix">
+    <string> modules</string>
+   </property>
+   <property name="refresh">
+    <number>200</number>
+   </property>
+   <property name="max">
+    <string notr="true">0</string>
+   </property>
+   <property name="min">
+    <string notr="true">0</string>
+   </property>
+   <property name="viewStatus">
+    <bool>false</bool>
+   </property>
+   <property name="visibilityVar">
+    <string/>
+   </property>
+   <property name="bgColor">
+    <color>
+     <red>0</red>
+     <green>0</green>
+     <blue>0</blue>
+    </color>
+   </property>
+   <property name="borderColor">
+    <color>
+     <red>255</red>
+     <green>255</green>
+     <blue>255</blue>
+    </color>
+   </property>
+   <property name="fontColor">
+    <color>
+     <red>255</red>
+     <green>85</green>
+     <blue>0</blue>
+    </color>
+   </property>
+   <property name="borderWidth">
+    <number>1</number>
+   </property>
+   <property name="borderRadius">
+    <number>0</number>
+   </property>
+  </widget>
   <zorder>pushButton</zorder>
   <zorder>atcmLabel_44</zorder>
   <zorder>atcmComboBox_9</zorder>
@@ -4879,7 +5107,7 @@ color: rgb(0, 0, 0);</string>
   <zorder>atcmLabel_45</zorder>
   <zorder>atcmLabel</zorder>
   <zorder>atcmLabel_7</zorder>
-  <zorder>atcmButton_2</zorder>
+  <zorder>atcmButton_zero</zorder>
   <zorder>atcmComboBox_6</zorder>
   <zorder>label_RTU_AnIn_14</zorder>
   <zorder>atcmComboBox_17</zorder>
@@ -4927,18 +5155,18 @@ color: rgb(0, 0, 0);</string>
   <zorder>atcmComboBox_22</zorder>
   <zorder>label_RTU_AnIn_26</zorder>
   <zorder>atcmLabel_55</zorder>
-  <zorder>atcmButton_10</zorder>
-  <zorder>atcmButton_8</zorder>
+  <zorder>atcmButton_vpn</zorder>
+  <zorder>atcmButton_ppp</zorder>
   <zorder>atcmLabel_6</zorder>
   <zorder>label_RTU_AnIn_27</zorder>
   <zorder>atcmLabel_8</zorder>
   <zorder>atcmLabel_10</zorder>
   <zorder>atcmLabel_11</zorder>
   <zorder>atcmLabel_9</zorder>
-  <zorder>atcmButton_3</zorder>
-  <zorder>atcmButton</zorder>
-  <zorder>label</zorder>
-  <zorder>atcmButton_4</zorder>
+  <zorder>atcmButton_table</zorder>
+  <zorder>atcmButton_menu</zorder>
+  <zorder>label_status</zorder>
+  <zorder>atcmButton_dig_io</zorder>
   <zorder>line_3</zorder>
   <zorder>line_4</zorder>
   <zorder>line_5</zorder>
@@ -4951,6 +5179,9 @@ color: rgb(0, 0, 0);</string>
   <zorder>line_11</zorder>
   <zorder>atcmDate</zorder>
   <zorder>atcmTime</zorder>
+  <zorder>atcmLabel_2</zorder>
+  <zorder>atcmLabel_3</zorder>
+  <zorder>atcmLabel_4</zorder>
  </widget>
  <customwidgets>
   <customwidget>
@@ -4982,7 +5213,7 @@ color: rgb(0, 0, 0);</string>
  <resources/>
  <connections>
   <connection>
-   <sender>atcmButton_3</sender>
+   <sender>atcmButton_table</sender>
    <signal>newPage(const char*,bool)</signal>
    <receiver>page200</receiver>
    <slot>goto_page(const char*,bool)</slot>
@@ -4998,7 +5229,7 @@ color: rgb(0, 0, 0);</string>
    </hints>
   </connection>
   <connection>
-   <sender>atcmButton</sender>
+   <sender>atcmButton_menu</sender>
    <signal>newPage(const char*,bool)</signal>
    <receiver>page200</receiver>
    <slot>goto_page(const char*,bool)</slot>
@@ -5014,7 +5245,7 @@ color: rgb(0, 0, 0);</string>
    </hints>
   </connection>
   <connection>
-   <sender>atcmButton_4</sender>
+   <sender>atcmButton_dig_io</sender>
    <signal>newPage(const char*,bool)</signal>
    <receiver>page200</receiver>
    <slot>goto_page(const char*,bool)</slot>
