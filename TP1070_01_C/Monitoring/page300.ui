@@ -852,7 +852,7 @@ color: rgb(0,128,255);</string>
     <string>PIANO SOTTO</string>
    </property>
    <property name="alignment">
-    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    <set>Qt::AlignRight|Qt::AlignTop|Qt::AlignTrailing</set>
    </property>
    <property name="margin">
     <number>7</number>
@@ -1306,7 +1306,7 @@ color: rgb(0, 255, 255);</string>
     <string>PIANO SOPRA</string>
    </property>
    <property name="alignment">
-    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    <set>Qt::AlignRight|Qt::AlignTop|Qt::AlignTrailing</set>
    </property>
    <property name="margin">
     <number>7</number>
@@ -1902,7 +1902,7 @@ color: rgb(0,192, 255);</string>
     <string>PIANO TERRA</string>
    </property>
    <property name="alignment">
-    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    <set>Qt::AlignRight|Qt::AlignTop|Qt::AlignTrailing</set>
    </property>
    <property name="margin">
     <number>7</number>
@@ -2616,7 +2616,7 @@ color: rgb(0, 0, 0);</string>
   <widget class="ATCMled" name="atcmLed_DigIn_A_01">
    <property name="geometry">
     <rect>
-     <x>90</x>
+     <x>150</x>
      <y>0</y>
      <width>30</width>
      <height>30</height>
@@ -2658,7 +2658,7 @@ color: rgb(0, 0, 0);</string>
   <widget class="ATCMled" name="atcmLed_DigIn_B_01">
    <property name="geometry">
     <rect>
-     <x>150</x>
+     <x>180</x>
      <y>0</y>
      <width>30</width>
      <height>30</height>
@@ -2700,7 +2700,7 @@ color: rgb(0, 0, 0);</string>
   <widget class="ATCMbutton" name="atcmButton_XX_01">
    <property name="geometry">
     <rect>
-     <x>0</x>
+     <x>90</x>
      <y>0</y>
      <width>60</width>
      <height>30</height>
@@ -2790,7 +2790,7 @@ color: rgb(0, 0, 0);</string>
   <widget class="ATCMbutton" name="atcmButton_XX_02">
    <property name="geometry">
     <rect>
-     <x>0</x>
+     <x>90</x>
      <y>30</y>
      <width>60</width>
      <height>30</height>
@@ -2880,7 +2880,7 @@ color: rgb(0, 0, 0);</string>
   <widget class="ATCMled" name="atcmLed_DigIn_A_02">
    <property name="geometry">
     <rect>
-     <x>90</x>
+     <x>150</x>
      <y>30</y>
      <width>30</width>
      <height>30</height>
@@ -2922,7 +2922,7 @@ color: rgb(0, 0, 0);</string>
   <widget class="ATCMled" name="atcmLed_DigIn_B_02">
    <property name="geometry">
     <rect>
-     <x>150</x>
+     <x>180</x>
      <y>30</y>
      <width>30</width>
      <height>30</height>
@@ -2964,7 +2964,7 @@ color: rgb(0, 0, 0);</string>
   <widget class="ATCMled" name="atcmLed_DigIn_B_03">
    <property name="geometry">
     <rect>
-     <x>150</x>
+     <x>180</x>
      <y>60</y>
      <width>30</width>
      <height>30</height>
@@ -3006,7 +3006,7 @@ color: rgb(0, 0, 0);</string>
   <widget class="ATCMbutton" name="atcmButton_XX_03">
    <property name="geometry">
     <rect>
-     <x>0</x>
+     <x>90</x>
      <y>60</y>
      <width>60</width>
      <height>30</height>
@@ -3096,7 +3096,7 @@ color: rgb(0, 0, 0);</string>
   <widget class="ATCMled" name="atcmLed_DigIn_A_03">
    <property name="geometry">
     <rect>
-     <x>90</x>
+     <x>150</x>
      <y>60</y>
      <width>30</width>
      <height>30</height>
@@ -3138,7 +3138,7 @@ color: rgb(0, 0, 0);</string>
   <widget class="ATCMled" name="atcmLed_DigIn_A_04">
    <property name="geometry">
     <rect>
-     <x>90</x>
+     <x>150</x>
      <y>90</y>
      <width>30</width>
      <height>30</height>
@@ -3180,7 +3180,7 @@ color: rgb(0, 0, 0);</string>
   <widget class="ATCMbutton" name="atcmButton_XX_04">
    <property name="geometry">
     <rect>
-     <x>0</x>
+     <x>90</x>
      <y>90</y>
      <width>60</width>
      <height>30</height>
@@ -3270,7 +3270,7 @@ color: rgb(0, 0, 0);</string>
   <widget class="ATCMled" name="atcmLed_DigIn_B_04">
    <property name="geometry">
     <rect>
-     <x>150</x>
+     <x>180</x>
      <y>90</y>
      <width>30</width>
      <height>30</height>
@@ -3312,7 +3312,7 @@ color: rgb(0, 0, 0);</string>
   <widget class="ATCMled" name="atcmLed_DigIn_B_08">
    <property name="geometry">
     <rect>
-     <x>150</x>
+     <x>180</x>
      <y>210</y>
      <width>30</width>
      <height>30</height>
@@ -3354,7 +3354,7 @@ color: rgb(0, 0, 0);</string>
   <widget class="ATCMled" name="atcmLed_DigIn_A_07">
    <property name="geometry">
     <rect>
-     <x>90</x>
+     <x>150</x>
      <y>180</y>
      <width>30</width>
      <height>30</height>
@@ -3396,7 +3396,7 @@ color: rgb(0, 0, 0);</string>
   <widget class="ATCMbutton" name="atcmButton_XX_06">
    <property name="geometry">
     <rect>
-     <x>0</x>
+     <x>90</x>
      <y>150</y>
      <width>60</width>
      <height>30</height>
@@ -3486,7 +3486,7 @@ color: rgb(0, 0, 0);</string>
   <widget class="ATCMbutton" name="atcmButton_XX_07">
    <property name="geometry">
     <rect>
-     <x>0</x>
+     <x>90</x>
      <y>180</y>
      <width>60</width>
      <height>30</height>
@@ -3576,7 +3576,7 @@ color: rgb(0, 0, 0);</string>
   <widget class="ATCMled" name="atcmLed_DigIn_A_08">
    <property name="geometry">
     <rect>
-     <x>90</x>
+     <x>150</x>
      <y>210</y>
      <width>30</width>
      <height>30</height>
@@ -3618,7 +3618,7 @@ color: rgb(0, 0, 0);</string>
   <widget class="ATCMled" name="atcmLed_DigIn_A_05">
    <property name="geometry">
     <rect>
-     <x>90</x>
+     <x>150</x>
      <y>120</y>
      <width>30</width>
      <height>30</height>
@@ -3660,7 +3660,7 @@ color: rgb(0, 0, 0);</string>
   <widget class="ATCMled" name="atcmLed_DigIn_A_06">
    <property name="geometry">
     <rect>
-     <x>90</x>
+     <x>150</x>
      <y>150</y>
      <width>30</width>
      <height>30</height>
@@ -3702,7 +3702,7 @@ color: rgb(0, 0, 0);</string>
   <widget class="ATCMled" name="atcmLed_DigIn_B_05">
    <property name="geometry">
     <rect>
-     <x>150</x>
+     <x>180</x>
      <y>120</y>
      <width>30</width>
      <height>30</height>
@@ -3744,7 +3744,7 @@ color: rgb(0, 0, 0);</string>
   <widget class="ATCMbutton" name="atcmButton_XX_05">
    <property name="geometry">
     <rect>
-     <x>0</x>
+     <x>90</x>
      <y>120</y>
      <width>60</width>
      <height>30</height>
@@ -3834,7 +3834,7 @@ color: rgb(0, 0, 0);</string>
   <widget class="ATCMled" name="atcmLed_DigIn_B_07">
    <property name="geometry">
     <rect>
-     <x>150</x>
+     <x>180</x>
      <y>180</y>
      <width>30</width>
      <height>30</height>
@@ -3876,7 +3876,7 @@ color: rgb(0, 0, 0);</string>
   <widget class="ATCMled" name="atcmLed_DigIn_B_06">
    <property name="geometry">
     <rect>
-     <x>150</x>
+     <x>180</x>
      <y>150</y>
      <width>30</width>
      <height>30</height>
@@ -3918,7 +3918,7 @@ color: rgb(0, 0, 0);</string>
   <widget class="ATCMbutton" name="atcmButton_XX_08">
    <property name="geometry">
     <rect>
-     <x>0</x>
+     <x>90</x>
      <y>210</y>
      <width>60</width>
      <height>30</height>
@@ -4008,7 +4008,7 @@ color: rgb(0, 0, 0);</string>
   <widget class="ATCMbutton" name="atcmButton_XX_12">
    <property name="geometry">
     <rect>
-     <x>0</x>
+     <x>90</x>
      <y>330</y>
      <width>60</width>
      <height>30</height>
@@ -4098,7 +4098,7 @@ color: rgb(0, 0, 0);</string>
   <widget class="ATCMled" name="atcmLed_DigIn_A_09">
    <property name="geometry">
     <rect>
-     <x>90</x>
+     <x>150</x>
      <y>240</y>
      <width>30</width>
      <height>30</height>
@@ -4140,7 +4140,7 @@ color: rgb(0, 0, 0);</string>
   <widget class="ATCMbutton" name="atcmButton_XX_09">
    <property name="geometry">
     <rect>
-     <x>0</x>
+     <x>90</x>
      <y>240</y>
      <width>60</width>
      <height>30</height>
@@ -4230,7 +4230,7 @@ color: rgb(0, 0, 0);</string>
   <widget class="ATCMled" name="atcmLed_DigIn_B_10">
    <property name="geometry">
     <rect>
-     <x>150</x>
+     <x>180</x>
      <y>270</y>
      <width>30</width>
      <height>30</height>
@@ -4272,7 +4272,7 @@ color: rgb(0, 0, 0);</string>
   <widget class="ATCMled" name="atcmLed_DigIn_B_09">
    <property name="geometry">
     <rect>
-     <x>150</x>
+     <x>180</x>
      <y>240</y>
      <width>30</width>
      <height>30</height>
@@ -4314,7 +4314,7 @@ color: rgb(0, 0, 0);</string>
   <widget class="ATCMbutton" name="atcmButton_XX_11">
    <property name="geometry">
     <rect>
-     <x>0</x>
+     <x>90</x>
      <y>300</y>
      <width>60</width>
      <height>30</height>
@@ -4404,7 +4404,7 @@ color: rgb(0, 0, 0);</string>
   <widget class="ATCMled" name="atcmLed_DigIn_A_12">
    <property name="geometry">
     <rect>
-     <x>90</x>
+     <x>150</x>
      <y>330</y>
      <width>30</width>
      <height>30</height>
@@ -4446,7 +4446,7 @@ color: rgb(0, 0, 0);</string>
   <widget class="ATCMled" name="atcmLed_DigIn_B_11">
    <property name="geometry">
     <rect>
-     <x>150</x>
+     <x>180</x>
      <y>300</y>
      <width>30</width>
      <height>30</height>
@@ -4488,7 +4488,7 @@ color: rgb(0, 0, 0);</string>
   <widget class="ATCMbutton" name="atcmButton_XX_10">
    <property name="geometry">
     <rect>
-     <x>0</x>
+     <x>90</x>
      <y>270</y>
      <width>60</width>
      <height>30</height>
@@ -4578,7 +4578,7 @@ color: rgb(0, 0, 0);</string>
   <widget class="ATCMled" name="atcmLed_DigIn_A_10">
    <property name="geometry">
     <rect>
-     <x>90</x>
+     <x>150</x>
      <y>270</y>
      <width>30</width>
      <height>30</height>
@@ -4620,7 +4620,7 @@ color: rgb(0, 0, 0);</string>
   <widget class="ATCMled" name="atcmLed_DigIn_B_12">
    <property name="geometry">
     <rect>
-     <x>150</x>
+     <x>180</x>
      <y>330</y>
      <width>30</width>
      <height>30</height>
@@ -4662,7 +4662,7 @@ color: rgb(0, 0, 0);</string>
   <widget class="ATCMled" name="atcmLed_DigIn_A_11">
    <property name="geometry">
     <rect>
-     <x>90</x>
+     <x>150</x>
      <y>300</y>
      <width>30</width>
      <height>30</height>
@@ -4704,7 +4704,7 @@ color: rgb(0, 0, 0);</string>
   <widget class="ATCMbutton" name="atcmButton_XX_16">
    <property name="geometry">
     <rect>
-     <x>0</x>
+     <x>90</x>
      <y>450</y>
      <width>60</width>
      <height>30</height>
@@ -4794,7 +4794,7 @@ color: rgb(0, 0, 0);</string>
   <widget class="ATCMled" name="atcmLed_DigIn_A_13">
    <property name="geometry">
     <rect>
-     <x>90</x>
+     <x>150</x>
      <y>360</y>
      <width>30</width>
      <height>30</height>
@@ -4836,7 +4836,7 @@ color: rgb(0, 0, 0);</string>
   <widget class="ATCMbutton" name="atcmButton_XX_13">
    <property name="geometry">
     <rect>
-     <x>0</x>
+     <x>90</x>
      <y>360</y>
      <width>60</width>
      <height>30</height>
@@ -4926,7 +4926,7 @@ color: rgb(0, 0, 0);</string>
   <widget class="ATCMled" name="atcmLed_DigIn_B_14">
    <property name="geometry">
     <rect>
-     <x>150</x>
+     <x>180</x>
      <y>390</y>
      <width>30</width>
      <height>30</height>
@@ -4968,7 +4968,7 @@ color: rgb(0, 0, 0);</string>
   <widget class="ATCMled" name="atcmLed_DigIn_B_13">
    <property name="geometry">
     <rect>
-     <x>150</x>
+     <x>180</x>
      <y>360</y>
      <width>30</width>
      <height>30</height>
@@ -5010,7 +5010,7 @@ color: rgb(0, 0, 0);</string>
   <widget class="ATCMbutton" name="atcmButton_XX_15">
    <property name="geometry">
     <rect>
-     <x>0</x>
+     <x>90</x>
      <y>420</y>
      <width>60</width>
      <height>30</height>
@@ -5100,7 +5100,7 @@ color: rgb(0, 0, 0);</string>
   <widget class="ATCMled" name="atcmLed_DigIn_A_16">
    <property name="geometry">
     <rect>
-     <x>90</x>
+     <x>150</x>
      <y>450</y>
      <width>30</width>
      <height>30</height>
@@ -5142,7 +5142,7 @@ color: rgb(0, 0, 0);</string>
   <widget class="ATCMled" name="atcmLed_DigIn_B_15">
    <property name="geometry">
     <rect>
-     <x>150</x>
+     <x>180</x>
      <y>420</y>
      <width>30</width>
      <height>30</height>
@@ -5184,7 +5184,7 @@ color: rgb(0, 0, 0);</string>
   <widget class="ATCMbutton" name="atcmButton_XX_14">
    <property name="geometry">
     <rect>
-     <x>0</x>
+     <x>90</x>
      <y>390</y>
      <width>60</width>
      <height>30</height>
@@ -5274,7 +5274,7 @@ color: rgb(0, 0, 0);</string>
   <widget class="ATCMled" name="atcmLed_DigIn_A_14">
    <property name="geometry">
     <rect>
-     <x>90</x>
+     <x>150</x>
      <y>390</y>
      <width>30</width>
      <height>30</height>
@@ -5316,7 +5316,7 @@ color: rgb(0, 0, 0);</string>
   <widget class="ATCMled" name="atcmLed_DigIn_B_16">
    <property name="geometry">
     <rect>
-     <x>150</x>
+     <x>180</x>
      <y>450</y>
      <width>30</width>
      <height>30</height>
@@ -5358,7 +5358,7 @@ color: rgb(0, 0, 0);</string>
   <widget class="ATCMled" name="atcmLed_DigIn_A_15">
    <property name="geometry">
     <rect>
-     <x>90</x>
+     <x>150</x>
      <y>420</y>
      <width>30</width>
      <height>30</height>
@@ -5546,7 +5546,7 @@ color: rgb(0, 0, 0);</string>
   <widget class="ATCMled" name="atcmLed_DigIn_OK_B_16">
    <property name="geometry">
     <rect>
-     <x>300</x>
+     <x>240</x>
      <y>450</y>
      <width>30</width>
      <height>30</height>
@@ -5588,7 +5588,7 @@ color: rgb(0, 0, 0);</string>
   <widget class="ATCMled" name="atcmLed_DigIn_OK_A_02">
    <property name="geometry">
     <rect>
-     <x>240</x>
+     <x>212</x>
      <y>30</y>
      <width>30</width>
      <height>30</height>
@@ -5630,7 +5630,7 @@ color: rgb(0, 0, 0);</string>
   <widget class="ATCMled" name="atcmLed_DigIn_OK_B_08">
    <property name="geometry">
     <rect>
-     <x>300</x>
+     <x>240</x>
      <y>210</y>
      <width>30</width>
      <height>30</height>
@@ -5672,7 +5672,7 @@ color: rgb(0, 0, 0);</string>
   <widget class="ATCMled" name="atcmLed_DigIn_OK_B_05">
    <property name="geometry">
     <rect>
-     <x>300</x>
+     <x>240</x>
      <y>120</y>
      <width>30</width>
      <height>30</height>
@@ -5714,7 +5714,7 @@ color: rgb(0, 0, 0);</string>
   <widget class="ATCMled" name="atcmLed_DigIn_OK_A_07">
    <property name="geometry">
     <rect>
-     <x>240</x>
+     <x>212</x>
      <y>180</y>
      <width>30</width>
      <height>30</height>
@@ -5756,7 +5756,7 @@ color: rgb(0, 0, 0);</string>
   <widget class="ATCMled" name="atcmLed_DigIn_OK_B_15">
    <property name="geometry">
     <rect>
-     <x>300</x>
+     <x>240</x>
      <y>420</y>
      <width>30</width>
      <height>30</height>
@@ -5798,7 +5798,7 @@ color: rgb(0, 0, 0);</string>
   <widget class="ATCMled" name="atcmLed_DigIn_OK_A_12">
    <property name="geometry">
     <rect>
-     <x>240</x>
+     <x>212</x>
      <y>330</y>
      <width>30</width>
      <height>30</height>
@@ -5840,7 +5840,7 @@ color: rgb(0, 0, 0);</string>
   <widget class="ATCMled" name="atcmLed_DigIn_OK_A_03">
    <property name="geometry">
     <rect>
-     <x>240</x>
+     <x>212</x>
      <y>60</y>
      <width>30</width>
      <height>30</height>
@@ -5882,7 +5882,7 @@ color: rgb(0, 0, 0);</string>
   <widget class="ATCMled" name="atcmLed_DigIn_OK_A_09">
    <property name="geometry">
     <rect>
-     <x>240</x>
+     <x>212</x>
      <y>240</y>
      <width>30</width>
      <height>30</height>
@@ -5924,7 +5924,7 @@ color: rgb(0, 0, 0);</string>
   <widget class="ATCMled" name="atcmLed_DigIn_OK_B_13">
    <property name="geometry">
     <rect>
-     <x>300</x>
+     <x>240</x>
      <y>360</y>
      <width>30</width>
      <height>30</height>
@@ -5966,7 +5966,7 @@ color: rgb(0, 0, 0);</string>
   <widget class="ATCMled" name="atcmLed_DigIn_OK_A_16">
    <property name="geometry">
     <rect>
-     <x>240</x>
+     <x>212</x>
      <y>450</y>
      <width>30</width>
      <height>30</height>
@@ -6008,7 +6008,7 @@ color: rgb(0, 0, 0);</string>
   <widget class="ATCMled" name="atcmLed_DigIn_OK_A_08">
    <property name="geometry">
     <rect>
-     <x>240</x>
+     <x>212</x>
      <y>210</y>
      <width>30</width>
      <height>30</height>
@@ -6050,7 +6050,7 @@ color: rgb(0, 0, 0);</string>
   <widget class="ATCMled" name="atcmLed_DigIn_OK_B_10">
    <property name="geometry">
     <rect>
-     <x>300</x>
+     <x>240</x>
      <y>270</y>
      <width>30</width>
      <height>30</height>
@@ -6092,7 +6092,7 @@ color: rgb(0, 0, 0);</string>
   <widget class="ATCMled" name="atcmLed_DigIn_OK_A_15">
    <property name="geometry">
     <rect>
-     <x>240</x>
+     <x>212</x>
      <y>420</y>
      <width>30</width>
      <height>30</height>
@@ -6134,7 +6134,7 @@ color: rgb(0, 0, 0);</string>
   <widget class="ATCMled" name="atcmLed_DigIn_OK_A_10">
    <property name="geometry">
     <rect>
-     <x>240</x>
+     <x>212</x>
      <y>270</y>
      <width>30</width>
      <height>30</height>
@@ -6176,7 +6176,7 @@ color: rgb(0, 0, 0);</string>
   <widget class="ATCMled" name="atcmLed_DigIn_OK_B_03">
    <property name="geometry">
     <rect>
-     <x>300</x>
+     <x>240</x>
      <y>60</y>
      <width>30</width>
      <height>30</height>
@@ -6218,7 +6218,7 @@ color: rgb(0, 0, 0);</string>
   <widget class="ATCMled" name="atcmLed_DigIn_OK_B_06">
    <property name="geometry">
     <rect>
-     <x>300</x>
+     <x>240</x>
      <y>150</y>
      <width>30</width>
      <height>30</height>
@@ -6260,7 +6260,7 @@ color: rgb(0, 0, 0);</string>
   <widget class="ATCMled" name="atcmLed_DigIn_OK_A_05">
    <property name="geometry">
     <rect>
-     <x>240</x>
+     <x>212</x>
      <y>120</y>
      <width>30</width>
      <height>30</height>
@@ -6302,7 +6302,7 @@ color: rgb(0, 0, 0);</string>
   <widget class="ATCMled" name="atcmLed_DigIn_OK_A_14">
    <property name="geometry">
     <rect>
-     <x>240</x>
+     <x>212</x>
      <y>390</y>
      <width>30</width>
      <height>30</height>
@@ -6344,7 +6344,7 @@ color: rgb(0, 0, 0);</string>
   <widget class="ATCMled" name="atcmLed_DigIn_OK_B_14">
    <property name="geometry">
     <rect>
-     <x>300</x>
+     <x>240</x>
      <y>390</y>
      <width>30</width>
      <height>30</height>
@@ -6386,7 +6386,7 @@ color: rgb(0, 0, 0);</string>
   <widget class="ATCMled" name="atcmLed_DigIn_OK_A_06">
    <property name="geometry">
     <rect>
-     <x>240</x>
+     <x>212</x>
      <y>150</y>
      <width>30</width>
      <height>30</height>
@@ -6428,7 +6428,7 @@ color: rgb(0, 0, 0);</string>
   <widget class="ATCMled" name="atcmLed_DigIn_OK_B_12">
    <property name="geometry">
     <rect>
-     <x>300</x>
+     <x>240</x>
      <y>330</y>
      <width>30</width>
      <height>30</height>
@@ -6470,7 +6470,7 @@ color: rgb(0, 0, 0);</string>
   <widget class="ATCMled" name="atcmLed_DigIn_OK_A_13">
    <property name="geometry">
     <rect>
-     <x>240</x>
+     <x>212</x>
      <y>360</y>
      <width>30</width>
      <height>30</height>
@@ -6512,7 +6512,7 @@ color: rgb(0, 0, 0);</string>
   <widget class="ATCMled" name="atcmLed_DigIn_OK_B_07">
    <property name="geometry">
     <rect>
-     <x>300</x>
+     <x>240</x>
      <y>180</y>
      <width>30</width>
      <height>30</height>
@@ -6554,7 +6554,7 @@ color: rgb(0, 0, 0);</string>
   <widget class="ATCMled" name="atcmLed_DigIn_OK_B_11">
    <property name="geometry">
     <rect>
-     <x>300</x>
+     <x>240</x>
      <y>300</y>
      <width>30</width>
      <height>30</height>
@@ -6596,7 +6596,7 @@ color: rgb(0, 0, 0);</string>
   <widget class="ATCMled" name="atcmLed_DigIn_OK_B_04">
    <property name="geometry">
     <rect>
-     <x>300</x>
+     <x>240</x>
      <y>90</y>
      <width>30</width>
      <height>30</height>
@@ -6638,7 +6638,7 @@ color: rgb(0, 0, 0);</string>
   <widget class="ATCMled" name="atcmLed_DigIn_OK_B_01">
    <property name="geometry">
     <rect>
-     <x>300</x>
+     <x>240</x>
      <y>0</y>
      <width>30</width>
      <height>30</height>
@@ -6680,7 +6680,7 @@ color: rgb(0, 0, 0);</string>
   <widget class="ATCMled" name="atcmLed_DigIn_OK_B_02">
    <property name="geometry">
     <rect>
-     <x>300</x>
+     <x>240</x>
      <y>30</y>
      <width>30</width>
      <height>30</height>
@@ -6722,7 +6722,7 @@ color: rgb(0, 0, 0);</string>
   <widget class="ATCMled" name="atcmLed_DigIn_OK_A_04">
    <property name="geometry">
     <rect>
-     <x>240</x>
+     <x>212</x>
      <y>90</y>
      <width>30</width>
      <height>30</height>
@@ -6764,7 +6764,7 @@ color: rgb(0, 0, 0);</string>
   <widget class="ATCMled" name="atcmLed_DigIn_OK_A_01">
    <property name="geometry">
     <rect>
-     <x>240</x>
+     <x>212</x>
      <y>0</y>
      <width>30</width>
      <height>30</height>
@@ -6806,7 +6806,7 @@ color: rgb(0, 0, 0);</string>
   <widget class="ATCMled" name="atcmLed_DigIn_OK_B_09">
    <property name="geometry">
     <rect>
-     <x>300</x>
+     <x>240</x>
      <y>240</y>
      <width>30</width>
      <height>30</height>
@@ -6848,7 +6848,7 @@ color: rgb(0, 0, 0);</string>
   <widget class="ATCMled" name="atcmLed_DigIn_OK_A_11">
    <property name="geometry">
     <rect>
-     <x>240</x>
+     <x>212</x>
      <y>300</y>
      <width>30</width>
      <height>30</height>
@@ -6929,6 +6929,96 @@ color: rgb(0, 0, 0);</string>
    </property>
    <property name="orientation">
     <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="ATCMbutton" name="atcmButton_XX_all">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>90</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+   <property name="toolTip">
+    <string/>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMbutton widget</string>
+   </property>
+   <property name="pageName">
+    <string notr="true"/>
+   </property>
+   <property name="passwordVar">
+    <string/>
+   </property>
+   <property name="statusvar">
+    <string/>
+   </property>
+   <property name="viewStatus">
+    <bool>false</bool>
+   </property>
+   <property name="visibilityVar">
+    <string/>
+   </property>
+   <property name="bgColor">
+    <color>
+     <red>64</red>
+     <green>0</green>
+     <blue>0</blue>
+    </color>
+   </property>
+   <property name="borderColor">
+    <color>
+     <red>170</red>
+     <green>170</green>
+     <blue>170</blue>
+    </color>
+   </property>
+   <property name="fontColor">
+    <color>
+     <red>255</red>
+     <green>255</green>
+     <blue>255</blue>
+    </color>
+   </property>
+   <property name="bgPressColor">
+    <color>
+     <red>214</red>
+     <green>214</green>
+     <blue>0</blue>
+    </color>
+   </property>
+   <property name="borderPressColor">
+    <color>
+     <red>170</red>
+     <green>170</green>
+     <blue>170</blue>
+    </color>
+   </property>
+   <property name="text">
+    <string>ON/off</string>
+   </property>
+   <property name="pressText">
+    <string>ON/off</string>
+   </property>
+   <property name="borderWidth">
+    <number>2</number>
+   </property>
+   <property name="borderRadius">
+    <number>0</number>
    </property>
   </widget>
   <zorder>label_DigIO_blue</zorder>
@@ -7061,6 +7151,7 @@ color: rgb(0, 0, 0);</string>
   <zorder>line_hr_2</zorder>
   <zorder>line_vt_2</zorder>
   <zorder>line_hr_9</zorder>
+  <zorder>atcmButton_XX_all</zorder>
  </widget>
  <customwidgets>
   <customwidget>
@@ -7090,8 +7181,8 @@ color: rgb(0, 0, 0);</string>
   </customwidget>
  </customwidgets>
  <resources>
-  <include location="resources.qrc"/>
   <include location="systemicons.qrc"/>
+  <include location="resources.qrc"/>
  </resources>
  <connections>
   <connection>

@@ -98,3 +98,25 @@ page300::~page300()
     delete ui;
 }
 
+
+void page300::on_atcmButton_XX_all_toggled(bool checked)
+{
+    beginWrite();
+    doWrite_XX_DigOut_A_1 (checked);
+    doWrite_XX_DigOut_A_2 (checked);
+    doWrite_XX_DigOut_A_3 (checked);
+    doWrite_XX_DigOut_A_4 (checked);
+    doWrite_XX_DigOut_A_5 (checked);
+    doWrite_XX_DigOut_A_6 (checked);
+    doWrite_XX_DigOut_A_7 (checked);
+    doWrite_XX_DigOut_A_8 (checked);
+    doWrite_XX_DigOut_A_9 (checked);
+    doWrite_XX_DigOut_A_10(checked);
+    doWrite_XX_DigOut_A_11(checked);
+    doWrite_XX_DigOut_A_12(checked);
+    doWrite_XX_DigOut_A_13(checked);
+    doWrite_XX_DigOut_A_14(checked);
+    doWrite_XX_DigOut_A_15(checked);
+    doWrite_XX_DigOut_A_16(checked);
+    endWrite();
+}

@@ -1950,6 +1950,7 @@ RTU3</source>
         <location filename="page300.ui" line="4861"/>
         <location filename="page300.ui" line="5035"/>
         <location filename="page300.ui" line="5209"/>
+        <location filename="page300.ui" line="6959"/>
         <source>ATCMbutton widget</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2689,6 +2690,12 @@ RTU3</source>
         <location filename="page300.ui" line="6858"/>
         <location filename="page300.ui" line="6870"/>
         <source>OK_DigIn_A_11</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page300.ui" line="7012"/>
+        <location filename="page300.ui" line="7015"/>
+        <source>ON/off</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

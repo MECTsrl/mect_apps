@@ -29,6 +29,8 @@ public:
 private slots:
     void changeEvent(QEvent * event);
     
+    void on_atcmButton_XX_all_toggled(bool checked);
+
 private:
     Ui::page300 *ui;
 };
