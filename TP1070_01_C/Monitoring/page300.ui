@@ -832,14 +832,14 @@ background-color: rgb(0, 0, 0);
     <rect>
      <x>210</x>
      <y>360</y>
-     <width>322</width>
-     <height>120</height>
+     <width>324</width>
+     <height>30</height>
     </rect>
    </property>
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>11</pointsize>
+     <pointsize>10</pointsize>
      <weight>50</weight>
      <bold>false</bold>
     </font>
@@ -848,14 +848,20 @@ background-color: rgb(0, 0, 0);
     <string notr="true">background-color: rgb(0, 0, 0);
 color: rgb(0,128,255);</string>
    </property>
+   <property name="frameShape">
+    <enum>QFrame::Box</enum>
+   </property>
    <property name="text">
-    <string>PIANO SOTTO</string>
+    <string>piano sotto: porte</string>
    </property>
    <property name="alignment">
-    <set>Qt::AlignRight|Qt::AlignTop|Qt::AlignTrailing</set>
+    <set>Qt::AlignCenter</set>
    </property>
    <property name="margin">
-    <number>7</number>
+    <number>0</number>
+   </property>
+   <property name="indent">
+    <number>0</number>
    </property>
   </widget>
   <widget class="ATCMlabel" name="atcmLabel_A4">
@@ -1286,14 +1292,14 @@ color: rgb(0,128,255);</string>
     <rect>
      <x>210</x>
      <y>0</y>
-     <width>322</width>
-     <height>120</height>
+     <width>324</width>
+     <height>30</height>
     </rect>
    </property>
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>11</pointsize>
+     <pointsize>10</pointsize>
      <weight>50</weight>
      <bold>false</bold>
     </font>
@@ -1302,14 +1308,20 @@ color: rgb(0,128,255);</string>
     <string notr="true">background-color: rgb(64, 64, 64);
 color: rgb(0, 255, 255);</string>
    </property>
+   <property name="frameShape">
+    <enum>QFrame::Box</enum>
+   </property>
    <property name="text">
-    <string>PIANO SOPRA</string>
+    <string>piano sopra: finestre</string>
    </property>
    <property name="alignment">
-    <set>Qt::AlignRight|Qt::AlignTop|Qt::AlignTrailing</set>
+    <set>Qt::AlignCenter</set>
    </property>
    <property name="margin">
-    <number>7</number>
+    <number>0</number>
+   </property>
+   <property name="indent">
+    <number>0</number>
    </property>
   </widget>
   <widget class="ATCMlabel" name="atcmLabel_CSP">
@@ -1794,7 +1806,7 @@ color: rgb(0, 255, 255);</string>
     <string/>
    </property>
   </widget>
-  <widget class="ATCMbutton" name="atcmButton_table">
+  <widget class="ATCMbutton" name="atcmButton_watt">
    <property name="geometry">
     <rect>
      <x>600</x>
@@ -1862,10 +1874,10 @@ color: rgb(0, 255, 255);</string>
     </color>
    </property>
    <property name="text">
-    <string>table</string>
+    <string>watt</string>
    </property>
    <property name="pressText">
-    <string>table</string>
+    <string>watt</string>
    </property>
    <property name="borderWidth">
     <number>1</number>
@@ -1882,14 +1894,14 @@ color: rgb(0, 255, 255);</string>
     <rect>
      <x>210</x>
      <y>120</y>
-     <width>322</width>
-     <height>240</height>
+     <width>324</width>
+     <height>30</height>
     </rect>
    </property>
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>11</pointsize>
+     <pointsize>10</pointsize>
      <weight>50</weight>
      <bold>false</bold>
     </font>
@@ -1898,14 +1910,20 @@ color: rgb(0, 255, 255);</string>
     <string notr="true">background-color: rgb(32, 32, 32);
 color: rgb(0,192, 255);</string>
    </property>
+   <property name="frameShape">
+    <enum>QFrame::Box</enum>
+   </property>
    <property name="text">
-    <string>PIANO TERRA</string>
+    <string>piano terra: finestre</string>
    </property>
    <property name="alignment">
-    <set>Qt::AlignRight|Qt::AlignTop|Qt::AlignTrailing</set>
+    <set>Qt::AlignCenter</set>
    </property>
    <property name="margin">
-    <number>7</number>
+    <number>0</number>
+   </property>
+   <property name="indent">
+    <number>0</number>
    </property>
   </widget>
   <widget class="ATCMbutton" name="atcmButton_trend_termostati">
@@ -6934,10 +6952,10 @@ color: rgb(0, 0, 0);</string>
   <widget class="ATCMbutton" name="atcmButton_XX_all">
    <property name="geometry">
     <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>90</width>
-     <height>30</height>
+     <x>5</x>
+     <y>210</y>
+     <width>80</width>
+     <height>60</height>
     </rect>
    </property>
    <property name="font">
@@ -6982,9 +7000,9 @@ color: rgb(0, 0, 0);</string>
    </property>
    <property name="borderColor">
     <color>
-     <red>170</red>
-     <green>170</green>
-     <blue>170</blue>
+     <red>214</red>
+     <green>214</green>
+     <blue>0</blue>
     </color>
    </property>
    <property name="fontColor">
@@ -7003,9 +7021,9 @@ color: rgb(0, 0, 0);</string>
    </property>
    <property name="borderPressColor">
     <color>
-     <red>170</red>
-     <green>170</green>
-     <blue>170</blue>
+     <red>64</red>
+     <green>0</green>
+     <blue>0</blue>
     </color>
    </property>
    <property name="text">
@@ -7021,16 +7039,580 @@ color: rgb(0, 0, 0);</string>
     <number>0</number>
    </property>
   </widget>
+  <widget class="QLabel" name="label_Alarm_PianoSopra_2">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>30</y>
+     <width>324</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>10</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(64, 64, 64);
+color: rgb(0, 255, 255);</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Box</enum>
+   </property>
+   <property name="text">
+    <string>piano sopra: finestre</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="margin">
+    <number>0</number>
+   </property>
+   <property name="indent">
+    <number>0</number>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_Alarm_PianoSopra_3">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>60</y>
+     <width>324</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>10</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(64, 64, 64);
+color: rgb(0, 255, 255);</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Box</enum>
+   </property>
+   <property name="text">
+    <string>piano sopra: finestre</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="margin">
+    <number>0</number>
+   </property>
+   <property name="indent">
+    <number>0</number>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_Alarm_PianoSopra_4">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>90</y>
+     <width>324</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>10</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(64, 64, 64);
+color: rgb(0, 255, 255);</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Box</enum>
+   </property>
+   <property name="text">
+    <string>piano sopra: finestre</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="margin">
+    <number>0</number>
+   </property>
+   <property name="indent">
+    <number>0</number>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_Alarm_PianoTerra_2">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>150</y>
+     <width>324</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>10</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(32, 32, 32);
+color: rgb(0,192, 255);</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Box</enum>
+   </property>
+   <property name="text">
+    <string>piano terra: finestre</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="margin">
+    <number>0</number>
+   </property>
+   <property name="indent">
+    <number>0</number>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_Alarm_PianoTerra_3">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>180</y>
+     <width>324</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>10</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(32, 32, 32);
+color: rgb(0,192, 255);</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Box</enum>
+   </property>
+   <property name="text">
+    <string>piano terra: finestre</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="margin">
+    <number>0</number>
+   </property>
+   <property name="indent">
+    <number>0</number>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_Alarm_PianoTerra_4">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>210</y>
+     <width>324</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>10</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(32, 32, 32);
+color: rgb(0,192, 255);</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Box</enum>
+   </property>
+   <property name="text">
+    <string>piano terra: finestre</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="margin">
+    <number>0</number>
+   </property>
+   <property name="indent">
+    <number>0</number>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_Alarm_PianoTerra_5">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>330</y>
+     <width>324</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>10</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(32, 32, 32);
+color: rgb(0,192, 255);</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Box</enum>
+   </property>
+   <property name="text">
+    <string>piano terra: finestre</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="margin">
+    <number>0</number>
+   </property>
+   <property name="indent">
+    <number>0</number>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_Alarm_PianoTerra_6">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>300</y>
+     <width>324</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>10</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(32, 32, 32);
+color: rgb(0,192, 255);</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Box</enum>
+   </property>
+   <property name="text">
+    <string>piano terra: finestre</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="margin">
+    <number>0</number>
+   </property>
+   <property name="indent">
+    <number>0</number>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_Alarm_PianoTerra_7">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>270</y>
+     <width>324</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>10</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(32, 32, 32);
+color: rgb(0,192, 255);</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Box</enum>
+   </property>
+   <property name="text">
+    <string>piano terra: finestre</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="margin">
+    <number>0</number>
+   </property>
+   <property name="indent">
+    <number>0</number>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_Alarm_PianoTerra_8">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>240</y>
+     <width>324</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>10</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(32, 32, 32);
+color: rgb(0,192, 255);</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Box</enum>
+   </property>
+   <property name="text">
+    <string>piano terra: finestre</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="margin">
+    <number>0</number>
+   </property>
+   <property name="indent">
+    <number>0</number>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_Alarm_PianoSotto_2">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>390</y>
+     <width>324</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>10</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(0, 0, 0);
+color: rgb(0,128,255);</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Box</enum>
+   </property>
+   <property name="text">
+    <string>piano sotto: porte</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="margin">
+    <number>0</number>
+   </property>
+   <property name="indent">
+    <number>0</number>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_Alarm_PianoSotto_3">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>420</y>
+     <width>324</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>10</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(0, 0, 0);
+color: rgb(0,128,255);</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Box</enum>
+   </property>
+   <property name="text">
+    <string>piano sotto: porte</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="margin">
+    <number>0</number>
+   </property>
+   <property name="indent">
+    <number>0</number>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_Alarm_PianoSotto_4">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>450</y>
+     <width>324</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>10</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(0, 0, 0);
+color: rgb(0,128,255);</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Box</enum>
+   </property>
+   <property name="text">
+    <string>piano sotto: porte</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="margin">
+    <number>0</number>
+   </property>
+   <property name="indent">
+    <number>0</number>
+   </property>
+  </widget>
+  <widget class="ATCMcombobox" name="atcmComboBox_11">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>5</x>
+     <y>110</y>
+     <width>80</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>7</pointsize>
+    </font>
+   </property>
+   <property name="toolTip">
+    <string>NODE_01_STATUS</string>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMcombobox widget</string>
+   </property>
+   <property name="variable">
+    <string>NODE_01_STATUS</string>
+   </property>
+   <property name="refresh">
+    <number>500</number>
+   </property>
+   <property name="viewStatus">
+    <bool>false</bool>
+   </property>
+   <property name="writeAcknowledge">
+    <bool>false</bool>
+   </property>
+   <property name="visibilityVar">
+    <string/>
+   </property>
+   <property name="bgColor">
+    <color>
+     <red>64</red>
+     <green>0</green>
+     <blue>0</blue>
+    </color>
+   </property>
+   <property name="borderColor">
+    <color>
+     <red>214</red>
+     <green>214</green>
+     <blue>0</blue>
+    </color>
+   </property>
+   <property name="fontColor">
+    <color>
+     <red>255</red>
+     <green>255</green>
+     <blue>255</blue>
+    </color>
+   </property>
+   <property name="borderWidth">
+    <number>1</number>
+   </property>
+   <property name="borderRadius">
+    <number>0</number>
+   </property>
+   <property name="mapping">
+    <string>1;NODE_OK;2;TIMEOUT;3;BLACKLIST;4;DISCONNECTED;5;NODE_DISABLED;0;NO_NODE</string>
+   </property>
+  </widget>
+  <zorder>label_Alarm_PianoTerra</zorder>
+  <zorder>label_Alarm_PianoTerra_6</zorder>
+  <zorder>label_Alarm_PianoTerra_2</zorder>
+  <zorder>label_Alarm_PianoSotto_2</zorder>
+  <zorder>label_Alarm_PianoSotto_4</zorder>
+  <zorder>label_Alarm_PianoSotto_3</zorder>
+  <zorder>label_Alarm_PianoTerra_7</zorder>
+  <zorder>label_Alarm_PianoTerra_8</zorder>
+  <zorder>label_Alarm_PianoTerra_3</zorder>
+  <zorder>label_Alarm_PianoSopra_3</zorder>
+  <zorder>label_Alarm_PianoSotto</zorder>
+  <zorder>label_Alarm_PianoSopra_2</zorder>
+  <zorder>label_Alarm_PianoTerra_5</zorder>
+  <zorder>label_Alarm_PianoSopra_4</zorder>
+  <zorder>label_Alarm_PianoTerra_4</zorder>
+  <zorder>label_Alarm_PianoSopra</zorder>
   <zorder>label_DigIO_blue</zorder>
   <zorder>label_DigIO_green</zorder>
   <zorder>label_DigIO_red</zorder>
   <zorder>label_DigIO_gray</zorder>
   <zorder>label_dig_io</zorder>
   <zorder>label_2</zorder>
-  <zorder>label_Alarm_PianoSotto</zorder>
-  <zorder>label_Alarm_PianoSopra</zorder>
   <zorder>label_3</zorder>
-  <zorder>label_Alarm_PianoTerra</zorder>
   <zorder>atcmDate</zorder>
   <zorder>atcmTime</zorder>
   <zorder>label_4</zorder>
@@ -7055,7 +7637,7 @@ color: rgb(0, 0, 0);</string>
   <zorder>atcmButton_trend_piani_3</zorder>
   <zorder>atcmButton_status</zorder>
   <zorder>atcmButton_trend_piani_4</zorder>
-  <zorder>atcmButton_table</zorder>
+  <zorder>atcmButton_watt</zorder>
   <zorder>atcmButton_DigOut_TA_Psopra</zorder>
   <zorder>atcmButton_trend_termostati</zorder>
   <zorder>atcmButton_DigOut_TAPsotto</zorder>
@@ -7152,11 +7734,17 @@ color: rgb(0, 0, 0);</string>
   <zorder>line_vt_2</zorder>
   <zorder>line_hr_9</zorder>
   <zorder>atcmButton_XX_all</zorder>
+  <zorder>atcmComboBox_11</zorder>
  </widget>
  <customwidgets>
   <customwidget>
    <class>ATCMbutton</class>
    <extends>QPushButton</extends>
+   <header>atcmplugin.h</header>
+  </customwidget>
+  <customwidget>
+   <class>ATCMcombobox</class>
+   <extends>QComboBox</extends>
    <header>atcmplugin.h</header>
   </customwidget>
   <customwidget>
@@ -7181,8 +7769,8 @@ color: rgb(0, 0, 0);</string>
   </customwidget>
  </customwidgets>
  <resources>
-  <include location="systemicons.qrc"/>
   <include location="resources.qrc"/>
+  <include location="systemicons.qrc"/>
  </resources>
  <connections>
   <connection>
@@ -7250,7 +7838,7 @@ color: rgb(0, 0, 0);</string>
    </hints>
   </connection>
   <connection>
-   <sender>atcmButton_table</sender>
+   <sender>atcmButton_watt</sender>
    <signal>newPage(const char*,bool)</signal>
    <receiver>page300</receiver>
    <slot>goto_page(const char*,bool)</slot>

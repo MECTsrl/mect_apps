@@ -4486,7 +4486,7 @@ color: rgb(170, 170, 170);</string>
     <enum>Qt::Horizontal</enum>
    </property>
   </widget>
-  <widget class="ATCMbutton" name="atcmButton_table">
+  <widget class="ATCMbutton" name="atcmButton_watt">
    <property name="geometry">
     <rect>
      <x>600</x>
@@ -4554,10 +4554,10 @@ color: rgb(170, 170, 170);</string>
     </color>
    </property>
    <property name="text">
-    <string>table</string>
+    <string>watt</string>
    </property>
    <property name="pressText">
-    <string>table</string>
+    <string>watt</string>
    </property>
    <property name="borderWidth">
     <number>1</number>
@@ -4867,7 +4867,7 @@ color: rgb(0, 0, 0);</string>
   <widget class="ATCMlabel" name="atcmLabel_2">
    <property name="geometry">
     <rect>
-     <x>298</x>
+     <x>300</x>
      <y>140</y>
      <width>100</width>
      <height>25</height>
@@ -4943,7 +4943,7 @@ color: rgb(0, 0, 0);</string>
   <widget class="ATCMlabel" name="atcmLabel_3">
    <property name="geometry">
     <rect>
-     <x>91</x>
+     <x>100</x>
      <y>140</y>
      <width>100</width>
      <height>25</height>
@@ -5019,7 +5019,7 @@ color: rgb(0, 0, 0);</string>
   <widget class="ATCMlabel" name="atcmLabel_4">
    <property name="geometry">
     <rect>
-     <x>195</x>
+     <x>200</x>
      <y>140</y>
      <width>100</width>
      <height>25</height>
@@ -5048,6 +5048,82 @@ color: rgb(0, 0, 0);</string>
    </property>
    <property name="suffix">
     <string> modules</string>
+   </property>
+   <property name="refresh">
+    <number>200</number>
+   </property>
+   <property name="max">
+    <string notr="true">0</string>
+   </property>
+   <property name="min">
+    <string notr="true">0</string>
+   </property>
+   <property name="viewStatus">
+    <bool>false</bool>
+   </property>
+   <property name="visibilityVar">
+    <string/>
+   </property>
+   <property name="bgColor">
+    <color>
+     <red>0</red>
+     <green>0</green>
+     <blue>0</blue>
+    </color>
+   </property>
+   <property name="borderColor">
+    <color>
+     <red>255</red>
+     <green>255</green>
+     <blue>255</blue>
+    </color>
+   </property>
+   <property name="fontColor">
+    <color>
+     <red>255</red>
+     <green>85</green>
+     <blue>0</blue>
+    </color>
+   </property>
+   <property name="borderWidth">
+    <number>1</number>
+   </property>
+   <property name="borderRadius">
+    <number>0</number>
+   </property>
+  </widget>
+  <widget class="ATCMlabel" name="atcmLabel_5">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>140</y>
+     <width>100</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>xxx</string>
+   </property>
+   <property name="toolTip">
+    <string>XX_FirmwareVer</string>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMlabel widget</string>
+   </property>
+   <property name="variable">
+    <string>XX_FirmwareVer</string>
+   </property>
+   <property name="prefix">
+    <string>FW </string>
+   </property>
+   <property name="suffix">
+    <string/>
    </property>
    <property name="refresh">
     <number>200</number>
@@ -5163,7 +5239,7 @@ color: rgb(0, 0, 0);</string>
   <zorder>atcmLabel_10</zorder>
   <zorder>atcmLabel_11</zorder>
   <zorder>atcmLabel_9</zorder>
-  <zorder>atcmButton_table</zorder>
+  <zorder>atcmButton_watt</zorder>
   <zorder>atcmButton_menu</zorder>
   <zorder>label_status</zorder>
   <zorder>atcmButton_dig_io</zorder>
@@ -5182,6 +5258,7 @@ color: rgb(0, 0, 0);</string>
   <zorder>atcmLabel_2</zorder>
   <zorder>atcmLabel_3</zorder>
   <zorder>atcmLabel_4</zorder>
+  <zorder>atcmLabel_5</zorder>
  </widget>
  <customwidgets>
   <customwidget>
@@ -5213,7 +5290,7 @@ color: rgb(0, 0, 0);</string>
  <resources/>
  <connections>
   <connection>
-   <sender>atcmButton_table</sender>
+   <sender>atcmButton_watt</sender>
    <signal>newPage(const char*,bool)</signal>
    <receiver>page200</receiver>
    <slot>goto_page(const char*,bool)</slot>

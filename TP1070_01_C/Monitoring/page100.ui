@@ -3958,7 +3958,7 @@ color: rgb(255, 0, 255);</string>
     <enum>QFrame::Raised</enum>
    </property>
   </widget>
-  <widget class="QLabel" name="label">
+  <widget class="QLabel" name="label_watt">
    <property name="geometry">
     <rect>
      <x>600</x>
@@ -3978,7 +3978,7 @@ color: rgb(255, 0, 255);</string>
 color: rgb(0, 0, 0);</string>
    </property>
    <property name="text">
-    <string>table</string>
+    <string>watt</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>
@@ -6201,7 +6201,7 @@ color: rgb(0, 127, 0);</string>
   <zorder>atcmLabel_A4</zorder>
   <zorder>atcmLabel_C4</zorder>
   <zorder>atcmButton_status</zorder>
-  <zorder>label</zorder>
+  <zorder>label_watt</zorder>
   <zorder>atcmButton_menu</zorder>
   <zorder>label_W09_UPS</zorder>
   <zorder>atcmLabel_VA09</zorder>
