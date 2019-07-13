@@ -2020,6 +2020,11 @@ RTU3</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="page300.ui" line="855"/>
+        <source>#16 p.-1: scala i.r. + _</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="page300.ui" line="979"/>
         <location filename="page300.ui" line="985"/>
         <source>XX_AnIn_C_1</source>
@@ -2077,19 +2082,9 @@ RTU3</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page300.ui" line="855"/>
-        <location filename="page300.ui" line="7437"/>
-        <location filename="page300.ui" line="7474"/>
-        <location filename="page300.ui" line="7511"/>
-        <source>piano sotto: porte</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="page300.ui" line="1315"/>
-        <location filename="page300.ui" line="7067"/>
-        <location filename="page300.ui" line="7104"/>
-        <location filename="page300.ui" line="7141"/>
-        <source>piano sopra: finestre</source>
+        <source>#1 p.1: scala IR + finestra</source>
+        <oldsource>piano sopra: finestre</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2100,14 +2095,8 @@ RTU3</source>
     </message>
     <message>
         <location filename="page300.ui" line="1917"/>
-        <location filename="page300.ui" line="7178"/>
-        <location filename="page300.ui" line="7215"/>
-        <location filename="page300.ui" line="7252"/>
-        <location filename="page300.ui" line="7289"/>
-        <location filename="page300.ui" line="7326"/>
-        <location filename="page300.ui" line="7363"/>
-        <location filename="page300.ui" line="7400"/>
-        <source>piano terra: finestre</source>
+        <source>#7 p.0: cucina finestre sx + dx</source>
+        <oldsource>piano terra: finestre</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2725,19 +2714,84 @@ RTU3</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page300.ui" line="7542"/>
-        <location filename="page300.ui" line="7548"/>
+        <location filename="page300.ui" line="7067"/>
+        <source>#2 p.1: finestre nord sx + dx</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page300.ui" line="7104"/>
+        <source>#5 p.1: porta finestra velo + c.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page300.ui" line="7141"/>
+        <source>#8 p.0: ingresso velo + c.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page300.ui" line="7178"/>
+        <source>#9 p.0: bagno finestra + _</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page300.ui" line="7215"/>
+        <source>#10 p.0: studio velo + c.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page300.ui" line="7252"/>
+        <source>#15 p.0: soggiorno sud velo + c.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page300.ui" line="7289"/>
+        <source>#13 p.0: corridoio i.r. + _</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page300.ui" line="7326"/>
+        <source>#12 p.0: camera arancione v. + c.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page300.ui" line="7363"/>
+        <source>#11 p.0: camera bianca v. + c.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page300.ui" line="7400"/>
+        <source>#17 p.-1: velo + porta_e_fin.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page300.ui" line="7437"/>
+        <source>#18 p.-1: lavanderia + bagno</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page300.ui" line="7474"/>
+        <source>#21 p.-1: legnaia i.r. + _</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page300.ui" line="7505"/>
+        <location filename="page300.ui" line="7511"/>
         <source>NODE_01_STATUS</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page300.ui" line="7545"/>
+        <location filename="page300.ui" line="7508"/>
         <source>ATCMcombobox widget</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page300.ui" line="7590"/>
+        <location filename="page300.ui" line="7553"/>
         <source>1;NODE_OK;2;TIMEOUT;3;BLACKLIST;4;DISCONNECTED;5;NODE_DISABLED;0;NO_NODE</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page300.ui" line="7581"/>
+        <source>#6 p.0: finestra sogg. velo + c.</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

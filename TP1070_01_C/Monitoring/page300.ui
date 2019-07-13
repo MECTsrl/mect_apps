@@ -352,7 +352,7 @@ background-color: rgb(0, 0, 0);
   <widget class="ATCMbutton" name="atcmButton_DigOut_TAPsotto">
    <property name="geometry">
     <rect>
-     <x>750</x>
+     <x>150</x>
      <y>360</y>
      <width>50</width>
      <height>25</height>
@@ -852,10 +852,10 @@ color: rgb(0,128,255);</string>
     <enum>QFrame::Box</enum>
    </property>
    <property name="text">
-    <string>piano sotto: porte</string>
+    <string>#16 p.-1: scala i.r. + _</string>
    </property>
    <property name="alignment">
-    <set>Qt::AlignCenter</set>
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
    </property>
    <property name="margin">
     <number>0</number>
@@ -1029,7 +1029,7 @@ color: rgb(0,128,255);</string>
   <widget class="ATCMbutton" name="atcmButton_DigOut_TA_Psopra">
    <property name="geometry">
     <rect>
-     <x>750</x>
+     <x>150</x>
      <y>97</y>
      <width>50</width>
      <height>25</height>
@@ -1312,10 +1312,10 @@ color: rgb(0, 255, 255);</string>
     <enum>QFrame::Box</enum>
    </property>
    <property name="text">
-    <string>piano sopra: finestre</string>
+    <string>#1 p.1: scala IR + finestra</string>
    </property>
    <property name="alignment">
-    <set>Qt::AlignCenter</set>
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
    </property>
    <property name="margin">
     <number>0</number>
@@ -1914,10 +1914,10 @@ color: rgb(0,192, 255);</string>
     <enum>QFrame::Box</enum>
    </property>
    <property name="text">
-    <string>piano terra: finestre</string>
+    <string>#7 p.0: cucina finestre sx + dx</string>
    </property>
    <property name="alignment">
-    <set>Qt::AlignCenter</set>
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
    </property>
    <property name="margin">
     <number>0</number>
@@ -2192,7 +2192,7 @@ color: rgb(0, 0, 0);</string>
   <widget class="ATCMbutton" name="atcmButton_DigOut_TA_Pterra">
    <property name="geometry">
     <rect>
-     <x>750</x>
+     <x>150</x>
      <y>216</y>
      <width>50</width>
      <height>25</height>
@@ -2634,7 +2634,7 @@ color: rgb(0, 0, 0);</string>
   <widget class="ATCMled" name="atcmLed_DigIn_A_01">
    <property name="geometry">
     <rect>
-     <x>150</x>
+     <x>90</x>
      <y>0</y>
      <width>30</width>
      <height>30</height>
@@ -2676,7 +2676,7 @@ color: rgb(0, 0, 0);</string>
   <widget class="ATCMled" name="atcmLed_DigIn_B_01">
    <property name="geometry">
     <rect>
-     <x>180</x>
+     <x>120</x>
      <y>0</y>
      <width>30</width>
      <height>30</height>
@@ -2718,7 +2718,7 @@ color: rgb(0, 0, 0);</string>
   <widget class="ATCMbutton" name="atcmButton_XX_01">
    <property name="geometry">
     <rect>
-     <x>90</x>
+     <x>150</x>
      <y>0</y>
      <width>60</width>
      <height>30</height>
@@ -2808,7 +2808,7 @@ color: rgb(0, 0, 0);</string>
   <widget class="ATCMbutton" name="atcmButton_XX_02">
    <property name="geometry">
     <rect>
-     <x>90</x>
+     <x>150</x>
      <y>30</y>
      <width>60</width>
      <height>30</height>
@@ -2898,7 +2898,7 @@ color: rgb(0, 0, 0);</string>
   <widget class="ATCMled" name="atcmLed_DigIn_A_02">
    <property name="geometry">
     <rect>
-     <x>150</x>
+     <x>90</x>
      <y>30</y>
      <width>30</width>
      <height>30</height>
@@ -2940,7 +2940,7 @@ color: rgb(0, 0, 0);</string>
   <widget class="ATCMled" name="atcmLed_DigIn_B_02">
    <property name="geometry">
     <rect>
-     <x>180</x>
+     <x>120</x>
      <y>30</y>
      <width>30</width>
      <height>30</height>
@@ -2982,7 +2982,7 @@ color: rgb(0, 0, 0);</string>
   <widget class="ATCMled" name="atcmLed_DigIn_B_03">
    <property name="geometry">
     <rect>
-     <x>180</x>
+     <x>120</x>
      <y>60</y>
      <width>30</width>
      <height>30</height>
@@ -3024,7 +3024,7 @@ color: rgb(0, 0, 0);</string>
   <widget class="ATCMbutton" name="atcmButton_XX_03">
    <property name="geometry">
     <rect>
-     <x>90</x>
+     <x>150</x>
      <y>60</y>
      <width>60</width>
      <height>30</height>
@@ -3114,7 +3114,7 @@ color: rgb(0, 0, 0);</string>
   <widget class="ATCMled" name="atcmLed_DigIn_A_03">
    <property name="geometry">
     <rect>
-     <x>150</x>
+     <x>90</x>
      <y>60</y>
      <width>30</width>
      <height>30</height>
@@ -3156,7 +3156,7 @@ color: rgb(0, 0, 0);</string>
   <widget class="ATCMled" name="atcmLed_DigIn_A_04">
    <property name="geometry">
     <rect>
-     <x>150</x>
+     <x>90</x>
      <y>90</y>
      <width>30</width>
      <height>30</height>
@@ -3198,7 +3198,7 @@ color: rgb(0, 0, 0);</string>
   <widget class="ATCMbutton" name="atcmButton_XX_04">
    <property name="geometry">
     <rect>
-     <x>90</x>
+     <x>150</x>
      <y>90</y>
      <width>60</width>
      <height>30</height>
@@ -3288,7 +3288,7 @@ color: rgb(0, 0, 0);</string>
   <widget class="ATCMled" name="atcmLed_DigIn_B_04">
    <property name="geometry">
     <rect>
-     <x>180</x>
+     <x>120</x>
      <y>90</y>
      <width>30</width>
      <height>30</height>
@@ -3330,7 +3330,7 @@ color: rgb(0, 0, 0);</string>
   <widget class="ATCMled" name="atcmLed_DigIn_B_08">
    <property name="geometry">
     <rect>
-     <x>180</x>
+     <x>120</x>
      <y>210</y>
      <width>30</width>
      <height>30</height>
@@ -3372,7 +3372,7 @@ color: rgb(0, 0, 0);</string>
   <widget class="ATCMled" name="atcmLed_DigIn_A_07">
    <property name="geometry">
     <rect>
-     <x>150</x>
+     <x>90</x>
      <y>180</y>
      <width>30</width>
      <height>30</height>
@@ -3414,7 +3414,7 @@ color: rgb(0, 0, 0);</string>
   <widget class="ATCMbutton" name="atcmButton_XX_06">
    <property name="geometry">
     <rect>
-     <x>90</x>
+     <x>150</x>
      <y>150</y>
      <width>60</width>
      <height>30</height>
@@ -3504,7 +3504,7 @@ color: rgb(0, 0, 0);</string>
   <widget class="ATCMbutton" name="atcmButton_XX_07">
    <property name="geometry">
     <rect>
-     <x>90</x>
+     <x>150</x>
      <y>180</y>
      <width>60</width>
      <height>30</height>
@@ -3594,7 +3594,7 @@ color: rgb(0, 0, 0);</string>
   <widget class="ATCMled" name="atcmLed_DigIn_A_08">
    <property name="geometry">
     <rect>
-     <x>150</x>
+     <x>90</x>
      <y>210</y>
      <width>30</width>
      <height>30</height>
@@ -3636,7 +3636,7 @@ color: rgb(0, 0, 0);</string>
   <widget class="ATCMled" name="atcmLed_DigIn_A_05">
    <property name="geometry">
     <rect>
-     <x>150</x>
+     <x>90</x>
      <y>120</y>
      <width>30</width>
      <height>30</height>
@@ -3678,7 +3678,7 @@ color: rgb(0, 0, 0);</string>
   <widget class="ATCMled" name="atcmLed_DigIn_A_06">
    <property name="geometry">
     <rect>
-     <x>150</x>
+     <x>90</x>
      <y>150</y>
      <width>30</width>
      <height>30</height>
@@ -3720,7 +3720,7 @@ color: rgb(0, 0, 0);</string>
   <widget class="ATCMled" name="atcmLed_DigIn_B_05">
    <property name="geometry">
     <rect>
-     <x>180</x>
+     <x>120</x>
      <y>120</y>
      <width>30</width>
      <height>30</height>
@@ -3762,7 +3762,7 @@ color: rgb(0, 0, 0);</string>
   <widget class="ATCMbutton" name="atcmButton_XX_05">
    <property name="geometry">
     <rect>
-     <x>90</x>
+     <x>150</x>
      <y>120</y>
      <width>60</width>
      <height>30</height>
@@ -3852,7 +3852,7 @@ color: rgb(0, 0, 0);</string>
   <widget class="ATCMled" name="atcmLed_DigIn_B_07">
    <property name="geometry">
     <rect>
-     <x>180</x>
+     <x>120</x>
      <y>180</y>
      <width>30</width>
      <height>30</height>
@@ -3894,7 +3894,7 @@ color: rgb(0, 0, 0);</string>
   <widget class="ATCMled" name="atcmLed_DigIn_B_06">
    <property name="geometry">
     <rect>
-     <x>180</x>
+     <x>120</x>
      <y>150</y>
      <width>30</width>
      <height>30</height>
@@ -3936,7 +3936,7 @@ color: rgb(0, 0, 0);</string>
   <widget class="ATCMbutton" name="atcmButton_XX_08">
    <property name="geometry">
     <rect>
-     <x>90</x>
+     <x>150</x>
      <y>210</y>
      <width>60</width>
      <height>30</height>
@@ -4026,7 +4026,7 @@ color: rgb(0, 0, 0);</string>
   <widget class="ATCMbutton" name="atcmButton_XX_12">
    <property name="geometry">
     <rect>
-     <x>90</x>
+     <x>150</x>
      <y>330</y>
      <width>60</width>
      <height>30</height>
@@ -4116,7 +4116,7 @@ color: rgb(0, 0, 0);</string>
   <widget class="ATCMled" name="atcmLed_DigIn_A_09">
    <property name="geometry">
     <rect>
-     <x>150</x>
+     <x>90</x>
      <y>240</y>
      <width>30</width>
      <height>30</height>
@@ -4158,7 +4158,7 @@ color: rgb(0, 0, 0);</string>
   <widget class="ATCMbutton" name="atcmButton_XX_09">
    <property name="geometry">
     <rect>
-     <x>90</x>
+     <x>150</x>
      <y>240</y>
      <width>60</width>
      <height>30</height>
@@ -4248,7 +4248,7 @@ color: rgb(0, 0, 0);</string>
   <widget class="ATCMled" name="atcmLed_DigIn_B_10">
    <property name="geometry">
     <rect>
-     <x>180</x>
+     <x>120</x>
      <y>270</y>
      <width>30</width>
      <height>30</height>
@@ -4290,7 +4290,7 @@ color: rgb(0, 0, 0);</string>
   <widget class="ATCMled" name="atcmLed_DigIn_B_09">
    <property name="geometry">
     <rect>
-     <x>180</x>
+     <x>120</x>
      <y>240</y>
      <width>30</width>
      <height>30</height>
@@ -4332,7 +4332,7 @@ color: rgb(0, 0, 0);</string>
   <widget class="ATCMbutton" name="atcmButton_XX_11">
    <property name="geometry">
     <rect>
-     <x>90</x>
+     <x>150</x>
      <y>300</y>
      <width>60</width>
      <height>30</height>
@@ -4422,7 +4422,7 @@ color: rgb(0, 0, 0);</string>
   <widget class="ATCMled" name="atcmLed_DigIn_A_12">
    <property name="geometry">
     <rect>
-     <x>150</x>
+     <x>90</x>
      <y>330</y>
      <width>30</width>
      <height>30</height>
@@ -4464,7 +4464,7 @@ color: rgb(0, 0, 0);</string>
   <widget class="ATCMled" name="atcmLed_DigIn_B_11">
    <property name="geometry">
     <rect>
-     <x>180</x>
+     <x>120</x>
      <y>300</y>
      <width>30</width>
      <height>30</height>
@@ -4506,7 +4506,7 @@ color: rgb(0, 0, 0);</string>
   <widget class="ATCMbutton" name="atcmButton_XX_10">
    <property name="geometry">
     <rect>
-     <x>90</x>
+     <x>150</x>
      <y>270</y>
      <width>60</width>
      <height>30</height>
@@ -4596,7 +4596,7 @@ color: rgb(0, 0, 0);</string>
   <widget class="ATCMled" name="atcmLed_DigIn_A_10">
    <property name="geometry">
     <rect>
-     <x>150</x>
+     <x>90</x>
      <y>270</y>
      <width>30</width>
      <height>30</height>
@@ -4638,7 +4638,7 @@ color: rgb(0, 0, 0);</string>
   <widget class="ATCMled" name="atcmLed_DigIn_B_12">
    <property name="geometry">
     <rect>
-     <x>180</x>
+     <x>120</x>
      <y>330</y>
      <width>30</width>
      <height>30</height>
@@ -4680,7 +4680,7 @@ color: rgb(0, 0, 0);</string>
   <widget class="ATCMled" name="atcmLed_DigIn_A_11">
    <property name="geometry">
     <rect>
-     <x>150</x>
+     <x>90</x>
      <y>300</y>
      <width>30</width>
      <height>30</height>
@@ -4722,7 +4722,7 @@ color: rgb(0, 0, 0);</string>
   <widget class="ATCMbutton" name="atcmButton_XX_16">
    <property name="geometry">
     <rect>
-     <x>90</x>
+     <x>150</x>
      <y>450</y>
      <width>60</width>
      <height>30</height>
@@ -4812,7 +4812,7 @@ color: rgb(0, 0, 0);</string>
   <widget class="ATCMled" name="atcmLed_DigIn_A_13">
    <property name="geometry">
     <rect>
-     <x>150</x>
+     <x>90</x>
      <y>360</y>
      <width>30</width>
      <height>30</height>
@@ -4854,7 +4854,7 @@ color: rgb(0, 0, 0);</string>
   <widget class="ATCMbutton" name="atcmButton_XX_13">
    <property name="geometry">
     <rect>
-     <x>90</x>
+     <x>150</x>
      <y>360</y>
      <width>60</width>
      <height>30</height>
@@ -4944,7 +4944,7 @@ color: rgb(0, 0, 0);</string>
   <widget class="ATCMled" name="atcmLed_DigIn_B_14">
    <property name="geometry">
     <rect>
-     <x>180</x>
+     <x>120</x>
      <y>390</y>
      <width>30</width>
      <height>30</height>
@@ -4986,7 +4986,7 @@ color: rgb(0, 0, 0);</string>
   <widget class="ATCMled" name="atcmLed_DigIn_B_13">
    <property name="geometry">
     <rect>
-     <x>180</x>
+     <x>120</x>
      <y>360</y>
      <width>30</width>
      <height>30</height>
@@ -5028,7 +5028,7 @@ color: rgb(0, 0, 0);</string>
   <widget class="ATCMbutton" name="atcmButton_XX_15">
    <property name="geometry">
     <rect>
-     <x>90</x>
+     <x>150</x>
      <y>420</y>
      <width>60</width>
      <height>30</height>
@@ -5118,7 +5118,7 @@ color: rgb(0, 0, 0);</string>
   <widget class="ATCMled" name="atcmLed_DigIn_A_16">
    <property name="geometry">
     <rect>
-     <x>150</x>
+     <x>90</x>
      <y>450</y>
      <width>30</width>
      <height>30</height>
@@ -5160,7 +5160,7 @@ color: rgb(0, 0, 0);</string>
   <widget class="ATCMled" name="atcmLed_DigIn_B_15">
    <property name="geometry">
     <rect>
-     <x>180</x>
+     <x>120</x>
      <y>420</y>
      <width>30</width>
      <height>30</height>
@@ -5202,7 +5202,7 @@ color: rgb(0, 0, 0);</string>
   <widget class="ATCMbutton" name="atcmButton_XX_14">
    <property name="geometry">
     <rect>
-     <x>90</x>
+     <x>150</x>
      <y>390</y>
      <width>60</width>
      <height>30</height>
@@ -5292,7 +5292,7 @@ color: rgb(0, 0, 0);</string>
   <widget class="ATCMled" name="atcmLed_DigIn_A_14">
    <property name="geometry">
     <rect>
-     <x>150</x>
+     <x>90</x>
      <y>390</y>
      <width>30</width>
      <height>30</height>
@@ -5334,7 +5334,7 @@ color: rgb(0, 0, 0);</string>
   <widget class="ATCMled" name="atcmLed_DigIn_B_16">
    <property name="geometry">
     <rect>
-     <x>180</x>
+     <x>120</x>
      <y>450</y>
      <width>30</width>
      <height>30</height>
@@ -5376,7 +5376,7 @@ color: rgb(0, 0, 0);</string>
   <widget class="ATCMled" name="atcmLed_DigIn_A_15">
    <property name="geometry">
     <rect>
-     <x>150</x>
+     <x>90</x>
      <y>420</y>
      <width>30</width>
      <height>30</height>
@@ -7064,10 +7064,10 @@ color: rgb(0, 255, 255);</string>
     <enum>QFrame::Box</enum>
    </property>
    <property name="text">
-    <string>piano sopra: finestre</string>
+    <string>#2 p.1: finestre nord sx + dx</string>
    </property>
    <property name="alignment">
-    <set>Qt::AlignCenter</set>
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
    </property>
    <property name="margin">
     <number>0</number>
@@ -7101,47 +7101,10 @@ color: rgb(0, 255, 255);</string>
     <enum>QFrame::Box</enum>
    </property>
    <property name="text">
-    <string>piano sopra: finestre</string>
+    <string>#5 p.1: porta finestra velo + c.</string>
    </property>
    <property name="alignment">
-    <set>Qt::AlignCenter</set>
-   </property>
-   <property name="margin">
-    <number>0</number>
-   </property>
-   <property name="indent">
-    <number>0</number>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_Alarm_PianoSopra_4">
-   <property name="geometry">
-    <rect>
-     <x>210</x>
-     <y>90</y>
-     <width>324</width>
-     <height>30</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>DejaVu Sans</family>
-     <pointsize>10</pointsize>
-     <weight>50</weight>
-     <bold>false</bold>
-    </font>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background-color: rgb(64, 64, 64);
-color: rgb(0, 255, 255);</string>
-   </property>
-   <property name="frameShape">
-    <enum>QFrame::Box</enum>
-   </property>
-   <property name="text">
-    <string>piano sopra: finestre</string>
-   </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
    </property>
    <property name="margin">
     <number>0</number>
@@ -7175,10 +7138,10 @@ color: rgb(0,192, 255);</string>
     <enum>QFrame::Box</enum>
    </property>
    <property name="text">
-    <string>piano terra: finestre</string>
+    <string>#8 p.0: ingresso velo + c.</string>
    </property>
    <property name="alignment">
-    <set>Qt::AlignCenter</set>
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
    </property>
    <property name="margin">
     <number>0</number>
@@ -7212,10 +7175,10 @@ color: rgb(0,192, 255);</string>
     <enum>QFrame::Box</enum>
    </property>
    <property name="text">
-    <string>piano terra: finestre</string>
+    <string>#9 p.0: bagno finestra + _</string>
    </property>
    <property name="alignment">
-    <set>Qt::AlignCenter</set>
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
    </property>
    <property name="margin">
     <number>0</number>
@@ -7249,10 +7212,10 @@ color: rgb(0,192, 255);</string>
     <enum>QFrame::Box</enum>
    </property>
    <property name="text">
-    <string>piano terra: finestre</string>
+    <string>#10 p.0: studio velo + c.</string>
    </property>
    <property name="alignment">
-    <set>Qt::AlignCenter</set>
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
    </property>
    <property name="margin">
     <number>0</number>
@@ -7286,10 +7249,10 @@ color: rgb(0,192, 255);</string>
     <enum>QFrame::Box</enum>
    </property>
    <property name="text">
-    <string>piano terra: finestre</string>
+    <string>#15 p.0: soggiorno sud velo + c.</string>
    </property>
    <property name="alignment">
-    <set>Qt::AlignCenter</set>
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
    </property>
    <property name="margin">
     <number>0</number>
@@ -7323,10 +7286,10 @@ color: rgb(0,192, 255);</string>
     <enum>QFrame::Box</enum>
    </property>
    <property name="text">
-    <string>piano terra: finestre</string>
+    <string>#13 p.0: corridoio i.r. + _</string>
    </property>
    <property name="alignment">
-    <set>Qt::AlignCenter</set>
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
    </property>
    <property name="margin">
     <number>0</number>
@@ -7360,10 +7323,10 @@ color: rgb(0,192, 255);</string>
     <enum>QFrame::Box</enum>
    </property>
    <property name="text">
-    <string>piano terra: finestre</string>
+    <string>#12 p.0: camera arancione v. + c.</string>
    </property>
    <property name="alignment">
-    <set>Qt::AlignCenter</set>
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
    </property>
    <property name="margin">
     <number>0</number>
@@ -7397,10 +7360,10 @@ color: rgb(0,192, 255);</string>
     <enum>QFrame::Box</enum>
    </property>
    <property name="text">
-    <string>piano terra: finestre</string>
+    <string>#11 p.0: camera bianca v. + c.</string>
    </property>
    <property name="alignment">
-    <set>Qt::AlignCenter</set>
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
    </property>
    <property name="margin">
     <number>0</number>
@@ -7434,10 +7397,10 @@ color: rgb(0,128,255);</string>
     <enum>QFrame::Box</enum>
    </property>
    <property name="text">
-    <string>piano sotto: porte</string>
+    <string>#17 p.-1: velo + porta_e_fin.</string>
    </property>
    <property name="alignment">
-    <set>Qt::AlignCenter</set>
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
    </property>
    <property name="margin">
     <number>0</number>
@@ -7471,10 +7434,10 @@ color: rgb(0,128,255);</string>
     <enum>QFrame::Box</enum>
    </property>
    <property name="text">
-    <string>piano sotto: porte</string>
+    <string>#18 p.-1: lavanderia + bagno</string>
    </property>
    <property name="alignment">
-    <set>Qt::AlignCenter</set>
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
    </property>
    <property name="margin">
     <number>0</number>
@@ -7508,10 +7471,10 @@ color: rgb(0,128,255);</string>
     <enum>QFrame::Box</enum>
    </property>
    <property name="text">
-    <string>piano sotto: porte</string>
+    <string>#21 p.-1: legnaia i.r. + _</string>
    </property>
    <property name="alignment">
-    <set>Qt::AlignCenter</set>
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
    </property>
    <property name="margin">
     <number>0</number>
@@ -7590,6 +7553,44 @@ color: rgb(0,128,255);</string>
     <string>1;NODE_OK;2;TIMEOUT;3;BLACKLIST;4;DISCONNECTED;5;NODE_DISABLED;0;NO_NODE</string>
    </property>
   </widget>
+  <widget class="QLabel" name="label_Alarm_PianoTerra_10">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>90</y>
+     <width>324</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>10</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(32, 32, 32);
+color: rgb(0,192, 255);</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Box</enum>
+   </property>
+   <property name="text">
+    <string>#6 p.0: finestra sogg. velo + c.</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+   <property name="margin">
+    <number>0</number>
+   </property>
+   <property name="indent">
+    <number>0</number>
+   </property>
+  </widget>
+  <zorder>label_Alarm_PianoTerra_10</zorder>
   <zorder>label_Alarm_PianoTerra</zorder>
   <zorder>label_Alarm_PianoTerra_6</zorder>
   <zorder>label_Alarm_PianoTerra_2</zorder>
@@ -7603,7 +7604,6 @@ color: rgb(0,128,255);</string>
   <zorder>label_Alarm_PianoSotto</zorder>
   <zorder>label_Alarm_PianoSopra_2</zorder>
   <zorder>label_Alarm_PianoTerra_5</zorder>
-  <zorder>label_Alarm_PianoSopra_4</zorder>
   <zorder>label_Alarm_PianoTerra_4</zorder>
   <zorder>label_Alarm_PianoSopra</zorder>
   <zorder>label_DigIO_blue</zorder>
