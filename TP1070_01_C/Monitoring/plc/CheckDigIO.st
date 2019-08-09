@@ -29,15 +29,15 @@ END_VAR
 	OK_DigIn_B_4  := XX_DigIn_B_4  = XX_DigOut_A_4 ;
 	OK_DigIn_B_5  := XX_DigIn_B_5  = XX_DigOut_A_5 ;
 	OK_DigIn_B_6  := XX_DigIn_B_6  = XX_DigOut_A_6 ;
-	OK_DigIn_B_7  := XX_DigIn_B_7  = XX_DigOut_A_7 ;
+	OK_DigIn_B_7  := true; (* XX_DigIn_B_7  = XX_DigOut_A_7 ; *)
 	OK_DigIn_B_8  := XX_DigIn_B_8  = XX_DigOut_A_8 ;
 	OK_DigIn_B_9  := XX_DigIn_B_9  = XX_DigOut_A_9 ;
 	OK_DigIn_B_10 := XX_DigIn_B_10 = XX_DigOut_A_10;
-	OK_DigIn_B_11 := XX_DigIn_B_11 = XX_DigOut_A_11;
+	OK_DigIn_B_11 := true; (* XX_DigIn_B_11 = XX_DigOut_A_11; *)
 	OK_DigIn_B_12 := XX_DigIn_B_12 = XX_DigOut_A_12;
-	OK_DigIn_B_13 := XX_DigIn_B_13 = XX_DigOut_A_13;
+	OK_DigIn_B_13 := true; (* XX_DigIn_B_13 = XX_DigOut_A_13; *)
 	OK_DigIn_B_14 := XX_DigIn_B_14 = XX_DigOut_A_14;
 	OK_DigIn_B_15 := XX_DigIn_B_15 = XX_DigOut_A_15;
-	OK_DigIn_B_16 := XX_DigIn_B_16 = XX_DigOut_A_16;
+	OK_DigIn_B_16 := true; (* XX_DigIn_B_16 = XX_DigOut_A_16; *)
 
 END_PROGRAM

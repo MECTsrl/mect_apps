@@ -221,22 +221,22 @@
 0;P;XX_AnIn_D_2                    ;INT      ;0   ;RTU       ;               ;0   ;1   ;22    ;221 ;1   ;[RO]Analog input 2 value MPNC030 module D
 0;P;XX_AnIn_D_3                    ;INT      ;0   ;RTU       ;               ;0   ;1   ;23    ;222 ;1   ;[RO]Analog input 3 value MPNC030 module D
 0;P;XX_AnIn_D_4                    ;INT      ;0   ;RTU       ;               ;0   ;1   ;24    ;223 ;1   ;[RO]Analog input 4 value MPNC030 module D
-2;P;XX_DigOut_A_1                  ;WORD_BIT ;1   ;RTU       ;               ;0   ;1   ;25    ;224 ;16  ;[RW]Digital output value bit 1 MPNC020 02 module A
-2;P;XX_DigOut_A_2                  ;WORD_BIT ;2   ;RTU       ;               ;0   ;1   ;25    ;224 ;16  ;[RW]Digital output value bit 2 MPNC020 02 module A
-2;P;XX_DigOut_A_3                  ;WORD_BIT ;3   ;RTU       ;               ;0   ;1   ;25    ;224 ;16  ;[RW]Digital output value bit 3 MPNC020 02 module A
-2;P;XX_DigOut_A_4                  ;WORD_BIT ;4   ;RTU       ;               ;0   ;1   ;25    ;224 ;16  ;[RW]Digital output value bit 4 MPNC020 02 module A
-2;P;XX_DigOut_A_5                  ;WORD_BIT ;5   ;RTU       ;               ;0   ;1   ;25    ;224 ;16  ;[RW]Digital output value bit 5 MPNC020 02 module A
-2;P;XX_DigOut_A_6                  ;WORD_BIT ;6   ;RTU       ;               ;0   ;1   ;25    ;224 ;16  ;[RW]Digital output value bit 6 MPNC020 02 module A
-2;P;XX_DigOut_A_7                  ;WORD_BIT ;7   ;RTU       ;               ;0   ;1   ;25    ;224 ;16  ;[RW]Digital output value bit 7 MPNC020 02 module A
-2;P;XX_DigOut_A_8                  ;WORD_BIT ;8   ;RTU       ;               ;0   ;1   ;25    ;224 ;16  ;[RW]Digital output value bit 8 MPNC020 02 module A
-2;P;XX_DigOut_A_9                  ;WORD_BIT ;9   ;RTU       ;               ;0   ;1   ;25    ;224 ;16  ;[RW]Digital output value bit 9 MPNC020 02 module A
-2;P;XX_DigOut_A_10                 ;WORD_BIT ;10  ;RTU       ;               ;0   ;1   ;25    ;224 ;16  ;[RW]Digital output value bit 10 MPNC020 02 module A
-2;P;XX_DigOut_A_11                 ;WORD_BIT ;11  ;RTU       ;               ;0   ;1   ;25    ;224 ;16  ;[RW]Digital output value bit 11 MPNC020 02 module A
-2;P;XX_DigOut_A_12                 ;WORD_BIT ;12  ;RTU       ;               ;0   ;1   ;25    ;224 ;16  ;[RW]Digital output value bit 12 MPNC020 02 module A
-2;P;XX_DigOut_A_13                 ;WORD_BIT ;13  ;RTU       ;               ;0   ;1   ;25    ;224 ;16  ;[RW]Digital output value bit 13 MPNC020 02 module A
-2;P;XX_DigOut_A_14                 ;WORD_BIT ;14  ;RTU       ;               ;0   ;1   ;25    ;224 ;16  ;[RW]Digital output value bit 14 MPNC020 02 module A
-2;P;XX_DigOut_A_15                 ;WORD_BIT ;15  ;RTU       ;               ;0   ;1   ;25    ;224 ;16  ;[RW]Digital output value bit 15 MPNC020 02 module A
-2;P;XX_DigOut_A_16                 ;WORD_BIT ;16  ;RTU       ;               ;0   ;1   ;25    ;224 ;16  ;[RW]Digital output value bit 16 MPNC020 02 module A
+2;V;XX_DigOut_A_1                  ;WORD_BIT ;1   ;RTU       ;               ;0   ;1   ;25    ;224 ;16  ;[RW]Digital output value bit 1 MPNC020 02 module A
+2;V;XX_DigOut_A_2                  ;WORD_BIT ;2   ;RTU       ;               ;0   ;1   ;25    ;224 ;16  ;[RW]Digital output value bit 2 MPNC020 02 module A
+2;V;XX_DigOut_A_3                  ;WORD_BIT ;3   ;RTU       ;               ;0   ;1   ;25    ;224 ;16  ;[RW]Digital output value bit 3 MPNC020 02 module A
+2;V;XX_DigOut_A_4                  ;WORD_BIT ;4   ;RTU       ;               ;0   ;1   ;25    ;224 ;16  ;[RW]Digital output value bit 4 MPNC020 02 module A
+2;V;XX_DigOut_A_5                  ;WORD_BIT ;5   ;RTU       ;               ;0   ;1   ;25    ;224 ;16  ;[RW]Digital output value bit 5 MPNC020 02 module A
+2;V;XX_DigOut_A_6                  ;WORD_BIT ;6   ;RTU       ;               ;0   ;1   ;25    ;224 ;16  ;[RW]Digital output value bit 6 MPNC020 02 module A
+2;V;XX_DigOut_A_7                  ;WORD_BIT ;7   ;RTU       ;               ;0   ;1   ;25    ;224 ;16  ;[RW]Digital output value bit 7 MPNC020 02 module A
+2;V;XX_DigOut_A_8                  ;WORD_BIT ;8   ;RTU       ;               ;0   ;1   ;25    ;224 ;16  ;[RW]Digital output value bit 8 MPNC020 02 module A
+2;V;XX_DigOut_A_9                  ;WORD_BIT ;9   ;RTU       ;               ;0   ;1   ;25    ;224 ;16  ;[RW]Digital output value bit 9 MPNC020 02 module A
+2;V;XX_DigOut_A_10                 ;WORD_BIT ;10  ;RTU       ;               ;0   ;1   ;25    ;224 ;16  ;[RW]Digital output value bit 10 MPNC020 02 module A
+2;V;XX_DigOut_A_11                 ;WORD_BIT ;11  ;RTU       ;               ;0   ;1   ;25    ;224 ;16  ;[RW]Digital output value bit 11 MPNC020 02 module A
+2;V;XX_DigOut_A_12                 ;WORD_BIT ;12  ;RTU       ;               ;0   ;1   ;25    ;224 ;16  ;[RW]Digital output value bit 12 MPNC020 02 module A
+2;V;XX_DigOut_A_13                 ;WORD_BIT ;13  ;RTU       ;               ;0   ;1   ;25    ;224 ;16  ;[RW]Digital output value bit 13 MPNC020 02 module A
+2;V;XX_DigOut_A_14                 ;WORD_BIT ;14  ;RTU       ;               ;0   ;1   ;25    ;224 ;16  ;[RW]Digital output value bit 14 MPNC020 02 module A
+2;V;XX_DigOut_A_15                 ;WORD_BIT ;15  ;RTU       ;               ;0   ;1   ;25    ;224 ;16  ;[RW]Digital output value bit 15 MPNC020 02 module A
+2;V;XX_DigOut_A_16                 ;WORD_BIT ;16  ;RTU       ;               ;0   ;1   ;25    ;224 ;16  ;[RW]Digital output value bit 16 MPNC020 02 module A
 0;P;XX_DigOut_B_1                  ;WORD_BIT ;1   ;RTU       ;               ;0   ;1   ;26    ;240 ;1   ;[RW]Digital output value bit 1 MPNC020 02 module B
 0;P;XX_DigOut_B_2                  ;WORD_BIT ;2   ;RTU       ;               ;0   ;1   ;26    ;241 ;1   ;[RW]Digital output value bit 2 MPNC020 02 module B
 0;P;XX_DigOut_B_3                  ;WORD_BIT ;3   ;RTU       ;               ;0   ;1   ;26    ;242 ;1   ;[RW]Digital output value bit 3 MPNC020 02 module B
@@ -285,38 +285,38 @@
 0;P;XX_DigOut_D_14                 ;WORD_BIT ;14  ;RTU       ;               ;0   ;1   ;28    ;285 ;1   ;[RW]Digital output value bit 14 MPNC020 02 module D
 0;P;XX_DigOut_D_15                 ;WORD_BIT ;15  ;RTU       ;               ;0   ;1   ;28    ;286 ;1   ;[RW]Digital output value bit 15 MPNC020 02 module D
 0;P;XX_DigOut_D_16                 ;WORD_BIT ;16  ;RTU       ;               ;0   ;1   ;28    ;287 ;1   ;[RW]Digital output value bit 16 MPNC020 02 module D
-2;P;XX_DigIn_A_1                   ;WORD_BIT ;1   ;RTU       ;               ;0   ;1   ;29    ;288 ;32  ;[RO]Digital input value bit 1 MPNC020 01 module A
-2;P;XX_DigIn_A_2                   ;WORD_BIT ;2   ;RTU       ;               ;0   ;1   ;29    ;288 ;32  ;[RO]Digital input value bit 2 MPNC020 01 module A
-2;P;XX_DigIn_A_3                   ;WORD_BIT ;3   ;RTU       ;               ;0   ;1   ;29    ;288 ;32  ;[RO]Digital input value bit 3 MPNC020 01 module A
-2;P;XX_DigIn_A_4                   ;WORD_BIT ;4   ;RTU       ;               ;0   ;1   ;29    ;288 ;32  ;[RO]Digital input value bit 4 MPNC020 01 module A
-2;P;XX_DigIn_A_5                   ;WORD_BIT ;5   ;RTU       ;               ;0   ;1   ;29    ;288 ;32  ;[RO]Digital input value bit 5 MPNC020 01 module A
-2;P;XX_DigIn_A_6                   ;WORD_BIT ;6   ;RTU       ;               ;0   ;1   ;29    ;288 ;32  ;[RO]Digital input value bit 6 MPNC020 01 module A
-2;P;XX_DigIn_A_7                   ;WORD_BIT ;7   ;RTU       ;               ;0   ;1   ;29    ;288 ;32  ;[RO]Digital input value bit 7 MPNC020 01 module A
-2;P;XX_DigIn_A_8                   ;WORD_BIT ;8   ;RTU       ;               ;0   ;1   ;29    ;288 ;32  ;[RO]Digital input value bit 8 MPNC020 01 module A
-2;P;XX_DigIn_A_9                   ;WORD_BIT ;9   ;RTU       ;               ;0   ;1   ;29    ;288 ;32  ;[RO]Digital input value bit 9 MPNC020 01 module A
-2;P;XX_DigIn_A_10                  ;WORD_BIT ;10  ;RTU       ;               ;0   ;1   ;29    ;288 ;32  ;[RO]Digital input value bit 10 MPNC020 01 module A
-2;P;XX_DigIn_A_11                  ;WORD_BIT ;11  ;RTU       ;               ;0   ;1   ;29    ;288 ;32  ;[RO]Digital input value bit 11 MPNC020 01 module A
-2;P;XX_DigIn_A_12                  ;WORD_BIT ;12  ;RTU       ;               ;0   ;1   ;29    ;288 ;32  ;[RO]Digital input value bit 12 MPNC020 01 module A
-2;P;XX_DigIn_A_13                  ;WORD_BIT ;13  ;RTU       ;               ;0   ;1   ;29    ;288 ;32  ;[RO]Digital input value bit 13 MPNC020 01 module A
-2;P;XX_DigIn_A_14                  ;WORD_BIT ;14  ;RTU       ;               ;0   ;1   ;29    ;288 ;32  ;[RO]Digital input value bit 14 MPNC020 01 module A
-2;P;XX_DigIn_A_15                  ;WORD_BIT ;15  ;RTU       ;               ;0   ;1   ;29    ;288 ;32  ;[RO]Digital input value bit 15 MPNC020 01 module A
-2;P;XX_DigIn_A_16                  ;WORD_BIT ;16  ;RTU       ;               ;0   ;1   ;29    ;288 ;32  ;[RO]Digital input value bit 16 MPNC020 01 module A
-2;P;XX_DigIn_B_1                   ;WORD_BIT ;1   ;RTU       ;               ;0   ;1   ;30    ;288 ;32  ;[RO]Digital input value bit 1 MPNC020 01 module B
-2;P;XX_DigIn_B_2                   ;WORD_BIT ;2   ;RTU       ;               ;0   ;1   ;30    ;288 ;32  ;[RO]Digital input value bit 2 MPNC020 01 module B
-2;P;XX_DigIn_B_3                   ;WORD_BIT ;3   ;RTU       ;               ;0   ;1   ;30    ;288 ;32  ;[RO]Digital input value bit 3 MPNC020 01 module B
-2;P;XX_DigIn_B_4                   ;WORD_BIT ;4   ;RTU       ;               ;0   ;1   ;30    ;288 ;32  ;[RO]Digital input value bit 4 MPNC020 01 module B
-2;P;XX_DigIn_B_5                   ;WORD_BIT ;5   ;RTU       ;               ;0   ;1   ;30    ;288 ;32  ;[RO]Digital input value bit 5 MPNC020 01 module B
-2;P;XX_DigIn_B_6                   ;WORD_BIT ;6   ;RTU       ;               ;0   ;1   ;30    ;288 ;32  ;[RO]Digital input value bit 6 MPNC020 01 module B
-2;P;XX_DigIn_B_7                   ;WORD_BIT ;7   ;RTU       ;               ;0   ;1   ;30    ;288 ;32  ;[RO]Digital input value bit 7 MPNC020 01 module B
-2;P;XX_DigIn_B_8                   ;WORD_BIT ;8   ;RTU       ;               ;0   ;1   ;30    ;288 ;32  ;[RO]Digital input value bit 8 MPNC020 01 module B
-2;P;XX_DigIn_B_9                   ;WORD_BIT ;9   ;RTU       ;               ;0   ;1   ;30    ;288 ;32  ;[RO]Digital input value bit 9 MPNC020 01 module B
-2;P;XX_DigIn_B_10                  ;WORD_BIT ;10  ;RTU       ;               ;0   ;1   ;30    ;288 ;32  ;[RO]Digital input value bit 10 MPNC020 01 module B
-2;P;XX_DigIn_B_11                  ;WORD_BIT ;11  ;RTU       ;               ;0   ;1   ;30    ;288 ;32  ;[RO]Digital input value bit 11 MPNC020 01 module B
-2;P;XX_DigIn_B_12                  ;WORD_BIT ;12  ;RTU       ;               ;0   ;1   ;30    ;288 ;32  ;[RO]Digital input value bit 12 MPNC020 01 module B
-2;P;XX_DigIn_B_13                  ;WORD_BIT ;13  ;RTU       ;               ;0   ;1   ;30    ;288 ;32  ;[RO]Digital input value bit 13 MPNC020 01 module B
-2;P;XX_DigIn_B_14                  ;WORD_BIT ;14  ;RTU       ;               ;0   ;1   ;30    ;288 ;32  ;[RO]Digital input value bit 14 MPNC020 01 module B
-2;P;XX_DigIn_B_15                  ;WORD_BIT ;15  ;RTU       ;               ;0   ;1   ;30    ;288 ;32  ;[RO]Digital input value bit 15 MPNC020 01 module B
-2;P;XX_DigIn_B_16                  ;WORD_BIT ;16  ;RTU       ;               ;0   ;1   ;30    ;288 ;32  ;[RO]Digital input value bit 16 MPNC020 01 module B
+2;V;XX_DigIn_A_1                   ;WORD_BIT ;1   ;RTU       ;               ;0   ;1   ;29    ;288 ;32  ;[RO]Digital input value bit 1 MPNC020 01 module A
+2;V;XX_DigIn_A_2                   ;WORD_BIT ;2   ;RTU       ;               ;0   ;1   ;29    ;288 ;32  ;[RO]Digital input value bit 2 MPNC020 01 module A
+2;V;XX_DigIn_A_3                   ;WORD_BIT ;3   ;RTU       ;               ;0   ;1   ;29    ;288 ;32  ;[RO]Digital input value bit 3 MPNC020 01 module A
+2;V;XX_DigIn_A_4                   ;WORD_BIT ;4   ;RTU       ;               ;0   ;1   ;29    ;288 ;32  ;[RO]Digital input value bit 4 MPNC020 01 module A
+2;V;XX_DigIn_A_5                   ;WORD_BIT ;5   ;RTU       ;               ;0   ;1   ;29    ;288 ;32  ;[RO]Digital input value bit 5 MPNC020 01 module A
+2;V;XX_DigIn_A_6                   ;WORD_BIT ;6   ;RTU       ;               ;0   ;1   ;29    ;288 ;32  ;[RO]Digital input value bit 6 MPNC020 01 module A
+2;V;XX_DigIn_A_7                   ;WORD_BIT ;7   ;RTU       ;               ;0   ;1   ;29    ;288 ;32  ;[RO]Digital input value bit 7 MPNC020 01 module A
+2;V;XX_DigIn_A_8                   ;WORD_BIT ;8   ;RTU       ;               ;0   ;1   ;29    ;288 ;32  ;[RO]Digital input value bit 8 MPNC020 01 module A
+2;V;XX_DigIn_A_9                   ;WORD_BIT ;9   ;RTU       ;               ;0   ;1   ;29    ;288 ;32  ;[RO]Digital input value bit 9 MPNC020 01 module A
+2;V;XX_DigIn_A_10                  ;WORD_BIT ;10  ;RTU       ;               ;0   ;1   ;29    ;288 ;32  ;[RO]Digital input value bit 10 MPNC020 01 module A
+2;V;XX_DigIn_A_11                  ;WORD_BIT ;11  ;RTU       ;               ;0   ;1   ;29    ;288 ;32  ;[RO]Digital input value bit 11 MPNC020 01 module A
+2;V;XX_DigIn_A_12                  ;WORD_BIT ;12  ;RTU       ;               ;0   ;1   ;29    ;288 ;32  ;[RO]Digital input value bit 12 MPNC020 01 module A
+2;V;XX_DigIn_A_13                  ;WORD_BIT ;13  ;RTU       ;               ;0   ;1   ;29    ;288 ;32  ;[RO]Digital input value bit 13 MPNC020 01 module A
+2;V;XX_DigIn_A_14                  ;WORD_BIT ;14  ;RTU       ;               ;0   ;1   ;29    ;288 ;32  ;[RO]Digital input value bit 14 MPNC020 01 module A
+2;V;XX_DigIn_A_15                  ;WORD_BIT ;15  ;RTU       ;               ;0   ;1   ;29    ;288 ;32  ;[RO]Digital input value bit 15 MPNC020 01 module A
+2;V;XX_DigIn_A_16                  ;WORD_BIT ;16  ;RTU       ;               ;0   ;1   ;29    ;288 ;32  ;[RO]Digital input value bit 16 MPNC020 01 module A
+2;V;XX_DigIn_B_1                   ;WORD_BIT ;1   ;RTU       ;               ;0   ;1   ;30    ;288 ;32  ;[RO]Digital input value bit 1 MPNC020 01 module B
+2;V;XX_DigIn_B_2                   ;WORD_BIT ;2   ;RTU       ;               ;0   ;1   ;30    ;288 ;32  ;[RO]Digital input value bit 2 MPNC020 01 module B
+2;V;XX_DigIn_B_3                   ;WORD_BIT ;3   ;RTU       ;               ;0   ;1   ;30    ;288 ;32  ;[RO]Digital input value bit 3 MPNC020 01 module B
+2;V;XX_DigIn_B_4                   ;WORD_BIT ;4   ;RTU       ;               ;0   ;1   ;30    ;288 ;32  ;[RO]Digital input value bit 4 MPNC020 01 module B
+2;V;XX_DigIn_B_5                   ;WORD_BIT ;5   ;RTU       ;               ;0   ;1   ;30    ;288 ;32  ;[RO]Digital input value bit 5 MPNC020 01 module B
+2;V;XX_DigIn_B_6                   ;WORD_BIT ;6   ;RTU       ;               ;0   ;1   ;30    ;288 ;32  ;[RO]Digital input value bit 6 MPNC020 01 module B
+2;V;XX_DigIn_B_7                   ;WORD_BIT ;7   ;RTU       ;               ;0   ;1   ;30    ;288 ;32  ;[RO]Digital input value bit 7 MPNC020 01 module B
+2;V;XX_DigIn_B_8                   ;WORD_BIT ;8   ;RTU       ;               ;0   ;1   ;30    ;288 ;32  ;[RO]Digital input value bit 8 MPNC020 01 module B
+2;V;XX_DigIn_B_9                   ;WORD_BIT ;9   ;RTU       ;               ;0   ;1   ;30    ;288 ;32  ;[RO]Digital input value bit 9 MPNC020 01 module B
+2;V;XX_DigIn_B_10                  ;WORD_BIT ;10  ;RTU       ;               ;0   ;1   ;30    ;288 ;32  ;[RO]Digital input value bit 10 MPNC020 01 module B
+2;V;XX_DigIn_B_11                  ;WORD_BIT ;11  ;RTU       ;               ;0   ;1   ;30    ;288 ;32  ;[RO]Digital input value bit 11 MPNC020 01 module B
+2;V;XX_DigIn_B_12                  ;WORD_BIT ;12  ;RTU       ;               ;0   ;1   ;30    ;288 ;32  ;[RO]Digital input value bit 12 MPNC020 01 module B
+2;V;XX_DigIn_B_13                  ;WORD_BIT ;13  ;RTU       ;               ;0   ;1   ;30    ;288 ;32  ;[RO]Digital input value bit 13 MPNC020 01 module B
+2;V;XX_DigIn_B_14                  ;WORD_BIT ;14  ;RTU       ;               ;0   ;1   ;30    ;288 ;32  ;[RO]Digital input value bit 14 MPNC020 01 module B
+2;V;XX_DigIn_B_15                  ;WORD_BIT ;15  ;RTU       ;               ;0   ;1   ;30    ;288 ;32  ;[RO]Digital input value bit 15 MPNC020 01 module B
+2;V;XX_DigIn_B_16                  ;WORD_BIT ;16  ;RTU       ;               ;0   ;1   ;30    ;288 ;32  ;[RO]Digital input value bit 16 MPNC020 01 module B
 0;P;XX_DigIn_C_1                   ;WORD_BIT ;1   ;RTU       ;               ;0   ;1   ;31    ;320 ;1   ;[RO]Digital input value bit 1 MPNC020 01 module C
 0;P;XX_DigIn_C_2                   ;WORD_BIT ;2   ;RTU       ;               ;0   ;1   ;31    ;321 ;1   ;[RO]Digital input value bit 2 MPNC020 01 module C
 0;P;XX_DigIn_C_3                   ;WORD_BIT ;3   ;RTU       ;               ;0   ;1   ;31    ;322 ;1   ;[RO]Digital input value bit 3 MPNC020 01 module C
@@ -497,7 +497,7 @@
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
-1;P;Alarm                          ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;500 ;33  ;[RW]
+1;V;Alarm                          ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;500 ;33  ;[RW]
 1;P;OK_DigIn_A_1                   ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;500 ;33  ;[RW]
 1;P;OK_DigIn_A_2                   ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;500 ;33  ;[RW]
 1;P;OK_DigIn_A_3                   ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;500 ;33  ;[RW]

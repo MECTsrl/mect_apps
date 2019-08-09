@@ -2781,6 +2781,7 @@ RTU3</source>
     </message>
     <message>
         <location filename="page300.ui" line="7508"/>
+        <location filename="page300.ui" line="7606"/>
         <source>ATCMcombobox widget</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2792,6 +2793,17 @@ RTU3</source>
     <message>
         <location filename="page300.ui" line="7581"/>
         <source>#6 p.0: finestra sogg. velo + c.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page300.ui" line="7603"/>
+        <location filename="page300.ui" line="7609"/>
+        <source>Alarm</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page300.ui" line="7651"/>
+        <source>0;no alarm;1;ALARM!</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

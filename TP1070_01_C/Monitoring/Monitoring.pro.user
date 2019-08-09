@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 2.7.84, 2019-07-13T12:49:44. -->
+<!-- Written by QtCreator 2.7.84, 2019-08-09T16:49:22. -->
 <qtcreator>
  <data>
   <variable>ProjectExplorer.Project.ActiveTarget</variable>
@@ -490,21 +490,21 @@
       <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedTimes">
        <value type="QDateTime">2018-09-30T13:46:11</value>
        <value type="QDateTime">2019-07-12T12:14:09</value>
-       <value type="QDateTime">2019-07-13T12:47:54</value>
+       <value type="QDateTime">2019-08-01T17:05:42</value>
        <value type="QDateTime">2018-12-07T10:39:42</value>
        <value type="QDateTime">2018-12-05T15:24:09</value>
        <value type="QDateTime">2019-01-31T16:24:54</value>
-       <value type="QDateTime">2019-07-13T12:47:56</value>
-       <value type="QDateTime">2019-07-13T12:47:55</value>
+       <value type="QDateTime">2019-08-01T17:05:44</value>
+       <value type="QDateTime">2019-08-01T17:05:42</value>
        <value type="QDateTime">2018-12-07T10:39:42</value>
-       <value type="QDateTime">2019-07-13T12:47:55</value>
+       <value type="QDateTime">2019-08-01T17:05:43</value>
        <value type="QDateTime">2018-12-05T15:23:54</value>
        <value type="QDateTime">2018-12-11T11:20:52</value>
        <value type="QDateTime">2019-03-18T15:53:40</value>
        <value type="QDateTime">2019-01-31T16:24:58</value>
        <value type="QDateTime">2019-01-31T16:24:53</value>
        <value type="QDateTime">2019-03-04T18:28:24</value>
-       <value type="QDateTime">2019-07-13T12:47:54</value>
+       <value type="QDateTime">2019-08-01T17:05:42</value>
        <value type="QDateTime">2019-03-18T15:53:38</value>
        <value type="QDateTime">2018-12-07T10:39:42</value>
        <value type="QDateTime">2018-12-07T10:39:42</value>
@@ -512,9 +512,9 @@
        <value type="QDateTime">2018-09-30T13:46:13</value>
        <value type="QDateTime">2019-03-04T18:28:24</value>
        <value type="QDateTime">2019-03-18T15:53:43</value>
-       <value type="QDateTime">2019-07-13T12:47:55</value>
+       <value type="QDateTime">2019-08-01T17:05:43</value>
        <value type="QDateTime">2019-07-12T12:13:39</value>
-       <value type="QDateTime">2019-07-13T12:47:57</value>
+       <value type="QDateTime">2019-08-01T17:05:44</value>
        <value type="QDateTime">2019-03-18T15:53:39</value>
        <value type="QDateTime">2018-12-05T15:23:52</value>
        <value type="QDateTime">2019-03-18T15:53:39</value>
@@ -522,9 +522,9 @@
        <value type="QDateTime">2019-03-18T15:53:39</value>
        <value type="QDateTime">2019-07-12T12:13:43</value>
        <value type="QDateTime">2019-07-12T12:13:50</value>
-       <value type="QDateTime">2019-07-13T12:47:56</value>
+       <value type="QDateTime">2019-08-01T17:05:44</value>
        <value type="QDateTime">2019-03-04T18:28:24</value>
-       <value type="QDateTime">2019-07-13T12:47:56</value>
+       <value type="QDateTime">2019-08-01T17:05:43</value>
        <value type="QDateTime">2019-03-18T15:53:39</value>
        <value type="QDateTime">2019-03-04T18:28:24</value>
        <value type="QDateTime">2019-03-04T18:28:26</value>
@@ -533,16 +533,16 @@
        <value type="QDateTime">2018-10-02T20:08:38</value>
        <value type="QDateTime">2019-03-04T18:28:24</value>
        <value type="QDateTime">2018-12-05T15:23:51</value>
-       <value type="QDateTime">2019-07-13T12:47:54</value>
+       <value type="QDateTime">2019-08-01T17:05:41</value>
        <value type="QDateTime">2019-01-31T16:24:54</value>
        <value type="QDateTime">2019-07-12T12:13:44</value>
        <value type="QDateTime">2019-01-31T16:24:54</value>
-       <value type="QDateTime">2019-07-13T12:47:55</value>
+       <value type="QDateTime">2019-08-01T17:05:42</value>
        <value type="QDateTime">2019-01-31T16:24:54</value>
        <value type="QDateTime">2019-07-12T12:13:48</value>
        <value type="QDateTime">2019-01-31T16:24:54</value>
        <value type="QDateTime">2019-07-12T12:13:38</value>
-       <value type="QDateTime">2019-07-13T12:48:00</value>
+       <value type="QDateTime">2019-08-01T17:05:47</value>
        <value type="QDateTime">2019-03-04T18:28:24</value>
        <value type="QDateTime">2019-01-31T16:24:54</value>
        <value type="QDateTime">2019-03-04T18:28:24</value>
