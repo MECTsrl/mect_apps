@@ -96,14 +96,10 @@ background-color: rgb(0, 0,0);
         </color>
        </property>
        <property name="text">
-        <string/>
+        <string>☰</string>
        </property>
        <property name="pressText">
-        <string/>
-       </property>
-       <property name="icon">
-        <iconset resource="systemicons.qrc">
-         <normaloff>:/systemicons/Pinion.png</normaloff>:/systemicons/Pinion.png</iconset>
+        <string>☰</string>
        </property>
        <property name="borderWidth">
         <number>0</number>
@@ -295,7 +291,7 @@ color: rgb(170, 255, 255);</string>
         <string>color: rgb(255, 255, 255);</string>
        </property>
        <property name="text">
-        <string>value 8</string>
+        <string>8</string>
        </property>
        <property name="scaledContents">
         <bool>true</bool>
@@ -440,7 +436,7 @@ color: rgb(170, 255, 255);</string>
         <string>color: rgb(255, 255, 255);</string>
        </property>
        <property name="text">
-        <string>value 1</string>
+        <string>1</string>
        </property>
        <property name="scaledContents">
         <bool>true</bool>
@@ -474,7 +470,7 @@ color: rgb(170, 255, 255);</string>
         <string>color: rgb(255, 255, 255);</string>
        </property>
        <property name="text">
-        <string>value 2</string>
+        <string>2</string>
        </property>
        <property name="scaledContents">
         <bool>true</bool>
@@ -508,7 +504,7 @@ color: rgb(170, 255, 255);</string>
         <string>color: rgb(255, 255, 255);</string>
        </property>
        <property name="text">
-        <string>value 5</string>
+        <string>5</string>
        </property>
        <property name="scaledContents">
         <bool>true</bool>
@@ -653,7 +649,7 @@ color: rgb(170, 255, 255);</string>
         <string>color: rgb(255, 255, 255);</string>
        </property>
        <property name="text">
-        <string>value 3</string>
+        <string>3</string>
        </property>
        <property name="scaledContents">
         <bool>true</bool>
@@ -687,7 +683,7 @@ color: rgb(170, 255, 255);</string>
         <string>color: rgb(255, 255, 255);</string>
        </property>
        <property name="text">
-        <string>value 4</string>
+        <string>4</string>
        </property>
        <property name="scaledContents">
         <bool>true</bool>
@@ -721,7 +717,7 @@ color: rgb(170, 255, 255);</string>
         <string>color: rgb(255, 255, 255);</string>
        </property>
        <property name="text">
-        <string>value 6</string>
+        <string>6</string>
        </property>
        <property name="scaledContents">
         <bool>true</bool>
@@ -866,7 +862,7 @@ color: rgb(170, 255, 255);</string>
         <string>color: rgb(255, 255, 255);</string>
        </property>
        <property name="text">
-        <string>value 7</string>
+        <string>7</string>
        </property>
        <property name="scaledContents">
         <bool>true</bool>
@@ -900,7 +896,7 @@ color: rgb(170, 255, 255);</string>
         <string notr="true">color: rgb(255, 255, 255);</string>
        </property>
        <property name="text">
-        <string>value 9</string>
+        <string>9</string>
        </property>
        <property name="scaledContents">
         <bool>true</bool>
@@ -927,7 +923,6 @@ color: rgb(170, 255, 255);</string>
   </customwidget>
  </customwidgets>
  <resources>
-  <include location="systemicons.qrc"/>
   <include location="resources.qrc"/>
  </resources>
  <connections>
