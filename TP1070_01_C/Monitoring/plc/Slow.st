@@ -82,4 +82,6 @@ END_VAR
 	TCP_SysActivePower_11      := SysActivePower_11    ;
 	TCP_SysImpActiveEnergy_11  := SysImpActiveEnergy_11;
 
+	TCP_Alarm				   := Alarm;
+
 END_PROGRAM

@@ -1,12 +1,3 @@
-/**
- * @file
- * @author Emiliano Bergamaschini <ebergamaschini@mect.it>
- *
- * @section LICENSE
- * Copyright Mect s.r.l. 2013
- *
- * @brief Generic page
- */
 #include "app_logprint.h"
 #include "atcmplugin.h"
 #include "main.h"
@@ -14,21 +5,14 @@
 #include "ui_page300.h"
 #include "crosstable.h"
 
-/**
- * @brief this macro is used to set the PAGE300 style.
- * the syntax is html stylesheet-like
- */
 #define SET_PAGE300_STYLE() { \
     QString mystyle; \
     mystyle.append(this->styleSheet()); \
-    /* add there the page stilesheet customization */ \
+    /* add there the page stylesheet customization */ \
     mystyle.append(""); \
     this->setStyleSheet(mystyle); \
     }
 
-/**
- * @brief This is the constructor. The operation written here, are executed only one time: at the instantiation of the page.
- */
 page300::page300(QWidget *parent) :
     page(parent),
     ui(new Ui::page300)
@@ -37,10 +21,7 @@ page300::page300(QWidget *parent) :
     /* set here the protection level (pwd_admin_e, pwd_super_user_e, pwd_user_e, pwd_operator_e), default is pwd_operator_e
      * protection_level = pwd_operator_e;
      */
-    
-    /* set up the page style */
-    //SET_PAGE_STYLE();
-    /* set the style described into the macro SET_PAGE300_STYLE */
+
     SET_PAGE300_STYLE();
     translateFontSize(this);
 
@@ -52,11 +33,9 @@ page300::page300(QWidget *parent) :
     ui->atcmLed_DigIn_OK_B_07->setVisible(false);
     ui->atcmLed_DigIn_OK_B_11->setVisible(false);
     ui->atcmLed_DigIn_OK_B_13->setVisible(false);
-    ui->atcmLed_DigIn_OK_B_16->setVisible(false);}
+    ui->atcmLed_DigIn_OK_B_16->setVisible(false);
+}
 
-/**
- * @brief This is the reload member. The operation written here, are executed every time this page is shown.
- */
 void page300::reload()
 {
     /*
@@ -68,9 +47,6 @@ void page300::reload()
      */
 }
 
-/**
- * @brief This is the updateData member. The operation written here, are executed every REFRESH_MS milliseconds.
- */
 void page300::updateData()
 {
     if (this->isVisible() == false)
@@ -88,9 +64,6 @@ void page300::updateData()
      */	
 }
 
-/**
- * @brief This is the event slot to detect new language translation.
- */
 void page300::changeEvent(QEvent * event)
 {
     if (event->type() == QEvent::LanguageChange)
@@ -99,33 +72,7 @@ void page300::changeEvent(QEvent * event)
     }
 }
 
-/**
- * @brief This is the distructor member. The operation written here, are executed only one time when the page will be deleted.
- */
 page300::~page300()
 {
     delete ui;
-}
-
-
-void page300::on_atcmButton_XX_all_toggled(bool checked)
-{
-    beginWrite();
-    doWrite_XX_DigOut_A_1 (checked);
-    doWrite_XX_DigOut_A_2 (checked);
-    doWrite_XX_DigOut_A_3 (checked);
-    doWrite_XX_DigOut_A_4 (checked);
-    doWrite_XX_DigOut_A_5 (checked);
-    doWrite_XX_DigOut_A_6 (checked);
-    doWrite_XX_DigOut_A_7 (checked);
-    doWrite_XX_DigOut_A_8 (checked);
-    doWrite_XX_DigOut_A_9 (checked);
-    doWrite_XX_DigOut_A_10(checked);
-    doWrite_XX_DigOut_A_11(checked);
-    doWrite_XX_DigOut_A_12(checked);
-    doWrite_XX_DigOut_A_13(checked);
-    doWrite_XX_DigOut_A_14(checked);
-    doWrite_XX_DigOut_A_15(checked);
-    doWrite_XX_DigOut_A_16(checked);
-    endWrite();
 }

@@ -138,6 +138,8 @@ VAR_GLOBAL
 	SysImpActiveEnergy_10 AT %ID0.1760:REAL;	(* 0x14 0x1106 Energia Attiva Importata 0 in Wh (Puffer) *)
 	SysActivePower_11 AT %QD0.1764:REAL;	(* 0x14 0x1026 Potenza Attiva 0 in W (Caldaia) *)
 	SysImpActiveEnergy_11 AT %QD0.1768:REAL;	(* 0x14 0x1106 Energia Attiva Importata 0 in Wh (Caldaia) *)
+	AlarmArmed AT %QX0.1992.0:BOOL;
+	AlarmEnabled AT %QX0.1996.0:BOOL;
 	Alarm AT %QX0.2000.0:BOOL;
 	OK_DigIn_A_1 AT %QX0.2004.0:BOOL;
 	OK_DigIn_A_2 AT %QX0.2008.0:BOOL;
@@ -171,6 +173,7 @@ VAR_GLOBAL
 	OK_DigIn_B_14 AT %QX0.2120.0:BOOL;
 	OK_DigIn_B_15 AT %QX0.2124.0:BOOL;
 	OK_DigIn_B_16 AT %QX0.2128.0:BOOL;
+	AlarmRising AT %IX0.2132.0:BOOL;
 	TCP_is_Caldaia_ON AT %QX0.4000.0:BOOL;
 	TCP_AnIn_A_1 AT %QW0.4004:INT;	(* Analog input 1 value MPNC030 module A *)
 	TCP_AnIn_A_2 AT %QW0.4008:INT;	(* Analog input 2 value MPNC030 module A *)
@@ -231,6 +234,7 @@ VAR_GLOBAL
 	TCP_SysImpActiveEnergy_10 AT %QD0.4232:REAL;	(* 0x14 0x1106 Energia Attiva Importata 0 in Wh (Puffer) *)
 	TCP_SysActivePower_11 AT %QD0.4236:REAL;	(* 0x14 0x1026 Potenza Attiva 0 in W (Caldaia) *)
 	TCP_SysImpActiveEnergy_11 AT %QD0.4240:REAL;	(* 0x14 0x1106 Energia Attiva Importata 0 in Wh (Caldaia) *)
+	TCP_Alarm AT %QX0.4248.0:BOOL;
 	RTU0_TYPE_PORT AT %ID0.20000:UDINT;
 	RTU0_BAUDRATE AT %ID0.20004:UDINT;
 	RTU0_STATUS AT %ID0.20008:UDINT;

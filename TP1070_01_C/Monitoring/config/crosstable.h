@@ -868,6 +868,18 @@ int doWrite_SysImpActiveEnergy_11(float value);
 int addWrite_SysImpActiveEnergy_11(float value);
 int getStatus_SysImpActiveEnergy_11(void);
 
+#define ID_AlarmArmed 498
+extern int AlarmArmed;
+int doWrite_AlarmArmed(int value);
+int addWrite_AlarmArmed(int value);
+int getStatus_AlarmArmed(void);
+
+#define ID_AlarmEnabled 499
+extern int AlarmEnabled;
+int doWrite_AlarmEnabled(int value);
+int addWrite_AlarmEnabled(int value);
+int getStatus_AlarmEnabled(void);
+
 #define ID_Alarm 500
 extern int Alarm;
 int doWrite_Alarm(int value);
@@ -1065,6 +1077,12 @@ extern int OK_DigIn_B_16;
 int doWrite_OK_DigIn_B_16(int value);
 int addWrite_OK_DigIn_B_16(int value);
 int getStatus_OK_DigIn_B_16(void);
+
+#define ID_AlarmRising 533
+extern int AlarmRising;
+int doWrite_AlarmRising(int value);
+int addWrite_AlarmRising(int value);
+int getStatus_AlarmRising(void);
 
 #define ID_TCP_is_Caldaia_ON 1000
 extern int TCP_is_Caldaia_ON;
@@ -1425,6 +1443,12 @@ extern float TCP_SysImpActiveEnergy_11;	/* 0x14 0x1106 Energia Attiva Importata 
 int doWrite_TCP_SysImpActiveEnergy_11(float value);
 int addWrite_TCP_SysImpActiveEnergy_11(float value);
 int getStatus_TCP_SysImpActiveEnergy_11(void);
+
+#define ID_TCP_Alarm 1062
+extern int TCP_Alarm;
+int doWrite_TCP_Alarm(int value);
+int addWrite_TCP_Alarm(int value);
+int getStatus_TCP_Alarm(void);
 
 #define ID_RTU0_TYPE_PORT 5000
 extern u_int32_t RTU0_TYPE_PORT;

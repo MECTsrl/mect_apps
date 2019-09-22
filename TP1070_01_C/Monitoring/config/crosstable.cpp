@@ -1001,6 +1001,20 @@ float SysImpActiveEnergy_11 = 0;
 
 
 /*
+ * Variable AlarmArmed
+ */
+
+int AlarmArmed = 0;
+
+
+/*
+ * Variable AlarmEnabled
+ */
+
+int AlarmEnabled = 0;
+
+
+/*
  * Variable Alarm
  */
 
@@ -1229,6 +1243,13 @@ int OK_DigIn_B_15 = 0;
  */
 
 int OK_DigIn_B_16 = 0;
+
+
+/*
+ * Variable AlarmRising
+ */
+
+int AlarmRising = 0;
 
 
 /*
@@ -1649,6 +1670,13 @@ float TCP_SysActivePower_11 = 0;
  */
 
 float TCP_SysImpActiveEnergy_11 = 0;
+
+
+/*
+ * Variable TCP_Alarm
+ */
+
+int TCP_Alarm = 0;
 
 
 /*
@@ -5686,6 +5714,42 @@ getStatus_SysImpActiveEnergy_11(void)
 }
 
 int
+doWrite_AlarmArmed(int value)
+{
+	return doWrite(ID_AlarmArmed, &value);
+}
+
+int
+addWrite_AlarmArmed(int value)
+{
+	return addWrite(ID_AlarmArmed, &value);
+}
+
+int
+getStatus_AlarmArmed(void)
+{
+	return getStatus(ID_AlarmArmed);
+}
+
+int
+doWrite_AlarmEnabled(int value)
+{
+	return doWrite(ID_AlarmEnabled, &value);
+}
+
+int
+addWrite_AlarmEnabled(int value)
+{
+	return addWrite(ID_AlarmEnabled, &value);
+}
+
+int
+getStatus_AlarmEnabled(void)
+{
+	return getStatus(ID_AlarmEnabled);
+}
+
+int
 doWrite_Alarm(int value)
 {
 	return doWrite(ID_Alarm, &value);
@@ -6277,6 +6341,24 @@ int
 getStatus_OK_DigIn_B_16(void)
 {
 	return getStatus(ID_OK_DigIn_B_16);
+}
+
+int
+doWrite_AlarmRising(int value)
+{
+	return doWrite(ID_AlarmRising, &value);
+}
+
+int
+addWrite_AlarmRising(int value)
+{
+	return addWrite(ID_AlarmRising, &value);
+}
+
+int
+getStatus_AlarmRising(void)
+{
+	return getStatus(ID_AlarmRising);
 }
 
 int
@@ -7357,6 +7439,24 @@ int
 getStatus_TCP_SysImpActiveEnergy_11(void)
 {
 	return getStatus(ID_TCP_SysImpActiveEnergy_11);
+}
+
+int
+doWrite_TCP_Alarm(int value)
+{
+	return doWrite(ID_TCP_Alarm, &value);
+}
+
+int
+addWrite_TCP_Alarm(int value)
+{
+	return addWrite(ID_TCP_Alarm, &value);
+}
+
+int
+getStatus_TCP_Alarm(void)
+{
+	return getStatus(ID_TCP_Alarm);
 }
 
 int
@@ -11446,6 +11546,8 @@ update_all(void)
 	retval += readFromDb(ID_SysImpActiveEnergy_10, &SysImpActiveEnergy_10);
 	retval += readFromDb(ID_SysActivePower_11, &SysActivePower_11);
 	retval += readFromDb(ID_SysImpActiveEnergy_11, &SysImpActiveEnergy_11);
+	retval += readFromDb(ID_AlarmArmed, &AlarmArmed);
+	retval += readFromDb(ID_AlarmEnabled, &AlarmEnabled);
 	retval += readFromDb(ID_Alarm, &Alarm);
 	retval += readFromDb(ID_OK_DigIn_A_1, &OK_DigIn_A_1);
 	retval += readFromDb(ID_OK_DigIn_A_2, &OK_DigIn_A_2);
@@ -11479,6 +11581,7 @@ update_all(void)
 	retval += readFromDb(ID_OK_DigIn_B_14, &OK_DigIn_B_14);
 	retval += readFromDb(ID_OK_DigIn_B_15, &OK_DigIn_B_15);
 	retval += readFromDb(ID_OK_DigIn_B_16, &OK_DigIn_B_16);
+	retval += readFromDb(ID_AlarmRising, &AlarmRising);
 	retval += readFromDb(ID_TCP_is_Caldaia_ON, &TCP_is_Caldaia_ON);
 	retval += readFromDb(ID_TCP_AnIn_A_1, &TCP_AnIn_A_1);
 	retval += readFromDb(ID_TCP_AnIn_A_2, &TCP_AnIn_A_2);
@@ -11539,6 +11642,7 @@ update_all(void)
 	retval += readFromDb(ID_TCP_SysImpActiveEnergy_10, &TCP_SysImpActiveEnergy_10);
 	retval += readFromDb(ID_TCP_SysActivePower_11, &TCP_SysActivePower_11);
 	retval += readFromDb(ID_TCP_SysImpActiveEnergy_11, &TCP_SysImpActiveEnergy_11);
+	retval += readFromDb(ID_TCP_Alarm, &TCP_Alarm);
 	retval += readFromDb(ID_RTU0_TYPE_PORT, &RTU0_TYPE_PORT);
 	retval += readFromDb(ID_RTU0_BAUDRATE, &RTU0_BAUDRATE);
 	retval += readFromDb(ID_RTU0_STATUS, &RTU0_STATUS);

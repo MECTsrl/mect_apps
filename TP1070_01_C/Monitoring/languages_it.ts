@@ -1964,6 +1964,7 @@ RTU3</source>
         <location filename="page300.ui" line="5053"/>
         <location filename="page300.ui" line="5227"/>
         <location filename="page300.ui" line="6977"/>
+        <location filename="page300.ui" line="7691"/>
         <source>ATCMbutton widget</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2708,101 +2709,127 @@ RTU3</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page300.ui" line="7030"/>
-        <location filename="page300.ui" line="7033"/>
-        <source>ON/off</source>
+        <location filename="page300.ui" line="6974"/>
+        <location filename="page300.ui" line="6986"/>
+        <source>AlarmArmed</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page300.ui" line="7067"/>
+        <location filename="page300.ui" line="7030"/>
+        <source>arm</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page300.ui" line="7033"/>
+        <source>armed</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page300.ui" line="7688"/>
+        <location filename="page300.ui" line="7700"/>
+        <source>AlarmEnabled</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page300.ui" line="7744"/>
+        <source>enable</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page300.ui" line="7747"/>
+        <source>enabled</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page300.ui" line="7070"/>
         <source>#2 p.1: finestre nord sx + dx</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page300.ui" line="7104"/>
+        <location filename="page300.ui" line="7107"/>
         <source>#5 p.1: porta finestra velo + c.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page300.ui" line="7141"/>
+        <location filename="page300.ui" line="7144"/>
         <source>#8 p.0: ingresso velo + c.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page300.ui" line="7178"/>
+        <location filename="page300.ui" line="7181"/>
         <source>#9 p.0: bagno finestra + _</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page300.ui" line="7215"/>
+        <location filename="page300.ui" line="7218"/>
         <source>#10 p.0: studio velo + c.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page300.ui" line="7252"/>
+        <location filename="page300.ui" line="7255"/>
         <source>#15 p.0: soggiorno sud velo + c.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page300.ui" line="7289"/>
+        <location filename="page300.ui" line="7292"/>
         <source>#13 p.0: corridoio i.r. + _</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page300.ui" line="7326"/>
+        <location filename="page300.ui" line="7329"/>
         <source>#12 p.0: camera arancione v. + c.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page300.ui" line="7363"/>
+        <location filename="page300.ui" line="7366"/>
         <source>#11 p.0: camera bianca v. + c.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page300.ui" line="7400"/>
+        <location filename="page300.ui" line="7403"/>
         <source>#17 p.-1: velo + porta_e_fin.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page300.ui" line="7437"/>
+        <location filename="page300.ui" line="7440"/>
         <source>#18 p.-1: lavanderia + bagno</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page300.ui" line="7474"/>
+        <location filename="page300.ui" line="7477"/>
         <source>#21 p.-1: legnaia i.r. + _</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page300.ui" line="7505"/>
-        <location filename="page300.ui" line="7511"/>
+        <location filename="page300.ui" line="7508"/>
+        <location filename="page300.ui" line="7514"/>
         <source>NODE_01_STATUS</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page300.ui" line="7508"/>
-        <location filename="page300.ui" line="7606"/>
+        <location filename="page300.ui" line="7511"/>
+        <location filename="page300.ui" line="7618"/>
         <source>ATCMcombobox widget</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page300.ui" line="7553"/>
+        <location filename="page300.ui" line="7556"/>
         <source>1;NODE_OK;2;TIMEOUT;3;BLACKLIST;4;DISCONNECTED;5;NODE_DISABLED;0;NO_NODE</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page300.ui" line="7581"/>
+        <location filename="page300.ui" line="7584"/>
         <source>#6 p.0: finestra sogg. velo + c.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page300.ui" line="7603"/>
-        <location filename="page300.ui" line="7609"/>
+        <location filename="page300.ui" line="7615"/>
+        <location filename="page300.ui" line="7621"/>
         <source>Alarm</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page300.ui" line="7651"/>
+        <location filename="page300.ui" line="7663"/>
         <source>0;no alarm;1;ALARM!</source>
         <translation type="unfinished"></translation>
     </message>

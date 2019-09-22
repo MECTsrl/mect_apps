@@ -455,6 +455,13 @@ float TCP_SysImpActiveEnergy_11 = 0;
 
 
 /*
+ * Variable TCP_Alarm
+ */
+
+int TCP_Alarm = 0;
+
+
+/*
  * Variable RTU0_TYPE_PORT
  */
 
@@ -2872,6 +2879,24 @@ int
 getStatus_TCP_SysImpActiveEnergy_11(void)
 {
 	return getStatus(ID_TCP_SysImpActiveEnergy_11);
+}
+
+int
+doWrite_TCP_Alarm(int value)
+{
+	return doWrite(ID_TCP_Alarm, &value);
+}
+
+int
+addWrite_TCP_Alarm(int value)
+{
+	return addWrite(ID_TCP_Alarm, &value);
+}
+
+int
+getStatus_TCP_Alarm(void)
+{
+	return getStatus(ID_TCP_Alarm);
 }
 
 int
@@ -6343,6 +6368,7 @@ update_all(void)
 	retval += readFromDb(ID_TCP_SysImpActiveEnergy_10, &TCP_SysImpActiveEnergy_10);
 	retval += readFromDb(ID_TCP_SysActivePower_11, &TCP_SysActivePower_11);
 	retval += readFromDb(ID_TCP_SysImpActiveEnergy_11, &TCP_SysImpActiveEnergy_11);
+	retval += readFromDb(ID_TCP_Alarm, &TCP_Alarm);
 	retval += readFromDb(ID_RTU0_TYPE_PORT, &RTU0_TYPE_PORT);
 	retval += readFromDb(ID_RTU0_BAUDRATE, &RTU0_BAUDRATE);
 	retval += readFromDb(ID_RTU0_STATUS, &RTU0_STATUS);

@@ -5,12 +5,17 @@
 void setup(void)
 {
     logStart();
+    doWrite_PLC_BUZZER(0x00000000);
 }
 
 /* put here the operation made every 100ms */
 void loop(void)
 {
-    
+    if (TCP_Alarm && ! PLC_buzzerOn) {
+        doWrite_PLC_buzzerOn(1);
+    } else if (! TCP_Alarm && PLC_buzzerOn) {
+        doWrite_PLC_buzzerOn(0);
+    }
 }
 
 // ----------------------------------------------
