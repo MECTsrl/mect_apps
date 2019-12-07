@@ -28,7 +28,8 @@ public:
     
 private slots:
     void changeEvent(QEvent * event);
-    
+    void on_comboBox_currentIndexChanged(const QString &arg1);
+
 private:
     Ui::page100 *ui;
 };

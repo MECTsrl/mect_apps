@@ -4,7 +4,6 @@
 /* put here the initalization */
 void setup(void)
 {
-
     logStart();
 }
 

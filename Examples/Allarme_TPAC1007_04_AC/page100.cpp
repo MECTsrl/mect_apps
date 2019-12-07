@@ -14,6 +14,8 @@
 #include "ui_page100.h"
 #include "crosstable.h"
 
+#include <QDebug>
+
 /**
  * @brief this macro is used to set the PAGE100 style.
  * the syntax is html stylesheet-like
@@ -98,4 +100,29 @@ page100::~page100()
     delete ui;
 }
 
+void setEventDescription(QString name, QString description)
+{
+    event_t * event = EventHash.find(name).value();
 
+    if (event) {
+        strncpy(event->description, description.toLatin1().data(), DESCR_LEN);
+    } else {
+        qDebug("unknown event/alarm '%s'", name.toLatin1().data());
+    }
+}
+
+void page100::on_comboBox_currentIndexChanged(const QString &arg1)
+{
+    if (arg1.startsWith("EN")) {
+        setEventDescription("Alarm_temp", "Temperature alarm - Analog input 1");
+        // other events/alarms
+
+    } else if (arg1.startsWith("IT")) {
+        setEventDescription("Alarm_temp", "Allarme temperature - Ingresso analogico 1");
+        // other events/alarms
+
+    } else {
+        qDebug("unknown language");
+
+    }
+}
