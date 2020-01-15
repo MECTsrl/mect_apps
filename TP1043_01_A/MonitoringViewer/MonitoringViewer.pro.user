@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 2.7.84, 2019-09-22T18:15:32. -->
+<!-- Written by QtCreator 2.7.84, 2020-01-15T18:52:35. -->
 <qtcreator>
  <data>
   <variable>ProjectExplorer.Project.ActiveTarget</variable>
@@ -212,6 +212,7 @@
        <value type="QString">U:/mect_apps/TP1043_01_A/MonitoringViewer/config/trend_piani.csv</value>
        <value type="QString">U:/mect_apps/TP1043_01_A/MonitoringViewer/config/trend1.csv</value>
        <value type="QString">U:/MonitoringViewer/config/trend_piano_sotto.csv</value>
+       <value type="QString">U:/mect_apps/TP1043_01_A/MonitoringViewer/config/trend_ufficio.csv</value>
        <value type="QString">U:/mect_apps/TP1043_01_A/MonitoringViewer/config/trend_termo_sopra.csv</value>
        <value type="QString">U:/mect_apps/TP1043_01_A/MonitoringViewer/config/trend_piano_sotto.csv</value>
        <value type="QString">U:/MonitoringViewer/config/trend_piano_terra.csv</value>
@@ -302,6 +303,7 @@
        <value type="QString">192.168.5.120</value>
        <value type="QString">192.168.5.120</value>
        <value type="QString">192.168.5.120</value>
+       <value type="QString">192.168.5.108</value>
        <value type="QString">192.168.5.103</value>
        <value type="QString">192.168.5.108</value>
        <value type="QString">192.168.5.108</value>
@@ -386,6 +388,7 @@
        <value type="QString">/local/data/customtrend</value>
        <value type="QString">/local/data/customtrend</value>
        <value type="QString">/local/etc/sysconfig</value>
+       <value type="QString">/local/data/customtrend</value>
        <value type="QString">/local/data/customtrend</value>
        <value type="QString">/local/data/customtrend</value>
        <value type="QString">/local/data/customtrend</value>
@@ -554,6 +557,7 @@
        <value type="QString">C:/Qt485/imx28/rootfs</value>
        <value type="QString">C:/Qt485/imx28/rootfs</value>
        <value type="QString">C:/Qt485/imx28/rootfs</value>
+       <value type="QString">C:/Qt485/imx28/rootfs</value>
       </valuelist>
       <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedTimes">
        <value type="QDateTime">2019-04-20T17:09:18</value>
@@ -561,19 +565,20 @@
        <value type="QDateTime">2019-04-20T17:09:22</value>
        <value type="QDateTime">2019-09-22T18:15:15</value>
        <value type="QDateTime">2019-04-20T17:15:42</value>
-       <value type="QDateTime">2019-09-22T18:09:37</value>
+       <value type="QDateTime">2020-01-15T14:26:45</value>
        <value type="QDateTime">2019-09-22T18:15:14</value>
        <value type="QDateTime">2019-04-20T16:42:58</value>
        <value type="QDateTime">2019-09-22T18:15:14</value>
        <value type="QDateTime">2019-04-20T17:15:40</value>
        <value type="QDateTime">2019-09-22T18:10:51</value>
-       <value type="QDateTime">2019-09-22T18:09:38</value>
+       <value type="QDateTime">2020-01-15T14:26:47</value>
        <value type="QDateTime">2019-04-20T17:09:20</value>
        <value type="QDateTime">2019-09-22T18:10:49</value>
        <value type="QDateTime">2019-09-22T18:10:49</value>
        <value type="QDateTime">2019-04-20T17:16:58</value>
+       <value type="QDateTime">2020-01-15T14:26:47</value>
        <value type="QDateTime">2019-09-22T18:15:16</value>
-       <value type="QDateTime">2019-09-22T18:09:37</value>
+       <value type="QDateTime">2020-01-15T14:26:45</value>
        <value type="QDateTime">2019-04-20T17:15:42</value>
        <value type="QDateTime">2019-04-20T17:09:20</value>
        <value type="QDateTime">2019-04-20T17:16:59</value>
@@ -591,7 +596,7 @@
        <value type="QDateTime">2019-04-20T17:16:59</value>
        <value type="QDateTime">2019-09-22T18:10:50</value>
        <value type="QDateTime">2019-04-20T17:15:43</value>
-       <value type="QDateTime">2019-09-22T18:09:36</value>
+       <value type="QDateTime">2020-01-15T14:26:44</value>
        <value type="QDateTime">2019-04-20T17:15:43</value>
        <value type="QDateTime">2019-04-20T17:15:45</value>
        <value type="QDateTime">2019-04-20T17:09:18</value>
@@ -605,8 +610,8 @@
        <value type="QDateTime">2019-09-22T18:15:16</value>
        <value type="QDateTime">2019-09-22T18:15:18</value>
        <value type="QDateTime">2019-09-22T18:10:49</value>
-       <value type="QDateTime">2019-09-22T18:09:38</value>
-       <value type="QDateTime">2019-09-22T18:09:37</value>
+       <value type="QDateTime">2020-01-15T14:26:46</value>
+       <value type="QDateTime">2020-01-15T14:26:46</value>
        <value type="QDateTime">2019-09-22T18:15:15</value>
        <value type="QDateTime">2019-04-20T17:16:57</value>
        <value type="QDateTime">2019-04-20T17:16:56</value>
@@ -614,19 +619,19 @@
        <value type="QDateTime">2019-09-22T18:10:50</value>
        <value type="QDateTime">2019-04-20T17:15:41</value>
        <value type="QDateTime">2019-04-20T17:09:20</value>
-       <value type="QDateTime">2019-09-22T18:09:37</value>
-       <value type="QDateTime">2019-09-22T18:09:36</value>
-       <value type="QDateTime">2019-09-22T18:09:36</value>
+       <value type="QDateTime">2020-01-15T14:26:46</value>
+       <value type="QDateTime">2020-01-15T14:26:45</value>
+       <value type="QDateTime">2020-01-15T14:26:44</value>
        <value type="QDateTime">2019-04-20T17:15:42</value>
        <value type="QDateTime">2019-09-22T18:15:13</value>
        <value type="QDateTime">2019-04-20T17:16:58</value>
        <value type="QDateTime">2019-09-22T18:10:51</value>
-       <value type="QDateTime">2019-09-22T18:09:35</value>
-       <value type="QDateTime">2019-09-22T18:09:38</value>
+       <value type="QDateTime">2020-01-15T14:26:44</value>
+       <value type="QDateTime">2020-01-15T14:26:47</value>
        <value type="QDateTime">2019-09-22T18:10:48</value>
        <value type="QDateTime">2019-09-22T18:10:48</value>
        <value type="QDateTime">2019-04-20T17:17:01</value>
-       <value type="QDateTime">2019-09-22T18:09:35</value>
+       <value type="QDateTime">2020-01-15T14:26:44</value>
        <value type="QDateTime">2019-04-20T17:16:58</value>
        <value type="QDateTime">2019-04-20T17:16:58</value>
        <value type="QDateTime">2019-09-22T18:15:13</value>
@@ -637,10 +642,10 @@
        <value type="QDateTime">2019-09-22T18:15:15</value>
        <value type="QDateTime">2019-04-20T17:16:57</value>
        <value type="QDateTime">2019-09-22T18:10:49</value>
-       <value type="QDateTime">2019-09-22T18:09:36</value>
+       <value type="QDateTime">2020-01-15T14:26:45</value>
        <value type="QDateTime">2019-04-20T17:09:18</value>
        <value type="QDateTime">2019-04-20T17:09:20</value>
-       <value type="QDateTime">2019-09-22T18:09:40</value>
+       <value type="QDateTime">2020-01-15T14:26:50</value>
        <value type="QDateTime">2019-09-22T18:10:52</value>
        <value type="QDateTime">2019-04-20T17:15:41</value>
        <value type="QDateTime">2019-04-20T17:15:40</value>

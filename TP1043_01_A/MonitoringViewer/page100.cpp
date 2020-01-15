@@ -44,12 +44,17 @@ page100::page100(QWidget *parent) :
 
     // datetime
     ui->label_datetime->setText(QDateTime::currentDateTime().toString("YYYY-MM-DD hh:mm:ss"));
+}
 
+void page100::reload()
+{
     // trend
     ui->comboBox_trend->clear();
     trendList = getTrendList();
     if (trendList.count()) {
+        ui->comboBox_trend->blockSignals(true);
         ui->comboBox_trend->addItems(trendList);
+        ui->comboBox_trend->blockSignals(false);
         // eventuale recupero ultima selezione dalle ritentive
         if (SelezioneTrend < 0 || SelezioneTrend >= ui->comboBox_trend->count()) {
             doWrite_SelezioneTrend(0);
@@ -57,10 +62,6 @@ page100::page100(QWidget *parent) :
             ui->comboBox_trend->setCurrentIndex(SelezioneTrend);
         }
     }
-}
-
-void page100::reload()
-{
 }
 
 void page100::updateData()

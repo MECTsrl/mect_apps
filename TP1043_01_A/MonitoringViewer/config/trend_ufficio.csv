@@ -1,0 +1,5 @@
+L
+1;TCP_AnIn_A_1      ;000000;-12.0; 36.0;Esterna [°C]
+1;TCP_AnIn_A_2      ;AA55FF;-12.0; 36.0;Nord [°C]
+0;TCP_AnIn_A_3      ;7F7FFF;-12.0; 36.0;Sud [°C]
+0;TCP_DigIn_8       ;7F7FFF;  0.0; 12.0;P.SOPRA [ON/off]

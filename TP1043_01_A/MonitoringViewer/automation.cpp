@@ -148,7 +148,7 @@ bool setupVars(trendVariable vars[], const QString trendName, bool isHorizontal)
                     valueFontSize = "120pt";    // 1 riga
                 } else if (nVars <= 2) {
                     nameFontSize = "28pt";      // 2 colonne
-                    valueFontSize = "120pt";    // 1 riga
+                    valueFontSize = "110pt";    // 1 riga
                 } else if (nVars <= 4) {
                     nameFontSize = "28pt";      // 2 colonne
                     valueFontSize = "60pt";     // 2 righe

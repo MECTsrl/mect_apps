@@ -49,7 +49,9 @@ page200::page200(QWidget *parent) :
     ui->comboBox_trend->clear();
     trendList = getTrendList();
     if (trendList.count()) {
+        ui->comboBox_trend->blockSignals(true);
         ui->comboBox_trend->addItems(trendList);
+        ui->comboBox_trend->blockSignals(false);
         // eventuale recupero ultima selezione dalle ritentive
         if (SelezioneTrend < 0 || SelezioneTrend >= ui->comboBox_trend->count()) {
             doWrite_SelezioneTrend(0);
