@@ -367,6 +367,12 @@ HOME</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="page100.ui" line="5349"/>
+        <location filename="page100.ui" line="5361"/>
+        <source>XX_DigOut_5</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="page100.ui" line="6916"/>
         <source>      ritorno </source>
         <translation type="unfinished"></translation>
