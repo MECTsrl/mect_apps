@@ -43,7 +43,7 @@ page100::page100(QWidget *parent) :
     initVars(vars, names, values);
 
     // datetime
-    ui->label_datetime->setText(QDateTime::currentDateTime().toString("YYYY-MM-DD hh:mm:ss"));
+    ui->label_datetime->setText(QDateTime::currentDateTime().toString("hh:mm:ss")); // "YYYY-MM-DD hh:mm:ss"
 }
 
 void page100::reload()
@@ -74,8 +74,7 @@ void page100::updateData()
     page::updateData();
     
     // datetime
-    ui->label_datetime->setText(QDateTime::currentDateTime().toString("yyyy-MM-dd hh:mm:ss"));
-
+    ui->label_datetime->setText(QDateTime::currentDateTime().toString("hh:mm:ss")); // "YYYY-MM-DD hh:mm:ss"
     // vars
     updateVars(vars);
 }

@@ -128,7 +128,7 @@ background-color: rgb(0, 0,0);
 color: rgb(170, 255, 255);</string>
        </property>
        <property name="text">
-        <string>YYYY-MM-DD HH:MM:SS</string>
+        <string>hh:mm:ss</string>
        </property>
        <property name="alignment">
         <set>Qt::AlignCenter</set>
@@ -136,7 +136,7 @@ color: rgb(170, 255, 255);</string>
       </widget>
      </item>
      <item>
-      <widget class="ATCMled" name="atcmLed_caldaia">
+      <widget class="ATCMled" name="atcmLed_caldaia_5">
        <property name="sizePolicy">
         <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
          <horstretch>0</horstretch>
@@ -150,7 +150,7 @@ color: rgb(170, 255, 255);</string>
         </size>
        </property>
        <property name="toolTip">
-        <string>TCP_is_Caldaia_ON</string>
+        <string>TCP_Alarm</string>
        </property>
        <property name="whatsThis">
         <string>ATCMled widget</string>
@@ -162,7 +162,7 @@ color: rgb(170, 255, 255);</string>
         </font>
        </property>
        <property name="variable">
-        <string>TCP_is_Caldaia_ON</string>
+        <string>TCP_Alarm</string>
        </property>
        <property name="refresh">
         <number>200</number>
@@ -174,12 +174,12 @@ color: rgb(170, 255, 255);</string>
         <string/>
        </property>
        <property name="onIcon">
-        <iconset resource="resources.qrc">
-         <normaloff>:/icons/icons/LedOn_chiaro.png</normaloff>:/icons/icons/LedOn_chiaro.png</iconset>
+        <iconset resource="systemicons.qrc">
+         <normaloff>:/systemicons/Alert.png</normaloff>:/systemicons/Alert.png</iconset>
        </property>
        <property name="offIcon">
-        <iconset resource="resources.qrc">
-         <normaloff>:/icons/icons/LedOff_scuro.png</normaloff>:/icons/icons/LedOff_scuro.png</iconset>
+        <iconset resource="systemicons.qrc">
+         <normaloff>:/systemicons/Apply.png</normaloff>:/systemicons/Apply.png</iconset>
        </property>
       </widget>
      </item>
@@ -211,6 +211,150 @@ color: rgb(170, 255, 255);</string>
        </property>
        <property name="variable">
         <string>TCP_DigIn_5</string>
+       </property>
+       <property name="refresh">
+        <number>200</number>
+       </property>
+       <property name="viewStatus">
+        <bool>false</bool>
+       </property>
+       <property name="visibilityVar">
+        <string/>
+       </property>
+       <property name="onIcon">
+        <iconset resource="systemicons.qrc">
+         <normaloff>:/systemicons/Add.png</normaloff>:/systemicons/Add.png</iconset>
+       </property>
+       <property name="offIcon">
+        <iconset resource="systemicons.qrc">
+         <normaloff>:/systemicons/Remove.png</normaloff>:/systemicons/Remove.png</iconset>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="ATCMled" name="atcmLed_caldaia_2">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>24</width>
+         <height>24</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string>TCP_DigOut_6</string>
+       </property>
+       <property name="whatsThis">
+        <string>ATCMled widget</string>
+       </property>
+       <property name="font">
+        <font>
+         <family>DejaVu Sans</family>
+         <pointsize>8</pointsize>
+        </font>
+       </property>
+       <property name="variable">
+        <string>TCP_DigOut_6</string>
+       </property>
+       <property name="refresh">
+        <number>200</number>
+       </property>
+       <property name="viewStatus">
+        <bool>false</bool>
+       </property>
+       <property name="visibilityVar">
+        <string/>
+       </property>
+       <property name="onIcon">
+        <iconset resource="resources.qrc">
+         <normaloff>:/icons/icons/LedOn_chiaro.png</normaloff>:/icons/icons/LedOn_chiaro.png</iconset>
+       </property>
+       <property name="offIcon">
+        <iconset resource="resources.qrc">
+         <normaloff>:/icons/icons/LedOff_scuro.png</normaloff>:/icons/icons/LedOff_scuro.png</iconset>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="ATCMled" name="atcmLed_caldaia_3">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>24</width>
+         <height>24</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string>TCP_DigOut_7</string>
+       </property>
+       <property name="whatsThis">
+        <string>ATCMled widget</string>
+       </property>
+       <property name="font">
+        <font>
+         <family>DejaVu Sans</family>
+         <pointsize>8</pointsize>
+        </font>
+       </property>
+       <property name="variable">
+        <string>TCP_DigOut_7</string>
+       </property>
+       <property name="refresh">
+        <number>200</number>
+       </property>
+       <property name="viewStatus">
+        <bool>false</bool>
+       </property>
+       <property name="visibilityVar">
+        <string/>
+       </property>
+       <property name="onIcon">
+        <iconset resource="resources.qrc">
+         <normaloff>:/icons/icons/LedOn_chiaro.png</normaloff>:/icons/icons/LedOn_chiaro.png</iconset>
+       </property>
+       <property name="offIcon">
+        <iconset resource="resources.qrc">
+         <normaloff>:/icons/icons/LedOff_scuro.png</normaloff>:/icons/icons/LedOff_scuro.png</iconset>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="ATCMled" name="atcmLed_caldaia_4">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>24</width>
+         <height>24</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string>TCP_DigOut_8</string>
+       </property>
+       <property name="whatsThis">
+        <string>ATCMled widget</string>
+       </property>
+       <property name="font">
+        <font>
+         <family>DejaVu Sans</family>
+         <pointsize>8</pointsize>
+        </font>
+       </property>
+       <property name="variable">
+        <string>TCP_DigOut_8</string>
        </property>
        <property name="refresh">
         <number>200</number>
@@ -923,6 +1067,7 @@ color: rgb(170, 255, 255);</string>
   </customwidget>
  </customwidgets>
  <resources>
+  <include location="systemicons.qrc"/>
   <include location="resources.qrc"/>
  </resources>
  <connections>
