@@ -21,4 +21,23 @@ END_VAR
 		XX_DigOut_5 := false;
 	end_if;
 
+	if HeatingEnable then
+
+		(* piano sopra: termostato "sopra sud" *)
+		RegolazioneOnOff(HeatingSetPoint_A, HeatingDelta, XX_AnIn_A_3, XX_DigOut_8);
+
+		(* piano terra: termostato "corridoio" *)
+		RegolazioneOnOff(HeatingSetPoint_B, HeatingDelta, XX_AnIn_B_3, XX_DigOut_7);
+
+		(* piano sotto: termostato "scala" *)
+		RegolazioneOnOff(HeatingSetPoint_C, HeatingDelta, XX_AnIn_C_3, XX_DigOut_6);
+
+	else
+
+		XX_DigOut_8 := false;
+		XX_DigOut_7 := false;
+		XX_DigOut_6 := false;
+
+	end_if;
+
 END_PROGRAM

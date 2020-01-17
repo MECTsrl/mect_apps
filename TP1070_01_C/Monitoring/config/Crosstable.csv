@@ -1,17 +1,17 @@
+1;P;HeatingEnable                  ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;1   ;5   ;[RW]
+1;P;HeatingSetPoint_A              ;INT      ;1   ;PLC       ;               ;    ;    ;      ;1   ;5   ;[RW]piano sopra
+1;P;HeatingSetPoint_B              ;INT      ;1   ;PLC       ;               ;    ;    ;      ;1   ;5   ;[RW]piano terra
+1;P;HeatingSetPoint_C              ;INT      ;1   ;PLC       ;               ;    ;    ;      ;1   ;5   ;[RW]piano sotto
+1;P;HeatingDelta                   ;INT      ;1   ;PLC       ;               ;    ;    ;      ;1   ;5   ;[RW]
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
+1;P;CoolingEnable                  ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;11  ;4   ;[RW]
+1;P;CoolingSetPoint_A              ;INT      ;1   ;PLC       ;               ;    ;    ;      ;11  ;4   ;[RW]piano sopra
+1;P;CoolingSetPoint_B              ;INT      ;1   ;PLC       ;               ;    ;    ;      ;11  ;4   ;[RW]piano terra
+1;P;CoolingSetPoint_C              ;INT      ;1   ;PLC       ;               ;    ;    ;      ;11  ;4   ;[RW]piano sotto
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;

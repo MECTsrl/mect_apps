@@ -38,4 +38,5 @@ opt=ncc:0
 [Target.HW119]
 ConnectionTimeout=100
 [Classes.Functions]
+file=RegolazioneOnOff.st
 

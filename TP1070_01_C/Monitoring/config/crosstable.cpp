@@ -28,6 +28,69 @@
 #include "global_var.h"
 
 /*
+ * Variable HeatingEnable
+ */
+
+int HeatingEnable = 0;
+
+
+/*
+ * Variable HeatingSetPoint_A	[ piano sopra ]
+ */
+
+int16_t HeatingSetPoint_A = 0;
+
+
+/*
+ * Variable HeatingSetPoint_B	[ piano terra ]
+ */
+
+int16_t HeatingSetPoint_B = 0;
+
+
+/*
+ * Variable HeatingSetPoint_C	[ piano sotto ]
+ */
+
+int16_t HeatingSetPoint_C = 0;
+
+
+/*
+ * Variable HeatingDelta
+ */
+
+int16_t HeatingDelta = 0;
+
+
+/*
+ * Variable CoolingEnable
+ */
+
+int CoolingEnable = 0;
+
+
+/*
+ * Variable CoolingSetPoint_A	[ piano sopra ]
+ */
+
+int16_t CoolingSetPoint_A = 0;
+
+
+/*
+ * Variable CoolingSetPoint_B	[ piano terra ]
+ */
+
+int16_t CoolingSetPoint_B = 0;
+
+
+/*
+ * Variable CoolingSetPoint_C	[ piano sotto ]
+ */
+
+int16_t CoolingSetPoint_C = 0;
+
+
+/*
  * Variable openvpn_restart_times
  */
 
@@ -3210,6 +3273,168 @@ u_int8_t PLC_ALARM_VOLUME = 0;
  */
 
 u_int32_t PLC_BUZZER = 0;
+
+int
+doWrite_HeatingEnable(int value)
+{
+	return doWrite(ID_HeatingEnable, &value);
+}
+
+int
+addWrite_HeatingEnable(int value)
+{
+	return addWrite(ID_HeatingEnable, &value);
+}
+
+int
+getStatus_HeatingEnable(void)
+{
+	return getStatus(ID_HeatingEnable);
+}
+
+int
+doWrite_HeatingSetPoint_A(int16_t value)
+{
+	return doWrite(ID_HeatingSetPoint_A, &value);
+}
+
+int
+addWrite_HeatingSetPoint_A(int16_t value)
+{
+	return addWrite(ID_HeatingSetPoint_A, &value);
+}
+
+int
+getStatus_HeatingSetPoint_A(void)
+{
+	return getStatus(ID_HeatingSetPoint_A);
+}
+
+int
+doWrite_HeatingSetPoint_B(int16_t value)
+{
+	return doWrite(ID_HeatingSetPoint_B, &value);
+}
+
+int
+addWrite_HeatingSetPoint_B(int16_t value)
+{
+	return addWrite(ID_HeatingSetPoint_B, &value);
+}
+
+int
+getStatus_HeatingSetPoint_B(void)
+{
+	return getStatus(ID_HeatingSetPoint_B);
+}
+
+int
+doWrite_HeatingSetPoint_C(int16_t value)
+{
+	return doWrite(ID_HeatingSetPoint_C, &value);
+}
+
+int
+addWrite_HeatingSetPoint_C(int16_t value)
+{
+	return addWrite(ID_HeatingSetPoint_C, &value);
+}
+
+int
+getStatus_HeatingSetPoint_C(void)
+{
+	return getStatus(ID_HeatingSetPoint_C);
+}
+
+int
+doWrite_HeatingDelta(int16_t value)
+{
+	return doWrite(ID_HeatingDelta, &value);
+}
+
+int
+addWrite_HeatingDelta(int16_t value)
+{
+	return addWrite(ID_HeatingDelta, &value);
+}
+
+int
+getStatus_HeatingDelta(void)
+{
+	return getStatus(ID_HeatingDelta);
+}
+
+int
+doWrite_CoolingEnable(int value)
+{
+	return doWrite(ID_CoolingEnable, &value);
+}
+
+int
+addWrite_CoolingEnable(int value)
+{
+	return addWrite(ID_CoolingEnable, &value);
+}
+
+int
+getStatus_CoolingEnable(void)
+{
+	return getStatus(ID_CoolingEnable);
+}
+
+int
+doWrite_CoolingSetPoint_A(int16_t value)
+{
+	return doWrite(ID_CoolingSetPoint_A, &value);
+}
+
+int
+addWrite_CoolingSetPoint_A(int16_t value)
+{
+	return addWrite(ID_CoolingSetPoint_A, &value);
+}
+
+int
+getStatus_CoolingSetPoint_A(void)
+{
+	return getStatus(ID_CoolingSetPoint_A);
+}
+
+int
+doWrite_CoolingSetPoint_B(int16_t value)
+{
+	return doWrite(ID_CoolingSetPoint_B, &value);
+}
+
+int
+addWrite_CoolingSetPoint_B(int16_t value)
+{
+	return addWrite(ID_CoolingSetPoint_B, &value);
+}
+
+int
+getStatus_CoolingSetPoint_B(void)
+{
+	return getStatus(ID_CoolingSetPoint_B);
+}
+
+int
+doWrite_CoolingSetPoint_C(int16_t value)
+{
+	return doWrite(ID_CoolingSetPoint_C, &value);
+}
+
+int
+addWrite_CoolingSetPoint_C(int16_t value)
+{
+	return addWrite(ID_CoolingSetPoint_C, &value);
+}
+
+int
+getStatus_CoolingSetPoint_C(void)
+{
+	return getStatus(ID_CoolingSetPoint_C);
+}
 
 int
 doWrite_openvpn_restart_times(u_int32_t value)
@@ -11407,6 +11632,15 @@ update_all(void)
 {
 	int retval = 0;
 
+	retval += readFromDb(ID_HeatingEnable, &HeatingEnable);
+	retval += readFromDb(ID_HeatingSetPoint_A, &HeatingSetPoint_A);
+	retval += readFromDb(ID_HeatingSetPoint_B, &HeatingSetPoint_B);
+	retval += readFromDb(ID_HeatingSetPoint_C, &HeatingSetPoint_C);
+	retval += readFromDb(ID_HeatingDelta, &HeatingDelta);
+	retval += readFromDb(ID_CoolingEnable, &CoolingEnable);
+	retval += readFromDb(ID_CoolingSetPoint_A, &CoolingSetPoint_A);
+	retval += readFromDb(ID_CoolingSetPoint_B, &CoolingSetPoint_B);
+	retval += readFromDb(ID_CoolingSetPoint_C, &CoolingSetPoint_C);
 	retval += readFromDb(ID_openvpn_restart_times, &openvpn_restart_times);
 	retval += readFromDb(ID_is_PPP0_ON, &is_PPP0_ON);
 	retval += readFromDb(ID_is_TUN0_ON, &is_TUN0_ON);

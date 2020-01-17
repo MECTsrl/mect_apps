@@ -34,6 +34,60 @@ extern "C" {
 #include "cross_table_utility.h"
 
 
+#define ID_HeatingEnable 1
+extern int HeatingEnable;
+int doWrite_HeatingEnable(int value);
+int addWrite_HeatingEnable(int value);
+int getStatus_HeatingEnable(void);
+
+#define ID_HeatingSetPoint_A 2
+extern int16_t HeatingSetPoint_A;	/* piano sopra */
+int doWrite_HeatingSetPoint_A(int16_t value);
+int addWrite_HeatingSetPoint_A(int16_t value);
+int getStatus_HeatingSetPoint_A(void);
+
+#define ID_HeatingSetPoint_B 3
+extern int16_t HeatingSetPoint_B;	/* piano terra */
+int doWrite_HeatingSetPoint_B(int16_t value);
+int addWrite_HeatingSetPoint_B(int16_t value);
+int getStatus_HeatingSetPoint_B(void);
+
+#define ID_HeatingSetPoint_C 4
+extern int16_t HeatingSetPoint_C;	/* piano sotto */
+int doWrite_HeatingSetPoint_C(int16_t value);
+int addWrite_HeatingSetPoint_C(int16_t value);
+int getStatus_HeatingSetPoint_C(void);
+
+#define ID_HeatingDelta 5
+extern int16_t HeatingDelta;
+int doWrite_HeatingDelta(int16_t value);
+int addWrite_HeatingDelta(int16_t value);
+int getStatus_HeatingDelta(void);
+
+#define ID_CoolingEnable 11
+extern int CoolingEnable;
+int doWrite_CoolingEnable(int value);
+int addWrite_CoolingEnable(int value);
+int getStatus_CoolingEnable(void);
+
+#define ID_CoolingSetPoint_A 12
+extern int16_t CoolingSetPoint_A;	/* piano sopra */
+int doWrite_CoolingSetPoint_A(int16_t value);
+int addWrite_CoolingSetPoint_A(int16_t value);
+int getStatus_CoolingSetPoint_A(void);
+
+#define ID_CoolingSetPoint_B 13
+extern int16_t CoolingSetPoint_B;	/* piano terra */
+int doWrite_CoolingSetPoint_B(int16_t value);
+int addWrite_CoolingSetPoint_B(int16_t value);
+int getStatus_CoolingSetPoint_B(void);
+
+#define ID_CoolingSetPoint_C 14
+extern int16_t CoolingSetPoint_C;	/* piano sotto */
+int doWrite_CoolingSetPoint_C(int16_t value);
+int addWrite_CoolingSetPoint_C(int16_t value);
+int getStatus_CoolingSetPoint_C(void);
+
 #define ID_openvpn_restart_times 192
 extern u_int32_t openvpn_restart_times;
 int doWrite_openvpn_restart_times(u_int32_t value);

@@ -1,4 +1,13 @@
 VAR_GLOBAL
+	HeatingEnable AT %QX0.4.0:BOOL;
+	HeatingSetPoint_A AT %QW0.8:INT;	(* piano sopra *)
+	HeatingSetPoint_B AT %QW0.12:INT;	(* piano terra *)
+	HeatingSetPoint_C AT %QW0.16:INT;	(* piano sotto *)
+	HeatingDelta AT %QW0.20:INT;
+	CoolingEnable AT %QX0.44.0:BOOL;
+	CoolingSetPoint_A AT %QW0.48:INT;	(* piano sopra *)
+	CoolingSetPoint_B AT %QW0.52:INT;	(* piano terra *)
+	CoolingSetPoint_C AT %QW0.56:INT;	(* piano sotto *)
 	openvpn_restart_times AT %QD0.768:UDINT;
 	is_PPP0_ON AT %QX0.772.0:BOOL;	(* isUP_ppp0() *)
 	is_TUN0_ON AT %QX0.776.0:BOOL;	(* isUP_tun0() *)
