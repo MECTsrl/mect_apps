@@ -1059,7 +1059,7 @@
 3;P;TCP_SysActivePower_11          ;REALCDAB ;0   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;71    ;1032;29  ;[RW]0x14 0x1026 Potenza Attiva 0 in W (Caldaia)
 3;P;TCP_SysImpActiveEnergy_11      ;REALCDAB ;1   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;73    ;1032;29  ;[RW]0x14 0x1106 Energia Attiva Importata 0 in Wh (Caldaia)
 ;;;;;;;;;;;;
-1;V;TCP_Alarm                      ;WORD_BIT ;1   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;74    ;1062;1   ;[RW]
+3;V;TCP_Alarm                      ;WORD_BIT ;1   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;74    ;1062;1   ;[RW]
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;

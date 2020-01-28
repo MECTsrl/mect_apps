@@ -26,7 +26,6 @@ bool isUP_tun0(void);
 void do_config_MPNC006();
 bool test_config_MPNC006();
 
-/* put here the initalization */
 void setup(void)
 {
     doWrite_PLC_timeWin(300);

@@ -25,16 +25,6 @@ page300::page300(QWidget *parent) :
     SET_PAGE300_STYLE();
     translateFontSize(this);
 
-    ui->atcmLed_DigIn_B_07->setVisible(false);
-    ui->atcmLed_DigIn_B_11->setVisible(false);
-    ui->atcmLed_DigIn_B_13->setVisible(false);
-    ui->atcmLed_DigIn_B_16->setVisible(false);
-
-    ui->atcmLed_DigIn_OK_B_07->setVisible(false);
-    ui->atcmLed_DigIn_OK_B_11->setVisible(false);
-    ui->atcmLed_DigIn_OK_B_13->setVisible(false);
-    ui->atcmLed_DigIn_OK_B_16->setVisible(false);
-
     ui->atcmButton_XX_01->setEnabled(false);
     ui->atcmButton_XX_02->setEnabled(false);
     ui->atcmButton_XX_03->setEnabled(false);
