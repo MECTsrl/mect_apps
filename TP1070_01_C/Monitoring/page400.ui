@@ -91,9 +91,9 @@ background-color: rgb(0, 0, 0);
    </property>
    <property name="bgColor">
     <color>
-     <red>0</red>
-     <green>0</green>
-     <blue>64</blue>
+     <red>32</red>
+     <green>32</green>
+     <blue>32</blue>
     </color>
    </property>
    <property name="borderColor">
@@ -106,7 +106,7 @@ background-color: rgb(0, 0, 0);
    <property name="fontColor">
     <color>
      <red>0</red>
-     <green>255</green>
+     <green>192</green>
      <blue>255</blue>
     </color>
    </property>
@@ -777,7 +777,7 @@ background-color: rgb(0, 0, 0);
     <color>
      <red>0</red>
      <green>0</green>
-     <blue>0</blue>
+     <blue>64</blue>
     </color>
    </property>
    <property name="borderColor">
@@ -789,9 +789,9 @@ background-color: rgb(0, 0, 0);
    </property>
    <property name="fontColor">
     <color>
-     <red>0</red>
-     <green>128</green>
-     <blue>255</blue>
+     <red>170</red>
+     <green>170</green>
+     <blue>127</blue>
     </color>
    </property>
    <property name="borderWidth">
@@ -1362,7 +1362,7 @@ background-color: rgb(192, 0, 0);</string>
     <color>
      <red>0</red>
      <green>0</green>
-     <blue>64</blue>
+     <blue>0</blue>
     </color>
    </property>
    <property name="borderColor">
@@ -1375,7 +1375,7 @@ background-color: rgb(192, 0, 0);</string>
    <property name="fontColor">
     <color>
      <red>0</red>
-     <green>255</green>
+     <green>128</green>
      <blue>255</blue>
     </color>
    </property>
@@ -1673,8 +1673,8 @@ background-color: rgb(192, 0, 0);</string>
    </property>
    <property name="bgColor">
     <color>
-     <red>0</red>
-     <green>0</green>
+     <red>64</red>
+     <green>64</green>
      <blue>64</blue>
     </color>
    </property>
@@ -2121,9 +2121,9 @@ background-color: rgb(192, 0, 0);</string>
    </property>
    <property name="bgColor">
     <color>
-     <red>0</red>
-     <green>0</green>
-     <blue>64</blue>
+     <red>32</red>
+     <green>32</green>
+     <blue>32</blue>
     </color>
    </property>
    <property name="borderColor">
@@ -2136,7 +2136,7 @@ background-color: rgb(192, 0, 0);</string>
    <property name="fontColor">
     <color>
      <red>0</red>
-     <green>255</green>
+     <green>192</green>
      <blue>255</blue>
     </color>
    </property>
@@ -2216,7 +2216,7 @@ background-color: rgb(192, 0, 0);</string>
     <color>
      <red>0</red>
      <green>0</green>
-     <blue>64</blue>
+     <blue>0</blue>
     </color>
    </property>
    <property name="borderColor">
@@ -2229,7 +2229,7 @@ background-color: rgb(192, 0, 0);</string>
    <property name="fontColor">
     <color>
      <red>0</red>
-     <green>255</green>
+     <green>128</green>
      <blue>255</blue>
     </color>
    </property>
@@ -2307,8 +2307,8 @@ background-color: rgb(192, 0, 0);</string>
    </property>
    <property name="bgColor">
     <color>
-     <red>0</red>
-     <green>0</green>
+     <red>64</red>
+     <green>64</green>
      <blue>64</blue>
     </color>
    </property>
@@ -2535,9 +2535,9 @@ background-color: rgb(192, 0, 0);</string>
    </property>
    <property name="fontColor">
     <color>
-     <red>0</red>
-     <green>192</green>
-     <blue>255</blue>
+     <red>170</red>
+     <green>170</green>
+     <blue>127</blue>
     </color>
    </property>
    <property name="borderWidth">
@@ -2593,7 +2593,7 @@ background-color: rgb(192, 0, 0);</string>
     <color>
      <red>0</red>
      <green>0</green>
-     <blue>0</blue>
+     <blue>64</blue>
     </color>
    </property>
    <property name="borderColor">
@@ -2605,15 +2605,15 @@ background-color: rgb(192, 0, 0);</string>
    </property>
    <property name="fontColor">
     <color>
-     <red>255</red>
-     <green>255</green>
-     <blue>255</blue>
+     <red>170</red>
+     <green>170</green>
+     <blue>127</blue>
     </color>
    </property>
    <property name="bgPressColor">
     <color>
-     <red>255</red>
-     <green>255</green>
+     <red>85</red>
+     <green>170</green>
      <blue>0</blue>
     </color>
    </property>
@@ -2643,7 +2643,7 @@ background-color: rgb(192, 0, 0);</string>
   <widget class="ATCMled" name="atcmLed_DigIn_TA_Puffer">
    <property name="geometry">
     <rect>
-     <x>400</x>
+     <x>404</x>
      <y>430</y>
      <width>24</width>
      <height>32</height>
@@ -2755,9 +2755,9 @@ background-color: rgb(192, 0, 0);</string>
    </property>
    <property name="fontColor">
     <color>
-     <red>0</red>
-     <green>192</green>
-     <blue>255</blue>
+     <red>170</red>
+     <green>170</green>
+     <blue>127</blue>
     </color>
    </property>
    <property name="borderWidth">
