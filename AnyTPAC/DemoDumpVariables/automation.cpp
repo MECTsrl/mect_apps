@@ -51,7 +51,7 @@ bool dumpVariables(int nStart, int nVariables, QString &szFile2Dump)
     }
     else  {
         // Clear Buffer
-        memset (&variablesBuffer[0], 0x00, sizeof(u_int32_t) * DB_SIZE_ELEM);
+        memset (&variablesBuffer[0], 0x00, sizeof(variablesBuffer));
         // Lock Access to Cross Table storage area
         pthread_mutex_lock(&datasync_recv_mutex);
         {
@@ -102,7 +102,7 @@ bool restoreVariables(int nStart, int nVariables, QString &szFile2Restore)
             if (out != NULL)
             {
                 // Clear Buffer
-                memset (&variablesBuffer[0], 0x00, sizeof(u_int32_t) * DB_SIZE_ELEM);
+                memset (&variablesBuffer[0], 0x00, sizeof(variablesBuffer));
                 // Read requested elements
                 int nItems = fread(&variablesBuffer[0], sizeof(u_int32_t), nVariables, out);
                 fclose(out);

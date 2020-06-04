@@ -26,4 +26,4 @@ The value of [nStart] must be between 1 and  4999 (Last User Cross Table Variabl
 The value of [nStart] + [nVariables] must not exceed 4999 (Last User Cross Table Variable)
 
 In this example [nStart] is 2001, the row of variable [HMI_1_Start_H_1], and [nVariables] is equal to 40, so 40 adjacent values are saved, from 2001 to 2040
-The crosstable row of a variable can be found in file "crosstable.h" that is generated from CrossTable at compile time, as a [#define] C directive with the same name of the variable preceded by [ID_]
+The crosstable row of a variable can be found as ID_<Variable Name> in file "crosstable.h" that is generated from CrossTable.csv file at compile time, as a [#define] C directive with the same name of the variable preceded by [ID_]
