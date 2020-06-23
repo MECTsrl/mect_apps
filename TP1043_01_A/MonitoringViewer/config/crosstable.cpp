@@ -35,10 +35,59 @@ int32_t SelezioneTrend = 0;
 
 
 /*
+ * Variable XY_MD02_Temperature
+ */
+
+int16_t XY_MD02_Temperature = 0;
+
+
+/*
+ * Variable XY_MD02_Humidity
+ */
+
+u_int16_t XY_MD02_Humidity = 0;
+
+
+/*
+ * Variable XY_MD02_DeviceAddress
+ */
+
+u_int16_t XY_MD02_DeviceAddress = 0;
+
+
+/*
+ * Variable XY_MD02_BaudRate	[ 0=9600 1=14400 2=19200 ]
+ */
+
+u_int16_t XY_MD02_BaudRate = 0;
+
+
+/*
+ * Variable XY_MD02_TemperatureCorrection	[ -10°C .. +10°C ]
+ */
+
+int16_t XY_MD02_TemperatureCorrection = 0;
+
+
+/*
+ * Variable XY_MD02_HumidityCorrection	[ -10%RH .. +10%RH ]
+ */
+
+int16_t XY_MD02_HumidityCorrection = 0;
+
+
+/*
  * Variable TCP_is_Caldaia_ON
  */
 
 int TCP_is_Caldaia_ON = 0;
+
+
+/*
+ * Variable TCP_HeatingEnable
+ */
+
+int TCP_HeatingEnable = 0;
 
 
 /*
@@ -459,6 +508,580 @@ float TCP_SysImpActiveEnergy_11 = 0;
  */
 
 int TCP_Alarm = 0;
+
+
+/*
+ * Variable TCP_AlarmEnabled
+ */
+
+int TCP_AlarmEnabled = 0;
+
+
+/*
+ * Variable TCP_AlarmArmed
+ */
+
+int TCP_AlarmArmed = 0;
+
+
+/*
+ * Variable TCP_DigOut_A_1	[ Digital output value bit 1 MPNC020 02 module A ]
+ */
+
+int TCP_DigOut_A_1 = 0;
+
+
+/*
+ * Variable TCP_DigOut_A_2	[ Digital output value bit 2 MPNC020 02 module A ]
+ */
+
+int TCP_DigOut_A_2 = 0;
+
+
+/*
+ * Variable TCP_DigOut_A_3	[ Digital output value bit 3 MPNC020 02 module A ]
+ */
+
+int TCP_DigOut_A_3 = 0;
+
+
+/*
+ * Variable TCP_DigOut_A_4	[ Digital output value bit 4 MPNC020 02 module A ]
+ */
+
+int TCP_DigOut_A_4 = 0;
+
+
+/*
+ * Variable TCP_DigOut_A_5	[ Digital output value bit 5 MPNC020 02 module A ]
+ */
+
+int TCP_DigOut_A_5 = 0;
+
+
+/*
+ * Variable TCP_DigOut_A_6	[ Digital output value bit 6 MPNC020 02 module A ]
+ */
+
+int TCP_DigOut_A_6 = 0;
+
+
+/*
+ * Variable TCP_DigOut_A_7	[ Digital output value bit 7 MPNC020 02 module A ]
+ */
+
+int TCP_DigOut_A_7 = 0;
+
+
+/*
+ * Variable TCP_DigOut_A_8	[ Digital output value bit 8 MPNC020 02 module A ]
+ */
+
+int TCP_DigOut_A_8 = 0;
+
+
+/*
+ * Variable TCP_DigOut_A_9	[ Digital output value bit 9 MPNC020 02 module A ]
+ */
+
+int TCP_DigOut_A_9 = 0;
+
+
+/*
+ * Variable TCP_DigOut_A_10	[ Digital output value bit 10 MPNC020 02 module A ]
+ */
+
+int TCP_DigOut_A_10 = 0;
+
+
+/*
+ * Variable TCP_DigOut_A_11	[ Digital output value bit 11 MPNC020 02 module A ]
+ */
+
+int TCP_DigOut_A_11 = 0;
+
+
+/*
+ * Variable TCP_DigOut_A_12	[ Digital output value bit 12 MPNC020 02 module A ]
+ */
+
+int TCP_DigOut_A_12 = 0;
+
+
+/*
+ * Variable TCP_DigOut_A_13	[ Digital output value bit 13 MPNC020 02 module A ]
+ */
+
+int TCP_DigOut_A_13 = 0;
+
+
+/*
+ * Variable TCP_DigOut_A_14	[ Digital output value bit 14 MPNC020 02 module A ]
+ */
+
+int TCP_DigOut_A_14 = 0;
+
+
+/*
+ * Variable TCP_DigOut_A_15	[ Digital output value bit 15 MPNC020 02 module A ]
+ */
+
+int TCP_DigOut_A_15 = 0;
+
+
+/*
+ * Variable TCP_DigOut_A_16	[ Digital output value bit 16 MPNC020 02 module A ]
+ */
+
+int TCP_DigOut_A_16 = 0;
+
+
+/*
+ * Variable TCP_DigIn_A_1	[ Digital input value bit 1 MPNC020 01 module A ]
+ */
+
+int TCP_DigIn_A_1 = 0;
+
+
+/*
+ * Variable TCP_DigIn_A_2	[ Digital input value bit 2 MPNC020 01 module A ]
+ */
+
+int TCP_DigIn_A_2 = 0;
+
+
+/*
+ * Variable TCP_DigIn_A_3	[ Digital input value bit 3 MPNC020 01 module A ]
+ */
+
+int TCP_DigIn_A_3 = 0;
+
+
+/*
+ * Variable TCP_DigIn_A_4	[ Digital input value bit 4 MPNC020 01 module A ]
+ */
+
+int TCP_DigIn_A_4 = 0;
+
+
+/*
+ * Variable TCP_DigIn_A_5	[ Digital input value bit 5 MPNC020 01 module A ]
+ */
+
+int TCP_DigIn_A_5 = 0;
+
+
+/*
+ * Variable TCP_DigIn_A_6	[ Digital input value bit 6 MPNC020 01 module A ]
+ */
+
+int TCP_DigIn_A_6 = 0;
+
+
+/*
+ * Variable TCP_DigIn_A_7	[ Digital input value bit 7 MPNC020 01 module A ]
+ */
+
+int TCP_DigIn_A_7 = 0;
+
+
+/*
+ * Variable TCP_DigIn_A_8	[ Digital input value bit 8 MPNC020 01 module A ]
+ */
+
+int TCP_DigIn_A_8 = 0;
+
+
+/*
+ * Variable TCP_DigIn_A_9	[ Digital input value bit 9 MPNC020 01 module A ]
+ */
+
+int TCP_DigIn_A_9 = 0;
+
+
+/*
+ * Variable TCP_DigIn_A_10	[ Digital input value bit 10 MPNC020 01 module A ]
+ */
+
+int TCP_DigIn_A_10 = 0;
+
+
+/*
+ * Variable TCP_DigIn_A_11	[ Digital input value bit 11 MPNC020 01 module A ]
+ */
+
+int TCP_DigIn_A_11 = 0;
+
+
+/*
+ * Variable TCP_DigIn_A_12	[ Digital input value bit 12 MPNC020 01 module A ]
+ */
+
+int TCP_DigIn_A_12 = 0;
+
+
+/*
+ * Variable TCP_DigIn_A_13	[ Digital input value bit 13 MPNC020 01 module A ]
+ */
+
+int TCP_DigIn_A_13 = 0;
+
+
+/*
+ * Variable TCP_DigIn_A_14	[ Digital input value bit 14 MPNC020 01 module A ]
+ */
+
+int TCP_DigIn_A_14 = 0;
+
+
+/*
+ * Variable TCP_DigIn_A_15	[ Digital input value bit 15 MPNC020 01 module A ]
+ */
+
+int TCP_DigIn_A_15 = 0;
+
+
+/*
+ * Variable TCP_DigIn_A_16	[ Digital input value bit 16 MPNC020 01 module A ]
+ */
+
+int TCP_DigIn_A_16 = 0;
+
+
+/*
+ * Variable TCP_DigIn_B_1	[ Digital input value bit 1 MPNC020 01 module B ]
+ */
+
+int TCP_DigIn_B_1 = 0;
+
+
+/*
+ * Variable TCP_DigIn_B_2	[ Digital input value bit 2 MPNC020 01 module B ]
+ */
+
+int TCP_DigIn_B_2 = 0;
+
+
+/*
+ * Variable TCP_DigIn_B_3	[ Digital input value bit 3 MPNC020 01 module B ]
+ */
+
+int TCP_DigIn_B_3 = 0;
+
+
+/*
+ * Variable TCP_DigIn_B_4	[ Digital input value bit 4 MPNC020 01 module B ]
+ */
+
+int TCP_DigIn_B_4 = 0;
+
+
+/*
+ * Variable TCP_DigIn_B_5	[ Digital input value bit 5 MPNC020 01 module B ]
+ */
+
+int TCP_DigIn_B_5 = 0;
+
+
+/*
+ * Variable TCP_DigIn_B_6	[ Digital input value bit 6 MPNC020 01 module B ]
+ */
+
+int TCP_DigIn_B_6 = 0;
+
+
+/*
+ * Variable TCP_DigIn_B_7	[ Digital input value bit 7 MPNC020 01 module B ]
+ */
+
+int TCP_DigIn_B_7 = 0;
+
+
+/*
+ * Variable TCP_DigIn_B_8	[ Digital input value bit 8 MPNC020 01 module B ]
+ */
+
+int TCP_DigIn_B_8 = 0;
+
+
+/*
+ * Variable TCP_DigIn_B_9	[ Digital input value bit 9 MPNC020 01 module B ]
+ */
+
+int TCP_DigIn_B_9 = 0;
+
+
+/*
+ * Variable TCP_DigIn_B_10	[ Digital input value bit 10 MPNC020 01 module B ]
+ */
+
+int TCP_DigIn_B_10 = 0;
+
+
+/*
+ * Variable TCP_DigIn_B_11	[ Digital input value bit 11 MPNC020 01 module B ]
+ */
+
+int TCP_DigIn_B_11 = 0;
+
+
+/*
+ * Variable TCP_DigIn_B_12	[ Digital input value bit 12 MPNC020 01 module B ]
+ */
+
+int TCP_DigIn_B_12 = 0;
+
+
+/*
+ * Variable TCP_DigIn_B_13	[ Digital input value bit 13 MPNC020 01 module B ]
+ */
+
+int TCP_DigIn_B_13 = 0;
+
+
+/*
+ * Variable TCP_DigIn_B_14	[ Digital input value bit 14 MPNC020 01 module B ]
+ */
+
+int TCP_DigIn_B_14 = 0;
+
+
+/*
+ * Variable TCP_DigIn_B_15	[ Digital input value bit 15 MPNC020 01 module B ]
+ */
+
+int TCP_DigIn_B_15 = 0;
+
+
+/*
+ * Variable TCP_DigIn_B_16	[ Digital input value bit 16 MPNC020 01 module B ]
+ */
+
+int TCP_DigIn_B_16 = 0;
+
+
+/*
+ * Variable TCP_OK_DigIn_A_1
+ */
+
+int TCP_OK_DigIn_A_1 = 0;
+
+
+/*
+ * Variable TCP_OK_DigIn_A_2
+ */
+
+int TCP_OK_DigIn_A_2 = 0;
+
+
+/*
+ * Variable TCP_OK_DigIn_A_3
+ */
+
+int TCP_OK_DigIn_A_3 = 0;
+
+
+/*
+ * Variable TCP_OK_DigIn_A_4
+ */
+
+int TCP_OK_DigIn_A_4 = 0;
+
+
+/*
+ * Variable TCP_OK_DigIn_A_5
+ */
+
+int TCP_OK_DigIn_A_5 = 0;
+
+
+/*
+ * Variable TCP_OK_DigIn_A_6
+ */
+
+int TCP_OK_DigIn_A_6 = 0;
+
+
+/*
+ * Variable TCP_OK_DigIn_A_7
+ */
+
+int TCP_OK_DigIn_A_7 = 0;
+
+
+/*
+ * Variable TCP_OK_DigIn_A_8
+ */
+
+int TCP_OK_DigIn_A_8 = 0;
+
+
+/*
+ * Variable TCP_OK_DigIn_A_9
+ */
+
+int TCP_OK_DigIn_A_9 = 0;
+
+
+/*
+ * Variable TCP_OK_DigIn_A_10
+ */
+
+int TCP_OK_DigIn_A_10 = 0;
+
+
+/*
+ * Variable TCP_OK_DigIn_A_11
+ */
+
+int TCP_OK_DigIn_A_11 = 0;
+
+
+/*
+ * Variable TCP_OK_DigIn_A_12
+ */
+
+int TCP_OK_DigIn_A_12 = 0;
+
+
+/*
+ * Variable TCP_OK_DigIn_A_13
+ */
+
+int TCP_OK_DigIn_A_13 = 0;
+
+
+/*
+ * Variable TCP_OK_DigIn_A_14
+ */
+
+int TCP_OK_DigIn_A_14 = 0;
+
+
+/*
+ * Variable TCP_OK_DigIn_A_15
+ */
+
+int TCP_OK_DigIn_A_15 = 0;
+
+
+/*
+ * Variable TCP_OK_DigIn_A_16
+ */
+
+int TCP_OK_DigIn_A_16 = 0;
+
+
+/*
+ * Variable TCP_OK_DigIn_B_1
+ */
+
+int TCP_OK_DigIn_B_1 = 0;
+
+
+/*
+ * Variable TCP_OK_DigIn_B_2
+ */
+
+int TCP_OK_DigIn_B_2 = 0;
+
+
+/*
+ * Variable TCP_OK_DigIn_B_3
+ */
+
+int TCP_OK_DigIn_B_3 = 0;
+
+
+/*
+ * Variable TCP_OK_DigIn_B_4
+ */
+
+int TCP_OK_DigIn_B_4 = 0;
+
+
+/*
+ * Variable TCP_OK_DigIn_B_5
+ */
+
+int TCP_OK_DigIn_B_5 = 0;
+
+
+/*
+ * Variable TCP_OK_DigIn_B_6
+ */
+
+int TCP_OK_DigIn_B_6 = 0;
+
+
+/*
+ * Variable TCP_OK_DigIn_B_7
+ */
+
+int TCP_OK_DigIn_B_7 = 0;
+
+
+/*
+ * Variable TCP_OK_DigIn_B_8
+ */
+
+int TCP_OK_DigIn_B_8 = 0;
+
+
+/*
+ * Variable TCP_OK_DigIn_B_9
+ */
+
+int TCP_OK_DigIn_B_9 = 0;
+
+
+/*
+ * Variable TCP_OK_DigIn_B_10
+ */
+
+int TCP_OK_DigIn_B_10 = 0;
+
+
+/*
+ * Variable TCP_OK_DigIn_B_11
+ */
+
+int TCP_OK_DigIn_B_11 = 0;
+
+
+/*
+ * Variable TCP_OK_DigIn_B_12
+ */
+
+int TCP_OK_DigIn_B_12 = 0;
+
+
+/*
+ * Variable TCP_OK_DigIn_B_13
+ */
+
+int TCP_OK_DigIn_B_13 = 0;
+
+
+/*
+ * Variable TCP_OK_DigIn_B_14
+ */
+
+int TCP_OK_DigIn_B_14 = 0;
+
+
+/*
+ * Variable TCP_OK_DigIn_B_15
+ */
+
+int TCP_OK_DigIn_B_15 = 0;
+
+
+/*
+ * Variable TCP_OK_DigIn_B_16
+ */
+
+int TCP_OK_DigIn_B_16 = 0;
 
 
 /*
@@ -1802,6 +2425,114 @@ getStatus_SelezioneTrend(void)
 }
 
 int
+doWrite_XY_MD02_Temperature(int16_t value)
+{
+	return doWrite(ID_XY_MD02_Temperature, &value);
+}
+
+int
+addWrite_XY_MD02_Temperature(int16_t value)
+{
+	return addWrite(ID_XY_MD02_Temperature, &value);
+}
+
+int
+getStatus_XY_MD02_Temperature(void)
+{
+	return getStatus(ID_XY_MD02_Temperature);
+}
+
+int
+doWrite_XY_MD02_Humidity(u_int16_t value)
+{
+	return doWrite(ID_XY_MD02_Humidity, &value);
+}
+
+int
+addWrite_XY_MD02_Humidity(u_int16_t value)
+{
+	return addWrite(ID_XY_MD02_Humidity, &value);
+}
+
+int
+getStatus_XY_MD02_Humidity(void)
+{
+	return getStatus(ID_XY_MD02_Humidity);
+}
+
+int
+doWrite_XY_MD02_DeviceAddress(u_int16_t value)
+{
+	return doWrite(ID_XY_MD02_DeviceAddress, &value);
+}
+
+int
+addWrite_XY_MD02_DeviceAddress(u_int16_t value)
+{
+	return addWrite(ID_XY_MD02_DeviceAddress, &value);
+}
+
+int
+getStatus_XY_MD02_DeviceAddress(void)
+{
+	return getStatus(ID_XY_MD02_DeviceAddress);
+}
+
+int
+doWrite_XY_MD02_BaudRate(u_int16_t value)
+{
+	return doWrite(ID_XY_MD02_BaudRate, &value);
+}
+
+int
+addWrite_XY_MD02_BaudRate(u_int16_t value)
+{
+	return addWrite(ID_XY_MD02_BaudRate, &value);
+}
+
+int
+getStatus_XY_MD02_BaudRate(void)
+{
+	return getStatus(ID_XY_MD02_BaudRate);
+}
+
+int
+doWrite_XY_MD02_TemperatureCorrection(int16_t value)
+{
+	return doWrite(ID_XY_MD02_TemperatureCorrection, &value);
+}
+
+int
+addWrite_XY_MD02_TemperatureCorrection(int16_t value)
+{
+	return addWrite(ID_XY_MD02_TemperatureCorrection, &value);
+}
+
+int
+getStatus_XY_MD02_TemperatureCorrection(void)
+{
+	return getStatus(ID_XY_MD02_TemperatureCorrection);
+}
+
+int
+doWrite_XY_MD02_HumidityCorrection(int16_t value)
+{
+	return doWrite(ID_XY_MD02_HumidityCorrection, &value);
+}
+
+int
+addWrite_XY_MD02_HumidityCorrection(int16_t value)
+{
+	return addWrite(ID_XY_MD02_HumidityCorrection, &value);
+}
+
+int
+getStatus_XY_MD02_HumidityCorrection(void)
+{
+	return getStatus(ID_XY_MD02_HumidityCorrection);
+}
+
+int
 doWrite_TCP_is_Caldaia_ON(int value)
 {
 	return doWrite(ID_TCP_is_Caldaia_ON, &value);
@@ -1817,6 +2548,24 @@ int
 getStatus_TCP_is_Caldaia_ON(void)
 {
 	return getStatus(ID_TCP_is_Caldaia_ON);
+}
+
+int
+doWrite_TCP_HeatingEnable(int value)
+{
+	return doWrite(ID_TCP_HeatingEnable, &value);
+}
+
+int
+addWrite_TCP_HeatingEnable(int value)
+{
+	return addWrite(ID_TCP_HeatingEnable, &value);
+}
+
+int
+getStatus_TCP_HeatingEnable(void)
+{
+	return getStatus(ID_TCP_HeatingEnable);
 }
 
 int
@@ -2897,6 +3646,1482 @@ int
 getStatus_TCP_Alarm(void)
 {
 	return getStatus(ID_TCP_Alarm);
+}
+
+int
+doWrite_TCP_AlarmEnabled(int value)
+{
+	return doWrite(ID_TCP_AlarmEnabled, &value);
+}
+
+int
+addWrite_TCP_AlarmEnabled(int value)
+{
+	return addWrite(ID_TCP_AlarmEnabled, &value);
+}
+
+int
+getStatus_TCP_AlarmEnabled(void)
+{
+	return getStatus(ID_TCP_AlarmEnabled);
+}
+
+int
+doWrite_TCP_AlarmArmed(int value)
+{
+	return doWrite(ID_TCP_AlarmArmed, &value);
+}
+
+int
+addWrite_TCP_AlarmArmed(int value)
+{
+	return addWrite(ID_TCP_AlarmArmed, &value);
+}
+
+int
+getStatus_TCP_AlarmArmed(void)
+{
+	return getStatus(ID_TCP_AlarmArmed);
+}
+
+int
+doWrite_TCP_DigOut_A_1(int value)
+{
+	return doWrite(ID_TCP_DigOut_A_1, &value);
+}
+
+int
+addWrite_TCP_DigOut_A_1(int value)
+{
+	return addWrite(ID_TCP_DigOut_A_1, &value);
+}
+
+int
+getStatus_TCP_DigOut_A_1(void)
+{
+	return getStatus(ID_TCP_DigOut_A_1);
+}
+
+int
+doWrite_TCP_DigOut_A_2(int value)
+{
+	return doWrite(ID_TCP_DigOut_A_2, &value);
+}
+
+int
+addWrite_TCP_DigOut_A_2(int value)
+{
+	return addWrite(ID_TCP_DigOut_A_2, &value);
+}
+
+int
+getStatus_TCP_DigOut_A_2(void)
+{
+	return getStatus(ID_TCP_DigOut_A_2);
+}
+
+int
+doWrite_TCP_DigOut_A_3(int value)
+{
+	return doWrite(ID_TCP_DigOut_A_3, &value);
+}
+
+int
+addWrite_TCP_DigOut_A_3(int value)
+{
+	return addWrite(ID_TCP_DigOut_A_3, &value);
+}
+
+int
+getStatus_TCP_DigOut_A_3(void)
+{
+	return getStatus(ID_TCP_DigOut_A_3);
+}
+
+int
+doWrite_TCP_DigOut_A_4(int value)
+{
+	return doWrite(ID_TCP_DigOut_A_4, &value);
+}
+
+int
+addWrite_TCP_DigOut_A_4(int value)
+{
+	return addWrite(ID_TCP_DigOut_A_4, &value);
+}
+
+int
+getStatus_TCP_DigOut_A_4(void)
+{
+	return getStatus(ID_TCP_DigOut_A_4);
+}
+
+int
+doWrite_TCP_DigOut_A_5(int value)
+{
+	return doWrite(ID_TCP_DigOut_A_5, &value);
+}
+
+int
+addWrite_TCP_DigOut_A_5(int value)
+{
+	return addWrite(ID_TCP_DigOut_A_5, &value);
+}
+
+int
+getStatus_TCP_DigOut_A_5(void)
+{
+	return getStatus(ID_TCP_DigOut_A_5);
+}
+
+int
+doWrite_TCP_DigOut_A_6(int value)
+{
+	return doWrite(ID_TCP_DigOut_A_6, &value);
+}
+
+int
+addWrite_TCP_DigOut_A_6(int value)
+{
+	return addWrite(ID_TCP_DigOut_A_6, &value);
+}
+
+int
+getStatus_TCP_DigOut_A_6(void)
+{
+	return getStatus(ID_TCP_DigOut_A_6);
+}
+
+int
+doWrite_TCP_DigOut_A_7(int value)
+{
+	return doWrite(ID_TCP_DigOut_A_7, &value);
+}
+
+int
+addWrite_TCP_DigOut_A_7(int value)
+{
+	return addWrite(ID_TCP_DigOut_A_7, &value);
+}
+
+int
+getStatus_TCP_DigOut_A_7(void)
+{
+	return getStatus(ID_TCP_DigOut_A_7);
+}
+
+int
+doWrite_TCP_DigOut_A_8(int value)
+{
+	return doWrite(ID_TCP_DigOut_A_8, &value);
+}
+
+int
+addWrite_TCP_DigOut_A_8(int value)
+{
+	return addWrite(ID_TCP_DigOut_A_8, &value);
+}
+
+int
+getStatus_TCP_DigOut_A_8(void)
+{
+	return getStatus(ID_TCP_DigOut_A_8);
+}
+
+int
+doWrite_TCP_DigOut_A_9(int value)
+{
+	return doWrite(ID_TCP_DigOut_A_9, &value);
+}
+
+int
+addWrite_TCP_DigOut_A_9(int value)
+{
+	return addWrite(ID_TCP_DigOut_A_9, &value);
+}
+
+int
+getStatus_TCP_DigOut_A_9(void)
+{
+	return getStatus(ID_TCP_DigOut_A_9);
+}
+
+int
+doWrite_TCP_DigOut_A_10(int value)
+{
+	return doWrite(ID_TCP_DigOut_A_10, &value);
+}
+
+int
+addWrite_TCP_DigOut_A_10(int value)
+{
+	return addWrite(ID_TCP_DigOut_A_10, &value);
+}
+
+int
+getStatus_TCP_DigOut_A_10(void)
+{
+	return getStatus(ID_TCP_DigOut_A_10);
+}
+
+int
+doWrite_TCP_DigOut_A_11(int value)
+{
+	return doWrite(ID_TCP_DigOut_A_11, &value);
+}
+
+int
+addWrite_TCP_DigOut_A_11(int value)
+{
+	return addWrite(ID_TCP_DigOut_A_11, &value);
+}
+
+int
+getStatus_TCP_DigOut_A_11(void)
+{
+	return getStatus(ID_TCP_DigOut_A_11);
+}
+
+int
+doWrite_TCP_DigOut_A_12(int value)
+{
+	return doWrite(ID_TCP_DigOut_A_12, &value);
+}
+
+int
+addWrite_TCP_DigOut_A_12(int value)
+{
+	return addWrite(ID_TCP_DigOut_A_12, &value);
+}
+
+int
+getStatus_TCP_DigOut_A_12(void)
+{
+	return getStatus(ID_TCP_DigOut_A_12);
+}
+
+int
+doWrite_TCP_DigOut_A_13(int value)
+{
+	return doWrite(ID_TCP_DigOut_A_13, &value);
+}
+
+int
+addWrite_TCP_DigOut_A_13(int value)
+{
+	return addWrite(ID_TCP_DigOut_A_13, &value);
+}
+
+int
+getStatus_TCP_DigOut_A_13(void)
+{
+	return getStatus(ID_TCP_DigOut_A_13);
+}
+
+int
+doWrite_TCP_DigOut_A_14(int value)
+{
+	return doWrite(ID_TCP_DigOut_A_14, &value);
+}
+
+int
+addWrite_TCP_DigOut_A_14(int value)
+{
+	return addWrite(ID_TCP_DigOut_A_14, &value);
+}
+
+int
+getStatus_TCP_DigOut_A_14(void)
+{
+	return getStatus(ID_TCP_DigOut_A_14);
+}
+
+int
+doWrite_TCP_DigOut_A_15(int value)
+{
+	return doWrite(ID_TCP_DigOut_A_15, &value);
+}
+
+int
+addWrite_TCP_DigOut_A_15(int value)
+{
+	return addWrite(ID_TCP_DigOut_A_15, &value);
+}
+
+int
+getStatus_TCP_DigOut_A_15(void)
+{
+	return getStatus(ID_TCP_DigOut_A_15);
+}
+
+int
+doWrite_TCP_DigOut_A_16(int value)
+{
+	return doWrite(ID_TCP_DigOut_A_16, &value);
+}
+
+int
+addWrite_TCP_DigOut_A_16(int value)
+{
+	return addWrite(ID_TCP_DigOut_A_16, &value);
+}
+
+int
+getStatus_TCP_DigOut_A_16(void)
+{
+	return getStatus(ID_TCP_DigOut_A_16);
+}
+
+int
+doWrite_TCP_DigIn_A_1(int value)
+{
+	return doWrite(ID_TCP_DigIn_A_1, &value);
+}
+
+int
+addWrite_TCP_DigIn_A_1(int value)
+{
+	return addWrite(ID_TCP_DigIn_A_1, &value);
+}
+
+int
+getStatus_TCP_DigIn_A_1(void)
+{
+	return getStatus(ID_TCP_DigIn_A_1);
+}
+
+int
+doWrite_TCP_DigIn_A_2(int value)
+{
+	return doWrite(ID_TCP_DigIn_A_2, &value);
+}
+
+int
+addWrite_TCP_DigIn_A_2(int value)
+{
+	return addWrite(ID_TCP_DigIn_A_2, &value);
+}
+
+int
+getStatus_TCP_DigIn_A_2(void)
+{
+	return getStatus(ID_TCP_DigIn_A_2);
+}
+
+int
+doWrite_TCP_DigIn_A_3(int value)
+{
+	return doWrite(ID_TCP_DigIn_A_3, &value);
+}
+
+int
+addWrite_TCP_DigIn_A_3(int value)
+{
+	return addWrite(ID_TCP_DigIn_A_3, &value);
+}
+
+int
+getStatus_TCP_DigIn_A_3(void)
+{
+	return getStatus(ID_TCP_DigIn_A_3);
+}
+
+int
+doWrite_TCP_DigIn_A_4(int value)
+{
+	return doWrite(ID_TCP_DigIn_A_4, &value);
+}
+
+int
+addWrite_TCP_DigIn_A_4(int value)
+{
+	return addWrite(ID_TCP_DigIn_A_4, &value);
+}
+
+int
+getStatus_TCP_DigIn_A_4(void)
+{
+	return getStatus(ID_TCP_DigIn_A_4);
+}
+
+int
+doWrite_TCP_DigIn_A_5(int value)
+{
+	return doWrite(ID_TCP_DigIn_A_5, &value);
+}
+
+int
+addWrite_TCP_DigIn_A_5(int value)
+{
+	return addWrite(ID_TCP_DigIn_A_5, &value);
+}
+
+int
+getStatus_TCP_DigIn_A_5(void)
+{
+	return getStatus(ID_TCP_DigIn_A_5);
+}
+
+int
+doWrite_TCP_DigIn_A_6(int value)
+{
+	return doWrite(ID_TCP_DigIn_A_6, &value);
+}
+
+int
+addWrite_TCP_DigIn_A_6(int value)
+{
+	return addWrite(ID_TCP_DigIn_A_6, &value);
+}
+
+int
+getStatus_TCP_DigIn_A_6(void)
+{
+	return getStatus(ID_TCP_DigIn_A_6);
+}
+
+int
+doWrite_TCP_DigIn_A_7(int value)
+{
+	return doWrite(ID_TCP_DigIn_A_7, &value);
+}
+
+int
+addWrite_TCP_DigIn_A_7(int value)
+{
+	return addWrite(ID_TCP_DigIn_A_7, &value);
+}
+
+int
+getStatus_TCP_DigIn_A_7(void)
+{
+	return getStatus(ID_TCP_DigIn_A_7);
+}
+
+int
+doWrite_TCP_DigIn_A_8(int value)
+{
+	return doWrite(ID_TCP_DigIn_A_8, &value);
+}
+
+int
+addWrite_TCP_DigIn_A_8(int value)
+{
+	return addWrite(ID_TCP_DigIn_A_8, &value);
+}
+
+int
+getStatus_TCP_DigIn_A_8(void)
+{
+	return getStatus(ID_TCP_DigIn_A_8);
+}
+
+int
+doWrite_TCP_DigIn_A_9(int value)
+{
+	return doWrite(ID_TCP_DigIn_A_9, &value);
+}
+
+int
+addWrite_TCP_DigIn_A_9(int value)
+{
+	return addWrite(ID_TCP_DigIn_A_9, &value);
+}
+
+int
+getStatus_TCP_DigIn_A_9(void)
+{
+	return getStatus(ID_TCP_DigIn_A_9);
+}
+
+int
+doWrite_TCP_DigIn_A_10(int value)
+{
+	return doWrite(ID_TCP_DigIn_A_10, &value);
+}
+
+int
+addWrite_TCP_DigIn_A_10(int value)
+{
+	return addWrite(ID_TCP_DigIn_A_10, &value);
+}
+
+int
+getStatus_TCP_DigIn_A_10(void)
+{
+	return getStatus(ID_TCP_DigIn_A_10);
+}
+
+int
+doWrite_TCP_DigIn_A_11(int value)
+{
+	return doWrite(ID_TCP_DigIn_A_11, &value);
+}
+
+int
+addWrite_TCP_DigIn_A_11(int value)
+{
+	return addWrite(ID_TCP_DigIn_A_11, &value);
+}
+
+int
+getStatus_TCP_DigIn_A_11(void)
+{
+	return getStatus(ID_TCP_DigIn_A_11);
+}
+
+int
+doWrite_TCP_DigIn_A_12(int value)
+{
+	return doWrite(ID_TCP_DigIn_A_12, &value);
+}
+
+int
+addWrite_TCP_DigIn_A_12(int value)
+{
+	return addWrite(ID_TCP_DigIn_A_12, &value);
+}
+
+int
+getStatus_TCP_DigIn_A_12(void)
+{
+	return getStatus(ID_TCP_DigIn_A_12);
+}
+
+int
+doWrite_TCP_DigIn_A_13(int value)
+{
+	return doWrite(ID_TCP_DigIn_A_13, &value);
+}
+
+int
+addWrite_TCP_DigIn_A_13(int value)
+{
+	return addWrite(ID_TCP_DigIn_A_13, &value);
+}
+
+int
+getStatus_TCP_DigIn_A_13(void)
+{
+	return getStatus(ID_TCP_DigIn_A_13);
+}
+
+int
+doWrite_TCP_DigIn_A_14(int value)
+{
+	return doWrite(ID_TCP_DigIn_A_14, &value);
+}
+
+int
+addWrite_TCP_DigIn_A_14(int value)
+{
+	return addWrite(ID_TCP_DigIn_A_14, &value);
+}
+
+int
+getStatus_TCP_DigIn_A_14(void)
+{
+	return getStatus(ID_TCP_DigIn_A_14);
+}
+
+int
+doWrite_TCP_DigIn_A_15(int value)
+{
+	return doWrite(ID_TCP_DigIn_A_15, &value);
+}
+
+int
+addWrite_TCP_DigIn_A_15(int value)
+{
+	return addWrite(ID_TCP_DigIn_A_15, &value);
+}
+
+int
+getStatus_TCP_DigIn_A_15(void)
+{
+	return getStatus(ID_TCP_DigIn_A_15);
+}
+
+int
+doWrite_TCP_DigIn_A_16(int value)
+{
+	return doWrite(ID_TCP_DigIn_A_16, &value);
+}
+
+int
+addWrite_TCP_DigIn_A_16(int value)
+{
+	return addWrite(ID_TCP_DigIn_A_16, &value);
+}
+
+int
+getStatus_TCP_DigIn_A_16(void)
+{
+	return getStatus(ID_TCP_DigIn_A_16);
+}
+
+int
+doWrite_TCP_DigIn_B_1(int value)
+{
+	return doWrite(ID_TCP_DigIn_B_1, &value);
+}
+
+int
+addWrite_TCP_DigIn_B_1(int value)
+{
+	return addWrite(ID_TCP_DigIn_B_1, &value);
+}
+
+int
+getStatus_TCP_DigIn_B_1(void)
+{
+	return getStatus(ID_TCP_DigIn_B_1);
+}
+
+int
+doWrite_TCP_DigIn_B_2(int value)
+{
+	return doWrite(ID_TCP_DigIn_B_2, &value);
+}
+
+int
+addWrite_TCP_DigIn_B_2(int value)
+{
+	return addWrite(ID_TCP_DigIn_B_2, &value);
+}
+
+int
+getStatus_TCP_DigIn_B_2(void)
+{
+	return getStatus(ID_TCP_DigIn_B_2);
+}
+
+int
+doWrite_TCP_DigIn_B_3(int value)
+{
+	return doWrite(ID_TCP_DigIn_B_3, &value);
+}
+
+int
+addWrite_TCP_DigIn_B_3(int value)
+{
+	return addWrite(ID_TCP_DigIn_B_3, &value);
+}
+
+int
+getStatus_TCP_DigIn_B_3(void)
+{
+	return getStatus(ID_TCP_DigIn_B_3);
+}
+
+int
+doWrite_TCP_DigIn_B_4(int value)
+{
+	return doWrite(ID_TCP_DigIn_B_4, &value);
+}
+
+int
+addWrite_TCP_DigIn_B_4(int value)
+{
+	return addWrite(ID_TCP_DigIn_B_4, &value);
+}
+
+int
+getStatus_TCP_DigIn_B_4(void)
+{
+	return getStatus(ID_TCP_DigIn_B_4);
+}
+
+int
+doWrite_TCP_DigIn_B_5(int value)
+{
+	return doWrite(ID_TCP_DigIn_B_5, &value);
+}
+
+int
+addWrite_TCP_DigIn_B_5(int value)
+{
+	return addWrite(ID_TCP_DigIn_B_5, &value);
+}
+
+int
+getStatus_TCP_DigIn_B_5(void)
+{
+	return getStatus(ID_TCP_DigIn_B_5);
+}
+
+int
+doWrite_TCP_DigIn_B_6(int value)
+{
+	return doWrite(ID_TCP_DigIn_B_6, &value);
+}
+
+int
+addWrite_TCP_DigIn_B_6(int value)
+{
+	return addWrite(ID_TCP_DigIn_B_6, &value);
+}
+
+int
+getStatus_TCP_DigIn_B_6(void)
+{
+	return getStatus(ID_TCP_DigIn_B_6);
+}
+
+int
+doWrite_TCP_DigIn_B_7(int value)
+{
+	return doWrite(ID_TCP_DigIn_B_7, &value);
+}
+
+int
+addWrite_TCP_DigIn_B_7(int value)
+{
+	return addWrite(ID_TCP_DigIn_B_7, &value);
+}
+
+int
+getStatus_TCP_DigIn_B_7(void)
+{
+	return getStatus(ID_TCP_DigIn_B_7);
+}
+
+int
+doWrite_TCP_DigIn_B_8(int value)
+{
+	return doWrite(ID_TCP_DigIn_B_8, &value);
+}
+
+int
+addWrite_TCP_DigIn_B_8(int value)
+{
+	return addWrite(ID_TCP_DigIn_B_8, &value);
+}
+
+int
+getStatus_TCP_DigIn_B_8(void)
+{
+	return getStatus(ID_TCP_DigIn_B_8);
+}
+
+int
+doWrite_TCP_DigIn_B_9(int value)
+{
+	return doWrite(ID_TCP_DigIn_B_9, &value);
+}
+
+int
+addWrite_TCP_DigIn_B_9(int value)
+{
+	return addWrite(ID_TCP_DigIn_B_9, &value);
+}
+
+int
+getStatus_TCP_DigIn_B_9(void)
+{
+	return getStatus(ID_TCP_DigIn_B_9);
+}
+
+int
+doWrite_TCP_DigIn_B_10(int value)
+{
+	return doWrite(ID_TCP_DigIn_B_10, &value);
+}
+
+int
+addWrite_TCP_DigIn_B_10(int value)
+{
+	return addWrite(ID_TCP_DigIn_B_10, &value);
+}
+
+int
+getStatus_TCP_DigIn_B_10(void)
+{
+	return getStatus(ID_TCP_DigIn_B_10);
+}
+
+int
+doWrite_TCP_DigIn_B_11(int value)
+{
+	return doWrite(ID_TCP_DigIn_B_11, &value);
+}
+
+int
+addWrite_TCP_DigIn_B_11(int value)
+{
+	return addWrite(ID_TCP_DigIn_B_11, &value);
+}
+
+int
+getStatus_TCP_DigIn_B_11(void)
+{
+	return getStatus(ID_TCP_DigIn_B_11);
+}
+
+int
+doWrite_TCP_DigIn_B_12(int value)
+{
+	return doWrite(ID_TCP_DigIn_B_12, &value);
+}
+
+int
+addWrite_TCP_DigIn_B_12(int value)
+{
+	return addWrite(ID_TCP_DigIn_B_12, &value);
+}
+
+int
+getStatus_TCP_DigIn_B_12(void)
+{
+	return getStatus(ID_TCP_DigIn_B_12);
+}
+
+int
+doWrite_TCP_DigIn_B_13(int value)
+{
+	return doWrite(ID_TCP_DigIn_B_13, &value);
+}
+
+int
+addWrite_TCP_DigIn_B_13(int value)
+{
+	return addWrite(ID_TCP_DigIn_B_13, &value);
+}
+
+int
+getStatus_TCP_DigIn_B_13(void)
+{
+	return getStatus(ID_TCP_DigIn_B_13);
+}
+
+int
+doWrite_TCP_DigIn_B_14(int value)
+{
+	return doWrite(ID_TCP_DigIn_B_14, &value);
+}
+
+int
+addWrite_TCP_DigIn_B_14(int value)
+{
+	return addWrite(ID_TCP_DigIn_B_14, &value);
+}
+
+int
+getStatus_TCP_DigIn_B_14(void)
+{
+	return getStatus(ID_TCP_DigIn_B_14);
+}
+
+int
+doWrite_TCP_DigIn_B_15(int value)
+{
+	return doWrite(ID_TCP_DigIn_B_15, &value);
+}
+
+int
+addWrite_TCP_DigIn_B_15(int value)
+{
+	return addWrite(ID_TCP_DigIn_B_15, &value);
+}
+
+int
+getStatus_TCP_DigIn_B_15(void)
+{
+	return getStatus(ID_TCP_DigIn_B_15);
+}
+
+int
+doWrite_TCP_DigIn_B_16(int value)
+{
+	return doWrite(ID_TCP_DigIn_B_16, &value);
+}
+
+int
+addWrite_TCP_DigIn_B_16(int value)
+{
+	return addWrite(ID_TCP_DigIn_B_16, &value);
+}
+
+int
+getStatus_TCP_DigIn_B_16(void)
+{
+	return getStatus(ID_TCP_DigIn_B_16);
+}
+
+int
+doWrite_TCP_OK_DigIn_A_1(int value)
+{
+	return doWrite(ID_TCP_OK_DigIn_A_1, &value);
+}
+
+int
+addWrite_TCP_OK_DigIn_A_1(int value)
+{
+	return addWrite(ID_TCP_OK_DigIn_A_1, &value);
+}
+
+int
+getStatus_TCP_OK_DigIn_A_1(void)
+{
+	return getStatus(ID_TCP_OK_DigIn_A_1);
+}
+
+int
+doWrite_TCP_OK_DigIn_A_2(int value)
+{
+	return doWrite(ID_TCP_OK_DigIn_A_2, &value);
+}
+
+int
+addWrite_TCP_OK_DigIn_A_2(int value)
+{
+	return addWrite(ID_TCP_OK_DigIn_A_2, &value);
+}
+
+int
+getStatus_TCP_OK_DigIn_A_2(void)
+{
+	return getStatus(ID_TCP_OK_DigIn_A_2);
+}
+
+int
+doWrite_TCP_OK_DigIn_A_3(int value)
+{
+	return doWrite(ID_TCP_OK_DigIn_A_3, &value);
+}
+
+int
+addWrite_TCP_OK_DigIn_A_3(int value)
+{
+	return addWrite(ID_TCP_OK_DigIn_A_3, &value);
+}
+
+int
+getStatus_TCP_OK_DigIn_A_3(void)
+{
+	return getStatus(ID_TCP_OK_DigIn_A_3);
+}
+
+int
+doWrite_TCP_OK_DigIn_A_4(int value)
+{
+	return doWrite(ID_TCP_OK_DigIn_A_4, &value);
+}
+
+int
+addWrite_TCP_OK_DigIn_A_4(int value)
+{
+	return addWrite(ID_TCP_OK_DigIn_A_4, &value);
+}
+
+int
+getStatus_TCP_OK_DigIn_A_4(void)
+{
+	return getStatus(ID_TCP_OK_DigIn_A_4);
+}
+
+int
+doWrite_TCP_OK_DigIn_A_5(int value)
+{
+	return doWrite(ID_TCP_OK_DigIn_A_5, &value);
+}
+
+int
+addWrite_TCP_OK_DigIn_A_5(int value)
+{
+	return addWrite(ID_TCP_OK_DigIn_A_5, &value);
+}
+
+int
+getStatus_TCP_OK_DigIn_A_5(void)
+{
+	return getStatus(ID_TCP_OK_DigIn_A_5);
+}
+
+int
+doWrite_TCP_OK_DigIn_A_6(int value)
+{
+	return doWrite(ID_TCP_OK_DigIn_A_6, &value);
+}
+
+int
+addWrite_TCP_OK_DigIn_A_6(int value)
+{
+	return addWrite(ID_TCP_OK_DigIn_A_6, &value);
+}
+
+int
+getStatus_TCP_OK_DigIn_A_6(void)
+{
+	return getStatus(ID_TCP_OK_DigIn_A_6);
+}
+
+int
+doWrite_TCP_OK_DigIn_A_7(int value)
+{
+	return doWrite(ID_TCP_OK_DigIn_A_7, &value);
+}
+
+int
+addWrite_TCP_OK_DigIn_A_7(int value)
+{
+	return addWrite(ID_TCP_OK_DigIn_A_7, &value);
+}
+
+int
+getStatus_TCP_OK_DigIn_A_7(void)
+{
+	return getStatus(ID_TCP_OK_DigIn_A_7);
+}
+
+int
+doWrite_TCP_OK_DigIn_A_8(int value)
+{
+	return doWrite(ID_TCP_OK_DigIn_A_8, &value);
+}
+
+int
+addWrite_TCP_OK_DigIn_A_8(int value)
+{
+	return addWrite(ID_TCP_OK_DigIn_A_8, &value);
+}
+
+int
+getStatus_TCP_OK_DigIn_A_8(void)
+{
+	return getStatus(ID_TCP_OK_DigIn_A_8);
+}
+
+int
+doWrite_TCP_OK_DigIn_A_9(int value)
+{
+	return doWrite(ID_TCP_OK_DigIn_A_9, &value);
+}
+
+int
+addWrite_TCP_OK_DigIn_A_9(int value)
+{
+	return addWrite(ID_TCP_OK_DigIn_A_9, &value);
+}
+
+int
+getStatus_TCP_OK_DigIn_A_9(void)
+{
+	return getStatus(ID_TCP_OK_DigIn_A_9);
+}
+
+int
+doWrite_TCP_OK_DigIn_A_10(int value)
+{
+	return doWrite(ID_TCP_OK_DigIn_A_10, &value);
+}
+
+int
+addWrite_TCP_OK_DigIn_A_10(int value)
+{
+	return addWrite(ID_TCP_OK_DigIn_A_10, &value);
+}
+
+int
+getStatus_TCP_OK_DigIn_A_10(void)
+{
+	return getStatus(ID_TCP_OK_DigIn_A_10);
+}
+
+int
+doWrite_TCP_OK_DigIn_A_11(int value)
+{
+	return doWrite(ID_TCP_OK_DigIn_A_11, &value);
+}
+
+int
+addWrite_TCP_OK_DigIn_A_11(int value)
+{
+	return addWrite(ID_TCP_OK_DigIn_A_11, &value);
+}
+
+int
+getStatus_TCP_OK_DigIn_A_11(void)
+{
+	return getStatus(ID_TCP_OK_DigIn_A_11);
+}
+
+int
+doWrite_TCP_OK_DigIn_A_12(int value)
+{
+	return doWrite(ID_TCP_OK_DigIn_A_12, &value);
+}
+
+int
+addWrite_TCP_OK_DigIn_A_12(int value)
+{
+	return addWrite(ID_TCP_OK_DigIn_A_12, &value);
+}
+
+int
+getStatus_TCP_OK_DigIn_A_12(void)
+{
+	return getStatus(ID_TCP_OK_DigIn_A_12);
+}
+
+int
+doWrite_TCP_OK_DigIn_A_13(int value)
+{
+	return doWrite(ID_TCP_OK_DigIn_A_13, &value);
+}
+
+int
+addWrite_TCP_OK_DigIn_A_13(int value)
+{
+	return addWrite(ID_TCP_OK_DigIn_A_13, &value);
+}
+
+int
+getStatus_TCP_OK_DigIn_A_13(void)
+{
+	return getStatus(ID_TCP_OK_DigIn_A_13);
+}
+
+int
+doWrite_TCP_OK_DigIn_A_14(int value)
+{
+	return doWrite(ID_TCP_OK_DigIn_A_14, &value);
+}
+
+int
+addWrite_TCP_OK_DigIn_A_14(int value)
+{
+	return addWrite(ID_TCP_OK_DigIn_A_14, &value);
+}
+
+int
+getStatus_TCP_OK_DigIn_A_14(void)
+{
+	return getStatus(ID_TCP_OK_DigIn_A_14);
+}
+
+int
+doWrite_TCP_OK_DigIn_A_15(int value)
+{
+	return doWrite(ID_TCP_OK_DigIn_A_15, &value);
+}
+
+int
+addWrite_TCP_OK_DigIn_A_15(int value)
+{
+	return addWrite(ID_TCP_OK_DigIn_A_15, &value);
+}
+
+int
+getStatus_TCP_OK_DigIn_A_15(void)
+{
+	return getStatus(ID_TCP_OK_DigIn_A_15);
+}
+
+int
+doWrite_TCP_OK_DigIn_A_16(int value)
+{
+	return doWrite(ID_TCP_OK_DigIn_A_16, &value);
+}
+
+int
+addWrite_TCP_OK_DigIn_A_16(int value)
+{
+	return addWrite(ID_TCP_OK_DigIn_A_16, &value);
+}
+
+int
+getStatus_TCP_OK_DigIn_A_16(void)
+{
+	return getStatus(ID_TCP_OK_DigIn_A_16);
+}
+
+int
+doWrite_TCP_OK_DigIn_B_1(int value)
+{
+	return doWrite(ID_TCP_OK_DigIn_B_1, &value);
+}
+
+int
+addWrite_TCP_OK_DigIn_B_1(int value)
+{
+	return addWrite(ID_TCP_OK_DigIn_B_1, &value);
+}
+
+int
+getStatus_TCP_OK_DigIn_B_1(void)
+{
+	return getStatus(ID_TCP_OK_DigIn_B_1);
+}
+
+int
+doWrite_TCP_OK_DigIn_B_2(int value)
+{
+	return doWrite(ID_TCP_OK_DigIn_B_2, &value);
+}
+
+int
+addWrite_TCP_OK_DigIn_B_2(int value)
+{
+	return addWrite(ID_TCP_OK_DigIn_B_2, &value);
+}
+
+int
+getStatus_TCP_OK_DigIn_B_2(void)
+{
+	return getStatus(ID_TCP_OK_DigIn_B_2);
+}
+
+int
+doWrite_TCP_OK_DigIn_B_3(int value)
+{
+	return doWrite(ID_TCP_OK_DigIn_B_3, &value);
+}
+
+int
+addWrite_TCP_OK_DigIn_B_3(int value)
+{
+	return addWrite(ID_TCP_OK_DigIn_B_3, &value);
+}
+
+int
+getStatus_TCP_OK_DigIn_B_3(void)
+{
+	return getStatus(ID_TCP_OK_DigIn_B_3);
+}
+
+int
+doWrite_TCP_OK_DigIn_B_4(int value)
+{
+	return doWrite(ID_TCP_OK_DigIn_B_4, &value);
+}
+
+int
+addWrite_TCP_OK_DigIn_B_4(int value)
+{
+	return addWrite(ID_TCP_OK_DigIn_B_4, &value);
+}
+
+int
+getStatus_TCP_OK_DigIn_B_4(void)
+{
+	return getStatus(ID_TCP_OK_DigIn_B_4);
+}
+
+int
+doWrite_TCP_OK_DigIn_B_5(int value)
+{
+	return doWrite(ID_TCP_OK_DigIn_B_5, &value);
+}
+
+int
+addWrite_TCP_OK_DigIn_B_5(int value)
+{
+	return addWrite(ID_TCP_OK_DigIn_B_5, &value);
+}
+
+int
+getStatus_TCP_OK_DigIn_B_5(void)
+{
+	return getStatus(ID_TCP_OK_DigIn_B_5);
+}
+
+int
+doWrite_TCP_OK_DigIn_B_6(int value)
+{
+	return doWrite(ID_TCP_OK_DigIn_B_6, &value);
+}
+
+int
+addWrite_TCP_OK_DigIn_B_6(int value)
+{
+	return addWrite(ID_TCP_OK_DigIn_B_6, &value);
+}
+
+int
+getStatus_TCP_OK_DigIn_B_6(void)
+{
+	return getStatus(ID_TCP_OK_DigIn_B_6);
+}
+
+int
+doWrite_TCP_OK_DigIn_B_7(int value)
+{
+	return doWrite(ID_TCP_OK_DigIn_B_7, &value);
+}
+
+int
+addWrite_TCP_OK_DigIn_B_7(int value)
+{
+	return addWrite(ID_TCP_OK_DigIn_B_7, &value);
+}
+
+int
+getStatus_TCP_OK_DigIn_B_7(void)
+{
+	return getStatus(ID_TCP_OK_DigIn_B_7);
+}
+
+int
+doWrite_TCP_OK_DigIn_B_8(int value)
+{
+	return doWrite(ID_TCP_OK_DigIn_B_8, &value);
+}
+
+int
+addWrite_TCP_OK_DigIn_B_8(int value)
+{
+	return addWrite(ID_TCP_OK_DigIn_B_8, &value);
+}
+
+int
+getStatus_TCP_OK_DigIn_B_8(void)
+{
+	return getStatus(ID_TCP_OK_DigIn_B_8);
+}
+
+int
+doWrite_TCP_OK_DigIn_B_9(int value)
+{
+	return doWrite(ID_TCP_OK_DigIn_B_9, &value);
+}
+
+int
+addWrite_TCP_OK_DigIn_B_9(int value)
+{
+	return addWrite(ID_TCP_OK_DigIn_B_9, &value);
+}
+
+int
+getStatus_TCP_OK_DigIn_B_9(void)
+{
+	return getStatus(ID_TCP_OK_DigIn_B_9);
+}
+
+int
+doWrite_TCP_OK_DigIn_B_10(int value)
+{
+	return doWrite(ID_TCP_OK_DigIn_B_10, &value);
+}
+
+int
+addWrite_TCP_OK_DigIn_B_10(int value)
+{
+	return addWrite(ID_TCP_OK_DigIn_B_10, &value);
+}
+
+int
+getStatus_TCP_OK_DigIn_B_10(void)
+{
+	return getStatus(ID_TCP_OK_DigIn_B_10);
+}
+
+int
+doWrite_TCP_OK_DigIn_B_11(int value)
+{
+	return doWrite(ID_TCP_OK_DigIn_B_11, &value);
+}
+
+int
+addWrite_TCP_OK_DigIn_B_11(int value)
+{
+	return addWrite(ID_TCP_OK_DigIn_B_11, &value);
+}
+
+int
+getStatus_TCP_OK_DigIn_B_11(void)
+{
+	return getStatus(ID_TCP_OK_DigIn_B_11);
+}
+
+int
+doWrite_TCP_OK_DigIn_B_12(int value)
+{
+	return doWrite(ID_TCP_OK_DigIn_B_12, &value);
+}
+
+int
+addWrite_TCP_OK_DigIn_B_12(int value)
+{
+	return addWrite(ID_TCP_OK_DigIn_B_12, &value);
+}
+
+int
+getStatus_TCP_OK_DigIn_B_12(void)
+{
+	return getStatus(ID_TCP_OK_DigIn_B_12);
+}
+
+int
+doWrite_TCP_OK_DigIn_B_13(int value)
+{
+	return doWrite(ID_TCP_OK_DigIn_B_13, &value);
+}
+
+int
+addWrite_TCP_OK_DigIn_B_13(int value)
+{
+	return addWrite(ID_TCP_OK_DigIn_B_13, &value);
+}
+
+int
+getStatus_TCP_OK_DigIn_B_13(void)
+{
+	return getStatus(ID_TCP_OK_DigIn_B_13);
+}
+
+int
+doWrite_TCP_OK_DigIn_B_14(int value)
+{
+	return doWrite(ID_TCP_OK_DigIn_B_14, &value);
+}
+
+int
+addWrite_TCP_OK_DigIn_B_14(int value)
+{
+	return addWrite(ID_TCP_OK_DigIn_B_14, &value);
+}
+
+int
+getStatus_TCP_OK_DigIn_B_14(void)
+{
+	return getStatus(ID_TCP_OK_DigIn_B_14);
+}
+
+int
+doWrite_TCP_OK_DigIn_B_15(int value)
+{
+	return doWrite(ID_TCP_OK_DigIn_B_15, &value);
+}
+
+int
+addWrite_TCP_OK_DigIn_B_15(int value)
+{
+	return addWrite(ID_TCP_OK_DigIn_B_15, &value);
+}
+
+int
+getStatus_TCP_OK_DigIn_B_15(void)
+{
+	return getStatus(ID_TCP_OK_DigIn_B_15);
+}
+
+int
+doWrite_TCP_OK_DigIn_B_16(int value)
+{
+	return doWrite(ID_TCP_OK_DigIn_B_16, &value);
+}
+
+int
+addWrite_TCP_OK_DigIn_B_16(int value)
+{
+	return addWrite(ID_TCP_OK_DigIn_B_16, &value);
+}
+
+int
+getStatus_TCP_OK_DigIn_B_16(void)
+{
+	return getStatus(ID_TCP_OK_DigIn_B_16);
 }
 
 int
@@ -6308,7 +8533,14 @@ update_all(void)
 	int retval = 0;
 
 	retval += readFromDb(ID_SelezioneTrend, &SelezioneTrend);
+	retval += readFromDb(ID_XY_MD02_Temperature, &XY_MD02_Temperature);
+	retval += readFromDb(ID_XY_MD02_Humidity, &XY_MD02_Humidity);
+	retval += readFromDb(ID_XY_MD02_DeviceAddress, &XY_MD02_DeviceAddress);
+	retval += readFromDb(ID_XY_MD02_BaudRate, &XY_MD02_BaudRate);
+	retval += readFromDb(ID_XY_MD02_TemperatureCorrection, &XY_MD02_TemperatureCorrection);
+	retval += readFromDb(ID_XY_MD02_HumidityCorrection, &XY_MD02_HumidityCorrection);
 	retval += readFromDb(ID_TCP_is_Caldaia_ON, &TCP_is_Caldaia_ON);
+	retval += readFromDb(ID_TCP_HeatingEnable, &TCP_HeatingEnable);
 	retval += readFromDb(ID_TCP_AnIn_A_1, &TCP_AnIn_A_1);
 	retval += readFromDb(ID_TCP_AnIn_A_2, &TCP_AnIn_A_2);
 	retval += readFromDb(ID_TCP_AnIn_A_3, &TCP_AnIn_A_3);
@@ -6369,6 +8601,88 @@ update_all(void)
 	retval += readFromDb(ID_TCP_SysActivePower_11, &TCP_SysActivePower_11);
 	retval += readFromDb(ID_TCP_SysImpActiveEnergy_11, &TCP_SysImpActiveEnergy_11);
 	retval += readFromDb(ID_TCP_Alarm, &TCP_Alarm);
+	retval += readFromDb(ID_TCP_AlarmEnabled, &TCP_AlarmEnabled);
+	retval += readFromDb(ID_TCP_AlarmArmed, &TCP_AlarmArmed);
+	retval += readFromDb(ID_TCP_DigOut_A_1, &TCP_DigOut_A_1);
+	retval += readFromDb(ID_TCP_DigOut_A_2, &TCP_DigOut_A_2);
+	retval += readFromDb(ID_TCP_DigOut_A_3, &TCP_DigOut_A_3);
+	retval += readFromDb(ID_TCP_DigOut_A_4, &TCP_DigOut_A_4);
+	retval += readFromDb(ID_TCP_DigOut_A_5, &TCP_DigOut_A_5);
+	retval += readFromDb(ID_TCP_DigOut_A_6, &TCP_DigOut_A_6);
+	retval += readFromDb(ID_TCP_DigOut_A_7, &TCP_DigOut_A_7);
+	retval += readFromDb(ID_TCP_DigOut_A_8, &TCP_DigOut_A_8);
+	retval += readFromDb(ID_TCP_DigOut_A_9, &TCP_DigOut_A_9);
+	retval += readFromDb(ID_TCP_DigOut_A_10, &TCP_DigOut_A_10);
+	retval += readFromDb(ID_TCP_DigOut_A_11, &TCP_DigOut_A_11);
+	retval += readFromDb(ID_TCP_DigOut_A_12, &TCP_DigOut_A_12);
+	retval += readFromDb(ID_TCP_DigOut_A_13, &TCP_DigOut_A_13);
+	retval += readFromDb(ID_TCP_DigOut_A_14, &TCP_DigOut_A_14);
+	retval += readFromDb(ID_TCP_DigOut_A_15, &TCP_DigOut_A_15);
+	retval += readFromDb(ID_TCP_DigOut_A_16, &TCP_DigOut_A_16);
+	retval += readFromDb(ID_TCP_DigIn_A_1, &TCP_DigIn_A_1);
+	retval += readFromDb(ID_TCP_DigIn_A_2, &TCP_DigIn_A_2);
+	retval += readFromDb(ID_TCP_DigIn_A_3, &TCP_DigIn_A_3);
+	retval += readFromDb(ID_TCP_DigIn_A_4, &TCP_DigIn_A_4);
+	retval += readFromDb(ID_TCP_DigIn_A_5, &TCP_DigIn_A_5);
+	retval += readFromDb(ID_TCP_DigIn_A_6, &TCP_DigIn_A_6);
+	retval += readFromDb(ID_TCP_DigIn_A_7, &TCP_DigIn_A_7);
+	retval += readFromDb(ID_TCP_DigIn_A_8, &TCP_DigIn_A_8);
+	retval += readFromDb(ID_TCP_DigIn_A_9, &TCP_DigIn_A_9);
+	retval += readFromDb(ID_TCP_DigIn_A_10, &TCP_DigIn_A_10);
+	retval += readFromDb(ID_TCP_DigIn_A_11, &TCP_DigIn_A_11);
+	retval += readFromDb(ID_TCP_DigIn_A_12, &TCP_DigIn_A_12);
+	retval += readFromDb(ID_TCP_DigIn_A_13, &TCP_DigIn_A_13);
+	retval += readFromDb(ID_TCP_DigIn_A_14, &TCP_DigIn_A_14);
+	retval += readFromDb(ID_TCP_DigIn_A_15, &TCP_DigIn_A_15);
+	retval += readFromDb(ID_TCP_DigIn_A_16, &TCP_DigIn_A_16);
+	retval += readFromDb(ID_TCP_DigIn_B_1, &TCP_DigIn_B_1);
+	retval += readFromDb(ID_TCP_DigIn_B_2, &TCP_DigIn_B_2);
+	retval += readFromDb(ID_TCP_DigIn_B_3, &TCP_DigIn_B_3);
+	retval += readFromDb(ID_TCP_DigIn_B_4, &TCP_DigIn_B_4);
+	retval += readFromDb(ID_TCP_DigIn_B_5, &TCP_DigIn_B_5);
+	retval += readFromDb(ID_TCP_DigIn_B_6, &TCP_DigIn_B_6);
+	retval += readFromDb(ID_TCP_DigIn_B_7, &TCP_DigIn_B_7);
+	retval += readFromDb(ID_TCP_DigIn_B_8, &TCP_DigIn_B_8);
+	retval += readFromDb(ID_TCP_DigIn_B_9, &TCP_DigIn_B_9);
+	retval += readFromDb(ID_TCP_DigIn_B_10, &TCP_DigIn_B_10);
+	retval += readFromDb(ID_TCP_DigIn_B_11, &TCP_DigIn_B_11);
+	retval += readFromDb(ID_TCP_DigIn_B_12, &TCP_DigIn_B_12);
+	retval += readFromDb(ID_TCP_DigIn_B_13, &TCP_DigIn_B_13);
+	retval += readFromDb(ID_TCP_DigIn_B_14, &TCP_DigIn_B_14);
+	retval += readFromDb(ID_TCP_DigIn_B_15, &TCP_DigIn_B_15);
+	retval += readFromDb(ID_TCP_DigIn_B_16, &TCP_DigIn_B_16);
+	retval += readFromDb(ID_TCP_OK_DigIn_A_1, &TCP_OK_DigIn_A_1);
+	retval += readFromDb(ID_TCP_OK_DigIn_A_2, &TCP_OK_DigIn_A_2);
+	retval += readFromDb(ID_TCP_OK_DigIn_A_3, &TCP_OK_DigIn_A_3);
+	retval += readFromDb(ID_TCP_OK_DigIn_A_4, &TCP_OK_DigIn_A_4);
+	retval += readFromDb(ID_TCP_OK_DigIn_A_5, &TCP_OK_DigIn_A_5);
+	retval += readFromDb(ID_TCP_OK_DigIn_A_6, &TCP_OK_DigIn_A_6);
+	retval += readFromDb(ID_TCP_OK_DigIn_A_7, &TCP_OK_DigIn_A_7);
+	retval += readFromDb(ID_TCP_OK_DigIn_A_8, &TCP_OK_DigIn_A_8);
+	retval += readFromDb(ID_TCP_OK_DigIn_A_9, &TCP_OK_DigIn_A_9);
+	retval += readFromDb(ID_TCP_OK_DigIn_A_10, &TCP_OK_DigIn_A_10);
+	retval += readFromDb(ID_TCP_OK_DigIn_A_11, &TCP_OK_DigIn_A_11);
+	retval += readFromDb(ID_TCP_OK_DigIn_A_12, &TCP_OK_DigIn_A_12);
+	retval += readFromDb(ID_TCP_OK_DigIn_A_13, &TCP_OK_DigIn_A_13);
+	retval += readFromDb(ID_TCP_OK_DigIn_A_14, &TCP_OK_DigIn_A_14);
+	retval += readFromDb(ID_TCP_OK_DigIn_A_15, &TCP_OK_DigIn_A_15);
+	retval += readFromDb(ID_TCP_OK_DigIn_A_16, &TCP_OK_DigIn_A_16);
+	retval += readFromDb(ID_TCP_OK_DigIn_B_1, &TCP_OK_DigIn_B_1);
+	retval += readFromDb(ID_TCP_OK_DigIn_B_2, &TCP_OK_DigIn_B_2);
+	retval += readFromDb(ID_TCP_OK_DigIn_B_3, &TCP_OK_DigIn_B_3);
+	retval += readFromDb(ID_TCP_OK_DigIn_B_4, &TCP_OK_DigIn_B_4);
+	retval += readFromDb(ID_TCP_OK_DigIn_B_5, &TCP_OK_DigIn_B_5);
+	retval += readFromDb(ID_TCP_OK_DigIn_B_6, &TCP_OK_DigIn_B_6);
+	retval += readFromDb(ID_TCP_OK_DigIn_B_7, &TCP_OK_DigIn_B_7);
+	retval += readFromDb(ID_TCP_OK_DigIn_B_8, &TCP_OK_DigIn_B_8);
+	retval += readFromDb(ID_TCP_OK_DigIn_B_9, &TCP_OK_DigIn_B_9);
+	retval += readFromDb(ID_TCP_OK_DigIn_B_10, &TCP_OK_DigIn_B_10);
+	retval += readFromDb(ID_TCP_OK_DigIn_B_11, &TCP_OK_DigIn_B_11);
+	retval += readFromDb(ID_TCP_OK_DigIn_B_12, &TCP_OK_DigIn_B_12);
+	retval += readFromDb(ID_TCP_OK_DigIn_B_13, &TCP_OK_DigIn_B_13);
+	retval += readFromDb(ID_TCP_OK_DigIn_B_14, &TCP_OK_DigIn_B_14);
+	retval += readFromDb(ID_TCP_OK_DigIn_B_15, &TCP_OK_DigIn_B_15);
+	retval += readFromDb(ID_TCP_OK_DigIn_B_16, &TCP_OK_DigIn_B_16);
 	retval += readFromDb(ID_RTU0_TYPE_PORT, &RTU0_TYPE_PORT);
 	retval += readFromDb(ID_RTU0_BAUDRATE, &RTU0_BAUDRATE);
 	retval += readFromDb(ID_RTU0_STATUS, &RTU0_STATUS);

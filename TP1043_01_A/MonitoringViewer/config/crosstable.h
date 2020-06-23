@@ -40,371 +40,905 @@ int doWrite_SelezioneTrend(int32_t value);
 int addWrite_SelezioneTrend(int32_t value);
 int getStatus_SelezioneTrend(void);
 
-#define ID_TCP_is_Caldaia_ON 999
+#define ID_XY_MD02_Temperature 300
+extern int16_t XY_MD02_Temperature;
+int doWrite_XY_MD02_Temperature(int16_t value);
+int addWrite_XY_MD02_Temperature(int16_t value);
+int getStatus_XY_MD02_Temperature(void);
+
+#define ID_XY_MD02_Humidity 301
+extern u_int16_t XY_MD02_Humidity;
+int doWrite_XY_MD02_Humidity(u_int16_t value);
+int addWrite_XY_MD02_Humidity(u_int16_t value);
+int getStatus_XY_MD02_Humidity(void);
+
+#define ID_XY_MD02_DeviceAddress 302
+extern u_int16_t XY_MD02_DeviceAddress;
+int doWrite_XY_MD02_DeviceAddress(u_int16_t value);
+int addWrite_XY_MD02_DeviceAddress(u_int16_t value);
+int getStatus_XY_MD02_DeviceAddress(void);
+
+#define ID_XY_MD02_BaudRate 303
+extern u_int16_t XY_MD02_BaudRate;	/* 0=9600 1=14400 2=19200 */
+int doWrite_XY_MD02_BaudRate(u_int16_t value);
+int addWrite_XY_MD02_BaudRate(u_int16_t value);
+int getStatus_XY_MD02_BaudRate(void);
+
+#define ID_XY_MD02_TemperatureCorrection 304
+extern int16_t XY_MD02_TemperatureCorrection;	/* -10°C .. +10°C */
+int doWrite_XY_MD02_TemperatureCorrection(int16_t value);
+int addWrite_XY_MD02_TemperatureCorrection(int16_t value);
+int getStatus_XY_MD02_TemperatureCorrection(void);
+
+#define ID_XY_MD02_HumidityCorrection 305
+extern int16_t XY_MD02_HumidityCorrection;	/* -10%RH .. +10%RH */
+int doWrite_XY_MD02_HumidityCorrection(int16_t value);
+int addWrite_XY_MD02_HumidityCorrection(int16_t value);
+int getStatus_XY_MD02_HumidityCorrection(void);
+
+#define ID_TCP_is_Caldaia_ON 1000
 extern int TCP_is_Caldaia_ON;
 int doWrite_TCP_is_Caldaia_ON(int value);
 int addWrite_TCP_is_Caldaia_ON(int value);
 int getStatus_TCP_is_Caldaia_ON(void);
 
-#define ID_TCP_AnIn_A_1 1000
+#define ID_TCP_HeatingEnable 1001
+extern int TCP_HeatingEnable;
+int doWrite_TCP_HeatingEnable(int value);
+int addWrite_TCP_HeatingEnable(int value);
+int getStatus_TCP_HeatingEnable(void);
+
+#define ID_TCP_AnIn_A_1 1002
 extern int16_t TCP_AnIn_A_1;	/* Analog input 1 value MPNC030 module A */
 int doWrite_TCP_AnIn_A_1(int16_t value);
 int addWrite_TCP_AnIn_A_1(int16_t value);
 int getStatus_TCP_AnIn_A_1(void);
 
-#define ID_TCP_AnIn_A_2 1001
+#define ID_TCP_AnIn_A_2 1003
 extern int16_t TCP_AnIn_A_2;	/* Analog input 2 value MPNC030 module A */
 int doWrite_TCP_AnIn_A_2(int16_t value);
 int addWrite_TCP_AnIn_A_2(int16_t value);
 int getStatus_TCP_AnIn_A_2(void);
 
-#define ID_TCP_AnIn_A_3 1002
+#define ID_TCP_AnIn_A_3 1004
 extern int16_t TCP_AnIn_A_3;	/* Analog input 3 value MPNC030 module A */
 int doWrite_TCP_AnIn_A_3(int16_t value);
 int addWrite_TCP_AnIn_A_3(int16_t value);
 int getStatus_TCP_AnIn_A_3(void);
 
-#define ID_TCP_AnIn_A_4 1003
+#define ID_TCP_AnIn_A_4 1005
 extern int16_t TCP_AnIn_A_4;	/* Analog input 4 value MPNC030 module A */
 int doWrite_TCP_AnIn_A_4(int16_t value);
 int addWrite_TCP_AnIn_A_4(int16_t value);
 int getStatus_TCP_AnIn_A_4(void);
 
-#define ID_TCP_AnIn_B_1 1004
+#define ID_TCP_AnIn_B_1 1006
 extern int16_t TCP_AnIn_B_1;	/* Analog input 1 value MPNC030 module B */
 int doWrite_TCP_AnIn_B_1(int16_t value);
 int addWrite_TCP_AnIn_B_1(int16_t value);
 int getStatus_TCP_AnIn_B_1(void);
 
-#define ID_TCP_AnIn_B_2 1005
+#define ID_TCP_AnIn_B_2 1007
 extern int16_t TCP_AnIn_B_2;	/* Analog input 2 value MPNC030 module B */
 int doWrite_TCP_AnIn_B_2(int16_t value);
 int addWrite_TCP_AnIn_B_2(int16_t value);
 int getStatus_TCP_AnIn_B_2(void);
 
-#define ID_TCP_AnIn_B_3 1006
+#define ID_TCP_AnIn_B_3 1008
 extern int16_t TCP_AnIn_B_3;	/* Analog input 3 value MPNC030 module B */
 int doWrite_TCP_AnIn_B_3(int16_t value);
 int addWrite_TCP_AnIn_B_3(int16_t value);
 int getStatus_TCP_AnIn_B_3(void);
 
-#define ID_TCP_AnIn_B_4 1007
+#define ID_TCP_AnIn_B_4 1009
 extern int16_t TCP_AnIn_B_4;	/* Analog input 4 value MPNC030 module B */
 int doWrite_TCP_AnIn_B_4(int16_t value);
 int addWrite_TCP_AnIn_B_4(int16_t value);
 int getStatus_TCP_AnIn_B_4(void);
 
-#define ID_TCP_AnIn_C_1 1008
+#define ID_TCP_AnIn_C_1 1010
 extern int16_t TCP_AnIn_C_1;	/* Analog input 1 value MPNC030 module C */
 int doWrite_TCP_AnIn_C_1(int16_t value);
 int addWrite_TCP_AnIn_C_1(int16_t value);
 int getStatus_TCP_AnIn_C_1(void);
 
-#define ID_TCP_AnIn_C_2 1009
+#define ID_TCP_AnIn_C_2 1011
 extern int16_t TCP_AnIn_C_2;	/* Analog input 2 value MPNC030 module C */
 int doWrite_TCP_AnIn_C_2(int16_t value);
 int addWrite_TCP_AnIn_C_2(int16_t value);
 int getStatus_TCP_AnIn_C_2(void);
 
-#define ID_TCP_AnIn_C_3 1010
+#define ID_TCP_AnIn_C_3 1012
 extern int16_t TCP_AnIn_C_3;	/* Analog input 3 value MPNC030 module C */
 int doWrite_TCP_AnIn_C_3(int16_t value);
 int addWrite_TCP_AnIn_C_3(int16_t value);
 int getStatus_TCP_AnIn_C_3(void);
 
-#define ID_TCP_AnIn_C_4 1011
+#define ID_TCP_AnIn_C_4 1013
 extern int16_t TCP_AnIn_C_4;	/* Analog input 3 value MPNC030 module C */
 int doWrite_TCP_AnIn_C_4(int16_t value);
 int addWrite_TCP_AnIn_C_4(int16_t value);
 int getStatus_TCP_AnIn_C_4(void);
 
-#define ID_TCP_AnIn_1 1012
+#define ID_TCP_AnIn_1 1014
 extern int16_t TCP_AnIn_1;	/* Analog input 1 value MPNC005 */
 int doWrite_TCP_AnIn_1(int16_t value);
 int addWrite_TCP_AnIn_1(int16_t value);
 int getStatus_TCP_AnIn_1(void);
 
-#define ID_TCP_AnIn_2 1013
+#define ID_TCP_AnIn_2 1015
 extern int16_t TCP_AnIn_2;	/* Analog input 2 value MPNC005 */
 int doWrite_TCP_AnIn_2(int16_t value);
 int addWrite_TCP_AnIn_2(int16_t value);
 int getStatus_TCP_AnIn_2(void);
 
-#define ID_TCP_DigIn_1 1014
+#define ID_TCP_DigIn_1 1016
 extern int TCP_DigIn_1;	/* Digital input 1 value MPNC005 */
 int doWrite_TCP_DigIn_1(int value);
 int addWrite_TCP_DigIn_1(int value);
 int getStatus_TCP_DigIn_1(void);
 
-#define ID_TCP_DigIn_2 1015
+#define ID_TCP_DigIn_2 1017
 extern int TCP_DigIn_2;	/* Digital input 2 value MPNC005 */
 int doWrite_TCP_DigIn_2(int value);
 int addWrite_TCP_DigIn_2(int value);
 int getStatus_TCP_DigIn_2(void);
 
-#define ID_TCP_DigIn_3 1016
+#define ID_TCP_DigIn_3 1018
 extern int TCP_DigIn_3;	/* Digital input 3 value MPNC005 */
 int doWrite_TCP_DigIn_3(int value);
 int addWrite_TCP_DigIn_3(int value);
 int getStatus_TCP_DigIn_3(void);
 
-#define ID_TCP_DigIn_4 1017
+#define ID_TCP_DigIn_4 1019
 extern int TCP_DigIn_4;	/* Digital input 4 value MPNC005 */
 int doWrite_TCP_DigIn_4(int value);
 int addWrite_TCP_DigIn_4(int value);
 int getStatus_TCP_DigIn_4(void);
 
-#define ID_TCP_DigIn_5 1018
+#define ID_TCP_DigIn_5 1020
 extern int TCP_DigIn_5;	/* Digital input 5 value MPNC005 */
 int doWrite_TCP_DigIn_5(int value);
 int addWrite_TCP_DigIn_5(int value);
 int getStatus_TCP_DigIn_5(void);
 
-#define ID_TCP_DigIn_6 1019
+#define ID_TCP_DigIn_6 1021
 extern int TCP_DigIn_6;	/* Digital input 6 value MPNC005 */
 int doWrite_TCP_DigIn_6(int value);
 int addWrite_TCP_DigIn_6(int value);
 int getStatus_TCP_DigIn_6(void);
 
-#define ID_TCP_DigIn_7 1020
+#define ID_TCP_DigIn_7 1022
 extern int TCP_DigIn_7;	/* Digital input 7 value MPNC005 */
 int doWrite_TCP_DigIn_7(int value);
 int addWrite_TCP_DigIn_7(int value);
 int getStatus_TCP_DigIn_7(void);
 
-#define ID_TCP_DigIn_8 1021
+#define ID_TCP_DigIn_8 1023
 extern int TCP_DigIn_8;	/* Digital input 8 value MPNC005 */
 int doWrite_TCP_DigIn_8(int value);
 int addWrite_TCP_DigIn_8(int value);
 int getStatus_TCP_DigIn_8(void);
 
-#define ID_TCP_DigOut_1 1022
+#define ID_TCP_DigOut_1 1024
 extern int TCP_DigOut_1;	/* Digital output 1 value MPNC005 */
 int doWrite_TCP_DigOut_1(int value);
 int addWrite_TCP_DigOut_1(int value);
 int getStatus_TCP_DigOut_1(void);
 
-#define ID_TCP_DigOut_2 1023
+#define ID_TCP_DigOut_2 1025
 extern int TCP_DigOut_2;	/* Digital output 2 value MPNC005 */
 int doWrite_TCP_DigOut_2(int value);
 int addWrite_TCP_DigOut_2(int value);
 int getStatus_TCP_DigOut_2(void);
 
-#define ID_TCP_DigOut_3 1024
+#define ID_TCP_DigOut_3 1026
 extern int TCP_DigOut_3;	/* Digital output 3 value MPNC005 */
 int doWrite_TCP_DigOut_3(int value);
 int addWrite_TCP_DigOut_3(int value);
 int getStatus_TCP_DigOut_3(void);
 
-#define ID_TCP_DigOut_4 1025
+#define ID_TCP_DigOut_4 1027
 extern int TCP_DigOut_4;	/* Digital output 4 value MPNC005 */
 int doWrite_TCP_DigOut_4(int value);
 int addWrite_TCP_DigOut_4(int value);
 int getStatus_TCP_DigOut_4(void);
 
-#define ID_TCP_DigOut_5 1026
+#define ID_TCP_DigOut_5 1028
 extern int TCP_DigOut_5;	/* Digital output 5 value MPNC005 */
 int doWrite_TCP_DigOut_5(int value);
 int addWrite_TCP_DigOut_5(int value);
 int getStatus_TCP_DigOut_5(void);
 
-#define ID_TCP_DigOut_6 1027
+#define ID_TCP_DigOut_6 1029
 extern int TCP_DigOut_6;	/* Digital output 6 value MPNC005 */
 int doWrite_TCP_DigOut_6(int value);
 int addWrite_TCP_DigOut_6(int value);
 int getStatus_TCP_DigOut_6(void);
 
-#define ID_TCP_DigOut_7 1028
+#define ID_TCP_DigOut_7 1030
 extern int TCP_DigOut_7;	/* Digital output 7 value MPNC005 */
 int doWrite_TCP_DigOut_7(int value);
 int addWrite_TCP_DigOut_7(int value);
 int getStatus_TCP_DigOut_7(void);
 
-#define ID_TCP_DigOut_8 1029
+#define ID_TCP_DigOut_8 1031
 extern int TCP_DigOut_8;	/* Digital output 8 value MPNC005 */
 int doWrite_TCP_DigOut_8(int value);
 int addWrite_TCP_DigOut_8(int value);
 int getStatus_TCP_DigOut_8(void);
 
-#define ID_TCP_SystemVoltage_0 1031
+#define ID_TCP_SystemVoltage_0 1033
 extern float TCP_SystemVoltage_0;	/* 0x0A 0x100C Tensione in V (PRINCIPALE) */
 int doWrite_TCP_SystemVoltage_0(float value);
 int addWrite_TCP_SystemVoltage_0(float value);
 int getStatus_TCP_SystemVoltage_0(void);
 
-#define ID_TCP_SysPowerFactor_0 1032
+#define ID_TCP_SysPowerFactor_0 1034
 extern float TCP_SysPowerFactor_0;	/* 0x0A 0x101E Fattore di Potenza 0 (PRINCIPALE) */
 int doWrite_TCP_SysPowerFactor_0(float value);
 int addWrite_TCP_SysPowerFactor_0(float value);
 int getStatus_TCP_SysPowerFactor_0(void);
 
-#define ID_TCP_SysActivePower_0 1033
+#define ID_TCP_SysActivePower_0 1035
 extern float TCP_SysActivePower_0;	/* 0x0A 0x1026 Potenza Attiva 0 in W (PRINCIPALE) */
 int doWrite_TCP_SysActivePower_0(float value);
 int addWrite_TCP_SysActivePower_0(float value);
 int getStatus_TCP_SysActivePower_0(void);
 
-#define ID_TCP_SysImpActiveEnergy_0 1034
+#define ID_TCP_SysImpActiveEnergy_0 1036
 extern float TCP_SysImpActiveEnergy_0;	/* 0x0A 0x1106 Energia Attiva Importata 0 in Wh (PRINCIPALE) */
 int doWrite_TCP_SysImpActiveEnergy_0(float value);
 int addWrite_TCP_SysImpActiveEnergy_0(float value);
 int getStatus_TCP_SysImpActiveEnergy_0(void);
 
-#define ID_TCP_SysExpActiveEnergy_0 1035
+#define ID_TCP_SysExpActiveEnergy_0 1037
 extern float TCP_SysExpActiveEnergy_0;	/* 0x0A 0x110E Energia Attiva Esportata 0 in Wh (PRINCIPALE) */
 int doWrite_TCP_SysExpActiveEnergy_0(float value);
 int addWrite_TCP_SysExpActiveEnergy_0(float value);
 int getStatus_TCP_SysExpActiveEnergy_0(void);
 
-#define ID_TCP_SysActivePower_1 1036
+#define ID_TCP_SysActivePower_1 1038
 extern float TCP_SysActivePower_1;	/* 0x0B 0x1026 Potenza Attiva 0 in W (FOTOVOLTAICO) */
 int doWrite_TCP_SysActivePower_1(float value);
 int addWrite_TCP_SysActivePower_1(float value);
 int getStatus_TCP_SysActivePower_1(void);
 
-#define ID_TCP_SysImpActiveEnergy_1 1037
+#define ID_TCP_SysImpActiveEnergy_1 1039
 extern float TCP_SysImpActiveEnergy_1;	/* 0x0B 0x1106 Energia Attiva Importata 1 in Wh (FOTOVOLTAICO) */
 int doWrite_TCP_SysImpActiveEnergy_1(float value);
 int addWrite_TCP_SysImpActiveEnergy_1(float value);
 int getStatus_TCP_SysImpActiveEnergy_1(void);
 
-#define ID_TCP_SysExpActiveEnergy_1 1038
+#define ID_TCP_SysExpActiveEnergy_1 1040
 extern float TCP_SysExpActiveEnergy_1;	/* 0x0B 0x110E Energia Attiva Esportata 0 in Wh (FOTOVOLTAICO) */
 int doWrite_TCP_SysExpActiveEnergy_1(float value);
 int addWrite_TCP_SysExpActiveEnergy_1(float value);
 int getStatus_TCP_SysExpActiveEnergy_1(void);
 
-#define ID_TCP_SysActivePower_2 1039
+#define ID_TCP_SysActivePower_2 1041
 extern float TCP_SysActivePower_2;	/* 0x0C 0x1026 Potenza Attiva 0 in W (ESTERNI) */
 int doWrite_TCP_SysActivePower_2(float value);
 int addWrite_TCP_SysActivePower_2(float value);
 int getStatus_TCP_SysActivePower_2(void);
 
-#define ID_TCP_SysImpActiveEnergy_2 1040
+#define ID_TCP_SysImpActiveEnergy_2 1042
 extern float TCP_SysImpActiveEnergy_2;	/* 0x0C 0x1106 Energia Attiva Importata 0 in Wh (ESTERNI) */
 int doWrite_TCP_SysImpActiveEnergy_2(float value);
 int addWrite_TCP_SysImpActiveEnergy_2(float value);
 int getStatus_TCP_SysImpActiveEnergy_2(void);
 
-#define ID_TCP_SysActivePower_3 1041
+#define ID_TCP_SysActivePower_3 1043
 extern float TCP_SysActivePower_3;	/* 0x0D 0x1026 Potenza Attiva 0 in W (PIANO SOPRA) */
 int doWrite_TCP_SysActivePower_3(float value);
 int addWrite_TCP_SysActivePower_3(float value);
 int getStatus_TCP_SysActivePower_3(void);
 
-#define ID_TCP_SysImpActiveEnergy_3 1042
+#define ID_TCP_SysImpActiveEnergy_3 1044
 extern float TCP_SysImpActiveEnergy_3;	/* 0x0D 0x1106 Energia Attiva Importata 0 in Wh (PIANO SOPRA) */
 int doWrite_TCP_SysImpActiveEnergy_3(float value);
 int addWrite_TCP_SysImpActiveEnergy_3(float value);
 int getStatus_TCP_SysImpActiveEnergy_3(void);
 
-#define ID_TCP_SysActivePower_4 1043
+#define ID_TCP_SysActivePower_4 1045
 extern float TCP_SysActivePower_4;	/* 0x0E 0x1026 Potenza Attiva 0 in W (PIANO TERRA) */
 int doWrite_TCP_SysActivePower_4(float value);
 int addWrite_TCP_SysActivePower_4(float value);
 int getStatus_TCP_SysActivePower_4(void);
 
-#define ID_TCP_SysImpActiveEnergy_4 1044
+#define ID_TCP_SysImpActiveEnergy_4 1046
 extern float TCP_SysImpActiveEnergy_4;	/* 0x0E 0x1106 Energia Attiva Importata 0 in Wh (PIANO TERRA) */
 int doWrite_TCP_SysImpActiveEnergy_4(float value);
 int addWrite_TCP_SysImpActiveEnergy_4(float value);
 int getStatus_TCP_SysImpActiveEnergy_4(void);
 
-#define ID_TCP_SysActivePower_5 1045
+#define ID_TCP_SysActivePower_5 1047
 extern float TCP_SysActivePower_5;	/* 0x0F 0x1026 Potenza Attiva 0 in W (PIANO SOTTO) */
 int doWrite_TCP_SysActivePower_5(float value);
 int addWrite_TCP_SysActivePower_5(float value);
 int getStatus_TCP_SysActivePower_5(void);
 
-#define ID_TCP_SysImpActiveEnergy_5 1046
+#define ID_TCP_SysImpActiveEnergy_5 1048
 extern float TCP_SysImpActiveEnergy_5;	/* 0x0F 0x1106 Energia Attiva Importata 0 in Wh (PIANO SOTTO) */
 int doWrite_TCP_SysImpActiveEnergy_5(float value);
 int addWrite_TCP_SysImpActiveEnergy_5(float value);
 int getStatus_TCP_SysImpActiveEnergy_5(void);
 
-#define ID_TCP_SysActivePower_6 1047
+#define ID_TCP_SysActivePower_6 1049
 extern float TCP_SysActivePower_6;	/* 0x10 0x1026 Potenza Attiva 0 in W (AUTO ELETTRICA) */
 int doWrite_TCP_SysActivePower_6(float value);
 int addWrite_TCP_SysActivePower_6(float value);
 int getStatus_TCP_SysActivePower_6(void);
 
-#define ID_TCP_SysImpActiveEnergy_6 1048
+#define ID_TCP_SysImpActiveEnergy_6 1050
 extern float TCP_SysImpActiveEnergy_6;	/* 0x10 0x1106 Energia Attiva Importata 0 in Wh (AUTO ELETTRICA) */
 int doWrite_TCP_SysImpActiveEnergy_6(float value);
 int addWrite_TCP_SysImpActiveEnergy_6(float value);
 int getStatus_TCP_SysImpActiveEnergy_6(void);
 
-#define ID_TCP_SysActivePower_7 1049
+#define ID_TCP_SysActivePower_7 1051
 extern float TCP_SysActivePower_7;	/* 0x11 0x1026 Potenza Attiva 0 in W (DEUMIDIFICATORE) */
 int doWrite_TCP_SysActivePower_7(float value);
 int addWrite_TCP_SysActivePower_7(float value);
 int getStatus_TCP_SysActivePower_7(void);
 
-#define ID_TCP_SysImpActiveEnergy_7 1050
+#define ID_TCP_SysImpActiveEnergy_7 1052
 extern float TCP_SysImpActiveEnergy_7;	/* 0x11 0x1106 Energia Attiva Importata 0 in Wh (DEUMIDIFICATORE) */
 int doWrite_TCP_SysImpActiveEnergy_7(float value);
 int addWrite_TCP_SysImpActiveEnergy_7(float value);
 int getStatus_TCP_SysImpActiveEnergy_7(void);
 
-#define ID_TCP_SysActivePower_8 1051
+#define ID_TCP_SysActivePower_8 1053
 extern float TCP_SysActivePower_8;	/* 0x12 0x1026 Potenza Attiva 0 in W (LAVANDERIA) */
 int doWrite_TCP_SysActivePower_8(float value);
 int addWrite_TCP_SysActivePower_8(float value);
 int getStatus_TCP_SysActivePower_8(void);
 
-#define ID_TCP_SysImpActiveEnergy_8 1052
+#define ID_TCP_SysImpActiveEnergy_8 1054
 extern float TCP_SysImpActiveEnergy_8;	/* 0x12 0x1106 Energia Attiva Importata 0 in Wh (LAVANDERIA) */
 int doWrite_TCP_SysImpActiveEnergy_8(float value);
 int addWrite_TCP_SysImpActiveEnergy_8(float value);
 int getStatus_TCP_SysImpActiveEnergy_8(void);
 
-#define ID_TCP_SysActivePower_9 1053
+#define ID_TCP_SysActivePower_9 1055
 extern float TCP_SysActivePower_9;	/* 0x13 0x1026 Potenza Attiva 0 in W (UPS) */
 int doWrite_TCP_SysActivePower_9(float value);
 int addWrite_TCP_SysActivePower_9(float value);
 int getStatus_TCP_SysActivePower_9(void);
 
-#define ID_TCP_SysApparentPower_9 1054
+#define ID_TCP_SysApparentPower_9 1056
 extern float TCP_SysApparentPower_9;	/* 0x13 0x102E Potenza Apparente 0 in VA (UPS) */
 int doWrite_TCP_SysApparentPower_9(float value);
 int addWrite_TCP_SysApparentPower_9(float value);
 int getStatus_TCP_SysApparentPower_9(void);
 
-#define ID_TCP_SysImpActiveEnergy_9 1055
+#define ID_TCP_SysImpActiveEnergy_9 1057
 extern float TCP_SysImpActiveEnergy_9;	/* 0x13 0x1106 Energia Attiva Importata 0 in Wh (UPS) */
 int doWrite_TCP_SysImpActiveEnergy_9(float value);
 int addWrite_TCP_SysImpActiveEnergy_9(float value);
 int getStatus_TCP_SysImpActiveEnergy_9(void);
 
-#define ID_TCP_SysActivePower_10 1056
+#define ID_TCP_SysActivePower_10 1058
 extern float TCP_SysActivePower_10;	/* 0x14 0x1026 Potenza Attiva 0 in W (Puffer) */
 int doWrite_TCP_SysActivePower_10(float value);
 int addWrite_TCP_SysActivePower_10(float value);
 int getStatus_TCP_SysActivePower_10(void);
 
-#define ID_TCP_SysImpActiveEnergy_10 1057
+#define ID_TCP_SysImpActiveEnergy_10 1059
 extern float TCP_SysImpActiveEnergy_10;	/* 0x14 0x1106 Energia Attiva Importata 0 in Wh (Puffer) */
 int doWrite_TCP_SysImpActiveEnergy_10(float value);
 int addWrite_TCP_SysImpActiveEnergy_10(float value);
 int getStatus_TCP_SysImpActiveEnergy_10(void);
 
-#define ID_TCP_SysActivePower_11 1058
+#define ID_TCP_SysActivePower_11 1060
 extern float TCP_SysActivePower_11;	/* 0x14 0x1026 Potenza Attiva 0 in W (Caldaia) */
 int doWrite_TCP_SysActivePower_11(float value);
 int addWrite_TCP_SysActivePower_11(float value);
 int getStatus_TCP_SysActivePower_11(void);
 
-#define ID_TCP_SysImpActiveEnergy_11 1059
+#define ID_TCP_SysImpActiveEnergy_11 1061
 extern float TCP_SysImpActiveEnergy_11;	/* 0x14 0x1106 Energia Attiva Importata 0 in Wh (Caldaia) */
 int doWrite_TCP_SysImpActiveEnergy_11(float value);
 int addWrite_TCP_SysImpActiveEnergy_11(float value);
 int getStatus_TCP_SysImpActiveEnergy_11(void);
 
-#define ID_TCP_Alarm 1061
+#define ID_TCP_Alarm 1063
 extern int TCP_Alarm;
 int doWrite_TCP_Alarm(int value);
 int addWrite_TCP_Alarm(int value);
 int getStatus_TCP_Alarm(void);
+
+#define ID_TCP_AlarmEnabled 1064
+extern int TCP_AlarmEnabled;
+int doWrite_TCP_AlarmEnabled(int value);
+int addWrite_TCP_AlarmEnabled(int value);
+int getStatus_TCP_AlarmEnabled(void);
+
+#define ID_TCP_AlarmArmed 1065
+extern int TCP_AlarmArmed;
+int doWrite_TCP_AlarmArmed(int value);
+int addWrite_TCP_AlarmArmed(int value);
+int getStatus_TCP_AlarmArmed(void);
+
+#define ID_TCP_DigOut_A_1 1066
+extern int TCP_DigOut_A_1;	/* Digital output value bit 1 MPNC020 02 module A */
+int doWrite_TCP_DigOut_A_1(int value);
+int addWrite_TCP_DigOut_A_1(int value);
+int getStatus_TCP_DigOut_A_1(void);
+
+#define ID_TCP_DigOut_A_2 1067
+extern int TCP_DigOut_A_2;	/* Digital output value bit 2 MPNC020 02 module A */
+int doWrite_TCP_DigOut_A_2(int value);
+int addWrite_TCP_DigOut_A_2(int value);
+int getStatus_TCP_DigOut_A_2(void);
+
+#define ID_TCP_DigOut_A_3 1068
+extern int TCP_DigOut_A_3;	/* Digital output value bit 3 MPNC020 02 module A */
+int doWrite_TCP_DigOut_A_3(int value);
+int addWrite_TCP_DigOut_A_3(int value);
+int getStatus_TCP_DigOut_A_3(void);
+
+#define ID_TCP_DigOut_A_4 1069
+extern int TCP_DigOut_A_4;	/* Digital output value bit 4 MPNC020 02 module A */
+int doWrite_TCP_DigOut_A_4(int value);
+int addWrite_TCP_DigOut_A_4(int value);
+int getStatus_TCP_DigOut_A_4(void);
+
+#define ID_TCP_DigOut_A_5 1070
+extern int TCP_DigOut_A_5;	/* Digital output value bit 5 MPNC020 02 module A */
+int doWrite_TCP_DigOut_A_5(int value);
+int addWrite_TCP_DigOut_A_5(int value);
+int getStatus_TCP_DigOut_A_5(void);
+
+#define ID_TCP_DigOut_A_6 1071
+extern int TCP_DigOut_A_6;	/* Digital output value bit 6 MPNC020 02 module A */
+int doWrite_TCP_DigOut_A_6(int value);
+int addWrite_TCP_DigOut_A_6(int value);
+int getStatus_TCP_DigOut_A_6(void);
+
+#define ID_TCP_DigOut_A_7 1072
+extern int TCP_DigOut_A_7;	/* Digital output value bit 7 MPNC020 02 module A */
+int doWrite_TCP_DigOut_A_7(int value);
+int addWrite_TCP_DigOut_A_7(int value);
+int getStatus_TCP_DigOut_A_7(void);
+
+#define ID_TCP_DigOut_A_8 1073
+extern int TCP_DigOut_A_8;	/* Digital output value bit 8 MPNC020 02 module A */
+int doWrite_TCP_DigOut_A_8(int value);
+int addWrite_TCP_DigOut_A_8(int value);
+int getStatus_TCP_DigOut_A_8(void);
+
+#define ID_TCP_DigOut_A_9 1074
+extern int TCP_DigOut_A_9;	/* Digital output value bit 9 MPNC020 02 module A */
+int doWrite_TCP_DigOut_A_9(int value);
+int addWrite_TCP_DigOut_A_9(int value);
+int getStatus_TCP_DigOut_A_9(void);
+
+#define ID_TCP_DigOut_A_10 1075
+extern int TCP_DigOut_A_10;	/* Digital output value bit 10 MPNC020 02 module A */
+int doWrite_TCP_DigOut_A_10(int value);
+int addWrite_TCP_DigOut_A_10(int value);
+int getStatus_TCP_DigOut_A_10(void);
+
+#define ID_TCP_DigOut_A_11 1076
+extern int TCP_DigOut_A_11;	/* Digital output value bit 11 MPNC020 02 module A */
+int doWrite_TCP_DigOut_A_11(int value);
+int addWrite_TCP_DigOut_A_11(int value);
+int getStatus_TCP_DigOut_A_11(void);
+
+#define ID_TCP_DigOut_A_12 1077
+extern int TCP_DigOut_A_12;	/* Digital output value bit 12 MPNC020 02 module A */
+int doWrite_TCP_DigOut_A_12(int value);
+int addWrite_TCP_DigOut_A_12(int value);
+int getStatus_TCP_DigOut_A_12(void);
+
+#define ID_TCP_DigOut_A_13 1078
+extern int TCP_DigOut_A_13;	/* Digital output value bit 13 MPNC020 02 module A */
+int doWrite_TCP_DigOut_A_13(int value);
+int addWrite_TCP_DigOut_A_13(int value);
+int getStatus_TCP_DigOut_A_13(void);
+
+#define ID_TCP_DigOut_A_14 1079
+extern int TCP_DigOut_A_14;	/* Digital output value bit 14 MPNC020 02 module A */
+int doWrite_TCP_DigOut_A_14(int value);
+int addWrite_TCP_DigOut_A_14(int value);
+int getStatus_TCP_DigOut_A_14(void);
+
+#define ID_TCP_DigOut_A_15 1080
+extern int TCP_DigOut_A_15;	/* Digital output value bit 15 MPNC020 02 module A */
+int doWrite_TCP_DigOut_A_15(int value);
+int addWrite_TCP_DigOut_A_15(int value);
+int getStatus_TCP_DigOut_A_15(void);
+
+#define ID_TCP_DigOut_A_16 1081
+extern int TCP_DigOut_A_16;	/* Digital output value bit 16 MPNC020 02 module A */
+int doWrite_TCP_DigOut_A_16(int value);
+int addWrite_TCP_DigOut_A_16(int value);
+int getStatus_TCP_DigOut_A_16(void);
+
+#define ID_TCP_DigIn_A_1 1082
+extern int TCP_DigIn_A_1;	/* Digital input value bit 1 MPNC020 01 module A */
+int doWrite_TCP_DigIn_A_1(int value);
+int addWrite_TCP_DigIn_A_1(int value);
+int getStatus_TCP_DigIn_A_1(void);
+
+#define ID_TCP_DigIn_A_2 1083
+extern int TCP_DigIn_A_2;	/* Digital input value bit 2 MPNC020 01 module A */
+int doWrite_TCP_DigIn_A_2(int value);
+int addWrite_TCP_DigIn_A_2(int value);
+int getStatus_TCP_DigIn_A_2(void);
+
+#define ID_TCP_DigIn_A_3 1084
+extern int TCP_DigIn_A_3;	/* Digital input value bit 3 MPNC020 01 module A */
+int doWrite_TCP_DigIn_A_3(int value);
+int addWrite_TCP_DigIn_A_3(int value);
+int getStatus_TCP_DigIn_A_3(void);
+
+#define ID_TCP_DigIn_A_4 1085
+extern int TCP_DigIn_A_4;	/* Digital input value bit 4 MPNC020 01 module A */
+int doWrite_TCP_DigIn_A_4(int value);
+int addWrite_TCP_DigIn_A_4(int value);
+int getStatus_TCP_DigIn_A_4(void);
+
+#define ID_TCP_DigIn_A_5 1086
+extern int TCP_DigIn_A_5;	/* Digital input value bit 5 MPNC020 01 module A */
+int doWrite_TCP_DigIn_A_5(int value);
+int addWrite_TCP_DigIn_A_5(int value);
+int getStatus_TCP_DigIn_A_5(void);
+
+#define ID_TCP_DigIn_A_6 1087
+extern int TCP_DigIn_A_6;	/* Digital input value bit 6 MPNC020 01 module A */
+int doWrite_TCP_DigIn_A_6(int value);
+int addWrite_TCP_DigIn_A_6(int value);
+int getStatus_TCP_DigIn_A_6(void);
+
+#define ID_TCP_DigIn_A_7 1088
+extern int TCP_DigIn_A_7;	/* Digital input value bit 7 MPNC020 01 module A */
+int doWrite_TCP_DigIn_A_7(int value);
+int addWrite_TCP_DigIn_A_7(int value);
+int getStatus_TCP_DigIn_A_7(void);
+
+#define ID_TCP_DigIn_A_8 1089
+extern int TCP_DigIn_A_8;	/* Digital input value bit 8 MPNC020 01 module A */
+int doWrite_TCP_DigIn_A_8(int value);
+int addWrite_TCP_DigIn_A_8(int value);
+int getStatus_TCP_DigIn_A_8(void);
+
+#define ID_TCP_DigIn_A_9 1090
+extern int TCP_DigIn_A_9;	/* Digital input value bit 9 MPNC020 01 module A */
+int doWrite_TCP_DigIn_A_9(int value);
+int addWrite_TCP_DigIn_A_9(int value);
+int getStatus_TCP_DigIn_A_9(void);
+
+#define ID_TCP_DigIn_A_10 1091
+extern int TCP_DigIn_A_10;	/* Digital input value bit 10 MPNC020 01 module A */
+int doWrite_TCP_DigIn_A_10(int value);
+int addWrite_TCP_DigIn_A_10(int value);
+int getStatus_TCP_DigIn_A_10(void);
+
+#define ID_TCP_DigIn_A_11 1092
+extern int TCP_DigIn_A_11;	/* Digital input value bit 11 MPNC020 01 module A */
+int doWrite_TCP_DigIn_A_11(int value);
+int addWrite_TCP_DigIn_A_11(int value);
+int getStatus_TCP_DigIn_A_11(void);
+
+#define ID_TCP_DigIn_A_12 1093
+extern int TCP_DigIn_A_12;	/* Digital input value bit 12 MPNC020 01 module A */
+int doWrite_TCP_DigIn_A_12(int value);
+int addWrite_TCP_DigIn_A_12(int value);
+int getStatus_TCP_DigIn_A_12(void);
+
+#define ID_TCP_DigIn_A_13 1094
+extern int TCP_DigIn_A_13;	/* Digital input value bit 13 MPNC020 01 module A */
+int doWrite_TCP_DigIn_A_13(int value);
+int addWrite_TCP_DigIn_A_13(int value);
+int getStatus_TCP_DigIn_A_13(void);
+
+#define ID_TCP_DigIn_A_14 1095
+extern int TCP_DigIn_A_14;	/* Digital input value bit 14 MPNC020 01 module A */
+int doWrite_TCP_DigIn_A_14(int value);
+int addWrite_TCP_DigIn_A_14(int value);
+int getStatus_TCP_DigIn_A_14(void);
+
+#define ID_TCP_DigIn_A_15 1096
+extern int TCP_DigIn_A_15;	/* Digital input value bit 15 MPNC020 01 module A */
+int doWrite_TCP_DigIn_A_15(int value);
+int addWrite_TCP_DigIn_A_15(int value);
+int getStatus_TCP_DigIn_A_15(void);
+
+#define ID_TCP_DigIn_A_16 1097
+extern int TCP_DigIn_A_16;	/* Digital input value bit 16 MPNC020 01 module A */
+int doWrite_TCP_DigIn_A_16(int value);
+int addWrite_TCP_DigIn_A_16(int value);
+int getStatus_TCP_DigIn_A_16(void);
+
+#define ID_TCP_DigIn_B_1 1098
+extern int TCP_DigIn_B_1;	/* Digital input value bit 1 MPNC020 01 module B */
+int doWrite_TCP_DigIn_B_1(int value);
+int addWrite_TCP_DigIn_B_1(int value);
+int getStatus_TCP_DigIn_B_1(void);
+
+#define ID_TCP_DigIn_B_2 1099
+extern int TCP_DigIn_B_2;	/* Digital input value bit 2 MPNC020 01 module B */
+int doWrite_TCP_DigIn_B_2(int value);
+int addWrite_TCP_DigIn_B_2(int value);
+int getStatus_TCP_DigIn_B_2(void);
+
+#define ID_TCP_DigIn_B_3 1100
+extern int TCP_DigIn_B_3;	/* Digital input value bit 3 MPNC020 01 module B */
+int doWrite_TCP_DigIn_B_3(int value);
+int addWrite_TCP_DigIn_B_3(int value);
+int getStatus_TCP_DigIn_B_3(void);
+
+#define ID_TCP_DigIn_B_4 1101
+extern int TCP_DigIn_B_4;	/* Digital input value bit 4 MPNC020 01 module B */
+int doWrite_TCP_DigIn_B_4(int value);
+int addWrite_TCP_DigIn_B_4(int value);
+int getStatus_TCP_DigIn_B_4(void);
+
+#define ID_TCP_DigIn_B_5 1102
+extern int TCP_DigIn_B_5;	/* Digital input value bit 5 MPNC020 01 module B */
+int doWrite_TCP_DigIn_B_5(int value);
+int addWrite_TCP_DigIn_B_5(int value);
+int getStatus_TCP_DigIn_B_5(void);
+
+#define ID_TCP_DigIn_B_6 1103
+extern int TCP_DigIn_B_6;	/* Digital input value bit 6 MPNC020 01 module B */
+int doWrite_TCP_DigIn_B_6(int value);
+int addWrite_TCP_DigIn_B_6(int value);
+int getStatus_TCP_DigIn_B_6(void);
+
+#define ID_TCP_DigIn_B_7 1104
+extern int TCP_DigIn_B_7;	/* Digital input value bit 7 MPNC020 01 module B */
+int doWrite_TCP_DigIn_B_7(int value);
+int addWrite_TCP_DigIn_B_7(int value);
+int getStatus_TCP_DigIn_B_7(void);
+
+#define ID_TCP_DigIn_B_8 1105
+extern int TCP_DigIn_B_8;	/* Digital input value bit 8 MPNC020 01 module B */
+int doWrite_TCP_DigIn_B_8(int value);
+int addWrite_TCP_DigIn_B_8(int value);
+int getStatus_TCP_DigIn_B_8(void);
+
+#define ID_TCP_DigIn_B_9 1106
+extern int TCP_DigIn_B_9;	/* Digital input value bit 9 MPNC020 01 module B */
+int doWrite_TCP_DigIn_B_9(int value);
+int addWrite_TCP_DigIn_B_9(int value);
+int getStatus_TCP_DigIn_B_9(void);
+
+#define ID_TCP_DigIn_B_10 1107
+extern int TCP_DigIn_B_10;	/* Digital input value bit 10 MPNC020 01 module B */
+int doWrite_TCP_DigIn_B_10(int value);
+int addWrite_TCP_DigIn_B_10(int value);
+int getStatus_TCP_DigIn_B_10(void);
+
+#define ID_TCP_DigIn_B_11 1108
+extern int TCP_DigIn_B_11;	/* Digital input value bit 11 MPNC020 01 module B */
+int doWrite_TCP_DigIn_B_11(int value);
+int addWrite_TCP_DigIn_B_11(int value);
+int getStatus_TCP_DigIn_B_11(void);
+
+#define ID_TCP_DigIn_B_12 1109
+extern int TCP_DigIn_B_12;	/* Digital input value bit 12 MPNC020 01 module B */
+int doWrite_TCP_DigIn_B_12(int value);
+int addWrite_TCP_DigIn_B_12(int value);
+int getStatus_TCP_DigIn_B_12(void);
+
+#define ID_TCP_DigIn_B_13 1110
+extern int TCP_DigIn_B_13;	/* Digital input value bit 13 MPNC020 01 module B */
+int doWrite_TCP_DigIn_B_13(int value);
+int addWrite_TCP_DigIn_B_13(int value);
+int getStatus_TCP_DigIn_B_13(void);
+
+#define ID_TCP_DigIn_B_14 1111
+extern int TCP_DigIn_B_14;	/* Digital input value bit 14 MPNC020 01 module B */
+int doWrite_TCP_DigIn_B_14(int value);
+int addWrite_TCP_DigIn_B_14(int value);
+int getStatus_TCP_DigIn_B_14(void);
+
+#define ID_TCP_DigIn_B_15 1112
+extern int TCP_DigIn_B_15;	/* Digital input value bit 15 MPNC020 01 module B */
+int doWrite_TCP_DigIn_B_15(int value);
+int addWrite_TCP_DigIn_B_15(int value);
+int getStatus_TCP_DigIn_B_15(void);
+
+#define ID_TCP_DigIn_B_16 1113
+extern int TCP_DigIn_B_16;	/* Digital input value bit 16 MPNC020 01 module B */
+int doWrite_TCP_DigIn_B_16(int value);
+int addWrite_TCP_DigIn_B_16(int value);
+int getStatus_TCP_DigIn_B_16(void);
+
+#define ID_TCP_OK_DigIn_A_1 1115
+extern int TCP_OK_DigIn_A_1;
+int doWrite_TCP_OK_DigIn_A_1(int value);
+int addWrite_TCP_OK_DigIn_A_1(int value);
+int getStatus_TCP_OK_DigIn_A_1(void);
+
+#define ID_TCP_OK_DigIn_A_2 1116
+extern int TCP_OK_DigIn_A_2;
+int doWrite_TCP_OK_DigIn_A_2(int value);
+int addWrite_TCP_OK_DigIn_A_2(int value);
+int getStatus_TCP_OK_DigIn_A_2(void);
+
+#define ID_TCP_OK_DigIn_A_3 1117
+extern int TCP_OK_DigIn_A_3;
+int doWrite_TCP_OK_DigIn_A_3(int value);
+int addWrite_TCP_OK_DigIn_A_3(int value);
+int getStatus_TCP_OK_DigIn_A_3(void);
+
+#define ID_TCP_OK_DigIn_A_4 1118
+extern int TCP_OK_DigIn_A_4;
+int doWrite_TCP_OK_DigIn_A_4(int value);
+int addWrite_TCP_OK_DigIn_A_4(int value);
+int getStatus_TCP_OK_DigIn_A_4(void);
+
+#define ID_TCP_OK_DigIn_A_5 1119
+extern int TCP_OK_DigIn_A_5;
+int doWrite_TCP_OK_DigIn_A_5(int value);
+int addWrite_TCP_OK_DigIn_A_5(int value);
+int getStatus_TCP_OK_DigIn_A_5(void);
+
+#define ID_TCP_OK_DigIn_A_6 1120
+extern int TCP_OK_DigIn_A_6;
+int doWrite_TCP_OK_DigIn_A_6(int value);
+int addWrite_TCP_OK_DigIn_A_6(int value);
+int getStatus_TCP_OK_DigIn_A_6(void);
+
+#define ID_TCP_OK_DigIn_A_7 1121
+extern int TCP_OK_DigIn_A_7;
+int doWrite_TCP_OK_DigIn_A_7(int value);
+int addWrite_TCP_OK_DigIn_A_7(int value);
+int getStatus_TCP_OK_DigIn_A_7(void);
+
+#define ID_TCP_OK_DigIn_A_8 1122
+extern int TCP_OK_DigIn_A_8;
+int doWrite_TCP_OK_DigIn_A_8(int value);
+int addWrite_TCP_OK_DigIn_A_8(int value);
+int getStatus_TCP_OK_DigIn_A_8(void);
+
+#define ID_TCP_OK_DigIn_A_9 1123
+extern int TCP_OK_DigIn_A_9;
+int doWrite_TCP_OK_DigIn_A_9(int value);
+int addWrite_TCP_OK_DigIn_A_9(int value);
+int getStatus_TCP_OK_DigIn_A_9(void);
+
+#define ID_TCP_OK_DigIn_A_10 1124
+extern int TCP_OK_DigIn_A_10;
+int doWrite_TCP_OK_DigIn_A_10(int value);
+int addWrite_TCP_OK_DigIn_A_10(int value);
+int getStatus_TCP_OK_DigIn_A_10(void);
+
+#define ID_TCP_OK_DigIn_A_11 1125
+extern int TCP_OK_DigIn_A_11;
+int doWrite_TCP_OK_DigIn_A_11(int value);
+int addWrite_TCP_OK_DigIn_A_11(int value);
+int getStatus_TCP_OK_DigIn_A_11(void);
+
+#define ID_TCP_OK_DigIn_A_12 1126
+extern int TCP_OK_DigIn_A_12;
+int doWrite_TCP_OK_DigIn_A_12(int value);
+int addWrite_TCP_OK_DigIn_A_12(int value);
+int getStatus_TCP_OK_DigIn_A_12(void);
+
+#define ID_TCP_OK_DigIn_A_13 1127
+extern int TCP_OK_DigIn_A_13;
+int doWrite_TCP_OK_DigIn_A_13(int value);
+int addWrite_TCP_OK_DigIn_A_13(int value);
+int getStatus_TCP_OK_DigIn_A_13(void);
+
+#define ID_TCP_OK_DigIn_A_14 1128
+extern int TCP_OK_DigIn_A_14;
+int doWrite_TCP_OK_DigIn_A_14(int value);
+int addWrite_TCP_OK_DigIn_A_14(int value);
+int getStatus_TCP_OK_DigIn_A_14(void);
+
+#define ID_TCP_OK_DigIn_A_15 1129
+extern int TCP_OK_DigIn_A_15;
+int doWrite_TCP_OK_DigIn_A_15(int value);
+int addWrite_TCP_OK_DigIn_A_15(int value);
+int getStatus_TCP_OK_DigIn_A_15(void);
+
+#define ID_TCP_OK_DigIn_A_16 1130
+extern int TCP_OK_DigIn_A_16;
+int doWrite_TCP_OK_DigIn_A_16(int value);
+int addWrite_TCP_OK_DigIn_A_16(int value);
+int getStatus_TCP_OK_DigIn_A_16(void);
+
+#define ID_TCP_OK_DigIn_B_1 1131
+extern int TCP_OK_DigIn_B_1;
+int doWrite_TCP_OK_DigIn_B_1(int value);
+int addWrite_TCP_OK_DigIn_B_1(int value);
+int getStatus_TCP_OK_DigIn_B_1(void);
+
+#define ID_TCP_OK_DigIn_B_2 1132
+extern int TCP_OK_DigIn_B_2;
+int doWrite_TCP_OK_DigIn_B_2(int value);
+int addWrite_TCP_OK_DigIn_B_2(int value);
+int getStatus_TCP_OK_DigIn_B_2(void);
+
+#define ID_TCP_OK_DigIn_B_3 1133
+extern int TCP_OK_DigIn_B_3;
+int doWrite_TCP_OK_DigIn_B_3(int value);
+int addWrite_TCP_OK_DigIn_B_3(int value);
+int getStatus_TCP_OK_DigIn_B_3(void);
+
+#define ID_TCP_OK_DigIn_B_4 1134
+extern int TCP_OK_DigIn_B_4;
+int doWrite_TCP_OK_DigIn_B_4(int value);
+int addWrite_TCP_OK_DigIn_B_4(int value);
+int getStatus_TCP_OK_DigIn_B_4(void);
+
+#define ID_TCP_OK_DigIn_B_5 1135
+extern int TCP_OK_DigIn_B_5;
+int doWrite_TCP_OK_DigIn_B_5(int value);
+int addWrite_TCP_OK_DigIn_B_5(int value);
+int getStatus_TCP_OK_DigIn_B_5(void);
+
+#define ID_TCP_OK_DigIn_B_6 1136
+extern int TCP_OK_DigIn_B_6;
+int doWrite_TCP_OK_DigIn_B_6(int value);
+int addWrite_TCP_OK_DigIn_B_6(int value);
+int getStatus_TCP_OK_DigIn_B_6(void);
+
+#define ID_TCP_OK_DigIn_B_7 1137
+extern int TCP_OK_DigIn_B_7;
+int doWrite_TCP_OK_DigIn_B_7(int value);
+int addWrite_TCP_OK_DigIn_B_7(int value);
+int getStatus_TCP_OK_DigIn_B_7(void);
+
+#define ID_TCP_OK_DigIn_B_8 1138
+extern int TCP_OK_DigIn_B_8;
+int doWrite_TCP_OK_DigIn_B_8(int value);
+int addWrite_TCP_OK_DigIn_B_8(int value);
+int getStatus_TCP_OK_DigIn_B_8(void);
+
+#define ID_TCP_OK_DigIn_B_9 1139
+extern int TCP_OK_DigIn_B_9;
+int doWrite_TCP_OK_DigIn_B_9(int value);
+int addWrite_TCP_OK_DigIn_B_9(int value);
+int getStatus_TCP_OK_DigIn_B_9(void);
+
+#define ID_TCP_OK_DigIn_B_10 1140
+extern int TCP_OK_DigIn_B_10;
+int doWrite_TCP_OK_DigIn_B_10(int value);
+int addWrite_TCP_OK_DigIn_B_10(int value);
+int getStatus_TCP_OK_DigIn_B_10(void);
+
+#define ID_TCP_OK_DigIn_B_11 1141
+extern int TCP_OK_DigIn_B_11;
+int doWrite_TCP_OK_DigIn_B_11(int value);
+int addWrite_TCP_OK_DigIn_B_11(int value);
+int getStatus_TCP_OK_DigIn_B_11(void);
+
+#define ID_TCP_OK_DigIn_B_12 1142
+extern int TCP_OK_DigIn_B_12;
+int doWrite_TCP_OK_DigIn_B_12(int value);
+int addWrite_TCP_OK_DigIn_B_12(int value);
+int getStatus_TCP_OK_DigIn_B_12(void);
+
+#define ID_TCP_OK_DigIn_B_13 1143
+extern int TCP_OK_DigIn_B_13;
+int doWrite_TCP_OK_DigIn_B_13(int value);
+int addWrite_TCP_OK_DigIn_B_13(int value);
+int getStatus_TCP_OK_DigIn_B_13(void);
+
+#define ID_TCP_OK_DigIn_B_14 1144
+extern int TCP_OK_DigIn_B_14;
+int doWrite_TCP_OK_DigIn_B_14(int value);
+int addWrite_TCP_OK_DigIn_B_14(int value);
+int getStatus_TCP_OK_DigIn_B_14(void);
+
+#define ID_TCP_OK_DigIn_B_15 1145
+extern int TCP_OK_DigIn_B_15;
+int doWrite_TCP_OK_DigIn_B_15(int value);
+int addWrite_TCP_OK_DigIn_B_15(int value);
+int getStatus_TCP_OK_DigIn_B_15(void);
+
+#define ID_TCP_OK_DigIn_B_16 1146
+extern int TCP_OK_DigIn_B_16;
+int doWrite_TCP_OK_DigIn_B_16(int value);
+int addWrite_TCP_OK_DigIn_B_16(int value);
+int getStatus_TCP_OK_DigIn_B_16(void);
 
 #define ID_RTU0_TYPE_PORT 5000
 extern u_int32_t RTU0_TYPE_PORT;
