@@ -171,7 +171,7 @@ color: rgb(170, 255, 255);</string>
         <bool>false</bool>
        </property>
        <property name="visibilityVar">
-        <string/>
+        <string>TCP_AlarmEnabled</string>
        </property>
        <property name="onIcon">
         <iconset resource="systemicons.qrc">
@@ -1067,8 +1067,8 @@ color: rgb(170, 255, 255);</string>
   </customwidget>
  </customwidgets>
  <resources>
-  <include location="systemicons.qrc"/>
   <include location="resources.qrc"/>
+  <include location="systemicons.qrc"/>
  </resources>
  <connections>
   <connection>
