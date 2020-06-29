@@ -1,6 +1,6 @@
 /**
  * @file
- * @author Emiliano Bergamaschini <ebergamaschini@mect.it>
+ *
  *
  * @section LICENSE
  * Copyright Mect s.r.l. 2013
