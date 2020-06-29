@@ -1,8 +1,0 @@
-<RCC>
-    <qresource prefix="/icons">
-        <file>icons/done.png</file>
-        <file>icons/local.png</file>
-        <file>icons/remote.png</file>
-    </qresource>
-    <qresource prefix="/fonts"/>
-</RCC>
