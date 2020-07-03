@@ -1,0 +1,12 @@
+(*[[
+]]*)
+TYPE
+    time_all_T : STRUCT
+		input 	   : time;
+		ret_dint   : dint;
+		ret_int    : int;
+		ret_lreal  : lreal;
+		ret_real   : real;
+		ret_string : string;
+    END_STRUCT;
+END_TYPE

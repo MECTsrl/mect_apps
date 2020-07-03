@@ -1,0 +1,18 @@
+(*[[
+]]*)
+TYPE
+    num3_num_T : STRUCT
+		input0    : lreal;
+		input1    : lreal;
+		input2    : lreal;
+		ret_byte  : byte;
+		ret_word  : word;
+		ret_dword : dword;
+		ret_int   : int;
+		ret_dint  : dint;
+		ret_time  : time;
+		ret_real  : real;
+		ret_lreal : lreal;
+		ret_string: string;
+    END_STRUCT;
+END_TYPE

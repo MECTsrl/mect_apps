@@ -1,0 +1,14 @@
+(*[[
+]]*)
+TYPE
+    num2_num_T : STRUCT
+		input0    : lreal;
+		input1    : lreal;
+		ret_int   : int;
+		ret_dint  : dint;
+		ret_uint  : uint;
+		ret_udint : udint;
+		ret_real  : real;
+		ret_lreal : lreal;
+    END_STRUCT;
+END_TYPE

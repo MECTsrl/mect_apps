@@ -1,0 +1,12 @@
+(*[[
+]]*)
+TYPE
+    bit2_bit_T : STRUCT
+		input0	  : dword;
+		input1	  : dword;
+		ret_bool  : bool;
+		ret_byte  : byte;
+		ret_word  : word;
+		ret_dword : dword;
+    END_STRUCT;
+END_TYPE

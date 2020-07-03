@@ -1,0 +1,20 @@
+(*[[
+]]*)
+TYPE
+    bool_any2_any_T : STRUCT
+		input0    : bool;
+		input1    : lreal;
+		input2    : lreal;
+		ret_int   : int;
+		ret_dint  : dint;
+		ret_uint  : uint;
+		ret_udint : udint;
+		ret_real  : real;
+		ret_lreal : lreal;
+		ret_byte  : byte;
+		ret_word  : word;
+		ret_dword : dword;
+		ret_time  : time;
+		ret_string: string;
+    END_STRUCT;
+END_TYPE

@@ -1,0 +1,11 @@
+(*[[
+]]*)
+TYPE
+    string2_int2_string_T : STRUCT
+		input0 	: string;
+		input1 	: string;
+		input2 	: int;
+		input3 	: int;
+		retval  : string;
+    END_STRUCT;
+END_TYPE

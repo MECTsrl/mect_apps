@@ -1,0 +1,10 @@
+(*[[
+]]*)
+TYPE
+    bool_time_bool3_time3_T : STRUCT
+		bool0 : bool; time0 : time;
+		bool1 : bool; time1 : time;
+		bool2 : bool; time2 : time;
+		bool3 : bool; time3 : time;
+    END_STRUCT;
+END_TYPE

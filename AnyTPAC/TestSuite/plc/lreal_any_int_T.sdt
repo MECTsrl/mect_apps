@@ -1,0 +1,9 @@
+(*[[
+]]*)
+TYPE
+    lreal_any_int_T : STRUCT
+		input    : lreal;
+		ret_int  : int;
+		ret_dint : dint;
+    END_STRUCT;
+END_TYPE

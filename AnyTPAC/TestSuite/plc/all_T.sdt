@@ -1,0 +1,16 @@
+(*[[
+]]*)
+TYPE
+    all_T : STRUCT
+		in_bool   : bool;
+		in_byte   : byte;
+		in_dint   : dint;
+		in_dword  : dword;
+		in_int    : int;
+		in_lreal  : lreal;
+		in_real   : real;
+		in_string : string;
+		in_time   : time;
+		in_word   : word;
+    END_STRUCT;
+END_TYPE

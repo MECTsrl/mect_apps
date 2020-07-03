@@ -1,0 +1,10 @@
+(*[[
+]]*)
+TYPE
+    time2_time2_T : STRUCT
+		input0 	 : time;
+		input1 	 : time;
+		retval0  : time;
+		retval1  : time;
+    END_STRUCT;
+END_TYPE
