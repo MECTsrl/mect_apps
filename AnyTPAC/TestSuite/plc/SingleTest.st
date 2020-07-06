@@ -70,12 +70,12 @@ END_VAR
 
 	(* 3/3 updating the loop counters *)
 	test_index := test_index + 1;
-	if (test_index > test_cases) then
+	if test_index > test_cases then
 		test_index := 1;
 		test_loops := test_loops + 1;
-		if test_level = TEST_UNKNOWN then
-			test_level := TEST_PASSED;
-		end_if;
-    end_if;
+	end_if;
+	if test_loops >= Target and test_level = TEST_UNKNOWN then
+		test_level := TEST_PASSED;
+	end_if;
 
 END_FUNCTION
