@@ -1,0 +1,13 @@
+(*[[
+]]*)
+TYPE
+    dint2_dint_int_T : STRUCT
+		(* function arguments : *)
+		input0 : dint;
+		input1 : dint;
+
+		(* expected return value: *)
+		ret_dint : dint; 
+		ret_int  : int; 
+    END_STRUCT;
+END_TYPE

@@ -1,0 +1,11 @@
+(*[[
+]]*)
+TYPE
+    bool2_bool_int2_T : STRUCT
+		input1 : bool;
+		input2 : bool;
+		retval1 : bool;
+		retval2 : int;
+		retval3 : int;
+    END_STRUCT;
+END_TYPE

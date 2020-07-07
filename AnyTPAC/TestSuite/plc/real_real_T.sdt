@@ -1,0 +1,10 @@
+(*[[
+]]*)
+TYPE
+    real_real_T : STRUCT
+		(* function arguments : *)
+		input : real;
+		(* expected return value: *)
+		retval : real;
+    END_STRUCT;
+END_TYPE

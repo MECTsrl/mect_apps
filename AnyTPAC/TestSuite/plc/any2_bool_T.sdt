@@ -1,0 +1,9 @@
+(*[[
+]]*)
+TYPE
+    any2_bool_T : STRUCT
+		input0	 : lreal;
+		input1	 : lreal;
+		retval   : bool;
+    END_STRUCT;
+END_TYPE

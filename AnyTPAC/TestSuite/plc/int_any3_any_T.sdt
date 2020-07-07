@@ -1,0 +1,11 @@
+(*[[
+]]*)
+TYPE
+    int_any3_any_T : STRUCT
+		input  : int;
+		input0 : lreal;
+		input1 : lreal;
+		input2 : lreal;
+		retval : lreal;
+    END_STRUCT;
+END_TYPE

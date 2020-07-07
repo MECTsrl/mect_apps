@@ -1,0 +1,10 @@
+(*[[
+]]*)
+TYPE
+    TaskType : STRUCT
+	name  : string;
+	info  : TaskInfo;
+	info2 : TSK_INFO;
+	stat2 : TSK_STAT;
+    END_STRUCT;
+END_TYPE

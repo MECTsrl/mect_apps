@@ -1,0 +1,15 @@
+(*[[
+]]*)
+TYPE
+    lreal_lreal3_real3_T : STRUCT
+		(* input values: *)
+		input : lreal;
+		(* expected return values: *)
+		retval1 : lreal;
+		retval2 : lreal;
+		retval3 : lreal;
+		retval4 : real;
+		retval5 : real;
+		retval6 : real;
+    END_STRUCT;
+END_TYPE

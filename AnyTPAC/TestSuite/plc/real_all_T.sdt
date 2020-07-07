@@ -1,0 +1,18 @@
+(*[[
+]]*)
+TYPE
+    real_all_T : STRUCT
+		input 	   : real;
+		ret_bool   : bool;
+		ret_byte   : byte;
+		ret_dint   : dint;
+		ret_dword  : dword;
+		ret_int    : int;
+		ret_lreal  : lreal;
+		ret_string : string;
+		ret_time   : time;
+		ret_udint  : udint;
+		ret_uint   : uint;
+		ret_word   : word;
+    END_STRUCT;
+END_TYPE

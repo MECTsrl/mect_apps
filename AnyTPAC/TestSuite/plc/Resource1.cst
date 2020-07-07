@@ -1,0 +1,26 @@
+(* Constant file *)
+
+CONST
+
+	(* Status *)
+	STATUS_ZERO : DINT := 0;
+	STATUS_IDLE : DINT := 1;
+	STATUS_RUNNING :DINT := 2;
+	STATUS_DONE : DINT := 3;
+
+	(* LogLevel *)
+	LOG_NOTHING : INT := 0;
+	LOG_FAILED_TESTS : INT := 1;
+	LOG_PASSED_TESTS :INT := 2;
+
+	(* test_level_01..59 *)
+	TEST_DISABLED : UINT := 0;
+	TEST_UNKNOWN : UINT := 1;
+	TEST_PASSED : UINT := 2;
+	TEST_FAILED : UINT := 3;
+
+	test_num         : int := 60;
+	comma_blank      : string := ', ';
+
+END_CONST
+
