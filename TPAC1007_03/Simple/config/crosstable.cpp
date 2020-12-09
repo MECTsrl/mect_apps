@@ -84,6 +84,20 @@ float RealValue = 0;
 
 
 /*
+ * Variable ContinuousWritingHMI
+ */
+
+int ContinuousWritingHMI = 0;
+
+
+/*
+ * Variable ContinuousWritingPLC
+ */
+
+int ContinuousWritingPLC = 0;
+
+
+/*
  * Variable RTU0_TYPE_PORT
  */
 
@@ -2072,6 +2086,42 @@ int
 getStatus_RealValue(void)
 {
 	return getStatus(ID_RealValue);
+}
+
+int
+doWrite_ContinuousWritingHMI(int value)
+{
+	return doWrite(ID_ContinuousWritingHMI, &value);
+}
+
+int
+addWrite_ContinuousWritingHMI(int value)
+{
+	return addWrite(ID_ContinuousWritingHMI, &value);
+}
+
+int
+getStatus_ContinuousWritingHMI(void)
+{
+	return getStatus(ID_ContinuousWritingHMI);
+}
+
+int
+doWrite_ContinuousWritingPLC(int value)
+{
+	return doWrite(ID_ContinuousWritingPLC, &value);
+}
+
+int
+addWrite_ContinuousWritingPLC(int value)
+{
+	return addWrite(ID_ContinuousWritingPLC, &value);
+}
+
+int
+getStatus_ContinuousWritingPLC(void)
+{
+	return getStatus(ID_ContinuousWritingPLC);
 }
 
 int
@@ -6840,6 +6890,8 @@ update_all(void)
 	retval += readFromDb(ID_Event_2, &Event_2);
 	retval += readFromDb(ID_Event_3, &Event_3);
 	retval += readFromDb(ID_RealValue, &RealValue);
+	retval += readFromDb(ID_ContinuousWritingHMI, &ContinuousWritingHMI);
+	retval += readFromDb(ID_ContinuousWritingPLC, &ContinuousWritingPLC);
 	retval += readFromDb(ID_RTU0_TYPE_PORT, &RTU0_TYPE_PORT);
 	retval += readFromDb(ID_RTU0_BAUDRATE, &RTU0_BAUDRATE);
 	retval += readFromDb(ID_RTU0_STATUS, &RTU0_STATUS);

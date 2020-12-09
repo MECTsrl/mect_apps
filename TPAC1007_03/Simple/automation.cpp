@@ -26,6 +26,11 @@ void setup(void)
 /* put here the operation made every 100ms */
 void loop(void)
 {
+    if (ContinuousWritingHMI) {
+        int16_t a = PLC_AnOut_1;
 
+        a = (a + 10) % 1000;
+        doWrite_PLC_AnOut_1(a);
+    }
 }
 

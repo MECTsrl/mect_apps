@@ -189,16 +189,16 @@
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
-1;P;X                              ;BYTE     ;0   ;PLC       ;               ;    ;    ;      ;192 ;8   ;[RW]
-1;P;Alarm_1                        ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;192 ;8   ;[AL PLC_DigIn_11 RISING]
-1;P;Alarm_2                        ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;192 ;8   ;[AL PLC_Encoder <= 0.0000]
-1;P;Alarm_3                        ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;192 ;8   ;[AL RealValue <= -10.1200]
-1;P;Event_1                        ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;192 ;8   ;[EV PLC_DigIn_12 RISING]
-1;P;Event_2                        ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;192 ;8   ;[EV PLC_Encoder < 0.0000]
-1;P;Event_3                        ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;192 ;8   ;[EV RealValue < 0.0000]
-1;P;RealValue                      ;REAL     ;3   ;PLC       ;               ;    ;    ;      ;192 ;8   ;[RW]
-;;;;;;;;;;;;
-;;;;;;;;;;;;
+1;P;X                              ;BYTE     ;0   ;PLC       ;               ;    ;    ;      ;192 ;10  ;[RW]
+1;P;Alarm_1                        ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;192 ;10  ;[AL PLC_DigIn_11 RISING]
+1;P;Alarm_2                        ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;192 ;10  ;[AL PLC_Encoder <= 0.0000]
+1;P;Alarm_3                        ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;192 ;10  ;[AL RealValue <= -10.1200]
+1;P;Event_1                        ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;192 ;10  ;[EV PLC_DigIn_12 RISING]
+1;P;Event_2                        ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;192 ;10  ;[EV PLC_Encoder < 0.0000]
+1;P;Event_3                        ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;192 ;10  ;[EV RealValue < 0.0000]
+1;P;RealValue                      ;REAL     ;3   ;PLC       ;               ;    ;    ;      ;192 ;10  ;[RW]
+1;P;ContinuousWritingHMI           ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;192 ;10  ;[RW]
+1;P;ContinuousWritingPLC           ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;192 ;10  ;[RW]
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;

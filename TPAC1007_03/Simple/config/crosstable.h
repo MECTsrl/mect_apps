@@ -82,6 +82,18 @@ int doWrite_RealValue(float value);
 int addWrite_RealValue(float value);
 int getStatus_RealValue(void);
 
+#define ID_ContinuousWritingHMI 200
+extern int ContinuousWritingHMI;
+int doWrite_ContinuousWritingHMI(int value);
+int addWrite_ContinuousWritingHMI(int value);
+int getStatus_ContinuousWritingHMI(void);
+
+#define ID_ContinuousWritingPLC 201
+extern int ContinuousWritingPLC;
+int doWrite_ContinuousWritingPLC(int value);
+int addWrite_ContinuousWritingPLC(int value);
+int getStatus_ContinuousWritingPLC(void);
+
 #define ID_RTU0_TYPE_PORT 5000
 extern u_int32_t RTU0_TYPE_PORT;
 int doWrite_RTU0_TYPE_PORT(u_int32_t value);

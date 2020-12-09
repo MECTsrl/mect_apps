@@ -51,6 +51,8 @@
         <location filename="page100.ui" line="3384"/>
         <location filename="page100.ui" line="3773"/>
         <location filename="page100.ui" line="3864"/>
+        <location filename="page100.ui" line="3948"/>
+        <location filename="page100.ui" line="4022"/>
         <source>ATCMbutton widget</source>
         <translation type="unfinished"></translation>
     </message>
@@ -614,6 +616,31 @@
         <location filename="page100.ui" line="3770"/>
         <location filename="page100.ui" line="3782"/>
         <source>PLC_DigOut_3</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page100.ui" line="3945"/>
+        <location filename="page100.ui" line="3957"/>
+        <source>ContinuousWritingHMI</source>
+        <oldsource>ContinuousWriting</oldsource>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page100.ui" line="3980"/>
+        <location filename="page100.ui" line="4054"/>
+        <source>!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page100.ui" line="3983"/>
+        <location filename="page100.ui" line="4057"/>
+        <source>!!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page100.ui" line="4019"/>
+        <location filename="page100.ui" line="4031"/>
+        <source>ContinuousWritingPLC</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
