@@ -27,6 +27,7 @@ file=$(LIBDIR)\ATCM_IEC1131_3.4cl
 
 [Targets]
 file=TPAC.ATHW119
+file=TPAC_BIS.ATHW119
 
 [Compiler.ATHW119]
 opt=bp2
