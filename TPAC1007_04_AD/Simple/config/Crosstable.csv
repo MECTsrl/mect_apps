@@ -5312,7 +5312,7 @@
 1;P;PLC_AnOutConf_1                ;UINT     ;0   ;RTU       ;               ;3   ;20  ;5     ;5300;57  ;[RW]Analog output 1 configuration
 1;P;PLC_AnOutConf_2                ;UINT     ;0   ;RTU       ;               ;3   ;20  ;6     ;5300;57  ;[RW]Analog output 2 configuration
 1;P;PLC_AnInConf_3                 ;UINT     ;0   ;RTU       ;               ;3   ;20  ;7     ;5300;57  ;[RW]Analog input 3 configuration
-1;P;PLC_Reserved_1                 ;UINT     ;0   ;RTU       ;               ;3   ;20  ;8     ;5300;57  ;[RW]Analog output 4 configuration
+1;P;PLC_Reserved_1                 ;UINT     ;0   ;RTU       ;               ;3   ;20  ;8     ;5300;57  ;[RW]Reserved
 1;P;PLC_DigIn_1                    ;WORD_BIT ;1   ;RTU       ;               ;3   ;20  ;9     ;5300;57  ;[RO]Digital input 1 value
 1;P;PLC_DigIn_2                    ;WORD_BIT ;2   ;RTU       ;               ;3   ;20  ;9     ;5300;57  ;[RO]Digital input 2 value
 1;P;PLC_DigIn_3                    ;WORD_BIT ;3   ;RTU       ;               ;3   ;20  ;9     ;5300;57  ;[RO]Digital input 3 value
@@ -5328,8 +5328,8 @@
 1;P;PLC_AnIn_1                     ;INT      ;3   ;RTU       ;               ;3   ;20  ;10    ;5300;57  ;[RO]Analog input 1 value
 1;P;PLC_AnIn_2                     ;INT      ;3   ;RTU       ;               ;3   ;20  ;11    ;5300;57  ;[RO]Analog input 2 value
 1;P;PLC_AnIn_3                     ;INT      ;3   ;RTU       ;               ;3   ;20  ;12    ;5300;57  ;[RO]Analog input 3 value
-1;P;PLC_Reserved_2                 ;INT      ;3   ;RTU       ;               ;3   ;20  ;13    ;5300;57  ;[RO]Analog input 4 value
-1;P;PLC_Reserved_3                 ;INT      ;3   ;RTU       ;               ;3   ;20  ;14    ;5300;57  ;[RO]Analog input 5 value
+1;P;PLC_Reserved_2                 ;INT      ;3   ;RTU       ;               ;3   ;20  ;13    ;5300;57  ;[RO]Reserved
+1;P;PLC_Reserved_3                 ;INT      ;3   ;RTU       ;               ;3   ;20  ;14    ;5300;57  ;[RO]Reserved
 1;P;PLC_Tamb                       ;INT      ;1   ;RTU       ;               ;3   ;20  ;15    ;5300;57  ;[RO]Cold junction compensation value
 1;P;PLC_Encoder                    ;DINT     ;0   ;RTU       ;               ;3   ;20  ;16    ;5300;57  ;[RO]Encoder reading value
 1;P;PLC_Capture                    ;UDINT    ;0   ;RTU       ;               ;3   ;20  ;18    ;5300;57  ;[RO]Time between 2 input edges
@@ -5343,8 +5343,8 @@
 1;P;PLC_DigOut_8                   ;BYTE_BIT ;8   ;RTU       ;               ;3   ;20  ;20    ;5300;57  ;[RW]Digital output 8 value
 1;P;PLC_AnOut_1                    ;INT      ;2   ;RTU       ;               ;3   ;20  ;21    ;5300;57  ;[RW]Analog output 1 value
 1;P;PLC_AnOut_2                    ;INT      ;2   ;RTU       ;               ;3   ;20  ;22    ;5300;57  ;[RW]Analog output 2 value
-1;P;PLC_Reserved_4                 ;INT      ;2   ;RTU       ;               ;3   ;20  ;23    ;5300;57  ;[RW]Analog output 3 value
-1;P;PLC_Reserved_5                 ;INT      ;2   ;RTU       ;               ;3   ;20  ;24    ;5300;57  ;[RW]Analog output 4 value
+1;P;PLC_Reserved_4                 ;INT      ;2   ;RTU       ;               ;3   ;20  ;23    ;5300;57  ;[RW]Reserved
+1;P;PLC_Reserved_5                 ;INT      ;2   ;RTU       ;               ;3   ;20  ;24    ;5300;57  ;[RW]Reserved
 1;P;PLC_EncoderStart               ;UINT     ;0   ;RTU       ;               ;3   ;20  ;25    ;5300;57  ;[RW]Encoder - counter enable
 1;P;PLC_EncoderReset               ;UINT     ;0   ;RTU       ;               ;3   ;20  ;26    ;5300;57  ;[RW]Encoder reset
 1;P;PLC_Heartbeat                  ;UINT     ;0   ;RTU       ;               ;3   ;20  ;27    ;5300;57  ;[RO]In - Out board function check
@@ -5352,8 +5352,8 @@
 1;P;PLC_AnIn1Filter                ;UINT     ;0   ;RTU       ;               ;3   ;20  ;29    ;5300;57  ;[RW]Analog input 1 filter
 1;P;PLC_AnIn2Filter                ;UINT     ;0   ;RTU       ;               ;3   ;20  ;30    ;5300;57  ;[RW]Analog input 2 filter
 1;P;PLC_AnIn3Filter                ;UINT     ;0   ;RTU       ;               ;3   ;20  ;31    ;5300;57  ;[RW]Analog input 3 filter
-1;P;PLC_Reserved_6                 ;UINT     ;0   ;RTU       ;               ;3   ;20  ;32    ;5300;57  ;[RW]Analog input 4 filter
-1;P;PLC_Reserved_7                 ;UINT     ;0   ;RTU       ;               ;3   ;20  ;33    ;5300;57  ;[RW]Analog input 5 filter
+1;P;PLC_Reserved_6                 ;UINT     ;0   ;RTU       ;               ;3   ;20  ;32    ;5300;57  ;[RW]Reserved
+1;P;PLC_Reserved_7                 ;UINT     ;0   ;RTU       ;               ;3   ;20  ;33    ;5300;57  ;[RW]Reserved
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
