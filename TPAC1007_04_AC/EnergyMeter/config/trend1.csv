@@ -1,5 +1,5 @@
 L
-1;P               ;0000FF;0.00;4.00;Potenza
-1;Pmax            ;000000;0.00;4.00;Potenza Massima
-1;C               ;FF0000;0.50;1.00;cos(?)
-1;Tpart           ;AA00FF;0.00;10.00;Energia
+1;P                              ;0000FF;0.00;4.00;Potenza
+1;Pmax                           ;000000;0.00;4.00;Potenza Massima
+1;C                              ;FF0000;0.50;1.00;cos(?)
+1;Tpart                          ;AA00FF;0.00;10.00;Energia

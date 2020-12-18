@@ -5297,63 +5297,63 @@
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
-1;P;PLC_FWrevision                 ;UINT     ;0   ;RTU       ;               ;3   ;20  ;0     ;5300;54  ;[RO]Firmware version
-1;P;PLC_HWconfig                   ;UINT     ;0   ;RTU       ;               ;3   ;20  ;1     ;5300;54  ;[RO]Hardware configuration
-1;P;PLC_DigDir_1                   ;BYTE_BIT ;1   ;RTU       ;               ;3   ;20  ;2     ;5300;54  ;[RW]Digital 1 direction (input = 0 output = 1)
-1;P;PLC_DigDir_2                   ;BYTE_BIT ;2   ;RTU       ;               ;3   ;20  ;2     ;5300;54  ;[RW]Digital 2 direction (input = 0 output = 1)
-1;P;PLC_DigDir_3                   ;BYTE_BIT ;3   ;RTU       ;               ;3   ;20  ;2     ;5300;54  ;[RW]Digital 3 direction (input = 0 output = 1)
-1;P;PLC_DigDir_4                   ;BYTE_BIT ;4   ;RTU       ;               ;3   ;20  ;2     ;5300;54  ;[RW]Digital 4 direction (input = 0 output = 1)
-1;P;PLC_DigDir_5                   ;BYTE_BIT ;5   ;RTU       ;               ;3   ;20  ;2     ;5300;54  ;[RW]Digital 5 direction (input = 0 output = 1)
-1;P;PLC_DigDir_6                   ;BYTE_BIT ;6   ;RTU       ;               ;3   ;20  ;2     ;5300;54  ;[RW]Digital 6 direction (input = 0 output = 1)
-1;P;PLC_DigDir_7                   ;BYTE_BIT ;7   ;RTU       ;               ;3   ;20  ;2     ;5300;54  ;[RW]Digital 7 direction (input = 0 output = 1)
-1;P;PLC_DigDir_8                   ;BYTE_BIT ;8   ;RTU       ;               ;3   ;20  ;2     ;5300;54  ;[RW]Digital 8 direction (input = 0 output = 1)
-1;P;PLC_AnInConf_1                 ;UINT     ;0   ;RTU       ;               ;3   ;20  ;3     ;5300;54  ;[RW]Analog input 1 configuration
-1;P;PLC_AnInConf_2                 ;UINT     ;0   ;RTU       ;               ;3   ;20  ;4     ;5300;54  ;[RW]Analog input 2 configuration
-1;P;PLC_AnOutConf_1                ;UINT     ;0   ;RTU       ;               ;3   ;20  ;5     ;5300;54  ;[RW]Analog output 1 configuration
-1;P;PLC_AnOutConf_2                ;UINT     ;0   ;RTU       ;               ;3   ;20  ;6     ;5300;54  ;[RW]Analog output 2 configuration
-1;P;PLC_AnOutConf_3                ;UINT     ;0   ;RTU       ;               ;3   ;20  ;7     ;5300;54  ;[RW]Analog output 3 configuration
-1;P;PLC_AnOutConf_4                ;UINT     ;0   ;RTU       ;               ;3   ;20  ;8     ;5300;54  ;[RW]Analog output 4 configuration
-1;P;PLC_DigIn_1                    ;WORD_BIT ;1   ;RTU       ;               ;3   ;20  ;9     ;5300;54  ;[RO]Digital input 1 value
-1;P;PLC_DigIn_2                    ;WORD_BIT ;2   ;RTU       ;               ;3   ;20  ;9     ;5300;54  ;[RO]Digital input 2 value
-1;P;PLC_DigIn_3                    ;WORD_BIT ;3   ;RTU       ;               ;3   ;20  ;9     ;5300;54  ;[RO]Digital input 3 value
-1;P;PLC_DigIn_4                    ;WORD_BIT ;4   ;RTU       ;               ;3   ;20  ;9     ;5300;54  ;[RO]Digital input 4 value
-1;P;PLC_DigIn_5                    ;WORD_BIT ;5   ;RTU       ;               ;3   ;20  ;9     ;5300;54  ;[RO]Digital input 5 value
-1;P;PLC_DigIn_6                    ;WORD_BIT ;6   ;RTU       ;               ;3   ;20  ;9     ;5300;54  ;[RO]Digital input 6 value
-1;P;PLC_DigIn_7                    ;WORD_BIT ;7   ;RTU       ;               ;3   ;20  ;9     ;5300;54  ;[RO]Digital input 7 value
-1;P;PLC_DigIn_8                    ;WORD_BIT ;8   ;RTU       ;               ;3   ;20  ;9     ;5300;54  ;[RO]Digital input 8 value
-1;P;PLC_DigIn_9                    ;WORD_BIT ;9   ;RTU       ;               ;3   ;20  ;9     ;5300;54  ;[RO]Digital input 9 value
-1;P;PLC_DigIn_10                   ;WORD_BIT ;10  ;RTU       ;               ;3   ;20  ;9     ;5300;54  ;[RO]Digital input 10 value
-1;P;PLC_DigIn_11                   ;WORD_BIT ;11  ;RTU       ;               ;3   ;20  ;9     ;5300;54  ;[RO]Digital input 11 value
-1;P;PLC_DigIn_12                   ;WORD_BIT ;12  ;RTU       ;               ;3   ;20  ;9     ;5300;54  ;[RO]Digital input 12 value
-1;P;PLC_AnIn_1                     ;INT      ;3   ;RTU       ;               ;3   ;20  ;10    ;5300;54  ;[RO]Analog input 1 value
-1;P;PLC_AnIn_2                     ;INT      ;3   ;RTU       ;               ;3   ;20  ;11    ;5300;54  ;[RO]Analog input 2 value
-1;P;PLC_Reserved_1                 ;INT      ;3   ;RTU       ;               ;3   ;20  ;12    ;5300;54  ;[RO]Reserved
-1;P;PLC_Reserved_2                 ;INT      ;3   ;RTU       ;               ;3   ;20  ;13    ;5300;54  ;[RO]Reserved
-1;P;PLC_Reserved_3                 ;INT      ;3   ;RTU       ;               ;3   ;20  ;14    ;5300;54  ;[RO]Reserved
-1;P;PLC_Tamb                       ;INT      ;1   ;RTU       ;               ;3   ;20  ;15    ;5300;54  ;[RO]Cold junction compensation value
-1;P;PLC_Encoder                    ;DINT     ;0   ;RTU       ;               ;3   ;20  ;16    ;5300;54  ;[RW]Encoder reading value
-1;P;PLC_Capture                    ;UDINT    ;0   ;RTU       ;               ;3   ;20  ;18    ;5300;54  ;[RO]Time between 2 input edges
-1;P;PLC_DigOut_1                   ;BYTE_BIT ;1   ;RTU       ;               ;3   ;20  ;20    ;5300;54  ;[RW]Digital output 1 value
-1;P;PLC_DigOut_2                   ;BYTE_BIT ;2   ;RTU       ;               ;3   ;20  ;20    ;5300;54  ;[RW]Digital output 2 value
-1;P;PLC_DigOut_3                   ;BYTE_BIT ;3   ;RTU       ;               ;3   ;20  ;20    ;5300;54  ;[RW]Digital output 3 value
-1;P;PLC_DigOut_4                   ;BYTE_BIT ;4   ;RTU       ;               ;3   ;20  ;20    ;5300;54  ;[RW]Digital output 4 value
-1;P;PLC_DigOut_5                   ;BYTE_BIT ;5   ;RTU       ;               ;3   ;20  ;20    ;5300;54  ;[RW]Digital output 5 value
-1;P;PLC_DigOut_6                   ;BYTE_BIT ;6   ;RTU       ;               ;3   ;20  ;20    ;5300;54  ;[RW]Digital output 6 value
-1;P;PLC_DigOut_7                   ;BYTE_BIT ;7   ;RTU       ;               ;3   ;20  ;20    ;5300;54  ;[RW]Digital output 7 value
-1;P;PLC_DigOut_8                   ;BYTE_BIT ;8   ;RTU       ;               ;3   ;20  ;20    ;5300;54  ;[RW]Digital output 8 value
-1;P;PLC_AnOut_1                    ;INT      ;2   ;RTU       ;               ;3   ;20  ;21    ;5300;54  ;[RW]Analog output 1 value
-1;P;PLC_AnOut_2                    ;INT      ;2   ;RTU       ;               ;3   ;20  ;22    ;5300;54  ;[RW]Analog output 2 value
-1;P;PLC_AnOut_3                    ;INT      ;2   ;RTU       ;               ;3   ;20  ;23    ;5300;54  ;[RW]Analog output 3 value
-1;P;PLC_AnOut_4                    ;INT      ;2   ;RTU       ;               ;3   ;20  ;24    ;5300;54  ;[RW]Analog output 4 value
-1;P;PLC_EncoderStart               ;UINT     ;0   ;RTU       ;               ;3   ;20  ;25    ;5300;54  ;[RW]Encoder - counter enable
-1;P;PLC_EncoderReset               ;UINT     ;0   ;RTU       ;               ;3   ;20  ;26    ;5300;54  ;[RW]Encoder reset
-1;P;PLC_Heartbeat                  ;UINT     ;0   ;RTU       ;               ;3   ;20  ;27    ;5300;54  ;[RO]In - Out board function check
-1;P;PLC_StatusReg                  ;UINT     ;0   ;RTU       ;               ;3   ;20  ;28    ;5300;54  ;[RO]In - Out board status
-1;P;PLC_AnIn1Filter                ;UINT     ;0   ;RTU       ;               ;3   ;20  ;29    ;5300;54  ;[RW]Analog input 1 filter
-1;P;PLC_AnIn2Filter                ;UINT     ;0   ;RTU       ;               ;3   ;20  ;30    ;5300;54  ;[RW]Analog input 2 filter
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
+1;P;PLC_FWrevision                 ;UINT     ;0   ;RTU       ;               ;3   ;20  ;0     ;5300;57  ;[RO]Firmware version
+1;P;PLC_HWconfig                   ;UINT     ;0   ;RTU       ;               ;3   ;20  ;1     ;5300;57  ;[RO]Hardware configuration
+1;P;PLC_DigDir_1                   ;BYTE_BIT ;1   ;RTU       ;               ;3   ;20  ;2     ;5300;57  ;[RW]Digital 1 direction (input = 0 output = 1)
+1;P;PLC_DigDir_2                   ;BYTE_BIT ;2   ;RTU       ;               ;3   ;20  ;2     ;5300;57  ;[RW]Digital 2 direction (input = 0 output = 1)
+1;P;PLC_DigDir_3                   ;BYTE_BIT ;3   ;RTU       ;               ;3   ;20  ;2     ;5300;57  ;[RW]Digital 3 direction (input = 0 output = 1)
+1;P;PLC_DigDir_4                   ;BYTE_BIT ;4   ;RTU       ;               ;3   ;20  ;2     ;5300;57  ;[RW]Digital 4 direction (input = 0 output = 1)
+1;P;PLC_DigDir_5                   ;BYTE_BIT ;5   ;RTU       ;               ;3   ;20  ;2     ;5300;57  ;[RW]Digital 5 direction (input = 0 output = 1)
+1;P;PLC_DigDir_6                   ;BYTE_BIT ;6   ;RTU       ;               ;3   ;20  ;2     ;5300;57  ;[RW]Digital 6 direction (input = 0 output = 1)
+1;P;PLC_DigDir_7                   ;BYTE_BIT ;7   ;RTU       ;               ;3   ;20  ;2     ;5300;57  ;[RW]Digital 7 direction (input = 0 output = 1)
+1;P;PLC_DigDir_8                   ;BYTE_BIT ;8   ;RTU       ;               ;3   ;20  ;2     ;5300;57  ;[RW]Digital 8 direction (input = 0 output = 1)
+1;P;PLC_AnInConf_1                 ;UINT     ;0   ;RTU       ;               ;3   ;20  ;3     ;5300;57  ;[RW]Analog input 1 configuration
+1;P;PLC_AnInConf_2                 ;UINT     ;0   ;RTU       ;               ;3   ;20  ;4     ;5300;57  ;[RW]Analog input 2 configuration
+1;P;PLC_AnOutConf_1                ;UINT     ;0   ;RTU       ;               ;3   ;20  ;5     ;5300;57  ;[RW]Analog output 1 configuration
+1;P;PLC_AnOutConf_2                ;UINT     ;0   ;RTU       ;               ;3   ;20  ;6     ;5300;57  ;[RW]Analog output 2 configuration
+1;P;PLC_AnOutConf_3                ;UINT     ;0   ;RTU       ;               ;3   ;20  ;7     ;5300;57  ;[RW]Analog output 3 configuration
+1;P;PLC_AnOutConf_4                ;UINT     ;0   ;RTU       ;               ;3   ;20  ;8     ;5300;57  ;[RW]Analog output 4 configuration
+1;P;PLC_DigIn_1                    ;WORD_BIT ;1   ;RTU       ;               ;3   ;20  ;9     ;5300;57  ;[RO]Digital input 1 value
+1;P;PLC_DigIn_2                    ;WORD_BIT ;2   ;RTU       ;               ;3   ;20  ;9     ;5300;57  ;[RO]Digital input 2 value
+1;P;PLC_DigIn_3                    ;WORD_BIT ;3   ;RTU       ;               ;3   ;20  ;9     ;5300;57  ;[RO]Digital input 3 value
+1;P;PLC_DigIn_4                    ;WORD_BIT ;4   ;RTU       ;               ;3   ;20  ;9     ;5300;57  ;[RO]Digital input 4 value
+1;P;PLC_DigIn_5                    ;WORD_BIT ;5   ;RTU       ;               ;3   ;20  ;9     ;5300;57  ;[RO]Digital input 5 value
+1;P;PLC_DigIn_6                    ;WORD_BIT ;6   ;RTU       ;               ;3   ;20  ;9     ;5300;57  ;[RO]Digital input 6 value
+1;P;PLC_DigIn_7                    ;WORD_BIT ;7   ;RTU       ;               ;3   ;20  ;9     ;5300;57  ;[RO]Digital input 7 value
+1;P;PLC_DigIn_8                    ;WORD_BIT ;8   ;RTU       ;               ;3   ;20  ;9     ;5300;57  ;[RO]Digital input 8 value
+1;P;PLC_DigIn_9                    ;WORD_BIT ;9   ;RTU       ;               ;3   ;20  ;9     ;5300;57  ;[RO]Digital input 9 value
+1;P;PLC_DigIn_10                   ;WORD_BIT ;10  ;RTU       ;               ;3   ;20  ;9     ;5300;57  ;[RO]Digital input 10 value
+1;P;PLC_DigIn_11                   ;WORD_BIT ;11  ;RTU       ;               ;3   ;20  ;9     ;5300;57  ;[RO]Digital input 11 value
+1;P;PLC_DigIn_12                   ;WORD_BIT ;12  ;RTU       ;               ;3   ;20  ;9     ;5300;57  ;[RO]Digital input 12 value
+1;P;PLC_AnIn_1                     ;INT      ;3   ;RTU       ;               ;3   ;20  ;10    ;5300;57  ;[RO]Analog input 1 value
+1;P;PLC_AnIn_2                     ;INT      ;3   ;RTU       ;               ;3   ;20  ;11    ;5300;57  ;[RO]Analog input 2 value
+1;P;PLC_Reserved_1                 ;INT      ;3   ;RTU       ;               ;3   ;20  ;12    ;5300;57  ;[RO]Reserved
+1;P;PLC_Reserved_2                 ;INT      ;3   ;RTU       ;               ;3   ;20  ;13    ;5300;57  ;[RO]Reserved
+1;P;PLC_Reserved_3                 ;INT      ;3   ;RTU       ;               ;3   ;20  ;14    ;5300;57  ;[RO]Reserved
+1;P;PLC_Tamb                       ;INT      ;1   ;RTU       ;               ;3   ;20  ;15    ;5300;57  ;[RO]Cold junction compensation value
+1;P;PLC_Encoder                    ;DINT     ;0   ;RTU       ;               ;3   ;20  ;16    ;5300;57  ;[RW]Encoder reading value
+1;P;PLC_Capture                    ;UDINT    ;0   ;RTU       ;               ;3   ;20  ;18    ;5300;57  ;[RO]Time between 2 input edges
+1;P;PLC_DigOut_1                   ;BYTE_BIT ;1   ;RTU       ;               ;3   ;20  ;20    ;5300;57  ;[RW]Digital output 1 value
+1;P;PLC_DigOut_2                   ;BYTE_BIT ;2   ;RTU       ;               ;3   ;20  ;20    ;5300;57  ;[RW]Digital output 2 value
+1;P;PLC_DigOut_3                   ;BYTE_BIT ;3   ;RTU       ;               ;3   ;20  ;20    ;5300;57  ;[RW]Digital output 3 value
+1;P;PLC_DigOut_4                   ;BYTE_BIT ;4   ;RTU       ;               ;3   ;20  ;20    ;5300;57  ;[RW]Digital output 4 value
+1;P;PLC_DigOut_5                   ;BYTE_BIT ;5   ;RTU       ;               ;3   ;20  ;20    ;5300;57  ;[RW]Digital output 5 value
+1;P;PLC_DigOut_6                   ;BYTE_BIT ;6   ;RTU       ;               ;3   ;20  ;20    ;5300;57  ;[RW]Digital output 6 value
+1;P;PLC_DigOut_7                   ;BYTE_BIT ;7   ;RTU       ;               ;3   ;20  ;20    ;5300;57  ;[RW]Digital output 7 value
+1;P;PLC_DigOut_8                   ;BYTE_BIT ;8   ;RTU       ;               ;3   ;20  ;20    ;5300;57  ;[RW]Digital output 8 value
+1;P;PLC_AnOut_1                    ;INT      ;2   ;RTU       ;               ;3   ;20  ;21    ;5300;57  ;[RW]Analog output 1 value
+1;P;PLC_AnOut_2                    ;INT      ;2   ;RTU       ;               ;3   ;20  ;22    ;5300;57  ;[RW]Analog output 2 value
+1;P;PLC_AnOut_3                    ;INT      ;2   ;RTU       ;               ;3   ;20  ;23    ;5300;57  ;[RW]Analog output 3 value
+1;P;PLC_AnOut_4                    ;INT      ;2   ;RTU       ;               ;3   ;20  ;24    ;5300;57  ;[RW]Analog output 4 value
+1;P;PLC_EncoderStart               ;UINT     ;0   ;RTU       ;               ;3   ;20  ;25    ;5300;57  ;[RW]Encoder - counter enable
+1;P;PLC_EncoderReset               ;UINT     ;0   ;RTU       ;               ;3   ;20  ;26    ;5300;57  ;[RW]Encoder reset
+1;P;PLC_Heartbeat                  ;UINT     ;0   ;RTU       ;               ;3   ;20  ;27    ;5300;57  ;[RO]In - Out board function check
+1;P;PLC_StatusReg                  ;UINT     ;0   ;RTU       ;               ;3   ;20  ;28    ;5300;57  ;[RO]In - Out board status
+1;P;PLC_AnIn1Filter                ;UINT     ;0   ;RTU       ;               ;3   ;20  ;29    ;5300;57  ;[RW]Analog input 1 filter
+1;P;PLC_AnIn2Filter                ;UINT     ;0   ;RTU       ;               ;3   ;20  ;30    ;5300;57  ;[RW]Analog input 2 filter
+1;P;PLC_AnIn3Filter                ;UINT     ;0   ;RTU       ;               ;3   ;20  ;31    ;5300;57  ;[RW]Analog input 3 filter
+1;P;PLC_Reserved_4                 ;UINT     ;0   ;RTU       ;               ;3   ;20  ;32    ;5300;57  ;[RW]Analog input 4 filter
+1;P;PLC_Reserved_5                 ;UINT     ;0   ;RTU       ;               ;3   ;20  ;33    ;5300;57  ;[RW]Analog input 5 filter
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
