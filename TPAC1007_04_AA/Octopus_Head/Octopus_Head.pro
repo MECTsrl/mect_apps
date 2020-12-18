@@ -115,7 +115,11 @@ OTHER_FILES += \
     recipes/Values/1.csv \
     recipes/Values/2.csv \
     recipes/Values/3.csv \
-    recipes/Zeroes/0.csv
+    recipes/Zeroes/0.csv \
+    recipes/TPAC1007_04_AD/2.csv \
+    recipes/TPAC1007_04_AD/1.csv \
+    recipes/TPAC1007_04_AE/2.csv \
+    recipes/TPAC1007_04_AE/1.csv
 
 recipes_TP1043_01_A.files = recipes/TP1043_01_A/1.csv recipes/TP1043_01_A/2.csv
 recipes_TP1043_01_A.path = /local/data/recipe/TP1043_01_A
