@@ -42,14 +42,14 @@ END_VAR
 	if TST_AnIn_1  then
 		VALx_AnInConf_1 := VAL_AnInConf_1;
 		VALx_AnInFltr_1 := VAL_AnInFltr_1;
-		(* Prey AnIn_1 <-- Head AnOut_1 + DigOut_5,7 + TPLC005 DigOut_3,4 *) 
+		(* Prey AnIn_1 <-- Head AnOut_1 + DigOut_5,8 + TPLC005 DigOut_3,4 *) 
 		case VAL_AnInConf_1 of
-		1:       PLC_DigOut_7 := 1; PLC_DigOut_6 := 0; RTU_LocDigOut_3 := 0; RTU_LocDigOut_4 := 0; PLC_AnOutConf_1 := 1;
-		2:       PLC_DigOut_7 := 0; PLC_DigOut_6 := 0; RTU_LocDigOut_3 := 0; RTU_LocDigOut_4 := 0; PLC_AnOutConf_1 := 2;
+		1:       PLC_DigOut_8 := 1; PLC_DigOut_6 := 0; RTU_LocDigOut_3 := 0; RTU_LocDigOut_4 := 0; PLC_AnOutConf_1 := 1;
+		2:       PLC_DigOut_8 := 0; PLC_DigOut_6 := 0; RTU_LocDigOut_3 := 0; RTU_LocDigOut_4 := 0; PLC_AnOutConf_1 := 2;
 		3, 4, 5,
-		8, 9,10: PLC_DigOut_7 := 0; PLC_DigOut_6 := 1; RTU_LocDigOut_3 := 1; RTU_LocDigOut_4 := 0; PLC_AnOutConf_1 := 1;
-		6, 7:    PLC_DigOut_7 := 0; PLC_DigOut_6 := 1; RTU_LocDigOut_3 := 0; RTU_LocDigOut_4 := 1; PLC_AnOutConf_1 := 1;
-		else     PLC_DigOut_7 := 0; PLC_DigOut_6 := 0; RTU_LocDigOut_3 := 0; RTU_LocDigOut_4 := 0; PLC_AnOutConf_1 := 2;
+		8, 9,10: PLC_DigOut_8 := 0; PLC_DigOut_6 := 1; RTU_LocDigOut_3 := 1; RTU_LocDigOut_4 := 0; PLC_AnOutConf_1 := 1;
+		6, 7:    PLC_DigOut_8 := 0; PLC_DigOut_6 := 1; RTU_LocDigOut_3 := 0; RTU_LocDigOut_4 := 1; PLC_AnOutConf_1 := 1;
+		else     PLC_DigOut_8 := 0; PLC_DigOut_6 := 0; RTU_LocDigOut_3 := 0; RTU_LocDigOut_4 := 0; PLC_AnOutConf_1 := 2;
 		end_case;
 		PLC_AnOut_1 := ValueOut(Val_AnIn_1, VAL_AnInConf_1);
 	end_if;
@@ -57,14 +57,14 @@ END_VAR
 	if TST_AnIn_2  then
 		VALx_AnInConf_2 := VAL_AnInConf_2;
 		VALx_AnInFltr_2 := VAL_AnInFltr_2;
-		(* Prey AnIn_2 <-- Head AnOut_2 + DigOut_6,8 + TPLC005 DigOut_1,2 *) 
+		(* Prey AnIn_2 <-- Head AnOut_2 + DigOut_6,7 + TPLC005 DigOut_1,2 *) 
 		case VAL_AnInConf_2 of
-		1:       PLC_DigOut_8 := 1; PLC_DigOut_5 := 0; RTU_LocDigOut_1 := 0; RTU_LocDigOut_2 := 0; PLC_AnOutConf_2 := 1;
-		2:       PLC_DigOut_8 := 0; PLC_DigOut_5 := 0; RTU_LocDigOut_1 := 0; RTU_LocDigOut_2 := 0; PLC_AnOutConf_2 := 2;
+		1:       PLC_DigOut_7 := 1; PLC_DigOut_5 := 0; RTU_LocDigOut_1 := 0; RTU_LocDigOut_2 := 0; PLC_AnOutConf_2 := 1;
+		2:       PLC_DigOut_7 := 0; PLC_DigOut_5 := 0; RTU_LocDigOut_1 := 0; RTU_LocDigOut_2 := 0; PLC_AnOutConf_2 := 2;
 		3, 4, 5,
-		8, 9,10: PLC_DigOut_8 := 0; PLC_DigOut_5 := 1; RTU_LocDigOut_1 := 1; RTU_LocDigOut_2 := 0; PLC_AnOutConf_2 := 1;
-		6, 7:    PLC_DigOut_8 := 0; PLC_DigOut_5 := 1; RTU_LocDigOut_1 := 0; RTU_LocDigOut_2 := 1; PLC_AnOutConf_2 := 1;
-		else     PLC_DigOut_8 := 0; PLC_DigOut_5 := 0; RTU_LocDigOut_1 := 0; RTU_LocDigOut_2 := 0; PLC_AnOutConf_2 := 2;
+		8, 9,10: PLC_DigOut_7 := 0; PLC_DigOut_5 := 1; RTU_LocDigOut_1 := 1; RTU_LocDigOut_2 := 0; PLC_AnOutConf_2 := 1;
+		6, 7:    PLC_DigOut_7 := 0; PLC_DigOut_5 := 1; RTU_LocDigOut_1 := 0; RTU_LocDigOut_2 := 1; PLC_AnOutConf_2 := 1;
+		else     PLC_DigOut_7 := 0; PLC_DigOut_5 := 0; RTU_LocDigOut_1 := 0; RTU_LocDigOut_2 := 0; PLC_AnOutConf_2 := 2;
 		end_case;
 		PLC_AnOut_2 := ValueOut(Val_AnIn_2, VAL_AnInConf_2);
 	end_if;
@@ -72,14 +72,14 @@ END_VAR
 	if TST_AnIn_3  then
 		VALx_AnInConf_3 := VAL_AnInConf_3;
 		VALx_AnInFltr_3 := VAL_AnInFltr_3;
-		(* Prey AnIn_3 <-- Horn2 AnOut_1 + DigOut_5,7 + TPLC005 DigOut_7,8  *) 
+		(* Prey AnIn_3 <-- Horn2 AnOut_1 + DigOut_5,8  TPLC005 DigOut_7,8  *) 
 		case VAL_AnInConf_3 of
-		1:       VAL2_DigOut_7 := 1; VAL2_DigOut_5 := 0; RTU_LocDigOut_7 := 0; RTU_LocDigOut_8 := 0; VAL2_AnOutConf_1 := 1;
-		2:       VAL2_DigOut_7 := 0; VAL2_DigOut_5 := 0; RTU_LocDigOut_7 := 0; RTU_LocDigOut_8 := 0; VAL2_AnOutConf_1 := 2;
+		1:       VAL2_DigOut_8 := 1; VAL2_DigOut_5 := 0; RTU_LocDigOut_7 := 0; RTU_LocDigOut_8 := 0; VAL2_AnOutConf_1 := 1;
+		2:       VAL2_DigOut_8 := 0; VAL2_DigOut_5 := 0; RTU_LocDigOut_7 := 0; RTU_LocDigOut_8 := 0; VAL2_AnOutConf_1 := 2;
 		3, 4, 5,
-		8, 9,10: VAL2_DigOut_7 := 0; VAL2_DigOut_5 := 1; RTU_LocDigOut_7 := 1; RTU_LocDigOut_8 := 0; VAL2_AnOutConf_1 := 1; 
-		6, 7:    VAL2_DigOut_7 := 0; VAL2_DigOut_5 := 1; RTU_LocDigOut_7 := 0; RTU_LocDigOut_8 := 1; VAL2_AnOutConf_1 := 1;
-		else     VAL2_DigOut_7 := 0; VAL2_DigOut_5 := 0; RTU_LocDigOut_7 := 0; RTU_LocDigOut_8 := 0; VAL2_AnOutConf_1 := 2;
+		8, 9,10: VAL2_DigOut_8 := 0; VAL2_DigOut_5 := 1; RTU_LocDigOut_7 := 1; RTU_LocDigOut_8 := 0; VAL2_AnOutConf_1 := 1; 
+		6, 7:    VAL2_DigOut_8 := 0; VAL2_DigOut_5 := 1; RTU_LocDigOut_7 := 0; RTU_LocDigOut_8 := 1; VAL2_AnOutConf_1 := 1;
+		else     VAL2_DigOut_8 := 0; VAL2_DigOut_5 := 0; RTU_LocDigOut_7 := 0; RTU_LocDigOut_8 := 0; VAL2_AnOutConf_1 := 2;
 		end_case;
 		VAL2_AnOut_1 := ValueOut(Val_AnIn_3, VAL_AnInConf_3);
 	end_if;
@@ -87,14 +87,14 @@ END_VAR
 	if TST_AnIn_4  then
 		VALx_AnInConf_4 := VAL_AnInConf_4;
 		VALx_AnInFltr_4 := VAL_AnInFltr_4;
-		(* Prey AnIn_4 <-- Horn2 AnOut_2 + DigOut_6,8 + TPLC005 DigOut_5,6  *) 
+		(* Prey AnIn_4 <-- Horn2 AnOut_2 + DigOut_6,7 + TPLC005 DigOut_5,6  *) 
 		case VAL_AnInConf_4 of
-		1:       VAL2_DigOut_8 := 1; VAL2_DigOut_6 := 0; RTU_LocDigOut_5 := 0; RTU_LocDigOut_6 := 0; VAL2_AnOutConf_2 := 1;
-		2:       VAL2_DigOut_8 := 0; VAL2_DigOut_6 := 0; RTU_LocDigOut_5 := 0; RTU_LocDigOut_6 := 0; VAL2_AnOutConf_2 := 2;
+		1:       VAL2_DigOut_7 := 1; VAL2_DigOut_6 := 0; RTU_LocDigOut_5 := 0; RTU_LocDigOut_6 := 0; VAL2_AnOutConf_2 := 1;
+		2:       VAL2_DigOut_7 := 0; VAL2_DigOut_6 := 0; RTU_LocDigOut_5 := 0; RTU_LocDigOut_6 := 0; VAL2_AnOutConf_2 := 2;
 		3, 4, 5,
-		8, 9,10: VAL2_DigOut_8 := 0; VAL2_DigOut_6 := 1; RTU_LocDigOut_5 := 1; RTU_LocDigOut_6 := 0; VAL2_AnOutConf_2 := 1;
-		6, 7:    VAL2_DigOut_8 := 0; VAL2_DigOut_6 := 1; RTU_LocDigOut_5 := 0; RTU_LocDigOut_6 := 1; VAL2_AnOutConf_2 := 1;
-		else     VAL2_DigOut_8 := 0; VAL2_DigOut_6 := 0; RTU_LocDigOut_5 := 0; RTU_LocDigOut_6 := 0; VAL2_AnOutConf_2 := 2;
+		8, 9,10: VAL2_DigOut_7 := 0; VAL2_DigOut_6 := 1; RTU_LocDigOut_5 := 1; RTU_LocDigOut_6 := 0; VAL2_AnOutConf_2 := 1;
+		6, 7:    VAL2_DigOut_7 := 0; VAL2_DigOut_6 := 1; RTU_LocDigOut_5 := 0; RTU_LocDigOut_6 := 1; VAL2_AnOutConf_2 := 1;
+		else     VAL2_DigOut_7 := 0; VAL2_DigOut_6 := 0; RTU_LocDigOut_5 := 0; RTU_LocDigOut_6 := 0; VAL2_AnOutConf_2 := 2;
 		end_case;
 		VAL2_AnOut_2 := ValueOut(Val_AnIn_4, VAL_AnInConf_4);
 	end_if;

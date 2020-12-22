@@ -1255,10 +1255,10 @@ NODE20 [4]</string>
     </color>
    </property>
    <property name="text">
-    <string>TPAC1007_4AA</string>
+    <string>TPAC1007_04_AA</string>
    </property>
    <property name="pressText">
-    <string>TPAC1007_4AA</string>
+    <string>TPAC1007_04_AA</string>
    </property>
    <property name="borderWidth">
     <number>1</number>
@@ -2885,7 +2885,7 @@ Horn [2]</string>
     </font>
    </property>
    <property name="toolTip">
-    <string>page: BACK  status: </string>
+    <string/>
    </property>
    <property name="whatsThis">
     <string>ATCMbutton widget</string>

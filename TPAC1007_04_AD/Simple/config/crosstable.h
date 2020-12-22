@@ -1277,7 +1277,7 @@ int addWrite_PLC_AnInConf_3(u_int16_t value);
 int getStatus_PLC_AnInConf_3(void);
 
 #define ID_PLC_Reserved_1 5315
-extern u_int16_t PLC_Reserved_1;	/* Analog output 4 configuration */
+extern u_int16_t PLC_Reserved_1;	/* Reserved */
 int doWrite_PLC_Reserved_1(u_int16_t value);
 int addWrite_PLC_Reserved_1(u_int16_t value);
 int getStatus_PLC_Reserved_1(void);
@@ -1373,13 +1373,13 @@ int addWrite_PLC_AnIn_3(int16_t value);
 int getStatus_PLC_AnIn_3(void);
 
 #define ID_PLC_Reserved_2 5331
-extern int16_t PLC_Reserved_2;	/* Analog input 4 value */
+extern int16_t PLC_Reserved_2;	/* Reserved */
 int doWrite_PLC_Reserved_2(int16_t value);
 int addWrite_PLC_Reserved_2(int16_t value);
 int getStatus_PLC_Reserved_2(void);
 
 #define ID_PLC_Reserved_3 5332
-extern int16_t PLC_Reserved_3;	/* Analog input 5 value */
+extern int16_t PLC_Reserved_3;	/* Reserved */
 int doWrite_PLC_Reserved_3(int16_t value);
 int addWrite_PLC_Reserved_3(int16_t value);
 int getStatus_PLC_Reserved_3(void);
@@ -1463,13 +1463,13 @@ int addWrite_PLC_AnOut_2(int16_t value);
 int getStatus_PLC_AnOut_2(void);
 
 #define ID_PLC_Reserved_4 5346
-extern int16_t PLC_Reserved_4;	/* Analog output 3 value */
+extern int16_t PLC_Reserved_4;	/* Reserved */
 int doWrite_PLC_Reserved_4(int16_t value);
 int addWrite_PLC_Reserved_4(int16_t value);
 int getStatus_PLC_Reserved_4(void);
 
 #define ID_PLC_Reserved_5 5347
-extern int16_t PLC_Reserved_5;	/* Analog output 4 value */
+extern int16_t PLC_Reserved_5;	/* Reserved */
 int doWrite_PLC_Reserved_5(int16_t value);
 int addWrite_PLC_Reserved_5(int16_t value);
 int getStatus_PLC_Reserved_5(void);
@@ -1517,13 +1517,13 @@ int addWrite_PLC_AnIn3Filter(u_int16_t value);
 int getStatus_PLC_AnIn3Filter(void);
 
 #define ID_PLC_Reserved_6 5355
-extern u_int16_t PLC_Reserved_6;	/* Analog input 4 filter */
+extern u_int16_t PLC_Reserved_6;	/* Reserved */
 int doWrite_PLC_Reserved_6(u_int16_t value);
 int addWrite_PLC_Reserved_6(u_int16_t value);
 int getStatus_PLC_Reserved_6(void);
 
 #define ID_PLC_Reserved_7 5356
-extern u_int16_t PLC_Reserved_7;	/* Analog input 5 filter */
+extern u_int16_t PLC_Reserved_7;	/* Reserved */
 int doWrite_PLC_Reserved_7(u_int16_t value);
 int addWrite_PLC_Reserved_7(u_int16_t value);
 int getStatus_PLC_Reserved_7(void);

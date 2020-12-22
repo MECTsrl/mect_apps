@@ -81,7 +81,7 @@
     </message>
     <message>
         <location filename="page100.ui" line="166"/>
-        <location filename="page100.ui" line="172"/>
+        <location filename="page100.ui" line="178"/>
         <source>PLC_DigIn_6</source>
         <translation type="unfinished"></translation>
     </message>
@@ -229,13 +229,13 @@ NODE20 NODE1</source>
     </message>
     <message>
         <location filename="page100.ui" line="790"/>
-        <location filename="page100.ui" line="796"/>
+        <location filename="page100.ui" line="802"/>
         <source>PLC_DigIn_2</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="page100.ui" line="832"/>
-        <location filename="page100.ui" line="838"/>
+        <location filename="page100.ui" line="844"/>
         <source>PLC_DigIn_5</source>
         <translation type="unfinished"></translation>
     </message>
@@ -335,7 +335,7 @@ NODE20 NODE1</source>
     </message>
     <message>
         <location filename="page100.ui" line="1400"/>
-        <location filename="page100.ui" line="1406"/>
+        <location filename="page100.ui" line="1412"/>
         <source>PLC_DigIn_4</source>
         <translation type="unfinished"></translation>
     </message>
@@ -359,7 +359,7 @@ NODE20 NODE1</source>
     </message>
     <message>
         <location filename="page100.ui" line="1546"/>
-        <location filename="page100.ui" line="1552"/>
+        <location filename="page100.ui" line="1558"/>
         <source>RTU_RTU1_RD</source>
         <translation type="unfinished"></translation>
     </message>
@@ -457,7 +457,7 @@ NODE 1</source>
     </message>
     <message>
         <location filename="page100.ui" line="2231"/>
-        <location filename="page100.ui" line="2237"/>
+        <location filename="page100.ui" line="2243"/>
         <source>PLC_DigIn_3</source>
         <translation type="unfinished"></translation>
     </message>
@@ -481,7 +481,7 @@ NODE 1</source>
     </message>
     <message>
         <location filename="page100.ui" line="2502"/>
-        <location filename="page100.ui" line="2508"/>
+        <location filename="page100.ui" line="2514"/>
         <source>PLC_DigIn_8</source>
         <translation type="unfinished"></translation>
     </message>
@@ -545,7 +545,7 @@ NODE 1</source>
     </message>
     <message>
         <location filename="page100.ui" line="3208"/>
-        <location filename="page100.ui" line="3214"/>
+        <location filename="page100.ui" line="3220"/>
         <source>TPLC005_DigIn_3</source>
         <translation type="unfinished"></translation>
     </message>
@@ -574,7 +574,7 @@ NODE 1</source>
     </message>
     <message>
         <location filename="page100.ui" line="3415"/>
-        <location filename="page100.ui" line="3421"/>
+        <location filename="page100.ui" line="3427"/>
         <source>PLC_DigIn_1</source>
         <translation type="unfinished"></translation>
     </message>
@@ -586,7 +586,7 @@ NODE 1</source>
     </message>
     <message>
         <location filename="page100.ui" line="3536"/>
-        <location filename="page100.ui" line="3542"/>
+        <location filename="page100.ui" line="3548"/>
         <source>PLC_DigIn_7</source>
         <translation type="unfinished"></translation>
     </message>

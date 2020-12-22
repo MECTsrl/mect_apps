@@ -1477,7 +1477,7 @@ u_int16_t PLC_AnInConf_3 = 0;
 
 
 /*
- * Variable PLC_Reserved_1	[ Analog output 4 configuration ]
+ * Variable PLC_Reserved_1	[ Reserved ]
  */
 
 u_int16_t PLC_Reserved_1 = 0;
@@ -1589,14 +1589,14 @@ int16_t PLC_AnIn_3 = 0;
 
 
 /*
- * Variable PLC_Reserved_2	[ Analog input 4 value ]
+ * Variable PLC_Reserved_2	[ Reserved ]
  */
 
 int16_t PLC_Reserved_2 = 0;
 
 
 /*
- * Variable PLC_Reserved_3	[ Analog input 5 value ]
+ * Variable PLC_Reserved_3	[ Reserved ]
  */
 
 int16_t PLC_Reserved_3 = 0;
@@ -1694,14 +1694,14 @@ int16_t PLC_AnOut_2 = 0;
 
 
 /*
- * Variable PLC_Reserved_4	[ Analog output 3 value ]
+ * Variable PLC_Reserved_4	[ Reserved ]
  */
 
 int16_t PLC_Reserved_4 = 0;
 
 
 /*
- * Variable PLC_Reserved_5	[ Analog output 4 value ]
+ * Variable PLC_Reserved_5	[ Reserved ]
  */
 
 int16_t PLC_Reserved_5 = 0;
@@ -1757,14 +1757,14 @@ u_int16_t PLC_AnIn3Filter = 0;
 
 
 /*
- * Variable PLC_Reserved_6	[ Analog input 4 filter ]
+ * Variable PLC_Reserved_6	[ Reserved ]
  */
 
 u_int16_t PLC_Reserved_6 = 0;
 
 
 /*
- * Variable PLC_Reserved_7	[ Analog input 5 filter ]
+ * Variable PLC_Reserved_7	[ Reserved ]
  */
 
 u_int16_t PLC_Reserved_7 = 0;

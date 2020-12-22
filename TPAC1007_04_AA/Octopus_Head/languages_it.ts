@@ -569,7 +569,8 @@ Drop</source>
     <message>
         <location filename="page100.ui" line="3141"/>
         <location filename="page100.ui" line="3144"/>
-        <source>TPAC1007_4AA</source>
+        <source>TPAC1007_04_AA</source>
+        <oldsource>TPAC1007_4AA</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1093,8 +1094,6 @@ Drop</source>
     <message>
         <location filename="page200.ui" line="2030"/>
         <location filename="page200.ui" line="2033"/>
-        <location filename="page200.ui" line="3294"/>
-        <location filename="page200.ui" line="3297"/>
         <source>TPAC1007_4AA</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1248,6 +1247,12 @@ ON</source>
     <message utf8="true">
         <location filename="page200.ui" line="3203"/>
         <source>° C</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page200.ui" line="3294"/>
+        <location filename="page200.ui" line="3297"/>
+        <source>TPAC1007_04_AA</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1655,7 +1660,8 @@ NODE20 [4]</source>
     <message>
         <location filename="page201.ui" line="1258"/>
         <location filename="page201.ui" line="1261"/>
-        <source>TPAC1007_4AA</source>
+        <source>TPAC1007_04_AA</source>
+        <oldsource>TPAC1007_4AA</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1846,11 +1852,6 @@ Horn [2]</source>
         <location filename="page201.ui" line="2835"/>
         <location filename="page201.ui" line="2841"/>
         <source>RTU0_BAUDRATE</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page201.ui" line="2888"/>
-        <source>page: BACK  status: </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2238,8 +2239,8 @@ ON</source>
     </message>
     <message>
         <location filename="page300.ui" line="964"/>
-        <source>1;TP1043_01_A;2;TP1043_01_B;3;TP1043_02_A;4;TP1043_02_B;5;TP1057_01_A;6;TP1057_01_B;7;TP1070_01_A;8;TP1070_01_B;9;TP1070_01_C;10;TP1070_02_E;11;TPAC1005;12;TPAC1006;13;TPAC1007_03;14;TPAC1007_04_AA;15;TPAC1007_04_AB;16;TPAC1007_04_AC;17;TPAC1007_LV;18;TPAC1008_01;19;TPAC1008_02_AA;20;TPAC1008_02_AB;21;TPAC1008_02_AD;22;TPAC1008_02_AE;23;TPAC1008_02_AF;24;TPAC1008_03_AC;25;TPAC1008_03_AD;26;TPLC050_01_AA;27;TPLC100_01_AA;28;TPLC100_01_AB</source>
-        <oldsource>1;TP1043_01_A;2;TP1043_01_B;3;TP1043_02_A;4;TP1043_02_B;5;TP1057_01_A;6;TP1057_01_B;7;TP1070_01_A;8;TP1070_01_B;9;TP1070_01_C;10;TPAC1005;11;TPAC1006;12;TPAC1007_03;13;TPAC1007_04_AA;14;TPAC1007_04_AB;15;TPAC1007_04_AC;16;TPAC1007_LV;17;TPAC1008_01;18;TPAC1008_02_AA;19;TPAC1008_02_AB;20;TPAC1008_02_AD;21;TPAC1008_02_AE;22;TPAC1008_02_AF;23;TPAC1008_03_AC;24;TPLC050_01_AA;25;TPLC100_01_AA;26;TPLC100_01_AB</oldsource>
+        <source>1;TP1043_01_A;2;TP1043_01_B;3;TP1043_02_A;4;TP1043_02_B;5;TP1070_01_A;6;TP1070_01_B;7;TP1070_01_C;8;TP1070_02_E;9;TPAC1005;10;TPAC1007_03;11;TPAC1007_04_AA;12;TPAC1007_04_AB;13;TPAC1007_04_AC;14;TPAC1007_04_AD;15;TPAC1007_04_AE;16;TPAC1008_02_AA;17;TPAC1008_02_AB;18;TPAC1008_02_AD;19;TPAC1008_02_AE;20;TPAC1008_02_AF;21;TPAC1008_03_AC;22;TPAC1008_03_AD;23;TPLC050_01_AA;24;TPLC100_01_AA;25;TPLC100_01_AB</source>
+        <oldsource>1;TP1043_01_A;2;TP1043_01_B;3;TP1043_02_A;4;TP1043_02_B;5;TP1070_01_A;6;TP1070_01_B;7;TP1070_01_C;8;TP1070_02_E;9;TPAC1005;10;TPAC1007_03;11;TPAC1007_04_AA;12;TPAC1007_04_AB;13;TPAC1007_04_AC;14;TPAC1007_04_AD;15;TPAC1007_04_AE/LV;16;TPAC1008_02_AA;17;TPAC1008_02_AB;18;TPAC1008_02_AD;19;TPAC1008_02_AE;20;TPAC1008_02_AF;21;TPAC1008_03_AC;22;TPAC1008_03_AD;23;TPLC050_01_AA;24;TPLC100_01_AA;25;TPLC100_01_AB</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2312,7 +2313,8 @@ ON</source>
     <message>
         <location filename="page300.ui" line="1486"/>
         <location filename="page300.ui" line="1489"/>
-        <source>TPAC1007_4AA</source>
+        <source>TPAC1007_04_AA</source>
+        <oldsource>TPAC1007_4AA</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3410,7 +3412,8 @@ ON</source>
     <message>
         <location filename="page400.ui" line="4137"/>
         <location filename="page400.ui" line="4140"/>
-        <source>TPAC1007_4AA</source>
+        <source>TPAC1007_04_AA</source>
+        <oldsource>TPAC1007_4AA</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3955,7 +3958,8 @@ ON</source>
     <message>
         <location filename="page401.ui" line="2255"/>
         <location filename="page401.ui" line="2258"/>
-        <source>TPAC1007_4AA</source>
+        <source>TPAC1007_04_AA</source>
+        <oldsource>TPAC1007_4AA</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4631,7 +4635,8 @@ ON</source>
     <message>
         <location filename="page402.ui" line="2135"/>
         <location filename="page402.ui" line="2138"/>
-        <source>TPAC1007_4AA</source>
+        <source>TPAC1007_04_AA</source>
+        <oldsource>TPAC1007_4AA</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5529,7 +5534,8 @@ ON</source>
     <message>
         <location filename="page403.ui" line="526"/>
         <location filename="page403.ui" line="529"/>
-        <source>TPAC1007_4AA</source>
+        <source>TPAC1007_04_AA</source>
+        <oldsource>TPAC1007_4AA</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5965,7 +5971,8 @@ ON</source>
     <message>
         <location filename="page404.ui" line="595"/>
         <location filename="page404.ui" line="598"/>
-        <source>TPAC1007_4AA</source>
+        <source>TPAC1007_04_AA</source>
+        <oldsource>TPAC1007_4AA</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6988,7 +6995,8 @@ W/R</source>
     <message>
         <location filename="page405.ui" line="3811"/>
         <location filename="page405.ui" line="3814"/>
-        <source>TPAC1007_4AA</source>
+        <source>TPAC1007_04_AA</source>
+        <oldsource>TPAC1007_4AA</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
