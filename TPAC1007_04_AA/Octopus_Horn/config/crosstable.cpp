@@ -3227,14 +3227,14 @@ u_int16_t PLC_AnIn3Filter = 0;
 
 
 /*
- * Variable PLC_Reserved_4	[ Analog input 4 filter ]
+ * Variable PLC_Reserved_4	[ Reserved ]
  */
 
 u_int16_t PLC_Reserved_4 = 0;
 
 
 /*
- * Variable PLC_Reserved_5	[ Analog input 5 filter ]
+ * Variable PLC_Reserved_5	[ Reserved ]
  */
 
 u_int16_t PLC_Reserved_5 = 0;

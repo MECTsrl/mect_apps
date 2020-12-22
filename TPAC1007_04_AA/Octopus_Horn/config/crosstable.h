@@ -2777,13 +2777,13 @@ int addWrite_PLC_AnIn3Filter(u_int16_t value);
 int getStatus_PLC_AnIn3Filter(void);
 
 #define ID_PLC_Reserved_4 5355
-extern u_int16_t PLC_Reserved_4;	/* Analog input 4 filter */
+extern u_int16_t PLC_Reserved_4;	/* Reserved */
 int doWrite_PLC_Reserved_4(u_int16_t value);
 int addWrite_PLC_Reserved_4(u_int16_t value);
 int getStatus_PLC_Reserved_4(void);
 
 #define ID_PLC_Reserved_5 5356
-extern u_int16_t PLC_Reserved_5;	/* Analog input 5 filter */
+extern u_int16_t PLC_Reserved_5;	/* Reserved */
 int doWrite_PLC_Reserved_5(u_int16_t value);
 int addWrite_PLC_Reserved_5(u_int16_t value);
 int getStatus_PLC_Reserved_5(void);

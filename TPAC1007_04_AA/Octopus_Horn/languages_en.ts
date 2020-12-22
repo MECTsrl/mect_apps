@@ -68,7 +68,8 @@
     <message>
         <location filename="page100.ui" line="190"/>
         <location filename="page100.ui" line="193"/>
-        <source>TPAC1007_4AA</source>
+        <source>TPAC1007_04_AA</source>
+        <oldsource>TPAC1007_4AA</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1121,7 +1122,8 @@ RTU0 NODE2</source>
     <message>
         <location filename="page200.ui" line="2190"/>
         <location filename="page200.ui" line="2193"/>
-        <source>TPAC1007_4AA</source>
+        <source>TPAC1007_04_AA</source>
+        <oldsource>TPAC1007_4AA</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1458,7 +1460,8 @@ Y2=PLC_AnOut_2</source>
     <message>
         <location filename="page300.ui" line="1029"/>
         <location filename="page300.ui" line="1032"/>
-        <source>TPAC1007_4AA</source>
+        <source>TPAC1007_04_AA</source>
+        <oldsource>TPAC1007_4AA</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1843,7 +1846,8 @@ Y2=PLC_AnOut_4</source>
     <message>
         <location filename="page400.ui" line="1259"/>
         <location filename="page400.ui" line="1262"/>
-        <source>TPAC1007_4AA</source>
+        <source>TPAC1007_04_AA</source>
+        <oldsource>TPAC1007_4AA</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
