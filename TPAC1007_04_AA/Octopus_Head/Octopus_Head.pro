@@ -69,8 +69,6 @@ OTHER_FILES += \
     recipes/TP1070_01_B/2.csv \
     recipes/TP1070_01_C/1.csv \
     recipes/TP1070_01_C/2.csv \
-    recipes/TP1070_02_E/1.csv \
-    recipes/TP1070_02_E/2.csv \
     recipes/TPAC1005/1.csv \
     recipes/TPAC1005/2.csv \
     recipes/TPAC1007_03/1.csv \
@@ -81,6 +79,10 @@ OTHER_FILES += \
     recipes/TPAC1007_04_AB/2.csv \
     recipes/TPAC1007_04_AC/1.csv \
     recipes/TPAC1007_04_AC/2.csv \
+    recipes/TPAC1007_04_AD/2.csv \
+    recipes/TPAC1007_04_AD/1.csv \
+    recipes/TPAC1007_04_AE/2.csv \
+    recipes/TPAC1007_04_AE/1.csv \
     recipes/TPAC1008_02_AA/1.csv \
     recipes/TPAC1008_02_AA/2.csv \
     recipes/TPAC1008_02_AB/1.csv \
@@ -102,14 +104,12 @@ OTHER_FILES += \
     recipes/TPAC1008_03_AC/2.csv \
     recipes/TPAC1008_03_AD/1.csv \
     recipes/TPAC1008_03_AD/2.csv \
+    recipes/TPX1070_03_E/1.csv \
+    recipes/TPX1070_03_E/2.csv \
     recipes/Values/1.csv \
     recipes/Values/2.csv \
     recipes/Values/3.csv \
-    recipes/Zeroes/0.csv \
-    recipes/TPAC1007_04_AD/2.csv \
-    recipes/TPAC1007_04_AD/1.csv \
-    recipes/TPAC1007_04_AE/2.csv \
-    recipes/TPAC1007_04_AE/1.csv
+    recipes/Zeroes/0.csv
 
 recipes_TP1043_01_A.files = recipes/TP1043_01_A/1.csv recipes/TP1043_01_A/2.csv
 recipes_TP1043_01_A.path = /local/data/recipe/TP1043_01_A
@@ -131,9 +131,6 @@ recipes_TP1070_01_B.path = /local/data/recipe/TP1070_01_B
 
 recipes_TP1070_01_C.files = recipes/TP1070_01_C/1.csv recipes/TP1070_01_C/2.csv
 recipes_TP1070_01_C.path = /local/data/recipe/TP1070_01_C
-
-recipes_TP1070_02_E.files = recipes/TP1070_02_E/1.csv recipes/TP1070_02_E/2.csv
-recipes_TP1070_02_E.path = /local/data/recipe/TP1070_02_E
 
 recipes_TPAC1005.files = recipes/TPAC1005/1.csv recipes/TPAC1005/2.csv
 recipes_TPAC1005.path = /local/data/recipe/TPAC1005
@@ -186,6 +183,9 @@ recipes_TPAC1008_03_AC.path = /local/data/recipe/TPAC1008_03_AC
 recipes_TPAC1008_03_AD.files = recipes/TPAC1008_03_AD/1.csv recipes/TPAC1008_03_AD/2.csv
 recipes_TPAC1008_03_AD.path = /local/data/recipe/TPAC1008_03_AD
 
+recipes_TPX1070_03_E.files = recipes/TPX1070_03_E/1.csv recipes/TPX1070_03_E/2.csv
+recipes_TPX1070_03_E.path = /local/data/recipe/TPX1070_03_E
+
 recipes_Values.files = recipes/Values/1.csv recipes/Values/2.csv recipes/Values/3.csv
 recipes_Values.path = /local/data/recipe/Values
 
@@ -200,7 +200,6 @@ INSTALLS += \
     recipes_TP1070_01_A \
     recipes_TP1070_01_B \
     recipes_TP1070_01_C \
-    recipes_TP1070_02_E \
     recipes_TPAC1005 \
     recipes_TPAC1007_03 \
     recipes_TPAC1007_04_AA \
@@ -218,5 +217,6 @@ INSTALLS += \
     recipes_TPLC100_01_AB \
     recipes_TPAC1008_03_AC \
     recipes_TPAC1008_03_AD \
+    recipes_TPX1070_03_E \
     recipes_Values \
     recipes_Zeroes
