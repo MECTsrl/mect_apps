@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 2.7.84, 2021-01-25T12:54:09. -->
+<!-- Written by QtCreator 2.7.84, 2021-01-25T16:02:24. -->
 <qtcreator>
  <data>
   <variable>ProjectExplorer.Project.ActiveTarget</variable>
@@ -365,7 +365,7 @@
       </valuelist>
       <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedTimes">
        <value type="QDateTime">2021-01-22T11:53:07</value>
-       <value type="QDateTime">2021-01-25T09:34:12</value>
+       <value type="QDateTime">2021-01-25T15:48:31</value>
        <value type="QDateTime">2021-01-25T09:28:21</value>
        <value type="QDateTime">2021-01-21T14:59:15</value>
        <value type="QDateTime">2021-01-22T11:53:09</value>
@@ -379,17 +379,17 @@
        <value type="QDateTime">2021-01-22T11:53:10</value>
        <value type="QDateTime">2021-01-25T09:28:22</value>
        <value type="QDateTime">2021-01-22T11:53:08</value>
-       <value type="QDateTime">2021-01-25T09:34:11</value>
+       <value type="QDateTime">2021-01-25T15:48:30</value>
        <value type="QDateTime">2021-01-21T14:59:20</value>
-       <value type="QDateTime">2021-01-25T09:34:09</value>
+       <value type="QDateTime">2021-01-25T15:48:28</value>
        <value type="QDateTime">2021-01-21T14:59:17</value>
-       <value type="QDateTime">2021-01-25T09:34:10</value>
+       <value type="QDateTime">2021-01-25T15:48:29</value>
        <value type="QDateTime">2021-01-25T09:28:21</value>
        <value type="QDateTime">2021-01-25T09:28:20</value>
        <value type="QDateTime">2021-01-25T09:28:23</value>
-       <value type="QDateTime">2021-01-25T09:34:13</value>
+       <value type="QDateTime">2021-01-25T15:48:31</value>
        <value type="QDateTime">2021-01-25T09:28:21</value>
-       <value type="QDateTime">2021-01-25T09:34:16</value>
+       <value type="QDateTime">2021-01-25T15:48:34</value>
        <value type="QDateTime">2018-07-26T17:01:51</value>
        <value type="QDateTime">2021-01-21T14:59:18</value>
        <value type="QDateTime">2018-07-26T17:01:51</value>
@@ -400,8 +400,8 @@
        <value type="QDateTime">2021-01-21T14:59:16</value>
        <value type="QDateTime">2018-07-26T17:01:51</value>
        <value type="QDateTime">2021-01-21T14:59:15</value>
-       <value type="QDateTime">2021-01-25T09:34:10</value>
-       <value type="QDateTime">2021-01-25T09:34:10</value>
+       <value type="QDateTime">2021-01-25T15:48:28</value>
+       <value type="QDateTime">2021-01-25T15:48:29</value>
        <value type="QDateTime">2021-01-22T11:53:08</value>
        <value type="QDateTime">2021-01-25T09:28:20</value>
       </valuelist>

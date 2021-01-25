@@ -350,59 +350,38 @@ int MPNE05_AnOutOverflow_1 = 0;
 
 
 /*
- * Variable MPNE05_LifeBit
- */
-
-int MPNE05_LifeBit = 0;
-
-
-/*
- * Variable MPNE05_Tuned
- */
-
-int MPNE05_Tuned = 0;
-
-
-/*
- * Variable MPNE05_Tuning
- */
-
-int MPNE05_Tuning = 0;
-
-
-/*
- * Variable MPNE05_Tamb
+ * Variable MPNE05_Tamb	[  Cold Junction Temp. ]
  */
 
 int16_t MPNE05_Tamb = 0;
 
 
 /*
- * Variable MPNE05_Reg_1
+ * Variable MPNE05_Reserved_1
  */
 
-u_int16_t MPNE05_Reg_1 = 0;
+u_int16_t MPNE05_Reserved_1 = 0;
 
 
 /*
- * Variable MPNE05_Reg_2
+ * Variable MPNE05_Reserved_2
  */
 
-u_int16_t MPNE05_Reg_2 = 0;
+u_int16_t MPNE05_Reserved_2 = 0;
 
 
 /*
- * Variable MPNE05_Reg_3
+ * Variable MPNE05_Reserved_3
  */
 
-u_int16_t MPNE05_Reg_3 = 0;
+u_int16_t MPNE05_Reserved_3 = 0;
 
 
 /*
- * Variable MPNE05_Reg_4
+ * Variable MPNE05_Reserved_4
  */
 
-u_int16_t MPNE05_Reg_4 = 0;
+u_int16_t MPNE05_Reserved_4 = 0;
 
 
 /*
@@ -4292,60 +4271,6 @@ getStatus_MPNE05_AnOutOverflow_1(void)
 }
 
 int
-doWrite_MPNE05_LifeBit(int value)
-{
-	return doWrite(ID_MPNE05_LifeBit, &value);
-}
-
-int
-addWrite_MPNE05_LifeBit(int value)
-{
-	return addWrite(ID_MPNE05_LifeBit, &value);
-}
-
-int
-getStatus_MPNE05_LifeBit(void)
-{
-	return getStatus(ID_MPNE05_LifeBit);
-}
-
-int
-doWrite_MPNE05_Tuned(int value)
-{
-	return doWrite(ID_MPNE05_Tuned, &value);
-}
-
-int
-addWrite_MPNE05_Tuned(int value)
-{
-	return addWrite(ID_MPNE05_Tuned, &value);
-}
-
-int
-getStatus_MPNE05_Tuned(void)
-{
-	return getStatus(ID_MPNE05_Tuned);
-}
-
-int
-doWrite_MPNE05_Tuning(int value)
-{
-	return doWrite(ID_MPNE05_Tuning, &value);
-}
-
-int
-addWrite_MPNE05_Tuning(int value)
-{
-	return addWrite(ID_MPNE05_Tuning, &value);
-}
-
-int
-getStatus_MPNE05_Tuning(void)
-{
-	return getStatus(ID_MPNE05_Tuning);
-}
-
-int
 doWrite_MPNE05_Tamb(int16_t value)
 {
 	return doWrite(ID_MPNE05_Tamb, &value);
@@ -4364,75 +4289,75 @@ getStatus_MPNE05_Tamb(void)
 }
 
 int
-doWrite_MPNE05_Reg_1(u_int16_t value)
+doWrite_MPNE05_Reserved_1(u_int16_t value)
 {
-	return doWrite(ID_MPNE05_Reg_1, &value);
+	return doWrite(ID_MPNE05_Reserved_1, &value);
 }
 
 int
-addWrite_MPNE05_Reg_1(u_int16_t value)
+addWrite_MPNE05_Reserved_1(u_int16_t value)
 {
-	return addWrite(ID_MPNE05_Reg_1, &value);
+	return addWrite(ID_MPNE05_Reserved_1, &value);
 }
 
 int
-getStatus_MPNE05_Reg_1(void)
+getStatus_MPNE05_Reserved_1(void)
 {
-	return getStatus(ID_MPNE05_Reg_1);
+	return getStatus(ID_MPNE05_Reserved_1);
 }
 
 int
-doWrite_MPNE05_Reg_2(u_int16_t value)
+doWrite_MPNE05_Reserved_2(u_int16_t value)
 {
-	return doWrite(ID_MPNE05_Reg_2, &value);
+	return doWrite(ID_MPNE05_Reserved_2, &value);
 }
 
 int
-addWrite_MPNE05_Reg_2(u_int16_t value)
+addWrite_MPNE05_Reserved_2(u_int16_t value)
 {
-	return addWrite(ID_MPNE05_Reg_2, &value);
+	return addWrite(ID_MPNE05_Reserved_2, &value);
 }
 
 int
-getStatus_MPNE05_Reg_2(void)
+getStatus_MPNE05_Reserved_2(void)
 {
-	return getStatus(ID_MPNE05_Reg_2);
+	return getStatus(ID_MPNE05_Reserved_2);
 }
 
 int
-doWrite_MPNE05_Reg_3(u_int16_t value)
+doWrite_MPNE05_Reserved_3(u_int16_t value)
 {
-	return doWrite(ID_MPNE05_Reg_3, &value);
+	return doWrite(ID_MPNE05_Reserved_3, &value);
 }
 
 int
-addWrite_MPNE05_Reg_3(u_int16_t value)
+addWrite_MPNE05_Reserved_3(u_int16_t value)
 {
-	return addWrite(ID_MPNE05_Reg_3, &value);
+	return addWrite(ID_MPNE05_Reserved_3, &value);
 }
 
 int
-getStatus_MPNE05_Reg_3(void)
+getStatus_MPNE05_Reserved_3(void)
 {
-	return getStatus(ID_MPNE05_Reg_3);
+	return getStatus(ID_MPNE05_Reserved_3);
 }
 
 int
-doWrite_MPNE05_Reg_4(u_int16_t value)
+doWrite_MPNE05_Reserved_4(u_int16_t value)
 {
-	return doWrite(ID_MPNE05_Reg_4, &value);
+	return doWrite(ID_MPNE05_Reserved_4, &value);
 }
 
 int
-addWrite_MPNE05_Reg_4(u_int16_t value)
+addWrite_MPNE05_Reserved_4(u_int16_t value)
 {
-	return addWrite(ID_MPNE05_Reg_4, &value);
+	return addWrite(ID_MPNE05_Reserved_4, &value);
 }
 
 int
-getStatus_MPNE05_Reg_4(void)
+getStatus_MPNE05_Reserved_4(void)
 {
-	return getStatus(ID_MPNE05_Reg_4);
+	return getStatus(ID_MPNE05_Reserved_4);
 }
 
 int
@@ -12353,14 +12278,11 @@ update_all(void)
 	retval += readFromDb(ID_MPNE05_AnInOverflow_1, &MPNE05_AnInOverflow_1);
 	retval += readFromDb(ID_MPNE05_AnInOverflow_2, &MPNE05_AnInOverflow_2);
 	retval += readFromDb(ID_MPNE05_AnOutOverflow_1, &MPNE05_AnOutOverflow_1);
-	retval += readFromDb(ID_MPNE05_LifeBit, &MPNE05_LifeBit);
-	retval += readFromDb(ID_MPNE05_Tuned, &MPNE05_Tuned);
-	retval += readFromDb(ID_MPNE05_Tuning, &MPNE05_Tuning);
 	retval += readFromDb(ID_MPNE05_Tamb, &MPNE05_Tamb);
-	retval += readFromDb(ID_MPNE05_Reg_1, &MPNE05_Reg_1);
-	retval += readFromDb(ID_MPNE05_Reg_2, &MPNE05_Reg_2);
-	retval += readFromDb(ID_MPNE05_Reg_3, &MPNE05_Reg_3);
-	retval += readFromDb(ID_MPNE05_Reg_4, &MPNE05_Reg_4);
+	retval += readFromDb(ID_MPNE05_Reserved_1, &MPNE05_Reserved_1);
+	retval += readFromDb(ID_MPNE05_Reserved_2, &MPNE05_Reserved_2);
+	retval += readFromDb(ID_MPNE05_Reserved_3, &MPNE05_Reserved_3);
+	retval += readFromDb(ID_MPNE05_Reserved_4, &MPNE05_Reserved_4);
 	retval += readFromDb(ID_MPNE05_Revision, &MPNE05_Revision);
 	retval += readFromDb(ID_MPNE05_Heartbeat, &MPNE05_Heartbeat);
 	retval += readFromDb(ID_TEST_COMMAND, &TEST_COMMAND);

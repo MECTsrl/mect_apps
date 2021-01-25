@@ -4823,7 +4823,7 @@ color: rgb(0, 0, 0);</string>
     <rect>
      <x>20</x>
      <y>278</y>
-     <width>121</width>
+     <width>261</width>
      <height>34</height>
     </rect>
    </property>
@@ -4836,7 +4836,7 @@ color: rgb(0, 0, 0);</string>
     </font>
    </property>
    <property name="text">
-    <string>XXX</string>
+    <string>0xXXXX</string>
    </property>
    <property name="styleSheet">
     <string notr="true">color: rgb(170, 0, 0);</string>
@@ -4888,116 +4888,8 @@ color: rgb(0, 0, 0);</string>
    <property name="borderRadius">
     <number>0</number>
    </property>
-  </widget>
-  <widget class="QLabel" name="label_34">
-   <property name="geometry">
-    <rect>
-     <x>140</x>
-     <y>278</y>
-     <width>141</width>
-     <height>34</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>DejaVu Sans</family>
-     <pointsize>10</pointsize>
-     <weight>50</weight>
-     <bold>false</bold>
-    </font>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background-color: rgb(170, 255, 255);</string>
-   </property>
-   <property name="text">
-    <string>taratura:</string>
-   </property>
-   <property name="alignment">
-    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-   </property>
-  </widget>
-  <widget class="ATCMled" name="atcmLed_4">
-   <property name="geometry">
-    <rect>
-     <x>210</x>
-     <y>278</y>
-     <width>34</width>
-     <height>34</height>
-    </rect>
-   </property>
-   <property name="toolTip">
-    <string>MPNE05_Tuned</string>
-   </property>
-   <property name="whatsThis">
-    <string>ATCMled widget</string>
-   </property>
-   <property name="font">
-    <font>
-     <family>DejaVu Sans</family>
-     <pointsize>8</pointsize>
-    </font>
-   </property>
-   <property name="variable">
-    <string>MPNE05_Tuned</string>
-   </property>
-   <property name="refresh">
-    <number>200</number>
-   </property>
-   <property name="viewStatus">
-    <bool>false</bool>
-   </property>
-   <property name="visibilityVar">
-    <string/>
-   </property>
-   <property name="onIcon">
-    <iconset resource="systemicons.qrc">
-     <normaloff>:/systemicons/Apply.png</normaloff>:/systemicons/Apply.png</iconset>
-   </property>
-   <property name="offIcon">
-    <iconset resource="systemicons.qrc">
-     <normaloff>:/systemicons/Error.png</normaloff>:/systemicons/Error.png</iconset>
-   </property>
-  </widget>
-  <widget class="ATCMled" name="atcmLed_5">
-   <property name="geometry">
-    <rect>
-     <x>246</x>
-     <y>278</y>
-     <width>34</width>
-     <height>34</height>
-    </rect>
-   </property>
-   <property name="toolTip">
-    <string>MPNE05_Tuning</string>
-   </property>
-   <property name="whatsThis">
-    <string>ATCMled widget</string>
-   </property>
-   <property name="font">
-    <font>
-     <family>DejaVu Sans</family>
-     <pointsize>8</pointsize>
-    </font>
-   </property>
-   <property name="variable">
-    <string>MPNE05_Tuning</string>
-   </property>
-   <property name="refresh">
-    <number>200</number>
-   </property>
-   <property name="viewStatus">
-    <bool>false</bool>
-   </property>
-   <property name="visibilityVar">
-    <string/>
-   </property>
-   <property name="onIcon">
-    <iconset resource="systemicons.qrc">
-     <normaloff>:/systemicons/Alert.png</normaloff>:/systemicons/Alert.png</iconset>
-   </property>
-   <property name="offIcon">
-    <iconset resource="systemicons.qrc">
-     <normaloff>:/systemicons/LedOff.png</normaloff>:/systemicons/LedOff.png</iconset>
+   <property name="format">
+    <enum>ATCMlabel::Hex</enum>
    </property>
   </widget>
   <zorder>label_FastIO</zorder>
@@ -5082,9 +4974,6 @@ color: rgb(0, 0, 0);</string>
   <zorder>atcmLed_3</zorder>
   <zorder>label_33</zorder>
   <zorder>atcmLabel_PLC_AnIn_3</zorder>
-  <zorder>label_34</zorder>
-  <zorder>atcmLed_4</zorder>
-  <zorder>atcmLed_5</zorder>
  </widget>
  <customwidgets>
   <customwidget>

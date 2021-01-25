@@ -725,7 +725,7 @@
     </message>
     <message>
         <location filename="page100.ui" line="4839"/>
-        <source>XXX</source>
+        <source>0xXXXX</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -737,24 +737,6 @@
     <message>
         <location filename="page100.ui" line="4854"/>
         <source>Rev. </source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page100.ui" line="4913"/>
-        <source>taratura:</source>
-        <oldsource>taratura</oldsource>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page100.ui" line="4929"/>
-        <location filename="page100.ui" line="4941"/>
-        <source>MPNE05_Tuned</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page100.ui" line="4971"/>
-        <location filename="page100.ui" line="4983"/>
-        <source>MPNE05_Tuning</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -856,8 +838,6 @@
         <location filename="page100.ui" line="4678"/>
         <location filename="page100.ui" line="4720"/>
         <location filename="page100.ui" line="4762"/>
-        <location filename="page100.ui" line="4932"/>
-        <location filename="page100.ui" line="4974"/>
         <source>ATCMled widget</source>
         <translation type="unfinished"></translation>
     </message>
