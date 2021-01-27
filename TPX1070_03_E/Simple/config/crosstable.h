@@ -94,65 +94,65 @@ int doWrite_RTU0_BUS_LOAD(u_int32_t value);
 int addWrite_RTU0_BUS_LOAD(u_int32_t value);
 int getStatus_RTU0_BUS_LOAD(void);
 
-#define ID_RTU1_TYPE_PORT 5010
-extern u_int32_t RTU1_TYPE_PORT;
-int doWrite_RTU1_TYPE_PORT(u_int32_t value);
-int addWrite_RTU1_TYPE_PORT(u_int32_t value);
-int getStatus_RTU1_TYPE_PORT(void);
+#define ID_RTU2_TYPE_PORT 5010
+extern u_int32_t RTU2_TYPE_PORT;
+int doWrite_RTU2_TYPE_PORT(u_int32_t value);
+int addWrite_RTU2_TYPE_PORT(u_int32_t value);
+int getStatus_RTU2_TYPE_PORT(void);
 
-#define ID_RTU1_BAUDRATE 5011
-extern u_int32_t RTU1_BAUDRATE;
-int doWrite_RTU1_BAUDRATE(u_int32_t value);
-int addWrite_RTU1_BAUDRATE(u_int32_t value);
-int getStatus_RTU1_BAUDRATE(void);
+#define ID_RTU2_BAUDRATE 5011
+extern u_int32_t RTU2_BAUDRATE;
+int doWrite_RTU2_BAUDRATE(u_int32_t value);
+int addWrite_RTU2_BAUDRATE(u_int32_t value);
+int getStatus_RTU2_BAUDRATE(void);
 
-#define ID_RTU1_STATUS 5012
-extern u_int32_t RTU1_STATUS;
-int doWrite_RTU1_STATUS(u_int32_t value);
-int addWrite_RTU1_STATUS(u_int32_t value);
-int getStatus_RTU1_STATUS(void);
+#define ID_RTU2_STATUS 5012
+extern u_int32_t RTU2_STATUS;
+int doWrite_RTU2_STATUS(u_int32_t value);
+int addWrite_RTU2_STATUS(u_int32_t value);
+int getStatus_RTU2_STATUS(void);
 
-#define ID_RTU1_READS 5013
-extern u_int32_t RTU1_READS;
-int doWrite_RTU1_READS(u_int32_t value);
-int addWrite_RTU1_READS(u_int32_t value);
-int getStatus_RTU1_READS(void);
+#define ID_RTU2_READS 5013
+extern u_int32_t RTU2_READS;
+int doWrite_RTU2_READS(u_int32_t value);
+int addWrite_RTU2_READS(u_int32_t value);
+int getStatus_RTU2_READS(void);
 
-#define ID_RTU1_WRITES 5014
-extern u_int32_t RTU1_WRITES;
-int doWrite_RTU1_WRITES(u_int32_t value);
-int addWrite_RTU1_WRITES(u_int32_t value);
-int getStatus_RTU1_WRITES(void);
+#define ID_RTU2_WRITES 5014
+extern u_int32_t RTU2_WRITES;
+int doWrite_RTU2_WRITES(u_int32_t value);
+int addWrite_RTU2_WRITES(u_int32_t value);
+int getStatus_RTU2_WRITES(void);
 
-#define ID_RTU1_TIMEOUTS 5015
-extern u_int32_t RTU1_TIMEOUTS;
-int doWrite_RTU1_TIMEOUTS(u_int32_t value);
-int addWrite_RTU1_TIMEOUTS(u_int32_t value);
-int getStatus_RTU1_TIMEOUTS(void);
+#define ID_RTU2_TIMEOUTS 5015
+extern u_int32_t RTU2_TIMEOUTS;
+int doWrite_RTU2_TIMEOUTS(u_int32_t value);
+int addWrite_RTU2_TIMEOUTS(u_int32_t value);
+int getStatus_RTU2_TIMEOUTS(void);
 
-#define ID_RTU1_COMM_ERRORS 5016
-extern u_int32_t RTU1_COMM_ERRORS;
-int doWrite_RTU1_COMM_ERRORS(u_int32_t value);
-int addWrite_RTU1_COMM_ERRORS(u_int32_t value);
-int getStatus_RTU1_COMM_ERRORS(void);
+#define ID_RTU2_COMM_ERRORS 5016
+extern u_int32_t RTU2_COMM_ERRORS;
+int doWrite_RTU2_COMM_ERRORS(u_int32_t value);
+int addWrite_RTU2_COMM_ERRORS(u_int32_t value);
+int getStatus_RTU2_COMM_ERRORS(void);
 
-#define ID_RTU1_LAST_ERROR 5017
-extern u_int32_t RTU1_LAST_ERROR;
-int doWrite_RTU1_LAST_ERROR(u_int32_t value);
-int addWrite_RTU1_LAST_ERROR(u_int32_t value);
-int getStatus_RTU1_LAST_ERROR(void);
+#define ID_RTU2_LAST_ERROR 5017
+extern u_int32_t RTU2_LAST_ERROR;
+int doWrite_RTU2_LAST_ERROR(u_int32_t value);
+int addWrite_RTU2_LAST_ERROR(u_int32_t value);
+int getStatus_RTU2_LAST_ERROR(void);
 
-#define ID_RTU1_WRITE_QUEUE 5018
-extern u_int32_t RTU1_WRITE_QUEUE;
-int doWrite_RTU1_WRITE_QUEUE(u_int32_t value);
-int addWrite_RTU1_WRITE_QUEUE(u_int32_t value);
-int getStatus_RTU1_WRITE_QUEUE(void);
+#define ID_RTU2_WRITE_QUEUE 5018
+extern u_int32_t RTU2_WRITE_QUEUE;
+int doWrite_RTU2_WRITE_QUEUE(u_int32_t value);
+int addWrite_RTU2_WRITE_QUEUE(u_int32_t value);
+int getStatus_RTU2_WRITE_QUEUE(void);
 
-#define ID_RTU1_BUS_LOAD 5019
-extern u_int32_t RTU1_BUS_LOAD;
-int doWrite_RTU1_BUS_LOAD(u_int32_t value);
-int addWrite_RTU1_BUS_LOAD(u_int32_t value);
-int getStatus_RTU1_BUS_LOAD(void);
+#define ID_RTU2_BUS_LOAD 5019
+extern u_int32_t RTU2_BUS_LOAD;
+int doWrite_RTU2_BUS_LOAD(u_int32_t value);
+int addWrite_RTU2_BUS_LOAD(u_int32_t value);
+int getStatus_RTU2_BUS_LOAD(void);
 
 #define ID_RTU3_TYPE_PORT 5020
 extern u_int32_t RTU3_TYPE_PORT;

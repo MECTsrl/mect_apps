@@ -496,7 +496,8 @@
     <message>
         <location filename="page100.ui" line="3113"/>
         <location filename="page100.ui" line="3119"/>
-        <source>RTU1_TIMEOUTS</source>
+        <source>RTU2_TIMEOUTS</source>
+        <oldsource>RTU1_TIMEOUTS</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -508,7 +509,8 @@
     <message>
         <location filename="page100.ui" line="3245"/>
         <location filename="page100.ui" line="3251"/>
-        <source>RTU1_BAUDRATE</source>
+        <source>RTU2_BAUDRATE</source>
+        <oldsource>RTU1_BAUDRATE</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -528,19 +530,22 @@
     <message>
         <location filename="page100.ui" line="3454"/>
         <location filename="page100.ui" line="3460"/>
-        <source>RTU1_WRITES</source>
+        <source>RTU2_WRITES</source>
+        <oldsource>RTU1_WRITES</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="page100.ui" line="3520"/>
         <location filename="page100.ui" line="3526"/>
-        <source>RTU1_STATUS</source>
+        <source>RTU2_STATUS</source>
+        <oldsource>RTU1_STATUS</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="page100.ui" line="3586"/>
         <location filename="page100.ui" line="3592"/>
-        <source>RTU1_WRITE_QUEUE</source>
+        <source>RTU2_WRITE_QUEUE</source>
+        <oldsource>RTU1_WRITE_QUEUE</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -552,31 +557,35 @@
     <message>
         <location filename="page100.ui" line="3683"/>
         <location filename="page100.ui" line="3689"/>
-        <source>RTU1_READS</source>
+        <source>RTU2_READS</source>
+        <oldsource>RTU1_READS</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="page100.ui" line="3751"/>
-        <source>UART2?</source>
-        <oldsource>UART1</oldsource>
+        <source>UART2</source>
+        <oldsource>UART2?</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="page100.ui" line="3779"/>
         <location filename="page100.ui" line="3785"/>
-        <source>RTU1_COMM_ERRORS</source>
+        <source>RTU2_COMM_ERRORS</source>
+        <oldsource>RTU1_COMM_ERRORS</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="page100.ui" line="3848"/>
         <location filename="page100.ui" line="3854"/>
-        <source>RTU1_BUS_LOAD</source>
+        <source>RTU2_BUS_LOAD</source>
+        <oldsource>RTU1_BUS_LOAD</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="page100.ui" line="3923"/>
         <location filename="page100.ui" line="3929"/>
-        <source>RTU1_TYPE_PORT</source>
+        <source>RTU2_TYPE_PORT</source>
+        <oldsource>RTU1_TYPE_PORT</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>

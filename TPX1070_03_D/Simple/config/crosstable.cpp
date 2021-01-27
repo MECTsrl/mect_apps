@@ -98,73 +98,73 @@ u_int32_t RTU0_BUS_LOAD = 0;
 
 
 /*
- * Variable RTU1_TYPE_PORT
+ * Variable RTU2_TYPE_PORT
  */
 
-u_int32_t RTU1_TYPE_PORT = 0;
+u_int32_t RTU2_TYPE_PORT = 0;
 
 
 /*
- * Variable RTU1_BAUDRATE
+ * Variable RTU2_BAUDRATE
  */
 
-u_int32_t RTU1_BAUDRATE = 0;
+u_int32_t RTU2_BAUDRATE = 0;
 
 
 /*
- * Variable RTU1_STATUS
+ * Variable RTU2_STATUS
  */
 
-u_int32_t RTU1_STATUS = 0;
+u_int32_t RTU2_STATUS = 0;
 
 
 /*
- * Variable RTU1_READS
+ * Variable RTU2_READS
  */
 
-u_int32_t RTU1_READS = 0;
+u_int32_t RTU2_READS = 0;
 
 
 /*
- * Variable RTU1_WRITES
+ * Variable RTU2_WRITES
  */
 
-u_int32_t RTU1_WRITES = 0;
+u_int32_t RTU2_WRITES = 0;
 
 
 /*
- * Variable RTU1_TIMEOUTS
+ * Variable RTU2_TIMEOUTS
  */
 
-u_int32_t RTU1_TIMEOUTS = 0;
+u_int32_t RTU2_TIMEOUTS = 0;
 
 
 /*
- * Variable RTU1_COMM_ERRORS
+ * Variable RTU2_COMM_ERRORS
  */
 
-u_int32_t RTU1_COMM_ERRORS = 0;
+u_int32_t RTU2_COMM_ERRORS = 0;
 
 
 /*
- * Variable RTU1_LAST_ERROR
+ * Variable RTU2_LAST_ERROR
  */
 
-u_int32_t RTU1_LAST_ERROR = 0;
+u_int32_t RTU2_LAST_ERROR = 0;
 
 
 /*
- * Variable RTU1_WRITE_QUEUE
+ * Variable RTU2_WRITE_QUEUE
  */
 
-u_int32_t RTU1_WRITE_QUEUE = 0;
+u_int32_t RTU2_WRITE_QUEUE = 0;
 
 
 /*
- * Variable RTU1_BUS_LOAD
+ * Variable RTU2_BUS_LOAD
  */
 
-u_int32_t RTU1_BUS_LOAD = 0;
+u_int32_t RTU2_BUS_LOAD = 0;
 
 
 /*
@@ -1810,183 +1810,183 @@ getStatus_RTU0_BUS_LOAD(void)
 }
 
 int
-doWrite_RTU1_TYPE_PORT(u_int32_t value)
+doWrite_RTU2_TYPE_PORT(u_int32_t value)
 {
-	return doWrite(ID_RTU1_TYPE_PORT, &value);
+	return doWrite(ID_RTU2_TYPE_PORT, &value);
 }
 
 int
-addWrite_RTU1_TYPE_PORT(u_int32_t value)
+addWrite_RTU2_TYPE_PORT(u_int32_t value)
 {
-	return addWrite(ID_RTU1_TYPE_PORT, &value);
+	return addWrite(ID_RTU2_TYPE_PORT, &value);
 }
 
 int
-getStatus_RTU1_TYPE_PORT(void)
+getStatus_RTU2_TYPE_PORT(void)
 {
-	return getStatus(ID_RTU1_TYPE_PORT);
+	return getStatus(ID_RTU2_TYPE_PORT);
 }
 
 int
-doWrite_RTU1_BAUDRATE(u_int32_t value)
+doWrite_RTU2_BAUDRATE(u_int32_t value)
 {
-	return doWrite(ID_RTU1_BAUDRATE, &value);
+	return doWrite(ID_RTU2_BAUDRATE, &value);
 }
 
 int
-addWrite_RTU1_BAUDRATE(u_int32_t value)
+addWrite_RTU2_BAUDRATE(u_int32_t value)
 {
-	return addWrite(ID_RTU1_BAUDRATE, &value);
+	return addWrite(ID_RTU2_BAUDRATE, &value);
 }
 
 int
-getStatus_RTU1_BAUDRATE(void)
+getStatus_RTU2_BAUDRATE(void)
 {
-	return getStatus(ID_RTU1_BAUDRATE);
+	return getStatus(ID_RTU2_BAUDRATE);
 }
 
 int
-doWrite_RTU1_STATUS(u_int32_t value)
+doWrite_RTU2_STATUS(u_int32_t value)
 {
-	return doWrite(ID_RTU1_STATUS, &value);
+	return doWrite(ID_RTU2_STATUS, &value);
 }
 
 int
-addWrite_RTU1_STATUS(u_int32_t value)
+addWrite_RTU2_STATUS(u_int32_t value)
 {
-	return addWrite(ID_RTU1_STATUS, &value);
+	return addWrite(ID_RTU2_STATUS, &value);
 }
 
 int
-getStatus_RTU1_STATUS(void)
+getStatus_RTU2_STATUS(void)
 {
-	return getStatus(ID_RTU1_STATUS);
+	return getStatus(ID_RTU2_STATUS);
 }
 
 int
-doWrite_RTU1_READS(u_int32_t value)
+doWrite_RTU2_READS(u_int32_t value)
 {
-	return doWrite(ID_RTU1_READS, &value);
+	return doWrite(ID_RTU2_READS, &value);
 }
 
 int
-addWrite_RTU1_READS(u_int32_t value)
+addWrite_RTU2_READS(u_int32_t value)
 {
-	return addWrite(ID_RTU1_READS, &value);
+	return addWrite(ID_RTU2_READS, &value);
 }
 
 int
-getStatus_RTU1_READS(void)
+getStatus_RTU2_READS(void)
 {
-	return getStatus(ID_RTU1_READS);
+	return getStatus(ID_RTU2_READS);
 }
 
 int
-doWrite_RTU1_WRITES(u_int32_t value)
+doWrite_RTU2_WRITES(u_int32_t value)
 {
-	return doWrite(ID_RTU1_WRITES, &value);
+	return doWrite(ID_RTU2_WRITES, &value);
 }
 
 int
-addWrite_RTU1_WRITES(u_int32_t value)
+addWrite_RTU2_WRITES(u_int32_t value)
 {
-	return addWrite(ID_RTU1_WRITES, &value);
+	return addWrite(ID_RTU2_WRITES, &value);
 }
 
 int
-getStatus_RTU1_WRITES(void)
+getStatus_RTU2_WRITES(void)
 {
-	return getStatus(ID_RTU1_WRITES);
+	return getStatus(ID_RTU2_WRITES);
 }
 
 int
-doWrite_RTU1_TIMEOUTS(u_int32_t value)
+doWrite_RTU2_TIMEOUTS(u_int32_t value)
 {
-	return doWrite(ID_RTU1_TIMEOUTS, &value);
+	return doWrite(ID_RTU2_TIMEOUTS, &value);
 }
 
 int
-addWrite_RTU1_TIMEOUTS(u_int32_t value)
+addWrite_RTU2_TIMEOUTS(u_int32_t value)
 {
-	return addWrite(ID_RTU1_TIMEOUTS, &value);
+	return addWrite(ID_RTU2_TIMEOUTS, &value);
 }
 
 int
-getStatus_RTU1_TIMEOUTS(void)
+getStatus_RTU2_TIMEOUTS(void)
 {
-	return getStatus(ID_RTU1_TIMEOUTS);
+	return getStatus(ID_RTU2_TIMEOUTS);
 }
 
 int
-doWrite_RTU1_COMM_ERRORS(u_int32_t value)
+doWrite_RTU2_COMM_ERRORS(u_int32_t value)
 {
-	return doWrite(ID_RTU1_COMM_ERRORS, &value);
+	return doWrite(ID_RTU2_COMM_ERRORS, &value);
 }
 
 int
-addWrite_RTU1_COMM_ERRORS(u_int32_t value)
+addWrite_RTU2_COMM_ERRORS(u_int32_t value)
 {
-	return addWrite(ID_RTU1_COMM_ERRORS, &value);
+	return addWrite(ID_RTU2_COMM_ERRORS, &value);
 }
 
 int
-getStatus_RTU1_COMM_ERRORS(void)
+getStatus_RTU2_COMM_ERRORS(void)
 {
-	return getStatus(ID_RTU1_COMM_ERRORS);
+	return getStatus(ID_RTU2_COMM_ERRORS);
 }
 
 int
-doWrite_RTU1_LAST_ERROR(u_int32_t value)
+doWrite_RTU2_LAST_ERROR(u_int32_t value)
 {
-	return doWrite(ID_RTU1_LAST_ERROR, &value);
+	return doWrite(ID_RTU2_LAST_ERROR, &value);
 }
 
 int
-addWrite_RTU1_LAST_ERROR(u_int32_t value)
+addWrite_RTU2_LAST_ERROR(u_int32_t value)
 {
-	return addWrite(ID_RTU1_LAST_ERROR, &value);
+	return addWrite(ID_RTU2_LAST_ERROR, &value);
 }
 
 int
-getStatus_RTU1_LAST_ERROR(void)
+getStatus_RTU2_LAST_ERROR(void)
 {
-	return getStatus(ID_RTU1_LAST_ERROR);
+	return getStatus(ID_RTU2_LAST_ERROR);
 }
 
 int
-doWrite_RTU1_WRITE_QUEUE(u_int32_t value)
+doWrite_RTU2_WRITE_QUEUE(u_int32_t value)
 {
-	return doWrite(ID_RTU1_WRITE_QUEUE, &value);
+	return doWrite(ID_RTU2_WRITE_QUEUE, &value);
 }
 
 int
-addWrite_RTU1_WRITE_QUEUE(u_int32_t value)
+addWrite_RTU2_WRITE_QUEUE(u_int32_t value)
 {
-	return addWrite(ID_RTU1_WRITE_QUEUE, &value);
+	return addWrite(ID_RTU2_WRITE_QUEUE, &value);
 }
 
 int
-getStatus_RTU1_WRITE_QUEUE(void)
+getStatus_RTU2_WRITE_QUEUE(void)
 {
-	return getStatus(ID_RTU1_WRITE_QUEUE);
+	return getStatus(ID_RTU2_WRITE_QUEUE);
 }
 
 int
-doWrite_RTU1_BUS_LOAD(u_int32_t value)
+doWrite_RTU2_BUS_LOAD(u_int32_t value)
 {
-	return doWrite(ID_RTU1_BUS_LOAD, &value);
+	return doWrite(ID_RTU2_BUS_LOAD, &value);
 }
 
 int
-addWrite_RTU1_BUS_LOAD(u_int32_t value)
+addWrite_RTU2_BUS_LOAD(u_int32_t value)
 {
-	return addWrite(ID_RTU1_BUS_LOAD, &value);
+	return addWrite(ID_RTU2_BUS_LOAD, &value);
 }
 
 int
-getStatus_RTU1_BUS_LOAD(void)
+getStatus_RTU2_BUS_LOAD(void)
 {
-	return getStatus(ID_RTU1_BUS_LOAD);
+	return getStatus(ID_RTU2_BUS_LOAD);
 }
 
 int
@@ -5767,16 +5767,16 @@ update_all(void)
 	retval += readFromDb(ID_RTU0_LAST_ERROR, &RTU0_LAST_ERROR);
 	retval += readFromDb(ID_RTU0_WRITE_QUEUE, &RTU0_WRITE_QUEUE);
 	retval += readFromDb(ID_RTU0_BUS_LOAD, &RTU0_BUS_LOAD);
-	retval += readFromDb(ID_RTU1_TYPE_PORT, &RTU1_TYPE_PORT);
-	retval += readFromDb(ID_RTU1_BAUDRATE, &RTU1_BAUDRATE);
-	retval += readFromDb(ID_RTU1_STATUS, &RTU1_STATUS);
-	retval += readFromDb(ID_RTU1_READS, &RTU1_READS);
-	retval += readFromDb(ID_RTU1_WRITES, &RTU1_WRITES);
-	retval += readFromDb(ID_RTU1_TIMEOUTS, &RTU1_TIMEOUTS);
-	retval += readFromDb(ID_RTU1_COMM_ERRORS, &RTU1_COMM_ERRORS);
-	retval += readFromDb(ID_RTU1_LAST_ERROR, &RTU1_LAST_ERROR);
-	retval += readFromDb(ID_RTU1_WRITE_QUEUE, &RTU1_WRITE_QUEUE);
-	retval += readFromDb(ID_RTU1_BUS_LOAD, &RTU1_BUS_LOAD);
+	retval += readFromDb(ID_RTU2_TYPE_PORT, &RTU2_TYPE_PORT);
+	retval += readFromDb(ID_RTU2_BAUDRATE, &RTU2_BAUDRATE);
+	retval += readFromDb(ID_RTU2_STATUS, &RTU2_STATUS);
+	retval += readFromDb(ID_RTU2_READS, &RTU2_READS);
+	retval += readFromDb(ID_RTU2_WRITES, &RTU2_WRITES);
+	retval += readFromDb(ID_RTU2_TIMEOUTS, &RTU2_TIMEOUTS);
+	retval += readFromDb(ID_RTU2_COMM_ERRORS, &RTU2_COMM_ERRORS);
+	retval += readFromDb(ID_RTU2_LAST_ERROR, &RTU2_LAST_ERROR);
+	retval += readFromDb(ID_RTU2_WRITE_QUEUE, &RTU2_WRITE_QUEUE);
+	retval += readFromDb(ID_RTU2_BUS_LOAD, &RTU2_BUS_LOAD);
 	retval += readFromDb(ID_RTU3_TYPE_PORT, &RTU3_TYPE_PORT);
 	retval += readFromDb(ID_RTU3_BAUDRATE, &RTU3_BAUDRATE);
 	retval += readFromDb(ID_RTU3_STATUS, &RTU3_STATUS);

@@ -3110,13 +3110,13 @@ color: rgb(0, 0, 0);</string>
     <string>xxxxxxxx</string>
    </property>
    <property name="toolTip">
-    <string>RTU1_TIMEOUTS</string>
+    <string>RTU2_TIMEOUTS</string>
    </property>
    <property name="whatsThis">
     <string>ATCMlabel widget</string>
    </property>
    <property name="variable">
-    <string>RTU1_TIMEOUTS</string>
+    <string>RTU2_TIMEOUTS</string>
    </property>
    <property name="prefix">
     <string>to </string>
@@ -3242,13 +3242,13 @@ color: rgb(0, 0, 0);</string>
     <string>XXYYY</string>
    </property>
    <property name="toolTip">
-    <string>RTU1_BAUDRATE</string>
+    <string>RTU2_BAUDRATE</string>
    </property>
    <property name="whatsThis">
     <string>ATCMlabel widget</string>
    </property>
    <property name="variable">
-    <string>RTU1_BAUDRATE</string>
+    <string>RTU2_BAUDRATE</string>
    </property>
    <property name="suffix">
     <string> bps</string>
@@ -3451,13 +3451,13 @@ color: rgb(0, 0, 0);</string>
     <string>xxxxxxxx</string>
    </property>
    <property name="toolTip">
-    <string>RTU1_WRITES</string>
+    <string>RTU2_WRITES</string>
    </property>
    <property name="whatsThis">
     <string>ATCMlabel widget</string>
    </property>
    <property name="variable">
-    <string>RTU1_WRITES</string>
+    <string>RTU2_WRITES</string>
    </property>
    <property name="prefix">
     <string>wr </string>
@@ -3517,13 +3517,13 @@ color: rgb(0, 0, 0);</string>
     </font>
    </property>
    <property name="toolTip">
-    <string>RTU1_STATUS</string>
+    <string>RTU2_STATUS</string>
    </property>
    <property name="whatsThis">
     <string>ATCMcombobox widget</string>
    </property>
    <property name="variable">
-    <string>RTU1_STATUS</string>
+    <string>RTU2_STATUS</string>
    </property>
    <property name="refresh">
     <number>500</number>
@@ -3583,13 +3583,13 @@ color: rgb(0, 0, 0);</string>
     <string>xxxxxxxx</string>
    </property>
    <property name="toolTip">
-    <string>RTU1_WRITE_QUEUE</string>
+    <string>RTU2_WRITE_QUEUE</string>
    </property>
    <property name="whatsThis">
     <string>ATCMlabel widget</string>
    </property>
    <property name="variable">
-    <string>RTU1_WRITE_QUEUE</string>
+    <string>RTU2_WRITE_QUEUE</string>
    </property>
    <property name="prefix">
     <string>wq  </string>
@@ -3680,13 +3680,13 @@ color: rgb(0, 0, 0);</string>
     <string>xxxxxxxx</string>
    </property>
    <property name="toolTip">
-    <string>RTU1_READS</string>
+    <string>RTU2_READS</string>
    </property>
    <property name="whatsThis">
     <string>ATCMlabel widget</string>
    </property>
    <property name="variable">
-    <string>RTU1_READS</string>
+    <string>RTU2_READS</string>
    </property>
    <property name="prefix">
     <string>rd </string>
@@ -3748,7 +3748,7 @@ color: rgb(0, 0, 0);</string>
     <string notr="true">background-color: rgb(170, 255, 255);</string>
    </property>
    <property name="text">
-    <string>UART2?</string>
+    <string>UART2</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>
@@ -3776,13 +3776,13 @@ color: rgb(0, 0, 0);</string>
     <string>xxxxxxxx</string>
    </property>
    <property name="toolTip">
-    <string>RTU1_COMM_ERRORS</string>
+    <string>RTU2_COMM_ERRORS</string>
    </property>
    <property name="whatsThis">
     <string>ATCMlabel widget</string>
    </property>
    <property name="variable">
-    <string>RTU1_COMM_ERRORS</string>
+    <string>RTU2_COMM_ERRORS</string>
    </property>
    <property name="prefix">
     <string>ce </string>
@@ -3845,13 +3845,13 @@ color: rgb(0, 0, 0);</string>
     <string/>
    </property>
    <property name="toolTip">
-    <string>RTU1_BUS_LOAD</string>
+    <string>RTU2_BUS_LOAD</string>
    </property>
    <property name="whatsThis">
     <string>ATCMlabel widget</string>
    </property>
    <property name="variable">
-    <string>RTU1_BUS_LOAD</string>
+    <string>RTU2_BUS_LOAD</string>
    </property>
    <property name="prefix">
     <string>load </string>
@@ -3920,13 +3920,13 @@ color: rgb(0, 0, 0);</string>
     <string>0xXXXXxxxx</string>
    </property>
    <property name="toolTip">
-    <string>RTU1_TYPE_PORT</string>
+    <string>RTU2_TYPE_PORT</string>
    </property>
    <property name="whatsThis">
     <string>ATCMlabel widget</string>
    </property>
    <property name="variable">
-    <string>RTU1_TYPE_PORT</string>
+    <string>RTU2_TYPE_PORT</string>
    </property>
    <property name="refresh">
     <number>500</number>
