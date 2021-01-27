@@ -1,0 +1,51 @@
+--- /etc/asterisk.dpkg/sip.conf	2018-11-13 10:20:39.196810484 +0100
++++ /etc/asterisk/sip.conf	2018-11-15 12:19:45.403235024 +0100
+@@ -1589,4 +1589,31 @@
+                                 ; external IP address of the remote device. If port forwarding is done at the client side
+                                 ; then UDPTL will flow to the remote device.
+ 
++[5010]
++type=friend
++username=5010
++secret=passwd_5010
++host=dynamic
++context=default
++
++[5020]
++type=friend
++username=5020
++secret=passwd_5020
++host=dynamic
++context=default
++
++[5030]
++type=friend
++username=5030
++secret=passwd_5030
++host=dynamic
++context=default
++
++[5040]
++type=friend
++username=5040
++secret=passwd_5040
++host=dynamic
++context=default
+ 
+--- /etc/asterisk.dpkg/extensions.conf	2018-02-28 07:44:47.000000000 +0100
++++ /etc/asterisk/extensions.conf	2018-11-15 12:18:49.434225535 +0100
+@@ -667,8 +667,13 @@
+ ; By default we include the demo.  In a production system, you
+ ; probably don't want to have the demo there.
+ ;
+-include => demo
++;include => demo
+ 
++; http://go2linux.garron.me/asterisk-simple-configuration-how-to/
++exten => 5010,1,Dial(SIP/5010)
++exten => 5020,1,Dial(SIP/5020)
++exten => 5030,1,Dial(SIP/5030)
++exten => 5040,1,Dial(SIP/5040)
+ ;
+ ; An extension like the one below can be used for FWD, Nikotel, sipgate etc.
+ ; Note that you must have a [sipprovider] section in sip.conf
