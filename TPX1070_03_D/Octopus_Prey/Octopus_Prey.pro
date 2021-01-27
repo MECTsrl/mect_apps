@@ -26,9 +26,4 @@ SOURCES += \
 RESOURCES += \
     resources.qrc
 
-OTHER_FILES += \
-    sounds/Front_Right.wav \
-    sounds/Front_Left.wav \
-    sounds/Front_Center.wav
-
 
