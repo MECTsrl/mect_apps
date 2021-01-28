@@ -5436,16 +5436,16 @@
 1;P;PLC_TOUCH_VOLUME               ;BYTE     ;0   ;PLC       ;               ;    ;    ;      ;5435;4   ;[RW]Touch volume 
 1;P;PLC_ALARM_VOLUME               ;BYTE     ;0   ;PLC       ;               ;    ;    ;      ;5435;4   ;[RW]Alarm volume (when alarm)
 1;P;PLC_BUZZER                     ;UDINT    ;0   ;PLC       ;               ;    ;    ;      ;5435;4   ;[RW]Enable dynamic buzzer sound (0x44332211 up=0x11(%) on=0x22(cs) off=0x33(cs) rep=0x44(times))
-1;P;PLC_FastIO_Ena                 ;UDINT    ;0   ;PLC       ;               ;    ;    ;      ;5439;34  ;[RW]Not available
-1;P;PLC_FastIO_Dir                 ;UDINT    ;0   ;PLC       ;               ;    ;    ;      ;5439;34  ;[RW]Not available
-1;P;PLC_FastIO_1                   ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;5439;34  ;[RW]Not available
-1;P;PLC_FastIO_2                   ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;5439;34  ;[RW]Not available
-1;P;PLC_FastIO_3                   ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;5439;34  ;[RW]Not available
-1;P;PLC_FastIO_4                   ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;5439;34  ;[RW]Not available
-1;P;PLC_FastIO_5                   ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;5439;34  ;[RW]Not available
-1;P;PLC_FastIO_6                   ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;5439;34  ;[RW]Not available
-1;P;PLC_FastIO_7                   ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;5439;34  ;[RW]Not available
-1;P;PLC_FastIO_8                   ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;5439;34  ;[RW]Not available
+1;P;PLC_FastIO_Ena                 ;UDINT    ;0   ;PLC       ;               ;    ;    ;      ;5439;34  ;[RW]Fast IO Enable
+1;P;PLC_FastIO_Dir                 ;UDINT    ;0   ;PLC       ;               ;    ;    ;      ;5439;34  ;[RW]Fast IO Configuration
+1;P;PLC_FastIO_1                   ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;5439;34  ;[RW]Fast Input 1
+1;P;PLC_FastIO_2                   ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;5439;34  ;[RW]Fast Input 2
+1;P;PLC_FastIO_3                   ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;5439;34  ;[RW]Fast Input 3
+1;P;PLC_FastIO_4                   ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;5439;34  ;[RW]Fast Input 4
+1;P;PLC_FastIO_5                   ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;5439;34  ;[RW]Fast Output 1
+1;P;PLC_FastIO_6                   ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;5439;34  ;[RW]Fast Output 2
+1;P;PLC_FastIO_7                   ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;5439;34  ;[RW]Fast Output 3
+1;P;PLC_FastIO_8                   ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;5439;34  ;[RW]Fast Output 4
 0;P;PLC_FastIO_9                   ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;5439;34  ;[RW]Not available
 0;P;PLC_FastIO_10                  ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;5439;34  ;[RW]Not available
 0;P;PLC_FastIO_11                  ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;5439;34  ;[RW]Not available
