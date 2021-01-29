@@ -14,6 +14,8 @@
 #include "ui_page100.h"
 #include "crosstable.h"
 
+#include <QCoreApplication>
+
 /**
  * @brief this macro is used to set the PAGE100 style.
  * the syntax is html stylesheet-like
@@ -98,19 +100,41 @@ page100::~page100()
     delete ui;
 }
 
-
+void page100::enableAudioButtons(bool onOff)
+{
+    ui->pushButton->setEnabled(onOff);
+    ui->pushButton_2->setEnabled(onOff);
+    ui->pushButton_3->setEnabled(onOff);
+    ui->pushButton_4->setEnabled(onOff);
+    QCoreApplication::processEvents();
+}
 
 void page100::on_pushButton_clicked()
 {
-    system("amixer sset Playback 85%,0% ; aplay /local/root/Front_Left.wav");
+    enableAudioButtons(false);
+    system("amixer sset Playback 85%,0% ; aplay /root/Front_Left.wav ");
+    enableAudioButtons(true);
 }
 
 void page100::on_pushButton_2_clicked()
 {
-    system("amixer sset Playback 0%,85% ; aplay /local/root/Front_Right.wav");
+    enableAudioButtons(false);
+    system("amixer sset Playback 0%,85% ; aplay /root/Front_Right.wav ");
+    enableAudioButtons(true);
 }
 
 void page100::on_pushButton_3_clicked()
 {
-    system("amixer sset Playback 85%,85% ; aplay /local/root/Front_Center.wav");
+    enableAudioButtons(false);
+    system("amixer sset Playback 85%,85% ; aplay /root/Front_Center.wav ");
+    enableAudioButtons(true);
+}
+
+void page100::on_pushButton_4_clicked()
+{
+    enableAudioButtons(false);
+    system("arecord -d 4 /root/recording.wav ");
+    system("amixer sset Playback 85%,85% ; aplay /root/recording.wav ");
+    system("rm /root/recording.wav ");
+    enableAudioButtons(true);
 }

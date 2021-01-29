@@ -764,6 +764,12 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="page100.ui" line="4968"/>
+        <source>Audio Record 4 s and Replay</source>
+        <oldsource>Audio Record 5 s and Replay</oldsource>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="page100.ui" line="3059"/>
         <location filename="page100.ui" line="3065"/>
         <source>MPNC005_LIFETIME</source>

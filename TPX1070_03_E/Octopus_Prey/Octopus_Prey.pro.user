@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 2.7.84, 2021-01-28T09:46:50. -->
+<!-- Written by QtCreator 2.7.84, 2021-01-29T10:48:50. -->
 <qtcreator>
  <data>
   <variable>ProjectExplorer.Project.ActiveTarget</variable>
@@ -268,21 +268,21 @@
        <value type="QString">C:/Qt485/imx28/rootfs</value>
       </valuelist>
       <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedTimes">
-       <value type="QDateTime">2021-01-27T17:46:45</value>
+       <value type="QDateTime">2021-01-29T10:46:45</value>
        <value type="QDateTime">2018-07-26T17:01:51</value>
-       <value type="QDateTime">2021-01-27T17:46:46</value>
-       <value type="QDateTime">2021-01-27T17:46:45</value>
-       <value type="QDateTime">2018-07-26T17:01:51</value>
-       <value type="QDateTime">2018-07-26T17:01:51</value>
-       <value type="QDateTime">2021-01-27T17:46:49</value>
+       <value type="QDateTime">2021-01-29T10:46:47</value>
+       <value type="QDateTime">2021-01-29T10:46:46</value>
        <value type="QDateTime">2018-07-26T17:01:51</value>
        <value type="QDateTime">2018-07-26T17:01:51</value>
-       <value type="QDateTime">2021-01-27T17:46:45</value>
-       <value type="QDateTime">2021-01-27T17:46:51</value>
+       <value type="QDateTime">2021-01-29T10:46:49</value>
+       <value type="QDateTime">2018-07-26T17:01:51</value>
+       <value type="QDateTime">2018-07-26T17:01:51</value>
+       <value type="QDateTime">2021-01-29T10:46:46</value>
+       <value type="QDateTime">2021-01-29T10:46:51</value>
        <value type="QDateTime">2018-07-26T17:01:52</value>
-       <value type="QDateTime">2021-01-27T17:46:47</value>
+       <value type="QDateTime">2021-01-29T10:46:48</value>
        <value type="QDateTime">2018-07-26T17:01:51</value>
-       <value type="QDateTime">2021-01-27T17:46:45</value>
+       <value type="QDateTime">2021-01-29T10:46:45</value>
        <value type="QDateTime">2018-07-26T17:01:51</value>
       </valuelist>
       <value type="bool" key="RemoteLinux.GenericDirectUploadStep.Incremental">false</value>
@@ -335,7 +335,7 @@
     <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Octopus_Prey (on Remote Device)</value>
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">RemoteLinuxRunConfiguration:C:/mect_apps/TPX1070_03_E/Octopus_Prey/Octopus_Prey.pro</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">RemoteLinuxRunConfiguration:U:/mect_apps/TPX1070_03_E/Octopus_Prey/Octopus_Prey.pro</value>
     <value type="QString" key="Qt4ProjectManager.MaemoRunConfiguration.Arguments"></value>
     <value type="QString" key="Qt4ProjectManager.MaemoRunConfiguration.ProFile">Octopus_Prey.pro</value>
     <value type="QString" key="RemoteLinux.RunConfig.AlternateRemoteExecutable"></value>

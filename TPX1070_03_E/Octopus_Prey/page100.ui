@@ -1114,7 +1114,7 @@ background-color: rgb(170, 255, 127);
      <x>20</x>
      <y>130</y>
      <width>121</width>
-     <height>71</height>
+     <height>51</height>
     </rect>
    </property>
    <property name="font">
@@ -1133,7 +1133,7 @@ background-color: rgb(170, 255, 127);
      <x>300</x>
      <y>130</y>
      <width>121</width>
-     <height>71</height>
+     <height>51</height>
     </rect>
    </property>
    <property name="font">
@@ -1152,7 +1152,7 @@ background-color: rgb(170, 255, 127);
      <x>160</x>
      <y>130</y>
      <width>121</width>
-     <height>71</height>
+     <height>51</height>
     </rect>
    </property>
    <property name="font">
@@ -4949,6 +4949,25 @@ color: rgb(0, 0, 0);</string>
     <enum>ATCMlabel::Hex</enum>
    </property>
   </widget>
+  <widget class="QPushButton" name="pushButton_4">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>190</y>
+     <width>291</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Audio Record 4 s and Replay</string>
+   </property>
+  </widget>
   <zorder>label_FastIO</zorder>
   <zorder>atcmDate</zorder>
   <zorder>atcmLabel_PLC_time</zorder>
@@ -5034,6 +5053,7 @@ color: rgb(0, 0, 0);</string>
   <zorder>atcmLed_3</zorder>
   <zorder>label_33</zorder>
   <zorder>atcmLabel_PLC_AnIn_3</zorder>
+  <zorder>pushButton_4</zorder>
  </widget>
  <customwidgets>
   <customwidget>
