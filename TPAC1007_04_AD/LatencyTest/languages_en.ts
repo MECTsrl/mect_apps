@@ -52,10 +52,12 @@ Y2=PLC_AnOut_1</source>
     </message>
     <message>
         <location filename="page100.ui" line="338"/>
-        <location filename="page100.ui" line="674"/>
-        <location filename="page100.ui" line="740"/>
-        <location filename="page100.ui" line="806"/>
-        <location filename="page100.ui" line="859"/>
+        <location filename="page100.ui" line="668"/>
+        <location filename="page100.ui" line="734"/>
+        <location filename="page100.ui" line="787"/>
+        <location filename="page100.ui" line="864"/>
+        <location filename="page100.ui" line="936"/>
+        <location filename="page100.ui" line="1008"/>
         <source>ATCMbutton widget</source>
         <translation type="unfinished"></translation>
     </message>
@@ -115,48 +117,67 @@ Y2=PLC_AnOut_1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="671"/>
-        <location filename="page100.ui" line="683"/>
-        <source>Enabled</source>
+        <location filename="page100.ui" line="665"/>
+        <location filename="page100.ui" line="677"/>
+        <source>Enabled_AnOut</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="706"/>
-        <location filename="page100.ui" line="772"/>
+        <location filename="page100.ui" line="861"/>
+        <location filename="page100.ui" line="873"/>
+        <source>Enabled_2s</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page100.ui" line="896"/>
+        <location filename="page100.ui" line="899"/>
+        <source>2 s</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page100.ui" line="1005"/>
+        <location filename="page100.ui" line="1017"/>
+        <source>Enabled_none</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page100.ui" line="1040"/>
+        <location filename="page100.ui" line="1043"/>
+        <source>none</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page100.ui" line="933"/>
+        <location filename="page100.ui" line="945"/>
+        <source>Enabled_50ms</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page100.ui" line="968"/>
+        <location filename="page100.ui" line="971"/>
+        <source>50 ms</source>
+        <oldsource>off 50ms</oldsource>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page100.ui" line="700"/>
         <source>off</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="709"/>
-        <location filename="page100.ui" line="775"/>
+        <location filename="page100.ui" line="703"/>
         <source>ON</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="737"/>
-        <location filename="page100.ui" line="749"/>
-        <source>EnabledBis</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page100.ui" line="803"/>
-        <source>page: trend1  status: </source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page100.ui" line="828"/>
-        <location filename="page100.ui" line="831"/>
+        <location filename="page100.ui" line="756"/>
+        <location filename="page100.ui" line="759"/>
         <source>trend1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="856"/>
-        <source>page: trend2  status: </source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page100.ui" line="881"/>
-        <location filename="page100.ui" line="884"/>
+        <location filename="page100.ui" line="809"/>
+        <location filename="page100.ui" line="812"/>
         <source>trend2</source>
         <translation type="unfinished"></translation>
     </message>

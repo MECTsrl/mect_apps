@@ -46,17 +46,29 @@ int doWrite_InputFalling(int value);
 int addWrite_InputFalling(int value);
 int getStatus_InputFalling(void);
 
-#define ID_Enabled 195
-extern int Enabled;
-int doWrite_Enabled(int value);
-int addWrite_Enabled(int value);
-int getStatus_Enabled(void);
+#define ID_Enabled_50ms 195
+extern int Enabled_50ms;
+int doWrite_Enabled_50ms(int value);
+int addWrite_Enabled_50ms(int value);
+int getStatus_Enabled_50ms(void);
 
-#define ID_EnabledBis 196
-extern int EnabledBis;
-int doWrite_EnabledBis(int value);
-int addWrite_EnabledBis(int value);
-int getStatus_EnabledBis(void);
+#define ID_Enabled_2s 196
+extern int Enabled_2s;
+int doWrite_Enabled_2s(int value);
+int addWrite_Enabled_2s(int value);
+int getStatus_Enabled_2s(void);
+
+#define ID_Enabled_none 197
+extern int Enabled_none;
+int doWrite_Enabled_none(int value);
+int addWrite_Enabled_none(int value);
+int getStatus_Enabled_none(void);
+
+#define ID_Enabled_AnOut 198
+extern int Enabled_AnOut;
+int doWrite_Enabled_AnOut(int value);
+int addWrite_Enabled_AnOut(int value);
+int getStatus_Enabled_AnOut(void);
 
 #define ID_RTU0_TYPE_PORT 5000
 extern u_int32_t RTU0_TYPE_PORT;

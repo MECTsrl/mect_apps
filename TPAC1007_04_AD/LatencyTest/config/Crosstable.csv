@@ -190,12 +190,12 @@
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
-1;P;InputRising                    ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;193 ;4   ;[EV PLC_DigIn_2 RISING]
-1;P;InputFalling                   ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;193 ;4   ;[EV PLC_DigIn_2 FALLING]
-1;V;Enabled                        ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;193 ;4   ;[RW]
-1;V;EnabledBis                     ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;193 ;4   ;[RW]
-;;;;;;;;;;;;
-;;;;;;;;;;;;
+1;P;InputRising                    ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;193 ;6   ;[EV PLC_DigIn_2 RISING]
+1;P;InputFalling                   ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;193 ;6   ;[EV PLC_DigIn_2 FALLING]
+1;V;Enabled_50ms                   ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;193 ;6   ;[RW]
+1;V;Enabled_2s                     ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;193 ;6   ;[RW]
+1;V;Enabled_none                   ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;193 ;6   ;[RW]
+1;V;Enabled_AnOut                  ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;193 ;6   ;[RW]
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;

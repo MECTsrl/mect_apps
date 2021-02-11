@@ -18,12 +18,12 @@ file=Resource1.cst
 file=Init.st
 file=Alarms.st
 file=Events.st
-file=Fast.st
 file=Normal.st
-file=Slow.st
+file=Writer.st
 
 [Libs]
 file=$(LIBDIR)\ATCM_IEC1131_3.4cl
+file=$(LIBDIR)\ATCM_System.4cl
 
 [Targets]
 file=TPAC.ATHW119

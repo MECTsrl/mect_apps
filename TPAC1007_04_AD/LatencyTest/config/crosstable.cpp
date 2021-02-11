@@ -42,17 +42,31 @@ int InputFalling = 0;
 
 
 /*
- * Variable Enabled
+ * Variable Enabled_50ms
  */
 
-int Enabled = 0;
+int Enabled_50ms = 0;
 
 
 /*
- * Variable EnabledBis
+ * Variable Enabled_2s
  */
 
-int EnabledBis = 0;
+int Enabled_2s = 0;
+
+
+/*
+ * Variable Enabled_none
+ */
+
+int Enabled_none = 0;
+
+
+/*
+ * Variable Enabled_AnOut
+ */
+
+int Enabled_AnOut = 0;
 
 
 /*
@@ -2023,39 +2037,75 @@ getStatus_InputFalling(void)
 }
 
 int
-doWrite_Enabled(int value)
+doWrite_Enabled_50ms(int value)
 {
-	return doWrite(ID_Enabled, &value);
+	return doWrite(ID_Enabled_50ms, &value);
 }
 
 int
-addWrite_Enabled(int value)
+addWrite_Enabled_50ms(int value)
 {
-	return addWrite(ID_Enabled, &value);
+	return addWrite(ID_Enabled_50ms, &value);
 }
 
 int
-getStatus_Enabled(void)
+getStatus_Enabled_50ms(void)
 {
-	return getStatus(ID_Enabled);
+	return getStatus(ID_Enabled_50ms);
 }
 
 int
-doWrite_EnabledBis(int value)
+doWrite_Enabled_2s(int value)
 {
-	return doWrite(ID_EnabledBis, &value);
+	return doWrite(ID_Enabled_2s, &value);
 }
 
 int
-addWrite_EnabledBis(int value)
+addWrite_Enabled_2s(int value)
 {
-	return addWrite(ID_EnabledBis, &value);
+	return addWrite(ID_Enabled_2s, &value);
 }
 
 int
-getStatus_EnabledBis(void)
+getStatus_Enabled_2s(void)
 {
-	return getStatus(ID_EnabledBis);
+	return getStatus(ID_Enabled_2s);
+}
+
+int
+doWrite_Enabled_none(int value)
+{
+	return doWrite(ID_Enabled_none, &value);
+}
+
+int
+addWrite_Enabled_none(int value)
+{
+	return addWrite(ID_Enabled_none, &value);
+}
+
+int
+getStatus_Enabled_none(void)
+{
+	return getStatus(ID_Enabled_none);
+}
+
+int
+doWrite_Enabled_AnOut(int value)
+{
+	return doWrite(ID_Enabled_AnOut, &value);
+}
+
+int
+addWrite_Enabled_AnOut(int value)
+{
+	return addWrite(ID_Enabled_AnOut, &value);
+}
+
+int
+getStatus_Enabled_AnOut(void)
+{
+	return getStatus(ID_Enabled_AnOut);
 }
 
 int
@@ -7034,8 +7084,10 @@ update_all(void)
 
 	retval += readFromDb(ID_InputRising, &InputRising);
 	retval += readFromDb(ID_InputFalling, &InputFalling);
-	retval += readFromDb(ID_Enabled, &Enabled);
-	retval += readFromDb(ID_EnabledBis, &EnabledBis);
+	retval += readFromDb(ID_Enabled_50ms, &Enabled_50ms);
+	retval += readFromDb(ID_Enabled_2s, &Enabled_2s);
+	retval += readFromDb(ID_Enabled_none, &Enabled_none);
+	retval += readFromDb(ID_Enabled_AnOut, &Enabled_AnOut);
 	retval += readFromDb(ID_RTU0_TYPE_PORT, &RTU0_TYPE_PORT);
 	retval += readFromDb(ID_RTU0_BAUDRATE, &RTU0_BAUDRATE);
 	retval += readFromDb(ID_RTU0_STATUS, &RTU0_STATUS);
