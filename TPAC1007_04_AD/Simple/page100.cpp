@@ -58,7 +58,7 @@ void page100::reload()
        alarm banner initialization in QLineEdit:
          rotateShowError(ui->myLineEdit, ERROR_LABEL_PERIOD_MS);
      */
-    ui->label_TzDst->setText(QString("TZ+DST = %1").arg(ntpclient::getTimeZoneDST()));
+    ui->label_TzDst->setText(QString("TZ+DST = %1").arg(ntpclient->getOffset_h()));
 }
 
 /**
