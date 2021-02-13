@@ -1,5 +1,6 @@
 /**
  * @file
+ * @author Emiliano Bergamaschini <ebergamaschini@mect.it>
  *
  * @section LICENSE
  * Copyright Mect s.r.l. 2013
@@ -70,8 +71,12 @@ void page300::updateData()
     /* call the parent updateData member */
     page::updateData();
     
-    // datetime
-    ui->label_datetime->setText(QDateTime::currentDateTime().toString("hh:mm:ss"));
+    /* To read the cross table variable UINT TEST1:
+     *    uint_16 tmp = TEST1;
+     */
+    /* To write 5 into the the cross table variable UINT TEST1:
+     *    doWrite_TEST1(5);
+     */	
 }
 
 /**

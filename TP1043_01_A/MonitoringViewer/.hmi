@@ -4,12 +4,12 @@ INPUT(
 ./automation.o
 ./page100.o
 ./page200.o
-./page300.o
 ./page400.o
+./page300.o
 ./moc_page100.o
 ./moc_page200.o
-./moc_page300.o
 ./moc_page400.o
+./moc_page300.o
 ./qrc_systemicons.o
 ./qrc_languages.o
 ./qrc_resources.o

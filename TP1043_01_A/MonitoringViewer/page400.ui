@@ -2026,7 +2026,7 @@ background-color: rgb(0, 0, 0);
    <property name="geometry">
     <rect>
      <x>110</x>
-     <y>406</y>
+     <y>405</y>
      <width>24</width>
      <height>24</height>
     </rect>
@@ -3677,7 +3677,7 @@ background-color: rgb(0, 0, 0);
    </property>
    <property name="icon">
     <iconset resource="systemicons.qrc">
-     <normaloff>:/systemicons/Bee.png</normaloff>:/systemicons/Bee.png</iconset>
+     <normaloff>:/systemicons/In-yang.png</normaloff>:/systemicons/In-yang.png</iconset>
    </property>
    <property name="borderWidth">
     <number>1</number>
@@ -5642,25 +5642,6 @@ background-color: rgb(0, 0, 0);
      <normaloff>:/systemicons/Alert.png</normaloff>:/systemicons/Alert.png</iconset>
    </property>
   </widget>
-  <widget class="QLabel" name="label">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>135</y>
-     <width>272</width>
-     <height>96</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>DejaVu Sans</family>
-     <pointsize>8</pointsize>
-    </font>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-  </widget>
   <widget class="ATCMbutton" name="atcmButton_TCP_03">
    <property name="geometry">
     <rect>
@@ -6052,25 +6033,6 @@ background-color: rgb(0, 0, 0);
      <normaloff>:/icons/icons/LedOff_scuro.png</normaloff>:/icons/icons/LedOff_scuro.png</iconset>
    </property>
   </widget>
-  <widget class="QLabel" name="label_2">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>238</y>
-     <width>272</width>
-     <height>191</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>DejaVu Sans</family>
-     <pointsize>8</pointsize>
-    </font>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-  </widget>
   <widget class="ATCMled" name="atcmLed_DigIn_A_15">
    <property name="geometry">
     <rect>
@@ -6436,7 +6398,7 @@ background-color: rgb(192, 0, 0);</string>
   <widget class="ATCMled" name="atcmLed_DigIn_OK_B_09">
    <property name="geometry">
     <rect>
-     <x>111</x>
+     <x>110</x>
      <y>334</y>
      <width>24</width>
      <height>24</height>
@@ -7223,6 +7185,247 @@ background-color: rgb(192, 0, 0);</string>
      <normaloff>:/systemicons/Apply.png</normaloff>:/systemicons/Apply.png</iconset>
    </property>
   </widget>
+  <widget class="ATCMcombobox" name="atcmComboBox_AlarmConfig_3">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>66</x>
+     <y>205</y>
+     <width>68</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>7</pointsize>
+    </font>
+   </property>
+   <property name="toolTip">
+    <string>TCP_AlarmStatus</string>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMcombobox widget</string>
+   </property>
+   <property name="variable">
+    <string>TCP_AlarmStatus</string>
+   </property>
+   <property name="refresh">
+    <number>200</number>
+   </property>
+   <property name="viewStatus">
+    <bool>false</bool>
+   </property>
+   <property name="writeAcknowledge">
+    <bool>false</bool>
+   </property>
+   <property name="visibilityVar">
+    <string/>
+   </property>
+   <property name="bgColor">
+    <color>
+     <red>170</red>
+     <green>255</green>
+     <blue>255</blue>
+    </color>
+   </property>
+   <property name="borderColor">
+    <color>
+     <red>0</red>
+     <green>0</green>
+     <blue>0</blue>
+    </color>
+   </property>
+   <property name="fontColor">
+    <color>
+     <red>0</red>
+     <green>0</green>
+     <blue>255</blue>
+    </color>
+   </property>
+   <property name="borderWidth">
+    <number>1</number>
+   </property>
+   <property name="borderRadius">
+    <number>0</number>
+   </property>
+   <property name="apparence">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="mapping">
+    <string>0;ZERO;1;IDLE;2;ARMED;3;ENABLED;4;RINGING;5;MUTED</string>
+   </property>
+  </widget>
+  <widget class="ATCMled" name="atcmLed_DigIn_OK_B_07">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>310</y>
+     <width>24</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>TCP_OK_DigIn_B_7</string>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMled widget</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+   <property name="variable">
+    <string>TCP_OK_DigIn_B_7</string>
+   </property>
+   <property name="refresh">
+    <number>500</number>
+   </property>
+   <property name="viewStatus">
+    <bool>false</bool>
+   </property>
+   <property name="visibilityVar">
+    <string>TCP_AlarmArmed</string>
+   </property>
+   <property name="onIcon">
+    <iconset resource="systemicons.qrc">
+     <normaloff>:/systemicons/Apply.png</normaloff>:/systemicons/Apply.png</iconset>
+   </property>
+   <property name="offIcon">
+    <iconset resource="systemicons.qrc">
+     <normaloff>:/systemicons/Alert.png</normaloff>:/systemicons/Alert.png</iconset>
+   </property>
+  </widget>
+  <widget class="ATCMled" name="atcmLed_DigIn_OK_B_11">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>358</y>
+     <width>24</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>TCP_OK_DigIn_B_11</string>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMled widget</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+   <property name="variable">
+    <string>TCP_OK_DigIn_B_11</string>
+   </property>
+   <property name="refresh">
+    <number>500</number>
+   </property>
+   <property name="viewStatus">
+    <bool>false</bool>
+   </property>
+   <property name="visibilityVar">
+    <string>TCP_AlarmArmed</string>
+   </property>
+   <property name="onIcon">
+    <iconset resource="systemicons.qrc">
+     <normaloff>:/systemicons/Apply.png</normaloff>:/systemicons/Apply.png</iconset>
+   </property>
+   <property name="offIcon">
+    <iconset resource="systemicons.qrc">
+     <normaloff>:/systemicons/Alert.png</normaloff>:/systemicons/Alert.png</iconset>
+   </property>
+  </widget>
+  <widget class="ATCMled" name="atcmLed_DigIn_OK_B_13">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>381</y>
+     <width>24</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>TCP_OK_DigIn_B_13</string>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMled widget</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+   <property name="variable">
+    <string>TCP_OK_DigIn_B_13</string>
+   </property>
+   <property name="refresh">
+    <number>500</number>
+   </property>
+   <property name="viewStatus">
+    <bool>false</bool>
+   </property>
+   <property name="visibilityVar">
+    <string>TCP_AlarmArmed</string>
+   </property>
+   <property name="onIcon">
+    <iconset resource="systemicons.qrc">
+     <normaloff>:/systemicons/Apply.png</normaloff>:/systemicons/Apply.png</iconset>
+   </property>
+   <property name="offIcon">
+    <iconset resource="systemicons.qrc">
+     <normaloff>:/systemicons/Alert.png</normaloff>:/systemicons/Alert.png</iconset>
+   </property>
+  </widget>
+  <widget class="ATCMled" name="atcmLed_DigIn_OK_B_16">
+   <property name="geometry">
+    <rect>
+     <x>246</x>
+     <y>406</y>
+     <width>24</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>TCP_OK_DigIn_B_16</string>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMled widget</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+   <property name="variable">
+    <string>TCP_OK_DigIn_B_16</string>
+   </property>
+   <property name="refresh">
+    <number>500</number>
+   </property>
+   <property name="viewStatus">
+    <bool>false</bool>
+   </property>
+   <property name="visibilityVar">
+    <string>TCP_AlarmArmed</string>
+   </property>
+   <property name="onIcon">
+    <iconset resource="systemicons.qrc">
+     <normaloff>:/systemicons/Apply.png</normaloff>:/systemicons/Apply.png</iconset>
+   </property>
+   <property name="offIcon">
+    <iconset resource="systemicons.qrc">
+     <normaloff>:/systemicons/Alert.png</normaloff>:/systemicons/Alert.png</iconset>
+   </property>
+  </widget>
   <zorder>atcmDate</zorder>
   <zorder>atcmLabel_A1_2</zorder>
   <zorder>atcmLabel_W03</zorder>
@@ -7342,14 +7545,22 @@ background-color: rgb(192, 0, 0);</string>
   <zorder>atcmLed_DigIn_B_02</zorder>
   <zorder>atcmLed_DigIn_A_05</zorder>
   <zorder>atcmLed_DigIn_B_05</zorder>
-  <zorder>label</zorder>
-  <zorder>label_2</zorder>
   <zorder>atcmLed_caldaia_5</zorder>
+  <zorder>atcmComboBox_AlarmConfig_3</zorder>
+  <zorder>atcmLed_DigIn_OK_B_07</zorder>
+  <zorder>atcmLed_DigIn_OK_B_11</zorder>
+  <zorder>atcmLed_DigIn_OK_B_13</zorder>
+  <zorder>atcmLed_DigIn_OK_B_16</zorder>
  </widget>
  <customwidgets>
   <customwidget>
    <class>ATCMbutton</class>
    <extends>QPushButton</extends>
+   <header>atcmplugin.h</header>
+  </customwidget>
+  <customwidget>
+   <class>ATCMcombobox</class>
+   <extends>QComboBox</extends>
    <header>atcmplugin.h</header>
   </customwidget>
   <customwidget>
@@ -7374,8 +7585,8 @@ background-color: rgb(192, 0, 0);</string>
   </customwidget>
  </customwidgets>
  <resources>
-  <include location="resources.qrc"/>
   <include location="systemicons.qrc"/>
+  <include location="resources.qrc"/>
  </resources>
  <connections>
   <connection>

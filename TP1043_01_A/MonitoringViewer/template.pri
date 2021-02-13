@@ -43,7 +43,8 @@ include(./common.pri)
 TYPE = "TP1043_01_A"
 
 # display size
-MODEL = "<width>272</width><height>480</height>"
+#MODEL = "<width>272</width><height>480</height>"
+MODEL = "<width>480</width><height>272</height>"
 
 equals(MODEL, "<width>320</width><height>240</height>") {
     DEFINES+=WIDTH=320

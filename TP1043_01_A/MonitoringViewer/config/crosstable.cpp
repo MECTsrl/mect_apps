@@ -1085,6 +1085,13 @@ int TCP_OK_DigIn_B_16 = 0;
 
 
 /*
+ * Variable TCP_AlarmStatus
+ */
+
+u_int16_t TCP_AlarmStatus = 0;
+
+
+/*
  * Variable RTU0_TYPE_PORT
  */
 
@@ -5125,6 +5132,24 @@ getStatus_TCP_OK_DigIn_B_16(void)
 }
 
 int
+doWrite_TCP_AlarmStatus(u_int16_t value)
+{
+	return doWrite(ID_TCP_AlarmStatus, &value);
+}
+
+int
+addWrite_TCP_AlarmStatus(u_int16_t value)
+{
+	return addWrite(ID_TCP_AlarmStatus, &value);
+}
+
+int
+getStatus_TCP_AlarmStatus(void)
+{
+	return getStatus(ID_TCP_AlarmStatus);
+}
+
+int
 doWrite_RTU0_TYPE_PORT(u_int32_t value)
 {
 	return doWrite(ID_RTU0_TYPE_PORT, &value);
@@ -8683,6 +8708,7 @@ update_all(void)
 	retval += readFromDb(ID_TCP_OK_DigIn_B_14, &TCP_OK_DigIn_B_14);
 	retval += readFromDb(ID_TCP_OK_DigIn_B_15, &TCP_OK_DigIn_B_15);
 	retval += readFromDb(ID_TCP_OK_DigIn_B_16, &TCP_OK_DigIn_B_16);
+	retval += readFromDb(ID_TCP_AlarmStatus, &TCP_AlarmStatus);
 	retval += readFromDb(ID_RTU0_TYPE_PORT, &RTU0_TYPE_PORT);
 	retval += readFromDb(ID_RTU0_BAUDRATE, &RTU0_BAUDRATE);
 	retval += readFromDb(ID_RTU0_STATUS, &RTU0_STATUS);

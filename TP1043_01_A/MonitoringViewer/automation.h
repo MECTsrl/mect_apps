@@ -10,6 +10,15 @@ void loop(void);
 
 // ---------------------------------------
 
+#define ALARM_STATUS_ZERO     0 // not configured yet
+#define ALARM_STATUS_IDLE     1
+#define ALARM_STATUS_ARMED    2
+#define ALARM_STATUS_ENABLED  3
+#define ALARM_STATUS_RINGING  4
+#define ALARM_STATUS_MUTED    5
+
+// ---------------------------------------
+
 #include <QString>
 #include <QStringList>
 #include <QLabel>

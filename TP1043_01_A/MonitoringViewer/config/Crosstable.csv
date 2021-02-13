@@ -297,12 +297,12 @@
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
-3;P;XY_MD02_Temperature            ;INT      ;1   ;RTU       ;               ;0   ;1   ;300001;300 ;2   ;[RO]
-3;P;XY_MD02_Humidity               ;UINT     ;1   ;RTU       ;               ;0   ;1   ;300002;300 ;2   ;[RO]
-3;P;XY_MD02_DeviceAddress          ;UINT     ;0   ;RTU       ;               ;0   ;1   ;257   ;302 ;4   ;[RW]
-3;P;XY_MD02_BaudRate               ;UINT     ;0   ;RTU       ;               ;0   ;1   ;258   ;302 ;4   ;[RW]0=9600 1=14400 2=19200
-3;P;XY_MD02_TemperatureCorrection  ;INT      ;1   ;RTU       ;               ;0   ;1   ;259   ;302 ;4   ;[RW]-10°C .. +10°C
-3;P;XY_MD02_HumidityCorrection     ;INT      ;1   ;RTU       ;               ;0   ;1   ;260   ;302 ;4   ;[RW]-10%RH .. +10%RH
+3;H;XY_MD02_Temperature            ;INT      ;1   ;RTU       ;               ;0   ;1   ;300001;300 ;2   ;[RO]
+3;H;XY_MD02_Humidity               ;UINT     ;1   ;RTU       ;               ;0   ;1   ;300002;300 ;2   ;[RO]
+3;H;XY_MD02_DeviceAddress          ;UINT     ;0   ;RTU       ;               ;0   ;1   ;257   ;302 ;4   ;[RW]
+3;H;XY_MD02_BaudRate               ;UINT     ;0   ;RTU       ;               ;0   ;1   ;258   ;302 ;4   ;[RW]0=9600 1=14400 2=19200
+3;H;XY_MD02_TemperatureCorrection  ;INT      ;1   ;RTU       ;               ;0   ;1   ;259   ;302 ;4   ;[RW]-10°C .. +10°C
+3;H;XY_MD02_HumidityCorrection     ;INT      ;1   ;RTU       ;               ;0   ;1   ;260   ;302 ;4   ;[RW]-10%RH .. +10%RH
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
@@ -1112,39 +1112,39 @@
 3;V;TCP_DigIn_B_15                 ;WORD_BIT ;15  ;TCP       ;192.168.5.45   ;502 ;1   ;78    ;1063;51  ;[RO]Digital input value bit 15 MPNC020 01 module B
 3;V;TCP_DigIn_B_16                 ;WORD_BIT ;16  ;TCP       ;192.168.5.45   ;502 ;1   ;78    ;1063;51  ;[RO]Digital input value bit 16 MPNC020 01 module B
 ;;;;;;;;;;;;
-3;P;TCP_OK_DigIn_A_1               ;WORD_BIT ;1   ;TCP       ;192.168.5.45   ;502 ;1   ;79    ;1115;32  ;[RW]
-3;P;TCP_OK_DigIn_A_2               ;WORD_BIT ;2   ;TCP       ;192.168.5.45   ;502 ;1   ;79    ;1115;32  ;[RW]
-3;P;TCP_OK_DigIn_A_3               ;WORD_BIT ;3   ;TCP       ;192.168.5.45   ;502 ;1   ;79    ;1115;32  ;[RW]
-3;P;TCP_OK_DigIn_A_4               ;WORD_BIT ;4   ;TCP       ;192.168.5.45   ;502 ;1   ;79    ;1115;32  ;[RW]
-3;P;TCP_OK_DigIn_A_5               ;WORD_BIT ;5   ;TCP       ;192.168.5.45   ;502 ;1   ;79    ;1115;32  ;[RW]
-3;P;TCP_OK_DigIn_A_6               ;WORD_BIT ;6   ;TCP       ;192.168.5.45   ;502 ;1   ;79    ;1115;32  ;[RW]
-3;P;TCP_OK_DigIn_A_7               ;WORD_BIT ;7   ;TCP       ;192.168.5.45   ;502 ;1   ;79    ;1115;32  ;[RW]
-3;P;TCP_OK_DigIn_A_8               ;WORD_BIT ;8   ;TCP       ;192.168.5.45   ;502 ;1   ;79    ;1115;32  ;[RW]
-3;P;TCP_OK_DigIn_A_9               ;WORD_BIT ;9   ;TCP       ;192.168.5.45   ;502 ;1   ;79    ;1115;32  ;[RW]
-3;P;TCP_OK_DigIn_A_10              ;WORD_BIT ;10  ;TCP       ;192.168.5.45   ;502 ;1   ;79    ;1115;32  ;[RW]
-3;P;TCP_OK_DigIn_A_11              ;WORD_BIT ;11  ;TCP       ;192.168.5.45   ;502 ;1   ;79    ;1115;32  ;[RW]
-3;P;TCP_OK_DigIn_A_12              ;WORD_BIT ;12  ;TCP       ;192.168.5.45   ;502 ;1   ;79    ;1115;32  ;[RW]
-3;P;TCP_OK_DigIn_A_13              ;WORD_BIT ;13  ;TCP       ;192.168.5.45   ;502 ;1   ;79    ;1115;32  ;[RW]
-3;P;TCP_OK_DigIn_A_14              ;WORD_BIT ;14  ;TCP       ;192.168.5.45   ;502 ;1   ;79    ;1115;32  ;[RW]
-3;P;TCP_OK_DigIn_A_15              ;WORD_BIT ;15  ;TCP       ;192.168.5.45   ;502 ;1   ;79    ;1115;32  ;[RW]
-3;P;TCP_OK_DigIn_A_16              ;WORD_BIT ;16  ;TCP       ;192.168.5.45   ;502 ;1   ;79    ;1115;32  ;[RW]
-3;P;TCP_OK_DigIn_B_1               ;WORD_BIT ;1   ;TCP       ;192.168.5.45   ;502 ;1   ;80    ;1115;32  ;[RW]
-3;P;TCP_OK_DigIn_B_2               ;WORD_BIT ;2   ;TCP       ;192.168.5.45   ;502 ;1   ;80    ;1115;32  ;[RW]
-3;P;TCP_OK_DigIn_B_3               ;WORD_BIT ;3   ;TCP       ;192.168.5.45   ;502 ;1   ;80    ;1115;32  ;[RW]
-3;P;TCP_OK_DigIn_B_4               ;WORD_BIT ;4   ;TCP       ;192.168.5.45   ;502 ;1   ;80    ;1115;32  ;[RW]
-3;P;TCP_OK_DigIn_B_5               ;WORD_BIT ;5   ;TCP       ;192.168.5.45   ;502 ;1   ;80    ;1115;32  ;[RW]
-3;P;TCP_OK_DigIn_B_6               ;WORD_BIT ;6   ;TCP       ;192.168.5.45   ;502 ;1   ;80    ;1115;32  ;[RW]
-3;P;TCP_OK_DigIn_B_7               ;WORD_BIT ;7   ;TCP       ;192.168.5.45   ;502 ;1   ;80    ;1115;32  ;[RW]
-3;P;TCP_OK_DigIn_B_8               ;WORD_BIT ;8   ;TCP       ;192.168.5.45   ;502 ;1   ;80    ;1115;32  ;[RW]
-3;P;TCP_OK_DigIn_B_9               ;WORD_BIT ;9   ;TCP       ;192.168.5.45   ;502 ;1   ;80    ;1115;32  ;[RW]
-3;P;TCP_OK_DigIn_B_10              ;WORD_BIT ;10  ;TCP       ;192.168.5.45   ;502 ;1   ;80    ;1115;32  ;[RW]
-3;P;TCP_OK_DigIn_B_11              ;WORD_BIT ;11  ;TCP       ;192.168.5.45   ;502 ;1   ;80    ;1115;32  ;[RW]
-3;P;TCP_OK_DigIn_B_12              ;WORD_BIT ;12  ;TCP       ;192.168.5.45   ;502 ;1   ;80    ;1115;32  ;[RW]
-3;P;TCP_OK_DigIn_B_13              ;WORD_BIT ;13  ;TCP       ;192.168.5.45   ;502 ;1   ;80    ;1115;32  ;[RW]
-3;P;TCP_OK_DigIn_B_14              ;WORD_BIT ;14  ;TCP       ;192.168.5.45   ;502 ;1   ;80    ;1115;32  ;[RW]
-3;P;TCP_OK_DigIn_B_15              ;WORD_BIT ;15  ;TCP       ;192.168.5.45   ;502 ;1   ;80    ;1115;32  ;[RW]
-3;P;TCP_OK_DigIn_B_16              ;WORD_BIT ;16  ;TCP       ;192.168.5.45   ;502 ;1   ;80    ;1115;32  ;[RW]
-;;;;;;;;;;;;
+3;P;TCP_OK_DigIn_A_1               ;WORD_BIT ;1   ;TCP       ;192.168.5.45   ;502 ;1   ;79    ;1115;33  ;[RW]
+3;P;TCP_OK_DigIn_A_2               ;WORD_BIT ;2   ;TCP       ;192.168.5.45   ;502 ;1   ;79    ;1115;33  ;[RW]
+3;P;TCP_OK_DigIn_A_3               ;WORD_BIT ;3   ;TCP       ;192.168.5.45   ;502 ;1   ;79    ;1115;33  ;[RW]
+3;P;TCP_OK_DigIn_A_4               ;WORD_BIT ;4   ;TCP       ;192.168.5.45   ;502 ;1   ;79    ;1115;33  ;[RW]
+3;P;TCP_OK_DigIn_A_5               ;WORD_BIT ;5   ;TCP       ;192.168.5.45   ;502 ;1   ;79    ;1115;33  ;[RW]
+3;P;TCP_OK_DigIn_A_6               ;WORD_BIT ;6   ;TCP       ;192.168.5.45   ;502 ;1   ;79    ;1115;33  ;[RW]
+3;P;TCP_OK_DigIn_A_7               ;WORD_BIT ;7   ;TCP       ;192.168.5.45   ;502 ;1   ;79    ;1115;33  ;[RW]
+3;P;TCP_OK_DigIn_A_8               ;WORD_BIT ;8   ;TCP       ;192.168.5.45   ;502 ;1   ;79    ;1115;33  ;[RW]
+3;P;TCP_OK_DigIn_A_9               ;WORD_BIT ;9   ;TCP       ;192.168.5.45   ;502 ;1   ;79    ;1115;33  ;[RW]
+3;P;TCP_OK_DigIn_A_10              ;WORD_BIT ;10  ;TCP       ;192.168.5.45   ;502 ;1   ;79    ;1115;33  ;[RW]
+3;P;TCP_OK_DigIn_A_11              ;WORD_BIT ;11  ;TCP       ;192.168.5.45   ;502 ;1   ;79    ;1115;33  ;[RW]
+3;P;TCP_OK_DigIn_A_12              ;WORD_BIT ;12  ;TCP       ;192.168.5.45   ;502 ;1   ;79    ;1115;33  ;[RW]
+3;P;TCP_OK_DigIn_A_13              ;WORD_BIT ;13  ;TCP       ;192.168.5.45   ;502 ;1   ;79    ;1115;33  ;[RW]
+3;P;TCP_OK_DigIn_A_14              ;WORD_BIT ;14  ;TCP       ;192.168.5.45   ;502 ;1   ;79    ;1115;33  ;[RW]
+3;P;TCP_OK_DigIn_A_15              ;WORD_BIT ;15  ;TCP       ;192.168.5.45   ;502 ;1   ;79    ;1115;33  ;[RW]
+3;P;TCP_OK_DigIn_A_16              ;WORD_BIT ;16  ;TCP       ;192.168.5.45   ;502 ;1   ;79    ;1115;33  ;[RW]
+3;P;TCP_OK_DigIn_B_1               ;WORD_BIT ;1   ;TCP       ;192.168.5.45   ;502 ;1   ;80    ;1115;33  ;[RW]
+3;P;TCP_OK_DigIn_B_2               ;WORD_BIT ;2   ;TCP       ;192.168.5.45   ;502 ;1   ;80    ;1115;33  ;[RW]
+3;P;TCP_OK_DigIn_B_3               ;WORD_BIT ;3   ;TCP       ;192.168.5.45   ;502 ;1   ;80    ;1115;33  ;[RW]
+3;P;TCP_OK_DigIn_B_4               ;WORD_BIT ;4   ;TCP       ;192.168.5.45   ;502 ;1   ;80    ;1115;33  ;[RW]
+3;P;TCP_OK_DigIn_B_5               ;WORD_BIT ;5   ;TCP       ;192.168.5.45   ;502 ;1   ;80    ;1115;33  ;[RW]
+3;P;TCP_OK_DigIn_B_6               ;WORD_BIT ;6   ;TCP       ;192.168.5.45   ;502 ;1   ;80    ;1115;33  ;[RW]
+3;P;TCP_OK_DigIn_B_7               ;WORD_BIT ;7   ;TCP       ;192.168.5.45   ;502 ;1   ;80    ;1115;33  ;[RW]
+3;P;TCP_OK_DigIn_B_8               ;WORD_BIT ;8   ;TCP       ;192.168.5.45   ;502 ;1   ;80    ;1115;33  ;[RW]
+3;P;TCP_OK_DigIn_B_9               ;WORD_BIT ;9   ;TCP       ;192.168.5.45   ;502 ;1   ;80    ;1115;33  ;[RW]
+3;P;TCP_OK_DigIn_B_10              ;WORD_BIT ;10  ;TCP       ;192.168.5.45   ;502 ;1   ;80    ;1115;33  ;[RW]
+3;P;TCP_OK_DigIn_B_11              ;WORD_BIT ;11  ;TCP       ;192.168.5.45   ;502 ;1   ;80    ;1115;33  ;[RW]
+3;P;TCP_OK_DigIn_B_12              ;WORD_BIT ;12  ;TCP       ;192.168.5.45   ;502 ;1   ;80    ;1115;33  ;[RW]
+3;P;TCP_OK_DigIn_B_13              ;WORD_BIT ;13  ;TCP       ;192.168.5.45   ;502 ;1   ;80    ;1115;33  ;[RW]
+3;P;TCP_OK_DigIn_B_14              ;WORD_BIT ;14  ;TCP       ;192.168.5.45   ;502 ;1   ;80    ;1115;33  ;[RW]
+3;P;TCP_OK_DigIn_B_15              ;WORD_BIT ;15  ;TCP       ;192.168.5.45   ;502 ;1   ;80    ;1115;33  ;[RW]
+3;P;TCP_OK_DigIn_B_16              ;WORD_BIT ;16  ;TCP       ;192.168.5.45   ;502 ;1   ;80    ;1115;33  ;[RW]
+3;P;TCP_AlarmStatus                ;UINT     ;0   ;TCP       ;192.168.5.45   ;502 ;1   ;81    ;1115;33  ;[RW]
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;

@@ -940,6 +940,12 @@ int doWrite_TCP_OK_DigIn_B_16(int value);
 int addWrite_TCP_OK_DigIn_B_16(int value);
 int getStatus_TCP_OK_DigIn_B_16(void);
 
+#define ID_TCP_AlarmStatus 1147
+extern u_int16_t TCP_AlarmStatus;
+int doWrite_TCP_AlarmStatus(u_int16_t value);
+int addWrite_TCP_AlarmStatus(u_int16_t value);
+int getStatus_TCP_AlarmStatus(void);
+
 #define ID_RTU0_TYPE_PORT 5000
 extern u_int32_t RTU0_TYPE_PORT;
 int doWrite_RTU0_TYPE_PORT(u_int32_t value);
