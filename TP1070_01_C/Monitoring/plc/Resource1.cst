@@ -1,6 +1,14 @@
 (* Constant file *)
 CONST
 
-	
+	(* vedi ../automation.h *)
+
+	ALARM_STATUS_ZERO    : UINT := 0;
+	ALARM_STATUS_IDLE    : UINT := 1;
+	ALARM_STATUS_ARMED   : UINT := 2;
+	ALARM_STATUS_ENABLED : UINT := 3;
+	ALARM_STATUS_RINGING : UINT := 4;
+	ALARM_STATUS_MUTED   : UINT := 5;
+
 END_CONST
 

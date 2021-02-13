@@ -85,8 +85,16 @@ END_VAR
 	TCP_SysImpActiveEnergy_11  := SysImpActiveEnergy_11;
 
     TCP_Alarm		 := Alarm		 ;
-    TCP_AlarmEnabled := AlarmEnabled ;
-    TCP_AlarmArmed   := AlarmArmed	 ;
+	case AlarmStatus of
+		ALARM_STATUS_ZERO:    TCP_AlarmEnabled := false; TCP_AlarmArmed := false;
+		ALARM_STATUS_IDLE:    TCP_AlarmEnabled := false; TCP_AlarmArmed := false;
+		ALARM_STATUS_ARMED:   TCP_AlarmEnabled := false; TCP_AlarmArmed := true;
+  		ALARM_STATUS_ENABLED: TCP_AlarmEnabled := true;  TCP_AlarmArmed := true;
+  		ALARM_STATUS_RINGING: TCP_AlarmEnabled := true;  TCP_AlarmArmed := true;
+  		ALARM_STATUS_MUTED:   TCP_AlarmEnabled := false; TCP_AlarmArmed := true;
+	else
+		;
+    end_case;
 
     TCP_DigOut_A_1  :=  XX_DigOut_A_1  ;
     TCP_DigOut_A_2  :=  XX_DigOut_A_2  ;
@@ -170,5 +178,7 @@ END_VAR
     TCP_OK_DigIn_B_14 := OK_DigIn_B_14 ;
     TCP_OK_DigIn_B_15 := OK_DigIn_B_15 ;
     TCP_OK_DigIn_B_16 := OK_DigIn_B_16 ;
+
+	TCP_AlarmStatus := AlarmStatus;
 
 END_PROGRAM

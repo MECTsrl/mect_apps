@@ -42,6 +42,25 @@ page400::page400(QWidget *parent) :
     /* set the style described into the macro SET_PAGE400_STYLE */
     SET_PAGE400_STYLE();
     translateFontSize(this);
+
+    ui->atcmButton_Heating_2->setEnabled(false);
+    ui->atcmButton_XX_01->setEnabled(false);
+    ui->atcmButton_XX_02->setEnabled(false);
+    ui->atcmButton_XX_03->setEnabled(false);
+    ui->atcmButton_XX_04->setEnabled(false);
+    ui->atcmButton_XX_05->setEnabled(false);
+    ui->atcmButton_XX_06->setEnabled(false);
+    ui->atcmButton_XX_07->setEnabled(false);
+    ui->atcmButton_XX_08->setEnabled(false);
+    ui->atcmButton_XX_09->setEnabled(false);
+    ui->atcmButton_XX_10->setEnabled(false);
+    ui->atcmButton_XX_11->setEnabled(false);
+    ui->atcmButton_XX_12->setEnabled(false);
+    ui->atcmButton_XX_13->setEnabled(false);
+    ui->atcmButton_XX_14->setEnabled(false);
+    ui->atcmButton_XX_15->setEnabled(false);
+    ui->atcmButton_XX_16->setEnabled(false);
+
 }
 
 /**

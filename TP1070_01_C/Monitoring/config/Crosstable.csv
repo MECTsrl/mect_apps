@@ -185,8 +185,8 @@
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
+1;P;SavedAlarmStatus               ;UINT     ;0   ;PLC       ;               ;    ;    ;      ;188 ;2   ;[RW]
+1;P;SavedAlarmConfig               ;UDINT    ;0   ;PLC       ;               ;    ;    ;      ;188 ;2   ;[RW]
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
 1;P;openvpn_restart_times          ;UDINT    ;0   ;PLC       ;               ;    ;    ;      ;192 ;4   ;[RW]
@@ -495,43 +495,42 @@
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
-1;P;AlarmArmed                     ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;498 ;36  ;[RW]
-1;P;AlarmEnabled                   ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;498 ;36  ;[RW]
-1;V;Alarm                          ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;498 ;36  ;[RW]
-1;P;OK_DigIn_A_1                   ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;498 ;36  ;[RW]
-1;P;OK_DigIn_A_2                   ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;498 ;36  ;[RW]
-1;P;OK_DigIn_A_3                   ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;498 ;36  ;[RW]
-1;P;OK_DigIn_A_4                   ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;498 ;36  ;[RW]
-1;P;OK_DigIn_A_5                   ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;498 ;36  ;[RW]
-1;P;OK_DigIn_A_6                   ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;498 ;36  ;[RW]
-1;P;OK_DigIn_A_7                   ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;498 ;36  ;[RW]
-1;P;OK_DigIn_A_8                   ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;498 ;36  ;[RW]
-1;P;OK_DigIn_A_9                   ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;498 ;36  ;[RW]
-1;P;OK_DigIn_A_10                  ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;498 ;36  ;[RW]
-1;P;OK_DigIn_A_11                  ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;498 ;36  ;[RW]
-1;P;OK_DigIn_A_12                  ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;498 ;36  ;[RW]
-1;P;OK_DigIn_A_13                  ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;498 ;36  ;[RW]
-1;P;OK_DigIn_A_14                  ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;498 ;36  ;[RW]
-1;P;OK_DigIn_A_15                  ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;498 ;36  ;[RW]
-1;P;OK_DigIn_A_16                  ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;498 ;36  ;[RW]
-1;P;OK_DigIn_B_1                   ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;498 ;36  ;[RW]
-1;P;OK_DigIn_B_2                   ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;498 ;36  ;[RW]
-1;P;OK_DigIn_B_3                   ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;498 ;36  ;[RW]
-1;P;OK_DigIn_B_4                   ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;498 ;36  ;[RW]
-1;P;OK_DigIn_B_5                   ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;498 ;36  ;[RW]
-1;P;OK_DigIn_B_6                   ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;498 ;36  ;[RW]
-1;P;OK_DigIn_B_7                   ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;498 ;36  ;[RW]
-1;P;OK_DigIn_B_8                   ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;498 ;36  ;[RW]
-1;P;OK_DigIn_B_9                   ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;498 ;36  ;[RW]
-1;P;OK_DigIn_B_10                  ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;498 ;36  ;[RW]
-1;P;OK_DigIn_B_11                  ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;498 ;36  ;[RW]
-1;P;OK_DigIn_B_12                  ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;498 ;36  ;[RW]
-1;P;OK_DigIn_B_13                  ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;498 ;36  ;[RW]
-1;P;OK_DigIn_B_14                  ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;498 ;36  ;[RW]
-1;P;OK_DigIn_B_15                  ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;498 ;36  ;[RW]
-1;P;OK_DigIn_B_16                  ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;498 ;36  ;[RW]
-1;P;AlarmRising                    ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;498 ;36  ;[AL Alarm RISING]
 ;;;;;;;;;;;;
+1;P;AlarmStatus                    ;UINT     ;0   ;PLC       ;               ;    ;    ;      ;499 ;35  ;[RW]
+1;V;Alarm                          ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;499 ;35  ;[RW]
+1;P;OK_DigIn_A_1                   ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;499 ;35  ;[RW]
+1;P;OK_DigIn_A_2                   ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;499 ;35  ;[RW]
+1;P;OK_DigIn_A_3                   ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;499 ;35  ;[RW]
+1;P;OK_DigIn_A_4                   ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;499 ;35  ;[RW]
+1;P;OK_DigIn_A_5                   ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;499 ;35  ;[RW]
+1;P;OK_DigIn_A_6                   ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;499 ;35  ;[RW]
+1;P;OK_DigIn_A_7                   ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;499 ;35  ;[RW]
+1;P;OK_DigIn_A_8                   ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;499 ;35  ;[RW]
+1;P;OK_DigIn_A_9                   ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;499 ;35  ;[RW]
+1;P;OK_DigIn_A_10                  ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;499 ;35  ;[RW]
+1;P;OK_DigIn_A_11                  ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;499 ;35  ;[RW]
+1;P;OK_DigIn_A_12                  ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;499 ;35  ;[RW]
+1;P;OK_DigIn_A_13                  ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;499 ;35  ;[RW]
+1;P;OK_DigIn_A_14                  ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;499 ;35  ;[RW]
+1;P;OK_DigIn_A_15                  ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;499 ;35  ;[RW]
+1;P;OK_DigIn_A_16                  ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;499 ;35  ;[RW]
+1;P;OK_DigIn_B_1                   ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;499 ;35  ;[RW]
+1;P;OK_DigIn_B_2                   ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;499 ;35  ;[RW]
+1;P;OK_DigIn_B_3                   ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;499 ;35  ;[RW]
+1;P;OK_DigIn_B_4                   ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;499 ;35  ;[RW]
+1;P;OK_DigIn_B_5                   ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;499 ;35  ;[RW]
+1;P;OK_DigIn_B_6                   ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;499 ;35  ;[RW]
+1;P;OK_DigIn_B_7                   ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;499 ;35  ;[RW]
+1;P;OK_DigIn_B_8                   ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;499 ;35  ;[RW]
+1;P;OK_DigIn_B_9                   ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;499 ;35  ;[RW]
+1;P;OK_DigIn_B_10                  ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;499 ;35  ;[RW]
+1;P;OK_DigIn_B_11                  ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;499 ;35  ;[RW]
+1;P;OK_DigIn_B_12                  ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;499 ;35  ;[RW]
+1;P;OK_DigIn_B_13                  ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;499 ;35  ;[RW]
+1;P;OK_DigIn_B_14                  ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;499 ;35  ;[RW]
+1;P;OK_DigIn_B_15                  ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;499 ;35  ;[RW]
+1;P;OK_DigIn_B_16                  ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;499 ;35  ;[RW]
+1;P;AlarmRising                    ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;499 ;35  ;[AL Alarm RISING]
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
@@ -599,37 +598,38 @@
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
+1;P;AlarmArmed_A_1                 ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;601 ;32  ;[RW]
+1;P;AlarmArmed_A_2                 ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;601 ;32  ;[RW]
+1;P;AlarmArmed_A_3                 ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;601 ;32  ;[RW]
+1;P;AlarmArmed_A_4                 ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;601 ;32  ;[RW]
+1;P;AlarmArmed_A_5                 ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;601 ;32  ;[RW]
+1;P;AlarmArmed_A_6                 ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;601 ;32  ;[RW]
+1;P;AlarmArmed_A_7                 ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;601 ;32  ;[RW]
+1;P;AlarmArmed_A_8                 ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;601 ;32  ;[RW]
+1;P;AlarmArmed_A_9                 ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;601 ;32  ;[RW]
+1;P;AlarmArmed_A_10                ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;601 ;32  ;[RW]
+1;P;AlarmArmed_A_11                ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;601 ;32  ;[RW]
+1;P;AlarmArmed_A_12                ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;601 ;32  ;[RW]
+1;P;AlarmArmed_A_13                ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;601 ;32  ;[RW]
+1;P;AlarmArmed_A_14                ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;601 ;32  ;[RW]
+1;P;AlarmArmed_A_15                ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;601 ;32  ;[RW]
+1;P;AlarmArmed_A_16                ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;601 ;32  ;[RW]
+1;P;AlarmArmed_B_1                 ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;601 ;32  ;[RW]
+1;P;AlarmArmed_B_2                 ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;601 ;32  ;[RW]
+1;P;AlarmArmed_B_3                 ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;601 ;32  ;[RW]
+1;P;AlarmArmed_B_4                 ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;601 ;32  ;[RW]
+1;P;AlarmArmed_B_5                 ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;601 ;32  ;[RW]
+1;P;AlarmArmed_B_6                 ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;601 ;32  ;[RW]
+1;P;AlarmArmed_B_7                 ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;601 ;32  ;[RW]
+1;P;AlarmArmed_B_8                 ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;601 ;32  ;[RW]
+1;P;AlarmArmed_B_9                 ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;601 ;32  ;[RW]
+1;P;AlarmArmed_B_10                ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;601 ;32  ;[RW]
+1;P;AlarmArmed_B_11                ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;601 ;32  ;[RW]
+1;P;AlarmArmed_B_12                ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;601 ;32  ;[RW]
+1;P;AlarmArmed_B_13                ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;601 ;32  ;[RW]
+1;P;AlarmArmed_B_14                ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;601 ;32  ;[RW]
+1;P;AlarmArmed_B_15                ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;601 ;32  ;[RW]
+1;P;AlarmArmed_B_16                ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;601 ;32  ;[RW]
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
@@ -1112,39 +1112,39 @@
 3;P;TCP_DigIn_B_15                 ;WORD_BIT ;15  ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;78    ;1063;51  ;[RW]Digital input value bit 15 MPNC020 01 module B
 3;P;TCP_DigIn_B_16                 ;WORD_BIT ;16  ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;78    ;1063;51  ;[RW]Digital input value bit 16 MPNC020 01 module B
 ;;;;;;;;;;;;
-3;P;TCP_OK_DigIn_A_1               ;WORD_BIT ;1   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;79    ;1115;32  ;[RW]
-3;P;TCP_OK_DigIn_A_2               ;WORD_BIT ;2   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;79    ;1115;32  ;[RW]
-3;P;TCP_OK_DigIn_A_3               ;WORD_BIT ;3   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;79    ;1115;32  ;[RW]
-3;P;TCP_OK_DigIn_A_4               ;WORD_BIT ;4   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;79    ;1115;32  ;[RW]
-3;P;TCP_OK_DigIn_A_5               ;WORD_BIT ;5   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;79    ;1115;32  ;[RW]
-3;P;TCP_OK_DigIn_A_6               ;WORD_BIT ;6   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;79    ;1115;32  ;[RW]
-3;P;TCP_OK_DigIn_A_7               ;WORD_BIT ;7   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;79    ;1115;32  ;[RW]
-3;P;TCP_OK_DigIn_A_8               ;WORD_BIT ;8   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;79    ;1115;32  ;[RW]
-3;P;TCP_OK_DigIn_A_9               ;WORD_BIT ;9   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;79    ;1115;32  ;[RW]
-3;P;TCP_OK_DigIn_A_10              ;WORD_BIT ;10  ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;79    ;1115;32  ;[RW]
-3;P;TCP_OK_DigIn_A_11              ;WORD_BIT ;11  ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;79    ;1115;32  ;[RW]
-3;P;TCP_OK_DigIn_A_12              ;WORD_BIT ;12  ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;79    ;1115;32  ;[RW]
-3;P;TCP_OK_DigIn_A_13              ;WORD_BIT ;13  ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;79    ;1115;32  ;[RW]
-3;P;TCP_OK_DigIn_A_14              ;WORD_BIT ;14  ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;79    ;1115;32  ;[RW]
-3;P;TCP_OK_DigIn_A_15              ;WORD_BIT ;15  ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;79    ;1115;32  ;[RW]
-3;P;TCP_OK_DigIn_A_16              ;WORD_BIT ;16  ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;79    ;1115;32  ;[RW]
-3;P;TCP_OK_DigIn_B_1               ;WORD_BIT ;1   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;80    ;1115;32  ;[RW]
-3;P;TCP_OK_DigIn_B_2               ;WORD_BIT ;2   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;80    ;1115;32  ;[RW]
-3;P;TCP_OK_DigIn_B_3               ;WORD_BIT ;3   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;80    ;1115;32  ;[RW]
-3;P;TCP_OK_DigIn_B_4               ;WORD_BIT ;4   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;80    ;1115;32  ;[RW]
-3;P;TCP_OK_DigIn_B_5               ;WORD_BIT ;5   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;80    ;1115;32  ;[RW]
-3;P;TCP_OK_DigIn_B_6               ;WORD_BIT ;6   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;80    ;1115;32  ;[RW]
-3;P;TCP_OK_DigIn_B_7               ;WORD_BIT ;7   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;80    ;1115;32  ;[RW]
-3;P;TCP_OK_DigIn_B_8               ;WORD_BIT ;8   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;80    ;1115;32  ;[RW]
-3;P;TCP_OK_DigIn_B_9               ;WORD_BIT ;9   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;80    ;1115;32  ;[RW]
-3;P;TCP_OK_DigIn_B_10              ;WORD_BIT ;10  ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;80    ;1115;32  ;[RW]
-3;P;TCP_OK_DigIn_B_11              ;WORD_BIT ;11  ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;80    ;1115;32  ;[RW]
-3;P;TCP_OK_DigIn_B_12              ;WORD_BIT ;12  ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;80    ;1115;32  ;[RW]
-3;P;TCP_OK_DigIn_B_13              ;WORD_BIT ;13  ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;80    ;1115;32  ;[RW]
-3;P;TCP_OK_DigIn_B_14              ;WORD_BIT ;14  ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;80    ;1115;32  ;[RW]
-3;P;TCP_OK_DigIn_B_15              ;WORD_BIT ;15  ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;80    ;1115;32  ;[RW]
-3;P;TCP_OK_DigIn_B_16              ;WORD_BIT ;16  ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;80    ;1115;32  ;[RW]
-;;;;;;;;;;;;
+3;P;TCP_OK_DigIn_A_1               ;WORD_BIT ;1   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;79    ;1115;33  ;[RW]
+3;P;TCP_OK_DigIn_A_2               ;WORD_BIT ;2   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;79    ;1115;33  ;[RW]
+3;P;TCP_OK_DigIn_A_3               ;WORD_BIT ;3   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;79    ;1115;33  ;[RW]
+3;P;TCP_OK_DigIn_A_4               ;WORD_BIT ;4   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;79    ;1115;33  ;[RW]
+3;P;TCP_OK_DigIn_A_5               ;WORD_BIT ;5   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;79    ;1115;33  ;[RW]
+3;P;TCP_OK_DigIn_A_6               ;WORD_BIT ;6   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;79    ;1115;33  ;[RW]
+3;P;TCP_OK_DigIn_A_7               ;WORD_BIT ;7   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;79    ;1115;33  ;[RW]
+3;P;TCP_OK_DigIn_A_8               ;WORD_BIT ;8   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;79    ;1115;33  ;[RW]
+3;P;TCP_OK_DigIn_A_9               ;WORD_BIT ;9   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;79    ;1115;33  ;[RW]
+3;P;TCP_OK_DigIn_A_10              ;WORD_BIT ;10  ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;79    ;1115;33  ;[RW]
+3;P;TCP_OK_DigIn_A_11              ;WORD_BIT ;11  ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;79    ;1115;33  ;[RW]
+3;P;TCP_OK_DigIn_A_12              ;WORD_BIT ;12  ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;79    ;1115;33  ;[RW]
+3;P;TCP_OK_DigIn_A_13              ;WORD_BIT ;13  ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;79    ;1115;33  ;[RW]
+3;P;TCP_OK_DigIn_A_14              ;WORD_BIT ;14  ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;79    ;1115;33  ;[RW]
+3;P;TCP_OK_DigIn_A_15              ;WORD_BIT ;15  ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;79    ;1115;33  ;[RW]
+3;P;TCP_OK_DigIn_A_16              ;WORD_BIT ;16  ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;79    ;1115;33  ;[RW]
+3;P;TCP_OK_DigIn_B_1               ;WORD_BIT ;1   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;80    ;1115;33  ;[RW]
+3;P;TCP_OK_DigIn_B_2               ;WORD_BIT ;2   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;80    ;1115;33  ;[RW]
+3;P;TCP_OK_DigIn_B_3               ;WORD_BIT ;3   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;80    ;1115;33  ;[RW]
+3;P;TCP_OK_DigIn_B_4               ;WORD_BIT ;4   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;80    ;1115;33  ;[RW]
+3;P;TCP_OK_DigIn_B_5               ;WORD_BIT ;5   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;80    ;1115;33  ;[RW]
+3;P;TCP_OK_DigIn_B_6               ;WORD_BIT ;6   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;80    ;1115;33  ;[RW]
+3;P;TCP_OK_DigIn_B_7               ;WORD_BIT ;7   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;80    ;1115;33  ;[RW]
+3;P;TCP_OK_DigIn_B_8               ;WORD_BIT ;8   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;80    ;1115;33  ;[RW]
+3;P;TCP_OK_DigIn_B_9               ;WORD_BIT ;9   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;80    ;1115;33  ;[RW]
+3;P;TCP_OK_DigIn_B_10              ;WORD_BIT ;10  ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;80    ;1115;33  ;[RW]
+3;P;TCP_OK_DigIn_B_11              ;WORD_BIT ;11  ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;80    ;1115;33  ;[RW]
+3;P;TCP_OK_DigIn_B_12              ;WORD_BIT ;12  ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;80    ;1115;33  ;[RW]
+3;P;TCP_OK_DigIn_B_13              ;WORD_BIT ;13  ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;80    ;1115;33  ;[RW]
+3;P;TCP_OK_DigIn_B_14              ;WORD_BIT ;14  ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;80    ;1115;33  ;[RW]
+3;P;TCP_OK_DigIn_B_15              ;WORD_BIT ;15  ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;80    ;1115;33  ;[RW]
+3;P;TCP_OK_DigIn_B_16              ;WORD_BIT ;16  ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;80    ;1115;33  ;[RW]
+3;P;TCP_AlarmStatus                ;UINT     ;0   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;81    ;1115;33  ;[RW]
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
@@ -5395,8 +5395,8 @@
 1;P;PLC_EngineStatus               ;UINT     ;0   ;PLC       ;               ;    ;    ;      ;5390;10  ;[RO]PLC status
 1;P;PLC_ResetValues                ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;5390;10  ;[RW]Diagnostic variables reset
 1;P;PLC_buzzerOn                   ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;5390;10  ;[RW]Buzzer sound (enable = 1 disable = 0)
-1;P;PLC_PLC_Version                ;UINT     ;3   ;PLC       ;               ;    ;    ;      ;5390;10  ;[RO]PLC application version
-1;P;PLC_HMI_Version                ;UINT     ;3   ;PLC       ;               ;    ;    ;      ;5390;10  ;[RO]HMI application version
+1;P;PLC_PLC_Version                ;UINT     ;3   ;PLC       ;               ;    ;    ;      ;5390;10  ;[RW]PLC application version
+1;P;PLC_HMI_Version                ;UINT     ;3   ;PLC       ;               ;    ;    ;      ;5390;10  ;[RW]HMI application version
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;

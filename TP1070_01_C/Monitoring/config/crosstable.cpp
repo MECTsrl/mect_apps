@@ -91,6 +91,20 @@ int16_t CoolingSetPoint_C = 0;
 
 
 /*
+ * Variable SavedAlarmStatus
+ */
+
+u_int16_t SavedAlarmStatus = 0;
+
+
+/*
+ * Variable SavedAlarmConfig
+ */
+
+u_int32_t SavedAlarmConfig = 0;
+
+
+/*
  * Variable openvpn_restart_times
  */
 
@@ -1064,17 +1078,10 @@ float SysImpActiveEnergy_11 = 0;
 
 
 /*
- * Variable AlarmArmed
+ * Variable AlarmStatus
  */
 
-int AlarmArmed = 0;
-
-
-/*
- * Variable AlarmEnabled
- */
-
-int AlarmEnabled = 0;
+u_int16_t AlarmStatus = 0;
 
 
 /*
@@ -1313,6 +1320,230 @@ int OK_DigIn_B_16 = 0;
  */
 
 int AlarmRising = 0;
+
+
+/*
+ * Variable AlarmArmed_A_1
+ */
+
+int AlarmArmed_A_1 = 0;
+
+
+/*
+ * Variable AlarmArmed_A_2
+ */
+
+int AlarmArmed_A_2 = 0;
+
+
+/*
+ * Variable AlarmArmed_A_3
+ */
+
+int AlarmArmed_A_3 = 0;
+
+
+/*
+ * Variable AlarmArmed_A_4
+ */
+
+int AlarmArmed_A_4 = 0;
+
+
+/*
+ * Variable AlarmArmed_A_5
+ */
+
+int AlarmArmed_A_5 = 0;
+
+
+/*
+ * Variable AlarmArmed_A_6
+ */
+
+int AlarmArmed_A_6 = 0;
+
+
+/*
+ * Variable AlarmArmed_A_7
+ */
+
+int AlarmArmed_A_7 = 0;
+
+
+/*
+ * Variable AlarmArmed_A_8
+ */
+
+int AlarmArmed_A_8 = 0;
+
+
+/*
+ * Variable AlarmArmed_A_9
+ */
+
+int AlarmArmed_A_9 = 0;
+
+
+/*
+ * Variable AlarmArmed_A_10
+ */
+
+int AlarmArmed_A_10 = 0;
+
+
+/*
+ * Variable AlarmArmed_A_11
+ */
+
+int AlarmArmed_A_11 = 0;
+
+
+/*
+ * Variable AlarmArmed_A_12
+ */
+
+int AlarmArmed_A_12 = 0;
+
+
+/*
+ * Variable AlarmArmed_A_13
+ */
+
+int AlarmArmed_A_13 = 0;
+
+
+/*
+ * Variable AlarmArmed_A_14
+ */
+
+int AlarmArmed_A_14 = 0;
+
+
+/*
+ * Variable AlarmArmed_A_15
+ */
+
+int AlarmArmed_A_15 = 0;
+
+
+/*
+ * Variable AlarmArmed_A_16
+ */
+
+int AlarmArmed_A_16 = 0;
+
+
+/*
+ * Variable AlarmArmed_B_1
+ */
+
+int AlarmArmed_B_1 = 0;
+
+
+/*
+ * Variable AlarmArmed_B_2
+ */
+
+int AlarmArmed_B_2 = 0;
+
+
+/*
+ * Variable AlarmArmed_B_3
+ */
+
+int AlarmArmed_B_3 = 0;
+
+
+/*
+ * Variable AlarmArmed_B_4
+ */
+
+int AlarmArmed_B_4 = 0;
+
+
+/*
+ * Variable AlarmArmed_B_5
+ */
+
+int AlarmArmed_B_5 = 0;
+
+
+/*
+ * Variable AlarmArmed_B_6
+ */
+
+int AlarmArmed_B_6 = 0;
+
+
+/*
+ * Variable AlarmArmed_B_7
+ */
+
+int AlarmArmed_B_7 = 0;
+
+
+/*
+ * Variable AlarmArmed_B_8
+ */
+
+int AlarmArmed_B_8 = 0;
+
+
+/*
+ * Variable AlarmArmed_B_9
+ */
+
+int AlarmArmed_B_9 = 0;
+
+
+/*
+ * Variable AlarmArmed_B_10
+ */
+
+int AlarmArmed_B_10 = 0;
+
+
+/*
+ * Variable AlarmArmed_B_11
+ */
+
+int AlarmArmed_B_11 = 0;
+
+
+/*
+ * Variable AlarmArmed_B_12
+ */
+
+int AlarmArmed_B_12 = 0;
+
+
+/*
+ * Variable AlarmArmed_B_13
+ */
+
+int AlarmArmed_B_13 = 0;
+
+
+/*
+ * Variable AlarmArmed_B_14
+ */
+
+int AlarmArmed_B_14 = 0;
+
+
+/*
+ * Variable AlarmArmed_B_15
+ */
+
+int AlarmArmed_B_15 = 0;
+
+
+/*
+ * Variable AlarmArmed_B_16
+ */
+
+int AlarmArmed_B_16 = 0;
 
 
 /*
@@ -2321,6 +2552,13 @@ int TCP_OK_DigIn_B_15 = 0;
  */
 
 int TCP_OK_DigIn_B_16 = 0;
+
+
+/*
+ * Variable TCP_AlarmStatus
+ */
+
+u_int16_t TCP_AlarmStatus = 0;
 
 
 /*
@@ -4015,6 +4253,42 @@ int
 getStatus_CoolingSetPoint_C(void)
 {
 	return getStatus(ID_CoolingSetPoint_C);
+}
+
+int
+doWrite_SavedAlarmStatus(u_int16_t value)
+{
+	return doWrite(ID_SavedAlarmStatus, &value);
+}
+
+int
+addWrite_SavedAlarmStatus(u_int16_t value)
+{
+	return addWrite(ID_SavedAlarmStatus, &value);
+}
+
+int
+getStatus_SavedAlarmStatus(void)
+{
+	return getStatus(ID_SavedAlarmStatus);
+}
+
+int
+doWrite_SavedAlarmConfig(u_int32_t value)
+{
+	return doWrite(ID_SavedAlarmConfig, &value);
+}
+
+int
+addWrite_SavedAlarmConfig(u_int32_t value)
+{
+	return addWrite(ID_SavedAlarmConfig, &value);
+}
+
+int
+getStatus_SavedAlarmConfig(void)
+{
+	return getStatus(ID_SavedAlarmConfig);
 }
 
 int
@@ -6520,39 +6794,21 @@ getStatus_SysImpActiveEnergy_11(void)
 }
 
 int
-doWrite_AlarmArmed(int value)
+doWrite_AlarmStatus(u_int16_t value)
 {
-	return doWrite(ID_AlarmArmed, &value);
+	return doWrite(ID_AlarmStatus, &value);
 }
 
 int
-addWrite_AlarmArmed(int value)
+addWrite_AlarmStatus(u_int16_t value)
 {
-	return addWrite(ID_AlarmArmed, &value);
+	return addWrite(ID_AlarmStatus, &value);
 }
 
 int
-getStatus_AlarmArmed(void)
+getStatus_AlarmStatus(void)
 {
-	return getStatus(ID_AlarmArmed);
-}
-
-int
-doWrite_AlarmEnabled(int value)
-{
-	return doWrite(ID_AlarmEnabled, &value);
-}
-
-int
-addWrite_AlarmEnabled(int value)
-{
-	return addWrite(ID_AlarmEnabled, &value);
-}
-
-int
-getStatus_AlarmEnabled(void)
-{
-	return getStatus(ID_AlarmEnabled);
+	return getStatus(ID_AlarmStatus);
 }
 
 int
@@ -7165,6 +7421,582 @@ int
 getStatus_AlarmRising(void)
 {
 	return getStatus(ID_AlarmRising);
+}
+
+int
+doWrite_AlarmArmed_A_1(int value)
+{
+	return doWrite(ID_AlarmArmed_A_1, &value);
+}
+
+int
+addWrite_AlarmArmed_A_1(int value)
+{
+	return addWrite(ID_AlarmArmed_A_1, &value);
+}
+
+int
+getStatus_AlarmArmed_A_1(void)
+{
+	return getStatus(ID_AlarmArmed_A_1);
+}
+
+int
+doWrite_AlarmArmed_A_2(int value)
+{
+	return doWrite(ID_AlarmArmed_A_2, &value);
+}
+
+int
+addWrite_AlarmArmed_A_2(int value)
+{
+	return addWrite(ID_AlarmArmed_A_2, &value);
+}
+
+int
+getStatus_AlarmArmed_A_2(void)
+{
+	return getStatus(ID_AlarmArmed_A_2);
+}
+
+int
+doWrite_AlarmArmed_A_3(int value)
+{
+	return doWrite(ID_AlarmArmed_A_3, &value);
+}
+
+int
+addWrite_AlarmArmed_A_3(int value)
+{
+	return addWrite(ID_AlarmArmed_A_3, &value);
+}
+
+int
+getStatus_AlarmArmed_A_3(void)
+{
+	return getStatus(ID_AlarmArmed_A_3);
+}
+
+int
+doWrite_AlarmArmed_A_4(int value)
+{
+	return doWrite(ID_AlarmArmed_A_4, &value);
+}
+
+int
+addWrite_AlarmArmed_A_4(int value)
+{
+	return addWrite(ID_AlarmArmed_A_4, &value);
+}
+
+int
+getStatus_AlarmArmed_A_4(void)
+{
+	return getStatus(ID_AlarmArmed_A_4);
+}
+
+int
+doWrite_AlarmArmed_A_5(int value)
+{
+	return doWrite(ID_AlarmArmed_A_5, &value);
+}
+
+int
+addWrite_AlarmArmed_A_5(int value)
+{
+	return addWrite(ID_AlarmArmed_A_5, &value);
+}
+
+int
+getStatus_AlarmArmed_A_5(void)
+{
+	return getStatus(ID_AlarmArmed_A_5);
+}
+
+int
+doWrite_AlarmArmed_A_6(int value)
+{
+	return doWrite(ID_AlarmArmed_A_6, &value);
+}
+
+int
+addWrite_AlarmArmed_A_6(int value)
+{
+	return addWrite(ID_AlarmArmed_A_6, &value);
+}
+
+int
+getStatus_AlarmArmed_A_6(void)
+{
+	return getStatus(ID_AlarmArmed_A_6);
+}
+
+int
+doWrite_AlarmArmed_A_7(int value)
+{
+	return doWrite(ID_AlarmArmed_A_7, &value);
+}
+
+int
+addWrite_AlarmArmed_A_7(int value)
+{
+	return addWrite(ID_AlarmArmed_A_7, &value);
+}
+
+int
+getStatus_AlarmArmed_A_7(void)
+{
+	return getStatus(ID_AlarmArmed_A_7);
+}
+
+int
+doWrite_AlarmArmed_A_8(int value)
+{
+	return doWrite(ID_AlarmArmed_A_8, &value);
+}
+
+int
+addWrite_AlarmArmed_A_8(int value)
+{
+	return addWrite(ID_AlarmArmed_A_8, &value);
+}
+
+int
+getStatus_AlarmArmed_A_8(void)
+{
+	return getStatus(ID_AlarmArmed_A_8);
+}
+
+int
+doWrite_AlarmArmed_A_9(int value)
+{
+	return doWrite(ID_AlarmArmed_A_9, &value);
+}
+
+int
+addWrite_AlarmArmed_A_9(int value)
+{
+	return addWrite(ID_AlarmArmed_A_9, &value);
+}
+
+int
+getStatus_AlarmArmed_A_9(void)
+{
+	return getStatus(ID_AlarmArmed_A_9);
+}
+
+int
+doWrite_AlarmArmed_A_10(int value)
+{
+	return doWrite(ID_AlarmArmed_A_10, &value);
+}
+
+int
+addWrite_AlarmArmed_A_10(int value)
+{
+	return addWrite(ID_AlarmArmed_A_10, &value);
+}
+
+int
+getStatus_AlarmArmed_A_10(void)
+{
+	return getStatus(ID_AlarmArmed_A_10);
+}
+
+int
+doWrite_AlarmArmed_A_11(int value)
+{
+	return doWrite(ID_AlarmArmed_A_11, &value);
+}
+
+int
+addWrite_AlarmArmed_A_11(int value)
+{
+	return addWrite(ID_AlarmArmed_A_11, &value);
+}
+
+int
+getStatus_AlarmArmed_A_11(void)
+{
+	return getStatus(ID_AlarmArmed_A_11);
+}
+
+int
+doWrite_AlarmArmed_A_12(int value)
+{
+	return doWrite(ID_AlarmArmed_A_12, &value);
+}
+
+int
+addWrite_AlarmArmed_A_12(int value)
+{
+	return addWrite(ID_AlarmArmed_A_12, &value);
+}
+
+int
+getStatus_AlarmArmed_A_12(void)
+{
+	return getStatus(ID_AlarmArmed_A_12);
+}
+
+int
+doWrite_AlarmArmed_A_13(int value)
+{
+	return doWrite(ID_AlarmArmed_A_13, &value);
+}
+
+int
+addWrite_AlarmArmed_A_13(int value)
+{
+	return addWrite(ID_AlarmArmed_A_13, &value);
+}
+
+int
+getStatus_AlarmArmed_A_13(void)
+{
+	return getStatus(ID_AlarmArmed_A_13);
+}
+
+int
+doWrite_AlarmArmed_A_14(int value)
+{
+	return doWrite(ID_AlarmArmed_A_14, &value);
+}
+
+int
+addWrite_AlarmArmed_A_14(int value)
+{
+	return addWrite(ID_AlarmArmed_A_14, &value);
+}
+
+int
+getStatus_AlarmArmed_A_14(void)
+{
+	return getStatus(ID_AlarmArmed_A_14);
+}
+
+int
+doWrite_AlarmArmed_A_15(int value)
+{
+	return doWrite(ID_AlarmArmed_A_15, &value);
+}
+
+int
+addWrite_AlarmArmed_A_15(int value)
+{
+	return addWrite(ID_AlarmArmed_A_15, &value);
+}
+
+int
+getStatus_AlarmArmed_A_15(void)
+{
+	return getStatus(ID_AlarmArmed_A_15);
+}
+
+int
+doWrite_AlarmArmed_A_16(int value)
+{
+	return doWrite(ID_AlarmArmed_A_16, &value);
+}
+
+int
+addWrite_AlarmArmed_A_16(int value)
+{
+	return addWrite(ID_AlarmArmed_A_16, &value);
+}
+
+int
+getStatus_AlarmArmed_A_16(void)
+{
+	return getStatus(ID_AlarmArmed_A_16);
+}
+
+int
+doWrite_AlarmArmed_B_1(int value)
+{
+	return doWrite(ID_AlarmArmed_B_1, &value);
+}
+
+int
+addWrite_AlarmArmed_B_1(int value)
+{
+	return addWrite(ID_AlarmArmed_B_1, &value);
+}
+
+int
+getStatus_AlarmArmed_B_1(void)
+{
+	return getStatus(ID_AlarmArmed_B_1);
+}
+
+int
+doWrite_AlarmArmed_B_2(int value)
+{
+	return doWrite(ID_AlarmArmed_B_2, &value);
+}
+
+int
+addWrite_AlarmArmed_B_2(int value)
+{
+	return addWrite(ID_AlarmArmed_B_2, &value);
+}
+
+int
+getStatus_AlarmArmed_B_2(void)
+{
+	return getStatus(ID_AlarmArmed_B_2);
+}
+
+int
+doWrite_AlarmArmed_B_3(int value)
+{
+	return doWrite(ID_AlarmArmed_B_3, &value);
+}
+
+int
+addWrite_AlarmArmed_B_3(int value)
+{
+	return addWrite(ID_AlarmArmed_B_3, &value);
+}
+
+int
+getStatus_AlarmArmed_B_3(void)
+{
+	return getStatus(ID_AlarmArmed_B_3);
+}
+
+int
+doWrite_AlarmArmed_B_4(int value)
+{
+	return doWrite(ID_AlarmArmed_B_4, &value);
+}
+
+int
+addWrite_AlarmArmed_B_4(int value)
+{
+	return addWrite(ID_AlarmArmed_B_4, &value);
+}
+
+int
+getStatus_AlarmArmed_B_4(void)
+{
+	return getStatus(ID_AlarmArmed_B_4);
+}
+
+int
+doWrite_AlarmArmed_B_5(int value)
+{
+	return doWrite(ID_AlarmArmed_B_5, &value);
+}
+
+int
+addWrite_AlarmArmed_B_5(int value)
+{
+	return addWrite(ID_AlarmArmed_B_5, &value);
+}
+
+int
+getStatus_AlarmArmed_B_5(void)
+{
+	return getStatus(ID_AlarmArmed_B_5);
+}
+
+int
+doWrite_AlarmArmed_B_6(int value)
+{
+	return doWrite(ID_AlarmArmed_B_6, &value);
+}
+
+int
+addWrite_AlarmArmed_B_6(int value)
+{
+	return addWrite(ID_AlarmArmed_B_6, &value);
+}
+
+int
+getStatus_AlarmArmed_B_6(void)
+{
+	return getStatus(ID_AlarmArmed_B_6);
+}
+
+int
+doWrite_AlarmArmed_B_7(int value)
+{
+	return doWrite(ID_AlarmArmed_B_7, &value);
+}
+
+int
+addWrite_AlarmArmed_B_7(int value)
+{
+	return addWrite(ID_AlarmArmed_B_7, &value);
+}
+
+int
+getStatus_AlarmArmed_B_7(void)
+{
+	return getStatus(ID_AlarmArmed_B_7);
+}
+
+int
+doWrite_AlarmArmed_B_8(int value)
+{
+	return doWrite(ID_AlarmArmed_B_8, &value);
+}
+
+int
+addWrite_AlarmArmed_B_8(int value)
+{
+	return addWrite(ID_AlarmArmed_B_8, &value);
+}
+
+int
+getStatus_AlarmArmed_B_8(void)
+{
+	return getStatus(ID_AlarmArmed_B_8);
+}
+
+int
+doWrite_AlarmArmed_B_9(int value)
+{
+	return doWrite(ID_AlarmArmed_B_9, &value);
+}
+
+int
+addWrite_AlarmArmed_B_9(int value)
+{
+	return addWrite(ID_AlarmArmed_B_9, &value);
+}
+
+int
+getStatus_AlarmArmed_B_9(void)
+{
+	return getStatus(ID_AlarmArmed_B_9);
+}
+
+int
+doWrite_AlarmArmed_B_10(int value)
+{
+	return doWrite(ID_AlarmArmed_B_10, &value);
+}
+
+int
+addWrite_AlarmArmed_B_10(int value)
+{
+	return addWrite(ID_AlarmArmed_B_10, &value);
+}
+
+int
+getStatus_AlarmArmed_B_10(void)
+{
+	return getStatus(ID_AlarmArmed_B_10);
+}
+
+int
+doWrite_AlarmArmed_B_11(int value)
+{
+	return doWrite(ID_AlarmArmed_B_11, &value);
+}
+
+int
+addWrite_AlarmArmed_B_11(int value)
+{
+	return addWrite(ID_AlarmArmed_B_11, &value);
+}
+
+int
+getStatus_AlarmArmed_B_11(void)
+{
+	return getStatus(ID_AlarmArmed_B_11);
+}
+
+int
+doWrite_AlarmArmed_B_12(int value)
+{
+	return doWrite(ID_AlarmArmed_B_12, &value);
+}
+
+int
+addWrite_AlarmArmed_B_12(int value)
+{
+	return addWrite(ID_AlarmArmed_B_12, &value);
+}
+
+int
+getStatus_AlarmArmed_B_12(void)
+{
+	return getStatus(ID_AlarmArmed_B_12);
+}
+
+int
+doWrite_AlarmArmed_B_13(int value)
+{
+	return doWrite(ID_AlarmArmed_B_13, &value);
+}
+
+int
+addWrite_AlarmArmed_B_13(int value)
+{
+	return addWrite(ID_AlarmArmed_B_13, &value);
+}
+
+int
+getStatus_AlarmArmed_B_13(void)
+{
+	return getStatus(ID_AlarmArmed_B_13);
+}
+
+int
+doWrite_AlarmArmed_B_14(int value)
+{
+	return doWrite(ID_AlarmArmed_B_14, &value);
+}
+
+int
+addWrite_AlarmArmed_B_14(int value)
+{
+	return addWrite(ID_AlarmArmed_B_14, &value);
+}
+
+int
+getStatus_AlarmArmed_B_14(void)
+{
+	return getStatus(ID_AlarmArmed_B_14);
+}
+
+int
+doWrite_AlarmArmed_B_15(int value)
+{
+	return doWrite(ID_AlarmArmed_B_15, &value);
+}
+
+int
+addWrite_AlarmArmed_B_15(int value)
+{
+	return addWrite(ID_AlarmArmed_B_15, &value);
+}
+
+int
+getStatus_AlarmArmed_B_15(void)
+{
+	return getStatus(ID_AlarmArmed_B_15);
+}
+
+int
+doWrite_AlarmArmed_B_16(int value)
+{
+	return doWrite(ID_AlarmArmed_B_16, &value);
+}
+
+int
+addWrite_AlarmArmed_B_16(int value)
+{
+	return addWrite(ID_AlarmArmed_B_16, &value);
+}
+
+int
+getStatus_AlarmArmed_B_16(void)
+{
+	return getStatus(ID_AlarmArmed_B_16);
 }
 
 int
@@ -9757,6 +10589,24 @@ int
 getStatus_TCP_OK_DigIn_B_16(void)
 {
 	return getStatus(ID_TCP_OK_DigIn_B_16);
+}
+
+int
+doWrite_TCP_AlarmStatus(u_int16_t value)
+{
+	return doWrite(ID_TCP_AlarmStatus, &value);
+}
+
+int
+addWrite_TCP_AlarmStatus(u_int16_t value)
+{
+	return addWrite(ID_TCP_AlarmStatus, &value);
+}
+
+int
+getStatus_TCP_AlarmStatus(void)
+{
+	return getStatus(ID_TCP_AlarmStatus);
 }
 
 int
@@ -13716,6 +14566,8 @@ update_all(void)
 	retval += readFromDb(ID_CoolingSetPoint_A, &CoolingSetPoint_A);
 	retval += readFromDb(ID_CoolingSetPoint_B, &CoolingSetPoint_B);
 	retval += readFromDb(ID_CoolingSetPoint_C, &CoolingSetPoint_C);
+	retval += readFromDb(ID_SavedAlarmStatus, &SavedAlarmStatus);
+	retval += readFromDb(ID_SavedAlarmConfig, &SavedAlarmConfig);
 	retval += readFromDb(ID_openvpn_restart_times, &openvpn_restart_times);
 	retval += readFromDb(ID_is_PPP0_ON, &is_PPP0_ON);
 	retval += readFromDb(ID_is_TUN0_ON, &is_TUN0_ON);
@@ -13855,8 +14707,7 @@ update_all(void)
 	retval += readFromDb(ID_SysImpActiveEnergy_10, &SysImpActiveEnergy_10);
 	retval += readFromDb(ID_SysActivePower_11, &SysActivePower_11);
 	retval += readFromDb(ID_SysImpActiveEnergy_11, &SysImpActiveEnergy_11);
-	retval += readFromDb(ID_AlarmArmed, &AlarmArmed);
-	retval += readFromDb(ID_AlarmEnabled, &AlarmEnabled);
+	retval += readFromDb(ID_AlarmStatus, &AlarmStatus);
 	retval += readFromDb(ID_Alarm, &Alarm);
 	retval += readFromDb(ID_OK_DigIn_A_1, &OK_DigIn_A_1);
 	retval += readFromDb(ID_OK_DigIn_A_2, &OK_DigIn_A_2);
@@ -13891,6 +14742,38 @@ update_all(void)
 	retval += readFromDb(ID_OK_DigIn_B_15, &OK_DigIn_B_15);
 	retval += readFromDb(ID_OK_DigIn_B_16, &OK_DigIn_B_16);
 	retval += readFromDb(ID_AlarmRising, &AlarmRising);
+	retval += readFromDb(ID_AlarmArmed_A_1, &AlarmArmed_A_1);
+	retval += readFromDb(ID_AlarmArmed_A_2, &AlarmArmed_A_2);
+	retval += readFromDb(ID_AlarmArmed_A_3, &AlarmArmed_A_3);
+	retval += readFromDb(ID_AlarmArmed_A_4, &AlarmArmed_A_4);
+	retval += readFromDb(ID_AlarmArmed_A_5, &AlarmArmed_A_5);
+	retval += readFromDb(ID_AlarmArmed_A_6, &AlarmArmed_A_6);
+	retval += readFromDb(ID_AlarmArmed_A_7, &AlarmArmed_A_7);
+	retval += readFromDb(ID_AlarmArmed_A_8, &AlarmArmed_A_8);
+	retval += readFromDb(ID_AlarmArmed_A_9, &AlarmArmed_A_9);
+	retval += readFromDb(ID_AlarmArmed_A_10, &AlarmArmed_A_10);
+	retval += readFromDb(ID_AlarmArmed_A_11, &AlarmArmed_A_11);
+	retval += readFromDb(ID_AlarmArmed_A_12, &AlarmArmed_A_12);
+	retval += readFromDb(ID_AlarmArmed_A_13, &AlarmArmed_A_13);
+	retval += readFromDb(ID_AlarmArmed_A_14, &AlarmArmed_A_14);
+	retval += readFromDb(ID_AlarmArmed_A_15, &AlarmArmed_A_15);
+	retval += readFromDb(ID_AlarmArmed_A_16, &AlarmArmed_A_16);
+	retval += readFromDb(ID_AlarmArmed_B_1, &AlarmArmed_B_1);
+	retval += readFromDb(ID_AlarmArmed_B_2, &AlarmArmed_B_2);
+	retval += readFromDb(ID_AlarmArmed_B_3, &AlarmArmed_B_3);
+	retval += readFromDb(ID_AlarmArmed_B_4, &AlarmArmed_B_4);
+	retval += readFromDb(ID_AlarmArmed_B_5, &AlarmArmed_B_5);
+	retval += readFromDb(ID_AlarmArmed_B_6, &AlarmArmed_B_6);
+	retval += readFromDb(ID_AlarmArmed_B_7, &AlarmArmed_B_7);
+	retval += readFromDb(ID_AlarmArmed_B_8, &AlarmArmed_B_8);
+	retval += readFromDb(ID_AlarmArmed_B_9, &AlarmArmed_B_9);
+	retval += readFromDb(ID_AlarmArmed_B_10, &AlarmArmed_B_10);
+	retval += readFromDb(ID_AlarmArmed_B_11, &AlarmArmed_B_11);
+	retval += readFromDb(ID_AlarmArmed_B_12, &AlarmArmed_B_12);
+	retval += readFromDb(ID_AlarmArmed_B_13, &AlarmArmed_B_13);
+	retval += readFromDb(ID_AlarmArmed_B_14, &AlarmArmed_B_14);
+	retval += readFromDb(ID_AlarmArmed_B_15, &AlarmArmed_B_15);
+	retval += readFromDb(ID_AlarmArmed_B_16, &AlarmArmed_B_16);
 	retval += readFromDb(ID_TCP_is_Caldaia_ON, &TCP_is_Caldaia_ON);
 	retval += readFromDb(ID_TCP_HeatingEnable, &TCP_HeatingEnable);
 	retval += readFromDb(ID_TCP_AnIn_A_1, &TCP_AnIn_A_1);
@@ -14035,6 +14918,7 @@ update_all(void)
 	retval += readFromDb(ID_TCP_OK_DigIn_B_14, &TCP_OK_DigIn_B_14);
 	retval += readFromDb(ID_TCP_OK_DigIn_B_15, &TCP_OK_DigIn_B_15);
 	retval += readFromDb(ID_TCP_OK_DigIn_B_16, &TCP_OK_DigIn_B_16);
+	retval += readFromDb(ID_TCP_AlarmStatus, &TCP_AlarmStatus);
 	retval += readFromDb(ID_RTU0_TYPE_PORT, &RTU0_TYPE_PORT);
 	retval += readFromDb(ID_RTU0_BAUDRATE, &RTU0_BAUDRATE);
 	retval += readFromDb(ID_RTU0_STATUS, &RTU0_STATUS);

@@ -15,11 +15,11 @@ RESOURCE Resource1
         PROGRAM Alarms_Inst1 WITH  Task1_Alarms: Alarms;
         PROGRAM Events_Inst1 WITH  Task2_Events: Events;
         
-        PROGRAM Normal_Inst1 WITH  Task4_Normal_100ms: Normal;
-        PROGRAM Slow_Inst1 WITH  Task5_Slow_1000ms: Slow;
-        PROGRAM VerySlow_Inst1 WITH  Task6_VerySlow_2minutes: VerySlow;
-        PROGRAM CheckDigIO_Inst1 WITH  Task4_Normal_100ms: CheckDigIO;
-        PROGRAM CheckOK_Inst1 WITH  Task5_Slow_1000ms: CheckOK;
+        PROGRAM Normal WITH  Task4_Normal_100ms: Normal;
+        PROGRAM Slow WITH  Task5_Slow_1000ms: Slow;
+        PROGRAM VerySlow WITH  Task6_VerySlow_2minutes: VerySlow;
+        PROGRAM CheckDigIO WITH  Task4_Normal_100ms: CheckDigIO;
+        PROGRAM CheckOK WITH  Task5_Slow_1000ms: CheckOK;
         
 END_RESOURCE
 

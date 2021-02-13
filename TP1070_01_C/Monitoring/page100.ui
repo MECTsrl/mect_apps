@@ -3624,7 +3624,7 @@ background-color: rgb(192, 0, 0);</string>
     <bool>false</bool>
    </property>
    <property name="visibilityVar">
-    <string>AlarmArmed</string>
+    <string>AlarmArmed_B_8</string>
    </property>
    <property name="onIcon">
     <iconset resource="systemicons.qrc">
@@ -3807,7 +3807,7 @@ background-color: rgb(192, 0, 0);</string>
   <widget class="ATCMled" name="atcmLed_DigIn_OK_B_09">
    <property name="geometry">
     <rect>
-     <x>641</x>
+     <x>640</x>
      <y>334</y>
      <width>24</width>
      <height>24</height>
@@ -3835,7 +3835,7 @@ background-color: rgb(192, 0, 0);</string>
     <bool>false</bool>
    </property>
    <property name="visibilityVar">
-    <string>AlarmArmed</string>
+    <string>AlarmArmed_B_9</string>
    </property>
    <property name="onIcon">
     <iconset resource="systemicons.qrc">
@@ -3919,7 +3919,7 @@ background-color: rgb(192, 0, 0);</string>
     <bool>false</bool>
    </property>
    <property name="visibilityVar">
-    <string>AlarmArmed</string>
+    <string>AlarmArmed_B_5</string>
    </property>
    <property name="onIcon">
     <iconset resource="systemicons.qrc">
@@ -4219,7 +4219,7 @@ background-color: rgb(192, 0, 0);</string>
     <bool>false</bool>
    </property>
    <property name="visibilityVar">
-    <string>AlarmArmed</string>
+    <string>AlarmArmed_A_8</string>
    </property>
    <property name="onIcon">
     <iconset resource="systemicons.qrc">
@@ -4261,7 +4261,7 @@ background-color: rgb(192, 0, 0);</string>
     <bool>false</bool>
    </property>
    <property name="visibilityVar">
-    <string>AlarmArmed</string>
+    <string>AlarmArmed_B_3</string>
    </property>
    <property name="onIcon">
     <iconset resource="systemicons.qrc">
@@ -4270,25 +4270,6 @@ background-color: rgb(192, 0, 0);</string>
    <property name="offIcon">
     <iconset resource="systemicons.qrc">
      <normaloff>:/systemicons/Alert.png</normaloff>:/systemicons/Alert.png</iconset>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label">
-   <property name="geometry">
-    <rect>
-     <x>530</x>
-     <y>137</y>
-     <width>272</width>
-     <height>96</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>DejaVu Sans</family>
-     <pointsize>8</pointsize>
-    </font>
-   </property>
-   <property name="text">
-    <string/>
    </property>
   </widget>
   <widget class="ATCMbutton" name="atcmButton_XX_11">
@@ -4580,7 +4561,7 @@ background-color: rgb(192, 0, 0);</string>
     <bool>false</bool>
    </property>
    <property name="visibilityVar">
-    <string>AlarmArmed</string>
+    <string>AlarmArmed_A_10</string>
    </property>
    <property name="onIcon">
     <iconset resource="systemicons.qrc">
@@ -4706,7 +4687,7 @@ background-color: rgb(192, 0, 0);</string>
     <bool>false</bool>
    </property>
    <property name="visibilityVar">
-    <string>AlarmArmed</string>
+    <string>AlarmArmed_B_6</string>
    </property>
    <property name="onIcon">
     <iconset resource="systemicons.qrc">
@@ -5736,7 +5717,7 @@ background-color: rgb(192, 0, 0);</string>
     <bool>false</bool>
    </property>
    <property name="visibilityVar">
-    <string>AlarmArmed</string>
+    <string>AlarmArmed_B_15</string>
    </property>
    <property name="onIcon">
     <iconset resource="systemicons.qrc">
@@ -6120,7 +6101,7 @@ background-color: rgb(192, 0, 0);</string>
     <bool>false</bool>
    </property>
    <property name="visibilityVar">
-    <string>AlarmArmed</string>
+    <string>AlarmArmed_B_1</string>
    </property>
    <property name="onIcon">
     <iconset resource="systemicons.qrc">
@@ -6252,7 +6233,7 @@ background-color: rgb(192, 0, 0);</string>
     <bool>false</bool>
    </property>
    <property name="visibilityVar">
-    <string>AlarmArmed</string>
+    <string>AlarmArmed_A_14</string>
    </property>
    <property name="onIcon">
     <iconset resource="systemicons.qrc">
@@ -6604,7 +6585,7 @@ background-color: rgb(192, 0, 0);</string>
     <bool>false</bool>
    </property>
    <property name="visibilityVar">
-    <string>AlarmArmed</string>
+    <string>AlarmArmed_B_12</string>
    </property>
    <property name="onIcon">
     <iconset resource="systemicons.qrc">
@@ -6859,7 +6840,7 @@ background-color: rgb(192, 0, 0);</string>
     <bool>false</bool>
    </property>
    <property name="visibilityVar">
-    <string>AlarmArmed</string>
+    <string>AlarmArmed_A_16</string>
    </property>
    <property name="onIcon">
     <iconset resource="systemicons.qrc">
@@ -6986,7 +6967,7 @@ background-color: rgb(192, 0, 0);</string>
     <bool>false</bool>
    </property>
    <property name="visibilityVar">
-    <string>AlarmArmed</string>
+    <string>AlarmArmed_A_9</string>
    </property>
    <property name="onIcon">
     <iconset resource="systemicons.qrc">
@@ -7244,7 +7225,7 @@ background-color: rgb(192, 0, 0);</string>
     <bool>false</bool>
    </property>
    <property name="visibilityVar">
-    <string>AlarmArmed</string>
+    <string>AlarmArmed_A_11</string>
    </property>
    <property name="onIcon">
     <iconset resource="systemicons.qrc">
@@ -7505,7 +7486,7 @@ background-color: rgb(192, 0, 0);</string>
     <bool>false</bool>
    </property>
    <property name="visibilityVar">
-    <string>AlarmArmed</string>
+    <string>AlarmArmed_A_2</string>
    </property>
    <property name="onIcon">
     <iconset resource="systemicons.qrc">
@@ -7895,7 +7876,7 @@ background-color: rgb(192, 0, 0);</string>
     <bool>false</bool>
    </property>
    <property name="visibilityVar">
-    <string>AlarmArmed</string>
+    <string>AlarmArmed_A_6</string>
    </property>
    <property name="onIcon">
     <iconset resource="systemicons.qrc">
@@ -8149,7 +8130,7 @@ background-color: rgb(192, 0, 0);</string>
     <bool>false</bool>
    </property>
    <property name="visibilityVar">
-    <string>AlarmArmed</string>
+    <string>AlarmArmed_B_14</string>
    </property>
    <property name="onIcon">
     <iconset resource="systemicons.qrc">
@@ -8233,7 +8214,7 @@ background-color: rgb(192, 0, 0);</string>
     <bool>false</bool>
    </property>
    <property name="visibilityVar">
-    <string>AlarmArmed</string>
+    <string>AlarmArmed_A_4</string>
    </property>
    <property name="onIcon">
     <iconset resource="systemicons.qrc">
@@ -8537,7 +8518,7 @@ background-color: rgb(192, 0, 0);</string>
     <bool>false</bool>
    </property>
    <property name="visibilityVar">
-    <string>AlarmArmed</string>
+    <string>AlarmArmed_A_12</string>
    </property>
    <property name="onIcon">
     <iconset resource="systemicons.qrc">
@@ -8579,7 +8560,7 @@ background-color: rgb(192, 0, 0);</string>
     <bool>false</bool>
    </property>
    <property name="visibilityVar">
-    <string>AlarmArmed</string>
+    <string>AlarmArmed_A_5</string>
    </property>
    <property name="onIcon">
     <iconset resource="systemicons.qrc">
@@ -8876,7 +8857,7 @@ background-color: rgb(192, 0, 0);</string>
     <bool>false</bool>
    </property>
    <property name="visibilityVar">
-    <string>AlarmArmed</string>
+    <string>AlarmArmed_A_7</string>
    </property>
    <property name="onIcon">
     <iconset resource="systemicons.qrc">
@@ -8918,7 +8899,7 @@ background-color: rgb(192, 0, 0);</string>
     <bool>false</bool>
    </property>
    <property name="visibilityVar">
-    <string>AlarmArmed</string>
+    <string>AlarmArmed_A_3</string>
    </property>
    <property name="onIcon">
     <iconset resource="systemicons.qrc">
@@ -9089,7 +9070,7 @@ background-color: rgb(192, 0, 0);</string>
     <bool>false</bool>
    </property>
    <property name="visibilityVar">
-    <string>AlarmArmed</string>
+    <string>AlarmArmed_A_15</string>
    </property>
    <property name="onIcon">
     <iconset resource="systemicons.qrc">
@@ -9393,7 +9374,7 @@ background-color: rgb(192, 0, 0);</string>
     <bool>false</bool>
    </property>
    <property name="visibilityVar">
-    <string>AlarmArmed</string>
+    <string>AlarmArmed_A_1</string>
    </property>
    <property name="onIcon">
     <iconset resource="systemicons.qrc">
@@ -9526,7 +9507,7 @@ background-color: rgb(192, 0, 0);</string>
     <bool>false</bool>
    </property>
    <property name="visibilityVar">
-    <string>AlarmEnabled</string>
+    <string>TCP_AlarmEnabled</string>
    </property>
   </widget>
   <widget class="ATCMbutton" name="atcmButton_XX_12">
@@ -9650,7 +9631,7 @@ background-color: rgb(192, 0, 0);</string>
     <bool>false</bool>
    </property>
    <property name="visibilityVar">
-    <string>AlarmArmed</string>
+    <string>AlarmArmed_A_13</string>
    </property>
    <property name="onIcon">
     <iconset resource="systemicons.qrc">
@@ -9703,7 +9684,7 @@ background-color: rgb(192, 0, 0);</string>
      <normaloff>:/icons/icons/LedOff_scuro.png</normaloff>:/icons/icons/LedOff_scuro.png</iconset>
    </property>
   </widget>
-  <widget class="ATCMbutton" name="atcmButton_XX_17">
+  <widget class="ATCMbutton" name="atcmButton_XX_15">
    <property name="geometry">
     <rect>
      <x>528</x>
@@ -9824,7 +9805,7 @@ background-color: rgb(192, 0, 0);</string>
     <bool>false</bool>
    </property>
    <property name="visibilityVar">
-    <string>AlarmArmed</string>
+    <string>AlarmArmed_B_4</string>
    </property>
    <property name="onIcon">
     <iconset resource="systemicons.qrc">
@@ -10035,7 +10016,7 @@ background-color: rgb(192, 0, 0);</string>
     <bool>false</bool>
    </property>
    <property name="visibilityVar">
-    <string>AlarmArmed</string>
+    <string>AlarmArmed_B_2</string>
    </property>
    <property name="onIcon">
     <iconset resource="systemicons.qrc">
@@ -10131,25 +10112,6 @@ background-color: rgb(192, 0, 0);</string>
    </property>
    <property name="apparence">
     <enum>QFrame::Raised</enum>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_2">
-   <property name="geometry">
-    <rect>
-     <x>530</x>
-     <y>238</y>
-     <width>272</width>
-     <height>191</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>DejaVu Sans</family>
-     <pointsize>8</pointsize>
-    </font>
-   </property>
-   <property name="text">
-    <string/>
    </property>
   </widget>
   <widget class="ATCMbutton" name="atcmButton_XX_01">
@@ -10402,7 +10364,7 @@ background-color: rgb(192, 0, 0);</string>
     <bool>false</bool>
    </property>
    <property name="visibilityVar">
-    <string>AlarmArmed</string>
+    <string>AlarmArmed_B_10</string>
    </property>
    <property name="onIcon">
     <iconset resource="systemicons.qrc">
@@ -10871,6 +10833,247 @@ color: rgb(0, 255, 0);</string>
      <normaloff>:/icons/icons/LedOff_scuro.png</normaloff>:/icons/icons/LedOff_scuro.png</iconset>
    </property>
   </widget>
+  <widget class="ATCMled" name="atcmLed_DigIn_OK_B_07">
+   <property name="geometry">
+    <rect>
+     <x>640</x>
+     <y>310</y>
+     <width>24</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>OK_DigIn_B_7</string>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMled widget</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+   <property name="variable">
+    <string>OK_DigIn_B_7</string>
+   </property>
+   <property name="refresh">
+    <number>500</number>
+   </property>
+   <property name="viewStatus">
+    <bool>false</bool>
+   </property>
+   <property name="visibilityVar">
+    <string>AlarmArmed_B_7</string>
+   </property>
+   <property name="onIcon">
+    <iconset resource="systemicons.qrc">
+     <normaloff>:/systemicons/Apply.png</normaloff>:/systemicons/Apply.png</iconset>
+   </property>
+   <property name="offIcon">
+    <iconset resource="systemicons.qrc">
+     <normaloff>:/systemicons/Alert.png</normaloff>:/systemicons/Alert.png</iconset>
+   </property>
+  </widget>
+  <widget class="ATCMled" name="atcmLed_DigIn_OK_B_11">
+   <property name="geometry">
+    <rect>
+     <x>640</x>
+     <y>358</y>
+     <width>24</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>OK_DigIn_B_11</string>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMled widget</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+   <property name="variable">
+    <string>OK_DigIn_B_11</string>
+   </property>
+   <property name="refresh">
+    <number>500</number>
+   </property>
+   <property name="viewStatus">
+    <bool>false</bool>
+   </property>
+   <property name="visibilityVar">
+    <string>AlarmArmed_B_11</string>
+   </property>
+   <property name="onIcon">
+    <iconset resource="systemicons.qrc">
+     <normaloff>:/systemicons/Apply.png</normaloff>:/systemicons/Apply.png</iconset>
+   </property>
+   <property name="offIcon">
+    <iconset resource="systemicons.qrc">
+     <normaloff>:/systemicons/Alert.png</normaloff>:/systemicons/Alert.png</iconset>
+   </property>
+  </widget>
+  <widget class="ATCMled" name="atcmLed_DigIn_OK_B_13">
+   <property name="geometry">
+    <rect>
+     <x>640</x>
+     <y>382</y>
+     <width>24</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>OK_DigIn_B_13</string>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMled widget</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+   <property name="variable">
+    <string>OK_DigIn_B_13</string>
+   </property>
+   <property name="refresh">
+    <number>500</number>
+   </property>
+   <property name="viewStatus">
+    <bool>false</bool>
+   </property>
+   <property name="visibilityVar">
+    <string>AlarmArmed_B_13</string>
+   </property>
+   <property name="onIcon">
+    <iconset resource="systemicons.qrc">
+     <normaloff>:/systemicons/Apply.png</normaloff>:/systemicons/Apply.png</iconset>
+   </property>
+   <property name="offIcon">
+    <iconset resource="systemicons.qrc">
+     <normaloff>:/systemicons/Alert.png</normaloff>:/systemicons/Alert.png</iconset>
+   </property>
+  </widget>
+  <widget class="ATCMled" name="atcmLed_DigIn_OK_B_16">
+   <property name="geometry">
+    <rect>
+     <x>776</x>
+     <y>406</y>
+     <width>24</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>OK_DigIn_B_16</string>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMled widget</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+   <property name="variable">
+    <string>OK_DigIn_B_16</string>
+   </property>
+   <property name="refresh">
+    <number>500</number>
+   </property>
+   <property name="viewStatus">
+    <bool>false</bool>
+   </property>
+   <property name="visibilityVar">
+    <string>AlarmArmed_B_16</string>
+   </property>
+   <property name="onIcon">
+    <iconset resource="systemicons.qrc">
+     <normaloff>:/systemicons/Apply.png</normaloff>:/systemicons/Apply.png</iconset>
+   </property>
+   <property name="offIcon">
+    <iconset resource="systemicons.qrc">
+     <normaloff>:/systemicons/Alert.png</normaloff>:/systemicons/Alert.png</iconset>
+   </property>
+  </widget>
+  <widget class="ATCMcombobox" name="atcmComboBox_AlarmConfig_3">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>596</x>
+     <y>207</y>
+     <width>68</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>7</pointsize>
+    </font>
+   </property>
+   <property name="toolTip">
+    <string>SavedAlarmStatus</string>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMcombobox widget</string>
+   </property>
+   <property name="variable">
+    <string>SavedAlarmStatus</string>
+   </property>
+   <property name="refresh">
+    <number>200</number>
+   </property>
+   <property name="viewStatus">
+    <bool>false</bool>
+   </property>
+   <property name="writeAcknowledge">
+    <bool>false</bool>
+   </property>
+   <property name="visibilityVar">
+    <string/>
+   </property>
+   <property name="bgColor">
+    <color>
+     <red>170</red>
+     <green>255</green>
+     <blue>255</blue>
+    </color>
+   </property>
+   <property name="borderColor">
+    <color>
+     <red>0</red>
+     <green>0</green>
+     <blue>0</blue>
+    </color>
+   </property>
+   <property name="fontColor">
+    <color>
+     <red>0</red>
+     <green>0</green>
+     <blue>255</blue>
+    </color>
+   </property>
+   <property name="borderWidth">
+    <number>1</number>
+   </property>
+   <property name="borderRadius">
+    <number>0</number>
+   </property>
+   <property name="apparence">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="mapping">
+    <string>0;ZERO;1;IDLE;2;ARMED;3;ENABLED;4;RINGING;5;MUTED</string>
+   </property>
+  </widget>
   <zorder>label_W11_CALD_3</zorder>
   <zorder>label_W09_UPS</zorder>
   <zorder>atcmLabel_VA09</zorder>
@@ -11017,7 +11220,7 @@ color: rgb(0, 255, 0);</string>
   <zorder>atcmButton_XX_12</zorder>
   <zorder>atcmLed_DigIn_OK_A_13</zorder>
   <zorder>atcmLed_DigIn_B_10</zorder>
-  <zorder>atcmButton_XX_17</zorder>
+  <zorder>atcmButton_XX_15</zorder>
   <zorder>atcmLed_DigIn_OK_B_04</zorder>
   <zorder>atcmLabel_B3_2</zorder>
   <zorder>atcmLed_DigIn_A_12</zorder>
@@ -11047,11 +11250,14 @@ color: rgb(0, 255, 0);</string>
   <zorder>label_watt</zorder>
   <zorder>line_vt_1</zorder>
   <zorder>atcmLed_DigIn_TA_Puffer_3</zorder>
-  <zorder>label_2</zorder>
-  <zorder>label</zorder>
   <zorder>atcmLed_DigIn_10</zorder>
   <zorder>atcmLed_DigIn_11</zorder>
   <zorder>atcmLed_DigIn_12</zorder>
+  <zorder>atcmLed_DigIn_OK_B_07</zorder>
+  <zorder>atcmLed_DigIn_OK_B_11</zorder>
+  <zorder>atcmLed_DigIn_OK_B_13</zorder>
+  <zorder>atcmLed_DigIn_OK_B_16</zorder>
+  <zorder>atcmComboBox_AlarmConfig_3</zorder>
  </widget>
  <customwidgets>
   <customwidget>
@@ -11062,6 +11268,11 @@ color: rgb(0, 255, 0);</string>
   <customwidget>
    <class>ATCMbutton</class>
    <extends>QPushButton</extends>
+   <header>atcmplugin.h</header>
+  </customwidget>
+  <customwidget>
+   <class>ATCMcombobox</class>
+   <extends>QComboBox</extends>
    <header>atcmplugin.h</header>
   </customwidget>
   <customwidget>
@@ -11086,8 +11297,8 @@ color: rgb(0, 255, 0);</string>
   </customwidget>
  </customwidgets>
  <resources>
-  <include location="resources.qrc"/>
   <include location="systemicons.qrc"/>
+  <include location="resources.qrc"/>
  </resources>
  <connections>
   <connection>

@@ -8,6 +8,8 @@ VAR_GLOBAL
 	CoolingSetPoint_A AT %QW0.48:INT;	(* piano sopra *)
 	CoolingSetPoint_B AT %QW0.52:INT;	(* piano terra *)
 	CoolingSetPoint_C AT %QW0.56:INT;	(* piano sotto *)
+	SavedAlarmStatus AT %QW0.752:UINT;
+	SavedAlarmConfig AT %QD0.756:UDINT;
 	openvpn_restart_times AT %QD0.768:UDINT;
 	is_PPP0_ON AT %QX0.772.0:BOOL;	(* isUP_ppp0() *)
 	is_TUN0_ON AT %QX0.776.0:BOOL;	(* isUP_tun0() *)
@@ -147,8 +149,7 @@ VAR_GLOBAL
 	SysImpActiveEnergy_10 AT %ID0.1760:REAL;	(* 0x14 0x1106 Energia Attiva Importata 0 in Wh (Puffer) *)
 	SysActivePower_11 AT %QD0.1764:REAL;	(* 0x14 0x1026 Potenza Attiva 0 in W (Caldaia) *)
 	SysImpActiveEnergy_11 AT %QD0.1768:REAL;	(* 0x14 0x1106 Energia Attiva Importata 0 in Wh (Caldaia) *)
-	AlarmArmed AT %QX0.1992.0:BOOL;
-	AlarmEnabled AT %QX0.1996.0:BOOL;
+	AlarmStatus AT %QW0.1996:UINT;
 	Alarm AT %QX0.2000.0:BOOL;
 	OK_DigIn_A_1 AT %QX0.2004.0:BOOL;
 	OK_DigIn_A_2 AT %QX0.2008.0:BOOL;
@@ -183,6 +184,38 @@ VAR_GLOBAL
 	OK_DigIn_B_15 AT %QX0.2124.0:BOOL;
 	OK_DigIn_B_16 AT %QX0.2128.0:BOOL;
 	AlarmRising AT %IX0.2132.0:BOOL;
+	AlarmArmed_A_1 AT %QX0.2404.0:BOOL;
+	AlarmArmed_A_2 AT %QX0.2408.0:BOOL;
+	AlarmArmed_A_3 AT %QX0.2412.0:BOOL;
+	AlarmArmed_A_4 AT %QX0.2416.0:BOOL;
+	AlarmArmed_A_5 AT %QX0.2420.0:BOOL;
+	AlarmArmed_A_6 AT %QX0.2424.0:BOOL;
+	AlarmArmed_A_7 AT %QX0.2428.0:BOOL;
+	AlarmArmed_A_8 AT %QX0.2432.0:BOOL;
+	AlarmArmed_A_9 AT %QX0.2436.0:BOOL;
+	AlarmArmed_A_10 AT %QX0.2440.0:BOOL;
+	AlarmArmed_A_11 AT %QX0.2444.0:BOOL;
+	AlarmArmed_A_12 AT %QX0.2448.0:BOOL;
+	AlarmArmed_A_13 AT %QX0.2452.0:BOOL;
+	AlarmArmed_A_14 AT %QX0.2456.0:BOOL;
+	AlarmArmed_A_15 AT %QX0.2460.0:BOOL;
+	AlarmArmed_A_16 AT %QX0.2464.0:BOOL;
+	AlarmArmed_B_1 AT %QX0.2468.0:BOOL;
+	AlarmArmed_B_2 AT %QX0.2472.0:BOOL;
+	AlarmArmed_B_3 AT %QX0.2476.0:BOOL;
+	AlarmArmed_B_4 AT %QX0.2480.0:BOOL;
+	AlarmArmed_B_5 AT %QX0.2484.0:BOOL;
+	AlarmArmed_B_6 AT %QX0.2488.0:BOOL;
+	AlarmArmed_B_7 AT %QX0.2492.0:BOOL;
+	AlarmArmed_B_8 AT %QX0.2496.0:BOOL;
+	AlarmArmed_B_9 AT %QX0.2500.0:BOOL;
+	AlarmArmed_B_10 AT %QX0.2504.0:BOOL;
+	AlarmArmed_B_11 AT %QX0.2508.0:BOOL;
+	AlarmArmed_B_12 AT %QX0.2512.0:BOOL;
+	AlarmArmed_B_13 AT %QX0.2516.0:BOOL;
+	AlarmArmed_B_14 AT %QX0.2520.0:BOOL;
+	AlarmArmed_B_15 AT %QX0.2524.0:BOOL;
+	AlarmArmed_B_16 AT %QX0.2528.0:BOOL;
 	TCP_is_Caldaia_ON AT %QX0.4000.0:BOOL;
 	TCP_HeatingEnable AT %QX0.4004.0:BOOL;
 	TCP_AnIn_A_1 AT %QW0.4008:INT;	(* Analog input 1 value MPNC030 module A *)
@@ -327,6 +360,7 @@ VAR_GLOBAL
 	TCP_OK_DigIn_B_14 AT %QX0.4576.0:BOOL;
 	TCP_OK_DigIn_B_15 AT %QX0.4580.0:BOOL;
 	TCP_OK_DigIn_B_16 AT %QX0.4584.0:BOOL;
+	TCP_AlarmStatus AT %QW0.4588:UINT;
 	RTU0_TYPE_PORT AT %ID0.20000:UDINT;
 	RTU0_BAUDRATE AT %ID0.20004:UDINT;
 	RTU0_STATUS AT %ID0.20008:UDINT;
@@ -527,8 +561,8 @@ VAR_GLOBAL
 	PLC_EngineStatus AT %IW0.21580:UINT;	(* PLC status *)
 	PLC_ResetValues AT %QX0.21584.0:BOOL;	(* Diagnostic variables reset *)
 	PLC_buzzerOn AT %QX0.21588.0:BOOL;	(* Buzzer sound (enable = 1 disable = 0) *)
-	PLC_PLC_Version AT %IW0.21592:UINT;	(* PLC application version *)
-	PLC_HMI_Version AT %IW0.21596:UINT;	(* HMI application version *)
+	PLC_PLC_Version AT %QW0.21592:UINT;	(* PLC application version *)
+	PLC_HMI_Version AT %QW0.21596:UINT;	(* HMI application version *)
 	PLC_Year AT %IW0.21640:UINT;	(* Currently year *)
 	PLC_Month AT %IW0.21644:UINT;	(* Currently month *)
 	PLC_Day AT %IW0.21648:UINT;	(* Currently day *)

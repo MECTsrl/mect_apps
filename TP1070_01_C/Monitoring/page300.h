@@ -27,6 +27,16 @@ public:
     
 private slots:
     void changeEvent(QEvent * event);
+    void on_comboBox_AlarmConfig_currentIndexChanged(int index);
+    void on_pushButton_AlarmEnable_clicked();
+    void on_pushButton_AlarmAck_clicked();
+
+private:
+    void enableDisableCommands();
+    void recoverConfig();
+    unsigned readConfig(int index);
+    void resetConfig(unsigned config);
+    void transition(unsigned status, unsigned config);
 
 private:
     Ui::page300 *ui;

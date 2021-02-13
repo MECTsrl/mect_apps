@@ -88,6 +88,18 @@ int doWrite_CoolingSetPoint_C(int16_t value);
 int addWrite_CoolingSetPoint_C(int16_t value);
 int getStatus_CoolingSetPoint_C(void);
 
+#define ID_SavedAlarmStatus 188
+extern u_int16_t SavedAlarmStatus;
+int doWrite_SavedAlarmStatus(u_int16_t value);
+int addWrite_SavedAlarmStatus(u_int16_t value);
+int getStatus_SavedAlarmStatus(void);
+
+#define ID_SavedAlarmConfig 189
+extern u_int32_t SavedAlarmConfig;
+int doWrite_SavedAlarmConfig(u_int32_t value);
+int addWrite_SavedAlarmConfig(u_int32_t value);
+int getStatus_SavedAlarmConfig(void);
+
 #define ID_openvpn_restart_times 192
 extern u_int32_t openvpn_restart_times;
 int doWrite_openvpn_restart_times(u_int32_t value);
@@ -922,17 +934,11 @@ int doWrite_SysImpActiveEnergy_11(float value);
 int addWrite_SysImpActiveEnergy_11(float value);
 int getStatus_SysImpActiveEnergy_11(void);
 
-#define ID_AlarmArmed 498
-extern int AlarmArmed;
-int doWrite_AlarmArmed(int value);
-int addWrite_AlarmArmed(int value);
-int getStatus_AlarmArmed(void);
-
-#define ID_AlarmEnabled 499
-extern int AlarmEnabled;
-int doWrite_AlarmEnabled(int value);
-int addWrite_AlarmEnabled(int value);
-int getStatus_AlarmEnabled(void);
+#define ID_AlarmStatus 499
+extern u_int16_t AlarmStatus;
+int doWrite_AlarmStatus(u_int16_t value);
+int addWrite_AlarmStatus(u_int16_t value);
+int getStatus_AlarmStatus(void);
 
 #define ID_Alarm 500
 extern int Alarm;
@@ -1137,6 +1143,198 @@ extern int AlarmRising;
 int doWrite_AlarmRising(int value);
 int addWrite_AlarmRising(int value);
 int getStatus_AlarmRising(void);
+
+#define ID_AlarmArmed_A_1 601
+extern int AlarmArmed_A_1;
+int doWrite_AlarmArmed_A_1(int value);
+int addWrite_AlarmArmed_A_1(int value);
+int getStatus_AlarmArmed_A_1(void);
+
+#define ID_AlarmArmed_A_2 602
+extern int AlarmArmed_A_2;
+int doWrite_AlarmArmed_A_2(int value);
+int addWrite_AlarmArmed_A_2(int value);
+int getStatus_AlarmArmed_A_2(void);
+
+#define ID_AlarmArmed_A_3 603
+extern int AlarmArmed_A_3;
+int doWrite_AlarmArmed_A_3(int value);
+int addWrite_AlarmArmed_A_3(int value);
+int getStatus_AlarmArmed_A_3(void);
+
+#define ID_AlarmArmed_A_4 604
+extern int AlarmArmed_A_4;
+int doWrite_AlarmArmed_A_4(int value);
+int addWrite_AlarmArmed_A_4(int value);
+int getStatus_AlarmArmed_A_4(void);
+
+#define ID_AlarmArmed_A_5 605
+extern int AlarmArmed_A_5;
+int doWrite_AlarmArmed_A_5(int value);
+int addWrite_AlarmArmed_A_5(int value);
+int getStatus_AlarmArmed_A_5(void);
+
+#define ID_AlarmArmed_A_6 606
+extern int AlarmArmed_A_6;
+int doWrite_AlarmArmed_A_6(int value);
+int addWrite_AlarmArmed_A_6(int value);
+int getStatus_AlarmArmed_A_6(void);
+
+#define ID_AlarmArmed_A_7 607
+extern int AlarmArmed_A_7;
+int doWrite_AlarmArmed_A_7(int value);
+int addWrite_AlarmArmed_A_7(int value);
+int getStatus_AlarmArmed_A_7(void);
+
+#define ID_AlarmArmed_A_8 608
+extern int AlarmArmed_A_8;
+int doWrite_AlarmArmed_A_8(int value);
+int addWrite_AlarmArmed_A_8(int value);
+int getStatus_AlarmArmed_A_8(void);
+
+#define ID_AlarmArmed_A_9 609
+extern int AlarmArmed_A_9;
+int doWrite_AlarmArmed_A_9(int value);
+int addWrite_AlarmArmed_A_9(int value);
+int getStatus_AlarmArmed_A_9(void);
+
+#define ID_AlarmArmed_A_10 610
+extern int AlarmArmed_A_10;
+int doWrite_AlarmArmed_A_10(int value);
+int addWrite_AlarmArmed_A_10(int value);
+int getStatus_AlarmArmed_A_10(void);
+
+#define ID_AlarmArmed_A_11 611
+extern int AlarmArmed_A_11;
+int doWrite_AlarmArmed_A_11(int value);
+int addWrite_AlarmArmed_A_11(int value);
+int getStatus_AlarmArmed_A_11(void);
+
+#define ID_AlarmArmed_A_12 612
+extern int AlarmArmed_A_12;
+int doWrite_AlarmArmed_A_12(int value);
+int addWrite_AlarmArmed_A_12(int value);
+int getStatus_AlarmArmed_A_12(void);
+
+#define ID_AlarmArmed_A_13 613
+extern int AlarmArmed_A_13;
+int doWrite_AlarmArmed_A_13(int value);
+int addWrite_AlarmArmed_A_13(int value);
+int getStatus_AlarmArmed_A_13(void);
+
+#define ID_AlarmArmed_A_14 614
+extern int AlarmArmed_A_14;
+int doWrite_AlarmArmed_A_14(int value);
+int addWrite_AlarmArmed_A_14(int value);
+int getStatus_AlarmArmed_A_14(void);
+
+#define ID_AlarmArmed_A_15 615
+extern int AlarmArmed_A_15;
+int doWrite_AlarmArmed_A_15(int value);
+int addWrite_AlarmArmed_A_15(int value);
+int getStatus_AlarmArmed_A_15(void);
+
+#define ID_AlarmArmed_A_16 616
+extern int AlarmArmed_A_16;
+int doWrite_AlarmArmed_A_16(int value);
+int addWrite_AlarmArmed_A_16(int value);
+int getStatus_AlarmArmed_A_16(void);
+
+#define ID_AlarmArmed_B_1 617
+extern int AlarmArmed_B_1;
+int doWrite_AlarmArmed_B_1(int value);
+int addWrite_AlarmArmed_B_1(int value);
+int getStatus_AlarmArmed_B_1(void);
+
+#define ID_AlarmArmed_B_2 618
+extern int AlarmArmed_B_2;
+int doWrite_AlarmArmed_B_2(int value);
+int addWrite_AlarmArmed_B_2(int value);
+int getStatus_AlarmArmed_B_2(void);
+
+#define ID_AlarmArmed_B_3 619
+extern int AlarmArmed_B_3;
+int doWrite_AlarmArmed_B_3(int value);
+int addWrite_AlarmArmed_B_3(int value);
+int getStatus_AlarmArmed_B_3(void);
+
+#define ID_AlarmArmed_B_4 620
+extern int AlarmArmed_B_4;
+int doWrite_AlarmArmed_B_4(int value);
+int addWrite_AlarmArmed_B_4(int value);
+int getStatus_AlarmArmed_B_4(void);
+
+#define ID_AlarmArmed_B_5 621
+extern int AlarmArmed_B_5;
+int doWrite_AlarmArmed_B_5(int value);
+int addWrite_AlarmArmed_B_5(int value);
+int getStatus_AlarmArmed_B_5(void);
+
+#define ID_AlarmArmed_B_6 622
+extern int AlarmArmed_B_6;
+int doWrite_AlarmArmed_B_6(int value);
+int addWrite_AlarmArmed_B_6(int value);
+int getStatus_AlarmArmed_B_6(void);
+
+#define ID_AlarmArmed_B_7 623
+extern int AlarmArmed_B_7;
+int doWrite_AlarmArmed_B_7(int value);
+int addWrite_AlarmArmed_B_7(int value);
+int getStatus_AlarmArmed_B_7(void);
+
+#define ID_AlarmArmed_B_8 624
+extern int AlarmArmed_B_8;
+int doWrite_AlarmArmed_B_8(int value);
+int addWrite_AlarmArmed_B_8(int value);
+int getStatus_AlarmArmed_B_8(void);
+
+#define ID_AlarmArmed_B_9 625
+extern int AlarmArmed_B_9;
+int doWrite_AlarmArmed_B_9(int value);
+int addWrite_AlarmArmed_B_9(int value);
+int getStatus_AlarmArmed_B_9(void);
+
+#define ID_AlarmArmed_B_10 626
+extern int AlarmArmed_B_10;
+int doWrite_AlarmArmed_B_10(int value);
+int addWrite_AlarmArmed_B_10(int value);
+int getStatus_AlarmArmed_B_10(void);
+
+#define ID_AlarmArmed_B_11 627
+extern int AlarmArmed_B_11;
+int doWrite_AlarmArmed_B_11(int value);
+int addWrite_AlarmArmed_B_11(int value);
+int getStatus_AlarmArmed_B_11(void);
+
+#define ID_AlarmArmed_B_12 628
+extern int AlarmArmed_B_12;
+int doWrite_AlarmArmed_B_12(int value);
+int addWrite_AlarmArmed_B_12(int value);
+int getStatus_AlarmArmed_B_12(void);
+
+#define ID_AlarmArmed_B_13 629
+extern int AlarmArmed_B_13;
+int doWrite_AlarmArmed_B_13(int value);
+int addWrite_AlarmArmed_B_13(int value);
+int getStatus_AlarmArmed_B_13(void);
+
+#define ID_AlarmArmed_B_14 630
+extern int AlarmArmed_B_14;
+int doWrite_AlarmArmed_B_14(int value);
+int addWrite_AlarmArmed_B_14(int value);
+int getStatus_AlarmArmed_B_14(void);
+
+#define ID_AlarmArmed_B_15 631
+extern int AlarmArmed_B_15;
+int doWrite_AlarmArmed_B_15(int value);
+int addWrite_AlarmArmed_B_15(int value);
+int getStatus_AlarmArmed_B_15(void);
+
+#define ID_AlarmArmed_B_16 632
+extern int AlarmArmed_B_16;
+int doWrite_AlarmArmed_B_16(int value);
+int addWrite_AlarmArmed_B_16(int value);
+int getStatus_AlarmArmed_B_16(void);
 
 #define ID_TCP_is_Caldaia_ON 1000
 extern int TCP_is_Caldaia_ON;
@@ -2001,6 +2199,12 @@ extern int TCP_OK_DigIn_B_16;
 int doWrite_TCP_OK_DigIn_B_16(int value);
 int addWrite_TCP_OK_DigIn_B_16(int value);
 int getStatus_TCP_OK_DigIn_B_16(void);
+
+#define ID_TCP_AlarmStatus 1147
+extern u_int16_t TCP_AlarmStatus;
+int doWrite_TCP_AlarmStatus(u_int16_t value);
+int addWrite_TCP_AlarmStatus(u_int16_t value);
+int getStatus_TCP_AlarmStatus(void);
 
 #define ID_RTU0_TYPE_PORT 5000
 extern u_int32_t RTU0_TYPE_PORT;
