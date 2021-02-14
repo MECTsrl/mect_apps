@@ -5032,8 +5032,8 @@ color: rgb(255, 255, 255);</string>
     </font>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: rgb(32, 32, 32);
-color: rgb(255, 255, 255);</string>
+    <string notr="true">background-color: rgb(64, 64, 64);
+color: rgb(255, 255, 0);</string>
    </property>
    <property name="frameShape">
     <enum>QFrame::Box</enum>
@@ -5069,8 +5069,8 @@ color: rgb(255, 255, 255);</string>
     </font>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: rgb(32, 32, 32);
-color: rgb(255, 255, 255);</string>
+    <string notr="true">background-color: rgb(64, 64, 64);
+color: rgb(255, 255, 0);</string>
    </property>
    <property name="frameShape">
     <enum>QFrame::Box</enum>
@@ -5335,7 +5335,7 @@ color: rgb(255, 255, 255);</string>
     <enum>QFrame::Box</enum>
    </property>
    <property name="text">
-    <string>14 TpE   24V</string>
+    <string>14  E    24V</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>
@@ -5513,8 +5513,8 @@ color: rgb(255, 255, 255);</string>
     </font>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: rgb(0, 0, 0);
-color: rgb(255, 255, 255);</string>
+    <string notr="true">background-color: rgb(64, 64, 64);
+color: rgb(255, 255, 0);</string>
    </property>
    <property name="frameShape">
     <enum>QFrame::Box</enum>
@@ -6143,7 +6143,7 @@ color: rgb(0,192, 255);</string>
    </property>
    <property name="styleSheet">
     <string notr="true">background-color: rgb(64, 64, 64);
-color: rgb(255, 255, 255);</string>
+color: rgb(255, 255, 0);</string>
    </property>
    <property name="frameShape">
     <enum>QFrame::Box</enum>
@@ -6470,7 +6470,7 @@ color: rgb(255, 255, 255);</string>
     </font>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: rgba(0, 255, 0, 128);</string>
+    <string notr="true">background-color: rgba(255, 255, 0, 128);</string>
    </property>
    <property name="text">
     <string/>
@@ -6481,28 +6481,6 @@ color: rgb(255, 255, 255);</string>
     <rect>
      <x>451</x>
      <y>163</y>
-     <width>30</width>
-     <height>21</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>DejaVu Sans</family>
-     <pointsize>8</pointsize>
-    </font>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background-color: rgba(255, 255, 0, 128);</string>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_7">
-   <property name="geometry">
-    <rect>
-     <x>451</x>
-     <y>296</y>
      <width>30</width>
      <height>21</height>
     </rect>
@@ -14944,7 +14922,6 @@ background-color: rgb(255, 170, 0);</string>
   <zorder>label</zorder>
   <zorder>label_5</zorder>
   <zorder>label_6</zorder>
-  <zorder>label_7</zorder>
   <zorder>label_8</zorder>
   <zorder>label_9</zorder>
   <zorder>label_10</zorder>

@@ -7477,80 +7477,80 @@ background-color: rgb(192, 0, 0);</string>
   <zorder>atcmButton_TCP_12</zorder>
   <zorder>atcmLabel_B4_2</zorder>
   <zorder>atcmLabel_C2_3</zorder>
-  <zorder>atcmLed_DigIn_B_11</zorder>
+  <zorder>atcmComboBox_AlarmConfig_3</zorder>
+  <zorder>atcmLed_DigIn_B_08</zorder>
+  <zorder>atcmLed_DigIn_A_10</zorder>
+  <zorder>atcmLed_DigIn_OK_A_05</zorder>
+  <zorder>atcmLed_DigIn_OK_B_15</zorder>
+  <zorder>atcmLed_DigIn_A_13</zorder>
+  <zorder>atcmLed_DigIn_TA_Puffer_2</zorder>
+  <zorder>atcmLed_DigIn_OK_A_02</zorder>
+  <zorder>atcmLed_DigIn_OK_A_16</zorder>
+  <zorder>atcmLed_DigIn_B_12</zorder>
+  <zorder>atcmLed_DigIn_A_09</zorder>
+  <zorder>atcmLed_DigIn_A_11</zorder>
+  <zorder>atcmLed_DigIn_OK_A_11</zorder>
   <zorder>atcmLed_DigIn_A_03</zorder>
+  <zorder>atcmLed_DigIn_OK_B_08</zorder>
+  <zorder>atcmLed_DigIn_B_01</zorder>
+  <zorder>atcmLed_DigIn_OK_B_07</zorder>
+  <zorder>atcmLed_DigIn_A_14</zorder>
+  <zorder>atcmLed_DigIn_A_05</zorder>
+  <zorder>atcmLed_DigIn_OK_B_12</zorder>
+  <zorder>atcmLed_DigIn_B_05</zorder>
+  <zorder>atcmLed_DigIn_B_11</zorder>
+  <zorder>atcmLed_DigIn_OK_B_09</zorder>
   <zorder>atcmLed_DigIn_B_03</zorder>
   <zorder>atcmLed_DigIn_OK_B_01</zorder>
+  <zorder>atcmLed_DigIn_OK_B_13</zorder>
   <zorder>atcmLed_DigIn_A_08</zorder>
   <zorder>atcmLed_DigIn_OK_B_05</zorder>
   <zorder>atcmLed_DigIn_A_06</zorder>
-  <zorder>atcmLed_DigIn_OK_B_09</zorder>
+  <zorder>atcmLed_DigIn_OK_A_03</zorder>
   <zorder>atcmLed_DigIn_OK_B_10</zorder>
   <zorder>atcmLed_DigIn_A_16</zorder>
   <zorder>atcmLed_DigIn_OK_B_14</zorder>
   <zorder>atcmLed_DigIn_OK_A_06</zorder>
+  <zorder>atcmLed_DigIn_4</zorder>
   <zorder>atcmLed_DigIn_A_15</zorder>
   <zorder>atcmLed_DigIn_B_13</zorder>
   <zorder>atcmLed_DigIn_OK_A_04</zorder>
+  <zorder>atcmLed_DigIn_A_12</zorder>
   <zorder>atcmLed_DigIn_A_02</zorder>
   <zorder>atcmLed_DigIn_OK_A_01</zorder>
   <zorder>atcmLed_DigIn_B_10</zorder>
   <zorder>atcmLed_DigIn_OK_A_08</zorder>
   <zorder>atcmLed_DigIn_TA_Pterra_2</zorder>
-  <zorder>atcmLed_DigIn_A_10</zorder>
+  <zorder>atcmLed_caldaia_5</zorder>
+  <zorder>atcmLed_DigIn_B_15</zorder>
   <zorder>atcmLed_DigIn_B_07</zorder>
-  <zorder>atcmLed_DigIn_1</zorder>
   <zorder>atcmLed_DigIn_A_07</zorder>
   <zorder>atcmLed_DigIn_OK_A_12</zorder>
-  <zorder>atcmLed_DigIn_TA_Puffer_2</zorder>
+  <zorder>atcmLed_DigIn_B_04</zorder>
+  <zorder>atcmLed_DigIn_OK_A_09</zorder>
   <zorder>atcmLed_DigIn_OK_B_04</zorder>
   <zorder>atcmLed_DigIn_A_01</zorder>
-  <zorder>atcmLed_DigIn_B_08</zorder>
+  <zorder>atcmLed_DigIn_1</zorder>
   <zorder>atcmLed_DigIn_OK_B_03</zorder>
+  <zorder>atcmLed_DigIn_B_09</zorder>
   <zorder>atcmLed_DigIn_OK_A_07</zorder>
   <zorder>atcmLed_DigIn_OK_B_02</zorder>
+  <zorder>atcmLed_DigIn_OK_B_11</zorder>
   <zorder>atcmLed_DigIn_A_04</zorder>
-  <zorder>atcmLed_DigIn_OK_A_03</zorder>
   <zorder>atcmLed_DigIn_OK_B_06</zorder>
   <zorder>atcmLed_DigIn_B_16</zorder>
   <zorder>atcmLed_DigIn_3</zorder>
-  <zorder>atcmLed_DigIn_4</zorder>
   <zorder>atcmLed_DigIn_OK_A_14</zorder>
-  <zorder>atcmLed_DigIn_B_09</zorder>
+  <zorder>atcmLed_DigIn_B_02</zorder>
   <zorder>atcmLed_DigIn_OK_A_10</zorder>
-  <zorder>atcmLed_DigIn_A_12</zorder>
   <zorder>atcmLed_DigIn_OK_A_13</zorder>
+  <zorder>atcmLed_DigIn_OK_B_16</zorder>
   <zorder>atcmLed_DigIn_TA_Psopra_2</zorder>
   <zorder>atcmLed_DigIn_B_06</zorder>
   <zorder>atcmLed_DigIn_TA_Psotto_2</zorder>
   <zorder>atcmLed_DigIn_OK_A_15</zorder>
   <zorder>atcmLed_DigIn_B_14</zorder>
   <zorder>atcmLed_DigIn_2</zorder>
-  <zorder>atcmLed_DigIn_B_04</zorder>
-  <zorder>atcmLed_DigIn_OK_A_05</zorder>
-  <zorder>atcmLed_DigIn_OK_B_15</zorder>
-  <zorder>atcmLed_DigIn_A_13</zorder>
-  <zorder>atcmLed_DigIn_OK_A_11</zorder>
-  <zorder>atcmLed_DigIn_B_15</zorder>
-  <zorder>atcmLed_DigIn_OK_A_02</zorder>
-  <zorder>atcmLed_DigIn_OK_A_16</zorder>
-  <zorder>atcmLed_DigIn_OK_B_12</zorder>
-  <zorder>atcmLed_DigIn_B_12</zorder>
-  <zorder>atcmLed_DigIn_A_09</zorder>
-  <zorder>atcmLed_DigIn_OK_A_09</zorder>
-  <zorder>atcmLed_DigIn_A_11</zorder>
-  <zorder>atcmLed_DigIn_OK_B_08</zorder>
-  <zorder>atcmLed_DigIn_B_01</zorder>
-  <zorder>atcmLed_DigIn_A_14</zorder>
-  <zorder>atcmLed_DigIn_B_02</zorder>
-  <zorder>atcmLed_DigIn_A_05</zorder>
-  <zorder>atcmLed_DigIn_B_05</zorder>
-  <zorder>atcmLed_caldaia_5</zorder>
-  <zorder>atcmComboBox_AlarmConfig_3</zorder>
-  <zorder>atcmLed_DigIn_OK_B_07</zorder>
-  <zorder>atcmLed_DigIn_OK_B_11</zorder>
-  <zorder>atcmLed_DigIn_OK_B_13</zorder>
-  <zorder>atcmLed_DigIn_OK_B_16</zorder>
  </widget>
  <customwidgets>
   <customwidget>
@@ -7585,8 +7585,8 @@ background-color: rgb(192, 0, 0);</string>
   </customwidget>
  </customwidgets>
  <resources>
-  <include location="systemicons.qrc"/>
   <include location="resources.qrc"/>
+  <include location="systemicons.qrc"/>
  </resources>
  <connections>
   <connection>

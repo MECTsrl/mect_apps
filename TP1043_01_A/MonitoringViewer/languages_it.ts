@@ -848,11 +848,6 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page300.ui" line="3033"/>
-        <source>page: page400  status: </source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="page300.ui" line="3311"/>
         <location filename="page300.ui" line="3323"/>
         <source>TCP_OK_DigIn_B_5</source>
