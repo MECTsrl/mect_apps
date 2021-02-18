@@ -9,174 +9,153 @@
         <translation type="unfinished"></translation>
     </message>
     <message utf8="true">
-        <location filename="page100.ui" line="99"/>
-        <location filename="page100.ui" line="102"/>
+        <location filename="page100.ui" line="90"/>
+        <location filename="page100.ui" line="93"/>
         <source>☰</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="131"/>
-        <source>hh:mm:ss</source>
-        <oldsource>YYYY-MM-DD HH:MM:SS</oldsource>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page100.ui" line="156"/>
-        <location filename="page100.ui" line="204"/>
-        <location filename="page100.ui" line="252"/>
-        <location filename="page100.ui" line="300"/>
-        <location filename="page100.ui" line="348"/>
+        <location filename="page100.ui" line="147"/>
+        <location filename="page100.ui" line="195"/>
         <source>ATCMled widget</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="201"/>
-        <location filename="page100.ui" line="213"/>
-        <source>TCP_DigIn_5</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page100.ui" line="249"/>
-        <location filename="page100.ui" line="261"/>
-        <source>TCP_DigOut_6</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page100.ui" line="297"/>
-        <location filename="page100.ui" line="309"/>
-        <source>TCP_DigOut_7</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page100.ui" line="345"/>
-        <location filename="page100.ui" line="357"/>
-        <source>TCP_DigOut_8</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page100.ui" line="153"/>
-        <location filename="page100.ui" line="165"/>
+        <location filename="page100.ui" line="144"/>
+        <location filename="page100.ui" line="156"/>
         <source>TCP_Alarm</source>
+        <oldsource>TCP_DigIn_5</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="174"/>
+        <location filename="page100.ui" line="165"/>
         <source>TCP_AlarmEnabled</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="435"/>
-        <location filename="page100.ui" line="475"/>
-        <location filename="page100.ui" line="512"/>
-        <location filename="page100.ui" line="549"/>
-        <location filename="page100.ui" line="580"/>
-        <location filename="page100.ui" line="614"/>
-        <location filename="page100.ui" line="648"/>
-        <location filename="page100.ui" line="688"/>
+        <location filename="page100.ui" line="285"/>
+        <location filename="page100.ui" line="325"/>
+        <location filename="page100.ui" line="365"/>
+        <location filename="page100.ui" line="405"/>
+        <location filename="page100.ui" line="445"/>
+        <location filename="page100.ui" line="485"/>
+        <location filename="page100.ui" line="525"/>
+        <location filename="page100.ui" line="565"/>
+        <location filename="page100.ui" line="605"/>
+        <location filename="page100.ui" line="645"/>
+        <location filename="page100.ui" line="685"/>
         <location filename="page100.ui" line="725"/>
-        <location filename="page100.ui" line="762"/>
-        <location filename="page100.ui" line="793"/>
-        <location filename="page100.ui" line="827"/>
-        <location filename="page100.ui" line="861"/>
-        <location filename="page100.ui" line="901"/>
-        <location filename="page100.ui" line="938"/>
-        <location filename="page100.ui" line="975"/>
-        <location filename="page100.ui" line="1006"/>
+        <location filename="page100.ui" line="765"/>
+        <location filename="page100.ui" line="805"/>
+        <location filename="page100.ui" line="845"/>
+        <location filename="page100.ui" line="885"/>
+        <location filename="page100.ui" line="925"/>
         <source>color: rgb(255, 255, 255);</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="438"/>
+        <location filename="page100.ui" line="728"/>
         <source>8</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="478"/>
+        <location filename="page100.ui" line="288"/>
         <source>var 1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="515"/>
+        <location filename="page100.ui" line="328"/>
         <source>var 2</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="552"/>
+        <location filename="page100.ui" line="768"/>
         <source>var 5</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="583"/>
+        <location filename="page100.ui" line="408"/>
         <source>1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="617"/>
+        <location filename="page100.ui" line="448"/>
         <source>2</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="651"/>
+        <location filename="page100.ui" line="888"/>
         <source>5</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="796"/>
+        <location filename="page100.ui" line="648"/>
         <source>3</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="830"/>
+        <location filename="page100.ui" line="688"/>
         <source>4</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="864"/>
+        <location filename="page100.ui" line="928"/>
         <source>6</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="1009"/>
+        <location filename="page100.ui" line="488"/>
         <source>7</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="1043"/>
+        <location filename="page100.ui" line="968"/>
         <source>9</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="691"/>
+        <location filename="page100.ui" line="528"/>
         <source>var 3</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="728"/>
+        <location filename="page100.ui" line="192"/>
+        <location filename="page100.ui" line="204"/>
+        <source>TCP_is_Caldaia_ON</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page100.ui" line="122"/>
+        <source>hh:mm</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page100.ui" line="568"/>
         <source>var 4</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="765"/>
+        <location filename="page100.ui" line="808"/>
         <source>var 6</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="904"/>
+        <location filename="page100.ui" line="368"/>
         <source>var 7</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="941"/>
+        <location filename="page100.ui" line="608"/>
         <source>var 8</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="978"/>
+        <location filename="page100.ui" line="848"/>
         <source>var 9</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="70"/>
+        <location filename="page100.ui" line="61"/>
         <source>ATCMbutton widget</source>
         <translation type="unfinished"></translation>
     </message>
@@ -571,70 +550,6 @@
         <location filename="page300.ui" line="1695"/>
         <location filename="page300.ui" line="1993"/>
         <location filename="page300.ui" line="2294"/>
-        <location filename="page300.ui" line="3314"/>
-        <location filename="page300.ui" line="3356"/>
-        <location filename="page300.ui" line="3398"/>
-        <location filename="page300.ui" line="3440"/>
-        <location filename="page300.ui" line="3482"/>
-        <location filename="page300.ui" line="3524"/>
-        <location filename="page300.ui" line="3566"/>
-        <location filename="page300.ui" line="3608"/>
-        <location filename="page300.ui" line="3650"/>
-        <location filename="page300.ui" line="3692"/>
-        <location filename="page300.ui" line="3734"/>
-        <location filename="page300.ui" line="3776"/>
-        <location filename="page300.ui" line="3818"/>
-        <location filename="page300.ui" line="3860"/>
-        <location filename="page300.ui" line="3902"/>
-        <location filename="page300.ui" line="3944"/>
-        <location filename="page300.ui" line="3986"/>
-        <location filename="page300.ui" line="4028"/>
-        <location filename="page300.ui" line="4070"/>
-        <location filename="page300.ui" line="4112"/>
-        <location filename="page300.ui" line="4154"/>
-        <location filename="page300.ui" line="4196"/>
-        <location filename="page300.ui" line="4238"/>
-        <location filename="page300.ui" line="4280"/>
-        <location filename="page300.ui" line="4322"/>
-        <location filename="page300.ui" line="4364"/>
-        <location filename="page300.ui" line="4406"/>
-        <location filename="page300.ui" line="4448"/>
-        <location filename="page300.ui" line="4490"/>
-        <location filename="page300.ui" line="4532"/>
-        <location filename="page300.ui" line="4574"/>
-        <location filename="page300.ui" line="4616"/>
-        <location filename="page300.ui" line="4658"/>
-        <location filename="page300.ui" line="4700"/>
-        <location filename="page300.ui" line="4742"/>
-        <location filename="page300.ui" line="4784"/>
-        <location filename="page300.ui" line="4826"/>
-        <location filename="page300.ui" line="4868"/>
-        <location filename="page300.ui" line="4910"/>
-        <location filename="page300.ui" line="4952"/>
-        <location filename="page300.ui" line="4994"/>
-        <location filename="page300.ui" line="5036"/>
-        <location filename="page300.ui" line="5078"/>
-        <location filename="page300.ui" line="5120"/>
-        <location filename="page300.ui" line="5162"/>
-        <location filename="page300.ui" line="5204"/>
-        <location filename="page300.ui" line="5246"/>
-        <location filename="page300.ui" line="5288"/>
-        <location filename="page300.ui" line="5330"/>
-        <location filename="page300.ui" line="5372"/>
-        <location filename="page300.ui" line="5414"/>
-        <location filename="page300.ui" line="5456"/>
-        <location filename="page300.ui" line="5498"/>
-        <location filename="page300.ui" line="5540"/>
-        <location filename="page300.ui" line="5582"/>
-        <location filename="page300.ui" line="5624"/>
-        <location filename="page300.ui" line="5666"/>
-        <location filename="page300.ui" line="5708"/>
-        <location filename="page300.ui" line="5750"/>
-        <location filename="page300.ui" line="5792"/>
-        <location filename="page300.ui" line="5834"/>
-        <location filename="page300.ui" line="5876"/>
-        <location filename="page300.ui" line="5918"/>
-        <location filename="page300.ui" line="5960"/>
         <source>ATCMled widget</source>
         <translation type="unfinished"></translation>
     </message>
@@ -719,9 +634,6 @@
     <message>
         <location filename="page300.ui" line="1582"/>
         <location filename="page300.ui" line="2348"/>
-        <location filename="page300.ui" line="3036"/>
-        <location filename="page300.ui" line="3123"/>
-        <location filename="page300.ui" line="3210"/>
         <source>ATCMbutton widget</source>
         <translation type="unfinished"></translation>
     </message>
@@ -847,426 +759,6 @@
         <source>TCP_SysActivePower_11</source>
         <translation type="unfinished"></translation>
     </message>
-    <message>
-        <location filename="page300.ui" line="3311"/>
-        <location filename="page300.ui" line="3323"/>
-        <source>TCP_OK_DigIn_B_5</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page300.ui" line="3332"/>
-        <location filename="page300.ui" line="3458"/>
-        <location filename="page300.ui" line="3500"/>
-        <location filename="page300.ui" line="3542"/>
-        <location filename="page300.ui" line="3626"/>
-        <location filename="page300.ui" line="3710"/>
-        <location filename="page300.ui" line="3794"/>
-        <location filename="page300.ui" line="3920"/>
-        <location filename="page300.ui" line="3962"/>
-        <location filename="page300.ui" line="4004"/>
-        <location filename="page300.ui" line="4046"/>
-        <location filename="page300.ui" line="4130"/>
-        <location filename="page300.ui" line="4172"/>
-        <location filename="page300.ui" line="4298"/>
-        <location filename="page300.ui" line="4340"/>
-        <location filename="page300.ui" line="4382"/>
-        <location filename="page300.ui" line="4676"/>
-        <location filename="page300.ui" line="4802"/>
-        <location filename="page300.ui" line="4928"/>
-        <location filename="page300.ui" line="5012"/>
-        <location filename="page300.ui" line="5138"/>
-        <location filename="page300.ui" line="5222"/>
-        <location filename="page300.ui" line="5264"/>
-        <location filename="page300.ui" line="5306"/>
-        <location filename="page300.ui" line="5348"/>
-        <location filename="page300.ui" line="5390"/>
-        <location filename="page300.ui" line="5516"/>
-        <location filename="page300.ui" line="5642"/>
-        <location filename="page300.ui" line="5684"/>
-        <location filename="page300.ui" line="5894"/>
-        <location filename="page300.ui" line="5936"/>
-        <location filename="page300.ui" line="5978"/>
-        <source>TCP_AlarmArmed</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page300.ui" line="3353"/>
-        <location filename="page300.ui" line="3365"/>
-        <source>TCP_DigIn_A_7</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page300.ui" line="3395"/>
-        <location filename="page300.ui" line="3407"/>
-        <source>TCP_DigIn_B_5</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page300.ui" line="3437"/>
-        <location filename="page300.ui" line="3449"/>
-        <source>TCP_OK_DigIn_A_3</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page300.ui" line="3479"/>
-        <location filename="page300.ui" line="3491"/>
-        <source>TCP_OK_DigIn_A_5</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page300.ui" line="3521"/>
-        <location filename="page300.ui" line="3533"/>
-        <source>TCP_OK_DigIn_A_1</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page300.ui" line="3563"/>
-        <location filename="page300.ui" line="3575"/>
-        <source>TCP_DigIn_B_11</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page300.ui" line="3605"/>
-        <location filename="page300.ui" line="3617"/>
-        <source>TCP_OK_DigIn_B_9</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page300.ui" line="3647"/>
-        <location filename="page300.ui" line="3659"/>
-        <source>TCP_DigIn_B_9</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page300.ui" line="3689"/>
-        <location filename="page300.ui" line="3701"/>
-        <source>TCP_OK_DigIn_B_1</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page300.ui" line="3731"/>
-        <location filename="page300.ui" line="3743"/>
-        <source>TCP_DigIn_B_3</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page300.ui" line="3773"/>
-        <location filename="page300.ui" line="3785"/>
-        <source>TCP_OK_DigIn_A_15</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page300.ui" line="3815"/>
-        <location filename="page300.ui" line="3827"/>
-        <source>TCP_DigIn_A_9</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page300.ui" line="3857"/>
-        <location filename="page300.ui" line="3869"/>
-        <source>TCP_DigIn_A_3</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page300.ui" line="3899"/>
-        <location filename="page300.ui" line="3911"/>
-        <source>TCP_OK_DigIn_B_3</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page300.ui" line="3941"/>
-        <location filename="page300.ui" line="3953"/>
-        <source>TCP_OK_DigIn_A_7</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page300.ui" line="3983"/>
-        <location filename="page300.ui" line="3995"/>
-        <source>TCP_OK_DigIn_B_15</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page300.ui" line="4025"/>
-        <location filename="page300.ui" line="4037"/>
-        <source>TCP_OK_DigIn_A_9</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page300.ui" line="4067"/>
-        <location filename="page300.ui" line="4079"/>
-        <source>TCP_DigIn_A_11</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page300.ui" line="4109"/>
-        <location filename="page300.ui" line="4121"/>
-        <source>TCP_OK_DigIn_B_13</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page300.ui" line="4151"/>
-        <location filename="page300.ui" line="4163"/>
-        <source>TCP_OK_DigIn_A_11</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page300.ui" line="4193"/>
-        <location filename="page300.ui" line="4205"/>
-        <source>TCP_DigIn_B_15</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page300.ui" line="4235"/>
-        <location filename="page300.ui" line="4247"/>
-        <source>TCP_DigIn_A_13</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page300.ui" line="4277"/>
-        <location filename="page300.ui" line="4289"/>
-        <source>TCP_OK_DigIn_B_11</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page300.ui" line="4319"/>
-        <location filename="page300.ui" line="4331"/>
-        <source>TCP_OK_DigIn_A_13</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page300.ui" line="4361"/>
-        <location filename="page300.ui" line="4373"/>
-        <source>TCP_OK_DigIn_B_7</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page300.ui" line="4403"/>
-        <location filename="page300.ui" line="4415"/>
-        <source>TCP_DigIn_A_15</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page300.ui" line="4445"/>
-        <location filename="page300.ui" line="4457"/>
-        <source>TCP_DigIn_B_7</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page300.ui" line="4487"/>
-        <location filename="page300.ui" line="4499"/>
-        <source>TCP_DigIn_B_1</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page300.ui" line="4529"/>
-        <location filename="page300.ui" line="4541"/>
-        <source>TCP_DigIn_A_1</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page300.ui" line="4571"/>
-        <location filename="page300.ui" line="4583"/>
-        <source>TCP_DigIn_B_13</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page300.ui" line="4613"/>
-        <location filename="page300.ui" line="4625"/>
-        <source>TCP_DigIn_A_5</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page300.ui" line="4655"/>
-        <location filename="page300.ui" line="4667"/>
-        <source>TCP_OK_DigIn_B_12</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page300.ui" line="4697"/>
-        <location filename="page300.ui" line="4709"/>
-        <source>TCP_DigIn_A_12</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page300.ui" line="4739"/>
-        <location filename="page300.ui" line="4751"/>
-        <source>TCP_DigIn_A_6</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page300.ui" line="4781"/>
-        <location filename="page300.ui" line="4793"/>
-        <source>TCP_OK_DigIn_B_6</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page300.ui" line="4823"/>
-        <location filename="page300.ui" line="4835"/>
-        <source>TCP_DigIn_B_16</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page300.ui" line="4865"/>
-        <location filename="page300.ui" line="4877"/>
-        <source>TCP_DigIn_B_12</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page300.ui" line="4907"/>
-        <location filename="page300.ui" line="4919"/>
-        <source>TCP_OK_DigIn_A_14</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page300.ui" line="4949"/>
-        <location filename="page300.ui" line="4961"/>
-        <source>TCP_DigIn_B_2</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page300.ui" line="4991"/>
-        <location filename="page300.ui" line="5003"/>
-        <source>TCP_OK_DigIn_A_6</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page300.ui" line="5033"/>
-        <location filename="page300.ui" line="5045"/>
-        <source>TCP_DigIn_A_2</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page300.ui" line="5075"/>
-        <location filename="page300.ui" line="5087"/>
-        <source>TCP_DigIn_B_10</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page300.ui" line="5117"/>
-        <location filename="page300.ui" line="5129"/>
-        <source>TCP_OK_DigIn_A_10</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page300.ui" line="5159"/>
-        <location filename="page300.ui" line="5171"/>
-        <source>TCP_DigIn_A_16</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page300.ui" line="5201"/>
-        <location filename="page300.ui" line="5213"/>
-        <source>TCP_OK_DigIn_B_10</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page300.ui" line="5243"/>
-        <location filename="page300.ui" line="5255"/>
-        <source>TCP_OK_DigIn_A_8</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page300.ui" line="5285"/>
-        <location filename="page300.ui" line="5297"/>
-        <source>TCP_OK_DigIn_B_8</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page300.ui" line="5327"/>
-        <location filename="page300.ui" line="5339"/>
-        <source>TCP_OK_DigIn_B_16</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page300.ui" line="5369"/>
-        <location filename="page300.ui" line="5381"/>
-        <source>TCP_OK_DigIn_B_4</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page300.ui" line="5411"/>
-        <location filename="page300.ui" line="5423"/>
-        <source>TCP_DigIn_B_14</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page300.ui" line="5453"/>
-        <location filename="page300.ui" line="5465"/>
-        <source>TCP_DigIn_A_14</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page300.ui" line="5495"/>
-        <location filename="page300.ui" line="5507"/>
-        <source>TCP_OK_DigIn_B_14</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page300.ui" line="5537"/>
-        <location filename="page300.ui" line="5549"/>
-        <source>TCP_DigIn_A_10</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page300.ui" line="5579"/>
-        <location filename="page300.ui" line="5591"/>
-        <source>TCP_DigIn_B_4</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page300.ui" line="5621"/>
-        <location filename="page300.ui" line="5633"/>
-        <source>TCP_OK_DigIn_B_2</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page300.ui" line="5663"/>
-        <location filename="page300.ui" line="5675"/>
-        <source>TCP_OK_DigIn_A_2</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page300.ui" line="5705"/>
-        <location filename="page300.ui" line="5717"/>
-        <source>TCP_DigIn_B_6</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page300.ui" line="5747"/>
-        <location filename="page300.ui" line="5759"/>
-        <source>TCP_DigIn_B_8</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page300.ui" line="5789"/>
-        <location filename="page300.ui" line="5801"/>
-        <source>TCP_DigIn_A_8</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page300.ui" line="5831"/>
-        <location filename="page300.ui" line="5843"/>
-        <source>TCP_DigIn_A_4</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page300.ui" line="5873"/>
-        <location filename="page300.ui" line="5885"/>
-        <source>TCP_OK_DigIn_A_16</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page300.ui" line="5915"/>
-        <location filename="page300.ui" line="5927"/>
-        <source>TCP_OK_DigIn_A_12</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page300.ui" line="5957"/>
-        <location filename="page300.ui" line="5969"/>
-        <source>TCP_OK_DigIn_A_4</source>
-        <translation type="unfinished"></translation>
-    </message>
 </context>
 <context>
     <name>page400</name>
@@ -1280,76 +772,68 @@
         <location filename="page400.ui" line="47"/>
         <location filename="page400.ui" line="89"/>
         <location filename="page400.ui" line="131"/>
-        <location filename="page400.ui" line="173"/>
-        <location filename="page400.ui" line="341"/>
-        <location filename="page400.ui" line="644"/>
-        <location filename="page400.ui" line="776"/>
-        <location filename="page400.ui" line="818"/>
-        <location filename="page400.ui" line="950"/>
-        <location filename="page400.ui" line="992"/>
-        <location filename="page400.ui" line="1206"/>
-        <location filename="page400.ui" line="1332"/>
-        <location filename="page400.ui" line="1374"/>
-        <location filename="page400.ui" line="1500"/>
-        <location filename="page400.ui" line="1542"/>
-        <location filename="page400.ui" line="1674"/>
-        <location filename="page400.ui" line="1806"/>
-        <location filename="page400.ui" line="2038"/>
-        <location filename="page400.ui" line="2168"/>
-        <location filename="page400.ui" line="2210"/>
-        <location filename="page400.ui" line="2252"/>
-        <location filename="page400.ui" line="2294"/>
-        <location filename="page400.ui" line="2513"/>
-        <location filename="page400.ui" line="2638"/>
-        <location filename="page400.ui" line="2767"/>
-        <location filename="page400.ui" line="2809"/>
-        <location filename="page400.ui" line="2941"/>
-        <location filename="page400.ui" line="3068"/>
-        <location filename="page400.ui" line="3110"/>
-        <location filename="page400.ui" line="3239"/>
-        <location filename="page400.ui" line="3365"/>
-        <location filename="page400.ui" line="3407"/>
-        <location filename="page400.ui" line="3449"/>
-        <location filename="page400.ui" line="3491"/>
-        <location filename="page400.ui" line="3966"/>
-        <location filename="page400.ui" line="4008"/>
-        <location filename="page400.ui" line="4050"/>
-        <location filename="page400.ui" line="4092"/>
-        <location filename="page400.ui" line="4134"/>
-        <location filename="page400.ui" line="4176"/>
-        <location filename="page400.ui" line="4218"/>
-        <location filename="page400.ui" line="4367"/>
-        <location filename="page400.ui" line="4409"/>
-        <location filename="page400.ui" line="4715"/>
-        <location filename="page400.ui" line="4757"/>
-        <location filename="page400.ui" line="4886"/>
-        <location filename="page400.ui" line="5103"/>
-        <location filename="page400.ui" line="5322"/>
-        <location filename="page400.ui" line="5364"/>
-        <location filename="page400.ui" line="5406"/>
-        <location filename="page400.ui" line="5532"/>
-        <location filename="page400.ui" line="5574"/>
-        <location filename="page400.ui" line="5616"/>
-        <location filename="page400.ui" line="5748"/>
-        <location filename="page400.ui" line="5965"/>
-        <location filename="page400.ui" line="6007"/>
-        <location filename="page400.ui" line="6049"/>
-        <location filename="page400.ui" line="6120"/>
-        <location filename="page400.ui" line="6162"/>
-        <location filename="page400.ui" line="6204"/>
-        <location filename="page400.ui" line="6246"/>
-        <location filename="page400.ui" line="6288"/>
-        <location filename="page400.ui" line="6330"/>
-        <location filename="page400.ui" line="6411"/>
-        <location filename="page400.ui" line="6543"/>
-        <location filename="page400.ui" line="6672"/>
-        <location filename="page400.ui" line="6888"/>
-        <location filename="page400.ui" line="7015"/>
-        <location filename="page400.ui" line="7159"/>
-        <location filename="page400.ui" line="7274"/>
-        <location filename="page400.ui" line="7316"/>
-        <location filename="page400.ui" line="7358"/>
-        <location filename="page400.ui" line="7400"/>
+        <location filename="page400.ui" line="215"/>
+        <location filename="page400.ui" line="347"/>
+        <location filename="page400.ui" line="479"/>
+        <location filename="page400.ui" line="611"/>
+        <location filename="page400.ui" line="653"/>
+        <location filename="page400.ui" line="695"/>
+        <location filename="page400.ui" line="737"/>
+        <location filename="page400.ui" line="779"/>
+        <location filename="page400.ui" line="821"/>
+        <location filename="page400.ui" line="863"/>
+        <location filename="page400.ui" line="995"/>
+        <location filename="page400.ui" line="1127"/>
+        <location filename="page400.ui" line="1259"/>
+        <location filename="page400.ui" line="1301"/>
+        <location filename="page400.ui" line="1343"/>
+        <location filename="page400.ui" line="1385"/>
+        <location filename="page400.ui" line="1427"/>
+        <location filename="page400.ui" line="1559"/>
+        <location filename="page400.ui" line="1684"/>
+        <location filename="page400.ui" line="1726"/>
+        <location filename="page400.ui" line="1768"/>
+        <location filename="page400.ui" line="1900"/>
+        <location filename="page400.ui" line="1942"/>
+        <location filename="page400.ui" line="1984"/>
+        <location filename="page400.ui" line="2026"/>
+        <location filename="page400.ui" line="2068"/>
+        <location filename="page400.ui" line="2110"/>
+        <location filename="page400.ui" line="2152"/>
+        <location filename="page400.ui" line="2194"/>
+        <location filename="page400.ui" line="2326"/>
+        <location filename="page400.ui" line="2368"/>
+        <location filename="page400.ui" line="2410"/>
+        <location filename="page400.ui" line="2452"/>
+        <location filename="page400.ui" line="2516"/>
+        <location filename="page400.ui" line="2558"/>
+        <location filename="page400.ui" line="2690"/>
+        <location filename="page400.ui" line="2732"/>
+        <location filename="page400.ui" line="2864"/>
+        <location filename="page400.ui" line="2996"/>
+        <location filename="page400.ui" line="3038"/>
+        <location filename="page400.ui" line="3080"/>
+        <location filename="page400.ui" line="3122"/>
+        <location filename="page400.ui" line="3164"/>
+        <location filename="page400.ui" line="3206"/>
+        <location filename="page400.ui" line="3338"/>
+        <location filename="page400.ui" line="3470"/>
+        <location filename="page400.ui" line="3512"/>
+        <location filename="page400.ui" line="3554"/>
+        <location filename="page400.ui" line="3596"/>
+        <location filename="page400.ui" line="3638"/>
+        <location filename="page400.ui" line="3680"/>
+        <location filename="page400.ui" line="3722"/>
+        <location filename="page400.ui" line="3764"/>
+        <location filename="page400.ui" line="3845"/>
+        <location filename="page400.ui" line="3977"/>
+        <location filename="page400.ui" line="4019"/>
+        <location filename="page400.ui" line="4151"/>
+        <location filename="page400.ui" line="4211"/>
+        <location filename="page400.ui" line="4253"/>
+        <location filename="page400.ui" line="4295"/>
+        <location filename="page400.ui" line="4337"/>
+        <location filename="page400.ui" line="4379"/>
         <source>ATCMled widget</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1362,36 +846,36 @@
     <message>
         <location filename="page400.ui" line="107"/>
         <location filename="page400.ui" line="149"/>
-        <location filename="page400.ui" line="662"/>
-        <location filename="page400.ui" line="836"/>
-        <location filename="page400.ui" line="1392"/>
-        <location filename="page400.ui" line="1518"/>
-        <location filename="page400.ui" line="1560"/>
-        <location filename="page400.ui" line="1824"/>
-        <location filename="page400.ui" line="2056"/>
-        <location filename="page400.ui" line="2186"/>
-        <location filename="page400.ui" line="2312"/>
-        <location filename="page400.ui" line="2656"/>
-        <location filename="page400.ui" line="2785"/>
-        <location filename="page400.ui" line="2827"/>
-        <location filename="page400.ui" line="3128"/>
-        <location filename="page400.ui" line="3425"/>
-        <location filename="page400.ui" line="3509"/>
-        <location filename="page400.ui" line="4026"/>
-        <location filename="page400.ui" line="4194"/>
-        <location filename="page400.ui" line="5340"/>
-        <location filename="page400.ui" line="5382"/>
-        <location filename="page400.ui" line="5550"/>
-        <location filename="page400.ui" line="5592"/>
-        <location filename="page400.ui" line="5634"/>
-        <location filename="page400.ui" line="5766"/>
-        <location filename="page400.ui" line="6264"/>
-        <location filename="page400.ui" line="6429"/>
-        <location filename="page400.ui" line="6690"/>
-        <location filename="page400.ui" line="7292"/>
-        <location filename="page400.ui" line="7334"/>
-        <location filename="page400.ui" line="7376"/>
-        <location filename="page400.ui" line="7418"/>
+        <location filename="page400.ui" line="365"/>
+        <location filename="page400.ui" line="497"/>
+        <location filename="page400.ui" line="797"/>
+        <location filename="page400.ui" line="839"/>
+        <location filename="page400.ui" line="881"/>
+        <location filename="page400.ui" line="1145"/>
+        <location filename="page400.ui" line="1277"/>
+        <location filename="page400.ui" line="1319"/>
+        <location filename="page400.ui" line="1445"/>
+        <location filename="page400.ui" line="1702"/>
+        <location filename="page400.ui" line="1744"/>
+        <location filename="page400.ui" line="1786"/>
+        <location filename="page400.ui" line="2002"/>
+        <location filename="page400.ui" line="2128"/>
+        <location filename="page400.ui" line="2212"/>
+        <location filename="page400.ui" line="2344"/>
+        <location filename="page400.ui" line="2428"/>
+        <location filename="page400.ui" line="3014"/>
+        <location filename="page400.ui" line="3056"/>
+        <location filename="page400.ui" line="3140"/>
+        <location filename="page400.ui" line="3182"/>
+        <location filename="page400.ui" line="3224"/>
+        <location filename="page400.ui" line="3356"/>
+        <location filename="page400.ui" line="3698"/>
+        <location filename="page400.ui" line="3863"/>
+        <location filename="page400.ui" line="4037"/>
+        <location filename="page400.ui" line="4271"/>
+        <location filename="page400.ui" line="4313"/>
+        <location filename="page400.ui" line="4355"/>
+        <location filename="page400.ui" line="4397"/>
         <source>TCP_AlarmArmed</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1402,989 +886,611 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page400.ui" line="170"/>
-        <location filename="page400.ui" line="182"/>
-        <source>TCP_DigIn_6</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page400.ui" line="218"/>
+        <location filename="page400.ui" line="176"/>
         <source>ATCMdate widget</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page400.ui" line="265"/>
-        <location filename="page400.ui" line="568"/>
-        <location filename="page400.ui" line="1256"/>
-        <location filename="page400.ui" line="2992"/>
-        <location filename="page400.ui" line="3542"/>
-        <location filename="page400.ui" line="3713"/>
-        <location filename="page400.ui" line="4937"/>
-        <location filename="page400.ui" line="5456"/>
-        <location filename="page400.ui" line="5799"/>
-        <location filename="page400.ui" line="6722"/>
-        <location filename="page400.ui" line="7065"/>
-        <source>nn.n</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page400.ui" line="271"/>
-        <location filename="page400.ui" line="277"/>
-        <source>TCP_AnIn_A_1</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page400.ui" line="274"/>
-        <location filename="page400.ui" line="400"/>
-        <location filename="page400.ui" line="577"/>
-        <location filename="page400.ui" line="1051"/>
-        <location filename="page400.ui" line="1139"/>
-        <location filename="page400.ui" line="1265"/>
-        <location filename="page400.ui" line="1433"/>
-        <location filename="page400.ui" line="2098"/>
-        <location filename="page400.ui" line="2353"/>
-        <location filename="page400.ui" line="2697"/>
-        <location filename="page400.ui" line="3001"/>
-        <location filename="page400.ui" line="3169"/>
-        <location filename="page400.ui" line="3298"/>
-        <location filename="page400.ui" line="3551"/>
-        <location filename="page400.ui" line="3722"/>
-        <location filename="page400.ui" line="3896"/>
-        <location filename="page400.ui" line="4300"/>
-        <location filename="page400.ui" line="4468"/>
-        <location filename="page400.ui" line="4816"/>
-        <location filename="page400.ui" line="4946"/>
-        <location filename="page400.ui" line="5252"/>
-        <location filename="page400.ui" line="5465"/>
-        <location filename="page400.ui" line="5808"/>
-        <location filename="page400.ui" line="6731"/>
-        <location filename="page400.ui" line="6948"/>
-        <location filename="page400.ui" line="7074"/>
-        <source>ATCMlabel widget</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message utf8="true">
-        <location filename="page400.ui" line="283"/>
-        <location filename="page400.ui" line="586"/>
-        <location filename="page400.ui" line="1148"/>
-        <location filename="page400.ui" line="1274"/>
-        <location filename="page400.ui" line="3010"/>
-        <location filename="page400.ui" line="3560"/>
-        <location filename="page400.ui" line="3731"/>
-        <location filename="page400.ui" line="4309"/>
-        <location filename="page400.ui" line="4955"/>
-        <location filename="page400.ui" line="5474"/>
-        <location filename="page400.ui" line="5817"/>
-        <location filename="page400.ui" line="6740"/>
-        <location filename="page400.ui" line="6957"/>
-        <location filename="page400.ui" line="7083"/>
-        <source> °C</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page400.ui" line="289"/>
-        <location filename="page400.ui" line="292"/>
-        <location filename="page400.ui" line="415"/>
-        <location filename="page400.ui" line="418"/>
-        <location filename="page400.ui" line="592"/>
-        <location filename="page400.ui" line="595"/>
-        <location filename="page400.ui" line="1066"/>
-        <location filename="page400.ui" line="1069"/>
-        <location filename="page400.ui" line="1154"/>
-        <location filename="page400.ui" line="1157"/>
-        <location filename="page400.ui" line="1280"/>
-        <location filename="page400.ui" line="1283"/>
-        <location filename="page400.ui" line="1448"/>
-        <location filename="page400.ui" line="1451"/>
-        <location filename="page400.ui" line="2113"/>
-        <location filename="page400.ui" line="2116"/>
-        <location filename="page400.ui" line="2368"/>
-        <location filename="page400.ui" line="2371"/>
-        <location filename="page400.ui" line="2712"/>
-        <location filename="page400.ui" line="2715"/>
-        <location filename="page400.ui" line="3016"/>
-        <location filename="page400.ui" line="3019"/>
-        <location filename="page400.ui" line="3184"/>
-        <location filename="page400.ui" line="3187"/>
-        <location filename="page400.ui" line="3313"/>
-        <location filename="page400.ui" line="3316"/>
-        <location filename="page400.ui" line="3566"/>
-        <location filename="page400.ui" line="3569"/>
-        <location filename="page400.ui" line="3737"/>
-        <location filename="page400.ui" line="3740"/>
-        <location filename="page400.ui" line="3911"/>
-        <location filename="page400.ui" line="3914"/>
-        <location filename="page400.ui" line="4315"/>
-        <location filename="page400.ui" line="4318"/>
-        <location filename="page400.ui" line="4483"/>
-        <location filename="page400.ui" line="4486"/>
-        <location filename="page400.ui" line="4831"/>
-        <location filename="page400.ui" line="4834"/>
-        <location filename="page400.ui" line="4961"/>
-        <location filename="page400.ui" line="4964"/>
-        <location filename="page400.ui" line="5267"/>
-        <location filename="page400.ui" line="5270"/>
-        <location filename="page400.ui" line="5480"/>
-        <location filename="page400.ui" line="5483"/>
-        <location filename="page400.ui" line="5823"/>
-        <location filename="page400.ui" line="5826"/>
-        <location filename="page400.ui" line="6746"/>
-        <location filename="page400.ui" line="6749"/>
-        <location filename="page400.ui" line="6963"/>
-        <location filename="page400.ui" line="6966"/>
-        <location filename="page400.ui" line="7089"/>
-        <location filename="page400.ui" line="7092"/>
-        <source>0</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page400.ui" line="338"/>
-        <location filename="page400.ui" line="350"/>
+        <location filename="page400.ui" line="212"/>
+        <location filename="page400.ui" line="224"/>
         <source>TCP_DigIn_A_2</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page400.ui" line="391"/>
-        <location filename="page400.ui" line="1042"/>
-        <location filename="page400.ui" line="1424"/>
-        <location filename="page400.ui" line="2089"/>
-        <location filename="page400.ui" line="2344"/>
-        <location filename="page400.ui" line="2688"/>
-        <location filename="page400.ui" line="3160"/>
-        <location filename="page400.ui" line="3289"/>
-        <location filename="page400.ui" line="3887"/>
-        <location filename="page400.ui" line="4459"/>
-        <location filename="page400.ui" line="4807"/>
-        <location filename="page400.ui" line="5243"/>
-        <source>nnnn</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page400.ui" line="397"/>
-        <location filename="page400.ui" line="403"/>
-        <source>TCP_SysActivePower_3</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page400.ui" line="409"/>
-        <location filename="page400.ui" line="1060"/>
-        <location filename="page400.ui" line="1442"/>
-        <location filename="page400.ui" line="2107"/>
-        <location filename="page400.ui" line="2362"/>
-        <location filename="page400.ui" line="2706"/>
-        <location filename="page400.ui" line="3178"/>
-        <location filename="page400.ui" line="3307"/>
-        <location filename="page400.ui" line="3905"/>
-        <location filename="page400.ui" line="4477"/>
-        <location filename="page400.ui" line="4825"/>
-        <location filename="page400.ui" line="5261"/>
-        <source> W</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page400.ui" line="479"/>
-        <location filename="page400.ui" line="491"/>
+        <location filename="page400.ui" line="266"/>
+        <location filename="page400.ui" line="278"/>
         <source>TCP_DigOut_A_7</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page400.ui" line="482"/>
-        <location filename="page400.ui" line="698"/>
-        <location filename="page400.ui" line="872"/>
-        <location filename="page400.ui" line="1596"/>
-        <location filename="page400.ui" line="1728"/>
-        <location filename="page400.ui" line="1860"/>
-        <location filename="page400.ui" line="1960"/>
-        <location filename="page400.ui" line="2435"/>
-        <location filename="page400.ui" line="2567"/>
-        <location filename="page400.ui" line="2863"/>
-        <location filename="page400.ui" line="3630"/>
-        <location filename="page400.ui" line="3801"/>
-        <location filename="page400.ui" line="4550"/>
-        <location filename="page400.ui" line="4637"/>
-        <location filename="page400.ui" line="5025"/>
-        <location filename="page400.ui" line="5157"/>
-        <location filename="page400.ui" line="5670"/>
-        <location filename="page400.ui" line="5887"/>
-        <location filename="page400.ui" line="6465"/>
-        <location filename="page400.ui" line="6597"/>
-        <location filename="page400.ui" line="6810"/>
+        <location filename="page400.ui" line="269"/>
+        <location filename="page400.ui" line="401"/>
+        <location filename="page400.ui" line="533"/>
+        <location filename="page400.ui" line="917"/>
+        <location filename="page400.ui" line="1049"/>
+        <location filename="page400.ui" line="1181"/>
+        <location filename="page400.ui" line="1481"/>
+        <location filename="page400.ui" line="1613"/>
+        <location filename="page400.ui" line="1822"/>
+        <location filename="page400.ui" line="2248"/>
+        <location filename="page400.ui" line="2612"/>
+        <location filename="page400.ui" line="2786"/>
+        <location filename="page400.ui" line="2918"/>
+        <location filename="page400.ui" line="3260"/>
+        <location filename="page400.ui" line="3392"/>
+        <location filename="page400.ui" line="3899"/>
+        <location filename="page400.ui" line="4073"/>
         <source>ATCMbutton widget</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page400.ui" line="535"/>
-        <location filename="page400.ui" line="538"/>
+        <location filename="page400.ui" line="322"/>
+        <location filename="page400.ui" line="325"/>
         <source>7</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page400.ui" line="574"/>
-        <location filename="page400.ui" line="580"/>
-        <source>TCP_AnIn_1</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page400.ui" line="641"/>
-        <location filename="page400.ui" line="653"/>
+        <location filename="page400.ui" line="344"/>
+        <location filename="page400.ui" line="356"/>
         <source>TCP_OK_DigIn_B_12</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page400.ui" line="695"/>
-        <location filename="page400.ui" line="707"/>
+        <location filename="page400.ui" line="398"/>
+        <location filename="page400.ui" line="410"/>
         <source>TCP_DigOut_A_9</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page400.ui" line="751"/>
-        <location filename="page400.ui" line="754"/>
+        <location filename="page400.ui" line="454"/>
+        <location filename="page400.ui" line="457"/>
         <source>9</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page400.ui" line="773"/>
-        <location filename="page400.ui" line="785"/>
-        <source>TCP_DigIn_1</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page400.ui" line="815"/>
-        <location filename="page400.ui" line="827"/>
+        <location filename="page400.ui" line="476"/>
+        <location filename="page400.ui" line="488"/>
         <source>TCP_OK_DigIn_A_11</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page400.ui" line="869"/>
-        <location filename="page400.ui" line="881"/>
+        <location filename="page400.ui" line="530"/>
+        <location filename="page400.ui" line="542"/>
         <source>TCP_DigOut_A_11</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page400.ui" line="925"/>
-        <location filename="page400.ui" line="928"/>
+        <location filename="page400.ui" line="586"/>
+        <location filename="page400.ui" line="589"/>
         <source>11</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page400.ui" line="947"/>
-        <location filename="page400.ui" line="959"/>
+        <location filename="page400.ui" line="608"/>
+        <location filename="page400.ui" line="620"/>
         <source>TCP_DigIn_B_8</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page400.ui" line="989"/>
-        <location filename="page400.ui" line="1001"/>
+        <location filename="page400.ui" line="650"/>
+        <location filename="page400.ui" line="662"/>
         <source>TCP_DigIn_B_4</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page400.ui" line="1048"/>
-        <location filename="page400.ui" line="1054"/>
-        <source>TCP_SysActivePower_6</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page400.ui" line="1130"/>
-        <location filename="page400.ui" line="4291"/>
-        <location filename="page400.ui" line="6939"/>
-        <source>--.-</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page400.ui" line="1203"/>
-        <location filename="page400.ui" line="1215"/>
+        <location filename="page400.ui" line="692"/>
+        <location filename="page400.ui" line="704"/>
         <source>TCP_DigIn_A_5</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page400.ui" line="1262"/>
+        <location filename="page400.ui" line="1256"/>
         <location filename="page400.ui" line="1268"/>
-        <source>TCP_AnIn_B_1</source>
+        <source>TCP_OK_DigIn_B_15</source>
+        <oldsource>TCP_AnIn_B_1</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page400.ui" line="1329"/>
-        <location filename="page400.ui" line="1341"/>
+        <location filename="page400.ui" line="734"/>
+        <location filename="page400.ui" line="746"/>
         <source>TCP_DigIn_B_11</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page400.ui" line="1371"/>
-        <location filename="page400.ui" line="1383"/>
+        <location filename="page400.ui" line="776"/>
+        <location filename="page400.ui" line="788"/>
         <source>TCP_OK_DigIn_A_14</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page400.ui" line="1430"/>
-        <location filename="page400.ui" line="1436"/>
-        <source>TCP_SysActivePower_0</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page400.ui" line="1497"/>
-        <location filename="page400.ui" line="1509"/>
+        <location filename="page400.ui" line="818"/>
+        <location filename="page400.ui" line="830"/>
         <source>TCP_OK_DigIn_A_13</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page400.ui" line="1539"/>
-        <location filename="page400.ui" line="1551"/>
+        <location filename="page400.ui" line="860"/>
+        <location filename="page400.ui" line="872"/>
         <source>TCP_OK_DigIn_B_14</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page400.ui" line="1593"/>
-        <location filename="page400.ui" line="1605"/>
+        <location filename="page400.ui" line="914"/>
+        <location filename="page400.ui" line="926"/>
         <source>TCP_DigOut_A_8</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page400.ui" line="1649"/>
-        <location filename="page400.ui" line="1652"/>
+        <location filename="page400.ui" line="970"/>
+        <location filename="page400.ui" line="973"/>
         <source>8</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page400.ui" line="1671"/>
-        <location filename="page400.ui" line="1683"/>
+        <location filename="page400.ui" line="992"/>
+        <location filename="page400.ui" line="1004"/>
         <source>TCP_DigIn_B_14</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page400.ui" line="1725"/>
-        <location filename="page400.ui" line="1737"/>
+        <location filename="page400.ui" line="1046"/>
+        <location filename="page400.ui" line="1058"/>
         <source>TCP_DigOut_A_13</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page400.ui" line="1781"/>
-        <location filename="page400.ui" line="1784"/>
+        <location filename="page400.ui" line="1102"/>
+        <location filename="page400.ui" line="1105"/>
         <source>13</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page400.ui" line="1803"/>
-        <location filename="page400.ui" line="1815"/>
+        <location filename="page400.ui" line="1124"/>
+        <location filename="page400.ui" line="1136"/>
         <source>TCP_OK_DigIn_A_8</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page400.ui" line="1857"/>
-        <location filename="page400.ui" line="1869"/>
-        <source>TCP_HeatingEnable</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page400.ui" line="1920"/>
-        <source>manual</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page400.ui" line="1923"/>
-        <source>heating</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page400.ui" line="1957"/>
-        <location filename="page400.ui" line="1969"/>
+        <location filename="page400.ui" line="1178"/>
+        <location filename="page400.ui" line="1190"/>
         <source>TCP_DigOut_A_16</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page400.ui" line="2013"/>
-        <location filename="page400.ui" line="2016"/>
+        <location filename="page400.ui" line="1234"/>
+        <location filename="page400.ui" line="1237"/>
         <source>16</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page400.ui" line="2035"/>
-        <location filename="page400.ui" line="2047"/>
-        <source>TCP_OK_DigIn_B_15</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page400.ui" line="2095"/>
-        <location filename="page400.ui" line="2101"/>
-        <source>TCP_SysActivePower_11</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page400.ui" line="2165"/>
-        <location filename="page400.ui" line="2177"/>
+        <location filename="page400.ui" line="1298"/>
+        <location filename="page400.ui" line="1310"/>
         <source>TCP_OK_DigIn_A_16</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page400.ui" line="2207"/>
-        <location filename="page400.ui" line="2219"/>
+        <location filename="page400.ui" line="1340"/>
+        <location filename="page400.ui" line="1352"/>
         <source>TCP_DigIn_A_1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page400.ui" line="2249"/>
-        <location filename="page400.ui" line="2261"/>
+        <location filename="page400.ui" line="1382"/>
+        <location filename="page400.ui" line="1394"/>
         <source>TCP_DigIn_B_1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page400.ui" line="2291"/>
-        <location filename="page400.ui" line="2303"/>
+        <location filename="page400.ui" line="1424"/>
+        <location filename="page400.ui" line="1436"/>
         <source>TCP_OK_DigIn_B_2</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page400.ui" line="2350"/>
-        <location filename="page400.ui" line="2356"/>
-        <source>TCP_SysActivePower_8</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page400.ui" line="2432"/>
-        <location filename="page400.ui" line="2444"/>
+        <location filename="page400.ui" line="1478"/>
+        <location filename="page400.ui" line="1490"/>
         <source>TCP_DigOut_A_5</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page400.ui" line="2488"/>
-        <location filename="page400.ui" line="2491"/>
+        <location filename="page400.ui" line="1534"/>
+        <location filename="page400.ui" line="1537"/>
         <source>5</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page400.ui" line="2510"/>
-        <location filename="page400.ui" line="2522"/>
+        <location filename="page400.ui" line="1556"/>
+        <location filename="page400.ui" line="1568"/>
         <source>TCP_DigIn_B_16</source>
         <translation type="unfinished"></translation>
     </message>
     <message utf8="true">
-        <location filename="page400.ui" line="2610"/>
-        <location filename="page400.ui" line="2613"/>
+        <location filename="page400.ui" line="1656"/>
+        <location filename="page400.ui" line="1659"/>
         <source>☰</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page400.ui" line="2635"/>
-        <location filename="page400.ui" line="2647"/>
+        <location filename="page400.ui" line="1681"/>
+        <location filename="page400.ui" line="1693"/>
         <source>TCP_OK_DigIn_A_4</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page400.ui" line="2694"/>
-        <location filename="page400.ui" line="2700"/>
-        <source>TCP_SysActivePower_2</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page400.ui" line="2764"/>
-        <location filename="page400.ui" line="2776"/>
+        <location filename="page400.ui" line="1723"/>
+        <location filename="page400.ui" line="1735"/>
         <source>TCP_OK_DigIn_B_10</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page400.ui" line="2806"/>
-        <location filename="page400.ui" line="2818"/>
+        <location filename="page400.ui" line="1765"/>
+        <location filename="page400.ui" line="1777"/>
         <source>TCP_OK_DigIn_A_15</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page400.ui" line="2860"/>
-        <location filename="page400.ui" line="2872"/>
+        <location filename="page400.ui" line="1819"/>
+        <location filename="page400.ui" line="1831"/>
         <source>TCP_DigOut_A_14</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page400.ui" line="2916"/>
-        <location filename="page400.ui" line="2919"/>
+        <location filename="page400.ui" line="1875"/>
+        <location filename="page400.ui" line="1878"/>
         <source>14</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page400.ui" line="2938"/>
-        <location filename="page400.ui" line="2950"/>
+        <location filename="page400.ui" line="1897"/>
+        <location filename="page400.ui" line="1909"/>
         <source>TCP_DigIn_B_10</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page400.ui" line="2998"/>
-        <location filename="page400.ui" line="3004"/>
-        <source>TCP_AnIn_C_3</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page400.ui" line="3065"/>
-        <location filename="page400.ui" line="3077"/>
+        <location filename="page400.ui" line="1939"/>
+        <location filename="page400.ui" line="1951"/>
         <source>TCP_DigIn_B_7</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page400.ui" line="3107"/>
-        <location filename="page400.ui" line="3119"/>
+        <location filename="page400.ui" line="1981"/>
+        <location filename="page400.ui" line="1993"/>
         <source>TCP_OK_DigIn_A_2</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page400.ui" line="3166"/>
-        <location filename="page400.ui" line="3172"/>
-        <source>TCP_SysActivePower_7</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page400.ui" line="3236"/>
-        <location filename="page400.ui" line="3248"/>
+        <location filename="page400.ui" line="2023"/>
+        <location filename="page400.ui" line="2035"/>
         <source>TCP_DigIn_B_12</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page400.ui" line="3295"/>
-        <location filename="page400.ui" line="3301"/>
-        <source>TCP_SysActivePower_1</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page400.ui" line="3362"/>
-        <location filename="page400.ui" line="3374"/>
+        <location filename="page400.ui" line="2065"/>
+        <location filename="page400.ui" line="2077"/>
         <source>TCP_DigIn_A_11</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page400.ui" line="3404"/>
-        <location filename="page400.ui" line="3416"/>
+        <location filename="page400.ui" line="2107"/>
+        <location filename="page400.ui" line="2119"/>
         <source>TCP_OK_DigIn_B_3</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page400.ui" line="3446"/>
-        <location filename="page400.ui" line="3458"/>
+        <location filename="page400.ui" line="2149"/>
+        <location filename="page400.ui" line="2161"/>
         <source>TCP_DigIn_B_3</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page400.ui" line="3488"/>
-        <location filename="page400.ui" line="3500"/>
+        <location filename="page400.ui" line="2191"/>
+        <location filename="page400.ui" line="2203"/>
         <source>TCP_OK_DigIn_A_10</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page400.ui" line="3548"/>
-        <location filename="page400.ui" line="3554"/>
-        <source>TCP_AnIn_2</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="page400.ui" line="3719"/>
-        <location filename="page400.ui" line="3725"/>
-        <source>TCP_AnIn_A_2</source>
+        <location filename="page400.ui" line="3731"/>
+        <source>TCP_DigIn_A_3</source>
+        <oldsource>TCP_AnIn_A_2</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page400.ui" line="3798"/>
-        <location filename="page400.ui" line="3810"/>
+        <location filename="page400.ui" line="2245"/>
+        <location filename="page400.ui" line="2257"/>
         <source>TCP_DigOut_A_6</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page400.ui" line="3854"/>
-        <location filename="page400.ui" line="3857"/>
+        <location filename="page400.ui" line="2301"/>
+        <location filename="page400.ui" line="2304"/>
         <source>6</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page400.ui" line="3893"/>
-        <location filename="page400.ui" line="3899"/>
-        <source>TCP_SysActivePower_4</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page400.ui" line="3963"/>
-        <location filename="page400.ui" line="3975"/>
-        <source>TCP_DigIn_8</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page400.ui" line="4005"/>
-        <location filename="page400.ui" line="4017"/>
+        <location filename="page400.ui" line="2323"/>
+        <location filename="page400.ui" line="2335"/>
         <source>TCP_OK_DigIn_A_6</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page400.ui" line="4047"/>
-        <location filename="page400.ui" line="4059"/>
-        <source>TCP_DigIn_2</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page400.ui" line="4089"/>
-        <location filename="page400.ui" line="4101"/>
-        <source>TCP_DigIn_7</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page400.ui" line="4131"/>
-        <location filename="page400.ui" line="4143"/>
+        <location filename="page400.ui" line="2365"/>
+        <location filename="page400.ui" line="2377"/>
         <source>TCP_DigIn_A_13</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page400.ui" line="4173"/>
-        <location filename="page400.ui" line="4185"/>
+        <location filename="page400.ui" line="2407"/>
+        <location filename="page400.ui" line="2419"/>
         <source>TCP_OK_DigIn_A_12</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page400.ui" line="4215"/>
-        <location filename="page400.ui" line="4227"/>
+        <location filename="page400.ui" line="2449"/>
+        <location filename="page400.ui" line="2461"/>
         <source>TCP_DigIn_A_9</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page400.ui" line="4364"/>
-        <location filename="page400.ui" line="4376"/>
+        <location filename="page400.ui" line="2513"/>
+        <location filename="page400.ui" line="2525"/>
         <source>TCP_DigIn_A_14</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page400.ui" line="4406"/>
-        <location filename="page400.ui" line="4418"/>
+        <location filename="page400.ui" line="2555"/>
+        <location filename="page400.ui" line="2567"/>
         <source>TCP_DigIn_A_4</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page400.ui" line="4465"/>
-        <location filename="page400.ui" line="4471"/>
-        <source>TCP_SysActivePower_9</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page400.ui" line="4634"/>
-        <location filename="page400.ui" line="4646"/>
+        <location filename="page400.ui" line="2609"/>
+        <location filename="page400.ui" line="2621"/>
         <source>TCP_DigOut_A_1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page400.ui" line="4690"/>
-        <location filename="page400.ui" line="4693"/>
+        <location filename="page400.ui" line="2665"/>
+        <location filename="page400.ui" line="2668"/>
         <source>1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page400.ui" line="4712"/>
-        <location filename="page400.ui" line="4724"/>
-        <source>TCP_DigIn_3</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page400.ui" line="4754"/>
-        <location filename="page400.ui" line="4766"/>
+        <location filename="page400.ui" line="2687"/>
+        <location filename="page400.ui" line="2699"/>
         <source>TCP_DigIn_A_6</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page400.ui" line="4813"/>
-        <location filename="page400.ui" line="4819"/>
-        <source>TCP_SysActivePower_10</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page400.ui" line="4883"/>
-        <location filename="page400.ui" line="4895"/>
+        <location filename="page400.ui" line="2729"/>
+        <location filename="page400.ui" line="2741"/>
         <source>TCP_DigIn_A_16</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page400.ui" line="4943"/>
-        <location filename="page400.ui" line="4949"/>
-        <source>TCP_AnIn_A_3</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page400.ui" line="5022"/>
-        <location filename="page400.ui" line="5034"/>
+        <location filename="page400.ui" line="2783"/>
+        <location filename="page400.ui" line="2795"/>
         <source>TCP_DigOut_A_4</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page400.ui" line="5078"/>
-        <location filename="page400.ui" line="5081"/>
+        <location filename="page400.ui" line="2839"/>
+        <location filename="page400.ui" line="2842"/>
         <source>4</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page400.ui" line="5100"/>
-        <location filename="page400.ui" line="5112"/>
+        <location filename="page400.ui" line="2861"/>
+        <location filename="page400.ui" line="2873"/>
         <source>TCP_DigIn_B_13</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page400.ui" line="5154"/>
-        <location filename="page400.ui" line="5166"/>
+        <location filename="page400.ui" line="2915"/>
+        <location filename="page400.ui" line="2927"/>
         <source>TCP_DigOut_A_15</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page400.ui" line="5210"/>
-        <location filename="page400.ui" line="5213"/>
+        <location filename="page400.ui" line="2971"/>
+        <location filename="page400.ui" line="2974"/>
         <source>15</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page400.ui" line="5249"/>
-        <location filename="page400.ui" line="5255"/>
-        <source>TCP_SysActivePower_5</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page400.ui" line="5319"/>
-        <location filename="page400.ui" line="5331"/>
+        <location filename="page400.ui" line="2993"/>
+        <location filename="page400.ui" line="3005"/>
         <source>TCP_OK_DigIn_A_1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page400.ui" line="5361"/>
-        <location filename="page400.ui" line="5373"/>
+        <location filename="page400.ui" line="3035"/>
+        <location filename="page400.ui" line="3047"/>
         <source>TCP_OK_DigIn_A_5</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page400.ui" line="5403"/>
-        <location filename="page400.ui" line="5415"/>
+        <location filename="page400.ui" line="3077"/>
+        <location filename="page400.ui" line="3089"/>
         <source>TCP_DigIn_A_7</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page400.ui" line="5462"/>
-        <location filename="page400.ui" line="5468"/>
-        <source>TCP_AnIn_B_2</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page400.ui" line="5529"/>
-        <location filename="page400.ui" line="5541"/>
+        <location filename="page400.ui" line="3119"/>
+        <location filename="page400.ui" line="3131"/>
         <source>TCP_OK_DigIn_B_4</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page400.ui" line="5571"/>
-        <location filename="page400.ui" line="5583"/>
+        <location filename="page400.ui" line="3161"/>
+        <location filename="page400.ui" line="3173"/>
         <source>TCP_OK_DigIn_B_8</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page400.ui" line="5613"/>
-        <location filename="page400.ui" line="5625"/>
+        <location filename="page400.ui" line="3203"/>
+        <location filename="page400.ui" line="3215"/>
         <source>TCP_OK_DigIn_A_7</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page400.ui" line="5667"/>
-        <location filename="page400.ui" line="5679"/>
+        <location filename="page400.ui" line="3257"/>
+        <location filename="page400.ui" line="3269"/>
         <source>TCP_DigOut_A_3</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page400.ui" line="5723"/>
-        <location filename="page400.ui" line="5726"/>
+        <location filename="page400.ui" line="3313"/>
+        <location filename="page400.ui" line="3316"/>
         <source>3</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page400.ui" line="5745"/>
-        <location filename="page400.ui" line="5757"/>
+        <location filename="page400.ui" line="3335"/>
+        <location filename="page400.ui" line="3347"/>
         <source>TCP_OK_DigIn_B_1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page400.ui" line="5805"/>
-        <location filename="page400.ui" line="5811"/>
-        <source>TCP_AnIn_B_3</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page400.ui" line="5884"/>
-        <location filename="page400.ui" line="5896"/>
+        <location filename="page400.ui" line="3389"/>
+        <location filename="page400.ui" line="3401"/>
         <source>TCP_DigOut_A_2</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page400.ui" line="5940"/>
-        <location filename="page400.ui" line="5943"/>
+        <location filename="page400.ui" line="3445"/>
+        <location filename="page400.ui" line="3448"/>
         <source>2</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page400.ui" line="5962"/>
-        <location filename="page400.ui" line="5974"/>
+        <location filename="page400.ui" line="3467"/>
+        <location filename="page400.ui" line="3479"/>
         <source>TCP_DigIn_A_8</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page400.ui" line="6004"/>
-        <location filename="page400.ui" line="6016"/>
+        <location filename="page400.ui" line="3509"/>
+        <location filename="page400.ui" line="3521"/>
         <source>TCP_DigIn_B_6</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page400.ui" line="6046"/>
-        <location filename="page400.ui" line="6058"/>
+        <location filename="page400.ui" line="3551"/>
+        <location filename="page400.ui" line="3563"/>
         <source>TCP_DigIn_A_15</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page400.ui" line="6117"/>
-        <location filename="page400.ui" line="6129"/>
+        <location filename="page400.ui" line="3593"/>
+        <location filename="page400.ui" line="3605"/>
         <source>TCP_DigIn_A_10</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page400.ui" line="6159"/>
-        <location filename="page400.ui" line="6171"/>
+        <location filename="page400.ui" line="3635"/>
+        <location filename="page400.ui" line="3647"/>
         <source>TCP_DigIn_B_15</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page400.ui" line="6201"/>
-        <location filename="page400.ui" line="6213"/>
-        <source>TCP_DigIn_5</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page400.ui" line="6243"/>
-        <location filename="page400.ui" line="6255"/>
+        <location filename="page400.ui" line="3677"/>
+        <location filename="page400.ui" line="3689"/>
         <source>TCP_OK_DigIn_A_9</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page400.ui" line="7156"/>
-        <location filename="page400.ui" line="7168"/>
+        <location filename="page400.ui" line="4208"/>
+        <location filename="page400.ui" line="4220"/>
         <source>TCP_Alarm</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page400.ui" line="7177"/>
+        <location filename="page400.ui" line="4229"/>
         <source>TCP_AlarmEnabled</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page400.ui" line="7207"/>
-        <location filename="page400.ui" line="7213"/>
-        <source>TCP_AlarmStatus</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page400.ui" line="7210"/>
-        <source>ATCMcombobox widget</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page400.ui" line="7258"/>
-        <source>0;ZERO;1;IDLE;2;ARMED;3;ENABLED;4;RINGING;5;MUTED</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page400.ui" line="7271"/>
-        <location filename="page400.ui" line="7283"/>
+        <location filename="page400.ui" line="4250"/>
+        <location filename="page400.ui" line="4262"/>
         <source>TCP_OK_DigIn_B_7</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page400.ui" line="7313"/>
-        <location filename="page400.ui" line="7325"/>
+        <location filename="page400.ui" line="4292"/>
+        <location filename="page400.ui" line="4304"/>
         <source>TCP_OK_DigIn_B_11</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page400.ui" line="7355"/>
-        <location filename="page400.ui" line="7367"/>
+        <location filename="page400.ui" line="4334"/>
+        <location filename="page400.ui" line="4346"/>
         <source>TCP_OK_DigIn_B_13</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page400.ui" line="7397"/>
-        <location filename="page400.ui" line="7409"/>
+        <location filename="page400.ui" line="4376"/>
+        <location filename="page400.ui" line="4388"/>
         <source>TCP_OK_DigIn_B_16</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page400.ui" line="6285"/>
-        <location filename="page400.ui" line="6297"/>
-        <source>TCP_DigIn_A_3</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page400.ui" line="6327"/>
-        <location filename="page400.ui" line="6339"/>
+        <location filename="page400.ui" line="3761"/>
+        <location filename="page400.ui" line="3773"/>
         <source>TCP_DigIn_B_9</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page400.ui" line="6375"/>
+        <location filename="page400.ui" line="3809"/>
         <source>ATCMtime widget</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page400.ui" line="6408"/>
-        <location filename="page400.ui" line="6420"/>
+        <location filename="page400.ui" line="3842"/>
+        <location filename="page400.ui" line="3854"/>
         <source>TCP_OK_DigIn_B_9</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page400.ui" line="6462"/>
-        <location filename="page400.ui" line="6474"/>
+        <location filename="page400.ui" line="3896"/>
+        <location filename="page400.ui" line="3908"/>
         <source>TCP_DigOut_A_10</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page400.ui" line="6518"/>
-        <location filename="page400.ui" line="6521"/>
+        <location filename="page400.ui" line="3952"/>
+        <location filename="page400.ui" line="3955"/>
         <source>10</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page400.ui" line="6540"/>
-        <location filename="page400.ui" line="6552"/>
+        <location filename="page400.ui" line="3974"/>
+        <location filename="page400.ui" line="3986"/>
         <source>TCP_DigIn_B_2</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page400.ui" line="6669"/>
-        <location filename="page400.ui" line="6681"/>
+        <location filename="page400.ui" line="4016"/>
+        <location filename="page400.ui" line="4028"/>
         <source>TCP_OK_DigIn_A_3</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page400.ui" line="6728"/>
-        <location filename="page400.ui" line="6734"/>
-        <source>TCP_AnIn_C_1</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page400.ui" line="6807"/>
-        <location filename="page400.ui" line="6819"/>
+        <location filename="page400.ui" line="4070"/>
+        <location filename="page400.ui" line="4082"/>
         <source>TCP_DigOut_A_12</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page400.ui" line="6863"/>
-        <location filename="page400.ui" line="6866"/>
+        <location filename="page400.ui" line="4126"/>
+        <location filename="page400.ui" line="4129"/>
         <source>12</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page400.ui" line="6885"/>
-        <location filename="page400.ui" line="6897"/>
-        <source>TCP_DigIn_4</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page400.ui" line="7012"/>
-        <location filename="page400.ui" line="7024"/>
+        <location filename="page400.ui" line="4148"/>
+        <location filename="page400.ui" line="4160"/>
         <source>TCP_DigIn_A_12</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page400.ui" line="7071"/>
-        <location filename="page400.ui" line="7077"/>
-        <source>TCP_AnIn_C_2</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

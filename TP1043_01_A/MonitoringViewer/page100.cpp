@@ -43,11 +43,8 @@ page100::page100(QWidget *parent) :
     initVars(vars, names, values);
 
     // datetime
-    ui->label_datetime->setText(QDateTime::currentDateTime().toString("hh:mm:ss")); // "YYYY-MM-DD hh:mm:ss"
-}
+    ui->label_datetime->setText(QDateTime::currentDateTime().toString("hh:mm")); // "YYYY-MM-DD hh:mm:ss"
 
-void page100::reload()
-{
     // trend
     ui->comboBox_trend->clear();
     trendList = getTrendList();
@@ -64,6 +61,10 @@ void page100::reload()
     }
 }
 
+void page100::reload()
+{
+}
+
 void page100::updateData()
 {
     if (this->isVisible() == false)
@@ -74,7 +75,7 @@ void page100::updateData()
     page::updateData();
     
     // datetime
-    ui->label_datetime->setText(QDateTime::currentDateTime().toString("hh:mm:ss")); // "YYYY-MM-DD hh:mm:ss"
+    ui->label_datetime->setText(QDateTime::currentDateTime().toString("hh:mm")); // "YYYY-MM-DD hh:mm:ss"
     // vars
     updateVars(vars);
 }
@@ -96,7 +97,7 @@ void page100::on_comboBox_trend_currentIndexChanged(const QString &arg1)
     ui->comboBox_trend->setEnabled(false);
 
     clearVars(vars);
-    if (setupVars(vars, arg1, true)) {
+    if (setupVars(vars, arg1)) {
         doWrite_SelezioneTrend(ui->comboBox_trend->currentIndex());
     } else {
         QMessageBox::critical (this," Trends List ","Wrong trend:\n\t" + arg1);

@@ -68,7 +68,7 @@ void clearVars(trendVariable vars[])
     }
 }
 
-bool setupVars(trendVariable vars[], const QString trendName, bool isHorizontal)
+bool setupVars(trendVariable vars[], const QString trendName)
 {
     bool retval = false;
     QFile file(trendsPath + "/" + "trend_" + trendName + ".csv");
@@ -142,40 +142,33 @@ bool setupVars(trendVariable vars[], const QString trendName, bool isHorizontal)
             QString nameFontSize;
             QString valueFontSize;
 
-            if (isHorizontal) {
-                if (nVars == 1) {
-                    nameFontSize = "36pt";      // 1 colonna
-                    valueFontSize = "120pt";    // 1 riga
-                } else if (nVars <= 2) {
-                    nameFontSize = "28pt";      // 2 colonne
-                    valueFontSize = "110pt";    // 1 riga
-                } else if (nVars <= 4) {
-                    nameFontSize = "28pt";      // 2 colonne
-                    valueFontSize = "60pt";     // 2 righe
-                } else if (nVars <= 6) {
-                    nameFontSize = "20pt";      // 3 colonne
-                    valueFontSize = "60pt";     // 2 righe
-                } else {
-                    nameFontSize = "20pt";      // 3 colonne
-                    valueFontSize = "40pt";     // 3 righe
-                }
-            } else {
-                if (nVars == 1) {
-                    nameFontSize = "30pt";      // 1 colonna
-                    valueFontSize = "100pt";    // 1 riga
-                } else if (nVars <= 2) {
-                    nameFontSize = "28pt";      // 1 colonna
-                    valueFontSize = "100pt";    // 2 riga
-                } else if (nVars <= 4) {
-                    nameFontSize = "18pt";      // 1 colonne
-                    valueFontSize = "50pt";     // 4 righe
-                } else if (nVars <= 5) {
-                    nameFontSize = "18pt";      // 1 colonna
-                    valueFontSize = "36pt";     // 5 righe
-                } else {
-                    nameFontSize = "16pt";      // 2 colonne
-                    valueFontSize = "36pt";     // 5 righe
-                }
+            switch (nVars) {
+            // 1 2 7
+            // 3 4 8
+            // 5 6 9
+            case 1:
+                nameFontSize = "36pt";      // 1 colonna
+                valueFontSize = "120pt";    // 1 riga
+                break;
+            case 2:
+                nameFontSize = "28pt";      // 2 colonne
+                valueFontSize = "110pt";    // 1 riga
+                break;
+            case 3:
+            case 4:
+                nameFontSize = "28pt";      // 2 colonne
+                valueFontSize = "60pt";     // 2 righe
+                break;
+            case 5:
+            case 6:
+                nameFontSize = "20pt";      // 2 colonne
+                valueFontSize = "60pt";     // 3 righe
+                break;
+            case 7:
+            case 8:
+            case 9:
+                nameFontSize = "20pt";      // 3 colonne
+                valueFontSize = "40pt";     // 3 righe
             }
             vars[i].labelName->setStyleSheet("color:" + vars[i].color + "; font: " + nameFontSize + " \"DejaVu Sans\";");
             vars[i].labelValue->setStyleSheet("color:" + vars[i].color + "; font: " + valueFontSize + " \"DejaVu Sans\";");

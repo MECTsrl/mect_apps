@@ -14,9 +14,60 @@
 #include "utility.h"
 #include "pages.h"
 
+#include <QFile>
+#include <QString>
+#include <QSettings>
+
 void printVncDisplayString(char * vncString)
 {
+#define VERSATILE_APPLICATION
+#ifdef VERSATILE_APPLICATION
+    // what the wizard wrote in template.pri?
+    int phys_width = WIDTH, phys_height = HEIGHT, rot = ROTATION;
+    if (rot == 270 || rot == 90) {
+        phys_width = HEIGHT;
+        phys_height = WIDTH;
+    }
+    // what the kernel knows? ---> maybe a different display size
+    QFile virtual_size("/sys/devices/platform/mxs-fb.0/graphics/fb0/virtual_size");
+    if (virtual_size.open(QIODevice::ReadOnly)) {
+        char buf[42];
+
+        if (virtual_size.readLine(buf, 42) > 0) {
+            int w = phys_width, h = phys_height;
+
+            if (sscanf(buf, "%d,%d", &w, &h) == 2) {
+                phys_width = w;
+                phys_height = h;
+            }
+        }
+    }
+    // what the user set? --> maybe a different orientation
+    QSettings *options = new QSettings("/root/hmi.ini", QSettings::IniFormat);
+    if (options) {
+        bool ok;
+        int r = options->value("rotation", rot).toInt(&ok);
+
+        if (ok && r != rot) {
+            rot = r;
+        }
+    }
+    // QApplication arguments
+    switch (rot) {
+    case 0:
+    case 180:
+        sprintf(vncString, "Multi: VNC:0:size=%dx%d Transformed:rot%d", phys_width, phys_height, rot);
+        break;
+    case 90:
+    case 270:
+        sprintf(vncString, "Multi: VNC:0:size=%dx%d Transformed:rot%d", phys_height, phys_width, rot);
+        break;
+    default:
+        ;
+    }
+#else
     sprintf(vncString, "Multi: VNC:0:size=%dx%d Transformed:rot%d", WIDTH, HEIGHT, ROTATION);
+#endif
     userPageList 
             << "system_ini"
             << "page100"
@@ -60,5 +111,3 @@ int create_page_nb(page ** p, int pageNb)
     }
     return 0;
 }
-
-

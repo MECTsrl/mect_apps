@@ -55,7 +55,7 @@ struct trendVariable {
 QStringList getTrendList();
 void initVars(trendVariable vars[MAX_VARS], QLabel *names[], QLabel *values[]);
 void clearVars(struct trendVariable vars[MAX_VARS]);
-bool setupVars(struct trendVariable vars[MAX_VARS], const QString trendName, bool isHorizontal);
+bool setupVars(struct trendVariable vars[MAX_VARS], const QString trendName);
 void updateVars(struct trendVariable vars[MAX_VARS]);
 
 

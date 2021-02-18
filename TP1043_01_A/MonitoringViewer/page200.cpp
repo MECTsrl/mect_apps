@@ -99,7 +99,7 @@ void page200::on_comboBox_trend_currentIndexChanged(const QString &arg1)
     ui->comboBox_trend->setEnabled(false);
 
     clearVars(vars);
-    if (setupVars(vars, arg1, false)) {
+    if (setupVars(vars, arg1)) {
         doWrite_SelezioneTrend(ui->comboBox_trend->currentIndex());
     } else {
         QMessageBox::critical (this," Trends List ","Wrong trend:\n\t" + arg1);
