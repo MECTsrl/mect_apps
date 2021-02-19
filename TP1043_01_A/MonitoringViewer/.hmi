@@ -6,10 +6,12 @@ INPUT(
 ./page200.o
 ./page400.o
 ./page300.o
+./trendvartable.o
 ./moc_page100.o
 ./moc_page200.o
 ./moc_page400.o
 ./moc_page300.o
+./moc_trendvartable.o
 ./qrc_systemicons.o
 ./qrc_languages.o
 ./qrc_resources.o

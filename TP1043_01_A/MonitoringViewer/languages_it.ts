@@ -15,112 +15,112 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="147"/>
-        <location filename="page100.ui" line="195"/>
+        <location filename="page100.ui" line="160"/>
+        <location filename="page100.ui" line="208"/>
         <source>ATCMled widget</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="144"/>
-        <location filename="page100.ui" line="156"/>
+        <location filename="page100.ui" line="157"/>
+        <location filename="page100.ui" line="169"/>
         <source>TCP_Alarm</source>
         <oldsource>TCP_DigIn_5</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="165"/>
+        <location filename="page100.ui" line="178"/>
         <source>TCP_AlarmEnabled</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="285"/>
-        <location filename="page100.ui" line="325"/>
-        <location filename="page100.ui" line="365"/>
-        <location filename="page100.ui" line="405"/>
-        <location filename="page100.ui" line="445"/>
-        <location filename="page100.ui" line="485"/>
-        <location filename="page100.ui" line="525"/>
-        <location filename="page100.ui" line="565"/>
-        <location filename="page100.ui" line="605"/>
-        <location filename="page100.ui" line="645"/>
-        <location filename="page100.ui" line="685"/>
-        <location filename="page100.ui" line="725"/>
-        <location filename="page100.ui" line="765"/>
-        <location filename="page100.ui" line="805"/>
-        <location filename="page100.ui" line="845"/>
-        <location filename="page100.ui" line="885"/>
-        <location filename="page100.ui" line="925"/>
+        <location filename="page100.ui" line="324"/>
+        <location filename="page100.ui" line="364"/>
+        <location filename="page100.ui" line="404"/>
+        <location filename="page100.ui" line="444"/>
+        <location filename="page100.ui" line="484"/>
+        <location filename="page100.ui" line="524"/>
+        <location filename="page100.ui" line="564"/>
+        <location filename="page100.ui" line="604"/>
+        <location filename="page100.ui" line="644"/>
+        <location filename="page100.ui" line="684"/>
+        <location filename="page100.ui" line="724"/>
+        <location filename="page100.ui" line="764"/>
+        <location filename="page100.ui" line="844"/>
+        <location filename="page100.ui" line="884"/>
+        <location filename="page100.ui" line="924"/>
+        <location filename="page100.ui" line="964"/>
+        <location filename="page100.ui" line="1004"/>
         <source>color: rgb(255, 255, 255);</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="728"/>
+        <location filename="page100.ui" line="607"/>
         <source>8</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="288"/>
+        <location filename="page100.ui" line="447"/>
         <source>var 1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="328"/>
+        <location filename="page100.ui" line="927"/>
         <source>var 2</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="768"/>
+        <location filename="page100.ui" line="767"/>
         <source>var 5</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="408"/>
+        <location filename="page100.ui" line="727"/>
         <source>1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="448"/>
+        <location filename="page100.ui" line="367"/>
         <source>2</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="888"/>
+        <location filename="page100.ui" line="407"/>
         <source>5</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="648"/>
+        <location filename="page100.ui" line="567"/>
         <source>3</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="688"/>
+        <location filename="page100.ui" line="487"/>
         <source>4</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="928"/>
+        <location filename="page100.ui" line="1007"/>
         <source>6</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="488"/>
+        <location filename="page100.ui" line="647"/>
         <source>7</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="968"/>
+        <location filename="page100.ui" line="807"/>
         <source>9</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="528"/>
+        <location filename="page100.ui" line="887"/>
         <source>var 3</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="192"/>
-        <location filename="page100.ui" line="204"/>
+        <location filename="page100.ui" line="205"/>
+        <location filename="page100.ui" line="217"/>
         <source>TCP_is_Caldaia_ON</source>
         <translation type="unfinished"></translation>
     </message>
@@ -130,27 +130,27 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="568"/>
+        <location filename="page100.ui" line="327"/>
         <source>var 4</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="808"/>
+        <location filename="page100.ui" line="687"/>
         <source>var 6</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="368"/>
+        <location filename="page100.ui" line="967"/>
         <source>var 7</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="608"/>
+        <location filename="page100.ui" line="527"/>
         <source>var 8</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="848"/>
+        <location filename="page100.ui" line="847"/>
         <source>var 9</source>
         <translation type="unfinished"></translation>
     </message>

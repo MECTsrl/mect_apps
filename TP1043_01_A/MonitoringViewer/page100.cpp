@@ -52,8 +52,10 @@ page100::page100(QWidget *parent) :
         ui->comboBox_trend->blockSignals(true);
         ui->comboBox_trend->addItems(trendList);
         ui->comboBox_trend->blockSignals(false);
+
         // eventuale recupero ultima selezione dalle ritentive
         if (SelezioneTrend < 0 || SelezioneTrend >= ui->comboBox_trend->count()) {
+            ui->comboBox_trend->setCurrentIndex(0);
             doWrite_SelezioneTrend(0);
         } else {
             ui->comboBox_trend->setCurrentIndex(SelezioneTrend);
@@ -100,7 +102,7 @@ void page100::on_comboBox_trend_currentIndexChanged(const QString &arg1)
     if (setupVars(vars, arg1)) {
         doWrite_SelezioneTrend(ui->comboBox_trend->currentIndex());
     } else {
-        QMessageBox::critical (this," Trends List ","Wrong trend:\n\t" + arg1);
+        QMessageBox::critical (this," Trends List ","Wrong trend:\n\t'" + arg1 + "'");
     }
     ui->comboBox_trend->setEnabled(true);
 }

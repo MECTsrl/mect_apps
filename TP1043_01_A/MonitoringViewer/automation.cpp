@@ -1,20 +1,65 @@
 #include "crosstable.h"
 #include "automation.h"
+#include <QElapsedTimer>
+
+#include <QScreen>
+
+#define SILENCE     0x00000000
+
+// 100%; ON  50 cs (0.5 s); off 25 cs (0.25 s); count = 3; total = 3*(0.50+0.25)=2.25 s
+#define SOUND_A     0x03193264
+#define PERIOD_A_ms 3000 // 3 s
+
+// 100%; ON 100 cs (1.0 s); off 50 cs (0.50 s); count = 5; total = 5*(1.0+0.5)=7,5s
+#define SOUND_B     0x05326464
+#define PERIOD_B_ms 8000 // 8 s
+
+enum status { QUIET = 0, RINGING_A, RINGING_B };
+static status buzzer_status;
+QElapsedTimer timer;
 
 /* put here the initalization */
 void setup(void)
 {
     logStart();
-    doWrite_PLC_BUZZER(0x00000000);
+    buzzer_status = QUIET;
+    doWrite_PLC_BUZZER(SILENCE);
 }
 
 /* put here the operation made every 100ms */
 void loop(void)
 {
-    if (TCP_Alarm && ! PLC_buzzerOn) {
-        doWrite_PLC_buzzerOn(1);
-    } else if (! TCP_Alarm && PLC_buzzerOn) {
-        doWrite_PLC_buzzerOn(0);
+    switch (buzzer_status) {
+    case QUIET:
+        if (TCP_Alarm) {
+            doWrite_PLC_BUZZER(SOUND_A);
+            timer.restart();
+            buzzer_status = RINGING_A;
+        }
+        break;
+    case RINGING_A:
+        if (not TCP_Alarm) {
+            doWrite_PLC_BUZZER(SILENCE);
+            buzzer_status = QUIET;
+        } else if (timer.elapsed() > PERIOD_A_ms) {
+            doWrite_PLC_BUZZER(SOUND_B);
+            timer.restart();
+            buzzer_status = RINGING_B;
+        }
+        break;
+    case RINGING_B:
+        if (not TCP_Alarm) {
+            doWrite_PLC_BUZZER(SILENCE);
+            buzzer_status = QUIET;
+        } else if (timer.elapsed() > PERIOD_B_ms) {
+            doWrite_PLC_BUZZER(SOUND_A);
+            timer.restart();
+            buzzer_status = RINGING_A;
+        }
+        break;
+    default:
+        doWrite_PLC_BUZZER(SILENCE);
+        buzzer_status = QUIET;
     }
 }
 
@@ -26,8 +71,8 @@ void loop(void)
 QStringList getTrendList()
 {
     QStringList trendList;
-
     QDir trendsDirectory(trendsPath);
+
     if (trendsDirectory.exists()) {
         trendList = trendsDirectory.entryList(QStringList() << "trend_*.csv", QDir::Files);
         if (trendList.count()) {
@@ -138,38 +183,76 @@ bool setupVars(trendVariable vars[], const QString trendName)
         file.close();
 
         // adjust sizes and show
-        for (int i = 0; i < nVars; ++i) {
-            QString nameFontSize;
-            QString valueFontSize;
+        QString nameFontSize;
+        QString valueFontSize;
+        QScreen *qScreen = QScreen::instance();
+        int width = qScreen->width();
+        int height = qScreen->height();
 
-            switch (nVars) {
-            // 1 2 7
-            // 3 4 8
-            // 5 6 9
-            case 1:
-                nameFontSize = "36pt";      // 1 colonna
-                valueFontSize = "120pt";    // 1 riga
-                break;
-            case 2:
-                nameFontSize = "28pt";      // 2 colonne
-                valueFontSize = "110pt";    // 1 riga
-                break;
-            case 3:
-            case 4:
-                nameFontSize = "28pt";      // 2 colonne
-                valueFontSize = "60pt";     // 2 righe
-                break;
-            case 5:
-            case 6:
-                nameFontSize = "20pt";      // 2 colonne
-                valueFontSize = "60pt";     // 3 righe
-                break;
-            case 7:
-            case 8:
-            case 9:
-                nameFontSize = "20pt";      // 3 colonne
-                valueFontSize = "40pt";     // 3 righe
+        switch (nVars) {
+        //
+        // | 1 . . | 1 . . | 1 3 . | 1 3 . | 1 3 7 |
+        // | . . . | 2 . . | 2 4 . | 2 4 . | 2 4 8 |
+        // | . . . | . . . | . . . | 5 6 . | 5 6 9 |
+        //
+        case 1:
+            // 1 row x 1 column
+            if (width > 272) {
+                nameFontSize = "36pt";
+                valueFontSize = "120pt";
+            } else {
+                nameFontSize = "36pt";
+                valueFontSize = "80pt";
             }
+            break;
+        case 2:
+            // 2 rows x 1 column
+            if (height > 272 and width > 272) {
+                nameFontSize  = "28pt";
+                valueFontSize = "120pt";
+            } else {
+                nameFontSize  = "28pt";
+                valueFontSize = "80pt";
+            }
+            break;
+        case 3:
+        case 4:
+            // 2 rows x 2 columns
+            if (width > 272) {
+                nameFontSize = "28pt";
+                valueFontSize = "60pt";
+            } else {
+                nameFontSize = "20pt";
+                valueFontSize = "40pt";
+            }
+            break;
+        case 5:
+        case 6:
+            // 3 rows x 2 columns
+            if (height > 272 and width > 272) {
+                nameFontSize = "20pt";
+                valueFontSize = "60pt";
+            } else {
+                nameFontSize = "20pt";
+                valueFontSize = "40pt";
+            }
+            break;
+        case 7:
+        case 8:
+        case 9:
+            // 3 rows x 3 columns
+            if (height > 272 and width > 272) {
+                nameFontSize = "20pt";
+                valueFontSize = "40pt";
+            } else if (width > 272) {
+                nameFontSize = "18pt";
+                valueFontSize = "28pt";
+            } else {
+                nameFontSize = "18pt";
+                valueFontSize = "26pt";
+            }
+        }
+        for (int i = 0; i < nVars; ++i) {
             vars[i].labelName->setStyleSheet("color:" + vars[i].color + "; font: " + nameFontSize + " \"DejaVu Sans\";");
             vars[i].labelValue->setStyleSheet("color:" + vars[i].color + "; font: " + valueFontSize + " \"DejaVu Sans\";");
 

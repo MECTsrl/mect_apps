@@ -14,7 +14,8 @@ HEADERS += \
     page100.h \
     page200.h \
     page400.h \
-    page300.h
+    page300.h \
+    trendvartable.h
 
 
 FORMS += \
@@ -29,7 +30,8 @@ SOURCES += \
     page100.cpp \
     page200.cpp \
     page400.cpp \
-    page300.cpp
+    page300.cpp \
+    trendvartable.cpp
 
 
 RESOURCES += \
