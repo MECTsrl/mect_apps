@@ -11,32 +11,50 @@ mkdir -p $mntpoint
 mount -o sync $usbdev $mntpoint
 
 mntdir=$mntpoint/$TARGET
+mkdir -p $mntdir/data
+mkdir -p $mntdir/control
+mkdir -p $mntdir/etc/sysconfig
+mkdir -p $mntdir/root/.ssh
 
-echo "Application mode."
-
-cd /local 2>/dev/null
-
+cd /local
 rm -f data
-test -d $mntdir/data || mkdir -p $mntdir/data
-ln -s $mntdir/data 2>/dev/null
-
 rm -f control
-test -d $mntdir/control || mkdir -p $mntdir/control
-ln -s $mntdir/control control 2>/dev/null
-
-rm -f root
-test -d $mntdir/root || mkdir -p $mntdir/root
-ln -s $mntdir/root root 2>/dev/null
-
-test -x $mntdir/root/fcrts || cp /local/flash/root/fcrts $mntdir/root/fcrts
-
 rm -f etc
-test -d $mntdir/etc || cp -r /local/flash/etc $mntdir/etc
-ln -s $mntdir/etc etc 2>/dev/null
+rm -f root
 
+ln -s $mntdir/data    data
+ln -s $mntdir/control control
+ln -s $mntdir/etc     etc
+ln -s $mntdir/root    root
+
+# empty data
+
+# empty control
+
+# etc
+echo '
+BOOTPROTO0="[none]"
+IPADDR0=192.168.5.211
+NETMASK0=255.255.255.0
+GATEWAY0=192.168.5.10
+NAMESERVER01=8.8.8.8
+NAMESERVER02=8.8.4.4
+' > $mntdir/etc/sysconfig/net.conf
+echo '
+nameserver 8.8.8.8
+nameserver 8.8.4.4
+' > $mntdir/etc/resolv.conf
+echo '
+echo 70 > /sys/devices/platform/mxs-bl.0/backlight/mxs-bl/brightness
+' > $mntdir/etc/sysconfig/brightness
 /etc/rc.d/init.d/network restart
 
-echo "Updated the links."
+# root
+echo 'ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDGeu4dBYgKfVmHgAbWlU4mOmUiWaGWkp1SrhE3C1mtKUk4QR/LcvtSmLAFxxFwgpPwXkcn8OyFRmqUsN/9p1wHeLTTFCPwMuTTbOuU9pYzcaX4DB6xnaKgESILVbOnnQIk9Dri+JdQxEyOf9hOjD50DRZyIfa0T1fA1yg8P5hZAk8IXEFIlqoVt8/SVCcdjsVx/pLMT3u39ZLcJu/y90waer0oblfMsM+21LesztH+UjLgm/Eupy/m5EtyW5HKfYJ7jZD7c0yIg10bQe6lbX1aDGYDsGWsF79o/CG7HqKX6MZbUn/S1hO0aeoxinwr6hbJyexnUx7oB+mXJSfSps61 root@vpndev.vpn-smily.com
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDG1i2RQG1JuB1rV7NewZ5PJjxAryC8/NzQHqhJBgL/vdD/y1nV++wCJzFKV8vQEs4tTP0u0orUUJfnzmY7VKNiC0UKb9XXg8b0hx1EYfEajmNIi2BM8gY0hPGywehPgTUqw21jXtOT9Fg6l/1GsOkfUjnYhLrrIAV4LMxBWO+yJSrBNZdt4D5TKjT77PysrJGi0HpFK66ZxgNnZAJme23pDEuwho8kWK0cTuiqnwjpbDNwZBCgnQb70mDdxVNzyYzXcCzkYeuI/LKMTapjqei8W6nxCmsEJCT7dhPloU5fBpgidFH9HGmFg3H1bJAbgWv/nvS2XF8Xfwp/41VoedgEqnQJjbVHjCewaxlsyCIV/efg0RBYh5pvkaO5uvh/BoBX3FHba4GzNlAuHtfYjm3kynVYmDhKg6Q7aR1GUGQ6nU6aunxRubqwwZyUwt6F0AwLeYN0/VHxiaQ4z8aI9+CdO69HZ79+kNPSfr1tahxsuOtfK6AGak3U9ORtwFDPZKwGN7IS8XX5H7+t0lLX420Gge7JeIOzG2wSgajGFGY0qmwZ2G7uF3H/Z2m62npIQvmVe1mIi7BKPf3bcckHEuyiOJ0vazfXHbwGcgjs1v8s/4cOf++yws8dh1Qsh/NM+I2S3PE3sdXs0+aGOyk7suoZe6vww+/lCLxFieeICN3L4w== jolly_key' > $mntdir/root/.ssh/authorized_keys
+chmod 700 $mntdir/root/.ssh
+chmod 600 mntdir/root/.ssh/authorized_keys
+ln -s /usr/bin/fcrts $mntdir/root/fcrts
 
 killall splash
 /etc/rc.d/init.d/autoexec start >/dev/null 2>&1
