@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 2.7.84, 2021-02-11T15:34:15. -->
+<!-- Written by QtCreator 2.7.84, 2021-02-23T16:17:21. -->
 <qtcreator>
  <data>
   <variable>ProjectExplorer.Project.ActiveTarget</variable>
@@ -196,74 +196,110 @@
       <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
       <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">RemoteLinux.DirectUploadStep</value>
       <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedFiles">
+       <value type="QString">U:/mect_apps/TPAC1007_03/LatencyTest/config/splash.png</value>
        <value type="QString">U:/mect_apps/TPAC1007_04_AD/LatencyTest/config/splash.png</value>
+       <value type="QString">U:/mect_apps/TPAC1007_03/LatencyTest/hmi</value>
        <value type="QString">C:/Users/UserName/Desktop/LatencyTest/config/splash.png</value>
        <value type="QString">C:/Users/UserName/Desktop/LatencyTest/hmi</value>
        <value type="QString">C:/Users/UserName/Desktop/LatencyTest/hmi</value>
+       <value type="QString">U:/mect_apps/TPAC1007_03/LatencyTest/config/Crosstable.csv</value>
        <value type="QString">U:/mect_apps/TPAC1007_04_AD/LatencyTest/hmi</value>
        <value type="QString">U:/mect_apps/TPAC1007_04_AD/LatencyTest/config/system.ini</value>
+       <value type="QString">U:/mect_apps/TPAC1007_03/LatencyTest/config/trend1.csv</value>
        <value type="QString">C:/Users/UserName/Desktop/LatencyTest/config/system.ini</value>
        <value type="QString">U:/mect_apps/TPAC1007_04_AD/LatencyTest/config/splash.png</value>
        <value type="QString">C:/Users/UserName/Desktop/LatencyTest/config/trend1.csv</value>
+       <value type="QString">U:/mect_apps/TPAC1007_03/LatencyTest/hmi</value>
        <value type="QString">C:/Users/UserName/Desktop/LatencyTest/config/system.ini</value>
        <value type="QString">U:/mect_apps/TPAC1007_04_AD/LatencyTest/config/trend2.csv</value>
        <value type="QString">C:/Users/UserName/Desktop/LatencyTest/config/trend1.csv</value>
        <value type="QString">C:/Users/UserName/Desktop/LatencyTest/config/splash.png</value>
        <value type="QString">U:/mect_apps/TPAC1007_04_AD/LatencyTest/config/trend1.csv</value>
        <value type="QString">C:/Users/UserName/Desktop/LatencyTest/config/Crosstable.csv</value>
+       <value type="QString">U:/mect_apps/TPAC1007_03/LatencyTest/config/trend2.csv</value>
        <value type="QString">U:/mect_apps/TPAC1007_04_AD/LatencyTest/config/trend2.csv</value>
        <value type="QString">U:/mect_apps/TPAC1007_04_AD/LatencyTest/config/Crosstable.csv</value>
+       <value type="QString">U:/mect_apps/TPAC1007_03/LatencyTest/config/splash.png</value>
+       <value type="QString">U:/mect_apps/TPAC1007_03/LatencyTest/config/system.ini</value>
        <value type="QString">U:/mect_apps/TPAC1007_04_AD/LatencyTest/config/trend1.csv</value>
        <value type="QString">C:/Users/UserName/Desktop/LatencyTest/config/Crosstable.csv</value>
        <value type="QString">U:/mect_apps/TPAC1007_04_AD/LatencyTest/hmi</value>
+       <value type="QString">U:/mect_apps/TPAC1007_03/LatencyTest/config/trend1.csv</value>
+       <value type="QString">U:/mect_apps/TPAC1007_03/LatencyTest/config/trend2.csv</value>
        <value type="QString">U:/mect_apps/TPAC1007_04_AD/LatencyTest/config/Crosstable.csv</value>
+       <value type="QString">U:/mect_apps/TPAC1007_03/LatencyTest/config/Crosstable.csv</value>
        <value type="QString">U:/mect_apps/TPAC1007_04_AD/LatencyTest/config/system.ini</value>
+       <value type="QString">U:/mect_apps/TPAC1007_03/LatencyTest/config/system.ini</value>
       </valuelist>
       <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedHosts">
+       <value type="QString">192.168.5.34</value>
        <value type="QString">192.168.5.173</value>
+       <value type="QString">192.168.5.33</value>
        <value type="QString">192.168.5.211</value>
        <value type="QString">192.168.5.211</value>
        <value type="QString">192.168.5.173</value>
+       <value type="QString">192.168.5.33</value>
        <value type="QString">192.168.5.174</value>
        <value type="QString">192.168.5.174</value>
+       <value type="QString">192.168.5.33</value>
        <value type="QString">192.168.5.173</value>
        <value type="QString">192.168.5.174</value>
        <value type="QString">192.168.5.173</value>
+       <value type="QString">192.168.5.34</value>
        <value type="QString">192.168.5.211</value>
        <value type="QString">192.168.5.174</value>
        <value type="QString">192.168.5.211</value>
        <value type="QString">192.168.5.173</value>
        <value type="QString">192.168.5.174</value>
        <value type="QString">192.168.5.211</value>
+       <value type="QString">192.168.5.34</value>
        <value type="QString">192.168.5.173</value>
        <value type="QString">192.168.5.174</value>
+       <value type="QString">192.168.5.33</value>
+       <value type="QString">192.168.5.33</value>
        <value type="QString">192.168.5.173</value>
        <value type="QString">192.168.5.173</value>
        <value type="QString">192.168.5.173</value>
+       <value type="QString">192.168.5.34</value>
+       <value type="QString">192.168.5.33</value>
        <value type="QString">192.168.5.173</value>
+       <value type="QString">192.168.5.34</value>
        <value type="QString">192.168.5.173</value>
+       <value type="QString">192.168.5.34</value>
       </valuelist>
       <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedRemotePaths">
        <value type="QString">/local/etc/sysconfig/img</value>
        <value type="QString">/local/etc/sysconfig/img</value>
        <value type="QString">/local/root</value>
+       <value type="QString">/local/etc/sysconfig/img</value>
        <value type="QString">/local/root</value>
        <value type="QString">/local/root</value>
        <value type="QString">/local/etc/sysconfig</value>
+       <value type="QString">/local/root</value>
        <value type="QString">/local/etc/sysconfig</value>
+       <value type="QString">/local/data/customtrend</value>
+       <value type="QString">/local/etc/sysconfig</value>
+       <value type="QString">/local/etc/sysconfig/img</value>
+       <value type="QString">/local/data/customtrend</value>
+       <value type="QString">/local/root</value>
+       <value type="QString">/local/etc/sysconfig</value>
+       <value type="QString">/local/data/customtrend</value>
+       <value type="QString">/local/data/customtrend</value>
        <value type="QString">/local/etc/sysconfig/img</value>
        <value type="QString">/local/data/customtrend</value>
        <value type="QString">/local/etc/sysconfig</value>
        <value type="QString">/local/data/customtrend</value>
        <value type="QString">/local/data/customtrend</value>
-       <value type="QString">/local/etc/sysconfig/img</value>
-       <value type="QString">/local/data/customtrend</value>
        <value type="QString">/local/etc/sysconfig</value>
-       <value type="QString">/local/data/customtrend</value>
+       <value type="QString">/local/etc/sysconfig/img</value>
        <value type="QString">/local/etc/sysconfig</value>
        <value type="QString">/local/data/customtrend</value>
        <value type="QString">/local/etc/sysconfig</value>
        <value type="QString">/local/root</value>
+       <value type="QString">/local/data/customtrend</value>
+       <value type="QString">/local/data/customtrend</value>
+       <value type="QString">/local/etc/sysconfig</value>
+       <value type="QString">/local/etc/sysconfig</value>
        <value type="QString">/local/etc/sysconfig</value>
        <value type="QString">/local/etc/sysconfig</value>
       </valuelist>
@@ -290,30 +326,54 @@
        <value type="QString">C:/Qt485/imx28/rootfs</value>
        <value type="QString">C:/Qt485/imx28/rootfs</value>
        <value type="QString">C:/Qt485/imx28/rootfs</value>
+       <value type="QString">C:/Qt485/imx28/rootfs</value>
+       <value type="QString">C:/Qt485/imx28/rootfs</value>
+       <value type="QString">C:/Qt485/imx28/rootfs</value>
+       <value type="QString">C:/Qt485/imx28/rootfs</value>
+       <value type="QString">C:/Qt485/imx28/rootfs</value>
+       <value type="QString">C:/Qt485/imx28/rootfs</value>
+       <value type="QString">C:/Qt485/imx28/rootfs</value>
+       <value type="QString">C:/Qt485/imx28/rootfs</value>
+       <value type="QString">C:/Qt485/imx28/rootfs</value>
+       <value type="QString">C:/Qt485/imx28/rootfs</value>
+       <value type="QString">C:/Qt485/imx28/rootfs</value>
+       <value type="QString">C:/Qt485/imx28/rootfs</value>
       </valuelist>
       <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedTimes">
-       <value type="QDateTime">2021-02-11T15:33:45</value>
+       <value type="QDateTime">2021-02-23T16:11:19</value>
+       <value type="QDateTime">2021-02-15T17:09:06</value>
+       <value type="QDateTime">2021-02-23T16:11:52</value>
        <value type="QDateTime">2021-02-10T15:21:38</value>
        <value type="QDateTime">2021-02-10T15:21:41</value>
        <value type="QDateTime">2021-02-10T15:20:45</value>
-       <value type="QDateTime">2021-02-11T15:32:05</value>
-       <value type="QDateTime">2021-02-11T15:32:02</value>
+       <value type="QDateTime">2021-02-23T16:11:50</value>
+       <value type="QDateTime">2021-02-15T17:07:39</value>
+       <value type="QDateTime">2021-02-15T17:07:37</value>
+       <value type="QDateTime">2021-02-23T16:11:50</value>
        <value type="QDateTime">2021-02-10T15:20:41</value>
-       <value type="QDateTime">2021-02-11T15:32:02</value>
+       <value type="QDateTime">2021-02-15T17:07:37</value>
        <value type="QDateTime">2021-02-10T15:20:42</value>
+       <value type="QDateTime">2021-02-23T16:11:21</value>
        <value type="QDateTime">2021-02-10T15:21:38</value>
-       <value type="QDateTime">2021-02-11T15:32:03</value>
+       <value type="QDateTime">2021-02-15T17:07:37</value>
        <value type="QDateTime">2021-02-10T15:21:38</value>
        <value type="QDateTime">2021-02-10T15:20:41</value>
-       <value type="QDateTime">2021-02-11T15:32:03</value>
+       <value type="QDateTime">2021-02-15T17:07:37</value>
        <value type="QDateTime">2021-02-10T15:21:37</value>
-       <value type="QDateTime">2021-02-11T15:33:45</value>
-       <value type="QDateTime">2021-02-11T15:32:02</value>
-       <value type="QDateTime">2021-02-11T15:33:45</value>
+       <value type="QDateTime">2021-02-23T16:11:20</value>
+       <value type="QDateTime">2021-02-15T17:09:07</value>
+       <value type="QDateTime">2021-02-15T17:07:36</value>
+       <value type="QDateTime">2021-02-23T16:11:50</value>
+       <value type="QDateTime">2021-02-23T16:11:50</value>
+       <value type="QDateTime">2021-02-15T17:09:07</value>
        <value type="QDateTime">2021-02-10T15:20:41</value>
-       <value type="QDateTime">2021-02-11T15:33:47</value>
-       <value type="QDateTime">2021-02-11T15:33:44</value>
-       <value type="QDateTime">2021-02-11T15:33:44</value>
+       <value type="QDateTime">2021-02-15T17:09:09</value>
+       <value type="QDateTime">2021-02-23T16:11:19</value>
+       <value type="QDateTime">2021-02-23T16:11:51</value>
+       <value type="QDateTime">2021-02-15T17:09:06</value>
+       <value type="QDateTime">2021-02-23T16:11:19</value>
+       <value type="QDateTime">2021-02-15T17:09:06</value>
+       <value type="QDateTime">2021-02-23T16:11:19</value>
       </valuelist>
       <value type="bool" key="RemoteLinux.GenericDirectUploadStep.Incremental">false</value>
      </valuemap>
@@ -365,7 +425,7 @@
     <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">LatencyTest (on Remote Device)</value>
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">RemoteLinuxRunConfiguration:U:/mect_apps/TPAC1007_04_AD/LatencyTest/LatencyTest.pro</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">RemoteLinuxRunConfiguration:U:/mect_apps/TPAC1007_03/LatencyTest/LatencyTest.pro</value>
     <value type="QString" key="Qt4ProjectManager.MaemoRunConfiguration.Arguments"></value>
     <value type="QString" key="Qt4ProjectManager.MaemoRunConfiguration.ProFile">LatencyTest.pro</value>
     <value type="QString" key="RemoteLinux.RunConfig.AlternateRemoteExecutable"></value>

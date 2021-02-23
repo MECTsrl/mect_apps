@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.0" language="en_US">
+<TS version="2.0" language="it_IT">
 <context>
     <name>page100</name>
     <message>
@@ -11,16 +11,20 @@
     <message>
         <location filename="page100.ui" line="100"/>
         <source>Y1=PLC_DigOut_3
-Y2=PLC_AnOut_2</source>
-        <oldsource>Y1=
+Y2=PLC_AnOut_1</source>
+        <oldsource>Y1=PLC_DigOut_3
 Y2=PLC_AnOut_2</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="page100.ui" line="165"/>
+        <location filename="page100.ui" line="284"/>
+        <location filename="page100.ui" line="398"/>
+        <location filename="page100.ui" line="404"/>
         <location filename="page100.ui" line="467"/>
         <location filename="page100.ui" line="473"/>
-        <source>PLC_AnOut_2</source>
+        <source>PLC_AnOut_1</source>
+        <oldsource>PLC_AnOut_2</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -41,13 +45,6 @@ Y2=PLC_AnOut_1</source>
         <location filename="page100.ui" line="536"/>
         <location filename="page100.ui" line="542"/>
         <source>PLC_DigOut_1</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page100.ui" line="284"/>
-        <location filename="page100.ui" line="398"/>
-        <location filename="page100.ui" line="404"/>
-        <source>PLC_AnOut_1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -101,8 +98,8 @@ Y2=PLC_AnOut_1</source>
     </message>
     <message utf8="true">
         <location filename="page100.ui" line="476"/>
-        <source>AI1 → AO2 = </source>
-        <oldsource>AnIn_1 → AnOut_2 = </oldsource>
+        <source>AI1 → AO1 = </source>
+        <oldsource>AI1 → AO2 = </oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -117,6 +114,7 @@ Y2=PLC_AnOut_1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="page100.ui" line="190"/>
         <location filename="page100.ui" line="665"/>
         <location filename="page100.ui" line="677"/>
         <source>Enabled_AnOut</source>
@@ -201,6 +199,7 @@ Y2=PLC_AnOut_1</source>
     </message>
     <message>
         <location filename="page100.ui" line="107"/>
+        <location filename="page100.ui" line="122"/>
         <location filename="page100.ui" line="153"/>
         <location filename="page100.ui" line="226"/>
         <location filename="page100.ui" line="272"/>

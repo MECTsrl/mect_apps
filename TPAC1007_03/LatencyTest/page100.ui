@@ -98,7 +98,7 @@ color: rgb(255, 255, 255);</string>
    </property>
    <property name="toolTip">
     <string>Y1=PLC_DigOut_3
-Y2=PLC_AnOut_2</string>
+Y2=PLC_AnOut_1</string>
    </property>
    <property name="whatsThis">
     <string>ATCMgraph widget</string>
@@ -119,7 +119,7 @@ Y2=PLC_AnOut_2</string>
     <bool>false</bool>
    </property>
    <property name="x1Label">
-    <string/>
+    <string>PLC_time</string>
    </property>
    <property name="y1Variable">
     <string>PLC_DigOut_3</string>
@@ -162,7 +162,7 @@ Y2=PLC_AnOut_2</string>
     <double>1.000000000000000</double>
    </property>
    <property name="y2Variable">
-    <string>PLC_AnOut_2</string>
+    <string>PLC_AnOut_1</string>
    </property>
    <property name="y2Min">
     <string>0</string>
@@ -187,7 +187,7 @@ Y2=PLC_AnOut_2</string>
     </color>
    </property>
    <property name="Display2">
-    <string/>
+    <string>Enabled_AnOut</string>
    </property>
    <property name="bgColor">
     <color>
@@ -464,16 +464,16 @@ Y2=PLC_AnOut_1</string>
     <string>XX.XX</string>
    </property>
    <property name="toolTip">
-    <string>PLC_AnOut_2</string>
+    <string>PLC_AnOut_1</string>
    </property>
    <property name="whatsThis">
     <string>ATCMlabel widget</string>
    </property>
    <property name="variable">
-    <string>PLC_AnOut_2</string>
+    <string>PLC_AnOut_1</string>
    </property>
    <property name="prefix">
-    <string>AI1 → AO2 = </string>
+    <string>AI1 → AO1 = </string>
    </property>
    <property name="suffix">
     <string> [V]</string>

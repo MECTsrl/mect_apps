@@ -26,8 +26,8 @@ file=$(LIBDIR)\ATCM_IEC1131_3.4cl
 file=$(LIBDIR)\ATCM_System.4cl
 
 [Targets]
-file=TPAC.ATHW119
-file=TPAC_BIS.ATHW119
+file=LatencyTest_A.ATHW119
+file=LatencyTest_B.ATHW119
 
 [Compiler.ATHW119]
 opt=bp2

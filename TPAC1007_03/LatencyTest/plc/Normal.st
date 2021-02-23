@@ -22,9 +22,6 @@ end_if;
 if PLC_AnOutConf_1 <> 2 then
 	PLC_AnOutConf_1 := 2;
 end_if;
-if PLC_AnOutConf_2 <> 2 then
-	PLC_AnOutConf_2 := 2;
-end_if;
 
 (* ---- *)
 
@@ -51,9 +48,9 @@ end_if;
 (* --------- signal reaction --------- *)
 (* PLC_DigOut_3 is set in Events.st @ rising/falling events *)
 if Enabled_AnOut then
-	PLC_AnOut_2 := PLC_AnIn_1 / 10;
-elsif PLC_AnOut_2 <> 0 then
-	PLC_AnOut_2 := 0;
+	PLC_AnOut_1 := PLC_AnIn_1 / 10;
+elsif PLC_AnOut_1 <> 0 then
+	PLC_AnOut_1 := 0;
 end_if;
 
 END_PROGRAM
