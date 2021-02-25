@@ -5327,7 +5327,7 @@
 1;P;PLC_AnIn_3                     ;INT      ;3   ;CANOPEN   ;               ;0   ;1   ;11    ;5300;55  ;[RO]Analog input 3 value
 1;P;PLC_AnIn_4                     ;INT      ;3   ;CANOPEN   ;               ;0   ;1   ;12    ;5300;55  ;[RO]Analog input 4 value
 1;P;PLC_EncoderCo_Lo               ;UINT     ;1   ;CANOPEN   ;               ;0   ;1   ;13    ;5300;55  ;[RO]Encoder reading (LOW)
-1;P;PLC_EncoderCo_Hi               ;UINT     ;1   ;CANOPEN   ;               ;0   ;1   ;14    ;5300;55  ;[RO]Encoder reading (HIGH)
+1;P;PLC_EncoderCo_Hi               ;UINT     ;0   ;CANOPEN   ;               ;0   ;1   ;14    ;5300;55  ;[RO]Encoder reading (HIGH)
 1;P;PLC_CaptureT1_Lo               ;UINT     ;0   ;CANOPEN   ;               ;0   ;1   ;15    ;5300;55  ;[RO]Time between 2 input edges (LOW)
 1;P;PLC_CaptureT1_Hi               ;UINT     ;0   ;CANOPEN   ;               ;0   ;1   ;16    ;5300;55  ;[RO]Time between 2 input edges (HIGH)
 1;P;PLC_CaptureT2_Lo               ;UINT     ;0   ;CANOPEN   ;               ;0   ;1   ;17    ;5300;55  ;[RO]Time between 2 input edges (LOW)
@@ -5395,8 +5395,8 @@
 1;P;PLC_EngineStatus               ;UINT     ;0   ;PLC       ;               ;    ;    ;      ;5390;10  ;[RO]PLC status
 1;P;PLC_ResetValues                ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;5390;10  ;[RW]Diagnostic variables reset
 1;P;PLC_buzzerOn                   ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;5390;10  ;[RW]Buzzer sound (enable = 1 disable = 0)
-1;P;PLC_PLC_Version                ;UINT     ;3   ;PLC       ;               ;    ;    ;      ;5390;10  ;[RO]PLC application version
-1;P;PLC_HMI_Version                ;UINT     ;3   ;PLC       ;               ;    ;    ;      ;5390;10  ;[RO]HMI application version
+1;P;PLC_PLC_Version                ;UINT     ;3   ;PLC       ;               ;    ;    ;      ;5390;10  ;[RW]PLC application version
+1;P;PLC_HMI_Version                ;UINT     ;3   ;PLC       ;               ;    ;    ;      ;5390;10  ;[RW]HMI application version
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;

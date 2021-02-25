@@ -5334,7 +5334,7 @@
 1;P;PLC_FirmwareVer                ;UINT     ;0   ;RTU       ;               ;3   ;1   ;15    ;5300;40  ;[RO]Firmware release TPLC050
 1;P;PLC_HWconfig                   ;UINT     ;0   ;RTU       ;               ;3   ;1   ;16    ;5300;40  ;[RO]Firmware release TPLC050
 1;P;PLC_StatusWord                 ;UINT     ;0   ;RTU       ;               ;3   ;1   ;17    ;5300;40  ;[RO]Status word TPLC050
-1;P;PLC_EncoderCounter             ;UDINT    ;0   ;RTU       ;               ;3   ;1   ;18    ;5300;40  ;[RO]
+1;P;PLC_EncoderCounter             ;DINT     ;0   ;RTU       ;               ;3   ;1   ;18    ;5300;40  ;[RO]
 1;P;PLC_EnableEncoder              ;UINT     ;0   ;RTU       ;               ;3   ;1   ;20    ;5300;40  ;[RW]
 1;P;PLC_ResetCounter               ;UDINT    ;0   ;RTU       ;               ;3   ;1   ;21    ;5300;40  ;[RW]
 ;;;;;;;;;;;;

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 2.7.84, 2021-01-29T10:48:50. -->
+<!-- Written by QtCreator 2.7.84, 2021-02-25T11:45:26. -->
 <qtcreator>
  <data>
   <variable>ProjectExplorer.Project.ActiveTarget</variable>
@@ -268,21 +268,21 @@
        <value type="QString">C:/Qt485/imx28/rootfs</value>
       </valuelist>
       <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedTimes">
-       <value type="QDateTime">2021-01-29T10:46:45</value>
+       <value type="QDateTime">2021-02-25T09:46:28</value>
        <value type="QDateTime">2018-07-26T17:01:51</value>
-       <value type="QDateTime">2021-01-29T10:46:47</value>
-       <value type="QDateTime">2021-01-29T10:46:46</value>
-       <value type="QDateTime">2018-07-26T17:01:51</value>
-       <value type="QDateTime">2018-07-26T17:01:51</value>
-       <value type="QDateTime">2021-01-29T10:46:49</value>
+       <value type="QDateTime">2021-02-25T09:46:30</value>
+       <value type="QDateTime">2021-02-25T09:46:29</value>
        <value type="QDateTime">2018-07-26T17:01:51</value>
        <value type="QDateTime">2018-07-26T17:01:51</value>
-       <value type="QDateTime">2021-01-29T10:46:46</value>
-       <value type="QDateTime">2021-01-29T10:46:51</value>
+       <value type="QDateTime">2021-02-25T09:46:32</value>
+       <value type="QDateTime">2018-07-26T17:01:51</value>
+       <value type="QDateTime">2018-07-26T17:01:51</value>
+       <value type="QDateTime">2021-02-25T09:46:29</value>
+       <value type="QDateTime">2021-02-25T09:46:33</value>
        <value type="QDateTime">2018-07-26T17:01:52</value>
-       <value type="QDateTime">2021-01-29T10:46:48</value>
+       <value type="QDateTime">2021-02-25T09:46:31</value>
        <value type="QDateTime">2018-07-26T17:01:51</value>
-       <value type="QDateTime">2021-01-29T10:46:45</value>
+       <value type="QDateTime">2021-02-25T09:46:28</value>
        <value type="QDateTime">2018-07-26T17:01:51</value>
       </valuelist>
       <value type="bool" key="RemoteLinux.GenericDirectUploadStep.Incremental">false</value>

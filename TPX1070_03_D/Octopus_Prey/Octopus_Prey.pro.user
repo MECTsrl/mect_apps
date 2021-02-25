@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 2.7.84, 2021-01-28T09:42:52. -->
+<!-- Written by QtCreator 2.7.84, 2021-02-25T11:53:40. -->
 <qtcreator>
  <data>
   <variable>ProjectExplorer.Project.ActiveTarget</variable>
@@ -381,15 +381,15 @@
        <value type="QDateTime">2021-01-22T11:53:08</value>
        <value type="QDateTime">2021-01-25T15:48:30</value>
        <value type="QDateTime">2021-01-21T14:59:20</value>
-       <value type="QDateTime">2021-01-27T17:53:19</value>
+       <value type="QDateTime">2021-02-25T09:59:31</value>
        <value type="QDateTime">2021-01-21T14:59:17</value>
-       <value type="QDateTime">2021-01-27T17:53:20</value>
+       <value type="QDateTime">2021-02-25T09:59:32</value>
        <value type="QDateTime">2021-01-25T09:28:21</value>
        <value type="QDateTime">2021-01-25T09:28:20</value>
        <value type="QDateTime">2021-01-25T09:28:23</value>
        <value type="QDateTime">2021-01-25T15:48:31</value>
        <value type="QDateTime">2021-01-25T09:28:21</value>
-       <value type="QDateTime">2021-01-27T17:53:23</value>
+       <value type="QDateTime">2021-02-25T09:59:35</value>
        <value type="QDateTime">2018-07-26T17:01:51</value>
        <value type="QDateTime">2021-01-21T14:59:18</value>
        <value type="QDateTime">2018-07-26T17:01:51</value>
@@ -400,8 +400,8 @@
        <value type="QDateTime">2021-01-21T14:59:16</value>
        <value type="QDateTime">2018-07-26T17:01:51</value>
        <value type="QDateTime">2021-01-21T14:59:15</value>
-       <value type="QDateTime">2021-01-27T17:53:20</value>
-       <value type="QDateTime">2021-01-27T17:53:20</value>
+       <value type="QDateTime">2021-02-25T09:59:31</value>
+       <value type="QDateTime">2021-02-25T09:59:32</value>
        <value type="QDateTime">2021-01-22T11:53:08</value>
        <value type="QDateTime">2021-01-25T09:28:20</value>
       </valuelist>
@@ -455,7 +455,7 @@
     <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Octopus_Prey (on Remote Device)</value>
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">RemoteLinuxRunConfiguration:C:/mect_apps/TPX1070_03_D/Octopus_Prey/Octopus_Prey.pro</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">RemoteLinuxRunConfiguration:U:/mect_apps/TPX1070_03_D/Octopus_Prey/Octopus_Prey.pro</value>
     <value type="QString" key="Qt4ProjectManager.MaemoRunConfiguration.Arguments"></value>
     <value type="QString" key="Qt4ProjectManager.MaemoRunConfiguration.ProFile">Octopus_Prey.pro</value>
     <value type="QString" key="RemoteLinux.RunConfig.AlternateRemoteExecutable"></value>

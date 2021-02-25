@@ -606,7 +606,7 @@ VAR_GLOBAL
 	PLC_FirmwareVer AT %IW0.21336:UINT;	(* Firmware release TPLC050 *)
 	PLC_HWconfig AT %IW0.21340:UINT;	(* Firmware release TPLC050 *)
 	PLC_StatusWord AT %IW0.21344:UINT;	(* Status word TPLC050 *)
-	PLC_EncoderCounter AT %ID0.21348:UDINT;
+	PLC_EncoderCounter AT %ID0.21348:DINT;
 	PLC_EnableEncoder AT %QW0.21352:UINT;
 	PLC_ResetCounter AT %QD0.21356:UDINT;
 	PLC_time AT %ID0.21560:REAL;	(* Seconds since boot (reset each 24h) *)
