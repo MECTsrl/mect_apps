@@ -40,18 +40,6 @@ int doWrite_STATUS(u_int16_t value);
 int addWrite_STATUS(u_int16_t value);
 int getStatus_STATUS(void);
 
-#define ID_SquareWave 195
-extern int SquareWave;	/* produce a square wave on DigOut_1 @ 10 ms */
-int doWrite_SquareWave(int value);
-int addWrite_SquareWave(int value);
-int getStatus_SquareWave(void);
-
-#define ID_SquareWaveBeginning 196
-extern int SquareWaveBeginning;
-int doWrite_SquareWaveBeginning(int value);
-int addWrite_SquareWaveBeginning(int value);
-int getStatus_SquareWaveBeginning(void);
-
 #define ID_RTU_HEARTBEAT 200
 extern u_int16_t RTU_HEARTBEAT;
 int doWrite_RTU_HEARTBEAT(u_int16_t value);
@@ -2789,13 +2777,13 @@ int addWrite_PLC_AnIn3Filter(u_int16_t value);
 int getStatus_PLC_AnIn3Filter(void);
 
 #define ID_PLC_Reserved_4 5355
-extern u_int16_t PLC_Reserved_4;	/* Analog input 4 filter */
+extern u_int16_t PLC_Reserved_4;	/* Reserved */
 int doWrite_PLC_Reserved_4(u_int16_t value);
 int addWrite_PLC_Reserved_4(u_int16_t value);
 int getStatus_PLC_Reserved_4(void);
 
 #define ID_PLC_Reserved_5 5356
-extern u_int16_t PLC_Reserved_5;	/* Analog input 5 filter */
+extern u_int16_t PLC_Reserved_5;	/* Reserved */
 int doWrite_PLC_Reserved_5(u_int16_t value);
 int addWrite_PLC_Reserved_5(u_int16_t value);
 int getStatus_PLC_Reserved_5(void);

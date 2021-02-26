@@ -1,5 +1,3 @@
 (* Global variable file *)
 VAR_GLOBAL
-	flip_flop_10ms : bool := false;
-	flip_flop_100ms : bool := false;
 END_VAR

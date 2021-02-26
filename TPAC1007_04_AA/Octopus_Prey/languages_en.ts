@@ -71,7 +71,6 @@
         <location filename="page100.ui" line="3856"/>
         <location filename="page100.ui" line="4024"/>
         <location filename="page100.ui" line="4220"/>
-        <location filename="page100.ui" line="4299"/>
         <source>ATCMbutton widget</source>
         <translation type="unfinished"></translation>
     </message>
@@ -469,18 +468,6 @@
     <message>
         <location filename="page100.ui" line="2262"/>
         <source>Octopus_Prey</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page100.ui" line="4296"/>
-        <location filename="page100.ui" line="4308"/>
-        <source>SquareWave</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page100.ui" line="4334"/>
-        <location filename="page100.ui" line="4337"/>
-        <source>Sq.Wave</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

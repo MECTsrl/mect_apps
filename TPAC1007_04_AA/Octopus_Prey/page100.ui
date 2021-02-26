@@ -1204,7 +1204,7 @@ background-color: rgb(255, 255, 127);
     <rect>
      <x>81</x>
      <y>239</y>
-     <width>80</width>
+     <width>161</width>
      <height>34</height>
     </rect>
    </property>
@@ -4274,78 +4274,6 @@ color: rgb(0, 0, 0);</string>
     <enum>QFrame::Raised</enum>
    </property>
   </widget>
-  <widget class="ATCMbutton" name="atcmButton_PLC_EncoderReset_2">
-   <property name="geometry">
-    <rect>
-     <x>160</x>
-     <y>239</y>
-     <width>81</width>
-     <height>34</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>DejaVu Sans</family>
-     <pointsize>8</pointsize>
-    </font>
-   </property>
-   <property name="checkable">
-    <bool>true</bool>
-   </property>
-   <property name="toolTip">
-    <string>SquareWave</string>
-   </property>
-   <property name="whatsThis">
-    <string>ATCMbutton widget</string>
-   </property>
-   <property name="pageName">
-    <string/>
-   </property>
-   <property name="passwordVar">
-    <string/>
-   </property>
-   <property name="statusvar">
-    <string>SquareWave</string>
-   </property>
-   <property name="viewStatus">
-    <bool>false</bool>
-   </property>
-   <property name="refresh">
-    <number>200</number>
-   </property>
-   <property name="visibilityVar">
-    <string/>
-   </property>
-   <property name="bgColor">
-    <color>
-     <red>255</red>
-     <green>170</green>
-     <blue>255</blue>
-    </color>
-   </property>
-   <property name="bgPressColor">
-    <color>
-     <red>255</red>
-     <green>0</green>
-     <blue>255</blue>
-    </color>
-   </property>
-   <property name="text">
-    <string>Sq.Wave</string>
-   </property>
-   <property name="pressText">
-    <string>Sq.Wave</string>
-   </property>
-   <property name="borderWidth">
-    <number>2</number>
-   </property>
-   <property name="borderRadius">
-    <number>34</number>
-   </property>
-   <property name="apparence">
-    <enum>QFrame::Raised</enum>
-   </property>
-  </widget>
   <zorder>label_PLC_AnIn_2_Filter</zorder>
   <zorder>atcmDate</zorder>
   <zorder>atcmLed_PLC_DigIn_7</zorder>
@@ -4431,7 +4359,6 @@ color: rgb(0, 0, 0);</string>
   <zorder>line_vt_2</zorder>
   <zorder>line_vt_1</zorder>
   <zorder>line_vt_4</zorder>
-  <zorder>atcmButton_PLC_EncoderReset_2</zorder>
  </widget>
  <customwidgets>
   <customwidget>

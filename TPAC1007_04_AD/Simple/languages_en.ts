@@ -255,6 +255,11 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="page100.ui" line="182"/>
+        <source>0x__ad</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="page100.ui" line="641"/>
         <location filename="page100.ui" line="647"/>
         <source>PLC_AnIn2Filter</source>
@@ -351,11 +356,6 @@
         <location filename="page100.ui" line="3789"/>
         <location filename="page100.ui" line="3792"/>
         <source>6</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page100.ui" line="182"/>
-        <source>555</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

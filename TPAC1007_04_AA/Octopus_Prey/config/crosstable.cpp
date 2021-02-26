@@ -35,20 +35,6 @@ u_int16_t STATUS = 0;
 
 
 /*
- * Variable SquareWave	[ produce a square wave on DigOut_1 @ 10 ms ]
- */
-
-int SquareWave = 0;
-
-
-/*
- * Variable SquareWaveBeginning
- */
-
-int SquareWaveBeginning = 0;
-
-
-/*
  * Variable RTU_HEARTBEAT
  */
 
@@ -3241,14 +3227,14 @@ u_int16_t PLC_AnIn3Filter = 0;
 
 
 /*
- * Variable PLC_Reserved_4	[ Analog input 4 filter ]
+ * Variable PLC_Reserved_4	[ Reserved ]
  */
 
 u_int16_t PLC_Reserved_4 = 0;
 
 
 /*
- * Variable PLC_Reserved_5	[ Analog input 5 filter ]
+ * Variable PLC_Reserved_5	[ Reserved ]
  */
 
 u_int16_t PLC_Reserved_5 = 0;
@@ -3458,42 +3444,6 @@ int
 getStatus_STATUS(void)
 {
 	return getStatus(ID_STATUS);
-}
-
-int
-doWrite_SquareWave(int value)
-{
-	return doWrite(ID_SquareWave, &value);
-}
-
-int
-addWrite_SquareWave(int value)
-{
-	return addWrite(ID_SquareWave, &value);
-}
-
-int
-getStatus_SquareWave(void)
-{
-	return getStatus(ID_SquareWave);
-}
-
-int
-doWrite_SquareWaveBeginning(int value)
-{
-	return doWrite(ID_SquareWaveBeginning, &value);
-}
-
-int
-addWrite_SquareWaveBeginning(int value)
-{
-	return addWrite(ID_SquareWaveBeginning, &value);
-}
-
-int
-getStatus_SquareWaveBeginning(void)
-{
-	return getStatus(ID_SquareWaveBeginning);
 }
 
 int
@@ -12233,8 +12183,6 @@ update_all(void)
 	int retval = 0;
 
 	retval += readFromDb(ID_STATUS, &STATUS);
-	retval += readFromDb(ID_SquareWave, &SquareWave);
-	retval += readFromDb(ID_SquareWaveBeginning, &SquareWaveBeginning);
 	retval += readFromDb(ID_RTU_HEARTBEAT, &RTU_HEARTBEAT);
 	retval += readFromDb(ID_RTU_RTU1_WR, &RTU_RTU1_WR);
 	retval += readFromDb(ID_RTU_RTU1_RD, &RTU_RTU1_RD);

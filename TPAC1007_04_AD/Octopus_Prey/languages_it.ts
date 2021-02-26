@@ -391,7 +391,8 @@
     </message>
     <message>
         <location filename="page100.ui" line="2148"/>
-        <source>TZ+DST = N</source>
+        <source>TZ+DST = N h</source>
+        <oldsource>TZ+DST = N</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
