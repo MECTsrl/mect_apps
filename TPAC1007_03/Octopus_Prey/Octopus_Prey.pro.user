@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 2.7.84, 2019-01-31T18:43:07. -->
+<!-- Written by QtCreator 2.7.84, 2021-02-26T15:00:58. -->
 <qtcreator>
  <data>
   <variable>ProjectExplorer.Project.ActiveTarget</variable>
@@ -199,10 +199,20 @@
        <value type="QString">C:/mect_apps/TPAC1007_03/Octopus_Prey/hmi</value>
        <value type="QString">C:/mect_apps/TPAC1007_03/Octopus_Prey/config/Crosstable.csv</value>
        <value type="QString">C:/mect_apps/TPAC1007_03/Octopus_Prey/config/trend1.csv</value>
+       <value type="QString">U:/mect_apps/TPAC1007_03/Octopus_Prey/config/trend1.csv</value>
+       <value type="QString">U:/mect_apps/TPAC1007_03/Octopus_Prey/config/Crosstable.csv</value>
        <value type="QString">C:/mect_apps/TPAC1007_03/Octopus_Prey/config/system.ini</value>
        <value type="QString">C:/mect_apps/TPAC1007_03/Octopus_Prey/config/splash.png</value>
+       <value type="QString">U:/mect_apps/TPAC1007_03/Octopus_Prey/config/splash.png</value>
+       <value type="QString">U:/mect_apps/TPAC1007_03/Octopus_Prey/config/system.ini</value>
+       <value type="QString">U:/mect_apps/TPAC1007_03/Octopus_Prey/hmi</value>
       </valuelist>
       <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedHosts">
+       <value type="QString">192.168.5.211</value>
+       <value type="QString">192.168.5.211</value>
+       <value type="QString">192.168.5.211</value>
+       <value type="QString">192.168.5.211</value>
+       <value type="QString">192.168.5.211</value>
        <value type="QString">192.168.5.211</value>
        <value type="QString">192.168.5.211</value>
        <value type="QString">192.168.5.211</value>
@@ -213,10 +223,20 @@
        <value type="QString">/local/root</value>
        <value type="QString">/local/etc/sysconfig</value>
        <value type="QString">/local/data/customtrend</value>
+       <value type="QString">/local/data/customtrend</value>
+       <value type="QString">/local/etc/sysconfig</value>
        <value type="QString">/local/etc/sysconfig</value>
        <value type="QString">/local/etc/sysconfig/img</value>
+       <value type="QString">/local/etc/sysconfig/img</value>
+       <value type="QString">/local/etc/sysconfig</value>
+       <value type="QString">/local/root</value>
       </valuelist>
       <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedSysroots">
+       <value type="QString">C:/Qt485/imx28/rootfs</value>
+       <value type="QString">C:/Qt485/imx28/rootfs</value>
+       <value type="QString">C:/Qt485/imx28/rootfs</value>
+       <value type="QString">C:/Qt485/imx28/rootfs</value>
+       <value type="QString">C:/Qt485/imx28/rootfs</value>
        <value type="QString">C:/Qt485/imx28/rootfs</value>
        <value type="QString">C:/Qt485/imx28/rootfs</value>
        <value type="QString">C:/Qt485/imx28/rootfs</value>
@@ -227,8 +247,13 @@
        <value type="QDateTime">2018-03-21T09:59:44</value>
        <value type="QDateTime">2018-03-21T09:59:42</value>
        <value type="QDateTime">2018-03-21T09:59:43</value>
+       <value type="QDateTime">2021-02-26T14:58:27</value>
+       <value type="QDateTime">2021-02-26T14:58:26</value>
        <value type="QDateTime">2018-03-21T09:59:42</value>
        <value type="QDateTime">2018-03-21T09:59:42</value>
+       <value type="QDateTime">2021-02-26T14:58:27</value>
+       <value type="QDateTime">2021-02-26T14:58:26</value>
+       <value type="QDateTime">2021-02-26T14:58:30</value>
       </valuelist>
       <value type="bool" key="RemoteLinux.GenericDirectUploadStep.Incremental">false</value>
      </valuemap>
@@ -280,7 +305,7 @@
     <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Octopus_Prey (on Remote Device)</value>
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">RemoteLinuxRunConfiguration:C:/mect_apps/TPAC1007_03/Octopus_Prey/Octopus_Prey.pro</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">RemoteLinuxRunConfiguration:U:/mect_apps/TPAC1007_03/Octopus_Prey/Octopus_Prey.pro</value>
     <value type="QString" key="Qt4ProjectManager.MaemoRunConfiguration.Arguments"></value>
     <value type="QString" key="Qt4ProjectManager.MaemoRunConfiguration.ProFile">Octopus_Prey.pro</value>
     <value type="QString" key="RemoteLinux.RunConfig.AlternateRemoteExecutable"></value>

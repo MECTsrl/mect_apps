@@ -52,19 +52,20 @@ page100::page100(QWidget *parent) :
         ui->comboBox_trend->blockSignals(true);
         ui->comboBox_trend->addItems(trendList);
         ui->comboBox_trend->blockSignals(false);
-
-        // eventuale recupero ultima selezione dalle ritentive
-        if (SelezioneTrend < 0 || SelezioneTrend >= ui->comboBox_trend->count()) {
-            ui->comboBox_trend->setCurrentIndex(0);
-            doWrite_SelezioneTrend(0);
-        } else {
-            ui->comboBox_trend->setCurrentIndex(SelezioneTrend);
-        }
     }
 }
 
 void page100::reload()
-{
+{    
+    // eventuale recupero ultima selezione dalle ritentive
+    if (SelezioneTrend < 0 || SelezioneTrend >= ui->comboBox_trend->count()) {
+        ui->comboBox_trend->setCurrentIndex(0);
+        doWrite_SelezioneTrend(0);
+    } else if (SelezioneTrend != ui->comboBox_trend->currentIndex()) {
+        ui->comboBox_trend->setCurrentIndex(SelezioneTrend);
+    } else {
+        on_comboBox_trend_currentIndexChanged(ui->comboBox_trend->currentText());
+    }
 }
 
 void page100::updateData()
