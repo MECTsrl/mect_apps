@@ -5395,8 +5395,8 @@
 1;P;PLC_EngineStatus               ;UINT     ;0   ;PLC       ;               ;    ;    ;      ;5390;10  ;[RO]PLC status
 1;P;PLC_ResetValues                ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;5390;10  ;[RW]Diagnostic variables reset
 1;P;PLC_buzzerOn                   ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;5390;10  ;[RW]Buzzer sound (enable = 1 disable = 0)
-1;P;PLC_PLC_Version                ;UINT     ;3   ;PLC       ;               ;    ;    ;      ;5390;10  ;[RO]PLC application version
-1;P;PLC_HMI_Version                ;UINT     ;3   ;PLC       ;               ;    ;    ;      ;5390;10  ;[RO]HMI application version
+1;P;PLC_PLC_Version                ;UINT     ;3   ;PLC       ;               ;    ;    ;      ;5390;10  ;[RW]PLC application version
+1;P;PLC_HMI_Version                ;UINT     ;3   ;PLC       ;               ;    ;    ;      ;5390;10  ;[RW]HMI application version
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;

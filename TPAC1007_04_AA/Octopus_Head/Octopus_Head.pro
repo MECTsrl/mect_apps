@@ -57,8 +57,6 @@ RESOURCES += \
 OTHER_FILES += \
     recipes/TP1043_01_A/1.csv \
     recipes/TP1043_01_A/2.csv \
-    recipes/TP1043_01_B/1.csv \
-    recipes/TP1043_01_B/2.csv \
     recipes/TP1043_02_A/1.csv \
     recipes/TP1043_02_A/2.csv \
     recipes/TP1043_02_B/1.csv \
@@ -115,9 +113,6 @@ OTHER_FILES += \
 
 recipes_TP1043_01_A.files = recipes/TP1043_01_A/1.csv recipes/TP1043_01_A/2.csv
 recipes_TP1043_01_A.path = /local/data/recipe/TP1043_01_A
-
-recipes_TP1043_01_B.files = recipes/TP1043_01_B/1.csv recipes/TP1043_01_B/2.csv
-recipes_TP1043_01_B.path = /local/data/recipe/TP1043_01_B
 
 recipes_TP1043_02_A.files = recipes/TP1043_02_A/1.csv recipes/TP1043_02_A/2.csv
 recipes_TP1043_02_A.path = /local/data/recipe/TP1043_02_A
@@ -199,7 +194,6 @@ recipes_Zeroes.path = /local/data/recipe/Zeroes
 
 INSTALLS += \
     recipes_TP1043_01_A \
-    recipes_TP1043_01_B \
     recipes_TP1043_02_A \
     recipes_TP1043_02_B \
     recipes_TP1070_01_A \
