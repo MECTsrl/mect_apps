@@ -190,12 +190,12 @@
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
+1;P;Usb0_Status                    ;INT      ;0   ;PLC       ;               ;    ;    ;      ;193 ;6   ;[RW]Stato Porta USB 0
+1;P;Usb1_Status                    ;INT      ;0   ;PLC       ;               ;    ;    ;      ;193 ;6   ;[RW]Stato Porta USB 1
+1;P;SDCard_Status                  ;INT      ;0   ;PLC       ;               ;    ;    ;      ;193 ;6   ;[RW]Stato SD Card
+1;P;Buzzer_Repeat                  ;BYTE     ;0   ;PLC       ;               ;    ;    ;      ;193 ;6   ;[RO]Numero_Ripetizioni
+1;P;Buzzer_Off_Time                ;BYTE     ;0   ;PLC       ;               ;    ;    ;      ;193 ;6   ;[RW]Buzzer off time in 0.01 sec
+1;P;Buzzer_On_Time                 ;BYTE     ;0   ;PLC       ;               ;    ;    ;      ;193 ;6   ;[RW]Buzzer on time in 0.01 sec
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;

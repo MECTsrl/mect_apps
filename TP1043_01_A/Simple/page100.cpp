@@ -14,6 +14,8 @@
 #include "ui_page100.h"
 #include "crosstable.h"
 
+#include "ntpclient.h"
+
 /**
  * @brief this macro is used to set the PAGE100 style.
  * the syntax is html stylesheet-like
@@ -57,6 +59,8 @@ void page100::reload()
        alarm banner initialization in QLineEdit:
          rotateShowError(ui->myLineEdit, ERROR_LABEL_PERIOD_MS);
      */
+    ui->label_TzDst->setText(QString("TZ+DST = %1").arg(ntpclient->getOffset_h()));
+
 }
 
 /**

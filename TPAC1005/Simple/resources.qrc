@@ -1,5 +1,9 @@
 <RCC>
-    <qresource prefix="/icons"/>
+    <qresource prefix="/icons">
+        <file>icons/led_off.png</file>
+        <file>icons/led_on.png</file>
+        <file>icons/led_pressed.png</file>
+        <file>icons/led_unk.png</file>
+    </qresource>
     <qresource prefix="/fonts"/>
 </RCC>
-

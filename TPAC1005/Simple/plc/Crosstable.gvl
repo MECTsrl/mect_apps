@@ -1,4 +1,10 @@
 VAR_GLOBAL
+	Usb0_Status AT %QW0.772:INT;	(* Stato Porta USB 0 *)
+	Usb1_Status AT %QW0.776:INT;	(* Stato Porta USB 1 *)
+	SDCard_Status AT %QW0.780:INT;	(* Stato SD Card *)
+	Buzzer_Repeat AT %IB0.784:BYTE;	(* Numero_Ripetizioni *)
+	Buzzer_Off_Time AT %QB0.788:BYTE;	(* Buzzer off time in 0.01 sec *)
+	Buzzer_On_Time AT %QB0.792:BYTE;	(* Buzzer on time in 0.01 sec *)
 	RTU0_TYPE_PORT AT %ID0.20000:UDINT;
 	RTU0_BAUDRATE AT %ID0.20004:UDINT;
 	RTU0_STATUS AT %ID0.20008:UDINT;
