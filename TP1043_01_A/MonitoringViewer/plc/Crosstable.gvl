@@ -151,6 +151,15 @@ VAR_GLOBAL
 	TCP_OK_DigIn_B_15 AT %QX0.4580.0:BOOL;
 	TCP_OK_DigIn_B_16 AT %QX0.4584.0:BOOL;
 	TCP_AlarmStatus AT %QW0.4588:UINT;
+	TCP_U AT %QW0.8004:UINT;	(* URMS phase 1 *)
+	TCP_I AT %QW0.8008:UINT;	(* IRMS phase 1 *)
+	TCP_P AT %QW0.8012:UINT;	(* PRMS phase 1 *)
+	TCP_Q AT %QW0.8016:INT;	(* QRMS phase 1 *)
+	TCP_C AT %QW0.8020:INT;	(* cos phi phase 1 *)
+	TCP_Pmax AT %QW0.8024:UINT;	(* PRMS phase 1 (max) *)
+	TCP_Ttotal AT %QD0.8028:UDINT;	(* WT1 totale Contatore energia Totale Tariffa 1 *)
+	TCP_Tpart AT %QD0.8032:UDINT;	(* WT1 parziale Contatore energia Parziale Tariffa 1 *)
+	TCP_UPTIME_s AT %QD0.8036:UDINT;
 	RTU0_TYPE_PORT AT %ID0.20000:UDINT;
 	RTU0_BAUDRATE AT %ID0.20004:UDINT;
 	RTU0_STATUS AT %ID0.20008:UDINT;

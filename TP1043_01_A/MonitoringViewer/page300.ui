@@ -1438,44 +1438,24 @@ background-color: rgb(0, 0, 0);
    </item>
   </layout>
   <zorder>atcmLabel_W06</zorder>
-  <zorder>atcmLabel_A2_2</zorder>
-  <zorder>atcmLabel_B2_2</zorder>
   <zorder>atcmLabel_W00</zorder>
   <zorder>atcmTime</zorder>
-  <zorder>atcmLabel_C3_4</zorder>
   <zorder>atcmDate</zorder>
   <zorder>atcmLabel_W05</zorder>
-  <zorder>atcmLabel_B1_2</zorder>
   <zorder>atcmLabel_W01</zorder>
-  <zorder>atcmLabel_A3_2</zorder>
-  <zorder>atcmLabel_A4_2</zorder>
   <zorder>atcmLabel_W07</zorder>
   <zorder>atcmLabel_W10</zorder>
-  <zorder>atcmLabel_C2_3</zorder>
-  <zorder>atcmLabel_C3_3</zorder>
   <zorder>atcmButton_menu</zorder>
   <zorder>atcmLabel_W09</zorder>
-  <zorder>atcmLabel_C2_4</zorder>
-  <zorder>atcmLabel_B4_2</zorder>
   <zorder>atcmLabel_W02</zorder>
-  <zorder>atcmLabel_C4_2</zorder>
   <zorder>atcmLabel_W03</zorder>
-  <zorder>atcmButton_Heating_2</zorder>
-  <zorder>atcmLabel_C1_2</zorder>
   <zorder>atcmLabel_W08</zorder>
   <zorder>atcmLabel_W04</zorder>
-  <zorder>atcmComboBox_AlarmConfig_3</zorder>
-  <zorder>atcmLabel_A1_2</zorder>
-  <zorder>atcmLabel_B3_2</zorder>
   <zorder>atcmLabel_W11</zorder>
-  <zorder>atcmLed_DigIn_TA_Pterra_2</zorder>
-  <zorder>atcmLed_DigIn_TA_Puffer_2</zorder>
   <zorder>atcmLed_DigIn_4</zorder>
   <zorder>atcmLed_caldaia_5</zorder>
-  <zorder>atcmLed_DigIn_TA_Psopra_2</zorder>
   <zorder>atcmLed_DigIn_3</zorder>
   <zorder>atcmLed_DigIn_2</zorder>
-  <zorder>atcmLed_DigIn_TA_Psotto_2</zorder>
   <zorder>atcmLed_DigIn_1</zorder>
  </widget>
  <customwidgets>

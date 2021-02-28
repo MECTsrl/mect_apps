@@ -1092,6 +1092,69 @@ u_int16_t TCP_AlarmStatus = 0;
 
 
 /*
+ * Variable TCP_U	[ URMS phase 1 ]
+ */
+
+u_int16_t TCP_U = 0;
+
+
+/*
+ * Variable TCP_I	[ IRMS phase 1 ]
+ */
+
+u_int16_t TCP_I = 0;
+
+
+/*
+ * Variable TCP_P	[ PRMS phase 1 ]
+ */
+
+u_int16_t TCP_P = 0;
+
+
+/*
+ * Variable TCP_Q	[ QRMS phase 1 ]
+ */
+
+int16_t TCP_Q = 0;
+
+
+/*
+ * Variable TCP_C	[ cos phi phase 1 ]
+ */
+
+int16_t TCP_C = 0;
+
+
+/*
+ * Variable TCP_Pmax	[ PRMS phase 1 (max) ]
+ */
+
+u_int16_t TCP_Pmax = 0;
+
+
+/*
+ * Variable TCP_Ttotal	[ WT1 totale Contatore energia Totale Tariffa 1 ]
+ */
+
+u_int32_t TCP_Ttotal = 0;
+
+
+/*
+ * Variable TCP_Tpart	[ WT1 parziale Contatore energia Parziale Tariffa 1 ]
+ */
+
+u_int32_t TCP_Tpart = 0;
+
+
+/*
+ * Variable TCP_UPTIME_s
+ */
+
+u_int32_t TCP_UPTIME_s = 0;
+
+
+/*
  * Variable RTU0_TYPE_PORT
  */
 
@@ -5150,6 +5213,168 @@ getStatus_TCP_AlarmStatus(void)
 }
 
 int
+doWrite_TCP_U(u_int16_t value)
+{
+	return doWrite(ID_TCP_U, &value);
+}
+
+int
+addWrite_TCP_U(u_int16_t value)
+{
+	return addWrite(ID_TCP_U, &value);
+}
+
+int
+getStatus_TCP_U(void)
+{
+	return getStatus(ID_TCP_U);
+}
+
+int
+doWrite_TCP_I(u_int16_t value)
+{
+	return doWrite(ID_TCP_I, &value);
+}
+
+int
+addWrite_TCP_I(u_int16_t value)
+{
+	return addWrite(ID_TCP_I, &value);
+}
+
+int
+getStatus_TCP_I(void)
+{
+	return getStatus(ID_TCP_I);
+}
+
+int
+doWrite_TCP_P(u_int16_t value)
+{
+	return doWrite(ID_TCP_P, &value);
+}
+
+int
+addWrite_TCP_P(u_int16_t value)
+{
+	return addWrite(ID_TCP_P, &value);
+}
+
+int
+getStatus_TCP_P(void)
+{
+	return getStatus(ID_TCP_P);
+}
+
+int
+doWrite_TCP_Q(int16_t value)
+{
+	return doWrite(ID_TCP_Q, &value);
+}
+
+int
+addWrite_TCP_Q(int16_t value)
+{
+	return addWrite(ID_TCP_Q, &value);
+}
+
+int
+getStatus_TCP_Q(void)
+{
+	return getStatus(ID_TCP_Q);
+}
+
+int
+doWrite_TCP_C(int16_t value)
+{
+	return doWrite(ID_TCP_C, &value);
+}
+
+int
+addWrite_TCP_C(int16_t value)
+{
+	return addWrite(ID_TCP_C, &value);
+}
+
+int
+getStatus_TCP_C(void)
+{
+	return getStatus(ID_TCP_C);
+}
+
+int
+doWrite_TCP_Pmax(u_int16_t value)
+{
+	return doWrite(ID_TCP_Pmax, &value);
+}
+
+int
+addWrite_TCP_Pmax(u_int16_t value)
+{
+	return addWrite(ID_TCP_Pmax, &value);
+}
+
+int
+getStatus_TCP_Pmax(void)
+{
+	return getStatus(ID_TCP_Pmax);
+}
+
+int
+doWrite_TCP_Ttotal(u_int32_t value)
+{
+	return doWrite(ID_TCP_Ttotal, &value);
+}
+
+int
+addWrite_TCP_Ttotal(u_int32_t value)
+{
+	return addWrite(ID_TCP_Ttotal, &value);
+}
+
+int
+getStatus_TCP_Ttotal(void)
+{
+	return getStatus(ID_TCP_Ttotal);
+}
+
+int
+doWrite_TCP_Tpart(u_int32_t value)
+{
+	return doWrite(ID_TCP_Tpart, &value);
+}
+
+int
+addWrite_TCP_Tpart(u_int32_t value)
+{
+	return addWrite(ID_TCP_Tpart, &value);
+}
+
+int
+getStatus_TCP_Tpart(void)
+{
+	return getStatus(ID_TCP_Tpart);
+}
+
+int
+doWrite_TCP_UPTIME_s(u_int32_t value)
+{
+	return doWrite(ID_TCP_UPTIME_s, &value);
+}
+
+int
+addWrite_TCP_UPTIME_s(u_int32_t value)
+{
+	return addWrite(ID_TCP_UPTIME_s, &value);
+}
+
+int
+getStatus_TCP_UPTIME_s(void)
+{
+	return getStatus(ID_TCP_UPTIME_s);
+}
+
+int
 doWrite_RTU0_TYPE_PORT(u_int32_t value)
 {
 	return doWrite(ID_RTU0_TYPE_PORT, &value);
@@ -8709,6 +8934,15 @@ update_all(void)
 	retval += readFromDb(ID_TCP_OK_DigIn_B_15, &TCP_OK_DigIn_B_15);
 	retval += readFromDb(ID_TCP_OK_DigIn_B_16, &TCP_OK_DigIn_B_16);
 	retval += readFromDb(ID_TCP_AlarmStatus, &TCP_AlarmStatus);
+	retval += readFromDb(ID_TCP_U, &TCP_U);
+	retval += readFromDb(ID_TCP_I, &TCP_I);
+	retval += readFromDb(ID_TCP_P, &TCP_P);
+	retval += readFromDb(ID_TCP_Q, &TCP_Q);
+	retval += readFromDb(ID_TCP_C, &TCP_C);
+	retval += readFromDb(ID_TCP_Pmax, &TCP_Pmax);
+	retval += readFromDb(ID_TCP_Ttotal, &TCP_Ttotal);
+	retval += readFromDb(ID_TCP_Tpart, &TCP_Tpart);
+	retval += readFromDb(ID_TCP_UPTIME_s, &TCP_UPTIME_s);
 	retval += readFromDb(ID_RTU0_TYPE_PORT, &RTU0_TYPE_PORT);
 	retval += readFromDb(ID_RTU0_BAUDRATE, &RTU0_BAUDRATE);
 	retval += readFromDb(ID_RTU0_STATUS, &RTU0_STATUS);

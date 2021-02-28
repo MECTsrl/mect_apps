@@ -946,6 +946,60 @@ int doWrite_TCP_AlarmStatus(u_int16_t value);
 int addWrite_TCP_AlarmStatus(u_int16_t value);
 int getStatus_TCP_AlarmStatus(void);
 
+#define ID_TCP_U 2001
+extern u_int16_t TCP_U;	/* URMS phase 1 */
+int doWrite_TCP_U(u_int16_t value);
+int addWrite_TCP_U(u_int16_t value);
+int getStatus_TCP_U(void);
+
+#define ID_TCP_I 2002
+extern u_int16_t TCP_I;	/* IRMS phase 1 */
+int doWrite_TCP_I(u_int16_t value);
+int addWrite_TCP_I(u_int16_t value);
+int getStatus_TCP_I(void);
+
+#define ID_TCP_P 2003
+extern u_int16_t TCP_P;	/* PRMS phase 1 */
+int doWrite_TCP_P(u_int16_t value);
+int addWrite_TCP_P(u_int16_t value);
+int getStatus_TCP_P(void);
+
+#define ID_TCP_Q 2004
+extern int16_t TCP_Q;	/* QRMS phase 1 */
+int doWrite_TCP_Q(int16_t value);
+int addWrite_TCP_Q(int16_t value);
+int getStatus_TCP_Q(void);
+
+#define ID_TCP_C 2005
+extern int16_t TCP_C;	/* cos phi phase 1 */
+int doWrite_TCP_C(int16_t value);
+int addWrite_TCP_C(int16_t value);
+int getStatus_TCP_C(void);
+
+#define ID_TCP_Pmax 2006
+extern u_int16_t TCP_Pmax;	/* PRMS phase 1 (max) */
+int doWrite_TCP_Pmax(u_int16_t value);
+int addWrite_TCP_Pmax(u_int16_t value);
+int getStatus_TCP_Pmax(void);
+
+#define ID_TCP_Ttotal 2007
+extern u_int32_t TCP_Ttotal;	/* WT1 totale Contatore energia Totale Tariffa 1 */
+int doWrite_TCP_Ttotal(u_int32_t value);
+int addWrite_TCP_Ttotal(u_int32_t value);
+int getStatus_TCP_Ttotal(void);
+
+#define ID_TCP_Tpart 2008
+extern u_int32_t TCP_Tpart;	/* WT1 parziale Contatore energia Parziale Tariffa 1 */
+int doWrite_TCP_Tpart(u_int32_t value);
+int addWrite_TCP_Tpart(u_int32_t value);
+int getStatus_TCP_Tpart(void);
+
+#define ID_TCP_UPTIME_s 2009
+extern u_int32_t TCP_UPTIME_s;
+int doWrite_TCP_UPTIME_s(u_int32_t value);
+int addWrite_TCP_UPTIME_s(u_int32_t value);
+int getStatus_TCP_UPTIME_s(void);
+
 #define ID_RTU0_TYPE_PORT 5000
 extern u_int32_t RTU0_TYPE_PORT;
 int doWrite_RTU0_TYPE_PORT(u_int32_t value);

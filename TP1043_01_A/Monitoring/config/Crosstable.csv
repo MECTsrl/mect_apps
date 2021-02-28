@@ -998,15 +998,15 @@
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
+3;P;TCP_U                          ;UINT     ;0   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;1     ;1001;9   ;[RW]URMS phase 1
+3;P;TCP_I                          ;UINT     ;1   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;2     ;1001;9   ;[RW]IRMS phase 1
+3;P;TCP_P                          ;UINT     ;2   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;3     ;1001;9   ;[RW]PRMS phase 1
+3;P;TCP_Q                          ;INT      ;2   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;4     ;1001;9   ;[RW]QRMS phase 1
+3;P;TCP_C                          ;INT      ;2   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;5     ;1001;9   ;[RW]cos phi phase 1
+3;P;TCP_Pmax                       ;UINT     ;2   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;6     ;1001;9   ;[RW]PRMS phase 1 (max)
+3;P;TCP_Ttotal                     ;UDINTCDAB;2   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;7     ;1001;9   ;[RW]WT1 totale Contatore energia Totale Tariffa 1
+3;P;TCP_Tpart                      ;UDINTCDAB;2   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;9     ;1001;9   ;[RW]WT1 parziale Contatore energia Parziale Tariffa 1
+3;P;TCP_UPTIME_s                   ;UDINT    ;0   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;11    ;1001;9   ;[RW]
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
@@ -5407,19 +5407,19 @@
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
-1;P;PLC_Year                       ;UINT     ;0   ;PLC       ;               ;    ;    ;      ;5410;6   ;[RO]Currently year
-1;P;PLC_Month                      ;UINT     ;0   ;PLC       ;               ;    ;    ;      ;5410;6   ;[RO]Currently month
-1;P;PLC_Day                        ;UINT     ;0   ;PLC       ;               ;    ;    ;      ;5410;6   ;[RO]Currently day
-1;P;PLC_Hours                      ;UINT     ;0   ;PLC       ;               ;    ;    ;      ;5410;6   ;[RO]Currently hour
-1;P;PLC_Minutes                    ;UINT     ;0   ;PLC       ;               ;    ;    ;      ;5410;6   ;[RO]Currently minutes
-1;P;PLC_Seconds                    ;UINT     ;0   ;PLC       ;               ;    ;    ;      ;5410;6   ;[RO]Currently seconds
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-1;P;PLC_WATCHDOGEN                 ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;5418;2   ;[RW]Enable Watchdog
-1;P;PLC_WATCHDOG_ms                ;UDINT    ;0   ;PLC       ;               ;    ;    ;      ;5418;2   ;[RW]Reset Watchdog timer
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
+1;P;PLC_Year                       ;UINT     ;0   ;PLC       ;               ;    ;    ;      ;5410;13  ;[RO]Currently year
+1;P;PLC_Month                      ;UINT     ;0   ;PLC       ;               ;    ;    ;      ;5410;13  ;[RO]Currently month
+1;P;PLC_Day                        ;UINT     ;0   ;PLC       ;               ;    ;    ;      ;5410;13  ;[RO]Currently day
+1;P;PLC_Hours                      ;UINT     ;0   ;PLC       ;               ;    ;    ;      ;5410;13  ;[RO]Currently hour
+1;P;PLC_Minutes                    ;UINT     ;0   ;PLC       ;               ;    ;    ;      ;5410;13  ;[RO]Currently minutes
+1;P;PLC_Seconds                    ;UINT     ;0   ;PLC       ;               ;    ;    ;      ;5410;13  ;[RO]Currently seconds
+1;P;PLC_UPTIME_s                   ;UDINT    ;0   ;PLC       ;               ;    ;    ;      ;5410;13  ;[RO]Uptime in seconds (wraps in 136 years)
+1;P;PLC_UPTIME_cs                  ;UDINT    ;0   ;PLC       ;               ;    ;    ;      ;5410;13  ;[RO]Uptime in centiseconds = 10 ms (wraps in 497 days)
+1;P;PLC_WATCHDOGEN                 ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;5410;13  ;[RW]Enable Watchdog
+1;P;PLC_WATCHDOG_ms                ;UDINT    ;0   ;PLC       ;               ;    ;    ;      ;5410;13  ;[RW]Reset Watchdog timer
+1;P;PLC_PRODUCT_ID                 ;UDINT    ;0   ;PLC       ;               ;    ;    ;      ;5410;13  ;[RO]TP/TPAC/TPLC Product ID (Hex)
+1;P;PLC_SERIAL_NUMBER              ;UDINT    ;0   ;PLC       ;               ;    ;    ;      ;5410;13  ;[RO]TP/TPAC/TPLC Serial Number
+1;P;PLC_HMI_PAGE                   ;DINT     ;0   ;PLC       ;               ;    ;    ;      ;5410;13  ;[RW]HMI Page (page100=0x00000100)
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
