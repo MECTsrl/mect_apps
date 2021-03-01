@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 2.7.84, 2021-02-26T14:56:07. -->
+<!-- Written by QtCreator 2.7.84, 2021-03-01T17:43:13. -->
 <qtcreator>
  <data>
   <variable>ProjectExplorer.Project.ActiveTarget</variable>
@@ -199,9 +199,9 @@
        <value type="QString">C:/mect_apps/TPAC1005/Simple/config/splash.png</value>
        <value type="QString">C:/mect_apps/TPAC1005/Simple/config/Crosstable.csv</value>
        <value type="QString">C:/mect_apps/TPAC1005/Simple/config/system.ini</value>
+       <value type="QString">C:/mect_apps/TPAC1005/Simple/config/splash.png</value>
        <value type="QString">C:/mect_apps/TPAC1005/Simple/hmi</value>
        <value type="QString">C:/mect_apps/TPAC1005/Simple/config/system.ini</value>
-       <value type="QString">C:/mect_apps/TPAC1005/Simple/config/splash.png</value>
        <value type="QString">C:/mect_apps/TPAC1005/Simple/config/trend1.csv</value>
        <value type="QString">C:/mect_apps/TPAC1005/Simple/config/Crosstable.csv</value>
        <value type="QString">C:/mect_apps/TPAC1005/Simple/config/system.ini</value>
@@ -221,9 +221,9 @@
        <value type="QString">192.168.5.204</value>
        <value type="QString">192.168.5.57</value>
        <value type="QString">192.168.5.211</value>
-       <value type="QString">192.168.5.206</value>
-       <value type="QString">192.168.5.206</value>
        <value type="QString">192.168.5.57</value>
+       <value type="QString">192.168.5.206</value>
+       <value type="QString">192.168.5.206</value>
        <value type="QString">192.168.5.211</value>
        <value type="QString">192.168.5.206</value>
        <value type="QString">192.168.5.57</value>
@@ -243,9 +243,9 @@
        <value type="QString">/local/etc/sysconfig/img</value>
        <value type="QString">/local/etc/sysconfig</value>
        <value type="QString">/local/etc/sysconfig</value>
+       <value type="QString">/local/etc/sysconfig/img</value>
        <value type="QString">/local/root</value>
        <value type="QString">/local/etc/sysconfig</value>
-       <value type="QString">/local/etc/sysconfig/img</value>
        <value type="QString">/local/data/customtrend</value>
        <value type="QString">/local/etc/sysconfig</value>
        <value type="QString">/local/etc/sysconfig</value>
@@ -287,9 +287,9 @@
        <value type="QDateTime">2017-10-06T09:24:21</value>
        <value type="QDateTime">2021-02-26T14:55:37</value>
        <value type="QDateTime">2019-02-14T14:28:20</value>
+       <value type="QDateTime">2021-02-26T14:55:37</value>
        <value type="QDateTime">2019-02-14T15:38:19</value>
        <value type="QDateTime">2019-02-14T15:38:18</value>
-       <value type="QDateTime">2021-02-26T14:55:37</value>
        <value type="QDateTime">2019-02-14T14:28:20</value>
        <value type="QDateTime">2019-02-14T15:38:18</value>
        <value type="QDateTime">2021-02-26T14:55:37</value>

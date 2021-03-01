@@ -68,7 +68,7 @@ void page100::reload()
        alarm banner initialization in QLineEdit:
          rotateShowError(ui->myLineEdit, ERROR_LABEL_PERIOD_MS);
      */
-    QString szUndef = "border-image: url(\":/icons/icons/led_unk.png\");";
+    QString szUndef = "border-image: url(\":/systemicons/LedGray.png\");";
     ui->labelImg_01->setStyleSheet(szUndef);
     ui->labelImg_02->setStyleSheet(szUndef);
     ui->labelImg_03->setStyleSheet(szUndef);
@@ -162,7 +162,7 @@ void page100::sendhwKeyReleased(int nKey)
 void page100::KeyPressed(int nKey)
 {
 
-    QString szPressed = "border-image: url(\":/icons/icons/led_pressed.png\");";
+    QString szPressed = "border-image: url(\":/systemicons/LedYellow.png\");";
     if (this->isVisible())  {
         switch (nKey) {
         case 1:
@@ -206,10 +206,10 @@ void page100::KeyReleased(int nKey)
     if (this->isVisible() && nKey > 0 && nKey < nKEYS)  {
         nKeysStatus[nKey] = ! nKeysStatus[nKey];
         if (nKeysStatus[nKey])  {
-            szReleased = "border-image: url(\":/icons/icons/led_on.png\");";
+            szReleased = "border-image: url(\":/systemicons/LedOn.png\");";
         }
         else  {
-            szReleased = "border-image: url(\":/icons/icons/led_off.png\");";
+            szReleased = "border-image: url(\":/systemicons/LedOff.png\");";
         }
         switch (nKey) {
         case 1:
