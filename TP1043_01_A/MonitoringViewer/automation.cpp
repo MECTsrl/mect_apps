@@ -267,21 +267,30 @@ bool setupVars(trendVariable vars[], const QString trendName)
 
 void updateVars(trendVariable vars[])
 {
+    int ivalue;
+    char svalue[44] = "";
+    char buf[42] = "";
+
     for (int i = 0; i < MAX_VARS; ++i) {
         register unsigned id = vars[i].id;
+
         if (id && vars[i].labelValue) {
-            int ivalue;
             register char status = readFromDbQuick(id, &ivalue);
-            char svalue[42] = "";
 
             switch (status) {
-            case DONE:
-            case BUSY: {
+            case DONE: {
                 register int decimal = getVarDecimalByCtIndex(id);
+
                 sprintf_fromValue(svalue, id, ivalue, decimal, 10);
             }   break;
+            case BUSY: {
+                register int decimal = getVarDecimalByCtIndex(id);
+
+                sprintf_fromValue(buf, id, ivalue, decimal, 10);
+                sprintf(svalue, "(%s)", buf);
+            }   break;
             case ERROR:
-                sprintf(svalue, "--");
+                sprintf(svalue, "---");
                 break;
             default:
                 sprintf(svalue, "???");
@@ -290,4 +299,3 @@ void updateVars(trendVariable vars[])
         }
     }
 }
-
