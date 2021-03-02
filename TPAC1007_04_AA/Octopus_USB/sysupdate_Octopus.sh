@@ -47,6 +47,11 @@ nameserver 8.8.4.4
 echo '
 echo 70 > /sys/devices/platform/mxs-bl.0/backlight/mxs-bl/brightness
 ' > $mntdir/etc/sysconfig/brightness
+echo '[NTP-Server]
+serverName=tempo.ien.it
+serverOffset=1
+serverPeriod=1
+serverTimeOut=10' > $mntdir/etc/sysconfig/ntp.ini
 /etc/rc.d/init.d/network restart
 
 # root
