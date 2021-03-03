@@ -19,7 +19,10 @@ splash.path = /local/etc/sysconfig/img
 customtrend.files =  config/trend_caldaia.csv config/trend_piani.csv config/trend_potenze.csv config/trend_termostati.csv config/trend_piano_sopra.csv config/trend_piano_sotto.csv config/trend_piano_terra.csv config/trend_caldaia_kW.csv
 customtrend.path = /local/data/customtrend
 
-INSTALLS += config splash customtrend
+customstore.files = config/store1.csv config/store_caldaia.csv config/store_piani.csv config/store_piano_sopra.csv config/store_piano_sotto.csv config/store_piano_terra.csv config/store_potenze.csv config/store_termo_terra.csv config/store_termo_sotto.csv config/store_termo_sopra.csv
+customstore.path = /local/data/customstore
+
+INSTALLS += config splash customtrend customstore
 
 # language
 OTHER_FILES += \

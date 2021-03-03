@@ -27,8 +27,7 @@ INSTALLS += config splash customtrend customstore
 # language
 OTHER_FILES += \
     languages_it.ts \
-    languages_en.ts \
-    config/trend_ufficio.csv
+    languages_en.ts
 
 include(./common.pri)
 
