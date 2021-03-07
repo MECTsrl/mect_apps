@@ -54,12 +54,7 @@
         <location filename="page100.ui" line="443"/>
         <location filename="page100.ui" line="515"/>
         <location filename="page100.ui" line="590"/>
-        <location filename="page100.ui" line="770"/>
-        <location filename="page100.ui" line="854"/>
-        <location filename="page100.ui" line="938"/>
-        <location filename="page100.ui" line="1022"/>
-        <location filename="page100.ui" line="1106"/>
-        <location filename="page100.ui" line="1190"/>
+        <location filename="page100.ui" line="762"/>
         <source>ATCMlabel widget</source>
         <translation type="unfinished"></translation>
     </message>
@@ -104,6 +99,13 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="page100.ui" line="759"/>
+        <location filename="page100.ui" line="765"/>
+        <source>TCP_HH_MM</source>
+        <oldsource>TCP_TIME</oldsource>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="page100.ui" line="524"/>
         <location filename="page100.ui" line="599"/>
         <source> kWh</source>
@@ -139,86 +141,9 @@ Y2=Pmax</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="761"/>
-        <source>MM</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page100.ui" line="767"/>
-        <location filename="page100.ui" line="773"/>
-        <source>PLC_Month</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page100.ui" line="776"/>
-        <location filename="page100.ui" line="1112"/>
-        <source>-</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page100.ui" line="845"/>
-        <source>hh</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page100.ui" line="851"/>
-        <location filename="page100.ui" line="857"/>
-        <source>PLC_Hours</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page100.ui" line="929"/>
-        <source>mm</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page100.ui" line="935"/>
-        <location filename="page100.ui" line="941"/>
-        <source>PLC_Minutes</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page100.ui" line="944"/>
-        <location filename="page100.ui" line="1196"/>
-        <source>:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page100.ui" line="1013"/>
-        <source>YYYY</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page100.ui" line="1019"/>
-        <location filename="page100.ui" line="1025"/>
-        <source>PLC_Year</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page100.ui" line="1097"/>
-        <source>DD</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page100.ui" line="1103"/>
-        <location filename="page100.ui" line="1109"/>
-        <source>PLC_Day</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page100.ui" line="1181"/>
-        <source>ss</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page100.ui" line="1187"/>
-        <location filename="page100.ui" line="1193"/>
-        <source>PLC_Seconds</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page100.ui" line="1263"/>
-        <source>TextLabel</source>
+        <location filename="page100.ui" line="756"/>
+        <source>HH.MM</source>
+        <oldsource>HH</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -247,18 +172,6 @@ Y2=Pmax</source>
     <message>
         <location filename="page100.ui" line="688"/>
         <location filename="page100.ui" line="721"/>
-        <location filename="page100.ui" line="785"/>
-        <location filename="page100.ui" line="788"/>
-        <location filename="page100.ui" line="869"/>
-        <location filename="page100.ui" line="872"/>
-        <location filename="page100.ui" line="953"/>
-        <location filename="page100.ui" line="956"/>
-        <location filename="page100.ui" line="1037"/>
-        <location filename="page100.ui" line="1040"/>
-        <location filename="page100.ui" line="1121"/>
-        <location filename="page100.ui" line="1124"/>
-        <location filename="page100.ui" line="1205"/>
-        <location filename="page100.ui" line="1208"/>
         <source>0</source>
         <translation type="unfinished"></translation>
     </message>

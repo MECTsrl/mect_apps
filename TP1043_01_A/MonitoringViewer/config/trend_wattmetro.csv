@@ -3,3 +3,4 @@ L
 1;TCP_Pmax                       ;0000FF;0.0;4.5;Potenza Max [kW]
 1;TCP_Tpart                      ;FF5500;0;1000;Energia [kWh]
 1;TCP_U                          ;FFFF00;0;240;Tensione [V]
+1;TCP_HH_MM                      ;FF0000;0.0;4.5;HH.MM

@@ -27,6 +27,7 @@ VAR_GLOBAL
 	TCP_Ttotal AT %QD0.4028:UDINT;	(* WT1 totale Contatore energia Totale Tariffa 1 *)
 	TCP_Tpart AT %QD0.4032:UDINT;	(* WT1 parziale Contatore energia Parziale Tariffa 1 *)
 	TCP_UPTIME_s AT %QD0.4036:UDINT;
+	TCP_HH_MM AT %QW0.4040:UINT;
 	RTU0_TYPE_PORT AT %ID0.20000:UDINT;
 	RTU0_BAUDRATE AT %ID0.20004:UDINT;
 	RTU0_STATUS AT %ID0.20008:UDINT;

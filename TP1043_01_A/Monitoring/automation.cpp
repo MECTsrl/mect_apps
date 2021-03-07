@@ -3,7 +3,7 @@
 
 #include <QElapsedTimer>
 
-#define TCP_UPDATE_ms 1000
+#define TCP_UPDATE_ms 500
 QElapsedTimer timer;
 
 void setup(void)
@@ -31,6 +31,7 @@ void loop(void)
         addWrite_TCP_Ttotal(Ttotal);
         addWrite_TCP_Tpart(Tpart);
         addWrite_TCP_UPTIME_s(PLC_UPTIME_s);
+        addWrite_TCP_HH_MM(PLC_Hours * 100 + PLC_Minutes);
         endWrite();
         // restart the timer
         timer.restart();

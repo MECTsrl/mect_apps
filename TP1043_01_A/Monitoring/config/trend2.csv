@@ -1,5 +1,5 @@
 L
-1;P                              ;0000FF;0.00;4.00;Potenza
-1;Pmax                           ;000000;0.00;4.00;Potenza Massima
-0;                               ;0000FF;0.00;1.00;
-0;                               ;000000;0.00;1.00;
+1;TCP_P                          ;FF0000;0.0;4.5;Potenza [kW]
+1;TCP_Pmax                       ;0000FF;0.0;4.5;Potenza Max [kW]
+1;TCP_Tpart                      ;FF5500;0;1000;Energia [kWh]
+1;TCP_U                          ;FFFF00;0;240;Tensione [V]

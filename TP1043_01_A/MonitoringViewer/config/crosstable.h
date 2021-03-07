@@ -1000,6 +1000,12 @@ int doWrite_TCP_UPTIME_s(u_int32_t value);
 int addWrite_TCP_UPTIME_s(u_int32_t value);
 int getStatus_TCP_UPTIME_s(void);
 
+#define ID_TCP_HH_MM 2010
+extern u_int16_t TCP_HH_MM;
+int doWrite_TCP_HH_MM(u_int16_t value);
+int addWrite_TCP_HH_MM(u_int16_t value);
+int getStatus_TCP_HH_MM(void);
+
 #define ID_RTU0_TYPE_PORT 5000
 extern u_int32_t RTU0_TYPE_PORT;
 int doWrite_RTU0_TYPE_PORT(u_int32_t value);

@@ -276,7 +276,7 @@ color: rgb(0, 0, 0);</string>
      <x>0</x>
      <y>100</y>
      <width>221</width>
-     <height>30</height>
+     <height>20</height>
     </rect>
    </property>
    <property name="font">
@@ -494,9 +494,9 @@ color: rgb(0, 0, 0);</string>
    <property name="geometry">
     <rect>
      <x>0</x>
-     <y>160</y>
+     <y>140</y>
      <width>221</width>
-     <height>30</height>
+     <height>20</height>
     </rect>
    </property>
    <property name="font">
@@ -569,9 +569,9 @@ color: rgb(0, 0, 0);</string>
    <property name="geometry">
     <rect>
      <x>0</x>
-     <y>130</y>
+     <y>120</y>
      <width>221</width>
-     <height>30</height>
+     <height>20</height>
     </rect>
    </property>
    <property name="font">
@@ -641,7 +641,7 @@ color: rgb(0, 0, 0);</string>
    <property name="geometry">
     <rect>
      <x>220</x>
-     <y>90</y>
+     <y>100</y>
      <width>261</width>
      <height>140</height>
     </rect>
@@ -737,533 +737,70 @@ Y2=Pmax</string>
     </color>
    </property>
   </widget>
-  <widget class="ATCMlabel" name="atcmLabel_DT_MM">
-   <property name="enabled">
-    <bool>false</bool>
-   </property>
-   <property name="geometry">
-    <rect>
-     <x>70</x>
-     <y>200</y>
-     <width>25</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>DejaVu Sans</family>
-     <pointsize>10</pointsize>
-     <weight>50</weight>
-     <bold>false</bold>
-    </font>
-   </property>
-   <property name="text">
-    <string>MM</string>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">color: rgb(0, 85, 0);</string>
-   </property>
-   <property name="toolTip">
-    <string>PLC_Month</string>
-   </property>
-   <property name="whatsThis">
-    <string>ATCMlabel widget</string>
-   </property>
-   <property name="variable">
-    <string>PLC_Month</string>
-   </property>
-   <property name="prefix">
-    <string>-</string>
-   </property>
-   <property name="suffix">
-    <string/>
-   </property>
-   <property name="refresh">
-    <number>200</number>
-   </property>
-   <property name="max">
-    <string>0</string>
-   </property>
-   <property name="min">
-    <string>0</string>
-   </property>
-   <property name="viewStatus">
-    <bool>false</bool>
-   </property>
-   <property name="visibilityVar">
-    <string/>
-   </property>
-   <property name="bgColor">
-    <color>
-     <red>0</red>
-     <green>0</green>
-     <blue>0</blue>
-    </color>
-   </property>
-   <property name="borderColor">
-    <color>
-     <red>255</red>
-     <green>255</green>
-     <blue>255</blue>
-    </color>
-   </property>
-   <property name="fontColor">
-    <color>
-     <red>255</red>
-     <green>255</green>
-     <blue>0</blue>
-    </color>
-   </property>
-   <property name="borderWidth">
-    <number>0</number>
-   </property>
-   <property name="borderRadius">
-    <number>0</number>
-   </property>
-  </widget>
-  <widget class="ATCMlabel" name="atcmLabel_DT_hh">
-   <property name="enabled">
-    <bool>false</bool>
-   </property>
-   <property name="geometry">
-    <rect>
-     <x>124</x>
-     <y>200</y>
-     <width>20</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>DejaVu Sans</family>
-     <pointsize>10</pointsize>
-     <weight>50</weight>
-     <bold>false</bold>
-    </font>
-   </property>
-   <property name="text">
-    <string>hh</string>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">color: rgb(0, 85, 0);</string>
-   </property>
-   <property name="toolTip">
-    <string>PLC_Hours</string>
-   </property>
-   <property name="whatsThis">
-    <string>ATCMlabel widget</string>
-   </property>
-   <property name="variable">
-    <string>PLC_Hours</string>
-   </property>
-   <property name="prefix">
-    <string/>
-   </property>
-   <property name="suffix">
-    <string/>
-   </property>
-   <property name="refresh">
-    <number>200</number>
-   </property>
-   <property name="max">
-    <string>0</string>
-   </property>
-   <property name="min">
-    <string>0</string>
-   </property>
-   <property name="viewStatus">
-    <bool>false</bool>
-   </property>
-   <property name="visibilityVar">
-    <string/>
-   </property>
-   <property name="bgColor">
-    <color>
-     <red>0</red>
-     <green>0</green>
-     <blue>0</blue>
-    </color>
-   </property>
-   <property name="borderColor">
-    <color>
-     <red>255</red>
-     <green>255</green>
-     <blue>255</blue>
-    </color>
-   </property>
-   <property name="fontColor">
-    <color>
-     <red>255</red>
-     <green>255</green>
-     <blue>0</blue>
-    </color>
-   </property>
-   <property name="borderWidth">
-    <number>0</number>
-   </property>
-   <property name="borderRadius">
-    <number>0</number>
-   </property>
-  </widget>
-  <widget class="ATCMlabel" name="atcmLabel_DT_mm">
-   <property name="enabled">
-    <bool>false</bool>
-   </property>
-   <property name="geometry">
-    <rect>
-     <x>144</x>
-     <y>200</y>
-     <width>25</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>DejaVu Sans</family>
-     <pointsize>10</pointsize>
-     <weight>50</weight>
-     <bold>false</bold>
-    </font>
-   </property>
-   <property name="text">
-    <string>mm</string>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">color: rgb(0, 85, 0);</string>
-   </property>
-   <property name="toolTip">
-    <string>PLC_Minutes</string>
-   </property>
-   <property name="whatsThis">
-    <string>ATCMlabel widget</string>
-   </property>
-   <property name="variable">
-    <string>PLC_Minutes</string>
-   </property>
-   <property name="prefix">
-    <string>:</string>
-   </property>
-   <property name="suffix">
-    <string/>
-   </property>
-   <property name="refresh">
-    <number>200</number>
-   </property>
-   <property name="max">
-    <string>0</string>
-   </property>
-   <property name="min">
-    <string>0</string>
-   </property>
-   <property name="viewStatus">
-    <bool>false</bool>
-   </property>
-   <property name="visibilityVar">
-    <string/>
-   </property>
-   <property name="bgColor">
-    <color>
-     <red>0</red>
-     <green>0</green>
-     <blue>0</blue>
-    </color>
-   </property>
-   <property name="borderColor">
-    <color>
-     <red>255</red>
-     <green>255</green>
-     <blue>255</blue>
-    </color>
-   </property>
-   <property name="fontColor">
-    <color>
-     <red>255</red>
-     <green>255</green>
-     <blue>0</blue>
-    </color>
-   </property>
-   <property name="borderWidth">
-    <number>0</number>
-   </property>
-   <property name="borderRadius">
-    <number>0</number>
-   </property>
-  </widget>
-  <widget class="ATCMlabel" name="atcmLabel_DT_YYYY">
-   <property name="enabled">
-    <bool>false</bool>
-   </property>
-   <property name="geometry">
-    <rect>
-     <x>30</x>
-     <y>200</y>
-     <width>40</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>DejaVu Sans</family>
-     <pointsize>10</pointsize>
-     <weight>50</weight>
-     <bold>false</bold>
-    </font>
-   </property>
-   <property name="text">
-    <string>YYYY</string>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">color: rgb(0, 85, 0);</string>
-   </property>
-   <property name="toolTip">
-    <string>PLC_Year</string>
-   </property>
-   <property name="whatsThis">
-    <string>ATCMlabel widget</string>
-   </property>
-   <property name="variable">
-    <string>PLC_Year</string>
-   </property>
-   <property name="prefix">
-    <string/>
-   </property>
-   <property name="suffix">
-    <string/>
-   </property>
-   <property name="refresh">
-    <number>200</number>
-   </property>
-   <property name="max">
-    <string>0</string>
-   </property>
-   <property name="min">
-    <string>0</string>
-   </property>
-   <property name="viewStatus">
-    <bool>false</bool>
-   </property>
-   <property name="visibilityVar">
-    <string/>
-   </property>
-   <property name="bgColor">
-    <color>
-     <red>0</red>
-     <green>0</green>
-     <blue>0</blue>
-    </color>
-   </property>
-   <property name="borderColor">
-    <color>
-     <red>255</red>
-     <green>255</green>
-     <blue>255</blue>
-    </color>
-   </property>
-   <property name="fontColor">
-    <color>
-     <red>255</red>
-     <green>255</green>
-     <blue>0</blue>
-    </color>
-   </property>
-   <property name="borderWidth">
-    <number>0</number>
-   </property>
-   <property name="borderRadius">
-    <number>0</number>
-   </property>
-  </widget>
-  <widget class="ATCMlabel" name="atcmLabel_DT_DD">
-   <property name="enabled">
-    <bool>false</bool>
-   </property>
-   <property name="geometry">
-    <rect>
-     <x>95</x>
-     <y>200</y>
-     <width>25</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>DejaVu Sans</family>
-     <pointsize>10</pointsize>
-     <weight>50</weight>
-     <bold>false</bold>
-    </font>
-   </property>
-   <property name="text">
-    <string>DD</string>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">color: rgb(0, 85, 0);</string>
-   </property>
-   <property name="toolTip">
-    <string>PLC_Day</string>
-   </property>
-   <property name="whatsThis">
-    <string>ATCMlabel widget</string>
-   </property>
-   <property name="variable">
-    <string>PLC_Day</string>
-   </property>
-   <property name="prefix">
-    <string>-</string>
-   </property>
-   <property name="suffix">
-    <string/>
-   </property>
-   <property name="refresh">
-    <number>200</number>
-   </property>
-   <property name="max">
-    <string>0</string>
-   </property>
-   <property name="min">
-    <string>0</string>
-   </property>
-   <property name="viewStatus">
-    <bool>false</bool>
-   </property>
-   <property name="visibilityVar">
-    <string/>
-   </property>
-   <property name="bgColor">
-    <color>
-     <red>0</red>
-     <green>0</green>
-     <blue>0</blue>
-    </color>
-   </property>
-   <property name="borderColor">
-    <color>
-     <red>255</red>
-     <green>255</green>
-     <blue>255</blue>
-    </color>
-   </property>
-   <property name="fontColor">
-    <color>
-     <red>255</red>
-     <green>255</green>
-     <blue>0</blue>
-    </color>
-   </property>
-   <property name="borderWidth">
-    <number>0</number>
-   </property>
-   <property name="borderRadius">
-    <number>0</number>
-   </property>
-  </widget>
-  <widget class="ATCMlabel" name="atcmLabel_DT_ss">
-   <property name="enabled">
-    <bool>false</bool>
-   </property>
-   <property name="geometry">
-    <rect>
-     <x>169</x>
-     <y>200</y>
-     <width>25</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>DejaVu Sans</family>
-     <pointsize>10</pointsize>
-     <weight>50</weight>
-     <bold>false</bold>
-    </font>
-   </property>
-   <property name="text">
-    <string>ss</string>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">color: rgb(0, 85, 0);</string>
-   </property>
-   <property name="toolTip">
-    <string>PLC_Seconds</string>
-   </property>
-   <property name="whatsThis">
-    <string>ATCMlabel widget</string>
-   </property>
-   <property name="variable">
-    <string>PLC_Seconds</string>
-   </property>
-   <property name="prefix">
-    <string>:</string>
-   </property>
-   <property name="suffix">
-    <string/>
-   </property>
-   <property name="refresh">
-    <number>200</number>
-   </property>
-   <property name="max">
-    <string>0</string>
-   </property>
-   <property name="min">
-    <string>0</string>
-   </property>
-   <property name="viewStatus">
-    <bool>false</bool>
-   </property>
-   <property name="visibilityVar">
-    <string/>
-   </property>
-   <property name="bgColor">
-    <color>
-     <red>0</red>
-     <green>0</green>
-     <blue>0</blue>
-    </color>
-   </property>
-   <property name="borderColor">
-    <color>
-     <red>255</red>
-     <green>255</green>
-     <blue>255</blue>
-    </color>
-   </property>
-   <property name="fontColor">
-    <color>
-     <red>255</red>
-     <green>255</green>
-     <blue>0</blue>
-    </color>
-   </property>
-   <property name="borderWidth">
-    <number>0</number>
-   </property>
-   <property name="borderRadius">
-    <number>0</number>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label">
+  <widget class="ATCMlabel" name="atcmLabel_HH_MM">
    <property name="geometry">
     <rect>
      <x>0</x>
-     <y>190</y>
+     <y>160</y>
      <width>221</width>
-     <height>51</height>
+     <height>80</height>
     </rect>
    </property>
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>8</pointsize>
+     <pointsize>36</pointsize>
     </font>
    </property>
-   <property name="styleSheet">
-    <string notr="true">background-color: rgb(0, 0, 0);</string>
-   </property>
    <property name="text">
-    <string>TextLabel</string>
+    <string>HH.MM</string>
+   </property>
+   <property name="toolTip">
+    <string>TCP_HH_MM</string>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMlabel widget</string>
+   </property>
+   <property name="variable">
+    <string>TCP_HH_MM</string>
+   </property>
+   <property name="refresh">
+    <number>200</number>
+   </property>
+   <property name="max">
+    <string notr="true">0</string>
+   </property>
+   <property name="min">
+    <string notr="true">0</string>
+   </property>
+   <property name="viewStatus">
+    <bool>false</bool>
+   </property>
+   <property name="visibilityVar">
+    <string/>
+   </property>
+   <property name="bgColor">
+    <color>
+     <red>0</red>
+     <green>0</green>
+     <blue>0</blue>
+    </color>
+   </property>
+   <property name="fontColor">
+    <color>
+     <red>255</red>
+     <green>0</green>
+     <blue>0</blue>
+    </color>
+   </property>
+   <property name="borderWidth">
+    <number>1</number>
+   </property>
+   <property name="borderRadius">
+    <number>0</number>
    </property>
   </widget>
-  <zorder>label</zorder>
+  <zorder>atcmLabel_HH_MM</zorder>
   <zorder>atcmLabel_Pmax</zorder>
   <zorder>atcmGraph</zorder>
   <zorder>atcmButton_20</zorder>
@@ -1274,12 +811,6 @@ Y2=Pmax</string>
   <zorder>atcmLabel_C</zorder>
   <zorder>atcmLabel_Tpart</zorder>
   <zorder>atcmButton</zorder>
-  <zorder>atcmLabel_DT_MM</zorder>
-  <zorder>atcmLabel_DT_hh</zorder>
-  <zorder>atcmLabel_DT_mm</zorder>
-  <zorder>atcmLabel_DT_YYYY</zorder>
-  <zorder>atcmLabel_DT_DD</zorder>
-  <zorder>atcmLabel_DT_ss</zorder>
  </widget>
  <customwidgets>
   <customwidget>

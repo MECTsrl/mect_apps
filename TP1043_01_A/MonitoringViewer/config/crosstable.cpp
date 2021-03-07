@@ -1155,6 +1155,13 @@ u_int32_t TCP_UPTIME_s = 0;
 
 
 /*
+ * Variable TCP_HH_MM
+ */
+
+u_int16_t TCP_HH_MM = 0;
+
+
+/*
  * Variable RTU0_TYPE_PORT
  */
 
@@ -5375,6 +5382,24 @@ getStatus_TCP_UPTIME_s(void)
 }
 
 int
+doWrite_TCP_HH_MM(u_int16_t value)
+{
+	return doWrite(ID_TCP_HH_MM, &value);
+}
+
+int
+addWrite_TCP_HH_MM(u_int16_t value)
+{
+	return addWrite(ID_TCP_HH_MM, &value);
+}
+
+int
+getStatus_TCP_HH_MM(void)
+{
+	return getStatus(ID_TCP_HH_MM);
+}
+
+int
 doWrite_RTU0_TYPE_PORT(u_int32_t value)
 {
 	return doWrite(ID_RTU0_TYPE_PORT, &value);
@@ -8943,6 +8968,7 @@ update_all(void)
 	retval += readFromDb(ID_TCP_Ttotal, &TCP_Ttotal);
 	retval += readFromDb(ID_TCP_Tpart, &TCP_Tpart);
 	retval += readFromDb(ID_TCP_UPTIME_s, &TCP_UPTIME_s);
+	retval += readFromDb(ID_TCP_HH_MM, &TCP_HH_MM);
 	retval += readFromDb(ID_RTU0_TYPE_PORT, &RTU0_TYPE_PORT);
 	retval += readFromDb(ID_RTU0_BAUDRATE, &RTU0_BAUDRATE);
 	retval += readFromDb(ID_RTU0_STATUS, &RTU0_STATUS);

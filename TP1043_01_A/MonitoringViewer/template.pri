@@ -16,7 +16,7 @@ config.path = /local/etc/sysconfig
 splash.files = config/splash.png
 splash.path = /local/etc/sysconfig/img
 
-customtrend.files = config/trend1.csv config/trend_caldaia.csv config/trend_piani.csv config/trend_piano_sopra.csv config/trend_piano_sotto.csv config/trend_piano_terra.csv config/trend_potenze.csv config/trend_termo_terra.csv config/trend_termo_sotto.csv config/trend_termo_sopra.csv config/trend_ufficio.csv config/trend_wattmetro.csv
+customtrend.files =  config/trend1.csv config/trend_caldaia.csv config/trend_piani.csv config/trend_piano_sopra.csv config/trend_piano_sotto.csv config/trend_piano_terra.csv config/trend_potenze.csv config/trend_termo_terra.csv config/trend_termo_sotto.csv config/trend_termo_sopra.csv config/trend_ufficio.csv config/trend_wattmetro.csv config/trend_watt_time.csv
 customtrend.path = /local/data/customtrend
 
 customstore.files = config/store1.csv config/store_caldaia.csv config/store_piani.csv config/store_piano_sopra.csv config/store_piano_sotto.csv config/store_piano_terra.csv config/store_potenze.csv config/store_termo_terra.csv config/store_termo_sotto.csv config/store_termo_sopra.csv config/store_ufficio.csv config/store_wattmetro.csv
