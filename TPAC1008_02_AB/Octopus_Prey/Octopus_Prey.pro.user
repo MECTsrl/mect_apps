@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 2.7.84, 2021-03-19T15:38:27. -->
+<!-- Written by QtCreator 2.7.84, 2021-03-22T16:14:19. -->
 <qtcreator>
  <data>
   <variable>ProjectExplorer.Project.ActiveTarget</variable>
@@ -263,17 +263,17 @@
        <value type="QDateTime">2018-03-21T15:32:45</value>
        <value type="QDateTime">2018-03-21T15:32:45</value>
        <value type="QDateTime">2018-03-21T15:32:46</value>
-       <value type="QDateTime">2021-02-24T17:03:13</value>
-       <value type="QDateTime">2021-02-24T17:03:12</value>
-       <value type="QDateTime">2021-02-24T17:03:13</value>
-       <value type="QDateTime">2021-02-24T17:03:12</value>
+       <value type="QDateTime">2021-03-22T16:13:16</value>
+       <value type="QDateTime">2021-03-22T16:13:16</value>
+       <value type="QDateTime">2021-03-22T16:13:17</value>
+       <value type="QDateTime">2021-03-22T16:13:16</value>
        <value type="QDateTime">2018-03-21T15:32:44</value>
-       <value type="QDateTime">2021-02-24T17:03:12</value>
+       <value type="QDateTime">2021-03-22T16:13:16</value>
        <value type="QDateTime">2018-03-21T15:32:45</value>
-       <value type="QDateTime">2021-02-24T17:03:12</value>
+       <value type="QDateTime">2021-03-22T16:13:15</value>
        <value type="QDateTime">2018-03-21T15:32:45</value>
        <value type="QDateTime">2018-03-21T15:32:45</value>
-       <value type="QDateTime">2021-02-24T17:03:16</value>
+       <value type="QDateTime">2021-03-22T16:13:20</value>
       </valuelist>
       <value type="bool" key="RemoteLinux.GenericDirectUploadStep.Incremental">false</value>
      </valuemap>
@@ -325,7 +325,7 @@
     <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Octopus_Prey (on Remote Device)</value>
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">RemoteLinuxRunConfiguration:C:/mect_apps/TPAC1008_02_AB/Octopus_Prey/Octopus_Prey.pro</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">RemoteLinuxRunConfiguration:U:/mect_apps/TPAC1008_02_AB/Octopus_Prey/Octopus_Prey.pro</value>
     <value type="QString" key="Qt4ProjectManager.MaemoRunConfiguration.Arguments"></value>
     <value type="QString" key="Qt4ProjectManager.MaemoRunConfiguration.ProFile">Octopus_Prey.pro</value>
     <value type="QString" key="RemoteLinux.RunConfig.AlternateRemoteExecutable"></value>

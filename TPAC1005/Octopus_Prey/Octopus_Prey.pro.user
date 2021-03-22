@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 2.7.84, 2021-03-16T16:29:24. -->
+<!-- Written by QtCreator 2.7.84, 2021-03-22T19:15:36. -->
 <qtcreator>
  <data>
   <variable>ProjectExplorer.Project.ActiveTarget</variable>
@@ -290,22 +290,22 @@
       <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedTimes">
        <value type="QDateTime">2018-03-21T16:44:30</value>
        <value type="QDateTime">2018-03-21T16:44:31</value>
-       <value type="QDateTime">2021-03-16T16:26:46</value>
+       <value type="QDateTime">2021-03-22T19:14:48</value>
        <value type="QDateTime">2018-03-01T12:56:07</value>
        <value type="QDateTime">2018-03-21T16:44:30</value>
        <value type="QDateTime">2018-03-01T12:56:07</value>
-       <value type="QDateTime">2021-03-16T16:26:46</value>
+       <value type="QDateTime">2021-03-22T19:14:49</value>
        <value type="QDateTime">2018-03-01T12:56:07</value>
        <value type="QDateTime">2018-03-21T16:44:30</value>
-       <value type="QDateTime">2021-03-16T16:26:45</value>
-       <value type="QDateTime">2021-03-16T16:26:46</value>
+       <value type="QDateTime">2021-03-22T19:14:48</value>
+       <value type="QDateTime">2021-03-22T19:14:49</value>
        <value type="QDateTime">2018-03-01T12:56:07</value>
        <value type="QDateTime">2018-03-21T16:44:30</value>
-       <value type="QDateTime">2021-03-16T16:26:49</value>
+       <value type="QDateTime">2021-03-22T19:14:52</value>
        <value type="QDateTime">2018-03-21T16:44:30</value>
        <value type="QDateTime">2018-03-01T12:56:07</value>
-       <value type="QDateTime">2021-03-16T16:26:45</value>
-       <value type="QDateTime">2021-03-16T16:26:45</value>
+       <value type="QDateTime">2021-03-22T19:14:48</value>
+       <value type="QDateTime">2021-03-22T19:14:48</value>
        <value type="QDateTime">2018-03-01T12:56:09</value>
        <value type="QDateTime">2018-03-21T16:44:29</value>
        <value type="QDateTime">2018-03-01T12:56:07</value>
