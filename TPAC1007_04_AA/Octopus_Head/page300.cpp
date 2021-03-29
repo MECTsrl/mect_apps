@@ -150,13 +150,13 @@ page300::~page300()
 
 void page300::on_atcmComboBox_PRODUCT_ID_currentIndexChanged(int index)
 {
-    index = index;
+    Q_UNUSED(index);
     doWrite_DO_RELOAD(1);
 }
 
 void page300::on_atcmComboBox_TEST_ID_currentIndexChanged(int index)
 {
-    index = index;
+    Q_UNUSED(index);
     doWrite_DO_RELOAD(1);
 }
 

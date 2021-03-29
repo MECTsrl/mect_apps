@@ -50,9 +50,11 @@ static char product_name[][15] = {
     /*21*/ "TPLC050_01_AA" ,
     /*22*/ "TPLC100_01_AA" ,
     /*23*/ "TPLC100_01_AB" ,
-    /*24*/ "TPX1070_03_D"  ,
-    /*25*/ "TPX1070_03_E"
+    /*24*/ "TPX1043_03_C"  ,
+    /*25*/ "TPX1070_03_D"  ,
+    /*26*/ "TPX1070_03_E"
 };
+#define PRODUCT_MAX 26
 #define RECIPE_MAX 3
 static char recipe_name[][RECIPE_MAX] = {"-", "1", "2", "3"};
 
@@ -79,11 +81,26 @@ static page300 *thePage = NULL;
 
 void setup(void)
 {
-    doWrite_RESULT(RESULT_UNKNOWN);
     previous_PLC_time = PLC_time;
     last_PLC_time = PLC_time;
     previous_PLC_Heartbeat = PLC_Heartbeat;
     previous_RTU_Heartbeat = RTU_HeartBeat;
+
+    beginWrite();
+    {
+        // check the retentive values
+        if (PRODUCT_ID == 0 or PRODUCT_ID > PRODUCT_MAX) {
+           addWrite_PRODUCT_ID(2); // 2 TP1043_02_A
+        }
+        if (TEST_ID == 0 or TEST_ID > RECIPE_MAX) {
+           addWrite_TEST_ID(2); // 2 An+Dig
+        }
+
+        // force loading the recipes
+        addWrite_RESULT(RESULT_UNKNOWN);
+        addWrite_DO_RELOAD(1);
+    }
+    endWrite();
 }
 
 void setTheWidget(page300 *p)
