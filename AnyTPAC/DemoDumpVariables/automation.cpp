@@ -9,6 +9,9 @@
 #define FIRST_DIAG_VAR 5000
 
 
+#include "hmi_plc.h"
+extern HmiPlcBlock plcBlock;
+
 u_int32_t variablesBuffer[FIRST_DIAG_VAR - 1];  // The raw type of CrossTable Vars is u_int32_t
                                                 // The buffer size is big enough to store all Users Cross Table Variables
 
@@ -52,14 +55,14 @@ bool dumpVariables(int nStart, int nVariables, QString &szFile2Dump)
     else  {
         // Clear Buffer
         memset (&variablesBuffer[0], 0x00, sizeof(variablesBuffer));
-        // Lock Access to Cross Table storage area
+
         pthread_mutex_lock(&datasync_recv_mutex);
         {
-            int byte_nb = (nStart - 1) * sizeof(u_int32_t);
-            memcpy(&variablesBuffer[0], &(pIODataAreaI[byte_nb]), nVariables * sizeof(u_int32_t));
+            // Protected copy from Cross Table storage area
+            memcpy(&variablesBuffer[0], &(plcBlock.values[nStart]), nVariables * sizeof(u_int32_t));
         }
-        // Unlock Access
         pthread_mutex_unlock(&datasync_recv_mutex);
+
         // Write to Binary file
         FILE *out;
         out = fopen(szFile2Dump.toLatin1().data(), "wb");
