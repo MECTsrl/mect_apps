@@ -231,6 +231,293 @@ u_int16_t TCP_HH_MM = 0;
 
 
 /*
+ * Variable SRV_EP_heartbeat	[ TCPS_STATUS NODE_09_STATUS ]
+ */
+
+u_int16_t SRV_EP_heartbeat = 0;
+
+
+/*
+ * Variable SRV_EP_enabled_wattmeters	[ 0 .. 12 ]
+ */
+
+u_int16_t SRV_EP_enabled_wattmeters = 0;
+
+
+/*
+ * Variable SRV_EP_wattmeter01_U	[ xxx.xx V ]
+ */
+
+int16_t SRV_EP_wattmeter01_U = 0;
+
+
+/*
+ * Variable SRV_EP_wattmeter01_C	[ +/- x.xxx ]
+ */
+
+int16_t SRV_EP_wattmeter01_C = 0;
+
+
+/*
+ * Variable SRV_EP_wattmeter01_Texp	[ xxxxxxxxx.x kWh ]
+ */
+
+u_int32_t SRV_EP_wattmeter01_Texp = 0;
+
+
+/*
+ * Variable SRV_EP_wattmeter01_P	[ +/- xxxx W ]
+ */
+
+int16_t SRV_EP_wattmeter01_P = 0;
+
+
+/*
+ * Variable SRV_EP_wattmeter01_Pmax	[ +/- xxxx W ]
+ */
+
+int16_t SRV_EP_wattmeter01_Pmax = 0;
+
+
+/*
+ * Variable SRV_EP_wattmeter01_T	[ xxxxxxxxx.x kWh ]
+ */
+
+u_int32_t SRV_EP_wattmeter01_T = 0;
+
+
+/*
+ * Variable SRV_EP_wattmeter02_P	[ +/- xxxx W ]
+ */
+
+int16_t SRV_EP_wattmeter02_P = 0;
+
+
+/*
+ * Variable SRV_EP_wattmeter02_Pmax	[ +/- xxxx W ]
+ */
+
+int16_t SRV_EP_wattmeter02_Pmax = 0;
+
+
+/*
+ * Variable SRV_EP_wattmeter02_T	[ xxxxxxxxx.x kWh ]
+ */
+
+u_int32_t SRV_EP_wattmeter02_T = 0;
+
+
+/*
+ * Variable SRV_EP_wattmeter03_P	[ +/- xxxx W ]
+ */
+
+int16_t SRV_EP_wattmeter03_P = 0;
+
+
+/*
+ * Variable SRV_EP_wattmeter03_Pmax	[ +/- xxxx W ]
+ */
+
+int16_t SRV_EP_wattmeter03_Pmax = 0;
+
+
+/*
+ * Variable SRV_EP_wattmeter03_T	[ xxxxxxxxx.x kWh ]
+ */
+
+u_int32_t SRV_EP_wattmeter03_T = 0;
+
+
+/*
+ * Variable SRV_EP_wattmeter04_P	[ +/- xxxx W ]
+ */
+
+int16_t SRV_EP_wattmeter04_P = 0;
+
+
+/*
+ * Variable SRV_EP_wattmeter04_Pmax	[ +/- xxxx W ]
+ */
+
+int16_t SRV_EP_wattmeter04_Pmax = 0;
+
+
+/*
+ * Variable SRV_EP_wattmeter04_T	[ xxxxxxxxx.x kWh ]
+ */
+
+u_int32_t SRV_EP_wattmeter04_T = 0;
+
+
+/*
+ * Variable SRV_EP_wattmeter05_P	[ +/- xxxx W ]
+ */
+
+int16_t SRV_EP_wattmeter05_P = 0;
+
+
+/*
+ * Variable SRV_EP_wattmeter05_Pmax	[ +/- xxxx W ]
+ */
+
+int16_t SRV_EP_wattmeter05_Pmax = 0;
+
+
+/*
+ * Variable SRV_EP_wattmeter05_T	[ xxxxxxxxx.x kWh ]
+ */
+
+u_int32_t SRV_EP_wattmeter05_T = 0;
+
+
+/*
+ * Variable SRV_EP_wattmeter06_P	[ +/- xxxx W ]
+ */
+
+int16_t SRV_EP_wattmeter06_P = 0;
+
+
+/*
+ * Variable SRV_EP_wattmeter06_Pmax	[ +/- xxxx W ]
+ */
+
+int16_t SRV_EP_wattmeter06_Pmax = 0;
+
+
+/*
+ * Variable SRV_EP_wattmeter06_T	[ xxxxxxxxx.x kWh ]
+ */
+
+u_int32_t SRV_EP_wattmeter06_T = 0;
+
+
+/*
+ * Variable SRV_EP_wattmeter07_P	[ +/- xxxx W ]
+ */
+
+int16_t SRV_EP_wattmeter07_P = 0;
+
+
+/*
+ * Variable SRV_EP_wattmeter07_Pmax	[ +/- xxxx W ]
+ */
+
+int16_t SRV_EP_wattmeter07_Pmax = 0;
+
+
+/*
+ * Variable SRV_EP_wattmeter07_T	[ xxxxxxxxx.x kWh ]
+ */
+
+u_int32_t SRV_EP_wattmeter07_T = 0;
+
+
+/*
+ * Variable SRV_EP_wattmeter08_P	[ +/- xxxx W ]
+ */
+
+int16_t SRV_EP_wattmeter08_P = 0;
+
+
+/*
+ * Variable SRV_EP_wattmeter08_Pmax	[ +/- xxxx W ]
+ */
+
+int16_t SRV_EP_wattmeter08_Pmax = 0;
+
+
+/*
+ * Variable SRV_EP_wattmeter08_T	[ xxxxxxxxx.x kWh ]
+ */
+
+u_int32_t SRV_EP_wattmeter08_T = 0;
+
+
+/*
+ * Variable SRV_EP_wattmeter09_P	[ +/- xxxx W ]
+ */
+
+int16_t SRV_EP_wattmeter09_P = 0;
+
+
+/*
+ * Variable SRV_EP_wattmeter09_Pmax	[ +/- xxxx W ]
+ */
+
+int16_t SRV_EP_wattmeter09_Pmax = 0;
+
+
+/*
+ * Variable SRV_EP_wattmeter09_T	[ xxxxxxxxx.x kWh ]
+ */
+
+u_int32_t SRV_EP_wattmeter09_T = 0;
+
+
+/*
+ * Variable SRV_EP_wattmeter10_P	[ +/- xxxx W ]
+ */
+
+int16_t SRV_EP_wattmeter10_P = 0;
+
+
+/*
+ * Variable SRV_EP_wattmeter10_Pmax	[ +/- xxxx W ]
+ */
+
+int16_t SRV_EP_wattmeter10_Pmax = 0;
+
+
+/*
+ * Variable SRV_EP_wattmeter10_T	[ xxxxxxxxx.x kWh ]
+ */
+
+u_int32_t SRV_EP_wattmeter10_T = 0;
+
+
+/*
+ * Variable SRV_EP_wattmeter11_P	[ +/- xxxx W ]
+ */
+
+int16_t SRV_EP_wattmeter11_P = 0;
+
+
+/*
+ * Variable SRV_EP_wattmeter11_Pmax	[ +/- xxxx W ]
+ */
+
+int16_t SRV_EP_wattmeter11_Pmax = 0;
+
+
+/*
+ * Variable SRV_EP_wattmeter11_T	[ xxxxxxxxx.x kWh ]
+ */
+
+u_int32_t SRV_EP_wattmeter11_T = 0;
+
+
+/*
+ * Variable SRV_EP_wattmeter12_P	[ +/- xxxx W ]
+ */
+
+int16_t SRV_EP_wattmeter12_P = 0;
+
+
+/*
+ * Variable SRV_EP_wattmeter12_Pmax	[ +/- xxxx W ]
+ */
+
+int16_t SRV_EP_wattmeter12_Pmax = 0;
+
+
+/*
+ * Variable SRV_EP_wattmeter12_T	[ xxxxxxxxx.x kWh ]
+ */
+
+u_int32_t SRV_EP_wattmeter12_T = 0;
+
+
+/*
  * Variable RTU0_TYPE_PORT
  */
 
@@ -2072,6 +2359,744 @@ int
 getStatus_TCP_HH_MM(void)
 {
 	return getStatus(ID_TCP_HH_MM);
+}
+
+int
+doWrite_SRV_EP_heartbeat(u_int16_t value)
+{
+	return doWrite(ID_SRV_EP_heartbeat, &value);
+}
+
+int
+addWrite_SRV_EP_heartbeat(u_int16_t value)
+{
+	return addWrite(ID_SRV_EP_heartbeat, &value);
+}
+
+int
+getStatus_SRV_EP_heartbeat(void)
+{
+	return getStatus(ID_SRV_EP_heartbeat);
+}
+
+int
+doWrite_SRV_EP_enabled_wattmeters(u_int16_t value)
+{
+	return doWrite(ID_SRV_EP_enabled_wattmeters, &value);
+}
+
+int
+addWrite_SRV_EP_enabled_wattmeters(u_int16_t value)
+{
+	return addWrite(ID_SRV_EP_enabled_wattmeters, &value);
+}
+
+int
+getStatus_SRV_EP_enabled_wattmeters(void)
+{
+	return getStatus(ID_SRV_EP_enabled_wattmeters);
+}
+
+int
+doWrite_SRV_EP_wattmeter01_U(int16_t value)
+{
+	return doWrite(ID_SRV_EP_wattmeter01_U, &value);
+}
+
+int
+addWrite_SRV_EP_wattmeter01_U(int16_t value)
+{
+	return addWrite(ID_SRV_EP_wattmeter01_U, &value);
+}
+
+int
+getStatus_SRV_EP_wattmeter01_U(void)
+{
+	return getStatus(ID_SRV_EP_wattmeter01_U);
+}
+
+int
+doWrite_SRV_EP_wattmeter01_C(int16_t value)
+{
+	return doWrite(ID_SRV_EP_wattmeter01_C, &value);
+}
+
+int
+addWrite_SRV_EP_wattmeter01_C(int16_t value)
+{
+	return addWrite(ID_SRV_EP_wattmeter01_C, &value);
+}
+
+int
+getStatus_SRV_EP_wattmeter01_C(void)
+{
+	return getStatus(ID_SRV_EP_wattmeter01_C);
+}
+
+int
+doWrite_SRV_EP_wattmeter01_Texp(u_int32_t value)
+{
+	return doWrite(ID_SRV_EP_wattmeter01_Texp, &value);
+}
+
+int
+addWrite_SRV_EP_wattmeter01_Texp(u_int32_t value)
+{
+	return addWrite(ID_SRV_EP_wattmeter01_Texp, &value);
+}
+
+int
+getStatus_SRV_EP_wattmeter01_Texp(void)
+{
+	return getStatus(ID_SRV_EP_wattmeter01_Texp);
+}
+
+int
+doWrite_SRV_EP_wattmeter01_P(int16_t value)
+{
+	return doWrite(ID_SRV_EP_wattmeter01_P, &value);
+}
+
+int
+addWrite_SRV_EP_wattmeter01_P(int16_t value)
+{
+	return addWrite(ID_SRV_EP_wattmeter01_P, &value);
+}
+
+int
+getStatus_SRV_EP_wattmeter01_P(void)
+{
+	return getStatus(ID_SRV_EP_wattmeter01_P);
+}
+
+int
+doWrite_SRV_EP_wattmeter01_Pmax(int16_t value)
+{
+	return doWrite(ID_SRV_EP_wattmeter01_Pmax, &value);
+}
+
+int
+addWrite_SRV_EP_wattmeter01_Pmax(int16_t value)
+{
+	return addWrite(ID_SRV_EP_wattmeter01_Pmax, &value);
+}
+
+int
+getStatus_SRV_EP_wattmeter01_Pmax(void)
+{
+	return getStatus(ID_SRV_EP_wattmeter01_Pmax);
+}
+
+int
+doWrite_SRV_EP_wattmeter01_T(u_int32_t value)
+{
+	return doWrite(ID_SRV_EP_wattmeter01_T, &value);
+}
+
+int
+addWrite_SRV_EP_wattmeter01_T(u_int32_t value)
+{
+	return addWrite(ID_SRV_EP_wattmeter01_T, &value);
+}
+
+int
+getStatus_SRV_EP_wattmeter01_T(void)
+{
+	return getStatus(ID_SRV_EP_wattmeter01_T);
+}
+
+int
+doWrite_SRV_EP_wattmeter02_P(int16_t value)
+{
+	return doWrite(ID_SRV_EP_wattmeter02_P, &value);
+}
+
+int
+addWrite_SRV_EP_wattmeter02_P(int16_t value)
+{
+	return addWrite(ID_SRV_EP_wattmeter02_P, &value);
+}
+
+int
+getStatus_SRV_EP_wattmeter02_P(void)
+{
+	return getStatus(ID_SRV_EP_wattmeter02_P);
+}
+
+int
+doWrite_SRV_EP_wattmeter02_Pmax(int16_t value)
+{
+	return doWrite(ID_SRV_EP_wattmeter02_Pmax, &value);
+}
+
+int
+addWrite_SRV_EP_wattmeter02_Pmax(int16_t value)
+{
+	return addWrite(ID_SRV_EP_wattmeter02_Pmax, &value);
+}
+
+int
+getStatus_SRV_EP_wattmeter02_Pmax(void)
+{
+	return getStatus(ID_SRV_EP_wattmeter02_Pmax);
+}
+
+int
+doWrite_SRV_EP_wattmeter02_T(u_int32_t value)
+{
+	return doWrite(ID_SRV_EP_wattmeter02_T, &value);
+}
+
+int
+addWrite_SRV_EP_wattmeter02_T(u_int32_t value)
+{
+	return addWrite(ID_SRV_EP_wattmeter02_T, &value);
+}
+
+int
+getStatus_SRV_EP_wattmeter02_T(void)
+{
+	return getStatus(ID_SRV_EP_wattmeter02_T);
+}
+
+int
+doWrite_SRV_EP_wattmeter03_P(int16_t value)
+{
+	return doWrite(ID_SRV_EP_wattmeter03_P, &value);
+}
+
+int
+addWrite_SRV_EP_wattmeter03_P(int16_t value)
+{
+	return addWrite(ID_SRV_EP_wattmeter03_P, &value);
+}
+
+int
+getStatus_SRV_EP_wattmeter03_P(void)
+{
+	return getStatus(ID_SRV_EP_wattmeter03_P);
+}
+
+int
+doWrite_SRV_EP_wattmeter03_Pmax(int16_t value)
+{
+	return doWrite(ID_SRV_EP_wattmeter03_Pmax, &value);
+}
+
+int
+addWrite_SRV_EP_wattmeter03_Pmax(int16_t value)
+{
+	return addWrite(ID_SRV_EP_wattmeter03_Pmax, &value);
+}
+
+int
+getStatus_SRV_EP_wattmeter03_Pmax(void)
+{
+	return getStatus(ID_SRV_EP_wattmeter03_Pmax);
+}
+
+int
+doWrite_SRV_EP_wattmeter03_T(u_int32_t value)
+{
+	return doWrite(ID_SRV_EP_wattmeter03_T, &value);
+}
+
+int
+addWrite_SRV_EP_wattmeter03_T(u_int32_t value)
+{
+	return addWrite(ID_SRV_EP_wattmeter03_T, &value);
+}
+
+int
+getStatus_SRV_EP_wattmeter03_T(void)
+{
+	return getStatus(ID_SRV_EP_wattmeter03_T);
+}
+
+int
+doWrite_SRV_EP_wattmeter04_P(int16_t value)
+{
+	return doWrite(ID_SRV_EP_wattmeter04_P, &value);
+}
+
+int
+addWrite_SRV_EP_wattmeter04_P(int16_t value)
+{
+	return addWrite(ID_SRV_EP_wattmeter04_P, &value);
+}
+
+int
+getStatus_SRV_EP_wattmeter04_P(void)
+{
+	return getStatus(ID_SRV_EP_wattmeter04_P);
+}
+
+int
+doWrite_SRV_EP_wattmeter04_Pmax(int16_t value)
+{
+	return doWrite(ID_SRV_EP_wattmeter04_Pmax, &value);
+}
+
+int
+addWrite_SRV_EP_wattmeter04_Pmax(int16_t value)
+{
+	return addWrite(ID_SRV_EP_wattmeter04_Pmax, &value);
+}
+
+int
+getStatus_SRV_EP_wattmeter04_Pmax(void)
+{
+	return getStatus(ID_SRV_EP_wattmeter04_Pmax);
+}
+
+int
+doWrite_SRV_EP_wattmeter04_T(u_int32_t value)
+{
+	return doWrite(ID_SRV_EP_wattmeter04_T, &value);
+}
+
+int
+addWrite_SRV_EP_wattmeter04_T(u_int32_t value)
+{
+	return addWrite(ID_SRV_EP_wattmeter04_T, &value);
+}
+
+int
+getStatus_SRV_EP_wattmeter04_T(void)
+{
+	return getStatus(ID_SRV_EP_wattmeter04_T);
+}
+
+int
+doWrite_SRV_EP_wattmeter05_P(int16_t value)
+{
+	return doWrite(ID_SRV_EP_wattmeter05_P, &value);
+}
+
+int
+addWrite_SRV_EP_wattmeter05_P(int16_t value)
+{
+	return addWrite(ID_SRV_EP_wattmeter05_P, &value);
+}
+
+int
+getStatus_SRV_EP_wattmeter05_P(void)
+{
+	return getStatus(ID_SRV_EP_wattmeter05_P);
+}
+
+int
+doWrite_SRV_EP_wattmeter05_Pmax(int16_t value)
+{
+	return doWrite(ID_SRV_EP_wattmeter05_Pmax, &value);
+}
+
+int
+addWrite_SRV_EP_wattmeter05_Pmax(int16_t value)
+{
+	return addWrite(ID_SRV_EP_wattmeter05_Pmax, &value);
+}
+
+int
+getStatus_SRV_EP_wattmeter05_Pmax(void)
+{
+	return getStatus(ID_SRV_EP_wattmeter05_Pmax);
+}
+
+int
+doWrite_SRV_EP_wattmeter05_T(u_int32_t value)
+{
+	return doWrite(ID_SRV_EP_wattmeter05_T, &value);
+}
+
+int
+addWrite_SRV_EP_wattmeter05_T(u_int32_t value)
+{
+	return addWrite(ID_SRV_EP_wattmeter05_T, &value);
+}
+
+int
+getStatus_SRV_EP_wattmeter05_T(void)
+{
+	return getStatus(ID_SRV_EP_wattmeter05_T);
+}
+
+int
+doWrite_SRV_EP_wattmeter06_P(int16_t value)
+{
+	return doWrite(ID_SRV_EP_wattmeter06_P, &value);
+}
+
+int
+addWrite_SRV_EP_wattmeter06_P(int16_t value)
+{
+	return addWrite(ID_SRV_EP_wattmeter06_P, &value);
+}
+
+int
+getStatus_SRV_EP_wattmeter06_P(void)
+{
+	return getStatus(ID_SRV_EP_wattmeter06_P);
+}
+
+int
+doWrite_SRV_EP_wattmeter06_Pmax(int16_t value)
+{
+	return doWrite(ID_SRV_EP_wattmeter06_Pmax, &value);
+}
+
+int
+addWrite_SRV_EP_wattmeter06_Pmax(int16_t value)
+{
+	return addWrite(ID_SRV_EP_wattmeter06_Pmax, &value);
+}
+
+int
+getStatus_SRV_EP_wattmeter06_Pmax(void)
+{
+	return getStatus(ID_SRV_EP_wattmeter06_Pmax);
+}
+
+int
+doWrite_SRV_EP_wattmeter06_T(u_int32_t value)
+{
+	return doWrite(ID_SRV_EP_wattmeter06_T, &value);
+}
+
+int
+addWrite_SRV_EP_wattmeter06_T(u_int32_t value)
+{
+	return addWrite(ID_SRV_EP_wattmeter06_T, &value);
+}
+
+int
+getStatus_SRV_EP_wattmeter06_T(void)
+{
+	return getStatus(ID_SRV_EP_wattmeter06_T);
+}
+
+int
+doWrite_SRV_EP_wattmeter07_P(int16_t value)
+{
+	return doWrite(ID_SRV_EP_wattmeter07_P, &value);
+}
+
+int
+addWrite_SRV_EP_wattmeter07_P(int16_t value)
+{
+	return addWrite(ID_SRV_EP_wattmeter07_P, &value);
+}
+
+int
+getStatus_SRV_EP_wattmeter07_P(void)
+{
+	return getStatus(ID_SRV_EP_wattmeter07_P);
+}
+
+int
+doWrite_SRV_EP_wattmeter07_Pmax(int16_t value)
+{
+	return doWrite(ID_SRV_EP_wattmeter07_Pmax, &value);
+}
+
+int
+addWrite_SRV_EP_wattmeter07_Pmax(int16_t value)
+{
+	return addWrite(ID_SRV_EP_wattmeter07_Pmax, &value);
+}
+
+int
+getStatus_SRV_EP_wattmeter07_Pmax(void)
+{
+	return getStatus(ID_SRV_EP_wattmeter07_Pmax);
+}
+
+int
+doWrite_SRV_EP_wattmeter07_T(u_int32_t value)
+{
+	return doWrite(ID_SRV_EP_wattmeter07_T, &value);
+}
+
+int
+addWrite_SRV_EP_wattmeter07_T(u_int32_t value)
+{
+	return addWrite(ID_SRV_EP_wattmeter07_T, &value);
+}
+
+int
+getStatus_SRV_EP_wattmeter07_T(void)
+{
+	return getStatus(ID_SRV_EP_wattmeter07_T);
+}
+
+int
+doWrite_SRV_EP_wattmeter08_P(int16_t value)
+{
+	return doWrite(ID_SRV_EP_wattmeter08_P, &value);
+}
+
+int
+addWrite_SRV_EP_wattmeter08_P(int16_t value)
+{
+	return addWrite(ID_SRV_EP_wattmeter08_P, &value);
+}
+
+int
+getStatus_SRV_EP_wattmeter08_P(void)
+{
+	return getStatus(ID_SRV_EP_wattmeter08_P);
+}
+
+int
+doWrite_SRV_EP_wattmeter08_Pmax(int16_t value)
+{
+	return doWrite(ID_SRV_EP_wattmeter08_Pmax, &value);
+}
+
+int
+addWrite_SRV_EP_wattmeter08_Pmax(int16_t value)
+{
+	return addWrite(ID_SRV_EP_wattmeter08_Pmax, &value);
+}
+
+int
+getStatus_SRV_EP_wattmeter08_Pmax(void)
+{
+	return getStatus(ID_SRV_EP_wattmeter08_Pmax);
+}
+
+int
+doWrite_SRV_EP_wattmeter08_T(u_int32_t value)
+{
+	return doWrite(ID_SRV_EP_wattmeter08_T, &value);
+}
+
+int
+addWrite_SRV_EP_wattmeter08_T(u_int32_t value)
+{
+	return addWrite(ID_SRV_EP_wattmeter08_T, &value);
+}
+
+int
+getStatus_SRV_EP_wattmeter08_T(void)
+{
+	return getStatus(ID_SRV_EP_wattmeter08_T);
+}
+
+int
+doWrite_SRV_EP_wattmeter09_P(int16_t value)
+{
+	return doWrite(ID_SRV_EP_wattmeter09_P, &value);
+}
+
+int
+addWrite_SRV_EP_wattmeter09_P(int16_t value)
+{
+	return addWrite(ID_SRV_EP_wattmeter09_P, &value);
+}
+
+int
+getStatus_SRV_EP_wattmeter09_P(void)
+{
+	return getStatus(ID_SRV_EP_wattmeter09_P);
+}
+
+int
+doWrite_SRV_EP_wattmeter09_Pmax(int16_t value)
+{
+	return doWrite(ID_SRV_EP_wattmeter09_Pmax, &value);
+}
+
+int
+addWrite_SRV_EP_wattmeter09_Pmax(int16_t value)
+{
+	return addWrite(ID_SRV_EP_wattmeter09_Pmax, &value);
+}
+
+int
+getStatus_SRV_EP_wattmeter09_Pmax(void)
+{
+	return getStatus(ID_SRV_EP_wattmeter09_Pmax);
+}
+
+int
+doWrite_SRV_EP_wattmeter09_T(u_int32_t value)
+{
+	return doWrite(ID_SRV_EP_wattmeter09_T, &value);
+}
+
+int
+addWrite_SRV_EP_wattmeter09_T(u_int32_t value)
+{
+	return addWrite(ID_SRV_EP_wattmeter09_T, &value);
+}
+
+int
+getStatus_SRV_EP_wattmeter09_T(void)
+{
+	return getStatus(ID_SRV_EP_wattmeter09_T);
+}
+
+int
+doWrite_SRV_EP_wattmeter10_P(int16_t value)
+{
+	return doWrite(ID_SRV_EP_wattmeter10_P, &value);
+}
+
+int
+addWrite_SRV_EP_wattmeter10_P(int16_t value)
+{
+	return addWrite(ID_SRV_EP_wattmeter10_P, &value);
+}
+
+int
+getStatus_SRV_EP_wattmeter10_P(void)
+{
+	return getStatus(ID_SRV_EP_wattmeter10_P);
+}
+
+int
+doWrite_SRV_EP_wattmeter10_Pmax(int16_t value)
+{
+	return doWrite(ID_SRV_EP_wattmeter10_Pmax, &value);
+}
+
+int
+addWrite_SRV_EP_wattmeter10_Pmax(int16_t value)
+{
+	return addWrite(ID_SRV_EP_wattmeter10_Pmax, &value);
+}
+
+int
+getStatus_SRV_EP_wattmeter10_Pmax(void)
+{
+	return getStatus(ID_SRV_EP_wattmeter10_Pmax);
+}
+
+int
+doWrite_SRV_EP_wattmeter10_T(u_int32_t value)
+{
+	return doWrite(ID_SRV_EP_wattmeter10_T, &value);
+}
+
+int
+addWrite_SRV_EP_wattmeter10_T(u_int32_t value)
+{
+	return addWrite(ID_SRV_EP_wattmeter10_T, &value);
+}
+
+int
+getStatus_SRV_EP_wattmeter10_T(void)
+{
+	return getStatus(ID_SRV_EP_wattmeter10_T);
+}
+
+int
+doWrite_SRV_EP_wattmeter11_P(int16_t value)
+{
+	return doWrite(ID_SRV_EP_wattmeter11_P, &value);
+}
+
+int
+addWrite_SRV_EP_wattmeter11_P(int16_t value)
+{
+	return addWrite(ID_SRV_EP_wattmeter11_P, &value);
+}
+
+int
+getStatus_SRV_EP_wattmeter11_P(void)
+{
+	return getStatus(ID_SRV_EP_wattmeter11_P);
+}
+
+int
+doWrite_SRV_EP_wattmeter11_Pmax(int16_t value)
+{
+	return doWrite(ID_SRV_EP_wattmeter11_Pmax, &value);
+}
+
+int
+addWrite_SRV_EP_wattmeter11_Pmax(int16_t value)
+{
+	return addWrite(ID_SRV_EP_wattmeter11_Pmax, &value);
+}
+
+int
+getStatus_SRV_EP_wattmeter11_Pmax(void)
+{
+	return getStatus(ID_SRV_EP_wattmeter11_Pmax);
+}
+
+int
+doWrite_SRV_EP_wattmeter11_T(u_int32_t value)
+{
+	return doWrite(ID_SRV_EP_wattmeter11_T, &value);
+}
+
+int
+addWrite_SRV_EP_wattmeter11_T(u_int32_t value)
+{
+	return addWrite(ID_SRV_EP_wattmeter11_T, &value);
+}
+
+int
+getStatus_SRV_EP_wattmeter11_T(void)
+{
+	return getStatus(ID_SRV_EP_wattmeter11_T);
+}
+
+int
+doWrite_SRV_EP_wattmeter12_P(int16_t value)
+{
+	return doWrite(ID_SRV_EP_wattmeter12_P, &value);
+}
+
+int
+addWrite_SRV_EP_wattmeter12_P(int16_t value)
+{
+	return addWrite(ID_SRV_EP_wattmeter12_P, &value);
+}
+
+int
+getStatus_SRV_EP_wattmeter12_P(void)
+{
+	return getStatus(ID_SRV_EP_wattmeter12_P);
+}
+
+int
+doWrite_SRV_EP_wattmeter12_Pmax(int16_t value)
+{
+	return doWrite(ID_SRV_EP_wattmeter12_Pmax, &value);
+}
+
+int
+addWrite_SRV_EP_wattmeter12_Pmax(int16_t value)
+{
+	return addWrite(ID_SRV_EP_wattmeter12_Pmax, &value);
+}
+
+int
+getStatus_SRV_EP_wattmeter12_Pmax(void)
+{
+	return getStatus(ID_SRV_EP_wattmeter12_Pmax);
+}
+
+int
+doWrite_SRV_EP_wattmeter12_T(u_int32_t value)
+{
+	return doWrite(ID_SRV_EP_wattmeter12_T, &value);
+}
+
+int
+addWrite_SRV_EP_wattmeter12_T(u_int32_t value)
+{
+	return addWrite(ID_SRV_EP_wattmeter12_T, &value);
+}
+
+int
+getStatus_SRV_EP_wattmeter12_T(void)
+{
+	return getStatus(ID_SRV_EP_wattmeter12_T);
 }
 
 int
@@ -5511,6 +6536,47 @@ update_all(void)
 	retval += readFromDb(ID_TCP_Tpart, &TCP_Tpart);
 	retval += readFromDb(ID_TCP_UPTIME_s, &TCP_UPTIME_s);
 	retval += readFromDb(ID_TCP_HH_MM, &TCP_HH_MM);
+	retval += readFromDb(ID_SRV_EP_heartbeat, &SRV_EP_heartbeat);
+	retval += readFromDb(ID_SRV_EP_enabled_wattmeters, &SRV_EP_enabled_wattmeters);
+	retval += readFromDb(ID_SRV_EP_wattmeter01_U, &SRV_EP_wattmeter01_U);
+	retval += readFromDb(ID_SRV_EP_wattmeter01_C, &SRV_EP_wattmeter01_C);
+	retval += readFromDb(ID_SRV_EP_wattmeter01_Texp, &SRV_EP_wattmeter01_Texp);
+	retval += readFromDb(ID_SRV_EP_wattmeter01_P, &SRV_EP_wattmeter01_P);
+	retval += readFromDb(ID_SRV_EP_wattmeter01_Pmax, &SRV_EP_wattmeter01_Pmax);
+	retval += readFromDb(ID_SRV_EP_wattmeter01_T, &SRV_EP_wattmeter01_T);
+	retval += readFromDb(ID_SRV_EP_wattmeter02_P, &SRV_EP_wattmeter02_P);
+	retval += readFromDb(ID_SRV_EP_wattmeter02_Pmax, &SRV_EP_wattmeter02_Pmax);
+	retval += readFromDb(ID_SRV_EP_wattmeter02_T, &SRV_EP_wattmeter02_T);
+	retval += readFromDb(ID_SRV_EP_wattmeter03_P, &SRV_EP_wattmeter03_P);
+	retval += readFromDb(ID_SRV_EP_wattmeter03_Pmax, &SRV_EP_wattmeter03_Pmax);
+	retval += readFromDb(ID_SRV_EP_wattmeter03_T, &SRV_EP_wattmeter03_T);
+	retval += readFromDb(ID_SRV_EP_wattmeter04_P, &SRV_EP_wattmeter04_P);
+	retval += readFromDb(ID_SRV_EP_wattmeter04_Pmax, &SRV_EP_wattmeter04_Pmax);
+	retval += readFromDb(ID_SRV_EP_wattmeter04_T, &SRV_EP_wattmeter04_T);
+	retval += readFromDb(ID_SRV_EP_wattmeter05_P, &SRV_EP_wattmeter05_P);
+	retval += readFromDb(ID_SRV_EP_wattmeter05_Pmax, &SRV_EP_wattmeter05_Pmax);
+	retval += readFromDb(ID_SRV_EP_wattmeter05_T, &SRV_EP_wattmeter05_T);
+	retval += readFromDb(ID_SRV_EP_wattmeter06_P, &SRV_EP_wattmeter06_P);
+	retval += readFromDb(ID_SRV_EP_wattmeter06_Pmax, &SRV_EP_wattmeter06_Pmax);
+	retval += readFromDb(ID_SRV_EP_wattmeter06_T, &SRV_EP_wattmeter06_T);
+	retval += readFromDb(ID_SRV_EP_wattmeter07_P, &SRV_EP_wattmeter07_P);
+	retval += readFromDb(ID_SRV_EP_wattmeter07_Pmax, &SRV_EP_wattmeter07_Pmax);
+	retval += readFromDb(ID_SRV_EP_wattmeter07_T, &SRV_EP_wattmeter07_T);
+	retval += readFromDb(ID_SRV_EP_wattmeter08_P, &SRV_EP_wattmeter08_P);
+	retval += readFromDb(ID_SRV_EP_wattmeter08_Pmax, &SRV_EP_wattmeter08_Pmax);
+	retval += readFromDb(ID_SRV_EP_wattmeter08_T, &SRV_EP_wattmeter08_T);
+	retval += readFromDb(ID_SRV_EP_wattmeter09_P, &SRV_EP_wattmeter09_P);
+	retval += readFromDb(ID_SRV_EP_wattmeter09_Pmax, &SRV_EP_wattmeter09_Pmax);
+	retval += readFromDb(ID_SRV_EP_wattmeter09_T, &SRV_EP_wattmeter09_T);
+	retval += readFromDb(ID_SRV_EP_wattmeter10_P, &SRV_EP_wattmeter10_P);
+	retval += readFromDb(ID_SRV_EP_wattmeter10_Pmax, &SRV_EP_wattmeter10_Pmax);
+	retval += readFromDb(ID_SRV_EP_wattmeter10_T, &SRV_EP_wattmeter10_T);
+	retval += readFromDb(ID_SRV_EP_wattmeter11_P, &SRV_EP_wattmeter11_P);
+	retval += readFromDb(ID_SRV_EP_wattmeter11_Pmax, &SRV_EP_wattmeter11_Pmax);
+	retval += readFromDb(ID_SRV_EP_wattmeter11_T, &SRV_EP_wattmeter11_T);
+	retval += readFromDb(ID_SRV_EP_wattmeter12_P, &SRV_EP_wattmeter12_P);
+	retval += readFromDb(ID_SRV_EP_wattmeter12_Pmax, &SRV_EP_wattmeter12_Pmax);
+	retval += readFromDb(ID_SRV_EP_wattmeter12_T, &SRV_EP_wattmeter12_T);
 	retval += readFromDb(ID_RTU0_TYPE_PORT, &RTU0_TYPE_PORT);
 	retval += readFromDb(ID_RTU0_BAUDRATE, &RTU0_BAUDRATE);
 	retval += readFromDb(ID_RTU0_STATUS, &RTU0_STATUS);

@@ -208,6 +208,252 @@ int doWrite_TCP_HH_MM(u_int16_t value);
 int addWrite_TCP_HH_MM(u_int16_t value);
 int getStatus_TCP_HH_MM(void);
 
+#define ID_SRV_EP_heartbeat 2000
+extern u_int16_t SRV_EP_heartbeat;	/* TCPS_STATUS NODE_09_STATUS */
+int doWrite_SRV_EP_heartbeat(u_int16_t value);
+int addWrite_SRV_EP_heartbeat(u_int16_t value);
+int getStatus_SRV_EP_heartbeat(void);
+
+#define ID_SRV_EP_enabled_wattmeters 2001
+extern u_int16_t SRV_EP_enabled_wattmeters;	/* 0 .. 12 */
+int doWrite_SRV_EP_enabled_wattmeters(u_int16_t value);
+int addWrite_SRV_EP_enabled_wattmeters(u_int16_t value);
+int getStatus_SRV_EP_enabled_wattmeters(void);
+
+#define ID_SRV_EP_wattmeter01_U 2002
+extern int16_t SRV_EP_wattmeter01_U;	/* xxx.xx V */
+int doWrite_SRV_EP_wattmeter01_U(int16_t value);
+int addWrite_SRV_EP_wattmeter01_U(int16_t value);
+int getStatus_SRV_EP_wattmeter01_U(void);
+
+#define ID_SRV_EP_wattmeter01_C 2003
+extern int16_t SRV_EP_wattmeter01_C;	/* +/- x.xxx */
+int doWrite_SRV_EP_wattmeter01_C(int16_t value);
+int addWrite_SRV_EP_wattmeter01_C(int16_t value);
+int getStatus_SRV_EP_wattmeter01_C(void);
+
+#define ID_SRV_EP_wattmeter01_Texp 2004
+extern u_int32_t SRV_EP_wattmeter01_Texp;	/* xxxxxxxxx.x kWh */
+int doWrite_SRV_EP_wattmeter01_Texp(u_int32_t value);
+int addWrite_SRV_EP_wattmeter01_Texp(u_int32_t value);
+int getStatus_SRV_EP_wattmeter01_Texp(void);
+
+#define ID_SRV_EP_wattmeter01_P 2005
+extern int16_t SRV_EP_wattmeter01_P;	/* +/- xxxx W */
+int doWrite_SRV_EP_wattmeter01_P(int16_t value);
+int addWrite_SRV_EP_wattmeter01_P(int16_t value);
+int getStatus_SRV_EP_wattmeter01_P(void);
+
+#define ID_SRV_EP_wattmeter01_Pmax 2006
+extern int16_t SRV_EP_wattmeter01_Pmax;	/* +/- xxxx W */
+int doWrite_SRV_EP_wattmeter01_Pmax(int16_t value);
+int addWrite_SRV_EP_wattmeter01_Pmax(int16_t value);
+int getStatus_SRV_EP_wattmeter01_Pmax(void);
+
+#define ID_SRV_EP_wattmeter01_T 2007
+extern u_int32_t SRV_EP_wattmeter01_T;	/* xxxxxxxxx.x kWh */
+int doWrite_SRV_EP_wattmeter01_T(u_int32_t value);
+int addWrite_SRV_EP_wattmeter01_T(u_int32_t value);
+int getStatus_SRV_EP_wattmeter01_T(void);
+
+#define ID_SRV_EP_wattmeter02_P 2008
+extern int16_t SRV_EP_wattmeter02_P;	/* +/- xxxx W */
+int doWrite_SRV_EP_wattmeter02_P(int16_t value);
+int addWrite_SRV_EP_wattmeter02_P(int16_t value);
+int getStatus_SRV_EP_wattmeter02_P(void);
+
+#define ID_SRV_EP_wattmeter02_Pmax 2009
+extern int16_t SRV_EP_wattmeter02_Pmax;	/* +/- xxxx W */
+int doWrite_SRV_EP_wattmeter02_Pmax(int16_t value);
+int addWrite_SRV_EP_wattmeter02_Pmax(int16_t value);
+int getStatus_SRV_EP_wattmeter02_Pmax(void);
+
+#define ID_SRV_EP_wattmeter02_T 2010
+extern u_int32_t SRV_EP_wattmeter02_T;	/* xxxxxxxxx.x kWh */
+int doWrite_SRV_EP_wattmeter02_T(u_int32_t value);
+int addWrite_SRV_EP_wattmeter02_T(u_int32_t value);
+int getStatus_SRV_EP_wattmeter02_T(void);
+
+#define ID_SRV_EP_wattmeter03_P 2011
+extern int16_t SRV_EP_wattmeter03_P;	/* +/- xxxx W */
+int doWrite_SRV_EP_wattmeter03_P(int16_t value);
+int addWrite_SRV_EP_wattmeter03_P(int16_t value);
+int getStatus_SRV_EP_wattmeter03_P(void);
+
+#define ID_SRV_EP_wattmeter03_Pmax 2012
+extern int16_t SRV_EP_wattmeter03_Pmax;	/* +/- xxxx W */
+int doWrite_SRV_EP_wattmeter03_Pmax(int16_t value);
+int addWrite_SRV_EP_wattmeter03_Pmax(int16_t value);
+int getStatus_SRV_EP_wattmeter03_Pmax(void);
+
+#define ID_SRV_EP_wattmeter03_T 2013
+extern u_int32_t SRV_EP_wattmeter03_T;	/* xxxxxxxxx.x kWh */
+int doWrite_SRV_EP_wattmeter03_T(u_int32_t value);
+int addWrite_SRV_EP_wattmeter03_T(u_int32_t value);
+int getStatus_SRV_EP_wattmeter03_T(void);
+
+#define ID_SRV_EP_wattmeter04_P 2014
+extern int16_t SRV_EP_wattmeter04_P;	/* +/- xxxx W */
+int doWrite_SRV_EP_wattmeter04_P(int16_t value);
+int addWrite_SRV_EP_wattmeter04_P(int16_t value);
+int getStatus_SRV_EP_wattmeter04_P(void);
+
+#define ID_SRV_EP_wattmeter04_Pmax 2015
+extern int16_t SRV_EP_wattmeter04_Pmax;	/* +/- xxxx W */
+int doWrite_SRV_EP_wattmeter04_Pmax(int16_t value);
+int addWrite_SRV_EP_wattmeter04_Pmax(int16_t value);
+int getStatus_SRV_EP_wattmeter04_Pmax(void);
+
+#define ID_SRV_EP_wattmeter04_T 2016
+extern u_int32_t SRV_EP_wattmeter04_T;	/* xxxxxxxxx.x kWh */
+int doWrite_SRV_EP_wattmeter04_T(u_int32_t value);
+int addWrite_SRV_EP_wattmeter04_T(u_int32_t value);
+int getStatus_SRV_EP_wattmeter04_T(void);
+
+#define ID_SRV_EP_wattmeter05_P 2017
+extern int16_t SRV_EP_wattmeter05_P;	/* +/- xxxx W */
+int doWrite_SRV_EP_wattmeter05_P(int16_t value);
+int addWrite_SRV_EP_wattmeter05_P(int16_t value);
+int getStatus_SRV_EP_wattmeter05_P(void);
+
+#define ID_SRV_EP_wattmeter05_Pmax 2018
+extern int16_t SRV_EP_wattmeter05_Pmax;	/* +/- xxxx W */
+int doWrite_SRV_EP_wattmeter05_Pmax(int16_t value);
+int addWrite_SRV_EP_wattmeter05_Pmax(int16_t value);
+int getStatus_SRV_EP_wattmeter05_Pmax(void);
+
+#define ID_SRV_EP_wattmeter05_T 2019
+extern u_int32_t SRV_EP_wattmeter05_T;	/* xxxxxxxxx.x kWh */
+int doWrite_SRV_EP_wattmeter05_T(u_int32_t value);
+int addWrite_SRV_EP_wattmeter05_T(u_int32_t value);
+int getStatus_SRV_EP_wattmeter05_T(void);
+
+#define ID_SRV_EP_wattmeter06_P 2020
+extern int16_t SRV_EP_wattmeter06_P;	/* +/- xxxx W */
+int doWrite_SRV_EP_wattmeter06_P(int16_t value);
+int addWrite_SRV_EP_wattmeter06_P(int16_t value);
+int getStatus_SRV_EP_wattmeter06_P(void);
+
+#define ID_SRV_EP_wattmeter06_Pmax 2021
+extern int16_t SRV_EP_wattmeter06_Pmax;	/* +/- xxxx W */
+int doWrite_SRV_EP_wattmeter06_Pmax(int16_t value);
+int addWrite_SRV_EP_wattmeter06_Pmax(int16_t value);
+int getStatus_SRV_EP_wattmeter06_Pmax(void);
+
+#define ID_SRV_EP_wattmeter06_T 2022
+extern u_int32_t SRV_EP_wattmeter06_T;	/* xxxxxxxxx.x kWh */
+int doWrite_SRV_EP_wattmeter06_T(u_int32_t value);
+int addWrite_SRV_EP_wattmeter06_T(u_int32_t value);
+int getStatus_SRV_EP_wattmeter06_T(void);
+
+#define ID_SRV_EP_wattmeter07_P 2023
+extern int16_t SRV_EP_wattmeter07_P;	/* +/- xxxx W */
+int doWrite_SRV_EP_wattmeter07_P(int16_t value);
+int addWrite_SRV_EP_wattmeter07_P(int16_t value);
+int getStatus_SRV_EP_wattmeter07_P(void);
+
+#define ID_SRV_EP_wattmeter07_Pmax 2024
+extern int16_t SRV_EP_wattmeter07_Pmax;	/* +/- xxxx W */
+int doWrite_SRV_EP_wattmeter07_Pmax(int16_t value);
+int addWrite_SRV_EP_wattmeter07_Pmax(int16_t value);
+int getStatus_SRV_EP_wattmeter07_Pmax(void);
+
+#define ID_SRV_EP_wattmeter07_T 2025
+extern u_int32_t SRV_EP_wattmeter07_T;	/* xxxxxxxxx.x kWh */
+int doWrite_SRV_EP_wattmeter07_T(u_int32_t value);
+int addWrite_SRV_EP_wattmeter07_T(u_int32_t value);
+int getStatus_SRV_EP_wattmeter07_T(void);
+
+#define ID_SRV_EP_wattmeter08_P 2026
+extern int16_t SRV_EP_wattmeter08_P;	/* +/- xxxx W */
+int doWrite_SRV_EP_wattmeter08_P(int16_t value);
+int addWrite_SRV_EP_wattmeter08_P(int16_t value);
+int getStatus_SRV_EP_wattmeter08_P(void);
+
+#define ID_SRV_EP_wattmeter08_Pmax 2027
+extern int16_t SRV_EP_wattmeter08_Pmax;	/* +/- xxxx W */
+int doWrite_SRV_EP_wattmeter08_Pmax(int16_t value);
+int addWrite_SRV_EP_wattmeter08_Pmax(int16_t value);
+int getStatus_SRV_EP_wattmeter08_Pmax(void);
+
+#define ID_SRV_EP_wattmeter08_T 2028
+extern u_int32_t SRV_EP_wattmeter08_T;	/* xxxxxxxxx.x kWh */
+int doWrite_SRV_EP_wattmeter08_T(u_int32_t value);
+int addWrite_SRV_EP_wattmeter08_T(u_int32_t value);
+int getStatus_SRV_EP_wattmeter08_T(void);
+
+#define ID_SRV_EP_wattmeter09_P 2029
+extern int16_t SRV_EP_wattmeter09_P;	/* +/- xxxx W */
+int doWrite_SRV_EP_wattmeter09_P(int16_t value);
+int addWrite_SRV_EP_wattmeter09_P(int16_t value);
+int getStatus_SRV_EP_wattmeter09_P(void);
+
+#define ID_SRV_EP_wattmeter09_Pmax 2030
+extern int16_t SRV_EP_wattmeter09_Pmax;	/* +/- xxxx W */
+int doWrite_SRV_EP_wattmeter09_Pmax(int16_t value);
+int addWrite_SRV_EP_wattmeter09_Pmax(int16_t value);
+int getStatus_SRV_EP_wattmeter09_Pmax(void);
+
+#define ID_SRV_EP_wattmeter09_T 2031
+extern u_int32_t SRV_EP_wattmeter09_T;	/* xxxxxxxxx.x kWh */
+int doWrite_SRV_EP_wattmeter09_T(u_int32_t value);
+int addWrite_SRV_EP_wattmeter09_T(u_int32_t value);
+int getStatus_SRV_EP_wattmeter09_T(void);
+
+#define ID_SRV_EP_wattmeter10_P 2032
+extern int16_t SRV_EP_wattmeter10_P;	/* +/- xxxx W */
+int doWrite_SRV_EP_wattmeter10_P(int16_t value);
+int addWrite_SRV_EP_wattmeter10_P(int16_t value);
+int getStatus_SRV_EP_wattmeter10_P(void);
+
+#define ID_SRV_EP_wattmeter10_Pmax 2033
+extern int16_t SRV_EP_wattmeter10_Pmax;	/* +/- xxxx W */
+int doWrite_SRV_EP_wattmeter10_Pmax(int16_t value);
+int addWrite_SRV_EP_wattmeter10_Pmax(int16_t value);
+int getStatus_SRV_EP_wattmeter10_Pmax(void);
+
+#define ID_SRV_EP_wattmeter10_T 2034
+extern u_int32_t SRV_EP_wattmeter10_T;	/* xxxxxxxxx.x kWh */
+int doWrite_SRV_EP_wattmeter10_T(u_int32_t value);
+int addWrite_SRV_EP_wattmeter10_T(u_int32_t value);
+int getStatus_SRV_EP_wattmeter10_T(void);
+
+#define ID_SRV_EP_wattmeter11_P 2035
+extern int16_t SRV_EP_wattmeter11_P;	/* +/- xxxx W */
+int doWrite_SRV_EP_wattmeter11_P(int16_t value);
+int addWrite_SRV_EP_wattmeter11_P(int16_t value);
+int getStatus_SRV_EP_wattmeter11_P(void);
+
+#define ID_SRV_EP_wattmeter11_Pmax 2036
+extern int16_t SRV_EP_wattmeter11_Pmax;	/* +/- xxxx W */
+int doWrite_SRV_EP_wattmeter11_Pmax(int16_t value);
+int addWrite_SRV_EP_wattmeter11_Pmax(int16_t value);
+int getStatus_SRV_EP_wattmeter11_Pmax(void);
+
+#define ID_SRV_EP_wattmeter11_T 2037
+extern u_int32_t SRV_EP_wattmeter11_T;	/* xxxxxxxxx.x kWh */
+int doWrite_SRV_EP_wattmeter11_T(u_int32_t value);
+int addWrite_SRV_EP_wattmeter11_T(u_int32_t value);
+int getStatus_SRV_EP_wattmeter11_T(void);
+
+#define ID_SRV_EP_wattmeter12_P 2038
+extern int16_t SRV_EP_wattmeter12_P;	/* +/- xxxx W */
+int doWrite_SRV_EP_wattmeter12_P(int16_t value);
+int addWrite_SRV_EP_wattmeter12_P(int16_t value);
+int getStatus_SRV_EP_wattmeter12_P(void);
+
+#define ID_SRV_EP_wattmeter12_Pmax 2039
+extern int16_t SRV_EP_wattmeter12_Pmax;	/* +/- xxxx W */
+int doWrite_SRV_EP_wattmeter12_Pmax(int16_t value);
+int addWrite_SRV_EP_wattmeter12_Pmax(int16_t value);
+int getStatus_SRV_EP_wattmeter12_Pmax(void);
+
+#define ID_SRV_EP_wattmeter12_T 2040
+extern u_int32_t SRV_EP_wattmeter12_T;	/* xxxxxxxxx.x kWh */
+int doWrite_SRV_EP_wattmeter12_T(u_int32_t value);
+int addWrite_SRV_EP_wattmeter12_T(u_int32_t value);
+int getStatus_SRV_EP_wattmeter12_T(void);
+
 #define ID_RTU0_TYPE_PORT 5000
 extern u_int32_t RTU0_TYPE_PORT;
 int doWrite_RTU0_TYPE_PORT(u_int32_t value);
