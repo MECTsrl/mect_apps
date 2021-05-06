@@ -24,12 +24,13 @@ void printVncDisplayString(char * vncString)
 #ifdef VERSATILE_APPLICATION
     // what the wizard wrote in template.pri?
     int phys_width = WIDTH, phys_height = HEIGHT, rot = ROTATION;
+
     if (rot == 270 || rot == 90) {
         phys_width = HEIGHT;
         phys_height = WIDTH;
     }
     // what the kernel knows? ---> maybe a different display size
-    QFile virtual_size("/sys/devices/platform/mxs-fb.0/graphics/fb0/virtual_size");
+    QFile virtual_size("/sys/class/graphics/fb0/virtual_size");
     if (virtual_size.open(QIODevice::ReadOnly)) {
         char buf[42];
 
