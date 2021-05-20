@@ -185,6 +185,9 @@ recipes_TPAC1008_03_AD.path = /local/data/recipe/TPAC1008_03_AD
 recipes_TPX1043_03_C.files = recipes/TPX1043_03_C/1.csv recipes/TPX1043_03_C/2.csv
 recipes_TPX1043_03_C.path = /local/data/recipe/TPX1043_03_C
 
+recipes_TPX1070_03_D.files = recipes/TPX1070_03_D/1.csv recipes/TPX1070_03_D/2.csv
+recipes_TPX1070_03_D.path = /local/data/recipe/TPX1070_03_D
+
 recipes_TPX1070_03_E.files = recipes/TPX1070_03_E/1.csv recipes/TPX1070_03_E/2.csv
 recipes_TPX1070_03_E.path = /local/data/recipe/TPX1070_03_E
 
