@@ -822,6 +822,14 @@ ON</string>
    <property name="visibilityVar">
     <string/>
    </property>
+   <property name="onIcon">
+    <iconset resource="systemicons.qrc">
+     <normaloff>:/systemicons/LedOff.png</normaloff>:/systemicons/LedOff.png</iconset>
+   </property>
+   <property name="offIcon">
+    <iconset resource="systemicons.qrc">
+     <normaloff>:/systemicons/LedOn.png</normaloff>:/systemicons/LedOn.png</iconset>
+   </property>
   </widget>
   <widget class="Line" name="line_vt_2">
    <property name="geometry">
@@ -1927,7 +1935,9 @@ then touch me</string>
    <header>atcmplugin.h</header>
   </customwidget>
  </customwidgets>
- <resources/>
+ <resources>
+  <include location="systemicons.qrc"/>
+ </resources>
  <connections>
   <connection>
    <sender>atcmButton_16</sender>
