@@ -19,6 +19,10 @@ u_int32_t variablesBuffer[FIRST_DIAG_VAR - 1];  // The raw type of CrossTable Va
 /* put here the initalization */
 void setup(void)
 {
+	while (PLC_EngineStatus < 2)  { 
+            fprintf(stderr, "*");
+            sleep(1);
+    }
     QString fileDump = QString("/local/root/dumpVars.bin");
     if (QFile::exists(fileDump))  {
         if (restoreVariables(ID_HMI_1_Start_H_1, 40, fileDump))  {
