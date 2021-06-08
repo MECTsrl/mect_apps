@@ -998,16 +998,16 @@
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
-3;P;TCP_U                          ;UINT     ;0   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;1     ;1001;10  ;[RW]URMS phase 1
-3;P;TCP_I                          ;UINT     ;1   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;2     ;1001;10  ;[RW]IRMS phase 1
-3;P;TCP_P                          ;UINT     ;2   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;3     ;1001;10  ;[RW]PRMS phase 1
-3;P;TCP_Q                          ;INT      ;2   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;4     ;1001;10  ;[RW]QRMS phase 1
-3;P;TCP_C                          ;INT      ;2   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;5     ;1001;10  ;[RW]cos phi phase 1
-3;P;TCP_Pmax                       ;UINT     ;2   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;6     ;1001;10  ;[RW]PRMS phase 1 (max)
-3;P;TCP_Ttotal                     ;UDINTCDAB;2   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;7     ;1001;10  ;[RW]WT1 totale Contatore energia Totale Tariffa 1
-3;P;TCP_Tpart                      ;UDINTCDAB;2   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;9     ;1001;10  ;[RW]WT1 parziale Contatore energia Parziale Tariffa 1
-3;P;TCP_UPTIME_s                   ;UDINT    ;0   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;11    ;1001;10  ;[RW]
-3;P;TCP_HH_MM                      ;UINT     ;2   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;13    ;1001;10  ;[RW]
+3;P;TCP_U                          ;UINT     ;0   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;1001  ;1001;10  ;[RW]URMS phase 1
+3;P;TCP_I                          ;UINT     ;1   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;1002  ;1001;10  ;[RW]IRMS phase 1
+3;P;TCP_P                          ;UINT     ;2   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;1003  ;1001;10  ;[RW]PRMS phase 1
+3;P;TCP_Q                          ;INT      ;2   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;1004  ;1001;10  ;[RW]QRMS phase 1
+3;P;TCP_C                          ;INT      ;2   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;1005  ;1001;10  ;[RW]cos phi phase 1
+3;P;TCP_Pmax                       ;UINT     ;2   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;1006  ;1001;10  ;[RW]PRMS phase 1 (max)
+3;P;TCP_Ttotal                     ;UDINTCDAB;2   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;1007  ;1001;10  ;[RW]WT1 totale Contatore energia Totale Tariffa 1
+3;P;TCP_Tpart                      ;UDINTCDAB;2   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;1009  ;1001;10  ;[RW]WT1 parziale Contatore energia Parziale Tariffa 1
+3;P;TCP_UPTIME_s                   ;UDINT    ;0   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;1011  ;1001;10  ;[RW]
+3;P;TCP_HH_MM                      ;UINT     ;2   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;1013  ;1001;10  ;[RW]
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
@@ -1997,47 +1997,47 @@
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
+2;P;SRV_EP_heartbeat               ;UINT     ;0   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;0     ;2000;41  ;[RW]TCPS_STATUS NODE_09_STATUS
+2;P;SRV_EP_enabled_wattmeters      ;UINT     ;0   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;1     ;2000;41  ;[RW]0 .. 12
+2;P;SRV_EP_wattmeter01_U           ;INT      ;2   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;2     ;2000;41  ;[RW]xxx.xx V
+2;P;SRV_EP_wattmeter01_C           ;INT      ;3   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;3     ;2000;41  ;[RW]+/- x.xxx
+2;P;SRV_EP_wattmeter01_Texp        ;UDINT    ;1   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;4     ;2000;41  ;[RW]xxxxxxxxx.x kWh
+2;P;SRV_EP_wattmeter01_P           ;INT      ;0   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;6     ;2000;41  ;[RW]+/- xxxx W
+2;P;SRV_EP_wattmeter01_Pmax        ;INT      ;0   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;7     ;2000;41  ;[RW]+/- xxxx W
+2;P;SRV_EP_wattmeter01_T           ;UDINT    ;1   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;8     ;2000;41  ;[RW]xxxxxxxxx.x kWh
+2;P;SRV_EP_wattmeter02_P           ;INT      ;0   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;10    ;2000;41  ;[RW]+/- xxxx W
+2;P;SRV_EP_wattmeter02_Pmax        ;INT      ;0   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;11    ;2000;41  ;[RW]+/- xxxx W
+2;P;SRV_EP_wattmeter02_T           ;UDINT    ;1   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;12    ;2000;41  ;[RW]xxxxxxxxx.x kWh
+2;P;SRV_EP_wattmeter03_P           ;INT      ;0   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;14    ;2000;41  ;[RW]+/- xxxx W
+2;P;SRV_EP_wattmeter03_Pmax        ;INT      ;0   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;15    ;2000;41  ;[RW]+/- xxxx W
+2;P;SRV_EP_wattmeter03_T           ;UDINT    ;1   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;16    ;2000;41  ;[RW]xxxxxxxxx.x kWh
+2;P;SRV_EP_wattmeter04_P           ;INT      ;0   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;18    ;2000;41  ;[RW]+/- xxxx W
+2;P;SRV_EP_wattmeter04_Pmax        ;INT      ;0   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;19    ;2000;41  ;[RW]+/- xxxx W
+2;P;SRV_EP_wattmeter04_T           ;UDINT    ;1   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;20    ;2000;41  ;[RW]xxxxxxxxx.x kWh
+2;P;SRV_EP_wattmeter05_P           ;INT      ;0   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;22    ;2000;41  ;[RW]+/- xxxx W
+2;P;SRV_EP_wattmeter05_Pmax        ;INT      ;0   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;23    ;2000;41  ;[RW]+/- xxxx W
+2;P;SRV_EP_wattmeter05_T           ;UDINT    ;1   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;24    ;2000;41  ;[RW]xxxxxxxxx.x kWh
+2;P;SRV_EP_wattmeter06_P           ;INT      ;0   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;26    ;2000;41  ;[RW]+/- xxxx W
+2;P;SRV_EP_wattmeter06_Pmax        ;INT      ;0   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;27    ;2000;41  ;[RW]+/- xxxx W
+2;P;SRV_EP_wattmeter06_T           ;UDINT    ;1   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;28    ;2000;41  ;[RW]xxxxxxxxx.x kWh
+2;P;SRV_EP_wattmeter07_P           ;INT      ;0   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;30    ;2000;41  ;[RW]+/- xxxx W
+2;P;SRV_EP_wattmeter07_Pmax        ;INT      ;0   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;31    ;2000;41  ;[RW]+/- xxxx W
+2;P;SRV_EP_wattmeter07_T           ;UDINT    ;1   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;32    ;2000;41  ;[RW]xxxxxxxxx.x kWh
+2;P;SRV_EP_wattmeter08_P           ;INT      ;0   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;34    ;2000;41  ;[RW]+/- xxxx W
+2;P;SRV_EP_wattmeter08_Pmax        ;INT      ;0   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;35    ;2000;41  ;[RW]+/- xxxx W
+2;P;SRV_EP_wattmeter08_T           ;UDINT    ;1   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;36    ;2000;41  ;[RW]xxxxxxxxx.x kWh
+2;P;SRV_EP_wattmeter09_P           ;INT      ;0   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;38    ;2000;41  ;[RW]+/- xxxx W
+2;P;SRV_EP_wattmeter09_Pmax        ;INT      ;0   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;39    ;2000;41  ;[RW]+/- xxxx W
+2;P;SRV_EP_wattmeter09_T           ;UDINT    ;1   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;40    ;2000;41  ;[RW]xxxxxxxxx.x kWh
+2;P;SRV_EP_wattmeter10_P           ;INT      ;0   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;42    ;2000;41  ;[RW]+/- xxxx W
+2;P;SRV_EP_wattmeter10_Pmax        ;INT      ;0   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;43    ;2000;41  ;[RW]+/- xxxx W
+2;P;SRV_EP_wattmeter10_T           ;UDINT    ;1   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;44    ;2000;41  ;[RW]xxxxxxxxx.x kWh
+2;P;SRV_EP_wattmeter11_P           ;INT      ;0   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;46    ;2000;41  ;[RW]+/- xxxx W
+2;P;SRV_EP_wattmeter11_Pmax        ;INT      ;0   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;47    ;2000;41  ;[RW]+/- xxxx W
+2;P;SRV_EP_wattmeter11_T           ;UDINT    ;1   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;48    ;2000;41  ;[RW]xxxxxxxxx.x kWh
+2;P;SRV_EP_wattmeter12_P           ;INT      ;0   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;50    ;2000;41  ;[RW]+/- xxxx W
+2;P;SRV_EP_wattmeter12_Pmax        ;INT      ;0   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;51    ;2000;41  ;[RW]+/- xxxx W
+2;P;SRV_EP_wattmeter12_T           ;UDINT    ;1   ;TCP_SRV   ;0.0.0.0        ;502 ;1   ;52    ;2000;41  ;[RW]xxxxxxxxx.x kWh
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;

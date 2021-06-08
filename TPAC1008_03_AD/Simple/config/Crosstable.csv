@@ -5326,8 +5326,8 @@
 1;P;PLC_AnIn_2                     ;INT      ;3   ;CANOPEN   ;               ;0   ;1   ;10    ;5321;34  ;[RO]Analog input 2 value
 1;P;PLC_AnIn_3                     ;INT      ;3   ;CANOPEN   ;               ;0   ;1   ;11    ;5321;34  ;[RO]Analog input 3 value
 1;P;PLC_AnIn_4                     ;INT      ;3   ;CANOPEN   ;               ;0   ;1   ;12    ;5321;34  ;[RO]Analog input 4 value
-1;P;PLC_EncoderCo_Lo               ;UINT     ;1   ;CANOPEN   ;               ;0   ;1   ;13    ;5321;34  ;[RO]Encoder reading (LOW)
-1;P;PLC_EncoderCo_Hi               ;UINT     ;1   ;CANOPEN   ;               ;0   ;1   ;14    ;5321;34  ;[RO]Encoder reading (HIGH)
+1;P;PLC_EncoderCo_Lo               ;UINT     ;0   ;CANOPEN   ;               ;0   ;1   ;13    ;5321;34  ;[RO]Encoder reading (LOW)
+1;P;PLC_EncoderCo_Hi               ;UINT     ;0   ;CANOPEN   ;               ;0   ;1   ;14    ;5321;34  ;[RO]Encoder reading (HIGH)
 1;P;PLC_CaptureT1_Lo               ;UINT     ;0   ;CANOPEN   ;               ;0   ;1   ;15    ;5321;34  ;[RO]Time between 2 input edges (LOW)
 1;P;PLC_CaptureT1_Hi               ;UINT     ;0   ;CANOPEN   ;               ;0   ;1   ;16    ;5321;34  ;[RO]Time between 2 input edges (HIGH)
 1;P;PLC_CaptureT2_Lo               ;UINT     ;0   ;CANOPEN   ;               ;0   ;1   ;17    ;5321;34  ;[RO]Time between 2 input edges (LOW)
