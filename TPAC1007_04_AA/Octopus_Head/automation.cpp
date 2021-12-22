@@ -372,7 +372,7 @@ static void doReload()
     snprintf(filename, 256, "%s/Values/%s.csv", RECIPE_DIR, recipe_name[TEST_ID]);
     v = loadRecipe(filename, &valuesIndexes, valuesTable);
 
-    if (z == 1 && t > 0 && v > 0 && t == v) {
+    if (z == 1 && t > 0 && v > 0 && t <= v) {
         doWrite_TEST_STEP_MAX(t);
         doWrite_DO_RELOAD(0);
     } else {
