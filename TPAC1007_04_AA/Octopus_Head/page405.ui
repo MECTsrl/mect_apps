@@ -156,6 +156,9 @@ set</string>
    </property>
   </widget>
   <widget class="ATCMlabel" name="atcmLabel_PLC_Heartbeat_2">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
    <property name="geometry">
     <rect>
      <x>240</x>
@@ -1549,7 +1552,7 @@ W/R</string>
     <number>0</number>
    </property>
   </widget>
-  <widget class="ATCMbutton" name="atcmButton_16">
+  <widget class="ATCMbutton" name="atcmButton_page201">
    <property name="geometry">
     <rect>
      <x>240</x>
@@ -1596,10 +1599,13 @@ W/R</string>
     <string/>
    </property>
    <property name="borderWidth">
-    <number>0</number>
+    <number>2</number>
    </property>
    <property name="borderRadius">
-    <number>0</number>
+    <number>24</number>
+   </property>
+   <property name="apparence">
+    <enum>QFrame::Plain</enum>
    </property>
   </widget>
   <widget class="ATCMled" name="atcmLed_VAL_CAN1_RD_2">
@@ -1728,7 +1734,7 @@ W/R</string>
      <normaloff>:/off.png</normaloff>:/off.png</iconset>
    </property>
   </widget>
-  <widget class="ATCMbutton" name="atcmButton_6">
+  <widget class="ATCMbutton" name="atcmButton_page400">
    <property name="geometry">
     <rect>
      <x>1</x>
@@ -2879,6 +2885,9 @@ max</string>
    </property>
   </widget>
   <widget class="ATCMlabel" name="atcmLabel_PLC_Heartbeat">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
    <property name="geometry">
     <rect>
      <x>240</x>
@@ -4185,7 +4194,7 @@ config</string>
     <number>0</number>
    </property>
   </widget>
-  <widget class="ATCMbutton" name="atcmButton_2">
+  <widget class="ATCMbutton" name="atcmButton_REPEAT">
    <property name="geometry">
     <rect>
      <x>60</x>
@@ -4439,7 +4448,7 @@ fbk</string>
      <normaloff>:/off.png</normaloff>:/off.png</iconset>
    </property>
   </widget>
-  <widget class="ATCMbutton" name="atcmButton">
+  <widget class="ATCMbutton" name="atcmButton_AUTO">
    <property name="geometry">
     <rect>
      <x>0</x>
@@ -4633,8 +4642,7 @@ fbk</string>
   <zorder>atcmLabel_RES_FWrevision</zorder>
   <zorder>atcmLabel</zorder>
   <zorder>atcmLabelAnOut_6</zorder>
-  <zorder>atcmButton_16</zorder>
-  <zorder>atcmButton_6</zorder>
+  <zorder>atcmButton_page400</zorder>
   <zorder>label_PLC_AnOut_11</zorder>
   <zorder>atcmLabel_RES_mA_fbk</zorder>
   <zorder>label_PLC_AnOut_1</zorder>
@@ -4659,10 +4667,10 @@ fbk</string>
   <zorder>atcmLabel_RES_RPM</zorder>
   <zorder>label_PLC_AnOut_7</zorder>
   <zorder>atcmLabel_RES_VCC_fbk</zorder>
-  <zorder>atcmButton_2</zorder>
+  <zorder>atcmButton_REPEAT</zorder>
   <zorder>label_PLC_AnOut_4</zorder>
   <zorder>atcmComboBox</zorder>
-  <zorder>atcmButton</zorder>
+  <zorder>atcmButton_AUTO</zorder>
   <zorder>atcmLed_PLC_AnOut_7</zorder>
   <zorder>atcmLed_RES_RTU1_RD</zorder>
   <zorder>atcmLed_PLC_AnOut_5</zorder>
@@ -4722,6 +4730,7 @@ fbk</string>
   <zorder>line_hr_4</zorder>
   <zorder>line_hr_2</zorder>
   <zorder>line_vt_2</zorder>
+  <zorder>atcmButton_page201</zorder>
  </widget>
  <customwidgets>
   <customwidget>
@@ -4748,7 +4757,7 @@ fbk</string>
  <resources/>
  <connections>
   <connection>
-   <sender>atcmButton_16</sender>
+   <sender>atcmButton_page201</sender>
    <signal>newPage(const char*,bool)</signal>
    <receiver>page405</receiver>
    <slot>goto_page(const char*,bool)</slot>
@@ -4764,7 +4773,7 @@ fbk</string>
    </hints>
   </connection>
   <connection>
-   <sender>atcmButton_6</sender>
+   <sender>atcmButton_page400</sender>
    <signal>newPage(const char*,bool)</signal>
    <receiver>page405</receiver>
    <slot>goto_page(const char*,bool)</slot>
