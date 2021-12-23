@@ -142,371 +142,371 @@ int doWrite_RTU_HeartBeat(u_int32_t value);
 int addWrite_RTU_HeartBeat(u_int32_t value);
 int getStatus_RTU_HeartBeat(void);
 
-#define ID_RTU_DigOut_1 210
-extern int RTU_DigOut_1;
-int doWrite_RTU_DigOut_1(int value);
-int addWrite_RTU_DigOut_1(int value);
-int getStatus_RTU_DigOut_1(void);
+#define ID_MPNC_DigOut_A_1 210
+extern int MPNC_DigOut_A_1;
+int doWrite_MPNC_DigOut_A_1(int value);
+int addWrite_MPNC_DigOut_A_1(int value);
+int getStatus_MPNC_DigOut_A_1(void);
 
-#define ID_RTU_DigOut_2 211
-extern int RTU_DigOut_2;
-int doWrite_RTU_DigOut_2(int value);
-int addWrite_RTU_DigOut_2(int value);
-int getStatus_RTU_DigOut_2(void);
+#define ID_MPNC_DigOut_A_2 211
+extern int MPNC_DigOut_A_2;
+int doWrite_MPNC_DigOut_A_2(int value);
+int addWrite_MPNC_DigOut_A_2(int value);
+int getStatus_MPNC_DigOut_A_2(void);
 
-#define ID_RTU_DigOut_3 212
-extern int RTU_DigOut_3;
-int doWrite_RTU_DigOut_3(int value);
-int addWrite_RTU_DigOut_3(int value);
-int getStatus_RTU_DigOut_3(void);
+#define ID_MPNC_DigOut_A_3 212
+extern int MPNC_DigOut_A_3;
+int doWrite_MPNC_DigOut_A_3(int value);
+int addWrite_MPNC_DigOut_A_3(int value);
+int getStatus_MPNC_DigOut_A_3(void);
 
-#define ID_RTU_DigOut_4 213
-extern int RTU_DigOut_4;
-int doWrite_RTU_DigOut_4(int value);
-int addWrite_RTU_DigOut_4(int value);
-int getStatus_RTU_DigOut_4(void);
+#define ID_MPNC_DigOut_A_4 213
+extern int MPNC_DigOut_A_4;
+int doWrite_MPNC_DigOut_A_4(int value);
+int addWrite_MPNC_DigOut_A_4(int value);
+int getStatus_MPNC_DigOut_A_4(void);
 
-#define ID_RTU_DigOut_5 214
-extern int RTU_DigOut_5;
-int doWrite_RTU_DigOut_5(int value);
-int addWrite_RTU_DigOut_5(int value);
-int getStatus_RTU_DigOut_5(void);
+#define ID_MPNC_DigOut_A_5 214
+extern int MPNC_DigOut_A_5;
+int doWrite_MPNC_DigOut_A_5(int value);
+int addWrite_MPNC_DigOut_A_5(int value);
+int getStatus_MPNC_DigOut_A_5(void);
 
-#define ID_RTU_DigOut_6 215
-extern int RTU_DigOut_6;
-int doWrite_RTU_DigOut_6(int value);
-int addWrite_RTU_DigOut_6(int value);
-int getStatus_RTU_DigOut_6(void);
+#define ID_MPNC_DigOut_A_6 215
+extern int MPNC_DigOut_A_6;
+int doWrite_MPNC_DigOut_A_6(int value);
+int addWrite_MPNC_DigOut_A_6(int value);
+int getStatus_MPNC_DigOut_A_6(void);
 
-#define ID_RTU_DigOut_7 216
-extern int RTU_DigOut_7;
-int doWrite_RTU_DigOut_7(int value);
-int addWrite_RTU_DigOut_7(int value);
-int getStatus_RTU_DigOut_7(void);
+#define ID_MPNC_DigOut_A_7 216
+extern int MPNC_DigOut_A_7;
+int doWrite_MPNC_DigOut_A_7(int value);
+int addWrite_MPNC_DigOut_A_7(int value);
+int getStatus_MPNC_DigOut_A_7(void);
 
-#define ID_RTU_DigOut_8 217
-extern int RTU_DigOut_8;
-int doWrite_RTU_DigOut_8(int value);
-int addWrite_RTU_DigOut_8(int value);
-int getStatus_RTU_DigOut_8(void);
+#define ID_MPNC_DigOut_A_8 217
+extern int MPNC_DigOut_A_8;
+int doWrite_MPNC_DigOut_A_8(int value);
+int addWrite_MPNC_DigOut_A_8(int value);
+int getStatus_MPNC_DigOut_A_8(void);
 
-#define ID_RTU_DigOut_9 218
-extern int RTU_DigOut_9;
-int doWrite_RTU_DigOut_9(int value);
-int addWrite_RTU_DigOut_9(int value);
-int getStatus_RTU_DigOut_9(void);
+#define ID_MPNC_DigOut_A_9 218
+extern int MPNC_DigOut_A_9;
+int doWrite_MPNC_DigOut_A_9(int value);
+int addWrite_MPNC_DigOut_A_9(int value);
+int getStatus_MPNC_DigOut_A_9(void);
 
-#define ID_RTU_DigOut_10 219
-extern int RTU_DigOut_10;
-int doWrite_RTU_DigOut_10(int value);
-int addWrite_RTU_DigOut_10(int value);
-int getStatus_RTU_DigOut_10(void);
+#define ID_MPNC_DigOut_A_10 219
+extern int MPNC_DigOut_A_10;
+int doWrite_MPNC_DigOut_A_10(int value);
+int addWrite_MPNC_DigOut_A_10(int value);
+int getStatus_MPNC_DigOut_A_10(void);
 
-#define ID_RTU_DigOut_11 220
-extern int RTU_DigOut_11;
-int doWrite_RTU_DigOut_11(int value);
-int addWrite_RTU_DigOut_11(int value);
-int getStatus_RTU_DigOut_11(void);
+#define ID_MPNC_DigOut_A_11 220
+extern int MPNC_DigOut_A_11;
+int doWrite_MPNC_DigOut_A_11(int value);
+int addWrite_MPNC_DigOut_A_11(int value);
+int getStatus_MPNC_DigOut_A_11(void);
 
-#define ID_RTU_DigOut_12 221
-extern int RTU_DigOut_12;
-int doWrite_RTU_DigOut_12(int value);
-int addWrite_RTU_DigOut_12(int value);
-int getStatus_RTU_DigOut_12(void);
+#define ID_MPNC_DigOut_A_12 221
+extern int MPNC_DigOut_A_12;
+int doWrite_MPNC_DigOut_A_12(int value);
+int addWrite_MPNC_DigOut_A_12(int value);
+int getStatus_MPNC_DigOut_A_12(void);
 
-#define ID_RTU_DigOut_13 222
-extern int RTU_DigOut_13;
-int doWrite_RTU_DigOut_13(int value);
-int addWrite_RTU_DigOut_13(int value);
-int getStatus_RTU_DigOut_13(void);
+#define ID_MPNC_DigOut_A_13 222
+extern int MPNC_DigOut_A_13;
+int doWrite_MPNC_DigOut_A_13(int value);
+int addWrite_MPNC_DigOut_A_13(int value);
+int getStatus_MPNC_DigOut_A_13(void);
 
-#define ID_RTU_DigOut_14 223
-extern int RTU_DigOut_14;
-int doWrite_RTU_DigOut_14(int value);
-int addWrite_RTU_DigOut_14(int value);
-int getStatus_RTU_DigOut_14(void);
+#define ID_MPNC_DigOut_A_14 223
+extern int MPNC_DigOut_A_14;
+int doWrite_MPNC_DigOut_A_14(int value);
+int addWrite_MPNC_DigOut_A_14(int value);
+int getStatus_MPNC_DigOut_A_14(void);
 
-#define ID_RTU_DigOut_15 224
-extern int RTU_DigOut_15;
-int doWrite_RTU_DigOut_15(int value);
-int addWrite_RTU_DigOut_15(int value);
-int getStatus_RTU_DigOut_15(void);
+#define ID_MPNC_DigOut_A_15 224
+extern int MPNC_DigOut_A_15;
+int doWrite_MPNC_DigOut_A_15(int value);
+int addWrite_MPNC_DigOut_A_15(int value);
+int getStatus_MPNC_DigOut_A_15(void);
 
-#define ID_RTU_DigOut_16 225
-extern int RTU_DigOut_16;
-int doWrite_RTU_DigOut_16(int value);
-int addWrite_RTU_DigOut_16(int value);
-int getStatus_RTU_DigOut_16(void);
+#define ID_MPNC_DigOut_A_16 225
+extern int MPNC_DigOut_A_16;
+int doWrite_MPNC_DigOut_A_16(int value);
+int addWrite_MPNC_DigOut_A_16(int value);
+int getStatus_MPNC_DigOut_A_16(void);
 
-#define ID_RTU_DigIn_1 227
-extern int RTU_DigIn_1;
-int doWrite_RTU_DigIn_1(int value);
-int addWrite_RTU_DigIn_1(int value);
-int getStatus_RTU_DigIn_1(void);
+#define ID_MPNC_DigIn_A_1 227
+extern int MPNC_DigIn_A_1;
+int doWrite_MPNC_DigIn_A_1(int value);
+int addWrite_MPNC_DigIn_A_1(int value);
+int getStatus_MPNC_DigIn_A_1(void);
 
-#define ID_RTU_DigIn_2 228
-extern int RTU_DigIn_2;
-int doWrite_RTU_DigIn_2(int value);
-int addWrite_RTU_DigIn_2(int value);
-int getStatus_RTU_DigIn_2(void);
+#define ID_MPNC_DigIn_A_2 228
+extern int MPNC_DigIn_A_2;
+int doWrite_MPNC_DigIn_A_2(int value);
+int addWrite_MPNC_DigIn_A_2(int value);
+int getStatus_MPNC_DigIn_A_2(void);
 
-#define ID_RTU_DigIn_3 229
-extern int RTU_DigIn_3;
-int doWrite_RTU_DigIn_3(int value);
-int addWrite_RTU_DigIn_3(int value);
-int getStatus_RTU_DigIn_3(void);
+#define ID_MPNC_DigIn_A_3 229
+extern int MPNC_DigIn_A_3;
+int doWrite_MPNC_DigIn_A_3(int value);
+int addWrite_MPNC_DigIn_A_3(int value);
+int getStatus_MPNC_DigIn_A_3(void);
 
-#define ID_RTU_DigIn_4 230
-extern int RTU_DigIn_4;
-int doWrite_RTU_DigIn_4(int value);
-int addWrite_RTU_DigIn_4(int value);
-int getStatus_RTU_DigIn_4(void);
+#define ID_MPNC_DigIn_A_4 230
+extern int MPNC_DigIn_A_4;
+int doWrite_MPNC_DigIn_A_4(int value);
+int addWrite_MPNC_DigIn_A_4(int value);
+int getStatus_MPNC_DigIn_A_4(void);
 
-#define ID_RTU_DigIn_5 231
-extern int RTU_DigIn_5;
-int doWrite_RTU_DigIn_5(int value);
-int addWrite_RTU_DigIn_5(int value);
-int getStatus_RTU_DigIn_5(void);
+#define ID_MPNC_DigIn_A_5 231
+extern int MPNC_DigIn_A_5;
+int doWrite_MPNC_DigIn_A_5(int value);
+int addWrite_MPNC_DigIn_A_5(int value);
+int getStatus_MPNC_DigIn_A_5(void);
 
-#define ID_RTU_DigIn_6 232
-extern int RTU_DigIn_6;
-int doWrite_RTU_DigIn_6(int value);
-int addWrite_RTU_DigIn_6(int value);
-int getStatus_RTU_DigIn_6(void);
+#define ID_MPNC_DigIn_A_6 232
+extern int MPNC_DigIn_A_6;
+int doWrite_MPNC_DigIn_A_6(int value);
+int addWrite_MPNC_DigIn_A_6(int value);
+int getStatus_MPNC_DigIn_A_6(void);
 
-#define ID_RTU_DigIn_7 233
-extern int RTU_DigIn_7;
-int doWrite_RTU_DigIn_7(int value);
-int addWrite_RTU_DigIn_7(int value);
-int getStatus_RTU_DigIn_7(void);
+#define ID_MPNC_DigIn_A_7 233
+extern int MPNC_DigIn_A_7;
+int doWrite_MPNC_DigIn_A_7(int value);
+int addWrite_MPNC_DigIn_A_7(int value);
+int getStatus_MPNC_DigIn_A_7(void);
 
-#define ID_RTU_DigIn_8 234
-extern int RTU_DigIn_8;
-int doWrite_RTU_DigIn_8(int value);
-int addWrite_RTU_DigIn_8(int value);
-int getStatus_RTU_DigIn_8(void);
+#define ID_MPNC_DigIn_A_8 234
+extern int MPNC_DigIn_A_8;
+int doWrite_MPNC_DigIn_A_8(int value);
+int addWrite_MPNC_DigIn_A_8(int value);
+int getStatus_MPNC_DigIn_A_8(void);
 
-#define ID_RTU_DigIn_9 235
-extern int RTU_DigIn_9;
-int doWrite_RTU_DigIn_9(int value);
-int addWrite_RTU_DigIn_9(int value);
-int getStatus_RTU_DigIn_9(void);
+#define ID_MPNC_DigIn_A_9 235
+extern int MPNC_DigIn_A_9;
+int doWrite_MPNC_DigIn_A_9(int value);
+int addWrite_MPNC_DigIn_A_9(int value);
+int getStatus_MPNC_DigIn_A_9(void);
 
-#define ID_RTU_DigIn_10 236
-extern int RTU_DigIn_10;
-int doWrite_RTU_DigIn_10(int value);
-int addWrite_RTU_DigIn_10(int value);
-int getStatus_RTU_DigIn_10(void);
+#define ID_MPNC_DigIn_A_10 236
+extern int MPNC_DigIn_A_10;
+int doWrite_MPNC_DigIn_A_10(int value);
+int addWrite_MPNC_DigIn_A_10(int value);
+int getStatus_MPNC_DigIn_A_10(void);
 
-#define ID_RTU_DigIn_11 237
-extern int RTU_DigIn_11;
-int doWrite_RTU_DigIn_11(int value);
-int addWrite_RTU_DigIn_11(int value);
-int getStatus_RTU_DigIn_11(void);
+#define ID_MPNC_DigIn_A_11 237
+extern int MPNC_DigIn_A_11;
+int doWrite_MPNC_DigIn_A_11(int value);
+int addWrite_MPNC_DigIn_A_11(int value);
+int getStatus_MPNC_DigIn_A_11(void);
 
-#define ID_RTU_DigIn_12 238
-extern int RTU_DigIn_12;
-int doWrite_RTU_DigIn_12(int value);
-int addWrite_RTU_DigIn_12(int value);
-int getStatus_RTU_DigIn_12(void);
+#define ID_MPNC_DigIn_A_12 238
+extern int MPNC_DigIn_A_12;
+int doWrite_MPNC_DigIn_A_12(int value);
+int addWrite_MPNC_DigIn_A_12(int value);
+int getStatus_MPNC_DigIn_A_12(void);
 
-#define ID_RTU_DigIn_13 239
-extern int RTU_DigIn_13;
-int doWrite_RTU_DigIn_13(int value);
-int addWrite_RTU_DigIn_13(int value);
-int getStatus_RTU_DigIn_13(void);
+#define ID_MPNC_DigIn_A_13 239
+extern int MPNC_DigIn_A_13;
+int doWrite_MPNC_DigIn_A_13(int value);
+int addWrite_MPNC_DigIn_A_13(int value);
+int getStatus_MPNC_DigIn_A_13(void);
 
-#define ID_RTU_DigIn_14 240
-extern int RTU_DigIn_14;
-int doWrite_RTU_DigIn_14(int value);
-int addWrite_RTU_DigIn_14(int value);
-int getStatus_RTU_DigIn_14(void);
+#define ID_MPNC_DigIn_A_14 240
+extern int MPNC_DigIn_A_14;
+int doWrite_MPNC_DigIn_A_14(int value);
+int addWrite_MPNC_DigIn_A_14(int value);
+int getStatus_MPNC_DigIn_A_14(void);
 
-#define ID_RTU_DigIn_15 241
-extern int RTU_DigIn_15;
-int doWrite_RTU_DigIn_15(int value);
-int addWrite_RTU_DigIn_15(int value);
-int getStatus_RTU_DigIn_15(void);
+#define ID_MPNC_DigIn_A_15 241
+extern int MPNC_DigIn_A_15;
+int doWrite_MPNC_DigIn_A_15(int value);
+int addWrite_MPNC_DigIn_A_15(int value);
+int getStatus_MPNC_DigIn_A_15(void);
 
-#define ID_RTU_DigIn_16 242
-extern int RTU_DigIn_16;
-int doWrite_RTU_DigIn_16(int value);
-int addWrite_RTU_DigIn_16(int value);
-int getStatus_RTU_DigIn_16(void);
+#define ID_MPNC_DigIn_A_16 242
+extern int MPNC_DigIn_A_16;
+int doWrite_MPNC_DigIn_A_16(int value);
+int addWrite_MPNC_DigIn_A_16(int value);
+int getStatus_MPNC_DigIn_A_16(void);
 
-#define ID_RTU_Tamb 244
-extern int16_t RTU_Tamb;
-int doWrite_RTU_Tamb(int16_t value);
-int addWrite_RTU_Tamb(int16_t value);
-int getStatus_RTU_Tamb(void);
+#define ID_MPNC_ModulesNumber 244
+extern int16_t MPNC_ModulesNumber;
+int doWrite_MPNC_ModulesNumber(int16_t value);
+int addWrite_MPNC_ModulesNumber(int16_t value);
+int getStatus_MPNC_ModulesNumber(void);
 
-#define ID_RTU_AnInConf_1 245
-extern u_int16_t RTU_AnInConf_1;
-int doWrite_RTU_AnInConf_1(u_int16_t value);
-int addWrite_RTU_AnInConf_1(u_int16_t value);
-int getStatus_RTU_AnInConf_1(void);
+#define ID_MPNC_AnInConf_1 245
+extern u_int16_t MPNC_AnInConf_1;
+int doWrite_MPNC_AnInConf_1(u_int16_t value);
+int addWrite_MPNC_AnInConf_1(u_int16_t value);
+int getStatus_MPNC_AnInConf_1(void);
 
-#define ID_RTU_AnInConf_2 246
-extern u_int16_t RTU_AnInConf_2;
-int doWrite_RTU_AnInConf_2(u_int16_t value);
-int addWrite_RTU_AnInConf_2(u_int16_t value);
-int getStatus_RTU_AnInConf_2(void);
+#define ID_MPNC_AnInConf_2 246
+extern u_int16_t MPNC_AnInConf_2;
+int doWrite_MPNC_AnInConf_2(u_int16_t value);
+int addWrite_MPNC_AnInConf_2(u_int16_t value);
+int getStatus_MPNC_AnInConf_2(void);
 
-#define ID_RTU_AnIn_1 247
-extern int16_t RTU_AnIn_1;
-int doWrite_RTU_AnIn_1(int16_t value);
-int addWrite_RTU_AnIn_1(int16_t value);
-int getStatus_RTU_AnIn_1(void);
+#define ID_MPNC_AnIn_1 247
+extern int16_t MPNC_AnIn_1;
+int doWrite_MPNC_AnIn_1(int16_t value);
+int addWrite_MPNC_AnIn_1(int16_t value);
+int getStatus_MPNC_AnIn_1(void);
 
-#define ID_RTU_AnIn_2 248
-extern int16_t RTU_AnIn_2;
-int doWrite_RTU_AnIn_2(int16_t value);
-int addWrite_RTU_AnIn_2(int16_t value);
-int getStatus_RTU_AnIn_2(void);
+#define ID_MPNC_AnIn_2 248
+extern int16_t MPNC_AnIn_2;
+int doWrite_MPNC_AnIn_2(int16_t value);
+int addWrite_MPNC_AnIn_2(int16_t value);
+int getStatus_MPNC_AnIn_2(void);
 
-#define ID_RTU_LocDigDir_1 249
-extern int RTU_LocDigDir_1;
-int doWrite_RTU_LocDigDir_1(int value);
-int addWrite_RTU_LocDigDir_1(int value);
-int getStatus_RTU_LocDigDir_1(void);
+#define ID_MPNC_DigDir_1 249
+extern int MPNC_DigDir_1;
+int doWrite_MPNC_DigDir_1(int value);
+int addWrite_MPNC_DigDir_1(int value);
+int getStatus_MPNC_DigDir_1(void);
 
-#define ID_RTU_LocDigDir_2 250
-extern int RTU_LocDigDir_2;
-int doWrite_RTU_LocDigDir_2(int value);
-int addWrite_RTU_LocDigDir_2(int value);
-int getStatus_RTU_LocDigDir_2(void);
+#define ID_MPNC_DigDir_2 250
+extern int MPNC_DigDir_2;
+int doWrite_MPNC_DigDir_2(int value);
+int addWrite_MPNC_DigDir_2(int value);
+int getStatus_MPNC_DigDir_2(void);
 
-#define ID_RTU_LocDigDir_3 251
-extern int RTU_LocDigDir_3;
-int doWrite_RTU_LocDigDir_3(int value);
-int addWrite_RTU_LocDigDir_3(int value);
-int getStatus_RTU_LocDigDir_3(void);
+#define ID_MPNC_DigDir_3 251
+extern int MPNC_DigDir_3;
+int doWrite_MPNC_DigDir_3(int value);
+int addWrite_MPNC_DigDir_3(int value);
+int getStatus_MPNC_DigDir_3(void);
 
-#define ID_RTU_LocDigDir_4 252
-extern int RTU_LocDigDir_4;
-int doWrite_RTU_LocDigDir_4(int value);
-int addWrite_RTU_LocDigDir_4(int value);
-int getStatus_RTU_LocDigDir_4(void);
+#define ID_MPNC_DigDir_4 252
+extern int MPNC_DigDir_4;
+int doWrite_MPNC_DigDir_4(int value);
+int addWrite_MPNC_DigDir_4(int value);
+int getStatus_MPNC_DigDir_4(void);
 
-#define ID_RTU_LocDigDir_5 253
-extern int RTU_LocDigDir_5;
-int doWrite_RTU_LocDigDir_5(int value);
-int addWrite_RTU_LocDigDir_5(int value);
-int getStatus_RTU_LocDigDir_5(void);
+#define ID_MPNC_DigDir_5 253
+extern int MPNC_DigDir_5;
+int doWrite_MPNC_DigDir_5(int value);
+int addWrite_MPNC_DigDir_5(int value);
+int getStatus_MPNC_DigDir_5(void);
 
-#define ID_RTU_LocDigDir_6 254
-extern int RTU_LocDigDir_6;
-int doWrite_RTU_LocDigDir_6(int value);
-int addWrite_RTU_LocDigDir_6(int value);
-int getStatus_RTU_LocDigDir_6(void);
+#define ID_MPNC_DigDir_6 254
+extern int MPNC_DigDir_6;
+int doWrite_MPNC_DigDir_6(int value);
+int addWrite_MPNC_DigDir_6(int value);
+int getStatus_MPNC_DigDir_6(void);
 
-#define ID_RTU_LocDigDir_7 255
-extern int RTU_LocDigDir_7;
-int doWrite_RTU_LocDigDir_7(int value);
-int addWrite_RTU_LocDigDir_7(int value);
-int getStatus_RTU_LocDigDir_7(void);
+#define ID_MPNC_DigDir_7 255
+extern int MPNC_DigDir_7;
+int doWrite_MPNC_DigDir_7(int value);
+int addWrite_MPNC_DigDir_7(int value);
+int getStatus_MPNC_DigDir_7(void);
 
-#define ID_RTU_LocDigDir_8 256
-extern int RTU_LocDigDir_8;
-int doWrite_RTU_LocDigDir_8(int value);
-int addWrite_RTU_LocDigDir_8(int value);
-int getStatus_RTU_LocDigDir_8(void);
+#define ID_MPNC_DigDir_8 256
+extern int MPNC_DigDir_8;
+int doWrite_MPNC_DigDir_8(int value);
+int addWrite_MPNC_DigDir_8(int value);
+int getStatus_MPNC_DigDir_8(void);
 
-#define ID_RTU_LocDigIn_1 257
-extern int RTU_LocDigIn_1;
-int doWrite_RTU_LocDigIn_1(int value);
-int addWrite_RTU_LocDigIn_1(int value);
-int getStatus_RTU_LocDigIn_1(void);
+#define ID_MPNC_DigIn_1 257
+extern int MPNC_DigIn_1;
+int doWrite_MPNC_DigIn_1(int value);
+int addWrite_MPNC_DigIn_1(int value);
+int getStatus_MPNC_DigIn_1(void);
 
-#define ID_RTU_LocDigIn_2 258
-extern int RTU_LocDigIn_2;
-int doWrite_RTU_LocDigIn_2(int value);
-int addWrite_RTU_LocDigIn_2(int value);
-int getStatus_RTU_LocDigIn_2(void);
+#define ID_MPNC_DigIn_2 258
+extern int MPNC_DigIn_2;
+int doWrite_MPNC_DigIn_2(int value);
+int addWrite_MPNC_DigIn_2(int value);
+int getStatus_MPNC_DigIn_2(void);
 
-#define ID_RTU_LocDigIn_3 259
-extern int RTU_LocDigIn_3;
-int doWrite_RTU_LocDigIn_3(int value);
-int addWrite_RTU_LocDigIn_3(int value);
-int getStatus_RTU_LocDigIn_3(void);
+#define ID_MPNC_DigIn_3 259
+extern int MPNC_DigIn_3;
+int doWrite_MPNC_DigIn_3(int value);
+int addWrite_MPNC_DigIn_3(int value);
+int getStatus_MPNC_DigIn_3(void);
 
-#define ID_RTU_LocDigIn_4 260
-extern int RTU_LocDigIn_4;
-int doWrite_RTU_LocDigIn_4(int value);
-int addWrite_RTU_LocDigIn_4(int value);
-int getStatus_RTU_LocDigIn_4(void);
+#define ID_MPNC_DigIn_4 260
+extern int MPNC_DigIn_4;
+int doWrite_MPNC_DigIn_4(int value);
+int addWrite_MPNC_DigIn_4(int value);
+int getStatus_MPNC_DigIn_4(void);
 
-#define ID_RTU_LocDigIn_5 261
-extern int RTU_LocDigIn_5;
-int doWrite_RTU_LocDigIn_5(int value);
-int addWrite_RTU_LocDigIn_5(int value);
-int getStatus_RTU_LocDigIn_5(void);
+#define ID_MPNC_DigIn_5 261
+extern int MPNC_DigIn_5;
+int doWrite_MPNC_DigIn_5(int value);
+int addWrite_MPNC_DigIn_5(int value);
+int getStatus_MPNC_DigIn_5(void);
 
-#define ID_RTU_LocDigIn_6 262
-extern int RTU_LocDigIn_6;
-int doWrite_RTU_LocDigIn_6(int value);
-int addWrite_RTU_LocDigIn_6(int value);
-int getStatus_RTU_LocDigIn_6(void);
+#define ID_MPNC_DigIn_6 262
+extern int MPNC_DigIn_6;
+int doWrite_MPNC_DigIn_6(int value);
+int addWrite_MPNC_DigIn_6(int value);
+int getStatus_MPNC_DigIn_6(void);
 
-#define ID_RTU_LocDigIn_7 263
-extern int RTU_LocDigIn_7;
-int doWrite_RTU_LocDigIn_7(int value);
-int addWrite_RTU_LocDigIn_7(int value);
-int getStatus_RTU_LocDigIn_7(void);
+#define ID_MPNC_DigIn_7 263
+extern int MPNC_DigIn_7;
+int doWrite_MPNC_DigIn_7(int value);
+int addWrite_MPNC_DigIn_7(int value);
+int getStatus_MPNC_DigIn_7(void);
 
-#define ID_RTU_LocDigIn_8 264
-extern int RTU_LocDigIn_8;
-int doWrite_RTU_LocDigIn_8(int value);
-int addWrite_RTU_LocDigIn_8(int value);
-int getStatus_RTU_LocDigIn_8(void);
+#define ID_MPNC_DigIn_8 264
+extern int MPNC_DigIn_8;
+int doWrite_MPNC_DigIn_8(int value);
+int addWrite_MPNC_DigIn_8(int value);
+int getStatus_MPNC_DigIn_8(void);
 
-#define ID_RTU_LocDigOut_1 265
-extern int RTU_LocDigOut_1;
-int doWrite_RTU_LocDigOut_1(int value);
-int addWrite_RTU_LocDigOut_1(int value);
-int getStatus_RTU_LocDigOut_1(void);
+#define ID_MPNC_DigOut_1 265
+extern int MPNC_DigOut_1;
+int doWrite_MPNC_DigOut_1(int value);
+int addWrite_MPNC_DigOut_1(int value);
+int getStatus_MPNC_DigOut_1(void);
 
-#define ID_RTU_LocDigOut_2 266
-extern int RTU_LocDigOut_2;
-int doWrite_RTU_LocDigOut_2(int value);
-int addWrite_RTU_LocDigOut_2(int value);
-int getStatus_RTU_LocDigOut_2(void);
+#define ID_MPNC_DigOut_2 266
+extern int MPNC_DigOut_2;
+int doWrite_MPNC_DigOut_2(int value);
+int addWrite_MPNC_DigOut_2(int value);
+int getStatus_MPNC_DigOut_2(void);
 
-#define ID_RTU_LocDigOut_3 267
-extern int RTU_LocDigOut_3;
-int doWrite_RTU_LocDigOut_3(int value);
-int addWrite_RTU_LocDigOut_3(int value);
-int getStatus_RTU_LocDigOut_3(void);
+#define ID_MPNC_DigOut_3 267
+extern int MPNC_DigOut_3;
+int doWrite_MPNC_DigOut_3(int value);
+int addWrite_MPNC_DigOut_3(int value);
+int getStatus_MPNC_DigOut_3(void);
 
-#define ID_RTU_LocDigOut_4 268
-extern int RTU_LocDigOut_4;
-int doWrite_RTU_LocDigOut_4(int value);
-int addWrite_RTU_LocDigOut_4(int value);
-int getStatus_RTU_LocDigOut_4(void);
+#define ID_MPNC_DigOut_4 268
+extern int MPNC_DigOut_4;
+int doWrite_MPNC_DigOut_4(int value);
+int addWrite_MPNC_DigOut_4(int value);
+int getStatus_MPNC_DigOut_4(void);
 
-#define ID_RTU_LocDigOut_5 269
-extern int RTU_LocDigOut_5;
-int doWrite_RTU_LocDigOut_5(int value);
-int addWrite_RTU_LocDigOut_5(int value);
-int getStatus_RTU_LocDigOut_5(void);
+#define ID_MPNC_DigOut_5 269
+extern int MPNC_DigOut_5;
+int doWrite_MPNC_DigOut_5(int value);
+int addWrite_MPNC_DigOut_5(int value);
+int getStatus_MPNC_DigOut_5(void);
 
-#define ID_RTU_LocDigOut_6 270
-extern int RTU_LocDigOut_6;
-int doWrite_RTU_LocDigOut_6(int value);
-int addWrite_RTU_LocDigOut_6(int value);
-int getStatus_RTU_LocDigOut_6(void);
+#define ID_MPNC_DigOut_6 270
+extern int MPNC_DigOut_6;
+int doWrite_MPNC_DigOut_6(int value);
+int addWrite_MPNC_DigOut_6(int value);
+int getStatus_MPNC_DigOut_6(void);
 
-#define ID_RTU_LocDigOut_7 271
-extern int RTU_LocDigOut_7;
-int doWrite_RTU_LocDigOut_7(int value);
-int addWrite_RTU_LocDigOut_7(int value);
-int getStatus_RTU_LocDigOut_7(void);
+#define ID_MPNC_DigOut_7 271
+extern int MPNC_DigOut_7;
+int doWrite_MPNC_DigOut_7(int value);
+int addWrite_MPNC_DigOut_7(int value);
+int getStatus_MPNC_DigOut_7(void);
 
-#define ID_RTU_LocDigOut_8 272
-extern int RTU_LocDigOut_8;
-int doWrite_RTU_LocDigOut_8(int value);
-int addWrite_RTU_LocDigOut_8(int value);
-int getStatus_RTU_LocDigOut_8(void);
+#define ID_MPNC_DigOut_8 272
+extern int MPNC_DigOut_8;
+int doWrite_MPNC_DigOut_8(int value);
+int addWrite_MPNC_DigOut_8(int value);
+int getStatus_MPNC_DigOut_8(void);
 
 #define ID_TST_DigIn_1 1001
 extern int TST_DigIn_1;

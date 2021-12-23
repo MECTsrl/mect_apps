@@ -5,7 +5,7 @@ FUNCTION WriteTST
 VAR_INPUT
 END_VAR
 
-	(* we test the DigIn 1..16 by the TPLC005 16DO module *)
+	(* we test the DigIn 1..16 by the MPNC 16DO module *)
  	TSTx_DigIn_1 := TST_DigIn_1;
 	TSTx_DigIn_2 := TST_DigIn_2;
 	TSTx_DigIn_3 := TST_DigIn_3;
@@ -24,7 +24,7 @@ END_VAR
 	TSTx_DigIn_16:= TST_DigIn_16;
     (* no TST2_DigIn_* *)
 
-    (* we test the DigOut 1..16 by the TPLC005 16DI module *)
+    (* we test the DigOut 1..16 by the MPNC 16DI module *)
 	TSTx_DigOut_1 := TST_DigOut_1;
 	TSTx_DigOut_2 := TST_DigOut_2;
 	TSTx_DigOut_3 := TST_DigOut_3;
@@ -43,19 +43,19 @@ END_VAR
 	TSTx_DigOut_16:= TST_DigOut_16;
     (* no TST2_DigOut_* *)
 
-	(* Prey AnIn_1 <-- Head AnOut_1 + DigOut_5,8 + TPLC005 DigOut_3,4 *) 
+	(* Prey AnIn_1 <-- Head AnOut_1 + DigOut_5,8 + MPNC DigOut_3,4 *) 
 	TSTx_AnIn_1 := TST_AnIn_1;
 
-    (* Prey AnIn_2 <-- Head AnOut_2 + DigOut_6,7 + TPLC005 DigOut_1,2 *) 
+    (* Prey AnIn_2 <-- Head AnOut_2 + DigOut_6,7 + MPNC DigOut_1,2 *) 
 	TSTx_AnIn_2 := TST_AnIn_2;
 
-    (* Prey AnIn_3 <-- Horn2 AnOut_1 + DigOut_5,8 + TPLC005 DigOut_7,8  *) 
+    (* Prey AnIn_3 <-- Horn2 AnOut_1 + DigOut_5,8 + MPNC DigOut_7,8  *) 
 	TSTx_AnIn_3 := TST_AnIn_3;
     TST2_AnOut_1 := TST_AnIn_3;
     TST2_DigOut_5 := TRUE;
     TST2_DigOut_8 := TRUE;
 
-	(* Prey AnIn_4 <-- Horn2 AnOut_2 + DigOut_6,7 + TPLC005 DigOut_5,6  *) 
+	(* Prey AnIn_4 <-- Horn2 AnOut_2 + DigOut_6,7 + MPNC DigOut_5,6  *) 
 	TSTx_AnIn_4 := TST_AnIn_4;
     TST2_AnOut_2 := TST_AnIn_4;
     TST2_DigOut_6 := TRUE;
@@ -84,7 +84,7 @@ END_VAR
     TST2_AnIn_2 := TST_AnOut_2;
     TST2_DigOut_4 := TRUE;
 
-    (* we test the AnOut 3..4 by the by the TPLC005 internal 2AI *)
+    (* we test the AnOut 3..4 by the by the MPNC internal 2AI *)
     TSTx_AnOut_3 := TST_AnOut_3;
     TSTx_AnOut_4 := TST_AnOut_4;
 
@@ -106,7 +106,7 @@ END_VAR
     TSTx_RTU1_RD := TST_RTU1_RD;
 	TST2_RTUS_WR := TST_RTU1_RD;
 
-	(* RTU3: Prey.RTU3 <--> TPLC005 + short-circuit DigOut_1->DigIn_2 *)
+	(* RTU3: Prey.RTU3 <--> MPNC + short-circuit DigOut_1->DigIn_2 *)
 	TSTx_RTU3_WR := TST_RTU3_WR;
 	TSTx_RTU3_RD := TST_RTU3_RD;
 

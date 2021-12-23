@@ -87,8 +87,8 @@ END_VAR
 		        TESTx_COMMAND := TEST_STATUS_DONE;
 				substatus := 4;
 			end_if;
-	    4: (* wait for propagation of COMMAND @ priority 2 : 500ms and for TPLC005 AnIn *)
-			timer(IN := TRUE, PT := T#4500ms); (* 500ms + TPLC005 AnIn slow *)
+	    4: (* wait for propagation of COMMAND @ priority 2 : 500ms and for MPNC AnIn *)
+			timer(IN := TRUE, PT := T#4500ms); (* 500ms + MPNC AnIn slow *)
 			if timer.Q then
 				timer(IN := FALSE);
 				substatus := 5;

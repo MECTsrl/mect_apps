@@ -107,12 +107,7 @@ void page300::updateData()
     /* call the parent updateData member */
     page::updateData();
     
-    /* To read the cross table variable UINT TEST1:
-     *    uint_16 tmp = TEST1;
-     */
-    /* To write 5 into the the cross table variable UINT TEST1:
-     *    doWrite_TEST1(5);
-     */	
+    ui->label_versions->setText(QString("%1 / %2").arg((PLC_HMI_Version / 1000.0), 0, 'f', 3).arg((PLC_PLC_Version / 1000.0), 0, 'f', 3));
 
     // Octopus
     ui->label->setText(QString("A=%1 R=%2") .arg(AUTOMATIC) .arg(DO_REPEAT));

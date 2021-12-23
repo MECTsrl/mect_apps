@@ -7,6 +7,8 @@ VAR
 
 END_VAR
 
+	PLC_PLC_Version := 3391;
+
 	PLC_DigDir_1 := False; (* PLC_PWR_SWITCH input *)
 	PLC_DigDir_2 := True; (* PLC_VPOT_ON output *)
 	PLC_DigDir_3 := True; (* PLC_VCC_ON output *)
@@ -16,14 +18,14 @@ END_VAR
 	PLC_DigDir_7 := True; (* Analog I/O Test output *)
 	PLC_DigDir_8 := True; (* Analog I/O Test output *)
 
-	RTU_LocDigDir_1 := 1; (* TPLC005 Local Digital as Output *)
-	RTU_LocDigDir_2 := 1; (* TPLC005 Local Digital as Output *)
-	RTU_LocDigDir_3 := 1; (* TPLC005 Local Digital as Output *)
-	RTU_LocDigDir_4 := 1; (* TPLC005 Local Digital as Output *)
-	RTU_LocDigDir_5 := 1; (* TPLC005 Local Digital as Output *)
-	RTU_LocDigDir_6 := 1; (* TPLC005 Local Digital as Output *)
-	RTU_LocDigDir_7 := 1; (* TPLC005 Local Digital as Output *)
-	RTU_LocDigDir_8 := 1; (* TPLC005 Local Digital as Output *)
+	MPNC_DigDir_1 := 1; (* MPNC Local Digital as Output *)
+	MPNC_DigDir_2 := 1; (* MPNC Local Digital as Output *)
+	MPNC_DigDir_3 := 1; (* MPNC Local Digital as Output *)
+	MPNC_DigDir_4 := 1; (* MPNC Local Digital as Output *)
+	MPNC_DigDir_5 := 1; (* MPNC Local Digital as Output *)
+	MPNC_DigDir_6 := 1; (* MPNC Local Digital as Output *)
+	MPNC_DigDir_7 := 1; (* MPNC Local Digital as Output *)
+	MPNC_DigDir_8 := 1; (* MPNC Local Digital as Output *)
 	TEST2_COMMAND := TEST_STATUS_LOCAL;
 	STATUS := STATUS_IDLE;
 	RESULT := RESULT_UNKNOWN;

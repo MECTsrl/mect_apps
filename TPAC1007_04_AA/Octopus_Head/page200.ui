@@ -73,7 +73,7 @@ background-color: rgb(255, 255, 127);
      <normaloff>:/off.png</normaloff>:/off.png</iconset>
    </property>
   </widget>
-  <widget class="ATCMled" name="atcmLed_RTU_AnIn_17">
+  <widget class="ATCMled" name="atcmLed_MPNC_AnIn_17">
    <property name="geometry">
     <rect>
      <x>210</x>
@@ -83,7 +83,7 @@ background-color: rgb(255, 255, 127);
     </rect>
    </property>
    <property name="toolTip">
-    <string>RTU_DigOut_4</string>
+    <string>MPNC_DigOut_A_4</string>
    </property>
    <property name="whatsThis">
     <string>ATCMled widget</string>
@@ -95,7 +95,7 @@ background-color: rgb(255, 255, 127);
     </font>
    </property>
    <property name="variable">
-    <string>RTU_DigOut_4</string>
+    <string>MPNC_DigOut_A_4</string>
    </property>
    <property name="refresh">
     <number>500</number>
@@ -215,7 +215,7 @@ background-color: rgb(255, 255, 127);
     <bool>true</bool>
    </property>
    <property name="toolTip">
-    <string>RTU_LocDigOut_8</string>
+    <string>MPNC_DigOut_8</string>
    </property>
    <property name="whatsThis">
     <string>ATCMbutton widget</string>
@@ -227,7 +227,7 @@ background-color: rgb(255, 255, 127);
     <string/>
    </property>
    <property name="statusvar">
-    <string>RTU_LocDigOut_8</string>
+    <string>MPNC_DigOut_8</string>
    </property>
    <property name="viewStatus">
     <bool>false</bool>
@@ -258,7 +258,7 @@ background-color: rgb(255, 255, 127);
     <enum>QFrame::Raised</enum>
    </property>
   </widget>
-  <widget class="ATCMled" name="atcmLed_RTU_AnIn_18">
+  <widget class="ATCMled" name="atcmLed_MPNC_AnIn_18">
    <property name="geometry">
     <rect>
      <x>390</x>
@@ -268,7 +268,7 @@ background-color: rgb(255, 255, 127);
     </rect>
    </property>
    <property name="toolTip">
-    <string>RTU_DigOut_10</string>
+    <string>MPNC_DigOut_A_10</string>
    </property>
    <property name="whatsThis">
     <string>ATCMled widget</string>
@@ -280,7 +280,7 @@ background-color: rgb(255, 255, 127);
     </font>
    </property>
    <property name="variable">
-    <string>RTU_DigOut_10</string>
+    <string>MPNC_DigOut_A_10</string>
    </property>
    <property name="refresh">
     <number>500</number>
@@ -435,7 +435,7 @@ background-color: rgb(255, 255, 127);
     <number>0</number>
    </property>
   </widget>
-  <widget class="ATCMled" name="atcmLed_RTU_AnIn_23">
+  <widget class="ATCMled" name="atcmLed_MPNC_AnIn_23">
    <property name="geometry">
     <rect>
      <x>300</x>
@@ -445,7 +445,7 @@ background-color: rgb(255, 255, 127);
     </rect>
    </property>
    <property name="toolTip">
-    <string>RTU_DigOut_7</string>
+    <string>MPNC_DigOut_A_7</string>
    </property>
    <property name="whatsThis">
     <string>ATCMled widget</string>
@@ -457,7 +457,7 @@ background-color: rgb(255, 255, 127);
     </font>
    </property>
    <property name="variable">
-    <string>RTU_DigOut_7</string>
+    <string>MPNC_DigOut_A_7</string>
    </property>
    <property name="refresh">
     <number>500</number>
@@ -477,7 +477,7 @@ background-color: rgb(255, 255, 127);
      <normaloff>:/off.png</normaloff>:/off.png</iconset>
    </property>
   </widget>
-  <widget class="ATCMled" name="atcmLed_RTU_AnIn_21">
+  <widget class="ATCMled" name="atcmLed_MPNC_AnIn_21">
    <property name="geometry">
     <rect>
      <x>360</x>
@@ -487,7 +487,7 @@ background-color: rgb(255, 255, 127);
     </rect>
    </property>
    <property name="toolTip">
-    <string>RTU_DigOut_9</string>
+    <string>MPNC_DigOut_A_9</string>
    </property>
    <property name="whatsThis">
     <string>ATCMled widget</string>
@@ -499,7 +499,7 @@ background-color: rgb(255, 255, 127);
     </font>
    </property>
    <property name="variable">
-    <string>RTU_DigOut_9</string>
+    <string>MPNC_DigOut_A_9</string>
    </property>
    <property name="refresh">
     <number>500</number>
@@ -593,7 +593,7 @@ background-color: rgb(255, 255, 127);
     <enum>QFrame::Raised</enum>
    </property>
   </widget>
-  <widget class="ATCMled" name="atcmLed_RTU_AnIn_8">
+  <widget class="ATCMled" name="atcmLed_MPNC_AnIn_8">
    <property name="geometry">
     <rect>
      <x>331</x>
@@ -603,7 +603,7 @@ background-color: rgb(255, 255, 127);
     </rect>
    </property>
    <property name="toolTip">
-    <string>RTU_DigIn_8</string>
+    <string>MPNC_DigIn_A_8</string>
    </property>
    <property name="whatsThis">
     <string>ATCMled widget</string>
@@ -615,7 +615,7 @@ background-color: rgb(255, 255, 127);
     </font>
    </property>
    <property name="variable">
-    <string>RTU_DigIn_8</string>
+    <string>MPNC_DigIn_A_8</string>
    </property>
    <property name="refresh">
     <number>500</number>
@@ -782,7 +782,7 @@ background-color: rgb(255, 255, 127);
     <number>0</number>
    </property>
   </widget>
-  <widget class="QLabel" name="label_RTU_AnIn_5">
+  <widget class="QLabel" name="label_MPNC_AnIn_5">
    <property name="geometry">
     <rect>
      <x>235</x>
@@ -807,7 +807,7 @@ background-color: rgb(255, 255, 127);
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
-  <widget class="ATCMled" name="atcmLed_RTU_AnIn_7">
+  <widget class="ATCMled" name="atcmLed_MPNC_AnIn_7">
    <property name="geometry">
     <rect>
      <x>301</x>
@@ -817,7 +817,7 @@ background-color: rgb(255, 255, 127);
     </rect>
    </property>
    <property name="toolTip">
-    <string>RTU_DigIn_7</string>
+    <string>MPNC_DigIn_A_7</string>
    </property>
    <property name="whatsThis">
     <string>ATCMled widget</string>
@@ -829,7 +829,7 @@ background-color: rgb(255, 255, 127);
     </font>
    </property>
    <property name="variable">
-    <string>RTU_DigIn_7</string>
+    <string>MPNC_DigIn_A_7</string>
    </property>
    <property name="refresh">
     <number>500</number>
@@ -912,7 +912,7 @@ background-color: rgb(255, 255, 127);
     <bool>true</bool>
    </property>
    <property name="toolTip">
-    <string>RTU_DigOut_8</string>
+    <string>MPNC_DigOut_A_8</string>
    </property>
    <property name="whatsThis">
     <string>ATCMbutton widget</string>
@@ -924,7 +924,7 @@ background-color: rgb(255, 255, 127);
     <string/>
    </property>
    <property name="statusvar">
-    <string>RTU_DigOut_8</string>
+    <string>MPNC_DigOut_A_8</string>
    </property>
    <property name="viewStatus">
     <bool>false</bool>
@@ -974,7 +974,7 @@ background-color: rgb(255, 255, 127);
     <bool>true</bool>
    </property>
    <property name="toolTip">
-    <string>RTU_LocDigOut_4</string>
+    <string>MPNC_DigOut_4</string>
    </property>
    <property name="whatsThis">
     <string>ATCMbutton widget</string>
@@ -986,7 +986,7 @@ background-color: rgb(255, 255, 127);
     <string/>
    </property>
    <property name="statusvar">
-    <string>RTU_LocDigOut_4</string>
+    <string>MPNC_DigOut_4</string>
    </property>
    <property name="viewStatus">
     <bool>false</bool>
@@ -1036,7 +1036,7 @@ background-color: rgb(255, 255, 127);
     <bool>true</bool>
    </property>
    <property name="toolTip">
-    <string>RTU_LocDigOut_2</string>
+    <string>MPNC_DigOut_2</string>
    </property>
    <property name="whatsThis">
     <string>ATCMbutton widget</string>
@@ -1048,7 +1048,7 @@ background-color: rgb(255, 255, 127);
     <string/>
    </property>
    <property name="statusvar">
-    <string>RTU_LocDigOut_2</string>
+    <string>MPNC_DigOut_2</string>
    </property>
    <property name="viewStatus">
     <bool>false</bool>
@@ -1079,7 +1079,7 @@ background-color: rgb(255, 255, 127);
     <enum>QFrame::Raised</enum>
    </property>
   </widget>
-  <widget class="ATCMled" name="atcmLed_RTU_AnIn_24">
+  <widget class="ATCMled" name="atcmLed_MPNC_AnIn_24">
    <property name="geometry">
     <rect>
      <x>240</x>
@@ -1089,7 +1089,7 @@ background-color: rgb(255, 255, 127);
     </rect>
    </property>
    <property name="toolTip">
-    <string>RTU_DigOut_5</string>
+    <string>MPNC_DigOut_A_5</string>
    </property>
    <property name="whatsThis">
     <string>ATCMled widget</string>
@@ -1101,7 +1101,7 @@ background-color: rgb(255, 255, 127);
     </font>
    </property>
    <property name="variable">
-    <string>RTU_DigOut_5</string>
+    <string>MPNC_DigOut_A_5</string>
    </property>
    <property name="refresh">
     <number>500</number>
@@ -1140,7 +1140,7 @@ background-color: rgb(255, 255, 127);
     <bool>true</bool>
    </property>
    <property name="toolTip">
-    <string>RTU_DigOut_3</string>
+    <string>MPNC_DigOut_A_3</string>
    </property>
    <property name="whatsThis">
     <string>ATCMbutton widget</string>
@@ -1152,7 +1152,7 @@ background-color: rgb(255, 255, 127);
     <string/>
    </property>
    <property name="statusvar">
-    <string>RTU_DigOut_3</string>
+    <string>MPNC_DigOut_A_3</string>
    </property>
    <property name="viewStatus">
     <bool>false</bool>
@@ -1202,7 +1202,7 @@ background-color: rgb(255, 255, 127);
     <bool>true</bool>
    </property>
    <property name="toolTip">
-    <string>RTU_DigOut_10</string>
+    <string>MPNC_DigOut_A_10</string>
    </property>
    <property name="whatsThis">
     <string>ATCMbutton widget</string>
@@ -1214,7 +1214,7 @@ background-color: rgb(255, 255, 127);
     <string/>
    </property>
    <property name="statusvar">
-    <string>RTU_DigOut_10</string>
+    <string>MPNC_DigOut_A_10</string>
    </property>
    <property name="viewStatus">
     <bool>false</bool>
@@ -1245,7 +1245,7 @@ background-color: rgb(255, 255, 127);
     <enum>QFrame::Raised</enum>
    </property>
   </widget>
-  <widget class="QLabel" name="label_RTU_AnIn_3">
+  <widget class="QLabel" name="label_MPNC_AnIn_3">
    <property name="geometry">
     <rect>
      <x>177</x>
@@ -1270,7 +1270,7 @@ background-color: rgb(255, 255, 127);
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
-  <widget class="QLabel" name="label_RTU_AnIn_12">
+  <widget class="QLabel" name="label_MPNC_AnIn_12">
    <property name="geometry">
     <rect>
      <x>449</x>
@@ -1314,7 +1314,7 @@ background-color: rgb(255, 255, 127);
     <bool>true</bool>
    </property>
    <property name="toolTip">
-    <string>RTU_LocDigOut_6</string>
+    <string>MPNC_DigOut_6</string>
    </property>
    <property name="whatsThis">
     <string>ATCMbutton widget</string>
@@ -1326,7 +1326,7 @@ background-color: rgb(255, 255, 127);
     <string/>
    </property>
    <property name="statusvar">
-    <string>RTU_LocDigOut_6</string>
+    <string>MPNC_DigOut_6</string>
    </property>
    <property name="viewStatus">
     <bool>false</bool>
@@ -1357,7 +1357,7 @@ background-color: rgb(255, 255, 127);
     <enum>QFrame::Raised</enum>
    </property>
   </widget>
-  <widget class="QLabel" name="label_RTU_AnIn_6">
+  <widget class="QLabel" name="label_MPNC_AnIn_6">
    <property name="geometry">
     <rect>
      <x>266</x>
@@ -1401,7 +1401,7 @@ background-color: rgb(255, 255, 127);
     <bool>true</bool>
    </property>
    <property name="toolTip">
-    <string>RTU_LocDigOut_7</string>
+    <string>MPNC_DigOut_7</string>
    </property>
    <property name="whatsThis">
     <string>ATCMbutton widget</string>
@@ -1413,7 +1413,7 @@ background-color: rgb(255, 255, 127);
     <string/>
    </property>
    <property name="statusvar">
-    <string>RTU_LocDigOut_7</string>
+    <string>MPNC_DigOut_7</string>
    </property>
    <property name="viewStatus">
     <bool>false</bool>
@@ -1444,7 +1444,7 @@ background-color: rgb(255, 255, 127);
     <enum>QFrame::Raised</enum>
    </property>
   </widget>
-  <widget class="ATCMled" name="atcmLed_RTU_AnIn_16">
+  <widget class="ATCMled" name="atcmLed_MPNC_AnIn_16">
    <property name="geometry">
     <rect>
      <x>120</x>
@@ -1454,7 +1454,7 @@ background-color: rgb(255, 255, 127);
     </rect>
    </property>
    <property name="toolTip">
-    <string>RTU_DigOut_1</string>
+    <string>MPNC_DigOut_A_1</string>
    </property>
    <property name="whatsThis">
     <string>ATCMled widget</string>
@@ -1466,7 +1466,7 @@ background-color: rgb(255, 255, 127);
     </font>
    </property>
    <property name="variable">
-    <string>RTU_DigOut_1</string>
+    <string>MPNC_DigOut_A_1</string>
    </property>
    <property name="refresh">
     <number>500</number>
@@ -1486,7 +1486,7 @@ background-color: rgb(255, 255, 127);
      <normaloff>:/off.png</normaloff>:/off.png</iconset>
    </property>
   </widget>
-  <widget class="QLabel" name="label_RTU_AnIn_13">
+  <widget class="QLabel" name="label_MPNC_AnIn_13">
    <property name="geometry">
     <rect>
      <x>0</x>
@@ -1505,7 +1505,7 @@ background-color: rgb(255, 255, 127);
     <string notr="true">background-color: rgb(255, 255, 127);</string>
    </property>
    <property name="text">
-    <string>RTU_DigIn_</string>
+    <string>MPNC_DigIn_A_</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>
@@ -1565,7 +1565,7 @@ background-color: rgb(255, 255, 127);
     <bool>true</bool>
    </property>
    <property name="toolTip">
-    <string>RTU_DigOut_12</string>
+    <string>MPNC_DigOut_A_12</string>
    </property>
    <property name="whatsThis">
     <string>ATCMbutton widget</string>
@@ -1577,7 +1577,7 @@ background-color: rgb(255, 255, 127);
     <string/>
    </property>
    <property name="statusvar">
-    <string>RTU_DigOut_12</string>
+    <string>MPNC_DigOut_A_12</string>
    </property>
    <property name="viewStatus">
     <bool>false</bool>
@@ -1646,7 +1646,7 @@ background-color: rgb(255, 255, 127);
     <enum>Qt::Horizontal</enum>
    </property>
   </widget>
-  <widget class="QLabel" name="label_RTU_AnIn_15">
+  <widget class="QLabel" name="label_MPNC_AnIn_15">
    <property name="geometry">
     <rect>
      <x>2</x>
@@ -1665,7 +1665,7 @@ background-color: rgb(255, 255, 127);
     <string notr="true">background-color: rgb(170, 255, 255);</string>
    </property>
    <property name="text">
-    <string>RTU_DigOut_</string>
+    <string>MPNC_DigOut_A_</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>
@@ -1692,7 +1692,7 @@ background-color: rgb(255, 255, 127);
     <string notr="true">background-color: rgb(170, 255, 127);</string>
    </property>
    <property name="text">
-    <string>page200: TPLC005</string>
+    <string>page200: MPNC</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>
@@ -1717,7 +1717,7 @@ background-color: rgb(255, 255, 127);
     <bool>true</bool>
    </property>
    <property name="toolTip">
-    <string>RTU_DigOut_5</string>
+    <string>MPNC_DigOut_A_5</string>
    </property>
    <property name="whatsThis">
     <string>ATCMbutton widget</string>
@@ -1729,7 +1729,7 @@ background-color: rgb(255, 255, 127);
     <string/>
    </property>
    <property name="statusvar">
-    <string>RTU_DigOut_5</string>
+    <string>MPNC_DigOut_A_5</string>
    </property>
    <property name="viewStatus">
     <bool>false</bool>
@@ -1760,7 +1760,7 @@ background-color: rgb(255, 255, 127);
     <enum>QFrame::Raised</enum>
    </property>
   </widget>
-  <widget class="ATCMled" name="atcmLed_RTU_AnIn_1">
+  <widget class="ATCMled" name="atcmLed_MPNC_AnIn_1">
    <property name="geometry">
     <rect>
      <x>121</x>
@@ -1770,7 +1770,7 @@ background-color: rgb(255, 255, 127);
     </rect>
    </property>
    <property name="toolTip">
-    <string>RTU_DigIn_1</string>
+    <string>MPNC_DigIn_A_1</string>
    </property>
    <property name="whatsThis">
     <string>ATCMled widget</string>
@@ -1782,7 +1782,7 @@ background-color: rgb(255, 255, 127);
     </font>
    </property>
    <property name="variable">
-    <string>RTU_DigIn_1</string>
+    <string>MPNC_DigIn_A_1</string>
    </property>
    <property name="refresh">
     <number>500</number>
@@ -1802,7 +1802,7 @@ background-color: rgb(255, 255, 127);
      <normaloff>:/off.png</normaloff>:/off.png</iconset>
    </property>
   </widget>
-  <widget class="ATCMlabel" name="atcmLabel_RTU_AnIn_1">
+  <widget class="ATCMlabel" name="atcmLabel_MPNC_AnIn_1">
    <property name="enabled">
     <bool>false</bool>
    </property>
@@ -1829,13 +1829,13 @@ background-color: rgb(255, 255, 127);
     <string notr="true">color: rgb(170, 0, 0);</string>
    </property>
    <property name="toolTip">
-    <string>RTU_AnIn_1</string>
+    <string>MPNC_AnIn_1</string>
    </property>
    <property name="whatsThis">
     <string>ATCMlabel widget</string>
    </property>
    <property name="variable">
-    <string>RTU_AnIn_1</string>
+    <string>MPNC_AnIn_1</string>
    </property>
    <property name="refresh">
     <number>200</number>
@@ -1873,7 +1873,7 @@ background-color: rgb(255, 255, 127);
     <number>0</number>
    </property>
   </widget>
-  <widget class="ATCMled" name="atcmLed_RTU_AnIn_12">
+  <widget class="ATCMled" name="atcmLed_MPNC_AnIn_12">
    <property name="geometry">
     <rect>
      <x>451</x>
@@ -1883,7 +1883,7 @@ background-color: rgb(255, 255, 127);
     </rect>
    </property>
    <property name="toolTip">
-    <string>RTU_DigIn_12</string>
+    <string>MPNC_DigIn_A_12</string>
    </property>
    <property name="whatsThis">
     <string>ATCMled widget</string>
@@ -1895,7 +1895,7 @@ background-color: rgb(255, 255, 127);
     </font>
    </property>
    <property name="variable">
-    <string>RTU_DigIn_12</string>
+    <string>MPNC_DigIn_A_12</string>
    </property>
    <property name="refresh">
     <number>500</number>
@@ -2080,7 +2080,7 @@ background-color: rgb(255, 255, 127);
     <enum>ATCMdate::YYYY_MM_DD</enum>
    </property>
   </widget>
-  <widget class="ATCMled" name="atcmLed_RTU_AnIn_20">
+  <widget class="ATCMled" name="atcmLed_MPNC_AnIn_20">
    <property name="geometry">
     <rect>
      <x>180</x>
@@ -2090,7 +2090,7 @@ background-color: rgb(255, 255, 127);
     </rect>
    </property>
    <property name="toolTip">
-    <string>RTU_DigOut_3</string>
+    <string>MPNC_DigOut_A_3</string>
    </property>
    <property name="whatsThis">
     <string>ATCMled widget</string>
@@ -2102,7 +2102,7 @@ background-color: rgb(255, 255, 127);
     </font>
    </property>
    <property name="variable">
-    <string>RTU_DigOut_3</string>
+    <string>MPNC_DigOut_A_3</string>
    </property>
    <property name="refresh">
     <number>500</number>
@@ -2122,7 +2122,7 @@ background-color: rgb(255, 255, 127);
      <normaloff>:/off.png</normaloff>:/off.png</iconset>
    </property>
   </widget>
-  <widget class="QLabel" name="label_RTU_AnIn_14">
+  <widget class="QLabel" name="label_MPNC_AnIn_14">
    <property name="geometry">
     <rect>
      <x>0</x>
@@ -2141,13 +2141,13 @@ background-color: rgb(255, 255, 127);
     <string notr="true">background-color: rgb(255, 255, 127);</string>
    </property>
    <property name="text">
-    <string>RTU_AnIn_</string>
+    <string>MPNC_AnIn_</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
-  <widget class="ATCMled" name="atcmLed_RTU_AnIn_4">
+  <widget class="ATCMled" name="atcmLed_MPNC_AnIn_4">
    <property name="geometry">
     <rect>
      <x>211</x>
@@ -2157,7 +2157,7 @@ background-color: rgb(255, 255, 127);
     </rect>
    </property>
    <property name="toolTip">
-    <string>RTU_DigIn_4</string>
+    <string>MPNC_DigIn_A_4</string>
    </property>
    <property name="whatsThis">
     <string>ATCMled widget</string>
@@ -2169,7 +2169,7 @@ background-color: rgb(255, 255, 127);
     </font>
    </property>
    <property name="variable">
-    <string>RTU_DigIn_4</string>
+    <string>MPNC_DigIn_A_4</string>
    </property>
    <property name="refresh">
     <number>500</number>
@@ -2242,7 +2242,7 @@ background-color: rgb(255, 255, 127);
     <string>0;2: LOCAL;216;2: REMOTE;42;2: DONE</string>
    </property>
   </widget>
-  <widget class="ATCMled" name="atcmLed_RTU_AnIn_13">
+  <widget class="ATCMled" name="atcmLed_MPNC_AnIn_13">
    <property name="geometry">
     <rect>
      <x>450</x>
@@ -2252,7 +2252,7 @@ background-color: rgb(255, 255, 127);
     </rect>
    </property>
    <property name="toolTip">
-    <string>RTU_DigOut_12</string>
+    <string>MPNC_DigOut_A_12</string>
    </property>
    <property name="whatsThis">
     <string>ATCMled widget</string>
@@ -2264,7 +2264,7 @@ background-color: rgb(255, 255, 127);
     </font>
    </property>
    <property name="variable">
-    <string>RTU_DigOut_12</string>
+    <string>MPNC_DigOut_A_12</string>
    </property>
    <property name="refresh">
     <number>500</number>
@@ -2284,7 +2284,7 @@ background-color: rgb(255, 255, 127);
      <normaloff>:/off.png</normaloff>:/off.png</iconset>
    </property>
   </widget>
-  <widget class="ATCMcombobox" name="atcmComboBox_RTU_AnInConf_1">
+  <widget class="ATCMcombobox" name="atcmComboBox_MPNC_AnInConf_1">
    <property name="geometry">
     <rect>
      <x>181</x>
@@ -2300,7 +2300,7 @@ background-color: rgb(255, 255, 127);
     </font>
    </property>
    <property name="toolTip">
-    <string>RTU_AnInConf_1</string>
+    <string>MPNC_AnInConf_1</string>
    </property>
    <property name="whatsThis">
     <string>ATCMcombobox widget</string>
@@ -2309,7 +2309,7 @@ background-color: rgb(255, 255, 127);
     <number>1</number>
    </property>
    <property name="variable">
-    <string>RTU_AnInConf_1</string>
+    <string>MPNC_AnInConf_1</string>
    </property>
    <property name="refresh">
     <number>1000</number>
@@ -2385,7 +2385,7 @@ ON</string>
     <bool>true</bool>
    </property>
    <property name="toolTip">
-    <string>RTU_DigOut_7</string>
+    <string>MPNC_DigOut_A_7</string>
    </property>
    <property name="whatsThis">
     <string>ATCMbutton widget</string>
@@ -2397,7 +2397,7 @@ ON</string>
     <string/>
    </property>
    <property name="statusvar">
-    <string>RTU_DigOut_7</string>
+    <string>MPNC_DigOut_A_7</string>
    </property>
    <property name="viewStatus">
     <bool>false</bool>
@@ -2453,7 +2453,7 @@ ON</string>
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
-  <widget class="ATCMlabel" name="atcmLabel_RTU_AnIn_2">
+  <widget class="ATCMlabel" name="atcmLabel_MPNC_AnIn_2">
    <property name="enabled">
     <bool>false</bool>
    </property>
@@ -2480,13 +2480,13 @@ ON</string>
     <string notr="true">color: rgb(170, 0, 0);</string>
    </property>
    <property name="toolTip">
-    <string>RTU_AnIn_2</string>
+    <string>MPNC_AnIn_2</string>
    </property>
    <property name="whatsThis">
     <string>ATCMlabel widget</string>
    </property>
    <property name="variable">
-    <string>RTU_AnIn_2</string>
+    <string>MPNC_AnIn_2</string>
    </property>
    <property name="refresh">
     <number>200</number>
@@ -2543,7 +2543,7 @@ ON</string>
     <enum>Qt::Horizontal</enum>
    </property>
   </widget>
-  <widget class="QLabel" name="label_RTU_AnIn_7">
+  <widget class="QLabel" name="label_MPNC_AnIn_7">
    <property name="geometry">
     <rect>
      <x>296</x>
@@ -2568,7 +2568,7 @@ ON</string>
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
-  <widget class="QLabel" name="label_RTU_AnIn_1">
+  <widget class="QLabel" name="label_MPNC_AnIn_1">
    <property name="geometry">
     <rect>
      <x>122</x>
@@ -2649,7 +2649,7 @@ ON</string>
     <enum>QFrame::Raised</enum>
    </property>
   </widget>
-  <widget class="QLabel" name="label_RTU_AnIn_4">
+  <widget class="QLabel" name="label_MPNC_AnIn_4">
    <property name="geometry">
     <rect>
      <x>208</x>
@@ -2674,7 +2674,7 @@ ON</string>
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
-  <widget class="ATCMled" name="atcmLed_RTU_AnIn_22">
+  <widget class="ATCMled" name="atcmLed_MPNC_AnIn_22">
    <property name="geometry">
     <rect>
      <x>270</x>
@@ -2684,7 +2684,7 @@ ON</string>
     </rect>
    </property>
    <property name="toolTip">
-    <string>RTU_DigOut_6</string>
+    <string>MPNC_DigOut_A_6</string>
    </property>
    <property name="whatsThis">
     <string>ATCMled widget</string>
@@ -2696,7 +2696,7 @@ ON</string>
     </font>
    </property>
    <property name="variable">
-    <string>RTU_DigOut_6</string>
+    <string>MPNC_DigOut_A_6</string>
    </property>
    <property name="refresh">
     <number>500</number>
@@ -2735,7 +2735,7 @@ ON</string>
     <bool>true</bool>
    </property>
    <property name="toolTip">
-    <string>RTU_DigOut_9</string>
+    <string>MPNC_DigOut_A_9</string>
    </property>
    <property name="whatsThis">
     <string>ATCMbutton widget</string>
@@ -2747,7 +2747,7 @@ ON</string>
     <string/>
    </property>
    <property name="statusvar">
-    <string>RTU_DigOut_9</string>
+    <string>MPNC_DigOut_A_9</string>
    </property>
    <property name="viewStatus">
     <bool>false</bool>
@@ -2778,7 +2778,7 @@ ON</string>
     <enum>QFrame::Raised</enum>
    </property>
   </widget>
-  <widget class="ATCMled" name="atcmLed_RTU_AnIn_15">
+  <widget class="ATCMled" name="atcmLed_MPNC_AnIn_15">
    <property name="geometry">
     <rect>
      <x>330</x>
@@ -2788,7 +2788,7 @@ ON</string>
     </rect>
    </property>
    <property name="toolTip">
-    <string>RTU_DigOut_8</string>
+    <string>MPNC_DigOut_A_8</string>
    </property>
    <property name="whatsThis">
     <string>ATCMled widget</string>
@@ -2800,7 +2800,7 @@ ON</string>
     </font>
    </property>
    <property name="variable">
-    <string>RTU_DigOut_8</string>
+    <string>MPNC_DigOut_A_8</string>
    </property>
    <property name="refresh">
     <number>500</number>
@@ -2820,7 +2820,7 @@ ON</string>
      <normaloff>:/off.png</normaloff>:/off.png</iconset>
    </property>
   </widget>
-  <widget class="ATCMled" name="atcmLed_RTU_AnIn_14">
+  <widget class="ATCMled" name="atcmLed_MPNC_AnIn_14">
    <property name="geometry">
     <rect>
      <x>420</x>
@@ -2830,7 +2830,7 @@ ON</string>
     </rect>
    </property>
    <property name="toolTip">
-    <string>RTU_DigOut_11</string>
+    <string>MPNC_DigOut_A_11</string>
    </property>
    <property name="whatsThis">
     <string>ATCMled widget</string>
@@ -2842,7 +2842,7 @@ ON</string>
     </font>
    </property>
    <property name="variable">
-    <string>RTU_DigOut_11</string>
+    <string>MPNC_DigOut_A_11</string>
    </property>
    <property name="refresh">
     <number>500</number>
@@ -2934,7 +2934,7 @@ ON</string>
     <bool>true</bool>
    </property>
    <property name="toolTip">
-    <string>RTU_DigOut_6</string>
+    <string>MPNC_DigOut_A_6</string>
    </property>
    <property name="whatsThis">
     <string>ATCMbutton widget</string>
@@ -2946,7 +2946,7 @@ ON</string>
     <string/>
    </property>
    <property name="statusvar">
-    <string>RTU_DigOut_6</string>
+    <string>MPNC_DigOut_A_6</string>
    </property>
    <property name="viewStatus">
     <bool>false</bool>
@@ -2977,7 +2977,7 @@ ON</string>
     <enum>QFrame::Raised</enum>
    </property>
   </widget>
-  <widget class="QLabel" name="label_RTU_AnIn_17">
+  <widget class="QLabel" name="label_MPNC_AnIn_17">
    <property name="geometry">
     <rect>
      <x>0</x>
@@ -3002,7 +3002,7 @@ ON</string>
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
-  <widget class="ATCMcombobox" name="atcmComboBox_RTU_AnInConf_2">
+  <widget class="ATCMcombobox" name="atcmComboBox_MPNC_AnInConf_2">
    <property name="geometry">
     <rect>
      <x>301</x>
@@ -3018,7 +3018,7 @@ ON</string>
     </font>
    </property>
    <property name="toolTip">
-    <string>RTU_AnInConf_2</string>
+    <string>MPNC_AnInConf_2</string>
    </property>
    <property name="whatsThis">
     <string>ATCMcombobox widget</string>
@@ -3027,7 +3027,7 @@ ON</string>
     <number>1</number>
    </property>
    <property name="variable">
-    <string>RTU_AnInConf_2</string>
+    <string>MPNC_AnInConf_2</string>
    </property>
    <property name="refresh">
     <number>1000</number>
@@ -3061,7 +3061,7 @@ ON</string>
     <string>1;[mA] 4..20;2;[V] 0..10;3;[°C] TCJ;4;[°C] TCK;5;[°C] TCT;6;[°C] PT100E;7;[°C] PT100R;0;--</string>
    </property>
   </widget>
-  <widget class="QLabel" name="label_RTU_AnIn_2">
+  <widget class="QLabel" name="label_MPNC_AnIn_2">
    <property name="geometry">
     <rect>
      <x>149</x>
@@ -3086,7 +3086,7 @@ ON</string>
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
-  <widget class="ATCMled" name="atcmLed_RTU_AnIn_10">
+  <widget class="ATCMled" name="atcmLed_MPNC_AnIn_10">
    <property name="geometry">
     <rect>
      <x>391</x>
@@ -3096,7 +3096,7 @@ ON</string>
     </rect>
    </property>
    <property name="toolTip">
-    <string>RTU_DigIn_10</string>
+    <string>MPNC_DigIn_A_10</string>
    </property>
    <property name="whatsThis">
     <string>ATCMled widget</string>
@@ -3108,7 +3108,7 @@ ON</string>
     </font>
    </property>
    <property name="variable">
-    <string>RTU_DigIn_10</string>
+    <string>MPNC_DigIn_A_10</string>
    </property>
    <property name="refresh">
     <number>500</number>
@@ -3128,7 +3128,7 @@ ON</string>
      <normaloff>:/off.png</normaloff>:/off.png</iconset>
    </property>
   </widget>
-  <widget class="QLabel" name="label_RTU_AnIn_11">
+  <widget class="QLabel" name="label_MPNC_AnIn_11">
    <property name="geometry">
     <rect>
      <x>418</x>
@@ -3191,13 +3191,13 @@ ON</string>
     <string>2</string>
    </property>
    <property name="toolTip">
-    <string>RTU_Tamb</string>
+    <string>MPNC_ModulesNumber</string>
    </property>
    <property name="whatsThis">
     <string>ATCMlabel widget</string>
    </property>
    <property name="variable">
-    <string>RTU_Tamb</string>
+    <string>MPNC_ModulesNumber</string>
    </property>
    <property name="suffix">
     <string>° C</string>
@@ -3325,7 +3325,7 @@ ON</string>
     <bool>true</bool>
    </property>
    <property name="toolTip">
-    <string>RTU_LocDigOut_1</string>
+    <string>MPNC_DigOut_1</string>
    </property>
    <property name="whatsThis">
     <string>ATCMbutton widget</string>
@@ -3337,7 +3337,7 @@ ON</string>
     <string/>
    </property>
    <property name="statusvar">
-    <string>RTU_LocDigOut_1</string>
+    <string>MPNC_DigOut_1</string>
    </property>
    <property name="viewStatus">
     <bool>false</bool>
@@ -3368,7 +3368,7 @@ ON</string>
     <enum>QFrame::Raised</enum>
    </property>
   </widget>
-  <widget class="ATCMled" name="atcmLed_RTU_AnIn_19">
+  <widget class="ATCMled" name="atcmLed_MPNC_AnIn_19">
    <property name="geometry">
     <rect>
      <x>150</x>
@@ -3378,7 +3378,7 @@ ON</string>
     </rect>
    </property>
    <property name="toolTip">
-    <string>RTU_DigOut_2</string>
+    <string>MPNC_DigOut_A_2</string>
    </property>
    <property name="whatsThis">
     <string>ATCMled widget</string>
@@ -3390,7 +3390,7 @@ ON</string>
     </font>
    </property>
    <property name="variable">
-    <string>RTU_DigOut_2</string>
+    <string>MPNC_DigOut_A_2</string>
    </property>
    <property name="refresh">
     <number>500</number>
@@ -3429,7 +3429,7 @@ ON</string>
     <bool>true</bool>
    </property>
    <property name="toolTip">
-    <string>RTU_DigOut_1</string>
+    <string>MPNC_DigOut_A_1</string>
    </property>
    <property name="whatsThis">
     <string>ATCMbutton widget</string>
@@ -3441,7 +3441,7 @@ ON</string>
     <string/>
    </property>
    <property name="statusvar">
-    <string>RTU_DigOut_1</string>
+    <string>MPNC_DigOut_A_1</string>
    </property>
    <property name="viewStatus">
     <bool>false</bool>
@@ -3472,7 +3472,7 @@ ON</string>
     <enum>QFrame::Raised</enum>
    </property>
   </widget>
-  <widget class="ATCMled" name="atcmLed_RTU_AnIn_5">
+  <widget class="ATCMled" name="atcmLed_MPNC_AnIn_5">
    <property name="geometry">
     <rect>
      <x>241</x>
@@ -3482,7 +3482,7 @@ ON</string>
     </rect>
    </property>
    <property name="toolTip">
-    <string>RTU_DigIn_5</string>
+    <string>MPNC_DigIn_A_5</string>
    </property>
    <property name="whatsThis">
     <string>ATCMled widget</string>
@@ -3494,7 +3494,7 @@ ON</string>
     </font>
    </property>
    <property name="variable">
-    <string>RTU_DigIn_5</string>
+    <string>MPNC_DigIn_A_5</string>
    </property>
    <property name="refresh">
     <number>500</number>
@@ -3533,7 +3533,7 @@ ON</string>
     <bool>true</bool>
    </property>
    <property name="toolTip">
-    <string>RTU_LocDigOut_3</string>
+    <string>MPNC_DigOut_3</string>
    </property>
    <property name="whatsThis">
     <string>ATCMbutton widget</string>
@@ -3545,7 +3545,7 @@ ON</string>
     <string/>
    </property>
    <property name="statusvar">
-    <string>RTU_LocDigOut_3</string>
+    <string>MPNC_DigOut_3</string>
    </property>
    <property name="viewStatus">
     <bool>false</bool>
@@ -3595,7 +3595,7 @@ ON</string>
     <bool>true</bool>
    </property>
    <property name="toolTip">
-    <string>RTU_DigOut_11</string>
+    <string>MPNC_DigOut_A_11</string>
    </property>
    <property name="whatsThis">
     <string>ATCMbutton widget</string>
@@ -3607,7 +3607,7 @@ ON</string>
     <string/>
    </property>
    <property name="statusvar">
-    <string>RTU_DigOut_11</string>
+    <string>MPNC_DigOut_A_11</string>
    </property>
    <property name="viewStatus">
     <bool>false</bool>
@@ -3638,7 +3638,7 @@ ON</string>
     <enum>QFrame::Raised</enum>
    </property>
   </widget>
-  <widget class="ATCMled" name="atcmLed_RTU_AnIn_6">
+  <widget class="ATCMled" name="atcmLed_MPNC_AnIn_6">
    <property name="geometry">
     <rect>
      <x>271</x>
@@ -3648,7 +3648,7 @@ ON</string>
     </rect>
    </property>
    <property name="toolTip">
-    <string>RTU_DigIn_6</string>
+    <string>MPNC_DigIn_A_6</string>
    </property>
    <property name="whatsThis">
     <string>ATCMled widget</string>
@@ -3660,7 +3660,7 @@ ON</string>
     </font>
    </property>
    <property name="variable">
-    <string>RTU_DigIn_6</string>
+    <string>MPNC_DigIn_A_6</string>
    </property>
    <property name="refresh">
     <number>500</number>
@@ -3699,7 +3699,7 @@ ON</string>
     <bool>true</bool>
    </property>
    <property name="toolTip">
-    <string>RTU_DigOut_4</string>
+    <string>MPNC_DigOut_A_4</string>
    </property>
    <property name="whatsThis">
     <string>ATCMbutton widget</string>
@@ -3711,7 +3711,7 @@ ON</string>
     <string/>
    </property>
    <property name="statusvar">
-    <string>RTU_DigOut_4</string>
+    <string>MPNC_DigOut_A_4</string>
    </property>
    <property name="viewStatus">
     <bool>false</bool>
@@ -3742,7 +3742,7 @@ ON</string>
     <enum>QFrame::Raised</enum>
    </property>
   </widget>
-  <widget class="ATCMled" name="atcmLed_RTU_AnIn_9">
+  <widget class="ATCMled" name="atcmLed_MPNC_AnIn_9">
    <property name="geometry">
     <rect>
      <x>361</x>
@@ -3752,7 +3752,7 @@ ON</string>
     </rect>
    </property>
    <property name="toolTip">
-    <string>RTU_DigIn_9</string>
+    <string>MPNC_DigIn_A_9</string>
    </property>
    <property name="whatsThis">
     <string>ATCMled widget</string>
@@ -3764,7 +3764,7 @@ ON</string>
     </font>
    </property>
    <property name="variable">
-    <string>RTU_DigIn_9</string>
+    <string>MPNC_DigIn_A_9</string>
    </property>
    <property name="refresh">
     <number>500</number>
@@ -3784,7 +3784,7 @@ ON</string>
      <normaloff>:/off.png</normaloff>:/off.png</iconset>
    </property>
   </widget>
-  <widget class="QLabel" name="label_RTU_AnIn_8">
+  <widget class="QLabel" name="label_MPNC_AnIn_8">
    <property name="geometry">
     <rect>
      <x>327</x>
@@ -3851,7 +3851,7 @@ ON</string>
      <normaloff>:/off.png</normaloff>:/off.png</iconset>
    </property>
   </widget>
-  <widget class="QLabel" name="label_RTU_AnIn_9">
+  <widget class="QLabel" name="label_MPNC_AnIn_9">
    <property name="geometry">
     <rect>
      <x>357</x>
@@ -3895,7 +3895,7 @@ ON</string>
     <enum>Qt::Horizontal</enum>
    </property>
   </widget>
-  <widget class="ATCMled" name="atcmLed_RTU_AnIn_2">
+  <widget class="ATCMled" name="atcmLed_MPNC_AnIn_2">
    <property name="geometry">
     <rect>
      <x>151</x>
@@ -3905,7 +3905,7 @@ ON</string>
     </rect>
    </property>
    <property name="toolTip">
-    <string>RTU_DigIn_2</string>
+    <string>MPNC_DigIn_A_2</string>
    </property>
    <property name="whatsThis">
     <string>ATCMled widget</string>
@@ -3917,7 +3917,7 @@ ON</string>
     </font>
    </property>
    <property name="variable">
-    <string>RTU_DigIn_2</string>
+    <string>MPNC_DigIn_A_2</string>
    </property>
    <property name="refresh">
     <number>500</number>
@@ -3937,7 +3937,7 @@ ON</string>
      <normaloff>:/off.png</normaloff>:/off.png</iconset>
    </property>
   </widget>
-  <widget class="ATCMled" name="atcmLed_RTU_AnIn_3">
+  <widget class="ATCMled" name="atcmLed_MPNC_AnIn_3">
    <property name="geometry">
     <rect>
      <x>181</x>
@@ -3947,7 +3947,7 @@ ON</string>
     </rect>
    </property>
    <property name="toolTip">
-    <string>RTU_DigIn_3</string>
+    <string>MPNC_DigIn_A_3</string>
    </property>
    <property name="whatsThis">
     <string>ATCMled widget</string>
@@ -3959,7 +3959,7 @@ ON</string>
     </font>
    </property>
    <property name="variable">
-    <string>RTU_DigIn_3</string>
+    <string>MPNC_DigIn_A_3</string>
    </property>
    <property name="refresh">
     <number>500</number>
@@ -3998,7 +3998,7 @@ ON</string>
     <bool>true</bool>
    </property>
    <property name="toolTip">
-    <string>RTU_DigOut_2</string>
+    <string>MPNC_DigOut_A_2</string>
    </property>
    <property name="whatsThis">
     <string>ATCMbutton widget</string>
@@ -4010,7 +4010,7 @@ ON</string>
     <string/>
    </property>
    <property name="statusvar">
-    <string>RTU_DigOut_2</string>
+    <string>MPNC_DigOut_A_2</string>
    </property>
    <property name="viewStatus">
     <bool>false</bool>
@@ -4041,7 +4041,7 @@ ON</string>
     <enum>QFrame::Raised</enum>
    </property>
   </widget>
-  <widget class="ATCMled" name="atcmLed_RTU_AnIn_11">
+  <widget class="ATCMled" name="atcmLed_MPNC_AnIn_11">
    <property name="geometry">
     <rect>
      <x>421</x>
@@ -4051,7 +4051,7 @@ ON</string>
     </rect>
    </property>
    <property name="toolTip">
-    <string>RTU_DigIn_11</string>
+    <string>MPNC_DigIn_A_11</string>
    </property>
    <property name="whatsThis">
     <string>ATCMled widget</string>
@@ -4063,7 +4063,7 @@ ON</string>
     </font>
    </property>
    <property name="variable">
-    <string>RTU_DigIn_11</string>
+    <string>MPNC_DigIn_A_11</string>
    </property>
    <property name="refresh">
     <number>500</number>
@@ -4136,7 +4136,7 @@ ON</string>
     <string>0;x: LOCAL;216;x: REMOTE;42;x: DONE</string>
    </property>
   </widget>
-  <widget class="QLabel" name="label_RTU_AnIn_10">
+  <widget class="QLabel" name="label_MPNC_AnIn_10">
    <property name="geometry">
     <rect>
      <x>388</x>
@@ -4180,7 +4180,7 @@ ON</string>
     <bool>true</bool>
    </property>
    <property name="toolTip">
-    <string>RTU_LocDigOut_5</string>
+    <string>MPNC_DigOut_5</string>
    </property>
    <property name="whatsThis">
     <string>ATCMbutton widget</string>
@@ -4192,7 +4192,7 @@ ON</string>
     <string/>
    </property>
    <property name="statusvar">
-    <string>RTU_LocDigOut_5</string>
+    <string>MPNC_DigOut_5</string>
    </property>
    <property name="viewStatus">
     <bool>false</bool>
@@ -4224,91 +4224,91 @@ ON</string>
    </property>
   </widget>
   <zorder>atcmLed_Idle_2</zorder>
-  <zorder>atcmLed_RTU_AnIn_17</zorder>
+  <zorder>atcmLed_MPNC_AnIn_17</zorder>
   <zorder>atcmLabel_TEST_STEP_MAX</zorder>
   <zorder>atcmButton_20</zorder>
-  <zorder>atcmLed_RTU_AnIn_18</zorder>
+  <zorder>atcmLed_MPNC_AnIn_18</zorder>
   <zorder>atcmButton_6</zorder>
   <zorder>atcmLabelAnInConf_11</zorder>
-  <zorder>atcmLed_RTU_AnIn_23</zorder>
-  <zorder>atcmLed_RTU_AnIn_21</zorder>
+  <zorder>atcmLed_MPNC_AnIn_23</zorder>
+  <zorder>atcmLed_MPNC_AnIn_21</zorder>
   <zorder>atcmButton_14</zorder>
-  <zorder>atcmLed_RTU_AnIn_8</zorder>
+  <zorder>atcmLed_MPNC_AnIn_8</zorder>
   <zorder>atcmLed_Idle_4</zorder>
   <zorder>atcmLed_Idle_5</zorder>
   <zorder>atcmLabel</zorder>
-  <zorder>label_RTU_AnIn_5</zorder>
-  <zorder>atcmLed_RTU_AnIn_7</zorder>
+  <zorder>label_MPNC_AnIn_5</zorder>
+  <zorder>atcmLed_MPNC_AnIn_7</zorder>
   <zorder>label_Qt_Project_3</zorder>
   <zorder>atcmButton_8</zorder>
   <zorder>atcmButton_18</zorder>
   <zorder>atcmButton_22</zorder>
-  <zorder>atcmLed_RTU_AnIn_24</zorder>
+  <zorder>atcmLed_MPNC_AnIn_24</zorder>
   <zorder>atcmButton_3</zorder>
   <zorder>atcmButton_10</zorder>
-  <zorder>label_RTU_AnIn_3</zorder>
-  <zorder>label_RTU_AnIn_12</zorder>
+  <zorder>label_MPNC_AnIn_3</zorder>
+  <zorder>label_MPNC_AnIn_12</zorder>
   <zorder>atcmButton_23</zorder>
-  <zorder>label_RTU_AnIn_6</zorder>
+  <zorder>label_MPNC_AnIn_6</zorder>
   <zorder>atcmButton_24</zorder>
-  <zorder>atcmLed_RTU_AnIn_16</zorder>
-  <zorder>label_RTU_AnIn_13</zorder>
+  <zorder>atcmLed_MPNC_AnIn_16</zorder>
+  <zorder>label_MPNC_AnIn_13</zorder>
   <zorder>atcmTime</zorder>
   <zorder>atcmButton_12</zorder>
-  <zorder>label_RTU_AnIn_15</zorder>
+  <zorder>label_MPNC_AnIn_15</zorder>
   <zorder>label_Qt_Project_2</zorder>
   <zorder>atcmButton_9</zorder>
-  <zorder>atcmLed_RTU_AnIn_1</zorder>
-  <zorder>atcmLabel_RTU_AnIn_1</zorder>
-  <zorder>atcmLed_RTU_AnIn_12</zorder>
+  <zorder>atcmLed_MPNC_AnIn_1</zorder>
+  <zorder>atcmLabel_MPNC_AnIn_1</zorder>
+  <zorder>atcmLed_MPNC_AnIn_12</zorder>
   <zorder>atcmLabel_TEST_STEP</zorder>
   <zorder>atcmButton_menu_2</zorder>
   <zorder>atcmDate</zorder>
-  <zorder>atcmLed_RTU_AnIn_20</zorder>
-  <zorder>label_RTU_AnIn_14</zorder>
-  <zorder>atcmLed_RTU_AnIn_4</zorder>
+  <zorder>atcmLed_MPNC_AnIn_20</zorder>
+  <zorder>label_MPNC_AnIn_14</zorder>
+  <zorder>atcmLed_MPNC_AnIn_4</zorder>
   <zorder>atcmComboBox_2</zorder>
-  <zorder>atcmLed_RTU_AnIn_13</zorder>
-  <zorder>atcmComboBox_RTU_AnInConf_1</zorder>
+  <zorder>atcmLed_MPNC_AnIn_13</zorder>
+  <zorder>atcmComboBox_MPNC_AnInConf_1</zorder>
   <zorder>label_Start_6</zorder>
   <zorder>atcmButton_7</zorder>
   <zorder>label_Qt_Project</zorder>
-  <zorder>atcmLabel_RTU_AnIn_2</zorder>
-  <zorder>label_RTU_AnIn_7</zorder>
-  <zorder>label_RTU_AnIn_1</zorder>
+  <zorder>atcmLabel_MPNC_AnIn_2</zorder>
+  <zorder>label_MPNC_AnIn_7</zorder>
+  <zorder>label_MPNC_AnIn_1</zorder>
   <zorder>atcmButton_15</zorder>
-  <zorder>label_RTU_AnIn_4</zorder>
-  <zorder>atcmLed_RTU_AnIn_22</zorder>
+  <zorder>label_MPNC_AnIn_4</zorder>
+  <zorder>atcmLed_MPNC_AnIn_22</zorder>
   <zorder>atcmButton_13</zorder>
-  <zorder>atcmLed_RTU_AnIn_15</zorder>
-  <zorder>atcmLed_RTU_AnIn_14</zorder>
+  <zorder>atcmLed_MPNC_AnIn_15</zorder>
+  <zorder>atcmLed_MPNC_AnIn_14</zorder>
   <zorder>atcmButton_16</zorder>
   <zorder>atcmButton_5</zorder>
-  <zorder>label_RTU_AnIn_17</zorder>
-  <zorder>atcmComboBox_RTU_AnInConf_2</zorder>
-  <zorder>label_RTU_AnIn_2</zorder>
-  <zorder>atcmLed_RTU_AnIn_10</zorder>
-  <zorder>label_RTU_AnIn_11</zorder>
+  <zorder>label_MPNC_AnIn_17</zorder>
+  <zorder>atcmComboBox_MPNC_AnInConf_2</zorder>
+  <zorder>label_MPNC_AnIn_2</zorder>
+  <zorder>atcmLed_MPNC_AnIn_10</zorder>
+  <zorder>label_MPNC_AnIn_11</zorder>
   <zorder>atcmLabelAnInConf_10</zorder>
   <zorder>atcmButton_menu</zorder>
   <zorder>atcmButton_19</zorder>
-  <zorder>atcmLed_RTU_AnIn_19</zorder>
+  <zorder>atcmLed_MPNC_AnIn_19</zorder>
   <zorder>atcmButton</zorder>
-  <zorder>atcmLed_RTU_AnIn_5</zorder>
+  <zorder>atcmLed_MPNC_AnIn_5</zorder>
   <zorder>atcmButton_17</zorder>
   <zorder>atcmButton_11</zorder>
-  <zorder>atcmLed_RTU_AnIn_6</zorder>
+  <zorder>atcmLed_MPNC_AnIn_6</zorder>
   <zorder>atcmButton_4</zorder>
-  <zorder>atcmLed_RTU_AnIn_9</zorder>
-  <zorder>label_RTU_AnIn_8</zorder>
+  <zorder>atcmLed_MPNC_AnIn_9</zorder>
+  <zorder>label_MPNC_AnIn_8</zorder>
   <zorder>atcmLed_GO_2</zorder>
-  <zorder>label_RTU_AnIn_9</zorder>
-  <zorder>atcmLed_RTU_AnIn_2</zorder>
-  <zorder>atcmLed_RTU_AnIn_3</zorder>
+  <zorder>label_MPNC_AnIn_9</zorder>
+  <zorder>atcmLed_MPNC_AnIn_2</zorder>
+  <zorder>atcmLed_MPNC_AnIn_3</zorder>
   <zorder>atcmButton_2</zorder>
-  <zorder>atcmLed_RTU_AnIn_11</zorder>
+  <zorder>atcmLed_MPNC_AnIn_11</zorder>
   <zorder>atcmComboBox</zorder>
-  <zorder>label_RTU_AnIn_10</zorder>
+  <zorder>label_MPNC_AnIn_10</zorder>
   <zorder>atcmButton_21</zorder>
   <zorder>line_vt_2</zorder>
   <zorder>line_hr_3</zorder>

@@ -81,6 +81,13 @@ static page300 *thePage = NULL;
 
 void setup(void)
 {
+    qDebug() << HMIversion;
+    while (PLC_EngineStatus < 2) {
+        fputc('*', stderr);
+        sleep(1);
+    }
+    doWrite_PLC_HMI_Version(3391);
+
     previous_PLC_time = PLC_time;
     last_PLC_time = PLC_time;
     previous_PLC_Heartbeat = PLC_Heartbeat;
@@ -147,10 +154,10 @@ void loop(void)
     }
     previous_PLC_Heartbeat = PLC_Heartbeat;
 
-    // TPLC005 RTU0 communication test @ 1s
+    // MPNC RTU0 communication test @ 1s
     if ((PLC_time - last_PLC_time) > 1.5) {
         if (previous_RTU_Heartbeat == RTU_HeartBeat) {
-            thePage->messageBox(RESULT_UNKNOWN, "RTU0 hangup :(\nWhat happened to TPLC005?");
+            thePage->messageBox(RESULT_UNKNOWN, "RTU0 hangup :(\nWhat happened to MPNC?");
         }
         last_PLC_time = PLC_time;
         previous_RTU_Heartbeat = RTU_HeartBeat;

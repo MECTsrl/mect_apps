@@ -5,22 +5,22 @@ FUNCTION WriteVAL
 VAR_INPUT
 END_VAR
 
-	if TST_DigIn_1  then RTU_DigOut_1 := VAL_DigIn_1;  else RTU_DigOut_1 := 0; end_if;
-	if TST_DigIn_2  then RTU_DigOut_2 := VAL_DigIn_2;  else RTU_DigOut_2 := 0; end_if;
-	if TST_DigIn_3  then RTU_DigOut_3 := VAL_DigIn_3;  else RTU_DigOut_3 := 0; end_if;
-	if TST_DigIn_4  then RTU_DigOut_4 := VAL_DigIn_4;  else RTU_DigOut_4 := 0; end_if;
-	if TST_DigIn_5  then RTU_DigOut_5 := VAL_DigIn_5;  else RTU_DigOut_5 := 0; end_if;
-	if TST_DigIn_6  then RTU_DigOut_6 := VAL_DigIn_6;  else RTU_DigOut_6 := 0; end_if;
-	if TST_DigIn_7  then RTU_DigOut_7 := VAL_DigIn_7;  else RTU_DigOut_7 := 0; end_if;
-	if TST_DigIn_8  then RTU_DigOut_8 := VAL_DigIn_8;  else RTU_DigOut_8 := 0; end_if;
-	if TST_DigIn_9  then RTU_DigOut_9 := VAL_DigIn_9;  else RTU_DigOut_9 := 0; end_if;
-	if TST_DigIn_10 then RTU_DigOut_10:= VAL_DigIn_10; else RTU_DigOut_10:= 0; end_if;
-	if TST_DigIn_11 then RTU_DigOut_11:= VAL_DigIn_11; else RTU_DigOut_11:= 0; end_if;
-	if TST_DigIn_12 then RTU_DigOut_12:= VAL_DigIn_12; else RTU_DigOut_12:= 0; end_if;
-	if TST_DigIn_13 then RTU_DigOut_13:= VAL_DigIn_13; else RTU_DigOut_13:= 0; end_if;
-	if TST_DigIn_14 then RTU_DigOut_14:= VAL_DigIn_14; else RTU_DigOut_14:= 0; end_if;
-	if TST_DigIn_15 then RTU_DigOut_15:= VAL_DigIn_15; else RTU_DigOut_15:= 0; end_if;
-	if TST_DigIn_16 then RTU_DigOut_16:= VAL_DigIn_16; else RTU_DigOut_16:= 0; end_if;
+	if TST_DigIn_1  then MPNC_DigOut_A_1 := VAL_DigIn_1;  else MPNC_DigOut_A_1 := 0; end_if;
+	if TST_DigIn_2  then MPNC_DigOut_A_2 := VAL_DigIn_2;  else MPNC_DigOut_A_2 := 0; end_if;
+	if TST_DigIn_3  then MPNC_DigOut_A_3 := VAL_DigIn_3;  else MPNC_DigOut_A_3 := 0; end_if;
+	if TST_DigIn_4  then MPNC_DigOut_A_4 := VAL_DigIn_4;  else MPNC_DigOut_A_4 := 0; end_if;
+	if TST_DigIn_5  then MPNC_DigOut_A_5 := VAL_DigIn_5;  else MPNC_DigOut_A_5 := 0; end_if;
+	if TST_DigIn_6  then MPNC_DigOut_A_6 := VAL_DigIn_6;  else MPNC_DigOut_A_6 := 0; end_if;
+	if TST_DigIn_7  then MPNC_DigOut_A_7 := VAL_DigIn_7;  else MPNC_DigOut_A_7 := 0; end_if;
+	if TST_DigIn_8  then MPNC_DigOut_A_8 := VAL_DigIn_8;  else MPNC_DigOut_A_8 := 0; end_if;
+	if TST_DigIn_9  then MPNC_DigOut_A_9 := VAL_DigIn_9;  else MPNC_DigOut_A_9 := 0; end_if;
+	if TST_DigIn_10 then MPNC_DigOut_A_10:= VAL_DigIn_10; else MPNC_DigOut_A_10:= 0; end_if;
+	if TST_DigIn_11 then MPNC_DigOut_A_11:= VAL_DigIn_11; else MPNC_DigOut_A_11:= 0; end_if;
+	if TST_DigIn_12 then MPNC_DigOut_A_12:= VAL_DigIn_12; else MPNC_DigOut_A_12:= 0; end_if;
+	if TST_DigIn_13 then MPNC_DigOut_A_13:= VAL_DigIn_13; else MPNC_DigOut_A_13:= 0; end_if;
+	if TST_DigIn_14 then MPNC_DigOut_A_14:= VAL_DigIn_14; else MPNC_DigOut_A_14:= 0; end_if;
+	if TST_DigIn_15 then MPNC_DigOut_A_15:= VAL_DigIn_15; else MPNC_DigOut_A_15:= 0; end_if;
+	if TST_DigIn_16 then MPNC_DigOut_A_16:= VAL_DigIn_16; else MPNC_DigOut_A_16:= 0; end_if;
 
 	if TST_DigOut_1  then VALx_DigOut_1 := VAL_DigOut_1;  end_if;
 	if TST_DigOut_2  then VALx_DigOut_2 := VAL_DigOut_2;  end_if;
@@ -42,14 +42,14 @@ END_VAR
 	if TST_AnIn_1  then
 		VALx_AnInConf_1 := VAL_AnInConf_1;
 		VALx_AnInFltr_1 := VAL_AnInFltr_1;
-		(* Prey AnIn_1 <-- Head AnOut_1 + DigOut_5,8 + TPLC005 DigOut_3,4 *) 
+		(* Prey AnIn_1 <-- Head AnOut_1 + DigOut_5,8 + MPNC DigOut_3,4 *) 
 		case VAL_AnInConf_1 of
-		1:       PLC_DigOut_8 := 1; PLC_DigOut_6 := 0; RTU_LocDigOut_3 := 0; RTU_LocDigOut_4 := 0; PLC_AnOutConf_1 := 1;
-		2:       PLC_DigOut_8 := 0; PLC_DigOut_6 := 0; RTU_LocDigOut_3 := 0; RTU_LocDigOut_4 := 0; PLC_AnOutConf_1 := 2;
+		1:       PLC_DigOut_8 := 1; PLC_DigOut_6 := 0; MPNC_DigOut_3 := 0; MPNC_DigOut_4 := 0; PLC_AnOutConf_1 := 1;
+		2:       PLC_DigOut_8 := 0; PLC_DigOut_6 := 0; MPNC_DigOut_3 := 0; MPNC_DigOut_4 := 0; PLC_AnOutConf_1 := 2;
 		3, 4, 5,
-		8, 9,10: PLC_DigOut_8 := 0; PLC_DigOut_6 := 1; RTU_LocDigOut_3 := 1; RTU_LocDigOut_4 := 0; PLC_AnOutConf_1 := 1;
-		6, 7:    PLC_DigOut_8 := 0; PLC_DigOut_6 := 1; RTU_LocDigOut_3 := 0; RTU_LocDigOut_4 := 1; PLC_AnOutConf_1 := 1;
-		else     PLC_DigOut_8 := 0; PLC_DigOut_6 := 0; RTU_LocDigOut_3 := 0; RTU_LocDigOut_4 := 0; PLC_AnOutConf_1 := 2;
+		8, 9,10: PLC_DigOut_8 := 0; PLC_DigOut_6 := 1; MPNC_DigOut_3 := 1; MPNC_DigOut_4 := 0; PLC_AnOutConf_1 := 1;
+		6, 7:    PLC_DigOut_8 := 0; PLC_DigOut_6 := 1; MPNC_DigOut_3 := 0; MPNC_DigOut_4 := 1; PLC_AnOutConf_1 := 1;
+		else     PLC_DigOut_8 := 0; PLC_DigOut_6 := 0; MPNC_DigOut_3 := 0; MPNC_DigOut_4 := 0; PLC_AnOutConf_1 := 2;
 		end_case;
 		PLC_AnOut_1 := ValueOut(Val_AnIn_1, VAL_AnInConf_1);
 	end_if;
@@ -57,14 +57,14 @@ END_VAR
 	if TST_AnIn_2  then
 		VALx_AnInConf_2 := VAL_AnInConf_2;
 		VALx_AnInFltr_2 := VAL_AnInFltr_2;
-		(* Prey AnIn_2 <-- Head AnOut_2 + DigOut_6,7 + TPLC005 DigOut_1,2 *) 
+		(* Prey AnIn_2 <-- Head AnOut_2 + DigOut_6,7 + MPNC DigOut_1,2 *) 
 		case VAL_AnInConf_2 of
-		1:       PLC_DigOut_7 := 1; PLC_DigOut_5 := 0; RTU_LocDigOut_1 := 0; RTU_LocDigOut_2 := 0; PLC_AnOutConf_2 := 1;
-		2:       PLC_DigOut_7 := 0; PLC_DigOut_5 := 0; RTU_LocDigOut_1 := 0; RTU_LocDigOut_2 := 0; PLC_AnOutConf_2 := 2;
+		1:       PLC_DigOut_7 := 1; PLC_DigOut_5 := 0; MPNC_DigOut_1 := 0; MPNC_DigOut_2 := 0; PLC_AnOutConf_2 := 1;
+		2:       PLC_DigOut_7 := 0; PLC_DigOut_5 := 0; MPNC_DigOut_1 := 0; MPNC_DigOut_2 := 0; PLC_AnOutConf_2 := 2;
 		3, 4, 5,
-		8, 9,10: PLC_DigOut_7 := 0; PLC_DigOut_5 := 1; RTU_LocDigOut_1 := 1; RTU_LocDigOut_2 := 0; PLC_AnOutConf_2 := 1;
-		6, 7:    PLC_DigOut_7 := 0; PLC_DigOut_5 := 1; RTU_LocDigOut_1 := 0; RTU_LocDigOut_2 := 1; PLC_AnOutConf_2 := 1;
-		else     PLC_DigOut_7 := 0; PLC_DigOut_5 := 0; RTU_LocDigOut_1 := 0; RTU_LocDigOut_2 := 0; PLC_AnOutConf_2 := 2;
+		8, 9,10: PLC_DigOut_7 := 0; PLC_DigOut_5 := 1; MPNC_DigOut_1 := 1; MPNC_DigOut_2 := 0; PLC_AnOutConf_2 := 1;
+		6, 7:    PLC_DigOut_7 := 0; PLC_DigOut_5 := 1; MPNC_DigOut_1 := 0; MPNC_DigOut_2 := 1; PLC_AnOutConf_2 := 1;
+		else     PLC_DigOut_7 := 0; PLC_DigOut_5 := 0; MPNC_DigOut_1 := 0; MPNC_DigOut_2 := 0; PLC_AnOutConf_2 := 2;
 		end_case;
 		PLC_AnOut_2 := ValueOut(Val_AnIn_2, VAL_AnInConf_2);
 	end_if;
@@ -72,14 +72,14 @@ END_VAR
 	if TST_AnIn_3  then
 		VALx_AnInConf_3 := VAL_AnInConf_3;
 		VALx_AnInFltr_3 := VAL_AnInFltr_3;
-		(* Prey AnIn_3 <-- Horn2 AnOut_1 + DigOut_5,8  TPLC005 DigOut_7,8  *) 
+		(* Prey AnIn_3 <-- Horn2 AnOut_1 + DigOut_5,8  MPNC DigOut_7,8  *) 
 		case VAL_AnInConf_3 of
-		1:       VAL2_DigOut_8 := 1; VAL2_DigOut_5 := 0; RTU_LocDigOut_7 := 0; RTU_LocDigOut_8 := 0; VAL2_AnOutConf_1 := 1;
-		2:       VAL2_DigOut_8 := 0; VAL2_DigOut_5 := 0; RTU_LocDigOut_7 := 0; RTU_LocDigOut_8 := 0; VAL2_AnOutConf_1 := 2;
+		1:       VAL2_DigOut_8 := 1; VAL2_DigOut_5 := 0; MPNC_DigOut_7 := 0; MPNC_DigOut_8 := 0; VAL2_AnOutConf_1 := 1;
+		2:       VAL2_DigOut_8 := 0; VAL2_DigOut_5 := 0; MPNC_DigOut_7 := 0; MPNC_DigOut_8 := 0; VAL2_AnOutConf_1 := 2;
 		3, 4, 5,
-		8, 9,10: VAL2_DigOut_8 := 0; VAL2_DigOut_5 := 1; RTU_LocDigOut_7 := 1; RTU_LocDigOut_8 := 0; VAL2_AnOutConf_1 := 1; 
-		6, 7:    VAL2_DigOut_8 := 0; VAL2_DigOut_5 := 1; RTU_LocDigOut_7 := 0; RTU_LocDigOut_8 := 1; VAL2_AnOutConf_1 := 1;
-		else     VAL2_DigOut_8 := 0; VAL2_DigOut_5 := 0; RTU_LocDigOut_7 := 0; RTU_LocDigOut_8 := 0; VAL2_AnOutConf_1 := 2;
+		8, 9,10: VAL2_DigOut_8 := 0; VAL2_DigOut_5 := 1; MPNC_DigOut_7 := 1; MPNC_DigOut_8 := 0; VAL2_AnOutConf_1 := 1; 
+		6, 7:    VAL2_DigOut_8 := 0; VAL2_DigOut_5 := 1; MPNC_DigOut_7 := 0; MPNC_DigOut_8 := 1; VAL2_AnOutConf_1 := 1;
+		else     VAL2_DigOut_8 := 0; VAL2_DigOut_5 := 0; MPNC_DigOut_7 := 0; MPNC_DigOut_8 := 0; VAL2_AnOutConf_1 := 2;
 		end_case;
 		VAL2_AnOut_1 := ValueOut(Val_AnIn_3, VAL_AnInConf_3);
 	end_if;
@@ -87,14 +87,14 @@ END_VAR
 	if TST_AnIn_4  then
 		VALx_AnInConf_4 := VAL_AnInConf_4;
 		VALx_AnInFltr_4 := VAL_AnInFltr_4;
-		(* Prey AnIn_4 <-- Horn2 AnOut_2 + DigOut_6,7 + TPLC005 DigOut_5,6  *) 
+		(* Prey AnIn_4 <-- Horn2 AnOut_2 + DigOut_6,7 + MPNC DigOut_5,6  *) 
 		case VAL_AnInConf_4 of
-		1:       VAL2_DigOut_7 := 1; VAL2_DigOut_6 := 0; RTU_LocDigOut_5 := 0; RTU_LocDigOut_6 := 0; VAL2_AnOutConf_2 := 1;
-		2:       VAL2_DigOut_7 := 0; VAL2_DigOut_6 := 0; RTU_LocDigOut_5 := 0; RTU_LocDigOut_6 := 0; VAL2_AnOutConf_2 := 2;
+		1:       VAL2_DigOut_7 := 1; VAL2_DigOut_6 := 0; MPNC_DigOut_5 := 0; MPNC_DigOut_6 := 0; VAL2_AnOutConf_2 := 1;
+		2:       VAL2_DigOut_7 := 0; VAL2_DigOut_6 := 0; MPNC_DigOut_5 := 0; MPNC_DigOut_6 := 0; VAL2_AnOutConf_2 := 2;
 		3, 4, 5,
-		8, 9,10: VAL2_DigOut_7 := 0; VAL2_DigOut_6 := 1; RTU_LocDigOut_5 := 1; RTU_LocDigOut_6 := 0; VAL2_AnOutConf_2 := 1;
-		6, 7:    VAL2_DigOut_7 := 0; VAL2_DigOut_6 := 1; RTU_LocDigOut_5 := 0; RTU_LocDigOut_6 := 1; VAL2_AnOutConf_2 := 1;
-		else     VAL2_DigOut_7 := 0; VAL2_DigOut_6 := 0; RTU_LocDigOut_5 := 0; RTU_LocDigOut_6 := 0; VAL2_AnOutConf_2 := 2;
+		8, 9,10: VAL2_DigOut_7 := 0; VAL2_DigOut_6 := 1; MPNC_DigOut_5 := 1; MPNC_DigOut_6 := 0; VAL2_AnOutConf_2 := 1;
+		6, 7:    VAL2_DigOut_7 := 0; VAL2_DigOut_6 := 1; MPNC_DigOut_5 := 0; MPNC_DigOut_6 := 1; VAL2_AnOutConf_2 := 1;
+		else     VAL2_DigOut_7 := 0; VAL2_DigOut_6 := 0; MPNC_DigOut_5 := 0; MPNC_DigOut_6 := 0; VAL2_AnOutConf_2 := 2;
 		end_case;
 		VAL2_AnOut_2 := ValueOut(Val_AnIn_4, VAL_AnInConf_4);
 	end_if;
@@ -143,22 +143,22 @@ END_VAR
 	if TST_AnOut_3  then
 		VALx_AnOut_3 := VAL_AnOut_3;
 		VALx_AnOutConf_3 := VAL_AnOutConf_3;
-		(* --> Head/TPLC005 AI1 *) 
+		(* --> Head/MPNC AI1 *) 
 		case VAL_AnOutConf_3 of
-		1: RTU_AnInConf_1 := 1; (* [mA] 4..20 *)
-		2: RTU_AnInConf_1 := 2; (* [V] 0..10 *)
-		3: RTU_AnInConf_1 := 2; (* [%] PWM --> [V] *)
+		1: MPNC_AnInConf_1 := 1; (* [mA] 4..20 *)
+		2: MPNC_AnInConf_1 := 2; (* [V] 0..10 *)
+		3: MPNC_AnInConf_1 := 2; (* [%] PWM --> [V] *)
 		end_case;
 	end_if;
 
 	if TST_AnOut_4  then
 		VALx_AnOut_4 := VAL_AnOut_4;
 		VALx_AnOutConf_4 := VAL_AnOutConf_4;
-		(* --> Head/TPLC005 AI2 *) 
+		(* --> Head/MPNC AI2 *) 
 		case VAL_AnOutConf_4 of
-		1: RTU_AnInConf_2 := 1; (* [mA] 4..20 *)
-		2: RTU_AnInConf_2 := 2; (* [V] 0..10 *)
-		3: RTU_AnInConf_2 := 2; (* [%] PWM --> [V] *)
+		1: MPNC_AnInConf_2 := 1; (* [mA] 4..20 *)
+		2: MPNC_AnInConf_2 := 2; (* [V] 0..10 *)
+		3: MPNC_AnInConf_2 := 2; (* [%] PWM --> [V] *)
 		end_case;
 	end_if;
 
@@ -188,7 +188,7 @@ END_VAR
 	if TST_RTU1_WR then VALx_RTU1_WR := VAL_RTU1_WR; end_if;
 	if TST_RTU1_RD then VAL2_RTUS_WR := VAL_RTU1_RD; end_if;
 
-	(* RTU3: Prey.RTU3 <--> TPLC005 + short-circuit DigOut_1->DigIn_2 *)
+	(* RTU3: Prey.RTU3 <--> MPNC + short-circuit DigOut_1->DigIn_2 *)
 	if TST_RTU3_WR then VALx_RTU3_WR := VAL_RTU3_WR; end_if;
 	if TST_RTU3_RD then ; end_if;
 
