@@ -136,377 +136,557 @@ int doWrite_VccDrop(int value);
 int addWrite_VccDrop(int value);
 int getStatus_VccDrop(void);
 
-#define ID_RTU_HeartBeat 208
-extern u_int32_t RTU_HeartBeat;
-int doWrite_RTU_HeartBeat(u_int32_t value);
-int addWrite_RTU_HeartBeat(u_int32_t value);
-int getStatus_RTU_HeartBeat(void);
+#define ID_MPNC_Baudrate 300
+extern u_int16_t MPNC_Baudrate;	/* Baudrate MPNC006 device */
+int doWrite_MPNC_Baudrate(u_int16_t value);
+int addWrite_MPNC_Baudrate(u_int16_t value);
+int getStatus_MPNC_Baudrate(void);
 
-#define ID_MPNC_DigOut_A_1 210
-extern int MPNC_DigOut_A_1;
+#define ID_MPNC_NodeID 301
+extern u_int16_t MPNC_NodeID;	/* Address MPNC006 device */
+int doWrite_MPNC_NodeID(u_int16_t value);
+int addWrite_MPNC_NodeID(u_int16_t value);
+int getStatus_MPNC_NodeID(void);
+
+#define ID_MPNC_HeartBeat 302
+extern u_int32_t MPNC_HeartBeat;	/* Life time MPNC006 device */
+int doWrite_MPNC_HeartBeat(u_int32_t value);
+int addWrite_MPNC_HeartBeat(u_int32_t value);
+int getStatus_MPNC_HeartBeat(void);
+
+#define ID_MPNC_DigOut_A_1 323
+extern int MPNC_DigOut_A_1;	/* Digital output value bit 1 MPNC020 02 module A */
 int doWrite_MPNC_DigOut_A_1(int value);
 int addWrite_MPNC_DigOut_A_1(int value);
 int getStatus_MPNC_DigOut_A_1(void);
 
-#define ID_MPNC_DigOut_A_2 211
-extern int MPNC_DigOut_A_2;
+#define ID_MPNC_DigOut_A_2 324
+extern int MPNC_DigOut_A_2;	/* Digital output value bit 2 MPNC020 02 module A */
 int doWrite_MPNC_DigOut_A_2(int value);
 int addWrite_MPNC_DigOut_A_2(int value);
 int getStatus_MPNC_DigOut_A_2(void);
 
-#define ID_MPNC_DigOut_A_3 212
-extern int MPNC_DigOut_A_3;
+#define ID_MPNC_DigOut_A_3 325
+extern int MPNC_DigOut_A_3;	/* Digital output value bit 3 MPNC020 02 module A */
 int doWrite_MPNC_DigOut_A_3(int value);
 int addWrite_MPNC_DigOut_A_3(int value);
 int getStatus_MPNC_DigOut_A_3(void);
 
-#define ID_MPNC_DigOut_A_4 213
-extern int MPNC_DigOut_A_4;
+#define ID_MPNC_DigOut_A_4 326
+extern int MPNC_DigOut_A_4;	/* Digital output value bit 4 MPNC020 02 module A */
 int doWrite_MPNC_DigOut_A_4(int value);
 int addWrite_MPNC_DigOut_A_4(int value);
 int getStatus_MPNC_DigOut_A_4(void);
 
-#define ID_MPNC_DigOut_A_5 214
-extern int MPNC_DigOut_A_5;
+#define ID_MPNC_DigOut_A_5 327
+extern int MPNC_DigOut_A_5;	/* Digital output value bit 5 MPNC020 02 module A */
 int doWrite_MPNC_DigOut_A_5(int value);
 int addWrite_MPNC_DigOut_A_5(int value);
 int getStatus_MPNC_DigOut_A_5(void);
 
-#define ID_MPNC_DigOut_A_6 215
-extern int MPNC_DigOut_A_6;
+#define ID_MPNC_DigOut_A_6 328
+extern int MPNC_DigOut_A_6;	/* Digital output value bit 6 MPNC020 02 module A */
 int doWrite_MPNC_DigOut_A_6(int value);
 int addWrite_MPNC_DigOut_A_6(int value);
 int getStatus_MPNC_DigOut_A_6(void);
 
-#define ID_MPNC_DigOut_A_7 216
-extern int MPNC_DigOut_A_7;
+#define ID_MPNC_DigOut_A_7 329
+extern int MPNC_DigOut_A_7;	/* Digital output value bit 7 MPNC020 02 module A */
 int doWrite_MPNC_DigOut_A_7(int value);
 int addWrite_MPNC_DigOut_A_7(int value);
 int getStatus_MPNC_DigOut_A_7(void);
 
-#define ID_MPNC_DigOut_A_8 217
-extern int MPNC_DigOut_A_8;
+#define ID_MPNC_DigOut_A_8 330
+extern int MPNC_DigOut_A_8;	/* Digital output value bit 8 MPNC020 02 module A */
 int doWrite_MPNC_DigOut_A_8(int value);
 int addWrite_MPNC_DigOut_A_8(int value);
 int getStatus_MPNC_DigOut_A_8(void);
 
-#define ID_MPNC_DigOut_A_9 218
-extern int MPNC_DigOut_A_9;
+#define ID_MPNC_DigOut_A_9 331
+extern int MPNC_DigOut_A_9;	/* Digital output value bit 9 MPNC020 02 module A */
 int doWrite_MPNC_DigOut_A_9(int value);
 int addWrite_MPNC_DigOut_A_9(int value);
 int getStatus_MPNC_DigOut_A_9(void);
 
-#define ID_MPNC_DigOut_A_10 219
-extern int MPNC_DigOut_A_10;
+#define ID_MPNC_DigOut_A_10 332
+extern int MPNC_DigOut_A_10;	/* Digital output value bit 10 MPNC020 02 module A */
 int doWrite_MPNC_DigOut_A_10(int value);
 int addWrite_MPNC_DigOut_A_10(int value);
 int getStatus_MPNC_DigOut_A_10(void);
 
-#define ID_MPNC_DigOut_A_11 220
-extern int MPNC_DigOut_A_11;
+#define ID_MPNC_DigOut_A_11 333
+extern int MPNC_DigOut_A_11;	/* Digital output value bit 11 MPNC020 02 module A */
 int doWrite_MPNC_DigOut_A_11(int value);
 int addWrite_MPNC_DigOut_A_11(int value);
 int getStatus_MPNC_DigOut_A_11(void);
 
-#define ID_MPNC_DigOut_A_12 221
-extern int MPNC_DigOut_A_12;
+#define ID_MPNC_DigOut_A_12 334
+extern int MPNC_DigOut_A_12;	/* Digital output value bit 12 MPNC020 02 module A */
 int doWrite_MPNC_DigOut_A_12(int value);
 int addWrite_MPNC_DigOut_A_12(int value);
 int getStatus_MPNC_DigOut_A_12(void);
 
-#define ID_MPNC_DigOut_A_13 222
-extern int MPNC_DigOut_A_13;
+#define ID_MPNC_DigOut_A_13 335
+extern int MPNC_DigOut_A_13;	/* Digital output value bit 13 MPNC020 02 module A */
 int doWrite_MPNC_DigOut_A_13(int value);
 int addWrite_MPNC_DigOut_A_13(int value);
 int getStatus_MPNC_DigOut_A_13(void);
 
-#define ID_MPNC_DigOut_A_14 223
-extern int MPNC_DigOut_A_14;
+#define ID_MPNC_DigOut_A_14 336
+extern int MPNC_DigOut_A_14;	/* Digital output value bit 14 MPNC020 02 module A */
 int doWrite_MPNC_DigOut_A_14(int value);
 int addWrite_MPNC_DigOut_A_14(int value);
 int getStatus_MPNC_DigOut_A_14(void);
 
-#define ID_MPNC_DigOut_A_15 224
-extern int MPNC_DigOut_A_15;
+#define ID_MPNC_DigOut_A_15 337
+extern int MPNC_DigOut_A_15;	/* Digital output value bit 15 MPNC020 02 module A */
 int doWrite_MPNC_DigOut_A_15(int value);
 int addWrite_MPNC_DigOut_A_15(int value);
 int getStatus_MPNC_DigOut_A_15(void);
 
-#define ID_MPNC_DigOut_A_16 225
-extern int MPNC_DigOut_A_16;
+#define ID_MPNC_DigOut_A_16 338
+extern int MPNC_DigOut_A_16;	/* Digital output value bit 16 MPNC020 02 module A */
 int doWrite_MPNC_DigOut_A_16(int value);
 int addWrite_MPNC_DigOut_A_16(int value);
 int getStatus_MPNC_DigOut_A_16(void);
 
-#define ID_MPNC_DigIn_A_1 227
-extern int MPNC_DigIn_A_1;
+#define ID_MPNC_DigOut_B_1 339
+extern int MPNC_DigOut_B_1;	/* Digital output value bit 1 MPNC020 02 module B */
+int doWrite_MPNC_DigOut_B_1(int value);
+int addWrite_MPNC_DigOut_B_1(int value);
+int getStatus_MPNC_DigOut_B_1(void);
+
+#define ID_MPNC_DigOut_B_2 340
+extern int MPNC_DigOut_B_2;	/* Digital output value bit 2 MPNC020 02 module B */
+int doWrite_MPNC_DigOut_B_2(int value);
+int addWrite_MPNC_DigOut_B_2(int value);
+int getStatus_MPNC_DigOut_B_2(void);
+
+#define ID_MPNC_DigOut_B_3 341
+extern int MPNC_DigOut_B_3;	/* Digital output value bit 3 MPNC020 02 module B */
+int doWrite_MPNC_DigOut_B_3(int value);
+int addWrite_MPNC_DigOut_B_3(int value);
+int getStatus_MPNC_DigOut_B_3(void);
+
+#define ID_MPNC_DigOut_B_4 342
+extern int MPNC_DigOut_B_4;	/* Digital output value bit 4 MPNC020 02 module B */
+int doWrite_MPNC_DigOut_B_4(int value);
+int addWrite_MPNC_DigOut_B_4(int value);
+int getStatus_MPNC_DigOut_B_4(void);
+
+#define ID_MPNC_DigOut_B_5 343
+extern int MPNC_DigOut_B_5;	/* Digital output value bit 5 MPNC020 02 module B */
+int doWrite_MPNC_DigOut_B_5(int value);
+int addWrite_MPNC_DigOut_B_5(int value);
+int getStatus_MPNC_DigOut_B_5(void);
+
+#define ID_MPNC_DigOut_B_6 344
+extern int MPNC_DigOut_B_6;	/* Digital output value bit 6 MPNC020 02 module B */
+int doWrite_MPNC_DigOut_B_6(int value);
+int addWrite_MPNC_DigOut_B_6(int value);
+int getStatus_MPNC_DigOut_B_6(void);
+
+#define ID_MPNC_DigOut_B_7 345
+extern int MPNC_DigOut_B_7;	/* Digital output value bit 7 MPNC020 02 module B */
+int doWrite_MPNC_DigOut_B_7(int value);
+int addWrite_MPNC_DigOut_B_7(int value);
+int getStatus_MPNC_DigOut_B_7(void);
+
+#define ID_MPNC_DigOut_B_8 346
+extern int MPNC_DigOut_B_8;	/* Digital output value bit 8 MPNC020 02 module B */
+int doWrite_MPNC_DigOut_B_8(int value);
+int addWrite_MPNC_DigOut_B_8(int value);
+int getStatus_MPNC_DigOut_B_8(void);
+
+#define ID_MPNC_DigOut_B_9 347
+extern int MPNC_DigOut_B_9;	/* Digital output value bit 9 MPNC020 02 module B */
+int doWrite_MPNC_DigOut_B_9(int value);
+int addWrite_MPNC_DigOut_B_9(int value);
+int getStatus_MPNC_DigOut_B_9(void);
+
+#define ID_MPNC_DigOut_B_10 348
+extern int MPNC_DigOut_B_10;	/* Digital output value bit 10 MPNC020 02 module B */
+int doWrite_MPNC_DigOut_B_10(int value);
+int addWrite_MPNC_DigOut_B_10(int value);
+int getStatus_MPNC_DigOut_B_10(void);
+
+#define ID_MPNC_DigOut_B_11 349
+extern int MPNC_DigOut_B_11;	/* Digital output value bit 11 MPNC020 02 module B */
+int doWrite_MPNC_DigOut_B_11(int value);
+int addWrite_MPNC_DigOut_B_11(int value);
+int getStatus_MPNC_DigOut_B_11(void);
+
+#define ID_MPNC_DigOut_B_12 350
+extern int MPNC_DigOut_B_12;	/* Digital output value bit 12 MPNC020 02 module B */
+int doWrite_MPNC_DigOut_B_12(int value);
+int addWrite_MPNC_DigOut_B_12(int value);
+int getStatus_MPNC_DigOut_B_12(void);
+
+#define ID_MPNC_DigOut_B_13 351
+extern int MPNC_DigOut_B_13;	/* Digital output value bit 13 MPNC020 02 module B */
+int doWrite_MPNC_DigOut_B_13(int value);
+int addWrite_MPNC_DigOut_B_13(int value);
+int getStatus_MPNC_DigOut_B_13(void);
+
+#define ID_MPNC_DigOut_B_14 352
+extern int MPNC_DigOut_B_14;	/* Digital output value bit 14 MPNC020 02 module B */
+int doWrite_MPNC_DigOut_B_14(int value);
+int addWrite_MPNC_DigOut_B_14(int value);
+int getStatus_MPNC_DigOut_B_14(void);
+
+#define ID_MPNC_DigOut_B_15 353
+extern int MPNC_DigOut_B_15;	/* Digital output value bit 15 MPNC020 02 module B */
+int doWrite_MPNC_DigOut_B_15(int value);
+int addWrite_MPNC_DigOut_B_15(int value);
+int getStatus_MPNC_DigOut_B_15(void);
+
+#define ID_MPNC_DigOut_B_16 354
+extern int MPNC_DigOut_B_16;	/* Digital output value bit 16 MPNC020 02 module B */
+int doWrite_MPNC_DigOut_B_16(int value);
+int addWrite_MPNC_DigOut_B_16(int value);
+int getStatus_MPNC_DigOut_B_16(void);
+
+#define ID_MPNC_DigIn_A_1 387
+extern int MPNC_DigIn_A_1;	/* Digital input value bit 1 MPNC020 01 module A */
 int doWrite_MPNC_DigIn_A_1(int value);
 int addWrite_MPNC_DigIn_A_1(int value);
 int getStatus_MPNC_DigIn_A_1(void);
 
-#define ID_MPNC_DigIn_A_2 228
-extern int MPNC_DigIn_A_2;
+#define ID_MPNC_DigIn_A_2 388
+extern int MPNC_DigIn_A_2;	/* Digital input value bit 2 MPNC020 01 module A */
 int doWrite_MPNC_DigIn_A_2(int value);
 int addWrite_MPNC_DigIn_A_2(int value);
 int getStatus_MPNC_DigIn_A_2(void);
 
-#define ID_MPNC_DigIn_A_3 229
-extern int MPNC_DigIn_A_3;
+#define ID_MPNC_DigIn_A_3 389
+extern int MPNC_DigIn_A_3;	/* Digital input value bit 3 MPNC020 01 module A */
 int doWrite_MPNC_DigIn_A_3(int value);
 int addWrite_MPNC_DigIn_A_3(int value);
 int getStatus_MPNC_DigIn_A_3(void);
 
-#define ID_MPNC_DigIn_A_4 230
-extern int MPNC_DigIn_A_4;
+#define ID_MPNC_DigIn_A_4 390
+extern int MPNC_DigIn_A_4;	/* Digital input value bit 4 MPNC020 01 module A */
 int doWrite_MPNC_DigIn_A_4(int value);
 int addWrite_MPNC_DigIn_A_4(int value);
 int getStatus_MPNC_DigIn_A_4(void);
 
-#define ID_MPNC_DigIn_A_5 231
-extern int MPNC_DigIn_A_5;
+#define ID_MPNC_DigIn_A_5 391
+extern int MPNC_DigIn_A_5;	/* Digital input value bit 5 MPNC020 01 module A */
 int doWrite_MPNC_DigIn_A_5(int value);
 int addWrite_MPNC_DigIn_A_5(int value);
 int getStatus_MPNC_DigIn_A_5(void);
 
-#define ID_MPNC_DigIn_A_6 232
-extern int MPNC_DigIn_A_6;
+#define ID_MPNC_DigIn_A_6 392
+extern int MPNC_DigIn_A_6;	/* Digital input value bit 6 MPNC020 01 module A */
 int doWrite_MPNC_DigIn_A_6(int value);
 int addWrite_MPNC_DigIn_A_6(int value);
 int getStatus_MPNC_DigIn_A_6(void);
 
-#define ID_MPNC_DigIn_A_7 233
-extern int MPNC_DigIn_A_7;
+#define ID_MPNC_DigIn_A_7 393
+extern int MPNC_DigIn_A_7;	/* Digital input value bit 7 MPNC020 01 module A */
 int doWrite_MPNC_DigIn_A_7(int value);
 int addWrite_MPNC_DigIn_A_7(int value);
 int getStatus_MPNC_DigIn_A_7(void);
 
-#define ID_MPNC_DigIn_A_8 234
-extern int MPNC_DigIn_A_8;
+#define ID_MPNC_DigIn_A_8 394
+extern int MPNC_DigIn_A_8;	/* Digital input value bit 8 MPNC020 01 module A */
 int doWrite_MPNC_DigIn_A_8(int value);
 int addWrite_MPNC_DigIn_A_8(int value);
 int getStatus_MPNC_DigIn_A_8(void);
 
-#define ID_MPNC_DigIn_A_9 235
-extern int MPNC_DigIn_A_9;
+#define ID_MPNC_DigIn_A_9 395
+extern int MPNC_DigIn_A_9;	/* Digital input value bit 9 MPNC020 01 module A */
 int doWrite_MPNC_DigIn_A_9(int value);
 int addWrite_MPNC_DigIn_A_9(int value);
 int getStatus_MPNC_DigIn_A_9(void);
 
-#define ID_MPNC_DigIn_A_10 236
-extern int MPNC_DigIn_A_10;
+#define ID_MPNC_DigIn_A_10 396
+extern int MPNC_DigIn_A_10;	/* Digital input value bit 10 MPNC020 01 module A */
 int doWrite_MPNC_DigIn_A_10(int value);
 int addWrite_MPNC_DigIn_A_10(int value);
 int getStatus_MPNC_DigIn_A_10(void);
 
-#define ID_MPNC_DigIn_A_11 237
-extern int MPNC_DigIn_A_11;
+#define ID_MPNC_DigIn_A_11 397
+extern int MPNC_DigIn_A_11;	/* Digital input value bit 11 MPNC020 01 module A */
 int doWrite_MPNC_DigIn_A_11(int value);
 int addWrite_MPNC_DigIn_A_11(int value);
 int getStatus_MPNC_DigIn_A_11(void);
 
-#define ID_MPNC_DigIn_A_12 238
-extern int MPNC_DigIn_A_12;
+#define ID_MPNC_DigIn_A_12 398
+extern int MPNC_DigIn_A_12;	/* Digital input value bit 12 MPNC020 01 module A */
 int doWrite_MPNC_DigIn_A_12(int value);
 int addWrite_MPNC_DigIn_A_12(int value);
 int getStatus_MPNC_DigIn_A_12(void);
 
-#define ID_MPNC_DigIn_A_13 239
-extern int MPNC_DigIn_A_13;
+#define ID_MPNC_DigIn_A_13 399
+extern int MPNC_DigIn_A_13;	/* Digital input value bit 13 MPNC020 01 module A */
 int doWrite_MPNC_DigIn_A_13(int value);
 int addWrite_MPNC_DigIn_A_13(int value);
 int getStatus_MPNC_DigIn_A_13(void);
 
-#define ID_MPNC_DigIn_A_14 240
-extern int MPNC_DigIn_A_14;
+#define ID_MPNC_DigIn_A_14 400
+extern int MPNC_DigIn_A_14;	/* Digital input value bit 14 MPNC020 01 module A */
 int doWrite_MPNC_DigIn_A_14(int value);
 int addWrite_MPNC_DigIn_A_14(int value);
 int getStatus_MPNC_DigIn_A_14(void);
 
-#define ID_MPNC_DigIn_A_15 241
-extern int MPNC_DigIn_A_15;
+#define ID_MPNC_DigIn_A_15 401
+extern int MPNC_DigIn_A_15;	/* Digital input value bit 15 MPNC020 01 module A */
 int doWrite_MPNC_DigIn_A_15(int value);
 int addWrite_MPNC_DigIn_A_15(int value);
 int getStatus_MPNC_DigIn_A_15(void);
 
-#define ID_MPNC_DigIn_A_16 242
-extern int MPNC_DigIn_A_16;
+#define ID_MPNC_DigIn_A_16 402
+extern int MPNC_DigIn_A_16;	/* Digital input value bit 16 MPNC020 01 module A */
 int doWrite_MPNC_DigIn_A_16(int value);
 int addWrite_MPNC_DigIn_A_16(int value);
 int getStatus_MPNC_DigIn_A_16(void);
 
-#define ID_MPNC_ModulesNumber 244
-extern int16_t MPNC_ModulesNumber;
-int doWrite_MPNC_ModulesNumber(int16_t value);
-int addWrite_MPNC_ModulesNumber(int16_t value);
+#define ID_MPNC_Reserved_1 451
+extern u_int16_t MPNC_Reserved_1;
+int doWrite_MPNC_Reserved_1(u_int16_t value);
+int addWrite_MPNC_Reserved_1(u_int16_t value);
+int getStatus_MPNC_Reserved_1(void);
+
+#define ID_MPNC_Reserved_2 452
+extern u_int16_t MPNC_Reserved_2;
+int doWrite_MPNC_Reserved_2(u_int16_t value);
+int addWrite_MPNC_Reserved_2(u_int16_t value);
+int getStatus_MPNC_Reserved_2(void);
+
+#define ID_MPNC_ColdJunctionT 453
+extern int16_t MPNC_ColdJunctionT;	/* Cold junction temperature value */
+int doWrite_MPNC_ColdJunctionT(int16_t value);
+int addWrite_MPNC_ColdJunctionT(int16_t value);
+int getStatus_MPNC_ColdJunctionT(void);
+
+#define ID_MPNC_Reserved_3 454
+extern u_int16_t MPNC_Reserved_3;
+int doWrite_MPNC_Reserved_3(u_int16_t value);
+int addWrite_MPNC_Reserved_3(u_int16_t value);
+int getStatus_MPNC_Reserved_3(void);
+
+#define ID_MPNC_Reserved_4 455
+extern u_int16_t MPNC_Reserved_4;
+int doWrite_MPNC_Reserved_4(u_int16_t value);
+int addWrite_MPNC_Reserved_4(u_int16_t value);
+int getStatus_MPNC_Reserved_4(void);
+
+#define ID_MPNC_Reboot 456
+extern int16_t MPNC_Reboot;	/* MPNC006 chain reboot */
+int doWrite_MPNC_Reboot(int16_t value);
+int addWrite_MPNC_Reboot(int16_t value);
+int getStatus_MPNC_Reboot(void);
+
+#define ID_MPNC_ModulesNumber 457
+extern u_int16_t MPNC_ModulesNumber;	/* Number of modules */
+int doWrite_MPNC_ModulesNumber(u_int16_t value);
+int addWrite_MPNC_ModulesNumber(u_int16_t value);
 int getStatus_MPNC_ModulesNumber(void);
 
-#define ID_MPNC_AnInConf_1 245
-extern u_int16_t MPNC_AnInConf_1;
+#define ID_MPNC_AnInConf_1 458
+extern u_int16_t MPNC_AnInConf_1;	/* Analog input 1 configuration MPNC006 */
 int doWrite_MPNC_AnInConf_1(u_int16_t value);
 int addWrite_MPNC_AnInConf_1(u_int16_t value);
 int getStatus_MPNC_AnInConf_1(void);
 
-#define ID_MPNC_AnInConf_2 246
-extern u_int16_t MPNC_AnInConf_2;
+#define ID_MPNC_AnInConf_2 459
+extern u_int16_t MPNC_AnInConf_2;	/* Analog input 2 configuration MPNC006 */
 int doWrite_MPNC_AnInConf_2(u_int16_t value);
 int addWrite_MPNC_AnInConf_2(u_int16_t value);
 int getStatus_MPNC_AnInConf_2(void);
 
-#define ID_MPNC_AnIn_1 247
-extern int16_t MPNC_AnIn_1;
+#define ID_MPNC_AnIn_1 460
+extern int16_t MPNC_AnIn_1;	/* Analog input 1 value MPNC006 */
 int doWrite_MPNC_AnIn_1(int16_t value);
 int addWrite_MPNC_AnIn_1(int16_t value);
 int getStatus_MPNC_AnIn_1(void);
 
-#define ID_MPNC_AnIn_2 248
-extern int16_t MPNC_AnIn_2;
+#define ID_MPNC_AnIn_2 461
+extern int16_t MPNC_AnIn_2;	/* Analog input 2 value MPNC006 */
 int doWrite_MPNC_AnIn_2(int16_t value);
 int addWrite_MPNC_AnIn_2(int16_t value);
 int getStatus_MPNC_AnIn_2(void);
 
-#define ID_MPNC_DigDir_1 249
-extern int MPNC_DigDir_1;
+#define ID_MPNC_DigDir_1 462
+extern int MPNC_DigDir_1;	/* Digital IO 1 configuration MPNC006 */
 int doWrite_MPNC_DigDir_1(int value);
 int addWrite_MPNC_DigDir_1(int value);
 int getStatus_MPNC_DigDir_1(void);
 
-#define ID_MPNC_DigDir_2 250
-extern int MPNC_DigDir_2;
+#define ID_MPNC_DigDir_2 463
+extern int MPNC_DigDir_2;	/* Digital IO 2 configuration MPNC006 */
 int doWrite_MPNC_DigDir_2(int value);
 int addWrite_MPNC_DigDir_2(int value);
 int getStatus_MPNC_DigDir_2(void);
 
-#define ID_MPNC_DigDir_3 251
-extern int MPNC_DigDir_3;
+#define ID_MPNC_DigDir_3 464
+extern int MPNC_DigDir_3;	/* Digital IO 3 configuration MPNC006 */
 int doWrite_MPNC_DigDir_3(int value);
 int addWrite_MPNC_DigDir_3(int value);
 int getStatus_MPNC_DigDir_3(void);
 
-#define ID_MPNC_DigDir_4 252
-extern int MPNC_DigDir_4;
+#define ID_MPNC_DigDir_4 465
+extern int MPNC_DigDir_4;	/* Digital IO 4 configuration MPNC006 */
 int doWrite_MPNC_DigDir_4(int value);
 int addWrite_MPNC_DigDir_4(int value);
 int getStatus_MPNC_DigDir_4(void);
 
-#define ID_MPNC_DigDir_5 253
-extern int MPNC_DigDir_5;
+#define ID_MPNC_DigDir_5 466
+extern int MPNC_DigDir_5;	/* Digital IO 5 configuration MPNC006 */
 int doWrite_MPNC_DigDir_5(int value);
 int addWrite_MPNC_DigDir_5(int value);
 int getStatus_MPNC_DigDir_5(void);
 
-#define ID_MPNC_DigDir_6 254
-extern int MPNC_DigDir_6;
+#define ID_MPNC_DigDir_6 467
+extern int MPNC_DigDir_6;	/* Digital IO 6 configuration MPNC006 */
 int doWrite_MPNC_DigDir_6(int value);
 int addWrite_MPNC_DigDir_6(int value);
 int getStatus_MPNC_DigDir_6(void);
 
-#define ID_MPNC_DigDir_7 255
-extern int MPNC_DigDir_7;
+#define ID_MPNC_DigDir_7 468
+extern int MPNC_DigDir_7;	/* Digital IO 7 configuration MPNC006 */
 int doWrite_MPNC_DigDir_7(int value);
 int addWrite_MPNC_DigDir_7(int value);
 int getStatus_MPNC_DigDir_7(void);
 
-#define ID_MPNC_DigDir_8 256
-extern int MPNC_DigDir_8;
+#define ID_MPNC_DigDir_8 469
+extern int MPNC_DigDir_8;	/* Digital IO 8 configuration MPNC006 */
 int doWrite_MPNC_DigDir_8(int value);
 int addWrite_MPNC_DigDir_8(int value);
 int getStatus_MPNC_DigDir_8(void);
 
-#define ID_MPNC_DigIn_1 257
-extern int MPNC_DigIn_1;
+#define ID_MPNC_DigIn_1 470
+extern int MPNC_DigIn_1;	/* Digital input 1 value MPNC006 */
 int doWrite_MPNC_DigIn_1(int value);
 int addWrite_MPNC_DigIn_1(int value);
 int getStatus_MPNC_DigIn_1(void);
 
-#define ID_MPNC_DigIn_2 258
-extern int MPNC_DigIn_2;
+#define ID_MPNC_DigIn_2 471
+extern int MPNC_DigIn_2;	/* Digital input 2 value MPNC006 */
 int doWrite_MPNC_DigIn_2(int value);
 int addWrite_MPNC_DigIn_2(int value);
 int getStatus_MPNC_DigIn_2(void);
 
-#define ID_MPNC_DigIn_3 259
-extern int MPNC_DigIn_3;
+#define ID_MPNC_DigIn_3 472
+extern int MPNC_DigIn_3;	/* Digital input 3 value MPNC006 */
 int doWrite_MPNC_DigIn_3(int value);
 int addWrite_MPNC_DigIn_3(int value);
 int getStatus_MPNC_DigIn_3(void);
 
-#define ID_MPNC_DigIn_4 260
-extern int MPNC_DigIn_4;
+#define ID_MPNC_DigIn_4 473
+extern int MPNC_DigIn_4;	/* Digital input 4 value MPNC006 */
 int doWrite_MPNC_DigIn_4(int value);
 int addWrite_MPNC_DigIn_4(int value);
 int getStatus_MPNC_DigIn_4(void);
 
-#define ID_MPNC_DigIn_5 261
-extern int MPNC_DigIn_5;
+#define ID_MPNC_DigIn_5 474
+extern int MPNC_DigIn_5;	/* Digital input 5 value MPNC006 */
 int doWrite_MPNC_DigIn_5(int value);
 int addWrite_MPNC_DigIn_5(int value);
 int getStatus_MPNC_DigIn_5(void);
 
-#define ID_MPNC_DigIn_6 262
-extern int MPNC_DigIn_6;
+#define ID_MPNC_DigIn_6 475
+extern int MPNC_DigIn_6;	/* Digital input 6 value MPNC006 */
 int doWrite_MPNC_DigIn_6(int value);
 int addWrite_MPNC_DigIn_6(int value);
 int getStatus_MPNC_DigIn_6(void);
 
-#define ID_MPNC_DigIn_7 263
-extern int MPNC_DigIn_7;
+#define ID_MPNC_DigIn_7 476
+extern int MPNC_DigIn_7;	/* Digital input 7 value MPNC006 */
 int doWrite_MPNC_DigIn_7(int value);
 int addWrite_MPNC_DigIn_7(int value);
 int getStatus_MPNC_DigIn_7(void);
 
-#define ID_MPNC_DigIn_8 264
-extern int MPNC_DigIn_8;
+#define ID_MPNC_DigIn_8 477
+extern int MPNC_DigIn_8;	/* Digital input 8 value MPNC006 */
 int doWrite_MPNC_DigIn_8(int value);
 int addWrite_MPNC_DigIn_8(int value);
 int getStatus_MPNC_DigIn_8(void);
 
-#define ID_MPNC_DigOut_1 265
-extern int MPNC_DigOut_1;
+#define ID_MPNC_DigOut_1 478
+extern int MPNC_DigOut_1;	/* Digital output 1 value MPNC006 */
 int doWrite_MPNC_DigOut_1(int value);
 int addWrite_MPNC_DigOut_1(int value);
 int getStatus_MPNC_DigOut_1(void);
 
-#define ID_MPNC_DigOut_2 266
-extern int MPNC_DigOut_2;
+#define ID_MPNC_DigOut_2 479
+extern int MPNC_DigOut_2;	/* Digital output 2 value MPNC006 */
 int doWrite_MPNC_DigOut_2(int value);
 int addWrite_MPNC_DigOut_2(int value);
 int getStatus_MPNC_DigOut_2(void);
 
-#define ID_MPNC_DigOut_3 267
-extern int MPNC_DigOut_3;
+#define ID_MPNC_DigOut_3 480
+extern int MPNC_DigOut_3;	/* Digital output 3 value MPNC006 */
 int doWrite_MPNC_DigOut_3(int value);
 int addWrite_MPNC_DigOut_3(int value);
 int getStatus_MPNC_DigOut_3(void);
 
-#define ID_MPNC_DigOut_4 268
-extern int MPNC_DigOut_4;
+#define ID_MPNC_DigOut_4 481
+extern int MPNC_DigOut_4;	/* Digital output 4 value MPNC006 */
 int doWrite_MPNC_DigOut_4(int value);
 int addWrite_MPNC_DigOut_4(int value);
 int getStatus_MPNC_DigOut_4(void);
 
-#define ID_MPNC_DigOut_5 269
-extern int MPNC_DigOut_5;
+#define ID_MPNC_DigOut_5 482
+extern int MPNC_DigOut_5;	/* Digital output 5 value MPNC006 */
 int doWrite_MPNC_DigOut_5(int value);
 int addWrite_MPNC_DigOut_5(int value);
 int getStatus_MPNC_DigOut_5(void);
 
-#define ID_MPNC_DigOut_6 270
-extern int MPNC_DigOut_6;
+#define ID_MPNC_DigOut_6 483
+extern int MPNC_DigOut_6;	/* Digital output 6 value MPNC006 */
 int doWrite_MPNC_DigOut_6(int value);
 int addWrite_MPNC_DigOut_6(int value);
 int getStatus_MPNC_DigOut_6(void);
 
-#define ID_MPNC_DigOut_7 271
-extern int MPNC_DigOut_7;
+#define ID_MPNC_DigOut_7 484
+extern int MPNC_DigOut_7;	/* Digital output 7 value MPNC006 */
 int doWrite_MPNC_DigOut_7(int value);
 int addWrite_MPNC_DigOut_7(int value);
 int getStatus_MPNC_DigOut_7(void);
 
-#define ID_MPNC_DigOut_8 272
-extern int MPNC_DigOut_8;
+#define ID_MPNC_DigOut_8 485
+extern int MPNC_DigOut_8;	/* Digital output 8 value MPNC006 */
 int doWrite_MPNC_DigOut_8(int value);
 int addWrite_MPNC_DigOut_8(int value);
 int getStatus_MPNC_DigOut_8(void);
+
+#define ID_MPNC_AnInFltr_1 486
+extern u_int16_t MPNC_AnInFltr_1;	/* Analog input filter 1 MPNC006 */
+int doWrite_MPNC_AnInFltr_1(u_int16_t value);
+int addWrite_MPNC_AnInFltr_1(u_int16_t value);
+int getStatus_MPNC_AnInFltr_1(void);
+
+#define ID_MPNC_AnInFltr_2 487
+extern u_int16_t MPNC_AnInFltr_2;	/* Analog input filter 2 MPNC006 */
+int doWrite_MPNC_AnInFltr_2(u_int16_t value);
+int addWrite_MPNC_AnInFltr_2(u_int16_t value);
+int getStatus_MPNC_AnInFltr_2(void);
+
+#define ID_MPNC_WatchDog 488
+extern u_int16_t MPNC_WatchDog;	/* WatchDog Timer in Seconds */
+int doWrite_MPNC_WatchDog(u_int16_t value);
+int addWrite_MPNC_WatchDog(u_int16_t value);
+int getStatus_MPNC_WatchDog(void);
+
+#define ID_MPNC_Reserved_6 493
+extern u_int16_t MPNC_Reserved_6;
+int doWrite_MPNC_Reserved_6(u_int16_t value);
+int addWrite_MPNC_Reserved_6(u_int16_t value);
+int getStatus_MPNC_Reserved_6(void);
+
+#define ID_MPNC_FirmwareVer 510
+extern u_int16_t MPNC_FirmwareVer;	/* Firmware release MPNC006 */
+int doWrite_MPNC_FirmwareVer(u_int16_t value);
+int addWrite_MPNC_FirmwareVer(u_int16_t value);
+int getStatus_MPNC_FirmwareVer(void);
+
+#define ID_MPNC_StatusWord 511
+extern u_int16_t MPNC_StatusWord;	/* Status word MPNC006 */
+int doWrite_MPNC_StatusWord(u_int16_t value);
+int addWrite_MPNC_StatusWord(u_int16_t value);
+int getStatus_MPNC_StatusWord(void);
 
 #define ID_TST_DigIn_1 1001
 extern int TST_DigIn_1;

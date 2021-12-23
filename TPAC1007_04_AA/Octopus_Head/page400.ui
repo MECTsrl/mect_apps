@@ -1236,7 +1236,7 @@ ON</string>
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
-  <widget class="ATCMbutton" name="atcmButton_16">
+  <widget class="ATCMbutton" name="atcmButton_page201">
    <property name="geometry">
     <rect>
      <x>240</x>
@@ -1283,10 +1283,10 @@ ON</string>
     <string/>
    </property>
    <property name="borderWidth">
-    <number>0</number>
+    <number>2</number>
    </property>
    <property name="borderRadius">
-    <number>0</number>
+    <number>24</number>
    </property>
   </widget>
   <widget class="ATCMled" name="atcmLed_PLC_AnIn_5">
@@ -1593,7 +1593,7 @@ ON</string>
      <normaloff>:/off.png</normaloff>:/off.png</iconset>
    </property>
   </widget>
-  <widget class="ATCMbutton" name="atcmButton_2">
+  <widget class="ATCMbutton" name="atcmButton_REPEAT">
    <property name="geometry">
     <rect>
      <x>60</x>
@@ -2535,7 +2535,7 @@ ON</string>
     <enum>QFrame::Plain</enum>
    </property>
   </widget>
-  <widget class="ATCMbutton" name="atcmButton_6">
+  <widget class="ATCMbutton" name="atcmButton_page300">
    <property name="geometry">
     <rect>
      <x>0</x>
@@ -3989,13 +3989,13 @@ ON</string>
     <string notr="true">color: rgb(0, 85, 0);</string>
    </property>
    <property name="toolTip">
-    <string>RTU_HeartBeat</string>
+    <string>MPNC_HeartBeat</string>
    </property>
    <property name="whatsThis">
     <string>ATCMlabel widget</string>
    </property>
    <property name="variable">
-    <string>RTU_HeartBeat</string>
+    <string>MPNC_HeartBeat</string>
    </property>
    <property name="prefix">
     <string>RTU0 </string>
@@ -4354,16 +4354,15 @@ ON</string>
   <zorder>label_Qt_Project</zorder>
   <zorder>atcmLabel_PLC_Heartbeat</zorder>
   <zorder>label_PLC_DigIn_4</zorder>
-  <zorder>atcmButton_16</zorder>
   <zorder>atcmButton_page402</zorder>
-  <zorder>atcmButton_2</zorder>
+  <zorder>atcmButton_REPEAT</zorder>
   <zorder>atcmLabel_TEST_STEP</zorder>
   <zorder>label_PLC_DigIn_11</zorder>
   <zorder>atcmButton</zorder>
   <zorder>label_PLC_DigIn_5</zorder>
   <zorder>atcmButton_page401</zorder>
   <zorder>atcmLabel_TEST_STEP_MAX</zorder>
-  <zorder>atcmButton_6</zorder>
+  <zorder>atcmButton_page300</zorder>
   <zorder>atcmLabel_RESULTS_OK</zorder>
   <zorder>atcmComboBox_3</zorder>
   <zorder>atcmButton_page403</zorder>
@@ -4445,6 +4444,7 @@ ON</string>
   <zorder>line_hr_1</zorder>
   <zorder>line_vt_1</zorder>
   <zorder>line_vt_4</zorder>
+  <zorder>atcmButton_page201</zorder>
  </widget>
  <customwidgets>
   <customwidget>
@@ -4471,7 +4471,7 @@ ON</string>
  <resources/>
  <connections>
   <connection>
-   <sender>atcmButton_16</sender>
+   <sender>atcmButton_page201</sender>
    <signal>newPage(const char*,bool)</signal>
    <receiver>page400</receiver>
    <slot>goto_page(const char*,bool)</slot>
@@ -4519,7 +4519,7 @@ ON</string>
    </hints>
   </connection>
   <connection>
-   <sender>atcmButton_6</sender>
+   <sender>atcmButton_page300</sender>
    <signal>newPage(const char*,bool)</signal>
    <receiver>page400</receiver>
    <slot>goto_page(const char*,bool)</slot>

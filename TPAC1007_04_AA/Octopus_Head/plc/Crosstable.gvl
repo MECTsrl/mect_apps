@@ -16,68 +16,98 @@ VAR_GLOBAL
 	RESULTS_NG AT %QW0.796:UINT;
 	MESSAGE_BOX AT %QX0.800.0:BOOL;
 	VccDrop AT %QX0.804.0:BOOL;
-	RTU_HeartBeat AT %ID0.832:UDINT;
-	MPNC_DigOut_A_1 AT %QX0.840.0:BOOL;
-	MPNC_DigOut_A_2 AT %QX0.844.0:BOOL;
-	MPNC_DigOut_A_3 AT %QX0.848.0:BOOL;
-	MPNC_DigOut_A_4 AT %QX0.852.0:BOOL;
-	MPNC_DigOut_A_5 AT %QX0.856.0:BOOL;
-	MPNC_DigOut_A_6 AT %QX0.860.0:BOOL;
-	MPNC_DigOut_A_7 AT %QX0.864.0:BOOL;
-	MPNC_DigOut_A_8 AT %QX0.868.0:BOOL;
-	MPNC_DigOut_A_9 AT %QX0.872.0:BOOL;
-	MPNC_DigOut_A_10 AT %QX0.876.0:BOOL;
-	MPNC_DigOut_A_11 AT %QX0.880.0:BOOL;
-	MPNC_DigOut_A_12 AT %QX0.884.0:BOOL;
-	MPNC_DigOut_A_13 AT %QX0.888.0:BOOL;
-	MPNC_DigOut_A_14 AT %QX0.892.0:BOOL;
-	MPNC_DigOut_A_15 AT %QX0.896.0:BOOL;
-	MPNC_DigOut_A_16 AT %QX0.900.0:BOOL;
-	MPNC_DigIn_A_1 AT %IX0.908.0:BOOL;
-	MPNC_DigIn_A_2 AT %IX0.912.0:BOOL;
-	MPNC_DigIn_A_3 AT %IX0.916.0:BOOL;
-	MPNC_DigIn_A_4 AT %IX0.920.0:BOOL;
-	MPNC_DigIn_A_5 AT %IX0.924.0:BOOL;
-	MPNC_DigIn_A_6 AT %IX0.928.0:BOOL;
-	MPNC_DigIn_A_7 AT %IX0.932.0:BOOL;
-	MPNC_DigIn_A_8 AT %IX0.936.0:BOOL;
-	MPNC_DigIn_A_9 AT %IX0.940.0:BOOL;
-	MPNC_DigIn_A_10 AT %IX0.944.0:BOOL;
-	MPNC_DigIn_A_11 AT %IX0.948.0:BOOL;
-	MPNC_DigIn_A_12 AT %IX0.952.0:BOOL;
-	MPNC_DigIn_A_13 AT %IX0.956.0:BOOL;
-	MPNC_DigIn_A_14 AT %IX0.960.0:BOOL;
-	MPNC_DigIn_A_15 AT %IX0.964.0:BOOL;
-	MPNC_DigIn_A_16 AT %IX0.968.0:BOOL;
-	MPNC_ModulesNumber AT %IW0.976:INT;
-	MPNC_AnInConf_1 AT %QW0.980:UINT;
-	MPNC_AnInConf_2 AT %QW0.984:UINT;
-	MPNC_AnIn_1 AT %IW0.988:INT;
-	MPNC_AnIn_2 AT %IW0.992:INT;
-	MPNC_DigDir_1 AT %QX0.996.0:BOOL;
-	MPNC_DigDir_2 AT %QX0.1000.0:BOOL;
-	MPNC_DigDir_3 AT %QX0.1004.0:BOOL;
-	MPNC_DigDir_4 AT %QX0.1008.0:BOOL;
-	MPNC_DigDir_5 AT %QX0.1012.0:BOOL;
-	MPNC_DigDir_6 AT %QX0.1016.0:BOOL;
-	MPNC_DigDir_7 AT %QX0.1020.0:BOOL;
-	MPNC_DigDir_8 AT %QX0.1024.0:BOOL;
-	MPNC_DigIn_1 AT %IX0.1028.0:BOOL;
-	MPNC_DigIn_2 AT %IX0.1032.0:BOOL;
-	MPNC_DigIn_3 AT %IX0.1036.0:BOOL;
-	MPNC_DigIn_4 AT %IX0.1040.0:BOOL;
-	MPNC_DigIn_5 AT %IX0.1044.0:BOOL;
-	MPNC_DigIn_6 AT %IX0.1048.0:BOOL;
-	MPNC_DigIn_7 AT %IX0.1052.0:BOOL;
-	MPNC_DigIn_8 AT %IX0.1056.0:BOOL;
-	MPNC_DigOut_1 AT %QX0.1060.0:BOOL;
-	MPNC_DigOut_2 AT %QX0.1064.0:BOOL;
-	MPNC_DigOut_3 AT %QX0.1068.0:BOOL;
-	MPNC_DigOut_4 AT %QX0.1072.0:BOOL;
-	MPNC_DigOut_5 AT %QX0.1076.0:BOOL;
-	MPNC_DigOut_6 AT %QX0.1080.0:BOOL;
-	MPNC_DigOut_7 AT %QX0.1084.0:BOOL;
-	MPNC_DigOut_8 AT %QX0.1088.0:BOOL;
+	MPNC_Baudrate AT %IW0.1200:UINT;	(* Baudrate MPNC006 device *)
+	MPNC_NodeID AT %IW0.1204:UINT;	(* Address MPNC006 device *)
+	MPNC_HeartBeat AT %ID0.1208:UDINT;	(* Life time MPNC006 device *)
+	MPNC_DigOut_A_1 AT %QX0.1292.0:BOOL;	(* Digital output value bit 1 MPNC020 02 module A *)
+	MPNC_DigOut_A_2 AT %QX0.1296.0:BOOL;	(* Digital output value bit 2 MPNC020 02 module A *)
+	MPNC_DigOut_A_3 AT %QX0.1300.0:BOOL;	(* Digital output value bit 3 MPNC020 02 module A *)
+	MPNC_DigOut_A_4 AT %QX0.1304.0:BOOL;	(* Digital output value bit 4 MPNC020 02 module A *)
+	MPNC_DigOut_A_5 AT %QX0.1308.0:BOOL;	(* Digital output value bit 5 MPNC020 02 module A *)
+	MPNC_DigOut_A_6 AT %QX0.1312.0:BOOL;	(* Digital output value bit 6 MPNC020 02 module A *)
+	MPNC_DigOut_A_7 AT %QX0.1316.0:BOOL;	(* Digital output value bit 7 MPNC020 02 module A *)
+	MPNC_DigOut_A_8 AT %QX0.1320.0:BOOL;	(* Digital output value bit 8 MPNC020 02 module A *)
+	MPNC_DigOut_A_9 AT %QX0.1324.0:BOOL;	(* Digital output value bit 9 MPNC020 02 module A *)
+	MPNC_DigOut_A_10 AT %QX0.1328.0:BOOL;	(* Digital output value bit 10 MPNC020 02 module A *)
+	MPNC_DigOut_A_11 AT %QX0.1332.0:BOOL;	(* Digital output value bit 11 MPNC020 02 module A *)
+	MPNC_DigOut_A_12 AT %QX0.1336.0:BOOL;	(* Digital output value bit 12 MPNC020 02 module A *)
+	MPNC_DigOut_A_13 AT %QX0.1340.0:BOOL;	(* Digital output value bit 13 MPNC020 02 module A *)
+	MPNC_DigOut_A_14 AT %QX0.1344.0:BOOL;	(* Digital output value bit 14 MPNC020 02 module A *)
+	MPNC_DigOut_A_15 AT %QX0.1348.0:BOOL;	(* Digital output value bit 15 MPNC020 02 module A *)
+	MPNC_DigOut_A_16 AT %QX0.1352.0:BOOL;	(* Digital output value bit 16 MPNC020 02 module A *)
+	MPNC_DigOut_B_1 AT %QX0.1356.0:BOOL;	(* Digital output value bit 1 MPNC020 02 module B *)
+	MPNC_DigOut_B_2 AT %QX0.1360.0:BOOL;	(* Digital output value bit 2 MPNC020 02 module B *)
+	MPNC_DigOut_B_3 AT %QX0.1364.0:BOOL;	(* Digital output value bit 3 MPNC020 02 module B *)
+	MPNC_DigOut_B_4 AT %QX0.1368.0:BOOL;	(* Digital output value bit 4 MPNC020 02 module B *)
+	MPNC_DigOut_B_5 AT %QX0.1372.0:BOOL;	(* Digital output value bit 5 MPNC020 02 module B *)
+	MPNC_DigOut_B_6 AT %QX0.1376.0:BOOL;	(* Digital output value bit 6 MPNC020 02 module B *)
+	MPNC_DigOut_B_7 AT %QX0.1380.0:BOOL;	(* Digital output value bit 7 MPNC020 02 module B *)
+	MPNC_DigOut_B_8 AT %QX0.1384.0:BOOL;	(* Digital output value bit 8 MPNC020 02 module B *)
+	MPNC_DigOut_B_9 AT %QX0.1388.0:BOOL;	(* Digital output value bit 9 MPNC020 02 module B *)
+	MPNC_DigOut_B_10 AT %QX0.1392.0:BOOL;	(* Digital output value bit 10 MPNC020 02 module B *)
+	MPNC_DigOut_B_11 AT %QX0.1396.0:BOOL;	(* Digital output value bit 11 MPNC020 02 module B *)
+	MPNC_DigOut_B_12 AT %QX0.1400.0:BOOL;	(* Digital output value bit 12 MPNC020 02 module B *)
+	MPNC_DigOut_B_13 AT %QX0.1404.0:BOOL;	(* Digital output value bit 13 MPNC020 02 module B *)
+	MPNC_DigOut_B_14 AT %QX0.1408.0:BOOL;	(* Digital output value bit 14 MPNC020 02 module B *)
+	MPNC_DigOut_B_15 AT %QX0.1412.0:BOOL;	(* Digital output value bit 15 MPNC020 02 module B *)
+	MPNC_DigOut_B_16 AT %QX0.1416.0:BOOL;	(* Digital output value bit 16 MPNC020 02 module B *)
+	MPNC_DigIn_A_1 AT %IX0.1548.0:BOOL;	(* Digital input value bit 1 MPNC020 01 module A *)
+	MPNC_DigIn_A_2 AT %IX0.1552.0:BOOL;	(* Digital input value bit 2 MPNC020 01 module A *)
+	MPNC_DigIn_A_3 AT %IX0.1556.0:BOOL;	(* Digital input value bit 3 MPNC020 01 module A *)
+	MPNC_DigIn_A_4 AT %IX0.1560.0:BOOL;	(* Digital input value bit 4 MPNC020 01 module A *)
+	MPNC_DigIn_A_5 AT %IX0.1564.0:BOOL;	(* Digital input value bit 5 MPNC020 01 module A *)
+	MPNC_DigIn_A_6 AT %IX0.1568.0:BOOL;	(* Digital input value bit 6 MPNC020 01 module A *)
+	MPNC_DigIn_A_7 AT %IX0.1572.0:BOOL;	(* Digital input value bit 7 MPNC020 01 module A *)
+	MPNC_DigIn_A_8 AT %IX0.1576.0:BOOL;	(* Digital input value bit 8 MPNC020 01 module A *)
+	MPNC_DigIn_A_9 AT %IX0.1580.0:BOOL;	(* Digital input value bit 9 MPNC020 01 module A *)
+	MPNC_DigIn_A_10 AT %IX0.1584.0:BOOL;	(* Digital input value bit 10 MPNC020 01 module A *)
+	MPNC_DigIn_A_11 AT %IX0.1588.0:BOOL;	(* Digital input value bit 11 MPNC020 01 module A *)
+	MPNC_DigIn_A_12 AT %IX0.1592.0:BOOL;	(* Digital input value bit 12 MPNC020 01 module A *)
+	MPNC_DigIn_A_13 AT %IX0.1596.0:BOOL;	(* Digital input value bit 13 MPNC020 01 module A *)
+	MPNC_DigIn_A_14 AT %IX0.1600.0:BOOL;	(* Digital input value bit 14 MPNC020 01 module A *)
+	MPNC_DigIn_A_15 AT %IX0.1604.0:BOOL;	(* Digital input value bit 15 MPNC020 01 module A *)
+	MPNC_DigIn_A_16 AT %IX0.1608.0:BOOL;	(* Digital input value bit 16 MPNC020 01 module A *)
+	MPNC_Reserved_1 AT %IW0.1804:UINT;
+	MPNC_Reserved_2 AT %IW0.1808:UINT;
+	MPNC_ColdJunctionT AT %IW0.1812:INT;	(* Cold junction temperature value *)
+	MPNC_Reserved_3 AT %IW0.1816:UINT;
+	MPNC_Reserved_4 AT %IW0.1820:UINT;
+	MPNC_Reboot AT %QW0.1824:INT;	(* MPNC006 chain reboot *)
+	MPNC_ModulesNumber AT %IW0.1828:UINT;	(* Number of modules *)
+	MPNC_AnInConf_1 AT %QW0.1832:UINT;	(* Analog input 1 configuration MPNC006 *)
+	MPNC_AnInConf_2 AT %QW0.1836:UINT;	(* Analog input 2 configuration MPNC006 *)
+	MPNC_AnIn_1 AT %IW0.1840:INT;	(* Analog input 1 value MPNC006 *)
+	MPNC_AnIn_2 AT %IW0.1844:INT;	(* Analog input 2 value MPNC006 *)
+	MPNC_DigDir_1 AT %QX0.1848.0:BOOL;	(* Digital IO 1 configuration MPNC006 *)
+	MPNC_DigDir_2 AT %QX0.1852.0:BOOL;	(* Digital IO 2 configuration MPNC006 *)
+	MPNC_DigDir_3 AT %QX0.1856.0:BOOL;	(* Digital IO 3 configuration MPNC006 *)
+	MPNC_DigDir_4 AT %QX0.1860.0:BOOL;	(* Digital IO 4 configuration MPNC006 *)
+	MPNC_DigDir_5 AT %QX0.1864.0:BOOL;	(* Digital IO 5 configuration MPNC006 *)
+	MPNC_DigDir_6 AT %QX0.1868.0:BOOL;	(* Digital IO 6 configuration MPNC006 *)
+	MPNC_DigDir_7 AT %QX0.1872.0:BOOL;	(* Digital IO 7 configuration MPNC006 *)
+	MPNC_DigDir_8 AT %QX0.1876.0:BOOL;	(* Digital IO 8 configuration MPNC006 *)
+	MPNC_DigIn_1 AT %IX0.1880.0:BOOL;	(* Digital input 1 value MPNC006 *)
+	MPNC_DigIn_2 AT %IX0.1884.0:BOOL;	(* Digital input 2 value MPNC006 *)
+	MPNC_DigIn_3 AT %IX0.1888.0:BOOL;	(* Digital input 3 value MPNC006 *)
+	MPNC_DigIn_4 AT %IX0.1892.0:BOOL;	(* Digital input 4 value MPNC006 *)
+	MPNC_DigIn_5 AT %IX0.1896.0:BOOL;	(* Digital input 5 value MPNC006 *)
+	MPNC_DigIn_6 AT %IX0.1900.0:BOOL;	(* Digital input 6 value MPNC006 *)
+	MPNC_DigIn_7 AT %IX0.1904.0:BOOL;	(* Digital input 7 value MPNC006 *)
+	MPNC_DigIn_8 AT %IX0.1908.0:BOOL;	(* Digital input 8 value MPNC006 *)
+	MPNC_DigOut_1 AT %QX0.1912.0:BOOL;	(* Digital output 1 value MPNC006 *)
+	MPNC_DigOut_2 AT %QX0.1916.0:BOOL;	(* Digital output 2 value MPNC006 *)
+	MPNC_DigOut_3 AT %QX0.1920.0:BOOL;	(* Digital output 3 value MPNC006 *)
+	MPNC_DigOut_4 AT %QX0.1924.0:BOOL;	(* Digital output 4 value MPNC006 *)
+	MPNC_DigOut_5 AT %QX0.1928.0:BOOL;	(* Digital output 5 value MPNC006 *)
+	MPNC_DigOut_6 AT %QX0.1932.0:BOOL;	(* Digital output 6 value MPNC006 *)
+	MPNC_DigOut_7 AT %QX0.1936.0:BOOL;	(* Digital output 7 value MPNC006 *)
+	MPNC_DigOut_8 AT %QX0.1940.0:BOOL;	(* Digital output 8 value MPNC006 *)
+	MPNC_AnInFltr_1 AT %QW0.1944:UINT;	(* Analog input filter 1 MPNC006 *)
+	MPNC_AnInFltr_2 AT %QW0.1948:UINT;	(* Analog input filter 2 MPNC006 *)
+	MPNC_WatchDog AT %QW0.1952:UINT;	(* WatchDog Timer in Seconds *)
+	MPNC_Reserved_6 AT %IW0.1972:UINT;
+	MPNC_FirmwareVer AT %IW0.2040:UINT;	(* Firmware release MPNC006 *)
+	MPNC_StatusWord AT %IW0.2044:UINT;	(* Status word MPNC006 *)
 	TST_DigIn_1 AT %QX0.4004.0:BOOL;
 	TST_DigIn_2 AT %QX0.4008.0:BOOL;
 	TST_DigIn_3 AT %QX0.4012.0:BOOL;

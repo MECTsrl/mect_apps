@@ -147,437 +147,647 @@ int VccDrop = 0;
 
 
 /*
- * Variable RTU_HeartBeat
+ * Variable MPNC_Baudrate	[ Baudrate MPNC006 device ]
  */
 
-u_int32_t RTU_HeartBeat = 0;
+u_int16_t MPNC_Baudrate = 0;
 
 
 /*
- * Variable MPNC_DigOut_A_1
+ * Variable MPNC_NodeID	[ Address MPNC006 device ]
+ */
+
+u_int16_t MPNC_NodeID = 0;
+
+
+/*
+ * Variable MPNC_HeartBeat	[ Life time MPNC006 device ]
+ */
+
+u_int32_t MPNC_HeartBeat = 0;
+
+
+/*
+ * Variable MPNC_DigOut_A_1	[ Digital output value bit 1 MPNC020 02 module A ]
  */
 
 int MPNC_DigOut_A_1 = 0;
 
 
 /*
- * Variable MPNC_DigOut_A_2
+ * Variable MPNC_DigOut_A_2	[ Digital output value bit 2 MPNC020 02 module A ]
  */
 
 int MPNC_DigOut_A_2 = 0;
 
 
 /*
- * Variable MPNC_DigOut_A_3
+ * Variable MPNC_DigOut_A_3	[ Digital output value bit 3 MPNC020 02 module A ]
  */
 
 int MPNC_DigOut_A_3 = 0;
 
 
 /*
- * Variable MPNC_DigOut_A_4
+ * Variable MPNC_DigOut_A_4	[ Digital output value bit 4 MPNC020 02 module A ]
  */
 
 int MPNC_DigOut_A_4 = 0;
 
 
 /*
- * Variable MPNC_DigOut_A_5
+ * Variable MPNC_DigOut_A_5	[ Digital output value bit 5 MPNC020 02 module A ]
  */
 
 int MPNC_DigOut_A_5 = 0;
 
 
 /*
- * Variable MPNC_DigOut_A_6
+ * Variable MPNC_DigOut_A_6	[ Digital output value bit 6 MPNC020 02 module A ]
  */
 
 int MPNC_DigOut_A_6 = 0;
 
 
 /*
- * Variable MPNC_DigOut_A_7
+ * Variable MPNC_DigOut_A_7	[ Digital output value bit 7 MPNC020 02 module A ]
  */
 
 int MPNC_DigOut_A_7 = 0;
 
 
 /*
- * Variable MPNC_DigOut_A_8
+ * Variable MPNC_DigOut_A_8	[ Digital output value bit 8 MPNC020 02 module A ]
  */
 
 int MPNC_DigOut_A_8 = 0;
 
 
 /*
- * Variable MPNC_DigOut_A_9
+ * Variable MPNC_DigOut_A_9	[ Digital output value bit 9 MPNC020 02 module A ]
  */
 
 int MPNC_DigOut_A_9 = 0;
 
 
 /*
- * Variable MPNC_DigOut_A_10
+ * Variable MPNC_DigOut_A_10	[ Digital output value bit 10 MPNC020 02 module A ]
  */
 
 int MPNC_DigOut_A_10 = 0;
 
 
 /*
- * Variable MPNC_DigOut_A_11
+ * Variable MPNC_DigOut_A_11	[ Digital output value bit 11 MPNC020 02 module A ]
  */
 
 int MPNC_DigOut_A_11 = 0;
 
 
 /*
- * Variable MPNC_DigOut_A_12
+ * Variable MPNC_DigOut_A_12	[ Digital output value bit 12 MPNC020 02 module A ]
  */
 
 int MPNC_DigOut_A_12 = 0;
 
 
 /*
- * Variable MPNC_DigOut_A_13
+ * Variable MPNC_DigOut_A_13	[ Digital output value bit 13 MPNC020 02 module A ]
  */
 
 int MPNC_DigOut_A_13 = 0;
 
 
 /*
- * Variable MPNC_DigOut_A_14
+ * Variable MPNC_DigOut_A_14	[ Digital output value bit 14 MPNC020 02 module A ]
  */
 
 int MPNC_DigOut_A_14 = 0;
 
 
 /*
- * Variable MPNC_DigOut_A_15
+ * Variable MPNC_DigOut_A_15	[ Digital output value bit 15 MPNC020 02 module A ]
  */
 
 int MPNC_DigOut_A_15 = 0;
 
 
 /*
- * Variable MPNC_DigOut_A_16
+ * Variable MPNC_DigOut_A_16	[ Digital output value bit 16 MPNC020 02 module A ]
  */
 
 int MPNC_DigOut_A_16 = 0;
 
 
 /*
- * Variable MPNC_DigIn_A_1
+ * Variable MPNC_DigOut_B_1	[ Digital output value bit 1 MPNC020 02 module B ]
+ */
+
+int MPNC_DigOut_B_1 = 0;
+
+
+/*
+ * Variable MPNC_DigOut_B_2	[ Digital output value bit 2 MPNC020 02 module B ]
+ */
+
+int MPNC_DigOut_B_2 = 0;
+
+
+/*
+ * Variable MPNC_DigOut_B_3	[ Digital output value bit 3 MPNC020 02 module B ]
+ */
+
+int MPNC_DigOut_B_3 = 0;
+
+
+/*
+ * Variable MPNC_DigOut_B_4	[ Digital output value bit 4 MPNC020 02 module B ]
+ */
+
+int MPNC_DigOut_B_4 = 0;
+
+
+/*
+ * Variable MPNC_DigOut_B_5	[ Digital output value bit 5 MPNC020 02 module B ]
+ */
+
+int MPNC_DigOut_B_5 = 0;
+
+
+/*
+ * Variable MPNC_DigOut_B_6	[ Digital output value bit 6 MPNC020 02 module B ]
+ */
+
+int MPNC_DigOut_B_6 = 0;
+
+
+/*
+ * Variable MPNC_DigOut_B_7	[ Digital output value bit 7 MPNC020 02 module B ]
+ */
+
+int MPNC_DigOut_B_7 = 0;
+
+
+/*
+ * Variable MPNC_DigOut_B_8	[ Digital output value bit 8 MPNC020 02 module B ]
+ */
+
+int MPNC_DigOut_B_8 = 0;
+
+
+/*
+ * Variable MPNC_DigOut_B_9	[ Digital output value bit 9 MPNC020 02 module B ]
+ */
+
+int MPNC_DigOut_B_9 = 0;
+
+
+/*
+ * Variable MPNC_DigOut_B_10	[ Digital output value bit 10 MPNC020 02 module B ]
+ */
+
+int MPNC_DigOut_B_10 = 0;
+
+
+/*
+ * Variable MPNC_DigOut_B_11	[ Digital output value bit 11 MPNC020 02 module B ]
+ */
+
+int MPNC_DigOut_B_11 = 0;
+
+
+/*
+ * Variable MPNC_DigOut_B_12	[ Digital output value bit 12 MPNC020 02 module B ]
+ */
+
+int MPNC_DigOut_B_12 = 0;
+
+
+/*
+ * Variable MPNC_DigOut_B_13	[ Digital output value bit 13 MPNC020 02 module B ]
+ */
+
+int MPNC_DigOut_B_13 = 0;
+
+
+/*
+ * Variable MPNC_DigOut_B_14	[ Digital output value bit 14 MPNC020 02 module B ]
+ */
+
+int MPNC_DigOut_B_14 = 0;
+
+
+/*
+ * Variable MPNC_DigOut_B_15	[ Digital output value bit 15 MPNC020 02 module B ]
+ */
+
+int MPNC_DigOut_B_15 = 0;
+
+
+/*
+ * Variable MPNC_DigOut_B_16	[ Digital output value bit 16 MPNC020 02 module B ]
+ */
+
+int MPNC_DigOut_B_16 = 0;
+
+
+/*
+ * Variable MPNC_DigIn_A_1	[ Digital input value bit 1 MPNC020 01 module A ]
  */
 
 int MPNC_DigIn_A_1 = 0;
 
 
 /*
- * Variable MPNC_DigIn_A_2
+ * Variable MPNC_DigIn_A_2	[ Digital input value bit 2 MPNC020 01 module A ]
  */
 
 int MPNC_DigIn_A_2 = 0;
 
 
 /*
- * Variable MPNC_DigIn_A_3
+ * Variable MPNC_DigIn_A_3	[ Digital input value bit 3 MPNC020 01 module A ]
  */
 
 int MPNC_DigIn_A_3 = 0;
 
 
 /*
- * Variable MPNC_DigIn_A_4
+ * Variable MPNC_DigIn_A_4	[ Digital input value bit 4 MPNC020 01 module A ]
  */
 
 int MPNC_DigIn_A_4 = 0;
 
 
 /*
- * Variable MPNC_DigIn_A_5
+ * Variable MPNC_DigIn_A_5	[ Digital input value bit 5 MPNC020 01 module A ]
  */
 
 int MPNC_DigIn_A_5 = 0;
 
 
 /*
- * Variable MPNC_DigIn_A_6
+ * Variable MPNC_DigIn_A_6	[ Digital input value bit 6 MPNC020 01 module A ]
  */
 
 int MPNC_DigIn_A_6 = 0;
 
 
 /*
- * Variable MPNC_DigIn_A_7
+ * Variable MPNC_DigIn_A_7	[ Digital input value bit 7 MPNC020 01 module A ]
  */
 
 int MPNC_DigIn_A_7 = 0;
 
 
 /*
- * Variable MPNC_DigIn_A_8
+ * Variable MPNC_DigIn_A_8	[ Digital input value bit 8 MPNC020 01 module A ]
  */
 
 int MPNC_DigIn_A_8 = 0;
 
 
 /*
- * Variable MPNC_DigIn_A_9
+ * Variable MPNC_DigIn_A_9	[ Digital input value bit 9 MPNC020 01 module A ]
  */
 
 int MPNC_DigIn_A_9 = 0;
 
 
 /*
- * Variable MPNC_DigIn_A_10
+ * Variable MPNC_DigIn_A_10	[ Digital input value bit 10 MPNC020 01 module A ]
  */
 
 int MPNC_DigIn_A_10 = 0;
 
 
 /*
- * Variable MPNC_DigIn_A_11
+ * Variable MPNC_DigIn_A_11	[ Digital input value bit 11 MPNC020 01 module A ]
  */
 
 int MPNC_DigIn_A_11 = 0;
 
 
 /*
- * Variable MPNC_DigIn_A_12
+ * Variable MPNC_DigIn_A_12	[ Digital input value bit 12 MPNC020 01 module A ]
  */
 
 int MPNC_DigIn_A_12 = 0;
 
 
 /*
- * Variable MPNC_DigIn_A_13
+ * Variable MPNC_DigIn_A_13	[ Digital input value bit 13 MPNC020 01 module A ]
  */
 
 int MPNC_DigIn_A_13 = 0;
 
 
 /*
- * Variable MPNC_DigIn_A_14
+ * Variable MPNC_DigIn_A_14	[ Digital input value bit 14 MPNC020 01 module A ]
  */
 
 int MPNC_DigIn_A_14 = 0;
 
 
 /*
- * Variable MPNC_DigIn_A_15
+ * Variable MPNC_DigIn_A_15	[ Digital input value bit 15 MPNC020 01 module A ]
  */
 
 int MPNC_DigIn_A_15 = 0;
 
 
 /*
- * Variable MPNC_DigIn_A_16
+ * Variable MPNC_DigIn_A_16	[ Digital input value bit 16 MPNC020 01 module A ]
  */
 
 int MPNC_DigIn_A_16 = 0;
 
 
 /*
- * Variable MPNC_ModulesNumber
+ * Variable MPNC_Reserved_1
  */
 
-int16_t MPNC_ModulesNumber = 0;
+u_int16_t MPNC_Reserved_1 = 0;
 
 
 /*
- * Variable MPNC_AnInConf_1
+ * Variable MPNC_Reserved_2
+ */
+
+u_int16_t MPNC_Reserved_2 = 0;
+
+
+/*
+ * Variable MPNC_ColdJunctionT	[ Cold junction temperature value ]
+ */
+
+int16_t MPNC_ColdJunctionT = 0;
+
+
+/*
+ * Variable MPNC_Reserved_3
+ */
+
+u_int16_t MPNC_Reserved_3 = 0;
+
+
+/*
+ * Variable MPNC_Reserved_4
+ */
+
+u_int16_t MPNC_Reserved_4 = 0;
+
+
+/*
+ * Variable MPNC_Reboot	[ MPNC006 chain reboot ]
+ */
+
+int16_t MPNC_Reboot = 0;
+
+
+/*
+ * Variable MPNC_ModulesNumber	[ Number of modules ]
+ */
+
+u_int16_t MPNC_ModulesNumber = 0;
+
+
+/*
+ * Variable MPNC_AnInConf_1	[ Analog input 1 configuration MPNC006 ]
  */
 
 u_int16_t MPNC_AnInConf_1 = 0;
 
 
 /*
- * Variable MPNC_AnInConf_2
+ * Variable MPNC_AnInConf_2	[ Analog input 2 configuration MPNC006 ]
  */
 
 u_int16_t MPNC_AnInConf_2 = 0;
 
 
 /*
- * Variable MPNC_AnIn_1
+ * Variable MPNC_AnIn_1	[ Analog input 1 value MPNC006 ]
  */
 
 int16_t MPNC_AnIn_1 = 0;
 
 
 /*
- * Variable MPNC_AnIn_2
+ * Variable MPNC_AnIn_2	[ Analog input 2 value MPNC006 ]
  */
 
 int16_t MPNC_AnIn_2 = 0;
 
 
 /*
- * Variable MPNC_DigDir_1
+ * Variable MPNC_DigDir_1	[ Digital IO 1 configuration MPNC006 ]
  */
 
 int MPNC_DigDir_1 = 0;
 
 
 /*
- * Variable MPNC_DigDir_2
+ * Variable MPNC_DigDir_2	[ Digital IO 2 configuration MPNC006 ]
  */
 
 int MPNC_DigDir_2 = 0;
 
 
 /*
- * Variable MPNC_DigDir_3
+ * Variable MPNC_DigDir_3	[ Digital IO 3 configuration MPNC006 ]
  */
 
 int MPNC_DigDir_3 = 0;
 
 
 /*
- * Variable MPNC_DigDir_4
+ * Variable MPNC_DigDir_4	[ Digital IO 4 configuration MPNC006 ]
  */
 
 int MPNC_DigDir_4 = 0;
 
 
 /*
- * Variable MPNC_DigDir_5
+ * Variable MPNC_DigDir_5	[ Digital IO 5 configuration MPNC006 ]
  */
 
 int MPNC_DigDir_5 = 0;
 
 
 /*
- * Variable MPNC_DigDir_6
+ * Variable MPNC_DigDir_6	[ Digital IO 6 configuration MPNC006 ]
  */
 
 int MPNC_DigDir_6 = 0;
 
 
 /*
- * Variable MPNC_DigDir_7
+ * Variable MPNC_DigDir_7	[ Digital IO 7 configuration MPNC006 ]
  */
 
 int MPNC_DigDir_7 = 0;
 
 
 /*
- * Variable MPNC_DigDir_8
+ * Variable MPNC_DigDir_8	[ Digital IO 8 configuration MPNC006 ]
  */
 
 int MPNC_DigDir_8 = 0;
 
 
 /*
- * Variable MPNC_DigIn_1
+ * Variable MPNC_DigIn_1	[ Digital input 1 value MPNC006 ]
  */
 
 int MPNC_DigIn_1 = 0;
 
 
 /*
- * Variable MPNC_DigIn_2
+ * Variable MPNC_DigIn_2	[ Digital input 2 value MPNC006 ]
  */
 
 int MPNC_DigIn_2 = 0;
 
 
 /*
- * Variable MPNC_DigIn_3
+ * Variable MPNC_DigIn_3	[ Digital input 3 value MPNC006 ]
  */
 
 int MPNC_DigIn_3 = 0;
 
 
 /*
- * Variable MPNC_DigIn_4
+ * Variable MPNC_DigIn_4	[ Digital input 4 value MPNC006 ]
  */
 
 int MPNC_DigIn_4 = 0;
 
 
 /*
- * Variable MPNC_DigIn_5
+ * Variable MPNC_DigIn_5	[ Digital input 5 value MPNC006 ]
  */
 
 int MPNC_DigIn_5 = 0;
 
 
 /*
- * Variable MPNC_DigIn_6
+ * Variable MPNC_DigIn_6	[ Digital input 6 value MPNC006 ]
  */
 
 int MPNC_DigIn_6 = 0;
 
 
 /*
- * Variable MPNC_DigIn_7
+ * Variable MPNC_DigIn_7	[ Digital input 7 value MPNC006 ]
  */
 
 int MPNC_DigIn_7 = 0;
 
 
 /*
- * Variable MPNC_DigIn_8
+ * Variable MPNC_DigIn_8	[ Digital input 8 value MPNC006 ]
  */
 
 int MPNC_DigIn_8 = 0;
 
 
 /*
- * Variable MPNC_DigOut_1
+ * Variable MPNC_DigOut_1	[ Digital output 1 value MPNC006 ]
  */
 
 int MPNC_DigOut_1 = 0;
 
 
 /*
- * Variable MPNC_DigOut_2
+ * Variable MPNC_DigOut_2	[ Digital output 2 value MPNC006 ]
  */
 
 int MPNC_DigOut_2 = 0;
 
 
 /*
- * Variable MPNC_DigOut_3
+ * Variable MPNC_DigOut_3	[ Digital output 3 value MPNC006 ]
  */
 
 int MPNC_DigOut_3 = 0;
 
 
 /*
- * Variable MPNC_DigOut_4
+ * Variable MPNC_DigOut_4	[ Digital output 4 value MPNC006 ]
  */
 
 int MPNC_DigOut_4 = 0;
 
 
 /*
- * Variable MPNC_DigOut_5
+ * Variable MPNC_DigOut_5	[ Digital output 5 value MPNC006 ]
  */
 
 int MPNC_DigOut_5 = 0;
 
 
 /*
- * Variable MPNC_DigOut_6
+ * Variable MPNC_DigOut_6	[ Digital output 6 value MPNC006 ]
  */
 
 int MPNC_DigOut_6 = 0;
 
 
 /*
- * Variable MPNC_DigOut_7
+ * Variable MPNC_DigOut_7	[ Digital output 7 value MPNC006 ]
  */
 
 int MPNC_DigOut_7 = 0;
 
 
 /*
- * Variable MPNC_DigOut_8
+ * Variable MPNC_DigOut_8	[ Digital output 8 value MPNC006 ]
  */
 
 int MPNC_DigOut_8 = 0;
+
+
+/*
+ * Variable MPNC_AnInFltr_1	[ Analog input filter 1 MPNC006 ]
+ */
+
+u_int16_t MPNC_AnInFltr_1 = 0;
+
+
+/*
+ * Variable MPNC_AnInFltr_2	[ Analog input filter 2 MPNC006 ]
+ */
+
+u_int16_t MPNC_AnInFltr_2 = 0;
+
+
+/*
+ * Variable MPNC_WatchDog	[ WatchDog Timer in Seconds ]
+ */
+
+u_int16_t MPNC_WatchDog = 0;
+
+
+/*
+ * Variable MPNC_Reserved_6
+ */
+
+u_int16_t MPNC_Reserved_6 = 0;
+
+
+/*
+ * Variable MPNC_FirmwareVer	[ Firmware release MPNC006 ]
+ */
+
+u_int16_t MPNC_FirmwareVer = 0;
+
+
+/*
+ * Variable MPNC_StatusWord	[ Status word MPNC006 ]
+ */
+
+u_int16_t MPNC_StatusWord = 0;
 
 
 /*
@@ -7802,21 +8012,57 @@ getStatus_VccDrop(void)
 }
 
 int
-doWrite_RTU_HeartBeat(u_int32_t value)
+doWrite_MPNC_Baudrate(u_int16_t value)
 {
-	return doWrite(ID_RTU_HeartBeat, &value);
+	return doWrite(ID_MPNC_Baudrate, &value);
 }
 
 int
-addWrite_RTU_HeartBeat(u_int32_t value)
+addWrite_MPNC_Baudrate(u_int16_t value)
 {
-	return addWrite(ID_RTU_HeartBeat, &value);
+	return addWrite(ID_MPNC_Baudrate, &value);
 }
 
 int
-getStatus_RTU_HeartBeat(void)
+getStatus_MPNC_Baudrate(void)
 {
-	return getStatus(ID_RTU_HeartBeat);
+	return getStatus(ID_MPNC_Baudrate);
+}
+
+int
+doWrite_MPNC_NodeID(u_int16_t value)
+{
+	return doWrite(ID_MPNC_NodeID, &value);
+}
+
+int
+addWrite_MPNC_NodeID(u_int16_t value)
+{
+	return addWrite(ID_MPNC_NodeID, &value);
+}
+
+int
+getStatus_MPNC_NodeID(void)
+{
+	return getStatus(ID_MPNC_NodeID);
+}
+
+int
+doWrite_MPNC_HeartBeat(u_int32_t value)
+{
+	return doWrite(ID_MPNC_HeartBeat, &value);
+}
+
+int
+addWrite_MPNC_HeartBeat(u_int32_t value)
+{
+	return addWrite(ID_MPNC_HeartBeat, &value);
+}
+
+int
+getStatus_MPNC_HeartBeat(void)
+{
+	return getStatus(ID_MPNC_HeartBeat);
 }
 
 int
@@ -8108,6 +8354,294 @@ getStatus_MPNC_DigOut_A_16(void)
 }
 
 int
+doWrite_MPNC_DigOut_B_1(int value)
+{
+	return doWrite(ID_MPNC_DigOut_B_1, &value);
+}
+
+int
+addWrite_MPNC_DigOut_B_1(int value)
+{
+	return addWrite(ID_MPNC_DigOut_B_1, &value);
+}
+
+int
+getStatus_MPNC_DigOut_B_1(void)
+{
+	return getStatus(ID_MPNC_DigOut_B_1);
+}
+
+int
+doWrite_MPNC_DigOut_B_2(int value)
+{
+	return doWrite(ID_MPNC_DigOut_B_2, &value);
+}
+
+int
+addWrite_MPNC_DigOut_B_2(int value)
+{
+	return addWrite(ID_MPNC_DigOut_B_2, &value);
+}
+
+int
+getStatus_MPNC_DigOut_B_2(void)
+{
+	return getStatus(ID_MPNC_DigOut_B_2);
+}
+
+int
+doWrite_MPNC_DigOut_B_3(int value)
+{
+	return doWrite(ID_MPNC_DigOut_B_3, &value);
+}
+
+int
+addWrite_MPNC_DigOut_B_3(int value)
+{
+	return addWrite(ID_MPNC_DigOut_B_3, &value);
+}
+
+int
+getStatus_MPNC_DigOut_B_3(void)
+{
+	return getStatus(ID_MPNC_DigOut_B_3);
+}
+
+int
+doWrite_MPNC_DigOut_B_4(int value)
+{
+	return doWrite(ID_MPNC_DigOut_B_4, &value);
+}
+
+int
+addWrite_MPNC_DigOut_B_4(int value)
+{
+	return addWrite(ID_MPNC_DigOut_B_4, &value);
+}
+
+int
+getStatus_MPNC_DigOut_B_4(void)
+{
+	return getStatus(ID_MPNC_DigOut_B_4);
+}
+
+int
+doWrite_MPNC_DigOut_B_5(int value)
+{
+	return doWrite(ID_MPNC_DigOut_B_5, &value);
+}
+
+int
+addWrite_MPNC_DigOut_B_5(int value)
+{
+	return addWrite(ID_MPNC_DigOut_B_5, &value);
+}
+
+int
+getStatus_MPNC_DigOut_B_5(void)
+{
+	return getStatus(ID_MPNC_DigOut_B_5);
+}
+
+int
+doWrite_MPNC_DigOut_B_6(int value)
+{
+	return doWrite(ID_MPNC_DigOut_B_6, &value);
+}
+
+int
+addWrite_MPNC_DigOut_B_6(int value)
+{
+	return addWrite(ID_MPNC_DigOut_B_6, &value);
+}
+
+int
+getStatus_MPNC_DigOut_B_6(void)
+{
+	return getStatus(ID_MPNC_DigOut_B_6);
+}
+
+int
+doWrite_MPNC_DigOut_B_7(int value)
+{
+	return doWrite(ID_MPNC_DigOut_B_7, &value);
+}
+
+int
+addWrite_MPNC_DigOut_B_7(int value)
+{
+	return addWrite(ID_MPNC_DigOut_B_7, &value);
+}
+
+int
+getStatus_MPNC_DigOut_B_7(void)
+{
+	return getStatus(ID_MPNC_DigOut_B_7);
+}
+
+int
+doWrite_MPNC_DigOut_B_8(int value)
+{
+	return doWrite(ID_MPNC_DigOut_B_8, &value);
+}
+
+int
+addWrite_MPNC_DigOut_B_8(int value)
+{
+	return addWrite(ID_MPNC_DigOut_B_8, &value);
+}
+
+int
+getStatus_MPNC_DigOut_B_8(void)
+{
+	return getStatus(ID_MPNC_DigOut_B_8);
+}
+
+int
+doWrite_MPNC_DigOut_B_9(int value)
+{
+	return doWrite(ID_MPNC_DigOut_B_9, &value);
+}
+
+int
+addWrite_MPNC_DigOut_B_9(int value)
+{
+	return addWrite(ID_MPNC_DigOut_B_9, &value);
+}
+
+int
+getStatus_MPNC_DigOut_B_9(void)
+{
+	return getStatus(ID_MPNC_DigOut_B_9);
+}
+
+int
+doWrite_MPNC_DigOut_B_10(int value)
+{
+	return doWrite(ID_MPNC_DigOut_B_10, &value);
+}
+
+int
+addWrite_MPNC_DigOut_B_10(int value)
+{
+	return addWrite(ID_MPNC_DigOut_B_10, &value);
+}
+
+int
+getStatus_MPNC_DigOut_B_10(void)
+{
+	return getStatus(ID_MPNC_DigOut_B_10);
+}
+
+int
+doWrite_MPNC_DigOut_B_11(int value)
+{
+	return doWrite(ID_MPNC_DigOut_B_11, &value);
+}
+
+int
+addWrite_MPNC_DigOut_B_11(int value)
+{
+	return addWrite(ID_MPNC_DigOut_B_11, &value);
+}
+
+int
+getStatus_MPNC_DigOut_B_11(void)
+{
+	return getStatus(ID_MPNC_DigOut_B_11);
+}
+
+int
+doWrite_MPNC_DigOut_B_12(int value)
+{
+	return doWrite(ID_MPNC_DigOut_B_12, &value);
+}
+
+int
+addWrite_MPNC_DigOut_B_12(int value)
+{
+	return addWrite(ID_MPNC_DigOut_B_12, &value);
+}
+
+int
+getStatus_MPNC_DigOut_B_12(void)
+{
+	return getStatus(ID_MPNC_DigOut_B_12);
+}
+
+int
+doWrite_MPNC_DigOut_B_13(int value)
+{
+	return doWrite(ID_MPNC_DigOut_B_13, &value);
+}
+
+int
+addWrite_MPNC_DigOut_B_13(int value)
+{
+	return addWrite(ID_MPNC_DigOut_B_13, &value);
+}
+
+int
+getStatus_MPNC_DigOut_B_13(void)
+{
+	return getStatus(ID_MPNC_DigOut_B_13);
+}
+
+int
+doWrite_MPNC_DigOut_B_14(int value)
+{
+	return doWrite(ID_MPNC_DigOut_B_14, &value);
+}
+
+int
+addWrite_MPNC_DigOut_B_14(int value)
+{
+	return addWrite(ID_MPNC_DigOut_B_14, &value);
+}
+
+int
+getStatus_MPNC_DigOut_B_14(void)
+{
+	return getStatus(ID_MPNC_DigOut_B_14);
+}
+
+int
+doWrite_MPNC_DigOut_B_15(int value)
+{
+	return doWrite(ID_MPNC_DigOut_B_15, &value);
+}
+
+int
+addWrite_MPNC_DigOut_B_15(int value)
+{
+	return addWrite(ID_MPNC_DigOut_B_15, &value);
+}
+
+int
+getStatus_MPNC_DigOut_B_15(void)
+{
+	return getStatus(ID_MPNC_DigOut_B_15);
+}
+
+int
+doWrite_MPNC_DigOut_B_16(int value)
+{
+	return doWrite(ID_MPNC_DigOut_B_16, &value);
+}
+
+int
+addWrite_MPNC_DigOut_B_16(int value)
+{
+	return addWrite(ID_MPNC_DigOut_B_16, &value);
+}
+
+int
+getStatus_MPNC_DigOut_B_16(void)
+{
+	return getStatus(ID_MPNC_DigOut_B_16);
+}
+
+int
 doWrite_MPNC_DigIn_A_1(int value)
 {
 	return doWrite(ID_MPNC_DigIn_A_1, &value);
@@ -8396,13 +8930,121 @@ getStatus_MPNC_DigIn_A_16(void)
 }
 
 int
-doWrite_MPNC_ModulesNumber(int16_t value)
+doWrite_MPNC_Reserved_1(u_int16_t value)
+{
+	return doWrite(ID_MPNC_Reserved_1, &value);
+}
+
+int
+addWrite_MPNC_Reserved_1(u_int16_t value)
+{
+	return addWrite(ID_MPNC_Reserved_1, &value);
+}
+
+int
+getStatus_MPNC_Reserved_1(void)
+{
+	return getStatus(ID_MPNC_Reserved_1);
+}
+
+int
+doWrite_MPNC_Reserved_2(u_int16_t value)
+{
+	return doWrite(ID_MPNC_Reserved_2, &value);
+}
+
+int
+addWrite_MPNC_Reserved_2(u_int16_t value)
+{
+	return addWrite(ID_MPNC_Reserved_2, &value);
+}
+
+int
+getStatus_MPNC_Reserved_2(void)
+{
+	return getStatus(ID_MPNC_Reserved_2);
+}
+
+int
+doWrite_MPNC_ColdJunctionT(int16_t value)
+{
+	return doWrite(ID_MPNC_ColdJunctionT, &value);
+}
+
+int
+addWrite_MPNC_ColdJunctionT(int16_t value)
+{
+	return addWrite(ID_MPNC_ColdJunctionT, &value);
+}
+
+int
+getStatus_MPNC_ColdJunctionT(void)
+{
+	return getStatus(ID_MPNC_ColdJunctionT);
+}
+
+int
+doWrite_MPNC_Reserved_3(u_int16_t value)
+{
+	return doWrite(ID_MPNC_Reserved_3, &value);
+}
+
+int
+addWrite_MPNC_Reserved_3(u_int16_t value)
+{
+	return addWrite(ID_MPNC_Reserved_3, &value);
+}
+
+int
+getStatus_MPNC_Reserved_3(void)
+{
+	return getStatus(ID_MPNC_Reserved_3);
+}
+
+int
+doWrite_MPNC_Reserved_4(u_int16_t value)
+{
+	return doWrite(ID_MPNC_Reserved_4, &value);
+}
+
+int
+addWrite_MPNC_Reserved_4(u_int16_t value)
+{
+	return addWrite(ID_MPNC_Reserved_4, &value);
+}
+
+int
+getStatus_MPNC_Reserved_4(void)
+{
+	return getStatus(ID_MPNC_Reserved_4);
+}
+
+int
+doWrite_MPNC_Reboot(int16_t value)
+{
+	return doWrite(ID_MPNC_Reboot, &value);
+}
+
+int
+addWrite_MPNC_Reboot(int16_t value)
+{
+	return addWrite(ID_MPNC_Reboot, &value);
+}
+
+int
+getStatus_MPNC_Reboot(void)
+{
+	return getStatus(ID_MPNC_Reboot);
+}
+
+int
+doWrite_MPNC_ModulesNumber(u_int16_t value)
 {
 	return doWrite(ID_MPNC_ModulesNumber, &value);
 }
 
 int
-addWrite_MPNC_ModulesNumber(int16_t value)
+addWrite_MPNC_ModulesNumber(u_int16_t value)
 {
 	return addWrite(ID_MPNC_ModulesNumber, &value);
 }
@@ -8915,6 +9557,114 @@ int
 getStatus_MPNC_DigOut_8(void)
 {
 	return getStatus(ID_MPNC_DigOut_8);
+}
+
+int
+doWrite_MPNC_AnInFltr_1(u_int16_t value)
+{
+	return doWrite(ID_MPNC_AnInFltr_1, &value);
+}
+
+int
+addWrite_MPNC_AnInFltr_1(u_int16_t value)
+{
+	return addWrite(ID_MPNC_AnInFltr_1, &value);
+}
+
+int
+getStatus_MPNC_AnInFltr_1(void)
+{
+	return getStatus(ID_MPNC_AnInFltr_1);
+}
+
+int
+doWrite_MPNC_AnInFltr_2(u_int16_t value)
+{
+	return doWrite(ID_MPNC_AnInFltr_2, &value);
+}
+
+int
+addWrite_MPNC_AnInFltr_2(u_int16_t value)
+{
+	return addWrite(ID_MPNC_AnInFltr_2, &value);
+}
+
+int
+getStatus_MPNC_AnInFltr_2(void)
+{
+	return getStatus(ID_MPNC_AnInFltr_2);
+}
+
+int
+doWrite_MPNC_WatchDog(u_int16_t value)
+{
+	return doWrite(ID_MPNC_WatchDog, &value);
+}
+
+int
+addWrite_MPNC_WatchDog(u_int16_t value)
+{
+	return addWrite(ID_MPNC_WatchDog, &value);
+}
+
+int
+getStatus_MPNC_WatchDog(void)
+{
+	return getStatus(ID_MPNC_WatchDog);
+}
+
+int
+doWrite_MPNC_Reserved_6(u_int16_t value)
+{
+	return doWrite(ID_MPNC_Reserved_6, &value);
+}
+
+int
+addWrite_MPNC_Reserved_6(u_int16_t value)
+{
+	return addWrite(ID_MPNC_Reserved_6, &value);
+}
+
+int
+getStatus_MPNC_Reserved_6(void)
+{
+	return getStatus(ID_MPNC_Reserved_6);
+}
+
+int
+doWrite_MPNC_FirmwareVer(u_int16_t value)
+{
+	return doWrite(ID_MPNC_FirmwareVer, &value);
+}
+
+int
+addWrite_MPNC_FirmwareVer(u_int16_t value)
+{
+	return addWrite(ID_MPNC_FirmwareVer, &value);
+}
+
+int
+getStatus_MPNC_FirmwareVer(void)
+{
+	return getStatus(ID_MPNC_FirmwareVer);
+}
+
+int
+doWrite_MPNC_StatusWord(u_int16_t value)
+{
+	return doWrite(ID_MPNC_StatusWord, &value);
+}
+
+int
+addWrite_MPNC_StatusWord(u_int16_t value)
+{
+	return addWrite(ID_MPNC_StatusWord, &value);
+}
+
+int
+getStatus_MPNC_StatusWord(void)
+{
+	return getStatus(ID_MPNC_StatusWord);
 }
 
 int
@@ -26724,7 +27474,9 @@ update_all(void)
 	retval += readFromDb(ID_RESULTS_NG, &RESULTS_NG);
 	retval += readFromDb(ID_MESSAGE_BOX, &MESSAGE_BOX);
 	retval += readFromDb(ID_VccDrop, &VccDrop);
-	retval += readFromDb(ID_RTU_HeartBeat, &RTU_HeartBeat);
+	retval += readFromDb(ID_MPNC_Baudrate, &MPNC_Baudrate);
+	retval += readFromDb(ID_MPNC_NodeID, &MPNC_NodeID);
+	retval += readFromDb(ID_MPNC_HeartBeat, &MPNC_HeartBeat);
 	retval += readFromDb(ID_MPNC_DigOut_A_1, &MPNC_DigOut_A_1);
 	retval += readFromDb(ID_MPNC_DigOut_A_2, &MPNC_DigOut_A_2);
 	retval += readFromDb(ID_MPNC_DigOut_A_3, &MPNC_DigOut_A_3);
@@ -26741,6 +27493,22 @@ update_all(void)
 	retval += readFromDb(ID_MPNC_DigOut_A_14, &MPNC_DigOut_A_14);
 	retval += readFromDb(ID_MPNC_DigOut_A_15, &MPNC_DigOut_A_15);
 	retval += readFromDb(ID_MPNC_DigOut_A_16, &MPNC_DigOut_A_16);
+	retval += readFromDb(ID_MPNC_DigOut_B_1, &MPNC_DigOut_B_1);
+	retval += readFromDb(ID_MPNC_DigOut_B_2, &MPNC_DigOut_B_2);
+	retval += readFromDb(ID_MPNC_DigOut_B_3, &MPNC_DigOut_B_3);
+	retval += readFromDb(ID_MPNC_DigOut_B_4, &MPNC_DigOut_B_4);
+	retval += readFromDb(ID_MPNC_DigOut_B_5, &MPNC_DigOut_B_5);
+	retval += readFromDb(ID_MPNC_DigOut_B_6, &MPNC_DigOut_B_6);
+	retval += readFromDb(ID_MPNC_DigOut_B_7, &MPNC_DigOut_B_7);
+	retval += readFromDb(ID_MPNC_DigOut_B_8, &MPNC_DigOut_B_8);
+	retval += readFromDb(ID_MPNC_DigOut_B_9, &MPNC_DigOut_B_9);
+	retval += readFromDb(ID_MPNC_DigOut_B_10, &MPNC_DigOut_B_10);
+	retval += readFromDb(ID_MPNC_DigOut_B_11, &MPNC_DigOut_B_11);
+	retval += readFromDb(ID_MPNC_DigOut_B_12, &MPNC_DigOut_B_12);
+	retval += readFromDb(ID_MPNC_DigOut_B_13, &MPNC_DigOut_B_13);
+	retval += readFromDb(ID_MPNC_DigOut_B_14, &MPNC_DigOut_B_14);
+	retval += readFromDb(ID_MPNC_DigOut_B_15, &MPNC_DigOut_B_15);
+	retval += readFromDb(ID_MPNC_DigOut_B_16, &MPNC_DigOut_B_16);
 	retval += readFromDb(ID_MPNC_DigIn_A_1, &MPNC_DigIn_A_1);
 	retval += readFromDb(ID_MPNC_DigIn_A_2, &MPNC_DigIn_A_2);
 	retval += readFromDb(ID_MPNC_DigIn_A_3, &MPNC_DigIn_A_3);
@@ -26757,6 +27525,12 @@ update_all(void)
 	retval += readFromDb(ID_MPNC_DigIn_A_14, &MPNC_DigIn_A_14);
 	retval += readFromDb(ID_MPNC_DigIn_A_15, &MPNC_DigIn_A_15);
 	retval += readFromDb(ID_MPNC_DigIn_A_16, &MPNC_DigIn_A_16);
+	retval += readFromDb(ID_MPNC_Reserved_1, &MPNC_Reserved_1);
+	retval += readFromDb(ID_MPNC_Reserved_2, &MPNC_Reserved_2);
+	retval += readFromDb(ID_MPNC_ColdJunctionT, &MPNC_ColdJunctionT);
+	retval += readFromDb(ID_MPNC_Reserved_3, &MPNC_Reserved_3);
+	retval += readFromDb(ID_MPNC_Reserved_4, &MPNC_Reserved_4);
+	retval += readFromDb(ID_MPNC_Reboot, &MPNC_Reboot);
 	retval += readFromDb(ID_MPNC_ModulesNumber, &MPNC_ModulesNumber);
 	retval += readFromDb(ID_MPNC_AnInConf_1, &MPNC_AnInConf_1);
 	retval += readFromDb(ID_MPNC_AnInConf_2, &MPNC_AnInConf_2);
@@ -26786,6 +27560,12 @@ update_all(void)
 	retval += readFromDb(ID_MPNC_DigOut_6, &MPNC_DigOut_6);
 	retval += readFromDb(ID_MPNC_DigOut_7, &MPNC_DigOut_7);
 	retval += readFromDb(ID_MPNC_DigOut_8, &MPNC_DigOut_8);
+	retval += readFromDb(ID_MPNC_AnInFltr_1, &MPNC_AnInFltr_1);
+	retval += readFromDb(ID_MPNC_AnInFltr_2, &MPNC_AnInFltr_2);
+	retval += readFromDb(ID_MPNC_WatchDog, &MPNC_WatchDog);
+	retval += readFromDb(ID_MPNC_Reserved_6, &MPNC_Reserved_6);
+	retval += readFromDb(ID_MPNC_FirmwareVer, &MPNC_FirmwareVer);
+	retval += readFromDb(ID_MPNC_StatusWord, &MPNC_StatusWord);
 	retval += readFromDb(ID_TST_DigIn_1, &TST_DigIn_1);
 	retval += readFromDb(ID_TST_DigIn_2, &TST_DigIn_2);
 	retval += readFromDb(ID_TST_DigIn_3, &TST_DigIn_3);

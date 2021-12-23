@@ -74,7 +74,7 @@ static void doReload();
 extern int checkRecipe(int step, QList<u_int16_t> *indexes, QList<u_int32_t> table[]);
 
 static u_int16_t previous_PLC_Heartbeat;
-static u_int16_t previous_RTU_Heartbeat;
+static u_int16_t previous_MPNC_HeartBeat;
 static float previous_PLC_time;
 static float last_PLC_time;
 static page300 *thePage = NULL;
@@ -91,7 +91,7 @@ void setup(void)
     previous_PLC_time = PLC_time;
     last_PLC_time = PLC_time;
     previous_PLC_Heartbeat = PLC_Heartbeat;
-    previous_RTU_Heartbeat = RTU_HeartBeat;
+    previous_MPNC_HeartBeat = MPNC_HeartBeat;
 
     beginWrite();
     {
@@ -138,7 +138,7 @@ void loop(void)
         previous_PLC_Heartbeat = PLC_Heartbeat;
         last_PLC_time = PLC_time;
         previous_PLC_time = PLC_time;
-        previous_RTU_Heartbeat = RTU_HeartBeat;
+        previous_MPNC_HeartBeat = MPNC_HeartBeat;
         return;
     }
 
@@ -156,11 +156,11 @@ void loop(void)
 
     // MPNC RTU0 communication test @ 1s
     if ((PLC_time - last_PLC_time) > 1.5) {
-        if (previous_RTU_Heartbeat == RTU_HeartBeat) {
+        if (previous_MPNC_HeartBeat == MPNC_HeartBeat) {
             thePage->messageBox(RESULT_UNKNOWN, "RTU0 hangup :(\nWhat happened to MPNC?");
         }
         last_PLC_time = PLC_time;
-        previous_RTU_Heartbeat = RTU_HeartBeat;
+        previous_MPNC_HeartBeat = MPNC_HeartBeat;
     }
 
     switch (STATUS) {   // OCTOPUS STATE MACHINE

@@ -1326,13 +1326,13 @@ ON</string>
     <string notr="true">color: rgb(0, 85, 0);</string>
    </property>
    <property name="toolTip">
-    <string>RTU_HeartBeat</string>
+    <string>MPNC_HeartBeat</string>
    </property>
    <property name="whatsThis">
     <string>ATCMlabel widget</string>
    </property>
    <property name="variable">
-    <string>RTU_HeartBeat</string>
+    <string>MPNC_HeartBeat</string>
    </property>
    <property name="prefix">
     <string>RTU0 </string>

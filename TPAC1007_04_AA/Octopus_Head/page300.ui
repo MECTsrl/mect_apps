@@ -175,6 +175,9 @@ ON</string>
    </property>
   </widget>
   <widget class="ATCMcombobox" name="atcmComboBox_Prey">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
    <property name="geometry">
     <rect>
      <x>120</x>
@@ -425,7 +428,7 @@ ON</string>
     <enum>Qt::Vertical</enum>
    </property>
   </widget>
-  <widget class="ATCMbutton" name="atcmButton_16">
+  <widget class="ATCMbutton" name="atcmButton_page201">
    <property name="geometry">
     <rect>
      <x>240</x>
@@ -472,10 +475,13 @@ ON</string>
     <string/>
    </property>
    <property name="borderWidth">
-    <number>0</number>
+    <number>2</number>
    </property>
    <property name="borderRadius">
-    <number>0</number>
+    <number>24</number>
+   </property>
+   <property name="apparence">
+    <enum>QFrame::Plain</enum>
    </property>
   </widget>
   <widget class="ATCMled" name="atcmLed_PWR_ON">
@@ -605,6 +611,9 @@ ON</string>
    </property>
   </widget>
   <widget class="ATCMlabel" name="atcmLabel_PLC_Heartbeat_2">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
    <property name="geometry">
     <rect>
      <x>240</x>
@@ -628,13 +637,13 @@ ON</string>
     <string notr="true">color: rgb(0, 85, 0);</string>
    </property>
    <property name="toolTip">
-    <string>RTU_HeartBeat</string>
+    <string>MPNC_HeartBeat</string>
    </property>
    <property name="whatsThis">
     <string>ATCMlabel widget</string>
    </property>
    <property name="variable">
-    <string>RTU_HeartBeat</string>
+    <string>MPNC_HeartBeat</string>
    </property>
    <property name="prefix">
     <string>RTU0 </string>
@@ -902,10 +911,10 @@ ON</string>
     </color>
    </property>
    <property name="borderWidth">
-    <number>1</number>
+    <number>2</number>
    </property>
    <property name="borderRadius">
-    <number>0</number>
+    <number>12</number>
    </property>
    <property name="apparence">
     <enum>QFrame::Raised</enum>
@@ -1073,13 +1082,13 @@ ON</string>
     <enum>QFrame::Raised</enum>
    </property>
   </widget>
-  <widget class="ATCMbutton" name="atcmButton_GotoPage">
+  <widget class="ATCMbutton" name="atcmButton_page400">
    <property name="geometry">
     <rect>
      <x>240</x>
-     <y>141</y>
+     <y>138</y>
      <width>241</width>
-     <height>131</height>
+     <height>135</height>
     </rect>
    </property>
    <property name="font">
@@ -1127,13 +1136,16 @@ ON</string>
     <string/>
    </property>
    <property name="borderWidth">
-    <number>0</number>
+    <number>2</number>
    </property>
    <property name="borderRadius">
-    <number>0</number>
+    <number>24</number>
    </property>
   </widget>
   <widget class="ATCMlabel" name="atcmLabel_PLC_Heartbeat">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
    <property name="geometry">
     <rect>
      <x>240</x>
@@ -1390,6 +1402,9 @@ ON</string>
    </property>
   </widget>
   <widget class="ATCMlabel" name="atcmLabel_SERIAL_NUMBER">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
    <property name="geometry">
     <rect>
      <x>360</x>
@@ -1579,6 +1594,9 @@ ON</string>
    </property>
   </widget>
   <widget class="ATCMcombobox" name="atcmComboBox_Horn">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
    <property name="geometry">
     <rect>
      <x>180</x>
@@ -1691,9 +1709,12 @@ ON</string>
    </property>
   </widget>
   <widget class="ATCMlabel" name="atcmLabel_2">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
    <property name="geometry">
     <rect>
-     <x>240</x>
+     <x>250</x>
      <y>240</y>
      <width>101</width>
      <height>31</height>
@@ -1740,9 +1761,12 @@ ON</string>
    </property>
   </widget>
   <widget class="ATCMlabel" name="atcmLabel_3">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
    <property name="geometry">
     <rect>
-     <x>380</x>
+     <x>370</x>
      <y>240</y>
      <width>101</width>
      <height>31</height>
@@ -1874,13 +1898,12 @@ then touch me</string>
   <zorder>atcmAnimation_RESULT</zorder>
   <zorder>label_Qt_Project</zorder>
   <zorder>atcmAnimation_STATUS</zorder>
-  <zorder>atcmButton_16</zorder>
   <zorder>atcmLabel_PLC_Heartbeat_2</zorder>
   <zorder>atcmLabel</zorder>
   <zorder>atcmLabel_TEST_STEP</zorder>
   <zorder>atcmComboBox_PRODUCT_ID</zorder>
   <zorder>label_versions</zorder>
-  <zorder>atcmButton_GotoPage</zorder>
+  <zorder>atcmButton_page400</zorder>
   <zorder>atcmLabel_PLC_Heartbeat</zorder>
   <zorder>atcmLabel_RESULTS_OK</zorder>
   <zorder>atcmLabel_TEST_STEP_MAX</zorder>
@@ -1906,6 +1929,7 @@ then touch me</string>
   <zorder>atcmLed_DO_RELOAD</zorder>
   <zorder>atcmLabel_2</zorder>
   <zorder>atcmLabel_3</zorder>
+  <zorder>atcmButton_page201</zorder>
   <zorder>atcmButton_message</zorder>
  </widget>
  <customwidgets>
@@ -1940,7 +1964,7 @@ then touch me</string>
  </resources>
  <connections>
   <connection>
-   <sender>atcmButton_16</sender>
+   <sender>atcmButton_page201</sender>
    <signal>newPage(const char*,bool)</signal>
    <receiver>page300</receiver>
    <slot>goto_page(const char*,bool)</slot>
@@ -1956,7 +1980,7 @@ then touch me</string>
    </hints>
   </connection>
   <connection>
-   <sender>atcmButton_GotoPage</sender>
+   <sender>atcmButton_page400</sender>
    <signal>newPage(const char*,bool)</signal>
    <receiver>page300</receiver>
    <slot>goto_page(const char*,bool)</slot>
