@@ -2145,7 +2145,7 @@ background-color: rgb(170, 255, 127);
     <string notr="true">background-color: rgb(170, 255, 127);</string>
    </property>
    <property name="text">
-    <string>TZ+DST = N h</string>
+    <string>TZ=Nh DST=off</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>
