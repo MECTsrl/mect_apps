@@ -43,19 +43,23 @@ END_VAR
 	TSTx_DigOut_16:= TST_DigOut_16;
     (* no TST2_DigOut_* *)
 
-	(* Prey AnIn_1 <-- Head AnOut_1 + DigOut_5,8 + MPNC DigOut_3,4 *) 
+	(* Prey AnIn_1 <-- Head AnOut_1 + DigOut_5,8 + MPNC_DigOut_3,4 *) 
+	(*    (Pt100)  <-- resistenze   + MPNC_DigOut_B_1,2,3,4        *) 
 	TSTx_AnIn_1 := TST_AnIn_1;
 
-    (* Prey AnIn_2 <-- Head AnOut_2 + DigOut_6,7 + MPNC DigOut_1,2 *) 
+    (* Prey AnIn_2 <-- Head AnOut_2 + DigOut_6,7 + MPNC_DigOut_1,2 *) 
+	(*    (Pt100)  <-- resistenze   + MPNC_DigOut_B_5,6,7,8        *) 
 	TSTx_AnIn_2 := TST_AnIn_2;
 
-    (* Prey AnIn_3 <-- Horn2 AnOut_1 + DigOut_5,8 + MPNC DigOut_7,8  *) 
+    (* Prey AnIn_3 <-- Horn2 AnOut_1 + DigOut_5,8 + MPNC_DigOut_7,8  *) 
+	(*    (Pt100)  <-- resistenze   + MPNC_DigOut_B_9,10,11,12     *) 
 	TSTx_AnIn_3 := TST_AnIn_3;
     TST2_AnOut_1 := TST_AnIn_3;
     TST2_DigOut_5 := TRUE;
     TST2_DigOut_8 := TRUE;
 
-	(* Prey AnIn_4 <-- Horn2 AnOut_2 + DigOut_6,7 + MPNC DigOut_5,6  *) 
+	(* Prey AnIn_4 <-- Horn2 AnOut_2 + DigOut_6,7 + MPNC_DigOut_5,6  *) 
+	(*    (Pt100)  <-- resistenze   + MPNC_DigOut_B_13,14,15,16    *) 
 	TSTx_AnIn_4 := TST_AnIn_4;
     TST2_AnOut_2 := TST_AnIn_4;
     TST2_DigOut_6 := TRUE;

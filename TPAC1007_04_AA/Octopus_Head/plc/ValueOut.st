@@ -21,14 +21,14 @@ END_VAR
 		ValueOut := 0;
 	5: (* TCT *)
 		ValueOut := 0;
-	6: (* PT100E *)
-		if valueIn = 100 then ValueOut := 319; (* 100°C --> 3,19 mA *)
-		else ValueOut := 0;
-		end_if;
-	7: (* PT100R *)
-		if valueIn = 100 then ValueOut := 319; (* 100°C --> 3,19 mA *)
-		else ValueOut := 0;
-		end_if;
+(*	6:   PT100E                                                     *)
+(*		if valueIn = 100 then ValueOut := 319;    100°C --> 3,19 mA *)
+(*		else ValueOut := 0;                                         *)
+(*		end_if;                                                     *) 
+(*	7:   PT100R                                                     *)
+(*		if valueIn = 100 then ValueOut := 319;    100°C --> 3,19 mA *)
+(*		else ValueOut := 0;                                         *)
+(*		end_if;                                                     *)
 	8: (* TCS *)
 		ValueOut := 0;
 	9: (* TCB *)

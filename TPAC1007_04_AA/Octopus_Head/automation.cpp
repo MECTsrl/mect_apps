@@ -86,7 +86,7 @@ void setup(void)
         fputc('*', stderr);
         sleep(1);
     }
-    doWrite_PLC_HMI_Version(3391);
+    doWrite_PLC_HMI_Version(3392);
 
     previous_PLC_time = PLC_time;
     last_PLC_time = PLC_time;
