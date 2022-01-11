@@ -45,18 +45,18 @@ END_VAR
 		if VAL_AnInConf_1 <> 6 and VAL_AnInConf_1 <> 7 then
 			(* Prey AnIn_1 <-- Head AnOut_1 + DigOut_5,8 + MPNC_DigOut_3,4 *) 
 			case VAL_AnInConf_1 of
-			1:       PLC_DigOut_8 := 1; PLC_DigOut_6 := 0; MPNC_DigOut_3 := 0; MPNC_DigOut_4 := 0; PLC_AnOutConf_1 := 1;
-			2:       PLC_DigOut_8 := 0; PLC_DigOut_6 := 0; MPNC_DigOut_3 := 0; MPNC_DigOut_4 := 0; PLC_AnOutConf_1 := 2;
+			1:       PLC_DigOut_8 := 1; PLC_DigOut_5 := 0; MPNC_DigOut_3 := 0; MPNC_DigOut_4 := 0; PLC_AnOutConf_1 := 1;
+			2:       PLC_DigOut_8 := 0; PLC_DigOut_5 := 0; MPNC_DigOut_3 := 0; MPNC_DigOut_4 := 0; PLC_AnOutConf_1 := 2;
 			3, 4, 5,
-			8, 9,10: PLC_DigOut_8 := 0; PLC_DigOut_6 := 1; MPNC_DigOut_3 := 1; MPNC_DigOut_4 := 0; PLC_AnOutConf_1 := 1;
-		(*	6, 7:    PLC_DigOut_8 := 0; PLC_DigOut_6 := 1; MPNC_DigOut_3 := 0; MPNC_DigOut_4 := 1; PLC_AnOutConf_1 := 1; *)
-			else     PLC_DigOut_8 := 0; PLC_DigOut_6 := 0; MPNC_DigOut_3 := 0; MPNC_DigOut_4 := 0; PLC_AnOutConf_1 := 2;
+			8, 9,10: PLC_DigOut_8 := 0; PLC_DigOut_5 := 1; MPNC_DigOut_3 := 1; MPNC_DigOut_4 := 0; PLC_AnOutConf_1 := 1;
+		(*	6, 7:    PLC_DigOut_8 := 0; PLC_DigOut_5 := 1; MPNC_DigOut_3 := 0; MPNC_DigOut_4 := 1; PLC_AnOutConf_1 := 1; *)
+			else     PLC_DigOut_8 := 0; PLC_DigOut_5 := 0; MPNC_DigOut_3 := 0; MPNC_DigOut_4 := 0; PLC_AnOutConf_1 := 2;
 			end_case;
 			PLC_AnOut_1 := ValueOut(Val_AnIn_1, VAL_AnInConf_1);
 			MPNC_DigOut_B_1 := false; MPNC_DigOut_B_2 := false; MPNC_DigOut_B_3 := false; MPNC_DigOut_B_4 := false;
 		else 
 			(*    (Pt100)  <-- resistenze   + MPNC_DigOut_B_1,2,3,4        *) 
-			PLC_DigOut_8 := 0; PLC_DigOut_6 := 0; MPNC_DigOut_3 := 0; MPNC_DigOut_4 := 0; PLC_AnOutConf_1 := 0;
+			PLC_DigOut_8 := 0; PLC_DigOut_5 := 0; MPNC_DigOut_3 := 1; MPNC_DigOut_4 := 1; PLC_AnOutConf_1 := 2; PLC_AnOut_1 := 0;
 			if VAL_AnInConf_1 = 7 and Val_AnIn_1 = 0 then
 				MPNC_DigOut_B_1 := true;  MPNC_DigOut_B_2 := false; MPNC_DigOut_B_3 := false; MPNC_DigOut_B_4 := true;
 			elsif VAL_AnInConf_1 = 7 and Val_AnIn_1 = 1040 then
@@ -75,18 +75,18 @@ END_VAR
 		if VAL_AnInConf_2 <> 6 and VAL_AnInConf_2 <> 7 then
 			(* Prey AnIn_2 <-- Head AnOut_2 + DigOut_6,7 + MPNC_DigOut_1,2 *) 
 			case VAL_AnInConf_2 of
-			1:       PLC_DigOut_7 := 1; PLC_DigOut_5 := 0; MPNC_DigOut_1 := 0; MPNC_DigOut_2 := 0; PLC_AnOutConf_2 := 1;
-			2:       PLC_DigOut_7 := 0; PLC_DigOut_5 := 0; MPNC_DigOut_1 := 0; MPNC_DigOut_2 := 0; PLC_AnOutConf_2 := 2;
+			1:       PLC_DigOut_7 := 1; PLC_DigOut_6 := 0; MPNC_DigOut_1 := 0; MPNC_DigOut_2 := 0; PLC_AnOutConf_2 := 1;
+			2:       PLC_DigOut_7 := 0; PLC_DigOut_6 := 0; MPNC_DigOut_1 := 0; MPNC_DigOut_2 := 0; PLC_AnOutConf_2 := 2;
 			3, 4, 5,
-			8, 9,10: PLC_DigOut_7 := 0; PLC_DigOut_5 := 1; MPNC_DigOut_1 := 1; MPNC_DigOut_2 := 0; PLC_AnOutConf_2 := 1;
-		(*	6, 7:    PLC_DigOut_7 := 0; PLC_DigOut_5 := 1; MPNC_DigOut_1 := 0; MPNC_DigOut_2 := 1; PLC_AnOutConf_2 := 1; *)
-			else     PLC_DigOut_7 := 0; PLC_DigOut_5 := 0; MPNC_DigOut_1 := 0; MPNC_DigOut_2 := 0; PLC_AnOutConf_2 := 2;
+			8, 9,10: PLC_DigOut_7 := 0; PLC_DigOut_6 := 1; MPNC_DigOut_1 := 1; MPNC_DigOut_2 := 0; PLC_AnOutConf_2 := 1;
+		(*	6, 7:    PLC_DigOut_7 := 0; PLC_DigOut_6 := 1; MPNC_DigOut_1 := 0; MPNC_DigOut_2 := 1; PLC_AnOutConf_2 := 1; *)
+			else     PLC_DigOut_7 := 0; PLC_DigOut_6 := 0; MPNC_DigOut_1 := 0; MPNC_DigOut_2 := 0; PLC_AnOutConf_2 := 2;
 			end_case;
 			PLC_AnOut_2 := ValueOut(Val_AnIn_2, VAL_AnInConf_2);
 			MPNC_DigOut_B_5 := false; MPNC_DigOut_B_6 := false; MPNC_DigOut_B_7 := false; MPNC_DigOut_B_8 := false;
 		else
 			(*    (Pt100)  <-- resistenze   + MPNC_DigOut_B_5,6,7,8        *) 
-			PLC_DigOut_7 := 0; PLC_DigOut_5 := 0; MPNC_DigOut_1 := 0; MPNC_DigOut_2 := 0; PLC_AnOutConf_2 := 0;
+			PLC_DigOut_7 := 0; PLC_DigOut_6 := 0; MPNC_DigOut_1 := 1; MPNC_DigOut_2 := 1; PLC_AnOutConf_2 := 2; PLC_AnOut_2 := 0;
 			if VAL_AnInConf_2 = 7 and Val_AnIn_2 = 0 then
 				MPNC_DigOut_B_5 := true;  MPNC_DigOut_B_6 := false; MPNC_DigOut_B_7 := false; MPNC_DigOut_B_8 := true;
 			elsif VAL_AnInConf_2 = 7 and Val_AnIn_2 = 1040 then
@@ -116,8 +116,7 @@ END_VAR
 			MPNC_DigOut_B_9 := false; MPNC_DigOut_B_10 := false; MPNC_DigOut_B_11 := false; MPNC_DigOut_B_12 := false;
 		else
 			(*    (Pt100)  <-- resistenze   + MPNC_DigOut_B_9,10,11,12     *) 
-			VAL2_DigOut_8 := 0; VAL2_DigOut_5 := 0; MPNC_DigOut_7 := 0; MPNC_DigOut_8 := 0; VAL2_AnOutConf_1 := 0;
-			PLC_DigOut_7 := 0; PLC_DigOut_5 := 0; MPNC_DigOut_1 := 0; MPNC_DigOut_2 := 0; PLC_AnOutConf_2 := 0;
+			VAL2_DigOut_8 := 0; VAL2_DigOut_5 := 0; MPNC_DigOut_7 := 1; MPNC_DigOut_8 := 1; VAL2_AnOutConf_1 := 2; VAL2_AnOut_1 := 0;
 			if VAL_AnInConf_3 = 7 and Val_AnIn_3 = 0 then
 				MPNC_DigOut_B_9 := true;  MPNC_DigOut_B_10 := false; MPNC_DigOut_B_11 := false; MPNC_DigOut_B_12 := true;
 			elsif VAL_AnInConf_3 = 7 and Val_AnIn_3 = 1040 then
@@ -147,7 +146,7 @@ END_VAR
 			MPNC_DigOut_B_13 := false; MPNC_DigOut_B_14 := false; MPNC_DigOut_B_15 := false; MPNC_DigOut_B_16 := false;
 		else
 			(*    (Pt100)  <-- resistenze   + MPNC_DigOut_B_13,14,15,16    *) 
-			VAL2_DigOut_7 := 0; VAL2_DigOut_6 := 0; MPNC_DigOut_5 := 0; MPNC_DigOut_6 := 0; VAL2_AnOutConf_2 := 0;
+			VAL2_DigOut_7 := 0; VAL2_DigOut_6 := 0; MPNC_DigOut_5 := 1; MPNC_DigOut_6 := 1; VAL2_AnOutConf_2 := 2; VAL2_AnOut_2 := 0;
 			if VAL_AnInConf_4 = 7 and Val_AnIn_4 = 0 then
 				MPNC_DigOut_B_13 := true;  MPNC_DigOut_B_14 := false; MPNC_DigOut_B_15 := false; MPNC_DigOut_B_16 := true;
 			elsif VAL_AnInConf_4 = 7 and Val_AnIn_4 = 1040 then
