@@ -17,4 +17,8 @@ CONST
 	RESULT_NG : INT := 0;
 	RESULT_OK : INT := 1;
 
+	PT100R_A: INT := 5;		(* 0.5 [C] *)
+	PT100R_B: INT := 1045;	(* 104.5 [C] *)
+	PT100E_C: INT := 411;	(* 411 [C] *)
+
 END_CONST
