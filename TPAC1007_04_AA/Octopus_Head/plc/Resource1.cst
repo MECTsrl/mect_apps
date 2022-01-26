@@ -19,6 +19,6 @@ CONST
 
 	PT100R_A: INT := 0;		(* 0.0 [C] *)
 	PT100R_B: INT := 1040;	(* 104.0 [C] *)
-	PT100E_C: INT := 411;	(* 411 [C] *)
+	PT100E_C: INT := 409;	(* 409 [C] *)
 
 END_CONST
