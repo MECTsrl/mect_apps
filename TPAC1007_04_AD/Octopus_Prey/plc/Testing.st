@@ -39,7 +39,7 @@ END_VAR
 				if ((TST_AnIn_1 and (VAL_AnInConf_1 > 5))
 					or (TST_AnIn_2 and (VAL_AnInConf_2 > 5))
 					or (TST_AnIn_3 and (VAL_AnInConf_3 > 5))) then
-			        timer(IN := TRUE, PT := T#8000ms);
+			        timer(IN := TRUE, PT := T#9000ms);
 				elsif ((TST_AnIn_1 and (VAL_AnInConf_1 > 2))
 					or (TST_AnIn_2 and (VAL_AnInConf_2 > 2))
 					or (TST_AnIn_3 and (VAL_AnInConf_3 > 2))) then
