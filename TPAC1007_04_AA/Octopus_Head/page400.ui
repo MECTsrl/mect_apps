@@ -1803,7 +1803,7 @@ ON</string>
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>7</pointsize>
+     <pointsize>12</pointsize>
     </font>
    </property>
    <property name="text">
@@ -2483,7 +2483,7 @@ ON</string>
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>7</pointsize>
+     <pointsize>12</pointsize>
      <weight>75</weight>
      <bold>true</bold>
     </font>
