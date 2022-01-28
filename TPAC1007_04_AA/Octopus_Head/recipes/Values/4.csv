@@ -80,10 +80,10 @@ VAL_AnOut_2      ; 0.00; 0.00; 0.00; 0.00
 VAL_AnOut_3      ; 0.00; 0.00; 0.00; 0.00
 VAL_AnOut_4      ; 0.00; 0.00; 0.00; 0.00
 
-VAL_AnOutConf_1  ; 2   ; 0   ; 0   ; 0
-VAL_AnOutConf_2  ; 2   ; 0   ; 0   ; 0
-VAL_AnOutConf_3  ; 2   ; 0   ; 0   ; 0
-VAL_AnOutConf_4  ; 2   ; 0   ; 0   ; 0
+VAL_AnOutConf_1  ; 2   ; 2   ; 2   ; 2
+VAL_AnOutConf_2  ; 2   ; 2   ; 2   ; 2
+VAL_AnOutConf_3  ; 2   ; 2   ; 2   ; 2
+VAL_AnOutConf_4  ; 2   ; 2   ; 2   ; 2
 
 VAL_Tamb         ;30.0 ;30.0 ;30.0 ;30.0
 VAL_RPM          ; 0.0 ; 0.0 ; 0.0 ; 0.0
