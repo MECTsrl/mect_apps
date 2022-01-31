@@ -708,9 +708,9 @@ color: rgb(0, 0, 0);</string>
   <widget class="ATCMcombobox" name="atcmComboBox_PLC_AnInConf_1">
    <property name="geometry">
     <rect>
-     <x>160</x>
+     <x>149</x>
      <y>69</y>
-     <width>80</width>
+     <width>91</width>
      <height>34</height>
     </rect>
    </property>
@@ -798,9 +798,9 @@ color: rgb(0, 0, 0);</string>
   <widget class="ATCMcombobox" name="atcmComboBox_PLC_AnInConf_2">
    <property name="geometry">
     <rect>
-     <x>160</x>
+     <x>149</x>
      <y>103</y>
-     <width>80</width>
+     <width>91</width>
      <height>34</height>
     </rect>
    </property>
@@ -1335,7 +1335,7 @@ color: rgb(0, 0, 0);</string>
     <rect>
      <x>0</x>
      <y>171</y>
-     <width>80</width>
+     <width>71</width>
      <height>34</height>
     </rect>
    </property>
@@ -2421,7 +2421,7 @@ color: rgb(0, 0, 0);</string>
     <rect>
      <x>0</x>
      <y>69</y>
-     <width>80</width>
+     <width>71</width>
      <height>34</height>
     </rect>
    </property>
@@ -2742,7 +2742,7 @@ color: rgb(0, 0, 0);</string>
     <rect>
      <x>0</x>
      <y>137</y>
-     <width>80</width>
+     <width>81</width>
      <height>34</height>
     </rect>
    </property>
@@ -2796,7 +2796,7 @@ color: rgb(0, 0, 0);</string>
     <rect>
      <x>0</x>
      <y>103</y>
-     <width>80</width>
+     <width>71</width>
      <height>34</height>
     </rect>
    </property>
@@ -3842,7 +3842,7 @@ color: rgb(0, 0, 0);</string>
    </property>
    <property name="geometry">
     <rect>
-     <x>80</x>
+     <x>70</x>
      <y>103</y>
      <width>80</width>
      <height>34</height>
@@ -4113,7 +4113,7 @@ color: rgb(0, 0, 0);</string>
    </property>
    <property name="geometry">
     <rect>
-     <x>80</x>
+     <x>70</x>
      <y>69</y>
      <width>80</width>
      <height>34</height>
