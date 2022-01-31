@@ -440,7 +440,7 @@ background-color: rgb(255, 255, 127);
     <rect>
      <x>1</x>
      <y>103</y>
-     <width>80</width>
+     <width>71</width>
      <height>34</height>
     </rect>
    </property>
@@ -848,9 +848,9 @@ background-color: rgb(255, 255, 127);
    </property>
    <property name="geometry">
     <rect>
-     <x>81</x>
+     <x>71</x>
      <y>103</y>
-     <width>80</width>
+     <width>71</width>
      <height>34</height>
     </rect>
    </property>
@@ -1273,9 +1273,9 @@ background-color: rgb(255, 255, 127);
   <widget class="ATCMcombobox" name="atcmComboBox_PLC_AnInConf_1">
    <property name="geometry">
     <rect>
-     <x>161</x>
+     <x>140</x>
      <y>69</y>
-     <width>80</width>
+     <width>101</width>
      <height>34</height>
     </rect>
    </property>
@@ -1560,9 +1560,9 @@ background-color: rgb(255, 255, 127);
   <widget class="ATCMcombobox" name="atcmComboBox_PLC_AnInConf_2">
    <property name="geometry">
     <rect>
-     <x>161</x>
+     <x>140</x>
      <y>103</y>
-     <width>80</width>
+     <width>101</width>
      <height>34</height>
     </rect>
    </property>
@@ -1666,9 +1666,9 @@ background-color: rgb(255, 255, 127);
    </property>
    <property name="geometry">
     <rect>
-     <x>81</x>
+     <x>71</x>
      <y>69</y>
-     <width>80</width>
+     <width>71</width>
      <height>34</height>
     </rect>
    </property>
@@ -1927,7 +1927,7 @@ background-color: rgb(255, 255, 127);
     <rect>
      <x>1</x>
      <y>69</y>
-     <width>80</width>
+     <width>71</width>
      <height>34</height>
     </rect>
    </property>

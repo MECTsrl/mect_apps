@@ -242,7 +242,7 @@ background-color: rgb(255, 255, 127);
     <rect>
      <x>1</x>
      <y>73</y>
-     <width>80</width>
+     <width>71</width>
      <height>40</height>
     </rect>
    </property>
@@ -406,9 +406,9 @@ background-color: rgb(255, 255, 127);
    </property>
    <property name="geometry">
     <rect>
-     <x>81</x>
+     <x>70</x>
      <y>73</y>
-     <width>80</width>
+     <width>71</width>
      <height>40</height>
     </rect>
    </property>
@@ -662,7 +662,7 @@ background-color: rgb(255, 255, 127);
     <rect>
      <x>1</x>
      <y>113</y>
-     <width>80</width>
+     <width>61</width>
      <height>40</height>
     </rect>
    </property>
@@ -1830,9 +1830,9 @@ color: rgb(0, 0, 0);</string>
   <widget class="ATCMcombobox" name="atcmComboBox_PLC_AnInConf_1">
    <property name="geometry">
     <rect>
-     <x>161</x>
+     <x>140</x>
      <y>72</y>
-     <width>80</width>
+     <width>101</width>
      <height>40</height>
     </rect>
    </property>
@@ -2137,7 +2137,7 @@ color: rgb(0, 0, 0);</string>
    </property>
    <property name="geometry">
     <rect>
-     <x>81</x>
+     <x>60</x>
      <y>113</y>
      <width>80</width>
      <height>40</height>
@@ -2786,9 +2786,9 @@ color: rgb(0, 0, 0);</string>
   <widget class="ATCMcombobox" name="atcmComboBox_PLC_AnInConf_2">
    <property name="geometry">
     <rect>
-     <x>161</x>
+     <x>140</x>
      <y>113</y>
-     <width>80</width>
+     <width>101</width>
      <height>40</height>
     </rect>
    </property>
@@ -3828,6 +3828,7 @@ color: rgb(0, 0, 0);</string>
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
+  <zorder>atcmLabel_PLC_AnIn_2</zorder>
   <zorder>atcmLabel_PLC_StatusReg</zorder>
   <zorder>atcmLed_PLC_DigIn_9</zorder>
   <zorder>label_PLC_DigIn_1</zorder>
@@ -3835,7 +3836,6 @@ color: rgb(0, 0, 0);</string>
   <zorder>atcmTime</zorder>
   <zorder>atcmLabel_PLC_AnIn1Filter</zorder>
   <zorder>label_PLC_Capture</zorder>
-  <zorder>atcmLabel_PLC_AnIn_1</zorder>
   <zorder>label_PLC_DigIn_2</zorder>
   <zorder>label_PLC_AnIn_2</zorder>
   <zorder>atcmLed_PLC_DigIn_6</zorder>
@@ -3858,7 +3858,6 @@ color: rgb(0, 0, 0);</string>
   <zorder>label_PLC_DigIn_11</zorder>
   <zorder>label_PLC_DigIn_4</zorder>
   <zorder>atcmLed_PLC_DigIn_8</zorder>
-  <zorder>atcmLabel_PLC_AnIn_2</zorder>
   <zorder>atcmLed_PLC_DigIn_11</zorder>
   <zorder>atcmLed_PLC_DigIn_7</zorder>
   <zorder>atcmLed_PLC_DigIn_2</zorder>
@@ -3905,6 +3904,7 @@ color: rgb(0, 0, 0);</string>
   <zorder>line_vt_4</zorder>
   <zorder>line_hr_1</zorder>
   <zorder>line_vt_1</zorder>
+  <zorder>atcmLabel_PLC_AnIn_1</zorder>
  </widget>
  <customwidgets>
   <customwidget>
