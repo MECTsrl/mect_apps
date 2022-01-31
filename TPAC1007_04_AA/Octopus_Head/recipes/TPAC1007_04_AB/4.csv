@@ -21,9 +21,9 @@ TST_DigOut_8    ; 1 ; 0 ; 0 ; 0
 TST_AnIn_1      ; 1 ; 1 ; 1 ; 1
 TST_AnIn_2      ; 1 ; 1 ; 1 ; 1
 
-TST_AnIn_3      ; 1 ; 1 ; 1 ; 1
-TST_AnIn_4      ; 1 ; 1 ; 1 ; 1
-TST_AnIn_5      ; 1 ; 1 ; 1 ; 1
+TST_AnIn_3      ; 1 ; 0 ; 0 ; 0
+TST_AnIn_4      ; 1 ; 0 ; 0 ; 0
+TST_AnIn_5      ; 1 ; 0 ; 0 ; 0
 
 TST_AnOut_1     ; 1 ; 0 ; 0 ; 0
 TST_AnOut_2     ; 1 ; 0 ; 0 ; 0
