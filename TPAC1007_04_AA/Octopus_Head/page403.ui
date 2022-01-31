@@ -2960,7 +2960,7 @@ ON</string>
      <property name="geometry">
       <rect>
        <x>0</x>
-       <y>-2</y>
+       <y>0</y>
        <width>45</width>
        <height>34</height>
       </rect>
@@ -2968,7 +2968,7 @@ ON</string>
      <property name="font">
       <font>
        <family>DejaVu Sans</family>
-       <pointsize>8</pointsize>
+       <pointsize>12</pointsize>
       </font>
      </property>
      <property name="styleSheet">
@@ -2993,7 +2993,7 @@ ON</string>
      <property name="font">
       <font>
        <family>DejaVu Sans</family>
-       <pointsize>8</pointsize>
+       <pointsize>12</pointsize>
       </font>
      </property>
      <property name="text">
@@ -3056,7 +3056,7 @@ ON</string>
      <property name="font">
       <font>
        <family>DejaVu Sans</family>
-       <pointsize>8</pointsize>
+       <pointsize>12</pointsize>
       </font>
      </property>
      <property name="text">
@@ -3119,7 +3119,7 @@ ON</string>
      <property name="font">
       <font>
        <family>DejaVu Sans</family>
-       <pointsize>8</pointsize>
+       <pointsize>12</pointsize>
       </font>
      </property>
      <property name="text">
@@ -3266,7 +3266,7 @@ ON</string>
      <property name="font">
       <font>
        <family>DejaVu Sans</family>
-       <pointsize>8</pointsize>
+       <pointsize>12</pointsize>
       </font>
      </property>
      <property name="text">
@@ -3329,7 +3329,7 @@ ON</string>
      <property name="font">
       <font>
        <family>DejaVu Sans</family>
-       <pointsize>8</pointsize>
+       <pointsize>12</pointsize>
       </font>
      </property>
      <property name="text">
@@ -3392,7 +3392,7 @@ ON</string>
      <property name="font">
       <font>
        <family>DejaVu Sans</family>
-       <pointsize>8</pointsize>
+       <pointsize>12</pointsize>
       </font>
      </property>
      <property name="text">
@@ -3497,7 +3497,7 @@ ON</string>
      <property name="font">
       <font>
        <family>DejaVu Sans</family>
-       <pointsize>8</pointsize>
+       <pointsize>12</pointsize>
       </font>
      </property>
      <property name="styleSheet">
@@ -3564,7 +3564,7 @@ ON</string>
      <property name="font">
       <font>
        <family>DejaVu Sans</family>
-       <pointsize>8</pointsize>
+       <pointsize>12</pointsize>
       </font>
      </property>
      <property name="text">
@@ -3627,7 +3627,7 @@ ON</string>
      <property name="font">
       <font>
        <family>DejaVu Sans</family>
-       <pointsize>8</pointsize>
+       <pointsize>12</pointsize>
       </font>
      </property>
      <property name="text">
@@ -3690,7 +3690,7 @@ ON</string>
      <property name="font">
       <font>
        <family>DejaVu Sans</family>
-       <pointsize>8</pointsize>
+       <pointsize>12</pointsize>
       </font>
      </property>
      <property name="text">
@@ -3795,7 +3795,7 @@ ON</string>
      <property name="font">
       <font>
        <family>DejaVu Sans</family>
-       <pointsize>8</pointsize>
+       <pointsize>12</pointsize>
       </font>
      </property>
      <property name="styleSheet">
@@ -3862,7 +3862,7 @@ ON</string>
      <property name="font">
       <font>
        <family>DejaVu Sans</family>
-       <pointsize>8</pointsize>
+       <pointsize>12</pointsize>
       </font>
      </property>
      <property name="text">
@@ -3925,7 +3925,7 @@ ON</string>
      <property name="font">
       <font>
        <family>DejaVu Sans</family>
-       <pointsize>8</pointsize>
+       <pointsize>12</pointsize>
       </font>
      </property>
      <property name="text">
@@ -3988,7 +3988,7 @@ ON</string>
      <property name="font">
       <font>
        <family>DejaVu Sans</family>
-       <pointsize>8</pointsize>
+       <pointsize>12</pointsize>
       </font>
      </property>
      <property name="text">
@@ -4093,7 +4093,7 @@ ON</string>
      <property name="font">
       <font>
        <family>DejaVu Sans</family>
-       <pointsize>8</pointsize>
+       <pointsize>12</pointsize>
       </font>
      </property>
      <property name="styleSheet">
@@ -4160,7 +4160,7 @@ ON</string>
      <property name="font">
       <font>
        <family>DejaVu Sans</family>
-       <pointsize>8</pointsize>
+       <pointsize>12</pointsize>
       </font>
      </property>
      <property name="text">
@@ -4223,7 +4223,7 @@ ON</string>
      <property name="font">
       <font>
        <family>DejaVu Sans</family>
-       <pointsize>8</pointsize>
+       <pointsize>12</pointsize>
       </font>
      </property>
      <property name="text">
@@ -4286,7 +4286,7 @@ ON</string>
      <property name="font">
       <font>
        <family>DejaVu Sans</family>
-       <pointsize>8</pointsize>
+       <pointsize>12</pointsize>
       </font>
      </property>
      <property name="text">
@@ -4391,7 +4391,7 @@ ON</string>
      <property name="font">
       <font>
        <family>DejaVu Sans</family>
-       <pointsize>8</pointsize>
+       <pointsize>12</pointsize>
       </font>
      </property>
      <property name="styleSheet">
@@ -4458,7 +4458,7 @@ ON</string>
      <property name="font">
       <font>
        <family>DejaVu Sans</family>
-       <pointsize>8</pointsize>
+       <pointsize>12</pointsize>
       </font>
      </property>
      <property name="text">
@@ -4521,7 +4521,7 @@ ON</string>
      <property name="font">
       <font>
        <family>DejaVu Sans</family>
-       <pointsize>8</pointsize>
+       <pointsize>12</pointsize>
       </font>
      </property>
      <property name="text">
@@ -4584,7 +4584,7 @@ ON</string>
      <property name="font">
       <font>
        <family>DejaVu Sans</family>
-       <pointsize>8</pointsize>
+       <pointsize>12</pointsize>
       </font>
      </property>
      <property name="text">
@@ -4689,7 +4689,7 @@ ON</string>
      <property name="font">
       <font>
        <family>DejaVu Sans</family>
-       <pointsize>8</pointsize>
+       <pointsize>12</pointsize>
       </font>
      </property>
      <property name="styleSheet">
@@ -4756,7 +4756,7 @@ ON</string>
      <property name="font">
       <font>
        <family>DejaVu Sans</family>
-       <pointsize>8</pointsize>
+       <pointsize>12</pointsize>
       </font>
      </property>
      <property name="text">
@@ -4819,7 +4819,7 @@ ON</string>
      <property name="font">
       <font>
        <family>DejaVu Sans</family>
-       <pointsize>8</pointsize>
+       <pointsize>12</pointsize>
       </font>
      </property>
      <property name="text">
@@ -4882,7 +4882,7 @@ ON</string>
      <property name="font">
       <font>
        <family>DejaVu Sans</family>
-       <pointsize>8</pointsize>
+       <pointsize>12</pointsize>
       </font>
      </property>
      <property name="text">
@@ -4987,7 +4987,7 @@ ON</string>
      <property name="font">
       <font>
        <family>DejaVu Sans</family>
-       <pointsize>8</pointsize>
+       <pointsize>12</pointsize>
       </font>
      </property>
      <property name="styleSheet">
@@ -5054,7 +5054,7 @@ ON</string>
      <property name="font">
       <font>
        <family>DejaVu Sans</family>
-       <pointsize>8</pointsize>
+       <pointsize>12</pointsize>
       </font>
      </property>
      <property name="text">
@@ -5117,7 +5117,7 @@ ON</string>
      <property name="font">
       <font>
        <family>DejaVu Sans</family>
-       <pointsize>8</pointsize>
+       <pointsize>12</pointsize>
       </font>
      </property>
      <property name="text">
@@ -5180,7 +5180,7 @@ ON</string>
      <property name="font">
       <font>
        <family>DejaVu Sans</family>
-       <pointsize>8</pointsize>
+       <pointsize>12</pointsize>
       </font>
      </property>
      <property name="text">
@@ -5285,7 +5285,7 @@ ON</string>
      <property name="font">
       <font>
        <family>DejaVu Sans</family>
-       <pointsize>8</pointsize>
+       <pointsize>12</pointsize>
       </font>
      </property>
      <property name="styleSheet">
