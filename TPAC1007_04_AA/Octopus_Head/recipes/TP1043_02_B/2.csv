@@ -1,10 +1,10 @@
-TST_VCC_set     ; 0 ; 0 ; 0
-TST_mA_max      ; 0 ; 0 ; 0
-TST_VCC_fbk     ; 0 ; 0 ; 0
-TST_mA_fbk      ; 0 ; 0 ; 0
+TST_VCC_set     ; 0 ; 0 ; 0 ; 0 ; 0
+TST_mA_max      ; 0 ; 0 ; 0 ; 0 ; 0
+TST_VCC_fbk     ; 0 ; 0 ; 0 ; 0 ; 0
+TST_mA_fbk      ; 0 ; 0 ; 0 ; 0 ; 0
 
-TST_FWrevision  ; 0 ; 0 ; 0
-TST_HWconfig    ; 0 ; 0 ; 0
+TST_FWrevision  ; 0 ; 0 ; 0 ; 0 ; 0
+TST_HWconfig    ; 0 ; 0 ; 0 ; 0 ; 0
 
-TST_CAN1_WR     ; 1 ; 1 ; 1
-TST_CAN1_RD     ; 1 ; 1 ; 1
+TST_CAN1_WR     ; 1 ; 1 ; 1 ; 1 ; 1
+TST_CAN1_RD     ; 1 ; 1 ; 1 ; 1 ; 1
