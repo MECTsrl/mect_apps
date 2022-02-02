@@ -1172,7 +1172,7 @@ background-color: rgb(255, 255, 127);
     <string notr="true">background-color: rgb(170, 255, 255);</string>
    </property>
    <property name="text">
-    <string>AnIn_1_F.</string>
+    <string>AnIn_1_Filter</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>
@@ -3297,7 +3297,7 @@ color: rgb(0, 0, 0);</string>
     <string notr="true">background-color: rgb(255, 255, 127);</string>
    </property>
    <property name="text">
-    <string>AnIn_2_F.</string>
+    <string>AnIn_2_Filter</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>
