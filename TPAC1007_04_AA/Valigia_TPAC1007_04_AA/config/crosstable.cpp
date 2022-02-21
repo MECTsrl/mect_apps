@@ -1785,24 +1785,24 @@ u_int16_t PLC_AnIn2Filter = 0;
 
 
 /*
- * Variable PLC_AnIn3Filter	[ Analog input 3 filter ]
- */
-
-u_int16_t PLC_AnIn3Filter = 0;
-
-
-/*
- * Variable PLC_Reserved_4	[ Analog input 4 filter ]
+ * Variable PLC_Reserved_4	[ Reserved ]
  */
 
 u_int16_t PLC_Reserved_4 = 0;
 
 
 /*
- * Variable PLC_Reserved_5	[ Analog input 5 filter ]
+ * Variable PLC_Reserved_5	[ Reserved ]
  */
 
 u_int16_t PLC_Reserved_5 = 0;
+
+
+/*
+ * Variable PLC_Reserved_6	[ Reserved ]
+ */
+
+u_int16_t PLC_Reserved_6 = 0;
 
 
 /*
@@ -6512,24 +6512,6 @@ getStatus_PLC_AnIn2Filter(void)
 }
 
 int
-doWrite_PLC_AnIn3Filter(u_int16_t value)
-{
-	return doWrite(ID_PLC_AnIn3Filter, &value);
-}
-
-int
-addWrite_PLC_AnIn3Filter(u_int16_t value)
-{
-	return addWrite(ID_PLC_AnIn3Filter, &value);
-}
-
-int
-getStatus_PLC_AnIn3Filter(void)
-{
-	return getStatus(ID_PLC_AnIn3Filter);
-}
-
-int
 doWrite_PLC_Reserved_4(u_int16_t value)
 {
 	return doWrite(ID_PLC_Reserved_4, &value);
@@ -6563,6 +6545,24 @@ int
 getStatus_PLC_Reserved_5(void)
 {
 	return getStatus(ID_PLC_Reserved_5);
+}
+
+int
+doWrite_PLC_Reserved_6(u_int16_t value)
+{
+	return doWrite(ID_PLC_Reserved_6, &value);
+}
+
+int
+addWrite_PLC_Reserved_6(u_int16_t value)
+{
+	return addWrite(ID_PLC_Reserved_6, &value);
+}
+
+int
+getStatus_PLC_Reserved_6(void)
+{
+	return getStatus(ID_PLC_Reserved_6);
 }
 
 int
@@ -7308,9 +7308,9 @@ update_all(void)
 	retval += readFromDb(ID_PLC_StatusReg, &PLC_StatusReg);
 	retval += readFromDb(ID_PLC_AnIn1Filter, &PLC_AnIn1Filter);
 	retval += readFromDb(ID_PLC_AnIn2Filter, &PLC_AnIn2Filter);
-	retval += readFromDb(ID_PLC_AnIn3Filter, &PLC_AnIn3Filter);
 	retval += readFromDb(ID_PLC_Reserved_4, &PLC_Reserved_4);
 	retval += readFromDb(ID_PLC_Reserved_5, &PLC_Reserved_5);
+	retval += readFromDb(ID_PLC_Reserved_6, &PLC_Reserved_6);
 	retval += readFromDb(ID_PLC_time, &PLC_time);
 	retval += readFromDb(ID_PLC_timeMin, &PLC_timeMin);
 	retval += readFromDb(ID_PLC_timeMax, &PLC_timeMax);

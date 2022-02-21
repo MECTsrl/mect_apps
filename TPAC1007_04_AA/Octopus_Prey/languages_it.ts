@@ -667,7 +667,8 @@
     <message>
         <location filename="page100.ui" line="4056"/>
         <location filename="page100.ui" line="4059"/>
-        <source>TPAC1007_4AA</source>
+        <source>TPAC1007_04AA</source>
+        <oldsource>TPAC1007_4AA</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>

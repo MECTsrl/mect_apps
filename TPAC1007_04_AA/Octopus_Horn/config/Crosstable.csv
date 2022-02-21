@@ -5351,9 +5351,9 @@
 1;P;PLC_StatusReg                  ;UINT     ;0   ;RTU       ;               ;3   ;20  ;28    ;5300;57  ;[RO]In - Out board status
 1;P;PLC_AnIn1Filter                ;UINT     ;0   ;RTU       ;               ;3   ;20  ;29    ;5300;57  ;[RW]Analog input 1 filter
 1;P;PLC_AnIn2Filter                ;UINT     ;0   ;RTU       ;               ;3   ;20  ;30    ;5300;57  ;[RW]Analog input 2 filter
-1;P;PLC_AnIn3Filter                ;UINT     ;0   ;RTU       ;               ;3   ;20  ;31    ;5300;57  ;[RW]Analog input 3 filter
-1;P;PLC_Reserved_4                 ;UINT     ;0   ;RTU       ;               ;3   ;20  ;32    ;5300;57  ;[RW]Reserved
-1;P;PLC_Reserved_5                 ;UINT     ;0   ;RTU       ;               ;3   ;20  ;33    ;5300;57  ;[RW]Reserved
+1;P;PLC_Reserved_4                 ;UINT     ;0   ;RTU       ;               ;3   ;20  ;31    ;5300;57  ;[RO]Reserved
+1;P;PLC_Reserved_5                 ;UINT     ;0   ;RTU       ;               ;3   ;20  ;32    ;5300;57  ;[RO]Reserved
+1;P;PLC_Reserved_6                 ;UINT     ;0   ;RTU       ;               ;3   ;20  ;33    ;5300;57  ;[RO]Reserved
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;

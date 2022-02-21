@@ -2226,8 +2226,8 @@ ON</source>
     </message>
     <message>
         <location filename="page300.ui" line="174"/>
-        <source>1;1 Dig;2;2 An+Dig;3;3 TPLC;0;-</source>
-        <oldsource>1;1 Short;2;2 Long;0;-</oldsource>
+        <source>1;1 Dig;2;2 An+Dig;3;3 TPLC;4;4 Pt100;0;-</source>
+        <oldsource>1;1 Dig;2;2 An+Dig;3;3 TPLC;0;-</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>

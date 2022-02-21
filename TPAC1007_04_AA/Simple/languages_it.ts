@@ -15,7 +15,7 @@
     </message>
     <message>
         <location filename="page100.ui" line="69"/>
-        <location filename="page100.ui" line="75"/>
+        <location filename="page100.ui" line="81"/>
         <source>PLC_DigIn_7</source>
         <translation type="unfinished"></translation>
     </message>
@@ -162,12 +162,13 @@
     <message>
         <location filename="page100.ui" line="429"/>
         <location filename="page100.ui" line="432"/>
-        <source>TPAC1007_4AA</source>
+        <source>TPAC1007_04AA</source>
+        <oldsource>TPAC1007_4AA</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="page100.ui" line="454"/>
-        <location filename="page100.ui" line="460"/>
+        <location filename="page100.ui" line="466"/>
         <source>PLC_DigIn_4</source>
         <translation type="unfinished"></translation>
     </message>
@@ -296,7 +297,7 @@
     </message>
     <message>
         <location filename="page100.ui" line="1162"/>
-        <location filename="page100.ui" line="1168"/>
+        <location filename="page100.ui" line="1174"/>
         <source>PLC_DigIn_1</source>
         <translation type="unfinished"></translation>
     </message>
@@ -330,7 +331,7 @@
     </message>
     <message>
         <location filename="page100.ui" line="1352"/>
-        <location filename="page100.ui" line="1358"/>
+        <location filename="page100.ui" line="1364"/>
         <source>PLC_DigIn_8</source>
         <translation type="unfinished"></translation>
     </message>
@@ -409,7 +410,7 @@
     </message>
     <message>
         <location filename="page100.ui" line="1891"/>
-        <location filename="page100.ui" line="1897"/>
+        <location filename="page100.ui" line="1903"/>
         <source>PLC_DigIn_6</source>
         <translation type="unfinished"></translation>
     </message>
@@ -469,7 +470,7 @@
     </message>
     <message>
         <location filename="page100.ui" line="2279"/>
-        <location filename="page100.ui" line="2285"/>
+        <location filename="page100.ui" line="2291"/>
         <source>PLC_DigIn_10</source>
         <translation type="unfinished"></translation>
     </message>
@@ -489,7 +490,7 @@
     </message>
     <message>
         <location filename="page100.ui" line="2444"/>
-        <location filename="page100.ui" line="2450"/>
+        <location filename="page100.ui" line="2456"/>
         <source>PLC_DigIn_5</source>
         <translation type="unfinished"></translation>
     </message>
@@ -511,7 +512,7 @@
     </message>
     <message>
         <location filename="page100.ui" line="2581"/>
-        <location filename="page100.ui" line="2587"/>
+        <location filename="page100.ui" line="2593"/>
         <source>PLC_DigIn_12</source>
         <translation type="unfinished"></translation>
     </message>
@@ -595,13 +596,13 @@
     </message>
     <message>
         <location filename="page100.ui" line="3248"/>
-        <location filename="page100.ui" line="3254"/>
+        <location filename="page100.ui" line="3260"/>
         <source>PLC_DigIn_2</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="page100.ui" line="3290"/>
-        <location filename="page100.ui" line="3296"/>
+        <location filename="page100.ui" line="3302"/>
         <source>PLC_DigIn_11</source>
         <translation type="unfinished"></translation>
     </message>
@@ -619,7 +620,7 @@
     </message>
     <message>
         <location filename="page100.ui" line="3488"/>
-        <location filename="page100.ui" line="3494"/>
+        <location filename="page100.ui" line="3500"/>
         <source>PLC_DigIn_3</source>
         <translation type="unfinished"></translation>
     </message>
@@ -637,7 +638,7 @@
     </message>
     <message>
         <location filename="page100.ui" line="3688"/>
-        <location filename="page100.ui" line="3694"/>
+        <location filename="page100.ui" line="3700"/>
         <source>PLC_DigIn_9</source>
         <translation type="unfinished"></translation>
     </message>
