@@ -26,4 +26,5 @@ SOURCES += \
 RESOURCES += \
     resources.qrc
 
-
+OTHER_FILES += \
+    hmi.ini

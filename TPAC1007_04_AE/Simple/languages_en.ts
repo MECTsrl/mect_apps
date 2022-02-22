@@ -49,7 +49,8 @@
     </message>
     <message>
         <location filename="page100.ui" line="197"/>
-        <source>1;NODE_OK;2;TIMEOUT;3;BLACKLIST;0;NO_NODE</source>
+        <source>1;NODE_OK;2;TIMEOUT;3;BLACKLIST;4;DISCONNECTED;5;DISABLED;0;NO_NODE</source>
+        <oldsource>1;NODE_OK;2;TIMEOUT;3;BLACKLIST;0;NO_NODE</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -117,6 +118,7 @@
         <location filename="page100.ui" line="2723"/>
         <location filename="page100.ui" line="2802"/>
         <location filename="page100.ui" line="2992"/>
+        <location filename="page100.ui" line="3077"/>
         <source>ATCMbutton widget</source>
         <translation type="unfinished"></translation>
     </message>
@@ -195,7 +197,7 @@
     </message>
     <message>
         <location filename="page100.ui" line="768"/>
-        <location filename="page100.ui" line="774"/>
+        <location filename="page100.ui" line="780"/>
         <source>PLC_DigIn_5</source>
         <translation type="unfinished"></translation>
     </message>
@@ -219,7 +221,7 @@ NODE20</source>
     </message>
     <message>
         <location filename="page100.ui" line="838"/>
-        <location filename="page100.ui" line="844"/>
+        <location filename="page100.ui" line="850"/>
         <source>PLC_DigIn_8</source>
         <translation type="unfinished"></translation>
     </message>
@@ -251,7 +253,7 @@ NODE20</source>
     </message>
     <message>
         <location filename="page100.ui" line="1018"/>
-        <location filename="page100.ui" line="1024"/>
+        <location filename="page100.ui" line="1030"/>
         <source>PLC_DigIn_1</source>
         <translation type="unfinished"></translation>
     </message>
@@ -263,7 +265,7 @@ NODE20</source>
     </message>
     <message>
         <location filename="page100.ui" line="1116"/>
-        <location filename="page100.ui" line="1122"/>
+        <location filename="page100.ui" line="1128"/>
         <source>PLC_DigIn_7</source>
         <translation type="unfinished"></translation>
     </message>
@@ -326,7 +328,7 @@ NODE20</source>
     </message>
     <message>
         <location filename="page100.ui" line="1529"/>
-        <location filename="page100.ui" line="1535"/>
+        <location filename="page100.ui" line="1541"/>
         <source>PLC_DigIn_4</source>
         <translation type="unfinished"></translation>
     </message>
@@ -367,7 +369,7 @@ NODE20</source>
     </message>
     <message>
         <location filename="page100.ui" line="1980"/>
-        <location filename="page100.ui" line="1986"/>
+        <location filename="page100.ui" line="1992"/>
         <source>PLC_DigIn_6</source>
         <translation type="unfinished"></translation>
     </message>
@@ -442,7 +444,7 @@ NODE20</source>
     </message>
     <message>
         <location filename="page100.ui" line="2590"/>
-        <location filename="page100.ui" line="2596"/>
+        <location filename="page100.ui" line="2602"/>
         <source>PLC_DigIn_2</source>
         <translation type="unfinished"></translation>
     </message>
@@ -484,7 +486,7 @@ NODE20</source>
     </message>
     <message>
         <location filename="page100.ui" line="2938"/>
-        <location filename="page100.ui" line="2944"/>
+        <location filename="page100.ui" line="2950"/>
         <source>PLC_DigIn_3</source>
         <translation type="unfinished"></translation>
     </message>

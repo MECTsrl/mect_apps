@@ -14,6 +14,9 @@
 #include "ui_page100.h"
 #include "crosstable.h"
 
+#include <QDebug>
+#include <QString>
+
 /**
  * @brief this macro is used to set the PAGE100 style.
  * the syntax is html stylesheet-like
@@ -70,7 +73,27 @@ void page100::updateData()
     }
     /* call the parent updateData member */
     page::updateData();
-    
+
+    // Abilitazione interfaccia se NODE_01 è collegato
+    if (PLC_EngineStatus >= 2)  {
+        ui->atcmButton_PLC_DigDir_1->setEnabled(NODE_01_STATUS == 1);
+        ui->atcmButton_PLC_DigOut_1->setEnabled(NODE_01_STATUS == 1);
+        ui->atcmButton_PLC_DigDir_2->setEnabled(NODE_01_STATUS == 1);
+        ui->atcmButton_PLC_DigOut_2->setEnabled(NODE_01_STATUS == 1);
+        ui->atcmButton_PLC_DigDir_3->setEnabled(NODE_01_STATUS == 1);
+        ui->atcmButton_PLC_DigOut_3->setEnabled(NODE_01_STATUS == 1);
+        ui->atcmButton_PLC_DigDir_4->setEnabled(NODE_01_STATUS == 1);
+        ui->atcmButton_PLC_DigOut_4->setEnabled(NODE_01_STATUS == 1);
+        ui->atcmButton_PLC_DigDir_5->setEnabled(NODE_01_STATUS == 1);
+        ui->atcmButton_PLC_DigOut_5->setEnabled(NODE_01_STATUS == 1);
+        ui->atcmButton_PLC_DigDir_6->setEnabled(NODE_01_STATUS == 1);
+        ui->atcmButton_PLC_DigOut_6->setEnabled(NODE_01_STATUS == 1);
+        ui->atcmButton_PLC_DigDir_7->setEnabled(NODE_01_STATUS == 1);
+        ui->atcmButton_PLC_DigOut_7->setEnabled(NODE_01_STATUS == 1);
+        ui->atcmButton_PLC_DigDir_8->setEnabled(NODE_01_STATUS == 1);
+        ui->atcmButton_PLC_DigOut_8->setEnabled(NODE_01_STATUS == 1);
+    }
+
     /* To read the cross table variable UINT TEST1:
      *    uint_16 tmp = TEST1;
      */
@@ -98,4 +121,25 @@ page100::~page100()
     delete ui;
 }
 
+void page100::on_atcmRTU_Start_clicked(bool checked)
+{
+    qDebug("Node_01_Status: %d",  NODE_01_STATUS);
+    if (checked)  {
+        // Force Node_01 Start
+        if (NODE_01_STATUS != 0)  {
+            qDebug("NODE [%d] Start Required", NODE_01_DEV_NODE);
+            doWrite_NODE_01_STATUS(1);
+        }
+        usleep(800);
+    }
+    else {
+        // Force Node_01 Stop
+        qDebug("Richiesto Stop NODO");
+        usleep(800);
+        if (NODE_01_STATUS != 0) {
+            qDebug("NODE [%d] Stop Required", NODE_01_DEV_NODE);
+            doWrite_NODE_01_STATUS(0);
+        }
+    }
+}
 

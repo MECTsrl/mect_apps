@@ -27,8 +27,9 @@ public:
     virtual void updateData();
     
 private slots:
-    void changeEvent(QEvent * event);
-    
+    void changeEvent(QEvent * event);    
+    void on_atcmRTU_Start_clicked(bool checked);
+
 private:
     Ui::page100 *ui;
 };

@@ -121,8 +121,10 @@
         <file alias="Landscape.png">C:/Qt485/desktop/share/qtcreator/templates/wizards/ATCM-template-project/img/Landscape.png</file>
         <file alias="Last.png">C:/Qt485/desktop/share/qtcreator/templates/wizards/ATCM-template-project/img/Last.png</file>
         <file alias="Last_recor.png">C:/Qt485/desktop/share/qtcreator/templates/wizards/ATCM-template-project/img/Last_recor.png</file>
+        <file alias="LedGrey.png">C:/Qt485/desktop/share/qtcreator/templates/wizards/ATCM-template-project/img/LedGrey.png</file>
         <file alias="LedOff.png">C:/Qt485/desktop/share/qtcreator/templates/wizards/ATCM-template-project/img/LedOff.png</file>
         <file alias="LedOn.png">C:/Qt485/desktop/share/qtcreator/templates/wizards/ATCM-template-project/img/LedOn.png</file>
+        <file alias="LedYellow.png">C:/Qt485/desktop/share/qtcreator/templates/wizards/ATCM-template-project/img/LedYellow.png</file>
         <file alias="Left-right.png">C:/Qt485/desktop/share/qtcreator/templates/wizards/ATCM-template-project/img/Left-right.png</file>
         <file alias="Letter.png">C:/Qt485/desktop/share/qtcreator/templates/wizards/ATCM-template-project/img/Letter.png</file>
         <file alias="Lightning.png">C:/Qt485/desktop/share/qtcreator/templates/wizards/ATCM-template-project/img/Lightning.png</file>
@@ -243,4 +245,3 @@
         <file alias="Zoom.png">C:/Qt485/desktop/share/qtcreator/templates/wizards/ATCM-template-project/img/Zoom.png</file>
     </qresource>
 </RCC>
-

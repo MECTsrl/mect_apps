@@ -19,7 +19,11 @@ splash.path = /local/etc/sysconfig/img
 customtrend.files = config/trend1.csv
 customtrend.path = /local/data/customtrend
 
-INSTALLS += config splash customtrend
+myIni.files = hmi.ini
+myIni.path = /local/root
+
+
+INSTALLS += config myIni splash customtrend
 
 # language
 OTHER_FILES += \
