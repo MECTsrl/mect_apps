@@ -7,7 +7,7 @@ VAR
 
 END_VAR
 
-	PLC_PLC_Version := 3395;
+	PLC_PLC_Version := 3396; (* PLC VERSION *)
 
 	PLC_DigDir_1 := False; (* PLC_PWR_SWITCH input *)
 	PLC_DigDir_2 := True; (* PLC_VPOT_ON output *)

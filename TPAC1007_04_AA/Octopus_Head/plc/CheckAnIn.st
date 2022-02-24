@@ -8,6 +8,7 @@ VAR_INPUT
 	tamb : INT;
 END_VAR
 
+	(* enter the full scale tolerances *)
     case conf of
     1: (* 4.000 20.000 mA *)
 		CheckAnIn := abs(res - val ) <= 220; (* 20.000 mA * (0.5% + 0.5% + 0.1%) = 0.220 mA *)
@@ -22,7 +23,7 @@ END_VAR
 	6: (* PT100E *)
 		CheckAnIn := abs(res  - val ) <= 4; (* 4°C = 800°C * 0.5% fs *)
 	7: (* PT100R *)
-		CheckAnIn := abs(res  - val ) <= 5; (* 0.5°C = 200.0°C * 0.25% fs *)
+		CheckAnIn := abs(res  - val ) <= 6; (* 0.6°C = 200.0°C * 0.30% fs *)
 	8: (* TCS *)
 		CheckAnIn := abs(res * 10 - tamb - val * 10) <= 300; (* 30 °C, short => Tamb +/- 15 *)
 	9: (* TCB *)
