@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/icons">
+        <file>icons/Radio_Checked_32.png</file>
+        <file>icons/Radio_UnChecked_32.png</file>
+    </qresource>
+    <qresource prefix="/fonts"/>
+</RCC>
