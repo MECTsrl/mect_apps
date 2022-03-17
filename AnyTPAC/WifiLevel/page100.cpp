@@ -90,8 +90,9 @@ void page100::updateData()
     }
     /* call the parent updateData member */
     page::updateData();
-    // Refresh ogni 2s 
-    if ((nLoop++ % 4) == 0)  {
+    // Refresh ogni 3s
+    if ((++nLoop % 6) == 0)  {
+        nLoop = 0;
         // Check MS Version
         if (msVersion >= minMSVersion)  {
             // All above functions are available since Mect Suite 3.3.9

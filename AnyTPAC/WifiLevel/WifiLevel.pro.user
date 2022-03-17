@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 2.7.84, 2022-03-16T16:25:16. -->
+<!-- Written by QtCreator 2.7.84, 2022-03-17T18:49:20. -->
 <qtcreator>
  <data>
   <variable>ProjectExplorer.Project.ActiveTarget</variable>
@@ -197,71 +197,111 @@
       <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">RemoteLinux.DirectUploadStep</value>
       <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedFiles">
        <value type="QString">C:/mect_apps/AnyTPAC/WifiLevel/config/splash.png</value>
+       <value type="QString">C:/mect_apps/AnyTPAC/WifiLevel/config/trend1.csv</value>
        <value type="QString">C:/mect_apps/AnyTPAC/WifiLevel/hmi</value>
        <value type="QString">C:/mect_apps/AnyTPAC/WifiLevel/config/trend1.csv</value>
        <value type="QString">C:/Users/UserName/Documents/WifiLevel/hmi</value>
+       <value type="QString">C:/mect_apps/AnyTPAC/WifiLevel/config/Crosstable.csv</value>
        <value type="QString">C:/Users/UserName/Documents/WifiLevel/config/trend1.csv</value>
        <value type="QString">C:/Users/UserName/Documents/WifiLevel/config/splash.png</value>
        <value type="QString">C:/Users/UserName/Documents/WifiLevel/config/system.ini</value>
+       <value type="QString">C:/mect_apps/AnyTPAC/WifiLevel/config/splash.png</value>
        <value type="QString">C:/Users/UserName/Documents/WifiLevel/config/trend1.csv</value>
        <value type="QString">C:/Users/UserName/Documents/WifiLevel/config/system.ini</value>
+       <value type="QString">C:/mect_apps/AnyTPAC/WifiLevel/hmi</value>
        <value type="QString">C:/Users/UserName/Documents/WifiLevel/hmi</value>
        <value type="QString">C:/Users/UserName/Documents/WifiLevel/config/Crosstable.csv</value>
+       <value type="QString">C:/mect_apps/AnyTPAC/WifiLevel/config/system.ini</value>
        <value type="QString">C:/mect_apps/AnyTPAC/WifiLevel/config/Crosstable.csv</value>
        <value type="QString">C:/Users/UserName/Documents/WifiLevel/config/trend1.csv</value>
+       <value type="QString">C:/mect_apps/AnyTPAC/WifiLevel/config/system.ini</value>
        <value type="QString">C:/Users/UserName/Documents/WifiLevel/hmi</value>
+       <value type="QString">C:/mect_apps/AnyTPAC/WifiLevel/config/splash.png</value>
        <value type="QString">C:/Users/UserName/Documents/WifiLevel/config/Crosstable.csv</value>
        <value type="QString">C:/Users/UserName/Documents/WifiLevel/config/system.ini</value>
        <value type="QString">C:/Users/UserName/Documents/WifiLevel/config/splash.png</value>
        <value type="QString">C:/Users/UserName/Documents/WifiLevel/config/Crosstable.csv</value>
        <value type="QString">C:/mect_apps/AnyTPAC/WifiLevel/config/system.ini</value>
+       <value type="QString">C:/mect_apps/AnyTPAC/WifiLevel/hmi</value>
+       <value type="QString">C:/mect_apps/AnyTPAC/WifiLevel/config/Crosstable.csv</value>
        <value type="QString">C:/Users/UserName/Documents/WifiLevel/config/splash.png</value>
+       <value type="QString">C:/mect_apps/AnyTPAC/WifiLevel/config/trend1.csv</value>
       </valuelist>
       <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedHosts">
        <value type="QString">192.168.5.65</value>
+       <value type="QString">192.168.5.124</value>
        <value type="QString">192.168.5.65</value>
        <value type="QString">192.168.5.65</value>
        <value type="QString">192.168.5.126</value>
+       <value type="QString">192.168.5.124</value>
        <value type="QString">192.168.5.126</value>
        <value type="QString">192.168.5.126</value>
        <value type="QString">192.168.5.126</value>
+       <value type="QString">192.168.5.213</value>
        <value type="QString">192.168.5.65</value>
        <value type="QString">192.168.5.58</value>
+       <value type="QString">192.168.5.213</value>
        <value type="QString">192.168.5.58</value>
        <value type="QString">192.168.5.126</value>
+       <value type="QString">192.168.5.213</value>
        <value type="QString">192.168.5.65</value>
        <value type="QString">192.168.5.58</value>
+       <value type="QString">192.168.5.124</value>
        <value type="QString">192.168.5.65</value>
+       <value type="QString">192.168.5.124</value>
        <value type="QString">192.168.5.65</value>
        <value type="QString">192.168.5.65</value>
        <value type="QString">192.168.5.58</value>
        <value type="QString">192.168.5.58</value>
        <value type="QString">192.168.5.65</value>
+       <value type="QString">192.168.5.124</value>
+       <value type="QString">192.168.5.213</value>
        <value type="QString">192.168.5.65</value>
+       <value type="QString">192.168.5.213</value>
       </valuelist>
       <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedRemotePaths">
        <value type="QString">/local/etc/sysconfig/img</value>
+       <value type="QString">/local/data/customtrend</value>
        <value type="QString">/local/root</value>
        <value type="QString">/local/data/customtrend</value>
        <value type="QString">/local/root</value>
+       <value type="QString">/local/etc/sysconfig</value>
        <value type="QString">/local/data/customtrend</value>
        <value type="QString">/local/etc/sysconfig/img</value>
        <value type="QString">/local/etc/sysconfig</value>
+       <value type="QString">/local/etc/sysconfig/img</value>
        <value type="QString">/local/data/customtrend</value>
        <value type="QString">/local/etc/sysconfig</value>
        <value type="QString">/local/root</value>
-       <value type="QString">/local/etc/sysconfig</value>
-       <value type="QString">/local/etc/sysconfig</value>
-       <value type="QString">/local/data/customtrend</value>
        <value type="QString">/local/root</value>
        <value type="QString">/local/etc/sysconfig</value>
        <value type="QString">/local/etc/sysconfig</value>
+       <value type="QString">/local/etc/sysconfig</value>
+       <value type="QString">/local/data/customtrend</value>
+       <value type="QString">/local/etc/sysconfig</value>
+       <value type="QString">/local/root</value>
        <value type="QString">/local/etc/sysconfig/img</value>
        <value type="QString">/local/etc/sysconfig</value>
        <value type="QString">/local/etc/sysconfig</value>
        <value type="QString">/local/etc/sysconfig/img</value>
+       <value type="QString">/local/etc/sysconfig</value>
+       <value type="QString">/local/etc/sysconfig</value>
+       <value type="QString">/local/root</value>
+       <value type="QString">/local/etc/sysconfig</value>
+       <value type="QString">/local/etc/sysconfig/img</value>
+       <value type="QString">/local/data/customtrend</value>
       </valuelist>
       <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedSysroots">
+       <value type="QString">C:/Qt485/imx28/rootfs</value>
+       <value type="QString">C:/Qt485/imx28/rootfs</value>
+       <value type="QString">C:/Qt485/imx28/rootfs</value>
+       <value type="QString">C:/Qt485/imx28/rootfs</value>
+       <value type="QString">C:/Qt485/imx28/rootfs</value>
+       <value type="QString">C:/Qt485/imx28/rootfs</value>
+       <value type="QString">C:/Qt485/imx28/rootfs</value>
+       <value type="QString">C:/Qt485/imx28/rootfs</value>
+       <value type="QString">C:/Qt485/imx28/rootfs</value>
+       <value type="QString">C:/Qt485/imx28/rootfs</value>
        <value type="QString">C:/Qt485/imx28/rootfs</value>
        <value type="QString">C:/Qt485/imx28/rootfs</value>
        <value type="QString">C:/Qt485/imx28/rootfs</value>
@@ -285,25 +325,35 @@
       </valuelist>
       <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedTimes">
        <value type="QDateTime">2022-03-16T16:23:20</value>
+       <value type="QDateTime">2022-03-17T18:48:56</value>
        <value type="QDateTime">2022-03-16T16:23:21</value>
        <value type="QDateTime">2022-03-16T16:23:20</value>
        <value type="QDateTime">2022-03-16T14:35:09</value>
+       <value type="QDateTime">2022-03-17T18:48:56</value>
        <value type="QDateTime">2022-03-16T14:35:09</value>
        <value type="QDateTime">2022-03-16T14:35:09</value>
        <value type="QDateTime">2022-03-16T14:35:09</value>
+       <value type="QDateTime">2022-03-17T11:26:33</value>
        <value type="QDateTime">2022-03-16T15:54:45</value>
        <value type="QDateTime">2022-03-16T14:49:44</value>
+       <value type="QDateTime">2022-03-17T11:26:34</value>
        <value type="QDateTime">2022-03-16T14:49:44</value>
        <value type="QDateTime">2022-03-16T14:35:09</value>
+       <value type="QDateTime">2022-03-17T11:26:33</value>
        <value type="QDateTime">2022-03-16T16:23:20</value>
        <value type="QDateTime">2022-03-16T14:49:44</value>
+       <value type="QDateTime">2022-03-17T18:48:56</value>
        <value type="QDateTime">2022-03-16T15:54:45</value>
+       <value type="QDateTime">2022-03-17T18:48:56</value>
        <value type="QDateTime">2022-03-16T15:54:45</value>
        <value type="QDateTime">2022-03-16T15:54:45</value>
        <value type="QDateTime">2022-03-16T14:49:44</value>
        <value type="QDateTime">2022-03-16T14:49:44</value>
        <value type="QDateTime">2022-03-16T16:23:20</value>
+       <value type="QDateTime">2022-03-17T18:48:57</value>
+       <value type="QDateTime">2022-03-17T11:26:33</value>
        <value type="QDateTime">2022-03-16T15:54:45</value>
+       <value type="QDateTime">2022-03-17T11:26:33</value>
       </valuelist>
       <value type="bool" key="RemoteLinux.GenericDirectUploadStep.Incremental">false</value>
      </valuemap>
