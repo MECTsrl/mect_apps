@@ -34,6 +34,36 @@ extern "C" {
 #include "cross_table_utility.h"
 
 
+#define ID_mectsuiteVersion 200
+extern u_int32_t mectsuiteVersion;	/* Mect Suite Version */
+int doWrite_mectsuiteVersion(u_int32_t value);
+int addWrite_mectsuiteVersion(u_int32_t value);
+int getStatus_mectsuiteVersion(void);
+
+#define ID_wifiON 201
+extern int wifiON;	/* True if Wifi is On */
+int doWrite_wifiON(int value);
+int addWrite_wifiON(int value);
+int getStatus_wifiON(void);
+
+#define ID_wifiQuality 202
+extern int16_t wifiQuality;	/* Wifi Quality 0-100 */
+int doWrite_wifiQuality(int16_t value);
+int addWrite_wifiQuality(int16_t value);
+int getStatus_wifiQuality(void);
+
+#define ID_wifiLevel 203
+extern int16_t wifiLevel;	/* Wifi Level */
+int doWrite_wifiLevel(int16_t value);
+int addWrite_wifiLevel(int16_t value);
+int getStatus_wifiLevel(void);
+
+#define ID_wanON 204
+extern int wanON;	/* True if Wan is On */
+int doWrite_wanON(int value);
+int addWrite_wanON(int value);
+int getStatus_wanON(void);
+
 #define ID_TCPS_TYPE_PORT 5050
 extern u_int32_t TCPS_TYPE_PORT;
 int doWrite_TCPS_TYPE_PORT(u_int32_t value);

@@ -70,6 +70,7 @@ void page100::reload()
          rotateShowError(ui->myLineEdit, ERROR_LABEL_PERIOD_MS);
      */
     msVersion = getMSVersion();
+    doWrite_mectsuiteVersion(msVersion);
     uModel = PLC_PRODUCT_ID >> 8;
     qDebug("Model is: [%6X]", uModel);
     ui->lblWiFiConn->setStyleSheet(QString(szBorderImage) .arg("LedGrey"));
@@ -77,6 +78,7 @@ void page100::reload()
     ui->lblWanConn->setStyleSheet(QString(szBorderImage) .arg("LedGrey"));
     ui->lblWanStatus->setStyleSheet(QString(szBorderImage) .arg("GprsOff"));
     ui->lblMSVersion->setText(ui->lblMSVersion->text() + QString("%1 - %2") .arg(msVersion, 6, 16, QChar('0')) .arg(HMIversion));
+    logStart();
 }
 
 /**
@@ -158,6 +160,13 @@ void page100::updateData()
             ui->txtLevel->setText(QString("%1 dBm") .arg(nSignalLevel, 3, 10));
             ui->optWLan->setEnabled(wifiPresent);
             ui->optWan->setEnabled(wanPresent);
+            // CT Update
+            beginWrite();
+            addWrite_wifiON(wifiPresent);
+            addWrite_wifiQuality((int16_t) nQuality);
+            addWrite_wifiLevel((int16_t) nSignalLevel);
+            addWrite_wanON(wanPresent);
+            endWrite();
         }
         else {
             ui->cmdGW->setEnabled(false);

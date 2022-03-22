@@ -28,6 +28,41 @@
 #include "global_var.h"
 
 /*
+ * Variable mectsuiteVersion	[ Mect Suite Version ]
+ */
+
+u_int32_t mectsuiteVersion = 0;
+
+
+/*
+ * Variable wifiON	[ True if Wifi is On ]
+ */
+
+int wifiON = 0;
+
+
+/*
+ * Variable wifiQuality	[ Wifi Quality 0-100 ]
+ */
+
+int16_t wifiQuality = 0;
+
+
+/*
+ * Variable wifiLevel	[ Wifi Level ]
+ */
+
+int16_t wifiLevel = 0;
+
+
+/*
+ * Variable wanON	[ True if Wan is On ]
+ */
+
+int wanON = 0;
+
+
+/*
  * Variable TCPS_TYPE_PORT
  */
 
@@ -1208,6 +1243,96 @@ u_int8_t PLC_ALARM_VOLUME = 0;
  */
 
 u_int32_t PLC_BUZZER = 0;
+
+int
+doWrite_mectsuiteVersion(u_int32_t value)
+{
+	return doWrite(ID_mectsuiteVersion, &value);
+}
+
+int
+addWrite_mectsuiteVersion(u_int32_t value)
+{
+	return addWrite(ID_mectsuiteVersion, &value);
+}
+
+int
+getStatus_mectsuiteVersion(void)
+{
+	return getStatus(ID_mectsuiteVersion);
+}
+
+int
+doWrite_wifiON(int value)
+{
+	return doWrite(ID_wifiON, &value);
+}
+
+int
+addWrite_wifiON(int value)
+{
+	return addWrite(ID_wifiON, &value);
+}
+
+int
+getStatus_wifiON(void)
+{
+	return getStatus(ID_wifiON);
+}
+
+int
+doWrite_wifiQuality(int16_t value)
+{
+	return doWrite(ID_wifiQuality, &value);
+}
+
+int
+addWrite_wifiQuality(int16_t value)
+{
+	return addWrite(ID_wifiQuality, &value);
+}
+
+int
+getStatus_wifiQuality(void)
+{
+	return getStatus(ID_wifiQuality);
+}
+
+int
+doWrite_wifiLevel(int16_t value)
+{
+	return doWrite(ID_wifiLevel, &value);
+}
+
+int
+addWrite_wifiLevel(int16_t value)
+{
+	return addWrite(ID_wifiLevel, &value);
+}
+
+int
+getStatus_wifiLevel(void)
+{
+	return getStatus(ID_wifiLevel);
+}
+
+int
+doWrite_wanON(int value)
+{
+	return doWrite(ID_wanON, &value);
+}
+
+int
+addWrite_wanON(int value)
+{
+	return addWrite(ID_wanON, &value);
+}
+
+int
+getStatus_wanON(void)
+{
+	return getStatus(ID_wanON);
+}
 
 int
 doWrite_TCPS_TYPE_PORT(u_int32_t value)
@@ -4257,6 +4382,11 @@ update_all(void)
 {
 	int retval = 0;
 
+	retval += readFromDb(ID_mectsuiteVersion, &mectsuiteVersion);
+	retval += readFromDb(ID_wifiON, &wifiON);
+	retval += readFromDb(ID_wifiQuality, &wifiQuality);
+	retval += readFromDb(ID_wifiLevel, &wifiLevel);
+	retval += readFromDb(ID_wanON, &wanON);
 	retval += readFromDb(ID_TCPS_TYPE_PORT, &TCPS_TYPE_PORT);
 	retval += readFromDb(ID_TCPS_IP_ADDRESS, &TCPS_IP_ADDRESS);
 	retval += readFromDb(ID_TCPS_STATUS, &TCPS_STATUS);

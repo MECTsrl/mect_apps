@@ -1,4 +1,9 @@
 VAR_GLOBAL
+	mectsuiteVersion AT %QD0.800:UDINT;	(* Mect Suite Version *)
+	wifiON AT %QX0.804.0:BOOL;	(* True if Wifi is On *)
+	wifiQuality AT %QW0.808:INT;	(* Wifi Quality 0-100 *)
+	wifiLevel AT %QW0.812:INT;	(* Wifi Level *)
+	wanON AT %QX0.816.0:BOOL;	(* True if Wan is On *)
 	TCPS_TYPE_PORT AT %ID0.20200:UDINT;
 	TCPS_IP_ADDRESS AT %ID0.20204:UDINT;
 	TCPS_STATUS AT %ID0.20208:UDINT;
