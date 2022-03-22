@@ -74,6 +74,8 @@ void page100::reload()
     qDebug("Model is: [%6X]", uModel);
     ui->lblWiFiConn->setStyleSheet(QString(szBorderImage) .arg("LedGrey"));
     ui->lblWiFi->setStyleSheet(QString(szBorderImage) .arg("WifiOff"));
+    ui->lblWanConn->setStyleSheet(QString(szBorderImage) .arg("LedGrey"));
+    ui->lblWanStatus->setStyleSheet(QString(szBorderImage) .arg("GprsOff"));
     ui->lblMSVersion->setText(ui->lblMSVersion->text() + QString("%1 - %2") .arg(msVersion, 6, 16, QChar('0')) .arg(HMIversion));
 }
 
@@ -99,34 +101,63 @@ void page100::updateData()
             int nSignalLevel = 0;
             int nQuality = 0;
             QString szWifiStyle;
-            QString szConnStyle;
-            bool    wifiPresent = check_wifi_board();
+            QString szWifiConnStyle;
+            QString szWanStyle;
+            QString szWanConnStyle;
 
+            // Check Board Presence
+            bool    wifiPresent = check_wifi_board();
+            bool    wanPresent = check_usb_wan_board();
+
+            // Check wifi connection
             if (wifiPresent)  {
                 if (get_wifi_signal_level(nQuality, nSignalLevel))  {
                     szWifiStyle = QString(szBorderImage) .arg("WifiOn");
                 }
                 if (isWlanOn())  {
-                    szConnStyle = QString(szBorderImage) .arg("LedOn");
+                    szWifiConnStyle = QString(szBorderImage) .arg("LedOn");
                 }
                 else {
-                    szConnStyle = QString(szBorderImage) .arg("LedYellow");
+                    szWifiConnStyle = QString(szBorderImage) .arg("LedYellow");
                 }
             }
             else {
                 szWifiStyle = QString(szBorderImage) .arg("WifiOff");
-                szConnStyle = QString(szBorderImage) .arg("LedGrey");
+                szWifiConnStyle = QString(szBorderImage) .arg("LedGrey");
+            }
+
+            // Check Wan Connection
+            if (wanPresent)  {
+                if (isWanOn())  {
+                    szWanStyle = QString(szBorderImage) .arg("GprsOn");
+                    szWanConnStyle = QString(szBorderImage) .arg("LedOn");
+                }
+                else  {
+                    szWanStyle = QString(szBorderImage) .arg("GprsOff");
+                    szWanConnStyle = QString(szBorderImage) .arg("LedYellow");
+                }
+            }
+            else {
+                szWanStyle = QString(szBorderImage) .arg("GprsOff");
+                szWanConnStyle = QString(szBorderImage) .arg("LedGrey");
             }
             // Updating Label Stylesheet only if needed
-            if (ui->lblWiFiConn->styleSheet() != szConnStyle)  {
-                ui->lblWiFiConn->setStyleSheet(szConnStyle);
+            if (ui->lblWiFiConn->styleSheet() != szWifiConnStyle)  {
+                ui->lblWiFiConn->setStyleSheet(szWifiConnStyle);
             }
             if (ui->lblWiFi->styleSheet() != szWifiStyle)  {
                 ui->lblWiFi->setStyleSheet(szWifiStyle);
             }
+            if (ui->lblWanConn->styleSheet() != szWanConnStyle)  {
+                ui->lblWanConn->setStyleSheet(szWanConnStyle);
+            }
+            if (ui->lblWanStatus->styleSheet() != szWanStyle)  {
+                ui->lblWanStatus->setStyleSheet(szWanStyle);
+            }
             ui->txtQuality->setText(QString("%1%") .arg(nQuality, 3, 10));
             ui->txtLevel->setText(QString("%1 dBm") .arg(nSignalLevel, 3, 10));
             ui->optWLan->setEnabled(wifiPresent);
+            ui->optWan->setEnabled(wanPresent);
         }
         else {
             ui->cmdGW->setEnabled(false);
@@ -165,9 +196,17 @@ void page100::on_cmdGW_clicked()
     else if (ui->optWLan->isChecked())  {
         szBoard = "wlan0";
     }
+    else if (ui->optWan->isChecked())  {
+        szBoard = "ppp0";
+    }
     if (! szBoard.isEmpty())  {
         // MAC Address
-        ui->txtMAC->setText(getMacAddr(szBoard));
+        if (szBoard != "ppp0")  {
+            ui->txtMAC->setText(getMacAddr(szBoard));
+        }
+        else  {
+            ui->txtMAC->setText(NO_IP);
+        }
         // IP Address
         ui->txtIP->setText(getIPAddr(szBoard));
         if (getBoardGateway(szBoard.toLatin1().data(), myGW))  {
