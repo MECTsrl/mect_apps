@@ -1533,6 +1533,13 @@ int32_t PLC_HMI_PAGE = 0;
 
 
 /*
+ * Variable PLC_MS_VERSION	[ Mect Suite Version installed on Target (0 if before 3.4.0) ]
+ */
+
+u_int32_t PLC_MS_VERSION = 0;
+
+
+/*
  * Variable PLC_BEEP_VOLUME	[ Beep volume (when buzzerOn) ]
  */
 
@@ -5500,6 +5507,24 @@ getStatus_PLC_HMI_PAGE(void)
 }
 
 int
+doWrite_PLC_MS_VERSION(u_int32_t value)
+{
+	return doWrite(ID_PLC_MS_VERSION, &value);
+}
+
+int
+addWrite_PLC_MS_VERSION(u_int32_t value)
+{
+	return addWrite(ID_PLC_MS_VERSION, &value);
+}
+
+int
+getStatus_PLC_MS_VERSION(void)
+{
+	return getStatus(ID_PLC_MS_VERSION);
+}
+
+int
 doWrite_PLC_BEEP_VOLUME(u_int8_t value)
 {
 	return doWrite(ID_PLC_BEEP_VOLUME, &value);
@@ -5972,6 +5997,7 @@ update_all(void)
 	retval += readFromDb(ID_PLC_PRODUCT_ID, &PLC_PRODUCT_ID);
 	retval += readFromDb(ID_PLC_SERIAL_NUMBER, &PLC_SERIAL_NUMBER);
 	retval += readFromDb(ID_PLC_HMI_PAGE, &PLC_HMI_PAGE);
+	retval += readFromDb(ID_PLC_MS_VERSION, &PLC_MS_VERSION);
 	retval += readFromDb(ID_PLC_BEEP_VOLUME, &PLC_BEEP_VOLUME);
 	retval += readFromDb(ID_PLC_TOUCH_VOLUME, &PLC_TOUCH_VOLUME);
 	retval += readFromDb(ID_PLC_ALARM_VOLUME, &PLC_ALARM_VOLUME);

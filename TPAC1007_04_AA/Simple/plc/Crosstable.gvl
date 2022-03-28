@@ -271,6 +271,7 @@ VAR_GLOBAL
 	PLC_PRODUCT_ID AT %ID0.21680:UDINT;	(* TP/TPAC/TPLC Product ID (Hex) *)
 	PLC_SERIAL_NUMBER AT %ID0.21684:UDINT;	(* TP/TPAC/TPLC Serial Number *)
 	PLC_HMI_PAGE AT %QD0.21688:DINT;	(* HMI Page (page100=0x00000100) *)
+	PLC_MS_VERSION AT %ID0.21692:UDINT;	(* Mect Suite Version installed on Target (0 if before 3.4.0) *)
 	PLC_BEEP_VOLUME AT %QB0.21740:BYTE;	(* Beep volume (when buzzerOn) *)
 	PLC_TOUCH_VOLUME AT %QB0.21744:BYTE;	(* Touch volume *)
 	PLC_ALARM_VOLUME AT %QB0.21748:BYTE;	(* Alarm volume (when alarm) *)

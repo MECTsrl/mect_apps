@@ -1324,6 +1324,12 @@ int doWrite_PLC_HMI_PAGE(int32_t value);
 int addWrite_PLC_HMI_PAGE(int32_t value);
 int getStatus_PLC_HMI_PAGE(void);
 
+#define ID_PLC_MS_VERSION 5423
+extern u_int32_t PLC_MS_VERSION;	/* Mect Suite Version installed on Target (0 if before 3.4.0) */
+int doWrite_PLC_MS_VERSION(u_int32_t value);
+int addWrite_PLC_MS_VERSION(u_int32_t value);
+int getStatus_PLC_MS_VERSION(void);
+
 #define ID_PLC_BEEP_VOLUME 5435
 extern u_int8_t PLC_BEEP_VOLUME;	/* Beep volume (when buzzerOn) */
 int doWrite_PLC_BEEP_VOLUME(u_int8_t value);

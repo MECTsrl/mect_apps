@@ -228,7 +228,7 @@ VAR_GLOBAL
 	PLC_FirmwareVer AT %IW0.21336:UINT;	(* Firmware release TPLC050 *)
 	PLC_HWconfig AT %IW0.21340:UINT;	(* Firmware release TPLC050 *)
 	PLC_StatusWord AT %IW0.21344:UINT;	(* Status word TPLC050 *)
-	PLC_EncoderCounter AT %ID0.21348:UDINT;
+	PLC_EncoderCounter AT %ID0.21348:DINT;
 	PLC_EnableEncoder AT %QW0.21352:UINT;
 	PLC_ResetCounter AT %QD0.21356:UDINT;
 	PLC_time AT %ID0.21560:REAL;	(* Seconds since boot (reset each 24h) *)
@@ -254,6 +254,7 @@ VAR_GLOBAL
 	PLC_PRODUCT_ID AT %ID0.21680:UDINT;	(* TP/TPAC/TPLC Product ID (Hex) *)
 	PLC_SERIAL_NUMBER AT %ID0.21684:UDINT;	(* TP/TPAC/TPLC Serial Number *)
 	PLC_HMI_PAGE AT %QD0.21688:DINT;	(* HMI Page (page100=0x00000100) *)
+	PLC_MS_VERSION AT %ID0.21692:UDINT;	(* Mect Suite Version installed on Target (0 if before 3.4.0) *)
 	PLC_BEEP_VOLUME AT %QB0.21740:BYTE;	(* Beep volume (when buzzerOn) *)
 	PLC_TOUCH_VOLUME AT %QB0.21744:BYTE;	(* Touch volume *)
 	PLC_ALARM_VOLUME AT %QB0.21748:BYTE;	(* Alarm volume (when alarm) *)

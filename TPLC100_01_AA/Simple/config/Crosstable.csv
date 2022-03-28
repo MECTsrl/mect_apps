@@ -5407,20 +5407,20 @@
 1;P;CH0_01_NODEERR                 ;UDINT    ;0   ;CANOPEN   ;               ;    ;    ;      ;5407;1   ;[RO]In Out board - bus status
 1;P;CH0_01_NODERST                 ;BIT      ;0   ;CANOPEN   ;               ;    ;    ;      ;5408;1   ;[RW]In Out board - bus reset
 1;P;CH0_01_NODEDIS                 ;BIT      ;0   ;CANOPEN   ;               ;    ;    ;      ;5409;1   ;[RW]In Out board - disable the bus
-1;P;PLC_Year                       ;UINT     ;0   ;PLC       ;               ;    ;    ;      ;5410;13  ;[RO]Currently year
-1;P;PLC_Month                      ;UINT     ;0   ;PLC       ;               ;    ;    ;      ;5410;13  ;[RO]Currently month
-1;P;PLC_Day                        ;UINT     ;0   ;PLC       ;               ;    ;    ;      ;5410;13  ;[RO]Currently day
-1;P;PLC_Hours                      ;UINT     ;0   ;PLC       ;               ;    ;    ;      ;5410;13  ;[RO]Currently hour
-1;P;PLC_Minutes                    ;UINT     ;0   ;PLC       ;               ;    ;    ;      ;5410;13  ;[RO]Currently minutes
-1;P;PLC_Seconds                    ;UINT     ;0   ;PLC       ;               ;    ;    ;      ;5410;13  ;[RO]Currently seconds
-1;P;PLC_UPTIME_s                   ;UDINT    ;0   ;PLC       ;               ;    ;    ;      ;5410;13  ;[RO]Uptime in seconds (wraps in 136 years)
-1;P;PLC_UPTIME_cs                  ;UDINT    ;0   ;PLC       ;               ;    ;    ;      ;5410;13  ;[RO]Uptime in centiseconds = 10 ms (wraps in 497 days)
-1;P;PLC_WATCHDOGEN                 ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;5410;13  ;[RW]Enable Watchdog
-1;P;PLC_WATCHDOG_ms                ;UDINT    ;0   ;PLC       ;               ;    ;    ;      ;5410;13  ;[RW]Reset Watchdog timer
-1;P;PLC_PRODUCT_ID                 ;UDINT    ;0   ;PLC       ;               ;    ;    ;      ;5410;13  ;[RO]TP/TPAC/TPLC Product ID (Hex)
-1;P;PLC_SERIAL_NUMBER              ;UDINT    ;0   ;PLC       ;               ;    ;    ;      ;5410;13  ;[RO]TP/TPAC/TPLC Serial Number
-1;P;PLC_HMI_PAGE                   ;DINT     ;0   ;PLC       ;               ;    ;    ;      ;5410;13  ;[RW]HMI Page (page100=0x00000100)
-;;;;;;;;;;;;
+1;P;PLC_Year                       ;UINT     ;0   ;PLC       ;               ;    ;    ;      ;5410;14  ;[RO]Currently year
+1;P;PLC_Month                      ;UINT     ;0   ;PLC       ;               ;    ;    ;      ;5410;14  ;[RO]Currently month
+1;P;PLC_Day                        ;UINT     ;0   ;PLC       ;               ;    ;    ;      ;5410;14  ;[RO]Currently day
+1;P;PLC_Hours                      ;UINT     ;0   ;PLC       ;               ;    ;    ;      ;5410;14  ;[RO]Currently hour
+1;P;PLC_Minutes                    ;UINT     ;0   ;PLC       ;               ;    ;    ;      ;5410;14  ;[RO]Currently minutes
+1;P;PLC_Seconds                    ;UINT     ;0   ;PLC       ;               ;    ;    ;      ;5410;14  ;[RO]Currently seconds
+1;P;PLC_UPTIME_s                   ;UDINT    ;0   ;PLC       ;               ;    ;    ;      ;5410;14  ;[RO]Uptime in seconds (wraps in 136 years)
+1;P;PLC_UPTIME_cs                  ;UDINT    ;0   ;PLC       ;               ;    ;    ;      ;5410;14  ;[RO]Uptime in centiseconds = 10 ms (wraps in 497 days)
+1;P;PLC_WATCHDOGEN                 ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;5410;14  ;[RW]Enable Watchdog
+1;P;PLC_WATCHDOG_ms                ;UDINT    ;0   ;PLC       ;               ;    ;    ;      ;5410;14  ;[RW]Reset Watchdog timer
+1;P;PLC_PRODUCT_ID                 ;UDINT    ;0   ;PLC       ;               ;    ;    ;      ;5410;14  ;[RO]TP/TPAC/TPLC Product ID (Hex)
+1;P;PLC_SERIAL_NUMBER              ;UDINT    ;0   ;PLC       ;               ;    ;    ;      ;5410;14  ;[RO]TP/TPAC/TPLC Serial Number
+1;P;PLC_HMI_PAGE                   ;DINT     ;0   ;PLC       ;               ;    ;    ;      ;5410;14  ;[RW]HMI Page (page100=0x00000100)
+1;P;PLC_MS_VERSION                 ;UDINT    ;0   ;PLC       ;               ;    ;    ;      ;5410;14  ;[RO]Mect Suite Version installed on Target (0 if before 3.4.0)
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
