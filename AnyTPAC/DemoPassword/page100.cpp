@@ -61,7 +61,7 @@ void page100::reload()
          rotateShowError(ui->myLineEdit, ERROR_LABEL_PERIOD_MS);
      */
     msVersion = getMSVersion();
-    uModel = PLC_PRODUCT_ID >> 8;
+    uModelFamily = PLC_PRODUCT_ID >> 8;
 
     ui->lblProtection->setText(QString("Page Prot.Level: [%1]") .arg(protection_level));
     ui->lblPasswordLevel->setText(QString("Active Level: [%1]") .arg(active_password));
@@ -70,7 +70,8 @@ void page100::reload()
     ui->lblUser->setText(QString("Pwd User:\t[%1] / [%2]") .arg(passwords[pwd_user_e]) .arg(pwd_user_e));
     ui->lblLevel->setText(QString("Level: [%1]") .arg(PasswordsString[active_password]));
     ui->lblMSVersion->setText(QString("MS Version: [%1]") .arg(msVersion, 6, 16, QChar('0')));
-    ui->lblModel->setText(QString("Model Family: [%1]") .arg(uModel, 6, 16, QChar('0')));
+    ui->lblFamily->setText(QString("Family:\t[%1]") .arg(uModelFamily, 6, 16, QChar('0')));
+    ui->lblModel->setText(QString("Model:\t[%1]") .arg(PLC_PRODUCT_ID, 8, 16, QChar('0')));
     // Check MS Version
     ui->atcmButtonPassword->setEnabled(msVersion >= minMSVersion);
     ui->atcmButtonSetPwd->setEnabled(msVersion >= minMSVersion);

@@ -31,7 +31,7 @@ private slots:
 private:
     Ui::page100 *ui;
     u_int32_t   msVersion;
-    u_int32_t   uModel;
+    u_int32_t   uModelFamily;
 };
 
 #endif // PAGE100_H
