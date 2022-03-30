@@ -2197,9 +2197,9 @@ NODE20</string>
   <widget class="ATCMlabel" name="atcmLabel_7">
    <property name="geometry">
     <rect>
-     <x>360</x>
+     <x>241</x>
      <y>67</y>
-     <width>120</width>
+     <width>118</width>
      <height>34</height>
     </rect>
    </property>
@@ -3129,6 +3129,80 @@ NODE20</string>
     <enum>QFrame::Raised</enum>
    </property>
   </widget>
+  <widget class="ATCMlabel" name="atcmLabel_PLC_MS_Version">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>362</x>
+     <y>70</y>
+     <width>118</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>6</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>0x00000000</string>
+   </property>
+   <property name="toolTip">
+    <string>PLC_MS_VERSION</string>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMlabel widget</string>
+   </property>
+   <property name="variable">
+    <string>PLC_MS_VERSION</string>
+   </property>
+   <property name="prefix">
+    <string>MS Ver: </string>
+   </property>
+   <property name="refresh">
+    <number>500</number>
+   </property>
+   <property name="max">
+    <string>0</string>
+   </property>
+   <property name="min">
+    <string>0</string>
+   </property>
+   <property name="viewStatus">
+    <bool>false</bool>
+   </property>
+   <property name="visibilityVar">
+    <string/>
+   </property>
+   <property name="bgColor">
+    <color>
+     <red>170</red>
+     <green>255</green>
+     <blue>255</blue>
+    </color>
+   </property>
+   <property name="fontColor">
+    <color>
+     <red>0</red>
+     <green>0</green>
+     <blue>0</blue>
+    </color>
+   </property>
+   <property name="borderWidth">
+    <number>0</number>
+   </property>
+   <property name="borderRadius">
+    <number>0</number>
+   </property>
+   <property name="format">
+    <enum>ATCMlabel::Hex</enum>
+   </property>
+  </widget>
   <zorder>label_PLC_DigIn_8</zorder>
   <zorder>label_PLC_DigIn_7</zorder>
   <zorder>atcmLed_PLC_DigIn_7</zorder>
@@ -3192,6 +3266,7 @@ NODE20</string>
   <zorder>line_vt_4</zorder>
   <zorder>line_vt_1</zorder>
   <zorder>atcmRTU_Start</zorder>
+  <zorder>atcmLabel_PLC_MS_Version</zorder>
  </widget>
  <customwidgets>
   <customwidget>

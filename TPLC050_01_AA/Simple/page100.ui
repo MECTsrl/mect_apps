@@ -978,7 +978,7 @@ background-color: rgb(0, 0, 0);
      <x>240</x>
      <y>0</y>
      <width>120</width>
-     <height>34</height>
+     <height>20</height>
     </rect>
    </property>
    <property name="font">
@@ -1586,9 +1586,9 @@ background-color: rgb(0, 0, 0);
    <property name="geometry">
     <rect>
      <x>240</x>
-     <y>34</y>
+     <y>20</y>
      <width>120</width>
-     <height>34</height>
+     <height>20</height>
     </rect>
    </property>
    <property name="font">
@@ -4062,6 +4062,80 @@ RTU3 ID=1 NODE_01</string>
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
+  <widget class="ATCMlabel" name="atcmLabel_PLC_MS_Version">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>242</x>
+     <y>40</y>
+     <width>120</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>6</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>0x00000000</string>
+   </property>
+   <property name="toolTip">
+    <string>PLC_MS_VERSION</string>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMlabel widget</string>
+   </property>
+   <property name="variable">
+    <string>PLC_MS_VERSION</string>
+   </property>
+   <property name="prefix">
+    <string>MS Ver: </string>
+   </property>
+   <property name="refresh">
+    <number>500</number>
+   </property>
+   <property name="max">
+    <string>0</string>
+   </property>
+   <property name="min">
+    <string>0</string>
+   </property>
+   <property name="viewStatus">
+    <bool>false</bool>
+   </property>
+   <property name="visibilityVar">
+    <string/>
+   </property>
+   <property name="bgColor">
+    <color>
+     <red>170</red>
+     <green>255</green>
+     <blue>255</blue>
+    </color>
+   </property>
+   <property name="fontColor">
+    <color>
+     <red>0</red>
+     <green>0</green>
+     <blue>0</blue>
+    </color>
+   </property>
+   <property name="borderWidth">
+    <number>0</number>
+   </property>
+   <property name="borderRadius">
+    <number>0</number>
+   </property>
+   <property name="format">
+    <enum>ATCMlabel::Hex</enum>
+   </property>
+  </widget>
   <zorder>label_PLC_DigIn_8</zorder>
   <zorder>atcmComboBox_PLC_AnInConf_1</zorder>
   <zorder>label_PLC_DigIn_4</zorder>
@@ -4133,6 +4207,7 @@ RTU3 ID=1 NODE_01</string>
   <zorder>line_hr_1</zorder>
   <zorder>line_vt_2</zorder>
   <zorder>line_hr_2</zorder>
+  <zorder>atcmLabel_PLC_MS_Version</zorder>
  </widget>
  <customwidgets>
   <customwidget>

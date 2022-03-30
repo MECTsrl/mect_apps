@@ -4,6 +4,12 @@
 /* put here the initalization */
 void setup(void)
 {
+    // Wait PLC Engine gets ready
+    while (PLC_EngineStatus < 2) {
+        fputc('*', stderr);
+        sleep(1);
+    }
+    // Start-up code
     doWrite_PLC_AnInConf_1(2);  // 2 = [V] 0..10
     doWrite_PLC_AnInConf_2(2);  // 2 = [V] 0..10
 

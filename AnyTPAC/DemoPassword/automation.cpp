@@ -8,6 +8,8 @@
 
 #define ROOTFS_FILE        "/rootfs_version"
 
+// get MS Version (before 3.3.12)
+// From Version 3.3.12 and above use variable PLC_MS_VERSION instead
 u_int32_t getMSVersion()
 {
     u_int32_t   msVersion = 0;

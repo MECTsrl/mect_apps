@@ -22,14 +22,20 @@
     <height>480</height>
    </size>
   </property>
+  <property name="font">
+   <font>
+    <family>DejaVu Sans</family>
+    <pointsize>7</pointsize>
+   </font>
+  </property>
   <property name="windowTitle">
    <string>page100</string>
   </property>
   <property name="styleSheet">
    <string notr="true">QWidget#page100
 {
-background-color: rgb(85, 0, 0);}
-</string>
+background-color: rgb(255, 255, 127);
+}</string>
   </property>
   <widget class="ATCMbutton" name="atcmButton_6">
    <property name="geometry">
@@ -722,13 +728,13 @@ background-color: rgb(85, 0, 0);}
      <x>700</x>
      <y>121</y>
      <width>101</width>
-     <height>41</height>
+     <height>20</height>
     </rect>
    </property>
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>10</pointsize>
+     <pointsize>9</pointsize>
     </font>
    </property>
    <property name="toolTip">
@@ -1823,15 +1829,15 @@ background-color: rgb(85, 0, 0);}
    <property name="geometry">
     <rect>
      <x>700</x>
-     <y>161</y>
+     <y>141</y>
      <width>101</width>
-     <height>41</height>
+     <height>20</height>
     </rect>
    </property>
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>10</pointsize>
+     <pointsize>9</pointsize>
     </font>
    </property>
    <property name="toolTip">
@@ -3860,15 +3866,15 @@ background-color: rgb(85, 0, 0);}
    <property name="geometry">
     <rect>
      <x>700</x>
-     <y>200</y>
+     <y>161</y>
      <width>101</width>
-     <height>41</height>
+     <height>20</height>
     </rect>
    </property>
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>10</pointsize>
+     <pointsize>9</pointsize>
      <weight>50</weight>
      <bold>false</bold>
     </font>
@@ -4507,6 +4513,80 @@ background-color: rgb(170, 85, 0);</string>
     <enum>QFrame::Raised</enum>
    </property>
   </widget>
+  <widget class="ATCMlabel" name="atcmLabel_PLC_MS_Version">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>700</x>
+     <y>181</y>
+     <width>100</width>
+     <height>59</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>6</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>0x00000000</string>
+   </property>
+   <property name="toolTip">
+    <string>PLC_MS_VERSION</string>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMlabel widget</string>
+   </property>
+   <property name="variable">
+    <string>PLC_MS_VERSION</string>
+   </property>
+   <property name="prefix">
+    <string>MS: </string>
+   </property>
+   <property name="refresh">
+    <number>500</number>
+   </property>
+   <property name="max">
+    <string>0</string>
+   </property>
+   <property name="min">
+    <string>0</string>
+   </property>
+   <property name="viewStatus">
+    <bool>false</bool>
+   </property>
+   <property name="visibilityVar">
+    <string/>
+   </property>
+   <property name="bgColor">
+    <color>
+     <red>255</red>
+     <green>255</green>
+     <blue>127</blue>
+    </color>
+   </property>
+   <property name="fontColor">
+    <color>
+     <red>0</red>
+     <green>0</green>
+     <blue>0</blue>
+    </color>
+   </property>
+   <property name="borderWidth">
+    <number>0</number>
+   </property>
+   <property name="borderRadius">
+    <number>0</number>
+   </property>
+   <property name="format">
+    <enum>ATCMlabel::Hex</enum>
+   </property>
+  </widget>
   <zorder>atcmButton_6</zorder>
   <zorder>atcmComboBox_PLC_AnInConf_4</zorder>
   <zorder>atcmLabel_24</zorder>
@@ -4591,6 +4671,7 @@ background-color: rgb(170, 85, 0);</string>
   <zorder>line_5</zorder>
   <zorder>line_7</zorder>
   <zorder>line_6</zorder>
+  <zorder>atcmLabel_PLC_MS_Version</zorder>
  </widget>
  <customwidgets>
   <customwidget>

@@ -60,7 +60,9 @@ void page100::reload()
        alarm banner initialization in QLineEdit:
          rotateShowError(ui->myLineEdit, ERROR_LABEL_PERIOD_MS);
      */
-    msVersion = getMSVersion();
+    // To check MS Version before 3.3.12
+    // msVersion = getMSVersion();
+    msVersion = PLC_MS_VERSION;
     uModelFamily = PLC_PRODUCT_ID >> 8;
 
     ui->lblProtection->setText(QString("Page Prot.Level: [%1]") .arg(protection_level));

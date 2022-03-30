@@ -53,6 +53,7 @@
     <message>
         <location filename="page100.ui" line="191"/>
         <location filename="page100.ui" line="255"/>
+        <location filename="page100.ui" line="391"/>
         <source>ATCMlabel widget</source>
         <translation type="unfinished"></translation>
     </message>
@@ -66,6 +67,8 @@
         <location filename="page100.ui" line="206"/>
         <location filename="page100.ui" line="267"/>
         <location filename="page100.ui" line="270"/>
+        <location filename="page100.ui" line="403"/>
+        <location filename="page100.ui" line="406"/>
         <source>0</source>
         <translation type="unfinished"></translation>
     </message>
@@ -93,6 +96,27 @@
     <message>
         <location filename="page100.ui" line="318"/>
         <source>ATCMdate widget</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page100.ui" line="358"/>
+        <source>TZ+DST = N</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page100.ui" line="385"/>
+        <source>000000</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page100.ui" line="388"/>
+        <location filename="page100.ui" line="394"/>
+        <source>PLC_MS_VERSION</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page100.ui" line="397"/>
+        <source>MS Version: </source>
         <translation type="unfinished"></translation>
     </message>
 </context>

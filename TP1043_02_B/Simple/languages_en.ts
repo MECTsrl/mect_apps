@@ -40,58 +40,77 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="188"/>
+        <location filename="page100.ui" line="287"/>
+        <source>000000</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page100.ui" line="290"/>
+        <location filename="page100.ui" line="296"/>
+        <source>PLC_MS_VERSION</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page100.ui" line="299"/>
+        <source>MS Version: </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page100.ui" line="361"/>
         <source>86400.00</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="191"/>
-        <location filename="page100.ui" line="197"/>
+        <location filename="page100.ui" line="364"/>
+        <location filename="page100.ui" line="370"/>
         <source>PLC_time</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="194"/>
-        <location filename="page100.ui" line="300"/>
+        <location filename="page100.ui" line="229"/>
+        <location filename="page100.ui" line="293"/>
+        <location filename="page100.ui" line="367"/>
         <source>ATCMlabel widget</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="200"/>
+        <location filename="page100.ui" line="373"/>
         <source>PLC_time:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="206"/>
-        <location filename="page100.ui" line="209"/>
-        <location filename="page100.ui" line="312"/>
-        <location filename="page100.ui" line="315"/>
+        <location filename="page100.ui" line="241"/>
+        <location filename="page100.ui" line="244"/>
+        <location filename="page100.ui" line="305"/>
+        <location filename="page100.ui" line="308"/>
+        <location filename="page100.ui" line="379"/>
+        <location filename="page100.ui" line="382"/>
         <source>0</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="254"/>
+        <location filename="page100.ui" line="183"/>
         <source>ATCM QTime</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="257"/>
+        <location filename="page100.ui" line="186"/>
         <source>ATCMtime widget</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="294"/>
+        <location filename="page100.ui" line="223"/>
         <source>65535</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="297"/>
-        <location filename="page100.ui" line="303"/>
+        <location filename="page100.ui" line="226"/>
+        <location filename="page100.ui" line="232"/>
         <source>PLC_Version</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="306"/>
+        <location filename="page100.ui" line="235"/>
         <source>Engine: v</source>
         <translation type="unfinished"></translation>
     </message>

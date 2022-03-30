@@ -34,64 +34,83 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="155"/>
+        <location filename="page100.ui" line="294"/>
         <source>65535</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="158"/>
-        <location filename="page100.ui" line="164"/>
+        <location filename="page100.ui" line="297"/>
+        <location filename="page100.ui" line="303"/>
         <source>PLC_Version</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="161"/>
-        <location filename="page100.ui" line="293"/>
+        <location filename="page100.ui" line="358"/>
+        <source>000000</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page100.ui" line="361"/>
+        <location filename="page100.ui" line="367"/>
+        <source>PLC_MS_VERSION</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page100.ui" line="370"/>
+        <source>MS Version: </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page100.ui" line="229"/>
+        <location filename="page100.ui" line="300"/>
+        <location filename="page100.ui" line="364"/>
         <source>ATCMlabel widget</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="167"/>
+        <location filename="page100.ui" line="306"/>
         <source>Engine: v</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="173"/>
-        <location filename="page100.ui" line="176"/>
-        <location filename="page100.ui" line="305"/>
-        <location filename="page100.ui" line="308"/>
+        <location filename="page100.ui" line="241"/>
+        <location filename="page100.ui" line="244"/>
+        <location filename="page100.ui" line="312"/>
+        <location filename="page100.ui" line="315"/>
+        <location filename="page100.ui" line="376"/>
+        <location filename="page100.ui" line="379"/>
         <source>0</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="219"/>
+        <location filename="page100.ui" line="155"/>
         <source>ATCMbutton widget</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="222"/>
+        <location filename="page100.ui" line="158"/>
         <source>menu</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="251"/>
-        <location filename="page100.ui" line="254"/>
+        <location filename="page100.ui" line="187"/>
+        <location filename="page100.ui" line="190"/>
         <source>TP1070_01_C</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="287"/>
+        <location filename="page100.ui" line="223"/>
         <source>86400.00</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="290"/>
-        <location filename="page100.ui" line="296"/>
+        <location filename="page100.ui" line="226"/>
+        <location filename="page100.ui" line="232"/>
         <source>PLC_time</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="299"/>
+        <location filename="page100.ui" line="235"/>
         <source>PLC_time:</source>
         <translation type="unfinished"></translation>
     </message>

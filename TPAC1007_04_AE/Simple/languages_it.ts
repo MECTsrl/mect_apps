@@ -74,6 +74,7 @@
         <location filename="page100.ui" line="2219"/>
         <location filename="page100.ui" line="2360"/>
         <location filename="page100.ui" line="2884"/>
+        <location filename="page100.ui" line="3159"/>
         <source>ATCMlabel widget</source>
         <translation type="unfinished"></translation>
     </message>
@@ -96,6 +97,8 @@
         <location filename="page100.ui" line="2372"/>
         <location filename="page100.ui" line="2893"/>
         <location filename="page100.ui" line="2896"/>
+        <location filename="page100.ui" line="3171"/>
+        <location filename="page100.ui" line="3174"/>
         <source>0</source>
         <translation type="unfinished"></translation>
     </message>
@@ -488,6 +491,24 @@ NODE20</source>
         <location filename="page100.ui" line="2938"/>
         <location filename="page100.ui" line="2950"/>
         <source>PLC_DigIn_3</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page100.ui" line="3153"/>
+        <source>0x00000000</source>
+        <oldsource>000000</oldsource>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page100.ui" line="3156"/>
+        <location filename="page100.ui" line="3162"/>
+        <source>PLC_MS_VERSION</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page100.ui" line="3165"/>
+        <source>MS Ver: </source>
+        <oldsource>MS Version: </oldsource>
         <translation type="unfinished"></translation>
     </message>
 </context>

@@ -132,6 +132,7 @@
         <location filename="page100.ui" line="3785"/>
         <location filename="page100.ui" line="3923"/>
         <location filename="page100.ui" line="3992"/>
+        <location filename="page100.ui" line="4092"/>
         <source>ATCMlabel widget</source>
         <translation type="unfinished"></translation>
     </message>
@@ -178,6 +179,8 @@
         <location filename="page100.ui" line="3938"/>
         <location filename="page100.ui" line="4004"/>
         <location filename="page100.ui" line="4007"/>
+        <location filename="page100.ui" line="4104"/>
+        <location filename="page100.ui" line="4107"/>
         <source>0</source>
         <translation type="unfinished"></translation>
     </message>
@@ -549,6 +552,22 @@
         <location filename="page100.ui" line="4058"/>
         <source>LPC
 RTU3 ID=1 NODE_01</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page100.ui" line="4086"/>
+        <source>0x00000000</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page100.ui" line="4089"/>
+        <location filename="page100.ui" line="4095"/>
+        <source>PLC_MS_VERSION</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page100.ui" line="4098"/>
+        <source>MS Ver: </source>
         <translation type="unfinished"></translation>
     </message>
     <message>

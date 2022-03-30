@@ -185,6 +185,8 @@
         <location filename="page100.ui" line="7554"/>
         <location filename="page100.ui" line="7752"/>
         <location filename="page100.ui" line="7755"/>
+        <location filename="page100.ui" line="7893"/>
+        <location filename="page100.ui" line="7896"/>
         <source>0</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1086,6 +1088,22 @@ NODE1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="page100.ui" line="7875"/>
+        <source>0x00000000</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page100.ui" line="7878"/>
+        <location filename="page100.ui" line="7884"/>
+        <source>PLC_MS_VERSION</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page100.ui" line="7887"/>
+        <source>MS: </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="page100.ui" line="7127"/>
         <location filename="page100.ui" line="7133"/>
         <source>PLC_AnIn_1</source>
@@ -1251,6 +1269,7 @@ NODE1</source>
         <location filename="page100.ui" line="7343"/>
         <location filename="page100.ui" line="7539"/>
         <location filename="page100.ui" line="7740"/>
+        <location filename="page100.ui" line="7881"/>
         <source>ATCMlabel widget</source>
         <translation type="unfinished"></translation>
     </message>

@@ -161,8 +161,25 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="page100.ui" line="1385"/>
+        <source>0x00000000</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page100.ui" line="1388"/>
+        <location filename="page100.ui" line="1394"/>
+        <source>PLC_MS_VERSION</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page100.ui" line="1397"/>
+        <source>MS Version: </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="page100.ui" line="570"/>
         <location filename="page100.ui" line="773"/>
+        <location filename="page100.ui" line="1391"/>
         <source>ATCMlabel widget</source>
         <translation type="unfinished"></translation>
     </message>
@@ -171,6 +188,8 @@
         <location filename="page100.ui" line="585"/>
         <location filename="page100.ui" line="785"/>
         <location filename="page100.ui" line="788"/>
+        <location filename="page100.ui" line="1403"/>
+        <location filename="page100.ui" line="1406"/>
         <source>0</source>
         <translation type="unfinished"></translation>
     </message>

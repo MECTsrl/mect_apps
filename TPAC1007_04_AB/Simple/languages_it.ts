@@ -47,6 +47,7 @@
         <location filename="page100.ui" line="3764"/>
         <location filename="page100.ui" line="3932"/>
         <location filename="page100.ui" line="4031"/>
+        <location filename="page100.ui" line="4567"/>
         <source>ATCMlabel widget</source>
         <translation type="unfinished"></translation>
     </message>
@@ -95,6 +96,8 @@
         <location filename="page100.ui" line="3944"/>
         <location filename="page100.ui" line="4040"/>
         <location filename="page100.ui" line="4043"/>
+        <location filename="page100.ui" line="4579"/>
+        <location filename="page100.ui" line="4582"/>
         <source>0</source>
         <translation type="unfinished"></translation>
     </message>
@@ -182,7 +185,7 @@
     </message>
     <message>
         <location filename="page100.ui" line="433"/>
-        <location filename="page100.ui" line="439"/>
+        <location filename="page100.ui" line="445"/>
         <source>PLC_DigIn_5</source>
         <translation type="unfinished"></translation>
     </message>
@@ -272,13 +275,13 @@
     </message>
     <message>
         <location filename="page100.ui" line="851"/>
-        <location filename="page100.ui" line="857"/>
+        <location filename="page100.ui" line="863"/>
         <source>PLC_DigIn_9</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="page100.ui" line="893"/>
-        <location filename="page100.ui" line="899"/>
+        <location filename="page100.ui" line="905"/>
         <source>PLC_DigIn_3</source>
         <translation type="unfinished"></translation>
     </message>
@@ -308,7 +311,7 @@
     </message>
     <message>
         <location filename="page100.ui" line="1107"/>
-        <location filename="page100.ui" line="1113"/>
+        <location filename="page100.ui" line="1119"/>
         <source>PLC_DigIn_2</source>
         <translation type="unfinished"></translation>
     </message>
@@ -382,7 +385,7 @@
     </message>
     <message>
         <location filename="page100.ui" line="1625"/>
-        <location filename="page100.ui" line="1631"/>
+        <location filename="page100.ui" line="1637"/>
         <source>PLC_DigIn_6</source>
         <translation type="unfinished"></translation>
     </message>
@@ -418,7 +421,7 @@
     </message>
     <message>
         <location filename="page100.ui" line="1973"/>
-        <location filename="page100.ui" line="1979"/>
+        <location filename="page100.ui" line="1985"/>
         <source>PLC_DigIn_8</source>
         <translation type="unfinished"></translation>
     </message>
@@ -572,7 +575,7 @@
     </message>
     <message>
         <location filename="page100.ui" line="3246"/>
-        <location filename="page100.ui" line="3252"/>
+        <location filename="page100.ui" line="3258"/>
         <source>PLC_DigIn_1</source>
         <translation type="unfinished"></translation>
     </message>
@@ -602,7 +605,8 @@
     <message>
         <location filename="page100.ui" line="3543"/>
         <location filename="page100.ui" line="3546"/>
-        <source>TPAC1007_4AB</source>
+        <source>TPAC1007_04AB</source>
+        <oldsource>TPAC1007_4AB</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -652,7 +656,7 @@
     </message>
     <message>
         <location filename="page100.ui" line="3843"/>
-        <location filename="page100.ui" line="3849"/>
+        <location filename="page100.ui" line="3855"/>
         <source>PLC_DigIn_4</source>
         <translation type="unfinished"></translation>
     </message>
@@ -706,7 +710,7 @@
     </message>
     <message>
         <location filename="page100.ui" line="4385"/>
-        <location filename="page100.ui" line="4391"/>
+        <location filename="page100.ui" line="4397"/>
         <source>PLC_DigIn_7</source>
         <translation type="unfinished"></translation>
     </message>
@@ -719,6 +723,22 @@
     <message>
         <location filename="page100.ui" line="4534"/>
         <source>Simple</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page100.ui" line="4561"/>
+        <source>000000</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page100.ui" line="4564"/>
+        <location filename="page100.ui" line="4570"/>
+        <source>PLC_MS_VERSION</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page100.ui" line="4573"/>
+        <source>MS Ver.: </source>
         <translation type="unfinished"></translation>
     </message>
 </context>

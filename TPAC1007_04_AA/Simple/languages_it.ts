@@ -117,6 +117,7 @@
         <location filename="page100.ui" line="3033"/>
         <location filename="page100.ui" line="4161"/>
         <location filename="page100.ui" line="4232"/>
+        <location filename="page100.ui" line="4328"/>
         <source>ATCMlabel widget</source>
         <translation type="unfinished"></translation>
     </message>
@@ -151,6 +152,8 @@
         <location filename="page100.ui" line="4173"/>
         <location filename="page100.ui" line="4241"/>
         <location filename="page100.ui" line="4244"/>
+        <location filename="page100.ui" line="4340"/>
+        <location filename="page100.ui" line="4343"/>
         <source>0</source>
         <translation type="unfinished"></translation>
     </message>
@@ -686,6 +689,22 @@
     <message>
         <location filename="page100.ui" line="4295"/>
         <source>12</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page100.ui" line="4322"/>
+        <source>000000</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page100.ui" line="4325"/>
+        <location filename="page100.ui" line="4331"/>
+        <source>PLC_MS_VERSION</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page100.ui" line="4334"/>
+        <source>Mect Suite Version: </source>
         <translation type="unfinished"></translation>
     </message>
 </context>

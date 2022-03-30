@@ -200,9 +200,9 @@ background-color: rgb(170, 255, 255);
    <property name="geometry">
     <rect>
      <x>364</x>
-     <y>85</y>
+     <y>81</y>
      <width>58</width>
-     <height>17</height>
+     <height>20</height>
     </rect>
    </property>
    <property name="font">
@@ -2239,7 +2239,7 @@ background-color: rgb(170, 255, 255);
      <x>364</x>
      <y>102</y>
      <width>116</width>
-     <height>34</height>
+     <height>18</height>
     </rect>
    </property>
    <property name="font">
@@ -2601,7 +2601,7 @@ background-color: rgb(170, 255, 255);
    <property name="geometry">
     <rect>
      <x>1</x>
-     <y>102</y>
+     <y>101</y>
      <width>481</width>
      <height>3</height>
     </rect>
@@ -2711,7 +2711,7 @@ background-color: rgb(170, 255, 255);
    <property name="geometry">
     <rect>
      <x>364</x>
-     <y>85</y>
+     <y>79</y>
      <width>116</width>
      <height>3</height>
     </rect>
@@ -2732,13 +2732,13 @@ background-color: rgb(170, 255, 255);
      <x>364</x>
      <y>51</y>
      <width>116</width>
-     <height>17</height>
+     <height>15</height>
     </rect>
    </property>
    <property name="font">
     <font>
      <family>DejaVu Sans Mono</family>
-     <pointsize>8</pointsize>
+     <pointsize>7</pointsize>
     </font>
    </property>
    <property name="toolTip">
@@ -2840,15 +2840,15 @@ background-color: rgb(170, 255, 255);
    <property name="geometry">
     <rect>
      <x>364</x>
-     <y>68</y>
+     <y>66</y>
      <width>116</width>
-     <height>17</height>
+     <height>15</height>
     </rect>
    </property>
    <property name="font">
     <font>
      <family>DejaVu Sans Mono</family>
-     <pointsize>8</pointsize>
+     <pointsize>7</pointsize>
     </font>
    </property>
    <property name="toolTip">
@@ -3074,9 +3074,9 @@ background-color: rgb(170, 255, 255);
    <property name="geometry">
     <rect>
      <x>422</x>
-     <y>85</y>
+     <y>81</y>
      <width>58</width>
-     <height>17</height>
+     <height>20</height>
     </rect>
    </property>
    <property name="font">
@@ -4066,6 +4066,80 @@ background-color: rgb(170, 255, 255);
     <enum>QFrame::Raised</enum>
    </property>
   </widget>
+  <widget class="ATCMlabel" name="atcmLabel_PLC_MS_Version">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>364</x>
+     <y>120</y>
+     <width>116</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>5</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>000000</string>
+   </property>
+   <property name="toolTip">
+    <string>PLC_MS_VERSION</string>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMlabel widget</string>
+   </property>
+   <property name="variable">
+    <string>PLC_MS_VERSION</string>
+   </property>
+   <property name="prefix">
+    <string>MS Version: </string>
+   </property>
+   <property name="refresh">
+    <number>500</number>
+   </property>
+   <property name="max">
+    <string>0</string>
+   </property>
+   <property name="min">
+    <string>0</string>
+   </property>
+   <property name="viewStatus">
+    <bool>false</bool>
+   </property>
+   <property name="visibilityVar">
+    <string/>
+   </property>
+   <property name="bgColor">
+    <color>
+     <red>170</red>
+     <green>255</green>
+     <blue>255</blue>
+    </color>
+   </property>
+   <property name="fontColor">
+    <color>
+     <red>0</red>
+     <green>0</green>
+     <blue>0</blue>
+    </color>
+   </property>
+   <property name="borderWidth">
+    <number>0</number>
+   </property>
+   <property name="borderRadius">
+    <number>0</number>
+   </property>
+   <property name="format">
+    <enum>ATCMlabel::Hex</enum>
+   </property>
+  </widget>
   <zorder>atcmSpinbox</zorder>
   <zorder>atcmLabel_FWrevision</zorder>
   <zorder>atcmComboBox_PLC_AnInConf_1</zorder>
@@ -4150,6 +4224,7 @@ background-color: rgb(170, 255, 255);
   <zorder>atcmLed_PLC_DigIn_1</zorder>
   <zorder>atcmButton_2</zorder>
   <zorder>atcmButton_3</zorder>
+  <zorder>atcmLabel_PLC_MS_Version</zorder>
  </widget>
  <customwidgets>
   <customwidget>

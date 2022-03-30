@@ -1814,15 +1814,15 @@ color: rgb(0, 0, 0);</string>
    <property name="geometry">
     <rect>
      <x>271</x>
-     <y>35</y>
+     <y>51</y>
      <width>91</width>
-     <height>34</height>
+     <height>19</height>
     </rect>
    </property>
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>10</pointsize>
+     <pointsize>8</pointsize>
      <weight>50</weight>
      <bold>false</bold>
     </font>
@@ -4537,6 +4537,80 @@ color: rgb(0, 0, 0);</string>
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
+  <widget class="ATCMlabel" name="atcmLabel_PLC_MS_Version">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>31</y>
+     <width>90</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>6</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>000000</string>
+   </property>
+   <property name="toolTip">
+    <string>PLC_MS_VERSION</string>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMlabel widget</string>
+   </property>
+   <property name="variable">
+    <string>PLC_MS_VERSION</string>
+   </property>
+   <property name="prefix">
+    <string>MS Ver.: </string>
+   </property>
+   <property name="refresh">
+    <number>500</number>
+   </property>
+   <property name="max">
+    <string>0</string>
+   </property>
+   <property name="min">
+    <string>0</string>
+   </property>
+   <property name="viewStatus">
+    <bool>false</bool>
+   </property>
+   <property name="visibilityVar">
+    <string/>
+   </property>
+   <property name="bgColor">
+    <color>
+     <red>170</red>
+     <green>255</green>
+     <blue>255</blue>
+    </color>
+   </property>
+   <property name="fontColor">
+    <color>
+     <red>0</red>
+     <green>0</green>
+     <blue>0</blue>
+    </color>
+   </property>
+   <property name="borderWidth">
+    <number>0</number>
+   </property>
+   <property name="borderRadius">
+    <number>0</number>
+   </property>
+   <property name="format">
+    <enum>ATCMlabel::Hex</enum>
+   </property>
+  </widget>
   <zorder>label_PLC_Capture_us</zorder>
   <zorder>atcmLabel_PLC_Capture</zorder>
   <zorder>atcmLabel_PLC_AnIn_1</zorder>
@@ -4624,6 +4698,7 @@ color: rgb(0, 0, 0);</string>
   <zorder>atcmButton_PLC_DigOut_6</zorder>
   <zorder>atcmButton_PLC_DigOut_8</zorder>
   <zorder>atcmButton_PLC_DigOut_1</zorder>
+  <zorder>atcmLabel_PLC_MS_Version</zorder>
  </widget>
  <customwidgets>
   <customwidget>

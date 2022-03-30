@@ -85,6 +85,7 @@
         <location filename="page100.ui" line="2258"/>
         <location filename="page100.ui" line="3097"/>
         <location filename="page100.ui" line="3272"/>
+        <location filename="page100.ui" line="4096"/>
         <source>ATCMlabel widget</source>
         <translation type="unfinished"></translation>
     </message>
@@ -114,6 +115,8 @@
         <location filename="page100.ui" line="3109"/>
         <location filename="page100.ui" line="3284"/>
         <location filename="page100.ui" line="3287"/>
+        <location filename="page100.ui" line="4108"/>
+        <location filename="page100.ui" line="4111"/>
         <source>0</source>
         <translation type="unfinished"></translation>
     </message>
@@ -641,6 +644,22 @@
         <location filename="page100.ui" line="4019"/>
         <location filename="page100.ui" line="4031"/>
         <source>ContinuousWritingPLC</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page100.ui" line="4090"/>
+        <source>000000</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page100.ui" line="4093"/>
+        <location filename="page100.ui" line="4099"/>
+        <source>PLC_MS_VERSION</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page100.ui" line="4102"/>
+        <source>MS Version: </source>
         <translation type="unfinished"></translation>
     </message>
 </context>

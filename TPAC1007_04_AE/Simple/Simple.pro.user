@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 2.7.84, 2022-03-28T16:42:15. -->
+<!-- Written by QtCreator 2.7.84, 2022-03-30T15:23:53. -->
 <qtcreator>
  <data>
   <variable>ProjectExplorer.Project.ActiveTarget</variable>
@@ -252,15 +252,15 @@
        <value type="QString">C:/Qt485/imx28/rootfs</value>
       </valuelist>
       <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedTimes">
-       <value type="QDateTime">2022-02-22T17:04:06</value>
-       <value type="QDateTime">2022-02-22T17:04:07</value>
-       <value type="QDateTime">2022-02-22T17:04:06</value>
+       <value type="QDateTime">2022-03-30T15:23:08</value>
+       <value type="QDateTime">2022-03-30T15:23:09</value>
+       <value type="QDateTime">2022-03-30T15:23:08</value>
        <value type="QDateTime">2022-02-22T13:53:34</value>
        <value type="QDateTime">2022-02-22T13:53:34</value>
-       <value type="QDateTime">2022-02-22T17:04:06</value>
+       <value type="QDateTime">2022-03-30T15:23:08</value>
        <value type="QDateTime">2022-02-22T13:53:33</value>
-       <value type="QDateTime">2022-02-22T17:04:06</value>
-       <value type="QDateTime">2022-02-22T17:04:06</value>
+       <value type="QDateTime">2022-03-30T15:23:08</value>
+       <value type="QDateTime">2022-03-30T15:23:08</value>
        <value type="QDateTime">2022-02-22T13:53:33</value>
        <value type="QDateTime">2022-02-22T13:53:34</value>
        <value type="QDateTime">2022-02-22T13:53:34</value>

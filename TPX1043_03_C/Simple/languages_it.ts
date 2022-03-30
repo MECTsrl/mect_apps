@@ -115,6 +115,7 @@
     <message>
         <location filename="page100.ui" line="467"/>
         <location filename="page100.ui" line="929"/>
+        <location filename="page100.ui" line="1006"/>
         <source>ATCMlabel widget</source>
         <translation type="unfinished"></translation>
     </message>
@@ -128,6 +129,8 @@
         <location filename="page100.ui" line="482"/>
         <location filename="page100.ui" line="941"/>
         <location filename="page100.ui" line="944"/>
+        <location filename="page100.ui" line="1018"/>
+        <location filename="page100.ui" line="1021"/>
         <source>0</source>
         <translation type="unfinished"></translation>
     </message>
@@ -193,6 +196,22 @@
     <message>
         <location filename="page100.ui" line="935"/>
         <source>FastIO_Dir </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page100.ui" line="1000"/>
+        <source>0x00000000</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page100.ui" line="1003"/>
+        <location filename="page100.ui" line="1009"/>
+        <source>PLC_MS_VERSION</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page100.ui" line="1012"/>
+        <source>MS Version: </source>
         <translation type="unfinished"></translation>
     </message>
 </context>

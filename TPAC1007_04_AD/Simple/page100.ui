@@ -275,9 +275,9 @@ background-color: rgb(255, 255, 127);
    <property name="geometry">
     <rect>
      <x>360</x>
-     <y>68</y>
+     <y>95</y>
      <width>120</width>
-     <height>34</height>
+     <height>25</height>
     </rect>
    </property>
    <property name="font">
@@ -1283,9 +1283,9 @@ background-color: rgb(255, 255, 127);
    <property name="geometry">
     <rect>
      <x>360</x>
-     <y>102</y>
+     <y>120</y>
      <width>120</width>
-     <height>34</height>
+     <height>25</height>
     </rect>
    </property>
    <property name="font">
@@ -3553,9 +3553,9 @@ background-color: rgb(255, 255, 127);
    <property name="geometry">
     <rect>
      <x>360</x>
-     <y>136</y>
+     <y>145</y>
      <width>120</width>
-     <height>34</height>
+     <height>25</height>
     </rect>
    </property>
    <property name="font">
@@ -4228,6 +4228,80 @@ background-color: rgb(255, 255, 127);
     <string/>
    </property>
   </widget>
+  <widget class="ATCMlabel" name="atcmLabel_PLC_MS_Version">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>361</x>
+     <y>69</y>
+     <width>120</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>6</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>000000</string>
+   </property>
+   <property name="toolTip">
+    <string>PLC_MS_VERSION</string>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMlabel widget</string>
+   </property>
+   <property name="variable">
+    <string>PLC_MS_VERSION</string>
+   </property>
+   <property name="prefix">
+    <string>MS Version: </string>
+   </property>
+   <property name="refresh">
+    <number>500</number>
+   </property>
+   <property name="max">
+    <string>0</string>
+   </property>
+   <property name="min">
+    <string>0</string>
+   </property>
+   <property name="viewStatus">
+    <bool>false</bool>
+   </property>
+   <property name="visibilityVar">
+    <string/>
+   </property>
+   <property name="bgColor">
+    <color>
+     <red>170</red>
+     <green>255</green>
+     <blue>255</blue>
+    </color>
+   </property>
+   <property name="fontColor">
+    <color>
+     <red>0</red>
+     <green>0</green>
+     <blue>0</blue>
+    </color>
+   </property>
+   <property name="borderWidth">
+    <number>0</number>
+   </property>
+   <property name="borderRadius">
+    <number>0</number>
+   </property>
+   <property name="format">
+    <enum>ATCMlabel::Hex</enum>
+   </property>
+  </widget>
   <zorder>label</zorder>
   <zorder>label_PLC_DigIn_10</zorder>
   <zorder>label_PLC_DigIn_11</zorder>
@@ -4313,6 +4387,7 @@ background-color: rgb(255, 255, 127);
   <zorder>line_vt_1</zorder>
   <zorder>line_vt_2</zorder>
   <zorder>atcmButton_menu</zorder>
+  <zorder>atcmLabel_PLC_MS_Version</zorder>
  </widget>
  <customwidgets>
   <customwidget>

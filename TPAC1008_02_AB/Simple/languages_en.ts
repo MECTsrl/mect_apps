@@ -43,6 +43,7 @@
         <location filename="page100.ui" line="3808"/>
         <location filename="page100.ui" line="3938"/>
         <location filename="page100.ui" line="4102"/>
+        <location filename="page100.ui" line="4195"/>
         <source>ATCMlabel widget</source>
         <translation type="unfinished"></translation>
     </message>
@@ -97,6 +98,8 @@
         <location filename="page100.ui" line="3950"/>
         <location filename="page100.ui" line="4111"/>
         <location filename="page100.ui" line="4114"/>
+        <location filename="page100.ui" line="4207"/>
+        <location filename="page100.ui" line="4210"/>
         <source>0</source>
         <translation type="unfinished"></translation>
     </message>
@@ -712,6 +715,22 @@
         <location filename="page100.ui" line="4099"/>
         <location filename="page100.ui" line="4105"/>
         <source>PLC_CaptureT2_Lo</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page100.ui" line="4189"/>
+        <source>0x00000000</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page100.ui" line="4192"/>
+        <location filename="page100.ui" line="4198"/>
+        <source>PLC_MS_VERSION</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page100.ui" line="4201"/>
+        <source>MS Version: </source>
         <translation type="unfinished"></translation>
     </message>
 </context>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 2.7.84, 2022-03-28T16:32:10. -->
+<!-- Written by QtCreator 2.7.84, 2022-03-30T16:47:09. -->
 <qtcreator>
  <data>
   <variable>ProjectExplorer.Project.ActiveTarget</variable>
@@ -195,11 +195,41 @@
       <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Upload files via SFTP</value>
       <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
       <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">RemoteLinux.DirectUploadStep</value>
-      <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedFiles"/>
-      <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedHosts"/>
-      <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedRemotePaths"/>
-      <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedSysroots"/>
-      <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedTimes"/>
+      <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedFiles">
+       <value type="QString">C:/mect_apps/TP1043_01_A/Simple/config/trend1.csv</value>
+       <value type="QString">C:/mect_apps/TP1043_01_A/Simple/hmi</value>
+       <value type="QString">C:/mect_apps/TP1043_01_A/Simple/config/system.ini</value>
+       <value type="QString">C:/mect_apps/TP1043_01_A/Simple/config/Crosstable.csv</value>
+       <value type="QString">C:/mect_apps/TP1043_01_A/Simple/config/splash.png</value>
+      </valuelist>
+      <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedHosts">
+       <value type="QString">192.168.5.76</value>
+       <value type="QString">192.168.5.76</value>
+       <value type="QString">192.168.5.76</value>
+       <value type="QString">192.168.5.76</value>
+       <value type="QString">192.168.5.76</value>
+      </valuelist>
+      <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedRemotePaths">
+       <value type="QString">/local/data/customtrend</value>
+       <value type="QString">/local/root</value>
+       <value type="QString">/local/etc/sysconfig</value>
+       <value type="QString">/local/etc/sysconfig</value>
+       <value type="QString">/local/etc/sysconfig/img</value>
+      </valuelist>
+      <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedSysroots">
+       <value type="QString">C:/Qt485/imx28/rootfs</value>
+       <value type="QString">C:/Qt485/imx28/rootfs</value>
+       <value type="QString">C:/Qt485/imx28/rootfs</value>
+       <value type="QString">C:/Qt485/imx28/rootfs</value>
+       <value type="QString">C:/Qt485/imx28/rootfs</value>
+      </valuelist>
+      <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedTimes">
+       <value type="QDateTime">2022-03-30T12:59:12</value>
+       <value type="QDateTime">2022-03-30T12:59:12</value>
+       <value type="QDateTime">2022-03-30T12:59:12</value>
+       <value type="QDateTime">2022-03-30T12:59:12</value>
+       <value type="QDateTime">2022-03-30T12:59:12</value>
+      </valuelist>
       <value type="bool" key="RemoteLinux.GenericDirectUploadStep.Incremental">false</value>
      </valuemap>
      <value type="int" key="ProjectExplorer.BuildStepList.StepsCount">2</value>
@@ -280,6 +310,12 @@
  </data>
  <data>
   <variable>ProjectExplorer.Project.UserStickyKeys</variable>
-  <valuelist type="QVariantList"/>
+  <valuelist type="QVariantList">
+   <value type="QString">Qt4ProjectManager.MaemoRunConfiguration.LastDeployedHosts</value>
+   <value type="QString">Qt4ProjectManager.MaemoRunConfiguration.LastDeployedRemotePaths</value>
+   <value type="QString">Qt4ProjectManager.MaemoRunConfiguration.LastDeployedSysroots</value>
+   <value type="QString">Qt4ProjectManager.MaemoRunConfiguration.LastDeployedFiles</value>
+   <value type="QString">Qt4ProjectManager.MaemoRunConfiguration.LastDeployedTimes</value>
+  </valuelist>
  </data>
 </qtcreator>

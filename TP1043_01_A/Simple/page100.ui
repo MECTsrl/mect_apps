@@ -167,10 +167,10 @@ background-color: rgb(170, 255, 127);
    </property>
    <property name="geometry">
     <rect>
-     <x>240</x>
-     <y>250</y>
-     <width>120</width>
-     <height>24</height>
+     <x>160</x>
+     <y>240</y>
+     <width>160</width>
+     <height>32</height>
     </rect>
    </property>
    <property name="font">
@@ -231,10 +231,10 @@ background-color: rgb(170, 255, 127);
    </property>
    <property name="geometry">
     <rect>
-     <x>360</x>
-     <y>248</y>
-     <width>120</width>
-     <height>24</height>
+     <x>320</x>
+     <y>240</y>
+     <width>160</width>
+     <height>32</height>
     </rect>
    </property>
    <property name="font">
@@ -359,6 +359,80 @@ background-color: rgb(170, 255, 127);
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="ATCMlabel" name="atcmLabel_PLC_MS_Version">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>240</y>
+     <width>160</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>6</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>0x00000000</string>
+   </property>
+   <property name="toolTip">
+    <string>PLC_MS_VERSION</string>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMlabel widget</string>
+   </property>
+   <property name="variable">
+    <string>PLC_MS_VERSION</string>
+   </property>
+   <property name="prefix">
+    <string>MS Version: </string>
+   </property>
+   <property name="refresh">
+    <number>500</number>
+   </property>
+   <property name="max">
+    <string>0</string>
+   </property>
+   <property name="min">
+    <string>0</string>
+   </property>
+   <property name="viewStatus">
+    <bool>false</bool>
+   </property>
+   <property name="visibilityVar">
+    <string/>
+   </property>
+   <property name="bgColor">
+    <color>
+     <red>170</red>
+     <green>255</green>
+     <blue>255</blue>
+    </color>
+   </property>
+   <property name="fontColor">
+    <color>
+     <red>0</red>
+     <green>0</green>
+     <blue>0</blue>
+    </color>
+   </property>
+   <property name="borderWidth">
+    <number>0</number>
+   </property>
+   <property name="borderRadius">
+    <number>0</number>
+   </property>
+   <property name="format">
+    <enum>ATCMlabel::Hex</enum>
    </property>
   </widget>
  </widget>

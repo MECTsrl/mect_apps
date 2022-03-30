@@ -28,7 +28,7 @@
   <property name="styleSheet">
    <string notr="true">QWidget#page100
 {
-background-color: rgb(0, 0, 127);
+background-color: rgb(255, 255, 127);
 }</string>
   </property>
   <widget class="ATCMcombobox" name="atcmComboBox_PLC_AnInConf_4">
@@ -3721,6 +3721,80 @@ background-color: rgb(170, 85, 0);</string>
     <enum>QFrame::Plain</enum>
    </property>
   </widget>
+  <widget class="ATCMlabel" name="atcmLabel_PLC_MS_Version">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>402</x>
+     <y>0</y>
+     <width>197</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>8</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>0x00000000</string>
+   </property>
+   <property name="toolTip">
+    <string>PLC_MS_VERSION</string>
+   </property>
+   <property name="whatsThis">
+    <string>ATCMlabel widget</string>
+   </property>
+   <property name="variable">
+    <string>PLC_MS_VERSION</string>
+   </property>
+   <property name="prefix">
+    <string>MS Ver: </string>
+   </property>
+   <property name="refresh">
+    <number>500</number>
+   </property>
+   <property name="max">
+    <string>0</string>
+   </property>
+   <property name="min">
+    <string>0</string>
+   </property>
+   <property name="viewStatus">
+    <bool>false</bool>
+   </property>
+   <property name="visibilityVar">
+    <string/>
+   </property>
+   <property name="bgColor">
+    <color>
+     <red>170</red>
+     <green>255</green>
+     <blue>255</blue>
+    </color>
+   </property>
+   <property name="fontColor">
+    <color>
+     <red>0</red>
+     <green>0</green>
+     <blue>0</blue>
+    </color>
+   </property>
+   <property name="borderWidth">
+    <number>0</number>
+   </property>
+   <property name="borderRadius">
+    <number>0</number>
+   </property>
+   <property name="format">
+    <enum>ATCMlabel::Hex</enum>
+   </property>
+  </widget>
   <zorder>atcmLabel_PLC_time_2</zorder>
   <zorder>atcmComboBox_PLC_AnInConf_4</zorder>
   <zorder>atcmLed_12</zorder>
@@ -3800,6 +3874,7 @@ background-color: rgb(170, 85, 0);</string>
   <zorder>line_3</zorder>
   <zorder>line_5</zorder>
   <zorder>label_Qt_Project_2</zorder>
+  <zorder>atcmLabel_PLC_MS_Version</zorder>
  </widget>
  <customwidgets>
   <customwidget>

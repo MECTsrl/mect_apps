@@ -45,7 +45,12 @@ static int fd;
 void setup(void)
 {
     int nSide = 0;
-
+    // Wait PLC Engine gets ready
+    while (PLC_EngineStatus < 2) {
+        fputc('*', stderr);
+        sleep(1);
+    }
+    // Start-up code
     beginWrite();
     // Abilitazione dei Fast I/O
     addWrite_PLC_FastIO_Ena(0x0001FF01);
@@ -56,6 +61,7 @@ void setup(void)
     addWrite_Usb1_Status(USB_UNPLUGGED);
     // Marca SD Card come EMPTY
     addWrite_SDCard_Status(SDCARD_EMPTY);
+
     // Buzzer Defaults
     addWrite_Buzzer_Repeat(1);
     addWrite_Buzzer_Off_Time(50);

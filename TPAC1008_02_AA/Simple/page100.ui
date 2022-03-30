@@ -4152,6 +4152,124 @@ background-color: rgb(255, 255, 127);
 <set>Qt::AlignCenter</set>
 </property>
 </widget>
+<widget class="QLabel" name="label">
+<property name="geometry">
+<rect>
+<x>300</x>
+<y>362</y>
+<width>100</width>
+<height>58</height>
+</rect>
+</property>
+<property name="styleSheet">
+<string notr="true">background-color: rgb(170, 255, 255);</string>
+</property>
+<property name="text">
+<string/>
+</property>
+<property name="font">
+ <font>
+  <family>DejaVu Sans</family>
+  <pointsize>8</pointsize>
+ </font>
+</property>
+</widget>
+<widget class="QLabel" name="label_2">
+<property name="geometry">
+<rect>
+<x>402</x>
+<y>362</y>
+<width>98</width>
+<height>58</height>
+</rect>
+</property>
+<property name="styleSheet">
+<string notr="true">background-color: rgb(170, 255, 255);</string>
+</property>
+<property name="text">
+<string/>
+</property>
+<property name="font">
+ <font>
+  <family>DejaVu Sans</family>
+  <pointsize>8</pointsize>
+ </font>
+</property>
+</widget>
+<widget class="ATCMlabel" name="atcmLabel_PLC_MS_Version">
+<property name="enabled">
+<bool>false</bool>
+</property>
+<property name="geometry">
+<rect>
+<x>500</x>
+<y>360</y>
+<width>300</width>
+<height>60</height>
+</rect>
+</property>
+<property name="font">
+<font>
+<family>DejaVu Sans</family>
+<pointsize>10</pointsize>
+<weight>50</weight>
+<bold>false</bold>
+</font>
+</property>
+<property name="text">
+<string>0x00000000</string>
+</property>
+<property name="toolTip">
+<string>PLC_MS_VERSION</string>
+</property>
+<property name="whatsThis">
+<string>ATCMlabel widget</string>
+</property>
+<property name="variable">
+<string>PLC_MS_VERSION</string>
+</property>
+<property name="prefix">
+<string>MS Version: </string>
+</property>
+<property name="refresh">
+<number>500</number>
+</property>
+<property name="max">
+<string>0</string>
+</property>
+<property name="min">
+<string>0</string>
+</property>
+<property name="viewStatus">
+<bool>false</bool>
+</property>
+<property name="visibilityVar">
+<string/>
+</property>
+<property name="bgColor">
+<color>
+<red>170</red>
+<green>255</green>
+<blue>255</blue>
+</color>
+</property>
+<property name="fontColor">
+<color>
+<red>0</red>
+<green>0</green>
+<blue>0</blue>
+</color>
+</property>
+<property name="borderWidth">
+<number>0</number>
+</property>
+<property name="borderRadius">
+<number>0</number>
+</property>
+<property name="format">
+<enum>ATCMlabel::Hex</enum>
+</property>
+</widget>
 <zorder>label_24</zorder>
 <zorder>label_25</zorder>
 <zorder>atcmButton_5</zorder>
@@ -4230,6 +4348,9 @@ background-color: rgb(255, 255, 127);
 <zorder>line</zorder>
 <zorder>line_5</zorder>
 <zorder>line_6</zorder>
+<zorder>label</zorder>
+<zorder>label_2</zorder>
+<zorder>atcmLabel_PLC_MS_Version</zorder>
 </widget>
 <customwidgets>
 <customwidget>
@@ -4264,14 +4385,24 @@ background-color: rgb(255, 255, 127);
 </customwidget>
 </customwidgets>
 <resources/>
- <connections>
-  <connection>
-   <sender>atcmButton_6</sender>
-   <signal>newPage(const char*,bool)</signal>
-   <receiver>page100</receiver>
-   <slot>goto_page(const char*,bool)</slot>
-  </connection>
- </connections>
+<connections>
+<connection>
+<sender>atcmButton_6</sender>
+<signal>newPage(const char*,bool)</signal>
+<receiver>page100</receiver>
+<slot>goto_page(const char*,bool)</slot>
+<hints>
+<hint type="sourcelabel">
+<x>20</x>
+<y>20</y>
+</hint>
+<hint type="destinationlabel">
+<x>20</x>
+<y>20</y>
+</hint>
+</hints>
+</connection>
+</connections>
 <slots>
 <slot>goto_page(const char*,bool)</slot>
 </slots>
