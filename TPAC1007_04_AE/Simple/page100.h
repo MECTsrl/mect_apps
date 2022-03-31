@@ -28,7 +28,7 @@ public:
     
 private slots:
     void changeEvent(QEvent * event);    
-    void on_atcmRTU_Start_clicked(bool checked);
+    void on_atcmRTU_Start_toggled(bool checked);
 
 private:
     Ui::page100 *ui;

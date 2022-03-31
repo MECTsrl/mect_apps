@@ -60,6 +60,12 @@ void page100::reload()
        alarm banner initialization in QLineEdit:
          rotateShowError(ui->myLineEdit, ERROR_LABEL_PERIOD_MS);
      */
+    if (NODE_01_STATUS == 1) {
+        ui->atcmRTU_Start->setChecked(true);
+    }
+    else  {
+        ui->atcmRTU_Start->setChecked(false);
+    }
 }
 
 /**
@@ -121,7 +127,7 @@ page100::~page100()
     delete ui;
 }
 
-void page100::on_atcmRTU_Start_clicked(bool checked)
+void page100::on_atcmRTU_Start_toggled(bool checked)
 {
     qDebug("Node_01_Status: %d",  NODE_01_STATUS);
     if (checked)  {
