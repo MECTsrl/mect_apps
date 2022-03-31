@@ -57,6 +57,9 @@ background-color: rgb(170, 255, 255);
    </property>
   </widget>
   <widget class="ATCMcombobox" name="atcmComboBox_6">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
    <property name="geometry">
     <rect>
      <x>120</x>
@@ -145,6 +148,9 @@ background-color: rgb(170, 255, 255);
    </property>
   </widget>
   <widget class="ATCMcombobox" name="atcmComboBox_3">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
    <property name="geometry">
     <rect>
      <x>120</x>
@@ -206,7 +212,7 @@ background-color: rgb(170, 255, 255);
      <x>361</x>
      <y>47</y>
      <width>60</width>
-     <height>21</height>
+     <height>20</height>
     </rect>
    </property>
    <property name="font">
@@ -475,6 +481,9 @@ background-color: rgb(170, 255, 255);
    </property>
   </widget>
   <widget class="QLabel" name="label_Qt_Project">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
    <property name="geometry">
     <rect>
      <x>360</x>
@@ -980,7 +989,8 @@ NODE20</string>
     <string notr="true">background-color: rgb(170, 255, 255);</string>
    </property>
    <property name="text">
-    <string>TIMEOUTS / COMM_ERR</string>
+    <string>TIMEOUTS
+ COMM_ERR</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>
@@ -1221,6 +1231,9 @@ NODE20</string>
    </property>
   </widget>
   <widget class="ATCMlabel" name="atcmLabel_9">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
    <property name="geometry">
     <rect>
      <x>120</x>
@@ -1559,6 +1572,9 @@ NODE20</string>
    </property>
   </widget>
   <widget class="ATCMlabel" name="atcmLabel_8">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
    <property name="geometry">
     <rect>
      <x>360</x>
@@ -1713,6 +1729,9 @@ NODE20</string>
    </property>
   </widget>
   <widget class="ATCMcombobox" name="atcmComboBox_5">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
    <property name="geometry">
     <rect>
      <x>360</x>
@@ -2195,6 +2214,9 @@ NODE20</string>
    </property>
   </widget>
   <widget class="ATCMlabel" name="atcmLabel_7">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
    <property name="geometry">
     <rect>
      <x>241</x>
@@ -2863,9 +2885,9 @@ NODE20</string>
    <property name="geometry">
     <rect>
      <x>421</x>
-     <y>47</y>
+     <y>49</y>
      <width>60</width>
-     <height>21</height>
+     <height>20</height>
     </rect>
    </property>
    <property name="font">
