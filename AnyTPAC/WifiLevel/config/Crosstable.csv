@@ -197,7 +197,7 @@
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
-2;S;mectsuiteVersion               ;UDINT    ;0   ;PLC       ;               ;    ;    ;      ;200 ;5   ;[RW]Mect Suite Version
+2;P;mectsuiteVersion               ;UDINT    ;0   ;PLC       ;               ;    ;    ;      ;200 ;5   ;[RW]Mect Suite Version
 2;S;wifiON                         ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;200 ;5   ;[RW]True if Wifi is On
 2;S;wifiQuality                    ;INT      ;0   ;PLC       ;               ;    ;    ;      ;200 ;5   ;[RW]Wifi Quality 0-100
 2;S;wifiLevel                      ;INT      ;0   ;PLC       ;               ;    ;    ;      ;200 ;5   ;[RW]Wifi Level
@@ -5413,7 +5413,7 @@
 1;P;PLC_Hours                      ;UINT     ;0   ;PLC       ;               ;    ;    ;      ;5410;14  ;[RO]Currently hour
 1;P;PLC_Minutes                    ;UINT     ;0   ;PLC       ;               ;    ;    ;      ;5410;14  ;[RO]Currently minutes
 1;P;PLC_Seconds                    ;UINT     ;0   ;PLC       ;               ;    ;    ;      ;5410;14  ;[RO]Currently seconds
-1;P;PLC_UPTIME_s                   ;UDINT    ;0   ;PLC       ;               ;    ;    ;      ;5410;14  ;[RO]Uptime in seconds (wraps in 136 years)
+1;S;PLC_UPTIME_s                   ;UDINT    ;0   ;PLC       ;               ;    ;    ;      ;5410;14  ;[RO]Uptime in seconds (wraps in 136 years)
 1;P;PLC_UPTIME_cs                  ;UDINT    ;0   ;PLC       ;               ;    ;    ;      ;5410;14  ;[RO]Uptime in centiseconds = 10 ms (wraps in 497 days)
 1;P;PLC_WATCHDOGEN                 ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;5410;14  ;[RW]Enable Watchdog
 1;P;PLC_WATCHDOG_ms                ;UDINT    ;0   ;PLC       ;               ;    ;    ;      ;5410;14  ;[RW]Reset Watchdog timer
