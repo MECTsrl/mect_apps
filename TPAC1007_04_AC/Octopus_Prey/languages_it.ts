@@ -125,7 +125,8 @@
     <message>
         <location filename="page100.ui" line="225"/>
         <location filename="page100.ui" line="228"/>
-        <source>TPAC1007_4AC</source>
+        <source>TPAC1007_04AC</source>
+        <oldsource>TPAC1007_4AC</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -267,7 +268,8 @@
     </message>
     <message>
         <location filename="page100.ui" line="1175"/>
-        <source>AnIn_1_F.</source>
+        <source>AnIn_1_Filter</source>
+        <oldsource>AnIn_1_F.</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -546,7 +548,8 @@
     </message>
     <message>
         <location filename="page100.ui" line="3300"/>
-        <source>AnIn_2_F.</source>
+        <source>AnIn_2_Filter</source>
+        <oldsource>AnIn_2_F.</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>

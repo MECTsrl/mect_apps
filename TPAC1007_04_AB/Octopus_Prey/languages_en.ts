@@ -112,7 +112,7 @@
     </message>
     <message>
         <location filename="page100.ui" line="172"/>
-        <location filename="page100.ui" line="178"/>
+        <location filename="page100.ui" line="184"/>
         <source>PLC_DigIn_4</source>
         <translation type="unfinished"></translation>
     </message>
@@ -235,12 +235,13 @@
     <message>
         <location filename="page100.ui" line="632"/>
         <location filename="page100.ui" line="635"/>
-        <source>TPAC1007_4AB</source>
+        <source>TPAC1007_04AB</source>
+        <oldsource>TPAC1007_4AB</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="page100.ui" line="657"/>
-        <location filename="page100.ui" line="663"/>
+        <location filename="page100.ui" line="669"/>
         <source>PLC_DigIn_8</source>
         <translation type="unfinished"></translation>
     </message>
@@ -319,7 +320,7 @@
     </message>
     <message>
         <location filename="page100.ui" line="1126"/>
-        <location filename="page100.ui" line="1132"/>
+        <location filename="page100.ui" line="1138"/>
         <source>PLC_DigIn_9</source>
         <translation type="unfinished"></translation>
     </message>
@@ -331,7 +332,7 @@
     </message>
     <message>
         <location filename="page100.ui" line="1227"/>
-        <location filename="page100.ui" line="1233"/>
+        <location filename="page100.ui" line="1239"/>
         <source>PLC_DigIn_6</source>
         <translation type="unfinished"></translation>
     </message>
@@ -424,7 +425,7 @@
     </message>
     <message>
         <location filename="page100.ui" line="1909"/>
-        <location filename="page100.ui" line="1915"/>
+        <location filename="page100.ui" line="1921"/>
         <source>PLC_DigIn_3</source>
         <translation type="unfinished"></translation>
     </message>
@@ -455,7 +456,7 @@
     </message>
     <message>
         <location filename="page100.ui" line="2234"/>
-        <location filename="page100.ui" line="2240"/>
+        <location filename="page100.ui" line="2246"/>
         <source>PLC_DigIn_2</source>
         <translation type="unfinished"></translation>
     </message>
@@ -505,7 +506,7 @@
     </message>
     <message>
         <location filename="page100.ui" line="2609"/>
-        <location filename="page100.ui" line="2615"/>
+        <location filename="page100.ui" line="2621"/>
         <source>PLC_DigIn_5</source>
         <translation type="unfinished"></translation>
     </message>
@@ -700,7 +701,7 @@
     </message>
     <message>
         <location filename="page100.ui" line="4344"/>
-        <location filename="page100.ui" line="4350"/>
+        <location filename="page100.ui" line="4356"/>
         <source>PLC_DigIn_7</source>
         <translation type="unfinished"></translation>
     </message>
@@ -717,7 +718,7 @@
     </message>
     <message>
         <location filename="page100.ui" line="4484"/>
-        <location filename="page100.ui" line="4490"/>
+        <location filename="page100.ui" line="4496"/>
         <source>PLC_DigIn_1</source>
         <translation type="unfinished"></translation>
     </message>
