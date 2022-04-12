@@ -25,6 +25,12 @@ static int fd;
 /* put here the initalization */
 void setup(void)
 {
+    // Wait PLC Engine gets ready
+    while (PLC_EngineStatus < 2) {
+        fputc('*', stderr);
+        sleep(1);
+    }
+    // Insert your start-up code here
     doWrite_PLC_FastIO_Ena(0x0003FF01);
     doWrite_PLC_FastIO_Dir(0x00000000);
 

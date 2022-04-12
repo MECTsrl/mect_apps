@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 2.7.84, 2022-02-21T16:25:09. -->
+<!-- Written by QtCreator 2.7.84, 2022-04-12T11:32:34. -->
 <qtcreator>
  <data>
   <variable>ProjectExplorer.Project.ActiveTarget</variable>
@@ -196,14 +196,19 @@
       <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
       <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">RemoteLinux.DirectUploadStep</value>
       <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedFiles">
+       <value type="QString">S:/mect_apps/TPAC1007_04_AA/Octopus_Horn/config/splash.png</value>
        <value type="QString">C:/mect_apps/TPAC1007_04_AA/Octopus_Horn/hmi</value>
        <value type="QString">C:/mect_apps/TPAC1007_04_AA/Octopus_Horn/config/splash.png</value>
        <value type="QString">U:/mect_apps/TPAC1007_04_AA/Octopus_Horn/config/Crosstable.csv</value>
        <value type="QString">U:/mect_apps/TPAC1007_04_AA/Octopus_Horn/config/system.ini</value>
        <value type="QString">C:/mect_apps/TPAC1007_04_AA/Octopus_Horn/config/Crosstable.csv</value>
        <value type="QString">U:/mect_apps/TPAC1007_04_AA/Octopus_Horn/hmi</value>
+       <value type="QString">S:/mect_apps/TPAC1007_04_AA/Octopus_Horn/config/trend1.csv</value>
        <value type="QString">U:/mect_apps/TPAC1007_04_AA/Octopus_Horn/config/trend1.csv</value>
        <value type="QString">C:/mect_apps/TPAC1007_04_AA/Octopus_Horn/config/trend1.csv</value>
+       <value type="QString">S:/mect_apps/TPAC1007_04_AA/Octopus_Horn/config/Crosstable.csv</value>
+       <value type="QString">S:/mect_apps/TPAC1007_04_AA/Octopus_Horn/config/system.ini</value>
+       <value type="QString">S:/mect_apps/TPAC1007_04_AA/Octopus_Horn/hmi</value>
        <value type="QString">U:/mect_apps/TPAC1007_04_AA/Octopus_Horn/config/splash.png</value>
        <value type="QString">C:/mect_apps/TPAC1007_04_AA/Octopus_Horn/config/system.ini</value>
       </valuelist>
@@ -218,8 +223,14 @@
        <value type="QString">192.168.5.117</value>
        <value type="QString">192.168.5.117</value>
        <value type="QString">192.168.5.117</value>
+       <value type="QString">192.168.5.117</value>
+       <value type="QString">192.168.5.117</value>
+       <value type="QString">192.168.5.117</value>
+       <value type="QString">192.168.5.117</value>
+       <value type="QString">192.168.5.117</value>
       </valuelist>
       <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedRemotePaths">
+       <value type="QString">/local/etc/sysconfig/img</value>
        <value type="QString">/local/root</value>
        <value type="QString">/local/etc/sysconfig/img</value>
        <value type="QString">/local/etc/sysconfig</value>
@@ -228,6 +239,10 @@
        <value type="QString">/local/root</value>
        <value type="QString">/local/data/customtrend</value>
        <value type="QString">/local/data/customtrend</value>
+       <value type="QString">/local/data/customtrend</value>
+       <value type="QString">/local/etc/sysconfig</value>
+       <value type="QString">/local/etc/sysconfig</value>
+       <value type="QString">/local/root</value>
        <value type="QString">/local/etc/sysconfig/img</value>
        <value type="QString">/local/etc/sysconfig</value>
       </valuelist>
@@ -242,16 +257,26 @@
        <value type="QString">C:/Qt485/imx28/rootfs</value>
        <value type="QString">C:/Qt485/imx28/rootfs</value>
        <value type="QString">C:/Qt485/imx28/rootfs</value>
+       <value type="QString">C:/Qt485/imx28/rootfs</value>
+       <value type="QString">C:/Qt485/imx28/rootfs</value>
+       <value type="QString">C:/Qt485/imx28/rootfs</value>
+       <value type="QString">C:/Qt485/imx28/rootfs</value>
+       <value type="QString">C:/Qt485/imx28/rootfs</value>
       </valuelist>
       <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedTimes">
+       <value type="QDateTime">2022-04-12T11:29:00</value>
        <value type="QDateTime">2018-07-11T16:51:24</value>
        <value type="QDateTime">2018-07-11T16:51:23</value>
        <value type="QDateTime">2021-03-22T14:14:39</value>
        <value type="QDateTime">2021-03-22T14:14:40</value>
        <value type="QDateTime">2018-07-11T16:51:23</value>
        <value type="QDateTime">2021-03-22T14:14:43</value>
+       <value type="QDateTime">2022-04-12T11:29:00</value>
        <value type="QDateTime">2021-03-22T14:14:40</value>
        <value type="QDateTime">2018-07-11T16:51:23</value>
+       <value type="QDateTime">2022-04-12T11:29:00</value>
+       <value type="QDateTime">2022-04-12T11:29:00</value>
+       <value type="QDateTime">2022-04-12T11:29:01</value>
        <value type="QDateTime">2021-03-22T14:14:40</value>
        <value type="QDateTime">2018-07-11T16:51:23</value>
       </valuelist>
@@ -305,7 +330,7 @@
     <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Octopus_Horn (on Remote Device)</value>
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">RemoteLinuxRunConfiguration:C:/mect_apps/TPAC1007_04_AA/Octopus_Horn/Octopus_Horn.pro</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">RemoteLinuxRunConfiguration:S:/mect_apps/TPAC1007_04_AA/Octopus_Horn/Octopus_Horn.pro</value>
     <value type="QString" key="Qt4ProjectManager.MaemoRunConfiguration.Arguments"></value>
     <value type="QString" key="Qt4ProjectManager.MaemoRunConfiguration.ProFile">Octopus_Horn.pro</value>
     <value type="QString" key="RemoteLinux.RunConfig.AlternateRemoteExecutable"></value>

@@ -4,6 +4,13 @@
 /* put here the initalization */
 void setup(void)
 {
+    // Wait PLC Engine gets ready
+    while (PLC_EngineStatus < 2) {
+        fputc('*', stderr);
+        sleep(1);
+    }
+    // Insert your start-up code here
+    // .....
     // init FastIO è fatto nel plc/Init.st
     //    doWrite_PLC_FastIO_Ena(0x000000FF);
     //    doWrite_PLC_FastIO_Dir(0x000000F0);
