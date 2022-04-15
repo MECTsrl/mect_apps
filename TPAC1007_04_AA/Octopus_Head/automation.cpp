@@ -55,8 +55,8 @@ static char product_name[][15] = {
     /*26*/ "TPX1070_03_E"
 };
 #define PRODUCT_MAX 26
-#define RECIPE_MAX 4
-static char recipe_name[][RECIPE_MAX] = {"-", "1", "2", "3", "4"};
+#define RECIPE_MAX 5
+static char recipe_name[][RECIPE_MAX] = {"-", "1", "2", "3", "4", "5"};
 
 #define abs(v) (((v) > 0)? (v):-(v))
 
@@ -86,7 +86,7 @@ void setup(void)
         fputc('*', stderr);
         sleep(1);
     }
-    doWrite_PLC_HMI_Version(3396);
+    doWrite_PLC_HMI_Version(3397);
 
     previous_PLC_time = PLC_time;
     last_PLC_time = PLC_time;
