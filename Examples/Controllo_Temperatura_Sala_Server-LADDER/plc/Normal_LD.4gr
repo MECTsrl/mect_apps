@@ -1,0 +1,626 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FCPOU>
+    <EDITINFO EDITNAME="" EDITVERSION="" EDITCATID="" EDITCLASSID="" />
+    <HEADER>
+<![CDATA[(*[[&#13;&#10;]]*)&#13;&#10;PROGRAM&#32;Normal_LD&#32;&#13;&#10;#import&#32;&quot;Crosstable.gvl&quot;&#13;&#10;#import&#32;&quot;Resource1.gvl&quot;&#13;&#10;VAR&#13;&#10;&#32;&#32;&#32;&#32;app_Enable_Start_1_A&#32;:&#32;bool&#32;:=&#32;false;&#32;(*&#32;appoggio&#32;usata&#32;per&#32;lo&#32;start&#32;*)&#13;&#10;&#32;&#32;&#32;&#32;app_Enable_Start_1_B&#32;:&#32;bool&#32;:=&#32;false;&#32;(*&#32;appoggio&#32;usata&#32;per&#32;lo&#32;stop&#32;&#32;*)&#13;&#10;&#32;&#32;&#32;&#32;app_Enable_Start_2_A&#32;:&#32;bool&#32;:=&#32;false;&#32;(*&#32;appoggio&#32;usata&#32;per&#32;lo&#32;start&#32;*)&#13;&#10;&#32;&#32;&#32;&#32;app_Enable_Start_2_B&#32;:&#32;bool&#32;:=&#32;false;&#32;(*&#32;appoggio&#32;usata&#32;per&#32;lo&#32;stop&#32;&#32;*)&#13;&#10;&#32;&#32;&#32;&#32;app_Enable_Start_3_A&#32;:&#32;bool&#32;:=&#32;false;&#32;(*&#32;appoggio&#32;usata&#32;per&#32;lo&#32;start&#32;*)&#13;&#10;&#32;&#32;&#32;&#32;app_Enable_Start_3_B&#32;:&#32;bool&#32;:=&#32;false;&#32;(*&#32;appoggio&#32;usata&#32;per&#32;lo&#32;stop&#32;&#32;*)&#13;&#10;&#13;&#10;&#32;&#32;&#32;&#32;Enable_Start_1&#32;&#32;&#32;&#32;&#32;&#32;&#32;:&#32;bool&#32;:=&#32;false;&#13;&#10;&#32;&#32;&#32;&#32;Enable_Start_2&#32;&#32;&#32;&#32;&#32;&#32;&#32;:&#32;bool&#32;:=&#32;false;&#13;&#10;&#32;&#32;&#32;&#32;Enable_Start_3&#32;&#32;&#32;&#32;&#32;&#32;&#32;:&#32;bool&#32;:=&#32;false;&#13;&#10;&#13;&#10;&#32;&#32;&#32;&#32;Temperatura_Iniziale&#32;:&#32;real&#32;:=&#32;0.0;&#13;&#10;&#13;&#10;&#32;&#32;&#32;&#32;Timer_Start&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;:&#32;ton;&#13;&#10;&#13;&#10;&#32;&#32;&#32;&#32;SR_All&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;:&#32;SR;&#13;&#10;&#13;&#10;&#32;&#32;&#32;&#32;app_Enable_Allarme_Temp&#32;:&#32;bool&#32;:=&#32;false;&#32;(*&#32;appoggio&#32;*)&#13;&#10;&#13;&#10;END_VAR&#13;&#10;]]>
+    </HEADER>
+    <BODY LANG="ld" SFC_MENU="0">
+        <VARREAD ORIGIN="14;19" SIZE="4;2" NAME="60" OUTORIGIN="18;20" />
+        <LINE ORIGIN="4;16" SIZE="14;0" />
+        <FNC TYPENAME="MUL" ORIGIN="18;13" SIZE="12;8">
+            <PINLIST>
+                <PIN CLASS="output" ORIGIN="30;18" />
+                <PIN CLASS="input" NAME="IN1" ORIGIN="18;18" />
+                <PIN CLASS="inext" NAME="IN2" ORIGIN="18;20" />
+                <PIN CLASS="input" NAME="EN" ORIGIN="18;16" />
+                <PIN CLASS="output" NAME="ENO" ORIGIN="30;16" />
+
+            </PINLIST>
+
+        </FNC>
+        <FNC TYPENAME="MUL" ORIGIN="18;35" SIZE="12;8">
+            <PINLIST>
+                <PIN CLASS="output" ORIGIN="30;40" />
+                <PIN CLASS="input" NAME="IN1" ORIGIN="18;40" />
+                <PIN CLASS="inext" NAME="IN2" ORIGIN="18;42" />
+                <PIN CLASS="input" NAME="EN" ORIGIN="18;38" />
+                <PIN CLASS="output" NAME="ENO" ORIGIN="30;38" />
+
+            </PINLIST>
+
+        </FNC>
+        <LINE ORIGIN="4;38" SIZE="14;0" />
+        <VARREAD ORIGIN="14;41" SIZE="4;2" NAME="60" OUTORIGIN="18;42" />
+        <VARREAD ORIGIN="6;39" SIZE="12;2" NAME="2" OUTORIGIN="18;40" />
+        <VARREAD ORIGIN="60;41" SIZE="4;2" NAME="60" OUTORIGIN="64;42" />
+        <FNC TYPENAME="MUL" ORIGIN="64;35" SIZE="12;8">
+            <PINLIST>
+                <PIN CLASS="output" ORIGIN="76;40" />
+                <PIN CLASS="input" NAME="IN1" ORIGIN="64;40" />
+                <PIN CLASS="inext" NAME="IN2" ORIGIN="64;42" />
+                <PIN CLASS="input" NAME="EN" ORIGIN="64;38" />
+                <PIN CLASS="output" NAME="ENO" ORIGIN="76;38" />
+
+            </PINLIST>
+
+        </FNC>
+        <LINE ORIGIN="30;38" SIZE="34;0" />
+        <VARWRITE ORIGIN="76;39" SIZE="20;2" NAME="Minuti_Stop_Fascia_1" INORIGIN="76;40" />
+        <VARWRITE ORIGIN="30;39" SIZE="20;2" NAME="Minuti_Start_Fascia_1" INORIGIN="30;40" />
+        <VARREAD ORIGIN="56;39" SIZE="8;2" NAME="5" OUTORIGIN="64;40" />
+        <VARREAD ORIGIN="14;61" SIZE="4;2" NAME="60" OUTORIGIN="18;62" />
+        <LINE ORIGIN="4;58" SIZE="14;0" />
+        <FNC TYPENAME="MUL" ORIGIN="18;55" SIZE="12;8">
+            <PINLIST>
+                <PIN CLASS="output" ORIGIN="30;60" />
+                <PIN CLASS="input" NAME="IN1" ORIGIN="18;60" />
+                <PIN CLASS="inext" NAME="IN2" ORIGIN="18;62" />
+                <PIN CLASS="input" NAME="EN" ORIGIN="18;58" />
+                <PIN CLASS="output" NAME="ENO" ORIGIN="30;58" />
+
+            </PINLIST>
+
+        </FNC>
+        <COMMENT ORIGIN="8;8" SIZE="54;4">
+            <OBJCOMMENT>
+<![CDATA[Conversione&#32;in&#32;minuti&#32;dell&apos;ORA&#32;ATTUALE]]>
+            </OBJCOMMENT>
+
+        </COMMENT>
+        <VARREAD ORIGIN="6;17" SIZE="12;2" NAME="PLC_Hours" OUTORIGIN="18;18" />
+        <FNC TYPENAME="ADD" ORIGIN="30;55" SIZE="12;8">
+            <PINLIST>
+                <PIN CLASS="output" ORIGIN="42;60" />
+                <PIN CLASS="input" NAME="IN1" ORIGIN="30;60" />
+                <PIN CLASS="inext" NAME="IN2" ORIGIN="30;62" />
+                <PIN CLASS="input" NAME="EN" ORIGIN="30;58" />
+                <PIN CLASS="output" NAME="ENO" ORIGIN="42;58" />
+
+            </PINLIST>
+
+        </FNC>
+        <LINE ORIGIN="30;62" SIZE="0;4" />
+        <VARWRITE ORIGIN="42;59" SIZE="20;2" NAME="Minuti_Start_Fascia_2" INORIGIN="42;60" />
+        <LINE ORIGIN="42;58" SIZE="34;0" />
+        <FNC TYPENAME="MUL" ORIGIN="76;55" SIZE="12;8">
+            <PINLIST>
+                <PIN CLASS="output" ORIGIN="88;60" />
+                <PIN CLASS="input" NAME="IN1" ORIGIN="76;60" />
+                <PIN CLASS="inext" NAME="IN2" ORIGIN="76;62" />
+                <PIN CLASS="input" NAME="EN" ORIGIN="76;58" />
+                <PIN CLASS="output" NAME="ENO" ORIGIN="88;58" />
+
+            </PINLIST>
+
+        </FNC>
+        <VARREAD ORIGIN="72;61" SIZE="4;2" NAME="60" OUTORIGIN="76;62" />
+        <VARWRITE ORIGIN="88;59" SIZE="20;2" NAME="Minuti_Stop_Fascia_2" INORIGIN="88;60" />
+        <VARREAD ORIGIN="68;59" SIZE="8;2" NAME="18" OUTORIGIN="76;60" />
+        <VARREAD ORIGIN="18;23" SIZE="12;2" NAME="PLC_Minutes" OUTORIGIN="30;24" />
+        <VARWRITE ORIGIN="42;17" SIZE="16;2" NAME="Minuti_Attuali" INORIGIN="42;18" />
+        <FNC TYPENAME="ADD" ORIGIN="30;13" SIZE="12;8">
+            <PINLIST>
+                <PIN CLASS="output" ORIGIN="42;18" />
+                <PIN CLASS="input" NAME="IN1" ORIGIN="30;18" />
+                <PIN CLASS="inext" NAME="IN2" ORIGIN="30;20" />
+                <PIN CLASS="input" NAME="EN" ORIGIN="30;16" />
+                <PIN CLASS="output" NAME="ENO" ORIGIN="42;16" />
+
+            </PINLIST>
+
+        </FNC>
+        <LINE ORIGIN="30;20" SIZE="0;4" />
+        <VARREAD ORIGIN="22;65" SIZE="8;2" NAME="30" OUTORIGIN="30;66" />
+        <VARREAD ORIGIN="6;59" SIZE="12;2" NAME="7" OUTORIGIN="18;60" />
+        <VARREAD ORIGIN="22;89" SIZE="8;2" NAME="30" OUTORIGIN="30;90" />
+        <VARREAD ORIGIN="72;85" SIZE="4;2" NAME="60" OUTORIGIN="76;86" />
+        <FNC TYPENAME="MUL" ORIGIN="76;79" SIZE="12;8">
+            <PINLIST>
+                <PIN CLASS="output" ORIGIN="88;84" />
+                <PIN CLASS="input" NAME="IN1" ORIGIN="76;84" />
+                <PIN CLASS="inext" NAME="IN2" ORIGIN="76;86" />
+                <PIN CLASS="input" NAME="EN" ORIGIN="76;82" />
+                <PIN CLASS="output" NAME="ENO" ORIGIN="88;82" />
+
+            </PINLIST>
+
+        </FNC>
+        <LINE ORIGIN="42;82" SIZE="34;0" />
+        <FNC TYPENAME="MUL" ORIGIN="18;79" SIZE="12;8">
+            <PINLIST>
+                <PIN CLASS="output" ORIGIN="30;84" />
+                <PIN CLASS="input" NAME="IN1" ORIGIN="18;84" />
+                <PIN CLASS="inext" NAME="IN2" ORIGIN="18;86" />
+                <PIN CLASS="input" NAME="EN" ORIGIN="18;82" />
+                <PIN CLASS="output" NAME="ENO" ORIGIN="30;82" />
+
+            </PINLIST>
+
+        </FNC>
+        <LINE ORIGIN="4;82" SIZE="14;0" />
+        <VARREAD ORIGIN="14;85" SIZE="4;2" NAME="60" OUTORIGIN="18;86" />
+        <VARREAD ORIGIN="6;83" SIZE="12;2" NAME="22" OUTORIGIN="18;84" />
+        <VARWRITE ORIGIN="42;83" SIZE="20;2" NAME="Minuti_Start_Fascia_3" INORIGIN="42;84" />
+        <VARREAD ORIGIN="68;83" SIZE="8;2" NAME="23" OUTORIGIN="76;84" />
+        <FNC TYPENAME="ADD" ORIGIN="30;79" SIZE="12;8">
+            <PINLIST>
+                <PIN CLASS="output" ORIGIN="42;84" />
+                <PIN CLASS="input" NAME="IN1" ORIGIN="30;84" />
+                <PIN CLASS="inext" NAME="IN2" ORIGIN="30;86" />
+                <PIN CLASS="input" NAME="EN" ORIGIN="30;82" />
+                <PIN CLASS="output" NAME="ENO" ORIGIN="42;82" />
+
+            </PINLIST>
+
+        </FNC>
+        <LINE ORIGIN="30;86" SIZE="0;4" />
+        <LINE ORIGIN="88;86" SIZE="0;4" />
+        <FNC TYPENAME="ADD" ORIGIN="88;79" SIZE="12;8">
+            <PINLIST>
+                <PIN CLASS="output" ORIGIN="100;84" />
+                <PIN CLASS="input" NAME="IN1" ORIGIN="88;84" />
+                <PIN CLASS="inext" NAME="IN2" ORIGIN="88;86" />
+                <PIN CLASS="input" NAME="EN" ORIGIN="88;82" />
+                <PIN CLASS="output" NAME="ENO" ORIGIN="100;82" />
+
+            </PINLIST>
+
+        </FNC>
+        <VARREAD ORIGIN="80;89" SIZE="8;2" NAME="30" OUTORIGIN="88;90" />
+        <VARWRITE ORIGIN="100;83" SIZE="20;2" NAME="Minuti_Stop_Fascia_3" INORIGIN="100;84" />
+        <COMMENT ORIGIN="8;50" SIZE="92;4">
+            <OBJCOMMENT>
+<![CDATA[Conversione&#32;in&#32;minuti&#32;&#32;dell&apos;ORARIO&#32;START/STOP&#32;FASCIA&#32;2]]>
+            </OBJCOMMENT>
+
+        </COMMENT>
+        <COMMENT ORIGIN="8;30" SIZE="92;4">
+            <OBJCOMMENT>
+<![CDATA[Conversione&#32;in&#32;minuti&#32;&#32;dell&apos;ORARIO&#32;START/STOP&#32;FASCIA&#32;1&#32;]]>
+            </OBJCOMMENT>
+
+        </COMMENT>
+        <COMMENT ORIGIN="8;74" SIZE="92;4">
+            <OBJCOMMENT>
+<![CDATA[Conversione&#32;in&#32;minuti&#32;&#32;dell&apos;ORARIO&#32;START/STOP&#32;FASCIA&#32;3]]>
+            </OBJCOMMENT>
+
+        </COMMENT>
+        <VARREAD ORIGIN="8;107" SIZE="14;2" NAME="Minuti_Attuali" OUTORIGIN="22;108" />
+        <VARREAD ORIGIN="6;109" SIZE="16;2" NAME="Minuti_Start_Fascia_1" OUTORIGIN="22;110" />
+        <LINE ORIGIN="4;106" SIZE="18;0" />
+        <COMMENT ORIGIN="8;98" SIZE="40;4">
+            <OBJCOMMENT>
+<![CDATA[Controllo&#32;se&#32;ORARIO&#32;è&#32;in&#32;una&#32;FASCIA&#32;ATTIVA]]>
+            </OBJCOMMENT>
+
+        </COMMENT>
+        <FNC TYPENAME="GE" ORIGIN="22;103" SIZE="12;8">
+            <PINLIST>
+                <PIN CLASS="output" ORIGIN="34;108" />
+                <PIN CLASS="input" NAME="IN1" ORIGIN="22;108" />
+                <PIN CLASS="inext" NAME="IN2" ORIGIN="22;110" />
+                <PIN CLASS="input" NAME="EN" ORIGIN="22;106" />
+                <PIN CLASS="output" NAME="ENO" ORIGIN="34;106" />
+
+            </PINLIST>
+
+        </FNC>
+        <VARREAD ORIGIN="60;107" SIZE="14;2" NAME="Minuti_Attuali" OUTORIGIN="74;108" />
+        <FNC TYPENAME="LE" ORIGIN="74;103" SIZE="12;8">
+            <PINLIST>
+                <PIN CLASS="output" ORIGIN="86;108" />
+                <PIN CLASS="input" NAME="IN1" ORIGIN="74;108" />
+                <PIN CLASS="inext" NAME="IN2" ORIGIN="74;110" />
+                <PIN CLASS="input" NAME="EN" ORIGIN="74;106" />
+                <PIN CLASS="output" NAME="ENO" ORIGIN="86;106" />
+
+            </PINLIST>
+
+        </FNC>
+        <VARREAD ORIGIN="58;109" SIZE="16;2" NAME="Minuti_Stop_Fascia_1" OUTORIGIN="74;110" />
+        <FNC TYPENAME="AND" ORIGIN="128;103" SIZE="12;8">
+            <PINLIST>
+                <PIN CLASS="output" ORIGIN="140;108" />
+                <PIN CLASS="input" NAME="IN1" ORIGIN="128;108" />
+                <PIN CLASS="inext" NAME="IN2" ORIGIN="128;110" />
+                <PIN CLASS="input" NAME="EN" ORIGIN="128;106" />
+                <PIN CLASS="output" NAME="ENO" ORIGIN="140;106" />
+
+            </PINLIST>
+
+        </FNC>
+        <VARWRITE ORIGIN="34;107" SIZE="18;2" NAME="app_Enable_Start_1_A" INORIGIN="34;108" />
+        <VARREAD ORIGIN="108;107" SIZE="20;2" NAME="app_Enable_Start_1_A" OUTORIGIN="128;108" />
+        <VARREAD ORIGIN="108;109" SIZE="20;2" NAME="app_Enable_Start_1_B" OUTORIGIN="128;110" />
+        <LINE ORIGIN="34;106" SIZE="40;0" />
+        <LINE ORIGIN="86;106" SIZE="42;0" />
+        <VARWRITE ORIGIN="140;107" SIZE="18;2" NAME="Enable_Start_1" INORIGIN="140;108" />
+        <LINE ORIGIN="86;118" SIZE="42;0" />
+        <LINE ORIGIN="34;118" SIZE="40;0" />
+        <FNC TYPENAME="AND" ORIGIN="128;115" SIZE="12;8">
+            <PINLIST>
+                <PIN CLASS="output" ORIGIN="140;120" />
+                <PIN CLASS="input" NAME="IN1" ORIGIN="128;120" />
+                <PIN CLASS="inext" NAME="IN2" ORIGIN="128;122" />
+                <PIN CLASS="input" NAME="EN" ORIGIN="128;118" />
+                <PIN CLASS="output" NAME="ENO" ORIGIN="140;118" />
+
+            </PINLIST>
+
+        </FNC>
+        <FNC TYPENAME="LE" ORIGIN="74;115" SIZE="12;8">
+            <PINLIST>
+                <PIN CLASS="output" ORIGIN="86;120" />
+                <PIN CLASS="input" NAME="IN1" ORIGIN="74;120" />
+                <PIN CLASS="inext" NAME="IN2" ORIGIN="74;122" />
+                <PIN CLASS="input" NAME="EN" ORIGIN="74;118" />
+                <PIN CLASS="output" NAME="ENO" ORIGIN="86;118" />
+
+            </PINLIST>
+
+        </FNC>
+        <VARREAD ORIGIN="60;119" SIZE="14;2" NAME="Minuti_Attuali" OUTORIGIN="74;120" />
+        <FNC TYPENAME="GE" ORIGIN="22;115" SIZE="12;8">
+            <PINLIST>
+                <PIN CLASS="output" ORIGIN="34;120" />
+                <PIN CLASS="input" NAME="IN1" ORIGIN="22;120" />
+                <PIN CLASS="inext" NAME="IN2" ORIGIN="22;122" />
+                <PIN CLASS="input" NAME="EN" ORIGIN="22;118" />
+                <PIN CLASS="output" NAME="ENO" ORIGIN="34;118" />
+
+            </PINLIST>
+
+        </FNC>
+        <LINE ORIGIN="4;118" SIZE="18;0" />
+        <VARREAD ORIGIN="8;119" SIZE="14;2" NAME="Minuti_Attuali" OUTORIGIN="22;120" />
+        <LINE ORIGIN="86;130" SIZE="42;0" />
+        <LINE ORIGIN="34;130" SIZE="40;0" />
+        <FNC TYPENAME="AND" ORIGIN="128;127" SIZE="12;8">
+            <PINLIST>
+                <PIN CLASS="output" ORIGIN="140;132" />
+                <PIN CLASS="input" NAME="IN1" ORIGIN="128;132" />
+                <PIN CLASS="inext" NAME="IN2" ORIGIN="128;134" />
+                <PIN CLASS="input" NAME="EN" ORIGIN="128;130" />
+                <PIN CLASS="output" NAME="ENO" ORIGIN="140;130" />
+
+            </PINLIST>
+
+        </FNC>
+        <FNC TYPENAME="LE" ORIGIN="74;127" SIZE="12;8">
+            <PINLIST>
+                <PIN CLASS="output" ORIGIN="86;132" />
+                <PIN CLASS="input" NAME="IN1" ORIGIN="74;132" />
+                <PIN CLASS="inext" NAME="IN2" ORIGIN="74;134" />
+                <PIN CLASS="input" NAME="EN" ORIGIN="74;130" />
+                <PIN CLASS="output" NAME="ENO" ORIGIN="86;130" />
+
+            </PINLIST>
+
+        </FNC>
+        <VARREAD ORIGIN="60;131" SIZE="14;2" NAME="Minuti_Attuali" OUTORIGIN="74;132" />
+        <FNC TYPENAME="GE" ORIGIN="22;127" SIZE="12;8">
+            <PINLIST>
+                <PIN CLASS="output" ORIGIN="34;132" />
+                <PIN CLASS="input" NAME="IN1" ORIGIN="22;132" />
+                <PIN CLASS="inext" NAME="IN2" ORIGIN="22;134" />
+                <PIN CLASS="input" NAME="EN" ORIGIN="22;130" />
+                <PIN CLASS="output" NAME="ENO" ORIGIN="34;130" />
+
+            </PINLIST>
+
+        </FNC>
+        <LINE ORIGIN="4;130" SIZE="18;0" />
+        <VARREAD ORIGIN="8;131" SIZE="14;2" NAME="Minuti_Attuali" OUTORIGIN="22;132" />
+        <VARREAD ORIGIN="6;121" SIZE="16;2" NAME="Minuti_Start_Fascia_2" OUTORIGIN="22;122" />
+        <VARWRITE ORIGIN="34;119" SIZE="18;2" NAME="app_Enable_Start_2_A" INORIGIN="34;120" />
+        <VARREAD ORIGIN="58;121" SIZE="16;2" NAME="Minuti_Stop_Fascia_2" OUTORIGIN="74;122" />
+        <VARWRITE ORIGIN="86;119" SIZE="18;2" NAME="app_Enable_Start_2_B" INORIGIN="86;120" />
+        <VARREAD ORIGIN="108;119" SIZE="20;2" NAME="app_Enable_Start_2_A" OUTORIGIN="128;120" />
+        <VARREAD ORIGIN="108;121" SIZE="20;2" NAME="app_Enable_Start_2_B" OUTORIGIN="128;122" />
+        <VARWRITE ORIGIN="140;119" SIZE="18;2" NAME="Enable_Start_2" INORIGIN="140;120" />
+        <VARREAD ORIGIN="108;131" SIZE="20;2" NAME="app_Enable_Start_3_A" OUTORIGIN="128;132" />
+        <VARREAD ORIGIN="108;133" SIZE="20;2" NAME="app_Enable_Start_3_B" OUTORIGIN="128;134" />
+        <VARWRITE ORIGIN="86;131" SIZE="18;2" NAME="app_Enable_Start_3_B" INORIGIN="86;132" />
+        <VARREAD ORIGIN="58;133" SIZE="16;2" NAME="Minuti_Stop_Fascia_3" OUTORIGIN="74;134" />
+        <VARWRITE ORIGIN="34;131" SIZE="18;2" NAME="app_Enable_Start_3_A" INORIGIN="34;132" />
+        <VARREAD ORIGIN="6;133" SIZE="16;2" NAME="Minuti_Start_Fascia_3" OUTORIGIN="22;134" />
+        <FNC TYPENAME="OR" ORIGIN="22;141" SIZE="12;10">
+            <PINLIST>
+                <PIN CLASS="output" ORIGIN="34;146" />
+                <PIN CLASS="input" NAME="IN1" ORIGIN="22;146" />
+                <PIN CLASS="inext" NAME="IN2" ORIGIN="22;148" />
+                <PIN CLASS="input" NAME="EN" ORIGIN="22;144" />
+                <PIN CLASS="output" NAME="ENO" ORIGIN="34;144" />
+                <PIN CLASS="inext" NAME="IN3" ORIGIN="22;150" />
+
+            </PINLIST>
+
+        </FNC>
+        <VARWRITE ORIGIN="140;131" SIZE="18;2" NAME="Enable_Start_3" INORIGIN="140;132" />
+        <VARREAD ORIGIN="6;145" SIZE="16;2" NAME="Enable_Start_1" OUTORIGIN="22;146" />
+        <VARREAD ORIGIN="6;147" SIZE="16;2" NAME="Enable_Start_2" OUTORIGIN="22;148" />
+        <VARREAD ORIGIN="6;149" SIZE="16;2" NAME="Enable_Start_3" OUTORIGIN="22;150" />
+        <LINE ORIGIN="4;144" SIZE="18;0" />
+        <VARWRITE ORIGIN="34;145" SIZE="20;2" NAME="Controllo_Generico_Attivo" INORIGIN="34;146" />
+        <COMMENT ORIGIN="8;158" SIZE="86;4">
+            <OBJCOMMENT>
+<![CDATA[Conversione&#32;temperatura&#32;da&#32;INT&#32;a&#32;REAL&#32;per&#32;comodità]]>
+            </OBJCOMMENT>
+
+        </COMMENT>
+        <FNC TYPENAME="INT_TO_REAL" ORIGIN="18;163" SIZE="14;6">
+            <PINLIST>
+                <PIN CLASS="output" ORIGIN="32;168" />
+                <PIN CLASS="input" NAME="IN" ORIGIN="18;168" />
+                <PIN CLASS="input" NAME="EN" ORIGIN="18;166" />
+                <PIN CLASS="output" NAME="ENO" ORIGIN="32;166" />
+
+            </PINLIST>
+
+        </FNC>
+        <VARREAD ORIGIN="6;167" SIZE="12;2" NAME="PLC_AnIn_1" OUTORIGIN="18;168" />
+        <LINE ORIGIN="4;166" SIZE="14;0" />
+        <VARWRITE ORIGIN="44;167" SIZE="16;2" NAME="Temperatura_1" INORIGIN="44;168" />
+        <FNC TYPENAME="DIV" ORIGIN="32;163" SIZE="12;8">
+            <PINLIST>
+                <PIN CLASS="output" ORIGIN="44;168" />
+                <PIN CLASS="input" NAME="IN1" ORIGIN="32;168" />
+                <PIN CLASS="input" NAME="IN2" ORIGIN="32;170" />
+                <PIN CLASS="input" NAME="EN" ORIGIN="32;166" />
+                <PIN CLASS="output" NAME="ENO" ORIGIN="44;166" />
+
+            </PINLIST>
+
+        </FNC>
+        <VARREAD ORIGIN="22;171" SIZE="10;2" NAME="10.0" OUTORIGIN="32;172" />
+        <LINE ORIGIN="32;170" SIZE="0;2" />
+        <COMMENT ORIGIN="8;178" SIZE="86;4">
+            <OBJCOMMENT>
+<![CDATA[INIZIO&#32;CICLO&#32;RESETTO&#32;EVENTUALI&#32;ALLARMI&#32;ALLARMI]]>
+            </OBJCOMMENT>
+
+        </COMMENT>
+        <FNC TYPENAME="MOVE" ORIGIN="30;183" SIZE="10;6">
+            <PINLIST>
+                <PIN CLASS="output" ORIGIN="40;188" />
+                <PIN CLASS="input" NAME="In" ORIGIN="30;188" />
+                <PIN CLASS="input" NAME="EN" ORIGIN="30;186" />
+                <PIN CLASS="output" NAME="ENO" ORIGIN="40;186" />
+
+            </PINLIST>
+
+        </FNC>
+        <VARWRITE ORIGIN="40;187" SIZE="26;2" NAME="Enable_Allarme_Temp_Iniziale" INORIGIN="40;188" />
+        <CONTACT ORIGIN="4;183" SIZE="26;4" NAME="Controllo_Generico_Attivo" FUNC="postrans" INORIGIN="4;186" OUTORIGIN="30;186" />
+        <VARREAD ORIGIN="26;187" SIZE="4;2" NAME="0" OUTORIGIN="30;188" />
+        <VARREAD ORIGIN="26;195" SIZE="4;2" NAME="0" OUTORIGIN="30;196" />
+        <CONTACT ORIGIN="4;191" SIZE="26;4" NAME="Controllo_Generico_Attivo" FUNC="postrans" INORIGIN="4;194" OUTORIGIN="30;194" />
+        <FNC TYPENAME="MOVE" ORIGIN="30;191" SIZE="10;6">
+            <PINLIST>
+                <PIN CLASS="output" ORIGIN="40;196" />
+                <PIN CLASS="input" NAME="In" ORIGIN="30;196" />
+                <PIN CLASS="input" NAME="EN" ORIGIN="30;194" />
+                <PIN CLASS="output" NAME="ENO" ORIGIN="40;194" />
+
+            </PINLIST>
+
+        </FNC>
+        <VARWRITE ORIGIN="40;195" SIZE="26;2" NAME="Enable_Allarme_Temp_Max" INORIGIN="40;196" />
+        <VARWRITE ORIGIN="40;203" SIZE="26;2" NAME="Enable_Allarme_Temp" INORIGIN="40;204" />
+        <VARREAD ORIGIN="26;203" SIZE="4;2" NAME="0" OUTORIGIN="30;204" />
+        <CONTACT ORIGIN="4;199" SIZE="26;4" NAME="Controllo_Generico_Attivo" FUNC="postrans" INORIGIN="4;202" OUTORIGIN="30;202" />
+        <FNC TYPENAME="MOVE" ORIGIN="30;199" SIZE="10;6">
+            <PINLIST>
+                <PIN CLASS="output" ORIGIN="40;204" />
+                <PIN CLASS="input" NAME="In" ORIGIN="30;204" />
+                <PIN CLASS="input" NAME="EN" ORIGIN="30;202" />
+                <PIN CLASS="output" NAME="ENO" ORIGIN="40;202" />
+
+            </PINLIST>
+
+        </FNC>
+        <FNC TYPENAME="MOVE" ORIGIN="30;207" SIZE="10;6">
+            <PINLIST>
+                <PIN CLASS="output" ORIGIN="40;212" />
+                <PIN CLASS="input" NAME="In" ORIGIN="30;212" />
+                <PIN CLASS="input" NAME="EN" ORIGIN="30;210" />
+                <PIN CLASS="output" NAME="ENO" ORIGIN="40;210" />
+
+            </PINLIST>
+
+        </FNC>
+        <CONTACT ORIGIN="4;207" SIZE="26;4" NAME="Controllo_Generico_Attivo" FUNC="postrans" INORIGIN="4;210" OUTORIGIN="30;210" />
+        <VARREAD ORIGIN="26;211" SIZE="4;2" NAME="0" OUTORIGIN="30;212" />
+        <VARWRITE ORIGIN="40;211" SIZE="26;2" NAME="View_Icona_Allarme" INORIGIN="40;212" />
+        <LINE ORIGIN="30;228" SIZE="0;2" />
+        <CONTACT ORIGIN="4;223" SIZE="26;4" NAME="Controllo_Generico_Attivo" FUNC="postrans" INORIGIN="4;226" OUTORIGIN="30;226" />
+        <LINE ORIGIN="4;240" SIZE="26;0" />
+        <FB NAME="Timer_Start" TYPENAME="TON" ORIGIN="30;235" SIZE="14;10">
+            <PINLIST>
+                <PIN CLASS="input" NAME="IN" ORIGIN="30;242" />
+                <PIN CLASS="input" NAME="PT" ORIGIN="30;244" />
+                <PIN CLASS="output" NAME="Q" ORIGIN="44;242" />
+                <PIN CLASS="output" NAME="ET" ORIGIN="44;244" />
+                <PIN CLASS="input" NAME="EN" ORIGIN="30;240" />
+                <PIN CLASS="output" NAME="ENO" ORIGIN="44;240" />
+
+            </PINLIST>
+
+        </FB>
+        <VARREAD ORIGIN="8;241" SIZE="22;2" NAME="Controllo_Generico_Attivo" OUTORIGIN="30;242" />
+        <VARWRITE ORIGIN="40;227" SIZE="20;2" NAME="Temperatura_Iniziale" INORIGIN="40;228" />
+        <VARREAD ORIGIN="14;229" SIZE="16;2" NAME="Temperatura_1" OUTORIGIN="30;230" />
+        <FNC TYPENAME="MOVE" ORIGIN="30;223" SIZE="10;6">
+            <PINLIST>
+                <PIN CLASS="output" ORIGIN="40;228" />
+                <PIN CLASS="input" NAME="In" ORIGIN="30;228" />
+                <PIN CLASS="input" NAME="EN" ORIGIN="30;226" />
+                <PIN CLASS="output" NAME="ENO" ORIGIN="40;226" />
+
+            </PINLIST>
+
+        </FNC>
+        <CONTACT ORIGIN="4;249" SIZE="20;4" NAME="Timer_Start.Q" FUNC="postrans" INORIGIN="4;252" OUTORIGIN="24;252" />
+        <VARREAD ORIGIN="6;253" SIZE="18;2" NAME="Temperatura_Iniziale&#32;" OUTORIGIN="24;254" />
+        <VARWRITE ORIGIN="72;253" SIZE="28;2" NAME="Enable_Allarme_Temp_Iniziale" INORIGIN="72;254" />
+        <FNC TYPENAME="GE" ORIGIN="60;249" SIZE="12;8">
+            <PINLIST>
+                <PIN CLASS="output" ORIGIN="72;254" />
+                <PIN CLASS="input" NAME="IN1" ORIGIN="60;254" />
+                <PIN CLASS="inext" NAME="IN2" ORIGIN="60;256" />
+                <PIN CLASS="input" NAME="EN" ORIGIN="60;252" />
+                <PIN CLASS="output" NAME="ENO" ORIGIN="72;252" />
+
+            </PINLIST>
+
+        </FNC>
+        <LINE ORIGIN="36;252" SIZE="24;0" />
+        <LINE ORIGIN="40;256" SIZE="20;0" />
+        <LINE ORIGIN="40;254" SIZE="0;2" />
+        <LINE ORIGIN="36;254" SIZE="4;0" />
+        <VARREAD ORIGIN="14;255" SIZE="10;2" NAME="1.0" OUTORIGIN="24;256" />
+        <COMMENT ORIGIN="8;314" SIZE="56;4">
+            <OBJCOMMENT>
+<![CDATA[CONTROLLO&#32;CONTINUO&#32;PER&#32;TEMPERATURA&#32;MASSIMA]]>
+            </OBJCOMMENT>
+
+        </COMMENT>
+        <FNC TYPENAME="ADD" ORIGIN="32;319" SIZE="12;8">
+            <PINLIST>
+                <PIN CLASS="output" ORIGIN="44;324" />
+                <PIN CLASS="input" NAME="IN1" ORIGIN="32;324" />
+                <PIN CLASS="inext" NAME="IN2" ORIGIN="32;326" />
+                <PIN CLASS="input" NAME="EN" ORIGIN="32;322" />
+                <PIN CLASS="output" NAME="ENO" ORIGIN="44;322" />
+
+            </PINLIST>
+
+        </FNC>
+        <VARWRITE ORIGIN="78;323" SIZE="28;2" NAME="Enable_Allarme_Temp_Max" INORIGIN="78;324" />
+        <FNC TYPENAME="GE" ORIGIN="66;319" SIZE="12;8">
+            <PINLIST>
+                <PIN CLASS="output" ORIGIN="78;324" />
+                <PIN CLASS="input" NAME="IN1" ORIGIN="66;324" />
+                <PIN CLASS="inext" NAME="IN2" ORIGIN="66;326" />
+                <PIN CLASS="input" NAME="EN" ORIGIN="66;322" />
+                <PIN CLASS="output" NAME="ENO" ORIGIN="78;322" />
+
+            </PINLIST>
+
+        </FNC>
+        <LINE ORIGIN="4;322" SIZE="28;0" />
+        <LINE ORIGIN="44;322" SIZE="22;0" />
+        <LINE ORIGIN="46;326" SIZE="20;0" />
+        <LINE ORIGIN="46;324" SIZE="0;2" />
+        <LINE ORIGIN="44;324" SIZE="2;0" />
+        <VARREAD ORIGIN="26;325" SIZE="6;2" NAME="10.0" OUTORIGIN="32;326" />
+        <VARREAD ORIGIN="48;323" SIZE="18;2" NAME="Temperatura_1" OUTORIGIN="66;324" />
+        <COMMENT ORIGIN="8;338" SIZE="56;4">
+            <OBJCOMMENT>
+<![CDATA[VISUALIZZAZIONE&#32;ICONA&#32;DI&#32;ALLARME]]>
+            </OBJCOMMENT>
+
+        </COMMENT>
+        <CONTACT ORIGIN="4;343" SIZE="26;4" NAME="Allarme_Temp_Iniziale" FUNC="normal" INORIGIN="4;346" OUTORIGIN="30;346" />
+        <COIL ORIGIN="30;349" SIZE="22;4" NAME="View_Icona_Allarme" FUNC="normal" INORIGIN="30;352" OUTORIGIN="52;352" />
+        <LINE ORIGIN="30;346" SIZE="0;6" />
+        <LINE ORIGIN="30;352" SIZE="0;6" />
+        <CONTACT ORIGIN="4;349" SIZE="26;4" NAME="Allarme_Temp_Massima" FUNC="normal" INORIGIN="4;352" OUTORIGIN="30;352" />
+        <CONTACT ORIGIN="4;355" SIZE="26;4" NAME="Allarme_Temperatura" FUNC="normal" INORIGIN="4;358" OUTORIGIN="30;358" />
+        <FNC TYPENAME="SUB" ORIGIN="24;249" SIZE="12;8">
+            <PINLIST>
+                <PIN CLASS="output" ORIGIN="36;254" />
+                <PIN CLASS="input" NAME="IN1" ORIGIN="24;254" />
+                <PIN CLASS="input" NAME="IN2" ORIGIN="24;256" />
+                <PIN CLASS="input" NAME="EN" ORIGIN="24;252" />
+                <PIN CLASS="output" NAME="ENO" ORIGIN="36;252" />
+
+            </PINLIST>
+
+        </FNC>
+        <VARREAD ORIGIN="6;323" SIZE="26;2" NAME="SP_Temperatura_Soglia_Estate&#32;" OUTORIGIN="32;324" />
+        <VARREAD ORIGIN="42;253" SIZE="18;2" NAME="Temperatura_1" OUTORIGIN="60;254" />
+        <LINE ORIGIN="4;282" SIZE="26;0" />
+        <FNC TYPENAME="SUB" ORIGIN="30;279" SIZE="12;8">
+            <PINLIST>
+                <PIN CLASS="output" ORIGIN="42;284" />
+                <PIN CLASS="input" NAME="IN1" ORIGIN="30;284" />
+                <PIN CLASS="input" NAME="IN2" ORIGIN="30;286" />
+                <PIN CLASS="input" NAME="EN" ORIGIN="30;282" />
+                <PIN CLASS="output" NAME="ENO" ORIGIN="42;282" />
+
+            </PINLIST>
+
+        </FNC>
+        <VARREAD ORIGIN="6;283" SIZE="24;2" NAME="SP_Temperatura_Soglia_Estate&#32;" OUTORIGIN="30;284" />
+        <CONTACT ORIGIN="4;295" SIZE="22;4" NAME="Controllo_Generico_Attivo" FUNC="normal" INORIGIN="4;298" OUTORIGIN="26;298" />
+        <CONTACT ORIGIN="26;295" SIZE="20;4" NAME="Timer_Start.Q" FUNC="normal" INORIGIN="26;298" OUTORIGIN="46;298" />
+        <FNC TYPENAME="GE" ORIGIN="46;295" SIZE="12;8">
+            <PINLIST>
+                <PIN CLASS="output" ORIGIN="58;300" />
+                <PIN CLASS="input" NAME="IN1" ORIGIN="46;300" />
+                <PIN CLASS="inext" NAME="IN2" ORIGIN="46;302" />
+                <PIN CLASS="input" NAME="EN" ORIGIN="46;298" />
+                <PIN CLASS="output" NAME="ENO" ORIGIN="58;298" />
+
+            </PINLIST>
+
+        </FNC>
+        <VARREAD ORIGIN="28;299" SIZE="18;2" NAME="Temperatura_1" OUTORIGIN="46;300" />
+        <VARREAD ORIGIN="18;301" SIZE="28;2" NAME="SP_Temperatura_Soglia_Estate" OUTORIGIN="46;302" />
+        <LINE ORIGIN="58;298" SIZE="4;0" />
+        <LINE ORIGIN="58;300" SIZE="4;0" />
+        <LINE ORIGIN="60;302" SIZE="2;0" />
+        <LINE ORIGIN="30;286" SIZE="0;2" />
+        <LINE ORIGIN="60;302" SIZE="0;6" />
+        <VARREAD ORIGIN="38;307" SIZE="22;2" NAME="app_Enable_Allarme_Temp" OUTORIGIN="60;308" />
+        <VARREAD ORIGIN="20;287" SIZE="10;2" NAME="0.5" OUTORIGIN="30;288" />
+        <VARREAD ORIGIN="46;283" SIZE="16;2" NAME="Temperatura_1" OUTORIGIN="62;284" />
+        <VARWRITE ORIGIN="74;283" SIZE="24;2" NAME="app_Enable_Allarme_Temp" INORIGIN="74;284" />
+        <FNC TYPENAME="LE" ORIGIN="62;279" SIZE="12;8">
+            <PINLIST>
+                <PIN CLASS="output" ORIGIN="74;284" />
+                <PIN CLASS="input" NAME="IN1" ORIGIN="62;284" />
+                <PIN CLASS="inext" NAME="IN2" ORIGIN="62;286" />
+                <PIN CLASS="input" NAME="EN" ORIGIN="62;282" />
+                <PIN CLASS="output" NAME="ENO" ORIGIN="74;282" />
+
+            </PINLIST>
+
+        </FNC>
+        <LINE ORIGIN="42;282" SIZE="20;0" />
+        <LINE ORIGIN="44;286" SIZE="18;0" />
+        <LINE ORIGIN="44;284" SIZE="0;2" />
+        <LINE ORIGIN="42;284" SIZE="2;0" />
+        <FB NAME="SR_All" TYPENAME="SR" ORIGIN="62;293" SIZE="10;10">
+            <PINLIST>
+                <PIN CLASS="input" NAME="S1" ORIGIN="62;300" />
+                <PIN CLASS="input" NAME="R" ORIGIN="62;302" />
+                <PIN CLASS="output" NAME="Q1" ORIGIN="72;300" />
+                <PIN CLASS="input" NAME="EN" ORIGIN="62;298" />
+                <PIN CLASS="output" NAME="ENO" ORIGIN="72;298" />
+
+            </PINLIST>
+
+        </FB>
+        <VARWRITE ORIGIN="72;299" SIZE="28;2" NAME="Enable_Allarme_Temp" INORIGIN="72;300" />
+        <COMMENT ORIGIN="8;270" SIZE="56;8">
+            <OBJCOMMENT>
+<![CDATA[CONTROLLO&#32;CONTINUO&#32;DELLA&#32;TEMPERATURA&#32;DOPO&#32;I&#32;PRIMI&#32;20&#32;MINUTI&#13;&#10;&#13;&#10;FACCIO&#32;RIENTRARE&#32;L&apos;ALLARME&#32;SE&#32;LA&#32;TEMPERATURA&#32;SCENDE&#32;DI&#32;0.5°C&#13;&#10;SOTTO&#32;LA&#32;SOGLIA&#32;&#32;DI&#32;ALLARME]]>
+            </OBJCOMMENT>
+
+        </COMMENT>
+        <VARREAD ORIGIN="22;243" SIZE="8;2" NAME="T#1200s" OUTORIGIN="30;244" />
+        <COMMENT ORIGIN="8;218" SIZE="86;4">
+            <OBJCOMMENT>
+<![CDATA[Memorizzo&#32;la&#32;temperatura&#32;di&#32;start&#32;&#32;e&#32;faccio&#32;partire&#32;il&#32;TIMER&#32;da&#32;20&#32;minuti&#32;per&#32;verificare&#32;se&#32;la&#32;temperatura&#32;sta&#32;scendendo.]]>
+            </OBJCOMMENT>
+
+        </COMMENT>
+        <VARWRITE ORIGIN="86;107" SIZE="18;2" NAME="app_Enable_Start_1_B" INORIGIN="86;108" />
+        <POWERRAIL ORIGIN="4;4" SIZE="0;366" />
+
+    </BODY>
+
+</FCPOU>

@@ -1,0 +1,20 @@
+<RCC>
+    <qresource prefix="/icons">
+        <file>icons/Allarme.png</file>
+        <file>icons/back.png</file>
+        <file>icons/date_time.png</file>
+        <file>icons/Download.png</file>
+        <file>icons/Factory.png</file>
+        <file>icons/Home5_64.png</file>
+        <file>icons/info_col.png</file>
+        <file>icons/Luminosità.png</file>
+        <file>icons/Network.png</file>
+        <file>icons/next.png</file>
+        <file>icons/Setup.png</file>
+        <file>icons/shield-warning-icon.png</file>
+        <file>icons/Warning-icon.png</file>
+        <file>icons/Mect.png</file>
+        <file>icons/Trend_64x64.png</file>
+    </qresource>
+    <qresource prefix="/fonts"/>
+</RCC>
