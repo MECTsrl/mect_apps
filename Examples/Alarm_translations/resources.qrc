@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/icons">
+        <file>icons/Italia_128.png</file>
+        <file>icons/RegnoUnito_128.png</file>
+    </qresource>
+    <qresource prefix="/fonts"/>
+</RCC>
