@@ -1,0 +1,60 @@
+*filter
+:INPUT DROP [0:0]
+:FORWARD ACCEPT [0:0]
+:OUTPUT ACCEPT [18:2180]
+-A INPUT -i lo -j ACCEPT 
+
+# enabled services
+
+# SSH
+-A INPUT -p tcp -m tcp --dport 22 -j ACCEPT 
+-A INPUT -p tcp -m tcp --sport 22 -j ACCEPT
+
+# HTTP
+-A INPUT -p tcp -m tcp --dport 80 -j ACCEPT 
+
+# Modbus TCP Client
+-A INPUT -p tcp -m tcp --sport 502 -j ACCEPT 
+
+# Modbus TCP Server
+-A INPUT -p tcp -m tcp --dport 502 -j ACCEPT 
+
+# VNC :0
+-A INPUT -p tcp -m tcp --dport 5900 -j ACCEPT 
+
+# ATCMControl_RunTimeSystem control
+-A INPUT -p tcp -m tcp --dport 17290 -j ACCEPT 
+
+# OpenVPN sMily
+-A INPUT -p tcp -m tcp --sport 443 -j ACCEPT 
+-A INPUT -p udp -m udp --sport 53 -j ACCEPT 
+-A INPUT -p tcp -m tcp -s 10.1.0.1 --sport 8080 -j ACCEPT
+
+# ICMP ping
+-A INPUT -p icmp --icmp-type 0 -j ACCEPT
+-A INPUT -p icmp --icmp-type 8 -j ACCEPT
+
+# DHCP
+-A INPUT -p udp -m udp --sport 67 -j ACCEPT
+-A INPUT -p udp -m udp --dport 68 -j ACCEPT
+
+# NTP
+-A INPUT -p udp -m udp --sport 123 -j ACCEPT
+-A INPUT -p udp -m udp --dport 123 -j ACCEPT
+
+# MQTT
+-A INPUT -p tcp -m tcp --dport 1883 -j ACCEPT
+-A INPUT -p tcp -m tcp --sport 1883 -j ACCEPT
+-A INPUT -p tcp -m tcp --dport 8883 -j ACCEPT            
+-A INPUT -p tcp -m tcp --sport 8883 -j ACCEPT
+
+# disabled services
+
+# NRPE
+# -A INPUT -p tcp -m tcp --dport 5666 -j ACCEPT
+
+# TELNET
+# -A INPUT -p tcp -m tcp --dport 23 -j ACCEPT
+
+COMMIT
+
