@@ -131,7 +131,7 @@ OTHER_FILES += \
 
 include(./languages.pri)
 
-TYPE = "AnyTPAC"
+TYPE = "AnyTPAC043"
 
 # display size
 MODEL = "<width>480</width><height>272</height>"

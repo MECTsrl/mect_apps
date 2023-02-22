@@ -14,12 +14,12 @@
 #include <stdlib.h>
 
 #define THE_DEVICE "/dev/ttyUSB0"
-#define LINE_SIZE 80
+#define TERM_LINE_SIZE 80
 #define WORD_SIZE 8
 
 static int ttyUSB0;
-static char readLine[LINE_SIZE];
-static char lastReadLine[LINE_SIZE];
+static char readLine[TERM_LINE_SIZE];
+static char lastReadLine[TERM_LINE_SIZE];
 
 /* put here the initalization */
 void setup(void)
@@ -27,7 +27,7 @@ void setup(void)
     struct termios tios;
     speed_t speed;
 
-    snprintf(lastReadLine, LINE_SIZE, "%.2f (setup)", PLC_time);
+    snprintf(lastReadLine, TERM_LINE_SIZE, "%.2f (setup)", PLC_time);
     ttyUSB0 = open(THE_DEVICE, O_RDWR);
     if (ttyUSB0 < 0) {
         return;
@@ -63,22 +63,22 @@ void loop(void)
     int retval;
 
     if (ttyUSB0 < 0) {
-        snprintf(lastReadLine, LINE_SIZE, "%.2f (can't open '%s')", PLC_time, THE_DEVICE);
+        snprintf(lastReadLine, TERM_LINE_SIZE, "%.2f (can't open '%s')", PLC_time, THE_DEVICE);
         return;
     }
 
-    memset(readLine, 0, LINE_SIZE);
-    retval = read(ttyUSB0, readLine, LINE_SIZE);
+    memset(readLine, 0, TERM_LINE_SIZE);
+    retval = read(ttyUSB0, readLine, TERM_LINE_SIZE);
     if (retval < 0) {
-        snprintf(lastReadLine, LINE_SIZE, "%.2f read = (error %d)", PLC_time, retval);
+        snprintf(lastReadLine, TERM_LINE_SIZE, "%.2f read = (error %d)", PLC_time, retval);
         doWrite_RS232_INPUT(0xFFFFFFFF);
         return;
     }
     if (retval == 0 || readLine[0] == '\n' || readLine[0] == '\r' ) {
-        // snprintf(lastReadLine, LINE_SIZE, "%.2f read = (empty line)", PLC_time);
+        // snprintf(lastReadLine, TERM_LINE_SIZE, "%.2f read = (empty line)", PLC_time);
         return;
     }
-    snprintf(lastReadLine, LINE_SIZE, "%.2f read(%d) = '%s'", PLC_time, retval, readLine);
+    snprintf(lastReadLine, TERM_LINE_SIZE, "%.2f read(%d) = '%s'", PLC_time, retval, readLine);
     doWrite_RS232_INPUT(atoi(readLine));
 }
 
