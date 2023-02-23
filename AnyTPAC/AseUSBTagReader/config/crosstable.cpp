@@ -56,6 +56,13 @@ int ResetReader = 0;
 
 
 /*
+ * Variable readerLastError	[ Last Reader Error ]
+ */
+
+u_int32_t readerLastError = 0;
+
+
+/*
  * Variable TCPS_TYPE_PORT
  */
 
@@ -1314,6 +1321,24 @@ int
 getStatus_ResetReader(void)
 {
 	return getStatus(ID_ResetReader);
+}
+
+int
+doWrite_readerLastError(u_int32_t value)
+{
+	return doWrite(ID_readerLastError, &value);
+}
+
+int
+addWrite_readerLastError(u_int32_t value)
+{
+	return addWrite(ID_readerLastError, &value);
+}
+
+int
+getStatus_readerLastError(void)
+{
+	return getStatus(ID_readerLastError);
 }
 
 int
@@ -4386,6 +4411,7 @@ update_all(void)
 	retval += readFromDb(ID_readerFound, &readerFound);
 	retval += readFromDb(ID_ReadTAGRequest, &ReadTAGRequest);
 	retval += readFromDb(ID_ResetReader, &ResetReader);
+	retval += readFromDb(ID_readerLastError, &readerLastError);
 	retval += readFromDb(ID_TCPS_TYPE_PORT, &TCPS_TYPE_PORT);
 	retval += readFromDb(ID_TCPS_IP_ADDRESS, &TCPS_IP_ADDRESS);
 	retval += readFromDb(ID_TCPS_STATUS, &TCPS_STATUS);

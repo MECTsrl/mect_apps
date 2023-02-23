@@ -26,6 +26,11 @@ void setup(void)
         if (serialOpened)  {
             int usbType = getUSBType();
             qDebug("USB Interface Type is: [%d]", usbType);
+            sleep(4);
+            qDebug("Device Type is: [%d]", getDeviceType());
+            sleep(4);
+            qDebug("USB Device Status: [%d]", getUSBDeviceState());
+            sleep(4);
         }
     }
     else {
@@ -39,16 +44,30 @@ void setup(void)
 void loop(void)
 {
     static unsigned loopCounter = 1;
-    static bool  askType = true;
+    // static bool  askType = true;
+    static bool  searchTags = true;
 
-    if (ttyUSB1 >= 0  && (loopCounter % 11 == 0)) {
-        // qDebug("Loop Counter: [%d]", loopCounter);
-        if (askType)  {
-            qDebug("Loop Counter: [%d] - Detected Device Type is: [%d]", loopCounter, getDeviceType());
-            askType = false;
-        }
-        else  {
-            askType = true;
+    // Un giro ogni 4.3 s
+    if (ttyUSB1 >= 0  && (loopCounter % 43 == 0)) {
+        //                if (askType)  {
+        //                    qDebug("Loop Counter: [%d] - Detected Device Type is: [%d]", loopCounter, getDeviceType());
+        //                    askType = false;
+        //                    searchTags = true;
+        //                }
+        //                else  {
+        //                    askType = true;
+        //                    searchTags = false;
+        //                }
+        if (searchTags)  {
+            int     tagType = NOTAG;
+            int     tagBits = 0;
+            char    tagId[256];
+            if (searchTag(tagType, tagBits, tagId))  {
+                qDebug("Loop Counter: [%d] - Reader Status:[%d] - Found Tag Type:[%d] Tag Bits:[%d] ID:[%s]", loopCounter, readerStatus, tagType, tagBits, tagId);
+            }
+            else  {
+                qWarning("Loop Counter:[%d] - Reader Status:[%d] - No Tag Found", loopCounter, readerStatus);
+            }
         }
     }
     loopCounter++;

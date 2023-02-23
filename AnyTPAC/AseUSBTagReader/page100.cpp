@@ -90,9 +90,11 @@ void page100::updateData()
     }
     else if (! cardFound)  {
         szNewStyle = szGreen;
+        ui->label_Tag->setText(QString("TAG Code: [NONE]"));
     }
     else if (cardFound)  {
         szNewStyle = szRed;
+        ui->label_Tag->setText(QString("TAG Code: [%1]") .arg(lastTag));
     }
     if (ui->labelImg_01->styleSheet() != szNewStyle)  {
         ui->labelImg_01->setStyleSheet(szNewStyle);

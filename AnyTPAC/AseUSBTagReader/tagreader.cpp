@@ -5,7 +5,7 @@
 
 #include "termios.h"
 #include "unistd.h"
-#include "string.h"
+#include <string.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <sys/types.h>
@@ -18,20 +18,152 @@
 
 #include "common.h"
 
+
+//------------------------------------------------------------
+// Tag Reader public management variables
+//------------------------------------------------------------
+int             ttyUSB1 = -1;                   // Handle to device file pointer
+bool            cardFound = false;              // True if Card Reader is Open
+int             readerStatus = TAG_ERR_NONE;    // reader Status (result of last command)
+u_int32_t       readerError = 0;                // reader Last Error
+char            lastTag[TAG_ID_LEN];            // Last Read Tag
+
+// #define LINE_SIZE 8192 in common.h of Mect Suite, maybe could be reduced....
+
+//------------------------------------------------------------
+// Tag Reader internal management constant and variables
+//------------------------------------------------------------
 #define  cCR                0x0A
 #define  COMMAND_TIMEOUT    1500
-#define  NUMERIC_CODE       2
-
-// #define LINE_SIZE 8192 in common.h of Mect Suite
+#define  BYTE_CHARS         2
+#define  UINT16_CHARS       4
+#define  UINT32_CHARS       8
+#define  BUF_SIZE           256
 
 char        readerCommand[LINE_SIZE];
 char        readerAnswer[LINE_SIZE];
 
-// Tag Reader management variables
-int         ttyUSB1 = -1;
-bool        cardFound = false;
-int         readerStatus = TAG_ERR_NONE;
+//------------------------------------------------------------
+// Tag Reader internal management functions
+//------------------------------------------------------------
+uint32_t reverse_bytes(uint32_t bytes)
+{
+    uint32_t aux = 0;
+    uint8_t byte;
+    int i;
 
+    for(i = 0; i < 32; i+=8)
+    {
+        byte = (bytes >> i) & 0xff;
+        aux |= byte << (32 - 8 - i);
+    }
+    return aux;
+}
+
+void reverseString(char *s)
+{
+   int  length, c;
+   char *begin, *end, temp;
+
+   length = strlen(s);
+   begin  = s;
+   end    = s;
+
+   for (c = 0; c < length - 1; c++)  {
+      end++;
+    }
+
+   for (c = 0; c < length/2; c++)  {
+      temp   = *end;
+      *end   = *begin;
+      *begin = temp;
+
+      begin++;
+      end--;
+   }
+}
+
+void    clearBuffers(char *commandAnswer, int nAnswerLen)
+{
+    memset(&readerCommand[0], 0, LINE_SIZE);
+    memset(&readerAnswer[0], 0, LINE_SIZE);
+    // Clear Answer Buffer if requested
+    if (nAnswerLen > 0)  {
+        memset(commandAnswer, 0, nAnswerLen);
+    }
+}
+
+int     getReaderStatus(char *readerAnswer)
+// Use the first 2 chars of reader answer to get reader status
+// (eg: 00 TAG_ERR_NONE, 01 TAG_ERR_UNKNOWN_FUNCTION and so on)
+{
+    char numericCode[BYTE_CHARS + 1];
+
+    memset(numericCode, 0, BYTE_CHARS  + 1);
+    strncpy(numericCode, readerAnswer, BYTE_CHARS);
+    return atoi(numericCode);
+}
+
+bool    sendCommand(char *myCommand, char *myAnswer, int nBytes2Read)
+// Command sending cycle - waiting for response from reader
+// The reader's response always ends with the character CR 0x0D
+{
+    bool            fRes = false;
+    bool            strippedCR = false;
+    unsigned int    nChar = 0;
+    int             nWriteSize = 0;
+    int             nReadSize = 0;
+    // int             retVal = 0;
+    // int             nLoop = 0;
+
+    QElapsedTimer   watchDogTimer;
+    // Clear Buffers & Flush device
+    clearBuffers(myAnswer, nBytes2Read);
+    tcflush(ttyUSB1, TCIFLUSH);
+    // Preparing Send Buffer
+    char *p = myCommand;
+    for (nChar = 0; nChar < strlen(myCommand) && nChar < LINE_SIZE - 1; nChar++)  {
+        readerCommand[nChar] =  *p;
+        p++;
+    }
+    // Append CR to command
+    readerCommand[nChar] = cCR;
+    // Send Command
+    // qDebug("sendCommand(): Command:[%s]", myCommand);
+    watchDogTimer.start();
+    nWriteSize = write(ttyUSB1, readerCommand, strlen(readerCommand));
+    // qDebug("sendCommand(): Written[%d] bytes", nWriteSize);
+    usleep(50000);
+    nReadSize = read(ttyUSB1, readerAnswer, LINE_SIZE);
+    // Read something, analyze the result
+    if (nReadSize > 0)  {
+        if (nBytes2Read > 0)  {
+            // check response length if defined
+            fRes = nReadSize >= nBytes2Read;
+        }
+        else  {
+            // Non empty answer is always ok
+            fRes = true;
+        }
+        // Excludes CR character from response
+        if (readerAnswer[nReadSize - 1] == cCR) {
+            strippedCR = true;
+            nReadSize--;
+        }
+        memcpy(myAnswer, readerAnswer, nReadSize);
+        readerStatus = getReaderStatus(myAnswer);
+    }
+    else  {
+        readerStatus = TAG_ERR_UNDEF;
+    }
+    qDebug("sendCommand(): Command [%s] Answer [%s] Written [%d] Read [%d] Stripped CR [%d] Status [%d] Elapsed [%lli]ms", myCommand, myAnswer, nWriteSize, nReadSize,
+                        strippedCR, readerStatus, watchDogTimer.elapsed());
+    return fRes;
+}
+
+//------------------------------------------------------------
+// Tag Reader exported public functions
+//------------------------------------------------------------
 bool    openReader()
 // Opening the USB device of the reader
 {
@@ -82,106 +214,20 @@ exit_failure:
     return fRes;
 }
 
-void    clearBuffers(char *commandAnswer, int nAnswerLen)
-{
-    memset(&readerCommand[0], 0, LINE_SIZE);
-    memset(&readerAnswer[0], 0, LINE_SIZE);
-    memset(commandAnswer, 0, nAnswerLen);
-}
-
-int     getReaderStatus(char *readerAnswer)
-// Use the first 2 chars of reader answer to get reader status
-// (eg: 00 TAG_ERR_NONE, 01 TAG_ERR_UNKNOWN_FUNCTION and so on)
-{
-    char numericCode[NUMERIC_CODE + 1];
-
-    memset(numericCode, 0, NUMERIC_CODE  + 1);
-    strncpy(numericCode, readerAnswer, NUMERIC_CODE);
-    return atoi(numericCode);
-}
-
-bool    sendCommand(char *myCommand, char *myAnswer, int nBytes2Read)
-// Command sending cycle - waiting for response from reader
-{
-    bool            fRes = false;
-    bool            strippedCR = false;
-    unsigned int    nChar = 0;
-    int             nWriteSize = 0;
-    int             nReadSize = 0;
-    // int             retVal = 0;
-    // int             nLoop = 0;
-
-    QElapsedTimer   watchDogTimer;
-    // Clear Buffers & Flush device
-    clearBuffers(myAnswer, nBytes2Read);
-    tcflush(ttyUSB1, TCIFLUSH);
-    // Preparing Send Buffer
-    char *p = myCommand;
-    for (nChar = 0; nChar < strlen(myCommand) && nChar < LINE_SIZE - 1; nChar++)  {
-        readerCommand[nChar] =  *p;
-        p++;
-    }
-    // Append CR
-    readerCommand[nChar] = cCR;
-    // Send Command
-    qDebug("sendCommand(): Command:[%s]", myCommand);
-    watchDogTimer.start();
-    nWriteSize = write(ttyUSB1, readerCommand, strlen(readerCommand));
-    qDebug("sendCommand(): Written[%d] bytes", nWriteSize);
-    usleep(20000);
-    nReadSize = read(ttyUSB1, readerAnswer, LINE_SIZE);
-    // Letto qualcosa, analisi del risultato
-    if (nReadSize > 0)  {
-        fRes = nReadSize >= nBytes2Read;
-        // Esclude CR dalla risposta
-        if (readerAnswer[nReadSize - 1] == cCR) {
-            strippedCR = true;
-            nReadSize--;
-        }
-        memcpy(myAnswer, readerAnswer, nReadSize);
-        readerStatus = getReaderStatus(myAnswer);
-    }
-    else  {
-        readerStatus = TAG_ERR_UNDEF;
-    }
-    qDebug("sendCommand(): Command [%s] Answer [%s] Written [%d] Read [%d] Stripped CR [%d] Status [%d] Elapsed [%lli]ms", myCommand, myAnswer, nWriteSize, nReadSize,
-                        strippedCR, readerStatus, watchDogTimer.elapsed());
-    return fRes;
-}
-
-bool    resetReader()
-// Reader reset, causes a closure of the Device
-{
-    bool        fRes = false;
-    char        myCommand[5] = "0001";
-    char        myAnswer[5] = "";
-
-    if (ttyUSB1 > 0)  {
-        if (sendCommand(myCommand, myAnswer, 2) &&  readerStatus == TAG_ERR_NONE)  {
-            // Chiude il Device
-            close(ttyUSB1);
-            // Sleep for 2 secs
-            sleep(2);
-            // Reopen Device
-            fRes = openReader();
-        }
-    }
-    return fRes;
-}
-
 int    getUSBType()
 // Get Reader USB Interface Type (should be 1)
+// The expected response is 2 + 2 characters
 {
     int         nType = -1;
     char        myCommand[5] = "0005";
     char        myAnswer[5] = "";
-    char        commandRes[NUMERIC_CODE + 1] = "";
+    char        commandRes[(2 * BYTE_CHARS) + 1] = "";
 
     if (ttyUSB1 > 0)  {
-        if (sendCommand(myCommand, myAnswer, 5) &&  readerStatus == TAG_ERR_NONE)  {
+        if (sendCommand(myCommand, myAnswer, (2 * BYTE_CHARS) + 1) &&  readerStatus == TAG_ERR_NONE)  {
             // Skip numeric status code
-            if (strlen(myAnswer) >= 2 * NUMERIC_CODE)  {
-                strncpy(commandRes,  myAnswer + NUMERIC_CODE, NUMERIC_CODE);
+            if (strlen(myAnswer) >= (2 * BYTE_CHARS) )  {
+                strncpy(commandRes,  myAnswer + BYTE_CHARS, BYTE_CHARS);
                 nType = atoh(commandRes);
             }
         }
@@ -190,18 +236,19 @@ int    getUSBType()
 }
 
 int    getDeviceType()
-// Get Device Type (should be 0B 11)
+// Get Device Type (should be 0x0B 11 dec)
+// The expected response is 2 + 2 characters
 {
     int         nType = -1;
     char        myCommand[5] = "0006";
-    char        myAnswer[5] = "";
-    char        commandRes[NUMERIC_CODE + 1] = "";
+    char        myAnswer[(2 * BYTE_CHARS) + 1] = "";
+    char        commandRes[BYTE_CHARS + 1] = "";
 
     if (ttyUSB1 > 0)  {
-        if (sendCommand(myCommand, myAnswer, 5) &&  readerStatus == TAG_ERR_NONE)  {
-            if (strlen(myAnswer) >= 2 * NUMERIC_CODE)  {
+        if (sendCommand(myCommand, myAnswer, (2 * BYTE_CHARS) + 1) &&  readerStatus == TAG_ERR_NONE)  {
+            if (strlen(myAnswer) >= (2 * BYTE_CHARS))  {
                 // Skip numeric status code
-                strncpy(commandRes, myAnswer + NUMERIC_CODE, NUMERIC_CODE);
+                strncpy(commandRes, myAnswer + BYTE_CHARS, BYTE_CHARS);
                 nType = atoh(commandRes);
             }
         }
@@ -209,20 +256,104 @@ int    getDeviceType()
     return nType;
 }
 
-int     getLastError()
-// Get Last Error from reader
+int         getUSBDeviceState()
+// Get USB Device Status (should be 03)
+// The expected response is 2 + 2 characters
 {
-    int         nType = 0;
-    char        myCommand[5] = "000A";
-    char        myAnswer[11] = "";
-    char        commandRes[NUMERIC_CODE + 1] = "";
+    int         nState = -1;
+    char        myCommand[5] = "010A";
+    char        myAnswer[(2 * BYTE_CHARS) + 1] = "";
+    char        commandRes[BYTE_CHARS + 1] = "";
 
     if (ttyUSB1 > 0)  {
-        if (sendCommand(myCommand, myAnswer, 4) &&  readerStatus == TAG_ERR_NONE)  {
-        // Skip numeric status code
-        strncpy(commandRes, myAnswer + 2, 2);
-        nType = atoh(commandRes);
+        if (sendCommand(myCommand, myAnswer, (2 * BYTE_CHARS) + 1) &&  readerStatus == TAG_ERR_NONE)  {
+            if (strlen(myAnswer) >= (2 * BYTE_CHARS))  {
+                // Skip numeric status code
+                strncpy(commandRes, myAnswer + BYTE_CHARS, BYTE_CHARS);
+                nState = atoh(commandRes);
+            }
         }
     }
-    return nType;
+    return nState;
+}
+
+bool        searchTag(int &nTagType, int &nTagBits, char *tagID)
+// Search Tag: Return true if found, tag Type
+{
+    bool        tagPresent = false;
+    char        myCommand[7] = "050010";
+    char        myAnswer[BUF_SIZE] = "";
+    char        commandRes[BUF_SIZE] = "";
+    char        foundTag[BYTE_CHARS + 1];
+    char        tagType[BYTE_CHARS + 1];
+    char        tagBits[BYTE_CHARS + 1];
+    char        idLen[BYTE_CHARS + 1];
+    int         nIdLen = 0;
+
+    nTagType = NOTAG;
+    nTagBits = 0;
+    strcpy(tagID, "");
+    if (ttyUSB1 > 0)  {
+        memset(myAnswer, 0, BUF_SIZE);
+        memset(commandRes, 0, BUF_SIZE);
+        memset(foundTag, 0, BYTE_CHARS + 1);
+        memset(tagType, 0, BYTE_CHARS + 1);
+        memset(tagBits, 0, BYTE_CHARS + 1);
+        memset(idLen, 0, BYTE_CHARS + 1);
+        if (sendCommand(myCommand, myAnswer, -1) &&  readerStatus == TAG_ERR_NONE)  {
+            // Skip numeric status code
+            strcpy(commandRes, myAnswer + BYTE_CHARS);
+            // Tag Found
+            strncpy(foundTag, commandRes, BYTE_CHARS);
+            tagPresent = (atoi(foundTag) > 0);
+            if (tagPresent)  {
+                // Tag Type
+                strncpy(tagType, commandRes + BYTE_CHARS, BYTE_CHARS);
+                nTagType = atoh(tagType);
+                // Tag Bits
+                strncpy(tagBits, commandRes + (2 * BYTE_CHARS), BYTE_CHARS);
+                nTagBits = atoh(tagBits);
+                // IdLen
+                strncpy(idLen, commandRes + (3 * BYTE_CHARS), BYTE_CHARS);
+                // Estimate the length of Tag ID
+                nIdLen = atoh(idLen);
+                int nIdSize = strlen(commandRes) - (4 * BYTE_CHARS);
+                nIdLen = (nIdLen <= nIdSize) ? nIdLen : nIdSize;
+                // Tag ID
+                strncpy(tagID, commandRes + (4 * BYTE_CHARS), nIdLen);
+            }
+        }
+    }
+    if (tagPresent)  {
+        strncpy(lastTag, tagID, nIdLen);
+    }
+    else  {
+        strcpy(lastTag, "");
+    }
+    cardFound = tagPresent;
+    return tagPresent;
+}
+
+u_int32_t     getLastError()
+// Get Last Error from reader
+// The expected response is 2 + 8 characters
+
+{
+    u_int32_t   nError = 0;
+    char        myCommand[5] = "000A";
+    char        myAnswer[(BYTE_CHARS + UINT32_CHARS) + 1] = "";
+    char        commandRes[UINT32_CHARS + 1] = "";
+
+    if (ttyUSB1 > 0)  {
+        if (sendCommand(myCommand, myAnswer, (BYTE_CHARS + UINT32_CHARS) + 1) &&  readerStatus == TAG_ERR_NONE)  {
+            if (strlen(myAnswer) >= (BYTE_CHARS + UINT32_CHARS))  {
+                // Skip numeric status code
+                strncpy(commandRes, myAnswer + BYTE_CHARS, UINT32_CHARS);
+                reverseString(commandRes);
+                qDebug("getLastError(): Result reversed [%s]", commandRes);
+                nError = (u_int32_t) atoh(commandRes);
+            }
+        }
+    }
+    return nError;
 }

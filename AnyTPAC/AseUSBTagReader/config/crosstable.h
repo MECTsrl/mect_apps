@@ -58,6 +58,12 @@ int doWrite_ResetReader(int value);
 int addWrite_ResetReader(int value);
 int getStatus_ResetReader(void);
 
+#define ID_readerLastError 204
+extern u_int32_t readerLastError;	/* Last Reader Error */
+int doWrite_readerLastError(u_int32_t value);
+int addWrite_readerLastError(u_int32_t value);
+int getStatus_readerLastError(void);
+
 #define ID_TCPS_TYPE_PORT 5050
 extern u_int32_t TCPS_TYPE_PORT;
 int doWrite_TCPS_TYPE_PORT(u_int32_t value);
