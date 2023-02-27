@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 2.7.84, 2023-02-23T17:04:20. -->
+<!-- Written by QtCreator 2.7.84, 2023-02-27T13:02:39. -->
 <qtcreator>
  <data>
   <variable>ProjectExplorer.Project.ActiveTarget</variable>
@@ -180,6 +180,19 @@
     <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.0">
      <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
       <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Check for free disk space</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">RemoteLinux.CheckForFreeDiskSpaceStep</value>
+      <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedFiles"/>
+      <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedHosts"/>
+      <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedRemotePaths"/>
+      <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedSysroots"/>
+      <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedTimes"/>
+      <value type="QString" key="RemoteLinux.CheckForFreeDiskSpaceStep.PathToCheck">/</value>
+      <value type="qulonglong" key="RemoteLinux.CheckForFreeDiskSpaceStep.RequiredSpace">5242880</value>
+     </valuemap>
+     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.1">
+      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
       <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Run custom remote command</value>
       <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
       <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">RemoteLinux.GenericRemoteLinuxCustomCommandDeploymentStep</value>
@@ -190,7 +203,7 @@
       <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedTimes"/>
       <value type="QString" key="RemoteLinuxCustomCommandDeploymentStep.CommandLine">stop</value>
      </valuemap>
-     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.1">
+     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.2">
       <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
       <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Upload files via SFTP</value>
       <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
@@ -200,11 +213,13 @@
        <value type="QString">S:/mect_apps/AnyTPAC/AseUSBTagReader/config/splash.png</value>
        <value type="QString">S:/mect_apps/AnyTPAC/AseUSBTagReader/hmi.ini</value>
        <value type="QString">S:/mect_apps/AnyTPAC/AseUSBTagReader/config/Crosstable.csv</value>
+       <value type="QString">S:/mect_apps/AnyTPAC/AseUSBTagReader/qtserialport/lib/libQtSerialPort.so</value>
        <value type="QString">S:/mect_apps/AnyTPAC/AseUSBTagReader/hmi.qss</value>
        <value type="QString">S:/mect_apps/AnyTPAC/AseUSBTagReader/hmi</value>
        <value type="QString">S:/mect_apps/AnyTPAC/AseUSBTagReader/config/trend1.csv</value>
       </valuelist>
       <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedHosts">
+       <value type="QString">192.168.5.213</value>
        <value type="QString">192.168.5.213</value>
        <value type="QString">192.168.5.213</value>
        <value type="QString">192.168.5.213</value>
@@ -218,6 +233,7 @@
        <value type="QString">/local/etc/sysconfig/img</value>
        <value type="QString">/local/root</value>
        <value type="QString">/local/etc/sysconfig</value>
+       <value type="QString">/local/root/lib</value>
        <value type="QString">/local/root</value>
        <value type="QString">/local/root</value>
        <value type="QString">/local/data/customtrend</value>
@@ -230,19 +246,21 @@
        <value type="QString">C:/Qt485/imx28/rootfs</value>
        <value type="QString">C:/Qt485/imx28/rootfs</value>
        <value type="QString">C:/Qt485/imx28/rootfs</value>
+       <value type="QString">C:/Qt485/imx28/rootfs</value>
       </valuelist>
       <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedTimes">
-       <value type="QDateTime">2023-02-23T17:02:40</value>
-       <value type="QDateTime">2023-02-23T17:02:40</value>
-       <value type="QDateTime">2023-02-23T17:02:40</value>
-       <value type="QDateTime">2023-02-23T17:02:40</value>
-       <value type="QDateTime">2023-02-23T17:02:40</value>
-       <value type="QDateTime">2023-02-23T17:02:41</value>
-       <value type="QDateTime">2023-02-23T17:02:40</value>
+       <value type="QDateTime">2023-02-27T13:02:17</value>
+       <value type="QDateTime">2023-02-27T13:02:17</value>
+       <value type="QDateTime">2023-02-27T13:02:17</value>
+       <value type="QDateTime">2023-02-27T13:02:17</value>
+       <value type="QDateTime">2023-02-27T13:02:18</value>
+       <value type="QDateTime">2023-02-27T13:02:17</value>
+       <value type="QDateTime">2023-02-27T13:02:18</value>
+       <value type="QDateTime">2023-02-27T13:02:17</value>
       </valuelist>
       <value type="bool" key="RemoteLinux.GenericDirectUploadStep.Incremental">false</value>
      </valuemap>
-     <value type="int" key="ProjectExplorer.BuildStepList.StepsCount">2</value>
+     <value type="int" key="ProjectExplorer.BuildStepList.StepsCount">3</value>
      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Deploy</value>
      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ProjectExplorer.BuildSteps.Deploy</value>
@@ -317,15 +335,5 @@
  <data>
   <variable>ProjectExplorer.Project.Updater.FileVersion</variable>
   <value type="int">14</value>
- </data>
- <data>
-  <variable>ProjectExplorer.Project.UserStickyKeys</variable>
-  <valuelist type="QVariantList">
-   <value type="QString">Qt4ProjectManager.MaemoRunConfiguration.LastDeployedHosts</value>
-   <value type="QString">Qt4ProjectManager.MaemoRunConfiguration.LastDeployedRemotePaths</value>
-   <value type="QString">Qt4ProjectManager.MaemoRunConfiguration.LastDeployedSysroots</value>
-   <value type="QString">Qt4ProjectManager.MaemoRunConfiguration.LastDeployedFiles</value>
-   <value type="QString">Qt4ProjectManager.MaemoRunConfiguration.LastDeployedTimes</value>
-  </valuelist>
  </data>
 </qtcreator>

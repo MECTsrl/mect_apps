@@ -4,6 +4,10 @@
 #include "main.h"
 #include "hmi_logger.h"
 #include "global_functions.h"
+#include "serialreader.h"
+
+extern SerialReader *tagReader;
+
 
 void setup(void);
 void loop(void);

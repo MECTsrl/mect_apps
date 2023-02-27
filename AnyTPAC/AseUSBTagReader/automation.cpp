@@ -7,6 +7,7 @@
 
 #define APP_VERSION         23001
 
+SerialReader *tagReader = 0;
 
 /* put here the initalization */
 void setup(void)
