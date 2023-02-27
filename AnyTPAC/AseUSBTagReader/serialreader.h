@@ -14,6 +14,7 @@ class SerialReader : public QObject
     Q_OBJECT
 public:
     explicit SerialReader(QString myDevice, QObject *parent = 0);
+    ~SerialReader();
     bool    sendSerialCommand(QString serialCommand);
     bool    isOpen();
     int     getSerialDeviceID();

@@ -13,7 +13,17 @@ SerialReader::SerialReader(QString serialDevice, QObject *parent) :
     myDevice = serialDevice;
     portOpen = false;
     serial = 0;
-    // QObject::connect(&serial, SIGNAL(readyRead()), this, SLOT(readData()));
+}
+
+SerialReader::~SerialReader()
+{
+    if (serial != 0)  {
+        // Close Device
+        if (serial->isOpen())  {
+            serial->close();
+        }
+        serial->deleteLater();
+    }
 }
 
 void SerialReader::openSerialPort()
@@ -26,6 +36,7 @@ void SerialReader::openSerialPort()
     serial->setStopBits(QSerialPort::OneStop);
     serial->setFlowControl(QSerialPort::NoFlowControl);
     portOpen = serial->open(QIODevice::ReadWrite);
+    // QObject::connect(&serial, SIGNAL(readyRead()), this, SLOT(readData()));
 }
 
 int SerialReader::getSerialDeviceID()

@@ -57,8 +57,15 @@ void setup(void)
             nLoop++;
             serialOpened = tagReader->isOpen();
         }
-        ttyUSB1 = tagReader->getSerialDeviceID();
-        qDebug("Current Serial Port handle [%d] for Device [%s] Loop [%d]", ttyUSB1, THE_DEVICE, nLoop);
+
+        if (serialOpened)  {
+            ttyUSB1 = tagReader->getSerialDeviceID();
+            qDebug("Current Serial Port handle [%d] for Device [%s] Loop [%d]", ttyUSB1, THE_DEVICE, nLoop);
+        }
+        else  {
+            qCritical("setup(): Error opening device [%s]", THE_DEVICE);
+            tagReader->deleteLater();
+        }
     }
     else {
         qCritical("setup(): Reader Device [%s] not found", THE_DEVICE);
