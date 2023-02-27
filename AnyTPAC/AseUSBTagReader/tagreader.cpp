@@ -13,7 +13,7 @@
 #include <fcntl.h>
 
 #include "utility.h"            // from Mect Suite utility.h
-
+#include "automation.h"
 #include "tagreader.h"
 
 #include "common.h"
@@ -38,7 +38,7 @@ char            lastTag[TAG_ID_LEN];            // Last Read Tag
 #define  BYTE_CHARS         2
 #define  UINT16_CHARS       4
 #define  UINT32_CHARS       8
-#define  BUF_SIZE           256
+#define  MY_BUF_SIZE           256
 
 char        readerCommand[LINE_SIZE];
 char        readerAnswer[LINE_SIZE];
@@ -282,8 +282,8 @@ bool        searchTag(int &nTagType, int &nTagBits, char *tagID)
 {
     bool        tagPresent = false;
     char        myCommand[7] = "050010";
-    char        myAnswer[BUF_SIZE] = "";
-    char        commandRes[BUF_SIZE] = "";
+    char        myAnswer[MY_BUF_SIZE] = "";
+    char        commandRes[MY_BUF_SIZE] = "";
     char        foundTag[BYTE_CHARS + 1];
     char        tagType[BYTE_CHARS + 1];
     char        tagBits[BYTE_CHARS + 1];
@@ -294,8 +294,8 @@ bool        searchTag(int &nTagType, int &nTagBits, char *tagID)
     nTagBits = 0;
     strcpy(tagID, "");
     if (ttyUSB1 > 0)  {
-        memset(myAnswer, 0, BUF_SIZE);
-        memset(commandRes, 0, BUF_SIZE);
+        memset(myAnswer, 0, MY_BUF_SIZE);
+        memset(commandRes, 0, MY_BUF_SIZE);
         memset(foundTag, 0, BYTE_CHARS + 1);
         memset(tagType, 0, BYTE_CHARS + 1);
         memset(tagBits, 0, BYTE_CHARS + 1);

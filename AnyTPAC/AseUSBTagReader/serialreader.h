@@ -13,20 +13,23 @@ class SerialReader : public QObject
 {
     Q_OBJECT
 public:
-    explicit SerialReader(QObject *parent = 0);
-    bool    openSerialPort(QString serialDevice);
+    explicit SerialReader(QString myDevice, QObject *parent = 0);
     bool    sendSerialCommand(QString serialCommand);
     bool    isOpen();
+    int     getSerialDeviceID();
 
 signals:
     
 public slots:
+    void    openSerialPort();
 
 private slots:
     void    readData();
 
 private:
-    QSerialPort serial;
+    bool        portOpen;
+    QSerialPort *serial;
+    QString     myDevice;
     char        readerCommand[BUF_SIZE + 1];
     char        readerAnswer[BUF_SIZE + 1];
 };

@@ -1,7 +1,6 @@
 #ifndef TAGREADER_H
 #define TAGREADER_H
 
-#define THE_DEVICE "/dev/ttyUSB1"
 
 //------------------------------------------------------------
 // Return Code form Tag Reader Commands

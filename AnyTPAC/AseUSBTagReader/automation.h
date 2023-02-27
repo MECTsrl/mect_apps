@@ -6,6 +6,9 @@
 #include "global_functions.h"
 #include "serialreader.h"
 
+#define THE_DEVICE "/dev/ttyUSB1"
+
+
 extern SerialReader *tagReader;
 
 

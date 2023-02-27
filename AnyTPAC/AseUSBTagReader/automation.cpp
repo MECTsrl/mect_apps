@@ -1,5 +1,8 @@
 #include <QFile>
 #include <QDebug>
+#include <QThread>
+#include <QtSerialPort/QSerialPort>
+#include <QtSerialPort/QSerialPortInfo>
 
 #include "crosstable.h"
 #include "automation.h"
@@ -12,31 +15,57 @@ SerialReader *tagReader = 0;
 /* put here the initalization */
 void setup(void)
 {
-    bool serialOpened = false;
+    int     i = 0;
+    bool    serialOpened = false;
+    bool    serialPortFound = false;
+    QString serialPortName;
+
     // Wait PLC Engine gets ready
     while (PLC_EngineStatus < 2) {
         fputc('*', stderr);
         sleep(1);
     }
     // Insert your start-up code here
-    // .....
-    beginWrite();
-    addWrite_PLC_HMI_Version(APP_VERSION);
+    // Searching Serial Device
     if (QFile::exists(THE_DEVICE))  {
-        serialOpened = openReader();
-        if (serialOpened)  {
-            int usbType = getUSBType();
-            qDebug("USB Interface Type is: [%d]", usbType);
-            sleep(4);
-            qDebug("Device Type is: [%d]", getDeviceType());
-            sleep(4);
-            qDebug("USB Device Status: [%d]", getUSBDeviceState());
-            sleep(4);
+        foreach (const QSerialPortInfo &info, QSerialPortInfo::availablePorts()) {
+            qDebug("Serial Port [%d/%d] - Name: [%s] Location: [%s] Description: [%s] Manufacturer: [%s]", i+1,
+                                QSerialPortInfo::availablePorts().count(),
+                                info.portName().toAscii().data(),
+                                info.systemLocation().toAscii().data(),
+                                info.description().toAscii().data(),
+                                info.manufacturer().toAscii().data());
+            // Check Device raw file name from /dev
+            if (info.systemLocation() == THE_DEVICE)  {
+                // tagReaderInfo = info;
+                serialPortFound = true;
+                serialPortName = info.portName();
+                qDebug("Tag Reader Device Found: [%s] Port Name[%s]", THE_DEVICE, serialPortName.toAscii().data());
+            }
         }
+    }
+    // Open Serial Port Object
+    if (serialPortFound && ! serialPortName.isEmpty())  {
+        QThread* serialThread = new QThread();
+        tagReader = new SerialReader(serialPortName);
+        tagReader->moveToThread(serialThread);
+        QObject::connect(serialThread, SIGNAL(started()), tagReader, SLOT(openSerialPort()));
+        serialThread->start();
+        int nLoop = 0;
+        while (! serialOpened && nLoop < 30)  {
+            sleep(1);
+            nLoop++;
+            serialOpened = tagReader->isOpen();
+        }
+        ttyUSB1 = tagReader->getSerialDeviceID();
+        qDebug("Current Serial Port handle [%d] for Device [%s] Loop [%d]", ttyUSB1, THE_DEVICE, nLoop);
     }
     else {
         qCritical("setup(): Reader Device [%s] not found", THE_DEVICE);
     }
+
+    beginWrite();
+    addWrite_PLC_HMI_Version(APP_VERSION);
     addWrite_readerFound(serialOpened);
     endWrite();
 }
@@ -45,31 +74,10 @@ void setup(void)
 void loop(void)
 {
     static unsigned loopCounter = 1;
-    // static bool  askType = true;
-    static bool  searchTags = true;
 
-    // Un giro ogni 4.3 s
-    if (ttyUSB1 >= 0  && (loopCounter % 43 == 0)) {
-        //                if (askType)  {
-        //                    qDebug("Loop Counter: [%d] - Detected Device Type is: [%d]", loopCounter, getDeviceType());
-        //                    askType = false;
-        //                    searchTags = true;
-        //                }
-        //                else  {
-        //                    askType = true;
-        //                    searchTags = false;
-        //                }
-        if (searchTags)  {
-            int     tagType = NOTAG;
-            int     tagBits = 0;
-            char    tagId[256];
-            if (searchTag(tagType, tagBits, tagId))  {
-                qDebug("Loop Counter: [%d] - Reader Status:[%d] - Found Tag Type:[%d] Tag Bits:[%d] ID:[%s]", loopCounter, readerStatus, tagType, tagBits, tagId);
-            }
-            else  {
-                qWarning("Loop Counter:[%d] - Reader Status:[%d] - No Tag Found", loopCounter, readerStatus);
-            }
-        }
+    // Un giro ogni 7 s
+    if (tagReader != 0 && ttyUSB1 > 0  && (loopCounter % 7 == 0)) {
+        tagReader->sendSerialCommand("050010");
     }
     loopCounter++;
 }
