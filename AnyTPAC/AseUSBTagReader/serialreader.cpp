@@ -5,6 +5,8 @@
 #include <QElapsedTimer>
 #include <QTime>
 
+#define SEND_COMMAND_TIMEOUT 2000
+
 const    char        cCR = 13;                       // Carattere CR
 
 SerialReader::SerialReader(QString serialDevice, QObject *parent) :
@@ -48,8 +50,11 @@ bool    SerialReader::sendSerialCommand(QString serialCommand)
 {
 
     QElapsedTimer   watchDogTimer;
-
     int     nChars2Send = serialCommand.length();
+    int     nCharsRead = 0;
+    int     lineLength = 0;
+    int     nReadLoop = 0;
+
 
     serial->clear();
     memset(&readerCommand[0], 0, BUF_SIZE);
@@ -61,9 +66,24 @@ bool    SerialReader::sendSerialCommand(QString serialCommand)
     qint64 written = serial->write(readerCommand, nChars2Send);
     serial->waitForBytesWritten(10000);
     qDebug("[%s] sendSerialCommand(): Sent[%s] Chars[%d]", QTime::currentTime().toString("HH:mm:ss.zzz").toLatin1().data() ,readerCommand, nChars2Send);
-    serial->waitForReadyRead(10000);
-    qint64 lineLength = serial->readLine(readerAnswer, BUF_SIZE);
-    qDebug("[%s] readData(): Received [%s] Chars[%lli] Elapsed[%lli] ms", QTime::currentTime().toString("HH:mm:ss.zzz").toLatin1().data(), readerAnswer, lineLength, watchDogTimer.elapsed());
+    char *p = &readerAnswer[0];
+    while ((lineLength < BUF_SIZE) && ! watchDogTimer.hasExpired(SEND_COMMAND_TIMEOUT))  {
+        nCharsRead = (int) serial->read(p, BUF_SIZE);
+        p += nCharsRead;
+        lineLength += nCharsRead;
+        nReadLoop++;
+        // Condizione di uscita finale dal Loop di lettura
+        if ((lineLength > 0 && readerAnswer[lineLength - 1] == cCR) || nCharsRead < 0)  {
+            break;
+        }
+    }
+    // qint64 lineLength = serial->readLine(readerAnswer, BUF_SIZE);
+    qDebug("[%s] readData(): Received [%s] Chars[%d] Elapsed[%lli] ms Loops[%d]",
+                    QTime::currentTime().toString("HH:mm:ss.zzz").toLatin1().data(),
+                    readerAnswer,
+                    lineLength,
+                    watchDogTimer.elapsed(),
+                    nReadLoop);
     return (written = serialCommand.length());
 }
 
