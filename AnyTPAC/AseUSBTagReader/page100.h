@@ -10,6 +10,8 @@
 #define PAGE100_H
 
 #include "pagebrowser.h"
+#include <QString>
+#include <QThread>
 
 namespace Ui {
 class page100;
@@ -30,6 +32,12 @@ private slots:
     
 private:
     Ui::page100 *ui;
+    bool        firstTime;
+    bool        serialOpened;
+    bool        serialPortFound;
+    QString     serialPortName;
+    // QThread*    serialThread;
+
 };
 
 #endif // PAGE100_H

@@ -197,15 +197,15 @@
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
-1;P;WriteTAGRequest                ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;200 ;5   ;[RW]
-1;P;readerFound                    ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;200 ;5   ;[RW]
-1;P;ReadTAGRequest                 ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;200 ;5   ;[RW]
-1;P;ResetReader                    ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;200 ;5   ;[RW]
-1;P;readerLastError                ;UDINT    ;0   ;PLC       ;               ;    ;    ;      ;200 ;5   ;[RW]Last Reader Error
 ;;;;;;;;;;;;
+1;P;rawttyDevice                   ;UINT     ;0   ;PLC       ;               ;    ;    ;      ;201 ;3   ;[RO]File handle for reader tty device
+1;P;readerFound                    ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;201 ;3   ;[RO]True if reader is found and ready
+1;P;tagFound                       ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;201 ;3   ;[RO]True if a tag is found by Reader
 ;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
+1;P;WriteTAGRequest                ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;205 ;4   ;[RW]
+1;P;ReadTAGRequest                 ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;205 ;4   ;[RW]
+1;P;ResetReader                    ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;205 ;4   ;[RW]
+1;P;readerLastError                ;UDINT    ;0   ;PLC       ;               ;    ;    ;      ;205 ;4   ;[RW]Last Reader Error
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;

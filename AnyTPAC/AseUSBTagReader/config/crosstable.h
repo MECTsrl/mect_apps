@@ -34,31 +34,43 @@ extern "C" {
 #include "cross_table_utility.h"
 
 
-#define ID_WriteTAGRequest 200
+#define ID_rawttyDevice 201
+extern u_int16_t rawttyDevice;	/* File handle for reader tty device */
+int doWrite_rawttyDevice(u_int16_t value);
+int addWrite_rawttyDevice(u_int16_t value);
+int getStatus_rawttyDevice(void);
+
+#define ID_readerFound 202
+extern int readerFound;	/* True if reader is found and ready */
+int doWrite_readerFound(int value);
+int addWrite_readerFound(int value);
+int getStatus_readerFound(void);
+
+#define ID_tagFound 203
+extern int tagFound;	/* True if a tag is found by Reader */
+int doWrite_tagFound(int value);
+int addWrite_tagFound(int value);
+int getStatus_tagFound(void);
+
+#define ID_WriteTAGRequest 205
 extern int WriteTAGRequest;
 int doWrite_WriteTAGRequest(int value);
 int addWrite_WriteTAGRequest(int value);
 int getStatus_WriteTAGRequest(void);
 
-#define ID_readerFound 201
-extern int readerFound;
-int doWrite_readerFound(int value);
-int addWrite_readerFound(int value);
-int getStatus_readerFound(void);
-
-#define ID_ReadTAGRequest 202
+#define ID_ReadTAGRequest 206
 extern int ReadTAGRequest;
 int doWrite_ReadTAGRequest(int value);
 int addWrite_ReadTAGRequest(int value);
 int getStatus_ReadTAGRequest(void);
 
-#define ID_ResetReader 203
+#define ID_ResetReader 207
 extern int ResetReader;
 int doWrite_ResetReader(int value);
 int addWrite_ResetReader(int value);
 int getStatus_ResetReader(void);
 
-#define ID_readerLastError 204
+#define ID_readerLastError 208
 extern u_int32_t readerLastError;	/* Last Reader Error */
 int doWrite_readerLastError(u_int32_t value);
 int addWrite_readerLastError(u_int32_t value);

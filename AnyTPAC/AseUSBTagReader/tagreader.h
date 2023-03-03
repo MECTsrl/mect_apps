@@ -77,8 +77,6 @@
 //------------------------------------------------------------
 // Tag Reader public management variables
 //------------------------------------------------------------
-extern int          ttyUSB1;                // Handle to device file pointer
-extern bool         cardFound;              // True if Card Reader is Open
 extern int          readerStatus;           // reader Status (result of last command)
 extern u_int32_t    readerError;            // reader Last Error
 extern char         lastTag[];    // Last Read Tag

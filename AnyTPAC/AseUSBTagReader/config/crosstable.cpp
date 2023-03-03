@@ -28,17 +28,31 @@
 #include "global_var.h"
 
 /*
+ * Variable rawttyDevice	[ File handle for reader tty device ]
+ */
+
+u_int16_t rawttyDevice = 0;
+
+
+/*
+ * Variable readerFound	[ True if reader is found and ready ]
+ */
+
+int readerFound = 0;
+
+
+/*
+ * Variable tagFound	[ True if a tag is found by Reader ]
+ */
+
+int tagFound = 0;
+
+
+/*
  * Variable WriteTAGRequest
  */
 
 int WriteTAGRequest = 0;
-
-
-/*
- * Variable readerFound
- */
-
-int readerFound = 0;
 
 
 /*
@@ -1252,21 +1266,21 @@ u_int8_t PLC_ALARM_VOLUME = 0;
 u_int32_t PLC_BUZZER = 0;
 
 int
-doWrite_WriteTAGRequest(int value)
+doWrite_rawttyDevice(u_int16_t value)
 {
-	return doWrite(ID_WriteTAGRequest, &value);
+	return doWrite(ID_rawttyDevice, &value);
 }
 
 int
-addWrite_WriteTAGRequest(int value)
+addWrite_rawttyDevice(u_int16_t value)
 {
-	return addWrite(ID_WriteTAGRequest, &value);
+	return addWrite(ID_rawttyDevice, &value);
 }
 
 int
-getStatus_WriteTAGRequest(void)
+getStatus_rawttyDevice(void)
 {
-	return getStatus(ID_WriteTAGRequest);
+	return getStatus(ID_rawttyDevice);
 }
 
 int
@@ -1285,6 +1299,42 @@ int
 getStatus_readerFound(void)
 {
 	return getStatus(ID_readerFound);
+}
+
+int
+doWrite_tagFound(int value)
+{
+	return doWrite(ID_tagFound, &value);
+}
+
+int
+addWrite_tagFound(int value)
+{
+	return addWrite(ID_tagFound, &value);
+}
+
+int
+getStatus_tagFound(void)
+{
+	return getStatus(ID_tagFound);
+}
+
+int
+doWrite_WriteTAGRequest(int value)
+{
+	return doWrite(ID_WriteTAGRequest, &value);
+}
+
+int
+addWrite_WriteTAGRequest(int value)
+{
+	return addWrite(ID_WriteTAGRequest, &value);
+}
+
+int
+getStatus_WriteTAGRequest(void)
+{
+	return getStatus(ID_WriteTAGRequest);
 }
 
 int
@@ -4407,8 +4457,10 @@ update_all(void)
 {
 	int retval = 0;
 
-	retval += readFromDb(ID_WriteTAGRequest, &WriteTAGRequest);
+	retval += readFromDb(ID_rawttyDevice, &rawttyDevice);
 	retval += readFromDb(ID_readerFound, &readerFound);
+	retval += readFromDb(ID_tagFound, &tagFound);
+	retval += readFromDb(ID_WriteTAGRequest, &WriteTAGRequest);
 	retval += readFromDb(ID_ReadTAGRequest, &ReadTAGRequest);
 	retval += readFromDb(ID_ResetReader, &ResetReader);
 	retval += readFromDb(ID_readerLastError, &readerLastError);

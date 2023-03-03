@@ -9,11 +9,6 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="59"/>
-        <source>TAG code: </source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="page100.ui" line="109"/>
         <source>ATCMbutton widget</source>
         <translation type="unfinished"></translation>
