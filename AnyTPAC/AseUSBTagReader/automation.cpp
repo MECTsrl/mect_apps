@@ -1,6 +1,7 @@
 #include <QFile>
 #include <QDebug>
 #include <QThread>
+#include <QTime>
 
 #include "crosstable.h"
 #include "automation.h"
@@ -25,16 +26,35 @@ void setup(void)
     addWrite_readerFound(false);
     addWrite_rawttyDevice(0);
     endWrite();
+    int tagFilter = 0;
+    tagFilter |= TAGMASK(HFTAG_MIFARE);         // 0x01
+    tagFilter |= TAGMASK(HFTAG_ISO15693);       // 0x04
+    qDebug("Tag Filter: 0x%X", tagFilter);
 }
 
 /* put here the operation made every 100ms */
 void loop(void)
 {
     static unsigned loopCounter = 1;
+    static bool     firstLoop = true;
 
-    // Un giro ogni 7 s
-    if (tagReader != 0 && tagReader->isOpen()  && tagReader->readerStatus() > SerialReader::senderZero && tagReader->readerStatus() <= SerialReader::senderWaiting && (loopCounter % 11 == 0)) {
-        tagReader->sendReaderCommand(SerialReader::cmdSearchTags, "050010");
+    // Un giro ogni 4 s
+    if (loopCounter % 41 == 0 && tagReader != 0 && tagReader->isOpen())  {
+        if (tagReader->readerStatus() == SerialReader::senderWaiting)  {
+            if (firstLoop)  {
+                if (tagReader->sendReaderCommand(SerialReader::cmdGetVersion, "0004FF"))  {
+                    firstLoop = false;
+                }
+            }
+            else  {
+                tagReader->sendReaderCommand(SerialReader::cmdSearchTags, "050010");
+            }
+        }
+        else  {
+            qDebug("[%s] loop(): Reader Status: [%s]",
+                        QTime::currentTime().toString("HH:mm:ss.zzz").toLatin1().data(),
+                   tagReader->getStatusDesc(tagReader->readerStatus()).toLatin1().data());
+        }
     }
     loopCounter++;
 }

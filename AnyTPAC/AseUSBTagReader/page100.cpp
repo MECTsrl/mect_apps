@@ -94,22 +94,24 @@ void page100::updateData()
         // Searching Serial Device
         if (QFile::exists(THE_DEVICE))  {
             ui->label_Tag->setText(QString("Searching Device [%1]") .arg(THE_DEVICE));
-            foreach (const QSerialPortInfo &info, QSerialPortInfo::availablePorts()) {
-                QCoreApplication::processEvents();
-                qDebug("Serial Port [%d/%d] - Name: [%s] Location: [%s] Description: [%s] Manufacturer: [%s]", i+1,
-                                    QSerialPortInfo::availablePorts().count(),
-                                    info.portName().toAscii().data(),
-                                    info.systemLocation().toAscii().data(),
-                                    info.description().toAscii().data(),
-                                    info.manufacturer().toAscii().data());
-                // Check Device raw file name from /dev
-                if (info.systemLocation() == THE_DEVICE)  {
-                    // tagReaderInfo = info;
-                    serialPortFound = true;
-                    serialPortName = info.portName();
-                    qDebug("Tag Reader Device Found: [%s] Port Name[%s]", THE_DEVICE, serialPortName.toAscii().data());
-                }
-            }
+                //            foreach (const QSerialPortInfo &info, QSerialPortInfo::availablePorts()) {
+                //                QCoreApplication::processEvents();
+                //                qDebug("Serial Port [%d/%d] - Name: [%s] Location: [%s] Description: [%s] Manufacturer: [%s]", i+1,
+                //                                    QSerialPortInfo::availablePorts().count(),
+                //                                    info.portName().toAscii().data(),
+                //                                    info.systemLocation().toAscii().data(),
+                //                                    info.description().toAscii().data(),
+                //                                    info.manufacturer().toAscii().data());
+                //                // Check Device raw file name from /dev
+                //                if (info.systemLocation() == THE_DEVICE)  {
+                //                    // tagReaderInfo = info;
+                //                    serialPortFound = true;
+                //                    serialPortName = info.portName();
+                //                    qDebug("Tag Reader Device Found: [%s] Port Name[%s]", THE_DEVICE, serialPortName.toAscii().data());
+                //                }
+                //            }
+                serialPortFound = true;
+                serialPortName = QString("ttyUSB1");
         }
         else {
             ui->label_Tag->setText(QString("Device [%1] not Found!") .arg(THE_DEVICE));
