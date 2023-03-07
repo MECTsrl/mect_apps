@@ -13,7 +13,14 @@
 #define SEND_READ_PAUSE         20
 #define SENDER_INTERVAL         100
 
-const    char        cCR = 13;                       // Carattere CR
+
+// Parameters for SL2S2602 ICODE SLIX2 (see ICODE_SLIX2.pdf in doc folder)
+const   char        cCR = 13;                                       // CR Char
+const   int         nBytesPerBlock = 4;                             // Bytes per Block in User Area
+const   int         nBitsPerBlock = 8 * nBytesPerBlock;             // Bits per Block in User Area
+const   int         nMaxUserAreaBits = 2560;                        // Available Bits   in User Area
+const   int         nMaxUserAreaBytes = nMaxUserAreaBits / 8;       // Available Bytes  in User Area
+const   int         nMaxUserAreaBlocks = (nMaxUserAreaBytes / nBytesPerBlock) - 1;  // Available User Block (last block is reserved for Counter feature)
 
 SerialReader::SerialReader(QString serialDevice, QObject *parent) :
     QObject(parent)
@@ -137,7 +144,9 @@ bool    SerialReader::sendSyncSerialCommand(QString serialCommand)
     // Check final status
     if (myStatus == senderReading && fRes)  {
         // if received, run the parser
-        emit replyReady((int) currentCommand);
+        if (currentCommand != cmdReadBlock && currentCommand != cmdWriteBlock)  {
+            emit replyReady((int) currentCommand);
+        }
     }
     else  {
         myStatus = senderError;
@@ -414,3 +423,88 @@ void SerialReader::timerEvent(QTimerEvent *event)
         readData();
     }
 }
+
+bool        SerialReader::readTagBlock(int currentBlock, char *buffer)
+{
+    QString readerCommand = QString("0D05%100") .arg(currentBlock, 2, 16);
+
+    QChar ch;
+
+    for (int nByte = 0; nByte < nBytesPerBlock; nByte++)  {
+        // TO DO: Split of command
+    }
+    currentCommand = cmdReadBlock;
+
+}
+
+bool        SerialReader::writeTagBlock(int currentBlock, char *buffer)
+{
+    currentCommand = cmdWriteBlock;
+
+}
+
+//------------------------------------------------------------
+// SerialReader exported public commands
+//------------------------------------------------------------
+bool        SerialReader::searchTag()
+// Search Tag near reader
+{
+    return sendReaderCommand(SerialReader::cmdSearchTags, "050010");
+}
+
+bool        SerialReader::readTagMemory(char *userArea, int nBytes)
+// Read User Memory Area of Current Tag
+{
+    bool    fRes = false;
+    int     nBlock = 0;
+    int     nBlocks = nBytes / nBytesPerBlock;
+    int     nErrors = 0;
+    char    localBuffer[nMaxUserAreaBytes];
+    char    *p;
+
+    // Check Size
+    if (nBlocks > nMaxUserAreaBlocks)  {
+        qCritical("readTagMemory(): Size of the User Area exceeds the space available on Tag: Requested [%d]B vs Available [%d]",
+                            nBytes,
+                            nMaxUserAreaBlocks * nBytesPerBlock);
+        goto exitReadTag;
+    }
+    // Clear Buffer
+    p = &localBuffer[0];;
+    memset(p, 0, nMaxUserAreaBytes);
+    // Reading Loop
+    nBlock = 0;
+    while (nBlock < nBlocks)  {
+        fRes = readTagBlock(nBlock, p);
+        if (fRes)  {
+            nBlock++;
+            p += (nBlock * nBytesPerBlock);
+        }
+        else  {
+            ++nErrors;
+        }
+    }
+    // All ok, copy of the read data on the user area
+    if (fRes)  {
+        memcpy(userArea, localBuffer, nBytes);
+    }
+
+exitReadTag:
+    return fRes;
+}
+
+bool        SerialReader::writeTagMemory(char *userArea, int nBytes)
+// Write User Memory Area of Current Tag
+{
+    bool    fRes = false;
+    int     nBlock = 0;
+    int     nBlocks = nBytes / nBytesPerBlock;
+    char    *p;
+
+    p = userArea;
+    for (nBlock = 0; nBlock < nBlocks; nBlock++)  {
+        p += (nBlock * nBytesPerBlock);
+    }
+    return fRes;
+}
+

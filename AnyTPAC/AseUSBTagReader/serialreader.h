@@ -17,6 +17,9 @@ class SerialReader : public QObject
 public:
     explicit SerialReader(QString myDevice, QObject *parent = 0);
     ~SerialReader();
+    bool        searchTag();            // Search Tag near reader
+    bool        readTagMemory(char *userArea, int nBytes);      // Read User Memory Area of Current Tag
+    bool        writeTagMemory(char *userArea, int nBytes);     // Write User Memory Area of Current Tag
     enum commandReader  {
         cmdNone = 0,
         cmdGetVersion,
@@ -37,8 +40,9 @@ public:
         senderParsing,
         senderError
     };
-
+    // Status and Current Tag Info
     bool    isOpen();
+    bool    isSync()                    const { return useSyncCommands; }       // Returns true if Commands are sent in sync mode
     int     getSerialDeviceID()         const { return (int) serialDevice.handle(); }  // Device Handle
     int     getCommErrors()             const { return comErrors;       }       // Communication Errors
     QString getVersionString()          const { return versionString;   }       // Driver Version String
@@ -83,8 +87,6 @@ public:
         }
         return retval;
     }           // Status Description
-    bool    isSync()                    const { return useSyncCommands; }       // True if Command are sent in sync mode
-    bool    sendReaderCommand(enum commandReader commandType, QString myCommand);   // send Command to Reader
 
 protected:
     void    timerEvent(QTimerEvent *event);
@@ -103,10 +105,13 @@ private:
     //-------------------------------------------
     // Privata Functions
     //-------------------------------------------
+    bool                sendReaderCommand(enum commandReader commandType, QString myCommand);   // send Command to Reader
     bool                sendAsyncSerialCommand(QString serialCommand);
     bool                sendSyncSerialCommand(QString serialCommand);
     bool                parseTagID(QString tagString, uint &tagType, uint &tagIdbits, uint &tagLen, QString &tagID);
     bool                parseReaderString(QString readerString, QString &userString);
+    bool                readTagBlock(int currentBlock, char *buffer);
+    bool                writeTagBlock(int currentBlock, char *buffer);
     //-------------------------------------------
     // Privata Variables
     //-------------------------------------------

@@ -39,8 +39,10 @@ void loop(void)
 
     // Un giro ogni 3 s
     if (loopCounter % 29 == 0 && tagReader != 0 && tagReader->isOpen())  {
-        if (tagReader->readerStatus() == SerialReader::senderWaiting)  {
-                tagReader->sendReaderCommand(SerialReader::cmdSearchTags, "050010");
+        if (tagReader->readerStatus() == SerialReader::senderWaiting  &&
+            tagReader->lastCommand()  != SerialReader::cmdReadBlock &&
+            tagReader->lastCommand()  != SerialReader::cmdWriteBlock)  {
+            tagReader->searchTag();
         }
         else  {
             qDebug("[%s] Automation loop(): Reader Status: [%s]",
