@@ -36,24 +36,16 @@ void setup(void)
 void loop(void)
 {
     static unsigned loopCounter = 1;
-    static bool     firstLoop = true;
 
-    // Un giro ogni 4 s
-    if (loopCounter % 41 == 0 && tagReader != 0 && tagReader->isOpen())  {
+    // Un giro ogni 3 s
+    if (loopCounter % 29 == 0 && tagReader != 0 && tagReader->isOpen())  {
         if (tagReader->readerStatus() == SerialReader::senderWaiting)  {
-            if (firstLoop)  {
-                if (tagReader->sendReaderCommand(SerialReader::cmdGetVersion, "0004FF"))  {
-                    firstLoop = false;
-                }
-            }
-            else  {
                 tagReader->sendReaderCommand(SerialReader::cmdSearchTags, "050010");
-            }
         }
         else  {
-            qDebug("[%s] loop(): Reader Status: [%s]",
-                        QTime::currentTime().toString("HH:mm:ss.zzz").toLatin1().data(),
-                   tagReader->getStatusDesc(tagReader->readerStatus()).toLatin1().data());
+            qDebug("[%s] Automation loop(): Reader Status: [%s]",
+                    QTime::currentTime().toString("HH:mm:ss.zzz").toLatin1().data(),
+                    tagReader->getStatusDesc(tagReader->readerStatus()).toLatin1().data());
         }
     }
     loopCounter++;

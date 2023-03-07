@@ -177,16 +177,18 @@ void page100::updateData()
     }
     else if (tagReader->isTagPresent())  {
         szNewStyle = szRed;
-        ui->label_Tag->setText(QString("TAG Code: [%1]") .arg(tagReader->lastTagID()));
+        ui->label_Tag->setText(QString("Tag:[%1]") .arg(tagReader->lastTagID()));
     }
     else  {
         szNewStyle = szGreen;
-        ui->label_Tag->setText(QString("TAG Code: [NONE]"));
+        ui->label_Tag->setText(QString("Tag:[NONE]"));
     }
     // Updating Tag Led
     if (ui->label_tag_present->styleSheet() != szNewStyle)  {
         ui->label_tag_present->setStyleSheet(szNewStyle);
     }
+    // Communication Errors
+    ui->labelErrors->setText(QString("Comm Errors: %1") .arg(tagReader->getCommErrors(), 10, 10));
 
 endUpdateData:
     ui->label_reader->update();

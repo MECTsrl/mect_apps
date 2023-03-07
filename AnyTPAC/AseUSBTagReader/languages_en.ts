@@ -10,6 +10,8 @@
     </message>
     <message>
         <location filename="page100.ui" line="109"/>
+        <location filename="page100.ui" line="467"/>
+        <location filename="page100.ui" line="516"/>
         <source>ATCMbutton widget</source>
         <translation type="unfinished"></translation>
     </message>
@@ -70,6 +72,23 @@
     <message>
         <location filename="page100.ui" line="425"/>
         <source>ATCMtime widget</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page100.ui" line="482"/>
+        <location filename="page100.ui" line="485"/>
+        <source>Write</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page100.ui" line="513"/>
+        <source>page:   status: </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page100.ui" line="531"/>
+        <location filename="page100.ui" line="534"/>
+        <source>Read</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

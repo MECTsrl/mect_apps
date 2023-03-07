@@ -29,6 +29,7 @@ public:
     enum senderStates {
         senderZero = 0,
         senderIdle,
+        senderGetVersion,
         senderSetTagFilter,
         senderWaiting,
         senderWriting,
@@ -38,7 +39,8 @@ public:
     };
 
     bool    isOpen();
-    int     getSerialDeviceID();
+    int     getSerialDeviceID()         const { return (int) serialDevice.handle(); }  // Device Handle
+    int     getCommErrors()             const { return comErrors;       }       // Communication Errors
     QString getVersionString()          const { return versionString;   }       // Driver Version String
     QString lastTagID()                 const { return currentTagID;    }       // Last Tag ID
     bool    isTagPresent()              const { return tagPresent;      }       // True if Tag is present
@@ -70,6 +72,7 @@ public:
         switch (status) {
         case    senderZero:         retval = "Not Open";                    break;
         case    senderIdle:         retval = "Idle";                        break;
+        case    senderGetVersion:   retval = "Get Firmware Version";        break;
         case    senderSetTagFilter: retval = "Setting Tag Filter";          break;
         case    senderWaiting:      retval = "Waiting Command";             break;
         case    senderWriting:      retval = "Sending Command";             break;
@@ -84,7 +87,7 @@ public:
     bool    sendReaderCommand(enum commandReader commandType, QString myCommand);   // send Command to Reader
 
 protected:
-    void timerEvent(QTimerEvent *event);
+    void    timerEvent(QTimerEvent *event);
 
 signals:
     void    replyReady(int commandPending);
@@ -103,7 +106,7 @@ private:
     bool                sendAsyncSerialCommand(QString serialCommand);
     bool                sendSyncSerialCommand(QString serialCommand);
     bool                parseTagID(QString tagString, uint &tagType, uint &tagIdbits, uint &tagLen, QString &tagID);
-    bool                parseVersionString(QString readerString, uint lenSrt, QString &versionString);
+    bool                parseReaderString(QString readerString, QString &userString);
     //-------------------------------------------
     // Privata Variables
     //-------------------------------------------
@@ -120,6 +123,7 @@ private:
     enum senderStates   myStatus;
     bool                useSyncCommands;
     QString             versionString;
+    uint                comErrors;
     // Buffers and Tag IDs
     uint                currentTagType;
     uint                currentTagIdBits;
