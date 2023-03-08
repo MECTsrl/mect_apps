@@ -510,7 +510,7 @@ font: 9pt &quot;Ubuntu&quot;;
 </font>
 </property>
 <property name="toolTip">
-<string>page:   status: </string>
+<string/>
 </property>
 <property name="whatsThis">
 <string>ATCMbutton widget</string>
@@ -532,6 +532,613 @@ font: 9pt &quot;Ubuntu&quot;;
 </property>
 <property name="pressText">
 <string>Read</string>
+</property>
+<property name="borderWidth">
+<number>0</number>
+</property>
+<property name="borderRadius">
+<number>5</number>
+</property>
+<property name="apparence">
+<enum>QFrame::Raised</enum>
+</property>
+</widget>
+<widget class="QLabel" name="label_19">
+<property name="geometry">
+<rect>
+<x>0</x>
+<y>60</y>
+<width>300</width>
+<height>26</height>
+</rect>
+</property>
+<property name="font">
+<font>
+<family>DejaVu Sans</family>
+<pointsize>10</pointsize>
+</font>
+</property>
+<property name="frameShape">
+<enum>QFrame::Panel</enum>
+</property>
+<property name="frameShadow">
+<enum>QFrame::Raised</enum>
+</property>
+<property name="text">
+<string>Nozzle temperature setup</string>
+</property>
+<property name="alignment">
+<set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+</property>
+</widget>
+<widget class="ATCMlabel" name="atcmLabel_9">
+<property name="geometry">
+<rect>
+<x>300</x>
+<y>86</y>
+<width>100</width>
+<height>26</height>
+</rect>
+</property>
+<property name="font">
+<font>
+<family>DejaVu Sans</family>
+<pointsize>10</pointsize>
+</font>
+</property>
+<property name="text">
+<string>0</string>
+</property>
+<property name="toolTip">
+<string>Tmp_TempSerbatoi</string>
+</property>
+<property name="whatsThis">
+<string>ATCMlabel widget</string>
+</property>
+<property name="variable">
+<string>Tmp_TempSerbatoi</string>
+</property>
+<property name="refresh">
+<number>200</number>
+</property>
+<property name="max">
+<string notr="true">85</string>
+</property>
+<property name="min">
+<string notr="true">50</string>
+</property>
+<property name="viewStatus">
+<bool>false</bool>
+</property>
+<property name="visibilityVar">
+<string/>
+</property>
+<property name="borderWidth">
+<number>1</number>
+</property>
+<property name="borderRadius">
+<number>0</number>
+</property>
+</widget>
+<widget class="ATCMlabel" name="atcmLabel_12">
+<property name="geometry">
+<rect>
+<x>300</x>
+<y>138</y>
+<width>101</width>
+<height>26</height>
+</rect>
+</property>
+<property name="font">
+<font>
+<family>DejaVu Sans</family>
+<pointsize>10</pointsize>
+</font>
+</property>
+<property name="text">
+<string>0</string>
+</property>
+<property name="toolTip">
+<string>Tmp_P5</string>
+</property>
+<property name="whatsThis">
+<string>ATCMlabel widget</string>
+</property>
+<property name="variable">
+<string>Tmp_P5</string>
+</property>
+<property name="refresh">
+<number>200</number>
+</property>
+<property name="max">
+<string notr="true">5</string>
+</property>
+<property name="min">
+<string notr="true">0.2</string>
+</property>
+<property name="viewStatus">
+<bool>false</bool>
+</property>
+<property name="visibilityVar">
+<string/>
+</property>
+<property name="borderWidth">
+<number>1</number>
+</property>
+<property name="borderRadius">
+<number>0</number>
+</property>
+</widget>
+<widget class="ATCMlabel" name="atcmLabel_11">
+<property name="geometry">
+<rect>
+<x>300</x>
+<y>216</y>
+<width>100</width>
+<height>26</height>
+</rect>
+</property>
+<property name="font">
+<font>
+<family>DejaVu Sans</family>
+<pointsize>10</pointsize>
+</font>
+</property>
+<property name="text">
+<string>0</string>
+</property>
+<property name="toolTip">
+<string>Tmp_TEMPO3</string>
+</property>
+<property name="whatsThis">
+<string>ATCMlabel widget</string>
+</property>
+<property name="variable">
+<string>Tmp_TEMPO3</string>
+</property>
+<property name="refresh">
+<number>200</number>
+</property>
+<property name="max">
+<string notr="true">20</string>
+</property>
+<property name="min">
+<string notr="true">0</string>
+</property>
+<property name="viewStatus">
+<bool>false</bool>
+</property>
+<property name="visibilityVar">
+<string/>
+</property>
+<property name="borderWidth">
+<number>1</number>
+</property>
+<property name="borderRadius">
+<number>0</number>
+</property>
+</widget>
+<widget class="QLabel" name="label_37">
+<property name="geometry">
+<rect>
+<x>0</x>
+<y>112</y>
+<width>300</width>
+<height>26</height>
+</rect>
+</property>
+<property name="font">
+<font>
+<family>DejaVu Sans</family>
+<pointsize>10</pointsize>
+</font>
+</property>
+<property name="frameShape">
+<enum>QFrame::Panel</enum>
+</property>
+<property name="frameShadow">
+<enum>QFrame::Raised</enum>
+</property>
+<property name="text">
+<string>Clamp pressure</string>
+</property>
+<property name="alignment">
+<set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+</property>
+</widget>
+<widget class="QLabel" name="label_20">
+<property name="geometry">
+<rect>
+<x>0</x>
+<y>86</y>
+<width>300</width>
+<height>26</height>
+</rect>
+</property>
+<property name="font">
+<font>
+<family>DejaVu Sans</family>
+<pointsize>10</pointsize>
+</font>
+</property>
+<property name="frameShape">
+<enum>QFrame::Panel</enum>
+</property>
+<property name="frameShadow">
+<enum>QFrame::Raised</enum>
+</property>
+<property name="text">
+<string>Wax temperature setup</string>
+</property>
+<property name="alignment">
+<set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+</property>
+</widget>
+<widget class="QLabel" name="label_31">
+<property name="geometry">
+<rect>
+<x>0</x>
+<y>164</y>
+<width>300</width>
+<height>26</height>
+</rect>
+</property>
+<property name="font">
+<font>
+<family>DejaVu Sans</family>
+<pointsize>10</pointsize>
+</font>
+</property>
+<property name="frameShape">
+<enum>QFrame::Panel</enum>
+</property>
+<property name="frameShadow">
+<enum>QFrame::Raised</enum>
+</property>
+<property name="text">
+<string>Vacuum duration</string>
+</property>
+<property name="alignment">
+<set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+</property>
+</widget>
+<widget class="QLabel" name="label_36">
+<property name="geometry">
+<rect>
+<x>0</x>
+<y>216</y>
+<width>300</width>
+<height>26</height>
+</rect>
+</property>
+<property name="font">
+<font>
+<family>DejaVu Sans</family>
+<pointsize>10</pointsize>
+</font>
+</property>
+<property name="frameShape">
+<enum>QFrame::Panel</enum>
+</property>
+<property name="frameShadow">
+<enum>QFrame::Raised</enum>
+</property>
+<property name="text">
+<string>Waiting duration</string>
+</property>
+<property name="alignment">
+<set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+</property>
+</widget>
+<widget class="QLabel" name="label_39">
+<property name="geometry">
+<rect>
+<x>0</x>
+<y>138</y>
+<width>300</width>
+<height>26</height>
+</rect>
+</property>
+<property name="font">
+<font>
+<family>DejaVu Sans</family>
+<pointsize>10</pointsize>
+</font>
+</property>
+<property name="frameShape">
+<enum>QFrame::Panel</enum>
+</property>
+<property name="frameShadow">
+<enum>QFrame::Raised</enum>
+</property>
+<property name="text">
+<string>Injection pressure</string>
+</property>
+<property name="alignment">
+<set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+</property>
+</widget>
+<widget class="QLabel" name="label_28">
+<property name="geometry">
+<rect>
+<x>0</x>
+<y>190</y>
+<width>300</width>
+<height>26</height>
+</rect>
+</property>
+<property name="font">
+<font>
+<family>DejaVu Sans</family>
+<pointsize>10</pointsize>
+</font>
+</property>
+<property name="frameShape">
+<enum>QFrame::Panel</enum>
+</property>
+<property name="frameShadow">
+<enum>QFrame::Raised</enum>
+</property>
+<property name="text">
+<string>Injection duration</string>
+</property>
+<property name="alignment">
+<set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+</property>
+</widget>
+<widget class="ATCMlabel" name="atcmLabel_8">
+<property name="geometry">
+<rect>
+<x>300</x>
+<y>164</y>
+<width>100</width>
+<height>26</height>
+</rect>
+</property>
+<property name="font">
+<font>
+<family>DejaVu Sans</family>
+<pointsize>10</pointsize>
+</font>
+</property>
+<property name="text">
+<string>0</string>
+</property>
+<property name="toolTip">
+<string>Tmp_TEMPO1</string>
+</property>
+<property name="whatsThis">
+<string>ATCMlabel widget</string>
+</property>
+<property name="variable">
+<string>Tmp_TEMPO1</string>
+</property>
+<property name="refresh">
+<number>200</number>
+</property>
+<property name="max">
+<string notr="true">30</string>
+</property>
+<property name="min">
+<string notr="true">1</string>
+</property>
+<property name="viewStatus">
+<bool>false</bool>
+</property>
+<property name="visibilityVar">
+<string/>
+</property>
+<property name="borderWidth">
+<number>1</number>
+</property>
+<property name="borderRadius">
+<number>0</number>
+</property>
+</widget>
+<widget class="ATCMlabel" name="atcmLabel_6">
+<property name="geometry">
+<rect>
+<x>300</x>
+<y>190</y>
+<width>100</width>
+<height>26</height>
+</rect>
+</property>
+<property name="font">
+<font>
+<family>DejaVu Sans</family>
+<pointsize>10</pointsize>
+</font>
+</property>
+<property name="text">
+<string>0</string>
+</property>
+<property name="toolTip">
+<string>Tmp_TEMPO2</string>
+</property>
+<property name="whatsThis">
+<string>ATCMlabel widget</string>
+</property>
+<property name="variable">
+<string>Tmp_TEMPO2</string>
+</property>
+<property name="refresh">
+<number>200</number>
+</property>
+<property name="max">
+<string notr="true">30</string>
+</property>
+<property name="min">
+<string notr="true">1</string>
+</property>
+<property name="viewStatus">
+<bool>false</bool>
+</property>
+<property name="visibilityVar">
+<string/>
+</property>
+<property name="borderWidth">
+<number>1</number>
+</property>
+<property name="borderRadius">
+<number>0</number>
+</property>
+</widget>
+<widget class="ATCMlabel" name="atcmLabel_7">
+<property name="geometry">
+<rect>
+<x>300</x>
+<y>60</y>
+<width>100</width>
+<height>26</height>
+</rect>
+</property>
+<property name="font">
+<font>
+<family>DejaVu Sans</family>
+<pointsize>10</pointsize>
+</font>
+</property>
+<property name="text">
+<string>0</string>
+</property>
+<property name="toolTip">
+<string>Tmp_TempUgello</string>
+</property>
+<property name="whatsThis">
+<string>ATCMlabel widget</string>
+</property>
+<property name="variable">
+<string>Tmp_TempUgello</string>
+</property>
+<property name="refresh">
+<number>200</number>
+</property>
+<property name="max">
+<string notr="true">85</string>
+</property>
+<property name="min">
+<string notr="true">50</string>
+</property>
+<property name="viewStatus">
+<bool>false</bool>
+</property>
+<property name="visibilityVar">
+<string/>
+</property>
+<property name="borderWidth">
+<number>1</number>
+</property>
+<property name="borderRadius">
+<number>0</number>
+</property>
+</widget>
+<widget class="ATCMlabel" name="atcmLabel_10">
+<property name="geometry">
+<rect>
+<x>300</x>
+<y>112</y>
+<width>101</width>
+<height>26</height>
+</rect>
+</property>
+<property name="font">
+<font>
+<family>DejaVu Sans</family>
+<pointsize>10</pointsize>
+</font>
+</property>
+<property name="text">
+<string>0</string>
+</property>
+<property name="toolTip">
+<string>Tmp_P3</string>
+</property>
+<property name="whatsThis">
+<string>ATCMlabel widget</string>
+</property>
+<property name="variable">
+<string>Tmp_P3</string>
+</property>
+<property name="refresh">
+<number>200</number>
+</property>
+<property name="max">
+<string notr="true">5</string>
+</property>
+<property name="min">
+<string notr="true">0.2</string>
+</property>
+<property name="viewStatus">
+<bool>false</bool>
+</property>
+<property name="visibilityVar">
+<string/>
+</property>
+<property name="borderWidth">
+<number>1</number>
+</property>
+<property name="borderRadius">
+<number>0</number>
+</property>
+</widget>
+<widget class="QPushButton" name="pushButtonText">
+<property name="geometry">
+<rect>
+<x>0</x>
+<y>242</y>
+<width>400</width>
+<height>26</height>
+</rect>
+</property>
+<property name="text">
+<string/>
+</property>
+<property name="font">
+ <font>
+  <family>DejaVu Sans</family>
+  <pointsize>8</pointsize>
+ </font>
+</property>
+</widget>
+<widget class="ATCMbutton" name="atcmButtonClear">
+<property name="geometry">
+<rect>
+<x>410</x>
+<y>60</y>
+<width>60</width>
+<height>30</height>
+</rect>
+</property>
+<property name="font">
+<font>
+<family>DejaVu Sans</family>
+<pointsize>8</pointsize>
+</font>
+</property>
+<property name="toolTip">
+<string/>
+</property>
+<property name="whatsThis">
+<string>ATCMbutton widget</string>
+</property>
+<property name="pageName">
+<string notr="true"/>
+</property>
+<property name="statusvar">
+<string notr="true"/>
+</property>
+<property name="viewStatus">
+<bool>false</bool>
+</property>
+<property name="visibilityVar">
+<string notr="true"/>
+</property>
+<property name="text">
+<string>Clear</string>
+</property>
+<property name="pressText">
+<string>Clear</string>
 </property>
 <property name="borderWidth">
 <number>0</number>
@@ -584,13 +1191,23 @@ font: 9pt &quot;Ubuntu&quot;;
 </hint>
 </hints>
 </connection>
-  <connection>
-   <sender>atcmButtonWrite</sender>
-   <signal>newPage(const char*,bool)</signal>
-   <receiver>page100</receiver>
-   <slot>goto_page(const char*,bool)</slot>
-  </connection>
- </connections>
+<connection>
+<sender>atcmButtonWrite</sender>
+<signal>newPage(const char*,bool)</signal>
+<receiver>page100</receiver>
+<slot>goto_page(const char*,bool)</slot>
+<hints>
+<hint type="sourcelabel">
+<x>20</x>
+<y>20</y>
+</hint>
+<hint type="destinationlabel">
+<x>20</x>
+<y>20</y>
+</hint>
+</hints>
+</connection>
+</connections>
 <slots>
 <slot>goto_page(const char*,bool)</slot>
 </slots>

@@ -77,6 +77,62 @@ u_int32_t readerLastError = 0;
 
 
 /*
+ * Variable Tmp_TempUgello	[ Temperatura ugello ]
+ */
+
+float Tmp_TempUgello = 0;
+
+
+/*
+ * Variable Tmp_TempSerbatoi	[ Temperatura serbatoio ]
+ */
+
+float Tmp_TempSerbatoi = 0;
+
+
+/*
+ * Variable Tmp_P3	[ Pressione chiusura della morsa pneumatica ]
+ */
+
+float Tmp_P3 = 0;
+
+
+/*
+ * Variable Tmp_P5	[ Pressione chiusura della morsa pneumatica ]
+ */
+
+float Tmp_P5 = 0;
+
+
+/*
+ * Variable Tmp_TEMPO1	[ Durata Iniezione limit 1s-30s ]
+ */
+
+float Tmp_TEMPO1 = 0;
+
+
+/*
+ * Variable Tmp_TEMPO2	[ Durata Iniezione limit 1s-30s ]
+ */
+
+float Tmp_TEMPO2 = 0;
+
+
+/*
+ * Variable Tmp_TEMPO3	[ Tempo di attesa prima di aprire la clamp limiti 0s-20s ]
+ */
+
+float Tmp_TEMPO3 = 0;
+
+
+/*
+ * Variable Tmp_Aspirazione	[ Ativazione aspirazione ]
+ */
+
+u_int16_t Tmp_Aspirazione = 0;
+
+
+/*
  * Variable TCPS_TYPE_PORT
  */
 
@@ -1389,6 +1445,150 @@ int
 getStatus_readerLastError(void)
 {
 	return getStatus(ID_readerLastError);
+}
+
+int
+doWrite_Tmp_TempUgello(float value)
+{
+	return doWrite(ID_Tmp_TempUgello, &value);
+}
+
+int
+addWrite_Tmp_TempUgello(float value)
+{
+	return addWrite(ID_Tmp_TempUgello, &value);
+}
+
+int
+getStatus_Tmp_TempUgello(void)
+{
+	return getStatus(ID_Tmp_TempUgello);
+}
+
+int
+doWrite_Tmp_TempSerbatoi(float value)
+{
+	return doWrite(ID_Tmp_TempSerbatoi, &value);
+}
+
+int
+addWrite_Tmp_TempSerbatoi(float value)
+{
+	return addWrite(ID_Tmp_TempSerbatoi, &value);
+}
+
+int
+getStatus_Tmp_TempSerbatoi(void)
+{
+	return getStatus(ID_Tmp_TempSerbatoi);
+}
+
+int
+doWrite_Tmp_P3(float value)
+{
+	return doWrite(ID_Tmp_P3, &value);
+}
+
+int
+addWrite_Tmp_P3(float value)
+{
+	return addWrite(ID_Tmp_P3, &value);
+}
+
+int
+getStatus_Tmp_P3(void)
+{
+	return getStatus(ID_Tmp_P3);
+}
+
+int
+doWrite_Tmp_P5(float value)
+{
+	return doWrite(ID_Tmp_P5, &value);
+}
+
+int
+addWrite_Tmp_P5(float value)
+{
+	return addWrite(ID_Tmp_P5, &value);
+}
+
+int
+getStatus_Tmp_P5(void)
+{
+	return getStatus(ID_Tmp_P5);
+}
+
+int
+doWrite_Tmp_TEMPO1(float value)
+{
+	return doWrite(ID_Tmp_TEMPO1, &value);
+}
+
+int
+addWrite_Tmp_TEMPO1(float value)
+{
+	return addWrite(ID_Tmp_TEMPO1, &value);
+}
+
+int
+getStatus_Tmp_TEMPO1(void)
+{
+	return getStatus(ID_Tmp_TEMPO1);
+}
+
+int
+doWrite_Tmp_TEMPO2(float value)
+{
+	return doWrite(ID_Tmp_TEMPO2, &value);
+}
+
+int
+addWrite_Tmp_TEMPO2(float value)
+{
+	return addWrite(ID_Tmp_TEMPO2, &value);
+}
+
+int
+getStatus_Tmp_TEMPO2(void)
+{
+	return getStatus(ID_Tmp_TEMPO2);
+}
+
+int
+doWrite_Tmp_TEMPO3(float value)
+{
+	return doWrite(ID_Tmp_TEMPO3, &value);
+}
+
+int
+addWrite_Tmp_TEMPO3(float value)
+{
+	return addWrite(ID_Tmp_TEMPO3, &value);
+}
+
+int
+getStatus_Tmp_TEMPO3(void)
+{
+	return getStatus(ID_Tmp_TEMPO3);
+}
+
+int
+doWrite_Tmp_Aspirazione(u_int16_t value)
+{
+	return doWrite(ID_Tmp_Aspirazione, &value);
+}
+
+int
+addWrite_Tmp_Aspirazione(u_int16_t value)
+{
+	return addWrite(ID_Tmp_Aspirazione, &value);
+}
+
+int
+getStatus_Tmp_Aspirazione(void)
+{
+	return getStatus(ID_Tmp_Aspirazione);
 }
 
 int
@@ -4464,6 +4664,14 @@ update_all(void)
 	retval += readFromDb(ID_ReadTAGRequest, &ReadTAGRequest);
 	retval += readFromDb(ID_ResetReader, &ResetReader);
 	retval += readFromDb(ID_readerLastError, &readerLastError);
+	retval += readFromDb(ID_Tmp_TempUgello, &Tmp_TempUgello);
+	retval += readFromDb(ID_Tmp_TempSerbatoi, &Tmp_TempSerbatoi);
+	retval += readFromDb(ID_Tmp_P3, &Tmp_P3);
+	retval += readFromDb(ID_Tmp_P5, &Tmp_P5);
+	retval += readFromDb(ID_Tmp_TEMPO1, &Tmp_TEMPO1);
+	retval += readFromDb(ID_Tmp_TEMPO2, &Tmp_TEMPO2);
+	retval += readFromDb(ID_Tmp_TEMPO3, &Tmp_TEMPO3);
+	retval += readFromDb(ID_Tmp_Aspirazione, &Tmp_Aspirazione);
 	retval += readFromDb(ID_TCPS_TYPE_PORT, &TCPS_TYPE_PORT);
 	retval += readFromDb(ID_TCPS_IP_ADDRESS, &TCPS_IP_ADDRESS);
 	retval += readFromDb(ID_TCPS_STATUS, &TCPS_STATUS);

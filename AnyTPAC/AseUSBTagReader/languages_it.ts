@@ -12,6 +12,7 @@
         <location filename="page100.ui" line="109"/>
         <location filename="page100.ui" line="467"/>
         <location filename="page100.ui" line="516"/>
+        <location filename="page100.ui" line="1123"/>
         <source>ATCMbutton widget</source>
         <translation type="unfinished"></translation>
     </message>
@@ -45,6 +46,13 @@
     <message>
         <location filename="page100.ui" line="271"/>
         <location filename="page100.ui" line="365"/>
+        <location filename="page100.ui" line="596"/>
+        <location filename="page100.ui" line="645"/>
+        <location filename="page100.ui" line="694"/>
+        <location filename="page100.ui" line="911"/>
+        <location filename="page100.ui" line="960"/>
+        <location filename="page100.ui" line="1009"/>
+        <location filename="page100.ui" line="1058"/>
         <source>ATCMlabel widget</source>
         <translation type="unfinished"></translation>
     </message>
@@ -81,8 +89,97 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="513"/>
-        <source>page:   status: </source>
+        <location filename="page100.ui" line="568"/>
+        <source>Nozzle temperature setup</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page100.ui" line="590"/>
+        <location filename="page100.ui" line="639"/>
+        <location filename="page100.ui" line="688"/>
+        <location filename="page100.ui" line="905"/>
+        <location filename="page100.ui" line="954"/>
+        <location filename="page100.ui" line="1003"/>
+        <location filename="page100.ui" line="1052"/>
+        <source>0</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page100.ui" line="593"/>
+        <location filename="page100.ui" line="599"/>
+        <source>Tmp_TempSerbatoi</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page100.ui" line="642"/>
+        <location filename="page100.ui" line="648"/>
+        <source>Tmp_P5</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page100.ui" line="691"/>
+        <location filename="page100.ui" line="697"/>
+        <source>Tmp_TEMPO3</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page100.ui" line="743"/>
+        <source>Clamp pressure</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page100.ui" line="771"/>
+        <source>Wax temperature setup</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page100.ui" line="799"/>
+        <source>Vacuum duration</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page100.ui" line="827"/>
+        <source>Waiting duration</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page100.ui" line="855"/>
+        <source>Injection pressure</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page100.ui" line="883"/>
+        <source>Injection duration</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page100.ui" line="908"/>
+        <location filename="page100.ui" line="914"/>
+        <source>Tmp_TEMPO1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page100.ui" line="957"/>
+        <location filename="page100.ui" line="963"/>
+        <source>Tmp_TEMPO2</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page100.ui" line="1006"/>
+        <location filename="page100.ui" line="1012"/>
+        <source>Tmp_TempUgello</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page100.ui" line="1055"/>
+        <location filename="page100.ui" line="1061"/>
+        <source>Tmp_P3</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page100.ui" line="1138"/>
+        <location filename="page100.ui" line="1141"/>
+        <source>Clear</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

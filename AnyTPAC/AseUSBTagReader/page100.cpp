@@ -21,6 +21,7 @@
 #include <QCoreApplication>
 #include <QtSerialPort/QSerialPort>
 #include <QtSerialPort/QSerialPortInfo>
+#include <QElapsedTimer>
 
 
 /**
@@ -58,6 +59,7 @@ page100::page100(QWidget *parent) :
     /* set the style described into the macro SET_PAGE100_STYLE */
     SET_PAGE100_STYLE();
     translateFontSize(this);
+    myKeyboard = 0;
 }
 
 /**
@@ -87,9 +89,22 @@ void page100::updateData()
     /* call the parent updateData member */
     page::updateData();
 
+    // pushButtonText
+    if (ui->pushButtonText->text() != QString(currentRecipeName))  {
+        ui->pushButtonText->setText(QString(currentRecipeName));
+    }
+
     // Step 0: Searching for Serial Port
     if (firstTime)  {
         firstTime = false;
+        // Allocate alphanumpad object only once for speed
+        if (PLC_MS_VERSION >= 0x030401)  {
+            // Create alphanumpad object with Extended Chars and password masking enabled
+            myKeyboard = new alphanumpad(currentRecipeName, true, NULL);
+        }
+        else  {
+            myKeyboard = 0;
+        }
         int     i = 0;
         // Searching Serial Device
         if (QFile::exists(THE_DEVICE))  {
@@ -158,6 +173,8 @@ void page100::updateData()
     }
     // Step 3: No hope to read Cards
     if (tagReader == 0)     {
+        ui->atcmButtonRead->setEnabled(false);
+        ui->atcmButtonWrite->setEnabled(false);
         goto endUpdateData;
     }
     // Step 4: Reader Connected Updating Interface
@@ -187,10 +204,15 @@ void page100::updateData()
     if (ui->label_tag_present->styleSheet() != szNewStyle)  {
         ui->label_tag_present->setStyleSheet(szNewStyle);
     }
+    // Read / Write Buttons
+    ui->atcmButtonRead->setEnabled(tagReader->isTagPresent());
+    ui->atcmButtonWrite->setEnabled(tagReader->isTagPresent());
     // Communication Errors
     ui->labelErrors->setText(QString("Comm Errors: %1") .arg(tagReader->getCommErrors(), 10, 10));
 
+
 endUpdateData:
+    // Update Tag Label and Tag Led
     ui->label_reader->update();
     ui->label_Tag->update();
     QCoreApplication::processEvents();
@@ -216,4 +238,55 @@ page100::~page100()
     delete ui;
 }
 
+void page100::on_pushButtonText_clicked()
+{
+    if (PLC_MS_VERSION >= 0x030401 && myKeyboard != 0)  {
+        // Set Current value to be edited
+        myKeyboard->setQStringValue(QString(currentRecipeName));
+        // Set alphanumpad prompt label
+        myKeyboard->setPrompt("Enter Recipe Name:");
+        // Show alphanumpad object
+        myKeyboard->showFullScreen();
+        if (myKeyboard->exec() == QDialog::Accepted)  {
+            myKeyboard->getValue(currentRecipeName);
+        }
+        // Hide alphanumpad object
+        myKeyboard->hide();
+    }
+    else  {
+        char value [MY_NAME_LEN + 1];
+        alphanumpad tastiera_alfanum(value, true, currentRecipeName, false);
+        tastiera_alfanum.showFullScreen();
+        if (tastiera_alfanum.exec() == QDialog::Accepted)
+        {
+            strncpy(currentRecipeName, value, MY_NAME_LEN);
+        }
+    }
+}
 
+void page100::on_atcmButtonClear_clicked()
+{
+    clearVarsAndStruct();
+}
+
+void page100::on_atcmButtonRead_clicked()
+{
+    QElapsedTimer   readTimer;
+
+    readTimer.start();
+    memset(&RicettaTAG, 0, sizeof(RicettaTAG));
+    if (tagReader->readTagMemory((char *) &RicettaTAG, sizeof(RicettaTAG)))  {
+        qDebug("Read Tag: Elapsed[%lli]ms", readTimer.elapsed());
+        // TODO: Eliminare questo setting perchè il valore di TAG_Controllo deve essere letto dal Tag
+        RicettaTAG.TAG_Controllo = codiceDiControllo;
+        struct2Vars();
+    }
+    else  {
+        qCritical("Error Reading Tag: Elapsed[%lli]ms", readTimer.elapsed());
+    }
+}
+
+void page100::on_atcmButtonWrite_clicked()
+{
+
+}

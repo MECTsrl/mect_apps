@@ -3,6 +3,7 @@
 #include <QByteArray >
 #include <QTime>
 #include <QChar>
+#include <QLatin1Char>
 #include <QMutexLocker>
 #include <stdio.h>
 
@@ -12,6 +13,7 @@
 #define SEND_WRITE_PAUSE        40
 #define SEND_READ_PAUSE         20
 #define SENDER_INTERVAL         100
+#define MAX_READ_ERRORS         10
 
 
 // Parameters for SL2S2602 ICODE SLIX2 (see ICODE_SLIX2.pdf in doc folder)
@@ -341,8 +343,6 @@ bool  SerialReader::parseTagID(QString tagString, uint &tagType, uint &tagIdbits
 bool  SerialReader::parseReaderString(QString readerString, QString &userString)
 {
     bool    isOk = false;
-    QString byteString;
-
     bool    okLen = false;
     uint    userLen;
 
@@ -352,17 +352,12 @@ bool  SerialReader::parseReaderString(QString readerString, QString &userString)
     userString.clear();
     // Compose User String
     if (okLen)  {
-        for (uint nChar = 0; nChar < userLen; nChar++)  {
-            byteString = readerString.mid(( 2 + (nChar * 2)), 2);
-            uint    uChar;
-            uChar = byteString.toUInt(&isOk, 16);
-            if (isOk)  {
-                userString.append(QChar(uChar));
-            }
-        }
+        char localBuffer[BUF_SIZE];
+        memset(localBuffer, 0, BUF_SIZE);
+        readerString2Bytes(readerString.mid(2), &localBuffer[0], userLen);
+        userString = QString(localBuffer);
     }
     qDebug("parseReaderString: Len:[%u] Version:[%s]", userLen, userString.toLatin1().data());
-
     return isOk;
 }
 
@@ -388,6 +383,9 @@ void SerialReader::timerEvent(QTimerEvent *event)
     }
     else if (myStatus == senderSetTagFilter)  {
         if (currentCommand == cmdNone)  {
+            //            tagFilter |= TAGMASK(HFTAG_MIFARE);         // 0x01
+            //            tagFilter |= TAGMASK(HFTAG_ISO15693);       // 0x04
+            // Tag Filter for: NO LF + HF: HFTAG_MIFARE + HFTAG_ISO15693
             if (sendReaderCommand(cmdSetTagFilter, "05020000000005000000"))  {
                 qDebug("[%s] SerialReader::timerEvent(): Set Tag Filter Ok",
                        QTime::currentTime().toString("HH:mm:ss.zzz").toLatin1().data());
@@ -424,23 +422,68 @@ void SerialReader::timerEvent(QTimerEvent *event)
     }
 }
 
+QString     SerialReader::bytes2readerString(char *buffer, int nBytes)
+{
+    QString readerString;
+
+    for (int nByte = 0; nByte < nBytes; nByte++)  {
+        uint uChar = (uint) *buffer;
+        readerString.append(QString("%1") .arg(uChar, 2, 16, QLatin1Char('0')));
+        buffer += nByte;
+    }
+    return readerString;
+}
+
+void        SerialReader::readerString2Bytes(QString readerString, char *buffer, uint userLen)
+{
+    bool            isOk = false;
+    char            *p;
+    unsigned char   uChar;
+    QString         byteString;
+
+    p = buffer;
+    for (uint nChar = 0; nChar < userLen; nChar++)  {
+        byteString = readerString.mid((nChar * 2), 2);
+        uChar = (unsigned char) byteString.toUInt(&isOk, 16);
+        if (isOk)  {
+            *p = (char) uChar;
+        }
+        else  {
+            *p = 0;
+        }
+        p++;
+    }
+}
+
 bool        SerialReader::readTagBlock(int currentBlock, char *buffer)
 {
-    QString readerCommand = QString("0D05%100") .arg(currentBlock, 2, 16);
+    char        blockNumber[5] = QString("%1") .arg(currentBlock, 4, 16, QLatin1Char('0'));
+    blockNumber = std::reverse(blockNumber.begin(), blockNumber.end());
+    QString     readBlockCommand = QString("0D05%1FF") .arg(blockNumber);
+    QString     blockSize = QString("%1") .arg(nBytesPerBlock, 2, 16, QLatin1Char('0'));
+    bool        fRes = false;
 
-    QChar ch;
-
-    for (int nByte = 0; nByte < nBytesPerBlock; nByte++)  {
-        // TO DO: Split of command
-    }
     currentCommand = cmdReadBlock;
-
+    fRes = sendSyncSerialCommand(readBlockCommand);
+    if (fRes)  {
+        if (lastReply.left(2) == "00" && lastReply.mid(2, 2) == "01" && lastReply.mid(4,2) == blockSize)  {
+            QString blockString = lastReply.mid(6);
+            if (blockString.length() == nBytesPerBlock * 2)  {
+                readerString2Bytes(blockString, buffer, nBytesPerBlock);
+                fRes = true;
+            }
+        }
+    }
+    return fRes;
 }
 
 bool        SerialReader::writeTagBlock(int currentBlock, char *buffer)
 {
+    bool    fRes = false;
+
     currentCommand = cmdWriteBlock;
 
+    return fRes;
 }
 
 //------------------------------------------------------------
@@ -469,12 +512,14 @@ bool        SerialReader::readTagMemory(char *userArea, int nBytes)
                             nMaxUserAreaBlocks * nBytesPerBlock);
         goto exitReadTag;
     }
+    // Used to Stop Tag Polling
+    currentCommand = cmdReadBlock;
     // Clear Buffer
     p = &localBuffer[0];;
     memset(p, 0, nMaxUserAreaBytes);
     // Reading Loop
     nBlock = 0;
-    while (nBlock < nBlocks)  {
+    while (nBlock < nBlocks && nErrors < MAX_READ_ERRORS)  {
         fRes = readTagBlock(nBlock, p);
         if (fRes)  {
             nBlock++;
@@ -488,8 +533,12 @@ bool        SerialReader::readTagMemory(char *userArea, int nBytes)
     if (fRes)  {
         memcpy(userArea, localBuffer, nBytes);
     }
+    else {
+        qCritical("readTagMemory(): Error Reading User Area. Last Block:[%d] Errors:[%d]", nBlock, nErrors);
+    }
 
 exitReadTag:
+    currentCommand = cmdNone;
     return fRes;
 }
 

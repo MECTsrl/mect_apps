@@ -103,19 +103,21 @@ private slots:
 
 private:
     //-------------------------------------------
-    // Privata Functions
+    // Private Functions
     //-------------------------------------------
     bool                sendReaderCommand(enum commandReader commandType, QString myCommand);   // send Command to Reader
     bool                sendAsyncSerialCommand(QString serialCommand);
     bool                sendSyncSerialCommand(QString serialCommand);
     bool                parseTagID(QString tagString, uint &tagType, uint &tagIdbits, uint &tagLen, QString &tagID);
     bool                parseReaderString(QString readerString, QString &userString);
+    QString             bytes2readerString(char *buffer, int nBytes);
+    void                readerString2Bytes(QString readerString, char *buffer, uint userLen);
     bool                readTagBlock(int currentBlock, char *buffer);
     bool                writeTagBlock(int currentBlock, char *buffer);
     //-------------------------------------------
-    // Privata Variables
+    // Private Variables
     //-------------------------------------------
-    // Timera and Mutex
+    // Timer  and Mutex
     int                 timerId;            // Module Timer
     QMutex              mutexCoda;          // Mutex on Buffers and Internal Status
     // Status Flags and Commands

@@ -6,6 +6,14 @@ VAR_GLOBAL
 	ReadTAGRequest AT %QX0.824.0:BOOL;
 	ResetReader AT %QX0.828.0:BOOL;
 	readerLastError AT %QD0.832:UDINT;	(* Last Reader Error *)
+	Tmp_TempUgello AT %QD0.840:REAL;	(* Temperatura ugello *)
+	Tmp_TempSerbatoi AT %QD0.844:REAL;	(* Temperatura serbatoio *)
+	Tmp_P3 AT %QD0.848:REAL;	(* Pressione chiusura della morsa pneumatica *)
+	Tmp_P5 AT %QD0.852:REAL;	(* Pressione chiusura della morsa pneumatica *)
+	Tmp_TEMPO1 AT %QD0.856:REAL;	(* Durata Iniezione limit 1s-30s *)
+	Tmp_TEMPO2 AT %QD0.860:REAL;	(* Durata Iniezione limit 1s-30s *)
+	Tmp_TEMPO3 AT %QD0.864:REAL;	(* Tempo di attesa prima di aprire la clamp limiti 0s-20s *)
+	Tmp_Aspirazione AT %QW0.868:UINT;	(* Ativazione aspirazione *)
 	TCPS_TYPE_PORT AT %ID0.20200:UDINT;
 	TCPS_IP_ADDRESS AT %ID0.20204:UDINT;
 	TCPS_STATUS AT %ID0.20208:UDINT;

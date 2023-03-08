@@ -207,14 +207,14 @@
 1;P;ResetReader                    ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;205 ;4   ;[RW]
 1;P;readerLastError                ;UDINT    ;0   ;PLC       ;               ;    ;    ;      ;205 ;4   ;[RW]Last Reader Error
 ;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
+1;P;Tmp_TempUgello                 ;REAL     ;1   ;PLC       ;               ;    ;    ;      ;210 ;8   ;[RW]Temperatura ugello
+1;P;Tmp_TempSerbatoi               ;REAL     ;1   ;PLC       ;               ;    ;    ;      ;210 ;8   ;[RW]Temperatura serbatoio
+1;P;Tmp_P3                         ;REAL     ;2   ;PLC       ;               ;    ;    ;      ;210 ;8   ;[RW]Pressione chiusura della morsa pneumatica
+1;P;Tmp_P5                         ;REAL     ;2   ;PLC       ;               ;    ;    ;      ;210 ;8   ;[RW]Pressione chiusura della morsa pneumatica
+1;P;Tmp_TEMPO1                     ;REAL     ;1   ;PLC       ;               ;    ;    ;      ;210 ;8   ;[RW]Durata Iniezione limit 1s-30s
+1;P;Tmp_TEMPO2                     ;REAL     ;1   ;PLC       ;               ;    ;    ;      ;210 ;8   ;[RW]Durata Iniezione limit 1s-30s
+1;P;Tmp_TEMPO3                     ;REAL     ;1   ;PLC       ;               ;    ;    ;      ;210 ;8   ;[RW]Tempo di attesa prima di aprire la clamp limiti 0s-20s
+1;P;Tmp_Aspirazione                ;UINT     ;0   ;PLC       ;               ;    ;    ;      ;210 ;8   ;[RW]Ativazione aspirazione
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;

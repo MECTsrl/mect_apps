@@ -76,6 +76,54 @@ int doWrite_readerLastError(u_int32_t value);
 int addWrite_readerLastError(u_int32_t value);
 int getStatus_readerLastError(void);
 
+#define ID_Tmp_TempUgello 210
+extern float Tmp_TempUgello;	/* Temperatura ugello */
+int doWrite_Tmp_TempUgello(float value);
+int addWrite_Tmp_TempUgello(float value);
+int getStatus_Tmp_TempUgello(void);
+
+#define ID_Tmp_TempSerbatoi 211
+extern float Tmp_TempSerbatoi;	/* Temperatura serbatoio */
+int doWrite_Tmp_TempSerbatoi(float value);
+int addWrite_Tmp_TempSerbatoi(float value);
+int getStatus_Tmp_TempSerbatoi(void);
+
+#define ID_Tmp_P3 212
+extern float Tmp_P3;	/* Pressione chiusura della morsa pneumatica */
+int doWrite_Tmp_P3(float value);
+int addWrite_Tmp_P3(float value);
+int getStatus_Tmp_P3(void);
+
+#define ID_Tmp_P5 213
+extern float Tmp_P5;	/* Pressione chiusura della morsa pneumatica */
+int doWrite_Tmp_P5(float value);
+int addWrite_Tmp_P5(float value);
+int getStatus_Tmp_P5(void);
+
+#define ID_Tmp_TEMPO1 214
+extern float Tmp_TEMPO1;	/* Durata Iniezione limit 1s-30s */
+int doWrite_Tmp_TEMPO1(float value);
+int addWrite_Tmp_TEMPO1(float value);
+int getStatus_Tmp_TEMPO1(void);
+
+#define ID_Tmp_TEMPO2 215
+extern float Tmp_TEMPO2;	/* Durata Iniezione limit 1s-30s */
+int doWrite_Tmp_TEMPO2(float value);
+int addWrite_Tmp_TEMPO2(float value);
+int getStatus_Tmp_TEMPO2(void);
+
+#define ID_Tmp_TEMPO3 216
+extern float Tmp_TEMPO3;	/* Tempo di attesa prima di aprire la clamp limiti 0s-20s */
+int doWrite_Tmp_TEMPO3(float value);
+int addWrite_Tmp_TEMPO3(float value);
+int getStatus_Tmp_TEMPO3(void);
+
+#define ID_Tmp_Aspirazione 217
+extern u_int16_t Tmp_Aspirazione;	/* Ativazione aspirazione */
+int doWrite_Tmp_Aspirazione(u_int16_t value);
+int addWrite_Tmp_Aspirazione(u_int16_t value);
+int getStatus_Tmp_Aspirazione(void);
+
 #define ID_TCPS_TYPE_PORT 5050
 extern u_int32_t TCPS_TYPE_PORT;
 int doWrite_TCPS_TYPE_PORT(u_int32_t value);
