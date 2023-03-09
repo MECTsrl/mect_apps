@@ -8,6 +8,7 @@
 
 #define THE_DEVICE "/dev/ttyUSB1"
 #define MY_NAME_LEN        64
+#define MAX_TAG_AREA        316
 #define codiceDiControllo 0x55aa55aa
 
 // Compiler directive to pack data structures
@@ -30,7 +31,7 @@ struct _RicettaTAG {
 // Compiler directive to avoid further packing of  data structures
 
 
-extern char    currentRecipeName[];
+extern char    currentRecipeName[MY_NAME_LEN + 1];
 extern struct _RicettaTAG   RicettaTAG;
 extern SerialReader         *tagReader;
 

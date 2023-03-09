@@ -83,6 +83,11 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="page100.ui" line="464"/>
+        <source>page:   status: </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="page100.ui" line="482"/>
         <location filename="page100.ui" line="485"/>
         <source>Write</source>

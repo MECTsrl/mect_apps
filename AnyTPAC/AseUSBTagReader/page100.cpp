@@ -60,6 +60,8 @@ page100::page100(QWidget *parent) :
     SET_PAGE100_STYLE();
     translateFontSize(this);
     myKeyboard = 0;
+    ui->atcmButtonRead->setEnabled(false);
+    ui->atcmButtonWrite->setEnabled(false);
 }
 
 /**
@@ -105,7 +107,7 @@ void page100::updateData()
         else  {
             myKeyboard = 0;
         }
-        int     i = 0;
+        // int     i = 0;
         // Searching Serial Device
         if (QFile::exists(THE_DEVICE))  {
             ui->label_Tag->setText(QString("Searching Device [%1]") .arg(THE_DEVICE));
@@ -205,8 +207,8 @@ void page100::updateData()
         ui->label_tag_present->setStyleSheet(szNewStyle);
     }
     // Read / Write Buttons
-    ui->atcmButtonRead->setEnabled(tagReader->isTagPresent());
-    ui->atcmButtonWrite->setEnabled(tagReader->isTagPresent());
+    ui->atcmButtonRead->setEnabled( tagReader->isTagPresent()   && ! tagReader->isBusy());
+    ui->atcmButtonWrite->setEnabled(tagReader->isTagPresent()   && ! tagReader->isBusy());
     // Communication Errors
     ui->labelErrors->setText(QString("Comm Errors: %1") .arg(tagReader->getCommErrors(), 10, 10));
 
@@ -271,14 +273,24 @@ void page100::on_atcmButtonClear_clicked()
 
 void page100::on_atcmButtonRead_clicked()
 {
-    QElapsedTimer   readTimer;
+    QElapsedTimer       readTimer;
+    char                readBuffer[MAX_TAG_AREA];
+    struct _RicettaTAG  localRecipe;
+
+    memset(readBuffer, 0, MAX_TAG_AREA);
 
     readTimer.start();
-    memset(&RicettaTAG, 0, sizeof(RicettaTAG));
-    if (tagReader->readTagMemory((char *) &RicettaTAG, sizeof(RicettaTAG)))  {
-        qDebug("Read Tag: Elapsed[%lli]ms", readTimer.elapsed());
+    memset(&localRecipe, 0, sizeof(RicettaTAG));
+    if (tagReader->readTagMemory(readBuffer, sizeof(localRecipe)))  {
+        // Calculation of the CRC of the read data
+        u_int16_t localCRC = tagReader->calculateCRC(readBuffer, (sizeof(RicettaTAG) - sizeof(localRecipe.TAG_Controllo)));
+        // Copy from read buffer to localRecipe
+        memcpy(&localRecipe, readBuffer, sizeof(localRecipe));
+        qDebug("Read Tag: Elapsed[%lli]ms - Estimated CRC:[%X] Read CRC:[%X]", readTimer.elapsed(),
+                    localCRC, localRecipe.TAG_Controllo);
         // TODO: Eliminare questo setting perchè il valore di TAG_Controllo deve essere letto dal Tag
-        RicettaTAG.TAG_Controllo = codiceDiControllo;
+        RicettaTAG = localRecipe;
+        RicettaTAG.TAG_Controllo = localCRC;
         struct2Vars();
     }
     else  {
@@ -288,5 +300,17 @@ void page100::on_atcmButtonRead_clicked()
 
 void page100::on_atcmButtonWrite_clicked()
 {
+    QElapsedTimer       writeTimer;
+    char                readBuffer[MAX_TAG_AREA];
 
+    writeTimer.start();
+    memset(readBuffer, 0, MAX_TAG_AREA);
+    memset(&RicettaTAG, 0, sizeof(RicettaTAG));
+    vars2Struct();
+    if (tagReader->writeTagMemory((char *) &RicettaTAG, MY_NAME_LEN + 1))  {
+        qDebug("Write Tag: Elapsed[%lli]ms", writeTimer.elapsed());
+    }
+    else  {
+        qCritical("Error Writing Tag: Elapsed[%lli]ms", writeTimer.elapsed());
+    }
 }

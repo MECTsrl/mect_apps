@@ -9,7 +9,7 @@
 
 #define APP_VERSION         23001
 
-char    currentRecipeName[NAME_LEN + 1];
+char    currentRecipeName[MY_NAME_LEN + 1];
 struct _RicettaTAG  RicettaTAG;
 SerialReader        *tagReader = 0;
 
@@ -23,6 +23,7 @@ void setup(void)
         sleep(1);
     }
     // Insert your start-up code here
+    memset(currentRecipeName, 0, MY_NAME_LEN + 1);
     beginWrite();
     addWrite_PLC_HMI_Version(APP_VERSION);
     addWrite_readerFound(false);
@@ -33,7 +34,7 @@ void setup(void)
 
 void        struct2Vars()
 {
-    if (RicettaTAG.TAG_Controllo == codiceDiControllo)  {
+    // if (RicettaTAG.TAG_Controllo == codiceDiControllo)  {
         strncpy(currentRecipeName, RicettaTAG.TAG_nomeRicetta, MY_NAME_LEN);
         beginWrite();
         addWrite_Tmp_TempUgello     ( RicettaTAG.TAG_TempUgello);
@@ -45,13 +46,13 @@ void        struct2Vars()
         addWrite_Tmp_TEMPO3         ( RicettaTAG.TAG_TEMPO3);
         addWrite_Tmp_Aspirazione    ( RicettaTAG.TAG_Aspirazione);
         endWrite();
-    }
+    // }
 }
 
 void        vars2Struct()
 {
-    RicettaTAG.TAG_Controllo = codiceDiControllo;
     strncpy(RicettaTAG.TAG_nomeRicetta, currentRecipeName, MY_NAME_LEN);
+    RicettaTAG.TAG_Controllo        = 0;
     RicettaTAG.TAG_TempUgello       = Tmp_TempUgello    ;
     RicettaTAG.TAG_TempSerbatoi     = Tmp_TempSerbatoi  ;
     RicettaTAG.TAG_P3               = Tmp_P3            ;
@@ -84,17 +85,17 @@ void loop(void)
 {
     static unsigned loopCounter = 1;
 
-    // Un giro ogni 3 s
+    // Tag Search Polling
     if (loopCounter % 29 == 0 && tagReader != 0 && tagReader->isOpen())  {
-        if (tagReader->readerStatus() == SerialReader::senderWaiting  &&
-            tagReader->lastCommand()  != SerialReader::cmdReadBlock &&
-            tagReader->lastCommand()  != SerialReader::cmdWriteBlock)  {
+        if (tagReader->readerStatus() == SerialReader::senderWaitingCommand  &&
+            ! tagReader->isBusy())  {
             tagReader->searchTag();
         }
         else  {
-            qDebug("[%s] Automation loop(): Reader Status: [%s]",
+            qDebug("[%s] Automation loop(): Reader Status: [%s] Reader Busy: [%d]",
                     QTime::currentTime().toString("HH:mm:ss.zzz").toLatin1().data(),
-                    tagReader->getStatusDesc(tagReader->readerStatus()).toLatin1().data());
+                    tagReader->getStatusDesc(tagReader->readerStatus()).toLatin1().data(),
+                    tagReader->isBusy());
         }
     }
     loopCounter++;

@@ -20,6 +20,7 @@ public:
     bool        searchTag();            // Search Tag near reader
     bool        readTagMemory(char *userArea, int nBytes);      // Read User Memory Area of Current Tag
     bool        writeTagMemory(char *userArea, int nBytes);     // Write User Memory Area of Current Tag
+    u_int16_t   calculateCRC(char *userArea, int nBytes);       // Computes the CRC of a byte buffer, one byte at a time
     enum commandReader  {
         cmdNone = 0,
         cmdGetVersion,
@@ -34,15 +35,18 @@ public:
         senderIdle,
         senderGetVersion,
         senderSetTagFilter,
-        senderWaiting,
+        senderWaitingCommand,
         senderWriting,
         senderReading,
         senderParsing,
+        senderParseOk,
+        senderParseFail,
         senderError
     };
     // Status and Current Tag Info
     bool    isOpen();
     bool    isSync()                    const { return useSyncCommands; }       // Returns true if Commands are sent in sync mode
+    bool    isBusy()                    const { return readerIsReading || readerIsWriting; } // Returns true if a Read or Write Tag is pending
     int     getSerialDeviceID()         const { return (int) serialDevice.handle(); }  // Device Handle
     int     getCommErrors()             const { return comErrors;       }       // Communication Errors
     QString getVersionString()          const { return versionString;   }       // Driver Version String
@@ -78,10 +82,12 @@ public:
         case    senderIdle:         retval = "Idle";                        break;
         case    senderGetVersion:   retval = "Get Firmware Version";        break;
         case    senderSetTagFilter: retval = "Setting Tag Filter";          break;
-        case    senderWaiting:      retval = "Waiting Command";             break;
+        case    senderWaitingCommand:   retval = "Waiting Command";         break;
         case    senderWriting:      retval = "Sending Command";             break;
         case    senderReading:      retval = "Reading Answer";              break;
-        case    senderParsing:      retval = "Parsing";                     break;
+        case    senderParsing:      retval = "Parsing Reply";               break;
+        case    senderParseOk:      retval = "Parsed Ok";                   break;
+        case    senderParseFail:    retval = "Parsed Fail";                 break;
         case    senderError:        retval = "Error";                       break;
         default:                    retval = "?";
         }
@@ -114,6 +120,7 @@ private:
     void                readerString2Bytes(QString readerString, char *buffer, uint userLen);
     bool                readTagBlock(int currentBlock, char *buffer);
     bool                writeTagBlock(int currentBlock, char *buffer);
+    u_int16_t           updateCRC(u_int16_t CRC, unsigned char Byte);
     //-------------------------------------------
     // Private Variables
     //-------------------------------------------
@@ -123,6 +130,9 @@ private:
     // Status Flags and Commands
     bool                portOpen;
     bool                tagPresent;
+    bool                parseReplyOk;
+    bool                readerIsReading;
+    bool                readerIsWriting;
     QSerialPort         serialDevice;
     QString             myDevice;
     QElapsedTimer       watchDogTimer;
@@ -137,6 +147,8 @@ private:
     uint                currentTagIdLen;
     QString             currentTagID;
     QString             lastReply;
+    QString             blockStringValue;
+    QString             defBlockSizeString;
     char                readerCommand[BUF_SIZE + 1];
     char                readerAnswer[BUF_SIZE + 1];
     char                *readPoint;
