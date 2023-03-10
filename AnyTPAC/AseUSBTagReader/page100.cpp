@@ -148,6 +148,7 @@ void page100::updateData()
         // QObject::connect(serialThread, SIGNAL(started()), tagReader, SLOT(openSerialPort()));
         // serialThread->start();
         tagReader->openSerialPort();
+        sleep(1);
         // int nLoop = 0;
         // while (! serialOpened && nLoop < 30)  {
         //    sleep(1);
@@ -242,6 +243,9 @@ page100::~page100()
 
 void page100::on_pushButtonText_clicked()
 {
+    char        nameBuffer[MY_NAME_LEN + 1];
+
+    memset(nameBuffer, 0, MY_NAME_LEN + 1);
     if (PLC_MS_VERSION >= 0x030401 && myKeyboard != 0)  {
         // Set Current value to be edited
         myKeyboard->setQStringValue(QString(currentRecipeName));
@@ -276,12 +280,15 @@ void page100::on_atcmButtonRead_clicked()
     QElapsedTimer       readTimer;
     char                readBuffer[MAX_TAG_AREA];
     struct _RicettaTAG  localRecipe;
+    int                 nReadSize = sizeof(localRecipe);
 
+    // To check SLI-L Tags, read/write size reduced to 32 Bytes
+    nReadSize = 32;
     memset(readBuffer, 0, MAX_TAG_AREA);
 
     readTimer.start();
     memset(&localRecipe, 0, sizeof(RicettaTAG));
-    if (tagReader->readTagMemory(readBuffer, sizeof(localRecipe)))  {
+    if (tagReader->readTagMemory(readBuffer, nReadSize))  {
         // Calculation of the CRC of the read data
         u_int16_t localCRC = tagReader->calculateCRC(readBuffer, (sizeof(RicettaTAG) - sizeof(localRecipe.TAG_Controllo)));
         // Copy from read buffer to localRecipe
@@ -302,12 +309,15 @@ void page100::on_atcmButtonWrite_clicked()
 {
     QElapsedTimer       writeTimer;
     char                readBuffer[MAX_TAG_AREA];
+    int                 nWriteSize = sizeof(RicettaTAG);
 
+    // To check SLI-L Tags, read/write size reduced to 32 Bytes
+    nWriteSize = 32;
     writeTimer.start();
     memset(readBuffer, 0, MAX_TAG_AREA);
     memset(&RicettaTAG, 0, sizeof(RicettaTAG));
     vars2Struct();
-    if (tagReader->writeTagMemory((char *) &RicettaTAG, MY_NAME_LEN + 1))  {
+    if (tagReader->writeTagMemory((char *) &RicettaTAG, nWriteSize))  {
         qDebug("Write Tag: Elapsed[%lli]ms", writeTimer.elapsed());
     }
     else  {

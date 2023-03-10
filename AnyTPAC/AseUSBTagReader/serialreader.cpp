@@ -67,9 +67,11 @@ void SerialReader::openSerialPort()
     serialDevice.setStopBits(QSerialPort::OneStop);
     serialDevice.setFlowControl(QSerialPort::NoFlowControl);
     portOpen = serialDevice.open(QIODevice::ReadWrite);
+    sleep(2);
     // connect(&serialDevice, SIGNAL(readyRead()), this, SLOT(readData()));
     connect(this, SIGNAL(replyReady(int)), this, SLOT(parseReply(int)));
     myStatus = senderIdle;
+    sleep(2);
     timerId = startTimer(SENDER_INTERVAL);
 
 }
@@ -203,24 +205,27 @@ bool    SerialReader::sendAsyncSerialCommand(QString serialCommand)
 void    SerialReader::readData()
 {
 
-    int     nCharsRead = 0;
-    if ((lineLength < BUF_SIZE) && ! watchDogTimer.hasExpired(SEND_COMMAND_TIMEOUT)) {
-        if (serialDevice.waitForReadyRead(SEND_READ_PAUSE))  {
-            nCharsRead = (int) serialDevice.read(readPoint, BUF_SIZE);
-            fprintf(stderr, "R:[%d]", lineLength);
-            if (nCharsRead > 0)  {
-                readPoint += nCharsRead;
-                lineLength += nCharsRead;
-                if (lineLength > 0 && readerAnswer[lineLength - 1] == cCR)  {
+    qint64     nCharsRead = serialDevice.bytesAvailable();
+    qDebug("readData():  Bytes Available: [%lli]", nCharsRead);
+    return;
 
-                    readerAnswer[lineLength - 1] = 0;
-                    lastReply = QString(readerAnswer);
-                    emit replyReady((int) currentCommand);
-                    currentCommand = cmdNone;
-                }
-            }
-        }
-    }
+    //    if ((lineLength < BUF_SIZE) && ! watchDogTimer.hasExpired(SEND_COMMAND_TIMEOUT)) {
+    //        if (serialDevice.waitForReadyRead(SEND_READ_PAUSE))  {
+    //            nCharsRead = (int) serialDevice.read(readPoint, BUF_SIZE);
+    //            fprintf(stderr, "R:[%d]", lineLength);
+    //            if (nCharsRead > 0)  {
+    //                readPoint += nCharsRead;
+    //                lineLength += nCharsRead;
+    //                if (lineLength > 0 && readerAnswer[lineLength - 1] == cCR)  {
+
+    //                    readerAnswer[lineLength - 1] = 0;
+    //                    lastReply = QString(readerAnswer);
+    //                    emit replyReady((int) currentCommand);
+    //                    currentCommand = cmdNone;
+    //                }
+    //            }
+    //        }
+    //    }
 }
 
 bool    SerialReader::isOpen()
@@ -575,7 +580,7 @@ bool        SerialReader::readTagMemory(char *userArea, int nBytes)
 {
     bool    fRes = false;
     int     nBlock = 0;
-    int     nBlocks = (nBytes / nBytesPerBlock) + 1;
+    int     nBlocks = (nBytes + nBytesPerBlock - 1) / nBytesPerBlock;       // Ceil Round-Up...
     int     nErrors = 0;
     char    localBuffer[nMaxUserAreaBytes];
     char    *p;
@@ -628,7 +633,7 @@ bool        SerialReader::writeTagMemory(char *userArea, int nBytes)
 {
     bool    fRes = false;
     int     nBlock = 0;
-    int     nBlocks = (nBytes / nBytesPerBlock) + 1;
+    int     nBlocks = (nBytes + nBytesPerBlock - 1) / nBytesPerBlock;       // Ceil Round-Up...
     int     nErrors = 0;
     char    localBuffer[nMaxUserAreaBytes];
     char    *p;

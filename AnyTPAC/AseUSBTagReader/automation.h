@@ -7,7 +7,8 @@
 #include "serialreader.h"
 
 #define THE_DEVICE "/dev/ttyUSB1"
-#define MY_NAME_LEN        64
+// #define MY_NAME_LEN        64
+#define MY_NAME_LEN        16
 #define MAX_TAG_AREA        316
 #define codiceDiControllo 0x55aa55aa
 
