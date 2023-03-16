@@ -9,7 +9,12 @@
 #include <QtSerialPort/QSerialPort>
 #include <QtSerialPort/QSerialPortInfo>
 
-#define  BUF_SIZE           1024
+#define     BUF_SIZE            1024
+
+#define     HFTAG_MIFARE        0x80	// "ISO14443A/MIFARE"
+#define     HFTAG_ISO15693      0x82	// "ISO15693"
+#define     TAGMASK(Tagtype)    (1 << (Tagtype & 0x1F))
+
 
 class SerialReader : public QObject
 {
@@ -17,10 +22,13 @@ class SerialReader : public QObject
 public:
     explicit SerialReader(QString myDevice, QObject *parent = 0);
     ~SerialReader();
+    // Public Usage Methods
     bool        searchTag();            // Search Tag near reader
-    bool        readTagMemory(char *userArea, int nBytes);      // Read User Memory Area of Current Tag
-    bool        writeTagMemory(char *userArea, int nBytes);     // Write User Memory Area of Current Tag
-    u_int16_t   calculateCRC(char *userArea, int nBytes);       // Computes the CRC of a byte buffer, one byte at a time
+    bool        readTagMemory(unsigned char *userArea, int nBytes);      // Read User Memory Area of Current Tag
+    bool        writeTagMemory(unsigned char *userArea, int nBytes);     // Write User Memory Area of Current Tag
+    u_int16_t   calculateCRC(unsigned char *userArea, int nBytes);       // Computes the CRC of a byte buffer, one byte at a time
+    void        setCRCEnabled(bool addCRC)  { crcEnabled = addCRC; }     // Add 16 Bit CRC to Data
+
     enum commandReader  {
         cmdNone = 0,
         cmdGetVersion,
@@ -47,6 +55,7 @@ public:
     bool    isOpen();
     bool    isSync()                    const { return useSyncCommands; }       // Returns true if Commands are sent in sync mode
     bool    isBusy()                    const { return readerIsReading || readerIsWriting; } // Returns true if a Read or Write Tag is pending
+    bool    isCRCEnabled()              const { return crcEnabled; }            // Returns true if CRC is added to Written data
     int     getSerialDeviceID()         const { return (int) serialDevice.handle(); }  // Device Handle
     int     getCommErrors()             const { return comErrors;       }       // Communication Errors
     QString getVersionString()          const { return versionString;   }       // Driver Version String
@@ -99,6 +108,10 @@ protected:
 
 signals:
     void    replyReady(int commandPending);
+    void    tagFound(QString tagID);                // Tag found with ID tagID
+    void    noTag();                                // No Tag foung (Answer 0100 to cmdSearchTags)
+    void    tagMemoryRead(bool readOK);             // Tag Memory Read completed
+    void    tagMemoryWrite(bool writeOK);           // Tag Memory Write completed
     
 public slots:
     void    openSerialPort();
@@ -106,20 +119,22 @@ public slots:
 private slots:
     void    readData();
     void    parseReply(int commandPending);
+    void    changeStatus(enum senderStates newStatus);
 
 private:
     //-------------------------------------------
     // Private Functions
     //-------------------------------------------
-    bool                sendReaderCommand(enum commandReader commandType, QString myCommand);   // send Command to Reader
+    void                clearBuffers();
+    bool                sendReaderCommand(enum commandReader commandType, QString myCommand, bool syncCommand = true);   // send Command to Reader
     bool                sendAsyncSerialCommand(QString serialCommand);
     bool                sendSyncSerialCommand(QString serialCommand);
     bool                parseTagID(QString tagString, uint &tagType, uint &tagIdbits, uint &tagLen, QString &tagID);
     bool                parseReaderString(QString readerString, QString &userString);
-    QString             bytes2readerString(char *buffer, int nBytes);
-    void                readerString2Bytes(QString readerString, char *buffer, uint userLen);
-    bool                readTagBlock(int currentBlock, char *buffer);
-    bool                writeTagBlock(int currentBlock, char *buffer);
+    QString             bytes2readerString(unsigned char *buffer, int nBytes);
+    void                readerString2Bytes(QString readerString, unsigned char *buffer, uint userLen);
+    bool                read_15693_Block(int currentBlock, unsigned char *buffer);
+    bool                write_15693_Block(int currentBlock, unsigned char *buffer);
     u_int16_t           updateCRC(u_int16_t CRC, unsigned char Byte);
     //-------------------------------------------
     // Private Variables
@@ -136,11 +151,14 @@ private:
     QSerialPort         serialDevice;
     QString             myDevice;
     QElapsedTimer       watchDogTimer;
+    QElapsedTimer       idleTimer;
     enum commandReader  currentCommand;
     enum senderStates   myStatus;
     bool                useSyncCommands;
+    bool                syncCommand;
     QString             versionString;
     uint                comErrors;
+    bool                crcEnabled;
     // Buffers and Tag IDs
     uint                currentTagType;
     uint                currentTagIdBits;
@@ -149,9 +167,9 @@ private:
     QString             lastReply;
     QString             blockStringValue;
     QString             defBlockSizeString;
-    char                readerCommand[BUF_SIZE + 1];
-    char                readerAnswer[BUF_SIZE + 1];
-    char                *readPoint;
+    unsigned char       readerCommand[BUF_SIZE + 1];
+    unsigned char       readerAnswer[BUF_SIZE + 1];
+    unsigned char       *readPoint;
     int                 lineLength;
 };
 

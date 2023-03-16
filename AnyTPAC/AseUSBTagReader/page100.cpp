@@ -44,7 +44,7 @@ page100::page100(QWidget *parent) :
     ui(new Ui::page100)
 {
     // Start-Up values to handle Serial Port
-    firstTime = true;
+    myStatus = 0;
     serialOpened = false;
     serialPortFound = false;
     serialPortName.clear();
@@ -62,6 +62,10 @@ page100::page100(QWidget *parent) :
     myKeyboard = 0;
     ui->atcmButtonRead->setEnabled(false);
     ui->atcmButtonWrite->setEnabled(false);
+    szLedGray     = "border-image: url(\":/systemicons/LedGrey.png\");";       // Grey Led
+    szLedYellow    = "border-image: url(\":/systemicons/LedYellow.png\");";     // Yellow Led
+    szLedRed       = "border-image: url(\":/systemicons/LedOff.png\");";        // Red Led
+    szLedGreen     = "border-image: url(\":/systemicons/LedOn.png\");";         // Green Led
 }
 
 /**
@@ -69,9 +73,7 @@ page100::page100(QWidget *parent) :
  */
 void page100::reload()
 {
-    QString szUndef = "border-image: url(\":/systemicons/LedGrey.png\");";      // Grey
-    ui->label_tag_present->setStyleSheet(szUndef);
-    ui->label_reader->setStyleSheet(szUndef);
+    // ui->atcmLabel_7->setProperty("text-align", (QVariant) (Qt::AlignLeft | Qt::AlignVCenter));
 }
 
 /**
@@ -79,9 +81,6 @@ void page100::reload()
  */
 void page100::updateData()
 {
-    QString szYellow    = "border-image: url(\":/systemicons/LedYellow.png\");";     // Yellow
-    QString szRed       = "border-image: url(\":/systemicons/LedOff.png\");";        // Rosso
-    QString szGreen     = "border-image: url(\":/systemicons/LedOn.png\");";         // Verde
     QString szNewStyle;
 
     if (this->isVisible() == false)
@@ -97,8 +96,9 @@ void page100::updateData()
     }
 
     // Step 0: Searching for Serial Port
-    if (firstTime)  {
-        firstTime = false;
+    if (myStatus == 0)  {
+        ui->label_tag_present->setStyleSheet(szLedGray);
+        ui->label_reader->setStyleSheet(szLedGray);
         // Allocate alphanumpad object only once for speed
         if (PLC_MS_VERSION >= 0x030401)  {
             // Create alphanumpad object with Extended Chars and password masking enabled
@@ -129,90 +129,74 @@ void page100::updateData()
                 //            }
                 serialPortFound = true;
                 serialPortName = QString("ttyUSB1");
+                myStatus = 1;
         }
         else {
             ui->label_Tag->setText(QString("Device [%1] not Found!") .arg(THE_DEVICE));
             qCritical("setup(): Reader Raw Device [%s] not found - No Hope", THE_DEVICE);
+            myStatus = 3;
         }
         goto endUpdateData;
     }
     // Step 1: Creation of Serial Reader Object and Serial Port Opening (only once in the Application Life)
-    if (tagReader == 0 && serialPortFound && ! serialPortName.isEmpty())  {
-        ui->label_Tag->setText(QString("Opening Device [%1]") .arg(THE_DEVICE));
-        // serialThread = new QThread(this);
-        // qDebug("Opening Device [%s] in Thread [0x%x]", THE_DEVICE, (u_int32_t) serialThread);
-        qDebug("Opening Device [%s]", THE_DEVICE);
-        tagReader = new SerialReader(serialPortName);
-        // tagReader->openSerialPort();
-        // tagReader->moveToThread(serialThread);
-        // QObject::connect(serialThread, SIGNAL(started()), tagReader, SLOT(openSerialPort()));
-        // serialThread->start();
-        tagReader->openSerialPort();
-        sleep(1);
-        // int nLoop = 0;
-        // while (! serialOpened && nLoop < 30)  {
-        //    sleep(1);
-        goto endUpdateData;
+    else if (myStatus == 1)  {
+        ui->label_reader->setStyleSheet(szLedYellow);
+        if (tagReader == 0 && serialPortFound && ! serialPortName.isEmpty())  {
+            ui->label_Tag->setText(QString("Opening Device [%1]") .arg(THE_DEVICE));
+            // serialThread = new QThread(this);
+            // qDebug("setup(): Opening Device [%s] in Thread [0x%x]", THE_DEVICE, (u_int32_t) serialThread);
+            qDebug("setup(): Opening Device [%s]", THE_DEVICE);
+            tagReader = new SerialReader(serialPortName);
+            // tagReader->openSerialPort();
+            // tagReader->moveToThread(serialThread);
+            // QObject::connect(serialThread, SIGNAL(started()), tagReader, SLOT(openSerialPort()));
+            // serialThread->start();
+            tagReader->openSerialPort();
+            sleep(1);
+            // int nLoop = 0;
+            // while (! serialOpened && nLoop < 30)  {
+            //    sleep(1);
+            goto endUpdateData;
+        }
     }
     // Step 2: Checking Serial Port
-    if (tagReader != 0 && ! serialOpened)  {
-        serialOpened = tagReader->isOpen();
-        if (serialOpened)  {
-            ui->label_Tag->setText(QString("TAG Code: [NONE]"));
-            int nDevtty = tagReader->getSerialDeviceID();
-            qDebug("Current Serial Port handle [%d] for Device [%s]", nDevtty, THE_DEVICE);
-            beginWrite();
-            addWrite_readerFound(true);
-            addWrite_rawttyDevice((u_int16_t) nDevtty);
-            endWrite();
+    else if (myStatus == 2)  {
+        if (tagReader != 0 && ! serialOpened)  {
+            serialOpened = tagReader->isOpen();
+            if (serialOpened)  {
+                ui->label_Tag->setText(QString("TAG Code: [NONE]"));
+                int nDevtty = tagReader->getSerialDeviceID();
+                qDebug("setup(): Current Serial Port handle [%d] for Device [%s]", nDevtty, THE_DEVICE);
+                beginWrite();
+                addWrite_readerFound(true);
+                addWrite_rawttyDevice((u_int16_t) nDevtty);
+                endWrite();
+                ui->label_reader->setStyleSheet(szLedGreen);
+                noTagPresent();
+                // Disable CRC Append to TAG
+                tagReader->setCRCEnabled(false);
+                // Connecting SerialReader Signals
+                connect(tagReader, SIGNAL(noTag()), this, SLOT(noTagPresent()));
+                connect(tagReader, SIGNAL(tagFound(QString)), this, SLOT(updateTagID(QString)));
+                myStatus = 4;
+            }
+            goto endUpdateData;
         }
-//        else  {
-//            qCritical("setup(): Error opening device [%s] - No Hope", THE_DEVICE);
-//            tagReader->deleteLater();
-//            tagReader = 0;
-//            serialPortFound = false;
-//        }
-        goto endUpdateData;
     }
     // Step 3: No hope to read Cards
-    if (tagReader == 0)     {
+    else if (myStatus == 3)  {
         ui->atcmButtonRead->setEnabled(false);
         ui->atcmButtonWrite->setEnabled(false);
         goto endUpdateData;
-    }
+    }   
     // Step 4: Reader Connected Updating Interface
-    if (readerFound)  {
-        szNewStyle = szGreen;
+    else if (myStatus == 4)  {
+        // Read / Write Buttons
+        ui->atcmButtonRead->setEnabled( tagReader->isTagPresent()   && ! tagReader->isBusy());
+        ui->atcmButtonWrite->setEnabled(tagReader->isTagPresent()   && ! tagReader->isBusy());
+        // Communication Errors
+        ui->labelErrors->setText(QString("Comm Errors: %1") .arg(tagReader->getCommErrors(), 10, 10));
     }
-    else  {
-        szNewStyle = szYellow;
-    }
-    // Updating Reader Led
-    if (ui->label_reader->styleSheet() != szNewStyle)  {
-        ui->label_reader->setStyleSheet(szNewStyle);
-    }
-    // Updating Tag Labled
-    if (! readerFound)  {
-        szNewStyle = szYellow;
-    }
-    else if (tagReader->isTagPresent())  {
-        szNewStyle = szRed;
-        ui->label_Tag->setText(QString("Tag:[%1]") .arg(tagReader->lastTagID()));
-    }
-    else  {
-        szNewStyle = szGreen;
-        ui->label_Tag->setText(QString("Tag:[NONE]"));
-    }
-    // Updating Tag Led
-    if (ui->label_tag_present->styleSheet() != szNewStyle)  {
-        ui->label_tag_present->setStyleSheet(szNewStyle);
-    }
-    // Read / Write Buttons
-    ui->atcmButtonRead->setEnabled( tagReader->isTagPresent()   && ! tagReader->isBusy());
-    ui->atcmButtonWrite->setEnabled(tagReader->isTagPresent()   && ! tagReader->isBusy());
-    // Communication Errors
-    ui->labelErrors->setText(QString("Comm Errors: %1") .arg(tagReader->getCommErrors(), 10, 10));
-
 
 endUpdateData:
     // Update Tag Label and Tag Led
@@ -278,9 +262,10 @@ void page100::on_atcmButtonClear_clicked()
 void page100::on_atcmButtonRead_clicked()
 {
     QElapsedTimer       readTimer;
-    char                readBuffer[MAX_TAG_AREA];
+    unsigned char       readBuffer[MAX_TAG_AREA];
     struct _RicettaTAG  localRecipe;
     int                 nReadSize = sizeof(localRecipe);
+    u_int16_t           localCRC = 0xFFFF;
 
     // To check SLI-L Tags, read/write size reduced to 32 Bytes
     nReadSize = 32;
@@ -290,7 +275,7 @@ void page100::on_atcmButtonRead_clicked()
     memset(&localRecipe, 0, sizeof(RicettaTAG));
     if (tagReader->readTagMemory(readBuffer, nReadSize))  {
         // Calculation of the CRC of the read data
-        u_int16_t localCRC = tagReader->calculateCRC(readBuffer, (sizeof(RicettaTAG) - sizeof(localRecipe.TAG_Controllo)));
+        localCRC = tagReader->calculateCRC(readBuffer, (sizeof(RicettaTAG)));
         // Copy from read buffer to localRecipe
         memcpy(&localRecipe, readBuffer, sizeof(localRecipe));
         qDebug("Read Tag: Elapsed[%lli]ms - Estimated CRC:[%X] Read CRC:[%X]", readTimer.elapsed(),
@@ -308,7 +293,7 @@ void page100::on_atcmButtonRead_clicked()
 void page100::on_atcmButtonWrite_clicked()
 {
     QElapsedTimer       writeTimer;
-    char                readBuffer[MAX_TAG_AREA];
+    unsigned char       readBuffer[MAX_TAG_AREA];
     int                 nWriteSize = sizeof(RicettaTAG);
 
     // To check SLI-L Tags, read/write size reduced to 32 Bytes
@@ -317,10 +302,26 @@ void page100::on_atcmButtonWrite_clicked()
     memset(readBuffer, 0, MAX_TAG_AREA);
     memset(&RicettaTAG, 0, sizeof(RicettaTAG));
     vars2Struct();
-    if (tagReader->writeTagMemory((char *) &RicettaTAG, nWriteSize))  {
+    if (tagReader->writeTagMemory((unsigned char *) &RicettaTAG, nWriteSize))  {
         qDebug("Write Tag: Elapsed[%lli]ms", writeTimer.elapsed());
     }
     else  {
         qCritical("Error Writing Tag: Elapsed[%lli]ms", writeTimer.elapsed());
     }
+}
+
+void page100::updateTagID(QString newTagID)
+{
+    ui->label_Tag->setText(QString("Tag:[%1]") .arg(newTagID));
+    ui->label_Tag->update();
+    ui->label_tag_present->setStyleSheet(szLedGreen);
+    ui->label_tag_present->update();
+}
+
+void page100::noTagPresent()
+{
+    ui->label_Tag->setText(QString("Tag:[NONE]"));
+    ui->label_Tag->update();
+    ui->label_tag_present->setStyleSheet(szLedRed);
+    ui->label_tag_present->update();
 }

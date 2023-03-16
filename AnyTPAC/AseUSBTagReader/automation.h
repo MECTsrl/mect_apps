@@ -7,8 +7,7 @@
 #include "serialreader.h"
 
 #define THE_DEVICE "/dev/ttyUSB1"
-// #define MY_NAME_LEN        64
-#define MY_NAME_LEN        16
+#define MY_NAME_LEN         32
 #define MAX_TAG_AREA        316
 #define codiceDiControllo 0x55aa55aa
 
@@ -16,7 +15,7 @@
 #pragma pack(push, 1)
 
 struct _RicettaTAG {
-    char    TAG_nomeRicetta[MY_NAME_LEN + 1];   // 65 Byte
+    char    TAG_nomeRicetta[MY_NAME_LEN];   // 32 Byte
     float   TAG_TempUgello;                 //  4 Byte
     float   TAG_TempSerbatoi;               //  4 Byte
     float   TAG_P3;                         //  4 Byte

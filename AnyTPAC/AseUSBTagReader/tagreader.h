@@ -55,7 +55,6 @@
 #define LFTAG_ICT			0x59	// "ICT"
 #define LFTAG_ISONAS		0x5A	// "Isonas"
 // HF Tags
-#define HFTAG_MIFARE        0x80	// "ISO14443A/MIFARE"
 #define HFTAG_ISO14443B     0x81	// "ISO14443B"
 #define HFTAG_ISO15693      0x82	// "ISO15693"
 #define HFTAG_LEGIC         0x83	// "LEGIC"
@@ -68,7 +67,6 @@
 #define HFTAG_CTS           0x8A    // "CTS256 / CTS512"
 #define HFTAG_BLELC        	0x8B	// "Bluetooth Low Energy LEGIC Connect"
 
-#define TAGMASK(Tagtype)    (1 << (Tagtype & 0x1F))
 
 #define ALL_LFTAGS          0xFFFFFFFF
 #define ALL_HFTAGS          0xFFFFFFFF

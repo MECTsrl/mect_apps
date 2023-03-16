@@ -34,13 +34,19 @@ private slots:
     void on_atcmButtonClear_clicked();
     void on_atcmButtonRead_clicked();
     void on_atcmButtonWrite_clicked();
+    void updateTagID(QString newTagID);
+    void noTagPresent();
 
 private:
     Ui::page100 *ui;
-    bool        firstTime;
+    int         myStatus;
     bool        serialOpened;
     bool        serialPortFound;
     QString     serialPortName;
+    QString     szLedGray;
+    QString     szLedRed;
+    QString     szLedYellow;
+    QString     szLedGreen;
     // QThread*    serialThread;
     alphanumpad *myKeyboard;                   // User Keyboard Pointer
 };

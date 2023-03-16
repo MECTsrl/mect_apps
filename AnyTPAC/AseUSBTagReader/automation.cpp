@@ -34,7 +34,7 @@ void setup(void)
 
 void        struct2Vars()
 {
-    // if (RicettaTAG.TAG_Controllo == codiceDiControllo)  {
+    if (RicettaTAG.TAG_Controllo == codiceDiControllo)  {
         strncpy(currentRecipeName, RicettaTAG.TAG_nomeRicetta, MY_NAME_LEN);
         beginWrite();
         addWrite_Tmp_TempUgello     ( RicettaTAG.TAG_TempUgello);
@@ -46,7 +46,7 @@ void        struct2Vars()
         addWrite_Tmp_TEMPO3         ( RicettaTAG.TAG_TEMPO3);
         addWrite_Tmp_Aspirazione    ( RicettaTAG.TAG_Aspirazione);
         endWrite();
-    // }
+    }
 }
 
 void        vars2Struct()
@@ -61,12 +61,12 @@ void        vars2Struct()
     RicettaTAG.TAG_TEMPO2           = Tmp_TEMPO2        ;
     RicettaTAG.TAG_TEMPO3           = Tmp_TEMPO3        ;
     RicettaTAG.TAG_Aspirazione      = Tmp_Aspirazione   ;
+    RicettaTAG.TAG_Controllo        = codiceDiControllo ;
 }
 
 void        clearVarsAndStruct()
 {
-    RicettaTAG.TAG_Controllo = codiceDiControllo;
-    memset(RicettaTAG.TAG_nomeRicetta, 0, MY_NAME_LEN + 1);
+    memset(RicettaTAG.TAG_nomeRicetta, 0, MY_NAME_LEN);
     memset(currentRecipeName, 0, MY_NAME_LEN + 1);
     RicettaTAG.TAG_TempUgello       = 0.0;
     RicettaTAG.TAG_TempSerbatoi     = 0.0;
@@ -85,19 +85,19 @@ void loop(void)
 {
     static unsigned loopCounter = 1;
 
-    // Tag Search Polling
-    if (loopCounter % 29 == 0 && tagReader != 0 && tagReader->isOpen())  {
-        if (tagReader->readerStatus() == SerialReader::senderWaitingCommand  &&
-            ! tagReader->isBusy())  {
-            tagReader->searchTag();
-        }
-        else  {
-            qDebug("[%s] Automation loop(): Reader Status: [%s] Reader Busy: [%d]",
-                    QTime::currentTime().toString("HH:mm:ss.zzz").toLatin1().data(),
-                    tagReader->getStatusDesc(tagReader->readerStatus()).toLatin1().data(),
-                    tagReader->isBusy());
-        }
-    }
+    //    // Tag Search Polling
+    //    if (loopCounter % 29 == 0 && tagReader != 0 && tagReader->isOpen())  {
+    //        if (tagReader->readerStatus() == SerialReader::senderWaitingCommand  &&
+    //            ! tagReader->isBusy())  {
+    //            tagReader->searchTag();
+    //        }
+    //        else  {
+    //            qDebug("[%s] Automation loop(): Reader Status: [%s] Reader Busy: [%d]",
+    //                    QTime::currentTime().toString("HH:mm:ss.zzz").toLatin1().data(),
+    //                    tagReader->getStatusDesc(tagReader->readerStatus()).toLatin1().data(),
+    //                    tagReader->isBusy());
+    //        }
+    //    }
     loopCounter++;
 }
 

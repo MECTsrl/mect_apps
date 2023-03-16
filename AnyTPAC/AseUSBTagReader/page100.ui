@@ -461,7 +461,7 @@ font: 9pt &quot;Ubuntu&quot;;
     </font>
    </property>
    <property name="toolTip">
-    <string>page:   status: </string>
+    <string/>
    </property>
    <property name="whatsThis">
     <string>ATCMbutton widget</string>
@@ -1001,6 +1001,9 @@ font: 9pt &quot;Ubuntu&quot;;
    </property>
    <property name="text">
     <string>0</string>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
    </property>
    <property name="toolTip">
     <string>Tmp_TempUgello</string>

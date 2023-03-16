@@ -12,7 +12,7 @@
         <location filename="page100.ui" line="109"/>
         <location filename="page100.ui" line="467"/>
         <location filename="page100.ui" line="516"/>
-        <location filename="page100.ui" line="1123"/>
+        <location filename="page100.ui" line="1126"/>
         <source>ATCMbutton widget</source>
         <translation type="unfinished"></translation>
     </message>
@@ -51,8 +51,8 @@
         <location filename="page100.ui" line="694"/>
         <location filename="page100.ui" line="911"/>
         <location filename="page100.ui" line="960"/>
-        <location filename="page100.ui" line="1009"/>
-        <location filename="page100.ui" line="1058"/>
+        <location filename="page100.ui" line="1012"/>
+        <location filename="page100.ui" line="1061"/>
         <source>ATCMlabel widget</source>
         <translation type="unfinished"></translation>
     </message>
@@ -83,11 +83,6 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="464"/>
-        <source>page:   status: </source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="page100.ui" line="482"/>
         <location filename="page100.ui" line="485"/>
         <source>Write</source>
@@ -105,7 +100,7 @@
         <location filename="page100.ui" line="905"/>
         <location filename="page100.ui" line="954"/>
         <location filename="page100.ui" line="1003"/>
-        <location filename="page100.ui" line="1052"/>
+        <location filename="page100.ui" line="1055"/>
         <source>0</source>
         <translation type="unfinished"></translation>
     </message>
@@ -170,20 +165,20 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="1006"/>
-        <location filename="page100.ui" line="1012"/>
+        <location filename="page100.ui" line="1009"/>
+        <location filename="page100.ui" line="1015"/>
         <source>Tmp_TempUgello</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="1055"/>
-        <location filename="page100.ui" line="1061"/>
+        <location filename="page100.ui" line="1058"/>
+        <location filename="page100.ui" line="1064"/>
         <source>Tmp_P3</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="1138"/>
         <location filename="page100.ui" line="1141"/>
+        <location filename="page100.ui" line="1144"/>
         <source>Clear</source>
         <translation type="unfinished"></translation>
     </message>
