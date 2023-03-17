@@ -5,7 +5,6 @@
 
 #include "crosstable.h"
 #include "automation.h"
-#include "tagreader.h"
 
 #define APP_VERSION         23001
 

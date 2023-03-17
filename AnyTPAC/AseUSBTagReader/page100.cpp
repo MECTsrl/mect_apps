@@ -14,7 +14,6 @@
 #include "ui_page100.h"
 #include "crosstable.h"
 #include "automation.h"
-#include "tagreader.h"
 
 #include <QDebug>
 #include <QFile>
@@ -74,6 +73,8 @@ page100::page100(QWidget *parent) :
 void page100::reload()
 {
     // ui->atcmLabel_7->setProperty("text-align", (QVariant) (Qt::AlignLeft | Qt::AlignVCenter));
+    ui->lblCurrentTag->clear();
+    ui->lblReaderErrors->clear();
 }
 
 /**
@@ -97,8 +98,8 @@ void page100::updateData()
 
     // Step 0: Searching for Serial Port
     if (myStatus == 0)  {
-        ui->label_tag_present->setStyleSheet(szLedGray);
-        ui->label_reader->setStyleSheet(szLedGray);
+        ui->ledTagPresent->setStyleSheet(szLedGray);
+        ui->ledReader->setStyleSheet(szLedGray);
         // Allocate alphanumpad object only once for speed
         if (PLC_MS_VERSION >= 0x030401)  {
             // Create alphanumpad object with Extended Chars and password masking enabled
@@ -110,7 +111,7 @@ void page100::updateData()
         // int     i = 0;
         // Searching Serial Device
         if (QFile::exists(THE_DEVICE))  {
-            ui->label_Tag->setText(QString("Searching Device [%1]") .arg(THE_DEVICE));
+            ui->lblCurrentTag->setText(QString("Searching Device [%1]") .arg(THE_DEVICE));
                 //            foreach (const QSerialPortInfo &info, QSerialPortInfo::availablePorts()) {
                 //                QCoreApplication::processEvents();
                 //                qDebug("Serial Port [%d/%d] - Name: [%s] Location: [%s] Description: [%s] Manufacturer: [%s]", i+1,
@@ -132,7 +133,7 @@ void page100::updateData()
                 myStatus = 1;
         }
         else {
-            ui->label_Tag->setText(QString("Device [%1] not Found!") .arg(THE_DEVICE));
+            ui->lblCurrentTag->setText(QString("Device [%1] not Found!") .arg(THE_DEVICE));
             qCritical("setup(): Reader Raw Device [%s] not found - No Hope", THE_DEVICE);
             myStatus = 3;
         }
@@ -140,22 +141,15 @@ void page100::updateData()
     }
     // Step 1: Creation of Serial Reader Object and Serial Port Opening (only once in the Application Life)
     else if (myStatus == 1)  {
-        ui->label_reader->setStyleSheet(szLedYellow);
+        ui->ledTagPresent->setStyleSheet(szLedYellow);
+        ui->ledReader->setStyleSheet(szLedYellow);
         if (tagReader == 0 && serialPortFound && ! serialPortName.isEmpty())  {
-            ui->label_Tag->setText(QString("Opening Device [%1]") .arg(THE_DEVICE));
-            // serialThread = new QThread(this);
-            // qDebug("setup(): Opening Device [%s] in Thread [0x%x]", THE_DEVICE, (u_int32_t) serialThread);
+            ui->lblCurrentTag->setText(QString("Opening Device [%1]") .arg(THE_DEVICE));
             qDebug("setup(): Opening Device [%s]", THE_DEVICE);
             tagReader = new SerialReader(serialPortName);
-            // tagReader->openSerialPort();
-            // tagReader->moveToThread(serialThread);
-            // QObject::connect(serialThread, SIGNAL(started()), tagReader, SLOT(openSerialPort()));
-            // serialThread->start();
             tagReader->openSerialPort();
             sleep(1);
-            // int nLoop = 0;
-            // while (! serialOpened && nLoop < 30)  {
-            //    sleep(1);
+            myStatus = 2;
             goto endUpdateData;
         }
     }
@@ -164,18 +158,17 @@ void page100::updateData()
         if (tagReader != 0 && ! serialOpened)  {
             serialOpened = tagReader->isOpen();
             if (serialOpened)  {
-                ui->label_Tag->setText(QString("TAG Code: [NONE]"));
                 int nDevtty = tagReader->getSerialDeviceID();
                 qDebug("setup(): Current Serial Port handle [%d] for Device [%s]", nDevtty, THE_DEVICE);
                 beginWrite();
                 addWrite_readerFound(true);
                 addWrite_rawttyDevice((u_int16_t) nDevtty);
                 endWrite();
-                ui->label_reader->setStyleSheet(szLedGreen);
+                ui->ledReader->setStyleSheet(szLedGreen);
                 noTagPresent();
                 // Disable CRC Append to TAG
                 tagReader->setCRCEnabled(false);
-                // Connecting SerialReader Signals
+                // Connecting SerialReader Signals to local Slots
                 connect(tagReader, SIGNAL(noTag()), this, SLOT(noTagPresent()));
                 connect(tagReader, SIGNAL(tagFound(QString)), this, SLOT(updateTagID(QString)));
                 myStatus = 4;
@@ -191,17 +184,17 @@ void page100::updateData()
     }   
     // Step 4: Reader Connected Updating Interface
     else if (myStatus == 4)  {
-        // Read / Write Buttons
+        // Enable | Disable Read & Write Buttons
         ui->atcmButtonRead->setEnabled( tagReader->isTagPresent()   && ! tagReader->isBusy());
         ui->atcmButtonWrite->setEnabled(tagReader->isTagPresent()   && ! tagReader->isBusy());
-        // Communication Errors
-        ui->labelErrors->setText(QString("Comm Errors: %1") .arg(tagReader->getCommErrors(), 10, 10));
+        // Update Communication Errors
+        ui->lblReaderErrors->setText(QString("Comm Errors: %1") .arg(tagReader->getCommErrors(), 10, 10));
     }
 
 endUpdateData:
     // Update Tag Label and Tag Led
-    ui->label_reader->update();
-    ui->label_Tag->update();
+    ui->ledReader->update();
+    ui->lblCurrentTag->update();
     QCoreApplication::processEvents();
     return;
 }
@@ -312,16 +305,16 @@ void page100::on_atcmButtonWrite_clicked()
 
 void page100::updateTagID(QString newTagID)
 {
-    ui->label_Tag->setText(QString("Tag:[%1]") .arg(newTagID));
-    ui->label_Tag->update();
-    ui->label_tag_present->setStyleSheet(szLedGreen);
-    ui->label_tag_present->update();
+    ui->lblCurrentTag->setText(QString("Tag:[%1]") .arg(newTagID));
+    ui->lblCurrentTag->update();
+    ui->ledTagPresent->setStyleSheet(szLedGreen);
+    ui->ledTagPresent->update();
 }
 
 void page100::noTagPresent()
 {
-    ui->label_Tag->setText(QString("Tag:[NONE]"));
-    ui->label_Tag->update();
-    ui->label_tag_present->setStyleSheet(szLedRed);
-    ui->label_tag_present->update();
+    ui->lblCurrentTag->setText(QString("Tag:[NONE]"));
+    ui->lblCurrentTag->update();
+    ui->ledTagPresent->setStyleSheet(szLedRed);
+    ui->ledTagPresent->update();
 }

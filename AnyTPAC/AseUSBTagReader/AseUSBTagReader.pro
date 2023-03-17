@@ -25,7 +25,6 @@ CONFIG+=serial
 HEADERS += \
     automation.h \
     page100.h \
-    tagreader.h \
     serialreader.h
 
 
@@ -36,7 +35,6 @@ FORMS += \
 SOURCES += \
     automation.cpp \
     page100.cpp \
-    tagreader.cpp \
     serialreader.cpp
 
 

@@ -28,6 +28,8 @@ public:
     bool        writeTagMemory(unsigned char *userArea, int nBytes);     // Write User Memory Area of Current Tag
     u_int16_t   calculateCRC(unsigned char *userArea, int nBytes);       // Computes the CRC of a byte buffer, one byte at a time
     void        setCRCEnabled(bool addCRC)  { crcEnabled = addCRC; }     // Add 16 Bit CRC to Data
+    void        setTagPollingIntervalms(int pollInterval_ms) { tagPollingms = pollInterval_ms; }    // set Tag Polling interval in ms
+    int         getTagPollingIntervalms()   const { return tagPollingms; }          // get Tag Polling interval in ms
 
     enum commandReader  {
         cmdNone = 0,
@@ -35,6 +37,7 @@ public:
         cmdSetTagFilter,
         cmdSearchTags,
         cmdReadBlock,
+        cmdReadPages,
         cmdWriteBlock
     };
 
@@ -77,6 +80,7 @@ public:
         case    cmdSetTagFilter:    retval = "Set Tag Filter";              break;
         case    cmdSearchTags:      retval = "Search Tags";                 break;
         case    cmdReadBlock:       retval = "Read  Block";                 break;
+        case    cmdReadPages:       retval = "Read  Pages";                 break;
         case    cmdWriteBlock:      retval = "Write Block";                 break;
         default:                    retval = "?";
         }
@@ -126,15 +130,17 @@ private:
     // Private Functions
     //-------------------------------------------
     void                clearBuffers();
-    bool                sendReaderCommand(enum commandReader commandType, QString myCommand, bool syncCommand = true);   // send Command to Reader
+    bool                sendReaderCommand(enum commandReader commandType, QString myCommand, bool sendSync = true);   // send Command to Reader
     bool                sendAsyncSerialCommand(QString serialCommand);
     bool                sendSyncSerialCommand(QString serialCommand);
     bool                parseTagID(QString tagString, uint &tagType, uint &tagIdbits, uint &tagLen, QString &tagID);
     bool                parseReaderString(QString readerString, QString &userString);
     QString             bytes2readerString(unsigned char *buffer, int nBytes);
     void                readerString2Bytes(QString readerString, unsigned char *buffer, uint userLen);
-    bool                read_15693_Block(int currentBlock, unsigned char *buffer);
-    bool                write_15693_Block(int currentBlock, unsigned char *buffer);
+    bool                read_15693_Block(int currentBlock, QString &dataBuffer);
+    bool                write_15693_Block(int currentBlock, const QString &block2Write);
+    bool                read_MIFARE_Pages(int nStartPage, int nPages, QString &dataBuffer);
+    bool                write_MIFARE_Page(int nPage, const QString &block2Write);
     u_int16_t           updateCRC(u_int16_t CRC, unsigned char Byte);
     //-------------------------------------------
     // Private Variables
@@ -159,6 +165,7 @@ private:
     QString             versionString;
     uint                comErrors;
     bool                crcEnabled;
+    int                 tagPollingms;
     // Buffers and Tag IDs
     uint                currentTagType;
     uint                currentTagIdBits;
