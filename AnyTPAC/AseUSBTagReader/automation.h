@@ -7,8 +7,9 @@
 #include "serialreader.h"
 
 #define THE_DEVICE "/dev/ttyUSB1"
+#define SHORT_DEVICE_NAME "ttyUSB1"
 #define MY_NAME_LEN         32
-#define MAX_TAG_AREA        316
+#define MAX_TAG_AREA        316             // Max User Area for HFTAG_ISO15693
 #define codiceDiControllo 0x55aa55aa
 
 // Compiler directive to pack data structures

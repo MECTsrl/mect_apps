@@ -22,15 +22,10 @@ class SerialReader : public QObject
 public:
     explicit SerialReader(QString myDevice, QObject *parent = 0);
     ~SerialReader();
-    // Public Usage Methods
-    bool        searchTag();            // Search Tag near reader
-    bool        readTagMemory(unsigned char *userArea, int nBytes);      // Read User Memory Area of Current Tag
-    bool        writeTagMemory(unsigned char *userArea, int nBytes);     // Write User Memory Area of Current Tag
-    u_int16_t   calculateCRC(unsigned char *userArea, int nBytes);       // Computes the CRC of a byte buffer, one byte at a time
-    void        setCRCEnabled(bool addCRC)  { crcEnabled = addCRC; }     // Add 16 Bit CRC to Data
-    void        setTagPollingIntervalms(int pollInterval_ms) { tagPollingms = pollInterval_ms; }    // set Tag Polling interval in ms
-    int         getTagPollingIntervalms()   const { return tagPollingms; }          // get Tag Polling interval in ms
-
+    //-------------------------------------------
+    // Public Enums for Class
+    //-------------------------------------------
+    // Command to Reader
     enum commandReader  {
         cmdNone = 0,
         cmdGetVersion,
@@ -40,7 +35,7 @@ public:
         cmdReadPages,
         cmdWriteBlock
     };
-
+    // State machine states (handled in the Timer event)
     enum senderStates {
         senderZero = 0,
         senderIdle,
@@ -54,22 +49,33 @@ public:
         senderParseFail,
         senderError
     };
+    //-------------------------------------------
+    // Public Usage Methods
+    //-------------------------------------------
+    bool        openSerialPort();                                       // Open Serial Port (the device name is specified in the Constructor)
+    bool        searchTag();                                            // Search Tag near reader
+    bool        readTagMemory(unsigned char *userArea, int nBytes);     // Read User Memory Area of Current Tag
+    bool        writeTagMemory(unsigned char *userArea, int nBytes);    // Write User Memory Area of Current Tag
+    u_int16_t   calculateCRC(unsigned char *userArea, int nBytes);      // Computes the CRC of a byte buffer, one byte at a time
+    void        setCRCEnabled(bool addCRC)  { crcEnabled = addCRC; }    // Add 16 Bit CRC to Data
+    void        setTagPollingIntervalms(int pollInterval_ms) { tagPollingms = pollInterval_ms; }    // set Tag Polling interval in ms
+    int         getTagPollingIntervalms()   const { return tagPollingms; }                          // get Tag Polling interval in ms
     // Status and Current Tag Info
-    bool    isOpen();
-    bool    isSync()                    const { return useSyncCommands; }       // Returns true if Commands are sent in sync mode
-    bool    isBusy()                    const { return readerIsReading || readerIsWriting; } // Returns true if a Read or Write Tag is pending
-    bool    isCRCEnabled()              const { return crcEnabled; }            // Returns true if CRC is added to Written data
-    int     getSerialDeviceID()         const { return (int) serialDevice.handle(); }  // Device Handle
-    int     getCommErrors()             const { return comErrors;       }       // Communication Errors
-    QString getVersionString()          const { return versionString;   }       // Driver Version String
-    QString lastTagID()                 const { return currentTagID;    }       // Last Tag ID
-    bool    isTagPresent()              const { return tagPresent;      }       // True if Tag is present
-    uint    getTagType()                const { return currentTagType;  }       // Last Tag Type found
-    uint    getTagIdLen()               const { return currentTagIdLen; }       // Last Tag ID Len
-    uint    getTagIdBits()              const { return currentTagIdBits;}       // Last Tag ID Bits
-    enum commandReader lastCommand()    const { return currentCommand;  }       // Last Command Sent to Reader
-    enum senderStates  readerStatus()   const { return myStatus;        }       // Serial Interface status
-
+    bool        isOpen();
+    bool        isSync()                    const { return useSyncCommands; }       // Returns true if Commands are sent in sync mode
+    bool        isBusy()                    const { return readerIsReading || readerIsWriting; } // Returns true if a Read or Write Tag is pending
+    bool        isCRCEnabled()              const { return crcEnabled; }            // Returns true if CRC is added to Written data
+    int         getSerialDeviceID()         const { return (int) serialDevice.handle(); }  // Device Handle
+    int         getCommErrors()             const { return comErrors;       }       // Communication Errors
+    QString     getVersionString()          const { return versionString;   }       // Driver Version String
+    QString     lastTagID()                 const { return currentTagID;    }       // Last Tag ID
+    bool        isTagPresent()              const { return tagPresent;      }       // True if Tag is present
+    uint        getTagType()                const { return currentTagType;  }       // Last Tag Type found
+    uint        getTagIdLen()               const { return currentTagIdLen; }       // Last Tag ID Len
+    uint        getTagIdBits()              const { return currentTagIdBits;}       // Last Tag ID Bits
+    enum commandReader lastCommand()        const { return currentCommand;  }       // Last Command Sent to Reader
+    enum senderStates  readerStatus()       const { return myStatus;        }       // Serial Interface status
+    // Descriptions
     QString getCommandDesc(enum commandReader cmd) const
     {
         QString retval;
@@ -108,17 +114,16 @@ public:
     }           // Status Description
 
 protected:
-    void    timerEvent(QTimerEvent *event);
+    void    timerEvent(QTimerEvent *event);         // State machine management
 
 signals:
-    void    replyReady(int commandPending);
+    void    replyReady(int commandPending);         // A Reply from reader is ready to be parsed
     void    tagFound(QString tagID);                // Tag found with ID tagID
     void    noTag();                                // No Tag foung (Answer 0100 to cmdSearchTags)
     void    tagMemoryRead(bool readOK);             // Tag Memory Read completed
     void    tagMemoryWrite(bool writeOK);           // Tag Memory Write completed
     
 public slots:
-    void    openSerialPort();
 
 private slots:
     void    readData();

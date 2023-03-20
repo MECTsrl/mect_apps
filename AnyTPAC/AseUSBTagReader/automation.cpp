@@ -33,19 +33,17 @@ void setup(void)
 
 void        struct2Vars()
 {
-    if (RicettaTAG.TAG_Controllo == codiceDiControllo)  {
-        strncpy(currentRecipeName, RicettaTAG.TAG_nomeRicetta, MY_NAME_LEN);
-        beginWrite();
-        addWrite_Tmp_TempUgello     ( RicettaTAG.TAG_TempUgello);
-        addWrite_Tmp_TempSerbatoi   ( RicettaTAG.TAG_TempSerbatoi);
-        addWrite_Tmp_P3             ( RicettaTAG.TAG_P3);
-        addWrite_Tmp_P5             ( RicettaTAG.TAG_P5);
-        addWrite_Tmp_TEMPO1         ( RicettaTAG.TAG_TEMPO1);
-        addWrite_Tmp_TEMPO2         ( RicettaTAG.TAG_TEMPO2);
-        addWrite_Tmp_TEMPO3         ( RicettaTAG.TAG_TEMPO3);
-        addWrite_Tmp_Aspirazione    ( RicettaTAG.TAG_Aspirazione);
-        endWrite();
-    }
+    strncpy(currentRecipeName, RicettaTAG.TAG_nomeRicetta, MY_NAME_LEN);
+    beginWrite();
+    addWrite_Tmp_TempUgello     ( RicettaTAG.TAG_TempUgello);
+    addWrite_Tmp_TempSerbatoi   ( RicettaTAG.TAG_TempSerbatoi);
+    addWrite_Tmp_P3             ( RicettaTAG.TAG_P3);
+    addWrite_Tmp_P5             ( RicettaTAG.TAG_P5);
+    addWrite_Tmp_TEMPO1         ( RicettaTAG.TAG_TEMPO1);
+    addWrite_Tmp_TEMPO2         ( RicettaTAG.TAG_TEMPO2);
+    addWrite_Tmp_TEMPO3         ( RicettaTAG.TAG_TEMPO3);
+    addWrite_Tmp_Aspirazione    ( RicettaTAG.TAG_Aspirazione);
+    endWrite();
 }
 
 void        vars2Struct()
@@ -75,8 +73,8 @@ void        clearVarsAndStruct()
     RicettaTAG.TAG_TEMPO2           = 0.0;
     RicettaTAG.TAG_TEMPO3           = 0.0;
     RicettaTAG.TAG_Aspirazione      = 0   ;
+    RicettaTAG.TAG_Controllo        = codiceDiControllo;
     struct2Vars();
-    RicettaTAG.TAG_Controllo        = 0;
 }
 
 /* put here the operation made every 100ms */

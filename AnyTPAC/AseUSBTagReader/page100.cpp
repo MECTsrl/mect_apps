@@ -95,8 +95,9 @@ void page100::updateData()
     if (ui->pushButtonText->text() != QString(currentRecipeName))  {
         ui->pushButtonText->setText(QString(currentRecipeName));
     }
-
+    //-------------------------------------------
     // Step 0: Searching for Serial Port
+    //-------------------------------------------
     if (myStatus == 0)  {
         ui->ledTagPresent->setStyleSheet(szLedGray);
         ui->ledReader->setStyleSheet(szLedGray);
@@ -112,24 +113,25 @@ void page100::updateData()
         // Searching Serial Device
         if (QFile::exists(THE_DEVICE))  {
             ui->lblCurrentTag->setText(QString("Searching Device [%1]") .arg(THE_DEVICE));
-                //            foreach (const QSerialPortInfo &info, QSerialPortInfo::availablePorts()) {
-                //                QCoreApplication::processEvents();
-                //                qDebug("Serial Port [%d/%d] - Name: [%s] Location: [%s] Description: [%s] Manufacturer: [%s]", i+1,
-                //                                    QSerialPortInfo::availablePorts().count(),
-                //                                    info.portName().toAscii().data(),
-                //                                    info.systemLocation().toAscii().data(),
-                //                                    info.description().toAscii().data(),
-                //                                    info.manufacturer().toAscii().data());
-                //                // Check Device raw file name from /dev
-                //                if (info.systemLocation() == THE_DEVICE)  {
-                //                    // tagReaderInfo = info;
-                //                    serialPortFound = true;
-                //                    serialPortName = info.portName();
-                //                    qDebug("Tag Reader Device Found: [%s] Port Name[%s]", THE_DEVICE, serialPortName.toAscii().data());
-                //                }
-                //            }
+            // Uncomment the next lines to get the list of serial devices connected to the panel
+            //            foreach (const QSerialPortInfo &info, QSerialPortInfo::availablePorts()) {
+            //                QCoreApplication::processEvents();
+            //                qDebug("Serial Port [%d/%d] - Name: [%s] Location: [%s] Description: [%s] Manufacturer: [%s]", i+1,
+            //                                    QSerialPortInfo::availablePorts().count(),
+            //                                    info.portName().toAscii().data(),
+            //                                    info.systemLocation().toAscii().data(),
+            //                                    info.description().toAscii().data(),
+            //                                    info.manufacturer().toAscii().data());
+            //                // Check Device raw file name from /dev
+            //                if (info.systemLocation() == THE_DEVICE)  {
+            //                    // tagReaderInfo = info;
+            //                    serialPortFound = true;
+            //                    serialPortName = info.portName();
+            //                    qDebug("Tag Reader Device Found: [%s] Port Name[%s]", THE_DEVICE, serialPortName.toAscii().data());
+            //                }
+            //            }
                 serialPortFound = true;
-                serialPortName = QString("ttyUSB1");
+                serialPortName = QString(SHORT_DEVICE_NAME);
                 myStatus = 1;
         }
         else {
@@ -139,7 +141,9 @@ void page100::updateData()
         }
         goto endUpdateData;
     }
+    //-------------------------------------------
     // Step 1: Creation of Serial Reader Object and Serial Port Opening (only once in the Application Life)
+    //-------------------------------------------
     else if (myStatus == 1)  {
         ui->ledTagPresent->setStyleSheet(szLedYellow);
         ui->ledReader->setStyleSheet(szLedYellow);
@@ -153,7 +157,9 @@ void page100::updateData()
             goto endUpdateData;
         }
     }
+    //-------------------------------------------
     // Step 2: Checking Serial Port
+    //-------------------------------------------
     else if (myStatus == 2)  {
         if (tagReader != 0 && ! serialOpened)  {
             serialOpened = tagReader->isOpen();
@@ -166,8 +172,8 @@ void page100::updateData()
                 endWrite();
                 ui->ledReader->setStyleSheet(szLedGreen);
                 noTagPresent();
-                // Disable CRC Append to TAG
-                tagReader->setCRCEnabled(false);
+                // Enable CRC Append to TAG
+                tagReader->setCRCEnabled(true);
                 // Connecting SerialReader Signals to local Slots
                 connect(tagReader, SIGNAL(noTag()), this, SLOT(noTagPresent()));
                 connect(tagReader, SIGNAL(tagFound(QString)), this, SLOT(updateTagID(QString)));
@@ -176,13 +182,17 @@ void page100::updateData()
             goto endUpdateData;
         }
     }
+    //-------------------------------------------
     // Step 3: No hope to read Cards
+    //-------------------------------------------
     else if (myStatus == 3)  {
         ui->atcmButtonRead->setEnabled(false);
         ui->atcmButtonWrite->setEnabled(false);
         goto endUpdateData;
     }   
-    // Step 4: Reader Connected Updating Interface
+    //-------------------------------------------
+    // Step 4: Reader Connected, Updating Interface
+    //-------------------------------------------
     else if (myStatus == 4)  {
         // Enable | Disable Read & Write Buttons
         ui->atcmButtonRead->setEnabled( tagReader->isTagPresent()   && ! tagReader->isBusy());
@@ -256,26 +266,14 @@ void page100::on_atcmButtonRead_clicked()
 {
     QElapsedTimer       readTimer;
     unsigned char       readBuffer[MAX_TAG_AREA];
-    struct _RicettaTAG  localRecipe;
-    int                 nReadSize = sizeof(localRecipe);
-    u_int16_t           localCRC = 0xFFFF;
-
-    // To check SLI-L Tags, read/write size reduced to 32 Bytes
-    nReadSize = 32;
-    memset(readBuffer, 0, MAX_TAG_AREA);
+    int                 nReadSize = sizeof(RicettaTAG);
 
     readTimer.start();
-    memset(&localRecipe, 0, sizeof(RicettaTAG));
+    memset(readBuffer, 0, MAX_TAG_AREA);
     if (tagReader->readTagMemory(readBuffer, nReadSize))  {
-        // Calculation of the CRC of the read data
-        localCRC = tagReader->calculateCRC(readBuffer, (sizeof(RicettaTAG)));
         // Copy from read buffer to localRecipe
-        memcpy(&localRecipe, readBuffer, sizeof(localRecipe));
-        qDebug("Read Tag: Elapsed[%lli]ms - Estimated CRC:[%X] Read CRC:[%X]", readTimer.elapsed(),
-                    localCRC, localRecipe.TAG_Controllo);
-        // TODO: Eliminare questo setting perchè il valore di TAG_Controllo deve essere letto dal Tag
-        RicettaTAG = localRecipe;
-        RicettaTAG.TAG_Controllo = localCRC;
+        memcpy(&RicettaTAG, readBuffer, sizeof(RicettaTAG));
+        qDebug("Read Tag: Elapsed[%lli]ms", readTimer.elapsed());
         struct2Vars();
     }
     else  {

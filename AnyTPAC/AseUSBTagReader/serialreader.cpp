@@ -10,7 +10,7 @@
 #define SYNC_COMMAND_TIMEOUT    2000
 #define SEND_COMMAND_TIMEOUT    500
 #define RECEIVE_COMMAND_TIMEOUT 500
-#define SEND_WRITE_PAUSE        40
+#define SEND_WRITE_PAUSE        20
 #define SEND_READ_PAUSE         20
 #define SENDER_INTERVAL         100
 #define MAX_IDLE_TIME           2000
@@ -71,7 +71,7 @@ SerialReader::~SerialReader()
     }
 }
 
-void SerialReader::openSerialPort()
+bool SerialReader::openSerialPort()
 {
     serialDevice.setPortName(myDevice);
     serialDevice.setBaudRate(QSerialPort::Baud9600);
@@ -83,9 +83,11 @@ void SerialReader::openSerialPort()
     sleep(1);
     connect(&serialDevice, SIGNAL(readyRead()), this, SLOT(readData()));
     connect(this, SIGNAL(replyReady(int)), this, SLOT(parseReply(int)));
-    sleep(1);
-    changeStatus(senderIdle);
-    timerId = startTimer(SENDER_INTERVAL);
+    // sleep(1);
+    if (portOpen)  {
+        changeStatus(senderIdle);
+        timerId = startTimer(SENDER_INTERVAL);
+    }
 
 }
 
@@ -171,7 +173,8 @@ bool    SerialReader::sendSyncSerialCommand(QString serialCommand)
     // Check final status
     if (myStatus == senderReading && fRes)  {
         // if received, run the parser Async
-        if (currentCommand != cmdReadBlock && currentCommand != cmdWriteBlock)  {
+        if (currentCommand != cmdReadBlock && currentCommand != cmdWriteBlock && currentCommand != cmdReadPages)  {
+            // Start Reply Parser
             emit replyReady((int) currentCommand);
         }
     }
@@ -235,6 +238,7 @@ void    SerialReader::readData()
                     // answer complete from reader, remove CR
                     readerAnswer[lineLength - 1] = 0;
                     lastReply = QString((char *) readerAnswer);
+                    // Start Reply Parser
                     emit replyReady((int) currentCommand);
                     currentCommand = cmdNone;
                 }
@@ -746,11 +750,12 @@ bool        SerialReader::readTagMemory(unsigned char *userArea, int nBytes)
     int             nErrors = 0;
     unsigned char   localBuffer[nMax_15693_UserAreaBytes];
     QString         localString;
-    unsigned char   *p;
     u_int16_t       localCRC = 0;
     u_int16_t       remoteCRC = 0;
     int             nMaxBlocks = currentTagType == HFTAG_MIFARE ? nMax_MIFARE_UserAreaPages : nMax_15693_UserAreaBlocks;
 
+    // Stop Tag Polling
+    readerIsReading = true;
     // Check Size
     if (crcEnabled)  {
         nBytes += sizeof(remoteCRC);
@@ -766,11 +771,8 @@ bool        SerialReader::readTagMemory(unsigned char *userArea, int nBytes)
                             nMaxBlocks * nBytesPerPage);
         goto exitReadTag;
     }
-    // Used to Stop Tag Polling
-    readerIsReading = true;
     // Clear Buffer
-    p = &localBuffer[0];
-    memset(p, 0, nMax_15693_UserAreaBytes);
+    memset(localBuffer, 0, nMax_15693_UserAreaBytes);
     localString.clear();
     if (currentTagType == HFTAG_MIFARE)  {
         // Read HFTAG_MIFARE User Pages
@@ -806,8 +808,16 @@ bool        SerialReader::readTagMemory(unsigned char *userArea, int nBytes)
     // All ok, copy of the read data on the user area
     if (fRes)  {
         // Decode localString
+        readerString2Bytes(localString, localBuffer, nBytes);
+        // Check CRC
+        if (crcEnabled)  {
+            localCRC = calculateCRC(localBuffer, (nBytes - sizeof(localCRC)));
+            memcpy((void *) &remoteCRC, localBuffer + (nBytes - sizeof(localCRC)), sizeof(localCRC));
+            // Add CRC Check
+        }
         memcpy(userArea, localBuffer, nBytes);
-        qDebug(LOG_STRING"Copied [%d]bytes. Last Block:[%d/%d] Errors:[%d]", LOG_POINT, nBytes, nBlock, nBlocks, nErrors);
+        qDebug(LOG_STRING"Copied [%d]bytes. Last Block:[%d/%d] Errors:[%d] Local CRC:[%X]Remote CRC:[%X]", LOG_POINT,
+                        nBytes, nBlock, nBlocks, nErrors, localCRC, remoteCRC);
     }
     else {
         qCritical(LOG_STRING"Error Reading User Area. Last Block:[%d] Errors:[%d]", LOG_POINT, nBlock, nErrors);
@@ -838,19 +848,20 @@ bool        SerialReader::writeTagMemory(unsigned char *userArea, int nBytes)
     QString         blockStringValue;
 
 
-    // Calculate CRC
+    // Stop Tag Polling
+    readerIsWriting = true;
+    currentCommand = cmdWriteBlock;
+    // Calculate CRC and add to data
     if (crcEnabled)  {
         localCRC = calculateCRC(userArea, nBytes);
         u_int16_t  lsbCRC = (localCRC & 0xFF);              // lsb
         u_int16_t  msbCRC =  ((localCRC >> 8) & 0xFF);      // msb
+        // CRC is stored lsb first
         crcString.append((QString("%1") .arg(lsbCRC, 2, 16, QLatin1Char('0'))).toUpper());
         crcString.append((QString("%1") .arg(msbCRC, 2, 16, QLatin1Char('0'))).toUpper());
         qDebug(LOG_STRING"CRC: [%X] lsb:[%X] msb:[%X] str:[%s]", LOG_POINT, localCRC, lsbCRC, msbCRC, crcString.toLatin1().data());
         data2Write.append(crcString);
         nBytes += sizeof(localCRC);
-    }
-    else {
-        localCRC = 0;
     }
     // Check Size
     nBlocks2Write = (nBytes + nBytesPerPage - 1) / nBytesPerPage;       // Ceil Round-Up...
@@ -867,9 +878,6 @@ bool        SerialReader::writeTagMemory(unsigned char *userArea, int nBytes)
         szFiller.fill('0', 2 * (nTotalBytes - nBytes));
         data2Write.append(szFiller);
     }
-    // Used to Stop Tag Polling
-    readerIsWriting = true;
-    currentCommand = cmdWriteBlock;
     nBlock = 0;
     if (currentTagType == HFTAG_MIFARE)  {
         // MIFARE Writing Loop
