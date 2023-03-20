@@ -75,6 +75,7 @@ void page100::reload()
     // ui->atcmLabel_7->setProperty("text-align", (QVariant) (Qt::AlignLeft | Qt::AlignVCenter));
     ui->lblCurrentTag->clear();
     ui->lblReaderErrors->clear();
+    ui->labelms->clear();
 }
 
 /**
@@ -82,7 +83,6 @@ void page100::reload()
  */
 void page100::updateData()
 {
-    QString szNewStyle;
 
     if (this->isVisible() == false)
     {
@@ -101,6 +101,7 @@ void page100::updateData()
     if (myStatus == 0)  {
         ui->ledTagPresent->setStyleSheet(szLedGray);
         ui->ledReader->setStyleSheet(szLedGray);
+        ui->ledTagCommand->setStyleSheet(szLedGray);
         // Allocate alphanumpad object only once for speed
         if (PLC_MS_VERSION >= 0x030401)  {
             // Create alphanumpad object with Extended Chars and password masking enabled
@@ -148,17 +149,22 @@ void page100::updateData()
         ui->ledTagPresent->setStyleSheet(szLedYellow);
         ui->ledReader->setStyleSheet(szLedYellow);
         if (tagReader == 0 && serialPortFound && ! serialPortName.isEmpty())  {
-            ui->lblCurrentTag->setText(QString("Opening Device [%1]") .arg(THE_DEVICE));
+            ui->lblCurrentTag->setText(QString("Opening Device [%1]") .arg(SHORT_DEVICE_NAME));
             qDebug("setup(): Opening Device [%s]", THE_DEVICE);
             tagReader = new SerialReader(serialPortName);
-            tagReader->openSerialPort();
             sleep(1);
-            myStatus = 2;
+            if (tagReader->openSerialPort())  {
+                myStatus = 2;
+            }
+            else  {
+                ui->lblCurrentTag->setText(QString("Dev.[%1] not Opened! - No Hope") .arg(SHORT_DEVICE_NAME));
+                myStatus = 3;
+            }
             goto endUpdateData;
         }
     }
     //-------------------------------------------
-    // Step 2: Checking Serial Port
+    // Step 2: Checking Serial Port and Connect remote signals
     //-------------------------------------------
     else if (myStatus == 2)  {
         if (tagReader != 0 && ! serialOpened)  {
@@ -267,38 +273,65 @@ void page100::on_atcmButtonRead_clicked()
     QElapsedTimer       readTimer;
     unsigned char       readBuffer[MAX_TAG_AREA];
     int                 nReadSize = sizeof(RicettaTAG);
+    QString             szStyle = szLedYellow;
+    qint64              replyTime = 0;
 
+    ui->ledTagCommand->setStyleSheet(szStyle);
+    ui->ledTagCommand->update();
+    ui->labelms->clear();
+    ui->labelms->update();
     readTimer.start();
     memset(readBuffer, 0, MAX_TAG_AREA);
+    clearVarsAndStruct();
     if (tagReader->readTagMemory(readBuffer, nReadSize))  {
         // Copy from read buffer to localRecipe
         memcpy(&RicettaTAG, readBuffer, sizeof(RicettaTAG));
-        qDebug("Read Tag: Elapsed[%lli]ms", readTimer.elapsed());
+        replyTime = readTimer.elapsed();
+        qDebug("Read Tag: Elapsed[%lli]ms", replyTime);
         struct2Vars();
+        szStyle = szLedGreen;
     }
     else  {
-        qCritical("Error Reading Tag: Elapsed[%lli]ms", readTimer.elapsed());
+        replyTime = readTimer.elapsed();
+        qCritical("Error Reading Tag: Elapsed[%lli]ms", replyTime);
+        szStyle = szLedRed;
     }
+    ui->ledTagCommand->setStyleSheet(szStyle);
+    ui->ledTagCommand->update();
+    ui->labelms->setText(QString("[%1]ms") .arg(replyTime));
 }
 
 void page100::on_atcmButtonWrite_clicked()
 {
     QElapsedTimer       writeTimer;
-    unsigned char       readBuffer[MAX_TAG_AREA];
+    unsigned char       writeBuffer[MAX_TAG_AREA];
     int                 nWriteSize = sizeof(RicettaTAG);
+    QString             szStyle = szLedYellow;
+    qint64              replyTime = 0;
 
-    // To check SLI-L Tags, read/write size reduced to 32 Bytes
-    nWriteSize = 32;
+    ui->ledTagCommand->setStyleSheet(szStyle);
+    ui->ledTagCommand->update();
+    ui->labelms->clear();
+    ui->labelms->update();
     writeTimer.start();
-    memset(readBuffer, 0, MAX_TAG_AREA);
-    memset(&RicettaTAG, 0, sizeof(RicettaTAG));
+    // Update Struct Data from Interface
     vars2Struct();
-    if (tagReader->writeTagMemory((unsigned char *) &RicettaTAG, nWriteSize))  {
-        qDebug("Write Tag: Elapsed[%lli]ms", writeTimer.elapsed());
+    // Copy Data to write Buffer
+    memset(writeBuffer, 0, MAX_TAG_AREA);
+    memcpy(writeBuffer, &RicettaTAG, sizeof(RicettaTAG));
+    if (tagReader->writeTagMemory(writeBuffer, nWriteSize))  {
+        replyTime = writeTimer.elapsed();
+        qDebug("Write Tag: Elapsed[%lli]ms", replyTime);
+        szStyle = szLedGreen;
     }
     else  {
-        qCritical("Error Writing Tag: Elapsed[%lli]ms", writeTimer.elapsed());
+        replyTime = writeTimer.elapsed();
+        qCritical("Error Writing Tag: Elapsed[%lli]ms", replyTime);
+        szStyle = szLedRed;
     }
+    ui->ledTagCommand->setStyleSheet(szStyle);
+    ui->ledTagCommand->update();
+    ui->labelms->setText(QString("[%1]ms") .arg(replyTime));
 }
 
 void page100::updateTagID(QString newTagID)
@@ -307,6 +340,8 @@ void page100::updateTagID(QString newTagID)
     ui->lblCurrentTag->update();
     ui->ledTagPresent->setStyleSheet(szLedGreen);
     ui->ledTagPresent->update();
+    ui->ledTagCommand->setStyleSheet(szLedYellow);
+    ui->labelms->setText(QString("[---]ms"));
 }
 
 void page100::noTagPresent()
@@ -315,4 +350,6 @@ void page100::noTagPresent()
     ui->lblCurrentTag->update();
     ui->ledTagPresent->setStyleSheet(szLedRed);
     ui->ledTagPresent->update();
+    ui->ledTagCommand->setStyleSheet(szLedGray);
+    ui->labelms->clear();
 }

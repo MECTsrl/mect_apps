@@ -28,7 +28,7 @@ void setup(void)
     addWrite_readerFound(false);
     addWrite_rawttyDevice(0);
     endWrite();
-    qDebug("Ricetta Tag Total Byte Size:        [%d]", sizeof(RicettaTAG));
+    // qDebug("Ricetta Tag Total Byte Size:        [%d]", sizeof(RicettaTAG));
 }
 
 void        struct2Vars()

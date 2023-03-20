@@ -12,9 +12,9 @@ The libQtSerialPort.so file is installed on the panel when deploying the applica
 
 The instructions necessary to indicate to Mect Suite where to find the library file, how to link it, and the includes for compilation have been inserted only in the **AseUSBTagReader.pro** file, keeping the structure of the hmi project unchanged.  
 
-The project uses **ICODE SLI-S Tags** (Iso 15693) with 64 bit TAG IDs and a 2048 bit user memory area.  
+The project uses **ICODE SLI-S Tags** (Iso 15693) with 64 bit TAG IDs and a 2048 bit user memory area (316 User Bytes in 79 4K Blocks) or **ISO14443A/MIFARE Tags** (144 User Bytes in 36 4K Blocks, starting from page 0x04).
 
-The commands sent to the reader are described in the file *doc/TWN4_Simple_Protocol_DocRev25.pdf* (paragraph 1.5.12. API ISO15693 in the document).  
+The commands sent to the reader are described in the file *doc/TWN4_Simple_Protocol_DocRev25.pdf* (paragraph 1.5.12. API ISO15693 and paragraph 1.5.10. API MIFARECLASSIC in the document).  
 
-In the project there is only one interface page (**page100**) with graphic elements that indicate if the reader is connected.  
-if a Tag has been detected in the reading area of the reader, and two buttons for reading and writing a user data structure on the current Tag.  
+In the project there is only one interface page (**page100**) with graphic elements that indicate if the reader is connected, if a Tag has been detected in the reading area of the reader, and two buttons for reading and writing a user data structure on the current Tag.  
+

@@ -159,6 +159,7 @@ private:
     bool                parseReplyOk;
     bool                readerIsReading;
     bool                readerIsWriting;
+    bool                readerIsSearching;
     QSerialPort         serialDevice;
     QString             myDevice;
     QElapsedTimer       watchDogTimer;

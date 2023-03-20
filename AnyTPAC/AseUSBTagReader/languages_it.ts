@@ -183,6 +183,11 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="page100.ui" line="1197"/>
+        <source>0 ms</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="page100.ui" line="531"/>
         <location filename="page100.ui" line="534"/>
         <source>Read</source>
