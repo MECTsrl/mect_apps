@@ -12,7 +12,7 @@ The libQtSerialPort.so file is installed on the panel when deploying the applica
 
 The instructions necessary to indicate to Mect Suite where to find the library file, how to link it, and the includes for compilation have been inserted only in the **AseUSBTagReader.pro** file, keeping the structure of the hmi project unchanged.  
 
-The project uses **ICODE SLI-S Tags** (Iso 15693) with 64 bit TAG IDs and a 2048 bit user memory area (316 User Bytes in 79 4K Blocks) or **ISO14443A/MIFARE Tags** with 56 bit TAG IDs (144 User Bytes in 36 4K Blocks, starting from page 0x04).  
+The project uses **ICODE SLI-S Tags** (Iso 15693) with 64 bit TAG IDs and a 2048 bit user memory area (316 User Bytes in 79 4B Blocks) or **ISO14443A/MIFARE Tags** with 56 bit TAG IDs (144 User Bytes in 36 4B Blocks, starting from page 0x04).  
 Documentation on the different types of tags can be found in the *Doc* folder, ***ICODE_SLIX2***.pdf for *ISO15693* and ***NTAG213_215_216***.pdf for *ISO14443A/MIFARE*.
 
 The commands sent to the reader are described in the file ***doc/TWN4_Simple_Protocol_DocRev25.pdf*** *(paragraph 1.5.12. API ISO15693 and paragraph 1.5.10. API MIFARECLASSIC in the document)*.  
@@ -24,11 +24,11 @@ The core of this project is the ***SerialReader*** class. It is a class derived 
 The SerialReader class must be used through the global pointer variable **SerialReader \*tagReader;** declared in automation.cpp and instantiated only once within the code of the application Start Page (not in automation.cpp) because to work it must be connected to the Qt Event Loop.  
 automation.cpp uses another thread, independent from the Qt Event loop.  
 
-- It is preferable to create the SerialReader object when all the application pages have been created, inside the UpdateData code of the Start Page of the application, because the Qt Event Loop must already be active. The activation steps of the class must occur in the same creation thrad (see *page100::updateData()*).
+- It is preferable to create the SerialReader object when all the application pages have been created, inside the UpdateData code of the Start Page of the application, because the Qt Event Loop must already be active. The activation steps of the class must occur in the same creation thrad (see *page100::updateData()*)
 - The first step is to verify that the file associated with the USB Device (*/dev/ttyUSB1)* exists (myStatus == 0)
-- The class must be created specifying the name of the device it will use and then the device can be opened with the method openSerialPort() (myStatus == 1) and .  
+- The class must be created specifying the name of the device it will use and then the device can be opened with the method openSerialPort() (myStatus == 1)  
 - Then you can set the operating parameters (setCRCEnabled() and setTagPollingIntervalms())  and eventually connect the class signals with the page slots (myStatus == 2)
-- If you use class signals connected to page slots, in the activation code (*page::reload()*) of another page you must use the method **tagReader->disconnect();;** to avoid multiple connections to tagReader Signals.  
+- If you use class signals connected to page slots, in the activation code (*page::reload()*) of another page you must use the method **tagReader->disconnect();;** to avoid multiple connections to tagReader Signals  
 
 The class exposes some methods for checking reader status, tag presence and type, reading and writing the tag user memory, which can be called only if a Tag has been detected within the range of the reader
 
@@ -39,8 +39,8 @@ The class exposes some methods for checking reader status, tag presence and type
 - ***void  setCRCEnabled(bool addCRC)*** If addCRC is true, a 2 byte CRC is added to the stored user data when writing to the Tag and checked when reading from the Tag  
 - ***void  setTagPollingIntervalms(int pollInterval_ms)*** Set the Tag search time interval in milliseconds (default is 2000ms). The value must not be less than 500ms  
 - ***u_int16_t  calculateCRC(unsigned char \*userArea, int nBytes)***  Computes the CRC of a byte buffer, one byte at a time
-- ***bool  readTagMemory(unsigned char \*userArea, int nBytes)***   Read User Memory Area of Current Tag for nBytes. Returns true if Tag is present and reading is ok.
-- ***bool  writeTagMemory(unsigned char \*userArea, int nBytes)***  Write User Memory Area of Current Tag for nBytes. Returns true if Tag is present and Writing is ok.
+- ***bool  readTagMemory(unsigned char \*userArea, int nBytes)***   Read User Memory Area of Current Tag for nBytes. Returns true if Tag is present and reading is ok
+- ***bool  writeTagMemory(unsigned char \*userArea, int nBytes)***  Write User Memory Area of Current Tag for nBytes. Returns true if Tag is present and Writing is ok
 - ***bool  isBusy()*** Returns true if a Read or Write Tag command is pending
 - ***bool  isTagPresent()*** Returns true if Tag is present
 - ***QString lastTagID()*** Returns Last Tag ID if a Tag is present or an empty QString
