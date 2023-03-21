@@ -9,9 +9,9 @@
 
 #define SYNC_COMMAND_TIMEOUT    2000        // Reply Time-Out for sync commands
 #define SEND_MUTEX_TIMEOUT      500         // Time-out for Send Mutex Lock
-#define RECEIVE_COMMAND_TIMEOUT 500         // Reply Time-out from reader
 #define SEND_WRITE_PAUSE        10          // Waiting time between Sync command and waiting response
 #define SEND_READ_PAUSE         15          // Waiting time between read attempts
+#define TAG_BLOCK_PAUSE          5          // Waiting time between TAG block operations
 #define SENDER_INTERVAL         100         // Time period of the state machine
 #define MAX_IDLE_TIME           2000        // Default Tag Polling interval
 #define MAX_READ_ERRORS         10          // Max Retries while reading Tag Memory
@@ -49,7 +49,6 @@ SerialReader::SerialReader(QString serialDevice, QObject *parent) :
     timerId = 0;
     myStatus = senderZero;
     lastReply.clear();
-    useSyncCommands = true;
     currentTagType = 0;
     currentTagIdLen = 0;
     versionString.clear();
@@ -115,7 +114,7 @@ bool    SerialReader::sendSyncSerialCommand(QString serialCommand)
     // Tries to Lock Mutex
     if (mutexCoda.tryLock(SEND_MUTEX_TIMEOUT))  {
         // Mark current command as Sync Command
-        syncCommand = true;
+        isSyncCommand = true;
         // Change Status to Writing
         changeStatus(senderWriting);
         // Sync Send
@@ -130,6 +129,7 @@ bool    SerialReader::sendSyncSerialCommand(QString serialCommand)
         else  {
             qCritical(LOG_STRING"Error sending Command [%s]", LOG_POINT, readerCommand);
         }
+        QCoreApplication::processEvents();
         usleep(SEND_WRITE_PAUSE * 1000);
 
         // Sync Receive
@@ -195,7 +195,7 @@ bool    SerialReader::sendAsyncSerialCommand(QString serialCommand)
     // Tries to Lock Mutex
     if (mutexCoda.tryLock(SEND_MUTEX_TIMEOUT))  {
         // Mark current command as Async Command
-        syncCommand = false;
+        isSyncCommand = false;
         changeStatus(senderWriting);
         memcpy(readerCommand, serialCommand.toLatin1().data(), nChars2Send);
         readerCommand[nChars2Send++] = cCR;
@@ -222,7 +222,7 @@ void    SerialReader::readData()
     qint64      nReadyChars = serialDevice.bytesAvailable();
     qint64      nCharsRead = 0;
 
-    if (syncCommand)  {
+    if (isSyncCommand)  {
         // If sync Command do nothing
         return;
     }
@@ -778,6 +778,10 @@ bool        SerialReader::readTagMemory(unsigned char *userArea, int nBytes)
     u_int16_t       remoteCRC = 0;
     int             nMaxBlocks = currentTagType == HFTAG_MIFARE ? nMax_MIFARE_UserAreaPages : nMax_15693_UserAreaBlocks;
 
+    // Check Tag Presence
+    if (! tagPresent)  {
+        return fRes;
+    }
     // Stop Tag Polling
     readerIsReading = true;
     // Check Size
@@ -811,7 +815,7 @@ bool        SerialReader::readTagMemory(unsigned char *userArea, int nBytes)
                 ++nErrors;
                 // Pause
                 QCoreApplication::processEvents();
-                usleep(SEND_WRITE_PAUSE * 1000);
+                usleep(TAG_BLOCK_PAUSE * 1000);
             }
         }
     }
@@ -829,7 +833,7 @@ bool        SerialReader::readTagMemory(unsigned char *userArea, int nBytes)
             }
             // Pause
             QCoreApplication::processEvents();
-            usleep(SEND_WRITE_PAUSE * 1000);
+            usleep(TAG_BLOCK_PAUSE * 1000);
         }
     }
     // All Blocks are Ok, convert from Reader String to Byte
@@ -880,6 +884,10 @@ bool        SerialReader::writeTagMemory(unsigned char *userArea, int nBytes)
     QString         szFiller;
     QString         blockStringValue;
 
+    // Check Tag Presence
+    if (! tagPresent)  {
+        return fRes;
+    }
     // Stop Tag Polling
     readerIsWriting = true;
     currentCommand = cmdWriteBlock;
@@ -926,7 +934,7 @@ bool        SerialReader::writeTagMemory(unsigned char *userArea, int nBytes)
             }
             // Pause
             QCoreApplication::processEvents();
-            usleep(SEND_WRITE_PAUSE * 1000);
+            usleep(TAG_BLOCK_PAUSE * 1000);
         }
     }
     else if (currentTagType == HFTAG_ISO15693)  {
@@ -943,7 +951,7 @@ bool        SerialReader::writeTagMemory(unsigned char *userArea, int nBytes)
             }
             // Pause
             QCoreApplication::processEvents();
-            usleep(SEND_WRITE_PAUSE * 1000);
+            usleep(TAG_BLOCK_PAUSE * 1000);
         }
     }
     // All ok, copy of the read data on the user area

@@ -164,7 +164,7 @@ void page100::updateData()
         }
     }
     //-------------------------------------------
-    // Step 2: Checking Serial Port and Connect remote signals
+    // Step 2: Checking Serial Port and Connect remote signals  (only once in the Application Life)
     //-------------------------------------------
     else if (myStatus == 2)  {
         if (tagReader != 0 && ! serialOpened)  {
@@ -342,6 +342,7 @@ void page100::updateTagID(QString newTagID)
     ui->ledTagPresent->update();
     ui->ledTagCommand->setStyleSheet(szLedYellow);
     ui->labelms->setText(QString("[---]ms"));
+    doWrite_tagFound(1);
 }
 
 void page100::noTagPresent()
@@ -352,4 +353,5 @@ void page100::noTagPresent()
     ui->ledTagPresent->update();
     ui->ledTagCommand->setStyleSheet(szLedGray);
     ui->labelms->clear();
+    doWrite_tagFound(0);
 }

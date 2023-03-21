@@ -49,34 +49,6 @@ int tagFound = 0;
 
 
 /*
- * Variable WriteTAGRequest
- */
-
-int WriteTAGRequest = 0;
-
-
-/*
- * Variable ReadTAGRequest
- */
-
-int ReadTAGRequest = 0;
-
-
-/*
- * Variable ResetReader
- */
-
-int ResetReader = 0;
-
-
-/*
- * Variable readerLastError	[ Last Reader Error ]
- */
-
-u_int32_t readerLastError = 0;
-
-
-/*
  * Variable Tmp_TempUgello	[ Temperatura ugello ]
  */
 
@@ -1373,78 +1345,6 @@ int
 getStatus_tagFound(void)
 {
 	return getStatus(ID_tagFound);
-}
-
-int
-doWrite_WriteTAGRequest(int value)
-{
-	return doWrite(ID_WriteTAGRequest, &value);
-}
-
-int
-addWrite_WriteTAGRequest(int value)
-{
-	return addWrite(ID_WriteTAGRequest, &value);
-}
-
-int
-getStatus_WriteTAGRequest(void)
-{
-	return getStatus(ID_WriteTAGRequest);
-}
-
-int
-doWrite_ReadTAGRequest(int value)
-{
-	return doWrite(ID_ReadTAGRequest, &value);
-}
-
-int
-addWrite_ReadTAGRequest(int value)
-{
-	return addWrite(ID_ReadTAGRequest, &value);
-}
-
-int
-getStatus_ReadTAGRequest(void)
-{
-	return getStatus(ID_ReadTAGRequest);
-}
-
-int
-doWrite_ResetReader(int value)
-{
-	return doWrite(ID_ResetReader, &value);
-}
-
-int
-addWrite_ResetReader(int value)
-{
-	return addWrite(ID_ResetReader, &value);
-}
-
-int
-getStatus_ResetReader(void)
-{
-	return getStatus(ID_ResetReader);
-}
-
-int
-doWrite_readerLastError(u_int32_t value)
-{
-	return doWrite(ID_readerLastError, &value);
-}
-
-int
-addWrite_readerLastError(u_int32_t value)
-{
-	return addWrite(ID_readerLastError, &value);
-}
-
-int
-getStatus_readerLastError(void)
-{
-	return getStatus(ID_readerLastError);
 }
 
 int
@@ -4660,10 +4560,6 @@ update_all(void)
 	retval += readFromDb(ID_rawttyDevice, &rawttyDevice);
 	retval += readFromDb(ID_readerFound, &readerFound);
 	retval += readFromDb(ID_tagFound, &tagFound);
-	retval += readFromDb(ID_WriteTAGRequest, &WriteTAGRequest);
-	retval += readFromDb(ID_ReadTAGRequest, &ReadTAGRequest);
-	retval += readFromDb(ID_ResetReader, &ResetReader);
-	retval += readFromDb(ID_readerLastError, &readerLastError);
 	retval += readFromDb(ID_Tmp_TempUgello, &Tmp_TempUgello);
 	retval += readFromDb(ID_Tmp_TempSerbatoi, &Tmp_TempSerbatoi);
 	retval += readFromDb(ID_Tmp_P3, &Tmp_P3);

@@ -11,6 +11,8 @@
 
 #define     BUF_SIZE            1024
 
+#define     RECEIVE_COMMAND_TIMEOUT 500 // Reply Time-out from reader
+
 #define     HFTAG_MIFARE        0x80	// "ISO14443A/MIFARE"
 #define     HFTAG_ISO15693      0x82	// "ISO15693"
 #define     TAGMASK(Tagtype)    (1 << (Tagtype & 0x1F))
@@ -53,16 +55,14 @@ public:
     // Public Usage Methods
     //-------------------------------------------
     bool        openSerialPort();                                       // Open Serial Port (the device name is specified in the Constructor)
-    bool        searchTag();                                            // Search Tag near reader
+    void        setCRCEnabled(bool addCRC)  { crcEnabled = addCRC; }    // Add 16 Bit CRC to Data
+    void        setTagPollingIntervalms(int pollInterval_ms) { if (pollInterval_ms > RECEIVE_COMMAND_TIMEOUT) tagPollingms = pollInterval_ms; }    // set Tag Polling interval in ms
+    int         getTagPollingIntervalms()   const { return tagPollingms; }                          // get Tag Polling interval in ms
     bool        readTagMemory(unsigned char *userArea, int nBytes);     // Read User Memory Area of Current Tag
     bool        writeTagMemory(unsigned char *userArea, int nBytes);    // Write User Memory Area of Current Tag
     u_int16_t   calculateCRC(unsigned char *userArea, int nBytes);      // Computes the CRC of a byte buffer, one byte at a time
-    void        setCRCEnabled(bool addCRC)  { crcEnabled = addCRC; }    // Add 16 Bit CRC to Data
-    void        setTagPollingIntervalms(int pollInterval_ms) { tagPollingms = pollInterval_ms; }    // set Tag Polling interval in ms
-    int         getTagPollingIntervalms()   const { return tagPollingms; }                          // get Tag Polling interval in ms
     // Status and Current Tag Info
     bool        isOpen();
-    bool        isSync()                    const { return useSyncCommands; }       // Returns true if Commands are sent in sync mode
     bool        isBusy()                    const { return readerIsReading || readerIsWriting; } // Returns true if a Read or Write Tag is pending
     bool        isCRCEnabled()              const { return crcEnabled; }            // Returns true if CRC is added to Written data
     int         getSerialDeviceID()         const { return (int) serialDevice.handle(); }  // Device Handle
@@ -135,6 +135,7 @@ private:
     // Private Functions
     //-------------------------------------------
     void                clearBuffers();
+    bool                searchTag();                                            // Search a Tag near reader
     bool                sendReaderCommand(enum commandReader commandType, QString myCommand, bool sendSync = true);   // send Command to Reader
     bool                sendAsyncSerialCommand(QString serialCommand);
     bool                sendSyncSerialCommand(QString serialCommand);
@@ -166,8 +167,7 @@ private:
     QElapsedTimer       idleTimer;
     enum commandReader  currentCommand;
     enum senderStates   myStatus;
-    bool                useSyncCommands;
-    bool                syncCommand;
+    bool                isSyncCommand;
     QString             versionString;
     uint                comErrors;
     bool                crcEnabled;
