@@ -78,17 +78,18 @@ void page100::updateData()
      */
 
     if (Flag_UpdateTCP == 1){//Code via TCP for Update value
-        char stringa[10];
-            stringa[0] = Byte_1;
-            stringa[1] = Byte_2;
-            stringa[2] = Byte_3;
-            stringa[3] = Byte_4;
-            stringa[4] = Byte_5;
-            stringa[5] = Byte_6;
-            stringa[6] = Byte_7;
-            stringa[7] = Byte_8;
-            stringa[8] = Byte_9;
-            stringa[9] = Byte_10;
+        char stringa[11];
+            stringa[0]  = Byte_1;
+            stringa[1]  = Byte_2;
+            stringa[2]  = Byte_3;
+            stringa[3]  = Byte_4;
+            stringa[4]  = Byte_5;
+            stringa[5]  = Byte_6;
+            stringa[6]  = Byte_7;
+            stringa[7]  = Byte_8;
+            stringa[8]  = Byte_9;
+            stringa[9]  = Byte_10;
+			stringa[10] = 0; //terminator
 
         ui->label_StringaTCP->setText(stringa);
         doWrite_Flag_UpdateTCP(0);
