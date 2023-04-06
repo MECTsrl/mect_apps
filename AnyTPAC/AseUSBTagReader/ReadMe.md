@@ -28,7 +28,7 @@ automation.cpp uses another thread, independent from the Qt Event loop.
 - The first step is to verify that the file associated with the USB Device (*/dev/ttyUSB1)* exists (myStatus == 0)
 - The class must be created specifying the name of the device it will use and then the device can be opened with the method openSerialPort() (myStatus == 1)  
 - Then you can set the operating parameters (setCRCEnabled() and setTagPollingIntervalms())  and eventually connect the class signals with the page slots (myStatus == 2)
-- If you use class signals connected to page slots, in the activation code (*page::reload()*) of another page you must use the method **tagReader->disconnect();;** to avoid multiple connections to tagReader Signals  
+- If you use class signals attached to page100 slots, the handling slots must be written so that they can also be used in other pages of your code (through the use of global variables or Crosstables and without requiring page100 repaint), because it is not possible to disconnect the tagReader signals with the call of ***tagReader->disconnect()***, and reconnect them to slots of other pages, because the tagReader object belongs to the Thread of page100 and cannot be connected to other Threads (this is a problem related to the architecture of the Mect Suite Threads and the Qt Event Loop)  
 
 The class exposes some methods for checking reader status, tag presence and type, reading and writing the tag user memory, which can be called only if a Tag has been detected within the range of the reader
 
