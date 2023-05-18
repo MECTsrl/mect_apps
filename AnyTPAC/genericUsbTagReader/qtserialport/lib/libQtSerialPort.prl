@@ -1,0 +1,5 @@
+QMAKE_PRL_BUILD_DIR = /home/fmandracci/mect_suite_3.0/qtserialport/qtserialport-build/src/serialport/
+QMAKE_PRO_INPUT = serialport.pro
+QMAKE_PRL_TARGET = libQtSerialPort.so.1.0.0
+QMAKE_PRL_CONFIG = include_source_dir lex yacc warn_on uic resources qt warn_on release incremental link_prl qt warn_on release incremental link_prl cross_compile shared def_files_disabled no_mocdepend release qt_no_framework module create_prl dll shared moc thread
+QMAKE_PRL_VERSION = 1.0.0
