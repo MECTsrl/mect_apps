@@ -38,3 +38,5 @@ The class exposes some methods for checking reader status, tag presence, getting
 ### tagReader public signals
 
 - ***void        readNewTag(QString newTag);*** Emitted when reading of a Tag is completed
+
+**N.B.: Please check if your tag reader uses an FTDI chip, because you may need to disconnect and reconnect the driver before you can use it (see setup() in automation.cpp)**

@@ -12,9 +12,11 @@
 #include "page100.h"
 #include "ui_page100.h"
 #include "crosstable.h"
+#include "automation.h"
 
 #include <QFile>
 #include <QCoreApplication>
+#include <QDebug>
 
 // Info for qDebug
 #define LOG_STRING      "[%s] %s(%d):\t"
@@ -57,7 +59,7 @@ page100::page100(QWidget *parent) :
     translateFontSize(this);
     myReader = 0;
     myStatus = 0;
-    serialDevice = QString("/dev/ttyUSB0");
+    serialDevice = QString(THE_DEVICE);
     myMessage.clear();
     ui->lineEdit->clear();
     ui->lblMessage->clear();
@@ -99,7 +101,6 @@ void page100::updateData()
         // Check Device presence
         if (QFile::exists(serialDevice))  {
             myMessage = QString("Device [%1] Present!") .arg(serialDevice);
-            qDebug(LOG_STRING"%s", LOG_POINT, myMessage.toLatin1().data());
             myStatus = 1;
         }
         else  {
