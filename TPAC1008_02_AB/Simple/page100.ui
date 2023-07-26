@@ -2279,6 +2279,9 @@ background-color: rgb(255, 255, 127);
      <pointsize>11</pointsize>
     </font>
    </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
    <property name="toolTip">
     <string>PLC_EnableEnc</string>
    </property>
