@@ -591,7 +591,8 @@
     </message>
     <message>
         <location filename="page100.ui" line="3580"/>
-        <source>1;Encoder;2;Counter;3;---</source>
+        <source>1;Enc_Bidir;2;Enc_Counter;0;Enc_Disabled</source>
+        <oldsource>1;Encoder;2;Counter;3;---</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>

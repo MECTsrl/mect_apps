@@ -374,7 +374,8 @@
     </message>
     <message>
         <location filename="page100.ui" line="1709"/>
-        <source>1;Encoder;2;Counter;3;---;0;zero</source>
+        <source>1;Enc_Bidir;2;Enc_Counter;3;---;0;Enc_Disabled</source>
+        <oldsource>1;Encoder;2;Counter;3;---;0;zero</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
