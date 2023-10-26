@@ -91,7 +91,8 @@
     </message>
     <message>
         <location filename="page100.ui" line="326"/>
-        <source>0x12345678</source>
+        <source>12345678</source>
+        <oldsource>0x12345678</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -248,7 +249,7 @@
         <location filename="page100.ui" line="2753"/>
         <location filename="page100.ui" line="2891"/>
         <location filename="page100.ui" line="3918"/>
-        <location filename="page100.ui" line="4335"/>
+        <location filename="page100.ui" line="4343"/>
         <source>ATCMcombobox widget</source>
         <translation type="unfinished"></translation>
     </message>
@@ -530,13 +531,13 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="4332"/>
-        <location filename="page100.ui" line="4338"/>
+        <location filename="page100.ui" line="4340"/>
+        <location filename="page100.ui" line="4346"/>
         <source>PLC_EncoderStart</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="4369"/>
+        <location filename="page100.ui" line="4377"/>
         <source>0;Enc.Disabled;1;Enc.Bidir;2;Enc.Counter</source>
         <translation type="unfinished"></translation>
     </message>
