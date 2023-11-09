@@ -5,8 +5,9 @@
 #include "ui_page100.h"
 #include "crosstable.h"
 
-#include "QString"
-#include "QProcess"
+#include <QString>
+#include <QProcess>
+#include <QDebug>
 
 page100::page100(QWidget *parent) :
     page(parent),
@@ -54,6 +55,7 @@ void page100::on_pushButton_clicked()
     QString cmd = "openssl";
     QStringList args = QStringList() << "s_client" << "-quiet" << "-connect" << QString("%0:443").arg(host);
     QString input = QString("GET %0 HTTP/1.1\nHost: %1\nConnection: close\n\n").arg(path).arg(host);
+    qDebug("Input to openssl command:\n[%s]", input.toLatin1().data());
     QProcess process;
 
     // QString args_s;
@@ -64,20 +66,20 @@ void page100::on_pushButton_clicked()
 
     // waitForStarted and waitForFinished default timeout: 30000 ms
     process.start(cmd, args);
-    if (process.waitForStarted())
-    {
+    if (process.waitForStarted())   {
         process.write(input.toLatin1().data());
         process.closeWriteChannel();
 
-        if (process.waitForFinished())
-        {
+        if (process.waitForFinished())  {
             QByteArray result = process.readAll();
 
             ui->theResultLabel->setText(QString(result));
         }
-        else
+        else  {
             ui->theResultLabel->setText("error in process.waitForFinished()");
+        }
     }
-    else
+    else  {
         ui->theResultLabel->setText("error in process.waitForStarted()");
+    }
 }
