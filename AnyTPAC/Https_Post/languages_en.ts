@@ -36,17 +36,18 @@
     </message>
     <message>
         <location filename="page100.ui" line="232"/>
-        <source>HTTPS
-POST</source>
+        <source>openssl
+Call</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="page100.ui" line="257"/>
-        <source>testPost</source>
+        <source>script
+Call</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page100.ui" line="304"/>
+        <location filename="page100.ui" line="305"/>
         <source>&lt;output&gt;
 </source>
         <translation type="unfinished"></translation>

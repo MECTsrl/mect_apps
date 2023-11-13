@@ -229,8 +229,8 @@ background-color: rgb(170, 170, 127);
           </font>
          </property>
          <property name="text">
-          <string>HTTPS
-POST</string>
+          <string>openssl
+Call</string>
          </property>
          <property name="flat">
           <bool>false</bool>
@@ -254,7 +254,8 @@ POST</string>
           </font>
          </property>
          <property name="text">
-          <string>testPost</string>
+          <string>script
+Call</string>
          </property>
          <property name="flat">
           <bool>false</bool>

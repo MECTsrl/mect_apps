@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 2.7.84, 2023-11-10T12:39:26. -->
+<!-- Written by QtCreator 2.7.84, 2023-11-13T14:00:17. -->
 <qtcreator>
  <data>
   <variable>ProjectExplorer.Project.ActiveTarget</variable>
@@ -236,14 +236,14 @@
        <value type="QString">C:/Qt485/imx28/rootfs</value>
       </valuelist>
       <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedTimes">
-       <value type="QDateTime">2023-11-10T12:38:26</value>
-       <value type="QDateTime">2023-11-10T12:38:25</value>
-       <value type="QDateTime">2023-11-10T12:38:25</value>
-       <value type="QDateTime">2023-11-10T12:38:25</value>
-       <value type="QDateTime">2023-11-10T12:38:25</value>
-       <value type="QDateTime">2023-11-10T12:38:25</value>
-       <value type="QDateTime">2023-11-10T12:38:25</value>
-       <value type="QDateTime">2023-11-10T12:38:25</value>
+       <value type="QDateTime">2023-11-13T12:57:55</value>
+       <value type="QDateTime">2023-11-13T12:57:54</value>
+       <value type="QDateTime">2023-11-13T12:57:54</value>
+       <value type="QDateTime">2023-11-13T12:57:54</value>
+       <value type="QDateTime">2023-11-13T12:57:54</value>
+       <value type="QDateTime">2023-11-13T12:57:54</value>
+       <value type="QDateTime">2023-11-13T12:57:54</value>
+       <value type="QDateTime">2023-11-13T12:57:54</value>
       </valuelist>
       <value type="bool" key="RemoteLinux.GenericDirectUploadStep.Incremental">false</value>
      </valuemap>
