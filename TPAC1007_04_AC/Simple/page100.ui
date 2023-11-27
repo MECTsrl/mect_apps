@@ -870,7 +870,7 @@ background-color: rgb(170, 255, 255);
    <property name="font">
     <font>
      <family>DejaVu Sans Mono</family>
-     <pointsize>9</pointsize>
+     <pointsize>8</pointsize>
      <weight>75</weight>
      <bold>true</bold>
     </font>
@@ -1516,7 +1516,7 @@ background-color: rgb(170, 255, 255);
    <property name="font">
     <font>
      <family>DejaVu Sans Mono</family>
-     <pointsize>9</pointsize>
+     <pointsize>8</pointsize>
      <weight>75</weight>
      <bold>true</bold>
     </font>
@@ -1599,14 +1599,14 @@ background-color: rgb(170, 255, 255);
     <rect>
      <x>364</x>
      <y>136</y>
-     <width>80</width>
+     <width>90</width>
      <height>34</height>
     </rect>
    </property>
    <property name="font">
     <font>
      <family>DejaVu Sans Mono</family>
-     <pointsize>8</pointsize>
+     <pointsize>7</pointsize>
     </font>
    </property>
    <property name="toolTip">
@@ -1913,16 +1913,16 @@ background-color: rgb(170, 255, 255);
    </property>
    <property name="geometry">
     <rect>
-     <x>200</x>
+     <x>210</x>
      <y>102</y>
-     <width>40</width>
+     <width>30</width>
      <height>34</height>
     </rect>
    </property>
    <property name="font">
     <font>
      <family>DejaVu Sans Mono</family>
-     <pointsize>9</pointsize>
+     <pointsize>7</pointsize>
      <weight>50</weight>
      <bold>false</bold>
     </font>
@@ -2820,16 +2820,16 @@ background-color: rgb(170, 255, 255);
   <widget class="ATCMbutton" name="atcmButton_Log">
    <property name="geometry">
     <rect>
-     <x>444</x>
+     <x>454</x>
      <y>136</y>
-     <width>36</width>
+     <width>26</width>
      <height>34</height>
     </rect>
    </property>
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>8</pointsize>
+     <pointsize>6</pointsize>
      <weight>75</weight>
      <bold>true</bold>
     </font>
@@ -3453,14 +3453,14 @@ background-color: rgb(170, 255, 255);
     <rect>
      <x>120</x>
      <y>102</y>
-     <width>80</width>
+     <width>90</width>
      <height>34</height>
     </rect>
    </property>
    <property name="font">
     <font>
      <family>DejaVu Sans Mono</family>
-     <pointsize>8</pointsize>
+     <pointsize>7</pointsize>
     </font>
    </property>
    <property name="toolTip">
@@ -3897,14 +3897,14 @@ background-color: rgb(170, 255, 255);
     <rect>
      <x>120</x>
      <y>136</y>
-     <width>80</width>
+     <width>90</width>
      <height>34</height>
     </rect>
    </property>
    <property name="font">
     <font>
      <family>DejaVu Sans Mono</family>
-     <pointsize>8</pointsize>
+     <pointsize>7</pointsize>
     </font>
    </property>
    <property name="toolTip">
@@ -4108,16 +4108,16 @@ background-color: rgb(170, 255, 255);
    </property>
    <property name="geometry">
     <rect>
-     <x>200</x>
+     <x>210</x>
      <y>136</y>
-     <width>40</width>
+     <width>30</width>
      <height>34</height>
     </rect>
    </property>
    <property name="font">
     <font>
      <family>DejaVu Sans Mono</family>
-     <pointsize>9</pointsize>
+     <pointsize>7</pointsize>
      <weight>50</weight>
      <bold>false</bold>
     </font>
@@ -4194,7 +4194,7 @@ background-color: rgb(170, 255, 255);
    <property name="font">
     <font>
      <family>DejaVu Sans Mono</family>
-     <pointsize>9</pointsize>
+     <pointsize>8</pointsize>
      <weight>75</weight>
      <bold>true</bold>
     </font>

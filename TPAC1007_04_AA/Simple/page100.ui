@@ -201,14 +201,14 @@ background-color: rgb(255, 255, 127);
     <rect>
      <x>1</x>
      <y>173</y>
-     <width>80</width>
+     <width>70</width>
      <height>30</height>
     </rect>
    </property>
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>10</pointsize>
+     <pointsize>8</pointsize>
      <weight>50</weight>
      <bold>false</bold>
     </font>
@@ -308,9 +308,9 @@ background-color: rgb(255, 255, 127);
    </property>
    <property name="geometry">
     <rect>
-     <x>81</x>
+     <x>91</x>
      <y>205</y>
-     <width>80</width>
+     <width>90</width>
      <height>34</height>
     </rect>
    </property>
@@ -486,16 +486,16 @@ background-color: rgb(255, 255, 127);
   <widget class="ATCMlabel" name="atcmLabel_PLC_AnOut_1">
    <property name="geometry">
     <rect>
-     <x>321</x>
+     <x>311</x>
      <y>84</y>
-     <width>80</width>
+     <width>70</width>
      <height>30</height>
     </rect>
    </property>
    <property name="font">
     <font>
      <family>DejaVu Sans Mono</family>
-     <pointsize>10</pointsize>
+     <pointsize>8</pointsize>
      <weight>75</weight>
      <bold>true</bold>
     </font>
@@ -559,14 +559,14 @@ background-color: rgb(255, 255, 127);
     <rect>
      <x>241</x>
      <y>112</y>
-     <width>80</width>
+     <width>70</width>
      <height>30</height>
     </rect>
    </property>
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>10</pointsize>
+     <pointsize>8</pointsize>
      <weight>50</weight>
      <bold>false</bold>
     </font>
@@ -586,14 +586,14 @@ background-color: rgb(255, 255, 127);
     <rect>
      <x>241</x>
      <y>142</y>
-     <width>80</width>
+     <width>70</width>
      <height>30</height>
     </rect>
    </property>
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>10</pointsize>
+     <pointsize>8</pointsize>
      <weight>50</weight>
      <bold>false</bold>
     </font>
@@ -636,16 +636,16 @@ background-color: rgb(255, 255, 127);
   <widget class="ATCMlabel" name="atcmLabel_PLC_StatusReg">
    <property name="geometry">
     <rect>
-     <x>321</x>
+     <x>311</x>
      <y>239</y>
-     <width>80</width>
+     <width>70</width>
      <height>34</height>
     </rect>
    </property>
    <property name="font">
     <font>
      <family>DejaVu Sans Mono</family>
-     <pointsize>10</pointsize>
+     <pointsize>8</pointsize>
      <weight>75</weight>
      <bold>true</bold>
     </font>
@@ -734,14 +734,14 @@ background-color: rgb(255, 255, 127);
     <rect>
      <x>1</x>
      <y>84</y>
-     <width>80</width>
+     <width>70</width>
      <height>30</height>
     </rect>
    </property>
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>10</pointsize>
+     <pointsize>8</pointsize>
      <weight>50</weight>
      <bold>false</bold>
     </font>
@@ -771,7 +771,7 @@ background-color: rgb(255, 255, 127);
    <property name="font">
     <font>
      <family>DejaVu Sans Mono</family>
-     <pointsize>10</pointsize>
+     <pointsize>8</pointsize>
     </font>
    </property>
    <property name="text">
@@ -828,16 +828,16 @@ background-color: rgb(255, 255, 127);
   <widget class="ATCMcombobox" name="atcmComboBox_PLC_AnOutConf_3">
    <property name="geometry">
     <rect>
-     <x>401</x>
+     <x>381</x>
      <y>142</y>
-     <width>80</width>
+     <width>100</width>
      <height>30</height>
     </rect>
    </property>
    <property name="font">
     <font>
      <family>DejaVu Sans Mono</family>
-     <pointsize>8</pointsize>
+     <pointsize>7</pointsize>
     </font>
    </property>
    <property name="toolTip">
@@ -1013,16 +1013,16 @@ background-color: rgb(255, 255, 127);
    </property>
    <property name="geometry">
     <rect>
-     <x>321</x>
+     <x>311</x>
      <y>206</y>
-     <width>80</width>
+     <width>70</width>
      <height>34</height>
     </rect>
    </property>
    <property name="font">
     <font>
      <family>DejaVu Sans Mono</family>
-     <pointsize>10</pointsize>
+     <pointsize>8</pointsize>
      <weight>75</weight>
      <bold>true</bold>
     </font>
@@ -1084,16 +1084,16 @@ background-color: rgb(255, 255, 127);
    </property>
    <property name="geometry">
     <rect>
-     <x>81</x>
+     <x>71</x>
      <y>112</y>
-     <width>80</width>
+     <width>70</width>
      <height>30</height>
     </rect>
    </property>
    <property name="font">
     <font>
      <family>DejaVu Sans Mono</family>
-     <pointsize>10</pointsize>
+     <pointsize>8</pointsize>
      <weight>75</weight>
      <bold>true</bold>
     </font>
@@ -1197,9 +1197,9 @@ background-color: rgb(255, 255, 127);
    </property>
    <property name="geometry">
     <rect>
-     <x>401</x>
+     <x>381</x>
      <y>206</y>
-     <width>80</width>
+     <width>100</width>
      <height>34</height>
     </rect>
    </property>
@@ -1225,9 +1225,9 @@ color: rgb(0, 0, 0);</string>
   <widget class="ATCMdate" name="atcmDate">
    <property name="geometry">
     <rect>
-     <x>161</x>
+     <x>141</x>
      <y>142</y>
-     <width>81</width>
+     <width>100</width>
      <height>31</height>
     </rect>
    </property>
@@ -1387,16 +1387,16 @@ color: rgb(0, 0, 0);</string>
    </property>
    <property name="geometry">
     <rect>
-     <x>81</x>
+     <x>71</x>
      <y>84</y>
-     <width>80</width>
+     <width>70</width>
      <height>30</height>
     </rect>
    </property>
    <property name="font">
     <font>
      <family>DejaVu Sans Mono</family>
-     <pointsize>10</pointsize>
+     <pointsize>8</pointsize>
      <weight>75</weight>
      <bold>true</bold>
     </font>
@@ -1455,16 +1455,16 @@ color: rgb(0, 0, 0);</string>
   <widget class="ATCMcombobox" name="atcmComboBox_PLC_AnOutConf_1">
    <property name="geometry">
     <rect>
-     <x>401</x>
+     <x>381</x>
      <y>84</y>
-     <width>80</width>
+     <width>100</width>
      <height>30</height>
     </rect>
    </property>
    <property name="font">
     <font>
      <family>DejaVu Sans Mono</family>
-     <pointsize>8</pointsize>
+     <pointsize>7</pointsize>
     </font>
    </property>
    <property name="toolTip">
@@ -1514,16 +1514,16 @@ color: rgb(0, 0, 0);</string>
   <widget class="ATCMlabel" name="atcmLabel_PLC_AnOut_3">
    <property name="geometry">
     <rect>
-     <x>321</x>
+     <x>311</x>
      <y>142</y>
-     <width>80</width>
+     <width>70</width>
      <height>30</height>
     </rect>
    </property>
    <property name="font">
     <font>
      <family>DejaVu Sans Mono</family>
-     <pointsize>10</pointsize>
+     <pointsize>8</pointsize>
      <weight>75</weight>
      <bold>true</bold>
     </font>
@@ -1612,14 +1612,14 @@ color: rgb(0, 0, 0);</string>
     <rect>
      <x>241</x>
      <y>205</y>
-     <width>80</width>
+     <width>70</width>
      <height>34</height>
     </rect>
    </property>
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>10</pointsize>
+     <pointsize>8</pointsize>
      <weight>50</weight>
      <bold>false</bold>
     </font>
@@ -1639,14 +1639,14 @@ color: rgb(0, 0, 0);</string>
     <rect>
      <x>1</x>
      <y>112</y>
-     <width>80</width>
+     <width>70</width>
      <height>30</height>
     </rect>
    </property>
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>10</pointsize>
+     <pointsize>8</pointsize>
      <weight>50</weight>
      <bold>false</bold>
     </font>
@@ -1768,9 +1768,9 @@ color: rgb(0, 0, 0);</string>
   <widget class="ATCMbutton" name="atcmButton_PLC_EncoderReset">
    <property name="geometry">
     <rect>
-     <x>160</x>
+     <x>181</x>
      <y>205</y>
-     <width>81</width>
+     <width>61</width>
      <height>34</height>
     </rect>
    </property>
@@ -1935,7 +1935,7 @@ color: rgb(0, 0, 0);</string>
    <property name="font">
     <font>
      <family>DejaVu Sans Mono</family>
-     <pointsize>10</pointsize>
+     <pointsize>8</pointsize>
      <weight>75</weight>
      <bold>true</bold>
     </font>
@@ -1996,14 +1996,14 @@ color: rgb(0, 0, 0);</string>
     <rect>
      <x>241</x>
      <y>84</y>
-     <width>80</width>
+     <width>70</width>
      <height>30</height>
     </rect>
    </property>
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>10</pointsize>
+     <pointsize>8</pointsize>
      <weight>50</weight>
      <bold>false</bold>
     </font>
@@ -2112,7 +2112,7 @@ color: rgb(0, 0, 0);</string>
    <property name="font">
     <font>
      <family>DejaVu Sans Mono</family>
-     <pointsize>10</pointsize>
+     <pointsize>8</pointsize>
      <weight>50</weight>
      <bold>false</bold>
     </font>
@@ -2198,16 +2198,16 @@ color: rgb(0, 0, 0);</string>
    </property>
    <property name="geometry">
     <rect>
-     <x>81</x>
+     <x>71</x>
      <y>142</y>
-     <width>80</width>
+     <width>70</width>
      <height>31</height>
     </rect>
    </property>
    <property name="font">
     <font>
      <family>DejaVu Sans Mono</family>
-     <pointsize>10</pointsize>
+     <pointsize>8</pointsize>
      <weight>75</weight>
      <bold>true</bold>
     </font>
@@ -2476,16 +2476,16 @@ color: rgb(0, 0, 0);</string>
   <widget class="ATCMlabel" name="atcmLabel_PLC_Heartbeat">
    <property name="geometry">
     <rect>
-     <x>401</x>
+     <x>381</x>
      <y>239</y>
-     <width>80</width>
+     <width>100</width>
      <height>34</height>
     </rect>
    </property>
    <property name="font">
     <font>
      <family>DejaVu Sans Mono</family>
-     <pointsize>10</pointsize>
+     <pointsize>8</pointsize>
      <weight>75</weight>
      <bold>true</bold>
     </font>
@@ -2546,14 +2546,14 @@ color: rgb(0, 0, 0);</string>
     <rect>
      <x>241</x>
      <y>239</y>
-     <width>80</width>
+     <width>70</width>
      <height>34</height>
     </rect>
    </property>
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>10</pointsize>
+     <pointsize>8</pointsize>
      <weight>50</weight>
      <bold>false</bold>
     </font>
@@ -2613,16 +2613,16 @@ color: rgb(0, 0, 0);</string>
   <widget class="ATCMcombobox" name="atcmComboBox_PLC_AnOutConf_4">
    <property name="geometry">
     <rect>
-     <x>401</x>
+     <x>381</x>
      <y>173</y>
-     <width>80</width>
+     <width>100</width>
      <height>30</height>
     </rect>
    </property>
    <property name="font">
     <font>
      <family>DejaVu Sans Mono</family>
-     <pointsize>8</pointsize>
+     <pointsize>7</pointsize>
     </font>
    </property>
    <property name="toolTip">
@@ -2699,9 +2699,9 @@ color: rgb(0, 0, 0);</string>
   <widget class="ATCMtime" name="atcmTime">
    <property name="geometry">
     <rect>
-     <x>161</x>
+     <x>141</x>
      <y>173</y>
-     <width>80</width>
+     <width>100</width>
      <height>30</height>
     </rect>
    </property>
@@ -2734,16 +2734,16 @@ color: rgb(0, 0, 0);</string>
   <widget class="ATCMcombobox" name="atcmComboBox_PLC_AnInConf_1">
    <property name="geometry">
     <rect>
-     <x>160</x>
+     <x>141</x>
      <y>84</y>
-     <width>80</width>
+     <width>100</width>
      <height>30</height>
     </rect>
    </property>
    <property name="font">
     <font>
      <family>DejaVu Sans Mono</family>
-     <pointsize>8</pointsize>
+     <pointsize>7</pointsize>
     </font>
    </property>
    <property name="toolTip">
@@ -2872,16 +2872,16 @@ color: rgb(0, 0, 0);</string>
   <widget class="ATCMcombobox" name="atcmComboBox_PLC_AnInConf_2">
    <property name="geometry">
     <rect>
-     <x>160</x>
+     <x>141</x>
      <y>112</y>
-     <width>80</width>
+     <width>100</width>
      <height>30</height>
     </rect>
    </property>
    <property name="font">
     <font>
      <family>DejaVu Sans Mono</family>
-     <pointsize>8</pointsize>
+     <pointsize>7</pointsize>
     </font>
    </property>
    <property name="toolTip">
@@ -2931,16 +2931,16 @@ color: rgb(0, 0, 0);</string>
   <widget class="ATCMlabel" name="atcmLabel__PLC_AnOut_4">
    <property name="geometry">
     <rect>
-     <x>321</x>
+     <x>311</x>
      <y>173</y>
-     <width>80</width>
+     <width>70</width>
      <height>30</height>
     </rect>
    </property>
    <property name="font">
     <font>
      <family>DejaVu Sans Mono</family>
-     <pointsize>10</pointsize>
+     <pointsize>8</pointsize>
      <weight>75</weight>
      <bold>true</bold>
     </font>
@@ -3353,14 +3353,14 @@ color: rgb(0, 0, 0);</string>
     <rect>
      <x>241</x>
      <y>173</y>
-     <width>80</width>
+     <width>70</width>
      <height>30</height>
     </rect>
    </property>
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>10</pointsize>
+     <pointsize>8</pointsize>
      <weight>50</weight>
      <bold>false</bold>
     </font>
@@ -3770,14 +3770,14 @@ color: rgb(0, 0, 0);</string>
     <rect>
      <x>1</x>
      <y>142</y>
-     <width>80</width>
+     <width>70</width>
      <height>31</height>
     </rect>
    </property>
    <property name="font">
     <font>
      <family>DejaVu Sans</family>
-     <pointsize>10</pointsize>
+     <pointsize>8</pointsize>
      <weight>50</weight>
      <bold>false</bold>
     </font>
@@ -3899,16 +3899,16 @@ color: rgb(0, 0, 0);</string>
   <widget class="ATCMcombobox" name="atcmComboBox_PLC_AnOutConf_2">
    <property name="geometry">
     <rect>
-     <x>401</x>
+     <x>381</x>
      <y>112</y>
-     <width>80</width>
+     <width>100</width>
      <height>30</height>
     </rect>
    </property>
    <property name="font">
     <font>
      <family>DejaVu Sans Mono</family>
-     <pointsize>8</pointsize>
+     <pointsize>7</pointsize>
     </font>
    </property>
    <property name="toolTip">
@@ -4059,16 +4059,16 @@ color: rgb(0, 0, 0);</string>
    </property>
    <property name="geometry">
     <rect>
-     <x>81</x>
+     <x>71</x>
      <y>173</y>
-     <width>80</width>
+     <width>70</width>
      <height>30</height>
     </rect>
    </property>
    <property name="font">
     <font>
      <family>DejaVu Sans Mono</family>
-     <pointsize>10</pointsize>
+     <pointsize>8</pointsize>
      <weight>75</weight>
      <bold>true</bold>
     </font>
@@ -4130,16 +4130,16 @@ color: rgb(0, 0, 0);</string>
   <widget class="ATCMlabel" name="atcmLabel_PLC_AnOut_2">
    <property name="geometry">
     <rect>
-     <x>321</x>
+     <x>311</x>
      <y>112</y>
-     <width>80</width>
+     <width>70</width>
      <height>30</height>
     </rect>
    </property>
    <property name="font">
     <font>
      <family>DejaVu Sans Mono</family>
-     <pointsize>10</pointsize>
+     <pointsize>8</pointsize>
      <weight>75</weight>
      <bold>true</bold>
     </font>
@@ -4324,7 +4324,7 @@ color: rgb(0, 0, 0);</string>
     <rect>
      <x>0</x>
      <y>205</y>
-     <width>81</width>
+     <width>91</width>
      <height>34</height>
     </rect>
    </property>

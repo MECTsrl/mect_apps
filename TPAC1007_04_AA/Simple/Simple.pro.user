@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 2.7.84, 2023-10-26T10:23:25. -->
+<!-- Written by QtCreator 2.7.84, 2023-11-27T15:14:29. -->
 <qtcreator>
  <data>
   <variable>ProjectExplorer.Project.ActiveTarget</variable>
@@ -199,24 +199,44 @@
        <value type="QString">C:/mect_apps/TPAC1007_04_AA/Simple/config/Crosstable.csv</value>
        <value type="QString">C:/mect_apps/TPAC1007_04_AA/Simple/config/trend1.csv</value>
        <value type="QString">C:/mect_apps/TPAC1007_04_AA/Simple/config/system.ini</value>
+       <value type="QString">C:/mect_apps/TPAC1007_04_AA/Simple/config/trend1.csv</value>
+       <value type="QString">C:/mect_apps/TPAC1007_04_AA/Simple/hmi</value>
        <value type="QString">C:/mect_apps/TPAC1007_04_AA/Simple/config/splash.png</value>
        <value type="QString">C:/mect_apps/TPAC1007_04_AA/Simple/hmi</value>
+       <value type="QString">C:/mect_apps/TPAC1007_04_AA/Simple/config/system.ini</value>
+       <value type="QString">C:/mect_apps/TPAC1007_04_AA/Simple/config/splash.png</value>
+       <value type="QString">C:/mect_apps/TPAC1007_04_AA/Simple/config/Crosstable.csv</value>
       </valuelist>
       <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedHosts">
        <value type="QString">192.168.5.211</value>
        <value type="QString">192.168.5.211</value>
        <value type="QString">192.168.5.211</value>
+       <value type="QString">192.168.5.60</value>
+       <value type="QString">192.168.5.60</value>
        <value type="QString">192.168.5.211</value>
        <value type="QString">192.168.5.211</value>
+       <value type="QString">192.168.5.60</value>
+       <value type="QString">192.168.5.60</value>
+       <value type="QString">192.168.5.60</value>
       </valuelist>
       <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedRemotePaths">
        <value type="QString">/local/etc/sysconfig</value>
        <value type="QString">/local/data/customtrend</value>
        <value type="QString">/local/etc/sysconfig</value>
+       <value type="QString">/local/data/customtrend</value>
+       <value type="QString">/local/root</value>
        <value type="QString">/local/etc/sysconfig/img</value>
        <value type="QString">/local/root</value>
+       <value type="QString">/local/etc/sysconfig</value>
+       <value type="QString">/local/etc/sysconfig/img</value>
+       <value type="QString">/local/etc/sysconfig</value>
       </valuelist>
       <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedSysroots">
+       <value type="QString">C:/Qt485/imx28/rootfs</value>
+       <value type="QString">C:/Qt485/imx28/rootfs</value>
+       <value type="QString">C:/Qt485/imx28/rootfs</value>
+       <value type="QString">C:/Qt485/imx28/rootfs</value>
+       <value type="QString">C:/Qt485/imx28/rootfs</value>
        <value type="QString">C:/Qt485/imx28/rootfs</value>
        <value type="QString">C:/Qt485/imx28/rootfs</value>
        <value type="QString">C:/Qt485/imx28/rootfs</value>
@@ -227,8 +247,13 @@
        <value type="QDateTime">2023-10-26T10:22:55</value>
        <value type="QDateTime">2023-10-26T10:22:55</value>
        <value type="QDateTime">2023-10-26T10:22:55</value>
+       <value type="QDateTime">2023-11-27T15:13:44</value>
+       <value type="QDateTime">2023-11-27T15:13:44</value>
        <value type="QDateTime">2023-10-26T10:22:55</value>
        <value type="QDateTime">2023-10-26T10:22:56</value>
+       <value type="QDateTime">2023-11-27T15:13:44</value>
+       <value type="QDateTime">2023-11-27T15:13:44</value>
+       <value type="QDateTime">2023-11-27T15:13:43</value>
       </valuelist>
       <value type="bool" key="RemoteLinux.GenericDirectUploadStep.Incremental">false</value>
      </valuemap>
